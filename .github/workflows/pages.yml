@@ -29,14 +29,26 @@ jobs:
           node-version: 24
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - run: pnpm build
-      # Не публикуем сайт, пока в Impressum и Datenschutz остаются незаполненные поля (src/legal.ts).
+      # Не публикуем сайт, пока не заданы данные для Impressum и Datenschutz (src/legal.ts).
       - name: Check legal details
+        env:
+          LEGAL_NAME: ${{ vars.LEGAL_NAME }}
+          LEGAL_STREET: ${{ vars.LEGAL_STREET }}
+          LEGAL_CITY: ${{ vars.LEGAL_CITY }}
+          LEGAL_EMAIL: ${{ vars.LEGAL_EMAIL }}
         run: |
-          if grep -rq "ЗАПОЛНИТЬ" dist; then
-            echo "::error::Заполните src/legal.ts перед публикацией"
-            exit 1
-          fi
+          for name in LEGAL_NAME LEGAL_STREET LEGAL_CITY LEGAL_EMAIL; do
+            if [ -z "$(printenv "$name" | tr -d '[:space:]')" ]; then
+              echo "::error::Задайте переменную $name в Settings → Secrets and variables → Actions → Variables"
+              exit 1
+            fi
+          done
+      - run: pnpm build
+        env:
+          VITE_LEGAL_NAME: ${{ vars.LEGAL_NAME }}
+          VITE_LEGAL_STREET: ${{ vars.LEGAL_STREET }}
+          VITE_LEGAL_CITY: ${{ vars.LEGAL_CITY }}
+          VITE_LEGAL_EMAIL: ${{ vars.LEGAL_EMAIL }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
