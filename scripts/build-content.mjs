@@ -8,6 +8,9 @@
 //   node scripts/build-content.mjs                         полная сборка
 //   node scripts/build-content.mjs --check                 только проверка, ничего не пишет
 //   node scripts/build-content.mjs --check --only 02-zahlen   проверка одной темы
+//   node scripts/build-content.mjs --audio-manifest m.json [--missing]   манифест для TTS (--missing — только без записи)
+//   node scripts/build-content.mjs --draft                 черновик: JSON пишется и без новых записей,
+//                                                          старые записи не удаляются; не коммитить
 
 import { createHash } from "node:crypto";
 import { copyFileSync, existsSync, mkdirSync, readdirSync, readFileSync, rmSync, statSync, writeFileSync } from "node:fs";
@@ -24,6 +27,9 @@ const CHECK = process.argv.includes("--check");
 const onlyIndex = process.argv.indexOf("--only");
 const ONLY = onlyIndex > 0 ? process.argv[onlyIndex + 1] : null;
 if (ONLY && !CHECK) throw new Error("--only работает только вместе с --check");
+const DRAFT = process.argv.includes("--draft");
+/** Фразы без готовой записи в черновой сборке. */
+let missingAudio = 0;
 
 /** Логические голоса из YAML; модель и образцы зафиксированы в конфигурации. */
 const audioConfig = JSON.parse(readFileSync(path.join(root, "scripts/tts/config.json"), "utf8"));
@@ -35,6 +41,9 @@ const VIEWS = { dialogue: "dialogue", words: "words", table: "table", sentence: 
 const SET_KEYS = ["view", "dialogue", "words", "table", "rows", "task", "time", "reveal", "focus", "solved"];
 const TASK_KINDS = ["form", "keywords", "card", "sign", "message", "listen", "ads"];
 const EXERCISE_TYPES = ["choice", "gap", "order"];
+/** Для автоматических фраз «шпиона»: подлежащее-местоимение и заведомо чужие окончания глагола. */
+const PRONOUNS = new Set(["ich", "du", "er", "sie", "es", "wir", "ihr"]);
+const WRONG_ENDING = { e: "en", st: "t", t: "st", en: "st" };
 
 const errors = [];
 const warnings = [];
@@ -100,8 +109,13 @@ if (manifestIndex > 0) {
   if (CHECK) throw new Error("--audio-manifest нельзя использовать вместе с --check");
   const target = process.argv[manifestIndex + 1];
   if (!target || target.startsWith("--")) throw new Error("Укажите путь после --audio-manifest");
-  writeJson(path.resolve(target), [...audio].map(([file, entry]) => ({ file, ...entry })));
-  console.log(`Манифест: ${audio.size} фраз → ${target}`);
+  // --missing: только фразы без готовой записи — для доозвучки одной темы.
+  const missingOnly = process.argv.includes("--missing");
+  const entries = [...audio]
+    .filter(([file]) => !missingOnly || !existsSync(path.join(audioDir, file)))
+    .map(([file, entry]) => ({ file, ...entry }));
+  writeJson(path.resolve(target), entries);
+  console.log(`Манифест: ${entries.length} фраз${missingOnly ? " без записи" : ""} → ${target}`);
   process.exit(0);
 }
 
@@ -115,7 +129,7 @@ if (CHECK) {
   process.exit(0);
 }
 
-const synthesized = await synthesize();
+const synthesized = DRAFT ? 0 : await synthesize();
 
 mkdirSync(path.join(generatedDir, "topics"), { recursive: true });
 writeJson(path.join(generatedDir, "catalog.json"), catalog);
@@ -123,15 +137,19 @@ for (const file of readdirSync(path.join(generatedDir, "topics"))) {
   if (!ids.includes(file.replace(/\.json$/, ""))) rmSync(path.join(generatedDir, "topics", file));
 }
 for (const topic of topics) writeJson(path.join(generatedDir, "topics", `${topic.id}.json`), topic);
-pruneAudio();
-console.log(`${summary}; фраз в озвучке — ${audio.size}, новых — ${synthesized} → public/audio`);
+if (DRAFT) {
+  console.log(`${summary}; ЧЕРНОВИК: ${missingAudio} фраз без записи (кнопки озвучки у них скрыты). Не коммитьте эту сборку.`);
+} else {
+  pruneAudio();
+  console.log(`${summary}; фраз в озвучке — ${audio.size}, новых — ${synthesized} → public/audio`);
+}
 
 // ───────────────────────────── темы ─────────────────────────────
 
 function buildTopic(src, level, where) {
   const known = [
     "id", "order", "title", "ru", "lede", "goals", "grammar", "exam", "chapters",
-    "dialogues", "words", "tables", "tasks", "steps", "exercises",
+    "dialogues", "words", "tables", "tasks", "steps", "exercises", "case", "spy",
   ];
   unknownKeys(src, known, where);
   for (const field of ["id", "order", "title", "ru", "lede", "goals", "grammar", "exam", "steps", "exercises"]) {
@@ -199,6 +217,8 @@ function buildTopic(src, level, where) {
 
   const exercises = (src.exercises ?? []).map((ex, i) => buildExercise(ex, `${where} → exercises[${i}]`, `${id}-${i + 1}`));
   if (exercises.length < 8) warn(where, `всего ${exercises.length} упражнений, лучше 8–14`);
+  const investigation = src.case ? buildCase(src.case, `${where} → case`) : null;
+  const spy = buildSpy(src.spy ?? [], beats, `${where} → spy`);
 
   return {
     id,
@@ -217,6 +237,8 @@ function buildTopic(src, level, where) {
     tasks,
     beats,
     exercises,
+    ...(investigation ? { case: investigation } : {}),
+    spy,
   };
 }
 
@@ -525,6 +547,120 @@ function buildRows(rows, where) {
   });
 }
 
+/**
+ * Дело: детективная история темы. Улики — реплики свидетелей (озвучены) и
+ * записки; к каждому шагу вопрос, где правильный вывод требует грамматики темы.
+ */
+function buildCase(c, where) {
+  unknownKeys(c, ["title", "ru", "intro", "people", "steps", "ending"], where);
+  for (const field of ["title", "intro", "steps", "ending"]) if (!c[field]) fail(where, `нет поля ${field}`);
+  german(c.title, where);
+  markup(c.intro, where);
+  markup(c.ending, where);
+  const people = {};
+  for (const [key, person] of Object.entries(c.people ?? {})) {
+    unknownKeys(person, ["name", "voice", "role"], `${where} → people.${key}`);
+    const voice = person.voice ?? DEFAULT_VOICE;
+    if (!VOICES.includes(voice)) fail(where, `голос ${voice} неизвестен; есть ${VOICES.join(", ")}`);
+    people[key] = { name: person.name ?? key, voice, ...(person.role ? { role: person.role } : {}) };
+  }
+  const steps = (c.steps ?? []).map((step, i) => {
+    const sw = `${where} → steps[${i}]`;
+    unknownKeys(step, ["read", "evidence", "question", "options", "answer", "right", "wrong"], sw);
+    for (const field of ["read", "question", "options", "right", "wrong"]) if (step[field] === undefined) fail(sw, `нет поля ${field}`);
+    markup(step.read, sw);
+    markup(step.question, sw);
+    markup(step.right, sw);
+    const options = (step.options ?? []).map(String);
+    if (options.length < 2) fail(sw, "нужно хотя бы два варианта в options");
+    if (!Number.isInteger(step.answer) || step.answer < 0 || step.answer >= options.length) fail(sw, "answer — номер правильного варианта с нуля");
+    for (const o of options) markup(o, sw);
+    // wrong — один текст для всех неверных вариантов или список по вариантам (у верного — null)
+    const wrong = Array.isArray(step.wrong) ? step.wrong.map((w) => (w == null ? null : String(w))) : options.map(() => String(step.wrong ?? ""));
+    if (wrong.length !== options.length) fail(sw, "wrong-список должен совпадать по длине с options");
+    for (const w of wrong) markup(w ?? undefined, sw);
+    const evidence = (step.evidence ?? []).map((item, j) => {
+      const ew = `${sw} → evidence[${j}]`;
+      const keys = Object.keys(item).filter((k) => k !== "ru");
+      if (keys.length !== 1) {
+        fail(ew, "улика выглядит как «X: реплика» (X из people) или «note: текст записки» + «ru: перевод»");
+        return null;
+      }
+      const key = keys[0];
+      const de = String(item[key]).trim();
+      markup(de, ew);
+      german(de, ew);
+      if (!item.ru) fail(ew, "нет перевода ru — он откроется после разгадки");
+      if (key === "note") return { kind: "note", de, ru: item.ru };
+      if (!people[key]) {
+        fail(ew, `неизвестный участник ${key}`);
+        return null;
+      }
+      return { kind: "quote", who: key, de, ru: item.ru, audio: speak(de, people[key].voice) };
+    }).filter(Boolean);
+    return { read: step.read?.trim(), evidence, question: step.question, options, answer: step.answer, right: step.right?.trim(), wrong };
+  });
+  if (steps.length < 2) warn(where, "в деле меньше двух шагов");
+  return { title: c.title, ru: c.ru, intro: c.intro?.trim(), people, steps, ending: c.ending?.trim() };
+}
+
+/**
+ * «Шпион»: фразы, которые один из говорящих произносит с ошибкой. Авторские
+ * пары из YAML дополняются автоматическими из схем предложений темы:
+ * глагол не на втором месте и чужое окончание глагола.
+ */
+function buildSpy(items, beats, where) {
+  const out = [];
+  const seen = new Set();
+  items.forEach((item, i) => {
+    const iw = `${where}[${i}]`;
+    unknownKeys(item, ["de", "wrong", "why"], iw);
+    if (!item.de || !item.wrong || !item.why) return fail(iw, "у фразы шпиона нужны de, wrong и why");
+    german(item.de, iw);
+    german(item.wrong, iw);
+    markup(item.why, iw);
+    if (plain(item.de) === plain(item.wrong)) fail(iw, "wrong совпадает с de");
+    seen.add(plain(item.de));
+    out.push({ de: String(item.de), wrong: String(item.wrong), why: item.why });
+  });
+  const rows = beats.flatMap((beat) => [...(beat.scene.rows ?? []), ...(beat.sceneBefore?.rows ?? [])]);
+  for (const row of rows) {
+    if (seen.has(row.plain)) continue;
+    seen.add(row.plain);
+    const words = (tiles) => tiles.map((t) => t.text);
+    const [first, verb, middle, end] = row.slots.map(words);
+    const sentence = (parts) => {
+      const text = parts.flat().filter(Boolean).map((w) => plain(w)).join(" ") + row.punct;
+      return text.charAt(0).toUpperCase() + text.slice(1);
+    };
+    // Глагол сразу после первой позиции: «In Kiel wohne ich» → «In Kiel ich wohne».
+    if (first.length && verb.length && middle.length && PRONOUNS.has(plain(middle[0]).toLowerCase())) {
+      const wrong = sentence([first, [middle[0]], verb, middle.slice(1), end]);
+      out.push({
+        de: row.plain,
+        wrong,
+        why: `Глагол стоит на второй позиции: после *${plain(first.join(" "))}* сразу идёт *${plain(verb.join(" "))}*, а *${plain(middle[0])}* — за ним.`,
+        auto: true,
+      });
+    }
+    // Чужое окончание у спрягаемого глагола: «du wohn+st» → «du wohnt».
+    const m = verb.length === 1 ? /^(.*)\+(e|st|t|en)$/.exec(verb[0]) : null;
+    if (m) {
+      const wrongVerb = `${m[1]}${WRONG_ENDING[m[2]]}`;
+      const wrong = sentence([first, [wrongVerb], middle, end]);
+      if (plain(wrong) !== row.plain) {
+        out.push({
+          de: row.plain,
+          wrong,
+          why: `Окончание глагола не подходит к подлежащему: правильно *${plain(verb[0])}*.`,
+          auto: true,
+        });
+      }
+    }
+  }
+  return out;
+}
+
 function buildExercise(ex, where, id) {
   unknownKeys(ex, ["type", "q", "ru", "options", "answer", "hint", "why", "de", "also"], where);
   if (!EXERCISE_TYPES.includes(ex.type)) {
@@ -588,6 +724,10 @@ function speak(text, voice = DEFAULT_VOICE) {
   const hash = createHash("sha1").update(`${AUDIO_VERSION}|${voice}|${clean}`).digest("hex").slice(0, 12);
   const file = `${hash}.m4a`;
   audio.set(file, { text: clean, voice });
+  if (DRAFT && !existsSync(path.join(audioDir, file))) {
+    missingAudio += 1;
+    return undefined;
+  }
   return `audio/${file}`;
 }
 

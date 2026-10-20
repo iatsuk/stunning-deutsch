@@ -2296,5 +2296,61 @@
    "ru": "В субботу я, к сожалению, не могу. Ко мне приезжает брат.",
    "audio": "audio/881caf6d656d.m4a"
   }
+ ],
+ "spy": [
+  {
+   "de": "Ich spiele Tennis.",
+   "wrong": "Ich spielen Tennis.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *spiele*.",
+   "auto": true
+  },
+  {
+   "de": "Kannst du Tennis spielen?",
+   "wrong": "Kannt du Tennis spielen?",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *Kannst*.",
+   "auto": true
+  },
+  {
+   "de": "Was willst du am Sonntag machen?",
+   "wrong": "Was du willst am Sonntag machen?",
+   "why": "Глагол стоит на второй позиции: после *Was* сразу идёт *willst*, а *du* — за ним.",
+   "auto": true
+  },
+  {
+   "de": "Was willst du am Sonntag machen?",
+   "wrong": "Was willt du am Sonntag machen?",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *willst*.",
+   "auto": true
+  },
+  {
+   "de": "Am Samstag kann ich leider nicht.",
+   "wrong": "Am Samstag ich kann leider nicht.",
+   "why": "Глагол стоит на второй позиции: после *Am Samstag* сразу идёт *kann*, а *ich* — за ним.",
+   "auto": true
+  },
+  {
+   "de": "Kommst du mit?",
+   "wrong": "Kommt du mit?",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *Kommst*.",
+   "auto": true
+  },
+  {
+   "de": "Am liebsten lese ich.",
+   "wrong": "Am liebsten ich lese.",
+   "why": "Глагол стоит на второй позиции: после *Am liebsten* сразу идёт *lese*, а *ich* — за ним.",
+   "auto": true
+  },
+  {
+   "de": "Am liebsten lese ich.",
+   "wrong": "Am liebsten lesen ich.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *lese*.",
+   "auto": true
+  },
+  {
+   "de": "Wollen wir am Sonntag Tennis spielen?",
+   "wrong": "Wollst wir am Sonntag Tennis spielen?",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *Wollen*.",
+   "auto": true
+  }
  ]
 }

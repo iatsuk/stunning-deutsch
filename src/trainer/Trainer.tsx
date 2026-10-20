@@ -1,9 +1,9 @@
 import { useMemo, useRef, useState } from "react";
-import type { Exercise, Topic, Word } from "../content";
+import type { Exercise, SpyItem, Topic, Word } from "../content";
 import { play, useProgress } from "../hooks";
 import { De, GENDER_LABEL, PlayButton, Text, plain, withoutArticle } from "../markup";
 
-type Tab = "exercises" | "articles" | "cards";
+type Tab = "exercises" | "spy" | "articles" | "cards";
 
 export function Trainer({ topic }: { topic: Topic }) {
   const [tab, setTab] = useState<Tab>("exercises");
@@ -13,6 +13,7 @@ export function Trainer({ topic }: { topic: Topic }) {
   const solved = progress.solved(topic.id);
   const tabs: { id: Tab; label: string; count: string }[] = [
     { id: "exercises", label: "Упражнения", count: `${solved}/${topic.exercises.length}` },
+    ...(topic.spy.length >= 4 ? [{ id: "spy" as const, label: "Шпион", count: String(topic.spy.length) }] : []),
     { id: "articles", label: "Артикли", count: String(nouns.length) },
     { id: "cards", label: "Карточки", count: String(words.length) },
   ];
@@ -33,6 +34,7 @@ export function Trainer({ topic }: { topic: Topic }) {
         ))}
       </div>
       {tab === "exercises" && <Exercises topic={topic} />}
+      {tab === "spy" && <SpyGame items={topic.spy} />}
       {tab === "articles" && <ArticleQuiz nouns={nouns} />}
       {tab === "cards" && <Flashcards words={words} />}
     </div>
@@ -556,6 +558,101 @@ function Flashcards({ words }: { words: Word[] }) {
           Знаю
         </button>
       </div>
+    </div>
+  );
+}
+
+// ───────────────────────────── шпион ─────────────────────────────
+
+/** Кильцы, за которых выдаёт себя шпион. Имена — типичные для северной Германии. */
+const LOCALS = ["Hauke", "Frauke", "Ole", "Telse", "Sönke", "Wiebke", "Jens", "Imke", "Kai", "Merle"];
+
+/**
+ * Четверо говорят, что они из Киля; один выдаёт себя ошибкой. Ошибка — из грамматики
+ * темы: глагол не на своём месте, чужое окончание, пропущенная связка.
+ */
+function SpyGame({ items }: { items: SpyItem[] }) {
+  const [round, setRound] = useState(0);
+  const [pick, setPick] = useState<number | null>(null);
+  const [score, setScore] = useState({ right: 0, total: 0 });
+  const order = useMemo(() => shuffle(items.map((_, i) => i), "spy"), [items]);
+
+  const spy = items[order[round % order.length]];
+  const others: string[] = [];
+  for (const i of shuffle(items.map((_, k) => k), `others-${round}`)) {
+    const de = items[i].de;
+    if (de !== spy.de && !others.includes(de)) others.push(de);
+    if (others.length === 3) break;
+  }
+  const names = shuffle(LOCALS, `names-${round}`).slice(0, others.length + 1);
+  const lines = shuffle(
+    [{ text: spy.wrong, spy: true }, ...others.map((text) => ({ text, spy: false }))],
+    `seats-${round}`,
+  );
+  const caught = pick !== null && lines[pick].spy;
+
+  return (
+    <div className="spy">
+      <div className="spy-head">
+        <p>
+          Все четверо говорят, что они из Киля. Один — нет: его выдаёт ошибка в немецком. Кто?
+        </p>
+        <span className="quiz-count">
+          Раунд {round + 1} · поймано {score.right} из {score.total}
+        </span>
+      </div>
+      <ol className="spy-lines">
+        {lines.map((line, i) => (
+          <li key={i}>
+            <button
+              type="button"
+              className="spy-line"
+              disabled={pick !== null}
+              data-state={pick === null ? undefined : line.spy ? "spy" : i === pick ? "innocent" : undefined}
+              onClick={() => {
+                setPick(i);
+                setScore((s) => ({ right: s.right + (line.spy ? 1 : 0), total: s.total + 1 }));
+              }}
+            >
+              <span className="avatar" aria-hidden="true">
+                {names[i].charAt(0)}
+              </span>
+              <span className="spy-name">{names[i]}</span>
+              <De text={line.text} className="spy-text" />
+            </button>
+          </li>
+        ))}
+      </ol>
+      {pick !== null && (
+        <div className="spy-verdict" data-caught={caught || undefined}>
+          <p>
+            <b>{caught ? "Попался!" : `Мимо: ${names[pick]} говорит правильно.`}</b>
+          </p>
+          <dl className="spy-compare">
+            <dt>Шпион</dt>
+            <dd>
+              <De text={spy.wrong} />
+            </dd>
+            <dt>Правильно</dt>
+            <dd>
+              <De text={spy.de} />
+            </dd>
+          </dl>
+          <p>
+            <Text text={spy.why} />
+          </p>
+          <button
+            type="button"
+            className="primary"
+            onClick={() => {
+              setPick(null);
+              setRound(round + 1);
+            }}
+          >
+            Следующий раунд
+          </button>
+        </div>
+      )}
     </div>
   );
 }

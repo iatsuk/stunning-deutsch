@@ -2542,5 +2542,55 @@
    ],
    "audio": "audio/1a018364603f.m4a"
   }
+ ],
+ "spy": [
+  {
+   "de": "Ich bleibe im Bett.",
+   "wrong": "Ich bleiben im Bett.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *bleibe*.",
+   "auto": true
+  },
+  {
+   "de": "Du darfst nicht rauchen.",
+   "wrong": "Du darft nicht rauchen.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *darfst*.",
+   "auto": true
+  },
+  {
+   "de": "Du musst nicht kommen.",
+   "wrong": "Du mussst nicht kommen.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *musst*.",
+   "auto": true
+  },
+  {
+   "de": "Du bleibst im Bett.",
+   "wrong": "Du bleibt im Bett.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *bleibst*.",
+   "auto": true
+  },
+  {
+   "de": "Ihr bleibt im Bett.",
+   "wrong": "Ihr bleibst im Bett.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *bleibt*.",
+   "auto": true
+  },
+  {
+   "de": "Bleibt im Bett!",
+   "wrong": "Bleibst im Bett!",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *Bleibt*.",
+   "auto": true
+  },
+  {
+   "de": "Bleiben Sie im Bett!",
+   "wrong": "Bleibst Sie im Bett!",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *Bleiben*.",
+   "auto": true
+  },
+  {
+   "de": "Machen Sie bitte das Fenster auf!",
+   "wrong": "Machst Sie bitte das Fenster auf!",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *Machen*.",
+   "auto": true
+  }
  ]
 }

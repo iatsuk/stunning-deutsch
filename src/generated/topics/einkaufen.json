@@ -2466,5 +2466,85 @@
    "de": "Welche Größe haben Sie?",
    "audio": "audio/217e4f21d9af.m4a"
   }
+ ],
+ "spy": [
+  {
+   "de": "Ich finde den Pullover zu groß.",
+   "wrong": "Ich finden den Pullover zu groß.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *finde*.",
+   "auto": true
+  },
+  {
+   "de": "Ich finde ihn zu groß.",
+   "wrong": "Ich finden ihn zu groß.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *finde*.",
+   "auto": true
+  },
+  {
+   "de": "Welche Größe haben Sie?",
+   "wrong": "Welche Größe Sie haben?",
+   "why": "Глагол стоит на второй позиции: после *Welche Größe* сразу идёт *haben*, а *Sie* — за ним.",
+   "auto": true
+  },
+  {
+   "de": "Welche Größe haben Sie?",
+   "wrong": "Welche Größe habst Sie?",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *haben*.",
+   "auto": true
+  },
+  {
+   "de": "Welchen Pullover nehmen Sie?",
+   "wrong": "Welchen Pullover Sie nehmen?",
+   "why": "Глагол стоит на второй позиции: после *Welchen Pullover* сразу идёт *nehmen*, а *Sie* — за ним.",
+   "auto": true
+  },
+  {
+   "de": "Welchen Pullover nehmen Sie?",
+   "wrong": "Welchen Pullover nehmst Sie?",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *nehmen*.",
+   "auto": true
+  },
+  {
+   "de": "Ich nehme den hier.",
+   "wrong": "Ich nehmen den hier.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *nehme*.",
+   "auto": true
+  },
+  {
+   "de": "Was kosten die Schuhe?",
+   "wrong": "Was kostst die Schuhe?",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *kosten*.",
+   "auto": true
+  },
+  {
+   "de": "Ich finde es zu kurz.",
+   "wrong": "Ich es finde zu kurz.",
+   "why": "Глагол стоит на второй позиции: после *Ich* сразу идёт *finde*, а *es* — за ним.",
+   "auto": true
+  },
+  {
+   "de": "Ich finde es zu kurz.",
+   "wrong": "Ich finden es zu kurz.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *finde*.",
+   "auto": true
+  },
+  {
+   "de": "Wie finden Sie das Kleid?",
+   "wrong": "Wie Sie finden das Kleid?",
+   "why": "Глагол стоит на второй позиции: после *Wie* сразу идёт *finden*, а *Sie* — за ним.",
+   "auto": true
+  },
+  {
+   "de": "Wie finden Sie das Kleid?",
+   "wrong": "Wie findst Sie das Kleid?",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *finden*.",
+   "auto": true
+  },
+  {
+   "de": "Das macht zwölf Euro neunundvierzig.",
+   "wrong": "Das machst zwölf Euro neunundvierzig.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *macht*.",
+   "auto": true
+  }
  ]
 }

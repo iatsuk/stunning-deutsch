@@ -6,6 +6,7 @@ import { De, Text, plural } from "../markup";
 import { Stage } from "../stage/Stage";
 import { WordCard } from "../stage/Words";
 import { Trainer } from "../trainer/Trainer";
+import { CaseFile } from "../case/Case";
 
 export function TopicPage({ level, topicId }: { level: Level; topicId: string }) {
   const [topic, setTopic] = useState<Topic | null | undefined>(undefined);
@@ -39,7 +40,13 @@ export function TopicPage({ level, topicId }: { level: Level; topicId: string })
     <>
       <Topbar
         crumbs={[{ label: level.code, href: `#/${level.id}` }, { label: meta.ru }]}
-        nav={[["story", "Разбор"], ["summary", "Шпаргалка"], ["trainer", "Тренажёр"], ["vocabulary", "Словарь"]]}
+        nav={[
+          ["story", "Разбор"],
+          ["summary", "Шпаргалка"],
+          ...(topic?.case ? [["case", "Дело"] as [string, string]] : []),
+          ["trainer", "Тренажёр"],
+          ["vocabulary", "Словарь"],
+        ]}
       />
       <main>
         <section className="hero topic-hero">
@@ -114,13 +121,25 @@ export function TopicPage({ level, topicId }: { level: Level; topicId: string })
           <>
             <Story topic={topic} />
             <Summary topic={topic} />
+            {topic.case && (
+              <section className="case-section" id="case">
+                <div className="section-head">
+                  <div className="kicker">Дело темы</div>
+                  <h2>
+                    <De text={topic.case.title} />
+                  </h2>
+                  {topic.case.ru && <p>{topic.case.ru}</p>}
+                </div>
+                <CaseFile topic={topic} investigation={topic.case} />
+              </section>
+            )}
             <section className="trainer-section" id="trainer">
               <div className="section-head">
                 <div className="kicker">Тренажёр</div>
                 <h2>Закрепите тему</h2>
                 <p>
-                  Упражнения проверяются сразу, решённые сохраняются в этом браузере. Артикли и карточки собраны из
-                  слов темы.
+                  Упражнения проверяются сразу, решённые сохраняются в этом браузере. «Шпион» собран из фраз темы,
+                  артикли и карточки — из её слов.
                 </p>
               </div>
               <Trainer topic={topic} />

@@ -2407,5 +2407,85 @@
    "de": "Wann stehst du auf?",
    "audio": "audio/032d19ff61ca.m4a"
   }
+ ],
+ "spy": [
+  {
+   "de": "Am Vormittag habe ich Kurs.",
+   "wrong": "Am Vormittag ich habe Kurs.",
+   "why": "Глагол стоит на второй позиции: после *Am Vormittag* сразу идёт *habe*, а *ich* — за ним.",
+   "auto": true
+  },
+  {
+   "de": "Am Vormittag habe ich Kurs.",
+   "wrong": "Am Vormittag haben ich Kurs.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *habe*.",
+   "auto": true
+  },
+  {
+   "de": "Dann frühstücke ich.",
+   "wrong": "Dann ich frühstücke.",
+   "why": "Глагол стоит на второй позиции: после *Dann* сразу идёт *frühstücke*, а *ich* — за ним.",
+   "auto": true
+  },
+  {
+   "de": "Dann frühstücke ich.",
+   "wrong": "Dann frühstücken ich.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *frühstücke*.",
+   "auto": true
+  },
+  {
+   "de": "Ich stehe um sieben Uhr auf.",
+   "wrong": "Ich stehen um sieben Uhr auf.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *stehe*.",
+   "auto": true
+  },
+  {
+   "de": "Um sieben Uhr stehe ich auf.",
+   "wrong": "Um sieben Uhr ich stehe auf.",
+   "why": "Глагол стоит на второй позиции: после *Um sieben Uhr* сразу идёт *stehe*, а *ich* — за ним.",
+   "auto": true
+  },
+  {
+   "de": "Um sieben Uhr stehe ich auf.",
+   "wrong": "Um sieben Uhr stehen ich auf.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *stehe*.",
+   "auto": true
+  },
+  {
+   "de": "Wann stehst du auf?",
+   "wrong": "Wann du stehst auf?",
+   "why": "Глагол стоит на второй позиции: после *Wann* сразу идёт *stehst*, а *du* — за ним.",
+   "auto": true
+  },
+  {
+   "de": "Wann stehst du auf?",
+   "wrong": "Wann steht du auf?",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *stehst*.",
+   "auto": true
+  },
+  {
+   "de": "Stehst du morgen um sieben auf?",
+   "wrong": "Steht du morgen um sieben auf?",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *Stehst*.",
+   "auto": true
+  },
+  {
+   "de": "Wann siehst du fern?",
+   "wrong": "Wann du siehst fern?",
+   "why": "Глагол стоит на второй позиции: после *Wann* сразу идёт *siehst*, а *du* — за ним.",
+   "auto": true
+  },
+  {
+   "de": "Wann siehst du fern?",
+   "wrong": "Wann sieht du fern?",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *siehst*.",
+   "auto": true
+  },
+  {
+   "de": "Ich rufe dich morgen an.",
+   "wrong": "Ich rufen dich morgen an.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *rufe*.",
+   "auto": true
+  }
  ]
 }

@@ -2668,5 +2668,55 @@
    "why": "Существительное без артикля — *kein*, мужской род — *keinen*.",
    "audio": "audio/0ba2f9f1c894.m4a"
   }
+ ],
+ "spy": [
+  {
+   "de": "Ich nehme den Kaffee.",
+   "wrong": "Ich nehmen den Kaffee.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *nehme*.",
+   "auto": true
+  },
+  {
+   "de": "Ich möchte einen Kaffee.",
+   "wrong": "Ich möchten einen Kaffee.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *möchte*.",
+   "auto": true
+  },
+  {
+   "de": "Ich trinke gern Tee.",
+   "wrong": "Ich trinken gern Tee.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *trinke*.",
+   "auto": true
+  },
+  {
+   "de": "Trinkst du gern Kaffee?",
+   "wrong": "Trinkt du gern Kaffee?",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *Trinkst*.",
+   "auto": true
+  },
+  {
+   "de": "Ich trinke nicht gern Tee.",
+   "wrong": "Ich trinken nicht gern Tee.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *trinke*.",
+   "auto": true
+  },
+  {
+   "de": "Ich trinke keinen Kaffee.",
+   "wrong": "Ich trinken keinen Kaffee.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *trinke*.",
+   "auto": true
+  },
+  {
+   "de": "Den Kuchen isst Marco.",
+   "wrong": "Den Kuchen issst Marco.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *isst*.",
+   "auto": true
+  },
+  {
+   "de": "Marco isst den Kuchen.",
+   "wrong": "Marco issst den Kuchen.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *isst*.",
+   "auto": true
+  }
  ]
 }

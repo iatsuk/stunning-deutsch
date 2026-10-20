@@ -10,6 +10,7 @@
   "scripts": {
     "content": "node scripts/build-content.mjs",
     "check": "node scripts/build-content.mjs --check",
+    "draft": "node scripts/build-content.mjs --draft",
     "dev": "vite --host 127.0.0.1 --port 5180 --strictPort",
     "build": "node scripts/build-content.mjs && tsc --noEmit && vite build",
     "typecheck": "tsc --noEmit"

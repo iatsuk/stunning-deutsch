@@ -2302,5 +2302,49 @@
    "why": "Сначала «на чём» — *mit dem Zug*, потом «куда» — *nach Dresden*.",
    "audio": "audio/1233bbcd49e8.m4a"
   }
+ ],
+ "spy": [
+  {
+   "de": "Sie gehen geradeaus.",
+   "wrong": "Sie gehst geradeaus.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *gehen*.",
+   "auto": true
+  },
+  {
+   "de": "Gehen Sie geradeaus!",
+   "wrong": "Gehst Sie geradeaus!",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *Gehen*.",
+   "auto": true
+  },
+  {
+   "de": "Steigen Sie bitte hier aus!",
+   "wrong": "Steigst Sie bitte hier aus!",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *Steigen*.",
+   "auto": true
+  },
+  {
+   "de": "Steigen Sie in Gohlis aus!",
+   "wrong": "Steigst Sie in Gohlis aus!",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *Steigen*.",
+   "auto": true
+  },
+  {
+   "de": "Sie steigen in Gohlis aus.",
+   "wrong": "Sie steigst in Gohlis aus.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *steigen*.",
+   "auto": true
+  },
+  {
+   "de": "Ich fahre zu Ewa.",
+   "wrong": "Ich fahren zu Ewa.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *fahre*.",
+   "auto": true
+  },
+  {
+   "de": "Ich fahre mit dem Zug nach Dresden.",
+   "wrong": "Ich fahren mit dem Zug nach Dresden.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *fahre*.",
+   "auto": true
+  }
  ]
 }

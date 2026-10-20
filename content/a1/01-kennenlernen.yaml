@@ -1,13 +1,14 @@
 id: kennenlernen
 order: 1
-title: Hallo! Ich bin Anna.
+title: Moin! Ich bin Dana.
 ru: Знакомство
 lede: >-
-  Первый день на курсах немецкого в Лейпциге. Учимся здороваться, называть
-  себя, говорить, откуда вы и где живёте, — и сразу видим главное правило
-  немецкого предложения: глагол стоит на втором месте.
+  Первый день на курсах немецкого в Киле. Здесь здороваются коротким *Moin* —
+  и утром, и вечером. Учимся называть себя, говорить, откуда вы и где живёте, —
+  и сразу видим главное правило немецкого предложения: глагол стоит на втором
+  месте.
 goals:
-  - Поздороваться и попрощаться — с другом и с незнакомым человеком
+  - Поздороваться и попрощаться — с соседом, с другом и в официальном офисе
   - Назвать имя, страну, город и языки, на которых вы говорите
   - Спросить то же самое у собеседника — на «ты» и на «Вы»
   - Рассказать о себе по ключевым словам, как в начале устного экзамена
@@ -23,50 +24,50 @@ dialogues:
   kurs:
     title: Der erste Kurstag
     ru: Первый день на курсе
-    place: Sprachschule, Leipzig
+    place: Sprachschule Förde, Kiel
     people:
-      A: { name: Anna, voice: Anna }
-      M: { name: Marco, voice: Reed }
+      D: { name: Dana, voice: Anna }
+      M: { name: Mateo, voice: Reed }
     lines:
-      - A: Hallo! Ich bin Anna. Und wer bist du?
-        ru: Привет! Я Анна. А ты кто?
-      - M: Hallo, Anna! Ich heiße Marco.
-        ru: Привет, Анна! Меня зовут Марко.
-      - A: Woher kommst du, Marco?
-        ru: Откуда ты, Марко?
-      - M: Ich komme aus Italien, aus Rom. Und du?
-        ru: Я из Италии, из Рима. А ты?
-      - A: Ich komme aus Polen. Aber ich wohne jetzt hier in Leipzig.
-        ru: Я из Польши. Но сейчас я живу здесь, в Лейпциге.
-      - M: Ich wohne auch in Leipzig! Welche Sprachen sprichst du?
-        ru: Я тоже живу в Лейпциге! На каких языках ты говоришь?
-      - A: Polnisch, Englisch und ein bisschen Deutsch.
-        ru: На польском, английском и немного на немецком.
-      - M: Ich auch – ein bisschen!
-        ru: Я тоже — немного!
+      - D: Moin! Ich bin Dana. Und wer bist du?
+        ru: Привет! Я Дана. А ты кто?
+      - M: Moin, Dana! Ich heiße Mateo.
+        ru: Привет, Дана! Меня зовут Матео.
+      - D: Woher kommst du, Mateo?
+        ru: Откуда ты, Матео?
+      - M: Ich komme aus Argentinien, aus Buenos Aires. Und du?
+        ru: Я из Аргентины, из Буэнос-Айреса. А ты?
+      - D: Ich komme aus Kasachstan. Aber ich wohne jetzt hier in Kiel, in Gaarden.
+        ru: Я из Казахстана. Но сейчас я живу здесь, в Киле, в Гаардене.
+      - M: Ich wohne auch in Kiel, in Holtenau! Welche Sprachen sprichst du?
+        ru: Я тоже живу в Киле, в Хольтенау! На каких языках ты говоришь?
+      - D: Kasachisch, Russisch, Englisch und ein bisschen Deutsch.
+        ru: На казахском, русском, английском и немного на немецком.
+      - M: Ich spreche Spanisch und Englisch – und auch ein bisschen Deutsch!
+        ru: Я говорю по-испански и по-английски — и тоже немного по-немецки!
   buero:
     title: Im Büro der Sprachschule
     ru: В офисе языковой школы
-    place: Sprachschule, Leipzig
+    place: Sprachschule Förde, Kiel
     people:
-      W: { name: Frau Weber, voice: Sandy }
-      M: { name: Marco, voice: Reed }
+      P: { name: Frau Petersen, voice: Sandy }
+      E: { name: Elif, voice: Flo }
     lines:
-      - W: Guten Morgen! Wie heißen Sie, bitte?
-        ru: Доброе утро! Как вас зовут?
-      - M: Mein Name ist Marco Rossi.
-        ru: Меня зовут Марко Росси.
-      - W: Und woher kommen Sie, Herr Rossi?
-        ru: А откуда вы, господин Росси?
-      - M: Aus Italien.
-        ru: Из Италии.
-      - W: Wo wohnen Sie?
+      - P: Moin! Wie heißen Sie, bitte?
+        ru: Здравствуйте! Как вас зовут?
+      - E: Mein Name ist Elif Yıldız.
+        ru: Меня зовут Элиф Йылдыз.
+      - P: Und woher kommen Sie, Frau Yıldız?
+        ru: А откуда вы, госпожа Йылдыз?
+      - E: Aus der Türkei, aus Izmir.
+        ru: Из Турции, из Измира.
+      - P: Wo wohnen Sie?
         ru: Где вы живёте?
-      - M: In Leipzig, in der Goethestraße.
-        ru: В Лейпциге, на Гётештрассе.
-      - W: Danke schön. Auf Wiedersehen, Herr Rossi!
-        ru: Большое спасибо. До свидания, господин Росси!
-      - M: Auf Wiedersehen!
+      - E: In Kiel, in der Holtenauer Straße.
+        ru: В Киле, на Хольтенауэр-штрассе.
+      - P: Danke schön. Auf Wiedersehen, Frau Yıldız!
+        ru: Большое спасибо. До свидания, госпожа Йылдыз!
+      - E: Auf Wiedersehen!
         ru: До свидания!
 
 words:
@@ -74,6 +75,7 @@ words:
     title: Begrüßung und Abschied
     ru: Приветствие и прощание
     items:
+      - { de: Moin!, ru: Привет! Здравствуйте!, note: на севере Германии — в любое время суток }
       - { de: Hallo!, ru: Привет!, note: с кем угодно в неформальной обстановке }
       - { de: Guten Morgen!, ru: Доброе утро!, note: примерно до 10–11 часов }
       - { de: Guten Tag!, ru: Добрый день! }
@@ -81,7 +83,7 @@ words:
       - { de: Gute Nacht!, ru: Спокойной ночи!, note: только перед сном }
       - { de: Wie geht's?, ru: Как дела? }
       - { de: "Danke, gut!", ru: "Спасибо, хорошо!" }
-      - { de: Tschüss!, ru: Пока! }
+      - { de: Tschüss!, ru: Пока!, note: на севере — и в магазине }
       - { de: Auf Wiedersehen!, ru: До свидания! }
   person:
     title: Angaben zur Person
@@ -93,25 +95,22 @@ words:
       - { de: das Land, ru: страна, pl: Länder }
       - { de: die Stadt, ru: город, pl: Städte }
       - { de: die Sprache, ru: язык, pl: Sprachen }
-      - { de: heißen, ru: зваться, note: Ich heiße Marco. }
-      - { de: kommen aus, ru: быть родом из, note: Ich komme aus Polen. }
-      - { de: wohnen in, ru: жить в, note: Ich wohne in Leipzig. }
+      - { de: heißen, ru: зваться, note: Ich heiße Mateo. }
+      - { de: kommen aus, ru: быть родом из, note: Ich komme aus Kasachstan. }
+      - { de: wohnen in, ru: жить в, note: Ich wohne in Kiel. }
       - { de: sprechen, ru: говорить, note: "du sprichst, er spricht" }
   laender:
     title: Länder und Sprachen
     ru: Страны и языки
     items:
       - { de: Deutschland, ru: Германия, note: Deutsch }
-      - { de: Österreich, ru: Австрия, note: Deutsch }
-      - { de: Polen, ru: Польша, note: Polnisch }
-      - { de: Italien, ru: Италия, note: Italienisch }
-      - { de: Russland, ru: Россия, note: Russisch }
+      - { de: Dänemark, ru: Дания, note: Dänisch }
       - { de: Kasachstan, ru: Казахстан, note: "Kasachisch, Russisch" }
-      - { de: Belarus, ru: Беларусь, note: "Belarussisch, Russisch" }
-      - { de: England, ru: Англия, note: Englisch }
+      - { de: Russland, ru: Россия, note: Russisch }
+      - { de: Argentinien, ru: Аргентина, note: Spanisch }
+      - { de: die Türkei, ru: Турция, pl: "-", note: "aus der Türkei · Türkisch" }
+      - { de: die Ukraine, ru: Украина, pl: "-", note: "aus der Ukraine · Ukrainisch" }
       - { de: die Schweiz, ru: Швейцария, pl: "-", note: aus der Schweiz }
-      - { de: die Türkei, ru: Турция, pl: "-", note: aus der Türkei }
-      - { de: die Ukraine, ru: Украина, pl: "-", note: "aus der Ukraine — Ukrainisch" }
       - { de: die USA, ru: США, pl: pl, note: aus den USA }
   fragen:
     title: Fragewörter
@@ -155,12 +154,12 @@ tables:
     ru: быть
     head: [Person, sein, Beispiel]
     rows:
-      - [ich, bin, Ich bin Anna.]
-      - [du, bist, Bist du Marco?]
-      - [er / sie / es, ist, Das ist Frau Weber.]
+      - [ich, bin, Ich bin Dana.]
+      - [du, bist, Bist du Mateo?]
+      - [er / sie / es, ist, Das ist Frau Petersen.]
       - [wir, sind, Wir sind im Kurs.]
-      - [ihr, seid, Seid ihr aus Italien?]
-      - [sie / Sie, sind, Sind Sie Herr Rossi?]
+      - [ihr, seid, Seid ihr aus Argentinien?]
+      - [sie / Sie, sind, Sind Sie Frau Yıldız?]
     note: Неправильный глагол — формы надо просто запомнить.
 
 tasks:
@@ -171,29 +170,30 @@ tasks:
     situation: Stellen Sie sich vor.
     words: [Name?, Alter?, Land?, Wohnort?, Sprachen?, Beruf?, Hobby?]
     sample:
-      - Mein Name ist Marco Rossi.
+      - Mein Name ist Mateo Fernández.
       - Ich bin 28 Jahre alt.
-      - Ich komme aus Italien.
-      - Ich wohne in Leipzig.
-      - Ich spreche Italienisch, Englisch und ein bisschen Deutsch.
+      - Ich komme aus Argentinien.
+      - Ich wohne in Kiel, in Holtenau.
+      - Ich spreche Spanisch, Englisch und ein bisschen Deutsch.
       - Ich bin Koch von Beruf.
-      - Mein Hobby ist Fußball.
+      - Mein Hobby ist Segeln.
   anmeldung:
     kind: form
     part: schreiben-1
-    title: Anmeldung – Sprachschule Leipzig
+    title: Anmeldung – Sprachschule Förde, Kiel
     situation: >-
-      Ihr Freund Marco Rossi kommt aus Italien. Er wohnt jetzt in Leipzig, in
-      der Goethestraße 12. Er spricht Italienisch und Englisch. Marco möchte
-      einen Deutschkurs machen. Er braucht Ihre Hilfe. Füllen Sie das Formular aus.
+      Ihre Freundin Elif Yıldız kommt aus der Türkei. Sie wohnt jetzt in Kiel,
+      in der Holtenauer Straße 12. Sie spricht Türkisch und Englisch. Elif
+      möchte einen Deutschkurs machen. Sie braucht Ihre Hilfe. Füllen Sie das
+      Formular aus.
     fields:
       - { label: Kurs, value: Deutsch A1, given: true }
-      - { label: Familienname, value: Rossi, given: true }
-      - { label: Vorname, value: Marco }
-      - { label: Herkunftsland, value: Italien }
-      - { label: Straße, value: Goethestraße 12 }
-      - { label: Wohnort, value: Leipzig }
-      - { label: Sprachen, value: "Italienisch, Englisch" }
+      - { label: Familienname, value: Yıldız, given: true }
+      - { label: Vorname, value: Elif }
+      - { label: Herkunftsland, value: Türkei }
+      - { label: Straße, value: Holtenauer Straße 12 }
+      - { label: Wohnort, value: Kiel }
+      - { label: Sprachen, value: "Türkisch, Englisch" }
 
 steps:
   - id: treffen
@@ -201,54 +201,55 @@ steps:
     title: Первая встреча
     beats:
       - read: >-
-          Первый день на курсе немецкого. Анна садится рядом с Марко и
-          начинает с самого простого. *Hallo!* — приветствие на все случаи:
-          так здороваются с однокурсниками, коллегами, соседями. Дальше имя:
-          *Ich bin Anna* — «я Анна». И встречный вопрос: *Und wer bist du?* —
-          «а ты кто?».
-        point: "*Hallo!* — универсальное приветствие, *Ich bin …* — «я …»"
+          Первый день на курсе немецкого в Киле. Дана садится рядом с Матео и
+          начинает с самого простого. *Moin!* — так на севере Германии
+          здороваются в любое время суток: утром, днём и вечером, с соседом и
+          с продавцом. Дальше имя: *Ich bin Dana* — «я Дана». И встречный
+          вопрос: *Und wer bist du?* — «а ты кто?».
+        point: "*Moin!* — северное «привет» в любое время, *Ich bin …* — «я …»"
         set: { view: dialogue, dialogue: kurs, reveal: 1 }
       - read: >-
-          Марко отвечает по-другому: *Ich heiße Marco* — «меня зовут Марко»,
+          Матео отвечает по-другому: *Ich heiße Mateo* — «меня зовут Матео»,
           буквально «я зовусь». Есть и третий вариант, чуть официальнее:
-          *Mein Name ist Marco Rossi.* Все три верные — выберите один и
+          *Mein Name ist Mateo Fernández.* Все три верные — выберите один и
           используйте его, пока он не начнёт выскакивать сам.
         point: "Имя: *Ich bin …*, *Ich heiße …*, *Mein Name ist …*"
         set: { reveal: 2, focus: 1 }
       - read: >-
           Теперь — откуда человек. *Woher kommst du?* — «откуда ты?»
-          Отвечаем с предлогом *aus*: *Ich komme aus Italien, aus Rom.* Тот же
-          *aus* работает со страной и с городом. Короткое *Und du?* — «а ты?»
-          — возвращает вопрос, и разговор идёт дальше.
+          Отвечаем с предлогом *aus*: *Ich komme aus Argentinien, aus Buenos
+          Aires.* Тот же *aus* работает со страной и с городом. Короткое *Und
+          du?* — «а ты?» — возвращает вопрос, и разговор идёт дальше.
         point: "*Woher kommst du?* — *Ich komme aus …*"
         set: { reveal: 4, focus: [2, 3] }
       - read: >-
-          Анна родом из Польши, но живёт в Лейпциге: *ich wohne in Leipzig*.
-          Где живёшь — *wohnen in*, откуда родом — *kommen aus*. Последний
-          вопрос про языки: *Welche Sprachen sprichst du?* Названия языков
-          чаще всего кончаются на *-isch*: *Polnisch*, *Englisch*,
-          *Italienisch*. Исключение — *Deutsch*.
+          Дана родом из Казахстана, но живёт в Киле, в районе Гаарден: *ich
+          wohne in Kiel*. Где живёшь — *wohnen in*, откуда родом — *kommen
+          aus*. Последний вопрос про языки: *Welche Sprachen sprichst du?*
+          Названия языков чаще всего кончаются на *-isch*: *Kasachisch*,
+          *Russisch*, *Englisch*. Исключение — *Deutsch*.
         point: "*wohnen in* — где живёшь, *kommen aus* — откуда родом"
-        set: { reveal: 8, focus: [4, 5, 6] }
+        set: { reveal: 8, focus: [4, 5, 6, 7] }
 
   - id: buero
     chapter: scene
     title: Теперь официально
     beats:
       - read: >-
-          В офисе школы Марко записывается на курс. Сотрудница обращается к
-          нему на *Sie* — вежливое «Вы», всегда с большой буквы. Вопросы те
-          же, но у глагола другое окончание: *Wie heißen Sie?*, *Woher kommen
-          Sie?* К незнакомым взрослым обращаются *Herr* или *Frau* плюс
-          фамилия: *Herr Rossi*, *Frau Weber*.
+          В офисе школы Элиф записывается на курс. Сотрудница, фрау Петерсен,
+          обращается к ней на *Sie* — вежливое «Вы», всегда с большой буквы.
+          Вопросы те же, но у глагола другое окончание: *Wie heißen Sie?*,
+          *Woher kommen Sie?* К незнакомым взрослым обращаются *Herr* или
+          *Frau* плюс фамилия: *Frau Yıldız*, *Frau Petersen*.
         point: "*Sie* — вежливое «Вы»; *Herr* / *Frau* + фамилия"
         set: { view: dialogue, dialogue: buero, reveal: 3, focus: [0, 2] }
       - read: >-
-          Ответы можно давать коротко: *Aus Italien.* — *In Leipzig.* Это
-          нормально и в жизни, и на экзамене. А прощаются здесь не *Tschüss*,
-          а *Auf Wiedersehen* — «до свидания». *Tschüss* оставьте для друзей
-          и коллег, с которыми вы на «ты».
-        point: "*Tschüss!* — друзьям, *Auf Wiedersehen!* — официально"
+          Ответы можно давать коротко: *Aus der Türkei.* — *In Kiel.* Это
+          нормально и в жизни, и на экзамене. *die Türkei* — одна из немногих
+          стран с артиклем, поэтому *aus der Türkei*. А прощаются в офисе *Auf
+          Wiedersehen*. *Tschüss* на севере услышите и от кассира, но в
+          официальном разговоре надёжнее *Auf Wiedersehen*.
+        point: "*Auf Wiedersehen!* — официально; *Tschüss!* — привычно на севере"
         set: { reveal: 8, focus: [3, 5, 6, 7] }
 
   - id: hallo
@@ -256,11 +257,12 @@ steps:
     title: Здороваемся и прощаемся
     beats:
       - read: >-
-          Приветствие зависит от времени суток: *Guten Morgen!* — примерно до
-          десяти-одиннадцати, *Guten Tag!* — днём, *Guten Abend!* — вечером.
-          *Gute Nacht!* — это не приветствие, а «спокойной ночи». На *Wie
-          geht's?* не рассказывают о жизни: хватит *Danke, gut!*
-        point: "*Guten Morgen / Tag / Abend!* — по времени суток"
+          В учебниках приветствие зависит от времени суток: *Guten Morgen!*
+          — примерно до десяти-одиннадцати, *Guten Tag!* — днём, *Guten
+          Abend!* — вечером. В Киле всё проще: *Moin!* подходит всегда. *Gute
+          Nacht!* — это не приветствие, а «спокойной ночи». На *Wie geht's?*
+          не рассказывают о жизни: хватит *Danke, gut!*
+        point: "*Moin!* — всегда; *Guten Morgen / Tag / Abend!* — по времени суток"
         set: { view: words, words: hallo }
 
   - id: person
@@ -276,12 +278,13 @@ steps:
         point: "Учите слово с артиклем и мн. ч.: *der Name — die Namen*"
         set: { view: words, words: person }
       - read: >-
-          Названия стран почти всегда без артикля: *aus Italien*, *in
-          Deutschland*, *aus Russland*, *aus Kasachstan*. Но есть исключения,
-          которые нужно запомнить: *die Schweiz*, *die Türkei*, *die Ukraine* и
-          *die USA* во множественном числе. После *aus* артикль меняется: *aus
-          der Ukraine*, *aus den USA* — почему, разберём в следующих темах.
-        point: "Страны без артикля, кроме *die Schweiz*, *die Türkei*, *die Ukraine*, *die USA*"
+          Названия стран почти всегда без артикля: *aus Kasachstan*, *in
+          Deutschland*. Но есть исключения, которые нужно запомнить: *die
+          Türkei*, *die Ukraine*, *die Schweiz* и *die USA* во множественном
+          числе. После *aus* артикль меняется: *aus der Türkei*, *aus den USA*
+          — почему, разберём в следующих темах. До Дании от Киля рукой подать,
+          поэтому *Dänemark* тоже в списке.
+        point: "Страны без артикля, кроме *die Türkei*, *die Ukraine*, *die Schweiz*, *die USA*"
         set: { view: words, words: laender }
       - read: >-
           Шесть вопросительных слов закрывают почти весь разговор при
@@ -325,7 +328,7 @@ steps:
           *sein* — «быть» — живёт по своим правилам, его формы надо выучить:
           *ich bin*, *du bist*, *er ist*, *wir sind*, *ihr seid*, *sie sind*.
           В отличие от русского, связку «быть» в настоящем времени не
-          пропускают: «я Анна» — *Ich bin Anna*.
+          пропускают: «я Дана» — *Ich bin Dana*.
         point: "*ich bin, du bist, er ist, wir sind, ihr seid, sie sind*"
         set: { view: table, table: sein }
 
@@ -336,36 +339,36 @@ steps:
       - read: >-
           Главное правило немецкого предложения: спрягаемый глагол стоит на
           второй позиции. Позицию занимает не одно слово, а целая группа: *in
-          Leipzig* — одна позиция. Схема справа — четыре поля: позиция 1,
+          Kiel* — одна позиция. Схема справа — четыре поля: позиция 1,
           глагол, середина и конец. Конец пока пуст, он понадобится позже.
         point: Спрягаемый глагол — всегда вторая позиция
         set:
           view: sentence
           rows:
-            - de: [Ich, wohn+e, in Leipzig., ""]
-              ru: Я живу в Лейпциге.
+            - de: [Ich, wohn+e, in Kiel., ""]
+              ru: Я живу в Киле.
       - read: >-
-          Поставим на первое место *in Leipzig*. Глагол остаётся на месте —
-          а подлежащее *ich* уходит в середину, сразу после глагола. Порядок
-          «В Лейпциге я живу» по-немецки невозможен: глагол не сдвигается с
-          второй позиции, что бы ни стояло первым.
-        point: "Что угодно на первом месте — глагол всё равно второй: *In Leipzig wohne ich.*"
+          Поставим на первое место *in Kiel*. Глагол остаётся на месте — а
+          подлежащее *ich* уходит в середину, сразу после глагола. Порядок «В
+          Киле я живу» по-немецки невозможен: глагол не сдвигается со второй
+          позиции, что бы ни стояло первым.
+        point: "Что угодно на первом месте — глагол всё равно второй: *In Kiel wohne ich.*"
         set:
           rows:
-            - de: [In Leipzig, wohn+e, ich., ""]
-              ru: В Лейпциге живу я.
+            - de: [In Kiel, wohn+e, ich., ""]
+              ru: В Киле живу я.
       - read: >-
           В вопросе с W-словом на первое место встаёт само W-слово: *Wo
           wohnst du?* А если ответ — «да» или «нет», первая позиция пустеет и
-          предложение начинается с глагола: *Wohnst du in Leipzig?* Глагол
-          при этом по-прежнему стоит в своей колонке.
+          предложение начинается с глагола: *Wohnst du in Kiel?* Глагол при
+          этом по-прежнему стоит в своей колонке.
         point: "W-вопрос: *Wo wohnst du?* Вопрос да/нет: *Wohnst du …?*"
         set:
           rows:
             - de: [Wo, wohn+st, du?, ""]
               ru: Где ты живёшь?
-            - de: ["", Wohn+st, du in Leipzig?, ""]
-              ru: Ты живёшь в Лейпциге?
+            - de: ["", Wohn+st, du in Kiel?, ""]
+              ru: Ты живёшь в Киле?
 
   - id: check
     chapter: practice
@@ -383,23 +386,23 @@ steps:
           rows:
             - de: [Woher, komm+en, Sie?, ""]
               ru: Откуда Вы?
-      - question: Марко говорит *Ich komme aus Italien*. Как начать фразу с *Aus Italien…*?
+      - question: Матео говорит *Ich komme aus Argentinien*. Как начать фразу с *Aus Argentinien…*?
         read: >-
-          *Aus Italien komme ich.* Группа *aus Italien* занимает первую
-          позицию, глагол *komme* остаётся второй, а *ich* переходит в
+          *Aus Argentinien komme ich.* Группа *aus Argentinien* занимает
+          первую позицию, глагол *komme* остаётся второй, а *ich* переходит в
           середину. Так говорят, когда хотят подчеркнуть, откуда именно.
-        point: "*Aus Italien komme ich.* — подлежащее уходит за глагол"
+        point: "*Aus Argentinien komme ich.* — подлежащее уходит за глагол"
         before:
           view: sentence
           rows:
-            - de: [Ich, komm+e, aus Italien., ""]
-              ru: Я из Италии.
+            - de: [Ich, komm+e, aus Argentinien., ""]
+              ru: Я из Аргентины.
         set:
           rows:
-            - de: [Ich, komm+e, aus Italien., ""]
-              ru: Я из Италии.
-            - de: [Aus Italien, komm+e, ich., ""]
-              ru: Из Италии я родом.
+            - de: [Ich, komm+e, aus Argentinien., ""]
+              ru: Я из Аргентины.
+            - de: [Aus Argentinien, komm+e, ich., ""]
+              ru: Из Аргентины я родом.
       - question: Почему *du heißt*, а не *du heißst*?
         read: >-
           Если основа кончается на *s*, *ß* или *z*, во втором лице
@@ -422,11 +425,12 @@ steps:
         point: "Часть 1: рассказ по ключевым словам + буквы + номер"
         set: { view: task, task: vorstellen, reveal: 0 }
       - read: >-
-          Образец ответа — простые предложения, глагол на втором месте. Не
-          нужно использовать все слова и строить сложные фразы: оценивают,
-          понятно ли вас. Возраст — *Ich bin … Jahre alt*, профессия — *Ich
-          bin … von Beruf*. Подготовьте свой рассказ заранее и проговорите
-          его вслух несколько раз.
+          Образец — рассказ Матео: простые предложения, глагол на втором
+          месте. Не нужно использовать все слова и строить сложные фразы:
+          оценивают, понятно ли вас. Возраст — *Ich bin … Jahre alt*,
+          профессия — *Ich bin … von Beruf*. Хобби в Киле часто морское: *Mein
+          Hobby ist Segeln.* Подготовьте свой рассказ заранее и проговорите
+          его вслух.
         point: Подготовьте рассказ о себе заранее — 6–7 простых предложений
         set: { reveal: 7 }
 
@@ -436,19 +440,149 @@ steps:
     beats:
       - read: >-
           Первая часть письменного экзамена — анкета. В тексте описана
-          ситуация: вы помогаете другу записаться на курс. Пять полей пустые,
-          вся информация для них есть в тексте. Переписывайте аккуратно:
-          ошибка в названии улицы или страны может стоить балла.
+          ситуация: вы помогаете подруге записаться на курс. Пять полей
+          пустые, вся информация для них есть в тексте. Переписывайте
+          аккуратно: ошибка в названии улицы или страны может стоить балла.
         point: "Анкета: 5 пустых полей, все ответы есть в тексте"
         set: { view: task, task: anmeldung, reveal: 0 }
       - question: Что написать в поле «Herkunftsland»?
         read: >-
-          *Italien*. *Herkunft* — «происхождение», *Land* — «страна»: страна,
+          *Türkei*. *Herkunft* — «происхождение», *Land* — «страна»: страна,
           откуда человек родом. Не путайте с *Wohnort* — местом, где он живёт
-          сейчас. Остальные поля заполняются так же: найдите в тексте слово
-          и перенесите его без изменений.
+          сейчас, это *Kiel*. В анкете страну пишут без артикля, хотя в
+          предложении говорят *aus der Türkei*. Остальные поля заполняются так
+          же: найдите в тексте слово и перенесите его без изменений.
         point: "*Herkunftsland* — откуда родом, *Wohnort* — где живёт"
         set: { reveal: 5 }
+
+case:
+  title: Wo ist die „Sprotte“?
+  ru: Где «Шпротта»?
+  intro: >-
+    Утро перед занятием. Матео заходит в парусный клуб на Kiellinie и застаёт
+    начальника гавани, господина Йенсена, в панике: со стоянки исчезла клубная
+    шлюпка «Шпротта». До Кильской недели — меньше месяца. Йенсен просит
+    помочь: свидетели говорят по-немецки, а на двери висит записка. Каждую
+    улику решает грамматика этой темы.
+  people:
+    J: { name: Herr Jensen, voice: Grandpa, role: Hafenmeister }
+    F: { name: Frauke, voice: Sandy, role: Fischbrötchen-Kiosk }
+    H: { name: Hauke, voice: Rocko, role: Segler }
+    L: { name: Lars, voice: Eddy, role: Student }
+  steps:
+    - read: >-
+        Первая свидетельница — Фрауке из киоска с рыбными булочками. Вчера
+        она работала допоздна. Слушайте внимательно: важно, сколько людей было
+        на причале.
+      evidence:
+        - J: Moin! Die „Sprotte“ ist weg!
+          ru: Привет! «Шпротта» пропала!
+        - F: Um zehn Uhr am Abend sind sie hier. Dann segeln sie.
+          ru: В десять вечера они здесь. Потом они выходят под парусом.
+      question: Кто был на причале в десять вечера?
+      options: [Одна женщина, Двое или больше, Один мужчина]
+      answer: 1
+      right: >-
+        *sie sind*, *sie segeln* — форма *sind* и окончание *-en* бывают
+        только у «они» и у вежливого *Sie*. Про одну женщину Фрауке сказала
+        бы *sie ist hier*, *sie segelt*. Значит, людей было минимум двое.
+      wrong:
+        - >-
+          Вы прочитали *sie* как «она». Но у «она» глагол другой: *sie ist*,
+          *sie segelt*. Здесь *sind* и *segeln* — это «они». Йенсен уже
+          собрался звонить соседке, которая ходит под парусом одна, — зря.
+        - null
+        - >-
+          Мужчину назвали бы *er*: *er ist hier*, *er segelt*. А в показаниях
+          Фрауке нет ни одного *er*.
+    - read: >-
+        На двери офиса гавани Йенсен находит записку. Почерк незнакомый. Кто
+        её писал — друзья Йенсена или люди, которые знают его плохо?
+      evidence:
+        - note: |-
+            Herr Jensen,
+            sind Sie morgen um neun hier?
+            Die „Sprotte“ ist in Holtenau.
+            Wir sind Freunde von Hauke.
+          ru: >-
+            Господин Йенсен, вы будете здесь завтра в девять? «Шпротта» в
+            Хольтенау. Мы друзья Хауке.
+      question: Кто писал записку?
+      options: [Близкие друзья Йенсена, "Люди, которые знают Йенсена плохо", Сам Хауке]
+      answer: 1
+      right: >-
+        *Sind Sie* — вежливое *Sie* с большой буквы и обращение *Herr Jensen*.
+        Так пишут человеку, с которым на «Вы». Подпись — *Wir sind Freunde von
+        Hauke*, «мы друзья Хауке»: авторов несколько, и с Йенсеном они не
+        дружат. А шлюпка — в Хольтенау, у шлюзов канала.
+      wrong:
+        - >-
+          Друзья написали бы на «ты»: *Bist du morgen hier?* А здесь *Sind Sie*
+          — вежливая форма для малознакомого человека.
+        - null
+        - >-
+          Хауке написал бы *ich*, а не *wir*. И себя он не назвал бы со
+          стороны: *Freunde von Hauke* — это «друзья Хауке».
+    - read: >-
+        У клуба Йенсен застаёт троих: Хауке и двух студентов. Каждый
+        представляется. Кто из них живёт там, где сейчас стоит «Шпротта»?
+      evidence:
+        - H: Moin! Ich bin Hauke. Ich komme aus Kiel, aber ich wohne jetzt in Hamburg.
+          ru: Привет! Я Хауке. Я из Киля, но сейчас живу в Гамбурге.
+        - L: Moin! Wir sind Lars und Merle. Wir wohnen in Holtenau.
+          ru: Привет! Мы Ларс и Мерле. Мы живём в Хольтенау.
+      question: Кто взял «Шпротту»?
+      options: [Хауке, Ларс и Мерле, Фрауке из киоска]
+      answer: 1
+      right: >-
+        Сходится всё: в записке *wir* — авторов двое, как Ларса и Мерле.
+        Шлюпка в Хольтенау, а они *wohnen in Holtenau* — живут там. А Хауке
+        *kommt aus Kiel* — родом из Киля, но *wohnt in Hamburg*: живёт он в
+        Гамбурге.
+      wrong:
+        - >-
+          *Ich komme aus Kiel* значит «я родом из Киля», а не «я живу в Киле».
+          Живёт Хауке в Гамбурге: *ich wohne jetzt in Hamburg*. И он один, а в
+          записке *wir*.
+        - null
+        - >-
+          Фрауке — свидетельница, а не подозреваемая. В десять вечера она
+          стояла у киоска и рассказывала о других: *sie sind hier*.
+  ending: >-
+    Ларс и Мерле во всём признаются: они тренировались к Кильской неделе,
+    ночью поднялся ветер, и они оставили «Шпротту» у шлюзов в Хольтенау.
+    Утром хотели всё объяснить — отсюда вежливое *Sind Sie morgen um neun
+    hier?* Йенсен ворчит, но прощает. Дело закрыто… почти. Вечером у клуба
+    крутится незнакомец в куртке Kieler Woche и говорит Йенсену: *Moin! Ich
+    wohnen in Kiel.* Кильцы так не скажут — правильно *ich wohne*. Кто он?
+    Тренироваться ловить таких — в игре «Шпион» в тренажёре, продолжение дела
+    — в следующей теме.
+
+spy:
+  - de: Ich bin Dana.
+    wrong: Ich Dana.
+    why: "Связку *sein* не пропускают: по-русски «я Дана», а по-немецки *Ich bin Dana*."
+  - de: Elif kommt aus der Türkei.
+    wrong: Elif kommt aus Türkei.
+    why: "*die Türkei* — страна с артиклем: *aus der Türkei*. Без артикля ошибаются те, в чьём языке артиклей нет."
+  - de: Ich komme aus Kasachstan.
+    wrong: Ich bin von Kasachstan.
+    why: "Откуда родом — *kommen aus*: *Ich komme aus Kasachstan*. *von* здесь не подходит, это калька с английского *from*."
+  - de: Er spricht Spanisch.
+    wrong: Er sprecht Spanisch.
+    why: "*sprechen* меняет *e* на *i*: *du sprichst*, *er spricht*."
+  - de: Wie heißen Sie?
+    wrong: Wie heißt Sie?
+    why: "Вежливое *Sie* спрягается как «они»: *Sie heißen*."
+  - de: Du heißt Mateo.
+    wrong: Du heißst Mateo.
+    why: "Основа на *ß*: во втором лице только *-t*, поэтому *du heißt*."
+  - de: Wir sind im Kurs.
+    wrong: Wir seid im Kurs.
+    why: "*wir sind*, *ihr seid* — формы *sein* надо запомнить."
+  - de: Seid ihr aus Argentinien?
+    wrong: Sind ihr aus Argentinien?
+    why: "С *ihr* — *seid*: *Seid ihr aus Argentinien?*"
 
 exercises:
   - type: choice
@@ -457,60 +591,66 @@ exercises:
     answer: 0
     why: "*Wie heißen Sie?* — «Как вас зовут?», буквально «как вы зовётесь?»"
   - type: choice
-    q: ___ kommst du? – Aus Polen.
+    q: ___ kommst du? – Aus Kasachstan.
     options: [Wo, Woher, Wer]
     answer: 1
     why: "Ответ с *aus* — значит, спрашивали «откуда»: *woher*."
   - type: choice
-    q: ___ wohnen Sie? – In Leipzig.
+    q: ___ wohnen Sie? – In Kiel.
     options: [Woher, Wie, Wo]
     answer: 2
-    why: "*wo* — «где». Ответ с *in*: *in Leipzig*."
+    why: "*wo* — «где». Ответ с *in*: *in Kiel*."
   - type: gap
-    q: Ich ___ Anna.
+    q: Ich ___ Dana.
     answer: [bin|heiße]
     hint: sein / heißen
   - type: gap
-    q: Du ___ aus Italien.
+    q: Du ___ aus Argentinien.
     answer: [kommst]
     hint: kommen
     why: "*du* — окончание *-st*: *du komm+st*."
   - type: gap
-    q: Wir ___ in Leipzig.
+    q: Wir ___ in Kiel.
     answer: [wohnen]
     hint: wohnen
     why: "*wir* — форма совпадает с инфинитивом."
   - type: gap
-    q: ___ Sie Herr Rossi?
+    q: ___ Sie Frau Yıldız?
     answer: [Sind]
     hint: sein
     why: "*Sie sind* — в вопросе да/нет глагол встаёт первым."
   - type: gap
-    q: Er ___ Deutsch und Englisch.
+    q: Mateo ___ Spanisch und Englisch.
     answer: [spricht]
     hint: sprechen
     why: "*sprechen* меняет *e* на *i*: *du sprichst*, *er spricht*."
   - type: choice
-    q: Ihr ___ aus Österreich, oder?
+    q: Ihr ___ aus der Türkei, oder?
     options: [sind, seid, ist]
     answer: 1
     why: "*ihr seid* — форму надо запомнить."
   - type: choice
-    q: Как поздороваться с преподавателем в девять утра?
-    options: [Guten Morgen!, Gute Nacht!, Tschüss!]
+    q: Как поздороваться с соседом в Киле в шесть вечера?
+    options: [Moin!, Gute Nacht!, Tschüss!]
     answer: 0
+    why: "*Moin!* на севере подходит в любое время суток. *Gute Nacht!* говорят перед сном."
   - type: choice
-    q: Как попрощаться с сотрудницей в офисе?
-    options: [Tschüss!, Auf Wiedersehen!, Hallo!]
+    q: Как попрощаться с сотрудницей в офисе школы?
+    options: [Moin!, Auf Wiedersehen!, Hallo!]
     answer: 1
-    why: "*Tschüss* — для своих, официально — *Auf Wiedersehen!*"
+    why: "*Moin* и *Hallo* — приветствия. Официально прощаются *Auf Wiedersehen!*"
+  - type: choice
+    q: Elif kommt aus ___ Türkei.
+    options: [die, der, "—"]
+    answer: 1
+    why: "*die Türkei* — страна с артиклем, а после *aus* он становится *der*: *aus der Türkei*."
   - type: order
     ru: Откуда Вы?
     de: Woher kommen Sie?
   - type: order
-    ru: Сейчас я живу в Лейпциге.
-    de: Jetzt wohne ich in Leipzig.
-    also: [Ich wohne jetzt in Leipzig.]
+    ru: Сейчас я живу в Киле.
+    de: Jetzt wohne ich in Kiel.
+    also: [Ich wohne jetzt in Kiel.]
     why: "*Jetzt* на первом месте — глагол второй, *ich* после глагола."
   - type: order
     ru: Ты говоришь по-немецки?

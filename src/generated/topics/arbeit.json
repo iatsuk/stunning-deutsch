@@ -2382,5 +2382,55 @@
    ],
    "audio": "audio/ed94a75ec95e.m4a"
   }
+ ],
+ "spy": [
+  {
+   "de": "Ich arbeite in Rom.",
+   "wrong": "Ich arbeiten in Rom.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *arbeite*.",
+   "auto": true
+  },
+  {
+   "de": "Ich habe in Rom gearbeitet.",
+   "wrong": "Ich haben in Rom gearbeitet.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *habe*.",
+   "auto": true
+  },
+  {
+   "de": "In Rom habe ich gearbeitet.",
+   "wrong": "In Rom ich habe gearbeitet.",
+   "why": "Глагол стоит на второй позиции: после *In Rom* сразу идёт *habe*, а *ich* — за ним.",
+   "auto": true
+  },
+  {
+   "de": "In Rom habe ich gearbeitet.",
+   "wrong": "In Rom haben ich gearbeitet.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *habe*.",
+   "auto": true
+  },
+  {
+   "de": "Was hast du gestern gemacht?",
+   "wrong": "Was du hast gestern gemacht?",
+   "why": "Глагол стоит на второй позиции: после *Was* сразу идёт *hast*, а *du* — за ним.",
+   "auto": true
+  },
+  {
+   "de": "Ich habe Deutsch gelernt.",
+   "wrong": "Ich haben Deutsch gelernt.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *habe*.",
+   "auto": true
+  },
+  {
+   "de": "Gestern hatte ich keine Zeit.",
+   "wrong": "Gestern ich hatte keine Zeit.",
+   "why": "Глагол стоит на второй позиции: после *Gestern* сразу идёт *hatte*, а *ich* — за ним.",
+   "auto": true
+  },
+  {
+   "de": "Gestern hatte ich keine Zeit.",
+   "wrong": "Gestern hatten ich keine Zeit.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *hatte*.",
+   "auto": true
+  }
  ]
 }

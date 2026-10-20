@@ -2,11 +2,11 @@
  "id": "kennenlernen",
  "level": "a1",
  "order": 1,
- "title": "Hallo! Ich bin Anna.",
+ "title": "Moin! Ich bin Dana.",
  "ru": "Знакомство",
- "lede": "Первый день на курсах немецкого в Лейпциге. Учимся здороваться, называть себя, говорить, откуда вы и где живёте, — и сразу видим главное правило немецкого предложения: глагол стоит на втором месте.",
+ "lede": "Первый день на курсах немецкого в Киле. Здесь здороваются коротким *Moin* — и утром, и вечером. Учимся называть себя, говорить, откуда вы и где живёте, — и сразу видим главное правило немецкого предложения: глагол стоит на втором месте.",
  "goals": [
-  "Поздороваться и попрощаться — с другом и с незнакомым человеком",
+  "Поздороваться и попрощаться — с соседом, с другом и в официальном офисе",
   "Назвать имя, страну, город и языки, на которых вы говорите",
   "Спросить то же самое у собеседника — на «ты» и на «Вы»",
   "Рассказать о себе по ключевым словам, как в начале устного экзамена"
@@ -48,130 +48,130 @@
   "kurs": {
    "title": "Der erste Kurstag",
    "ru": "Первый день на курсе",
-   "place": "Sprachschule, Leipzig",
+   "place": "Sprachschule Förde, Kiel",
    "people": {
-    "A": {
-     "name": "Anna",
+    "D": {
+     "name": "Dana",
      "voice": "Anna"
     },
     "M": {
-     "name": "Marco",
+     "name": "Mateo",
      "voice": "Reed"
     }
    },
    "lines": [
     {
-     "who": "A",
-     "de": "Hallo! Ich bin Anna. Und wer bist du?",
-     "ru": "Привет! Я Анна. А ты кто?",
-     "audio": "audio/00277273b4cc.m4a"
+     "who": "D",
+     "de": "Moin! Ich bin Dana. Und wer bist du?",
+     "ru": "Привет! Я Дана. А ты кто?",
+     "audio": "audio/ecb211485b70.m4a"
     },
     {
      "who": "M",
-     "de": "Hallo, Anna! Ich heiße Marco.",
-     "ru": "Привет, Анна! Меня зовут Марко.",
-     "audio": "audio/5fc2de72b8d5.m4a"
+     "de": "Moin, Dana! Ich heiße Mateo.",
+     "ru": "Привет, Дана! Меня зовут Матео.",
+     "audio": "audio/16d7a4b526ab.m4a"
     },
     {
-     "who": "A",
-     "de": "Woher kommst du, Marco?",
-     "ru": "Откуда ты, Марко?",
-     "audio": "audio/761c149bdd1d.m4a"
-    },
-    {
-     "who": "M",
-     "de": "Ich komme aus Italien, aus Rom. Und du?",
-     "ru": "Я из Италии, из Рима. А ты?",
-     "audio": "audio/a2b9d6ddf034.m4a"
-    },
-    {
-     "who": "A",
-     "de": "Ich komme aus Polen. Aber ich wohne jetzt hier in Leipzig.",
-     "ru": "Я из Польши. Но сейчас я живу здесь, в Лейпциге.",
-     "audio": "audio/dce373ac7947.m4a"
+     "who": "D",
+     "de": "Woher kommst du, Mateo?",
+     "ru": "Откуда ты, Матео?",
+     "audio": "audio/95bfaabd82ee.m4a"
     },
     {
      "who": "M",
-     "de": "Ich wohne auch in Leipzig! Welche Sprachen sprichst du?",
-     "ru": "Я тоже живу в Лейпциге! На каких языках ты говоришь?",
-     "audio": "audio/6d555fdf1798.m4a"
+     "de": "Ich komme aus Argentinien, aus Buenos Aires. Und du?",
+     "ru": "Я из Аргентины, из Буэнос-Айреса. А ты?",
+     "audio": "audio/9e3c9937c3f0.m4a"
     },
     {
-     "who": "A",
-     "de": "Polnisch, Englisch und ein bisschen Deutsch.",
-     "ru": "На польском, английском и немного на немецком.",
-     "audio": "audio/4fd6cf74decb.m4a"
+     "who": "D",
+     "de": "Ich komme aus Kasachstan. Aber ich wohne jetzt hier in Kiel, in Gaarden.",
+     "ru": "Я из Казахстана. Но сейчас я живу здесь, в Киле, в Гаардене.",
+     "audio": "audio/c92a5928d34a.m4a"
     },
     {
      "who": "M",
-     "de": "Ich auch – ein bisschen!",
-     "ru": "Я тоже — немного!",
-     "audio": "audio/c521410179f9.m4a"
+     "de": "Ich wohne auch in Kiel, in Holtenau! Welche Sprachen sprichst du?",
+     "ru": "Я тоже живу в Киле, в Хольтенау! На каких языках ты говоришь?",
+     "audio": "audio/05b07773eba0.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Kasachisch, Russisch, Englisch und ein bisschen Deutsch.",
+     "ru": "На казахском, русском, английском и немного на немецком.",
+     "audio": "audio/25d808e07f92.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Ich spreche Spanisch und Englisch – und auch ein bisschen Deutsch!",
+     "ru": "Я говорю по-испански и по-английски — и тоже немного по-немецки!",
+     "audio": "audio/61fc2541dba2.m4a"
     }
    ]
   },
   "buero": {
    "title": "Im Büro der Sprachschule",
    "ru": "В офисе языковой школы",
-   "place": "Sprachschule, Leipzig",
+   "place": "Sprachschule Förde, Kiel",
    "people": {
-    "W": {
-     "name": "Frau Weber",
+    "P": {
+     "name": "Frau Petersen",
      "voice": "Sandy"
     },
-    "M": {
-     "name": "Marco",
-     "voice": "Reed"
+    "E": {
+     "name": "Elif",
+     "voice": "Flo"
     }
    },
    "lines": [
     {
-     "who": "W",
-     "de": "Guten Morgen! Wie heißen Sie, bitte?",
-     "ru": "Доброе утро! Как вас зовут?",
-     "audio": "audio/7097ef1a1563.m4a"
+     "who": "P",
+     "de": "Moin! Wie heißen Sie, bitte?",
+     "ru": "Здравствуйте! Как вас зовут?",
+     "audio": "audio/391a39b871d1.m4a"
     },
     {
-     "who": "M",
-     "de": "Mein Name ist Marco Rossi.",
-     "ru": "Меня зовут Марко Росси.",
-     "audio": "audio/f6b84a7ad520.m4a"
+     "who": "E",
+     "de": "Mein Name ist Elif Yıldız.",
+     "ru": "Меня зовут Элиф Йылдыз.",
+     "audio": "audio/2d8f86048f38.m4a"
     },
     {
-     "who": "W",
-     "de": "Und woher kommen Sie, Herr Rossi?",
-     "ru": "А откуда вы, господин Росси?",
-     "audio": "audio/bd296ddf6025.m4a"
+     "who": "P",
+     "de": "Und woher kommen Sie, Frau Yıldız?",
+     "ru": "А откуда вы, госпожа Йылдыз?",
+     "audio": "audio/9cba7a217715.m4a"
     },
     {
-     "who": "M",
-     "de": "Aus Italien.",
-     "ru": "Из Италии.",
-     "audio": "audio/800e262e79d7.m4a"
+     "who": "E",
+     "de": "Aus der Türkei, aus Izmir.",
+     "ru": "Из Турции, из Измира.",
+     "audio": "audio/6417eb5b162a.m4a"
     },
     {
-     "who": "W",
+     "who": "P",
      "de": "Wo wohnen Sie?",
      "ru": "Где вы живёте?",
      "audio": "audio/348dabea1cce.m4a"
     },
     {
-     "who": "M",
-     "de": "In Leipzig, in der Goethestraße.",
-     "ru": "В Лейпциге, на Гётештрассе.",
-     "audio": "audio/827121b8fdec.m4a"
+     "who": "E",
+     "de": "In Kiel, in der Holtenauer Straße.",
+     "ru": "В Киле, на Хольтенауэр-штрассе.",
+     "audio": "audio/83ba6f3c63cb.m4a"
     },
     {
-     "who": "W",
-     "de": "Danke schön. Auf Wiedersehen, Herr Rossi!",
-     "ru": "Большое спасибо. До свидания, господин Росси!",
-     "audio": "audio/f193086d88dd.m4a"
+     "who": "P",
+     "de": "Danke schön. Auf Wiedersehen, Frau Yıldız!",
+     "ru": "Большое спасибо. До свидания, госпожа Йылдыз!",
+     "audio": "audio/11a3d9fd0c1c.m4a"
     },
     {
-     "who": "M",
+     "who": "E",
      "de": "Auf Wiedersehen!",
      "ru": "До свидания!",
-     "audio": "audio/1ca23b480a06.m4a"
+     "audio": "audio/ac58072c5e25.m4a"
     }
    ]
   }
@@ -181,6 +181,14 @@
    "title": "Begrüßung und Abschied",
    "ru": "Приветствие и прощание",
    "items": [
+    {
+     "de": "Moin!",
+     "ru": "Привет! Здравствуйте!",
+     "gender": null,
+     "plural": null,
+     "note": "на севере Германии — в любое время суток",
+     "audio": "audio/db024c4183b8.m4a"
+    },
     {
      "de": "Hallo!",
      "ru": "Привет!",
@@ -238,6 +246,7 @@
      "ru": "Пока!",
      "gender": null,
      "plural": null,
+     "note": "на севере — и в магазине",
      "audio": "audio/9f61c1dc3dd3.m4a"
     },
     {
@@ -300,7 +309,7 @@
      "ru": "зваться",
      "gender": null,
      "plural": null,
-     "note": "Ich heiße Marco.",
+     "note": "Ich heiße Mateo.",
      "audio": "audio/4ea467b70ef9.m4a"
     },
     {
@@ -308,7 +317,7 @@
      "ru": "быть родом из",
      "gender": null,
      "plural": null,
-     "note": "Ich komme aus Polen.",
+     "note": "Ich komme aus Kasachstan.",
      "audio": "audio/58d652289a2f.m4a"
     },
     {
@@ -316,7 +325,7 @@
      "ru": "жить в",
      "gender": null,
      "plural": null,
-     "note": "Ich wohne in Leipzig.",
+     "note": "Ich wohne in Kiel.",
      "audio": "audio/fe4edc26ab2b.m4a"
     },
     {
@@ -342,36 +351,12 @@
      "audio": "audio/99f04a172472.m4a"
     },
     {
-     "de": "Österreich",
-     "ru": "Австрия",
+     "de": "Dänemark",
+     "ru": "Дания",
      "gender": null,
      "plural": null,
-     "note": "Deutsch",
-     "audio": "audio/fe57c1087b5a.m4a"
-    },
-    {
-     "de": "Polen",
-     "ru": "Польша",
-     "gender": null,
-     "plural": null,
-     "note": "Polnisch",
-     "audio": "audio/d5b4fcbcd9d0.m4a"
-    },
-    {
-     "de": "Italien",
-     "ru": "Италия",
-     "gender": null,
-     "plural": null,
-     "note": "Italienisch",
-     "audio": "audio/af079ec224ac.m4a"
-    },
-    {
-     "de": "Russland",
-     "ru": "Россия",
-     "gender": null,
-     "plural": null,
-     "note": "Russisch",
-     "audio": "audio/bb91df13322f.m4a"
+     "note": "Dänisch",
+     "audio": "audio/0c7b0dab16a5.m4a"
     },
     {
      "de": "Kasachstan",
@@ -382,20 +367,38 @@
      "audio": "audio/4d3618555494.m4a"
     },
     {
-     "de": "Belarus",
-     "ru": "Беларусь",
+     "de": "Russland",
+     "ru": "Россия",
      "gender": null,
      "plural": null,
-     "note": "Belarussisch, Russisch",
-     "audio": "audio/302ff17ca278.m4a"
+     "note": "Russisch",
+     "audio": "audio/bb91df13322f.m4a"
     },
     {
-     "de": "England",
-     "ru": "Англия",
+     "de": "Argentinien",
+     "ru": "Аргентина",
      "gender": null,
      "plural": null,
-     "note": "Englisch",
-     "audio": "audio/4bc52099e24a.m4a"
+     "note": "Spanisch",
+     "audio": "audio/439a902546b6.m4a"
+    },
+    {
+     "de": "die Türkei",
+     "ru": "Турция",
+     "gender": "f",
+     "plural": null,
+     "noPlural": true,
+     "note": "aus der Türkei · Türkisch",
+     "audio": "audio/c6a1931b5e16.m4a"
+    },
+    {
+     "de": "die Ukraine",
+     "ru": "Украина",
+     "gender": "f",
+     "plural": null,
+     "noPlural": true,
+     "note": "aus der Ukraine · Ukrainisch",
+     "audio": "audio/c7fd2760a5e2.m4a"
     },
     {
      "de": "die Schweiz",
@@ -405,24 +408,6 @@
      "noPlural": true,
      "note": "aus der Schweiz",
      "audio": "audio/56909fc8dda4.m4a"
-    },
-    {
-     "de": "die Türkei",
-     "ru": "Турция",
-     "gender": "f",
-     "plural": null,
-     "noPlural": true,
-     "note": "aus der Türkei",
-     "audio": "audio/c6a1931b5e16.m4a"
-    },
-    {
-     "de": "die Ukraine",
-     "ru": "Украина",
-     "gender": "f",
-     "plural": null,
-     "noPlural": true,
-     "note": "aus der Ukraine — Ukrainisch",
-     "audio": "audio/c7fd2760a5e2.m4a"
     },
     {
      "de": "die USA",
@@ -588,17 +573,17 @@
     [
      "ich",
      "bin",
-     "Ich bin Anna."
+     "Ich bin Dana."
     ],
     [
      "du",
      "bist",
-     "Bist du Marco?"
+     "Bist du Mateo?"
     ],
     [
      "er / sie / es",
      "ist",
-     "Das ist Frau Weber."
+     "Das ist Frau Petersen."
     ],
     [
      "wir",
@@ -608,12 +593,12 @@
     [
      "ihr",
      "seid",
-     "Seid ihr aus Italien?"
+     "Seid ihr aus Argentinien?"
     ],
     [
      "sie / Sie",
      "sind",
-     "Sind Sie Herr Rossi?"
+     "Sind Sie Frau Yıldız?"
     ]
    ],
    "ruCols": [],
@@ -637,40 +622,40 @@
    ],
    "sample": [
     {
-     "de": "Mein Name ist Marco Rossi.",
-     "audio": "audio/cc34a6dad60d.m4a"
+     "de": "Mein Name ist Mateo Fernández.",
+     "audio": "audio/76a5980419c6.m4a"
     },
     {
      "de": "Ich bin 28 Jahre alt.",
      "audio": "audio/dcf5a9e1ecbe.m4a"
     },
     {
-     "de": "Ich komme aus Italien.",
-     "audio": "audio/78bf4125f084.m4a"
+     "de": "Ich komme aus Argentinien.",
+     "audio": "audio/115e70b664ef.m4a"
     },
     {
-     "de": "Ich wohne in Leipzig.",
-     "audio": "audio/0b51842cfe3b.m4a"
+     "de": "Ich wohne in Kiel, in Holtenau.",
+     "audio": "audio/596282f3be4f.m4a"
     },
     {
-     "de": "Ich spreche Italienisch, Englisch und ein bisschen Deutsch.",
-     "audio": "audio/b716d0565b94.m4a"
+     "de": "Ich spreche Spanisch, Englisch und ein bisschen Deutsch.",
+     "audio": "audio/34d09c7cd39d.m4a"
     },
     {
      "de": "Ich bin Koch von Beruf.",
      "audio": "audio/7254db79fd4f.m4a"
     },
     {
-     "de": "Mein Hobby ist Fußball.",
-     "audio": "audio/f705a84cdea5.m4a"
+     "de": "Mein Hobby ist Segeln.",
+     "audio": "audio/db15b13be4fa.m4a"
     }
    ]
   },
   "anmeldung": {
    "kind": "form",
    "part": "schreiben-1",
-   "title": "Anmeldung – Sprachschule Leipzig",
-   "situation": "Ihr Freund Marco Rossi kommt aus Italien. Er wohnt jetzt in Leipzig, in der Goethestraße 12. Er spricht Italienisch und Englisch. Marco möchte einen Deutschkurs machen. Er braucht Ihre Hilfe. Füllen Sie das Formular aus.",
+   "title": "Anmeldung – Sprachschule Förde, Kiel",
+   "situation": "Ihre Freundin Elif Yıldız kommt aus der Türkei. Sie wohnt jetzt in Kiel, in der Holtenauer Straße 12. Sie spricht Türkisch und Englisch. Elif möchte einen Deutschkurs machen. Sie braucht Ihre Hilfe. Füllen Sie das Formular aus.",
    "fields": [
     {
      "label": "Kurs",
@@ -679,32 +664,32 @@
     },
     {
      "label": "Familienname",
-     "value": "Rossi",
+     "value": "Yıldız",
      "given": true
     },
     {
      "label": "Vorname",
-     "value": "Marco",
+     "value": "Elif",
      "given": false
     },
     {
      "label": "Herkunftsland",
-     "value": "Italien",
+     "value": "Türkei",
      "given": false
     },
     {
      "label": "Straße",
-     "value": "Goethestraße 12",
+     "value": "Holtenauer Straße 12",
      "given": false
     },
     {
      "label": "Wohnort",
-     "value": "Leipzig",
+     "value": "Kiel",
      "given": false
     },
     {
      "label": "Sprachen",
-     "value": "Italienisch, Englisch",
+     "value": "Türkisch, Englisch",
      "given": false
     }
    ],
@@ -718,8 +703,8 @@
    "stepTitle": "Первая встреча",
    "chapterIndex": 0,
    "indexInStep": 0,
-   "read": "Первый день на курсе немецкого. Анна садится рядом с Марко и начинает с самого простого. *Hallo!* — приветствие на все случаи: так здороваются с однокурсниками, коллегами, соседями. Дальше имя: *Ich bin Anna* — «я Анна». И встречный вопрос: *Und wer bist du?* — «а ты кто?».",
-   "point": "*Hallo!* — универсальное приветствие, *Ich bin …* — «я …»",
+   "read": "Первый день на курсе немецкого в Киле. Дана садится рядом с Матео и начинает с самого простого. *Moin!* — так на севере Германии здороваются в любое время суток: утром, днём и вечером, с соседом и с продавцом. Дальше имя: *Ich bin Dana* — «я Дана». И встречный вопрос: *Und wer bist du?* — «а ты кто?».",
+   "point": "*Moin!* — северное «привет» в любое время, *Ich bin …* — «я …»",
    "scene": {
     "view": "dialogue",
     "dialogue": "kurs",
@@ -735,7 +720,7 @@
    "stepTitle": "Первая встреча",
    "chapterIndex": 0,
    "indexInStep": 1,
-   "read": "Марко отвечает по-другому: *Ich heiße Marco* — «меня зовут Марко», буквально «я зовусь». Есть и третий вариант, чуть официальнее: *Mein Name ist Marco Rossi.* Все три верные — выберите один и используйте его, пока он не начнёт выскакивать сам.",
+   "read": "Матео отвечает по-другому: *Ich heiße Mateo* — «меня зовут Матео», буквально «я зовусь». Есть и третий вариант, чуть официальнее: *Mein Name ist Mateo Fernández.* Все три верные — выберите один и используйте его, пока он не начнёт выскакивать сам.",
    "point": "Имя: *Ich bin …*, *Ich heiße …*, *Mein Name ist …*",
    "scene": {
     "view": "dialogue",
@@ -755,7 +740,7 @@
    "stepTitle": "Первая встреча",
    "chapterIndex": 0,
    "indexInStep": 2,
-   "read": "Теперь — откуда человек. *Woher kommst du?* — «откуда ты?» Отвечаем с предлогом *aus*: *Ich komme aus Italien, aus Rom.* Тот же *aus* работает со страной и с городом. Короткое *Und du?* — «а ты?» — возвращает вопрос, и разговор идёт дальше.",
+   "read": "Теперь — откуда человек. *Woher kommst du?* — «откуда ты?» Отвечаем с предлогом *aus*: *Ich komme aus Argentinien, aus Buenos Aires.* Тот же *aus* работает со страной и с городом. Короткое *Und du?* — «а ты?» — возвращает вопрос, и разговор идёт дальше.",
    "point": "*Woher kommst du?* — *Ich komme aus …*",
    "scene": {
     "view": "dialogue",
@@ -777,7 +762,7 @@
    "stepTitle": "Первая встреча",
    "chapterIndex": 0,
    "indexInStep": 3,
-   "read": "Анна родом из Польши, но живёт в Лейпциге: *ich wohne in Leipzig*. Где живёшь — *wohnen in*, откуда родом — *kommen aus*. Последний вопрос про языки: *Welche Sprachen sprichst du?* Названия языков чаще всего кончаются на *-isch*: *Polnisch*, *Englisch*, *Italienisch*. Исключение — *Deutsch*.",
+   "read": "Дана родом из Казахстана, но живёт в Киле, в районе Гаарден: *ich wohne in Kiel*. Где живёшь — *wohnen in*, откуда родом — *kommen aus*. Последний вопрос про языки: *Welche Sprachen sprichst du?* Названия языков чаще всего кончаются на *-isch*: *Kasachisch*, *Russisch*, *Englisch*. Исключение — *Deutsch*.",
    "point": "*wohnen in* — где живёшь, *kommen aus* — откуда родом",
    "scene": {
     "view": "dialogue",
@@ -792,7 +777,8 @@
     "focus": [
      4,
      5,
-     6
+     6,
+     7
     ]
    }
   },
@@ -802,7 +788,7 @@
    "stepTitle": "Теперь официально",
    "chapterIndex": 0,
    "indexInStep": 0,
-   "read": "В офисе школы Марко записывается на курс. Сотрудница обращается к нему на *Sie* — вежливое «Вы», всегда с большой буквы. Вопросы те же, но у глагола другое окончание: *Wie heißen Sie?*, *Woher kommen Sie?* К незнакомым взрослым обращаются *Herr* или *Frau* плюс фамилия: *Herr Rossi*, *Frau Weber*.",
+   "read": "В офисе школы Элиф записывается на курс. Сотрудница, фрау Петерсен, обращается к ней на *Sie* — вежливое «Вы», всегда с большой буквы. Вопросы те же, но у глагола другое окончание: *Wie heißen Sie?*, *Woher kommen Sie?* К незнакомым взрослым обращаются *Herr* или *Frau* плюс фамилия: *Frau Yıldız*, *Frau Petersen*.",
    "point": "*Sie* — вежливое «Вы»; *Herr* / *Frau* + фамилия",
    "scene": {
     "view": "dialogue",
@@ -825,8 +811,8 @@
    "stepTitle": "Теперь официально",
    "chapterIndex": 0,
    "indexInStep": 1,
-   "read": "Ответы можно давать коротко: *Aus Italien.* — *In Leipzig.* Это нормально и в жизни, и на экзамене. А прощаются здесь не *Tschüss*, а *Auf Wiedersehen* — «до свидания». *Tschüss* оставьте для друзей и коллег, с которыми вы на «ты».",
-   "point": "*Tschüss!* — друзьям, *Auf Wiedersehen!* — официально",
+   "read": "Ответы можно давать коротко: *Aus der Türkei.* — *In Kiel.* Это нормально и в жизни, и на экзамене. *die Türkei* — одна из немногих стран с артиклем, поэтому *aus der Türkei*. А прощаются в офисе *Auf Wiedersehen*. *Tschüss* на севере услышите и от кассира, но в официальном разговоре надёжнее *Auf Wiedersehen*.",
+   "point": "*Auf Wiedersehen!* — официально; *Tschüss!* — привычно на севере",
    "scene": {
     "view": "dialogue",
     "dialogue": "buero",
@@ -852,8 +838,8 @@
    "stepTitle": "Здороваемся и прощаемся",
    "chapterIndex": 1,
    "indexInStep": 0,
-   "read": "Приветствие зависит от времени суток: *Guten Morgen!* — примерно до десяти-одиннадцати, *Guten Tag!* — днём, *Guten Abend!* — вечером. *Gute Nacht!* — это не приветствие, а «спокойной ночи». На *Wie geht's?* не рассказывают о жизни: хватит *Danke, gut!*",
-   "point": "*Guten Morgen / Tag / Abend!* — по времени суток",
+   "read": "В учебниках приветствие зависит от времени суток: *Guten Morgen!* — примерно до десяти-одиннадцати, *Guten Tag!* — днём, *Guten Abend!* — вечером. В Киле всё проще: *Moin!* подходит всегда. *Gute Nacht!* — это не приветствие, а «спокойной ночи». На *Wie geht's?* не рассказывают о жизни: хватит *Danke, gut!*",
+   "point": "*Moin!* — всегда; *Guten Morgen / Tag / Abend!* — по времени суток",
    "scene": {
     "view": "words",
     "dialogue": "buero",
@@ -880,8 +866,8 @@
    "stepTitle": "Слова о себе",
    "chapterIndex": 1,
    "indexInStep": 1,
-   "read": "Названия стран почти всегда без артикля: *aus Italien*, *in Deutschland*, *aus Russland*, *aus Kasachstan*. Но есть исключения, которые нужно запомнить: *die Schweiz*, *die Türkei*, *die Ukraine* и *die USA* во множественном числе. После *aus* артикль меняется: *aus der Ukraine*, *aus den USA* — почему, разберём в следующих темах.",
-   "point": "Страны без артикля, кроме *die Schweiz*, *die Türkei*, *die Ukraine*, *die USA*",
+   "read": "Названия стран почти всегда без артикля: *aus Kasachstan*, *in Deutschland*. Но есть исключения, которые нужно запомнить: *die Türkei*, *die Ukraine*, *die Schweiz* и *die USA* во множественном числе. После *aus* артикль меняется: *aus der Türkei*, *aus den USA* — почему, разберём в следующих темах. До Дании от Киля рукой подать, поэтому *Dänemark* тоже в списке.",
+   "point": "Страны без артикля, кроме *die Türkei*, *die Ukraine*, *die Schweiz*, *die USA*",
    "scene": {
     "view": "words",
     "dialogue": "buero",
@@ -969,7 +955,7 @@
    "stepTitle": "Окончания глагола",
    "chapterIndex": 2,
    "indexInStep": 2,
-   "read": "*sein* — «быть» — живёт по своим правилам, его формы надо выучить: *ich bin*, *du bist*, *er ist*, *wir sind*, *ihr seid*, *sie sind*. В отличие от русского, связку «быть» в настоящем времени не пропускают: «я Анна» — *Ich bin Anna*.",
+   "read": "*sein* — «быть» — живёт по своим правилам, его формы надо выучить: *ich bin*, *du bist*, *er ist*, *wir sind*, *ihr seid*, *sie sind*. В отличие от русского, связку «быть» в настоящем времени не пропускают: «я Дана» — *Ich bin Dana*.",
    "point": "*ich bin, du bist, er ist, wir sind, ihr seid, sie sind*",
    "scene": {
     "view": "table",
@@ -984,7 +970,7 @@
    "stepTitle": "Глагол — на втором месте",
    "chapterIndex": 2,
    "indexInStep": 0,
-   "read": "Главное правило немецкого предложения: спрягаемый глагол стоит на второй позиции. Позицию занимает не одно слово, а целая группа: *in Leipzig* — одна позиция. Схема справа — четыре поля: позиция 1, глагол, середина и конец. Конец пока пуст, он понадобится позже.",
+   "read": "Главное правило немецкого предложения: спрягаемый глагол стоит на второй позиции. Позицию занимает не одно слово, а целая группа: *in Kiel* — одна позиция. Схема справа — четыре поля: позиция 1, глагол, середина и конец. Конец пока пуст, он понадобится позже.",
    "point": "Спрягаемый глагол — всегда вторая позиция",
    "scene": {
     "view": "sentence",
@@ -1012,16 +998,16 @@
          "text": "in"
         },
         {
-         "key": "leipzig",
-         "text": "Leipzig"
+         "key": "kiel",
+         "text": "Kiel"
         }
        ],
        []
       ],
       "punct": ".",
-      "plain": "Ich wohne in Leipzig.",
-      "ru": "Я живу в Лейпциге.",
-      "audio": "audio/0b51842cfe3b.m4a"
+      "plain": "Ich wohne in Kiel.",
+      "ru": "Я живу в Киле.",
+      "audio": "audio/15a0da9f89b9.m4a"
      }
     ]
    }
@@ -1032,8 +1018,8 @@
    "stepTitle": "Глагол — на втором месте",
    "chapterIndex": 2,
    "indexInStep": 1,
-   "read": "Поставим на первое место *in Leipzig*. Глагол остаётся на месте — а подлежащее *ich* уходит в середину, сразу после глагола. Порядок «В Лейпциге я живу» по-немецки невозможен: глагол не сдвигается с второй позиции, что бы ни стояло первым.",
-   "point": "Что угодно на первом месте — глагол всё равно второй: *In Leipzig wohne ich.*",
+   "read": "Поставим на первое место *in Kiel*. Глагол остаётся на месте — а подлежащее *ich* уходит в середину, сразу после глагола. Порядок «В Киле я живу» по-немецки невозможен: глагол не сдвигается со второй позиции, что бы ни стояло первым.",
+   "point": "Что угодно на первом месте — глагол всё равно второй: *In Kiel wohne ich.*",
    "scene": {
     "view": "sentence",
     "dialogue": "buero",
@@ -1048,8 +1034,8 @@
          "text": "In"
         },
         {
-         "key": "leipzig",
-         "text": "Leipzig"
+         "key": "kiel",
+         "text": "Kiel"
         }
        ],
        [
@@ -1067,9 +1053,9 @@
        []
       ],
       "punct": ".",
-      "plain": "In Leipzig wohne ich.",
-      "ru": "В Лейпциге живу я.",
-      "audio": "audio/2f6079705c23.m4a"
+      "plain": "In Kiel wohne ich.",
+      "ru": "В Киле живу я.",
+      "audio": "audio/b6c017ebe93f.m4a"
      }
     ]
    }
@@ -1080,7 +1066,7 @@
    "stepTitle": "Глагол — на втором месте",
    "chapterIndex": 2,
    "indexInStep": 2,
-   "read": "В вопросе с W-словом на первое место встаёт само W-слово: *Wo wohnst du?* А если ответ — «да» или «нет», первая позиция пустеет и предложение начинается с глагола: *Wohnst du in Leipzig?* Глагол при этом по-прежнему стоит в своей колонке.",
+   "read": "В вопросе с W-словом на первое место встаёт само W-слово: *Wo wohnst du?* А если ответ — «да» или «нет», первая позиция пустеет и предложение начинается с глагола: *Wohnst du in Kiel?* Глагол при этом по-прежнему стоит в своей колонке.",
    "point": "W-вопрос: *Wo wohnst du?* Вопрос да/нет: *Wohnst du …?*",
    "scene": {
     "view": "sentence",
@@ -1134,16 +1120,16 @@
          "text": "in"
         },
         {
-         "key": "leipzig",
-         "text": "Leipzig"
+         "key": "kiel",
+         "text": "Kiel"
         }
        ],
        []
       ],
       "punct": "?",
-      "plain": "Wohnst du in Leipzig?",
-      "ru": "Ты живёшь в Лейпциге?",
-      "audio": "audio/b4bfa64993d1.m4a"
+      "plain": "Wohnst du in Kiel?",
+      "ru": "Ты живёшь в Киле?",
+      "audio": "audio/2beceb3bd9b8.m4a"
      }
     ],
     "fresh": [
@@ -1212,16 +1198,16 @@
          "text": "in"
         },
         {
-         "key": "leipzig",
-         "text": "Leipzig"
+         "key": "kiel",
+         "text": "Kiel"
         }
        ],
        []
       ],
       "punct": "?",
-      "plain": "Wohnst du in Leipzig?",
-      "ru": "Ты живёшь в Лейпциге?",
-      "audio": "audio/b4bfa64993d1.m4a"
+      "plain": "Wohnst du in Kiel?",
+      "ru": "Ты живёшь в Киле?",
+      "audio": "audio/2beceb3bd9b8.m4a"
      }
     ],
     "fresh": [
@@ -1270,9 +1256,9 @@
    "stepTitle": "Проверьте себя",
    "chapterIndex": 3,
    "indexInStep": 1,
-   "read": "*Aus Italien komme ich.* Группа *aus Italien* занимает первую позицию, глагол *komme* остаётся второй, а *ich* переходит в середину. Так говорят, когда хотят подчеркнуть, откуда именно.",
-   "point": "*Aus Italien komme ich.* — подлежащее уходит за глагол",
-   "question": "Марко говорит *Ich komme aus Italien*. Как начать фразу с *Aus Italien…*?",
+   "read": "*Aus Argentinien komme ich.* Группа *aus Argentinien* занимает первую позицию, глагол *komme* остаётся второй, а *ich* переходит в середину. Так говорят, когда хотят подчеркнуть, откуда именно.",
+   "point": "*Aus Argentinien komme ich.* — подлежащее уходит за глагол",
+   "question": "Матео говорит *Ich komme aus Argentinien*. Как начать фразу с *Aus Argentinien…*?",
    "sceneBefore": {
     "view": "sentence",
     "dialogue": "buero",
@@ -1299,16 +1285,16 @@
          "text": "aus"
         },
         {
-         "key": "italien",
-         "text": "Italien"
+         "key": "argentinien",
+         "text": "Argentinien"
         }
        ],
        []
       ],
       "punct": ".",
-      "plain": "Ich komme aus Italien.",
-      "ru": "Я из Италии.",
-      "audio": "audio/78bf4125f084.m4a"
+      "plain": "Ich komme aus Argentinien.",
+      "ru": "Я из Аргентины.",
+      "audio": "audio/115e70b664ef.m4a"
      }
     ]
    },
@@ -1338,16 +1324,16 @@
          "text": "aus"
         },
         {
-         "key": "italien",
-         "text": "Italien"
+         "key": "argentinien",
+         "text": "Argentinien"
         }
        ],
        []
       ],
       "punct": ".",
-      "plain": "Ich komme aus Italien.",
-      "ru": "Я из Италии.",
-      "audio": "audio/78bf4125f084.m4a"
+      "plain": "Ich komme aus Argentinien.",
+      "ru": "Я из Аргентины.",
+      "audio": "audio/115e70b664ef.m4a"
      },
      {
       "slots": [
@@ -1357,8 +1343,8 @@
          "text": "Aus"
         },
         {
-         "key": "italien",
-         "text": "Italien"
+         "key": "argentinien",
+         "text": "Argentinien"
         }
        ],
        [
@@ -1376,9 +1362,9 @@
        []
       ],
       "punct": ".",
-      "plain": "Aus Italien komme ich.",
-      "ru": "Из Италии я родом.",
-      "audio": "audio/cb071246fb6b.m4a"
+      "plain": "Aus Argentinien komme ich.",
+      "ru": "Из Аргентины я родом.",
+      "audio": "audio/f8721e34ba75.m4a"
      }
     ],
     "fresh": [
@@ -1421,16 +1407,16 @@
          "text": "aus"
         },
         {
-         "key": "italien",
-         "text": "Italien"
+         "key": "argentinien",
+         "text": "Argentinien"
         }
        ],
        []
       ],
       "punct": ".",
-      "plain": "Ich komme aus Italien.",
-      "ru": "Я из Италии.",
-      "audio": "audio/78bf4125f084.m4a"
+      "plain": "Ich komme aus Argentinien.",
+      "ru": "Я из Аргентины.",
+      "audio": "audio/115e70b664ef.m4a"
      },
      {
       "slots": [
@@ -1440,8 +1426,8 @@
          "text": "Aus"
         },
         {
-         "key": "italien",
-         "text": "Italien"
+         "key": "argentinien",
+         "text": "Argentinien"
         }
        ],
        [
@@ -1459,9 +1445,9 @@
        []
       ],
       "punct": ".",
-      "plain": "Aus Italien komme ich.",
-      "ru": "Из Италии я родом.",
-      "audio": "audio/cb071246fb6b.m4a"
+      "plain": "Aus Argentinien komme ich.",
+      "ru": "Из Аргентины я родом.",
+      "audio": "audio/f8721e34ba75.m4a"
      }
     ],
     "fresh": [
@@ -1494,16 +1480,16 @@
          "text": "aus"
         },
         {
-         "key": "italien",
-         "text": "Italien"
+         "key": "argentinien",
+         "text": "Argentinien"
         }
        ],
        []
       ],
       "punct": ".",
-      "plain": "Ich komme aus Italien.",
-      "ru": "Я из Италии.",
-      "audio": "audio/78bf4125f084.m4a"
+      "plain": "Ich komme aus Argentinien.",
+      "ru": "Я из Аргентины.",
+      "audio": "audio/115e70b664ef.m4a"
      },
      {
       "slots": [
@@ -1513,8 +1499,8 @@
          "text": "Aus"
         },
         {
-         "key": "italien",
-         "text": "Italien"
+         "key": "argentinien",
+         "text": "Argentinien"
         }
        ],
        [
@@ -1532,9 +1518,9 @@
        []
       ],
       "punct": ".",
-      "plain": "Aus Italien komme ich.",
-      "ru": "Из Италии я родом.",
-      "audio": "audio/cb071246fb6b.m4a"
+      "plain": "Aus Argentinien komme ich.",
+      "ru": "Из Аргентины я родом.",
+      "audio": "audio/f8721e34ba75.m4a"
      }
     ],
     "focus": [
@@ -1577,16 +1563,16 @@
          "text": "aus"
         },
         {
-         "key": "italien",
-         "text": "Italien"
+         "key": "argentinien",
+         "text": "Argentinien"
         }
        ],
        []
       ],
       "punct": ".",
-      "plain": "Ich komme aus Italien.",
-      "ru": "Я из Италии.",
-      "audio": "audio/78bf4125f084.m4a"
+      "plain": "Ich komme aus Argentinien.",
+      "ru": "Я из Аргентины.",
+      "audio": "audio/115e70b664ef.m4a"
      },
      {
       "slots": [
@@ -1596,8 +1582,8 @@
          "text": "Aus"
         },
         {
-         "key": "italien",
-         "text": "Italien"
+         "key": "argentinien",
+         "text": "Argentinien"
         }
        ],
        [
@@ -1615,9 +1601,9 @@
        []
       ],
       "punct": ".",
-      "plain": "Aus Italien komme ich.",
-      "ru": "Из Италии я родом.",
-      "audio": "audio/cb071246fb6b.m4a"
+      "plain": "Aus Argentinien komme ich.",
+      "ru": "Из Аргентины я родом.",
+      "audio": "audio/f8721e34ba75.m4a"
      }
     ],
     "task": "vorstellen",
@@ -1630,7 +1616,7 @@
    "stepTitle": "Устный экзамен: часть 1",
    "chapterIndex": 4,
    "indexInStep": 1,
-   "read": "Образец ответа — простые предложения, глагол на втором месте. Не нужно использовать все слова и строить сложные фразы: оценивают, понятно ли вас. Возраст — *Ich bin … Jahre alt*, профессия — *Ich bin … von Beruf*. Подготовьте свой рассказ заранее и проговорите его вслух несколько раз.",
+   "read": "Образец — рассказ Матео: простые предложения, глагол на втором месте. Не нужно использовать все слова и строить сложные фразы: оценивают, понятно ли вас. Возраст — *Ich bin … Jahre alt*, профессия — *Ich bin … von Beruf*. Хобби в Киле часто морское: *Mein Hobby ist Segeln.* Подготовьте свой рассказ заранее и проговорите его вслух.",
    "point": "Подготовьте рассказ о себе заранее — 6–7 простых предложений",
    "scene": {
     "view": "task",
@@ -1658,16 +1644,16 @@
          "text": "aus"
         },
         {
-         "key": "italien",
-         "text": "Italien"
+         "key": "argentinien",
+         "text": "Argentinien"
         }
        ],
        []
       ],
       "punct": ".",
-      "plain": "Ich komme aus Italien.",
-      "ru": "Я из Италии.",
-      "audio": "audio/78bf4125f084.m4a"
+      "plain": "Ich komme aus Argentinien.",
+      "ru": "Я из Аргентины.",
+      "audio": "audio/115e70b664ef.m4a"
      },
      {
       "slots": [
@@ -1677,8 +1663,8 @@
          "text": "Aus"
         },
         {
-         "key": "italien",
-         "text": "Italien"
+         "key": "argentinien",
+         "text": "Argentinien"
         }
        ],
        [
@@ -1696,9 +1682,9 @@
        []
       ],
       "punct": ".",
-      "plain": "Aus Italien komme ich.",
-      "ru": "Из Италии я родом.",
-      "audio": "audio/cb071246fb6b.m4a"
+      "plain": "Aus Argentinien komme ich.",
+      "ru": "Из Аргентины я родом.",
+      "audio": "audio/f8721e34ba75.m4a"
      }
     ],
     "task": "vorstellen",
@@ -1711,7 +1697,7 @@
    "stepTitle": "Письменный экзамен: анкета",
    "chapterIndex": 4,
    "indexInStep": 0,
-   "read": "Первая часть письменного экзамена — анкета. В тексте описана ситуация: вы помогаете другу записаться на курс. Пять полей пустые, вся информация для них есть в тексте. Переписывайте аккуратно: ошибка в названии улицы или страны может стоить балла.",
+   "read": "Первая часть письменного экзамена — анкета. В тексте описана ситуация: вы помогаете подруге записаться на курс. Пять полей пустые, вся информация для них есть в тексте. Переписывайте аккуратно: ошибка в названии улицы или страны может стоить балла.",
    "point": "Анкета: 5 пустых полей, все ответы есть в тексте",
    "scene": {
     "view": "task",
@@ -1739,16 +1725,16 @@
          "text": "aus"
         },
         {
-         "key": "italien",
-         "text": "Italien"
+         "key": "argentinien",
+         "text": "Argentinien"
         }
        ],
        []
       ],
       "punct": ".",
-      "plain": "Ich komme aus Italien.",
-      "ru": "Я из Италии.",
-      "audio": "audio/78bf4125f084.m4a"
+      "plain": "Ich komme aus Argentinien.",
+      "ru": "Я из Аргентины.",
+      "audio": "audio/115e70b664ef.m4a"
      },
      {
       "slots": [
@@ -1758,8 +1744,8 @@
          "text": "Aus"
         },
         {
-         "key": "italien",
-         "text": "Italien"
+         "key": "argentinien",
+         "text": "Argentinien"
         }
        ],
        [
@@ -1777,9 +1763,9 @@
        []
       ],
       "punct": ".",
-      "plain": "Aus Italien komme ich.",
-      "ru": "Из Италии я родом.",
-      "audio": "audio/cb071246fb6b.m4a"
+      "plain": "Aus Argentinien komme ich.",
+      "ru": "Из Аргентины я родом.",
+      "audio": "audio/f8721e34ba75.m4a"
      }
     ],
     "task": "anmeldung",
@@ -1792,7 +1778,7 @@
    "stepTitle": "Письменный экзамен: анкета",
    "chapterIndex": 4,
    "indexInStep": 1,
-   "read": "*Italien*. *Herkunft* — «происхождение», *Land* — «страна»: страна, откуда человек родом. Не путайте с *Wohnort* — местом, где он живёт сейчас. Остальные поля заполняются так же: найдите в тексте слово и перенесите его без изменений.",
+   "read": "*Türkei*. *Herkunft* — «происхождение», *Land* — «страна»: страна, откуда человек родом. Не путайте с *Wohnort* — местом, где он живёт сейчас, это *Kiel*. В анкете страну пишут без артикля, хотя в предложении говорят *aus der Türkei*. Остальные поля заполняются так же: найдите в тексте слово и перенесите его без изменений.",
    "point": "*Herkunftsland* — откуда родом, *Wohnort* — где живёт",
    "question": "Что написать в поле «Herkunftsland»?",
    "sceneBefore": {
@@ -1821,16 +1807,16 @@
          "text": "aus"
         },
         {
-         "key": "italien",
-         "text": "Italien"
+         "key": "argentinien",
+         "text": "Argentinien"
         }
        ],
        []
       ],
       "punct": ".",
-      "plain": "Ich komme aus Italien.",
-      "ru": "Я из Италии.",
-      "audio": "audio/78bf4125f084.m4a"
+      "plain": "Ich komme aus Argentinien.",
+      "ru": "Я из Аргентины.",
+      "audio": "audio/115e70b664ef.m4a"
      },
      {
       "slots": [
@@ -1840,8 +1826,8 @@
          "text": "Aus"
         },
         {
-         "key": "italien",
-         "text": "Italien"
+         "key": "argentinien",
+         "text": "Argentinien"
         }
        ],
        [
@@ -1859,9 +1845,9 @@
        []
       ],
       "punct": ".",
-      "plain": "Aus Italien komme ich.",
-      "ru": "Из Италии я родом.",
-      "audio": "audio/cb071246fb6b.m4a"
+      "plain": "Aus Argentinien komme ich.",
+      "ru": "Из Аргентины я родом.",
+      "audio": "audio/f8721e34ba75.m4a"
      }
     ],
     "task": "anmeldung",
@@ -1893,16 +1879,16 @@
          "text": "aus"
         },
         {
-         "key": "italien",
-         "text": "Italien"
+         "key": "argentinien",
+         "text": "Argentinien"
         }
        ],
        []
       ],
       "punct": ".",
-      "plain": "Ich komme aus Italien.",
-      "ru": "Я из Италии.",
-      "audio": "audio/78bf4125f084.m4a"
+      "plain": "Ich komme aus Argentinien.",
+      "ru": "Я из Аргентины.",
+      "audio": "audio/115e70b664ef.m4a"
      },
      {
       "slots": [
@@ -1912,8 +1898,8 @@
          "text": "Aus"
         },
         {
-         "key": "italien",
-         "text": "Italien"
+         "key": "argentinien",
+         "text": "Argentinien"
         }
        ],
        [
@@ -1931,9 +1917,9 @@
        []
       ],
       "punct": ".",
-      "plain": "Aus Italien komme ich.",
-      "ru": "Из Италии я родом.",
-      "audio": "audio/cb071246fb6b.m4a"
+      "plain": "Aus Argentinien komme ich.",
+      "ru": "Из Аргентины я родом.",
+      "audio": "audio/f8721e34ba75.m4a"
      }
     ],
     "task": "anmeldung",
@@ -1958,7 +1944,7 @@
   {
    "id": "kennenlernen-2",
    "type": "choice",
-   "q": "___ kommst du? – Aus Polen.",
+   "q": "___ kommst du? – Aus Kasachstan.",
    "options": [
     "Wo",
     "Woher",
@@ -1966,79 +1952,79 @@
    ],
    "answer": 1,
    "why": "Ответ с *aus* — значит, спрашивали «откуда»: *woher*.",
-   "audio": "audio/0b9ff7c42bbc.m4a"
+   "audio": "audio/52ecbcaaab8f.m4a"
   },
   {
    "id": "kennenlernen-3",
    "type": "choice",
-   "q": "___ wohnen Sie? – In Leipzig.",
+   "q": "___ wohnen Sie? – In Kiel.",
    "options": [
     "Woher",
     "Wie",
     "Wo"
    ],
    "answer": 2,
-   "why": "*wo* — «где». Ответ с *in*: *in Leipzig*.",
-   "audio": "audio/d97197234c6c.m4a"
+   "why": "*wo* — «где». Ответ с *in*: *in Kiel*.",
+   "audio": "audio/fa198b735ef6.m4a"
   },
   {
    "id": "kennenlernen-4",
    "type": "gap",
-   "q": "Ich ___ Anna.",
+   "q": "Ich ___ Dana.",
    "answer": [
     "bin|heiße"
    ],
    "hint": "sein / heißen",
-   "audio": "audio/63b94225bf46.m4a"
+   "audio": "audio/e385c18be213.m4a"
   },
   {
    "id": "kennenlernen-5",
    "type": "gap",
-   "q": "Du ___ aus Italien.",
+   "q": "Du ___ aus Argentinien.",
    "answer": [
     "kommst"
    ],
    "hint": "kommen",
    "why": "*du* — окончание *-st*: *du komm+st*.",
-   "audio": "audio/76b20b1a0112.m4a"
+   "audio": "audio/44253ae43aca.m4a"
   },
   {
    "id": "kennenlernen-6",
    "type": "gap",
-   "q": "Wir ___ in Leipzig.",
+   "q": "Wir ___ in Kiel.",
    "answer": [
     "wohnen"
    ],
    "hint": "wohnen",
    "why": "*wir* — форма совпадает с инфинитивом.",
-   "audio": "audio/d58f776ab301.m4a"
+   "audio": "audio/f848e92448cb.m4a"
   },
   {
    "id": "kennenlernen-7",
    "type": "gap",
-   "q": "___ Sie Herr Rossi?",
+   "q": "___ Sie Frau Yıldız?",
    "answer": [
     "Sind"
    ],
    "hint": "sein",
    "why": "*Sie sind* — в вопросе да/нет глагол встаёт первым.",
-   "audio": "audio/f1a936b8b704.m4a"
+   "audio": "audio/a6aaba049126.m4a"
   },
   {
    "id": "kennenlernen-8",
    "type": "gap",
-   "q": "Er ___ Deutsch und Englisch.",
+   "q": "Mateo ___ Spanisch und Englisch.",
    "answer": [
     "spricht"
    ],
    "hint": "sprechen",
    "why": "*sprechen* меняет *e* на *i*: *du sprichst*, *er spricht*.",
-   "audio": "audio/397bdabdc597.m4a"
+   "audio": "audio/8e3c709fdacf.m4a"
   },
   {
    "id": "kennenlernen-9",
    "type": "choice",
-   "q": "Ihr ___ aus Österreich, oder?",
+   "q": "Ihr ___ aus der Türkei, oder?",
    "options": [
     "sind",
     "seid",
@@ -2046,55 +2032,294 @@
    ],
    "answer": 1,
    "why": "*ihr seid* — форму надо запомнить.",
-   "audio": "audio/55dd9c9f57ea.m4a"
+   "audio": "audio/4c1ca93674f6.m4a"
   },
   {
    "id": "kennenlernen-10",
    "type": "choice",
-   "q": "Как поздороваться с преподавателем в девять утра?",
+   "q": "Как поздороваться с соседом в Киле в шесть вечера?",
    "options": [
-    "Guten Morgen!",
+    "Moin!",
     "Gute Nacht!",
     "Tschüss!"
    ],
-   "answer": 0
+   "answer": 0,
+   "why": "*Moin!* на севере подходит в любое время суток. *Gute Nacht!* говорят перед сном."
   },
   {
    "id": "kennenlernen-11",
    "type": "choice",
-   "q": "Как попрощаться с сотрудницей в офисе?",
+   "q": "Как попрощаться с сотрудницей в офисе школы?",
    "options": [
-    "Tschüss!",
+    "Moin!",
     "Auf Wiedersehen!",
     "Hallo!"
    ],
    "answer": 1,
-   "why": "*Tschüss* — для своих, официально — *Auf Wiedersehen!*"
+   "why": "*Moin* и *Hallo* — приветствия. Официально прощаются *Auf Wiedersehen!*"
   },
   {
    "id": "kennenlernen-12",
+   "type": "choice",
+   "q": "Elif kommt aus ___ Türkei.",
+   "options": [
+    "die",
+    "der",
+    "—"
+   ],
+   "answer": 1,
+   "why": "*die Türkei* — страна с артиклем, а после *aus* он становится *der*: *aus der Türkei*.",
+   "audio": "audio/9a1d3ad78865.m4a"
+  },
+  {
+   "id": "kennenlernen-13",
    "type": "order",
    "ru": "Откуда Вы?",
    "de": "Woher kommen Sie?",
    "audio": "audio/c3ec93f601a8.m4a"
   },
   {
-   "id": "kennenlernen-13",
+   "id": "kennenlernen-14",
    "type": "order",
-   "ru": "Сейчас я живу в Лейпциге.",
-   "de": "Jetzt wohne ich in Leipzig.",
+   "ru": "Сейчас я живу в Киле.",
+   "de": "Jetzt wohne ich in Kiel.",
    "also": [
-    "Ich wohne jetzt in Leipzig."
+    "Ich wohne jetzt in Kiel."
    ],
    "why": "*Jetzt* на первом месте — глагол второй, *ich* после глагола.",
-   "audio": "audio/1404b1e74d1b.m4a"
+   "audio": "audio/d3ac5d4a2b62.m4a"
   },
   {
-   "id": "kennenlernen-14",
+   "id": "kennenlernen-15",
    "type": "order",
    "ru": "Ты говоришь по-немецки?",
    "de": "Sprichst du Deutsch?",
    "audio": "audio/9fb1c7fc45b0.m4a"
+  }
+ ],
+ "case": {
+  "title": "Wo ist die „Sprotte“?",
+  "ru": "Где «Шпротта»?",
+  "intro": "Утро перед занятием. Матео заходит в парусный клуб на Kiellinie и застаёт начальника гавани, господина Йенсена, в панике: со стоянки исчезла клубная шлюпка «Шпротта». До Кильской недели — меньше месяца. Йенсен просит помочь: свидетели говорят по-немецки, а на двери висит записка. Каждую улику решает грамматика этой темы.",
+  "people": {
+   "J": {
+    "name": "Herr Jensen",
+    "voice": "Grandpa",
+    "role": "Hafenmeister"
+   },
+   "F": {
+    "name": "Frauke",
+    "voice": "Sandy",
+    "role": "Fischbrötchen-Kiosk"
+   },
+   "H": {
+    "name": "Hauke",
+    "voice": "Rocko",
+    "role": "Segler"
+   },
+   "L": {
+    "name": "Lars",
+    "voice": "Eddy",
+    "role": "Student"
+   }
+  },
+  "steps": [
+   {
+    "read": "Первая свидетельница — Фрауке из киоска с рыбными булочками. Вчера она работала допоздна. Слушайте внимательно: важно, сколько людей было на причале.",
+    "evidence": [
+     {
+      "kind": "quote",
+      "who": "J",
+      "de": "Moin! Die „Sprotte“ ist weg!",
+      "ru": "Привет! «Шпротта» пропала!",
+      "audio": "audio/8d47710c6d3f.m4a"
+     },
+     {
+      "kind": "quote",
+      "who": "F",
+      "de": "Um zehn Uhr am Abend sind sie hier. Dann segeln sie.",
+      "ru": "В десять вечера они здесь. Потом они выходят под парусом.",
+      "audio": "audio/e9f8b2078ea3.m4a"
+     }
+    ],
+    "question": "Кто был на причале в десять вечера?",
+    "options": [
+     "Одна женщина",
+     "Двое или больше",
+     "Один мужчина"
+    ],
+    "answer": 1,
+    "right": "*sie sind*, *sie segeln* — форма *sind* и окончание *-en* бывают только у «они» и у вежливого *Sie*. Про одну женщину Фрауке сказала бы *sie ist hier*, *sie segelt*. Значит, людей было минимум двое.",
+    "wrong": [
+     "Вы прочитали *sie* как «она». Но у «она» глагол другой: *sie ist*, *sie segelt*. Здесь *sind* и *segeln* — это «они». Йенсен уже собрался звонить соседке, которая ходит под парусом одна, — зря.",
+     null,
+     "Мужчину назвали бы *er*: *er ist hier*, *er segelt*. А в показаниях Фрауке нет ни одного *er*."
+    ]
+   },
+   {
+    "read": "На двери офиса гавани Йенсен находит записку. Почерк незнакомый. Кто её писал — друзья Йенсена или люди, которые знают его плохо?",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Herr Jensen,\nsind Sie morgen um neun hier?\nDie „Sprotte“ ist in Holtenau.\nWir sind Freunde von Hauke.",
+      "ru": "Господин Йенсен, вы будете здесь завтра в девять? «Шпротта» в Хольтенау. Мы друзья Хауке."
+     }
+    ],
+    "question": "Кто писал записку?",
+    "options": [
+     "Близкие друзья Йенсена",
+     "Люди, которые знают Йенсена плохо",
+     "Сам Хауке"
+    ],
+    "answer": 1,
+    "right": "*Sind Sie* — вежливое *Sie* с большой буквы и обращение *Herr Jensen*. Так пишут человеку, с которым на «Вы». Подпись — *Wir sind Freunde von Hauke*, «мы друзья Хауке»: авторов несколько, и с Йенсеном они не дружат. А шлюпка — в Хольтенау, у шлюзов канала.",
+    "wrong": [
+     "Друзья написали бы на «ты»: *Bist du morgen hier?* А здесь *Sind Sie* — вежливая форма для малознакомого человека.",
+     null,
+     "Хауке написал бы *ich*, а не *wir*. И себя он не назвал бы со стороны: *Freunde von Hauke* — это «друзья Хауке»."
+    ]
+   },
+   {
+    "read": "У клуба Йенсен застаёт троих: Хауке и двух студентов. Каждый представляется. Кто из них живёт там, где сейчас стоит «Шпротта»?",
+    "evidence": [
+     {
+      "kind": "quote",
+      "who": "H",
+      "de": "Moin! Ich bin Hauke. Ich komme aus Kiel, aber ich wohne jetzt in Hamburg.",
+      "ru": "Привет! Я Хауке. Я из Киля, но сейчас живу в Гамбурге.",
+      "audio": "audio/6b5e0851e5e1.m4a"
+     },
+     {
+      "kind": "quote",
+      "who": "L",
+      "de": "Moin! Wir sind Lars und Merle. Wir wohnen in Holtenau.",
+      "ru": "Привет! Мы Ларс и Мерле. Мы живём в Хольтенау.",
+      "audio": "audio/067cb591e555.m4a"
+     }
+    ],
+    "question": "Кто взял «Шпротту»?",
+    "options": [
+     "Хауке",
+     "Ларс и Мерле",
+     "Фрауке из киоска"
+    ],
+    "answer": 1,
+    "right": "Сходится всё: в записке *wir* — авторов двое, как Ларса и Мерле. Шлюпка в Хольтенау, а они *wohnen in Holtenau* — живут там. А Хауке *kommt aus Kiel* — родом из Киля, но *wohnt in Hamburg*: живёт он в Гамбурге.",
+    "wrong": [
+     "*Ich komme aus Kiel* значит «я родом из Киля», а не «я живу в Киле». Живёт Хауке в Гамбурге: *ich wohne jetzt in Hamburg*. И он один, а в записке *wir*.",
+     null,
+     "Фрауке — свидетельница, а не подозреваемая. В десять вечера она стояла у киоска и рассказывала о других: *sie sind hier*."
+    ]
+   }
+  ],
+  "ending": "Ларс и Мерле во всём признаются: они тренировались к Кильской неделе, ночью поднялся ветер, и они оставили «Шпротту» у шлюзов в Хольтенау. Утром хотели всё объяснить — отсюда вежливое *Sind Sie morgen um neun hier?* Йенсен ворчит, но прощает. Дело закрыто… почти. Вечером у клуба крутится незнакомец в куртке Kieler Woche и говорит Йенсену: *Moin! Ich wohnen in Kiel.* Кильцы так не скажут — правильно *ich wohne*. Кто он? Тренироваться ловить таких — в игре «Шпион» в тренажёре, продолжение дела — в следующей теме."
+ },
+ "spy": [
+  {
+   "de": "Ich bin Dana.",
+   "wrong": "Ich Dana.",
+   "why": "Связку *sein* не пропускают: по-русски «я Дана», а по-немецки *Ich bin Dana*."
+  },
+  {
+   "de": "Elif kommt aus der Türkei.",
+   "wrong": "Elif kommt aus Türkei.",
+   "why": "*die Türkei* — страна с артиклем: *aus der Türkei*. Без артикля ошибаются те, в чьём языке артиклей нет."
+  },
+  {
+   "de": "Ich komme aus Kasachstan.",
+   "wrong": "Ich bin von Kasachstan.",
+   "why": "Откуда родом — *kommen aus*: *Ich komme aus Kasachstan*. *von* здесь не подходит, это калька с английского *from*."
+  },
+  {
+   "de": "Er spricht Spanisch.",
+   "wrong": "Er sprecht Spanisch.",
+   "why": "*sprechen* меняет *e* на *i*: *du sprichst*, *er spricht*."
+  },
+  {
+   "de": "Wie heißen Sie?",
+   "wrong": "Wie heißt Sie?",
+   "why": "Вежливое *Sie* спрягается как «они»: *Sie heißen*."
+  },
+  {
+   "de": "Du heißt Mateo.",
+   "wrong": "Du heißst Mateo.",
+   "why": "Основа на *ß*: во втором лице только *-t*, поэтому *du heißt*."
+  },
+  {
+   "de": "Wir sind im Kurs.",
+   "wrong": "Wir seid im Kurs.",
+   "why": "*wir sind*, *ihr seid* — формы *sein* надо запомнить."
+  },
+  {
+   "de": "Seid ihr aus Argentinien?",
+   "wrong": "Sind ihr aus Argentinien?",
+   "why": "С *ihr* — *seid*: *Seid ihr aus Argentinien?*"
+  },
+  {
+   "de": "Ich wohne in Kiel.",
+   "wrong": "Ich wohnen in Kiel.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *wohne*.",
+   "auto": true
+  },
+  {
+   "de": "In Kiel wohne ich.",
+   "wrong": "In Kiel ich wohne.",
+   "why": "Глагол стоит на второй позиции: после *In Kiel* сразу идёт *wohne*, а *ich* — за ним.",
+   "auto": true
+  },
+  {
+   "de": "In Kiel wohne ich.",
+   "wrong": "In Kiel wohnen ich.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *wohne*.",
+   "auto": true
+  },
+  {
+   "de": "Wo wohnst du?",
+   "wrong": "Wo du wohnst?",
+   "why": "Глагол стоит на второй позиции: после *Wo* сразу идёт *wohnst*, а *du* — за ним.",
+   "auto": true
+  },
+  {
+   "de": "Wo wohnst du?",
+   "wrong": "Wo wohnt du?",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *wohnst*.",
+   "auto": true
+  },
+  {
+   "de": "Wohnst du in Kiel?",
+   "wrong": "Wohnt du in Kiel?",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *Wohnst*.",
+   "auto": true
+  },
+  {
+   "de": "Woher kommen Sie?",
+   "wrong": "Woher Sie kommen?",
+   "why": "Глагол стоит на второй позиции: после *Woher* сразу идёт *kommen*, а *Sie* — за ним.",
+   "auto": true
+  },
+  {
+   "de": "Woher kommen Sie?",
+   "wrong": "Woher kommst Sie?",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *kommen*.",
+   "auto": true
+  },
+  {
+   "de": "Ich komme aus Argentinien.",
+   "wrong": "Ich kommen aus Argentinien.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *komme*.",
+   "auto": true
+  },
+  {
+   "de": "Aus Argentinien komme ich.",
+   "wrong": "Aus Argentinien ich komme.",
+   "why": "Глагол стоит на второй позиции: после *Aus Argentinien* сразу идёт *komme*, а *ich* — за ним.",
+   "auto": true
+  },
+  {
+   "de": "Aus Argentinien komme ich.",
+   "wrong": "Aus Argentinien kommen ich.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *komme*.",
+   "auto": true
   }
  ]
 }

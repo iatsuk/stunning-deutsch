@@ -8,6 +8,7 @@ import "./styles/theme.css";
 import "./styles/site.css";
 import "./styles/stage.css";
 import "./styles/trainer.css";
+import "./styles/case.css";
 import { App } from "./App";
 
 createRoot(document.getElementById("root")!).render(

@@ -2330,5 +2330,31 @@
    "de": "Hast du Geschwister?",
    "audio": "audio/9bc63ee25aa5.m4a"
   }
+ ],
+ "spy": [
+  {
+   "de": "Mein Bruder wohnt in Warschau.",
+   "wrong": "Mein Bruder wohnst in Warschau.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *wohnt*.",
+   "auto": true
+  },
+  {
+   "de": "Meine Brüder wohnen in Warschau.",
+   "wrong": "Meine Brüder wohnst in Warschau.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *wohnen*.",
+   "auto": true
+  },
+  {
+   "de": "Hast du Kinder?",
+   "wrong": "Hat du Kinder?",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *Hast*.",
+   "auto": true
+  },
+  {
+   "de": "Ich habe keine Kinder.",
+   "wrong": "Ich haben keine Kinder.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *habe*.",
+   "auto": true
+  }
  ]
 }

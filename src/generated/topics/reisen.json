@@ -2722,5 +2722,49 @@
    ],
    "audio": "audio/86e9d3236a70.m4a"
   }
+ ],
+ "spy": [
+  {
+   "de": "Wir haben im Hotel gefrühstückt.",
+   "wrong": "Wir habst im Hotel gefrühstückt.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *haben*.",
+   "auto": true
+  },
+  {
+   "de": "Am Freitag sind wir mit dem Zug nach Hamburg gefahren.",
+   "wrong": "Am Freitag wir sind mit dem Zug nach Hamburg gefahren.",
+   "why": "Глагол стоит на второй позиции: после *Am Freitag* сразу идёт *sind*, а *wir* — за ним.",
+   "auto": true
+  },
+  {
+   "de": "Der Zug kommt um acht Uhr an.",
+   "wrong": "Der Zug kommst um acht Uhr an.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *kommt*.",
+   "auto": true
+  },
+  {
+   "de": "Heute regnet es.",
+   "wrong": "Heute es regnet.",
+   "why": "Глагол стоит на второй позиции: после *Heute* сразу идёт *regnet*, а *es* — за ним.",
+   "auto": true
+  },
+  {
+   "de": "Gestern hat es geregnet.",
+   "wrong": "Gestern es hat geregnet.",
+   "why": "Глагол стоит на второй позиции: после *Gestern* сразу идёт *hat*, а *es* — за ним.",
+   "auto": true
+  },
+  {
+   "de": "Sie haben es geschafft!",
+   "wrong": "Sie es haben geschafft!",
+   "why": "Глагол стоит на второй позиции: после *Sie* сразу идёт *haben*, а *es* — за ним.",
+   "auto": true
+  },
+  {
+   "de": "Sie haben es geschafft!",
+   "wrong": "Sie habst es geschafft!",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *haben*.",
+   "auto": true
+  }
  ]
 }

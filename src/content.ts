@@ -128,6 +128,35 @@ export type Exercise =
   | { id: string; type: "gap"; q: string; ru?: string; answer: string[]; hint?: string; why?: string; audio?: string }
   | { id: string; type: "order"; ru: string; de: string; also?: string[]; why?: string; audio?: string };
 
+export type CaseEvidence =
+  | { kind: "quote"; who: string; de: string; ru: string; audio?: string }
+  | { kind: "note"; de: string; ru: string };
+
+export type CaseStep = {
+  read: string;
+  evidence: CaseEvidence[];
+  question: string;
+  options: string[];
+  answer: number;
+  /** Что открывается после верного вывода. */
+  right: string;
+  /** Ложный след для каждого варианта; у верного — null. */
+  wrong: (string | null)[];
+};
+
+/** Дело темы: улики, где правильный вывод требует грамматики этой темы. */
+export type Investigation = {
+  title: string;
+  ru?: string;
+  intro: string;
+  people: Record<string, { name: string; voice: string; role?: string }>;
+  steps: CaseStep[];
+  ending: string;
+};
+
+/** Фраза для игры «Шпион»: верный вариант, вариант с ошибкой и объяснение. */
+export type SpyItem = { de: string; wrong: string; why: string; auto?: boolean };
+
 export type Topic = TopicMeta & {
   level: string;
   chapters: Chapter[];
@@ -137,6 +166,8 @@ export type Topic = TopicMeta & {
   tasks: Record<string, Task>;
   beats: Beat[];
   exercises: Exercise[];
+  case?: Investigation;
+  spy: SpyItem[];
 };
 
 const loaders = import.meta.glob<{ default: Topic }>("./generated/topics/*.json");

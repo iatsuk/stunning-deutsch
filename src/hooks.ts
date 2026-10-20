@@ -170,6 +170,24 @@ export function useProgress() {
   };
 }
 
+/** Сколько шагов дела раскрыто: { [тема]: число }. */
+const caseStore = createStore<Record<string, number>>("sd-case-v1", {});
+
+export function useCaseProgress(topic: string) {
+  const all = useSyncExternalStore(caseStore.subscribe, caseStore.get);
+  const solved = all[topic] ?? 0;
+  return {
+    solved,
+    advance(step: number) {
+      if (step > solved) caseStore.set({ ...all, [topic]: step });
+    },
+    reset() {
+      const { [topic]: _, ...rest } = all;
+      caseStore.set(rest);
+    },
+  };
+}
+
 const translationStore = createStore<boolean>("sd-translation", true);
 
 /** Показывать ли перевод реплик на сцене. */

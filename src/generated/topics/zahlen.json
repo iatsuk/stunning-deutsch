@@ -2221,5 +2221,49 @@
    "de": "Ich bin achtundzwanzig Jahre alt.",
    "audio": "audio/2dded2b12670.m4a"
   }
+ ],
+ "spy": [
+  {
+   "de": "Du hast heute Geburtstag.",
+   "wrong": "Du hat heute Geburtstag.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *hast*.",
+   "auto": true
+  },
+  {
+   "de": "Hast du heute Geburtstag?",
+   "wrong": "Hat du heute Geburtstag?",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *Hast*.",
+   "auto": true
+  },
+  {
+   "de": "Ich habe heute Geburtstag.",
+   "wrong": "Ich haben heute Geburtstag.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *habe*.",
+   "auto": true
+  },
+  {
+   "de": "Wie alt bist du?",
+   "wrong": "Wie alt du bist?",
+   "why": "Глагол стоит на второй позиции: после *Wie alt* сразу идёт *bist*, а *du* — за ним.",
+   "auto": true
+  },
+  {
+   "de": "Hast du Zeit?",
+   "wrong": "Hat du Zeit?",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *Hast*.",
+   "auto": true
+  },
+  {
+   "de": "Ich habe Zeit.",
+   "wrong": "Ich haben Zeit.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *habe*.",
+   "auto": true
+  },
+  {
+   "de": "Du hast Zeit.",
+   "wrong": "Du hat Zeit.",
+   "why": "Окончание глагола не подходит к подлежащему: правильно *hast*.",
+   "auto": true
+  }
  ]
 }
