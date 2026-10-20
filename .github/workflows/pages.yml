@@ -33,11 +33,10 @@ jobs:
       - name: Check legal details
         env:
           LEGAL_NAME: ${{ vars.LEGAL_NAME }}
-          LEGAL_STREET: ${{ vars.LEGAL_STREET }}
-          LEGAL_CITY: ${{ vars.LEGAL_CITY }}
+          LEGAL_ADDRESS: ${{ vars.LEGAL_ADDRESS }}
           LEGAL_EMAIL: ${{ vars.LEGAL_EMAIL }}
         run: |
-          for name in LEGAL_NAME LEGAL_STREET LEGAL_CITY LEGAL_EMAIL; do
+          for name in LEGAL_NAME LEGAL_ADDRESS LEGAL_EMAIL; do
             if [ -z "$(printenv "$name" | tr -d '[:space:]')" ]; then
               echo "::error::Задайте переменную $name в Settings → Secrets and variables → Actions → Variables"
               exit 1
@@ -45,10 +44,9 @@ jobs:
           done
       - run: pnpm build
         env:
-          VITE_LEGAL_NAME: ${{ vars.LEGAL_NAME }}
-          VITE_LEGAL_STREET: ${{ vars.LEGAL_STREET }}
-          VITE_LEGAL_CITY: ${{ vars.LEGAL_CITY }}
-          VITE_LEGAL_EMAIL: ${{ vars.LEGAL_EMAIL }}
+          LEGAL_NAME: ${{ vars.LEGAL_NAME }}
+          LEGAL_ADDRESS: ${{ vars.LEGAL_ADDRESS }}
+          LEGAL_EMAIL: ${{ vars.LEGAL_EMAIL }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

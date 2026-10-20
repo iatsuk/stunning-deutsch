@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import { Footer, Topbar, useTitle } from "../App";
-import { LEGAL } from "../legal";
+import { LEGAL, careOfAddress } from "../legal";
 
 function LegalPage({ title, children }: { title: string; children: ReactNode }) {
   useTitle(`${title} — Stunning Deutsch`);
@@ -21,12 +21,12 @@ function Address() {
     <p>
       {LEGAL.name}
       <br />
-      {LEGAL.street}
-      <br />
-      {LEGAL.city}
-      <br />
-      {LEGAL.country}
-      <br />
+      {LEGAL.address.map((line) => (
+        <span key={line}>
+          {line}
+          <br />
+        </span>
+      ))}
       E-Mail: <a href={`mailto:${LEGAL.email}`}>{LEGAL.email}</a>
     </p>
   );
@@ -37,6 +37,10 @@ export function ImpressumPage() {
     <LegalPage title="Impressum">
       <h2>Angaben gemäß § 5 DDG</h2>
       <Address />
+      <p>
+        Die genannte Person ist für die Inhalte dieser Website verantwortlich, auch gemäß § 18 Abs. 2 MStV.
+        {careOfAddress && " Die c/o-Anschrift dient der Korrespondenz."}
+      </p>
       <h2>Hinweis</h2>
       <p>
         Stunning Deutsch ist ein privates, nicht kommerzielles Lernangebot. Es steht in keiner Verbindung zur telc
@@ -96,11 +100,19 @@ export function DatenschutzPage() {
         jeweilige Anbieter verantwortlich.
       </p>
 
-      <h2>6. Kontakt per E-Mail</h2>
+      <h2>6. Kontakt per E-Mail und Post</h2>
       <p>
-        Wenn Sie uns per E-Mail kontaktieren, verarbeiten wir Ihre Angaben zur Bearbeitung der Anfrage (Art. 6 Abs. 1
-        lit. f DSGVO) und löschen sie, sobald sie dafür nicht mehr erforderlich sind.
+        Wenn Sie uns per E-Mail oder Brief kontaktieren, verarbeiten wir Ihre Angaben zur Bearbeitung der Anfrage (Art.
+        6 Abs. 1 lit. f DSGVO) und löschen sie, sobald sie dafür nicht mehr erforderlich sind.
       </p>
+      {careOfAddress && (
+        <p>
+          Briefe an die veröffentlichte c/o-Anschrift werden von der COCENTER GmbH als Betreiberin von Anschrift.net
+          angenommen und digitalisiert. Der bloße Websitebesuch übermittelt diesem Postdienst keine Daten. Beim Versand
+          eines Briefes beachten Sie bitte dessen{" "}
+          <a href="https://anschrift.net/datenschutzerklaerung/">Regelungen zur Korrespondenzverarbeitung</a>.
+        </p>
+      )}
 
       <h2>7. Ihre Rechte</h2>
       <p>
