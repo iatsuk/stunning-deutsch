@@ -1,0 +1,31 @@
+{
+  "name": "stunning-deutsch",
+  "version": "0.1.0",
+  "description": "Немецкий по ступеням telc: каждая тема — страница, где сцена следует за текстом.",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^20.19.0 || ^22.13.0 || >=24"
+  },
+  "scripts": {
+    "content": "node scripts/build-content.mjs",
+    "check": "node scripts/build-content.mjs --check",
+    "dev": "vite --host 127.0.0.1 --port 5180 --strictPort",
+    "build": "node scripts/build-content.mjs && tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fontsource-variable/golos-text": "^5.2.5",
+    "@fontsource-variable/jetbrains-mono": "^5.2.5",
+    "@fontsource-variable/literata": "^5.2.5",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.7",
+    "@types/react-dom": "^19.3.0",
+    "typescript": "5.9.3",
+    "vite": "^8.3.4",
+    "yaml": "^2.8.1"
+  }
+}

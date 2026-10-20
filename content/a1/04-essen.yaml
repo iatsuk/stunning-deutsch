@@ -1,0 +1,648 @@
+id: essen
+order: 4
+title: "Einen Kaffee, bitte!"
+ru: Еда и напитки
+lede: >-
+  После занятий Анна и Марко идут в кафе, а вечером Марко готовит ужин.
+  Учимся заказывать, платить и рассказывать, что мы любим и чего не едим, —
+  и знакомимся с винительным падежом, который меняет артикль мужского рода.
+goals:
+  - Заказать еду и напитки в кафе и расплатиться — вместе или раздельно
+  - Рассказать, что вы любите, а чего не едите и не пьёте
+  - Выбрать правильное отрицание — *nicht* или *kein*
+  - Попросить о чём-то по картинке и ответить на просьбу, как на устном экзамене
+grammar:
+  - "Винительный падеж: den, einen, keinen"
+  - Глагол möchten
+  - nicht или kein
+  - gern
+exam: [sprechen-2, sprechen-3, hoeren-1]
+
+dialogues:
+  cafe:
+    title: Im Café
+    ru: В кафе
+    place: Café am Markt, Leipzig
+    people:
+      K: { name: Kellner, voice: Eddy }
+      A: { name: Anna, voice: Anna }
+      M: { name: Marco, voice: Reed }
+    lines:
+      - K: Guten Tag! Was möchten Sie?
+        ru: Добрый день! Что желаете?
+      - A: Ich möchte einen Tee, bitte.
+        ru: Мне, пожалуйста, чай.
+      - M: Und ich nehme einen Kaffee und ein Stück Apfelkuchen.
+        ru: А я возьму кофе и кусок яблочного пирога.
+      - K: Möchten Sie auch ein Stück Kuchen?
+        ru: Вы тоже будете пирог?
+      - A: Nein, danke. Ich habe keinen Hunger.
+        ru: Нет, спасибо. Я не голодна.
+      - M: Zahlen, bitte!
+        ru: Рассчитайте нас, пожалуйста!
+      - K: Zusammen oder getrennt?
+        ru: Вместе или раздельно?
+      - M: Zusammen. Heute zahle ich!
+        ru: Вместе. Сегодня плачу я!
+      - K: Das macht elf Euro.
+        ru: С вас одиннадцать евро.
+      - M: Zwölf, bitte.
+        ru: Возьмите двенадцать.
+  kochen:
+    title: Was isst du gern?
+    ru: Что ты любишь есть?
+    place: Goethestraße, Leipzig
+    people:
+      M: { name: Marco, voice: Reed }
+      A: { name: Anna, voice: Anna }
+    lines:
+      - M: Heute koche ich! Isst du gern Pasta?
+        ru: Сегодня готовлю я! Ты любишь пасту?
+      - A: Ja, sehr gern! Aber ich esse kein Fleisch.
+        ru: Да, очень! Но я не ем мяса.
+      - M: Kein Problem. Dann mache ich Pasta mit Tomaten und Käse.
+        ru: Не проблема. Тогда я сделаю пасту с помидорами и сыром.
+      - A: Super! Kochst du oft?
+        ru: Супер! Ты часто готовишь?
+      - M: Ja, ich koche sehr gern. Und du?
+        ru: Да, я очень люблю готовить. А ты?
+      - A: Ich koche nicht gern. Aber ich backe gern Kuchen.
+        ru: Я не люблю готовить. Зато люблю печь пироги.
+      - M: Und was trinkst du? Ein Glas Wein?
+        ru: А что ты будешь пить? Бокал вина?
+      - A: Nein, danke. Ich trinke keinen Alkohol. Ein Wasser, bitte.
+        ru: Нет, спасибо. Я не пью алкоголь. Воды, пожалуйста.
+  hoeren:
+    title: Im Restaurant
+    ru: В ресторане
+    people:
+      K: { name: Kellner, voice: Eddy }
+      F: { name: Frau, voice: Sandy }
+    lines:
+      - K: Guten Tag! Was trinken Sie? Einen Kaffee?
+        ru: Добрый день! Что будете пить? Кофе?
+      - F: Nein, danke, ich trinke keinen Kaffee.
+        ru: Нет, спасибо, я не пью кофе.
+      - K: Vielleicht einen Tee?
+        ru: Может быть, чай?
+      - F: Ja, gern. Einen Tee, bitte.
+        ru: Да, с удовольствием. Чай, пожалуйста.
+      - K: Mit Milch?
+        ru: С молоком?
+      - F: Nein, ohne Milch. Und ein Glas Wasser, bitte.
+        ru: Нет, без молока. И стакан воды, пожалуйста.
+
+words:
+  getraenke:
+    title: Getränke
+    ru: Напитки
+    items:
+      - { de: der Kaffee, ru: кофе, pl: Kaffees, note: "Einen Kaffee, bitte!" }
+      - { de: der Tee, ru: чай, pl: Tees }
+      - { de: der Saft, ru: сок, pl: Säfte, note: der Apfelsaft — яблочный сок }
+      - { de: das Wasser, ru: вода, pl: "-", note: "Ein Wasser, bitte! — стакан или бутылка" }
+      - { de: die Milch, ru: молоко, pl: "-" }
+      - { de: die Cola, ru: кола, pl: Colas }
+      - { de: das Bier, ru: пиво, pl: Biere }
+      - { de: der Wein, ru: вино, pl: Weine }
+  speisen:
+    title: Essen
+    ru: Еда
+    items:
+      - { de: das Brot, ru: хлеб, pl: Brote }
+      - { de: das Brötchen, ru: булочка, pl: Brötchen, note: слова на -chen — всегда das }
+      - { de: der Käse, ru: сыр, pl: Käse }
+      - { de: die Wurst, ru: колбаса, pl: Würste }
+      - { de: das Ei, ru: яйцо, pl: Eier }
+      - { de: das Fleisch, ru: мясо, pl: "-" }
+      - { de: der Fisch, ru: рыба, pl: Fische }
+      - { de: das Gemüse, ru: овощи, pl: "-", note: в немецком — единственное число }
+      - { de: der Salat, ru: салат, pl: Salate }
+      - { de: die Suppe, ru: суп, pl: Suppen }
+      - { de: der Kuchen, ru: "пирог, торт", pl: Kuchen }
+  lokal:
+    title: Im Café
+    ru: В кафе
+    items:
+      - { de: das Café, ru: кафе, pl: Cafés }
+      - { de: die Speisekarte, ru: меню, pl: Speisekarten }
+      - { de: der Kellner, ru: официант, pl: Kellner, note: die Kellnerin — официантка }
+      - { de: die Tasse, ru: чашка, pl: Tassen, note: eine Tasse Tee }
+      - { de: das Glas, ru: "стакан, бокал", pl: Gläser, note: ein Glas Wasser }
+      - { de: das Stück, ru: кусок, pl: Stücke, note: ein Stück Kuchen }
+      - { de: die Rechnung, ru: счёт, pl: Rechnungen, note: "Die Rechnung, bitte!" }
+      - { de: das Frühstück, ru: завтрак, pl: Frühstücke }
+      - { de: das Mittagessen, ru: обед, pl: Mittagessen }
+      - { de: das Abendessen, ru: ужин, pl: Abendessen }
+  verben:
+    title: Verben und Ausdrücke
+    ru: Глаголы и выражения
+    items:
+      - { de: essen, ru: есть, note: "du isst, er isst" }
+      - { de: trinken, ru: пить, note: Ich trinke Tee. }
+      - { de: nehmen, ru: брать, note: "du nimmst, er nimmt" }
+      - { de: möchten, ru: хотел бы, note: "ich möchte, er möchte" }
+      - { de: bestellen, ru: заказывать }
+      - { de: bezahlen, ru: платить, note: "разговорно: zahlen — Zahlen, bitte!" }
+      - { de: kochen, ru: готовить }
+      - { de: Hunger haben, ru: быть голодным, note: Ich habe Hunger. }
+      - { de: Durst haben, ru: хотеть пить, note: Hast du Durst? }
+      - { de: gern, ru: "охотно, с удовольствием", note: Ich koche gern. — люблю готовить }
+      - { de: Guten Appetit!, ru: Приятного аппетита! }
+      - { de: Zusammen oder getrennt?, ru: Вместе или раздельно? }
+
+tables:
+  akkusativ:
+    title: Nominativ und Akkusativ
+    ru: Именительный и винительный падеж
+    head: [Род, Nominativ, Akkusativ]
+    ruCols: [0]
+    rows:
+      - [мужской, "d+er / ein / kein Kaffee", "d+en / ein+en / kein+en Kaffee"]
+      - [женский, "die / eine / keine Suppe", "die / eine / keine Suppe"]
+      - [средний, "das / ein / kein Ei", "das / ein / kein Ei"]
+      - [мн. ч., "die / – / keine Eier", "die / – / keine Eier"]
+    note: "Меняется только мужской род: *der* → *den*, *ein* → *einen*, *kein* → *keinen*."
+  moechten:
+    title: möchten
+    ru: хотел бы
+    head: [Person, möchten, Beispiel]
+    rows:
+      - [ich, möcht+e, Ich möchte ein+en Tee.]
+      - [du, möcht+est, Möchtest du ein+en Kaffee?]
+      - [er / sie / es, möcht+e, Marco möchte ein Stück Kuchen.]
+      - [wir, möcht+en, Wir möchten die Speisekarte.]
+      - [ihr, möcht+et, Möchtet ihr eine Pizza?]
+      - [sie / Sie, möcht+en, Was möchten Sie?]
+    note: "У *ich* и *er / sie / es* формы совпадают: *er möchte* — без *-t*."
+  negation:
+    title: nicht oder kein?
+    ru: Отрицание
+    head: [Что отрицаем, Negation, Beispiel]
+    ruCols: [0]
+    rows:
+      - [существительное с неопределённым артиклем, kein, Ich möchte kein+en Kaffee.]
+      - [существительное без артикля, kein, Ich esse kein Fleisch.]
+      - [глагол или наречие, nicht, Ich koche nicht gern.]
+      - [прилагательное, nicht, Die Suppe ist nicht warm.]
+      - [существительное с определённым артиклем, nicht, Ich esse den Kuchen nicht.]
+    note: "*kein* склоняется как *ein*: *keinen Kaffee*, *keine Suppe*, *kein Fleisch*."
+  verben:
+    title: "essen, nehmen, trinken"
+    ru: Глаголы за столом
+    head: [Person, essen, nehmen, trinken]
+    rows:
+      - [ich, ess+e, nehm+e, trink+e]
+      - [du, iss+t, nimm+st, trink+st]
+      - [er / sie / es, iss+t, nimm+t, trink+t]
+      - [wir, ess+en, nehm+en, trink+en]
+      - [ihr, ess+t, nehm+t, trink+t]
+      - [sie / Sie, ess+en, nehm+en, trink+en]
+    note: "*essen* и *nehmen* меняют *e* на *i* только у *du* и *er / sie / es* — как *sprechen*."
+
+tasks:
+  frage:
+    kind: card
+    part: sprechen-2
+    title: Sprechen, Teil 2
+    situation: Stellen Sie eine Frage mit dem Wort auf der Karte. Ihr Partner antwortet.
+    theme: Essen und Trinken
+    word: Fleisch
+    sample:
+      - Isst du gern Fleisch?
+      - Nein, ich esse kein Fleisch. Ich esse gern Gemüse.
+  bitte:
+    kind: card
+    part: sprechen-3
+    title: Sprechen, Teil 3
+    situation: Formulieren Sie eine Bitte. Ihr Partner reagiert.
+    word: Kaffee
+    picture: "☕"
+    sample:
+      - Ein+en Kaffee, bitte!
+      - Ich möchte ein+en Kaffee, bitte.
+      - Ja, gern. Hier, bitte!
+      - Leider habe ich kein+en Kaffee. Möchtest du ein+en Tee?
+  hoeren:
+    kind: listen
+    part: hoeren-1
+    title: Hören, Teil 1
+    situation: "Was ist richtig? Kreuzen Sie an: a, b oder c. Sie hören jeden Text zweimal."
+    dialogue: hoeren
+    question: Was trinkt die Frau?
+    options: [Kaffee, Tee mit Milch, Tee und Wasser]
+    answer: 2
+
+steps:
+  - id: cafe
+    chapter: scene
+    title: Кофе после занятий
+    beats:
+      - read: >-
+          После занятий Анна и Марко заходят в кафе. Официант спрашивает:
+          *Was möchten Sie?* — «что желаете?». Анна отвечает главной фразой
+          темы: *Ich möchte einen Tee, bitte* — буквально «я хотела бы чай,
+          пожалуйста». Марко говорит проще: *Ich nehme einen Kaffee* — «я
+          возьму кофе». Заметьте: не *ein Tee*, а *einen Tee*. По-русски «чай»
+          не меняется, а в немецком меняется артикль — почему, разберём в
+          грамматике.
+        point: "*Ich möchte …, bitte.* или *Ich nehme …* — так заказывают"
+        set: { view: dialogue, dialogue: cafe, reveal: 3, focus: [1, 2] }
+      - read: >-
+          К кофе Марко берёт *ein Stück Apfelkuchen* — кусок яблочного пирога.
+          Второе слово при этом не меняется, никакого родительного падежа:
+          *ein Stück Kuchen*, *eine Tasse Tee*, *ein Glas Wasser*. Анна от
+          пирога отказывается: *Ich habe keinen Hunger*. Мы говорим «я не
+          голодна», а немцы — «у меня нет голода»: *Hunger haben*, *Durst
+          haben*. И снова *-en* на конце: *keinen Hunger*.
+        point: "*Ich habe Hunger / Durst.* — «я голоден / хочу пить»; отказ — *keinen Hunger*"
+        set: { reveal: 5, focus: [2, 3, 4] }
+      - read: >-
+          Через полчаса Марко зовёт официанта: *Zahlen, bitte!* В ответ почти
+          всегда звучит *Zusammen oder getrennt?* — в Германии друзья часто
+          платят каждый за себя. Сегодня платит Марко: *Heute zahle ich!*
+          Чаевые не оставляют на столе, а называют сразу: официант говорит
+          *Das macht elf Euro*, а Марко отвечает *Zwölf, bitte* — евро сверху
+          за обслуживание. Обычно добавляют 5–10 % и округляют.
+        point: "*Zusammen oder getrennt?* Чаевые — назовите сумму: *Zwölf, bitte.*"
+        set: { reveal: 10, focus: [5, 6, 7, 8, 9] }
+
+  - id: kochen
+    chapter: scene
+    title: Ужин у Марко
+    beats:
+      - read: >-
+          Вечером Марко готовит ужин у себя на Гётештрассе: *Heute koche ich!*
+          И спрашивает: *Isst du gern Pasta?* — «ты любишь пасту?». Немцы
+          чаще всего говорят это без глагола «любить»: берут глагол действия
+          и добавляют *gern* — «охотно». *Ich esse gern Pasta* — «я люблю
+          пасту». Анна соглашается, но предупреждает: *Ich esse kein Fleisch*
+          — «я не ем мяса».
+        point: "*Isst du gern …?* — «ты любишь …?»; *Ich esse kein Fleisch.*"
+        set: { view: dialogue, dialogue: kochen, reveal: 3, focus: [0, 1] }
+      - read: >-
+          Дальше в диалоге — два разных «не». *Ich koche nicht gern* — «я не
+          люблю готовить»: отрицаем *gern*, поэтому *nicht*. *Ich trinke
+          keinen Alkohol* — «я не пью алкоголь»: отрицаем сам предмет,
+          поэтому *kein*, а у мужского рода — *keinen*. В русском одно «не» на
+          всё, и отсюда самая частая ошибка — *nicht Alkohol* вместо *keinen
+          Alkohol*. Как выбирать, разберём в грамматике.
+        point: "*nicht gern* — «не люблю»; *kein Fleisch*, *keinen Alkohol* — «не ем», «не пью»"
+        set: { reveal: 8, focus: [4, 5, 7] }
+
+  - id: getraenke
+    chapter: words
+    title: Что будем пить
+    beats:
+      - read: >-
+          Напитки учите только с артиклем: от рода зависит, что вы скажете
+          официанту. *Kaffee*, *Tee*, *Saft* и *Wein* — мужского рода,
+          поэтому *einen Kaffee*, *einen Saft*. *Wasser* и *Bier* — среднего:
+          *ein Wasser*, *ein Bier*. *Milch* и *Cola* — женского: *eine Cola*.
+          Запомнить помогает русский: «кофе», «чай» и «сок» у нас тоже
+          мужского рода.
+        point: "*der Kaffee*, *der Tee*, *der Saft*, но *das Wasser*, *das Bier*"
+        set: { view: words, words: getraenke }
+
+  - id: speisen
+    chapter: words
+    title: Что будем есть
+    beats:
+      - read: >-
+          *das Gemüse* — «овощи» — в немецком одно слово в единственном числе,
+          как и *das Fleisch*. О еде вообще говорят без артикля: *Ich esse
+          gern Fisch*, *Ich esse kein Fleisch*. Всё, что кончается на *-chen*,
+          — среднего рода: *das Brötchen*, «булочка». Булочки с сыром или
+          колбасой — классический немецкий завтрак: за свежими *Brötchen* с
+          утра ходят в пекарню.
+        point: "Еда вообще — без артикля: *Ich esse gern Fisch.* Слова на *-chen* — *das*"
+        set: { view: words, words: speisen }
+
+  - id: lokal
+    chapter: words
+    title: Посуда, меню и счёт
+    beats:
+      - read: >-
+          Посуда работает как мера: *eine Tasse Kaffee*, *ein Glas Wasser*,
+          *ein Stück Kuchen*. Второе слово не меняется — никакого «стакана
+          воды» с родительным падежом. Меню — *die Speisekarte*, счёт — *die
+          Rechnung*: *Die Rechnung, bitte!* Официанта не окликают «молодой
+          человек»: достаточно поймать его взгляд или сказать *Entschuldigung!*
+          — «извините!».
+        point: "*eine Tasse Tee*, *ein Glas Wasser* — второе слово не меняется"
+        set: { view: words, words: lokal }
+
+  - id: verben
+    chapter: words
+    title: Глаголы за столом
+    beats:
+      - read: >-
+          Два глагола темы неправильные: *essen* и *nehmen* меняют гласную у
+          *du* и *er / sie / es* — *du isst*, *er nimmt*, как *sprechen* в
+          первой теме. *möchten* — вежливое «хотел бы», с ним заказывают и в
+          кафе, и в магазине. Перед едой желают *Guten Appetit!*, а голод и
+          жажду, как вы уже видели, «имеют»: *Hunger haben*, *Durst haben*.
+        point: "*du isst*, *er nimmt*; перед едой — *Guten Appetit!*"
+        set: { view: words, words: verben }
+
+  - id: akkusativ
+    chapter: grammar
+    title: Кого? Что? — винительный падеж
+    beats:
+      - read: >-
+          В русском слово меняется вместе с ролью в предложении: «вода
+          холодная», но «я пью воду». В немецком существительное обычно
+          остаётся как есть — меняется артикль перед ним. Пока кофе —
+          подлежащее и отвечает на вопрос «кто? что?», это именительный падеж,
+          *Nominativ*: *der Kaffee*. На схеме он занимает первую позицию,
+          глагол — вторую, всё как в первой теме.
+        point: "Подлежащее (кто? что?) — именительный падеж: *Der Kaffee ist gut.*"
+        set:
+          view: sentence
+          rows:
+            - de: [D+er Kaffee, ist, hier sehr gut., ""]
+              ru: Кофе здесь очень хороший.
+      - read: >-
+          Теперь кофе — не подлежащее, а дополнение: беру — что? кофе. Это
+          винительный падеж, *Akkusativ*, и артикль *der* становится *den*:
+          *Ich nehme den Kaffee*. Посмотрите на схему: плитка с артиклем
+          переехала в середину и сменила окончание, а первую позицию заняло
+          новое подлежащее — *ich*. Само слово *Kaffee* не изменилось ни на
+          букву.
+        point: "Дополнение (кого? что?) — винительный падеж: *Ich nehme den Kaffee.*"
+        set:
+          rows:
+            - de: [Ich, nehm+e, d+en Kaffee., ""]
+              ru: Я беру этот кофе.
+      - read: >-
+          Хорошая новость: винительный меняет только мужской род. *der* →
+          *den*, *ein* → *einen*, *kein* → *keinen* — у всех трёх появляется
+          *-en*. Женский, средний род и множественное число выглядят так же,
+          как в именительном: *Ich nehme die Suppe*, *Ich möchte ein Ei*. Так
+          что вопрос «какое окончание?» сводится к вопросу «какого рода
+          слово?» — ещё одна причина учить слова с артиклем.
+        point: "Меняется только мужской род: *den*, *einen*, *keinen*"
+        set: { view: table, table: akkusativ, focus: [0] }
+      - read: >-
+          Винительный нужен после глаголов, у которых есть дополнение:
+          *haben*, *nehmen*, *möchten*, *essen*, *trinken*, *bestellen*,
+          *bezahlen*. А после *sein* — никогда: *sein* ничего не делает с
+          предметом, он работает как знак равенства. *Das ist ein Kaffee aus
+          Italien* — без *-en*. Ошибку *Das ist einen Kaffee* делают даже
+          опытные студенты, поэтому сначала смотрите на глагол.
+        point: "После *sein* — именительный: *Das ist ein Kaffee.* После *nehmen*, *möchten* — *einen*"
+        set:
+          view: sentence
+          rows:
+            - de: [Ich, möcht+e, ein+en Kaffee., ""]
+              ru: Я хотел бы кофе.
+            - de: [Das, ist, ein Kaffee aus Italien., ""]
+              ru: Это кофе из Италии.
+
+  - id: moechten
+    chapter: grammar
+    title: "*möchten* — вежливое «хочу»"
+    beats:
+      - read: >-
+          Русское «я хочу кофе» так и тянет перевести как *Ich will Kaffee*,
+          но в кафе это звучит как требование. Вежливо — *Ich möchte*, «я
+          хотел бы». Формы почти правильные, с одной особенностью: у *ich* и
+          *er / sie / es* они совпадают, и у *er* нет *-t*: *Marco möchte ein
+          Stück Kuchen*. У *du* и *ihr* появляется *e*: *du möchtest*, *ihr
+          möchtet*.
+        point: "*ich möchte* = *er möchte*, без *-t*; *du möchtest*, *ihr möchtet*"
+        set: { view: table, table: moechten, focus: [0, 2] }
+
+  - id: gern
+    chapter: grammar
+    title: "*gern* — «люблю»"
+    beats:
+      - read: >-
+          Русское «я люблю чай» по-немецки звучит как «я охотно пью чай»: *Ich
+          trinke gern Tee*. *gern* стоит в середине — после глагола, а в
+          вопросе после подлежащего: *Trinkst du gern Kaffee?* Не ставьте его
+          перед глаголом: в *Ich gern trinke* глагол уходит со второй позиции,
+          и это ошибка. А *Ich liebe Tee* звучит гораздо сильнее — как
+          «обожаю».
+        point: "*Ich trinke gern Tee.* — *gern* после глагола, в середине"
+        set:
+          view: sentence
+          rows:
+            - de: [Ich, trink+e, gern Tee., ""]
+              ru: Я люблю чай.
+            - de: ["", Trink+st, du gern Kaffee?, ""]
+              ru: Ты любишь кофе?
+
+  - id: negation
+    chapter: grammar
+    title: "*nicht* или *kein*"
+    beats:
+      - read: >-
+          Теперь отрицание. «Не люблю» — это *nicht gern*: *nicht* встаёт
+          прямо перед *gern*. А «не пью кофе» — *Ich trinke keinen Kaffee*:
+          отрицаем сам предмет, и *kein* берёт то же окончание, что *ein*.
+          Посмотрите на схему: в первой строке появилось *nicht*, во второй
+          вместо вопроса — ответ с *keinen*. Вариант *nicht Kaffee* немцы не
+          говорят.
+        point: "*nicht gern* — «не люблю»; *keinen Kaffee* — «не пью кофе»"
+        set:
+          rows:
+            - de: [Ich, trink+e, nicht gern Tee., ""]
+              ru: Я не люблю чай.
+            - de: [Ich, trink+e, kein+en Kaffee., ""]
+              ru: Я не пью кофе.
+      - read: >-
+          Как выбрать? Мысленно уберите отрицание. Если перед существительным
+          стоит *ein* или артикля нет совсем — нужен *kein*: *Ich esse
+          Fleisch* → *Ich esse kein Fleisch*. Во всех остальных случаях —
+          *nicht*: с глаголом, с *gern*, с прилагательным и с
+          существительным, у которого есть *der*, *die* или *das*: *Ich esse
+          den Kuchen nicht* — «этот пирог я не ем».
+        point: "*ein* или нет артикля → *kein*; всё остальное → *nicht*"
+        set: { view: table, table: negation }
+
+  - id: check
+    chapter: practice
+    title: Проверьте себя
+    beats:
+      - question: Как спросить друга, хочет ли он кофе?
+        read: >-
+          *Möchtest du einen Kaffee?* Вопрос да/нет — глагол на первом месте.
+          С другом вы на *du*, значит, *möchtest*. *Kaffee* мужского рода и в
+          вопросе остаётся дополнением — *einen*. Ответить можно *Ja, gern!*
+          — «да, с удовольствием» — или *Nein, danke*. Официант спросит то же
+          самое на *Sie*: *Möchten Sie einen Kaffee?*
+        point: "*Möchtest du einen Kaffee?* — *Ja, gern!* / *Nein, danke.*"
+        set:
+          view: sentence
+          rows:
+            - de: ["", Möcht+est, du ein+en Kaffee?, ""]
+              ru: Хочешь кофе?
+      - question: "*Den Kuchen isst Marco.* Кто что ест?"
+        read: >-
+          Пирог ест Марко. Первая позиция в немецком ничего не говорит о роли
+          слова — это мы видели ещё в первой теме. Роль показывает артикль:
+          *den* — винительный падеж, значит, *Kuchen* — дополнение. Как в
+          русском «кашу ест Марко»: кто ест, понятно по окончанию, а не по
+          порядку слов. Нейтрально скажут *Marco isst den Kuchen*.
+        point: "*den* — всегда дополнение, на любой позиции: *Den Kuchen isst Marco.*"
+        before:
+          view: sentence
+          rows:
+            - de: [D+en Kuchen, iss+t, Marco., ""]
+        set:
+          rows:
+            - de: [D+en Kuchen, iss+t, Marco., ""]
+              ru: Пирог ест Марко.
+            - de: [Marco, iss+t, d+en Kuchen., ""]
+              ru: Марко ест пирог.
+      - question: Почему *du isst*, а не *du esst*?
+        read: >-
+          У *essen* в формах *du* и *er / sie / es* гласная *e* меняется на
+          *i*: *du isst*, *er isst*. Так же ведут себя *nehmen* — *du nimmst*,
+          *er nimmt* — и *sprechen* из первой темы. А окончание у *du* —
+          просто *-t*, потому что основа кончается на *ss*, как в *du heißt*.
+          Поэтому *du isst* и *er isst* совпадают.
+        point: "*essen*: *du isst*, *er isst*; *nehmen*: *du nimmst*, *er nimmt*"
+        set: { view: table, table: verben, focus: [1, 2] }
+
+  - id: karte
+    chapter: exam
+    title: "Устный экзамен: часть 2"
+    beats:
+      - read: >-
+          Во второй части устного экзамена у группы общая тема, например
+          *Essen und Trinken*, а у каждого — своя карточка со словом. По слову
+          нужно задать партнёру вопрос, а потом ответить на его вопрос. Со
+          словом *Fleisch* проще всего спросить *Isst du gern Fleisch?*
+          Отвечать лучше целым предложением, и здесь пригодится вся тема:
+          *gern*, *kein*, *nicht*.
+        point: "Часть 2: вопрос со словом с карточки — *Isst du gern Fleisch?*"
+        set: { view: task, task: frage, reveal: 2 }
+
+  - id: bitte
+    chapter: exam
+    title: "Устный экзамен: часть 3"
+    beats:
+      - read: >-
+          В третьей части на карточке не слово, а картинка. По ней нужно
+          попросить партнёра о чём-то, а потом отреагировать на его просьбу.
+          За просьбу дают 2 балла, за реакцию — 1. Видите чашку кофе — просите
+          кофе. Здесь и пригодится винительный: кофе — *der Kaffee*, значит, в
+          просьбе *einen Kaffee*.
+        point: "Часть 3: по картинке попросить и отреагировать на просьбу"
+        set: { view: task, task: bitte, reveal: 0 }
+      - read: >-
+          Самая короткая просьба — *Einen Kaffee, bitte!* — уже засчитывается,
+          если окончание правильное. Можно и полнее: *Ich möchte einen Kaffee,
+          bitte*. Реакция — согласие или отказ: *Ja, gern. Hier, bitte!* или
+          *Leider habe ich keinen Kaffee* — «к сожалению, кофе у меня нет».
+          После *leider* на первой позиции глагол по-прежнему второй, а *ich*
+          встаёт за ним.
+        point: "Просьба: *Einen Kaffee, bitte!* Реакция: *Ja, gern.* / *Leider habe ich keinen Kaffee.*"
+        set: { reveal: 4 }
+
+  - id: hoeren
+    chapter: exam
+    title: "Аудирование: часть 1"
+    beats:
+      - read: >-
+          В первой части аудирования — шесть коротких разговоров, каждый
+          звучит дважды. К каждому — вопрос и три варианта ответа. Ловушка в
+          том, что в разговоре обычно упоминаются все три варианта, а
+          правильный только один. Поэтому слушайте не только слова, но и
+          отрицания: *nein*, *kein*, *nicht*, *ohne*. Включите запись и
+          ответьте, прежде чем листать дальше.
+        point: "Часть 1: звучат все три варианта — ловите *nein*, *kein*, *nicht*"
+        set: { view: task, task: hoeren }
+      - question: Какой вариант верный и почему не a и не b?
+        read: >-
+          Верный ответ — c, *Tee und Wasser*. Кофе звучит первым, но женщина
+          отказывается: *ich trinke keinen Kaffee*. Молоко тоже звучит, но с
+          *ohne* — «без»: *Nein, ohne Milch*. А стакан воды она просит в
+          самом конце: *Und ein Glas Wasser, bitte*. Не торопитесь с ответом:
+          он часто прячется в последней реплике.
+        point: "Прозвучавшее слово — ещё не ответ: проверьте, нет ли рядом *kein* или *ohne*"
+        set: { solved: true }
+
+exercises:
+  - type: choice
+    q: "Ich möchte ___ Kaffee, bitte."
+    options: [ein, einen, eine]
+    answer: 1
+    why: "*der Kaffee* — мужской род, после *möchten* винительный: *ein+en Kaffee*."
+  - type: choice
+    q: Ich nehme ___ Cola.
+    options: [einen, eine, ein]
+    answer: 1
+    why: "*die Cola* — женский род, в винительном не меняется."
+  - type: choice
+    q: Möchtest du ___ Wasser?
+    options: [ein, einen, eine]
+    answer: 0
+    why: "*das Wasser* — средний род: *ein* без окончания."
+  - type: choice
+    q: Das ist ___ Tee aus Indien.
+    options: [ein, einen, eine]
+    answer: 0
+    why: "После *sein* винительного не бывает: *Das ist ein Tee*."
+  - type: gap
+    q: Ich habe ___ Hunger.
+    answer: [keinen]
+    hint: kein
+    ru: Я не голоден.
+    why: "*der Hunger* — мужской род: *kein+en Hunger*."
+  - type: gap
+    q: Ich bezahle ___ Kaffee.
+    answer: [den]
+    hint: der
+    ru: Я плачу за кофе.
+    why: "*bezahlen* + винительный, без предлога: *Ich bezahle d+en Kaffee*."
+  - type: gap
+    q: Marco ___ ein Stück Kuchen.
+    answer: [möchte]
+    hint: möchten
+    why: "*er möchte* — без *-t*, как *ich möchte*."
+  - type: gap
+    q: Was ___ du? – Ich nehme die Suppe.
+    answer: [nimmst]
+    hint: nehmen
+    why: "*nehmen*: *du nimmst*, *er nimmt* — *e* меняется на *i*, и *m* удваивается."
+  - type: gap
+    q: Anna ___ kein Fleisch.
+    answer: [isst]
+    hint: essen
+    why: "*essen*: *du isst*, *er / sie isst*."
+  - type: choice
+    q: Ich esse ___ gern Fisch.
+    options: [nicht, kein, keinen]
+    answer: 0
+    why: "Отрицаем *gern* — значит, *nicht*: *nicht gern*."
+  - type: choice
+    q: Ich trinke ___ Alkohol.
+    options: [nicht, kein, keinen]
+    answer: 2
+    why: "Существительное без артикля отрицают *kein*; *der Alkohol* — мужской род: *kein+en*."
+  - type: choice
+    q: Die Suppe ist ___ warm.
+    options: [nicht, keine]
+    answer: 0
+    why: "Прилагательное отрицают *nicht*."
+  - type: choice
+    q: "Официант спрашивает *Zusammen oder getrennt?* Каждый платит за себя. Что ответить?"
+    options: ["Getrennt, bitte.", "Zusammen, bitte.", "Guten Appetit!"]
+    answer: 0
+    why: "*getrennt* — «раздельно», *zusammen* — «вместе»."
+  - type: order
+    ru: Я люблю пить чай.
+    de: Ich trinke gern Tee.
+    also: [Gern trinke ich Tee., Tee trinke ich gern.]
+    why: "*gern* стоит после глагола: *Ich trinke gern Tee*."
+  - type: order
+    ru: Ты будешь кусок пирога?
+    de: Möchtest du ein Stück Kuchen?
+  - type: order
+    ru: Я не пью кофе.
+    de: Ich trinke keinen Kaffee.
+    also: [Keinen Kaffee trinke ich.]
+    why: "Существительное без артикля — *kein*, мужской род — *keinen*."

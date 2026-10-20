@@ -1,0 +1,288 @@
+:root {
+  --bg: #0e0f12;
+  --panel: #16181d;
+  --panel-2: #1c1f25;
+  --line: #262931;
+  --line-strong: #393d47;
+  --text: #ece8e0;
+  --muted: #a39d93;
+  --faint: #6d685f;
+  /* Акцент — золото флага: окончания, глагол, активные элементы. */
+  --accent: #f2c14e;
+  --accent-soft: rgb(242 193 78 / 0.13);
+  --accent-line: rgb(242 193 78 / 0.5);
+  /* Род существительного. */
+  --der: #6cb4ff;
+  --die: #ff7b86;
+  --das: #5fd49c;
+  --plural: #c39bff;
+  /* Вопросы и проверка. */
+  --question: #ff9f6b;
+  --ok: #5fd49c;
+  --bad: #ff7b86;
+  --sans: "Golos Text Variable", "Golos Text", system-ui, sans-serif;
+  /* Немецкий текст набран антиквой — так его видно среди русского. */
+  --serif: "Literata Variable", "Literata", Georgia, serif;
+  --mono: "JetBrains Mono Variable", "JetBrains Mono", ui-monospace, monospace;
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  --gutter: clamp(16px, 4vw, 40px);
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.kicker {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+/* Немецкий текст */
+
+.de {
+  font-family: var(--serif);
+  font-optical-sizing: auto;
+}
+
+p .de,
+li .de,
+h3 .de,
+.stage-title .de {
+  color: #f6e2b3;
+  font-size: 1.04em;
+}
+
+.ending {
+  color: var(--accent);
+  font-weight: 640;
+}
+
+.de-em {
+  font-weight: 640;
+  color: var(--accent);
+}
+
+/* Теги и кнопки */
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.tag-exam {
+  font-family: var(--mono);
+  font-size: 12px;
+  border-color: rgb(255 159 107 / 0.45);
+  color: var(--question);
+}
+
+.chip-button {
+  padding: 5px 11px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: transparent;
+  font-family: var(--mono);
+  font-size: 11.5px;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.chip-button:hover,
+.chip-button[data-active] {
+  color: var(--text);
+  border-color: var(--accent-line);
+}
+
+.chip-button[aria-pressed="true"] {
+  color: var(--text);
+}
+
+.primary {
+  padding: 9px 18px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #1b1405;
+  font-weight: 620;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.primary:hover {
+  filter: brightness(1.08);
+}
+
+.primary:disabled {
+  opacity: 0.4;
+  cursor: default;
+  filter: none;
+}
+
+.link-button {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--muted);
+  font-size: 14px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+.link-button:hover {
+  color: var(--text);
+}
+
+.play {
+  flex: none;
+  display: inline-grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  border: 1px solid var(--line-strong);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  vertical-align: middle;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+
+.play svg {
+  width: 13px;
+  height: 13px;
+  fill: currentColor;
+}
+
+.play[data-size="md"] {
+  width: 44px;
+  height: 44px;
+}
+
+.play[data-size="md"] svg {
+  width: 20px;
+  height: 20px;
+}
+
+.play:hover,
+.play[data-active] {
+  color: var(--accent);
+  border-color: var(--accent-line);
+}
+
+.play[data-active] {
+  background: var(--accent-soft);
+}
+
+/* Цвет рода: любой элемент с data-gender получает --g */
+
+[data-gender="m"] {
+  --g: var(--der);
+}
+
+[data-gender="f"] {
+  --g: var(--die);
+}
+
+[data-gender="n"] {
+  --g: var(--das);
+}
+
+[data-gender="pl"] {
+  --g: var(--plural);
+}
+
+.legend {
+  display: flex;
+  gap: 10px;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.legend span::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--g);
+}
+
+.meter {
+  display: block;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--line);
+  overflow: hidden;
+}
+
+.meter i {
+  display: block;
+  height: 100%;
+  border-radius: 2px;
+  background: var(--accent);
+  transition: width 0.4s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

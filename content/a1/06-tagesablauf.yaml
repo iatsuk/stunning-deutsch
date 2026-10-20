@@ -1,0 +1,589 @@
+id: tagesablauf
+order: 6
+title: Wann stehst du auf?
+ru: Время и распорядок дня
+lede: >-
+  Марко опять опоздал на курс, а Анна встаёт в шесть утра. Учимся называть
+  время — официально и в разговоре — и рассказывать о своём дне. Заодно видим
+  новое правило: глагол может распасться на две части, и его приставка уходит
+  в конец предложения.
+goals:
+  - Спросить, который час, и ответить — официально и в разговоре
+  - Сказать, когда что происходит — в семь часов, в понедельник, с девяти до пяти
+  - Рассказать о своём дне — от «встаю» до «смотрю телевизор»
+  - Понять сообщение на автоответчике и табличку с часами работы
+grammar:
+  - Время на часах
+  - Отделяемые приставки
+  - Рамка предложения
+  - um, am, von … bis
+  - Время на первом месте
+exam: [hoeren-3, lesen-3]
+
+dialogues:
+  spaet:
+    title: Zu spät!
+    ru: Опять опоздал!
+    place: Sprachschule, Leipzig
+    people:
+      A: { name: Anna, voice: Anna }
+      M: { name: Marco, voice: Reed }
+    lines:
+      - A: Hallo, Marco! Wie spät ist es?
+        ru: Привет, Марко! Который час?
+      - M: Hm … Viertel nach neun?
+        ru: Хм… четверть десятого?
+      - A: Genau. Und der Kurs fängt um neun an!
+        ru: Именно. А курс начинается в девять!
+      - M: Entschuldigung! Ich stehe immer um halb neun auf.
+        ru: Извини! Я всегда встаю в половине девятого.
+      - A: Um halb neun? Ich stehe schon um sechs auf.
+        ru: В половине девятого? А я встаю уже в шесть.
+      - M: Um sechs? Was machst du so früh?
+        ru: В шесть? Что ты делаешь так рано?
+      - A: Von halb sieben bis sieben jogge ich, dann frühstücke ich.
+        ru: С половины седьмого до семи бегаю, потом завтракаю.
+      - M: Ich frühstücke nicht. Ich trinke nur schnell einen Kaffee.
+        ru: А я не завтракаю. Только быстро выпиваю кофе.
+      - A: Morgen stehst du um sieben auf, okay?
+        ru: Завтра ты встаёшь в семь, хорошо?
+      - M: Okay, okay … um sieben!
+        ru: Ладно, ладно… в семь!
+  tag:
+    title: Marcos Tag
+    ru: День Марко
+    place: Sprachschule, Leipzig
+    people:
+      A: { name: Anna, voice: Anna }
+      M: { name: Marco, voice: Reed }
+    lines:
+      - A: Marco, wann fängt deine Arbeit an?
+        ru: Марко, когда начинается твоя работа?
+      - M: Um fünf Uhr. Ich arbeite von fünf bis elf im Restaurant.
+        ru: В пять часов. Я работаю в ресторане с пяти до одиннадцати.
+      - A: Und was machst du am Vormittag?
+        ru: А что ты делаешь до обеда?
+      - M: Am Vormittag habe ich Kurs, am Mittag kaufe ich ein.
+        ru: До обеда у меня курс, в обед я хожу за покупками.
+      - A: Und wann hast du Feierabend?
+        ru: А когда у тебя заканчивается рабочий день?
+      - M: Um elf. Dann sehe ich noch ein bisschen fern.
+        ru: В одиннадцать. Потом ещё немного смотрю телевизор.
+      - A: Und am Wochenende?
+        ru: А в выходные?
+      - M: Am Samstag arbeite ich auch. Aber am Sonntag schlafe ich lange!
+        ru: В субботу я тоже работаю. Зато в воскресенье долго сплю!
+
+words:
+  uhr:
+    title: Die Uhrzeit
+    ru: Время
+    items:
+      - { de: Wie spät ist es?, ru: Который час? }
+      - { de: Wie viel Uhr ist es?, ru: Который час?, note: то же самое }
+      - { de: die Uhr, ru: "часы; час на часах", pl: Uhren, note: Es ist acht Uhr. }
+      - { de: die Stunde, ru: час как отрезок времени, pl: Stunden, note: drei Stunden }
+      - { de: die Minute, ru: минута, pl: Minuten }
+      - { de: das Viertel, ru: четверть, pl: Viertel, note: Viertel nach drei }
+      - { de: halb, ru: половина, note: "halb acht = 7:30" }
+      - { de: nach, ru: после, note: "Viertel nach neun = 9:15" }
+      - { de: vor, ru: "до, без", note: "Viertel vor neun = 8:45" }
+      - { de: früh, ru: рано }
+      - { de: spät, ru: поздно }
+      - { de: dauern, ru: длиться, note: Der Kurs dauert drei Stunden. }
+  tageszeiten:
+    title: Tageszeiten
+    ru: Части дня
+    items:
+      - { de: der Morgen, ru: утро, pl: Morgen, note: am Morgen }
+      - { de: der Vormittag, ru: время до обеда, pl: Vormittage, note: am Vormittag }
+      - { de: der Mittag, ru: "полдень, обед", pl: Mittage, note: am Mittag }
+      - { de: der Nachmittag, ru: время после обеда, pl: Nachmittage, note: am Nachmittag }
+      - { de: der Abend, ru: вечер, pl: Abende, note: am Abend }
+      - { de: die Nacht, ru: ночь, pl: Nächte, note: in der Nacht }
+  woche:
+    title: Die Woche
+    ru: Неделя
+    items:
+      - { de: der Montag, ru: понедельник, pl: Montage }
+      - { de: der Dienstag, ru: вторник, pl: Dienstage }
+      - { de: der Mittwoch, ru: среда, pl: Mittwoche }
+      - { de: der Donnerstag, ru: четверг, pl: Donnerstage }
+      - { de: der Freitag, ru: пятница, pl: Freitage }
+      - { de: der Samstag, ru: суббота, pl: Samstage }
+      - { de: der Sonntag, ru: воскресенье, pl: Sonntage }
+      - { de: die Woche, ru: неделя, pl: Wochen }
+      - { de: das Wochenende, ru: выходные, pl: Wochenenden, note: am Wochenende }
+      - { de: heute, ru: сегодня }
+      - { de: morgen, ru: завтра, note: morgen früh — завтра утром }
+  alltag:
+    title: Der Alltag
+    ru: Повседневные дела
+    items:
+      - { de: aufstehen, ru: вставать, note: ich stehe auf }
+      - { de: frühstücken, ru: завтракать, note: ich frühstücke }
+      - { de: duschen, ru: принимать душ }
+      - { de: anfangen, ru: начинать(ся), note: der Kurs fängt an }
+      - { de: aufhören, ru: заканчивать(ся), note: der Kurs hört auf }
+      - { de: arbeiten, ru: работать, note: du arbeitest }
+      - { de: einkaufen, ru: делать покупки, note: ich kaufe ein }
+      - { de: kochen, ru: готовить }
+      - { de: aufräumen, ru: убирать(ся), note: ich räume auf }
+      - { de: anrufen, ru: звонить, note: ich rufe dich an }
+      - { de: fernsehen, ru: смотреть телевизор, note: er sieht fern }
+      - { de: schlafen, ru: спать, note: du schläfst }
+      - { de: der Feierabend, ru: конец рабочего дня, pl: Feierabende }
+
+tables:
+  zeitangaben:
+    title: Wann?
+    ru: "Когда: um, am, von … bis"
+    head: [Что называем, Wort, Beispiel]
+    ruCols: [0]
+    rows:
+      - [время по часам, um, um sechs Uhr / um halb acht]
+      - [день недели, am, am Montag / am Wochenende]
+      - [часть дня, am, am Morgen / am Abend]
+      - [ночь — исключение, in der, in der Nacht]
+      - [отрезок времени, von … bis, von neun bis zwölf Uhr]
+      - [без предлога, –, heute / morgen / jetzt]
+    note: "*am* — это слияние *an* и *dem*. Почему так, разберём в теме о жилье."
+  trennbar:
+    title: Trennbare Verben
+    ru: Глаголы с отделяемой приставкой
+    head: [Infinitiv, Beispiel, По-русски]
+    ruCols: [2]
+    rows:
+      - ["*auf*stehen", "Ich stehe um sechs Uhr *auf*.", Я встаю в шесть часов.]
+      - ["*an*fangen", "Der Kurs fängt um neun *an*.", Курс начинается в девять.]
+      - ["*auf*hören", "Der Kurs hört um halb eins *auf*.", Курс заканчивается в половине первого.]
+      - ["*ein*kaufen", "Am Mittag kaufe ich *ein*.", В обед я хожу за покупками.]
+      - ["*auf*räumen", "Am Samstag räume ich *auf*.", В субботу я убираюсь.]
+      - ["*fern*sehen", "Am Abend sieht Marco *fern*.", Вечером Марко смотрит телевизор.]
+      - ["*an*rufen", "Ich rufe dich morgen *an*.", Я позвоню тебе завтра.]
+    note: "*anfangen* и *fernsehen* меняют гласную корня: *du fängst an*, *er sieht fern*."
+
+tasks:
+  nachricht:
+    kind: listen
+    part: hoeren-3
+    title: Hören, Teil 3
+    situation: Sie hören eine Nachricht auf dem Anrufbeantworter.
+    voice: Sandy
+    text: >-
+      Guten Tag, hier ist Sabine Weber von der Sprachschule Leipzig. Eine
+      Information für den Kurs A1: Am Freitag fängt der Kurs erst um halb elf
+      an, nicht um neun Uhr. Er hört dann um ein Uhr auf. Vielen Dank und auf
+      Wiederhören!
+    question: Wann beginnt der Kurs am Freitag?
+    options: [Um 9.00 Uhr., Um 10.30 Uhr., Um 13.00 Uhr.]
+    answer: 1
+  buero:
+    kind: sign
+    part: lesen-3
+    title: Lesen, Teil 3
+    situation: Sie sind in der Sprachschule und lesen ein Schild.
+    text: |
+      Sprachschule Leipzig – Büro
+      Öffnungszeiten
+      Mo – Do: 8.30 – 17.00 Uhr
+      Fr: 8.30 – 13.00 Uhr
+      Sa und So geschlossen
+    statement: Am Freitag ist das Büro bis 17 Uhr geöffnet.
+    answer: false
+
+steps:
+  - id: spaet
+    chapter: scene
+    title: Опять опоздал
+    beats:
+      - read: >-
+          Понедельник, четверть десятого. Марко входит в класс, когда урок уже
+          идёт. Анна с иронией спрашивает: *Wie spät ist es?* — «который час?»,
+          буквально «насколько поздно?». Марко неуверенно отвечает: *Viertel
+          nach neun* — «четверть десятого». А курс, напоминает Анна, *fängt um
+          neun an* — «начинается в девять». Заметьте: глагол *anfangen*
+          распался на две части, и *an* убежало в самый конец.
+        point: "*Wie spät ist es?* — «который час?»; *Der Kurs fängt um neun an.*"
+        set: { view: dialogue, dialogue: spaet, reveal: 3, focus: [0, 1, 2] }
+      - read: >-
+          Марко оправдывается: *Ich stehe immer um halb neun auf* — «я всегда
+          встаю в половине девятого». Снова глагол из двух частей: *aufstehen*
+          — «вставать». Спрягается корень *stehe*, он стоит на втором месте, а
+          приставка *auf* ждёт в конце. Анна встаёт гораздо раньше: *Ich stehe
+          schon um sechs auf.* *schon* здесь — «уже»: в шесть она уже на ногах.
+        point: "*aufstehen*: *Ich stehe um sechs auf.* — приставка уходит в конец"
+        set: { reveal: 5, focus: [3, 4] }
+      - read: >-
+          Что Анна делает так рано? *Von halb sieben bis sieben jogge ich* — «с
+          половины седьмого до семи бегаю». *von … bis* — «с … до». Потом —
+          *dann frühstücke ich*: после *dann* глагол снова сразу второй.
+          *frühstücken* — обычный глагол без приставки, он не распадается. А
+          про завтра Анна говорит настоящим временем: *Morgen stehst du um
+          sieben auf* — будущее время для этого не нужно.
+        point: "*von … bis* — «с … до»; о завтрашнем дне — в настоящем времени"
+        set: { reveal: 10, focus: [6, 7, 8] }
+
+  - id: marco
+    chapter: scene
+    title: День Марко
+    beats:
+      - read: >-
+          На перемене Анна расспрашивает Марко о его дне. По вечерам Марко
+          работает: *Ich arbeite von fünf bis elf im Restaurant*. Части дня называют с
+          *am*: *am Vormittag* — «до обеда», *am Mittag* — «в обед». И снова
+          глагол из двух частей: *einkaufen* — «делать покупки» — в
+          предложении превращается в *kaufe … ein*. Порядок слов знакомый:
+          время стоит первым, глагол — вторым, *ich* — после него.
+        point: "*am Vormittag*, *am Mittag* — части дня с *am*; *ich kaufe ein*"
+        set: { view: dialogue, dialogue: tag, reveal: 4, focus: [1, 3] }
+      - read: >-
+          Конец рабочего дня по-немецки — *der Feierabend*, буквально
+          «праздничный вечер». *Um elf habe ich Feierabend* — «в одиннадцать я
+          заканчиваю работу». Потом Марко *sieht fern* — «смотрит телевизор».
+          У *fernsehen* корень меняет гласную, как у *sehen*: *du siehst*, *er
+          sieht*. А в воскресенье Марко отсыпается: *Am Sonntag schlafe ich
+          lange.* Дни недели, как и части дня, — с *am*.
+        point: "*der Feierabend* — конец рабочего дня; *fernsehen*: *er sieht fern*"
+        set: { reveal: 8, focus: [4, 5, 7] }
+
+  - id: uhr
+    chapter: words
+    title: Часы и время
+    beats:
+      - read: >-
+          Русское «час» в немецком — два разных слова. Время на часах — *Uhr*:
+          *Es ist acht Uhr.* Отрезок времени — *die Stunde*: *Der Kurs dauert
+          drei Stunden* — «курс длится три часа». А *die Uhr* — это ещё и сами
+          часы, на руке или на стене. Запомните пару вопросов: *Wie spät ist
+          es?* и *Wie viel Uhr ist es?* Оба значат «который час?».
+        point: "*acht Uhr* — время на часах, *drei Stunden* — отрезок времени"
+        set: { view: words, words: uhr }
+
+  - id: tage
+    chapter: words
+    title: Части дня и дни недели
+    beats:
+      - read: >-
+          Все части дня — мужского рода, как *der Tag*: *der Morgen*, *der
+          Vormittag*, *der Mittag*, *der Nachmittag*, *der Abend*. Поэтому с
+          ними *am*: *am Morgen*, *am Abend*. Исключение одно — *die Nacht*, и
+          говорят *in der Nacht* — «ночью». Часть этих слов вы уже знаете по
+          приветствиям: *Guten Morgen!*, *Guten Abend!*, *Gute Nacht!*
+        point: "Части дня — *der*, поэтому *am Morgen*, *am Abend*; но *in der Nacht*"
+        set: { view: words, words: tageszeiten }
+      - read: >-
+          Дни недели тоже мужского рода, и почти все кончаются на *-tag*. Особняком
+          стоит *der Mittwoch* — буквально «середина недели». С днями тоже
+          *am*: *am Montag*, *am Wochenende*. И ловушка: *der Morgen* с большой
+          буквы — «утро», а *morgen* с маленькой — «завтра». «Завтра утром»
+          — *morgen früh*: так немцы обходят странное *morgen am Morgen*.
+        point: "*am Montag*; *morgen* — «завтра», *der Morgen* — «утро»"
+        set: { view: words, words: woche }
+
+  - id: alltag
+    chapter: words
+    title: Мой день
+    beats:
+      - read: >-
+          Глаголы распорядка дня. Половина из них — с отделяемой приставкой:
+          *aufstehen*, *anfangen*, *einkaufen*, *aufräumen*, *fernsehen*,
+          *anrufen*. В словаре они стоят одним словом, а в предложении
+          разделяются: *ich stehe auf*. Ударение всегда падает на приставку:
+          *AUFstehen*, *EINkaufen*. Это помогает узнать такой глагол на слух.
+          Подсказка под словом показывает, как он выглядит в предложении.
+        point: "Отделяемая приставка всегда ударная: *aufstehen*, *einkaufen*"
+        set: { view: words, words: alltag }
+
+  - id: uhrzeit
+    chapter: grammar
+    title: Который час?
+    beats:
+      - read: >-
+          Пройдём по дню Анны вместе с часами. Будильник звонит в шесть. На
+          *Wie spät ist es?* отвечают *Es ist sechs Uhr.* А на вопрос «когда?»
+          — *Wann?* или *Um wie viel Uhr?* — нужен предлог *um*: *um sechs
+          Uhr*, «в шесть часов». *Uhr* после числа не меняется: *sechs Uhr*, а
+          не *sechs Uhren*. В разговоре его часто опускают: *um sechs*.
+        point: "*Es ist sechs Uhr.* — который час; *um sechs Uhr* — когда"
+        set: { view: clock, time: "06:00" }
+      - read: >-
+          В половине седьмого Анна выходит на пробежку. По-немецки это *halb
+          sieben*: половина пути к семи, то есть 6:30. Русский здесь помогает:
+          «половина седьмого» устроена так же. Ошибаются те, кто переводит с
+          английского «half past six» и говорит *halb sechs* — это 5:30, на
+          час раньше. Проверка простая: после *halb* всегда стоит следующий
+          час. *halb acht* — 7:30, *halb neun* — 8:30.
+        point: "*halb sieben* = 6:30, как «половина седьмого»: после *halb* — следующий час"
+        set: { time: "06:30" }
+      - read: >-
+          Без четверти девять Анна уже сидит в классе. *Viertel* — «четверть»,
+          *vor* — «до», *nach* — «после». *Viertel vor neun* — 8:45, «без
+          четверти девять». А *Viertel nach neun* — 9:15, время, когда пришёл
+          Марко. Вот здесь русский уже подводит: мы говорим «четверть
+          десятого», называя следующий час, а немец считает от прошедшего:
+          *nach neun* — «после девяти».
+        point: "*Viertel vor neun* — 8:45; *Viertel nach neun* — 9:15, «после девяти»"
+        set: { time: "08:45" }
+      - read: >-
+          Спать Анна ложится в половине одиннадцатого. Время называют двумя
+          способами. Официально — по радио, на вокзале, в расписании и на
+          табличках — 24 часа и минуты: *zweiundzwanzig Uhr dreißig*. В
+          разговоре — 12 часов и *halb*, *Viertel*: *halb elf*. На экзамене
+          нужны оба: в объявлениях и на табличках — официальная форма, в
+          сообщениях друзей — разговорная.
+        point: "Официально — *zweiundzwanzig Uhr dreißig*, в разговоре — *halb elf*"
+        set: { time: "22:30" }
+
+  - id: wann
+    chapter: grammar
+    title: um, am, von … bis
+    beats:
+      - read: >-
+          Русское «в» — «в шесть», «в понедельник», «в обед» — по-немецки
+          распадается на два предлога. С часами — *um*: *um sechs Uhr*. С днями
+          и частями дня — *am*: *am Montag*, *am Abend*, *am Wochenende*.
+          Отрезок времени — *von … bis*: *von neun bis zwölf*. Исключение —
+          *in der Nacht*. А *heute*, *morgen* и *jetzt* обходятся вообще без
+          предлога: *Heute habe ich Kurs.*
+        point: "*um* + часы, *am* + день или часть дня, *von … bis* — отрезок"
+        set: { view: table, table: zeitangaben }
+
+  - id: vorfeld
+    chapter: grammar
+    title: Время — на первое место
+    beats:
+      - read: >-
+          Немцы очень любят начинать фразу со времени: *Am Vormittag habe ich
+          Kurs.* *Dann frühstücke ich.* Правило из первой темы работает и
+          здесь: что бы ни стояло на первой позиции, глагол — второй, а
+          подлежащее уходит за него. Типичная ошибка — русский порядок слов:
+          *Dann ich frühstücke*. Так нельзя: между первой позицией и глаголом
+          ничего не помещается.
+        point: "Время на первом месте — глагол всё равно второй: *Dann frühstücke ich.*"
+        set:
+          view: sentence
+          rows:
+            - de: [Am Vormittag, hab+e, ich Kurs., ""]
+              ru: До обеда у меня курс.
+            - de: [Dann, frühstück+e, ich., ""]
+              ru: Потом я завтракаю.
+
+  - id: klammer
+    chapter: grammar
+    title: Глагол из двух частей
+    beats:
+      - read: >-
+          У *aufstehen*, *anfangen*, *einkaufen* есть приставка, которая в
+          предложении отрывается от глагола. Корень спрягается как обычно и
+          стоит на втором месте, а приставка уходит в конец. Если корень
+          меняет гласную, он меняет её и здесь: *du fängst an*, *er sieht
+          fern*. В словарях такие глаголы часто пишут с чертой: *auf|stehen*.
+        point: "Корень — на втором месте, приставка — в конце: *Der Kurs fängt um neun an.*"
+        set: { view: table, table: trennbar }
+      - read: >-
+          Вот как это выглядит на схеме. *Ich stehe um sieben Uhr auf.* Корень
+          *stehe* — во второй колонке, приставка *auf* — в последней, в поле
+          «конец». Между ними — середина: время, место, дополнения. Глагол
+          обнимает середину с двух сторон, и эту конструкцию называют рамкой
+          предложения — *Satzklammer*. У *frühstücken* приставки нет, и поле
+          «конец» остаётся пустым.
+        point: "Рамка: *Ich stehe … auf.* — середина зажата между корнем и приставкой"
+        set:
+          view: sentence
+          rows:
+            - de: [Ich, steh+e, um sieben Uhr, auf.]
+              ru: Я встаю в семь часов.
+      - read: >-
+          Теперь поставим время на первое место: *Um sieben Uhr stehe ich
+          auf.* Смотрите, что переехало: *um sieben Uhr* — вперёд, *ich* — за
+          глагол, в середину. А *stehe* и *auf* не сдвинулись ни на шаг: рамка
+          держится при любом порядке слов. Типичная ошибка — *Ich stehe auf um
+          sieben Uhr*. Приставка не может стоять сразу за глаголом, её место —
+          в самом конце.
+        point: "*Um sieben Uhr stehe ich auf.* — порядок меняется, рамка остаётся"
+        set:
+          rows:
+            - de: [Um sieben Uhr, steh+e, ich, auf.]
+              ru: В семь часов я встаю.
+      - read: >-
+          В вопросах рамка тоже на месте. W-вопрос: *Wann stehst du auf?* —
+          *wann* на первой позиции, окончание меняется на *-st*, приставка
+          по-прежнему в конце. Вопрос да/нет начинается с глагола: *Stehst du
+          morgen um sieben auf?* Это фраза Анны из диалога, только вопросом.
+          Ответить можно коротко, совсем без глагола: *Ja, um sieben!*
+        point: "*Wann stehst du auf?* — *Stehst du morgen um sieben auf?*"
+        set:
+          rows:
+            - de: [Wann, steh+st, du, auf?]
+              ru: Когда ты встаёшь?
+            - de: ["", Steh+st, du morgen um sieben, auf?]
+              ru: Ты завтра встанешь в семь?
+
+  - id: check
+    chapter: practice
+    title: Проверьте себя
+    beats:
+      - question: Как по-разговорному сказать 7:35?
+        read: >-
+          *fünf nach halb acht* — «пять минут после половины восьмого». Минуты
+          рядом с половиной немцы отсчитывают от *halb*: 7:25 — *fünf vor halb
+          acht*, 7:35 — *fünf nach halb acht*. Остальные — от целого часа:
+          7:10 — *zehn nach sieben*, 7:50 — *zehn vor acht*. Запутались —
+          скажите официально: *sieben Uhr fünfunddreißig*. Это всегда верно и
+          всегда понятно.
+        point: "7:35 — *fünf nach halb acht*; если сомневаетесь — *sieben Uhr fünfunddreißig*"
+        before: { view: clock, time: "07:30" }
+        set: { time: "07:35" }
+      - question: Как спросить Марко, когда он смотрит телевизор?
+        read: >-
+          *Wann siehst du fern?* Здесь сразу две трудности. Первая — рамка:
+          корень *siehst* на втором месте, *fern* в конце. Вторая — корень
+          меняет гласную, как у *sehen*: *ich sehe*, но *du siehst*, *er
+          sieht*. Ошибка *Wann sehst du fern?* очень частая. Так же ведёт себя
+          *anfangen*: *Wann fängst du an?*
+        point: "*Wann siehst du fern?* — *e* → *ie*, приставка в конце"
+        set:
+          view: sentence
+          rows:
+            - de: [Wann, sieh+st, du, fern?]
+              ru: Когда ты смотришь телевизор?
+      - question: Почему *Ich rufe dich an*, а не *dir*, как в русском «тебе»?
+        read: >-
+          *rufen* — «звать», а звать кого? Винительный падеж. Поэтому и
+          *anrufen* требует винительного: *Ich rufe dich an*, *Rufst du mich
+          an?* В русском «звонить кому?» — дательный, отсюда соблазн сказать
+          *dir*. Местоимение встаёт в середину рамки, сразу за подлежащим, а
+          время — за ним: *Ich rufe dich morgen an.*
+        point: "*anrufen* + винительный: *Ich rufe dich an*, а не *dir*"
+        set:
+          rows:
+            - de: [Ich, ruf+e, dich morgen, an.]
+              ru: Я позвоню тебе завтра.
+
+  - id: hoeren
+    chapter: exam
+    title: "Аудирование: автоответчик"
+    beats:
+      - read: >-
+          В третьей части аудирования звучат пять сообщений на автоответчике:
+          от друзей, из врачебного кабинета, из школы. Каждое звучит дважды, к
+          каждому — вопрос с тремя вариантами. Чаще всего спрашивают о времени
+          или дне, а в тексте названы два-три похожих числа. Прежде чем
+          слушать, прочитайте вопрос и варианты. И запомните прощание по
+          телефону: *Auf Wiederhören!* — «до свидания» для тех, кого не видно.
+        point: "*Hören*, часть 3: пять сообщений, каждое дважды, a/b/c — чаще всего о времени"
+        set: { view: task, task: nachricht }
+      - question: Когда в пятницу начинается курс?
+        read: >-
+          *Um 10.30 Uhr* — вариант b. В сообщении звучат все три времени, и в
+          этом ловушка. *Neun Uhr* — обычное время, но в пятницу курс
+          начинается позже. *Ein Uhr* — конец урока: *Er hört dann um ein Uhr
+          auf.* А *erst um halb elf* — «только в половине одиннадцатого». И
+          ещё: в вопросе *beginnt*, а в тексте *fängt … an*. Экзамен любит
+          синонимы.
+        point: "*erst um halb elf* — «не раньше»; *beginnt* = *fängt … an*"
+        set: { solved: true }
+
+  - id: lesen
+    chapter: exam
+    title: "Чтение: табличка на двери"
+    beats:
+      - read: >-
+          В третьей части чтения — таблички и объявления: на двери магазина,
+          врача, школы. К каждой — утверждение, нужно отметить *richtig* или
+          *falsch*. *Öffnungszeiten* — «часы работы», *geöffnet* — «открыто»,
+          *geschlossen* — «закрыто». Время на табличках всегда официальное:
+          *8.30 – 17.00 Uhr*. Дни недели сокращают: *Mo*, *Di*, *Mi*, *Do*,
+          *Fr*, *Sa*, *So*.
+        point: "*Öffnungszeiten* — часы работы; *geöffnet* — открыто, *geschlossen* — закрыто"
+        set: { view: task, task: buero }
+      - question: Правда ли, что в пятницу офис работает до 17 часов?
+        read: >-
+          *Falsch.* До 17 часов офис открыт с понедельника по четверг, а в
+          пятницу — только до 13. Это типичная ловушка третьей части: в
+          табличке два похожих времени, и утверждение берёт не ту строку.
+          Читайте табличку по порядку: сначала найдите нужный день, потом
+          время. *Fr: 8.30 – 13.00 Uhr* — в пятницу после обеда офис закрыт.
+        point: "Сначала найдите в табличке нужный день, потом время"
+        set: { solved: true }
+
+exercises:
+  - type: choice
+    q: ___ spät ist es?
+    options: [Wie, Wann, Wo]
+    answer: 0
+    why: "*Wie spät ist es?* — «который час?». *Wann?* — «когда?»: *Wann fängt der Kurs an?*"
+  - type: choice
+    q: "Как сказать 7:30 в разговоре?"
+    options: [halb sieben, halb acht, Viertel nach sieben]
+    answer: 1
+    why: "После *halb* — следующий час: *halb acht* — «половина восьмого»."
+  - type: choice
+    q: "Как сказать 9:45 в разговоре?"
+    options: [Viertel nach neun, Viertel vor neun, Viertel vor zehn]
+    answer: 2
+    why: "*Viertel vor zehn* — «без четверти десять»."
+  - type: choice
+    q: "Как официально сказать 14:15?"
+    options: [vierzehn Uhr fünfzehn, Viertel nach zwei, zwei Uhr fünfzehn]
+    answer: 0
+    why: "Официально — 24 часа: *vierzehn Uhr fünfzehn*. *Viertel nach zwei* скажут в разговоре."
+  - type: choice
+    q: Der Kurs fängt ___ neun Uhr an.
+    options: [am, um, von]
+    answer: 1
+    why: "Время по часам — с *um*."
+  - type: choice
+    q: Wir haben ___ Montag Kurs.
+    options: [um, am, in]
+    answer: 1
+    why: "Дни недели — с *am*: *am Montag*."
+  - type: gap
+    q: Ich arbeite ___ neun ___ fünf.
+    answer: [von, bis]
+    ru: Я работаю с девяти до пяти.
+  - type: gap
+    q: Ich ___ um sechs Uhr ___.
+    answer: [stehe, auf]
+    hint: aufstehen
+    ru: Я встаю в шесть часов.
+    why: "Корень *stehe* — на втором месте, приставка *auf* — в конце."
+  - type: gap
+    q: Wann ___ der Kurs ___?
+    answer: [fängt, an]
+    hint: anfangen
+    why: "*anfangen* меняет *a* на *ä*: *du fängst an*, *er fängt an*."
+  - type: gap
+    q: Am Abend ___ Marco ___.
+    answer: [sieht, fern]
+    hint: fernsehen
+    why: "*sehen* → *er sieht*, приставка *fern* — в конце."
+  - type: gap
+    q: ___ du heute ___?
+    answer: [Kaufst, ein]
+    hint: einkaufen
+    ru: Ты сегодня пойдёшь за покупками?
+    why: "Вопрос да/нет: корень первым, *ein* — в конце."
+  - type: choice
+    q: Ich rufe ___ morgen an.
+    options: [dir, dich, du]
+    answer: 1
+    why: "*anrufen* + винительный: *Ich rufe dich an*. «Звоню тебе» по-русски — дательный, отсюда ошибка."
+  - type: choice
+    q: Какое предложение верное?
+    options: [Dann ich frühstücke., Dann frühstücke ich., Ich dann frühstücke.]
+    answer: 1
+    why: "После *dann* глагол сразу второй, *ich* — за ним."
+  - type: order
+    ru: Курс начинается в девять.
+    de: Der Kurs fängt um neun an.
+    also: [Um neun fängt der Kurs an.]
+  - type: order
+    ru: В субботу я убираюсь.
+    de: Am Samstag räume ich auf.
+    also: [Ich räume am Samstag auf.]
+    why: "*Am Samstag* на первом месте — *räume* второй, *auf* в конце."
+  - type: order
+    ru: Когда ты встаёшь?
+    de: Wann stehst du auf?

@@ -1,0 +1,52 @@
+# Сборка и публикация на GitHub Pages при каждом push в main.
+# Аудио уже лежит в public/audio, поэтому сборка не запускает TTS.
+name: Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.25.0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm build
+      # Не публикуем сайт, пока в Impressum и Datenschutz остаются незаполненные поля (src/legal.ts).
+      - name: Check legal details
+        run: |
+          if grep -rq "ЗАПОЛНИТЬ" dist; then
+            echo "::error::Заполните src/legal.ts перед публикацией"
+            exit 1
+          fi
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

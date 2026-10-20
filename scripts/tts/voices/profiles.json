@@ -1,0 +1,14 @@
+{
+  "text": "Guten Tag! Schön, dass Sie heute hier sind. Wir lernen gemeinsam Deutsch. Sprechen Sie bitte langsam und deutlich. Ich freue mich auf unser Gespräch.",
+  "profiles": {
+    "Anna": "A warm, clear female voice, around 28 years old. Native German speaker from Germany, speaking neutral standard German (Hochdeutsch), without a foreign or regional accent. Calm, friendly language teacher. Slightly slower than everyday conversation, with natural phrasing and very clear articulation.",
+    "Reed": "A friendly male voice, around 30 years old, medium pitch. Native German speaker from Germany, neutral standard German (Hochdeutsch), no foreign accent. Calm conversational delivery, slightly slow, clear articulation.",
+    "Eddy": "A mature male voice, around 55 years old, low warm pitch. Native German speaker, neutral standard German (Hochdeutsch), no foreign accent. Measured, confident and polite, clear and slightly slow speech.",
+    "Sandy": "A female voice, around 50 years old, warm lower register. Native German speaker, neutral standard German (Hochdeutsch), no foreign accent. Professional and friendly, clear diction at a measured pace.",
+    "Shelley": "A bright female voice, around 35 years old. Native German speaker, neutral standard German (Hochdeutsch), no foreign accent. Professional, attentive and friendly, calm with clear slightly slow speech.",
+    "Rocko": "A resonant male voice, around 45 years old, baritone. Native German speaker, neutral standard German (Hochdeutsch), no foreign accent. Warm and practical, clear slightly slow conversational speech.",
+    "Grandpa": "An elderly male voice, around 70 years old, gentle, slightly textured baritone. Native German speaker, neutral standard German (Hochdeutsch), no foreign accent. Warm and patient, naturally slow clear speech.",
+    "Flo": "A clear female voice, around 25 years old, mid-high pitch. Native German speaker, neutral standard German (Hochdeutsch), no foreign accent. Neutral information announcement, measured and clearly articulated."
+  },
+  "model": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign"
+}

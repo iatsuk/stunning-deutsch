@@ -1,0 +1,616 @@
+id: stadt
+order: 9
+title: Wie komme ich zum Bahnhof?
+ru: Город и транспорт
+lede: >-
+  Анна едет к подруге в Дрезден: спрашивает у прохожего дорогу к вокзалу,
+  слушает объявление на перроне, а вечером по телефону рассказывает Марко,
+  когда будет дома. Учимся говорить, куда и на чём вы едете, вежливо
+  объяснять дорогу и разбираемся с предлогами, после которых всегда дательный
+  падеж.
+goals:
+  - "Спросить дорогу и понять ответ: прямо, налево, у светофора"
+  - "Сказать, на чём, куда и откуда вы едете"
+  - "Вежливо попросить или посоветовать — повелительным наклонением на Sie"
+  - "Различать «дома» и «домой»: zu Hause и nach Hause"
+  - "Понять объявление на вокзале и табличку на двери"
+grammar:
+  - "Предлоги с дательным: mit, zu, bei, von, aus, nach"
+  - "zum, zur, beim, vom"
+  - "Повелительное наклонение на Sie"
+  - "zu Hause и nach Hause"
+exam: [hoeren-2, hoeren-1, lesen-3]
+
+dialogues:
+  weg:
+    title: Wie komme ich zum Hauptbahnhof?
+    ru: Как пройти к вокзалу?
+    place: Augustusplatz, Leipzig
+    people:
+      A: { name: Anna, voice: Anna }
+      P: { name: Passant, voice: Grandpa }
+    lines:
+      - A: Entschuldigung! Wie komme ich zum Hauptbahnhof?
+        ru: Извините! Как мне пройти к главному вокзалу?
+      - P: Zum Hauptbahnhof? Das ist nicht weit. Gehen Sie hier geradeaus.
+        ru: К главному вокзалу? Это недалеко. Идите здесь прямо.
+      - A: Geradeaus – und dann?
+        ru: Прямо — а потом?
+      - P: Dann gehen Sie an der Ampel links. Da sehen Sie schon den Bahnhof.
+        ru: Потом у светофора налево. Там вы уже увидите вокзал.
+      - A: Kann ich auch mit dem Bus fahren?
+        ru: А можно поехать на автобусе?
+      - P: Mit dem Bus? Nehmen Sie lieber die Straßenbahn, die Linie 16. Aber zu Fuß sind es nur zehn Minuten.
+        ru: На автобусе? Лучше садитесь на трамвай, на 16-й. Но пешком всего десять минут.
+      - A: Dann gehe ich zu Fuß. Vielen Dank!
+        ru: Тогда я пойду пешком. Большое спасибо!
+      - P: Gern geschehen!
+        ru: Не за что!
+  abends:
+    title: Bist du schon zu Hause?
+    ru: Ты уже дома?
+    place: Telefon
+    people:
+      M: { name: Marco, voice: Reed }
+      A: { name: Anna, voice: Anna }
+    lines:
+      - M: Hallo, Anna! Bist du schon zu Hause?
+        ru: Привет, Анна! Ты уже дома?
+      - A: Nein, ich bin noch in Dresden, bei Ewa.
+        ru: Нет, я ещё в Дрездене, у Эвы.
+      - M: Wann fährst du nach Hause?
+        ru: Когда ты поедешь домой?
+      - A: Mein Zug fährt um acht. Um zehn bin ich zu Hause.
+        ru: Мой поезд в восемь. В десять я буду дома.
+      - M: Morgen ist meine Party. Kommst du?
+        ru: Завтра у меня вечеринка. Придёшь?
+      - A: Ja, gern! Wie komme ich zur Lindenstraße?
+        ru: Да, с удовольствием! Как мне добраться до Линденштрассе?
+      - M: Du fährst mit der Linie 4 und steigst in Gohlis aus. Von der Haltestelle sind es nur zwei Minuten.
+        ru: Едешь на четвёрке и выходишь в Голисе. От остановки всего две минуты.
+      - A: Super! Dann bis morgen!
+        ru: Супер! Тогда до завтра!
+      - M: Bis morgen! Gute Fahrt nach Hause!
+        ru: До завтра! Хорошей дороги домой!
+  treffpunkt:
+    title: Wo treffen wir uns?
+    ru: Где встретимся?
+    people:
+      L: { name: Lisa, voice: Sandy }
+      T: { name: Tom, voice: Eddy }
+    lines:
+      - L: Hallo, Tom! Wo treffen wir uns morgen? Am Bahnhof?
+        ru: Привет, Том! Где встретимся завтра? На вокзале?
+      - T: Am Bahnhof ist es so voll. Lieber vor dem Kino.
+        ru: На вокзале так людно. Лучше перед кинотеатром.
+      - L: Vor dem Kino? Gut. Und wann?
+        ru: Перед кинотеатром? Хорошо. А когда?
+      - T: Um halb sieben. Der Film fängt um sieben an.
+        ru: В половине седьмого. Фильм начинается в семь.
+      - L: Super. Ich komme mit dem Fahrrad. Bis morgen!
+        ru: Супер. Я приеду на велосипеде. До завтра!
+
+words:
+  orte:
+    title: In der Stadt
+    ru: В городе
+    items:
+      - { de: der Bahnhof, ru: вокзал, pl: Bahnhöfe, note: der Hauptbahnhof (Hbf) — главный вокзал }
+      - { de: die Haltestelle, ru: остановка, pl: Haltestellen }
+      - { de: der Platz, ru: площадь, pl: Plätze, note: der Augustusplatz }
+      - { de: die Straße, ru: улица, pl: Straßen, note: in der Straße — на улице }
+      - { de: die Post, ru: почта, pl: "-", note: zur Post }
+      - { de: die Bank, ru: банк, pl: Banken, note: die Bänke — скамейки }
+      - { de: die Apotheke, ru: аптека, pl: Apotheken }
+      - { de: der Supermarkt, ru: супермаркет, pl: Supermärkte }
+      - { de: das Rathaus, ru: "ратуша, мэрия", pl: Rathäuser, note: der Rat + das Haus }
+      - { de: das Bürgeramt, ru: бюро регистрации, pl: Bürgerämter, note: здесь регистрируют адрес }
+      - { de: das Krankenhaus, ru: больница, pl: Krankenhäuser, note: krank + das Haus }
+      - { de: der Arzt, ru: врач, pl: Ärzte, note: beim Arzt — у врача }
+  verkehr:
+    title: Verkehrsmittel
+    ru: Транспорт
+    items:
+      - { de: der Bus, ru: автобус, pl: Busse, note: mit dem Bus }
+      - { de: die Straßenbahn, ru: трамвай, pl: Straßenbahnen, note: mit der Straßenbahn }
+      - { de: die S-Bahn, ru: городская электричка, pl: S-Bahnen }
+      - { de: die U-Bahn, ru: метро, pl: U-Bahnen, note: в Лейпциге метро нет }
+      - { de: der Zug, ru: поезд, pl: Züge, note: mit dem Zug }
+      - { de: das Auto, ru: машина, pl: Autos }
+      - { de: das Fahrrad, ru: велосипед, pl: Fahrräder, note: mit dem Fahrrad }
+      - { de: das Taxi, ru: такси, pl: Taxis }
+      - { de: zu Fuß, ru: пешком, note: без mit и без артикля }
+      - { de: die Fahrkarte, ru: билет, pl: Fahrkarten }
+      - { de: das Gleis, ru: путь на вокзале, pl: Gleise, note: von Gleis 5 }
+      - { de: die Linie, ru: "маршрут, линия", pl: Linien, note: die Linie 16 }
+  weg:
+    title: Den Weg erklären
+    ru: Объясняем дорогу
+    items:
+      - { de: Entschuldigung!, ru: Извините! }
+      - { de: Wie komme ich zum …?, ru: Как пройти к …?, note: "zum Bahnhof, zur Post" }
+      - { de: Wohin?, ru: Куда?, note: Wohin fährst du? }
+      - { de: geradeaus, ru: прямо }
+      - { de: links, ru: налево / слева }
+      - { de: rechts, ru: направо / справа }
+      - { de: die Ampel, ru: светофор, pl: Ampeln, note: an der Ampel — у светофора }
+      - { de: weit, ru: далеко, note: Ist das weit? }
+      - { de: in der Nähe, ru: поблизости, note: Gibt es hier in der Nähe eine Apotheke? }
+      - { de: einsteigen, ru: садиться в транспорт, note: Ich steige hier ein. }
+      - { de: aussteigen, ru: выходить из транспорта, note: Ich steige am Bahnhof aus. }
+      - { de: umsteigen, ru: пересаживаться, note: Wo steige ich um? }
+
+tables:
+  artikel:
+    title: mit + Dativ
+    ru: На чём вы едете?
+    head: [Род, Nominativ, Dativ]
+    ruCols: [0]
+    rows:
+      - [мужской, der Bus, mit d+em Bus]
+      - [средний, das Fahrrad, mit d+em Fahrrad]
+      - [женский, die Straßenbahn, mit d+er Straßenbahn]
+      - [мн. ч., die Freunde, mit d+en Freunde+n]
+    note: "Пешком — без предлога *mit* и без артикля: *zu Fuß*."
+  praep:
+    title: Präpositionen mit Dativ
+    ru: Предлоги, после которых всегда дательный
+    head: [Präposition, По-русски, Beispiel]
+    ruCols: [1]
+    rows:
+      - [mit, "«на» (транспорт), «с» (кем-то)", mit d+em Bus]
+      - [zu, "«к», «в» — куда", zu d+em Bahnhof → zum Bahnhof]
+      - [bei, "«у» — где", bei d+em Arzt → beim Arzt]
+      - [von, "«от», «с» — откуда", von d+er Haltestelle]
+      - [aus, "«из»", aus d+em Zug]
+      - [nach, "«в» — город, страна", nach Dresden]
+    note: Какой бы ни был вопрос — «где», «куда» или «откуда», — после этих предлогов всегда дательный.
+  kurz:
+    title: zum, zur, beim, vom
+    ru: Предлог и артикль сливаются
+    head: [Präposition + Artikel, Kurzform, Beispiel]
+    rows:
+      - [zu + d+em, zum, Wie komme ich zum Bahnhof?]
+      - [zu + d+er, zur, Ich gehe zur Post.]
+      - [bei + d+em, beim, Marco ist beim Arzt.]
+      - [von + d+em, vom, Der Bus fährt vom Bahnhof.]
+      - [in + d+em, im, Anna sitzt im Zug.]
+    note: "*zur* — единственное слияние с женским *der*. *von der*, *bei der*, *mit dem* не сливаются."
+  hause:
+    title: zu Hause / nach Hause
+    ru: Дома и домой
+    head: [Frage, Antwort, По-русски]
+    ruCols: [2]
+    rows:
+      - ["Wo bist du?", Ich bin zu Hause., Я дома.]
+      - ["Wohin gehst du?", Ich gehe nach Hause., Я иду домой.]
+      - ["Woher kommst du?", Ich komme von zu Hause., Я иду из дома.]
+
+tasks:
+  durchsage:
+    kind: listen
+    part: hoeren-2
+    title: Durchsage am Hauptbahnhof
+    situation: Sie sind am Hauptbahnhof. Sie hören den Text nur einmal.
+    voice: Shelley
+    text: >-
+      Achtung an Gleis 3! Der Regionalexpress nach Dresden, Abfahrt zehn Uhr
+      fünfzehn, fährt heute von Gleis 5. Der Zug hat zehn Minuten Verspätung.
+      Wir bitten um Entschuldigung.
+    statement: Der Zug nach Dresden fährt heute von Gleis 3.
+    answer: false
+  gespraech:
+    kind: listen
+    part: hoeren-1
+    title: Hören, Teil 1
+    situation: Sie hören ein Gespräch zweimal. Was ist richtig? Kreuzen Sie an.
+    dialogue: treffpunkt
+    question: Wo treffen sich Lisa und Tom?
+    options: [Am Bahnhof., Vor dem Kino., Im Kino.]
+    answer: 1
+  hinweis:
+    kind: sign
+    part: lesen-3
+    title: Am Hauptbahnhof
+    situation: Sie sind am Hauptbahnhof und brauchen eine Fahrkarte.
+    text: |-
+      Reisezentrum
+      Heute geschlossen!
+      Bitte kaufen Sie Ihre Fahrkarte am Automaten.
+      Zur Information bitte Eingang B benutzen.
+    statement: Sie haben eine Frage. Sie gehen zum Eingang B.
+    answer: true
+
+steps:
+  - id: weg
+    chapter: scene
+    title: Как пройти к вокзалу?
+    beats:
+      - read: >-
+          Суббота. Анна едет в Дрезден к подруге Эве, но дорогу к вокзалу не
+          знает. Самая полезная фраза в незнакомом городе: *Entschuldigung!
+          Wie komme ich zum Hauptbahnhof?* — «извините, как пройти к главному
+          вокзалу?». *zum* — это *zu dem*: после *zu* всегда дательный падеж.
+          Прохожий отвечает вежливой просьбой: *Gehen Sie hier geradeaus.*
+        point: "*Entschuldigung! Wie komme ich zum …?* — как пройти к …?"
+        set: { view: dialogue, dialogue: weg, reveal: 2 }
+      - read: >-
+          *Gehen Sie geradeaus* — повелительное наклонение на «Вы»: глагол в
+          самом начале, сразу за ним *Sie*. Но, объясняя дорогу, немцы часто
+          говорят и по-другому: *Dann gehen Sie an der Ampel links* — «потом
+          у светофора вы идёте налево». Это обычное утверждение: на первом
+          месте *dann*, глагол — второй. Оба способа вежливые и звучат
+          естественно.
+        point: "*Gehen Sie geradeaus!* — просьба; *Dann gehen Sie links.* — описание пути"
+        set: { reveal: 4, focus: [1, 3] }
+      - read: >-
+          На чём ехать? Для транспорта немецкий берёт предлог *mit* — «с»:
+          *mit dem Bus*, *mit der Straßenbahn*. Русское «на автобусе»
+          дословно не переводится: *auf dem Bus* — это на крыше автобуса.
+          «Пешком» — *zu Fuß*, без *mit* и без артикля. Анна выбирает именно
+          его: десять минут пешком — быстрее, чем ждать трамвай.
+        point: "Транспорт — *mit*: *mit dem Bus*, *mit der Straßenbahn*; пешком — *zu Fuß*"
+        set: { reveal: 8, focus: [4, 5, 6] }
+
+  - id: abends
+    chapter: scene
+    title: Вечером по телефону
+    beats:
+      - read: >-
+          Вечером звонит Марко: *Bist du schon zu Hause?* — «ты уже дома?».
+          Анна ещё в гостях: *bei Ewa* — «у Эвы». Дальше пара, которую путают
+          почти все: *zu Hause* — «дома», где вы находитесь, и *nach Hause* —
+          «домой», куда вы идёте или едете. Поэтому Марко спрашивает: *Wann
+          fährst du nach Hause?*
+        point: "*zu Hause* — дома (где?), *nach Hause* — домой (куда?)"
+        set: { view: dialogue, dialogue: abends, reveal: 4, focus: [0, 1, 2, 3] }
+      - read: >-
+          Марко зовёт Анну на новоселье — в ту самую квартиру на
+          Линденштрассе. *Wie komme ich zur Lindenstraße?* *zur* — это *zu
+          der*: *die Straße* женского рода. Марко отвечает простым настоящим
+          временем: *Du fährst mit der Linie 4 und steigst in Gohlis aus.*
+          Глагол *aussteigen* — «выходить» — отделяемый, его приставка уходит
+          в конец.
+        point: "*zur* = *zu der*: *zur Lindenstraße*, *zur Post*"
+        set: { reveal: 9, focus: [5, 6] }
+
+  - id: orte
+    chapter: words
+    title: В городе
+    beats:
+      - read: >-
+          Многие городские слова — сложные, и правило прошлой темы работает:
+          *das Rathaus* и *das Krankenhaus* среднего рода, как *das Haus*.
+          *der Bahnhof* — буквально «двор железной дороги», главный вокзал —
+          *der Hauptbahnhof*, на табло — *Hbf*. Осторожно с *die Bank*: банки
+          во множественном числе — *die Banken*, а *die Bänke* — скамейки.
+        point: "*der Hauptbahnhof* (*Hbf*) — главный вокзал; *die Banken* — банки, *die Bänke* — скамейки"
+        set: { view: words, words: orte }
+
+  - id: verkehr
+    chapter: words
+    title: Транспорт
+    beats:
+      - read: >-
+          В Лейпциге нет метро, зато много трамваев: *die Straßenbahn* —
+          дословно «уличная железная дорога». *die S-Bahn* — городская
+          электричка, *die U-Bahn* — метро, как в Берлине или Мюнхене. Номер
+          маршрута — *die Linie*: *die Linie 16*, по-русски «шестнадцатый».
+          *die Fahrkarte* — билет, а *das Gleis* на вокзале — путь, к которому
+          подходит поезд.
+        point: "*die Linie 16* — 16-й маршрут; *das Gleis* — путь на вокзале"
+        set: { view: words, words: verkehr }
+
+  - id: wegwoerter
+    chapter: words
+    title: Объясняем дорогу
+    beats:
+      - read: >-
+          Чтобы понять объяснение дороги, хватит нескольких слов: *geradeaus*,
+          *links*, *rechts*, *an der Ampel*. *links* и *rechts* значат и
+          «налево», и «слева» — контекст подскажет. Новое вопросительное слово
+          — *wohin?*, «куда?». И три глагола о транспорте: *einsteigen*,
+          *aussteigen*, *umsteigen* — «садиться», «выходить»,
+          «пересаживаться». Все три отделяемые: *Ich steige hier aus.*
+        point: "*einsteigen*, *aussteigen*, *umsteigen* — отделяемые: *Ich steige hier aus.*"
+        set: { view: words, words: weg }
+
+  - id: mit
+    chapter: grammar
+    title: На чём вы едете?
+    beats:
+      - read: >-
+          После *mit* всегда дательный падеж — тот же, что после *in* и *auf*
+          в прошлой теме. *der Bus* → *mit dem Bus*, *das Fahrrad* → *mit dem
+          Fahrrad*, *die Straßenbahn* → *mit der Straßenbahn*. Мужской и
+          средний род — *dem*, женский — *der*. Типичная ошибка — *mit die
+          Straßenbahn*: за предлогом легко забыть, что артикль меняется.
+        point: "*mit* + дательный: *mit dem Bus*, *mit dem Fahrrad*, *mit der Straßenbahn*"
+        set: { view: table, table: artikel, reveal: 3 }
+      - read: >-
+          Во множественном числе у дательного падежа артикль *den*, а к самому
+          слову добавляется *-n*: *die Freunde* → *mit den Freunden*. Если
+          слово уже кончается на *-n*, второе не нужно: *mit den
+          Straßenbahnen*. Слова на *-s* тоже остаются как есть: *mit den
+          Autos*, *mit den Taxis*. Эту форму пока достаточно узнавать на слух
+          и в тексте.
+        point: "Мн. ч.: *mit d+en Freunde+n* — артикль *den* и *-n* у слова"
+        set: { reveal: 4, focus: [3] }
+
+  - id: praep
+    chapter: grammar
+    title: Шесть предлогов с дательным
+    beats:
+      - read: >-
+          *mit* — не единственный такой предлог. Ещё пять ведут себя точно так
+          же: *zu*, *bei*, *von*, *aus*, *nach*. После них всегда дательный
+          падеж — что бы вы ни спрашивали: «где», «куда» или «откуда». Помните
+          *aus der Schweiz* из первой темы? Вот и объяснение: *aus* требует
+          дательного, и *die Schweiz* становится *der Schweiz*.
+        point: "*aus*, *bei*, *mit*, *nach*, *von*, *zu* — всегда с дательным"
+        set: { view: table, table: praep }
+      - read: >-
+          Как выбрать между *zu* и *nach*, если оба значат «куда»? *nach* —
+          для городов и стран без артикля: *nach Dresden*, *nach Polen*. *zu*
+          — для мест с артиклем и для людей: *zum Bahnhof*, *zu Ewa*. *nach
+          dem Bahnhof* — частая ошибка, так не говорят. А *nach Hause* —
+          «домой» — особый случай, его запомните целиком.
+        point: "*nach* — города и страны: *nach Dresden*; *zu* — места и люди: *zum Bahnhof*"
+        set: { focus: [1, 5] }
+
+  - id: kurz
+    chapter: grammar
+    title: zum, zur, beim, vom
+    beats:
+      - read: >-
+          Как *in dem* стало *im*, так и здесь предлог сливается с артиклем:
+          *zu dem* → *zum*, *zu der* → *zur*, *bei dem* → *beim*, *von dem* →
+          *vom*. В разговоре полные формы почти не звучат. Следите за родом:
+          *zum Bahnhof*, но *zur Post*. Перепутав *zum* и *zur*, вы ошибаетесь
+          не в предлоге, а в артикле.
+        point: "*zum* — для *der* и *das*, *zur* — для *die*: *zum Bahnhof*, *zur Post*"
+        set: { view: table, table: kurz }
+
+  - id: imperativ
+    chapter: grammar
+    title: Gehen Sie geradeaus!
+    beats:
+      - read: >-
+          Повелительное наклонение на «Вы» — самое простое в немецком.
+          Возьмите обычное предложение *Sie gehen geradeaus* — «вы идёте
+          прямо» — и поменяйте местами *Sie* и глагол. Форма глагола остаётся
+          прежней, такой же, как в инфинитиве. Сейчас на схеме *Sie* стоит на
+          первой позиции, а глагол — на второй. Прокрутите дальше и следите за
+          плитками.
+        point: "Императив на *Sie*: та же форма глагола, что в *Sie gehen*"
+        set:
+          view: sentence
+          rows:
+            - de: [Sie, geh+en, geradeaus., ""]
+              ru: Вы идёте прямо.
+      - read: >-
+          Глагол переехал в начало, а первая позиция опустела — как в вопросе
+          да/нет: *Gehen Sie geradeaus!* Просьбу от вопроса отличают интонация
+          и восклицательный знак. Чтобы звучало мягче, добавьте *bitte*:
+          *Gehen Sie bitte geradeaus.* А вот *Sie* выбросить нельзя, хотя
+          по-русски мы говорим просто «идите»: *Gehen geradeaus!* — ошибка.
+        point: "*Gehen Sie geradeaus!* — глагол первым, позиция 1 пуста, *Sie* обязательно"
+        set:
+          rows:
+            - de: ["", Geh+en, Sie geradeaus!, ""]
+              ru: Идите прямо!
+      - read: >-
+          С отделяемыми глаголами всё как в обычном предложении: глагол —
+          вперёд, приставка — в конец. *Steigen Sie bitte hier aus!* —
+          «выходите, пожалуйста, здесь!». Рамка из глагола и приставки на
+          месте, просто первая позиция пуста. Единственный неправильный глагол
+          здесь — *sein*: не *Sind Sie pünktlich!*, а *Seien Sie bitte
+          pünktlich!*
+        point: "*Steigen Sie hier aus!* — приставка в конце; *sein* → *Seien Sie …!*"
+        set:
+          rows:
+            - de: ["", Geh+en, Sie geradeaus!, ""]
+              ru: Идите прямо!
+            - de: ["", Steig+en, Sie bitte hier, aus!]
+              ru: Выходите, пожалуйста, здесь!
+
+  - id: hause
+    chapter: grammar
+    title: Дома и домой
+    beats:
+      - read: >-
+          В этих выражениях *Haus* значит не здание, а «свой дом». *zu Hause*
+          отвечает на вопрос *Wo?*: *Ich bin zu Hause.* *nach Hause* — на
+          вопрос *Wohin?*: *Ich gehe nach Hause.* А на *Woher?* — *von zu
+          Hause*. Это исключения: обычно *zu* отвечает на «куда», а *nach*
+          нужен для городов. Поэтому учите пары целиком.
+        point: "*Wo?* — *zu Hause*, *Wohin?* — *nach Hause*, *Woher?* — *von zu Hause*"
+        set: { view: table, table: hause }
+
+  - id: check
+    chapter: practice
+    title: Проверьте себя
+    beats:
+      - question: Как вежливо сказать «Выходите в Голисе!»?
+        read: >-
+          *Steigen Sie in Gohlis aus!* Глагол *steigen* встаёт в начало, *Sie*
+          — сразу за ним, а приставка *aus* остаётся в конце, как и в обычном
+          предложении. Частая ошибка — *Aussteigen Sie in Gohlis!*: в
+          повелительном наклонении приставка отрывается от глагола так же, как
+          в утверждении *Sie steigen in Gohlis aus*.
+        point: "*Steigen Sie in Gohlis aus!* — приставка остаётся в конце"
+        before:
+          view: sentence
+          rows:
+            - de: [Sie, steig+en, in Gohlis, aus.]
+              ru: Вы выходите в Голисе.
+        set:
+          rows:
+            - de: ["", Steig+en, Sie in Gohlis, aus!]
+              ru: Выходите в Голисе!
+      - question: Анна в гостях у подруги. Как сказать — *bei Ewa* или *zu Ewa*?
+        read: >-
+          Зависит от вопроса. Анна уже там — значит *bei*: *Ich bin bei Ewa* —
+          «я у Эвы». Утром она туда ехала — значит *zu*: *Ich fahre zu Ewa* —
+          «я еду к Эве». *Ich fahre bei Ewa* звучит для немца так же странно,
+          как для нас «я еду у Эвы». С врачом то же: *beim Arzt* — у врача,
+          *zum Arzt* — к врачу.
+        point: "*bei* — у кого (где?), *zu* — к кому (куда?): *beim Arzt*, *zum Arzt*"
+        set:
+          view: sentence
+          rows:
+            - de: [Ich, bin, bei Ewa., ""]
+              ru: Я у Эвы.
+            - de: [Ich, fahr+e, zu Ewa., ""]
+              ru: Я еду к Эве.
+      - question: Как сказать «Я еду в Дрезден на поезде»?
+        read: >-
+          *Ich fahre mit dem Zug nach Dresden.* *der Zug* после *mit*
+          становится *dem Zug*, а *Dresden* — город без артикля, поэтому
+          *nach*. Обратите внимание на порядок в середине: сначала «на чём»,
+          потом «куда». *Ich fahre nach Dresden mit dem Zug* немцы тоже
+          поймут, но звучит это непривычно — как будто «на поезде» добавили в
+          последний момент.
+        point: "*Ich fahre mit dem Zug nach Dresden.* — сначала «на чём», потом «куда»"
+        set:
+          view: sentence
+          rows:
+            - de: [Ich, fahr+e, mit dem Zug nach Dresden., ""]
+              ru: Я еду в Дрезден на поезде.
+
+  - id: hoeren
+    chapter: exam
+    title: "Аудирование: вокзал и разговоры"
+    beats:
+      - read: >-
+          Во второй части аудирования звучат объявления: на вокзале, в
+          аэропорту, в супермаркете. Каждое — только один раз! Поэтому сначала
+          прочитайте утверждение и решите, что именно слушать: здесь — номер
+          пути. Цифры, время, номера путей и маршрутов — главное в таких
+          объявлениях. Услышали число — сразу запишите его на полях.
+        point: "Часть 2 аудирования: текст звучит один раз — сначала прочитайте утверждение"
+        set: { view: task, task: durchsage }
+      - question: Поезд на Дрезден уходит с 3-го пути — *richtig* или *falsch*?
+        read: >-
+          *Falsch.* Объявление начинается словами *Achtung an Gleis 3* — так
+          обращаются к тем, кто ждёт на 3-м пути. Но дальше главное: *fährt
+          heute von Gleis 5*. Классическая ловушка: первое услышанное число —
+          не всегда ответ. Слово *heute* подсказывает, что сегодня всё не так,
+          как в расписании. А *Verspätung* — опоздание: поезд уйдёт на 10
+          минут позже.
+        point: "Первое услышанное число — не всегда ответ: слушайте до конца"
+        set: { solved: true }
+      - read: >-
+          В первой части аудирования — короткие разговоры, как у Анны с
+          прохожим, и звучат они дважды. Вопрос мог бы быть таким: *Wie kommt
+          Anna zum Bahnhof?* — *mit dem Bus*, *mit der Straßenbahn* или *zu
+          Fuß*? Коварство в том, что в разговоре звучат все три варианта.
+          Верный — последнее решение: *Dann gehe ich zu Fuß.*
+        point: "Часть 1 аудирования: звучат все варианты — ищите, чем закончился разговор"
+        set: { view: dialogue, dialogue: weg, focus: [4, 5, 6] }
+      - question: Где встречаются Лиза и Том — a, b или c?
+        read: >-
+          *Vor dem Kino* — ответ b. *Am Bahnhof* звучит первым, но Том сразу
+          отказывается: *Am Bahnhof ist es so voll* — «на вокзале так людно».
+          *Im Kino* — тоже ловушка: в кино они пойдут, но встречаются перед
+          ним. Одно маленькое слово *vor* или *im* меняет ответ, поэтому
+          слушайте предлоги. Хорошо, что в первой части разговор звучит
+          дважды: во второй раз проверьте свой вариант.
+        point: "*vor dem Kino* — перед кинотеатром, *im Kino* — в нём: слушайте предлоги"
+        before: { view: task, task: gespraech }
+        set: { solved: true }
+
+  - id: lesen
+    chapter: exam
+    title: "Чтение, часть 3: табличка"
+    beats:
+      - read: >-
+          В третьей части чтения — таблички и объявления на дверях. К каждому
+          — одно утверждение, *richtig* или *falsch*. На табличках немцы часто
+          просят инфинитивом в конце: *Bitte Eingang B benutzen* — то же, что
+          *Bitte benutzen Sie Eingang B*. Это не ошибка, а обычный стиль
+          объявлений. А *geschlossen* — «закрыто», запомните его вместе с
+          *geöffnet* — «открыто».
+        point: "На табличках: *Bitte Eingang B benutzen.* = *Bitte benutzen Sie Eingang B.*"
+        set: { view: task, task: hinweis }
+      - question: "*Sie haben eine Frage. Sie gehen zum Eingang B.* — *richtig* или *falsch*?"
+        read: >-
+          *Richtig.* В утверждении нет слова *Information*, зато есть *eine
+          Frage* — «вопрос». С вопросами идут в справочную, а она за входом B:
+          *Zur Information bitte Eingang B benutzen.* На экзамене утверждение
+          почти всегда пересказывает табличку другими словами. Не ищите
+          точного совпадения — ищите тот же смысл. И не отвлекайтесь на
+          первую строку: *Heute geschlossen!* касается кассы, а не справочной.
+        point: "Утверждение пересказывает табличку другими словами — ищите смысл"
+        set: { solved: true }
+
+exercises:
+  - type: choice
+    q: Ich fahre ___ Bus.
+    options: [mit dem, mit der, mit den]
+    answer: 0
+    why: "*der Bus* → *mit dem Bus*."
+  - type: choice
+    q: Anna fährt ___ Straßenbahn.
+    options: [mit dem, mit der, mit die]
+    answer: 1
+    why: "*die Straßenbahn* → *mit der Straßenbahn*. *mit die* — частая ошибка."
+  - type: gap
+    q: Wie komme ich ___ Bahnhof?
+    answer: [zum]
+    hint: zu + dem
+    why: "*der Bahnhof* → *zu dem* → *zum*."
+  - type: gap
+    q: Wie komme ich ___ Post?
+    answer: [zur]
+    hint: zu + der
+    why: "*die Post* — женский род: *zu der* → *zur*."
+  - type: choice
+    q: Wir fahren am Samstag ___ Dresden.
+    options: [nach, zu, in]
+    answer: 0
+    why: "Город без артикля, вопрос «куда?» — *nach*."
+  - type: choice
+    q: Marco geht morgen ___ Arzt.
+    options: [beim, zum, vom]
+    answer: 1
+    why: "Куда? — *zum Arzt*. Где? — *beim Arzt*."
+  - type: gap
+    q: Ich bin heute ___ Hause.
+    answer: [zu]
+    why: "Где? — *zu Hause*."
+  - type: gap
+    q: Um acht fahre ich ___ Hause.
+    answer: [nach]
+    why: "Куда? — *nach Hause*."
+  - type: choice
+    q: ___ Haltestelle sind es nur zwei Minuten.
+    options: [Von der, Vom, Von die]
+    answer: 0
+    why: "*die Haltestelle* → *von der*. *vom* — только для *der* и *das*."
+  - type: choice
+    q: Ewa kommt ___ Polen.
+    options: [aus, von, nach]
+    answer: 0
+    why: "Откуда родом — *aus*: *aus Polen*, *aus der Schweiz*."
+  - type: choice
+    q: Как вежливо сказать незнакомому человеку «Идите прямо!»?
+    options: [Gehen Sie geradeaus!, Sie gehen geradeaus!, Gehen geradeaus!]
+    answer: 0
+    why: "Глагол первым, сразу за ним *Sie*. Без *Sie* нельзя."
+  - type: gap
+    q: ___ Sie bitte pünktlich!
+    answer: [Seien]
+    hint: sein
+    why: "*sein* — единственный неправильный: *Seien Sie …!*"
+  - type: order
+    ru: Садитесь на 16-й!
+    de: Nehmen Sie die Linie 16!
+  - type: order
+    ru: Выходите, пожалуйста, здесь!
+    de: Steigen Sie bitte hier aus!
+    why: "Глагол первым, приставка *aus* — в конце."
+  - type: order
+    ru: Я еду в Дрезден на поезде.
+    de: Ich fahre mit dem Zug nach Dresden.
+    why: "Сначала «на чём» — *mit dem Zug*, потом «куда» — *nach Dresden*."

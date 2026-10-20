@@ -1,0 +1,574 @@
+id: arbeit
+order: 11
+title: Was sind Sie von Beruf?
+ru: Работа и профессии
+lede: >-
+  Анна в Польше работала врачом, Марко десять лет готовил в Риме. Теперь он
+  ищет в Лейпциге работу поваром и идёт на собеседование. Учимся называть профессии
+  мужчин и женщин, рассказывать о прошлом в Perfekt с *haben* и говорить
+  *war* и *hatte*.
+goals:
+  - Назвать профессию — свою и чужую, мужчины и женщины
+  - Рассказать, где и кем вы работали раньше
+  - Спросить, что человек делал, и понять ответ в Perfekt
+  - "Сказать «был» и «было»: *Ich war Koch*, *ich hatte viel Arbeit*"
+  - Понять письмо коллеги и рассказать о профессии на устном экзамене
+grammar:
+  - Профессии на -in
+  - Perfekt с haben
+  - "Partizip II: ge-…-t и ge-…-en"
+  - "Präteritum: war и hatte"
+exam: [sprechen-1, lesen-1, schreiben-1]
+
+dialogues:
+  pause:
+    title: In der Pause
+    ru: В перерыве
+    place: Sprachschule, Leipzig
+    people:
+      A: { name: Anna, voice: Anna }
+      M: { name: Marco, voice: Reed }
+    lines:
+      - M: Anna, was bist du eigentlich von Beruf?
+        ru: Анна, а кто ты, собственно, по профессии?
+      - A: Ich bin Ärztin. In Polen habe ich in einem Krankenhaus gearbeitet.
+        ru: Я врач. В Польше я работала в больнице.
+      - M: Ach so! Dann bist du ja wirklich „Frau Doktor“!
+        ru: Вот как! Значит, ты и правда «фрау доктор»!
+      - A: Genau. Aber ich hatte immer viel Stress. Und du? Du warst Koch, oder?
+        ru: Точно. Но у меня всегда было много стресса. А ты? Ты ведь был поваром?
+      - M: Ja, zehn Jahre. Ich habe in Rom Pizza und Pasta gekocht.
+        ru: Да, десять лет. Я готовил в Риме пиццу и пасту.
+      - A: Und hier? Hast du schon eine Stelle als Koch gefunden?
+        ru: А здесь? Ты уже нашёл работу поваром?
+      - M: "Noch nicht. Aber gestern habe ich eine Anzeige gelesen: Ein Restaurant sucht einen Koch!"
+        ru: "Пока нет. Но вчера я прочитал объявление: ресторан ищет повара!"
+      - A: Super! Hast du schon eine E-Mail geschrieben?
+        ru: Здорово! Ты уже написал письмо?
+      - M: Ja, gestern Abend. Und morgen habe ich ein Vorstellungsgespräch!
+        ru: Да, вчера вечером. А завтра у меня собеседование!
+      - A: Toll! Viel Glück!
+        ru: Отлично! Удачи!
+  gespraech:
+    title: Das Vorstellungsgespräch
+    ru: Собеседование
+    place: Restaurant „Lindenhof“, Leipzig
+    people:
+      S: { name: Herr Wagner, voice: Eddy }
+      M: { name: Marco, voice: Reed }
+    lines:
+      - S: Guten Tag, Herr Rossi! Bitte nehmen Sie Platz.
+        ru: Добрый день, господин Росси! Присаживайтесь, пожалуйста.
+      - M: Guten Tag, Herr Wagner. Danke.
+        ru: Добрый день, господин Вагнер. Спасибо.
+      - S: Sie sind Koch. Wo haben Sie gearbeitet?
+        ru: Вы повар. Где вы работали?
+      - M: In Rom, im Restaurant „Da Mario“. Ich habe dort zehn Jahre gearbeitet.
+        ru: В Риме, в ресторане «Да Марио». Я проработал там десять лет.
+      - S: Und was haben Sie gekocht?
+        ru: А что вы готовили?
+      - M: Pasta, Fisch und Fleisch. Und ich habe auch Desserts gemacht.
+        ru: Пасту, рыбу и мясо. И десерты тоже делал.
+      - S: Haben Sie schon in Deutschland gearbeitet?
+        ru: Вы уже работали в Германии?
+      - M: Ja, hier in Leipzig, als Kellner in einer Pizzeria. Und mein Deutschkurs ist am Vormittag.
+        ru: Да, здесь, в Лейпциге, официантом в пиццерии. А курс немецкого у меня до обеда.
+      - S: Kein Problem, die Arbeit ist am Abend. Können Sie am Samstag einen Probetag machen?
+        ru: Не страшно, работа вечером. Можете в субботу выйти на пробный день?
+      - M: Ja, gern! Vielen Dank!
+        ru: Да, с удовольствием! Большое спасибо!
+
+words:
+  berufe:
+    title: Berufe
+    ru: Профессии — он и она
+    items:
+      - { de: der Lehrer, ru: учитель, pl: Lehrer }
+      - { de: die Lehrerin, ru: учительница, pl: Lehrerinnen }
+      - { de: der Arzt, ru: врач, pl: Ärzte }
+      - { de: die Ärztin, ru: "врач (женщина)", pl: Ärztinnen }
+      - { de: der Koch, ru: повар, pl: Köche }
+      - { de: die Köchin, ru: "повар (женщина)", pl: Köchinnen }
+      - { de: der Verkäufer, ru: продавец, pl: Verkäufer }
+      - { de: die Verkäuferin, ru: продавщица, pl: Verkäuferinnen }
+      - { de: der Kellner, ru: официант, pl: Kellner }
+      - { de: die Kellnerin, ru: официантка, pl: Kellnerinnen }
+  mehr:
+    title: Noch mehr Berufe
+    ru: Ещё профессии
+    items:
+      - { de: der Ingenieur, ru: инженер, pl: Ingenieure, note: die Ingenieurin }
+      - { de: der Friseur, ru: парикмахер, pl: Friseure, note: die Friseurin }
+      - { de: der Informatiker, ru: "программист, айтишник", pl: Informatiker, note: die Informatikerin }
+      - { de: der Mechaniker, ru: механик, pl: Mechaniker, note: die Mechanikerin }
+      - { de: der Student, ru: студент, pl: Studenten, note: die Studentin }
+      - { de: der Krankenpfleger, ru: медбрат, pl: Krankenpfleger, note: "die Krankenpflegerin — медсестра" }
+      - { de: der Hausmann, ru: домохозяин, pl: Hausmänner, note: "die Hausfrau, die Hausfrauen" }
+  arbeit:
+    title: Rund um die Arbeit
+    ru: Работа
+    items:
+      - { de: die Arbeit, ru: работа, pl: Arbeiten, note: Ich habe viel Arbeit. }
+      - { de: der Beruf, ru: профессия, pl: Berufe, note: Was sind Sie von Beruf? }
+      - { de: die Stelle, ru: "место работы, вакансия", pl: Stellen }
+      - { de: die Firma, ru: фирма, pl: Firmen }
+      - { de: das Krankenhaus, ru: больница, pl: Krankenhäuser }
+      - { de: der Kollege, ru: коллега, pl: Kollegen, note: die Kollegin }
+      - { de: die Anzeige, ru: объявление, pl: Anzeigen }
+      - { de: das Vorstellungsgespräch, ru: собеседование, pl: Vorstellungsgespräche }
+      - { de: arbeiten als, ru: работать кем-то, note: Ich arbeite als Koch. }
+      - { de: suchen, ru: искать, note: Wir suchen einen Koch. }
+  zeit:
+    title: Früher und heute
+    ru: Слова времени
+    items:
+      - { de: gestern, ru: вчера }
+      - { de: gestern Abend, ru: вчера вечером }
+      - { de: früher, ru: раньше }
+      - { de: letzte Woche, ru: на прошлой неделе, note: готовое выражение }
+      - { de: letztes Jahr, ru: в прошлом году, note: готовое выражение }
+      - { de: schon, ru: уже, note: Hast du schon …? }
+      - { de: noch nicht, ru: ещё нет }
+      - { de: jetzt, ru: сейчас }
+
+tables:
+  beruf:
+    title: "Beruf: er und sie"
+    ru: Профессии мужчин и женщин
+    head: [Mann, Frau, Frauen]
+    rows:
+      - [der Lehrer, die Lehrer+in, die Lehrer+innen]
+      - [der Verkäufer, die Verkäufer+in, die Verkäufer+innen]
+      - [der Kellner, die Kellner+in, die Kellner+innen]
+      - [der Student, die Student+in, die Student+innen]
+      - [der Arzt, die Ärzt+in, die Ärzt+innen]
+      - [der Koch, die Köch+in, die Köch+innen]
+      - [der Hausmann, "die Haus*frau*", "die Haus*frauen*"]
+    note: Женская форма — мужская плюс *-in*. Во множественном — *-innen* с двумя *n*.
+  perfekt:
+    title: Perfekt mit haben
+    ru: haben + Partizip II
+    head: [Infinitiv, Partizip II, Beispiel]
+    rows:
+      - [machen, "*ge*mach+t", "Was *hast* du *gemacht*?"]
+      - [kochen, "*ge*koch+t", "Er *hat* Pasta *gekocht*."]
+      - [lernen, "*ge*lern+t", "Wir *haben* Deutsch *gelernt*."]
+      - [arbeiten, "*ge*arbeit+et", "Ich *habe* in Rom *gearbeitet*."]
+      - [lesen, "*ge*les+en", "Ich *habe* eine Anzeige *gelesen*."]
+      - [schreiben, "*ge*schrieb+en", "*Hast* du eine E-Mail *geschrieben*?"]
+      - [finden, "*ge*fund+en", "Er *hat* eine Stelle *gefunden*."]
+      - [sprechen, "*ge*sproch+en", "Wir *haben* Deutsch *gesprochen*."]
+    note: Слабые глаголы — *ge-…-t*, сильные — *ge-…-en*. Сильные учите наизусть.
+  praeteritum:
+    title: "Präteritum: war und hatte"
+    ru: Прошедшее время sein и haben
+    head: [Person, sein, haben]
+    rows:
+      - [ich, war, hatt+e]
+      - [du, war+st, hatt+est]
+      - [er / sie / es, war, hatt+e]
+      - [wir, war+en, hatt+en]
+      - [ihr, war+t, hatt+et]
+      - [sie / Sie, war+en, hatt+en]
+    note: У *ich* и *er / sie / es* — одна и та же форма.
+
+tasks:
+  mail:
+    kind: message
+    part: lesen-1
+    title: "Lesen, Teil 1"
+    situation: Lesen Sie die E-Mail. Ist die Aussage richtig oder falsch?
+    from: Julia Becker
+    to: Marco Rossi
+    subject: Dein Probetag
+    text: |
+      Hallo Marco,
+      der Probetag am Samstag war super! Die Gäste haben alles gegessen. Und Herr Wagner sagt: Die Stelle ist für dich!
+      Du arbeitest von Dienstag bis Samstag, immer von 17 bis 23 Uhr. Am Sonntag und am Montag hast du frei.
+      Komm bitte am Dienstag schon um 16 Uhr. Dann lernst du die Kollegen kennen.
+      Bis Dienstag!
+      Julia
+    statement: Marco muss am Dienstag um 17 Uhr im Restaurant sein.
+    answer: false
+  vorstellen:
+    kind: keywords
+    part: sprechen-1
+    title: "Sprechen, Teil 1"
+    situation: Stellen Sie sich vor.
+    words: [Name?, Alter?, Land?, Wohnort?, Sprachen?, "*Beruf?*", Hobby?]
+    sample:
+      - Mein Name ist Marco Rossi.
+      - Ich bin 28 Jahre alt.
+      - Ich komme aus Italien und wohne jetzt in Leipzig.
+      - Ich spreche Italienisch, Englisch und ein bisschen Deutsch.
+      - Ich bin Koch von Beruf.
+      - In Rom habe ich zehn Jahre in einem Restaurant gearbeitet.
+      - Jetzt arbeite ich im Restaurant „Lindenhof“.
+      - Mein Hobby ist Fußball.
+
+steps:
+  - id: pause
+    chapter: scene
+    title: В перерыве
+    beats:
+      - read: >-
+          Перерыв на курсе. Марко наконец спрашивает Анну о работе: *Was bist
+          du von Beruf?* — «кто ты по профессии?». Ответ его удивляет: *Ich bin
+          Ärztin*. Обратите внимание: артикля нет, как и в русском «я врач».
+          Английское I am a doctor здесь подводит — *Ich bin eine Ärztin*
+          звучит неестественно. А окончание *-in* показывает, что врач —
+          женщина.
+        point: "Профессия — без артикля: *Ich bin Ärztin.* *-in* — женская форма"
+        set: { view: dialogue, dialogue: pause, reveal: 2, focus: [0, 1] }
+      - read: >-
+          Дальше Анна и Марко говорят о прошлом. *In Polen habe ich in einem
+          Krankenhaus gearbeitet* — «в Польше я работала в больнице». Это
+          Perfekt: *habe* плюс особая форма глагола в конце, *gearbeitet*. А
+          «был» и «было» звучат короче: *Du warst Koch* — «ты был поваром»,
+          *Ich hatte immer viel Stress* — «у меня всегда было много стресса».
+        point: "О прошлом: *ich habe … gearbeitet*, *ich war*, *ich hatte*"
+        set: { reveal: 5, focus: [1, 3, 4] }
+      - read: >-
+          Марко ищет работу поваром, по-немецки *eine Stelle* — «место». Анна
+          спрашивает: *Hast du schon eine Stelle als Koch gefunden?* — «ты уже нашёл?».
+          Марко отвечает *Noch nicht* — «пока нет», но вчера он прочитал
+          объявление и написал письмо: *gelesen*, *geschrieben*. Эти формы
+          кончаются на *-en*, а не на *-t*, как *gearbeitet*. Почему — разберём
+          в грамматике.
+        point: "*schon* — «уже», *noch nicht* — «ещё нет»; *gefunden*, *gelesen*, *geschrieben*"
+        set: { reveal: 10, focus: [5, 6, 7, 8] }
+
+  - id: gespraech
+    chapter: scene
+    title: Собеседование
+    beats:
+      - read: >-
+          На следующий день Марко в ресторане у господина Вагнера. Вопросы на
+          собеседовании почти всегда о прошлом: *Wo haben Sie gearbeitet?* —
+          «где вы работали?». W-слово первым, *haben* вторым, причастие
+          *gearbeitet* — в конце. Марко отвечает так же: *Ich habe dort zehn
+          Jahre gearbeitet.* Всё, что между *habe* и *gearbeitet*, — середина
+          предложения.
+        point: "*Wo haben Sie gearbeitet?* — *haben* второй, причастие в конце"
+        set: { view: dialogue, dialogue: gespraech, reveal: 4, focus: [2, 3] }
+      - read: >-
+          *Was haben Sie gekocht?* — *Ich habe auch Desserts gemacht.* Знакомые
+          глаголы *kochen* и *machen* в Perfekt получают *ge-* в начале и *-t*
+          в конце. А *Haben Sie schon in Deutschland gearbeitet?* — вопрос
+          да/нет: *haben* стоит первым, причастие всё равно в конце. Разговор
+          кончается хорошо: господин Вагнер предлагает *Probetag* — пробный
+          день, обычное дело в ресторанах.
+        point: "*kochen → gekocht*, *machen → gemacht*: *ge-* + основа + *-t*"
+        set: { reveal: 10, focus: [4, 5, 6, 8] }
+
+  - id: berufe
+    chapter: words
+    title: Профессии
+    beats:
+      - read: >-
+          Почти у каждой профессии две формы. Мужская — основная, женская
+          получается из неё с окончанием *-in*: *der Lehrer — die Lehrerin*.
+          Женская форма всегда с артиклем *die*. Иногда в корне появляется
+          умлаут: *der Arzt — die Ärztin*, *der Koch — die Köchin*. Во
+          множественном у женской формы *-innen* с двумя *n*: *die
+          Lehrerinnen*.
+        point: "*der Lehrer — die Lehrerin — die Lehrerinnen*"
+        set: { view: words, words: berufe }
+      - read: >-
+          Ещё несколько профессий. Женская форма — в подсказке под словом,
+          правило то же: *Ingenieur — Ingenieurin*, *Student — Studentin*.
+          Особый случай — слова на *-mann*: у них вместо *-in* появляется
+          *-frau*. *Der Hausmann* — «домохозяин», *die Hausfrau* —
+          «домохозяйка». И это вполне нормальный ответ на экзаменационный
+          вопрос *Beruf?*. Следите и за множественным числом: *die Studenten*
+          с *-en*, а *die Informatiker* — без изменений.
+        point: "*-mann → -frau*: *der Hausmann — die Hausfrau*"
+        set: { view: words, words: mehr }
+      - read: >-
+          Где работаете — *in einer Firma*, *im Krankenhaus*. Кем работаете — с
+          *als* и без артикля: *Ich arbeite als Koch*. Не путайте *der Beruf*
+          — профессию и *die Stelle* — конкретное место работы. *Ein
+          Restaurant sucht einen Koch* — так начинаются объявления о
+          вакансиях, *Anzeigen*. А *Vorstellungsgespräch* — длинное, но очень
+          нужное слово: «собеседование».
+        point: "*Ich arbeite als Koch.* — с *als* и без артикля"
+        set: { view: words, words: arbeit }
+      - read: >-
+          Чтобы рассказывать о прошлом, нужны слова времени. *Gestern* —
+          вчера, *früher* — раньше, в прошлой жизни. *Letzte Woche* и *letztes
+          Jahr* выучите как готовые выражения: окончания прилагательных
+          разберём позже. Пару *schon* — «уже» и *noch nicht* — «ещё нет»
+          часто слышат в вопросах в Perfekt: *Hast du schon …?* — *Nein, noch
+          nicht.*
+        point: "*Hast du schon …?* — *Nein, noch nicht.*"
+        set: { view: words, words: zeit }
+
+  - id: maennlich-weiblich
+    chapter: grammar
+    title: Он и она
+    beats:
+      - read: >-
+          Правило простое: к мужской форме добавляем *-in*, во множественном —
+          *-innen*. Мужская форма во множественном часто не меняется: *die
+          Lehrer*, *die Verkäufer*. Умлаут в женской форме запоминайте вместе
+          со словом: *Ärztin*, *Köchin*. Если в группе и мужчины, и женщины,
+          в объявлениях и речах обычно называют обе формы: *Lehrerinnen und
+          Lehrer*.
+        point: "Женщина: *+in*, женщины: *+innen*; умлаут — *Ärztin*, *Köchin*"
+        set: { view: table, table: beruf }
+
+  - id: perfekt
+    chapter: grammar
+    title: "Perfekt: что я делал"
+    beats:
+      - read: >-
+          В разговорном немецком о прошлом почти всегда говорят в Perfekt. Он
+          состоит из двух частей — как предложение с *müssen* из прошлой темы.
+          Возьмём простое *Ich arbeite in Rom* — «я работаю в Риме». Глагол
+          стоит на втором месте, конец предложения пуст. Посмотрите, что
+          произойдёт, когда мы перенесём это предложение в прошлое.
+        point: Perfekt — главное прошедшее время в разговоре
+        set:
+          view: sentence
+          rows:
+            - de: [Ich, arbeit+e, in Rom., ""]
+              ru: Я работаю в Риме.
+      - read: >-
+          На второе место встаёт *habe* — обычная форма *haben*. А смысловой
+          глагол уходит в конец и превращается в причастие, Partizip II:
+          *gearbeitet*. Получается та же рамка, что с *muss … bleiben*.
+          По-русски всё сказано одним словом «работал», а по-немецки работа
+          разделена: лицо показывает *habe*, а смысл — *gearbeitet*.
+        point: "*Ich habe in Rom gearbeitet.* — *haben* второй, причастие в конце"
+        set:
+          rows:
+            - de: [Ich, hab+e, in Rom, "*ge*arbeit+et."]
+              ru: Я работал в Риме.
+      - read: >-
+          Рамка держится при любом порядке слов. Поставим *in Rom* на первое
+          место: *habe* остаётся вторым, *ich* уходит за него, а причастие —
+          по-прежнему в конце. В вопросе да/нет первым встаёт *hast*: *Hast du
+          schon eine Stelle gefunden?* Частая ошибка — поставить причастие
+          сразу за *haben*: *Ich habe gearbeitet in Rom*. Так нельзя.
+        point: "Причастие всегда в конце: *In Rom habe ich gearbeitet.*"
+        set:
+          rows:
+            - de: [In Rom, hab+e, ich, "*ge*arbeit+et."]
+              ru: В Риме я работал.
+            - de: ["", Hast, du schon eine Stelle, "*ge*fund+en?"]
+              ru: Ты уже нашёл работу?
+      - read: >-
+          Как получить причастие? У большинства глаголов — по формуле *ge-* +
+          основа + *-t*: *machen → gemacht*, *kochen → gekocht*, *lernen →
+          gelernt*. Если основа кончается на *-t* или *-d*, перед окончанием
+          появляется *e*: *arbeiten → gearbeitet*. Иначе не выговорить. Такие
+          глаголы называют слабыми, и их большинство. По той же формуле:
+          *wohnen → gewohnt*, *spielen → gespielt*, *kaufen → gekauft*.
+        point: "Слабые: *ge-* + основа + *-t*: *gemacht*; после *-t* — *-et*: *gearbeitet*"
+        set: { view: table, table: perfekt, reveal: 4 }
+      - read: >-
+          Вторая группа — сильные глаголы. У них причастие кончается на *-en*:
+          *lesen → gelesen*, *schreiben → geschrieben*. Часто меняется и
+          гласная в корне: *finden → gefunden*, *sprechen → gesprochen*.
+          Правила здесь нет, поэтому сильные глаголы учат сразу в трёх формах:
+          *sprechen — er spricht — gesprochen*. Их немного, и почти все — очень
+          частые.
+        point: "Сильные: *ge-* + основа + *-en*, гласная может меняться: *gefunden*"
+        set: { reveal: 8, focus: [4, 5, 6, 7] }
+
+  - id: war-hatte
+    chapter: grammar
+    title: "*war* и *hatte*"
+    beats:
+      - read: >-
+          Для *sein* и *haben* о прошлом говорят иначе — короткой формой,
+          Präteritum. *Ich war Koch* — «я был поваром», *Ich hatte viel Stress*
+          — «у меня было много стресса». Формы *ich* и *er* совпадают: *ich
+          war*, *er war*, *ich hatte*, *sie hatte*. Остальные окончания вам
+          знакомы: *du warst*, *wir waren*, *ihr hattet*.
+        point: "*ich war, du warst, er war* · *ich hatte, du hattest, er hatte*"
+        set: { view: table, table: praeteritum }
+      - read: >-
+          Сравните два предложения на схеме. В Perfekt две части и рамка:
+          *habe … gearbeitet*. У *war* и *hatte* рамки нет — одно слово на
+          втором месте, конец пуст. Perfekt от *sein* и *haben* тоже
+          существует, но в разговоре звучит тяжеловесно. Поэтому правило
+          простое: *war* и *hatte* — для «был» и «было», Perfekt — для
+          остальных глаголов.
+        point: "«Был», «было» — *war*, *hatte*; остальные глаголы — Perfekt"
+        set:
+          view: sentence
+          rows:
+            - de: [Ich, war, Koch in Rom., ""]
+              ru: Я был поваром в Риме.
+            - de: [Ich, hab+e, in Rom, "*ge*arbeit+et."]
+              ru: Я работал в Риме.
+
+  - id: check
+    chapter: practice
+    title: Проверьте себя
+    beats:
+      - question: Марко — *Koch*. Как сказать о женщине «она повар»?
+        read: >-
+          *Sie ist Köchin.* Артикля нет — это профессия, как и в мужской форме
+          *Er ist Koch*. К основе добавляется *-in*, а в корне появляется
+          умлаут: *o* → *ö*. Так же *Arzt* → *Ärztin*. Если сказать *Kochin*,
+          вас поймут, но это ошибка, поэтому женскую форму учите вместе с
+          мужской.
+        point: "*Koch → Köchin*, *Arzt → Ärztin* — с умлаутом"
+        set: { view: table, table: beruf, focus: [5] }
+      - question: Как спросить друга «Что ты делал вчера?» и ответить «Я учил немецкий»?
+        read: >-
+          *Was hast du gestern gemacht?* W-слово первым, *hast* — вторым,
+          причастие *gemacht* — в конце, а *du gestern* — в середине. Русское
+          «делал» распадается на две части: *hast* показывает лицо, *gemacht*
+          — смысл. Ответ строится так же: *Ich habe Deutsch gelernt.* Оба
+          глагола слабые: *ge-* + основа + *-t*. А *gestern* можно поставить и
+          первым: *Gestern habe ich Deutsch gelernt.*
+        point: "*Was hast du gestern gemacht?* — *Ich habe Deutsch gelernt.*"
+        set:
+          view: sentence
+          rows:
+            - de: [Was, hast, du gestern, "*ge*mach+t?"]
+              ru: Что ты делал вчера?
+            - de: [Ich, hab+e, Deutsch, "*ge*lern+t."]
+              ru: Я учил немецкий.
+      - question: Как сказать «Вчера у меня не было времени»?
+        read: >-
+          *Gestern hatte ich keine Zeit.* Для «было» берём *hatte* — без рамки
+          и без причастия. *Gestern* на первом месте, поэтому *ich* уходит за
+          глагол. А «не было времени» — это *keine Zeit*: перед
+          существительным отрицание — *kein*, как в четвёртой теме. По-русски
+          «у меня не было», по-немецки — «я не имел»: *ich hatte keine*.
+        point: "*Gestern hatte ich keine Zeit.* — *hatte* + *kein*"
+        set:
+          view: sentence
+          rows:
+            - de: [Gestern, hatt+e, ich keine Zeit., ""]
+              ru: Вчера у меня не было времени.
+
+  - id: lesen
+    chapter: exam
+    title: "Чтение: письмо от коллеги"
+    beats:
+      - read: >-
+          В первой части чтения — два коротких письма или записки, к ним пять
+          утверждений: *richtig* или *falsch*. Начинайте с утверждения, а не с
+          текста. Здесь оно о дне и времени, значит, ищите в письме дни недели
+          и числа. Марко получил письмо от Юлии, официантки из ресторана
+          «Линденхоф», после пробного дня.
+        point: "Чтение, часть 1: сначала утверждение, потом нужное место в тексте"
+        set: { view: task, task: mail }
+      - question: Утверждение верное или нет?
+        read: >-
+          *Falsch.* Число 17 в письме есть, но это начало обычной смены:
+          *immer von 17 bis 23 Uhr*. Во вторник Юлия просит прийти раньше:
+          *Komm bitte am Dienstag schon um 16 Uhr.* Слово *schon* — «уже»,
+          здесь «пораньше» — и есть ключ. Составители любят такие ловушки: в
+          тексте те же числа, но в другой связи.
+        point: "Ловушка: число из текста, но в другой связи"
+        set: { solved: true }
+
+  - id: sprechen
+    chapter: exam
+    title: "Устный экзамен: профессия"
+    beats:
+      - read: >-
+          Помните лист с ключевыми словами из первой темы? Пункт *Beruf?*
+          теперь можно раскрыть подробнее. Женщины называют женскую форму:
+          *Ich bin Lehrerin von Beruf*. Если вы сейчас не работаете, это тоже
+          ответ: *Ich bin Studentin*, *Ich bin Hausmann*. Та же форма нужна и в
+          анкете — в первой части письменного экзамена поле *Beruf*
+          встречается часто.
+        point: "*Ich bin … von Beruf.* Женщины — форма на *-in*"
+        set: { view: task, task: vorstellen, reveal: 5 }
+      - read: >-
+          А дальше — одно-два предложения о прошлом, и рассказ звучит живее:
+          *In Rom habe ich zehn Jahre in einem Restaurant gearbeitet.* Потом —
+          о настоящем: *Jetzt arbeite ich im Restaurant „Lindenhof“.* Сложные
+          конструкции не нужны: одно предложение в Perfekt уже показывает, что
+          вы умеете говорить о прошлом. Подготовьте такое предложение о себе
+          заранее.
+        point: "Добавьте прошлое: *Ich habe … gearbeitet.* *Früher war ich …*"
+        set: { reveal: 8 }
+
+exercises:
+  - type: choice
+    q: Anna ist ___ von Beruf.
+    options: [Arzt, Ärztin, eine Ärztin]
+    answer: 1
+    why: "Женщина — форма на *-in*; профессия — без артикля."
+  - type: gap
+    q: Marco ist Koch, und Maria ist auch ___.
+    answer: [Köchin]
+    hint: Koch
+    ru: Марко повар, и Мария тоже.
+    why: "*Koch → Köchin*: окончание *-in* и умлаут."
+  - type: choice
+    q: Julia und Paula sind ___.
+    options: [Kellnerin, Kellnerinnen, Kellnerinen]
+    answer: 1
+    why: "Женщины во множественном числе — *-innen* с двумя *n*."
+  - type: choice
+    q: Was ___ Sie von Beruf?
+    options: [sind, haben, arbeiten]
+    answer: 0
+    why: "О профессии спрашивают с *sein*: *Was sind Sie von Beruf?*"
+  - type: gap
+    q: Ich habe zehn Jahre in Rom ___.
+    answer: [gearbeitet]
+    hint: arbeiten
+    why: "Основа на *-t*, поэтому перед окончанием *e*: *gearbeit+et*."
+  - type: gap
+    q: Was hast du gestern ___?
+    answer: [gemacht]
+    hint: machen
+  - type: gap
+    q: Wir ___ im Kurs viel gelernt.
+    answer: [haben]
+    hint: haben
+    ru: Мы много выучили на курсе.
+  - type: gap
+    q: Gestern habe ich eine Anzeige ___.
+    answer: [gelesen]
+    hint: lesen
+    why: "*lesen* — сильный глагол: *ge-…-en*."
+  - type: gap
+    q: ___ du schon eine E-Mail ___?
+    answer: [Hast, geschrieben]
+    hint: schreiben
+    why: "Вопрос да/нет: *hast* первым, причастие *geschrieben* — в конце."
+  - type: choice
+    q: Er hat eine Stelle ___.
+    options: [gefindet, gefunden, findet]
+    answer: 1
+    why: "*finden → gefunden*: окончание *-en* и другая гласная."
+  - type: order
+    ru: В Риме я работал десять лет.
+    de: In Rom habe ich zehn Jahre gearbeitet.
+    also:
+      - Ich habe in Rom zehn Jahre gearbeitet.
+      - Ich habe zehn Jahre in Rom gearbeitet.
+      - Zehn Jahre habe ich in Rom gearbeitet.
+    why: "*habe* — на втором месте, причастие — всегда в конце."
+  - type: gap
+    q: Früher ___ ich Koch in Rom.
+    answer: [war]
+    hint: sein
+  - type: gap
+    q: Gestern ___ wir keine Zeit.
+    answer: [hatten]
+    hint: haben
+    why: "*wir hatt+en*: у *wir* окончание *-en*, как в настоящем времени."
+  - type: choice
+    q: ___ du gestern im Kurs?
+    options: [Warst, Hattest, Bist]
+    answer: 0
+    why: "«Ты был?» — *Warst du …?* Со словом *gestern* нужно прошедшее время."
+  - type: order
+    ru: Что ты делал вчера?
+    de: Was hast du gestern gemacht?
+  - type: order
+    ru: Вчера у меня было много работы.
+    de: Gestern hatte ich viel Arbeit.
+    also: [Ich hatte gestern viel Arbeit.]

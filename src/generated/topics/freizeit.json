@@ -1,0 +1,2256 @@
+{
+ "id": "freizeit",
+ "level": "a1",
+ "order": 7,
+ "title": "Hast du am Samstag Zeit?",
+ "ru": "Досуг и встречи",
+ "lede": "Выходные в Лейпциге: Анна зовёт Марко поплавать, а её друг Йонас — на барбекю. Учимся говорить, что мы умеем и хотим делать, что любим больше всего, и договариваться о встрече — соглашаться и вежливо отказываться. Главное правило темы: после модального глагола инфинитив уходит в конец.",
+ "goals": [
+  "Рассказать, что вы умеете и хотите делать в свободное время",
+  "Сказать, что вы любите, что любите больше и что больше всего",
+  "Предложить встречу, согласиться или вежливо отказаться и назвать другой день",
+  "Написать короткий ответ на приглашение, как во второй части письменного экзамена"
+ ],
+ "grammar": [
+  "Модальные глаголы können и wollen",
+  "Инфинитив в конце",
+  "gern, lieber, am liebsten",
+  "Предложить, согласиться, отказаться"
+ ],
+ "exam": [
+  "schreiben-2",
+  "sprechen-2",
+  "lesen-1"
+ ],
+ "chapters": [
+  {
+   "id": "scene",
+   "title": "Ситуация"
+  },
+  {
+   "id": "words",
+   "title": "Слова"
+  },
+  {
+   "id": "grammar",
+   "title": "Грамматика"
+  },
+  {
+   "id": "practice",
+   "title": "Проверка"
+  },
+  {
+   "id": "exam",
+   "title": "На экзамене"
+  }
+ ],
+ "dialogues": {
+  "wochenende": {
+   "title": "Was machst du am Wochenende?",
+   "ru": "Что ты делаешь в выходные?",
+   "place": "Sprachschule, Leipzig",
+   "people": {
+    "A": {
+     "name": "Anna",
+     "voice": "Anna"
+    },
+    "M": {
+     "name": "Marco",
+     "voice": "Reed"
+    }
+   },
+   "lines": [
+    {
+     "who": "A",
+     "de": "Marco, was machst du am Wochenende?",
+     "ru": "Марко, что ты делаешь в выходные?",
+     "audio": "audio/d573f86ff769.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Am Samstag arbeite ich. Aber am Sonntag habe ich Zeit.",
+     "ru": "В субботу я работаю. Но в воскресенье я свободен.",
+     "audio": "audio/8cf7367236ff.m4a"
+    },
+    {
+     "who": "A",
+     "de": "Ich will am Sonntag schwimmen. Kommst du mit?",
+     "ru": "Я хочу в воскресенье поплавать. Пойдёшь со мной?",
+     "audio": "audio/23e5e75f2679.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Schwimmen? Hm … ich kann nicht gut schwimmen.",
+     "ru": "Плавать? Хм… я плохо плаваю.",
+     "audio": "audio/743e19f9a0cd.m4a"
+    },
+    {
+     "who": "A",
+     "de": "Und Tennis? Kannst du Tennis spielen?",
+     "ru": "А теннис? Ты умеешь играть в теннис?",
+     "audio": "audio/02143e67f760.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Ja! Tennis spiele ich sehr gern.",
+     "ru": "Да! В теннис я играю с большим удовольствием.",
+     "audio": "audio/a9dc854a645c.m4a"
+    },
+    {
+     "who": "A",
+     "de": "Super! Wollen wir um zehn Uhr spielen?",
+     "ru": "Супер! Давай сыграем в десять?",
+     "audio": "audio/d5a45fc68071.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Um zehn? Da schlafe ich noch! Lieber um zwölf.",
+     "ru": "В десять? Я тогда ещё сплю! Лучше в двенадцать.",
+     "audio": "audio/31af8b32293e.m4a"
+    },
+    {
+     "who": "A",
+     "de": "Gut, um zwölf. Bis Sonntag!",
+     "ru": "Хорошо, в двенадцать. До воскресенья!",
+     "audio": "audio/05f3184ac9e5.m4a"
+    }
+   ]
+  },
+  "telefon": {
+   "title": "Am Telefon",
+   "ru": "По телефону",
+   "people": {
+    "J": {
+     "name": "Jonas",
+     "voice": "Eddy"
+    },
+    "A": {
+     "name": "Anna",
+     "voice": "Anna"
+    }
+   },
+   "lines": [
+    {
+     "who": "J",
+     "de": "Hallo Anna, hier ist Jonas. Hast du am Samstag Zeit?",
+     "ru": "Привет, Анна, это Йонас. Ты свободна в субботу?",
+     "audio": "audio/75a1e9180f75.m4a"
+    },
+    {
+     "who": "A",
+     "de": "Hallo Jonas! Warum?",
+     "ru": "Привет, Йонас! А что?",
+     "audio": "audio/8390d4093a5e.m4a"
+    },
+    {
+     "who": "J",
+     "de": "Wir wollen am Samstag grillen. Kommst du mit?",
+     "ru": "Мы хотим в субботу устроить барбекю. Пойдёшь с нами?",
+     "audio": "audio/f96425c747e7.m4a"
+    },
+    {
+     "who": "A",
+     "de": "Am Samstag kann ich leider nicht. Mein Bruder besucht mich.",
+     "ru": "В субботу я, к сожалению, не могу. Ко мне приезжает брат.",
+     "audio": "audio/881caf6d656d.m4a"
+    },
+    {
+     "who": "J",
+     "de": "Oh, schade!",
+     "ru": "Ой, жаль!",
+     "audio": "audio/7e4d25439ac2.m4a"
+    },
+    {
+     "who": "A",
+     "de": "Aber am Freitag habe ich Zeit. Wollen wir zusammen kochen?",
+     "ru": "Но в пятницу я свободна. Давай вместе что-нибудь приготовим?",
+     "audio": "audio/353a88fd8597.m4a"
+    },
+    {
+     "who": "J",
+     "de": "Gute Idee! Um wie viel Uhr?",
+     "ru": "Отличная идея! Во сколько?",
+     "audio": "audio/36a15223cf8f.m4a"
+    },
+    {
+     "who": "A",
+     "de": "Um sieben?",
+     "ru": "В семь?",
+     "audio": "audio/646dd4c21731.m4a"
+    },
+    {
+     "who": "J",
+     "de": "Ja, das passt. Bis Freitag!",
+     "ru": "Да, мне подходит. До пятницы!",
+     "audio": "audio/0eccf37db1a2.m4a"
+    }
+   ]
+  }
+ },
+ "words": {
+  "hobbys": {
+   "title": "Hobbys",
+   "ru": "Чем заняться",
+   "items": [
+    {
+     "de": "schwimmen",
+     "ru": "плавать",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/ba152541e8f4.m4a"
+    },
+    {
+     "de": "tanzen",
+     "ru": "танцевать",
+     "gender": null,
+     "plural": null,
+     "note": "du tanzt",
+     "audio": "audio/a76a4086aab9.m4a"
+    },
+    {
+     "de": "lesen",
+     "ru": "читать",
+     "gender": null,
+     "plural": null,
+     "note": "du liest, er liest",
+     "audio": "audio/3584bdf16491.m4a"
+    },
+    {
+     "de": "kochen",
+     "ru": "готовить",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/bac23db2d3c6.m4a"
+    },
+    {
+     "de": "grillen",
+     "ru": "жарить на гриле",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/43c9dc458a7b.m4a"
+    },
+    {
+     "de": "Fußball spielen",
+     "ru": "играть в футбол",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/04bd89c0740e.m4a"
+    },
+    {
+     "de": "Tennis spielen",
+     "ru": "играть в теннис",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/8b1bac8c1d44.m4a"
+    },
+    {
+     "de": "Gitarre spielen",
+     "ru": "играть на гитаре",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/0c5989d3fc64.m4a"
+    },
+    {
+     "de": "Fahrrad fahren",
+     "ru": "кататься на велосипеде",
+     "gender": null,
+     "plural": null,
+     "note": "du fährst, er fährt",
+     "audio": "audio/2ea93a02114d.m4a"
+    },
+    {
+     "de": "Musik hören",
+     "ru": "слушать музыку",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/75a12342a73a.m4a"
+    },
+    {
+     "de": "fotografieren",
+     "ru": "фотографировать",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/5fce8e4d36d7.m4a"
+    },
+    {
+     "de": "Freunde treffen",
+     "ru": "встречаться с друзьями",
+     "gender": null,
+     "plural": null,
+     "note": "du triffst, er trifft",
+     "audio": "audio/fd5edf70e8f1.m4a"
+    },
+    {
+     "de": "ins Kino gehen",
+     "ru": "ходить в кино",
+     "gender": null,
+     "plural": null,
+     "note": "готовое выражение",
+     "audio": "audio/3e3d5456064a.m4a"
+    }
+   ]
+  },
+  "freizeit": {
+   "title": "Freizeit",
+   "ru": "Свободное время",
+   "items": [
+    {
+     "de": "die Freizeit",
+     "ru": "свободное время",
+     "gender": "f",
+     "plural": null,
+     "noPlural": true,
+     "audio": "audio/4f0784fc5656.m4a"
+    },
+    {
+     "de": "das Hobby",
+     "ru": "хобби",
+     "gender": "n",
+     "plural": "Hobbys",
+     "audio": "audio/36618afc9267.m4a"
+    },
+    {
+     "de": "der Sport",
+     "ru": "спорт",
+     "gender": "m",
+     "plural": null,
+     "noPlural": true,
+     "audio": "audio/ceabf9bc8246.m4a"
+    },
+    {
+     "de": "der Film",
+     "ru": "фильм",
+     "gender": "m",
+     "plural": "Filme",
+     "audio": "audio/694b8d3ce423.m4a"
+    },
+    {
+     "de": "das Kino",
+     "ru": "кинотеатр",
+     "gender": "n",
+     "plural": "Kinos",
+     "audio": "audio/b2e086b71310.m4a"
+    },
+    {
+     "de": "das Konzert",
+     "ru": "концерт",
+     "gender": "n",
+     "plural": "Konzerte",
+     "audio": "audio/426a1b7b59c8.m4a"
+    },
+    {
+     "de": "das Schwimmbad",
+     "ru": "бассейн",
+     "gender": "n",
+     "plural": "Schwimmbäder",
+     "audio": "audio/d220cbdd1879.m4a"
+    },
+    {
+     "de": "der Park",
+     "ru": "парк",
+     "gender": "m",
+     "plural": "Parks",
+     "audio": "audio/b643376dab46.m4a"
+    },
+    {
+     "de": "die Party",
+     "ru": "вечеринка",
+     "gender": "f",
+     "plural": "Partys",
+     "audio": "audio/16296e1f50f4.m4a"
+    },
+    {
+     "de": "das Buch",
+     "ru": "книга",
+     "gender": "n",
+     "plural": "Bücher",
+     "audio": "audio/7bb879ac0ee8.m4a"
+    }
+   ]
+  },
+  "wiegern": {
+   "title": "Wie gern? Wie oft?",
+   "ru": "Как охотно? Как часто?",
+   "items": [
+    {
+     "de": "gern",
+     "ru": "охотно, с удовольствием",
+     "gender": null,
+     "plural": null,
+     "note": "Ich schwimme gern.",
+     "audio": "audio/ed3bd74524e0.m4a"
+    },
+    {
+     "de": "lieber",
+     "ru": "охотнее, лучше",
+     "gender": null,
+     "plural": null,
+     "note": "Ich spiele lieber Tennis.",
+     "audio": "audio/7ad2c252202e.m4a"
+    },
+    {
+     "de": "am liebsten",
+     "ru": "больше всего",
+     "gender": null,
+     "plural": null,
+     "note": "Am liebsten lese ich.",
+     "audio": "audio/60bc3502556f.m4a"
+    },
+    {
+     "de": "nicht gern",
+     "ru": "неохотно",
+     "gender": null,
+     "plural": null,
+     "note": "Ich koche nicht gern.",
+     "audio": "audio/8e0c29a158bd.m4a"
+    },
+    {
+     "de": "immer",
+     "ru": "всегда",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/d067558aaffe.m4a"
+    },
+    {
+     "de": "oft",
+     "ru": "часто",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/d0975d890376.m4a"
+    },
+    {
+     "de": "manchmal",
+     "ru": "иногда",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/ab6671a7824f.m4a"
+    },
+    {
+     "de": "nie",
+     "ru": "никогда",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/a7657167c3b2.m4a"
+    },
+    {
+     "de": "zusammen",
+     "ru": "вместе",
+     "gender": null,
+     "plural": null,
+     "note": "Wollen wir zusammen kochen?",
+     "audio": "audio/f97ced2e1b0a.m4a"
+    }
+   ]
+  },
+  "treffen": {
+   "title": "Verabredung",
+   "ru": "Договориться о встрече",
+   "items": [
+    {
+     "de": "können",
+     "ru": "уметь, мочь",
+     "gender": null,
+     "plural": null,
+     "note": "ich kann, du kannst",
+     "audio": "audio/19afc12b875c.m4a"
+    },
+    {
+     "de": "wollen",
+     "ru": "хотеть",
+     "gender": null,
+     "plural": null,
+     "note": "ich will, du willst",
+     "audio": "audio/5aeba6c75044.m4a"
+    },
+    {
+     "de": "mitkommen",
+     "ru": "пойти вместе",
+     "gender": null,
+     "plural": null,
+     "note": "Kommst du mit?",
+     "audio": "audio/aa96ab98fb34.m4a"
+    },
+    {
+     "de": "einladen",
+     "ru": "приглашать",
+     "gender": null,
+     "plural": null,
+     "note": "er lädt ein",
+     "audio": "audio/77e209163b30.m4a"
+    },
+    {
+     "de": "Zeit haben",
+     "ru": "быть свободным",
+     "gender": null,
+     "plural": null,
+     "note": "Hast du Zeit?",
+     "audio": "audio/6c27b83e0444.m4a"
+    },
+    {
+     "de": "passen",
+     "ru": "подходить",
+     "gender": null,
+     "plural": null,
+     "note": "Das passt.",
+     "audio": "audio/b693a94ac654.m4a"
+    },
+    {
+     "de": "leider",
+     "ru": "к сожалению",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/10204e2b82f3.m4a"
+    },
+    {
+     "de": "Schade!",
+     "ru": "Жаль!",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/cccc33e1b159.m4a"
+    },
+    {
+     "de": "die Idee",
+     "ru": "идея",
+     "gender": "f",
+     "plural": "Ideen",
+     "note": "Gute Idee!",
+     "audio": "audio/bf035180592f.m4a"
+    },
+    {
+     "de": "die Einladung",
+     "ru": "приглашение",
+     "gender": "f",
+     "plural": "Einladungen",
+     "audio": "audio/9165957b29b6.m4a"
+    }
+   ]
+  }
+ },
+ "tables": {
+  "modal": {
+   "title": "können und wollen",
+   "ru": "уметь, мочь и хотеть",
+   "head": [
+    "Person",
+    "können",
+    "wollen"
+   ],
+   "rows": [
+    [
+     "ich",
+     "kann",
+     "will"
+    ],
+    [
+     "du",
+     "kann+st",
+     "will+st"
+    ],
+    [
+     "er / sie / es",
+     "kann",
+     "will"
+    ],
+    [
+     "wir",
+     "könn+en",
+     "woll+en"
+    ],
+    [
+     "ihr",
+     "könn+t",
+     "woll+t"
+    ],
+    [
+     "sie / Sie",
+     "könn+en",
+     "woll+en"
+    ]
+   ],
+   "ruCols": [],
+   "note": "В единственном числе меняется гласная, а у *ich* и *er* нет окончания: *ich kann*, *er kann*."
+  },
+  "gern": {
+   "title": "gern – lieber – am liebsten",
+   "ru": "люблю — больше люблю — больше всего люблю",
+   "head": [
+    "Wort",
+    "Beispiel",
+    "По-русски"
+   ],
+   "rows": [
+    [
+     "gern",
+     "Ich schwimme gern.",
+     "Я люблю плавать."
+    ],
+    [
+     "lieber",
+     "Ich spiele lieber Tennis.",
+     "Я больше люблю теннис."
+    ],
+    [
+     "am liebsten",
+     "Am liebsten lese ich.",
+     "Больше всего я люблю читать."
+    ],
+    [
+     "nicht gern",
+     "Ich koche nicht gern.",
+     "Я не люблю готовить."
+    ]
+   ],
+   "ruCols": [
+    2
+   ],
+   "note": "Как «хорошо — лучше — лучше всего»: формы не образуются по правилу, их надо запомнить."
+  },
+  "verabreden": {
+   "title": "Verabredungen",
+   "ru": "Договориться о встрече",
+   "head": [
+    "Vorschlag",
+    "Ja",
+    "Nein"
+   ],
+   "rows": [
+    [
+     "Hast du am Samstag Zeit?",
+     "Ja, gern!",
+     "Leider nicht."
+    ],
+    [
+     "Kommst du mit?",
+     "Gute Idee!",
+     "Schade, ich kann nicht."
+    ],
+    [
+     "Wollen wir zusammen kochen?",
+     "Ja, das passt.",
+     "Am Samstag kann ich leider nicht."
+    ],
+    [
+     "Um sieben?",
+     "Ja, um sieben!",
+     "Lieber um acht."
+    ]
+   ],
+   "ruCols": [],
+   "note": "Отказываясь, назовите причину или другой день: *Leider nicht. Aber am Freitag habe ich Zeit.*"
+  }
+ },
+ "tasks": {
+  "kursfest": {
+   "kind": "message",
+   "part": "lesen-1",
+   "title": "Lesen, Teil 1",
+   "situation": "Lesen Sie die E-Mail. Ist die Aussage richtig oder falsch?",
+   "from": "Sabine Weber",
+   "to": "Kurs A1",
+   "subject": "Kursfest am Freitag",
+   "text": "Liebe Kursteilnehmerinnen und Kursteilnehmer,\nam Freitag machen wir ein Kursfest! Es fängt um 18 Uhr an und hört um 21 Uhr auf.\nWer kann einen Salat oder einen Kuchen mitbringen? Die Getränke kauft die Schule.\nViele Grüße\nSabine Weber",
+   "statement": "Die Kursteilnehmer kaufen die Getränke.",
+   "answer": false,
+   "sample": []
+  },
+  "antwort": {
+   "kind": "message",
+   "part": "schreiben-2",
+   "title": "Schreiben, Teil 2",
+   "situation": "Ihre Freundin Lena schreibt Ihnen. Sie können am Samstag nicht kommen. Antworten Sie Lena. Schreiben Sie zu jedem Punkt ein bis zwei Sätze (circa 30 Wörter). Vergessen Sie Anrede und Gruß nicht.",
+   "from": "Lena",
+   "subject": "Party am Samstag",
+   "text": "Hallo!\nAm Samstag habe ich Geburtstag. Ich mache um 19 Uhr eine Party. Kommst du?\nLiebe Grüße\nLena",
+   "points": [
+    "Dank für die Einladung",
+    "Warum können Sie nicht kommen?",
+    "Neuer Termin: Tag und Uhrzeit"
+   ],
+   "sample": [
+    {
+     "de": "Liebe Lena,",
+     "audio": "audio/15ab87e36547.m4a"
+    },
+    {
+     "de": "danke für die Einladung!",
+     "audio": "audio/ba535cb124ae.m4a"
+    },
+    {
+     "de": "Leider kann ich am Samstag nicht kommen.",
+     "audio": "audio/a3068a9d0f43.m4a"
+    },
+    {
+     "de": "Mein Bruder aus Polen besucht mich.",
+     "audio": "audio/d52cf6a7853e.m4a"
+    },
+    {
+     "de": "Wollen wir am Sonntag zusammen frühstücken?",
+     "audio": "audio/1384930296d0.m4a"
+    },
+    {
+     "de": "Um zehn Uhr habe ich Zeit.",
+     "audio": "audio/277ba68b8000.m4a"
+    },
+    {
+     "de": "Viele Grüße",
+     "audio": "audio/68fa7e678d7f.m4a"
+    },
+    {
+     "de": "Anna",
+     "audio": "audio/c548219baa72.m4a"
+    }
+   ]
+  },
+  "karte": {
+   "kind": "card",
+   "part": "sprechen-2",
+   "title": "Sprechen, Teil 2",
+   "situation": "Fragen Sie Ihren Partner und antworten Sie.",
+   "theme": "Freizeit",
+   "word": "Wochenende",
+   "sample": [
+    {
+     "de": "Was machst du am Wochenende?",
+     "audio": "audio/7db581ffb89d.m4a"
+    },
+    {
+     "de": "Am Samstag arbeite ich. Am Sonntag spiele ich Tennis.",
+     "audio": "audio/60d273e48ffd.m4a"
+    }
+   ]
+  }
+ },
+ "beats": [
+  {
+   "id": "plaene-1",
+   "step": "plaene",
+   "stepTitle": "Планы на выходные",
+   "chapterIndex": 0,
+   "indexInStep": 0,
+   "read": "Четверг, перемена. Анна спрашивает Марко о планах: *Was machst du am Wochenende?* В субботу Марко, как мы уже знаем, работает, а в воскресенье свободен. Анна зовёт его плавать: *Ich will am Sonntag schwimmen. Kommst du mit?* Заметьте: *will* — «хочу» — стоит на втором месте, а *schwimmen* — в самом конце. И знакомый по прошлой теме глагол с приставкой: *mitkommen* — *Kommst du mit?*",
+   "point": "*Ich will am Sonntag schwimmen.* — *will* второй, *schwimmen* в конце",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "wochenende",
+    "reveal": 3,
+    "focus": [
+     2
+    ]
+   }
+  },
+  {
+   "id": "plaene-2",
+   "step": "plaene",
+   "stepTitle": "Планы на выходные",
+   "chapterIndex": 0,
+   "indexInStep": 1,
+   "read": "Но плавать Марко почти не умеет: *Ich kann nicht gut schwimmen* — «я плохо плаваю», буквально «не умею хорошо плавать». Тогда Анна предлагает теннис: *Kannst du Tennis spielen?* *können* здесь значит «уметь». А Марко отвечает с *gern*: *Tennis spiele ich sehr gern* — «в теннис я играю очень охотно». Чтобы сказать «люблю что-то делать», немцы не берут глагол «любить», а добавляют *gern*.",
+   "point": "*Kannst du Tennis spielen?* — «умеешь?»; *gern* — «люблю делать»",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "wochenende",
+    "reveal": 6,
+    "focus": [
+     3,
+     4,
+     5
+    ]
+   }
+  },
+  {
+   "id": "plaene-3",
+   "step": "plaene",
+   "stepTitle": "Планы на выходные",
+   "chapterIndex": 0,
+   "indexInStep": 2,
+   "read": "Осталось договориться о времени. *Wollen wir um zehn Uhr spielen?* — так по-немецки звучит «давай сыграем в десять?». Но в десять Марко ещё спит: по воскресеньям он отсыпается. Он предлагает своё: *Lieber um zwölf* — «лучше в двенадцать». *lieber* — сравнительная степень от *gern*. Анна соглашается: *Gut, um zwölf. Bis Sonntag!* — «до воскресенья!».",
+   "point": "*Wollen wir …?* — «давай …?»; *Lieber um zwölf.* — «лучше в двенадцать»",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "wochenende",
+    "reveal": 9,
+    "focus": [
+     6,
+     7,
+     8
+    ]
+   }
+  },
+  {
+   "id": "telefon-1",
+   "step": "telefon",
+   "stepTitle": "Звонок Йонаса",
+   "chapterIndex": 0,
+   "indexInStep": 0,
+   "read": "Вечером Анне звонит Йонас — её немецкий друг по языковому тандему. По телефону представляются через *hier ist*: *Hallo Anna, hier ist Jonas.* И сразу к делу: *Hast du am Samstag Zeit?* — «ты свободна в субботу?», буквально «есть у тебя время?». Йонас зовёт на барбекю, но в субботу к Анне приезжает брат. Анна не говорит просто *Nein*: *Am Samstag kann ich leider nicht* — и сразу объясняет почему.",
+   "point": "*Hast du am Samstag Zeit?* Отказ: *Am Samstag kann ich leider nicht.*",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "telefon",
+    "reveal": 4,
+    "focus": [
+     0,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "telefon-2",
+   "step": "telefon",
+   "stepTitle": "Звонок Йонаса",
+   "chapterIndex": 0,
+   "indexInStep": 1,
+   "read": "Отказ без встречного предложения звучит холодно, поэтому Анна тут же называет другой день: *Aber am Freitag habe ich Zeit. Wollen wir zusammen kochen?* Йонас соглашается: *Gute Idee!* Время Анна предлагает вопросом — *Um sieben?* — и Йонас отвечает *Das passt* — «мне подходит». Схема «нет — потому что — давай в другой день» пригодится на письменном экзамене.",
+   "point": "*Aber am Freitag habe ich Zeit.* — после отказа предложите другой день",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "telefon",
+    "reveal": 9,
+    "focus": [
+     5,
+     6,
+     8
+    ]
+   }
+  },
+  {
+   "id": "hobbys-1",
+   "step": "hobbys",
+   "stepTitle": "Хобби",
+   "chapterIndex": 1,
+   "indexInStep": 0,
+   "read": "Хобби по-немецки — чаще всего глагол или пара «существительное + глагол»: *schwimmen*, *Tennis spielen*, *Fahrrad fahren*. Обратите внимание: «играть в теннис» и «играть на гитаре» — одно и то же *spielen*, без всяких предлогов: *Tennis spielen*, *Gitarre spielen*. А у *lesen*, *fahren* и *treffen* в единственном числе меняется гласная: *du liest*, *er fährt*, *du triffst*.",
+   "point": "*Tennis spielen*, *Gitarre spielen* — без предлогов, в отличие от русского",
+   "scene": {
+    "view": "words",
+    "dialogue": "telefon",
+    "words": "hobbys"
+   }
+  },
+  {
+   "id": "orte-1",
+   "step": "orte",
+   "stepTitle": "Куда пойти",
+   "chapterIndex": 1,
+   "indexInStep": 0,
+   "read": "Где проводят свободное время — в кино, в бассейне, в парке. Род опять не совпадает с русским: *das Kino*, *das Konzert*, *das Schwimmbad* — среднего рода. Слова из английского — *das Hobby*, *die Party* — образуют множественное число на *-s*: *Hobbys*, *Partys*. А «пойти в кино» удобнее выучить целиком, как готовую фразу: *ins Kino gehen*.",
+   "point": "*das Kino*, *das Konzert*, *das Schwimmbad*; *Hobbys*, *Partys* — мн. ч. на *-s*",
+   "scene": {
+    "view": "words",
+    "dialogue": "telefon",
+    "words": "freizeit"
+   }
+  },
+  {
+   "id": "wiegern-1",
+   "step": "wiegern",
+   "stepTitle": "Как охотно и как часто",
+   "chapterIndex": 1,
+   "indexInStep": 0,
+   "read": "«Люблю» о занятиях по-немецки говорят не глаголом, а наречием *gern*: *Ich schwimme gern* — «я люблю плавать», буквально «плаваю охотно». Сравнительная степень — *lieber*, превосходная — *am liebsten*. Это другие слова, как «хорошо — лучше». Частоту называют словами *immer*, *oft*, *manchmal*, *nie*. Они, как и *gern*, обычно стоят в середине: *Ich spiele oft Tennis.*",
+   "point": "*Ich schwimme gern.* — «люблю плавать»; *gern*, *lieber*, *am liebsten*",
+   "scene": {
+    "view": "words",
+    "dialogue": "telefon",
+    "words": "wiegern"
+   }
+  },
+  {
+   "id": "verabredung-1",
+   "step": "verabredung",
+   "stepTitle": "Слова для встречи",
+   "chapterIndex": 1,
+   "indexInStep": 0,
+   "read": "*Hast du Zeit?* — «ты свободен?». *mitkommen* — «пойти вместе» — глагол с отделяемой приставкой, как в прошлой теме: *Kommst du mit?* *einladen* — «приглашать» — тоже с приставкой и со сменой гласной: *er lädt ein*. *Das passt* — «мне подходит». А если не получается, пригодятся *leider* и *schade* — «к сожалению» и «жаль». И два новых глагола темы: *können* и *wollen*.",
+   "point": "*Hast du Zeit?* — *Kommst du mit?* — *Das passt.* / *Leider nicht.*",
+   "scene": {
+    "view": "words",
+    "dialogue": "telefon",
+    "words": "treffen"
+   }
+  },
+  {
+   "id": "modal-1",
+   "step": "modal",
+   "stepTitle": "Уметь, мочь и хотеть",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "*können* закрывает сразу два русских глагола: «уметь» — *Ich kann schwimmen* — и «мочь» — *Am Samstag kann ich nicht*. В единственном числе гласная меняется: не *könn-*, а *kann*. И главное отличие от обычных глаголов: у *ich* и *er* нет окончания, обе формы — просто *kann*. Сказать *er kannt* по образцу *er kommt* — очень частая ошибка.",
+   "point": "*können* — «уметь» и «мочь»: *ich kann*, *du kannst*, *er kann*",
+   "scene": {
+    "view": "table",
+    "dialogue": "telefon",
+    "words": "treffen",
+    "table": "modal",
+    "reveal": 3
+   }
+  },
+  {
+   "id": "modal-2",
+   "step": "modal",
+   "stepTitle": "Уметь, мочь и хотеть",
+   "chapterIndex": 2,
+   "indexInStep": 1,
+   "read": "*wollen* — «хотеть», и устроен так же: *ich will*, *du willst*, *er will*, во множественном — *wollen*. Осторожно с английским: *will* здесь не будущее время, а «хочу». И ещё нюанс: *Ich will* звучит твёрдо, почти требовательно. В кафе или в магазине вежливее *Ich möchte* из темы о еде. А о планах с друзьями — *Ich will am Sonntag schwimmen* — говорить нормально.",
+   "point": "*ich will*, *du willst*, *er will*; просьба вежливее — *Ich möchte …*",
+   "scene": {
+    "view": "table",
+    "dialogue": "telefon",
+    "words": "treffen",
+    "table": "modal",
+    "reveal": 6
+   }
+  },
+  {
+   "id": "ende-1",
+   "step": "ende",
+   "stepTitle": "Инфинитив — в конец",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "Возьмём простое предложение: *Ich spiele Tennis.* Глагол *spiele* на второй позиции, поле «конец» пустое — это вы знаете с первой темы. Теперь Марко хочет сказать, что умеет играть. В русском мы просто поставим «умею» перед «играть», и оба глагола окажутся рядом. Смотрите на схему: в немецком второй глагол рядом с первым не останется.",
+   "point": "*Ich spiele Tennis.* — один глагол, поле «конец» пустое",
+   "scene": {
+    "view": "sentence",
+    "dialogue": "telefon",
+    "words": "treffen",
+    "table": "modal",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "spiel",
+         "text": "spiel+e"
+        }
+       ],
+       [
+        {
+         "key": "tennis",
+         "text": "Tennis"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Ich spiele Tennis.",
+      "ru": "Я играю в теннис.",
+      "audio": "audio/f9e20e8cbfff.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ende-2",
+   "step": "ende",
+   "stepTitle": "Инфинитив — в конец",
+   "chapterIndex": 2,
+   "indexInStep": 1,
+   "read": "*Ich kann Tennis spielen.* На второе место встаёт модальный глагол *kann* — он и спрягается. А *spielen* уезжает в самый конец и теряет личное окончание: было *spiel+e*, стало *spiel+en*. Получается такая же рамка, как с отделяемой приставкой: *Ich stehe um sieben auf* — *Ich kann Tennis spielen*. Типичная ошибка — *Ich kann spielen Tennis*, по-русски или по-английски.",
+   "point": "*Ich kann Tennis spielen.* — модальный глагол второй, инфинитив в конце",
+   "scene": {
+    "view": "sentence",
+    "dialogue": "telefon",
+    "words": "treffen",
+    "table": "modal",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "kann",
+         "text": "kann"
+        }
+       ],
+       [
+        {
+         "key": "tennis",
+         "text": "Tennis"
+        }
+       ],
+       [
+        {
+         "key": "spiel",
+         "text": "spiel+en"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich kann Tennis spielen.",
+      "ru": "Я умею играть в теннис.",
+      "audio": "audio/4041b2042c2a.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ende-3",
+   "step": "ende",
+   "stepTitle": "Инфинитив — в конец",
+   "chapterIndex": 2,
+   "indexInStep": 2,
+   "read": "В вопросах рамка сохраняется. Вопрос да/нет начинается с модального глагола: *Kannst du Tennis spielen?* — «ты умеешь играть в теннис?». В W-вопросе первым идёт вопросительное слово: *Was willst du am Sonntag machen?* — «что ты хочешь делать в воскресенье?». Всё, что между двумя глаголами, — середина: подлежащее, время, дополнение. Инфинитив всегда замыкает предложение.",
+   "point": "*Kannst du Tennis spielen?* — *Was willst du am Sonntag machen?*",
+   "scene": {
+    "view": "sentence",
+    "dialogue": "telefon",
+    "words": "treffen",
+    "table": "modal",
+    "rows": [
+     {
+      "slots": [
+       [],
+       [
+        {
+         "key": "kann",
+         "text": "Kann+st"
+        }
+       ],
+       [
+        {
+         "key": "du",
+         "text": "du"
+        },
+        {
+         "key": "tennis",
+         "text": "Tennis"
+        }
+       ],
+       [
+        {
+         "key": "spiel",
+         "text": "spiel+en"
+        }
+       ]
+      ],
+      "punct": "?",
+      "plain": "Kannst du Tennis spielen?",
+      "ru": "Ты умеешь играть в теннис?",
+      "audio": "audio/20a13de81444.m4a"
+     },
+     {
+      "slots": [
+       [
+        {
+         "key": "was",
+         "text": "Was"
+        }
+       ],
+       [
+        {
+         "key": "will",
+         "text": "will+st"
+        }
+       ],
+       [
+        {
+         "key": "du",
+         "text": "du"
+        },
+        {
+         "key": "am",
+         "text": "am"
+        },
+        {
+         "key": "sonntag",
+         "text": "Sonntag"
+        }
+       ],
+       [
+        {
+         "key": "mach",
+         "text": "mach+en"
+        }
+       ]
+      ],
+      "punct": "?",
+      "plain": "Was willst du am Sonntag machen?",
+      "ru": "Что ты хочешь делать в воскресенье?",
+      "audio": "audio/dd102589b52e.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ende-4",
+   "step": "ende",
+   "stepTitle": "Инфинитив — в конец",
+   "chapterIndex": 2,
+   "indexInStep": 3,
+   "read": "*nicht* стоит перед инфинитивом: *Ich kann nicht gut schwimmen.* А в отказе инфинитив часто опускают совсем — и так понятно, о чём речь: *Am Samstag kann ich leider nicht.* Поле «конец» пустеет, рамки нет. По-русски тоже говорят просто «не могу». Добавьте *leider* — и отказ прозвучит вежливо.",
+   "point": "*Ich kann nicht gut schwimmen.* Отказ: *Am Samstag kann ich leider nicht.*",
+   "scene": {
+    "view": "sentence",
+    "dialogue": "telefon",
+    "words": "treffen",
+    "table": "modal",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "kann",
+         "text": "kann"
+        }
+       ],
+       [
+        {
+         "key": "nicht",
+         "text": "nicht"
+        },
+        {
+         "key": "gut",
+         "text": "gut"
+        }
+       ],
+       [
+        {
+         "key": "schwimm",
+         "text": "schwimm+en"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich kann nicht gut schwimmen.",
+      "ru": "Я плохо плаваю.",
+      "audio": "audio/69912a189737.m4a"
+     },
+     {
+      "slots": [
+       [
+        {
+         "key": "am",
+         "text": "Am"
+        },
+        {
+         "key": "samstag",
+         "text": "Samstag"
+        }
+       ],
+       [
+        {
+         "key": "kann",
+         "text": "kann"
+        }
+       ],
+       [
+        {
+         "key": "ich",
+         "text": "ich"
+        },
+        {
+         "key": "leider",
+         "text": "leider"
+        },
+        {
+         "key": "nicht",
+         "text": "nicht"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Am Samstag kann ich leider nicht.",
+      "ru": "В субботу я, к сожалению, не могу.",
+      "audio": "audio/8f915b56bba6.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "gern-1",
+   "step": "gern",
+   "stepTitle": "Люблю, больше люблю, больше всего",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "Чтобы сказать «люблю», к глаголу добавляют *gern*: *Ich schwimme gern*. «Больше люблю» — *lieber*, «больше всего» — *am liebsten*. Марко так и отвечает на «давай в десять»: *Lieber um zwölf* — «лучше в двенадцать». Не говорите *Ich liebe schwimmen*: глагол *lieben* оставьте для людей. А «не люблю» — *nicht gern*: *Ich koche nicht gern.*",
+   "point": "*gern* — люблю, *lieber* — больше люблю, *am liebsten* — больше всего",
+   "scene": {
+    "view": "table",
+    "dialogue": "telefon",
+    "words": "treffen",
+    "table": "gern",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "kann",
+         "text": "kann"
+        }
+       ],
+       [
+        {
+         "key": "nicht",
+         "text": "nicht"
+        },
+        {
+         "key": "gut",
+         "text": "gut"
+        }
+       ],
+       [
+        {
+         "key": "schwimm",
+         "text": "schwimm+en"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich kann nicht gut schwimmen.",
+      "ru": "Я плохо плаваю.",
+      "audio": "audio/69912a189737.m4a"
+     },
+     {
+      "slots": [
+       [
+        {
+         "key": "am",
+         "text": "Am"
+        },
+        {
+         "key": "samstag",
+         "text": "Samstag"
+        }
+       ],
+       [
+        {
+         "key": "kann",
+         "text": "kann"
+        }
+       ],
+       [
+        {
+         "key": "ich",
+         "text": "ich"
+        },
+        {
+         "key": "leider",
+         "text": "leider"
+        },
+        {
+         "key": "nicht",
+         "text": "nicht"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Am Samstag kann ich leider nicht.",
+      "ru": "В субботу я, к сожалению, не могу.",
+      "audio": "audio/8f915b56bba6.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "verabreden-1",
+   "step": "verabreden",
+   "stepTitle": "Предложить, согласиться, отказаться",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "Договориться о встрече помогают три шага. Предложить: *Hast du am Samstag Zeit?*, *Kommst du mit?*, *Wollen wir …?* — «давай …?». Согласиться: *Ja, gern!*, *Gute Idee!*, *Das passt.* Отказаться — и тут немцы почти никогда не говорят просто *Nein*. Принято назвать причину и предложить другое время: *Leider nicht. Mein Bruder besucht mich. Aber am Freitag habe ich Zeit.*",
+   "point": "Отказ = *leider* + причина + новый день: *Aber am Freitag habe ich Zeit.*",
+   "scene": {
+    "view": "table",
+    "dialogue": "telefon",
+    "words": "treffen",
+    "table": "verabreden",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "kann",
+         "text": "kann"
+        }
+       ],
+       [
+        {
+         "key": "nicht",
+         "text": "nicht"
+        },
+        {
+         "key": "gut",
+         "text": "gut"
+        }
+       ],
+       [
+        {
+         "key": "schwimm",
+         "text": "schwimm+en"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich kann nicht gut schwimmen.",
+      "ru": "Я плохо плаваю.",
+      "audio": "audio/69912a189737.m4a"
+     },
+     {
+      "slots": [
+       [
+        {
+         "key": "am",
+         "text": "Am"
+        },
+        {
+         "key": "samstag",
+         "text": "Samstag"
+        }
+       ],
+       [
+        {
+         "key": "kann",
+         "text": "kann"
+        }
+       ],
+       [
+        {
+         "key": "ich",
+         "text": "ich"
+        },
+        {
+         "key": "leider",
+         "text": "leider"
+        },
+        {
+         "key": "nicht",
+         "text": "nicht"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Am Samstag kann ich leider nicht.",
+      "ru": "В субботу я, к сожалению, не могу.",
+      "audio": "audio/8f915b56bba6.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-1",
+   "step": "check",
+   "stepTitle": "Проверьте себя",
+   "chapterIndex": 3,
+   "indexInStep": 0,
+   "read": "*Ich kann leider nicht mitkommen.* Помните *Kommst du mit?* — там приставка *mit* стоит в конце отдельно. С модальным глаголом *mitkommen* уходит в конец целиком и снова пишется одним словом: инфинитив не разрывается. *leider* и *nicht* — в середине, перед инфинитивом. Так же: *Ich will um sechs aufstehen*, *Kannst du heute einkaufen?*",
+   "point": "С модальным глаголом приставка не отрывается: *Ich kann nicht mitkommen.*",
+   "question": "Как сказать «К сожалению, я не могу пойти с вами»?",
+   "sceneBefore": {
+    "view": "sentence",
+    "dialogue": "telefon",
+    "words": "treffen",
+    "table": "verabreden",
+    "rows": [
+     {
+      "slots": [
+       [],
+       [
+        {
+         "key": "komm",
+         "text": "Komm+st"
+        }
+       ],
+       [
+        {
+         "key": "du",
+         "text": "du"
+        }
+       ],
+       [
+        {
+         "key": "mit",
+         "text": "mit"
+        }
+       ]
+      ],
+      "punct": "?",
+      "plain": "Kommst du mit?",
+      "ru": "Ты пойдёшь с нами?",
+      "audio": "audio/206e8e307ec3.m4a"
+     }
+    ]
+   },
+   "scene": {
+    "view": "sentence",
+    "dialogue": "telefon",
+    "words": "treffen",
+    "table": "verabreden",
+    "rows": [
+     {
+      "slots": [
+       [],
+       [
+        {
+         "key": "komm",
+         "text": "Komm+st"
+        }
+       ],
+       [
+        {
+         "key": "du",
+         "text": "du"
+        }
+       ],
+       [
+        {
+         "key": "mit",
+         "text": "mit"
+        }
+       ]
+      ],
+      "punct": "?",
+      "plain": "Kommst du mit?",
+      "ru": "Ты пойдёшь с нами?",
+      "audio": "audio/206e8e307ec3.m4a"
+     },
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "kann",
+         "text": "kann"
+        }
+       ],
+       [
+        {
+         "key": "leider",
+         "text": "leider"
+        },
+        {
+         "key": "nicht",
+         "text": "nicht"
+        }
+       ],
+       [
+        {
+         "key": "mitkomm",
+         "text": "mitkomm+en"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich kann leider nicht mitkommen.",
+      "ru": "К сожалению, я не могу пойти с вами.",
+      "audio": "audio/df4f218b5ebb.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-2",
+   "step": "check",
+   "stepTitle": "Проверьте себя",
+   "chapterIndex": 3,
+   "indexInStep": 1,
+   "read": "*Am liebsten lese ich.* «Люблю» снова передаёт наречие, а не глагол. Для выразительности немцы охотно ставят *am liebsten* на первое место, и тогда глагол, как всегда, второй, а *ich* уходит за него. Можно сказать и спокойнее: *Ich lese am liebsten.* А вот *Am liebsten ich lese* — ошибка: между первой позицией и глаголом ничего не помещается.",
+   "point": "*Am liebsten lese ich.* — на первом месте, глагол всё равно второй",
+   "question": "Как сказать «Больше всего я люблю читать»?",
+   "sceneBefore": {
+    "view": "sentence",
+    "dialogue": "telefon",
+    "words": "treffen",
+    "table": "verabreden",
+    "rows": [
+     {
+      "slots": [
+       [],
+       [
+        {
+         "key": "komm",
+         "text": "Komm+st"
+        }
+       ],
+       [
+        {
+         "key": "du",
+         "text": "du"
+        }
+       ],
+       [
+        {
+         "key": "mit",
+         "text": "mit"
+        }
+       ]
+      ],
+      "punct": "?",
+      "plain": "Kommst du mit?",
+      "ru": "Ты пойдёшь с нами?",
+      "audio": "audio/206e8e307ec3.m4a"
+     },
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "kann",
+         "text": "kann"
+        }
+       ],
+       [
+        {
+         "key": "leider",
+         "text": "leider"
+        },
+        {
+         "key": "nicht",
+         "text": "nicht"
+        }
+       ],
+       [
+        {
+         "key": "mitkomm",
+         "text": "mitkomm+en"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich kann leider nicht mitkommen.",
+      "ru": "К сожалению, я не могу пойти с вами.",
+      "audio": "audio/df4f218b5ebb.m4a"
+     }
+    ]
+   },
+   "scene": {
+    "view": "sentence",
+    "dialogue": "telefon",
+    "words": "treffen",
+    "table": "verabreden",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "am",
+         "text": "Am"
+        },
+        {
+         "key": "liebsten",
+         "text": "liebsten"
+        }
+       ],
+       [
+        {
+         "key": "les",
+         "text": "les+e"
+        }
+       ],
+       [
+        {
+         "key": "ich",
+         "text": "ich"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Am liebsten lese ich.",
+      "ru": "Больше всего я люблю читать.",
+      "audio": "audio/791923b6d34c.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-3",
+   "step": "check",
+   "stepTitle": "Проверьте себя",
+   "chapterIndex": 3,
+   "indexInStep": 2,
+   "read": "*Wollen wir am Sonntag Tennis spielen?* Русское «давай…» по-немецки — вопрос с *wollen*: модальный глагол первым, потом *wir*, инфинитив в конце. Это не «хотим ли мы?», а приглашение, и отвечают на него *Ja, gern!* или *Gute Idee!* Сравните с утверждением: *Wir wollen am Sonntag Tennis spielen* — «мы хотим в воскресенье поиграть в теннис».",
+   "point": "«Давай …?» — *Wollen wir am Sonntag Tennis spielen?*",
+   "question": "Как предложить: «Давай в воскресенье поиграем в теннис»?",
+   "sceneBefore": {
+    "view": "sentence",
+    "dialogue": "telefon",
+    "words": "treffen",
+    "table": "verabreden",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "am",
+         "text": "Am"
+        },
+        {
+         "key": "liebsten",
+         "text": "liebsten"
+        }
+       ],
+       [
+        {
+         "key": "les",
+         "text": "les+e"
+        }
+       ],
+       [
+        {
+         "key": "ich",
+         "text": "ich"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Am liebsten lese ich.",
+      "ru": "Больше всего я люблю читать.",
+      "audio": "audio/791923b6d34c.m4a"
+     }
+    ]
+   },
+   "scene": {
+    "view": "sentence",
+    "dialogue": "telefon",
+    "words": "treffen",
+    "table": "verabreden",
+    "rows": [
+     {
+      "slots": [
+       [],
+       [
+        {
+         "key": "woll",
+         "text": "Woll+en"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "am",
+         "text": "am"
+        },
+        {
+         "key": "sonntag",
+         "text": "Sonntag"
+        },
+        {
+         "key": "tennis",
+         "text": "Tennis"
+        }
+       ],
+       [
+        {
+         "key": "spiel",
+         "text": "spiel+en"
+        }
+       ]
+      ],
+      "punct": "?",
+      "plain": "Wollen wir am Sonntag Tennis spielen?",
+      "ru": "Давай в воскресенье поиграем в теннис?",
+      "audio": "audio/795e150c7022.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lesen-1",
+   "step": "lesen",
+   "stepTitle": "Чтение: записка",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "*Falsch.* В первой части чтения — две короткие записки или письма и утверждения к ним: *richtig* или *falsch*. Ловушка обычно в деталях: слова те же, но речь о другом человеке или дне. Здесь есть и *kaufen*, и *Getränke*, но покупает их школа: *Die Getränke kauft die Schule.* Первым стоит дополнение, а подлежащее — после глагола. Участники приносят салат или пирог.",
+   "point": "*Die Getränke kauft die Schule.* — подлежащее ищите и после глагола",
+   "question": "Правда ли, что напитки для праздника покупают участники курса?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "telefon",
+    "words": "treffen",
+    "table": "verabreden",
+    "rows": [
+     {
+      "slots": [
+       [],
+       [
+        {
+         "key": "woll",
+         "text": "Woll+en"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "am",
+         "text": "am"
+        },
+        {
+         "key": "sonntag",
+         "text": "Sonntag"
+        },
+        {
+         "key": "tennis",
+         "text": "Tennis"
+        }
+       ],
+       [
+        {
+         "key": "spiel",
+         "text": "spiel+en"
+        }
+       ]
+      ],
+      "punct": "?",
+      "plain": "Wollen wir am Sonntag Tennis spielen?",
+      "ru": "Давай в воскресенье поиграем в теннис?",
+      "audio": "audio/795e150c7022.m4a"
+     }
+    ],
+    "task": "kursfest"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "telefon",
+    "words": "treffen",
+    "table": "verabreden",
+    "rows": [
+     {
+      "slots": [
+       [],
+       [
+        {
+         "key": "woll",
+         "text": "Woll+en"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "am",
+         "text": "am"
+        },
+        {
+         "key": "sonntag",
+         "text": "Sonntag"
+        },
+        {
+         "key": "tennis",
+         "text": "Tennis"
+        }
+       ],
+       [
+        {
+         "key": "spiel",
+         "text": "spiel+en"
+        }
+       ]
+      ],
+      "punct": "?",
+      "plain": "Wollen wir am Sonntag Tennis spielen?",
+      "ru": "Давай в воскресенье поиграем в теннис?",
+      "audio": "audio/795e150c7022.m4a"
+     }
+    ],
+    "task": "kursfest",
+    "solved": true
+   }
+  },
+  {
+   "id": "schreiben-1",
+   "step": "schreiben",
+   "stepTitle": "Письмо: ответ на приглашение",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Вторая часть письменного экзамена — короткое сообщение, около 30 слов. В задании описана ситуация и даны три пункта, *Leitpunkte*. На каждый — одно-два предложения. Пропустите пункт — потеряете баллы: за каждый дают до трёх, ещё один — за оформление. Оформление — это обращение и подпись: *Liebe Lena,* или *Lieber Marco,* в начале, *Viele Grüße* в конце.",
+   "point": "*Schreiben*, часть 2: около 30 слов, три пункта, обращение и подпись",
+   "scene": {
+    "view": "task",
+    "dialogue": "telefon",
+    "words": "treffen",
+    "table": "verabreden",
+    "rows": [
+     {
+      "slots": [
+       [],
+       [
+        {
+         "key": "woll",
+         "text": "Woll+en"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "am",
+         "text": "am"
+        },
+        {
+         "key": "sonntag",
+         "text": "Sonntag"
+        },
+        {
+         "key": "tennis",
+         "text": "Tennis"
+        }
+       ],
+       [
+        {
+         "key": "spiel",
+         "text": "spiel+en"
+        }
+       ]
+      ],
+      "punct": "?",
+      "plain": "Wollen wir am Sonntag Tennis spielen?",
+      "ru": "Давай в воскресенье поиграем в теннис?",
+      "audio": "audio/795e150c7022.m4a"
+     }
+    ],
+    "task": "antwort",
+    "reveal": 0
+   }
+  },
+  {
+   "id": "schreiben-2",
+   "step": "schreiben",
+   "stepTitle": "Письмо: ответ на приглашение",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Образец закрывает все три пункта. Благодарность: *danke für die Einladung!* Причина: *Leider kann ich am Samstag nicht kommen. Mein Bruder aus Polen besucht mich.* Новый день и время: *Wollen wir am Sonntag zusammen frühstücken? Um zehn Uhr habe ich Zeit.* Модальный глагол на втором месте, инфинитив в конце. Длинные фразы не нужны: оценивают, понятно ли и всё ли вы сказали.",
+   "point": "Спасибо + причина + новый день — по одному-два предложения на пункт",
+   "scene": {
+    "view": "task",
+    "dialogue": "telefon",
+    "words": "treffen",
+    "table": "verabreden",
+    "rows": [
+     {
+      "slots": [
+       [],
+       [
+        {
+         "key": "woll",
+         "text": "Woll+en"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "am",
+         "text": "am"
+        },
+        {
+         "key": "sonntag",
+         "text": "Sonntag"
+        },
+        {
+         "key": "tennis",
+         "text": "Tennis"
+        }
+       ],
+       [
+        {
+         "key": "spiel",
+         "text": "spiel+en"
+        }
+       ]
+      ],
+      "punct": "?",
+      "plain": "Wollen wir am Sonntag Tennis spielen?",
+      "ru": "Давай в воскресенье поиграем в теннис?",
+      "audio": "audio/795e150c7022.m4a"
+     }
+    ],
+    "task": "antwort",
+    "reveal": 8
+   }
+  },
+  {
+   "id": "sprechen-1",
+   "step": "sprechen",
+   "stepTitle": "Устный экзамен: часть 2",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Во второй части устного экзамена каждый тянет карточку: сверху тема, в центре слово. По этому слову нужно задать вопрос партнёру, а потом ответить на его вопрос. Тема здесь — *Freizeit*, слово — *Wochenende*. За вопрос дают два балла, за ответ — один. Вопрос должен быть настоящим вопросом и содержать слово с карточки.",
+   "point": "*Sprechen*, часть 2: по слову с карточки задать вопрос и ответить партнёру",
+   "scene": {
+    "view": "task",
+    "dialogue": "telefon",
+    "words": "treffen",
+    "table": "verabreden",
+    "rows": [
+     {
+      "slots": [
+       [],
+       [
+        {
+         "key": "woll",
+         "text": "Woll+en"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "am",
+         "text": "am"
+        },
+        {
+         "key": "sonntag",
+         "text": "Sonntag"
+        },
+        {
+         "key": "tennis",
+         "text": "Tennis"
+        }
+       ],
+       [
+        {
+         "key": "spiel",
+         "text": "spiel+en"
+        }
+       ]
+      ],
+      "punct": "?",
+      "plain": "Wollen wir am Sonntag Tennis spielen?",
+      "ru": "Давай в воскресенье поиграем в теннис?",
+      "audio": "audio/795e150c7022.m4a"
+     }
+    ],
+    "task": "karte"
+   }
+  },
+  {
+   "id": "sprechen-2",
+   "step": "sprechen",
+   "stepTitle": "Устный экзамен: часть 2",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Самый простой — *Was machst du am Wochenende?* Слово с карточки стоит в вопросе, глагол на втором месте. Можно и с модальным глаголом: *Was willst du am Wochenende machen?* Отвечайте коротко, но полным предложением: *Am Sonntag spiele ich Tennis.* Если партнёр говорит с вами на *Sie*, отвечайте так же: *Was machen Sie am Wochenende?*",
+   "point": "*Was machst du am Wochenende?* — слово с карточки прямо в вопросе",
+   "question": "Какой вопрос задать по карточке *Wochenende*?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "telefon",
+    "words": "treffen",
+    "table": "verabreden",
+    "rows": [
+     {
+      "slots": [
+       [],
+       [
+        {
+         "key": "woll",
+         "text": "Woll+en"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "am",
+         "text": "am"
+        },
+        {
+         "key": "sonntag",
+         "text": "Sonntag"
+        },
+        {
+         "key": "tennis",
+         "text": "Tennis"
+        }
+       ],
+       [
+        {
+         "key": "spiel",
+         "text": "spiel+en"
+        }
+       ]
+      ],
+      "punct": "?",
+      "plain": "Wollen wir am Sonntag Tennis spielen?",
+      "ru": "Давай в воскресенье поиграем в теннис?",
+      "audio": "audio/795e150c7022.m4a"
+     }
+    ],
+    "task": "karte"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "telefon",
+    "words": "treffen",
+    "table": "verabreden",
+    "rows": [
+     {
+      "slots": [
+       [],
+       [
+        {
+         "key": "woll",
+         "text": "Woll+en"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "am",
+         "text": "am"
+        },
+        {
+         "key": "sonntag",
+         "text": "Sonntag"
+        },
+        {
+         "key": "tennis",
+         "text": "Tennis"
+        }
+       ],
+       [
+        {
+         "key": "spiel",
+         "text": "spiel+en"
+        }
+       ]
+      ],
+      "punct": "?",
+      "plain": "Wollen wir am Sonntag Tennis spielen?",
+      "ru": "Давай в воскресенье поиграем в теннис?",
+      "audio": "audio/795e150c7022.m4a"
+     }
+    ],
+    "task": "karte",
+    "solved": true
+   }
+  }
+ ],
+ "exercises": [
+  {
+   "id": "freizeit-1",
+   "type": "choice",
+   "q": "Ich ___ leider nicht kommen.",
+   "options": [
+    "kann",
+    "kanne",
+    "kannt"
+   ],
+   "answer": 0,
+   "why": "*ich kann* — без окончания, как и *er kann*.",
+   "audio": "audio/36f71dab0299.m4a"
+  },
+  {
+   "id": "freizeit-2",
+   "type": "gap",
+   "q": "___ du Tennis spielen?",
+   "answer": [
+    "Kannst"
+   ],
+   "hint": "können",
+   "ru": "Ты умеешь играть в теннис?",
+   "audio": "audio/20a13de81444.m4a"
+  },
+  {
+   "id": "freizeit-3",
+   "type": "gap",
+   "q": "Anna ___ am Sonntag schwimmen.",
+   "answer": [
+    "will"
+   ],
+   "hint": "wollen",
+   "why": "*er / sie will* — без окончания, как и *ich will*.",
+   "audio": "audio/884317c6f7ce.m4a"
+  },
+  {
+   "id": "freizeit-4",
+   "type": "gap",
+   "q": "___ ihr am Freitag kommen?",
+   "answer": [
+    "Könnt"
+   ],
+   "hint": "können",
+   "why": "*ihr könnt* — во множественном числе возвращается *ö*.",
+   "audio": "audio/49846394be9d.m4a"
+  },
+  {
+   "id": "freizeit-5",
+   "type": "gap",
+   "q": "Was ___ du am Wochenende machen?",
+   "answer": [
+    "willst"
+   ],
+   "hint": "wollen",
+   "why": "*du willst* — *i* в единственном числе и окончание *-st*.",
+   "audio": "audio/b3b1caa5112d.m4a"
+  },
+  {
+   "id": "freizeit-6",
+   "type": "choice",
+   "q": "Marco kann nicht gut ___.",
+   "options": [
+    "schwimmt",
+    "schwimmen",
+    "schwimme"
+   ],
+   "answer": 1,
+   "why": "После модального глагола — инфинитив, и он стоит в конце.",
+   "audio": "audio/fd7b6a0715a5.m4a"
+  },
+  {
+   "id": "freizeit-7",
+   "type": "choice",
+   "q": "Какое предложение верное?",
+   "options": [
+    "Ich will spielen Tennis.",
+    "Ich will Tennis spielen.",
+    "Ich Tennis spielen will."
+   ],
+   "answer": 1,
+   "why": "Инфинитив — в самом конце: *Ich will Tennis spiel+en.*"
+  },
+  {
+   "id": "freizeit-8",
+   "type": "order",
+   "ru": "Я умею играть на гитаре.",
+   "de": "Ich kann Gitarre spielen.",
+   "audio": "audio/7ea70ec926e8.m4a"
+  },
+  {
+   "id": "freizeit-9",
+   "type": "order",
+   "ru": "В субботу я хочу почитать.",
+   "de": "Am Samstag will ich lesen.",
+   "also": [
+    "Ich will am Samstag lesen."
+   ],
+   "why": "*Am Samstag* на первом месте — *will* второй, *ich* за ним, *lesen* в конце.",
+   "audio": "audio/d6031a661c59.m4a"
+  },
+  {
+   "id": "freizeit-10",
+   "type": "order",
+   "ru": "К сожалению, я не могу пойти с вами.",
+   "de": "Ich kann leider nicht mitkommen.",
+   "also": [
+    "Leider kann ich nicht mitkommen."
+   ],
+   "audio": "audio/df4f218b5ebb.m4a"
+  },
+  {
+   "id": "freizeit-11",
+   "type": "choice",
+   "q": "Как сказать «В футбол я люблю играть больше» (чем в теннис)?",
+   "options": [
+    "Ich spiele gern Fußball.",
+    "Ich spiele lieber Fußball.",
+    "Ich spiele am liebsten Fußball."
+   ],
+   "answer": 1,
+   "why": "*lieber* — «больше люблю»: сравниваем два занятия. *am liebsten* — «больше всего», из всех."
+  },
+  {
+   "id": "freizeit-12",
+   "type": "choice",
+   "q": "___ lese ich. Das ist mein Hobby Nummer eins!",
+   "options": [
+    "Gern",
+    "Lieber",
+    "Am liebsten"
+   ],
+   "answer": 2,
+   "why": "*am liebsten* — «больше всего», лучшее из всех.",
+   "audio": "audio/e6a77d1a0b57.m4a"
+  },
+  {
+   "id": "freizeit-13",
+   "type": "choice",
+   "q": "Hast du am Freitag Zeit? – ___ Da arbeite ich.",
+   "options": [
+    "Gute Idee!",
+    "Leider nicht.",
+    "Ja, gern!"
+   ],
+   "answer": 1,
+   "why": "Отказ — *Leider nicht.* — и сразу причина: *Da arbeite ich.*",
+   "audio": "audio/f70f25471918.m4a"
+  },
+  {
+   "id": "freizeit-14",
+   "type": "choice",
+   "q": "Как предложить другу вместе приготовить ужин?",
+   "options": [
+    "Wollen wir zusammen kochen?",
+    "Wir wollen zusammen kochen.",
+    "Willst du kochen zusammen?"
+   ],
+   "answer": 0,
+   "why": "*Wollen wir …?* — «давай …?»: глагол первым, инфинитив в конце."
+  },
+  {
+   "id": "freizeit-15",
+   "type": "gap",
+   "q": "Am Samstag ___ ich leider nicht. Mein Bruder ___ mich.",
+   "answer": [
+    "kann",
+    "besucht"
+   ],
+   "hint": "können / besuchen",
+   "ru": "В субботу я, к сожалению, не могу. Ко мне приезжает брат.",
+   "audio": "audio/881caf6d656d.m4a"
+  }
+ ]
+}

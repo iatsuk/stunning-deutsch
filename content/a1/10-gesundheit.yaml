@@ -1,0 +1,630 @@
+id: gesundheit
+order: 10
+title: Gute Besserung, Marco!
+ru: Здоровье и врач
+lede: >-
+  Марко просыпается с температурой и звонит во врачебную практику, а в
+  перерыве между занятиями Анна звонит ему и даёт советы. Учимся говорить, что болит, записываться к
+  врачу, разбираем *müssen* и *dürfen* и повелительное наклонение для «ты» и
+  для компании друзей.
+goals:
+  - Назвать части тела и сказать, что у вас болит
+  - Записаться к врачу по телефону и понять, когда приходить
+  - Сказать, что нужно и что нельзя делать, — с *müssen* и *dürfen*
+  - "Дать совет другу или друзьям: *Trink viel Tee!* *Bleibt zu Hause!*"
+  - Понять сообщение из практики и написать преподавателю, что вы заболели
+grammar:
+  - Части тела
+  - Ich habe …schmerzen
+  - Модальные глаголы müssen и dürfen
+  - Повелительное наклонение на du и ihr
+exam: [hoeren-3, schreiben-2, sprechen-3]
+
+dialogues:
+  praxis:
+    title: Ein Termin beim Arzt
+    ru: Запись к врачу
+    place: Arztpraxis Dr. Hoffmann, Leipzig
+    people:
+      P: { name: Frau Klein, voice: Shelley }
+      M: { name: Marco, voice: Reed }
+    lines:
+      - P: Praxis Dr. Hoffmann, guten Morgen!
+        ru: Практика доктора Хофман, доброе утро!
+      - M: Guten Morgen, hier ist Marco Rossi. Ich brauche einen Termin, bitte.
+        ru: Доброе утро, это Марко Росси. Мне нужно записаться на приём.
+      - P: Was haben Sie denn, Herr Rossi?
+        ru: А что у вас, господин Росси?
+      - M: Ich habe Halsschmerzen und Kopfschmerzen. Und ich habe Fieber.
+        ru: У меня болит горло и голова. И у меня температура.
+      - P: Können Sie heute um Viertel nach elf kommen?
+        ru: Можете прийти сегодня в четверть двенадцатого?
+      - M: Ja, das geht. Muss ich etwas mitbringen?
+        ru: Да, могу. Мне нужно что-то взять с собой?
+      - P: Ja, bringen Sie bitte Ihre Versichertenkarte mit.
+        ru: Да, возьмите, пожалуйста, вашу карту медицинской страховки.
+      - M: Gut. Vielen Dank!
+        ru: Хорошо. Большое спасибо!
+      - P: Gute Besserung, Herr Rossi. Bis später!
+        ru: Выздоравливайте, господин Росси. До встречи!
+  tipps:
+    title: Gute Besserung!
+    ru: Выздоравливай!
+    place: Am Telefon
+    people:
+      A: { name: Anna, voice: Anna }
+      M: { name: Marco, voice: Reed }
+    lines:
+      - A: Hallo, Marco! Du bist heute nicht im Kurs. Bist du krank?
+        ru: Привет, Марко! Тебя сегодня нет на курсе. Ты заболел?
+      - M: Ja, leider. Ich habe Fieber, und mein Hals tut weh.
+        ru: Да, к сожалению. У меня температура, и болит горло.
+      - A: Oh nein! Und was sagt der Arzt?
+        ru: О нет! А что говорит врач?
+      - M: Ich muss drei Tage im Bett bleiben. Und ich darf keinen Sport machen.
+        ru: Мне нужно три дня лежать в постели. И спортом заниматься нельзя.
+      - A: Oh, du Armer! Trink viel Tee und schlaf viel! Und nimm die Tabletten!
+        ru: Ох, бедняга! Пей много чая и побольше спи! И принимай таблетки!
+      - M: Ja, Frau Doktor!
+        ru: Слушаюсь, доктор!
+      - A: Lena und ich kommen morgen. Wir bringen Suppe mit.
+        ru: Мы с Леной завтра придём. Принесём суп.
+      - M: Super, danke! Kommt um vier! Und bringt bitte auch Schokolade mit!
+        ru: Супер, спасибо! Приходите в четыре! И принесите, пожалуйста, ещё шоколад!
+      - A: Schokolade? Na gut. Gute Besserung, Marco!
+        ru: Шоколад? Ну ладно. Выздоравливай, Марко!
+
+words:
+  koerper:
+    title: Der Körper
+    ru: Части тела
+    items:
+      - { de: der Kopf, ru: голова, pl: Köpfe }
+      - { de: das Auge, ru: глаз, pl: Augen }
+      - { de: das Ohr, ru: ухо, pl: Ohren }
+      - { de: die Nase, ru: нос, pl: Nasen }
+      - { de: der Zahn, ru: зуб, pl: Zähne }
+      - { de: der Hals, ru: "горло, шея", pl: Hälse }
+      - { de: der Arm, ru: "рука (от плеча)", pl: Arme }
+      - { de: die Hand, ru: кисть руки, pl: Hände }
+      - { de: der Bauch, ru: живот, pl: Bäuche }
+      - { de: der Rücken, ru: спина, pl: Rücken, note: мн. ч. не меняется }
+      - { de: das Bein, ru: нога, pl: Beine }
+      - { de: der Fuß, ru: ступня, pl: Füße }
+  krank:
+    title: Krank sein
+    ru: Когда болеешь
+    items:
+      - { de: krank, ru: больной, note: Ich bin krank. }
+      - { de: gesund, ru: здоровый }
+      - { de: die Erkältung, ru: простуда, pl: Erkältungen }
+      - { de: das Fieber, ru: "температура, жар", pl: "-", note: Ich habe Fieber. }
+      - { de: der Husten, ru: кашель, pl: "-", note: Ich habe Husten. }
+      - { de: der Schnupfen, ru: насморк, pl: "-", note: Ich habe Schnupfen. }
+      - { de: der Schmerz, ru: боль, pl: Schmerzen, note: обычно во мн. ч. }
+      - { de: wehtun, ru: болеть, note: Mein Kopf tut weh. }
+      - { de: Gute Besserung!, ru: Выздоравливайте! }
+  praxis:
+    title: In der Arztpraxis
+    ru: У врача
+    items:
+      - { de: der Arzt, ru: врач, pl: Ärzte, note: "женщина — die Ärztin" }
+      - { de: die Praxis, ru: кабинет врача, pl: Praxen }
+      - { de: das Wartezimmer, ru: приёмная, pl: Wartezimmer }
+      - { de: der Termin, ru: "запись, назначенное время", pl: Termine, note: einen Termin machen }
+      - { de: die Versichertenkarte, ru: карта медицинской страховки, pl: Versichertenkarten }
+      - { de: das Rezept, ru: рецепт, pl: Rezepte }
+      - { de: die Apotheke, ru: аптека, pl: Apotheken }
+      - { de: die Tablette, ru: таблетка, pl: Tabletten }
+      - { de: das Medikament, ru: лекарство, pl: Medikamente }
+  rat:
+    title: Was hilft?
+    ru: Глаголы для советов
+    items:
+      - { de: trinken, ru: пить, note: Trink viel Tee! }
+      - { de: schlafen, ru: спать, note: "du schläfst → Schlaf!" }
+      - { de: nehmen, ru: "принимать, брать", note: "du nimmst → Nimm!" }
+      - { de: essen, ru: есть, note: "du isst → Iss!" }
+      - { de: bleiben, ru: оставаться, note: im Bett bleiben }
+      - { de: gehen, ru: идти, note: zum Arzt gehen }
+      - { de: rauchen, ru: курить, note: Rauch nicht! }
+      - { de: müssen, ru: "быть должным, нужно", note: "ich muss, du musst" }
+      - { de: dürfen, ru: "иметь право, можно", note: "ich darf, du darfst" }
+
+tables:
+  schmerzen:
+    title: Was tut weh?
+    ru: Что болит
+    head: [wehtun, "Ich habe …schmerzen", По-русски]
+    ruCols: [2]
+    rows:
+      - ["Mein *Kopf* tut weh.", "Ich habe *Kopf*schmerzen.", болит голова]
+      - ["Mein *Hals* tut weh.", "Ich habe *Hals*schmerzen.", болит горло]
+      - ["Mein *Bauch* tut weh.", "Ich habe *Bauch*schmerzen.", болит живот]
+      - ["Mein *Rücken* tut weh.", "Ich habe *Rücken*schmerzen.", болит спина]
+      - ["Mein *Zahn* tut weh.", "Ich habe *Zahn*schmerzen.", болит зуб]
+      - ["Meine *Ohren* tun weh.", "Ich habe *Ohren*schmerzen.", болят уши]
+      - ["Meine *Hand* tut weh.", "–", болит рука]
+    note: Слова на *-schmerzen* — всегда во множественном числе и без артикля.
+  modal:
+    title: müssen und dürfen
+    ru: нужно и можно
+    head: [Person, müssen, dürfen]
+    rows:
+      - [ich, muss, darf]
+      - [du, muss+t, darf+st]
+      - [er / sie / es, muss, darf]
+      - [wir, müss+en, dürf+en]
+      - [ihr, müss+t, dürf+t]
+      - [sie / Sie, müss+en, dürf+en]
+    note: У *ich* и *er* окончания нет. Умлаут — только во множественном числе.
+  imperativ:
+    title: Imperativ
+    ru: Повелительное наклонение
+    head: [Präsens, du, ihr, Sie]
+    rows:
+      - [du trink+st, Trink!, Trink+t!, Trinken Sie!]
+      - [du bleib+st, Bleib!, Bleib+t!, Bleiben Sie!]
+      - [du schläf+st, Schlaf!, Schlaf+t!, Schlafen Sie!]
+      - [du nimm+st, Nimm!, Nehm+t!, Nehmen Sie!]
+      - [du iss+t, Iss!, Ess+t!, Essen Sie!]
+      - [du bring+st … mit, Bring … mit!, Bring+t … mit!, Bringen Sie … mit!]
+    note: >-
+      *du*: форма без *du* и без *-st*. *ihr*: форма без *ihr*. *Sie*: как
+      инфинитив, *Sie* — сразу за глаголом.
+
+tasks:
+  anruf:
+    kind: listen
+    part: hoeren-3
+    title: "Hören, Teil 3"
+    situation: Sie hören eine Nachricht auf dem Anrufbeantworter. Sie hören den Text zweimal.
+    voice: Shelley
+    text: >-
+      Guten Tag, Herr Rossi, hier ist die Praxis Dr. Hoffmann. Sie haben am
+      Freitag um zehn Uhr einen Termin. Das geht leider nicht: Frau Dr. Hoffmann
+      ist am Freitag nicht da. Können Sie am Montag um halb neun kommen? Bitte
+      rufen Sie uns kurz an. Vielen Dank und auf Wiederhören!
+    question: Wann ist der neue Termin?
+    options:
+      - Am Freitag um 10 Uhr.
+      - "Am Montag um 8:30 Uhr."
+      - Am Montag um 10 Uhr.
+    answer: 1
+  absage:
+    kind: message
+    part: schreiben-2
+    title: "Schreiben, Teil 2"
+    situation: >-
+      Sie sind krank und können morgen nicht zum Deutschkurs kommen. Schreiben
+      Sie eine E-Mail an Ihren Kursleiter, Herrn Schulz. Schreiben Sie zu jedem
+      Punkt ein bis zwei Sätze. Vergessen Sie nicht Anrede und Gruß.
+    to: Herr Schulz
+    subject: Ich bin krank
+    text: |
+      Lieber Herr Schulz,
+      …
+      Viele Grüße
+    points:
+      - Warum kommen Sie nicht?
+      - Wann kommen Sie wieder?
+      - Hausaufgaben?
+    sample:
+      - Lieber Herr Schulz,
+      - ich bin krank und kann morgen leider nicht zum Kurs kommen.
+      - Ich habe Fieber und Halsschmerzen. Ich muss drei Tage im Bett bleiben.
+      - Am Donnerstag komme ich wieder.
+      - Welche Hausaufgaben haben wir?
+      - Viele Grüße
+      - Marco
+
+steps:
+  - id: termin
+    chapter: scene
+    title: Звонок в практику
+    beats:
+      - read: >-
+          Утро понедельника. У Марко болит горло и голова — на курс он сегодня
+          не пойдёт. Сначала к врачу. В Германии к терапевту, *Hausarzt*,
+          обычно идут по записи, поэтому Марко звонит в практику. По телефону
+          представляются не через *Ich bin …*, а так: *Hier ist Marco Rossi* —
+          «это Марко Росси». И сразу о деле: *Ich brauche einen Termin* — «мне
+          нужно записаться на приём».
+        point: "По телефону: *Hier ist …*; к врачу: *Ich brauche einen Termin.*"
+        set: { view: dialogue, dialogue: praxis, reveal: 2 }
+      - read: >-
+          Секретарь спрашивает: *Was haben Sie denn?* — «А что у вас?».
+          Частица *denn* делает вопрос мягче и живее. Марко отвечает так, как
+          говорят немцы, — через *haben*: *Ich habe Halsschmerzen und
+          Kopfschmerzen*, буквально «у меня есть боли в горле и в голове». И
+          ещё пара, которую стоит запомнить: русское «у меня температура» —
+          по-немецки *Ich habe Fieber*.
+        point: "Боль и температура — через *haben*: *Ich habe Kopfschmerzen*, *Ich habe Fieber*"
+        set: { reveal: 4, focus: [2, 3] }
+      - read: >-
+          Приём — *um Viertel nach elf*, в 11:15: часы из шестой темы
+          пригодились. Марко уточняет: *Muss ich etwas mitbringen?* — «мне
+          нужно что-то взять с собой?». Это новый модальный глагол *müssen* —
+          «нужно, должен». В ответ — вежливая просьба на *Sie*: *Bringen Sie
+          bitte Ihre Versichertenkarte mit.* Карту медицинской страховки к
+          врачу берут всегда. На прощание больному желают выздоровления: *Gute
+          Besserung!*
+        point: "*Muss ich …?* — «мне нужно …?»; *Gute Besserung!* — «выздоравливайте!»"
+        set: { reveal: 9, focus: [4, 5, 6, 8] }
+
+  - id: tipps
+    chapter: scene
+    title: Советы Анны
+    beats:
+      - read: >-
+          В перерыве звонит Анна: Марко нет на курсе. Он показывает второй
+          способ сказать о боли: *Mein Hals tut weh* — «у меня болит горло».
+          Подлежащее здесь — сама часть тела, а глагол — *wehtun*, «болеть».
+          Потом Марко пересказывает слова врача: *Ich muss drei Tage im Bett
+          bleiben* — «три дня лежать в постели». И ещё: *Ich darf keinen Sport
+          machen* — спорт ему нельзя.
+        point: "*Mein Hals tut weh.* — «болит горло»: подлежащее — часть тела"
+        set: { view: dialogue, dialogue: tipps, reveal: 4, focus: [1, 3] }
+      - read: >-
+          Анна тут же даёт советы: *Trink viel Tee und schlaf viel! Und nimm
+          die Tabletten!* Это повелительное наклонение для «ты». Глагол стоит
+          первым, местоимения *du* нет, окончания *-st* тоже: *du trinkst* →
+          *Trink!*. По-русски мы тоже обходимся без «ты»: «пей», «спи». Марко
+          шутит в ответ: *Ja, Frau Doktor!* — «Слушаюсь, доктор!»
+        point: "Совет на «ты»: глагол первым, без *du* и без *-st*: *Trink viel Tee!*"
+        set: { reveal: 6, focus: [4, 5] }
+      - read: >-
+          *Lena und ich kommen morgen* — так по-немецки звучит русское «мы с
+          Леной придём». Сказать *wir mit Lena* нельзя: людей перечисляют через
+          *und*, а себя вежливо называют последним. Марко отвечает сразу обеим
+          подругам, поэтому берёт форму *ihr*: *Kommt um vier! Und bringt
+          bitte auch Schokolade mit!* Это та же форма, что в *ihr kommt*, только
+          без *ihr*.
+        point: "«Мы с Леной» — *Lena und ich*; двум друзьям: *Kommt um vier!*"
+        set: { reveal: 9, focus: [6, 7] }
+
+  - id: koerper
+    chapter: words
+    title: Части тела
+    beats:
+      - read: >-
+          Русские «рука» и «нога» по-немецки делятся на два слова. *Der Arm* —
+          рука от плеча, *die Hand* — кисть. *Das Bein* — нога, *der Fuß* —
+          ступня. Врач спросит точно, и ответ «рука» его не устроит. *Der Hals*
+          — и горло, и шея. Больше всего здесь слов мужского рода, но *das
+          Auge*, *das Ohr* и *das Bein* — среднего, а *die Nase* и *die Hand* —
+          женского.
+        point: "*der Arm* и *die Hand*, *das Bein* и *der Fuß* — у «руки» и «ноги» по два слова"
+        set: { view: words, words: koerper }
+
+  - id: krank
+    chapter: words
+    title: Когда болеешь
+    beats:
+      - read: >-
+          Простуда — *die Erkältung*. Её спутники — *der Husten*, кашель, и
+          *der Schnupfen*, насморк. Как и *das Fieber*, эти слова почти не
+          бывают во множественном числе и в рассказе о болезни идут без
+          артикля: *Ich habe Husten*, *Ich habe Schnupfen*. Противоположность
+          *krank* — *gesund*. Отсюда и *Gesundheit!* — так говорят, когда
+          кто-то чихнул.
+        point: "*Ich habe Fieber / Husten / Schnupfen* — без артикля"
+        set: { view: words, words: krank }
+
+  - id: praxis
+    chapter: words
+    title: У врача
+    beats:
+      - read: >-
+          Врач — *der Arzt*, женщина-врач — *die Ärztin*. Принимают они в
+          *Praxis*: это не «практика» в смысле опыта, а сам кабинет. Сначала
+          вы ждёте в *Wartezimmer* — сложное слово, род по последней части,
+          *das Zimmer*. С рецептом, *das Rezept*, идут в *Apotheke*. А
+          *Versichertenkarte* показывают на входе: без карты страховки приём
+          не начнётся.
+        point: "*die Praxis* — кабинет врача; *das Rezept* несут в *die Apotheke*"
+        set: { view: words, words: praxis }
+
+  - id: rat
+    chapter: words
+    title: Глаголы для советов
+    beats:
+      - read: >-
+          Эти глаголы пригодятся для советов. Посмотрите на подсказки: у многих
+          в форме *du* меняется гласная — *du schläfst*, *du nimmst*, *du
+          isst*. Это важно, потому что совет на «ты» строится именно от формы
+          *du*. И уже видно, что одна замена гласной в нём остаётся, а другая
+          — нет: *Nimm!*, но *Schlaf!*. Подробнее — в грамматике.
+        point: "*du schläfst → Schlaf!*, *du nimmst → Nimm!*, *du isst → Iss!*"
+        set: { view: words, words: rat }
+
+  - id: schmerzen
+    chapter: grammar
+    title: Что болит
+    beats:
+      - read: >-
+          Сказать о боли можно двумя способами. Первый — через *haben*: часть
+          тела плюс *-schmerzen*, одним словом: *Kopfschmerzen*,
+          *Bauchschmerzen*, *Zahnschmerzen*. Такое слово всегда во
+          множественном числе и без артикля. Второй способ — через *wehtun*:
+          *Mein Kopf tut weh*. Здесь подлежащее — часть тела, а *weh* уходит в
+          конец предложения, как отделяемая приставка.
+        point: "*Ich habe Kopfschmerzen.* = *Mein Kopf tut weh.*"
+        set: { view: table, table: schmerzen, focus: [0, 1, 2, 3, 4] }
+
+  - id: muessen
+    chapter: grammar
+    title: Нужно и нельзя
+    beats:
+      - read: >-
+          Вернёмся к словам врача. Простое предложение *Ich bleibe im Bett* —
+          «я лежу в постели», буквально «остаюсь в кровати». Глагол на втором
+          месте, конец пуст. Теперь добавим «нужно». В седьмой теме так
+          работали *können* и *wollen*, и *müssen* ведёт себя точно так же.
+          Следите за плиткой *bleibe*.
+        point: "*im Bett bleiben* — «лежать в постели», буквально «оставаться в кровати»"
+        set:
+          view: sentence
+          rows:
+            - de: [Ich, bleib+e, im Bett., ""]
+              ru: Я лежу в постели.
+      - read: >-
+          *Muss* встаёт на второе место, а *bleibe* уезжает в самый конец и
+          превращается в инфинитив *bleiben*. Между ними образуется рамка, и
+          всё остальное помещается внутри. По-русски «мне нужно» — с дательным
+          падежом, а по-немецки подлежащее самое обычное: *ich muss*,
+          буквально «я должен». Сказать *Mir muss* нельзя.
+        point: "*Ich muss im Bett bleiben.* — модальный глагол второй, инфинитив в конце"
+        set:
+          rows:
+            - de: [Ich, muss, im Bett, bleib+en.]
+              ru: Мне нужно лежать в постели.
+      - read: >-
+          Формы *müssen* и *dürfen* устроены как у *können*: у *ich* и *er*
+          окончания нет — *ich muss*, *er muss*, *ich darf*, *sie darf*. В
+          единственном числе пропадает умлаут: *müssen* → *ich muss*, *dürfen*
+          → *du darfst*. Во множественном он возвращается: *wir müssen*, *ihr
+          dürft*. Частая ошибка — *er musst* по образцу *er macht*.
+        point: "*ich muss, du musst, er muss* · *ich darf, du darfst, er darf*"
+        set: { view: table, table: modal }
+      - read: >-
+          *dürfen* — «можно, разрешено». Чаще всего его слышат с отрицанием:
+          *Du darfst nicht rauchen* — «тебе нельзя курить». Главная ловушка
+          этой темы: «нельзя» — это всегда *nicht dürfen*. *Du musst nicht
+          kommen* значит совсем другое — «тебе не нужно приходить», хочешь —
+          приходи. Английское must not тоже подведёт: по смыслу оно ближе к
+          *darf nicht*.
+        point: "«Нельзя» — *nicht dürfen*, «не нужно» — *nicht müssen*"
+        set:
+          view: sentence
+          rows:
+            - de: [Du, darf+st, nicht, rauch+en.]
+              ru: Тебе нельзя курить.
+            - de: [Du, muss+t, nicht, komm+en.]
+              ru: Тебе не нужно приходить.
+
+  - id: imperativ
+    chapter: grammar
+    title: Совет на «ты» и для друзей
+    beats:
+      - read: >-
+          Совет «лежи в постели» по-немецки — *Bleib im Bett!* Откуда эта
+          форма? Возьмём обычные предложения: *Du bleibst im Bett* — одному
+          другу и *Ihr bleibt im Bett* — нескольким. Из них за один шаг
+          получается совет или просьба. Следите за местоимениями на первой
+          позиции и за окончанием *-st*.
+        point: "Повелительное наклонение строится от форм *du* и *ihr*"
+        set:
+          view: sentence
+          rows:
+            - de: [Du, bleib+st, im Bett., ""]
+              ru: Ты лежишь в постели.
+            - de: [Ihr, bleib+t, im Bett., ""]
+              ru: Вы лежите в постели.
+      - read: >-
+          Местоимения исчезли, глагол встал первым, а первая позиция опустела —
+          как в вопросе да/нет. У *du* пропало и окончание *-st*: *Bleib!* У
+          *ihr* форма не изменилась: *Bleibt!* А вежливое *Sie*, как вы помните
+          из девятой темы, остаётся за глаголом: *Bleiben Sie im Bett!* Слово
+          *bitte* делает любую из трёх форм вежливой просьбой.
+        point: "*Bleib!* — другу, *Bleibt!* — друзьям, *Bleiben Sie!* — вежливо"
+        set:
+          rows:
+            - de: ["", Bleib, im Bett!, ""]
+              ru: Лежи в постели!
+            - de: ["", Bleib+t, im Bett!, ""]
+              ru: Лежите в постели! (друзьям)
+            - de: ["", Bleib+en, Sie im Bett!, ""]
+              ru: Лежите в постели! (вежливо)
+      - read: >-
+          Если в форме *du* меняется гласная, смотрите, какая. Умлаут
+          пропадает: *du schläfst* → *Schlaf!* А замена *e* на *i* остаётся:
+          *du nimmst* → *Nimm!*, *du isst* → *Iss!* У *ihr* сложностей нет:
+          *Schlaft!*, *Nehmt!*, *Esst!* Отделяемая приставка, как всегда,
+          уходит в конец: *Bring bitte Schokolade mit!* Точно так же, как в
+          вежливой просьбе из практики: *Bringen Sie bitte … mit!*
+        point: "Умлаут пропадает: *Schlaf!*; *e → i* остаётся: *Nimm!*, *Iss!*"
+        set: { view: table, table: imperativ, focus: [2, 3, 4, 5] }
+
+  - id: check
+    chapter: practice
+    title: Проверьте себя
+    beats:
+      - question: У вас болит рука. Как сказать об этом врачу?
+        read: >-
+          *Meine Hand tut weh.* Слово на *-schmerzen* есть не для каждой части
+          тела: *Handschmerzen* в обычной речи почти не говорят. А *wehtun*
+          подходит всегда. Следите за числом: если болят уши или ноги, глагол
+          во множественном — *Meine Ohren tun weh*, *Meine Beine tun weh*.
+          Ошибка *Meine Ohren tut weh* очень частая.
+        point: "*Meine Hand tut weh.* Мн. ч.: *Meine Ohren tun weh.*"
+        set: { view: table, table: schmerzen, focus: [5, 6] }
+      - question: Как спросить врача, можно ли вам завтра на курс?
+        read: >-
+          *Darf ich morgen zum Kurs gehen?* Разрешение — это *dürfen*. В
+          вопросе без W-слова модальный глагол встаёт первым, *ich* — сразу за
+          ним, а инфинитив *gehen* по-прежнему в конце: рамка никуда не
+          делась. Вопрос *Muss ich morgen zum Kurs gehen?* значил бы «я обязан
+          идти?» — а это совсем другое.
+        point: "*Darf ich …?* — «можно мне …?»; инфинитив в конце"
+        set:
+          view: sentence
+          rows:
+            - de: ["", Darf, ich morgen zum Kurs, geh+en?]
+              ru: Можно мне завтра на курс?
+      - question: Подруга кашляет. Как на «ты» посоветовать ей сходить к врачу и не курить?
+        read: >-
+          *Geh bitte zum Arzt! Und rauch nicht!* Берём формы *du gehst* и *du
+          rauchst*, убираем *du* и *-st* — глагол встаёт первым. *nicht* стоит
+          после глагола, как в обычном предложении *Du rauchst nicht*. А *zum
+          Arzt* — «к врачу» — это *zu* с дательным падежом из девятой темы.
+        point: "*Geh zum Arzt!* · *Rauch nicht!* — *nicht* после глагола"
+        set:
+          view: sentence
+          rows:
+            - de: ["", Geh, bitte zum Arzt!, ""]
+              ru: Сходи, пожалуйста, к врачу!
+            - de: ["", Rauch, nicht!, ""]
+              ru: Не кури!
+
+  - id: hoeren
+    chapter: exam
+    title: "Аудирование: сообщение из практики"
+    beats:
+      - read: >-
+          В третьей части аудирования звучат сообщения на автоответчике: от
+          друзей, из фирмы и очень часто — из врачебной практики. Каждое
+          звучит дважды. До прослушивания прочитайте вопрос и варианты ответа.
+          Здесь все три варианта — день и время, значит, слушать нужно именно
+          их. И будьте готовы: в таких сообщениях обычно звучат два времени —
+          старое и новое.
+        point: "Аудирование, часть 3: сначала прочитайте вопрос и варианты"
+        set: { view: task, task: anruf }
+      - question: Когда у Марко новый приём?
+        read: >-
+          Ответ b: в понедельник в 8:30. Пятница и десять часов в записи тоже
+          звучат, но это старый приём, и он отменяется: *Das geht leider
+          nicht.* Новое время — *halb neun*, «половина девятого», то есть 8:30,
+          а не 9:30. На таких деталях и строят ловушки. Заметьте и прощание по
+          телефону: *Auf Wiederhören!* — от *hören*, «слышать».
+        point: "Ловушка: звучат два времени. *halb neun* — это 8:30"
+        set: { solved: true }
+
+  - id: schreiben
+    chapter: exam
+    title: "Письмо: я заболел"
+    beats:
+      - read: >-
+          Во второй части письменного экзамена нужно написать короткое
+          сообщение — около 30 слов. В задании три пункта, и на каждый отвечают
+          одним-двумя предложениями: за пункт дают до трёх баллов. Ещё один
+          балл — за обращение и подпись. Ситуация знакомая: вы заболели и
+          пишете преподавателю, что не придёте на курс.
+        point: "Письмо: около 30 слов, три пункта, обращение и подпись"
+        set: { view: task, task: absage, reveal: 0 }
+      - read: >-
+          Образец закрывает все три пункта: почему автор не придёт, когда
+          вернётся и что с домашним заданием. Посмотрите на начало: после
+          обращения *Lieber Herr Schulz* ставится запятая, а следующая строка
+          начинается со строчной буквы — *ich bin krank …*. Заканчивают письмо
+          *Viele Grüße* и именем. Другу пишут *Lieber Marco* или *Liebe Anna*.
+        point: "*Lieber Herr …,* — запятая, дальше со строчной; в конце *Viele Grüße*"
+        set: { reveal: 7 }
+
+  - id: sprechen
+    chapter: exam
+    title: "Устный экзамен: просьба"
+    beats:
+      - read: >-
+          В третьей части устного экзамена вы получаете карточку с картинкой —
+          например, с окном — и просите о чём-то партнёра. Он реагирует: *Ja,
+          gern!* или *Ja, natürlich!* Повелительное наклонение с *bitte* —
+          самый короткий путь: *Mach bitte das Fenster auf!* С незнакомым
+          партнёром можно и на *Sie*. За просьбу дают до двух баллов, за
+          реакцию — один.
+        point: "Устный экзамен, часть 3: *Mach bitte … auf!* — *Ja, gern!*"
+        set:
+          view: sentence
+          rows:
+            - de: ["", Mach, bitte das Fenster, auf!]
+              ru: Открой, пожалуйста, окно!
+            - de: ["", Mach+en, Sie bitte das Fenster, auf!]
+              ru: Откройте, пожалуйста, окно!
+
+exercises:
+  - type: choice
+    q: Mein Kopf tut weh. Ich habe ___.
+    options: [Kopfschmerzen, Schmerzen Kopf, Kopf]
+    answer: 0
+    why: "Часть тела + *schmerzen* — одно слово во мн. ч.: *Kopfschmerzen*."
+  - type: choice
+    q: Meine Ohren ___ weh.
+    options: [tut, tun, tust]
+    answer: 1
+    why: "*Ohren* — множественное число, поэтому *tun*."
+  - type: choice
+    q: Как сказать «у меня болит горло»?
+    options: [Mein Hals tut weh., Mein Hals ist weh., Ich bin Halsschmerzen.]
+    answer: 0
+    why: "«Болеть» — *wehtun*: *Der Hals tut weh.* Или *Ich habe Halsschmerzen.*"
+  - type: gap
+    q: Ich ___ heute im Bett bleiben.
+    answer: [muss]
+    hint: müssen
+    ru: Мне сегодня нужно лежать в постели.
+  - type: gap
+    q: Du ___ nicht rauchen!
+    answer: [darfst]
+    hint: dürfen
+    why: "«Нельзя» — *nicht dürfen*: *du darf+st*."
+  - type: choice
+    q: Как сказать «Тебе не нужно приходить»?
+    options: [Du darfst nicht kommen., Du musst nicht kommen., Du kommst nicht.]
+    answer: 1
+    why: "*nicht müssen* — «не нужно», *nicht dürfen* — «нельзя»."
+  - type: gap
+    q: ___ ich Sport machen? – Nein, eine Woche nicht.
+    answer: [Darf]
+    hint: dürfen
+    why: "Спрашиваем разрешения — *dürfen*; в вопросе да/нет глагол первым."
+  - type: gap
+    q: Ihr ___ die Tabletten nehmen.
+    answer: [müsst]
+    hint: müssen
+    why: "*ihr müsst* — во множественном числе умлаут возвращается."
+  - type: choice
+    q: ___ viel Tee, Marco!
+    options: [Trinkst, Trink, Trinken]
+    answer: 1
+    why: "Совет на «ты»: без *du* и без *-st* — *Trink!*"
+  - type: gap
+    q: ___ viel, Marco!
+    answer: [Schlaf|Schlafe]
+    hint: schlafen
+    why: "*du schläfst*, но *Schlaf!* — умлаут пропадает."
+  - type: gap
+    q: ___ die Tabletten, Marco!
+    answer: [Nimm]
+    hint: nehmen
+    why: "*du nimmst* → *Nimm!*: замена *e → i* остаётся."
+  - type: choice
+    q: Anna und Lena, ___ bitte um vier!
+    options: [komm, kommt, kommen]
+    answer: 1
+    why: "Двум друзьям — форма *ihr* без *ihr*: *Kommt!*"
+  - type: gap
+    q: ___ Sie bitte Ihre Versichertenkarte ___!
+    answer: [Bringen, mit]
+    hint: mitbringen
+    why: "Вежливо: глагол первым, *Sie* за ним, приставка *mit* — в конце."
+  - type: order
+    ru: Мне нужно лежать в постели.
+    de: Ich muss im Bett bleiben.
+    why: "*muss* — на втором месте, *bleiben* — в конце."
+  - type: order
+    ru: Можно мне завтра прийти на курс?
+    de: Darf ich morgen zum Kurs kommen?
+  - type: order
+    ru: Сходи, пожалуйста, к врачу!
+    de: Geh bitte zum Arzt!
+    also: [Bitte geh zum Arzt!]

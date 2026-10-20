@@ -1,0 +1,593 @@
+id: familie
+order: 3
+title: Das ist meine Familie.
+ru: Семья
+lede: >-
+  Анна показывает Марко фотографию семьи из Польши, а Марко рассказывает о
+  сёстрах в Риме. Учимся говорить «мой», «твой», «её» и «наш», отвечать
+  «нет» с *kein* и разбираемся, как немецкие существительные образуют
+  множественное число.
+goals:
+  - Представить свою семью по фотографии
+  - Спросить о семье собеседника — на «ты» и на «Вы»
+  - Сказать, кто у вас есть, а кого нет
+  - Образовать множественное число самых нужных слов
+  - Задать вопрос по карточке на устном экзамене и понять короткое письмо
+grammar:
+  - Притяжательные mein, dein, sein, ihr …
+  - ein / eine и kein / keine
+  - Множественное число
+exam: [sprechen-2, lesen-1]
+
+dialogues:
+  foto:
+    title: Das ist meine Familie
+    ru: Это моя семья
+    place: Café, Leipzig
+    people:
+      A: { name: Anna, voice: Anna }
+      M: { name: Marco, voice: Reed }
+    lines:
+      - M: Anna, ist das ein Foto aus Polen?
+        ru: Анна, это фото из Польши?
+      - A: Ja, das ist meine Familie. Das sind meine Eltern, Marta und Tomasz.
+        ru: Да, это моя семья. Это мои родители, Марта и Томаш.
+      - M: Und wer ist das? Dein Bruder?
+        ru: А это кто? Твой брат?
+      - A: Ja, das ist mein Bruder Piotr. Und das ist Jan. Ich habe zwei Brüder.
+        ru: Да, это мой брат Пётр. А это Ян. У меня два брата.
+      - M: Und hast du auch eine Schwester?
+        ru: А сестра у тебя тоже есть?
+      - A: Nein, ich habe keine Schwester.
+        ru: Нет, сестры у меня нет.
+      - M: Und der Hund? Ist das euer Hund?
+        ru: А собака? Это ваш пёс?
+      - A: Ja, das ist unser Hund Burek. Er ist schon zwölf Jahre alt.
+        ru: Да, это наш пёс Бурек. Ему уже двенадцать лет.
+  marco:
+    title: Drei Schwestern und ein Baby
+    ru: Три сестры и малыш
+    place: Café, Leipzig
+    people:
+      A: { name: Anna, voice: Anna }
+      M: { name: Marco, voice: Reed }
+    lines:
+      - A: Und du, Marco? Hast du Geschwister?
+        ru: А ты, Марко? У тебя есть братья и сёстры?
+      - M: Ja, ich habe drei Schwestern. Das ist Giulia, meine Schwester in Rom.
+        ru: Да, у меня три сестры. Это Джулия, моя сестра в Риме.
+      - A: Und wer ist das? Ist das ihr Mann?
+        ru: А это кто? Это её муж?
+      - M: Ja, das ist Luca, ihr Mann. Und das ist ihr Baby.
+        ru: Да, это Лука, её муж. А это её малыш.
+      - A: Ein Baby! Ist das ein Junge oder ein Mädchen?
+        ru: Малыш! Это мальчик или девочка?
+      - M: Ein Mädchen – Sofia. Ich bin jetzt Onkel!
+        ru: Девочка — София. Я теперь дядя!
+      - A: Toll! Und deine Eltern? Wohnen sie auch in Rom?
+        ru: Здорово! А твои родители? Они тоже живут в Риме?
+      - M: Ja, unsere Familie ist in Rom. Nur ich bin hier in Leipzig.
+        ru: Да, наша семья в Риме. Только я здесь, в Лейпциге.
+
+words:
+  familie:
+    title: Die Familie
+    ru: Семья
+    items:
+      - { de: die Familie, ru: семья, pl: Familien }
+      - { de: die Eltern, ru: родители, pl: pl }
+      - { de: der Vater, ru: отец, pl: Väter, note: по-домашнему — Papa }
+      - { de: die Mutter, ru: мать, pl: Mütter, note: по-домашнему — Mama }
+      - { de: das Kind, ru: ребёнок, pl: Kinder }
+      - { de: der Sohn, ru: сын, pl: Söhne }
+      - { de: die Tochter, ru: дочь, pl: Töchter }
+      - { de: die Geschwister, ru: братья и сёстры, pl: pl, note: одно слово на всех }
+      - { de: der Bruder, ru: брат, pl: Brüder }
+      - { de: die Schwester, ru: сестра, pl: Schwestern }
+  verwandte:
+    title: Großeltern und Verwandte
+    ru: Бабушки, дедушки и другие родственники
+    items:
+      - { de: die Großeltern, ru: бабушка и дедушка, pl: pl }
+      - { de: der Opa, ru: дедушка, pl: Opas, note: официально — der Großvater }
+      - { de: die Oma, ru: бабушка, pl: Omas, note: официально — die Großmutter }
+      - { de: der Onkel, ru: дядя, pl: Onkel }
+      - { de: die Tante, ru: тётя, pl: Tanten }
+      - { de: der Cousin, ru: двоюродный брат, pl: Cousins, note: "[кузэ́н]" }
+      - { de: die Cousine, ru: двоюродная сестра, pl: Cousinen, note: "[кузи́не]" }
+      - { de: der Enkel, ru: внук, pl: Enkel }
+      - { de: die Enkelin, ru: внучка, pl: Enkelinnen }
+  leute:
+    title: Wer ist das?
+    ru: Кто это?
+    items:
+      - { de: der Mann, ru: "мужчина; муж", pl: Männer }
+      - { de: die Frau, ru: "женщина; жена", pl: Frauen, note: и обращение — Frau Weber }
+      - { de: der Junge, ru: мальчик, pl: Jungen }
+      - { de: das Mädchen, ru: девочка, pl: Mädchen, note: "средний род, как das Kind" }
+      - { de: das Baby, ru: "малыш, младенец", pl: Babys }
+      - { de: der Freund, ru: "друг; парень", pl: Freunde }
+      - { de: die Freundin, ru: "подруга; девушка", pl: Freundinnen }
+      - { de: der Hund, ru: собака, pl: Hunde, note: "мужской род: der Hund — er" }
+      - { de: die Katze, ru: кошка, pl: Katzen }
+  stand:
+    title: Familienstand
+    ru: Семейное положение
+    items:
+      - { de: verheiratet, ru: женат / замужем, note: Ich bin verheiratet. }
+      - { de: ledig, ru: не женат / не замужем, note: слово из анкет }
+      - { de: geschieden, ru: разведён / разведена }
+      - { de: der Partner, ru: партнёр, pl: Partner }
+      - { de: die Partnerin, ru: партнёрша, pl: Partnerinnen }
+
+tables:
+  possessiv:
+    title: Possessivartikel
+    ru: Чей? — притяжательные слова
+    head: [Person, "der · das", "die · Plural", По-русски]
+    ruCols: [3]
+    rows:
+      - [ich, mein, mein+e, "мой, моя, мои"]
+      - [du, dein, dein+e, твой]
+      - [er / es, sein, sein+e, его]
+      - [sie, ihr, ihr+e, её]
+      - [wir, unser, unser+e, наш]
+      - [ihr, euer, eur+e, "ваш — друзьям"]
+      - [sie, ihr, ihr+e, их]
+      - [Sie, Ihr, Ihr+e, "Ваш — вежливо"]
+    note: "Корень — по владельцу, окончание — по слову после него: *sein Sohn*, *seine Tochter*."
+  einkein:
+    title: "ein, kein, mein"
+    ru: Артикли и отрицание
+    head: [Артикль, der Bruder, die Schwester, das Kind, die Kinder]
+    ruCols: [0]
+    rows:
+      - [определённый, der, die, das, die]
+      - [неопределённый, ein, ein+e, ein, "–"]
+      - [отрицание, kein, kein+e, kein, kein+e]
+      - [притяжательный, mein, mein+e, mein, mein+e]
+    note: "*kein* и *mein* изменяются как *ein*, но у них есть множественное число: *keine Kinder*, *meine Kinder*."
+  plural:
+    title: Plural
+    ru: Множественное число
+    head: [Singular, Plural, Как образуется]
+    ruCols: [2]
+    rows:
+      - [der Hund, die Hund+e, "*-e*"]
+      - [der Sohn, "die S*ö*hn+e", "умлаут + *-e*"]
+      - [das Kind, die Kind+er, "*-er*"]
+      - [der Mann, "die M*ä*nn+er", "умлаут + *-er*"]
+      - [die Schwester, die Schwester+n, "*-n*"]
+      - [die Frau, die Frau+en, "*-en*"]
+      - [der Bruder, "die Br*ü*der", только умлаут]
+      - [der Onkel, die Onkel, без изменений]
+      - [das Foto, die Foto+s, "*-s*"]
+    note: "Во множественном числе артикль всегда *die*. Форму учите вместе со словом: *der Bruder — die Brüder*."
+
+tasks:
+  karte:
+    kind: card
+    part: sprechen-2
+    title: Sprechen, Teil 2
+    situation: Fragen und antworten Sie.
+    theme: Familie
+    word: Kinder
+    sample:
+      - Hast du Kinder?
+      - Nein, ich habe keine Kinder. Aber meine Schwester hat ein Baby.
+  brief:
+    kind: message
+    part: lesen-1
+    title: Lesen, Teil 1
+    situation: Lesen Sie die E-Mail. Ist die Aussage richtig oder falsch?
+    from: Marco Rossi
+    to: Anna Nowak
+    subject: Besuch aus Rom
+    text: |-
+      Liebe Anna,
+      meine Schwester Giulia ist jetzt hier in Leipzig! Ihr Mann Luca und ihr Baby Sofia sind auch hier. Sofia ist drei Monate alt. Giulia spricht ein bisschen Deutsch, aber Luca spricht nur Italienisch und Englisch. Hast du heute Abend Zeit?
+      Viele Grüße
+      Marco
+    statement: Sofia ist Marcos Tochter.
+    answer: false
+
+steps:
+  - id: foto
+    chapter: scene
+    title: Фотография из Польши
+    beats:
+      - read: >-
+          После занятия Марко замечает у Анны в телефоне фотографию: *Ist das
+          ein Foto aus Polen?* — «это фото из Польши?». Анна кивает: *Das ist
+          meine Familie*, а потом — *Das sind meine Eltern*. Заметьте: «это»
+          по-немецки всегда *das*, но глагол меняется. Об одном человеке или
+          предмете говорят *das ist*, о нескольких — *das sind*. В русском
+          глагола здесь нет вовсе.
+        point: "*Das ist* — один, *Das sind* — несколько: *Das sind meine Eltern.*"
+        set: { view: dialogue, dialogue: foto, reveal: 2 }
+      - read: >-
+          Марко спрашивает *Dein Bruder?* — «твой брат?», и Анна отвечает *Ja,
+          das ist mein Bruder Piotr.* Как русские «мой» и «моя», немецкие
+          *mein* и *dein* меняют окончание: *meine Familie*, но *mein Bruder*.
+          Почему так, разберём в грамматике. А в *zwei Brüder* — первое
+          множественное число темы: над *u* появились две точки, и больше
+          ничего не изменилось.
+        point: "*mein Bruder*, но *meine Familie* — окончание зависит от слова"
+        set: { reveal: 4, focus: [2, 3] }
+      - read: >-
+          На вопрос *Hast du auch eine Schwester?* Анна отвечает *Nein, ich
+          habe keine Schwester.* По-русски «сестры нет», а по-немецки
+          отрицание встаёт прямо перед словом: *keine* — «никакой». Дальше на
+          фото собака. Марко спрашивает *Ist das euer Hund?* — «ваш», то есть
+          всей семьи. Анна отвечает *unser Hund* — «наш» — и говорит о нём
+          *er*: *der Hund* мужского рода.
+        point: "*Ich habe keine Schwester.* — «У меня нет сестры»"
+        set: { reveal: 8, focus: [4, 5, 6, 7] }
+
+  - id: marco
+    chapter: scene
+    title: Три сестры и малыш
+    beats:
+      - read: >-
+          Теперь очередь Марко. *Geschwister* — одно слово для братьев и
+          сестёр вместе, в русском такого нет. У Марко три сестры, и он
+          показывает Джулию. Анна спрашивает *Ist das ihr Mann?* — «это её
+          муж?». *ihr* здесь не «вы», как в первой теме, а «её»: владелица —
+          Джулия. А *der Mann* — это и «мужчина», и «муж».
+        point: "*ihr Mann* — «её муж»; *der Mann* — и мужчина, и муж"
+        set: { view: dialogue, dialogue: marco, reveal: 4, focus: [1, 2, 3] }
+      - read: >-
+          *Ist das ein Junge oder ein Mädchen?* — оба раза *ein*, потому что
+          *das Mädchen* среднего рода, как *das Kind* и *das Baby*. Это
+          правило грамматики, а не биологии: слова на *-chen* всегда среднего
+          рода. Марко теперь дядя — *Ich bin jetzt Onkel*, без артикля, как с
+          профессией. А *unsere Familie* — «наша семья»: снова *-e* перед
+          словом с *die*.
+        point: "*das Mädchen* — средний род: *ein Mädchen*"
+        set: { reveal: 8, focus: [4, 5, 7] }
+
+  - id: familie
+    chapter: words
+    title: Самые близкие
+    beats:
+      - read: >-
+          Учите слова сразу с множественным числом: *der Bruder — die
+          Brüder*, *die Tochter — die Töchter*. Угадать его почти никогда
+          нельзя, поэтому на карточках оно всегда рядом. Два слова здесь
+          бывают только во множественном: *die Eltern* и *die Geschwister*.
+          Об одном родителе говорят просто *Vater* или *Mutter*, а о брате или
+          сестре — *Bruder* или *Schwester*.
+        point: "*die Eltern*, *die Geschwister* — только мн. ч."
+        set: { view: words, words: familie }
+
+  - id: verwandte
+    chapter: words
+    title: Бабушки, дяди, кузены
+    beats:
+      - read: >-
+          Для бабушки и дедушки есть по два слова. *Oma* и *Opa* — тёплые,
+          домашние, их без стеснения говорят и взрослые: *meine Oma*.
+          *Großmutter* и *Großvater* звучат официальнее, как в анкете или в
+          письме. Двоюродные брат и сестра — *der Cousin* и *die Cousine*:
+          слова пришли из французского и читаются по-французски — «кузэн»,
+          «кузине».
+        point: "*Oma*, *Opa* — по-домашнему; *Großmutter*, *Großvater* — официально"
+        set: { view: words, words: verwandte }
+
+  - id: leute
+    chapter: words
+    title: Мужчина, женщина, ребёнок
+    beats:
+      - read: >-
+          *der Mann* — и «мужчина», и «муж», *die Frau* — и «женщина», и
+          «жена», и обращение, как в *Frau Weber*. Значение подсказывает
+          контекст: *mein Mann* — точно муж. С *der Freund* и *die Freundin*
+          так же: это и друг или подруга, и парень или девушка. И запомните
+          род: *das Mädchen* — среднего, а собака *der Hund* — мужского,
+          поэтому про Бурека говорят *er*.
+        point: "*mein Mann* — муж, *meine Frau* — жена; *der Freund* — друг или парень"
+        set: { view: words, words: leute }
+
+  - id: stand
+    chapter: words
+    title: Семейное положение
+    beats:
+      - read: >-
+          Эти слова встречаются в анкетах — в поле *Familienstand*.
+          *verheiratet* — и «женат», и «замужем»: немецкому всё равно,
+          мужчина вы или женщина. *ledig* — не состоите в браке, *geschieden*
+          — в разводе. О семейном положении говорят через *sein*, как о
+          возрасте: *Ich bin verheiratet*, *Ich bin ledig*. *Partner* и
+          *Partnerin* — те, с кем живут вместе.
+        point: "*Ich bin verheiratet / ledig / geschieden.* — с *sein*"
+        set: { view: words, words: stand }
+
+  - id: mein
+    chapter: grammar
+    title: Мой, моя, мои
+    beats:
+      - read: >-
+          Начнём со схемы: *Das ist mein Vater.* *Das* — на первой позиции,
+          глагол — на второй, *mein Vater* — одна группа в середине.
+          Притяжательное слово стоит перед существительным на месте артикля:
+          *der Vater* — *mein Vater*. Вместе их не ставят: *der mein Vater* —
+          ошибка, так же как по-английски нельзя сказать the my father.
+        point: "*mein* стоит вместо артикля: *der Vater* → *mein Vater*"
+        set:
+          view: sentence
+          rows:
+            - de: [Das, ist, mein Vater., ""]
+              ru: Это мой отец.
+      - read: >-
+          Теперь мама: *Das ist meine Mutter.* У *mein* появилось окончание
+          *-e*, потому что *die Mutter* женского рода. Правило простое: перед
+          словом с *der* и *das* — просто *mein*, перед словом с *die* —
+          *meine*. Как в русском «мой отец» и «моя мать», только мужской и
+          средний род в немецком совпадают: *mein Vater*, *mein Kind*.
+        point: "*der* / *das* → *mein*, *die* → *mein+e*"
+        set:
+          rows:
+            - de: [Das, ist, mein+e Mutter., ""]
+              ru: Это моя мать.
+      - read: >-
+          Во множественном числе — тоже *-e*: *meine Eltern*, *meine Brüder*.
+          И меняется глагол: *das sind*. Русскому уху это непривычно: «это»
+          одно, а глагол во множественном числе. Но немецкий глагол смотрит не
+          на *das*, а на тех, о ком идёт речь. Поэтому *Das sind meine
+          Eltern*, но *Das ist meine Familie* — семья одна.
+        point: "Мн. ч.: *Das sind mein+e Eltern.*"
+        set:
+          rows:
+            - de: [Das, sind, mein+e Eltern., ""]
+              ru: Это мои родители.
+
+  - id: wessen
+    chapter: grammar
+    title: Его или её
+    beats:
+      - read: >-
+          У каждого личного местоимения есть своё притяжательное слово: *ich*
+          — *mein*, *du* — *dein*. В третьем лице всё решает владелец, как в
+          русском «его» и «её»: Пётр и *sein Sohn*, Джулия и *ihr Mann*. С
+          глаголом *sein* — «быть» — это слово просто совпадает. А в отличие
+          от русского, у «его» и «её» есть окончание — по слову после них:
+          *seine Frau*, *ihre Tochter*.
+        point: "Корень — по владельцу (*sein* / *ihr*), окончание — по слову после него"
+        set: { view: table, table: possessiv, reveal: 4, focus: [2, 3] }
+      - read: >-
+          Главная ловушка — *ihr*. Это и «её», и «их», а с большой буквы —
+          вежливое «Ваш»: *Ist das Ihr Sohn, Frau Weber?* Плюс *ihr* — «вы» из
+          первой темы. Вторая ловушка: *euer* теряет *e* перед окончанием —
+          *euer Hund*, но *eure Kinder*. И третья: в немецком нет слова
+          «свой». «Анна и её брат» — *Anna und ihr Bruder*, «я и мой брат» —
+          *ich und mein Bruder*.
+        point: "Нет «свой»: *Anna und ihr Bruder*; *euer* → *eure Kinder*"
+        set: { reveal: 8, focus: [3, 5, 6, 7] }
+
+  - id: kein
+    chapter: grammar
+    title: "*ein* или *kein*"
+    beats:
+      - read: >-
+          *ein* и *eine* — неопределённый артикль, «какой-то, один из». Его
+          ставят, когда о предмете говорят впервые: *Ist das ein Foto?* Когда
+          он уже известен, нужен *der*, *die* или *das*: *Und der Hund?*
+          Окончания у *ein* те же, что у *mein*: *ein Junge*, *eine
+          Schwester*, *ein Mädchen*. А множественного числа у *ein* нет:
+          просто *zwei Brüder* или *Brüder*.
+        point: "*ein* / *eine* — когда говорим впервые; во мн. ч. артикля нет"
+        set: { view: table, table: einkein, reveal: 2 }
+      - read: >-
+          Отрицание существительного — *kein*: *Ich habe keine Schwester*,
+          *Marco hat keine Kinder*. Не путайте его с *nein*: *nein* — ответ на
+          вопрос, а *kein* стоит прямо перед словом, на месте артикля.
+          Окончания — как у *mein*, включая множественное: *keine Kinder*.
+          Осторожно с мужским родом после *haben*: «у меня есть брат» — *Ich
+          habe einen Bruder*. Почему *einen*, узнаем в следующей теме.
+        point: "*kein* / *keine* — «нет» перед словом: *Ich habe keine Kinder.*"
+        set: { reveal: 4, focus: [2, 3] }
+
+  - id: plural
+    chapter: grammar
+    title: Много братьев и сестёр
+    beats:
+      - read: >-
+          Множественное число в немецком образуется пятью способами, и по
+          самому слову угадать способ трудно. Поэтому его учат вместе со
+          словом. Но подсказки есть. Слова с *der* и *das* часто получают *-e*
+          или *-er*: *die Hunde*, *die Kinder*. Нередко к окончанию
+          добавляется умлаут — две точки над гласной: *die Söhne*, *die
+          Männer*.
+        point: "*der* / *das*: часто *-e* или *-er*, иногда с умлаутом: *Söhne*, *Männer*"
+        set: { view: table, table: plural, reveal: 4 }
+      - read: >-
+          Слова с *die* почти всегда получают *-n* или *-en*: *die
+          Schwestern*, *die Frauen*, *die Tanten*. Слова на *-el* и *-er*
+          часто не меняются или меняют только гласную: *die Onkel*, *die
+          Brüder*. Короткие и заимствованные слова — на *-s*: *die Fotos*,
+          *die Omas*, *die Babys*. И главное: во множественном числе артикль
+          всегда *die*, какого бы рода ни было слово.
+        point: "*die*-слова — на *-(e)n*; артикль во мн. ч. — всегда *die*"
+        set: { reveal: 9, focus: [4, 5, 6, 7, 8] }
+      - read: >-
+          Множественное число меняет и всё вокруг. Сравните: *Mein Bruder
+          wohnt in Warschau* и *Meine Brüder wohnen in Warschau*. Группа
+          *meine Brüder* по-прежнему занимает одну позицию, глагол — вторую.
+          Но у *mein* появилось *-e*, а у глагола — окончание *-en*, как у
+          *wir* и *sie*. Проверяйте подлежащее: если оно во множественном
+          числе, глагол тоже.
+        point: "*Mein Bruder wohn+t* → *Mein+e Brüder wohn+en*"
+        set:
+          view: sentence
+          rows:
+            - de: [Mein Bruder, wohn+t, in Warschau., ""]
+              ru: Мой брат живёт в Варшаве.
+            - de: [Mein+e Brüder, wohn+en, in Warschau., ""]
+              ru: Мои братья живут в Варшаве.
+
+  - id: check
+    chapter: practice
+    title: Проверьте себя
+    beats:
+      - question: Как сказать «Это наши дети»?
+        read: >-
+          *Das sind unsere Kinder.* Детей несколько, поэтому глагол *sind*. От
+          *wir* — *unser*, а перед множественным числом — окончание *-e*:
+          *unsere*. Множественное от *das Kind* — *die Kinder*, с *-er*. Три
+          правила темы в одной короткой фразе. Обратите внимание: *unser* само
+          кончается на *-er*, но это часть корня, а не окончание.
+        point: "*Das sind unser+e Kinder.*"
+        set:
+          rows:
+            - de: [Das, sind, unser+e Kinder., ""]
+              ru: Это наши дети.
+      - question: Пётр женат. Как сказать о нём «Это его жена»?
+        read: >-
+          *Das ist seine Frau.* Владелец — Пётр, мужчина, поэтому корень
+          *sein*. Жена — *die Frau*, женский род, поэтому окончание *-e*. А о
+          муже Джулии скажут *ihr Mann*: корень *ihr* — по владелице,
+          окончания нет, потому что *der Mann*. Одно слово отвечает сразу на
+          два вопроса: чьё и какого рода.
+        point: "*seine Frau* — жена Петра; *ihr Mann* — муж Джулии"
+        set: { view: table, table: possessiv, focus: [2, 3] }
+      - question: Как ответить на *Hast du Kinder?*, если детей нет?
+        read: >-
+          *Nein, ich habe keine Kinder.* После *Nein* — запятая и обычный
+          порядок: подлежащее, глагол, остальное. *keine* — с окончанием *-e*,
+          потому что *Kinder* во множественном числе. Русское «детей нет»
+          дословно не переводится: немец говорит «я имею никаких детей» —
+          через *haben* и *kein*. Если дети есть, ответ строится так же, но с
+          числом: *Ja, ich habe zwei Kinder*.
+        point: "*Hast du Kinder?* — *Nein, ich habe keine Kinder.*"
+        before:
+          view: sentence
+          rows:
+            - de: ["", Ha+st, du Kinder?, ""]
+              ru: У тебя есть дети?
+        set:
+          rows:
+            - de: ["", Ha+st, du Kinder?, ""]
+              ru: У тебя есть дети?
+            - de: [Ich, hab+e, kein+e Kinder., ""]
+              ru: Нет, у меня нет детей.
+
+  - id: sprechen
+    chapter: exam
+    title: "Устный экзамен: часть 2"
+    beats:
+      - read: >-
+          Во второй части устного экзамена каждый тянет карточку: сверху тема,
+          в центре слово. По этому слову нужно задать вопрос партнёру, а потом
+          ответить на его вопрос. За вопрос дают до 2 баллов, за ответ — 1.
+          Вопрос может быть W-вопросом или вопросом да/нет — главное, чтобы в
+          нём было слово с карточки, а глагол стоял на своём месте.
+        point: "Часть 2: тема + слово → свой вопрос партнёру и ответ на его вопрос"
+        set: { view: task, task: karte, reveal: 0 }
+      - question: Тема — *Familie*, слово — *Kinder*. Какой вопрос задать?
+        read: >-
+          Самый простой — вопрос да/нет: *Hast du Kinder?* или вежливо *Haben
+          Sie Kinder?* Подойдёт и W-вопрос: *Wie alt sind deine Kinder?* — но
+          он предполагает, что дети есть. Партнёр отвечает полным
+          предложением: *Nein, ich habe keine Kinder.* Добавьте ещё одну фразу
+          — так ответ звучит увереннее: *Aber meine Schwester hat ein Baby.*
+        point: "Вопрос по карточке — со словом с карточки: *Haben Sie Kinder?*"
+        set: { reveal: 2 }
+
+  - id: lesen
+    chapter: exam
+    title: "Чтение: часть 1"
+    beats:
+      - read: >-
+          В первой части чтения — две короткие записки или письма и пять
+          утверждений: верно или неверно. Тексты простые, но утверждения
+          проверяют детали: кто кому кем приходится, сколько, когда. Здесь
+          Марко пишет Анне о сестре из Рима. Прочитайте утверждение до текста
+          — и ищите в письме именно то место, о котором оно.
+        point: "Чтение, часть 1: сначала утверждение, потом нужное место в тексте"
+        set: { view: task, task: brief }
+      - question: "*Sofia ist Marcos Tochter.* — richtig или falsch?"
+        read: >-
+          *Falsch.* В письме сказано *Ihr Mann Luca und ihr Baby Sofia* —
+          *ihr*, то есть ребёнок Джулии. Марко Софии — дядя, а не отец. На
+          таких маленьких словах, как *ihr* и *sein*, экзамен и ловит.
+          Кстати, *Marcos Tochter* — «дочь Марко»: к имени просто добавляют
+          *-s*, как в английском, только без апострофа.
+        point: "*ihr Baby* — ребёнок Джулии; *Marcos Schwester* — «сестра Марко»"
+        set: { solved: true }
+
+exercises:
+  - type: choice
+    q: "Anna: Das ist ___ Mutter."
+    options: [mein, meine, deine]
+    answer: 1
+    why: "Говорит Анна — значит, *mein*; *die Mutter* — окончание *-e*: *meine*."
+  - type: choice
+    q: Das ist Giulia, und das ist ___ Mann.
+    options: [sein, ihr, ihre]
+    answer: 1
+    why: "Владелица — Джулия: *ihr*. *der Mann* — без окончания."
+  - type: choice
+    q: Das ist Piotr, und das ist ___ Frau.
+    options: [seine, ihre, sein]
+    answer: 0
+    why: "Владелец — Пётр: *sein*. *die Frau* — с *-e*: *seine*."
+  - type: gap
+    q: Das ___ meine Eltern.
+    answer: [sind]
+    hint: sein
+    why: "Родителей двое — *das sind*. В русском глагола тут нет, в немецком он обязателен."
+  - type: gap
+    q: Marco, ist das ___ Schwester?
+    answer: [deine]
+    hint: du
+    why: "*du* → *dein*; *die Schwester* → *deine*."
+  - type: gap
+    q: Anna und Jan, ist das ___ Hund?
+    answer: [euer]
+    hint: ihr
+    why: "*ihr* → *euer*; перед *der Hund* — без окончания."
+  - type: gap
+    q: Frau Weber, wie alt sind ___ Kinder?
+    answer: [Ihre]
+    hint: Sie
+    why: "Вежливо — *Ihr* с большой буквы; *Kinder* — мн. ч., поэтому *-e*."
+  - type: choice
+    q: Ist das ein Junge oder ___ Mädchen?
+    options: [ein, eine]
+    answer: 0
+    why: "*das Mädchen* — средний род: *ein Mädchen*."
+  - type: gap
+    q: Ich habe ___ Schwester.
+    answer: [keine]
+    hint: kein
+    ru: У меня нет сестры.
+  - type: gap
+    q: Marco hat ___ Kinder.
+    answer: [keine]
+    hint: kein
+    ru: У Марко нет детей.
+    why: "Мн. ч. — *keine*, как *meine*."
+  - type: choice
+    q: der Bruder – die ___
+    options: [Bruders, Brüder, Brudern]
+    answer: 1
+    why: "Только умлаут: *die Brüder*."
+  - type: choice
+    q: die Schwester – die ___
+    options: [Schwestern, Schwesters, Schwester]
+    answer: 0
+    why: "Слова с *die* почти всегда получают *-(e)n*."
+  - type: gap
+    q: das Kind – die ___
+    answer: [Kinder]
+    why: "*das*-слова часто получают *-er*: *die Kinder*."
+  - type: order
+    ru: Это мои родители.
+    de: Das sind meine Eltern.
+  - type: order
+    ru: Это твой брат?
+    de: Ist das dein Bruder?
+    why: "Вопрос да/нет: глагол первый, *das* — сразу за ним."
+  - type: order
+    ru: У тебя есть братья и сёстры?
+    de: Hast du Geschwister?

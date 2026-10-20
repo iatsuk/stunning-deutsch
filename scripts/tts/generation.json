@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-19",
+  "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+  "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+  "configSha256": "41a5b17fedc6954d48a596cd06f13637aa1555ef443f4641a85f708f4ee2212f",
+  "voiceCount": 8,
+  "validation": {
+    "files": 980,
+    "sampleRate": 24000,
+    "channels": 1,
+    "codec": "aac",
+    "requestedBitrate": 96000,
+    "seconds": 1997.2693333333334,
+    "bytes": 25129830,
+    "peakMax": 0.8426070809364319,
+    "rmsMin": 0.06504635512828827,
+    "rmsMax": 0.09940105676651001,
+    "decodeFailures": 0
+  },
+  "checks": {
+    "Whisper-large-v3": 980,
+    "Qwen3-ASR-0.6B": 980,
+    "remainingTranscriptionVariations": 24,
+    "correctedWord": "zu",
+    "contentValidation": true,
+    "typecheck": true,
+    "productionBuild": true,
+    "projectAudioChecksums": 980,
+    "distAudioChecksums": 980
+  },
+  "notes": "Transcription variations include numbers, inflected date notation, spacing and proper names. Recognizer agreement is an automated content check, not a native-speaker pronunciation review.",
+  "serverCleanup": {
+    "verified": true,
+    "removedAllocatedBytes": 38198300672,
+    "temporaryDirectoriesRemoved": true,
+    "remainingTaskProcesses": 0
+  }
+}

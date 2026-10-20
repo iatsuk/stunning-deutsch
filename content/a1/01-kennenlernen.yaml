@@ -1,0 +1,517 @@
+id: kennenlernen
+order: 1
+title: Hallo! Ich bin Anna.
+ru: Знакомство
+lede: >-
+  Первый день на курсах немецкого в Лейпциге. Учимся здороваться, называть
+  себя, говорить, откуда вы и где живёте, — и сразу видим главное правило
+  немецкого предложения: глагол стоит на втором месте.
+goals:
+  - Поздороваться и попрощаться — с другом и с незнакомым человеком
+  - Назвать имя, страну, город и языки, на которых вы говорите
+  - Спросить то же самое у собеседника — на «ты» и на «Вы»
+  - Рассказать о себе по ключевым словам, как в начале устного экзамена
+grammar:
+  - Личные местоимения
+  - Глагол в настоящем времени
+  - Глагол sein
+  - Вопросы с W-словом и без
+  - Глагол на втором месте
+exam: [sprechen-1, schreiben-1]
+
+dialogues:
+  kurs:
+    title: Der erste Kurstag
+    ru: Первый день на курсе
+    place: Sprachschule, Leipzig
+    people:
+      A: { name: Anna, voice: Anna }
+      M: { name: Marco, voice: Reed }
+    lines:
+      - A: Hallo! Ich bin Anna. Und wer bist du?
+        ru: Привет! Я Анна. А ты кто?
+      - M: Hallo, Anna! Ich heiße Marco.
+        ru: Привет, Анна! Меня зовут Марко.
+      - A: Woher kommst du, Marco?
+        ru: Откуда ты, Марко?
+      - M: Ich komme aus Italien, aus Rom. Und du?
+        ru: Я из Италии, из Рима. А ты?
+      - A: Ich komme aus Polen. Aber ich wohne jetzt hier in Leipzig.
+        ru: Я из Польши. Но сейчас я живу здесь, в Лейпциге.
+      - M: Ich wohne auch in Leipzig! Welche Sprachen sprichst du?
+        ru: Я тоже живу в Лейпциге! На каких языках ты говоришь?
+      - A: Polnisch, Englisch und ein bisschen Deutsch.
+        ru: На польском, английском и немного на немецком.
+      - M: Ich auch – ein bisschen!
+        ru: Я тоже — немного!
+  buero:
+    title: Im Büro der Sprachschule
+    ru: В офисе языковой школы
+    place: Sprachschule, Leipzig
+    people:
+      W: { name: Frau Weber, voice: Sandy }
+      M: { name: Marco, voice: Reed }
+    lines:
+      - W: Guten Morgen! Wie heißen Sie, bitte?
+        ru: Доброе утро! Как вас зовут?
+      - M: Mein Name ist Marco Rossi.
+        ru: Меня зовут Марко Росси.
+      - W: Und woher kommen Sie, Herr Rossi?
+        ru: А откуда вы, господин Росси?
+      - M: Aus Italien.
+        ru: Из Италии.
+      - W: Wo wohnen Sie?
+        ru: Где вы живёте?
+      - M: In Leipzig, in der Goethestraße.
+        ru: В Лейпциге, на Гётештрассе.
+      - W: Danke schön. Auf Wiedersehen, Herr Rossi!
+        ru: Большое спасибо. До свидания, господин Росси!
+      - M: Auf Wiedersehen!
+        ru: До свидания!
+
+words:
+  hallo:
+    title: Begrüßung und Abschied
+    ru: Приветствие и прощание
+    items:
+      - { de: Hallo!, ru: Привет!, note: с кем угодно в неформальной обстановке }
+      - { de: Guten Morgen!, ru: Доброе утро!, note: примерно до 10–11 часов }
+      - { de: Guten Tag!, ru: Добрый день! }
+      - { de: Guten Abend!, ru: Добрый вечер! }
+      - { de: Gute Nacht!, ru: Спокойной ночи!, note: только перед сном }
+      - { de: Wie geht's?, ru: Как дела? }
+      - { de: "Danke, gut!", ru: "Спасибо, хорошо!" }
+      - { de: Tschüss!, ru: Пока! }
+      - { de: Auf Wiedersehen!, ru: До свидания! }
+  person:
+    title: Angaben zur Person
+    ru: О себе
+    items:
+      - { de: der Name, ru: имя, pl: Namen }
+      - { de: der Vorname, ru: личное имя, pl: Vornamen }
+      - { de: der Familienname, ru: фамилия, pl: Familiennamen }
+      - { de: das Land, ru: страна, pl: Länder }
+      - { de: die Stadt, ru: город, pl: Städte }
+      - { de: die Sprache, ru: язык, pl: Sprachen }
+      - { de: heißen, ru: зваться, note: Ich heiße Marco. }
+      - { de: kommen aus, ru: быть родом из, note: Ich komme aus Polen. }
+      - { de: wohnen in, ru: жить в, note: Ich wohne in Leipzig. }
+      - { de: sprechen, ru: говорить, note: "du sprichst, er spricht" }
+  laender:
+    title: Länder und Sprachen
+    ru: Страны и языки
+    items:
+      - { de: Deutschland, ru: Германия, note: Deutsch }
+      - { de: Österreich, ru: Австрия, note: Deutsch }
+      - { de: Polen, ru: Польша, note: Polnisch }
+      - { de: Italien, ru: Италия, note: Italienisch }
+      - { de: Russland, ru: Россия, note: Russisch }
+      - { de: Kasachstan, ru: Казахстан, note: "Kasachisch, Russisch" }
+      - { de: Belarus, ru: Беларусь, note: "Belarussisch, Russisch" }
+      - { de: England, ru: Англия, note: Englisch }
+      - { de: die Schweiz, ru: Швейцария, pl: "-", note: aus der Schweiz }
+      - { de: die Türkei, ru: Турция, pl: "-", note: aus der Türkei }
+      - { de: die Ukraine, ru: Украина, pl: "-", note: "aus der Ukraine — Ukrainisch" }
+      - { de: die USA, ru: США, pl: pl, note: aus den USA }
+  fragen:
+    title: Fragewörter
+    ru: Вопросительные слова
+    items:
+      - { de: Wer?, ru: Кто? }
+      - { de: Wie?, ru: Как? }
+      - { de: Woher?, ru: Откуда? }
+      - { de: Wo?, ru: Где? }
+      - { de: Was?, ru: Что? }
+      - { de: Welche?, ru: Какие?, note: Welche Sprachen sprichst du? }
+
+tables:
+  pronomen:
+    title: Personalpronomen
+    ru: Личные местоимения
+    head: [Deutsch, По-русски]
+    ruCols: [1]
+    rows:
+      - [ich, я]
+      - [du, ты]
+      - [er / sie / es, он / она / оно]
+      - [wir, мы]
+      - [ihr, "вы — друзьям, родным, детям"]
+      - [sie, они]
+      - [Sie, "Вы — вежливо, одному или нескольким"]
+  endungen:
+    title: "Präsens: regelmäßige Verben"
+    ru: Настоящее время, правильные глаголы
+    head: [Person, wohnen, kommen, heißen]
+    rows:
+      - [ich, wohn+e, komm+e, heiß+e]
+      - [du, wohn+st, komm+st, heiß+t]
+      - [er / sie / es, wohn+t, komm+t, heiß+t]
+      - [wir, wohn+en, komm+en, heiß+en]
+      - [ihr, wohn+t, komm+t, heiß+t]
+      - [sie / Sie, wohn+en, komm+en, heiß+en]
+    note: Основа — инфинитив без -en. К ней добавляется окончание лица.
+  sein:
+    title: sein
+    ru: быть
+    head: [Person, sein, Beispiel]
+    rows:
+      - [ich, bin, Ich bin Anna.]
+      - [du, bist, Bist du Marco?]
+      - [er / sie / es, ist, Das ist Frau Weber.]
+      - [wir, sind, Wir sind im Kurs.]
+      - [ihr, seid, Seid ihr aus Italien?]
+      - [sie / Sie, sind, Sind Sie Herr Rossi?]
+    note: Неправильный глагол — формы надо просто запомнить.
+
+tasks:
+  vorstellen:
+    kind: keywords
+    part: sprechen-1
+    title: Sprechen, Teil 1
+    situation: Stellen Sie sich vor.
+    words: [Name?, Alter?, Land?, Wohnort?, Sprachen?, Beruf?, Hobby?]
+    sample:
+      - Mein Name ist Marco Rossi.
+      - Ich bin 28 Jahre alt.
+      - Ich komme aus Italien.
+      - Ich wohne in Leipzig.
+      - Ich spreche Italienisch, Englisch und ein bisschen Deutsch.
+      - Ich bin Koch von Beruf.
+      - Mein Hobby ist Fußball.
+  anmeldung:
+    kind: form
+    part: schreiben-1
+    title: Anmeldung – Sprachschule Leipzig
+    situation: >-
+      Ihr Freund Marco Rossi kommt aus Italien. Er wohnt jetzt in Leipzig, in
+      der Goethestraße 12. Er spricht Italienisch und Englisch. Marco möchte
+      einen Deutschkurs machen. Er braucht Ihre Hilfe. Füllen Sie das Formular aus.
+    fields:
+      - { label: Kurs, value: Deutsch A1, given: true }
+      - { label: Familienname, value: Rossi, given: true }
+      - { label: Vorname, value: Marco }
+      - { label: Herkunftsland, value: Italien }
+      - { label: Straße, value: Goethestraße 12 }
+      - { label: Wohnort, value: Leipzig }
+      - { label: Sprachen, value: "Italienisch, Englisch" }
+
+steps:
+  - id: treffen
+    chapter: scene
+    title: Первая встреча
+    beats:
+      - read: >-
+          Первый день на курсе немецкого. Анна садится рядом с Марко и
+          начинает с самого простого. *Hallo!* — приветствие на все случаи:
+          так здороваются с однокурсниками, коллегами, соседями. Дальше имя:
+          *Ich bin Anna* — «я Анна». И встречный вопрос: *Und wer bist du?* —
+          «а ты кто?».
+        point: "*Hallo!* — универсальное приветствие, *Ich bin …* — «я …»"
+        set: { view: dialogue, dialogue: kurs, reveal: 1 }
+      - read: >-
+          Марко отвечает по-другому: *Ich heiße Marco* — «меня зовут Марко»,
+          буквально «я зовусь». Есть и третий вариант, чуть официальнее:
+          *Mein Name ist Marco Rossi.* Все три верные — выберите один и
+          используйте его, пока он не начнёт выскакивать сам.
+        point: "Имя: *Ich bin …*, *Ich heiße …*, *Mein Name ist …*"
+        set: { reveal: 2, focus: 1 }
+      - read: >-
+          Теперь — откуда человек. *Woher kommst du?* — «откуда ты?»
+          Отвечаем с предлогом *aus*: *Ich komme aus Italien, aus Rom.* Тот же
+          *aus* работает со страной и с городом. Короткое *Und du?* — «а ты?»
+          — возвращает вопрос, и разговор идёт дальше.
+        point: "*Woher kommst du?* — *Ich komme aus …*"
+        set: { reveal: 4, focus: [2, 3] }
+      - read: >-
+          Анна родом из Польши, но живёт в Лейпциге: *ich wohne in Leipzig*.
+          Где живёшь — *wohnen in*, откуда родом — *kommen aus*. Последний
+          вопрос про языки: *Welche Sprachen sprichst du?* Названия языков
+          чаще всего кончаются на *-isch*: *Polnisch*, *Englisch*,
+          *Italienisch*. Исключение — *Deutsch*.
+        point: "*wohnen in* — где живёшь, *kommen aus* — откуда родом"
+        set: { reveal: 8, focus: [4, 5, 6] }
+
+  - id: buero
+    chapter: scene
+    title: Теперь официально
+    beats:
+      - read: >-
+          В офисе школы Марко записывается на курс. Сотрудница обращается к
+          нему на *Sie* — вежливое «Вы», всегда с большой буквы. Вопросы те
+          же, но у глагола другое окончание: *Wie heißen Sie?*, *Woher kommen
+          Sie?* К незнакомым взрослым обращаются *Herr* или *Frau* плюс
+          фамилия: *Herr Rossi*, *Frau Weber*.
+        point: "*Sie* — вежливое «Вы»; *Herr* / *Frau* + фамилия"
+        set: { view: dialogue, dialogue: buero, reveal: 3, focus: [0, 2] }
+      - read: >-
+          Ответы можно давать коротко: *Aus Italien.* — *In Leipzig.* Это
+          нормально и в жизни, и на экзамене. А прощаются здесь не *Tschüss*,
+          а *Auf Wiedersehen* — «до свидания». *Tschüss* оставьте для друзей
+          и коллег, с которыми вы на «ты».
+        point: "*Tschüss!* — друзьям, *Auf Wiedersehen!* — официально"
+        set: { reveal: 8, focus: [6, 7] }
+
+  - id: hallo
+    chapter: words
+    title: Здороваемся и прощаемся
+    beats:
+      - read: >-
+          Приветствие зависит от времени суток: *Guten Morgen!* — примерно до
+          десяти-одиннадцати, *Guten Tag!* — днём, *Guten Abend!* — вечером.
+          *Gute Nacht!* — это не приветствие, а «спокойной ночи». На *Wie
+          geht's?* не рассказывают о жизни: хватит *Danke, gut!*
+        point: "*Guten Morgen / Tag / Abend!* — по времени суток"
+        set: { view: words, words: hallo }
+
+  - id: person
+    chapter: words
+    title: Слова о себе
+    beats:
+      - read: >-
+          У каждого немецкого существительного есть род, и его показывает
+          артикль: *der* — мужской, *die* — женский, *das* — средний. Род
+          часто не совпадает с русским: *das Land* — «страна» среднего рода.
+          Поэтому учите слово сразу с артиклем и формой множественного числа:
+          *der Name — die Namen*. Цвет карточки подсказывает род.
+        point: "Учите слово с артиклем и мн. ч.: *der Name — die Namen*"
+        set: { view: words, words: person }
+      - read: >-
+          Названия стран почти всегда без артикля: *aus Italien*, *in
+          Deutschland*, *aus Russland*, *aus Kasachstan*. Но есть исключения,
+          которые нужно запомнить: *die Schweiz*, *die Türkei*, *die Ukraine* и
+          *die USA* во множественном числе. После *aus* артикль меняется: *aus
+          der Ukraine*, *aus den USA* — почему, разберём в следующих темах.
+        point: "Страны без артикля, кроме *die Schweiz*, *die Türkei*, *die Ukraine*, *die USA*"
+        set: { view: words, words: laender }
+      - read: >-
+          Шесть вопросительных слов закрывают почти весь разговор при
+          знакомстве. Все они начинаются на *W* — поэтому такие вопросы и
+          называют W-вопросами. Будьте внимательны с парой *wo* — «где» и
+          *woher* — «откуда».
+        point: "*wo?* — где, *woher?* — откуда"
+        set: { view: words, words: fragen }
+
+  - id: pronomen
+    chapter: grammar
+    title: Кто есть кто
+    beats:
+      - read: >-
+          Местоимения почти как в русском, с двумя ловушками. *sie* — это и
+          «она», и «они», а *Sie* с большой буквы — вежливое «Вы». Различить
+          их помогает глагол и контекст. Второе: *ihr* — это «вы», когда вы
+          на «ты» с каждым из собеседников, например с друзьями.
+        point: "*sie* — она/они, *Sie* — вежливое «Вы», *ihr* — вы-друзья"
+        set: { view: table, table: pronomen, focus: [4, 5, 6] }
+
+  - id: endungen
+    chapter: grammar
+    title: Окончания глагола
+    beats:
+      - read: >-
+          Немецкий глагол меняет окончание по лицам, как русский. Берём
+          инфинитив *wohnen*, отрезаем *-en* — остаётся основа *wohn-*. Дальше
+          добавляем окончание: *ich wohn+e*, *du wohn+st*, *er wohn+t*. В
+          единственном числе всего три окончания: *-e*, *-st*, *-t*.
+        point: "Единственное число: ich *-e*, du *-st*, er/sie/es *-t*"
+        set: { view: table, table: endungen, reveal: 3 }
+      - read: >-
+          Во множественном — ещё проще. *wir* и *sie / Sie* совпадают с
+          инфинитивом: *wir wohnen*, *Sie wohnen*. *ihr* получает *-t*, как
+          *er*. Поэтому вежливое *Wie heißen Sie?* звучит так же, как «как их
+          зовут?» — разница только в заглавной букве.
+        point: "*wir*, *sie*, *Sie* — как инфинитив; *ihr* — *-t*"
+        set: { reveal: 6, focus: [3, 5] }
+      - read: >-
+          *sein* — «быть» — живёт по своим правилам, его формы надо выучить:
+          *ich bin*, *du bist*, *er ist*, *wir sind*, *ihr seid*, *sie sind*.
+          В отличие от русского, связку «быть» в настоящем времени не
+          пропускают: «я Анна» — *Ich bin Anna*.
+        point: "*ich bin, du bist, er ist, wir sind, ihr seid, sie sind*"
+        set: { view: table, table: sein }
+
+  - id: wortstellung
+    chapter: grammar
+    title: Глагол — на втором месте
+    beats:
+      - read: >-
+          Главное правило немецкого предложения: спрягаемый глагол стоит на
+          второй позиции. Позицию занимает не одно слово, а целая группа: *in
+          Leipzig* — одна позиция. Схема справа — четыре поля: позиция 1,
+          глагол, середина и конец. Конец пока пуст, он понадобится позже.
+        point: Спрягаемый глагол — всегда вторая позиция
+        set:
+          view: sentence
+          rows:
+            - de: [Ich, wohn+e, in Leipzig., ""]
+              ru: Я живу в Лейпциге.
+      - read: >-
+          Поставим на первое место *in Leipzig*. Глагол остаётся на месте —
+          а подлежащее *ich* уходит в середину, сразу после глагола. Порядок
+          «В Лейпциге я живу» по-немецки невозможен: глагол не сдвигается с
+          второй позиции, что бы ни стояло первым.
+        point: "Что угодно на первом месте — глагол всё равно второй: *In Leipzig wohne ich.*"
+        set:
+          rows:
+            - de: [In Leipzig, wohn+e, ich., ""]
+              ru: В Лейпциге живу я.
+      - read: >-
+          В вопросе с W-словом на первое место встаёт само W-слово: *Wo
+          wohnst du?* А если ответ — «да» или «нет», первая позиция пустеет и
+          предложение начинается с глагола: *Wohnst du in Leipzig?* Глагол
+          при этом по-прежнему стоит в своей колонке.
+        point: "W-вопрос: *Wo wohnst du?* Вопрос да/нет: *Wohnst du …?*"
+        set:
+          rows:
+            - de: [Wo, wohn+st, du?, ""]
+              ru: Где ты живёшь?
+            - de: ["", Wohn+st, du in Leipzig?, ""]
+              ru: Ты живёшь в Лейпциге?
+
+  - id: check
+    chapter: practice
+    title: Проверьте себя
+    beats:
+      - question: Как спросить пожилую соседку, откуда она родом?
+        read: >-
+          С незнакомым взрослым — на *Sie*: *Woher kommen Sie?* Глагол в
+          форме *kommen* — как инфинитив, местоимение *Sie* — с большой
+          буквы. Вариант *Woher kommst du?* прозвучит фамильярно, хотя вас,
+          конечно, поймут.
+        point: "Вежливо: *Woher kommen Sie?*"
+        set:
+          view: sentence
+          rows:
+            - de: [Woher, komm+en, Sie?, ""]
+              ru: Откуда Вы?
+      - question: Марко говорит *Ich komme aus Italien*. Как начать фразу с *Aus Italien…*?
+        read: >-
+          *Aus Italien komme ich.* Группа *aus Italien* занимает первую
+          позицию, глагол *komme* остаётся второй, а *ich* переходит в
+          середину. Так говорят, когда хотят подчеркнуть, откуда именно.
+        point: "*Aus Italien komme ich.* — подлежащее уходит за глагол"
+        before:
+          view: sentence
+          rows:
+            - de: [Ich, komm+e, aus Italien., ""]
+              ru: Я из Италии.
+        set:
+          rows:
+            - de: [Ich, komm+e, aus Italien., ""]
+              ru: Я из Италии.
+            - de: [Aus Italien, komm+e, ich., ""]
+              ru: Из Италии я родом.
+      - question: Почему *du heißt*, а не *du heißst*?
+        read: >-
+          Если основа кончается на *s*, *ß* или *z*, во втором лице
+          добавляется только *-t*: *du heiß+t*, *du tanz+t*. Звук *с* уже есть
+          в основе, второй не нужен. Поэтому *du heißt* и *er heißt*
+          совпадают.
+        point: "Основа на *-s*, *-ß*, *-z*: *du heißt*, *du tanzt*"
+        set: { view: table, table: endungen, focus: [1, 2] }
+
+  - id: sprechen
+    chapter: exam
+    title: "Устный экзамен: часть 1"
+    beats:
+      - read: >-
+          Устная часть начинается с рассказа о себе. На столе лежит лист с
+          ключевыми словами — имя, возраст, страна, город, языки, профессия,
+          хобби. На каждого участника — около полутора минут. Потом
+          экзаменатор попросит назвать что-то по буквам и продиктовать номер:
+          это в следующей теме.
+        point: "Часть 1: рассказ по ключевым словам + буквы + номер"
+        set: { view: task, task: vorstellen, reveal: 0 }
+      - read: >-
+          Образец ответа — простые предложения, глагол на втором месте. Не
+          нужно использовать все слова и строить сложные фразы: оценивают,
+          понятно ли вас. Возраст — *Ich bin … Jahre alt*, профессия — *Ich
+          bin … von Beruf*. Подготовьте свой рассказ заранее и проговорите
+          его вслух несколько раз.
+        point: Подготовьте рассказ о себе заранее — 6–7 простых предложений
+        set: { reveal: 7 }
+
+  - id: schreiben
+    chapter: exam
+    title: "Письменный экзамен: анкета"
+    beats:
+      - read: >-
+          Первая часть письменного экзамена — анкета. В тексте описана
+          ситуация: вы помогаете другу записаться на курс. Пять полей пустые,
+          вся информация для них есть в тексте. Переписывайте аккуратно:
+          ошибка в названии улицы или страны может стоить балла.
+        point: "Анкета: 5 пустых полей, все ответы есть в тексте"
+        set: { view: task, task: anmeldung, reveal: 0 }
+      - question: Что написать в поле «Herkunftsland»?
+        read: >-
+          *Italien*. *Herkunft* — «происхождение», *Land* — «страна»: страна,
+          откуда человек родом. Не путайте с *Wohnort* — местом, где он живёт
+          сейчас. Остальные поля заполняются так же: найдите в тексте слово
+          и перенесите его без изменений.
+        point: "*Herkunftsland* — откуда родом, *Wohnort* — где живёт"
+        set: { reveal: 5 }
+
+exercises:
+  - type: choice
+    q: ___ heißen Sie?
+    options: [Wie, Wo, Woher]
+    answer: 0
+    why: "*Wie heißen Sie?* — «Как вас зовут?», буквально «как вы зовётесь?»"
+  - type: choice
+    q: ___ kommst du? – Aus Polen.
+    options: [Wo, Woher, Wer]
+    answer: 1
+    why: "Ответ с *aus* — значит, спрашивали «откуда»: *woher*."
+  - type: choice
+    q: ___ wohnen Sie? – In Leipzig.
+    options: [Woher, Wie, Wo]
+    answer: 2
+    why: "*wo* — «где». Ответ с *in*: *in Leipzig*."
+  - type: gap
+    q: Ich ___ Anna.
+    answer: [bin|heiße]
+    hint: sein / heißen
+  - type: gap
+    q: Du ___ aus Italien.
+    answer: [kommst]
+    hint: kommen
+    why: "*du* — окончание *-st*: *du komm+st*."
+  - type: gap
+    q: Wir ___ in Leipzig.
+    answer: [wohnen]
+    hint: wohnen
+    why: "*wir* — форма совпадает с инфинитивом."
+  - type: gap
+    q: ___ Sie Herr Rossi?
+    answer: [Sind]
+    hint: sein
+    why: "*Sie sind* — в вопросе да/нет глагол встаёт первым."
+  - type: gap
+    q: Er ___ Deutsch und Englisch.
+    answer: [spricht]
+    hint: sprechen
+    why: "*sprechen* меняет *e* на *i*: *du sprichst*, *er spricht*."
+  - type: choice
+    q: Ihr ___ aus Österreich, oder?
+    options: [sind, seid, ist]
+    answer: 1
+    why: "*ihr seid* — форму надо запомнить."
+  - type: choice
+    q: Как поздороваться с преподавателем в девять утра?
+    options: [Guten Morgen!, Gute Nacht!, Tschüss!]
+    answer: 0
+  - type: choice
+    q: Как попрощаться с сотрудницей в офисе?
+    options: [Tschüss!, Auf Wiedersehen!, Hallo!]
+    answer: 1
+    why: "*Tschüss* — для своих, официально — *Auf Wiedersehen!*"
+  - type: order
+    ru: Откуда Вы?
+    de: Woher kommen Sie?
+  - type: order
+    ru: Сейчас я живу в Лейпциге.
+    de: Jetzt wohne ich in Leipzig.
+    also: [Ich wohne jetzt in Leipzig.]
+    why: "*Jetzt* на первом месте — глагол второй, *ich* после глагола."
+  - type: order
+    ru: Ты говоришь по-немецки?
+    de: Sprichst du Deutsch?

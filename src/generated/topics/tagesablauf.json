@@ -1,0 +1,2379 @@
+{
+ "id": "tagesablauf",
+ "level": "a1",
+ "order": 6,
+ "title": "Wann stehst du auf?",
+ "ru": "Время и распорядок дня",
+ "lede": "Марко опять опоздал на курс, а Анна встаёт в шесть утра. Учимся называть время — официально и в разговоре — и рассказывать о своём дне. Заодно видим новое правило: глагол может распасться на две части, и его приставка уходит в конец предложения.",
+ "goals": [
+  "Спросить, который час, и ответить — официально и в разговоре",
+  "Сказать, когда что происходит — в семь часов, в понедельник, с девяти до пяти",
+  "Рассказать о своём дне — от «встаю» до «смотрю телевизор»",
+  "Понять сообщение на автоответчике и табличку с часами работы"
+ ],
+ "grammar": [
+  "Время на часах",
+  "Отделяемые приставки",
+  "Рамка предложения",
+  "um, am, von … bis",
+  "Время на первом месте"
+ ],
+ "exam": [
+  "hoeren-3",
+  "lesen-3"
+ ],
+ "chapters": [
+  {
+   "id": "scene",
+   "title": "Ситуация"
+  },
+  {
+   "id": "words",
+   "title": "Слова"
+  },
+  {
+   "id": "grammar",
+   "title": "Грамматика"
+  },
+  {
+   "id": "practice",
+   "title": "Проверка"
+  },
+  {
+   "id": "exam",
+   "title": "На экзамене"
+  }
+ ],
+ "dialogues": {
+  "spaet": {
+   "title": "Zu spät!",
+   "ru": "Опять опоздал!",
+   "place": "Sprachschule, Leipzig",
+   "people": {
+    "A": {
+     "name": "Anna",
+     "voice": "Anna"
+    },
+    "M": {
+     "name": "Marco",
+     "voice": "Reed"
+    }
+   },
+   "lines": [
+    {
+     "who": "A",
+     "de": "Hallo, Marco! Wie spät ist es?",
+     "ru": "Привет, Марко! Который час?",
+     "audio": "audio/b49b83b1e7a6.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Hm … Viertel nach neun?",
+     "ru": "Хм… четверть десятого?",
+     "audio": "audio/c2ab3b0b7556.m4a"
+    },
+    {
+     "who": "A",
+     "de": "Genau. Und der Kurs fängt um neun an!",
+     "ru": "Именно. А курс начинается в девять!",
+     "audio": "audio/0c31bde6e53a.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Entschuldigung! Ich stehe immer um halb neun auf.",
+     "ru": "Извини! Я всегда встаю в половине девятого.",
+     "audio": "audio/cb08af66ca28.m4a"
+    },
+    {
+     "who": "A",
+     "de": "Um halb neun? Ich stehe schon um sechs auf.",
+     "ru": "В половине девятого? А я встаю уже в шесть.",
+     "audio": "audio/9ff14687f18c.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Um sechs? Was machst du so früh?",
+     "ru": "В шесть? Что ты делаешь так рано?",
+     "audio": "audio/985d0d1cac43.m4a"
+    },
+    {
+     "who": "A",
+     "de": "Von halb sieben bis sieben jogge ich, dann frühstücke ich.",
+     "ru": "С половины седьмого до семи бегаю, потом завтракаю.",
+     "audio": "audio/14c0e0c9d000.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Ich frühstücke nicht. Ich trinke nur schnell einen Kaffee.",
+     "ru": "А я не завтракаю. Только быстро выпиваю кофе.",
+     "audio": "audio/f1479de83eb9.m4a"
+    },
+    {
+     "who": "A",
+     "de": "Morgen stehst du um sieben auf, okay?",
+     "ru": "Завтра ты встаёшь в семь, хорошо?",
+     "audio": "audio/6efa74c03cf0.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Okay, okay … um sieben!",
+     "ru": "Ладно, ладно… в семь!",
+     "audio": "audio/279ab4157544.m4a"
+    }
+   ]
+  },
+  "tag": {
+   "title": "Marcos Tag",
+   "ru": "День Марко",
+   "place": "Sprachschule, Leipzig",
+   "people": {
+    "A": {
+     "name": "Anna",
+     "voice": "Anna"
+    },
+    "M": {
+     "name": "Marco",
+     "voice": "Reed"
+    }
+   },
+   "lines": [
+    {
+     "who": "A",
+     "de": "Marco, wann fängt deine Arbeit an?",
+     "ru": "Марко, когда начинается твоя работа?",
+     "audio": "audio/4618b1004f54.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Um fünf Uhr. Ich arbeite von fünf bis elf im Restaurant.",
+     "ru": "В пять часов. Я работаю в ресторане с пяти до одиннадцати.",
+     "audio": "audio/2bb492b39c83.m4a"
+    },
+    {
+     "who": "A",
+     "de": "Und was machst du am Vormittag?",
+     "ru": "А что ты делаешь до обеда?",
+     "audio": "audio/f9081ec7075f.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Am Vormittag habe ich Kurs, am Mittag kaufe ich ein.",
+     "ru": "До обеда у меня курс, в обед я хожу за покупками.",
+     "audio": "audio/aea0b39a0c6b.m4a"
+    },
+    {
+     "who": "A",
+     "de": "Und wann hast du Feierabend?",
+     "ru": "А когда у тебя заканчивается рабочий день?",
+     "audio": "audio/00759a3695a4.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Um elf. Dann sehe ich noch ein bisschen fern.",
+     "ru": "В одиннадцать. Потом ещё немного смотрю телевизор.",
+     "audio": "audio/6aedcd7bc65c.m4a"
+    },
+    {
+     "who": "A",
+     "de": "Und am Wochenende?",
+     "ru": "А в выходные?",
+     "audio": "audio/1074b2a8d0f4.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Am Samstag arbeite ich auch. Aber am Sonntag schlafe ich lange!",
+     "ru": "В субботу я тоже работаю. Зато в воскресенье долго сплю!",
+     "audio": "audio/5aa59266fbe9.m4a"
+    }
+   ]
+  }
+ },
+ "words": {
+  "uhr": {
+   "title": "Die Uhrzeit",
+   "ru": "Время",
+   "items": [
+    {
+     "de": "Wie spät ist es?",
+     "ru": "Который час?",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/b6c59067fbc0.m4a"
+    },
+    {
+     "de": "Wie viel Uhr ist es?",
+     "ru": "Который час?",
+     "gender": null,
+     "plural": null,
+     "note": "то же самое",
+     "audio": "audio/258ed4e74603.m4a"
+    },
+    {
+     "de": "die Uhr",
+     "ru": "часы; час на часах",
+     "gender": "f",
+     "plural": "Uhren",
+     "note": "Es ist acht Uhr.",
+     "audio": "audio/d97ca72d95f2.m4a"
+    },
+    {
+     "de": "die Stunde",
+     "ru": "час как отрезок времени",
+     "gender": "f",
+     "plural": "Stunden",
+     "note": "drei Stunden",
+     "audio": "audio/3a9aa1279332.m4a"
+    },
+    {
+     "de": "die Minute",
+     "ru": "минута",
+     "gender": "f",
+     "plural": "Minuten",
+     "audio": "audio/33972a57e638.m4a"
+    },
+    {
+     "de": "das Viertel",
+     "ru": "четверть",
+     "gender": "n",
+     "plural": "Viertel",
+     "note": "Viertel nach drei",
+     "audio": "audio/2442269a1e1c.m4a"
+    },
+    {
+     "de": "halb",
+     "ru": "половина",
+     "gender": null,
+     "plural": null,
+     "note": "halb acht = 7:30",
+     "audio": "audio/b8b2b8e0757a.m4a"
+    },
+    {
+     "de": "nach",
+     "ru": "после",
+     "gender": null,
+     "plural": null,
+     "note": "Viertel nach neun = 9:15",
+     "audio": "audio/a822a438bd59.m4a"
+    },
+    {
+     "de": "vor",
+     "ru": "до, без",
+     "gender": null,
+     "plural": null,
+     "note": "Viertel vor neun = 8:45",
+     "audio": "audio/9212a0f98a49.m4a"
+    },
+    {
+     "de": "früh",
+     "ru": "рано",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/ab3653bac354.m4a"
+    },
+    {
+     "de": "spät",
+     "ru": "поздно",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/68ebb60dd624.m4a"
+    },
+    {
+     "de": "dauern",
+     "ru": "длиться",
+     "gender": null,
+     "plural": null,
+     "note": "Der Kurs dauert drei Stunden.",
+     "audio": "audio/4349f433ff52.m4a"
+    }
+   ]
+  },
+  "tageszeiten": {
+   "title": "Tageszeiten",
+   "ru": "Части дня",
+   "items": [
+    {
+     "de": "der Morgen",
+     "ru": "утро",
+     "gender": "m",
+     "plural": "Morgen",
+     "note": "am Morgen",
+     "audio": "audio/a11d4ff75fa7.m4a"
+    },
+    {
+     "de": "der Vormittag",
+     "ru": "время до обеда",
+     "gender": "m",
+     "plural": "Vormittage",
+     "note": "am Vormittag",
+     "audio": "audio/f9345f1cd806.m4a"
+    },
+    {
+     "de": "der Mittag",
+     "ru": "полдень, обед",
+     "gender": "m",
+     "plural": "Mittage",
+     "note": "am Mittag",
+     "audio": "audio/97f6dd0c920e.m4a"
+    },
+    {
+     "de": "der Nachmittag",
+     "ru": "время после обеда",
+     "gender": "m",
+     "plural": "Nachmittage",
+     "note": "am Nachmittag",
+     "audio": "audio/91ce97b0e8da.m4a"
+    },
+    {
+     "de": "der Abend",
+     "ru": "вечер",
+     "gender": "m",
+     "plural": "Abende",
+     "note": "am Abend",
+     "audio": "audio/e5c8581c06f8.m4a"
+    },
+    {
+     "de": "die Nacht",
+     "ru": "ночь",
+     "gender": "f",
+     "plural": "Nächte",
+     "note": "in der Nacht",
+     "audio": "audio/e5a286767406.m4a"
+    }
+   ]
+  },
+  "woche": {
+   "title": "Die Woche",
+   "ru": "Неделя",
+   "items": [
+    {
+     "de": "der Montag",
+     "ru": "понедельник",
+     "gender": "m",
+     "plural": "Montage",
+     "audio": "audio/4e6fdcc1f7d8.m4a"
+    },
+    {
+     "de": "der Dienstag",
+     "ru": "вторник",
+     "gender": "m",
+     "plural": "Dienstage",
+     "audio": "audio/d76381105b4e.m4a"
+    },
+    {
+     "de": "der Mittwoch",
+     "ru": "среда",
+     "gender": "m",
+     "plural": "Mittwoche",
+     "audio": "audio/8762fd98fa0a.m4a"
+    },
+    {
+     "de": "der Donnerstag",
+     "ru": "четверг",
+     "gender": "m",
+     "plural": "Donnerstage",
+     "audio": "audio/5d6dc3e6e27b.m4a"
+    },
+    {
+     "de": "der Freitag",
+     "ru": "пятница",
+     "gender": "m",
+     "plural": "Freitage",
+     "audio": "audio/b60b661de8ec.m4a"
+    },
+    {
+     "de": "der Samstag",
+     "ru": "суббота",
+     "gender": "m",
+     "plural": "Samstage",
+     "audio": "audio/dd5be5003a8f.m4a"
+    },
+    {
+     "de": "der Sonntag",
+     "ru": "воскресенье",
+     "gender": "m",
+     "plural": "Sonntage",
+     "audio": "audio/e84cac4392b0.m4a"
+    },
+    {
+     "de": "die Woche",
+     "ru": "неделя",
+     "gender": "f",
+     "plural": "Wochen",
+     "audio": "audio/3ab2cbe30e94.m4a"
+    },
+    {
+     "de": "das Wochenende",
+     "ru": "выходные",
+     "gender": "n",
+     "plural": "Wochenenden",
+     "note": "am Wochenende",
+     "audio": "audio/b66d175e49c8.m4a"
+    },
+    {
+     "de": "heute",
+     "ru": "сегодня",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/217378a7a3d4.m4a"
+    },
+    {
+     "de": "morgen",
+     "ru": "завтра",
+     "gender": null,
+     "plural": null,
+     "note": "morgen früh — завтра утром",
+     "audio": "audio/9be65ce9f5f6.m4a"
+    }
+   ]
+  },
+  "alltag": {
+   "title": "Der Alltag",
+   "ru": "Повседневные дела",
+   "items": [
+    {
+     "de": "aufstehen",
+     "ru": "вставать",
+     "gender": null,
+     "plural": null,
+     "note": "ich stehe auf",
+     "audio": "audio/79a7a646b484.m4a"
+    },
+    {
+     "de": "frühstücken",
+     "ru": "завтракать",
+     "gender": null,
+     "plural": null,
+     "note": "ich frühstücke",
+     "audio": "audio/e0fc0fd6f370.m4a"
+    },
+    {
+     "de": "duschen",
+     "ru": "принимать душ",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/6843821b102b.m4a"
+    },
+    {
+     "de": "anfangen",
+     "ru": "начинать(ся)",
+     "gender": null,
+     "plural": null,
+     "note": "der Kurs fängt an",
+     "audio": "audio/904b56f56f7b.m4a"
+    },
+    {
+     "de": "aufhören",
+     "ru": "заканчивать(ся)",
+     "gender": null,
+     "plural": null,
+     "note": "der Kurs hört auf",
+     "audio": "audio/31f81a5a967f.m4a"
+    },
+    {
+     "de": "arbeiten",
+     "ru": "работать",
+     "gender": null,
+     "plural": null,
+     "note": "du arbeitest",
+     "audio": "audio/4371394861bf.m4a"
+    },
+    {
+     "de": "einkaufen",
+     "ru": "делать покупки",
+     "gender": null,
+     "plural": null,
+     "note": "ich kaufe ein",
+     "audio": "audio/3ada7d6678a3.m4a"
+    },
+    {
+     "de": "kochen",
+     "ru": "готовить",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/bac23db2d3c6.m4a"
+    },
+    {
+     "de": "aufräumen",
+     "ru": "убирать(ся)",
+     "gender": null,
+     "plural": null,
+     "note": "ich räume auf",
+     "audio": "audio/558fa7f866fd.m4a"
+    },
+    {
+     "de": "anrufen",
+     "ru": "звонить",
+     "gender": null,
+     "plural": null,
+     "note": "ich rufe dich an",
+     "audio": "audio/e67004f65553.m4a"
+    },
+    {
+     "de": "fernsehen",
+     "ru": "смотреть телевизор",
+     "gender": null,
+     "plural": null,
+     "note": "er sieht fern",
+     "audio": "audio/90d4032d0512.m4a"
+    },
+    {
+     "de": "schlafen",
+     "ru": "спать",
+     "gender": null,
+     "plural": null,
+     "note": "du schläfst",
+     "audio": "audio/2a407504fec3.m4a"
+    },
+    {
+     "de": "der Feierabend",
+     "ru": "конец рабочего дня",
+     "gender": "m",
+     "plural": "Feierabende",
+     "audio": "audio/948f235d34d0.m4a"
+    }
+   ]
+  }
+ },
+ "tables": {
+  "zeitangaben": {
+   "title": "Wann?",
+   "ru": "Когда: um, am, von … bis",
+   "head": [
+    "Что называем",
+    "Wort",
+    "Beispiel"
+   ],
+   "rows": [
+    [
+     "время по часам",
+     "um",
+     "um sechs Uhr / um halb acht"
+    ],
+    [
+     "день недели",
+     "am",
+     "am Montag / am Wochenende"
+    ],
+    [
+     "часть дня",
+     "am",
+     "am Morgen / am Abend"
+    ],
+    [
+     "ночь — исключение",
+     "in der",
+     "in der Nacht"
+    ],
+    [
+     "отрезок времени",
+     "von … bis",
+     "von neun bis zwölf Uhr"
+    ],
+    [
+     "без предлога",
+     "–",
+     "heute / morgen / jetzt"
+    ]
+   ],
+   "ruCols": [
+    0
+   ],
+   "note": "*am* — это слияние *an* и *dem*. Почему так, разберём в теме о жилье."
+  },
+  "trennbar": {
+   "title": "Trennbare Verben",
+   "ru": "Глаголы с отделяемой приставкой",
+   "head": [
+    "Infinitiv",
+    "Beispiel",
+    "По-русски"
+   ],
+   "rows": [
+    [
+     "*auf*stehen",
+     "Ich stehe um sechs Uhr *auf*.",
+     "Я встаю в шесть часов."
+    ],
+    [
+     "*an*fangen",
+     "Der Kurs fängt um neun *an*.",
+     "Курс начинается в девять."
+    ],
+    [
+     "*auf*hören",
+     "Der Kurs hört um halb eins *auf*.",
+     "Курс заканчивается в половине первого."
+    ],
+    [
+     "*ein*kaufen",
+     "Am Mittag kaufe ich *ein*.",
+     "В обед я хожу за покупками."
+    ],
+    [
+     "*auf*räumen",
+     "Am Samstag räume ich *auf*.",
+     "В субботу я убираюсь."
+    ],
+    [
+     "*fern*sehen",
+     "Am Abend sieht Marco *fern*.",
+     "Вечером Марко смотрит телевизор."
+    ],
+    [
+     "*an*rufen",
+     "Ich rufe dich morgen *an*.",
+     "Я позвоню тебе завтра."
+    ]
+   ],
+   "ruCols": [
+    2
+   ],
+   "note": "*anfangen* и *fernsehen* меняют гласную корня: *du fängst an*, *er sieht fern*."
+  }
+ },
+ "tasks": {
+  "nachricht": {
+   "kind": "listen",
+   "part": "hoeren-3",
+   "title": "Hören, Teil 3",
+   "situation": "Sie hören eine Nachricht auf dem Anrufbeantworter.",
+   "voice": "Sandy",
+   "text": "Guten Tag, hier ist Sabine Weber von der Sprachschule Leipzig. Eine Information für den Kurs A1: Am Freitag fängt der Kurs erst um halb elf an, nicht um neun Uhr. Er hört dann um ein Uhr auf. Vielen Dank und auf Wiederhören!",
+   "question": "Wann beginnt der Kurs am Freitag?",
+   "options": [
+    "Um 9.00 Uhr.",
+    "Um 10.30 Uhr.",
+    "Um 13.00 Uhr."
+   ],
+   "answer": 1,
+   "audio": "audio/f408d2880222.m4a",
+   "sample": []
+  },
+  "buero": {
+   "kind": "sign",
+   "part": "lesen-3",
+   "title": "Lesen, Teil 3",
+   "situation": "Sie sind in der Sprachschule und lesen ein Schild.",
+   "text": "Sprachschule Leipzig – Büro\nÖffnungszeiten\nMo – Do: 8.30 – 17.00 Uhr\nFr: 8.30 – 13.00 Uhr\nSa und So geschlossen",
+   "statement": "Am Freitag ist das Büro bis 17 Uhr geöffnet.",
+   "answer": false,
+   "sample": []
+  }
+ },
+ "beats": [
+  {
+   "id": "spaet-1",
+   "step": "spaet",
+   "stepTitle": "Опять опоздал",
+   "chapterIndex": 0,
+   "indexInStep": 0,
+   "read": "Понедельник, четверть десятого. Марко входит в класс, когда урок уже идёт. Анна с иронией спрашивает: *Wie spät ist es?* — «который час?», буквально «насколько поздно?». Марко неуверенно отвечает: *Viertel nach neun* — «четверть десятого». А курс, напоминает Анна, *fängt um neun an* — «начинается в девять». Заметьте: глагол *anfangen* распался на две части, и *an* убежало в самый конец.",
+   "point": "*Wie spät ist es?* — «который час?»; *Der Kurs fängt um neun an.*",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "spaet",
+    "reveal": 3,
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "spaet-2",
+   "step": "spaet",
+   "stepTitle": "Опять опоздал",
+   "chapterIndex": 0,
+   "indexInStep": 1,
+   "read": "Марко оправдывается: *Ich stehe immer um halb neun auf* — «я всегда встаю в половине девятого». Снова глагол из двух частей: *aufstehen* — «вставать». Спрягается корень *stehe*, он стоит на втором месте, а приставка *auf* ждёт в конце. Анна встаёт гораздо раньше: *Ich stehe schon um sechs auf.* *schon* здесь — «уже»: в шесть она уже на ногах.",
+   "point": "*aufstehen*: *Ich stehe um sechs auf.* — приставка уходит в конец",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "spaet",
+    "reveal": 5,
+    "focus": [
+     3,
+     4
+    ]
+   }
+  },
+  {
+   "id": "spaet-3",
+   "step": "spaet",
+   "stepTitle": "Опять опоздал",
+   "chapterIndex": 0,
+   "indexInStep": 2,
+   "read": "Что Анна делает так рано? *Von halb sieben bis sieben jogge ich* — «с половины седьмого до семи бегаю». *von … bis* — «с … до». Потом — *dann frühstücke ich*: после *dann* глагол снова сразу второй. *frühstücken* — обычный глагол без приставки, он не распадается. А про завтра Анна говорит настоящим временем: *Morgen stehst du um sieben auf* — будущее время для этого не нужно.",
+   "point": "*von … bis* — «с … до»; о завтрашнем дне — в настоящем времени",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "spaet",
+    "reveal": 10,
+    "focus": [
+     6,
+     7,
+     8
+    ]
+   }
+  },
+  {
+   "id": "marco-1",
+   "step": "marco",
+   "stepTitle": "День Марко",
+   "chapterIndex": 0,
+   "indexInStep": 0,
+   "read": "На перемене Анна расспрашивает Марко о его дне. По вечерам Марко работает: *Ich arbeite von fünf bis elf im Restaurant*. Части дня называют с *am*: *am Vormittag* — «до обеда», *am Mittag* — «в обед». И снова глагол из двух частей: *einkaufen* — «делать покупки» — в предложении превращается в *kaufe … ein*. Порядок слов знакомый: время стоит первым, глагол — вторым, *ich* — после него.",
+   "point": "*am Vormittag*, *am Mittag* — части дня с *am*; *ich kaufe ein*",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "tag",
+    "reveal": 4,
+    "focus": [
+     1,
+     3
+    ]
+   }
+  },
+  {
+   "id": "marco-2",
+   "step": "marco",
+   "stepTitle": "День Марко",
+   "chapterIndex": 0,
+   "indexInStep": 1,
+   "read": "Конец рабочего дня по-немецки — *der Feierabend*, буквально «праздничный вечер». *Um elf habe ich Feierabend* — «в одиннадцать я заканчиваю работу». Потом Марко *sieht fern* — «смотрит телевизор». У *fernsehen* корень меняет гласную, как у *sehen*: *du siehst*, *er sieht*. А в воскресенье Марко отсыпается: *Am Sonntag schlafe ich lange.* Дни недели, как и части дня, — с *am*.",
+   "point": "*der Feierabend* — конец рабочего дня; *fernsehen*: *er sieht fern*",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "tag",
+    "reveal": 8,
+    "focus": [
+     4,
+     5,
+     7
+    ]
+   }
+  },
+  {
+   "id": "uhr-1",
+   "step": "uhr",
+   "stepTitle": "Часы и время",
+   "chapterIndex": 1,
+   "indexInStep": 0,
+   "read": "Русское «час» в немецком — два разных слова. Время на часах — *Uhr*: *Es ist acht Uhr.* Отрезок времени — *die Stunde*: *Der Kurs dauert drei Stunden* — «курс длится три часа». А *die Uhr* — это ещё и сами часы, на руке или на стене. Запомните пару вопросов: *Wie spät ist es?* и *Wie viel Uhr ist es?* Оба значат «который час?».",
+   "point": "*acht Uhr* — время на часах, *drei Stunden* — отрезок времени",
+   "scene": {
+    "view": "words",
+    "dialogue": "tag",
+    "words": "uhr"
+   }
+  },
+  {
+   "id": "tage-1",
+   "step": "tage",
+   "stepTitle": "Части дня и дни недели",
+   "chapterIndex": 1,
+   "indexInStep": 0,
+   "read": "Все части дня — мужского рода, как *der Tag*: *der Morgen*, *der Vormittag*, *der Mittag*, *der Nachmittag*, *der Abend*. Поэтому с ними *am*: *am Morgen*, *am Abend*. Исключение одно — *die Nacht*, и говорят *in der Nacht* — «ночью». Часть этих слов вы уже знаете по приветствиям: *Guten Morgen!*, *Guten Abend!*, *Gute Nacht!*",
+   "point": "Части дня — *der*, поэтому *am Morgen*, *am Abend*; но *in der Nacht*",
+   "scene": {
+    "view": "words",
+    "dialogue": "tag",
+    "words": "tageszeiten"
+   }
+  },
+  {
+   "id": "tage-2",
+   "step": "tage",
+   "stepTitle": "Части дня и дни недели",
+   "chapterIndex": 1,
+   "indexInStep": 1,
+   "read": "Дни недели тоже мужского рода, и почти все кончаются на *-tag*. Особняком стоит *der Mittwoch* — буквально «середина недели». С днями тоже *am*: *am Montag*, *am Wochenende*. И ловушка: *der Morgen* с большой буквы — «утро», а *morgen* с маленькой — «завтра». «Завтра утром» — *morgen früh*: так немцы обходят странное *morgen am Morgen*.",
+   "point": "*am Montag*; *morgen* — «завтра», *der Morgen* — «утро»",
+   "scene": {
+    "view": "words",
+    "dialogue": "tag",
+    "words": "woche"
+   }
+  },
+  {
+   "id": "alltag-1",
+   "step": "alltag",
+   "stepTitle": "Мой день",
+   "chapterIndex": 1,
+   "indexInStep": 0,
+   "read": "Глаголы распорядка дня. Половина из них — с отделяемой приставкой: *aufstehen*, *anfangen*, *einkaufen*, *aufräumen*, *fernsehen*, *anrufen*. В словаре они стоят одним словом, а в предложении разделяются: *ich stehe auf*. Ударение всегда падает на приставку: *AUFstehen*, *EINkaufen*. Это помогает узнать такой глагол на слух. Подсказка под словом показывает, как он выглядит в предложении.",
+   "point": "Отделяемая приставка всегда ударная: *aufstehen*, *einkaufen*",
+   "scene": {
+    "view": "words",
+    "dialogue": "tag",
+    "words": "alltag"
+   }
+  },
+  {
+   "id": "uhrzeit-1",
+   "step": "uhrzeit",
+   "stepTitle": "Который час?",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "Пройдём по дню Анны вместе с часами. Будильник звонит в шесть. На *Wie spät ist es?* отвечают *Es ist sechs Uhr.* А на вопрос «когда?» — *Wann?* или *Um wie viel Uhr?* — нужен предлог *um*: *um sechs Uhr*, «в шесть часов». *Uhr* после числа не меняется: *sechs Uhr*, а не *sechs Uhren*. В разговоре его часто опускают: *um sechs*.",
+   "point": "*Es ist sechs Uhr.* — который час; *um sechs Uhr* — когда",
+   "scene": {
+    "view": "clock",
+    "dialogue": "tag",
+    "words": "alltag",
+    "clock": {
+     "time": "06:00",
+     "hours": 6,
+     "minutes": 0,
+     "formal": "sechs Uhr",
+     "informal": "sechs",
+     "audio": [
+      "audio/4915f8e82198.m4a",
+      "audio/0e29d4a936ab.m4a"
+     ]
+    }
+   }
+  },
+  {
+   "id": "uhrzeit-2",
+   "step": "uhrzeit",
+   "stepTitle": "Который час?",
+   "chapterIndex": 2,
+   "indexInStep": 1,
+   "read": "В половине седьмого Анна выходит на пробежку. По-немецки это *halb sieben*: половина пути к семи, то есть 6:30. Русский здесь помогает: «половина седьмого» устроена так же. Ошибаются те, кто переводит с английского «half past six» и говорит *halb sechs* — это 5:30, на час раньше. Проверка простая: после *halb* всегда стоит следующий час. *halb acht* — 7:30, *halb neun* — 8:30.",
+   "point": "*halb sieben* = 6:30, как «половина седьмого»: после *halb* — следующий час",
+   "scene": {
+    "view": "clock",
+    "dialogue": "tag",
+    "words": "alltag",
+    "clock": {
+     "time": "06:30",
+     "hours": 6,
+     "minutes": 30,
+     "formal": "sechs Uhr dreißig",
+     "informal": "halb sieben",
+     "audio": [
+      "audio/105b0ce60bae.m4a",
+      "audio/7a5048f4d4b8.m4a"
+     ]
+    }
+   }
+  },
+  {
+   "id": "uhrzeit-3",
+   "step": "uhrzeit",
+   "stepTitle": "Который час?",
+   "chapterIndex": 2,
+   "indexInStep": 2,
+   "read": "Без четверти девять Анна уже сидит в классе. *Viertel* — «четверть», *vor* — «до», *nach* — «после». *Viertel vor neun* — 8:45, «без четверти девять». А *Viertel nach neun* — 9:15, время, когда пришёл Марко. Вот здесь русский уже подводит: мы говорим «четверть десятого», называя следующий час, а немец считает от прошедшего: *nach neun* — «после девяти».",
+   "point": "*Viertel vor neun* — 8:45; *Viertel nach neun* — 9:15, «после девяти»",
+   "scene": {
+    "view": "clock",
+    "dialogue": "tag",
+    "words": "alltag",
+    "clock": {
+     "time": "08:45",
+     "hours": 8,
+     "minutes": 45,
+     "formal": "acht Uhr fünfundvierzig",
+     "informal": "Viertel vor neun",
+     "audio": [
+      "audio/381a8d3ca32d.m4a",
+      "audio/3a1fa27d7434.m4a"
+     ]
+    }
+   }
+  },
+  {
+   "id": "uhrzeit-4",
+   "step": "uhrzeit",
+   "stepTitle": "Который час?",
+   "chapterIndex": 2,
+   "indexInStep": 3,
+   "read": "Спать Анна ложится в половине одиннадцатого. Время называют двумя способами. Официально — по радио, на вокзале, в расписании и на табличках — 24 часа и минуты: *zweiundzwanzig Uhr dreißig*. В разговоре — 12 часов и *halb*, *Viertel*: *halb elf*. На экзамене нужны оба: в объявлениях и на табличках — официальная форма, в сообщениях друзей — разговорная.",
+   "point": "Официально — *zweiundzwanzig Uhr dreißig*, в разговоре — *halb elf*",
+   "scene": {
+    "view": "clock",
+    "dialogue": "tag",
+    "words": "alltag",
+    "clock": {
+     "time": "22:30",
+     "hours": 22,
+     "minutes": 30,
+     "formal": "zweiundzwanzig Uhr dreißig",
+     "informal": "halb elf",
+     "audio": [
+      "audio/cc7c080eda53.m4a",
+      "audio/4a3f8e9def69.m4a"
+     ]
+    }
+   }
+  },
+  {
+   "id": "wann-1",
+   "step": "wann",
+   "stepTitle": "um, am, von … bis",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "Русское «в» — «в шесть», «в понедельник», «в обед» — по-немецки распадается на два предлога. С часами — *um*: *um sechs Uhr*. С днями и частями дня — *am*: *am Montag*, *am Abend*, *am Wochenende*. Отрезок времени — *von … bis*: *von neun bis zwölf*. Исключение — *in der Nacht*. А *heute*, *morgen* и *jetzt* обходятся вообще без предлога: *Heute habe ich Kurs.*",
+   "point": "*um* + часы, *am* + день или часть дня, *von … bis* — отрезок",
+   "scene": {
+    "view": "table",
+    "dialogue": "tag",
+    "words": "alltag",
+    "clock": {
+     "time": "22:30",
+     "hours": 22,
+     "minutes": 30,
+     "formal": "zweiundzwanzig Uhr dreißig",
+     "informal": "halb elf",
+     "audio": [
+      "audio/cc7c080eda53.m4a",
+      "audio/4a3f8e9def69.m4a"
+     ]
+    },
+    "table": "zeitangaben"
+   }
+  },
+  {
+   "id": "vorfeld-1",
+   "step": "vorfeld",
+   "stepTitle": "Время — на первое место",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "Немцы очень любят начинать фразу со времени: *Am Vormittag habe ich Kurs.* *Dann frühstücke ich.* Правило из первой темы работает и здесь: что бы ни стояло на первой позиции, глагол — второй, а подлежащее уходит за него. Типичная ошибка — русский порядок слов: *Dann ich frühstücke*. Так нельзя: между первой позицией и глаголом ничего не помещается.",
+   "point": "Время на первом месте — глагол всё равно второй: *Dann frühstücke ich.*",
+   "scene": {
+    "view": "sentence",
+    "dialogue": "tag",
+    "words": "alltag",
+    "clock": {
+     "time": "22:30",
+     "hours": 22,
+     "minutes": 30,
+     "formal": "zweiundzwanzig Uhr dreißig",
+     "informal": "halb elf",
+     "audio": [
+      "audio/cc7c080eda53.m4a",
+      "audio/4a3f8e9def69.m4a"
+     ]
+    },
+    "table": "zeitangaben",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "am",
+         "text": "Am"
+        },
+        {
+         "key": "vormittag",
+         "text": "Vormittag"
+        }
+       ],
+       [
+        {
+         "key": "hab",
+         "text": "hab+e"
+        }
+       ],
+       [
+        {
+         "key": "ich",
+         "text": "ich"
+        },
+        {
+         "key": "kurs",
+         "text": "Kurs"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Am Vormittag habe ich Kurs.",
+      "ru": "До обеда у меня курс.",
+      "audio": "audio/81e899082c7e.m4a"
+     },
+     {
+      "slots": [
+       [
+        {
+         "key": "dann",
+         "text": "Dann"
+        }
+       ],
+       [
+        {
+         "key": "frühstück",
+         "text": "frühstück+e"
+        }
+       ],
+       [
+        {
+         "key": "ich",
+         "text": "ich"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Dann frühstücke ich.",
+      "ru": "Потом я завтракаю.",
+      "audio": "audio/669285cee417.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "klammer-1",
+   "step": "klammer",
+   "stepTitle": "Глагол из двух частей",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "У *aufstehen*, *anfangen*, *einkaufen* есть приставка, которая в предложении отрывается от глагола. Корень спрягается как обычно и стоит на втором месте, а приставка уходит в конец. Если корень меняет гласную, он меняет её и здесь: *du fängst an*, *er sieht fern*. В словарях такие глаголы часто пишут с чертой: *auf|stehen*.",
+   "point": "Корень — на втором месте, приставка — в конце: *Der Kurs fängt um neun an.*",
+   "scene": {
+    "view": "table",
+    "dialogue": "tag",
+    "words": "alltag",
+    "clock": {
+     "time": "22:30",
+     "hours": 22,
+     "minutes": 30,
+     "formal": "zweiundzwanzig Uhr dreißig",
+     "informal": "halb elf",
+     "audio": [
+      "audio/cc7c080eda53.m4a",
+      "audio/4a3f8e9def69.m4a"
+     ]
+    },
+    "table": "trennbar",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "am",
+         "text": "Am"
+        },
+        {
+         "key": "vormittag",
+         "text": "Vormittag"
+        }
+       ],
+       [
+        {
+         "key": "hab",
+         "text": "hab+e"
+        }
+       ],
+       [
+        {
+         "key": "ich",
+         "text": "ich"
+        },
+        {
+         "key": "kurs",
+         "text": "Kurs"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Am Vormittag habe ich Kurs.",
+      "ru": "До обеда у меня курс.",
+      "audio": "audio/81e899082c7e.m4a"
+     },
+     {
+      "slots": [
+       [
+        {
+         "key": "dann",
+         "text": "Dann"
+        }
+       ],
+       [
+        {
+         "key": "frühstück",
+         "text": "frühstück+e"
+        }
+       ],
+       [
+        {
+         "key": "ich",
+         "text": "ich"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Dann frühstücke ich.",
+      "ru": "Потом я завтракаю.",
+      "audio": "audio/669285cee417.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "klammer-2",
+   "step": "klammer",
+   "stepTitle": "Глагол из двух частей",
+   "chapterIndex": 2,
+   "indexInStep": 1,
+   "read": "Вот как это выглядит на схеме. *Ich stehe um sieben Uhr auf.* Корень *stehe* — во второй колонке, приставка *auf* — в последней, в поле «конец». Между ними — середина: время, место, дополнения. Глагол обнимает середину с двух сторон, и эту конструкцию называют рамкой предложения — *Satzklammer*. У *frühstücken* приставки нет, и поле «конец» остаётся пустым.",
+   "point": "Рамка: *Ich stehe … auf.* — середина зажата между корнем и приставкой",
+   "scene": {
+    "view": "sentence",
+    "dialogue": "tag",
+    "words": "alltag",
+    "clock": {
+     "time": "22:30",
+     "hours": 22,
+     "minutes": 30,
+     "formal": "zweiundzwanzig Uhr dreißig",
+     "informal": "halb elf",
+     "audio": [
+      "audio/cc7c080eda53.m4a",
+      "audio/4a3f8e9def69.m4a"
+     ]
+    },
+    "table": "trennbar",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "steh",
+         "text": "steh+e"
+        }
+       ],
+       [
+        {
+         "key": "um",
+         "text": "um"
+        },
+        {
+         "key": "sieben",
+         "text": "sieben"
+        },
+        {
+         "key": "uhr",
+         "text": "Uhr"
+        }
+       ],
+       [
+        {
+         "key": "auf",
+         "text": "auf"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich stehe um sieben Uhr auf.",
+      "ru": "Я встаю в семь часов.",
+      "audio": "audio/c85913a3e473.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "klammer-3",
+   "step": "klammer",
+   "stepTitle": "Глагол из двух частей",
+   "chapterIndex": 2,
+   "indexInStep": 2,
+   "read": "Теперь поставим время на первое место: *Um sieben Uhr stehe ich auf.* Смотрите, что переехало: *um sieben Uhr* — вперёд, *ich* — за глагол, в середину. А *stehe* и *auf* не сдвинулись ни на шаг: рамка держится при любом порядке слов. Типичная ошибка — *Ich stehe auf um sieben Uhr*. Приставка не может стоять сразу за глаголом, её место — в самом конце.",
+   "point": "*Um sieben Uhr stehe ich auf.* — порядок меняется, рамка остаётся",
+   "scene": {
+    "view": "sentence",
+    "dialogue": "tag",
+    "words": "alltag",
+    "clock": {
+     "time": "22:30",
+     "hours": 22,
+     "minutes": 30,
+     "formal": "zweiundzwanzig Uhr dreißig",
+     "informal": "halb elf",
+     "audio": [
+      "audio/cc7c080eda53.m4a",
+      "audio/4a3f8e9def69.m4a"
+     ]
+    },
+    "table": "trennbar",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "um",
+         "text": "Um"
+        },
+        {
+         "key": "sieben",
+         "text": "sieben"
+        },
+        {
+         "key": "uhr",
+         "text": "Uhr"
+        }
+       ],
+       [
+        {
+         "key": "steh",
+         "text": "steh+e"
+        }
+       ],
+       [
+        {
+         "key": "ich",
+         "text": "ich"
+        }
+       ],
+       [
+        {
+         "key": "auf",
+         "text": "auf"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Um sieben Uhr stehe ich auf.",
+      "ru": "В семь часов я встаю.",
+      "audio": "audio/c7fb0a64594b.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "klammer-4",
+   "step": "klammer",
+   "stepTitle": "Глагол из двух частей",
+   "chapterIndex": 2,
+   "indexInStep": 3,
+   "read": "В вопросах рамка тоже на месте. W-вопрос: *Wann stehst du auf?* — *wann* на первой позиции, окончание меняется на *-st*, приставка по-прежнему в конце. Вопрос да/нет начинается с глагола: *Stehst du morgen um sieben auf?* Это фраза Анны из диалога, только вопросом. Ответить можно коротко, совсем без глагола: *Ja, um sieben!*",
+   "point": "*Wann stehst du auf?* — *Stehst du morgen um sieben auf?*",
+   "scene": {
+    "view": "sentence",
+    "dialogue": "tag",
+    "words": "alltag",
+    "clock": {
+     "time": "22:30",
+     "hours": 22,
+     "minutes": 30,
+     "formal": "zweiundzwanzig Uhr dreißig",
+     "informal": "halb elf",
+     "audio": [
+      "audio/cc7c080eda53.m4a",
+      "audio/4a3f8e9def69.m4a"
+     ]
+    },
+    "table": "trennbar",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wann",
+         "text": "Wann"
+        }
+       ],
+       [
+        {
+         "key": "steh",
+         "text": "steh+st"
+        }
+       ],
+       [
+        {
+         "key": "du",
+         "text": "du"
+        }
+       ],
+       [
+        {
+         "key": "auf",
+         "text": "auf"
+        }
+       ]
+      ],
+      "punct": "?",
+      "plain": "Wann stehst du auf?",
+      "ru": "Когда ты встаёшь?",
+      "audio": "audio/032d19ff61ca.m4a"
+     },
+     {
+      "slots": [
+       [],
+       [
+        {
+         "key": "steh",
+         "text": "Steh+st"
+        }
+       ],
+       [
+        {
+         "key": "du",
+         "text": "du"
+        },
+        {
+         "key": "morgen",
+         "text": "morgen"
+        },
+        {
+         "key": "um",
+         "text": "um"
+        },
+        {
+         "key": "sieben",
+         "text": "sieben"
+        }
+       ],
+       [
+        {
+         "key": "auf",
+         "text": "auf"
+        }
+       ]
+      ],
+      "punct": "?",
+      "plain": "Stehst du morgen um sieben auf?",
+      "ru": "Ты завтра встанешь в семь?",
+      "audio": "audio/bdd526290806.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-1",
+   "step": "check",
+   "stepTitle": "Проверьте себя",
+   "chapterIndex": 3,
+   "indexInStep": 0,
+   "read": "*fünf nach halb acht* — «пять минут после половины восьмого». Минуты рядом с половиной немцы отсчитывают от *halb*: 7:25 — *fünf vor halb acht*, 7:35 — *fünf nach halb acht*. Остальные — от целого часа: 7:10 — *zehn nach sieben*, 7:50 — *zehn vor acht*. Запутались — скажите официально: *sieben Uhr fünfunddreißig*. Это всегда верно и всегда понятно.",
+   "point": "7:35 — *fünf nach halb acht*; если сомневаетесь — *sieben Uhr fünfunddreißig*",
+   "question": "Как по-разговорному сказать 7:35?",
+   "sceneBefore": {
+    "view": "clock",
+    "dialogue": "tag",
+    "words": "alltag",
+    "clock": {
+     "time": "07:30",
+     "hours": 7,
+     "minutes": 30,
+     "formal": "sieben Uhr dreißig",
+     "informal": "halb acht",
+     "audio": [
+      "audio/fcb78c272653.m4a",
+      "audio/135fc68e69a1.m4a"
+     ]
+    },
+    "table": "trennbar",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wann",
+         "text": "Wann"
+        }
+       ],
+       [
+        {
+         "key": "steh",
+         "text": "steh+st"
+        }
+       ],
+       [
+        {
+         "key": "du",
+         "text": "du"
+        }
+       ],
+       [
+        {
+         "key": "auf",
+         "text": "auf"
+        }
+       ]
+      ],
+      "punct": "?",
+      "plain": "Wann stehst du auf?",
+      "ru": "Когда ты встаёшь?",
+      "audio": "audio/032d19ff61ca.m4a"
+     },
+     {
+      "slots": [
+       [],
+       [
+        {
+         "key": "steh",
+         "text": "Steh+st"
+        }
+       ],
+       [
+        {
+         "key": "du",
+         "text": "du"
+        },
+        {
+         "key": "morgen",
+         "text": "morgen"
+        },
+        {
+         "key": "um",
+         "text": "um"
+        },
+        {
+         "key": "sieben",
+         "text": "sieben"
+        }
+       ],
+       [
+        {
+         "key": "auf",
+         "text": "auf"
+        }
+       ]
+      ],
+      "punct": "?",
+      "plain": "Stehst du morgen um sieben auf?",
+      "ru": "Ты завтра встанешь в семь?",
+      "audio": "audio/bdd526290806.m4a"
+     }
+    ]
+   },
+   "scene": {
+    "view": "clock",
+    "dialogue": "tag",
+    "words": "alltag",
+    "clock": {
+     "time": "07:35",
+     "hours": 7,
+     "minutes": 35,
+     "formal": "sieben Uhr fünfunddreißig",
+     "informal": "fünf nach halb acht",
+     "audio": [
+      "audio/293fc009bfaf.m4a",
+      "audio/a83a0bfa7abd.m4a"
+     ]
+    },
+    "table": "trennbar",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wann",
+         "text": "Wann"
+        }
+       ],
+       [
+        {
+         "key": "steh",
+         "text": "steh+st"
+        }
+       ],
+       [
+        {
+         "key": "du",
+         "text": "du"
+        }
+       ],
+       [
+        {
+         "key": "auf",
+         "text": "auf"
+        }
+       ]
+      ],
+      "punct": "?",
+      "plain": "Wann stehst du auf?",
+      "ru": "Когда ты встаёшь?",
+      "audio": "audio/032d19ff61ca.m4a"
+     },
+     {
+      "slots": [
+       [],
+       [
+        {
+         "key": "steh",
+         "text": "Steh+st"
+        }
+       ],
+       [
+        {
+         "key": "du",
+         "text": "du"
+        },
+        {
+         "key": "morgen",
+         "text": "morgen"
+        },
+        {
+         "key": "um",
+         "text": "um"
+        },
+        {
+         "key": "sieben",
+         "text": "sieben"
+        }
+       ],
+       [
+        {
+         "key": "auf",
+         "text": "auf"
+        }
+       ]
+      ],
+      "punct": "?",
+      "plain": "Stehst du morgen um sieben auf?",
+      "ru": "Ты завтра встанешь в семь?",
+      "audio": "audio/bdd526290806.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-2",
+   "step": "check",
+   "stepTitle": "Проверьте себя",
+   "chapterIndex": 3,
+   "indexInStep": 1,
+   "read": "*Wann siehst du fern?* Здесь сразу две трудности. Первая — рамка: корень *siehst* на втором месте, *fern* в конце. Вторая — корень меняет гласную, как у *sehen*: *ich sehe*, но *du siehst*, *er sieht*. Ошибка *Wann sehst du fern?* очень частая. Так же ведёт себя *anfangen*: *Wann fängst du an?*",
+   "point": "*Wann siehst du fern?* — *e* → *ie*, приставка в конце",
+   "question": "Как спросить Марко, когда он смотрит телевизор?",
+   "sceneBefore": {
+    "view": "clock",
+    "dialogue": "tag",
+    "words": "alltag",
+    "clock": {
+     "time": "07:35",
+     "hours": 7,
+     "minutes": 35,
+     "formal": "sieben Uhr fünfunddreißig",
+     "informal": "fünf nach halb acht",
+     "audio": [
+      "audio/293fc009bfaf.m4a",
+      "audio/a83a0bfa7abd.m4a"
+     ]
+    },
+    "table": "trennbar",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wann",
+         "text": "Wann"
+        }
+       ],
+       [
+        {
+         "key": "steh",
+         "text": "steh+st"
+        }
+       ],
+       [
+        {
+         "key": "du",
+         "text": "du"
+        }
+       ],
+       [
+        {
+         "key": "auf",
+         "text": "auf"
+        }
+       ]
+      ],
+      "punct": "?",
+      "plain": "Wann stehst du auf?",
+      "ru": "Когда ты встаёшь?",
+      "audio": "audio/032d19ff61ca.m4a"
+     },
+     {
+      "slots": [
+       [],
+       [
+        {
+         "key": "steh",
+         "text": "Steh+st"
+        }
+       ],
+       [
+        {
+         "key": "du",
+         "text": "du"
+        },
+        {
+         "key": "morgen",
+         "text": "morgen"
+        },
+        {
+         "key": "um",
+         "text": "um"
+        },
+        {
+         "key": "sieben",
+         "text": "sieben"
+        }
+       ],
+       [
+        {
+         "key": "auf",
+         "text": "auf"
+        }
+       ]
+      ],
+      "punct": "?",
+      "plain": "Stehst du morgen um sieben auf?",
+      "ru": "Ты завтра встанешь в семь?",
+      "audio": "audio/bdd526290806.m4a"
+     }
+    ]
+   },
+   "scene": {
+    "view": "sentence",
+    "dialogue": "tag",
+    "words": "alltag",
+    "clock": {
+     "time": "07:35",
+     "hours": 7,
+     "minutes": 35,
+     "formal": "sieben Uhr fünfunddreißig",
+     "informal": "fünf nach halb acht",
+     "audio": [
+      "audio/293fc009bfaf.m4a",
+      "audio/a83a0bfa7abd.m4a"
+     ]
+    },
+    "table": "trennbar",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wann",
+         "text": "Wann"
+        }
+       ],
+       [
+        {
+         "key": "sieh",
+         "text": "sieh+st"
+        }
+       ],
+       [
+        {
+         "key": "du",
+         "text": "du"
+        }
+       ],
+       [
+        {
+         "key": "fern",
+         "text": "fern"
+        }
+       ]
+      ],
+      "punct": "?",
+      "plain": "Wann siehst du fern?",
+      "ru": "Когда ты смотришь телевизор?",
+      "audio": "audio/c29a91195349.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-3",
+   "step": "check",
+   "stepTitle": "Проверьте себя",
+   "chapterIndex": 3,
+   "indexInStep": 2,
+   "read": "*rufen* — «звать», а звать кого? Винительный падеж. Поэтому и *anrufen* требует винительного: *Ich rufe dich an*, *Rufst du mich an?* В русском «звонить кому?» — дательный, отсюда соблазн сказать *dir*. Местоимение встаёт в середину рамки, сразу за подлежащим, а время — за ним: *Ich rufe dich morgen an.*",
+   "point": "*anrufen* + винительный: *Ich rufe dich an*, а не *dir*",
+   "question": "Почему *Ich rufe dich an*, а не *dir*, как в русском «тебе»?",
+   "sceneBefore": {
+    "view": "sentence",
+    "dialogue": "tag",
+    "words": "alltag",
+    "clock": {
+     "time": "07:35",
+     "hours": 7,
+     "minutes": 35,
+     "formal": "sieben Uhr fünfunddreißig",
+     "informal": "fünf nach halb acht",
+     "audio": [
+      "audio/293fc009bfaf.m4a",
+      "audio/a83a0bfa7abd.m4a"
+     ]
+    },
+    "table": "trennbar",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wann",
+         "text": "Wann"
+        }
+       ],
+       [
+        {
+         "key": "sieh",
+         "text": "sieh+st"
+        }
+       ],
+       [
+        {
+         "key": "du",
+         "text": "du"
+        }
+       ],
+       [
+        {
+         "key": "fern",
+         "text": "fern"
+        }
+       ]
+      ],
+      "punct": "?",
+      "plain": "Wann siehst du fern?",
+      "ru": "Когда ты смотришь телевизор?",
+      "audio": "audio/c29a91195349.m4a"
+     }
+    ]
+   },
+   "scene": {
+    "view": "sentence",
+    "dialogue": "tag",
+    "words": "alltag",
+    "clock": {
+     "time": "07:35",
+     "hours": 7,
+     "minutes": 35,
+     "formal": "sieben Uhr fünfunddreißig",
+     "informal": "fünf nach halb acht",
+     "audio": [
+      "audio/293fc009bfaf.m4a",
+      "audio/a83a0bfa7abd.m4a"
+     ]
+    },
+    "table": "trennbar",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "ruf",
+         "text": "ruf+e"
+        }
+       ],
+       [
+        {
+         "key": "dich",
+         "text": "dich"
+        },
+        {
+         "key": "morgen",
+         "text": "morgen"
+        }
+       ],
+       [
+        {
+         "key": "an",
+         "text": "an"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich rufe dich morgen an.",
+      "ru": "Я позвоню тебе завтра.",
+      "audio": "audio/9308e9818e2f.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "hoeren-1",
+   "step": "hoeren",
+   "stepTitle": "Аудирование: автоответчик",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "В третьей части аудирования звучат пять сообщений на автоответчике: от друзей, из врачебного кабинета, из школы. Каждое звучит дважды, к каждому — вопрос с тремя вариантами. Чаще всего спрашивают о времени или дне, а в тексте названы два-три похожих числа. Прежде чем слушать, прочитайте вопрос и варианты. И запомните прощание по телефону: *Auf Wiederhören!* — «до свидания» для тех, кого не видно.",
+   "point": "*Hören*, часть 3: пять сообщений, каждое дважды, a/b/c — чаще всего о времени",
+   "scene": {
+    "view": "task",
+    "dialogue": "tag",
+    "words": "alltag",
+    "clock": {
+     "time": "07:35",
+     "hours": 7,
+     "minutes": 35,
+     "formal": "sieben Uhr fünfunddreißig",
+     "informal": "fünf nach halb acht",
+     "audio": [
+      "audio/293fc009bfaf.m4a",
+      "audio/a83a0bfa7abd.m4a"
+     ]
+    },
+    "table": "trennbar",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "ruf",
+         "text": "ruf+e"
+        }
+       ],
+       [
+        {
+         "key": "dich",
+         "text": "dich"
+        },
+        {
+         "key": "morgen",
+         "text": "morgen"
+        }
+       ],
+       [
+        {
+         "key": "an",
+         "text": "an"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich rufe dich morgen an.",
+      "ru": "Я позвоню тебе завтра.",
+      "audio": "audio/9308e9818e2f.m4a"
+     }
+    ],
+    "task": "nachricht"
+   }
+  },
+  {
+   "id": "hoeren-2",
+   "step": "hoeren",
+   "stepTitle": "Аудирование: автоответчик",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "*Um 10.30 Uhr* — вариант b. В сообщении звучат все три времени, и в этом ловушка. *Neun Uhr* — обычное время, но в пятницу курс начинается позже. *Ein Uhr* — конец урока: *Er hört dann um ein Uhr auf.* А *erst um halb elf* — «только в половине одиннадцатого». И ещё: в вопросе *beginnt*, а в тексте *fängt … an*. Экзамен любит синонимы.",
+   "point": "*erst um halb elf* — «не раньше»; *beginnt* = *fängt … an*",
+   "question": "Когда в пятницу начинается курс?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "tag",
+    "words": "alltag",
+    "clock": {
+     "time": "07:35",
+     "hours": 7,
+     "minutes": 35,
+     "formal": "sieben Uhr fünfunddreißig",
+     "informal": "fünf nach halb acht",
+     "audio": [
+      "audio/293fc009bfaf.m4a",
+      "audio/a83a0bfa7abd.m4a"
+     ]
+    },
+    "table": "trennbar",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "ruf",
+         "text": "ruf+e"
+        }
+       ],
+       [
+        {
+         "key": "dich",
+         "text": "dich"
+        },
+        {
+         "key": "morgen",
+         "text": "morgen"
+        }
+       ],
+       [
+        {
+         "key": "an",
+         "text": "an"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich rufe dich morgen an.",
+      "ru": "Я позвоню тебе завтра.",
+      "audio": "audio/9308e9818e2f.m4a"
+     }
+    ],
+    "task": "nachricht"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "tag",
+    "words": "alltag",
+    "clock": {
+     "time": "07:35",
+     "hours": 7,
+     "minutes": 35,
+     "formal": "sieben Uhr fünfunddreißig",
+     "informal": "fünf nach halb acht",
+     "audio": [
+      "audio/293fc009bfaf.m4a",
+      "audio/a83a0bfa7abd.m4a"
+     ]
+    },
+    "table": "trennbar",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "ruf",
+         "text": "ruf+e"
+        }
+       ],
+       [
+        {
+         "key": "dich",
+         "text": "dich"
+        },
+        {
+         "key": "morgen",
+         "text": "morgen"
+        }
+       ],
+       [
+        {
+         "key": "an",
+         "text": "an"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich rufe dich morgen an.",
+      "ru": "Я позвоню тебе завтра.",
+      "audio": "audio/9308e9818e2f.m4a"
+     }
+    ],
+    "task": "nachricht",
+    "solved": true
+   }
+  },
+  {
+   "id": "lesen-1",
+   "step": "lesen",
+   "stepTitle": "Чтение: табличка на двери",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "В третьей части чтения — таблички и объявления: на двери магазина, врача, школы. К каждой — утверждение, нужно отметить *richtig* или *falsch*. *Öffnungszeiten* — «часы работы», *geöffnet* — «открыто», *geschlossen* — «закрыто». Время на табличках всегда официальное: *8.30 – 17.00 Uhr*. Дни недели сокращают: *Mo*, *Di*, *Mi*, *Do*, *Fr*, *Sa*, *So*.",
+   "point": "*Öffnungszeiten* — часы работы; *geöffnet* — открыто, *geschlossen* — закрыто",
+   "scene": {
+    "view": "task",
+    "dialogue": "tag",
+    "words": "alltag",
+    "clock": {
+     "time": "07:35",
+     "hours": 7,
+     "minutes": 35,
+     "formal": "sieben Uhr fünfunddreißig",
+     "informal": "fünf nach halb acht",
+     "audio": [
+      "audio/293fc009bfaf.m4a",
+      "audio/a83a0bfa7abd.m4a"
+     ]
+    },
+    "table": "trennbar",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "ruf",
+         "text": "ruf+e"
+        }
+       ],
+       [
+        {
+         "key": "dich",
+         "text": "dich"
+        },
+        {
+         "key": "morgen",
+         "text": "morgen"
+        }
+       ],
+       [
+        {
+         "key": "an",
+         "text": "an"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich rufe dich morgen an.",
+      "ru": "Я позвоню тебе завтра.",
+      "audio": "audio/9308e9818e2f.m4a"
+     }
+    ],
+    "task": "buero"
+   }
+  },
+  {
+   "id": "lesen-2",
+   "step": "lesen",
+   "stepTitle": "Чтение: табличка на двери",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "*Falsch.* До 17 часов офис открыт с понедельника по четверг, а в пятницу — только до 13. Это типичная ловушка третьей части: в табличке два похожих времени, и утверждение берёт не ту строку. Читайте табличку по порядку: сначала найдите нужный день, потом время. *Fr: 8.30 – 13.00 Uhr* — в пятницу после обеда офис закрыт.",
+   "point": "Сначала найдите в табличке нужный день, потом время",
+   "question": "Правда ли, что в пятницу офис работает до 17 часов?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "tag",
+    "words": "alltag",
+    "clock": {
+     "time": "07:35",
+     "hours": 7,
+     "minutes": 35,
+     "formal": "sieben Uhr fünfunddreißig",
+     "informal": "fünf nach halb acht",
+     "audio": [
+      "audio/293fc009bfaf.m4a",
+      "audio/a83a0bfa7abd.m4a"
+     ]
+    },
+    "table": "trennbar",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "ruf",
+         "text": "ruf+e"
+        }
+       ],
+       [
+        {
+         "key": "dich",
+         "text": "dich"
+        },
+        {
+         "key": "morgen",
+         "text": "morgen"
+        }
+       ],
+       [
+        {
+         "key": "an",
+         "text": "an"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich rufe dich morgen an.",
+      "ru": "Я позвоню тебе завтра.",
+      "audio": "audio/9308e9818e2f.m4a"
+     }
+    ],
+    "task": "buero"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "tag",
+    "words": "alltag",
+    "clock": {
+     "time": "07:35",
+     "hours": 7,
+     "minutes": 35,
+     "formal": "sieben Uhr fünfunddreißig",
+     "informal": "fünf nach halb acht",
+     "audio": [
+      "audio/293fc009bfaf.m4a",
+      "audio/a83a0bfa7abd.m4a"
+     ]
+    },
+    "table": "trennbar",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "ruf",
+         "text": "ruf+e"
+        }
+       ],
+       [
+        {
+         "key": "dich",
+         "text": "dich"
+        },
+        {
+         "key": "morgen",
+         "text": "morgen"
+        }
+       ],
+       [
+        {
+         "key": "an",
+         "text": "an"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich rufe dich morgen an.",
+      "ru": "Я позвоню тебе завтра.",
+      "audio": "audio/9308e9818e2f.m4a"
+     }
+    ],
+    "task": "buero",
+    "solved": true
+   }
+  }
+ ],
+ "exercises": [
+  {
+   "id": "tagesablauf-1",
+   "type": "choice",
+   "q": "___ spät ist es?",
+   "options": [
+    "Wie",
+    "Wann",
+    "Wo"
+   ],
+   "answer": 0,
+   "why": "*Wie spät ist es?* — «который час?». *Wann?* — «когда?»: *Wann fängt der Kurs an?*",
+   "audio": "audio/b6c59067fbc0.m4a"
+  },
+  {
+   "id": "tagesablauf-2",
+   "type": "choice",
+   "q": "Как сказать 7:30 в разговоре?",
+   "options": [
+    "halb sieben",
+    "halb acht",
+    "Viertel nach sieben"
+   ],
+   "answer": 1,
+   "why": "После *halb* — следующий час: *halb acht* — «половина восьмого»."
+  },
+  {
+   "id": "tagesablauf-3",
+   "type": "choice",
+   "q": "Как сказать 9:45 в разговоре?",
+   "options": [
+    "Viertel nach neun",
+    "Viertel vor neun",
+    "Viertel vor zehn"
+   ],
+   "answer": 2,
+   "why": "*Viertel vor zehn* — «без четверти десять»."
+  },
+  {
+   "id": "tagesablauf-4",
+   "type": "choice",
+   "q": "Как официально сказать 14:15?",
+   "options": [
+    "vierzehn Uhr fünfzehn",
+    "Viertel nach zwei",
+    "zwei Uhr fünfzehn"
+   ],
+   "answer": 0,
+   "why": "Официально — 24 часа: *vierzehn Uhr fünfzehn*. *Viertel nach zwei* скажут в разговоре."
+  },
+  {
+   "id": "tagesablauf-5",
+   "type": "choice",
+   "q": "Der Kurs fängt ___ neun Uhr an.",
+   "options": [
+    "am",
+    "um",
+    "von"
+   ],
+   "answer": 1,
+   "why": "Время по часам — с *um*.",
+   "audio": "audio/7effd019b2ba.m4a"
+  },
+  {
+   "id": "tagesablauf-6",
+   "type": "choice",
+   "q": "Wir haben ___ Montag Kurs.",
+   "options": [
+    "um",
+    "am",
+    "in"
+   ],
+   "answer": 1,
+   "why": "Дни недели — с *am*: *am Montag*.",
+   "audio": "audio/556ecc1b43ef.m4a"
+  },
+  {
+   "id": "tagesablauf-7",
+   "type": "gap",
+   "q": "Ich arbeite ___ neun ___ fünf.",
+   "answer": [
+    "von",
+    "bis"
+   ],
+   "ru": "Я работаю с девяти до пяти.",
+   "audio": "audio/b5de8660d892.m4a"
+  },
+  {
+   "id": "tagesablauf-8",
+   "type": "gap",
+   "q": "Ich ___ um sechs Uhr ___.",
+   "answer": [
+    "stehe",
+    "auf"
+   ],
+   "hint": "aufstehen",
+   "ru": "Я встаю в шесть часов.",
+   "why": "Корень *stehe* — на втором месте, приставка *auf* — в конце.",
+   "audio": "audio/f09c9c674ba0.m4a"
+  },
+  {
+   "id": "tagesablauf-9",
+   "type": "gap",
+   "q": "Wann ___ der Kurs ___?",
+   "answer": [
+    "fängt",
+    "an"
+   ],
+   "hint": "anfangen",
+   "why": "*anfangen* меняет *a* на *ä*: *du fängst an*, *er fängt an*.",
+   "audio": "audio/c43d76461e29.m4a"
+  },
+  {
+   "id": "tagesablauf-10",
+   "type": "gap",
+   "q": "Am Abend ___ Marco ___.",
+   "answer": [
+    "sieht",
+    "fern"
+   ],
+   "hint": "fernsehen",
+   "why": "*sehen* → *er sieht*, приставка *fern* — в конце.",
+   "audio": "audio/1c990876f5b8.m4a"
+  },
+  {
+   "id": "tagesablauf-11",
+   "type": "gap",
+   "q": "___ du heute ___?",
+   "answer": [
+    "Kaufst",
+    "ein"
+   ],
+   "hint": "einkaufen",
+   "ru": "Ты сегодня пойдёшь за покупками?",
+   "why": "Вопрос да/нет: корень первым, *ein* — в конце.",
+   "audio": "audio/2bbb51c0410e.m4a"
+  },
+  {
+   "id": "tagesablauf-12",
+   "type": "choice",
+   "q": "Ich rufe ___ morgen an.",
+   "options": [
+    "dir",
+    "dich",
+    "du"
+   ],
+   "answer": 1,
+   "why": "*anrufen* + винительный: *Ich rufe dich an*. «Звоню тебе» по-русски — дательный, отсюда ошибка.",
+   "audio": "audio/9308e9818e2f.m4a"
+  },
+  {
+   "id": "tagesablauf-13",
+   "type": "choice",
+   "q": "Какое предложение верное?",
+   "options": [
+    "Dann ich frühstücke.",
+    "Dann frühstücke ich.",
+    "Ich dann frühstücke."
+   ],
+   "answer": 1,
+   "why": "После *dann* глагол сразу второй, *ich* — за ним."
+  },
+  {
+   "id": "tagesablauf-14",
+   "type": "order",
+   "ru": "Курс начинается в девять.",
+   "de": "Der Kurs fängt um neun an.",
+   "also": [
+    "Um neun fängt der Kurs an."
+   ],
+   "audio": "audio/e66a7a99187e.m4a"
+  },
+  {
+   "id": "tagesablauf-15",
+   "type": "order",
+   "ru": "В субботу я убираюсь.",
+   "de": "Am Samstag räume ich auf.",
+   "also": [
+    "Ich räume am Samstag auf."
+   ],
+   "why": "*Am Samstag* на первом месте — *räume* второй, *auf* в конце.",
+   "audio": "audio/9fc211aace02.m4a"
+  },
+  {
+   "id": "tagesablauf-16",
+   "type": "order",
+   "ru": "Когда ты встаёшь?",
+   "de": "Wann stehst du auf?",
+   "audio": "audio/032d19ff61ca.m4a"
+  }
+ ]
+}

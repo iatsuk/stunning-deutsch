@@ -1,0 +1,605 @@
+id: zahlen
+order: 2
+title: Wie schreibt man das?
+ru: Числа, алфавит, телефон
+lede: >-
+  Анна записывается на экзамен по телефону: называет фамилию по буквам,
+  диктует номер — и выясняет, что немцы читают числа задом наперёд. А в
+  перерыве у Марко день рождения, и оказывается, что возраст по-немецки не
+  «имеют».
+goals:
+  - Считать от 0 до 1000 и понимать числа на слух
+  - Назвать по буквам имя и фамилию и переспросить, если не расслышали
+  - Продиктовать номер телефона и записать чужой без ошибок
+  - Спросить «у тебя есть …?» с глаголом *haben* и ответить *ja* или *nein*
+  - Назвать свой возраст и спросить чужой
+grammar:
+  - Числа 0–1000
+  - Глагол haben
+  - Вопросы да/нет и ответы ja/nein
+  - Алфавит и спеллинг
+exam: [sprechen-1, hoeren-3, schreiben-1]
+
+dialogues:
+  anruf:
+    title: Anmeldung am Telefon
+    ru: Запись по телефону
+    place: Sprachschule, Leipzig
+    people:
+      A: { name: Anna, voice: Anna }
+      W: { name: Frau Weber, voice: Sandy }
+    lines:
+      - W: Sprachschule Leipzig, Weber, guten Tag!
+        ru: Языковая школа Лейпцига, Вебер, добрый день!
+      - A: Guten Tag, hier ist Anna Nowak. Ich möchte die A1-Prüfung machen.
+        ru: Добрый день, это Анна Новак. Я хотела бы сдать экзамен A1.
+      - W: Gern. Nowak – wie schreibt man das?
+        ru: Хорошо. Новак — как это пишется?
+      - A: N – O – W – A – K. W wie Wilhelm.
+        ru: Эн — о — вэ — а — ка. «Вэ», как Вильгельм.
+      - W: Danke. Und Ihre Telefonnummer, bitte?
+        ru: Спасибо. А ваш номер телефона?
+      - A: Null eins sieben sechs – dreiundzwanzig – fünfundvierzig – einundachtzig.
+        ru: 0176 — 23 — 45 — 81.
+      - W: Null eins sieben sechs – zweiunddreißig …?
+        ru: 0176 — 32…?
+      - A: Nein, dreiundzwanzig! Zwei – drei.
+        ru: Нет, двадцать три! Два — три.
+      - W: Ah, dreiundzwanzig! Danke, Frau Nowak. Auf Wiederhören!
+        ru: А, двадцать три! Спасибо, госпожа Новак. До свидания!
+      - A: Auf Wiederhören!
+        ru: До свидания!
+  geburtstag:
+    title: Alles Gute, Marco!
+    ru: С днём рождения, Марко!
+    place: Sprachschule, Raum 214
+    people:
+      A: { name: Anna, voice: Anna }
+      M: { name: Marco, voice: Reed }
+      S: { name: Herr Schulz, voice: Eddy }
+    lines:
+      - A: Marco, hast du heute Geburtstag?
+        ru: Марко, у тебя сегодня день рождения?
+      - M: Ja! Ich habe heute achtundzwanzig Jahre.
+        ru: Да! Я «имею» сегодня двадцать восемь лет.
+      - A: "Alles Gute! Aber auf Deutsch sagt man: Ich bin achtundzwanzig."
+        ru: "Поздравляю! Но по-немецки говорят: «Я — двадцать восемь»."
+      - M: Ach so! Ich bin achtundzwanzig Jahre alt. Und du? Bist du auch achtundzwanzig?
+        ru: Ах вот как! Мне двадцать восемь лет. А тебе? Тебе тоже двадцать восемь?
+      - A: Nein, ich bin fünfundzwanzig.
+        ru: Нет, мне двадцать пять.
+      - M: Ich habe Kuchen für alle! Habt ihr Zeit?
+        ru: У меня торт для всех! У вас есть время?
+      - A: Ja, klar! Wir haben jetzt Pause.
+        ru: Да, конечно! У нас сейчас перерыв.
+      - M: Und Herr Schulz? Hat er auch Zeit?
+        ru: А господин Шульц? У него тоже есть время?
+      - A: Herr Schulz, haben Sie Zeit? Marco hat Geburtstag!
+        ru: Господин Шульц, у вас есть время? У Марко день рождения!
+      - S: Ja, natürlich! Alles Gute, Marco!
+        ru: Да, конечно! Поздравляю, Марко!
+
+words:
+  zahlen:
+    title: Zahlen von 0 bis 12
+    ru: Числа от 0 до 12
+    items:
+      - { de: "null", ru: "0" }
+      - { de: eins, ru: "1", note: "в составе числа — ein: einundzwanzig" }
+      - { de: zwei, ru: "2", note: по телефону часто zwo }
+      - { de: drei, ru: "3" }
+      - { de: vier, ru: "4", note: "v = ф: [фир]" }
+      - { de: fünf, ru: "5" }
+      - { de: sechs, ru: "6", note: "chs = кс: [зекс]" }
+      - { de: sieben, ru: "7", note: "s = з: [зи́бен]" }
+      - { de: acht, ru: "8" }
+      - { de: neun, ru: "9", note: "eu = ой: [нойн]" }
+      - { de: zehn, ru: "10", note: "z = ц: [цэ:н]" }
+      - { de: elf, ru: "11" }
+      - { de: zwölf, ru: "12" }
+  telefon:
+    title: Am Telefon
+    ru: Телефон и адрес
+    items:
+      - { de: die Telefonnummer, ru: номер телефона, pl: Telefonnummern }
+      - { de: das Handy, ru: мобильный телефон, pl: Handys, note: "[хэ́нди]" }
+      - { de: die Handynummer, ru: номер мобильного, pl: Handynummern }
+      - { de: die Adresse, ru: адрес, pl: Adressen, note: "одна d, две s" }
+      - { de: die Hausnummer, ru: номер дома, pl: Hausnummern }
+      - { de: die Postleitzahl, ru: почтовый индекс, pl: Postleitzahlen, note: "PLZ — 04109 Leipzig" }
+      - { de: buchstabieren, ru: назвать по буквам, note: Wie schreibt man das? }
+      - { de: Wie bitte?, ru: "Простите, что вы сказали?", note: если не расслышали }
+      - { de: "Noch einmal, bitte.", ru: "Ещё раз, пожалуйста." }
+      - { de: "Langsam, bitte.", ru: "Помедленнее, пожалуйста." }
+      - { de: Auf Wiederhören!, ru: До свидания! (по телефону), note: hören — слышать }
+  kurs:
+    title: Im Kurs
+    ru: На курсе
+    items:
+      - { de: haben, ru: иметь, note: "ich habe, du hast, er hat" }
+      - { de: die Zeit, ru: время, pl: Zeiten, note: Hast du Zeit? }
+      - { de: die Pause, ru: перерыв, pl: Pausen, note: Wir haben Pause. }
+      - { de: der Geburtstag, ru: день рождения, pl: Geburtstage, note: Ich habe heute Geburtstag. }
+      - { de: Alles Gute!, ru: Поздравляю!, note: "и «всего хорошего»" }
+      - { de: das Jahr, ru: год, pl: Jahre }
+      - { de: alt, ru: старый, note: Wie alt bist du? }
+      - { de: der Kuchen, ru: "пирог, торт", pl: Kuchen }
+      - { de: die Prüfung, ru: экзамен, pl: Prüfungen }
+      - { de: der Raum, ru: "аудитория, комната", pl: Räume, note: Raum 214 }
+      - { de: die Frage, ru: вопрос, pl: Fragen, note: Haben Sie Fragen? }
+      - { de: die Zahl, ru: число, pl: Zahlen }
+
+tables:
+  zehn:
+    title: Von 13 bis 90
+    ru: От 13 до 90
+    head: [Zahl, Deutsch, Как устроено]
+    ruCols: [2]
+    rows:
+      - ["13", drei+zehn, 3 + 10]
+      - ["14", vier+zehn, 4 + 10]
+      - ["16", sech+zehn, "*sechs* теряет *s*"]
+      - ["17", sieb+zehn, "*sieben* теряет *en*"]
+      - ["20", zwan+zig, "не *zweizig*"]
+      - ["30", drei+ßig, "единственный десяток на *-ßig*"]
+      - ["60", sech+zig, "снова без *s*"]
+      - ["70", sieb+zig, "снова без *en*"]
+      - ["90", neun+zig, "9 + *-zig*"]
+    note: "До 12 у каждого числа своё имя. Дальше — конструктор: единица + *zehn* или *-zig*."
+  zwanzig:
+    title: "Einundzwanzig: erst die Einer"
+    ru: Сначала единицы, потом десятки
+    head: [Zahl, Deutsch, Буквально]
+    ruCols: [2]
+    rows:
+      - ["21", "ein*und*zwanzig", один-и-двадцать]
+      - ["23", "drei*und*zwanzig", три-и-двадцать]
+      - ["32", "zwei*und*dreißig", два-и-тридцать]
+      - ["45", "fünf*und*vierzig", пять-и-сорок]
+      - ["67", "sieben*und*sechzig", семь-и-шестьдесят]
+      - ["100", hundert, "сто, можно и *einhundert*"]
+      - ["214", zweihundertvierzehn, двести-четырнадцать]
+      - ["345", "dreihundertfünf*und*vierzig", триста-пять-и-сорок]
+      - ["1000", tausend, "тысяча, можно и *eintausend*"]
+    note: "Число пишется одним словом: *dreihundertfünfundvierzig*. Сотни идут как в русском, а внутри сотни — снова сначала единицы."
+  haben:
+    title: haben
+    ru: иметь
+    head: [Person, haben, Beispiel]
+    rows:
+      - [ich, hab+e, Ich habe Kuchen.]
+      - [du, ha+st, Hast du Zeit?]
+      - [er / sie / es, ha+t, Marco hat Geburtstag.]
+      - [wir, hab+en, Wir haben Pause.]
+      - [ihr, hab+t, Habt ihr Zeit?]
+      - [sie / Sie, hab+en, Haben Sie Fragen?]
+    note: "В *du hast* и *er hat* буква *b* выпадает. Остальные формы — как у правильного глагола."
+  alphabet:
+    title: Das Alphabet
+    ru: Буквы, которые зовут иначе
+    head: [Buchstabe, Name, Звучит]
+    ruCols: [2]
+    rows:
+      - [C, Ce, "«цэ»"]
+      - [E, E, "«э» — не «и»"]
+      - [I, I, "«и» — не «ай»"]
+      - [H, Ha, "«ха»"]
+      - [J, Jot, "«йот»"]
+      - [V, Vau, "«фау»"]
+      - [W, We, "«вэ»"]
+      - [Y, Ypsilon, "«ипсилон»"]
+      - [Z, Zett, "«цэт»"]
+      - ["Ä · Ö · Ü", "A-Umlaut · O-Umlaut · U-Umlaut", "«э» · «ё» · «ю»"]
+      - [ß, Eszett, "«эсцэт»"]
+    note: "Остальные буквы звучат почти как в русском: *Be*, *De*, *Ka*, *El*, *Em*, *Er*."
+
+tasks:
+  buchstabieren:
+    kind: keywords
+    part: sprechen-1
+    title: Sprechen, Teil 1
+    situation: Buchstabieren Sie Ihren Namen. Nennen Sie Ihre Telefonnummer.
+    words: [Familienname?, Telefonnummer?]
+    sample:
+      - Mein Familienname ist Rossi.
+      - R – O – Doppel-S – I.
+      - Meine Handynummer ist null eins fünf neun – drei vier sieben sieben eins zwei.
+  nachricht:
+    kind: listen
+    part: hoeren-3
+    title: Hören, Teil 3
+    situation: Sie hören eine Nachricht auf dem Anrufbeantworter.
+    voice: Sandy
+    text: >-
+      Guten Tag, hier ist Sabine Weber, Sprachschule Leipzig. Eine Nachricht
+      für Marco Rossi: Herr Rossi, Ihr Kurs ist jetzt in Raum
+      zweihundertvierzehn. Zwei – eins – vier. Haben Sie Fragen? Meine Nummer
+      ist null drei vier eins – achtundfünfzig – siebenundneunzig – dreißig.
+      Auf Wiederhören!
+    question: Wo ist der Kurs?
+    options: [Raum 140, Raum 214, Raum 241]
+    answer: 1
+
+steps:
+  - id: anruf
+    chapter: scene
+    title: Звонок в школу
+    beats:
+      - read: >-
+          Анна хочет сдать экзамен A1 и звонит в языковую школу. Трубку в
+          Германии берут не со словом «алло», а с названием и фамилией:
+          *Sprachschule Leipzig, Weber*. Звонящий тоже представляется
+          по-особому — не *Ich bin …*, а *Hier ist …*, буквально «здесь …»:
+          *Hier ist Anna Nowak*. Просьбу Анна начинает с готовой фразы *Ich
+          möchte …* — «я хотела бы …».
+        point: "По телефону: *Hier ist Anna Nowak.* — «Это Анна Новак»"
+        set: { view: dialogue, dialogue: anruf, reveal: 2 }
+      - read: >-
+          Фамилию Новак немецкое ухо не узнаёт, поэтому звучит главный вопрос
+          любого звонка: *Wie schreibt man das?* — «как это пишется?». Анна
+          диктует по буквам: *N – O – W – A – K*. Имена букв немецкие: «вэ», а
+          не «дабл-ю», «ка», а не «кей». А для верности Анна добавляет *W wie
+          Wilhelm*: немцы уточняют букву словом, которое с неё начинается.
+        point: "*Wie schreibt man das?* — «Как это пишется?»; *W wie Wilhelm* — уточнить букву"
+        set: { reveal: 4, focus: [2, 3] }
+      - read: >-
+          Теперь номер. Код *0176* Анна называет по цифрам, а остальное —
+          парами: *dreiundzwanzig*, *fünfundvierzig*, *einundachtzig*. И фрау
+          Вебер тут же ошибается: вместо 23 слышит 32. Это не рассеянность. В
+          немецком сначала звучат единицы, потом десятки: *drei-und-zwanzig* —
+          «три-и-двадцать». На этом путаются даже сами немцы, особенно по
+          телефону.
+        point: "*dreiundzwanzig* = 23: сначала единицы, потом десятки"
+        set: { reveal: 7, focus: [5, 6] }
+      - read: >-
+          Анна выручает себя простым приёмом: *Nein, dreiundzwanzig! Zwei –
+          drei.* Если число не поняли, назовите его по цифрам — так ошибиться
+          невозможно. А прощаются по телефону не *Auf Wiedersehen*, а *Auf
+          Wiederhören*: *sehen* — «видеть», *hören* — «слышать». Собеседника
+          не видно, поэтому и прощание — «до нового слышания». Начало
+          разговора, впрочем, обычное: *Guten Tag!* работает и по телефону.
+        point: "*Auf Wiederhören!* — «до свидания» по телефону"
+        set: { reveal: 10, focus: [7, 8, 9] }
+
+  - id: geburtstag
+    chapter: scene
+    title: Двадцать восемь лет
+    beats:
+      - read: >-
+          Перерыв в аудитории 214. Анна узнаёт, что у Марко день рождения:
+          *Hast du heute Geburtstag?* Марко отвечает так, как сказал бы
+          по-итальянски: *Ich habe achtundzwanzig Jahre*. Но по-немецки годы
+          не «имеют»: как в английском I am, возраст «есть» — *Ich bin
+          achtundzwanzig*. Анна поправляет, и Марко строит полную фразу: *Ich
+          bin achtundzwanzig Jahre alt*.
+        point: "Возраст — с *sein*: *Ich bin 28 Jahre alt*, а не *Ich habe 28 Jahre*"
+        set: { view: dialogue, dialogue: geburtstag, reveal: 4, focus: [1, 2, 3] }
+      - read: >-
+          На вопрос *Bist du auch achtundzwanzig?* Анна отвечает *Nein* — и
+          сразу называет своё число. Дальше *haben* звучит почти в каждой
+          реплике: *Ich habe Kuchen*, *Habt ihr Zeit?*, *Wir haben Pause*,
+          *Hat er Zeit?* А к преподавателю, господину Шульцу, — на *Sie*:
+          *Haben Sie Zeit?* Где по-русски «у меня есть» или «у нас перерыв»,
+          немец говорит «я имею», «мы имеем».
+        point: "«У меня есть …» — *Ich habe …*: *Ich habe Zeit*, *Wir haben Pause*"
+        set: { reveal: 10, focus: [4, 5, 6, 7, 8] }
+
+  - id: null-bis-zwoelf
+    chapter: words
+    title: От нуля до двенадцати
+    beats:
+      - read: >-
+          Первые двенадцать чисел надо просто выучить — дальше всё
+          собирается из них, как из конструктора. Следите за произношением:
+          *sechs* — «зекс», *sieben* — «зибен», *neun* — «нойн», а *zehn*
+          начинается со звука «ц». По телефону вместо *zwei* часто говорят
+          *zwo*, чтобы не спутать с *drei*. И не пугайтесь *elf* — это не
+          эльф, а одиннадцать.
+        point: "0–12 учим наизусть; по телефону *zwo* вместо *zwei*"
+        set: { view: words, words: zahlen }
+
+  - id: telefon
+    chapter: words
+    title: Телефон и адрес
+    beats:
+      - read: >-
+          Слова для звонков и анкет. Все «номера» женского рода, как и сама
+          *die Nummer*: *die Telefonnummer*, *die Handynummer*, *die
+          Hausnummer*. Мобильный — *das Handy*: слово выглядит английским, но
+          в Англии его не поймут. И три фразы, которые спасают любой
+          разговор: *Wie bitte?*, *Noch einmal, bitte.* и *Langsam, bitte.*
+          Переспрашивать не стыдно, даже на экзамене.
+        point: "Переспросить: *Wie bitte?* *Noch einmal, bitte.* *Langsam, bitte.*"
+        set: { view: words, words: telefon }
+
+  - id: kurs
+    chapter: words
+    title: Что у кого есть
+    beats:
+      - read: >-
+          После *haben* слово часто идёт без артикля: *Ich habe Zeit*, *Wir
+          haben Pause*, *Ich habe heute Geburtstag*. Так говорят о времени,
+          перерыве, празднике — о том, что не считают поштучно. А для
+          возраста — снова *sein*: *Wie alt bist du?* Слово *Jahre* в ответе
+          можно опустить: *Ich bin fünfundzwanzig* — так тоже правильно и
+          даже привычнее.
+        point: "*Ich habe Zeit*, *Wir haben Pause* — без артикля"
+        set: { view: words, words: kurs }
+
+  - id: zehner
+    chapter: grammar
+    title: Числа задом наперёд
+    beats:
+      - read: >-
+          С 13 до 19 числа собираются почти как в русском: единица плюс
+          *zehn* — *dreizehn*, «три-надцать». Десятки получают *-zig*, как
+          наше «-дцать»: *vierzig*, *achtzig*. Ловушек немного, но они
+          коварные. *Sechs* и *sieben* укорачиваются: *sechzehn*, *siebzehn*,
+          *sechzig*, *siebzig*. Двадцать — *zwanzig*, а не *zweizig*. А
+          *dreißig* пишется с *ß* — единственный десяток без *z*.
+        point: "13–19: единица + *zehn*, десятки — *-zig*; но *sechzehn*, *siebzig*, *zwanzig*, *dreißig*"
+        set: { view: table, table: zehn, focus: [2, 3, 4, 5, 6, 7] }
+      - read: >-
+          Теперь главная странность. С 21 до 99 немец называет сначала
+          единицы, потом десятки, а между ними ставит *und*: *einundzwanzig* —
+          «один-и-двадцать». Записывая число на слух, не спешите: услышали
+          *drei* — оставьте место слева, услышали *zwanzig* — впишите туда 2.
+          И заметьте: в *siebenundsechzig* семёрка полная, укорачивается
+          только десяток.
+        point: "21–99: единицы + *und* + десятки: *einundzwanzig*, *siebenundsechzig*"
+        set: { view: table, table: zwanzig, reveal: 5 }
+      - read: >-
+          Сотни устроены привычно: *hundert*, *zweihundert*, *dreihundert*, а
+          за ними — двузначное число по тому же правилу. 345 —
+          *dreihundertfünfundvierzig*: «триста-пять-и-сорок». Пишется всё
+          одним словом, каким бы длинным оно ни получилось. 1000 — *tausend*
+          или *eintausend*. Номера аудиторий и домов так и читают: *Raum
+          zweihundertvierzehn*. А вот телефонный номер целиком так не
+          называют — его диктуют по цифрам или парами.
+        point: "Сотни — как в русском, внутри снова сначала единицы; всё одним словом"
+        set: { reveal: 9, focus: [5, 6, 7, 8] }
+
+  - id: alphabet
+    chapter: grammar
+    title: Буквы под другими именами
+    beats:
+      - read: >-
+          Латинские буквы вы знаете, но имена у многих из них в немецком
+          свои. Главная ловушка — привычка из английского: *E* по-немецки
+          «э», а не «и», *I* — «и», а не «ай». Поэтому фамилию *Weber*
+          диктуют так: «вэ — э — бэ — э — эр». *C* называют «цэ», *H* — «ха».
+          Слушайте, как произносит буквы собеседник, и повторяйте за ним.
+        point: "*E* — «э», *I* — «и», *C* — «цэ», *H* — «ха»"
+        set: { view: table, table: alphabet, focus: [0, 1, 2, 3] }
+      - read: >-
+          Ещё пять имён стоит выучить: *J* — «йот», *V* — «фау», *W* — «вэ»,
+          *Y* — «ипсилон», *Z* — «цэт». Буквы с точками называют по звуку или
+          *A-Umlaut*, *O-Umlaut*, *U-Umlaut*, а *ß* — *Eszett*. Двойную букву
+          диктуют со словом *Doppel*: *Rossi* — *R – O – Doppel-S – I*. Если
+          на клавиатуре нет *ß* или умлаута, пишут *ss*, *ae*, *oe*, *ue*.
+        point: "*J* — «йот», *V* — «фау», *W* — «вэ», *Z* — «цэт»; две *s* — *Doppel-S*"
+        set: { focus: [4, 5, 6, 7, 8, 9, 10] }
+
+  - id: haben
+    chapter: grammar
+    title: Глагол *haben*
+    beats:
+      - read: >-
+          *haben* — «иметь» — второй после *sein* глагол, без которого не
+          обходится ни один разговор. Он почти правильный, но во втором и
+          третьем лице теряет *b*: *ich habe*, но *du hast* и *er hat*. Не
+          *du habst* и не *er habt*. Окончания при этом обычные: *-e*, *-st*,
+          *-t* — те же, что у *wohnen*.
+        point: "*ich habe*, но *du hast*, *er hat* — без *b*"
+        set: { view: table, table: haben, reveal: 3, focus: [1, 2] }
+      - read: >-
+          Во множественном числе *haben* ведёт себя как правильный глагол:
+          *wir haben*, *ihr habt*, *sie haben*. Важнее другое. По-русски
+          обладатель прячется в «у меня», «у нас». В немецком он подлежащее,
+          как в английском I have: *Wir haben Pause* — «у нас перерыв»,
+          *Marco hat Geburtstag* — «у Марко день рождения». Отдельного «у
+          меня» в немецком нет — ищите *haben*.
+        point: "«У нас перерыв» — *Wir haben Pause*: обладатель — подлежащее"
+        set: { reveal: 6, focus: [3, 4, 5] }
+
+  - id: ja-nein
+    chapter: grammar
+    title: Да или нет
+    beats:
+      - read: >-
+          Вопрос без вопросительного слова вы видели в первой теме — теперь
+          разберём его подробнее. Возьмём утверждение: *Du hast heute
+          Geburtstag.* Подлежащее *du* стоит на первой позиции, глагол — на
+          второй. В русском утверждение превращается в вопрос одной
+          интонацией: «У тебя сегодня день рождения?» В немецком этого мало —
+          нужно переставить слова.
+        point: "Утверждение: *Du hast heute Geburtstag.* — подлежащее, потом глагол"
+        set:
+          view: sentence
+          rows:
+            - de: [Du, ha+st, heute Geburtstag., ""]
+              ru: У тебя сегодня день рождения.
+      - read: >-
+          Глагол встаёт в начало, первая позиция пустеет, *du* уходит в
+          середину: *Hast du heute Geburtstag?* Отвечают *Ja* или *Nein*, а
+          если хочется полнее — после запятой идёт обычное предложение: *Ja,
+          ich habe heute Geburtstag.* *Ja* и *nein* стоят вне схемы и места
+          не занимают. Поэтому глагол после них не прыгает вперёд: *Nein, ich
+          bin fünfundzwanzig*.
+        point: "*Ja* / *Nein* + запятая + обычный порядок: *Nein, ich bin 25.*"
+        set:
+          rows:
+            - de: ["", Ha+st, du heute Geburtstag?, ""]
+              ru: У тебя сегодня день рождения?
+            - de: [Ich, hab+e, heute Geburtstag., ""]
+              ru: Да, у меня сегодня день рождения.
+      - read: >-
+          Теперь — как спросить о возрасте. На первую позицию встаёт *Wie
+          alt* — два слова, одна позиция: *Wie alt bist du?* Вежливо — *Wie
+          alt sind Sie?*, но незнакомых взрослых об этом в Германии обычно не
+          спрашивают. Отвечают с *sein*, а не с *haben*, как Марко: *Ich bin
+          achtundzwanzig Jahre alt*. *Jahre alt* можно опустить, глагол —
+          нельзя.
+        point: "*Wie alt bist du?* — *Ich bin 28 (Jahre alt).* С *sein*, не с *haben*"
+        set:
+          rows:
+            - de: [Wie alt, bist, du?, ""]
+              ru: Сколько тебе лет?
+            - de: [Ich, bin, achtundzwanzig Jahre alt., ""]
+              ru: Мне двадцать восемь лет.
+
+  - id: check
+    chapter: practice
+    title: Проверьте себя
+    beats:
+      - question: Фрау Вебер слышит *zweiunddreißig*. Какое число она записывает?
+        read: >-
+          32. *zwei* — двойка, *dreißig* — тридцать, но звучат они в обратном
+          порядке. Анна сказала *dreiundzwanzig* — 23: те же цифры, только
+          наоборот. Такие пары — 23 и 32, 45 и 54 — главный источник ошибок в
+          аудировании. Записывайте сначала единицы справа и только потом
+          десяток слева. Через неделю тренировки рука начнёт делать это
+          сама.
+        point: "*zweiunddreißig* = 32, *dreiundzwanzig* = 23"
+        set: { view: table, table: zwanzig, focus: [1, 2] }
+      - question: Как продиктовать по буквам фамилию *Müller*?
+        read: >-
+          *M – Ü – Doppel-L – E – R.* Букву *Ü* называют по звуку — «ю» с
+          вытянутыми губами — или *U-Umlaut*. Две *l* подряд — *Doppel-L*:
+          так короче и понятнее, чем «эль, эль». И не забудьте, что *E* — это
+          «э». Если вас переспросят *Mit U-Umlaut?*, ответ — *Ja, mit Ü*. А
+          если умлаута на клавиатуре нет, фамилию пишут *Mueller*.
+        point: "*Müller*: *M – Ü – Doppel-L – E – R*"
+        set: { view: table, table: alphabet, focus: [1, 9] }
+      - question: Как спросить Марко, есть ли у него время?
+        read: >-
+          *Hast du Zeit?* Это вопрос да/нет, поэтому глагол — на первом месте,
+          а *du* — сразу за ним. Форма *hast* — без *b*, артикль перед *Zeit*
+          не нужен. Марко ответит *Ja, ich habe Zeit* или коротко *Ja, klar!*
+          Так же спрашивают о чём угодно: *Hast du Fragen?*, *Hast du
+          WhatsApp?*
+        point: "*Hast du Zeit?* — *Ja, ich habe Zeit.*"
+        before:
+          view: sentence
+          rows:
+            - de: [Du, ha+st, Zeit., ""]
+              ru: У тебя есть время.
+        set:
+          rows:
+            - de: ["", Ha+st, du Zeit?, ""]
+              ru: У тебя есть время?
+            - de: [Ich, hab+e, Zeit., ""]
+              ru: Да, у меня есть время.
+
+  - id: sprechen
+    chapter: exam
+    title: "Устный экзамен: буквы и номер"
+    beats:
+      - read: >-
+          В первой теме вы готовили рассказ о себе. После него экзаменатор
+          просит ещё две вещи: назвать по буквам имя, фамилию или город и
+          продиктовать номер — телефона, дома или почтовый индекс. Говорите
+          медленно, каждую букву отдельно, двойные — со словом *Doppel*. Номер
+          надёжнее называть по цифрам: пары звучат красивее, но в волнении
+          легко перепутать единицы и десятки.
+        point: "Часть 1: после рассказа — фамилия по буквам и номер по цифрам"
+        set: { view: task, task: buchstabieren }
+
+  - id: hoeren
+    chapter: exam
+    title: "Аудирование: автоответчик"
+    beats:
+      - read: >-
+          Третья часть аудирования — пять сообщений на автоответчике: звонят
+          друзья, врач, школа, фирма. Каждое звучит дважды, к каждому —
+          вопрос и три варианта. Прочитайте вопрос до записи и решите, что
+          ловить. Здесь спрашивают *Wo?* — значит, нужен номер аудитории.
+          Варианты похожи нарочно: 140, 214 и 241 проверяют тот самый
+          обратный порядок.
+        point: "Аудирование, часть 3: сначала вопрос, потом запись"
+        set: { view: task, task: nachricht }
+      - question: Где теперь курс Марко?
+        read: >-
+          Ответ *b* — *Raum 214*. Фрау Вебер говорит *zweihundertvierzehn* и
+          для верности повторяет по цифрам: *zwei – eins – vier*. 241 было бы
+          *zweihunderteinundvierzig*, 140 — *hundertvierzig*. В записи звучит
+          ещё одно число — телефон школы. Лишние числа в аудировании есть
+          почти всегда: отвечайте на вопрос, а не на всё подряд. А в анкете
+          письменной части номера просто пишут цифрами.
+        point: "Лишние числа в записи — норма: слушайте то, о чём спросили"
+        set: { solved: true }
+
+exercises:
+  - type: choice
+    q: Как по-немецки 21?
+    options: [zwanzigeins, einundzwanzig, einszwanzig]
+    answer: 1
+    why: "Сначала единицы, потом *und* и десятки: *ein-und-zwanzig*."
+  - type: choice
+    q: Как по-немецки 16?
+    options: [sechszehn, sechzehn, sechzig]
+    answer: 1
+    why: "В *sechzehn* шестёрка теряет *s*. А *sechzig* — это 60."
+  - type: choice
+    q: Фрау Вебер говорит *achtundneunzig*. Какое это число?
+    options: ["89", "98", "980"]
+    answer: 1
+    why: "*acht* — 8, *neunzig* — 90. Единицы звучат первыми: 98."
+  - type: gap
+    q: Zehn plus zwanzig ist ___.
+    answer: [dreißig]
+    ru: Десять плюс двадцать — тридцать.
+    why: "30 — единственный десяток на *-ßig*: *dreißig*."
+  - type: gap
+    q: Vierzig plus sieben ist ___.
+    answer: [siebenundvierzig]
+    ru: Сорок плюс семь — сорок семь.
+    why: "Сначала единицы, потом десятки, всё одним словом: *sieben-und-vierzig*."
+  - type: choice
+    q: Как называется буква *V*?
+    options: [We, Vau, Ve]
+    answer: 1
+    why: "*V* — *Vau* («фау»), а *We* — это буква *W*."
+  - type: choice
+    q: Анна диктует *Vau – I – E – Er*. Какое слово получилось?
+    options: [wier, vier, fier]
+    answer: 1
+    why: "*Vau* — буква *V*, *I* и *E* — сочетание *ie*. Получилось *vier* — «четыре»."
+  - type: choice
+    q: Вы не расслышали номер. Что сказать?
+    options: ["Noch einmal, bitte.", "Auf Wiederhören!", "Alles Gute!"]
+    answer: 0
+  - type: gap
+    q: Ich ___ heute Geburtstag.
+    answer: [habe]
+    hint: haben
+  - type: gap
+    q: ___ du Zeit?
+    answer: [Hast]
+    hint: haben
+    why: "*du hast* — без *b*. В вопросе да/нет глагол стоит первым."
+  - type: gap
+    q: Marco ___ Kuchen für alle.
+    answer: [hat]
+    hint: haben
+    why: "*er hat* — тоже без *b*."
+  - type: choice
+    q: Wie alt ___ du?
+    options: [hast, bist, bin]
+    answer: 1
+    why: "Возраст — с *sein*: *Wie alt bist du?*"
+  - type: choice
+    q: Ich ___ fünfundzwanzig Jahre alt.
+    options: [habe, bin, ist]
+    answer: 1
+    why: "Не *Ich habe … Jahre*: возраст по-немецки «есть», а не «имеют»."
+  - type: order
+    ru: У тебя сегодня день рождения?
+    de: Hast du heute Geburtstag?
+    why: "Вопрос да/нет: глагол на первом месте, *du* — сразу за ним."
+  - type: order
+    ru: У Вас есть вопросы?
+    de: Haben Sie Fragen?
+  - type: order
+    ru: Мне двадцать восемь лет.
+    de: Ich bin achtundzwanzig Jahre alt.
