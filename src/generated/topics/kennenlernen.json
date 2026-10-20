@@ -723,7 +723,10 @@
    "scene": {
     "view": "dialogue",
     "dialogue": "kurs",
-    "reveal": 1
+    "reveal": 1,
+    "fresh": [
+     0
+    ]
    }
   },
   {
@@ -738,6 +741,9 @@
     "view": "dialogue",
     "dialogue": "kurs",
     "reveal": 2,
+    "fresh": [
+     1
+    ],
     "focus": [
      1
     ]
@@ -755,6 +761,10 @@
     "view": "dialogue",
     "dialogue": "kurs",
     "reveal": 4,
+    "fresh": [
+     2,
+     3
+    ],
     "focus": [
      2,
      3
@@ -773,6 +783,12 @@
     "view": "dialogue",
     "dialogue": "kurs",
     "reveal": 8,
+    "fresh": [
+     4,
+     5,
+     6,
+     7
+    ],
     "focus": [
      4,
      5,
@@ -792,6 +808,11 @@
     "view": "dialogue",
     "dialogue": "buero",
     "reveal": 3,
+    "fresh": [
+     0,
+     1,
+     2
+    ],
     "focus": [
      0,
      2
@@ -810,7 +831,16 @@
     "view": "dialogue",
     "dialogue": "buero",
     "reveal": 8,
+    "fresh": [
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
     "focus": [
+     3,
+     5,
      6,
      7
     ]
@@ -924,6 +954,11 @@
     "reveal": 6,
     "focus": [
      3,
+     5
+    ],
+    "fresh": [
+     3,
+     4,
      5
     ]
    }
@@ -1110,6 +1145,9 @@
       "ru": "Ты живёшь в Лейпциге?",
       "audio": "audio/b4bfa64993d1.m4a"
      }
+    ],
+    "fresh": [
+     1
     ]
    }
   },
@@ -1185,6 +1223,9 @@
       "ru": "Ты живёшь в Лейпциге?",
       "audio": "audio/b4bfa64993d1.m4a"
      }
+    ],
+    "fresh": [
+     1
     ]
    },
    "scene": {
@@ -1339,6 +1380,9 @@
       "ru": "Из Италии я родом.",
       "audio": "audio/cb071246fb6b.m4a"
      }
+    ],
+    "fresh": [
+     1
     ]
    }
   },
@@ -1419,6 +1463,9 @@
       "ru": "Из Италии я родом.",
       "audio": "audio/cb071246fb6b.m4a"
      }
+    ],
+    "fresh": [
+     1
     ]
    },
    "scene": {

@@ -249,7 +249,7 @@ steps:
           а *Auf Wiedersehen* — «до свидания». *Tschüss* оставьте для друзей
           и коллег, с которыми вы на «ты».
         point: "*Tschüss!* — друзьям, *Auf Wiedersehen!* — официально"
-        set: { reveal: 8, focus: [6, 7] }
+        set: { reveal: 8, focus: [3, 5, 6, 7] }
 
   - id: hallo
     chapter: words

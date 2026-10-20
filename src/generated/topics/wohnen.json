@@ -799,7 +799,11 @@
    "scene": {
     "view": "dialogue",
     "dialogue": "anzeige",
-    "reveal": 2
+    "reveal": 2,
+    "fresh": [
+     0,
+     1
+    ]
    }
   },
   {
@@ -814,6 +818,12 @@
     "view": "dialogue",
     "dialogue": "anzeige",
     "reveal": 6,
+    "fresh": [
+     2,
+     3,
+     4,
+     5
+    ],
     "focus": [
      3,
      4,
@@ -833,6 +843,11 @@
     "view": "dialogue",
     "dialogue": "anzeige",
     "reveal": 9,
+    "fresh": [
+     6,
+     7,
+     8
+    ],
     "focus": [
      6,
      7,
@@ -851,7 +866,11 @@
    "scene": {
     "view": "dialogue",
     "dialogue": "besichtigung",
-    "reveal": 2
+    "reveal": 2,
+    "fresh": [
+     0,
+     1
+    ]
    }
   },
   {
@@ -866,8 +885,14 @@
     "view": "dialogue",
     "dialogue": "besichtigung",
     "reveal": 5,
+    "fresh": [
+     2,
+     3,
+     4
+    ],
     "focus": [
      2,
+     3,
      4
     ]
    }
@@ -884,6 +909,13 @@
     "view": "dialogue",
     "dialogue": "besichtigung",
     "reveal": 10,
+    "fresh": [
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
     "focus": [
      5,
      6,
@@ -962,6 +994,7 @@
     "words": "miete",
     "table": "komposita",
     "focus": [
+     2,
      5,
      6
     ]
@@ -1024,7 +1057,12 @@
      4,
      5
     ],
-    "reveal": 6
+    "reveal": 6,
+    "fresh": [
+     3,
+     4,
+     5
+    ]
    }
   },
   {
@@ -1284,6 +1322,11 @@
       "ru": "Комнаты большие.",
       "audio": "audio/d9d2dbc29444.m4a"
      }
+    ],
+    "fresh": [
+     1,
+     2,
+     3
     ]
    }
   },
@@ -1426,6 +1469,11 @@
       "ru": "Комнаты большие.",
       "audio": "audio/d9d2dbc29444.m4a"
      }
+    ],
+    "fresh": [
+     1,
+     2,
+     3
     ]
    },
    "scene": {
@@ -1644,6 +1692,7 @@
      }
     ],
     "focus": [
+     1,
      10,
      11
     ]

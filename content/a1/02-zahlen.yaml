@@ -259,7 +259,7 @@ steps:
           не видно, поэтому и прощание — «до нового слышания». Начало
           разговора, впрочем, обычное: *Guten Tag!* работает и по телефону.
         point: "*Auf Wiederhören!* — «до свидания» по телефону"
-        set: { reveal: 10, focus: [7, 8, 9] }
+        set: { reveal: 10, focus: [0, 1, 7, 8, 9] }
 
   - id: geburtstag
     chapter: scene
@@ -273,7 +273,7 @@ steps:
           achtundzwanzig*. Анна поправляет, и Марко строит полную фразу: *Ich
           bin achtundzwanzig Jahre alt*.
         point: "Возраст — с *sein*: *Ich bin 28 Jahre alt*, а не *Ich habe 28 Jahre*"
-        set: { view: dialogue, dialogue: geburtstag, reveal: 4, focus: [1, 2, 3] }
+        set: { view: dialogue, dialogue: geburtstag, reveal: 4, focus: [0, 1, 2, 3] }
       - read: >-
           На вопрос *Bist du auch achtundzwanzig?* Анна отвечает *Nein* — и
           сразу называет своё число. Дальше *haben* звучит почти в каждой
@@ -282,7 +282,7 @@ steps:
           *Haben Sie Zeit?* Где по-русски «у меня есть» или «у нас перерыв»,
           немец говорит «я имею», «мы имеем».
         point: "«У меня есть …» — *Ich habe …*: *Ich habe Zeit*, *Wir haben Pause*"
-        set: { reveal: 10, focus: [4, 5, 6, 7, 8] }
+        set: { reveal: 10, focus: [3, 4, 5, 6, 7, 8] }
 
   - id: null-bis-zwoelf
     chapter: words
@@ -338,7 +338,7 @@ steps:
           *sechzig*, *siebzig*. Двадцать — *zwanzig*, а не *zweizig*. А
           *dreißig* пишется с *ß* — единственный десяток без *z*.
         point: "13–19: единица + *zehn*, десятки — *-zig*; но *sechzehn*, *siebzig*, *zwanzig*, *dreißig*"
-        set: { view: table, table: zehn, focus: [2, 3, 4, 5, 6, 7] }
+        set: { view: table, table: zehn, focus: [0, 2, 3, 4, 5, 6, 7] }
       - read: >-
           Теперь главная странность. С 21 до 99 немец называет сначала
           единицы, потом десятки, а между ними ставит *und*: *einundzwanzig* —
@@ -391,7 +391,7 @@ steps:
           *du habst* и не *er habt*. Окончания при этом обычные: *-e*, *-st*,
           *-t* — те же, что у *wohnen*.
         point: "*ich habe*, но *du hast*, *er hat* — без *b*"
-        set: { view: table, table: haben, reveal: 3, focus: [1, 2] }
+        set: { view: table, table: haben, reveal: 3 }
       - read: >-
           Во множественном числе *haben* ведёт себя как правильный глагол:
           *wir haben*, *ihr habt*, *sie haben*. Важнее другое. По-русски
@@ -400,7 +400,7 @@ steps:
           *Marco hat Geburtstag* — «у Марко день рождения». Отдельного «у
           меня» в немецком нет — ищите *haben*.
         point: "«У нас перерыв» — *Wir haben Pause*: обладатель — подлежащее"
-        set: { reveal: 6, focus: [3, 4, 5] }
+        set: { reveal: 6, focus: [2, 3, 4, 5] }
 
   - id: ja-nein
     chapter: grammar

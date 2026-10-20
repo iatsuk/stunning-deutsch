@@ -213,7 +213,7 @@ steps:
           множественное число темы: над *u* появились две точки, и больше
           ничего не изменилось.
         point: "*mein Bruder*, но *meine Familie* — окончание зависит от слова"
-        set: { reveal: 4, focus: [2, 3] }
+        set: { reveal: 4, focus: [1, 2, 3] }
       - read: >-
           На вопрос *Hast du auch eine Schwester?* Анна отвечает *Nein, ich
           habe keine Schwester.* По-русски «сестры нет», а по-немецки
@@ -235,7 +235,7 @@ steps:
           муж?». *ihr* здесь не «вы», как в первой теме, а «её»: владелица —
           Джулия. А *der Mann* — это и «мужчина», и «муж».
         point: "*ihr Mann* — «её муж»; *der Mann* — и мужчина, и муж"
-        set: { view: dialogue, dialogue: marco, reveal: 4, focus: [1, 2, 3] }
+        set: { view: dialogue, dialogue: marco, reveal: 4, focus: [0, 1, 2, 3] }
       - read: >-
           *Ist das ein Junge oder ein Mädchen?* — оба раза *ein*, потому что
           *das Mädchen* среднего рода, как *das Kind* и *das Baby*. Это

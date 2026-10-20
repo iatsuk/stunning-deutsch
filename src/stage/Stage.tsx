@@ -23,13 +23,13 @@ export function Stage({ topic, scene }: { topic: Topic; scene: Scene }) {
 function View({ topic, scene }: { topic: Topic; scene: Scene }) {
   switch (scene.view) {
     case "dialogue":
-      return <DialogueView dialogue={topic.dialogues[scene.dialogue!]} reveal={scene.reveal} focus={scene.focus} />;
+      return <DialogueView dialogue={topic.dialogues[scene.dialogue!]} reveal={scene.reveal} focus={scene.focus} fresh={scene.fresh} />;
     case "words":
-      return <WordsView group={topic.words[scene.words!]} reveal={scene.reveal} focus={scene.focus} />;
+      return <WordsView group={topic.words[scene.words!]} reveal={scene.reveal} focus={scene.focus} fresh={scene.fresh} />;
     case "table":
-      return <TableView table={topic.tables[scene.table!]} reveal={scene.reveal} focus={scene.focus} />;
+      return <TableView table={topic.tables[scene.table!]} reveal={scene.reveal} focus={scene.focus} fresh={scene.fresh} />;
     case "sentence":
-      return <SentenceView rows={scene.rows ?? []} focus={scene.focus} />;
+      return <SentenceView rows={scene.rows ?? []} focus={scene.focus} fresh={scene.fresh} />;
     case "task":
       return <TaskView task={topic.tasks[scene.task!]} reveal={scene.reveal} solved={scene.solved} />;
     case "clock":

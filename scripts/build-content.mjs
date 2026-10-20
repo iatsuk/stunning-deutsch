@@ -178,6 +178,8 @@ function buildTopic(src, level, where) {
       const before = beat.question ? applySet(state, beat.before, content, `${bw} → before`) : undefined;
       const scene = applySet(before ?? state, beat.set, content, `${bw} → set`);
       if (!scene.view) fail(bw, "сцена пуста — первый фрагмент должен задать view");
+      checkMentions(scene, `${beat.read ?? ""} ${beat.question ?? ""}`, content, bw);
+      if (before) checkMentions(before, beat.question, content, `${bw} (до ответа)`);
       beats.push({
         id: `${step.id ?? stepIndex}-${indexInStep + 1}`,
         step: step.id,
@@ -419,7 +421,54 @@ function applySet(prev, set, content, where) {
   for (const index of next.focus ?? []) {
     if (!Number.isInteger(index) || index < 0 || index >= Math.max(count, 1)) fail(where, `focus ${index} за пределами (0…${count - 1})`);
   }
+  // fresh — что открылось в этом фрагменте. Новое никогда не затемняется, даже
+  // если оно не в focus: иначе реплика выглядит так, будто до неё ещё дойдут.
+  // У диалога новое — всё, что появилось впервые; у таблицы, слов и схемы —
+  // только то, что добавилось к уже показанному объекту.
+  const shown = (scene) => Math.min(scene.reveal ?? Infinity, countOf(scene, content));
+  const sameObject = prev.view === next.view && (next.view === "sentence" || target(prev) === target(next));
+  const range = (from, to) => Array.from({ length: Math.max(0, to - from) }, (_, i) => from + i);
+  const fresh =
+    next.view === "dialogue" ? range(sameObject ? shown(prev) : 0, shown(next))
+    : ["table", "words", "sentence"].includes(next.view) && sameObject ? range(shown(prev), shown(next))
+    : [];
+  if (fresh.length) next.fresh = fresh;
+  else delete next.fresh;
   return next;
+}
+
+/** Нормализованный немецкий текст для поиска упоминаний. */
+function normal(text) {
+  return ` ${plain(text).toLowerCase().replace(/[.,!?;:–—…«»"„“()]/g, " ").replace(/\s+/g, " ").trim()} `;
+}
+
+/**
+ * Предупреждает, если текст фрагмента цитирует реплику, строку или слово,
+ * которые на сцене затемнены: читатель ищет их глазами и видит серым.
+ */
+function checkMentions(scene, text, content, where) {
+  if (!scene?.focus?.length || !text) return;
+  const items =
+    scene.view === "dialogue" ? content.dialogues[scene.dialogue]?.lines.map((line) => line.de)
+    : scene.view === "words" ? content.words[scene.words]?.items.map((item) => item.de)
+    : scene.view === "table"
+      ? content.tables[scene.table]?.rows.map((row) => row.filter((_, j) => !content.tables[scene.table].ruCols.includes(j)).join(" "))
+    : scene.view === "sentence" ? scene.rows?.map((row) => row.plain)
+    : null;
+  if (!items) return;
+  const fragments = [...text.matchAll(/\*([^*]+)\*/g)]
+    .map((m) => normal(m[1]))
+    .filter((f) => f.trim().includes(" ") || f.trim().length >= 8);
+  const shown = Math.min(scene.reveal ?? Infinity, items.length);
+  for (let i = 0; i < shown; i++) {
+    // Если во фрагменте есть выделение, всё, что цитирует текст, тоже должно
+    // быть выделено — и затемнённое, и новое, которое просто не затемнено.
+    if (scene.focus.includes(i)) continue;
+    const item = normal(items[i]);
+    const hit = fragments.find((f) => item.includes(f));
+    const state = scene.fresh?.includes(i) ? "не выделена" : "затемнена";
+    if (hit) warn(where, `«${hit.trim()}» есть в тексте, но ${scene.view === "dialogue" ? "реплика" : "строка"} ${i} ${state} — добавьте ${i} в focus`);
+  }
 }
 
 /**

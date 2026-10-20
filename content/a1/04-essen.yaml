@@ -247,7 +247,7 @@ steps:
           не меняется, а в немецком меняется артикль — почему, разберём в
           грамматике.
         point: "*Ich möchte …, bitte.* или *Ich nehme …* — так заказывают"
-        set: { view: dialogue, dialogue: cafe, reveal: 3, focus: [1, 2] }
+        set: { view: dialogue, dialogue: cafe, reveal: 3, focus: [0, 1, 2] }
       - read: >-
           К кофе Марко берёт *ein Stück Apfelkuchen* — кусок яблочного пирога.
           Второе слово при этом не меняется, никакого родительного падежа:
@@ -411,7 +411,7 @@ steps:
           Stück Kuchen*. У *du* и *ihr* появляется *e*: *du möchtest*, *ihr
           möchtet*.
         point: "*ich möchte* = *er möchte*, без *-t*; *du möchtest*, *ihr möchtet*"
-        set: { view: table, table: moechten, focus: [0, 2] }
+        set: { view: table, table: moechten, focus: [0, 1, 2, 4] }
 
   - id: gern
     chapter: grammar

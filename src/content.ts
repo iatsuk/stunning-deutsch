@@ -97,8 +97,17 @@ export type Scene = {
   /** Сколько элементов открыто; нет поля — открыто всё. */
   reveal?: number;
   focus?: number[];
+  /** Что открылось в этом фрагменте: новое никогда не затемняется. */
+  fresh?: number[];
   solved?: boolean;
 };
+
+/**
+ * Затемнён ли элемент: есть выделение, элемент не в нём и не появился только что.
+ * Новая реплика не должна выглядеть так, будто до неё ещё дойдут.
+ */
+export const isDimmed = (i: number, focus?: number[], fresh?: number[]) =>
+  Boolean(focus?.length && !focus.includes(i) && !fresh?.includes(i));
 
 export type Beat = {
   id: string;

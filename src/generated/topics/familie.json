@@ -660,7 +660,11 @@
    "scene": {
     "view": "dialogue",
     "dialogue": "foto",
-    "reveal": 2
+    "reveal": 2,
+    "fresh": [
+     0,
+     1
+    ]
    }
   },
   {
@@ -675,7 +679,12 @@
     "view": "dialogue",
     "dialogue": "foto",
     "reveal": 4,
+    "fresh": [
+     2,
+     3
+    ],
     "focus": [
+     1,
      2,
      3
     ]
@@ -693,6 +702,12 @@
     "view": "dialogue",
     "dialogue": "foto",
     "reveal": 8,
+    "fresh": [
+     4,
+     5,
+     6,
+     7
+    ],
     "focus": [
      4,
      5,
@@ -713,7 +728,14 @@
     "view": "dialogue",
     "dialogue": "marco",
     "reveal": 4,
+    "fresh": [
+     0,
+     1,
+     2,
+     3
+    ],
     "focus": [
+     0,
      1,
      2,
      3
@@ -732,6 +754,12 @@
     "view": "dialogue",
     "dialogue": "marco",
     "reveal": 8,
+    "fresh": [
+     4,
+     5,
+     6,
+     7
+    ],
     "focus": [
      4,
      5,
@@ -1041,6 +1069,12 @@
      5,
      6,
      7
+    ],
+    "fresh": [
+     4,
+     5,
+     6,
+     7
     ]
    }
   },
@@ -1143,6 +1177,10 @@
     "focus": [
      2,
      3
+    ],
+    "fresh": [
+     2,
+     3
     ]
    }
   },
@@ -1243,6 +1281,13 @@
     "table": "plural",
     "reveal": 9,
     "focus": [
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "fresh": [
      4,
      5,
      6,
@@ -1663,7 +1708,10 @@
       "audio": "audio/51afd2603588.m4a"
      }
     ],
-    "table": "possessiv"
+    "table": "possessiv",
+    "fresh": [
+     1
+    ]
    }
   },
   {

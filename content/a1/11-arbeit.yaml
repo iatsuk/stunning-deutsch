@@ -236,7 +236,7 @@ steps:
           кончаются на *-en*, а не на *-t*, как *gearbeitet*. Почему — разберём
           в грамматике.
         point: "*schon* — «уже», *noch nicht* — «ещё нет»; *gefunden*, *gelesen*, *geschrieben*"
-        set: { reveal: 10, focus: [5, 6, 7, 8] }
+        set: { reveal: 10, focus: [1, 5, 6, 7, 8] }
 
   - id: gespraech
     chapter: scene

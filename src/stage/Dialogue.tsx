@@ -1,9 +1,19 @@
 import { useEffect, useRef } from "react";
-import type { Dialogue } from "../content";
+import { isDimmed, type Dialogue } from "../content";
 import { playAll, stopAudio, usePlaying, useTranslation } from "../hooks";
 import { De, PlayButton } from "../markup";
 
-export function DialogueView({ dialogue, reveal, focus }: { dialogue: Dialogue; reveal?: number; focus?: number[] }) {
+export function DialogueView({
+  dialogue,
+  reveal,
+  focus,
+  fresh,
+}: {
+  dialogue: Dialogue;
+  reveal?: number;
+  focus?: number[];
+  fresh?: number[];
+}) {
   const [showRu, setShowRu] = useTranslation();
   const playing = usePlaying();
   const list = useRef<HTMLOListElement>(null);
@@ -12,15 +22,21 @@ export function DialogueView({ dialogue, reveal, focus }: { dialogue: Dialogue; 
   const sources = shown.map((line) => line.audio);
   const playingAll = sources.length > 1 && sources.includes(playing);
 
-  // Как в мессенджере: новые реплики появляются снизу, лента докручивается к ним.
+  // Лента докручивается к тому, о чём сейчас текст: к новым репликам, а если
+  // новых нет — к выделенным. Если они не помещаются, первая встаёт наверх,
+  // чтобы ни одна новая реплика не проскочила мимо.
   useEffect(() => {
     const el = list.current;
     if (!el) return;
-    const last = el.lastElementChild as HTMLElement | null;
-    if (!last) return;
-    const top = Math.max(0, last.offsetTop + last.offsetHeight - el.clientHeight + 8);
+    const items = [...el.children] as HTMLElement[];
+    const wanted = fresh?.length ? fresh : focus?.length ? focus : [items.length - 1];
+    const targets = wanted.map((i) => items[i]).filter(Boolean);
+    if (!targets.length) return;
+    const first = targets[0].offsetTop - 8;
+    const last = targets[targets.length - 1].offsetTop + targets[targets.length - 1].offsetHeight + 8;
+    const top = last - first <= el.clientHeight ? Math.max(0, Math.min(first, last - el.clientHeight)) : first;
     el.scrollTo({ top, behavior: "smooth" });
-  }, [shown.length, focus]);
+  }, [shown.length, focus, fresh]);
 
   return (
     <div className="dialogue">
@@ -62,7 +78,7 @@ export function DialogueView({ dialogue, reveal, focus }: { dialogue: Dialogue; 
               className="line"
               data-side={side}
               data-focus={focus?.includes(i) || undefined}
-              data-dim={(focus?.length && !focus.includes(i)) || undefined}
+              data-dim={isDimmed(i, focus, fresh) || undefined}
               data-playing={playing === line.audio || undefined}
             >
               <span className="avatar" data-speaker={speakers.indexOf(line.who) % 4} aria-hidden="true">

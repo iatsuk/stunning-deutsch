@@ -236,7 +236,7 @@ steps:
           предложении превращается в *kaufe … ein*. Порядок слов знакомый:
           время стоит первым, глагол — вторым, *ich* — после него.
         point: "*am Vormittag*, *am Mittag* — части дня с *am*; *ich kaufe ein*"
-        set: { view: dialogue, dialogue: tag, reveal: 4, focus: [1, 3] }
+        set: { view: dialogue, dialogue: tag, reveal: 4, focus: [1, 2, 3] }
       - read: >-
           Конец рабочего дня по-немецки — *der Feierabend*, буквально
           «праздничный вечер». *Um elf habe ich Feierabend* — «в одиннадцать я

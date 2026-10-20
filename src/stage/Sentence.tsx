@@ -1,5 +1,5 @@
 import { Fragment, useEffect, useLayoutEffect, useRef } from "react";
-import type { Row } from "../content";
+import { isDimmed, type Row } from "../content";
 import { useReducedMotion } from "../hooks";
 import { De, PlayButton } from "../markup";
 
@@ -17,7 +17,7 @@ type Point = { x: number; y: number };
  * состояния переезжают на новое место (FLIP): видно, как слова меняются
  * местами, а глагол остаётся в своей колонке.
  */
-export function SentenceView({ rows, focus }: { rows: Row[]; focus?: number[] }) {
+export function SentenceView({ rows, focus, fresh }: { rows: Row[]; focus?: number[]; fresh?: number[] }) {
   const grid = useRef<HTMLDivElement>(null);
   const positions = useRef(new Map<string, Point>());
   const reduced = useReducedMotion();
@@ -86,7 +86,7 @@ export function SentenceView({ rows, focus }: { rows: Row[]; focus?: number[] })
         ))}
         {rows.map((row, r) => {
           const lastSlot = row.slots.findLastIndex((tiles) => tiles.length);
-          const dim = focus?.length ? !focus.includes(r) : false;
+          const dim = isDimmed(r, focus, fresh);
           return (
             <Fragment key={r}>
               {row.slots.map((tiles, s) => (

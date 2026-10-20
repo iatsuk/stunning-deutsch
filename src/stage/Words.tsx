@@ -1,8 +1,8 @@
-import type { Word, WordGroup } from "../content";
+import { isDimmed, type Word, type WordGroup } from "../content";
 import { play, usePlaying } from "../hooks";
 import { De, GENDER_LABEL, withoutArticle } from "../markup";
 
-export function WordsView({ group, reveal, focus }: { group: WordGroup; reveal?: number; focus?: number[] }) {
+export function WordsView({ group, reveal, focus, fresh }: { group: WordGroup; reveal?: number; focus?: number[]; fresh?: number[] }) {
   const shown = reveal ?? group.items.length;
   const hasNouns = group.items.some((item) => item.gender);
   return (
@@ -20,7 +20,7 @@ export function WordsView({ group, reveal, focus }: { group: WordGroup; reveal?:
             key={i}
             data-hidden={i >= shown || undefined}
             data-focus={focus?.includes(i) || undefined}
-            data-dim={(focus?.length && !focus.includes(i)) || undefined}
+            data-dim={isDimmed(i, focus, fresh) || undefined}
           >
             <WordCard word={word} />
           </li>

@@ -236,7 +236,7 @@ steps:
           втором месте, а *schwimmen* — в самом конце. И знакомый по прошлой
           теме глагол с приставкой: *mitkommen* — *Kommst du mit?*
         point: "*Ich will am Sonntag schwimmen.* — *will* второй, *schwimmen* в конце"
-        set: { view: dialogue, dialogue: wochenende, reveal: 3, focus: [2] }
+        set: { view: dialogue, dialogue: wochenende, reveal: 3, focus: [0, 2] }
       - read: >-
           Но плавать Марко почти не умеет: *Ich kann nicht gut schwimmen* — «я плохо
           плаваю», буквально «не умею хорошо плавать». Тогда Анна предлагает
@@ -277,7 +277,7 @@ steps:
           «мне подходит». Схема «нет — потому что — давай в другой день»
           пригодится на письменном экзамене.
         point: "*Aber am Freitag habe ich Zeit.* — после отказа предложите другой день"
-        set: { reveal: 9, focus: [5, 6, 8] }
+        set: { reveal: 9, focus: [5, 6, 7, 8] }
 
   - id: hobbys
     chapter: words

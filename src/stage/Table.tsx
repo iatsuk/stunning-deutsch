@@ -1,7 +1,7 @@
-import type { Table } from "../content";
+import { isDimmed, type Table } from "../content";
 import { De, Text } from "../markup";
 
-export function TableView({ table, reveal, focus }: { table: Table; reveal?: number; focus?: number[] }) {
+export function TableView({ table, reveal, focus, fresh }: { table: Table; reveal?: number; focus?: number[]; fresh?: number[] }) {
   const shown = reveal ?? table.rows.length;
   const cell = (text: string, column: number) => (table.ruCols.includes(column) ? <Text text={text} /> : <De text={text} />);
   return (
@@ -27,7 +27,7 @@ export function TableView({ table, reveal, focus }: { table: Table; reveal?: num
                 key={i}
                 data-hidden={i >= shown || undefined}
                 data-focus={focus?.includes(i) || undefined}
-                data-dim={(focus?.length && !focus.includes(i)) || undefined}
+                data-dim={isDimmed(i, focus, fresh) || undefined}
               >
                 {row.map((text, j) => (
                   <td key={j} data-ru={table.ruCols.includes(j) || undefined}>

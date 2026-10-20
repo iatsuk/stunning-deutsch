@@ -268,7 +268,7 @@ steps:
           знакомое *hatte*: *Er hatte eine Stunde Verspätung*, буквально «у
           него был час опоздания».
         point: "Движение в прошлом — с *sein*: *Sind Sie mit dem Zug gekommen?*"
-        set: { reveal: 10, focus: [6, 7] }
+        set: { reveal: 10, focus: [4, 6, 7] }
 
   - id: telefon
     chapter: scene
@@ -292,7 +292,7 @@ steps:
           грамматике. А *Kommt morgen gut nach Hause!* — повелительное
           наклонение на *ihr*.
         point: "*hat geregnet*, *haben gekauft* — но *sind gegangen*, *sind gefahren*"
-        set: { reveal: 10, focus: [3, 5, 7] }
+        set: { reveal: 10, focus: [3, 5, 7, 8] }
 
   - id: unterwegs
     chapter: words
@@ -484,7 +484,7 @@ steps:
           *vom zweiten bis zum vierten Juni*. Спросить дату можно так: *Welches
           Datum ist heute?*
         point: "С 20 — *-ste*; «когда?» — *am …-en*: *am ersten Mai*, *am zwanzigsten Mai*"
-        set: { reveal: 9, focus: [6, 7, 8] }
+        set: { reveal: 9, focus: [0, 6, 7, 8] }
 
   - id: check
     chapter: practice

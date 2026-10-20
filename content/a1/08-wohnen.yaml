@@ -278,7 +278,7 @@ steps:
           дательный падеж. Заметьте и разницу с русским: кухня у немцев тоже
           «внутри» — *in der Küche*, а не «на».
         point: "*auf dem Balkon* — на балконе, *in der Küche* — на кухне"
-        set: { reveal: 5, focus: [2, 4] }
+        set: { reveal: 5, focus: [2, 3, 4] }
       - read: >-
           Стиральной машины в ванной нет: *sie steht im Keller*. *im* — это
           *in dem*, слитые в одно слово. Во многих немецких домах стиральные
@@ -356,7 +356,7 @@ steps:
           последней части: *die Kühlschränke*, как *die Schränke*. А ударение
           падает на первую: *KÜHLschrank*.
         point: "Род и мн. ч. — по последней части: *die Haustür*, *das Treppenhaus*"
-        set: { view: table, table: komposita, focus: [5, 6] }
+        set: { view: table, table: komposita, focus: [2, 5, 6] }
 
   - id: wo
     chapter: grammar
@@ -498,7 +498,7 @@ steps:
           конца — так быстрее понять, что это за предмет. Немцы склеивают и
           четыре, и пять частей, а правило остаётся тем же.
         point: "*die Schreibtischlampe* — род по последней части, *die Lampe*"
-        set: { view: words, words: moebel, focus: [10, 11] }
+        set: { view: words, words: moebel, focus: [1, 10, 11] }
 
   - id: lesen2
     chapter: exam
