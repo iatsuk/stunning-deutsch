@@ -4,7 +4,7 @@
  "order": 1,
  "title": "Moin! Ich bin Dana.",
  "ru": "Знакомство",
- "lede": "Первый день на курсах немецкого в Киле. Здесь здороваются коротким *Moin* — и утром, и вечером. Учимся называть себя, говорить, откуда вы и где живёте, — и сразу видим главное правило немецкого предложения: глагол стоит на втором месте.",
+ "lede": "Первый день на курсах немецкого в Киле. Здесь здороваются коротким *Moin* — и утром, и вечером. Учимся называть себя, говорить, откуда вы и где живёте, — и сразу видим главное правило немецкого предложения: глагол стоит на втором месте. После занятий знакомимся в парусном клубе на Kiellinie: то же правило помогает представить и себя, и лодку.",
  "goals": [
   "Поздороваться и попрощаться — с соседом, с другом и в официальном офисе",
   "Назвать имя, страну, город и языки, на которых вы говорите",
@@ -64,49 +64,49 @@
      "who": "D",
      "de": "Moin! Ich bin Dana. Und wer bist du?",
      "ru": "Привет! Я Дана. А ты кто?",
-     "audio": "audio/ecb211485b70.m4a"
+     "audio": "audio/8b57f7c74af2.m4a"
     },
     {
      "who": "M",
      "de": "Moin, Dana! Ich heiße Mateo.",
      "ru": "Привет, Дана! Меня зовут Матео.",
-     "audio": "audio/16d7a4b526ab.m4a"
+     "audio": "audio/a68e10a62c54.m4a"
     },
     {
      "who": "D",
      "de": "Woher kommst du, Mateo?",
      "ru": "Откуда ты, Матео?",
-     "audio": "audio/95bfaabd82ee.m4a"
+     "audio": "audio/f07e0c5fc7ae.m4a"
     },
     {
      "who": "M",
      "de": "Ich komme aus Argentinien, aus Buenos Aires. Und du?",
      "ru": "Я из Аргентины, из Буэнос-Айреса. А ты?",
-     "audio": "audio/9e3c9937c3f0.m4a"
+     "audio": "audio/ac4ac82ef638.m4a"
     },
     {
      "who": "D",
      "de": "Ich komme aus Kasachstan. Aber ich wohne jetzt hier in Kiel, in Gaarden.",
      "ru": "Я из Казахстана. Но сейчас я живу здесь, в Киле, в Гаардене.",
-     "audio": "audio/c92a5928d34a.m4a"
+     "audio": "audio/67a0bf93ace8.m4a"
     },
     {
      "who": "M",
      "de": "Ich wohne auch in Kiel, in Holtenau! Welche Sprachen sprichst du?",
      "ru": "Я тоже живу в Киле, в Хольтенау! На каких языках ты говоришь?",
-     "audio": "audio/05b07773eba0.m4a"
+     "audio": "audio/4e602b4965b5.m4a"
     },
     {
      "who": "D",
      "de": "Kasachisch, Russisch, Englisch und ein bisschen Deutsch.",
      "ru": "На казахском, русском, английском и немного на немецком.",
-     "audio": "audio/25d808e07f92.m4a"
+     "audio": "audio/a956fbf80661.m4a"
     },
     {
      "who": "M",
      "de": "Ich spreche Spanisch und Englisch – und auch ein bisschen Deutsch!",
      "ru": "Я говорю по-испански и по-английски — и тоже немного по-немецки!",
-     "audio": "audio/61fc2541dba2.m4a"
+     "audio": "audio/32a7726304a5.m4a"
     }
    ]
   },
@@ -129,49 +129,114 @@
      "who": "P",
      "de": "Moin! Wie heißen Sie, bitte?",
      "ru": "Здравствуйте! Как вас зовут?",
-     "audio": "audio/391a39b871d1.m4a"
+     "audio": "audio/f838480cea20.m4a"
     },
     {
      "who": "E",
      "de": "Mein Name ist Elif Yıldız.",
      "ru": "Меня зовут Элиф Йылдыз.",
-     "audio": "audio/2d8f86048f38.m4a"
+     "audio": "audio/8132d47233b5.m4a"
     },
     {
      "who": "P",
      "de": "Und woher kommen Sie, Frau Yıldız?",
      "ru": "А откуда вы, госпожа Йылдыз?",
-     "audio": "audio/9cba7a217715.m4a"
+     "audio": "audio/b87346016169.m4a"
     },
     {
      "who": "E",
      "de": "Aus der Türkei, aus Izmir.",
      "ru": "Из Турции, из Измира.",
-     "audio": "audio/6417eb5b162a.m4a"
+     "audio": "audio/85b8b886791d.m4a"
     },
     {
      "who": "P",
      "de": "Wo wohnen Sie?",
      "ru": "Где вы живёте?",
-     "audio": "audio/348dabea1cce.m4a"
+     "audio": "audio/153a297750ee.m4a"
     },
     {
      "who": "E",
      "de": "In Kiel, in der Holtenauer Straße.",
      "ru": "В Киле, на Хольтенауэр-штрассе.",
-     "audio": "audio/83ba6f3c63cb.m4a"
+     "audio": "audio/dd537e5feb50.m4a"
     },
     {
      "who": "P",
      "de": "Danke schön. Auf Wiedersehen, Frau Yıldız!",
      "ru": "Большое спасибо. До свидания, госпожа Йылдыз!",
-     "audio": "audio/11a3d9fd0c1c.m4a"
+     "audio": "audio/4d0229d1e9cc.m4a"
     },
     {
      "who": "E",
      "de": "Auf Wiedersehen!",
      "ru": "До свидания!",
-     "audio": "audio/ac58072c5e25.m4a"
+     "audio": "audio/318e93b2bc8e.m4a"
+    }
+   ]
+  },
+  "hafen": {
+   "title": "Moin an der Kiellinie!",
+   "ru": "Знакомство у воды",
+   "place": "Парусный клуб на Kiellinie, Kiel",
+   "people": {
+    "M": {
+     "name": "Mateo",
+     "voice": "Reed"
+    },
+    "H": {
+     "name": "Hauke",
+     "voice": "Rocko"
+    }
+   },
+   "lines": [
+    {
+     "who": "H",
+     "de": "Moin! Ich bin Hauke. Wie heißt du?",
+     "ru": "Привет! Я Хауке. Как тебя зовут?",
+     "audio": "audio/ecb47e742867.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Ich heiße Mateo. Ich komme aus Argentinien.",
+     "ru": "Меня зовут Матео. Я из Аргентины.",
+     "audio": "audio/e45f2210573b.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Wohnst du jetzt in Kiel?",
+     "ru": "Ты сейчас живёшь в Киле?",
+     "audio": "audio/52eedb3f1680.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Ja, ich wohne in Holtenau. Ich segle gern. Und du?",
+     "ru": "Да, я живу в Хольтенау. Я люблю ходить под парусом. А ты?",
+     "audio": "audio/5a043389b25f.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Ich segle auch gern. Das ist die „Sprotte“.",
+     "ru": "Я тоже люблю ходить под парусом. Это «Шпротта».",
+     "audio": "audio/a28e400448bb.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Die „Sprotte“? Wie heißt das Boot?",
+     "ru": "«Шпротта»? Как называется лодка?",
+     "audio": "audio/0726de46d44e.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Das Boot heißt „Sprotte“. Wir segeln hier in Kiel.",
+     "ru": "Лодка называется «Шпротта». Мы ходим под парусом здесь, в Киле.",
+     "audio": "audio/629f6ea3dee6.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Super! Tschüss, Hauke!",
+     "ru": "Здорово! Пока, Хауке!",
+     "audio": "audio/9aa9e9378ce3.m4a"
     }
    ]
   }
@@ -187,7 +252,7 @@
      "gender": null,
      "plural": null,
      "note": "на севере Германии — в любое время суток",
-     "audio": "audio/db024c4183b8.m4a"
+     "audio": "audio/48966fdcc6fd.m4a"
     },
     {
      "de": "Hallo!",
@@ -195,7 +260,7 @@
      "gender": null,
      "plural": null,
      "note": "с кем угодно в неформальной обстановке",
-     "audio": "audio/fa1b55bac866.m4a"
+     "audio": "audio/68e8e80d5390.m4a"
     },
     {
      "de": "Guten Morgen!",
@@ -203,21 +268,21 @@
      "gender": null,
      "plural": null,
      "note": "примерно до 10–11 часов",
-     "audio": "audio/84eed50bfa71.m4a"
+     "audio": "audio/75e8b4c4bc1b.m4a"
     },
     {
      "de": "Guten Tag!",
      "ru": "Добрый день!",
      "gender": null,
      "plural": null,
-     "audio": "audio/35f684b95cb6.m4a"
+     "audio": "audio/7f55de1b0c90.m4a"
     },
     {
      "de": "Guten Abend!",
      "ru": "Добрый вечер!",
      "gender": null,
      "plural": null,
-     "audio": "audio/ff9df94d8d10.m4a"
+     "audio": "audio/740d4b661cbc.m4a"
     },
     {
      "de": "Gute Nacht!",
@@ -225,21 +290,21 @@
      "gender": null,
      "plural": null,
      "note": "только перед сном",
-     "audio": "audio/895d33469ddd.m4a"
+     "audio": "audio/71e94344dd27.m4a"
     },
     {
      "de": "Wie geht's?",
      "ru": "Как дела?",
      "gender": null,
      "plural": null,
-     "audio": "audio/7daf8f8d6f52.m4a"
+     "audio": "audio/f1296cc8446a.m4a"
     },
     {
      "de": "Danke, gut!",
      "ru": "Спасибо, хорошо!",
      "gender": null,
      "plural": null,
-     "audio": "audio/8cfd35889af0.m4a"
+     "audio": "audio/a648f4423e9e.m4a"
     },
     {
      "de": "Tschüss!",
@@ -247,14 +312,14 @@
      "gender": null,
      "plural": null,
      "note": "на севере — и в магазине",
-     "audio": "audio/9f61c1dc3dd3.m4a"
+     "audio": "audio/88fbf055ea13.m4a"
     },
     {
      "de": "Auf Wiedersehen!",
      "ru": "До свидания!",
      "gender": null,
      "plural": null,
-     "audio": "audio/59782e3cabfc.m4a"
+     "audio": "audio/0c292e2a4525.m4a"
     }
    ]
   },
@@ -267,42 +332,42 @@
      "ru": "имя",
      "gender": "m",
      "plural": "Namen",
-     "audio": "audio/5c9744df535d.m4a"
+     "audio": "audio/838b39c4b92c.m4a"
     },
     {
      "de": "der Vorname",
      "ru": "личное имя",
      "gender": "m",
      "plural": "Vornamen",
-     "audio": "audio/164be7d79087.m4a"
+     "audio": "audio/c35a0aafec9d.m4a"
     },
     {
      "de": "der Familienname",
      "ru": "фамилия",
      "gender": "m",
      "plural": "Familiennamen",
-     "audio": "audio/91753d41b139.m4a"
+     "audio": "audio/17e9cd89702c.m4a"
     },
     {
      "de": "das Land",
      "ru": "страна",
      "gender": "n",
      "plural": "Länder",
-     "audio": "audio/84706904b87b.m4a"
+     "audio": "audio/dbf1068c9fc4.m4a"
     },
     {
      "de": "die Stadt",
      "ru": "город",
      "gender": "f",
      "plural": "Städte",
-     "audio": "audio/acd580270a8a.m4a"
+     "audio": "audio/44a9c1ef3bcb.m4a"
     },
     {
      "de": "die Sprache",
      "ru": "язык",
      "gender": "f",
      "plural": "Sprachen",
-     "audio": "audio/d9f5eaa713fd.m4a"
+     "audio": "audio/887d7057eada.m4a"
     },
     {
      "de": "heißen",
@@ -310,7 +375,7 @@
      "gender": null,
      "plural": null,
      "note": "Ich heiße Mateo.",
-     "audio": "audio/4ea467b70ef9.m4a"
+     "audio": "audio/a48c5355a618.m4a"
     },
     {
      "de": "kommen aus",
@@ -318,7 +383,7 @@
      "gender": null,
      "plural": null,
      "note": "Ich komme aus Kasachstan.",
-     "audio": "audio/58d652289a2f.m4a"
+     "audio": "audio/be7ff9121ad0.m4a"
     },
     {
      "de": "wohnen in",
@@ -326,7 +391,7 @@
      "gender": null,
      "plural": null,
      "note": "Ich wohne in Kiel.",
-     "audio": "audio/fe4edc26ab2b.m4a"
+     "audio": "audio/a23ef8637483.m4a"
     },
     {
      "de": "sprechen",
@@ -334,7 +399,7 @@
      "gender": null,
      "plural": null,
      "note": "du sprichst, er spricht",
-     "audio": "audio/4212ebe98ab9.m4a"
+     "audio": "audio/5dc9bf9b2292.m4a"
     }
    ]
   },
@@ -348,7 +413,7 @@
      "gender": null,
      "plural": null,
      "note": "Deutsch",
-     "audio": "audio/99f04a172472.m4a"
+     "audio": "audio/445ba81a6d34.m4a"
     },
     {
      "de": "Dänemark",
@@ -356,7 +421,7 @@
      "gender": null,
      "plural": null,
      "note": "Dänisch",
-     "audio": "audio/0c7b0dab16a5.m4a"
+     "audio": "audio/cb8deda323fe.m4a"
     },
     {
      "de": "Kasachstan",
@@ -364,7 +429,7 @@
      "gender": null,
      "plural": null,
      "note": "Kasachisch, Russisch",
-     "audio": "audio/4d3618555494.m4a"
+     "audio": "audio/a8a02be7645f.m4a"
     },
     {
      "de": "Russland",
@@ -372,7 +437,7 @@
      "gender": null,
      "plural": null,
      "note": "Russisch",
-     "audio": "audio/bb91df13322f.m4a"
+     "audio": "audio/d23d61e6964d.m4a"
     },
     {
      "de": "Argentinien",
@@ -380,7 +445,7 @@
      "gender": null,
      "plural": null,
      "note": "Spanisch",
-     "audio": "audio/439a902546b6.m4a"
+     "audio": "audio/f3cee50238e0.m4a"
     },
     {
      "de": "die Türkei",
@@ -389,7 +454,7 @@
      "plural": null,
      "noPlural": true,
      "note": "aus der Türkei · Türkisch",
-     "audio": "audio/c6a1931b5e16.m4a"
+     "audio": "audio/023c553e94ea.m4a"
     },
     {
      "de": "die Ukraine",
@@ -398,7 +463,7 @@
      "plural": null,
      "noPlural": true,
      "note": "aus der Ukraine · Ukrainisch",
-     "audio": "audio/c7fd2760a5e2.m4a"
+     "audio": "audio/70477d379d1d.m4a"
     },
     {
      "de": "die Schweiz",
@@ -407,7 +472,7 @@
      "plural": null,
      "noPlural": true,
      "note": "aus der Schweiz",
-     "audio": "audio/56909fc8dda4.m4a"
+     "audio": "audio/6cff6e57fb01.m4a"
     },
     {
      "de": "die USA",
@@ -415,7 +480,50 @@
      "gender": "pl",
      "plural": null,
      "note": "aus den USA",
-     "audio": "audio/c9224e2e4b3f.m4a"
+     "audio": "audio/a5806f4abac6.m4a"
+    }
+   ]
+  },
+  "am-wasser": {
+   "title": "Am Wasser",
+   "ru": "У воды и после прогулки",
+   "items": [
+    {
+     "de": "der Hafen",
+     "ru": "порт, гавань",
+     "gender": "m",
+     "plural": "Häfen",
+     "audio": "audio/64c12f7f3efa.m4a"
+    },
+    {
+     "de": "das Boot",
+     "ru": "лодка",
+     "gender": "n",
+     "plural": "Boote",
+     "note": "Das Boot heißt Sprotte.",
+     "audio": "audio/615ab8c371df.m4a"
+    },
+    {
+     "de": "segeln",
+     "ru": "ходить под парусом",
+     "gender": null,
+     "plural": null,
+     "note": "ich segle · wir segeln",
+     "audio": "audio/7970c1741583.m4a"
+    },
+    {
+     "de": "das Café",
+     "ru": "кафе",
+     "gender": "n",
+     "plural": "Cafés",
+     "audio": "audio/5817267f164f.m4a"
+    },
+    {
+     "de": "der Strand",
+     "ru": "пляж",
+     "gender": "m",
+     "plural": "Strände",
+     "audio": "audio/2d3ecb5df7a4.m4a"
     }
    ]
   },
@@ -428,35 +536,35 @@
      "ru": "Кто?",
      "gender": null,
      "plural": null,
-     "audio": "audio/5622923d890f.m4a"
+     "audio": "audio/b572cdb8782c.m4a"
     },
     {
      "de": "Wie?",
      "ru": "Как?",
      "gender": null,
      "plural": null,
-     "audio": "audio/0b6ad64de226.m4a"
+     "audio": "audio/871fa65e2fdb.m4a"
     },
     {
      "de": "Woher?",
      "ru": "Откуда?",
      "gender": null,
      "plural": null,
-     "audio": "audio/b681d68b2b49.m4a"
+     "audio": "audio/8104b2be05ca.m4a"
     },
     {
      "de": "Wo?",
      "ru": "Где?",
      "gender": null,
      "plural": null,
-     "audio": "audio/ad0c2fc85389.m4a"
+     "audio": "audio/64cde0cf6b03.m4a"
     },
     {
      "de": "Was?",
      "ru": "Что?",
      "gender": null,
      "plural": null,
-     "audio": "audio/0f4f5049117c.m4a"
+     "audio": "audio/136c1a08c4bd.m4a"
     },
     {
      "de": "Welche?",
@@ -464,7 +572,7 @@
      "gender": null,
      "plural": null,
      "note": "Welche Sprachen sprichst du?",
-     "audio": "audio/fa46a8b312ba.m4a"
+     "audio": "audio/92bcee53fe93.m4a"
     }
    ]
   }
@@ -623,31 +731,31 @@
    "sample": [
     {
      "de": "Mein Name ist Mateo Fernández.",
-     "audio": "audio/76a5980419c6.m4a"
+     "audio": "audio/6e24bd3651b2.m4a"
     },
     {
      "de": "Ich bin 28 Jahre alt.",
-     "audio": "audio/dcf5a9e1ecbe.m4a"
+     "audio": "audio/a8bfbe036243.m4a"
     },
     {
      "de": "Ich komme aus Argentinien.",
-     "audio": "audio/115e70b664ef.m4a"
+     "audio": "audio/b0eecc08b88b.m4a"
     },
     {
      "de": "Ich wohne in Kiel, in Holtenau.",
-     "audio": "audio/596282f3be4f.m4a"
+     "audio": "audio/97a215c90a2f.m4a"
     },
     {
      "de": "Ich spreche Spanisch, Englisch und ein bisschen Deutsch.",
-     "audio": "audio/34d09c7cd39d.m4a"
+     "audio": "audio/1eab01208092.m4a"
     },
     {
      "de": "Ich bin Koch von Beruf.",
-     "audio": "audio/7254db79fd4f.m4a"
+     "audio": "audio/138bd0818594.m4a"
     },
     {
      "de": "Mein Hobby ist Segeln.",
-     "audio": "audio/db15b13be4fa.m4a"
+     "audio": "audio/44910f158065.m4a"
     }
    ]
   },
@@ -833,6 +941,59 @@
    }
   },
   {
+   "id": "hafen-1",
+   "step": "hafen",
+   "stepTitle": "Теперь — в парусном клубе",
+   "chapterIndex": 0,
+   "indexInStep": 0,
+   "read": "После курса Матео знакомится с Хауке на Kiellinie. Место другое, но вопросы те же: имя, откуда вы и где живёте. Прежде чем открыть следующие реплики, ответьте за себя на вопрос *Wohnst du jetzt in Kiel?* Настоящий ответ полезнее заученной биографии Матео. *Ich segle gern* — готовая фраза «я люблю ходить под парусом»; *gern* подробнее разберём в теме о еде.",
+   "point": "На курсе и в клубе: *Wie heißt du? Woher kommst du? Wo wohnst du?*",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "hafen",
+    "reveal": 4,
+    "fresh": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "focus": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "hafen-2",
+   "step": "hafen",
+   "stepTitle": "Теперь — в парусном клубе",
+   "chapterIndex": 0,
+   "indexInStep": 1,
+   "read": "*heißen* подходит не только людям: *Wie heißt das Boot?* — «как называется лодка?». Ответ — *Das Boot heißt Sprotte*. У *segeln* запомните короткое *ich segle*; с *wir* всё привычно: *wir segeln*. Теперь сыграйте сцену ещё раз: представьтесь Хауке от своего имени, назовите свой город и язык. Лодку и парусный опыт выдумывать не нужно.",
+   "point": "*Wie heißt das Boot?* — название спрашивают тем же *heißen*, что и имя",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "hafen",
+    "reveal": 8,
+    "fresh": [
+     4,
+     5,
+     6,
+     7
+    ],
+    "focus": [
+     3,
+     4,
+     5,
+     6,
+     7
+    ]
+   }
+  },
+  {
    "id": "hallo-1",
    "step": "hallo",
    "stepTitle": "Здороваемся и прощаемся",
@@ -842,7 +1003,7 @@
    "point": "*Moin!* — всегда; *Guten Morgen / Tag / Abend!* — по времени суток",
    "scene": {
     "view": "words",
-    "dialogue": "buero",
+    "dialogue": "hafen",
     "words": "hallo"
    }
   },
@@ -856,7 +1017,7 @@
    "point": "Учите слово с артиклем и мн. ч.: *der Name — die Namen*",
    "scene": {
     "view": "words",
-    "dialogue": "buero",
+    "dialogue": "hafen",
     "words": "person"
    }
   },
@@ -870,7 +1031,7 @@
    "point": "Страны без артикля, кроме *die Türkei*, *die Ukraine*, *die Schweiz*, *die USA*",
    "scene": {
     "view": "words",
-    "dialogue": "buero",
+    "dialogue": "hafen",
     "words": "laender"
    }
   },
@@ -884,8 +1045,22 @@
    "point": "*wo?* — где, *woher?* — откуда",
    "scene": {
     "view": "words",
-    "dialogue": "buero",
+    "dialogue": "hafen",
     "words": "fragen"
+   }
+  },
+  {
+   "id": "am-wasser-1",
+   "step": "am-wasser",
+   "stepTitle": "Пять слов для береговой жизни",
+   "chapterIndex": 1,
+   "indexInStep": 0,
+   "read": "Для первой встречи у воды не нужны названия снастей. Достаточно пяти слов: гавань, лодка, ходить под парусом, кафе и пляж. Они пригодятся и в обычной прогулке по Килю. *Das Boot* — общее слово «лодка», а *die Jolle* из дела темы — небольшая парусная лодка. Учите прежде всего слова с карточек; незнакомую морскую деталь сюжета пока достаточно понять из контекста.",
+   "point": "Береговая жизнь: *der Hafen, das Boot, segeln, das Café, der Strand*",
+   "scene": {
+    "view": "words",
+    "dialogue": "hafen",
+    "words": "am-wasser"
    }
   },
   {
@@ -898,8 +1073,8 @@
    "point": "*sie* — она/они, *Sie* — вежливое «Вы», *ihr* — вы-друзья",
    "scene": {
     "view": "table",
-    "dialogue": "buero",
-    "words": "fragen",
+    "dialogue": "hafen",
+    "words": "am-wasser",
     "table": "pronomen",
     "focus": [
      4,
@@ -918,8 +1093,8 @@
    "point": "Единственное число: ich *-e*, du *-st*, er/sie/es *-t*",
    "scene": {
     "view": "table",
-    "dialogue": "buero",
-    "words": "fragen",
+    "dialogue": "hafen",
+    "words": "am-wasser",
     "table": "endungen",
     "reveal": 3
    }
@@ -934,8 +1109,8 @@
    "point": "*wir*, *sie*, *Sie* — как инфинитив; *ihr* — *-t*",
    "scene": {
     "view": "table",
-    "dialogue": "buero",
-    "words": "fragen",
+    "dialogue": "hafen",
+    "words": "am-wasser",
     "table": "endungen",
     "reveal": 6,
     "focus": [
@@ -959,8 +1134,8 @@
    "point": "*ich bin, du bist, er ist, wir sind, ihr seid, sie sind*",
    "scene": {
     "view": "table",
-    "dialogue": "buero",
-    "words": "fragen",
+    "dialogue": "hafen",
+    "words": "am-wasser",
     "table": "sein"
    }
   },
@@ -974,8 +1149,8 @@
    "point": "Спрягаемый глагол — всегда вторая позиция",
    "scene": {
     "view": "sentence",
-    "dialogue": "buero",
-    "words": "fragen",
+    "dialogue": "hafen",
+    "words": "am-wasser",
     "table": "sein",
     "rows": [
      {
@@ -1007,7 +1182,7 @@
       "punct": ".",
       "plain": "Ich wohne in Kiel.",
       "ru": "Я живу в Киле.",
-      "audio": "audio/15a0da9f89b9.m4a"
+      "audio": "audio/a09eaf8bc832.m4a"
      }
     ]
    }
@@ -1022,8 +1197,8 @@
    "point": "Что угодно на первом месте — глагол всё равно второй: *In Kiel wohne ich.*",
    "scene": {
     "view": "sentence",
-    "dialogue": "buero",
-    "words": "fragen",
+    "dialogue": "hafen",
+    "words": "am-wasser",
     "table": "sein",
     "rows": [
      {
@@ -1055,7 +1230,7 @@
       "punct": ".",
       "plain": "In Kiel wohne ich.",
       "ru": "В Киле живу я.",
-      "audio": "audio/b6c017ebe93f.m4a"
+      "audio": "audio/5e33b5c6044b.m4a"
      }
     ]
    }
@@ -1070,8 +1245,8 @@
    "point": "W-вопрос: *Wo wohnst du?* Вопрос да/нет: *Wohnst du …?*",
    "scene": {
     "view": "sentence",
-    "dialogue": "buero",
-    "words": "fragen",
+    "dialogue": "hafen",
+    "words": "am-wasser",
     "table": "sein",
     "rows": [
      {
@@ -1099,7 +1274,7 @@
       "punct": "?",
       "plain": "Wo wohnst du?",
       "ru": "Где ты живёшь?",
-      "audio": "audio/a1e9e18dde39.m4a"
+      "audio": "audio/e3f776cfc5d7.m4a"
      },
      {
       "slots": [
@@ -1129,7 +1304,7 @@
       "punct": "?",
       "plain": "Wohnst du in Kiel?",
       "ru": "Ты живёшь в Киле?",
-      "audio": "audio/2beceb3bd9b8.m4a"
+      "audio": "audio/28e58cdcb777.m4a"
      }
     ],
     "fresh": [
@@ -1146,78 +1321,10 @@
    "read": "С незнакомым взрослым — на *Sie*: *Woher kommen Sie?* Глагол в форме *kommen* — как инфинитив, местоимение *Sie* — с большой буквы. Вариант *Woher kommst du?* прозвучит фамильярно, хотя вас, конечно, поймут.",
    "point": "Вежливо: *Woher kommen Sie?*",
    "question": "Как спросить пожилую соседку, откуда она родом?",
-   "sceneBefore": {
-    "view": "sentence",
-    "dialogue": "buero",
-    "words": "fragen",
-    "table": "sein",
-    "rows": [
-     {
-      "slots": [
-       [
-        {
-         "key": "wo",
-         "text": "Wo"
-        }
-       ],
-       [
-        {
-         "key": "wohn",
-         "text": "wohn+st"
-        }
-       ],
-       [
-        {
-         "key": "du",
-         "text": "du"
-        }
-       ],
-       []
-      ],
-      "punct": "?",
-      "plain": "Wo wohnst du?",
-      "ru": "Где ты живёшь?",
-      "audio": "audio/a1e9e18dde39.m4a"
-     },
-     {
-      "slots": [
-       [],
-       [
-        {
-         "key": "wohn",
-         "text": "Wohn+st"
-        }
-       ],
-       [
-        {
-         "key": "du",
-         "text": "du"
-        },
-        {
-         "key": "in",
-         "text": "in"
-        },
-        {
-         "key": "kiel",
-         "text": "Kiel"
-        }
-       ],
-       []
-      ],
-      "punct": "?",
-      "plain": "Wohnst du in Kiel?",
-      "ru": "Ты живёшь в Киле?",
-      "audio": "audio/2beceb3bd9b8.m4a"
-     }
-    ],
-    "fresh": [
-     1
-    ]
-   },
    "scene": {
     "view": "sentence",
-    "dialogue": "buero",
-    "words": "fragen",
+    "dialogue": "hafen",
+    "words": "am-wasser",
     "table": "sein",
     "rows": [
      {
@@ -1245,7 +1352,7 @@
       "punct": "?",
       "plain": "Woher kommen Sie?",
       "ru": "Откуда Вы?",
-      "audio": "audio/c3ec93f601a8.m4a"
+      "audio": "audio/fa4def7fae1e.m4a"
      }
     ]
    }
@@ -1261,8 +1368,8 @@
    "question": "Матео говорит *Ich komme aus Argentinien*. Как начать фразу с *Aus Argentinien…*?",
    "sceneBefore": {
     "view": "sentence",
-    "dialogue": "buero",
-    "words": "fragen",
+    "dialogue": "hafen",
+    "words": "am-wasser",
     "table": "sein",
     "rows": [
      {
@@ -1294,14 +1401,14 @@
       "punct": ".",
       "plain": "Ich komme aus Argentinien.",
       "ru": "Я из Аргентины.",
-      "audio": "audio/115e70b664ef.m4a"
+      "audio": "audio/b0eecc08b88b.m4a"
      }
     ]
    },
    "scene": {
     "view": "sentence",
-    "dialogue": "buero",
-    "words": "fragen",
+    "dialogue": "hafen",
+    "words": "am-wasser",
     "table": "sein",
     "rows": [
      {
@@ -1333,7 +1440,7 @@
       "punct": ".",
       "plain": "Ich komme aus Argentinien.",
       "ru": "Я из Аргентины.",
-      "audio": "audio/115e70b664ef.m4a"
+      "audio": "audio/b0eecc08b88b.m4a"
      },
      {
       "slots": [
@@ -1364,7 +1471,7 @@
       "punct": ".",
       "plain": "Aus Argentinien komme ich.",
       "ru": "Из Аргентины я родом.",
-      "audio": "audio/f8721e34ba75.m4a"
+      "audio": "audio/1828509b0667.m4a"
      }
     ],
     "fresh": [
@@ -1381,83 +1488,10 @@
    "read": "Если основа кончается на *s*, *ß* или *z*, во втором лице добавляется только *-t*: *du heiß+t*, *du tanz+t*. Звук *с* уже есть в основе, второй не нужен. Поэтому *du heißt* и *er heißt* совпадают.",
    "point": "Основа на *-s*, *-ß*, *-z*: *du heißt*, *du tanzt*",
    "question": "Почему *du heißt*, а не *du heißst*?",
-   "sceneBefore": {
-    "view": "sentence",
-    "dialogue": "buero",
-    "words": "fragen",
-    "table": "sein",
-    "rows": [
-     {
-      "slots": [
-       [
-        {
-         "key": "ich",
-         "text": "Ich"
-        }
-       ],
-       [
-        {
-         "key": "komm",
-         "text": "komm+e"
-        }
-       ],
-       [
-        {
-         "key": "aus",
-         "text": "aus"
-        },
-        {
-         "key": "argentinien",
-         "text": "Argentinien"
-        }
-       ],
-       []
-      ],
-      "punct": ".",
-      "plain": "Ich komme aus Argentinien.",
-      "ru": "Я из Аргентины.",
-      "audio": "audio/115e70b664ef.m4a"
-     },
-     {
-      "slots": [
-       [
-        {
-         "key": "aus",
-         "text": "Aus"
-        },
-        {
-         "key": "argentinien",
-         "text": "Argentinien"
-        }
-       ],
-       [
-        {
-         "key": "komm",
-         "text": "komm+e"
-        }
-       ],
-       [
-        {
-         "key": "ich",
-         "text": "ich"
-        }
-       ],
-       []
-      ],
-      "punct": ".",
-      "plain": "Aus Argentinien komme ich.",
-      "ru": "Из Аргентины я родом.",
-      "audio": "audio/f8721e34ba75.m4a"
-     }
-    ],
-    "fresh": [
-     1
-    ]
-   },
    "scene": {
     "view": "table",
-    "dialogue": "buero",
-    "words": "fragen",
+    "dialogue": "hafen",
+    "words": "am-wasser",
     "table": "endungen",
     "rows": [
      {
@@ -1489,7 +1523,7 @@
       "punct": ".",
       "plain": "Ich komme aus Argentinien.",
       "ru": "Я из Аргентины.",
-      "audio": "audio/115e70b664ef.m4a"
+      "audio": "audio/b0eecc08b88b.m4a"
      },
      {
       "slots": [
@@ -1520,12 +1554,134 @@
       "punct": ".",
       "plain": "Aus Argentinien komme ich.",
       "ru": "Из Аргентины я родом.",
-      "audio": "audio/f8721e34ba75.m4a"
+      "audio": "audio/1828509b0667.m4a"
      }
     ],
     "focus": [
      1,
      2
+    ]
+   }
+  },
+  {
+   "id": "selbst-erklaeren-1",
+   "step": "selbst-erklaeren",
+   "stepTitle": "Объясните Хауке — потом скажите о себе",
+   "chapterIndex": 3,
+   "indexInStep": 0,
+   "read": "*In Kiel* — одна группа на первой позиции. Спрягаемый глагол *wohne* должен быть вторым, поэтому *ich* переходит за него: *In Kiel wohne ich*. Объясните это своими словами, будто помогаете новичку разобраться в немецком. Затем закройте пример и скажите два правдивых предложения о себе: сначала с *Ich*, потом с городом. Если назвать правило трудно, вернитесь к схеме, а не перечитывайте весь урок.",
+   "point": "Объясните правило своими словами и составьте свой пример",
+   "question": "Почему *In Kiel ich wohne* не подходит? Объясните до открытия ответа.",
+   "sceneBefore": {
+    "view": "sentence",
+    "dialogue": "hafen",
+    "words": "am-wasser",
+    "table": "endungen",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "wohn",
+         "text": "wohn+e"
+        }
+       ],
+       [
+        {
+         "key": "in",
+         "text": "in"
+        },
+        {
+         "key": "kiel",
+         "text": "Kiel"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Ich wohne in Kiel.",
+      "ru": "Я живу в Киле.",
+      "audio": "audio/a09eaf8bc832.m4a"
+     }
+    ]
+   },
+   "scene": {
+    "view": "sentence",
+    "dialogue": "hafen",
+    "words": "am-wasser",
+    "table": "endungen",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "wohn",
+         "text": "wohn+e"
+        }
+       ],
+       [
+        {
+         "key": "in",
+         "text": "in"
+        },
+        {
+         "key": "kiel",
+         "text": "Kiel"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Ich wohne in Kiel.",
+      "ru": "Я живу в Киле.",
+      "audio": "audio/a09eaf8bc832.m4a"
+     },
+     {
+      "slots": [
+       [
+        {
+         "key": "in",
+         "text": "In"
+        },
+        {
+         "key": "kiel",
+         "text": "Kiel"
+        }
+       ],
+       [
+        {
+         "key": "wohn",
+         "text": "wohn+e"
+        }
+       ],
+       [
+        {
+         "key": "ich",
+         "text": "ich"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "In Kiel wohne ich.",
+      "ru": "В Киле живу я.",
+      "audio": "audio/5e33b5c6044b.m4a"
+     }
+    ],
+    "fresh": [
+     1
     ]
    }
   },
@@ -1539,8 +1695,8 @@
    "point": "Часть 1: рассказ по ключевым словам + буквы + номер",
    "scene": {
     "view": "task",
-    "dialogue": "buero",
-    "words": "fragen",
+    "dialogue": "hafen",
+    "words": "am-wasser",
     "table": "endungen",
     "rows": [
      {
@@ -1553,43 +1709,43 @@
        ],
        [
         {
-         "key": "komm",
-         "text": "komm+e"
+         "key": "wohn",
+         "text": "wohn+e"
         }
        ],
        [
         {
-         "key": "aus",
-         "text": "aus"
+         "key": "in",
+         "text": "in"
         },
         {
-         "key": "argentinien",
-         "text": "Argentinien"
+         "key": "kiel",
+         "text": "Kiel"
         }
        ],
        []
       ],
       "punct": ".",
-      "plain": "Ich komme aus Argentinien.",
-      "ru": "Я из Аргентины.",
-      "audio": "audio/115e70b664ef.m4a"
+      "plain": "Ich wohne in Kiel.",
+      "ru": "Я живу в Киле.",
+      "audio": "audio/a09eaf8bc832.m4a"
      },
      {
       "slots": [
        [
         {
-         "key": "aus",
-         "text": "Aus"
+         "key": "in",
+         "text": "In"
         },
         {
-         "key": "argentinien",
-         "text": "Argentinien"
+         "key": "kiel",
+         "text": "Kiel"
         }
        ],
        [
         {
-         "key": "komm",
-         "text": "komm+e"
+         "key": "wohn",
+         "text": "wohn+e"
         }
        ],
        [
@@ -1601,9 +1757,9 @@
        []
       ],
       "punct": ".",
-      "plain": "Aus Argentinien komme ich.",
-      "ru": "Из Аргентины я родом.",
-      "audio": "audio/f8721e34ba75.m4a"
+      "plain": "In Kiel wohne ich.",
+      "ru": "В Киле живу я.",
+      "audio": "audio/5e33b5c6044b.m4a"
      }
     ],
     "task": "vorstellen",
@@ -1620,8 +1776,8 @@
    "point": "Подготовьте рассказ о себе заранее — 6–7 простых предложений",
    "scene": {
     "view": "task",
-    "dialogue": "buero",
-    "words": "fragen",
+    "dialogue": "hafen",
+    "words": "am-wasser",
     "table": "endungen",
     "rows": [
      {
@@ -1634,43 +1790,43 @@
        ],
        [
         {
-         "key": "komm",
-         "text": "komm+e"
+         "key": "wohn",
+         "text": "wohn+e"
         }
        ],
        [
         {
-         "key": "aus",
-         "text": "aus"
+         "key": "in",
+         "text": "in"
         },
         {
-         "key": "argentinien",
-         "text": "Argentinien"
+         "key": "kiel",
+         "text": "Kiel"
         }
        ],
        []
       ],
       "punct": ".",
-      "plain": "Ich komme aus Argentinien.",
-      "ru": "Я из Аргентины.",
-      "audio": "audio/115e70b664ef.m4a"
+      "plain": "Ich wohne in Kiel.",
+      "ru": "Я живу в Киле.",
+      "audio": "audio/a09eaf8bc832.m4a"
      },
      {
       "slots": [
        [
         {
-         "key": "aus",
-         "text": "Aus"
+         "key": "in",
+         "text": "In"
         },
         {
-         "key": "argentinien",
-         "text": "Argentinien"
+         "key": "kiel",
+         "text": "Kiel"
         }
        ],
        [
         {
-         "key": "komm",
-         "text": "komm+e"
+         "key": "wohn",
+         "text": "wohn+e"
         }
        ],
        [
@@ -1682,9 +1838,9 @@
        []
       ],
       "punct": ".",
-      "plain": "Aus Argentinien komme ich.",
-      "ru": "Из Аргентины я родом.",
-      "audio": "audio/f8721e34ba75.m4a"
+      "plain": "In Kiel wohne ich.",
+      "ru": "В Киле живу я.",
+      "audio": "audio/5e33b5c6044b.m4a"
      }
     ],
     "task": "vorstellen",
@@ -1701,8 +1857,8 @@
    "point": "Анкета: 5 пустых полей, все ответы есть в тексте",
    "scene": {
     "view": "task",
-    "dialogue": "buero",
-    "words": "fragen",
+    "dialogue": "hafen",
+    "words": "am-wasser",
     "table": "endungen",
     "rows": [
      {
@@ -1715,43 +1871,43 @@
        ],
        [
         {
-         "key": "komm",
-         "text": "komm+e"
+         "key": "wohn",
+         "text": "wohn+e"
         }
        ],
        [
         {
-         "key": "aus",
-         "text": "aus"
+         "key": "in",
+         "text": "in"
         },
         {
-         "key": "argentinien",
-         "text": "Argentinien"
+         "key": "kiel",
+         "text": "Kiel"
         }
        ],
        []
       ],
       "punct": ".",
-      "plain": "Ich komme aus Argentinien.",
-      "ru": "Я из Аргентины.",
-      "audio": "audio/115e70b664ef.m4a"
+      "plain": "Ich wohne in Kiel.",
+      "ru": "Я живу в Киле.",
+      "audio": "audio/a09eaf8bc832.m4a"
      },
      {
       "slots": [
        [
         {
-         "key": "aus",
-         "text": "Aus"
+         "key": "in",
+         "text": "In"
         },
         {
-         "key": "argentinien",
-         "text": "Argentinien"
+         "key": "kiel",
+         "text": "Kiel"
         }
        ],
        [
         {
-         "key": "komm",
-         "text": "komm+e"
+         "key": "wohn",
+         "text": "wohn+e"
         }
        ],
        [
@@ -1763,9 +1919,9 @@
        []
       ],
       "punct": ".",
-      "plain": "Aus Argentinien komme ich.",
-      "ru": "Из Аргентины я родом.",
-      "audio": "audio/f8721e34ba75.m4a"
+      "plain": "In Kiel wohne ich.",
+      "ru": "В Киле живу я.",
+      "audio": "audio/5e33b5c6044b.m4a"
      }
     ],
     "task": "anmeldung",
@@ -1781,82 +1937,10 @@
    "read": "*Türkei*. *Herkunft* — «происхождение», *Land* — «страна»: страна, откуда человек родом. Не путайте с *Wohnort* — местом, где он живёт сейчас, это *Kiel*. В анкете страну пишут без артикля, хотя в предложении говорят *aus der Türkei*. Остальные поля заполняются так же: найдите в тексте слово и перенесите его без изменений.",
    "point": "*Herkunftsland* — откуда родом, *Wohnort* — где живёт",
    "question": "Что написать в поле «Herkunftsland»?",
-   "sceneBefore": {
-    "view": "task",
-    "dialogue": "buero",
-    "words": "fragen",
-    "table": "endungen",
-    "rows": [
-     {
-      "slots": [
-       [
-        {
-         "key": "ich",
-         "text": "Ich"
-        }
-       ],
-       [
-        {
-         "key": "komm",
-         "text": "komm+e"
-        }
-       ],
-       [
-        {
-         "key": "aus",
-         "text": "aus"
-        },
-        {
-         "key": "argentinien",
-         "text": "Argentinien"
-        }
-       ],
-       []
-      ],
-      "punct": ".",
-      "plain": "Ich komme aus Argentinien.",
-      "ru": "Я из Аргентины.",
-      "audio": "audio/115e70b664ef.m4a"
-     },
-     {
-      "slots": [
-       [
-        {
-         "key": "aus",
-         "text": "Aus"
-        },
-        {
-         "key": "argentinien",
-         "text": "Argentinien"
-        }
-       ],
-       [
-        {
-         "key": "komm",
-         "text": "komm+e"
-        }
-       ],
-       [
-        {
-         "key": "ich",
-         "text": "ich"
-        }
-       ],
-       []
-      ],
-      "punct": ".",
-      "plain": "Aus Argentinien komme ich.",
-      "ru": "Из Аргентины я родом.",
-      "audio": "audio/f8721e34ba75.m4a"
-     }
-    ],
-    "task": "anmeldung",
-    "reveal": 0
-   },
    "scene": {
     "view": "task",
-    "dialogue": "buero",
-    "words": "fragen",
+    "dialogue": "hafen",
+    "words": "am-wasser",
     "table": "endungen",
     "rows": [
      {
@@ -1869,43 +1953,43 @@
        ],
        [
         {
-         "key": "komm",
-         "text": "komm+e"
+         "key": "wohn",
+         "text": "wohn+e"
         }
        ],
        [
         {
-         "key": "aus",
-         "text": "aus"
+         "key": "in",
+         "text": "in"
         },
         {
-         "key": "argentinien",
-         "text": "Argentinien"
+         "key": "kiel",
+         "text": "Kiel"
         }
        ],
        []
       ],
       "punct": ".",
-      "plain": "Ich komme aus Argentinien.",
-      "ru": "Я из Аргентины.",
-      "audio": "audio/115e70b664ef.m4a"
+      "plain": "Ich wohne in Kiel.",
+      "ru": "Я живу в Киле.",
+      "audio": "audio/a09eaf8bc832.m4a"
      },
      {
       "slots": [
        [
         {
-         "key": "aus",
-         "text": "Aus"
+         "key": "in",
+         "text": "In"
         },
         {
-         "key": "argentinien",
-         "text": "Argentinien"
+         "key": "kiel",
+         "text": "Kiel"
         }
        ],
        [
         {
-         "key": "komm",
-         "text": "komm+e"
+         "key": "wohn",
+         "text": "wohn+e"
         }
        ],
        [
@@ -1917,9 +2001,9 @@
        []
       ],
       "punct": ".",
-      "plain": "Aus Argentinien komme ich.",
-      "ru": "Из Аргентины я родом.",
-      "audio": "audio/f8721e34ba75.m4a"
+      "plain": "In Kiel wohne ich.",
+      "ru": "В Киле живу я.",
+      "audio": "audio/5e33b5c6044b.m4a"
      }
     ],
     "task": "anmeldung",
@@ -1939,7 +2023,7 @@
    ],
    "answer": 0,
    "why": "*Wie heißen Sie?* — «Как вас зовут?», буквально «как вы зовётесь?»",
-   "audio": "audio/c37f3e3f64ca.m4a"
+   "audio": "audio/2ab21d875ef9.m4a"
   },
   {
    "id": "kennenlernen-2",
@@ -1952,7 +2036,7 @@
    ],
    "answer": 1,
    "why": "Ответ с *aus* — значит, спрашивали «откуда»: *woher*.",
-   "audio": "audio/52ecbcaaab8f.m4a"
+   "audio": "audio/71844352e3db.m4a"
   },
   {
    "id": "kennenlernen-3",
@@ -1965,7 +2049,7 @@
    ],
    "answer": 2,
    "why": "*wo* — «где». Ответ с *in*: *in Kiel*.",
-   "audio": "audio/fa198b735ef6.m4a"
+   "audio": "audio/55d9a7b4ee0b.m4a"
   },
   {
    "id": "kennenlernen-4",
@@ -1975,7 +2059,7 @@
     "bin|heiße"
    ],
    "hint": "sein / heißen",
-   "audio": "audio/e385c18be213.m4a"
+   "audio": "audio/f58af487bfbe.m4a"
   },
   {
    "id": "kennenlernen-5",
@@ -1986,7 +2070,7 @@
    ],
    "hint": "kommen",
    "why": "*du* — окончание *-st*: *du komm+st*.",
-   "audio": "audio/44253ae43aca.m4a"
+   "audio": "audio/c7538029a7c1.m4a"
   },
   {
    "id": "kennenlernen-6",
@@ -1997,7 +2081,7 @@
    ],
    "hint": "wohnen",
    "why": "*wir* — форма совпадает с инфинитивом.",
-   "audio": "audio/f848e92448cb.m4a"
+   "audio": "audio/5c1ec1839594.m4a"
   },
   {
    "id": "kennenlernen-7",
@@ -2008,7 +2092,7 @@
    ],
    "hint": "sein",
    "why": "*Sie sind* — в вопросе да/нет глагол встаёт первым.",
-   "audio": "audio/a6aaba049126.m4a"
+   "audio": "audio/f9e13f080d23.m4a"
   },
   {
    "id": "kennenlernen-8",
@@ -2019,7 +2103,7 @@
    ],
    "hint": "sprechen",
    "why": "*sprechen* меняет *e* на *i*: *du sprichst*, *er spricht*.",
-   "audio": "audio/8e3c709fdacf.m4a"
+   "audio": "audio/5ba726422385.m4a"
   },
   {
    "id": "kennenlernen-9",
@@ -2032,7 +2116,7 @@
    ],
    "answer": 1,
    "why": "*ihr seid* — форму надо запомнить.",
-   "audio": "audio/4c1ca93674f6.m4a"
+   "audio": "audio/04a5cecbc67b.m4a"
   },
   {
    "id": "kennenlernen-10",
@@ -2069,14 +2153,14 @@
    ],
    "answer": 1,
    "why": "*die Türkei* — страна с артиклем, а после *aus* он становится *der*: *aus der Türkei*.",
-   "audio": "audio/9a1d3ad78865.m4a"
+   "audio": "audio/882d1f3ce208.m4a"
   },
   {
    "id": "kennenlernen-13",
    "type": "order",
    "ru": "Откуда Вы?",
    "de": "Woher kommen Sie?",
-   "audio": "audio/c3ec93f601a8.m4a"
+   "audio": "audio/fa4def7fae1e.m4a"
   },
   {
    "id": "kennenlernen-14",
@@ -2087,14 +2171,37 @@
     "Ich wohne jetzt in Kiel."
    ],
    "why": "*Jetzt* на первом месте — глагол второй, *ich* после глагола.",
-   "audio": "audio/d3ac5d4a2b62.m4a"
+   "audio": "audio/befc871b9fec.m4a"
   },
   {
    "id": "kennenlernen-15",
    "type": "order",
    "ru": "Ты говоришь по-немецки?",
    "de": "Sprichst du Deutsch?",
-   "audio": "audio/9fb1c7fc45b0.m4a"
+   "audio": "audio/be666e96edf9.m4a"
+  },
+  {
+   "id": "kennenlernen-16",
+   "type": "gap",
+   "q": "Das Boot ___ Sprotte.",
+   "answer": [
+    "heißt"
+   ],
+   "hint": "heißen",
+   "ru": "Лодка называется «Шпротта».",
+   "why": "*das Boot* — как *es*: *es heißt*. *heißen* подходит и для имени человека, и для названия лодки.",
+   "audio": "audio/765d84061a98.m4a"
+  },
+  {
+   "id": "kennenlernen-17",
+   "type": "order",
+   "ru": "Мы ходим под парусом в Киле.",
+   "de": "Wir segeln in Kiel.",
+   "also": [
+    "In Kiel segeln wir."
+   ],
+   "why": "С *wir* — *segeln*. Начать можно с города, но глагол остаётся вторым.",
+   "audio": "audio/4b09bc3d40cd.m4a"
   }
  ],
  "case": {
@@ -2132,14 +2239,14 @@
       "who": "J",
       "de": "Moin! Die „Sprotte“ ist weg!",
       "ru": "Привет! «Шпротта» пропала!",
-      "audio": "audio/8d47710c6d3f.m4a"
+      "audio": "audio/63e965f9190d.m4a"
      },
      {
       "kind": "quote",
       "who": "F",
       "de": "Um zehn Uhr am Abend sind sie hier. Dann segeln sie.",
       "ru": "В десять вечера они здесь. Потом они выходят под парусом.",
-      "audio": "audio/e9f8b2078ea3.m4a"
+      "audio": "audio/d93e6171a09d.m4a"
      }
     ],
     "question": "Кто был на причале в десять вечера?",
@@ -2187,24 +2294,24 @@
       "who": "H",
       "de": "Moin! Ich bin Hauke. Ich komme aus Kiel, aber ich wohne jetzt in Hamburg.",
       "ru": "Привет! Я Хауке. Я из Киля, но сейчас живу в Гамбурге.",
-      "audio": "audio/6b5e0851e5e1.m4a"
+      "audio": "audio/6599bc11a405.m4a"
      },
      {
       "kind": "quote",
       "who": "L",
       "de": "Moin! Wir sind Lars und Merle. Wir wohnen in Holtenau.",
       "ru": "Привет! Мы Ларс и Мерле. Мы живём в Хольтенау.",
-      "audio": "audio/067cb591e555.m4a"
+      "audio": "audio/1c2b210ac548.m4a"
      }
     ],
-    "question": "Кто взял «Шпротту»?",
+    "question": "Кого нужно расспросить первым по этим уликам?",
     "options": [
      "Хауке",
      "Ларс и Мерле",
      "Фрауке из киоска"
     ],
     "answer": 1,
-    "right": "Сходится всё: в записке *wir* — авторов двое, как Ларса и Мерле. Шлюпка в Хольтенау, а они *wohnen in Holtenau* — живут там. А Хауке *kommt aus Kiel* — родом из Киля, но *wohnt in Hamburg*: живёт он в Гамбурге.",
+    "right": "Первыми расспросим Ларса и Мерле: в записке *wir* — авторов несколько. Шлюпка в Хольтенау, а они *wohnen in Holtenau* — живут там. А Хауке *kommt aus Kiel* — родом из Киля, но *wohnt in Hamburg*: живёт он в Гамбурге. Это зацепки для разговора, а не доказательство: жить в Хольтенау может и кто-то ещё. Что случилось, узнаем из их объяснения.",
     "wrong": [
      "*Ich komme aus Kiel* значит «я родом из Киля», а не «я живу в Киле». Живёт Хауке в Гамбурге: *ich wohne jetzt in Hamburg*. И он один, а в записке *wir*.",
      null,
@@ -2212,7 +2319,159 @@
     ]
    }
   ],
-  "ending": "Ларс и Мерле во всём признаются: они тренировались к Кильской неделе, ночью поднялся ветер, и они оставили «Шпротту» у шлюзов в Хольтенау. Утром хотели всё объяснить — отсюда вежливое *Sind Sie morgen um neun hier?* Йенсен ворчит, но прощает. Дело закрыто… почти. Вечером у клуба крутится незнакомец в куртке Kieler Woche и говорит Йенсену: *Moin! Ich wohnen in Kiel.* Кильцы так не скажут — правильно *ich wohne*. Кто он? Тренироваться ловить таких — в игре «Шпион» в тренажёре, продолжение дела — в следующей теме."
+  "ending": "Ларс и Мерле во всём признаются: они тренировались к Кильской неделе, ночью поднялся ветер, и они оставили «Шпротту» у шлюзов в Хольтенау. Утром хотели всё объяснить — отсюда вежливое *Sind Sie morgen um neun hier?* Йенсен ворчит, но прощает. Дело закрыто… почти. Вечером у клуба крутится незнакомец в куртке Kieler Woche и говорит Йенсену: *Moin! Ich wohnen in Kiel.* Правильно *ich wohne*: его рассказ стоит проверить. Ошибка сама по себе не делает человека шпионом — ошибаются и ученики. Кто он? Тренироваться ловить таких — в игре «Шпион» в тренажёре, продолжение дела — в следующей теме."
+ },
+ "adventure": {
+  "kind": "crew",
+  "title": "Соберите команду",
+  "intro": "До Kieler Woche ещё есть время. Хауке собирает друзей для прогулки на «Шпротте», но карточки команды пока пустые. Познакомьтесь с каждым, разложите сведения, найдите помощника, подготовьте вопрос Йенсену и языковые бейджи для знакомства.",
+  "origins": [
+   "Kasachstan",
+   "Argentinien",
+   "Türkei",
+   "Kiel",
+   "Hamburg"
+  ],
+  "places": [
+   "Gaarden",
+   "Holtenau",
+   "Holtenauer Straße",
+   "Kiel",
+   "Hamburg"
+  ],
+  "members": [
+   {
+    "id": "dana",
+    "name": "Dana",
+    "origin": "Kasachstan",
+    "home": "Gaarden",
+    "quotes": [
+     {
+      "de": "Ich komme aus Kasachstan. Aber ich wohne jetzt hier in Kiel, in Gaarden.",
+      "audio": "audio/67a0bf93ace8.m4a",
+      "name": "Dana"
+     }
+    ]
+   },
+   {
+    "id": "mateo",
+    "name": "Mateo",
+    "origin": "Argentinien",
+    "home": "Holtenau",
+    "quotes": [
+     {
+      "de": "Ich komme aus Argentinien, aus Buenos Aires. Und du?",
+      "audio": "audio/ac4ac82ef638.m4a",
+      "name": "Mateo"
+     },
+     {
+      "de": "Ich wohne auch in Kiel, in Holtenau! Welche Sprachen sprichst du?",
+      "audio": "audio/4e602b4965b5.m4a",
+      "name": "Mateo"
+     }
+    ]
+   },
+   {
+    "id": "elif",
+    "name": "Elif",
+    "origin": "Türkei",
+    "home": "Holtenauer Straße",
+    "quotes": [
+     {
+      "de": "Aus der Türkei, aus Izmir.",
+      "audio": "audio/85b8b886791d.m4a",
+      "name": "Elif"
+     },
+     {
+      "de": "In Kiel, in der Holtenauer Straße.",
+      "audio": "audio/dd537e5feb50.m4a",
+      "name": "Elif"
+     }
+    ]
+   },
+   {
+    "id": "hauke",
+    "name": "Hauke",
+    "origin": "Kiel",
+    "home": "Hamburg",
+    "quotes": [
+     {
+      "de": "Moin! Ich bin Hauke. Ich komme aus Kiel, aber ich wohne jetzt in Hamburg.",
+      "audio": "audio/6599bc11a405.m4a",
+      "name": "Hauke"
+     }
+    ]
+   }
+  ],
+  "contact": {
+   "question": "Хауке занят. Кто из команды живёт в Holtenau? Найдите этого человека по собранным карточкам: он поможет встретиться с Йенсеном и найти лодку.",
+   "answer": "mateo",
+   "success": "Матео поможет с лодкой, вопрос для Йенсена готов, а языковые бейджи Даны собраны. Вы сможете познакомить друзей друг с другом. В следующей теме пригодятся числа: нужно будет понять номер места и позвонить Дане.",
+   "wrong": "Здесь нужен не город, откуда человек родом, а место, где он живёт. Посмотрите на поле Wo? в карточках команды."
+  },
+  "challenges": [
+   {
+    "id": "jensen-question",
+    "kind": "order",
+    "title": "Первое знакомство с Йенсеном",
+    "intro": "Матео знакомит вас с начальником гавани. Вы хотите спросить Йенсена, откуда он родом. Вы ещё не знакомы — соберите вежливый вопрос на «Вы».",
+    "success": "*Woher kommen Sie?* — вежливый вопрос готов. Йенсен улыбается: знакомство началось!",
+    "wrong": "Сначала вопросительное слово «откуда», затем глагол, затем вежливое местоимение. Форма глагола с *Sie* — *kommen*.",
+    "tokens": [
+     "Woher",
+     "kommen",
+     "Sie?"
+    ],
+    "label": "Ваш вопрос"
+   },
+   {
+    "id": "dana-languages",
+    "kind": "pack",
+    "title": "Языковые бейджи для Даны",
+    "intro": "На встрече друзья будут искать собеседников по языковым бейджам. Послушайте Дану и прикрепите к её карточке все языки, которые она назвала. Даже «немного» — повод попробовать поговорить.",
+    "success": "Бейджи на месте! Дана сможет найти собеседников на казахском, русском, английском и немного на немецком. Команда готова к знакомству.",
+    "wrong": "Нужны все языки из реплики Даны, включая *ein bisschen Deutsch*. Испанский назвал Матео, турецкий в этой реплике не звучит.",
+    "quotes": [
+     {
+      "de": "Kasachisch, Russisch, Englisch und ein bisschen Deutsch.",
+      "audio": "audio/a956fbf80661.m4a",
+      "name": "Dana"
+     }
+    ],
+    "options": [
+     {
+      "id": "kasachisch",
+      "label": "Kasachisch"
+     },
+     {
+      "id": "russisch",
+      "label": "Russisch"
+     },
+     {
+      "id": "englisch",
+      "label": "Englisch"
+     },
+     {
+      "id": "deutsch",
+      "label": "Deutsch"
+     },
+     {
+      "id": "spanisch",
+      "label": "Spanisch"
+     },
+     {
+      "id": "turkisch",
+      "label": "Türkisch"
+     }
+    ],
+    "answer": [
+     "kasachisch",
+     "russisch",
+     "englisch",
+     "deutsch"
+    ]
+   }
+  ]
  },
  "spy": [
   {

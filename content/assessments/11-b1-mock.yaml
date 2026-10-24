@@ -1,0 +1,1216 @@
+id: b1-mock
+level: b1
+mode: mock
+title: Авторский пробник Zertifikat Deutsch / telc Deutsch B1
+intro: Полная самостоятельная попытка на новых текстах и записях. Письмо и парные ситуации
+  проверяют перенос навыков; закрытые ответы считаются отдельно. Разбор откроется после
+  завершения.
+sections:
+  - id: reading
+    title: Lesen und Sprachbausteine
+    minutes: 90
+    taskIds:
+      - headlines
+      - article
+      - ads
+      - gaps1
+      - gaps2
+  - id: listening
+    title: Hören
+    minutes: 30
+    taskIds:
+      - voices
+      - conversation
+      - notices
+  - id: writing
+    title: Schreiben
+    minutes: 30
+    taskIds:
+      - write
+  - id: preparation
+    title: Vorbereitung auf das Sprechen
+    minutes: 20
+    taskIds:
+      - prepareTopic
+      - preparePlan
+  - id: speaking
+    title: Sprechen · парная практика
+    minutes: 15
+    taskIds:
+      - intro
+      - topic
+      - plan
+tasks:
+  headlines:
+    kind: worksheet
+    part: b1-lesen-1
+    format: matching
+    uniqueOptions: true
+    title: Lesen 1 · Fünf Texte
+    text: >-
+      1) In einem Nachbarschaftstreff treffen sich einmal im Monat Menschen mit kaputten
+      Alltagsgegenständen. Freiwillige schauen mit den Besuchern nach einer möglichen Lösung.
+      Es geht nicht darum, dass alles sofort wieder funktioniert. Die Gäste sollen auch
+      verstehen, wie man ein Problem beschreibt und welche Hilfe nötig ist. Eine Anmeldung ist
+      für kleine Gegenstände nicht nötig; bei größeren Dingen fragt man vorher nach. Besonders
+      beliebt sind die Gespräche zwischen Menschen, die sich sonst selten begegnen.
+
+
+      2) Ein Lernkreis hat seinen Treffpunkt im Sommer nach draußen verlegt. Einmal in der
+      Woche gehen die Teilnehmenden durch ihr Viertel und sprechen über Alltagsthemen. Niemand
+      hält einen langen Vortrag. Stattdessen bekommt jede Person eine kleine Frage und sucht
+      unterwegs ein Beispiel. Bei Regen trifft sich die Gruppe im Lesecafé. Das Angebot ersetzt
+      keinen vollständigen Sprachkurs, hilft den Mitgliedern aber, bekannte Wörter in echten
+      Gesprächen zu benutzen.
+
+
+      3) Für eine kleine Gruppe beginnt der Sonntag mit einer Runde durch den Park. Die
+      Teilnehmenden haben sehr unterschiedliche Erfahrungen mit Bewegung. Deshalb wird die
+      Strecke so gewählt, dass man sowohl langsam gehen als auch an mehreren Stellen warten
+      kann. Ein Wettbewerb ist nicht geplant. Nach der Runde sitzen viele noch zusammen. Für
+      einige ist das Gespräch wichtiger als die Länge des Weges. Neue Menschen können ohne
+      besonderen Leistungsnachweis mitkommen.
+
+
+      4) In einer kleinen Firma können Beschäftigte seit diesem Jahr eine Stunde pro Woche für
+      eine Weiterbildung nutzen. Die Themen werden vorher mit der Leitung vereinbart. Einige
+      lernen ein Computerprogramm, andere üben berufliche Kommunikation. Die Zeit liegt
+      innerhalb des Arbeitstags. Ein Mitarbeiter berichtet, dass er dadurch regelmäßiger lernt,
+      ohne jeden Abend noch einen Kurs zu besuchen. Welche Angebote im nächsten Jahr
+      hinzukommen, ist noch offen; zuerst werden die bisherigen Erfahrungen gesammelt.
+
+
+      5) Eine Familie sortiert nach einer gemeinsamen Reise ihre Fotos. Dabei merkt sie, dass
+      dieselben Bilder sehr verschiedene Erinnerungen auslösen. Die Tochter denkt an ein
+      Gespräch im Zug, ihr Vater an den Blick aus dem Fenster. Sie schreiben kurze persönliche
+      Texte neben die Bilder, ohne sich auf eine einzige richtige Geschichte einigen zu müssen.
+      Unklare Angaben wie Eintrittspreise werden nicht ergänzt. Das Album soll ihre Erfahrungen
+      zeigen und keine allgemeine Reisebeschreibung ersetzen.
+    situation: Ordnen Sie jedem Text eine Überschrift zu. Jede Überschrift höchstens einmal.
+    questions:
+      - prompt: Text 1
+        options:
+          - Gemeinsam reparieren und dabei lernen
+          - Sprachpraxis ohne Unterrichtsraum
+          - Bewegung und Begegnung im Viertel
+          - Lernen während der Arbeitszeit
+          - Verschiedene Erinnerungen an dieselbe Reise
+          - Eine Garantie für jedes kaputte Gerät
+          - Ein neuer Sprachkurs nur im Internet
+          - Eine Gruppe bereitet einen Wettkampf vor
+          - Alle Beschäftigten müssen abends lernen
+          - Eine Familie löscht alle alten Bilder
+        answers:
+          - Gemeinsam reparieren und dabei lernen
+      - prompt: Text 2
+        options:
+          - Gemeinsam reparieren und dabei lernen
+          - Sprachpraxis ohne Unterrichtsraum
+          - Bewegung und Begegnung im Viertel
+          - Lernen während der Arbeitszeit
+          - Verschiedene Erinnerungen an dieselbe Reise
+          - Eine Garantie für jedes kaputte Gerät
+          - Ein neuer Sprachkurs nur im Internet
+          - Eine Gruppe bereitet einen Wettkampf vor
+          - Alle Beschäftigten müssen abends lernen
+          - Eine Familie löscht alle alten Bilder
+        answers:
+          - Sprachpraxis ohne Unterrichtsraum
+      - prompt: Text 3
+        options:
+          - Gemeinsam reparieren und dabei lernen
+          - Sprachpraxis ohne Unterrichtsraum
+          - Bewegung und Begegnung im Viertel
+          - Lernen während der Arbeitszeit
+          - Verschiedene Erinnerungen an dieselbe Reise
+          - Eine Garantie für jedes kaputte Gerät
+          - Ein neuer Sprachkurs nur im Internet
+          - Eine Gruppe bereitet einen Wettkampf vor
+          - Alle Beschäftigten müssen abends lernen
+          - Eine Familie löscht alle alten Bilder
+        answers:
+          - Bewegung und Begegnung im Viertel
+      - prompt: Text 4
+        options:
+          - Gemeinsam reparieren und dabei lernen
+          - Sprachpraxis ohne Unterrichtsraum
+          - Bewegung und Begegnung im Viertel
+          - Lernen während der Arbeitszeit
+          - Verschiedene Erinnerungen an dieselbe Reise
+          - Eine Garantie für jedes kaputte Gerät
+          - Ein neuer Sprachkurs nur im Internet
+          - Eine Gruppe bereitet einen Wettkampf vor
+          - Alle Beschäftigten müssen abends lernen
+          - Eine Familie löscht alle alten Bilder
+        answers:
+          - Lernen während der Arbeitszeit
+      - prompt: Text 5
+        options:
+          - Gemeinsam reparieren und dabei lernen
+          - Sprachpraxis ohne Unterrichtsraum
+          - Bewegung und Begegnung im Viertel
+          - Lernen während der Arbeitszeit
+          - Verschiedene Erinnerungen an dieselbe Reise
+          - Eine Garantie für jedes kaputte Gerät
+          - Ein neuer Sprachkurs nur im Internet
+          - Eine Gruppe bereitet einen Wettkampf vor
+          - Alle Beschäftigten müssen abends lernen
+          - Eine Familie löscht alle alten Bilder
+        answers:
+          - Verschiedene Erinnerungen an dieselbe Reise
+  article:
+    kind: worksheet
+    part: b1-lesen-2
+    format: article
+    title: Lesen 2 · Lernraum am Platz
+    text: >-
+      Als ein kleiner Laden im Viertel leer stand, hatte Mira zunächst eine klare Idee: Dort
+      sollten regelmäßig große Vorträge stattfinden. Sie fragte die Nachbarn nach Themen. Die
+      Antworten überraschten sie. Viele wünschten sich keinen weiteren Ort, an dem man nur
+      zuhört. Sie wollten kleine praktische Aufgaben lösen und mit anderen ins Gespräch kommen.
+      Deshalb änderte Mira den Plan.
+
+
+      Heute heißt der Ort Lernraum am Platz. Ein Verein übernahm einen Teil der ersten Miete,
+      und Freiwillige brachten Tische und Stühle mit. Für ein dauerhaftes Angebot musste die
+      Gruppe trotzdem vorsichtig rechnen. Die Arbeit der Helfer wurde nicht als unbegrenzt
+      verfügbar eingeplant. Jede Person nennt im Voraus, wann sie Zeit hat.
+
+
+      Dienstags am Nachmittag kann man ohne Anmeldung vorbeikommen. Es gibt eine ruhige Ecke
+      für eigene Aufgaben und einen Tisch für kurze Fragen. Donnerstags am Abend werden kleine
+      Workshops angeboten. Dafür meldet man sich vorher an, weil die Zahl der Plätze begrenzt
+      ist. Ein Workshop über digitale Kommunikation war schnell voll. Die Besucher wollten vor
+      allem wissen, wie sie eine verständliche Nachricht schreiben und Dateien ordentlich
+      benennen können.
+
+
+      Ein Helfer erzählt von einer Teilnehmerin, die eine E-Mail für einen Kurs schreiben
+      wollte. Er schrieb die Nachricht nicht für sie. Gemeinsam ordneten sie die Informationen,
+      dann formulierte sie selbst. Am Ende las sie den Text laut und prüfte, ob ihre Fragen
+      wirklich verständlich waren. Für Mira zeigt dieses Beispiel, was der Lernraum leisten
+      soll: Unterstützung beim eigenen Handeln statt einer fertigen Lösung für jede Person.
+
+
+      Nicht alles funktionierte sofort. Während manche Besucher in Ruhe lesen wollten,
+      diskutierten andere laut. Nach einer Rückmeldung teilte die Gruppe den Raum deutlicher in
+      zwei Bereiche. Die neue Ordnung wurde zunächst zwei Wochen ausprobiert. Danach fanden die
+      meisten Besucher die Situation angenehmer.
+
+
+      Für die Zukunft gibt es Ideen: Manche wünschen sich eine Öffnung am Samstag. Das ist aber
+      noch nicht beschlossen. Zuerst braucht die Gruppe zusätzliche Helfer, die regelmäßig Zeit
+      haben. Mira möchte lieber ein kleines verlässliches Angebot erhalten, als zu viel zu
+      versprechen. Interessierte können beim nächsten offenen Nachmittag Fragen stellen und
+      eine mögliche Aufgabe kennenlernen.
+    questions:
+      - prompt: Warum änderte Mira ihren ersten Plan?
+        options:
+          - Die Nachbarn wollten eher praktisch mitmachen.
+          - Es durfte keine Vorträge im Viertel geben.
+          - Der Laden war schon wieder vermietet.
+        answers:
+          - Die Nachbarn wollten eher praktisch mitmachen.
+      - prompt: Wie wurde der Anfang möglich?
+        options:
+          - Alle Helfer mussten jeden Tag da sein.
+          - Ein Verein half bei der Miete, Freiwillige brachten Möbel.
+          - Die Stadt versprach unbegrenztes Geld.
+        answers:
+          - Ein Verein half bei der Miete, Freiwillige brachten Möbel.
+      - prompt: Wann ist eine Anmeldung nötig?
+        options:
+          - Für jeden offenen Dienstag
+          - Nur für eine Frage am Tisch
+          - Für die kleinen Workshops am Donnerstag
+        answers:
+          - Für die kleinen Workshops am Donnerstag
+      - prompt: Wie half der Helfer beim Schreiben der E-Mail?
+        options:
+          - Er unterstützte die Planung, die Teilnehmerin schrieb selbst.
+          - Er schrieb und verschickte alles ohne die Teilnehmerin.
+          - Er gab nur eine fertige Nachricht zum Kopieren.
+        answers:
+          - Er unterstützte die Planung, die Teilnehmerin schrieb selbst.
+      - prompt: Was gilt für die gewünschte Samstagsöffnung?
+        options:
+          - Sie ersetzt alle bisherigen Öffnungstage.
+          - Sie hängt noch von zusätzlichen Helfern ab.
+          - Sie ist ab nächster Woche fest beschlossen.
+        answers:
+          - Sie hängt noch von zusätzlichen Helfern ab.
+  ads:
+    kind: worksheet
+    part: b1-lesen-3
+    format: matching
+    uniqueOptions: true
+    reusableOptions:
+      - x
+    title: Lesen 3 · Zehn Situationen
+    text: >-
+      a) Deutsch nach der Arbeit. Dienstag und Donnerstag 18:30–20 Uhr, kleine Gruppe für
+      Alltagsgespräche. Monatsbeitrag 60 Euro. Unterricht vor Ort, keine Online-Teilnahme.
+
+
+      b) Computerhilfe am Montag.10–12 Uhr werden einzelne Fragen am eigenen Laptop besprochen.
+      Für Anfänger geeignet. Keine Programmierkurse und kein Verkauf von Geräten.
+
+
+      c) Ruhig lernen in der Bibliothek. Sonntag 14–17 Uhr ist ein Arbeitsraum kostenlos
+      geöffnet. Bitte leise arbeiten. Es gibt dort keinen Unterricht und keine Kinderbetreuung.
+
+
+      d) Gemeinsam vegetarisch kochen. Freitag 18 Uhr, 18 Euro einschließlich Zutaten. Alle
+      arbeiten mit. Bitte vorher anmelden; nur Essen abholen ist nicht möglich.
+
+
+      e) Familienbilder im Viertel. Eine Fotoausstellung am Samstag zeigt Alltagserinnerungen
+      verschiedener Familien. Kinder können mit ihren Eltern kommen. Die Eltern bleiben während
+      des Besuchs dabei.
+
+
+      f) Schreibwerkstatt am Samstag.10–12 Uhr, höchstens sechs Personen. Wir üben persönliche
+      Briefe und E-Mails. Keine amtliche Übersetzung und keine Beratung zu Formularen.
+
+
+      g) Fahrradtag am Sonntag.11–14 Uhr werden Fahrräder gemeinsam geprüft. Freiwillige
+      erklären die Arbeitsschritte. Kein Autoservice. Bei größeren Problemen ist eine spätere
+      Werkstatt nötig.
+
+
+      h) Geschichten von der Küste. Mittwoch 19 Uhr, Vortrag mit Bildern, Eintritt 8 Euro. Die
+      Veranstaltung findet im Saal statt. Es gibt keinen Spaziergang und keine Bootsfahrt.
+
+
+      i) Deutsch beim Spaziergang. Sonntag 10–11:30 Uhr, kostenlos. Wir gehen im Viertel und
+      sprechen in kleinen Gruppen. Vor Ort, keine digitale Übertragung. Bei Regen wird der
+      Treffpunkt rechtzeitig bekannt gegeben.
+
+
+      j) Online ins Gespräch kommen. Montag 20–21 Uhr. Menschen aus verschiedenen Städten üben
+      Deutsch von zu Hause aus. Ein Computer oder Handy mit Internet ist nötig.
+
+
+      k) Eine Kamera fürs Wochenende. Abholung Freitag, Rückgabe Montag. Leihpreis 35 Euro,
+      zusätzlich 100 Euro Pfand. Nur Verleih, keine Reparatur eigener Kameras.
+
+
+      l) Theater für Erwachsene. Samstag 15 Uhr, gemeinsame Leseprobe. Anfänger sind
+      willkommen. Keine Betreuung für kleine Kinder.
+
+
+      x) Kein passendes Angebot. Alle Anzeigen beschreiben erfundene Prüfungsbedingungen.
+    situation: Wählen Sie für jede Situation eine Anzeige. Jede Anzeige höchstens einmal; x darf
+      mehrmals verwendet werden.
+    questions:
+      - prompt: Sie arbeiten bis 18 Uhr und möchten dienstags danach einen Deutschkurs besuchen.
+        options:
+          - a
+          - b
+          - c
+          - d
+          - e
+          - f
+          - g
+          - h
+          - i
+          - j
+          - k
+          - l
+          - x
+        answers:
+          - a
+      - prompt: Sie möchten Montagvormittag Fragen zum eigenen Laptop klären.
+        options:
+          - a
+          - b
+          - c
+          - d
+          - e
+          - f
+          - g
+          - h
+          - i
+          - j
+          - k
+          - l
+          - x
+        answers:
+          - b
+      - prompt: Sie suchen sonntagnachmittags einen kostenlosen stillen Platz zum Lernen.
+        options:
+          - a
+          - b
+          - c
+          - d
+          - e
+          - f
+          - g
+          - h
+          - i
+          - j
+          - k
+          - l
+          - x
+        answers:
+          - c
+      - prompt: Sie möchten Freitagabend vegetarisch mitkochen und höchstens 20 Euro bezahlen.
+        options:
+          - a
+          - b
+          - c
+          - d
+          - e
+          - f
+          - g
+          - h
+          - i
+          - j
+          - k
+          - l
+          - x
+        answers:
+          - d
+      - prompt: Sie möchten Samstagvormittag persönliche Briefe üben.
+        options:
+          - a
+          - b
+          - c
+          - d
+          - e
+          - f
+          - g
+          - h
+          - i
+          - j
+          - k
+          - l
+          - x
+        answers:
+          - f
+      - prompt: Sie brauchen am Sonntag Hilfe bei einem Fahrrad.
+        options:
+          - a
+          - b
+          - c
+          - d
+          - e
+          - f
+          - g
+          - h
+          - i
+          - j
+          - k
+          - l
+          - x
+        answers:
+          - g
+      - prompt: Sie möchten Sonntagvormittag kostenlos beim Gehen Deutsch sprechen.
+        options:
+          - a
+          - b
+          - c
+          - d
+          - e
+          - f
+          - g
+          - h
+          - i
+          - j
+          - k
+          - l
+          - x
+        answers:
+          - i
+      - prompt: Sie wohnen in einer anderen Stadt und möchten Montagabend von zu Hause sprechen.
+        options:
+          - a
+          - b
+          - c
+          - d
+          - e
+          - f
+          - g
+          - h
+          - i
+          - j
+          - k
+          - l
+          - x
+        answers:
+          - j
+      - prompt: Sie suchen für Samstag kostenlose Betreuung für Ihr kleines Kind.
+        options:
+          - a
+          - b
+          - c
+          - d
+          - e
+          - f
+          - g
+          - h
+          - i
+          - j
+          - k
+          - l
+          - x
+        answers:
+          - x
+      - prompt: Sie brauchen am Sonntag einen Reparaturdienst für Ihr Auto.
+        options:
+          - a
+          - b
+          - c
+          - d
+          - e
+          - f
+          - g
+          - h
+          - i
+          - j
+          - k
+          - l
+          - x
+        answers:
+          - x
+  gaps1:
+    kind: worksheet
+    part: b1-sprachbausteine-1
+    format: cloze
+    title: Sprachbausteine 1 · Ein Brief nach dem Kurs
+    text: Liebe Nora, ich habe mich für den neuen Kurs entschieden, [[1]] ich im Alltag mehr
+      sprechen möchte. Unser Lehrer ist ein Mann, [[2]] viele praktische Beispiele kennt. Er
+      versucht, uns zum Erzählen [[3]] bringen. Vor dem ersten Abend [[4]] ich die Anmeldung
+      schon abgeschickt. [[5]] ich am Anfang nervös war, gefiel mir die kleine Gruppe. Ich
+      arbeitete [[6]] zwei anderen Teilnehmenden zusammen. Das sind Menschen, mit [[7]] ich
+      auch nach dem Kurs üben kann. Nächste Woche [[8]] ich eine kurze Geschichte über meinen
+      Alltag erzählen. Ich hoffe, [[9]] wir uns bald sehen. Wir freuen [[10]] auf deinen
+      Besuch. Liebe Grüße, Mira
+    questions:
+      - prompt: Lücke 1
+        options:
+          - obwohl
+          - weil
+          - trotzdem
+        answers:
+          - weil
+      - prompt: Lücke 2
+        options:
+          - den
+          - dem
+          - der
+        answers:
+          - der
+      - prompt: Lücke 3
+        options:
+          - zu
+          - um
+          - für
+        answers:
+          - zu
+      - prompt: Lücke 4
+        options:
+          - wurde
+          - hatte
+          - war
+        answers:
+          - hatte
+      - prompt: Lücke 5
+        options:
+          - Trotzdem
+          - Deshalb
+          - Obwohl
+        answers:
+          - Obwohl
+      - prompt: Lücke 6
+        options:
+          - mit
+          - für
+          - um
+        answers:
+          - mit
+      - prompt: Lücke 7
+        options:
+          - die
+          - denen
+          - den
+        answers:
+          - denen
+      - prompt: Lücke 8
+        options:
+          - wird
+          - werden
+          - werde
+        answers:
+          - werde
+      - prompt: Lücke 9
+        options:
+          - dass
+          - weil
+          - ob
+        answers:
+          - dass
+      - prompt: Lücke 10
+        options:
+          - unser
+          - uns
+          - wir
+        answers:
+          - uns
+  gaps2:
+    kind: worksheet
+    part: b1-sprachbausteine-2
+    format: cloze
+    uniqueOptions: true
+    title: Sprachbausteine 2 · Eine Kursanfrage
+    text: Sehr geehrte Frau Brandt, ich interessiere mich [[1]] Ihren Kurs und warte [[2]] weitere
+      Informationen. Ich möchte [[3]] anderen Teilnehmenden lernen. Es ist mir wichtig,
+      pünktlich [[4]] kommen. Bitte teilen Sie mir mit, [[5]] noch ein Platz frei ist. Der
+      Abendtermin passt, [[6]] ich tagsüber arbeite. Kann ich vor der Anmeldung kurz mit [[7]]
+      Kursleiter sprechen? Ich hätte gern [[8]] Rückmeldung zum Niveau. Der ursprüngliche
+      Termin [[9]] letzte Woche geändert; das habe ich in Ihrer Nachricht gelesen. Ich [[10]]
+      gern wissen, wann der nächste Kurs beginnt. Mit freundlichen Grüßen, Mira
+    questions:
+      - prompt: Lücke 1
+        options:
+          - für
+          - auf
+          - mit
+          - zu
+          - ob
+          - weil
+          - dem
+          - eine
+          - wurde
+          - würde
+          - aber
+          - ohne
+          - den
+          - als
+          - haben
+        answers:
+          - für
+      - prompt: Lücke 2
+        options:
+          - für
+          - auf
+          - mit
+          - zu
+          - ob
+          - weil
+          - dem
+          - eine
+          - wurde
+          - würde
+          - aber
+          - ohne
+          - den
+          - als
+          - haben
+        answers:
+          - auf
+      - prompt: Lücke 3
+        options:
+          - für
+          - auf
+          - mit
+          - zu
+          - ob
+          - weil
+          - dem
+          - eine
+          - wurde
+          - würde
+          - aber
+          - ohne
+          - den
+          - als
+          - haben
+        answers:
+          - mit
+      - prompt: Lücke 4
+        options:
+          - für
+          - auf
+          - mit
+          - zu
+          - ob
+          - weil
+          - dem
+          - eine
+          - wurde
+          - würde
+          - aber
+          - ohne
+          - den
+          - als
+          - haben
+        answers:
+          - zu
+      - prompt: Lücke 5
+        options:
+          - für
+          - auf
+          - mit
+          - zu
+          - ob
+          - weil
+          - dem
+          - eine
+          - wurde
+          - würde
+          - aber
+          - ohne
+          - den
+          - als
+          - haben
+        answers:
+          - ob
+      - prompt: Lücke 6
+        options:
+          - für
+          - auf
+          - mit
+          - zu
+          - ob
+          - weil
+          - dem
+          - eine
+          - wurde
+          - würde
+          - aber
+          - ohne
+          - den
+          - als
+          - haben
+        answers:
+          - weil
+      - prompt: Lücke 7
+        options:
+          - für
+          - auf
+          - mit
+          - zu
+          - ob
+          - weil
+          - dem
+          - eine
+          - wurde
+          - würde
+          - aber
+          - ohne
+          - den
+          - als
+          - haben
+        answers:
+          - dem
+      - prompt: Lücke 8
+        options:
+          - für
+          - auf
+          - mit
+          - zu
+          - ob
+          - weil
+          - dem
+          - eine
+          - wurde
+          - würde
+          - aber
+          - ohne
+          - den
+          - als
+          - haben
+        answers:
+          - eine
+      - prompt: Lücke 9
+        options:
+          - für
+          - auf
+          - mit
+          - zu
+          - ob
+          - weil
+          - dem
+          - eine
+          - wurde
+          - würde
+          - aber
+          - ohne
+          - den
+          - als
+          - haben
+        answers:
+          - wurde
+      - prompt: Lücke 10
+        options:
+          - für
+          - auf
+          - mit
+          - zu
+          - ob
+          - weil
+          - dem
+          - eine
+          - wurde
+          - würde
+          - aber
+          - ohne
+          - den
+          - als
+          - haben
+        answers:
+          - würde
+  voices:
+    kind: worksheet
+    part: b1-hoeren-1
+    format: article
+    title: Hören 1 · Fünf Meinungen zum Lernen
+    situation: Lesen Sie die fünf Aussagen. Hören Sie jede Stellungnahme einmal.
+    recordings:
+      - voice: Anna
+        text: Ich lerne lieber jeden Tag eine kurze Zeit als nur einmal am Wochenende sehr lange. Zehn
+          Minuten mit einer konkreten Aufgabe schaffe ich auch an einem vollen Tag. Dabei
+          möchte ich etwas benutzen, zum Beispiel eine Nachricht verstehen oder eine Frage
+          stellen. Wenn ein Tag ausfällt, mache ich am nächsten weiter, ohne den ganzen Plan
+          aufzugeben.
+      - voice: Reed
+        text: Allein fange ich manchmal schnell an, höre aber auch schnell wieder auf. In einer kleinen
+          Gruppe bleibe ich eher dabei. Mir hilft besonders, dass ich eine Rückfrage stellen
+          kann. Trotzdem möchte ich nicht, dass die anderen alles für mich erledigen. Ich
+          versuche zuerst selbst eine Lösung und vergleiche sie danach mit den Ideen der
+          Gruppe.
+      - voice: Sandy
+        text: Online-Angebote passen gut zu meinem wechselnden Alltag. Ich kann einen Teil der Aufgaben
+          zu Hause erledigen und spare den Weg. Ganz ohne feste Termine funktioniert es bei mir
+          aber nicht. Deshalb habe ich sowohl freie Übungen als auch einen wöchentlichen
+          Gesprächstermin. Die Möglichkeit, flexibel zu lernen, ersetzt für mich keine eigene
+          Planung.
+      - voice: Flo
+        text: Ich höre gern kurze Gespräche in der Sprache, die ich lerne. Früher wollte ich jedes Wort
+          übersetzen, bevor ich weiterhörte. Jetzt frage ich zuerst nach dem Thema und den
+          wichtigen Angaben. Unbekannte Wörter prüfe ich später, wenn sie für die Aufgabe
+          wirklich nötig sind. Dadurch merke ich besser, was ich bereits verstehen kann.
+      - voice: Grandpa
+        text: Beim Sprechen habe ich lange auf den perfekten Satz gewartet. Das half mir wenig, denn
+          oft sagte ich dann gar nichts. Heute finde ich eine verständliche Rückmeldung
+          wichtiger. Wenn jemand nachfragt, sehe ich genauer, was unklar war. Eine korrigierte
+          Form versuche ich danach gleich in einem eigenen Beispiel zu verwenden.
+    questions:
+      - prompt: Die erste Person bevorzugt kurze regelmäßige Übung.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+      - prompt: Die zweite Person lernt grundsätzlich lieber ohne andere Menschen.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Die dritte Person verbindet flexible Aufgaben mit einem festen Termin.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+      - prompt: Die vierte Person übersetzt weiterhin jedes Wort vor dem Weiterhören.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Die fünfte Person nutzt Rückfragen, um das eigene Sprechen zu verbessern.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+  conversation:
+    kind: worksheet
+    part: b1-hoeren-2
+    format: article
+    title: Hören 2 · Gespräch mit Lea
+    dialogue: weiterbildung
+    situation: Lesen Sie die zehn Aussagen. Hören Sie das gesamte Gespräch zweimal.
+    questions:
+      - prompt: Lea arbeitet normalerweise an fünf Tagen pro Woche.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+      - prompt: Die Firma verlangte von ihr die Anmeldung zu genau diesem Kurs.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Der Unterricht war montags und mittwochs am Abend.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+      - prompt: Alle acht Termine bestanden nur aus allein angesehenen Videos.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Lea achtet bei Nachrichten jetzt stärker auf Ziel und gewünschte Antwort.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+      - prompt: Heute sagt Lea lieber immer, dass alles klar ist, statt nachzufragen.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Die Firma bezahlte den ganzen Kurs.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Nach einer fehlenden Woche halfen Notizen einer anderen Teilnehmerin.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+      - prompt: Der Kurs führte automatisch zu einer neuen Stelle.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Der nächste Workshop ist bereits verbindlich gebucht.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+  notices:
+    kind: worksheet
+    part: b1-hoeren-3
+    format: article
+    title: Hören 3 · Fünf kurze Mitteilungen
+    situation: Lesen Sie die Aussagen. Hören Sie jede Mitteilung zweimal.
+    recordings:
+      - voice: Shelley
+        text: Liebe Besucherinnen und Besucher, unsere Bibliothek öffnet am kommenden Samstag wegen
+          einer internen Besprechung erst um elf Uhr statt um neun. Die Rückgabebox vor dem
+          Gebäude bleibt wie gewohnt zugänglich. Ausgeliehene Medien können Sie dort auch vor
+          der Öffnung zurückgeben. Die Änderung betrifft nur diesen Samstag; ab Montag gelten
+          wieder die normalen Zeiten.
+      - voice: Sandy
+        text: "Eine Nachricht für die Teilnehmenden des Abendkurses: Wir treffen uns heute in Raum
+          hundertacht statt in Raum zweihundertzehn. Der Beginn bleibt um achtzehn Uhr dreißig.
+          Bitte gehen Sie direkt in den neuen Raum im Erdgeschoss. Die Kursleiterin erwartet
+          Sie dort. Es ist nicht nötig, zuerst zum alten Raum zu kommen."
+      - voice: Eddy
+        text: Achtung am Bahnhof. Der Zug um siebzehn Uhr fünfundvierzig fährt heute von Gleis vier,
+          nicht von Gleis zwei. Die Abfahrtszeit bleibt unverändert. Bitte beachten Sie die
+          Anzeigen am Bahnsteig. Diese Ansage betrifft nur den genannten Zug; Informationen zu
+          anderen Verbindungen finden Sie auf der Abfahrtstafel.
+      - voice: Reed
+        text: Guten Tag, hier ist der Reparaturservice. Ihr Drucker ist morgen ab vierzehn Uhr zur
+          Abholung bereit. Heute können wir ihn noch nicht herausgeben, weil die letzte Prüfung
+          erst morgen früh abgeschlossen wird. Bringen Sie bitte den Abholschein mit. Wenn Sie
+          erst später kommen können, rufen Sie uns kurz an, damit wir einen passenden Zeitpunkt
+          vereinbaren.
+      - voice: Grandpa
+        text: Hier ist eine Mitteilung für die Gruppe des Sonntagstreffs. Wegen des erwarteten Regens
+          beginnen wir um zehn im kleinen Saal neben dem Park und nicht am Gartentor. Die
+          gemeinsame Einführung findet drinnen statt. Danach entscheiden wir, ob ein kurzer
+          Spaziergang möglich ist. Bitte informieren Sie auch die Personen, die nur den alten
+          Treffpunkt kennen.
+    questions:
+      - prompt: Die Bibliothek bleibt am Samstag den ganzen Tag geschlossen.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Der Abendkurs beginnt wegen des Raumwechsels später.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Der genannte Zug fährt von Gleis vier zur bisherigen Zeit.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+      - prompt: Der Drucker kann noch heute abgeholt werden.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Die Gruppe soll zunächst im kleinen Saal zusammenkommen.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+  write:
+    kind: message
+    part: b1-schreiben-1
+    title: Schreiben · Antwort auf eine persönliche Nachricht
+    text: Liebe Mira, wir planen einen gemeinsamen Lerntag im Nachbarschaftshaus. Möglich wäre
+      Samstag 10–15 Uhr oder Sonntag 12–17 Uhr. Wir möchten Deutsch in kleinen Gruppen benutzen
+      und eine längere gemeinsame Pause machen. Du hattest Interesse. Welcher Termin passt dir,
+      und was würdest du gern üben? Ich freue mich auch über eine Idee für die Pause. Schreib
+      mir bitte, damit ich weiterplanen kann. Liebe Grüße, Nora
+    points:
+      - Interesse am Lerntag erklären
+      - Einen Termin wählen und die Wahl begründen
+      - Einen konkreten Lernwunsch mit Beispiel nennen
+      - Eine Idee für die gemeinsame Pause und eine Rückfrage formulieren
+    situation: Behandeln Sie alle vier Punkte. Schreiben Sie einen zusammenhängenden Brief mit
+      Anrede und Gruß. Die Antwort wird nicht automatisch bewertet.
+    sample:
+      - Liebe Nora, vielen Dank für deine Nachricht. Ich hätte große Lust, gemeinsam mit euch
+        Deutsch zu üben. Ich möchte die Sprache gern in Gesprächen benutzen. Für mich passt
+        Sonntag von 12 bis 17 Uhr besser. Am Samstag bin ich vormittags beschäftigt und würde
+        einen Teil verpassen. Besonders üben möchte ich, in einem Gespräch freundlich
+        nachzufragen. Manchmal verstehe ich die Hauptidee, aber eine wichtige Einzelheit fehlt
+        mir noch. Wir könnten uns zum Beispiel gegenseitig kurze Nachrichten erklären. Für die
+        Pause schlage ich einen Spaziergang vor. Wenn es regnet, könnten wir im Haus gemeinsam
+        essen. Sollen wir etwas mitbringen? Ich freue mich auf deine Antwort. Liebe Grüße Mira
+  prepareTopic:
+    kind: card
+    part: b1-sprechen-2
+    title: Vorbereitung · Thema für Teil 2
+    theme: Lernen mit anderen
+    word: Position wiedergeben · eigene Erfahrung · Austausch
+    situation: Lesen Sie Ihre eigene Karte. Notieren Sie bei Bedarf einzelne Schlüsselwörter.
+      Bereiten Sie den Austausch vor; lesen Sie später keinen vollständigen Text vor.
+    roles: &a1
+      - title: Person A · Nora
+        text: Ich lerne gern online, weil ich den Weg zum Kursraum spare. Nach der Arbeit kann ich
+          zuerst zu Hause ankommen und dann mitmachen. Wichtig ist für mich, dass es einen
+          festen Gesprächstermin gibt. Nur fertige Videos würden mir nicht reichen. In kleinen
+          Online-Gruppen stelle ich Fragen, die ich sonst vielleicht nicht stellen würde.
+          Manchmal fehlt mir aber das Gespräch in der Pause. Deshalb treffe ich einige
+          Teilnehmende zusätzlich einmal im Monat persönlich.
+      - title: Person B · Jonas
+        text: Für mich funktioniert Lernen im Kursraum besser. Zu Hause lasse ich mich leicht ablenken
+          und beginne oft erst spät. Wenn ich zu einem festen Ort fahre, konzentriere ich mich
+          mehr auf die Aufgabe. Auch die kurzen Gespräche vor dem Unterricht helfen mir.
+          Trotzdem finde ich digitale Materialien praktisch, wenn ich etwas nachholen möchte.
+          Ich würde ungern auf beides verzichten. Entscheidend ist für mich, dass ich mit
+          anderen Menschen wirklich sprechen kann.
+  preparePlan:
+    kind: card
+    part: b1-sprechen-3
+    title: Vorbereitung · Planung für Teil 3
+    theme: Ein Ausflug für ein neues Kursmitglied
+    word: Tag · Uhrzeit · Treffpunkt · Aktivität · Pause · Aufgaben
+    situation: Ein neues Kursmitglied möchte das Viertel kennenlernen. Planen Sie gemeinsam einen
+      kleinen Ausflug am Samstag oder Sonntag. Für jede Person stehen höchstens 20 Euro zur
+      Verfügung. Museum 6 Euro, Café 8 Euro, Spaziergang kostenlos; alle Bedingungen sind erfunden.
+      Lesen Sie Ihre eigene Rolle. Überlegen Sie sich Vorschläge und mögliche Rückfragen.
+      Den gemeinsamen Plan finden Sie erst im Gespräch.
+    roles: &a2
+      - title: Person A
+        text: Sie haben Samstagvormittag Zeit, am Nachmittag müssen Sie arbeiten. Am Sonntag sind Sie
+          von 11 bis 15 Uhr frei. Sie möchten gern etwa 30 Minuten draußen gehen, aber bei
+          Regen brauchen Sie eine Möglichkeit drinnen. Sie können die Nachricht an das neue
+          Kursmitglied schreiben.
+      - title: Person B
+        text: Sie arbeiten am Samstag und haben an diesem Tag keine Zeit. Am Sonntag können Sie von 10
+          bis 14 Uhr mitkommen. Sie möchten sowohl etwas sehen als auch eine Pause machen. Sie
+          können Treffpunkt und Eintrittsbedingungen prüfen. Einigen Sie sich auch darauf, wer
+          bei schlechtem Wetter die Änderung mitteilt.
+  intro:
+    kind: card
+    part: b1-sprechen-1
+    title: Sprechen 1 · Einander kennenlernen
+    theme: Alltag, Lernen und Freizeit
+    word: Vorstellen · nachfragen · antworten · reagieren
+    situation: Stellen Sie sich kurz vor. Sprechen Sie mit Ihrem Gegenüber über Alltag, Arbeit oder
+      Lernen und ein Interesse. Stellen Sie Rückfragen und reagieren Sie auf die Antworten.
+      Halten Sie keinen vorbereiteten langen Monolog.
+  topic:
+    kind: card
+    part: b1-sprechen-2
+    title: Sprechen 2 · Online oder im Kursraum lernen?
+    theme: Lernen mit anderen
+    word: Position wiedergeben · eigene Erfahrung · Austausch
+    situation: Jede Person liest nur ihre eigene Karte. Geben Sie Ihrem Gegenüber die Position mit
+      eigenen Worten wieder. Sprechen Sie danach über Ihre Erfahrungen und Meinungen, stellen
+      Sie Fragen und reagieren Sie.
+    roles: *a1
+  plan:
+    kind: card
+    part: b1-sprechen-3
+    title: Sprechen 3 · Einen gemeinsamen Ausflug planen
+    theme: Ein Ausflug für ein neues Kursmitglied
+    word: Tag · Uhrzeit · Treffpunkt · Aktivität · Pause · Aufgaben
+    situation: Ein neues Kursmitglied möchte das Viertel kennenlernen. Planen Sie gemeinsam einen
+      kleinen Ausflug am Samstag oder Sonntag. Machen Sie Vorschläge, reagieren Sie auf Wünsche
+      und einigen Sie sich auf einen vollständigen Plan. Für jede Person stehen höchstens 20
+      Euro zur Verfügung. Museum 6 Euro, Café 8 Euro, Spaziergang kostenlos; alle Bedingungen
+      sind erfunden.
+    roles: *a2
+dialogues:
+  weiterbildung:
+    title: Eine Weiterbildung neben der Arbeit
+    ru: Учёба параллельно работе
+    place: Вымышленное экзаменационное интервью
+    people:
+      I:
+        name: Moderator
+        voice: Eddy
+      L:
+        name: Lea
+        voice: Shelley
+    lines:
+      - I: Lea, du hast neben deiner Arbeit eine Weiterbildung besucht. Wie sieht dein normaler
+          Arbeitstag aus?
+        ru: Леа, ты прошла обучение параллельно работе. Как выглядит твой обычный рабочий день?
+      - L: Ich arbeite an fünf Tagen in der Woche im Büro, meistens von acht bis sechzehn Uhr. Danach
+          möchte ich nicht jeden Abend noch lernen. Trotzdem wollte ich bei beruflichen
+          Gesprächen sicherer werden. Deshalb suchte ich einen Kurs mit überschaubaren
+          Aufgaben, die ich direkt im Alltag ausprobieren kann.
+        ru: Я работаю в офисе пять дней в неделю, обычно с восьми до шестнадцати. Потом не хочу учиться
+          каждый вечер. Но хотела увереннее вести рабочие разговоры. Поэтому искала курс с
+          небольшими задачами, которые можно сразу попробовать.
+      - I: Hat deine Firma dir den Kurs vorgeschrieben oder kam die Idee von dir selbst?
+        ru: Курс назначила фирма или это была твоя идея?
+      - L: Die Idee kam von mir. Eine Freundin hatte mir von dem Angebot erzählt. Ich sprach dann mit
+          meiner Chefin, weil ich wissen wollte, ob die Zeiten zu meiner Arbeit passen. Sie
+          fand die Idee gut, aber sie verlangte keinen bestimmten Kurs. Ich konnte selbst
+          entscheiden, ob ich mich anmelde.
+        ru: Это была моя идея. Подруга рассказала о предложении. Я спросила начальницу, подходят ли
+          часы к работе. Ей понравилась идея, но конкретного курса она не требовала. Решение о
+          записи было моим.
+      - I: Wann fand der Unterricht statt, und musstest du jedes Mal an denselben Ort fahren?
+        ru: Когда проходили занятия и нужно ли было каждый раз ехать в одно место?
+      - L: Wir trafen uns montags und mittwochs von neunzehn bis zwanzig Uhr dreißig. Von den acht
+          Terminen waren sechs im Kursraum und zwei im Videochat. Es waren also nicht nur
+          fertige Videos, die man allein anschaut. Auch online konnten wir Fragen stellen und
+          in kleinen Gruppen üben.
+        ru: "Мы занимались по понедельникам и средам с девятнадцати до двадцати тридцати. Из восьми
+          встреч шесть были в аудитории, две в видеочате. Это были не просто готовые видео:
+          можно было задавать вопросы и работать группами."
+      - I: Welche Aufgabe hat dir für deinen Beruf besonders geholfen?
+        ru: Какое задание особенно помогло тебе в работе?
+      - L: Wir übten kurze Nachrichten an Kollegen und Kunden. Vorher schrieb ich oft zu viele
+          Einzelheiten und vergaß am Ende die eigentliche Frage. Im Kurs mussten wir zuerst das
+          Ziel der Nachricht nennen. Seitdem prüfe ich, ob jemand ohne mein Vorwissen versteht,
+          was ich brauche und bis wann ich eine Antwort möchte.
+        ru: Мы тренировались писать короткие сообщения коллегам и клиентам. Раньше я писала слишком
+          много деталей и забывала главный вопрос. На курсе сначала называли цель. Теперь
+          проверяю, понятны ли просьба и срок ответа человеку без моего знания ситуации.
+      - I: War es leicht für dich, vor anderen nachzufragen, wenn du etwas nicht verstanden hast?
+        ru: Легко ли было спрашивать при других, если ты что-то не поняла?
+      - L: Am Anfang nicht. Ich dachte, die anderen hätten alles längst verstanden. Dann merkte ich,
+          dass viele ähnliche Fragen hatten. Die Kursleiterin wartete bewusst auf Rückfragen.
+          Heute frage ich eher nach einem konkreten Beispiel, statt einfach zu sagen, dass
+          alles klar ist. Das hilft auch den anderen in der Gruppe.
+        ru: Сначала нет. Я думала, остальные давно всё поняли. Потом заметила похожие вопросы у других.
+          Преподавательница ждала уточнений. Теперь прошу конкретный пример, вместо того чтобы
+          просто говорить, что всё ясно. Это помогает и другим.
+      - I: Wer hat die Kosten übernommen?
+        ru: Кто оплатил курс?
+      - L: Der Kurs kostete hundertzwanzig Euro. Meine Firma gab vierzig Euro dazu, den Rest bezahlte
+          ich selbst. Wichtig war mir, dass ich vorher genau wusste, was enthalten ist. Die
+          Materialien waren dabei, zusätzliche Einzelstunden nicht. Ich habe deshalb keine
+          weiteren Stunden gebucht, sondern erst mit den Übungen aus der Gruppe gearbeitet.
+        ru: "Курс стоил сто двадцать евро. Фирма дала сорок, остальное оплатила я. Я заранее уточнила
+          состав цены: материалы включены, индивидуальные занятия нет. Дополнительные часы я не
+          брала, сначала занималась упражнениями группы."
+      - I: Du hast eine Woche gefehlt. Wie konntest du danach weiterarbeiten?
+        ru: Ты пропустила неделю. Как продолжила потом?
+      - L: In dieser Woche musste ich länger arbeiten und konnte abends nicht teilnehmen. Eine andere
+          Teilnehmerin schickte mir ihre Notizen. Es gab keine vollständige Aufnahme des
+          Unterrichts. Ich las zuerst die Beispiele und besprach offene Fragen beim nächsten
+          Termin. So brauchte ich nicht zu behaupten, dass ich alles allein sofort nachholen
+          kann.
+        ru: В ту неделю пришлось работать дольше, и я не могла участвовать вечером. Другая участница
+          прислала записи. Полной записи урока не было. Я прочитала примеры и задала оставшиеся
+          вопросы на следующей встрече.
+      - I: Hast du nach dem Kurs eine neue Aufgabe oder eine andere Stelle bekommen?
+        ru: Ты получила после курса новую задачу или другую работу?
+      - L: Nein, meine Stelle ist dieselbe geblieben. Ich habe eine Teilnahmebescheinigung bekommen,
+          aber daraus folgt keine automatische Beförderung. Für mich war zuerst wichtig, dass
+          einige Gespräche und Nachrichten leichter wurden. Meine Chefin möchte später mit mir
+          besprechen, wo ich das Gelernte noch einsetzen kann. Das ist noch ein offenes
+          Gespräch.
+        ru: Нет, работа осталась прежней. Я получила подтверждение участия, но не автоматическое
+          повышение. Важно было облегчение разговоров и переписки. Начальница позже хочет
+          обсудить, где ещё применить знания; разговор пока впереди.
+      - I: Was würdest du jemandem sagen, der einen solchen Kurs neben der Arbeit plant?
+        ru: Что бы ты сказала человеку, который планирует такой курс параллельно работе?
+      - L: Ich würde die Zeit realistisch prüfen und nach kleinen konkreten Aufgaben fragen. Nicht
+          jeder Kurs passt zu jeder Woche. Mir half, dass ich sowohl feste Termine als auch
+          Möglichkeiten zum eigenen Üben hatte. Außerdem sollte man rechtzeitig sagen, wenn
+          eine Aufgabe zu viel wird. Dann kann die Gruppe gemeinsam eine Lösung suchen.
+        ru: "Я бы реалистично проверила время и спросила о небольших конкретных заданиях. Мне помогли
+          фиксированные встречи и самостоятельная практика. Также стоит вовремя сказать, если
+          задания слишком много: группа сможет поискать решение."
+      - I: Ist dein nächster Kurs schon gebucht?
+        ru: Следующий курс уже забронирован?
+      - L: Noch nicht. Ich interessiere mich für einen Workshop am Samstag. Zuerst muss ich aber meine
+          freien Tage klären. Wenn der Termin passt, würde ich mich gern anmelden. Im Moment
+          ist das eine Möglichkeit und keine bestätigte Buchung. Ich möchte lieber warten, als
+          der Gruppe etwas zu versprechen, das ich nicht halten kann.
+        ru: Ещё нет. Мне интересен субботний семинар. Сначала нужно уточнить свободные дни. Если срок
+          подойдёт, я хотела бы записаться. Пока это возможность, а не подтверждённая запись.
+review:
+  - level: b1
+    topic: b1-meinungen
+    label: "Lesen 1: главная мысль и разные позиции"
+    taskIds:
+      - headlines
+  - level: b1
+    topic: b1-weitergeben
+    label: "Lesen 2: источник, деталь и вывод"
+    taskIds:
+      - article
+  - level: b1
+    topic: b1-absprachen
+    label: "Lesen 3: все условия предложения"
+    taskIds:
+      - ads
+  - level: b1
+    topic: b1-stoerungen
+    label: "Sprachbausteine 1: формы и связи в контексте"
+    taskIds:
+      - gaps1
+  - level: b1
+    topic: b1-vorschlaege
+    label: "Sprachbausteine 2: общий банк и связное письмо"
+    taskIds:
+      - gaps2
+  - level: b1
+    topic: b1-umwelt
+    label: "Hören 1: основная позиция человека"
+    taskIds:
+      - voices
+  - level: b1
+    topic: b1-arbeit
+    label: "Hören 2: связать детали длинного разговора"
+    taskIds:
+      - conversation
+  - level: b1
+    topic: b1-aussichten
+    label: "Hören 3: изменение, время и статус"
+    taskIds:
+      - notices
+  - level: b1
+    topic: b1-vorschlaege
+    label: "Письмо: четыре пункта, связность и оформление"
+  - level: b1
+    topic: b1-finale
+    label: "Разговор: пересказ, реакция и общий план"

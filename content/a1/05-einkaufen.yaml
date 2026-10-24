@@ -3,9 +3,9 @@ order: 5
 title: Was kostet das?
 ru: Покупки и одежда
 lede: >-
-  Суббота в Лейпциге: Анна покупает яблоки на рынке, а Марко ищет новый
-  свитер. Учимся спрашивать цену, называть количество и размер, говорить, что
-  вещь велика или дорога, — и заменять уже названный предмет местоимением.
+  Еда для встречи выбрана — теперь нужны покупки. Дана берёт продукты на рынке в Киле, а Матео
+  ищет свитер на Holtenauer Straße для прохладного вечера у воды. Учимся понимать цены и
+  количество, выбирать размер и не путать *ihn*, *sie* и *es* в сообщениях о покупках.
 goals:
   - Спросить цену и понять ответ в евро и центах
   - Купить нужное количество — килограмм, полкило, бутылку
@@ -16,16 +16,16 @@ grammar:
   - Местоимения ihn, sie, es
   - welcher, welche, welches
   - "Прилагательное после sein: zu groß"
-exam: [hoeren-2, lesen-2, sprechen-3]
+exam: [ hoeren-2, lesen-2, sprechen-3 ]
 
 dialogues:
   markt:
     title: Was kosten die Äpfel?
     ru: На рынке
-    place: Wochenmarkt, Leipzig
+    place: Рынок в Киле · учебная сцена и цены
     people:
       V: { name: Verkäuferin, voice: Shelley }
-      A: { name: Anna, voice: Anna }
+      A: { name: Dana, voice: Anna }
     lines:
       - V: Guten Morgen! Bitte schön?
         ru: Доброе утро! Слушаю вас.
@@ -50,11 +50,11 @@ dialogues:
   kleider:
     title: Wie finden Sie den Pullover?
     ru: В магазине одежды
-    place: Kaufhaus, Leipzig
+    place: Вымышленный магазин на Holtenauer Straße, Kiel
     people:
       V: { name: Verkäufer, voice: Rocko }
-      M: { name: Marco, voice: Reed }
-      A: { name: Anna, voice: Anna }
+      M: { name: Mateo, voice: Reed }
+      A: { name: Dana, voice: Anna }
     lines:
       - V: Guten Tag! Suchen Sie etwas?
         ru: Добрый день! Вы что-то ищете?
@@ -70,12 +70,32 @@ dialogues:
         ru: Хм, по-моему, он великоват. А в размере S он у вас есть?
       - V: Ja, hier, bitte.
         ru: Да, вот, пожалуйста.
-      - M: Anna, wie findest du ihn?
-        ru: Анна, как он тебе?
+      - M: Dana, wie findest du ihn?
+        ru: Дана, как он тебе?
       - A: Super! Und er ist nicht teuer – nur neunundzwanzig Euro neunzig.
         ru: Супер! И он недорогой — всего двадцать девять девяносто.
       - M: Gut, dann nehme ich ihn!
         ru: Хорошо, тогда беру!
+  entscheidung:
+    title: Das nehmen wir
+    ru: Что берём, а что оставляем
+    place: Магазин на Holtenauer Straße · учебная сцена
+    people:
+      D:
+        name: Dana
+        voice: Anna
+      M:
+        name: Mateo
+        voice: Reed
+    lines:
+      - M: Der Pullover ist gut. Ich nehme ihn.
+        ru: Свитер хороший. Я его беру.
+      - D: Die Jacke ist zu teuer. Ich kaufe sie nicht.
+        ru: Куртка слишком дорогая. Я её не покупаю.
+      - M: Das T-Shirt ist schön. Ich nehme es.
+        ru: Футболка красивая. Я её беру.
+      - D: Die Schuhe sind zu klein. Ich kaufe sie nicht.
+        ru: Туфли слишком маленькие. Я их не покупаю.
 
 words:
   mengen:
@@ -140,47 +160,48 @@ tables:
   preise:
     title: Preise
     ru: Цены
-    head: [Preis, So sagt man]
+    head: [ Preis, So sagt man ]
     rows:
-      - ["0,99 €", neunundneunzig Cent]
-      - ["1,50 €", ein Euro fünfzig]
-      - ["2,50 €", zwei Euro fünfzig]
-      - ["6,80 €", sechs Euro achtzig]
-      - ["29,90 €", neunundzwanzig Euro neunzig]
-      - ["120,00 €", hundertzwanzig Euro]
+      - [ "0,99 €", neunundneunzig Cent ]
+      - [ "1,50 €", ein Euro fünfzig ]
+      - [ "2,50 €", zwei Euro fünfzig ]
+      - [ "6,80 €", sechs Euro achtzig ]
+      - [ "29,90 €", neunundzwanzig Euro neunzig ]
+      - [ "120,00 €", hundertzwanzig Euro ]
     note: "Слово *Cent* обычно опускают: *zwei Euro fünfzig*. После числа *Euro* не получает *-s*."
   mengen:
     title: Mengen
     ru: Количество
-    head: [Menge, Beispiel]
+    head: [ Menge, Beispiel ]
     rows:
-      - [ein Kilo, ein Kilo Äpfel]
-      - [zwei Kilo, zwei Kilo Tomaten]
-      - [ein Pfund, ein Pfund Kartoffeln]
-      - [200 Gramm, 200 Gramm Käse]
-      - [eine Flasche, eine Flasche Milch]
-      - [zwei Flasch+en, zwei Flasch+en Wasser]
-    note: "*Kilo*, *Pfund*, *Gramm*, *Liter* и *Euro* после числа не меняются, а *Flasche* и *Dose* получают *-n*."
+      - [ ein Kilo, ein Kilo Äpfel ]
+      - [ zwei Kilo, zwei Kilo Tomaten ]
+      - [ ein Pfund, ein Pfund Kartoffeln ]
+      - [ 200 Gramm, 200 Gramm Käse ]
+      - [ eine Flasche, eine Flasche Milch ]
+      - [ zwei Flasch+en, zwei Flasch+en Wasser ]
+    note: "*Kilo*, *Pfund*, *Gramm*, *Liter* и *Euro* после числа не меняются, а *Flasche* и *Dose*
+      получают *-n*."
   pronomen:
     title: "Akkusativ: ihn, sie, es"
     ru: Местоимения в винительном падеже
-    head: [Wort, Nominativ, Akkusativ, Beispiel]
+    head: [ Wort, Nominativ, Akkusativ, Beispiel ]
     rows:
-      - [der Pullover, er, "*ihn*", "Ich finde *ihn* zu groß."]
-      - [die Jacke, sie, sie, Ich finde sie schön.]
-      - [das T-Shirt, es, es, Ich nehme es.]
-      - [die Schuhe, sie, sie, Ich kaufe sie.]
+      - [ der Pullover, er, "*ihn*", "Ich finde *ihn* zu groß." ]
+      - [ die Jacke, sie, sie, Ich finde sie schön. ]
+      - [ das T-Shirt, es, es, Ich nehme es. ]
+      - [ die Schuhe, sie, sie, Ich kaufe sie. ]
     note: "Меняется только мужской род: *er* → *ihn*, как *der* → *den*."
   welch:
     title: "welcher, welche, welches"
     ru: Который? Какой из них?
-    head: [Род, Nominativ, Akkusativ, Beispiel]
-    ruCols: [0]
+    head: [ Род, Nominativ, Akkusativ, Beispiel ]
+    ruCols: [ 0 ]
     rows:
-      - [мужской, welch+er, welch+en, Welch+en Pullover nehmen Sie?]
-      - [женский, welch+e, welch+e, Welch+e Größe haben Sie?]
-      - [средний, welch+es, welch+es, Welch+es T-Shirt kaufst du?]
-      - [мн. ч., welch+e, welch+e, Welch+e Schuhe sind billig?]
+      - [ мужской, welch+er, welch+en, Welch+en Pullover nehmen Sie? ]
+      - [ женский, welch+e, welch+e, Welch+e Größe haben Sie? ]
+      - [ средний, welch+es, welch+es, Welch+es T-Shirt kaufst du? ]
+      - [ мн. ч., welch+e, welch+e, Welch+e Schuhe sind billig? ]
     note: "Окончания как у артикля: *der* → *welcher*, *den* → *welchen*, *das* → *welches*."
 
 tasks:
@@ -191,10 +212,9 @@ tasks:
     situation: Sie hören eine Durchsage. Ist die Aussage richtig oder falsch? Sie hören den Text einmal.
     voice: Flo
     text: >-
-      Liebe Kundinnen und Kunden! Heute im Angebot: Tomaten aus Italien, das
-      Kilo nur zwei Euro zwanzig. Und Orangen aus Spanien: Das Kilo kostet heute
-      nur zwei Euro neunzig. Das Angebot gibt es nur heute. Vielen Dank für Ihren
-      Einkauf!
+      Liebe Kundinnen und Kunden! Heute im Angebot: Tomaten aus Italien, das Kilo nur zwei Euro
+      zwanzig. Und Orangen aus Spanien: Das Kilo kostet heute nur zwei Euro neunzig. Das
+      Angebot gibt es nur heute. Vielen Dank für Ihren Einkauf!
     statement: Ein Kilo Orangen kostet heute 2,20 €.
     answer: false
   anzeigen:
@@ -204,9 +224,19 @@ tasks:
     situation: Sie brauchen eine Jacke für den Winter. Sie haben nur 40 Euro. Welches Geschäft passt?
     options:
       - title: Mode Lena
-        text: "Sommer-Sale!\nT-Shirts, Kleider und Hosen\nalles 50 % billiger\nnur bis Samstag"
+        text: "Sommer-Sale!
+
+          T-Shirts, Kleider und Hosen
+
+          alles 50 % billiger
+
+          nur bis Samstag"
       - title: Kaufhaus Schulze
-        text: "Neu: Jacken und Mäntel für den Winter\nJacken ab 35 €\nGrößen S bis XXL"
+        text: "Neu: Jacken und Mäntel für den Winter
+
+          Jacken ab 35 €
+
+          Größen S bis XXL"
     answer: 1
   tuete:
     kind: card
@@ -220,6 +250,14 @@ tasks:
       - Haben Sie eine Tüte für mich?
       - Ja, gern. Sie kostet zwanzig Cent.
       - Leider habe ich keine Tüte.
+  liste:
+    kind: message
+    part: lesen-1
+    title: Einkaufszettel der Freunde
+    from: Mateo
+    to: Dana
+    text: "Für die Fahrt: zwei Kilo Äpfel, ein Pfund Tomaten, drei Flaschen Wasser und 200 Gramm
+      Käse. Danke, Dana!"
 
 steps:
   - id: markt
@@ -227,66 +265,76 @@ steps:
     title: Суббота на рынке
     beats:
       - read: >-
-          Суббота, утро, рынок у старой ратуши. Продавщица встречает Анну
-          коротким *Bitte schön?* — «слушаю вас». Цену спрашивают *Was kostet
-          …?*, а если товар во множественном числе — *Was kosten …?*: *Was
-          kosten die Äpfel?* Ответ *Zwei Euro fünfzig das Kilo* — «два
-          пятьдесят за кило». Сначала евро, потом центы, а слово *Cent* обычно
-          не произносят.
+          Суббота, утро, учебная сцена на рынке в Киле. Продавщица встречает Дану коротким
+          *Bitte schön?* — «слушаю вас». Цену спрашивают *Was kostet …?*, а если товар во
+          множественном числе — *Was kosten …?*: *Was kosten die Äpfel?* Ответ *Zwei Euro
+          fünfzig das Kilo* — «два пятьдесят за кило». Сначала евро, потом центы, а слово
+          *Cent* обычно не произносят.
         point: "*Was kostet …?* / *Was kosten …?* — «сколько стоит / стоят?»"
-        set: { view: dialogue, dialogue: markt, reveal: 3, focus: [0, 1, 2] }
+        set: { view: dialogue, dialogue: markt, reveal: 3, focus: [ 0, 1, 2 ] }
       - read: >-
-          *Dann nehme ich zwei Kilo* — заметьте: *zwei Kilo*, без окончания
-          множественного числа. Продавщица уточняет: *Welche möchten Sie?* —
-          «какие вам?» — и показывает: *Die hier oder die da?* — «вот эти или
-          вон те?». Ещё Анна берёт *ein Pfund Tomaten*. *Pfund* — это полкило,
-          на рынке так говорят постоянно. И никакого родительного падежа, как
-          в «полкило помидоров»: просто *ein Pfund Tomaten*.
+          *Dann nehme ich zwei Kilo* — заметьте: *zwei Kilo*, без окончания множественного
+          числа. Продавщица уточняет: *Welche möchten Sie?* — «какие вам?» — и показывает: *Die
+          hier oder die da?* — «вот эти или вон те?». Ещё Дана берёт *ein Pfund Tomaten*.
+          *Pfund* — это полкило, на рынке так говорят постоянно. И никакого родительного
+          падежа, как в «полкило помидоров»: просто *ein Pfund Tomaten*.
         point: "*zwei Kilo*, *ein Pfund Tomaten* — количество прямо перед словом"
-        set: { reveal: 6, focus: [3, 4, 5] }
+        set: { reveal: 6, focus: [ 3, 4, 5 ] }
       - read: >-
-          Конец у любой покупки одинаковый. *Noch etwas?* — «что-нибудь
-          ещё?». Ответ *Nein, danke, das ist alles* — «нет, спасибо, это всё».
-          Сумму называют так же, как в кафе: *Das macht sechs Euro achtzig*.
-          На немецких рынках до сих пор часто платят наличными, а карту
-          берут не везде, так что мелочь в кошельке пригодится.
+          Завершение покупки: *Noch etwas?* — «что-нибудь ещё?», *Nein, danke, das ist alles* —
+          «нет, спасибо, это всё». Сумму называют как в кафе: *Das macht sechs Euro achtzig*.
+          Дана даёт 10 евро. В игре нужно будет отличить цену за килограмм от общего счёта и
+          проверить сдачу. Все цены в сцене учебные; они не описывают действующее предложение
+          конкретного продавца.
         point: "*Noch etwas?* — *Nein, danke, das ist alles.* — *Das macht …*"
-        set: { reveal: 10, focus: [6, 7, 8, 9] }
+        set: { reveal: 10, focus: [ 6, 7, 8, 9 ] }
 
   - id: kleider
     chapter: scene
-    title: Свитер для Марко
+    title: Свитер для Матео
     beats:
       - read: >-
-          Марко ищет свитер в универмаге. Продавец сначала спрашивает размер:
-          *Welche Größe haben Sie?* — *welche*, потому что *die Größe*. Потом
-          показывает свитер: *Wie finden Sie den Pullover hier?* *finden*
-          здесь значит не «находить», а «считать»: «как вам свитер?». Марко
-          отвечает *Ich finde ihn zu groß*. *ihn* — это и есть свитер: *den
-          Pullover* превратился в *ihn*.
+          Матео ищет свитер в вымышленном магазине на Holtenauer Straße: вечером у воды нужен
+          тёплый слой. Продавец сначала спрашивает размер: *Welche Größe haben Sie?* —
+          *welche*, потому что *die Größe*. Потом показывает свитер: *Wie finden Sie den
+          Pullover hier?* *finden* здесь значит не «находить», а «считать»: «как вам свитер?».
+          Матео отвечает *Ich finde ihn zu groß*. *ihn* — это и есть свитер: *den Pullover*
+          превратился в *ihn*.
         point: "*Wie finden Sie …?* — «как вам …?»; *Ich finde ihn zu groß.*"
-        set: { view: dialogue, dialogue: kleider, reveal: 6, focus: [2, 4, 5] }
+        set: { view: dialogue, dialogue: kleider, reveal: 6, focus: [ 2, 4, 5 ] }
       - read: >-
-          С Анной Марко на «ты»: *Wie findest du ihn?* У *finden* основа
-          кончается на *d*, поэтому перед окончанием появляется *e* — *du
-          findest*. Анна хвалит: *Er ist nicht teuer*. После *sein*
-          прилагательное не меняется, в отличие от русского «недорогой,
-          недорогая». И финал: *Dann nehme ich ihn!* По-русски скажут просто
-          «беру», а в немецком местоимение *ihn* опускать нельзя.
+          С Даной Матео на «ты»: *Wie findest du ihn?* У *finden* основа кончается на *d*,
+          поэтому перед окончанием появляется *e* — *du findest*. Дана хвалит: *Er ist nicht
+          teuer*. После *sein* прилагательное не меняется, в отличие от русского «недорогой,
+          недорогая». И финал: *Dann nehme ich ihn!* По-русски скажут просто «беру», а в
+          немецком местоимение *ihn* опускать нельзя.
         point: "*Ich nehme ihn.* — местоимение не опускают, как в русском «беру»"
-        set: { reveal: 10, focus: [7, 8, 9] }
+        set: { reveal: 10, focus: [ 7, 8, 9 ] }
+  - id: entscheidung
+    chapter: scene
+    title: Что действительно купили?
+    beats:
+      - read: "У кассы важно понять последнее решение, а не просто услышать название вещи. Матео берёт
+          свитер: *Ich nehme ihn*. Дана отказывается от куртки: *Ich kaufe sie nicht*. Потом
+          Матео выбирает футболку — *Ich nehme es*, а туфли остаются из-за размера. В конце
+          игры вы соберёте пакет только из подтверждённых покупок. *Ihn*, *sie* и *es* заменяют
+          уже названный предмет, поэтому слушайте реплику целиком."
+        point: "*ihn* — свитер, *sie* — куртка или туфли, *es* — футболка; *nicht* отменяет покупку"
+        set:
+          view: dialogue
+          dialogue: entscheidung
+          reveal: 4
 
   - id: mengen
     chapter: words
     title: Сколько?
     beats:
       - read: >-
-          Килограмм — *ein Kilo*, а полкило — *ein Pfund*: на рынке это слово
-          слышно постоянно, и *ein Pfund Tomaten* — ровно 500 граммов.
-          Упаковка — это *die Flasche*, *die Packung*, *die Dose* и *die
-          Tüte*. Все четыре слова женского рода, и множественное у них на *-n*
-          или *-en*: *zwei Flaschen*, *zwei Packungen*. На кассе вас спросят *Brauchen
-          Sie eine Tüte?* — пакет в Германии почти всегда платный.
+          Килограмм — *ein Kilo*, полкило — *ein Pfund*. Для покупок в нашей сцене *ein Pfund
+          Tomaten* означает 500 граммов. Упаковки — *die Flasche*, *die Packung*, *die Dose*,
+          *die Tüte*. Во множественном числе: *zwei Flaschen*, *zwei Packungen*. Когда продавец
+          спрашивает *Brauchen Sie eine Tüte?*, решите, нужен ли пакет, а затем уточните цену.
+          В игре количество придётся выставить в корзине, а не просто узнать слово.
         point: "*ein Pfund* = 500 г; *die Flasche*, *die Dose*, *die Tüte* — мн. ч. на *-n*"
         set: { view: words, words: mengen }
 
@@ -295,11 +343,10 @@ steps:
     title: Фрукты и овощи
     beats:
       - read: >-
-          Род фруктов и овощей почти никогда не совпадает с русским. «Банан»,
-          «помидор» и «огурец» у нас мужского рода, а в немецком — *die
-          Banane*, *die Tomate*, *die Gurke*. «Яблоко» среднего рода, а *der
-          Apfel* — мужского, и во множественном у него умлаут: *die Äpfel*.
-          Хорошая новость: большинство слов на *-e* — женского рода, и
+          Род фруктов и овощей почти никогда не совпадает с русским. «Банан», «помидор» и
+          «огурец» у нас мужского рода, а в немецком — *die Banane*, *die Tomate*, *die Gurke*.
+          «Яблоко» среднего рода, а *der Apfel* — мужского, и во множественном у него умлаут:
+          *die Äpfel*. Хорошая новость: большинство слов на *-e* — женского рода, и
           множественное у них на *-n*: *die Tomaten*.
         point: "Слова на *-e* обычно *die*, мн. ч. на *-n*: *die Tomate — die Tomaten*"
         set: { view: words, words: markt }
@@ -309,10 +356,9 @@ steps:
     title: Одежда
     beats:
       - read: >-
-          С одеждой та же история. «Брюки» у нас во множественном числе, а
-          *die Hose* — одна вещь в единственном. Поэтому *Die Hose ist zu
-          lang*, а не *sind*. «Рубашка» — *das Hemd*, среднего рода,
-          «платье» — тоже *das Kleid*, а «юбка» — *der Rock*, мужского.
+          С одеждой та же история. «Брюки» у нас во множественном числе, а *die Hose* — одна
+          вещь в единственном. Поэтому *Die Hose ist zu lang*, а не *sind*. «Рубашка» — *das
+          Hemd*, среднего рода, «платье» — тоже *das Kleid*, а «юбка» — *der Rock*, мужского.
           *Schuhe* почти всегда во множественном: их ведь покупают парой.
         point: "*die Hose* — брюки, но в ед. ч.: *Die Hose ist zu lang.*"
         set: { view: words, words: kleidung }
@@ -322,11 +368,10 @@ steps:
     title: Покупаем
     beats:
       - read: >-
-          *kosten* и *finden* — правильные глаголы, но их основа кончается на
-          *t* и *d*, и перед окончанием появляется *e*: *es kostet*, *du
-          findest*, *er findet*. *brauchen* — «нуждаться»: *Ich brauche eine
-          Jacke* — «мне нужна куртка». Прилагательные учите парами: *billig* и
-          *teuer*, *groß* и *klein*, *lang* и *kurz*. А *zu* перед ними
+          *kosten* и *finden* — правильные глаголы, но их основа кончается на *t* и *d*, и
+          перед окончанием появляется *e*: *es kostet*, *du findest*, *er findet*. *brauchen* —
+          «нуждаться»: *Ich brauche eine Jacke* — «мне нужна куртка». Прилагательные учите
+          парами: *billig* и *teuer*, *groß* и *klein*, *lang* и *kurz*. А *zu* перед ними
           значит «слишком».
         point: "*es kostet*, *du findest* — с *e*; *Ich brauche …* — «мне нужно …»"
         set: { view: words, words: einkaufen }
@@ -336,11 +381,10 @@ steps:
     title: Цены
     beats:
       - read: >-
-          Цены пишут через запятую — *2,50 €*, — а читают так: сначала евро,
-          потом центы, причём слово *Cent* обычно проглатывают: *zwei Euro
-          fünfzig*. Если евро нет, говорят *neunundneunzig Cent*. И помните из
-          второй темы: единицы идут перед десятками — *neunundzwanzig*,
-          «девять-и-двадцать». С ценами это главная ловушка на слух: *29,90*
+          Цены пишут через запятую — *2,50 €*, — а читают так: сначала евро, потом центы,
+          причём слово *Cent* обычно проглатывают: *zwei Euro fünfzig*. Если евро нет, говорят
+          *neunundneunzig Cent*. И помните из второй темы: единицы идут перед десятками —
+          *neunundzwanzig*, «девять-и-двадцать». С ценами это главная ловушка на слух: *29,90*
           легко принять за 92.
         point: "*2,50 €* — *zwei Euro fünfzig*; *0,99 €* — *neunundneunzig Cent*"
         set: { view: table, table: preise }
@@ -350,105 +394,97 @@ steps:
     title: Кило яблок
     beats:
       - read: >-
-          В русском после меры нужен родительный падеж: «кило яблок»,
-          «бутылка молока». В немецком второе слово остаётся как есть: *ein
-          Kilo Äpfel*, *eine Flasche Milch* — без предлога и без падежа. Ещё
-          одна разница: меры веса и деньги после числа не получают
-          множественного — *zwei Kilo*, *200 Gramm*, *drei Euro*. А *Flasche*
-          — получает: *zwei Flaschen Wasser*.
+          В русском после меры нужен родительный падеж: «кило яблок», «бутылка молока». В
+          немецком второе слово остаётся как есть: *ein Kilo Äpfel*, *eine Flasche Milch* — без
+          предлога и без падежа. Ещё одна разница: меры веса и деньги после числа не получают
+          множественного — *zwei Kilo*, *200 Gramm*, *drei Euro*. А *Flasche* — получает: *zwei
+          Flaschen Wasser*.
         point: "*eine Flasche Milch* — без падежа; *zwei Kilo*, но *zwei Flaschen*"
-        set: { view: table, table: mengen, focus: [0, 1, 3, 4, 5] }
+        set: { view: table, table: mengen, focus: [ 0, 1, 3, 4, 5 ] }
 
   - id: pronomen
     chapter: grammar
     title: Свитер — он — его
     beats:
       - read: >-
-          Когда предмет уже назван, его заменяют местоимением — как в
-          русском: «свитер? он велик, я его не беру». В немецком местоимение
-          выбирают по роду слова. *der Pullover* — мужского рода, поэтому в
-          именительном он *er*, а в винительном, как дополнение, — *ihn*.
-          Сначала посмотрите на полную фразу: *den Pullover* занимает середину
+          Когда предмет уже назван, его заменяют местоимением — как в русском: «свитер? он
+          велик, я его не беру». В немецком местоимение выбирают по роду слова. *der Pullover*
+          — мужского рода, поэтому в именительном он *er*, а в винительном, как дополнение, —
+          *ihn*. Сначала посмотрите на полную фразу: *den Pullover* занимает середину
           предложения.
         point: "Местоимение выбирают по роду: *der Pullover* → *er* → *ihn*"
         set:
           view: sentence
           rows:
-            - de: [Ich, find+e, d+en Pullover zu groß., ""]
+            - de: [ Ich, find+e, d+en Pullover zu groß., "" ]
               ru: По-моему, свитер великоват.
       - read: >-
-          Теперь *den Pullover* сжимается в одно слово — *ihn*, а *zu groß*
-          остаётся на месте. Сравните: *der* → *den* и *er* → *ihn* — в
-          винительном меняется только мужской род, и у артикля, и у
-          местоимения. Ошибка *Ich finde er zu groß* очень частая: проверяйте,
-          кто действует, а кто дополнение. Действует *ich*, свитер —
-          дополнение, значит, *ihn*.
+          Теперь *den Pullover* сжимается в одно слово — *ihn*, а *zu groß* остаётся на месте.
+          Сравните: *der* → *den* и *er* → *ihn* — в винительном меняется только мужской род, и
+          у артикля, и у местоимения. Ошибка *Ich finde er zu groß* очень частая: проверяйте,
+          кто действует, а кто дополнение. Действует *ich*, свитер — дополнение, значит, *ihn*.
         point: "*Ich finde ihn zu groß.* — *er* → *ihn*, как *der* → *den*"
         set:
           rows:
-            - de: [Ich, find+e, ihn zu groß., ""]
+            - de: [ Ich, find+e, ihn zu groß., "" ]
               ru: По-моему, он великоват.
       - read: >-
-          Женский, средний род и множественное число не меняются: *die Jacke*
-          → *sie*, *das T-Shirt* → *es*, *die Schuhe* → *sie*. Заменяйте по
-          немецкому роду, а не по русскому: *das Hemd* — «рубашка», но
-          местоимение *es*: *Ich nehme es*. А *sie* бывает и «она», и «они» —
-          различить помогает глагол: *sie ist*, но *sie sind*.
+          Женский, средний род и множественное число не меняются: *die Jacke* → *sie*, *das
+          T-Shirt* → *es*, *die Schuhe* → *sie*. Заменяйте по немецкому роду, а не по русскому:
+          *das Hemd* — «рубашка», но местоимение *es*: *Ich nehme es*. А *sie* бывает и «она»,
+          и «они» — различить помогает глагол: *sie ist*, но *sie sind*.
         point: "*die Jacke* → *sie*, *das Hemd* → *es*, *die Schuhe* → *sie*"
-        set: { view: table, table: pronomen, focus: [1, 2, 3] }
+        set: { view: table, table: pronomen, focus: [ 1, 2, 3 ] }
 
   - id: welch
     chapter: grammar
     title: Какой именно?
     beats:
       - read: >-
-          Вопрос «который из них?» — это *welch-* плюс существительное. Вместе
-          они занимают первую позицию: *Welche Größe* — одна позиция, глагол —
-          вторая, как в любом W-вопросе. Окончание зависит от рода и падежа:
-          *die Größe* → *welche*, а *der Pullover* в роли дополнения —
-          *welchen*. Отвечают часто одним указанием: *den hier* — «вот этот»,
-          с тем же *-en*.
+          Вопрос «который из них?» — это *welch-* плюс существительное. Вместе они занимают
+          первую позицию: *Welche Größe* — одна позиция, глагол — вторая, как в любом
+          W-вопросе. Окончание зависит от рода и падежа: *die Größe* → *welche*, а *der
+          Pullover* в роли дополнения — *welchen*. Отвечают часто одним указанием: *den hier* —
+          «вот этот», с тем же *-en*.
         point: "*Welche Größe haben Sie?* — *welch-* вместе с существительным на первой позиции"
         set:
           view: sentence
           rows:
-            - de: [Welch+e Größe, hab+en, Sie?, ""]
+            - de: [ Welch+e Größe, hab+en, Sie?, "" ]
               ru: Какой у вас размер?
-            - de: [Welch+en Pullover, nehm+en, Sie?, ""]
+            - de: [ Welch+en Pullover, nehm+en, Sie?, "" ]
               ru: Какой свитер вы берёте?
-            - de: [Ich, nehm+e, d+en hier., ""]
+            - de: [ Ich, nehm+e, d+en hier., "" ]
               ru: Я беру вот этот.
       - read: >-
-          Окончания *welch-* повторяют артикль: *der* → *welcher*, *den* →
-          *welchen*, *die* → *welche*, *das* → *welches*. Знаете род слова —
-          знаете и форму вопроса. Не путайте *welch-* с *wie*: в русском оба
-          могут быть «какой». *Welcher Pullover?* — «который из этих?», а *Wie
-          ist der Pullover?* — «какой он, хороший или нет?».
+          Окончания *welch-* повторяют артикль: *der* → *welcher*, *den* → *welchen*, *die* →
+          *welche*, *das* → *welches*. Знаете род слова — знаете и форму вопроса. Не путайте
+          *welch-* с *wie*: в русском оба могут быть «какой». *Welcher Pullover?* — «который из
+          этих?», а *Wie ist der Pullover?* — «какой он, хороший или нет?».
         point: "*welcher* — «который из»; *wie* — «каков»: *Wie ist der Pullover?*"
-        set: { view: table, table: welch, focus: [0] }
+        set: { view: table, table: welch, focus: [ 0 ] }
 
   - id: adjektiv
     chapter: grammar
     title: Слишком большой
     beats:
       - read: >-
-          После *sein* прилагательное никогда не меняется: свитер, куртка,
-          рубашка и ботинки — у всех *groß*. В русском «велик, велика, велики»
-          подстраиваются под слово, в немецком — нет. *zu* значит «слишком», и
-          это всегда минус: *zu groß* — «велик», *zu teuer* — «дорого для
-          меня». Если хотите похвалить, говорите *sehr*: *Die Jacke ist sehr
+          После *sein* прилагательное никогда не меняется: свитер, куртка, рубашка и ботинки —
+          у всех *groß*. В русском «велик, велика, велики» подстраиваются под слово, в немецком
+          — нет. *zu* значит «слишком», и это всегда минус: *zu groß* — «велик», *zu teuer* —
+          «дорого для меня». Если хотите похвалить, говорите *sehr*: *Die Jacke ist sehr
           schön*.
         point: "*Der Pullover / Die Jacke ist zu groß.* — прилагательное не меняется; *zu* — «слишком»"
         set:
           view: sentence
           rows:
-            - de: [Der Pullover, ist, zu groß., ""]
+            - de: [ Der Pullover, ist, zu groß., "" ]
               ru: Свитер велик.
-            - de: [Die Jacke, ist, zu groß., ""]
+            - de: [ Die Jacke, ist, zu groß., "" ]
               ru: Куртка велика.
-            - de: [Das Hemd, ist, zu groß., ""]
+            - de: [ Das Hemd, ist, zu groß., "" ]
               ru: Рубашка велика.
-            - de: [Die Schuhe, sind, zu groß., ""]
+            - de: [ Die Schuhe, sind, zu groß., "" ]
               ru: Ботинки велики.
 
   - id: check
@@ -457,47 +493,45 @@ steps:
     beats:
       - question: Как спросить, сколько стоят брюки — *die Hose*?
         read: >-
-          *Was kostet die Hose?* В русском «брюки» во множественном числе, а
-          в немецком *die Hose* — одна вещь, поэтому и глагол в единственном:
-          *kostet*. Для настоящего множественного — *kosten*: *Was kosten die
-          Schuhe?* Перед окончанием *-t* у *kosten* появляется *e*: основа
-          сама кончается на *t*, и без гласной форму было бы не выговорить.
+          *Was kostet die Hose?* В русском «брюки» во множественном числе, а в немецком *die
+          Hose* — одна вещь, поэтому и глагол в единственном: *kostet*. Для настоящего
+          множественного — *kosten*: *Was kosten die Schuhe?* Перед окончанием *-t* у *kosten*
+          появляется *e*: основа сама кончается на *t*, и без гласной форму было бы не
+          выговорить.
         point: "*Was kostet die Hose?* — ед. ч.; *Was kosten die Schuhe?* — мн. ч."
         set:
           view: sentence
           rows:
-            - de: [Was, kost+et, die Hose?, ""]
+            - de: [ Was, kost+et, die Hose?, "" ]
               ru: Сколько стоят брюки?
-            - de: [Was, kost+en, die Schuhe?, ""]
+            - de: [ Was, kost+en, die Schuhe?, "" ]
               ru: Сколько стоят ботинки?
       - question: "Продавец: *Wie finden Sie das Kleid?* Как ответить «по-моему, оно коротковато»?"
         read: >-
-          *Ich finde es zu kurz.* *das Kleid* — среднего рода, поэтому
-          местоимение *es*; здесь роды в двух языках совпали, «платье» тоже
-          «оно». *es* в винительном не меняется. Посмотрите на схему: глагол
-          *finden* остаётся на второй позиции и только меняет окончание, *es*
-          встаёт сразу за глаголом, а *zu kurz* — после местоимения.
+          *Ich finde es zu kurz.* *das Kleid* — среднего рода, поэтому местоимение *es*; здесь
+          роды в двух языках совпали, «платье» тоже «оно». *es* в винительном не меняется.
+          Посмотрите на схему: глагол *finden* остаётся на второй позиции и только меняет
+          окончание, *es* встаёт сразу за глаголом, а *zu kurz* — после местоимения.
         point: "*das Kleid* → *es*: *Ich finde es zu kurz.*"
         before:
           view: sentence
           rows:
-            - de: [Wie, find+en, Sie das Kleid?, ""]
+            - de: [ Wie, find+en, Sie das Kleid?, "" ]
               ru: Как вам платье?
         set:
           rows:
-            - de: [Ich, find+e, es zu kurz., ""]
+            - de: [ Ich, find+e, es zu kurz., "" ]
               ru: По-моему, оно коротковато.
       - question: Как прочитать цену *12,49 €*?
         read: >-
-          *zwölf Euro neunundvierzig*. Сначала евро, потом центы, а слово
-          *Cent* не называют. В *neunundvierzig* единицы идут первыми:
-          «девять-и-сорок». На кассе это прозвучит как *Das macht zwölf Euro
-          neunundvierzig* — «с вас двенадцать сорок девять». Прочитайте вслух
-          и сверьтесь с записью: на экзамене цены надо узнавать на слух.
+          *zwölf Euro neunundvierzig*. Сначала евро, потом центы, а слово *Cent* не называют. В
+          *neunundvierzig* единицы идут первыми: «девять-и-сорок». На кассе это прозвучит как
+          *Das macht zwölf Euro neunundvierzig* — «с вас двенадцать сорок девять». Прочитайте
+          вслух и сверьтесь с записью: на экзамене цены надо узнавать на слух.
         point: "*12,49 €* — *zwölf Euro neunundvierzig*"
         set:
           rows:
-            - de: [Das, mach+t, zwölf Euro neunundvierzig., ""]
+            - de: [ Das, mach+t, zwölf Euro neunundvierzig., "" ]
               ru: С вас двенадцать евро сорок девять.
 
   - id: hoeren
@@ -505,21 +539,19 @@ steps:
     title: "Аудирование: часть 2"
     beats:
       - read: >-
-          Во второй части аудирования звучат объявления: на вокзале, в
-          аэропорту, в супермаркете. Каждое — один раз, повторения не будет.
-          Перед записью прочитайте утверждение и решите, что ловить: здесь это
-          товар и цена. В супермаркете объявляют скидки: *im Angebot* — «по
-          акции», *nur* — «всего». Послушайте и решите: *richtig* или
-          *falsch*?
+          Во второй части аудирования звучат объявления: на вокзале, в аэропорту, в
+          супермаркете. Каждое — один раз, повторения не будет. Перед записью прочитайте
+          утверждение и решите, что ловить: здесь это товар и цена. В супермаркете объявляют
+          скидки: *im Angebot* — «по акции», *nur* — «всего». Послушайте и решите: *richtig*
+          или *falsch*?
         point: "Часть 2: объявление звучит один раз — заранее прочитайте утверждение"
         set: { view: task, task: durchsage }
       - question: "*Richtig* или *falsch*? Почему?"
         read: >-
-          *Falsch*. Цена *zwei Euro zwanzig* в объявлении есть, но это цена
-          помидоров. Апельсины стоят *zwei Euro neunzig*. Составители часто
-          берут настоящее число из текста и приписывают его другому товару.
-          Поэтому слушайте пары «товар — цена» и записывайте цифры прямо на
-          листе с заданием, пока звучит запись.
+          *Falsch*. Цена *zwei Euro zwanzig* в объявлении есть, но это цена помидоров.
+          Апельсины стоят *zwei Euro neunzig*. Составители часто берут настоящее число из
+          текста и приписывают его другому товару. Поэтому слушайте пары «товар — цена» и
+          записывайте цифры прямо на листе с заданием, пока звучит запись.
         point: "Цифра из текста — ещё не ответ: проверьте, к какому товару она относится"
         set: { solved: true }
 
@@ -528,20 +560,19 @@ steps:
     title: "Чтение: часть 2"
     beats:
       - read: >-
-          Во второй части чтения — ситуация и два коротких объявления или
-          страницы сайтов. Нужно выбрать, где человек найдёт то, что ему
-          нужно. Читать всё подряд не обязательно: выпишите из ситуации два-три
-          ключевых слова — здесь это *Jacke*, *Winter* и *40 Euro* — и ищите
-          их в объявлениях. Совпасть должны все ключи сразу, а не один.
+          Во второй части чтения — ситуация и два коротких объявления или страницы сайтов.
+          Нужно выбрать, где человек найдёт то, что ему нужно. Читать всё подряд не
+          обязательно: выпишите из ситуации два-три ключевых слова — здесь это *Jacke*,
+          *Winter* и *40 Euro* — и ищите их в объявлениях. Совпасть должны все ключи сразу, а
+          не один.
         point: "Часть 2: найдите в ситуации 2–3 ключевых слова и ищите их в объявлениях"
         set: { view: task, task: anzeigen }
       - question: Какое объявление подходит — a или b?
         read: >-
-          *b*. В объявлении *a* есть приманка — *alles 50 % billiger*, «всё на
-          50 % дешевле», но там только летние вещи: футболки, платья и брюки.
-          Курток нет. В *b* — куртки и пальто к зиме, и цена подходит: *ab 35
-          €* — «от 35 евро». Скидка — ещё не ответ, если нужного товара в
-          магазине нет.
+          *b*. В объявлении *a* есть приманка — *alles 50 % billiger*, «всё на 50 % дешевле»,
+          но там только летние вещи: футболки, платья и брюки. Курток нет. В *b* — куртки и
+          пальто к зиме, и цена подходит: *ab 35 €* — «от 35 евро». Скидка — ещё не ответ, если
+          нужного товара в магазине нет.
         point: "Скидка — не ответ: сначала проверьте, есть ли нужный товар"
         set: { solved: true }
 
@@ -550,78 +581,77 @@ steps:
     title: "Устный экзамен: часть 3"
     beats:
       - read: >-
-          Третья часть устного экзамена знакома вам по прошлой теме:
-          картинка, просьба, реакция. На картинке пакет — просите пакет: *Eine
-          Tüte, bitte!* или *Haben Sie eine Tüte für mich?* В реакции
-          пригодится местоимение: *Sie kostet zwanzig Cent* — *sie*, потому
-          что *die Tüte*. Если пакета нет — *Leider habe ich keine Tüte*.
+          Третья часть устного экзамена знакома вам по прошлой теме: картинка, просьба,
+          реакция. На картинке пакет — просите пакет: *Eine Tüte, bitte!* или *Haben Sie eine
+          Tüte für mich?* В реакции пригодится местоимение: *Sie kostet zwanzig Cent* — *sie*,
+          потому что *die Tüte*. Если пакета нет — *Leider habe ich keine Tüte*.
         point: "Просьба: *Eine Tüte, bitte!* Реакция: *Ja, gern.* / *Leider habe ich keine Tüte.*"
         set: { view: task, task: tuete, reveal: 4 }
 
 exercises:
   - type: choice
     q: Was ___ die Äpfel?
-    options: [kostet, kosten]
+    options: [ kostet, kosten ]
     answer: 1
     why: "*die Äpfel* — множественное число, поэтому *kosten*."
   - type: choice
     q: Was ___ die Hose?
-    options: [kostet, kosten]
+    options: [ kostet, kosten ]
     answer: 0
     why: "*die Hose* — единственное число, хотя по-русски «брюки»."
   - type: choice
     q: Как прочитать цену 3,50 €?
-    options: [drei Euro fünfzig, dreißig Euro fünfzig, fünfzig Euro drei]
+    options: [ drei Euro fünfzig, dreißig Euro fünfzig, fünfzig Euro drei ]
     answer: 0
     why: "Сначала евро, потом центы: *drei Euro fünfzig*."
   - type: choice
     q: Ich nehme zwei ___ Äpfel.
-    options: [Kilo, Kilos]
+    options: [ Kilo, Kilos ]
     answer: 0
     why: "После числа *Kilo* не меняется: *zwei Kilo*."
   - type: choice
     q: Wir brauchen drei ___ Wasser.
-    options: [Flasche, Flaschen]
+    options: [ Flasche, Flaschen ]
     answer: 1
     why: "*die Flasche* — обычное существительное: *drei Flasch+en*."
   - type: gap
     q: Der Pullover ist schön. Ich nehme ___.
-    answer: [ihn]
+    answer: [ ihn ]
     ru: Свитер красивый. Я его беру.
     why: "*der Pullover* → *ihn*, как *der* → *den*."
   - type: gap
     q: Die Jacke ist zu teuer. Ich kaufe ___ nicht.
-    answer: [sie]
+    answer: [ sie ]
     ru: Куртка слишком дорогая. Я её не покупаю.
     why: "*die Jacke* → *sie*: женский род в винительном не меняется."
   - type: gap
     q: Das T-Shirt? Ich finde ___ super!
-    answer: [es]
+    answer: [ es ]
     ru: Футболка? По-моему, она супер!
     why: "*das T-Shirt* — среднего рода, поэтому *es*, хотя по-русски «она»."
   - type: choice
     q: Die Schuhe sind billig. Ich kaufe ___.
-    options: [ihn, sie, es]
+    options: [ ihn, sie, es ]
     answer: 1
     why: "Множественное число → *sie*."
   - type: choice
     q: ___ Pullover nehmen Sie?
-    options: [Welcher, Welchen, Welches]
+    options: [ Welcher, Welchen, Welches ]
     answer: 1
     why: "Свитер здесь дополнение, мужской род: *welch+en*, как *den*."
   - type: gap
     q: ___ Größe haben Sie?
-    answer: [Welche]
+    answer: [ Welche ]
     hint: welch-
     why: "*die Größe* → *welche*."
   - type: gap
     q: Wie ___ du die Jacke?
-    answer: [findest]
+    answer: [ findest ]
     hint: finden
     why: "Основа на *-d*: *du find+est*."
   - type: choice
     q: "*Der Rock ist zu kurz.* Что это значит?"
-    options: [Юбка слишком короткая., Юбка очень короткая., Юбка короткая и красивая.]
+    options: [ Юбка слишком короткая., Юбка очень короткая., Юбка короткая и красивая. ]
     answer: 0
     why: "*zu* — «слишком», это всегда минус. «Очень» — *sehr*."
   - type: order
@@ -630,7 +660,254 @@ exercises:
   - type: order
     ru: Я возьму килограмм помидоров.
     de: Ich nehme ein Kilo Tomaten.
-    also: [Ein Kilo Tomaten nehme ich.]
+    also: [ Ein Kilo Tomaten nehme ich. ]
   - type: order
     ru: Какой у вас размер?
     de: Welche Größe haben Sie?
+  - type: gap
+    q: Das T-Shirt ist gut. Mateo nimmt ___.
+    answer:
+      - es
+    why: "*das T-Shirt* — средний род, в винительном — *es*."
+  - type: choice
+    q: Ein Pfund Tomaten sind …
+    options:
+      - 500 Gramm
+      - 100 Gramm
+      - 2 Kilo
+    answer: 0
+    why: В этой ситуации *ein Pfund* означает полкилограмма, 500 г.
+adventure:
+  kind: sequence
+  title: Закупки для прогулки
+  intro: У команды есть список продуктов и ограниченный бюджет на одежду. Соберите нужное
+    количество, проверьте деньги и положите в пакет только подтверждённые покупки. Список,
+    объявления и цены — учебные.
+  ending: Продукты собраны по списку, цена и сдача проверены, Матео выбрал подходящий свитер. В
+    пакет попали только купленные вещи. Теперь нужно договориться, когда и где встречаться.
+  challenges:
+    - id: food-cart
+      kind: quantity
+      title: Соберите корзину по списку
+      intro: "Прочитайте записку Матео. Кнопками добавьте нужное количество каждого товара. Помните:
+        *ein Pfund* — 500 граммов. Лишнее можно убрать."
+      mode: reading
+      clue:
+        task: liste
+      items:
+        - id: apples
+          label: Äpfel
+          unit: kg
+          answer: 2
+          step: 1
+          max: 5
+          icon: 🍎
+        - id: tomatoes
+          label: Tomaten
+          unit: g
+          answer: 500
+          step: 250
+          max: 1500
+          icon: 🍅
+        - id: water
+          label: Wasser
+          unit: Flasche
+          pluralUnit: Flaschen
+          answer: 3
+          step: 1
+          max: 6
+          icon: 💧
+        - id: cheese
+          label: Käse
+          unit: g
+          answer: 200
+          step: 100
+          max: 600
+          icon: 🧀
+      success: В корзине 2 кг яблок, 500 г помидоров, 3 бутылки воды и 200 г сыра. Записка
+        превратилась в реальные сборы.
+      wrong: "Сверьте число и единицу у каждого товара: *zwei Kilo*, *ein Pfund*, *drei Flaschen*,
+        *200 Gramm*. Красным отмечены несовпадающие количества."
+    - id: unit-price
+      kind: select
+      title: Проверьте цену на яблоки
+      intro: Прослушайте цену продавщицы. Выберите цену за один килограмм яблок, а не общий счёт.
+      clue:
+        dialogue: markt
+        lines:
+          - 1
+          - 2
+      options:
+        - id: two-fifty
+          label: 1 kg Äpfel — 2,50 €
+        - id: five
+          label: 1 kg Äpfel — 5,00 €
+        - id: six-eighty
+          label: 1 kg Äpfel — 6,80 €
+      answer:
+        - two-fifty
+      success: "*Zwei Euro fünfzig das Kilo*: килограмм стоит 2,50 евро. Два килограмма яблок — 5
+        евро."
+      wrong: "*Das Kilo* относится к одному килограмму. 5 евро получилось бы за два килограмма, 6,80
+        — весь счёт с помидорами."
+    - id: change
+      kind: select
+      title: Не потеряйте сдачу
+      intro: У продавщицы вы покупаете только яблоки и помидоры из разговора. Она назвала общую
+        сумму, Дана дала 10 евро. Какую сдачу нужно получить?
+      clue:
+        dialogue: markt
+        lines:
+          - 8
+          - 9
+      options:
+        - id: three-twenty
+          label: 3,20 €
+        - id: six-eighty
+          label: 6,80 €
+        - id: two-thirty
+          label: 2,30 €
+      answer:
+        - three-twenty
+      success: 10,00 − 6,80 = 3,20 евро. Вы не перепутали сумму покупки со сдачей.
+      wrong: Счёт — *sechs Euro achtzig*, Дана даёт *zehn Euro*. Из переданной суммы вычитаем счёт.
+    - id: pullover
+      kind: select
+      title: Выберите свитер для Матео
+      intro: У Матео 40 евро на свитер. Послушайте, какой размер он попросил после примерки, и
+        выберите подходящий вариант.
+      clue:
+        dialogue: kleider
+        lines:
+          - 3
+          - 5
+          - 8
+      options:
+        - id: s-budget
+          label: Pullover · S · 29,90 €
+          icon: 🧶
+        - id: m-budget
+          label: Pullover · M · 29,90 €
+          icon: 🧶
+        - id: s-expensive
+          label: Pullover · S · 49,90 €
+          icon: 🧶
+      answer:
+        - s-budget
+      success: Сначала Матео назвал M, но свитер оказался велик. Он попросил S; 29,90 евро
+        укладываются в бюджет.
+      wrong: "Проверьте оба условия: после *zu groß* он попросил S, а цена должна быть не выше 40
+        евро. Первое названное число не всегда окончательный выбор."
+    - id: confirmed-clothes
+      kind: pack
+      title: Что положить в пакет?
+      intro: Послушайте окончательные решения у кассы. В пакет идут только вещи, которые друзья
+        действительно берут. Названная вещь с *nicht* остаётся в магазине.
+      clue:
+        dialogue: entscheidung
+        lines:
+          - 0
+          - 1
+          - 2
+          - 3
+      options:
+        - id: pullover
+          label: Pullover
+          icon: 🧶
+        - id: jacket
+          label: Jacke
+          icon: 🧥
+        - id: shirt
+          label: T-Shirt
+          icon: 👕
+        - id: shoes
+          label: Schuhe
+          icon: 👟
+      answer:
+        - pullover
+        - shirt
+      success: Свитер и футболка куплены; куртка и туфли остаются. *Ihn* и *es* помогли понять
+        покупку, *sie nicht* — отказ.
+      wrong: Матео сказал *Ich nehme ihn* о свитере и *Ich nehme es* о футболке. Дана дважды сказала
+        *Ich kaufe sie nicht*.
+case:
+  title: Der doppelte Einkaufszettel
+  ru: Два списка покупок
+  intro: В клуб принесли две версии списка и чек с лишней одеждой. Сверьте количества, цены и
+    окончательные решения друзей. Важно восстановить покупки, прежде чем кто-то оплатит лишнее
+    от имени команды.
+  people:
+    M:
+      name: Mateo
+      voice: Reed
+    D:
+      name: Dana
+      voice: Anna
+  steps:
+    - read: В подлинной записке Даны указаны яблоки и помидоры. На копии вместо полкило появилась
+        другая масса.
+      evidence:
+        - note: Zwei Kilo Äpfel und ein Pfund Tomaten.
+          ru: Два килограмма яблок и полкило помидоров.
+      question: Какая строка должна остаться в списке?
+      options:
+        - Äpfel 2 kg · Tomaten 500 g
+        - Äpfel 2 kg · Tomaten 2 kg
+        - Äpfel 500 g · Tomaten 2 kg
+      answer: 0
+      right: "*Ein Pfund* — 500 г. *Zwei Kilo* относится к яблокам, не к обоим товарам."
+      wrong:
+        - null
+        - Два килограмма названы только для яблок.
+        - "Количество поменяли местами: это не подтверждается запиской."
+    - read: Кто-то перенёс цену помидоров на апельсины. Сверьте текст учебного объявления.
+      evidence:
+        - note: "Tomaten: das Kilo zwei Euro zwanzig. Orangen: das Kilo zwei Euro neunzig."
+          ru: "Помидоры: 2,20 евро за кг. Апельсины: 2,90 евро за кг."
+      question: Сколько стоит килограмм апельсинов по этому объявлению?
+      options:
+        - 2,20 €
+        - 2,90 €
+        - 9,20 €
+      answer: 1
+      right: "*Zwei Euro neunzig* относится к апельсинам. Товар и цену нужно держать парой."
+      wrong:
+        - 2,20 — цена помидоров.
+        - null
+        - В цене *neunzig* означает 90 центов, не 9 евро.
+    - read: В чеке появилась куртка. Но сообщение Матео подтверждает другую вещь.
+      evidence:
+        - M: Der Pullover in S ist gut. Ich nehme ihn. Die Jacke ist zu teuer.
+          ru: Свитер в размере S подходит. Я его беру. Куртка слишком дорогая.
+      question: Что подтверждено как покупка?
+      options:
+        - Куртка
+        - Свитер в размере M
+        - Свитер в размере S
+      answer: 2
+      right: "*Ihn* заменяет *den Pullover*. Размер S указан прямо; куртка оценена как слишком
+        дорогая."
+      wrong:
+        - Куртка не выбрана. Местоимение *ihn* относится к свитеру.
+        - Размер после примерки — S.
+        - null
+    - read: Нужно сохранить одну исправленную запись. В ней должны совпасть все проверенные
+        количества и вещь.
+      evidence:
+        - D: Ja, zwei Kilo Äpfel und ein Pfund Tomaten. Mateo nimmt den Pullover in S.
+          ru: Да, два килограмма яблок и полкило помидоров. Матео берёт свитер в размере S.
+      question: Какой вариант согласуется с подтверждениями?
+      options:
+        - 2 кг яблок · 500 г помидоров · свитер S
+        - 2 кг яблок · 2 кг помидоров · куртка
+        - 500 г яблок · 2 кг помидоров · свитер M
+      answer: 0
+      right: Все три пункта подтверждены отдельно. Исправленный список можно использовать; неверную
+        копию сохраняют, чтобы выяснить её источник.
+      wrong:
+        - null
+        - И масса помидоров, и куртка взяты из неверной копии.
+        - Количество товаров переставлено, размер свитера устарел.
+  ending: Команда не оплачивает лишнюю куртку и не покупает неправильное количество продуктов.
+    Йенсен замечает, что неверные записи смешивают старые и новые сведения. Теперь особенно
+    важно договориться о точном времени встречи и сохранять последнее подтверждение.

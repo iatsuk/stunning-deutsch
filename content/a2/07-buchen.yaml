@@ -1,0 +1,637 @@
+id: a2-buchen
+order: 7
+title: Könnten Sie die Buchung bitte bestätigen?
+ru: Уточняем бронирование
+lede: Дана звонит в вымышленную гостевую гостиницу в Бюзуме. Друзьям нужны два одноместных
+  номера на две ночи без завтрака. Предложение нужно не просто услышать, а уточнить и получить
+  подтверждение.
+goals:
+  - Вежливо уточнить цену и условия
+  - Отделить просьбу от подтверждённой брони
+  - Заполнить анкету и телефонную заметку
+  - Найти объявление под заданные условия
+grammar:
+  - "Вежливые просьбы: könnte, hätte gern, würde gern"
+exam:
+  - a2-lesen-3
+  - a2-hoeren-1
+  - a2-schreiben-1
+  - a2-sprechen-3
+dialogues:
+  scene:
+    title: Könnten Sie die Buchung bitte bestätigen?
+    ru: Уточняем бронирование
+    place: Büsum · вымышленная Lernpension Küstenhaus · вымышленная учебная ситуация
+    people:
+      D:
+        name: Dana
+        voice: Anna
+      M:
+        name: Mateo
+        voice: Reed
+      E:
+        name: Elif
+        voice: Flo
+      H:
+        name: Hauke
+        voice: Rocko
+      K:
+        name: Frau Martens
+        voice: Sandy
+    lines:
+      - K: Lernpension Küstenhaus, Martens, guten Tag!
+        ru: Учебная гостиница Кюстенхаус, Мартенс, добрый день!
+      - D: Guten Tag. Ich würde gern zwei Einzelzimmer reservieren.
+        ru: Добрый день. Я хотела бы забронировать два одноместных номера.
+      - K: Für welchen Zeitraum?
+        ru: На какой период?
+      - D: Vom vierzehnten bis zum sechzehnten Juli, ohne Frühstück.
+        ru: С четырнадцатого по шестнадцатое июля, без завтрака.
+      - K: Das geht. Ein Zimmer kostet 45 Euro pro Nacht.
+        ru: Это возможно. Один номер стоит 45 евро за ночь.
+      - D: Könnten Sie mir den Gesamtpreis nennen?
+        ru: Не могли бы вы назвать мне общую цену?
+      - K: Zwei Zimmer für zwei Nächte kosten insgesamt 180 Euro.
+        ru: Два номера на две ночи стоят всего 180 евро.
+      - D: Gut. Ich hätte gern eine Bestätigung per E-Mail.
+        ru: Хорошо. Я хотела бы получить подтверждение по электронной почте.
+      - K: Gern. Bitte geben Sie mir Ihren Namen.
+        ru: Охотно. Назовите, пожалуйста, ваше имя.
+words:
+  useful:
+    title: Wörter für die Aufgabe
+    ru: Слова для действия
+    items:
+      - de: die Buchung
+        ru: бронирование
+        pl: Buchungen
+      - de: die Anfrage
+        ru: запрос
+        pl: Anfragen
+      - de: die Bestätigung
+        ru: подтверждение
+        pl: Bestätigungen
+      - de: der Gesamtpreis
+        ru: общая цена
+        pl: Gesamtpreise
+      - de: insgesamt
+        ru: всего
+      - de: pro Nacht
+        ru: за ночь
+      - de: ohne Frühstück
+        ru: без завтрака
+      - de: per E-Mail
+        ru: по электронной почте
+      - de: der Zeitraum
+        ru: период
+        pl: Zeiträume
+      - de: ändern
+        ru: изменять
+      - de: frei
+        ru: свободный
+      - de: nennen
+        ru: называть
+tables:
+  rule:
+    title: "Вежливые просьбы: könnte, hätte gern, würde gern"
+    ru: Опора для решения
+    head:
+      - Beispiel
+      - Смысл и форма
+    ruCols:
+      - 1
+    rows:
+      - - Könnten Sie mir den Preis nennen?
+        - Könnten Sie …? — вежливая просьба.
+      - - Ich würde gern zwei Zimmer reservieren.
+        - würde gern + инфинитив в конце.
+      - - Ich hätte gern eine Bestätigung.
+        - hätte gern + предмет просьбы.
+tasks:
+  offer:
+    kind: message
+    part: a2-lesen-3
+    title: Ihr Angebot
+    from: Frau Martens
+    text: "Lernangebot: 14.–16. Juli. Zwei Einzelzimmer für zwei Personen. Ohne Frühstück. 45 Euro
+      pro Zimmer und Nacht, insgesamt 180 Euro. Anreise ab 15 Uhr. Bitte bestätigen Sie die
+      Daten schriftlich."
+  phone:
+    kind: worksheet
+    part: a2-hoeren-1
+    format: notes
+    title: Nachricht aus der Pension
+    voice: Sandy
+    text: Guten Tag, Frau Ospanowa. Hier ist Martens. Ihre Anfrage ist für den vierzehnten bis
+      sechzehnten Juli. Wir haben zwei Einzelzimmer ohne Frühstück. Der Gesamtpreis ist 180
+      Euro. Anreise ist ab fünfzehn Uhr. Bitte bestätigen Sie die Anfrage per E-Mail.
+    questions:
+      - prompt: Anreise am
+        answers:
+          - 14. Juli
+          - vierzehnten Juli
+          - 14.7.
+      - prompt: Abreise am
+        answers:
+          - 16. Juli
+          - sechzehnten Juli
+          - 16.7.
+      - prompt: Zimmer
+        answers:
+          - 2 Einzelzimmer
+          - zwei Einzelzimmer
+      - prompt: Gesamtpreis
+        answers:
+          - "180"
+          - 180 Euro
+      - prompt: Anreise ab
+        answers:
+          - 15:00
+          - 15 Uhr
+          - fünfzehn Uhr
+  form:
+    kind: form
+    part: a2-schreiben-1
+    title: Reservierungsformular
+    situation: Dana Ospanowa reserviert für zwei Personen zwei Einzelzimmer. Anreise am 14. Juli,
+      Abreise am 16. Juli. Sie möchte kein Frühstück. Tragen Sie die fünf fehlenden Angaben
+      ein.
+    fields:
+      - label: Name
+        value: Dana Ospanowa
+        given: true
+      - label: Anreise
+        value: 14. Juli
+      - label: Abreise
+        value: 16. Juli
+      - label: Personen
+        value: "2"
+      - label: Zimmer
+        value: 2 Einzelzimmer
+      - label: Frühstück
+        value: nein
+  talk:
+    kind: card
+    part: a2-sprechen-3
+    title: Eine Unterkunft auswählen
+    theme: Reise
+    word: Preis – Zimmer – Frühstück
+    sample:
+      - Ich würde gern zwei Einzelzimmer nehmen.
+      - Könnten Sie den Gesamtpreis nennen?
+      - Gut, dann bestätigen wir die Daten.
+steps:
+  - id: start
+    chapter: scene
+    title: Новое дело команды
+    beats:
+      - read: "Дана звонит в вымышленную гостевую гостиницу в Бюзуме. Друзьям нужны два одноместных
+          номера на две ночи без завтрака. Предложение нужно не просто услышать, а уточнить и
+          получить подтверждение. Все нужные условия даны в сцене: знания географии, настоящих
+          цен или расписаний не требуются. Сначала попробуйте понять, какого результата
+          добиваются друзья, затем слушайте реплики. На новом уровне важно не только найти
+          число или знакомое слово, но и связать несколько сведений."
+        point: Уточняем бронирование
+        set:
+          view: dialogue
+          dialogue: scene
+          reveal: 4
+      - read: Дана использует вежливые формы, но сохраняет конкретную цель каждой просьбы. Сначала тип
+          комнат, затем даты и завтрак, потом итоговая цена и подтверждение. Фраза *Ich würde
+          gern reservieren* ещё не означает, что бронь оформлена. В игре нужно дойти до явного
+          подтверждения условий и не заменить итоговую сумму ценой одной ночи.
+        point: "Вежливые просьбы: könnte, hätte gern, würde gern"
+        set:
+          reveal: 9
+  - id: words
+    chapter: words
+    title: Слова, которые понадобятся
+    beats:
+      - read: "*Pro Nacht* относится к одной ночи; *insgesamt* — к общей сумме. *Bestätigung* сообщает
+          о подтверждении, *Anfrage* — о запросе. Слова похожи по ситуации, но описывают разные
+          этапы. Уточнение по электронной почте помогает сверить даты и количество комнат; это
+          учебная задача, а не настоящее бронирование."
+        point: Сначала используйте слово для решения; словарь остаётся справочником.
+        set:
+          view: words
+          words: useful
+          reveal: 6
+      - read: "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к
+          ситуации: какие слова обозначают человека, место, условие или уже выполненное
+          действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово
+          встретится снова в записке или разговоре, попробуйте восстановить его смысл до
+          подсказки."
+        point: Возвращайтесь к выражениям в сообщениях и новых действиях.
+        set:
+          reveal: 12
+  - id: grammar
+    chapter: grammar
+    title: "Вежливые просьбы: könnte, hätte gern, würde gern"
+    beats:
+      - read: "Форма *könnten* делает вопрос мягче. Инфинитив *nennen* остаётся в конце, как после
+          знакомого модального глагола. Для этого урока достаточно готовой модели *Könnten Sie
+          …?*: мы не изучаем всю систему нереальных условий. Содержимое просьбы должно быть
+          конкретным — цену, дату или подтверждение нужно назвать прямо."
+        point: Könnten Sie …? — вежливая просьба.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: "Для вежливого желания используем *würde gern*. В конце находится действие:
+          *reservieren*. Это вариант просьбы, а не указание на уже оформленную бронь. После
+          него собеседник должен проверить доступность и условия. В задании отделяйте намерение
+          от ответа гостиницы: иначе в итоговую карточку попадёт ещё неподтверждённое
+          предложение."
+        point: würde gern + инфинитив в конце.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: "После *hätte gern* можно назвать то, что хотите получить: *eine Bestätigung*. Нового
+          инфинитива здесь не требуется. Это близко к готовому *Ich möchte …*, знакомому из A1.
+          Сравните мягкость формы и конкретность содержания. Вежливость не должна скрывать
+          важные детали: письменно повторите даты и количество комнат."
+        point: hätte gern + предмет просьбы.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+  - id: frames
+    chapter: grammar
+    title: Как устроена реплика
+    beats:
+      - read: В вопросе сначала *Könnten*, затем *Sie*, середина *mir die Buchung bitte*, в конце
+          *bestätigen*. Дательный *mir* уже знаком по третьему уроку. Новая вежливая форма не
+          меняет адресата просьбы и не отменяет рамку. Попробуйте заменить только действие на
+          *den Preis nennen*, сохранив порядок.
+        point: "*Könnten Sie mir die Buchung bestätigen?*"
+        set:
+          view: sentence
+          rows:
+            - de:
+                - ""
+                - Könnten
+                - Sie mir die Buchung bitte
+                - bestätigen?
+              ru: Не могли бы вы подтвердить мне бронирование?
+  - id: check
+    chapter: practice
+    title: Проверьте смысл до подсказки
+    beats:
+      - question: Ich würde gern reservieren — это уже подтверждённая бронь?
+        read: Нет, это желание забронировать. Подтверждение должно прийти от гостиницы с проверенными
+          условиями. Не отмечайте действие завершённым раньше ответа. В игре последняя реплика
+          просит повторить даты и тип комнат, чтобы стороны согласились именно с одним и тем же
+          вариантом.
+        point: Запрос и подтверждение — разные этапы.
+        set:
+          view: table
+          table: rule
+      - question: 45 евро за ночь — это итог для двух комнат на две ночи?
+        read: "Нет. В источнике 45 евро относится к одной комнате и одной ночи. Для двух комнат на две
+          ночи сотрудница назвала 180 евро. Здесь не нужно угадывать дополнительные сборы:
+          решение опирается только на явно заданные учебные условия."
+        point: "*pro Zimmer und Nacht* отличается от *insgesamt*."
+        set:
+          view: table
+          table: rule
+  - id: exam-offer
+    chapter: exam
+    title: Ihr Angebot
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: offer
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: offer
+        set:
+          view: task
+          task: offer
+          solved: true
+  - id: exam-phone
+    chapter: exam
+    title: Nachricht aus der Pension
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: phone
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: phone
+        set:
+          view: task
+          task: phone
+          solved: true
+  - id: exam-form
+    chapter: exam
+    title: Reservierungsformular
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: form
+          reveal: 0
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: form
+          reveal: 0
+        set:
+          view: task
+          task: form
+          solved: true
+  - id: exam-talk
+    chapter: exam
+    title: Eine Unterkunft auswählen
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: talk
+          reveal: 0
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: talk
+          reveal: 0
+        set:
+          view: task
+          task: talk
+          solved: true
+exercises:
+  - type: choice
+    q: ___ Sie mir bitte helfen?
+    options:
+      - Könnten
+      - Könnte
+      - Könntest
+    answer: 0
+    why: Вежливое Sie → könnten.
+  - type: choice
+    q: Ich würde gern ein Zimmer ___.
+    options:
+      - reservieren
+      - reserviert
+      - reserviere
+    answer: 0
+    why: Инфинитив в конце.
+  - type: choice
+    q: Ich ___ gern eine Bestätigung.
+    options:
+      - hätte
+      - hättest
+      - hätten
+    answer: 0
+    why: Ich hätte gern.
+  - type: choice
+    q: 45 Euro ___ Nacht.
+    options:
+      - pro
+      - insgesamt
+      - zusammen
+    answer: 0
+    why: Единица цены.
+  - type: choice
+    q: Wir möchten ___ Frühstück.
+    options:
+      - kein
+      - keinen
+      - keine
+    answer: 0
+    why: "*Das Frühstück*, Akkusativ kein."
+  - type: choice
+    q: "Запрос — это:"
+    options:
+      - die Anfrage
+      - die Bestätigung
+      - die Abreise
+    answer: 0
+    why: Запрос ещё не подтверждение.
+  - type: order
+    ru: Не могли бы вы назвать мне цену?
+    de: Könnten Sie mir den Preis nennen?
+  - type: order
+    ru: Я хотел бы забронировать два номера.
+    de: Ich würde gern zwei Zimmer reservieren.
+  - type: order
+    ru: Я хотел бы получить подтверждение.
+    de: Ich hätte gern eine Bestätigung.
+  - type: order
+    ru: Мы не хотим завтрак.
+    de: Wir möchten kein Frühstück.
+  - type: order
+    ru: Общая цена — 180 евро.
+    de: Der Gesamtpreis ist 180 Euro.
+  - type: order
+    ru: Пожалуйста, подтвердите данные.
+    de: Bitte bestätigen Sie die Daten.
+case:
+  title: Anfrage oder Bestätigung?
+  ru: Запрос или подтверждение
+  intro: В дневнике оказались две версии сообщения. Установите, что подтверждено первоисточником.
+    Вывод зависит от языка, а не от личности автора.
+  people: {}
+  steps:
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Zwei Einzelzimmer, ohne Frühstück.
+          ru: Два одноместных номера, без завтрака.
+      question: Какая карточка совпадает?
+      options:
+        - Один двухместный с завтраком
+        - Два одноместных без завтрака
+        - Два двухместных
+      answer: 1
+      right: Совпадают и количество, и тип, и завтрак.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: "45 Euro pro Zimmer und Nacht. Zwei Zimmer, zwei Nächte: 180 Euro."
+          ru: "45 евро за комнату за ночь. Две комнаты, две ночи: 180 евро."
+      question: Какова названная общая сумма?
+      options:
+        - "45"
+        - "90"
+        - "180"
+      answer: 2
+      right: Единичная цена не равна итогу для всей брони.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Ich würde gern reservieren. Bitte schicken Sie mir ein Angebot.
+          ru: Я хотела бы забронировать. Пожалуйста, пришлите предложение.
+      question: Подтверждена ли бронь этой репликой?
+      options:
+        - Да
+        - Нет, это запрос
+        - Да, на любые даты
+      answer: 1
+      right: Нужно предложение и подтверждение согласованных условий.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+  ending: Запись исправлена по источникам. В следующей главе команда воспользуется
+    подтверждёнными сведениями для нового решения.
+adventure:
+  kind: sequence
+  title: Доведите запрос до подтверждения
+  intro: Дана звонит в вымышленную гостевую гостиницу в Бюзуме. Друзьям нужны два одноместных
+    номера на две ночи без завтрака. Предложение нужно не просто услышать, а уточнить и
+    получить подтверждение.
+  ending: Количество комнат, даты, завтрак и цена согласованы. Подтверждение можно внести в
+    дневник. Теперь друзья подготовят комнату для следующего гостя в Киле.
+  challenges:
+    - id: room
+      kind: select
+      title: Сверьте тип комнат
+      intro: Не замените два одноместных одной двухместной комнатой.
+      mode: reading
+      clue:
+        task: offer
+      options:
+        - id: o0
+          label: zwei Einzelzimmer
+        - id: o1
+          label: ein Doppelzimmer
+        - id: o2
+          label: zwei Doppelzimmer
+      answer:
+        - o0
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."
+    - id: price
+      kind: note
+      title: Запишите итоговую цену
+      intro: Прослушайте ответ гостиницы. Запишите общую сумму, а не стоимость одной комнаты за ночь.
+      clue:
+        task: phone
+      fields:
+        - label: Gesamtpreis
+          answers:
+            - "180"
+            - 180 Euro
+        - label: Anreise ab
+          answers:
+            - 15:00
+            - 15 Uhr
+            - fünfzehn Uhr
+      success: Итог — 180 евро, приезд с 15:00.
+      wrong: Общая сумма 180 евро, заселение с пятнадцати часов.
+    - id: polite
+      kind: order
+      title: Уточните подтверждение вежливо
+      intro: Обратитесь к сотруднице на Sie.
+      label: Реплика для команды
+      tokens:
+        - Könnten
+        - Sie mir
+        - die Buchung
+        - bestätigen?
+      success: Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.
+      wrong: "Проверьте положение глагола и конец предложения: используйте все фрагменты."
+    - id: confirm
+      kind: negotiation
+      title: Подтвердите согласованные условия
+      intro: Сотрудница предлагает завтрак отдельно. Сохраните исходный запрос и подтвердите даты.
+      start: a
+      nodes:
+        - id: a
+          text: "Martens: Möchten Sie Frühstück dazu?"
+          choices:
+            - label: Nein, danke. Ohne Frühstück, bitte.
+              next: b
+              feedback: Сохранено условие без завтрака.
+            - label: Ist das Frühstück schon im Preis?
+              next: c
+              feedback: Вы уточнили состав цены.
+        - id: c
+          text: "Martens: Nein, das Frühstück kostet extra."
+          choices:
+            - label: Dann möchten wir kein Frühstück.
+              next: b
+              feedback: Вы вернулись к согласованному условию.
+        - id: b
+          text: "Martens: Zwei Einzelzimmer vom 14. bis 16. Juli, insgesamt 180 Euro. Stimmt das?"
+          choices:
+            - label: Ja, das stimmt. Bitte schicken Sie die Bestätigung.
+              next: end
+              feedback: Условия явно подтверждены.
+        - id: end
+          text: "Martens: Gern. Ihre Buchung ist bestätigt."
+          terminal: true
+          choices: []
+      success: Вы подтвердили именно предложенные даты и комнаты, без добавленного завтрака.
+      wrong: Уточните условия до согласия.
+    - id: dates
+      kind: select
+      title: Внесите правильный период
+      intro: Выберите даты из предложения, не другие планы команды.
+      mode: reading
+      clue:
+        task: offer
+      options:
+        - id: o0
+          label: 14.–16. Juli
+        - id: o1
+          label: 14.–16. August
+        - id: o2
+          label: 16.–18. Juli
+      answer:
+        - o0
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."

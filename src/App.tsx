@@ -1,5 +1,6 @@
-import { useEffect, type ReactNode } from "react";
-import { levelById } from "./content";
+import { useEffect, useState, type ReactNode } from "react";
+import { assessmentCatalog, levelById } from "./content";
+import { AssessmentPage } from "./pages/Assessment";
 import { scrollToSection, stopAudio, useRoute } from "./hooks";
 import { Home } from "./pages/Home";
 import { DatenschutzPage, ImpressumPage } from "./pages/Legal";
@@ -18,6 +19,7 @@ export function App() {
   if (levelId === "impressum") return <ImpressumPage />;
   if (levelId === "datenschutz") return <DatenschutzPage />;
   const level = levelId ? levelById(levelId) : undefined;
+  if (level && topicId && assessmentCatalog.some(a => a.id === topicId && a.level === level.id)) return <AssessmentPage key={topicId} level={level} id={topicId} />;
   if (level && level.status === "open" && topicId) return <TopicPage key={topicId} level={level} topicId={topicId} />;
   if (level && level.status === "open") return <LevelPage level={level} />;
   return <Home />;
@@ -26,8 +28,33 @@ export function App() {
 export type Crumb = { label: string; href?: string };
 
 export function Topbar({ crumbs = [], nav = [] }: { crumbs?: Crumb[]; nav?: [id: string, label: string][] }) {
+  const [active, setActive] = useState("");
+  const navKey = nav.map(([id]) => id).join("|");
+  useEffect(() => {
+    const ids = navKey.split("|").filter(Boolean);
+    let frame = 0;
+    const measure = () => {
+      frame = 0;
+      const line = (document.querySelector(".topbar")?.getBoundingClientRect().bottom ?? 56) + 32;
+      let current = "";
+      for (const id of ids) {
+        const section = document.getElementById(id);
+        if (section && section.getBoundingClientRect().top <= line) current = id;
+      }
+      setActive(current);
+    };
+    const schedule = () => { if (!frame) frame = requestAnimationFrame(measure); };
+    measure();
+    window.addEventListener("scroll", schedule, { passive: true });
+    window.addEventListener("resize", schedule);
+    return () => {
+      cancelAnimationFrame(frame);
+      window.removeEventListener("scroll", schedule);
+      window.removeEventListener("resize", schedule);
+    };
+  }, [navKey]);
   return (
-    <header className="topbar">
+    <header className={`topbar${nav.length > 3 ? " topbar-lesson" : ""}`}>
       <div className="topbar-left">
         <a className="wordmark" href="#/">
           <i aria-hidden="true" />
@@ -39,9 +66,9 @@ export function Topbar({ crumbs = [], nav = [] }: { crumbs?: Crumb[]; nav?: [id:
           </span>
         ))}
       </div>
-      <nav>
+      <nav aria-label="Разделы страницы">
         {nav.map(([id, label]) => (
-          <button key={id} type="button" onClick={() => scrollToSection(id)}>
+          <button key={id} type="button" aria-current={active === id ? "location" : undefined} onClick={() => scrollToSection(id)}>
             {label}
           </button>
         ))}
@@ -56,8 +83,9 @@ export function Footer({ children }: { children?: ReactNode }) {
       {children}
       <p>
         Озвучка — <a href="https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base">Qwen3-TTS 1.7B</a> (Apache 2.0).
-        {" "}Формат экзамена A1 — по официальному описанию Start Deutsch 1
-        (telc Deutsch A1 и Goethe-Zertifikat A1 — один и тот же экзамен).
+        {" "}Задания и записи авторские. Экзаменационная практика ориентирована на Start Deutsch 1 (A1),
+        {" "}<a href="https://www.telc.net/sprachpruefungen/deutsch/start-deutsch-2-telc-deutsch-a2/">Start Deutsch 2 (A2)</a>
+        {" "}и <a href="https://www.telc.net/sprachpruefungen/deutsch/zertifikat-deutsch-telc-deutsch-b1/">Zertifikat Deutsch / telc Deutsch B1</a>.
       </p>
       <p>
         Независимый некоммерческий проект. Не связан с telc gGmbH и Goethe-Institut; telc и Start Deutsch —

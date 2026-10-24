@@ -1,0 +1,662 @@
+id: a2-termine
+order: 10
+title: Ich soll zuerst anrufen.
+ru: Запись и переданное указание
+lede: Матео переносит учебную запись в практику и сообщает об этом преподавательнице. Нужно
+  понять новое время, кому перезвонить и что взять с собой. Медицинское состояние — часть
+  вымышленной сцены; игрок не выбирает диагноз или лечение.
+goals:
+  - Использовать частые возвратные глаголы
+  - Пересказать указание с sollen
+  - Отличить перенос записи от отмены всех планов
+  - Написать короткое сообщение о переносе
+grammar:
+  - sich anmelden, sich fühlen; sollen
+exam:
+  - a2-lesen-2
+  - a2-hoeren-2
+  - a2-schreiben-2
+  - a2-sprechen-2
+dialogues:
+  scene:
+    title: Ich soll zuerst anrufen.
+    ru: Запись и переданное указание
+    place: Kiel · вымышленная Praxis Dr. Hoffmann · вымышленная учебная ситуация
+    people:
+      D:
+        name: Dana
+        voice: Anna
+      M:
+        name: Mateo
+        voice: Reed
+      E:
+        name: Elif
+        voice: Flo
+      H:
+        name: Hauke
+        voice: Rocko
+      K:
+        name: Frau Klein
+        voice: Shelley
+    lines:
+      - M: Guten Tag. Ich fühle mich nicht gut und möchte meinen Termin verschieben.
+        ru: Добрый день. Я плохо себя чувствую и хочу перенести свою запись.
+      - K: Guten Tag, Herr Fernández. Ihr Termin ist am Dienstag um neun Uhr, richtig?
+        ru: Добрый день, господин Фернандес. Ваша запись во вторник в девять, верно?
+      - M: Ja. Könnten Sie mir einen anderen Termin geben?
+        ru: Да. Не могли бы вы предложить другое время?
+      - K: Am Mittwoch um halb elf ist ein Termin frei. Bitte rufen Sie uns zuerst an und bestätigen
+          Sie ihn.
+        ru: В среду в 10:30 есть свободное время. Пожалуйста, сначала позвоните нам и подтвердите его.
+      - M: Gut. Ich soll also zuerst anrufen. Was soll ich mitbringen?
+        ru: Хорошо. Значит, мне сначала нужно позвонить. Что мне взять с собой?
+      - K: Bringen Sie bitte Ihre Karte mit. Im Haus melden Sie sich am Empfang an.
+        ru: Возьмите, пожалуйста, свою карту. В здании отметьтесь у стойки регистрации.
+      - D: Ich schreibe Frau Thomsen, dass du später zum Kurs kommst.
+        ru: Я напишу фрау Томсен, что ты придёшь на курс позже.
+      - M: Danke. Ich kümmere mich um den Anruf.
+        ru: Спасибо. Я займусь звонком.
+words:
+  useful:
+    title: Wörter für die Aufgabe
+    ru: Слова для действия
+    items:
+      - de: sich anmelden
+        ru: регистрироваться
+      - de: sich fühlen
+        ru: чувствовать себя
+      - de: sich kümmern
+        ru: заниматься, заботиться
+      - de: sich ausruhen
+        ru: отдыхать
+      - de: verschieben
+        ru: переносить
+      - de: bestätigen
+        ru: подтверждать
+      - de: zurückrufen
+        ru: перезванивать
+      - de: der Empfang
+        ru: стойка регистрации
+        pl: "-"
+      - de: die Versichertenkarte
+        ru: карта страховки
+        pl: Versichertenkarten
+      - de: die Änderung
+        ru: изменение
+        pl: Änderungen
+      - de: später
+        ru: позже
+      - de: zuerst anrufen
+        ru: сначала позвонить
+tables:
+  rule:
+    title: sich anmelden, sich fühlen; sollen
+    ru: Опора для решения
+    head:
+      - Beispiel
+      - Смысл и форма
+    ruCols:
+      - 1
+    rows:
+      - - Ich fühle mich nicht gut. Du fühlst dich müde.
+        - ich → mich; du → dich.
+      - - Er meldet sich an. Wir melden uns an.
+        - er / sie → sich; wir → uns; ihr → euch.
+      - - Ich möchte mich anmelden.
+        - "После модального инфинитив в конце: anmelden."
+      - - Ich soll zuerst anrufen.
+        - sollen передаёт полученное указание.
+tasks:
+  message:
+    kind: message
+    part: a2-lesen-2
+    title: Neuer Termin · Lernnachricht
+    from: Frau Klein
+    text: Der alte Termin am Dienstag um 9 Uhr passt nicht. Ein neuer Termin ist am Mittwoch um
+      10:30 Uhr möglich. Bitte rufen Sie zuerst an und bestätigen Sie ihn. Bringen Sie Ihre
+      Karte mit. Melden Sie sich am Empfang an.
+  radio:
+    kind: worksheet
+    part: a2-hoeren-2
+    format: radio
+    title: Fünf kurze Lernmeldungen
+    situation: Hören Sie jede Meldung einmal. Wählen Sie a, b oder c.
+    recordings:
+      - voice: Shelley
+        text: Die Anmeldung in der Praxis ist heute am Empfang im Erdgeschoss. Bitte gehen Sie nicht in
+          den ersten Stock.
+      - voice: Rocko
+        text: Die Besprechung im Club beginnt heute um fünfzehn Uhr, nicht um vierzehn Uhr.
+      - voice: Sandy
+        text: Unser Café öffnet am Sonntag erst um zehn Uhr. Frühstück gibt es bis zwölf Uhr.
+      - voice: Eddy
+        text: Unser Lernmuseum ist heute geschlossen. Morgen können Sie uns wieder besuchen.
+      - voice: Flo
+        text: Elif sucht ihre blaue Tasche. Sie liegt nicht im Kursraum. Bitte schauen Sie am Empfang
+          nach.
+    questions:
+      - prompt: Anmeldung ist
+        options:
+          - am Empfang
+          - im ersten Stock
+          - im Café
+        answers:
+          - am Empfang
+      - prompt: Besprechung beginnt um
+        options:
+          - 14 Uhr
+          - 15 Uhr
+          - 16 Uhr
+        answers:
+          - 15 Uhr
+      - prompt: Café öffnet um
+        options:
+          - 9 Uhr
+          - 10 Uhr
+          - 12 Uhr
+        answers:
+          - 10 Uhr
+      - prompt: Besuch im Lernmuseum wieder möglich
+        options:
+          - heute
+          - morgen
+          - nächste Woche
+        answers:
+          - morgen
+      - prompt: Wo soll man nach der Tasche schauen?
+        options:
+          - am Empfang
+          - im Kursraum
+          - im Zug
+        answers:
+          - am Empfang
+  letter:
+    kind: message
+    part: a2-schreiben-2
+    title: Später zum Kurs
+    from: Frau Thomsen
+    text: Bitte schreiben Sie mir, wenn sich Ihr Plan ändert.
+    situation: Sie haben einen neuen Termin. Wählen Sie drei von vier Punkten und schreiben Sie
+      circa 40 Wörter mit Anrede und Gruß.
+    choose: 3
+    points:
+      - Warum später?
+      - Wann ist der Termin?
+      - Wann kommen Sie zum Kurs?
+      - Hausaufgaben?
+    sample:
+      - Liebe Frau Thomsen,
+      - ich kann am Mittwoch nicht pünktlich zum Kurs kommen, weil ich um 10:30 Uhr einen
+        Termin habe. Welche Hausaufgaben soll ich machen? Bitte schicken Sie mir die Aufgaben.
+        Ich möchte sie zu Hause machen. Vielen Dank für Ihre Hilfe.
+      - Viele Grüße
+  talk:
+    kind: card
+    part: a2-sprechen-2
+    title: Einen Termin ändern
+    theme: Termine
+    word: Wann? Warum? Was mitbringen?
+    sample:
+      - Ich möchte meinen Termin verschieben.
+      - Wann passt es Ihnen?
+      - Ich soll zuerst anrufen und die Zeit bestätigen.
+steps:
+  - id: start
+    chapter: scene
+    title: Новое дело команды
+    beats:
+      - read: "Матео переносит учебную запись в практику и сообщает об этом преподавательнице. Нужно
+          понять новое время, кому перезвонить и что взять с собой. Медицинское состояние —
+          часть вымышленной сцены; игрок не выбирает диагноз или лечение. Все нужные условия
+          даны в сцене: знания географии, настоящих цен или расписаний не требуются. Сначала
+          попробуйте понять, какого результата добиваются друзья, затем слушайте реплики. На
+          новом уровне важно не только найти число или знакомое слово, но и связать несколько
+          сведений."
+        point: Запись и переданное указание
+        set:
+          view: dialogue
+          dialogue: scene
+          reveal: 4
+      - read: "Сотрудница предлагает новое время и просит подтвердить его звонком. Матео пересказывает
+          поручение: *Ich soll zuerst anrufen*. Это не его собственная рекомендация другому
+          человеку, а передача полученного указания. Формы *mich* и *sich* связываются с тем же
+          человеком, который действует. В этой теме работа с сообщениями заменяет любые догадки
+          о лечении."
+        point: sich anmelden, sich fühlen; sollen
+        set:
+          reveal: 8
+  - id: words
+    chapter: words
+    title: Слова, которые понадобятся
+    beats:
+      - read: "Возвратный глагол часто учат вместе с местоимением: *sich anmelden*, *sich fühlen*. В
+          конкретной реплике форма меняется: *ich melde mich an*, *Sie melden sich an*. Не
+          переводите любое русское «-ся» механически: здесь рассматриваются конкретные полезные
+          выражения. Для записи важны также *verschieben*, *bestätigen*, *zuerst* — этапы не
+          взаимозаменяемы."
+        point: Сначала используйте слово для решения; словарь остаётся справочником.
+        set:
+          view: words
+          words: useful
+          reveal: 6
+      - read: "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к
+          ситуации: какие слова обозначают человека, место, условие или уже выполненное
+          действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово
+          встретится снова в записке или разговоре, попробуйте восстановить его смысл до
+          подсказки."
+        point: Возвращайтесь к выражениям в сообщениях и новых действиях.
+        set:
+          reveal: 12
+  - id: grammar
+    chapter: grammar
+    title: sich anmelden, sich fühlen; sollen
+    beats:
+      - read: В этих выражениях местоимение относится к тому же человеку, что и подлежащее. *Ich fühle
+          mich*, *du fühlst dich*. Нельзя просто оставить инфинитивное *sich* после любого
+          лица. Сначала определите, о ком говорится, затем подберите форму. В диалоге это
+          описание состояния персонажа, а не основание для медицинского вывода.
+        point: ich → mich; du → dich.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+            - 3
+      - read: "У третьего лица используем *sich*, у группы с говорящим — *uns*, у нескольких друзей —
+          *euch*. Приставка *an* в главном предложении отделяется: *Wir melden uns an*. У
+          вежливого *Sie* форма тоже *sich*. Контекст и обращение помогают понять, говорит
+          человек о себе или даёт инструкцию посетителю."
+        point: er / sie → sich; wir → uns; ihr → euch.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+            - 3
+      - read: "С модальным глаголом приставка не отделяется от инфинитива: *möchte mich anmelden*.
+          Местоимение находится внутри рамки. Сравните с обычным *Ich melde mich an*. Обе
+          модели выражают регистрацию, но одна сообщает желание, другая действие. В игре нужно
+          собрать подходящую реплику для своего этапа."
+        point: "После модального инфинитив в конце: anmelden."
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+            - 3
+      - read: "Матео пересказывает просьбу сотрудницы: сначала позвонить. Личная форма *soll* стоит
+          второй, инфинитив *anrufen* — в конце. Это отличается от *Ich will anrufen*,
+          собственного желания. В задании важно сохранить источник поручения и его порядок;
+          назначение лечения или оценку здоровья здесь не делаем."
+        point: sollen передаёт полученное указание.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+            - 3
+  - id: frames
+    chapter: grammar
+    title: Как устроена реплика
+    beats:
+      - read: У *Ich soll mich am Empfang anmelden* личная форма *soll* занимает вторую позицию.
+          Местоимение *mich* остаётся в середине, инфинитив *anmelden* завершает рамку. Реплика
+          пересказывает инструкцию на стойке. Если говорящий уже регистрируется, можно сказать
+          *Ich melde mich am Empfang an* — это другой этап.
+        point: "*Ich soll mich am Empfang anmelden.*"
+        set:
+          view: sentence
+          rows:
+            - de:
+                - Ich
+                - soll
+                - mich am Empfang
+                - anmelden.
+              ru: Мне сказали зарегистрироваться у стойки.
+  - id: check
+    chapter: practice
+    title: Проверьте смысл до подсказки
+    beats:
+      - question: Ich melde sich an — верно?
+        read: "Нет: *Ich melde mich an*. *Sich* относится к третьему лицу и вежливому *Sie* в наших
+          примерах. У первого лица нужна форма *mich*. С модальным глаголом получится *Ich
+          möchte mich anmelden*: приставка вернётся к инфинитиву в конце."
+        point: "*ich melde mich an*, но *er meldet sich an*."
+        set:
+          view: table
+          table: rule
+      - question: Новое предложенное время уже подтверждено?
+        read: "В сообщении просят сначала перезвонить и подтвердить. Пока это не сделано, мы не можем
+          выдать предложение за завершённое согласование. В игре нужно сохранить
+          последовательность: услышать новые данные, перезвонить, подтвердить, затем сообщить
+          об изменении преподавателю."
+        point: Указанный следующий шаг — часть сообщения, а не необязательная деталь.
+        set:
+          view: table
+          table: rule
+  - id: exam-message
+    chapter: exam
+    title: Neuer Termin · Lernnachricht
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: message
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: message
+        set:
+          view: task
+          task: message
+          solved: true
+  - id: exam-radio
+    chapter: exam
+    title: Fünf kurze Lernmeldungen
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: radio
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: radio
+        set:
+          view: task
+          task: radio
+          solved: true
+  - id: exam-letter
+    chapter: exam
+    title: Später zum Kurs
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: letter
+          reveal: 0
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: letter
+          reveal: 0
+        set:
+          view: task
+          task: letter
+          solved: true
+  - id: exam-talk
+    chapter: exam
+    title: Einen Termin ändern
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: talk
+          reveal: 0
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: talk
+          reveal: 0
+        set:
+          view: task
+          task: talk
+          solved: true
+exercises:
+  - type: choice
+    q: Ich fühle ___ nicht gut.
+    options:
+      - mich
+      - sich
+      - dich
+    answer: 0
+    why: Первое лицо.
+  - type: choice
+    q: Du meldest ___ an.
+    options:
+      - dich
+      - mich
+      - uns
+    answer: 0
+    why: Второе лицо.
+  - type: choice
+    q: Er meldet ___ an.
+    options:
+      - sich
+      - mich
+      - euch
+    answer: 0
+    why: Третье лицо.
+  - type: choice
+    q: Wir möchten ___ anmelden.
+    options:
+      - uns
+      - sich
+      - dich
+    answer: 0
+    why: Группа с говорящим.
+  - type: choice
+    q: Ich soll zuerst ___.
+    options:
+      - anrufen
+      - rufe an
+      - angerufen
+    answer: 0
+    why: Инфинитив после soll.
+  - type: choice
+    q: Ich ___ mich am Empfang anmelden.
+    options:
+      - soll
+      - sollen
+      - sollst
+    answer: 0
+    why: Ich soll.
+  - type: order
+    ru: Я плохо себя чувствую.
+    de: Ich fühle mich nicht gut.
+  - type: order
+    ru: Мы регистрируемся у стойки.
+    de: Wir melden uns am Empfang an.
+  - type: order
+    ru: Я хотел бы перенести свою запись.
+    de: Ich möchte meinen Termin verschieben.
+  - type: order
+    ru: Мне сказали сначала позвонить.
+    de: Ich soll zuerst anrufen.
+  - type: order
+    ru: Пожалуйста, подтвердите новое время.
+    de: Bitte bestätigen Sie die neue Zeit.
+  - type: order
+    ru: Она говорит, чтобы я пришёл позже.
+    de: Sie sagt, dass ich später kommen soll.
+case:
+  title: Erst anrufen, dann bestätigen
+  ru: Сверка дневника
+  intro: В заметке о переносе пропущен следующий шаг и осталось старое время. Сверьте сообщение,
+    не добавляя медицинских выводов.
+  people: {}
+  steps:
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: "Alter Termin: Dienstag, 9 Uhr. Neuer Vorschlag: Mittwoch, 10:30 Uhr."
+          ru: "Старая запись: вторник, 9:00. Новое предложение: среда, 10:30."
+      question: Какое новое время предложено?
+      options:
+        - Вторник 9:00
+        - Среда 10:30
+        - Среда 9:30
+      answer: 1
+      right: Меняются и день, и время.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Bitte rufen Sie zuerst an und bestätigen Sie den Termin.
+          ru: Пожалуйста, сначала позвоните и подтвердите запись.
+      question: Что нужно сделать?
+      options:
+        - Сразу прийти без звонка
+        - Позвонить и подтвердить
+        - Отменить все планы
+      answer: 1
+      right: Нужен явно указанный следующий шаг.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Ich soll mich am Empfang anmelden.
+          ru: Мне сказали зарегистрироваться у стойки.
+      question: Кто должен зарегистрироваться?
+      options:
+        - Сам говорящий
+        - Любой другой человек
+        - Преподавательница
+      answer: 0
+      right: "*Ich* и *mich* относятся к одному человеку."
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+  ending: Запись исправлена по источникам. В следующей главе команда воспользуется
+    подтверждёнными сведениями для нового решения.
+adventure:
+  kind: sequence
+  title: Передайте изменение точно
+  intro: Матео переносит учебную запись в практику и сообщает об этом преподавательнице. Нужно
+    понять новое время, кому перезвонить и что взять с собой. Медицинское состояние — часть
+    вымышленной сцены; игрок не выбирает диагноз или лечение.
+  ending: Новое время и следующий шаг записаны, сообщение преподавательнице подготовлено. В
+    следующей теме понадобится так же точно объяснить проблему с покупкой.
+  challenges:
+    - id: new-time
+      kind: clock
+      title: Поставьте новое время
+      intro: Старую запись нужно заменить предложенным временем среды. День подтверждаем отдельно.
+      mode: reading
+      clue:
+        task: message
+      answer: 10:30
+      initial: 09:00
+      minuteStep: 5
+      success: Среда 10:30, не вторник 9:00.
+      wrong: Новое предложение — среда в 10:30.
+    - id: reflexive
+      kind: match
+      title: Кто регистрируется?
+      intro: Соедините подлежащее с нужным местоимением.
+      mode: reading
+      slots:
+        - id: ich
+          label: Ich melde … an.
+          answer: mich
+        - id: du
+          label: Du meldest … an.
+          answer: dich
+        - id: wir
+          label: Wir melden … an.
+          answer: uns
+      options:
+        - id: mich
+          label: mich
+        - id: dich
+          label: dich
+        - id: uns
+          label: uns
+        - id: sich
+          label: sich
+      success: Форма местоимения согласована с действующим лицом.
+      wrong: У *ich* — *mich*, у *du* — *dich*, у *wir* — *uns*.
+    - id: instruction
+      kind: order
+      title: Перескажите указание
+      intro: «Мне сказали сначала позвонить».
+      label: Реплика для команды
+      tokens:
+        - Ich
+        - soll
+        - zuerst
+        - anrufen.
+      success: Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.
+      wrong: "Проверьте положение глагола и конец предложения: используйте все фрагменты."
+    - id: next
+      kind: select
+      title: Выберите следующий шаг
+      intro: Что прямо просят сделать перед подтверждением?
+      mode: reading
+      clue:
+        task: message
+      options:
+        - id: o0
+          label: zuerst anrufen
+        - id: o1
+          label: ohne Bestätigung direkt kommen
+        - id: o2
+          label: den Termin ignorieren
+      answer:
+        - o0
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."
+    - id: card
+      kind: select
+      title: Подготовьте нужное по сообщению
+      intro: Что нужно принести и где зарегистрироваться?
+      mode: reading
+      clue:
+        task: message
+      options:
+        - id: o0
+          label: Karte · am Empfang
+        - id: o1
+          label: Tickets · im Café
+        - id: o2
+          label: Kamera · im ersten Stock
+      answer:
+        - o0
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."

@@ -3,10 +3,10 @@ order: 12
 title: Wir sind nach Hamburg gefahren.
 ru: Поездки, погода, даты
 lede: >-
-  Курс закончился, и Анна с Марко едут на выходные в Гамбург: номер в отеле,
-  дождь и ветер, звонок из Лейпцига. Учимся рассказывать о поездке в прошлом,
-  говорить о погоде и называть даты — и узнаём, когда в Perfekt нужен sein, а
-  не haben.
+  Перед финалом Kieler Woche Дана и Матео вспоминают поездку в Гамбург в начале июня: отель,
+  дождь, прогулка по порту и звонок Элиф из Киля. Помогите восстановить даты и события, понять
+  объявление и закрыть историю неверных копий. Учимся Perfekt с *sein*, погоде и порядковым
+  числам в датах.
 goals:
   - Рассказать о поездке в прошлом и не перепутать haben и sein
   - Поговорить о погоде — сегодня и вчера
@@ -19,17 +19,17 @@ grammar:
   - Погода с es
   - Месяцы и времена года
   - Порядковые числа и дата
-exam: [schreiben-2, schreiben-1, hoeren-2]
+exam: [ schreiben-2, schreiben-1, hoeren-2 ]
 
 dialogues:
   empfang:
     title: Im Hotel Elbblick
     ru: У стойки регистрации
-    place: Hotel Elbblick, Hamburg
+    place: Вымышленный Hotel Elbblick, Hamburg · воспоминание о начале июня
     people:
       K: { name: Herr Hansen, voice: Eddy }
-      A: { name: Anna, voice: Anna }
-      M: { name: Marco, voice: Reed }
+      A: { name: Dana, voice: Anna }
+      M: { name: Mateo, voice: Reed }
     lines:
       - K: Guten Abend! Willkommen im Hotel Elbblick.
         ru: Добрый вечер! Добро пожаловать в отель «Эльбблик».
@@ -52,19 +52,21 @@ dialogues:
       - M: Vielen Dank! Bis morgen!
         ru: Большое спасибо! До завтра!
   telefon:
-    title: Ein Anruf aus Leipzig
-    ru: Звонок из Лейпцига
+    title: Ein Anruf aus Kiel
+    ru: Звонок из Киля
     place: Am Telefon
     people:
-      L: { name: Lena, voice: Shelley }
-      A: { name: Anna, voice: Anna }
+      L:
+        name: Elif
+        voice: Flo
+      A: { name: Dana, voice: Anna }
     lines:
-      - L: Hallo, Anna! Na, wie ist es in Hamburg?
-        ru: Привет, Анна! Ну как там, в Гамбурге?
+      - L: Hallo, Dana! Na, wie ist es in Hamburg?
+        ru: Привет, Дана! Ну как там, в Гамбурге?
       - A: Super! Aber das Wetter ist nicht so gut. Es ist kalt und windig.
         ru: Супер! Но погода не очень. Холодно и ветрено.
-      - L: Wirklich? Hier in Leipzig scheint die Sonne. Es sind 25 Grad!
-        ru: Правда? А здесь, в Лейпциге, светит солнце. 25 градусов!
+      - L: Wirklich? Hier in Kiel scheint die Sonne. Es sind 25 Grad!
+        ru: Правда? А здесь, в Киле, светит солнце. 25 градусов!
       - A: Und hier hat es heute Morgen geregnet. Wir haben einen Regenschirm gekauft.
         ru: А здесь сегодня утром шёл дождь. Мы купили зонт.
       - L: Was habt ihr gestern gemacht?
@@ -75,10 +77,10 @@ dialogues:
         ru: А сегодня?
       - A: Heute sind wir mit dem Schiff gefahren – zwei Stunden auf der Elbe!
         ru: Сегодня мы катались на кораблике — два часа по Эльбе!
-      - L: Toll! Kommt morgen gut nach Hause! Und viele Grüße an Marco!
-        ru: Здорово! Хорошо вам доехать завтра! И привет Марко!
-      - A: Danke, Lena! Tschüss!
-        ru: Спасибо, Лена! Пока!
+      - L: Toll! Kommt morgen gut nach Hause! Und viele Grüße an Mateo!
+        ru: Здорово! Хорошо вам доехать завтра! И привет Матео!
+      - A: Danke, Elif! Tschüss!
+        ru: Спасибо, Элиф! Пока!
 
 words:
   unterwegs:
@@ -136,7 +138,12 @@ words:
       - { de: der Winter, ru: зима, pl: Winter, note: im Winter }
       - { de: der Monat, ru: месяц, pl: Monate, note: im Mai }
       - { de: das Datum, ru: дата, pl: Daten, note: Welches Datum ist heute? }
-      - { de: der Geburtstag, ru: день рождения, pl: Geburtstage, note: Ich habe im Mai Geburtstag. }
+      - {
+          de: der Geburtstag,
+          ru: день рождения,
+          pl: Geburtstage,
+          note: Ich habe im Mai Geburtstag.
+        }
       - { de: das Wochenende, ru: выходные, pl: Wochenenden, note: am Wochenende }
       - { de: die Ferien, ru: каникулы, pl: pl }
 
@@ -144,42 +151,42 @@ tables:
   hilfsverb:
     title: haben oder sein?
     ru: С каким глаголом строится Perfekt
-    head: [Infinitiv, Perfekt, Почему]
-    ruCols: [2]
+    head: [ Infinitiv, Perfekt, Почему ]
+    ruCols: [ 2 ]
     rows:
-      - [fahren, ist *ge*fahr*en*, "движение: из А в Б"]
-      - [fliegen, ist *ge*flog*en*, движение]
-      - [gehen, ist *ge*gang*en*, движение]
-      - [ankommen, ist an*ge*komm*en*, движение]
-      - [aufstehen, ist auf*ge*stand*en*, смена состояния]
-      - [bleiben, ist *ge*blieb*en*, исключение — запомнить]
-      - [machen, hat *ge*mach*t*, нет движения]
-      - [kaufen, hat *ge*kauf*t*, нет движения]
-      - [regnen, hat *ge*regn*et*, погода — нет движения]
+      - [ fahren, ist *ge*fahr*en*, "движение: из А в Б" ]
+      - [ fliegen, ist *ge*flog*en*, движение ]
+      - [ gehen, ist *ge*gang*en*, движение ]
+      - [ ankommen, ist an*ge*komm*en*, движение ]
+      - [ aufstehen, ist auf*ge*stand*en*, смена состояния ]
+      - [ bleiben, ist *ge*blieb*en*, исключение — запомнить ]
+      - [ machen, hat *ge*mach*t*, нет движения ]
+      - [ kaufen, hat *ge*kauf*t*, нет движения ]
+      - [ regnen, hat *ge*regn*et*, погода — нет движения ]
     note: "Сами *sein* и *haben* в прошлом обычно звучат как *war* и *hatte*: *Wie war die Reise?*"
   monate:
     title: Die Monate
     ru: Месяцы по временам года
-    head: [Frühling, Sommer, Herbst, Winter]
+    head: [ Frühling, Sommer, Herbst, Winter ]
     rows:
-      - [März, Juni, September, Dezember]
-      - [April, Juli, Oktober, Januar]
-      - [Mai, August, November, Februar]
+      - [ März, Juni, September, Dezember ]
+      - [ April, Juli, Oktober, Januar ]
+      - [ Mai, August, November, Februar ]
     note: "Все месяцы — мужского рода: *der Mai*, *im Mai*. Но с датой — *am*: *am ersten Mai*."
   datum:
     title: Ordinalzahlen und Datum
     ru: Порядковые числа и дата
-    head: [Datum, "Heute ist …", Wann?]
+    head: [ Datum, "Heute ist …", Wann? ]
     rows:
-      - ["1. Mai", der erst+e Mai, am erst+en Mai]
-      - ["2. Mai", der zwei+te Mai, am zwei+ten Mai]
-      - ["3. Mai", der dritt+e Mai, am dritt+en Mai]
-      - ["4. Mai", der vier+te Mai, am vier+ten Mai]
-      - ["7. Mai", der sieb+te Mai, am sieb+ten Mai]
-      - ["8. Mai", der acht+e Mai, am acht+en Mai]
-      - ["19. Mai", der neunzehn+te Mai, am neunzehn+ten Mai]
-      - ["20. Mai", der zwanzig+ste Mai, am zwanzig+sten Mai]
-      - ["31. Mai", der einunddreißig+ste Mai, am einunddreißig+sten Mai]
+      - [ "1. Mai", der erst+e Mai, am erst+en Mai ]
+      - [ "2. Mai", der zwei+te Mai, am zwei+ten Mai ]
+      - [ "3. Mai", der dritt+e Mai, am dritt+en Mai ]
+      - [ "4. Mai", der vier+te Mai, am vier+ten Mai ]
+      - [ "7. Mai", der sieb+te Mai, am sieb+ten Mai ]
+      - [ "8. Mai", der acht+e Mai, am acht+en Mai ]
+      - [ "19. Mai", der neunzehn+te Mai, am neunzehn+ten Mai ]
+      - [ "20. Mai", der zwanzig+ste Mai, am zwanzig+sten Mai ]
+      - [ "31. Mai", der einunddreißig+ste Mai, am einunddreißig+sten Mai ]
     note: "До 19 — *-te*, с 20 — *-ste*. После *am*, *vom* и *bis zum* окончание *-en*."
 
 tasks:
@@ -188,42 +195,40 @@ tasks:
     part: schreiben-2
     title: Schreiben, Teil 2
     situation: >-
-      Der Deutschkurs ist zu Ende. Frau Weber von der Sprachschule schreibt an
-      alle im Kurs. Sie waren am Wochenende in Hamburg. Antworten Sie Frau
-      Weber. Schreiben Sie zu jedem Punkt ein bis zwei Sätze (circa 30 Wörter).
-      Vergessen Sie nicht die Anrede und den Gruß.
-    from: Sabine Weber
+      Der Deutschkurs ist bald zu Ende. Frau Thomsen schreibt an alle im Kurs. Sie waren in
+      Hamburg. Antworten Sie Frau Thomsen. Schreiben Sie zu jedem Punkt ein bis zwei Sätze
+      (circa 30 Wörter). Vergessen Sie nicht die Anrede und den Gruß.
+    from: Frau Thomsen
     to: Kurs A1
-    subject: Der Kurs ist zu Ende!
+    subject: Bald ist der Kurs zu Ende
     text: |
       Liebe Kursteilnehmerinnen und Kursteilnehmer,
-      der Kurs ist zu Ende – vielen Dank! Wie war Ihr Wochenende? Was machen Sie im Sommer? Schreiben Sie mir!
+      der Kurs ist bald zu Ende. Vielen Dank! Wie war Ihr Wochenende? Was machen Sie im Sommer? Schreiben Sie mir!
       Herzliche Grüße
-      Sabine Weber
+      Frau Thomsen
     points:
       - Wohin sind Sie gefahren?
       - Wie war das Wetter?
       - Was machen Sie im Juli?
     sample:
-      - "Liebe Frau Weber,"
-      - Marco und ich sind am Wochenende mit dem Zug nach Hamburg gefahren.
+      - "Liebe Frau Thomsen,"
+      - Mateo und ich sind am Wochenende mit dem Zug nach Hamburg gefahren.
       - Das Wetter war leider nicht so gut. Es hat oft geregnet.
-      - Im Juli fliege ich nach Polen und besuche meine Familie.
+      - Im Juli fahre ich nach Eckernförde und gehe zum Strand.
       - Viele Grüße
-      - Anna
+      - Dana
   buchung:
     kind: form
     part: schreiben-1
     title: Zimmerreservierung – Hotel Elbblick
     situation: >-
-      Marco Rossi und seine Schwester Giulia möchten im August nach Hamburg
-      fahren. Sie kommen am 8. August an und fahren am 10. August zurück. Sie
-      möchten zwei Einzelzimmer. Frühstück brauchen sie nicht – sie frühstücken
-      gern im Café. Marco reserviert die Zimmer im Internet. Er braucht Ihre
-      Hilfe. Füllen Sie das Formular aus.
+      Mateo Fernández und sein Freund Hauke möchten im August nach Hamburg fahren. Sie kommen
+      am 8. August an und fahren am 10. August zurück. Sie möchten zwei Einzelzimmer. Frühstück
+      brauchen sie nicht – sie frühstücken gern im Café. Mateo reserviert die Zimmer im
+      Internet. Helfen Sie ihm mit dem Formular.
     fields:
-      - { label: Familienname, value: Rossi, given: true }
-      - { label: Vorname, value: Marco, given: true }
+      - { label: Familienname, value: Fernández, given: true }
+      - { label: Vorname, value: Mateo, given: true }
       - { label: Anreise, value: "8. August" }
       - { label: Abreise, value: "10. August" }
       - { label: Personen, value: "2" }
@@ -234,15 +239,22 @@ tasks:
     part: hoeren-2
     title: Hören, Teil 2
     situation: >-
-      Sie sind am Hauptbahnhof in Hamburg und hören eine Durchsage. Ist die
-      Aussage richtig oder falsch? Sie hören den Text einmal.
+      Sie sind am Hauptbahnhof in Hamburg und hören eine Durchsage. Ist die Aussage richtig
+      oder falsch? Sie hören den Text einmal.
     voice: Rocko
     text: >-
-      Achtung an Gleis 8! Der Intercity nach Leipzig, Abfahrt 17 Uhr 46, fährt
-      heute nicht von Gleis 8, sondern von Gleis 12 ab. Der Zug hat circa 20
-      Minuten Verspätung. Wir bitten um Entschuldigung.
-    statement: Der Zug nach Leipzig fährt von Gleis 8 ab.
+      Achtung an Gleis 8! Der Intercity nach Kiel, Abfahrt 17 Uhr 46, fährt heute nicht von
+      Gleis 8, sondern von Gleis 12 ab. Der Zug hat circa 20 Minuten Verspätung. Wir bitten um
+      Entschuldigung.
+    statement: Der Zug nach Kiel fährt von Gleis 8 ab.
     answer: false
+  wetterplan:
+    kind: message
+    part: lesen-1
+    title: Spaziergang in Hamburg
+    from: Dana
+    text: Heute ist es kalt und windig. Es hat am Morgen geregnet. Für den Spaziergang nehmen wir
+      einen Regenschirm und eine Jacke mit. Die Sonnenbrille bleibt im Hotel.
 
 steps:
   - id: empfang
@@ -250,60 +262,54 @@ steps:
     title: Вечер в отеле
     beats:
       - read: >-
-          Курс A1 позади, и Анна с Марко отмечают это поездкой: выходные в
-          Гамбурге. Вечер пятницы, стойка регистрации в отеле. Номер заранее
-          не забронирован, поэтому Анна спрашивает: *Haben Sie noch zwei
-          Einzelzimmer frei?* — «у вас есть ещё два одноместных номера?» Марко
-          называет даты: *vom zweiten bis zum vierten Juni* — «со второго по
-          четвёртое июня». Числа здесь порядковые, как и в русском: «второе»,
-          а не «два».
+          Перед финалом в Киле друзья рассматривают фотографии поездки в Гамбург в начале июня.
+          Матео заранее согласовал свободные дни; обычный график работы из темы 11 не
+          изменился. В воспоминании они спрашивают *Haben Sie noch zwei Einzelzimmer frei?* и
+          называют *vom zweiten bis zum vierten Juni*. Отель, цена и расписание вымышлены.
+          Июньская поездка и августовский бланк ниже — разные ситуации; даты нельзя переносить
+          из одной в другую.
         point: "*Haben Sie noch ein Zimmer frei?* — есть свободный номер?"
-        set: { view: dialogue, dialogue: empfang, reveal: 4, focus: [1, 3] }
+        set: { view: dialogue, dialogue: empfang, reveal: 4, focus: [ 1, 3 ] }
       - read: >-
-          Номер есть: *80 Euro pro Nacht, mit Frühstück*. Господин Хансен
-          спрашивает о дороге: *Sind Sie mit dem Zug gekommen?* — «вы приехали
-          на поезде?» Заметьте: не *haben*, а *sind*. Марко отвечает так же:
-          *Der Zug ist erst um acht Uhr angekommen.* Глаголы движения строят
-          Perfekt с *sein* — это главная грамматика темы. А опоздание — через
-          знакомое *hatte*: *Er hatte eine Stunde Verspätung*, буквально «у
-          него был час опоздания».
+          Номер есть: *80 Euro pro Nacht, mit Frühstück*. Господин Хансен спрашивает о дороге:
+          *Sind Sie mit dem Zug gekommen?* — «вы приехали на поезде?» Заметьте: не *haben*, а
+          *sind*. Матео отвечает так же: *Der Zug ist erst um acht Uhr angekommen.* Глаголы
+          движения строят Perfekt с *sein* — это главная грамматика темы. А опоздание — через
+          знакомое *hatte*: *Er hatte eine Stunde Verspätung*, буквально «у него был час
+          опоздания».
         point: "Движение в прошлом — с *sein*: *Sind Sie mit dem Zug gekommen?*"
-        set: { reveal: 10, focus: [4, 6, 7] }
+        set: { reveal: 10, focus: [ 4, 6, 7 ] }
 
   - id: telefon
     chapter: scene
-    title: Звонок из Лейпцига
+    title: Звонок Элиф из Киля
     beats:
       - read: >-
-          В субботу Анне звонит подруга из Лейпцига, Лена. Первым делом —
-          погода. В Гамбурге *kalt und windig*, а в Лейпциге светит солнце:
-          *Hier in Leipzig scheint die Sonne.* Обратите внимание на *Es ist
-          kalt*: по-русски просто «холодно», а у немецкой фразы обязательно
-          есть подлежащее — маленькое *es*. И *Es sind 25 Grad* — глагол во
-          множественном числе, потому что градусов много.
+          На следующий день Элиф звонит Дане из Киля. В Гамбурге *kalt und windig*, а в её
+          рассказе о Киле *Hier in Kiel scheint die Sonne. Es sind 25 Grad!* Это погода учебной
+          сцены, не прогноз. Для безличного «холодно» используем *Es ist kalt*. После *heute*
+          местоимение сохраняется: *Heute ist es kalt*. Не обобщайте погоду одного дня на весь
+          город или сезон.
         point: "*Es ist kalt.* — «холодно»: без *es* по-немецки нельзя"
-        set: { view: dialogue, dialogue: telefon, reveal: 3, focus: [1, 2] }
+        set: { view: dialogue, dialogue: telefon, reveal: 3, focus: [ 1, 2 ] }
       - read: >-
-          Потом Анна рассказывает, что было, — и тут слушайте вспомогательный
-          глагол. *Es hat geregnet*, *wir haben einen Regenschirm gekauft* — с
-          *haben*, как в прошлой теме. Но *wir sind angekommen*, *wir sind zum
-          Hafen gegangen*, *wir sind mit dem Schiff gefahren* — с *sein*.
-          Почему одни глаголы выбирают *haben*, а другие *sein*, разберём в
-          грамматике. А *Kommt morgen gut nach Hause!* — повелительное
-          наклонение на *ihr*.
+          Потом Дана рассказывает, что было, — и тут слушайте вспомогательный глагол. *Es hat
+          geregnet*, *wir haben einen Regenschirm gekauft* — с *haben*, как в прошлой теме. Но
+          *wir sind angekommen*, *wir sind zum Hafen gegangen*, *wir sind mit dem Schiff
+          gefahren* — с *sein*. Почему одни глаголы выбирают *haben*, а другие *sein*, разберём
+          в грамматике. А *Kommt morgen gut nach Hause!* — повелительное наклонение на *ihr*.
         point: "*hat geregnet*, *haben gekauft* — но *sind gegangen*, *sind gefahren*"
-        set: { reveal: 10, focus: [3, 5, 7, 8] }
+        set: { reveal: 10, focus: [ 3, 5, 7, 8 ] }
 
   - id: unterwegs
     chapter: words
     title: В дороге
     beats:
       - read: >-
-          Слова для дороги. Транспорт — с предлогом *mit* и дательным падежом:
-          *mit dem Zug*, *mit dem Flugzeug*. Путь на вокзале — *das Gleis*:
-          *Der Zug fährt von Gleis 12 ab.* Опоздание по-немецки «имеют»: *Der
-          Zug hat 20 Minuten Verspätung.* А *die Durchsage* — объявление по
-          громкой связи. На экзамене их будет четыре — на вокзале, в аэропорту
+          Слова для дороги. Транспорт — с предлогом *mit* и дательным падежом: *mit dem Zug*,
+          *mit dem Flugzeug*. Путь на вокзале — *das Gleis*: *Der Zug fährt von Gleis 12 ab.*
+          Опоздание по-немецки «имеют»: *Der Zug hat 20 Minuten Verspätung.* А *die Durchsage*
+          — объявление по громкой связи. На экзамене их будет четыре — на вокзале, в аэропорту
           или в магазине.
         point: "*mit dem Zug*; опоздание «имеют»: *Der Zug hat 20 Minuten Verspätung.*"
         set: { view: words, words: unterwegs }
@@ -313,13 +319,11 @@ steps:
     title: Номер в отеле
     beats:
       - read: >-
-          Номер в отеле — это *das Zimmer*, а *die Nummer* — только число на
-          двери: *Zimmer Nummer 12*. *das Einzelzimmer* — на одного, *das
-          Doppelzimmer* — на двоих; род, как всегда у сложных слов, — по
-          последней части. *die Anreise* и *die Abreise* — день приезда и день
-          отъезда, они есть в каждом бланке. И осторожно с *reservieren*:
-          глаголы на *-ieren* строят Perfekt без *ge-*: *Ich habe ein Zimmer
-          reserviert.*
+          Номер в отеле — это *das Zimmer*, а *die Nummer* — только число на двери: *Zimmer
+          Nummer 12*. *das Einzelzimmer* — на одного, *das Doppelzimmer* — на двоих; род, как
+          всегда у сложных слов, — по последней части. *die Anreise* и *die Abreise* — день
+          приезда и день отъезда, они есть в каждом бланке. И осторожно с *reservieren*:
+          глаголы на *-ieren* строят Perfekt без *ge-*: *Ich habe ein Zimmer reserviert.*
         point: "*das Einzelzimmer*, *das Doppelzimmer*; *reservieren — hat reserviert*, без *ge-*"
         set: { view: words, words: hotel }
 
@@ -328,11 +332,10 @@ steps:
     title: Какая погода?
     beats:
       - read: >-
-          О погоде говорят все и всегда — с соседом, с коллегой, с
-          администратором в отеле. Почти каждая фраза начинается с *es*: *Es
-          regnet*, *Es schneit*, *Es ist kalt*. Исключение — солнце, у него
-          своё подлежащее: *Die Sonne scheint.* Прилагательные получаются из
-          существительных: *die Sonne — sonnig*, *der Wind — windig*. А *Grad*
+          О погоде говорят все и всегда — с соседом, с коллегой, с администратором в отеле.
+          Почти каждая фраза начинается с *es*: *Es regnet*, *Es schneit*, *Es ist kalt*.
+          Исключение — солнце, у него своё подлежащее: *Die Sonne scheint.* Прилагательные
+          получаются из существительных: *die Sonne — sonnig*, *der Wind — windig*. А *Grad*
           после числа не меняется: *Es sind 20 Grad.*
         point: "*Es regnet. Es ist kalt.* — но *Die Sonne scheint.*"
         set: { view: words, words: wetter }
@@ -342,12 +345,11 @@ steps:
     title: Времена года
     beats:
       - read: >-
-          Времена года — мужского рода: *der Frühling*, *der Sommer*, *der
-          Herbst*, *der Winter*, хотя «весна», «осень» и «зима» в русском —
-          женского. На вопрос «когда?» отвечаем с *im*: *im Sommer*, *im
-          Winter*. А с днями — *am*: *am Wochenende*. День рождения немцы
-          «имеют»: *Ich habe im Mai Geburtstag.* И *die Ferien* бывают только
-          во множественном числе, совсем как русские «каникулы».
+          Времена года — мужского рода: *der Frühling*, *der Sommer*, *der Herbst*, *der
+          Winter*, хотя «весна», «осень» и «зима» в русском — женского. На вопрос «когда?»
+          отвечаем с *im*: *im Sommer*, *im Winter*. А с днями — *am*: *am Wochenende*. День
+          рождения немцы «имеют»: *Ich habe im Mai Geburtstag.* И *die Ferien* бывают только во
+          множественном числе, совсем как русские «каникулы».
         point: "*der Sommer* — *im Sommer*; *Ich habe im Mai Geburtstag.*"
         set: { view: words, words: jahr }
 
@@ -356,48 +358,46 @@ steps:
     title: Perfekt с sein
     beats:
       - read: >-
-          Perfekt с *haben* вы уже знаете: *Wir haben im Hotel gefrühstückt.*
-          Но о поездке Анна говорит *Wir sind nach Hamburg gefahren.* Рамка та
-          же: вспомогательный глагол на втором месте, причастие в самом конце.
-          Меняется только вспомогательный глагол — с глаголами движения это
-          *sein*. По-русски «мы поехали» — одно слово, а по-немецки — два, и
-          между ними помещается вся середина предложения.
+          Perfekt с *haben* вы уже знаете: *Wir haben im Hotel gefrühstückt.* Но о поездке Дана
+          говорит *Wir sind nach Hamburg gefahren.* Рамка та же: вспомогательный глагол на
+          втором месте, причастие в самом конце. Меняется только вспомогательный глагол — с
+          глаголами движения это *sein*. По-русски «мы поехали» — одно слово, а по-немецки —
+          два, и между ними помещается вся середина предложения.
         point: "Perfekt: *haben* или *sein* на 2-м месте + причастие в конце"
         set:
           view: sentence
           rows:
-            - de: [Wir, hab+en, im Hotel, gefrühstückt.]
+            - de: [ Wir, hab+en, im Hotel, gefrühstückt. ]
               ru: Мы позавтракали в отеле.
-            - de: [Wir, sind, nach Hamburg, gefahren.]
+            - de: [ Wir, sind, nach Hamburg, gefahren. ]
               ru: Мы поехали в Гамбург.
       - read: >-
-          Поставим на первое место *am Freitag*. *sind* остаётся вторым, *wir*
-          уходит в середину, а *gefahren* по-прежнему замыкает предложение.
-          Всё новое — когда, на чём, куда — встаёт внутрь рамки, между *sind*
-          и *gefahren*. Типичная ошибка — тянуть причастие к вспомогательному
-          глаголу, как в русском: *Wir sind gefahren nach Hamburg.* Так по-немецки
-          не говорят.
+          Поставим на первое место *am Freitag*. *sind* остаётся вторым, *wir* уходит в
+          середину, а *gefahren* по-прежнему замыкает предложение. Всё новое — когда, на чём,
+          куда — встаёт внутрь рамки, между *sind* и *gefahren*. Типичная ошибка — тянуть
+          причастие к вспомогательному глаголу, как в русском: *Wir sind gefahren nach
+          Hamburg.* Так по-немецки не говорят.
         point: "Всё новое — внутрь рамки: *Am Freitag sind wir mit dem Zug nach Hamburg gefahren.*"
         set:
           rows:
-            - de: [Wir, hab+en, im Hotel, gefrühstückt.]
+            - de: [ Wir, hab+en, im Hotel, gefrühstückt. ]
               ru: Мы позавтракали в отеле.
-            - de: [Am Freitag, sind, wir mit dem Zug nach Hamburg, gefahren.]
+            - de: [ Am Freitag, sind, wir mit dem Zug nach Hamburg, gefahren. ]
               ru: В пятницу мы поехали в Гамбург на поезде.
-          focus: [1]
+          focus: [ 1 ]
 
   - id: haben-sein
     chapter: grammar
     title: haben или sein?
     beats:
       - read: >-
-          Как понять, какой глагол нужен? Правило для A1: *sein* — если
-          человек перемещается из точки А в точку Б: *fahren*, *fliegen*,
-          *gehen*, *ankommen*. Или если меняется состояние: *aufstehen* —
-          лежал, а теперь на ногах. И одно исключение, его нужно просто
-          запомнить: *bleiben* — «оставаться». Все остальные глаголы —
-          *machen*, *kaufen* и даже погода *regnen* — идут с *haben*.
-        point: "*sein* — движение и смена состояния, плюс *bleiben*; остальное — *haben*"
+          Для показанных глаголов есть полезная опора: перемещение в другое место — *ist
+          gefahren*, *ist gegangen*, *ist angekommen*; изменение состояния — *ist
+          aufgestanden*. Отдельно запоминаем *ist geblieben*. Остальные глаголы этой таблицы —
+          *hat gemacht*, *hat gekauft*, *hat geregnet*. Это рабочая схема для наших примеров
+          A1, а не правило без исключений обо всех немецких глаголах. В игре нужно восстановить
+          целые события поездки.
+        point: "В наших примерах: *ist gefahren / gegangen / geblieben*, но *hat gekauft / geregnet*"
         set: { view: table, table: hilfsverb }
 
   - id: angekommen
@@ -405,28 +405,26 @@ steps:
     title: Причастие с приставкой
     beats:
       - read: >-
-          Теперь глагол с отделяемой приставкой. В настоящем времени приставка
-          уходит в конец предложения: *Der Zug kommt um acht Uhr an.* Это вы
-          помните по теме о распорядке дня. Но в Perfekt в конец должно встать
-          причастие — а место уже занято приставкой. Что же произойдёт с *an*?
-          Посмотрите на схему и прокрутите дальше.
+          Теперь глагол с отделяемой приставкой. В настоящем времени приставка уходит в конец
+          предложения: *Der Zug kommt um acht Uhr an.* Это вы помните по теме о распорядке дня.
+          Но в Perfekt в конец должно встать причастие — а место уже занято приставкой. Что же
+          произойдёт с *an*? Посмотрите на схему и прокрутите дальше.
         point: "Сейчас: *Der Zug kommt um acht Uhr an.* — приставка в конце"
         set:
           view: sentence
           rows:
-            - de: [Der Zug, komm+t, um acht Uhr, an.]
+            - de: [ Der Zug, komm+t, um acht Uhr, an. ]
               ru: Поезд прибывает в восемь часов.
       - read: >-
-          Приставка остаётся на месте, а причастие вырастает из неё: *an* +
-          *ge* + *kommen* — *angekommen*, одним словом. Место глагола занимает
-          *ist*: прибытие — тоже движение. Так же *abfahren — ist abgefahren*,
-          *aufstehen — ist aufgestanden*. Частые ошибки — *geankommen* и
-          *angekommt*: *ge* никогда не встаёт перед отделяемой приставкой, а
+          Приставка остаётся на месте, а причастие вырастает из неё: *an* + *ge* + *kommen* —
+          *angekommen*, одним словом. Место глагола занимает *ist*: прибытие — тоже движение.
+          Так же *abfahren — ist abgefahren*, *aufstehen — ist aufgestanden*. Частые ошибки —
+          *geankommen* и *angekommt*: *ge* никогда не встаёт перед отделяемой приставкой, а
           причастие от *kommen* кончается на *-en*.
         point: "*ankommen — ist angekommen*: *ge* — между приставкой и корнем"
         set:
           rows:
-            - de: [Der Zug, ist, um acht Uhr, an+gekommen.]
+            - de: [ Der Zug, ist, um acht Uhr, an+gekommen. ]
               ru: Поезд прибыл в восемь часов.
 
   - id: es-regnet
@@ -434,19 +432,18 @@ steps:
     title: Погода и es
     beats:
       - read: >-
-          Вернёмся к погоде. По-русски «идёт дождь» — без подлежащего, а
-          по-немецки подлежащее нужно всегда, поэтому есть формальное *es*. Если
-          первым стоит *heute*, *es* уходит за глагол, но не исчезает: *Heute
-          regnet es*, а не *Heute regnet*. В Perfekt погода идёт с *haben* —
-          дождь ведь никуда не едет: *Gestern hat es geregnet.* О вчерашней
-          погоде можно сказать и через *war*: *Gestern war es kalt.*
+          В русском «идёт дождь» подлежащее — «дождь». Немецкая фраза устроена иначе: *Es
+          regnet*, с формальным *es*. Если первым стоит *heute*, *es* уходит за глагол: *Heute
+          regnet es*. В прошедшем — *Gestern hat es geregnet*, а описание состояния — *Gestern
+          war es kalt*. Для понимания отчёта важно отделить дождь сегодня утром от того, что
+          было вчера вечером.
         point: "*Heute regnet es.* *Gestern hat es geregnet.* — *es* не пропадает"
         set:
           view: sentence
           rows:
-            - de: [Heute, regn+et, es., ""]
+            - de: [ Heute, regn+et, es., "" ]
               ru: Сегодня идёт дождь.
-            - de: [Gestern, hat, es, geregnet.]
+            - de: [ Gestern, hat, es, geregnet. ]
               ru: Вчера шёл дождь.
 
   - id: monate
@@ -454,11 +451,10 @@ steps:
     title: Месяцы
     beats:
       - read: >-
-          Месяцы почти все похожи на русские — труднее с буквами: *März* с
-          умлаутом, *Mai* через *ai*. *Juni* и *Juli* легко спутать на слух,
-          поэтому по телефону немцы часто говорят *Juno* и *Julei*. Все месяцы
-          — мужского рода, и с ними тот же предлог, что с временами года: *im
-          Juni*. Теперь у вас есть все три предлога времени: *um acht Uhr*,
+          Месяцы почти все похожи на русские — труднее с буквами: *März* с умлаутом, *Mai*
+          через *ai*. *Juni* и *Juli* легко спутать на слух, поэтому по телефону немцы часто
+          говорят *Juno* и *Julei*. Все месяцы — мужского рода, и с ними тот же предлог, что с
+          временами года: *im Juni*. Теперь у вас есть все три предлога времени: *um acht Uhr*,
           *am Freitag*, *im Juni*.
         point: "*um* — время, *am* — день и дата, *im* — месяц и время года"
         set: { view: table, table: monate }
@@ -468,23 +464,21 @@ steps:
     title: Какое сегодня число?
     beats:
       - read: >-
-          Дата — это порядковое число: «первое мая», «второе июня». До 19
-          немецкие порядковые числа образуются просто: к числу добавляется
-          *-te*: *zwei — der zweite*, *vier — der vierte*. Запомните четыре
-          исключения: *der erste*, *der dritte*, *der siebte* и *der achte* —
-          у *acht* уже есть своё *t*, второе не нужно. На письме порядковое
-          число обозначают точкой: *der 2. Juni*.
+          Дата — это порядковое число: «первое мая», «второе июня». До 19 немецкие порядковые
+          числа образуются просто: к числу добавляется *-te*: *zwei — der zweite*, *vier — der
+          vierte*. Запомните четыре исключения: *der erste*, *der dritte*, *der siebte* и *der
+          achte* — у *acht* уже есть своё *t*, второе не нужно. На письме порядковое число
+          обозначают точкой: *der 2. Juni*.
         point: "До 19 — *-te*: *der zweite*; исключения: *erste*, *dritte*, *siebte*, *achte*"
-        set: { view: table, table: datum, reveal: 6, focus: [0, 2, 4, 5] }
+        set: { view: table, table: datum, reveal: 6, focus: [ 0, 2, 4, 5 ] }
       - read: >-
-          С 20 окончание длиннее — *-ste*: *der zwanzigste*, *der
-          einunddreißigste*. Последний шаг — «когда?». По-русски «первого мая»
-          — родительный падеж, а по-немецки *am* и окончание *-en*: *am ersten
-          Mai*. После *vom* и *bis zum* — тоже *-en*, поэтому Марко и сказал
-          *vom zweiten bis zum vierten Juni*. Спросить дату можно так: *Welches
-          Datum ist heute?*
+          С 20 окончание длиннее — *-ste*: *der zwanzigste*, *der einunddreißigste*. Последний
+          шаг — «когда?». По-русски «первого мая» — родительный падеж, а по-немецки *am* и
+          окончание *-en*: *am ersten Mai*. После *vom* и *bis zum* — тоже *-en*, поэтому Матео
+          и сказал *vom zweiten bis zum vierten Juni*. Спросить дату можно так: *Welches Datum
+          ist heute?*
         point: "С 20 — *-ste*; «когда?» — *am …-en*: *am ersten Mai*, *am zwanzigsten Mai*"
-        set: { reveal: 9, focus: [0, 6, 7, 8] }
+        set: { reveal: 9, focus: [ 0, 6, 7, 8 ] }
 
   - id: check
     chapter: practice
@@ -492,65 +486,60 @@ steps:
     beats:
       - question: Как начать *Der Zug ist um acht Uhr angekommen* со слов *Um acht Uhr*?
         read: >-
-          *Um acht Uhr ist der Zug angekommen.* Время встаёт на первую
-          позицию, *ist* остаётся вторым, *der Zug* уходит в середину. А
-          *angekommen* не двигается: конец рамки занят причастием, что бы ни
-          происходило в начале. В этом и смысл Perfekt — две опоры, второе
-          место и конец, а всё остальное переставляется между ними.
+          *Um acht Uhr ist der Zug angekommen.* Время встаёт на первую позицию, *ist* остаётся
+          вторым, *der Zug* уходит в середину. А *angekommen* не двигается: конец рамки занят
+          причастием, что бы ни происходило в начале. В этом и смысл Perfekt — две опоры,
+          второе место и конец, а всё остальное переставляется между ними.
         point: "*Um acht Uhr ist der Zug angekommen.* — причастие остаётся в конце"
         before:
           view: sentence
           rows:
-            - de: [Der Zug, ist, um acht Uhr, an+gekommen.]
+            - de: [ Der Zug, ist, um acht Uhr, an+gekommen. ]
               ru: Поезд прибыл в восемь часов.
         set:
           rows:
-            - de: [Um acht Uhr, ist, der Zug, an+gekommen.]
+            - de: [ Um acht Uhr, ist, der Zug, an+gekommen. ]
               ru: В восемь часов поезд прибыл.
       - question: Как сказать «Мы остались в Гамбурге на два дня»?
         read: >-
-          *Wir sind zwei Tage in Hamburg geblieben.* Логика подсказывает
-          *haben*: никто никуда не едет. Но *bleiben* — исключение, оно идёт с
-          *sein*, как глаголы движения. Ошибка *Wir haben geblieben* — одна из
-          самых частых, поэтому учите парой: *fahren — ist gefahren*, *bleiben
-          — ist geblieben*. Порядок в середине привычный: сначала «сколько
+          *Wir sind zwei Tage in Hamburg geblieben.* Логика подсказывает *haben*: никто никуда
+          не едет. Но *bleiben* — исключение, оно идёт с *sein*, как глаголы движения. Ошибка
+          *Wir haben geblieben* — одна из самых частых, поэтому учите парой: *fahren — ist
+          gefahren*, *bleiben — ist geblieben*. Порядок в середине привычный: сначала «сколько
           времени», потом «где».
         point: "*bleiben — ist geblieben*: движения нет, а глагол — *sein*"
         set:
           view: sentence
           rows:
-            - de: [Wir, sind, zwei Tage in Hamburg, geblieben.]
+            - de: [ Wir, sind, zwei Tage in Hamburg, geblieben. ]
               ru: Мы остались в Гамбурге на два дня.
-      - question: Как сказать, что у вас день рождения 3 марта?
+      - question: Как сказать, что у вас день рождения 3 мая?
         read: >-
-          *Ich habe am dritten März Geburtstag.* День рождения «имеют»:
-          *Geburtstag haben*, и *Geburtstag* стоит в конце, без артикля. Дата —
-          с *am* и окончанием *-en*. И помните об исключении: «третий» —
-          *dritte*, а не *dreite*. Ответ может быть и короче: *Am dritten
-          März.* А спросить друга можно так: *Wann hast du Geburtstag?*
-        point: "*Ich habe am dritten März Geburtstag.* — *Wann hast du Geburtstag?*"
-        set: { view: table, table: datum, focus: [2] }
+          *Ich habe am dritten Mai Geburtstag.* День рождения «имеют»: *Geburtstag haben*, и
+          *Geburtstag* стоит в конце, без артикля. Дата — с *am* и окончанием *-en*. И помните
+          об исключении: «третий» — *dritte*, а не *dreite*. Ответ может быть и короче: *Am
+          dritten Mai.* А спросить друга можно так: *Wann hast du Geburtstag?*
+        point: "*Ich habe am dritten Mai Geburtstag.* — *Wann hast du Geburtstag?*"
+        set: { view: table, table: datum, focus: [ 2 ] }
 
   - id: schreiben-2
     chapter: exam
     title: "Письменный экзамен: сообщение"
     beats:
       - read: >-
-          Вторая часть письменного экзамена — короткое сообщение, около 30
-          слов. В задании три пункта, *Leitpunkte*, и на каждый нужно ответить
-          одним-двумя предложениями: за пункт дают до 3 баллов и ещё 1 — за
-          оформление. Здесь фрау Вебер из языковой школы пишет всей группе, а
-          Анна ей отвечает. Пишем на «Вы»: *Liebe Frau Weber* в начале и
-          *Viele Grüße* в конце.
+          В конце курса фрау Томсен спрашивает о поездке и летних планах. Для короткого
+          сообщения нужны три ответа: куда ездили, какая была погода и что планируется в июле.
+          Начните *Liebe Frau Thomsen,* и завершите *Viele Grüße*. В игре вы уже
+          восстанавливали факты, теперь попробуйте выразить их сами. Образец — опора для
+          проверки, а не обязательный текст для заучивания.
         point: "Сообщение: ~30 слов, 3 пункта, обращение и подпись"
         set: { view: task, task: antwort, reveal: 0 }
       - read: >-
-          Образец отвечает на пункты по очереди. Куда и на чём — Perfekt с
-          *sein*: *sind … gefahren*. Погода в прошлом — *war* и *hat
-          geregnet*. Планы на июль — просто настоящее время: *Im Juli fliege
-          ich nach Polen.* Немцы так и говорят о будущем, если в предложении
-          есть слово времени. Не усложняйте: проверяющий ищет ответ на каждый
-          пункт и понятные фразы, а не красивый стиль.
+          Поездка — *sind … gefahren*, прошедшая погода — *war* и *hat geregnet*. План Даны на
+          июль — *Im Juli fahre ich nach Eckernförde und gehe zum Strand*. Настоящее время со
+          словом будущего времени подходит для простого плана. Это не бронь и не прогноз
+          погоды. На каждый пункт достаточно понятного ответа; затем проверьте обращение,
+          подпись и порядок слов.
         point: "На пункт — 1–2 предложения; планы — в настоящем: *Im Juli fliege ich …*"
         set: { reveal: 6 }
 
@@ -559,21 +548,18 @@ steps:
     title: "Письменный экзамен: бланк"
     beats:
       - read: >-
-          Первая часть письменного экзамена — бланк. Марко снова едет в
-          Гамбург, теперь с сестрой, и бронирует номера на сайте отеля. Вы
-          заполняете за него пять пустых полей, всё нужное есть в тексте.
-          Обратите внимание на даты: они записаны цифрой с точкой, *am 8.
-          August*. Точка значит, что число порядковое, и читается это *am
-          achten August*.
+          Августовский бланк — отдельная планируемая поездка Матео и Хауке. В задаче нужны пять
+          полей: приезд, отъезд, число людей, тип и количество комнат, завтрак. Даты *8.
+          August* и *10. August* относятся только к этой брони, а не к июньскому воспоминанию.
+          Подробности поездки целиком вымышлены; вы тренируете перенос сведений в форму.
         point: "Дата цифрой: *8. August* = *der achte August*"
         set: { view: task, task: buchung, reveal: 0 }
       - question: Что написать в поле «Frühstück»?
         read: >-
-          *Nein.* Слова *nein* в тексте нет, зато есть *Frühstück brauchen sie
-          nicht*. В бланке так бывает часто: ответ нужно не переписать, а
-          понять. Даты переносите как в тексте, цифрой с точкой: *Anreise — 8.
-          August*, *Abreise — 10. August*. *Anreise* — приезд, *Abreise* —
-          отъезд: перепутать их легко, а балл потерять обидно.
+          *Nein.* Слова *nein* в тексте нет, зато есть *Frühstück brauchen sie nicht*. В бланке
+          так бывает часто: ответ нужно не переписать, а понять. Даты переносите как в тексте,
+          цифрой с точкой: *Anreise — 8. August*, *Abreise — 10. August*. *Anreise* — приезд,
+          *Abreise* — отъезд: перепутать их легко, а балл потерять обидно.
         point: "Ответ не всегда дословный: *brauchen sie nicht* → *Frühstück: nein*"
         set: { reveal: 5 }
 
@@ -581,101 +567,100 @@ steps:
     chapter: exam
     title: "Аудирование: объявление на вокзале"
     beats:
-      - question: Поезд в Лейпциг отходит от пути 8 — *richtig* или *falsch*?
+      - question: Поезд в Киль отходит от пути 8 — *richtig* или *falsch*?
         read: >-
-          *Falsch.* Сначала звучит *Gleis 8*, и рука сама тянется к *richtig*.
-          Но дальше: *nicht von Gleis 8, sondern von Gleis 12*. Конструкция
-          *nicht …, sondern …* — «не …, а …» — любимая ловушка второй части
-          аудирования: верно то, что после *sondern*. Запись звучит только
-          один раз, поэтому прочитайте утверждение заранее и слушайте номер
-          пути, время и опоздание.
+          *Falsch.* Сначала звучит *Gleis 8*, и рука сама тянется к *richtig*. Но дальше:
+          *nicht von Gleis 8, sondern von Gleis 12*. Конструкция *nicht …, sondern …* — «не …,
+          а …» — любимая ловушка второй части аудирования: верно то, что после *sondern*.
+          Запись звучит только один раз, поэтому прочитайте утверждение заранее и слушайте
+          номер пути, время и опоздание.
         point: "*nicht …, sondern …* — верна вторая часть; запись звучит один раз"
         before: { view: task, task: durchsage }
         set: { solved: true }
 
   - id: weiter
     chapter: exam
-    title: Что дальше
+    title: Финал A1 и следующий шаг
     beats:
       - read: >-
-          Это последняя тема уровня A1. Оглянитесь назад: вы умеете
-          представиться, назвать цену и время, заказать еду, спросить дорогу,
-          записаться к врачу и рассказать, что было, — с *haben* и *sein*. С
-          этим можно идти на экзамен Start Deutsch 1. На A2 появятся
-          придаточные предложения с *weil* и *dass* и сравнения вроде *größer
-          als*. А пока — *Sie haben es geschafft!*
-        point: "A1 пройден: о себе, о быте и о прошлом — с *haben* и *sein*"
+          Это последняя тема маршрута A1. Вы прошли бытовые ситуации, игры и дела: знакомство,
+          кафе, покупки, время, жильё, дорога, здоровье, работа и поездка. В финальном деле
+          пригодятся даты, Perfekt и разница между движением и местом. Прохождение страниц само
+          по себе не гарантирует готовность к экзамену: следующий шаг — пробный тест со
+          временем, самостоятельное письмо и разговор. После этого можно переходить к A2 и
+          новым поездкам по региону.
+        point: "Маршрут A1 завершён; готовность проверяем пробным экзаменом и самостоятельной речью"
         set:
           view: sentence
           rows:
-            - de: [Sie, hab+en, es, geschafft!]
+            - de: [ Sie, hab+en, es, geschafft! ]
               ru: У вас получилось!
 
 exercises:
   - type: choice
     q: Wir ___ am Freitag nach Hamburg gefahren.
-    options: [haben, sind, seid]
+    options: [ haben, sind, seid ]
     answer: 1
     why: "*fahren* — движение из А в Б, поэтому *sein*: *wir sind gefahren*."
   - type: choice
     q: Am Samstag ___ es in Hamburg geregnet.
-    options: [ist, hat, war]
+    options: [ ist, hat, war ]
     answer: 1
     why: "Погода — без движения: *es hat geregnet*."
   - type: gap
     q: Ich ___ heute um sechs Uhr aufgestanden.
-    answer: [bin]
+    answer: [ bin ]
     hint: haben / sein
     why: "*aufstehen* — смена состояния, поэтому *sein*: *ich bin aufgestanden*."
   - type: gap
     q: Wir ___ zwei Nächte im Hotel geblieben.
-    answer: [sind]
+    answer: [ sind ]
     hint: haben / sein
     why: "*bleiben* — исключение: движения нет, а глагол *sein*."
   - type: gap
     q: ___ ihr mit dem Zug gekommen?
-    answer: [Seid]
+    answer: [ Seid ]
     hint: sein
     why: "*ihr seid*; в вопросе да/нет вспомогательный глагол стоит первым."
   - type: gap
     q: Der Zug ist um acht Uhr ___.
-    answer: [angekommen]
+    answer: [ angekommen ]
     hint: ankommen
     why: "*ge* — между приставкой и корнем: *an-ge-kommen*."
   - type: gap
-    q: Marco ___ in Hamburg einen Regenschirm ___.
-    answer: [hat, gekauft]
+    q: Mateo ___ in Hamburg einen Regenschirm ___.
+    answer: [ hat, gekauft ]
     hint: kaufen
     why: "*kaufen* — без движения: *hat gekauft*, причастие в конце."
   - type: choice
-    q: Marco ist im März von Rom nach Leipzig ___.
-    options: [geflogt, geflogen, fliegen]
+    q: Mateo ist im März von Buenos Aires nach Hamburg ___.
+    options: [ geflogt, geflogen, fliegen ]
     answer: 1
     why: "*fliegen — ist geflogen*: неправильный глагол, причастие на *-en*."
   - type: choice
     q: Heute ist der ___ Juni.
-    options: [dreite, dritte, drei]
+    options: [ dreite, dritte, drei ]
     answer: 1
     why: "Исключение: *drei — der dritte*."
   - type: gap
     q: Ich habe am ___ Mai Geburtstag.
-    answer: [zwanzigsten]
+    answer: [ zwanzigsten ]
     hint: "20."
     ru: У меня день рождения 20 мая.
     why: "С 20 — *-ste*, после *am* — *-en*: *am zwanzigsten*."
   - type: choice
-    q: Wann fährst du nach Italien? – ___ Juli.
-    options: [Am, Im, Um]
+    q: Wann fährst du nach Dänemark? – ___ Juli.
+    options: [ Am, Im, Um ]
     answer: 1
     why: "Месяц — с *im*: *im Juli*. *am* — с датой: *am ersten Juli*."
   - type: choice
     q: Wie ist das Wetter? – ___ kalt und windig.
-    options: [Ist, Es ist, Er ist]
+    options: [ Ist, Es ist, Er ist ]
     answer: 1
     why: "У погоды всегда есть подлежащее *es*: *Es ist kalt.*"
   - type: choice
     q: Как записать дату «8 августа» в бланке?
-    options: ["8 August", "8. August", "8te August"]
+    options: [ "8 August", "8. August", "8te August" ]
     answer: 1
     why: "Точка после числа делает его порядковым: *8. August* — *der achte August*."
   - type: order
@@ -688,4 +673,236 @@ exercises:
   - type: order
     ru: Вчера было холодно и ветрено.
     de: Gestern war es kalt und windig.
-    also: [Gestern war es windig und kalt.]
+    also: [ Gestern war es windig und kalt. ]
+adventure:
+  kind: sequence
+  title: Сверьте поездку перед финалом
+  intro: Друзья собирают альбом июньской поездки и планируют отдельный визит в августе. Отделите
+    даты, вещи для прогулки и уже случившиеся события. Все брони и расписания учебные.
+  ending: Бланк заполнен по своей ситуации, вещи выбраны по сообщению, события восстановлены в
+    Perfekt, актуальный путь найден. Команда возвращается в Киль и готова к финальной сверке
+    папки на Kieler Woche.
+  challenges:
+    - id: booking
+      kind: match
+      title: Не перепутайте две поездки
+      intro: Заполните краткую карточку будущего августовского визита. Июньские даты из диалога здесь
+        не подходят.
+      clue:
+        task: buchung
+      slots:
+        - id: arrival
+          label: Anreise
+          answer: eighth
+        - id: departure
+          label: Abreise
+          answer: tenth
+        - id: people
+          label: Personen
+          answer: two
+        - id: rooms
+          label: Zimmer
+          answer: single
+        - id: breakfast
+          label: Frühstück
+          answer: no
+      options:
+        - id: eighth
+          label: 8. August
+        - id: tenth
+          label: 10. August
+        - id: two
+          label: "2"
+        - id: single
+          label: 2 Einzelzimmer
+        - id: no
+          label: nein
+        - id: june
+          label: 2. Juni
+        - id: double
+          label: 1 Doppelzimmer
+      success: "Августовская карточка совпала с заданием: 8–10 августа, два человека, два одноместных
+        номера, без завтрака."
+      wrong: Проверяйте каждый пункт именно по августовской ситуации, а не по памяти о первом
+        диалоге.
+      mode: reading
+    - id: walk-bag
+      kind: pack
+      title: Соберите вещи для прогулки по сообщению
+      intro: "Выберите весь названный набор. Здесь не нужно оценивать условия выхода в море: друзья
+        собираются на городскую прогулку."
+      mode: reading
+      clue:
+        task: wetterplan
+      options:
+        - id: umbrella
+          label: der Regenschirm
+          icon: ☂️
+        - id: jacket
+          label: die Jacke
+          icon: 🧥
+        - id: glasses
+          label: die Sonnenbrille
+          icon: 🕶️
+        - id: ticket
+          label: die Fahrkarte
+          icon: 🎫
+      answer:
+        - umbrella
+        - jacket
+      success: По сообщению нужны зонт и куртка. Очки остаются в отеле, билет в этом наборе не назван.
+      wrong: В тексте прямо названы *einen Regenschirm und eine Jacke*. Не добавляйте предмет только
+        потому, что он полезен в поездках.
+    - id: trip-verbs
+      kind: match
+      title: Подпишите события альбома
+      intro: Выберите вспомогательный глагол для четырёх событий. Один вариант может подходить
+        нескольким карточкам.
+      clue:
+        dialogue: telefon
+        lines:
+          - 3
+          - 5
+          - 7
+      slots:
+        - id: rain
+          label: Es … geregnet.
+          answer: hat
+        - id: buy
+          label: Wir … einen Regenschirm gekauft.
+          answer: haben
+        - id: arrive
+          label: Wir … angekommen.
+          answer: sind
+        - id: ship
+          label: Wir … mit dem Schiff gefahren.
+          answer: sind
+      options:
+        - id: hat
+          label: hat
+        - id: haben
+          label: haben
+        - id: sind
+          label: sind
+        - id: ist
+          label: ist
+      success: "Дождь и покупка — с *haben*, прибытие и поездка — с *sein*. Форма зависит от
+        подлежащего: *es hat*, *wir haben / sind*."
+      wrong: Проверьте и глагол события, и подлежащее. Для двух карточек *wir* нужен один и тот же
+        вариант *sind*.
+    - id: trip-sentence
+      kind: order
+      title: Расскажите о прогулке на кораблике
+      intro: "Соберите подпись к фотографии: «Мы катались на кораблике»."
+      label: Фотография из порта
+      tokens:
+        - Wir
+        - sind
+        - mit dem Schiff
+        - gefahren.
+      success: "*Wir sind mit dem Schiff gefahren.* Вспомогательный глагол и причастие держат рамку."
+      wrong: Начните *Wir sind*, внутри рамки *mit dem Schiff*, в конце *gefahren.*
+    - id: home-platform
+      kind: select
+      title: Найдите путь для возвращения
+      intro: В учебном объявлении названы два пути. К какому нужно идти после изменения?
+      clue:
+        task: durchsage
+      options:
+        - id: eight
+          label: Gleis 8
+        - id: twelve
+          label: Gleis 12
+        - id: twenty
+          label: Gleis 20
+      answer:
+        - twelve
+      success: "*Nicht von Gleis 8, sondern von Gleis 12.* Двадцать — минуты задержки, а не номер
+        пути."
+      wrong: После *sondern* назван актуальный путь 12. Первое число и задержка — ловушки.
+case:
+  title: Die letzte Kopie
+  ru: Последняя копия
+  intro: Позднее, в конце июня, команда встречается в клубе на Kieler Woche. Йенсен собрал
+    исходные сообщения, старые копии и объяснение Ферса. Финал решают факты о поездке и
+    содержимое документов, а не ошибки в немецком.
+  people:
+    J:
+      name: Herr Jensen
+      voice: Grandpa
+    X:
+      name: Herr Vehrs
+      voice: Eddy
+  steps:
+    - read: На последней копии перепутаны июньская поездка и августовский план. Возьмите только
+        данные августовского бланка.
+      evidence:
+        - note: "Anreise: 8. August. Abreise: 10. August. Zwei Einzelzimmer, kein Frühstück."
+          ru: "Приезд: 8 августа. Отъезд: 10 августа. Два одноместных номера, без завтрака."
+      question: Какая карточка соответствует источнику?
+      options:
+        - 2–4 июня, с завтраком
+        - 8–10 августа, без завтрака
+        - 8–10 июня, один двухместный номер
+      answer: 1
+      right: Совпадают месяц, даты, комнаты и отказ от завтрака. Июньское воспоминание не является
+        этой бронью.
+      wrong:
+        - Это данные другой поездки.
+        - null
+        - Месяц и тип комнаты не совпали.
+    - read: В копии написано, будто друзья остались в Гамбурге. Йенсен читает итоговый отчёт.
+      evidence:
+        - J: Dana und Mateo sind nach Kiel zurückgekommen. Jetzt sind sie im Club.
+          ru: Дана и Матео вернулись в Киль. Теперь они в клубе.
+      question: Что подтверждает отчёт?
+      options:
+        - Они вернулись и сейчас в клубе
+        - Они ещё едут в Гамбург
+        - Они остались в отеле
+      answer: 0
+      right: "*Sind zurückgekommen* — завершённое возвращение; *sind im Club* — их место сейчас."
+      wrong:
+        - null
+        - Движение в отчёте уже завершено.
+        - Это противоречит нынешнему месту.
+    - read: Найдена папка Ферса. Он сам объясняет происхождение копий; это новое свидетельство,
+        которое можно сравнить с сохранёнными листками.
+      evidence:
+        - X: Ich habe den alten Plan kopiert. Die neuen Nachrichten habe ich nicht gelesen.
+          ru: Я скопировал старый план. Новые сообщения я не прочитал.
+      question: Что объясняет признание?
+      options:
+        - Ферс подтвердил все изменения
+        - В копии попали старые данные без проверки новых
+        - Все исходные сообщения неверны
+      answer: 1
+      right: Он подтвердил копирование старого плана и отсутствие проверки новых сообщений. Это
+        объясняет расхождения, но не доказывает кражу или другую скрытую цель.
+      wrong:
+        - Чтение новых сообщений прямо отрицается.
+        - null
+        - Ошибочность копии не делает неверными первоисточники.
+    - read: "Последняя проверка возвращает нас к началу: «Шпротта» и бронь Ферса — разные записи.
+        Подтверждение Йенсена завершает дело."
+      evidence:
+        - J: Die Sprotte ist zurückgekommen. Sie ist an Liegeplatz zweiunddreißig geblieben. Herr Vehrs
+            hatte Liegeplatz dreiundzwanzig.
+          ru: «Шпротта» вернулась. Она осталась на месте 32. У господина Ферса было место 23.
+      question: Какой итог соответствует подтверждению?
+      options:
+        - Лодка пропала, обе записи о месте 23
+        - «Шпротта» на 32; бронь Ферса была на 23
+        - Ферс владеет «Шпроттой»
+      answer: 1
+      right: Возвращение подтверждено, номера разделены. Ни кража, ни владение лодкой из этих слов не
+        следуют.
+      wrong:
+        - Возвращение подтверждено, номера разные.
+        - null
+        - Бронь места не означает владение чужой лодкой.
+  ending: "Дело закрыто: «Шпротта» в клубе, бронь 23 отделена от места 32, неверные копии
+    заменены сверенными данными. Ферс признаёт, что переписывал старый план без новых
+    сообщений; его ошибки в немецком сами по себе ничего не доказывали. Команда встречает
+    Kieler Woche с исправленной папкой. В следующем сезоне A2 друзья будут договариваться о
+    поездках, объяснять причины и вместе выбирать решения."

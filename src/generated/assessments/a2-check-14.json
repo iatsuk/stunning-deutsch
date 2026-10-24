@@ -1,0 +1,187 @@
+{
+ "id": "a2-check-14",
+ "level": "a2",
+ "mode": "review",
+ "title": "После уроков 10–14: встреча новых участников",
+ "intro": "Новая ситуация после финала дневника: перенос встречи, ошибка в заказе и ответ клуба. Решение подтверждается сообщениями, а не памятью о героях.",
+ "sections": [
+  {
+   "id": "check",
+   "title": "Уточните и подтвердите сведения",
+   "taskIds": [
+    "phone",
+    "read",
+    "write",
+    "talk"
+   ]
+  }
+ ],
+ "tasks": {
+  "phone": {
+   "kind": "worksheet",
+   "part": "a2-hoeren-1",
+   "format": "notes",
+   "title": "Neue Nachrichten des Lernclubs",
+   "questions": [
+    {
+     "prompt": "Neuer Termin: Tag",
+     "answers": [
+      "Dienstag"
+     ]
+    },
+    {
+     "prompt": "Bestellte Größe",
+     "answers": [
+      "L"
+     ],
+     "options": [
+      "S",
+      "M",
+      "L"
+     ]
+    }
+   ],
+   "recordings": [
+    {
+     "text": "Guten Tag, hier ist der Lernclub. Ihr Gespräch am Montag fällt aus. Der neue Termin ist am Dienstag um vierzehn Uhr. Bitte bestätigen Sie den Termin.",
+     "audio": "audio/e3dd663ad1c6.m4a"
+    },
+    {
+     "text": "Hallo, hier ist Mira. Ich habe ein grünes T-Shirt in Größe L bestellt. In der Tüte ist aber Größe M. Ich möchte die Bestellung prüfen lassen.",
+     "audio": "audio/6c78ad92e9e6.m4a"
+    }
+   ],
+   "sample": []
+  },
+  "read": {
+   "kind": "worksheet",
+   "part": "a2-lesen-2",
+   "format": "article",
+   "title": "Eine Antwort und ein offener Punkt",
+   "text": "Seit Donnerstag plant Mira die neue Begegnung. Vor drei Tagen hat sie den Lernclub angerufen. Heute kam die Antwort: Am Dienstag um 14 Uhr ist Raum 3 frei. Ob das Café geöffnet ist, weiß der Lernclub noch nicht. Wenn das Café geschlossen ist, bringt die Gruppe Getränke mit.",
+   "questions": [
+    {
+     "prompt": "Seit wann plant Mira?",
+     "answers": [
+      "seit Donnerstag"
+     ],
+     "options": [
+      "vor Donnerstag",
+      "seit Donnerstag",
+      "seit Dienstag"
+     ]
+    },
+    {
+     "prompt": "Wann hat sie angerufen?",
+     "answers": [
+      "vor drei Tagen"
+     ],
+     "options": [
+      "vor drei Tagen",
+      "seit drei Tagen",
+      "morgen"
+     ]
+    },
+    {
+     "prompt": "Was ist bestätigt?",
+     "answers": [
+      "Raum 3 am Dienstag um 14 Uhr"
+     ],
+     "options": [
+      "Das Café ist geöffnet.",
+      "Raum 3 am Dienstag um 14 Uhr",
+      "Alle Getränke sind gekauft."
+     ]
+    },
+    {
+     "prompt": "Welche Frage bleibt offen?",
+     "answers": [
+      "ob das Café geöffnet ist"
+     ],
+     "options": [
+      "ob das Café geöffnet ist",
+      "ob Raum 3 frei ist",
+      "ob Dienstag der neue Tag ist"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "write": {
+   "kind": "message",
+   "part": "a2-schreiben-2",
+   "title": "Nach einer Information fragen",
+   "text": "Schreiben Sie eine persönliche Nachricht.",
+   "situation": "Schreiben Sie dem Lernclub wegen der Begegnung. Schreiben Sie ungefähr 40 Wörter. Wählen Sie drei der vier Punkte. Begrüßung und Gruß nicht vergessen.",
+   "choose": 3,
+   "points": [
+    "Termin bestätigen",
+    "Nach dem Café fragen",
+    "Plan bei geschlossenem Café",
+    "Fragen, was mitbringen"
+   ],
+   "sample": []
+  },
+  "talk": {
+   "kind": "card",
+   "part": "a2-sprechen-3",
+   "title": "Eine Alternative vereinbaren",
+   "word": "Treffen · Raum · Getränke",
+   "situation": "Besprechen Sie die Begegnung.",
+   "roles": [
+    {
+     "title": "Person A",
+     "text": "Sie können Dienstag ab 14 Uhr. Sie möchten im Café sitzen. Fragen Sie nach dem Café und nach Getränken."
+    },
+    {
+     "title": "Person B",
+     "text": "Raum 3 ist ab 14 Uhr frei. Ob das Café offen ist, wissen Sie nicht. Schlagen Sie vor, Getränke mitzubringen."
+    }
+   ],
+   "sample": []
+  }
+ },
+ "review": [
+  {
+   "level": "a2",
+   "topic": "a2-termine",
+   "label": "Урок 10: перенос записи",
+   "taskIds": [
+    "phone"
+   ]
+  },
+  {
+   "level": "a2",
+   "topic": "a2-service",
+   "label": "Урок 11: заказ и полученная вещь",
+   "taskIds": [
+    "phone"
+   ]
+  },
+  {
+   "level": "a2",
+   "topic": "a2-ausflug",
+   "label": "Урок 12: vor и seit",
+   "taskIds": [
+    "read"
+   ]
+  },
+  {
+   "level": "a2",
+   "topic": "a2-kontakte",
+   "label": "Урок 13: косвенный вопрос",
+   "taskIds": [
+    "read"
+   ]
+  },
+  {
+   "level": "a2",
+   "topic": "a2-abschluss",
+   "label": "Урок 14: общий план",
+   "taskIds": [
+    "read"
+   ]
+  }
+ ],
+ "dialogues": {}
+}

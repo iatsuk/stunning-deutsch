@@ -1,0 +1,627 @@
+id: b1-vorgeschichte
+order: 6
+title: Sie hatte die Kamera zu Hause vergessen.
+ru: Восстанавливаем предысторию по источникам
+lede: Элиф ищет снимки поездки в Любек. В заметке написано, что камера пропала и утренних
+  фотографий нет. Нужно восстановить, что произошло до поездки, во время неё и после
+  возвращения. Только тогда можно правильно обновить альбом.
+goals:
+  - Узнать действие, предшествующее другому прошлому событию
+  - Выбрать hatte или war по знакомому Perfekt
+  - Связать события с nachdem
+  - Написать объяснение и просьбу по четырём пунктам
+grammar:
+  - "Plusquamperfekt: hatte/war + Partizip II; nachdem"
+exam:
+  - b1-lesen-2
+  - b1-schreiben-1
+dialogues:
+  scene:
+    title: Sie hatte die Kamera zu Hause vergessen.
+    ru: Восстанавливаем предысторию по источникам
+    place: Lübeck / Kiel · фотографии для альбома · вымышленная учебная ситуация
+    people:
+      D:
+        name: Dana
+        voice: Anna
+      M:
+        name: Mateo
+        voice: Reed
+      E:
+        name: Elif
+        voice: Flo
+      H:
+        name: Hauke
+        voice: Rocko
+    lines:
+      - E: Ich finde auf dem Computer nur die Bilder vom Nachmittag.
+        ru: На компьютере я нахожу только фотографии второй половины дня.
+      - D: Du hattest am Vormittag mit dem Handy fotografiert.
+        ru: Утром ты фотографировала на телефон.
+      - E: Stimmt. Ich hatte die Kamera zu Hause vergessen.
+        ru: Верно. Я забыла камеру дома.
+      - M: Und ich hatte das Brot schon am Abend vorbereitet.
+        ru: А я подготовил хлеб ещё вечером.
+      - H: Nachdem wir in Lübeck angekommen waren, frühstückten wir am Wasser.
+        ru: После того как мы приехали в Любек, мы позавтракали у воды.
+      - D: Die Museumskarten hattest du vorher gekauft.
+        ru: Билеты в музей ты купила заранее.
+      - E: Jetzt sehe ich die Handyfotos. Ich hatte sie noch nicht auf den Computer kopiert.
+        ru: Теперь вижу фотографии на телефоне. Я ещё не скопировала их на компьютер.
+      - H: Dann fehlen keine Bilder. Wir korrigieren die Notiz.
+        ru: Тогда фотографии не потеряны. Исправим заметку.
+words:
+  useful:
+    title: Wörter für die Aufgabe
+    ru: Слова для действия
+    items:
+      - de: die Vorgeschichte
+        ru: предыстория
+        pl: Vorgeschichten
+      - de: der Ordner
+        ru: папка
+        pl: Ordner
+      - de: die Datei
+        ru: файл
+        pl: Dateien
+      - de: die Herkunft
+        ru: происхождение
+        pl: "-"
+      - de: die Erlaubnis
+        ru: разрешение
+        pl: "-"
+      - de: der Vorabend
+        ru: предыдущий вечер
+        pl: Vorabende
+      - de: der Schreibtisch
+        ru: письменный стол
+        pl: Schreibtische
+      - de: der Rucksack
+        ru: рюкзак
+        pl: Rucksäcke
+      - de: kopieren
+        ru: копировать
+      - de: speichern
+        ru: сохранять
+      - de: vergessen
+        ru: забывать
+      - de: vorhanden
+        ru: имеется в наличии
+      - de: angeblich
+        ru: якобы
+      - de: vorher
+        ru: до этого
+      - de: weitergeben
+        ru: передавать дальше
+tables:
+  rule:
+    title: "Plusquamperfekt: hatte/war + Partizip II; nachdem"
+    ru: Опора для решения
+    head:
+      - Beispiel
+      - Смысл и форма
+    ruCols:
+      - 1
+    rows:
+      - - Sie hatte die Kamera vergessen.
+        - "Plusquamperfekt: hatte + Partizip II."
+      - - Wir waren in Lübeck angekommen.
+        - "Как в Perfekt: sein → war; haben → hatte."
+      - - Nachdem wir angekommen waren, frühstückten wir.
+        - "nachdem: более раннее событие в придаточной части."
+tasks:
+  article:
+    kind: worksheet
+    part: b1-lesen-2
+    format: article
+    title: Warum die Bilder zuerst fehlten
+    text: >-
+      Für das Album sucht Elif Bilder von einem früheren Ausflug nach Lübeck. Zuerst findet sie
+      nur Fotos vom Nachmittag. Dana erinnert sich noch gut an den Vormittag. Bevor die Gruppe
+      zum Museum ging, saß sie am Wasser. Das Museum war nicht spontan ausgewählt: Elif hatte
+      die Karten schon am Freitag gekauft. Am Sonntag trafen sich die Freunde am Bahnhof. Mateo
+      hatte zu Hause Brot vorbereitet und brachte es in einer Tasche mit.
+
+
+      Nach dem Frühstück bemerkte Elif, dass ihre Kamera nicht im Rucksack war. Sie war nicht
+      im Zug verloren gegangen. Elif hatte die Kamera am Vorabend auf den Schreibtisch gelegt
+      und morgens dort vergessen. Deshalb fotografierte sie mit dem Handy. Die anderen machten
+      ebenfalls Bilder. Nachdem sie am Abend nach Kiel zurückgekommen waren, hatte niemand
+      Lust, alle Dateien sofort zu sortieren.
+
+
+      Heute schaut Elif noch einmal nach. Auf dem Handy sind die Bilder vom Vormittag
+      vorhanden. Sie hatte zuerst nur den Ordner auf dem Computer geöffnet. Dort waren die
+      Handyfotos noch nicht gespeichert. Nun kopiert sie sie in den gemeinsamen Ordner. Für das
+      Album fehlen also keine Bilder. Elif notiert die Herkunft der Fotos und fragt die anderen
+      vor einer Weitergabe um Erlaubnis. Der Eintrag über eine angeblich verlorene Kamera wird
+      korrigiert.
+    questions:
+      - prompt: Wann kaufte Elif die Museumskarten?
+        options:
+          - Am Freitag
+          - Erst im Museum
+          - Nach der Reise
+        answers:
+          - Am Freitag
+      - prompt: Wo war die Kamera?
+        options:
+          - Im Museum
+          - Im Zug
+          - Zu Hause
+        answers:
+          - Zu Hause
+      - prompt: Womit fotografierte Elif?
+        options:
+          - Mit Mateos Kamera
+          - Gar nicht
+          - Mit dem Handy
+        answers:
+          - Mit dem Handy
+      - prompt: Warum fand sie zuerst keine Vormittagsbilder?
+        options:
+          - Sie öffnete nur den Computerordner.
+          - Die Kamera war gestohlen.
+          - Das Handy war kaputt.
+        answers:
+          - Sie öffnete nur den Computerordner.
+      - prompt: Was macht sie vor der Weitergabe?
+        options:
+          - Sie nennt alle Bilder ihre eigenen.
+          - Sie fragt um Erlaubnis.
+          - Sie löscht die Originale.
+        answers:
+          - Sie fragt um Erlaubnis.
+  timeline:
+    kind: message
+    part: b1-lesen-2
+    title: Vier Zeitpunkte · Ausschnitt
+    text: "Freitag: Elif kauft die Museumskarten. Samstagabend: Sie legt die Kamera auf den
+      Schreibtisch. Sonntagvormittag: Sie fotografiert mit dem Handy. Heute: Sie kopiert die
+      Bilder in den gemeinsamen Ordner. Das sind verschiedene Zeitpunkte; die Kamera wurde
+      nicht im Zug verloren."
+  letter:
+    kind: message
+    part: b1-schreiben-1
+    title: Die Fotos erklären und um Erlaubnis bitten
+    text: Schreiben Sie Dana. Sie haben die Bilder vom Vormittag gefunden und möchten zwei ihrer
+      Fotos in das gemeinsame Album aufnehmen.
+    points:
+      - Warum die Bilder zuerst nicht zu sehen waren
+      - Was bei der Reise mit der Kamera passiert war
+      - Welche Fotos Sie jetzt benutzen möchten
+      - Bitte um Erlaubnis und Frage nach einer Bildunterschrift
+    situation: Antworten Sie auf alle vier Punkte mit Anrede und Gruß. Erklären Sie die
+      Vorgeschichte in verständlichen Sätzen.
+    sample:
+      - Liebe Dana, ich habe die Bilder vom Vormittag gefunden. Ich hatte zuerst nur den Ordner
+        auf meinem Computer geöffnet. Die Handyfotos waren dort noch nicht gespeichert. In
+        Lübeck habe ich mit dem Handy fotografiert, weil ich meine Kamera zu Hause vergessen
+        hatte. Für unser Album möchte ich gern auch zwei deiner Strandfotos verwenden. Sie
+        zeigen unsere gemeinsame Pause sehr schön. Bist du damit einverstanden? Welche
+        Bildunterschrift passt für dich? Bitte schreib mir, wie ich deinen Namen nennen soll.
+        Vielen Dank und liebe Grüße Elif
+steps:
+  - id: start
+    chapter: scene
+    title: Новое дело команды
+    beats:
+      - read: "Элиф ищет снимки поездки в Любек. В заметке написано, что камера пропала и утренних
+          фотографий нет. Нужно восстановить, что произошло до поездки, во время неё и после
+          возвращения. Только тогда можно правильно обновить альбом. Все нужные условия даны в
+          сцене: знания географии, настоящих цен или расписаний не требуются. Сначала
+          попробуйте понять, какого результата добиваются друзья, затем слушайте реплики. На
+          новом уровне важно не только найти число или знакомое слово, но и связать несколько
+          сведений."
+        point: Восстанавливаем предысторию по источникам
+        set:
+          view: dialogue
+          dialogue: scene
+          reveal: 4
+      - read: "Здесь есть точка в прошлом и то, что произошло раньше неё. В момент поиска снимков
+          выясняется, что Элиф до поездки оставила камеру дома, а после поездки ещё не
+          перенесла фотографии. Plusquamperfekt помогает показать этот шаг назад. Само
+          отсутствие файла в одной папке не означает потерю: вывод нужно проверить по другим
+          источникам."
+        point: "Plusquamperfekt: hatte/war + Partizip II; nachdem"
+        set:
+          reveal: 8
+  - id: words
+    chapter: words
+    title: Слова, которые понадобятся
+    beats:
+      - read: "Названия устройств и действий нужны, чтобы найти снимки, а не выучить технический
+          словарь. *Kopieren* не равняется *löschen*: перенос копии не удаляет оригинал.
+          *Vorhanden* сообщает о наличии, *verloren* — о потере. В письме понадобится понятно
+          объяснить происхождение фотографий и спросить разрешение перед их передачей группе."
+        point: Сначала используйте слово для решения; словарь остаётся справочником.
+        set:
+          view: words
+          words: useful
+          reveal: 6
+      - read: "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к
+          ситуации: какие слова обозначают человека, место, условие или уже выполненное
+          действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово
+          встретится снова в записке или разговоре, попробуйте восстановить его смысл до
+          подсказки."
+        point: Возвращайтесь к выражениям в сообщениях и новых действиях.
+        set:
+          reveal: 15
+  - id: grammar
+    chapter: grammar
+    title: "Plusquamperfekt: hatte/war + Partizip II; nachdem"
+    beats:
+      - read: От знакомого Perfekt *sie hat vergessen* переходим к *sie hatte vergessen*.
+          Вспомогательный глагол становится прошедшим, причастие сохраняется. Эта форма
+          показывает действие раньше уже описываемого прошлого момента. Не нужно заменять ею
+          все прошедшие события. Сначала выберите точку рассказа, затем решите, действительно
+          ли требуется шаг назад.
+        point: "Plusquamperfekt: hatte + Partizip II."
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: "Если Perfekt строится с sein, для Plusquamperfekt используем war: *wir sind angekommen →
+          wir waren angekommen*. Для фотографирования остаётся haben: *hat fotografiert → hatte
+          fotografiert*. Выбор вспомогательного глагола не зависит от давности. Он опирается на
+          уже знакомую модель конкретного глагола, поэтому повторяйте выражение вместе с
+          формой."
+        point: "Как в Perfekt: sein → war; haben → hatte."
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: "Nachdem означает «после того как». В этой модели прошлой истории сначала завершается
+          прибытие, затем происходит завтрак. Придаточная часть заканчивается вспомогательным
+          глаголом *waren*. После запятой личный глагол главной части стоит сразу. Важно
+          различить порядок слов в фразе и настоящий порядок событий: они не всегда перечислены
+          одинаково."
+        point: "nachdem: более раннее событие в придаточной части."
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+  - id: frames
+    chapter: grammar
+    title: Как устроена реплика
+    beats:
+      - read: В сочетании *angekommen waren* причастие находится перед личным вспомогательным глаголом.
+          Главное действие начинается после завершения прибытия. В игре сначала определите,
+          какое событие было раньше, и только потом собирайте фразу. Если поменять местами
+          завтрак и прибытие по смыслу, получится другая история, даже при правильных
+          окончаниях.
+        point: "*Nachdem wir angekommen waren, frühstückten wir.*"
+        set:
+          view: sentence
+          rows:
+            - de:
+                - Nachdem wir
+                - angekommen waren,
+                - frühstückten
+                - wir.
+              ru: После прибытия мы позавтракали.
+  - id: check
+    chapter: practice
+    title: Проверьте смысл до подсказки
+    beats:
+      - question: «Sie hatte fotografiert» означает действие позже поиска?
+        read: "Нет. Это шаг назад относительно выбранного прошлого момента. Во время поиска фотографий
+          мы говорим о снимках, уже сделанных в поездке. Чтобы не запутаться, назовите два
+          события простыми словами: сначала фотографирование, потом поиск. Затем вернитесь к
+          форме и найдите причастие с hatte."
+        point: Сначала фотографирование, потом поиск.
+        set:
+          view: table
+          table: rule
+      - question: Почему angekommen waren, а не angekommen hatten?
+        read: "У ankommen знакомое Perfekt строится с sein: *wir sind angekommen*. В более раннем
+          прошлом меняется форма этого же вспомогательного глагола — *wir waren angekommen*. Не
+          выбирайте hatte автоматически для каждого причастия. Сравните с *wir hatten
+          fotografiert*: там исходная модель использует haben."
+        point: "*sind angekommen → waren angekommen*."
+        set:
+          view: table
+          table: rule
+  - id: exam-article
+    chapter: exam
+    title: Warum die Bilder zuerst fehlten
+    beats:
+      - read: "Прочитайте весь текст до выбора ответа. Отдельно отметьте предысторию и сегодняшнюю
+          находку: почему снимки сначала казались отсутствующими? В пяти вопросах есть
+          варианты, которые звучат правдоподобно, но расширяют исходное сообщение. Для каждого
+          решения найдите конкретную фразу, а не опирайтесь на первую заметку о якобы
+          потерянной камере."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: article
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: article
+        set:
+          view: task
+          task: article
+          solved: true
+  - id: exam-timeline
+    chapter: exam
+    title: Vier Zeitpunkte · Ausschnitt
+    beats:
+      - read: "Эта короткая шкала — опора для игры, а не полная экзаменационная часть. Сравните
+          календарный порядок с грамматическими формами в длинной статье. Карточки не нужно
+          угадывать по словам «сначала» и «потом»: даты и описанные действия позволяют
+          восстановить цепочку. Проверьте, к какому прошлому моменту относится каждое более
+          раннее событие."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: timeline
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: timeline
+        set:
+          view: task
+          task: timeline
+          solved: true
+  - id: exam-letter
+    chapter: exam
+    title: Die Fotos erklären und um Erlaubnis bitten
+    beats:
+      - read: Сначала решите, что именно просите у Даны. Объяснение прошлого не заменяет разрешение на
+          использование её снимков. Напишите все четыре смысловых пункта в черновике, затем
+          проверьте обращение и завершение. Plusquamperfekt нужен там, где вы возвращаетесь к
+          более раннему событию; не вставляйте его в каждое предложение.
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: letter
+          reveal: 0
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: letter
+          reveal: 0
+        set:
+          view: task
+          task: letter
+          solved: true
+exercises:
+  - type: choice
+    q: Sie ___ die Kamera vergessen.
+    options:
+      - hatte
+      - war
+      - wurde
+    answer: 0
+    why: Vergessen с haben.
+  - type: choice
+    q: Wir ___ angekommen.
+    options:
+      - waren
+      - hatten
+      - haben
+    answer: 0
+    why: Ankommen с sein.
+  - type: choice
+    q: Nachdem wir angekommen ___, frühstückten wir.
+    options:
+      - sind
+      - waren
+      - hatten
+    answer: 1
+    why: Plusquamperfekt в более ранней части.
+  - type: choice
+    q: Sie hatte die Bilder ___.
+    options:
+      - kopiert
+      - kopieren
+      - kopierte
+    answer: 0
+    why: Нужно Partizip II.
+  - type: choice
+    q: После nachdem личный глагол стоит…
+    options:
+      - В конце придаточного
+      - Всегда вторым
+      - Перед союзом
+    answer: 0
+    why: "Прибытие: angekommen waren."
+  - type: choice
+    q: «Не в папке компьютера» доказывает потерю?
+    options:
+      - Только утром
+      - Нет
+      - Да
+    answer: 1
+    why: Есть другие источники файлов.
+  - type: order
+    de: Sie hatte die Kamera zu Hause vergessen.
+    ru: Она забыла камеру дома.
+  - type: order
+    de: Wir waren in Lübeck angekommen.
+    ru: Мы приехали в Любек раньше этого момента.
+  - type: order
+    de: Nachdem wir angekommen waren, frühstückten wir.
+    ru: После прибытия мы позавтракали.
+  - type: order
+    de: Ich hatte die Bilder noch nicht kopiert.
+    ru: Я ещё не скопировала фотографии.
+  - type: order
+    de: Die Fotos sind auf dem Handy vorhanden.
+    ru: Фотографии имеются на телефоне.
+  - type: order
+    de: Darf ich deine Fotos im Album verwenden?
+    ru: Можно использовать твои фото в альбоме?
+case:
+  title: Kamera weg oder Datei am anderen Ort?
+  ru: Сверка дневника
+  intro: Проверьте причинную связь в пересказе; отсутствие в одном месте не доказывает потерю.
+  people: {}
+  steps:
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Elif hatte die Kamera auf den Schreibtisch gelegt und dort vergessen.
+          ru: Элиф положила камеру на стол и забыла её там.
+      question: Камера потеряна в поезде?
+      options:
+        - Нет, оставлена дома
+        - Да
+        - Это фотоаппарат Хауке
+      answer: 0
+      right: Указано конкретное место до поездки.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Auf dem Handy sind die Bilder vom Vormittag vorhanden.
+          ru: На телефоне есть фотографии первой половины дня.
+      question: Утренние фото отсутствуют вообще?
+      options:
+        - Да
+        - Есть только музейные билеты
+        - Нет, найдены на телефоне
+      answer: 2
+      right: Источник прямо подтверждает наличие.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Elif fragt die anderen vor der Weitergabe um Erlaubnis.
+          ru: Перед передачей Элиф спрашивает разрешение у остальных.
+      question: Можно уже приписать ей все снимки?
+      options:
+        - Только без подписи
+        - Нет
+        - Да
+      answer: 1
+      right: Найденный файл не меняет авторство.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+  ending: "Исправлены три разные ошибки: место камеры, наличие файлов и авторство. В альбом
+    переходит проверенная история."
+adventure:
+  kind: sequence
+  title: Восстановите историю фотографий
+  intro: Элиф ищет снимки поездки в Любек. В заметке написано, что камера пропала и утренних
+    фотографий нет. Нужно восстановить, что произошло до поездки, во время неё и после
+    возвращения. Только тогда можно правильно обновить альбом.
+  ending: Утренние снимки найдены на телефоне. Камера оставалась дома, а не пропала в поезде. В
+    альбом идут копии после разрешения авторов; происхождение фотографий записано.
+  challenges:
+    - id: past
+      kind: pack
+      title: Что уже было сделано до поездки?
+      intro: Прочитайте статью и отберите два действия.
+      mode: reading
+      clue:
+        task: article
+      options:
+        - id: o0
+          label: Куплены билеты в музей
+        - id: o1
+          label: Подготовлен хлеб
+        - id: o2
+          label: Скопированы все фото в общую папку
+        - id: o3
+          label: Потеряна камера в поезде
+      answer:
+        - o0
+        - o1
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."
+    - id: aux
+      kind: match
+      title: Выберите знакомый вспомогательный глагол
+      intro: Восстановите формы по Perfekt.
+      slots:
+        - id: a
+          label: sie … fotografiert
+          answer: hatte
+        - id: b
+          label: wir … angekommen
+          answer: waren
+        - id: c
+          label: sie … die Kamera vergessen
+          answer: hatte
+      options:
+        - id: hatte
+          label: hatte
+        - id: waren
+          label: waren
+      success: Вспомогательный глагол сохраняет выбор haben/sein.
+      wrong: Ankommen использует sein; fotografieren и vergessen — haben.
+    - id: before
+      kind: order
+      title: Свяжите прибытие и завтрак
+      intro: Сначала группа приехала.
+      label: Реплика для команды
+      tokens:
+        - Nachdem wir
+        - angekommen waren,
+        - frühstückten
+        - wir.
+      success: Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.
+      wrong: "Проверьте положение глагола и конец предложения: используйте все фрагменты."
+    - id: timeline
+      kind: order
+      title: Расставьте события по времени
+      intro: Расположите четыре подтверждённых события, от самого раннего к позднему.
+      label: Реплика для команды
+      tokens:
+        - "Freitag: Karten gekauft."
+        - "Samstagabend: Kamera hingelegt."
+        - "Sonntag: mit dem Handy fotografiert."
+        - "Heute: Bilder kopiert."
+      success: Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.
+      wrong: "Проверьте положение глагола и конец предложения: используйте все фрагменты."
+    - id: ask
+      kind: negotiation
+      title: Получите разрешение на снимки
+      intro: Объясните находку и уточните право использования.
+      start: a
+      nodes:
+        - id: a
+          text: "Dana: Sind die Fotos jetzt gefunden?"
+          choices:
+            - label: Ja. Ich hatte zuerst nur auf dem Computer gesucht.
+              next: b
+              feedback: Причина первоначального отсутствия объяснена.
+        - id: b
+          text: "Dana: Auf meinem Handy sind auch zwei Strandfotos."
+          choices:
+            - label: Darf ich sie mit deinem Namen im Album verwenden?
+              next: end
+              feedback: Перед передачей запрошено разрешение.
+        - id: end
+          text: "Dana: Ja, gern. Schreib bitte „Pause am Strand — Foto: Dana“."
+          terminal: true
+          choices: []
+      success: Согласованы использование и подпись.
+      wrong: Сначала уточните разрешение.

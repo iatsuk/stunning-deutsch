@@ -58,7 +58,7 @@ export type Table = { title: string; ru?: string; head: string[]; rows: string[]
 export type Tile = { key: string; text: string };
 export type Row = { slots: Tile[][]; punct: string; plain: string; ru: string; audio?: string };
 
-export type TaskKind = "form" | "keywords" | "card" | "sign" | "message" | "listen" | "ads";
+export type TaskKind = "form" | "keywords" | "card" | "sign" | "message" | "listen" | "ads" | "worksheet";
 export type Task = {
   kind: TaskKind;
   part: string;
@@ -78,6 +78,14 @@ export type Task = {
   options?: (string | { title: string; text: string })[];
   answer?: number | boolean;
   points?: string[];
+  choose?: number;
+  roles?: {title:string;text:string}[];
+  recordings?: { text: string; audio?: string; voice?: string }[];
+  format?: "notes" | "directory" | "article" | "matching" | "radio" | "pair" | "cloze";
+  /** Общий банк заголовков: каждый вариант разрешён только в одном поле. */
+  uniqueOptions?: boolean;
+  reusableOptions?: string[];
+  questions?: { prompt: string; answers: string[]; options?: string[] }[];
   sample: { de: string; audio?: string }[];
   audio?: string;
   /** Запись-разговор для Hören: реплики звучат подряд голосами героев. */
@@ -157,6 +165,57 @@ export type Investigation = {
 /** Фраза для игры «Шпион»: верный вариант, вариант с ошибкой и объяснение. */
 export type SpyItem = { de: string; wrong: string; why: string; auto?: boolean };
 
+export type AdventureQuote = { de: string; audio?: string; name: string };
+export type AdventureChallenge = {
+  id: string;
+  title: string;
+  intro: string;
+  success: string;
+  wrong: string;
+  quotes?: AdventureQuote[];
+  mode?: "reading" | "listening";
+  variants?: AdventureChallenge[];
+} & (
+  | { kind: "note"; fields: { label: string; answers: string[] }[] }
+  | { kind: "negotiation"; start: string; nodes: { id: string; text: string; terminal?: boolean; choices: { label: string; next: string; feedback: string }[] }[] }
+  | { kind: "order"; tokens: string[]; label: string }
+  | { kind: "select" | "pack"; options: { id: string; label: string; icon?: string }[]; answer: string[]; alternatives?: string[][] }
+  | { kind: "match"; anchor?: string; slots: { id: string; label: string; icon?: string; answer: string }[]; options: { id: string; label: string; icon?: string }[] }
+  | { kind: "quantity"; items: { id: string; label: string; unit: string; pluralUnit?: string; icon?: string; answer: number; step: number; max: number }[] }
+  | { kind: "clock"; answer: string; initial: string; minuteStep: number }
+);
+export type CrewAdventure = {
+  kind: "crew";
+  title: string;
+  intro: string;
+  origins: string[];
+  places: string[];
+  members: { id: string; name: string; origin: string; home: string; quotes: AdventureQuote[] }[];
+  contact: { question: string; answer: string; success: string; wrong: string };
+  challenges: AdventureChallenge[];
+};
+export type HarborAdventure = {
+  kind: "harbor";
+  title: string;
+  intro: string;
+  berths: number[];
+  berth: number;
+  directions: AdventureQuote[];
+  phone: string;
+  phoneClue: AdventureQuote[];
+  phoneHelp: AdventureQuote[];
+  room: { text: string; audio?: string; options: string[]; answer: number };
+  challenges: AdventureChallenge[];
+};
+export type SequenceAdventure = {
+  kind: "sequence";
+  title: string;
+  intro: string;
+  ending: string;
+  challenges: AdventureChallenge[];
+};
+export type Adventure = CrewAdventure | HarborAdventure | SequenceAdventure;
+
 export type Topic = TopicMeta & {
   level: string;
   chapters: Chapter[];
@@ -167,6 +226,7 @@ export type Topic = TopicMeta & {
   beats: Beat[];
   exercises: Exercise[];
   case?: Investigation;
+  adventure?: Adventure;
   spy: SpyItem[];
 };
 
@@ -194,3 +254,15 @@ export const examLabel = (id: string) => {
   const found = examPart(id);
   return found ? `${found.module.de} · Teil ${found.number}` : id;
 };
+
+export type AssessmentMeta = { id:string;level:string;title:string;intro:string;mode:'review'|'mock' };
+export type Assessment = AssessmentMeta & {
+ sections:{id:string;title:string;minutes?:number;taskIds:string[]}[];
+ tasks:Record<string,Task>;
+ review:{level:string;topic:string;label:string;taskIds?:string[]}[];
+};
+export const assessmentCatalog=(catalogData as unknown as {assessments?:AssessmentMeta[]}).assessments??[];
+const assessmentLoaders=import.meta.glob<{default:Assessment}>('./generated/assessments/*.json');
+export async function loadAssessment(id:string):Promise<Assessment|null> {
+ const load=assessmentLoaders[`./generated/assessments/${id}.json`];return load?(await load()).default:null;
+}

@@ -1,0 +1,762 @@
+{
+ "id": "a2-mock",
+ "level": "a2",
+ "mode": "mock",
+ "title": "Авторский пробник Start Deutsch 2",
+ "intro": "Новые задания о повседневной жизни вокруг учебного центра. Это тренировка формата telc Deutsch A2: самостоятельная письменная попытка и дополнительный устный разговор. Все организации, сообщения и предложения вымышлены.",
+ "sections": [
+  {
+   "id": "listening",
+   "title": "Hören",
+   "minutes": 20,
+   "taskIds": [
+    "phone",
+    "radio",
+    "conversation"
+   ]
+  },
+  {
+   "id": "reading-writing",
+   "title": "Lesen und Schreiben",
+   "minutes": 50,
+   "taskIds": [
+    "directory",
+    "article",
+    "ads",
+    "form",
+    "letter"
+   ]
+  },
+  {
+   "id": "speaking",
+   "title": "Sprechen · дополнительно, в паре",
+   "minutes": 15,
+   "taskIds": [
+    "self",
+    "daily",
+    "plan"
+   ]
+  }
+ ],
+ "tasks": {
+  "phone": {
+   "kind": "worksheet",
+   "part": "a2-hoeren-1",
+   "format": "notes",
+   "title": "Teil 1 · Fünf Telefonnotizen",
+   "questions": [
+    {
+     "prompt": "Paket abholen: ab wie viel Uhr?",
+     "answers": [
+      "15:30",
+      "15.30",
+      "halb vier",
+      "fünfzehn Uhr dreißig"
+     ]
+    },
+    {
+     "prompt": "Treffen mit Nora: wo?",
+     "answers": [
+      "am Seiteneingang",
+      "Seiteneingang"
+     ]
+    },
+    {
+     "prompt": "Lernfahrt: Preis pro Person",
+     "answers": [
+      "26",
+      "26 Euro",
+      "sechsundzwanzig Euro"
+     ]
+    },
+    {
+     "prompt": "Kursraum: Nummer",
+     "answers": [
+      "204",
+      "zweihundertvier"
+     ]
+    },
+    {
+     "prompt": "Jonas kann am Mittwoch nicht. Neuer Tag?",
+     "answers": [
+      "Donnerstag"
+     ]
+    }
+   ],
+   "situation": "Hören Sie jede Nachricht zweimal und ergänzen Sie die Notizen.",
+   "recordings": [
+    {
+     "text": "Guten Tag, hier ist Ihr Lernladen. Ihr Paket ist da. Sie können es heute ab halb vier abholen. Wir schließen um neunzehn Uhr. Auf Wiederhören.",
+     "audio": "audio/9b9653a8667b.m4a"
+    },
+    {
+     "text": "Hallo, hier ist Nora. Der Haupteingang ist heute zu. Ich warte am Seiteneingang auf dich. Nicht am Parkplatz. Bis gleich!",
+     "audio": "audio/cf60015649eb.m4a"
+    },
+    {
+     "text": "Guten Tag. Sie haben nach unserer Lernfahrt gefragt. Der Preis ist sechsundzwanzig Euro pro Person. Das Mittagessen kostet extra. Vielen Dank.",
+     "audio": "audio/095be63667df.m4a"
+    },
+    {
+     "text": "Eine Nachricht vom Lernzentrum: Ihr Sprachkurs ist heute nicht in Raum zweihundertdrei, sondern in Raum zweihundertvier. Die Uhrzeit bleibt gleich.",
+     "audio": "audio/8f82c669e149.m4a"
+    },
+    {
+     "text": "Hallo, hier ist Jonas. Am Mittwoch muss ich länger arbeiten. Können wir uns am Donnerstag treffen? Am Freitag bin ich nicht in Kiel. Ruf mich bitte zurück.",
+     "audio": "audio/3aa447c92952.m4a"
+    }
+   ],
+   "sample": []
+  },
+  "radio": {
+   "kind": "worksheet",
+   "part": "a2-hoeren-2",
+   "format": "radio",
+   "title": "Teil 2 · Fünf Radiomeldungen",
+   "questions": [
+    {
+     "prompt": "Was kommt um 16 Uhr?",
+     "answers": [
+      "ein Interview"
+     ],
+     "options": [
+      "Musik",
+      "ein Interview",
+      "Sport"
+     ]
+    },
+    {
+     "prompt": "Wie wird das Wetter am Nachmittag?",
+     "answers": [
+      "regnerisch"
+     ],
+     "options": [
+      "sonnig",
+      "regnerisch",
+      "schneereich"
+     ]
+    },
+    {
+     "prompt": "Warum fährt der Bus später?",
+     "answers": [
+      "wegen einer Baustelle"
+     ],
+     "options": [
+      "wegen einer Baustelle",
+      "wegen Schnee",
+      "wegen eines Konzerts"
+     ]
+    },
+    {
+     "prompt": "Welcher Tag ist kostenlos?",
+     "answers": [
+      "Mittwoch"
+     ],
+     "options": [
+      "Dienstag",
+      "Mittwoch",
+      "Donnerstag"
+     ]
+    },
+    {
+     "prompt": "Was kann man gewinnen?",
+     "answers": [
+      "einen Kochkurs"
+     ],
+     "options": [
+      "ein Fahrrad",
+      "einen Kochkurs",
+      "eine Reise"
+     ]
+    }
+   ],
+   "situation": "Hören Sie jede Meldung einmal. Wählen Sie eine Antwort.",
+   "recordings": [
+    {
+     "text": "Sie hören Lernradio Küste. Nach der Musik sprechen wir um sechzehn Uhr mit einer Köchin über Essen im Alltag. Die Sportnachrichten hören Sie erst um siebzehn Uhr.",
+     "audio": "audio/9c976466c936.m4a"
+    },
+    {
+     "text": "Das Lernwetter: Am Vormittag scheint noch die Sonne. Ab vierzehn Uhr regnet es. Nehmen Sie für den Nachmittag einen Regenschirm mit.",
+     "audio": "audio/4cdff2c0f266.m4a"
+    },
+    {
+     "text": "Eine Information für unsere Lernbuslinie: Wegen einer Baustelle kommt der Bus heute zehn Minuten später. Die Haltestelle bleibt am gleichen Platz.",
+     "audio": "audio/c81e72a22140.m4a"
+    },
+    {
+     "text": "Unser erfundenes Lernmuseum lädt ein: Am Mittwoch ist der Eintritt kostenlos. Am Dienstag und Donnerstag kostet er sieben Euro.",
+     "audio": "audio/f72451356900.m4a"
+    },
+    {
+     "text": "Jetzt unser Lernradio-Spiel. Heute können Sie einen Kochkurs für zwei Personen gewinnen. Rufen Sie uns an und nennen Sie Ihr Lieblingsgericht.",
+     "audio": "audio/8309831962b6.m4a"
+    }
+   ],
+   "sample": []
+  },
+  "conversation": {
+   "kind": "worksheet",
+   "part": "a2-hoeren-3",
+   "format": "matching",
+   "title": "Teil 3 · Wer macht was?",
+   "questions": [
+    {
+     "prompt": "Nora",
+     "answers": [
+      "b"
+     ],
+     "options": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h"
+     ]
+    },
+    {
+     "prompt": "Jonas",
+     "answers": [
+      "d"
+     ],
+     "options": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h"
+     ]
+    },
+    {
+     "prompt": "Mira",
+     "answers": [
+      "a"
+     ],
+     "options": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h"
+     ]
+    },
+    {
+     "prompt": "Herr Petersen",
+     "answers": [
+      "e"
+     ],
+     "options": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h"
+     ]
+    },
+    {
+     "prompt": "Frau Berg",
+     "answers": [
+      "c"
+     ],
+     "options": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h"
+     ]
+    }
+   ],
+   "dialogue": "team",
+   "situation": "Hören Sie das Gespräch zweimal. Ordnen Sie jeder Person eine Aufgabe zu. a: Getränke mitbringen; b: Gäste begrüßen; c: Bücher zeigen; d: Tische aufstellen; e: Fotos machen; f: Kuchen backen; g: Musik auswählen; h: Tickets verkaufen.",
+   "script": [
+    {
+     "who": "Nora",
+     "de": "Jonas, wer begrüßt heute die Gäste? Ich kann das am Eingang machen.",
+     "audio": "audio/48c0241fbb5e.m4a"
+    },
+    {
+     "who": "Jonas",
+     "de": "Gut, Nora. Ich stelle die Tische auf. Kann Mira die Getränke mitbringen?",
+     "audio": "audio/1920ec14c828.m4a"
+    },
+    {
+     "who": "Nora",
+     "de": "Ja, sie hat schon Wasser und Saft gekauft. Und wer macht die Fotos?",
+     "audio": "audio/26da10409056.m4a"
+    },
+    {
+     "who": "Jonas",
+     "de": "Herr Petersen bringt seine Kamera mit und fotografiert uns. Frau Berg zeigt den Gästen die neuen Bücher.",
+     "audio": "audio/190a920bf173.m4a"
+    },
+    {
+     "who": "Nora",
+     "de": "Dann brauchen wir heute keine Musik und keinen Kuchen. Die Gäste möchten vor allem sprechen und lesen.",
+     "audio": "audio/f9023f6a1272.m4a"
+    },
+    {
+     "who": "Jonas",
+     "de": "Genau. Danke, dann haben wir alle Aufgaben verteilt.",
+     "audio": "audio/cfc63ca3ca9d.m4a"
+    }
+   ],
+   "sample": []
+  },
+  "directory": {
+   "kind": "worksheet",
+   "part": "a2-lesen-1",
+   "format": "directory",
+   "title": "Teil 1 · Im Lernzentrum",
+   "text": "Erdgeschoss: Empfang, Fundbüro, Anmeldung, Café.\nErster Stock: Sprachkurse, Leseraum, Computerraum.\nZweiter Stock: Musikraum, Werkstatt, Ausstellung.\nGarten: Sitzplätze, Spiele. Dies ist ein erfundener Wegweiser.",
+   "questions": [
+    {
+     "prompt": "Sie möchten einen Sprachkurs besuchen.",
+     "answers": [
+      "b"
+     ],
+     "options": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    {
+     "prompt": "Sie haben eine Tasche verloren.",
+     "answers": [
+      "a"
+     ],
+     "options": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    {
+     "prompt": "Sie möchten eine Ausstellung ansehen.",
+     "answers": [
+      "c"
+     ],
+     "options": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    {
+     "prompt": "Sie brauchen einen Computer.",
+     "answers": [
+      "b"
+     ],
+     "options": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    {
+     "prompt": "Sie möchten einen Kurs buchen.",
+     "answers": [
+      "a"
+     ],
+     "options": [
+      "a",
+      "b",
+      "c"
+     ]
+    }
+   ],
+   "situation": "Wählen Sie: a = Erdgeschoss, b = erster Stock, c = anderer Bereich.",
+   "sample": []
+  },
+  "article": {
+   "kind": "worksheet",
+   "part": "a2-lesen-2",
+   "format": "article",
+   "title": "Teil 2 · Ein neuer Treffpunkt",
+   "text": "Seit einem Monat besucht Mira eine Gesprächsgruppe im Lernzentrum. Früher traf sich die Gruppe jeden Freitag in einem Café. Dort war es oft zu laut. Jetzt nutzt die Gruppe am Donnerstag einen ruhigen Raum. Der Raum kostet nichts, aber Getränke müssen die Teilnehmer selbst mitbringen. Mira arbeitet donnerstags bis 17 Uhr. Deshalb beginnt das Treffen erst um 18 Uhr. Nächste Woche möchte Nora zum ersten Mal kommen. Sie hat noch nicht zugesagt, weil sie ihren Arbeitsplan erst am Montag bekommt.",
+   "questions": [
+    {
+     "prompt": "Mira besucht die Gruppe seit einem Monat.",
+     "answers": [
+      "richtig"
+     ],
+     "options": [
+      "richtig",
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Die Gruppe trifft sich jetzt freitags im Café.",
+     "answers": [
+      "falsch"
+     ],
+     "options": [
+      "richtig",
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Der neue Raum ist kostenlos.",
+     "answers": [
+      "richtig"
+     ],
+     "options": [
+      "richtig",
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Das Treffen beginnt vor Miras Arbeitsende.",
+     "answers": [
+      "falsch"
+     ],
+     "options": [
+      "richtig",
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Noras Teilnahme nächste Woche ist schon bestätigt.",
+     "answers": [
+      "falsch"
+     ],
+     "options": [
+      "richtig",
+      "falsch"
+     ]
+    }
+   ],
+   "situation": "Lesen Sie den Text. Wählen Sie richtig oder falsch.",
+   "sample": []
+  },
+  "ads": {
+   "kind": "worksheet",
+   "part": "a2-lesen-3",
+   "format": "matching",
+   "title": "Teil 3 · Angebote für den Alltag",
+   "text": "a) Fahrradwerkstatt. Reparaturen Montag bis Freitag, 9–18 Uhr.\nb) Gebrauchte Möbel: kleine Tische und Stühle, Abholung Samstag.\nc) Deutsch am Abend. Gesprächsgruppe Dienstag, 18 Uhr, kostenlos.\nd) Kochkurs. Samstag, vegetarische Gerichte, 25 Euro.\ne) Zimmer für eine Person. Zwei Nächte 90 Euro, ohne Frühstück.\nf) Fotokurs am Sonntag. Kamera mitbringen, 15 Euro.\ng) Musikabend Freitag, Eintritt 8 Euro.\nh) Café am Lernpark. Frühstück täglich ab 9 Uhr.\nx) Kein passendes Angebot.",
+   "questions": [
+    {
+     "prompt": "Mira möchte ihr Fahrrad am Donnerstag reparieren lassen.",
+     "answers": [
+      "a"
+     ],
+     "options": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "x"
+     ]
+    },
+    {
+     "prompt": "Jonas sucht einen gebrauchten kleinen Tisch.",
+     "answers": [
+      "b"
+     ],
+     "options": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "x"
+     ]
+    },
+    {
+     "prompt": "Nora möchte dienstags kostenlos Deutsch sprechen.",
+     "answers": [
+      "c"
+     ],
+     "options": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "x"
+     ]
+    },
+    {
+     "prompt": "Eine Person braucht zwei Nächte für höchstens 100 Euro.",
+     "answers": [
+      "e"
+     ],
+     "options": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "x"
+     ]
+    },
+    {
+     "prompt": "Ein Gast möchte am Sonntag vor 8 Uhr frühstücken.",
+     "answers": [
+      "x"
+     ],
+     "options": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "x"
+     ]
+    }
+   ],
+   "situation": "Welches Angebot passt? Wählen Sie einen Buchstaben oder x. Jedes Angebot passt höchstens einmal.",
+   "sample": []
+  },
+  "form": {
+   "kind": "worksheet",
+   "part": "a2-schreiben-1",
+   "format": "notes",
+   "title": "Teil 1 · Eine Anmeldung ergänzen",
+   "text": "Ihre Bekannte Mira Novak möchte einen Kurs buchen. Sie ist am 14. März 1999 geboren, wohnt in Kiel und arbeitet im Hotel. Sie spricht Deutsch und Kroatisch. Sie bucht den Fotokurs am Sonntag. Ergänzen Sie die fünf fehlenden Angaben im Formular. Vorname Mira ist schon eingetragen.",
+   "questions": [
+    {
+     "prompt": "Familienname",
+     "answers": [
+      "Novak"
+     ]
+    },
+    {
+     "prompt": "Geburtsdatum",
+     "answers": [
+      "14.03.1999",
+      "14. März 1999",
+      "14.3.1999",
+      "14/03/1999"
+     ]
+    },
+    {
+     "prompt": "Wohnort",
+     "answers": [
+      "Kiel"
+     ]
+    },
+    {
+     "prompt": "Beruf / Arbeitsplatz",
+     "answers": [
+      "Hotel",
+      "im Hotel",
+      "Hotelmitarbeiterin",
+      "Hotelangestellte"
+     ]
+    },
+    {
+     "prompt": "Gewünschter Kurs",
+     "answers": [
+      "Fotokurs",
+      "Fotokurs am Sonntag"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "letter": {
+   "kind": "message",
+   "part": "a2-schreiben-2",
+   "title": "Teil 2 · Besuch am Wochenende",
+   "text": "Schreiben Sie eine persönliche Nachricht.",
+   "situation": "Eine Freundin möchte Sie am Wochenende besuchen. Schreiben Sie ihr. Schreiben Sie ungefähr 40 Wörter. Wählen Sie drei der vier Punkte. Begrüßung und Gruß nicht vergessen.",
+   "choose": 3,
+   "points": [
+    "Treffpunkt und Uhrzeit vorschlagen",
+    "Ein gemeinsames Programm vorschlagen",
+    "Erklären, was bei Regen möglich ist",
+    "Sagen, was die Freundin mitbringen soll"
+   ],
+   "sample": []
+  },
+  "self": {
+   "kind": "card",
+   "part": "a2-sprechen-1",
+   "title": "Teil 1 · Sich vorstellen",
+   "word": "Name · Herkunft · Wohnort · Arbeit oder Studium · Sprachen · Freizeit",
+   "situation": "Stellen Sie sich vor. Eine andere Person fragt danach nach einem Detail. Antworten Sie ohne vorbereiteten Text.",
+   "sample": []
+  },
+  "daily": {
+   "kind": "card",
+   "part": "a2-sprechen-2",
+   "title": "Teil 2 · Ein Alltagsgespräch führen",
+   "word": "Thema: Einkaufen und Essen",
+   "situation": "Sprechen Sie über Ihren Alltag. Stellen Sie Fragen und reagieren Sie auf Antworten.",
+   "roles": [
+    {
+     "title": "Person A",
+     "text": "Fragen Sie: Wo kaufen Sie ein? Wann? Was kochen Sie gern? Erzählen Sie dann von Ihren eigenen Gewohnheiten."
+    },
+    {
+     "title": "Person B",
+     "text": "Antworten Sie. Fragen Sie dann: Was essen Sie gern? Mit wem essen Sie? Was haben Sie zuletzt gekauft?"
+    }
+   ],
+   "sample": []
+  },
+  "plan": {
+   "kind": "card",
+   "part": "a2-sprechen-3",
+   "title": "Teil 3 · Etwas aushandeln",
+   "word": "Gemeinsam einen freien Nachmittag planen",
+   "situation": "Machen Sie Vorschläge, nennen Sie Ihre Bedingungen und bestätigen Sie am Ende einen gemeinsamen Plan.",
+   "roles": [
+    {
+     "title": "Person A",
+     "text": "Sie können Samstag ab 14 Uhr oder Sonntag ab 11 Uhr. Budget: höchstens 15 Euro. Sie möchten gern draußen sein."
+    },
+    {
+     "title": "Person B",
+     "text": "Samstag haben Sie erst ab 16 Uhr Zeit. Sonntag können Sie von 11 bis 15 Uhr. Bei Regen möchten Sie ins Museum. Museum: 10 Euro. Spaziergang: kostenlos. Café: 5 Euro."
+    }
+   ],
+   "sample": []
+  }
+ },
+ "dialogues": {
+  "team": {
+   "title": "Vorbereitung im Lernzentrum",
+   "people": {
+    "N": {
+     "name": "Nora",
+     "voice": "Shelley"
+    },
+    "J": {
+     "name": "Jonas",
+     "voice": "Eddy"
+    }
+   },
+   "lines": [
+    {
+     "who": "N",
+     "de": "Jonas, wer begrüßt heute die Gäste? Ich kann das am Eingang machen.",
+     "ru": "Йонас, кто сегодня встречает гостей? Я могу сделать это у входа.",
+     "audio": "audio/48c0241fbb5e.m4a"
+    },
+    {
+     "who": "J",
+     "de": "Gut, Nora. Ich stelle die Tische auf. Kann Mira die Getränke mitbringen?",
+     "ru": "Хорошо, Нора. Я расставлю столы. Мира может принести напитки?",
+     "audio": "audio/1920ec14c828.m4a"
+    },
+    {
+     "who": "N",
+     "de": "Ja, sie hat schon Wasser und Saft gekauft. Und wer macht die Fotos?",
+     "ru": "Да, она уже купила воду и сок. А кто сделает фотографии?",
+     "audio": "audio/26da10409056.m4a"
+    },
+    {
+     "who": "J",
+     "de": "Herr Petersen bringt seine Kamera mit und fotografiert uns. Frau Berg zeigt den Gästen die neuen Bücher.",
+     "ru": "Господин Петерсен принесёт камеру и сфотографирует нас. Госпожа Берг покажет гостям новые книги.",
+     "audio": "audio/190a920bf173.m4a"
+    },
+    {
+     "who": "N",
+     "de": "Dann brauchen wir heute keine Musik und keinen Kuchen. Die Gäste möchten vor allem sprechen und lesen.",
+     "ru": "Значит, сегодня музыка и пирог нам не нужны. Гости хотят прежде всего разговаривать и читать.",
+     "audio": "audio/f9023f6a1272.m4a"
+    },
+    {
+     "who": "J",
+     "de": "Genau. Danke, dann haben wir alle Aufgaben verteilt.",
+     "ru": "Именно. Спасибо, теперь мы распределили все задачи.",
+     "audio": "audio/cfc63ca3ca9d.m4a"
+    }
+   ]
+  }
+ },
+ "review": [
+  {
+   "level": "a2",
+   "topic": "a2-neustart",
+   "label": "Урок 1: телефонные заметки и прошлое",
+   "taskIds": [
+    "phone"
+   ]
+  },
+  {
+   "level": "a2",
+   "topic": "a2-termine",
+   "label": "Урок 10: короткие сообщения на слух",
+   "taskIds": [
+    "radio"
+   ]
+  },
+  {
+   "level": "a2",
+   "topic": "a2-helfen",
+   "label": "Урок 3: кто что делает",
+   "taskIds": [
+    "conversation"
+   ]
+  },
+  {
+   "level": "a2",
+   "topic": "a2-unterwegs",
+   "label": "Урок 4: указатель",
+   "taskIds": [
+    "directory"
+   ]
+  },
+  {
+   "level": "a2",
+   "topic": "a2-ausflug",
+   "label": "Урок 12: связный текст",
+   "taskIds": [
+    "article"
+   ]
+  },
+  {
+   "level": "a2",
+   "topic": "a2-kontakte",
+   "label": "Урок 13: объявления и неизвестное",
+   "taskIds": [
+    "ads"
+   ]
+  },
+  {
+   "level": "a2",
+   "topic": "a2-buchen",
+   "label": "Урок 7: анкета",
+   "taskIds": [
+    "form"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,826 @@
+id: b1-erlebnisse
+order: 5
+title: Als wir am Strand ankamen, wurde es heller.
+ru: Рассказываем о поездке и привычках
+lede: Для альбома FördeTreff друзья вспоминают поездку в Экенфьорде. Важно отделить одно
+  событие от обычной привычки и восстановить порядок остановок. Пока администрация проверяет
+  запрос на помещение, команда собирает истории, которые можно показать на встрече.
+goals:
+  - Отличить одно прошлое событие от повторяющегося
+  - Понять частые формы Präteritum в рассказе
+  - Подобрать заголовок к смыслу текста
+  - Пересказать мнение и добавить свой опыт
+grammar:
+  - als / wenn в прошлом; war, hatte, ging, kam, fand
+exam:
+  - b1-lesen-1
+  - b1-hoeren-2
+  - b1-sprachbausteine-1
+  - b1-sprechen-2
+dialogues:
+  scene:
+    title: Als wir am Strand ankamen, wurde es heller.
+    ru: Рассказываем о поездке и привычках
+    place: Eckernförde · воспоминание для альбома · вымышленная учебная ситуация
+    people:
+      D:
+        name: Dana
+        voice: Anna
+      M:
+        name: Mateo
+        voice: Reed
+      E:
+        name: Elif
+        voice: Flo
+      H:
+        name: Hauke
+        voice: Rocko
+    lines:
+      - D: Als wir am Strand ankamen, wurde es heller.
+        ru: Когда мы приехали на пляж, стало светлее.
+      - H: Vorher war der Himmel ganz grau.
+        ru: До этого небо было совсем серым.
+      - E: Wir gingen zuerst ans Wasser und danach ins Café.
+        ru: Сначала мы пошли к воде, а потом в кафе.
+      - M: Wenn ich früher am Sonntag frei hatte, nahm ich oft Essen mit.
+        ru: Когда раньше у меня было свободно в воскресенье, я часто брал еду с собой.
+      - D: Diesmal kauften wir Brot unterwegs.
+        ru: В этот раз мы купили хлеб по дороге.
+      - E: Ich fand die kleine Ausstellung interessant.
+        ru: Мне показалась интересной маленькая выставка.
+      - H: Als wir zurückfahren wollten, war die Straße gesperrt.
+        ru: Когда мы хотели ехать обратно, улица была перекрыта.
+      - M: Zum Glück kam der Bus an der Ersatzhaltestelle pünktlich.
+        ru: К счастью, автобус пришёл на временную остановку вовремя.
+  interview:
+    title: Rückblick mit Dana
+    ru: Воспоминание Даны
+    place: Kiel · учебное интервью
+    people:
+      H:
+        name: Hauke
+        voice: Rocko
+      D:
+        name: Dana
+        voice: Anna
+    lines:
+      - H: War der Ausflug trotz der grauen Wolken gut?
+        ru: Поездка удалась, несмотря на серые облака?
+      - D: Ja. Als ich ankam, dachte ich zuerst an Regen. Dann wurde es heller. Am Wasser konnte ich
+          mich gut erholen.
+        ru: Да. Когда я приехала, то сначала подумала о дожде. Потом стало светлее. У воды я смогла
+          хорошо отдохнуть.
+      - H: Warst du allein?
+        ru: Ты была одна?
+      - D: Nein, wir waren zu viert. Früher fuhr ich manchmal allein ans Meer. Wenn ich wenig Zeit
+          hatte, blieb ich nur kurz. Diesmal hatten wir den ganzen Vormittag.
+        ru: Нет, нас было четверо. Раньше я иногда ездила к морю одна. Если было мало времени,
+          оставалась ненадолго. В этот раз у нас была вся первая половина дня.
+      - H: Was hat dir besonders gefallen?
+        ru: Что тебе особенно понравилось?
+      - D: Das Gespräch am Strand. Die Ausstellung war auch interessant, aber ich brauchte vor allem
+          eine Pause.
+        ru: Разговор на пляже. Выставка тоже была интересной, но мне прежде всего нужен был отдых.
+      - H: Und die Rückfahrt?
+        ru: А обратная дорога?
+      - D: Die Haltestelle war verlegt. Wir fanden den Hinweis und kamen pünktlich nach Kiel.
+        ru: Остановку перенесли. Мы нашли указатель и вовремя приехали в Киль.
+words:
+  useful:
+    title: Wörter für die Aufgabe
+    ru: Слова для действия
+    items:
+      - de: das Erlebnis
+        ru: пережитое событие
+        pl: Erlebnisse
+      - de: die Erinnerung
+        ru: воспоминание
+        pl: Erinnerungen
+      - de: die Küste
+        ru: побережье
+        pl: Küsten
+      - de: die Ausstellung
+        ru: выставка
+        pl: Ausstellungen
+      - de: das Porträt
+        ru: портрет
+        pl: Porträts
+      - de: die Ersatzhaltestelle
+        ru: временная остановка
+        pl: Ersatzhaltestellen
+      - de: der Himmel
+        ru: небо
+        pl: "-"
+      - de: die Unterbrechung
+        ru: перерыв
+        pl: Unterbrechungen
+      - de: früher
+        ru: раньше
+      - de: diesmal
+        ru: в этот раз
+      - de: unterwegs
+        ru: по дороге
+      - de: gesperrt
+        ru: перекрыт
+      - de: zum Glück
+        ru: к счастью
+      - de: ankommen
+        ru: прибывать
+      - de: mitnehmen
+        ru: брать с собой
+tables:
+  rule:
+    title: als / wenn в прошлом; war, hatte, ging, kam, fand
+    ru: Опора для решения
+    head:
+      - Beispiel
+      - Смысл и форма
+    ruCols:
+      - 1
+    rows:
+      - - Als wir ankamen, wurde es heller.
+        - "als: один прошлый эпизод, глагол в конце придаточного."
+      - - Wenn ich frei hatte, nahm ich oft Essen mit.
+        - "wenn: повторяющиеся случаи, также в прошлом."
+      - - war · hatte · ging · kam · fand
+        - "Частые Präteritum: sein, haben, gehen, kommen, finden."
+tasks:
+  headlines:
+    kind: worksheet
+    part: b1-lesen-1
+    format: matching
+    uniqueOptions: true
+    title: Fünf Texte, zehn Überschriften
+    text: >-
+      1) Als Dana zum ersten Mal nach Eckernförde fuhr, war der Himmel grau. Am Strand wurde es
+      heller. Sie blieb lange am Wasser und machte erst danach eine Pause im Café. Die Reise
+      war für sie eine gute Unterbrechung nach einer anstrengenden Woche.
+
+
+      2) Mateo fährt gern mit anderen Menschen an die Küste. Wenn er früher am Sonntag frei
+      hatte, nahm er oft Essen für alle mit. Diesmal kaufte die Gruppe unterwegs Brot. Mateo
+      fand das gemeinsame Frühstück wichtiger als ein langes Programm.
+
+
+      3) Elif besuchte eine kleine Fotoausstellung. Der Eintritt kostete wenig. Sie sah nicht
+      nur Bilder vom Meer, sondern auch Porträts von Menschen aus der Stadt. Für das Album
+      wählte sie ein eigenes Foto vom Strand.
+
+
+      4) Hauke wollte mit dem Bus zurückfahren. Als die Gruppe an der Haltestelle ankam, war
+      die Straße gesperrt. Ein Hinweis führte sie zur Ersatzhaltestelle. Der Bus kam dort
+      pünktlich.
+
+
+      5) Ein Nachbar schrieb nach dem Ausflug: Früher reiste ich fast immer allein. Jetzt freue
+      ich mich, wenn Freunde mitkommen. Ich brauche nicht viele Sehenswürdigkeiten. Ein gutes
+      Gespräch unterwegs reicht mir oft.
+    questions:
+      - prompt: Text 1
+        options:
+          - Erholung nach einer langen Woche
+          - Gemeinsam essen statt viel besichtigen
+          - Bilder von Stadt und Menschen
+          - Ein anderer Weg zum Bus
+          - Lieber mit Freunden unterwegs
+          - Ein neues Restaurant eröffnet
+          - Regen verhindert die ganze Reise
+          - Eine Ausstellung nur über Segelboote
+          - Der Bus fährt gar nicht
+          - Ein Kurs für Fotografie
+        answers:
+          - Erholung nach einer langen Woche
+      - prompt: Text 2
+        options:
+          - Erholung nach einer langen Woche
+          - Gemeinsam essen statt viel besichtigen
+          - Bilder von Stadt und Menschen
+          - Ein anderer Weg zum Bus
+          - Lieber mit Freunden unterwegs
+          - Ein neues Restaurant eröffnet
+          - Regen verhindert die ganze Reise
+          - Eine Ausstellung nur über Segelboote
+          - Der Bus fährt gar nicht
+          - Ein Kurs für Fotografie
+        answers:
+          - Gemeinsam essen statt viel besichtigen
+      - prompt: Text 3
+        options:
+          - Erholung nach einer langen Woche
+          - Gemeinsam essen statt viel besichtigen
+          - Bilder von Stadt und Menschen
+          - Ein anderer Weg zum Bus
+          - Lieber mit Freunden unterwegs
+          - Ein neues Restaurant eröffnet
+          - Regen verhindert die ganze Reise
+          - Eine Ausstellung nur über Segelboote
+          - Der Bus fährt gar nicht
+          - Ein Kurs für Fotografie
+        answers:
+          - Bilder von Stadt und Menschen
+      - prompt: Text 4
+        options:
+          - Erholung nach einer langen Woche
+          - Gemeinsam essen statt viel besichtigen
+          - Bilder von Stadt und Menschen
+          - Ein anderer Weg zum Bus
+          - Lieber mit Freunden unterwegs
+          - Ein neues Restaurant eröffnet
+          - Regen verhindert die ganze Reise
+          - Eine Ausstellung nur über Segelboote
+          - Der Bus fährt gar nicht
+          - Ein Kurs für Fotografie
+        answers:
+          - Ein anderer Weg zum Bus
+      - prompt: Text 5
+        options:
+          - Erholung nach einer langen Woche
+          - Gemeinsam essen statt viel besichtigen
+          - Bilder von Stadt und Menschen
+          - Ein anderer Weg zum Bus
+          - Lieber mit Freunden unterwegs
+          - Ein neues Restaurant eröffnet
+          - Regen verhindert die ganze Reise
+          - Eine Ausstellung nur über Segelboote
+          - Der Bus fährt gar nicht
+          - Ein Kurs für Fotografie
+        answers:
+          - Lieber mit Freunden unterwegs
+  interview:
+    kind: worksheet
+    part: b1-hoeren-2
+    format: article
+    title: Ein Rückblick · gekürztes Interview
+    questions:
+      - prompt: Dana erwartete zuerst Regen.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+      - prompt: Die Gruppe bestand aus vier Personen.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+      - prompt: Dana reiste früher immer mit der Gruppe.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Diesmal blieb nur eine kurze Pause.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Der Hinweis half bei der Rückfahrt.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+    dialogue: interview
+  gaps:
+    kind: worksheet
+    part: b1-sprachbausteine-1
+    format: cloze
+    title: Ein Brief nach dem Ausflug
+    text: Liebe Nora, [[1]] wir in Eckernförde ankamen, [[2]] der Himmel grau. Ich war [[3]] meinen
+      Freunden unterwegs. Zuerst gingen wir an [[4]] Strand. Später [[5]] wir ins Café, [[6]]
+      wir Hunger hatten. Dort saßen wir [[7]] warmen Raum. [[8]] besuchten wir eine
+      Ausstellung. Wir [[9]] viel Zeit. Ich freue mich immer, [[10]] wir zusammen reisen. Liebe
+      Grüße, Dana
+    questions:
+      - prompt: Lücke 1
+        options:
+          - Wenn
+          - Weil
+          - Als
+        answers:
+          - Als
+      - prompt: Lücke 2
+        options:
+          - war
+          - hatte
+          - wurde
+        answers:
+          - war
+      - prompt: Lücke 3
+        options:
+          - bei
+          - mit
+          - für
+        answers:
+          - mit
+      - prompt: Lücke 4
+        options:
+          - dem
+          - der
+          - den
+        answers:
+          - den
+      - prompt: Lücke 5
+        options:
+          - gingen
+          - ging
+          - gehen
+        answers:
+          - gingen
+      - prompt: Lücke 6
+        options:
+          - ob
+          - weil
+          - dass
+        answers:
+          - weil
+      - prompt: Lücke 7
+        options:
+          - ins
+          - am
+          - im
+        answers:
+          - im
+      - prompt: Lücke 8
+        options:
+          - Danach
+          - Als
+          - Weil
+        answers:
+          - Danach
+      - prompt: Lücke 9
+        options:
+          - wurde
+          - hatten
+          - waren
+        answers:
+          - hatten
+      - prompt: Lücke 10
+        options:
+          - als
+          - ob
+          - wenn
+        answers:
+          - wenn
+  opinions:
+    kind: card
+    part: b1-sprechen-2
+    title: Wie reisen Sie gern?
+    theme: Gemeinsam oder allein?
+    word: Text wiedergeben · eigene Erfahrung · Rückfrage
+    situation: Lesen Sie je einen Text. Geben Sie dem Partner die Meinung wieder, hören Sie zu und
+      vergleichen Sie mit Ihrer Erfahrung.
+    roles:
+      - title: Person A · Nora
+        text: Ich reise gern allein. Dann entscheide ich selbst, wann ich eine Pause mache und was ich
+          besuche. Letzten Sommer war ich drei Tage an der Küste. Aber ich spreche unterwegs
+          gern mit anderen Menschen.
+      - title: Person B · Jonas
+        text: Für mich ist eine Reise mit Freunden schöner. Ein gemeinsames Frühstück bleibt mir länger
+          in Erinnerung als ein Museum. Manchmal muss ich warten, weil jemand länger
+          fotografieren möchte. Das stört mich selten.
+steps:
+  - id: start
+    chapter: scene
+    title: Новое дело команды
+    beats:
+      - read: "Для альбома FördeTreff друзья вспоминают поездку в Экенфьорде. Важно отделить одно
+          событие от обычной привычки и восстановить порядок остановок. Пока администрация
+          проверяет запрос на помещение, команда собирает истории, которые можно показать на
+          встрече. Все нужные условия даны в сцене: знания географии, настоящих цен или
+          расписаний не требуются. Сначала попробуйте понять, какого результата добиваются
+          друзья, затем слушайте реплики. На новом уровне важно не только найти число или
+          знакомое слово, но и связать несколько сведений."
+        point: Рассказываем о поездке и привычках
+        set:
+          view: dialogue
+          dialogue: scene
+          reveal: 4
+      - read: "Вспоминать поездку можно с Perfekt, а в письменном рассказе часто встречается
+          Präteritum. Здесь вы узнаёте несколько частых форм по смыслу, а не учите всю систему
+          сразу. *Als* связывает части одного прошлого эпизода. *Wenn* подходит для
+          повторяющихся случаев. Слово *früher* само по себе не выбирает союз: важно, было ли
+          это однажды или повторялось."
+        point: als / wenn в прошлом; war, hatte, ging, kam, fand
+        set:
+          reveal: 8
+  - id: words
+    chapter: words
+    title: Слова, которые понадобятся
+    beats:
+      - read: Друзья выбирают для альбома разные впечатления. Для Даны важен отдых у воды, для Матео —
+          общая еда, для Элиф — фотографии. Заголовок должен передавать основную мысль, а не
+          случайное слово. Сначала решите, почему автор вообще рассказал этот эпизод. Затем
+          используйте отдельные детали для проверки своего выбора.
+        point: Сначала используйте слово для решения; словарь остаётся справочником.
+        set:
+          view: words
+          words: useful
+          reveal: 6
+      - read: "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к
+          ситуации: какие слова обозначают человека, место, условие или уже выполненное
+          действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово
+          встретится снова в записке или разговоре, попробуйте восстановить его смысл до
+          подсказки."
+        point: Возвращайтесь к выражениям в сообщениях и новых действиях.
+        set:
+          reveal: 15
+  - id: grammar
+    chapter: grammar
+    title: als / wenn в прошлом; war, hatte, ging, kam, fand
+    beats:
+      - read: "Для одного события в прошлом используйте als. Действие может длиться долго: важна
+          неповторяемость описываемого периода, а не его длина. В примере придаточная часть
+          заканчивается *ankamen*. После запятой сразу идёт личный глагол главной части.
+          Сравните с привычкой: она может повторяться каждый свободный воскресный день."
+        point: "als: один прошлый эпизод, глагол в конце придаточного."
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: "Если ситуация повторялась, подходит wenn: всякий раз, когда было свободное воскресенье.
+          *Oft* помогает увидеть повторение. Не переносите русское «когда» автоматически в один
+          немецкий союз. Сначала определите, описывает ли автор один эпизод или обычный порядок
+          действий. Затем проверьте глагол в конце придаточного и начало главной части."
+        point: "wenn: повторяющиеся случаи, также в прошлом."
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: В письменных рассказах вы встретите *war* вместо *ist gewesen*, *ging* вместо *ist
+          gegangen*. Это не меняет факт события. Формы *sein* и *haben* уже знакомы из
+          разговорных ситуаций. Здесь добавляем узнавание *ging, kam, fand*; в собственном
+          устном рассказе можно пользоваться знакомым Perfekt. Для понимания важнее связать
+          событие и его участника.
+        point: "Частые Präteritum: sein, haben, gehen, kommen, finden."
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+  - id: frames
+    chapter: grammar
+    title: Как устроена реплика
+    beats:
+      - read: Придаточная часть занимает первую позицию целиком. Поэтому после запятой идёт *wurde*, а
+          не ещё одно подлежащее перед глаголом. Это тот же принцип главного предложения,
+          который вы уже применяли после weil. Здесь союз передаёт время, а не причину.
+          Назовите по-русски связь событий до сборки немецкой фразы.
+        point: "*Als wir ankamen, wurde es heller.*"
+        set:
+          view: sentence
+          rows:
+            - de:
+                - Als wir
+                - ankamen,
+                - wurde
+                - es heller.
+              ru: Когда мы приехали, стало светлее.
+  - id: check
+    chapter: practice
+    title: Проверьте смысл до подсказки
+    beats:
+      - question: "«Каждое свободное воскресенье раньше»: als или wenn?"
+        read: "Wenn: речь идёт о повторяющихся случаях. Даже если все они были в прошлом, повторение
+          остаётся важным. Сравните *Als ich zum ersten Mal dort war* — один первый визит — и
+          *Wenn ich dort war, ging ich ans Wasser* — привычка при посещениях. Выбор зависит от
+          картины событий, а не только от времени глагола."
+        point: "Повторение в прошлом: *wenn*."
+        set:
+          view: table
+          table: rule
+      - question: «Sie ging ins Café» означает будущее действие?
+        read: Нет. Ging — форма Präteritum глагола gehen, то есть действие в прошлом. Увидев незнакомую
+          форму, свяжите её с соседними указателями времени и действиями. В рассказе группа
+          сначала была у воды, потом пошла в кафе. Не нужно переводить форму отдельно, если
+          последовательность помогает восстановить смысл.
+        point: "*ging* = прошедшая форма *gehen*."
+        set:
+          view: table
+          table: rule
+  - id: exam-headlines
+    chapter: exam
+    title: Fünf Texte, zehn Überschriften
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: headlines
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: headlines
+        set:
+          view: task
+          task: headlines
+          solved: true
+  - id: exam-interview
+    chapter: exam
+    title: Ein Rückblick · gekürztes Interview
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: interview
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: interview
+        set:
+          view: task
+          task: interview
+          solved: true
+  - id: exam-gaps
+    chapter: exam
+    title: Ein Brief nach dem Ausflug
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: gaps
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: gaps
+        set:
+          view: task
+          task: gaps
+          solved: true
+  - id: exam-opinions
+    chapter: exam
+    title: Wie reisen Sie gern?
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: opinions
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: opinions
+        set:
+          view: task
+          task: opinions
+          solved: true
+exercises:
+  - type: choice
+    q: ___ ich zum ersten Mal dort war, regnete es.
+    options:
+      - Ob
+      - Als
+      - Wenn
+    answer: 1
+    why: Один первый визит.
+  - type: choice
+    q: ___ ich früher frei hatte, fuhr ich oft ans Meer.
+    options:
+      - Dass
+      - Wenn
+      - Als
+    answer: 1
+    why: Повторение.
+  - type: choice
+    q: "Präteritum от gehen:"
+    options:
+      - ginge
+      - gegangen
+      - ging
+    answer: 2
+    why: ging — прошедшая форма.
+  - type: choice
+    q: "Präteritum от finden:"
+    options:
+      - gefunden
+      - fand
+      - findet
+    answer: 1
+    why: fand.
+  - type: choice
+    q: Als wir ankamen, ___ es heller.
+    options:
+      - werden
+      - wurde
+      - es wurde
+    answer: 1
+    why: Личный глагол сразу после запятой.
+  - type: choice
+    q: Die Straße war gesperrt. Значит…
+    options:
+      - Автобус отменён
+      - Город закрыт
+      - Улица была перекрыта
+    answer: 2
+    why: Не расширяйте сообщение.
+  - type: order
+    de: Als wir ankamen, wurde es heller.
+    ru: Когда мы приехали, стало светлее.
+  - type: order
+    de: Wenn ich frei hatte, nahm ich Essen mit.
+    ru: Когда у меня было свободно, я брал еду.
+  - type: order
+    de: Wir gingen danach ins Café.
+    ru: Потом мы пошли в кафе.
+  - type: order
+    de: Ich fand die Ausstellung interessant.
+    ru: Мне показалась интересной выставка.
+  - type: order
+    de: Der Bus kam pünktlich.
+    ru: Автобус пришёл вовремя.
+  - type: order
+    de: Diesmal hatten wir viel Zeit.
+    ru: В этот раз у нас было много времени.
+case:
+  title: Ein grauer Morgen ist kein Regentag
+  ru: Сверка дневника
+  intro: В пересказ добавили сведения, которых нет в источниках.
+  people: {}
+  steps:
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Als wir ankamen, war der Himmel grau. Danach wurde es heller.
+          ru: Когда приехали, небо было серым. Потом стало светлее.
+      question: Весь день шёл дождь?
+      options:
+        - Поездка отменена
+        - Это не сказано
+        - Да
+      answer: 1
+      right: Серое небо ещё не доказывает дождь весь день.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Wenn Mateo früher frei hatte, nahm er oft Essen mit. Diesmal kaufte die Gruppe Brot.
+          ru: Раньше в свободные дни Матео часто брал еду. В этот раз группа купила хлеб.
+      question: Что относится именно к этой поездке?
+      options:
+        - Купили хлеб
+        - Матео всегда готовил
+        - Каждый ел один
+      answer: 0
+      right: Diesmal выделяет конкретный эпизод.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Der Bus kam an der Ersatzhaltestelle pünktlich.
+          ru: Автобус пришёл на временную остановку вовремя.
+      question: Что изменилось?
+      options:
+        - Время прибытия
+        - Город назначения
+        - Остановка
+      answer: 2
+      right: Изменилось место остановки, не пунктуальность.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+  ending: Запись исправлена по источникам. В следующей главе команда воспользуется
+    подтверждёнными сведениями для нового решения.
+adventure:
+  kind: sequence
+  title: Stellen Sie die Reisegeschichte wieder her
+  intro: Для альбома FördeTreff друзья вспоминают поездку в Экенфьорде. Важно отделить одно
+    событие от обычной привычки и восстановить порядок остановок. Пока администрация проверяет
+    запрос на помещение, команда собирает истории, которые можно показать на встрече.
+  ending: Die Gruppe unterscheidet einzelne Erlebnisse und frühere Gewohnheiten. Die Erinnerungen
+    sind für das Album sortiert; ein grauer Morgen wird im Tagebuch nicht mehr zum vollständig
+    verregneten Tag.
+  challenges:
+    - id: title
+      kind: select
+      title: Finden Sie den passenden Blickwinkel
+      intro: Что является главной мыслью первого текста?
+      mode: reading
+      clue:
+        task: headlines
+      options:
+        - id: o0
+          label: Отдых после трудной недели
+        - id: o1
+          label: Отмена всей поездки
+        - id: o2
+          label: Открытие ресторана
+      answer:
+        - o0
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."
+    - id: time
+      kind: match
+      title: Один раз или повторение?
+      intro: Соедините начало со значением.
+      slots:
+        - id: a
+          label: Als ich zum ersten Mal dort war, …
+          answer: once
+        - id: b
+          label: Wenn ich sonntags frei hatte, …
+          answer: often
+        - id: c
+          label: Als wir an der Haltestelle ankamen, …
+          answer: once
+      options:
+        - id: once
+          label: один прошлый эпизод
+        - id: often
+          label: повторяющиеся случаи
+      success: Союз показывает, один эпизод перед нами или привычка.
+      wrong: Первый визит и конкретное прибытие — отдельные события.
+    - id: als
+      kind: order
+      title: Соберите воспоминание
+      intro: Начните с прибытия.
+      label: Реплика для команды
+      tokens:
+        - Als wir
+        - ankamen,
+        - wurde
+        - es heller.
+      success: Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.
+      wrong: "Проверьте положение глагола и конец предложения: используйте все фрагменты."
+    - id: route
+      kind: pack
+      title: Что действительно произошло?
+      intro: Отберите подтверждённые детали текстов.
+      mode: reading
+      clue:
+        task: headlines
+      options:
+        - id: o0
+          label: Сначала вода, потом кафе
+        - id: o1
+          label: Автобус пришёл вовремя
+        - id: o2
+          label: Весь день шёл дождь
+        - id: o3
+          label: Группа купила хлеб
+      answer:
+        - o0
+        - o1
+        - o3
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."
+    - id: stop
+      kind: note
+      title: Сохраните полезную деталь
+      intro: Где группа села на обратный автобус? Используйте текст 4.
+      mode: reading
+      clue:
+        task: headlines
+      fields:
+        - label: Haltestelle für die Rückfahrt
+          answers:
+            - Ersatzhaltestelle
+            - an der Ersatzhaltestelle
+            - zur Ersatzhaltestelle
+      success: Временная остановка сохранена в заметке.
+      wrong: В тексте названо Ersatzhaltestelle.

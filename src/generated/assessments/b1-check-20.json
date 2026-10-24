@@ -1,0 +1,256 @@
+{
+ "id": "b1-check-20",
+ "level": "b1",
+ "mode": "review",
+ "title": "После уроков 17–20: вечер настольных игр",
+ "intro": "Новая группа передаёт итог другого мероприятия. Сопоставьте сообщение до встречи и фактический отчёт; затем предложите улучшение. Все данные вымышлены.",
+ "sections": [
+  {
+   "id": "check",
+   "title": "Перенос навыков в новый проект",
+   "taskIds": [
+    "read",
+    "listen",
+    "gaps",
+    "write",
+    "talk"
+   ]
+  }
+ ],
+ "tasks": {
+  "read": {
+   "kind": "worksheet",
+   "part": "b1-lesen-2",
+   "format": "article",
+   "title": "Ein Spieleabend und sein Rückblick",
+   "text": "Vor dem Spieleabend wurde Raum E statt Raum D bestätigt. Termin war Freitag 17–19 Uhr für 14 Personen. In einer alten weitergeleiteten Nachricht stand noch D. Nora hatte die geliehenen Becher am Nachmittag abgeholt, Jonas bekam den Schlüssel 16:45. Eine Vorhersage hatte möglichen Regen genannt; über die tatsächliche Witterung steht nichts im Bericht. Für die Getränke wurden sowohl Wasser als auch Tee angeboten. Ein Gast wählte nur Wasser. Im Rückblick sind folgende Ausgaben bestätigt: Raum 35 Euro, Essen 25 Euro, Transport 6 Euro. Das Budget betrug 70 Euro. Die Fotos des Abends zeigen verschiedene kleine Spielgruppen. Um 19 Uhr war der Raum leer; der Schlüssel wurde 19:10 zurückgegeben, vor der Frist 19:15. Die Becher sollen erst am Montag zurückgebracht werden.",
+   "questions": [
+    {
+     "prompt": "Welcher Raum wurde wirklich benutzt?",
+     "options": [
+      "D",
+      "Beide ohne Unterschied",
+      "E"
+     ],
+     "answers": [
+      "E"
+     ]
+    },
+    {
+     "prompt": "Warum musste Nora keine neuen Becher kaufen?",
+     "options": [
+      "Die Leihbecher waren abgeholt.",
+      "Becher waren verboten.",
+      "Jonas hatte alle Fotos gelöscht."
+     ],
+     "answers": [
+      "Die Leihbecher waren abgeholt."
+     ]
+    },
+    {
+     "prompt": "Wie hoch sind die bestätigten Ausgaben?",
+     "options": [
+      "76 Euro",
+      "66 Euro",
+      "70 Euro"
+     ],
+     "answers": [
+      "66 Euro"
+     ]
+    },
+    {
+     "prompt": "Wie war das Wetter während des Abends?",
+     "options": [
+      "Es regnete sicher die ganze Zeit.",
+      "Es war garantiert trocken.",
+      "Das geht aus dem Bericht nicht hervor."
+     ],
+     "answers": [
+      "Das geht aus dem Bericht nicht hervor."
+     ]
+    },
+    {
+     "prompt": "Welche Rückgabe ist bereits erledigt?",
+     "options": [
+      "Der Schlüssel um 19:10",
+      "Die Becher am Montag",
+      "Alle zukünftigen Leihgaben"
+     ],
+     "answers": [
+      "Der Schlüssel um 19:10"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "listen": {
+   "kind": "worksheet",
+   "part": "b1-hoeren-3",
+   "format": "article",
+   "title": "Zwei Stimmen nach dem Abend",
+   "recordings": [
+    {
+     "text": "Der Gast wollte nur Wasser. Wir haben ihm erklärt, dass sowohl Wasser als auch Tee angeboten werden, aber niemand beides nehmen muss. Danach spielte er mit einer kleinen Gruppe und fragte selbst nach den Regeln.",
+     "audio": "audio/b7e519a26090.m4a"
+    },
+    {
+     "text": "Die Becher sind noch bei Nora. Am Montag werde ich sie zum Verleiher bringen. Den Schlüssel habe ich bereits am Freitag zurückgegeben. Die beiden Rückgaben haben also einen unterschiedlichen Stand.",
+     "audio": "audio/ba04824fca29.m4a"
+    }
+   ],
+   "questions": [
+    {
+     "prompt": "Der Gast musste beide Getränke nehmen.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Die Rückgabe der Becher ist noch eine zukünftige Aufgabe.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "richtig"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "gaps": {
+   "kind": "worksheet",
+   "part": "b1-sprachbausteine-1",
+   "format": "cloze",
+   "title": "Ein kurzer Schlussbericht · Ausschnitt",
+   "text": "Der neue Raum wurde schriftlich [[1]]. Die Gäste, mit [[2]] wir gesprochen haben, fanden die kleinen Gruppen gut. Ich [[3]] beim nächsten Mal mehr Zeit einplanen. Wir erklären die Regeln einfach, [[4]] alle mitspielen können. Niemand braucht neue Becher [[5]] kaufen.",
+   "questions": [
+    {
+     "prompt": "Lücke 1",
+     "options": [
+      "bestätigt",
+      "bestätigen",
+      "bestätigte"
+     ],
+     "answers": [
+      "bestätigt"
+     ]
+    },
+    {
+     "prompt": "Lücke 2",
+     "options": [
+      "die",
+      "denen",
+      "den"
+     ],
+     "answers": [
+      "denen"
+     ]
+    },
+    {
+     "prompt": "Lücke 3",
+     "options": [
+      "wurde",
+      "hatte",
+      "würde"
+     ],
+     "answers": [
+      "würde"
+     ]
+    },
+    {
+     "prompt": "Lücke 4",
+     "options": [
+      "damit",
+      "um",
+      "weil"
+     ],
+     "answers": [
+      "damit"
+     ]
+    },
+    {
+     "prompt": "Lücke 5",
+     "options": [
+      "damit",
+      "zu",
+      "um"
+     ],
+     "answers": [
+      "zu"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "write": {
+   "kind": "message",
+   "part": "b1-schreiben-1",
+   "title": "Einem fehlenden Mitglied berichten",
+   "text": "Ein Mitglied konnte nicht kommen. Antworten Sie mit einem eigenen zusammenhängenden Brief. Nutzen Sie die Angaben des neuen Spieleabends.",
+   "points": [
+    "Den Abend und den tatsächlichen Raum beschreiben",
+    "Eine Änderung und ihre Lösung erklären",
+    "Ein Erlebnis mit einem Gast und den Stand der Rückgaben schildern",
+    "Eine Verbesserung vorschlagen und eine Frage stellen"
+   ],
+   "situation": "Behandeln Sie alle vier Punkte. Schreiben Sie einen zusammenhängenden Brief mit Anrede und Gruß. Die Antwort wird nicht automatisch bewertet.",
+   "sample": []
+  },
+  "talk": {
+   "kind": "card",
+   "part": "b1-sprechen-3",
+   "title": "Die nächste Veranstaltung gemeinsam vorbereiten",
+   "situation": "Übertragen Sie die Erfahrung auf einen neuen Spieleabend. Einigen Sie sich auf Termin, Gruppengröße, Erklärung der Regeln, Pause und Rückmeldungen.",
+   "word": "Vorschlag · Rückfrage · Reaktion · Einigung",
+   "roles": [
+    {
+     "title": "Person A",
+     "text": "Sie haben Samstagvormittag Zeit zur Vorbereitung und können Sonntag ab 16 Uhr mitmachen. Sie möchten kurze Erklärungen und kleine Gruppen."
+    },
+    {
+     "title": "Person B",
+     "text": "Sie können am Sonntag 14–18 Uhr da sein und vorher den Raum vorbereiten. Sie möchten eine gemeinsame Pause und klare Zuständigkeiten bei der Rückgabe."
+    }
+   ],
+   "sample": []
+  }
+ },
+ "review": [
+  {
+   "level": "b1",
+   "topic": "b1-umwelt",
+   "label": "Альтернатива и предложение обоих вариантов",
+   "taskIds": [
+    "listen"
+   ]
+  },
+  {
+   "level": "b1",
+   "topic": "b1-aussichten",
+   "label": "Прогноз и подтверждённый факт",
+   "taskIds": [
+    "read"
+   ]
+  },
+  {
+   "level": "b1",
+   "topic": "b1-weitergeben",
+   "label": "Источник и точный пересказ",
+   "taskIds": [
+    "read",
+    "gaps"
+   ]
+  },
+  {
+   "level": "b1",
+   "topic": "b1-finale",
+   "label": "Итог, письмо и новый общий план"
+  }
+ ],
+ "dialogues": {}
+}

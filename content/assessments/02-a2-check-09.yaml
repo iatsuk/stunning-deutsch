@@ -1,0 +1,129 @@
+id: a2-check-09
+level: a2
+mode: review
+title: "После уроков 5–9: гостевой вечер"
+intro: Выберите жильё для нового гостя и согласуйте смену сотрудника. Цены и даты заданы только
+  для этой учебной ситуации.
+sections:
+  - id: check
+    title: Цена, условия и подтверждение
+    taskIds:
+      - phone
+      - read
+      - write
+      - talk
+tasks:
+  phone:
+    kind: worksheet
+    part: a2-hoeren-1
+    format: notes
+    title: Drei Notizen zur Buchung
+    questions:
+      - prompt: "Anreise: Uhrzeit"
+        answers:
+          - 16:00
+          - 16 Uhr
+          - sechzehn Uhr
+          - "16"
+      - prompt: Zimmerpreis pro Nacht
+        answers:
+          - "48"
+          - 48 Euro
+          - achtundvierzig Euro
+      - prompt: "Treffen mit Kollegin: Tag"
+        answers:
+          - Freitag
+    recordings:
+      - text: Guten Tag, hier ist Frau Berg vom Lernhaus. Am Donnerstag können Sie ab sechzehn Uhr
+          anreisen. Bitte melden Sie sich am Empfang.
+        voice: Sandy
+      - text: "Hier noch der Preis: Das Einzelzimmer kostet achtundvierzig Euro pro Nacht. Das
+          Frühstück ist nicht dabei. Auf Wiederhören."
+        voice: Sandy
+      - text: Hallo, hier ist Jonas. Ich musste gestern länger arbeiten. Können wir unsere Liste am
+          Freitag besprechen? Am Donnerstag habe ich keine Zeit.
+        voice: Eddy
+  read:
+    kind: worksheet
+    part: a2-lesen-2
+    format: article
+    title: Drei Zimmerangebote
+    text: "Mira braucht für eine Person zwei Nächte, Donnerstag bis Samstag. Budget: 100 Euro
+      insgesamt, Frühstück ist nicht nötig. A: kleines Einzelzimmer, 48 Euro pro Nacht. B:
+      großes Einzelzimmer, 55 Euro pro Nacht. C: kleines Einzelzimmer, 40 Euro pro Nacht, aber
+      erst ab Samstag frei."
+    questions:
+      - prompt: Welches Angebot passt zu allen Bedingungen?
+        answers:
+          - A
+        options:
+          - A
+          - B
+          - C
+      - prompt: Was kostet A für zwei Nächte?
+        answers:
+          - 96 Euro
+        options:
+          - 48 Euro
+          - 96 Euro
+          - 100 Euro
+      - prompt: Welches Zimmer ist größer?
+        answers:
+          - B
+        options:
+          - A
+          - B
+          - C
+  write:
+    kind: message
+    part: a2-schreiben-2
+    title: Die Buchung bestätigen lassen
+    text: Schreiben Sie eine persönliche Nachricht.
+    situation: Schreiben Sie dem Lernhaus. Schreiben Sie ungefähr 40 Wörter. Wählen Sie drei der
+      vier Punkte. Begrüßung und Gruß nicht vergessen.
+    choose: 3
+    points:
+      - Anreise und Nächte
+      - Personenzahl
+      - Nach dem Gesamtpreis fragen
+      - Ankunftszeit mitteilen
+  talk:
+    kind: card
+    part: a2-sprechen-3
+    title: Einen Abend gemeinsam planen
+    word: Donnerstag oder Freitag · Zeit · günstiges Essen
+    situation: Vereinbaren Sie einen gemeinsamen Abend.
+    roles:
+      - title: Person A
+        text: Sie haben Donnerstag ab 18 Uhr und Freitag ab 17 Uhr Zeit. Sie möchten höchstens 12 Euro
+          ausgeben.
+      - title: Person B
+        text: Sie arbeiten Donnerstagabend. Freitag können Sie ab 18 Uhr. Sie möchten warm essen.
+          Machen Sie einen Vorschlag.
+review:
+  - level: a2
+    topic: a2-vergleichen
+    label: "Урок 5: сравнение и бюджет"
+    taskIds:
+      - read
+  - level: a2
+    topic: a2-zeitplan
+    label: "Урок 6: условия и время"
+    taskIds:
+      - phone
+  - level: a2
+    topic: a2-buchen
+    label: "Урок 7: бронь и итоговая цена"
+    taskIds:
+      - read
+      - phone
+  - level: a2
+    topic: a2-wohnen
+    label: "Урок 8: описать комнату"
+    taskIds:
+      - read
+  - level: a2
+    topic: a2-arbeit
+    label: "Урок 9: прошлое и поручение"
+    taskIds:
+      - phone

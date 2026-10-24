@@ -1,0 +1,2110 @@
+{
+ "id": "b1-finale",
+ "level": "b1",
+ "order": 20,
+ "title": "Wir haben es gemeinsam organisiert. Was bleibt für das nächste Mal?",
+ "ru": "Проводим встречу и передаём подтверждённый итог",
+ "lede": "Встреча FördeTreff состоялась в Raum C. Утром пошёл дождь, поэтому материалы привезли автобусом; поезд Хауке пришёл вовремя. Теперь команда сверяет итог и вспоминает ключевые действия дня. Нужно объяснить гостю альбом, сохранить роли и передать результат без лишних обещаний.",
+ "goals": [
+  "Согласовать сведения из разных источников",
+  "Понятно объяснить и уточнить в живом разговоре",
+  "Отличить запланированное от выполненного",
+  "Написать связный итог и совместно спланировать новое дело"
+ ],
+ "grammar": [
+  "Интеграция B1: объяснение, изменение, мнение и общий план"
+ ],
+ "exam": [
+  "b1-lesen-2",
+  "b1-schreiben-1",
+  "b1-sprechen-3"
+ ],
+ "chapters": [
+  {
+   "id": "scene",
+   "title": "Ситуация"
+  },
+  {
+   "id": "words",
+   "title": "Слова"
+  },
+  {
+   "id": "grammar",
+   "title": "Грамматика"
+  },
+  {
+   "id": "practice",
+   "title": "Проверка"
+  },
+  {
+   "id": "exam",
+   "title": "На экзамене"
+  }
+ ],
+ "dialogues": {
+  "scene": {
+   "title": "Wir haben es gemeinsam organisiert. Was bleibt für das nächste Mal?",
+   "ru": "Проводим встречу и передаём подтверждённый итог",
+   "place": "Kiel · FördeTreff в Raum C · вымышленная учебная ситуация",
+   "people": {
+    "D": {
+     "name": "Dana",
+     "voice": "Anna"
+    },
+    "M": {
+     "name": "Mateo",
+     "voice": "Reed"
+    },
+    "E": {
+     "name": "Elif",
+     "voice": "Flo"
+    },
+    "H": {
+     "name": "Hauke",
+     "voice": "Rocko"
+    },
+    "G": {
+     "name": "Lina",
+     "voice": "Sandy"
+    }
+   },
+   "lines": [
+    {
+     "who": "H",
+     "de": "Mein Zug war pünktlich. Ich habe den Schlüssel um halb drei abgeholt.",
+     "ru": "Мой поезд пришёл вовремя. Я получил ключ в половине третьего.",
+     "audio": "audio/15d20e4f70bc.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Am Nachmittag regnete es. Deshalb haben wir die Materialien mit dem Bus gebracht.",
+     "ru": "Днём шёл дождь. Поэтому материалы привезли автобусом.",
+     "audio": "audio/ce38a3313174.m4a"
+    },
+    {
+     "who": "E",
+     "de": "Sowohl die Fotomappe als auch die Mehrwegbecher waren rechtzeitig in Raum C.",
+     "ru": "И папка, и многоразовые стаканы были вовремя в помещенииC.",
+     "audio": "audio/33124286baea.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Für Essen und Getränke haben wir zusammen dreißig Euro bezahlt.",
+     "ru": "За еду и напитки вместе мы заплатили тридцать евро.",
+     "audio": "audio/eb98dd9a477b.m4a"
+    },
+    {
+     "who": "G",
+     "de": "Am Anfang verstand ich eine Bildunterschrift nicht. Danach konnte ich selbst eine Frage zur Reise stellen.",
+     "ru": "Сначала я не поняла одну подпись. Потом смогла сама задать вопрос о поездке.",
+     "audio": "audio/9fe91ad480ee.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Die Hafenfotos kamen aus Flensburg. Die Bilder der Stadt zeigten Lübeck. Darüber haben wir gesprochen.",
+     "ru": "Фотографии гавани были из Фленсбурга, снимки города — из Любека. Об этом мы говорили.",
+     "audio": "audio/b268dd0cbb4e.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Wir haben den Raum um sechs verlassen und den Schlüssel um zehn nach sechs zurückgegeben.",
+     "ru": "Мы вышли из помещения в шесть и вернули ключ в десять минут седьмого.",
+     "audio": "audio/ec1e1ec0d264.m4a"
+    },
+    {
+     "who": "E",
+     "de": "Gut. Jetzt schreiben wir einen kurzen Rückblick und fragen, was wir beim nächsten Mal besser machen können.",
+     "ru": "Хорошо. Теперь напишем короткий итог и спросим, что можно улучшить в следующий раз.",
+     "audio": "audio/10079413c285.m4a"
+    }
+   ]
+  }
+ },
+ "words": {
+  "useful": {
+   "title": "Wörter für die Aufgabe",
+   "ru": "Слова для действия",
+   "items": [
+    {
+     "de": "der Rückblick",
+     "ru": "краткий итог, взгляд назад",
+     "gender": "m",
+     "plural": "Rückblicke",
+     "audio": "audio/fb2678296268.m4a"
+    },
+    {
+     "de": "das Ergebnis",
+     "ru": "результат",
+     "gender": "n",
+     "plural": "Ergebnisse",
+     "audio": "audio/d44d9b632df6.m4a"
+    },
+    {
+     "de": "die Durchführung",
+     "ru": "проведение",
+     "gender": "f",
+     "plural": "Durchführungen",
+     "audio": "audio/6010b0d5975b.m4a"
+    },
+    {
+     "de": "die Abrechnung",
+     "ru": "расчёт расходов",
+     "gender": "f",
+     "plural": "Abrechnungen",
+     "audio": "audio/7eb009fad78f.m4a"
+    },
+    {
+     "de": "der Beleg",
+     "ru": "подтверждающий документ, чек",
+     "gender": "m",
+     "plural": "Belege",
+     "audio": "audio/4591c810d54f.m4a"
+    },
+    {
+     "de": "die Rückmeldung",
+     "ru": "обратная связь",
+     "gender": "f",
+     "plural": "Rückmeldungen",
+     "audio": "audio/55105235e9c2.m4a"
+    },
+    {
+     "de": "die Fortsetzung",
+     "ru": "продолжение",
+     "gender": "f",
+     "plural": "Fortsetzungen",
+     "audio": "audio/680a29c57c0d.m4a"
+    },
+    {
+     "de": "die Leihgabe",
+     "ru": "вещь во временном пользовании",
+     "gender": "f",
+     "plural": "Leihgaben",
+     "audio": "audio/18ba81a07f70.m4a"
+    },
+    {
+     "de": "tatsächlich erledigt",
+     "ru": "действительно выполнено",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/16a22b8a1360.m4a"
+    },
+    {
+     "de": "gemeinsam entscheiden",
+     "ru": "решить вместе",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/fe29c42e3a7d.m4a"
+    },
+    {
+     "de": "verständlich zusammenfassen",
+     "ru": "понятно подвести итог",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/4df8f2d14dd7.m4a"
+    },
+    {
+     "de": "aus eigener Erfahrung",
+     "ru": "из собственного опыта",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/5c92005f6832.m4a"
+    },
+    {
+     "de": "eine Änderung erklären",
+     "ru": "объяснить изменение",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/4dba4db3d128.m4a"
+    },
+    {
+     "de": "eine Rückfrage stellen",
+     "ru": "задать уточняющий вопрос",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/c239b9593cec.m4a"
+    },
+    {
+     "de": "für das nächste Mal",
+     "ru": "для следующего раза",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/809de707aaf7.m4a"
+    }
+   ]
+  }
+ },
+ "tables": {
+  "rule": {
+   "title": "Интеграция B1: объяснение, изменение, мнение и общий план",
+   "ru": "Опора для решения",
+   "head": [
+    "Beispiel",
+    "Смысл и форма"
+   ],
+   "rows": [
+    [
+     "Es regnete. Deshalb brachten wir die Materialien mit dem Bus.",
+     "Причина и результат связывают рассказ."
+    ],
+    [
+     "Die Verwaltung hatte Raum C bestätigt. Danach fand der Treff dort statt.",
+     "От подтверждения к проведённому событию — разные стадии."
+    ],
+    [
+     "Ich habe das so verstanden. Stimmt das?",
+     "Уточнение и реакция важнее заученного монолога."
+    ]
+   ],
+   "ruCols": [
+    1
+   ]
+  }
+ },
+ "tasks": {
+  "plan": {
+   "kind": "message",
+   "part": "b1-lesen-2",
+   "title": "Plan vor der Öffnung · Ausschnitt",
+   "text": "Raum C mit Küche, 18. Oktober 15–18 Uhr. Hauke holt den Schlüssel 14:30 und gibt ihn bis 18:15 zurück. Dana begrüßt die Gäste. Mateo organisiert Essen und Getränke. Elif bringt Fotos und geliehene Becher. Bei Regen kommen die Materialien mit dem Bus. Gemeinsames Aufräumen ab 17:40; Raum verlassen 18:00.",
+   "sample": []
+  },
+  "album": {
+   "kind": "message",
+   "part": "b1-lesen-2",
+   "title": "Kleine Hilfe zum Album · Ausschnitt",
+   "text": "Lübeck: Stadtbilder, Museumsbesuch und Pause am Wasser. Flensburg: Hafenbilder und ein persönliches Cafégespräch auf Deutsch. Lüneburger Heide: Danas Erinnerung an eine ruhige Landschaft. Verschiedene persönliche Eindrücke dürfen nebeneinander stehen.",
+   "sample": []
+  },
+  "result": {
+   "kind": "message",
+   "part": "b1-lesen-2",
+   "title": "Bestätigter Rückblick · Ausschnitt",
+   "text": "Der Treff fand in Raum C statt. Haukes Zug war pünktlich; er holte den Schlüssel 14:30. Wegen des Regens wurden die Materialien mit dem Bus gebracht. Sowohl Mappe als auch Becher waren da. Kosten: Raum mit Küche 40 Euro, Essen und Getränke 30 Euro, Materialtransport 8 Euro. Die Becher waren eine kostenlose Leihgabe. Insgesamt 78 Euro bei 80 Euro Budget. Der Raum wurde 18:00 verlassen, der Schlüssel 18:10 zurückgegeben; Frist 18:15. Die geliehenen Becher werden wie vereinbart am Montag zurückgegeben.",
+   "sample": []
+  },
+  "write": {
+   "kind": "message",
+   "part": "b1-schreiben-1",
+   "title": "Einem Freund vom Treff erzählen",
+   "text": "Ihr Freund Jonas konnte nicht teilnehmen und fragt, wie der FördeTreff war. Antworten Sie ihm.",
+   "points": [
+    "Wo und wie der Treff stattgefunden hat",
+    "Eine Änderung erklären und die Lösung nennen",
+    "Ein konkretes Gespräch oder Erlebnis schildern",
+    "Einen nächsten Schritt vorschlagen und nach seiner Meinung fragen"
+   ],
+   "sample": [
+    {
+     "de": "Lieber Jonas, unser FördeTreff hat in Raum C im Nachbarschaftshaus stattgefunden. Die kleine Küche war dabei sehr hilfreich. Am Nachmittag regnete es, deshalb brachten wir die Fotos und Becher mit dem Bus. Haukes Zug war pünktlich, und er konnte den Schlüssel wie geplant abholen. Besonders schön fand ich das Gespräch mit Lina über die Bilder. Zuerst war eine Bildunterschrift unklar, danach erzählte sie von ihrer eigenen Reise. Insgesamt haben wir 78 Euro ausgegeben und den Schlüssel rechtzeitig zurückgegeben. Beim nächsten Mal könnten wir mehr Zeit für solche Gespräche einplanen. Was meinst du? Hättest du Lust, dann mitzukommen? Viele Grüße Dana",
+     "audio": "audio/3db3cfa633c8.m4a"
+    }
+   ]
+  },
+  "talk": {
+   "kind": "card",
+   "part": "b1-sprechen-3",
+   "title": "Ein neues Vorhaben ohne fertigen Musterplan",
+   "theme": "Ein kleines Treffen für neue Nachbarn",
+   "word": "Ziel · Termin · Aufgaben · Alternative · Bestätigung",
+   "situation": "Planen Sie eine neue kleine Veranstaltung für Nachbarn. Eine Person hat Samstagvormittag Zeit, die andere nur Sonntagnachmittag. Finden Sie gemeinsam einen anderen passenden Zeitraum oder eine realistische Aufgabenverteilung. Sie dürfen nicht einfach den alten Plan wiederholen.",
+   "roles": [
+    {
+     "title": "Person A",
+     "text": "Sie können Samstagvormittag Materialien vorbereiten. Am Sonntag können Sie erst ab 16 Uhr da sein. Sie möchten eine einfache Begrüßung und ein Gespräch über Fotos."
+    },
+    {
+     "title": "Person B",
+     "text": "Sie haben Sonntag 14–18 Uhr Zeit und könnten vorher den Raum öffnen. Am Samstag sind Sie beschäftigt. Schlagen Sie einen gemeinsamen Beginn und eine Vorbereitung vor."
+    }
+   ],
+   "sample": []
+  }
+ },
+ "beats": [
+  {
+   "id": "start-1",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 0,
+   "read": "Встреча FördeTreff состоялась в Raum C. Утром пошёл дождь, поэтому материалы привезли автобусом; поезд Хауке пришёл вовремя. Теперь команда сверяет итог и вспоминает ключевые действия дня. Нужно объяснить гостю альбом, сохранить роли и передать результат без лишних обещаний. Все нужные условия даны в сцене: знания географии, настоящих цен или расписаний не требуются. Сначала попробуйте понять, какого результата добиваются друзья, затем слушайте реплики. На новом уровне важно не только найти число или знакомое слово, но и связать несколько сведений.",
+   "point": "Проводим встречу и передаём подтверждённый итог",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 4,
+    "fresh": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "start-2",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 1,
+   "read": "В финальной истории нет нового большого правила. Знакомые формы нужны для связного результата: поезд был вовремя, дождь привёл к автобусу, материалы доставлены, ключ возвращён. Сначала сопоставьте факты из плана и отчёта. Затем объясните их так, чтобы человек, который не участвовал в подготовке, понял, что изменилось и чем закончился день.",
+   "point": "Интеграция B1: объяснение, изменение, мнение и общий план",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 8,
+    "fresh": [
+     4,
+     5,
+     6,
+     7
+    ]
+   }
+  },
+  {
+   "id": "words-1",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 0,
+   "read": "Итог не должен превращаться ни в список случайных деталей, ни в обещание, что теперь всё всегда будет легко. Назовите событие, одно изменение, решение и результат. Слова отчёта помогают передать конкретный опыт и попросить обратную связь. Для следующей встречи пригодятся не только удачные решения, но и понятный вопрос о том, что участникам хочется изменить.",
+   "point": "Сначала используйте слово для решения; словарь остаётся справочником.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 6,
+    "words": "useful"
+   }
+  },
+  {
+   "id": "words-2",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 1,
+   "read": "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к ситуации: какие слова обозначают человека, место, условие или уже выполненное действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово встретится снова в записке или разговоре, попробуйте восстановить его смысл до подсказки.",
+   "point": "Возвращайтесь к выражениям в сообщениях и новых действиях.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 15,
+    "words": "useful",
+    "fresh": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   }
+  },
+  {
+   "id": "grammar-1",
+   "step": "grammar",
+   "stepTitle": "Интеграция B1: объяснение, изменение, мнение и общий план",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "В итоговом рассказе не достаточно перечислить дождь и автобус рядом. Deshalb показывает, как одно повлияло на другое. Здесь условный вариант из прошлой главы стал действием, потому что дождь действительно начался. Поезд при этом пришёл вовремя, поэтому запасной вариант с Даной не понадобился. Сохраняйте разные линии событий, не объединяя их в одну общую «всё изменилось».",
+   "point": "Причина и результат связывают рассказ.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "grammar-2",
+   "step": "grammar",
+   "stepTitle": "Интеграция B1: объяснение, изменение, мнение и общий план",
+   "chapterIndex": 2,
+   "indexInStep": 1,
+   "read": "До встречи была договорённость, после неё появился факт проведения. Для нового читателя полезно коротко назвать обе стадии и важное изменение помещения. Можно пользоваться знакомым Perfekt или Präteritum. Не требуется собирать в одном предложении как можно больше сложных форм. Задача — ясно передать порядок и результат, а не показать все таблицы сразу.",
+   "point": "От подтверждения к проведённому событию — разные стадии.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "grammar-3",
+   "step": "grammar",
+   "stepTitle": "Интеграция B1: объяснение, изменение, мнение и общий план",
+   "chapterIndex": 2,
+   "indexInStep": 2,
+   "read": "В разговоре с гостем нужно услышать непонятное место, ответить по источнику и проверить понимание. Если гость добавляет личный опыт, задайте вопрос и отреагируйте на ответ. В совместном плане после предложения требуется согласовать действия и роли. Эти навыки возвращаются в самостоятельной работе: содержание там новое, поэтому готовая реплика из этой сцены не заменит понимание.",
+   "point": "Уточнение и реакция важнее заученного монолога.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "frames-1",
+   "step": "frames",
+   "stepTitle": "Как устроена реплика",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "Начало с результата связывает итоговый рассказ с причиной. Личный глагол после deshalb остаётся на второй позиции, а место и объект добавляются в обычной рамке. Затем можно отдельным предложением назвать доставленные материалы и участников. Связность получается из понятных отношений между фразами, а не только из длины предложения.",
+   "point": "*Deshalb haben wir die Materialien mit dem Bus gebracht.*",
+   "scene": {
+    "view": "sentence",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "deshalb",
+         "text": "Deshalb"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "materialien",
+         "text": "Materialien"
+        },
+        {
+         "key": "mit",
+         "text": "mit"
+        },
+        {
+         "key": "dem",
+         "text": "dem"
+        },
+        {
+         "key": "bus",
+         "text": "Bus"
+        }
+       ],
+       [
+        {
+         "key": "gebracht",
+         "text": "gebracht"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Deshalb haben wir die Materialien mit dem Bus gebracht.",
+      "ru": "Поэтому мы привезли материалы автобусом.",
+      "audio": "audio/069f28525a6d.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-1",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 0,
+   "read": "Нет. Он зависел от опоздания поезда. В итоговом сообщении Хауке говорит, что приехал вовремя и получил ключ сам. Поэтому сам факт существования запасного варианта не означает его использование. Для отчёта нужны результаты дня, а для следующего раза полезно сохранить и подготовленную альтернативу.",
+   "point": "Сработало условие дождя, но не условие задержки.",
+   "question": "Условный запасной план с Даной точно был выполнен?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "deshalb",
+         "text": "Deshalb"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "materialien",
+         "text": "Materialien"
+        },
+        {
+         "key": "mit",
+         "text": "mit"
+        },
+        {
+         "key": "dem",
+         "text": "dem"
+        },
+        {
+         "key": "bus",
+         "text": "Bus"
+        }
+       ],
+       [
+        {
+         "key": "gebracht",
+         "text": "gebracht"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Deshalb haben wir die Materialien mit dem Bus gebracht.",
+      "ru": "Поэтому мы привезли материалы автобусом.",
+      "audio": "audio/069f28525a6d.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-2",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 1,
+   "read": "Нет. Оно должно выполнить конкретную задачу: объяснить событие, изменение, опыт и следующий шаг. Выбирайте формы, которые помогают передать этот смысл. В самостоятельном письме раскройте четыре пункта и проверьте связность, обращение и понятный результат. Количество использованных названий грамматических правил не является целью разговора.",
+   "point": "Формы служат смыслу и выполнению задачи.",
+   "question": "Письмо об итоге должно перечислить все правила B1?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "deshalb",
+         "text": "Deshalb"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "materialien",
+         "text": "Materialien"
+        },
+        {
+         "key": "mit",
+         "text": "mit"
+        },
+        {
+         "key": "dem",
+         "text": "dem"
+        },
+        {
+         "key": "bus",
+         "text": "Bus"
+        }
+       ],
+       [
+        {
+         "key": "gebracht",
+         "text": "gebracht"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Deshalb haben wir die Materialien mit dem Bus gebracht.",
+      "ru": "Поэтому мы привезли материалы автобусом.",
+      "audio": "audio/069f28525a6d.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "exam-plan-1",
+   "step": "exam-plan",
+   "stepTitle": "Plan vor der Öffnung · Ausschnitt",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Восстановите исходные роли и сроки. Это план до открытия, а не отчёт о выполнении. Он пригодится для сравнения с результатом и для игрового распределения. Грамматические формы знакомы: используйте их, чтобы не перепутать, кто получил ключ, кто встречал гостей и какие действия зависели от дождя.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "deshalb",
+         "text": "Deshalb"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "materialien",
+         "text": "Materialien"
+        },
+        {
+         "key": "mit",
+         "text": "mit"
+        },
+        {
+         "key": "dem",
+         "text": "dem"
+        },
+        {
+         "key": "bus",
+         "text": "Bus"
+        }
+       ],
+       [
+        {
+         "key": "gebracht",
+         "text": "gebracht"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Deshalb haben wir die Materialien mit dem Bus gebracht.",
+      "ru": "Поэтому мы привезли материалы автобусом.",
+      "audio": "audio/069f28525a6d.m4a"
+     }
+    ],
+    "task": "plan"
+   }
+  },
+  {
+   "id": "exam-plan-2",
+   "step": "exam-plan",
+   "stepTitle": "Plan vor der Öffnung · Ausschnitt",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "deshalb",
+         "text": "Deshalb"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "materialien",
+         "text": "Materialien"
+        },
+        {
+         "key": "mit",
+         "text": "mit"
+        },
+        {
+         "key": "dem",
+         "text": "dem"
+        },
+        {
+         "key": "bus",
+         "text": "Bus"
+        }
+       ],
+       [
+        {
+         "key": "gebracht",
+         "text": "gebracht"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Deshalb haben wir die Materialien mit dem Bus gebracht.",
+      "ru": "Поэтому мы привезли материалы автобусом.",
+      "audio": "audio/069f28525a6d.m4a"
+     }
+    ],
+    "task": "plan"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "deshalb",
+         "text": "Deshalb"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "materialien",
+         "text": "Materialien"
+        },
+        {
+         "key": "mit",
+         "text": "mit"
+        },
+        {
+         "key": "dem",
+         "text": "dem"
+        },
+        {
+         "key": "bus",
+         "text": "Bus"
+        }
+       ],
+       [
+        {
+         "key": "gebracht",
+         "text": "gebracht"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Deshalb haben wir die Materialien mit dem Bus gebracht.",
+      "ru": "Поэтому мы привезли материалы автобусом.",
+      "audio": "audio/069f28525a6d.m4a"
+     }
+    ],
+    "task": "plan",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-album-1",
+   "step": "exam-album",
+   "stepTitle": "Kleine Hilfe zum Album · Ausschnitt",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Эта короткая памятка помогает ответить новому гостю. Сопоставьте город, гавань и ландшафт, затем объясните одну подпись своими словами. Не обязательно повторять длинную Genitiv-группу. Важно сохранить место и дать собеседнику возможность задать встречный вопрос или поделиться своим опытом.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "deshalb",
+         "text": "Deshalb"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "materialien",
+         "text": "Materialien"
+        },
+        {
+         "key": "mit",
+         "text": "mit"
+        },
+        {
+         "key": "dem",
+         "text": "dem"
+        },
+        {
+         "key": "bus",
+         "text": "Bus"
+        }
+       ],
+       [
+        {
+         "key": "gebracht",
+         "text": "gebracht"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Deshalb haben wir die Materialien mit dem Bus gebracht.",
+      "ru": "Поэтому мы привезли материалы автобусом.",
+      "audio": "audio/069f28525a6d.m4a"
+     }
+    ],
+    "task": "album"
+   }
+  },
+  {
+   "id": "exam-album-2",
+   "step": "exam-album",
+   "stepTitle": "Kleine Hilfe zum Album · Ausschnitt",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "deshalb",
+         "text": "Deshalb"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "materialien",
+         "text": "Materialien"
+        },
+        {
+         "key": "mit",
+         "text": "mit"
+        },
+        {
+         "key": "dem",
+         "text": "dem"
+        },
+        {
+         "key": "bus",
+         "text": "Bus"
+        }
+       ],
+       [
+        {
+         "key": "gebracht",
+         "text": "gebracht"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Deshalb haben wir die Materialien mit dem Bus gebracht.",
+      "ru": "Поэтому мы привезли материалы автобусом.",
+      "audio": "audio/069f28525a6d.m4a"
+     }
+    ],
+    "task": "album"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "deshalb",
+         "text": "Deshalb"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "materialien",
+         "text": "Materialien"
+        },
+        {
+         "key": "mit",
+         "text": "mit"
+        },
+        {
+         "key": "dem",
+         "text": "dem"
+        },
+        {
+         "key": "bus",
+         "text": "Bus"
+        }
+       ],
+       [
+        {
+         "key": "gebracht",
+         "text": "gebracht"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Deshalb haben wir die Materialien mit dem Bus gebracht.",
+      "ru": "Поэтому мы привезли материалы автобусом.",
+      "audio": "audio/069f28525a6d.m4a"
+     }
+    ],
+    "task": "album",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-result-1",
+   "step": "exam-result",
+   "stepTitle": "Bestätigter Rückblick · Ausschnitt",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Теперь сравните план с выполнением. Дождь подтвердился, задержка поезда — нет. Сумма состоит из трёх названных расходов, кухня входит в аренду, стаканы получены бесплатно во временное пользование. Возврат ключа выполнен в срок, возврат стаканов ещё запланирован на понедельник. У этих действий разные статусы.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "deshalb",
+         "text": "Deshalb"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "materialien",
+         "text": "Materialien"
+        },
+        {
+         "key": "mit",
+         "text": "mit"
+        },
+        {
+         "key": "dem",
+         "text": "dem"
+        },
+        {
+         "key": "bus",
+         "text": "Bus"
+        }
+       ],
+       [
+        {
+         "key": "gebracht",
+         "text": "gebracht"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Deshalb haben wir die Materialien mit dem Bus gebracht.",
+      "ru": "Поэтому мы привезли материалы автобусом.",
+      "audio": "audio/069f28525a6d.m4a"
+     }
+    ],
+    "task": "result"
+   }
+  },
+  {
+   "id": "exam-result-2",
+   "step": "exam-result",
+   "stepTitle": "Bestätigter Rückblick · Ausschnitt",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "deshalb",
+         "text": "Deshalb"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "materialien",
+         "text": "Materialien"
+        },
+        {
+         "key": "mit",
+         "text": "mit"
+        },
+        {
+         "key": "dem",
+         "text": "dem"
+        },
+        {
+         "key": "bus",
+         "text": "Bus"
+        }
+       ],
+       [
+        {
+         "key": "gebracht",
+         "text": "gebracht"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Deshalb haben wir die Materialien mit dem Bus gebracht.",
+      "ru": "Поэтому мы привезли материалы автобусом.",
+      "audio": "audio/069f28525a6d.m4a"
+     }
+    ],
+    "task": "result"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "deshalb",
+         "text": "Deshalb"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "materialien",
+         "text": "Materialien"
+        },
+        {
+         "key": "mit",
+         "text": "mit"
+        },
+        {
+         "key": "dem",
+         "text": "dem"
+        },
+        {
+         "key": "bus",
+         "text": "Bus"
+        }
+       ],
+       [
+        {
+         "key": "gebracht",
+         "text": "gebracht"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Deshalb haben wir die Materialien mit dem Bus gebracht.",
+      "ru": "Поэтому мы привезли материалы автобусом.",
+      "audio": "audio/069f28525a6d.m4a"
+     }
+    ],
+    "task": "result",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-write-1",
+   "step": "exam-write",
+   "stepTitle": "Einem Freund vom Treff erzählen",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "У друга нет всей переписки подготовки. Кратко объясните место, изменение и решение, затем расскажите об одном разговоре и предложите следующий шаг. Все четыре пункта обязательны. Не превращайте письмо в полный журнал расходов или список правил. После черновика проверьте, поймёт ли человек историю без чтения предыдущих уроков.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "deshalb",
+         "text": "Deshalb"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "materialien",
+         "text": "Materialien"
+        },
+        {
+         "key": "mit",
+         "text": "mit"
+        },
+        {
+         "key": "dem",
+         "text": "dem"
+        },
+        {
+         "key": "bus",
+         "text": "Bus"
+        }
+       ],
+       [
+        {
+         "key": "gebracht",
+         "text": "gebracht"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Deshalb haben wir die Materialien mit dem Bus gebracht.",
+      "ru": "Поэтому мы привезли материалы автобусом.",
+      "audio": "audio/069f28525a6d.m4a"
+     }
+    ],
+    "task": "write",
+    "reveal": 0
+   }
+  },
+  {
+   "id": "exam-write-2",
+   "step": "exam-write",
+   "stepTitle": "Einem Freund vom Treff erzählen",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "deshalb",
+         "text": "Deshalb"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "materialien",
+         "text": "Materialien"
+        },
+        {
+         "key": "mit",
+         "text": "mit"
+        },
+        {
+         "key": "dem",
+         "text": "dem"
+        },
+        {
+         "key": "bus",
+         "text": "Bus"
+        }
+       ],
+       [
+        {
+         "key": "gebracht",
+         "text": "gebracht"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Deshalb haben wir die Materialien mit dem Bus gebracht.",
+      "ru": "Поэтому мы привезли материалы автобусом.",
+      "audio": "audio/069f28525a6d.m4a"
+     }
+    ],
+    "task": "write",
+    "reveal": 0
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "deshalb",
+         "text": "Deshalb"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "materialien",
+         "text": "Materialien"
+        },
+        {
+         "key": "mit",
+         "text": "mit"
+        },
+        {
+         "key": "dem",
+         "text": "dem"
+        },
+        {
+         "key": "bus",
+         "text": "Bus"
+        }
+       ],
+       [
+        {
+         "key": "gebracht",
+         "text": "gebracht"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Deshalb haben wir die Materialien mit dem Bus gebracht.",
+      "ru": "Поэтому мы привезли материалы автобусом.",
+      "audio": "audio/069f28525a6d.m4a"
+     }
+    ],
+    "task": "write",
+    "reveal": 0,
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-talk-1",
+   "step": "exam-talk",
+   "stepTitle": "Ein neues Vorhaben ohne fertigen Musterplan",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Новая ситуация требует переноса навыка. Участники имеют разные свободные часы, но общий промежуток в воскресенье существует. Предложите подготовку, начало и распределение, спросите, подходит ли это партнёру, и подтвердите итог. Не нужно переносить старые 18 гостей и 78 евро в новую задачу, где таких условий не дано.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "deshalb",
+         "text": "Deshalb"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "materialien",
+         "text": "Materialien"
+        },
+        {
+         "key": "mit",
+         "text": "mit"
+        },
+        {
+         "key": "dem",
+         "text": "dem"
+        },
+        {
+         "key": "bus",
+         "text": "Bus"
+        }
+       ],
+       [
+        {
+         "key": "gebracht",
+         "text": "gebracht"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Deshalb haben wir die Materialien mit dem Bus gebracht.",
+      "ru": "Поэтому мы привезли материалы автобусом.",
+      "audio": "audio/069f28525a6d.m4a"
+     }
+    ],
+    "task": "talk"
+   }
+  },
+  {
+   "id": "exam-talk-2",
+   "step": "exam-talk",
+   "stepTitle": "Ein neues Vorhaben ohne fertigen Musterplan",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "deshalb",
+         "text": "Deshalb"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "materialien",
+         "text": "Materialien"
+        },
+        {
+         "key": "mit",
+         "text": "mit"
+        },
+        {
+         "key": "dem",
+         "text": "dem"
+        },
+        {
+         "key": "bus",
+         "text": "Bus"
+        }
+       ],
+       [
+        {
+         "key": "gebracht",
+         "text": "gebracht"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Deshalb haben wir die Materialien mit dem Bus gebracht.",
+      "ru": "Поэтому мы привезли материалы автобусом.",
+      "audio": "audio/069f28525a6d.m4a"
+     }
+    ],
+    "task": "talk"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "deshalb",
+         "text": "Deshalb"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "materialien",
+         "text": "Materialien"
+        },
+        {
+         "key": "mit",
+         "text": "mit"
+        },
+        {
+         "key": "dem",
+         "text": "dem"
+        },
+        {
+         "key": "bus",
+         "text": "Bus"
+        }
+       ],
+       [
+        {
+         "key": "gebracht",
+         "text": "gebracht"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Deshalb haben wir die Materialien mit dem Bus gebracht.",
+      "ru": "Поэтому мы привезли материалы автобусом.",
+      "audio": "audio/069f28525a6d.m4a"
+     }
+    ],
+    "task": "talk",
+    "solved": true
+   }
+  }
+ ],
+ "exercises": [
+  {
+   "id": "b1-finale-1",
+   "type": "choice",
+   "q": "Es regnete. ___ nahmen wir den Bus.",
+   "options": [
+    "Weil",
+    "Deshalb",
+    "Obwohl"
+   ],
+   "answer": 1,
+   "why": "Следствие в главной части.",
+   "audio": "audio/903da2b9b700.m4a"
+  },
+  {
+   "id": "b1-finale-2",
+   "type": "choice",
+   "q": "Die Materialien ___ mit dem Bus gebracht.",
+   "options": [
+    "wird",
+    "wurden",
+    "wurde"
+   ],
+   "answer": 1,
+   "why": "Прошлое Passiv, множественное.",
+   "audio": "audio/51d1cd09eb5d.m4a"
+  },
+  {
+   "id": "b1-finale-3",
+   "type": "choice",
+   "q": "Die Gäste, mit ___ wir sprachen.",
+   "options": [
+    "den",
+    "die",
+    "denen"
+   ],
+   "answer": 2,
+   "why": "Mit Dativ множественного.",
+   "audio": "audio/c6556f7e0dbf.m4a"
+  },
+  {
+   "id": "b1-finale-4",
+   "type": "choice",
+   "q": "Wir hätten gern mehr Zeit, um ___.",
+   "options": [
+    "gesprochen",
+    "zu sprechen",
+    "sprechen"
+   ],
+   "answer": 1,
+   "why": "Цель с umzu.",
+   "audio": "audio/b3419b854927.m4a"
+  },
+  {
+   "id": "b1-finale-5",
+   "type": "choice",
+   "q": "Ich werde morgen noch einmal ___.",
+   "options": [
+    "fragte",
+    "nachfragen",
+    "nachgefragt"
+   ],
+   "answer": 1,
+   "why": "Futur I.",
+   "audio": "audio/439529d3c78c.m4a"
+  },
+  {
+   "id": "b1-finale-6",
+   "type": "choice",
+   "q": "Die Becher werden am Montag zurückgegeben. Это…",
+   "options": [
+    "Следующее запланированное действие",
+    "Уже выполненный возврат",
+    "Отмена встречи"
+   ],
+   "answer": 0,
+   "why": "По отчёту ключ вернули, а возврат стаканов ещё запланирован."
+  },
+  {
+   "id": "b1-finale-7",
+   "type": "order",
+   "de": "Deshalb haben wir die Materialien mit dem Bus gebracht.",
+   "ru": "Поэтому мы привезли материалы автобусом.",
+   "audio": "audio/069f28525a6d.m4a"
+  },
+  {
+   "id": "b1-finale-8",
+   "type": "order",
+   "de": "Wir haben den Schlüssel rechtzeitig zurückgegeben.",
+   "ru": "Мы вовремя вернули ключ.",
+   "audio": "audio/eda535bc5a18.m4a"
+  },
+  {
+   "id": "b1-finale-9",
+   "type": "order",
+   "de": "Die Hafenfotos stammen aus Flensburg.",
+   "ru": "Фотографии гавани из Фленсбурга.",
+   "audio": "audio/6b537f766055.m4a"
+  },
+  {
+   "id": "b1-finale-10",
+   "type": "order",
+   "de": "Ich habe das so verstanden. Stimmt das?",
+   "ru": "Я понял это так. Верно?",
+   "audio": "audio/6667b23a0cd0.m4a"
+  },
+  {
+   "id": "b1-finale-11",
+   "type": "order",
+   "de": "Wir könnten mehr Zeit für Gespräche einplanen.",
+   "ru": "Мы могли бы предусмотреть больше времени для разговоров.",
+   "audio": "audio/e566fbeb07f0.m4a"
+  },
+  {
+   "id": "b1-finale-12",
+   "type": "order",
+   "de": "Was würdest du beim nächsten Mal ändern?",
+   "ru": "Что ты изменил бы в следующий раз?",
+   "audio": "audio/4b357ec5713b.m4a"
+  }
+ ],
+ "case": {
+  "title": "Was wurde wirklich abgeschlossen?",
+  "ru": "Сверка дневника",
+  "intro": "В финальной записи не смешивайте факт, срок и следующее действие.",
+  "people": {},
+  "steps": [
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Haukes Zug war pünktlich. Er holte den Schlüssel selbst.",
+      "ru": "Поезд Хауке был вовремя. Он сам получил ключ."
+     }
+    ],
+    "question": "Запасной вариант с Даной точно использовали?",
+    "options": [
+     "Встречу отменили",
+     "Нет",
+     "Да"
+    ],
+    "answer": 1,
+    "right": "Условие задержки не наступило.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Raum 40, Essen und Getränke 30, Transport 8. Insgesamt 78. Budget 80.",
+      "ru": "Зал 40, еда и напитки 30, транспорт 8. Всего 78. Бюджет 80."
+     }
+    ],
+    "question": "Подтверждённые расходы в пределах бюджета?",
+    "options": [
+     "Да, остаётся 2 евро",
+     "Нет, 82",
+     "Кухня оплачивается ещё раз"
+    ],
+    "answer": 0,
+    "right": "40+30+8=78; кухня уже включена.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Schlüssel 18:10 zurück, Frist 18:15. Becher zurück am Montag geplant.",
+      "ru": "Ключ вернули 18:10, срок 18:15. Стаканы запланировано вернуть в понедельник."
+     }
+    ],
+    "question": "Что уже выполнено?",
+    "options": [
+     "Возврат стаканов в понедельник",
+     "Все будущие встречи",
+     "Возврат ключа в срок"
+    ],
+    "answer": 2,
+    "right": "Возврат ключа подтверждён, стаканы ещё ждут следующего действия.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   }
+  ],
+  "ending": "Финальный итог сохраняет события, сумму и сроки. Дальше — новая ситуация, где понимание придётся применить самостоятельно."
+ },
+ "adventure": {
+  "kind": "sequence",
+  "title": "Соедините план, разговор и подтверждённый результат",
+  "intro": "Встреча FördeTreff состоялась в Raum C. Утром пошёл дождь, поэтому материалы привезли автобусом; поезд Хауке пришёл вовремя. Теперь команда сверяет итог и вспоминает ключевые действия дня. Нужно объяснить гостю альбом, сохранить роли и передать результат без лишних обещаний.",
+  "ending": "Встреча состоялась, сведения понятны новому гостю, расходы и возврат ключа сверены. У команды есть не только воспоминания, но и конкретный вопрос для следующего совместного дела.",
+  "challenges": [
+   {
+    "id": "room",
+    "kind": "select",
+    "title": "С чего начинается точная сверка?",
+    "intro": "Сохраните действующее помещение.",
+    "success": "Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы одно из них.",
+    "wrong": "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание и адресата.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Raum C mit Küche, 18. Oktober 15–18 Uhr. Hauke holt den Schlüssel 14:30 und gibt ihn bis 18:15 zurück. Dana begrüßt die Gäste. Mateo organisiert Essen und Getränke. Elif bringt Fotos und geliehene Becher. Bei Regen kommen die Materialien mit dem Bus. Gemeinsames Aufräumen ab 17:40; Raum verlassen 18:00.",
+      "name": "Plan vor der Öffnung · Ausschnitt"
+     }
+    ],
+    "options": [
+     {
+      "id": "o0",
+      "label": "Raum C с включённой кухней"
+     },
+     {
+      "id": "o1",
+      "label": "Снова Raum B"
+     },
+     {
+      "id": "o2",
+      "label": "Любой зал без подтверждения"
+     }
+    ],
+    "answer": [
+     "o0"
+    ]
+   },
+   {
+    "id": "roles",
+    "kind": "match",
+    "title": "Сохраните распределение",
+    "intro": "Кто отвечает за действие по плану?",
+    "success": "Роли соответствуют общему плану.",
+    "wrong": "Сверьте каждое имя, а не только знакомое действие.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Raum C mit Küche, 18. Oktober 15–18 Uhr. Hauke holt den Schlüssel 14:30 und gibt ihn bis 18:15 zurück. Dana begrüßt die Gäste. Mateo organisiert Essen und Getränke. Elif bringt Fotos und geliehene Becher. Bei Regen kommen die Materialien mit dem Bus. Gemeinsames Aufräumen ab 17:40; Raum verlassen 18:00.",
+      "name": "Plan vor der Öffnung · Ausschnitt"
+     }
+    ],
+    "options": [
+     {
+      "id": "key",
+      "label": "Schlüssel"
+     },
+     {
+      "id": "welcome",
+      "label": "Begrüßung"
+     },
+     {
+      "id": "food",
+      "label": "Essen und Getränke"
+     },
+     {
+      "id": "photos",
+      "label": "Fotos und Becher"
+     }
+    ],
+    "slots": [
+     {
+      "id": "h",
+      "label": "Hauke",
+      "answer": "key"
+     },
+     {
+      "id": "d",
+      "label": "Dana",
+      "answer": "welcome"
+     },
+     {
+      "id": "m",
+      "label": "Mateo",
+      "answer": "food"
+     },
+     {
+      "id": "e",
+      "label": "Elif",
+      "answer": "photos"
+     }
+    ]
+   },
+   {
+    "id": "guest",
+    "kind": "negotiation",
+    "title": "Помогите новому гостю включиться",
+    "intro": "Лина хочет понять подпись и поделиться своей поездкой.",
+    "success": "Уточнение превратилось в взаимный разговор.",
+    "wrong": "Ответьте на вопрос и отреагируйте на опыт гостя.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Lübeck: Stadtbilder, Museumsbesuch und Pause am Wasser. Flensburg: Hafenbilder und ein persönliches Cafégespräch auf Deutsch. Lüneburger Heide: Danas Erinnerung an eine ruhige Landschaft. Verschiedene persönliche Eindrücke dürfen nebeneinander stehen.",
+      "name": "Kleine Hilfe zum Album · Ausschnitt"
+     }
+    ],
+    "start": "a",
+    "nodes": [
+     {
+      "id": "a",
+      "text": "Lina: Sind die Fotos des Hafens aus Lübeck?",
+      "choices": [
+       {
+        "label": "Die Hafenfotos sind aus Flensburg. Die Stadtbilder zeigen Lübeck.",
+        "next": "b",
+        "feedback": "Места уточнены без сложного монолога."
+       }
+      ]
+     },
+     {
+      "id": "b",
+      "text": "Lina: Verstanden. Ich war einmal in einer ruhigen Landschaft. Die Heidebilder erinnern mich daran.",
+      "choices": [
+       {
+        "label": "Was hat dir bei deinem Ausflug besonders gefallen?",
+        "next": "c",
+        "feedback": "Вы задаёте встречный вопрос вместо новой лекции."
+       }
+      ]
+     },
+     {
+      "id": "c",
+      "text": "Lina: Dass wir Zeit für eine lange Pause hatten.",
+      "choices": [
+       {
+        "label": "Das kenne ich. Man braucht nicht immer viele Ziele für einen schönen Tag.",
+        "next": "end",
+        "feedback": "Есть реакция на услышанный личный опыт."
+       }
+      ]
+     },
+     {
+      "id": "end",
+      "text": "Lina: Genau. Jetzt kann ich die Bilder mit meiner eigenen Erfahrung verbinden.",
+      "terminal": true,
+      "choices": []
+     }
+    ]
+   },
+   {
+    "id": "key",
+    "kind": "clock",
+    "title": "Запишите фактическое время возврата",
+    "intro": "Нужно выполненное время, а не крайний срок.",
+    "success": "Возврат 18:10 раньше срока 18:15.",
+    "wrong": "Факт 18:10, срок 18:15.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Der Treff fand in Raum C statt. Haukes Zug war pünktlich; er holte den Schlüssel 14:30. Wegen des Regens wurden die Materialien mit dem Bus gebracht. Sowohl Mappe als auch Becher waren da. Kosten: Raum mit Küche 40 Euro, Essen und Getränke 30 Euro, Materialtransport 8 Euro. Die Becher waren eine kostenlose Leihgabe. Insgesamt 78 Euro bei 80 Euro Budget. Der Raum wurde 18:00 verlassen, der Schlüssel 18:10 zurückgegeben; Frist 18:15. Die geliehenen Becher werden wie vereinbart am Montag zurückgegeben.",
+      "name": "Bestätigter Rückblick · Ausschnitt"
+     }
+    ],
+    "answer": "18:10",
+    "initial": "18:00",
+    "minuteStep": 5
+   },
+   {
+    "id": "report",
+    "kind": "pack",
+    "title": "Что подтверждено в итоговой записи?",
+    "intro": "Отберите четыре факта.",
+    "success": "Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы одно из них.",
+    "wrong": "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание и адресата.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Der Treff fand in Raum C statt. Haukes Zug war pünktlich; er holte den Schlüssel 14:30. Wegen des Regens wurden die Materialien mit dem Bus gebracht. Sowohl Mappe als auch Becher waren da. Kosten: Raum mit Küche 40 Euro, Essen und Getränke 30 Euro, Materialtransport 8 Euro. Die Becher waren eine kostenlose Leihgabe. Insgesamt 78 Euro bei 80 Euro Budget. Der Raum wurde 18:00 verlassen, der Schlüssel 18:10 zurückgegeben; Frist 18:15. Die geliehenen Becher werden wie vereinbart am Montag zurückgegeben.",
+      "name": "Bestätigter Rückblick · Ausschnitt"
+     }
+    ],
+    "options": [
+     {
+      "id": "o0",
+      "label": "Встреча прошла в C"
+     },
+     {
+      "id": "o1",
+      "label": "Общие расходы 78 евро"
+     },
+     {
+      "id": "o2",
+      "label": "Ключ вернули вовремя"
+     },
+     {
+      "id": "o3",
+      "label": "Возврат стаканов запланирован на понедельник"
+     },
+     {
+      "id": "o4",
+      "label": "Поезд опоздал"
+     },
+     {
+      "id": "o5",
+      "label": "Стаканы уже возвращены в пятницу"
+     }
+    ],
+    "answer": [
+     "o0",
+     "o1",
+     "o2",
+     "o3"
+    ]
+   }
+  ]
+ },
+ "spy": []
+}

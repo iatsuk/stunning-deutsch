@@ -17,11 +17,14 @@ def encode(item):
  threshold=max(enc['trimFloorRms'],float(np.max(energy))*enc['trimRelativeRms'])
  active=np.flatnonzero(energy>threshold)
  if not len(active):raise ValueError('no speech '+str(src))
- start=max(0,int(active[0]*win-sr*enc['preserveStartMs']/1000));end=min(len(a),int((active[-1]+1)*win+sr*enc['preserveEndMs']/1000))
+ start=max(0,int(active[0]*win-sr*enc['preserveStartMs']/1000))
+ # Quiet final consonants and unstressed vowels can fall below the RMS threshold.
+ # Preserve the complete generated ending unless legacy trimming is requested.
+ end=min(len(a),int((active[-1]+1)*win+sr*enc['preserveEndMs']/1000)) if enc.get('trimEnd',True) else len(a)
  b=a[start:end];brms=float(np.sqrt(np.mean(b*b)));bpeak=float(np.max(np.abs(b)))
  gain=min(enc['rmsTarget']/brms,enc['peakLimit']/bpeak)
  b=b*gain
- # A short silence at each end avoids a clipped start on repeated playback.
+ # Leave breathing room after the full ending before playback advances.
  b=np.pad(b,(int(sr*enc['paddingStartMs']/1000),int(sr*enc['paddingEndMs']/1000)))
  temp=dest/(item['file']+'.tmp.wav');target=dest/item['file'];sf.write(temp,b,sr,subtype='PCM_16')
  try:subprocess.run([ffmpeg,'-v','error','-y','-i',str(temp),'-ac','1','-c:a','aac','-b:a',str(enc['bitrate']),'-movflags','+faststart',str(target)],check=True,capture_output=True)

@@ -1,0 +1,722 @@
+id: a2-kontakte
+order: 13
+title: Wissen Sie, ob der Kurs stattfindet?
+ru: Уточняем сведения и знакомимся
+lede: Элиф хочет познакомиться с участниками клуба во Фленсбурге и пригласить друзей на
+  встречу. В объявлении не хватает времени. Вместо догадки команда задаёт вопрос и ждёт
+  подтверждения. Все клубы, адреса и предложения в заданиях вымышлены.
+goals:
+  - Отличить вопрос от подтверждённого факта
+  - Вежливо спросить неизвестное время или условие
+  - Поставить глагол в конец косвенного вопроса
+  - Найти объявление либо признать отсутствие подходящего
+grammar:
+  - Косвенные вопросы с W-словом и ob
+exam:
+  - a2-lesen-2
+  - a2-lesen-3
+  - a2-schreiben-2
+  - a2-sprechen-2
+  - a2-hoeren-3
+dialogues:
+  scene:
+    title: Wissen Sie, ob der Kurs stattfindet?
+    ru: Уточняем сведения и знакомимся
+    place: Flensburg · вымышленный клуб · вымышленная учебная ситуация
+    people:
+      D:
+        name: Dana
+        voice: Anna
+      M:
+        name: Mateo
+        voice: Reed
+      E:
+        name: Elif
+        voice: Flo
+      H:
+        name: Hauke
+        voice: Rocko
+      K:
+        name: Frau Hansen
+        voice: Sandy
+    lines:
+      - E: Guten Tag. Können Sie mir sagen, wann der Fotokurs beginnt?
+        ru: Добрый день. Не могли бы вы сказать, когда начинается фотокурс?
+      - K: Am Samstag um elf Uhr.
+        ru: В субботу в одиннадцать.
+      - E: Wissen Sie, ob noch Plätze frei sind?
+        ru: Вы знаете, есть ли ещё свободные места?
+      - K: Ja, zwei Plätze sind noch frei.
+        ru: Да, ещё два места свободны.
+      - E: Und wie lange dauert der Kurs?
+        ru: А сколько длится курс?
+      - K: Zwei Stunden. Bitte bringen Sie eine Kamera mit.
+        ru: Два часа. Пожалуйста, принесите камеру.
+      - E: Danke. Ich frage meine Freunde, ob sie Zeit haben.
+        ru: Спасибо. Я спрошу друзей, есть ли у них время.
+      - K: Gern. Bitte melden Sie sich bis Freitag an.
+        ru: Охотно. Пожалуйста, запишитесь до пятницы.
+words:
+  useful:
+    title: Wörter für die Aufgabe
+    ru: Слова для действия
+    items:
+      - de: der Kontakt
+        ru: контакт
+        pl: Kontakte
+      - de: der Fotokurs
+        ru: фотокурс
+        pl: Fotokurse
+      - de: der Teilnehmer
+        ru: участник
+        pl: Teilnehmer
+      - de: die Teilnehmerin
+        ru: участница
+        pl: Teilnehmerinnen
+      - de: stattfinden
+        ru: состояться, проходить
+      - de: frei sein
+        ru: быть свободным
+      - de: kostenlos
+        ru: бесплатно
+      - de: Bescheid sagen
+        ru: сообщить, дать знать
+      - de: die Anmeldung
+        ru: регистрация
+        pl: Anmeldungen
+      - de: die Rückfrage
+        ru: уточняющий вопрос
+        pl: Rückfragen
+      - de: bis Freitag
+        ru: до пятницы
+      - de: ob Plätze frei sind
+        ru: есть ли свободные места
+tables:
+  rule:
+    title: Косвенные вопросы с W-словом и ob
+    ru: Опора для решения
+    head:
+      - Beispiel
+      - Смысл и форма
+    ruCols:
+      - 1
+    rows:
+      - - Wann beginnt der Kurs? Können Sie mir sagen, wann der Kurs beginnt?
+        - W-слово остаётся, глагол уходит в конец.
+      - - Sind Plätze frei? Wissen Sie, ob Plätze frei sind?
+        - ob вводит вопрос с ответом да или нет.
+      - - Ich frage, wie lange der Kurs dauert.
+        - Внутри косвенного вопроса нет вопросительной инверсии.
+tasks:
+  reply:
+    kind: message
+    part: a2-lesen-2
+    title: Die Antwort des Lernclubs
+    from: Frau Hansen · Lernclub Flensburg
+    text: "Fotokurs: Samstag, 11–13 Uhr. Zwei Plätze sind frei. Bitte bis Freitag anmelden und eine
+      Kamera mitbringen. Der Kurs kostet 12 Euro pro Person. Alle Angaben sind erfundene
+      Lernbedingungen."
+  ads:
+    kind: worksheet
+    part: a2-lesen-3
+    format: matching
+    title: Neue Kontakte finden
+    text: |-
+      a) Fotokurs am Samstag, 11–13 Uhr, 12 Euro. Kamera mitbringen.
+      b) Kostenloser Spieleabend am Freitag ab 18 Uhr.
+      c) Gesprächsgruppe am Sonntag um 10 Uhr, Deutsch sprechen, kostenlos.
+      d) Kochkurs am Montag, 17–19 Uhr, 20 Euro.
+      x) Kein passendes Angebot.
+    questions:
+      - prompt: Am Samstag fotografieren lernen
+        options:
+          - a
+          - b
+          - c
+          - d
+          - x
+        answers:
+          - a
+      - prompt: Freitagabend spielen, nichts bezahlen
+        options:
+          - a
+          - b
+          - c
+          - d
+          - x
+        answers:
+          - b
+      - prompt: Sonntag Deutsch sprechen
+        options:
+          - a
+          - b
+          - c
+          - d
+          - x
+        answers:
+          - c
+      - prompt: Montag kochen lernen
+        options:
+          - a
+          - b
+          - c
+          - d
+          - x
+        answers:
+          - d
+      - prompt: Kostenlos am Samstag fotografieren lernen
+        options:
+          - a
+          - b
+          - c
+          - d
+          - x
+        answers:
+          - x
+  letter:
+    kind: message
+    part: a2-schreiben-2
+    title: Einen Freund einladen
+    text: Schreiben Sie an Ihren Freund Alex.
+    situation: Sie möchten mit einem Freund einen Kurs besuchen. Schreiben Sie ungefähr 40 Wörter.
+      Wählen Sie drei der vier Punkte. Begrüßung und Gruß nicht vergessen.
+    choose: 3
+    points:
+      - Welcher Kurs?
+      - Wann und wo?
+      - Was mitbringen?
+      - Fragen, ob der Freund Zeit hat.
+    sample:
+      - Hallo Alex, ich möchte am Samstag einen Fotokurs im Lernclub Flensburg besuchen. Der
+        Kurs beginnt um elf Uhr und dauert zwei Stunden. Hast du Zeit? Sag mir bitte bis
+        Freitag Bescheid. Ich freue mich auf deine Antwort. Viele Grüße, Elif
+  talk:
+    kind: card
+    part: a2-sprechen-2
+    title: Bei neuen Kontakten nachfragen
+    theme: Kurs und Freizeit
+    word: Wann? Ob? Wie lange?
+    sample:
+      - Können Sie mir sagen, wann der Kurs beginnt?
+      - Wissen Sie, ob Plätze frei sind?
+      - Ich möchte wissen, wie lange der Kurs dauert.
+  conversation:
+    kind: worksheet
+    part: a2-hoeren-3
+    format: matching
+    title: Fünf Informationen aus dem Gespräch
+    dialogue: scene
+    questions:
+      - prompt: Beginn
+        options:
+          - 11 Uhr
+          - 2 Stunden
+          - "2"
+          - Kamera
+          - Freitag
+        answers:
+          - 11 Uhr
+      - prompt: Dauer
+        options:
+          - 11 Uhr
+          - 2 Stunden
+          - "2"
+          - Kamera
+          - Freitag
+        answers:
+          - 2 Stunden
+      - prompt: Freie Plätze
+        options:
+          - 11 Uhr
+          - 2 Stunden
+          - "2"
+          - Kamera
+          - Freitag
+        answers:
+          - "2"
+      - prompt: Mitbringen
+        options:
+          - 11 Uhr
+          - 2 Stunden
+          - "2"
+          - Kamera
+          - Freitag
+        answers:
+          - Kamera
+      - prompt: Anmeldung bis
+        options:
+          - 11 Uhr
+          - 2 Stunden
+          - "2"
+          - Kamera
+          - Freitag
+        answers:
+          - Freitag
+steps:
+  - id: start
+    chapter: scene
+    title: Новое дело команды
+    beats:
+      - read: "Элиф хочет познакомиться с участниками клуба во Фленсбурге и пригласить друзей на
+          встречу. В объявлении не хватает времени. Вместо догадки команда задаёт вопрос и ждёт
+          подтверждения. Все клубы, адреса и предложения в заданиях вымышлены. Все нужные
+          условия даны в сцене: знания географии, настоящих цен или расписаний не требуются.
+          Сначала попробуйте понять, какого результата добиваются друзья, затем слушайте
+          реплики. На новом уровне важно не только найти число или знакомое слово, но и связать
+          несколько сведений."
+        point: Уточняем сведения и знакомимся
+        set:
+          view: dialogue
+          dialogue: scene
+          reveal: 4
+      - read: "Элиф сначала задаёт косвенный вопрос с *wann*, затем с *ob*. Первый запрашивает
+          конкретное время, второй — ответ да или нет. Сам вопрос ещё ничего не подтверждает:
+          наличие двух мест известно только из ответа сотрудницы. В игре нельзя считать фразу
+          «есть ли места?» сообщением «места есть»."
+        point: Косвенные вопросы с W-словом и ob
+        set:
+          reveal: 8
+  - id: words
+    chapter: words
+    title: Слова, которые понадобятся
+    beats:
+      - read: "*Sich anmelden* уже знакомо по записи на приём; теперь это регистрация на курс. *Frei*
+          рядом с *Plätze* означает свободные места, а *kostenlos* — отсутствие платы. Эти
+          условия нельзя подменять друг другом. Сначала проверьте занятие и время, затем
+          узнайте число мест и срок регистрации."
+        point: Сначала используйте слово для решения; словарь остаётся справочником.
+        set:
+          view: words
+          words: useful
+          reveal: 6
+      - read: "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к
+          ситуации: какие слова обозначают человека, место, условие или уже выполненное
+          действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово
+          встретится снова в записке или разговоре, попробуйте восстановить его смысл до
+          подсказки."
+        point: Возвращайтесь к выражениям в сообщениях и новых действиях.
+        set:
+          reveal: 12
+  - id: grammar
+    chapter: grammar
+    title: Косвенные вопросы с W-словом и ob
+    beats:
+      - read: Прямой вопрос начинается с *wann*, а глагол *beginnt* стоит сразу за ним. После вводной
+          просьбы *Können Sie mir sagen* начинается придаточная часть с тем же W-словом. В ней
+          личная форма стоит в конце. Это знакомый принцип из *weil* и *dass*, теперь он
+          помогает вежливо получить неизвестные сведения.
+        point: W-слово остаётся, глагол уходит в конец.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: "Если у прямого вопроса нет W-слова и можно ответить да или нет, в косвенном вопросе
+          используем *ob*. Не заменяем его на *wenn*: сейчас спрашиваем, верно ли условие, а не
+          строим план «если». В конце стоит личная форма *sind*. Содержание вопроса само по
+          себе ещё не является ответом."
+        point: ob вводит вопрос с ответом да или нет.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: После *wie lange* поставьте подлежащее *der Kurs*, а *dauert* перенесите в конец. Вся
+          фраза с *Ich frage* является сообщением, поэтому заканчивается точкой. Готовая
+          просьба *Können Sie mir sagen …?* остаётся вопросом. Сначала соберите смысл, затем
+          проверьте рамку предложения.
+        point: Внутри косвенного вопроса нет вопросительной инверсии.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+  - id: frames
+    chapter: grammar
+    title: Как устроена реплика
+    beats:
+      - read: Знакомую главную часть *Ich frage* дополняем вопросом *ob sie Zeit haben*. Внутри него
+          местоимение стоит перед дополнением, а личный глагол — в конце. Если друзья ещё не
+          ответили, не записывайте их участие как подтверждённое. Грамматика помогает сохранить
+          границу между вопросом и полученной информацией.
+        point: "*Ich frage, ob sie Zeit haben.*"
+        set:
+          view: sentence
+          rows:
+            - de:
+                - Ich
+                - frage,
+                - ob sie Zeit
+                - haben.
+              ru: Я спрашиваю, есть ли у них время.
+  - id: check
+    chapter: practice
+    title: Проверьте смысл до подсказки
+    beats:
+      - question: «Wissen Sie, ob Plätze frei sind?» подтверждает свободные места?
+        read: Нет. Это запрос информации. Подтверждением будет ответ вроде *Ja, zwei Plätze sind frei*.
+          В дневнике отметьте сначала вопрос, затем отдельный ответ. Если ответа нет, сведения
+          остаются неизвестными. Такой навык полезен и в разговоре, и при чтении объявлений.
+        point: Вопрос с *ob* не является подтверждением.
+        set:
+          view: table
+          table: rule
+      - question: Почему не «wann beginnt der Kurs» внутри просьбы?
+        read: "Это порядок прямого вопроса. После *Können Sie mir sagen* нужна придаточная часть: *wann
+          der Kurs beginnt*. W-слово сохраняется, но личный глагол уходит в конец. Сравните оба
+          варианта вслух и найдите границу частей по запятой."
+        point: "Косвенный вопрос: W-слово → подлежащее → … → глагол."
+        set:
+          view: table
+          table: rule
+  - id: exam-reply
+    chapter: exam
+    title: Die Antwort des Lernclubs
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: reply
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: reply
+        set:
+          view: task
+          task: reply
+          solved: true
+  - id: exam-ads
+    chapter: exam
+    title: Neue Kontakte finden
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: ads
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: ads
+        set:
+          view: task
+          task: ads
+          solved: true
+  - id: exam-letter
+    chapter: exam
+    title: Einen Freund einladen
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: letter
+          reveal: 0
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: letter
+          reveal: 0
+        set:
+          view: task
+          task: letter
+          solved: true
+  - id: exam-talk
+    chapter: exam
+    title: Bei neuen Kontakten nachfragen
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: talk
+          reveal: 0
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: talk
+          reveal: 0
+        set:
+          view: task
+          task: talk
+          solved: true
+  - id: exam-conversation
+    chapter: exam
+    title: Fünf Informationen aus dem Gespräch
+    beats:
+      - read: "Прослушайте разговор Элиф с сотрудницей дважды. Сопоставьте пять сведений с пятью
+          полями. Число два встречается в разных смыслах: часы и места нужно различить по
+          вопросу. До проверки не открывайте текст записи; затем найдите реплику, которая
+          подтверждает каждую связь."
+        point: Различайте число мест и длительность.
+        set:
+          view: task
+          task: conversation
+exercises:
+  - type: choice
+    q: Ich frage, ___ Plätze frei sind.
+    options:
+      - ob
+      - wenn
+      - denn
+    answer: 0
+    why: Вопрос да/нет вводится ob.
+  - type: choice
+    q: Wissen Sie, wann der Kurs ___?
+    options:
+      - beginnt
+      - beginnen
+      - beginne
+    answer: 0
+    why: Глагол согласуется с Kurs и стоит в конце.
+  - type: choice
+    q: Können Sie mir sagen, wie lange der Kurs ___?
+    options:
+      - dauert
+      - dauern
+      - dauere
+    answer: 0
+    why: Единственное число.
+  - type: choice
+    q: Ich frage, ob sie Zeit ___.
+    options:
+      - haben
+      - hat
+      - hast
+    answer: 0
+    why: Sie — они.
+  - type: choice
+    q: "Косвенный вопрос о времени:"
+    options:
+      - wann der Kurs beginnt
+      - wann beginnt der Kurs
+      - beginnt wann der Kurs
+    answer: 0
+    why: Подлежащее перед конечным глаголом.
+  - type: choice
+    q: "Fragen и bestätigen — это:"
+    options:
+      - спросить и подтвердить
+      - заплатить и уехать
+      - прийти и уйти
+    answer: 0
+    why: Вопрос не подтверждает факт.
+  - type: order
+    ru: Вы знаете, есть ли свободные места?
+    de: Wissen Sie, ob Plätze frei sind?
+  - type: order
+    ru: Я спрашиваю, когда начинается курс.
+    de: Ich frage, wann der Kurs beginnt.
+  - type: order
+    ru: Не могли бы вы сказать, сколько длится курс?
+    de: Können Sie mir sagen, wie lange der Kurs dauert?
+  - type: order
+    ru: Я спрашиваю друзей, есть ли у них время.
+    de: Ich frage meine Freunde, ob sie Zeit haben.
+  - type: order
+    ru: Пожалуйста, запишитесь до пятницы.
+    de: Bitte melden Sie sich bis Freitag an.
+  - type: order
+    ru: Ещё два места свободны.
+    de: Zwei Plätze sind noch frei.
+case:
+  title: Frage oder Zusage?
+  ru: Сверка дневника
+  intro: В дневнике вопрос Элиф ошибочно приняли за ответ. Найдите, что известно, а что ещё
+    предстоит уточнить.
+  people: {}
+  steps:
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Ich frage meine Freunde, ob sie Zeit haben.
+          ru: Я спрашиваю друзей, есть ли у них время.
+      question: Участие друзей подтверждено?
+      options:
+        - Да, все придут
+        - Нет, это пока вопрос
+        - Да, никто не придёт
+      answer: 1
+      right: "*Ob* вводит неизвестное условие, ответа друзей здесь нет."
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Ja, zwei Plätze sind noch frei.
+          ru: Да, ещё два места свободны.
+      question: Какое сведение подтверждено?
+      options:
+        - Есть два места
+        - Курс бесплатный
+        - Все друзья записались
+      answer: 0
+      right: Число мест названо прямо.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Können Sie mir sagen, wann der Kurs beginnt?
+          ru: Не могли бы вы сказать, когда начинается курс?
+      question: Какую информацию запрашивают?
+      options:
+        - Время начала
+        - Стоимость камеры
+        - Имя преподавателя
+      answer: 0
+      right: "*Wann* спрашивает о времени."
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+  ending: Запись исправлена по источникам. В следующей главе команда воспользуется
+    подтверждёнными сведениями для нового решения.
+adventure:
+  kind: sequence
+  title: От вопроса к подтверждённой встрече
+  intro: Элиф хочет познакомиться с участниками клуба во Фленсбурге и пригласить друзей на
+    встречу. В объявлении не хватает времени. Вместо догадки команда задаёт вопрос и ждёт
+    подтверждения. Все клубы, адреса и предложения в заданиях вымышлены.
+  ending: "Команда отделила вопросы от ответов и выбрала подходящий курс. В дневнике осталось
+    последнее общее дело: договориться о поездке в конце лета."
+  challenges:
+    - id: clarify
+      kind: negotiation
+      title: Получите недостающее время
+      intro: В коротком сообщении сказано только «Fotokurs am Samstag». Выберите вопрос о неизвестном
+        времени.
+      success: Уточнение получено и подтверждено ответом.
+      wrong: Неизвестное время нужно спросить, а не придумать.
+      start: start
+      nodes:
+        - id: start
+          text: Fotokurs am Samstag. Die Uhrzeit fehlt.
+          choices:
+            - label: Können Sie mir sagen, wann der Kurs beginnt?
+              next: reply
+              feedback: Вы запросили недостающее время.
+            - label: Der Kurs beginnt um zehn Uhr.
+              next: retry
+              feedback: В источнике нет десяти часов. Это догадка.
+        - id: retry
+          text: Bitte fragen Sie nach der Uhrzeit.
+          choices:
+            - label: Wann beginnt der Kurs?
+              next: reply
+              feedback: Теперь это вопрос, а не утверждение.
+        - id: reply
+          text: Am Samstag um elf Uhr. Zwei Plätze sind frei.
+          choices:
+            - label: Danke. Jetzt kenne ich die Uhrzeit.
+              next: end
+              feedback: Время подтверждено ответом.
+        - id: end
+          text: "Подтверждение записано: Samstag, 11 Uhr."
+          terminal: true
+          choices: []
+    - id: indirect
+      kind: order
+      title: Спросите о свободных местах
+      intro: Соберите косвенный вопрос.
+      label: Реплика для команды
+      tokens:
+        - Wissen Sie,
+        - ob
+        - Plätze
+        - frei sind?
+      success: Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.
+      wrong: "Проверьте положение глагола и конец предложения: используйте все фрагменты."
+    - id: note
+      kind: note
+      title: Запишите подтверждённые условия
+      intro: "Используйте ответ клуба: время начала и число мест."
+      mode: reading
+      clue:
+        task: reply
+      fields:
+        - label: Начало курса (HH:MM)
+          answers:
+            - 11:00
+            - 11 Uhr
+            - elf Uhr
+        - label: Свободных мест
+          answers:
+            - "2"
+            - zwei
+      success: В заметке сведения из ответа, а не из предположения.
+      wrong: Сверьте начало и число мест с ответом.
+    - id: none
+      kind: select
+      title: Найдите бесплатный фотокурс в субботу
+      intro: Не заменяйте обязательное условие просто похожей темой.
+      mode: reading
+      clue:
+        task: ads
+      options:
+        - id: o0
+          label: a
+        - id: o1
+          label: b
+        - id: o2
+          label: x
+      answer:
+        - o2
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."
+    - id: confirmed
+      kind: select
+      title: Что действительно подтвердили?
+      intro: Ответ клуба относится к курсу, а участие друзей ещё нужно уточнить.
+      mode: reading
+      clue:
+        task: reply
+      options:
+        - id: o0
+          label: Der Kurs beginnt um elf Uhr.
+        - id: o1
+          label: Alle Freunde haben schon zugesagt.
+        - id: o2
+          label: Der Kurs ist kostenlos.
+      answer:
+        - o0
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."

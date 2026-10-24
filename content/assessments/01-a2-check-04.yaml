@@ -1,0 +1,114 @@
+id: a2-check-04
+level: a2
+mode: review
+title: "После уроков 1–4: коробка для клуба"
+intro: Новый посетитель готовит вечер обмена книгами. Свяжите причину переноса, адресатов вещей
+  и место встречи. Учебные условия вымышлены.
+sections:
+  - id: check
+    title: Передайте вещи и объясните перенос
+    taskIds:
+      - phone
+      - read
+      - write
+      - talk
+tasks:
+  phone:
+    kind: worksheet
+    part: a2-hoeren-1
+    format: notes
+    title: Telefonnotiz für den Bücherabend
+    questions:
+      - prompt: Neuer Tag
+        answers:
+          - Donnerstag
+      - prompt: "Kiste: für wen?"
+        answers:
+          - Nora
+          - für Nora
+    recordings:
+      - text: Hallo, hier ist Jonas. Der Bücherabend ist nicht am Mittwoch, sondern am Donnerstag. Am
+          Mittwoch muss ich arbeiten. Bitte sag Nora Bescheid.
+        voice: Eddy
+      - text: Hier ist Nora. Bitte gib mir die kleine Kiste mit den Büchern. Die große Tasche ist für
+          Jonas. Danke!
+        voice: Shelley
+  read:
+    kind: worksheet
+    part: a2-lesen-2
+    format: article
+    title: Eine Nachricht nach dem Anruf
+    text: Der Bücherabend beginnt am Donnerstag um 18 Uhr. Jonas hat die Bücher schon sortiert,
+      aber die Gäste noch nicht informiert. Nora braucht die kleine Kiste. Bitte stellen Sie
+      die Kiste unter den Tisch im Leseraum. Der Leseraum ist neben der Küche.
+    questions:
+      - prompt: Warum Donnerstag?
+        answers:
+          - Jonas arbeitet am Mittwoch.
+        options:
+          - Jonas arbeitet am Mittwoch.
+          - Nora ist im Urlaub.
+          - Der Raum ist jeden Tag zu.
+      - prompt: Was ist schon fertig?
+        answers:
+          - Bücher sortiert
+        options:
+          - Gäste informiert
+          - Bücher sortiert
+          - Kiste geliefert
+      - prompt: Wohin mit der Kiste?
+        answers:
+          - unter den Tisch
+        options:
+          - auf den Tisch
+          - unter den Tisch
+          - vor die Tür
+      - prompt: Wo ist der Leseraum?
+        answers:
+          - neben der Küche
+        options:
+          - über der Küche
+          - neben der Küche
+          - im Garten
+  write:
+    kind: message
+    part: a2-schreiben-2
+    title: Den neuen Tag erklären
+    text: Schreiben Sie eine persönliche Nachricht.
+    situation: Schreiben Sie einem Gast zum Bücherabend. Schreiben Sie ungefähr 40 Wörter. Wählen
+      Sie drei der vier Punkte. Begrüßung und Gruß nicht vergessen.
+    choose: 3
+    points:
+      - Neuer Tag und Uhrzeit
+      - Grund für den neuen Tag
+      - Was schon fertig ist
+      - Was mitbringen
+  talk:
+    kind: card
+    part: a2-sprechen-2
+    title: Um Hilfe bitten
+    word: Bücher · kleine Kiste · Leseraum
+    situation: "Person A braucht Hilfe mit Büchern. Person B fragt: Welche Kiste? Für wen? Wohin?
+      Wechseln Sie danach die Rollen."
+review:
+  - level: a2
+    topic: a2-neustart
+    label: "Урок 1: сделано и ещё не сделано"
+    taskIds:
+      - read
+  - level: a2
+    topic: a2-gruende
+    label: "Урок 2: причины"
+    taskIds:
+      - read
+      - phone
+  - level: a2
+    topic: a2-helfen
+    label: "Урок 3: адресат"
+    taskIds:
+      - phone
+  - level: a2
+    topic: a2-unterwegs
+    label: "Урок 4: где и куда"
+    taskIds:
+      - read

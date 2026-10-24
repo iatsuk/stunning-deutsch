@@ -1,5 +1,5 @@
 import { Footer, Topbar, useTitle } from "../App";
-import type { Level } from "../content";
+import { assessmentCatalog, type Level } from "../content";
 import { useProgress } from "../hooks";
 import { De, Text, plural } from "../markup";
 
@@ -7,9 +7,10 @@ export function LevelPage({ level }: { level: Level }) {
   useTitle(`${level.code} — ${level.name} · Stunning Deutsch`);
   const progress = useProgress();
   const topicsFor = (part: string) => level.topics.filter((topic) => topic.exam.includes(part));
+  const assessments = assessmentCatalog.filter(a => a.level === level.id);
   return (
     <>
-      <Topbar crumbs={[{ label: level.code }]} nav={[["route", "Темы"], ["exam", "Экзамен"]]} />
+      <Topbar crumbs={[{ label: level.code }]} nav={[["route", "Темы"], ...(assessments.length ? [["checks", "Проверки"] as [string,string]] : []), ["exam", "Экзамен"]]} />
       <main>
         <section className="hero level-hero">
           <div className="kicker">Уровень {level.code} · {level.exam}</div>
@@ -36,8 +37,8 @@ export function LevelPage({ level }: { level: Level }) {
             <div className="kicker">Маршрут</div>
             <h2>{plural(level.topics.length, ["тема", "темы", "тем"])} по порядку</h2>
             <p>
-              Каждая тема опирается на грамматику предыдущих: сначала глагол и порядок слов, потом артикли и падежи,
-              модальные глаголы и прошедшее время. Идите сверху вниз.
+              Каждая тема опирается на предыдущие: знакомое правило возвращается в новой бытовой задаче.
+              Идите сверху вниз; словарь остаётся справочником в конце каждого урока.
             </p>
           </div>
           <ol className="route-list">
@@ -78,6 +79,7 @@ export function LevelPage({ level }: { level: Level }) {
           </ol>
         </section>
 
+        {assessments.length > 0 && <section className="exam" id="checks"><div className="section-head"><div className="kicker">Самостоятельно</div><h2>Проверки и пробник</h2><p>Входная проверка и новые ситуации после блоков уроков. Доступ к темам открыт независимо от результата. Ответы разбираются после попытки; письмо и речь требуют отдельной проверки.</p></div><ol className="assessment-links">{assessments.map(a=><li key={a.id}><a href={`#/${level.id}/${a.id}`}>{a.title}</a><p>{a.intro}</p></li>)}</ol></section>}
         {level.examInfo && (
           <section className="exam" id="exam">
             <div className="section-head">

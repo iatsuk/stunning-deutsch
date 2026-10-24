@@ -1,0 +1,1521 @@
+{
+ "id": "b1-vorgeschichte",
+ "level": "b1",
+ "order": 6,
+ "title": "Sie hatte die Kamera zu Hause vergessen.",
+ "ru": "Восстанавливаем предысторию по источникам",
+ "lede": "Элиф ищет снимки поездки в Любек. В заметке написано, что камера пропала и утренних фотографий нет. Нужно восстановить, что произошло до поездки, во время неё и после возвращения. Только тогда можно правильно обновить альбом.",
+ "goals": [
+  "Узнать действие, предшествующее другому прошлому событию",
+  "Выбрать hatte или war по знакомому Perfekt",
+  "Связать события с nachdem",
+  "Написать объяснение и просьбу по четырём пунктам"
+ ],
+ "grammar": [
+  "Plusquamperfekt: hatte/war + Partizip II; nachdem"
+ ],
+ "exam": [
+  "b1-lesen-2",
+  "b1-schreiben-1"
+ ],
+ "chapters": [
+  {
+   "id": "scene",
+   "title": "Ситуация"
+  },
+  {
+   "id": "words",
+   "title": "Слова"
+  },
+  {
+   "id": "grammar",
+   "title": "Грамматика"
+  },
+  {
+   "id": "practice",
+   "title": "Проверка"
+  },
+  {
+   "id": "exam",
+   "title": "На экзамене"
+  }
+ ],
+ "dialogues": {
+  "scene": {
+   "title": "Sie hatte die Kamera zu Hause vergessen.",
+   "ru": "Восстанавливаем предысторию по источникам",
+   "place": "Lübeck / Kiel · фотографии для альбома · вымышленная учебная ситуация",
+   "people": {
+    "D": {
+     "name": "Dana",
+     "voice": "Anna"
+    },
+    "M": {
+     "name": "Mateo",
+     "voice": "Reed"
+    },
+    "E": {
+     "name": "Elif",
+     "voice": "Flo"
+    },
+    "H": {
+     "name": "Hauke",
+     "voice": "Rocko"
+    }
+   },
+   "lines": [
+    {
+     "who": "E",
+     "de": "Ich finde auf dem Computer nur die Bilder vom Nachmittag.",
+     "ru": "На компьютере я нахожу только фотографии второй половины дня.",
+     "audio": "audio/415f1c3a21a8.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Du hattest am Vormittag mit dem Handy fotografiert.",
+     "ru": "Утром ты фотографировала на телефон.",
+     "audio": "audio/15d463f6ee2f.m4a"
+    },
+    {
+     "who": "E",
+     "de": "Stimmt. Ich hatte die Kamera zu Hause vergessen.",
+     "ru": "Верно. Я забыла камеру дома.",
+     "audio": "audio/6f83b545399c.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Und ich hatte das Brot schon am Abend vorbereitet.",
+     "ru": "А я подготовил хлеб ещё вечером.",
+     "audio": "audio/98f71e91bc3e.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Nachdem wir in Lübeck angekommen waren, frühstückten wir am Wasser.",
+     "ru": "После того как мы приехали в Любек, мы позавтракали у воды.",
+     "audio": "audio/7110e62e1842.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Die Museumskarten hattest du vorher gekauft.",
+     "ru": "Билеты в музей ты купила заранее.",
+     "audio": "audio/039a48e19583.m4a"
+    },
+    {
+     "who": "E",
+     "de": "Jetzt sehe ich die Handyfotos. Ich hatte sie noch nicht auf den Computer kopiert.",
+     "ru": "Теперь вижу фотографии на телефоне. Я ещё не скопировала их на компьютер.",
+     "audio": "audio/bf928a60511e.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Dann fehlen keine Bilder. Wir korrigieren die Notiz.",
+     "ru": "Тогда фотографии не потеряны. Исправим заметку.",
+     "audio": "audio/27c57c877c99.m4a"
+    }
+   ]
+  }
+ },
+ "words": {
+  "useful": {
+   "title": "Wörter für die Aufgabe",
+   "ru": "Слова для действия",
+   "items": [
+    {
+     "de": "die Vorgeschichte",
+     "ru": "предыстория",
+     "gender": "f",
+     "plural": "Vorgeschichten",
+     "audio": "audio/6e4669289ed7.m4a"
+    },
+    {
+     "de": "der Ordner",
+     "ru": "папка",
+     "gender": "m",
+     "plural": "Ordner",
+     "audio": "audio/6feadde4219a.m4a"
+    },
+    {
+     "de": "die Datei",
+     "ru": "файл",
+     "gender": "f",
+     "plural": "Dateien",
+     "audio": "audio/e561c13db3fd.m4a"
+    },
+    {
+     "de": "die Herkunft",
+     "ru": "происхождение",
+     "gender": "f",
+     "plural": null,
+     "noPlural": true,
+     "audio": "audio/b1d4e53ac625.m4a"
+    },
+    {
+     "de": "die Erlaubnis",
+     "ru": "разрешение",
+     "gender": "f",
+     "plural": null,
+     "noPlural": true,
+     "audio": "audio/d1dd5650b930.m4a"
+    },
+    {
+     "de": "der Vorabend",
+     "ru": "предыдущий вечер",
+     "gender": "m",
+     "plural": "Vorabende",
+     "audio": "audio/e05f0bf5b4e3.m4a"
+    },
+    {
+     "de": "der Schreibtisch",
+     "ru": "письменный стол",
+     "gender": "m",
+     "plural": "Schreibtische",
+     "audio": "audio/f187334c8366.m4a"
+    },
+    {
+     "de": "der Rucksack",
+     "ru": "рюкзак",
+     "gender": "m",
+     "plural": "Rucksäcke",
+     "audio": "audio/71c1c1309faf.m4a"
+    },
+    {
+     "de": "kopieren",
+     "ru": "копировать",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/a362a739399b.m4a"
+    },
+    {
+     "de": "speichern",
+     "ru": "сохранять",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/c77b57c80f36.m4a"
+    },
+    {
+     "de": "vergessen",
+     "ru": "забывать",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/31c4fdf36187.m4a"
+    },
+    {
+     "de": "vorhanden",
+     "ru": "имеется в наличии",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/1095c274d3cf.m4a"
+    },
+    {
+     "de": "angeblich",
+     "ru": "якобы",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/b693397dd842.m4a"
+    },
+    {
+     "de": "vorher",
+     "ru": "до этого",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/7649c4fd1399.m4a"
+    },
+    {
+     "de": "weitergeben",
+     "ru": "передавать дальше",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/cfc7c92832ac.m4a"
+    }
+   ]
+  }
+ },
+ "tables": {
+  "rule": {
+   "title": "Plusquamperfekt: hatte/war + Partizip II; nachdem",
+   "ru": "Опора для решения",
+   "head": [
+    "Beispiel",
+    "Смысл и форма"
+   ],
+   "rows": [
+    [
+     "Sie hatte die Kamera vergessen.",
+     "Plusquamperfekt: hatte + Partizip II."
+    ],
+    [
+     "Wir waren in Lübeck angekommen.",
+     "Как в Perfekt: sein → war; haben → hatte."
+    ],
+    [
+     "Nachdem wir angekommen waren, frühstückten wir.",
+     "nachdem: более раннее событие в придаточной части."
+    ]
+   ],
+   "ruCols": [
+    1
+   ]
+  }
+ },
+ "tasks": {
+  "article": {
+   "kind": "worksheet",
+   "part": "b1-lesen-2",
+   "format": "article",
+   "title": "Warum die Bilder zuerst fehlten",
+   "text": "Für das Album sucht Elif Bilder von einem früheren Ausflug nach Lübeck. Zuerst findet sie nur Fotos vom Nachmittag. Dana erinnert sich noch gut an den Vormittag. Bevor die Gruppe zum Museum ging, saß sie am Wasser. Das Museum war nicht spontan ausgewählt: Elif hatte die Karten schon am Freitag gekauft. Am Sonntag trafen sich die Freunde am Bahnhof. Mateo hatte zu Hause Brot vorbereitet und brachte es in einer Tasche mit.\n\nNach dem Frühstück bemerkte Elif, dass ihre Kamera nicht im Rucksack war. Sie war nicht im Zug verloren gegangen. Elif hatte die Kamera am Vorabend auf den Schreibtisch gelegt und morgens dort vergessen. Deshalb fotografierte sie mit dem Handy. Die anderen machten ebenfalls Bilder. Nachdem sie am Abend nach Kiel zurückgekommen waren, hatte niemand Lust, alle Dateien sofort zu sortieren.\n\nHeute schaut Elif noch einmal nach. Auf dem Handy sind die Bilder vom Vormittag vorhanden. Sie hatte zuerst nur den Ordner auf dem Computer geöffnet. Dort waren die Handyfotos noch nicht gespeichert. Nun kopiert sie sie in den gemeinsamen Ordner. Für das Album fehlen also keine Bilder. Elif notiert die Herkunft der Fotos und fragt die anderen vor einer Weitergabe um Erlaubnis. Der Eintrag über eine angeblich verlorene Kamera wird korrigiert.",
+   "questions": [
+    {
+     "prompt": "Wann kaufte Elif die Museumskarten?",
+     "options": [
+      "Am Freitag",
+      "Erst im Museum",
+      "Nach der Reise"
+     ],
+     "answers": [
+      "Am Freitag"
+     ]
+    },
+    {
+     "prompt": "Wo war die Kamera?",
+     "options": [
+      "Im Museum",
+      "Im Zug",
+      "Zu Hause"
+     ],
+     "answers": [
+      "Zu Hause"
+     ]
+    },
+    {
+     "prompt": "Womit fotografierte Elif?",
+     "options": [
+      "Mit Mateos Kamera",
+      "Gar nicht",
+      "Mit dem Handy"
+     ],
+     "answers": [
+      "Mit dem Handy"
+     ]
+    },
+    {
+     "prompt": "Warum fand sie zuerst keine Vormittagsbilder?",
+     "options": [
+      "Sie öffnete nur den Computerordner.",
+      "Die Kamera war gestohlen.",
+      "Das Handy war kaputt."
+     ],
+     "answers": [
+      "Sie öffnete nur den Computerordner."
+     ]
+    },
+    {
+     "prompt": "Was macht sie vor der Weitergabe?",
+     "options": [
+      "Sie nennt alle Bilder ihre eigenen.",
+      "Sie fragt um Erlaubnis.",
+      "Sie löscht die Originale."
+     ],
+     "answers": [
+      "Sie fragt um Erlaubnis."
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "timeline": {
+   "kind": "message",
+   "part": "b1-lesen-2",
+   "title": "Vier Zeitpunkte · Ausschnitt",
+   "text": "Freitag: Elif kauft die Museumskarten. Samstagabend: Sie legt die Kamera auf den Schreibtisch. Sonntagvormittag: Sie fotografiert mit dem Handy. Heute: Sie kopiert die Bilder in den gemeinsamen Ordner. Das sind verschiedene Zeitpunkte; die Kamera wurde nicht im Zug verloren.",
+   "sample": []
+  },
+  "letter": {
+   "kind": "message",
+   "part": "b1-schreiben-1",
+   "title": "Die Fotos erklären und um Erlaubnis bitten",
+   "text": "Schreiben Sie Dana. Sie haben die Bilder vom Vormittag gefunden und möchten zwei ihrer Fotos in das gemeinsame Album aufnehmen.",
+   "points": [
+    "Warum die Bilder zuerst nicht zu sehen waren",
+    "Was bei der Reise mit der Kamera passiert war",
+    "Welche Fotos Sie jetzt benutzen möchten",
+    "Bitte um Erlaubnis und Frage nach einer Bildunterschrift"
+   ],
+   "situation": "Antworten Sie auf alle vier Punkte mit Anrede und Gruß. Erklären Sie die Vorgeschichte in verständlichen Sätzen.",
+   "sample": [
+    {
+     "de": "Liebe Dana, ich habe die Bilder vom Vormittag gefunden. Ich hatte zuerst nur den Ordner auf meinem Computer geöffnet. Die Handyfotos waren dort noch nicht gespeichert. In Lübeck habe ich mit dem Handy fotografiert, weil ich meine Kamera zu Hause vergessen hatte. Für unser Album möchte ich gern auch zwei deiner Strandfotos verwenden. Sie zeigen unsere gemeinsame Pause sehr schön. Bist du damit einverstanden? Welche Bildunterschrift passt für dich? Bitte schreib mir, wie ich deinen Namen nennen soll. Vielen Dank und liebe Grüße Elif",
+     "audio": "audio/e2c4b15c8e6e.m4a"
+    }
+   ]
+  }
+ },
+ "beats": [
+  {
+   "id": "start-1",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 0,
+   "read": "Элиф ищет снимки поездки в Любек. В заметке написано, что камера пропала и утренних фотографий нет. Нужно восстановить, что произошло до поездки, во время неё и после возвращения. Только тогда можно правильно обновить альбом. Все нужные условия даны в сцене: знания географии, настоящих цен или расписаний не требуются. Сначала попробуйте понять, какого результата добиваются друзья, затем слушайте реплики. На новом уровне важно не только найти число или знакомое слово, но и связать несколько сведений.",
+   "point": "Восстанавливаем предысторию по источникам",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 4,
+    "fresh": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "start-2",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 1,
+   "read": "Здесь есть точка в прошлом и то, что произошло раньше неё. В момент поиска снимков выясняется, что Элиф до поездки оставила камеру дома, а после поездки ещё не перенесла фотографии. Plusquamperfekt помогает показать этот шаг назад. Само отсутствие файла в одной папке не означает потерю: вывод нужно проверить по другим источникам.",
+   "point": "Plusquamperfekt: hatte/war + Partizip II; nachdem",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 8,
+    "fresh": [
+     4,
+     5,
+     6,
+     7
+    ]
+   }
+  },
+  {
+   "id": "words-1",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 0,
+   "read": "Названия устройств и действий нужны, чтобы найти снимки, а не выучить технический словарь. *Kopieren* не равняется *löschen*: перенос копии не удаляет оригинал. *Vorhanden* сообщает о наличии, *verloren* — о потере. В письме понадобится понятно объяснить происхождение фотографий и спросить разрешение перед их передачей группе.",
+   "point": "Сначала используйте слово для решения; словарь остаётся справочником.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 6,
+    "words": "useful"
+   }
+  },
+  {
+   "id": "words-2",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 1,
+   "read": "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к ситуации: какие слова обозначают человека, место, условие или уже выполненное действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово встретится снова в записке или разговоре, попробуйте восстановить его смысл до подсказки.",
+   "point": "Возвращайтесь к выражениям в сообщениях и новых действиях.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 15,
+    "words": "useful",
+    "fresh": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   }
+  },
+  {
+   "id": "grammar-1",
+   "step": "grammar",
+   "stepTitle": "Plusquamperfekt: hatte/war + Partizip II; nachdem",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "От знакомого Perfekt *sie hat vergessen* переходим к *sie hatte vergessen*. Вспомогательный глагол становится прошедшим, причастие сохраняется. Эта форма показывает действие раньше уже описываемого прошлого момента. Не нужно заменять ею все прошедшие события. Сначала выберите точку рассказа, затем решите, действительно ли требуется шаг назад.",
+   "point": "Plusquamperfekt: hatte + Partizip II.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "grammar-2",
+   "step": "grammar",
+   "stepTitle": "Plusquamperfekt: hatte/war + Partizip II; nachdem",
+   "chapterIndex": 2,
+   "indexInStep": 1,
+   "read": "Если Perfekt строится с sein, для Plusquamperfekt используем war: *wir sind angekommen → wir waren angekommen*. Для фотографирования остаётся haben: *hat fotografiert → hatte fotografiert*. Выбор вспомогательного глагола не зависит от давности. Он опирается на уже знакомую модель конкретного глагола, поэтому повторяйте выражение вместе с формой.",
+   "point": "Как в Perfekt: sein → war; haben → hatte.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "grammar-3",
+   "step": "grammar",
+   "stepTitle": "Plusquamperfekt: hatte/war + Partizip II; nachdem",
+   "chapterIndex": 2,
+   "indexInStep": 2,
+   "read": "Nachdem означает «после того как». В этой модели прошлой истории сначала завершается прибытие, затем происходит завтрак. Придаточная часть заканчивается вспомогательным глаголом *waren*. После запятой личный глагол главной части стоит сразу. Важно различить порядок слов в фразе и настоящий порядок событий: они не всегда перечислены одинаково.",
+   "point": "nachdem: более раннее событие в придаточной части.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "frames-1",
+   "step": "frames",
+   "stepTitle": "Как устроена реплика",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "В сочетании *angekommen waren* причастие находится перед личным вспомогательным глаголом. Главное действие начинается после завершения прибытия. В игре сначала определите, какое событие было раньше, и только потом собирайте фразу. Если поменять местами завтрак и прибытие по смыслу, получится другая история, даже при правильных окончаниях.",
+   "point": "*Nachdem wir angekommen waren, frühstückten wir.*",
+   "scene": {
+    "view": "sentence",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "nachdem",
+         "text": "Nachdem"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "angekommen",
+         "text": "angekommen"
+        },
+        {
+         "key": "waren",
+         "text": "waren,"
+        }
+       ],
+       [
+        {
+         "key": "frühstückten",
+         "text": "frühstückten"
+        }
+       ],
+       [
+        {
+         "key": "wir~1",
+         "text": "wir"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Nachdem wir angekommen waren, frühstückten wir.",
+      "ru": "После прибытия мы позавтракали.",
+      "audio": "audio/8dc8170a4a73.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-1",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 0,
+   "read": "Нет. Это шаг назад относительно выбранного прошлого момента. Во время поиска фотографий мы говорим о снимках, уже сделанных в поездке. Чтобы не запутаться, назовите два события простыми словами: сначала фотографирование, потом поиск. Затем вернитесь к форме и найдите причастие с hatte.",
+   "point": "Сначала фотографирование, потом поиск.",
+   "question": "«Sie hatte fotografiert» означает действие позже поиска?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "nachdem",
+         "text": "Nachdem"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "angekommen",
+         "text": "angekommen"
+        },
+        {
+         "key": "waren",
+         "text": "waren,"
+        }
+       ],
+       [
+        {
+         "key": "frühstückten",
+         "text": "frühstückten"
+        }
+       ],
+       [
+        {
+         "key": "wir~1",
+         "text": "wir"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Nachdem wir angekommen waren, frühstückten wir.",
+      "ru": "После прибытия мы позавтракали.",
+      "audio": "audio/8dc8170a4a73.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-2",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 1,
+   "read": "У ankommen знакомое Perfekt строится с sein: *wir sind angekommen*. В более раннем прошлом меняется форма этого же вспомогательного глагола — *wir waren angekommen*. Не выбирайте hatte автоматически для каждого причастия. Сравните с *wir hatten fotografiert*: там исходная модель использует haben.",
+   "point": "*sind angekommen → waren angekommen*.",
+   "question": "Почему angekommen waren, а не angekommen hatten?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "nachdem",
+         "text": "Nachdem"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "angekommen",
+         "text": "angekommen"
+        },
+        {
+         "key": "waren",
+         "text": "waren,"
+        }
+       ],
+       [
+        {
+         "key": "frühstückten",
+         "text": "frühstückten"
+        }
+       ],
+       [
+        {
+         "key": "wir~1",
+         "text": "wir"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Nachdem wir angekommen waren, frühstückten wir.",
+      "ru": "После прибытия мы позавтракали.",
+      "audio": "audio/8dc8170a4a73.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "exam-article-1",
+   "step": "exam-article",
+   "stepTitle": "Warum die Bilder zuerst fehlten",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Прочитайте весь текст до выбора ответа. Отдельно отметьте предысторию и сегодняшнюю находку: почему снимки сначала казались отсутствующими? В пяти вопросах есть варианты, которые звучат правдоподобно, но расширяют исходное сообщение. Для каждого решения найдите конкретную фразу, а не опирайтесь на первую заметку о якобы потерянной камере.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "nachdem",
+         "text": "Nachdem"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "angekommen",
+         "text": "angekommen"
+        },
+        {
+         "key": "waren",
+         "text": "waren,"
+        }
+       ],
+       [
+        {
+         "key": "frühstückten",
+         "text": "frühstückten"
+        }
+       ],
+       [
+        {
+         "key": "wir~1",
+         "text": "wir"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Nachdem wir angekommen waren, frühstückten wir.",
+      "ru": "После прибытия мы позавтракали.",
+      "audio": "audio/8dc8170a4a73.m4a"
+     }
+    ],
+    "task": "article"
+   }
+  },
+  {
+   "id": "exam-article-2",
+   "step": "exam-article",
+   "stepTitle": "Warum die Bilder zuerst fehlten",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "nachdem",
+         "text": "Nachdem"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "angekommen",
+         "text": "angekommen"
+        },
+        {
+         "key": "waren",
+         "text": "waren,"
+        }
+       ],
+       [
+        {
+         "key": "frühstückten",
+         "text": "frühstückten"
+        }
+       ],
+       [
+        {
+         "key": "wir~1",
+         "text": "wir"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Nachdem wir angekommen waren, frühstückten wir.",
+      "ru": "После прибытия мы позавтракали.",
+      "audio": "audio/8dc8170a4a73.m4a"
+     }
+    ],
+    "task": "article"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "nachdem",
+         "text": "Nachdem"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "angekommen",
+         "text": "angekommen"
+        },
+        {
+         "key": "waren",
+         "text": "waren,"
+        }
+       ],
+       [
+        {
+         "key": "frühstückten",
+         "text": "frühstückten"
+        }
+       ],
+       [
+        {
+         "key": "wir~1",
+         "text": "wir"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Nachdem wir angekommen waren, frühstückten wir.",
+      "ru": "После прибытия мы позавтракали.",
+      "audio": "audio/8dc8170a4a73.m4a"
+     }
+    ],
+    "task": "article",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-timeline-1",
+   "step": "exam-timeline",
+   "stepTitle": "Vier Zeitpunkte · Ausschnitt",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Эта короткая шкала — опора для игры, а не полная экзаменационная часть. Сравните календарный порядок с грамматическими формами в длинной статье. Карточки не нужно угадывать по словам «сначала» и «потом»: даты и описанные действия позволяют восстановить цепочку. Проверьте, к какому прошлому моменту относится каждое более раннее событие.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "nachdem",
+         "text": "Nachdem"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "angekommen",
+         "text": "angekommen"
+        },
+        {
+         "key": "waren",
+         "text": "waren,"
+        }
+       ],
+       [
+        {
+         "key": "frühstückten",
+         "text": "frühstückten"
+        }
+       ],
+       [
+        {
+         "key": "wir~1",
+         "text": "wir"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Nachdem wir angekommen waren, frühstückten wir.",
+      "ru": "После прибытия мы позавтракали.",
+      "audio": "audio/8dc8170a4a73.m4a"
+     }
+    ],
+    "task": "timeline"
+   }
+  },
+  {
+   "id": "exam-timeline-2",
+   "step": "exam-timeline",
+   "stepTitle": "Vier Zeitpunkte · Ausschnitt",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "nachdem",
+         "text": "Nachdem"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "angekommen",
+         "text": "angekommen"
+        },
+        {
+         "key": "waren",
+         "text": "waren,"
+        }
+       ],
+       [
+        {
+         "key": "frühstückten",
+         "text": "frühstückten"
+        }
+       ],
+       [
+        {
+         "key": "wir~1",
+         "text": "wir"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Nachdem wir angekommen waren, frühstückten wir.",
+      "ru": "После прибытия мы позавтракали.",
+      "audio": "audio/8dc8170a4a73.m4a"
+     }
+    ],
+    "task": "timeline"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "nachdem",
+         "text": "Nachdem"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "angekommen",
+         "text": "angekommen"
+        },
+        {
+         "key": "waren",
+         "text": "waren,"
+        }
+       ],
+       [
+        {
+         "key": "frühstückten",
+         "text": "frühstückten"
+        }
+       ],
+       [
+        {
+         "key": "wir~1",
+         "text": "wir"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Nachdem wir angekommen waren, frühstückten wir.",
+      "ru": "После прибытия мы позавтракали.",
+      "audio": "audio/8dc8170a4a73.m4a"
+     }
+    ],
+    "task": "timeline",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-letter-1",
+   "step": "exam-letter",
+   "stepTitle": "Die Fotos erklären und um Erlaubnis bitten",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала решите, что именно просите у Даны. Объяснение прошлого не заменяет разрешение на использование её снимков. Напишите все четыре смысловых пункта в черновике, затем проверьте обращение и завершение. Plusquamperfekt нужен там, где вы возвращаетесь к более раннему событию; не вставляйте его в каждое предложение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "nachdem",
+         "text": "Nachdem"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "angekommen",
+         "text": "angekommen"
+        },
+        {
+         "key": "waren",
+         "text": "waren,"
+        }
+       ],
+       [
+        {
+         "key": "frühstückten",
+         "text": "frühstückten"
+        }
+       ],
+       [
+        {
+         "key": "wir~1",
+         "text": "wir"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Nachdem wir angekommen waren, frühstückten wir.",
+      "ru": "После прибытия мы позавтракали.",
+      "audio": "audio/8dc8170a4a73.m4a"
+     }
+    ],
+    "task": "letter",
+    "reveal": 0
+   }
+  },
+  {
+   "id": "exam-letter-2",
+   "step": "exam-letter",
+   "stepTitle": "Die Fotos erklären und um Erlaubnis bitten",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "nachdem",
+         "text": "Nachdem"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "angekommen",
+         "text": "angekommen"
+        },
+        {
+         "key": "waren",
+         "text": "waren,"
+        }
+       ],
+       [
+        {
+         "key": "frühstückten",
+         "text": "frühstückten"
+        }
+       ],
+       [
+        {
+         "key": "wir~1",
+         "text": "wir"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Nachdem wir angekommen waren, frühstückten wir.",
+      "ru": "После прибытия мы позавтракали.",
+      "audio": "audio/8dc8170a4a73.m4a"
+     }
+    ],
+    "task": "letter",
+    "reveal": 0
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "nachdem",
+         "text": "Nachdem"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "angekommen",
+         "text": "angekommen"
+        },
+        {
+         "key": "waren",
+         "text": "waren,"
+        }
+       ],
+       [
+        {
+         "key": "frühstückten",
+         "text": "frühstückten"
+        }
+       ],
+       [
+        {
+         "key": "wir~1",
+         "text": "wir"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Nachdem wir angekommen waren, frühstückten wir.",
+      "ru": "После прибытия мы позавтракали.",
+      "audio": "audio/8dc8170a4a73.m4a"
+     }
+    ],
+    "task": "letter",
+    "reveal": 0,
+    "solved": true
+   }
+  }
+ ],
+ "exercises": [
+  {
+   "id": "b1-vorgeschichte-1",
+   "type": "choice",
+   "q": "Sie ___ die Kamera vergessen.",
+   "options": [
+    "hatte",
+    "war",
+    "wurde"
+   ],
+   "answer": 0,
+   "why": "Vergessen с haben.",
+   "audio": "audio/200022e85162.m4a"
+  },
+  {
+   "id": "b1-vorgeschichte-2",
+   "type": "choice",
+   "q": "Wir ___ angekommen.",
+   "options": [
+    "waren",
+    "hatten",
+    "haben"
+   ],
+   "answer": 0,
+   "why": "Ankommen с sein.",
+   "audio": "audio/14f0055ddbcf.m4a"
+  },
+  {
+   "id": "b1-vorgeschichte-3",
+   "type": "choice",
+   "q": "Nachdem wir angekommen ___, frühstückten wir.",
+   "options": [
+    "sind",
+    "waren",
+    "hatten"
+   ],
+   "answer": 1,
+   "why": "Plusquamperfekt в более ранней части.",
+   "audio": "audio/8dc8170a4a73.m4a"
+  },
+  {
+   "id": "b1-vorgeschichte-4",
+   "type": "choice",
+   "q": "Sie hatte die Bilder ___.",
+   "options": [
+    "kopiert",
+    "kopieren",
+    "kopierte"
+   ],
+   "answer": 0,
+   "why": "Нужно Partizip II.",
+   "audio": "audio/3fcbf10a77a1.m4a"
+  },
+  {
+   "id": "b1-vorgeschichte-5",
+   "type": "choice",
+   "q": "После nachdem личный глагол стоит…",
+   "options": [
+    "В конце придаточного",
+    "Всегда вторым",
+    "Перед союзом"
+   ],
+   "answer": 0,
+   "why": "Прибытие: angekommen waren."
+  },
+  {
+   "id": "b1-vorgeschichte-6",
+   "type": "choice",
+   "q": "«Не в папке компьютера» доказывает потерю?",
+   "options": [
+    "Только утром",
+    "Нет",
+    "Да"
+   ],
+   "answer": 1,
+   "why": "Есть другие источники файлов."
+  },
+  {
+   "id": "b1-vorgeschichte-7",
+   "type": "order",
+   "de": "Sie hatte die Kamera zu Hause vergessen.",
+   "ru": "Она забыла камеру дома.",
+   "audio": "audio/f1b413711e2f.m4a"
+  },
+  {
+   "id": "b1-vorgeschichte-8",
+   "type": "order",
+   "de": "Wir waren in Lübeck angekommen.",
+   "ru": "Мы приехали в Любек раньше этого момента.",
+   "audio": "audio/80f62f991251.m4a"
+  },
+  {
+   "id": "b1-vorgeschichte-9",
+   "type": "order",
+   "de": "Nachdem wir angekommen waren, frühstückten wir.",
+   "ru": "После прибытия мы позавтракали.",
+   "audio": "audio/8dc8170a4a73.m4a"
+  },
+  {
+   "id": "b1-vorgeschichte-10",
+   "type": "order",
+   "de": "Ich hatte die Bilder noch nicht kopiert.",
+   "ru": "Я ещё не скопировала фотографии.",
+   "audio": "audio/a961a5031a9e.m4a"
+  },
+  {
+   "id": "b1-vorgeschichte-11",
+   "type": "order",
+   "de": "Die Fotos sind auf dem Handy vorhanden.",
+   "ru": "Фотографии имеются на телефоне.",
+   "audio": "audio/550b05db84f1.m4a"
+  },
+  {
+   "id": "b1-vorgeschichte-12",
+   "type": "order",
+   "de": "Darf ich deine Fotos im Album verwenden?",
+   "ru": "Можно использовать твои фото в альбоме?",
+   "audio": "audio/0c82af411628.m4a"
+  }
+ ],
+ "case": {
+  "title": "Kamera weg oder Datei am anderen Ort?",
+  "ru": "Сверка дневника",
+  "intro": "Проверьте причинную связь в пересказе; отсутствие в одном месте не доказывает потерю.",
+  "people": {},
+  "steps": [
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Elif hatte die Kamera auf den Schreibtisch gelegt und dort vergessen.",
+      "ru": "Элиф положила камеру на стол и забыла её там."
+     }
+    ],
+    "question": "Камера потеряна в поезде?",
+    "options": [
+     "Нет, оставлена дома",
+     "Да",
+     "Это фотоаппарат Хауке"
+    ],
+    "answer": 0,
+    "right": "Указано конкретное место до поездки.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Auf dem Handy sind die Bilder vom Vormittag vorhanden.",
+      "ru": "На телефоне есть фотографии первой половины дня."
+     }
+    ],
+    "question": "Утренние фото отсутствуют вообще?",
+    "options": [
+     "Да",
+     "Есть только музейные билеты",
+     "Нет, найдены на телефоне"
+    ],
+    "answer": 2,
+    "right": "Источник прямо подтверждает наличие.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Elif fragt die anderen vor der Weitergabe um Erlaubnis.",
+      "ru": "Перед передачей Элиф спрашивает разрешение у остальных."
+     }
+    ],
+    "question": "Можно уже приписать ей все снимки?",
+    "options": [
+     "Только без подписи",
+     "Нет",
+     "Да"
+    ],
+    "answer": 1,
+    "right": "Найденный файл не меняет авторство.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   }
+  ],
+  "ending": "Исправлены три разные ошибки: место камеры, наличие файлов и авторство. В альбом переходит проверенная история."
+ },
+ "adventure": {
+  "kind": "sequence",
+  "title": "Восстановите историю фотографий",
+  "intro": "Элиф ищет снимки поездки в Любек. В заметке написано, что камера пропала и утренних фотографий нет. Нужно восстановить, что произошло до поездки, во время неё и после возвращения. Только тогда можно правильно обновить альбом.",
+  "ending": "Утренние снимки найдены на телефоне. Камера оставалась дома, а не пропала в поезде. В альбом идут копии после разрешения авторов; происхождение фотографий записано.",
+  "challenges": [
+   {
+    "id": "past",
+    "kind": "pack",
+    "title": "Что уже было сделано до поездки?",
+    "intro": "Прочитайте статью и отберите два действия.",
+    "success": "Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы одно из них.",
+    "wrong": "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание и адресата.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Für das Album sucht Elif Bilder von einem früheren Ausflug nach Lübeck. Zuerst findet sie nur Fotos vom Nachmittag. Dana erinnert sich noch gut an den Vormittag. Bevor die Gruppe zum Museum ging, saß sie am Wasser. Das Museum war nicht spontan ausgewählt: Elif hatte die Karten schon am Freitag gekauft. Am Sonntag trafen sich die Freunde am Bahnhof. Mateo hatte zu Hause Brot vorbereitet und brachte es in einer Tasche mit.\n\nNach dem Frühstück bemerkte Elif, dass ihre Kamera nicht im Rucksack war. Sie war nicht im Zug verloren gegangen. Elif hatte die Kamera am Vorabend auf den Schreibtisch gelegt und morgens dort vergessen. Deshalb fotografierte sie mit dem Handy. Die anderen machten ebenfalls Bilder. Nachdem sie am Abend nach Kiel zurückgekommen waren, hatte niemand Lust, alle Dateien sofort zu sortieren.\n\nHeute schaut Elif noch einmal nach. Auf dem Handy sind die Bilder vom Vormittag vorhanden. Sie hatte zuerst nur den Ordner auf dem Computer geöffnet. Dort waren die Handyfotos noch nicht gespeichert. Nun kopiert sie sie in den gemeinsamen Ordner. Für das Album fehlen also keine Bilder. Elif notiert die Herkunft der Fotos und fragt die anderen vor einer Weitergabe um Erlaubnis. Der Eintrag über eine angeblich verlorene Kamera wird korrigiert.",
+      "name": "Warum die Bilder zuerst fehlten"
+     }
+    ],
+    "options": [
+     {
+      "id": "o0",
+      "label": "Куплены билеты в музей"
+     },
+     {
+      "id": "o1",
+      "label": "Подготовлен хлеб"
+     },
+     {
+      "id": "o2",
+      "label": "Скопированы все фото в общую папку"
+     },
+     {
+      "id": "o3",
+      "label": "Потеряна камера в поезде"
+     }
+    ],
+    "answer": [
+     "o0",
+     "o1"
+    ]
+   },
+   {
+    "id": "aux",
+    "kind": "match",
+    "title": "Выберите знакомый вспомогательный глагол",
+    "intro": "Восстановите формы по Perfekt.",
+    "success": "Вспомогательный глагол сохраняет выбор haben/sein.",
+    "wrong": "Ankommen использует sein; fotografieren и vergessen — haben.",
+    "options": [
+     {
+      "id": "hatte",
+      "label": "hatte"
+     },
+     {
+      "id": "waren",
+      "label": "waren"
+     }
+    ],
+    "slots": [
+     {
+      "id": "a",
+      "label": "sie … fotografiert",
+      "answer": "hatte"
+     },
+     {
+      "id": "b",
+      "label": "wir … angekommen",
+      "answer": "waren"
+     },
+     {
+      "id": "c",
+      "label": "sie … die Kamera vergessen",
+      "answer": "hatte"
+     }
+    ]
+   },
+   {
+    "id": "before",
+    "kind": "order",
+    "title": "Свяжите прибытие и завтрак",
+    "intro": "Сначала группа приехала.",
+    "success": "Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.",
+    "wrong": "Проверьте положение глагола и конец предложения: используйте все фрагменты.",
+    "tokens": [
+     "Nachdem wir",
+     "angekommen waren,",
+     "frühstückten",
+     "wir."
+    ],
+    "label": "Реплика для команды"
+   },
+   {
+    "id": "timeline",
+    "kind": "order",
+    "title": "Расставьте события по времени",
+    "intro": "Расположите четыре подтверждённых события, от самого раннего к позднему.",
+    "success": "Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.",
+    "wrong": "Проверьте положение глагола и конец предложения: используйте все фрагменты.",
+    "tokens": [
+     "Freitag: Karten gekauft.",
+     "Samstagabend: Kamera hingelegt.",
+     "Sonntag: mit dem Handy fotografiert.",
+     "Heute: Bilder kopiert."
+    ],
+    "label": "Реплика для команды"
+   },
+   {
+    "id": "ask",
+    "kind": "negotiation",
+    "title": "Получите разрешение на снимки",
+    "intro": "Объясните находку и уточните право использования.",
+    "success": "Согласованы использование и подпись.",
+    "wrong": "Сначала уточните разрешение.",
+    "start": "a",
+    "nodes": [
+     {
+      "id": "a",
+      "text": "Dana: Sind die Fotos jetzt gefunden?",
+      "choices": [
+       {
+        "label": "Ja. Ich hatte zuerst nur auf dem Computer gesucht.",
+        "next": "b",
+        "feedback": "Причина первоначального отсутствия объяснена."
+       }
+      ]
+     },
+     {
+      "id": "b",
+      "text": "Dana: Auf meinem Handy sind auch zwei Strandfotos.",
+      "choices": [
+       {
+        "label": "Darf ich sie mit deinem Namen im Album verwenden?",
+        "next": "end",
+        "feedback": "Перед передачей запрошено разрешение."
+       }
+      ]
+     },
+     {
+      "id": "end",
+      "text": "Dana: Ja, gern. Schreib bitte „Pause am Strand — Foto: Dana“.",
+      "terminal": true,
+      "choices": []
+     }
+    ]
+   }
+  ]
+ },
+ "spy": []
+}

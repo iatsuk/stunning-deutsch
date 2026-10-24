@@ -1,0 +1,772 @@
+id: b1-arbeit
+order: 15
+title: Das sind Menschen, mit denen ich offen sprechen kann.
+ru: Описываем коллег, помощь и рабочий опыт
+lede: "Дана делится опытом дня наблюдения в практике, Матео — работой в Fördeblick. Команда
+  обсуждает людей, у которых можно учиться и с которыми удобно уточнять непонятное. Дана
+  продолжает признание квалификации: наблюдение не означает завершённое признание или новое
+  трудоустройство."
+goals:
+  - Выбрать относительное местоимение Dativ
+  - Сохранить предлог перед относительным местоимением
+  - Употребить dem/den Kollegen с окончанием-n
+  - Передать рабочий опыт без выдуманных выводов
+grammar:
+  - "Относительное Dativ: dem, der, denen; mit dem Kollegen"
+exam:
+  - b1-lesen-2
+  - b1-hoeren-2
+  - b1-sprechen-1
+  - b1-sprechen-2
+dialogues:
+  scene:
+    title: Das sind Menschen, mit denen ich offen sprechen kann.
+    ru: Описываем коллег, помощь и рабочий опыт
+    place: Kiel · разговор о работе и учёбе · вымышленная учебная ситуация
+    people:
+      D:
+        name: Dana
+        voice: Anna
+      M:
+        name: Mateo
+        voice: Reed
+      E:
+        name: Elif
+        voice: Flo
+      H:
+        name: Hauke
+        voice: Rocko
+      K:
+        name: Frau Klein
+        voice: Shelley
+    lines:
+      - D: Frau Klein ist die Kollegin, von der ich viel gelernt habe.
+        ru: Фрау Кляйн — коллега, у которой я многому научилась.
+      - M: Herr Wagner ist der Kollege, mit dem ich im Restaurant arbeite.
+        ru: Господин Вагнер — коллега, с которым я работаю в ресторане.
+      - E: Ich brauche jemanden, dem ich Fragen stellen kann.
+        ru: Мне нужен кто-то, кому я могу задавать вопросы.
+      - D: Das sind Menschen, mit denen ich offen sprechen kann.
+        ru: Это люди, с которыми я могу открыто говорить.
+      - H: Wann fragst du nach, wenn gerade viel zu tun ist?
+        ru: Когда ты уточняешь, если сейчас много дел?
+      - D: Ich sammle die Fragen und spreche mit der Kollegin in einer ruhigen Pause.
+        ru: Я собираю вопросы и говорю с коллегой в спокойный перерыв.
+      - M: Ich spreche auch lieber mit dem Kollegen, bevor ich einem Gast etwas Falsches erkläre.
+        ru: Я тоже предпочитаю спросить коллегу, прежде чем неверно объясню что-то гостю.
+      - E: Dann können wir beim Treff auch klare Ansprechpartner nennen.
+        ru: Тогда на встрече мы тоже можем назвать понятных контактных людей.
+  interview:
+    title: Ein Beobachtungstag und viele Sprachfragen
+    ru: Опыт наблюдения и вопросы о языке
+    place: Kiel · вымышленное интервью
+    people:
+      H:
+        name: Hauke
+        voice: Rocko
+      D:
+        name: Dana
+        voice: Anna
+    lines:
+      - H: Was hast du an deinem Beobachtungstag in der Praxis gemacht?
+        ru: Что ты делала в свой день наблюдения в практике?
+      - D: Ich habe den Ablauf beobachtet und Fragen gesammelt. Frau Klein ist die Kollegin, von der
+          ich dabei viel gelernt habe. Ich habe keine eigenen Diagnosen gestellt.
+        ru: Я наблюдала порядок работы и собирала вопросы. Фрау Кляйн — коллега, у которой я многому
+          научилась. Собственных диагнозов я не ставила.
+      - H: Gab es Zeit für deine Fragen?
+        ru: Было время для твоих вопросов?
+      - D: Ja, aber nicht in jedem Moment. Während eines Gesprächs mit einem Patienten hörte ich zuerst
+          zu. In einer ruhigen Pause konnte ich nachfragen.
+        ru: Да, но не в любой момент. Во время разговора с пациентом я сначала слушала. В спокойный
+          перерыв могла спросить.
+      - H: Mit wem hast du die schwierigen Wörter besprochen?
+        ru: С кем ты обсуждала трудные слова?
+      - D: Mit Frau Klein und zwei Kollegen. Das sind Menschen, mit denen ich offen sprechen kann.
+          Manchmal fragte ich noch einmal nach demselben Wort.
+        ru: С фрау Кляйн и двумя коллегами. Это люди, с которыми я могу открыто говорить. Иногда я
+          снова спрашивала о том же слове.
+      - H: Hast du Beispiele in unser Projektdokument geschrieben?
+        ru: Ты записывала примеры в документ проекта?
+      - D: Nur allgemeine Wörter für Kommunikation. Namen oder persönliche Angaben aus der Praxis
+          gehören nicht in unser Album. Für den Treff brauchen wir keine echten
+          Patientengeschichten.
+        ru: Только общие слова для общения. Имена и личные сведения из практики не относятся к нашему
+          альбому. Для встречи нам не нужны реальные истории пациентов.
+      - H: Wie übst du jetzt weiter?
+        ru: Как ты продолжаешь тренироваться?
+      - D: Ich schreibe eigene neutrale Beispielsätze und spreche sie laut. Am Freitag bespreche ich
+          offene Sprachfragen mit Frau Klein. Außerdem übe ich zu Hause, eine Rückfrage
+          freundlich zu stellen.
+        ru: Я пишу свои нейтральные примеры и произношу вслух. В пятницу обсужу с фрау Кляйн оставшиеся
+          языковые вопросы. Дома тренирую вежливые уточнения.
+      - H: Bedeutet dieser Tag schon eine neue Arbeitsstelle?
+        ru: Этот день уже означает новую работу?
+      - D: Nein. Es war ein Beobachtungstag. Meine berufliche Anerkennung ist weiterhin ein eigenes
+          Thema. Ich freue mich, dass ich den Alltag besser verstanden habe.
+        ru: Нет. Это был день наблюдения. Признание квалификации остаётся отдельным вопросом. Я рада,
+          что лучше поняла повседневную работу.
+words:
+  useful:
+    title: Wörter für die Aufgabe
+    ru: Слова для действия
+    items:
+      - de: der Ansprechpartner
+        ru: контактное лицо
+        pl: Ansprechpartner
+      - de: die Ansprechpartnerin
+        ru: контактное лицо-женщина
+        pl: Ansprechpartnerinnen
+      - de: der Kollege
+        ru: коллега
+        pl: Kollegen
+      - de: die Kollegin
+        ru: коллега-женщина
+        pl: Kolleginnen
+      - de: der Kunde
+        ru: клиент
+        pl: Kunden
+      - de: die Kundin
+        ru: клиентка
+        pl: Kundinnen
+      - de: die Rückfrage
+        ru: уточняющий вопрос
+        pl: Rückfragen
+      - de: der Beobachtungstag
+        ru: день наблюдения
+        pl: Beobachtungstage
+      - de: die Anerkennung
+        ru: признание квалификации
+        pl: Anerkennungen
+      - de: offen sprechen
+        ru: говорить открыто
+      - de: Fragen sammeln
+        ru: собирать вопросы
+      - de: zuerst zuhören
+        ru: сначала выслушать
+      - de: nach demselben Wort fragen
+        ru: спросить о том же слове
+      - de: allgemein
+        ru: общий, без личных деталей
+      - de: weiterhin
+        ru: по-прежнему
+tables:
+  rule:
+    title: "Относительное Dativ: dem, der, denen; mit dem Kollegen"
+    ru: Опора для решения
+    head:
+      - Beispiel
+      - Смысл и форма
+    ruCols:
+      - 1
+    rows:
+      - - Das ist der Mann, dem ich helfe.
+        - "helfen требует Dativ: dem/der/denen."
+      - - Das ist der Kollege, mit dem ich arbeite.
+        - Предлог остаётся перед относительным местоимением.
+      - - der Kollege → den Kollegen / dem Kollegen
+        - "Слабое существительное: после Nom. singular добавляется-n."
+tasks:
+  article:
+    kind: worksheet
+    part: b1-lesen-2
+    format: article
+    title: Von Kollegen lernen
+    text: >-
+      Dana erzählt im Lernkreis von einem Beobachtungstag in einer Praxis. Frau Klein ist die
+      Kollegin, von der sie viele Erklärungen bekommen hat. Dana beobachtete vor allem den
+      Ablauf und sammelte Fragen zur Sprache. Mit dem Kollegen am Empfang sprach sie über
+      höfliche Rückfragen. Während eines Gesprächs mit einem Patienten hörte sie zuerst zu und
+      fragte später in einer Pause nach. Der Tag bedeutete weder eine neue Stelle noch eine
+      abgeschlossene berufliche Anerkennung.
+
+
+      Mateo kennt ähnliche Situationen aus dem Restaurant Fördeblick. Herr Wagner ist der
+      Kollege, mit dem er neue Abläufe bespricht. Für einen Kunden, der nach einem Gericht
+      fragt, braucht Mateo manchmal eine genauere Erklärung aus der Küche. Er fragt lieber kurz
+      nach, bevor er etwas Falsches sagt. Auch er musste lernen, einen passenden Moment zu
+      wählen.
+
+
+      Für ihren gemeinsamen Treff ziehen die Freunde einen einfachen Schluss: Niemand muss
+      alles wissen. Wichtig ist, dass Gäste wissen, wen sie fragen können. Dana übernimmt
+      allgemeine Fragen zum Ablauf der Begrüßung. Mateo ist für das Essen zuständig, Elif für
+      die Fotos. Persönliche Geschichten aus der Praxis kommen nicht in das Album. Stattdessen
+      schreiben die Freunde neutrale Beispiele über Lernen und Fragenstellen. Die Aufgabenliste
+      wird gemeinsam geprüft, damit aus einer freundlichen Hilfe keine unbegrenzte
+      Zuständigkeit wird.
+    questions:
+      - prompt: Was bedeutet Danas Beobachtungstag?
+        options:
+          - Sprachliche Erfahrung, kein abgeschlossenes Anerkennungsverfahren
+          - Eine garantierte neue Stelle
+          - Das Ende aller Sprachfragen
+        answers:
+          - Sprachliche Erfahrung, kein abgeschlossenes Anerkennungsverfahren
+      - prompt: Von wem bekam Dana Erklärungen?
+        options:
+          - Nur aus dem Chat
+          - Von Frau Klein
+          - Von einem Museumsgast
+        answers:
+          - Von Frau Klein
+      - prompt: Wann fragte Dana bei einem laufenden Gespräch nach?
+        options:
+          - Immer sofort mitten im Gespräch
+          - Gar nicht mehr
+          - Später in einer Pause
+        answers:
+          - Später in einer Pause
+      - prompt: Warum fragt Mateo nach?
+        options:
+          - Damit er Gästen nichts Falsches erklärt.
+          - Weil er nie arbeitet.
+          - Um die Küche zu schließen.
+        answers:
+          - Damit er Gästen nichts Falsches erklärt.
+      - prompt: Welche Inhalte gehen ins Album?
+        options:
+          - Ein erfundener Arbeitsvertrag
+          - Neutrale Beispiele über Lernen
+          - Persönliche Patientendaten
+        answers:
+          - Neutrale Beispiele über Lernen
+  interview:
+    kind: worksheet
+    part: b1-hoeren-2
+    format: article
+    dialogue: interview
+    title: Zehn Aussagen zum Beobachtungstag
+    situation: Hören Sie das ganze Gespräch zweimal.
+    questions:
+      - prompt: Dana hat vor allem den Ablauf beobachtet.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+      - prompt: Sie stellte eigene Diagnosen.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Sie konnte in ruhigen Pausen nachfragen.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+      - prompt: Sie besprach Wörter nur mit einer App.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Sie fragte manchmal noch einmal nach demselben Wort.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+      - prompt: Echte Namen aus der Praxis wurden ins Album geschrieben.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Dana schreibt eigene neutrale Beispielsätze.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+      - prompt: Offene Sprachfragen werden am Freitag besprochen.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+      - prompt: Der Beobachtungstag garantiert eine neue Arbeitsstelle.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Die berufliche Anerkennung bleibt ein eigenes Thema.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+  self:
+    kind: card
+    part: b1-sprechen-1
+    title: Über Arbeit und Lernen ins Gespräch kommen
+    theme: Eigene Erfahrungen
+    word: Tätigkeit · Lernen · hilfreiche Person · Rückfrage
+    situation: Sprechen Sie über Arbeit, Ausbildung oder Lernen im Alltag. Sie müssen keine
+      privaten Details nennen. Fragen Sie nach einer Person, von der Ihr Gegenüber etwas
+      gelernt hat, und reagieren Sie auf die Antwort.
+  opinions:
+    kind: card
+    part: b1-sprechen-2
+    title: Wie lernt man bei der Arbeit?
+    theme: Fragen oder zuerst selbst versuchen?
+    word: Position wiedergeben · Erfahrung · Frage
+    situation: Geben Sie Ihre Karte mit eigenen Worten wieder. Vergleichen Sie die Position mit
+      einer eigenen Erfahrung.
+    roles:
+      - title: Person A · Nora
+        text: Ich frage lieber früh nach. Eine kurze Erklärung spart mir später viel Zeit. Natürlich
+          muss ich den richtigen Moment finden. Wenn eine Kollegin gerade mit einem Kunden
+          spricht, sammle ich meine Fragen und komme in einer Pause wieder.
+      - title: Person B · Jonas
+        text: Ich probiere neue Aufgaben gern zuerst selbst. So merke ich mir den Ablauf besser.
+          Trotzdem möchte ich wissen, an wen ich mich wenden kann. Wenn ein Fehler andere
+          Menschen betrifft, frage ich lieber vorher nach.
+steps:
+  - id: start
+    chapter: scene
+    title: Новое дело команды
+    beats:
+      - read: "Дана делится опытом дня наблюдения в практике, Матео — работой в Fördeblick. Команда
+          обсуждает людей, у которых можно учиться и с которыми удобно уточнять непонятное.
+          Дана продолжает признание квалификации: наблюдение не означает завершённое признание
+          или новое трудоустройство. Все нужные условия даны в сцене: знания географии,
+          настоящих цен или расписаний не требуются. Сначала попробуйте понять, какого
+          результата добиваются друзья, затем слушайте реплики. На новом уровне важно не только
+          найти число или знакомое слово, но и связать несколько сведений."
+        point: Описываем коллег, помощь и рабочий опыт
+        set:
+          view: dialogue
+          dialogue: scene
+          reveal: 4
+      - read: В начале B1 вы уже выбирали relative der/die/das/den по роли внутри придаточной части.
+          Теперь добавляем Dativ и сочетание с предлогом. Род берём у описываемого человека,
+          падеж — у глагола или предлога относительной части. Поэтому один и тот же Kollege
+          может появиться как der в главной фразе и dem после mit.
+        point: "Относительное Dativ: dem, der, denen; mit dem Kollegen"
+        set:
+          reveal: 8
+  - id: words
+    chapter: words
+    title: Слова, которые понадобятся
+    beats:
+      - read: "Рабочий опыт включает не только выполнение задач, но и возможность уточнить, попросить
+          помощь и выбрать подходящий момент. Для встречи друзьям понадобятся понятные
+          контактные лица, которым можно задать вопрос. Подбирайте нейтральные примеры из
+          обычной рабочей жизни: описание действия, уточняющую реплику и человека, который
+          может объяснить непонятное. Сначала найдите смысловую связь, затем проверьте
+          относительную форму и предлог."
+        point: Сначала используйте слово для решения; словарь остаётся справочником.
+        set:
+          view: words
+          words: useful
+          reveal: 6
+      - read: "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к
+          ситуации: какие слова обозначают человека, место, условие или уже выполненное
+          действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово
+          встретится снова в записке или разговоре, попробуйте восстановить его смысл до
+          подсказки."
+        point: Возвращайтесь к выражениям в сообщениях и новых действиях.
+        set:
+          reveal: 15
+  - id: grammar
+    chapter: grammar
+    title: "Относительное Dativ: dem, der, denen; mit dem Kollegen"
+    beats:
+      - read: Глагол относительной части определяет падеж. В примере я помогаю кому-то, поэтому нужен
+          Dativ dem. Род берётся у Mann, а не у ich. Для женщины была бы форма der, для
+          множества людей — denen. Сначала раскройте простую фразу *Ich helfe dem Mann*, затем
+          соедините её с описанием человека.
+        point: "helfen требует Dativ: dem/der/denen."
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: "Mit требует Dativ, поэтому в относительной части стоит mit dem. Сам предлог не исчезает,
+          даже если по-русски связь выражается иначе. Для Kollegin будет mit der, для людей во
+          множественном числе — mit denen. Сравните с вопросом *Mit wem arbeitest du?* из
+          предыдущей темы: это тот же смысловой предлог в другой конструкции."
+        point: Предлог остаётся перед относительным местоимением.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: "Kollege относится к группе слабых существительных. В единственном числе кроме Nominativ
+          появляется-n: den Kollegen, dem Kollegen. Так же устроен Kunde. Не путайте это с
+          множественным числом: *mit dem Kollegen* — с одним, *mit den Kollegen* — с
+          несколькими. Артикль помогает различить число, хотя само существительное выглядит
+          одинаково."
+        point: "Слабое существительное: после Nom. singular добавляется-n."
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+  - id: frames
+    chapter: grammar
+    title: Как устроена реплика
+    beats:
+      - read: "В главной части человек назван формой der Kollege. В относительной части перед dem
+          сохраняется mit, а arbeite стоит в конце. Не копируйте артикль главной части
+          механически: у каждого фрагмента своя роль. Для проверки временно уберите
+          относительную связь и произнесите простое *Ich arbeite mit dem Kollegen*."
+        point: "*Das ist der Kollege, mit dem ich arbeite.*"
+        set:
+          view: sentence
+          rows:
+            - de:
+                - Das ist der Kollege,
+                - mit dem
+                - ich
+                - arbeite.
+              ru: Это коллега, с которым я работаю.
+  - id: check
+    chapter: practice
+    title: Проверьте смысл до подсказки
+    beats:
+      - question: Почему der Kollege, но mit dem в продолжении?
+        read: В главной части der Kollege называет человека. В относительной части предлог mit требует
+          Dativ, поэтому dem. Род существительного остаётся мужским, меняется его функция
+          внутри другой части. Если сомневаетесь, сначала постройте обычную фразу с предлогом и
+          существительным, затем замените существительное относительным местоимением.
+        point: Падеж определяется внутри относительной части.
+        set:
+          view: table
+          table: rule
+      - question: «mit dem Kollegen» — обязательно несколько коллег?
+        read: Нет. Dem обозначает единственное число Dativ. Окончание-n здесь относится к слабому
+          существительному Kollege. Для множества было бы mit den Kollegen. Сравнивайте артикль
+          и число вместе, а не делайте вывод по одному окончанию. В игре это различие помогает
+          понять, о конкретном коллеге или о группе идёт речь.
+        point: "*dem Kollegen* — один; *den Kollegen* — несколько."
+        set:
+          view: table
+          table: rule
+  - id: exam-article
+    chapter: exam
+    title: Von Kollegen lernen
+    beats:
+      - read: Прочитайте, что каждый человек делал и какой вывод из этого допустим. Опыт наблюдения не
+          превращается в завершённое признание квалификации. Относительные предложения помогают
+          найти человека, но не заменяют все сведения о ситуации. Для пяти ответов найдите
+          подтверждение в тексте и не добавляйте обещаний работодателя, которых там нет.
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: article
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: article
+        set:
+          view: task
+          task: article
+          solved: true
+  - id: exam-interview
+    chapter: exam
+    title: Zehn Aussagen zum Beobachtungstag
+    beats:
+      - read: "В одном разговоре десять утверждений. Сначала просмотрите их, затем слушайте дважды.
+          Обратите внимание на границы: что Дана наблюдала, когда задавала вопросы и какие
+          записи делала. Здесь не требуется медицинское знание. Всё решение опирается на
+          языковые сведения вымышленного интервью; после своей попытки откройте транскрипт для
+          разбора."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: interview
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: interview
+        set:
+          view: task
+          task: interview
+          solved: true
+  - id: exam-self
+    chapter: exam
+    title: Über Arbeit und Lernen ins Gespräch kommen
+    beats:
+      - read: "Познакомьтесь через реальный или нейтральный пример обучения. Назовите занятие и
+          человека, у которого было полезно спросить. Затем задайте встречный вопрос и
+          отреагируйте на ответ. Не нужно рассказывать чувствительные подробности: можно
+          говорить об обычной рабочей задаче, курсе или увлечении. Важен взаимный разговор, а
+          не заранее выученный монолог."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: self
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: self
+        set:
+          view: task
+          task: self
+          solved: true
+  - id: exam-opinions
+    chapter: exam
+    title: Wie lernt man bei der Arbeit?
+    beats:
+      - read: Обе карточки допускают самостоятельность и вопросы, но ставят разные акценты. Передайте
+          позицию героя, затем приведите собственный пример. Спросите, как партнёр выбирает
+          момент для уточнения. Не приписывайте человеку крайность «никогда не спрашивает» или
+          «ничего не делает сам», если в карточке этого нет.
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: opinions
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: opinions
+        set:
+          view: task
+          task: opinions
+          solved: true
+exercises:
+  - type: choice
+    q: der Kollege, mit ___ ich arbeite
+    options:
+      - dem
+      - den
+      - der
+    answer: 0
+    why: Mit Dativ.
+  - type: choice
+    q: die Kollegin, von ___ ich lerne
+    options:
+      - der
+      - die
+      - den
+    answer: 0
+    why: Von Dativ женского рода.
+  - type: choice
+    q: die Menschen, mit ___ ich spreche
+    options:
+      - die
+      - denen
+      - den
+    answer: 1
+    why: Dativ множественного.
+  - type: choice
+    q: Ich spreche mit dem ___.
+    options:
+      - Kollegen
+      - Kollege
+      - Kollegin
+    answer: 0
+    why: Слабое существительное.
+  - type: choice
+    q: Ich sehe den ___.
+    options:
+      - Kunden
+      - Kunde
+      - Kundin
+    answer: 0
+    why: Kunde → Kunden в Akkusativ.
+  - type: choice
+    q: dem Kollegen — число?
+    options:
+      - Оба без контекста
+      - Единственное
+      - Только множественное
+    answer: 1
+    why: Dem показывает единственное.
+  - type: order
+    de: Das ist der Kollege, mit dem ich arbeite.
+    ru: Это коллега, с которым я работаю.
+  - type: order
+    de: Das sind Menschen, mit denen ich offen sprechen kann.
+    ru: Это люди, с которыми я могу открыто говорить.
+  - type: order
+    de: Ich brauche jemanden, dem ich Fragen stellen kann.
+    ru: Мне нужен кто-то, кому я могу задать вопросы.
+  - type: order
+    de: Ich spreche mit dem Kollegen.
+    ru: Я говорю с одним коллегой.
+  - type: order
+    de: Wir sammeln zuerst die Fragen.
+    ru: Сначала мы соберём вопросы.
+  - type: order
+    de: Der Beobachtungstag ist keine neue Arbeitsstelle.
+    ru: День наблюдения не является новой работой.
+case:
+  title: Eine hilfreiche Person ist kein unbegrenztes Versprechen
+  ru: Сверка дневника
+  intro: Уточните человека, число и границы вывода из рабочего опыта.
+  people: {}
+  steps:
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Frau Klein ist die Kollegin, von der Dana viel gelernt hat.
+          ru: Фрау Кляйн — коллега, у которой Дана многому научилась.
+      question: На кого указывает der после von?
+      options:
+        - На Frau Klein
+        - На Матео
+        - На практику как место
+      answer: 0
+      right: Род берётся у Kollegin, падеж у von.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Dana spricht mit dem Kollegen.
+          ru: Дана говорит с одним коллегой.
+      question: Сколько коллег названо в этой форме?
+      options:
+        - Обязательно несколько
+        - Ни одного
+        - Один
+      answer: 2
+      right: Dem — единственное, n относится к слабому склонению.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Es war ein Beobachtungstag. Die berufliche Anerkennung bleibt ein eigenes Thema.
+          ru: Это был день наблюдения. Признание квалификации остаётся отдельным вопросом.
+      question: Можно записать гарантированную новую работу?
+      options:
+        - Только если не указывать дату
+        - Нет
+        - Да
+      answer: 1
+      right: Такого обещания источник не содержит.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+  ending: Относительные формы помогли определить людей, а отдельные факты сохранили реальные
+    границы рассказа.
+adventure:
+  kind: sequence
+  title: Найдите человека и задайте точный вопрос
+  intro: "Дана делится опытом дня наблюдения в практике, Матео — работой в Fördeblick. Команда
+    обсуждает людей, у которых можно учиться и с которыми удобно уточнять непонятное. Дана
+    продолжает признание квалификации: наблюдение не означает завершённое признание или новое
+    трудоустройство."
+  ending: Роли помощников описаны понятными относительными фразами. Опыт наблюдения не превращён
+    в обещание трудоустройства, а для альбома выбраны нейтральные примеры общения.
+  challenges:
+    - id: relative
+      kind: match
+      title: Сохраните предлог и род
+      intro: Выберите относительную форму после mit.
+      slots:
+        - id: m
+          label: der Kollege, mit …
+          answer: dem
+        - id: f
+          label: die Kollegin, mit …
+          answer: der
+        - id: p
+          label: die Menschen, mit …
+          answer: denen
+      options:
+        - id: dem
+          label: dem
+        - id: der
+          label: der
+        - id: denen
+          label: denen
+      success: Предлог mit требует Dativ.
+      wrong: Мужской/средний dem, женский der, множественное denen.
+    - id: colleague
+      kind: order
+      title: Назовите связь с коллегой
+      intro: Сохраните mit и конец придаточного.
+      label: Реплика для команды
+      tokens:
+        - Das ist der Kollege,
+        - mit dem
+        - ich
+        - arbeite.
+      success: Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.
+      wrong: "Проверьте положение глагола и конец предложения: используйте все фрагменты."
+    - id: status
+      kind: select
+      title: Как записать опыт Даны?
+      intro: Прочитайте статью целиком.
+      mode: reading
+      clue:
+        task: article
+      options:
+        - id: o0
+          label: День наблюдения и языковой опыт
+        - id: o1
+          label: Завершённое признание квалификации
+        - id: o2
+          label: Гарантированная новая работа
+      answer:
+        - o0
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."
+    - id: noun
+      kind: note
+      title: Уточните форму одного коллеги
+      intro: "Восстановите существительное: Ich spreche mit dem … . Это один коллега."
+      fields:
+        - label: mit dem …
+          answers:
+            - Kollegen
+      success: Слабое существительное получает-n и в единственном Dativ.
+      wrong: Нужна форма Kollegen, а не Kollege.
+    - id: question
+      kind: negotiation
+      title: Выберите подходящий момент
+      intro: Вежливо уточните язык, не прерывая другой разговор.
+      start: a
+      nodes:
+        - id: a
+          text: "Frau Klein: Ich bin gerade in einem Gespräch. Können wir deine Sprachfragen danach
+            besprechen?"
+          choices:
+            - label: Ja, ich sammle die Fragen und komme in der Pause wieder.
+              next: b
+              feedback: Учтён текущий разговор.
+        - id: b
+          text: "Frau Klein: Jetzt habe ich Zeit. Welche Form möchtest du klären?"
+          choices:
+            - label: Warum heißt es mit dem Kollegen, aber der Kollege?
+              next: end
+              feedback: Поставлен конкретный языковой вопрос.
+        - id: end
+          text: "Frau Klein: Kollege bekommt außerhalb des Nominativs Singular ein n. Wir üben zwei
+            Beispiele."
+          terminal: true
+          choices: []
+      success: Вопрос конкретный, момент согласован.
+      wrong: Уточните языковую задачу в подходящий момент.

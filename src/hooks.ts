@@ -25,8 +25,16 @@ export function useRoute() {
   return hash.replace(/^#\/?/, "").split("/").filter(Boolean);
 }
 
-export const scrollToSection = (id: string) =>
-  document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+export const scrollToSection = (id: string) => {
+  const target = document.getElementById(id);
+  if (!target) return;
+  // Начало главы попадает на линию активации сцены, чтобы переход не пропускал
+  // первый короткий фрагмент под закреплённой сценой на телефоне.
+  if (id.startsWith("chapter-")) {
+    const anchor = window.matchMedia("(max-width: 860px)").matches ? 0.74 : 0.55;
+    window.scrollTo({ top: window.scrollY + target.getBoundingClientRect().top - window.innerHeight * anchor + 24, behavior: "smooth" });
+  } else target.scrollIntoView({ behavior: "smooth", block: "start" });
+};
 
 /**
  * Текущий фрагмент по прокрутке: тот, чей верх последним пересёк линию
@@ -129,8 +137,10 @@ function readStore<T>(key: string, fallback: T): T {
 function writeStore(key: string, value: unknown) {
   try {
     window.localStorage.setItem(key, JSON.stringify(value));
+    return true;
   } catch {
     // приватное окно или запрет на хранение — прогресс просто не сохранится
+    return false;
   }
 }
 
@@ -141,8 +151,9 @@ function createStore<T>(key: string, fallback: T) {
     get: () => value,
     set(next: T) {
       value = next;
-      writeStore(key, next);
+      const saved = writeStore(key, next);
       listeners.forEach((listener) => listener());
+      return saved;
     },
     subscribe(listener: () => void) {
       listeners.add(listener);
@@ -189,6 +200,36 @@ export function useCaseProgress(topic: string) {
 }
 
 const translationStore = createStore<boolean>("sd-translation", true);
+
+export type AdventureSave = {
+  step: number;
+  answers: Record<string, string>;
+  won: boolean;
+  assisted: boolean;
+  seed: number;
+};
+
+const adventureStore = createStore<Record<string, AdventureSave>>("sd-adventure-v1", {});
+
+export function useAdventureProgress() {
+  const all = useSyncExternalStore(adventureStore.subscribe, adventureStore.get);
+  const episode = (id: string): AdventureSave => {
+    const raw = all?.[id];
+    return {
+      step: Number.isInteger(raw?.step) && raw.step >= 0 ? raw.step : 0,
+      answers: raw?.answers && typeof raw.answers === "object" ? Object.fromEntries(Object.entries(raw.answers).filter(([, v]) => typeof v === "string")) : {},
+      won: raw?.won === true,
+      assisted: raw?.assisted === true,
+      seed: Number.isInteger(raw?.seed) && raw.seed >= 0 ? raw.seed : 1,
+    };
+  };
+  return {
+    episode,
+    update(id: string, patch: Partial<AdventureSave>) {
+      return adventureStore.set({ ...adventureStore.get(), [id]: { ...episode(id), ...patch } });
+    },
+  };
+}
 
 /** Показывать ли перевод реплик на сцене. */
 export function useTranslation() {

@@ -1,0 +1,654 @@
+id: a2-arbeit
+order: 9
+title: Mateo sagt, dass er am Sonntag frei hat.
+ru: Работа и сообщения
+lede: Матео продолжает работать в Fördeblick. Перед новой встречей команды он пересказывает
+  сообщение руководителя и объясняет, почему вчера не смог помочь. Нужно отделить чужое
+  сообщение, личное желание и реально выполненную задачу.
+goals:
+  - Передать содержание сообщения с dass
+  - Распознать мог, должен был и хотел
+  - Понять особое время из рабочего сообщения
+  - Рассказать о профессии и заполнить сведения об опыте
+grammar:
+  - dass; konnte, musste, wollte
+exam:
+  - a2-lesen-2
+  - a2-hoeren-1
+  - a2-schreiben-1
+  - a2-sprechen-1
+dialogues:
+  scene:
+    title: Mateo sagt, dass er am Sonntag frei hat.
+    ru: Работа и сообщения
+    place: Sprachschule Förde, Kiel · перед занятием A2 · вымышленная учебная ситуация
+    people:
+      D:
+        name: Dana
+        voice: Anna
+      M:
+        name: Mateo
+        voice: Reed
+      E:
+        name: Elif
+        voice: Flo
+      H:
+        name: Hauke
+        voice: Rocko
+    lines:
+      - D: Mateo, kannst du am Sonntag zum Club kommen?
+        ru: Матео, сможешь в воскресенье прийти в клуб?
+      - M: Ja. Herr Wagner sagt, dass ich am Sonntag frei habe.
+        ru: Да. Господин Вагнер говорит, что в воскресенье у меня выходной.
+      - D: Und warum warst du gestern nicht da?
+        ru: А почему тебя вчера не было?
+      - M: Ich wollte kommen, aber ich musste arbeiten.
+        ru: Я хотел прийти, но должен был работать.
+      - D: Konntest du die Liste trotzdem lesen?
+        ru: Ты всё же смог прочитать список?
+      - M: Ja. Ich habe gelesen, dass wir um sechzehn Uhr im Club sein sollen.
+        ru: Да. Я прочитал, что мы должны быть в клубе в шестнадцать.
+      - D: Für Sonntag stimmt das. Am Freitag hast du aber ein Treffen im Restaurant.
+        ru: Для воскресенья верно. Но в пятницу у тебя встреча в ресторане.
+      - M: Genau. Herr Wagner schreibt, dass ich am Freitag schon um sechzehn Uhr kommen soll.
+        ru: Именно. Господин Вагнер пишет, чтобы я в пятницу пришёл уже в шестнадцать.
+words:
+  useful:
+    title: Wörter für die Aufgabe
+    ru: Слова для действия
+    items:
+      - de: sagen
+        ru: говорить
+      - de: mitteilen
+        ru: сообщать
+      - de: die Mitteilung
+        ru: сообщение
+        pl: Mitteilungen
+      - de: die Schicht
+        ru: смена
+        pl: Schichten
+      - de: der Dienstplan
+        ru: рабочее расписание
+        pl: Dienstpläne
+      - de: die Besprechung
+        ru: рабочее обсуждение
+        pl: Besprechungen
+      - de: der Leiter
+        ru: руководитель
+        pl: Leiter
+      - de: der Mitarbeiter
+        ru: сотрудник
+        pl: Mitarbeiter
+      - de: trotzdem
+        ru: всё же
+      - de: schon
+        ru: уже, раньше ожидаемого
+      - de: konnte
+        ru: мог
+      - de: musste
+        ru: должен был
+tables:
+  rule:
+    title: dass; konnte, musste, wollte
+    ru: Опора для решения
+    head:
+      - Beispiel
+      - Смысл и форма
+    ruCols:
+      - 1
+    rows:
+      - - Er sagt, dass er am Sonntag frei hat.
+        - dass передаёт содержание; глагол в конце.
+      - - Ich wollte kommen, aber ich musste arbeiten.
+        - wollte — хотел; musste — должен был.
+      - - Konntest du die Liste lesen?
+        - konnte — мог; konntest — мог ты.
+      - - Er schreibt, dass ich früher kommen soll.
+        - sollen передаёт поручение или ожидаемое действие.
+tasks:
+  work:
+    kind: message
+    part: a2-lesen-2
+    title: Nachricht von Herrn Wagner
+    from: Herr Wagner
+    to: Mateo Fernández
+    text: Hallo Mateo, am Freitag beginnt deine Schicht wie immer um 17 Uhr. Komm bitte schon um 16
+      Uhr zur Besprechung. Am Sonntag hast du frei. Die Liste für das Restaurant habe ich schon
+      gelesen. Die Einkaufsliste für den Club ist eine andere Liste.
+  phone:
+    kind: worksheet
+    part: a2-hoeren-1
+    format: notes
+    title: Telefonnotiz aus dem Restaurant
+    voice: Eddy
+    text: Guten Tag, Herr Fernández. Hier ist Wagner vom Restaurant Fördeblick. Unsere Besprechung
+      ist am Freitag um sechzehn Uhr im Restaurant. Ihre Schicht beginnt um siebzehn Uhr.
+      Bringen Sie bitte die Liste mit. Am Sonntag haben Sie frei.
+    questions:
+      - prompt: Besprechung am
+        answers:
+          - Freitag
+          - am Freitag
+      - prompt: Besprechung um
+        answers:
+          - 16:00
+          - 16 Uhr
+          - sechzehn Uhr
+      - prompt: Ort
+        answers:
+          - Restaurant
+          - im Restaurant
+          - Fördeblick
+      - prompt: Schichtbeginn
+        answers:
+          - 17:00
+          - 17 Uhr
+          - siebzehn Uhr
+      - prompt: Mitbringen
+        answers:
+          - Liste
+          - die Liste
+  form:
+    kind: form
+    part: a2-schreiben-1
+    title: Berufskurs · Anmeldung
+    situation: Mateo Fernández ist 28 Jahre alt. Er kommt aus Argentinien und wohnt in Kiel. Er ist
+      Koch. Er spricht Spanisch und Englisch. Ergänzen Sie die fünf fehlenden Angaben.
+    fields:
+      - label: Familienname
+        value: Fernández
+        given: true
+      - label: Vorname
+        value: Mateo
+      - label: Alter
+        value: "28"
+      - label: Herkunftsland
+        value: Argentinien
+      - label: Wohnort
+        value: Kiel
+      - label: Beruf
+        value: Koch
+      - label: Sprachen
+        value: Spanisch, Englisch
+        given: true
+  self:
+    kind: keywords
+    part: a2-sprechen-1
+    title: Beruf und Erfahrung
+    words:
+      - Beruf
+      - Früher
+      - Jetzt
+      - Gestern
+      - Pläne
+    sample:
+      - Ich bin Koch und arbeite in Kiel.
+      - Früher habe ich in Buenos Aires gearbeitet.
+      - Gestern musste ich arbeiten.
+      - Am Sonntag habe ich frei.
+steps:
+  - id: start
+    chapter: scene
+    title: Новое дело команды
+    beats:
+      - read: "Матео продолжает работать в Fördeblick. Перед новой встречей команды он пересказывает
+          сообщение руководителя и объясняет, почему вчера не смог помочь. Нужно отделить чужое
+          сообщение, личное желание и реально выполненную задачу. Все нужные условия даны в
+          сцене: знания географии, настоящих цен или расписаний не требуются. Сначала
+          попробуйте понять, какого результата добиваются друзья, затем слушайте реплики. На
+          новом уровне важно не только найти число или знакомое слово, но и связать несколько
+          сведений."
+        point: Работа и сообщения
+        set:
+          view: dialogue
+          dialogue: scene
+          reveal: 4
+      - read: "В разговоре два события с одинаковым временем: пятница в ресторане и воскресенье в
+          клубе. Совпадение числа не делает события одинаковыми. *Dass* вводит содержание того,
+          что сказано или написано. Формы *wollte* и *musste* объясняют прошлую ситуацию:
+          желание прийти не означает, что Матео действительно пришёл."
+        point: dass; konnte, musste, wollte
+        set:
+          reveal: 8
+  - id: words
+    chapter: words
+    title: Слова, которые понадобятся
+    beats:
+      - read: "*Sagen*, *schreiben*, *lesen* помогают назвать источник сообщения. После них можно
+          сообщить содержание с *dass*. *Konnte*, *musste*, *wollte* относятся к прошлому. Они
+          не заменяют друг друга по смыслу: возможность, необходимость и желание — разные
+          сведения для отчёта команды."
+        point: Сначала используйте слово для решения; словарь остаётся справочником.
+        set:
+          view: words
+          words: useful
+          reveal: 6
+      - read: "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к
+          ситуации: какие слова обозначают человека, место, условие или уже выполненное
+          действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово
+          встретится снова в записке или разговоре, попробуйте восстановить его смысл до
+          подсказки."
+        point: Возвращайтесь к выражениям в сообщениях и новых действиях.
+        set:
+          reveal: 12
+  - id: grammar
+    chapter: grammar
+    title: dass; konnte, musste, wollte
+    beats:
+      - read: "В главной части назван источник: *Er sagt*. После *dass* сообщается содержание: *er am
+          Sonntag frei hat*. Личная форма *hat* стоит в конце придаточного. Это не причина и не
+          условие: не подменяйте *dass* знакомыми *weil* или *wenn*. В отчёте полезно
+          сохранить, кто именно сообщил сведения."
+        point: dass передаёт содержание; глагол в конце.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+            - 3
+      - read: "У этих частых модальных глаголов в прошлом используется короткая форма. Инфинитив
+          остаётся в конце своей части: *wollte kommen*, *musste arbeiten*. Желание не равно
+          выполнению. Из фразы нельзя сделать вывод, что человек успел и прийти, и отработать:
+          в контексте он объясняет отсутствие."
+        point: wollte — хотел; musste — должен был.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+            - 3
+      - read: "Формы *konnte*, *musste*, *wollte* не имеют умлаута, в отличие от инфинитивов *können* и
+          *müssen*. У *du* появляется окончание: *konntest*, *musstest*, *wolltest*. В вопросе
+          да/нет личная форма стоит первой, инфинитив в конце. Сначала определите, о какой
+          возможности спрашивают, затем проверяйте форму."
+        point: konnte — мог; konntest — мог ты.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+            - 3
+      - read: "В сообщении *soll* передаёт, что требуется по просьбе другого человека. Здесь это
+          рабочая встреча: руководитель просит прийти раньше. Для первого шага воспринимаем
+          *soll* как частую модель пересказа поручения. Более подробно её разберём в теме о
+          записях и указаниях; не трактуем любое такое сообщение как собственный совет
+          говорящего."
+        point: sollen передаёт поручение или ожидаемое действие.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+            - 3
+  - id: frames
+    chapter: grammar
+    title: Как устроена реплика
+    beats:
+      - read: "В прямой фразе было бы *Ich habe am Sonntag frei*. При пересказе после *dass* личная
+          форма *habe* уходит в конец. Если меняется говорящий, меняется местоимение: *Mateo
+          sagt, dass er …*. Сохраняйте источник и человека, о котором говорится, иначе
+          грамматически верный пересказ может приписать выходной другому участнику."
+        point: "*Mateo sagt, dass er am Sonntag frei hat.*"
+        set:
+          view: sentence
+          rows:
+            - de:
+                - Mateo
+                - sagt,
+                - dass er am Sonntag frei hat.
+                - ""
+              ru: Матео говорит, что в воскресенье у него выходной.
+  - id: check
+    chapter: practice
+    title: Проверьте смысл до подсказки
+    beats:
+      - question: Ich wollte kommen доказывает, что человек пришёл?
+        read: Нет. Это сообщение о желании в прошлом. Для подтверждения прихода нужно другое действие
+          или факт, например *Ich bin gekommen*. В нашем разговоре следующая часть *aber ich
+          musste arbeiten* как раз объясняет отсутствие. Не превращайте намерение в завершённое
+          дело при заполнении отчёта.
+        point: Желание, возможность и выполненное действие — разные факты.
+        set:
+          view: table
+          table: rule
+      - question: После dass форма habe остаётся на втором месте?
+        read: "Нет: *dass ich am Sonntag frei habe*. Знакомая рамка главного предложения здесь
+          меняется. После союза начинается придаточное, и личная форма завершает его. В начале
+          пересказа можно назвать источник: кто говорит, пишет или что вы прочитали."
+        point: "*dass ich … frei habe* — глагол в конце."
+        set:
+          view: table
+          table: rule
+  - id: exam-work
+    chapter: exam
+    title: Nachricht von Herrn Wagner
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: work
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: work
+        set:
+          view: task
+          task: work
+          solved: true
+  - id: exam-phone
+    chapter: exam
+    title: Telefonnotiz aus dem Restaurant
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: phone
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: phone
+        set:
+          view: task
+          task: phone
+          solved: true
+  - id: exam-form
+    chapter: exam
+    title: Berufskurs · Anmeldung
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: form
+          reveal: 0
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: form
+          reveal: 0
+        set:
+          view: task
+          task: form
+          solved: true
+  - id: exam-self
+    chapter: exam
+    title: Beruf und Erfahrung
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: self
+          reveal: 0
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: self
+          reveal: 0
+        set:
+          view: task
+          task: self
+          solved: true
+exercises:
+  - type: choice
+    q: Mateo sagt, ___ er frei hat.
+    options:
+      - dass
+      - weil
+      - wenn
+    answer: 0
+    why: Содержание сообщения.
+  - type: choice
+    q: Ich glaube, dass er am Sonntag Zeit ___.
+    options:
+      - hat
+      - haben
+      - habe
+    answer: 0
+    why: Личная форма в конце.
+  - type: choice
+    q: Gestern ___ ich arbeiten.
+    options:
+      - musste
+      - müsste
+      - muss
+    answer: 0
+    why: Прошлая необходимость.
+  - type: choice
+    q: Ich ___ kommen, aber ich hatte keine Zeit.
+    options:
+      - wollte
+      - wollen
+      - willst
+    answer: 0
+    why: Прошлое желание.
+  - type: choice
+    q: ___ du die Liste lesen?
+    options:
+      - Konntest
+      - Konntet
+      - Konnten
+    answer: 0
+    why: Вопрос к du.
+  - type: choice
+    q: "Eine Besprechung um 16 Uhr und Schichtbeginn um 17 Uhr sind:"
+    options:
+      - zwei Zeiten
+      - dieselbe Zeit
+      - kein Termin
+    answer: 0
+    why: Разные события.
+  - type: order
+    ru: Он говорит, что в воскресенье у него выходной.
+    de: Er sagt, dass er am Sonntag frei hat.
+  - type: order
+    ru: Я хотел прийти, но должен был работать.
+    de: Ich wollte kommen, aber ich musste arbeiten.
+  - type: order
+    ru: Ты смог прочитать список?
+    de: Konntest du die Liste lesen?
+  - type: order
+    ru: Рабочая встреча начинается в шестнадцать.
+    de: Die Besprechung beginnt um sechzehn Uhr.
+  - type: order
+    ru: Моя смена начинается в семнадцать.
+    de: Meine Schicht beginnt um siebzehn Uhr.
+  - type: order
+    ru: Я думаю, что список готов.
+    de: Ich glaube, dass die Liste fertig ist.
+case:
+  title: Zwei Listen, zwei Termine
+  ru: Сверка дневника
+  intro: В отчёте клуба рабочую встречу приняли за общее собрание, а намерение — за результат.
+    Разделите сведения по источникам.
+  people: {}
+  steps:
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Die Schicht beginnt um 17 Uhr. Die Besprechung ist um 16 Uhr.
+          ru: Смена начинается в 17:00. Встреча в 16:00.
+      question: Когда нужно быть на рабочей встрече?
+      options:
+        - 16:00
+        - 17:00
+        - В воскресенье
+      answer: 0
+      right: Начало смены не заменяет особое время встречи.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Ich wollte helfen, aber ich musste arbeiten.
+          ru: Я хотел помочь, но должен был работать.
+      question: Что подтверждено?
+      options:
+        - Он помог
+        - Он хотел помочь, но был занят работой
+        - Он не хотел помогать
+      answer: 1
+      right: Желание не означает выполненное действие.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Wagner schreibt, dass Mateo am Sonntag frei hat.
+          ru: Вагнер пишет, что у Матео выходной в воскресенье.
+      question: Чей выходной назван?
+      options:
+        - Даны
+        - Вагнера
+        - Матео
+      answer: 2
+      right: В пересказе сохранены источник и человек, о котором сообщают.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+  ending: Запись исправлена по источникам. В следующей главе команда воспользуется
+    подтверждёнными сведениями для нового решения.
+adventure:
+  kind: sequence
+  title: Сверьте поручения с расписанием
+  intro: Матео продолжает работать в Fördeblick. Перед новой встречей команды он пересказывает
+    сообщение руководителя и объясняет, почему вчера не смог помочь. Нужно отделить чужое
+    сообщение, личное желание и реально выполненную задачу.
+  ending: Рабочая встреча и клубный план разделены; желание и обязанность не выданы за
+    выполненное действие. Дальше понадобится пересказать указание из практики и изменить
+    запись.
+  challenges:
+    - id: source
+      kind: select
+      title: Кто сообщил о выходном?
+      intro: Опирайтесь на рабочее сообщение.
+      mode: reading
+      clue:
+        task: work
+      options:
+        - id: o0
+          label: Herr Wagner
+        - id: o1
+          label: Die Gäste
+        - id: o2
+          label: Der Hafenmeister
+      answer:
+        - o0
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."
+    - id: meeting-time
+      kind: note
+      title: Запишите особое время
+      intro: В записи названы встреча и начало обычной смены. Заполните оба поля, не меняя их
+        местами.
+      clue:
+        task: phone
+      fields:
+        - label: Besprechung
+          answers:
+            - 16:00
+            - 16 Uhr
+            - sechzehn Uhr
+        - label: Schichtbeginn
+          answers:
+            - 17:00
+            - 17 Uhr
+            - siebzehn Uhr
+      success: Встреча в 16:00, смена в 17:00. Это разные события.
+      wrong: Сначала встреча в шестнадцать, затем смена в семнадцать.
+    - id: dass
+      kind: order
+      title: Передайте выходной Матео
+      intro: "Начните: «Матео говорит, что…»."
+      label: Реплика для команды
+      tokens:
+        - Mateo sagt,
+        - dass
+        - er am Sonntag frei
+        - hat.
+      success: Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.
+      wrong: "Проверьте положение глагола и конец предложения: используйте все фрагменты."
+    - id: modals
+      kind: match
+      title: Не перепутайте желание и обязанность
+      intro: Для отчёта различите смысл трёх форм.
+      mode: reading
+      slots:
+        - id: want
+          label: Ich wollte kommen.
+          answer: want
+        - id: must
+          label: Ich musste arbeiten.
+          answer: must
+        - id: can
+          label: Ich konnte die Liste lesen.
+          answer: can
+      options:
+        - id: want
+          label: Я хотел прийти.
+        - id: must
+          label: Я должен был работать.
+        - id: can
+          label: Я мог прочитать список.
+      success: Три разных смысла сохранены.
+      wrong: "*Wollte* — желание, *musste* — необходимость, *konnte* — возможность."
+    - id: separate
+      kind: select
+      title: Не объединяйте два списка
+      intro: Что руководитель уточнил о списках?
+      mode: reading
+      clue:
+        task: work
+      options:
+        - id: o0
+          label: Die Listen sind verschieden.
+        - id: o1
+          label: Die Listen sind identisch.
+        - id: o2
+          label: Es gibt keine Liste.
+      answer:
+        - o0
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."

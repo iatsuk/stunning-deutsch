@@ -1,0 +1,1954 @@
+{
+ "id": "b1-anfragen",
+ "level": "b1",
+ "order": 4,
+ "title": "Wir haben vor, ein Treffen zu organisieren.",
+ "ru": "Запрашиваем помещение и уточняем условия",
+ "lede": "Хауке готовит запрос на помещение для осенней встречи. Предлагаемый срок — воскресенье 18 октября, 15–18 часов, 18 гостей. Это учебный календарь. Команда должна назвать условия и получить ответ, прежде чем сообщать гостям окончательный адрес.",
+ "goals": [
+  "Связать намерение с инфинитивом zu",
+  "Составить запрос с четырьмя обязательными пунктами",
+  "Отделить просьбу от подтверждения",
+  "Согласовать содержание письма"
+ ],
+ "grammar": [
+  "Infinitiv mit zu: vorhaben, versuchen, Zeit haben"
+ ],
+ "exam": [
+  "b1-schreiben-1",
+  "b1-lesen-2",
+  "b1-sprachbausteine-2",
+  "b1-sprechen-3"
+ ],
+ "chapters": [
+  {
+   "id": "scene",
+   "title": "Ситуация"
+  },
+  {
+   "id": "words",
+   "title": "Слова"
+  },
+  {
+   "id": "grammar",
+   "title": "Грамматика"
+  },
+  {
+   "id": "practice",
+   "title": "Проверка"
+  },
+  {
+   "id": "exam",
+   "title": "На экзамене"
+  }
+ ],
+ "dialogues": {
+  "scene": {
+   "title": "Wir haben vor, ein Treffen zu organisieren.",
+   "ru": "Запрашиваем помещение и уточняем условия",
+   "place": "Kiel · команда FördeTreff · вымышленная учебная ситуация",
+   "people": {
+    "D": {
+     "name": "Dana",
+     "voice": "Anna"
+    },
+    "M": {
+     "name": "Mateo",
+     "voice": "Reed"
+    },
+    "E": {
+     "name": "Elif",
+     "voice": "Flo"
+    },
+    "H": {
+     "name": "Hauke",
+     "voice": "Rocko"
+    }
+   },
+   "lines": [
+    {
+     "who": "H",
+     "de": "Wir haben vor, im Oktober ein Treffen zu organisieren.",
+     "ru": "Мы намерены организовать встречу в октябре.",
+     "audio": "audio/6638d752fc9c.m4a"
+    },
+    {
+     "who": "E",
+     "de": "Ich habe Zeit, das Programm vorzubereiten.",
+     "ru": "У меня есть время подготовить программу.",
+     "audio": "audio/16ea8c680520.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Wir müssen zuerst nach einem Raum fragen.",
+     "ru": "Сначала нам нужно спросить о помещении.",
+     "audio": "audio/2c29406b4f94.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Ich versuche, heute eine klare Anfrage zu schreiben.",
+     "ru": "Я попробую сегодня написать понятный запрос.",
+     "audio": "audio/7aed3b572f5f.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Denk bitte an die Kosten und die kleine Küche.",
+     "ru": "Подумай, пожалуйста, о стоимости и маленькой кухне.",
+     "audio": "audio/0ce275e19d00.m4a"
+    },
+    {
+     "who": "E",
+     "de": "Es ist wichtig, die Zahl der Gäste zu nennen.",
+     "ru": "Важно назвать число гостей.",
+     "audio": "audio/efb2908a7c69.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Vergiss nicht, um eine Bestätigung zu bitten.",
+     "ru": "Не забудь попросить подтверждение.",
+     "audio": "audio/1f1445e27789.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Gut. Ich schicke die Anfrage ab. Eine Zusage haben wir noch nicht.",
+     "ru": "Хорошо. Отправлю запрос. Согласия у нас пока нет.",
+     "audio": "audio/3ef3a3cdc020.m4a"
+    }
+   ]
+  }
+ },
+ "words": {
+  "useful": {
+   "title": "Wörter für die Aufgabe",
+   "ru": "Слова для действия",
+   "items": [
+    {
+     "de": "die Anfrage",
+     "ru": "запрос",
+     "gender": "f",
+     "plural": "Anfragen",
+     "audio": "audio/d34ba9fec90b.m4a"
+    },
+    {
+     "de": "die Zusage",
+     "ru": "согласие",
+     "gender": "f",
+     "plural": "Zusagen",
+     "audio": "audio/0cc33e541221.m4a"
+    },
+    {
+     "de": "die Ausstattung",
+     "ru": "оснащение",
+     "gender": "f",
+     "plural": null,
+     "noPlural": true,
+     "audio": "audio/b1a503ff41ae.m4a"
+    },
+    {
+     "de": "die Veranstaltung",
+     "ru": "мероприятие",
+     "gender": "f",
+     "plural": "Veranstaltungen",
+     "audio": "audio/be26a22da82a.m4a"
+    },
+    {
+     "de": "die Bestätigung",
+     "ru": "подтверждение",
+     "gender": "f",
+     "plural": "Bestätigungen",
+     "audio": "audio/da1596cb22b8.m4a"
+    },
+    {
+     "de": "die Küche",
+     "ru": "кухня",
+     "gender": "f",
+     "plural": "Küchen",
+     "audio": "audio/55c93c8a5fd2.m4a"
+    },
+    {
+     "de": "die Miete",
+     "ru": "арендная плата",
+     "gender": "f",
+     "plural": "Mieten",
+     "audio": "audio/5991f37737ac.m4a"
+    },
+    {
+     "de": "der Kontakt",
+     "ru": "контакт",
+     "gender": "m",
+     "plural": "Kontakte",
+     "audio": "audio/697a9eced3c1.m4a"
+    },
+    {
+     "de": "der Gast",
+     "ru": "гость",
+     "gender": "m",
+     "plural": "Gäste",
+     "audio": "audio/78ce0f055058.m4a"
+    },
+    {
+     "de": "vorhaben",
+     "ru": "намереваться",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/329f19ac8a6e.m4a"
+    },
+    {
+     "de": "versuchen",
+     "ru": "пытаться",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/3fc377af22b7.m4a"
+    },
+    {
+     "de": "vorbereiten",
+     "ru": "подготавливать",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/c5712238e047.m4a"
+    },
+    {
+     "de": "abschicken",
+     "ru": "отправлять",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/de9cea8743bf.m4a"
+    },
+    {
+     "de": "um eine Antwort bitten",
+     "ru": "просить об ответе",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/7d200af2a7b6.m4a"
+    },
+    {
+     "de": "Zahl nennen",
+     "ru": "назвать количество",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/ca9143659c86.m4a"
+    }
+   ]
+  }
+ },
+ "tables": {
+  "rule": {
+   "title": "Infinitiv mit zu: vorhaben, versuchen, Zeit haben",
+   "ru": "Опора для решения",
+   "head": [
+    "Beispiel",
+    "Смысл и форма"
+   ],
+   "rows": [
+    [
+     "Ich versuche, eine Anfrage zu schreiben.",
+     "После versuchen: zu + Infinitiv."
+    ],
+    [
+     "Ich habe Zeit, das Programm vorzubereiten.",
+     "Отделяемая приставка: vor + zu + bereiten."
+    ],
+    [
+     "Wir müssen zuerst nach einem Raum fragen.",
+     "После модального müssen — Infinitiv без zu."
+    ]
+   ],
+   "ruCols": [
+    1
+   ]
+  }
+ },
+ "tasks": {
+  "request": {
+   "kind": "message",
+   "part": "b1-schreiben-1",
+   "title": "Eine vollständige Anfrage",
+   "text": "Sie organisieren einen nichtkommerziellen Nachbarschaftstreff. Schreiben Sie an Frau Petersen. Gewünscht: Sonntag, 18. Oktober, 15–18 Uhr, 18 Gäste. Küche und Mietpreis sind noch unklar.",
+   "points": [
+    "Grund der Anfrage und Art der Veranstaltung",
+    "Gewünschter Termin und Zahl der Gäste",
+    "Zwei Fragen zur Ausstattung und zu den Kosten",
+    "Bitte um Bestätigung und Kontakt"
+   ],
+   "situation": "Behandeln Sie alle vier Punkte. Schreiben Sie einen zusammenhängenden Brief mit Anrede und Gruß. Etwa 100–120 Wörter sind hier ein Übungsziel, keine feste telc-Mindestwortzahl.",
+   "sample": [
+    {
+     "de": "Sehr geehrte Frau Petersen, wir haben vor, einen kleinen Nachbarschaftstreff zu organisieren. Dabei möchten wir Fotos aus der Region zeigen und miteinander Deutsch sprechen. Wir suchen einen Raum für Sonntag, den 18. Oktober, von 15 bis 18 Uhr. Insgesamt erwarten wir 18 Gäste. Ist der Raum an diesem Tag frei? Gibt es dort eine kleine Küche? Außerdem möchten wir wissen, wie hoch die Miete ist. Wir versuchen, die Kosten für alle niedrig zu halten. Bitte bestätigen Sie uns den Termin und die Bedingungen schriftlich. Sie erreichen mich per E-Mail. Vielen Dank für Ihre Hilfe. Mit freundlichen Grüßen Hauke",
+     "audio": "audio/e2b3bb6baecf.m4a"
+    }
+   ]
+  },
+  "reply": {
+   "kind": "message",
+   "part": "b1-lesen-2",
+   "title": "Eingang ist noch keine Zusage · Ausschnitt",
+   "text": "Vielen Dank für Ihre Anfrage. Wir haben Ihre Nachricht erhalten und prüfen den Termin. Bitte informieren Sie die Gäste noch nicht über den Raum. Die Kosten und die Küchennutzung klären wir mit der Verwaltung. Eine verbindliche Antwort folgt nächste Woche.",
+   "sample": []
+  },
+  "gaps": {
+   "kind": "worksheet",
+   "part": "b1-sprachbausteine-2",
+   "format": "cloze",
+   "uniqueOptions": true,
+   "title": "Zehn Lücken in einer Anfrage",
+   "text": "Guten Tag, wir haben vor, ein Treffen [[1]] organisieren. Es soll [[2]] Sonntag stattfinden und ist [[3]] unsere Nachbarn gedacht. Bitte teilen Sie uns mit, [[4]] der Raum frei ist. Wir kommen [[5]] achtzehn Gästen [[6]] bringen eigene Getränke mit. Gibt es [[7]] Küche? Vielen Dank für [[8]] Hilfe. Wir fragen früh, [[9]] wir gut planen möchten. Hoffentlich können Sie [[10]] antworten.",
+   "questions": [
+    {
+     "prompt": "Lücke 1",
+     "options": [
+      "zu",
+      "am",
+      "für",
+      "ob",
+      "mit",
+      "und",
+      "eine",
+      "Ihre",
+      "weil",
+      "bald",
+      "aber",
+      "ohne",
+      "einen",
+      "zum",
+      "dass"
+     ],
+     "answers": [
+      "zu"
+     ]
+    },
+    {
+     "prompt": "Lücke 2",
+     "options": [
+      "zu",
+      "am",
+      "für",
+      "ob",
+      "mit",
+      "und",
+      "eine",
+      "Ihre",
+      "weil",
+      "bald",
+      "aber",
+      "ohne",
+      "einen",
+      "zum",
+      "dass"
+     ],
+     "answers": [
+      "am"
+     ]
+    },
+    {
+     "prompt": "Lücke 3",
+     "options": [
+      "zu",
+      "am",
+      "für",
+      "ob",
+      "mit",
+      "und",
+      "eine",
+      "Ihre",
+      "weil",
+      "bald",
+      "aber",
+      "ohne",
+      "einen",
+      "zum",
+      "dass"
+     ],
+     "answers": [
+      "für"
+     ]
+    },
+    {
+     "prompt": "Lücke 4",
+     "options": [
+      "zu",
+      "am",
+      "für",
+      "ob",
+      "mit",
+      "und",
+      "eine",
+      "Ihre",
+      "weil",
+      "bald",
+      "aber",
+      "ohne",
+      "einen",
+      "zum",
+      "dass"
+     ],
+     "answers": [
+      "ob"
+     ]
+    },
+    {
+     "prompt": "Lücke 5",
+     "options": [
+      "zu",
+      "am",
+      "für",
+      "ob",
+      "mit",
+      "und",
+      "eine",
+      "Ihre",
+      "weil",
+      "bald",
+      "aber",
+      "ohne",
+      "einen",
+      "zum",
+      "dass"
+     ],
+     "answers": [
+      "mit"
+     ]
+    },
+    {
+     "prompt": "Lücke 6",
+     "options": [
+      "zu",
+      "am",
+      "für",
+      "ob",
+      "mit",
+      "und",
+      "eine",
+      "Ihre",
+      "weil",
+      "bald",
+      "aber",
+      "ohne",
+      "einen",
+      "zum",
+      "dass"
+     ],
+     "answers": [
+      "und"
+     ]
+    },
+    {
+     "prompt": "Lücke 7",
+     "options": [
+      "zu",
+      "am",
+      "für",
+      "ob",
+      "mit",
+      "und",
+      "eine",
+      "Ihre",
+      "weil",
+      "bald",
+      "aber",
+      "ohne",
+      "einen",
+      "zum",
+      "dass"
+     ],
+     "answers": [
+      "eine"
+     ]
+    },
+    {
+     "prompt": "Lücke 8",
+     "options": [
+      "zu",
+      "am",
+      "für",
+      "ob",
+      "mit",
+      "und",
+      "eine",
+      "Ihre",
+      "weil",
+      "bald",
+      "aber",
+      "ohne",
+      "einen",
+      "zum",
+      "dass"
+     ],
+     "answers": [
+      "Ihre"
+     ]
+    },
+    {
+     "prompt": "Lücke 9",
+     "options": [
+      "zu",
+      "am",
+      "für",
+      "ob",
+      "mit",
+      "und",
+      "eine",
+      "Ihre",
+      "weil",
+      "bald",
+      "aber",
+      "ohne",
+      "einen",
+      "zum",
+      "dass"
+     ],
+     "answers": [
+      "weil"
+     ]
+    },
+    {
+     "prompt": "Lücke 10",
+     "options": [
+      "zu",
+      "am",
+      "für",
+      "ob",
+      "mit",
+      "und",
+      "eine",
+      "Ihre",
+      "weil",
+      "bald",
+      "aber",
+      "ohne",
+      "einen",
+      "zum",
+      "dass"
+     ],
+     "answers": [
+      "bald"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "planning": {
+   "kind": "card",
+   "part": "b1-sprechen-3",
+   "title": "Den Brief gemeinsam planen",
+   "theme": "Eine Anfrage vorbereiten",
+   "word": "Termin · Gäste · Küche · Kosten · Zuständigkeit",
+   "situation": "Planen Sie gemeinsam die Anfrage. Machen Sie Vorschläge, reagieren Sie und einigen Sie sich auf die Zuständigkeit. Der Raum ist noch nicht bestätigt.",
+   "sample": [
+    {
+     "de": "Ich schlage vor, zuerst den Termin und die Zahl der Gäste zu nennen.",
+     "audio": "audio/3cc7950c5e9f.m4a"
+    },
+    {
+     "de": "Einverstanden. Ich übernehme die Fragen zur Küche. Kannst du nach den Kosten fragen?",
+     "audio": "audio/3c36a34fd2ba.m4a"
+    }
+   ]
+  }
+ },
+ "beats": [
+  {
+   "id": "start-1",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 0,
+   "read": "Хауке готовит запрос на помещение для осенней встречи. Предлагаемый срок — воскресенье 18 октября, 15–18 часов, 18 гостей. Это учебный календарь. Команда должна назвать условия и получить ответ, прежде чем сообщать гостям окончательный адрес. Все нужные условия даны в сцене: знания географии, настоящих цен или расписаний не требуются. Сначала попробуйте понять, какого результата добиваются друзья, затем слушайте реплики. На новом уровне важно не только найти число или знакомое слово, но и связать несколько сведений.",
+   "point": "Запрашиваем помещение и уточняем условия",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 4,
+    "fresh": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "start-2",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 1,
+   "read": "В сцене три разных отношения к действию: намерение, попытка и необходимость. *Wir haben vor, ... zu organisieren* описывает план. *Wir müssen fragen* выражает необходимость и не требует zu. Сначала определите смысл, затем соберите форму. Участники ещё не получили помещение: даже хорошо написанный запрос не становится согласием адресата.",
+   "point": "Infinitiv mit zu: vorhaben, versuchen, Zeit haben",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 8,
+    "fresh": [
+     4,
+     5,
+     6,
+     7
+    ]
+   }
+  },
+  {
+   "id": "words-1",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 0,
+   "read": "Слова запроса помогают получить полезный ответ. *Anfrage* — обращение с вопросом, *Zusage* — согласие, *Bestätigung* — подтверждение названных условий. В игре нужно включить сведения, без которых администрация не сможет принять решение. Потом из тех же фактов вы составите связное письмо; список пунктов служит проверкой содержания, а не готовым текстом.",
+   "point": "Сначала используйте слово для решения; словарь остаётся справочником.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 6,
+    "words": "useful"
+   }
+  },
+  {
+   "id": "words-2",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 1,
+   "read": "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к ситуации: какие слова обозначают человека, место, условие или уже выполненное действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово встретится снова в записке или разговоре, попробуйте восстановить его смысл до подсказки.",
+   "point": "Возвращайтесь к выражениям в сообщениях и новых действиях.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 15,
+    "words": "useful",
+    "fresh": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   }
+  },
+  {
+   "id": "grammar-1",
+   "step": "grammar",
+   "stepTitle": "Infinitiv mit zu: vorhaben, versuchen, Zeit haben",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "После *versuchen*, *vorhaben* и выражения *Zeit haben* можно назвать следующее действие инфинитивной группой. Личного окончания у *schreiben* здесь нет: кто действует, уже видно из *ich versuche*. В учебных примерах ставим запятую, чтобы видеть границу частей. Эта модель не заменяет все придаточные предложения: используйте её в показанных выражениях.",
+   "point": "После versuchen: zu + Infinitiv.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "grammar-2",
+   "step": "grammar",
+   "stepTitle": "Infinitiv mit zu: vorhaben, versuchen, Zeit haben",
+   "chapterIndex": 2,
+   "indexInStep": 1,
+   "read": "В отделяемом глаголе *vorbereiten* частица zu встаёт между приставкой и основой. Так же устроено *abzuschicken*. В инфинитивной группе глагол остаётся одним словом. Сравните с личной формой *Ich bereite das Programm vor*. В игре вы собираете готовые фрагменты, но должны определить, какое намерение они передают.",
+   "point": "Отделяемая приставка: vor + zu + bereiten.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "grammar-3",
+   "step": "grammar",
+   "stepTitle": "Infinitiv mit zu: vorhaben, versuchen, Zeit haben",
+   "chapterIndex": 2,
+   "indexInStep": 2,
+   "read": "Знакомая модель с модальным глаголом сохраняется: *müssen fragen*, *können helfen*, *möchten kommen*. Не вставляйте zu перед каждым вторым глаголом. Сначала найдите слово, от которого зависит инфинитив. Полезно сравнить две реплики об одном действии: *Ich versuche zu helfen* и *Ich kann helfen*. Смысл и форма различаются.",
+   "point": "После модального müssen — Infinitiv без zu.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "frames-1",
+   "step": "frames",
+   "stepTitle": "Как устроена реплика",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "Сначала называем намерение команды, затем само действие. Вторая часть завершается *zu organisieren*. В запросе этого недостаточно: нужны срок, число людей и вопросы об условиях. Поэтому игру заканчивает проверка содержания письма. Вежливое обращение и понятные абзацы помогают адресату ответить на каждый вопрос.",
+   "point": "*Wir haben vor, ein Treffen zu organisieren.*",
+   "scene": {
+    "view": "sentence",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        },
+        {
+         "key": "vor",
+         "text": "vor,"
+        }
+       ],
+       [
+        {
+         "key": "ein",
+         "text": "ein"
+        },
+        {
+         "key": "treffen",
+         "text": "Treffen"
+        }
+       ],
+       [
+        {
+         "key": "zu",
+         "text": "zu"
+        },
+        {
+         "key": "organisieren",
+         "text": "organisieren"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir haben vor, ein Treffen zu organisieren.",
+      "ru": "Мы намерены организовать встречу.",
+      "audio": "audio/6b70486a49e9.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-1",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 0,
+   "read": "В этой модели нет: после *müssen* употребляется инфинитив без zu — *Wir müssen einen Raum finden*. С *versuchen* строение другое: *Wir versuchen, einen Raum zu finden*. Не переводите частицы отдельно с русского. Определяйте управляющее слово и сверяйтесь с примером, а затем проверяйте смысл всей реплики.",
+   "point": "*müssen finden* / *versuchen, ... zu finden*.",
+   "question": "Можно ли «Wir müssen einen Raum zu finden»?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        },
+        {
+         "key": "vor",
+         "text": "vor,"
+        }
+       ],
+       [
+        {
+         "key": "ein",
+         "text": "ein"
+        },
+        {
+         "key": "treffen",
+         "text": "Treffen"
+        }
+       ],
+       [
+        {
+         "key": "zu",
+         "text": "zu"
+        },
+        {
+         "key": "organisieren",
+         "text": "organisieren"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir haben vor, ein Treffen zu organisieren.",
+      "ru": "Мы намерены организовать встречу.",
+      "audio": "audio/6b70486a49e9.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-2",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 1,
+   "read": "Нет. Запрос описывает желаемые условия и вопросы. Нужен ответ владельца помещения. В дневнике можно записать «запрос отправлен», но нельзя превращать это в «помещение получено». Такая точность пригодится и в экзаменационном письме: объясняйте, чего хотите, и просите конкретный ответ.",
+   "point": "*Anfrage abgeschickt* ≠ *Raum bestätigt*.",
+   "question": "Отправленный запрос уже подтверждает помещение?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        },
+        {
+         "key": "vor",
+         "text": "vor,"
+        }
+       ],
+       [
+        {
+         "key": "ein",
+         "text": "ein"
+        },
+        {
+         "key": "treffen",
+         "text": "Treffen"
+        }
+       ],
+       [
+        {
+         "key": "zu",
+         "text": "zu"
+        },
+        {
+         "key": "organisieren",
+         "text": "organisieren"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir haben vor, ein Treffen zu organisieren.",
+      "ru": "Мы намерены организовать встречу.",
+      "audio": "audio/6b70486a49e9.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "exam-request-1",
+   "step": "exam-request",
+   "stepTitle": "Eine vollständige Anfrage",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Здесь все четыре пункта обязательны: причину, срок с числом гостей, вопросы и просьбу о подтверждении нужно связать в письмо. Сначала самостоятельно напишите черновик в поле сцены. Не копируйте образец: он открывается только для сравнения после попытки. В этой практике 100–120 слов — удобный ориентир, а не официальная минимальная длина выбранного экзамена.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        },
+        {
+         "key": "vor",
+         "text": "vor,"
+        }
+       ],
+       [
+        {
+         "key": "ein",
+         "text": "ein"
+        },
+        {
+         "key": "treffen",
+         "text": "Treffen"
+        }
+       ],
+       [
+        {
+         "key": "zu",
+         "text": "zu"
+        },
+        {
+         "key": "organisieren",
+         "text": "organisieren"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir haben vor, ein Treffen zu organisieren.",
+      "ru": "Мы намерены организовать встречу.",
+      "audio": "audio/6b70486a49e9.m4a"
+     }
+    ],
+    "task": "request",
+    "reveal": 0
+   }
+  },
+  {
+   "id": "exam-request-2",
+   "step": "exam-request",
+   "stepTitle": "Eine vollständige Anfrage",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        },
+        {
+         "key": "vor",
+         "text": "vor,"
+        }
+       ],
+       [
+        {
+         "key": "ein",
+         "text": "ein"
+        },
+        {
+         "key": "treffen",
+         "text": "Treffen"
+        }
+       ],
+       [
+        {
+         "key": "zu",
+         "text": "zu"
+        },
+        {
+         "key": "organisieren",
+         "text": "organisieren"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir haben vor, ein Treffen zu organisieren.",
+      "ru": "Мы намерены организовать встречу.",
+      "audio": "audio/6b70486a49e9.m4a"
+     }
+    ],
+    "task": "request",
+    "reveal": 0
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        },
+        {
+         "key": "vor",
+         "text": "vor,"
+        }
+       ],
+       [
+        {
+         "key": "ein",
+         "text": "ein"
+        },
+        {
+         "key": "treffen",
+         "text": "Treffen"
+        }
+       ],
+       [
+        {
+         "key": "zu",
+         "text": "zu"
+        },
+        {
+         "key": "organisieren",
+         "text": "organisieren"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir haben vor, ein Treffen zu organisieren.",
+      "ru": "Мы намерены организовать встречу.",
+      "audio": "audio/6b70486a49e9.m4a"
+     }
+    ],
+    "task": "request",
+    "reveal": 0,
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-reply-1",
+   "step": "exam-reply",
+   "stepTitle": "Eingang ist noch keine Zusage · Ausschnitt",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным текстом: объясните, какой фрагмент подтверждает каждое решение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        },
+        {
+         "key": "vor",
+         "text": "vor,"
+        }
+       ],
+       [
+        {
+         "key": "ein",
+         "text": "ein"
+        },
+        {
+         "key": "treffen",
+         "text": "Treffen"
+        }
+       ],
+       [
+        {
+         "key": "zu",
+         "text": "zu"
+        },
+        {
+         "key": "organisieren",
+         "text": "organisieren"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir haben vor, ein Treffen zu organisieren.",
+      "ru": "Мы намерены организовать встречу.",
+      "audio": "audio/6b70486a49e9.m4a"
+     }
+    ],
+    "task": "reply"
+   }
+  },
+  {
+   "id": "exam-reply-2",
+   "step": "exam-reply",
+   "stepTitle": "Eingang ist noch keine Zusage · Ausschnitt",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        },
+        {
+         "key": "vor",
+         "text": "vor,"
+        }
+       ],
+       [
+        {
+         "key": "ein",
+         "text": "ein"
+        },
+        {
+         "key": "treffen",
+         "text": "Treffen"
+        }
+       ],
+       [
+        {
+         "key": "zu",
+         "text": "zu"
+        },
+        {
+         "key": "organisieren",
+         "text": "organisieren"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir haben vor, ein Treffen zu organisieren.",
+      "ru": "Мы намерены организовать встречу.",
+      "audio": "audio/6b70486a49e9.m4a"
+     }
+    ],
+    "task": "reply"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        },
+        {
+         "key": "vor",
+         "text": "vor,"
+        }
+       ],
+       [
+        {
+         "key": "ein",
+         "text": "ein"
+        },
+        {
+         "key": "treffen",
+         "text": "Treffen"
+        }
+       ],
+       [
+        {
+         "key": "zu",
+         "text": "zu"
+        },
+        {
+         "key": "organisieren",
+         "text": "organisieren"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir haben vor, ein Treffen zu organisieren.",
+      "ru": "Мы намерены организовать встречу.",
+      "audio": "audio/6b70486a49e9.m4a"
+     }
+    ],
+    "task": "reply",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-gaps-1",
+   "step": "exam-gaps",
+   "stepTitle": "Zehn Lücken in einer Anfrage",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным текстом: объясните, какой фрагмент подтверждает каждое решение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        },
+        {
+         "key": "vor",
+         "text": "vor,"
+        }
+       ],
+       [
+        {
+         "key": "ein",
+         "text": "ein"
+        },
+        {
+         "key": "treffen",
+         "text": "Treffen"
+        }
+       ],
+       [
+        {
+         "key": "zu",
+         "text": "zu"
+        },
+        {
+         "key": "organisieren",
+         "text": "organisieren"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir haben vor, ein Treffen zu organisieren.",
+      "ru": "Мы намерены организовать встречу.",
+      "audio": "audio/6b70486a49e9.m4a"
+     }
+    ],
+    "task": "gaps"
+   }
+  },
+  {
+   "id": "exam-gaps-2",
+   "step": "exam-gaps",
+   "stepTitle": "Zehn Lücken in einer Anfrage",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        },
+        {
+         "key": "vor",
+         "text": "vor,"
+        }
+       ],
+       [
+        {
+         "key": "ein",
+         "text": "ein"
+        },
+        {
+         "key": "treffen",
+         "text": "Treffen"
+        }
+       ],
+       [
+        {
+         "key": "zu",
+         "text": "zu"
+        },
+        {
+         "key": "organisieren",
+         "text": "organisieren"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir haben vor, ein Treffen zu organisieren.",
+      "ru": "Мы намерены организовать встречу.",
+      "audio": "audio/6b70486a49e9.m4a"
+     }
+    ],
+    "task": "gaps"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        },
+        {
+         "key": "vor",
+         "text": "vor,"
+        }
+       ],
+       [
+        {
+         "key": "ein",
+         "text": "ein"
+        },
+        {
+         "key": "treffen",
+         "text": "Treffen"
+        }
+       ],
+       [
+        {
+         "key": "zu",
+         "text": "zu"
+        },
+        {
+         "key": "organisieren",
+         "text": "organisieren"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir haben vor, ein Treffen zu organisieren.",
+      "ru": "Мы намерены организовать встречу.",
+      "audio": "audio/6b70486a49e9.m4a"
+     }
+    ],
+    "task": "gaps",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-planning-1",
+   "step": "exam-planning",
+   "stepTitle": "Den Brief gemeinsam planen",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным текстом: объясните, какой фрагмент подтверждает каждое решение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        },
+        {
+         "key": "vor",
+         "text": "vor,"
+        }
+       ],
+       [
+        {
+         "key": "ein",
+         "text": "ein"
+        },
+        {
+         "key": "treffen",
+         "text": "Treffen"
+        }
+       ],
+       [
+        {
+         "key": "zu",
+         "text": "zu"
+        },
+        {
+         "key": "organisieren",
+         "text": "organisieren"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir haben vor, ein Treffen zu organisieren.",
+      "ru": "Мы намерены организовать встречу.",
+      "audio": "audio/6b70486a49e9.m4a"
+     }
+    ],
+    "task": "planning",
+    "reveal": 0
+   }
+  },
+  {
+   "id": "exam-planning-2",
+   "step": "exam-planning",
+   "stepTitle": "Den Brief gemeinsam planen",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        },
+        {
+         "key": "vor",
+         "text": "vor,"
+        }
+       ],
+       [
+        {
+         "key": "ein",
+         "text": "ein"
+        },
+        {
+         "key": "treffen",
+         "text": "Treffen"
+        }
+       ],
+       [
+        {
+         "key": "zu",
+         "text": "zu"
+        },
+        {
+         "key": "organisieren",
+         "text": "organisieren"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir haben vor, ein Treffen zu organisieren.",
+      "ru": "Мы намерены организовать встречу.",
+      "audio": "audio/6b70486a49e9.m4a"
+     }
+    ],
+    "task": "planning",
+    "reveal": 0
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        },
+        {
+         "key": "vor",
+         "text": "vor,"
+        }
+       ],
+       [
+        {
+         "key": "ein",
+         "text": "ein"
+        },
+        {
+         "key": "treffen",
+         "text": "Treffen"
+        }
+       ],
+       [
+        {
+         "key": "zu",
+         "text": "zu"
+        },
+        {
+         "key": "organisieren",
+         "text": "organisieren"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir haben vor, ein Treffen zu organisieren.",
+      "ru": "Мы намерены организовать встречу.",
+      "audio": "audio/6b70486a49e9.m4a"
+     }
+    ],
+    "task": "planning",
+    "reveal": 0,
+    "solved": true
+   }
+  }
+ ],
+ "exercises": [
+  {
+   "id": "b1-anfragen-1",
+   "type": "choice",
+   "q": "Ich versuche, pünktlich ___ kommen.",
+   "options": [
+    "um",
+    "-",
+    "zu"
+   ],
+   "answer": 2,
+   "why": "Versuchen + zu.",
+   "audio": "audio/6cf54eceb986.m4a"
+  },
+  {
+   "id": "b1-anfragen-2",
+   "type": "choice",
+   "q": "Wir müssen den Raum ___.",
+   "options": [
+    "zu suchen",
+    "sucht",
+    "suchen"
+   ],
+   "answer": 2,
+   "why": "Модальный глагол без zu.",
+   "audio": "audio/b9ff65307822.m4a"
+  },
+  {
+   "id": "b1-anfragen-3",
+   "type": "choice",
+   "q": "Ich habe Zeit, alles ___.",
+   "options": [
+    "vorzubereiten",
+    "zu vorbereiten",
+    "vorbereite"
+   ],
+   "answer": 0,
+   "why": "Zu внутри отделяемого глагола.",
+   "audio": "audio/d86cf676084e.m4a"
+  },
+  {
+   "id": "b1-anfragen-4",
+   "type": "choice",
+   "q": "Es ist wichtig, die Zahl ___ nennen.",
+   "options": [
+    "für",
+    "um",
+    "zu"
+   ],
+   "answer": 2,
+   "why": "Es ist wichtig, ... zu.",
+   "audio": "audio/bf6f738060b8.m4a"
+  },
+  {
+   "id": "b1-anfragen-5",
+   "type": "choice",
+   "q": "Wir planen, die Anfrage ___.",
+   "options": [
+    "zu abschicken",
+    "schicken ab",
+    "abzuschicken"
+   ],
+   "answer": 2,
+   "why": "ab + zu + schicken.",
+   "audio": "audio/840c7fa61b8f.m4a"
+  },
+  {
+   "id": "b1-anfragen-6",
+   "type": "choice",
+   "q": "Ihre Nachricht ist angekommen. Значит…",
+   "options": [
+    "Запрос получен",
+    "Зал подтверждён",
+    "Кухня бесплатна"
+   ],
+   "answer": 0,
+   "why": "Получение не означает согласие."
+  },
+  {
+   "id": "b1-anfragen-7",
+   "type": "order",
+   "de": "Wir haben vor, ein Treffen zu organisieren.",
+   "ru": "Мы намерены организовать встречу.",
+   "audio": "audio/6b70486a49e9.m4a"
+  },
+  {
+   "id": "b1-anfragen-8",
+   "type": "order",
+   "de": "Ich versuche, eine klare Anfrage zu schreiben.",
+   "ru": "Я попробую написать понятный запрос.",
+   "audio": "audio/97c882bb33dd.m4a"
+  },
+  {
+   "id": "b1-anfragen-9",
+   "type": "order",
+   "de": "Es ist wichtig, die Zahl der Gäste zu nennen.",
+   "ru": "Важно назвать число гостей.",
+   "audio": "audio/f08dac2268ec.m4a"
+  },
+  {
+   "id": "b1-anfragen-10",
+   "type": "order",
+   "de": "Wir müssen zuerst nach einem Raum fragen.",
+   "ru": "Сначала нам нужно спросить о помещении.",
+   "audio": "audio/2c29406b4f94.m4a"
+  },
+  {
+   "id": "b1-anfragen-11",
+   "type": "order",
+   "de": "Ich habe Zeit, das Programm vorzubereiten.",
+   "ru": "У меня есть время подготовить программу.",
+   "audio": "audio/0b081c00322c.m4a"
+  },
+  {
+   "id": "b1-anfragen-12",
+   "type": "order",
+   "de": "Eine verbindliche Antwort folgt nächste Woche.",
+   "ru": "Обязательный ответ последует на следующей неделе.",
+   "audio": "audio/94e814e11a6c.m4a"
+  }
+ ],
+ "case": {
+  "title": "Schon gebucht?",
+  "ru": "Сверка дневника",
+  "intro": "В дневнике отправку письма превратили в бронь. Проверьте каждое утверждение.",
+  "people": {},
+  "steps": [
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Wir haben Ihre Nachricht erhalten.",
+      "ru": "Мы получили ваше сообщение."
+     }
+    ],
+    "question": "Что известно?",
+    "options": [
+     "Всё согласовано",
+     "Запрос отклонён",
+     "Запрос получен"
+    ],
+    "answer": 2,
+    "right": "Erhalten подтверждает получение.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Die Kosten und die Küchennutzung klären wir mit der Verwaltung.",
+      "ru": "Стоимость и использование кухни уточним с администрацией."
+     }
+    ],
+    "question": "Кухня уже согласована?",
+    "options": [
+     "Да, за 18 евро",
+     "Нет, вопрос уточняется",
+     "Да, бесплатна"
+    ],
+    "answer": 1,
+    "right": "Klärung ещё продолжается.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Bitte informieren Sie die Gäste noch nicht über den Raum.",
+      "ru": "Пока не сообщайте гостям о помещении."
+     }
+    ],
+    "question": "Как поступить?",
+    "options": [
+     "Отправить окончательный адрес",
+     "Дождаться подтверждения",
+     "Отменить встречу"
+    ],
+    "answer": 1,
+    "right": "Нужно дождаться ответа об условиях.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   }
+  ],
+  "ending": "Запись исправлена по источникам. В следующей главе команда воспользуется подтверждёнными сведениями для нового решения."
+ },
+ "adventure": {
+  "kind": "sequence",
+  "title": "Подготовьте запрос, на который можно ответить",
+  "intro": "Хауке готовит запрос на помещение для осенней встречи. Предлагаемый срок — воскресенье 18 октября, 15–18 часов, 18 гостей. Это учебный календарь. Команда должна назвать условия и получить ответ, прежде чем сообщать гостям окончательный адрес.",
+  "ending": "В запросе есть цель, срок, число гостей и вопросы. Администрация получила письмо и проверяет условия. В дневнике отмечена отправка; место встречи пока не объявлено.",
+  "challenges": [
+   {
+    "id": "facts",
+    "kind": "pack",
+    "title": "Что обязательно включить?",
+    "intro": "Выберите три сведения о запросе.",
+    "success": "Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы одно из них.",
+    "wrong": "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание и адресата.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Behandeln Sie alle vier Punkte. Schreiben Sie einen zusammenhängenden Brief mit Anrede und Gruß. Etwa 100–120 Wörter sind hier ein Übungsziel, keine feste telc-Mindestwortzahl.\n\nSie organisieren einen nichtkommerziellen Nachbarschaftstreff. Schreiben Sie an Frau Petersen. Gewünscht: Sonntag, 18. Oktober, 15–18 Uhr, 18 Gäste. Küche und Mietpreis sind noch unklar.\n\nGrund der Anfrage und Art der Veranstaltung\n\nGewünschter Termin und Zahl der Gäste\n\nZwei Fragen zur Ausstattung und zu den Kosten\n\nBitte um Bestätigung und Kontakt",
+      "name": "Eine vollständige Anfrage"
+     }
+    ],
+    "options": [
+     {
+      "id": "o0",
+      "label": "18 гостей"
+     },
+     {
+      "id": "o1",
+      "label": "18 октября, 15–18"
+     },
+     {
+      "id": "o2",
+      "label": "Запросить кухню и цену"
+     },
+     {
+      "id": "o3",
+      "label": "Бесплатный зал уже получен"
+     }
+    ],
+    "answer": [
+     "o0",
+     "o1",
+     "o2"
+    ]
+   },
+   {
+    "id": "zu",
+    "kind": "order",
+    "title": "Сформулируйте намерение",
+    "intro": "Соберите предложение.",
+    "success": "Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.",
+    "wrong": "Проверьте положение глагола и конец предложения: используйте все фрагменты.",
+    "tokens": [
+     "Wir",
+     "haben vor,",
+     "ein Treffen",
+     "zu organisieren."
+    ],
+    "label": "Реплика для команды"
+   },
+   {
+    "id": "parts",
+    "kind": "match",
+    "title": "Свяжите выражение и форму",
+    "intro": "Выберите продолжение.",
+    "success": "Форма зависит от управляющего слова.",
+    "wrong": "После müssen нет zu; у vorbereiten оно внутри.",
+    "options": [
+     {
+      "id": "zu",
+      "label": "zu schreiben"
+     },
+     {
+      "id": "plain",
+      "label": "schreiben"
+     },
+     {
+      "id": "prepare",
+      "label": "vorzubereiten"
+     }
+    ],
+    "slots": [
+     {
+      "id": "a",
+      "label": "Wir versuchen, die Anfrage …",
+      "answer": "zu"
+     },
+     {
+      "id": "b",
+      "label": "Wir müssen die Anfrage …",
+      "answer": "plain"
+     },
+     {
+      "id": "c",
+      "label": "Ich habe Zeit, das Programm …",
+      "answer": "prepare"
+     }
+    ]
+   },
+   {
+    "id": "status",
+    "kind": "select",
+    "title": "Как обновить дневник?",
+    "intro": "Прочитайте полученный ответ.",
+    "success": "Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы одно из них.",
+    "wrong": "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание и адресата.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Vielen Dank für Ihre Anfrage. Wir haben Ihre Nachricht erhalten und prüfen den Termin. Bitte informieren Sie die Gäste noch nicht über den Raum. Die Kosten und die Küchennutzung klären wir mit der Verwaltung. Eine verbindliche Antwort folgt nächste Woche.",
+      "name": "Eingang ist noch keine Zusage · Ausschnitt"
+     }
+    ],
+    "options": [
+     {
+      "id": "o0",
+      "label": "Запрос получен; ждём условий"
+     },
+     {
+      "id": "o1",
+      "label": "Помещение забронировано"
+     },
+     {
+      "id": "o2",
+      "label": "Кухня бесплатна"
+     }
+    ],
+    "answer": [
+     "o0"
+    ]
+   },
+   {
+    "id": "guests",
+    "kind": "note",
+    "title": "Проверьте число перед отправкой",
+    "intro": "Введите число гостей из задания письма.",
+    "success": "Число совпадает с запросом.",
+    "wrong": "В условии указано 18 гостей.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Behandeln Sie alle vier Punkte. Schreiben Sie einen zusammenhängenden Brief mit Anrede und Gruß. Etwa 100–120 Wörter sind hier ein Übungsziel, keine feste telc-Mindestwortzahl.\n\nSie organisieren einen nichtkommerziellen Nachbarschaftstreff. Schreiben Sie an Frau Petersen. Gewünscht: Sonntag, 18. Oktober, 15–18 Uhr, 18 Gäste. Küche und Mietpreis sind noch unklar.\n\nGrund der Anfrage und Art der Veranstaltung\n\nGewünschter Termin und Zahl der Gäste\n\nZwei Fragen zur Ausstattung und zu den Kosten\n\nBitte um Bestätigung und Kontakt",
+      "name": "Eine vollständige Anfrage"
+     }
+    ],
+    "fields": [
+     {
+      "label": "Zahl der Gäste",
+      "answers": [
+       "18",
+       "achtzehn"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "spy": []
+}

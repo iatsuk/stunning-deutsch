@@ -1,0 +1,1814 @@
+{
+ "id": "a2-neustart",
+ "level": "a2",
+ "order": 1,
+ "title": "Was haben wir schon organisiert?",
+ "ru": "Новый дневник команды",
+ "lede": "Kieler Woche закончилась. Дана, Матео, Элиф и Хауке начинают общий дневник поездок. Для первой записи нужно восстановить вчерашние события, проверить сообщение и понять, что уже организовано, а что ещё предстоит.",
+ "goals": [
+  "Восстановить последовательность событий по сообщениям",
+  "Узнать причастия с отделяемой приставкой и без ge-",
+  "Заполнить телефонную заметку после прослушивания",
+  "Рассказать о себе и о прошедшем дне"
+ ],
+ "grammar": [
+  "Perfekt: приставки и последовательность"
+ ],
+ "exam": [
+  "a2-hoeren-1",
+  "a2-lesen-2",
+  "a2-sprechen-1",
+  "a2-schreiben-1"
+ ],
+ "chapters": [
+  {
+   "id": "scene",
+   "title": "Ситуация"
+  },
+  {
+   "id": "words",
+   "title": "Слова"
+  },
+  {
+   "id": "grammar",
+   "title": "Грамматика"
+  },
+  {
+   "id": "practice",
+   "title": "Проверка"
+  },
+  {
+   "id": "exam",
+   "title": "На экзамене"
+  }
+ ],
+ "dialogues": {
+  "scene": {
+   "title": "Was haben wir schon organisiert?",
+   "ru": "Новый дневник команды",
+   "place": "Club auf der Kiellinie, Kiel · вымышленная учебная ситуация",
+   "people": {
+    "D": {
+     "name": "Dana",
+     "voice": "Anna"
+    },
+    "M": {
+     "name": "Mateo",
+     "voice": "Reed"
+    },
+    "E": {
+     "name": "Elif",
+     "voice": "Flo"
+    },
+    "H": {
+     "name": "Hauke",
+     "voice": "Rocko"
+    }
+   },
+   "lines": [
+    {
+     "who": "H",
+     "de": "Die Kieler Woche ist zu Ende. Was haben wir gestern gemacht?",
+     "ru": "Кильская неделя закончилась. Что мы делали вчера?",
+     "audio": "audio/fe0bb79db87b.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Zuerst haben wir im Club aufgeräumt.",
+     "ru": "Сначала мы прибрались в клубе.",
+     "audio": "audio/d39a927455ae.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Dann habe ich Brot und Wasser eingekauft.",
+     "ru": "Потом я купил хлеб и воду.",
+     "audio": "audio/4bfd6485b69c.m4a"
+    },
+    {
+     "who": "E",
+     "de": "Ich habe die Fotos sortiert. Die Tickets habe ich noch nicht reserviert.",
+     "ru": "Я рассортировала фотографии. Билеты я ещё не забронировала.",
+     "audio": "audio/16e6232cffc5.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Habt ihr die Gäste angerufen?",
+     "ru": "Вы позвонили гостям?",
+     "audio": "audio/f685d23d0b13.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Ja. Lucía und Diego sind gut nach Hause gekommen.",
+     "ru": "Да. Лусия и Диего хорошо добрались домой.",
+     "audio": "audio/8a0805fcd10b.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Und wer hat die neue Fahrt organisiert?",
+     "ru": "А кто организовал новую поездку?",
+     "audio": "audio/b78254d52b0e.m4a"
+    },
+    {
+     "who": "E",
+     "de": "Noch niemand. Wir können am Sonntag zusammen planen.",
+     "ru": "Пока никто. Можем вместе спланировать в воскресенье.",
+     "audio": "audio/3bf97b37970a.m4a"
+    }
+   ]
+  }
+ },
+ "words": {
+  "useful": {
+   "title": "Wörter für die Aufgabe",
+   "ru": "Слова для действия",
+   "items": [
+    {
+     "de": "aufräumen",
+     "ru": "прибираться",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/243d905c12a6.m4a"
+    },
+    {
+     "de": "einkaufen",
+     "ru": "покупать продукты",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/1ef7fa29aedf.m4a"
+    },
+    {
+     "de": "anrufen",
+     "ru": "звонить",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/20e4b3322465.m4a"
+    },
+    {
+     "de": "sortieren",
+     "ru": "сортировать",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/9524757213b8.m4a"
+    },
+    {
+     "de": "organisieren",
+     "ru": "организовывать",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/527572968938.m4a"
+    },
+    {
+     "de": "reservieren",
+     "ru": "бронировать",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/3b0003a26f77.m4a"
+    },
+    {
+     "de": "zuerst",
+     "ru": "сначала",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/78063bbc9d8b.m4a"
+    },
+    {
+     "de": "danach",
+     "ru": "после этого",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/ad89dc0448d2.m4a"
+    },
+    {
+     "de": "zum Schluss",
+     "ru": "в конце",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/8ac15b6d1b91.m4a"
+    },
+    {
+     "de": "der Eintrag",
+     "ru": "запись",
+     "gender": "m",
+     "plural": "Einträge",
+     "audio": "audio/c08f071b3c60.m4a"
+    },
+    {
+     "de": "die Notiz",
+     "ru": "заметка",
+     "gender": "f",
+     "plural": "Notizen",
+     "audio": "audio/709925f39274.m4a"
+    },
+    {
+     "de": "bestätigen",
+     "ru": "подтверждать",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/1f0598fc0422.m4a"
+    }
+   ]
+  }
+ },
+ "tables": {
+  "rule": {
+   "title": "Perfekt: приставки и последовательность",
+   "ru": "Опора для решения",
+   "head": [
+    "Beispiel",
+    "Смысл и форма"
+   ],
+   "rows": [
+    [
+     "Wir haben aufgeräumt.",
+     "Отделяемая приставка: auf + ge + räumt."
+    ],
+    [
+     "Ich habe die Fotos sortiert.",
+     "У глаголов на -ieren нет ge-."
+    ],
+    [
+     "Wir haben die Zeit bestätigt.",
+     "Неотделяемая приставка: bestätigt, без ge-."
+    ],
+    [
+     "Danach haben wir geplant.",
+     "После Danach личная форма остаётся второй."
+    ]
+   ],
+   "ruCols": [
+    1
+   ]
+  }
+ },
+ "tasks": {
+  "note": {
+   "kind": "worksheet",
+   "part": "a2-hoeren-1",
+   "format": "notes",
+   "title": "Telefonnotiz für Dana",
+   "situation": "Hören Sie die Nachricht zweimal. Ergänzen Sie die Notiz.",
+   "voice": "Rocko",
+   "text": "Hallo Dana, hier ist Hauke. Wir treffen uns am Sonntag um zehn Uhr im Club. Bitte bring das Fotoalbum mit. Ruf mich am Samstag an. Bis bald!",
+   "questions": [
+    {
+     "prompt": "Tag des Treffens",
+     "answers": [
+      "Sonntag",
+      "am Sonntag"
+     ]
+    },
+    {
+     "prompt": "Uhrzeit",
+     "answers": [
+      "10:00",
+      "10 Uhr",
+      "zehn Uhr"
+     ]
+    },
+    {
+     "prompt": "Ort",
+     "answers": [
+      "Club",
+      "im Club"
+     ]
+    },
+    {
+     "prompt": "Mitbringen",
+     "answers": [
+      "Fotoalbum",
+      "das Fotoalbum"
+     ]
+    },
+    {
+     "prompt": "Rückruf am",
+     "answers": [
+      "Samstag"
+     ]
+    }
+   ],
+   "audio": "audio/874f62f93053.m4a",
+   "sample": []
+  },
+  "article": {
+   "kind": "worksheet",
+   "part": "a2-lesen-2",
+   "format": "article",
+   "title": "Der erste Eintrag",
+   "text": "Am Samstag hat Dana die Fotos sortiert. Mateo hat eingekauft. Elif hat eine Liste geschrieben. Die Gäste sind nach Hause gefahren. Für Sonntag hat Hauke ein Treffen organisiert. Die Tickets sind noch nicht reserviert.",
+   "questions": [
+    {
+     "prompt": "Dana hat Fotos sortiert.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "richtig"
+     ]
+    },
+    {
+     "prompt": "Mateo hat Tickets gekauft.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Elif hat eine Liste geschrieben.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "richtig"
+     ]
+    },
+    {
+     "prompt": "Die Gäste sind noch in Kiel.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Für Sonntag gibt es ein Treffen.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "richtig"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "self": {
+   "kind": "keywords",
+   "part": "a2-sprechen-1",
+   "title": "Neu in der Gruppe",
+   "situation": "Stellen Sie sich vor. Erzählen Sie auch kurz von gestern.",
+   "words": [
+    "Name",
+    "Wohnort",
+    "Beruf",
+    "Sprachen",
+    "Hobby",
+    "Gestern"
+   ],
+   "sample": [
+    {
+     "de": "Ich heiße Dana und wohne in Kiel.",
+     "audio": "audio/efda5d8684e4.m4a"
+    },
+    {
+     "de": "Ich bin Ärztin und lerne Deutsch.",
+     "audio": "audio/92b3ba70144f.m4a"
+    },
+    {
+     "de": "Gestern habe ich Fotos sortiert.",
+     "audio": "audio/87156d755edc.m4a"
+    }
+   ]
+  },
+  "form": {
+   "kind": "form",
+   "part": "a2-schreiben-1",
+   "title": "Anmeldung zum Treffen",
+   "situation": "Elif Yıldız ist 24 Jahre alt. Sie wohnt in Kiel und studiert Meeresbiologie. Sie spricht Türkisch und Englisch. Tragen Sie die fünf fehlenden Angaben ein.",
+   "fields": [
+    {
+     "label": "Familienname",
+     "value": "Yıldız",
+     "given": true
+    },
+    {
+     "label": "Vorname",
+     "value": "Elif",
+     "given": false
+    },
+    {
+     "label": "Alter",
+     "value": "24",
+     "given": false
+    },
+    {
+     "label": "Wohnort",
+     "value": "Kiel",
+     "given": false
+    },
+    {
+     "label": "Beruf",
+     "value": "Studentin",
+     "given": false
+    },
+    {
+     "label": "Sprachen",
+     "value": "Türkisch, Englisch",
+     "given": false
+    }
+   ],
+   "sample": []
+  }
+ },
+ "beats": [
+  {
+   "id": "start-1",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 0,
+   "read": "Kieler Woche закончилась. Дана, Матео, Элиф и Хауке начинают общий дневник поездок. Для первой записи нужно восстановить вчерашние события, проверить сообщение и понять, что уже организовано, а что ещё предстоит. Все нужные условия даны в сцене: знания географии, настоящих цен или расписаний не требуются. Сначала попробуйте понять, какого результата добиваются друзья, затем слушайте реплики. На новом уровне важно не только найти число или знакомое слово, но и связать несколько сведений.",
+   "point": "Новый дневник команды",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 4,
+    "fresh": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "start-2",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 1,
+   "read": "В разговоре есть завершённые действия и незавершённое дело. *Aufgeräumt*, *eingekauft*, *sortiert* относятся к тому, что сделано; *noch nicht reserviert* — к тому, что ещё не сделано. Слушайте отрицание вместе с причастием. Ответ о возвращении гостей использует знакомое *sind … gekommen*. Новый сезон не требует заново угадывать биографии друзей.",
+   "point": "Perfekt: приставки и последовательность",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 8,
+    "fresh": [
+     4,
+     5,
+     6,
+     7
+    ]
+   }
+  },
+  {
+   "id": "words-1",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 0,
+   "read": "Для дневника нужны действия с понятным результатом: прибраться, купить, отсортировать, позвонить, организовать. Слова *zuerst*, *dann*, *danach*, *zum Schluss* связывают события. Они не меняют форму причастия, но могут занять первую позицию: тогда личная форма глагола остаётся второй. В игре порядок событий понадобится для передачи ключа, а не для пересказа списка слов.",
+   "point": "Сначала используйте слово для решения; словарь остаётся справочником.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 6,
+    "words": "useful"
+   }
+  },
+  {
+   "id": "words-2",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 1,
+   "read": "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к ситуации: какие слова обозначают человека, место, условие или уже выполненное действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово встретится снова в записке или разговоре, попробуйте восстановить его смысл до подсказки.",
+   "point": "Возвращайтесь к выражениям в сообщениях и новых действиях.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 12,
+    "words": "useful",
+    "fresh": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   }
+  },
+  {
+   "id": "grammar-1",
+   "step": "grammar",
+   "stepTitle": "Perfekt: приставки и последовательность",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "У знакомого *aufräumen* приставка отделяется в настоящем времени: *Wir räumen auf*. В Perfekt она соединяется с причастием: *aufgeräumt*. Частица *ge* находится между приставкой и основой. Это та же модель, что у *angekommen* из A1, но вспомогательный глагол здесь *haben*: мы не перемещаемся в другое место.",
+   "point": "Отделяемая приставка: auf + ge + räumt.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0
+    ]
+   }
+  },
+  {
+   "id": "grammar-2",
+   "step": "grammar",
+   "stepTitle": "Perfekt: приставки и последовательность",
+   "chapterIndex": 2,
+   "indexInStep": 1,
+   "read": "У *sortieren*, *organisieren*, *reservieren* причастие без *ge*: *sortiert*, *organisiert*, *reserviert*. Их легко узнать по окончанию инфинитива. Это не повод убирать *ge* у любого длинного слова: *eingekauft* строится иначе. Найдите на странице формы, с которыми можно подтвердить готовность, и формы с отрицанием.",
+   "point": "У глаголов на -ieren нет ge-.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     1
+    ]
+   }
+  },
+  {
+   "id": "grammar-3",
+   "step": "grammar",
+   "stepTitle": "Perfekt: приставки и последовательность",
+   "chapterIndex": 2,
+   "indexInStep": 2,
+   "read": "У *bestätigen* приставка *be-* не отделяется; причастие — *bestätigt*. Из A1 знакомы *besuchen*, *bekommen*. Не нужно придумывать форму по длине слова: смотрите, отделяется ли приставка, и возвращайтесь к образцу. Подтверждение времени — отдельное действие: обсуждённый вариант ещё не становится договорённостью.",
+   "point": "Неотделяемая приставка: bestätigt, без ge-.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     2
+    ]
+   }
+  },
+  {
+   "id": "grammar-4",
+   "step": "grammar",
+   "stepTitle": "Perfekt: приставки и последовательность",
+   "chapterIndex": 2,
+   "indexInStep": 3,
+   "read": "Если *danach* стоит первым, за ним следует *haben*, затем *wir*, а причастие закрывает предложение. Такие слова помогают связать несколько коротких реплик в рассказ. Не перепутайте порядок слов с порядком событий: последовательность устанавливается по источнику, а не по тому, какое предложение прочитано первым.",
+   "point": "После Danach личная форма остаётся второй.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     3
+    ]
+   }
+  },
+  {
+   "id": "frames-1",
+   "step": "frames",
+   "stepTitle": "Как устроена реплика",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "Сравните предложение с начальным временем. Сначала *Danach*, затем *haben*, середина *wir die Fahrt*, в конце *organisiert*. Вспомогательный глагол выражает лицо и число, причастие — действие. Уберите обстоятельство: получится *Wir haben die Fahrt organisiert*. Рамка сохраняется в обоих случаях.",
+   "point": "*Danach haben wir die Fahrt organisiert.*",
+   "scene": {
+    "view": "sentence",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "danach",
+         "text": "Danach"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "fahrt",
+         "text": "Fahrt"
+        }
+       ],
+       [
+        {
+         "key": "organisiert",
+         "text": "organisiert"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Danach haben wir die Fahrt organisiert.",
+      "ru": "После этого мы организовали поездку.",
+      "audio": "audio/0109cb5045a8.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-1",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 0,
+   "read": "Нет: *reserviert*. Окончание *-ieren* помогает узнать модель. Но *noch nicht reserviert* означает, что бронирования пока нет. Для итогового дневника важны и форма, и отрицание. Не отмечайте дело выполненным только потому, что видите причастие.",
+   "point": "*reservieren → reserviert*, но *noch nicht* отменяет готовность.",
+   "question": "Нужно ли ge- в причастии от reservieren?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "danach",
+         "text": "Danach"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "fahrt",
+         "text": "Fahrt"
+        }
+       ],
+       [
+        {
+         "key": "organisiert",
+         "text": "organisiert"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Danach haben wir die Fahrt organisiert.",
+      "ru": "После этого мы организовали поездку.",
+      "audio": "audio/0109cb5045a8.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-2",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 1,
+   "read": "*Dann haben wir die Gäste angerufen.* *Haben* остаётся вторым, а *anrufen* превращается в *angerufen*. Если начать с *Wir*, получится *Wir haben dann die Gäste angerufen*. Оба порядка подходят; в игре специально заданное начальное слово помогает потренировать перестройку.",
+   "point": "*Dann haben wir die Gäste angerufen.*",
+   "question": "Как сказать: «Потом мы позвонили гостям»?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "danach",
+         "text": "Danach"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "fahrt",
+         "text": "Fahrt"
+        }
+       ],
+       [
+        {
+         "key": "organisiert",
+         "text": "organisiert"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Danach haben wir die Fahrt organisiert.",
+      "ru": "После этого мы организовали поездку.",
+      "audio": "audio/0109cb5045a8.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "exam-note-1",
+   "step": "exam-note",
+   "stepTitle": "Telefonnotiz für Dana",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным текстом: объясните, какой фрагмент подтверждает каждое решение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "danach",
+         "text": "Danach"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "fahrt",
+         "text": "Fahrt"
+        }
+       ],
+       [
+        {
+         "key": "organisiert",
+         "text": "organisiert"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Danach haben wir die Fahrt organisiert.",
+      "ru": "После этого мы организовали поездку.",
+      "audio": "audio/0109cb5045a8.m4a"
+     }
+    ],
+    "task": "note"
+   }
+  },
+  {
+   "id": "exam-note-2",
+   "step": "exam-note",
+   "stepTitle": "Telefonnotiz für Dana",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "danach",
+         "text": "Danach"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "fahrt",
+         "text": "Fahrt"
+        }
+       ],
+       [
+        {
+         "key": "organisiert",
+         "text": "organisiert"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Danach haben wir die Fahrt organisiert.",
+      "ru": "После этого мы организовали поездку.",
+      "audio": "audio/0109cb5045a8.m4a"
+     }
+    ],
+    "task": "note"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "danach",
+         "text": "Danach"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "fahrt",
+         "text": "Fahrt"
+        }
+       ],
+       [
+        {
+         "key": "organisiert",
+         "text": "organisiert"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Danach haben wir die Fahrt organisiert.",
+      "ru": "После этого мы организовали поездку.",
+      "audio": "audio/0109cb5045a8.m4a"
+     }
+    ],
+    "task": "note",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-article-1",
+   "step": "exam-article",
+   "stepTitle": "Der erste Eintrag",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным текстом: объясните, какой фрагмент подтверждает каждое решение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "danach",
+         "text": "Danach"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "fahrt",
+         "text": "Fahrt"
+        }
+       ],
+       [
+        {
+         "key": "organisiert",
+         "text": "organisiert"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Danach haben wir die Fahrt organisiert.",
+      "ru": "После этого мы организовали поездку.",
+      "audio": "audio/0109cb5045a8.m4a"
+     }
+    ],
+    "task": "article"
+   }
+  },
+  {
+   "id": "exam-article-2",
+   "step": "exam-article",
+   "stepTitle": "Der erste Eintrag",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "danach",
+         "text": "Danach"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "fahrt",
+         "text": "Fahrt"
+        }
+       ],
+       [
+        {
+         "key": "organisiert",
+         "text": "organisiert"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Danach haben wir die Fahrt organisiert.",
+      "ru": "После этого мы организовали поездку.",
+      "audio": "audio/0109cb5045a8.m4a"
+     }
+    ],
+    "task": "article"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "danach",
+         "text": "Danach"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "fahrt",
+         "text": "Fahrt"
+        }
+       ],
+       [
+        {
+         "key": "organisiert",
+         "text": "organisiert"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Danach haben wir die Fahrt organisiert.",
+      "ru": "После этого мы организовали поездку.",
+      "audio": "audio/0109cb5045a8.m4a"
+     }
+    ],
+    "task": "article",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-self-1",
+   "step": "exam-self",
+   "stepTitle": "Neu in der Gruppe",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным текстом: объясните, какой фрагмент подтверждает каждое решение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "danach",
+         "text": "Danach"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "fahrt",
+         "text": "Fahrt"
+        }
+       ],
+       [
+        {
+         "key": "organisiert",
+         "text": "organisiert"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Danach haben wir die Fahrt organisiert.",
+      "ru": "После этого мы организовали поездку.",
+      "audio": "audio/0109cb5045a8.m4a"
+     }
+    ],
+    "task": "self",
+    "reveal": 0
+   }
+  },
+  {
+   "id": "exam-self-2",
+   "step": "exam-self",
+   "stepTitle": "Neu in der Gruppe",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "danach",
+         "text": "Danach"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "fahrt",
+         "text": "Fahrt"
+        }
+       ],
+       [
+        {
+         "key": "organisiert",
+         "text": "organisiert"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Danach haben wir die Fahrt organisiert.",
+      "ru": "После этого мы организовали поездку.",
+      "audio": "audio/0109cb5045a8.m4a"
+     }
+    ],
+    "task": "self",
+    "reveal": 0
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "danach",
+         "text": "Danach"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "fahrt",
+         "text": "Fahrt"
+        }
+       ],
+       [
+        {
+         "key": "organisiert",
+         "text": "organisiert"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Danach haben wir die Fahrt organisiert.",
+      "ru": "После этого мы организовали поездку.",
+      "audio": "audio/0109cb5045a8.m4a"
+     }
+    ],
+    "task": "self",
+    "reveal": 0,
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-form-1",
+   "step": "exam-form",
+   "stepTitle": "Anmeldung zum Treffen",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным текстом: объясните, какой фрагмент подтверждает каждое решение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "danach",
+         "text": "Danach"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "fahrt",
+         "text": "Fahrt"
+        }
+       ],
+       [
+        {
+         "key": "organisiert",
+         "text": "organisiert"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Danach haben wir die Fahrt organisiert.",
+      "ru": "После этого мы организовали поездку.",
+      "audio": "audio/0109cb5045a8.m4a"
+     }
+    ],
+    "task": "form",
+    "reveal": 0
+   }
+  },
+  {
+   "id": "exam-form-2",
+   "step": "exam-form",
+   "stepTitle": "Anmeldung zum Treffen",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "danach",
+         "text": "Danach"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "fahrt",
+         "text": "Fahrt"
+        }
+       ],
+       [
+        {
+         "key": "organisiert",
+         "text": "organisiert"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Danach haben wir die Fahrt organisiert.",
+      "ru": "После этого мы организовали поездку.",
+      "audio": "audio/0109cb5045a8.m4a"
+     }
+    ],
+    "task": "form",
+    "reveal": 0
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "danach",
+         "text": "Danach"
+        }
+       ],
+       [
+        {
+         "key": "haben",
+         "text": "haben"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "fahrt",
+         "text": "Fahrt"
+        }
+       ],
+       [
+        {
+         "key": "organisiert",
+         "text": "organisiert"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Danach haben wir die Fahrt organisiert.",
+      "ru": "После этого мы организовали поездку.",
+      "audio": "audio/0109cb5045a8.m4a"
+     }
+    ],
+    "task": "form",
+    "reveal": 0,
+    "solved": true
+   }
+  }
+ ],
+ "exercises": [
+  {
+   "id": "a2-neustart-1",
+   "type": "choice",
+   "q": "Wir haben die Fotos ___.",
+   "options": [
+    "sortiert",
+    "gesortiert",
+    "sortieren"
+   ],
+   "answer": 0,
+   "why": "У -ieren нет ge-.",
+   "audio": "audio/737d4f848d18.m4a"
+  },
+  {
+   "id": "a2-neustart-2",
+   "type": "choice",
+   "q": "Mateo hat ___.",
+   "options": [
+    "eingekauft",
+    "geeinkauft",
+    "einkaufen"
+   ],
+   "answer": 0,
+   "why": "Приставка стоит перед ge-.",
+   "audio": "audio/d7877e4f3a0a.m4a"
+  },
+  {
+   "id": "a2-neustart-3",
+   "type": "choice",
+   "q": "Danach ___ wir aufgeräumt.",
+   "options": [
+    "haben",
+    "sind",
+    "hat"
+   ],
+   "answer": 0,
+   "why": "*Wir haben aufgeräumt*.",
+   "audio": "audio/1c2bed0afb69.m4a"
+  },
+  {
+   "id": "a2-neustart-4",
+   "type": "choice",
+   "q": "Die Tickets sind ___ reserviert.",
+   "options": [
+    "noch nicht",
+    "schon",
+    "niemand"
+   ],
+   "answer": 0,
+   "why": "Ещё не: *noch nicht*.",
+   "audio": "audio/1f60e47aaa5e.m4a"
+  },
+  {
+   "id": "a2-neustart-5",
+   "type": "choice",
+   "q": "Die Gäste ___ nach Hause gefahren.",
+   "options": [
+    "sind",
+    "haben",
+    "hat"
+   ],
+   "answer": 0,
+   "why": "Перемещение: *sind gefahren*.",
+   "audio": "audio/7ffca8998a55.m4a"
+  },
+  {
+   "id": "a2-neustart-6",
+   "type": "choice",
+   "q": "Wir haben die Zeit ___.",
+   "options": [
+    "bestätigt",
+    "gebestätigt",
+    "bestätigen"
+   ],
+   "answer": 0,
+   "why": "Неотделяемая be-: без ge-.",
+   "audio": "audio/6a946fa9ea21.m4a"
+  },
+  {
+   "id": "a2-neustart-7",
+   "type": "order",
+   "ru": "Мы рассортировали фотографии.",
+   "de": "Wir haben die Fotos sortiert.",
+   "audio": "audio/737d4f848d18.m4a"
+  },
+  {
+   "id": "a2-neustart-8",
+   "type": "order",
+   "ru": "Потом мы прибрались.",
+   "de": "Dann haben wir aufgeräumt.",
+   "audio": "audio/584e4c893779.m4a"
+  },
+  {
+   "id": "a2-neustart-9",
+   "type": "order",
+   "ru": "Я купил хлеб.",
+   "de": "Ich habe Brot eingekauft.",
+   "audio": "audio/746a09a47c52.m4a"
+  },
+  {
+   "id": "a2-neustart-10",
+   "type": "order",
+   "ru": "Ты позвонил гостям?",
+   "de": "Hast du die Gäste angerufen?",
+   "audio": "audio/eb6d8c7d2ecb.m4a"
+  },
+  {
+   "id": "a2-neustart-11",
+   "type": "order",
+   "ru": "Мы организовали поездку.",
+   "de": "Wir haben die Fahrt organisiert.",
+   "audio": "audio/54f8d7c5bd55.m4a"
+  },
+  {
+   "id": "a2-neustart-12",
+   "type": "order",
+   "ru": "Гости добрались домой.",
+   "de": "Die Gäste sind nach Hause gekommen.",
+   "audio": "audio/aef8e2410c0e.m4a"
+  }
+ ],
+ "case": {
+  "title": "Der erste Eintrag",
+  "ru": "Первый отчёт",
+  "intro": "В дневнике оказались две версии сообщения. Установите, что подтверждено первоисточником. Вывод зависит от языка, а не от личности автора.",
+  "people": {},
+  "steps": [
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Zuerst haben wir aufgeräumt. Danach haben wir die Gäste angerufen.",
+      "ru": "Сначала мы прибрались. После этого позвонили гостям."
+     }
+    ],
+    "question": "Что было раньше?",
+    "options": [
+     "Уборка",
+     "Звонок",
+     "Бронирование"
+    ],
+    "answer": 0,
+    "right": "*Zuerst* задаёт первое событие, *danach* — следующее.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Die Tickets habe ich noch nicht reserviert.",
+      "ru": "Билеты я ещё не забронировала."
+     }
+    ],
+    "question": "Можно отметить бронь как готовую?",
+    "options": [
+     "Да",
+     "Нет",
+     "Только на субботу"
+    ],
+    "answer": 1,
+    "right": "*Noch nicht* сообщает о незавершённом деле.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Lucía und Diego sind nach Hause gekommen. Am Sonntag treffen wir uns im Club.",
+      "ru": "Лусия и Диего добрались домой. В воскресенье мы встречаемся в клубе."
+     }
+    ],
+    "question": "Что уже произошло?",
+    "options": [
+     "Воскресная встреча",
+     "Возвращение гостей",
+     "Августовская поездка"
+    ],
+    "answer": 1,
+    "right": "Perfekt подтверждает возвращение; встреча в воскресенье — следующий план.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   }
+  ],
+  "ending": "Запись исправлена по источникам. В следующей главе команда воспользуется подтверждёнными сведениями для нового решения."
+ },
+ "adventure": {
+  "kind": "sequence",
+  "title": "Начните дневник без потерянных сведений",
+  "intro": "Kieler Woche закончилась. Дана, Матео, Элиф и Хауке начинают общий дневник поездок. Для первой записи нужно восстановить вчерашние события, проверить сообщение и понять, что уже организовано, а что ещё предстоит.",
+  "ending": "Первый отчёт собран, время встречи записано. Теперь команда может обсуждать, куда поехать и почему этот вариант подходит.",
+  "challenges": [
+   {
+    "id": "phone",
+    "kind": "note",
+    "title": "Запишите сообщение Хауке",
+    "intro": "Послушайте и заполните заметку самостоятельно. Текст доступен по кнопке, если нужна помощь чтением.",
+    "success": "День, время и место сохранены. Просьба перезвонить в субботу — отдельное действие.",
+    "wrong": "Сверьте воскресенье, десять часов и клуб. Суббота относится к обратному звонку.",
+    "quotes": [
+     {
+      "de": "Hallo Dana, hier ist Hauke. Wir treffen uns am Sonntag um zehn Uhr im Club. Bitte bring das Fotoalbum mit. Ruf mich am Samstag an. Bis bald!",
+      "audio": "audio/874f62f93053.m4a",
+      "name": "Telefonnotiz für Dana"
+     }
+    ],
+    "fields": [
+     {
+      "label": "Tag",
+      "answers": [
+       "Sonntag",
+       "am Sonntag"
+      ]
+     },
+     {
+      "label": "Uhrzeit",
+      "answers": [
+       "10:00",
+       "10 Uhr",
+       "zehn Uhr"
+      ]
+     },
+     {
+      "label": "Ort",
+      "answers": [
+       "Club",
+       "im Club"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "done",
+    "kind": "pack",
+    "title": "Отметьте сделанное",
+    "intro": "Отберите только подтверждённые действия из записи.",
+    "success": "Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы одно из них.",
+    "wrong": "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание и адресата.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Am Samstag hat Dana die Fotos sortiert. Mateo hat eingekauft. Elif hat eine Liste geschrieben. Die Gäste sind nach Hause gefahren. Für Sonntag hat Hauke ein Treffen organisiert. Die Tickets sind noch nicht reserviert.",
+      "name": "Der erste Eintrag"
+     }
+    ],
+    "options": [
+     {
+      "id": "o0",
+      "label": "Fotos sortiert"
+     },
+     {
+      "id": "o1",
+      "label": "eingekauft"
+     },
+     {
+      "id": "o2",
+      "label": "Liste geschrieben"
+     },
+     {
+      "id": "o3",
+      "label": "Tickets reserviert"
+     }
+    ],
+    "answer": [
+     "o0",
+     "o1",
+     "o2"
+    ]
+   },
+   {
+    "id": "frame",
+    "kind": "order",
+    "title": "Передайте последовательность",
+    "intro": "Начните с Dann: «Потом мы позвонили гостям».",
+    "success": "Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.",
+    "wrong": "Проверьте положение глагола и конец предложения: используйте все фрагменты.",
+    "tokens": [
+     "Dann",
+     "haben",
+     "wir die Gäste",
+     "angerufen."
+    ],
+    "label": "Реплика для команды"
+   },
+   {
+    "id": "chat",
+    "kind": "negotiation",
+    "title": "Договоритесь о следующем шаге",
+    "intro": "Элиф ещё не бронировала билеты. Сначала нужен план команды, затем бронь.",
+    "success": "Вы договорились сначала встретиться и выбрать поездку, а затем бронировать.",
+    "wrong": "Учтите, что план ещё не выбран.",
+    "start": "start",
+    "nodes": [
+     {
+      "id": "start",
+      "text": "Elif: Die Tickets sind noch nicht reserviert. Was machen wir zuerst?",
+      "choices": [
+       {
+        "label": "Wir reservieren sofort alle Tickets.",
+        "next": "again",
+        "feedback": "Элиф напоминает о невыбранной поездке."
+       },
+       {
+        "label": "Wir planen am Sonntag zusammen.",
+        "next": "agree",
+        "feedback": "Вы предложили совместное планирование."
+       }
+      ]
+     },
+     {
+      "id": "again",
+      "text": "Elif: Aber wohin fahren wir? Das wissen wir noch nicht.",
+      "choices": [
+       {
+        "label": "Dann planen wir zuerst zusammen.",
+        "next": "agree",
+        "feedback": "Сначала план, затем покупка."
+       }
+      ]
+     },
+     {
+      "id": "agree",
+      "text": "Elif: Gut. Treffen wir uns um zehn im Club?",
+      "choices": [
+       {
+        "label": "Ja, um zehn im Club. Ich bringe das Album mit.",
+        "next": "end",
+        "feedback": "Вы подтвердили время, место и свою задачу."
+       }
+      ]
+     },
+     {
+      "id": "end",
+      "text": "Elif: Abgemacht! Danach reservieren wir.",
+      "terminal": true,
+      "choices": []
+     }
+    ]
+   },
+   {
+    "id": "return",
+    "kind": "select",
+    "title": "Запишите, где гости сейчас",
+    "intro": "Не перепутайте завершённую поездку с планом.",
+    "success": "Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы одно из них.",
+    "wrong": "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание и адресата.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Am Samstag hat Dana die Fotos sortiert. Mateo hat eingekauft. Elif hat eine Liste geschrieben. Die Gäste sind nach Hause gefahren. Für Sonntag hat Hauke ein Treffen organisiert. Die Tickets sind noch nicht reserviert.",
+      "name": "Der erste Eintrag"
+     }
+    ],
+    "options": [
+     {
+      "id": "o0",
+      "label": "Sie sind nach Hause gefahren."
+     },
+     {
+      "id": "o1",
+      "label": "Sie fahren morgen nach Kiel."
+     },
+     {
+      "id": "o2",
+      "label": "Sie sind im Club."
+     }
+    ],
+    "answer": [
+     "o0"
+    ]
+   }
+  ]
+ },
+ "spy": [
+  {
+   "de": "Danach haben wir die Fahrt organisiert.",
+   "wrong": "Danach wir haben die Fahrt organisiert.",
+   "why": "Глагол стоит на второй позиции: после *Danach* сразу идёт *haben*, а *wir* — за ним.",
+   "auto": true
+  }
+ ]
+}

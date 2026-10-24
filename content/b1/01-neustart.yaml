@@ -1,0 +1,862 @@
+id: b1-neustart
+order: 1
+title: Was können wir gemeinsam beitragen?
+ru: Связный рассказ и новое общее дело
+lede: "Летний Küstenlogbuch закончен. В сентябре Дана, Матео, Элиф и Хауке обсуждают осенний
+  FördeTreff: встречу с фотографиями, рассказами и едой. Прежде чем брать задачи, нужно понять
+  опыт друзей, их возможности и то, что пока осталось только идеей."
+goals:
+  - Связать события словами zuerst и danach, а причину — с последствием через deshalb
+  - Различить выполненное действие, возможность и неподтверждённое предложение
+  - Найти главную мысль короткого текста, не отвлекаясь на отдельную деталь
+  - Выбрать посильную роль и уточнить задачу собеседника
+  - Рассказать о себе и поддержать знакомство встречными вопросами
+grammar:
+  - zuerst → danach → deshalb; повтор weil и dass
+exam:
+  - b1-lesen-2
+  - b1-lesen-1
+  - b1-hoeren-1
+  - b1-sprechen-1
+dialogues:
+  scene:
+    title: Was können wir gemeinsam beitragen?
+    ru: Связный рассказ и новое общее дело
+    place: Kiel · клуб на Kiellinie · вымышленная учебная ситуация
+    people:
+      D:
+        name: Dana
+        voice: Anna
+      M:
+        name: Mateo
+        voice: Reed
+      E:
+        name: Elif
+        voice: Flo
+      H:
+        name: Hauke
+        voice: Rocko
+    lines:
+      - D: Im Sommer haben wir viel zusammen erlebt. Zuerst haben wir kleine Fahrten geplant.
+        ru: Летом мы многое пережили вместе. Сначала мы планировали небольшие поездки.
+      - E: Danach haben wir Fotos und kurze Berichte gesammelt. Unser Küstenlogbuch ist fertig.
+        ru: Потом мы собрали фотографии и короткие отчёты. Наш дневник закончен.
+      - H: Die Berichte sind interessant. Deshalb möchte ich neue Leute zu einem Fotoabend einladen.
+        ru: Рассказы интересные. Поэтому я хочу пригласить новых людей на фотовечер.
+      - M: Ich kann am Sonntag helfen, weil ich dann frei habe. Am Samstag arbeite ich.
+        ru: Я могу помочь в воскресенье, потому что тогда свободен. В субботу я работаю.
+      - D: Ich kann die Gäste begrüßen und mit ihnen sprechen. Das habe ich im Sommer oft gemacht.
+        ru: Я могу встречать гостей и разговаривать с ними. Летом я часто это делала.
+      - E: Ich würde gern die Bilder zeigen. Zuerst möchte ich aber wissen, ob wir den Raum bekommen.
+        ru: Я бы хотела показать фотографии. Но сначала хочу узнать, получим ли мы помещение.
+      - H: Ich habe beim Club nachgefragt. Eine Antwort haben wir noch nicht.
+        ru: Я уточнил в клубе. Ответа пока нет.
+      - M: Dann sammeln wir zuerst unsere Ideen. Danach schreiben wir einen gemeinsamen Plan.
+        ru: Тогда сначала соберём наши идеи. Потом напишем общий план.
+      - D: Gut. Wir nennen das Treffen FördeTreff. Der Name steht fest, aber den Termin müssen wir noch
+          klären.
+        ru: Хорошо. Назовём встречу FördeTreff. Название решено, но дату нам ещё нужно уточнить.
+      - E: Ich finde, dass jeder eine kleine Aufgabe übernehmen kann. Was möchtest du beitragen?
+        ru: Думаю, каждый может взять небольшую задачу. А какой вклад хочешь внести ты?
+words:
+  useful:
+    title: Wörter für die Aufgabe
+    ru: Слова для действия
+    items:
+      - de: die Erfahrung
+        ru: опыт, пережитое событие
+        pl: Erfahrungen
+      - de: der Bericht
+        ru: рассказ, отчёт
+        pl: Berichte
+      - de: der Beitrag
+        ru: вклад
+        pl: Beiträge
+      - de: eine Aufgabe übernehmen
+        ru: взять на себя задачу
+      - de: die Rückmeldung
+        ru: ответ, обратная связь
+        pl: Rückmeldungen
+      - de: der Austausch
+        ru: обмен, общение
+        pl: "-"
+      - de: die Unterstützung
+        ru: поддержка
+        pl: "-"
+      - de: der Ablauf
+        ru: порядок, ход события
+        pl: Abläufe
+      - de: der Schwerpunkt
+        ru: главная тема, акцент
+        pl: Schwerpunkte
+      - de: die Möglichkeit
+        ru: возможность
+        pl: Möglichkeiten
+      - de: die Voraussetzung
+        ru: предпосылка, необходимое условие
+        pl: Voraussetzungen
+      - de: nachfragen
+        ru: уточнять, переспрашивать
+      - de: feststehen
+        ru: быть решённым, определённым
+      - de: bisher
+        ru: до сих пор, прежде
+      - de: inzwischen
+        ru: тем временем, к настоящему моменту
+      - de: deshalb
+        ru: поэтому
+      - de: zuerst
+        ru: сначала
+      - de: danach
+        ru: после этого
+      - de: gemeinsam planen
+        ru: планировать вместе
+      - de: die Hauptaussage
+        ru: главная мысль
+        pl: Hauptaussagen
+tables:
+  rule:
+    title: zuerst → danach → deshalb; повтор weil и dass
+    ru: Опора для решения
+    head:
+      - Beispiel
+      - Смысл и форма
+    ruCols:
+      - 1
+    rows:
+      - - Zuerst haben wir geplant. Danach haben wir Fotos gesammelt.
+        - zuerst / danach связывают события по времени.
+      - - Mateo hat am Sonntag frei. Deshalb kann er helfen.
+        - deshalb называет последствие; после него — глагол.
+      - - Mateo kann helfen, weil er am Sonntag frei hat.
+        - "weil: причина в придаточном, глагол в конце."
+      - - Ich finde, dass jeder eine Aufgabe übernehmen kann.
+        - dass передаёт мысль; личный глагол остаётся в конце.
+tasks:
+  status:
+    kind: message
+    part: b1-lesen-2
+    title: Was steht schon fest?
+    text: "September, erste Besprechung: Das Küstenlogbuch ist fertig. Der Name FördeTreff steht
+      fest. Die Gruppe möchte neue Menschen kennenlernen und ihre Sommerberichte zeigen. Hauke
+      hat beim Club nachgefragt. Der Raum ist noch nicht bestätigt. Auch der Termin steht noch
+      nicht fest. Mateo kann am Sonntag helfen, weil er frei hat. Dana kann die Gäste begrüßen.
+      Elif würde gern die Bilder zeigen. Das sind Angebote für den gemeinsamen Plan, noch keine
+      vollständige Aufgabenliste."
+  headlines:
+    kind: worksheet
+    part: b1-lesen-1
+    format: matching
+    title: Fünf Texte, zehn Überschriften
+    situation: Lesen Sie die fünf Texte. Wählen Sie für jeden Text die passende Überschrift. Jede
+      Überschrift passt höchstens einmal. Alle Einrichtungen und Angebote sind erfundene
+      Lernbeispiele.
+    text: >-
+      1. Ein Lernclub in Kiel plant einen Fotoabend. Die Mitglieder haben im Sommer Bilder am
+      Wasser gemacht und kurze Geschichten dazu gesammelt. Jetzt möchten sie ihre Nachbarn
+      einladen. Die Bilder hängen für einen Abend im Gemeinschaftsraum. Eintritt und Getränke
+      sind kostenlos. Die Gäste können Fragen stellen und von ihren eigenen Erlebnissen
+      erzählen. Es geht nicht um einen Fotowettbewerb, sondern um neue Kontakte im Stadtteil.
+
+
+      2. Nach ihrer Arbeit haben viele Erwachsene nur wenig Zeit, Deutsch zu üben. Eine Gruppe trifft
+      sich deshalb dienstags um 19 Uhr im Lernraum. Die Teilnehmer sprechen über ihren Alltag
+      und erklären einander kurze Nachrichten. Eine Lehrerin hilft bei Fragen. Niemand muss vor
+      dem Treffen lange Wortlisten lernen. Auch ohne Hausaufgaben kann man mitmachen. Am
+      wichtigsten ist, dass jeder etwas sagt und den anderen zuhört.
+
+
+      3. Einige neue Bewohner verstehen Alltagssprache, aber Briefe von einer Behörde sind für
+      sie noch schwierig. Im Lernzentrum können sie deshalb einmal pro Woche gemeinsam solche
+      Texte lesen. Die Helfer erklären Wörter und suchen mit den Besuchern die wichtigen
+      Termine. Sie entscheiden nicht über Anträge und geben keine Rechtsberatung. Bei einer
+      offenen Frage hilft die Gruppe, eine verständliche Rückfrage an die zuständige Stelle zu
+      formulieren.
+
+
+      4. Ein Treffpunkt am Hafen organisiert kleine Fahrten in die Umgebung. Vor jeder Fahrt
+      vergleicht die Gruppe Preise, Interessen und freie Zeiten. Eine Person sucht eine
+      Verbindung, eine andere fragt nach dem Museum. Danach entscheiden alle zusammen. Niemand
+      muss sich mit Booten auskennen. Auch Menschen ohne Auto können teilnehmen. Die Gruppe
+      möchte die Gegend kennenlernen und unterwegs miteinander sprechen, statt nur ein fertiges
+      Programm zu bekommen.
+
+
+      5. Die Lernbibliothek hat ihre Öffnungszeiten geändert. Früher war sie am Mittwochabend
+      geschlossen. Jetzt kann man dort mittwochs bis 20 Uhr Bücher ausleihen. Gespräche sind im
+      Eingangsbereich möglich; im Leseraum soll es ruhig bleiben. Wer ein Buch länger braucht,
+      kann vorher eine Nachricht schreiben. Für Gruppen gibt es weiterhin einen eigenen Raum.
+      Diesen Raum muss man reservieren. Die Änderungen gelten für alle Besucher, nicht nur für
+      neue Mitglieder.
+    uniqueOptions: true
+    questions:
+      - prompt: Text 1
+        options: &a1
+          - a · Neue Regeln für eine Bibliothek
+          - b · Ausflüge gemeinsam vorbereiten
+          - c · Nach der Arbeit zusammen Deutsch lernen
+          - d · Hilfe beim Lesen amtlicher Briefe
+          - e · Eine Fotoausstellung im Stadtteil
+          - f · Ein neues Restaurant sucht Personal
+          - g · Allein auf eine lange Reise gehen
+          - h · Computer für eine Schule kaufen
+          - i · Ein Kurs für die Führerscheinprüfung
+          - j · Jeden Tag allein zu Hause lernen
+        answers:
+          - e · Eine Fotoausstellung im Stadtteil
+      - prompt: Text 2
+        options: *a1
+        answers:
+          - c · Nach der Arbeit zusammen Deutsch lernen
+      - prompt: Text 3
+        options: *a1
+        answers:
+          - d · Hilfe beim Lesen amtlicher Briefe
+      - prompt: Text 4
+        options: *a1
+        answers:
+          - b · Ausflüge gemeinsam vorbereiten
+      - prompt: Text 5
+        options: *a1
+        answers:
+          - a · Neue Regeln für eine Bibliothek
+  voices:
+    kind: worksheet
+    part: b1-hoeren-1
+    format: article
+    title: Fünf Stimmen zum Mitmachen
+    situation: "Hören Sie jede Stimme einmal und entscheiden Sie: richtig oder falsch. Im Lernmodus
+      können Sie danach nochmals hören oder den Text öffnen."
+    recordings:
+      - voice: Anna
+        text: Inzwischen kann ich im Alltag vieles selbst erledigen. Bei langen Briefen brauche ich
+          manchmal noch Hilfe. Deshalb lese ich schwierige Texte gern mit anderen. Beim Treffen
+          kann ich neue Gäste begrüßen. Einen Vortrag über medizinische Themen möchte ich dort
+          nicht halten.
+      - voice: Reed
+        text: Ich arbeite weiterhin im Restaurant in Holtenau. Samstagabend habe ich normalerweise
+          keine Zeit. Am Sonntag bin ich frei. Deshalb kann ich an diesem Tag beim Treffen
+          helfen. Ich könnte etwas zu essen vorbereiten, aber zuerst möchte ich wissen, wie
+          viele Gäste kommen.
+      - voice: Flo
+        text: Im Sommer haben wir viele Fotos gesammelt. Zuerst möchte ich mit der Gruppe eine kleine
+          Auswahl machen. Danach können wir die Bilder beim Treffen zeigen. Die Reihenfolge
+          steht noch nicht fest. Ich möchte deshalb noch kein fertiges Programm verschicken.
+      - voice: Rocko
+        text: Ich wohne in Hamburg und komme nicht jeden Tag nach Kiel. Für ein gemeinsames Treffen
+          fahre ich aber gern dorthin. Ich habe beim Club nach einem Raum gefragt. Bisher habe
+          ich keine Antwort bekommen. Deshalb kann ich den Ort noch nicht bestätigen.
+      - voice: Shelley
+        text: Beim Sprachenlernen möchte ich vor allem Gespräche führen. Eine Wortliste kann mir
+          manchmal helfen, aber allein damit lerne ich nicht gern. Ich brauche eine Aufgabe und
+          eine Antwort von einem anderen Menschen. Deshalb finde ich einen gemeinsamen Abend
+          interessanter als einen Wettbewerb mit Vokabeln.
+    questions:
+      - prompt: Dana möchte beim Treffen einen medizinischen Vortrag halten.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Mateo kann am Sonntag helfen.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+      - prompt: Elif möchte zuerst Fotos auswählen und sie danach zeigen.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+      - prompt: Hauke hat schon eine Zusage für den Raum bekommen.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Die letzte Sprecherin lernt am liebsten nur mit Wortlisten.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+  self:
+    kind: card
+    part: b1-sprechen-1
+    title: Einander kennenlernen
+    theme: Neu im Team
+    word: Name · Wohnort · Arbeit oder Studium · Sprachen · Erfahrung · Interesse
+    situation: Lernen Sie eine andere Person kennen. Erzählen Sie etwas über sich, hören Sie zu und
+      fragen Sie nach. Berichten Sie auch von einem Erlebnis. Sie sprechen über sich selbst;
+      Sie müssen keine Biografie auswendig lernen.
+    roles:
+      - title: Person A
+        text: Beginnen Sie mit zwei oder drei Informationen über sich. Fragen Sie dann, warum Ihr
+          Gegenüber Deutsch lernt und was es gern in einer Gruppe macht. Reagieren Sie auf eine
+          Antwort.
+      - title: Person B
+        text: Antworten Sie und erzählen Sie etwas über sich. Fragen Sie nach einem Erlebnis oder
+          Interesse der anderen Person. Wechseln Sie danach die Rollen.
+    sample:
+      - Ich wohne in Kiel und lerne Deutsch, weil ich mich im Alltag sicherer fühlen möchte.
+      - Im Sommer habe ich mit Freunden eine Fahrt geplant. Zuerst haben wir die Zeiten
+        verglichen. Danach haben wir zusammen entschieden.
+      - Und was machst du gern in einer Gruppe?
+      - Du hast von einer Fahrt erzählt. Wohin seid ihr gefahren?
+steps:
+  - id: start
+    chapter: scene
+    title: Новое дело команды
+    beats:
+      - read: "Летний Küstenlogbuch закончен. В сентябре Дана, Матео, Элиф и Хауке обсуждают осенний
+          FördeTreff: встречу с фотографиями, рассказами и едой. Прежде чем брать задачи, нужно
+          понять опыт друзей, их возможности и то, что пока осталось только идеей. Все нужные
+          условия даны в сцене: знания географии, настоящих цен или расписаний не требуются.
+          Сначала попробуйте понять, какого результата добиваются друзья, затем слушайте
+          реплики. На новом уровне важно не только найти число или знакомое слово, но и связать
+          несколько сведений."
+        point: Связный рассказ и новое общее дело
+        set:
+          view: dialogue
+          dialogue: scene
+          reveal: 4
+      - read: "На A2 вы уже находили нужное время и выбирали вариант по условиям. Теперь важно связать
+          сведения: что команда сделала, почему появилась новая идея и какие вопросы ещё
+          открыты. *Zuerst* и *danach* связывают события по времени. *Deshalb* связывает
+          причину с последствием. Уверенное название встречи не означает, что уже подтверждены
+          помещение и дата. В следующей реплике ищите не просто знакомое слово, а то, что оно
+          добавляет к общей истории."
+        point: zuerst → danach → deshalb; повтор weil и dass
+        set:
+          reveal: 10
+  - id: words
+    chapter: words
+    title: Слова, которые понадобятся
+    beats:
+      - read: "Выбирайте роль по возможностям и интересу. *Etwas beitragen* означает внести свой вклад. *Eine Aufgabe übernehmen* означает взять на
+          себя задачу, *eine Rückmeldung bekommen* — получить ответ. Между обещанием помочь и
+          уже выполненным делом остаётся разница. В новых текстах встретятся слова *Beitrag*,
+          *Erfahrung* и *Austausch*: они помогают говорить об участии, прошлом опыте и общении.
+          Для начала достаточно понять их в контексте задачи, а не воспроизвести всю словарную
+          группу."
+        point: Сначала используйте слово для решения; словарь остаётся справочником.
+        set:
+          view: words
+          words: useful
+          reveal: 6
+      - read: "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к
+          ситуации: какие слова обозначают человека, место, условие или уже выполненное
+          действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово
+          встретится снова в записке или разговоре, попробуйте восстановить его смысл до
+          подсказки."
+        point: Возвращайтесь к выражениям в сообщениях и новых действиях.
+        set:
+          reveal: 20
+  - id: grammar
+    chapter: grammar
+    title: zuerst → danach → deshalb; повтор weil и dass
+    beats:
+      - read: "Эти слова помогают слушателю восстановить порядок, даже если он не был с вами. После
+          обстоятельства личный глагол остаётся на второй позиции: *Danach haben wir …*. Между
+          обстоятельством и глаголом не нужно добавлять подлежащее. В разговоре необязательно
+          перечислять каждую минуту: выберите события, без которых собеседник не поймёт, как
+          команда пришла к своей идее."
+        point: zuerst / danach связывают события по времени.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+            - 3
+      - read: "Первая фраза сообщает причину, вторая — её результат. *Deshalb* занимает первую позицию,
+          поэтому *kann* идёт сразу за ним, а *er* — после глагола. *Helfen* остаётся в конце
+          модальной рамки. Не всякое следующее событие является последствием предыдущего:
+          свободное воскресенье объясняет возможность помочь, но не доказывает, что помещение
+          уже получено."
+        point: deshalb называет последствие; после него — глагол.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+            - 3
+      - read: "Это знакомая связь из A2. Сравните две версии: *Er hat frei. Deshalb kann er helfen* и
+          *Er kann helfen, weil er frei hat*. Смысл причины сохраняется, но предложения
+          устроены по-разному. Не переносите порядок слов после *weil* в часть с *deshalb*.
+          Ваша цель — выбрать подходящую связь и сделать сообщение понятным, а не вставить как
+          можно больше союзов."
+        point: "weil: причина в придаточном, глагол в конце."
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+            - 3
+      - read: "Элиф предлагает распределить небольшие задачи. Это её мнение о совместной работе, а не
+          уже готовый список обязанностей. После *dass* знакомый порядок: подлежащее,
+          дополнение, инфинитив и личная модальная форма. Используйте эту рамку для собственной
+          мысли. Если ответ длинный, разделите его на две понятные фразы вместо одного
+          предложения с несколькими вложенными частями."
+        point: dass передаёт мысль; личный глагол остаётся в конце.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+            - 3
+  - id: frames
+    chapter: grammar
+    title: Как устроена реплика
+    beats:
+      - read: "Начните со следствия: *Deshalb kann Mateo am Sonntag helfen*. Слово *deshalb* занимает
+          первую позицию целиком, *kann* — вторую, а инфинитив *helfen* закрывает рамку. Если
+          начать с имени, получится *Mateo kann deshalb am Sonntag helfen*. Обе версии
+          подходят. В игре начальное слово задано, чтобы вы потренировали перестройку, а не
+          угадали единственный возможный способ выразить мысль."
+        point: "*Deshalb kann Mateo am Sonntag helfen.*"
+        set:
+          view: sentence
+          rows:
+            - de:
+                - Deshalb
+                - kann
+                - Mateo am Sonntag
+                - helfen.
+              ru: Поэтому Матео может помочь в воскресенье.
+      - read: "Теперь вернитесь к завершённому событию: *Danach haben wir die Fotos gesammelt*.
+          Вспомогательный глагол стоит сразу после обстоятельства, а причастие — в конце. Эта
+          рамка уже знакома. Новая задача состоит в выборе связи: *danach* показывает, что было
+          потом, но не утверждает, что сбор фотографий был необходимым следствием первого
+          действия."
+        point: "*Danach haben wir die Fotos gesammelt.*"
+        set:
+          view: sentence
+          rows:
+            - de:
+                - Danach
+                - haben
+                - wir die Fotos
+                - gesammelt.
+              ru: После этого мы собрали фотографии.
+  - id: check
+    chapter: practice
+    title: Проверьте смысл до подсказки
+    beats:
+      - question: После deshalb нужно «Mateo kann» или «kann Mateo»?
+        read: "Если *deshalb* стоит в начале главного предложения, сразу после него нужен личный
+          глагол: *Deshalb kann Mateo helfen*. Это та же вторая позиция, что и после *danach*.
+          В русском порядок не подсказывает форму автоматически, поэтому перед продолжением
+          найдите первую позицию, затем глагол, затем подлежащее."
+        point: "*Deshalb kann Mateo helfen.*"
+        set:
+          view: table
+          table: rule
+      - question: «Я уточнил в клубе» означает, что помещение уже подтверждено?
+        read: "Нет. Хауке сделал запрос, но отдельно сказал, что ответа пока нет. Для подтверждения
+          нужен ответ клуба. В отчёте это две разные строки: действие выполнено, результат ещё
+          неизвестен. Слова о возможности и желании тоже не стоит превращать в готовую
+          договорённость."
+        point: Запрос отправлен ≠ положительный ответ получен.
+        set:
+          view: table
+          table: rule
+      - question: В тексте упомянуто кафе. Значит ли это, что текст о еде?
+        read: Не обязательно. Встреча может проходить в кафе, но главной темой быть знакомство или
+          изучение языка. Заголовок должен описывать смысл целого текста. Проверьте, зачем люди
+          встречаются и какой результат хотят получить. Место, время и пример помогают понять
+          содержание, но не всегда являются его главной мыслью.
+        point: Заголовок отражает главную мысль, а не случайную деталь.
+        set:
+          view: table
+          table: rule
+  - id: exam-status
+    chapter: exam
+    title: Was steht schon fest?
+    beats:
+      - read: "В этой записи смешаны завершённые действия, предложения и открытые вопросы. Сначала
+          попробуйте составить три короткие колонки: что уже произошло, что друзья предлагают и
+          о чём пока нет подтверждения. Не превращайте свободное воскресенье Матео в
+          окончательную дату встречи. Эта запись нужна и для сюжетной игры: здесь вы тренируете
+          внимательное чтение, а не решаете полный набор Lesen 2."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: status
+      - question: Готовы сверить своё решение с источником?
+        read: "Дневник закончен, запрос в клуб отправлен, название выбрано. Помещение и дата не
+          подтверждены. Возможность Матео помочь в воскресенье не решает вопрос за остальных.
+          Попробуйте пересказать это в трёх связанных предложениях: что известно, почему
+          появился замысел, что надо уточнить дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: status
+        set:
+          view: task
+          task: status
+          solved: true
+  - id: exam-headlines
+    chapter: exam
+    title: Fünf Texte, zehn Überschriften
+    beats:
+      - read: "В B1 важно понять текст целиком. Прочитайте пять коротких материалов и подберите
+          заголовки. Пять вариантов окажутся лишними. Если заметили слово «кафе» или
+          «компьютер», не выбирайте заголовок сразу: объясните, о чём текст в целом. Каждый
+          выбранный заголовок можно использовать один раз. После первой попытки найдите
+          предложение, которое лучше всего подтверждает ваш выбор."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: headlines
+      - question: Готовы сверить своё решение с источником?
+        read: Подходят заголовки e, c, d, b, a. Первый текст о выставке и новых контактах, второй — о
+          вечерней разговорной практике. Третий описывает совместное чтение сложных писем,
+          четвёртый — подготовку поездок. Пятый сообщает правила и часы библиотеки. Отдельная
+          деталь должна поддерживать главную мысль, а не заменять её.
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: headlines
+        set:
+          view: task
+          task: headlines
+          solved: true
+  - id: exam-voices
+    chapter: exam
+    title: Fünf Stimmen zum Mitmachen
+    beats:
+      - read: "Здесь пять коротких высказываний, по одному утверждению на каждое. В самостоятельной
+          попытке слушайте каждую запись один раз и не открывайте текст. В учебной сцене можно
+          переслушать после попытки: это помощь для разбора, а не результат независимого
+          аудирования. Следите за отрицанием и различайте намерение, возможность и полученное
+          подтверждение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: voices
+      - question: Готовы сверить своё решение с источником?
+        read: "Ответы: falsch, richtig, richtig, falsch, falsch. Дана прямо отказывается от
+          медицинского выступления. Матео свободен в воскресенье. Элиф различает отбор и показ
+          фотографий. Хауке пока ждёт ответ. Последняя собеседница предпочитает применение
+          языка в разговоре, а не только списки слов. Сверьте не одно совпавшее слово, а всё
+          утверждение."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: voices
+        set:
+          view: task
+          task: voices
+          solved: true
+  - id: exam-self
+    chapter: exam
+    title: Einander kennenlernen
+    beats:
+      - read: "Не читайте заготовленную автобиографию. Сначала сообщите несколько сведений о себе,
+          затем задайте встречный вопрос. Ответ партнёра должен повлиять на следующую реплику:
+          уточните место, причину или опыт. Карточки задают направление, но не требуют
+          произнести все пункты подряд. Один человек не должен задавать все вопросы, пока
+          другой только отвечает."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: self
+          reveal: 0
+      - question: Готовы сверить своё решение с источником?
+        read: "Образцы показывают возможную связность, а не единственно правильную биографию.
+          Проверьте, был ли встречный вопрос, понятен ли ваш ответ и связаны ли события
+          рассказа. Если партнёр сказал что-то неожиданное, можно попросить уточнение.
+          Самостоятельная речь не получает автоматический балл: полезнее короткая обратная
+          связь о том, что удалось понять."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: self
+          reveal: 0
+        set:
+          view: task
+          task: self
+          solved: true
+exercises:
+  - type: choice
+    q: Die Berichte sind interessant. ___ möchte Hauke Gäste einladen.
+    options:
+      - Deshalb
+      - Weil
+      - Dass
+    answer: 0
+    why: Deshalb соединяет причину с последствием.
+  - type: choice
+    q: Deshalb ___ Mateo am Sonntag helfen.
+    options:
+      - kann
+      - Mateo kann
+      - können
+    answer: 0
+    why: После начального deshalb сразу личный глагол.
+  - type: choice
+    q: Danach ___ wir die Fotos gesammelt.
+    options:
+      - haben
+      - wir haben
+      - sind
+    answer: 0
+    why: Сохраняем вторую позицию haben.
+  - type: choice
+    q: Mateo kann helfen, weil er am Sonntag frei ___.
+    options:
+      - hat
+      - haben
+      - hast
+    answer: 0
+    why: Личная форма придаточного стоит в конце.
+  - type: choice
+    q: Elif findet, dass jeder eine Aufgabe übernehmen ___.
+    options:
+      - kann
+      - können
+      - könnt
+    answer: 0
+    why: Jeder — единственное число.
+  - type: choice
+    q: "«Ich habe nachgefragt» подтверждает:"
+    options:
+      - что вопрос задан
+      - что ответ положительный
+      - что место забронировано
+    answer: 0
+    why: Запрос и ответ — разные факты.
+  - type: order
+    ru: Сначала мы спланировали поездки.
+    de: Zuerst haben wir die Fahrten geplant.
+  - type: order
+    ru: После этого мы собрали фотографии.
+    de: Danach haben wir die Fotos gesammelt.
+  - type: order
+    ru: Поэтому Матео может помочь в воскресенье.
+    de: Deshalb kann Mateo am Sonntag helfen.
+  - type: order
+    ru: Я могу помочь, потому что свободен в воскресенье.
+    de: Ich kann helfen, weil ich am Sonntag frei habe.
+  - type: order
+    ru: Думаю, каждый может взять задачу.
+    de: Ich finde, dass jeder eine Aufgabe übernehmen kann.
+  - type: order
+    ru: Помещение ещё не подтверждено.
+    de: Der Raum ist noch nicht bestätigt.
+  - type: choice
+    q: Нужно выразить только порядок действий. Что выбрать?
+    options:
+      - Zuerst wählen wir Bilder aus. Danach zeigen wir sie.
+      - Wir wählen Bilder aus, weil alle Räume frei sind.
+      - Alle Räume sind bestätigt. Deshalb wählen wir Bilder aus.
+    answer: 0
+    why: Первая версия показывает порядок и не добавляет выдуманной причины.
+  - type: choice
+    q: "После «Hauke hat nachgefragt» известно: «Eine Antwort haben wir noch nicht». Как
+      пересказать?"
+    options:
+      - Die Anfrage ist gestellt, aber der Raum ist noch nicht bestätigt.
+      - Der Club hat den Raum bestätigt.
+      - Der Club hat den Raum abgesagt.
+    answer: 0
+    why: Нет ответа — это не согласие и не отказ.
+case:
+  title: Was steht fest — und was fehlt noch?
+  ru: Проверка пересказа
+  intro: "После первой встречи появился слишком уверенный пересказ. Восстановите точную версию:
+    что произошло, почему Матео может помочь и что клуб действительно ответил."
+  people: {}
+  steps:
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Zuerst haben wir Fahrten geplant. Danach haben wir Fotos gesammelt.
+          ru: Сначала мы планировали поездки. После этого собрали фотографии.
+      question: Какая связь дана прямо?
+      options:
+        - Временная последовательность
+        - Фотографии вызвали поездки
+        - Бронь помещения
+      answer: 0
+      right: Zuerst и danach задают порядок, не обещая причинной связи.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Mateo hat am Sonntag frei. Deshalb kann er helfen.
+          ru: В воскресенье Матео свободен. Поэтому он может помочь.
+      question: Что является следствием?
+      options:
+        - Возможность помочь
+        - Рабочая смена в субботу
+        - Подтверждение помещения
+      answer: 0
+      right: Свободное воскресенье объясняет возможность, но не решает вопрос помещения.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Hauke hat beim Club nachgefragt. Eine Antwort hat er noch nicht bekommen.
+          ru: Хауке уточнил в клубе. Ответа он пока не получил.
+      question: Какую строку допустимо внести в отчёт?
+      options:
+        - Помещение подтверждено
+        - Запрос отправлен, ответ ожидается
+        - Клуб отказал
+      answer: 1
+      right: Ожидание ответа не равно ни согласию, ни отказу.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+  ending: "Пересказ исправлен: опыт, возможность и подтверждение разделены. Теперь о следующем
+    шаге можно говорить уверенно, не придумывая готовую программу."
+adventure:
+  kind: sequence
+  title: Соберите первый план FördeTreff
+  intro: "Летний Küstenlogbuch закончен. В сентябре Дана, Матео, Элиф и Хауке обсуждают осенний
+    FördeTreff: встречу с фотографиями, рассказами и едой. Прежде чем брать задачи, нужно
+    понять опыт друзей, их возможности и то, что пока осталось только идеей."
+  ending: Команда отделила опыт от обещаний, записала открытые вопросы и нашла посильные роли.
+    Первое решение — подготовить предложения, не выдавая их за утверждённую программу. Дальше
+    предстоит точнее описать людей и задачи.
+  challenges:
+    - id: timeline
+      kind: match
+      title: Разделите результат, цель и открытый вопрос
+      intro: Сопоставьте сообщения с тем, что они добавляют к общему рассказу.
+      mode: reading
+      clue:
+        task: status
+      slots:
+        - id: past
+          label: Das Küstenlogbuch ist fertig.
+          answer: done
+        - id: idea
+          label: Wir möchten neue Menschen kennenlernen.
+          answer: wish
+        - id: room
+          label: Der Raum ist noch nicht bestätigt.
+          answer: open
+      options:
+        - id: done
+          label: завершённый результат
+        - id: wish
+          label: цель новой встречи
+        - id: open
+          label: вопрос без подтверждения
+      success: Готовый дневник, новая цель и незакрытый вопрос не смешались.
+      wrong: Готовность дневника не подтверждает помещение. Желание познакомиться — цель.
+    - id: heading
+      kind: select
+      title: Выберите главную мысль сообщения
+      intro: Текст описывает новую инициативу команды. Какая формулировка охватывает весь замысел?
+      mode: reading
+      clue:
+        task: status
+      options:
+        - id: o0
+          label: Die Gruppe plant einen gemeinsamen Abend und klärt noch die Bedingungen.
+        - id: o1
+          label: Die Gruppe sucht ein neues Restaurant für Mateo.
+        - id: o2
+          label: Alle Termine und Räume sind schon bestätigt.
+      answer:
+        - o0
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."
+    - id: consequence
+      kind: order
+      title: Объясните возможность Матео
+      intro: "Начните с Deshalb: «Поэтому Матео может помочь в воскресенье»."
+      label: Реплика для команды
+      tokens:
+        - Deshalb
+        - kann
+        - Mateo am Sonntag
+        - helfen.
+      success: Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.
+      wrong: "Проверьте положение глагола и конец предложения: используйте все фрагменты."
+    - id: role
+      kind: negotiation
+      title: Выберите посильную роль
+      intro: Вы можете помочь с фотографиями или приветствием гостей. Оба пути допустимы; узнайте и
+        подтвердите следующий шаг.
+      start: start
+      success: Вы взяли конкретную задачу и подтвердили следующий шаг без неподтверждённых обещаний.
+      wrong: Сначала уточните задачу и подтверждение, не обещайте готовую программу.
+      nodes:
+        - id: start
+          text: "Elif: Wir brauchen Hilfe mit den Fotos und beim Begrüßen der Gäste. Was möchtest du
+            machen?"
+          choices:
+            - label: Ich möchte die Fotos auswählen.
+              next: photos
+              feedback: Вы выбрали подготовку изображений.
+            - label: Ich möchte neue Gäste begrüßen.
+              next: guests
+              feedback: Вы выбрали общение с гостями.
+        - id: photos
+          text: "Elif: Gut. Aber zuerst wählen wir die Bilder aus. Können wir schon eine fertige
+            Ausstellung ankündigen?"
+          choices:
+            - label: Ja, alles ist schon fertig.
+              next: retry
+              feedback: Изображения ещё не выбраны, помещение не подтверждено.
+            - label: Nein. Zuerst wählen wir die Fotos aus, danach planen wir die Ausstellung.
+              next: end-photos
+              feedback: Последовательность соответствует фактам.
+        - id: retry
+          text: "Elif: Die Auswahl ist noch nicht fertig. Was machen wir zuerst?"
+          choices:
+            - label: Zuerst wählen wir die Bilder aus.
+              next: end-photos
+              feedback: Вы вернулись к реальному следующему шагу.
+        - id: guests
+          text: "Dana: Gut. Dann sammeln wir zuerst Fragen für die Gäste. Den Ort können wir noch nicht
+            bestätigen."
+          choices:
+            - label: Ich bereite Fragen vor. Danach klären wir den Ort.
+              next: end-guests
+              feedback: Задача понятна, место не выдумано.
+        - id: end-photos
+          text: "Elif: Abgemacht. Wir beginnen mit der Auswahl."
+          terminal: true
+          choices: []
+        - id: end-guests
+          text: "Dana: Abgemacht. Wir bereiten das Gespräch vor."
+          terminal: true
+          choices: []
+    - id: note
+      kind: note
+      title: Оставьте надёжную заметку
+      intro: Запишите известное название встречи и статус помещения. Для статуса подходит «ещё не
+        подтверждено» по-немецки.
+      mode: reading
+      clue:
+        task: status
+      fields:
+        - label: Name des Treffens
+          answers:
+            - FördeTreff
+            - Foerdetreff
+        - label: "Raum: Status"
+          answers:
+            - noch nicht bestätigt
+            - nicht bestätigt
+            - noch offen
+            - offen
+      success: Название подтверждено, помещение остаётся открытым вопросом. В заметке нет вымышленной
+        брони.
+      wrong: Название — FördeTreff. Помещение ещё не подтверждено; открытый вопрос не означает
+        «помещение открыто».

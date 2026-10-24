@@ -4,7 +4,7 @@
  "order": 5,
  "title": "Was kostet das?",
  "ru": "Покупки и одежда",
- "lede": "Суббота в Лейпциге: Анна покупает яблоки на рынке, а Марко ищет новый свитер. Учимся спрашивать цену, называть количество и размер, говорить, что вещь велика или дорога, — и заменять уже названный предмет местоимением.",
+ "lede": "Еда для встречи выбрана — теперь нужны покупки. Дана берёт продукты на рынке в Киле, а Матео ищет свитер на Holtenauer Straße для прохладного вечера у воды. Учимся понимать цены и количество, выбирать размер и не путать *ihn*, *sie* и *es* в сообщениях о покупках.",
  "goals": [
   "Спросить цену и понять ответ в евро и центах",
   "Купить нужное количество — килограмм, полкило, бутылку",
@@ -48,14 +48,14 @@
   "markt": {
    "title": "Was kosten die Äpfel?",
    "ru": "На рынке",
-   "place": "Wochenmarkt, Leipzig",
+   "place": "Рынок в Киле · учебная сцена и цены",
    "people": {
     "V": {
      "name": "Verkäuferin",
      "voice": "Shelley"
     },
     "A": {
-     "name": "Anna",
+     "name": "Dana",
      "voice": "Anna"
     }
    },
@@ -64,79 +64,79 @@
      "who": "V",
      "de": "Guten Morgen! Bitte schön?",
      "ru": "Доброе утро! Слушаю вас.",
-     "audio": "audio/67b0ee44c9ac.m4a"
+     "audio": "audio/00a2601a1e79.m4a"
     },
     {
      "who": "A",
      "de": "Was kosten die Äpfel?",
      "ru": "Сколько стоят яблоки?",
-     "audio": "audio/f9105b48112a.m4a"
+     "audio": "audio/d72b71d92995.m4a"
     },
     {
      "who": "V",
      "de": "Zwei Euro fünfzig das Kilo.",
      "ru": "Два евро пятьдесят за кило.",
-     "audio": "audio/fc5c5e7c19a8.m4a"
+     "audio": "audio/c8ab9a461a8f.m4a"
     },
     {
      "who": "A",
      "de": "Dann nehme ich zwei Kilo.",
      "ru": "Тогда я возьму два кило.",
-     "audio": "audio/a2232da031df.m4a"
+     "audio": "audio/fde0ec08b3cc.m4a"
     },
     {
      "who": "V",
      "de": "Gern. Welche möchten Sie? Die hier oder die da?",
      "ru": "Хорошо. Какие вам? Вот эти или вон те?",
-     "audio": "audio/7a18d33485d8.m4a"
+     "audio": "audio/31ffba884e0a.m4a"
     },
     {
      "who": "A",
      "de": "Die da, bitte. Und ein Pfund Tomaten.",
      "ru": "Вон те, пожалуйста. И полкило помидоров.",
-     "audio": "audio/b98334ab0a5c.m4a"
+     "audio": "audio/37b4e352672e.m4a"
     },
     {
      "who": "V",
      "de": "Noch etwas?",
      "ru": "Что-нибудь ещё?",
-     "audio": "audio/3d1300e4ce36.m4a"
+     "audio": "audio/721cb9e1de2a.m4a"
     },
     {
      "who": "A",
      "de": "Nein, danke, das ist alles.",
      "ru": "Нет, спасибо, это всё.",
-     "audio": "audio/fef93ef6316f.m4a"
+     "audio": "audio/3bae283477fb.m4a"
     },
     {
      "who": "V",
      "de": "Das macht sechs Euro achtzig.",
      "ru": "С вас шесть евро восемьдесят.",
-     "audio": "audio/3a44a4397c7e.m4a"
+     "audio": "audio/11674a16a5c9.m4a"
     },
     {
      "who": "A",
      "de": "Hier sind zehn Euro.",
      "ru": "Вот десять евро.",
-     "audio": "audio/6bcfc406ac36.m4a"
+     "audio": "audio/48e29d23ae85.m4a"
     }
    ]
   },
   "kleider": {
    "title": "Wie finden Sie den Pullover?",
    "ru": "В магазине одежды",
-   "place": "Kaufhaus, Leipzig",
+   "place": "Вымышленный магазин на Holtenauer Straße, Kiel",
    "people": {
     "V": {
      "name": "Verkäufer",
      "voice": "Rocko"
     },
     "M": {
-     "name": "Marco",
+     "name": "Mateo",
      "voice": "Reed"
     },
     "A": {
-     "name": "Anna",
+     "name": "Dana",
      "voice": "Anna"
     }
    },
@@ -145,61 +145,102 @@
      "who": "V",
      "de": "Guten Tag! Suchen Sie etwas?",
      "ru": "Добрый день! Вы что-то ищете?",
-     "audio": "audio/d20f5f66664b.m4a"
+     "audio": "audio/44f4603365b6.m4a"
     },
     {
      "who": "M",
      "de": "Ja, einen Pullover.",
      "ru": "Да, свитер.",
-     "audio": "audio/bf7993473c46.m4a"
+     "audio": "audio/e1c249d05d24.m4a"
     },
     {
      "who": "V",
      "de": "Welche Größe haben Sie?",
      "ru": "Какой у вас размер?",
-     "audio": "audio/c9f585dc2404.m4a"
+     "audio": "audio/abf1840fbe98.m4a"
     },
     {
      "who": "M",
      "de": "Größe M.",
      "ru": "Размер M.",
-     "audio": "audio/3bd09f1b3861.m4a"
+     "audio": "audio/3cc62d57c745.m4a"
     },
     {
      "who": "V",
      "de": "Wie finden Sie den Pullover hier?",
      "ru": "Как вам вот этот свитер?",
-     "audio": "audio/768f38a2d195.m4a"
+     "audio": "audio/30a0d50c158f.m4a"
     },
     {
      "who": "M",
      "de": "Hm, ich finde ihn zu groß. Haben Sie ihn auch in S?",
      "ru": "Хм, по-моему, он великоват. А в размере S он у вас есть?",
-     "audio": "audio/17e3d37a9120.m4a"
+     "audio": "audio/bb13d3b561ba.m4a"
     },
     {
      "who": "V",
      "de": "Ja, hier, bitte.",
      "ru": "Да, вот, пожалуйста.",
-     "audio": "audio/9cbab8830ab9.m4a"
+     "audio": "audio/1799d680d1cc.m4a"
     },
     {
      "who": "M",
-     "de": "Anna, wie findest du ihn?",
-     "ru": "Анна, как он тебе?",
-     "audio": "audio/c122cddaa9dc.m4a"
+     "de": "Dana, wie findest du ihn?",
+     "ru": "Дана, как он тебе?",
+     "audio": "audio/ce92d38f5a0f.m4a"
     },
     {
      "who": "A",
      "de": "Super! Und er ist nicht teuer – nur neunundzwanzig Euro neunzig.",
      "ru": "Супер! И он недорогой — всего двадцать девять девяносто.",
-     "audio": "audio/91586fb0b2cd.m4a"
+     "audio": "audio/47d2bba4ad35.m4a"
     },
     {
      "who": "M",
      "de": "Gut, dann nehme ich ihn!",
      "ru": "Хорошо, тогда беру!",
-     "audio": "audio/3a8ac58d120a.m4a"
+     "audio": "audio/c19829e3fd47.m4a"
+    }
+   ]
+  },
+  "entscheidung": {
+   "title": "Das nehmen wir",
+   "ru": "Что берём, а что оставляем",
+   "place": "Магазин на Holtenauer Straße · учебная сцена",
+   "people": {
+    "D": {
+     "name": "Dana",
+     "voice": "Anna"
+    },
+    "M": {
+     "name": "Mateo",
+     "voice": "Reed"
+    }
+   },
+   "lines": [
+    {
+     "who": "M",
+     "de": "Der Pullover ist gut. Ich nehme ihn.",
+     "ru": "Свитер хороший. Я его беру.",
+     "audio": "audio/57509008b8af.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Die Jacke ist zu teuer. Ich kaufe sie nicht.",
+     "ru": "Куртка слишком дорогая. Я её не покупаю.",
+     "audio": "audio/c2a8a2876b18.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Das T-Shirt ist schön. Ich nehme es.",
+     "ru": "Футболка красивая. Я её беру.",
+     "audio": "audio/81f081ed440f.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Die Schuhe sind zu klein. Ich kaufe sie nicht.",
+     "ru": "Туфли слишком маленькие. Я их не покупаю.",
+     "audio": "audio/df97e8ade0f2.m4a"
     }
    ]
   }
@@ -215,7 +256,7 @@
      "gender": null,
      "plural": null,
      "note": "zwei Kilo Äpfel",
-     "audio": "audio/95c203c9edd1.m4a"
+     "audio": "audio/f15ff5593911.m4a"
     },
     {
      "de": "ein Pfund",
@@ -223,7 +264,7 @@
      "gender": null,
      "plural": null,
      "note": "ein Pfund Tomaten = 500 Gramm",
-     "audio": "audio/d37723ec77ab.m4a"
+     "audio": "audio/3730ffcffea3.m4a"
     },
     {
      "de": "100 Gramm",
@@ -231,7 +272,7 @@
      "gender": null,
      "plural": null,
      "note": "hundert Gramm Käse",
-     "audio": "audio/95daa0f820fe.m4a"
+     "audio": "audio/c761714c1130.m4a"
     },
     {
      "de": "ein Liter",
@@ -239,7 +280,7 @@
      "gender": null,
      "plural": null,
      "note": "ein Liter Milch",
-     "audio": "audio/62167acffb02.m4a"
+     "audio": "audio/5cfc4fa93bbb.m4a"
     },
     {
      "de": "die Flasche",
@@ -247,7 +288,7 @@
      "gender": "f",
      "plural": "Flaschen",
      "note": "eine Flasche Wasser",
-     "audio": "audio/2df0b681c58f.m4a"
+     "audio": "audio/5827ca40c51e.m4a"
     },
     {
      "de": "die Packung",
@@ -255,7 +296,7 @@
      "gender": "f",
      "plural": "Packungen",
      "note": "eine Packung Reis",
-     "audio": "audio/36e85ac36744.m4a"
+     "audio": "audio/1b4d6de9e3cc.m4a"
     },
     {
      "de": "die Dose",
@@ -263,7 +304,7 @@
      "gender": "f",
      "plural": "Dosen",
      "note": "eine Dose Tomaten",
-     "audio": "audio/a0edd2714e28.m4a"
+     "audio": "audio/60b502d85e6b.m4a"
     },
     {
      "de": "die Tüte",
@@ -271,7 +312,7 @@
      "gender": "f",
      "plural": "Tüten",
      "note": "Brauchen Sie eine Tüte?",
-     "audio": "audio/d4f552b745c6.m4a"
+     "audio": "audio/2a2b106381d2.m4a"
     }
    ]
   },
@@ -284,21 +325,21 @@
      "ru": "яблоко",
      "gender": "m",
      "plural": "Äpfel",
-     "audio": "audio/f074b41b429c.m4a"
+     "audio": "audio/2466fbd4102f.m4a"
     },
     {
      "de": "die Banane",
      "ru": "банан",
      "gender": "f",
      "plural": "Bananen",
-     "audio": "audio/371edd436e76.m4a"
+     "audio": "audio/4a1d6bd8828f.m4a"
     },
     {
      "de": "die Orange",
      "ru": "апельсин",
      "gender": "f",
      "plural": "Orangen",
-     "audio": "audio/8f16bd797f9a.m4a"
+     "audio": "audio/d6d1ef767180.m4a"
     },
     {
      "de": "die Erdbeere",
@@ -306,35 +347,35 @@
      "gender": "f",
      "plural": "Erdbeeren",
      "note": "одна ягода — eine Erdbeere",
-     "audio": "audio/459888195dad.m4a"
+     "audio": "audio/e45c1f03c9e2.m4a"
     },
     {
      "de": "die Tomate",
      "ru": "помидор",
      "gender": "f",
      "plural": "Tomaten",
-     "audio": "audio/dab84be8549e.m4a"
+     "audio": "audio/c794c34de953.m4a"
     },
     {
      "de": "die Kartoffel",
      "ru": "картофель",
      "gender": "f",
      "plural": "Kartoffeln",
-     "audio": "audio/8a79b2eda7ae.m4a"
+     "audio": "audio/275b7e610f68.m4a"
     },
     {
      "de": "die Zwiebel",
      "ru": "лук",
      "gender": "f",
      "plural": "Zwiebeln",
-     "audio": "audio/90bba06d69b5.m4a"
+     "audio": "audio/1e60562f30c6.m4a"
     },
     {
      "de": "die Gurke",
      "ru": "огурец",
      "gender": "f",
      "plural": "Gurken",
-     "audio": "audio/766a623c76e8.m4a"
+     "audio": "audio/1c134a58636f.m4a"
     }
    ]
   },
@@ -347,7 +388,7 @@
      "ru": "свитер",
      "gender": "m",
      "plural": "Pullover",
-     "audio": "audio/ae2bf9ca5c4e.m4a"
+     "audio": "audio/aceae752cf1f.m4a"
     },
     {
      "de": "die Hose",
@@ -355,49 +396,49 @@
      "gender": "f",
      "plural": "Hosen",
      "note": "одна вещь — единственное число",
-     "audio": "audio/85c244f2d8a8.m4a"
+     "audio": "audio/38b00e6f1d3e.m4a"
     },
     {
      "de": "die Jacke",
      "ru": "куртка",
      "gender": "f",
      "plural": "Jacken",
-     "audio": "audio/683d78f03af5.m4a"
+     "audio": "audio/4ef061c08aa9.m4a"
     },
     {
      "de": "der Mantel",
      "ru": "пальто",
      "gender": "m",
      "plural": "Mäntel",
-     "audio": "audio/6f417ed7a350.m4a"
+     "audio": "audio/6a53693e7429.m4a"
     },
     {
      "de": "das Hemd",
      "ru": "рубашка",
      "gender": "n",
      "plural": "Hemden",
-     "audio": "audio/22d8b827896c.m4a"
+     "audio": "audio/d792cd83514a.m4a"
     },
     {
      "de": "das T-Shirt",
      "ru": "футболка",
      "gender": "n",
      "plural": "T-Shirts",
-     "audio": "audio/3dc24be500c5.m4a"
+     "audio": "audio/9067c391406c.m4a"
     },
     {
      "de": "das Kleid",
      "ru": "платье",
      "gender": "n",
      "plural": "Kleider",
-     "audio": "audio/2c34c676c847.m4a"
+     "audio": "audio/32adcac9d443.m4a"
     },
     {
      "de": "der Rock",
      "ru": "юбка",
      "gender": "m",
      "plural": "Röcke",
-     "audio": "audio/7a67f8f77d38.m4a"
+     "audio": "audio/128e944e81c8.m4a"
     },
     {
      "de": "der Schuh",
@@ -405,7 +446,7 @@
      "gender": "m",
      "plural": "Schuhe",
      "note": "обычно во мн. ч. — die Schuhe",
-     "audio": "audio/e5e725f177a9.m4a"
+     "audio": "audio/8dca36577b3b.m4a"
     },
     {
      "de": "die Größe",
@@ -413,14 +454,14 @@
      "gender": "f",
      "plural": "Größen",
      "note": "Welche Größe haben Sie?",
-     "audio": "audio/32f7b69b89a2.m4a"
+     "audio": "audio/01379909260f.m4a"
     },
     {
      "de": "die Farbe",
      "ru": "цвет",
      "gender": "f",
      "plural": "Farben",
-     "audio": "audio/058a30b0ecaa.m4a"
+     "audio": "audio/f452656b0e73.m4a"
     }
    ]
   },
@@ -434,14 +475,14 @@
      "gender": null,
      "plural": null,
      "note": "Was kostet das?",
-     "audio": "audio/20b4a75ed942.m4a"
+     "audio": "audio/68e1a041d0f9.m4a"
     },
     {
      "de": "kaufen",
      "ru": "покупать",
      "gender": null,
      "plural": null,
-     "audio": "audio/d096acb20c81.m4a"
+     "audio": "audio/c367ccd7e922.m4a"
     },
     {
      "de": "brauchen",
@@ -449,14 +490,14 @@
      "gender": null,
      "plural": null,
      "note": "Ich brauche eine Jacke.",
-     "audio": "audio/832b24018937.m4a"
+     "audio": "audio/75496eacd3f2.m4a"
     },
     {
      "de": "suchen",
      "ru": "искать",
      "gender": null,
      "plural": null,
-     "audio": "audio/08bf84c4bb8d.m4a"
+     "audio": "audio/2b8648906d96.m4a"
     },
     {
      "de": "finden",
@@ -464,7 +505,7 @@
      "gender": null,
      "plural": null,
      "note": "Wie findest du ihn?",
-     "audio": "audio/04dba7a93115.m4a"
+     "audio": "audio/a2376bf71cd7.m4a"
     },
     {
      "de": "der Euro",
@@ -472,56 +513,56 @@
      "gender": "m",
      "plural": "Euros",
      "note": "после числа без -s — zehn Euro",
-     "audio": "audio/f07790f83f10.m4a"
+     "audio": "audio/87e71fa54946.m4a"
     },
     {
      "de": "billig",
      "ru": "дешёвый",
      "gender": null,
      "plural": null,
-     "audio": "audio/cc9288eb4b11.m4a"
+     "audio": "audio/c605e4589294.m4a"
     },
     {
      "de": "teuer",
      "ru": "дорогой",
      "gender": null,
      "plural": null,
-     "audio": "audio/932d4274c92c.m4a"
+     "audio": "audio/c101f9801004.m4a"
     },
     {
      "de": "groß",
      "ru": "большой",
      "gender": null,
      "plural": null,
-     "audio": "audio/226e436fb9cd.m4a"
+     "audio": "audio/552b6876d228.m4a"
     },
     {
      "de": "klein",
      "ru": "маленький",
      "gender": null,
      "plural": null,
-     "audio": "audio/d7bdae9bd6f3.m4a"
+     "audio": "audio/9365e85e6ab0.m4a"
     },
     {
      "de": "lang",
      "ru": "длинный",
      "gender": null,
      "plural": null,
-     "audio": "audio/e22fa8dc6acb.m4a"
+     "audio": "audio/a017062dae54.m4a"
     },
     {
      "de": "kurz",
      "ru": "короткий",
      "gender": null,
      "plural": null,
-     "audio": "audio/8bc7ef55c07d.m4a"
+     "audio": "audio/cbe0a66330ed.m4a"
     },
     {
      "de": "schön",
      "ru": "красивый",
      "gender": null,
      "plural": null,
-     "audio": "audio/1015135c64d7.m4a"
+     "audio": "audio/4f23a86c699e.m4a"
     },
     {
      "de": "zu",
@@ -529,7 +570,7 @@
      "gender": null,
      "plural": null,
      "note": "zu groß — велик",
-     "audio": "audio/6821c412e38b.m4a"
+     "audio": "audio/74d649acb59c.m4a"
     }
    ]
   }
@@ -696,7 +737,7 @@
    "text": "Liebe Kundinnen und Kunden! Heute im Angebot: Tomaten aus Italien, das Kilo nur zwei Euro zwanzig. Und Orangen aus Spanien: Das Kilo kostet heute nur zwei Euro neunzig. Das Angebot gibt es nur heute. Vielen Dank für Ihren Einkauf!",
    "statement": "Ein Kilo Orangen kostet heute 2,20 €.",
    "answer": false,
-   "audio": "audio/ad8673e31aa8.m4a",
+   "audio": "audio/2feba2483822.m4a",
    "sample": []
   },
   "anzeigen": {
@@ -727,21 +768,30 @@
    "sample": [
     {
      "de": "Eine Tüte, bitte!",
-     "audio": "audio/0dfd30206770.m4a"
+     "audio": "audio/cd921e3d8951.m4a"
     },
     {
      "de": "Haben Sie eine Tüte für mich?",
-     "audio": "audio/3b11055ea247.m4a"
+     "audio": "audio/340df5caa624.m4a"
     },
     {
      "de": "Ja, gern. Sie kostet zwanzig Cent.",
-     "audio": "audio/eada5e197c39.m4a"
+     "audio": "audio/c82b113d89b9.m4a"
     },
     {
      "de": "Leider habe ich keine Tüte.",
-     "audio": "audio/797a529ba74e.m4a"
+     "audio": "audio/8c4430f26dc6.m4a"
     }
    ]
+  },
+  "liste": {
+   "kind": "message",
+   "part": "lesen-1",
+   "title": "Einkaufszettel der Freunde",
+   "from": "Mateo",
+   "to": "Dana",
+   "text": "Für die Fahrt: zwei Kilo Äpfel, ein Pfund Tomaten, drei Flaschen Wasser und 200 Gramm Käse. Danke, Dana!",
+   "sample": []
   }
  },
  "beats": [
@@ -751,7 +801,7 @@
    "stepTitle": "Суббота на рынке",
    "chapterIndex": 0,
    "indexInStep": 0,
-   "read": "Суббота, утро, рынок у старой ратуши. Продавщица встречает Анну коротким *Bitte schön?* — «слушаю вас». Цену спрашивают *Was kostet …?*, а если товар во множественном числе — *Was kosten …?*: *Was kosten die Äpfel?* Ответ *Zwei Euro fünfzig das Kilo* — «два пятьдесят за кило». Сначала евро, потом центы, а слово *Cent* обычно не произносят.",
+   "read": "Суббота, утро, учебная сцена на рынке в Киле. Продавщица встречает Дану коротким *Bitte schön?* — «слушаю вас». Цену спрашивают *Was kostet …?*, а если товар во множественном числе — *Was kosten …?*: *Was kosten die Äpfel?* Ответ *Zwei Euro fünfzig das Kilo* — «два пятьдесят за кило». Сначала евро, потом центы, а слово *Cent* обычно не произносят.",
    "point": "*Was kostet …?* / *Was kosten …?* — «сколько стоит / стоят?»",
    "scene": {
     "view": "dialogue",
@@ -775,7 +825,7 @@
    "stepTitle": "Суббота на рынке",
    "chapterIndex": 0,
    "indexInStep": 1,
-   "read": "*Dann nehme ich zwei Kilo* — заметьте: *zwei Kilo*, без окончания множественного числа. Продавщица уточняет: *Welche möchten Sie?* — «какие вам?» — и показывает: *Die hier oder die da?* — «вот эти или вон те?». Ещё Анна берёт *ein Pfund Tomaten*. *Pfund* — это полкило, на рынке так говорят постоянно. И никакого родительного падежа, как в «полкило помидоров»: просто *ein Pfund Tomaten*.",
+   "read": "*Dann nehme ich zwei Kilo* — заметьте: *zwei Kilo*, без окончания множественного числа. Продавщица уточняет: *Welche möchten Sie?* — «какие вам?» — и показывает: *Die hier oder die da?* — «вот эти или вон те?». Ещё Дана берёт *ein Pfund Tomaten*. *Pfund* — это полкило, на рынке так говорят постоянно. И никакого родительного падежа, как в «полкило помидоров»: просто *ein Pfund Tomaten*.",
    "point": "*zwei Kilo*, *ein Pfund Tomaten* — количество прямо перед словом",
    "scene": {
     "view": "dialogue",
@@ -799,7 +849,7 @@
    "stepTitle": "Суббота на рынке",
    "chapterIndex": 0,
    "indexInStep": 2,
-   "read": "Конец у любой покупки одинаковый. *Noch etwas?* — «что-нибудь ещё?». Ответ *Nein, danke, das ist alles* — «нет, спасибо, это всё». Сумму называют так же, как в кафе: *Das macht sechs Euro achtzig*. На немецких рынках до сих пор часто платят наличными, а карту берут не везде, так что мелочь в кошельке пригодится.",
+   "read": "Завершение покупки: *Noch etwas?* — «что-нибудь ещё?», *Nein, danke, das ist alles* — «нет, спасибо, это всё». Сумму называют как в кафе: *Das macht sechs Euro achtzig*. Дана даёт 10 евро. В игре нужно будет отличить цену за килограмм от общего счёта и проверить сдачу. Все цены в сцене учебные; они не описывают действующее предложение конкретного продавца.",
    "point": "*Noch etwas?* — *Nein, danke, das ist alles.* — *Das macht …*",
    "scene": {
     "view": "dialogue",
@@ -822,10 +872,10 @@
   {
    "id": "kleider-1",
    "step": "kleider",
-   "stepTitle": "Свитер для Марко",
+   "stepTitle": "Свитер для Матео",
    "chapterIndex": 0,
    "indexInStep": 0,
-   "read": "Марко ищет свитер в универмаге. Продавец сначала спрашивает размер: *Welche Größe haben Sie?* — *welche*, потому что *die Größe*. Потом показывает свитер: *Wie finden Sie den Pullover hier?* *finden* здесь значит не «находить», а «считать»: «как вам свитер?». Марко отвечает *Ich finde ihn zu groß*. *ihn* — это и есть свитер: *den Pullover* превратился в *ihn*.",
+   "read": "Матео ищет свитер в вымышленном магазине на Holtenauer Straße: вечером у воды нужен тёплый слой. Продавец сначала спрашивает размер: *Welche Größe haben Sie?* — *welche*, потому что *die Größe*. Потом показывает свитер: *Wie finden Sie den Pullover hier?* *finden* здесь значит не «находить», а «считать»: «как вам свитер?». Матео отвечает *Ich finde ihn zu groß*. *ihn* — это и есть свитер: *den Pullover* превратился в *ihn*.",
    "point": "*Wie finden Sie …?* — «как вам …?»; *Ich finde ihn zu groß.*",
    "scene": {
     "view": "dialogue",
@@ -849,10 +899,10 @@
   {
    "id": "kleider-2",
    "step": "kleider",
-   "stepTitle": "Свитер для Марко",
+   "stepTitle": "Свитер для Матео",
    "chapterIndex": 0,
    "indexInStep": 1,
-   "read": "С Анной Марко на «ты»: *Wie findest du ihn?* У *finden* основа кончается на *d*, поэтому перед окончанием появляется *e* — *du findest*. Анна хвалит: *Er ist nicht teuer*. После *sein* прилагательное не меняется, в отличие от русского «недорогой, недорогая». И финал: *Dann nehme ich ihn!* По-русски скажут просто «беру», а в немецком местоимение *ihn* опускать нельзя.",
+   "read": "С Даной Матео на «ты»: *Wie findest du ihn?* У *finden* основа кончается на *d*, поэтому перед окончанием появляется *e* — *du findest*. Дана хвалит: *Er ist nicht teuer*. После *sein* прилагательное не меняется, в отличие от русского «недорогой, недорогая». И финал: *Dann nehme ich ihn!* По-русски скажут просто «беру», а в немецком местоимение *ihn* опускать нельзя.",
    "point": "*Ich nehme ihn.* — местоимение не опускают, как в русском «беру»",
    "scene": {
     "view": "dialogue",
@@ -872,16 +922,36 @@
    }
   },
   {
+   "id": "entscheidung-1",
+   "step": "entscheidung",
+   "stepTitle": "Что действительно купили?",
+   "chapterIndex": 0,
+   "indexInStep": 0,
+   "read": "У кассы важно понять последнее решение, а не просто услышать название вещи. Матео берёт свитер: *Ich nehme ihn*. Дана отказывается от куртки: *Ich kaufe sie nicht*. Потом Матео выбирает футболку — *Ich nehme es*, а туфли остаются из-за размера. В конце игры вы соберёте пакет только из подтверждённых покупок. *Ihn*, *sie* и *es* заменяют уже названный предмет, поэтому слушайте реплику целиком.",
+   "point": "*ihn* — свитер, *sie* — куртка или туфли, *es* — футболка; *nicht* отменяет покупку",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "entscheidung",
+    "reveal": 4,
+    "fresh": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
    "id": "mengen-1",
    "step": "mengen",
    "stepTitle": "Сколько?",
    "chapterIndex": 1,
    "indexInStep": 0,
-   "read": "Килограмм — *ein Kilo*, а полкило — *ein Pfund*: на рынке это слово слышно постоянно, и *ein Pfund Tomaten* — ровно 500 граммов. Упаковка — это *die Flasche*, *die Packung*, *die Dose* и *die Tüte*. Все четыре слова женского рода, и множественное у них на *-n* или *-en*: *zwei Flaschen*, *zwei Packungen*. На кассе вас спросят *Brauchen Sie eine Tüte?* — пакет в Германии почти всегда платный.",
+   "read": "Килограмм — *ein Kilo*, полкило — *ein Pfund*. Для покупок в нашей сцене *ein Pfund Tomaten* означает 500 граммов. Упаковки — *die Flasche*, *die Packung*, *die Dose*, *die Tüte*. Во множественном числе: *zwei Flaschen*, *zwei Packungen*. Когда продавец спрашивает *Brauchen Sie eine Tüte?*, решите, нужен ли пакет, а затем уточните цену. В игре количество придётся выставить в корзине, а не просто узнать слово.",
    "point": "*ein Pfund* = 500 г; *die Flasche*, *die Dose*, *die Tüte* — мн. ч. на *-n*",
    "scene": {
     "view": "words",
-    "dialogue": "kleider",
+    "dialogue": "entscheidung",
     "words": "mengen"
    }
   },
@@ -895,7 +965,7 @@
    "point": "Слова на *-e* обычно *die*, мн. ч. на *-n*: *die Tomate — die Tomaten*",
    "scene": {
     "view": "words",
-    "dialogue": "kleider",
+    "dialogue": "entscheidung",
     "words": "markt"
    }
   },
@@ -909,7 +979,7 @@
    "point": "*die Hose* — брюки, но в ед. ч.: *Die Hose ist zu lang.*",
    "scene": {
     "view": "words",
-    "dialogue": "kleider",
+    "dialogue": "entscheidung",
     "words": "kleidung"
    }
   },
@@ -923,7 +993,7 @@
    "point": "*es kostet*, *du findest* — с *e*; *Ich brauche …* — «мне нужно …»",
    "scene": {
     "view": "words",
-    "dialogue": "kleider",
+    "dialogue": "entscheidung",
     "words": "einkaufen"
    }
   },
@@ -937,7 +1007,7 @@
    "point": "*2,50 €* — *zwei Euro fünfzig*; *0,99 €* — *neunundneunzig Cent*",
    "scene": {
     "view": "table",
-    "dialogue": "kleider",
+    "dialogue": "entscheidung",
     "words": "einkaufen",
     "table": "preise"
    }
@@ -952,7 +1022,7 @@
    "point": "*eine Flasche Milch* — без падежа; *zwei Kilo*, но *zwei Flaschen*",
    "scene": {
     "view": "table",
-    "dialogue": "kleider",
+    "dialogue": "entscheidung",
     "words": "einkaufen",
     "table": "mengen",
     "focus": [
@@ -974,7 +1044,7 @@
    "point": "Местоимение выбирают по роду: *der Pullover* → *er* → *ihn*",
    "scene": {
     "view": "sentence",
-    "dialogue": "kleider",
+    "dialogue": "entscheidung",
     "words": "einkaufen",
     "table": "mengen",
     "rows": [
@@ -1015,7 +1085,7 @@
       "punct": ".",
       "plain": "Ich finde den Pullover zu groß.",
       "ru": "По-моему, свитер великоват.",
-      "audio": "audio/7a3893f5d91e.m4a"
+      "audio": "audio/89f01d07b521.m4a"
      }
     ]
    }
@@ -1030,7 +1100,7 @@
    "point": "*Ich finde ihn zu groß.* — *er* → *ihn*, как *der* → *den*",
    "scene": {
     "view": "sentence",
-    "dialogue": "kleider",
+    "dialogue": "entscheidung",
     "words": "einkaufen",
     "table": "mengen",
     "rows": [
@@ -1067,7 +1137,7 @@
       "punct": ".",
       "plain": "Ich finde ihn zu groß.",
       "ru": "По-моему, он великоват.",
-      "audio": "audio/aef0dd1d1f2c.m4a"
+      "audio": "audio/fabee8df8062.m4a"
      }
     ]
    }
@@ -1082,7 +1152,7 @@
    "point": "*die Jacke* → *sie*, *das Hemd* → *es*, *die Schuhe* → *sie*",
    "scene": {
     "view": "table",
-    "dialogue": "kleider",
+    "dialogue": "entscheidung",
     "words": "einkaufen",
     "table": "pronomen",
     "rows": [
@@ -1119,7 +1189,7 @@
       "punct": ".",
       "plain": "Ich finde ihn zu groß.",
       "ru": "По-моему, он великоват.",
-      "audio": "audio/aef0dd1d1f2c.m4a"
+      "audio": "audio/fabee8df8062.m4a"
      }
     ],
     "focus": [
@@ -1139,7 +1209,7 @@
    "point": "*Welche Größe haben Sie?* — *welch-* вместе с существительным на первой позиции",
    "scene": {
     "view": "sentence",
-    "dialogue": "kleider",
+    "dialogue": "entscheidung",
     "words": "einkaufen",
     "table": "pronomen",
     "rows": [
@@ -1172,7 +1242,7 @@
       "punct": "?",
       "plain": "Welche Größe haben Sie?",
       "ru": "Какой у вас размер?",
-      "audio": "audio/217e4f21d9af.m4a"
+      "audio": "audio/f394cb19c75c.m4a"
      },
      {
       "slots": [
@@ -1203,7 +1273,7 @@
       "punct": "?",
       "plain": "Welchen Pullover nehmen Sie?",
       "ru": "Какой свитер вы берёте?",
-      "audio": "audio/c611f13b5f6b.m4a"
+      "audio": "audio/eb8575a8e298.m4a"
      },
      {
       "slots": [
@@ -1234,7 +1304,7 @@
       "punct": ".",
       "plain": "Ich nehme den hier.",
       "ru": "Я беру вот этот.",
-      "audio": "audio/1f5826cda9bb.m4a"
+      "audio": "audio/d1e8686ad0fe.m4a"
      }
     ]
    }
@@ -1249,7 +1319,7 @@
    "point": "*welcher* — «который из»; *wie* — «каков»: *Wie ist der Pullover?*",
    "scene": {
     "view": "table",
-    "dialogue": "kleider",
+    "dialogue": "entscheidung",
     "words": "einkaufen",
     "table": "welch",
     "rows": [
@@ -1282,7 +1352,7 @@
       "punct": "?",
       "plain": "Welche Größe haben Sie?",
       "ru": "Какой у вас размер?",
-      "audio": "audio/217e4f21d9af.m4a"
+      "audio": "audio/f394cb19c75c.m4a"
      },
      {
       "slots": [
@@ -1313,7 +1383,7 @@
       "punct": "?",
       "plain": "Welchen Pullover nehmen Sie?",
       "ru": "Какой свитер вы берёте?",
-      "audio": "audio/c611f13b5f6b.m4a"
+      "audio": "audio/eb8575a8e298.m4a"
      },
      {
       "slots": [
@@ -1344,7 +1414,7 @@
       "punct": ".",
       "plain": "Ich nehme den hier.",
       "ru": "Я беру вот этот.",
-      "audio": "audio/1f5826cda9bb.m4a"
+      "audio": "audio/d1e8686ad0fe.m4a"
      }
     ],
     "focus": [
@@ -1362,7 +1432,7 @@
    "point": "*Der Pullover / Die Jacke ist zu groß.* — прилагательное не меняется; *zu* — «слишком»",
    "scene": {
     "view": "sentence",
-    "dialogue": "kleider",
+    "dialogue": "entscheidung",
     "words": "einkaufen",
     "table": "welch",
     "rows": [
@@ -1399,7 +1469,7 @@
       "punct": ".",
       "plain": "Der Pullover ist zu groß.",
       "ru": "Свитер велик.",
-      "audio": "audio/e77816c95fff.m4a"
+      "audio": "audio/ba2532d4f95e.m4a"
      },
      {
       "slots": [
@@ -1434,7 +1504,7 @@
       "punct": ".",
       "plain": "Die Jacke ist zu groß.",
       "ru": "Куртка велика.",
-      "audio": "audio/55b32e218f44.m4a"
+      "audio": "audio/396b690a0a3c.m4a"
      },
      {
       "slots": [
@@ -1469,7 +1539,7 @@
       "punct": ".",
       "plain": "Das Hemd ist zu groß.",
       "ru": "Рубашка велика.",
-      "audio": "audio/182347651cd1.m4a"
+      "audio": "audio/2ff0fbfd3105.m4a"
      },
      {
       "slots": [
@@ -1504,7 +1574,7 @@
       "punct": ".",
       "plain": "Die Schuhe sind zu groß.",
       "ru": "Ботинки велики.",
-      "audio": "audio/cf7e03733b48.m4a"
+      "audio": "audio/66085f8ed4aa.m4a"
      }
     ]
    }
@@ -1518,157 +1588,9 @@
    "read": "*Was kostet die Hose?* В русском «брюки» во множественном числе, а в немецком *die Hose* — одна вещь, поэтому и глагол в единственном: *kostet*. Для настоящего множественного — *kosten*: *Was kosten die Schuhe?* Перед окончанием *-t* у *kosten* появляется *e*: основа сама кончается на *t*, и без гласной форму было бы не выговорить.",
    "point": "*Was kostet die Hose?* — ед. ч.; *Was kosten die Schuhe?* — мн. ч.",
    "question": "Как спросить, сколько стоят брюки — *die Hose*?",
-   "sceneBefore": {
-    "view": "sentence",
-    "dialogue": "kleider",
-    "words": "einkaufen",
-    "table": "welch",
-    "rows": [
-     {
-      "slots": [
-       [
-        {
-         "key": "der",
-         "text": "Der"
-        },
-        {
-         "key": "pullover",
-         "text": "Pullover"
-        }
-       ],
-       [
-        {
-         "key": "ist",
-         "text": "ist"
-        }
-       ],
-       [
-        {
-         "key": "zu",
-         "text": "zu"
-        },
-        {
-         "key": "groß",
-         "text": "groß"
-        }
-       ],
-       []
-      ],
-      "punct": ".",
-      "plain": "Der Pullover ist zu groß.",
-      "ru": "Свитер велик.",
-      "audio": "audio/e77816c95fff.m4a"
-     },
-     {
-      "slots": [
-       [
-        {
-         "key": "die",
-         "text": "Die"
-        },
-        {
-         "key": "jacke",
-         "text": "Jacke"
-        }
-       ],
-       [
-        {
-         "key": "ist",
-         "text": "ist"
-        }
-       ],
-       [
-        {
-         "key": "zu",
-         "text": "zu"
-        },
-        {
-         "key": "groß",
-         "text": "groß"
-        }
-       ],
-       []
-      ],
-      "punct": ".",
-      "plain": "Die Jacke ist zu groß.",
-      "ru": "Куртка велика.",
-      "audio": "audio/55b32e218f44.m4a"
-     },
-     {
-      "slots": [
-       [
-        {
-         "key": "das",
-         "text": "Das"
-        },
-        {
-         "key": "hemd",
-         "text": "Hemd"
-        }
-       ],
-       [
-        {
-         "key": "ist",
-         "text": "ist"
-        }
-       ],
-       [
-        {
-         "key": "zu",
-         "text": "zu"
-        },
-        {
-         "key": "groß",
-         "text": "groß"
-        }
-       ],
-       []
-      ],
-      "punct": ".",
-      "plain": "Das Hemd ist zu groß.",
-      "ru": "Рубашка велика.",
-      "audio": "audio/182347651cd1.m4a"
-     },
-     {
-      "slots": [
-       [
-        {
-         "key": "die",
-         "text": "Die"
-        },
-        {
-         "key": "schuhe",
-         "text": "Schuhe"
-        }
-       ],
-       [
-        {
-         "key": "sind",
-         "text": "sind"
-        }
-       ],
-       [
-        {
-         "key": "zu",
-         "text": "zu"
-        },
-        {
-         "key": "groß",
-         "text": "groß"
-        }
-       ],
-       []
-      ],
-      "punct": ".",
-      "plain": "Die Schuhe sind zu groß.",
-      "ru": "Ботинки велики.",
-      "audio": "audio/cf7e03733b48.m4a"
-     }
-    ]
-   },
    "scene": {
     "view": "sentence",
-    "dialogue": "kleider",
+    "dialogue": "entscheidung",
     "words": "einkaufen",
     "table": "welch",
     "rows": [
@@ -1701,7 +1623,7 @@
       "punct": "?",
       "plain": "Was kostet die Hose?",
       "ru": "Сколько стоят брюки?",
-      "audio": "audio/c9210020b8e0.m4a"
+      "audio": "audio/956af326cf9b.m4a"
      },
      {
       "slots": [
@@ -1732,7 +1654,7 @@
       "punct": "?",
       "plain": "Was kosten die Schuhe?",
       "ru": "Сколько стоят ботинки?",
-      "audio": "audio/34eca72029cc.m4a"
+      "audio": "audio/fd1b94d3b8ff.m4a"
      }
     ]
    }
@@ -1748,7 +1670,7 @@
    "question": "Продавец: *Wie finden Sie das Kleid?* Как ответить «по-моему, оно коротковато»?",
    "sceneBefore": {
     "view": "sentence",
-    "dialogue": "kleider",
+    "dialogue": "entscheidung",
     "words": "einkaufen",
     "table": "welch",
     "rows": [
@@ -1785,13 +1707,13 @@
       "punct": "?",
       "plain": "Wie finden Sie das Kleid?",
       "ru": "Как вам платье?",
-      "audio": "audio/555a93f6838f.m4a"
+      "audio": "audio/276e43951798.m4a"
      }
     ]
    },
    "scene": {
     "view": "sentence",
-    "dialogue": "kleider",
+    "dialogue": "entscheidung",
     "words": "einkaufen",
     "table": "welch",
     "rows": [
@@ -1828,7 +1750,7 @@
       "punct": ".",
       "plain": "Ich finde es zu kurz.",
       "ru": "По-моему, оно коротковато.",
-      "audio": "audio/464a2646356b.m4a"
+      "audio": "audio/b310343ab09f.m4a"
      }
     ]
    }
@@ -1842,52 +1764,9 @@
    "read": "*zwölf Euro neunundvierzig*. Сначала евро, потом центы, а слово *Cent* не называют. В *neunundvierzig* единицы идут первыми: «девять-и-сорок». На кассе это прозвучит как *Das macht zwölf Euro neunundvierzig* — «с вас двенадцать сорок девять». Прочитайте вслух и сверьтесь с записью: на экзамене цены надо узнавать на слух.",
    "point": "*12,49 €* — *zwölf Euro neunundvierzig*",
    "question": "Как прочитать цену *12,49 €*?",
-   "sceneBefore": {
-    "view": "sentence",
-    "dialogue": "kleider",
-    "words": "einkaufen",
-    "table": "welch",
-    "rows": [
-     {
-      "slots": [
-       [
-        {
-         "key": "ich",
-         "text": "Ich"
-        }
-       ],
-       [
-        {
-         "key": "find",
-         "text": "find+e"
-        }
-       ],
-       [
-        {
-         "key": "es",
-         "text": "es"
-        },
-        {
-         "key": "zu",
-         "text": "zu"
-        },
-        {
-         "key": "kurz",
-         "text": "kurz"
-        }
-       ],
-       []
-      ],
-      "punct": ".",
-      "plain": "Ich finde es zu kurz.",
-      "ru": "По-моему, оно коротковато.",
-      "audio": "audio/464a2646356b.m4a"
-     }
-    ]
-   },
    "scene": {
     "view": "sentence",
-    "dialogue": "kleider",
+    "dialogue": "entscheidung",
     "words": "einkaufen",
     "table": "welch",
     "rows": [
@@ -1924,7 +1803,7 @@
       "punct": ".",
       "plain": "Das macht zwölf Euro neunundvierzig.",
       "ru": "С вас двенадцать евро сорок девять.",
-      "audio": "audio/2eac6010fab0.m4a"
+      "audio": "audio/265ee58ff002.m4a"
      }
     ]
    }
@@ -1939,7 +1818,7 @@
    "point": "Часть 2: объявление звучит один раз — заранее прочитайте утверждение",
    "scene": {
     "view": "task",
-    "dialogue": "kleider",
+    "dialogue": "entscheidung",
     "words": "einkaufen",
     "table": "welch",
     "rows": [
@@ -1976,7 +1855,7 @@
       "punct": ".",
       "plain": "Das macht zwölf Euro neunundvierzig.",
       "ru": "С вас двенадцать евро сорок девять.",
-      "audio": "audio/2eac6010fab0.m4a"
+      "audio": "audio/265ee58ff002.m4a"
      }
     ],
     "task": "durchsage"
@@ -1991,53 +1870,9 @@
    "read": "*Falsch*. Цена *zwei Euro zwanzig* в объявлении есть, но это цена помидоров. Апельсины стоят *zwei Euro neunzig*. Составители часто берут настоящее число из текста и приписывают его другому товару. Поэтому слушайте пары «товар — цена» и записывайте цифры прямо на листе с заданием, пока звучит запись.",
    "point": "Цифра из текста — ещё не ответ: проверьте, к какому товару она относится",
    "question": "*Richtig* или *falsch*? Почему?",
-   "sceneBefore": {
-    "view": "task",
-    "dialogue": "kleider",
-    "words": "einkaufen",
-    "table": "welch",
-    "rows": [
-     {
-      "slots": [
-       [
-        {
-         "key": "das",
-         "text": "Das"
-        }
-       ],
-       [
-        {
-         "key": "mach",
-         "text": "mach+t"
-        }
-       ],
-       [
-        {
-         "key": "zwölf",
-         "text": "zwölf"
-        },
-        {
-         "key": "euro",
-         "text": "Euro"
-        },
-        {
-         "key": "neunundvierzig",
-         "text": "neunundvierzig"
-        }
-       ],
-       []
-      ],
-      "punct": ".",
-      "plain": "Das macht zwölf Euro neunundvierzig.",
-      "ru": "С вас двенадцать евро сорок девять.",
-      "audio": "audio/2eac6010fab0.m4a"
-     }
-    ],
-    "task": "durchsage"
-   },
    "scene": {
     "view": "task",
-    "dialogue": "kleider",
+    "dialogue": "entscheidung",
     "words": "einkaufen",
     "table": "welch",
     "rows": [
@@ -2074,7 +1909,7 @@
       "punct": ".",
       "plain": "Das macht zwölf Euro neunundvierzig.",
       "ru": "С вас двенадцать евро сорок девять.",
-      "audio": "audio/2eac6010fab0.m4a"
+      "audio": "audio/265ee58ff002.m4a"
      }
     ],
     "task": "durchsage",
@@ -2091,7 +1926,7 @@
    "point": "Часть 2: найдите в ситуации 2–3 ключевых слова и ищите их в объявлениях",
    "scene": {
     "view": "task",
-    "dialogue": "kleider",
+    "dialogue": "entscheidung",
     "words": "einkaufen",
     "table": "welch",
     "rows": [
@@ -2128,7 +1963,7 @@
       "punct": ".",
       "plain": "Das macht zwölf Euro neunundvierzig.",
       "ru": "С вас двенадцать евро сорок девять.",
-      "audio": "audio/2eac6010fab0.m4a"
+      "audio": "audio/265ee58ff002.m4a"
      }
     ],
     "task": "anzeigen"
@@ -2143,53 +1978,9 @@
    "read": "*b*. В объявлении *a* есть приманка — *alles 50 % billiger*, «всё на 50 % дешевле», но там только летние вещи: футболки, платья и брюки. Курток нет. В *b* — куртки и пальто к зиме, и цена подходит: *ab 35 €* — «от 35 евро». Скидка — ещё не ответ, если нужного товара в магазине нет.",
    "point": "Скидка — не ответ: сначала проверьте, есть ли нужный товар",
    "question": "Какое объявление подходит — a или b?",
-   "sceneBefore": {
-    "view": "task",
-    "dialogue": "kleider",
-    "words": "einkaufen",
-    "table": "welch",
-    "rows": [
-     {
-      "slots": [
-       [
-        {
-         "key": "das",
-         "text": "Das"
-        }
-       ],
-       [
-        {
-         "key": "mach",
-         "text": "mach+t"
-        }
-       ],
-       [
-        {
-         "key": "zwölf",
-         "text": "zwölf"
-        },
-        {
-         "key": "euro",
-         "text": "Euro"
-        },
-        {
-         "key": "neunundvierzig",
-         "text": "neunundvierzig"
-        }
-       ],
-       []
-      ],
-      "punct": ".",
-      "plain": "Das macht zwölf Euro neunundvierzig.",
-      "ru": "С вас двенадцать евро сорок девять.",
-      "audio": "audio/2eac6010fab0.m4a"
-     }
-    ],
-    "task": "anzeigen"
-   },
    "scene": {
     "view": "task",
-    "dialogue": "kleider",
+    "dialogue": "entscheidung",
     "words": "einkaufen",
     "table": "welch",
     "rows": [
@@ -2226,7 +2017,7 @@
       "punct": ".",
       "plain": "Das macht zwölf Euro neunundvierzig.",
       "ru": "С вас двенадцать евро сорок девять.",
-      "audio": "audio/2eac6010fab0.m4a"
+      "audio": "audio/265ee58ff002.m4a"
      }
     ],
     "task": "anzeigen",
@@ -2243,7 +2034,7 @@
    "point": "Просьба: *Eine Tüte, bitte!* Реакция: *Ja, gern.* / *Leider habe ich keine Tüte.*",
    "scene": {
     "view": "task",
-    "dialogue": "kleider",
+    "dialogue": "entscheidung",
     "words": "einkaufen",
     "table": "welch",
     "rows": [
@@ -2280,7 +2071,7 @@
       "punct": ".",
       "plain": "Das macht zwölf Euro neunundvierzig.",
       "ru": "С вас двенадцать евро сорок девять.",
-      "audio": "audio/2eac6010fab0.m4a"
+      "audio": "audio/265ee58ff002.m4a"
      }
     ],
     "task": "tuete",
@@ -2299,7 +2090,7 @@
    ],
    "answer": 1,
    "why": "*die Äpfel* — множественное число, поэтому *kosten*.",
-   "audio": "audio/f9105b48112a.m4a"
+   "audio": "audio/d72b71d92995.m4a"
   },
   {
    "id": "einkaufen-2",
@@ -2311,7 +2102,7 @@
    ],
    "answer": 0,
    "why": "*die Hose* — единственное число, хотя по-русски «брюки».",
-   "audio": "audio/c9210020b8e0.m4a"
+   "audio": "audio/956af326cf9b.m4a"
   },
   {
    "id": "einkaufen-3",
@@ -2335,7 +2126,7 @@
    ],
    "answer": 0,
    "why": "После числа *Kilo* не меняется: *zwei Kilo*.",
-   "audio": "audio/4e97da066a9d.m4a"
+   "audio": "audio/b25fd634038f.m4a"
   },
   {
    "id": "einkaufen-5",
@@ -2347,7 +2138,7 @@
    ],
    "answer": 1,
    "why": "*die Flasche* — обычное существительное: *drei Flasch+en*.",
-   "audio": "audio/90dbf7c9d976.m4a"
+   "audio": "audio/ba663e4e91e1.m4a"
   },
   {
    "id": "einkaufen-6",
@@ -2358,7 +2149,7 @@
    ],
    "ru": "Свитер красивый. Я его беру.",
    "why": "*der Pullover* → *ihn*, как *der* → *den*.",
-   "audio": "audio/bf2948b0e90e.m4a"
+   "audio": "audio/96fd8c580c23.m4a"
   },
   {
    "id": "einkaufen-7",
@@ -2369,7 +2160,7 @@
    ],
    "ru": "Куртка слишком дорогая. Я её не покупаю.",
    "why": "*die Jacke* → *sie*: женский род в винительном не меняется.",
-   "audio": "audio/7bf9b3e7e16a.m4a"
+   "audio": "audio/c2a8a2876b18.m4a"
   },
   {
    "id": "einkaufen-8",
@@ -2380,7 +2171,7 @@
    ],
    "ru": "Футболка? По-моему, она супер!",
    "why": "*das T-Shirt* — среднего рода, поэтому *es*, хотя по-русски «она».",
-   "audio": "audio/368d1dcdca63.m4a"
+   "audio": "audio/531e4d4d275f.m4a"
   },
   {
    "id": "einkaufen-9",
@@ -2393,7 +2184,7 @@
    ],
    "answer": 1,
    "why": "Множественное число → *sie*.",
-   "audio": "audio/545c9e404aff.m4a"
+   "audio": "audio/3218f9172373.m4a"
   },
   {
    "id": "einkaufen-10",
@@ -2406,7 +2197,7 @@
    ],
    "answer": 1,
    "why": "Свитер здесь дополнение, мужской род: *welch+en*, как *den*.",
-   "audio": "audio/c611f13b5f6b.m4a"
+   "audio": "audio/eb8575a8e298.m4a"
   },
   {
    "id": "einkaufen-11",
@@ -2417,7 +2208,7 @@
    ],
    "hint": "welch-",
    "why": "*die Größe* → *welche*.",
-   "audio": "audio/217e4f21d9af.m4a"
+   "audio": "audio/f394cb19c75c.m4a"
   },
   {
    "id": "einkaufen-12",
@@ -2428,7 +2219,7 @@
    ],
    "hint": "finden",
    "why": "Основа на *-d*: *du find+est*.",
-   "audio": "audio/00db5b314461.m4a"
+   "audio": "audio/02c90461ead6.m4a"
   },
   {
    "id": "einkaufen-13",
@@ -2447,7 +2238,7 @@
    "type": "order",
    "ru": "По-моему, он слишком дорогой.",
    "de": "Ich finde ihn zu teuer.",
-   "audio": "audio/07858de1ee06.m4a"
+   "audio": "audio/86836df18b8e.m4a"
   },
   {
    "id": "einkaufen-15",
@@ -2457,16 +2248,389 @@
    "also": [
     "Ein Kilo Tomaten nehme ich."
    ],
-   "audio": "audio/c68386f8bac7.m4a"
+   "audio": "audio/8bf6384c4ca6.m4a"
   },
   {
    "id": "einkaufen-16",
    "type": "order",
    "ru": "Какой у вас размер?",
    "de": "Welche Größe haben Sie?",
-   "audio": "audio/217e4f21d9af.m4a"
+   "audio": "audio/f394cb19c75c.m4a"
+  },
+  {
+   "id": "einkaufen-17",
+   "type": "gap",
+   "q": "Das T-Shirt ist gut. Mateo nimmt ___.",
+   "answer": [
+    "es"
+   ],
+   "why": "*das T-Shirt* — средний род, в винительном — *es*.",
+   "audio": "audio/ad0a896a0012.m4a"
+  },
+  {
+   "id": "einkaufen-18",
+   "type": "choice",
+   "q": "Ein Pfund Tomaten sind …",
+   "options": [
+    "500 Gramm",
+    "100 Gramm",
+    "2 Kilo"
+   ],
+   "answer": 0,
+   "why": "В этой ситуации *ein Pfund* означает полкилограмма, 500 г."
   }
  ],
+ "case": {
+  "title": "Der doppelte Einkaufszettel",
+  "ru": "Два списка покупок",
+  "intro": "В клуб принесли две версии списка и чек с лишней одеждой. Сверьте количества, цены и окончательные решения друзей. Важно восстановить покупки, прежде чем кто-то оплатит лишнее от имени команды.",
+  "people": {
+   "M": {
+    "name": "Mateo",
+    "voice": "Reed"
+   },
+   "D": {
+    "name": "Dana",
+    "voice": "Anna"
+   }
+  },
+  "steps": [
+   {
+    "read": "В подлинной записке Даны указаны яблоки и помидоры. На копии вместо полкило появилась другая масса.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Zwei Kilo Äpfel und ein Pfund Tomaten.",
+      "ru": "Два килограмма яблок и полкило помидоров."
+     }
+    ],
+    "question": "Какая строка должна остаться в списке?",
+    "options": [
+     "Äpfel 2 kg · Tomaten 500 g",
+     "Äpfel 2 kg · Tomaten 2 kg",
+     "Äpfel 500 g · Tomaten 2 kg"
+    ],
+    "answer": 0,
+    "right": "*Ein Pfund* — 500 г. *Zwei Kilo* относится к яблокам, не к обоим товарам.",
+    "wrong": [
+     null,
+     "Два килограмма названы только для яблок.",
+     "Количество поменяли местами: это не подтверждается запиской."
+    ]
+   },
+   {
+    "read": "Кто-то перенёс цену помидоров на апельсины. Сверьте текст учебного объявления.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Tomaten: das Kilo zwei Euro zwanzig. Orangen: das Kilo zwei Euro neunzig.",
+      "ru": "Помидоры: 2,20 евро за кг. Апельсины: 2,90 евро за кг."
+     }
+    ],
+    "question": "Сколько стоит килограмм апельсинов по этому объявлению?",
+    "options": [
+     "2,20 €",
+     "2,90 €",
+     "9,20 €"
+    ],
+    "answer": 1,
+    "right": "*Zwei Euro neunzig* относится к апельсинам. Товар и цену нужно держать парой.",
+    "wrong": [
+     "2,20 — цена помидоров.",
+     null,
+     "В цене *neunzig* означает 90 центов, не 9 евро."
+    ]
+   },
+   {
+    "read": "В чеке появилась куртка. Но сообщение Матео подтверждает другую вещь.",
+    "evidence": [
+     {
+      "kind": "quote",
+      "who": "M",
+      "de": "Der Pullover in S ist gut. Ich nehme ihn. Die Jacke ist zu teuer.",
+      "ru": "Свитер в размере S подходит. Я его беру. Куртка слишком дорогая.",
+      "audio": "audio/a7f7b6ea24bf.m4a"
+     }
+    ],
+    "question": "Что подтверждено как покупка?",
+    "options": [
+     "Куртка",
+     "Свитер в размере M",
+     "Свитер в размере S"
+    ],
+    "answer": 2,
+    "right": "*Ihn* заменяет *den Pullover*. Размер S указан прямо; куртка оценена как слишком дорогая.",
+    "wrong": [
+     "Куртка не выбрана. Местоимение *ihn* относится к свитеру.",
+     "Размер после примерки — S.",
+     null
+    ]
+   },
+   {
+    "read": "Нужно сохранить одну исправленную запись. В ней должны совпасть все проверенные количества и вещь.",
+    "evidence": [
+     {
+      "kind": "quote",
+      "who": "D",
+      "de": "Ja, zwei Kilo Äpfel und ein Pfund Tomaten. Mateo nimmt den Pullover in S.",
+      "ru": "Да, два килограмма яблок и полкило помидоров. Матео берёт свитер в размере S.",
+      "audio": "audio/d941530b477c.m4a"
+     }
+    ],
+    "question": "Какой вариант согласуется с подтверждениями?",
+    "options": [
+     "2 кг яблок · 500 г помидоров · свитер S",
+     "2 кг яблок · 2 кг помидоров · куртка",
+     "500 г яблок · 2 кг помидоров · свитер M"
+    ],
+    "answer": 0,
+    "right": "Все три пункта подтверждены отдельно. Исправленный список можно использовать; неверную копию сохраняют, чтобы выяснить её источник.",
+    "wrong": [
+     null,
+     "И масса помидоров, и куртка взяты из неверной копии.",
+     "Количество товаров переставлено, размер свитера устарел."
+    ]
+   }
+  ],
+  "ending": "Команда не оплачивает лишнюю куртку и не покупает неправильное количество продуктов. Йенсен замечает, что неверные записи смешивают старые и новые сведения. Теперь особенно важно договориться о точном времени встречи и сохранять последнее подтверждение."
+ },
+ "adventure": {
+  "kind": "sequence",
+  "title": "Закупки для прогулки",
+  "intro": "У команды есть список продуктов и ограниченный бюджет на одежду. Соберите нужное количество, проверьте деньги и положите в пакет только подтверждённые покупки. Список, объявления и цены — учебные.",
+  "ending": "Продукты собраны по списку, цена и сдача проверены, Матео выбрал подходящий свитер. В пакет попали только купленные вещи. Теперь нужно договориться, когда и где встречаться.",
+  "challenges": [
+   {
+    "id": "food-cart",
+    "kind": "quantity",
+    "title": "Соберите корзину по списку",
+    "intro": "Прочитайте записку Матео. Кнопками добавьте нужное количество каждого товара. Помните: *ein Pfund* — 500 граммов. Лишнее можно убрать.",
+    "success": "В корзине 2 кг яблок, 500 г помидоров, 3 бутылки воды и 200 г сыра. Записка превратилась в реальные сборы.",
+    "wrong": "Сверьте число и единицу у каждого товара: *zwei Kilo*, *ein Pfund*, *drei Flaschen*, *200 Gramm*. Красным отмечены несовпадающие количества.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Für die Fahrt: zwei Kilo Äpfel, ein Pfund Tomaten, drei Flaschen Wasser und 200 Gramm Käse. Danke, Dana!",
+      "name": "Mateo"
+     }
+    ],
+    "items": [
+     {
+      "id": "apples",
+      "label": "Äpfel",
+      "unit": "kg",
+      "answer": 2,
+      "step": 1,
+      "max": 5,
+      "icon": "🍎"
+     },
+     {
+      "id": "tomatoes",
+      "label": "Tomaten",
+      "unit": "g",
+      "answer": 500,
+      "step": 250,
+      "max": 1500,
+      "icon": "🍅"
+     },
+     {
+      "id": "water",
+      "label": "Wasser",
+      "unit": "Flasche",
+      "pluralUnit": "Flaschen",
+      "answer": 3,
+      "step": 1,
+      "max": 6,
+      "icon": "💧"
+     },
+     {
+      "id": "cheese",
+      "label": "Käse",
+      "unit": "g",
+      "answer": 200,
+      "step": 100,
+      "max": 600,
+      "icon": "🧀"
+     }
+    ]
+   },
+   {
+    "id": "unit-price",
+    "kind": "select",
+    "title": "Проверьте цену на яблоки",
+    "intro": "Прослушайте цену продавщицы. Выберите цену за один килограмм яблок, а не общий счёт.",
+    "success": "*Zwei Euro fünfzig das Kilo*: килограмм стоит 2,50 евро. Два килограмма яблок — 5 евро.",
+    "wrong": "*Das Kilo* относится к одному килограмму. 5 евро получилось бы за два килограмма, 6,80 — весь счёт с помидорами.",
+    "quotes": [
+     {
+      "de": "Was kosten die Äpfel?",
+      "audio": "audio/d72b71d92995.m4a",
+      "name": "Dana"
+     },
+     {
+      "de": "Zwei Euro fünfzig das Kilo.",
+      "audio": "audio/c8ab9a461a8f.m4a",
+      "name": "Verkäuferin"
+     }
+    ],
+    "options": [
+     {
+      "id": "two-fifty",
+      "label": "1 kg Äpfel — 2,50 €"
+     },
+     {
+      "id": "five",
+      "label": "1 kg Äpfel — 5,00 €"
+     },
+     {
+      "id": "six-eighty",
+      "label": "1 kg Äpfel — 6,80 €"
+     }
+    ],
+    "answer": [
+     "two-fifty"
+    ]
+   },
+   {
+    "id": "change",
+    "kind": "select",
+    "title": "Не потеряйте сдачу",
+    "intro": "У продавщицы вы покупаете только яблоки и помидоры из разговора. Она назвала общую сумму, Дана дала 10 евро. Какую сдачу нужно получить?",
+    "success": "10,00 − 6,80 = 3,20 евро. Вы не перепутали сумму покупки со сдачей.",
+    "wrong": "Счёт — *sechs Euro achtzig*, Дана даёт *zehn Euro*. Из переданной суммы вычитаем счёт.",
+    "quotes": [
+     {
+      "de": "Das macht sechs Euro achtzig.",
+      "audio": "audio/11674a16a5c9.m4a",
+      "name": "Verkäuferin"
+     },
+     {
+      "de": "Hier sind zehn Euro.",
+      "audio": "audio/48e29d23ae85.m4a",
+      "name": "Dana"
+     }
+    ],
+    "options": [
+     {
+      "id": "three-twenty",
+      "label": "3,20 €"
+     },
+     {
+      "id": "six-eighty",
+      "label": "6,80 €"
+     },
+     {
+      "id": "two-thirty",
+      "label": "2,30 €"
+     }
+    ],
+    "answer": [
+     "three-twenty"
+    ]
+   },
+   {
+    "id": "pullover",
+    "kind": "select",
+    "title": "Выберите свитер для Матео",
+    "intro": "У Матео 40 евро на свитер. Послушайте, какой размер он попросил после примерки, и выберите подходящий вариант.",
+    "success": "Сначала Матео назвал M, но свитер оказался велик. Он попросил S; 29,90 евро укладываются в бюджет.",
+    "wrong": "Проверьте оба условия: после *zu groß* он попросил S, а цена должна быть не выше 40 евро. Первое названное число не всегда окончательный выбор.",
+    "quotes": [
+     {
+      "de": "Größe M.",
+      "audio": "audio/3cc62d57c745.m4a",
+      "name": "Mateo"
+     },
+     {
+      "de": "Hm, ich finde ihn zu groß. Haben Sie ihn auch in S?",
+      "audio": "audio/bb13d3b561ba.m4a",
+      "name": "Mateo"
+     },
+     {
+      "de": "Super! Und er ist nicht teuer – nur neunundzwanzig Euro neunzig.",
+      "audio": "audio/47d2bba4ad35.m4a",
+      "name": "Dana"
+     }
+    ],
+    "options": [
+     {
+      "id": "s-budget",
+      "label": "Pullover · S · 29,90 €",
+      "icon": "🧶"
+     },
+     {
+      "id": "m-budget",
+      "label": "Pullover · M · 29,90 €",
+      "icon": "🧶"
+     },
+     {
+      "id": "s-expensive",
+      "label": "Pullover · S · 49,90 €",
+      "icon": "🧶"
+     }
+    ],
+    "answer": [
+     "s-budget"
+    ]
+   },
+   {
+    "id": "confirmed-clothes",
+    "kind": "pack",
+    "title": "Что положить в пакет?",
+    "intro": "Послушайте окончательные решения у кассы. В пакет идут только вещи, которые друзья действительно берут. Названная вещь с *nicht* остаётся в магазине.",
+    "success": "Свитер и футболка куплены; куртка и туфли остаются. *Ihn* и *es* помогли понять покупку, *sie nicht* — отказ.",
+    "wrong": "Матео сказал *Ich nehme ihn* о свитере и *Ich nehme es* о футболке. Дана дважды сказала *Ich kaufe sie nicht*.",
+    "quotes": [
+     {
+      "de": "Der Pullover ist gut. Ich nehme ihn.",
+      "audio": "audio/57509008b8af.m4a",
+      "name": "Mateo"
+     },
+     {
+      "de": "Die Jacke ist zu teuer. Ich kaufe sie nicht.",
+      "audio": "audio/c2a8a2876b18.m4a",
+      "name": "Dana"
+     },
+     {
+      "de": "Das T-Shirt ist schön. Ich nehme es.",
+      "audio": "audio/81f081ed440f.m4a",
+      "name": "Mateo"
+     },
+     {
+      "de": "Die Schuhe sind zu klein. Ich kaufe sie nicht.",
+      "audio": "audio/df97e8ade0f2.m4a",
+      "name": "Dana"
+     }
+    ],
+    "options": [
+     {
+      "id": "pullover",
+      "label": "Pullover",
+      "icon": "🧶"
+     },
+     {
+      "id": "jacket",
+      "label": "Jacke",
+      "icon": "🧥"
+     },
+     {
+      "id": "shirt",
+      "label": "T-Shirt",
+      "icon": "👕"
+     },
+     {
+      "id": "shoes",
+      "label": "Schuhe",
+      "icon": "👟"
+     }
+    ],
+    "answer": [
+     "pullover",
+     "shirt"
+    ]
+   }
+  ]
+ },
  "spy": [
   {
    "de": "Ich finde den Pullover zu groß.",

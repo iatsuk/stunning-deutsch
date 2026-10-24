@@ -4,7 +4,7 @@
  "order": 8,
  "title": "Zwei Zimmer, Küche, Bad",
  "ru": "Жильё",
- "lede": "Марко ищет квартиру в Лейпциге: вместе с Анной читает объявление, а потом идёт смотреть квартиру с хозяином. Учимся называть комнаты и мебель, говорить, где что стоит, и расшифровывать сокращения в объявлениях. Новая грамматика — сложные слова и дательный падеж после in и auf.",
+ "lede": "Лусия и Диего обсуждают более долгий визит в Киль. Матео помогает найти жильё для гостей: читает объявления с Даной и осматривает квартиру на Holtenauer Straße. Учимся сравнивать условия, понимать сложные слова и находить вещи по описаниям *im Keller*, *in der Küche*, *auf dem Balkon*.",
  "goals": [
   "Назвать комнаты, мебель и технику в квартире",
   "Сказать, где что стоит: im Keller, in der Küche, auf dem Balkon",
@@ -45,150 +45,150 @@
  ],
  "dialogues": {
   "anzeige": {
-   "title": "Marco sucht eine Wohnung",
-   "ru": "Марко ищет квартиру",
-   "place": "Café, Leipzig",
+   "title": "Eine Wohnung für die Gäste",
+   "ru": "Жильё для гостей",
+   "place": "Café Brunswik, Kiel · учебные объявления и цены",
    "people": {
     "M": {
-     "name": "Marco",
+     "name": "Mateo",
      "voice": "Reed"
     },
     "A": {
-     "name": "Anna",
+     "name": "Dana",
      "voice": "Anna"
     }
    },
    "lines": [
     {
      "who": "M",
-     "de": "Anna, ich suche eine Wohnung. Mein Zimmer im Wohnheim ist zu klein.",
-     "ru": "Анна, я ищу квартиру. Моя комната в общежитии слишком маленькая.",
-     "audio": "audio/90862f9984de.m4a"
+     "de": "Dana, Lucía und Diego suchen eine Wohnung. Ihr Zimmer ist zu klein.",
+     "ru": "Дана, Лусия и Диего ищут квартиру. Их комната слишком маленькая.",
+     "audio": "audio/a5bcaf7a2778.m4a"
     },
     {
      "who": "A",
      "de": "Hier ist eine Anzeige: zwei Zimmer, Küche, Bad und Balkon!",
      "ru": "Вот объявление — две комнаты, кухня, ванная и балкон!",
-     "audio": "audio/b240c51d2f66.m4a"
+     "audio": "audio/66f09ad8f0cb.m4a"
     },
     {
      "who": "M",
      "de": "Klingt gut! Was kostet die Wohnung?",
      "ru": "Звучит неплохо! Сколько стоит квартира?",
-     "audio": "audio/28d8a2403821.m4a"
+     "audio": "audio/0ee66429b5b6.m4a"
     },
     {
      "who": "A",
      "de": "450 Euro kalt, plus 130 Euro Nebenkosten.",
      "ru": "450 евро «холодными» плюс 130 евро коммунальных.",
-     "audio": "audio/8e7a9b031054.m4a"
+     "audio": "audio/62a6f5ca1742.m4a"
     },
     {
      "who": "M",
      "de": "Kalt? Was bedeutet das?",
      "ru": "«Холодными»? Что это значит?",
-     "audio": "audio/469ce03ea4c3.m4a"
+     "audio": "audio/8cf753e6dae4.m4a"
     },
     {
      "who": "A",
-     "de": "Kalt – das ist nur die Miete. Heizung und Wasser kosten extra.",
-     "ru": "«Холодная» — это только аренда. Отопление и вода — отдельно.",
-     "audio": "audio/1f67f1626650.m4a"
+     "de": "Hier ist die Kaltmiete nur die Miete. Heizung und Wasser kosten extra.",
+     "ru": "Здесь холодная аренда — только плата за квартиру. Отопление и вода оплачиваются отдельно.",
+     "audio": "audio/6e10c9fe1b9d.m4a"
     },
     {
      "who": "M",
      "de": "Und wo ist die Wohnung?",
      "ru": "А где квартира?",
-     "audio": "audio/18af69cc9e84.m4a"
+     "audio": "audio/a7bd95428e32.m4a"
     },
     {
      "who": "A",
-     "de": "In Gohlis, in der Lindenstraße. Das ist nicht weit.",
-     "ru": "В Голисе, на Линденштрассе. Это недалеко.",
-     "audio": "audio/e3e552d4ea22.m4a"
+     "de": "In Kiel, in der Holtenauer Straße. Das ist nicht weit.",
+     "ru": "В Киле, на Holtenauer Straße. Это недалеко.",
+     "audio": "audio/2682c61666a1.m4a"
     },
     {
      "who": "M",
      "de": "Super, ich rufe gleich an!",
      "ru": "Супер, сейчас же позвоню!",
-     "audio": "audio/b0815c881aa1.m4a"
+     "audio": "audio/088cc6922c76.m4a"
     }
    ]
   },
   "besichtigung": {
    "title": "Die Wohnungsbesichtigung",
    "ru": "Смотрим квартиру",
-   "place": "Lindenstraße, Leipzig-Gohlis",
+   "place": "Вымышленная квартира на Holtenauer Straße, Kiel",
    "people": {
     "K": {
      "name": "Herr Krüger",
      "voice": "Eddy"
     },
     "M": {
-     "name": "Marco",
+     "name": "Mateo",
      "voice": "Reed"
     }
    },
    "lines": [
     {
      "who": "K",
-     "de": "Guten Tag, Herr Rossi! Hier ist der Flur, und links ist das Wohnzimmer.",
-     "ru": "Добрый день, господин Росси! Вот прихожая, а слева гостиная.",
-     "audio": "audio/1a5a90ff3897.m4a"
+     "de": "Guten Tag, Herr Fernández! Hier ist der Flur, und links ist das Wohnzimmer.",
+     "ru": "Добрый день, господин Фернандес! Вот прихожая, а слева гостиная.",
+     "audio": "audio/1bca17edbd25.m4a"
     },
     {
      "who": "M",
      "de": "Oh, das Wohnzimmer ist groß und hell!",
      "ru": "О, гостиная большая и светлая!",
-     "audio": "audio/22bf9c9ebe18.m4a"
+     "audio": "audio/d6cdd3127e74.m4a"
     },
     {
      "who": "K",
      "de": "Ja, und hier ist der Balkon. Auf dem Balkon haben Sie am Nachmittag Sonne.",
      "ru": "Да, а вот балкон. После обеда на балконе солнце.",
-     "audio": "audio/62ddb90abbdc.m4a"
+     "audio": "audio/f355a7bc1a10.m4a"
     },
     {
      "who": "M",
      "de": "Toll! Und wo ist die Küche?",
      "ru": "Здорово! А где кухня?",
-     "audio": "audio/bc9b1a1f3358.m4a"
+     "audio": "audio/79ca7dc6aaa4.m4a"
     },
     {
      "who": "K",
      "de": "Hier rechts. In der Küche gibt es einen Herd und einen Kühlschrank.",
      "ru": "Здесь, справа. На кухне есть плита и холодильник.",
-     "audio": "audio/32c00e2a84a2.m4a"
+     "audio": "audio/1844d39bc976.m4a"
     },
     {
      "who": "M",
      "de": "Und die Waschmaschine? Ist sie im Bad?",
      "ru": "А стиральная машина? Она в ванной?",
-     "audio": "audio/cf4ae8a91697.m4a"
+     "audio": "audio/998f558f7c93.m4a"
     },
     {
      "who": "K",
      "de": "Nein, sie steht im Keller. Das Bad ist klein, aber modern.",
      "ru": "Нет, она стоит в подвале. Ванная маленькая, но современная.",
-     "audio": "audio/1e4de1287223.m4a"
+     "audio": "audio/359cc1bd702c.m4a"
     },
     {
      "who": "M",
      "de": "Ist das Schlafzimmer ruhig?",
      "ru": "А в спальне тихо?",
-     "audio": "audio/dedaa671d814.m4a"
+     "audio": "audio/c8183046f1c1.m4a"
     },
     {
      "who": "K",
      "de": "Ja, sehr ruhig. Im Schlafzimmer steht auch ein Kleiderschrank.",
      "ru": "Да, очень тихо. И в спальне стоит платяной шкаф.",
-     "audio": "audio/7c5f31faff56.m4a"
+     "audio": "audio/4fb50e0ea543.m4a"
     },
     {
      "who": "M",
-     "de": "Die Wohnung ist perfekt! Ich nehme sie.",
-     "ru": "Квартира идеальная! Я её беру.",
-     "audio": "audio/179c33a03173.m4a"
+     "de": "Ich finde sie gut. Ich rufe Lucía und Diego an.",
+     "ru": "Квартира мне нравится. Я позвоню Лусии и Диего.",
+     "audio": "audio/ea2cf32d074a.m4a"
     }
    ]
   }
@@ -203,21 +203,21 @@
      "ru": "квартира",
      "gender": "f",
      "plural": "Wohnungen",
-     "audio": "audio/b491d4667e17.m4a"
+     "audio": "audio/51cba7a37dfc.m4a"
     },
     {
      "de": "das Haus",
      "ru": "дом, здание",
      "gender": "n",
      "plural": "Häuser",
-     "audio": "audio/ca92f77bfa1f.m4a"
+     "audio": "audio/6241f55a929b.m4a"
     },
     {
      "de": "das Zimmer",
      "ru": "комната",
      "gender": "n",
      "plural": "Zimmer",
-     "audio": "audio/087997d6b817.m4a"
+     "audio": "audio/0a24d45ed99e.m4a"
     },
     {
      "de": "das Wohnzimmer",
@@ -225,7 +225,7 @@
      "gender": "n",
      "plural": "Wohnzimmer",
      "note": "wohnen + das Zimmer",
-     "audio": "audio/a6f7e1970cef.m4a"
+     "audio": "audio/980a92f26afc.m4a"
     },
     {
      "de": "das Schlafzimmer",
@@ -233,7 +233,7 @@
      "gender": "n",
      "plural": "Schlafzimmer",
      "note": "schlafen + das Zimmer",
-     "audio": "audio/7ea4fdfde408.m4a"
+     "audio": "audio/087a2dd36365.m4a"
     },
     {
      "de": "die Küche",
@@ -241,7 +241,7 @@
      "gender": "f",
      "plural": "Küchen",
      "note": "in der Küche — на кухне",
-     "audio": "audio/41e6e1d978ba.m4a"
+     "audio": "audio/55c93c8a5fd2.m4a"
     },
     {
      "de": "das Bad",
@@ -249,14 +249,14 @@
      "gender": "n",
      "plural": "Bäder",
      "note": "полностью — das Badezimmer",
-     "audio": "audio/81151bc6bc97.m4a"
+     "audio": "audio/16b452fa013d.m4a"
     },
     {
      "de": "der Flur",
      "ru": "прихожая",
      "gender": "m",
      "plural": "Flure",
-     "audio": "audio/6cc9004fdf35.m4a"
+     "audio": "audio/80cb6c0b932d.m4a"
     },
     {
      "de": "der Balkon",
@@ -264,7 +264,7 @@
      "gender": "m",
      "plural": "Balkone",
      "note": "auf dem Balkon",
-     "audio": "audio/ba7ef139937b.m4a"
+     "audio": "audio/973ff8c0b9b6.m4a"
     },
     {
      "de": "der Keller",
@@ -272,7 +272,7 @@
      "gender": "m",
      "plural": "Keller",
      "note": "im Keller",
-     "audio": "audio/532c25348703.m4a"
+     "audio": "audio/2d8505ffd516.m4a"
     },
     {
      "de": "das Treppenhaus",
@@ -280,14 +280,14 @@
      "gender": "n",
      "plural": "Treppenhäuser",
      "note": "die Treppe + das Haus",
-     "audio": "audio/0df900c5f9d2.m4a"
+     "audio": "audio/edd96031fc41.m4a"
     },
     {
      "de": "das Wohnheim",
      "ru": "общежитие",
      "gender": "n",
      "plural": "Wohnheime",
-     "audio": "audio/9d9bc2001629.m4a"
+     "audio": "audio/d80a480f044e.m4a"
     }
    ]
   },
@@ -301,42 +301,42 @@
      "gender": "pl",
      "plural": null,
      "note": "Die Möbel sind neu.",
-     "audio": "audio/a0f75d170c4a.m4a"
+     "audio": "audio/4f61d4dc2d14.m4a"
     },
     {
      "de": "der Tisch",
      "ru": "стол",
      "gender": "m",
      "plural": "Tische",
-     "audio": "audio/1676200db59d.m4a"
+     "audio": "audio/b0119c5ac197.m4a"
     },
     {
      "de": "der Stuhl",
      "ru": "стул",
      "gender": "m",
      "plural": "Stühle",
-     "audio": "audio/1afb1e7ef6e8.m4a"
+     "audio": "audio/e644af7b9eb7.m4a"
     },
     {
      "de": "das Bett",
      "ru": "кровать",
      "gender": "n",
      "plural": "Betten",
-     "audio": "audio/5360f679269a.m4a"
+     "audio": "audio/6b6c24b912c4.m4a"
     },
     {
      "de": "das Sofa",
      "ru": "диван",
      "gender": "n",
      "plural": "Sofas",
-     "audio": "audio/7bd9930d2431.m4a"
+     "audio": "audio/1dc412b2f3bb.m4a"
     },
     {
      "de": "der Schrank",
      "ru": "шкаф",
      "gender": "m",
      "plural": "Schränke",
-     "audio": "audio/4ced10e11c41.m4a"
+     "audio": "audio/bfcefcc26553.m4a"
     },
     {
      "de": "der Kleiderschrank",
@@ -344,7 +344,7 @@
      "gender": "m",
      "plural": "Kleiderschränke",
      "note": "die Kleider + der Schrank",
-     "audio": "audio/27dc83212167.m4a"
+     "audio": "audio/755ac39d9f88.m4a"
     },
     {
      "de": "der Kühlschrank",
@@ -352,14 +352,14 @@
      "gender": "m",
      "plural": "Kühlschränke",
      "note": "kühl + der Schrank",
-     "audio": "audio/985a33a58bff.m4a"
+     "audio": "audio/ebdeb967de95.m4a"
     },
     {
      "de": "der Herd",
      "ru": "плита",
      "gender": "m",
      "plural": "Herde",
-     "audio": "audio/596f2565362b.m4a"
+     "audio": "audio/d8584e77130a.m4a"
     },
     {
      "de": "die Waschmaschine",
@@ -367,7 +367,7 @@
      "gender": "f",
      "plural": "Waschmaschinen",
      "note": "waschen + die Maschine",
-     "audio": "audio/c01db80e005e.m4a"
+     "audio": "audio/7fa4ad58ade8.m4a"
     },
     {
      "de": "der Schreibtisch",
@@ -375,14 +375,14 @@
      "gender": "m",
      "plural": "Schreibtische",
      "note": "schreiben + der Tisch",
-     "audio": "audio/4915781d3bbb.m4a"
+     "audio": "audio/f187334c8366.m4a"
     },
     {
      "de": "die Lampe",
      "ru": "лампа",
      "gender": "f",
      "plural": "Lampen",
-     "audio": "audio/6fb6a2c08529.m4a"
+     "audio": "audio/b34283510d3f.m4a"
     }
    ]
   },
@@ -395,28 +395,28 @@
      "ru": "большой — маленький",
      "gender": null,
      "plural": null,
-     "audio": "audio/3d3c1fc889f1.m4a"
+     "audio": "audio/3e6856b76648.m4a"
     },
     {
      "de": "hell – dunkel",
      "ru": "светлый — тёмный",
      "gender": null,
      "plural": null,
-     "audio": "audio/aeedea17105c.m4a"
+     "audio": "audio/c459ee8fa9f2.m4a"
     },
     {
      "de": "ruhig – laut",
      "ru": "тихий — шумный",
      "gender": null,
      "plural": null,
-     "audio": "audio/20da87a8c659.m4a"
+     "audio": "audio/49d4b7855b56.m4a"
     },
     {
      "de": "neu – alt",
      "ru": "новый — старый",
      "gender": null,
      "plural": null,
-     "audio": "audio/cf16b61aba97.m4a"
+     "audio": "audio/4a5e878c634a.m4a"
     },
     {
      "de": "teuer – günstig",
@@ -424,21 +424,21 @@
      "gender": null,
      "plural": null,
      "note": "billig — дешёвый, часто с оттенком «дешёвка»",
-     "audio": "audio/f6295d9cc3d0.m4a"
+     "audio": "audio/afeec7d41fa9.m4a"
     },
     {
      "de": "schön",
      "ru": "красивый",
      "gender": null,
      "plural": null,
-     "audio": "audio/1015135c64d7.m4a"
+     "audio": "audio/4f23a86c699e.m4a"
     },
     {
      "de": "modern",
      "ru": "современный",
      "gender": null,
      "plural": null,
-     "audio": "audio/cb4c072f1a20.m4a"
+     "audio": "audio/1c5c2c80e859.m4a"
     },
     {
      "de": "frei",
@@ -446,7 +446,7 @@
      "gender": null,
      "plural": null,
      "note": "ab sofort frei — свободна сразу",
-     "audio": "audio/f6ad7ade8e4c.m4a"
+     "audio": "audio/c8146f5308e2.m4a"
     },
     {
      "de": "möbliert",
@@ -454,7 +454,7 @@
      "gender": null,
      "plural": null,
      "note": "в объявлениях möbl.",
-     "audio": "audio/f3530d905c21.m4a"
+     "audio": "audio/54c242b37450.m4a"
     },
     {
      "de": "kaputt",
@@ -462,7 +462,7 @@
      "gender": null,
      "plural": null,
      "note": "Die Heizung ist kaputt.",
-     "audio": "audio/5ebce977ac29.m4a"
+     "audio": "audio/12bd5a5c708f.m4a"
     }
    ]
   },
@@ -475,7 +475,7 @@
      "ru": "объявление",
      "gender": "f",
      "plural": "Anzeigen",
-     "audio": "audio/e1ff7b028abf.m4a"
+     "audio": "audio/f99595a42112.m4a"
     },
     {
      "de": "mieten",
@@ -483,7 +483,7 @@
      "gender": null,
      "plural": null,
      "note": "Ich miete eine Wohnung.",
-     "audio": "audio/7e241cb1d8dd.m4a"
+     "audio": "audio/59fdaa72393c.m4a"
     },
     {
      "de": "der Vermieter",
@@ -491,14 +491,14 @@
      "gender": "m",
      "plural": "Vermieter",
      "note": "die Vermieterin",
-     "audio": "audio/f667b610be4d.m4a"
+     "audio": "audio/8207da720d96.m4a"
     },
     {
      "de": "die Miete",
      "ru": "арендная плата",
      "gender": "f",
      "plural": "Mieten",
-     "audio": "audio/0ee0e28fcc10.m4a"
+     "audio": "audio/5991f37737ac.m4a"
     },
     {
      "de": "die Kaltmiete",
@@ -506,7 +506,7 @@
      "gender": "f",
      "plural": "Kaltmieten",
      "note": "KM",
-     "audio": "audio/828a17b29939.m4a"
+     "audio": "audio/c17f0e9b2685.m4a"
     },
     {
      "de": "die Nebenkosten",
@@ -514,7 +514,7 @@
      "gender": "pl",
      "plural": null,
      "note": "Wasser, Heizung, Müll",
-     "audio": "audio/d92648504768.m4a"
+     "audio": "audio/69302c0a7e19.m4a"
     },
     {
      "de": "die Warmmiete",
@@ -522,14 +522,14 @@
      "gender": "f",
      "plural": "Warmmieten",
      "note": "WM",
-     "audio": "audio/8a6b93e40afc.m4a"
+     "audio": "audio/cd1b23e12368.m4a"
     },
     {
      "de": "die Heizung",
      "ru": "отопление",
      "gender": "f",
      "plural": "Heizungen",
-     "audio": "audio/dcb90817b721.m4a"
+     "audio": "audio/67e3d5502329.m4a"
     },
     {
      "de": "der Quadratmeter",
@@ -537,7 +537,7 @@
      "gender": "m",
      "plural": "Quadratmeter",
      "note": "m² или qm",
-     "audio": "audio/5d81c3b7de5f.m4a"
+     "audio": "audio/a4941cc5d57b.m4a"
     },
     {
      "de": "das Erdgeschoss",
@@ -545,7 +545,7 @@
      "gender": "n",
      "plural": "Erdgeschosse",
      "note": "EG",
-     "audio": "audio/0cba85ae956a.m4a"
+     "audio": "audio/d6b10894bdfe.m4a"
     }
    ]
   }
@@ -671,7 +671,7 @@
     [
      "an + d+em",
      "am",
-     "Am Montag besichtigt Marco die Wohnung."
+     "Am Montag besichtigt Mateo die Wohnung."
     ],
     [
      "auf + d+em",
@@ -765,12 +765,12 @@
    "situation": "Sie suchen eine Wohnung mit Balkon. Sie möchten maximal 600 Euro warm bezahlen.",
    "options": [
     {
-     "title": "Plagwitz: 2-Zi.-Whg. mit Blk.",
-     "text": "55 m², 2. OG, EBK\nKM 520 €, NK 150 €\nab sofort frei\nTel. 0341 / 56 23 89"
+     "title": "Wik: 2-Zi.-Whg. mit Blk.",
+     "text": "55 m², 2. OG, EBK\nKM 520 €, NK 150 €\nab sofort frei\nTel. 0431 / 56 23 89"
     },
     {
-     "title": "Schöne 2-Zi.-Whg. in Lindenau",
-     "text": "48 m², 1. OG, Blk.\nruhig und hell\nWM 590 €\nab sofort frei\nTel. 0341 / 98 47 12"
+     "title": "2-Zi.-Whg. nahe Holtenauer Straße",
+     "text": "48 m², 1. OG, Blk.\nruhig und hell\nWM 580 €\nab sofort frei\nTel. 0431 / 98 47 12"
     }
    ],
    "answer": 1,
@@ -785,16 +785,24 @@
    "statement": "Ihr Fahrrad kann im Treppenhaus stehen.",
    "answer": false,
    "sample": []
+  },
+  "schluessel": {
+   "kind": "message",
+   "part": "lesen-1",
+   "title": "Nachricht für die Gäste",
+   "from": "Herr Krüger",
+   "text": "Der Hausschlüssel ist auf dem Tisch im Wohnzimmer, nicht im Schlafzimmer. Das Sofa ist auch im Wohnzimmer.",
+   "sample": []
   }
  },
  "beats": [
   {
    "id": "anzeige-1",
    "step": "anzeige",
-   "stepTitle": "Марко ищет квартиру",
+   "stepTitle": "Жильё для Лусии и Диего",
    "chapterIndex": 0,
    "indexInStep": 0,
-   "read": "Марко живёт в общежитии, и комната ему тесна: *Mein Zimmer im Wohnheim ist zu klein.* Анна тут же находит объявление: *zwei Zimmer, Küche, Bad und Balkon*. Так в Германии описывают квартиру — числом комнат. Кухня и ванная в это число не входят: *2-Zimmer-Wohnung* — это две жилые комнаты плюс кухня и ванная, по-нашему «двушка».",
+   "read": "Гости Матео ищут квартиру: *Lucía und Diego suchen eine Wohnung. Ihr Zimmer ist zu klein.* Сам Матео по-прежнему живёт в Holtenau и помогает с чтением объявления. Дана находит *zwei Zimmer, Küche, Bad und Balkon*. В таком объявлении *2-Zimmer-Wohnung* означает две жилые комнаты; кухня и ванная указаны отдельно. Все объявления и цены в теме вымышлены для языковых задач.",
    "point": "*2-Zimmer-Wohnung* — две комнаты; кухня и ванная не в счёт",
    "scene": {
     "view": "dialogue",
@@ -809,10 +817,10 @@
   {
    "id": "anzeige-2",
    "step": "anzeige",
-   "stepTitle": "Марко ищет квартиру",
+   "stepTitle": "Жильё для Лусии и Диего",
    "chapterIndex": 0,
    "indexInStep": 1,
-   "read": "Главный вопрос — цена. *450 Euro kalt* — это «холодная» аренда, *die Kaltmiete*: плата только за саму квартиру. Отопление, вода и вывоз мусора — *die Nebenkosten*, их платят сверху. Вместе получается *die Warmmiete*, «тёплая» аренда. Сравнивайте объявления всегда по ней: у Марко выйдет 580 евро в месяц, а не 450.",
+   "read": "В этой учебной смете *450 Euro kalt* — базовая плата за квартиру. Указанные *130 Euro Nebenkosten* прибавляются отдельно: получается 580 евро. Так читаем связь *Kaltmiete*, *Nebenkosten*, *Warmmiete* в данном объявлении. Не считайте слово *warm* обещанием включить абсолютно любые расходы: для задачи учитываем именно названные строки. Это пример чтения объявления, а не описание текущих цен аренды в Киле.",
    "point": "*Kaltmiete* + *Nebenkosten* = *Warmmiete*",
    "scene": {
     "view": "dialogue",
@@ -834,10 +842,10 @@
   {
    "id": "anzeige-3",
    "step": "anzeige",
-   "stepTitle": "Марко ищет квартиру",
+   "stepTitle": "Жильё для Лусии и Диего",
    "chapterIndex": 0,
    "indexInStep": 2,
-   "read": "Где квартира? *In Gohlis, in der Lindenstraße* — в районе Голис, на Линденштрассе. По-русски мы живём «на улице», а немцы — «в улице»: *in der Straße*. Вы уже видели это в первой теме: *in der Goethestraße*. Почему *der*, если улица — *die Straße*, — главный вопрос этой темы. А Марко не теряет времени: *Ich rufe gleich an!*",
+   "read": "Квартира находится *in Kiel, in der Holtenauer Straße*. Улица знакома по школе и покупкам. По-русски живут «на улице», а здесь нужен *in der Straße*. Почему *der*, если слово *die Straße*, — вопрос этой темы. Матео говорит *Ich rufe gleich an*: сначала он уточнит условия, затем передаст информацию Лусии и Диего. Решение о жилье остаётся за гостями.",
    "point": "Улица — *in der …straße*: по-немецки «в улице», а не «на»",
    "scene": {
     "view": "dialogue",
@@ -861,7 +869,7 @@
    "stepTitle": "Смотрим квартиру",
    "chapterIndex": 0,
    "indexInStep": 0,
-   "read": "Хозяин квартиры, господин Крюгер, показывает комнаты: *der Flur* — прихожая, *das Wohnzimmer* — гостиная. Марко доволен: *Das Wohnzimmer ist groß und hell!* Прилагательное после *ist* остаётся в словарной форме — вы уже видели это в теме о покупках: *zu groß*, *zu teuer*. По-русски «гостиная светлая», но «балкон светлый», а по-немецки и то и другое — просто *hell*.",
+   "read": "Хозяин квартиры, господин Крюгер, показывает комнаты: *der Flur* — прихожая, *das Wohnzimmer* — гостиная. Матео доволен: *Das Wohnzimmer ist groß und hell!* Прилагательное после *ist* остаётся в словарной форме — вы уже видели это в теме о покупках: *zu groß*, *zu teuer*. По-русски «гостиная светлая», но «балкон светлый», а по-немецки и то и другое — просто *hell*.",
    "point": "После *sein* прилагательное без окончания: *Das Zimmer ist hell.*",
    "scene": {
     "view": "dialogue",
@@ -903,7 +911,7 @@
    "stepTitle": "Смотрим квартиру",
    "chapterIndex": 0,
    "indexInStep": 2,
-   "read": "Стиральной машины в ванной нет: *sie steht im Keller*. *im* — это *in dem*, слитые в одно слово. Во многих немецких домах стиральные машины стоят в общем подвале. Мебель и технику немцы описывают глаголом *stehen* — «стоять»: *Im Schlafzimmer steht ein Kleiderschrank.* А в конце Марко решается: *Ich nehme sie* — «беру её». *sie* — это *die Wohnung*.",
+   "read": "Стиральной машины в ванной нет: *sie steht im Keller*. *Im* — это *in dem*, слитые в одно слово. В этой квартире машина стоит в подвале, а шкаф — в спальне: *Im Schlafzimmer steht auch ein Kleiderschrank*. В конце Матео говорит *Ich finde sie gut. Ich rufe Lucía und Diego an.* *Sie* заменяет *die Wohnung*. Он передаёт гостям впечатление, а не принимает за них окончательное решение.",
    "point": "*im* = *in dem*: *im Keller*, *im Bad*, *im Schlafzimmer*",
    "scene": {
     "view": "dialogue",
@@ -958,7 +966,7 @@
    "stepTitle": "Какая квартира?",
    "chapterIndex": 1,
    "indexInStep": 0,
-   "read": "Прилагательные удобно учить парами: *groß – klein*, *hell – dunkel*, *ruhig – laut*. О цене в объявлениях пишут *günstig* — «недорогой», «выгодный». *billig* тоже значит «дешёвый», но часто с оттенком «дешёвка», поэтому о квартире так говорят редко. *möbliert* — «с мебелью»: в такую квартиру можно въехать, не купив ни одного стула.",
+   "read": "При описании квартиры полезны пары *groß – klein*, *hell – dunkel*, *ruhig – laut*. *Günstig* — «недорогой» или «выгодный», *billig* — «дешёвый»; оттенок зависит от контекста. *Möbliert* сообщает о мебели, но конкретный набор ищут в тексте объявления. В игре нельзя выбрать вариант только по одному привлекательному слову: должны совпасть условия.",
    "point": "*günstig* — недорогой, *billig* — дешёвый, часто с оттенком «дешёвка»",
    "scene": {
     "view": "words",
@@ -972,7 +980,7 @@
    "stepTitle": "Аренда",
    "chapterIndex": 1,
    "indexInStep": 0,
-   "read": "В Германии квартиры чаще снимают, чем покупают. *mieten* — «снимать», *der Vermieter* — хозяин, который сдаёт квартиру, *die Miete* — плата за неё. Площадь считают в квадратных метрах: *der Quadratmeter*, в объявлениях — *m²* или *qm*. И ловушка с этажами: *das Erdgeschoss* — это наш первый этаж, а *1. OG* — уже второй.",
+   "read": "*Mieten* — снимать жильё, *der Vermieter* — тот, кто его сдаёт, *die Miete* — плата. Площадь обозначают *m²* или *qm*: *der Quadratmeter*. *Erdgeschoss*, сокращённо *EG*, — этаж на уровне земли; *1. OG* — следующий над ним. Это помогает понимать объявления и находить нужный этаж. Наши герои используют вымышленные предложения, а не выбирают реальный договор.",
    "point": "*das Erdgeschoss* (*EG*) — наш первый этаж, *1. OG* — второй",
    "scene": {
     "view": "words",
@@ -1027,7 +1035,7 @@
    "chapterIndex": 2,
    "indexInStep": 1,
    "read": "Самая коварная строка — женский род: *die Küche* → *in der Küche*. Да, *der* — тот же артикль, что у мужского рода в именительном падеже. Не пугайтесь: *der Tisch* — «стол», а *in der Küche* — «на кухне», после предлога путаницы не бывает. Главное — не говорить *in die Küche* на вопрос «где?»: это значит «на кухню», куда.",
-   "point": "Женский род: *die* → *der*: *in der Küche*, *in der Lindenstraße*",
+   "point": "Женский род: *die* → *der*: *in der Küche*, *in der Holtenauer Straße*",
    "scene": {
     "view": "table",
     "dialogue": "besichtigung",
@@ -1086,7 +1094,7 @@
    "stepTitle": "Место в предложении",
    "chapterIndex": 2,
    "indexInStep": 0,
-   "read": "Ответ на вопрос «где?» — целая группа: *im Keller*, *in der Küche*, *auf dem Balkon*. В предложении она занимает одну позицию — как *in Leipzig* в первой теме. Обычно группа стоит в середине, после глагола: *Die Waschmaschine steht im Keller.* Вещи в квартире, кстати, «стоят»: шкаф, кровать и машина *stehen*, а не просто *sind*.",
+   "read": "Ответ на вопрос «где?» — целая группа: *im Keller*, *in der Küche*, *auf dem Balkon*. В предложении она занимает одну позицию — как *in Kiel* в первой теме. Обычно группа стоит в середине, после глагола: *Die Waschmaschine steht im Keller.* Вещи в квартире, кстати, «стоят»: шкаф, кровать и машина *stehen*, а не просто *sind*.",
    "point": "Место — одна позиция: *Die Waschmaschine steht im Keller.*",
    "scene": {
     "view": "sentence",
@@ -1127,7 +1135,7 @@
       "punct": ".",
       "plain": "Die Waschmaschine steht im Keller.",
       "ru": "Стиральная машина стоит в подвале.",
-      "audio": "audio/76a96c156367.m4a"
+      "audio": "audio/e5c5e3e63393.m4a"
      }
     ]
    }
@@ -1179,7 +1187,7 @@
       "punct": ".",
       "plain": "Im Keller steht die Waschmaschine.",
       "ru": "В подвале стоит стиральная машина.",
-      "audio": "audio/e7f809d4bb48.m4a"
+      "audio": "audio/3c748bee4cae.m4a"
      }
     ]
    }
@@ -1227,7 +1235,7 @@
       "punct": ".",
       "plain": "Der Balkon ist groß.",
       "ru": "Балкон большой.",
-      "audio": "audio/5ec7eaf1243f.m4a"
+      "audio": "audio/f65896b520ef.m4a"
      },
      {
       "slots": [
@@ -1258,7 +1266,7 @@
       "punct": ".",
       "plain": "Die Küche ist groß.",
       "ru": "Кухня большая.",
-      "audio": "audio/1accc290a480.m4a"
+      "audio": "audio/d65a07f1120d.m4a"
      },
      {
       "slots": [
@@ -1289,7 +1297,7 @@
       "punct": ".",
       "plain": "Das Fenster ist groß.",
       "ru": "Окно большое.",
-      "audio": "audio/9240f2d37da8.m4a"
+      "audio": "audio/246c91c5be72.m4a"
      },
      {
       "slots": [
@@ -1320,7 +1328,7 @@
       "punct": ".",
       "plain": "Die Zimmer sind groß.",
       "ru": "Комнаты большие.",
-      "audio": "audio/d9d2dbc29444.m4a"
+      "audio": "audio/b296edcd7e6c.m4a"
      }
     ],
     "fresh": [
@@ -1339,143 +1347,6 @@
    "read": "*Das Bett steht im Schlafzimmer.* *das Schlafzimmer* — средний род, как *das Zimmer*, поэтому *in dem*, а вместе — *im*. Глагол — *steht*: кровать, как и шкаф, «стоит». Две частые ошибки: *in das Schlafzimmer* — артикль не изменился, и *auf dem Schlafzimmer* — в комнате по-немецки всегда *in*. *auf* оставьте для поверхностей: *auf dem Tisch*, *auf dem Balkon*.",
    "point": "*Das Bett steht im Schlafzimmer.* — комната всегда с *in*",
    "question": "Как сказать, что кровать стоит в спальне?",
-   "sceneBefore": {
-    "view": "sentence",
-    "dialogue": "besichtigung",
-    "words": "miete",
-    "table": "kurz",
-    "rows": [
-     {
-      "slots": [
-       [
-        {
-         "key": "der",
-         "text": "Der"
-        },
-        {
-         "key": "balkon",
-         "text": "Balkon"
-        }
-       ],
-       [
-        {
-         "key": "ist",
-         "text": "ist"
-        }
-       ],
-       [
-        {
-         "key": "groß",
-         "text": "groß"
-        }
-       ],
-       []
-      ],
-      "punct": ".",
-      "plain": "Der Balkon ist groß.",
-      "ru": "Балкон большой.",
-      "audio": "audio/5ec7eaf1243f.m4a"
-     },
-     {
-      "slots": [
-       [
-        {
-         "key": "die",
-         "text": "Die"
-        },
-        {
-         "key": "küche",
-         "text": "Küche"
-        }
-       ],
-       [
-        {
-         "key": "ist",
-         "text": "ist"
-        }
-       ],
-       [
-        {
-         "key": "groß",
-         "text": "groß"
-        }
-       ],
-       []
-      ],
-      "punct": ".",
-      "plain": "Die Küche ist groß.",
-      "ru": "Кухня большая.",
-      "audio": "audio/1accc290a480.m4a"
-     },
-     {
-      "slots": [
-       [
-        {
-         "key": "das",
-         "text": "Das"
-        },
-        {
-         "key": "fenster",
-         "text": "Fenster"
-        }
-       ],
-       [
-        {
-         "key": "ist",
-         "text": "ist"
-        }
-       ],
-       [
-        {
-         "key": "groß",
-         "text": "groß"
-        }
-       ],
-       []
-      ],
-      "punct": ".",
-      "plain": "Das Fenster ist groß.",
-      "ru": "Окно большое.",
-      "audio": "audio/9240f2d37da8.m4a"
-     },
-     {
-      "slots": [
-       [
-        {
-         "key": "die",
-         "text": "Die"
-        },
-        {
-         "key": "zimmer",
-         "text": "Zimmer"
-        }
-       ],
-       [
-        {
-         "key": "sind",
-         "text": "sind"
-        }
-       ],
-       [
-        {
-         "key": "groß",
-         "text": "groß"
-        }
-       ],
-       []
-      ],
-      "punct": ".",
-      "plain": "Die Zimmer sind groß.",
-      "ru": "Комнаты большие.",
-      "audio": "audio/d9d2dbc29444.m4a"
-     }
-    ],
-    "fresh": [
-     1,
-     2,
-     3
-    ]
-   },
    "scene": {
     "view": "sentence",
     "dialogue": "besichtigung",
@@ -1515,7 +1386,7 @@
       "punct": ".",
       "plain": "Das Bett steht im Schlafzimmer.",
       "ru": "Кровать стоит в спальне.",
-      "audio": "audio/11353fea980f.m4a"
+      "audio": "audio/75b486ed0fea.m4a"
      }
     ]
    }
@@ -1564,7 +1435,7 @@
       "punct": ".",
       "plain": "Das Schlafzimmer ist ruhig.",
       "ru": "Спальня тихая.",
-      "audio": "audio/1e4baa054d47.m4a"
+      "audio": "audio/df9586f24c54.m4a"
      }
     ]
    },
@@ -1602,7 +1473,7 @@
       "punct": "?",
       "plain": "Ist das Schlafzimmer ruhig?",
       "ru": "Спальня тихая?",
-      "audio": "audio/f73351b761a6.m4a"
+      "audio": "audio/8cf52368b5bc.m4a"
      }
     ]
    }
@@ -1616,44 +1487,6 @@
    "read": "*die Schreibtischlampe* — настольная лампа. Слово из трёх частей: *schreiben* + *der Tisch* + *die Lampe*. Длина не важна: род всегда даёт последняя часть, а это *die Lampe*. Длинные слова разбирайте с конца — так быстрее понять, что это за предмет. Немцы склеивают и четыре, и пять частей, а правило остаётся тем же.",
    "point": "*die Schreibtischlampe* — род по последней части, *die Lampe*",
    "question": "Какой род у слова *Schreibtischlampe*?",
-   "sceneBefore": {
-    "view": "sentence",
-    "dialogue": "besichtigung",
-    "words": "miete",
-    "table": "kurz",
-    "rows": [
-     {
-      "slots": [
-       [],
-       [
-        {
-         "key": "ist",
-         "text": "Ist"
-        }
-       ],
-       [
-        {
-         "key": "das",
-         "text": "das"
-        },
-        {
-         "key": "schlafzimmer",
-         "text": "Schlafzimmer"
-        },
-        {
-         "key": "ruhig",
-         "text": "ruhig"
-        }
-       ],
-       []
-      ],
-      "punct": "?",
-      "plain": "Ist das Schlafzimmer ruhig?",
-      "ru": "Спальня тихая?",
-      "audio": "audio/f73351b761a6.m4a"
-     }
-    ]
-   },
    "scene": {
     "view": "words",
     "dialogue": "besichtigung",
@@ -1688,7 +1521,7 @@
       "punct": "?",
       "plain": "Ist das Schlafzimmer ruhig?",
       "ru": "Спальня тихая?",
-      "audio": "audio/f73351b761a6.m4a"
+      "audio": "audio/8cf52368b5bc.m4a"
      }
     ],
     "focus": [
@@ -1704,7 +1537,7 @@
    "stepTitle": "Чтение, часть 2: объявления",
    "chapterIndex": 4,
    "indexInStep": 0,
-   "read": "Объявления о квартирах экономят место, поэтому почти всё в них сокращено. Типичная строка: *2-Zi.-Whg., 55 m², Blk., KM 520 €*. Сокращений немного, и они повторяются из объявления в объявление. Самые важные — про деньги: *KM*, *NK* и *WM*. Выучите эту таблицу — и любое объявление читается за полминуты.",
+   "read": "Объявления экономят место: *2-Zi.-Whg., 55 m², Blk., KM 520 €*. Сокращения повторяются, поэтому таблица — справочник для действия. Найдите число комнат, наличие балкона и способ указания цены. Не нужно заучивать всё до чтения: в игре вы вернётесь к нужным сокращениям, чтобы выбрать подходящее объявление.",
    "point": "*Zi.* — комната, *Whg.* — квартира, *Blk.* — балкон, *KM* / *NK* / *WM* — аренда",
    "scene": {
     "view": "table",
@@ -1740,7 +1573,7 @@
       "punct": "?",
       "plain": "Ist das Schlafzimmer ruhig?",
       "ru": "Спальня тихая?",
-      "audio": "audio/f73351b761a6.m4a"
+      "audio": "audio/8cf52368b5bc.m4a"
      }
     ]
    }
@@ -1787,7 +1620,7 @@
       "punct": "?",
       "plain": "Ist das Schlafzimmer ruhig?",
       "ru": "Спальня тихая?",
-      "audio": "audio/f73351b761a6.m4a"
+      "audio": "audio/8cf52368b5bc.m4a"
      }
     ],
     "task": "anzeigen"
@@ -1799,48 +1632,9 @@
    "stepTitle": "Чтение, часть 2: объявления",
    "chapterIndex": 4,
    "indexInStep": 2,
-   "read": "*b*. В объявлении *a* балкон стоит прямо в заголовке, и на этом легко остановиться. Но там указана холодная аренда: *KM 520 €* и *NK 150 €* — вместе 670 евро, больше, чем можно. В объявлении *b* сразу тёплая аренда, *WM 590 €*, и балкон тоже есть. Деньги всегда считайте в тёплой аренде.",
+   "read": "*b*. В объявлении *a* балкон стоит прямо в заголовке, и на этом легко остановиться. Но там указана холодная аренда: *KM 520 €* и *NK 150 €* — вместе 670 евро, больше, чем можно. В объявлении *b* сразу тёплая аренда, *WM 580 €*, и балкон тоже есть. Для этой задачи сравниваем указанные расходы: у *a* — 670 евро, у *b* — 580.",
    "point": "*KM* + *NK* = *WM*: сравнивайте объявления по тёплой аренде",
    "question": "Какое объявление подходит — *a* или *b*?",
-   "sceneBefore": {
-    "view": "task",
-    "dialogue": "besichtigung",
-    "words": "moebel",
-    "table": "abk",
-    "rows": [
-     {
-      "slots": [
-       [],
-       [
-        {
-         "key": "ist",
-         "text": "Ist"
-        }
-       ],
-       [
-        {
-         "key": "das",
-         "text": "das"
-        },
-        {
-         "key": "schlafzimmer",
-         "text": "Schlafzimmer"
-        },
-        {
-         "key": "ruhig",
-         "text": "ruhig"
-        }
-       ],
-       []
-      ],
-      "punct": "?",
-      "plain": "Ist das Schlafzimmer ruhig?",
-      "ru": "Спальня тихая?",
-      "audio": "audio/f73351b761a6.m4a"
-     }
-    ],
-    "task": "anzeigen"
-   },
    "scene": {
     "view": "task",
     "dialogue": "besichtigung",
@@ -1875,7 +1669,7 @@
       "punct": "?",
       "plain": "Ist das Schlafzimmer ruhig?",
       "ru": "Спальня тихая?",
-      "audio": "audio/f73351b761a6.m4a"
+      "audio": "audio/8cf52368b5bc.m4a"
      }
     ],
     "task": "anzeigen",
@@ -1888,7 +1682,7 @@
    "stepTitle": "Чтение, часть 3: правила дома",
    "chapterIndex": 4,
    "indexInStep": 0,
-   "read": "Третья часть чтения — таблички и объявления: на двери, в подъезде, в магазине. Здесь — правила дома, *die Hausordnung*. Их вешают почти в каждом немецком подъезде. *Ruhezeit* — «время тишины»: с 22 до 6 часов шуметь нельзя, и соседи за этим следят. Дательный падеж тут почти в каждой строке: *im Keller*, *im Treppenhaus*, *im Hof*.",
+   "read": "На табличке — *die Hausordnung*, правила конкретного дома. В нашем примере *Ruhezeit* указана с 22 до 6 часов. Это не универсальное расписание для всех домов: на экзамене читают именно предъявленный текст. В строках много мест с дательным: *im Keller*, *im Treppenhaus*, *im Hof*. Важны и ограничения *nur* и *nicht*: они показывают, где можно оставить велосипед.",
    "point": "*die Hausordnung* — правила дома, *die Ruhezeit* — время тишины",
    "scene": {
     "view": "task",
@@ -1924,7 +1718,7 @@
       "punct": "?",
       "plain": "Ist das Schlafzimmer ruhig?",
       "ru": "Спальня тихая?",
-      "audio": "audio/f73351b761a6.m4a"
+      "audio": "audio/8cf52368b5bc.m4a"
      }
     ],
     "task": "hausordnung"
@@ -1939,45 +1733,6 @@
    "read": "*Falsch.* На табличке ясно сказано: *Fahrräder bitte nur im Keller abstellen, nicht im Treppenhaus!* Всё решают два коротких слова: *nur* — «только» и *nicht* — «не». На экзамене такие слова стоит подчёркивать: они переворачивают смысл. И заметьте: *das Treppenhaus* среднего рода — по последней части, *das Haus*. Слово *abstellen* — «ставить, оставлять» — на табличках встречается постоянно.",
    "point": "Ищите короткие слова, которые меняют смысл: *nur*, *nicht*, *kein*",
    "question": "*Ihr Fahrrad kann im Treppenhaus stehen.* — *richtig* или *falsch*?",
-   "sceneBefore": {
-    "view": "task",
-    "dialogue": "besichtigung",
-    "words": "moebel",
-    "table": "abk",
-    "rows": [
-     {
-      "slots": [
-       [],
-       [
-        {
-         "key": "ist",
-         "text": "Ist"
-        }
-       ],
-       [
-        {
-         "key": "das",
-         "text": "das"
-        },
-        {
-         "key": "schlafzimmer",
-         "text": "Schlafzimmer"
-        },
-        {
-         "key": "ruhig",
-         "text": "ruhig"
-        }
-       ],
-       []
-      ],
-      "punct": "?",
-      "plain": "Ist das Schlafzimmer ruhig?",
-      "ru": "Спальня тихая?",
-      "audio": "audio/f73351b761a6.m4a"
-     }
-    ],
-    "task": "hausordnung"
-   },
    "scene": {
     "view": "task",
     "dialogue": "besichtigung",
@@ -2012,7 +1767,7 @@
       "punct": "?",
       "plain": "Ist das Schlafzimmer ruhig?",
       "ru": "Спальня тихая?",
-      "audio": "audio/f73351b761a6.m4a"
+      "audio": "audio/8cf52368b5bc.m4a"
      }
     ],
     "task": "hausordnung",
@@ -2032,7 +1787,7 @@
    ],
    "answer": 2,
    "why": "*das Zimmer* → *das Schlafzimmer*: род по последней части.",
-   "audio": "audio/de15eb13587a.m4a"
+   "audio": "audio/e5caed209e7b.m4a"
   },
   {
    "id": "wohnen-2",
@@ -2045,7 +1800,7 @@
    ],
    "answer": 1,
    "why": "*das Haus* + *die Tür* = *die Haustür*. Решает последняя часть.",
-   "audio": "audio/ba0b8d1d172b.m4a"
+   "audio": "audio/4442bb0a0c62.m4a"
   },
   {
    "id": "wohnen-3",
@@ -2056,7 +1811,7 @@
    ],
    "hint": "in + dem",
    "why": "*der Keller* → *in dem Keller* → *im Keller*.",
-   "audio": "audio/76a96c156367.m4a"
+   "audio": "audio/e5c5e3e63393.m4a"
   },
   {
    "id": "wohnen-4",
@@ -2067,7 +1822,7 @@
    ],
    "hint": "die Küche",
    "why": "Женский род в дательном: *die* → *der*. *in die Küche* — это «на кухню», куда.",
-   "audio": "audio/21bec0cdbb9c.m4a"
+   "audio": "audio/e5b3307bee2d.m4a"
   },
   {
    "id": "wohnen-5",
@@ -2078,12 +1833,12 @@
    ],
    "hint": "der Balkon",
    "why": "*der Balkon* → *auf dem Balkon*. *auf dem* не сливается.",
-   "audio": "audio/a9a6c05732b6.m4a"
+   "audio": "audio/bc148e9b4c9f.m4a"
   },
   {
    "id": "wohnen-6",
    "type": "choice",
-   "q": "Marco wohnt jetzt in ___ Wohnung in Gohlis.",
+   "q": "Mateo wohnt jetzt in ___ Wohnung in Holtenau.",
    "options": [
     "eine",
     "einer",
@@ -2091,18 +1846,18 @@
    ],
    "answer": 1,
    "why": "*eine Wohnung* → *in einer Wohnung*: у женского рода *-er*.",
-   "audio": "audio/59b5474352d0.m4a"
+   "audio": "audio/61ba09e1f1f8.m4a"
   },
   {
    "id": "wohnen-7",
    "type": "gap",
-   "q": "Meine Schwester wohnt in ___ Haus in Rom.",
+   "q": "Meine Schwester wohnt in ___ Haus in Buenos Aires.",
    "answer": [
     "einem"
    ],
    "hint": "ein Haus",
    "why": "*das Haus* — средний род: *in einem Haus*.",
-   "audio": "audio/0f8d6e12e44c.m4a"
+   "audio": "audio/6627287703c5.m4a"
   },
   {
    "id": "wohnen-8",
@@ -2115,7 +1870,7 @@
    ],
    "answer": 0,
    "why": "*das Schlafzimmer* → *in dem* → *im*. В комнате — всегда *in*, не *auf*.",
-   "audio": "audio/bd07264e2ad9.m4a"
+   "audio": "audio/0fc4d9ea4e58.m4a"
   },
   {
    "id": "wohnen-9",
@@ -2128,7 +1883,7 @@
    ],
    "answer": 0,
    "why": "После *sein* прилагательное без окончания — для любого рода.",
-   "audio": "audio/c53ff424fe0f.m4a"
+   "audio": "audio/a1cbac2b3c95.m4a"
   },
   {
    "id": "wohnen-10",
@@ -2139,7 +1894,7 @@
    ],
    "hint": "sein",
    "why": "Множественное число — *sind*, а прилагательные не меняются.",
-   "audio": "audio/9ac0295fc228.m4a"
+   "audio": "audio/4eb05b8322a1.m4a"
   },
   {
    "id": "wohnen-11",
@@ -2171,7 +1926,7 @@
    "ru": "Холодильник стоит на кухне.",
    "de": "Der Kühlschrank steht in der Küche.",
    "why": "*die Küche* → *in der Küche*. По-русски «на кухне», по-немецки — *in*.",
-   "audio": "audio/cc58b3487af2.m4a"
+   "audio": "audio/e8fd7b76e6e1.m4a"
   },
   {
    "id": "wohnen-14",
@@ -2179,15 +1934,319 @@
    "ru": "В спальне стоит шкаф.",
    "de": "Im Schlafzimmer steht ein Schrank.",
    "why": "Место на первой позиции, глагол второй, подлежащее — за ним.",
-   "audio": "audio/f4595408c60f.m4a"
+   "audio": "audio/caf59cb5ac9e.m4a"
   },
   {
    "id": "wohnen-15",
    "type": "order",
    "ru": "Ванная маленькая, но современная.",
    "de": "Das Bad ist klein, aber modern.",
-   "audio": "audio/b05c9348480e.m4a"
+   "audio": "audio/b89595f66857.m4a"
   }
  ],
+ "case": {
+  "title": "Der Schlüssel und das falsche Zimmer",
+  "ru": "Ключ и неверная комната",
+  "intro": "Гостям передали карточку квартиры с перепутанными комнатами и ценами. Сверьте исходное объявление и сообщения хозяина, прежде чем направлять людей не туда.",
+  "people": {
+   "K": {
+    "name": "Herr Krüger",
+    "voice": "Eddy"
+   }
+  },
+  "steps": [
+   {
+    "read": "Один листок указывает только 450 евро. В полном учебном предложении есть ещё одна строка.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Kaltmiete 450 Euro. Nebenkosten 130 Euro. Zusammen 580 Euro.",
+      "ru": "Базовая аренда 450 евро. Дополнительные платежи 130 евро. Вместе 580 евро."
+     }
+    ],
+    "question": "Какую указанную сумму нужно записать для этой задачи?",
+    "options": [
+     "450 €",
+     "580 €",
+     "130 €"
+    ],
+    "answer": 1,
+    "right": "В этой смете обе строки складываются: 450 + 130 = 580.",
+    "wrong": [
+     "Здесь не учтены названные дополнительные платежи.",
+     null,
+     "Это только дополнительные платежи, не вся названная сумма."
+    ]
+   },
+   {
+    "read": "В карточке нарисовали машину в ванной. Хозяин говорит другое.",
+    "evidence": [
+     {
+      "kind": "quote",
+      "who": "K",
+      "de": "Die Waschmaschine steht im Keller, nicht im Bad.",
+      "ru": "Стиральная машина стоит в подвале, не в ванной.",
+      "audio": "audio/9b2ba45dea16.m4a"
+     }
+    ],
+    "question": "Куда направить гостя к стиральной машине?",
+    "options": [
+     "Im Keller",
+     "Im Bad",
+     "Auf dem Balkon"
+    ],
+    "answer": 0,
+    "right": "*Im Keller* — нужное место. Ванную исключает *nicht*.",
+    "wrong": [
+     null,
+     "Это место прямо исключено.",
+     "Балкон не назван местом машины."
+    ]
+   },
+   {
+    "read": "На конверте подписано *Hausschlüssel*. Не спутайте длинное слово с названием помещения.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Der Hausschlüssel ist auf dem Tisch im Wohnzimmer.",
+      "ru": "Ключ от дома на столе в гостиной."
+     }
+    ],
+    "question": "Что ищут гости и где?",
+    "options": [
+     "Ключ — на столе в гостиной",
+     "Дом — в спальне",
+     "Стол — в подвале"
+    ],
+    "answer": 0,
+    "right": "Последняя часть *Schlüssel* называет предмет. Две группы места уточняют: на столе, в гостиной.",
+    "wrong": [
+     null,
+     "В слове главная часть — ключ, не дом.",
+     "Ни предмет, ни комната не совпадают с запиской."
+    ]
+   },
+   {
+    "read": "Осталось проверить строку о велосипедах. В неверной копии пропущено одно короткое слово.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Fahrräder bitte nur im Keller abstellen, nicht im Treppenhaus!",
+      "ru": "Велосипеды, пожалуйста, оставляйте только в подвале, не на лестнице!"
+     }
+    ],
+    "question": "Какую инструкцию передать гостям?",
+    "options": [
+     "Велосипед можно оставить в любом месте",
+     "Велосипед — в подвале; лестница исключена",
+     "Велосипед нужно оставить на балконе"
+    ],
+    "answer": 1,
+    "right": "*Nur* ограничивает место, *nicht* исключает лестницу. Без этих слов копия меняет правило.",
+    "wrong": [
+     "Это убирает ключевые ограничения оригинала.",
+     null,
+     "Балкон в инструкции не назван."
+    ]
+   }
+  ],
+  "ending": "Карточка исправлена: сумма указана полностью, техника и ключ находятся в правильных местах, правила переданы без пропусков. В неверной копии терялись короткие слова и уточнения. Теперь гости готовы идти в клуб — осталось разобраться в маршруте по Килю."
+ },
+ "adventure": {
+  "kind": "sequence",
+  "title": "Подготовьте жильё для гостей",
+  "intro": "Помогите Лусии и Диего разобраться в вымышленных объявлениях, найти нужные комнаты и понять правила дома. Задачи проверяют чтение и язык; цены и условия не являются реальными предложениями аренды.",
+  "ending": "Объявление укладывается в заданные условия, комнаты и техника найдены, правила переданы гостям, ключ обнаружен. Теперь нужно объяснить, как добраться от жилья до набережной и клуба.",
+  "challenges": [
+   {
+    "id": "choose-flat",
+    "kind": "select",
+    "title": "Выберите подходящее объявление",
+    "intro": "Гостям нужен балкон, а указанная общая плата должна быть не выше 600 евро. Сравните обе записи, включая дополнительные платежи.",
+    "success": "Вариант b: балкон есть, 580 евро не превышают 600. Вариант a стоит 670 евро по указанным строкам.",
+    "wrong": "У первого объявления 520 евро — только базовая плата, к ней добавляются 150. У второго указано 580 евро.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Sie suchen eine Wohnung mit Balkon. Sie möchten maximal 600 Euro warm bezahlen.\n\na) Wik: 2-Zi.-Whg. mit Blk.\n55 m², 2. OG, EBK\nKM 520 €, NK 150 €\nab sofort frei\nTel. 0431 / 56 23 89\n\nb) 2-Zi.-Whg. nahe Holtenauer Straße\n48 m², 1. OG, Blk.\nruhig und hell\nWM 580 €\nab sofort frei\nTel. 0431 / 98 47 12",
+      "name": "Wohnungsanzeigen"
+     }
+    ],
+    "options": [
+     {
+      "id": "a",
+      "label": "a · Wik · KM 520 € + NK 150 €"
+     },
+     {
+      "id": "b",
+      "label": "b · Holtenauer Straße · WM 580 €"
+     }
+    ],
+    "answer": [
+     "b"
+    ]
+   },
+   {
+    "id": "find-devices",
+    "kind": "match",
+    "title": "Помогите гостям найти технику",
+    "intro": "После осмотра надо объяснить, где уже стоят вещи. Выберите предмет, затем нужное место. Мы отвечаем на *Wo?*, а не даём команду переставить мебель.",
+    "success": "Машина — в подвале, холодильник — на кухне, платяной шкаф — в спальне. Названия сложных слов помогли отличить шкафы друг от друга.",
+    "wrong": "Стиральная машина прямо исключена из ванной: *Nein, sie steht im Keller*. Холодильник назван в кухне, платяной шкаф — в спальне.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Hier rechts. In der Küche gibt es einen Herd und einen Kühlschrank.",
+      "audio": "audio/1844d39bc976.m4a",
+      "name": "Herr Krüger"
+     },
+     {
+      "de": "Und die Waschmaschine? Ist sie im Bad?",
+      "audio": "audio/998f558f7c93.m4a",
+      "name": "Mateo"
+     },
+     {
+      "de": "Nein, sie steht im Keller. Das Bad ist klein, aber modern.",
+      "audio": "audio/359cc1bd702c.m4a",
+      "name": "Herr Krüger"
+     },
+     {
+      "de": "Ja, sehr ruhig. Im Schlafzimmer steht auch ein Kleiderschrank.",
+      "audio": "audio/4fb50e0ea543.m4a",
+      "name": "Herr Krüger"
+     }
+    ],
+    "options": [
+     {
+      "id": "cellar",
+      "label": "im Keller"
+     },
+     {
+      "id": "kitchen",
+      "label": "in der Küche"
+     },
+     {
+      "id": "bedroom",
+      "label": "im Schlafzimmer"
+     },
+     {
+      "id": "bath",
+      "label": "im Bad"
+     },
+     {
+      "id": "balcony",
+      "label": "auf dem Balkon"
+     }
+    ],
+    "slots": [
+     {
+      "id": "washer",
+      "label": "die Waschmaschine",
+      "answer": "cellar"
+     },
+     {
+      "id": "fridge",
+      "label": "der Kühlschrank",
+      "answer": "kitchen"
+     },
+     {
+      "id": "wardrobe",
+      "label": "der Kleiderschrank",
+      "answer": "bedroom"
+     }
+    ]
+   },
+   {
+    "id": "house-rules",
+    "kind": "pack",
+    "title": "Передайте гостям правила дома",
+    "intro": "Выберите только те карточки размещения, которые соответствуют табличке. Эти правила относятся к этому вымышленному дому.",
+    "success": "Велосипеды оставляют в подвале, мусорные контейнеры — во дворе. *Nur* и *nicht* не дали принять лестницу за разрешённое место.",
+    "wrong": "В тексте велосипеды — *nur im Keller*, не на лестнице; контейнеры стоят *im Hof*.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Hausordnung\nRuhezeit: 22:00 – 6:00 Uhr\nFahrräder bitte nur im Keller abstellen,\nnicht im Treppenhaus!\nDie Mülltonnen stehen im Hof.",
+      "name": "Im Treppenhaus"
+     }
+    ],
+    "options": [
+     {
+      "id": "bikes-cellar",
+      "label": "Fahrräder · im Keller",
+      "icon": "🚲"
+     },
+     {
+      "id": "bikes-stairs",
+      "label": "Fahrräder · im Treppenhaus",
+      "icon": "🚲"
+     },
+     {
+      "id": "bins-yard",
+      "label": "Mülltonnen · im Hof",
+      "icon": "🗑️"
+     },
+     {
+      "id": "bins-balcony",
+      "label": "Mülltonnen · auf dem Balkon",
+      "icon": "🗑️"
+     }
+    ],
+    "answer": [
+     "bikes-cellar",
+     "bins-yard"
+    ]
+   },
+   {
+    "id": "ask-bedroom",
+    "kind": "order",
+    "title": "Уточните тишину в спальне",
+    "intro": "Перед тем как передать впечатления гостям, задайте хозяину вопрос «В спальне тихо?».",
+    "success": "*Ist das Schlafzimmer ruhig?* Вопрос начинается с *ist*, прилагательное остаётся без окончания.",
+    "wrong": "Вопрос да/нет начинается с глагола *Ist*. Затем *das Schlafzimmer*, в конце *ruhig?*",
+    "tokens": [
+     "Ist",
+     "das Schlafzimmer",
+     "ruhig?"
+    ],
+    "label": "Вопрос на осмотре"
+   },
+   {
+    "id": "find-key",
+    "kind": "select",
+    "title": "Найдите ключ для гостей",
+    "intro": "Хозяин прислал точное место ключа. Выберите совпадающее описание, не останавливаясь на знакомом названии комнаты.",
+    "success": "Ключ на столе в гостиной. *Hausschlüssel* — ключ, а не дом: главная часть сложного слова стоит в конце.",
+    "wrong": "Нужны и предмет, и комната: *auf dem Tisch im Wohnzimmer*. Спальня прямо исключена.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Der Hausschlüssel ist auf dem Tisch im Wohnzimmer, nicht im Schlafzimmer. Das Sofa ist auch im Wohnzimmer.",
+      "name": "Herr Krüger"
+     }
+    ],
+    "options": [
+     {
+      "id": "living-table",
+      "label": "auf dem Tisch im Wohnzimmer",
+      "icon": "🔑"
+     },
+     {
+      "id": "bedroom-table",
+      "label": "auf dem Tisch im Schlafzimmer",
+      "icon": "🔑"
+     },
+     {
+      "id": "cellar",
+      "label": "im Keller",
+      "icon": "🔑"
+     }
+    ],
+    "answer": [
+     "living-table"
+    ]
+   }
+  ]
+ },
  "spy": []
 }

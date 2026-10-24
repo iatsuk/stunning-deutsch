@@ -1,0 +1,853 @@
+id: b1-vorschlaege
+order: 12
+title: Ein kleinerer Raum wäre auch möglich.
+ru: Находим компромисс и подтверждаем условия
+lede: "Для FördeTreff нужен зал на 18 гостей с маленькой кухней. Общий бюджет 80 евро, еда
+  стоит 30. Первое предложение 60 евро без кухни не подходит. Появилась альтернатива: Raum B за
+  40 евро с кухней. Нужно обсудить её, согласовать итог и получить подтверждение."
+goals:
+  - Предложить вариант через könnte/würde
+  - Сформулировать желание с hätte и оценку с wäre
+  - Отличить предложение от подтверждённого решения
+  - Учесть полный бюджет и написать ответ
+grammar:
+  - "Konjunktiv II настоящего: wäre, hätte, würde, könnte, sollte"
+exam:
+  - b1-lesen-2
+  - b1-sprachbausteine-2
+  - b1-schreiben-1
+  - b1-sprechen-3
+dialogues:
+  scene:
+    title: Ein kleinerer Raum wäre auch möglich.
+    ru: Находим компромисс и подтверждаем условия
+    place: Kiel · Nachbarschaftshaus · вымышленная учебная ситуация
+    people:
+      D:
+        name: Dana
+        voice: Anna
+      M:
+        name: Mateo
+        voice: Reed
+      E:
+        name: Elif
+        voice: Flo
+      H:
+        name: Hauke
+        voice: Rocko
+      P:
+        name: Frau Petersen
+        voice: Sandy
+    lines:
+      - D: Ich hätte gern einen Raum mit einer kleinen Küche.
+        ru: Я хотела бы помещение с маленькой кухней.
+      - M: Wir könnten einen kleineren Raum nehmen. Achtzehn Plätze reichen uns.
+        ru: Мы могли бы взять помещение поменьше. Нам хватит восемнадцати мест.
+      - H: Ich würde beide Angebote noch einmal vergleichen.
+        ru: Я бы ещё раз сравнил оба предложения.
+      - P: Raum B hat achtzehn Plätze. Die kleine Küche ist im Preis von vierzig Euro enthalten.
+        ru: В помещенииB восемнадцать мест. Маленькая кухня включена в цену сорок евро.
+      - E: Das wäre günstiger. Mit dreißig Euro für Essen wären es insgesamt siebzig Euro.
+        ru: Это было бы дешевле. С тридцатью евро на еду получится всего семьдесят.
+      - D: Wir sollten den Termin und die Küche schriftlich bestätigen lassen.
+        ru: Нам стоит получить письменное подтверждение срока и кухни.
+      - H: Dann nehmen wir Raum B am achtzehnten Oktober von fünfzehn bis achtzehn Uhr.
+        ru: Тогда берём помещение B восемнадцатого октября с пятнадцати до восемнадцати.
+      - P: Ich bestätige Raum B mit Küche für diesen Termin. Die Miete beträgt vierzig Euro.
+        ru: Подтверждаю помещение B с кухней на этот срок. Аренда составляет сорок евро.
+words:
+  useful:
+    title: Wörter für die Aufgabe
+    ru: Слова для действия
+    items:
+      - de: der Vorschlag
+        ru: предложение действия
+        pl: Vorschläge
+      - de: der Kompromiss
+        ru: компромисс
+        pl: Kompromisse
+      - de: die Alternative
+        ru: альтернатива
+        pl: Alternativen
+      - de: die Gesamtkosten
+        ru: общая стоимость
+        pl: pl
+      - de: die Raummiete
+        ru: аренда помещения
+        pl: Raummieten
+      - de: der Platz
+        ru: место
+        pl: Plätze
+      - de: die Vereinbarung
+        ru: договорённость
+        pl: Vereinbarungen
+      - de: die Bestätigung
+        ru: подтверждение
+        pl: Bestätigungen
+      - de: enthalten
+        ru: включённый
+      - de: schriftlich bestätigen
+        ru: письменно подтвердить
+      - de: ausreichen
+        ru: быть достаточным
+      - de: betragen
+        ru: составлять
+      - de: ich hätte gern
+        ru: я хотел бы иметь
+      - de: wir könnten
+        ru: мы могли бы
+      - de: wäre möglich
+        ru: это было бы возможно
+tables:
+  rule:
+    title: "Konjunktiv II настоящего: wäre, hätte, würde, könnte, sollte"
+    ru: Опора для решения
+    head:
+      - Beispiel
+      - Смысл и форма
+    ruCols:
+      - 1
+    rows:
+      - - Das wäre günstiger. Ich hätte gern eine Küche.
+        - sein → wäre; haben → hätte для оценки и желания.
+      - - Ich würde die Angebote vergleichen.
+        - würde + Infinitiv; личное окончание только у würde.
+      - - Wir könnten Raum B nehmen. Wir sollten schriftlich nachfragen.
+        - "könnte: возможный вариант; sollte: совет."
+tasks:
+  offers:
+    kind: message
+    part: b1-lesen-2
+    title: Zwei Räume · vollständige Lernbedingungen
+    text: "Gewünscht: 18. Oktober 15–18 Uhr, 18 Gäste, kleine Küche. Gesamtbudget 80 Euro; Essen 30
+      Euro. Angebot A: Raum 60 Euro, 20 Plätze, keine Küche. Angebot B: Raum 40 Euro, 18
+      Plätze, kleine Küche im Preis. Beide Angebote gelten für den gewünschten Termin. Es ist
+      noch keine Buchung."
+  confirmed:
+    kind: message
+    part: b1-lesen-2
+    title: Die schriftliche Bestätigung · Ausschnitt
+    text: Wir bestätigen Raum B im Nachbarschaftshaus für Sonntag, 18. Oktober, 15–18 Uhr, 18
+      Gäste. Die kleine Küche ist enthalten. Raummiete 40 Euro. Essen organisieren Sie selbst.
+      Bitte geben Sie den Raum am Ende ordentlich zurück. Frau Petersen
+  gaps:
+    kind: worksheet
+    part: b1-sprachbausteine-2
+    format: cloze
+    uniqueOptions: true
+    title: Zehn Lücken in einer vorsichtigen Anfrage
+    text: Sehr geehrte Frau Petersen, ein kleinerer Raum [[1]] günstiger. Ich [[2]] gern eine Küche
+      dabei. Wir [[3]] die Angebote gemeinsam vergleichen. Ich [[4]] gern beide Räume ansehen.
+      Du [[5]] die Bedingungen prüfen, sagt meine Freundin. Wir planen [[6]] achtzehn Gästen.
+      Der kleinere Raum passt, [[7]] die Küche enthalten ist. Bitte teilen Sie mir mit, [[8]]
+      der Termin frei ist. Wir sprechen morgen mit [[9]] Hausmeister. Ich warte auf Ihre
+      Antwort [[10]] Küchennutzung.
+    questions:
+      - prompt: Lücke 1
+        options:
+          - wäre
+          - hätte
+          - könnten
+          - würde
+          - solltest
+          - mit
+          - weil
+          - ob
+          - dem
+          - zur
+          - aber
+          - trotzdem
+          - einen
+          - ohne
+          - als
+        answers:
+          - wäre
+      - prompt: Lücke 2
+        options:
+          - wäre
+          - hätte
+          - könnten
+          - würde
+          - solltest
+          - mit
+          - weil
+          - ob
+          - dem
+          - zur
+          - aber
+          - trotzdem
+          - einen
+          - ohne
+          - als
+        answers:
+          - hätte
+      - prompt: Lücke 3
+        options:
+          - wäre
+          - hätte
+          - könnten
+          - würde
+          - solltest
+          - mit
+          - weil
+          - ob
+          - dem
+          - zur
+          - aber
+          - trotzdem
+          - einen
+          - ohne
+          - als
+        answers:
+          - könnten
+      - prompt: Lücke 4
+        options:
+          - wäre
+          - hätte
+          - könnten
+          - würde
+          - solltest
+          - mit
+          - weil
+          - ob
+          - dem
+          - zur
+          - aber
+          - trotzdem
+          - einen
+          - ohne
+          - als
+        answers:
+          - würde
+      - prompt: Lücke 5
+        options:
+          - wäre
+          - hätte
+          - könnten
+          - würde
+          - solltest
+          - mit
+          - weil
+          - ob
+          - dem
+          - zur
+          - aber
+          - trotzdem
+          - einen
+          - ohne
+          - als
+        answers:
+          - solltest
+      - prompt: Lücke 6
+        options:
+          - wäre
+          - hätte
+          - könnten
+          - würde
+          - solltest
+          - mit
+          - weil
+          - ob
+          - dem
+          - zur
+          - aber
+          - trotzdem
+          - einen
+          - ohne
+          - als
+        answers:
+          - mit
+      - prompt: Lücke 7
+        options:
+          - wäre
+          - hätte
+          - könnten
+          - würde
+          - solltest
+          - mit
+          - weil
+          - ob
+          - dem
+          - zur
+          - aber
+          - trotzdem
+          - einen
+          - ohne
+          - als
+        answers:
+          - weil
+      - prompt: Lücke 8
+        options:
+          - wäre
+          - hätte
+          - könnten
+          - würde
+          - solltest
+          - mit
+          - weil
+          - ob
+          - dem
+          - zur
+          - aber
+          - trotzdem
+          - einen
+          - ohne
+          - als
+        answers:
+          - ob
+      - prompt: Lücke 9
+        options:
+          - wäre
+          - hätte
+          - könnten
+          - würde
+          - solltest
+          - mit
+          - weil
+          - ob
+          - dem
+          - zur
+          - aber
+          - trotzdem
+          - einen
+          - ohne
+          - als
+        answers:
+          - dem
+      - prompt: Lücke 10
+        options:
+          - wäre
+          - hätte
+          - könnten
+          - würde
+          - solltest
+          - mit
+          - weil
+          - ob
+          - dem
+          - zur
+          - aber
+          - trotzdem
+          - einen
+          - ohne
+          - als
+        answers:
+          - zur
+  write:
+    kind: message
+    part: b1-schreiben-1
+    title: Das passende Angebot annehmen
+    text: Sie haben zwei Raumangebote erhalten und möchten Angebot B annehmen. Schreiben Sie Frau
+      Petersen vor der Bestätigung.
+    points:
+      - Für die Angebote danken und den gewählten Raum nennen
+      - Warum B zu Gästen und Budget passt
+      - Termin und enthaltene Küche ausdrücklich bestätigen lassen
+      - Nach Schlüsselübergabe und Rückgabe fragen
+    sample:
+      - Sehr geehrte Frau Petersen, vielen Dank für Ihre beiden Angebote. Wir möchten gern Raum
+        B nehmen. Achtzehn Plätze reichen für unsere Gruppe, und die kleine Küche ist für uns
+        wichtig. Mit der Miete von 40 Euro und 30 Euro für Essen bleiben wir unter unserem
+        Budget. Bitte bestätigen Sie Raum B für Sonntag, den 18. Oktober, von 15 bis 18 Uhr.
+        Ist die Nutzung der Küche wirklich im Preis enthalten? Außerdem würden wir gern wissen,
+        wann wir den Schlüssel bekommen und wie wir ihn zurückgeben sollen. Vielen Dank für
+        Ihre Hilfe. Mit freundlichen Grüßen Hauke
+  talk:
+    kind: card
+    part: b1-sprechen-3
+    title: Einen Kompromiss finden
+    theme: Raum und Budget
+    word: Wunsch · Vorschlag · Einwand · Alternative · Einigung
+    situation: Planen Sie für 18 Gäste. Budget 80 Euro einschließlich 30 Euro Essen. Vergleichen
+      Sie die beiden Angebote. Reagieren Sie auf die Frage nach der Küche und bestätigen Sie
+      eine gemeinsame Entscheidung.
+    roles:
+      - title: Person A
+        text: Sie wünschen eine Küche und möchten nach der Feier nicht lange aufräumen. Sie können die
+          Verwaltung anrufen.
+      - title: Person B
+        text: Sie möchten unter dem Budget bleiben.18 Plätze reichen. Sie können das Essen und die
+          Rückgabe organisieren.
+steps:
+  - id: start
+    chapter: scene
+    title: Новое дело команды
+    beats:
+      - read: "Для FördeTreff нужен зал на 18 гостей с маленькой кухней. Общий бюджет 80 евро, еда
+          стоит 30. Первое предложение 60 евро без кухни не подходит. Появилась альтернатива:
+          Raum B за 40 евро с кухней. Нужно обсудить её, согласовать итог и получить
+          подтверждение. Все нужные условия даны в сцене: знания географии, настоящих цен или
+          расписаний не требуются. Сначала попробуйте понять, какого результата добиваются
+          друзья, затем слушайте реплики. На новом уровне важно не только найти число или
+          знакомое слово, но и связать несколько сведений."
+        point: Находим компромисс и подтверждаем условия
+        set:
+          view: dialogue
+          dialogue: scene
+          reveal: 4
+      - read: "До решения обсуждаются возможности, желания и советы. После него появляется конкретное
+          согласие и ответ администрации. Konjunktiv II не означает, что событие уже произошло
+          или невозможно: здесь он смягчает предложение. Поэтому статус меняется только после
+          реплик nehmen и bestätige, а не после wäre günstig. Восстановите этот переход в
+          разговоре."
+        point: "Konjunktiv II настоящего: wäre, hätte, würde, könnte, sollte"
+        set:
+          reveal: 8
+  - id: words
+    chapter: words
+    title: Слова, которые понадобятся
+    beats:
+      - read: Сравнивать нужно полную стоимость и обязательные условия. Цена помещения без кухни не
+          равна цене всего мероприятия. В этой задаче важны восемнадцать мест, кухня, срок и
+          суммарный бюджет. Все суммы являются учебными данными. Компромисс должен сохранять
+          реальные потребности участников, а не просто выбирать самое дешёвое слово в
+          объявлении.
+        point: Сначала используйте слово для решения; словарь остаётся справочником.
+        set:
+          view: words
+          words: useful
+          reveal: 6
+      - read: "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к
+          ситуации: какие слова обозначают человека, место, условие или уже выполненное
+          действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово
+          встретится снова в записке или разговоре, попробуйте восстановить его смысл до
+          подсказки."
+        point: Возвращайтесь к выражениям в сообщениях и новых действиях.
+        set:
+          reveal: 15
+  - id: grammar
+    chapter: grammar
+    title: "Konjunktiv II настоящего: wäre, hätte, würde, könnte, sollte"
+    beats:
+      - read: "Эти формы позволяют обсудить желаемый вариант, не выдавая его за факт. В *Raum B wäre
+          günstiger* сравнение ещё находится в обсуждении. В *Ich hätte gern eine Küche*
+          человек выражает потребность. Затем источник должен подтвердить, что кухня
+          действительно есть. В нашей теме не требуется нереальное прошлое: работаем с
+          нынешними предложениями и будущим планом."
+        point: sein → wäre; haben → hätte для оценки и желания.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: "Модель würde с инфинитивом помогает предложить действие: я бы сравнил предложения.
+          Инфинитив остаётся в конце, как в знакомой модальной рамке. Не добавляйте zu после
+          würde. Для sein и haben обычно используйте короткие wäre и hätte. Сначала решите,
+          какую задачу предлагает человек, затем проверьте, кто должен её выполнить."
+        point: würde + Infinitiv; личное окончание только у würde.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: "Könnten вы уже встречали в вежливых вопросах. Теперь используем ту же форму для
+          вариантов совместного плана. Sollten предлагает разумный шаг, а не доказывает, что он
+          выполнен. В обеих моделях основной инфинитив стоит без zu. После обсуждения нужен
+          явный итог: что именно выбрали, кто подтвердил и какие условия входят в цену."
+        point: "könnte: возможный вариант; sollte: совет."
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+  - id: frames
+    chapter: grammar
+    title: Как устроена реплика
+    beats:
+      - read: "Мы обсуждаем одно возможное действие, поэтому личную форму получает könnten, а nehmen
+          остаётся инфинитивом. Обстоятельство и объект помещаются между ними. Фраза ещё не
+          подтверждает бронирование. В игре после предложения нужно пройти уточнение и получить
+          ответ администрации с теми же условиями: помещение B, кухня, срок и цена."
+        point: "*Wir könnten einen kleineren Raum nehmen.*"
+        set:
+          view: sentence
+          rows:
+            - de:
+                - Wir
+                - könnten
+                - einen kleineren Raum
+                - nehmen.
+              ru: Мы могли бы взять помещение поменьше.
+  - id: check
+    chapter: practice
+    title: Проверьте смысл до подсказки
+    beats:
+      - question: «Wir sollten nachfragen» означает, что уже спросили?
+        read: Нет. Это совет или предложенный следующий шаг. Выполненное действие можно назвать
+          знакомым Perfekt, а подтверждение — отдельной репликой источника. В игре нужно
+          проследить переход от совета к действию. Не заполняйте дневник желаемыми результатами
+          только потому, что участник предложил разумную идею.
+        point: Совет ещё не выполненное действие.
+        set:
+          view: table
+          table: rule
+      - question: Цена зала 60 и еда 30 подходят бюджету 80?
+        read: "Нет: сумма девяносто превышает бюджет даже без кухни. Нужно проверить весь набор
+          условий. Альтернатива B стоит сорок с кухней, вместе с едой выходит семьдесят. Не
+          сравнивайте только аренду; иначе план окажется формально дешёвым в одном пункте, но
+          невыполнимым целиком. Граница бюджета включает равную ей сумму."
+        point: Проверяем общую сумму, кухню и число мест.
+        set:
+          view: table
+          table: rule
+  - id: exam-offers
+    chapter: exam
+    title: Zwei Räume · vollständige Lernbedingungen
+    beats:
+      - read: Перед обсуждением выпишите обязательные условия. Затем считайте общую сумму аренды и еды.
+          Кухня — требование, а не необязательная деталь. В этой задаче объявлены все
+          необходимые данные, поэтому не нужно искать настоящие цены или знать устройство
+          здания. Выбор объясняется условиями, а не названием помещения.
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: offers
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: offers
+        set:
+          view: task
+          task: offers
+          solved: true
+  - id: exam-confirmed
+    chapter: exam
+    title: Die schriftliche Bestätigung · Ausschnitt
+    beats:
+      - read: Найдите, какие условия администрация подтвердила письменно. Письмо говорит только об
+          аренде и кухне; еду команда организует сама. Сравните его с выбранным предложением до
+          записи результата. Эта карточка — источник для завершения игры, а не ещё одно
+          неподтверждённое предположение о будущем.
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: confirmed
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: confirmed
+        set:
+          view: task
+          task: confirmed
+          solved: true
+  - id: exam-gaps
+    chapter: exam
+    title: Zehn Lücken in einer vorsichtigen Anfrage
+    beats:
+      - read: "В банке есть формы для разных лиц: мы могли бы, я бы, тебе стоит. Согласуйте их с
+          подлежащим и типом продолжения. Оценка wäre не требует инфинитива, а würde требует.
+          Остальные пропуски возвращают управление и связки. Каждый вариант используйте один
+          раз, затем проверьте весь связный текст."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: gaps
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: gaps
+        set:
+          view: task
+          task: gaps
+          solved: true
+  - id: exam-write
+    chapter: exam
+    title: Das passende Angebot annehmen
+    beats:
+      - read: "Письмо пишется в момент принятия предложения, до финального подтверждения. Назовите
+          выбранный вариант и его причины, затем запросите конкретные сведения. Все четыре
+          пункта обязательны. Не копируйте последующее подтверждение от администрации как
+          собственное письмо: это другой отправитель и другой момент разговора."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: write
+          reveal: 0
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: write
+          reveal: 0
+        set:
+          view: task
+          task: write
+          solved: true
+  - id: exam-talk
+    chapter: exam
+    title: Einen Kompromiss finden
+    beats:
+      - read: Не ограничивайтесь предложением «берём B». Назовите причину, услышите потребность в кухне
+          и уточните возможное возражение. Затем распределите звонок, еду и возврат. Итог
+          должен согласовываться с бюджетом. Вежливые формы помогают предложить вариант, но
+          сами по себе не создают общего решения.
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: talk
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: talk
+        set:
+          view: task
+          task: talk
+          solved: true
+exercises:
+  - type: choice
+    q: Das ___ günstiger.
+    options:
+      - wäre
+      - hätte
+      - würde
+    answer: 0
+    why: Короткая форма sein.
+  - type: choice
+    q: Ich ___ gern eine Küche.
+    options:
+      - hätte
+      - wäre
+      - würde
+    answer: 0
+    why: Желание с haben.
+  - type: choice
+    q: Wir könnten Raum B ___.
+    options:
+      - genommen
+      - nehmen
+      - zu nehmen
+    answer: 1
+    why: Модальная рамка безzu.
+  - type: choice
+    q: Ich würde die Angebote ___.
+    options:
+      - vergleichen
+      - zu vergleichen
+      - verglichen
+    answer: 0
+    why: Würde + Infinitiv.
+  - type: choice
+    q: Du ___ die Bedingungen prüfen.
+    options:
+      - solltest
+      - sollten
+      - solltet
+    answer: 0
+    why: Du — solltest.
+  - type: choice
+    q: Eine Idee ist уже бронь?
+    options:
+      - Всегда
+      - Нет
+      - Да
+    answer: 1
+    why: Нужно принятие и подтверждение.
+  - type: order
+    de: Ein kleinerer Raum wäre auch möglich.
+    ru: Помещение поменьше тоже было бы возможно.
+  - type: order
+    de: Ich hätte gern eine kleine Küche.
+    ru: Я хотел бы маленькую кухню.
+  - type: order
+    de: Wir könnten Raum B nehmen.
+    ru: Мы могли бы взять помещение B.
+  - type: order
+    de: Ich würde beide Angebote vergleichen.
+    ru: Я бы сравнил оба предложения.
+  - type: order
+    de: Wir sollten schriftlich nachfragen.
+    ru: Нам стоит письменно уточнить.
+  - type: order
+    de: Raum B ist für diesen Termin bestätigt.
+    ru: ПомещениеB подтверждено на этот срок.
+case:
+  title: Vorschlag, Annahme oder Bestätigung?
+  ru: Сверка дневника
+  intro: В дневнике правильно записывают не только условия, но и стадию решения.
+  people: {}
+  steps:
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Wir könnten Raum B nehmen.
+          ru: Мы могли бы взять помещение B.
+      question: Это уже письменная бронь?
+      options:
+        - Нет, предложение
+        - Да
+        - Отмена встречи
+      answer: 0
+      right: Könnten предлагает вариант.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: "Raum B: 40 Euro mit Küche. Essen: 30 Euro."
+          ru: ПомещениеB40 евро с кухней. Еда 30 евро.
+      question: Общий бюджет 80 соблюдён?
+      options:
+        - Нет, 90
+        - Кухня не включена
+        - Да, всего 70
+      answer: 2
+      right: 40+30=70, кухня включена.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Ich bestätige Raum B mit Küche am 18. Oktober 15–18 Uhr für 18 Gäste.
+          ru: Подтверждаю помещение B с кухней 18 октября 15–18 для 18 гостей.
+      question: Какая запись теперь допустима?
+      options:
+        - Еда уже заказана
+        - B с кухней подтверждён на названный срок
+        - Любой зал бесплатно
+      answer: 1
+      right: Ответ подтверждает только перечисленные условия.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+  ending: Пожелание, принятое решение и письменное подтверждение различены. Встреча получила
+    помещение и срок; задачи по еде и ключу продолжаются.
+adventure:
+  kind: sequence
+  title: От пожелания к подтверждённому компромиссу
+  intro: "Для FördeTreff нужен зал на 18 гостей с маленькой кухней. Общий бюджет 80 евро, еда
+    стоит 30. Первое предложение 60 евро без кухни не подходит. Появилась альтернатива: Raum B
+    за 40 евро с кухней. Нужно обсудить её, согласовать итог и получить подтверждение."
+  ending: Выбран и письменно подтверждён Raum B с кухней на 18 октября 15–18 часов для 18 гостей.
+    Аренда 40 и еда 30 составляют 70 евро. Еда ещё не заказана; ключ и возврат уточняются
+    отдельно.
+  challenges:
+    - id: conditions
+      kind: pack
+      title: Сохраните обязательные требования
+      intro: Что должно войти в решение?
+      mode: reading
+      clue:
+        task: offers
+      options:
+        - id: o0
+          label: 18 мест
+        - id: o1
+          label: Маленькая кухня
+        - id: o2
+          label: Аренда и еда не дороже 80 евро
+        - id: o3
+          label: Самое большое помещение
+      answer:
+        - o0
+        - o1
+        - o2
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."
+    - id: could
+      kind: order
+      title: Предложите альтернативу
+      intro: Соберите вежливый вариант.
+      label: Реплика для команды
+      tokens:
+        - Wir
+        - könnten
+        - einen kleineren Raum
+        - nehmen.
+      success: Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.
+      wrong: "Проверьте положение глагола и конец предложения: используйте все фрагменты."
+    - id: budget
+      kind: pack
+      title: Соберите выполнимый набор
+      intro: Нужно одно помещение и еда; кухня обязательна, общий бюджет 80.
+      mode: reading
+      clue:
+        task: offers
+      options:
+        - id: a
+          label: Raum A · 60 € · без кухни
+        - id: b
+          label: Raum B · 40 € · с кухней
+        - id: food
+          label: Essen · 30 €
+      answer:
+        - b
+        - food
+      success: 40 + 30=70, кухня есть, 18 мест хватает.
+      wrong: A не имеет кухни и вместе с едой стоит 90; нужен B и еда.
+    - id: agree
+      kind: negotiation
+      title: Согласуйте предложение с администрацией
+      intro: Дойдите от обсуждения до явного принятия условий.
+      start: a
+      nodes:
+        - id: a
+          text: "Petersen: Raum A ist größer. Möchten Sie lieber diesen Raum?"
+          choices:
+            - label: Wir brauchen die Küche und würden lieber Raum B nehmen.
+              next: b
+              feedback: Сохранены кухня и бюджет.
+            - label: Wäre die Küche bei Raum B wirklich im Preis?
+              next: c
+              feedback: Вы уточняете обязательное условие.
+        - id: c
+          text: "Petersen: Ja, bei B ist die kleine Küche enthalten."
+          choices:
+            - label: Dann möchten wir Raum B für den 18. Oktober 15–18 Uhr nehmen.
+              next: b
+              feedback: Выбран конкретный вариант и срок.
+        - id: b
+          text: "Petersen: 18 Plätze, 40 Euro mit Küche. Soll ich B für den 18. Oktober 15–18 Uhr
+            bestätigen?"
+          choices:
+            - label: Ja, bitte bestätigen Sie genau diese Bedingungen schriftlich.
+              next: end
+              feedback: Условия явно приняты.
+        - id: end
+          text: "Petersen: Raum B ist mit Küche für diesen Termin bestätigt."
+          terminal: true
+          choices: []
+      success: Предложение стало согласованной бронью.
+      wrong: Проверьте кухню, цену и срок до согласия.
+    - id: total
+      kind: note
+      title: Сохраните общий бюджет
+      intro: Введите общую стоимость аренды B и еды, без выдуманных дополнительных услуг.
+      mode: reading
+      clue:
+        task: confirmed
+      fields:
+        - label: Gesamtkosten in Euro
+          answers:
+            - "70"
+            - siebzig
+            - 70 Euro
+      success: Записаны 70 евро; из 80 остаётся 10.
+      wrong: 40 аренда плюс 30 еда =70.

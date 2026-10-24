@@ -107,7 +107,7 @@ h3 .de,
   font-size: 13px;
   line-height: 1.4;
   color: var(--muted);
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .tag-exam {

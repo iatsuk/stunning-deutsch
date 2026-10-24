@@ -1,3 +1,5 @@
+import { WritingDraft } from "./WritingDraft";
+import { Worksheet } from "./Worksheet";
 import type { Task } from "../content";
 import { examLabel } from "../content";
 import { playAll, stopAudio, usePlaying } from "../hooks";
@@ -23,6 +25,8 @@ export function TaskView({ task, reveal, solved }: { task: Task; reveal?: number
 
 function TaskBody({ task, reveal, solved }: { task: Task; reveal?: number; solved?: boolean }) {
   switch (task.kind) {
+    case "worksheet":
+      return <Worksheet key={task.title} task={task} solved={solved}/>;
     case "keywords":
       return (
         <>
@@ -55,6 +59,12 @@ function TaskBody({ task, reveal, solved }: { task: Task; reveal?: number; solve
               <De className="handcard-word" text={task.word ?? ""} />
             )}
           </div>
+          {task.roles?.map(role => (
+            <details className="task-role" key={role.title}>
+              <summary>{role.title}</summary>
+              <p><De text={role.text} /></p>
+            </details>
+          ))}
           <Sample task={task} reveal={reveal ?? (solved ? undefined : 0)} />
         </>
       );
@@ -103,7 +113,8 @@ function TaskBody({ task, reveal, solved }: { task: Task; reveal?: number; solve
             </div>
           </div>
           {task.points && (
-            <ul className="leitpunkte">
+            <ul className="leitpunkte" aria-label={task.choose ? `Выберите ${task.choose} из ${task.points.length} пунктов` : "Пункты сообщения"}>
+              {task.choose && <li className="task-choose">Выберите {task.choose} из {task.points.length} пунктов.</li>}
               {task.points.map((point) => (
                 <li key={point}>
                   <De text={point} />
@@ -111,6 +122,7 @@ function TaskBody({ task, reveal, solved }: { task: Task; reveal?: number; solve
               ))}
             </ul>
           )}
+          {(task.choose || task.part==='b1-schreiben-1') && <WritingDraft key={`${task.part}:${task.title}`} task={task}/>}
           {task.statement !== undefined && <Statement task={task} solved={solved} />}
           <Sample task={task} reveal={reveal ?? (solved ? undefined : 0)} />
         </>

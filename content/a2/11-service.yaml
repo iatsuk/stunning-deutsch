@@ -1,0 +1,607 @@
+id: a2-service
+order: 11
+title: Diese Jacke ist mir zu klein.
+ru: Объясняем проблему с покупкой
+lede: Во время поездки в Гамбург Матео получает синюю куртку другого размера. Нужно сравнить
+  подтверждение заказа и вещь, описать проблему и подобрать подходящий вариант. Цены и действия
+  магазина вымышлены; речь идёт о языковой задаче.
+goals:
+  - Точно назвать расхождение между заказом и вещью
+  - Использовать welchen, welche, welches в знакомых падежах
+  - Различить zu klein и groß genug
+  - Вежливо попросить проверить заказ
+grammar:
+  - welch-; zu klein, groß genug; вежливое уточнение
+exam:
+  - a2-lesen-2
+  - a2-lesen-3
+  - a2-sprechen-2
+dialogues:
+  scene:
+    title: Diese Jacke ist mir zu klein.
+    ru: Объясняем проблему с покупкой
+    place: Hamburg · вымышленный магазин · вымышленная учебная ситуация
+    people:
+      D:
+        name: Dana
+        voice: Anna
+      M:
+        name: Mateo
+        voice: Reed
+      E:
+        name: Elif
+        voice: Flo
+      H:
+        name: Hauke
+        voice: Rocko
+      K:
+        name: Frau Schulz
+        voice: Sandy
+    lines:
+      - M: Guten Tag. Ich habe eine blaue Jacke in Größe M bestellt.
+        ru: Добрый день. Я заказал синюю куртку размера M.
+      - K: Welche Jacke haben Sie bekommen?
+        ru: Какую куртку вы получили?
+      - M: Diese hier ist Größe S. Sie ist mir zu klein.
+        ru: Вот эта размера S. Она мне слишком мала.
+      - K: Haben Sie die Bestätigung dabei?
+        ru: У вас с собой есть подтверждение?
+      - M: Ja. Könnten Sie die Bestellung bitte prüfen?
+        ru: Да. Не могли бы вы проверить заказ?
+      - K: Gern. Welche Größe brauchen Sie?
+        ru: Охотно. Какой размер вам нужен?
+      - M: Größe M. Die Jacke soll groß genug und nicht zu teuer sein.
+        ru: Размер M. Куртка должна быть достаточно большой и не слишком дорогой.
+      - K: Wir haben zwei Modelle in M. Möchten Sie sie anprobieren?
+        ru: У нас есть две модели M. Хотите их примерить?
+words:
+  useful:
+    title: Wörter für die Aufgabe
+    ru: Слова для действия
+    items:
+      - de: bestellen
+        ru: заказывать
+      - de: bekommen
+        ru: получать
+      - de: prüfen
+        ru: проверять
+      - de: anprobieren
+        ru: примерять
+      - de: die Bestellung
+        ru: заказ
+        pl: Bestellungen
+      - de: die Bestätigung
+        ru: подтверждение
+        pl: Bestätigungen
+      - de: die Größe
+        ru: размер
+        pl: Größen
+      - de: die Farbe
+        ru: цвет
+        pl: Farben
+      - de: das Modell
+        ru: модель
+        pl: Modelle
+      - de: der Beleg
+        ru: чек, подтверждающий документ
+        pl: Belege
+      - de: groß genug
+        ru: достаточно большой
+      - de: zu klein
+        ru: слишком маленький
+tables:
+  rule:
+    title: welch-; zu klein, groß genug; вежливое уточнение
+    ru: Опора для решения
+    head:
+      - Beispiel
+      - Смысл и форма
+    ruCols:
+      - 1
+    rows:
+      - - Welchen Stuhl? Welche Jacke? Welches Modell?
+        - welch- согласуется с родом и падежом.
+      - - Diese Jacke ist mir zu klein.
+        - "zu + прилагательное: слишком для цели."
+      - - Die Jacke ist groß genug. Wir haben genug Zeit.
+        - genug после прилагательного, перед существительным.
+tasks:
+  order:
+    kind: message
+    part: a2-lesen-2
+    title: Bestätigung und Lieferung
+    from: Lernshop Hamburg
+    text: "Bestellt: blaue Jacke, Größe M. Geliefert: blaue Jacke, Größe S. Mateo möchte Größe M,
+      blau, maximal 60 Euro. Modell A: blau, M, 45 Euro. Modell B: blau, M, 55 Euro. Modell C:
+      blau, S, 35 Euro."
+  ads:
+    kind: worksheet
+    part: a2-lesen-3
+    format: matching
+    title: Passende Angebote finden
+    text: |-
+      a) Jacken in M und L, blau, ab 45 Euro.
+      b) Reparatur von Taschen, keine Kleidung.
+      c) Schuhgeschäft, Größen 36–46.
+      d) Möbel gebraucht: Tische und Stühle.
+      x) Kein passendes Angebot.
+    questions:
+      - prompt: Blaue Jacke in M suchen
+        options:
+          - a
+          - b
+          - c
+          - d
+          - x
+        answers:
+          - a
+      - prompt: Tasche reparieren lassen
+        options:
+          - a
+          - b
+          - c
+          - d
+          - x
+        answers:
+          - b
+      - prompt: Schuhe kaufen
+        options:
+          - a
+          - b
+          - c
+          - d
+          - x
+        answers:
+          - c
+      - prompt: Einen gebrauchten Tisch suchen
+        options:
+          - a
+          - b
+          - c
+          - d
+          - x
+        answers:
+          - d
+      - prompt: Rote Jacke in XS suchen
+        options:
+          - a
+          - b
+          - c
+          - d
+          - x
+        answers:
+          - x
+  talk:
+    kind: card
+    part: a2-sprechen-2
+    title: Ein Problem erklären
+    theme: Einkaufen
+    word: Bestellt – bekommen – Wunsch
+    sample:
+      - Ich habe Größe M bestellt, aber Größe S bekommen.
+      - Diese Jacke ist mir zu klein.
+      - Könnten Sie die Bestellung bitte prüfen?
+steps:
+  - id: start
+    chapter: scene
+    title: Новое дело команды
+    beats:
+      - read: "Во время поездки в Гамбург Матео получает синюю куртку другого размера. Нужно сравнить
+          подтверждение заказа и вещь, описать проблему и подобрать подходящий вариант. Цены и
+          действия магазина вымышлены; речь идёт о языковой задаче. Все нужные условия даны в
+          сцене: знания географии, настоящих цен или расписаний не требуются. Сначала
+          попробуйте понять, какого результата добиваются друзья, затем слушайте реплики. На
+          новом уровне важно не только найти число или знакомое слово, но и связать несколько
+          сведений."
+        point: Объясняем проблему с покупкой
+        set:
+          view: dialogue
+          dialogue: scene
+          reveal: 4
+      - read: "Матео не говорит просто «всё плохо»: он называет проверяемое расхождение — заказан M,
+          получен S. Затем просит проверить подтверждение и уточняет нужные условия. *Zu klein*
+          означает, что размер не подходит, а *groß genug* — что его достаточно для цели. В
+          игре несколько моделей могут удовлетворять условиям; цена сама по себе не заменяет
+          размер."
+        point: welch-; zu klein, groß genug; вежливое уточнение
+        set:
+          reveal: 8
+  - id: words
+    chapter: words
+    title: Слова, которые понадобятся
+    beats:
+      - read: "*Bestellen* — заказать, *bekommen* — получить. Эти действия относятся к разным этапам,
+          поэтому важно сверить оба. *Die Größe* и *die Farbe* помогают назвать нужную вещь без
+          длинного описания. *Anprobieren* возвращает отделяемую приставку: *Ich probiere die
+          Jacke an*. Вместо обвинения собеседника используем конкретную просьбу проверить
+          данные."
+        point: Сначала используйте слово для решения; словарь остаётся справочником.
+        set:
+          view: words
+          words: useful
+          reveal: 6
+      - read: "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к
+          ситуации: какие слова обозначают человека, место, условие или уже выполненное
+          действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово
+          встретится снова в записке или разговоре, попробуйте восстановить его смысл до
+          подсказки."
+        point: Возвращайтесь к выражениям в сообщениях и новых действиях.
+        set:
+          reveal: 12
+  - id: grammar
+    chapter: grammar
+    title: welch-; zu klein, groß genug; вежливое уточнение
+    beats:
+      - read: "В вопросе о предмете покупки мужской род получает *welchen*, женский — *welche*, средний
+          — *welches*. Это знакомая модель выбора из A1, теперь она нужна для уточнения
+          проблемы. Вопрос должен указывать на нужную категорию: размер, цвет или конкретную
+          вещь. Не отвечайте только цветом, если спросили размер."
+        point: welch- согласуется с родом и падежом.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: "*Zu klein* — не просто «маленькая», а «слишком маленькая», то есть не подходит.
+          Дательный *mir* сообщает, кому именно. Это не универсальная оценка вещи: другому
+          человеку она может подойти. В разговоре назовите критерий и предложите проверяемое
+          уточнение вместо общего недовольства."
+        point: "zu + прилагательное: слишком для цели."
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: "После прилагательного используем *groß genug*, *warm genug*. Перед существительным —
+          *genug Zeit*, *genug Platz*. Позиция помогает понять, что именно достаточно. В игре
+          условия заданы явно: размер M и цена не выше бюджета. «Достаточно большой» не
+          означает автоматически «самый большой из всех»."
+        point: genug после прилагательного, перед существительным.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+  - id: frames
+    chapter: grammar
+    title: Как устроена реплика
+    beats:
+      - read: "В просьбе *Könnten Sie die Bestellung bitte prüfen?* личная форма стоит первой,
+          инфинитив *prüfen* — в конце. Эта вежливая модель уже знакома по гостинице. Меняется
+          предмет просьбы: теперь проверяем заказ. Повтор полезен именно потому, что готовый
+          способ уточнения переносится в новую бытовую ситуацию."
+        point: "*Könnten Sie die Bestellung bitte prüfen?*"
+        set:
+          view: sentence
+          rows:
+            - de:
+                - ""
+                - Könnten
+                - Sie die Bestellung bitte
+                - prüfen?
+              ru: Не могли бы вы проверить заказ?
+  - id: check
+    chapter: practice
+    title: Проверьте смысл до подсказки
+    beats:
+      - question: Zu klein означает просто маленький?
+        read: "Нет. *Zu klein* обозначает, что размера недостаточно для нужной цели или человека.
+          *Klein* без *zu* просто описывает признак. Чтобы попросить замену или проверку,
+          полезно указать своё условие: заказан M, а на полученной вещи написано S."
+        point: "*zu klein* — слишком мал, не подходит по условию."
+        set:
+          view: table
+          table: rule
+      - question: Можно ли выбрать любую самую дешёвую куртку?
+        read: Нет, сначала должны совпасть размер, цвет и другие обязательные условия. Только после
+          этого сравниваем цену. Дешёвый вариант S не подходит запросу M. Если два варианта M
+          укладываются в бюджет, оба допустимы — это не угадывание единственного ответа автора.
+        point: Сначала обязательные условия, затем предпочтения.
+        set:
+          view: table
+          table: rule
+  - id: exam-order
+    chapter: exam
+    title: Bestätigung und Lieferung
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: order
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: order
+        set:
+          view: task
+          task: order
+          solved: true
+  - id: exam-ads
+    chapter: exam
+    title: Passende Angebote finden
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: ads
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: ads
+        set:
+          view: task
+          task: ads
+          solved: true
+  - id: exam-talk
+    chapter: exam
+    title: Ein Problem erklären
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: talk
+          reveal: 0
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: talk
+          reveal: 0
+        set:
+          view: task
+          task: talk
+          solved: true
+exercises:
+  - type: choice
+    q: ___ Stuhl nehmen Sie?
+    options:
+      - Welchen
+      - Welche
+      - Welches
+    answer: 0
+    why: Akkusativ мужского рода.
+  - type: choice
+    q: ___ Jacke brauchen Sie?
+    options:
+      - Welche
+      - Welchen
+      - Welches
+    answer: 0
+    why: Женский род.
+  - type: choice
+    q: ___ Modell gefällt Ihnen?
+    options:
+      - Welches
+      - Welchen
+      - Welche
+    answer: 0
+    why: Средний род.
+  - type: choice
+    q: Diese Jacke ist ___ klein.
+    options:
+      - zu
+      - genug
+      - mehr
+    answer: 0
+    why: Слишком маленькая.
+  - type: choice
+    q: Die Jacke ist groß ___.
+    options:
+      - genug
+      - zu
+      - viel
+    answer: 0
+    why: Genug после прилагательного.
+  - type: choice
+    ru: У нас достаточно времени.
+    q: Wir haben ___ Zeit.
+    options:
+      - genug
+      - zu
+      - keine
+    answer: 0
+    why: Genug перед существительным.
+  - type: order
+    ru: Какой размер вам нужен?
+    de: Welche Größe brauchen Sie?
+  - type: order
+    ru: Эта куртка мне слишком мала.
+    de: Diese Jacke ist mir zu klein.
+  - type: order
+    ru: Куртка достаточно большая.
+    de: Die Jacke ist groß genug.
+  - type: order
+    ru: У нас достаточно времени.
+    de: Wir haben genug Zeit.
+  - type: order
+    ru: Я заказал размер M.
+    de: Ich habe Größe M bestellt.
+  - type: order
+    ru: Не могли бы вы проверить заказ?
+    de: Könnten Sie die Bestellung bitte prüfen?
+case:
+  title: Bestellt M, geliefert S
+  ru: Сверка дневника
+  intro: В записи о покупке цвет совпадает, но размер — нет. Установите реальную проблему и не
+    заменяйте её догадкой о цене.
+  people: {}
+  steps:
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: "Bestellt: blau, M. Geliefert: blau, S."
+          ru: "Заказано: синий, M. Получено: синий, S."
+      question: Что не совпало?
+      options:
+        - Цвет
+        - Размер
+        - И цвет, и размер
+      answer: 1
+      right: Синий цвет совпал, размер отличается.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: "Modell A: M, 45 Euro. Modell B: M, 55 Euro. Budget: 60 Euro."
+          ru: "Модель A: M, 45 евро. Модель B: M, 55 евро. Бюджет 60."
+      question: Какие модели укладываются в условие?
+      options:
+        - Обе
+        - Только самая дешёвая
+        - Ни одна
+      answer: 0
+      right: Обе имеют нужный размер и не превышают бюджет.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Diese Jacke ist mir zu klein. Könnten Sie die Bestellung prüfen?
+          ru: Эта куртка мне слишком мала. Не могли бы вы проверить заказ?
+      question: О чём просит покупатель?
+      options:
+        - Проверить заказ
+        - Забронировать номер
+        - Купить ещё две куртки
+      answer: 0
+      right: Запрос касается проверки конкретного заказа; другие действия не названы.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+  ending: Запись исправлена по источникам. В следующей главе команда воспользуется
+    подтверждёнными сведениями для нового решения.
+adventure:
+  kind: sequence
+  title: Сверьте заказ и подходящий вариант
+  intro: Во время поездки в Гамбург Матео получает синюю куртку другого размера. Нужно сравнить
+    подтверждение заказа и вещь, описать проблему и подобрать подходящий вариант. Цены и
+    действия магазина вымышлены; речь идёт о языковой задаче.
+  ending: Расхождение объяснено конкретно, запрос проверен, подходящие модели найдены. Дальше
+    команда будет читать описание места для культурной поездки.
+  challenges:
+    - id: difference
+      kind: select
+      title: Найдите расхождение
+      intro: Сравните заказ и полученную вещь.
+      mode: reading
+      clue:
+        task: order
+      options:
+        - id: o0
+          label: Größe M bestellt, S bekommen
+        - id: o1
+          label: Blau bestellt, Rot bekommen
+        - id: o2
+          label: Zwei Jacken bestellt
+      answer:
+        - o0
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."
+    - id: polite
+      kind: order
+      title: Попросите проверку
+      intro: Обратитесь к сотруднице вежливо.
+      label: Реплика для команды
+      tokens:
+        - Könnten
+        - Sie die Bestellung
+        - bitte
+        - prüfen?
+      success: Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.
+      wrong: "Проверьте положение глагола и конец предложения: используйте все фрагменты."
+    - id: model
+      kind: select
+      title: Выберите подходящую модель
+      intro: Нужны синий цвет, M и цена не выше 60 евро. Если подходят две модели, можно выбрать
+        любую.
+      mode: reading
+      clue:
+        task: order
+      options:
+        - id: a
+          label: Modell A · blau · M · 45 €
+        - id: b
+          label: Modell B · blau · M · 55 €
+        - id: c
+          label: Modell C · blau · S · 35 €
+      answer:
+        - a
+      alternatives:
+        - - b
+      success: Цвет, размер и бюджет соблюдены. Обе модели M допустимы.
+      wrong: Самая дешёвая модель S не соответствует нужному размеру.
+    - id: meaning
+      kind: match
+      title: Назовите проблему точно
+      intro: Сопоставьте выражение с его смыслом, чтобы сотрудник понял запрос.
+      mode: reading
+      slots:
+        - id: small
+          label: zu klein
+          answer: small
+        - id: enough
+          label: groß genug
+          answer: enough
+        - id: time
+          label: genug Zeit
+          answer: time
+      options:
+        - id: small
+          label: слишком маленький
+        - id: enough
+          label: достаточно большой
+        - id: time
+          label: достаточно времени
+      success: Недостаток, достаточность размера и время различены.
+      wrong: Обратите внимание на место *genug* и значение *zu*.
+    - id: offer
+      kind: select
+      title: Не соглашайтесь на неподходящее объявление
+      intro: Нужна красная куртка XS. Что выбрать по объявлениям?
+      mode: reading
+      clue:
+        task: ads
+      options:
+        - id: o0
+          label: a
+        - id: o1
+          label: c
+        - id: o2
+          label: x
+      answer:
+        - o2
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."

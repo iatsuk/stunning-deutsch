@@ -1,0 +1,2239 @@
+{
+ "id": "b1-meinungen",
+ "level": "b1",
+ "order": 11,
+ "title": "Obwohl es regnet, machen wir eine kurze Runde.",
+ "ru": "Объясняем выбор и сравниваем мнения",
+ "lede": "Во Фленсбурге друзья выбирают короткую прогулку у гавани, музей и кафе. Погода, усталость и разные интересы не дают одного идеального ответа. Нужно объяснить своё решение и услышать другое мнение. Цены, кафе и расписание внутри урока — вымышленные условия игры.",
+ "goals": [
+  "Выразить уступку с obwohl",
+  "Сохранить вторую позицию после trotzdem",
+  "Различить причину и препятствие",
+  "Принять несколько допустимых решений по бюджету"
+ ],
+ "grammar": [
+  "obwohl / trotzdem: уступка и неожиданный результат"
+ ],
+ "exam": [
+  "b1-lesen-1",
+  "b1-lesen-2",
+  "b1-sprachbausteine-1",
+  "b1-hoeren-1",
+  "b1-sprechen-2"
+ ],
+ "chapters": [
+  {
+   "id": "scene",
+   "title": "Ситуация"
+  },
+  {
+   "id": "words",
+   "title": "Слова"
+  },
+  {
+   "id": "grammar",
+   "title": "Грамматика"
+  },
+  {
+   "id": "practice",
+   "title": "Проверка"
+  },
+  {
+   "id": "exam",
+   "title": "На экзамене"
+  }
+ ],
+ "dialogues": {
+  "scene": {
+   "title": "Obwohl es regnet, machen wir eine kurze Runde.",
+   "ru": "Объясняем выбор и сравниваем мнения",
+   "place": "Flensburg · Hafen и тёплая пауза · вымышленная учебная ситуация",
+   "people": {
+    "D": {
+     "name": "Dana",
+     "voice": "Anna"
+    },
+    "M": {
+     "name": "Mateo",
+     "voice": "Reed"
+    },
+    "E": {
+     "name": "Elif",
+     "voice": "Flo"
+    },
+    "H": {
+     "name": "Hauke",
+     "voice": "Rocko"
+    }
+   },
+   "lines": [
+    {
+     "who": "D",
+     "de": "Obwohl ich müde bin, möchte ich noch eine kurze Runde am Hafen machen.",
+     "ru": "Хотя я устала, я хотела бы ещё немного пройтись у гавани.",
+     "audio": "audio/781b447cf85a.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Es regnet. Trotzdem möchtest du nach draußen?",
+     "ru": "Идёт дождь. И всё же ты хочешь на улицу?",
+     "audio": "audio/53f672cf6f58.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Ja, aber nur zwanzig Minuten. Danach brauche ich eine warme Pause.",
+     "ru": "Да, но только на двадцать минут. Потом мне нужна тёплая пауза.",
+     "audio": "audio/e9e8dd2fa3f3.m4a"
+    },
+    {
+     "who": "E",
+     "de": "Ich gehe lieber ins Museum, weil ich die Bilder sehen möchte.",
+     "ru": "Я предпочитаю музей, потому что хочу увидеть картины.",
+     "audio": "audio/a45a0323bfb5.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Beides ist möglich. Wir vergleichen die Zeit und die Kosten.",
+     "ru": "Возможны оба варианта. Сравним время и стоимость.",
+     "audio": "audio/2c1c8865d0de.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Die Speisekarte im Café ist zweisprachig. Trotzdem bestelle ich auf Deutsch.",
+     "ru": "Меню в кафе двуязычное. И всё же я закажу на немецком.",
+     "audio": "audio/ed9e4221ee9d.m4a"
+    },
+    {
+     "who": "E",
+     "de": "Gut. Obwohl ich nicht alle Wörter kenne, frage ich selbst nach.",
+     "ru": "Хорошо. Хотя я знаю не все слова, спрошу сама.",
+     "audio": "audio/f06e44e099ce.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Dann wählen wir einen Plan mit einer Pause, nicht möglichst viele Ziele.",
+     "ru": "Тогда выберем план с перерывом, а не как можно больше мест.",
+     "audio": "audio/0d27da817100.m4a"
+    }
+   ]
+  }
+ },
+ "words": {
+  "useful": {
+   "title": "Wörter für die Aufgabe",
+   "ru": "Слова для действия",
+   "items": [
+    {
+     "de": "die Meinung",
+     "ru": "мнение",
+     "gender": "f",
+     "plural": "Meinungen",
+     "audio": "audio/a0ca94e9ff31.m4a"
+    },
+    {
+     "de": "der Eindruck",
+     "ru": "впечатление",
+     "gender": "m",
+     "plural": "Eindrücke",
+     "audio": "audio/5d0745c9bf35.m4a"
+    },
+    {
+     "de": "die Empfehlung",
+     "ru": "рекомендация",
+     "gender": "f",
+     "plural": "Empfehlungen",
+     "audio": "audio/8d8f8e6d4ba7.m4a"
+    },
+    {
+     "de": "der Gegensatz",
+     "ru": "противопоставление",
+     "gender": "m",
+     "plural": "Gegensätze",
+     "audio": "audio/2840f6609197.m4a"
+    },
+    {
+     "de": "das Hindernis",
+     "ru": "препятствие",
+     "gender": "n",
+     "plural": "Hindernisse",
+     "audio": "audio/54125eea00c4.m4a"
+    },
+    {
+     "de": "die Runde",
+     "ru": "небольшая прогулка, круг",
+     "gender": "f",
+     "plural": "Runden",
+     "audio": "audio/8210a097c63a.m4a"
+    },
+    {
+     "de": "die Erholung",
+     "ru": "отдых, восстановление",
+     "gender": "f",
+     "plural": null,
+     "noPlural": true,
+     "audio": "audio/2f56916d8a4f.m4a"
+    },
+    {
+     "de": "die Erfahrung",
+     "ru": "опыт",
+     "gender": "f",
+     "plural": "Erfahrungen",
+     "audio": "audio/e4c9e63a3d3a.m4a"
+    },
+    {
+     "de": "obwohl",
+     "ru": "хотя",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/4143346252ba.m4a"
+    },
+    {
+     "de": "trotzdem",
+     "ru": "несмотря на это, всё же",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/782365ae175a.m4a"
+    },
+    {
+     "de": "zweisprachig",
+     "ru": "двуязычный",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/b36336503841.m4a"
+    },
+    {
+     "de": "selbst bestellen",
+     "ru": "заказать самостоятельно",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/9f9473137d43.m4a"
+    },
+    {
+     "de": "unterschiedlich",
+     "ru": "различный",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/f80027dfbb6a.m4a"
+    },
+    {
+     "de": "sich einigen",
+     "ru": "договориться",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/4f98d4652799.m4a"
+    },
+    {
+     "de": "eine Pause einlegen",
+     "ru": "сделать перерыв",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/39a3c89f5991.m4a"
+    }
+   ]
+  }
+ },
+ "tables": {
+  "rule": {
+   "title": "obwohl / trotzdem: уступка и неожиданный результат",
+   "ru": "Опора для решения",
+   "head": [
+    "Beispiel",
+    "Смысл и форма"
+   ],
+   "rows": [
+    [
+     "Obwohl ich müde bin, gehe ich kurz spazieren.",
+     "obwohl: личный глагол в конце придаточного."
+    ],
+    [
+     "Ich bin müde. Trotzdem gehe ich kurz spazieren.",
+     "trotzdem занимает первую позицию; затем личный глагол."
+    ],
+    [
+     "Weil es regnet, bleibe ich drinnen. / Obwohl es regnet, gehe ich hinaus.",
+     "Причина ведёт к действию; уступка показывает препятствие."
+    ]
+   ],
+   "ruCols": [
+    1
+   ]
+  }
+ },
+ "tasks": {
+  "headlines": {
+   "kind": "worksheet",
+   "part": "b1-lesen-1",
+   "format": "matching",
+   "uniqueOptions": true,
+   "title": "Fünf Texte über gute freie Zeit",
+   "text": "1) Nora besuchte Flensburg an einem grauen Sonntag. Obwohl es regnete, ging sie eine kurze Runde am Hafen. Danach saß sie lange im Café. Für sie war der Wechsel wichtig: frische Luft und eine warme Pause. Einen ganzen Tag draußen wollte sie nicht verbringen.\n\n2) Jonas wollte im Café Deutsch üben. Die Karte war in der erfundenen Situation zweisprachig, trotzdem fragte er auf Deutsch nach einer Empfehlung. Die Mitarbeiterin antwortete langsam. Er verstand nicht jedes Wort, konnte aber selbst bestellen. Perfekt musste das Gespräch für ihn nicht sein.\n\n3) Karin geht gern mit Freunden in Museen. Obwohl nicht alle dieselben Bilder mögen, findet sie gemeinsame Besuche interessant. Nachher sprechen sie über unterschiedliche Eindrücke. Für sie ist eine andere Meinung ein guter Anfang für ein Gespräch und kein Grund für Streit.\n\n4) Ben reist lieber mit wenig Programm. Früher wollte er jede freie Stunde nutzen. Trotzdem hatte er nach solchen Tagen oft das Gefühl, kaum etwas wirklich gesehen zu haben. Heute wählt er ein Ziel und lässt Zeit für eine Pause. Er kommt lieber noch einmal wieder.\n\n5) Eine kleine Gruppe testet vor der Ausstellung ihre Texte. Ein Gast kennt viele Orte der Region, ein anderer ist erst seit kurzem hier. Obwohl ihre Erfahrungen verschieden sind, finden beide dieselbe Kartenmarkierung schwer. Die Gruppe verbessert das Material, statt die Gäste miteinander zu vergleichen.",
+   "questions": [
+    {
+     "prompt": "Text 1",
+     "options": [
+      "Kurzer Hafenweg und warme Pause",
+      "Deutsch sprechen trotz einer Hilfe",
+      "Verschiedene Meinungen verbinden",
+      "Weniger Ziele, mehr Zeit",
+      "Ein Test zeigt eine konkrete Schwierigkeit",
+      "Ein ganzer Tag nur im Regen",
+      "Zweisprachige Karten verbieten Deutsch",
+      "Im Museum muss jeder dasselbe mögen",
+      "Jede Minute verplanen",
+      "Nur Ortskundige verstehen die Karte"
+     ],
+     "answers": [
+      "Kurzer Hafenweg und warme Pause"
+     ]
+    },
+    {
+     "prompt": "Text 2",
+     "options": [
+      "Kurzer Hafenweg und warme Pause",
+      "Deutsch sprechen trotz einer Hilfe",
+      "Verschiedene Meinungen verbinden",
+      "Weniger Ziele, mehr Zeit",
+      "Ein Test zeigt eine konkrete Schwierigkeit",
+      "Ein ganzer Tag nur im Regen",
+      "Zweisprachige Karten verbieten Deutsch",
+      "Im Museum muss jeder dasselbe mögen",
+      "Jede Minute verplanen",
+      "Nur Ortskundige verstehen die Karte"
+     ],
+     "answers": [
+      "Deutsch sprechen trotz einer Hilfe"
+     ]
+    },
+    {
+     "prompt": "Text 3",
+     "options": [
+      "Kurzer Hafenweg und warme Pause",
+      "Deutsch sprechen trotz einer Hilfe",
+      "Verschiedene Meinungen verbinden",
+      "Weniger Ziele, mehr Zeit",
+      "Ein Test zeigt eine konkrete Schwierigkeit",
+      "Ein ganzer Tag nur im Regen",
+      "Zweisprachige Karten verbieten Deutsch",
+      "Im Museum muss jeder dasselbe mögen",
+      "Jede Minute verplanen",
+      "Nur Ortskundige verstehen die Karte"
+     ],
+     "answers": [
+      "Verschiedene Meinungen verbinden"
+     ]
+    },
+    {
+     "prompt": "Text 4",
+     "options": [
+      "Kurzer Hafenweg und warme Pause",
+      "Deutsch sprechen trotz einer Hilfe",
+      "Verschiedene Meinungen verbinden",
+      "Weniger Ziele, mehr Zeit",
+      "Ein Test zeigt eine konkrete Schwierigkeit",
+      "Ein ganzer Tag nur im Regen",
+      "Zweisprachige Karten verbieten Deutsch",
+      "Im Museum muss jeder dasselbe mögen",
+      "Jede Minute verplanen",
+      "Nur Ortskundige verstehen die Karte"
+     ],
+     "answers": [
+      "Weniger Ziele, mehr Zeit"
+     ]
+    },
+    {
+     "prompt": "Text 5",
+     "options": [
+      "Kurzer Hafenweg und warme Pause",
+      "Deutsch sprechen trotz einer Hilfe",
+      "Verschiedene Meinungen verbinden",
+      "Weniger Ziele, mehr Zeit",
+      "Ein Test zeigt eine konkrete Schwierigkeit",
+      "Ein ganzer Tag nur im Regen",
+      "Zweisprachige Karten verbieten Deutsch",
+      "Im Museum muss jeder dasselbe mögen",
+      "Jede Minute verplanen",
+      "Nur Ortskundige verstehen die Karte"
+     ],
+     "answers": [
+      "Ein Test zeigt eine konkrete Schwierigkeit"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "offers": {
+   "kind": "message",
+   "part": "b1-lesen-2",
+   "title": "Zwei Aktivitäten, zwei Pausen · Ausschnitt",
+   "text": "Hafenrunde: 20 Minuten, 0 Euro. Museum: 30 Minuten, 6 Euro. Café A: 20 Minuten, 8 Euro. Café B: 20 Minuten, 4 Euro. Wählen Sie genau eine Aktivität und genau eine Pause. Zeit höchstens 60 Minuten, Budget höchstens 10 Euro pro Person. Alle Angebote sind erfunden.",
+   "sample": []
+  },
+  "gaps": {
+   "kind": "worksheet",
+   "part": "b1-sprachbausteine-1",
+   "format": "cloze",
+   "title": "Ein Brief über verschiedene Wünsche",
+   "text": "Liebe Nora, [[1]] es regnete, gingen wir kurz an den Hafen. Dana war müde. [[2]] wollte sie mitkommen. Ich ging danach ins Café, [[3]] ich eine Pause brauchte. Dort [[4]] es warm. Ich sprach [[5]] der Mitarbeiterin und fragte nach [[6]] kleinen Kuchen. Es war gut, selbst auf Deutsch [[7]] bestellen. Ich merkte, [[8]] ich viel verstehen konnte. Wir trafen uns [[9]] Nachmittag wieder. Wir freuen [[10]] auf deinen Besuch. Liebe Grüße, Mateo",
+   "questions": [
+    {
+     "prompt": "Lücke 1",
+     "options": [
+      "Weil",
+      "Wenn",
+      "Obwohl"
+     ],
+     "answers": [
+      "Obwohl"
+     ]
+    },
+    {
+     "prompt": "Lücke 2",
+     "options": [
+      "Trotzdem",
+      "Obwohl",
+      "Weil"
+     ],
+     "answers": [
+      "Trotzdem"
+     ]
+    },
+    {
+     "prompt": "Lücke 3",
+     "options": [
+      "trotzdem",
+      "weil",
+      "obwohl"
+     ],
+     "answers": [
+      "weil"
+     ]
+    },
+    {
+     "prompt": "Lücke 4",
+     "options": [
+      "hatte",
+      "wurde",
+      "war"
+     ],
+     "answers": [
+      "war"
+     ]
+    },
+    {
+     "prompt": "Lücke 5",
+     "options": [
+      "mit",
+      "für",
+      "um"
+     ],
+     "answers": [
+      "mit"
+     ]
+    },
+    {
+     "prompt": "Lücke 6",
+     "options": [
+      "der",
+      "den",
+      "dem"
+     ],
+     "answers": [
+      "den"
+     ]
+    },
+    {
+     "prompt": "Lücke 7",
+     "options": [
+      "um",
+      "damit",
+      "zu"
+     ],
+     "answers": [
+      "zu"
+     ]
+    },
+    {
+     "prompt": "Lücke 8",
+     "options": [
+      "dass",
+      "weil",
+      "ob"
+     ],
+     "answers": [
+      "dass"
+     ]
+    },
+    {
+     "prompt": "Lücke 9",
+     "options": [
+      "ins",
+      "am",
+      "im"
+     ],
+     "answers": [
+      "am"
+     ]
+    },
+    {
+     "prompt": "Lücke 10",
+     "options": [
+      "wir",
+      "unser",
+      "uns"
+     ],
+     "answers": [
+      "uns"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "voices": {
+   "kind": "worksheet",
+   "part": "b1-hoeren-1",
+   "format": "article",
+   "title": "Was macht einen Ausflug gut?",
+   "recordings": [
+    {
+     "text": "Ich brauche nach einer Arbeitswoche Bewegung. Obwohl ich manchmal müde bin, gehe ich gern kurz ans Wasser. Danach tut mir eine ruhige Pause gut. Ein voller Tagesplan ist mir zu viel.",
+     "audio": "audio/598b38c14d61.m4a"
+    },
+    {
+     "text": "Wenn ich unterwegs bin, möchte ich etwas Neues probieren. Eine bekannte Speisekarte gibt mir Sicherheit. Trotzdem bestelle ich gern auf Deutsch und frage nach, wenn ich ein Wort nicht verstehe.",
+     "audio": "audio/31e9912ad0a8.m4a"
+    },
+    {
+     "text": "Für mich machen Menschen einen Ausflug besonders. Ich muss nicht jedes Museum sehen. Obwohl wir unterschiedliche Interessen haben, finde ich mit meinen Freunden meistens einen gemeinsamen Plan.",
+     "audio": "audio/f33f1d15ccfe.m4a"
+    },
+    {
+     "text": "Ich reise gern langsam. Früher wollte ich viel an einem Tag sehen. Heute suche ich mir ein Ziel aus und bleibe länger dort. Eine zusätzliche Sehenswürdigkeit lasse ich ohne schlechtes Gefühl weg.",
+     "audio": "audio/46a588335d50.m4a"
+    },
+    {
+     "text": "Ein günstiger Ausflug ist für mich wichtig. Trotzdem wähle ich nicht automatisch das billigste Angebot. Wenn ein ruhiger Raum oder eine passende Uhrzeit etwas mehr kostet, kann das für mich sinnvoll sein.",
+     "audio": "audio/6fdc77462a32.m4a"
+    }
+   ],
+   "questions": [
+    {
+     "prompt": "Die erste Person möchte nach der Arbeit einen vollen Tagesplan.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Die zweite Person bestellt gern auf Deutsch.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "richtig"
+     ]
+    },
+    {
+     "prompt": "Die dritte Person verlangt von allen dieselben Interessen.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Die vierte Person nimmt sich heute mehr Zeit für ein Ziel.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "richtig"
+     ]
+    },
+    {
+     "prompt": "Die fünfte Person wählt immer das billigste Angebot.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "falsch"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "opinions": {
+   "kind": "card",
+   "part": "b1-sprechen-2",
+   "title": "Wie viel Programm brauchen Sie?",
+   "theme": "Freizeit planen",
+   "word": "Text wiedergeben · eigene Entscheidung · Nachfrage",
+   "situation": "Geben Sie die Position Ihrer Person wieder und sprechen Sie über eigene Erfahrungen. Reagieren Sie auf eine andere Vorliebe, ohne sie als Fehler zu behandeln.",
+   "roles": [
+    {
+     "title": "Person A · Nora",
+     "text": "Ich plane vor einer Reise gern genau. Dann verschwende ich vor Ort keine Zeit und weiß, wann ein Museum geöffnet ist. Trotzdem lasse ich eine Stunde frei. Wenn mir ein Café besonders gut gefällt, möchte ich länger bleiben können."
+    },
+    {
+     "title": "Person B · Jonas",
+     "text": "Ich plane wenig. Obwohl ich dadurch manchmal eine Ausstellung verpasse, entdecke ich oft etwas Unerwartetes. Nur die Rückfahrt prüfe ich vorher. Ohne Pause möchte ich keinen Ausflug machen."
+    }
+   ],
+   "sample": []
+  }
+ },
+ "beats": [
+  {
+   "id": "start-1",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 0,
+   "read": "Во Фленсбурге друзья выбирают короткую прогулку у гавани, музей и кафе. Погода, усталость и разные интересы не дают одного идеального ответа. Нужно объяснить своё решение и услышать другое мнение. Цены, кафе и расписание внутри урока — вымышленные условия игры. Все нужные условия даны в сцене: знания географии, настоящих цен или расписаний не требуются. Сначала попробуйте понять, какого результата добиваются друзья, затем слушайте реплики. На новом уровне важно не только найти число или знакомое слово, но и связать несколько сведений.",
+   "point": "Объясняем выбор и сравниваем мнения",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 4,
+    "fresh": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "start-2",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 1,
+   "read": "Уступка связывает обстоятельство и результат, который на его фоне может показаться неожиданным. Дана устала, но хочет короткую прогулку. Это не отменяет её усталость и не обязывает всех любить дождь. Obwohl вводит придаточную часть, trotzdem связывает главные предложения. Сначала определите две мысли, затем выберите конструкцию и порядок глагола.",
+   "point": "obwohl / trotzdem: уступка и неожиданный результат",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 8,
+    "fresh": [
+     4,
+     5,
+     6,
+     7
+    ]
+   }
+  },
+  {
+   "id": "words-1",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 0,
+   "read": "Для общего решения нужны не только числа, но и личные потребности: отдых, интерес к картине, желание говорить самому. Подходящий вариант может быть не один. В игре каждый полный набор проверяется по условию: одно занятие, одна пауза и бюджет до десяти евро на человека. Любимый автором маршрут не становится единственным правильным.",
+   "point": "Сначала используйте слово для решения; словарь остаётся справочником.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 6,
+    "words": "useful"
+   }
+  },
+  {
+   "id": "words-2",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 1,
+   "read": "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к ситуации: какие слова обозначают человека, место, условие или уже выполненное действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово встретится снова в записке или разговоре, попробуйте восстановить его смысл до подсказки.",
+   "point": "Возвращайтесь к выражениям в сообщениях и новых действиях.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 15,
+    "words": "useful",
+    "fresh": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   }
+  },
+  {
+   "id": "grammar-1",
+   "step": "grammar",
+   "stepTitle": "obwohl / trotzdem: уступка и неожиданный результат",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "Усталость сохраняется как факт, но действие идёт вопреки обычному ожиданию. В части с obwohl личный глагол bin стоит в конце. Если всё придаточное стоит первым, главное предложение сразу начинается с личного глагола gehe. Не вставляйте второе подлежащее перед ним. Проверяйте обе стороны связи: обстоятельство не исчезает из-за неожиданного решения.",
+   "point": "obwohl: личный глагол в конце придаточного.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "grammar-2",
+   "step": "grammar",
+   "stepTitle": "obwohl / trotzdem: уступка и неожиданный результат",
+   "chapterIndex": 2,
+   "indexInStep": 1,
+   "read": "Trotzdem не начинает придаточное предложение. В новой главной части после него стоит личный глагол, затем подлежащее: trotzdem gehe ich. По структуре это знакомая модель deshalb, но связь другая. Deshalb выражает следствие причины, trotzdem — действие вопреки обстоятельству. Выберите смысл до перестановки слов, иначе правильная форма может передать противоположную мысль.",
+   "point": "trotzdem занимает первую позицию; затем личный глагол.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "grammar-3",
+   "step": "grammar",
+   "stepTitle": "obwohl / trotzdem: уступка и неожиданный результат",
+   "chapterIndex": 2,
+   "indexInStep": 2,
+   "read": "Дождь может объяснять решение остаться внутри. Тот же дождь может быть препятствием, несмотря на которое человек выходит. Поэтому один факт допускает разные решения и союзы. Нельзя решить задачу по слову regnet без остального предложения. Для собственного мнения объясните и обстоятельство, и выбранное действие, не объявляя другой вкус неправильным.",
+   "point": "Причина ведёт к действию; уступка показывает препятствие.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "frames-1",
+   "step": "frames",
+   "stepTitle": "Как устроена реплика",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "Две главные части передают уступку без obwohl. После точки начинается новая грамматическая рамка: trotzdem занимает место перед глаголом. Соберите *Trotzdem gehe ich* и только затем добавьте, куда и зачем. Это поможет не перенести в эту конструкцию порядок придаточного предложения, который вы использовали с obwohl.",
+   "point": "*Es regnet. Trotzdem machen wir eine kurze Runde.*",
+   "scene": {
+    "view": "sentence",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "es",
+         "text": "Es"
+        },
+        {
+         "key": "regnet",
+         "text": "regnet."
+        }
+       ],
+       [
+        {
+         "key": "trotzdem",
+         "text": "Trotzdem"
+        }
+       ],
+       [
+        {
+         "key": "machen",
+         "text": "machen"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "eine",
+         "text": "eine"
+        },
+        {
+         "key": "kurze",
+         "text": "kurze"
+        },
+        {
+         "key": "runde",
+         "text": "Runde"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Es regnet. Trotzdem machen wir eine kurze Runde.",
+      "ru": "Идёт дождь. Всё же мы сделаем короткую прогулку.",
+      "audio": "audio/fc2670a0839f.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-1",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 0,
+   "read": "Нет. Человек действительно устал. Уступка описывает, что при таком обстоятельстве он всё же выбирает действие. Если убрать усталость из пересказа, связь теряет смысл: решение уже не будет «несмотря на это». Передавайте обе мысли, даже если вторая вам кажется важнее или ближе к собственному опыту.",
+   "point": "Уступка сохраняет оба факта.",
+   "question": "В «Obwohl ich müde bin» усталость отрицается?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "es",
+         "text": "Es"
+        },
+        {
+         "key": "regnet",
+         "text": "regnet."
+        }
+       ],
+       [
+        {
+         "key": "trotzdem",
+         "text": "Trotzdem"
+        }
+       ],
+       [
+        {
+         "key": "machen",
+         "text": "machen"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "eine",
+         "text": "eine"
+        },
+        {
+         "key": "kurze",
+         "text": "kurze"
+        },
+        {
+         "key": "runde",
+         "text": "Runde"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Es regnet. Trotzdem machen wir eine kurze Runde.",
+      "ru": "Идёт дождь. Всё же мы сделаем короткую прогулку.",
+      "audio": "audio/fc2670a0839f.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-2",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 1,
+   "read": "В этой модели нет. Trotzdem начинает главную часть, поэтому сразу после него нужен личный глагол: *Trotzdem gehe ich ins Café*. Если нужен союз с глаголом в конце, используется obwohl: *Obwohl ich müde bin*. Сравните два варианта и проверьте, где находится личный глагол, прежде чем добавлять обстоятельства.",
+   "point": "*Trotzdem gehe ich …*",
+   "question": "Правильно ли «Trotzdem ich gehe ins Café»?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "es",
+         "text": "Es"
+        },
+        {
+         "key": "regnet",
+         "text": "regnet."
+        }
+       ],
+       [
+        {
+         "key": "trotzdem",
+         "text": "Trotzdem"
+        }
+       ],
+       [
+        {
+         "key": "machen",
+         "text": "machen"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "eine",
+         "text": "eine"
+        },
+        {
+         "key": "kurze",
+         "text": "kurze"
+        },
+        {
+         "key": "runde",
+         "text": "Runde"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Es regnet. Trotzdem machen wir eine kurze Runde.",
+      "ru": "Идёт дождь. Всё же мы сделаем короткую прогулку.",
+      "audio": "audio/fc2670a0839f.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "exam-headlines-1",
+   "step": "exam-headlines",
+   "stepTitle": "Fünf Texte über gute freie Zeit",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Пять текстов показывают разные идеи хорошего отдыха. Сначала сформулируйте главную мысль каждого своими словами. Заголовок не должен добавлять крайность вроде «весь день» или «только». Каждый используйте один раз. В отдельных текстах уступка помогает понять отношение автора, но одно слово obwohl ещё не раскрывает главную тему.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "es",
+         "text": "Es"
+        },
+        {
+         "key": "regnet",
+         "text": "regnet."
+        }
+       ],
+       [
+        {
+         "key": "trotzdem",
+         "text": "Trotzdem"
+        }
+       ],
+       [
+        {
+         "key": "machen",
+         "text": "machen"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "eine",
+         "text": "eine"
+        },
+        {
+         "key": "kurze",
+         "text": "kurze"
+        },
+        {
+         "key": "runde",
+         "text": "Runde"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Es regnet. Trotzdem machen wir eine kurze Runde.",
+      "ru": "Идёт дождь. Всё же мы сделаем короткую прогулку.",
+      "audio": "audio/fc2670a0839f.m4a"
+     }
+    ],
+    "task": "headlines"
+   }
+  },
+  {
+   "id": "exam-headlines-2",
+   "step": "exam-headlines",
+   "stepTitle": "Fünf Texte über gute freie Zeit",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "es",
+         "text": "Es"
+        },
+        {
+         "key": "regnet",
+         "text": "regnet."
+        }
+       ],
+       [
+        {
+         "key": "trotzdem",
+         "text": "Trotzdem"
+        }
+       ],
+       [
+        {
+         "key": "machen",
+         "text": "machen"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "eine",
+         "text": "eine"
+        },
+        {
+         "key": "kurze",
+         "text": "kurze"
+        },
+        {
+         "key": "runde",
+         "text": "Runde"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Es regnet. Trotzdem machen wir eine kurze Runde.",
+      "ru": "Идёт дождь. Всё же мы сделаем короткую прогулку.",
+      "audio": "audio/fc2670a0839f.m4a"
+     }
+    ],
+    "task": "headlines"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "es",
+         "text": "Es"
+        },
+        {
+         "key": "regnet",
+         "text": "regnet."
+        }
+       ],
+       [
+        {
+         "key": "trotzdem",
+         "text": "Trotzdem"
+        }
+       ],
+       [
+        {
+         "key": "machen",
+         "text": "machen"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "eine",
+         "text": "eine"
+        },
+        {
+         "key": "kurze",
+         "text": "kurze"
+        },
+        {
+         "key": "runde",
+         "text": "Runde"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Es regnet. Trotzdem machen wir eine kurze Runde.",
+      "ru": "Идёт дождь. Всё же мы сделаем короткую прогулку.",
+      "audio": "audio/fc2670a0839f.m4a"
+     }
+    ],
+    "task": "headlines",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-offers-1",
+   "step": "exam-offers",
+   "stepTitle": "Zwei Aktivitäten, zwei Pausen · Ausschnitt",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Эта карточка даёт вымышленные цены и длительности для игры, а не настоящие предложения Фленсбурга. Выберите одно занятие и одну паузу. Проверяйте полный набор: дешёвый музей сам по себе может подходить, но вместе с дорогим кафе выйти за бюджет. Несколько сочетаний допустимы, и игра должна принять каждое.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "es",
+         "text": "Es"
+        },
+        {
+         "key": "regnet",
+         "text": "regnet."
+        }
+       ],
+       [
+        {
+         "key": "trotzdem",
+         "text": "Trotzdem"
+        }
+       ],
+       [
+        {
+         "key": "machen",
+         "text": "machen"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "eine",
+         "text": "eine"
+        },
+        {
+         "key": "kurze",
+         "text": "kurze"
+        },
+        {
+         "key": "runde",
+         "text": "Runde"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Es regnet. Trotzdem machen wir eine kurze Runde.",
+      "ru": "Идёт дождь. Всё же мы сделаем короткую прогулку.",
+      "audio": "audio/fc2670a0839f.m4a"
+     }
+    ],
+    "task": "offers"
+   }
+  },
+  {
+   "id": "exam-offers-2",
+   "step": "exam-offers",
+   "stepTitle": "Zwei Aktivitäten, zwei Pausen · Ausschnitt",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "es",
+         "text": "Es"
+        },
+        {
+         "key": "regnet",
+         "text": "regnet."
+        }
+       ],
+       [
+        {
+         "key": "trotzdem",
+         "text": "Trotzdem"
+        }
+       ],
+       [
+        {
+         "key": "machen",
+         "text": "machen"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "eine",
+         "text": "eine"
+        },
+        {
+         "key": "kurze",
+         "text": "kurze"
+        },
+        {
+         "key": "runde",
+         "text": "Runde"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Es regnet. Trotzdem machen wir eine kurze Runde.",
+      "ru": "Идёт дождь. Всё же мы сделаем короткую прогулку.",
+      "audio": "audio/fc2670a0839f.m4a"
+     }
+    ],
+    "task": "offers"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "es",
+         "text": "Es"
+        },
+        {
+         "key": "regnet",
+         "text": "regnet."
+        }
+       ],
+       [
+        {
+         "key": "trotzdem",
+         "text": "Trotzdem"
+        }
+       ],
+       [
+        {
+         "key": "machen",
+         "text": "machen"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "eine",
+         "text": "eine"
+        },
+        {
+         "key": "kurze",
+         "text": "kurze"
+        },
+        {
+         "key": "runde",
+         "text": "Runde"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Es regnet. Trotzdem machen wir eine kurze Runde.",
+      "ru": "Идёт дождь. Всё же мы сделаем короткую прогулку.",
+      "audio": "audio/fc2670a0839f.m4a"
+     }
+    ],
+    "task": "offers",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-gaps-1",
+   "step": "exam-gaps",
+   "stepTitle": "Ein Brief über verschiedene Wünsche",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "В письме сравниваются обстоятельства и решения. В одном месте нужна уступка, в другом — обычная причина. Затем возвращаются падежи, zu и dass. Сначала восстановите, почему человек оказался в кафе, и только потом подбирайте форму. В конце прочитайте письмо без остановок у пропусков.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "es",
+         "text": "Es"
+        },
+        {
+         "key": "regnet",
+         "text": "regnet."
+        }
+       ],
+       [
+        {
+         "key": "trotzdem",
+         "text": "Trotzdem"
+        }
+       ],
+       [
+        {
+         "key": "machen",
+         "text": "machen"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "eine",
+         "text": "eine"
+        },
+        {
+         "key": "kurze",
+         "text": "kurze"
+        },
+        {
+         "key": "runde",
+         "text": "Runde"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Es regnet. Trotzdem machen wir eine kurze Runde.",
+      "ru": "Идёт дождь. Всё же мы сделаем короткую прогулку.",
+      "audio": "audio/fc2670a0839f.m4a"
+     }
+    ],
+    "task": "gaps"
+   }
+  },
+  {
+   "id": "exam-gaps-2",
+   "step": "exam-gaps",
+   "stepTitle": "Ein Brief über verschiedene Wünsche",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "es",
+         "text": "Es"
+        },
+        {
+         "key": "regnet",
+         "text": "regnet."
+        }
+       ],
+       [
+        {
+         "key": "trotzdem",
+         "text": "Trotzdem"
+        }
+       ],
+       [
+        {
+         "key": "machen",
+         "text": "machen"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "eine",
+         "text": "eine"
+        },
+        {
+         "key": "kurze",
+         "text": "kurze"
+        },
+        {
+         "key": "runde",
+         "text": "Runde"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Es regnet. Trotzdem machen wir eine kurze Runde.",
+      "ru": "Идёт дождь. Всё же мы сделаем короткую прогулку.",
+      "audio": "audio/fc2670a0839f.m4a"
+     }
+    ],
+    "task": "gaps"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "es",
+         "text": "Es"
+        },
+        {
+         "key": "regnet",
+         "text": "regnet."
+        }
+       ],
+       [
+        {
+         "key": "trotzdem",
+         "text": "Trotzdem"
+        }
+       ],
+       [
+        {
+         "key": "machen",
+         "text": "machen"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "eine",
+         "text": "eine"
+        },
+        {
+         "key": "kurze",
+         "text": "kurze"
+        },
+        {
+         "key": "runde",
+         "text": "Runde"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Es regnet. Trotzdem machen wir eine kurze Runde.",
+      "ru": "Идёт дождь. Всё же мы сделаем короткую прогулку.",
+      "audio": "audio/fc2670a0839f.m4a"
+     }
+    ],
+    "task": "gaps",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-voices-1",
+   "step": "exam-voices",
+   "stepTitle": "Was macht einen Ausflug gut?",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Слушайте каждую из пяти позиций один раз для самостоятельной попытки. Утверждения с «всегда» и «все» часто расширяют исходную мысль. Ваша задача — передать предпочтение конкретного человека, а не оценить, правильный ли у него способ отдыхать. После попытки откройте учебный текст и найдите подтверждение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "es",
+         "text": "Es"
+        },
+        {
+         "key": "regnet",
+         "text": "regnet."
+        }
+       ],
+       [
+        {
+         "key": "trotzdem",
+         "text": "Trotzdem"
+        }
+       ],
+       [
+        {
+         "key": "machen",
+         "text": "machen"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "eine",
+         "text": "eine"
+        },
+        {
+         "key": "kurze",
+         "text": "kurze"
+        },
+        {
+         "key": "runde",
+         "text": "Runde"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Es regnet. Trotzdem machen wir eine kurze Runde.",
+      "ru": "Идёт дождь. Всё же мы сделаем короткую прогулку.",
+      "audio": "audio/fc2670a0839f.m4a"
+     }
+    ],
+    "task": "voices"
+   }
+  },
+  {
+   "id": "exam-voices-2",
+   "step": "exam-voices",
+   "stepTitle": "Was macht einen Ausflug gut?",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "es",
+         "text": "Es"
+        },
+        {
+         "key": "regnet",
+         "text": "regnet."
+        }
+       ],
+       [
+        {
+         "key": "trotzdem",
+         "text": "Trotzdem"
+        }
+       ],
+       [
+        {
+         "key": "machen",
+         "text": "machen"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "eine",
+         "text": "eine"
+        },
+        {
+         "key": "kurze",
+         "text": "kurze"
+        },
+        {
+         "key": "runde",
+         "text": "Runde"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Es regnet. Trotzdem machen wir eine kurze Runde.",
+      "ru": "Идёт дождь. Всё же мы сделаем короткую прогулку.",
+      "audio": "audio/fc2670a0839f.m4a"
+     }
+    ],
+    "task": "voices"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "es",
+         "text": "Es"
+        },
+        {
+         "key": "regnet",
+         "text": "regnet."
+        }
+       ],
+       [
+        {
+         "key": "trotzdem",
+         "text": "Trotzdem"
+        }
+       ],
+       [
+        {
+         "key": "machen",
+         "text": "machen"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "eine",
+         "text": "eine"
+        },
+        {
+         "key": "kurze",
+         "text": "kurze"
+        },
+        {
+         "key": "runde",
+         "text": "Runde"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Es regnet. Trotzdem machen wir eine kurze Runde.",
+      "ru": "Идёт дождь. Всё же мы сделаем короткую прогулку.",
+      "audio": "audio/fc2670a0839f.m4a"
+     }
+    ],
+    "task": "voices",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-opinions-1",
+   "step": "exam-opinions",
+   "stepTitle": "Wie viel Programm brauchen Sie?",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Расскажите, как человек из карточки относится к планированию. Затем добавьте свой пример и спросите партнёра, что он проверяет заранее. Уточните разницу между обязательным ограничением и личным предпочтением. Можно иметь разные вкусы и при этом понять друг друга: согласие по всем пунктам не является условием успешного разговора.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "es",
+         "text": "Es"
+        },
+        {
+         "key": "regnet",
+         "text": "regnet."
+        }
+       ],
+       [
+        {
+         "key": "trotzdem",
+         "text": "Trotzdem"
+        }
+       ],
+       [
+        {
+         "key": "machen",
+         "text": "machen"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "eine",
+         "text": "eine"
+        },
+        {
+         "key": "kurze",
+         "text": "kurze"
+        },
+        {
+         "key": "runde",
+         "text": "Runde"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Es regnet. Trotzdem machen wir eine kurze Runde.",
+      "ru": "Идёт дождь. Всё же мы сделаем короткую прогулку.",
+      "audio": "audio/fc2670a0839f.m4a"
+     }
+    ],
+    "task": "opinions"
+   }
+  },
+  {
+   "id": "exam-opinions-2",
+   "step": "exam-opinions",
+   "stepTitle": "Wie viel Programm brauchen Sie?",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "es",
+         "text": "Es"
+        },
+        {
+         "key": "regnet",
+         "text": "regnet."
+        }
+       ],
+       [
+        {
+         "key": "trotzdem",
+         "text": "Trotzdem"
+        }
+       ],
+       [
+        {
+         "key": "machen",
+         "text": "machen"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "eine",
+         "text": "eine"
+        },
+        {
+         "key": "kurze",
+         "text": "kurze"
+        },
+        {
+         "key": "runde",
+         "text": "Runde"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Es regnet. Trotzdem machen wir eine kurze Runde.",
+      "ru": "Идёт дождь. Всё же мы сделаем короткую прогулку.",
+      "audio": "audio/fc2670a0839f.m4a"
+     }
+    ],
+    "task": "opinions"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "es",
+         "text": "Es"
+        },
+        {
+         "key": "regnet",
+         "text": "regnet."
+        }
+       ],
+       [
+        {
+         "key": "trotzdem",
+         "text": "Trotzdem"
+        }
+       ],
+       [
+        {
+         "key": "machen",
+         "text": "machen"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "eine",
+         "text": "eine"
+        },
+        {
+         "key": "kurze",
+         "text": "kurze"
+        },
+        {
+         "key": "runde",
+         "text": "Runde"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Es regnet. Trotzdem machen wir eine kurze Runde.",
+      "ru": "Идёт дождь. Всё же мы сделаем короткую прогулку.",
+      "audio": "audio/fc2670a0839f.m4a"
+     }
+    ],
+    "task": "opinions",
+    "solved": true
+   }
+  }
+ ],
+ "exercises": [
+  {
+   "id": "b1-meinungen-1",
+   "type": "choice",
+   "q": "Obwohl es regnet, ___ wir hinaus.",
+   "options": [
+    "geht",
+    "gehen",
+    "wir gehen"
+   ],
+   "answer": 1,
+   "why": "Главный глагол сразу после придаточного.",
+   "audio": "audio/ce8325ab12c2.m4a"
+  },
+  {
+   "id": "b1-meinungen-2",
+   "type": "choice",
+   "q": "Es regnet. Trotzdem ___ wir hinaus.",
+   "options": [
+    "gehe",
+    "gehen",
+    "wir gehen"
+   ],
+   "answer": 1,
+   "why": "Trotzdem + V2.",
+   "audio": "audio/985ec78c47b8.m4a"
+  },
+  {
+   "id": "b1-meinungen-3",
+   "type": "choice",
+   "q": "Ich bleibe drinnen, ___ es regnet.",
+   "options": [
+    "trotzdem",
+    "um",
+    "weil"
+   ],
+   "answer": 2,
+   "why": "Указана причина.",
+   "audio": "audio/96369dd5b01c.m4a"
+  },
+  {
+   "id": "b1-meinungen-4",
+   "type": "choice",
+   "q": "___ ich müde bin, gehe ich kurz spazieren.",
+   "options": [
+    "Deshalb",
+    "Obwohl",
+    "Trotzdem"
+   ],
+   "answer": 1,
+   "why": "Придаточное с глаголом в конце.",
+   "audio": "audio/da25f7e1ac38.m4a"
+  },
+  {
+   "id": "b1-meinungen-5",
+   "type": "choice",
+   "q": "Trotzdem ich gehe — правильно?",
+   "options": [
+    "Только в письме",
+    "Нет",
+    "Да"
+   ],
+   "answer": 1,
+   "why": "Нужен V2: trotzdem gehe ich."
+  },
+  {
+   "id": "b1-meinungen-6",
+   "type": "choice",
+   "q": "Музей 6 + кафе 8 при бюджете 10…",
+   "options": [
+    "Подходит",
+    "Стоит10",
+    "Не подходит"
+   ],
+   "answer": 2,
+   "why": "Сравнивается полный набор."
+  },
+  {
+   "id": "b1-meinungen-7",
+   "type": "order",
+   "de": "Obwohl ich müde bin, gehe ich kurz spazieren.",
+   "ru": "Хотя я устала, немного прогуляюсь.",
+   "audio": "audio/da25f7e1ac38.m4a"
+  },
+  {
+   "id": "b1-meinungen-8",
+   "type": "order",
+   "de": "Es regnet. Trotzdem machen wir eine kurze Runde.",
+   "ru": "Идёт дождь. Всё же сделаем короткую прогулку.",
+   "audio": "audio/fc2670a0839f.m4a"
+  },
+  {
+   "id": "b1-meinungen-9",
+   "type": "order",
+   "de": "Ich gehe ins Café, weil ich eine Pause brauche.",
+   "ru": "Я иду в кафе, потому что нужен перерыв.",
+   "audio": "audio/0cca6edf7b7b.m4a"
+  },
+  {
+   "id": "b1-meinungen-10",
+   "type": "order",
+   "de": "Wir haben unterschiedliche Interessen.",
+   "ru": "У нас разные интересы.",
+   "audio": "audio/49487c6ddbf3.m4a"
+  },
+  {
+   "id": "b1-meinungen-11",
+   "type": "order",
+   "de": "Trotzdem können wir uns einigen.",
+   "ru": "И всё же мы можем договориться.",
+   "audio": "audio/2f06abec2f0c.m4a"
+  },
+  {
+   "id": "b1-meinungen-12",
+   "type": "order",
+   "de": "Ich bestelle selbst auf Deutsch.",
+   "ru": "Я закажу сама на немецком.",
+   "audio": "audio/459a34e47f68.m4a"
+  }
+ ],
+ "case": {
+  "title": "Trotzdem heißt nicht: Das Hindernis ist weg",
+  "ru": "Сверка дневника",
+  "intro": "В пересказе исчезли обстоятельства и появились оценки чужих предпочтений.",
+  "people": {},
+  "steps": [
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Obwohl Dana müde ist, möchte sie zwanzig Minuten spazieren gehen.",
+      "ru": "Хотя Дана устала, она хочет прогуляться 20 минут."
+     }
+    ],
+    "question": "Дана больше не устала?",
+    "options": [
+     "Она отменяет прогулку",
+     "Нет, усталость сохраняется",
+     "Да"
+    ],
+    "answer": 1,
+    "right": "Уступка сохраняет оба факта.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Museum 6 Euro plus Café B4 Euro. Insgesamt 10 Euro.",
+      "ru": "Музей 6 евро и кафеB4 евро. Всего 10."
+     }
+    ],
+    "question": "При бюджете 10 евро это допустимый план?",
+    "options": [
+     "Да",
+     "Нет",
+     "Только без паузы"
+    ],
+    "answer": 0,
+    "right": "Ровно 10 допускается.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Karin mag Gespräche über verschiedene Eindrücke.",
+      "ru": "Карин любит обсуждать разные впечатления."
+     }
+    ],
+    "question": "Все должны одинаково оценить музей?",
+    "options": [
+     "Да",
+     "Разговор запрещён",
+     "Нет"
+    ],
+    "answer": 2,
+    "right": "Различие мнений — часть её интереса.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   }
+  ],
+  "ending": "В пересказе сохранены обстоятельства, допустимый бюджет и различие мнений без выдуманных противоречий."
+ },
+ "adventure": {
+  "kind": "sequence",
+  "title": "Найдите подходящий план, а не единственный любимый",
+  "intro": "Во Фленсбурге друзья выбирают короткую прогулку у гавани, музей и кафе. Погода, усталость и разные интересы не дают одного идеального ответа. Нужно объяснить своё решение и услышать другое мнение. Цены, кафе и расписание внутри урока — вымышленные условия игры.",
+  "ending": "Выбран допустимый набор занятия и паузы. Разные предпочтения объяснены; погода и усталость сохранены в рассказе, а не вычеркнуты ради решения.",
+  "challenges": [
+   {
+    "id": "relations",
+    "kind": "match",
+    "title": "Причина или уступка?",
+    "intro": "Определите связь между частями.",
+    "success": "Один факт может участвовать в разных смысловых связях.",
+    "wrong": "Weil объясняет причину; obwohl и trotzdem сохраняют препятствие.",
+    "options": [
+     {
+      "id": "cause",
+      "label": "причина выбора"
+     },
+     {
+      "id": "contrast",
+      "label": "действие вопреки обстоятельству"
+     }
+    ],
+    "slots": [
+     {
+      "id": "a",
+      "label": "Weil es regnet, bleibe ich drinnen.",
+      "answer": "cause"
+     },
+     {
+      "id": "b",
+      "label": "Obwohl es regnet, gehe ich hinaus.",
+      "answer": "contrast"
+     },
+     {
+      "id": "c",
+      "label": "Es regnet. Trotzdem gehe ich hinaus.",
+      "answer": "contrast"
+     }
+    ]
+   },
+   {
+    "id": "trotzdem",
+    "kind": "order",
+    "title": "Сохраните дождь и решение",
+    "intro": "Две главные части.",
+    "success": "Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.",
+    "wrong": "Проверьте положение глагола и конец предложения: используйте все фрагменты.",
+    "tokens": [
+     "Es regnet.",
+     "Trotzdem",
+     "machen wir",
+     "eine kurze Runde."
+    ],
+    "label": "Реплика для команды"
+   },
+   {
+    "id": "budget",
+    "kind": "pack",
+    "title": "Выберите занятие и тёплую паузу",
+    "intro": "Ровно одно занятие и одна пауза; не больше 60 минут и 10 евро. Все допустимые наборы принимаются.",
+    "success": "Полный набор укладывается и во время, и в бюджет.",
+    "wrong": "Нужны одно занятие и одна пауза. Музей с Café A превышает 10 евро.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Hafenrunde: 20 Minuten, 0 Euro. Museum: 30 Minuten, 6 Euro. Café A: 20 Minuten, 8 Euro. Café B: 20 Minuten, 4 Euro. Wählen Sie genau eine Aktivität und genau eine Pause. Zeit höchstens 60 Minuten, Budget höchstens 10 Euro pro Person. Alle Angebote sind erfunden.",
+      "name": "Zwei Aktivitäten, zwei Pausen · Ausschnitt"
+     }
+    ],
+    "options": [
+     {
+      "id": "harbor",
+      "label": "Hafenrunde · 20 мин · 0€"
+     },
+     {
+      "id": "museum",
+      "label": "Museum · 30 мин · 6€"
+     },
+     {
+      "id": "a",
+      "label": "Café A · 20 мин · 8€"
+     },
+     {
+      "id": "b",
+      "label": "Café B · 20 мин · 4€"
+     }
+    ],
+    "answer": [
+     "harbor",
+     "a"
+    ],
+    "alternatives": [
+     [
+      "harbor",
+      "b"
+     ],
+     [
+      "museum",
+      "b"
+     ]
+    ]
+   },
+   {
+    "id": "main",
+    "kind": "select",
+    "title": "Что на самом деле важно пятому автору?",
+    "intro": "Прочитайте последний текст чтения.",
+    "success": "Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы одно из них.",
+    "wrong": "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание и адресата.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "1) Nora besuchte Flensburg an einem grauen Sonntag. Obwohl es regnete, ging sie eine kurze Runde am Hafen. Danach saß sie lange im Café. Für sie war der Wechsel wichtig: frische Luft und eine warme Pause. Einen ganzen Tag draußen wollte sie nicht verbringen.\n\n2) Jonas wollte im Café Deutsch üben. Die Karte war in der erfundenen Situation zweisprachig, trotzdem fragte er auf Deutsch nach einer Empfehlung. Die Mitarbeiterin antwortete langsam. Er verstand nicht jedes Wort, konnte aber selbst bestellen. Perfekt musste das Gespräch für ihn nicht sein.\n\n3) Karin geht gern mit Freunden in Museen. Obwohl nicht alle dieselben Bilder mögen, findet sie gemeinsame Besuche interessant. Nachher sprechen sie über unterschiedliche Eindrücke. Für sie ist eine andere Meinung ein guter Anfang für ein Gespräch und kein Grund für Streit.\n\n4) Ben reist lieber mit wenig Programm. Früher wollte er jede freie Stunde nutzen. Trotzdem hatte er nach solchen Tagen oft das Gefühl, kaum etwas wirklich gesehen zu haben. Heute wählt er ein Ziel und lässt Zeit für eine Pause. Er kommt lieber noch einmal wieder.\n\n5) Eine kleine Gruppe testet vor der Ausstellung ihre Texte. Ein Gast kennt viele Orte der Region, ein anderer ist erst seit kurzem hier. Obwohl ihre Erfahrungen verschieden sind, finden beide dieselbe Kartenmarkierung schwer. Die Gruppe verbessert das Material, statt die Gäste miteinander zu vergleichen.",
+      "name": "Fünf Texte über gute freie Zeit"
+     }
+    ],
+    "options": [
+     {
+      "id": "o0",
+      "label": "Исправить конкретную трудность карты"
+     },
+     {
+      "id": "o1",
+      "label": "Сравнить способности двух гостей"
+     },
+     {
+      "id": "o2",
+      "label": "Оставить всё без изменений"
+     }
+    ],
+    "answer": [
+     "o0"
+    ]
+   },
+   {
+    "id": "meaning",
+    "kind": "note",
+    "title": "Сохраните оба факта в заметке",
+    "intro": "Что сообщает «Obwohl ich müde bin»? Введите состояние Даны.",
+    "success": "Усталость остаётся фактом, несмотря на решение гулять.",
+    "wrong": "В исходной реплике Dana ist müde.",
+    "fields": [
+     {
+      "label": "Dana ist …",
+      "answers": [
+       "müde"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "spy": []
+}

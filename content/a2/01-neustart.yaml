@@ -1,0 +1,678 @@
+id: a2-neustart
+order: 1
+title: Was haben wir schon organisiert?
+ru: Новый дневник команды
+lede: Kieler Woche закончилась. Дана, Матео, Элиф и Хауке начинают общий дневник поездок. Для
+  первой записи нужно восстановить вчерашние события, проверить сообщение и понять, что уже
+  организовано, а что ещё предстоит.
+goals:
+  - Восстановить последовательность событий по сообщениям
+  - Узнать причастия с отделяемой приставкой и без ge-
+  - Заполнить телефонную заметку после прослушивания
+  - Рассказать о себе и о прошедшем дне
+grammar:
+  - "Perfekt: приставки и последовательность"
+exam:
+  - a2-hoeren-1
+  - a2-lesen-2
+  - a2-sprechen-1
+  - a2-schreiben-1
+dialogues:
+  scene:
+    title: Was haben wir schon organisiert?
+    ru: Новый дневник команды
+    place: Club auf der Kiellinie, Kiel · вымышленная учебная ситуация
+    people:
+      D:
+        name: Dana
+        voice: Anna
+      M:
+        name: Mateo
+        voice: Reed
+      E:
+        name: Elif
+        voice: Flo
+      H:
+        name: Hauke
+        voice: Rocko
+    lines:
+      - H: Die Kieler Woche ist zu Ende. Was haben wir gestern gemacht?
+        ru: Кильская неделя закончилась. Что мы делали вчера?
+      - D: Zuerst haben wir im Club aufgeräumt.
+        ru: Сначала мы прибрались в клубе.
+      - M: Dann habe ich Brot und Wasser eingekauft.
+        ru: Потом я купил хлеб и воду.
+      - E: Ich habe die Fotos sortiert. Die Tickets habe ich noch nicht reserviert.
+        ru: Я рассортировала фотографии. Билеты я ещё не забронировала.
+      - H: Habt ihr die Gäste angerufen?
+        ru: Вы позвонили гостям?
+      - D: Ja. Lucía und Diego sind gut nach Hause gekommen.
+        ru: Да. Лусия и Диего хорошо добрались домой.
+      - M: Und wer hat die neue Fahrt organisiert?
+        ru: А кто организовал новую поездку?
+      - E: Noch niemand. Wir können am Sonntag zusammen planen.
+        ru: Пока никто. Можем вместе спланировать в воскресенье.
+words:
+  useful:
+    title: Wörter für die Aufgabe
+    ru: Слова для действия
+    items:
+      - de: aufräumen
+        ru: прибираться
+      - de: einkaufen
+        ru: покупать продукты
+      - de: anrufen
+        ru: звонить
+      - de: sortieren
+        ru: сортировать
+      - de: organisieren
+        ru: организовывать
+      - de: reservieren
+        ru: бронировать
+      - de: zuerst
+        ru: сначала
+      - de: danach
+        ru: после этого
+      - de: zum Schluss
+        ru: в конце
+      - de: der Eintrag
+        ru: запись
+        pl: Einträge
+      - de: die Notiz
+        ru: заметка
+        pl: Notizen
+      - de: bestätigen
+        ru: подтверждать
+tables:
+  rule:
+    title: "Perfekt: приставки и последовательность"
+    ru: Опора для решения
+    head:
+      - Beispiel
+      - Смысл и форма
+    ruCols:
+      - 1
+    rows:
+      - - Wir haben aufgeräumt.
+        - "Отделяемая приставка: auf + ge + räumt."
+      - - Ich habe die Fotos sortiert.
+        - У глаголов на -ieren нет ge-.
+      - - Wir haben die Zeit bestätigt.
+        - "Неотделяемая приставка: bestätigt, без ge-."
+      - - Danach haben wir geplant.
+        - После Danach личная форма остаётся второй.
+tasks:
+  note:
+    kind: worksheet
+    part: a2-hoeren-1
+    format: notes
+    title: Telefonnotiz für Dana
+    situation: Hören Sie die Nachricht zweimal. Ergänzen Sie die Notiz.
+    voice: Rocko
+    text: Hallo Dana, hier ist Hauke. Wir treffen uns am Sonntag um zehn Uhr im Club. Bitte bring
+      das Fotoalbum mit. Ruf mich am Samstag an. Bis bald!
+    questions:
+      - prompt: Tag des Treffens
+        answers:
+          - Sonntag
+          - am Sonntag
+      - prompt: Uhrzeit
+        answers:
+          - 10:00
+          - 10 Uhr
+          - zehn Uhr
+      - prompt: Ort
+        answers:
+          - Club
+          - im Club
+      - prompt: Mitbringen
+        answers:
+          - Fotoalbum
+          - das Fotoalbum
+      - prompt: Rückruf am
+        answers:
+          - Samstag
+  article:
+    kind: worksheet
+    part: a2-lesen-2
+    format: article
+    title: Der erste Eintrag
+    text: Am Samstag hat Dana die Fotos sortiert. Mateo hat eingekauft. Elif hat eine Liste
+      geschrieben. Die Gäste sind nach Hause gefahren. Für Sonntag hat Hauke ein Treffen
+      organisiert. Die Tickets sind noch nicht reserviert.
+    questions:
+      - prompt: Dana hat Fotos sortiert.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+      - prompt: Mateo hat Tickets gekauft.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Elif hat eine Liste geschrieben.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+      - prompt: Die Gäste sind noch in Kiel.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Für Sonntag gibt es ein Treffen.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+  self:
+    kind: keywords
+    part: a2-sprechen-1
+    title: Neu in der Gruppe
+    situation: Stellen Sie sich vor. Erzählen Sie auch kurz von gestern.
+    words:
+      - Name
+      - Wohnort
+      - Beruf
+      - Sprachen
+      - Hobby
+      - Gestern
+    sample:
+      - Ich heiße Dana und wohne in Kiel.
+      - Ich bin Ärztin und lerne Deutsch.
+      - Gestern habe ich Fotos sortiert.
+  form:
+    kind: form
+    part: a2-schreiben-1
+    title: Anmeldung zum Treffen
+    situation: Elif Yıldız ist 24 Jahre alt. Sie wohnt in Kiel und studiert Meeresbiologie. Sie
+      spricht Türkisch und Englisch. Tragen Sie die fünf fehlenden Angaben ein.
+    fields:
+      - label: Familienname
+        value: Yıldız
+        given: true
+      - label: Vorname
+        value: Elif
+      - label: Alter
+        value: "24"
+      - label: Wohnort
+        value: Kiel
+      - label: Beruf
+        value: Studentin
+      - label: Sprachen
+        value: Türkisch, Englisch
+steps:
+  - id: start
+    chapter: scene
+    title: Новое дело команды
+    beats:
+      - read: "Kieler Woche закончилась. Дана, Матео, Элиф и Хауке начинают общий дневник поездок. Для
+          первой записи нужно восстановить вчерашние события, проверить сообщение и понять, что
+          уже организовано, а что ещё предстоит. Все нужные условия даны в сцене: знания
+          географии, настоящих цен или расписаний не требуются. Сначала попробуйте понять,
+          какого результата добиваются друзья, затем слушайте реплики. На новом уровне важно не
+          только найти число или знакомое слово, но и связать несколько сведений."
+        point: Новый дневник команды
+        set:
+          view: dialogue
+          dialogue: scene
+          reveal: 4
+      - read: В разговоре есть завершённые действия и незавершённое дело. *Aufgeräumt*, *eingekauft*,
+          *sortiert* относятся к тому, что сделано; *noch nicht reserviert* — к тому, что ещё
+          не сделано. Слушайте отрицание вместе с причастием. Ответ о возвращении гостей
+          использует знакомое *sind … gekommen*. Новый сезон не требует заново угадывать
+          биографии друзей.
+        point: "Perfekt: приставки и последовательность"
+        set:
+          reveal: 8
+  - id: words
+    chapter: words
+    title: Слова, которые понадобятся
+    beats:
+      - read: "Для дневника нужны действия с понятным результатом: прибраться, купить, отсортировать,
+          позвонить, организовать. Слова *zuerst*, *dann*, *danach*, *zum Schluss* связывают
+          события. Они не меняют форму причастия, но могут занять первую позицию: тогда личная
+          форма глагола остаётся второй. В игре порядок событий понадобится для передачи ключа,
+          а не для пересказа списка слов."
+        point: Сначала используйте слово для решения; словарь остаётся справочником.
+        set:
+          view: words
+          words: useful
+          reveal: 6
+      - read: "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к
+          ситуации: какие слова обозначают человека, место, условие или уже выполненное
+          действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово
+          встретится снова в записке или разговоре, попробуйте восстановить его смысл до
+          подсказки."
+        point: Возвращайтесь к выражениям в сообщениях и новых действиях.
+        set:
+          reveal: 12
+  - id: grammar
+    chapter: grammar
+    title: "Perfekt: приставки и последовательность"
+    beats:
+      - read: "У знакомого *aufräumen* приставка отделяется в настоящем времени: *Wir räumen auf*. В
+          Perfekt она соединяется с причастием: *aufgeräumt*. Частица *ge* находится между
+          приставкой и основой. Это та же модель, что у *angekommen* из A1, но вспомогательный
+          глагол здесь *haben*: мы не перемещаемся в другое место."
+        point: "Отделяемая приставка: auf + ge + räumt."
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+      - read: "У *sortieren*, *organisieren*, *reservieren* причастие без *ge*: *sortiert*,
+          *organisiert*, *reserviert*. Их легко узнать по окончанию инфинитива. Это не повод
+          убирать *ge* у любого длинного слова: *eingekauft* строится иначе. Найдите на
+          странице формы, с которыми можно подтвердить готовность, и формы с отрицанием."
+        point: У глаголов на -ieren нет ge-.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 1
+      - read: "У *bestätigen* приставка *be-* не отделяется; причастие — *bestätigt*. Из A1 знакомы
+          *besuchen*, *bekommen*. Не нужно придумывать форму по длине слова: смотрите,
+          отделяется ли приставка, и возвращайтесь к образцу. Подтверждение времени — отдельное
+          действие: обсуждённый вариант ещё не становится договорённостью."
+        point: "Неотделяемая приставка: bestätigt, без ge-."
+        set:
+          view: table
+          table: rule
+          focus:
+            - 2
+      - read: "Если *danach* стоит первым, за ним следует *haben*, затем *wir*, а причастие закрывает
+          предложение. Такие слова помогают связать несколько коротких реплик в рассказ. Не
+          перепутайте порядок слов с порядком событий: последовательность устанавливается по
+          источнику, а не по тому, какое предложение прочитано первым."
+        point: После Danach личная форма остаётся второй.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 3
+  - id: frames
+    chapter: grammar
+    title: Как устроена реплика
+    beats:
+      - read: "Сравните предложение с начальным временем. Сначала *Danach*, затем *haben*, середина
+          *wir die Fahrt*, в конце *organisiert*. Вспомогательный глагол выражает лицо и число,
+          причастие — действие. Уберите обстоятельство: получится *Wir haben die Fahrt
+          organisiert*. Рамка сохраняется в обоих случаях."
+        point: "*Danach haben wir die Fahrt organisiert.*"
+        set:
+          view: sentence
+          rows:
+            - de:
+                - Danach
+                - haben
+                - wir die Fahrt
+                - organisiert.
+              ru: После этого мы организовали поездку.
+  - id: check
+    chapter: practice
+    title: Проверьте смысл до подсказки
+    beats:
+      - question: Нужно ли ge- в причастии от reservieren?
+        read: "Нет: *reserviert*. Окончание *-ieren* помогает узнать модель. Но *noch nicht reserviert*
+          означает, что бронирования пока нет. Для итогового дневника важны и форма, и
+          отрицание. Не отмечайте дело выполненным только потому, что видите причастие."
+        point: "*reservieren → reserviert*, но *noch nicht* отменяет готовность."
+        set:
+          view: table
+          table: rule
+      - question: "Как сказать: «Потом мы позвонили гостям»?"
+        read: "*Dann haben wir die Gäste angerufen.* *Haben* остаётся вторым, а *anrufen* превращается
+          в *angerufen*. Если начать с *Wir*, получится *Wir haben dann die Gäste angerufen*.
+          Оба порядка подходят; в игре специально заданное начальное слово помогает
+          потренировать перестройку."
+        point: "*Dann haben wir die Gäste angerufen.*"
+        set:
+          view: table
+          table: rule
+  - id: exam-note
+    chapter: exam
+    title: Telefonnotiz für Dana
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: note
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: note
+        set:
+          view: task
+          task: note
+          solved: true
+  - id: exam-article
+    chapter: exam
+    title: Der erste Eintrag
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: article
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: article
+        set:
+          view: task
+          task: article
+          solved: true
+  - id: exam-self
+    chapter: exam
+    title: Neu in der Gruppe
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: self
+          reveal: 0
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: self
+          reveal: 0
+        set:
+          view: task
+          task: self
+          solved: true
+  - id: exam-form
+    chapter: exam
+    title: Anmeldung zum Treffen
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: form
+          reveal: 0
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: form
+          reveal: 0
+        set:
+          view: task
+          task: form
+          solved: true
+exercises:
+  - type: choice
+    q: Wir haben die Fotos ___.
+    options:
+      - sortiert
+      - gesortiert
+      - sortieren
+    answer: 0
+    why: У -ieren нет ge-.
+  - type: choice
+    q: Mateo hat ___.
+    options:
+      - eingekauft
+      - geeinkauft
+      - einkaufen
+    answer: 0
+    why: Приставка стоит перед ge-.
+  - type: choice
+    q: Danach ___ wir aufgeräumt.
+    options:
+      - haben
+      - sind
+      - hat
+    answer: 0
+    why: "*Wir haben aufgeräumt*."
+  - type: choice
+    q: Die Tickets sind ___ reserviert.
+    options:
+      - noch nicht
+      - schon
+      - niemand
+    answer: 0
+    why: "Ещё не: *noch nicht*."
+  - type: choice
+    q: Die Gäste ___ nach Hause gefahren.
+    options:
+      - sind
+      - haben
+      - hat
+    answer: 0
+    why: "Перемещение: *sind gefahren*."
+  - type: choice
+    q: Wir haben die Zeit ___.
+    options:
+      - bestätigt
+      - gebestätigt
+      - bestätigen
+    answer: 0
+    why: "Неотделяемая be-: без ge-."
+  - type: order
+    ru: Мы рассортировали фотографии.
+    de: Wir haben die Fotos sortiert.
+  - type: order
+    ru: Потом мы прибрались.
+    de: Dann haben wir aufgeräumt.
+  - type: order
+    ru: Я купил хлеб.
+    de: Ich habe Brot eingekauft.
+  - type: order
+    ru: Ты позвонил гостям?
+    de: Hast du die Gäste angerufen?
+  - type: order
+    ru: Мы организовали поездку.
+    de: Wir haben die Fahrt organisiert.
+  - type: order
+    ru: Гости добрались домой.
+    de: Die Gäste sind nach Hause gekommen.
+case:
+  title: Der erste Eintrag
+  ru: Первый отчёт
+  intro: В дневнике оказались две версии сообщения. Установите, что подтверждено первоисточником.
+    Вывод зависит от языка, а не от личности автора.
+  people: {}
+  steps:
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Zuerst haben wir aufgeräumt. Danach haben wir die Gäste angerufen.
+          ru: Сначала мы прибрались. После этого позвонили гостям.
+      question: Что было раньше?
+      options:
+        - Уборка
+        - Звонок
+        - Бронирование
+      answer: 0
+      right: "*Zuerst* задаёт первое событие, *danach* — следующее."
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Die Tickets habe ich noch nicht reserviert.
+          ru: Билеты я ещё не забронировала.
+      question: Можно отметить бронь как готовую?
+      options:
+        - Да
+        - Нет
+        - Только на субботу
+      answer: 1
+      right: "*Noch nicht* сообщает о незавершённом деле."
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Lucía und Diego sind nach Hause gekommen. Am Sonntag treffen wir uns im Club.
+          ru: Лусия и Диего добрались домой. В воскресенье мы встречаемся в клубе.
+      question: Что уже произошло?
+      options:
+        - Воскресная встреча
+        - Возвращение гостей
+        - Августовская поездка
+      answer: 1
+      right: Perfekt подтверждает возвращение; встреча в воскресенье — следующий план.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+  ending: Запись исправлена по источникам. В следующей главе команда воспользуется
+    подтверждёнными сведениями для нового решения.
+adventure:
+  kind: sequence
+  title: Начните дневник без потерянных сведений
+  intro: Kieler Woche закончилась. Дана, Матео, Элиф и Хауке начинают общий дневник поездок. Для
+    первой записи нужно восстановить вчерашние события, проверить сообщение и понять, что уже
+    организовано, а что ещё предстоит.
+  ending: Первый отчёт собран, время встречи записано. Теперь команда может обсуждать, куда
+    поехать и почему этот вариант подходит.
+  challenges:
+    - id: phone
+      kind: note
+      title: Запишите сообщение Хауке
+      intro: Послушайте и заполните заметку самостоятельно. Текст доступен по кнопке, если нужна
+        помощь чтением.
+      clue:
+        task: note
+      fields:
+        - label: Tag
+          answers:
+            - Sonntag
+            - am Sonntag
+        - label: Uhrzeit
+          answers:
+            - 10:00
+            - 10 Uhr
+            - zehn Uhr
+        - label: Ort
+          answers:
+            - Club
+            - im Club
+      success: День, время и место сохранены. Просьба перезвонить в субботу — отдельное действие.
+      wrong: Сверьте воскресенье, десять часов и клуб. Суббота относится к обратному звонку.
+    - id: done
+      kind: pack
+      title: Отметьте сделанное
+      intro: Отберите только подтверждённые действия из записи.
+      mode: reading
+      clue:
+        task: article
+      options:
+        - id: o0
+          label: Fotos sortiert
+        - id: o1
+          label: eingekauft
+        - id: o2
+          label: Liste geschrieben
+        - id: o3
+          label: Tickets reserviert
+      answer:
+        - o0
+        - o1
+        - o2
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."
+    - id: frame
+      kind: order
+      title: Передайте последовательность
+      intro: "Начните с Dann: «Потом мы позвонили гостям»."
+      label: Реплика для команды
+      tokens:
+        - Dann
+        - haben
+        - wir die Gäste
+        - angerufen.
+      success: Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.
+      wrong: "Проверьте положение глагола и конец предложения: используйте все фрагменты."
+    - id: chat
+      kind: negotiation
+      title: Договоритесь о следующем шаге
+      intro: Элиф ещё не бронировала билеты. Сначала нужен план команды, затем бронь.
+      success: Вы договорились сначала встретиться и выбрать поездку, а затем бронировать.
+      wrong: Учтите, что план ещё не выбран.
+      start: start
+      nodes:
+        - id: start
+          text: "Elif: Die Tickets sind noch nicht reserviert. Was machen wir zuerst?"
+          choices:
+            - label: Wir reservieren sofort alle Tickets.
+              next: again
+              feedback: Элиф напоминает о невыбранной поездке.
+            - label: Wir planen am Sonntag zusammen.
+              next: agree
+              feedback: Вы предложили совместное планирование.
+        - id: again
+          text: "Elif: Aber wohin fahren wir? Das wissen wir noch nicht."
+          choices:
+            - label: Dann planen wir zuerst zusammen.
+              next: agree
+              feedback: Сначала план, затем покупка.
+        - id: agree
+          text: "Elif: Gut. Treffen wir uns um zehn im Club?"
+          choices:
+            - label: Ja, um zehn im Club. Ich bringe das Album mit.
+              next: end
+              feedback: Вы подтвердили время, место и свою задачу.
+        - id: end
+          text: "Elif: Abgemacht! Danach reservieren wir."
+          terminal: true
+          choices: []
+    - id: return
+      kind: select
+      title: Запишите, где гости сейчас
+      intro: Не перепутайте завершённую поездку с планом.
+      mode: reading
+      clue:
+        task: article
+      options:
+        - id: o0
+          label: Sie sind nach Hause gefahren.
+        - id: o1
+          label: Sie fahren morgen nach Kiel.
+        - id: o2
+          label: Sie sind im Club.
+      answer:
+        - o0
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."

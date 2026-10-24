@@ -1,0 +1,2036 @@
+{
+ "id": "b1-weitergeben",
+ "level": "b1",
+ "order": 19,
+ "title": "Die Bilder der Stadt erzählen nicht die ganze Reise.",
+ "ru": "Понимаем источник и пересказываем историю региона",
+ "lede": "Для финальной встречи друзья собирают подписи и короткие рассказы о регионе. В альбоме есть Любек, Фленсбург и воспоминание Даны о Люнебургской пустоши. Нужно понять, какие слова относятся друг к другу, кто выражает мнение и какую деталь нельзя добавлять без источника.",
+ "goals": [
+  "Узнать частые Genitiv-группы в тексте",
+  "Различить des и der по описываемому слову",
+  "Пересказать источник понятным знакомым языком",
+  "Передать два разных мнения без ложного обобщения"
+ ],
+ "grammar": [
+  "Узнавание Genitiv: des Museums, des Hafens, der Stadt, der Freunde"
+ ],
+ "exam": [
+  "b1-lesen-2",
+  "b1-hoeren-2",
+  "b1-sprechen-2"
+ ],
+ "chapters": [
+  {
+   "id": "scene",
+   "title": "Ситуация"
+  },
+  {
+   "id": "words",
+   "title": "Слова"
+  },
+  {
+   "id": "grammar",
+   "title": "Грамматика"
+  },
+  {
+   "id": "practice",
+   "title": "Проверка"
+  },
+  {
+   "id": "exam",
+   "title": "На экзамене"
+  }
+ ],
+ "dialogues": {
+  "scene": {
+   "title": "Die Bilder der Stadt erzählen nicht die ganze Reise.",
+   "ru": "Понимаем источник и пересказываем историю региона",
+   "place": "Lübeck / Flensburg / Lüneburger Heide · альбом команды · вымышленная учебная ситуация",
+   "people": {
+    "D": {
+     "name": "Dana",
+     "voice": "Anna"
+    },
+    "M": {
+     "name": "Mateo",
+     "voice": "Reed"
+    },
+    "E": {
+     "name": "Elif",
+     "voice": "Flo"
+    },
+    "H": {
+     "name": "Hauke",
+     "voice": "Rocko"
+    }
+   },
+   "lines": [
+    {
+     "who": "E",
+     "de": "Die Bilder der Stadt zeigen nur einen Teil unseres Ausflugs.",
+     "ru": "Снимки города показывают только часть нашей поездки.",
+     "audio": "audio/893accee0bb4.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Welche Stadt ist hier gemeint?",
+     "ru": "Какой город здесь имеется в виду?",
+     "audio": "audio/efc030e2379c.m4a"
+    },
+    {
+     "who": "E",
+     "de": "Lübeck. Nach dem Besuch des Museums saßen wir am Wasser.",
+     "ru": "Любек. После посещения музея мы сидели у воды.",
+     "audio": "audio/e73358e96622.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Die Fotos des Hafens stammen dagegen aus Flensburg.",
+     "ru": "Фотографии гавани, напротив, из Фленсбурга.",
+     "audio": "audio/8cf544628d30.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Die Eindrücke der Freunde waren unterschiedlich. Ich erinnere mich gern an das Gespräch im Café.",
+     "ru": "Впечатления друзей различались. Я с удовольствием вспоминаю разговор в кафе.",
+     "audio": "audio/ed757dd84fe5.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Und die Bilder der Lüneburger Heide gehören zu meinem Bericht über einen ruhigen Spaziergang.",
+     "ru": "А снимки Люнебургской пустоши относятся к моему рассказу о спокойной прогулке.",
+     "audio": "audio/732a7a127143.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Wir sollten den Namen des Fotografen bei jedem Bild nennen.",
+     "ru": "Нам стоит указать имя фотографа у каждого снимка.",
+     "audio": "audio/878d5099b8b1.m4a"
+    },
+    {
+     "who": "E",
+     "de": "Genau. Und beim Erzählen können wir einfach sagen, von wem das Foto ist und was wir erlebt haben.",
+     "ru": "Верно. А в рассказе можно просто сказать, чьё фото и что мы пережили.",
+     "audio": "audio/5b138d89f1d7.m4a"
+    }
+   ]
+  },
+  "interview": {
+   "title": "Wie das Album entsteht",
+   "ru": "Как собирается альбом",
+   "place": "Kiel · учебный разговор",
+   "people": {
+    "H": {
+     "name": "Hauke",
+     "voice": "Rocko"
+    },
+    "E": {
+     "name": "Elif",
+     "voice": "Flo"
+    }
+   },
+   "lines": [
+    {
+     "who": "H",
+     "de": "Wie habt ihr die Fotos für das regionale Album ausgewählt?",
+     "ru": "Как вы выбирали фотографии для регионального альбома?",
+     "audio": "audio/2ae529028b64.m4a"
+    },
+    {
+     "who": "E",
+     "de": "Zuerst haben wir den Ort und den Namen des Fotografen notiert. Dann haben wir gemeinsam überlegt, welche Geschichte das Bild erzählt. Ein schönes Bild allein erklärt noch nicht den ganzen Ausflug.",
+     "ru": "Сначала записали место и имя фотографа. Потом вместе подумали, какую историю рассказывает снимок. Одна красивая картинка ещё не объясняет всю поездку.",
+     "audio": "audio/c016fddf30e4.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Was zeigen die Bilder aus Lübeck?",
+     "ru": "Что показывают снимки из Любека?",
+     "audio": "audio/7d29fcd905fc.m4a"
+    },
+    {
+     "who": "E",
+     "de": "Sie zeigen Straßen und eine Pause am Wasser. Wir hatten auch ein Museum besucht. Aber aus dem Text geht nicht hervor, wie hoch der Eintritt damals war. Eine Zahl erfinden wir deshalb nicht.",
+     "ru": "Улицы и перерыв у воды. Мы также посетили музей. Но из текста не ясно, сколько тогда стоил вход. Поэтому число не придумываем.",
+     "audio": "audio/f85cfd0ea14f.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Und die Fotos des Hafens in Flensburg?",
+     "ru": "А фотографии гавани во Фленсбурге?",
+     "audio": "audio/ad6d2d875a50.m4a"
+    },
+    {
+     "who": "E",
+     "de": "Auf ihnen sieht man unseren kurzen Spaziergang. Danach waren wir im Café. Die zweisprachige Karte half Mateo, trotzdem bestellte er auf Deutsch. Das war seine persönliche Erfahrung in dieser Situation.",
+     "ru": "На них видна наша короткая прогулка. Потом мы были в кафе. Двуязычное меню помогло Матео, но он заказал на немецком. Это был его личный опыт в той ситуации.",
+     "audio": "audio/f1a99879a01e.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Warum gehören auch Bilder der Lüneburger Heide dazu?",
+     "ru": "Почему есть и снимки Люнебургской пустоши?",
+     "audio": "audio/40a797f22cea.m4a"
+    },
+    {
+     "who": "E",
+     "de": "Weil die Gruppe nicht nur Städte zeigen möchte. Dana hat eine ruhige Erinnerung an einen Spaziergang dort mitgebracht. Wir nennen das als ihren Eindruck, nicht als Versprechen für jeden zukünftigen Besuch.",
+     "ru": "Группа хочет показать не только города. Дана принесла спокойное воспоминание о прогулке там. Мы передаём её впечатление, а не обещание каждому будущему посетителю.",
+     "audio": "audio/f59fabb2c5ad.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Muss man im eigenen Bericht viele Genitivformen benutzen?",
+     "ru": "В собственном рассказе нужно использовать много форм Genitiv?",
+     "audio": "audio/4a17dada393a.m4a"
+    },
+    {
+     "who": "E",
+     "de": "Nein. Man soll die Gruppen im Quellentext verstehen. Beim Sprechen kann man oft auch mit von formulieren. Wichtiger ist, dass Ort, Person und Aussage erhalten bleiben.",
+     "ru": "Нет. Нужно понять группы в источнике. В речи часто можно использовать von. Важнее сохранить место, человека и смысл.",
+     "audio": "audio/cd929c76d42c.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Was macht ihr mit zwei unterschiedlichen Eindrücken?",
+     "ru": "Что делаете с разными впечатлениями?",
+     "audio": "audio/8d7e084702a6.m4a"
+    },
+    {
+     "who": "E",
+     "de": "Wir geben beide wieder. Eine Freundin mag ruhige Landschaften, ein anderer Freund lebendige Städte. Für den Treff ist das ein guter Anfang für ein Gespräch. Eine gemeinsame Lieblingsregion ist nicht nötig.",
+     "ru": "Передаём оба. Подруга любит спокойные пейзажи, другой друг — оживлённые города. Для встречи это хорошее начало разговора. Не обязательно иметь один любимый регион.",
+     "audio": "audio/e94cce6b18f5.m4a"
+    }
+   ]
+  }
+ },
+ "words": {
+  "useful": {
+   "title": "Wörter für die Aufgabe",
+   "ru": "Слова для действия",
+   "items": [
+    {
+     "de": "der Quellentext",
+     "ru": "исходный текст",
+     "gender": "m",
+     "plural": "Quellentexte",
+     "audio": "audio/7c3a73ac1326.m4a"
+    },
+    {
+     "de": "die Bildquelle",
+     "ru": "источник фотографии",
+     "gender": "f",
+     "plural": "Bildquellen",
+     "audio": "audio/c61d08343de4.m4a"
+    },
+    {
+     "de": "der Fotograf",
+     "ru": "фотограф",
+     "gender": "m",
+     "plural": "Fotografen",
+     "audio": "audio/3b5baabe335f.m4a"
+    },
+    {
+     "de": "die Fotografin",
+     "ru": "фотограф-женщина",
+     "gender": "f",
+     "plural": "Fotografinnen",
+     "audio": "audio/394f600fa23a.m4a"
+    },
+    {
+     "de": "der Zusammenhang",
+     "ru": "смысловая связь",
+     "gender": "m",
+     "plural": "Zusammenhänge",
+     "audio": "audio/c8fd0b0a0def.m4a"
+    },
+    {
+     "de": "der Ausschnitt",
+     "ru": "фрагмент",
+     "gender": "m",
+     "plural": "Ausschnitte",
+     "audio": "audio/f2915963f028.m4a"
+    },
+    {
+     "de": "die Landschaft",
+     "ru": "ландшафт",
+     "gender": "f",
+     "plural": "Landschaften",
+     "audio": "audio/0e3e9fa55474.m4a"
+    },
+    {
+     "de": "die Heide",
+     "ru": "вересковая пустошь",
+     "gender": "f",
+     "plural": "Heiden",
+     "audio": "audio/b4d05189ca71.m4a"
+    },
+    {
+     "de": "das Museum",
+     "ru": "музей",
+     "gender": "n",
+     "plural": "Museen",
+     "audio": "audio/91a32c6b92ef.m4a"
+    },
+    {
+     "de": "stammen aus",
+     "ru": "происходить из",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/36ca0ba0d783.m4a"
+    },
+    {
+     "de": "einen Eindruck wiedergeben",
+     "ru": "передать впечатление",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/8b61bbd0e2ae.m4a"
+    },
+    {
+     "de": "nicht daraus hervorgehen",
+     "ru": "не следовать из этого",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/be89e11d43a5.m4a"
+    },
+    {
+     "de": "zusammenfassen",
+     "ru": "кратко изложить",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/e9aad285737f.m4a"
+    },
+    {
+     "de": "zuordnen",
+     "ru": "сопоставить",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/d894dbb97588.m4a"
+    },
+    {
+     "de": "Herkunft angeben",
+     "ru": "указать происхождение",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/9f249e4ca65b.m4a"
+    }
+   ]
+  }
+ },
+ "tables": {
+  "rule": {
+   "title": "Узнавание Genitiv: des Museums, des Hafens, der Stadt, der Freunde",
+   "ru": "Опора для решения",
+   "head": [
+    "Beispiel",
+    "Смысл и форма"
+   ],
+   "rows": [
+    [
+     "die Fotos des Hafens / der Besuch des Museums",
+     "des + мужской/средний род; обычно-s или-es у существительного."
+    ],
+    [
+     "die Bilder der Stadt / die Eindrücke der Freunde",
+     "der: женский род или множественное число в Genitiv."
+    ],
+    [
+     "nach dem Besuch des Museums → Wir besuchten das Museum.",
+     "После понимания можно пересказать знакомой конструкцией."
+    ]
+   ],
+   "ruCols": [
+    1
+   ]
+  }
+ },
+ "tasks": {
+  "article": {
+   "kind": "worksheet",
+   "part": "b1-lesen-2",
+   "format": "article",
+   "title": "Drei Orte, verschiedene Erinnerungen",
+   "text": "Für den FördeTreff wählen die Freunde Bilder aus unterschiedlichen Ausflügen. Die Fotos der Stadt Lübeck zeigen Straßen und eine gemeinsame Pause am Wasser. Nach dem Besuch des Museums hatten die Freunde Zeit für ein Gespräch. Der Preis des Eintritts steht nicht in ihren Notizen. Deshalb gehört keine erfundene Zahl in die Bildunterschrift.\n\nDie Bilder des Hafens stammen aus Flensburg. Obwohl das Wetter grau war, machte die Gruppe eine kurze Runde und ging danach ins Café. Mateo erinnert sich besonders an ein Gespräch auf Deutsch. Die zweisprachige Karte half ihm bei der Auswahl. Daraus folgt weder, dass jedes Café dieselbe Karte hat, noch dass Gäste dort immer dieselbe Sprache sprechen. Im Album wird sein persönlicher Eindruck wiedergegeben.\n\nDie Fotos der Lüneburger Heide bringt Dana mit. Ihr Bericht beschreibt einen ruhigen Spaziergang und eine Pause im Grünen. Sie möchte damit einen anderen Teil ihrer regionalen Erfahrungen zeigen. Ein Freund bevorzugt lebendige Städte, Dana an diesem Tag die Landschaft. Die unterschiedlichen Eindrücke der Freunde werden nebeneinander dargestellt.\n\nBei jedem Foto prüfen sie den Namen des Fotografen, den Ort und die passende Aussage. Für die Beschriftung reicht oft ein kurzer Satz. Im Gespräch mit Gästen erzählen sie dann mit eigenen Worten weiter. Elif achtet darauf, dass ein schöner Ausschnitt nicht zur Behauptung über eine ganze Region wird. Der Bericht einer Person kann neugierig machen; er ist keine Garantie für jede spätere Reise.",
+   "questions": [
+    {
+     "prompt": "Woher stammen die Hafenbilder?",
+     "options": [
+      "Aus Lübeck",
+      "Aus dem Raum C",
+      "Aus Flensburg"
+     ],
+     "answers": [
+      "Aus Flensburg"
+     ]
+    },
+    {
+     "prompt": "Welche Zahl fehlt im Quellentext?",
+     "options": [
+      "Der Eintrittspreis des Museums",
+      "Die Zahl der drei Orte",
+      "Der Preis des Raums"
+     ],
+     "answers": [
+      "Der Eintrittspreis des Museums"
+     ]
+    },
+    {
+     "prompt": "Was darf man aus Mateos Erlebnis schließen?",
+     "options": [
+      "Dort wird immer nur eine Sprache gesprochen.",
+      "Er hatte in dieser Situation ein Gespräch auf Deutsch.",
+      "Alle Cafés haben dieselbe Karte."
+     ],
+     "answers": [
+      "Er hatte in dieser Situation ein Gespräch auf Deutsch."
+     ]
+    },
+    {
+     "prompt": "Warum kommen Bilder der Heide ins Album?",
+     "options": [
+      "Alle Freunde müssen Landschaften lieber mögen.",
+      "Die Stadtfotos wurden gelöscht.",
+      "Dana zeigt eine weitere eigene Erfahrung."
+     ],
+     "answers": [
+      "Dana zeigt eine weitere eigene Erfahrung."
+     ]
+    },
+    {
+     "prompt": "Was wird bei jedem Foto geprüft?",
+     "options": [
+      "Autor, Ort und passende Aussage",
+      "Nur die schönste Farbe",
+      "Eine erfundene Eintrittsgebühr"
+     ],
+     "answers": [
+      "Autor, Ort und passende Aussage"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "sources": {
+   "kind": "message",
+   "part": "b1-lesen-2",
+   "title": "Drei Bildquellen · Ausschnitt",
+   "text": "Lübeck: Fotos der Stadt, Besuch des Museums, danach Pause am Wasser. Kein Eintrittspreis notiert. Flensburg: Fotos des Hafens, kurzer Spaziergang, persönliches Gespräch im Café. Lüneburger Heide: Danas Bilder der Landschaft und ihr Eindruck eines ruhigen Spaziergangs. Diese Notizen nennen keine allgemeine Regel für jeden Besuch.",
+   "sample": []
+  },
+  "interview": {
+   "kind": "worksheet",
+   "part": "b1-hoeren-2",
+   "format": "article",
+   "dialogue": "interview",
+   "title": "Zehn Aussagen zur Weitergabe von Erinnerungen",
+   "situation": "Hören Sie das Gespräch zweimal und unterscheiden Sie Quelle, Eindruck und Ergänzung.",
+   "questions": [
+    {
+     "prompt": "Zuerst werden Ort und Fotograf notiert.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "richtig"
+     ]
+    },
+    {
+     "prompt": "Ein schönes Bild erklärt nach Elifs Meinung bereits den ganzen Ausflug.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Der Eintrittspreis des Museums ist in den Notizen genannt.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Die Hafenfotos stammen aus Flensburg.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "richtig"
+     ]
+    },
+    {
+     "prompt": "Mateos Gespräch ist ein persönliches Erlebnis.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "richtig"
+     ]
+    },
+    {
+     "prompt": "Die Gruppe zeigt ausschließlich Städte.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Danas ruhiger Eindruck gilt automatisch für jeden zukünftigen Besuch.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Genitiv-Gruppen sollen im Quellentext verstanden werden.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "richtig"
+     ]
+    },
+    {
+     "prompt": "Im Sprechen darf die Formulierung auch einfacher sein.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "richtig"
+     ]
+    },
+    {
+     "prompt": "Alle müssen am Ende dieselbe Lieblingsregion nennen.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "falsch"
+     ]
+    }
+   ],
+   "script": [
+    {
+     "who": "Hauke",
+     "de": "Wie habt ihr die Fotos für das regionale Album ausgewählt?",
+     "audio": "audio/2ae529028b64.m4a"
+    },
+    {
+     "who": "Elif",
+     "de": "Zuerst haben wir den Ort und den Namen des Fotografen notiert. Dann haben wir gemeinsam überlegt, welche Geschichte das Bild erzählt. Ein schönes Bild allein erklärt noch nicht den ganzen Ausflug.",
+     "audio": "audio/c016fddf30e4.m4a"
+    },
+    {
+     "who": "Hauke",
+     "de": "Was zeigen die Bilder aus Lübeck?",
+     "audio": "audio/7d29fcd905fc.m4a"
+    },
+    {
+     "who": "Elif",
+     "de": "Sie zeigen Straßen und eine Pause am Wasser. Wir hatten auch ein Museum besucht. Aber aus dem Text geht nicht hervor, wie hoch der Eintritt damals war. Eine Zahl erfinden wir deshalb nicht.",
+     "audio": "audio/f85cfd0ea14f.m4a"
+    },
+    {
+     "who": "Hauke",
+     "de": "Und die Fotos des Hafens in Flensburg?",
+     "audio": "audio/ad6d2d875a50.m4a"
+    },
+    {
+     "who": "Elif",
+     "de": "Auf ihnen sieht man unseren kurzen Spaziergang. Danach waren wir im Café. Die zweisprachige Karte half Mateo, trotzdem bestellte er auf Deutsch. Das war seine persönliche Erfahrung in dieser Situation.",
+     "audio": "audio/f1a99879a01e.m4a"
+    },
+    {
+     "who": "Hauke",
+     "de": "Warum gehören auch Bilder der Lüneburger Heide dazu?",
+     "audio": "audio/40a797f22cea.m4a"
+    },
+    {
+     "who": "Elif",
+     "de": "Weil die Gruppe nicht nur Städte zeigen möchte. Dana hat eine ruhige Erinnerung an einen Spaziergang dort mitgebracht. Wir nennen das als ihren Eindruck, nicht als Versprechen für jeden zukünftigen Besuch.",
+     "audio": "audio/f59fabb2c5ad.m4a"
+    },
+    {
+     "who": "Hauke",
+     "de": "Muss man im eigenen Bericht viele Genitivformen benutzen?",
+     "audio": "audio/4a17dada393a.m4a"
+    },
+    {
+     "who": "Elif",
+     "de": "Nein. Man soll die Gruppen im Quellentext verstehen. Beim Sprechen kann man oft auch mit von formulieren. Wichtiger ist, dass Ort, Person und Aussage erhalten bleiben.",
+     "audio": "audio/cd929c76d42c.m4a"
+    },
+    {
+     "who": "Hauke",
+     "de": "Was macht ihr mit zwei unterschiedlichen Eindrücken?",
+     "audio": "audio/8d7e084702a6.m4a"
+    },
+    {
+     "who": "Elif",
+     "de": "Wir geben beide wieder. Eine Freundin mag ruhige Landschaften, ein anderer Freund lebendige Städte. Für den Treff ist das ein guter Anfang für ein Gespräch. Eine gemeinsame Lieblingsregion ist nicht nötig.",
+     "audio": "audio/e94cce6b18f5.m4a"
+    }
+   ],
+   "sample": []
+  },
+  "opinions": {
+   "kind": "card",
+   "part": "b1-sprechen-2",
+   "title": "Stadt oder Landschaft?",
+   "theme": "Wie Sie einen freien Tag verbringen",
+   "word": "Position wiedergeben · eigener Ausflug · Rückfrage",
+   "situation": "Erzählen Sie die Meinung Ihrer Person und vergleichen Sie mit einem eigenen Erlebnis. Fragen Sie den Partner nach einer Erinnerung, die ihm wichtig ist.",
+   "roles": [
+    {
+     "title": "Person A · Nora",
+     "text": "Ich verbringe freie Tage gern in einer Stadt. Ich mag sowohl kleine Museen als auch Cafés. Eine ruhige Straße kann mich genauso interessieren wie eine bekannte Sehenswürdigkeit. Zu viel Programm möchte ich aber nicht. Meine schönste Erinnerung ist oft ein zufälliges Gespräch."
+    },
+    {
+     "title": "Person B · Jonas",
+     "text": "Für mich ist eine Landschaft oft erholsamer. Ich brauche nicht viele Angebote, um einen schönen Tag zu haben. Ein Spaziergang mit Freunden reicht mir manchmal. Trotzdem plane ich Rückfahrt und Pausen vorher. Meine Vorliebe bedeutet nicht, dass Städte für alle schlechter sind."
+    }
+   ],
+   "sample": []
+  }
+ },
+ "beats": [
+  {
+   "id": "start-1",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 0,
+   "read": "Для финальной встречи друзья собирают подписи и короткие рассказы о регионе. В альбоме есть Любек, Фленсбург и воспоминание Даны о Люнебургской пустоши. Нужно понять, какие слова относятся друг к другу, кто выражает мнение и какую деталь нельзя добавлять без источника. Все нужные условия даны в сцене: знания географии, настоящих цен или расписаний не требуются. Сначала попробуйте понять, какого результата добиваются друзья, затем слушайте реплики. На новом уровне важно не только найти число или знакомое слово, но и связать несколько сведений.",
+   "point": "Понимаем источник и пересказываем историю региона",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 4,
+    "fresh": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "start-2",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 1,
+   "read": "Genitiv связывает два существительных: снимки чего, имя кого, посещение какого места. В чтении важно узнать связь, а не сразу строить все формы самому. Des Museums относится к Museum, der Stadt — к Stadt. Род и число видны у зависимого слова. После понимания можно пересказать мысль знакомыми фразами, например назвать место отдельно или использовать von.",
+   "point": "Узнавание Genitiv: des Museums, des Hafens, der Stadt, der Freunde",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 8,
+    "fresh": [
+     4,
+     5,
+     6,
+     7
+    ]
+   }
+  },
+  {
+   "id": "words-1",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 0,
+   "read": "У альбома есть разные виды сведений: место снимка, имя автора, описанное событие и личное впечатление. Они не взаимозаменяемы. Гавань во Фленсбурге не становится частью Любека только потому, что фотографии стоят рядом. Спокойное воспоминание Даны не обещает одинакового опыта всем гостям. Эти слова помогают передать историю точно и оставить место для собственного мнения.",
+   "point": "Сначала используйте слово для решения; словарь остаётся справочником.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 6,
+    "words": "useful"
+   }
+  },
+  {
+   "id": "words-2",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 1,
+   "read": "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к ситуации: какие слова обозначают человека, место, условие или уже выполненное действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово встретится снова в записке или разговоре, попробуйте восстановить его смысл до подсказки.",
+   "point": "Возвращайтесь к выражениям в сообщениях и новых действиях.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 15,
+    "words": "useful",
+    "fresh": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   }
+  },
+  {
+   "id": "grammar-1",
+   "step": "grammar",
+   "stepTitle": "Узнавание Genitiv: des Museums, des Hafens, der Stadt, der Freunde",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "В этих частых группах des указывает на зависимое слово мужского или среднего рода. К Hafen добавляется-s, к Museum тоже-s. Сначала найдите основное слово: фотографии или посещение. Затем установите, к какому месту оно относится. В этой главе цель — чтение и пересказ, а не заучивание всех исключений Genitiv или сложных цепочек существительных. Для знакомой слабой группы действует другое окончание: *des Fotografen*, как *des Kollegen*. Не добавляйте к этим словам обычное-s.",
+   "point": "des + мужской/средний род; обычно-s или-es у существительного.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "grammar-2",
+   "step": "grammar",
+   "stepTitle": "Узнавание Genitiv: des Museums, des Hafens, der Stadt, der Freunde",
+   "chapterIndex": 2,
+   "indexInStep": 1,
+   "read": "Форма der здесь не делает Stadt мужским словом. Это Genitiv женского рода; у Freunde — Genitiv множественного. Не добавляйте в этом случае существительному окончание-s по аналогии с des Hafens. Полезно восстановить исходные формы *die Stadt, die Freunde*, затем прочитать зависимую группу целиком. Контекст показывает, о чём или о ком идёт речь.",
+   "point": "der: женский род или множественное число в Genitiv.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "grammar-3",
+   "step": "grammar",
+   "stepTitle": "Узнавание Genitiv: des Museums, des Hafens, der Stadt, der Freunde",
+   "chapterIndex": 2,
+   "indexInStep": 2,
+   "read": "В одной группе могут встретиться разные падежи: nach dem Besuch содержит Dativ после nach, а des Museums относится к Besuch. Не нужно превращать весь пересказ в такую же длинную группу. Можно сказать *Wir besuchten das Museum und saßen danach am Wasser*. Сохраняйте смысл и порядок событий. Понятный пересказ важнее количества использованных Genitiv-форм.",
+   "point": "После понимания можно пересказать знакомой конструкцией.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "frames-1",
+   "step": "frames",
+   "stepTitle": "Как устроена реплика",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "Группа des Hafens уточняет, какие фотографии имеются в виду. Личный глагол stammen остаётся вторым после всего подлежащего. Если нужная форма в устном рассказе пока не получается, назовите место отдельным предложением: *Das ist Flensburg. Dort haben wir die Fotos gemacht*. Такой пересказ сохраняет факт, не требуя новой большой падежной таблицы.",
+   "point": "*Die Fotos des Hafens stammen aus Flensburg.*",
+   "scene": {
+    "view": "sentence",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "die",
+         "text": "Die"
+        },
+        {
+         "key": "fotos",
+         "text": "Fotos"
+        },
+        {
+         "key": "des",
+         "text": "des"
+        },
+        {
+         "key": "hafens",
+         "text": "Hafens"
+        }
+       ],
+       [
+        {
+         "key": "stammen",
+         "text": "stammen"
+        }
+       ],
+       [
+        {
+         "key": "aus",
+         "text": "aus"
+        }
+       ],
+       [
+        {
+         "key": "flensburg",
+         "text": "Flensburg"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Die Fotos des Hafens stammen aus Flensburg.",
+      "ru": "Фотографии гавани из Фленсбурга.",
+      "audio": "audio/a1355951b4ab.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-1",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 0,
+   "read": "Нет. Stadt остаётся женского рода, а der здесь указывает на Genitiv. Слово Bilder является главным, Stadt уточняет его. Сравните исходное die Stadt и группу der Stadt. Не определяйте род по одной форме артикля вне контекста: одинаковые формы могут выполнять разные падежные функции.",
+   "point": "Род не меняется из-за формы Genitiv.",
+   "question": "В «die Bilder der Stadt» Stadt стала мужского рода?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "die",
+         "text": "Die"
+        },
+        {
+         "key": "fotos",
+         "text": "Fotos"
+        },
+        {
+         "key": "des",
+         "text": "des"
+        },
+        {
+         "key": "hafens",
+         "text": "Hafens"
+        }
+       ],
+       [
+        {
+         "key": "stammen",
+         "text": "stammen"
+        }
+       ],
+       [
+        {
+         "key": "aus",
+         "text": "aus"
+        }
+       ],
+       [
+        {
+         "key": "flensburg",
+         "text": "Flensburg"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Die Fotos des Hafens stammen aus Flensburg.",
+      "ru": "Фотографии гавани из Фленсбурга.",
+      "audio": "audio/a1355951b4ab.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-2",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 1,
+   "read": "Нет. Можно сказать *Wir besuchten das Museum* или знакомое Perfekt и затем назвать следующее событие. Умение узнать источник не означает обязательное использование той же конструкции в каждом ответе. Но нельзя потерять сам музей, порядок или место и нельзя добавить его цену, если в тексте её нет.",
+   "point": "Узнать связь и сохранить смысл; форма пересказа может быть проще.",
+   "question": "Нужно ли при пересказе обязательно повторить «nach dem Besuch des Museums»?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "die",
+         "text": "Die"
+        },
+        {
+         "key": "fotos",
+         "text": "Fotos"
+        },
+        {
+         "key": "des",
+         "text": "des"
+        },
+        {
+         "key": "hafens",
+         "text": "Hafens"
+        }
+       ],
+       [
+        {
+         "key": "stammen",
+         "text": "stammen"
+        }
+       ],
+       [
+        {
+         "key": "aus",
+         "text": "aus"
+        }
+       ],
+       [
+        {
+         "key": "flensburg",
+         "text": "Flensburg"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Die Fotos des Hafens stammen aus Flensburg.",
+      "ru": "Фотографии гавани из Фленсбурга.",
+      "audio": "audio/a1355951b4ab.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "exam-article-1",
+   "step": "exam-article",
+   "stepTitle": "Drei Orte, verschiedene Erinnerungen",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Найдите место, автора впечатления и границы каждого вывода. Genitiv-группы помогают связать фотографии с городом, музеем или человеком. Но правильное распознавание формы не даёт права добавить недостающую цену. Для пяти ответов найдите конкретные фразы в источнике. Затем перескажите один абзац проще, сохранив его сведения.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "die",
+         "text": "Die"
+        },
+        {
+         "key": "fotos",
+         "text": "Fotos"
+        },
+        {
+         "key": "des",
+         "text": "des"
+        },
+        {
+         "key": "hafens",
+         "text": "Hafens"
+        }
+       ],
+       [
+        {
+         "key": "stammen",
+         "text": "stammen"
+        }
+       ],
+       [
+        {
+         "key": "aus",
+         "text": "aus"
+        }
+       ],
+       [
+        {
+         "key": "flensburg",
+         "text": "Flensburg"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Die Fotos des Hafens stammen aus Flensburg.",
+      "ru": "Фотографии гавани из Фленсбурга.",
+      "audio": "audio/a1355951b4ab.m4a"
+     }
+    ],
+    "task": "article"
+   }
+  },
+  {
+   "id": "exam-article-2",
+   "step": "exam-article",
+   "stepTitle": "Drei Orte, verschiedene Erinnerungen",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "die",
+         "text": "Die"
+        },
+        {
+         "key": "fotos",
+         "text": "Fotos"
+        },
+        {
+         "key": "des",
+         "text": "des"
+        },
+        {
+         "key": "hafens",
+         "text": "Hafens"
+        }
+       ],
+       [
+        {
+         "key": "stammen",
+         "text": "stammen"
+        }
+       ],
+       [
+        {
+         "key": "aus",
+         "text": "aus"
+        }
+       ],
+       [
+        {
+         "key": "flensburg",
+         "text": "Flensburg"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Die Fotos des Hafens stammen aus Flensburg.",
+      "ru": "Фотографии гавани из Фленсбурга.",
+      "audio": "audio/a1355951b4ab.m4a"
+     }
+    ],
+    "task": "article"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "die",
+         "text": "Die"
+        },
+        {
+         "key": "fotos",
+         "text": "Fotos"
+        },
+        {
+         "key": "des",
+         "text": "des"
+        },
+        {
+         "key": "hafens",
+         "text": "Hafens"
+        }
+       ],
+       [
+        {
+         "key": "stammen",
+         "text": "stammen"
+        }
+       ],
+       [
+        {
+         "key": "aus",
+         "text": "aus"
+        }
+       ],
+       [
+        {
+         "key": "flensburg",
+         "text": "Flensburg"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Die Fotos des Hafens stammen aus Flensburg.",
+      "ru": "Фотографии гавани из Фленсбурга.",
+      "audio": "audio/a1355951b4ab.m4a"
+     }
+    ],
+    "task": "article",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-sources-1",
+   "step": "exam-sources",
+   "stepTitle": "Drei Bildquellen · Ausschnitt",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Короткие заметки нужны для игрового сопоставления. Они не заменяют длинный текст чтения и не описывают весь регион. Назовите три разные линии: город и музей, гавань и разговор, пейзаж и личное впечатление. Если сведения нет, сохраните это отсутствие вместо правдоподобной догадки.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "die",
+         "text": "Die"
+        },
+        {
+         "key": "fotos",
+         "text": "Fotos"
+        },
+        {
+         "key": "des",
+         "text": "des"
+        },
+        {
+         "key": "hafens",
+         "text": "Hafens"
+        }
+       ],
+       [
+        {
+         "key": "stammen",
+         "text": "stammen"
+        }
+       ],
+       [
+        {
+         "key": "aus",
+         "text": "aus"
+        }
+       ],
+       [
+        {
+         "key": "flensburg",
+         "text": "Flensburg"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Die Fotos des Hafens stammen aus Flensburg.",
+      "ru": "Фотографии гавани из Фленсбурга.",
+      "audio": "audio/a1355951b4ab.m4a"
+     }
+    ],
+    "task": "sources"
+   }
+  },
+  {
+   "id": "exam-sources-2",
+   "step": "exam-sources",
+   "stepTitle": "Drei Bildquellen · Ausschnitt",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "die",
+         "text": "Die"
+        },
+        {
+         "key": "fotos",
+         "text": "Fotos"
+        },
+        {
+         "key": "des",
+         "text": "des"
+        },
+        {
+         "key": "hafens",
+         "text": "Hafens"
+        }
+       ],
+       [
+        {
+         "key": "stammen",
+         "text": "stammen"
+        }
+       ],
+       [
+        {
+         "key": "aus",
+         "text": "aus"
+        }
+       ],
+       [
+        {
+         "key": "flensburg",
+         "text": "Flensburg"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Die Fotos des Hafens stammen aus Flensburg.",
+      "ru": "Фотографии гавани из Фленсбурга.",
+      "audio": "audio/a1355951b4ab.m4a"
+     }
+    ],
+    "task": "sources"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "die",
+         "text": "Die"
+        },
+        {
+         "key": "fotos",
+         "text": "Fotos"
+        },
+        {
+         "key": "des",
+         "text": "des"
+        },
+        {
+         "key": "hafens",
+         "text": "Hafens"
+        }
+       ],
+       [
+        {
+         "key": "stammen",
+         "text": "stammen"
+        }
+       ],
+       [
+        {
+         "key": "aus",
+         "text": "aus"
+        }
+       ],
+       [
+        {
+         "key": "flensburg",
+         "text": "Flensburg"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Die Fotos des Hafens stammen aus Flensburg.",
+      "ru": "Фотографии гавани из Фленсбурга.",
+      "audio": "audio/a1355951b4ab.m4a"
+     }
+    ],
+    "task": "sources",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-interview-1",
+   "step": "exam-interview",
+   "stepTitle": "Zehn Aussagen zur Weitergabe von Erinnerungen",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Один разговор и десять утверждений требуют связать несколько реплик. Слушайте дважды, после своей попытки откройте текст. Различайте информацию о конкретном снимке и обобщение о всех местах. Формулировка «не сказано» здесь важна: отсутствие цены не означает бесплатный вход, а личный спокойный день не обещает такой же день каждому.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "die",
+         "text": "Die"
+        },
+        {
+         "key": "fotos",
+         "text": "Fotos"
+        },
+        {
+         "key": "des",
+         "text": "des"
+        },
+        {
+         "key": "hafens",
+         "text": "Hafens"
+        }
+       ],
+       [
+        {
+         "key": "stammen",
+         "text": "stammen"
+        }
+       ],
+       [
+        {
+         "key": "aus",
+         "text": "aus"
+        }
+       ],
+       [
+        {
+         "key": "flensburg",
+         "text": "Flensburg"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Die Fotos des Hafens stammen aus Flensburg.",
+      "ru": "Фотографии гавани из Фленсбурга.",
+      "audio": "audio/a1355951b4ab.m4a"
+     }
+    ],
+    "task": "interview"
+   }
+  },
+  {
+   "id": "exam-interview-2",
+   "step": "exam-interview",
+   "stepTitle": "Zehn Aussagen zur Weitergabe von Erinnerungen",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "die",
+         "text": "Die"
+        },
+        {
+         "key": "fotos",
+         "text": "Fotos"
+        },
+        {
+         "key": "des",
+         "text": "des"
+        },
+        {
+         "key": "hafens",
+         "text": "Hafens"
+        }
+       ],
+       [
+        {
+         "key": "stammen",
+         "text": "stammen"
+        }
+       ],
+       [
+        {
+         "key": "aus",
+         "text": "aus"
+        }
+       ],
+       [
+        {
+         "key": "flensburg",
+         "text": "Flensburg"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Die Fotos des Hafens stammen aus Flensburg.",
+      "ru": "Фотографии гавани из Фленсбурга.",
+      "audio": "audio/a1355951b4ab.m4a"
+     }
+    ],
+    "task": "interview"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "die",
+         "text": "Die"
+        },
+        {
+         "key": "fotos",
+         "text": "Fotos"
+        },
+        {
+         "key": "des",
+         "text": "des"
+        },
+        {
+         "key": "hafens",
+         "text": "Hafens"
+        }
+       ],
+       [
+        {
+         "key": "stammen",
+         "text": "stammen"
+        }
+       ],
+       [
+        {
+         "key": "aus",
+         "text": "aus"
+        }
+       ],
+       [
+        {
+         "key": "flensburg",
+         "text": "Flensburg"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Die Fotos des Hafens stammen aus Flensburg.",
+      "ru": "Фотографии гавани из Фленсбурга.",
+      "audio": "audio/a1355951b4ab.m4a"
+     }
+    ],
+    "task": "interview",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-opinions-1",
+   "step": "exam-opinions",
+   "stepTitle": "Stadt oder Landschaft?",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Передайте позицию героя и спросите о конкретном опыте партнёра. Не нужно выбирать победителя между городом и природой. Поясните, что важно лично вам, и приведите пример. В собственном разговоре можно использовать знакомые конструкции вместо сложных Genitiv-групп, если сохраняется понятный смысл.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "die",
+         "text": "Die"
+        },
+        {
+         "key": "fotos",
+         "text": "Fotos"
+        },
+        {
+         "key": "des",
+         "text": "des"
+        },
+        {
+         "key": "hafens",
+         "text": "Hafens"
+        }
+       ],
+       [
+        {
+         "key": "stammen",
+         "text": "stammen"
+        }
+       ],
+       [
+        {
+         "key": "aus",
+         "text": "aus"
+        }
+       ],
+       [
+        {
+         "key": "flensburg",
+         "text": "Flensburg"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Die Fotos des Hafens stammen aus Flensburg.",
+      "ru": "Фотографии гавани из Фленсбурга.",
+      "audio": "audio/a1355951b4ab.m4a"
+     }
+    ],
+    "task": "opinions"
+   }
+  },
+  {
+   "id": "exam-opinions-2",
+   "step": "exam-opinions",
+   "stepTitle": "Stadt oder Landschaft?",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "die",
+         "text": "Die"
+        },
+        {
+         "key": "fotos",
+         "text": "Fotos"
+        },
+        {
+         "key": "des",
+         "text": "des"
+        },
+        {
+         "key": "hafens",
+         "text": "Hafens"
+        }
+       ],
+       [
+        {
+         "key": "stammen",
+         "text": "stammen"
+        }
+       ],
+       [
+        {
+         "key": "aus",
+         "text": "aus"
+        }
+       ],
+       [
+        {
+         "key": "flensburg",
+         "text": "Flensburg"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Die Fotos des Hafens stammen aus Flensburg.",
+      "ru": "Фотографии гавани из Фленсбурга.",
+      "audio": "audio/a1355951b4ab.m4a"
+     }
+    ],
+    "task": "opinions"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "die",
+         "text": "Die"
+        },
+        {
+         "key": "fotos",
+         "text": "Fotos"
+        },
+        {
+         "key": "des",
+         "text": "des"
+        },
+        {
+         "key": "hafens",
+         "text": "Hafens"
+        }
+       ],
+       [
+        {
+         "key": "stammen",
+         "text": "stammen"
+        }
+       ],
+       [
+        {
+         "key": "aus",
+         "text": "aus"
+        }
+       ],
+       [
+        {
+         "key": "flensburg",
+         "text": "Flensburg"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Die Fotos des Hafens stammen aus Flensburg.",
+      "ru": "Фотографии гавани из Фленсбурга.",
+      "audio": "audio/a1355951b4ab.m4a"
+     }
+    ],
+    "task": "opinions",
+    "solved": true
+   }
+  }
+ ],
+ "exercises": [
+  {
+   "id": "b1-weitergeben-1",
+   "type": "choice",
+   "q": "die Fotos ___ Hafens",
+   "options": [
+    "dem",
+    "den",
+    "des"
+   ],
+   "answer": 2,
+   "why": "Genitiv мужского рода.",
+   "audio": "audio/bf5309f759a3.m4a"
+  },
+  {
+   "id": "b1-weitergeben-2",
+   "type": "choice",
+   "q": "die Bilder ___ Stadt",
+   "options": [
+    "die",
+    "dem",
+    "der"
+   ],
+   "answer": 2,
+   "why": "Genitiv женского рода.",
+   "audio": "audio/76f863481c0b.m4a"
+  },
+  {
+   "id": "b1-weitergeben-3",
+   "type": "choice",
+   "q": "die Eindrücke ___ Freunde",
+   "options": [
+    "der",
+    "denen",
+    "dem"
+   ],
+   "answer": 0,
+   "why": "Genitiv множественного.",
+   "audio": "audio/3c092e2dd149.m4a"
+  },
+  {
+   "id": "b1-weitergeben-4",
+   "type": "choice",
+   "q": "des ___",
+   "options": [
+    "Museum",
+    "Museen",
+    "Museums"
+   ],
+   "answer": 2,
+   "why": "Museum +s в этой группе.",
+   "audio": "audio/ad488fd9df9e.m4a"
+  },
+  {
+   "id": "b1-weitergeben-5",
+   "type": "choice",
+   "q": "der Stadt — род Stadt?",
+   "options": [
+    "Мужской",
+    "Стал средним",
+    "Женский"
+   ],
+   "answer": 2,
+   "why": "Род не меняется."
+  },
+  {
+   "id": "b1-weitergeben-6",
+   "type": "choice",
+   "q": "Цена не записана, значит бесплатно?",
+   "options": [
+    "Нет",
+    "Да",
+    "Только для друзей"
+   ],
+   "answer": 0,
+   "why": "Отсутствие факта не подтверждает нулевую цену."
+  },
+  {
+   "id": "b1-weitergeben-7",
+   "type": "order",
+   "de": "Die Fotos des Hafens stammen aus Flensburg.",
+   "ru": "Фотографии гавани из Фленсбурга.",
+   "audio": "audio/a1355951b4ab.m4a"
+  },
+  {
+   "id": "b1-weitergeben-8",
+   "type": "order",
+   "de": "Die Bilder der Stadt zeigen einen Teil des Ausflugs.",
+   "ru": "Снимки города показывают часть поездки.",
+   "audio": "audio/a140de2522d6.m4a"
+  },
+  {
+   "id": "b1-weitergeben-9",
+   "type": "order",
+   "de": "Wir nennen den Namen des Fotografen.",
+   "ru": "Мы назовём имя фотографа.",
+   "audio": "audio/b7589142bc47.m4a"
+  },
+  {
+   "id": "b1-weitergeben-10",
+   "type": "order",
+   "de": "Die Eindrücke der Freunde waren unterschiedlich.",
+   "ru": "Впечатления друзей различались.",
+   "audio": "audio/ae303ad7253d.m4a"
+  },
+  {
+   "id": "b1-weitergeben-11",
+   "type": "order",
+   "de": "Wir haben das Museum besucht.",
+   "ru": "Мы посетили музей.",
+   "audio": "audio/a4a014a3d640.m4a"
+  },
+  {
+   "id": "b1-weitergeben-12",
+   "type": "order",
+   "de": "Der Preis steht nicht in unseren Notizen.",
+   "ru": "Цена не указана в наших заметках.",
+   "audio": "audio/c079b1dcb2b6.m4a"
+  }
+ ],
+ "case": {
+  "title": "Ein schöner Ausschnitt ist nicht die ganze Region",
+  "ru": "Сверка дневника",
+  "intro": "Проверьте место, автора впечатления и недостающую деталь.",
+  "people": {},
+  "steps": [
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Die Fotos des Hafens stammen aus Flensburg.",
+      "ru": "Фотографии гавани из Фленсбурга."
+     }
+    ],
+    "question": "Они показывают гавань Любека?",
+    "options": [
+     "Да",
+     "Они из Raum C",
+     "Нет"
+    ],
+    "answer": 2,
+    "right": "Источник прямо называет Flensburg.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Der Preis des Eintritts steht nicht in den Notizen.",
+      "ru": "Цена входа не указана в заметках."
+     }
+    ],
+    "question": "Можно записать бесплатный вход?",
+    "options": [
+     "Только в воскресенье",
+     "Нет",
+     "Да"
+    ],
+    "answer": 1,
+    "right": "Отсутствие цены не равно нулю.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Dana beschreibt ihren ruhigen Spaziergang. Ein Freund mag lieber lebendige Städte.",
+      "ru": "Дана описывает свою спокойную прогулку. Другой друг предпочитает оживлённые города."
+     }
+    ],
+    "question": "Это противоречие, которое нужно устранить?",
+    "options": [
+     "Нет, разные личные впечатления",
+     "Да, один должен ошибаться",
+     "Нужно удалить оба рассказа"
+    ],
+    "answer": 0,
+    "right": "Мнения о разном личном опыте могут сосуществовать.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   }
+  ],
+  "ending": "Альбом передаёт источники и личные истории без выдуманной цены, перепутанного места и ложного общего правила."
+ },
+ "adventure": {
+  "kind": "sequence",
+  "title": "Соберите альбом без лишних выводов",
+  "intro": "Для финальной встречи друзья собирают подписи и короткие рассказы о регионе. В альбоме есть Любек, Фленсбург и воспоминание Даны о Люнебургской пустоши. Нужно понять, какие слова относятся друг к другу, кто выражает мнение и какую деталь нельзя добавлять без источника.",
+  "ending": "Фотографии сопоставлены с местами и источниками. Отсутствующая цена не придумана, разные впечатления сохранены. Альбом готов к разговору с гостями на финальной встрече.",
+  "challenges": [
+   {
+    "id": "groups",
+    "kind": "match",
+    "title": "К чему относится группа Genitiv?",
+    "intro": "Восстановите исходное слово зависимой группы.",
+    "success": "Род и число восстановлены без изменения смысла.",
+    "wrong": "Des — мужской/средний; der здесь женский или множественный.",
+    "options": [
+     {
+      "id": "museum",
+      "label": "das Museum"
+     },
+     {
+      "id": "city",
+      "label": "die Stadt"
+     },
+     {
+      "id": "friends",
+      "label": "die Freunde"
+     }
+    ],
+    "slots": [
+     {
+      "id": "museum",
+      "label": "des Museums",
+      "answer": "museum"
+     },
+     {
+      "id": "city",
+      "label": "der Stadt",
+      "answer": "city"
+     },
+     {
+      "id": "friends",
+      "label": "der Freunde",
+      "answer": "friends"
+     }
+    ]
+   },
+   {
+    "id": "harbor",
+    "kind": "order",
+    "title": "Сопоставьте гавань с местом",
+    "intro": "Соберите подтверждённую подпись.",
+    "success": "Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.",
+    "wrong": "Проверьте положение глагола и конец предложения: используйте все фрагменты.",
+    "tokens": [
+     "Die Fotos des Hafens",
+     "stammen",
+     "aus",
+     "Flensburg."
+    ],
+    "label": "Реплика для команды"
+   },
+   {
+    "id": "places",
+    "kind": "match",
+    "title": "Разделите три истории",
+    "intro": "Используйте заметки, а не близость фотографий в альбоме.",
+    "success": "Каждая история получила свой источник.",
+    "wrong": "Проверьте название места рядом с заметкой.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Lübeck: Fotos der Stadt, Besuch des Museums, danach Pause am Wasser. Kein Eintrittspreis notiert. Flensburg: Fotos des Hafens, kurzer Spaziergang, persönliches Gespräch im Café. Lüneburger Heide: Danas Bilder der Landschaft und ihr Eindruck eines ruhigen Spaziergangs. Diese Notizen nennen keine allgemeine Regel für jeden Besuch.",
+      "name": "Drei Bildquellen · Ausschnitt"
+     }
+    ],
+    "options": [
+     {
+      "id": "museum",
+      "label": "Museum und Pause am Wasser"
+     },
+     {
+      "id": "harbor",
+      "label": "Hafen und Cafégespräch"
+     },
+     {
+      "id": "landscape",
+      "label": "Danas ruhiger Spaziergang"
+     }
+    ],
+    "slots": [
+     {
+      "id": "l",
+      "label": "Lübeck",
+      "answer": "museum"
+     },
+     {
+      "id": "f",
+      "label": "Flensburg",
+      "answer": "harbor"
+     },
+     {
+      "id": "h",
+      "label": "Lüneburger Heide",
+      "answer": "landscape"
+     }
+    ]
+   },
+   {
+    "id": "unknown",
+    "kind": "select",
+    "title": "Как поступить с ценой музея?",
+    "intro": "В заметках цены нет.",
+    "success": "Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы одно из них.",
+    "wrong": "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание и адресата.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Lübeck: Fotos der Stadt, Besuch des Museums, danach Pause am Wasser. Kein Eintrittspreis notiert. Flensburg: Fotos des Hafens, kurzer Spaziergang, persönliches Gespräch im Café. Lüneburger Heide: Danas Bilder der Landschaft und ihr Eindruck eines ruhigen Spaziergangs. Diese Notizen nennen keine allgemeine Regel für jeden Besuch.",
+      "name": "Drei Bildquellen · Ausschnitt"
+     }
+    ],
+    "options": [
+     {
+      "id": "o0",
+      "label": "Сохранить: цена не указана"
+     },
+     {
+      "id": "o1",
+      "label": "Написать: бесплатно"
+     },
+     {
+      "id": "o2",
+      "label": "Придумать похожую цену другого музея"
+     }
+    ],
+    "answer": [
+     "o0"
+    ]
+   },
+   {
+    "id": "retell",
+    "kind": "negotiation",
+    "title": "Перескажите проще, сохранив факт",
+    "intro": "Гость просит объяснить подпись.",
+    "success": "Пересказ понятен и не добавляет недостающий факт.",
+    "wrong": "Упростите форму, но сохраните границы источника.",
+    "start": "a",
+    "nodes": [
+     {
+      "id": "a",
+      "text": "Gast: Ich verstehe „nach dem Besuch des Museums“ noch nicht. Was habt ihr gemacht?",
+      "choices": [
+       {
+        "label": "Wir haben das Museum besucht und saßen danach am Wasser.",
+        "next": "b",
+        "feedback": "Связь передана знакомой формой."
+       }
+      ]
+     },
+     {
+      "id": "b",
+      "text": "Gast: War der Eintritt kostenlos?",
+      "choices": [
+       {
+        "label": "Das steht nicht in unseren Notizen. Den Preis kann ich daraus nicht nennen.",
+        "next": "end",
+        "feedback": "Недостающая деталь не выдумана."
+       }
+      ]
+     },
+     {
+      "id": "end",
+      "text": "Gast: Danke. Dann weiß ich, was eure Quelle wirklich erzählt.",
+      "terminal": true,
+      "choices": []
+     }
+    ]
+   }
+  ]
+ },
+ "spy": []
+}

@@ -1,0 +1,691 @@
+id: b1-finale
+order: 20
+title: Wir haben es gemeinsam organisiert. Was bleibt für das nächste Mal?
+ru: Проводим встречу и передаём подтверждённый итог
+lede: Встреча FördeTreff состоялась в Raum C. Утром пошёл дождь, поэтому материалы привезли
+  автобусом; поезд Хауке пришёл вовремя. Теперь команда сверяет итог и вспоминает ключевые
+  действия дня. Нужно объяснить гостю альбом, сохранить роли и передать результат без лишних
+  обещаний.
+goals:
+  - Согласовать сведения из разных источников
+  - Понятно объяснить и уточнить в живом разговоре
+  - Отличить запланированное от выполненного
+  - Написать связный итог и совместно спланировать новое дело
+grammar:
+  - "Интеграция B1: объяснение, изменение, мнение и общий план"
+exam:
+  - b1-lesen-2
+  - b1-schreiben-1
+  - b1-sprechen-3
+dialogues:
+  scene:
+    title: Wir haben es gemeinsam organisiert. Was bleibt für das nächste Mal?
+    ru: Проводим встречу и передаём подтверждённый итог
+    place: Kiel · FördeTreff в Raum C · вымышленная учебная ситуация
+    people:
+      D:
+        name: Dana
+        voice: Anna
+      M:
+        name: Mateo
+        voice: Reed
+      E:
+        name: Elif
+        voice: Flo
+      H:
+        name: Hauke
+        voice: Rocko
+      G:
+        name: Lina
+        voice: Sandy
+    lines:
+      - H: Mein Zug war pünktlich. Ich habe den Schlüssel um halb drei abgeholt.
+        ru: Мой поезд пришёл вовремя. Я получил ключ в половине третьего.
+      - D: Am Nachmittag regnete es. Deshalb haben wir die Materialien mit dem Bus gebracht.
+        ru: Днём шёл дождь. Поэтому материалы привезли автобусом.
+      - E: Sowohl die Fotomappe als auch die Mehrwegbecher waren rechtzeitig in Raum C.
+        ru: И папка, и многоразовые стаканы были вовремя в помещенииC.
+      - M: Für Essen und Getränke haben wir zusammen dreißig Euro bezahlt.
+        ru: За еду и напитки вместе мы заплатили тридцать евро.
+      - G: Am Anfang verstand ich eine Bildunterschrift nicht. Danach konnte ich selbst eine Frage zur
+          Reise stellen.
+        ru: Сначала я не поняла одну подпись. Потом смогла сама задать вопрос о поездке.
+      - D: Die Hafenfotos kamen aus Flensburg. Die Bilder der Stadt zeigten Lübeck. Darüber haben wir
+          gesprochen.
+        ru: Фотографии гавани были из Фленсбурга, снимки города — из Любека. Об этом мы говорили.
+      - H: Wir haben den Raum um sechs verlassen und den Schlüssel um zehn nach sechs zurückgegeben.
+        ru: Мы вышли из помещения в шесть и вернули ключ в десять минут седьмого.
+      - E: Gut. Jetzt schreiben wir einen kurzen Rückblick und fragen, was wir beim nächsten Mal besser
+          machen können.
+        ru: Хорошо. Теперь напишем короткий итог и спросим, что можно улучшить в следующий раз.
+words:
+  useful:
+    title: Wörter für die Aufgabe
+    ru: Слова для действия
+    items:
+      - de: der Rückblick
+        ru: краткий итог, взгляд назад
+        pl: Rückblicke
+      - de: das Ergebnis
+        ru: результат
+        pl: Ergebnisse
+      - de: die Durchführung
+        ru: проведение
+        pl: Durchführungen
+      - de: die Abrechnung
+        ru: расчёт расходов
+        pl: Abrechnungen
+      - de: der Beleg
+        ru: подтверждающий документ, чек
+        pl: Belege
+      - de: die Rückmeldung
+        ru: обратная связь
+        pl: Rückmeldungen
+      - de: die Fortsetzung
+        ru: продолжение
+        pl: Fortsetzungen
+      - de: die Leihgabe
+        ru: вещь во временном пользовании
+        pl: Leihgaben
+      - de: tatsächlich erledigt
+        ru: действительно выполнено
+      - de: gemeinsam entscheiden
+        ru: решить вместе
+      - de: verständlich zusammenfassen
+        ru: понятно подвести итог
+      - de: aus eigener Erfahrung
+        ru: из собственного опыта
+      - de: eine Änderung erklären
+        ru: объяснить изменение
+      - de: eine Rückfrage stellen
+        ru: задать уточняющий вопрос
+      - de: für das nächste Mal
+        ru: для следующего раза
+tables:
+  rule:
+    title: "Интеграция B1: объяснение, изменение, мнение и общий план"
+    ru: Опора для решения
+    head:
+      - Beispiel
+      - Смысл и форма
+    ruCols:
+      - 1
+    rows:
+      - - Es regnete. Deshalb brachten wir die Materialien mit dem Bus.
+        - Причина и результат связывают рассказ.
+      - - Die Verwaltung hatte Raum C bestätigt. Danach fand der Treff dort statt.
+        - От подтверждения к проведённому событию — разные стадии.
+      - - Ich habe das so verstanden. Stimmt das?
+        - Уточнение и реакция важнее заученного монолога.
+tasks:
+  plan:
+    kind: message
+    part: b1-lesen-2
+    title: Plan vor der Öffnung · Ausschnitt
+    text: Raum C mit Küche, 18. Oktober 15–18 Uhr. Hauke holt den Schlüssel 14:30 und gibt ihn bis
+      18:15 zurück. Dana begrüßt die Gäste. Mateo organisiert Essen und Getränke. Elif bringt
+      Fotos und geliehene Becher. Bei Regen kommen die Materialien mit dem Bus. Gemeinsames
+      Aufräumen ab 17:40; Raum verlassen 18:00.
+  album:
+    kind: message
+    part: b1-lesen-2
+    title: Kleine Hilfe zum Album · Ausschnitt
+    text: "Lübeck: Stadtbilder, Museumsbesuch und Pause am Wasser. Flensburg: Hafenbilder und ein
+      persönliches Cafégespräch auf Deutsch. Lüneburger Heide: Danas Erinnerung an eine ruhige
+      Landschaft. Verschiedene persönliche Eindrücke dürfen nebeneinander stehen."
+  result:
+    kind: message
+    part: b1-lesen-2
+    title: Bestätigter Rückblick · Ausschnitt
+    text: "Der Treff fand in Raum C statt. Haukes Zug war pünktlich; er holte den Schlüssel 14:30.
+      Wegen des Regens wurden die Materialien mit dem Bus gebracht. Sowohl Mappe als auch
+      Becher waren da. Kosten: Raum mit Küche 40 Euro, Essen und Getränke 30 Euro,
+      Materialtransport 8 Euro. Die Becher waren eine kostenlose Leihgabe. Insgesamt 78 Euro
+      bei 80 Euro Budget. Der Raum wurde 18:00 verlassen, der Schlüssel 18:10 zurückgegeben;
+      Frist 18:15. Die geliehenen Becher werden wie vereinbart am Montag zurückgegeben."
+  write:
+    kind: message
+    part: b1-schreiben-1
+    title: Einem Freund vom Treff erzählen
+    text: Ihr Freund Jonas konnte nicht teilnehmen und fragt, wie der FördeTreff war. Antworten Sie
+      ihm.
+    points:
+      - Wo und wie der Treff stattgefunden hat
+      - Eine Änderung erklären und die Lösung nennen
+      - Ein konkretes Gespräch oder Erlebnis schildern
+      - Einen nächsten Schritt vorschlagen und nach seiner Meinung fragen
+    sample:
+      - Lieber Jonas, unser FördeTreff hat in Raum C im Nachbarschaftshaus stattgefunden. Die
+        kleine Küche war dabei sehr hilfreich. Am Nachmittag regnete es, deshalb brachten wir
+        die Fotos und Becher mit dem Bus. Haukes Zug war pünktlich, und er konnte den Schlüssel
+        wie geplant abholen. Besonders schön fand ich das Gespräch mit Lina über die Bilder.
+        Zuerst war eine Bildunterschrift unklar, danach erzählte sie von ihrer eigenen Reise.
+        Insgesamt haben wir 78 Euro ausgegeben und den Schlüssel rechtzeitig zurückgegeben.
+        Beim nächsten Mal könnten wir mehr Zeit für solche Gespräche einplanen. Was meinst du?
+        Hättest du Lust, dann mitzukommen? Viele Grüße Dana
+  talk:
+    kind: card
+    part: b1-sprechen-3
+    title: Ein neues Vorhaben ohne fertigen Musterplan
+    theme: Ein kleines Treffen für neue Nachbarn
+    word: Ziel · Termin · Aufgaben · Alternative · Bestätigung
+    situation: Planen Sie eine neue kleine Veranstaltung für Nachbarn. Eine Person hat
+      Samstagvormittag Zeit, die andere nur Sonntagnachmittag. Finden Sie gemeinsam einen
+      anderen passenden Zeitraum oder eine realistische Aufgabenverteilung. Sie dürfen nicht
+      einfach den alten Plan wiederholen.
+    roles:
+      - title: Person A
+        text: Sie können Samstagvormittag Materialien vorbereiten. Am Sonntag können Sie erst ab 16 Uhr
+          da sein. Sie möchten eine einfache Begrüßung und ein Gespräch über Fotos.
+      - title: Person B
+        text: Sie haben Sonntag 14–18 Uhr Zeit und könnten vorher den Raum öffnen. Am Samstag sind Sie
+          beschäftigt. Schlagen Sie einen gemeinsamen Beginn und eine Vorbereitung vor.
+steps:
+  - id: start
+    chapter: scene
+    title: Новое дело команды
+    beats:
+      - read: "Встреча FördeTreff состоялась в Raum C. Утром пошёл дождь, поэтому материалы привезли
+          автобусом; поезд Хауке пришёл вовремя. Теперь команда сверяет итог и вспоминает
+          ключевые действия дня. Нужно объяснить гостю альбом, сохранить роли и передать
+          результат без лишних обещаний. Все нужные условия даны в сцене: знания географии,
+          настоящих цен или расписаний не требуются. Сначала попробуйте понять, какого
+          результата добиваются друзья, затем слушайте реплики. На новом уровне важно не только
+          найти число или знакомое слово, но и связать несколько сведений."
+        point: Проводим встречу и передаём подтверждённый итог
+        set:
+          view: dialogue
+          dialogue: scene
+          reveal: 4
+      - read: "В финальной истории нет нового большого правила. Знакомые формы нужны для связного
+          результата: поезд был вовремя, дождь привёл к автобусу, материалы доставлены, ключ
+          возвращён. Сначала сопоставьте факты из плана и отчёта. Затем объясните их так, чтобы
+          человек, который не участвовал в подготовке, понял, что изменилось и чем закончился
+          день."
+        point: "Интеграция B1: объяснение, изменение, мнение и общий план"
+        set:
+          reveal: 8
+  - id: words
+    chapter: words
+    title: Слова, которые понадобятся
+    beats:
+      - read: Итог не должен превращаться ни в список случайных деталей, ни в обещание, что теперь всё
+          всегда будет легко. Назовите событие, одно изменение, решение и результат. Слова
+          отчёта помогают передать конкретный опыт и попросить обратную связь. Для следующей
+          встречи пригодятся не только удачные решения, но и понятный вопрос о том, что
+          участникам хочется изменить.
+        point: Сначала используйте слово для решения; словарь остаётся справочником.
+        set:
+          view: words
+          words: useful
+          reveal: 6
+      - read: "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к
+          ситуации: какие слова обозначают человека, место, условие или уже выполненное
+          действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово
+          встретится снова в записке или разговоре, попробуйте восстановить его смысл до
+          подсказки."
+        point: Возвращайтесь к выражениям в сообщениях и новых действиях.
+        set:
+          reveal: 15
+  - id: grammar
+    chapter: grammar
+    title: "Интеграция B1: объяснение, изменение, мнение и общий план"
+    beats:
+      - read: В итоговом рассказе не достаточно перечислить дождь и автобус рядом. Deshalb показывает,
+          как одно повлияло на другое. Здесь условный вариант из прошлой главы стал действием,
+          потому что дождь действительно начался. Поезд при этом пришёл вовремя, поэтому
+          запасной вариант с Даной не понадобился. Сохраняйте разные линии событий, не
+          объединяя их в одну общую «всё изменилось».
+        point: Причина и результат связывают рассказ.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: До встречи была договорённость, после неё появился факт проведения. Для нового читателя
+          полезно коротко назвать обе стадии и важное изменение помещения. Можно пользоваться
+          знакомым Perfekt или Präteritum. Не требуется собирать в одном предложении как можно
+          больше сложных форм. Задача — ясно передать порядок и результат, а не показать все
+          таблицы сразу.
+        point: От подтверждения к проведённому событию — разные стадии.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: "В разговоре с гостем нужно услышать непонятное место, ответить по источнику и проверить
+          понимание. Если гость добавляет личный опыт, задайте вопрос и отреагируйте на ответ.
+          В совместном плане после предложения требуется согласовать действия и роли. Эти
+          навыки возвращаются в самостоятельной работе: содержание там новое, поэтому готовая
+          реплика из этой сцены не заменит понимание."
+        point: Уточнение и реакция важнее заученного монолога.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+  - id: frames
+    chapter: grammar
+    title: Как устроена реплика
+    beats:
+      - read: Начало с результата связывает итоговый рассказ с причиной. Личный глагол после deshalb
+          остаётся на второй позиции, а место и объект добавляются в обычной рамке. Затем можно
+          отдельным предложением назвать доставленные материалы и участников. Связность
+          получается из понятных отношений между фразами, а не только из длины предложения.
+        point: "*Deshalb haben wir die Materialien mit dem Bus gebracht.*"
+        set:
+          view: sentence
+          rows:
+            - de:
+                - Deshalb
+                - haben wir
+                - die Materialien mit dem Bus
+                - gebracht.
+              ru: Поэтому мы привезли материалы автобусом.
+  - id: check
+    chapter: practice
+    title: Проверьте смысл до подсказки
+    beats:
+      - question: Условный запасной план с Даной точно был выполнен?
+        read: Нет. Он зависел от опоздания поезда. В итоговом сообщении Хауке говорит, что приехал
+          вовремя и получил ключ сам. Поэтому сам факт существования запасного варианта не
+          означает его использование. Для отчёта нужны результаты дня, а для следующего раза
+          полезно сохранить и подготовленную альтернативу.
+        point: Сработало условие дождя, но не условие задержки.
+        set:
+          view: table
+          table: rule
+      - question: Письмо об итоге должно перечислить все правила B1?
+        read: "Нет. Оно должно выполнить конкретную задачу: объяснить событие, изменение, опыт и
+          следующий шаг. Выбирайте формы, которые помогают передать этот смысл. В
+          самостоятельном письме раскройте четыре пункта и проверьте связность, обращение и
+          понятный результат. Количество использованных названий грамматических правил не
+          является целью разговора."
+        point: Формы служат смыслу и выполнению задачи.
+        set:
+          view: table
+          table: rule
+  - id: exam-plan
+    chapter: exam
+    title: Plan vor der Öffnung · Ausschnitt
+    beats:
+      - read: "Восстановите исходные роли и сроки. Это план до открытия, а не отчёт о выполнении. Он
+          пригодится для сравнения с результатом и для игрового распределения. Грамматические
+          формы знакомы: используйте их, чтобы не перепутать, кто получил ключ, кто встречал
+          гостей и какие действия зависели от дождя."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: plan
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: plan
+        set:
+          view: task
+          task: plan
+          solved: true
+  - id: exam-album
+    chapter: exam
+    title: Kleine Hilfe zum Album · Ausschnitt
+    beats:
+      - read: Эта короткая памятка помогает ответить новому гостю. Сопоставьте город, гавань и
+          ландшафт, затем объясните одну подпись своими словами. Не обязательно повторять
+          длинную Genitiv-группу. Важно сохранить место и дать собеседнику возможность задать
+          встречный вопрос или поделиться своим опытом.
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: album
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: album
+        set:
+          view: task
+          task: album
+          solved: true
+  - id: exam-result
+    chapter: exam
+    title: Bestätigter Rückblick · Ausschnitt
+    beats:
+      - read: Теперь сравните план с выполнением. Дождь подтвердился, задержка поезда — нет. Сумма
+          состоит из трёх названных расходов, кухня входит в аренду, стаканы получены бесплатно
+          во временное пользование. Возврат ключа выполнен в срок, возврат стаканов ещё
+          запланирован на понедельник. У этих действий разные статусы.
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: result
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: result
+        set:
+          view: task
+          task: result
+          solved: true
+  - id: exam-write
+    chapter: exam
+    title: Einem Freund vom Treff erzählen
+    beats:
+      - read: У друга нет всей переписки подготовки. Кратко объясните место, изменение и решение, затем
+          расскажите об одном разговоре и предложите следующий шаг. Все четыре пункта
+          обязательны. Не превращайте письмо в полный журнал расходов или список правил. После
+          черновика проверьте, поймёт ли человек историю без чтения предыдущих уроков.
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: write
+          reveal: 0
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: write
+          reveal: 0
+        set:
+          view: task
+          task: write
+          solved: true
+  - id: exam-talk
+    chapter: exam
+    title: Ein neues Vorhaben ohne fertigen Musterplan
+    beats:
+      - read: Новая ситуация требует переноса навыка. Участники имеют разные свободные часы, но общий
+          промежуток в воскресенье существует. Предложите подготовку, начало и распределение,
+          спросите, подходит ли это партнёру, и подтвердите итог. Не нужно переносить старые 18
+          гостей и 78 евро в новую задачу, где таких условий не дано.
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: talk
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: talk
+        set:
+          view: task
+          task: talk
+          solved: true
+exercises:
+  - type: choice
+    q: Es regnete. ___ nahmen wir den Bus.
+    options:
+      - Weil
+      - Deshalb
+      - Obwohl
+    answer: 1
+    why: Следствие в главной части.
+  - type: choice
+    q: Die Materialien ___ mit dem Bus gebracht.
+    options:
+      - wird
+      - wurden
+      - wurde
+    answer: 1
+    why: Прошлое Passiv, множественное.
+  - type: choice
+    q: Die Gäste, mit ___ wir sprachen.
+    options:
+      - den
+      - die
+      - denen
+    answer: 2
+    why: Mit Dativ множественного.
+  - type: choice
+    q: Wir hätten gern mehr Zeit, um ___.
+    options:
+      - gesprochen
+      - zu sprechen
+      - sprechen
+    answer: 1
+    why: Цель с umzu.
+  - type: choice
+    q: Ich werde morgen noch einmal ___.
+    options:
+      - fragte
+      - nachfragen
+      - nachgefragt
+    answer: 1
+    why: Futur I.
+  - type: choice
+    q: Die Becher werden am Montag zurückgegeben. Это…
+    options:
+      - Следующее запланированное действие
+      - Уже выполненный возврат
+      - Отмена встречи
+    answer: 0
+    why: По отчёту ключ вернули, а возврат стаканов ещё запланирован.
+  - type: order
+    de: Deshalb haben wir die Materialien mit dem Bus gebracht.
+    ru: Поэтому мы привезли материалы автобусом.
+  - type: order
+    de: Wir haben den Schlüssel rechtzeitig zurückgegeben.
+    ru: Мы вовремя вернули ключ.
+  - type: order
+    de: Die Hafenfotos stammen aus Flensburg.
+    ru: Фотографии гавани из Фленсбурга.
+  - type: order
+    de: Ich habe das so verstanden. Stimmt das?
+    ru: Я понял это так. Верно?
+  - type: order
+    de: Wir könnten mehr Zeit für Gespräche einplanen.
+    ru: Мы могли бы предусмотреть больше времени для разговоров.
+  - type: order
+    de: Was würdest du beim nächsten Mal ändern?
+    ru: Что ты изменил бы в следующий раз?
+case:
+  title: Was wurde wirklich abgeschlossen?
+  ru: Сверка дневника
+  intro: В финальной записи не смешивайте факт, срок и следующее действие.
+  people: {}
+  steps:
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Haukes Zug war pünktlich. Er holte den Schlüssel selbst.
+          ru: Поезд Хауке был вовремя. Он сам получил ключ.
+      question: Запасной вариант с Даной точно использовали?
+      options:
+        - Встречу отменили
+        - Нет
+        - Да
+      answer: 1
+      right: Условие задержки не наступило.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Raum 40, Essen und Getränke 30, Transport 8. Insgesamt 78. Budget 80.
+          ru: Зал 40, еда и напитки 30, транспорт 8. Всего 78. Бюджет 80.
+      question: Подтверждённые расходы в пределах бюджета?
+      options:
+        - Да, остаётся 2 евро
+        - Нет, 82
+        - Кухня оплачивается ещё раз
+      answer: 0
+      right: 40+30+8=78; кухня уже включена.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Schlüssel 18:10 zurück, Frist 18:15. Becher zurück am Montag geplant.
+          ru: Ключ вернули 18:10, срок 18:15. Стаканы запланировано вернуть в понедельник.
+      question: Что уже выполнено?
+      options:
+        - Возврат стаканов в понедельник
+        - Все будущие встречи
+        - Возврат ключа в срок
+      answer: 2
+      right: Возврат ключа подтверждён, стаканы ещё ждут следующего действия.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+  ending: Финальный итог сохраняет события, сумму и сроки. Дальше — новая ситуация, где понимание
+    придётся применить самостоятельно.
+adventure:
+  kind: sequence
+  title: Соедините план, разговор и подтверждённый результат
+  intro: Встреча FördeTreff состоялась в Raum C. Утром пошёл дождь, поэтому материалы привезли
+    автобусом; поезд Хауке пришёл вовремя. Теперь команда сверяет итог и вспоминает ключевые
+    действия дня. Нужно объяснить гостю альбом, сохранить роли и передать результат без лишних
+    обещаний.
+  ending: Встреча состоялась, сведения понятны новому гостю, расходы и возврат ключа сверены. У
+    команды есть не только воспоминания, но и конкретный вопрос для следующего совместного
+    дела.
+  challenges:
+    - id: room
+      kind: select
+      title: С чего начинается точная сверка?
+      intro: Сохраните действующее помещение.
+      mode: reading
+      clue:
+        task: plan
+      options:
+        - id: o0
+          label: Raum C с включённой кухней
+        - id: o1
+          label: Снова Raum B
+        - id: o2
+          label: Любой зал без подтверждения
+      answer:
+        - o0
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."
+    - id: roles
+      kind: match
+      title: Сохраните распределение
+      intro: Кто отвечает за действие по плану?
+      mode: reading
+      clue:
+        task: plan
+      slots:
+        - id: h
+          label: Hauke
+          answer: key
+        - id: d
+          label: Dana
+          answer: welcome
+        - id: m
+          label: Mateo
+          answer: food
+        - id: e
+          label: Elif
+          answer: photos
+      options:
+        - id: key
+          label: Schlüssel
+        - id: welcome
+          label: Begrüßung
+        - id: food
+          label: Essen und Getränke
+        - id: photos
+          label: Fotos und Becher
+      success: Роли соответствуют общему плану.
+      wrong: Сверьте каждое имя, а не только знакомое действие.
+    - id: guest
+      kind: negotiation
+      title: Помогите новому гостю включиться
+      intro: Лина хочет понять подпись и поделиться своей поездкой.
+      mode: reading
+      clue:
+        task: album
+      start: a
+      nodes:
+        - id: a
+          text: "Lina: Sind die Fotos des Hafens aus Lübeck?"
+          choices:
+            - label: Die Hafenfotos sind aus Flensburg. Die Stadtbilder zeigen Lübeck.
+              next: b
+              feedback: Места уточнены без сложного монолога.
+        - id: b
+          text: "Lina: Verstanden. Ich war einmal in einer ruhigen Landschaft. Die Heidebilder erinnern
+            mich daran."
+          choices:
+            - label: Was hat dir bei deinem Ausflug besonders gefallen?
+              next: c
+              feedback: Вы задаёте встречный вопрос вместо новой лекции.
+        - id: c
+          text: "Lina: Dass wir Zeit für eine lange Pause hatten."
+          choices:
+            - label: Das kenne ich. Man braucht nicht immer viele Ziele für einen schönen Tag.
+              next: end
+              feedback: Есть реакция на услышанный личный опыт.
+        - id: end
+          text: "Lina: Genau. Jetzt kann ich die Bilder mit meiner eigenen Erfahrung verbinden."
+          terminal: true
+          choices: []
+      success: Уточнение превратилось в взаимный разговор.
+      wrong: Ответьте на вопрос и отреагируйте на опыт гостя.
+    - id: key
+      kind: clock
+      title: Запишите фактическое время возврата
+      intro: Нужно выполненное время, а не крайний срок.
+      mode: reading
+      clue:
+        task: result
+      answer: 18:10
+      initial: 18:00
+      minuteStep: 5
+      success: Возврат 18:10 раньше срока 18:15.
+      wrong: Факт 18:10, срок 18:15.
+    - id: report
+      kind: pack
+      title: Что подтверждено в итоговой записи?
+      intro: Отберите четыре факта.
+      mode: reading
+      clue:
+        task: result
+      options:
+        - id: o0
+          label: Встреча прошла в C
+        - id: o1
+          label: Общие расходы 78 евро
+        - id: o2
+          label: Ключ вернули вовремя
+        - id: o3
+          label: Возврат стаканов запланирован на понедельник
+        - id: o4
+          label: Поезд опоздал
+        - id: o5
+          label: Стаканы уже возвращены в пятницу
+      answer:
+        - o0
+        - o1
+        - o2
+        - o3
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."

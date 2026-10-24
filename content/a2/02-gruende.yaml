@@ -1,0 +1,596 @@
+id: a2-gruende
+order: 2
+title: Warum fahren wir nach Eckernförde?
+ru: Выбор с объяснением
+lede: Для первой поездки команда выбирает пляж или кафе в Эккернфёрде. У друзей разные желания
+  и свободное время. Нужно не просто сказать «нет», а объяснить причину и предложить подходящий
+  вариант.
+goals:
+  - Понять, почему собеседнику не подходит предложение
+  - Соединить решение и причину с weil
+  - Сделать предложение и согласовать альтернативу
+  - Написать короткий ответ по трём выбранным пунктам
+grammar:
+  - "weil: причина и глагол в конце"
+exam:
+  - a2-lesen-2
+  - a2-schreiben-2
+  - a2-sprechen-3
+dialogues:
+  scene:
+    title: Warum fahren wir nach Eckernförde?
+    ru: Выбор с объяснением
+    place: Kiel · план поездки в Eckernförde · вымышленная учебная ситуация
+    people:
+      D:
+        name: Dana
+        voice: Anna
+      M:
+        name: Mateo
+        voice: Reed
+      E:
+        name: Elif
+        voice: Flo
+      H:
+        name: Hauke
+        voice: Rocko
+    lines:
+      - D: Fahren wir am Samstag nach Eckernförde?
+        ru: Поедем в субботу в Эккернфёрде?
+      - M: Am Samstag kann ich nicht, weil ich arbeiten muss.
+        ru: В субботу я не могу, потому что должен работать.
+      - E: Dann fahren wir am Sonntag. Möchtest du an den Strand?
+        ru: Тогда поедем в воскресенье. Хочешь на пляж?
+      - M: Ja, gern. Ich möchte aber auch ins Café, weil ich dort frühstücken möchte.
+        ru: Да, с удовольствием. Но хочу и в кафе, потому что хочу там позавтракать.
+      - H: Wir können zuerst frühstücken und danach spazieren gehen.
+        ru: Сначала можем позавтракать, потом погулять.
+      - D: Gut. Wir fahren mit dem Zug, weil wir kein Auto haben.
+        ru: Хорошо. Поедем поездом, потому что у нас нет машины.
+      - E: Und wann treffen wir uns?
+        ru: А когда встречаемся?
+      - H: Am Sonntag um neun am Bahnhof. Passt das?
+        ru: В воскресенье в девять у вокзала. Подходит?
+words:
+  useful:
+    title: Wörter für die Aufgabe
+    ru: Слова для действия
+    items:
+      - de: warum
+        ru: почему
+      - de: weil
+        ru: потому что
+      - de: der Grund
+        ru: причина
+        pl: Gründe
+      - de: der Vorschlag
+        ru: предложение
+        pl: Vorschläge
+      - de: passen
+        ru: подходить
+      - de: zusammen
+        ru: вместе
+      - de: zuerst
+        ru: сначала
+      - de: danach
+        ru: затем
+      - de: frühstücken
+        ru: завтракать
+      - de: spazieren gehen
+        ru: гулять
+      - de: absagen
+        ru: отменять, отказываться
+      - de: einverstanden
+        ru: согласен
+tables:
+  rule:
+    title: "weil: причина и глагол в конце"
+    ru: Опора для решения
+    head:
+      - Beispiel
+      - Смысл и форма
+    ruCols:
+      - 1
+    rows:
+      - - Ich kann nicht, weil ich arbeiten muss.
+        - После weil личная форма в конце.
+      - - Wir fahren mit dem Zug, weil wir kein Auto haben.
+        - Причина относится к выбранному действию.
+      - - Ich bleibe hier, denn ich muss arbeiten.
+        - После denn сохраняется обычный порядок.
+tasks:
+  plan:
+    kind: message
+    part: a2-lesen-2
+    title: Unser Sonntagsplan
+    from: Hauke
+    text: Mateo arbeitet am Samstag. Am Sonntag hat er frei. Dana möchte frühstücken, Elif möchte
+      spazieren gehen. Wir treffen uns am Sonntag um neun am Bahnhof. Zuerst gehen wir ins
+      Café, danach an den Strand. Alle Zeiten sind Beispiele für die Aufgabe.
+  letter:
+    kind: message
+    part: a2-schreiben-2
+    title: Antwort an Elif
+    situation: Elif fragt nach Ihrem Ausflug. Wählen Sie drei von vier Punkten. Schreiben Sie circa
+      40 Wörter, mit Anrede und Gruß.
+    from: Elif
+    text: Hallo! Kommen wir am Wochenende zusammen weg? Schreib mir bitte deinen Vorschlag!
+    choose: 3
+    points:
+      - Welcher Tag?
+      - Wohin?
+      - Warum dieses Ziel?
+      - Was mitbringen?
+    sample:
+      - Liebe Elif,
+      - ich möchte am Sonntag nach Eckernförde fahren, weil ich am Strand spazieren gehen
+        möchte. Danach können wir im Café frühstücken. Am Samstag muss ich arbeiten. Passt dir
+        der Ausflug? Sag mir bitte Bescheid.
+      - Viele Grüße
+  pair:
+    kind: worksheet
+    part: a2-sprechen-3
+    format: pair
+    title: Gemeinsam einen Ausflug planen
+    text: |-
+      Person A: Samstag frei, Sonntag erst ab 10 Uhr. Mag Cafés.
+      Person B: Samstag Arbeit, Sonntag frei. Mag Spaziergänge.
+      Finden Sie zusammen einen Tag, eine Uhrzeit und zwei Aktivitäten.
+    questions:
+      - prompt: Gemeinsamer Tag
+        answers:
+          - Sonntag
+          - am Sonntag
+      - prompt: Eine passende Uhrzeit
+        answers:
+          - 10:00
+          - 10 Uhr
+          - 11:00
+          - 11 Uhr
+          - 12:00
+          - 12 Uhr
+          - 13:00
+          - 13 Uhr
+          - 14:00
+          - 14 Uhr
+          - 15:00
+          - 15 Uhr
+          - 16:00
+          - 16 Uhr
+          - 17:00
+          - 17 Uhr
+          - 18:00
+          - 18 Uhr
+          - 19:00
+          - 19 Uhr
+          - 20:00
+          - 20 Uhr
+          - 21:00
+          - 21 Uhr
+          - 22:00
+          - 22 Uhr
+          - 23:00
+          - 23 Uhr
+steps:
+  - id: start
+    chapter: scene
+    title: Новое дело команды
+    beats:
+      - read: "Для первой поездки команда выбирает пляж или кафе в Эккернфёрде. У друзей разные желания
+          и свободное время. Нужно не просто сказать «нет», а объяснить причину и предложить
+          подходящий вариант. Все нужные условия даны в сцене: знания географии, настоящих цен
+          или расписаний не требуются. Сначала попробуйте понять, какого результата добиваются
+          друзья, затем слушайте реплики. На новом уровне важно не только найти число или
+          знакомое слово, но и связать несколько сведений."
+        point: Выбор с объяснением
+        set:
+          view: dialogue
+          dialogue: scene
+          reveal: 4
+      - read: "Матео отказывается не от поездки, а от субботы: причина — работа. Предложение
+          воскресенья учитывает это ограничение. Дальше друзья не выбирают между двумя
+          несовместимыми желаниями: завтрак и прогулка могут идти друг за другом. Слово *weil*
+          связывает желание или решение с причиной. Для игры важно сохранить и само действие, и
+          то, почему его выбрали."
+        point: "weil: причина и глагол в конце"
+        set:
+          reveal: 8
+  - id: words
+    chapter: words
+    title: Слова, которые понадобятся
+    beats:
+      - read: "Причина отвечает на *Warum?*. Уточнение *Passt das?* помогает проверить, согласен ли
+          собеседник. *Zuerst* и *danach* возвращаются из дневника: они позволяют совместить
+          два желания в один план. Эти слова полезны и без поездки — когда вы выбираете время
+          курса, встречу в кафе или день покупки продуктов."
+        point: Сначала используйте слово для решения; словарь остаётся справочником.
+        set:
+          view: words
+          words: useful
+          reveal: 6
+      - read: "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к
+          ситуации: какие слова обозначают человека, место, условие или уже выполненное
+          действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово
+          встретится снова в записке или разговоре, попробуйте восстановить его смысл до
+          подсказки."
+        point: Возвращайтесь к выражениям в сообщениях и новых действиях.
+        set:
+          reveal: 12
+  - id: grammar
+    chapter: grammar
+    title: "weil: причина и глагол в конце"
+    beats:
+      - read: "В главной части *Ich kann nicht* глагол стоит вторым. После *weil* порядок другой: *ich
+          arbeiten muss*. Личная форма *muss* завершает придаточное. Инфинитив *arbeiten* стоит
+          перед ней. Не переносите привычную рамку главного предложения без изменений. Запятая
+          помогает увидеть границу двух частей, а причина объясняет отказ."
+        point: После weil личная форма в конце.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: "Сама поездка и причина выбора транспорта — разные сведения. В этом сообщении отсутствие
+          машины объясняет поезд, а работа Матео объясняет отказ от субботы. Чтобы правильно
+          ответить, найдите связь целых частей. Одного узнавания *Auto* или *arbeiten*
+          недостаточно: важно, на какой вопрос отвечает причина."
+        point: Причина относится к выбранному действию.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: "*Denn* тоже может вводить причину, но за ним остаётся обычное *ich muss arbeiten*. Для
+          первого шага A2 сравнивайте две модели: *weil ich arbeiten muss* и *denn ich muss
+          arbeiten*. Не заменяйте союз механически, оставляя тот же порядок. В играх можно
+          опереться на короткие готовые причины, прежде чем строить свои."
+        point: После denn сохраняется обычный порядок.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+  - id: frames
+    chapter: grammar
+    title: Как устроена реплика
+    beats:
+      - read: "В первой части личная форма *kann* занимает вторую позицию. Во второй показана причина с
+          *weil*: *ich am Samstag arbeiten muss*. Последняя позиция принадлежит личной форме
+          модального глагола. Произнесите сначала короткое решение, потом причину. Когда это
+          получается, объедините их с запятой."
+        point: "*Ich kann nicht, weil ich arbeiten muss.*"
+        set:
+          view: sentence
+          rows:
+            - de:
+                - Ich
+                - kann
+                - nicht, weil ich arbeiten muss.
+                - ""
+              ru: Я не могу, потому что должен работать.
+  - id: check
+    chapter: practice
+    title: Проверьте смысл до подсказки
+    beats:
+      - question: Где стоит muss после weil?
+        read: "В конце: *weil ich arbeiten muss*. Если сказать *weil ich muss arbeiten*, получится
+          порядок главного предложения. В этой теме тренируем стандартную письменную модель.
+          После *denn* порядок другой: *denn ich muss arbeiten*. Сначала определите союз, затем
+          собирайте оставшуюся часть."
+        point: "*weil … arbeiten muss*, но *denn … muss arbeiten*."
+        set:
+          view: table
+          table: rule
+      - question: Отказ от субботы означает отказ от всей поездки?
+        read: Нет. Матео назвал ограничение субботы, а на воскресенье согласился. В живом разговоре
+          полезно предложить другой день и спросить *Passt das?*. Подходящий ответ сохраняет
+          общий замысел, но меняет условие, которое не устраивает собеседника.
+        point: Уточняйте ограничение и предлагайте альтернативу.
+        set:
+          view: table
+          table: rule
+  - id: exam-plan
+    chapter: exam
+    title: Unser Sonntagsplan
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: plan
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: plan
+        set:
+          view: task
+          task: plan
+          solved: true
+  - id: exam-letter
+    chapter: exam
+    title: Antwort an Elif
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: letter
+          reveal: 0
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: letter
+          reveal: 0
+        set:
+          view: task
+          task: letter
+          solved: true
+  - id: exam-pair
+    chapter: exam
+    title: Gemeinsam einen Ausflug planen
+    beats:
+      - read: "Сначала сыграйте обе роли или попросите напарника взять карточку B. Уточните свободное
+          время, предложите день и две совместимые активности. Поля проверяют лишь несколько
+          вариантов времени, а не качество устной речи. Допустимы и другие часы после десяти,
+          если оба участника согласны: произнесите полную договорённость."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: pair
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: pair
+        set:
+          view: task
+          task: pair
+          solved: true
+exercises:
+  - type: choice
+    q: Ich komme nicht, weil ich arbeiten ___.
+    options:
+      - muss
+      - müssen
+      - musst
+    answer: 0
+    why: Личная форма в конце.
+  - type: choice
+    q: Wir fahren mit dem Zug, ___ wir kein Auto haben.
+    options:
+      - weil
+      - aber
+      - und
+    answer: 0
+    why: Причина.
+  - type: choice
+    q: "После weil верно:"
+    options:
+      - ich arbeiten muss
+      - ich muss arbeiten
+      - muss ich arbeiten
+    answer: 0
+    why: Глагол в конце.
+  - type: choice
+    q: "После denn верно:"
+    options:
+      - ich muss arbeiten
+      - ich arbeiten muss
+      - arbeiten muss ich
+    answer: 0
+    why: Обычный порядок.
+  - type: choice
+    q: Am Sonntag ___ ich frei.
+    options:
+      - habe
+      - haben
+      - bin
+    answer: 0
+    why: "*frei haben*."
+  - type: choice
+    q: Passt ___ für dich?
+    options:
+      - das
+      - den
+      - dem
+    answer: 0
+    why: Готовый вопрос *Passt das?*.
+  - type: order
+    ru: Я не приду, потому что должен работать.
+    de: Ich komme nicht, weil ich arbeiten muss.
+  - type: order
+    ru: Мы едем поездом, потому что у нас нет машины.
+    de: Wir fahren mit dem Zug, weil wir kein Auto haben.
+  - type: order
+    ru: Сначала мы завтракаем в кафе.
+    de: Zuerst frühstücken wir im Café.
+  - type: order
+    ru: После этого мы гуляем.
+    de: Danach gehen wir spazieren.
+  - type: order
+    ru: В воскресенье у меня выходной.
+    de: Am Sonntag habe ich frei.
+  - type: order
+    ru: Тебе это подходит?
+    de: Passt das für dich?
+case:
+  title: Warum erst am Sonntag?
+  ru: Почему воскресенье
+  intro: В дневнике оказались две версии сообщения. Установите, что подтверждено первоисточником.
+    Вывод зависит от языка, а не от личности автора.
+  people: {}
+  steps:
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Ich fahre am Sonntag mit, weil ich am Samstag arbeiten muss.
+          ru: Я поеду в воскресенье, потому что в субботу должен работать.
+      question: Почему выбран другой день?
+      options:
+        - Работа в субботу
+        - Работа в воскресенье
+        - Нет поезда
+      answer: 0
+      right: Причина названа в придаточном с *weil*.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Zuerst gehen wir ins Café. Danach gehen wir an den Strand.
+          ru: Сначала идём в кафе. Затем на пляж.
+      question: Что запланировано?
+      options:
+        - Только кафе
+        - Оба занятия по очереди
+        - Выбор ещё не сделан
+      answer: 1
+      right: "*Zuerst / danach* объединяют занятия в последовательность."
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Wir fahren mit dem Zug, weil wir kein Auto haben.
+          ru: Мы едем поездом, потому что у нас нет машины.
+      question: Что объясняет отсутствие машины?
+      options:
+        - Выбор транспорта
+        - Отказ от кафе
+        - Погоду
+      answer: 0
+      right: Причина относится к главному предложению о поезде.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+  ending: Запись исправлена по источникам. В следующей главе команда воспользуется
+    подтверждёнными сведениями для нового решения.
+adventure:
+  kind: sequence
+  title: Согласуйте первый выходной
+  intro: Для первой поездки команда выбирает пляж или кафе в Эккернфёрде. У друзей разные желания
+    и свободное время. Нужно не просто сказать «нет», а объяснить причину и предложить
+    подходящий вариант.
+  ending: Воскресенье выбрано по общему времени, причины сохранены, завтрак и прогулка
+    объединены. Дальше нужно распределить вещи между участниками.
+  challenges:
+    - id: day
+      kind: select
+      title: Найдите общий день
+      intro: Учитывайте рабочий день Матео.
+      mode: reading
+      clue:
+        task: plan
+      options:
+        - id: o0
+          label: Samstag
+        - id: o1
+          label: Sonntag
+        - id: o2
+          label: Jeder Tag passt.
+      answer:
+        - o1
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."
+    - id: reason
+      kind: order
+      title: Объясните отказ
+      intro: "Соберите причину: «Я не могу, потому что должен работать»."
+      label: Реплика для команды
+      tokens:
+        - Ich kann nicht,
+        - weil
+        - ich arbeiten
+        - muss.
+      success: Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.
+      wrong: "Проверьте положение глагола и конец предложения: используйте все фрагменты."
+    - id: activities
+      kind: pack
+      title: Сохраните оба желания
+      intro: Выберите две активности из плана, не добавляя новое занятие.
+      mode: reading
+      clue:
+        task: plan
+      options:
+        - id: o0
+          label: im Café frühstücken
+        - id: o1
+          label: spazieren gehen
+        - id: o2
+          label: im Kino bleiben
+      answer:
+        - o0
+        - o1
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."
+    - id: agree
+      kind: negotiation
+      title: Предложите альтернативу
+      intro: Сначала выясните, почему не подходит суббота, затем предложите общий день и план.
+      success: Вы учли работу, предложили воскресенье и подтвердили две активности.
+      wrong: Учитывайте ограничение собеседника.
+      start: a
+      nodes:
+        - id: a
+          text: "Mateo: Am Samstag muss ich arbeiten."
+          choices:
+            - label: Dann fahren wir am Sonntag. Passt das?
+              next: b
+              feedback: Предложен день без названного ограничения.
+            - label: Wir fahren trotzdem am Samstag.
+              next: c
+              feedback: "Ограничение осталось: Матео работает."
+        - id: c
+          text: "Mateo: Am Samstag geht es wirklich nicht. Gibt es einen anderen Tag?"
+          choices:
+            - label: Ja, am Sonntag.
+              next: b
+              feedback: Вы изменили день.
+        - id: b
+          text: "Mateo: Sonntag passt. Ich möchte frühstücken."
+          choices:
+            - label: Zuerst frühstücken wir, danach gehen wir spazieren.
+              next: end
+              feedback: Два желания совместились.
+        - id: end
+          text: "Mateo: Einverstanden!"
+          terminal: true
+          choices: []
+    - id: confirm
+      kind: order
+      title: Подтвердите встречу
+      intro: "Начните со дня: «В воскресенье мы встречаемся у вокзала»."
+      label: Реплика для команды
+      tokens:
+        - Am Sonntag
+        - treffen
+        - wir uns
+        - am Bahnhof.
+      success: Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.
+      wrong: "Проверьте положение глагола и конец предложения: используйте все фрагменты."

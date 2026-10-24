@@ -1,0 +1,863 @@
+id: b1-aussichten
+order: 18
+title: Es wird wahrscheinlich regnen. Was ist schon bestätigt?
+ru: Различаем прогноз, план и подтверждение
+lede: Перед встречей Хауке проверяет поезд из Гамбурга, а Дана — подтверждение Raum C. Учебный
+  прогноз обещает вероятный дождь. Нужно подготовить запасной вариант доставки и получения
+  ключа, сохранив разницу между вероятностью и уже подтверждёнными условиями. Все данные
+  прогноза и расписания вымышлены.
+goals:
+  - Построить Futur I с инфинитивом
+  - Отличить Futur от Passiv по форме второго глагола
+  - Разделить прогноз, подтверждение и условный план
+  - Сообщить группе, что проверить ещё раз
+grammar:
+  - "Futur I: werden + Infinitiv; отличие от Passiv и статуса сведений"
+exam:
+  - b1-lesen-2
+  - b1-sprachbausteine-2
+  - b1-hoeren-3
+  - b1-schreiben-1
+dialogues:
+  scene:
+    title: Es wird wahrscheinlich regnen. Was ist schon bestätigt?
+    ru: Различаем прогноз, план и подтверждение
+    place: Hamburg / Kiel · накануне FördeTreff · вымышленная учебная ситуация
+    people:
+      D:
+        name: Dana
+        voice: Anna
+      M:
+        name: Mateo
+        voice: Reed
+      E:
+        name: Elif
+        voice: Flo
+      H:
+        name: Hauke
+        voice: Rocko
+    lines:
+      - H: Laut Vorhersage wird es morgen wahrscheinlich regnen.
+        ru: По прогнозу завтра, вероятно, будет дождь.
+      - D: Der Raum ist bestätigt. Der Treff beginnt um fünfzehn Uhr.
+        ru: Помещение подтверждено. Встреча начинается в пятнадцать.
+      - E: Wenn es regnet, bringen wir die Materialien mit dem Bus.
+        ru: Если пойдёт дождь, повезём материалы автобусом.
+      - M: Und bei trockenem Wetter bleiben beide Transportmöglichkeiten offen.
+        ru: А в сухую погоду оба способа доставки остаются доступными.
+      - H: Ich werde am Vormittag noch einmal die Zugverbindung prüfen.
+        ru: Утром я ещё раз проверю поезд.
+      - D: Wenn dein Zug verspätet ist, hole ich den Schlüssel ab. Sag mir rechtzeitig Bescheid.
+        ru: Если твой поезд опоздает, я заберу ключ. Сообщи мне заранее.
+      - E: Die Fotos werden heute geprüft. Ich melde mich danach bei der Gruppe.
+        ru: Фотографии сегодня проверяют. После этого я сообщу группе.
+      - H: Genau. Ich werde die Gruppe informieren, wenn ich neue Angaben habe.
+        ru: Верно. Я сообщу группе, когда у меня будут новые сведения.
+words:
+  useful:
+    title: Wörter für die Aufgabe
+    ru: Слова для действия
+    items:
+      - de: die Aussicht
+        ru: перспектива, ожидание
+        pl: Aussichten
+      - de: die Vorhersage
+        ru: прогноз
+        pl: Vorhersagen
+      - de: die Wahrscheinlichkeit
+        ru: вероятность
+        pl: Wahrscheinlichkeiten
+      - de: die Zugverbindung
+        ru: железнодорожное сообщение
+        pl: Zugverbindungen
+      - de: die Verspätung
+        ru: опоздание
+        pl: Verspätungen
+      - de: der Ersatzplan
+        ru: запасной план
+        pl: Ersatzpläne
+      - de: die Zusicherung
+        ru: заверение
+        pl: Zusicherungen
+      - de: der Stand
+        ru: текущее состояние
+        pl: Stände
+      - de: wahrscheinlich morgen
+        ru: вероятно завтра
+      - de: vielleicht später
+        ru: возможно позже
+      - de: voraussichtlich
+        ru: предположительно, по ожиданию
+      - de: noch einmal prüfen
+        ru: проверить ещё раз
+      - de: bei trockenem Wetter
+        ru: в сухую погоду
+      - de: rechtzeitig informieren
+        ru: заранее сообщить
+      - de: auf dem aktuellen Stand sein
+        ru: владеть актуальными сведениями
+tables:
+  rule:
+    title: "Futur I: werden + Infinitiv; отличие от Passiv и статуса сведений"
+    ru: Опора для решения
+    head:
+      - Beispiel
+      - Смысл и форма
+    ruCols:
+      - 1
+    rows:
+      - - Ich werde die Verbindung prüfen. Es wird regnen.
+        - "Futur I: личная форма werden + Infinitiv."
+      - - Die Fotos werden geprüft. / Wir werden die Fotos prüfen.
+        - "Passiv: Partizip II; Futur I: Infinitiv."
+      - - Der Treff beginnt morgen. / Morgen regnet es wahrscheinlich.
+        - Präsens тоже описывает будущее; статус зависит от контекста.
+tasks:
+  status:
+    kind: message
+    part: b1-lesen-2
+    title: Drei Arten von Angaben · Ausschnitt
+    text: "Bestätigung der Verwaltung: Raum C mit Küche, 18. Oktober 15–18 Uhr, 40 Euro. Schlüssel
+      ab 14:30. Unterrichtsprognose: Es wird wahrscheinlich regnen. Fahrplan im Lernfall:
+      Haukes Zug kommt planmäßig 13:50 in Kiel an; bisher keine Verspätungsmeldung. Bedingter
+      Plan: Wenn der Zug verspätet ist, holt Dana den Schlüssel. Bei Regen kommen die
+      Materialien mit dem Bus. Bei trockenem Wetter bleiben Bus und Fahrrad möglich. Hauke wird
+      morgens erneut prüfen und rechtzeitig informieren."
+  gaps:
+    kind: worksheet
+    part: b1-sprachbausteine-2
+    format: cloze
+    uniqueOptions: true
+    title: Zehn Lücken zum nächsten Tag
+    text: Liebe Nora, ich [[1]] die Gäste informieren. Der Treff [[2]] um 15 Uhr beginnen. Morgen
+      [[3]] wir die Angaben erneut prüfen. Laut Vorhersage wird es [[4]] regnen. [[5]] es
+      regnet, [[6]] nehmen wir für die Materialien den Bus. Wir fahren [[7]] dem Bus, [[8]] die
+      Mappe trocken bleiben soll. Ich frage am Morgen, [[9]] der Zug pünktlich ist. Es ist
+      wichtig, rechtzeitig [[10]] kommen. Viele Grüße, Hauke
+    questions:
+      - prompt: Lücke 1
+        options:
+          - werde
+          - wird
+          - werden
+          - wahrscheinlich
+          - Wenn
+          - dann
+          - mit
+          - weil
+          - ob
+          - zu
+          - den
+          - einen
+          - ohne
+          - zur
+          - als
+        answers:
+          - werde
+      - prompt: Lücke 2
+        options:
+          - werde
+          - wird
+          - werden
+          - wahrscheinlich
+          - Wenn
+          - dann
+          - mit
+          - weil
+          - ob
+          - zu
+          - den
+          - einen
+          - ohne
+          - zur
+          - als
+        answers:
+          - wird
+      - prompt: Lücke 3
+        options:
+          - werde
+          - wird
+          - werden
+          - wahrscheinlich
+          - Wenn
+          - dann
+          - mit
+          - weil
+          - ob
+          - zu
+          - den
+          - einen
+          - ohne
+          - zur
+          - als
+        answers:
+          - werden
+      - prompt: Lücke 4
+        options:
+          - werde
+          - wird
+          - werden
+          - wahrscheinlich
+          - Wenn
+          - dann
+          - mit
+          - weil
+          - ob
+          - zu
+          - den
+          - einen
+          - ohne
+          - zur
+          - als
+        answers:
+          - wahrscheinlich
+      - prompt: Lücke 5
+        options:
+          - werde
+          - wird
+          - werden
+          - wahrscheinlich
+          - Wenn
+          - dann
+          - mit
+          - weil
+          - ob
+          - zu
+          - den
+          - einen
+          - ohne
+          - zur
+          - als
+        answers:
+          - Wenn
+      - prompt: Lücke 6
+        options:
+          - werde
+          - wird
+          - werden
+          - wahrscheinlich
+          - Wenn
+          - dann
+          - mit
+          - weil
+          - ob
+          - zu
+          - den
+          - einen
+          - ohne
+          - zur
+          - als
+        answers:
+          - dann
+      - prompt: Lücke 7
+        options:
+          - werde
+          - wird
+          - werden
+          - wahrscheinlich
+          - Wenn
+          - dann
+          - mit
+          - weil
+          - ob
+          - zu
+          - den
+          - einen
+          - ohne
+          - zur
+          - als
+        answers:
+          - mit
+      - prompt: Lücke 8
+        options:
+          - werde
+          - wird
+          - werden
+          - wahrscheinlich
+          - Wenn
+          - dann
+          - mit
+          - weil
+          - ob
+          - zu
+          - den
+          - einen
+          - ohne
+          - zur
+          - als
+        answers:
+          - weil
+      - prompt: Lücke 9
+        options:
+          - werde
+          - wird
+          - werden
+          - wahrscheinlich
+          - Wenn
+          - dann
+          - mit
+          - weil
+          - ob
+          - zu
+          - den
+          - einen
+          - ohne
+          - zur
+          - als
+        answers:
+          - ob
+      - prompt: Lücke 10
+        options:
+          - werde
+          - wird
+          - werden
+          - wahrscheinlich
+          - Wenn
+          - dann
+          - mit
+          - weil
+          - ob
+          - zu
+          - den
+          - einen
+          - ohne
+          - zur
+          - als
+        answers:
+          - zu
+  notices:
+    kind: worksheet
+    part: b1-hoeren-3
+    format: article
+    title: Fünf Informationen vor dem Treff
+    recordings:
+      - voice: Shelley
+        text: Laut Vorhersage sind morgen Schauer wahrscheinlich. Am Vormittag kann es auch trocken
+          bleiben. Prüfen Sie den Stand noch einmal am Morgen. Die Aussage ist eine Erwartung,
+          keine Beobachtung des nächsten Tages.
+      - voice: Eddy
+        text: Nach dem aktuellen Fahrplan kommt der Zug um dreizehn Uhr fünfzig in Kiel an. Bisher
+          liegt keine Verspätungsmeldung vor. Hauke wird die Verbindung vor der Abfahrt erneut
+          prüfen.
+      - voice: Sandy
+        text: Ihre Buchung von Raum C bleibt bestätigt. Die Veranstaltung findet von fünfzehn bis
+          achtzehn Uhr statt. Den Schlüssel können Sie ab halb drei im Seitenbüro abholen. Der
+          Wetterbericht ändert diese Buchung nicht.
+      - voice: Flo
+        text: Ich werde die letzten Bildunterschriften heute noch prüfen. Danach melde ich mich bei der
+          Gruppe. Bitte markiert die Prüfung noch nicht als fertig, bevor meine Rückmeldung da
+          ist.
+      - voice: Anna
+        text: Wenn Haukes Zug verspätet ist, werde ich den Schlüssel holen. Wir haben diese Alternative
+          vereinbart. Im Moment gibt es aber noch keine Nachricht über eine tatsächliche
+          Verspätung.
+    questions:
+      - prompt: Der Wetterbericht garantiert Regen für den ganzen Tag.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Haukes Zug hat bereits eine bestätigte Verspätung.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Die Buchung bleibt von 15 bis 18 Uhr bestätigt.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+      - prompt: Elif hat die letzte Prüfung schon als abgeschlossen bestätigt.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Danas Schlüsselabholung ist an eine Bedingung geknüpft.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+  write:
+    kind: message
+    part: b1-schreiben-1
+    title: Die Gruppe vor dem nächsten Tag informieren
+    text: Schreiben Sie der Gruppe nach dem Gespräch. Noch gibt es weder beobachteten Regen noch
+      eine bestätigte Zugverspätung.
+    points:
+      - Die bestätigten Angaben zum Raum nennen
+      - Den Wetterausblick als Prognose erklären
+      - Die Bedingungen für Transport und Schlüssel darstellen
+      - Eine nächste Prüfung und Rückmeldung vereinbaren
+    sample:
+      - Hallo zusammen, Raum C mit Küche bleibt für morgen von 15 bis 18 Uhr bestätigt. Die
+        Miete beträgt 40 Euro, den Schlüssel bekommen wir ab 14:30. Laut Vorhersage wird es
+        wahrscheinlich regnen. Deshalb halten wir den Bus für den Materialtransport bereit. Bei
+        trockenem Wetter bleibt auch das Fahrrad möglich. Haukes Zug soll planmäßig um 13:50 in
+        Kiel ankommen. Wenn der Zug verspätet ist, holt unsere Freundin Dana den Schlüssel.
+        Bisher ist keine Verspätung gemeldet. Hauke wird am Vormittag noch einmal prüfen und
+        rechtzeitig Bescheid sagen. Bitte schreibt bis 13 Uhr, ob sich bei euch etwas ändert.
+        Viele Grüße Elif
+steps:
+  - id: start
+    chapter: scene
+    title: Новое дело команды
+    beats:
+      - read: "Перед встречей Хауке проверяет поезд из Гамбурга, а Дана — подтверждение Raum C. Учебный
+          прогноз обещает вероятный дождь. Нужно подготовить запасной вариант доставки и
+          получения ключа, сохранив разницу между вероятностью и уже подтверждёнными условиями.
+          Все данные прогноза и расписания вымышлены. Все нужные условия даны в сцене: знания
+          географии, настоящих цен или расписаний не требуются. Сначала попробуйте понять,
+          какого результата добиваются друзья, затем слушайте реплики. На новом уровне важно не
+          только найти число или знакомое слово, но и связать несколько сведений."
+        point: Различаем прогноз, план и подтверждение
+        set:
+          view: dialogue
+          dialogue: scene
+          reveal: 4
+      - read: "В одной переписке встречаются разные виды будущего и разная достоверность. Futur I
+          строится через werden и инфинитив: werde prüfen. Passiv Präsens использует werden и
+          причастие: werden geprüft. Но грамматическая форма сама не доказывает истинность
+          сообщения. Вероятность дождя видна из wahrscheinlich и ссылки на прогноз, а
+          подтверждение комнаты — из ответа администрации."
+        point: "Futur I: werden + Infinitiv; отличие от Passiv и статуса сведений"
+        set:
+          reveal: 8
+  - id: words
+    chapter: words
+    title: Слова, которые понадобятся
+    beats:
+      - read: Запасной план нужен до того, как произойдёт изменение. Если поезд опоздает, ключ получит
+          Дана; это ещё не означает, что поезд уже опаздывает. Если пойдёт дождь, материалы
+          повезут автобусом; сухая погода сохраняет обе прежние возможности. Язык помогает
+          подготовить действие без превращения предположения в уже случившийся факт.
+        point: Сначала используйте слово для решения; словарь остаётся справочником.
+        set:
+          view: words
+          words: useful
+          reveal: 6
+      - read: "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к
+          ситуации: какие слова обозначают человека, место, условие или уже выполненное
+          действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово
+          встретится снова в записке или разговоре, попробуйте восстановить его смысл до
+          подсказки."
+        point: Возвращайтесь к выражениям в сообщениях и новых действиях.
+        set:
+          reveal: 15
+  - id: grammar
+    chapter: grammar
+    title: "Futur I: werden + Infinitiv; отличие от Passiv и статуса сведений"
+    beats:
+      - read: Вторая часть рамки — инфинитив prüfen или regnen. Личную форму получает werden. Futur I
+          можно использовать для намерения, обещания или прогноза; его нельзя считать
+          автоматическим знаком гарантии. Сначала определите, кто и что сообщает. Для
+          уверенности нужны источник и формулировка, а не только слово wird в начале рамки.
+        point: "Futur I: личная форма werden + Infinitiv."
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: В первом примере фотографии являются предметом проверки, а geprüft — причастие. Во втором
+          мы собираемся проверять, prüfen — инфинитив. Оба предложения могут относиться по
+          смыслу к будущему времени, если это указано в контексте. Смотрите на форму и роль
+          участников. Не определяйте конструкцию только по слову werden или слову morgen.
+        point: "Passiv: Partizip II; Futur I: Infinitiv."
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: Для будущего часто достаточно Präsens и указания времени. Оно встречается и в
+          договорённости, и в предположении. Поэтому в игре подтверждение проверяется по ответу
+          администрации, а прогноз — по словам вероятности. Условие wenn описывает, что сделать
+          при определённом событии; оно ещё не доказывает, что событие уже наступило.
+        point: Präsens тоже описывает будущее; статус зависит от контекста.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+  - id: frames
+    chapter: grammar
+    title: Как устроена реплика
+    beats:
+      - read: Сначала назван действующий человек, затем личная форма werde и содержание будущего
+          действия. Инфинитив informieren завершает рамку. Эта фраза передаёт обещание
+          сообщить, но не сам факт отправки сообщения. Для отметки «группа уведомлена»
+          понадобится отдельное подтверждение выполненного действия. Это та же точность
+          статуса, которую вы уже применяли к брони и самовывозу.
+        point: "*Ich werde die Gruppe rechtzeitig informieren.*"
+        set:
+          view: sentence
+          rows:
+            - de:
+                - Ich
+                - werde
+                - die Gruppe rechtzeitig
+                - informieren.
+              ru: Я своевременно сообщу группе.
+  - id: check
+    chapter: practice
+    title: Проверьте смысл до подсказки
+    beats:
+      - question: Всё с morgen и werden — обязательно Futur I?
+        read: Нет. Morgen указывает время, а конструкция определяется второй частью глагольной рамки.
+          *Die Fotos werden morgen geprüft* — Passiv Präsens с причастием. *Wir werden die
+          Fotos morgen prüfen* — Futur I с инфинитивом. Обе фразы могут говорить о будущем
+          действии. Не смешивайте грамматическое время и значение будущего в конкретном
+          контексте.
+        point: Проверяем Infinitiv или Partizip II.
+        set:
+          view: table
+          table: rule
+      - question: Если Дана заберёт ключ при опоздании, поезд уже опаздывает?
+        read: Нет. Это условная договорённость на случай опоздания. Пока действует расписание, а Хауке
+          обещал проверить его утром. Чтобы записать реальную задержку, нужно новое сообщение о
+          ней. Условный план полезен именно потому, что готовит действие заранее, не выдавая
+          событие за произошедшее.
+        point: Условие ещё не подтверждённый факт.
+        set:
+          view: table
+          table: rule
+  - id: exam-status
+    chapter: exam
+    title: Drei Arten von Angaben · Ausschnitt
+    beats:
+      - read: Разделите три вида сведений по источнику. Подтверждение комнаты, прогноз погоды и
+          условный запасной план не являются одинаковыми фактами. Не определяйте достоверность
+          только по времени глагола. Для игры нужно сохранить и известное время, и условие
+          действия, и обещанную повторную проверку. Все исходные данные даны в этой учебной
+          карточке.
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: status
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: status
+        set:
+          view: task
+          task: status
+          solved: true
+  - id: exam-gaps
+    chapter: exam
+    title: Zehn Lücken zum nächsten Tag
+    beats:
+      - read: В банке есть разные личные формы werden. Согласуйте их с подлежащим и проверьте инфинитив
+          в конце. Затем восстановите условие, следствие и знакомые предлоги. Каждый вариант
+          используйте один раз. После заполнения перечитайте письмо и убедитесь, что вероятный
+          дождь не стал уже наблюдаемой погодой следующего дня.
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: gaps
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: gaps
+        set:
+          view: task
+          task: gaps
+          solved: true
+  - id: exam-notices
+    chapter: exam
+    title: Fünf Informationen vor dem Treff
+    beats:
+      - read: Пять сообщений содержат прогноз, расписание, подтверждение, обещание и условную
+          договорённость. Слушайте каждое дважды. Слова «пока» и «ещё» важны так же, как часы.
+          После самостоятельной попытки откройте учебный текст и объясните, почему конкретное
+          действие нельзя пометить выполненным или событие подтверждённым.
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: notices
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: notices
+        set:
+          view: task
+          task: notices
+          solved: true
+  - id: exam-write
+    chapter: exam
+    title: Die Gruppe vor dem nächsten Tag informieren
+    beats:
+      - read: Группе нужно знать, что уже установлено и что проверить утром. Все четыре пункта
+          обязательны. Сформулируйте условный вариант так, чтобы люди не решили, будто поезд
+          уже задерживается. Назовите ответственного за следующую проверку и срок обратной
+          связи. После черновика сравните факты письма с исходным сообщением.
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: write
+          reveal: 0
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: write
+          reveal: 0
+        set:
+          view: task
+          task: write
+          solved: true
+exercises:
+  - type: choice
+    q: Ich werde die Verbindung ___.
+    options:
+      - prüfen
+      - geprüft
+      - prüfte
+    answer: 0
+    why: Futur I с инфинитивом.
+  - type: choice
+    q: Die Verbindung wird ___.
+    options:
+      - geprüft
+      - prüfen
+      - prüfte
+    answer: 0
+    why: Passiv с причастием.
+  - type: choice
+    q: Wir ___ die Gruppe informieren.
+    options:
+      - werde
+      - werden
+      - wird
+    answer: 1
+    why: Wir werden.
+  - type: choice
+    q: Es wird ___ regnen.
+    options:
+      - wahrscheinlich
+      - den
+      - einen
+    answer: 0
+    why: Маркер вероятности.
+  - type: choice
+    q: Präsens с morgen может описать будущее?
+    options:
+      - Да
+      - Нет
+      - Только в Passiv
+    answer: 0
+    why: Время задаётся и контекстом.
+  - type: choice
+    q: Wenn der Zug verspätet ist — значит уже задержка?
+    options:
+      - Всегда
+      - Нет
+      - Да
+    answer: 1
+    why: Условие не подтверждает наступление.
+  - type: order
+    de: Ich werde die Gruppe rechtzeitig informieren.
+    ru: Я своевременно сообщу группе.
+  - type: order
+    de: Es wird wahrscheinlich regnen.
+    ru: Вероятно, будет дождь.
+  - type: order
+    de: Wir werden die Verbindung noch einmal prüfen.
+    ru: Мы ещё раз проверим поезд.
+  - type: order
+    de: Die Fotos werden heute geprüft.
+    ru: Фотографии сегодня проверяют.
+  - type: order
+    de: Wenn der Zug verspätet ist, holt Dana den Schlüssel.
+    ru: Если поезд опоздает, ключ получит Дана.
+  - type: order
+    de: Der Treff beginnt morgen um fünfzehn Uhr.
+    ru: Встреча начинается завтра в 15 часов.
+case:
+  title: Eine Erwartung ist noch kein beobachteter Tag
+  ru: Сверка дневника
+  intro: Проверьте источник, обещание и условие запасного варианта.
+  people: {}
+  steps:
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Es wird wahrscheinlich regnen.
+          ru: Вероятно, будет дождь.
+      question: Это наблюдение погоды уже прошедшего дня?
+      options:
+        - Нет, прогноз
+        - Да
+        - Подтверждение брони
+      answer: 0
+      right: Вероятность и будущее не описывают наблюдаемый результат.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Ich werde die Gruppe informieren.
+          ru: Я сообщу группе.
+      question: Группа уже уведомлена?
+      options:
+        - Да
+        - Сообщение отменено
+        - Нет, это обещание действия
+      answer: 2
+      right: Нужно подтверждение факта отправки.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Wenn der Zug verspätet ist, holt Dana den Schlüssel. Bisher keine Verspätungsmeldung.
+          ru: Если поезд опоздает, ключ получит Дана. Пока задержка не объявлена.
+      question: Как записать статус?
+      options:
+        - Отмена Raum C
+        - Условный запасной план
+        - Подтверждённое опоздание
+      answer: 1
+      right: Wenn задаёт условие, а второе сообщение сохраняет текущий статус.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+  ending: В дневнике сохранены подтверждённые условия и отдельно — прогнозы, обещания и действия
+    на случай изменения.
+adventure:
+  kind: sequence
+  title: Подготовьте завтра без выдуманных гарантий
+  intro: Перед встречей Хауке проверяет поезд из Гамбурга, а Дана — подтверждение Raum C. Учебный
+    прогноз обещает вероятный дождь. Нужно подготовить запасной вариант доставки и получения
+    ключа, сохранив разницу между вероятностью и уже подтверждёнными условиями. Все данные
+    прогноза и расписания вымышлены.
+  ending: Подтверждение, ожидание и условие разделены. Команда готова к возможному дождю и
+    задержке, но не записывает их как случившиеся события. Утренняя проверка и сообщение
+    назначены.
+  challenges:
+    - id: status
+      kind: match
+      title: Какой статус у сообщения?
+      intro: Опирайтесь на источник и слова вероятности.
+      mode: reading
+      clue:
+        task: status
+      slots:
+        - id: room
+          label: Raum C ist schriftlich bestätigt.
+          answer: confirmed
+        - id: weather
+          label: Es wird wahrscheinlich regnen.
+          answer: forecast
+        - id: key
+          label: Wenn der Zug spät ist, holt Dana den Schlüssel.
+          answer: condition
+      options:
+        - id: confirmed
+          label: подтверждённое условие
+        - id: forecast
+          label: прогноз
+        - id: condition
+          label: условный план
+      success: Разные типы сведений сохранены.
+      wrong: Вероятность и wenn не равны факту наступившего события.
+    - id: future
+      kind: order
+      title: Пообещайте следующую проверку
+      intro: Соберите Futur I с инфинитивом.
+      label: Реплика для команды
+      tokens:
+        - Ich
+        - werde
+        - die Verbindung noch einmal
+        - prüfen.
+      success: Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.
+      wrong: "Проверьте положение глагола и конец предложения: используйте все фрагменты."
+    - id: form
+      kind: match
+      title: Futur I или Passiv?
+      intro: Посмотрите на форму второго глагола.
+      slots:
+        - id: a
+          label: Wir werden die Fotos prüfen.
+          answer: future
+        - id: b
+          label: Die Fotos werden geprüft.
+          answer: passive
+        - id: c
+          label: Es wird regnen.
+          answer: future
+      options:
+        - id: future
+          label: Futur I · Infinitiv
+        - id: passive
+          label: Passiv · Partizip II
+      success: Определена вся рамка, а не одно слово werden.
+      wrong: Prüfen/regnen — инфинитивы; geprüft — причастие.
+    - id: known
+      kind: select
+      title: Что уже известно наверняка по источнику?
+      intro: Не превращайте предположение в факт.
+      mode: reading
+      clue:
+        task: status
+      options:
+        - id: o0
+          label: Raum C и время 15–18 подтверждены
+        - id: o1
+          label: Поезд уже опаздывает
+        - id: o2
+          label: Завтра весь день точно дождь
+      answer:
+        - o0
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."
+    - id: backup
+      kind: negotiation
+      title: Передайте условие без лишнего вывода
+      intro: Дана уточняет, когда ей понадобится получать ключ.
+      start: a
+      nodes:
+        - id: a
+          text: "Dana: Soll ich den Schlüssel jetzt in jedem Fall holen?"
+          choices:
+            - label: Nur wenn mein Zug verspätet ist. Bisher ist keine Verspätung gemeldet.
+              next: b
+              feedback: Сохранено условие и текущий статус.
+        - id: b
+          text: "Dana: Dann warte ich auf deine Nachricht. Wann prüfst du noch einmal?"
+          choices:
+            - label: Am Vormittag. Ich werde dir rechtzeitig Bescheid sagen.
+              next: end
+              feedback: Названы следующая проверка и уведомление.
+        - id: end
+          text: "Dana: Gut. Dann behandeln wir die Alternative noch nicht als eingetretenen Fall."
+          terminal: true
+          choices: []
+      success: План подготовлен без ложного сообщения о задержке.
+      wrong: Условие не должно стать уже свершившимся фактом.

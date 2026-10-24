@@ -4,7 +4,7 @@
  "order": 12,
  "title": "Wir sind nach Hamburg gefahren.",
  "ru": "Поездки, погода, даты",
- "lede": "Курс закончился, и Анна с Марко едут на выходные в Гамбург: номер в отеле, дождь и ветер, звонок из Лейпцига. Учимся рассказывать о поездке в прошлом, говорить о погоде и называть даты — и узнаём, когда в Perfekt нужен sein, а не haben.",
+ "lede": "Перед финалом Kieler Woche Дана и Матео вспоминают поездку в Гамбург в начале июня: отель, дождь, прогулка по порту и звонок Элиф из Киля. Помогите восстановить даты и события, понять объявление и закрыть историю неверных копий. Учимся Perfekt с *sein*, погоде и порядковым числам в датах.",
  "goals": [
   "Рассказать о поездке в прошлом и не перепутать haben и sein",
   "Поговорить о погоде — сегодня и вчера",
@@ -50,18 +50,18 @@
   "empfang": {
    "title": "Im Hotel Elbblick",
    "ru": "У стойки регистрации",
-   "place": "Hotel Elbblick, Hamburg",
+   "place": "Вымышленный Hotel Elbblick, Hamburg · воспоминание о начале июня",
    "people": {
     "K": {
      "name": "Herr Hansen",
      "voice": "Eddy"
     },
     "A": {
-     "name": "Anna",
+     "name": "Dana",
      "voice": "Anna"
     },
     "M": {
-     "name": "Marco",
+     "name": "Mateo",
      "voice": "Reed"
     }
    },
@@ -70,138 +70,138 @@
      "who": "K",
      "de": "Guten Abend! Willkommen im Hotel Elbblick.",
      "ru": "Добрый вечер! Добро пожаловать в отель «Эльбблик».",
-     "audio": "audio/67b035ece704.m4a"
+     "audio": "audio/3c998000a575.m4a"
     },
     {
      "who": "A",
      "de": "Guten Abend! Haben Sie noch zwei Einzelzimmer frei?",
      "ru": "Добрый вечер! У вас есть ещё два свободных одноместных номера?",
-     "audio": "audio/6160d6b8cbc8.m4a"
+     "audio": "audio/c183b9f6af03.m4a"
     },
     {
      "who": "K",
      "de": "Für wie viele Nächte?",
      "ru": "На сколько ночей?",
-     "audio": "audio/5e8127405d81.m4a"
+     "audio": "audio/5b9e711874a5.m4a"
     },
     {
      "who": "M",
      "de": "Für zwei Nächte, vom zweiten bis zum vierten Juni.",
      "ru": "На две ночи, со второго по четвёртое июня.",
-     "audio": "audio/552312c232d8.m4a"
+     "audio": "audio/e2932128efbc.m4a"
     },
     {
      "who": "K",
      "de": "Ja, das geht. Ein Einzelzimmer kostet 80 Euro pro Nacht, mit Frühstück.",
      "ru": "Да, это возможно. Одноместный номер стоит 80 евро за ночь, с завтраком.",
-     "audio": "audio/56640ba7f573.m4a"
+     "audio": "audio/ae776034c227.m4a"
     },
     {
      "who": "A",
      "de": "Gut, dann nehmen wir die Zimmer.",
      "ru": "Хорошо, тогда мы их берём.",
-     "audio": "audio/e62826945a7d.m4a"
+     "audio": "audio/701c8849d4aa.m4a"
     },
     {
      "who": "K",
      "de": "Wie war die Reise? Sind Sie mit dem Zug gekommen?",
      "ru": "Как доехали? Вы приехали на поезде?",
-     "audio": "audio/545aac4baecc.m4a"
+     "audio": "audio/74958cd7a9ca.m4a"
     },
     {
      "who": "M",
      "de": "Ja, aber der Zug ist erst um acht Uhr angekommen. Er hatte eine Stunde Verspätung.",
      "ru": "Да, но поезд прибыл только в восемь. Он опоздал на час.",
-     "audio": "audio/8f6df9a4665f.m4a"
+     "audio": "audio/c86cefa7461c.m4a"
     },
     {
      "who": "K",
      "de": "Oh, das tut mir leid! Hier sind Ihre Schlüssel – Zimmer 12 und 14.",
      "ru": "Ох, сочувствую! Вот ваши ключи — номера 12 и 14.",
-     "audio": "audio/9e42ca6c50e9.m4a"
+     "audio": "audio/b4bffdfe21ca.m4a"
     },
     {
      "who": "M",
      "de": "Vielen Dank! Bis morgen!",
      "ru": "Большое спасибо! До завтра!",
-     "audio": "audio/e98fdbb14775.m4a"
+     "audio": "audio/384c78c087ac.m4a"
     }
    ]
   },
   "telefon": {
-   "title": "Ein Anruf aus Leipzig",
-   "ru": "Звонок из Лейпцига",
+   "title": "Ein Anruf aus Kiel",
+   "ru": "Звонок из Киля",
    "place": "Am Telefon",
    "people": {
     "L": {
-     "name": "Lena",
-     "voice": "Shelley"
+     "name": "Elif",
+     "voice": "Flo"
     },
     "A": {
-     "name": "Anna",
+     "name": "Dana",
      "voice": "Anna"
     }
    },
    "lines": [
     {
      "who": "L",
-     "de": "Hallo, Anna! Na, wie ist es in Hamburg?",
-     "ru": "Привет, Анна! Ну как там, в Гамбурге?",
-     "audio": "audio/df3181bb8eb2.m4a"
+     "de": "Hallo, Dana! Na, wie ist es in Hamburg?",
+     "ru": "Привет, Дана! Ну как там, в Гамбурге?",
+     "audio": "audio/3dfdce39cae1.m4a"
     },
     {
      "who": "A",
      "de": "Super! Aber das Wetter ist nicht so gut. Es ist kalt und windig.",
      "ru": "Супер! Но погода не очень. Холодно и ветрено.",
-     "audio": "audio/948011edab3b.m4a"
+     "audio": "audio/4fcf412aed31.m4a"
     },
     {
      "who": "L",
-     "de": "Wirklich? Hier in Leipzig scheint die Sonne. Es sind 25 Grad!",
-     "ru": "Правда? А здесь, в Лейпциге, светит солнце. 25 градусов!",
-     "audio": "audio/74f764a1e468.m4a"
+     "de": "Wirklich? Hier in Kiel scheint die Sonne. Es sind 25 Grad!",
+     "ru": "Правда? А здесь, в Киле, светит солнце. 25 градусов!",
+     "audio": "audio/b467236b87a2.m4a"
     },
     {
      "who": "A",
      "de": "Und hier hat es heute Morgen geregnet. Wir haben einen Regenschirm gekauft.",
      "ru": "А здесь сегодня утром шёл дождь. Мы купили зонт.",
-     "audio": "audio/184ccb675466.m4a"
+     "audio": "audio/ac792ad03dd4.m4a"
     },
     {
      "who": "L",
      "de": "Was habt ihr gestern gemacht?",
      "ru": "А что вы делали вчера?",
-     "audio": "audio/0d0fc65d6125.m4a"
+     "audio": "audio/917721c93c2e.m4a"
     },
     {
      "who": "A",
      "de": "Wir sind am Abend angekommen und dann zum Hafen gegangen.",
      "ru": "Мы приехали вечером, а потом пошли в порт.",
-     "audio": "audio/a92e1d5ffae4.m4a"
+     "audio": "audio/95cb241beb8c.m4a"
     },
     {
      "who": "L",
      "de": "Und heute?",
      "ru": "А сегодня?",
-     "audio": "audio/aa1139f74e8b.m4a"
+     "audio": "audio/8470e76da384.m4a"
     },
     {
      "who": "A",
      "de": "Heute sind wir mit dem Schiff gefahren – zwei Stunden auf der Elbe!",
      "ru": "Сегодня мы катались на кораблике — два часа по Эльбе!",
-     "audio": "audio/3b39e4f1155b.m4a"
+     "audio": "audio/afdccf2732b5.m4a"
     },
     {
      "who": "L",
-     "de": "Toll! Kommt morgen gut nach Hause! Und viele Grüße an Marco!",
-     "ru": "Здорово! Хорошо вам доехать завтра! И привет Марко!",
-     "audio": "audio/19a321e6fd47.m4a"
+     "de": "Toll! Kommt morgen gut nach Hause! Und viele Grüße an Mateo!",
+     "ru": "Здорово! Хорошо вам доехать завтра! И привет Матео!",
+     "audio": "audio/0dcc87feda8f.m4a"
     },
     {
      "who": "A",
-     "de": "Danke, Lena! Tschüss!",
-     "ru": "Спасибо, Лена! Пока!",
-     "audio": "audio/676dfa8abda3.m4a"
+     "de": "Danke, Elif! Tschüss!",
+     "ru": "Спасибо, Элиф! Пока!",
+     "audio": "audio/182e3c0cfc7a.m4a"
     }
    ]
   }
@@ -217,7 +217,7 @@
      "gender": "f",
      "plural": "Reisen",
      "note": "Gute Reise!",
-     "audio": "audio/8d773e771207.m4a"
+     "audio": "audio/b3a026317520.m4a"
     },
     {
      "de": "der Urlaub",
@@ -225,7 +225,7 @@
      "gender": "m",
      "plural": "Urlaube",
      "note": "im Urlaub",
-     "audio": "audio/55776e97b0e1.m4a"
+     "audio": "audio/0dbbd7e28483.m4a"
     },
     {
      "de": "der Zug",
@@ -233,7 +233,7 @@
      "gender": "m",
      "plural": "Züge",
      "note": "mit dem Zug",
-     "audio": "audio/ce3401221cb9.m4a"
+     "audio": "audio/fbaed702927d.m4a"
     },
     {
      "de": "das Flugzeug",
@@ -241,21 +241,21 @@
      "gender": "n",
      "plural": "Flugzeuge",
      "note": "mit dem Flugzeug",
-     "audio": "audio/ef3862c82549.m4a"
+     "audio": "audio/83f2a473e5f0.m4a"
     },
     {
      "de": "der Flughafen",
      "ru": "аэропорт",
      "gender": "m",
      "plural": "Flughäfen",
-     "audio": "audio/d95983b42be7.m4a"
+     "audio": "audio/7fa45d941e7f.m4a"
     },
     {
      "de": "die Fahrkarte",
      "ru": "билет",
      "gender": "f",
      "plural": "Fahrkarten",
-     "audio": "audio/38ca470224e7.m4a"
+     "audio": "audio/298d90a0d52c.m4a"
     },
     {
      "de": "das Gleis",
@@ -263,7 +263,7 @@
      "gender": "n",
      "plural": "Gleise",
      "note": "von Gleis 12",
-     "audio": "audio/6f2b4fbced29.m4a"
+     "audio": "audio/cb93bec4ea43.m4a"
     },
     {
      "de": "die Verspätung",
@@ -271,21 +271,21 @@
      "gender": "f",
      "plural": "Verspätungen",
      "note": "20 Minuten Verspätung",
-     "audio": "audio/ecccc5e9ceda.m4a"
+     "audio": "audio/80ca79f40061.m4a"
     },
     {
      "de": "die Durchsage",
      "ru": "объявление по громкой связи",
      "gender": "f",
      "plural": "Durchsagen",
-     "audio": "audio/0d3ef27b67ee.m4a"
+     "audio": "audio/368b428df6fd.m4a"
     },
     {
      "de": "der Koffer",
      "ru": "чемодан",
      "gender": "m",
      "plural": "Koffer",
-     "audio": "audio/765fd4796104.m4a"
+     "audio": "audio/d649153223fe.m4a"
     }
    ]
   },
@@ -298,21 +298,21 @@
      "ru": "гостиница",
      "gender": "n",
      "plural": "Hotels",
-     "audio": "audio/71008fededfd.m4a"
+     "audio": "audio/65a034651aed.m4a"
     },
     {
      "de": "das Einzelzimmer",
      "ru": "одноместный номер",
      "gender": "n",
      "plural": "Einzelzimmer",
-     "audio": "audio/a2838a1ec0b8.m4a"
+     "audio": "audio/ede553af13a3.m4a"
     },
     {
      "de": "das Doppelzimmer",
      "ru": "двухместный номер",
      "gender": "n",
      "plural": "Doppelzimmer",
-     "audio": "audio/6b9b871b7ddf.m4a"
+     "audio": "audio/7ee9b3f92b07.m4a"
     },
     {
      "de": "die Person",
@@ -320,7 +320,7 @@
      "gender": "f",
      "plural": "Personen",
      "note": "für zwei Personen",
-     "audio": "audio/5cd07b1aad7d.m4a"
+     "audio": "audio/2c6d77345671.m4a"
     },
     {
      "de": "die Nacht",
@@ -328,7 +328,7 @@
      "gender": "f",
      "plural": "Nächte",
      "note": "80 Euro pro Nacht",
-     "audio": "audio/e5a286767406.m4a"
+     "audio": "audio/475dec7295cd.m4a"
     },
     {
      "de": "das Frühstück",
@@ -336,28 +336,28 @@
      "gender": "n",
      "plural": "Frühstücke",
      "note": "mit Frühstück",
-     "audio": "audio/7237d778814b.m4a"
+     "audio": "audio/60cf91c1b917.m4a"
     },
     {
      "de": "der Schlüssel",
      "ru": "ключ",
      "gender": "m",
      "plural": "Schlüssel",
-     "audio": "audio/b915be33dd86.m4a"
+     "audio": "audio/df9315794234.m4a"
     },
     {
      "de": "die Anreise",
      "ru": "приезд",
      "gender": "f",
      "plural": "Anreisen",
-     "audio": "audio/4111055fa091.m4a"
+     "audio": "audio/b90d8e121d20.m4a"
     },
     {
      "de": "die Abreise",
      "ru": "отъезд",
      "gender": "f",
      "plural": "Abreisen",
-     "audio": "audio/be115b776ebd.m4a"
+     "audio": "audio/a589c2905052.m4a"
     },
     {
      "de": "reservieren",
@@ -365,7 +365,7 @@
      "gender": null,
      "plural": null,
      "note": "hat reserviert – без ge-",
-     "audio": "audio/559c36d89e81.m4a"
+     "audio": "audio/3b0003a26f77.m4a"
     }
    ]
   },
@@ -380,7 +380,7 @@
      "plural": null,
      "noPlural": true,
      "note": "Wie ist das Wetter?",
-     "audio": "audio/ade1bdc3eecb.m4a"
+     "audio": "audio/61b4958dfdeb.m4a"
     },
     {
      "de": "Die Sonne scheint.",
@@ -388,7 +388,7 @@
      "gender": null,
      "plural": null,
      "note": "die Sonne",
-     "audio": "audio/531f2cd253dc.m4a"
+     "audio": "audio/e195c7f85385.m4a"
     },
     {
      "de": "Es regnet.",
@@ -396,7 +396,7 @@
      "gender": null,
      "plural": null,
      "note": "der Regen",
-     "audio": "audio/c698f9fcd252.m4a"
+     "audio": "audio/2f9e1753aedc.m4a"
     },
     {
      "de": "Es schneit.",
@@ -404,42 +404,42 @@
      "gender": null,
      "plural": null,
      "note": "der Schnee",
-     "audio": "audio/1fc207b8ef30.m4a"
+     "audio": "audio/6d8ac123f236.m4a"
     },
     {
      "de": "sonnig",
      "ru": "солнечно",
      "gender": null,
      "plural": null,
-     "audio": "audio/3dc7913e43fd.m4a"
+     "audio": "audio/72e31cb5863b.m4a"
     },
     {
      "de": "bewölkt",
      "ru": "облачно",
      "gender": null,
      "plural": null,
-     "audio": "audio/df9669ba3153.m4a"
+     "audio": "audio/be148c569f8d.m4a"
     },
     {
      "de": "windig",
      "ru": "ветрено",
      "gender": null,
      "plural": null,
-     "audio": "audio/3995d257d990.m4a"
+     "audio": "audio/4efbf61fb4a8.m4a"
     },
     {
      "de": "warm",
      "ru": "тепло",
      "gender": null,
      "plural": null,
-     "audio": "audio/92a527c18c0d.m4a"
+     "audio": "audio/9364c20f6ab6.m4a"
     },
     {
      "de": "kalt",
      "ru": "холодно",
      "gender": null,
      "plural": null,
-     "audio": "audio/a6a755d1056c.m4a"
+     "audio": "audio/ec448bc4e1df.m4a"
     },
     {
      "de": "Es sind 20 Grad.",
@@ -447,7 +447,7 @@
      "gender": null,
      "plural": null,
      "note": "Grad после числа не меняется",
-     "audio": "audio/2a570161b59f.m4a"
+     "audio": "audio/2ede520bbecc.m4a"
     },
     {
      "de": "der Regenschirm",
@@ -455,7 +455,7 @@
      "gender": "m",
      "plural": "Regenschirme",
      "note": "der Regen + der Schirm",
-     "audio": "audio/5e77b7a53395.m4a"
+     "audio": "audio/e5a47d9a62eb.m4a"
     }
    ]
   },
@@ -468,14 +468,14 @@
      "ru": "год",
      "gender": "n",
      "plural": "Jahre",
-     "audio": "audio/16ff9f052746.m4a"
+     "audio": "audio/2ab14b96ad42.m4a"
     },
     {
      "de": "die Jahreszeit",
      "ru": "время года",
      "gender": "f",
      "plural": "Jahreszeiten",
-     "audio": "audio/98a7416ff414.m4a"
+     "audio": "audio/dc1524f0a11d.m4a"
     },
     {
      "de": "der Frühling",
@@ -483,7 +483,7 @@
      "gender": "m",
      "plural": "Frühlinge",
      "note": "im Frühling",
-     "audio": "audio/b8fbd8bc7451.m4a"
+     "audio": "audio/02da405e5168.m4a"
     },
     {
      "de": "der Sommer",
@@ -491,7 +491,7 @@
      "gender": "m",
      "plural": "Sommer",
      "note": "im Sommer",
-     "audio": "audio/c63dcdeab476.m4a"
+     "audio": "audio/1d7c422f082f.m4a"
     },
     {
      "de": "der Herbst",
@@ -499,7 +499,7 @@
      "gender": "m",
      "plural": "Herbste",
      "note": "im Herbst",
-     "audio": "audio/9d27a94ebe53.m4a"
+     "audio": "audio/047e1ed136e2.m4a"
     },
     {
      "de": "der Winter",
@@ -507,7 +507,7 @@
      "gender": "m",
      "plural": "Winter",
      "note": "im Winter",
-     "audio": "audio/c12faecbc842.m4a"
+     "audio": "audio/55b9849d885b.m4a"
     },
     {
      "de": "der Monat",
@@ -515,7 +515,7 @@
      "gender": "m",
      "plural": "Monate",
      "note": "im Mai",
-     "audio": "audio/ae58eb1281fe.m4a"
+     "audio": "audio/5c079e194608.m4a"
     },
     {
      "de": "das Datum",
@@ -523,7 +523,7 @@
      "gender": "n",
      "plural": "Daten",
      "note": "Welches Datum ist heute?",
-     "audio": "audio/163020d257f9.m4a"
+     "audio": "audio/61f21ca9c205.m4a"
     },
     {
      "de": "der Geburtstag",
@@ -531,7 +531,7 @@
      "gender": "m",
      "plural": "Geburtstage",
      "note": "Ich habe im Mai Geburtstag.",
-     "audio": "audio/a6fe3bc4585f.m4a"
+     "audio": "audio/a5cad6901e31.m4a"
     },
     {
      "de": "das Wochenende",
@@ -539,14 +539,14 @@
      "gender": "n",
      "plural": "Wochenenden",
      "note": "am Wochenende",
-     "audio": "audio/b66d175e49c8.m4a"
+     "audio": "audio/9e5e18925cf3.m4a"
     },
     {
      "de": "die Ferien",
      "ru": "каникулы",
      "gender": "pl",
      "plural": null,
-     "audio": "audio/b9bb4f1306d2.m4a"
+     "audio": "audio/91f097f06359.m4a"
     }
    ]
   }
@@ -708,11 +708,11 @@
    "kind": "message",
    "part": "schreiben-2",
    "title": "Schreiben, Teil 2",
-   "situation": "Der Deutschkurs ist zu Ende. Frau Weber von der Sprachschule schreibt an alle im Kurs. Sie waren am Wochenende in Hamburg. Antworten Sie Frau Weber. Schreiben Sie zu jedem Punkt ein bis zwei Sätze (circa 30 Wörter). Vergessen Sie nicht die Anrede und den Gruß.",
-   "from": "Sabine Weber",
+   "situation": "Der Deutschkurs ist bald zu Ende. Frau Thomsen schreibt an alle im Kurs. Sie waren in Hamburg. Antworten Sie Frau Thomsen. Schreiben Sie zu jedem Punkt ein bis zwei Sätze (circa 30 Wörter). Vergessen Sie nicht die Anrede und den Gruß.",
+   "from": "Frau Thomsen",
    "to": "Kurs A1",
-   "subject": "Der Kurs ist zu Ende!",
-   "text": "Liebe Kursteilnehmerinnen und Kursteilnehmer,\nder Kurs ist zu Ende – vielen Dank! Wie war Ihr Wochenende? Was machen Sie im Sommer? Schreiben Sie mir!\nHerzliche Grüße\nSabine Weber",
+   "subject": "Bald ist der Kurs zu Ende",
+   "text": "Liebe Kursteilnehmerinnen und Kursteilnehmer,\nder Kurs ist bald zu Ende. Vielen Dank! Wie war Ihr Wochenende? Was machen Sie im Sommer? Schreiben Sie mir!\nHerzliche Grüße\nFrau Thomsen",
    "points": [
     "Wohin sind Sie gefahren?",
     "Wie war das Wetter?",
@@ -720,28 +720,28 @@
    ],
    "sample": [
     {
-     "de": "Liebe Frau Weber,",
-     "audio": "audio/88e901b36865.m4a"
+     "de": "Liebe Frau Thomsen,",
+     "audio": "audio/67446b1c8657.m4a"
     },
     {
-     "de": "Marco und ich sind am Wochenende mit dem Zug nach Hamburg gefahren.",
-     "audio": "audio/e187ac3c716f.m4a"
+     "de": "Mateo und ich sind am Wochenende mit dem Zug nach Hamburg gefahren.",
+     "audio": "audio/f1b74ee0954e.m4a"
     },
     {
      "de": "Das Wetter war leider nicht so gut. Es hat oft geregnet.",
-     "audio": "audio/676248dff809.m4a"
+     "audio": "audio/d42bf9894406.m4a"
     },
     {
-     "de": "Im Juli fliege ich nach Polen und besuche meine Familie.",
-     "audio": "audio/7bf123cda4d5.m4a"
+     "de": "Im Juli fahre ich nach Eckernförde und gehe zum Strand.",
+     "audio": "audio/9a94a9bf4e58.m4a"
     },
     {
      "de": "Viele Grüße",
-     "audio": "audio/68fa7e678d7f.m4a"
+     "audio": "audio/faf8fee74cb4.m4a"
     },
     {
-     "de": "Anna",
-     "audio": "audio/c548219baa72.m4a"
+     "de": "Dana",
+     "audio": "audio/0c86b3324c34.m4a"
     }
    ]
   },
@@ -749,16 +749,16 @@
    "kind": "form",
    "part": "schreiben-1",
    "title": "Zimmerreservierung – Hotel Elbblick",
-   "situation": "Marco Rossi und seine Schwester Giulia möchten im August nach Hamburg fahren. Sie kommen am 8. August an und fahren am 10. August zurück. Sie möchten zwei Einzelzimmer. Frühstück brauchen sie nicht – sie frühstücken gern im Café. Marco reserviert die Zimmer im Internet. Er braucht Ihre Hilfe. Füllen Sie das Formular aus.",
+   "situation": "Mateo Fernández und sein Freund Hauke möchten im August nach Hamburg fahren. Sie kommen am 8. August an und fahren am 10. August zurück. Sie möchten zwei Einzelzimmer. Frühstück brauchen sie nicht – sie frühstücken gern im Café. Mateo reserviert die Zimmer im Internet. Helfen Sie ihm mit dem Formular.",
    "fields": [
     {
      "label": "Familienname",
-     "value": "Rossi",
+     "value": "Fernández",
      "given": true
     },
     {
      "label": "Vorname",
-     "value": "Marco",
+     "value": "Mateo",
      "given": true
     },
     {
@@ -795,10 +795,18 @@
    "title": "Hören, Teil 2",
    "situation": "Sie sind am Hauptbahnhof in Hamburg und hören eine Durchsage. Ist die Aussage richtig oder falsch? Sie hören den Text einmal.",
    "voice": "Rocko",
-   "text": "Achtung an Gleis 8! Der Intercity nach Leipzig, Abfahrt 17 Uhr 46, fährt heute nicht von Gleis 8, sondern von Gleis 12 ab. Der Zug hat circa 20 Minuten Verspätung. Wir bitten um Entschuldigung.",
-   "statement": "Der Zug nach Leipzig fährt von Gleis 8 ab.",
+   "text": "Achtung an Gleis 8! Der Intercity nach Kiel, Abfahrt 17 Uhr 46, fährt heute nicht von Gleis 8, sondern von Gleis 12 ab. Der Zug hat circa 20 Minuten Verspätung. Wir bitten um Entschuldigung.",
+   "statement": "Der Zug nach Kiel fährt von Gleis 8 ab.",
    "answer": false,
-   "audio": "audio/da8fdfd9231f.m4a",
+   "audio": "audio/7ea6447c6b12.m4a",
+   "sample": []
+  },
+  "wetterplan": {
+   "kind": "message",
+   "part": "lesen-1",
+   "title": "Spaziergang in Hamburg",
+   "from": "Dana",
+   "text": "Heute ist es kalt und windig. Es hat am Morgen geregnet. Für den Spaziergang nehmen wir einen Regenschirm und eine Jacke mit. Die Sonnenbrille bleibt im Hotel.",
    "sample": []
   }
  },
@@ -809,7 +817,7 @@
    "stepTitle": "Вечер в отеле",
    "chapterIndex": 0,
    "indexInStep": 0,
-   "read": "Курс A1 позади, и Анна с Марко отмечают это поездкой: выходные в Гамбурге. Вечер пятницы, стойка регистрации в отеле. Номер заранее не забронирован, поэтому Анна спрашивает: *Haben Sie noch zwei Einzelzimmer frei?* — «у вас есть ещё два одноместных номера?» Марко называет даты: *vom zweiten bis zum vierten Juni* — «со второго по четвёртое июня». Числа здесь порядковые, как и в русском: «второе», а не «два».",
+   "read": "Перед финалом в Киле друзья рассматривают фотографии поездки в Гамбург в начале июня. Матео заранее согласовал свободные дни; обычный график работы из темы 11 не изменился. В воспоминании они спрашивают *Haben Sie noch zwei Einzelzimmer frei?* и называют *vom zweiten bis zum vierten Juni*. Отель, цена и расписание вымышлены. Июньская поездка и августовский бланк ниже — разные ситуации; даты нельзя переносить из одной в другую.",
    "point": "*Haben Sie noch ein Zimmer frei?* — есть свободный номер?",
    "scene": {
     "view": "dialogue",
@@ -833,7 +841,7 @@
    "stepTitle": "Вечер в отеле",
    "chapterIndex": 0,
    "indexInStep": 1,
-   "read": "Номер есть: *80 Euro pro Nacht, mit Frühstück*. Господин Хансен спрашивает о дороге: *Sind Sie mit dem Zug gekommen?* — «вы приехали на поезде?» Заметьте: не *haben*, а *sind*. Марко отвечает так же: *Der Zug ist erst um acht Uhr angekommen.* Глаголы движения строят Perfekt с *sein* — это главная грамматика темы. А опоздание — через знакомое *hatte*: *Er hatte eine Stunde Verspätung*, буквально «у него был час опоздания».",
+   "read": "Номер есть: *80 Euro pro Nacht, mit Frühstück*. Господин Хансен спрашивает о дороге: *Sind Sie mit dem Zug gekommen?* — «вы приехали на поезде?» Заметьте: не *haben*, а *sind*. Матео отвечает так же: *Der Zug ist erst um acht Uhr angekommen.* Глаголы движения строят Perfekt с *sein* — это главная грамматика темы. А опоздание — через знакомое *hatte*: *Er hatte eine Stunde Verspätung*, буквально «у него был час опоздания».",
    "point": "Движение в прошлом — с *sein*: *Sind Sie mit dem Zug gekommen?*",
    "scene": {
     "view": "dialogue",
@@ -857,10 +865,10 @@
   {
    "id": "telefon-1",
    "step": "telefon",
-   "stepTitle": "Звонок из Лейпцига",
+   "stepTitle": "Звонок Элиф из Киля",
    "chapterIndex": 0,
    "indexInStep": 0,
-   "read": "В субботу Анне звонит подруга из Лейпцига, Лена. Первым делом — погода. В Гамбурге *kalt und windig*, а в Лейпциге светит солнце: *Hier in Leipzig scheint die Sonne.* Обратите внимание на *Es ist kalt*: по-русски просто «холодно», а у немецкой фразы обязательно есть подлежащее — маленькое *es*. И *Es sind 25 Grad* — глагол во множественном числе, потому что градусов много.",
+   "read": "На следующий день Элиф звонит Дане из Киля. В Гамбурге *kalt und windig*, а в её рассказе о Киле *Hier in Kiel scheint die Sonne. Es sind 25 Grad!* Это погода учебной сцены, не прогноз. Для безличного «холодно» используем *Es ist kalt*. После *heute* местоимение сохраняется: *Heute ist es kalt*. Не обобщайте погоду одного дня на весь город или сезон.",
    "point": "*Es ist kalt.* — «холодно»: без *es* по-немецки нельзя",
    "scene": {
     "view": "dialogue",
@@ -880,10 +888,10 @@
   {
    "id": "telefon-2",
    "step": "telefon",
-   "stepTitle": "Звонок из Лейпцига",
+   "stepTitle": "Звонок Элиф из Киля",
    "chapterIndex": 0,
    "indexInStep": 1,
-   "read": "Потом Анна рассказывает, что было, — и тут слушайте вспомогательный глагол. *Es hat geregnet*, *wir haben einen Regenschirm gekauft* — с *haben*, как в прошлой теме. Но *wir sind angekommen*, *wir sind zum Hafen gegangen*, *wir sind mit dem Schiff gefahren* — с *sein*. Почему одни глаголы выбирают *haben*, а другие *sein*, разберём в грамматике. А *Kommt morgen gut nach Hause!* — повелительное наклонение на *ihr*.",
+   "read": "Потом Дана рассказывает, что было, — и тут слушайте вспомогательный глагол. *Es hat geregnet*, *wir haben einen Regenschirm gekauft* — с *haben*, как в прошлой теме. Но *wir sind angekommen*, *wir sind zum Hafen gegangen*, *wir sind mit dem Schiff gefahren* — с *sein*. Почему одни глаголы выбирают *haben*, а другие *sein*, разберём в грамматике. А *Kommt morgen gut nach Hause!* — повелительное наклонение на *ihr*.",
    "point": "*hat geregnet*, *haben gekauft* — но *sind gegangen*, *sind gefahren*",
    "scene": {
     "view": "dialogue",
@@ -968,7 +976,7 @@
    "stepTitle": "Perfekt с sein",
    "chapterIndex": 2,
    "indexInStep": 0,
-   "read": "Perfekt с *haben* вы уже знаете: *Wir haben im Hotel gefrühstückt.* Но о поездке Анна говорит *Wir sind nach Hamburg gefahren.* Рамка та же: вспомогательный глагол на втором месте, причастие в самом конце. Меняется только вспомогательный глагол — с глаголами движения это *sein*. По-русски «мы поехали» — одно слово, а по-немецки — два, и между ними помещается вся середина предложения.",
+   "read": "Perfekt с *haben* вы уже знаете: *Wir haben im Hotel gefrühstückt.* Но о поездке Дана говорит *Wir sind nach Hamburg gefahren.* Рамка та же: вспомогательный глагол на втором месте, причастие в самом конце. Меняется только вспомогательный глагол — с глаголами движения это *sein*. По-русски «мы поехали» — одно слово, а по-немецки — два, и между ними помещается вся середина предложения.",
    "point": "Perfekt: *haben* или *sein* на 2-м месте + причастие в конце",
    "scene": {
     "view": "sentence",
@@ -1009,7 +1017,7 @@
       "punct": ".",
       "plain": "Wir haben im Hotel gefrühstückt.",
       "ru": "Мы позавтракали в отеле.",
-      "audio": "audio/6b8c2e4a34f3.m4a"
+      "audio": "audio/1b9cadcbfa1e.m4a"
      },
      {
       "slots": [
@@ -1045,7 +1053,7 @@
       "punct": ".",
       "plain": "Wir sind nach Hamburg gefahren.",
       "ru": "Мы поехали в Гамбург.",
-      "audio": "audio/91e96a67c0fa.m4a"
+      "audio": "audio/4090cfa66d69.m4a"
      }
     ]
    }
@@ -1097,7 +1105,7 @@
       "punct": ".",
       "plain": "Wir haben im Hotel gefrühstückt.",
       "ru": "Мы позавтракали в отеле.",
-      "audio": "audio/6b8c2e4a34f3.m4a"
+      "audio": "audio/1b9cadcbfa1e.m4a"
      },
      {
       "slots": [
@@ -1153,7 +1161,7 @@
       "punct": ".",
       "plain": "Am Freitag sind wir mit dem Zug nach Hamburg gefahren.",
       "ru": "В пятницу мы поехали в Гамбург на поезде.",
-      "audio": "audio/66c92ae6d3ae.m4a"
+      "audio": "audio/b02f27319cd5.m4a"
      }
     ],
     "focus": [
@@ -1167,8 +1175,8 @@
    "stepTitle": "haben или sein?",
    "chapterIndex": 2,
    "indexInStep": 0,
-   "read": "Как понять, какой глагол нужен? Правило для A1: *sein* — если человек перемещается из точки А в точку Б: *fahren*, *fliegen*, *gehen*, *ankommen*. Или если меняется состояние: *aufstehen* — лежал, а теперь на ногах. И одно исключение, его нужно просто запомнить: *bleiben* — «оставаться». Все остальные глаголы — *machen*, *kaufen* и даже погода *regnen* — идут с *haben*.",
-   "point": "*sein* — движение и смена состояния, плюс *bleiben*; остальное — *haben*",
+   "read": "Для показанных глаголов есть полезная опора: перемещение в другое место — *ist gefahren*, *ist gegangen*, *ist angekommen*; изменение состояния — *ist aufgestanden*. Отдельно запоминаем *ist geblieben*. Остальные глаголы этой таблицы — *hat gemacht*, *hat gekauft*, *hat geregnet*. Это рабочая схема для наших примеров A1, а не правило без исключений обо всех немецких глаголах. В игре нужно восстановить целые события поездки.",
+   "point": "В наших примерах: *ist gefahren / gegangen / geblieben*, но *hat gekauft / geregnet*",
    "scene": {
     "view": "table",
     "dialogue": "telefon",
@@ -1208,7 +1216,7 @@
       "punct": ".",
       "plain": "Wir haben im Hotel gefrühstückt.",
       "ru": "Мы позавтракали в отеле.",
-      "audio": "audio/6b8c2e4a34f3.m4a"
+      "audio": "audio/1b9cadcbfa1e.m4a"
      },
      {
       "slots": [
@@ -1264,7 +1272,7 @@
       "punct": ".",
       "plain": "Am Freitag sind wir mit dem Zug nach Hamburg gefahren.",
       "ru": "В пятницу мы поехали в Гамбург на поезде.",
-      "audio": "audio/66c92ae6d3ae.m4a"
+      "audio": "audio/b02f27319cd5.m4a"
      }
     ],
     "table": "hilfsverb"
@@ -1325,7 +1333,7 @@
       "punct": ".",
       "plain": "Der Zug kommt um acht Uhr an.",
       "ru": "Поезд прибывает в восемь часов.",
-      "audio": "audio/4faec02c36cb.m4a"
+      "audio": "audio/bfdc5ae3c736.m4a"
      }
     ],
     "table": "hilfsverb"
@@ -1386,7 +1394,7 @@
       "punct": ".",
       "plain": "Der Zug ist um acht Uhr angekommen.",
       "ru": "Поезд прибыл в восемь часов.",
-      "audio": "audio/32b241d25da9.m4a"
+      "audio": "audio/7a8fbb74d3aa.m4a"
      }
     ],
     "table": "hilfsverb"
@@ -1398,7 +1406,7 @@
    "stepTitle": "Погода и es",
    "chapterIndex": 2,
    "indexInStep": 0,
-   "read": "Вернёмся к погоде. По-русски «идёт дождь» — без подлежащего, а по-немецки подлежащее нужно всегда, поэтому есть формальное *es*. Если первым стоит *heute*, *es* уходит за глагол, но не исчезает: *Heute regnet es*, а не *Heute regnet*. В Perfekt погода идёт с *haben* — дождь ведь никуда не едет: *Gestern hat es geregnet.* О вчерашней погоде можно сказать и через *war*: *Gestern war es kalt.*",
+   "read": "В русском «идёт дождь» подлежащее — «дождь». Немецкая фраза устроена иначе: *Es regnet*, с формальным *es*. Если первым стоит *heute*, *es* уходит за глагол: *Heute regnet es*. В прошедшем — *Gestern hat es geregnet*, а описание состояния — *Gestern war es kalt*. Для понимания отчёта важно отделить дождь сегодня утром от того, что было вчера вечером.",
    "point": "*Heute regnet es.* *Gestern hat es geregnet.* — *es* не пропадает",
    "scene": {
     "view": "sentence",
@@ -1430,7 +1438,7 @@
       "punct": ".",
       "plain": "Heute regnet es.",
       "ru": "Сегодня идёт дождь.",
-      "audio": "audio/1fdff123852d.m4a"
+      "audio": "audio/06d0db975015.m4a"
      },
      {
       "slots": [
@@ -1462,7 +1470,7 @@
       "punct": ".",
       "plain": "Gestern hat es geregnet.",
       "ru": "Вчера шёл дождь.",
-      "audio": "audio/cb81c1dc49d3.m4a"
+      "audio": "audio/4e0bef620fc9.m4a"
      }
     ],
     "table": "hilfsverb",
@@ -1509,7 +1517,7 @@
       "punct": ".",
       "plain": "Heute regnet es.",
       "ru": "Сегодня идёт дождь.",
-      "audio": "audio/1fdff123852d.m4a"
+      "audio": "audio/06d0db975015.m4a"
      },
      {
       "slots": [
@@ -1541,7 +1549,7 @@
       "punct": ".",
       "plain": "Gestern hat es geregnet.",
       "ru": "Вчера шёл дождь.",
-      "audio": "audio/cb81c1dc49d3.m4a"
+      "audio": "audio/4e0bef620fc9.m4a"
      }
     ],
     "table": "monate"
@@ -1585,7 +1593,7 @@
       "punct": ".",
       "plain": "Heute regnet es.",
       "ru": "Сегодня идёт дождь.",
-      "audio": "audio/1fdff123852d.m4a"
+      "audio": "audio/06d0db975015.m4a"
      },
      {
       "slots": [
@@ -1617,7 +1625,7 @@
       "punct": ".",
       "plain": "Gestern hat es geregnet.",
       "ru": "Вчера шёл дождь.",
-      "audio": "audio/cb81c1dc49d3.m4a"
+      "audio": "audio/4e0bef620fc9.m4a"
      }
     ],
     "table": "datum",
@@ -1636,7 +1644,7 @@
    "stepTitle": "Какое сегодня число?",
    "chapterIndex": 2,
    "indexInStep": 1,
-   "read": "С 20 окончание длиннее — *-ste*: *der zwanzigste*, *der einunddreißigste*. Последний шаг — «когда?». По-русски «первого мая» — родительный падеж, а по-немецки *am* и окончание *-en*: *am ersten Mai*. После *vom* и *bis zum* — тоже *-en*, поэтому Марко и сказал *vom zweiten bis zum vierten Juni*. Спросить дату можно так: *Welches Datum ist heute?*",
+   "read": "С 20 окончание длиннее — *-ste*: *der zwanzigste*, *der einunddreißigste*. Последний шаг — «когда?». По-русски «первого мая» — родительный падеж, а по-немецки *am* и окончание *-en*: *am ersten Mai*. После *vom* и *bis zum* — тоже *-en*, поэтому Матео и сказал *vom zweiten bis zum vierten Juni*. Спросить дату можно так: *Welches Datum ist heute?*",
    "point": "С 20 — *-ste*; «когда?» — *am …-en*: *am ersten Mai*, *am zwanzigsten Mai*",
    "scene": {
     "view": "table",
@@ -1668,7 +1676,7 @@
       "punct": ".",
       "plain": "Heute regnet es.",
       "ru": "Сегодня идёт дождь.",
-      "audio": "audio/1fdff123852d.m4a"
+      "audio": "audio/06d0db975015.m4a"
      },
      {
       "slots": [
@@ -1700,7 +1708,7 @@
       "punct": ".",
       "plain": "Gestern hat es geregnet.",
       "ru": "Вчера шёл дождь.",
-      "audio": "audio/cb81c1dc49d3.m4a"
+      "audio": "audio/4e0bef620fc9.m4a"
      }
     ],
     "table": "datum",
@@ -1774,7 +1782,7 @@
       "punct": ".",
       "plain": "Der Zug ist um acht Uhr angekommen.",
       "ru": "Поезд прибыл в восемь часов.",
-      "audio": "audio/32b241d25da9.m4a"
+      "audio": "audio/7a8fbb74d3aa.m4a"
      }
     ],
     "table": "datum"
@@ -1826,7 +1834,7 @@
       "punct": ".",
       "plain": "Um acht Uhr ist der Zug angekommen.",
       "ru": "В восемь часов поезд прибыл.",
-      "audio": "audio/56ba714bc540.m4a"
+      "audio": "audio/ad43babf64aa.m4a"
      }
     ],
     "table": "datum"
@@ -1841,58 +1849,6 @@
    "read": "*Wir sind zwei Tage in Hamburg geblieben.* Логика подсказывает *haben*: никто никуда не едет. Но *bleiben* — исключение, оно идёт с *sein*, как глаголы движения. Ошибка *Wir haben geblieben* — одна из самых частых, поэтому учите парой: *fahren — ist gefahren*, *bleiben — ist geblieben*. Порядок в середине привычный: сначала «сколько времени», потом «где».",
    "point": "*bleiben — ist geblieben*: движения нет, а глагол — *sein*",
    "question": "Как сказать «Мы остались в Гамбурге на два дня»?",
-   "sceneBefore": {
-    "view": "sentence",
-    "dialogue": "telefon",
-    "words": "jahr",
-    "rows": [
-     {
-      "slots": [
-       [
-        {
-         "key": "um",
-         "text": "Um"
-        },
-        {
-         "key": "acht",
-         "text": "acht"
-        },
-        {
-         "key": "uhr",
-         "text": "Uhr"
-        }
-       ],
-       [
-        {
-         "key": "ist",
-         "text": "ist"
-        }
-       ],
-       [
-        {
-         "key": "der",
-         "text": "der"
-        },
-        {
-         "key": "zug",
-         "text": "Zug"
-        }
-       ],
-       [
-        {
-         "key": "an",
-         "text": "an+gekommen"
-        }
-       ]
-      ],
-      "punct": ".",
-      "plain": "Um acht Uhr ist der Zug angekommen.",
-      "ru": "В восемь часов поезд прибыл.",
-      "audio": "audio/56ba714bc540.m4a"
-     }
-    ],
-    "table": "datum"
-   },
    "scene": {
     "view": "sentence",
     "dialogue": "telefon",
@@ -1940,7 +1896,7 @@
       "punct": ".",
       "plain": "Wir sind zwei Tage in Hamburg geblieben.",
       "ru": "Мы остались в Гамбурге на два дня.",
-      "audio": "audio/b06d7a370134.m4a"
+      "audio": "audio/0066a1528377.m4a"
      }
     ],
     "table": "datum"
@@ -1952,61 +1908,9 @@
    "stepTitle": "Проверьте себя",
    "chapterIndex": 3,
    "indexInStep": 2,
-   "read": "*Ich habe am dritten März Geburtstag.* День рождения «имеют»: *Geburtstag haben*, и *Geburtstag* стоит в конце, без артикля. Дата — с *am* и окончанием *-en*. И помните об исключении: «третий» — *dritte*, а не *dreite*. Ответ может быть и короче: *Am dritten März.* А спросить друга можно так: *Wann hast du Geburtstag?*",
-   "point": "*Ich habe am dritten März Geburtstag.* — *Wann hast du Geburtstag?*",
-   "question": "Как сказать, что у вас день рождения 3 марта?",
-   "sceneBefore": {
-    "view": "sentence",
-    "dialogue": "telefon",
-    "words": "jahr",
-    "rows": [
-     {
-      "slots": [
-       [
-        {
-         "key": "wir",
-         "text": "Wir"
-        }
-       ],
-       [
-        {
-         "key": "sind",
-         "text": "sind"
-        }
-       ],
-       [
-        {
-         "key": "zwei",
-         "text": "zwei"
-        },
-        {
-         "key": "tage",
-         "text": "Tage"
-        },
-        {
-         "key": "in",
-         "text": "in"
-        },
-        {
-         "key": "hamburg",
-         "text": "Hamburg"
-        }
-       ],
-       [
-        {
-         "key": "geblieben",
-         "text": "geblieben"
-        }
-       ]
-      ],
-      "punct": ".",
-      "plain": "Wir sind zwei Tage in Hamburg geblieben.",
-      "ru": "Мы остались в Гамбурге на два дня.",
-      "audio": "audio/b06d7a370134.m4a"
-     }
-    ],
-    "table": "datum"
-   },
+   "read": "*Ich habe am dritten Mai Geburtstag.* День рождения «имеют»: *Geburtstag haben*, и *Geburtstag* стоит в конце, без артикля. Дата — с *am* и окончанием *-en*. И помните об исключении: «третий» — *dritte*, а не *dreite*. Ответ может быть и короче: *Am dritten Mai.* А спросить друга можно так: *Wann hast du Geburtstag?*",
+   "point": "*Ich habe am dritten Mai Geburtstag.* — *Wann hast du Geburtstag?*",
+   "question": "Как сказать, что у вас день рождения 3 мая?",
    "scene": {
     "view": "table",
     "dialogue": "telefon",
@@ -2054,7 +1958,7 @@
       "punct": ".",
       "plain": "Wir sind zwei Tage in Hamburg geblieben.",
       "ru": "Мы остались в Гамбурге на два дня.",
-      "audio": "audio/b06d7a370134.m4a"
+      "audio": "audio/0066a1528377.m4a"
      }
     ],
     "table": "datum",
@@ -2069,7 +1973,7 @@
    "stepTitle": "Письменный экзамен: сообщение",
    "chapterIndex": 4,
    "indexInStep": 0,
-   "read": "Вторая часть письменного экзамена — короткое сообщение, около 30 слов. В задании три пункта, *Leitpunkte*, и на каждый нужно ответить одним-двумя предложениями: за пункт дают до 3 баллов и ещё 1 — за оформление. Здесь фрау Вебер из языковой школы пишет всей группе, а Анна ей отвечает. Пишем на «Вы»: *Liebe Frau Weber* в начале и *Viele Grüße* в конце.",
+   "read": "В конце курса фрау Томсен спрашивает о поездке и летних планах. Для короткого сообщения нужны три ответа: куда ездили, какая была погода и что планируется в июле. Начните *Liebe Frau Thomsen,* и завершите *Viele Grüße*. В игре вы уже восстанавливали факты, теперь попробуйте выразить их сами. Образец — опора для проверки, а не обязательный текст для заучивания.",
    "point": "Сообщение: ~30 слов, 3 пункта, обращение и подпись",
    "scene": {
     "view": "task",
@@ -2118,7 +2022,7 @@
       "punct": ".",
       "plain": "Wir sind zwei Tage in Hamburg geblieben.",
       "ru": "Мы остались в Гамбурге на два дня.",
-      "audio": "audio/b06d7a370134.m4a"
+      "audio": "audio/0066a1528377.m4a"
      }
     ],
     "table": "datum",
@@ -2132,7 +2036,7 @@
    "stepTitle": "Письменный экзамен: сообщение",
    "chapterIndex": 4,
    "indexInStep": 1,
-   "read": "Образец отвечает на пункты по очереди. Куда и на чём — Perfekt с *sein*: *sind … gefahren*. Погода в прошлом — *war* и *hat geregnet*. Планы на июль — просто настоящее время: *Im Juli fliege ich nach Polen.* Немцы так и говорят о будущем, если в предложении есть слово времени. Не усложняйте: проверяющий ищет ответ на каждый пункт и понятные фразы, а не красивый стиль.",
+   "read": "Поездка — *sind … gefahren*, прошедшая погода — *war* и *hat geregnet*. План Даны на июль — *Im Juli fahre ich nach Eckernförde und gehe zum Strand*. Настоящее время со словом будущего времени подходит для простого плана. Это не бронь и не прогноз погоды. На каждый пункт достаточно понятного ответа; затем проверьте обращение, подпись и порядок слов.",
    "point": "На пункт — 1–2 предложения; планы — в настоящем: *Im Juli fliege ich …*",
    "scene": {
     "view": "task",
@@ -2181,7 +2085,7 @@
       "punct": ".",
       "plain": "Wir sind zwei Tage in Hamburg geblieben.",
       "ru": "Мы остались в Гамбурге на два дня.",
-      "audio": "audio/b06d7a370134.m4a"
+      "audio": "audio/0066a1528377.m4a"
      }
     ],
     "table": "datum",
@@ -2195,7 +2099,7 @@
    "stepTitle": "Письменный экзамен: бланк",
    "chapterIndex": 4,
    "indexInStep": 0,
-   "read": "Первая часть письменного экзамена — бланк. Марко снова едет в Гамбург, теперь с сестрой, и бронирует номера на сайте отеля. Вы заполняете за него пять пустых полей, всё нужное есть в тексте. Обратите внимание на даты: они записаны цифрой с точкой, *am 8. August*. Точка значит, что число порядковое, и читается это *am achten August*.",
+   "read": "Августовский бланк — отдельная планируемая поездка Матео и Хауке. В задаче нужны пять полей: приезд, отъезд, число людей, тип и количество комнат, завтрак. Даты *8. August* и *10. August* относятся только к этой брони, а не к июньскому воспоминанию. Подробности поездки целиком вымышлены; вы тренируете перенос сведений в форму.",
    "point": "Дата цифрой: *8. August* = *der achte August*",
    "scene": {
     "view": "task",
@@ -2244,7 +2148,7 @@
       "punct": ".",
       "plain": "Wir sind zwei Tage in Hamburg geblieben.",
       "ru": "Мы остались в Гамбурге на два дня.",
-      "audio": "audio/b06d7a370134.m4a"
+      "audio": "audio/0066a1528377.m4a"
      }
     ],
     "table": "datum",
@@ -2261,60 +2165,6 @@
    "read": "*Nein.* Слова *nein* в тексте нет, зато есть *Frühstück brauchen sie nicht*. В бланке так бывает часто: ответ нужно не переписать, а понять. Даты переносите как в тексте, цифрой с точкой: *Anreise — 8. August*, *Abreise — 10. August*. *Anreise* — приезд, *Abreise* — отъезд: перепутать их легко, а балл потерять обидно.",
    "point": "Ответ не всегда дословный: *brauchen sie nicht* → *Frühstück: nein*",
    "question": "Что написать в поле «Frühstück»?",
-   "sceneBefore": {
-    "view": "task",
-    "dialogue": "telefon",
-    "words": "jahr",
-    "rows": [
-     {
-      "slots": [
-       [
-        {
-         "key": "wir",
-         "text": "Wir"
-        }
-       ],
-       [
-        {
-         "key": "sind",
-         "text": "sind"
-        }
-       ],
-       [
-        {
-         "key": "zwei",
-         "text": "zwei"
-        },
-        {
-         "key": "tage",
-         "text": "Tage"
-        },
-        {
-         "key": "in",
-         "text": "in"
-        },
-        {
-         "key": "hamburg",
-         "text": "Hamburg"
-        }
-       ],
-       [
-        {
-         "key": "geblieben",
-         "text": "geblieben"
-        }
-       ]
-      ],
-      "punct": ".",
-      "plain": "Wir sind zwei Tage in Hamburg geblieben.",
-      "ru": "Мы остались в Гамбурге на два дня.",
-      "audio": "audio/b06d7a370134.m4a"
-     }
-    ],
-    "table": "datum",
-    "task": "buchung",
-    "reveal": 0
-   },
    "scene": {
     "view": "task",
     "dialogue": "telefon",
@@ -2362,7 +2212,7 @@
       "punct": ".",
       "plain": "Wir sind zwei Tage in Hamburg geblieben.",
       "ru": "Мы остались в Гамбурге на два дня.",
-      "audio": "audio/b06d7a370134.m4a"
+      "audio": "audio/0066a1528377.m4a"
      }
     ],
     "table": "datum",
@@ -2378,7 +2228,7 @@
    "indexInStep": 0,
    "read": "*Falsch.* Сначала звучит *Gleis 8*, и рука сама тянется к *richtig*. Но дальше: *nicht von Gleis 8, sondern von Gleis 12*. Конструкция *nicht …, sondern …* — «не …, а …» — любимая ловушка второй части аудирования: верно то, что после *sondern*. Запись звучит только один раз, поэтому прочитайте утверждение заранее и слушайте номер пути, время и опоздание.",
    "point": "*nicht …, sondern …* — верна вторая часть; запись звучит один раз",
-   "question": "Поезд в Лейпциг отходит от пути 8 — *richtig* или *falsch*?",
+   "question": "Поезд в Киль отходит от пути 8 — *richtig* или *falsch*?",
    "sceneBefore": {
     "view": "task",
     "dialogue": "telefon",
@@ -2426,7 +2276,7 @@
       "punct": ".",
       "plain": "Wir sind zwei Tage in Hamburg geblieben.",
       "ru": "Мы остались в Гамбурге на два дня.",
-      "audio": "audio/b06d7a370134.m4a"
+      "audio": "audio/0066a1528377.m4a"
      }
     ],
     "table": "datum",
@@ -2479,7 +2329,7 @@
       "punct": ".",
       "plain": "Wir sind zwei Tage in Hamburg geblieben.",
       "ru": "Мы остались в Гамбурге на два дня.",
-      "audio": "audio/b06d7a370134.m4a"
+      "audio": "audio/0066a1528377.m4a"
      }
     ],
     "table": "datum",
@@ -2490,11 +2340,11 @@
   {
    "id": "weiter-1",
    "step": "weiter",
-   "stepTitle": "Что дальше",
+   "stepTitle": "Финал A1 и следующий шаг",
    "chapterIndex": 4,
    "indexInStep": 0,
-   "read": "Это последняя тема уровня A1. Оглянитесь назад: вы умеете представиться, назвать цену и время, заказать еду, спросить дорогу, записаться к врачу и рассказать, что было, — с *haben* и *sein*. С этим можно идти на экзамен Start Deutsch 1. На A2 появятся придаточные предложения с *weil* и *dass* и сравнения вроде *größer als*. А пока — *Sie haben es geschafft!*",
-   "point": "A1 пройден: о себе, о быте и о прошлом — с *haben* и *sein*",
+   "read": "Это последняя тема маршрута A1. Вы прошли бытовые ситуации, игры и дела: знакомство, кафе, покупки, время, жильё, дорога, здоровье, работа и поездка. В финальном деле пригодятся даты, Perfekt и разница между движением и местом. Прохождение страниц само по себе не гарантирует готовность к экзамену: следующий шаг — пробный тест со временем, самостоятельное письмо и разговор. После этого можно переходить к A2 и новым поездкам по региону.",
+   "point": "Маршрут A1 завершён; готовность проверяем пробным экзаменом и самостоятельной речью",
    "scene": {
     "view": "sentence",
     "dialogue": "telefon",
@@ -2530,7 +2380,7 @@
       "punct": "!",
       "plain": "Sie haben es geschafft!",
       "ru": "У вас получилось!",
-      "audio": "audio/0f75372852ac.m4a"
+      "audio": "audio/dcd90c82e033.m4a"
      }
     ],
     "table": "datum",
@@ -2550,7 +2400,7 @@
    ],
    "answer": 1,
    "why": "*fahren* — движение из А в Б, поэтому *sein*: *wir sind gefahren*.",
-   "audio": "audio/09369ea58d1e.m4a"
+   "audio": "audio/62b183ed487a.m4a"
   },
   {
    "id": "reisen-2",
@@ -2563,7 +2413,7 @@
    ],
    "answer": 1,
    "why": "Погода — без движения: *es hat geregnet*.",
-   "audio": "audio/50526f896401.m4a"
+   "audio": "audio/d8cda630260f.m4a"
   },
   {
    "id": "reisen-3",
@@ -2574,7 +2424,7 @@
    ],
    "hint": "haben / sein",
    "why": "*aufstehen* — смена состояния, поэтому *sein*: *ich bin aufgestanden*.",
-   "audio": "audio/d9b9c201b40e.m4a"
+   "audio": "audio/ff299578bf11.m4a"
   },
   {
    "id": "reisen-4",
@@ -2585,7 +2435,7 @@
    ],
    "hint": "haben / sein",
    "why": "*bleiben* — исключение: движения нет, а глагол *sein*.",
-   "audio": "audio/33458c4a2e05.m4a"
+   "audio": "audio/2f481b8f0314.m4a"
   },
   {
    "id": "reisen-5",
@@ -2596,7 +2446,7 @@
    ],
    "hint": "sein",
    "why": "*ihr seid*; в вопросе да/нет вспомогательный глагол стоит первым.",
-   "audio": "audio/4a7a0107aa63.m4a"
+   "audio": "audio/3fa7bc9421ac.m4a"
   },
   {
    "id": "reisen-6",
@@ -2607,24 +2457,24 @@
    ],
    "hint": "ankommen",
    "why": "*ge* — между приставкой и корнем: *an-ge-kommen*.",
-   "audio": "audio/32b241d25da9.m4a"
+   "audio": "audio/7a8fbb74d3aa.m4a"
   },
   {
    "id": "reisen-7",
    "type": "gap",
-   "q": "Marco ___ in Hamburg einen Regenschirm ___.",
+   "q": "Mateo ___ in Hamburg einen Regenschirm ___.",
    "answer": [
     "hat",
     "gekauft"
    ],
    "hint": "kaufen",
    "why": "*kaufen* — без движения: *hat gekauft*, причастие в конце.",
-   "audio": "audio/9ee057e146b7.m4a"
+   "audio": "audio/5dfea9a36c03.m4a"
   },
   {
    "id": "reisen-8",
    "type": "choice",
-   "q": "Marco ist im März von Rom nach Leipzig ___.",
+   "q": "Mateo ist im März von Buenos Aires nach Hamburg ___.",
    "options": [
     "geflogt",
     "geflogen",
@@ -2632,7 +2482,7 @@
    ],
    "answer": 1,
    "why": "*fliegen — ist geflogen*: неправильный глагол, причастие на *-en*.",
-   "audio": "audio/1ec2112d4dca.m4a"
+   "audio": "audio/1c9a7f6688f2.m4a"
   },
   {
    "id": "reisen-9",
@@ -2645,7 +2495,7 @@
    ],
    "answer": 1,
    "why": "Исключение: *drei — der dritte*.",
-   "audio": "audio/5724a388558a.m4a"
+   "audio": "audio/9ac5dc13a12c.m4a"
   },
   {
    "id": "reisen-10",
@@ -2657,12 +2507,12 @@
    "hint": "20.",
    "ru": "У меня день рождения 20 мая.",
    "why": "С 20 — *-ste*, после *am* — *-en*: *am zwanzigsten*.",
-   "audio": "audio/ebfff2db8629.m4a"
+   "audio": "audio/87211bb5d8b0.m4a"
   },
   {
    "id": "reisen-11",
    "type": "choice",
-   "q": "Wann fährst du nach Italien? – ___ Juli.",
+   "q": "Wann fährst du nach Dänemark? – ___ Juli.",
    "options": [
     "Am",
     "Im",
@@ -2670,7 +2520,7 @@
    ],
    "answer": 1,
    "why": "Месяц — с *im*: *im Juli*. *am* — с датой: *am ersten Juli*.",
-   "audio": "audio/66dc3dc26101.m4a"
+   "audio": "audio/45567316edb7.m4a"
   },
   {
    "id": "reisen-12",
@@ -2683,7 +2533,7 @@
    ],
    "answer": 1,
    "why": "У погоды всегда есть подлежащее *es*: *Es ist kalt.*",
-   "audio": "audio/9d62a8661333.m4a"
+   "audio": "audio/c610bc11cb4c.m4a"
   },
   {
    "id": "reisen-13",
@@ -2703,14 +2553,14 @@
    "ru": "В пятницу мы поехали в Гамбург.",
    "de": "Am Freitag sind wir nach Hamburg gefahren.",
    "why": "Время на первом месте: *sind* второй, *wir* за ним, *gefahren* в конце.",
-   "audio": "audio/17fa53ccdf1a.m4a"
+   "audio": "audio/23158a669c83.m4a"
   },
   {
    "id": "reisen-15",
    "type": "order",
    "ru": "Когда прибыл поезд?",
    "de": "Wann ist der Zug angekommen?",
-   "audio": "audio/80d667eeb35f.m4a"
+   "audio": "audio/738d738f9d0f.m4a"
   },
   {
    "id": "reisen-16",
@@ -2720,9 +2570,358 @@
    "also": [
     "Gestern war es windig und kalt."
    ],
-   "audio": "audio/86e9d3236a70.m4a"
+   "audio": "audio/b3e565e1d280.m4a"
   }
  ],
+ "case": {
+  "title": "Die letzte Kopie",
+  "ru": "Последняя копия",
+  "intro": "Позднее, в конце июня, команда встречается в клубе на Kieler Woche. Йенсен собрал исходные сообщения, старые копии и объяснение Ферса. Финал решают факты о поездке и содержимое документов, а не ошибки в немецком.",
+  "people": {
+   "J": {
+    "name": "Herr Jensen",
+    "voice": "Grandpa"
+   },
+   "X": {
+    "name": "Herr Vehrs",
+    "voice": "Eddy"
+   }
+  },
+  "steps": [
+   {
+    "read": "На последней копии перепутаны июньская поездка и августовский план. Возьмите только данные августовского бланка.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Anreise: 8. August. Abreise: 10. August. Zwei Einzelzimmer, kein Frühstück.",
+      "ru": "Приезд: 8 августа. Отъезд: 10 августа. Два одноместных номера, без завтрака."
+     }
+    ],
+    "question": "Какая карточка соответствует источнику?",
+    "options": [
+     "2–4 июня, с завтраком",
+     "8–10 августа, без завтрака",
+     "8–10 июня, один двухместный номер"
+    ],
+    "answer": 1,
+    "right": "Совпадают месяц, даты, комнаты и отказ от завтрака. Июньское воспоминание не является этой бронью.",
+    "wrong": [
+     "Это данные другой поездки.",
+     null,
+     "Месяц и тип комнаты не совпали."
+    ]
+   },
+   {
+    "read": "В копии написано, будто друзья остались в Гамбурге. Йенсен читает итоговый отчёт.",
+    "evidence": [
+     {
+      "kind": "quote",
+      "who": "J",
+      "de": "Dana und Mateo sind nach Kiel zurückgekommen. Jetzt sind sie im Club.",
+      "ru": "Дана и Матео вернулись в Киль. Теперь они в клубе.",
+      "audio": "audio/bcee3079af5d.m4a"
+     }
+    ],
+    "question": "Что подтверждает отчёт?",
+    "options": [
+     "Они вернулись и сейчас в клубе",
+     "Они ещё едут в Гамбург",
+     "Они остались в отеле"
+    ],
+    "answer": 0,
+    "right": "*Sind zurückgekommen* — завершённое возвращение; *sind im Club* — их место сейчас.",
+    "wrong": [
+     null,
+     "Движение в отчёте уже завершено.",
+     "Это противоречит нынешнему месту."
+    ]
+   },
+   {
+    "read": "Найдена папка Ферса. Он сам объясняет происхождение копий; это новое свидетельство, которое можно сравнить с сохранёнными листками.",
+    "evidence": [
+     {
+      "kind": "quote",
+      "who": "X",
+      "de": "Ich habe den alten Plan kopiert. Die neuen Nachrichten habe ich nicht gelesen.",
+      "ru": "Я скопировал старый план. Новые сообщения я не прочитал.",
+      "audio": "audio/9fccee5959ef.m4a"
+     }
+    ],
+    "question": "Что объясняет признание?",
+    "options": [
+     "Ферс подтвердил все изменения",
+     "В копии попали старые данные без проверки новых",
+     "Все исходные сообщения неверны"
+    ],
+    "answer": 1,
+    "right": "Он подтвердил копирование старого плана и отсутствие проверки новых сообщений. Это объясняет расхождения, но не доказывает кражу или другую скрытую цель.",
+    "wrong": [
+     "Чтение новых сообщений прямо отрицается.",
+     null,
+     "Ошибочность копии не делает неверными первоисточники."
+    ]
+   },
+   {
+    "read": "Последняя проверка возвращает нас к началу: «Шпротта» и бронь Ферса — разные записи. Подтверждение Йенсена завершает дело.",
+    "evidence": [
+     {
+      "kind": "quote",
+      "who": "J",
+      "de": "Die Sprotte ist zurückgekommen. Sie ist an Liegeplatz zweiunddreißig geblieben. Herr Vehrs hatte Liegeplatz dreiundzwanzig.",
+      "ru": "«Шпротта» вернулась. Она осталась на месте 32. У господина Ферса было место 23.",
+      "audio": "audio/c440cbc9a454.m4a"
+     }
+    ],
+    "question": "Какой итог соответствует подтверждению?",
+    "options": [
+     "Лодка пропала, обе записи о месте 23",
+     "«Шпротта» на 32; бронь Ферса была на 23",
+     "Ферс владеет «Шпроттой»"
+    ],
+    "answer": 1,
+    "right": "Возвращение подтверждено, номера разделены. Ни кража, ни владение лодкой из этих слов не следуют.",
+    "wrong": [
+     "Возвращение подтверждено, номера разные.",
+     null,
+     "Бронь места не означает владение чужой лодкой."
+    ]
+   }
+  ],
+  "ending": "Дело закрыто: «Шпротта» в клубе, бронь 23 отделена от места 32, неверные копии заменены сверенными данными. Ферс признаёт, что переписывал старый план без новых сообщений; его ошибки в немецком сами по себе ничего не доказывали. Команда встречает Kieler Woche с исправленной папкой. В следующем сезоне A2 друзья будут договариваться о поездках, объяснять причины и вместе выбирать решения."
+ },
+ "adventure": {
+  "kind": "sequence",
+  "title": "Сверьте поездку перед финалом",
+  "intro": "Друзья собирают альбом июньской поездки и планируют отдельный визит в августе. Отделите даты, вещи для прогулки и уже случившиеся события. Все брони и расписания учебные.",
+  "ending": "Бланк заполнен по своей ситуации, вещи выбраны по сообщению, события восстановлены в Perfekt, актуальный путь найден. Команда возвращается в Киль и готова к финальной сверке папки на Kieler Woche.",
+  "challenges": [
+   {
+    "id": "booking",
+    "kind": "match",
+    "title": "Не перепутайте две поездки",
+    "intro": "Заполните краткую карточку будущего августовского визита. Июньские даты из диалога здесь не подходят.",
+    "success": "Августовская карточка совпала с заданием: 8–10 августа, два человека, два одноместных номера, без завтрака.",
+    "wrong": "Проверяйте каждый пункт именно по августовской ситуации, а не по памяти о первом диалоге.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Mateo Fernández und sein Freund Hauke möchten im August nach Hamburg fahren. Sie kommen am 8. August an und fahren am 10. August zurück. Sie möchten zwei Einzelzimmer. Frühstück brauchen sie nicht – sie frühstücken gern im Café. Mateo reserviert die Zimmer im Internet. Helfen Sie ihm mit dem Formular.",
+      "name": "Zimmerreservierung – Hotel Elbblick"
+     }
+    ],
+    "options": [
+     {
+      "id": "eighth",
+      "label": "8. August"
+     },
+     {
+      "id": "tenth",
+      "label": "10. August"
+     },
+     {
+      "id": "two",
+      "label": "2"
+     },
+     {
+      "id": "single",
+      "label": "2 Einzelzimmer"
+     },
+     {
+      "id": "no",
+      "label": "nein"
+     },
+     {
+      "id": "june",
+      "label": "2. Juni"
+     },
+     {
+      "id": "double",
+      "label": "1 Doppelzimmer"
+     }
+    ],
+    "slots": [
+     {
+      "id": "arrival",
+      "label": "Anreise",
+      "answer": "eighth"
+     },
+     {
+      "id": "departure",
+      "label": "Abreise",
+      "answer": "tenth"
+     },
+     {
+      "id": "people",
+      "label": "Personen",
+      "answer": "two"
+     },
+     {
+      "id": "rooms",
+      "label": "Zimmer",
+      "answer": "single"
+     },
+     {
+      "id": "breakfast",
+      "label": "Frühstück",
+      "answer": "no"
+     }
+    ]
+   },
+   {
+    "id": "walk-bag",
+    "kind": "pack",
+    "title": "Соберите вещи для прогулки по сообщению",
+    "intro": "Выберите весь названный набор. Здесь не нужно оценивать условия выхода в море: друзья собираются на городскую прогулку.",
+    "success": "По сообщению нужны зонт и куртка. Очки остаются в отеле, билет в этом наборе не назван.",
+    "wrong": "В тексте прямо названы *einen Regenschirm und eine Jacke*. Не добавляйте предмет только потому, что он полезен в поездках.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Heute ist es kalt und windig. Es hat am Morgen geregnet. Für den Spaziergang nehmen wir einen Regenschirm und eine Jacke mit. Die Sonnenbrille bleibt im Hotel.",
+      "name": "Dana"
+     }
+    ],
+    "options": [
+     {
+      "id": "umbrella",
+      "label": "der Regenschirm",
+      "icon": "☂️"
+     },
+     {
+      "id": "jacket",
+      "label": "die Jacke",
+      "icon": "🧥"
+     },
+     {
+      "id": "glasses",
+      "label": "die Sonnenbrille",
+      "icon": "🕶️"
+     },
+     {
+      "id": "ticket",
+      "label": "die Fahrkarte",
+      "icon": "🎫"
+     }
+    ],
+    "answer": [
+     "umbrella",
+     "jacket"
+    ]
+   },
+   {
+    "id": "trip-verbs",
+    "kind": "match",
+    "title": "Подпишите события альбома",
+    "intro": "Выберите вспомогательный глагол для четырёх событий. Один вариант может подходить нескольким карточкам.",
+    "success": "Дождь и покупка — с *haben*, прибытие и поездка — с *sein*. Форма зависит от подлежащего: *es hat*, *wir haben / sind*.",
+    "wrong": "Проверьте и глагол события, и подлежащее. Для двух карточек *wir* нужен один и тот же вариант *sind*.",
+    "quotes": [
+     {
+      "de": "Und hier hat es heute Morgen geregnet. Wir haben einen Regenschirm gekauft.",
+      "audio": "audio/ac792ad03dd4.m4a",
+      "name": "Dana"
+     },
+     {
+      "de": "Wir sind am Abend angekommen und dann zum Hafen gegangen.",
+      "audio": "audio/95cb241beb8c.m4a",
+      "name": "Dana"
+     },
+     {
+      "de": "Heute sind wir mit dem Schiff gefahren – zwei Stunden auf der Elbe!",
+      "audio": "audio/afdccf2732b5.m4a",
+      "name": "Dana"
+     }
+    ],
+    "options": [
+     {
+      "id": "hat",
+      "label": "hat"
+     },
+     {
+      "id": "haben",
+      "label": "haben"
+     },
+     {
+      "id": "sind",
+      "label": "sind"
+     },
+     {
+      "id": "ist",
+      "label": "ist"
+     }
+    ],
+    "slots": [
+     {
+      "id": "rain",
+      "label": "Es … geregnet.",
+      "answer": "hat"
+     },
+     {
+      "id": "buy",
+      "label": "Wir … einen Regenschirm gekauft.",
+      "answer": "haben"
+     },
+     {
+      "id": "arrive",
+      "label": "Wir … angekommen.",
+      "answer": "sind"
+     },
+     {
+      "id": "ship",
+      "label": "Wir … mit dem Schiff gefahren.",
+      "answer": "sind"
+     }
+    ]
+   },
+   {
+    "id": "trip-sentence",
+    "kind": "order",
+    "title": "Расскажите о прогулке на кораблике",
+    "intro": "Соберите подпись к фотографии: «Мы катались на кораблике».",
+    "success": "*Wir sind mit dem Schiff gefahren.* Вспомогательный глагол и причастие держат рамку.",
+    "wrong": "Начните *Wir sind*, внутри рамки *mit dem Schiff*, в конце *gefahren.*",
+    "tokens": [
+     "Wir",
+     "sind",
+     "mit dem Schiff",
+     "gefahren."
+    ],
+    "label": "Фотография из порта"
+   },
+   {
+    "id": "home-platform",
+    "kind": "select",
+    "title": "Найдите путь для возвращения",
+    "intro": "В учебном объявлении названы два пути. К какому нужно идти после изменения?",
+    "success": "*Nicht von Gleis 8, sondern von Gleis 12.* Двадцать — минуты задержки, а не номер пути.",
+    "wrong": "После *sondern* назван актуальный путь 12. Первое число и задержка — ловушки.",
+    "quotes": [
+     {
+      "de": "Achtung an Gleis 8! Der Intercity nach Kiel, Abfahrt 17 Uhr 46, fährt heute nicht von Gleis 8, sondern von Gleis 12 ab. Der Zug hat circa 20 Minuten Verspätung. Wir bitten um Entschuldigung.",
+      "audio": "audio/7ea6447c6b12.m4a",
+      "name": "Hören, Teil 2"
+     }
+    ],
+    "options": [
+     {
+      "id": "eight",
+      "label": "Gleis 8"
+     },
+     {
+      "id": "twelve",
+      "label": "Gleis 12"
+     },
+     {
+      "id": "twenty",
+      "label": "Gleis 20"
+     }
+    ],
+    "answer": [
+     "twelve"
+    ]
+   }
+  ]
+ },
  "spy": [
   {
    "de": "Wir haben im Hotel gefrühstückt.",

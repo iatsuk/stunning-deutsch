@@ -1,0 +1,1561 @@
+{
+ "id": "a2-ausflug",
+ "level": "a2",
+ "order": 12,
+ "title": "Seit Montag planen wir den Ausflug.",
+ "ru": "Поездка в Хайтабу",
+ "lede": "Команда готовит поездку в Хайтабу рядом со Шлезвигом. В коротком тексте есть история торгового поселения, музей и реконструированные дома. Нужно отделить события прошлого от того, что продолжается сейчас, и составить свой учебный план посещения.",
+ "goals": [
+  "Различить когда-то раньше и с какого-то времени до сих пор",
+  "Использовать seit с настоящим временем",
+  "Прочитать информационный текст и условный указатель",
+  "Согласовать длительность двух частей посещения"
+ ],
+ "grammar": [
+  "vor и seit; длительность и продолжающееся действие"
+ ],
+ "exam": [
+  "a2-lesen-2",
+  "a2-lesen-1"
+ ],
+ "chapters": [
+  {
+   "id": "scene",
+   "title": "Ситуация"
+  },
+  {
+   "id": "words",
+   "title": "Слова"
+  },
+  {
+   "id": "grammar",
+   "title": "Грамматика"
+  },
+  {
+   "id": "practice",
+   "title": "Проверка"
+  },
+  {
+   "id": "exam",
+   "title": "На экзамене"
+  }
+ ],
+ "dialogues": {
+  "scene": {
+   "title": "Seit Montag planen wir den Ausflug.",
+   "ru": "Поездка в Хайтабу",
+   "place": "Busdorf bei Schleswig · Haithabu · вымышленная учебная ситуация",
+   "people": {
+    "D": {
+     "name": "Dana",
+     "voice": "Anna"
+    },
+    "M": {
+     "name": "Mateo",
+     "voice": "Reed"
+    },
+    "E": {
+     "name": "Elif",
+     "voice": "Flo"
+    },
+    "H": {
+     "name": "Hauke",
+     "voice": "Rocko"
+    }
+   },
+   "lines": [
+    {
+     "who": "D",
+     "de": "Seit Montag planen wir unseren Ausflug nach Haithabu.",
+     "ru": "С понедельника мы планируем поездку в Хайтабу.",
+     "audio": "audio/644b3e88232f.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Vor zwei Wochen haben wir zum ersten Mal darüber gesprochen.",
+     "ru": "Две недели назад мы впервые об этом говорили.",
+     "audio": "audio/bee388b112c9.m4a"
+    },
+    {
+     "who": "E",
+     "de": "Was war dort früher?",
+     "ru": "Что там было раньше?",
+     "audio": "audio/a32ccb8b64c4.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Haithabu war ein Handelsplatz mit einem Hafen.",
+     "ru": "Хайтабу было торговым поселением с портом.",
+     "audio": "audio/6291504f8701.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Heute gibt es dort ein Museum und rekonstruierte Häuser.",
+     "ru": "Сегодня там есть музей и реконструированные дома.",
+     "audio": "audio/1c9b7d845753.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Wie lange bleiben wir nach unserem Lernplan dort?",
+     "ru": "Сколько мы там пробудем по нашему учебному плану?",
+     "audio": "audio/084a76e08c7b.m4a"
+    },
+    {
+     "who": "E",
+     "de": "Zwei Stunden für die Ausstellung und danach eine Stunde draußen.",
+     "ru": "Два часа на выставку, потом час снаружи.",
+     "audio": "audio/3e18a0099065.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Gut. Seit gestern haben wir auch die Liste für den Ausflug.",
+     "ru": "Хорошо. Со вчерашнего дня у нас есть и список для поездки.",
+     "audio": "audio/93fd226c66eb.m4a"
+    }
+   ]
+  }
+ },
+ "words": {
+  "useful": {
+   "title": "Wörter für die Aufgabe",
+   "ru": "Слова для действия",
+   "items": [
+    {
+     "de": "der Ausflug",
+     "ru": "небольшая поездка",
+     "gender": "m",
+     "plural": "Ausflüge",
+     "audio": "audio/a60142e3dd38.m4a"
+    },
+    {
+     "de": "der Handelsplatz",
+     "ru": "торговое поселение, центр торговли",
+     "gender": "m",
+     "plural": "Handelsplätze",
+     "audio": "audio/858e965b3b30.m4a"
+    },
+    {
+     "de": "der Hafen",
+     "ru": "порт",
+     "gender": "m",
+     "plural": "Häfen",
+     "audio": "audio/64c12f7f3efa.m4a"
+    },
+    {
+     "de": "die Ausstellung",
+     "ru": "выставка",
+     "gender": "f",
+     "plural": "Ausstellungen",
+     "audio": "audio/cefd646461c3.m4a"
+    },
+    {
+     "de": "das Freigelände",
+     "ru": "открытая территория",
+     "gender": "n",
+     "plural": "Freigelände",
+     "audio": "audio/58de20fdb6b8.m4a"
+    },
+    {
+     "de": "das Haus",
+     "ru": "дом",
+     "gender": "n",
+     "plural": "Häuser",
+     "audio": "audio/6241f55a929b.m4a"
+    },
+    {
+     "de": "rekonstruiert",
+     "ru": "реконструированный",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/f8619c6cbaec.m4a"
+    },
+    {
+     "de": "früher",
+     "ru": "раньше",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/25911b3a0802.m4a"
+    },
+    {
+     "de": "seit Montag",
+     "ru": "с понедельника до сих пор",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/d9d6d4487bd1.m4a"
+    },
+    {
+     "de": "vor zwei Wochen",
+     "ru": "две недели назад",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/af2ec8f09cc2.m4a"
+    },
+    {
+     "de": "dauern",
+     "ru": "длиться",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/093bc7c7e61a.m4a"
+    },
+    {
+     "de": "das Welterbe",
+     "ru": "всемирное наследие",
+     "gender": "n",
+     "plural": null,
+     "noPlural": true,
+     "audio": "audio/cafdb0177897.m4a"
+    }
+   ]
+  }
+ },
+ "tables": {
+  "rule": {
+   "title": "vor и seit; длительность и продолжающееся действие",
+   "ru": "Опора для решения",
+   "head": [
+    "Beispiel",
+    "Смысл и форма"
+   ],
+   "rows": [
+    [
+     "Vor zwei Wochen haben wir darüber gesprochen.",
+     "vor + срок: насколько давно произошло событие."
+    ],
+    [
+     "Seit Montag planen wir die Fahrt.",
+     "seit: началось раньше и продолжается сейчас."
+    ],
+    [
+     "Wir sind seit einer Stunde im Museum.",
+     "После seit и vor в этих временных группах — Dativ."
+    ],
+    [
+     "Wir planen zwei Stunden für die Ausstellung.",
+     "Длительность плана не равна сроку начала."
+    ]
+   ],
+   "ruCols": [
+    1
+   ]
+  }
+ },
+ "tasks": {
+  "article": {
+   "kind": "worksheet",
+   "part": "a2-lesen-2",
+   "format": "article",
+   "title": "Haithabu früher und heute",
+   "text": "Haithabu liegt in Busdorf bei Schleswig. Früher war Haithabu ein wichtiger Handelsplatz mit einem Hafen. Heute gibt es dort ein Museum und rekonstruierte Häuser. Die Häuser zeigen einen Teil des früheren Lebens. Haithabu und das Danewerk gehören seit 2018 zum UNESCO-Welterbe. Die Gruppe plant ihren Besuch seit Montag. Ihre Zeiten im Lernplan sind Beispiele, keine Öffnungszeiten.",
+   "questions": [
+    {
+     "prompt": "Haithabu liegt bei Schleswig.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "richtig"
+     ]
+    },
+    {
+     "prompt": "Früher gab es dort einen Handelsplatz.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "richtig"
+     ]
+    },
+    {
+     "prompt": "Die heutigen Häuser sind alle unveränderte Originalhäuser.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Seit 2018 gehören Haithabu und Danewerk zum Welterbe.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "richtig"
+     ]
+    },
+    {
+     "prompt": "Die Zeiten der Gruppe sind offizielle Öffnungszeiten.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "falsch"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "directory": {
+   "kind": "worksheet",
+   "part": "a2-lesen-1",
+   "format": "directory",
+   "title": "Übungswegweiser · kein Gebäudeplan",
+   "text": "Lernbereich A: Information, Tickets, Treffpunkt.\nLernbereich B: Ausstellung, Lesetexte, Karten.\nLernbereich C: Modelle der Häuser, Werkzeuge.\nLernbereich D: Pause, Getränke, Sitzplätze.",
+   "questions": [
+    {
+     "prompt": "Eine Frage zum Ticket stellen",
+     "options": [
+      "A",
+      "B",
+      "Anderer Bereich"
+     ],
+     "answers": [
+      "A"
+     ]
+    },
+    {
+     "prompt": "Karten und Lesetexte ansehen",
+     "options": [
+      "A",
+      "B",
+      "Anderer Bereich"
+     ],
+     "answers": [
+      "B"
+     ]
+    },
+    {
+     "prompt": "Ein Hausmodell suchen",
+     "options": [
+      "A",
+      "B",
+      "Anderer Bereich"
+     ],
+     "answers": [
+      "Anderer Bereich"
+     ]
+    },
+    {
+     "prompt": "Getränke für die Pause finden",
+     "options": [
+      "A",
+      "B",
+      "Anderer Bereich"
+     ],
+     "answers": [
+      "Anderer Bereich"
+     ]
+    },
+    {
+     "prompt": "Die Gruppe am Treffpunkt suchen",
+     "options": [
+      "A",
+      "B",
+      "Anderer Bereich"
+     ],
+     "answers": [
+      "A"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "plan": {
+   "kind": "message",
+   "part": "a2-lesen-2",
+   "title": "Unser Lernplan",
+   "from": "Elif",
+   "text": "Seit Montag planen wir die Fahrt. Vor zwei Wochen haben wir die Idee besprochen. Lernplan: 10–12 Uhr Ausstellung, 12–13 Uhr draußen. Um 13 Uhr treffen wir uns wieder. Das ist unser eigener Plan, nicht das Programm des Museums.",
+   "sample": []
+  }
+ },
+ "beats": [
+  {
+   "id": "start-1",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 0,
+   "read": "Команда готовит поездку в Хайтабу рядом со Шлезвигом. В коротком тексте есть история торгового поселения, музей и реконструированные дома. Нужно отделить события прошлого от того, что продолжается сейчас, и составить свой учебный план посещения. Все нужные условия даны в сцене: знания географии, настоящих цен или расписаний не требуются. Сначала попробуйте понять, какого результата добиваются друзья, затем слушайте реплики. На новом уровне важно не только найти число или знакомое слово, но и связать несколько сведений.",
+   "point": "Поездка в Хайтабу",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 4,
+    "fresh": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "start-2",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 1,
+   "read": "*Vor zwei Wochen* указывает на завершённый момент в прошлом: тогда друзья впервые заговорили о поездке. *Seit Montag planen wir* сообщает, что работа началась в понедельник и продолжается. Исторические сведения относятся к Хайтабу; часы посещения — к отдельному учебному плану команды, а не к официальным часам работы музея.",
+   "point": "vor и seit; длительность и продолжающееся действие",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 8,
+    "fresh": [
+     4,
+     5,
+     6,
+     7
+    ]
+   }
+  },
+  {
+   "id": "words-1",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 0,
+   "read": "Морская тема здесь связана с обычным посещением музея: порт, торговля, выставка, дома и время прогулки. *Der Hafen* знаком по Килю, а *der Handelsplatz* объясняет прошлое места. Для решения задач не нужно знать историю заранее: прочитайте предъявленный текст, затем найдите точное подтверждение ответа.",
+   "point": "Сначала используйте слово для решения; словарь остаётся справочником.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 6,
+    "words": "useful"
+   }
+  },
+  {
+   "id": "words-2",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 1,
+   "read": "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к ситуации: какие слова обозначают человека, место, условие или уже выполненное действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово встретится снова в записке или разговоре, попробуйте восстановить его смысл до подсказки.",
+   "point": "Возвращайтесь к выражениям в сообщениях и новых действиях.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 12,
+    "words": "useful",
+    "fresh": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   }
+  },
+  {
+   "id": "grammar-1",
+   "step": "grammar",
+   "stepTitle": "vor и seit; длительность и продолжающееся действие",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "*Vor zwei Wochen* отвечает, сколько времени отделяет нас от события. В нашем сообщении разговор уже произошёл, поэтому используется Perfekt. Это не обещание провести две недели в музее и не дата начала продолжающегося действия. Удерживайте вопрос: когда произошло, с какого времени продолжается или как долго запланировано.",
+   "point": "vor + срок: насколько давно произошло событие.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "grammar-2",
+   "step": "grammar",
+   "stepTitle": "vor и seit; длительность и продолжающееся действие",
+   "chapterIndex": 2,
+   "indexInStep": 1,
+   "read": "С *seit* продолжающееся действие обычно выражаем настоящим временем: *Seit Montag planen wir*. По-русски тоже можно сказать «планируем с понедельника», но легко по привычке выбрать немецкое прошедшее. Проверяйте, продолжается ли действие в момент сообщения. Само слово *seit* не означает, что работа закончена.",
+   "point": "seit: началось раньше и продолжается сейчас.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "grammar-3",
+   "step": "grammar",
+   "stepTitle": "vor и seit; длительность и продолжающееся действие",
+   "chapterIndex": 2,
+   "indexInStep": 2,
+   "read": "Сравните *seit einer Stunde*, *vor einer Woche*, *seit einem Jahr*. Здесь нужен дательный падеж. Число сообщает длительность, но предлог меняет связь со временем. В игре вы сопоставите сообщение о прошедшем событии и продолжающемся состоянии, а не будете выбирать падеж без смыслового вопроса.",
+   "point": "После seit и vor в этих временных группах — Dativ.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "grammar-4",
+   "step": "grammar",
+   "stepTitle": "vor и seit; длительность и продолжающееся действие",
+   "chapterIndex": 2,
+   "indexInStep": 3,
+   "read": "Два часа в учебном плане — отведённое время на выставку. Это не «два часа назад» и не «уже два часа». Отсутствие *vor* и *seit* важно так же, как наличие предлога. Не переносите эти числа в реальное расписание музея: для задачи используем только собственный план группы.",
+   "point": "Длительность плана не равна сроку начала.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "frames-1",
+   "step": "frames",
+   "stepTitle": "Как устроена реплика",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "В начале стоит *Seit Montag*, затем личная форма *planen*, после неё *wir*. Настоящее время подчёркивает продолжающуюся работу. Сравните с *Vor zwei Wochen haben wir gesprochen*: там появляется рамка Perfekt и завершённое событие. Начальное обстоятельство в обоих случаях занимает первую позицию, глагол — вторую.",
+   "point": "*Seit Montag planen wir die Fahrt.*",
+   "scene": {
+    "view": "sentence",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "seit",
+         "text": "Seit"
+        },
+        {
+         "key": "montag",
+         "text": "Montag"
+        }
+       ],
+       [
+        {
+         "key": "planen",
+         "text": "planen"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "fahrt",
+         "text": "Fahrt"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Seit Montag planen wir die Fahrt.",
+      "ru": "С понедельника мы планируем поездку.",
+      "audio": "audio/0fd780793d20.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-1",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 0,
+   "read": "Нет. Фраза сообщает о начавшемся раньше и продолжающемся планировании. Чтобы подтвердить завершение, понадобится отдельное сообщение о результате. В дневнике отмечайте процесс и выполненное действие раздельно: иначе команда может принять ещё обсуждаемый вариант за готовую бронь.",
+   "point": "*Seit* задаёт начало продолжающегося состояния или действия.",
+   "question": "Seit Montag planen wir — работа уже закончена?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "seit",
+         "text": "Seit"
+        },
+        {
+         "key": "montag",
+         "text": "Montag"
+        }
+       ],
+       [
+        {
+         "key": "planen",
+         "text": "planen"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "fahrt",
+         "text": "Fahrt"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Seit Montag planen wir die Fahrt.",
+      "ru": "С понедельника мы планируем поездку.",
+      "audio": "audio/0fd780793d20.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-2",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 1,
+   "read": "Две недели назад. Для длительности поездки нужен другой контекст, например *zwei Wochen Urlaub*. В этой теме полезно каждый раз задавать один из трёх вопросов: когда произошло, с какого времени продолжается, сколько времени отведено. Предлог помогает выбрать нужную связь.",
+   "point": "*vor* — назад; *seit* — начиная с, до сих пор.",
+   "question": "Vor zwei Wochen — это на две недели или две недели назад?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "seit",
+         "text": "Seit"
+        },
+        {
+         "key": "montag",
+         "text": "Montag"
+        }
+       ],
+       [
+        {
+         "key": "planen",
+         "text": "planen"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "fahrt",
+         "text": "Fahrt"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Seit Montag planen wir die Fahrt.",
+      "ru": "С понедельника мы планируем поездку.",
+      "audio": "audio/0fd780793d20.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "exam-article-1",
+   "step": "exam-article",
+   "stepTitle": "Haithabu früher und heute",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным текстом: объясните, какой фрагмент подтверждает каждое решение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "seit",
+         "text": "Seit"
+        },
+        {
+         "key": "montag",
+         "text": "Montag"
+        }
+       ],
+       [
+        {
+         "key": "planen",
+         "text": "planen"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "fahrt",
+         "text": "Fahrt"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Seit Montag planen wir die Fahrt.",
+      "ru": "С понедельника мы планируем поездку.",
+      "audio": "audio/0fd780793d20.m4a"
+     }
+    ],
+    "task": "article"
+   }
+  },
+  {
+   "id": "exam-article-2",
+   "step": "exam-article",
+   "stepTitle": "Haithabu früher und heute",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "seit",
+         "text": "Seit"
+        },
+        {
+         "key": "montag",
+         "text": "Montag"
+        }
+       ],
+       [
+        {
+         "key": "planen",
+         "text": "planen"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "fahrt",
+         "text": "Fahrt"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Seit Montag planen wir die Fahrt.",
+      "ru": "С понедельника мы планируем поездку.",
+      "audio": "audio/0fd780793d20.m4a"
+     }
+    ],
+    "task": "article"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "seit",
+         "text": "Seit"
+        },
+        {
+         "key": "montag",
+         "text": "Montag"
+        }
+       ],
+       [
+        {
+         "key": "planen",
+         "text": "planen"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "fahrt",
+         "text": "Fahrt"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Seit Montag planen wir die Fahrt.",
+      "ru": "С понедельника мы планируем поездку.",
+      "audio": "audio/0fd780793d20.m4a"
+     }
+    ],
+    "task": "article",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-directory-1",
+   "step": "exam-directory",
+   "stepTitle": "Übungswegweiser · kein Gebäudeplan",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным текстом: объясните, какой фрагмент подтверждает каждое решение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "seit",
+         "text": "Seit"
+        },
+        {
+         "key": "montag",
+         "text": "Montag"
+        }
+       ],
+       [
+        {
+         "key": "planen",
+         "text": "planen"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "fahrt",
+         "text": "Fahrt"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Seit Montag planen wir die Fahrt.",
+      "ru": "С понедельника мы планируем поездку.",
+      "audio": "audio/0fd780793d20.m4a"
+     }
+    ],
+    "task": "directory"
+   }
+  },
+  {
+   "id": "exam-directory-2",
+   "step": "exam-directory",
+   "stepTitle": "Übungswegweiser · kein Gebäudeplan",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "seit",
+         "text": "Seit"
+        },
+        {
+         "key": "montag",
+         "text": "Montag"
+        }
+       ],
+       [
+        {
+         "key": "planen",
+         "text": "planen"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "fahrt",
+         "text": "Fahrt"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Seit Montag planen wir die Fahrt.",
+      "ru": "С понедельника мы планируем поездку.",
+      "audio": "audio/0fd780793d20.m4a"
+     }
+    ],
+    "task": "directory"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "seit",
+         "text": "Seit"
+        },
+        {
+         "key": "montag",
+         "text": "Montag"
+        }
+       ],
+       [
+        {
+         "key": "planen",
+         "text": "planen"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "fahrt",
+         "text": "Fahrt"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Seit Montag planen wir die Fahrt.",
+      "ru": "С понедельника мы планируем поездку.",
+      "audio": "audio/0fd780793d20.m4a"
+     }
+    ],
+    "task": "directory",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-plan-1",
+   "step": "exam-plan",
+   "stepTitle": "Unser Lernplan",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным текстом: объясните, какой фрагмент подтверждает каждое решение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "seit",
+         "text": "Seit"
+        },
+        {
+         "key": "montag",
+         "text": "Montag"
+        }
+       ],
+       [
+        {
+         "key": "planen",
+         "text": "planen"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "fahrt",
+         "text": "Fahrt"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Seit Montag planen wir die Fahrt.",
+      "ru": "С понедельника мы планируем поездку.",
+      "audio": "audio/0fd780793d20.m4a"
+     }
+    ],
+    "task": "plan"
+   }
+  },
+  {
+   "id": "exam-plan-2",
+   "step": "exam-plan",
+   "stepTitle": "Unser Lernplan",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "seit",
+         "text": "Seit"
+        },
+        {
+         "key": "montag",
+         "text": "Montag"
+        }
+       ],
+       [
+        {
+         "key": "planen",
+         "text": "planen"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "fahrt",
+         "text": "Fahrt"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Seit Montag planen wir die Fahrt.",
+      "ru": "С понедельника мы планируем поездку.",
+      "audio": "audio/0fd780793d20.m4a"
+     }
+    ],
+    "task": "plan"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "seit",
+         "text": "Seit"
+        },
+        {
+         "key": "montag",
+         "text": "Montag"
+        }
+       ],
+       [
+        {
+         "key": "planen",
+         "text": "planen"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "fahrt",
+         "text": "Fahrt"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Seit Montag planen wir die Fahrt.",
+      "ru": "С понедельника мы планируем поездку.",
+      "audio": "audio/0fd780793d20.m4a"
+     }
+    ],
+    "task": "plan",
+    "solved": true
+   }
+  }
+ ],
+ "exercises": [
+  {
+   "id": "a2-ausflug-1",
+   "type": "choice",
+   "q": "___ zwei Wochen haben wir die Idee besprochen.",
+   "options": [
+    "Vor",
+    "Seit",
+    "Für"
+   ],
+   "answer": 0,
+   "why": "Завершённый момент: назад.",
+   "audio": "audio/3a0e4241bf9d.m4a"
+  },
+  {
+   "id": "a2-ausflug-2",
+   "type": "choice",
+   "q": "___ Montag planen wir die Fahrt.",
+   "options": [
+    "Seit",
+    "Vor",
+    "Um"
+   ],
+   "answer": 0,
+   "why": "Начало продолжающегося действия.",
+   "audio": "audio/0fd780793d20.m4a"
+  },
+  {
+   "id": "a2-ausflug-3",
+   "type": "choice",
+   "q": "Wir ___ seit Montag die Fahrt.",
+   "options": [
+    "planen",
+    "haben geplant gewesen",
+    "geplant"
+   ],
+   "answer": 0,
+   "why": "Настоящее время.",
+   "audio": "audio/b1e50e8740b9.m4a"
+  },
+  {
+   "id": "a2-ausflug-4",
+   "type": "choice",
+   "q": "Wir sind seit ___ Stunde hier.",
+   "options": [
+    "einer",
+    "eine",
+    "einen"
+   ],
+   "answer": 0,
+   "why": "Dativ после seit.",
+   "audio": "audio/c4e4018c9861.m4a"
+  },
+  {
+   "id": "a2-ausflug-5",
+   "type": "choice",
+   "q": "Vor ___ Jahr war ich in Kiel.",
+   "options": [
+    "einem",
+    "ein",
+    "einen"
+   ],
+   "answer": 0,
+   "why": "Dativ после vor.",
+   "audio": "audio/78b73cab815c.m4a"
+  },
+  {
+   "id": "a2-ausflug-6",
+   "type": "choice",
+   "q": "Что означает *zwei Stunden für die Ausstellung*?",
+   "options": [
+    "длительность плана",
+    "два часа назад",
+    "со вчерашнего дня"
+   ],
+   "answer": 0,
+   "why": "Контекст распределения времени."
+  },
+  {
+   "id": "a2-ausflug-7",
+   "type": "order",
+   "ru": "С понедельника мы планируем поездку.",
+   "de": "Seit Montag planen wir die Fahrt.",
+   "audio": "audio/0fd780793d20.m4a"
+  },
+  {
+   "id": "a2-ausflug-8",
+   "type": "order",
+   "ru": "Две недели назад мы об этом говорили.",
+   "de": "Vor zwei Wochen haben wir darüber gesprochen.",
+   "audio": "audio/8c9a2cc02ce1.m4a"
+  },
+  {
+   "id": "a2-ausflug-9",
+   "type": "order",
+   "ru": "Мы в музее уже час.",
+   "de": "Wir sind seit einer Stunde im Museum.",
+   "audio": "audio/8ca1d5eebac1.m4a"
+  },
+  {
+   "id": "a2-ausflug-10",
+   "type": "order",
+   "ru": "Раньше Хайтабу было торговым поселением.",
+   "de": "Früher war Haithabu ein Handelsplatz.",
+   "audio": "audio/4704c15e4171.m4a"
+  },
+  {
+   "id": "a2-ausflug-11",
+   "type": "order",
+   "ru": "Наше посещение длится три часа.",
+   "de": "Unser Besuch dauert drei Stunden.",
+   "audio": "audio/127938ec1b4e.m4a"
+  },
+  {
+   "id": "a2-ausflug-12",
+   "type": "order",
+   "ru": "В тринадцать мы снова встречаемся.",
+   "de": "Um dreizehn Uhr treffen wir uns wieder.",
+   "audio": "audio/1aa6be0915a0.m4a"
+  }
+ ],
+ "case": {
+  "title": "Vorher, seitdem und unser Plan",
+  "ru": "Сверка дневника",
+  "intro": "В дневнике смешали историю Хайтабу, начало планирования и часы группы. Восстановите смысл каждой строки.",
+  "people": {},
+  "steps": [
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Vor zwei Wochen haben wir die Idee besprochen.",
+      "ru": "Две недели назад мы обсудили идею."
+     }
+    ],
+    "question": "Что означает срок?",
+    "options": [
+     "Длительность посещения",
+     "Момент разговора в прошлом",
+     "План на будущие две недели"
+    ],
+    "answer": 1,
+    "right": "*Vor* относит событие в прошлое.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Seit Montag planen wir die Fahrt.",
+      "ru": "С понедельника мы планируем поездку."
+     }
+    ],
+    "question": "Как описано действие?",
+    "options": [
+     "Продолжается с понедельника",
+     "Закончилось до понедельника",
+     "Начнётся через неделю"
+    ],
+    "answer": 0,
+    "right": "*Seit* и настоящее время описывают продолжающееся действие.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Unser Lernplan: Treffen um 13 Uhr. Keine offizielle Museumszeit.",
+      "ru": "Наш учебный план: встреча в 13:00. Не официальное время музея."
+     }
+    ],
+    "question": "Что подтверждает запись?",
+    "options": [
+     "Время встречи группы",
+     "Все часы работы музея",
+     "Начало любой экскурсии"
+    ],
+    "answer": 0,
+    "right": "План группы не заменяет программу учреждения.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   }
+  ],
+  "ending": "Запись исправлена по источникам. В следующей главе команда воспользуется подтверждёнными сведениями для нового решения."
+ },
+ "adventure": {
+  "kind": "sequence",
+  "title": "Соберите посещение из разных времён",
+  "intro": "Команда готовит поездку в Хайтабу рядом со Шлезвигом. В коротком тексте есть история торгового поселения, музей и реконструированные дома. Нужно отделить события прошлого от того, что продолжается сейчас, и составить свой учебный план посещения.",
+  "ending": "История места, продолжающееся планирование и часы группы разделены. Дневник готов к новой встрече во Фленсбурге, где понадобится уточнять ещё не известные сведения.",
+  "challenges": [
+   {
+    "id": "history",
+    "kind": "select",
+    "title": "Найдите подтверждённый факт",
+    "intro": "Прочитайте текст, не опираясь на прежнее знание истории.",
+    "success": "Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы одно из них.",
+    "wrong": "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание и адресата.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Haithabu liegt in Busdorf bei Schleswig. Früher war Haithabu ein wichtiger Handelsplatz mit einem Hafen. Heute gibt es dort ein Museum und rekonstruierte Häuser. Die Häuser zeigen einen Teil des früheren Lebens. Haithabu und das Danewerk gehören seit 2018 zum UNESCO-Welterbe. Die Gruppe plant ihren Besuch seit Montag. Ihre Zeiten im Lernplan sind Beispiele, keine Öffnungszeiten.",
+      "name": "Haithabu früher und heute"
+     }
+    ],
+    "options": [
+     {
+      "id": "o0",
+      "label": "Früher war Haithabu ein Handelsplatz."
+     },
+     {
+      "id": "o1",
+      "label": "Haithabu liegt in Hamburg."
+     },
+     {
+      "id": "o2",
+      "label": "Alle Häuser sind unveränderte Originale."
+     }
+    ],
+    "answer": [
+     "o0"
+    ]
+   },
+   {
+    "id": "time-meanings",
+    "kind": "match",
+    "title": "Разнесите три временных смысла",
+    "intro": "Одно число может отвечать на разные вопросы. Сопоставьте целые выражения.",
+    "success": "Момент в прошлом, продолжающаяся работа и длительность не смешались.",
+    "wrong": "Проверьте предлог: *vor*, *seit* и интервал выполняют разные задачи.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Seit Montag planen wir die Fahrt. Vor zwei Wochen haben wir die Idee besprochen. Lernplan: 10–12 Uhr Ausstellung, 12–13 Uhr draußen. Um 13 Uhr treffen wir uns wieder. Das ist unser eigener Plan, nicht das Programm des Museums.",
+      "name": "Elif"
+     }
+    ],
+    "options": [
+     {
+      "id": "past",
+      "label": "событие две недели назад"
+     },
+     {
+      "id": "ongoing",
+      "label": "началось в понедельник и продолжается"
+     },
+     {
+      "id": "duration",
+      "label": "два часа по учебному плану"
+     }
+    ],
+    "slots": [
+     {
+      "id": "before",
+      "label": "vor zwei Wochen",
+      "answer": "past"
+     },
+     {
+      "id": "since",
+      "label": "seit Montag",
+      "answer": "ongoing"
+     },
+     {
+      "id": "duration",
+      "label": "10–12 Uhr Ausstellung",
+      "answer": "duration"
+     }
+    ]
+   },
+   {
+    "id": "since",
+    "kind": "order",
+    "title": "Расскажите о продолжающейся подготовке",
+    "intro": "Начните со времени: «С понедельника мы планируем поездку».",
+    "success": "Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.",
+    "wrong": "Проверьте положение глагола и конец предложения: используйте все фрагменты.",
+    "tokens": [
+     "Seit Montag",
+     "planen",
+     "wir",
+     "die Fahrt."
+    ],
+    "label": "Реплика для команды"
+   },
+   {
+    "id": "return",
+    "kind": "clock",
+    "title": "Поставьте время повторной встречи",
+    "intro": "В этом задании используйте часы только из плана группы, не из музейной программы.",
+    "success": "Встреча группы в 13:00 завершает две части её учебного плана.",
+    "wrong": "В плане повторная встреча указана в 13:00.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Seit Montag planen wir die Fahrt. Vor zwei Wochen haben wir die Idee besprochen. Lernplan: 10–12 Uhr Ausstellung, 12–13 Uhr draußen. Um 13 Uhr treffen wir uns wieder. Das ist unser eigener Plan, nicht das Programm des Museums.",
+      "name": "Elif"
+     }
+    ],
+    "answer": "13:00",
+    "initial": "12:00",
+    "minuteStep": 5
+   },
+   {
+    "id": "area",
+    "kind": "select",
+    "title": "Найдите информационную точку",
+    "intro": "Гостю нужно уточнить билет. Выберите учебную зону.",
+    "success": "Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы одно из них.",
+    "wrong": "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание и адресата.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Lernbereich A: Information, Tickets, Treffpunkt.\nLernbereich B: Ausstellung, Lesetexte, Karten.\nLernbereich C: Modelle der Häuser, Werkzeuge.\nLernbereich D: Pause, Getränke, Sitzplätze.",
+      "name": "Übungswegweiser · kein Gebäudeplan"
+     }
+    ],
+    "options": [
+     {
+      "id": "o0",
+      "label": "A"
+     },
+     {
+      "id": "o1",
+      "label": "B"
+     },
+     {
+      "id": "o2",
+      "label": "D"
+     }
+    ],
+    "answer": [
+     "o0"
+    ]
+   }
+  ]
+ },
+ "spy": [
+  {
+   "de": "Seit Montag planen wir die Fahrt.",
+   "wrong": "Seit Montag wir planen die Fahrt.",
+   "why": "Глагол стоит на второй позиции: после *Seit Montag* сразу идёт *planen*, а *wir* — за ним.",
+   "auto": true
+  }
+ ]
+}

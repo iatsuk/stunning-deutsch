@@ -1,0 +1,605 @@
+id: a2-wohnen
+order: 8
+title: Wir brauchen einen kleinen Tisch.
+ru: Комната для гостя
+lede: В гостевой комнате клуба готовят место для приезжего участника. Друзья выбирают небольшой
+  стол, синий стул и светлую лампу. В объявлениях похожие предметы, поэтому нужно читать
+  описание целиком и не путать, что уже есть, а что ещё требуется.
+goals:
+  - Узнать окончания прилагательных в Nom и Akk
+  - Выбрать предмет по нескольким признакам
+  - Различить описание предмета и просьбу купить его
+  - Найти отдел магазина по указателю
+grammar:
+  - "Прилагательные: der kleine Tisch, ein kleiner Tisch, einen kleinen Tisch"
+exam:
+  - a2-lesen-2
+  - a2-lesen-1
+  - a2-sprechen-2
+dialogues:
+  scene:
+    title: Wir brauchen einen kleinen Tisch.
+    ru: Комната для гостя
+    place: Kiel · гостевая комната вымышленного клуба · вымышленная учебная ситуация
+    people:
+      D:
+        name: Dana
+        voice: Anna
+      M:
+        name: Mateo
+        voice: Reed
+      E:
+        name: Elif
+        voice: Flo
+      H:
+        name: Hauke
+        voice: Rocko
+    lines:
+      - D: Das Gästezimmer ist fast fertig. Was fehlt noch?
+        ru: Гостевая комната почти готова. Чего ещё не хватает?
+      - E: Wir brauchen einen kleinen Tisch und eine helle Lampe.
+        ru: Нам нужны маленький стол и светлая лампа.
+      - M: Hier ist ein kleiner Tisch im Katalog. Der kleine Tisch kostet 25 Euro.
+        ru: Вот маленький стол в каталоге. Этот маленький стол стоит 25 евро.
+      - H: Gut. Ich nehme den kleinen Tisch. Der große passt nicht ins Zimmer.
+        ru: Хорошо. Я беру маленький стол. Большой не помещается в комнате.
+      - D: Und welchen Stuhl nehmen wir?
+        ru: А какой стул возьмём?
+      - E: Den blauen Stuhl. Er passt gut zum Tisch.
+        ru: Синий стул. Он хорошо подходит к столу.
+      - M: Die helle Lampe haben wir schon. Eine neue brauchen wir nicht.
+        ru: Светлая лампа у нас уже есть. Новая нам не нужна.
+      - H: Dann kaufen wir nur den Tisch und den Stuhl.
+        ru: Тогда покупаем только стол и стул.
+words:
+  useful:
+    title: Wörter für die Aufgabe
+    ru: Слова для действия
+    items:
+      - de: klein
+        ru: маленький
+      - de: groß
+        ru: большой
+      - de: hell
+        ru: светлый
+      - de: dunkel
+        ru: тёмный
+      - de: blau
+        ru: синий
+      - de: eine neue Lampe
+        ru: новая лампа
+      - de: gebraucht
+        ru: бывший в употреблении
+      - de: bequem
+        ru: удобный
+      - de: die Lampe
+        ru: лампа
+        pl: Lampen
+      - de: der Stuhl
+        ru: стул
+        pl: Stühle
+      - de: das Regal
+        ru: стеллаж
+        pl: Regale
+      - de: einrichten
+        ru: обустраивать
+tables:
+  rule:
+    title: "Прилагательные: der kleine Tisch, ein kleiner Tisch, einen kleinen Tisch"
+    ru: Опора для решения
+    head:
+      - Beispiel
+      - Смысл и форма
+    ruCols:
+      - 1
+    rows:
+      - - Der kleine Tisch ist hier.
+        - "После der в Nom: der kleine Tisch."
+      - - Ein kleiner Tisch ist hier.
+        - "После ein в Nom м. р.: ein kleiner Tisch."
+      - - Wir brauchen einen kleinen Tisch.
+        - "Akk м. р.: einen / den kleinen Tisch."
+      - - Der Tisch ist klein. Ich nehme den kleinen Tisch.
+        - После sein — klein; перед существительным — окончание.
+tasks:
+  list:
+    kind: message
+    part: a2-lesen-2
+    title: Die letzte Einkaufsliste
+    from: Elif
+    text: Wir kaufen einen kleinen Tisch und einen blauen Stuhl. Die helle Lampe ist schon im
+      Zimmer. Eine neue Lampe brauchen wir nicht. Tisch A ist klein und kostet 25 Euro. Tisch B
+      ist groß und kostet 20 Euro. Der blaue Stuhl kostet 15 Euro.
+  directory:
+    kind: worksheet
+    part: a2-lesen-1
+    format: directory
+    title: Wegweiser im Lernkaufhaus
+    text: |-
+      Erdgeschoss: Kasse, Information, Taschen.
+      1. Stock: Tische, Stühle, Regale.
+      2. Stock: Lampen, Textilien, Kissen.
+      3. Stock: Café, Toiletten.
+    questions:
+      - prompt: Sie suchen einen Tisch.
+        options:
+          - Erdgeschoss
+          - 1. Stock
+          - Anderes Stockwerk
+        answers:
+          - 1. Stock
+      - prompt: Sie brauchen eine Lampe.
+        options:
+          - Erdgeschoss
+          - 1. Stock
+          - Anderes Stockwerk
+        answers:
+          - Anderes Stockwerk
+      - prompt: Sie möchten bezahlen.
+        options:
+          - Erdgeschoss
+          - 1. Stock
+          - Anderes Stockwerk
+        answers:
+          - Erdgeschoss
+      - prompt: Sie möchten einen Kaffee.
+        options:
+          - Erdgeschoss
+          - 1. Stock
+          - Anderes Stockwerk
+        answers:
+          - Anderes Stockwerk
+      - prompt: Sie suchen ein Regal.
+        options:
+          - Erdgeschoss
+          - 1. Stock
+          - Anderes Stockwerk
+        answers:
+          - 1. Stock
+  talk:
+    kind: card
+    part: a2-sprechen-2
+    title: Eine Wohnung beschreiben
+    theme: Wohnen
+    word: Möbel – Farbe – Größe
+    sample:
+      - Was braucht ihr noch für das Zimmer?
+      - Wir brauchen einen kleinen Tisch.
+      - Die helle Lampe haben wir schon.
+steps:
+  - id: start
+    chapter: scene
+    title: Новое дело команды
+    beats:
+      - read: "В гостевой комнате клуба готовят место для приезжего участника. Друзья выбирают
+          небольшой стол, синий стул и светлую лампу. В объявлениях похожие предметы, поэтому
+          нужно читать описание целиком и не путать, что уже есть, а что ещё требуется. Все
+          нужные условия даны в сцене: знания географии, настоящих цен или расписаний не
+          требуются. Сначала попробуйте понять, какого результата добиваются друзья, затем
+          слушайте реплики. На новом уровне важно не только найти число или знакомое слово, но
+          и связать несколько сведений."
+        point: Комната для гостя
+        set:
+          view: dialogue
+          dialogue: scene
+          reveal: 4
+      - read: "Сначала Элиф называет то, что требуется, а потом Матео уточняет: лампа уже есть.
+          Итоговый список должен учесть это изменение. Описание *ein kleiner Tisch* и покупка
+          *einen kleinen Tisch* относятся к одному предмету, но его роль в предложении
+          меняется. В игре важны и признаки вещи, и последнее уточнение о наличии."
+        point: "Прилагательные: der kleine Tisch, ein kleiner Tisch, einen kleinen Tisch"
+        set:
+          reveal: 8
+  - id: words
+    chapter: words
+    title: Слова, которые понадобятся
+    beats:
+      - read: "Предметы различаются размером, цветом и состоянием: маленький стол, синий стул, новая
+          лампа. Не нужно запоминать всю систему склонения прилагательных за один урок. Здесь
+          работаем с именительным и винительным в знакомых коротких описаниях. Дательный места
+          уже известен, но полную таблицу новых окончаний в нём пока не добавляем."
+        point: Сначала используйте слово для решения; словарь остаётся справочником.
+        set:
+          view: words
+          words: useful
+          reveal: 6
+      - read: "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к
+          ситуации: какие слова обозначают человека, место, условие или уже выполненное
+          действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово
+          встретится снова в записке или разговоре, попробуйте восстановить его смысл до
+          подсказки."
+        point: Возвращайтесь к выражениям в сообщениях и новых действиях.
+        set:
+          reveal: 12
+  - id: grammar
+    chapter: grammar
+    title: "Прилагательные: der kleine Tisch, ein kleiner Tisch, einen kleinen Tisch"
+    beats:
+      - read: "Прилагательное между артиклем и существительным получает окончание. В этой модели
+          артикль *der* уже показывает мужской род, а прилагательное имеет *-e*: *der kleine
+          Tisch*. Это отличается от *Der Tisch ist klein*, где прилагательное стоит после
+          *sein* и окончания не получает. Сначала установите положение прилагательного."
+        point: "После der в Nom: der kleine Tisch."
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+            - 3
+      - read: "У *ein* здесь нет отдельного родового окончания, поэтому оно появляется у
+          прилагательного: *kleiner*. Сравните с *eine helle Lampe* и *ein kleines Regal*. Это
+          три частые опоры для первого описания предмета. В игре определите вещь по смыслу,
+          затем проверьте, как она названа в сообщении."
+        point: "После ein в Nom м. р.: ein kleiner Tisch."
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+            - 3
+      - read: "Когда стол — предмет покупки или потребности, используется Akkusativ: *einen kleinen
+          Tisch*, *den kleinen Tisch*. Мужской артикль меняется на *einen / den*,
+          прилагательное получает *-en*. У женского в наших примерах остаётся *eine helle
+          Lampe*, у среднего — *ein kleines Regal*. Не переносите мужскую форму на все роды."
+        point: "Akk м. р.: einen / den kleinen Tisch."
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+            - 3
+      - read: "Две фразы описывают тот же размер, но устроены по-разному. После *ist* прилагательное не
+          склоняется. Перед *Tisch* оно согласуется с формой именной группы. В короткой просьбе
+          можно использовать уже определённую вещь: *den kleinen Tisch*. На первом шаге
+          полезнее уверенно различать эти модели, чем пытаться охватить все окончания сразу."
+        point: После sein — klein; перед существительным — окончание.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+            - 3
+  - id: frames
+    chapter: grammar
+    title: Как устроена реплика
+    beats:
+      - read: В предложении *Ich nehme den kleinen Tisch* подлежащее — *Ich*, личная форма — *nehme*,
+          предмет покупки — вся группа *den kleinen Tisch*. Окончания внутри группы не
+          переставляют глагол и не меняют смысл на действие самого стола. Скажите вслух, что
+          покупаете, затем добавьте признак, отличающий предмет от другого.
+        point: "*Ich nehme den kleinen Tisch.*"
+        set:
+          view: sentence
+          rows:
+            - de:
+                - Ich
+                - nehme
+                - den kleinen Tisch.
+                - ""
+              ru: Я беру маленький стол.
+  - id: check
+    chapter: practice
+    title: Проверьте смысл до подсказки
+    beats:
+      - question: Ein klein Tisch или ein kleiner Tisch?
+        read: "*Ein kleiner Tisch*, если речь о предмете в именительном падеже. В просьбе купить его
+          будет *einen kleinen Tisch*. Изменяется роль именной группы; размер остаётся тем же.
+          Артикль и окончание рассматриваем вместе, а не выбираем случайное окончание по
+          последней букве слова."
+        point: "*ein kleiner Tisch* → *einen kleinen Tisch*."
+        set:
+          view: table
+          table: rule
+      - question: После Der Tisch ist нужно klein или kleine?
+        read: "*Klein*. Здесь прилагательное стоит после *sein*, как в знакомом описании *Das Zimmer
+          ist hell*. Окончания появляются в сочетании перед существительным: *der kleine
+          Tisch*. Не считайте любой артикль в предложении причиной изменить прилагательное."
+        point: "*Der Tisch ist klein*, но *der kleine Tisch*."
+        set:
+          view: table
+          table: rule
+  - id: exam-list
+    chapter: exam
+    title: Die letzte Einkaufsliste
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: list
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: list
+        set:
+          view: task
+          task: list
+          solved: true
+  - id: exam-directory
+    chapter: exam
+    title: Wegweiser im Lernkaufhaus
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: directory
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: directory
+        set:
+          view: task
+          task: directory
+          solved: true
+  - id: exam-talk
+    chapter: exam
+    title: Eine Wohnung beschreiben
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: talk
+          reveal: 0
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: talk
+          reveal: 0
+        set:
+          view: task
+          task: talk
+          solved: true
+exercises:
+  - type: choice
+    q: ___ kleine Tisch ist hier.
+    options:
+      - Der
+      - Den
+      - Dem
+    answer: 0
+    why: Именительный.
+  - type: choice
+    q: Ein ___ Tisch ist hier.
+    options:
+      - kleiner
+      - kleinen
+      - klein
+    answer: 0
+    why: Ein + Nom м. р.
+  - type: choice
+    q: Ich nehme einen ___ Tisch.
+    options:
+      - kleinen
+      - kleiner
+      - kleine
+    answer: 0
+    why: Akk м. р.
+  - type: choice
+    q: Wir brauchen eine ___ Lampe.
+    options:
+      - helle
+      - hellen
+      - heller
+    answer: 0
+    why: Женский род.
+  - type: choice
+    q: Das Zimmer ist ___.
+    options:
+      - hell
+      - helle
+      - helles
+    answer: 0
+    why: После sein без окончания.
+  - type: choice
+    q: Ein ___ Regal steht hier.
+    options:
+      - kleines
+      - kleinen
+      - kleiner
+    answer: 0
+    why: Средний род Nom.
+  - type: order
+    ru: Нам нужен маленький стол.
+    de: Wir brauchen einen kleinen Tisch.
+  - type: order
+    ru: Стол маленький.
+    de: Der Tisch ist klein.
+  - type: order
+    ru: Я беру синий стул.
+    de: Ich nehme den blauen Stuhl.
+  - type: order
+    ru: Светлая лампа у нас уже есть.
+    de: Die helle Lampe haben wir schon.
+  - type: order
+    ru: Здесь стоит маленький стеллаж.
+    de: Ein kleines Regal steht hier.
+  - type: order
+    ru: Мы не покупаем новую лампу.
+    de: Wir kaufen keine neue Lampe.
+case:
+  title: Die Lampe ist schon da
+  ru: Сверка дневника
+  intro: В заказе для гостевой комнаты появилась лишняя лампа и большой стол. Сверьте
+    окончательное сообщение, прежде чем отправлять заказ.
+  people: {}
+  steps:
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Wir brauchen einen kleinen Tisch. Der große passt nicht.
+          ru: Нам нужен маленький стол. Большой не подходит.
+      question: Что выбрать?
+      options:
+        - Маленький стол
+        - Большой стол
+        - Любой дешёвый
+      answer: 0
+      right: Критерий размера назван прямо.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Die helle Lampe haben wir schon. Eine neue brauchen wir nicht.
+          ru: Светлая лампа у нас уже есть. Новая нам не нужна.
+      question: Нужно ли покупать лампу?
+      options:
+        - Да
+        - Нет
+        - Только тёмную
+      answer: 1
+      right: Уточнение о наличии отменяет покупку новой лампы.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Ich nehme den blauen Stuhl.
+          ru: Я беру синий стул.
+      question: Какой предмет и признак подтверждены?
+      options:
+        - Синий стол
+        - Синий стул
+        - Любой стул
+      answer: 1
+      right: Вся именная группа обозначает конкретный стул.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+  ending: Запись исправлена по источникам. В следующей главе команда воспользуется
+    подтверждёнными сведениями для нового решения.
+adventure:
+  kind: sequence
+  title: Подберите вещи для комнаты
+  intro: В гостевой комнате клуба готовят место для приезжего участника. Друзья выбирают
+    небольшой стол, синий стул и светлую лампу. В объявлениях похожие предметы, поэтому нужно
+    читать описание целиком и не путать, что уже есть, а что ещё требуется.
+  ending: "Куплены только нужные вещи: маленький стол и синий стул. Уже имеющаяся лампа не попала
+    в заказ повторно. Следующая запись дневника свяжет планы с работой команды."
+  challenges:
+    - id: table
+      kind: select
+      title: Выберите подходящий стол
+      intro: Комната небольшая. Выберите стол из последнего списка, который соответствует описанию.
+      mode: reading
+      clue:
+        task: list
+      options:
+        - id: o0
+          label: Tisch A · klein · 25 €
+        - id: o1
+          label: Tisch B · groß · 20 €
+        - id: o2
+          label: Beide passen.
+      answer:
+        - o0
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."
+    - id: description
+      kind: order
+      title: Назовите вещь в первый раз
+      intro: "Соберите: «Здесь есть маленький стол»."
+      label: Реплика для команды
+      tokens:
+        - Ein kleiner Tisch
+        - ist
+        - hier.
+      success: Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.
+      wrong: "Проверьте положение глагола и конец предложения: используйте все фрагменты."
+    - id: buy
+      kind: pack
+      title: Соберите окончательный заказ
+      intro: Учтите уточнение о лампе.
+      mode: reading
+      clue:
+        task: list
+      options:
+        - id: o0
+          label: einen kleinen Tisch
+        - id: o1
+          label: einen blauen Stuhl
+        - id: o2
+          label: eine neue Lampe
+      answer:
+        - o0
+        - o1
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."
+    - id: forms
+      kind: match
+      title: Соедините реплику и её роль
+      intro: Различите первое описание, покупку и описание после sein.
+      mode: reading
+      slots:
+        - id: nom
+          label: Ein … Tisch ist hier.
+          answer: kleiner
+        - id: akk
+          label: Ich nehme einen … Tisch.
+          answer: kleinen
+        - id: sein
+          label: Der Tisch ist …
+          answer: klein
+      options:
+        - id: kleiner
+          label: kleiner
+        - id: kleinen
+          label: kleinen
+        - id: klein
+          label: klein
+      success: Формы согласованы с ролью и положением прилагательного.
+      wrong: После *ein* в Nom — *kleiner*, после *einen* — *kleinen*, после *ist* — *klein*.
+    - id: floor
+      kind: select
+      title: Найдите мебель в магазине
+      intro: В какой отдел идти за столом и стулом?
+      mode: reading
+      clue:
+        task: directory
+      options:
+        - id: o0
+          label: Erdgeschoss
+        - id: o1
+          label: 1. Stock
+        - id: o2
+          label: 2. Stock
+      answer:
+        - o1
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."

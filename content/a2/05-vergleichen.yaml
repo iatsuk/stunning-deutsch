@@ -1,0 +1,720 @@
+id: a2-vergleichen
+order: 5
+title: Welcher Plan passt besser?
+ru: Сравниваем варианты
+lede: Для поездки в Любек друзья сравнивают кафе, музей и прогулку. Нужно учитывать цену,
+  расстояние и интересы, а затем согласовать подходящий план. Все предложения и суммы в уроке
+  вымышлены.
+goals:
+  - Сравнить два варианта и назвать отличие
+  - Понять превосходную степень частых слов
+  - Выбрать несколько допустимых планов по условиям
+  - Сопоставить объявление и запрос, включая отсутствие подходящего
+grammar:
+  - "Komparativ: günstiger als, so … wie, am liebsten"
+exam:
+  - a2-lesen-3
+  - a2-hoeren-2
+  - a2-sprechen-3
+dialogues:
+  scene:
+    title: Welcher Plan passt besser?
+    ru: Сравниваем варианты
+    place: Lübeck · вымышленные предложения · вымышленная учебная ситуация
+    people:
+      D:
+        name: Dana
+        voice: Anna
+      M:
+        name: Mateo
+        voice: Reed
+      E:
+        name: Elif
+        voice: Flo
+      H:
+        name: Hauke
+        voice: Rocko
+    lines:
+      - D: Welches Café ist günstiger?
+        ru: Какое кафе дешевле?
+      - M: Café B ist günstiger als Café A.
+        ru: Кафе B дешевле кафе A.
+      - E: Ist es auch näher am Museum?
+        ru: А оно ближе к музею?
+      - H: Ja. Café A ist weiter weg, aber genauso ruhig wie Café B.
+        ru: Да. Кафе A дальше, но такое же тихое, как B.
+      - D: Ich möchte am liebsten ins Museum.
+        ru: Я больше всего хочу в музей.
+      - M: Mit Café B kostet unser Plan zwanzig Euro. Das passt.
+        ru: С кафе B наш план стоит двадцать евро. Подходит.
+      - E: Ein Spaziergang ist noch günstiger.
+        ru: Прогулка ещё дешевле.
+      - H: Beides ist möglich. Was gefällt euch besser?
+        ru: Возможны оба варианта. Что вам нравится больше?
+words:
+  useful:
+    title: Wörter für die Aufgabe
+    ru: Слова для действия
+    items:
+      - de: günstig
+        ru: недорогой, выгодный
+      - de: günstiger
+        ru: дешевле
+      - de: teuer
+        ru: дорогой
+      - de: näher am Museum
+        ru: ближе к музею
+      - de: weiter weg
+        ru: дальше
+      - de: genauso
+        ru: точно так же
+      - de: vergleichen
+        ru: сравнивать
+      - de: die Auswahl
+        ru: выбор
+        pl: "-"
+      - de: das Angebot
+        ru: предложение
+        pl: Angebote
+      - de: der Eintritt
+        ru: входная плата
+        pl: "-"
+      - de: möglich
+        ru: возможный
+      - de: lieber
+        ru: охотнее
+tables:
+  rule:
+    title: "Komparativ: günstiger als, so … wie, am liebsten"
+    ru: Опора для решения
+    head:
+      - Beispiel
+      - Смысл и форма
+    ruCols:
+      - 1
+    rows:
+      - - Café B ist günstiger als Café A.
+        - "Сравнительная степень: -er + als."
+      - - Café A ist genauso ruhig wie Café B.
+        - "Равенство: so / genauso … wie."
+      - - gut – besser – am besten; nah – näher – am nächsten
+        - Частые формы сравнения меняются заметнее.
+tasks:
+  offers:
+    kind: message
+    part: a2-lesen-3
+    title: Angebote für den Ausflug
+    text: "Lernangebote: Café A kostet 10 Euro, Café B 8 Euro. Beide sind ruhig. Café B ist näher
+      am Museum. Museum: Eintritt 12 Euro. Spaziergang: kostenlos. Wählen Sie ein Café und eine
+      Aktivität. Budget: maximal 20 Euro."
+  offers15:
+    kind: message
+    part: a2-lesen-3
+    title: Neuer Tag, anderes Budget
+    text: "Café A: 10 Euro. Café B: 8 Euro. Museum: 12 Euro. Spaziergang: kostenlos. Wählen Sie
+      genau ein Café und eine Aktivität. Heute haben Sie maximal 15 Euro."
+  ads:
+    kind: worksheet
+    part: a2-lesen-3
+    format: matching
+    title: Welche Anzeige passt?
+    text: |-
+      a) Hafenraum: Ausstellung, täglich 10–18 Uhr, Eintritt 12 Euro.
+      b) Stadtcafé: Frühstück von 8 bis 11 Uhr, ruhiger Innenraum, 8 Euro.
+      c) Abendcafé: ab 17 Uhr, Musik, kein Frühstück.
+      d) Stadtspaziergang: kostenlos, Treffpunkt 14 Uhr.
+      x) Keine passende Anzeige.
+    questions:
+      - prompt: Frühstück in einem ruhigen Raum
+        options:
+          - a
+          - b
+          - c
+          - d
+          - x
+        answers:
+          - b
+      - prompt: Kostenlose Aktivität am Nachmittag
+        options:
+          - a
+          - b
+          - c
+          - d
+          - x
+        answers:
+          - d
+      - prompt: Eine Ausstellung ansehen
+        options:
+          - a
+          - b
+          - c
+          - d
+          - x
+        answers:
+          - a
+      - prompt: Abends Musik hören
+        options:
+          - a
+          - b
+          - c
+          - d
+          - x
+        answers:
+          - c
+      - prompt: Um 6 Uhr morgens im Café frühstücken
+        options:
+          - a
+          - b
+          - c
+          - d
+          - x
+        answers:
+          - x
+  radio:
+    kind: worksheet
+    part: a2-hoeren-2
+    format: radio
+    title: Freizeitradio · Lernmeldung
+    situation: Hören Sie die Meldung einmal. Was ist richtig?
+    voice: Sandy
+    text: Hier sind unsere Freizeittipps. Die Ausstellung ist heute bis achtzehn Uhr geöffnet. Im
+      Stadtcafé gibt es Frühstück bis elf Uhr. Der Stadtspaziergang beginnt um vierzehn Uhr und
+      kostet nichts.
+    questions:
+      - prompt: Ausstellung geöffnet bis
+        options:
+          - 16 Uhr
+          - 18 Uhr
+          - 20 Uhr
+        answers:
+          - 18 Uhr
+      - prompt: Frühstück bis
+        options:
+          - 10 Uhr
+          - 11 Uhr
+          - 14 Uhr
+        answers:
+          - 11 Uhr
+      - prompt: Spaziergang beginnt um
+        options:
+          - 11 Uhr
+          - 12 Uhr
+          - 14 Uhr
+        answers:
+          - 14 Uhr
+      - prompt: Spaziergang kostet
+        options:
+          - 0 Euro
+          - 8 Euro
+          - 12 Euro
+        answers:
+          - 0 Euro
+      - prompt: Worum geht es?
+        options:
+          - Freizeit
+          - Arbeitssuche
+          - Arzttermin
+        answers:
+          - Freizeit
+  pair:
+    kind: card
+    part: a2-sprechen-3
+    title: Wählen und begründen
+    theme: Ausflug
+    word: Café – Museum – Spaziergang
+    sample:
+      - Welcher Plan gefällt dir besser?
+      - Ich möchte lieber ins Museum.
+      - Dann nehmen wir Café B. So bleiben wir im Budget.
+steps:
+  - id: start
+    chapter: scene
+    title: Новое дело команды
+    beats:
+      - read: "Для поездки в Любек друзья сравнивают кафе, музей и прогулку. Нужно учитывать цену,
+          расстояние и интересы, а затем согласовать подходящий план. Все предложения и суммы в
+          уроке вымышлены. Все нужные условия даны в сцене: знания географии, настоящих цен или
+          расписаний не требуются. Сначала попробуйте понять, какого результата добиваются
+          друзья, затем слушайте реплики. На новом уровне важно не только найти число или
+          знакомое слово, но и связать несколько сведений."
+        point: Сравниваем варианты
+        set:
+          view: dialogue
+          dialogue: scene
+          reveal: 4
+      - read: "Разница в цене не делает один план обязательным для всех. Дана предпочитает музей, но
+          прогулка тоже может подходить бюджету. В сообщениях сравниваются конкретные
+          параметры: дешевле, ближе, дальше, такой же тихий. Для решения сначала проверяют
+          жёсткие условия, затем обсуждают предпочтения. В игре несколько сочетаний будут
+          признаны верными."
+        point: "Komparativ: günstiger als, so … wie, am liebsten"
+        set:
+          reveal: 8
+  - id: words
+    chapter: words
+    title: Слова, которые понадобятся
+    beats:
+      - read: "В поездке полезно сравнивать *günstig*, *nah*, *weit*, *ruhig*, а не только говорить
+          «хорошо» и «плохо». Формы *besser* и *lieber* уже частично знакомы из A1. Здесь они
+          помогают объяснить выбор. Название кафе само по себе ничего не сообщает о качестве:
+          вся нужная информация дана в учебных карточках."
+        point: Сначала используйте слово для решения; словарь остаётся справочником.
+        set:
+          view: words
+          words: useful
+          reveal: 6
+      - read: "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к
+          ситуации: какие слова обозначают человека, место, условие или уже выполненное
+          действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово
+          встретится снова в записке или разговоре, попробуйте восстановить его смысл до
+          подсказки."
+        point: Возвращайтесь к выражениям в сообщениях и новых действиях.
+        set:
+          reveal: 12
+  - id: grammar
+    chapter: grammar
+    title: "Komparativ: günstiger als, so … wie, am liebsten"
+    beats:
+      - read: "К частому прилагательному добавляется *-er*: *günstig → günstiger*. Если называем второй
+          объект сравнения, используется *als*. Не смешивайте *als* и *wie*: они выражают
+          разные отношения. Цена B ниже цены A, поэтому здесь есть различие. Фраза описывает
+          только цену, а не все достоинства места."
+        point: "Сравнительная степень: -er + als."
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: "При равной степени признака используем *so … wie* или *genauso … wie*. Оба кафе могут
+          быть одинаково тихими, но иметь разные цены и расстояния. Для игры это отдельные
+          условия. Не переносите равенство одного свойства на все остальные: одинаково тихо не
+          означает одинаково дорого."
+        point: "Равенство: so / genauso … wie."
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: "Некоторые частые слова имеют особые формы. У *gut* это *besser*, у *nah* — *näher*, у
+          *gern* — *lieber*. Превосходная форма в наших примерах: *am besten*, *am nächsten*,
+          *am liebsten*. Лучше употреблять их в выборе конкретного действия, чем запоминать без
+          контекста. Таблица остаётся опорой во время сравнения."
+        point: Частые формы сравнения меняются заметнее.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+  - id: frames
+    chapter: grammar
+    title: Как устроена реплика
+    beats:
+      - read: В сравнении *Café B ist günstiger als Café A* личная форма *ist* сохраняет вторую
+          позицию. Степень сравнения меняет прилагательное и связь между объектами, но не
+          переносит глагол в конец. Если добавляется причина с *weil*, у неё будет собственный
+          порядок. Сначала потренируем простое сравнение, затем объединим его с выбором.
+        point: "*Café B ist günstiger als Café A.*"
+        set:
+          view: sentence
+          rows:
+            - de:
+                - Café B
+                - ist
+                - günstiger als Café A.
+                - ""
+              ru: Кафе B дешевле кафе A.
+  - id: check
+    chapter: practice
+    title: Проверьте смысл до подсказки
+    beats:
+      - question: Для равенства нужен als или wie?
+        read: "*Wie*: *genauso ruhig wie*. *Als* используется после сравнительной степени, когда
+          выражается различие: *günstiger als*. Проверьте, есть ли в тексте равенство или
+          преимущество по конкретному параметру. Уверенная интонация собеседника не заменяет
+          эту связь."
+        point: "Различие: *-er als*; равенство: *so … wie*."
+        set:
+          view: table
+          table: rule
+      - question: Всегда ли самый дешёвый план — единственный верный?
+        read: Нет. Если несколько планов удовлетворяют бюджету и другим обязательным условиям, каждый
+          допустим. Предпочтение музея или прогулки обсуждается отдельно. В игре требуется
+          доказать соответствие условиям, а не угадать любимый вариант составителя.
+        point: Проверяйте условия, затем сравнивайте предпочтения.
+        set:
+          view: table
+          table: rule
+  - id: exam-offers
+    chapter: exam
+    title: Angebote für den Ausflug
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: offers
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: offers
+        set:
+          view: task
+          task: offers
+          solved: true
+  - id: exam-offers15
+    chapter: exam
+    title: Neuer Tag, anderes Budget
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: offers15
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: offers15
+        set:
+          view: task
+          task: offers15
+          solved: true
+  - id: exam-ads
+    chapter: exam
+    title: Welche Anzeige passt?
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: ads
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: ads
+        set:
+          view: task
+          task: ads
+          solved: true
+  - id: exam-radio
+    chapter: exam
+    title: Freizeitradio · Lernmeldung
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: radio
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: radio
+        set:
+          view: task
+          task: radio
+          solved: true
+  - id: exam-pair
+    chapter: exam
+    title: Wählen und begründen
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: pair
+          reveal: 0
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: pair
+          reveal: 0
+        set:
+          view: task
+          task: pair
+          solved: true
+exercises:
+  - type: choice
+    q: Café B ist günstiger ___ Café A.
+    options:
+      - als
+      - wie
+      - weil
+    answer: 0
+    why: "Различие: *als*."
+  - type: choice
+    q: Beide Cafés sind genauso ruhig ___ das Hotel.
+    options:
+      - wie
+      - als
+      - denn
+    answer: 0
+    why: "Равенство: *wie*."
+  - type: choice
+    q: gut – ___ – am besten
+    options:
+      - besser
+      - guter
+      - gutest
+    answer: 0
+    why: Неправильная форма.
+  - type: choice
+    q: nah – ___
+    options:
+      - näher
+      - naher
+      - nächst
+    answer: 0
+    why: Сравнительная степень.
+  - type: choice
+    q: Ich gehe ___ ins Museum als ins Kino.
+    options:
+      - lieber
+      - gernsten
+      - bester
+    answer: 0
+    why: Предпочтение.
+  - type: choice
+    q: 12 Euro sind ___ als 8 Euro.
+    options:
+      - mehr
+      - weniger
+      - gleich
+    answer: 0
+    why: Двенадцать больше восьми.
+  - type: order
+    ru: Кафе B дешевле кафе A.
+    de: Café B ist günstiger als Café A.
+  - type: order
+    ru: Оба кафе тихие.
+    de: Beide Cafés sind ruhig.
+  - type: order
+    ru: Я предпочитаю пойти в музей.
+    de: Ich möchte lieber ins Museum.
+  - type: order
+    ru: Прогулка бесплатная.
+    de: Der Spaziergang ist kostenlos.
+  - type: order
+    ru: Какой план нравится тебе больше?
+    de: Welcher Plan gefällt dir besser?
+  - type: order
+    ru: Кафе B ближе к музею.
+    de: Café B ist näher am Museum.
+case:
+  title: Welcher Vergleich stimmt?
+  ru: Проверяем сравнение
+  intro: В дневнике оказались две версии сообщения. Установите, что подтверждено первоисточником.
+    Вывод зависит от языка, а не от личности автора.
+  people: {}
+  steps:
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Café B ist günstiger als Café A. Beide sind ruhig.
+          ru: Кафе B дешевле A. Оба тихие.
+      question: В чём подтверждённое различие?
+      options:
+        - Цена
+        - Тишина
+        - В обоих свойствах
+      answer: 0
+      right: Различается цена, тишина одинакова.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: "Café B kostet 8 Euro. Der Eintritt kostet 12 Euro. Budget: 20 Euro."
+          ru: Кафе B стоит 8 евро. Вход стоит 12 евро. Бюджет 20.
+      question: Подходит ли сочетание?
+      options:
+        - Да, ровно 20
+        - Нет, 22
+        - Только без кафе
+      answer: 0
+      right: 8 + 12 = 20, превышения нет.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Für Frühstück um sechs Uhr gibt es keine passende Anzeige.
+          ru: Для завтрака в шесть утра нет подходящего объявления.
+      question: Что выбрать?
+      options:
+        - Первое кафе наугад
+        - x — ничего не подходит
+        - Любое место с едой
+      answer: 1
+      right: Отсутствие подходящего варианта — допустимый результат поиска.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+  ending: Запись исправлена по источникам. В следующей главе команда воспользуется
+    подтверждёнными сведениями для нового решения.
+adventure:
+  kind: sequence
+  title: Выберите план по условиям
+  intro: Для поездки в Любек друзья сравнивают кафе, музей и прогулку. Нужно учитывать цену,
+    расстояние и интересы, а затем согласовать подходящий план. Все предложения и суммы в уроке
+    вымышлены.
+  ending: Выбор объяснён сравнением и подтверждён условиями. В следующем уроке планы придётся
+    согласовать с курсом и рабочими сменами.
+  challenges:
+    - id: cheaper
+      kind: select
+      title: Сравните цену кафе
+      intro: Какое кафе дешевле по объявлению?
+      mode: reading
+      clue:
+        task: offers
+      options:
+        - id: o0
+          label: Café A
+        - id: o1
+          label: Café B
+        - id: o2
+          label: Beide kosten gleich viel.
+      answer:
+        - o1
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."
+    - id: compare
+      kind: order
+      title: Объясните разницу
+      intro: «Кафе B дешевле кафе A».
+      label: Реплика для команды
+      tokens:
+        - Café B
+        - ist
+        - günstiger als
+        - Café A.
+      success: Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.
+      wrong: "Проверьте положение глагола и конец предложения: используйте все фрагменты."
+    - id: budget
+      kind: pack
+      title: Соберите подходящий план
+      intro: Выберите ровно одно кафе и одно занятие. Общая цена не выше 20 евро. Подходит несколько
+        сочетаний; игра принимает каждое.
+      mode: reading
+      clue:
+        task: offers
+      options: &a1
+        - id: a
+          label: Café A · 10 €
+        - id: b
+          label: Café B · 8 €
+        - id: museum
+          label: Museum · 12 €
+        - id: walk
+          label: Spaziergang · 0 €
+      answer: &a2
+        - a
+        - walk
+      alternatives:
+        - - b
+          - walk
+        - - b
+          - museum
+      success: "Соблюдены бюджет и состав плана: одно кафе и одно занятие. Подходящий вариант не
+        обязан совпадать с выбором автора."
+      wrong: Нужны ровно одно кафе и одно занятие; сумма должна укладываться в 20 евро.
+      variants:
+        - id: budget-fifteen
+          kind: pack
+          title: Соберите подходящий план
+          intro: "Новый день, новый бюджет: не выше 15 евро. Выберите ровно одно кафе и одно занятие."
+          mode: reading
+          clue:
+            task: offers15
+          options: *a1
+          answer: *a2
+          alternatives:
+            - - b
+              - walk
+          success: "Соблюдены бюджет и состав плана: одно кафе и одно занятие. Подходящий вариант не
+            обязан совпадать с выбором автора."
+          wrong: При бюджете 15 евро музей вместе с любым из кафе уже не подходит.
+    - id: equal
+      kind: select
+      title: Что у кафе одинаково?
+      intro: Не переносите одинаковое качество на цену.
+      mode: reading
+      clue:
+        task: offers
+      options:
+        - id: o0
+          label: Beide sind ruhig.
+        - id: o1
+          label: Beide kosten 8 Euro.
+        - id: o2
+          label: Beide sind gleich weit weg.
+      answer:
+        - o0
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."
+    - id: no-match
+      kind: select
+      title: Не выбирайте заведомо неподходящее
+      intro: Гости хотят завтрак в шесть утра. Найдите подходящее объявление или отметьте его
+        отсутствие.
+      mode: reading
+      clue:
+        task: ads
+      options:
+        - id: o0
+          label: a
+        - id: o1
+          label: b
+        - id: o2
+          label: x
+      answer:
+        - o2
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."

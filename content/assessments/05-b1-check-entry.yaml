@@ -1,0 +1,111 @@
+id: b1-check-entry
+level: b1
+mode: review
+title: "Перед B1: перенести встречу"
+intro: "Мост из A2 в B1: новая ситуация с причинами, условиями и совместным решением. Это
+  ориентир для повторения; доступ к B1 открыт независимо от результата."
+sections:
+  - id: entry
+    title: Новая встреча клуба
+    taskIds:
+      - read
+      - listen
+      - write
+      - talk
+tasks:
+  read:
+    kind: worksheet
+    part: b1-lesen-2
+    format: article
+    title: Nachricht vom Kochclub · Brücke aus A2
+    text: Hallo Nora, unser Kochabend ist jetzt am Freitag um 18 Uhr. Am Donnerstag ist die Küche
+      geschlossen. Wenn du am Freitag arbeiten musst, sag mir bitte bis Mittwoch Bescheid.
+      Jonas bringt das Gemüse mit. Du musst also kein Gemüse kaufen. Bitte bring nur deine
+      kleine Pfanne mit. Wir treffen uns direkt vor der Küche, nicht im Café. Liebe Grüße,
+      Karin
+    questions:
+      - prompt: Warum wurde der Tag geändert?
+        options:
+          - Die Küche ist Donnerstag zu.
+          - Nora hat Geburtstag.
+          - Jonas hat Urlaub.
+        answers:
+          - Die Küche ist Donnerstag zu.
+      - prompt: Was soll Nora mitbringen?
+        options:
+          - Gemüse
+          - Eine kleine Pfanne
+          - Einen Kuchen
+        answers:
+          - Eine kleine Pfanne
+      - prompt: Wann soll Nora bei einem Problem antworten?
+        options:
+          - Bis Mittwoch
+          - Am Freitagabend
+          - Nach dem Kochabend
+        answers:
+          - Bis Mittwoch
+      - prompt: Wo treffen sie sich?
+        options:
+          - Im Café
+          - Vor der Küche
+          - Am Bahnhof
+        answers:
+          - Vor der Küche
+  listen:
+    kind: worksheet
+    part: b1-hoeren-3
+    format: article
+    title: Eine Ergänzung
+    recordings:
+      - voice: Eddy
+        text: Hallo Nora, hier ist Jonas. Ich komme am Freitag etwas später, erst um halb sieben. Das
+          Gemüse gebe ich vorher Karin. Ihr könnt also wie geplant um sechs anfangen.
+    questions:
+      - prompt: Alle müssen wegen Jonas später anfangen.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+  write:
+    kind: message
+    part: b1-schreiben-1
+    title: Mit bekanntem Deutsch antworten
+    text: Sie können am Freitag kommen. Antworten Sie Karin mit Anrede und Gruß. Behandeln Sie alle
+      vier Punkte. Für diese Brücke aus A2 reichen kurze, verbundene Sätze.
+    points:
+      - Den neuen Termin bestätigen
+      - Nach der Küche fragen
+      - Sagen, was Sie mitbringen
+      - Nach Jonas fragen
+  talk:
+    kind: card
+    part: b1-sprechen-3
+    title: Den Kochabend vorbereiten
+    situation: Einigen Sie sich auf Einkauf und Aufgaben. Stellen Sie mindestens eine Rückfrage und
+      bestätigen Sie das Ergebnis.
+    word: Vorschlag · Rückfrage · Reaktion · Einigung
+    roles:
+      - title: Person A
+        text: Sie haben eine Pfanne und können ab 18 Uhr kochen. Sie haben keine Zeit zum Einkaufen.
+      - title: Person B
+        text: Sie können am Nachmittag einkaufen. Jonas bringt das Gemüse; entscheiden Sie, was noch
+          fehlt.
+review:
+  - level: a2
+    topic: a2-gruende
+    label: Причина и условие
+    taskIds:
+      - read
+  - level: a2
+    topic: a2-termine
+    label: Договорённости и изменения
+    taskIds:
+      - listen
+      - talk
+  - level: a2
+    topic: a2-service
+    label: Понятное сообщение
+    taskIds:
+      - write

@@ -1,7 +1,7 @@
 {
   "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
   "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
-  "version": "de-a1-qwen-20261019-v1",
+  "version": "de-a1-qwen-20261023-tail-v2",
   "referenceModel": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
   "referenceRevision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
   "language": "German",
@@ -40,8 +40,9 @@
     "trimFloorRms": 0.00035,
     "preserveStartMs": 80,
     "preserveEndMs": 150,
+    "trimEnd": false,
     "paddingStartMs": 60,
-    "paddingEndMs": 100
+    "paddingEndMs": 300
   },
   "voices": {
     "Anna": {

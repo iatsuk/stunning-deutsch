@@ -1,0 +1,1476 @@
+{
+ "id": "a2-helfen",
+ "level": "a2",
+ "order": 3,
+ "title": "Kannst du mir helfen?",
+ "ru": "Кому нужна вещь",
+ "lede": "Перед поездкой в клубе лежат билеты, камера и ключи. Элиф готовит список, Дана раздаёт вещи, Матео помогает гостям. Чтобы ничего не потерять, нужно понять не только что передают, но и кому.",
+ "goals": [
+  "Понять адресата действия по местоимению",
+  "Попросить о помощи и отреагировать",
+  "Различить предмет в Akkusativ и получателя в Dativ",
+  "Сопоставить людей и сведения из разговора"
+ ],
+ "grammar": [
+  "Dativ: mir, dir, ihm, ihr, uns, euch, ihnen"
+ ],
+ "exam": [
+  "a2-hoeren-3",
+  "a2-sprechen-2",
+  "a2-lesen-2"
+ ],
+ "chapters": [
+  {
+   "id": "scene",
+   "title": "Ситуация"
+  },
+  {
+   "id": "words",
+   "title": "Слова"
+  },
+  {
+   "id": "grammar",
+   "title": "Грамматика"
+  },
+  {
+   "id": "practice",
+   "title": "Проверка"
+  },
+  {
+   "id": "exam",
+   "title": "На экзамене"
+  }
+ ],
+ "dialogues": {
+  "scene": {
+   "title": "Kannst du mir helfen?",
+   "ru": "Кому нужна вещь",
+   "place": "Kiel · клуб перед поездкой · вымышленная учебная ситуация",
+   "people": {
+    "D": {
+     "name": "Dana",
+     "voice": "Anna"
+    },
+    "M": {
+     "name": "Mateo",
+     "voice": "Reed"
+    },
+    "E": {
+     "name": "Elif",
+     "voice": "Flo"
+    },
+    "H": {
+     "name": "Hauke",
+     "voice": "Rocko"
+    }
+   },
+   "lines": [
+    {
+     "who": "E",
+     "de": "Dana, kannst du mir bitte helfen?",
+     "ru": "Дана, можешь мне помочь?",
+     "audio": "audio/86ffb56607a5.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Ja, gern. Was brauchst du?",
+     "ru": "Да, охотно. Что тебе нужно?",
+     "audio": "audio/f9a91f30cf38.m4a"
+    },
+    {
+     "who": "E",
+     "de": "Gib mir bitte die Liste. Mateo braucht sein Ticket.",
+     "ru": "Дай мне список. Матео нужен его билет.",
+     "audio": "audio/bc81d53ece53.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Ich gebe ihm das Ticket. Und wer bekommt die Kamera?",
+     "ru": "Я дам ему билет. А кто получит камеру?",
+     "audio": "audio/01b8b89e8d65.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Die Kamera ist für Elif. Bring ihr bitte auch die Tasche.",
+     "ru": "Камера для Элиф. Принеси ей ещё и сумку.",
+     "audio": "audio/fe80c9ad6071.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Die Gäste brauchen Wasser. Können wir ihnen helfen?",
+     "ru": "Гостям нужна вода. Можем им помочь?",
+     "audio": "audio/4275a5ade7f8.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Ja. Ich bringe ihnen zwei Flaschen.",
+     "ru": "Да. Я принесу им две бутылки.",
+     "audio": "audio/82c395ec4338.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Danke! Dann fehlt uns nur noch der Schlüssel.",
+     "ru": "Спасибо! Тогда нам не хватает только ключа.",
+     "audio": "audio/fbe8b7119133.m4a"
+    }
+   ]
+  },
+  "assignment": {
+   "title": "Die Verteilung",
+   "place": "Kiel · отдельное распределение перед отправлением",
+   "people": {
+    "D": {
+     "name": "Dana",
+     "voice": "Anna"
+    },
+    "M": {
+     "name": "Mateo",
+     "voice": "Reed"
+    }
+   },
+   "lines": [
+    {
+     "who": "D",
+     "de": "Mateo, wer bekommt die Liste und die Kamera?",
+     "ru": "Матео, кто получает список и камеру?",
+     "audio": "audio/5b5e127cca59.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Elif bekommt beides. Ich brauche nur mein Ticket.",
+     "ru": "Элиф получает и то и другое. Мне нужен только мой билет.",
+     "audio": "audio/f9bd8fe8b6de.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Und was bekommen die Gäste?",
+     "ru": "А что получают гости?",
+     "audio": "audio/e008cc765146.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Sie bekommen Wasser. Hauke hat den Schlüssel schon.",
+     "ru": "Они получают воду. Ключ у Хауке уже есть.",
+     "audio": "audio/68a64069d866.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Gut. Dann nehme ich das Fotoalbum.",
+     "ru": "Хорошо. Тогда я возьму фотоальбом.",
+     "audio": "audio/1cf8884a8bbf.m4a"
+    }
+   ]
+  }
+ },
+ "words": {
+  "useful": {
+   "title": "Wörter für die Aufgabe",
+   "ru": "Слова для действия",
+   "items": [
+    {
+     "de": "helfen",
+     "ru": "помогать",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/a1e8f07b2bc9.m4a"
+    },
+    {
+     "de": "geben",
+     "ru": "давать",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/eccf30cb42bd.m4a"
+    },
+    {
+     "de": "bringen",
+     "ru": "приносить",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/158a94df8bc9.m4a"
+    },
+    {
+     "de": "bekommen",
+     "ru": "получать",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/a196e2019f65.m4a"
+    },
+    {
+     "de": "fehlen",
+     "ru": "не хватать",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/48a95c203780.m4a"
+    },
+    {
+     "de": "der Empfänger",
+     "ru": "получатель",
+     "gender": "m",
+     "plural": "Empfänger",
+     "audio": "audio/013e2fb19e2f.m4a"
+    },
+    {
+     "de": "die Liste",
+     "ru": "список",
+     "gender": "f",
+     "plural": "Listen",
+     "audio": "audio/fbe544c11b71.m4a"
+    },
+    {
+     "de": "die Kamera",
+     "ru": "камера",
+     "gender": "f",
+     "plural": "Kameras",
+     "audio": "audio/c28600beba12.m4a"
+    },
+    {
+     "de": "das Ticket",
+     "ru": "билет",
+     "gender": "n",
+     "plural": "Tickets",
+     "audio": "audio/b828fc8c99e3.m4a"
+    },
+    {
+     "de": "der Schlüssel",
+     "ru": "ключ",
+     "gender": "m",
+     "plural": "Schlüssel",
+     "audio": "audio/df9315794234.m4a"
+    },
+    {
+     "de": "zurückgeben",
+     "ru": "возвращать",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/c49db6ae72b5.m4a"
+    },
+    {
+     "de": "brauchen",
+     "ru": "нуждаться",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/75496eacd3f2.m4a"
+    }
+   ]
+  }
+ },
+ "tables": {
+  "rule": {
+   "title": "Dativ: mir, dir, ihm, ihr, uns, euch, ihnen",
+   "ru": "Опора для решения",
+   "head": [
+    "Beispiel",
+    "Смысл и форма"
+   ],
+   "rows": [
+    [
+     "Kannst du mir helfen?",
+     "helfen требует Dativ: mir, dir, ihm, ihr."
+    ],
+    [
+     "Ich gebe ihm das Ticket.",
+     "ihm — получатель; das Ticket — предмет."
+    ],
+    [
+     "Ich bringe ihnen Wasser.",
+     "Гости → ihnen; команда → uns / euch."
+    ]
+   ],
+   "ruCols": [
+    1
+   ]
+  }
+ },
+ "tasks": {
+  "matching": {
+   "kind": "worksheet",
+   "part": "a2-hoeren-3",
+   "format": "matching",
+   "title": "Wer bekommt was?",
+   "questions": [
+    {
+     "prompt": "Elif",
+     "options": [
+      "Liste und Kamera",
+      "Ticket",
+      "Wasser",
+      "Schlüssel",
+      "Tasche"
+     ],
+     "answers": [
+      "Liste und Kamera"
+     ]
+    },
+    {
+     "prompt": "Mateo",
+     "options": [
+      "Liste und Kamera",
+      "Ticket",
+      "Wasser",
+      "Schlüssel",
+      "Tasche"
+     ],
+     "answers": [
+      "Ticket"
+     ]
+    },
+    {
+     "prompt": "Gäste",
+     "options": [
+      "Liste und Kamera",
+      "Ticket",
+      "Wasser",
+      "Schlüssel",
+      "Tasche"
+     ],
+     "answers": [
+      "Wasser"
+     ]
+    },
+    {
+     "prompt": "Hauke",
+     "options": [
+      "Liste und Kamera",
+      "Ticket",
+      "Wasser",
+      "Schlüssel",
+      "Tasche"
+     ],
+     "answers": [
+      "Schlüssel"
+     ]
+    },
+    {
+     "prompt": "Dana",
+     "options": [
+      "Liste und Kamera",
+      "Ticket",
+      "Wasser",
+      "Schlüssel",
+      "Fotoalbum"
+     ],
+     "answers": [
+      "Fotoalbum"
+     ]
+    }
+   ],
+   "dialogue": "assignment",
+   "script": [
+    {
+     "who": "Dana",
+     "de": "Mateo, wer bekommt die Liste und die Kamera?",
+     "audio": "audio/5b5e127cca59.m4a"
+    },
+    {
+     "who": "Mateo",
+     "de": "Elif bekommt beides. Ich brauche nur mein Ticket.",
+     "audio": "audio/f9bd8fe8b6de.m4a"
+    },
+    {
+     "who": "Dana",
+     "de": "Und was bekommen die Gäste?",
+     "audio": "audio/e008cc765146.m4a"
+    },
+    {
+     "who": "Mateo",
+     "de": "Sie bekommen Wasser. Hauke hat den Schlüssel schon.",
+     "audio": "audio/68a64069d866.m4a"
+    },
+    {
+     "who": "Dana",
+     "de": "Gut. Dann nehme ich das Fotoalbum.",
+     "audio": "audio/1cf8884a8bbf.m4a"
+    }
+   ],
+   "sample": []
+  },
+  "talk": {
+   "kind": "card",
+   "part": "a2-sprechen-2",
+   "title": "Hilfe im Alltag",
+   "theme": "Hilfe",
+   "word": "Wem? Was?",
+   "sample": [
+    {
+     "de": "Kannst du mir bitte helfen?",
+     "audio": "audio/b73e2eb9b3b8.m4a"
+    },
+    {
+     "de": "Ja, gern. Was brauchst du?",
+     "audio": "audio/f9a91f30cf38.m4a"
+    },
+    {
+     "de": "Bring mir bitte die Tasche.",
+     "audio": "audio/d2fba4aeb83c.m4a"
+    }
+   ]
+  },
+  "note": {
+   "kind": "message",
+   "part": "a2-lesen-2",
+   "title": "Nachricht vor der Abfahrt",
+   "from": "Dana",
+   "text": "Mateo braucht das Ticket. Gib es ihm bitte. Elif braucht die Kamera und die Tasche. Bring ihr beides. Die Gäste brauchen Wasser. Hauke hat den Schlüssel schon.",
+   "sample": []
+  }
+ },
+ "beats": [
+  {
+   "id": "start-1",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 0,
+   "read": "Перед поездкой в клубе лежат билеты, камера и ключи. Элиф готовит список, Дана раздаёт вещи, Матео помогает гостям. Чтобы ничего не потерять, нужно понять не только что передают, но и кому. Все нужные условия даны в сцене: знания географии, настоящих цен или расписаний не требуются. Сначала попробуйте понять, какого результата добиваются друзья, затем слушайте реплики. На новом уровне важно не только найти число или знакомое слово, но и связать несколько сведений.",
+   "point": "Кому нужна вещь",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 4,
+    "fresh": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "start-2",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 1,
+   "read": "*Ihm* отсылает к Матео, *ihr* — к Элиф, *ihnen* — к гостям. Получатель может повторяться у нескольких предметов. Вопрос *Wer bekommt die Kamera?* помогает установить адресата по имени, а следующая реплика уже использует местоимение. Не определяйте получателя по роду вещи: женское *die Kamera* не делает владельца женщиной — это разные связи.",
+   "point": "Dativ: mir, dir, ihm, ihr, uns, euch, ihnen",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 8,
+    "fresh": [
+     4,
+     5,
+     6,
+     7
+    ]
+   }
+  },
+  {
+   "id": "words-1",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 0,
+   "read": "Для действия нужны глаголы *helfen*, *geben*, *bringen*, *bekommen*. Они описывают разные стороны передачи. В просьбе *Gib mir die Liste* получатель — говорящий, а список — предмет. *Die Gäste* во множественном числе заменяются *ihnen*. В игре сначала установите, кто назван в сообщении, затем найдите подходящее местоимение и действие.",
+   "point": "Сначала используйте слово для решения; словарь остаётся справочником.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 6,
+    "words": "useful"
+   }
+  },
+  {
+   "id": "words-2",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 1,
+   "read": "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к ситуации: какие слова обозначают человека, место, условие или уже выполненное действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово встретится снова в записке или разговоре, попробуйте восстановить его смысл до подсказки.",
+   "point": "Возвращайтесь к выражениям в сообщениях и новых действиях.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 12,
+    "words": "useful",
+    "fresh": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   }
+  },
+  {
+   "id": "grammar-1",
+   "step": "grammar",
+   "stepTitle": "Dativ: mir, dir, ihm, ihr, uns, euch, ihnen",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "После *helfen* адресат стоит в дательном: *mir helfen*, *dir helfen*. Это не форма *mich*, знакомая по Akkusativ. Смысл просьбы — кому нужна помощь. Местоимение позволяет не повторять имя в соседних репликах, но сначала должно быть понятно, о ком идёт речь. Если адресат неясен, уточните имя.",
+   "point": "helfen требует Dativ: mir, dir, ihm, ihr.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "grammar-2",
+   "step": "grammar",
+   "stepTitle": "Dativ: mir, dir, ihm, ihr, uns, euch, ihnen",
+   "chapterIndex": 2,
+   "indexInStep": 1,
+   "read": "У *geben* часто есть два участника: то, что дают, и человек, которому дают. В нашем примере билет передают Матео: *ihm*. Билет остаётся предметом в Akkusativ. Для первых шагов используйте порядок «получатель — предмет»: он помогает удерживать обе связи и не менять их местами по смыслу.",
+   "point": "ihm — получатель; das Ticket — предмет.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "grammar-3",
+   "step": "grammar",
+   "stepTitle": "Dativ: mir, dir, ihm, ihr, uns, euch, ihnen",
+   "chapterIndex": 2,
+   "indexInStep": 2,
+   "read": "Нескольким гостям соответствуют *ihnen*. Когда говорящий включает себя в группу, используется *uns*. Когда обращается к нескольким друзьям — *euch*. Вежливое *Ihnen* пишется с большой буквы. Не смешивайте его с обычным *ihnen*: контекст разговора и обращение помогают различить формы.",
+   "point": "Гости → ihnen; команда → uns / euch.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "frames-1",
+   "step": "frames",
+   "stepTitle": "Как устроена реплика",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "Вопрос начинается с *Kannst*, после него *du*, затем адресат *mir*, в конце *helfen*. Инфинитив сохраняет рамку модального глагола из A1. Новая часть здесь — падеж получателя. Можно ответить *Ja, gern* и уточнить задачу: это реакция на просьбу, а не автоматическое обещание передать любую вещь.",
+   "point": "*Kannst du mir helfen?* — просьба о помощи.",
+   "scene": {
+    "view": "sentence",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [],
+       [
+        {
+         "key": "kannst",
+         "text": "Kannst"
+        }
+       ],
+       [
+        {
+         "key": "du",
+         "text": "du"
+        },
+        {
+         "key": "mir",
+         "text": "mir"
+        }
+       ],
+       [
+        {
+         "key": "helfen",
+         "text": "helfen"
+        }
+       ]
+      ],
+      "punct": "?",
+      "plain": "Kannst du mir helfen?",
+      "ru": "Можешь мне помочь?",
+      "audio": "audio/84ade3b07472.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-1",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 0,
+   "read": "В этом контексте *ihm* заменяет Матео. Род местоимения связан с человеком, а не с билетом. Сначала найдите предыдущую реплику, где адресат назван прямо. Если бы билет передавали Элиф, было бы *ihr das Ticket*. Сам билет от этого не меняет род.",
+   "point": "Получатель определяется по контексту, не по предмету.",
+   "question": "Матео нужен билет. Кого заменяет ihm?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [],
+       [
+        {
+         "key": "kannst",
+         "text": "Kannst"
+        }
+       ],
+       [
+        {
+         "key": "du",
+         "text": "du"
+        },
+        {
+         "key": "mir",
+         "text": "mir"
+        }
+       ],
+       [
+        {
+         "key": "helfen",
+         "text": "helfen"
+        }
+       ]
+      ],
+      "punct": "?",
+      "plain": "Kannst du mir helfen?",
+      "ru": "Можешь мне помочь?",
+      "audio": "audio/84ade3b07472.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-2",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 1,
+   "read": "*Kannst du mir bitte helfen?* Получатель помощи — вы, поэтому *mir*. Если помощь нужна нескольким людям вместе с вами, используйте *uns*. В ответе можно уточнить, что требуется. Это безопаснее, чем угадывать действие по одному знакомому слову.",
+   "point": "*mir* — мне; *uns* — нам.",
+   "question": "Как попросить друга помочь вам?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [],
+       [
+        {
+         "key": "kannst",
+         "text": "Kannst"
+        }
+       ],
+       [
+        {
+         "key": "du",
+         "text": "du"
+        },
+        {
+         "key": "mir",
+         "text": "mir"
+        }
+       ],
+       [
+        {
+         "key": "helfen",
+         "text": "helfen"
+        }
+       ]
+      ],
+      "punct": "?",
+      "plain": "Kannst du mir helfen?",
+      "ru": "Можешь мне помочь?",
+      "audio": "audio/84ade3b07472.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "exam-matching-1",
+   "step": "exam-matching",
+   "stepTitle": "Wer bekommt was?",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным текстом: объясните, какой фрагмент подтверждает каждое решение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [],
+       [
+        {
+         "key": "kannst",
+         "text": "Kannst"
+        }
+       ],
+       [
+        {
+         "key": "du",
+         "text": "du"
+        },
+        {
+         "key": "mir",
+         "text": "mir"
+        }
+       ],
+       [
+        {
+         "key": "helfen",
+         "text": "helfen"
+        }
+       ]
+      ],
+      "punct": "?",
+      "plain": "Kannst du mir helfen?",
+      "ru": "Можешь мне помочь?",
+      "audio": "audio/84ade3b07472.m4a"
+     }
+    ],
+    "task": "matching"
+   }
+  },
+  {
+   "id": "exam-matching-2",
+   "step": "exam-matching",
+   "stepTitle": "Wer bekommt was?",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [],
+       [
+        {
+         "key": "kannst",
+         "text": "Kannst"
+        }
+       ],
+       [
+        {
+         "key": "du",
+         "text": "du"
+        },
+        {
+         "key": "mir",
+         "text": "mir"
+        }
+       ],
+       [
+        {
+         "key": "helfen",
+         "text": "helfen"
+        }
+       ]
+      ],
+      "punct": "?",
+      "plain": "Kannst du mir helfen?",
+      "ru": "Можешь мне помочь?",
+      "audio": "audio/84ade3b07472.m4a"
+     }
+    ],
+    "task": "matching"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [],
+       [
+        {
+         "key": "kannst",
+         "text": "Kannst"
+        }
+       ],
+       [
+        {
+         "key": "du",
+         "text": "du"
+        },
+        {
+         "key": "mir",
+         "text": "mir"
+        }
+       ],
+       [
+        {
+         "key": "helfen",
+         "text": "helfen"
+        }
+       ]
+      ],
+      "punct": "?",
+      "plain": "Kannst du mir helfen?",
+      "ru": "Можешь мне помочь?",
+      "audio": "audio/84ade3b07472.m4a"
+     }
+    ],
+    "task": "matching",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-talk-1",
+   "step": "exam-talk",
+   "stepTitle": "Hilfe im Alltag",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным текстом: объясните, какой фрагмент подтверждает каждое решение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [],
+       [
+        {
+         "key": "kannst",
+         "text": "Kannst"
+        }
+       ],
+       [
+        {
+         "key": "du",
+         "text": "du"
+        },
+        {
+         "key": "mir",
+         "text": "mir"
+        }
+       ],
+       [
+        {
+         "key": "helfen",
+         "text": "helfen"
+        }
+       ]
+      ],
+      "punct": "?",
+      "plain": "Kannst du mir helfen?",
+      "ru": "Можешь мне помочь?",
+      "audio": "audio/84ade3b07472.m4a"
+     }
+    ],
+    "task": "talk",
+    "reveal": 0
+   }
+  },
+  {
+   "id": "exam-talk-2",
+   "step": "exam-talk",
+   "stepTitle": "Hilfe im Alltag",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [],
+       [
+        {
+         "key": "kannst",
+         "text": "Kannst"
+        }
+       ],
+       [
+        {
+         "key": "du",
+         "text": "du"
+        },
+        {
+         "key": "mir",
+         "text": "mir"
+        }
+       ],
+       [
+        {
+         "key": "helfen",
+         "text": "helfen"
+        }
+       ]
+      ],
+      "punct": "?",
+      "plain": "Kannst du mir helfen?",
+      "ru": "Можешь мне помочь?",
+      "audio": "audio/84ade3b07472.m4a"
+     }
+    ],
+    "task": "talk",
+    "reveal": 0
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [],
+       [
+        {
+         "key": "kannst",
+         "text": "Kannst"
+        }
+       ],
+       [
+        {
+         "key": "du",
+         "text": "du"
+        },
+        {
+         "key": "mir",
+         "text": "mir"
+        }
+       ],
+       [
+        {
+         "key": "helfen",
+         "text": "helfen"
+        }
+       ]
+      ],
+      "punct": "?",
+      "plain": "Kannst du mir helfen?",
+      "ru": "Можешь мне помочь?",
+      "audio": "audio/84ade3b07472.m4a"
+     }
+    ],
+    "task": "talk",
+    "reveal": 0,
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-note-1",
+   "step": "exam-note",
+   "stepTitle": "Nachricht vor der Abfahrt",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным текстом: объясните, какой фрагмент подтверждает каждое решение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [],
+       [
+        {
+         "key": "kannst",
+         "text": "Kannst"
+        }
+       ],
+       [
+        {
+         "key": "du",
+         "text": "du"
+        },
+        {
+         "key": "mir",
+         "text": "mir"
+        }
+       ],
+       [
+        {
+         "key": "helfen",
+         "text": "helfen"
+        }
+       ]
+      ],
+      "punct": "?",
+      "plain": "Kannst du mir helfen?",
+      "ru": "Можешь мне помочь?",
+      "audio": "audio/84ade3b07472.m4a"
+     }
+    ],
+    "task": "note"
+   }
+  },
+  {
+   "id": "exam-note-2",
+   "step": "exam-note",
+   "stepTitle": "Nachricht vor der Abfahrt",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [],
+       [
+        {
+         "key": "kannst",
+         "text": "Kannst"
+        }
+       ],
+       [
+        {
+         "key": "du",
+         "text": "du"
+        },
+        {
+         "key": "mir",
+         "text": "mir"
+        }
+       ],
+       [
+        {
+         "key": "helfen",
+         "text": "helfen"
+        }
+       ]
+      ],
+      "punct": "?",
+      "plain": "Kannst du mir helfen?",
+      "ru": "Можешь мне помочь?",
+      "audio": "audio/84ade3b07472.m4a"
+     }
+    ],
+    "task": "note"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [],
+       [
+        {
+         "key": "kannst",
+         "text": "Kannst"
+        }
+       ],
+       [
+        {
+         "key": "du",
+         "text": "du"
+        },
+        {
+         "key": "mir",
+         "text": "mir"
+        }
+       ],
+       [
+        {
+         "key": "helfen",
+         "text": "helfen"
+        }
+       ]
+      ],
+      "punct": "?",
+      "plain": "Kannst du mir helfen?",
+      "ru": "Можешь мне помочь?",
+      "audio": "audio/84ade3b07472.m4a"
+     }
+    ],
+    "task": "note",
+    "solved": true
+   }
+  }
+ ],
+ "exercises": [
+  {
+   "id": "a2-helfen-1",
+   "type": "choice",
+   "q": "Kannst du ___ helfen?",
+   "options": [
+    "mir",
+    "mich",
+    "mein"
+   ],
+   "answer": 0,
+   "why": "*helfen* + Dativ.",
+   "audio": "audio/84ade3b07472.m4a"
+  },
+  {
+   "id": "a2-helfen-2",
+   "type": "choice",
+   "q": "Mateo braucht ein Ticket. Ich gebe ___ das Ticket.",
+   "options": [
+    "ihm",
+    "ihr",
+    "ihnen"
+   ],
+   "answer": 0,
+   "why": "Матео → *ihm*.",
+   "audio": "audio/4bd049802733.m4a"
+  },
+  {
+   "id": "a2-helfen-3",
+   "type": "choice",
+   "q": "Elif braucht die Tasche. Ich bringe ___ die Tasche.",
+   "options": [
+    "ihr",
+    "ihm",
+    "uns"
+   ],
+   "answer": 0,
+   "why": "Элиф → *ihr*.",
+   "audio": "audio/4d874949baca.m4a"
+  },
+  {
+   "id": "a2-helfen-4",
+   "type": "choice",
+   "q": "Die Gäste brauchen Wasser. Wir helfen ___.",
+   "options": [
+    "ihnen",
+    "ihm",
+    "ihr"
+   ],
+   "answer": 0,
+   "why": "Множественное число → *ihnen*.",
+   "audio": "audio/612e10aa13d0.m4a"
+  },
+  {
+   "id": "a2-helfen-5",
+   "type": "choice",
+   "ru": "Помогите нам, пожалуйста!",
+   "q": "Helft ___ bitte!",
+   "options": [
+    "uns",
+    "euch",
+    "ihn"
+   ],
+   "answer": 0,
+   "why": "Нам — *uns*.",
+   "audio": "audio/4ea294f75dc0.m4a"
+  },
+  {
+   "id": "a2-helfen-6",
+   "type": "choice",
+   "ru": "Дай мне, пожалуйста, список!",
+   "q": "Gib ___ bitte die Liste!",
+   "options": [
+    "mir",
+    "mich",
+    "mein"
+   ],
+   "answer": 0,
+   "why": "Получатель — *mir*.",
+   "audio": "audio/b57991f443e6.m4a"
+  },
+  {
+   "id": "a2-helfen-7",
+   "type": "order",
+   "ru": "Можешь мне помочь?",
+   "de": "Kannst du mir helfen?",
+   "audio": "audio/84ade3b07472.m4a"
+  },
+  {
+   "id": "a2-helfen-8",
+   "type": "order",
+   "ru": "Я даю ему билет.",
+   "de": "Ich gebe ihm das Ticket.",
+   "audio": "audio/728583634449.m4a"
+  },
+  {
+   "id": "a2-helfen-9",
+   "type": "order",
+   "ru": "Принеси ей, пожалуйста, сумку.",
+   "de": "Bring ihr bitte die Tasche.",
+   "audio": "audio/607a4f04a22f.m4a"
+  },
+  {
+   "id": "a2-helfen-10",
+   "type": "order",
+   "ru": "Мы им помогаем.",
+   "de": "Wir helfen ihnen.",
+   "audio": "audio/973992d79b07.m4a"
+  },
+  {
+   "id": "a2-helfen-11",
+   "type": "order",
+   "ru": "Спасибо за твою помощь!",
+   "de": "Danke für deine Hilfe!",
+   "audio": "audio/eb0a3a7ebd1f.m4a"
+  },
+  {
+   "id": "a2-helfen-12",
+   "type": "order",
+   "ru": "Нам не хватает ключа.",
+   "de": "Der Schlüssel fehlt uns.",
+   "audio": "audio/3727205ba711.m4a"
+  }
+ ],
+ "case": {
+  "title": "Für wen ist das Ticket?",
+  "ru": "Кому нужен билет",
+  "intro": "В дневнике оказались две версии сообщения. Установите, что подтверждено первоисточником. Вывод зависит от языка, а не от личности автора.",
+  "people": {},
+  "steps": [
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Mateo braucht das Ticket. Ich gebe es ihm.",
+      "ru": "Матео нужен билет. Я даю его ему."
+     }
+    ],
+    "question": "Кто получатель?",
+    "options": [
+     "Матео",
+     "Билет",
+     "Элиф"
+    ],
+    "answer": 0,
+    "right": "*Ihm* заменяет названного Матео.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Die Gäste sind da. Wir bringen ihnen Wasser.",
+      "ru": "Гости здесь. Мы приносим им воду."
+     }
+    ],
+    "question": "Кого заменяет ihnen?",
+    "options": [
+     "Одного Хауке",
+     "Гостей",
+     "Элиф"
+    ],
+    "answer": 1,
+    "right": "*Ihnen* здесь дательный множественного числа.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Elif bekommt die Kamera. Mateo bekommt das Ticket.",
+      "ru": "Элиф получает камеру. Матео получает билет."
+     }
+    ],
+    "question": "Можно поменять получателей без изменения смысла?",
+    "options": [
+     "Да",
+     "Нет",
+     "Только если предмет женского рода"
+    ],
+    "answer": 1,
+    "right": "Род вещи не определяет её получателя.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   }
+  ],
+  "ending": "Запись исправлена по источникам. В следующей главе команда воспользуется подтверждёнными сведениями для нового решения."
+ },
+ "adventure": {
+  "kind": "sequence",
+  "title": "Передайте вещи адресатам",
+  "intro": "Перед поездкой в клубе лежат билеты, камера и ключи. Элиф готовит список, Дана раздаёт вещи, Матео помогает гостям. Чтобы ничего не потерять, нужно понять не только что передают, но и кому.",
+  "ending": "Адресаты проверены: вещи переданы по сообщениям, а не по догадкам. В Плёне нужно будет разобраться, где встречаться и куда поставить сумки.",
+  "challenges": [
+   {
+    "id": "recipients",
+    "kind": "match",
+    "title": "Кому передать?",
+    "intro": "Сначала выберите предмет, затем получателя. Несколько вещей могут достаться одному человеку.",
+    "success": "Билет передан Матео, камера и сумка — Элиф.",
+    "wrong": "Сверьте все три предмета с сообщением.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Mateo braucht das Ticket. Gib es ihm bitte. Elif braucht die Kamera und die Tasche. Bring ihr beides. Die Gäste brauchen Wasser. Hauke hat den Schlüssel schon.",
+      "name": "Dana"
+     }
+    ],
+    "options": [
+     {
+      "id": "mateo",
+      "label": "Mateo"
+     },
+     {
+      "id": "elif",
+      "label": "Elif"
+     },
+     {
+      "id": "hauke",
+      "label": "Hauke"
+     }
+    ],
+    "slots": [
+     {
+      "id": "ticket",
+      "label": "Ticket",
+      "answer": "mateo"
+     },
+     {
+      "id": "camera",
+      "label": "Kamera",
+      "answer": "elif"
+     },
+     {
+      "id": "bag",
+      "label": "Tasche",
+      "answer": "elif"
+     }
+    ]
+   },
+   {
+    "id": "request",
+    "kind": "order",
+    "title": "Попросите о помощи",
+    "intro": "Обратитесь к одному другу: «Можешь мне помочь?»",
+    "success": "Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.",
+    "wrong": "Проверьте положение глагола и конец предложения: используйте все фрагменты.",
+    "tokens": [
+     "Kannst",
+     "du mir",
+     "helfen?"
+    ],
+    "label": "Реплика для команды"
+   },
+   {
+    "id": "water",
+    "kind": "select",
+    "title": "Помогите гостям",
+    "intro": "Выберите действие для гостей, не для Хауке.",
+    "success": "Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы одно из них.",
+    "wrong": "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание и адресата.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Mateo braucht das Ticket. Gib es ihm bitte. Elif braucht die Kamera und die Tasche. Bring ihr beides. Die Gäste brauchen Wasser. Hauke hat den Schlüssel schon.",
+      "name": "Dana"
+     }
+    ],
+    "options": [
+     {
+      "id": "o0",
+      "label": "Ich bringe ihnen Wasser."
+     },
+     {
+      "id": "o1",
+      "label": "Ich gebe ihm den Schlüssel."
+     },
+     {
+      "id": "o2",
+      "label": "Ich bringe ihr die Kamera."
+     }
+    ],
+    "answer": [
+     "o0"
+    ]
+   },
+   {
+    "id": "ticket",
+    "kind": "order",
+    "title": "Назовите получателя билета",
+    "intro": "Скажите: «Я даю ему билет».",
+    "success": "Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.",
+    "wrong": "Проверьте положение глагола и конец предложения: используйте все фрагменты.",
+    "tokens": [
+     "Ich",
+     "gebe",
+     "ihm",
+     "das Ticket."
+    ],
+    "label": "Реплика для команды"
+   },
+   {
+    "id": "key",
+    "kind": "select",
+    "title": "Не ищите уже переданное",
+    "intro": "Ключ не нужно передавать повторно. Кто уже его получил?",
+    "success": "Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы одно из них.",
+    "wrong": "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание и адресата.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Mateo braucht das Ticket. Gib es ihm bitte. Elif braucht die Kamera und die Tasche. Bring ihr beides. Die Gäste brauchen Wasser. Hauke hat den Schlüssel schon.",
+      "name": "Dana"
+     }
+    ],
+    "options": [
+     {
+      "id": "o0",
+      "label": "Hauke"
+     },
+     {
+      "id": "o1",
+      "label": "Dana"
+     },
+     {
+      "id": "o2",
+      "label": "Die Gäste"
+     }
+    ],
+    "answer": [
+     "o0"
+    ]
+   }
+  ]
+ },
+ "spy": []
+}

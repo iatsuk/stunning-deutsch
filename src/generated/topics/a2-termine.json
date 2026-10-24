@@ -1,0 +1,1756 @@
+{
+ "id": "a2-termine",
+ "level": "a2",
+ "order": 10,
+ "title": "Ich soll zuerst anrufen.",
+ "ru": "Запись и переданное указание",
+ "lede": "Матео переносит учебную запись в практику и сообщает об этом преподавательнице. Нужно понять новое время, кому перезвонить и что взять с собой. Медицинское состояние — часть вымышленной сцены; игрок не выбирает диагноз или лечение.",
+ "goals": [
+  "Использовать частые возвратные глаголы",
+  "Пересказать указание с sollen",
+  "Отличить перенос записи от отмены всех планов",
+  "Написать короткое сообщение о переносе"
+ ],
+ "grammar": [
+  "sich anmelden, sich fühlen; sollen"
+ ],
+ "exam": [
+  "a2-lesen-2",
+  "a2-hoeren-2",
+  "a2-schreiben-2",
+  "a2-sprechen-2"
+ ],
+ "chapters": [
+  {
+   "id": "scene",
+   "title": "Ситуация"
+  },
+  {
+   "id": "words",
+   "title": "Слова"
+  },
+  {
+   "id": "grammar",
+   "title": "Грамматика"
+  },
+  {
+   "id": "practice",
+   "title": "Проверка"
+  },
+  {
+   "id": "exam",
+   "title": "На экзамене"
+  }
+ ],
+ "dialogues": {
+  "scene": {
+   "title": "Ich soll zuerst anrufen.",
+   "ru": "Запись и переданное указание",
+   "place": "Kiel · вымышленная Praxis Dr. Hoffmann · вымышленная учебная ситуация",
+   "people": {
+    "D": {
+     "name": "Dana",
+     "voice": "Anna"
+    },
+    "M": {
+     "name": "Mateo",
+     "voice": "Reed"
+    },
+    "E": {
+     "name": "Elif",
+     "voice": "Flo"
+    },
+    "H": {
+     "name": "Hauke",
+     "voice": "Rocko"
+    },
+    "K": {
+     "name": "Frau Klein",
+     "voice": "Shelley"
+    }
+   },
+   "lines": [
+    {
+     "who": "M",
+     "de": "Guten Tag. Ich fühle mich nicht gut und möchte meinen Termin verschieben.",
+     "ru": "Добрый день. Я плохо себя чувствую и хочу перенести свою запись.",
+     "audio": "audio/8470a8037740.m4a"
+    },
+    {
+     "who": "K",
+     "de": "Guten Tag, Herr Fernández. Ihr Termin ist am Dienstag um neun Uhr, richtig?",
+     "ru": "Добрый день, господин Фернандес. Ваша запись во вторник в девять, верно?",
+     "audio": "audio/b3dfe720fdfc.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Ja. Könnten Sie mir einen anderen Termin geben?",
+     "ru": "Да. Не могли бы вы предложить другое время?",
+     "audio": "audio/ada556ea2526.m4a"
+    },
+    {
+     "who": "K",
+     "de": "Am Mittwoch um halb elf ist ein Termin frei. Bitte rufen Sie uns zuerst an und bestätigen Sie ihn.",
+     "ru": "В среду в 10:30 есть свободное время. Пожалуйста, сначала позвоните нам и подтвердите его.",
+     "audio": "audio/c83abff4f528.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Gut. Ich soll also zuerst anrufen. Was soll ich mitbringen?",
+     "ru": "Хорошо. Значит, мне сначала нужно позвонить. Что мне взять с собой?",
+     "audio": "audio/33f4a03babfd.m4a"
+    },
+    {
+     "who": "K",
+     "de": "Bringen Sie bitte Ihre Karte mit. Im Haus melden Sie sich am Empfang an.",
+     "ru": "Возьмите, пожалуйста, свою карту. В здании отметьтесь у стойки регистрации.",
+     "audio": "audio/edb2cb71c35d.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Ich schreibe Frau Thomsen, dass du später zum Kurs kommst.",
+     "ru": "Я напишу фрау Томсен, что ты придёшь на курс позже.",
+     "audio": "audio/b80df376cbff.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Danke. Ich kümmere mich um den Anruf.",
+     "ru": "Спасибо. Я займусь звонком.",
+     "audio": "audio/ca86e5bced98.m4a"
+    }
+   ]
+  }
+ },
+ "words": {
+  "useful": {
+   "title": "Wörter für die Aufgabe",
+   "ru": "Слова для действия",
+   "items": [
+    {
+     "de": "sich anmelden",
+     "ru": "регистрироваться",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/8cdd107f17c2.m4a"
+    },
+    {
+     "de": "sich fühlen",
+     "ru": "чувствовать себя",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/32f80960a61b.m4a"
+    },
+    {
+     "de": "sich kümmern",
+     "ru": "заниматься, заботиться",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/acb640c6a839.m4a"
+    },
+    {
+     "de": "sich ausruhen",
+     "ru": "отдыхать",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/4e604cddc6d6.m4a"
+    },
+    {
+     "de": "verschieben",
+     "ru": "переносить",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/21eba6a6f803.m4a"
+    },
+    {
+     "de": "bestätigen",
+     "ru": "подтверждать",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/1f0598fc0422.m4a"
+    },
+    {
+     "de": "zurückrufen",
+     "ru": "перезванивать",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/cb0598ee10c8.m4a"
+    },
+    {
+     "de": "der Empfang",
+     "ru": "стойка регистрации",
+     "gender": "m",
+     "plural": null,
+     "noPlural": true,
+     "audio": "audio/743f6359a077.m4a"
+    },
+    {
+     "de": "die Versichertenkarte",
+     "ru": "карта страховки",
+     "gender": "f",
+     "plural": "Versichertenkarten",
+     "audio": "audio/381258c4b4e4.m4a"
+    },
+    {
+     "de": "die Änderung",
+     "ru": "изменение",
+     "gender": "f",
+     "plural": "Änderungen",
+     "audio": "audio/5ea33f13131d.m4a"
+    },
+    {
+     "de": "später",
+     "ru": "позже",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/26a4cdedcefc.m4a"
+    },
+    {
+     "de": "zuerst anrufen",
+     "ru": "сначала позвонить",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/7a02d52fabb6.m4a"
+    }
+   ]
+  }
+ },
+ "tables": {
+  "rule": {
+   "title": "sich anmelden, sich fühlen; sollen",
+   "ru": "Опора для решения",
+   "head": [
+    "Beispiel",
+    "Смысл и форма"
+   ],
+   "rows": [
+    [
+     "Ich fühle mich nicht gut. Du fühlst dich müde.",
+     "ich → mich; du → dich."
+    ],
+    [
+     "Er meldet sich an. Wir melden uns an.",
+     "er / sie → sich; wir → uns; ihr → euch."
+    ],
+    [
+     "Ich möchte mich anmelden.",
+     "После модального инфинитив в конце: anmelden."
+    ],
+    [
+     "Ich soll zuerst anrufen.",
+     "sollen передаёт полученное указание."
+    ]
+   ],
+   "ruCols": [
+    1
+   ]
+  }
+ },
+ "tasks": {
+  "message": {
+   "kind": "message",
+   "part": "a2-lesen-2",
+   "title": "Neuer Termin · Lernnachricht",
+   "from": "Frau Klein",
+   "text": "Der alte Termin am Dienstag um 9 Uhr passt nicht. Ein neuer Termin ist am Mittwoch um 10:30 Uhr möglich. Bitte rufen Sie zuerst an und bestätigen Sie ihn. Bringen Sie Ihre Karte mit. Melden Sie sich am Empfang an.",
+   "sample": []
+  },
+  "radio": {
+   "kind": "worksheet",
+   "part": "a2-hoeren-2",
+   "format": "radio",
+   "title": "Fünf kurze Lernmeldungen",
+   "situation": "Hören Sie jede Meldung einmal. Wählen Sie a, b oder c.",
+   "recordings": [
+    {
+     "text": "Die Anmeldung in der Praxis ist heute am Empfang im Erdgeschoss. Bitte gehen Sie nicht in den ersten Stock.",
+     "audio": "audio/6bc046f7ed07.m4a"
+    },
+    {
+     "text": "Die Besprechung im Club beginnt heute um fünfzehn Uhr, nicht um vierzehn Uhr.",
+     "audio": "audio/13a2ebfa8f76.m4a"
+    },
+    {
+     "text": "Unser Café öffnet am Sonntag erst um zehn Uhr. Frühstück gibt es bis zwölf Uhr.",
+     "audio": "audio/d7760ef5e662.m4a"
+    },
+    {
+     "text": "Unser Lernmuseum ist heute geschlossen. Morgen können Sie uns wieder besuchen.",
+     "audio": "audio/eca46209a5fc.m4a"
+    },
+    {
+     "text": "Elif sucht ihre blaue Tasche. Sie liegt nicht im Kursraum. Bitte schauen Sie am Empfang nach.",
+     "audio": "audio/53ab80912d3d.m4a"
+    }
+   ],
+   "questions": [
+    {
+     "prompt": "Anmeldung ist",
+     "options": [
+      "am Empfang",
+      "im ersten Stock",
+      "im Café"
+     ],
+     "answers": [
+      "am Empfang"
+     ]
+    },
+    {
+     "prompt": "Besprechung beginnt um",
+     "options": [
+      "14 Uhr",
+      "15 Uhr",
+      "16 Uhr"
+     ],
+     "answers": [
+      "15 Uhr"
+     ]
+    },
+    {
+     "prompt": "Café öffnet um",
+     "options": [
+      "9 Uhr",
+      "10 Uhr",
+      "12 Uhr"
+     ],
+     "answers": [
+      "10 Uhr"
+     ]
+    },
+    {
+     "prompt": "Besuch im Lernmuseum wieder möglich",
+     "options": [
+      "heute",
+      "morgen",
+      "nächste Woche"
+     ],
+     "answers": [
+      "morgen"
+     ]
+    },
+    {
+     "prompt": "Wo soll man nach der Tasche schauen?",
+     "options": [
+      "am Empfang",
+      "im Kursraum",
+      "im Zug"
+     ],
+     "answers": [
+      "am Empfang"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "letter": {
+   "kind": "message",
+   "part": "a2-schreiben-2",
+   "title": "Später zum Kurs",
+   "from": "Frau Thomsen",
+   "text": "Bitte schreiben Sie mir, wenn sich Ihr Plan ändert.",
+   "situation": "Sie haben einen neuen Termin. Wählen Sie drei von vier Punkten und schreiben Sie circa 40 Wörter mit Anrede und Gruß.",
+   "choose": 3,
+   "points": [
+    "Warum später?",
+    "Wann ist der Termin?",
+    "Wann kommen Sie zum Kurs?",
+    "Hausaufgaben?"
+   ],
+   "sample": [
+    {
+     "de": "Liebe Frau Thomsen,",
+     "audio": "audio/67446b1c8657.m4a"
+    },
+    {
+     "de": "ich kann am Mittwoch nicht pünktlich zum Kurs kommen, weil ich um 10:30 Uhr einen Termin habe. Welche Hausaufgaben soll ich machen? Bitte schicken Sie mir die Aufgaben. Ich möchte sie zu Hause machen. Vielen Dank für Ihre Hilfe.",
+     "audio": "audio/d0a08eed3afe.m4a"
+    },
+    {
+     "de": "Viele Grüße",
+     "audio": "audio/faf8fee74cb4.m4a"
+    }
+   ]
+  },
+  "talk": {
+   "kind": "card",
+   "part": "a2-sprechen-2",
+   "title": "Einen Termin ändern",
+   "theme": "Termine",
+   "word": "Wann? Warum? Was mitbringen?",
+   "sample": [
+    {
+     "de": "Ich möchte meinen Termin verschieben.",
+     "audio": "audio/9570b05959d3.m4a"
+    },
+    {
+     "de": "Wann passt es Ihnen?",
+     "audio": "audio/b84fccae4e4d.m4a"
+    },
+    {
+     "de": "Ich soll zuerst anrufen und die Zeit bestätigen.",
+     "audio": "audio/7344d46f7a9f.m4a"
+    }
+   ]
+  }
+ },
+ "beats": [
+  {
+   "id": "start-1",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 0,
+   "read": "Матео переносит учебную запись в практику и сообщает об этом преподавательнице. Нужно понять новое время, кому перезвонить и что взять с собой. Медицинское состояние — часть вымышленной сцены; игрок не выбирает диагноз или лечение. Все нужные условия даны в сцене: знания географии, настоящих цен или расписаний не требуются. Сначала попробуйте понять, какого результата добиваются друзья, затем слушайте реплики. На новом уровне важно не только найти число или знакомое слово, но и связать несколько сведений.",
+   "point": "Запись и переданное указание",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 4,
+    "fresh": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "start-2",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 1,
+   "read": "Сотрудница предлагает новое время и просит подтвердить его звонком. Матео пересказывает поручение: *Ich soll zuerst anrufen*. Это не его собственная рекомендация другому человеку, а передача полученного указания. Формы *mich* и *sich* связываются с тем же человеком, который действует. В этой теме работа с сообщениями заменяет любые догадки о лечении.",
+   "point": "sich anmelden, sich fühlen; sollen",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 8,
+    "fresh": [
+     4,
+     5,
+     6,
+     7
+    ]
+   }
+  },
+  {
+   "id": "words-1",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 0,
+   "read": "Возвратный глагол часто учат вместе с местоимением: *sich anmelden*, *sich fühlen*. В конкретной реплике форма меняется: *ich melde mich an*, *Sie melden sich an*. Не переводите любое русское «-ся» механически: здесь рассматриваются конкретные полезные выражения. Для записи важны также *verschieben*, *bestätigen*, *zuerst* — этапы не взаимозаменяемы.",
+   "point": "Сначала используйте слово для решения; словарь остаётся справочником.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 6,
+    "words": "useful"
+   }
+  },
+  {
+   "id": "words-2",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 1,
+   "read": "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к ситуации: какие слова обозначают человека, место, условие или уже выполненное действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово встретится снова в записке или разговоре, попробуйте восстановить его смысл до подсказки.",
+   "point": "Возвращайтесь к выражениям в сообщениях и новых действиях.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 12,
+    "words": "useful",
+    "fresh": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   }
+  },
+  {
+   "id": "grammar-1",
+   "step": "grammar",
+   "stepTitle": "sich anmelden, sich fühlen; sollen",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "В этих выражениях местоимение относится к тому же человеку, что и подлежащее. *Ich fühle mich*, *du fühlst dich*. Нельзя просто оставить инфинитивное *sich* после любого лица. Сначала определите, о ком говорится, затем подберите форму. В диалоге это описание состояния персонажа, а не основание для медицинского вывода.",
+   "point": "ich → mich; du → dich.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "grammar-2",
+   "step": "grammar",
+   "stepTitle": "sich anmelden, sich fühlen; sollen",
+   "chapterIndex": 2,
+   "indexInStep": 1,
+   "read": "У третьего лица используем *sich*, у группы с говорящим — *uns*, у нескольких друзей — *euch*. Приставка *an* в главном предложении отделяется: *Wir melden uns an*. У вежливого *Sie* форма тоже *sich*. Контекст и обращение помогают понять, говорит человек о себе или даёт инструкцию посетителю.",
+   "point": "er / sie → sich; wir → uns; ihr → euch.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "grammar-3",
+   "step": "grammar",
+   "stepTitle": "sich anmelden, sich fühlen; sollen",
+   "chapterIndex": 2,
+   "indexInStep": 2,
+   "read": "С модальным глаголом приставка не отделяется от инфинитива: *möchte mich anmelden*. Местоимение находится внутри рамки. Сравните с обычным *Ich melde mich an*. Обе модели выражают регистрацию, но одна сообщает желание, другая действие. В игре нужно собрать подходящую реплику для своего этапа.",
+   "point": "После модального инфинитив в конце: anmelden.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "grammar-4",
+   "step": "grammar",
+   "stepTitle": "sich anmelden, sich fühlen; sollen",
+   "chapterIndex": 2,
+   "indexInStep": 3,
+   "read": "Матео пересказывает просьбу сотрудницы: сначала позвонить. Личная форма *soll* стоит второй, инфинитив *anrufen* — в конце. Это отличается от *Ich will anrufen*, собственного желания. В задании важно сохранить источник поручения и его порядок; назначение лечения или оценку здоровья здесь не делаем.",
+   "point": "sollen передаёт полученное указание.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "frames-1",
+   "step": "frames",
+   "stepTitle": "Как устроена реплика",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "У *Ich soll mich am Empfang anmelden* личная форма *soll* занимает вторую позицию. Местоимение *mich* остаётся в середине, инфинитив *anmelden* завершает рамку. Реплика пересказывает инструкцию на стойке. Если говорящий уже регистрируется, можно сказать *Ich melde mich am Empfang an* — это другой этап.",
+   "point": "*Ich soll mich am Empfang anmelden.*",
+   "scene": {
+    "view": "sentence",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "soll",
+         "text": "soll"
+        }
+       ],
+       [
+        {
+         "key": "mich",
+         "text": "mich"
+        },
+        {
+         "key": "am",
+         "text": "am"
+        },
+        {
+         "key": "empfang",
+         "text": "Empfang"
+        }
+       ],
+       [
+        {
+         "key": "anmelden",
+         "text": "anmelden"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich soll mich am Empfang anmelden.",
+      "ru": "Мне сказали зарегистрироваться у стойки.",
+      "audio": "audio/406419a58bfb.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-1",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 0,
+   "read": "Нет: *Ich melde mich an*. *Sich* относится к третьему лицу и вежливому *Sie* в наших примерах. У первого лица нужна форма *mich*. С модальным глаголом получится *Ich möchte mich anmelden*: приставка вернётся к инфинитиву в конце.",
+   "point": "*ich melde mich an*, но *er meldet sich an*.",
+   "question": "Ich melde sich an — верно?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "soll",
+         "text": "soll"
+        }
+       ],
+       [
+        {
+         "key": "mich",
+         "text": "mich"
+        },
+        {
+         "key": "am",
+         "text": "am"
+        },
+        {
+         "key": "empfang",
+         "text": "Empfang"
+        }
+       ],
+       [
+        {
+         "key": "anmelden",
+         "text": "anmelden"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich soll mich am Empfang anmelden.",
+      "ru": "Мне сказали зарегистрироваться у стойки.",
+      "audio": "audio/406419a58bfb.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-2",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 1,
+   "read": "В сообщении просят сначала перезвонить и подтвердить. Пока это не сделано, мы не можем выдать предложение за завершённое согласование. В игре нужно сохранить последовательность: услышать новые данные, перезвонить, подтвердить, затем сообщить об изменении преподавателю.",
+   "point": "Указанный следующий шаг — часть сообщения, а не необязательная деталь.",
+   "question": "Новое предложенное время уже подтверждено?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "soll",
+         "text": "soll"
+        }
+       ],
+       [
+        {
+         "key": "mich",
+         "text": "mich"
+        },
+        {
+         "key": "am",
+         "text": "am"
+        },
+        {
+         "key": "empfang",
+         "text": "Empfang"
+        }
+       ],
+       [
+        {
+         "key": "anmelden",
+         "text": "anmelden"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich soll mich am Empfang anmelden.",
+      "ru": "Мне сказали зарегистрироваться у стойки.",
+      "audio": "audio/406419a58bfb.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "exam-message-1",
+   "step": "exam-message",
+   "stepTitle": "Neuer Termin · Lernnachricht",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным текстом: объясните, какой фрагмент подтверждает каждое решение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "soll",
+         "text": "soll"
+        }
+       ],
+       [
+        {
+         "key": "mich",
+         "text": "mich"
+        },
+        {
+         "key": "am",
+         "text": "am"
+        },
+        {
+         "key": "empfang",
+         "text": "Empfang"
+        }
+       ],
+       [
+        {
+         "key": "anmelden",
+         "text": "anmelden"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich soll mich am Empfang anmelden.",
+      "ru": "Мне сказали зарегистрироваться у стойки.",
+      "audio": "audio/406419a58bfb.m4a"
+     }
+    ],
+    "task": "message"
+   }
+  },
+  {
+   "id": "exam-message-2",
+   "step": "exam-message",
+   "stepTitle": "Neuer Termin · Lernnachricht",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "soll",
+         "text": "soll"
+        }
+       ],
+       [
+        {
+         "key": "mich",
+         "text": "mich"
+        },
+        {
+         "key": "am",
+         "text": "am"
+        },
+        {
+         "key": "empfang",
+         "text": "Empfang"
+        }
+       ],
+       [
+        {
+         "key": "anmelden",
+         "text": "anmelden"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich soll mich am Empfang anmelden.",
+      "ru": "Мне сказали зарегистрироваться у стойки.",
+      "audio": "audio/406419a58bfb.m4a"
+     }
+    ],
+    "task": "message"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "soll",
+         "text": "soll"
+        }
+       ],
+       [
+        {
+         "key": "mich",
+         "text": "mich"
+        },
+        {
+         "key": "am",
+         "text": "am"
+        },
+        {
+         "key": "empfang",
+         "text": "Empfang"
+        }
+       ],
+       [
+        {
+         "key": "anmelden",
+         "text": "anmelden"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich soll mich am Empfang anmelden.",
+      "ru": "Мне сказали зарегистрироваться у стойки.",
+      "audio": "audio/406419a58bfb.m4a"
+     }
+    ],
+    "task": "message",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-radio-1",
+   "step": "exam-radio",
+   "stepTitle": "Fünf kurze Lernmeldungen",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным текстом: объясните, какой фрагмент подтверждает каждое решение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "soll",
+         "text": "soll"
+        }
+       ],
+       [
+        {
+         "key": "mich",
+         "text": "mich"
+        },
+        {
+         "key": "am",
+         "text": "am"
+        },
+        {
+         "key": "empfang",
+         "text": "Empfang"
+        }
+       ],
+       [
+        {
+         "key": "anmelden",
+         "text": "anmelden"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich soll mich am Empfang anmelden.",
+      "ru": "Мне сказали зарегистрироваться у стойки.",
+      "audio": "audio/406419a58bfb.m4a"
+     }
+    ],
+    "task": "radio"
+   }
+  },
+  {
+   "id": "exam-radio-2",
+   "step": "exam-radio",
+   "stepTitle": "Fünf kurze Lernmeldungen",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "soll",
+         "text": "soll"
+        }
+       ],
+       [
+        {
+         "key": "mich",
+         "text": "mich"
+        },
+        {
+         "key": "am",
+         "text": "am"
+        },
+        {
+         "key": "empfang",
+         "text": "Empfang"
+        }
+       ],
+       [
+        {
+         "key": "anmelden",
+         "text": "anmelden"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich soll mich am Empfang anmelden.",
+      "ru": "Мне сказали зарегистрироваться у стойки.",
+      "audio": "audio/406419a58bfb.m4a"
+     }
+    ],
+    "task": "radio"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "soll",
+         "text": "soll"
+        }
+       ],
+       [
+        {
+         "key": "mich",
+         "text": "mich"
+        },
+        {
+         "key": "am",
+         "text": "am"
+        },
+        {
+         "key": "empfang",
+         "text": "Empfang"
+        }
+       ],
+       [
+        {
+         "key": "anmelden",
+         "text": "anmelden"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich soll mich am Empfang anmelden.",
+      "ru": "Мне сказали зарегистрироваться у стойки.",
+      "audio": "audio/406419a58bfb.m4a"
+     }
+    ],
+    "task": "radio",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-letter-1",
+   "step": "exam-letter",
+   "stepTitle": "Später zum Kurs",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным текстом: объясните, какой фрагмент подтверждает каждое решение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "soll",
+         "text": "soll"
+        }
+       ],
+       [
+        {
+         "key": "mich",
+         "text": "mich"
+        },
+        {
+         "key": "am",
+         "text": "am"
+        },
+        {
+         "key": "empfang",
+         "text": "Empfang"
+        }
+       ],
+       [
+        {
+         "key": "anmelden",
+         "text": "anmelden"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich soll mich am Empfang anmelden.",
+      "ru": "Мне сказали зарегистрироваться у стойки.",
+      "audio": "audio/406419a58bfb.m4a"
+     }
+    ],
+    "task": "letter",
+    "reveal": 0
+   }
+  },
+  {
+   "id": "exam-letter-2",
+   "step": "exam-letter",
+   "stepTitle": "Später zum Kurs",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "soll",
+         "text": "soll"
+        }
+       ],
+       [
+        {
+         "key": "mich",
+         "text": "mich"
+        },
+        {
+         "key": "am",
+         "text": "am"
+        },
+        {
+         "key": "empfang",
+         "text": "Empfang"
+        }
+       ],
+       [
+        {
+         "key": "anmelden",
+         "text": "anmelden"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich soll mich am Empfang anmelden.",
+      "ru": "Мне сказали зарегистрироваться у стойки.",
+      "audio": "audio/406419a58bfb.m4a"
+     }
+    ],
+    "task": "letter",
+    "reveal": 0
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "soll",
+         "text": "soll"
+        }
+       ],
+       [
+        {
+         "key": "mich",
+         "text": "mich"
+        },
+        {
+         "key": "am",
+         "text": "am"
+        },
+        {
+         "key": "empfang",
+         "text": "Empfang"
+        }
+       ],
+       [
+        {
+         "key": "anmelden",
+         "text": "anmelden"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich soll mich am Empfang anmelden.",
+      "ru": "Мне сказали зарегистрироваться у стойки.",
+      "audio": "audio/406419a58bfb.m4a"
+     }
+    ],
+    "task": "letter",
+    "reveal": 0,
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-talk-1",
+   "step": "exam-talk",
+   "stepTitle": "Einen Termin ändern",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным текстом: объясните, какой фрагмент подтверждает каждое решение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "soll",
+         "text": "soll"
+        }
+       ],
+       [
+        {
+         "key": "mich",
+         "text": "mich"
+        },
+        {
+         "key": "am",
+         "text": "am"
+        },
+        {
+         "key": "empfang",
+         "text": "Empfang"
+        }
+       ],
+       [
+        {
+         "key": "anmelden",
+         "text": "anmelden"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich soll mich am Empfang anmelden.",
+      "ru": "Мне сказали зарегистрироваться у стойки.",
+      "audio": "audio/406419a58bfb.m4a"
+     }
+    ],
+    "task": "talk",
+    "reveal": 0
+   }
+  },
+  {
+   "id": "exam-talk-2",
+   "step": "exam-talk",
+   "stepTitle": "Einen Termin ändern",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "soll",
+         "text": "soll"
+        }
+       ],
+       [
+        {
+         "key": "mich",
+         "text": "mich"
+        },
+        {
+         "key": "am",
+         "text": "am"
+        },
+        {
+         "key": "empfang",
+         "text": "Empfang"
+        }
+       ],
+       [
+        {
+         "key": "anmelden",
+         "text": "anmelden"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich soll mich am Empfang anmelden.",
+      "ru": "Мне сказали зарегистрироваться у стойки.",
+      "audio": "audio/406419a58bfb.m4a"
+     }
+    ],
+    "task": "talk",
+    "reveal": 0
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "soll",
+         "text": "soll"
+        }
+       ],
+       [
+        {
+         "key": "mich",
+         "text": "mich"
+        },
+        {
+         "key": "am",
+         "text": "am"
+        },
+        {
+         "key": "empfang",
+         "text": "Empfang"
+        }
+       ],
+       [
+        {
+         "key": "anmelden",
+         "text": "anmelden"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich soll mich am Empfang anmelden.",
+      "ru": "Мне сказали зарегистрироваться у стойки.",
+      "audio": "audio/406419a58bfb.m4a"
+     }
+    ],
+    "task": "talk",
+    "reveal": 0,
+    "solved": true
+   }
+  }
+ ],
+ "exercises": [
+  {
+   "id": "a2-termine-1",
+   "type": "choice",
+   "q": "Ich fühle ___ nicht gut.",
+   "options": [
+    "mich",
+    "sich",
+    "dich"
+   ],
+   "answer": 0,
+   "why": "Первое лицо.",
+   "audio": "audio/f1041a62cd5f.m4a"
+  },
+  {
+   "id": "a2-termine-2",
+   "type": "choice",
+   "q": "Du meldest ___ an.",
+   "options": [
+    "dich",
+    "mich",
+    "uns"
+   ],
+   "answer": 0,
+   "why": "Второе лицо.",
+   "audio": "audio/9b04c052cb3f.m4a"
+  },
+  {
+   "id": "a2-termine-3",
+   "type": "choice",
+   "q": "Er meldet ___ an.",
+   "options": [
+    "sich",
+    "mich",
+    "euch"
+   ],
+   "answer": 0,
+   "why": "Третье лицо.",
+   "audio": "audio/38eb681f7618.m4a"
+  },
+  {
+   "id": "a2-termine-4",
+   "type": "choice",
+   "q": "Wir möchten ___ anmelden.",
+   "options": [
+    "uns",
+    "sich",
+    "dich"
+   ],
+   "answer": 0,
+   "why": "Группа с говорящим.",
+   "audio": "audio/a7a1de0a660c.m4a"
+  },
+  {
+   "id": "a2-termine-5",
+   "type": "choice",
+   "q": "Ich soll zuerst ___.",
+   "options": [
+    "anrufen",
+    "rufe an",
+    "angerufen"
+   ],
+   "answer": 0,
+   "why": "Инфинитив после soll.",
+   "audio": "audio/7bd02d943365.m4a"
+  },
+  {
+   "id": "a2-termine-6",
+   "type": "choice",
+   "q": "Ich ___ mich am Empfang anmelden.",
+   "options": [
+    "soll",
+    "sollen",
+    "sollst"
+   ],
+   "answer": 0,
+   "why": "Ich soll.",
+   "audio": "audio/406419a58bfb.m4a"
+  },
+  {
+   "id": "a2-termine-7",
+   "type": "order",
+   "ru": "Я плохо себя чувствую.",
+   "de": "Ich fühle mich nicht gut.",
+   "audio": "audio/f1041a62cd5f.m4a"
+  },
+  {
+   "id": "a2-termine-8",
+   "type": "order",
+   "ru": "Мы регистрируемся у стойки.",
+   "de": "Wir melden uns am Empfang an.",
+   "audio": "audio/9d223c60d67b.m4a"
+  },
+  {
+   "id": "a2-termine-9",
+   "type": "order",
+   "ru": "Я хотел бы перенести свою запись.",
+   "de": "Ich möchte meinen Termin verschieben.",
+   "audio": "audio/9570b05959d3.m4a"
+  },
+  {
+   "id": "a2-termine-10",
+   "type": "order",
+   "ru": "Мне сказали сначала позвонить.",
+   "de": "Ich soll zuerst anrufen.",
+   "audio": "audio/7bd02d943365.m4a"
+  },
+  {
+   "id": "a2-termine-11",
+   "type": "order",
+   "ru": "Пожалуйста, подтвердите новое время.",
+   "de": "Bitte bestätigen Sie die neue Zeit.",
+   "audio": "audio/ca513e866232.m4a"
+  },
+  {
+   "id": "a2-termine-12",
+   "type": "order",
+   "ru": "Она говорит, чтобы я пришёл позже.",
+   "de": "Sie sagt, dass ich später kommen soll.",
+   "audio": "audio/5f17574c66f0.m4a"
+  }
+ ],
+ "case": {
+  "title": "Erst anrufen, dann bestätigen",
+  "ru": "Сверка дневника",
+  "intro": "В заметке о переносе пропущен следующий шаг и осталось старое время. Сверьте сообщение, не добавляя медицинских выводов.",
+  "people": {},
+  "steps": [
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Alter Termin: Dienstag, 9 Uhr. Neuer Vorschlag: Mittwoch, 10:30 Uhr.",
+      "ru": "Старая запись: вторник, 9:00. Новое предложение: среда, 10:30."
+     }
+    ],
+    "question": "Какое новое время предложено?",
+    "options": [
+     "Вторник 9:00",
+     "Среда 10:30",
+     "Среда 9:30"
+    ],
+    "answer": 1,
+    "right": "Меняются и день, и время.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Bitte rufen Sie zuerst an und bestätigen Sie den Termin.",
+      "ru": "Пожалуйста, сначала позвоните и подтвердите запись."
+     }
+    ],
+    "question": "Что нужно сделать?",
+    "options": [
+     "Сразу прийти без звонка",
+     "Позвонить и подтвердить",
+     "Отменить все планы"
+    ],
+    "answer": 1,
+    "right": "Нужен явно указанный следующий шаг.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Ich soll mich am Empfang anmelden.",
+      "ru": "Мне сказали зарегистрироваться у стойки."
+     }
+    ],
+    "question": "Кто должен зарегистрироваться?",
+    "options": [
+     "Сам говорящий",
+     "Любой другой человек",
+     "Преподавательница"
+    ],
+    "answer": 0,
+    "right": "*Ich* и *mich* относятся к одному человеку.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   }
+  ],
+  "ending": "Запись исправлена по источникам. В следующей главе команда воспользуется подтверждёнными сведениями для нового решения."
+ },
+ "adventure": {
+  "kind": "sequence",
+  "title": "Передайте изменение точно",
+  "intro": "Матео переносит учебную запись в практику и сообщает об этом преподавательнице. Нужно понять новое время, кому перезвонить и что взять с собой. Медицинское состояние — часть вымышленной сцены; игрок не выбирает диагноз или лечение.",
+  "ending": "Новое время и следующий шаг записаны, сообщение преподавательнице подготовлено. В следующей теме понадобится так же точно объяснить проблему с покупкой.",
+  "challenges": [
+   {
+    "id": "new-time",
+    "kind": "clock",
+    "title": "Поставьте новое время",
+    "intro": "Старую запись нужно заменить предложенным временем среды. День подтверждаем отдельно.",
+    "success": "Среда 10:30, не вторник 9:00.",
+    "wrong": "Новое предложение — среда в 10:30.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Der alte Termin am Dienstag um 9 Uhr passt nicht. Ein neuer Termin ist am Mittwoch um 10:30 Uhr möglich. Bitte rufen Sie zuerst an und bestätigen Sie ihn. Bringen Sie Ihre Karte mit. Melden Sie sich am Empfang an.",
+      "name": "Frau Klein"
+     }
+    ],
+    "answer": "10:30",
+    "initial": "09:00",
+    "minuteStep": 5
+   },
+   {
+    "id": "reflexive",
+    "kind": "match",
+    "title": "Кто регистрируется?",
+    "intro": "Соедините подлежащее с нужным местоимением.",
+    "success": "Форма местоимения согласована с действующим лицом.",
+    "wrong": "У *ich* — *mich*, у *du* — *dich*, у *wir* — *uns*.",
+    "mode": "reading",
+    "options": [
+     {
+      "id": "mich",
+      "label": "mich"
+     },
+     {
+      "id": "dich",
+      "label": "dich"
+     },
+     {
+      "id": "uns",
+      "label": "uns"
+     },
+     {
+      "id": "sich",
+      "label": "sich"
+     }
+    ],
+    "slots": [
+     {
+      "id": "ich",
+      "label": "Ich melde … an.",
+      "answer": "mich"
+     },
+     {
+      "id": "du",
+      "label": "Du meldest … an.",
+      "answer": "dich"
+     },
+     {
+      "id": "wir",
+      "label": "Wir melden … an.",
+      "answer": "uns"
+     }
+    ]
+   },
+   {
+    "id": "instruction",
+    "kind": "order",
+    "title": "Перескажите указание",
+    "intro": "«Мне сказали сначала позвонить».",
+    "success": "Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.",
+    "wrong": "Проверьте положение глагола и конец предложения: используйте все фрагменты.",
+    "tokens": [
+     "Ich",
+     "soll",
+     "zuerst",
+     "anrufen."
+    ],
+    "label": "Реплика для команды"
+   },
+   {
+    "id": "next",
+    "kind": "select",
+    "title": "Выберите следующий шаг",
+    "intro": "Что прямо просят сделать перед подтверждением?",
+    "success": "Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы одно из них.",
+    "wrong": "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание и адресата.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Der alte Termin am Dienstag um 9 Uhr passt nicht. Ein neuer Termin ist am Mittwoch um 10:30 Uhr möglich. Bitte rufen Sie zuerst an und bestätigen Sie ihn. Bringen Sie Ihre Karte mit. Melden Sie sich am Empfang an.",
+      "name": "Frau Klein"
+     }
+    ],
+    "options": [
+     {
+      "id": "o0",
+      "label": "zuerst anrufen"
+     },
+     {
+      "id": "o1",
+      "label": "ohne Bestätigung direkt kommen"
+     },
+     {
+      "id": "o2",
+      "label": "den Termin ignorieren"
+     }
+    ],
+    "answer": [
+     "o0"
+    ]
+   },
+   {
+    "id": "card",
+    "kind": "select",
+    "title": "Подготовьте нужное по сообщению",
+    "intro": "Что нужно принести и где зарегистрироваться?",
+    "success": "Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы одно из них.",
+    "wrong": "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание и адресата.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Der alte Termin am Dienstag um 9 Uhr passt nicht. Ein neuer Termin ist am Mittwoch um 10:30 Uhr möglich. Bitte rufen Sie zuerst an und bestätigen Sie ihn. Bringen Sie Ihre Karte mit. Melden Sie sich am Empfang an.",
+      "name": "Frau Klein"
+     }
+    ],
+    "options": [
+     {
+      "id": "o0",
+      "label": "Karte · am Empfang"
+     },
+     {
+      "id": "o1",
+      "label": "Tickets · im Café"
+     },
+     {
+      "id": "o2",
+      "label": "Kamera · im ersten Stock"
+     }
+    ],
+    "answer": [
+     "o0"
+    ]
+   }
+  ]
+ },
+ "spy": []
+}

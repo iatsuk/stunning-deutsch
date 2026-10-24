@@ -1,0 +1,718 @@
+id: b1-stoerungen
+order: 14
+title: Die Fahrt wurde abgesagt. Wir ändern den Plan.
+ru: Рассказываем об отмене и находим замену
+lede: В учебной поездке в Бюзум запланированную прогулку на катере отменили из-за сильного
+  ветра. Друзья уже получили сообщение о возврате билетов, но новый дневной план нужно
+  согласовать. Встреча FördeTreff в Киле остаётся в подтверждённом Raum C и к этой отмене не
+  относится.
+goals:
+  - Понять уже произошедшее изменение в Passiv Präteritum
+  - Различить wurde и wurden
+  - Отделить отмену одной услуги от остального дня
+  - Передать обновлённый план и время возвращения
+grammar:
+  - "Passiv Präteritum: wurde / wurden + Partizip II"
+exam:
+  - b1-lesen-2
+  - b1-sprachbausteine-1
+  - b1-hoeren-3
+  - b1-sprechen-3
+dialogues:
+  scene:
+    title: Die Fahrt wurde abgesagt. Wir ändern den Plan.
+    ru: Рассказываем об отмене и находим замену
+    place: Büsum · порт и запасной маршрут · вымышленная учебная ситуация
+    people:
+      D:
+        name: Dana
+        voice: Anna
+      M:
+        name: Mateo
+        voice: Reed
+      E:
+        name: Elif
+        voice: Flo
+      H:
+        name: Hauke
+        voice: Rocko
+    lines:
+      - H: Die Bootsfahrt wurde wegen des starken Windes abgesagt.
+        ru: Прогулку на катере отменили из-за сильного ветра.
+      - D: Wurden die anderen Fahrten auch abgesagt?
+        ru: Другие поездки тоже отменили?
+      - H: Die Nachricht betrifft nur unsere Fahrt um elf. Über andere Fahrten steht dort nichts.
+        ru: Сообщение касается только нашей прогулки в одиннадцать. О других ничего не сказано.
+      - E: Die Tickets wurden bereits erstattet. Wir könnten stattdessen ins Museum gehen.
+        ru: Деньги за билеты уже вернули. Вместо этого мы могли бы пойти в музей.
+      - M: Ich brauche vorher eine warme Pause. Danach komme ich gern mit.
+        ru: Сначала мне нужен тёплый перерыв. Потом с удовольствием пойду.
+      - D: Der Rückfahrtbus wurde auf fünfzehn Uhr vierzig verschoben.
+        ru: Обратный автобус перенесли на пятнадцать сорок.
+      - H: Dann sollten wir um fünfzehn Uhr fünfundzwanzig an der neuen Haltestelle sein.
+        ru: Тогда нам стоит быть на новой остановке в пятнадцать двадцать пять.
+      - E: Gut. Wir informieren die Gruppe über die Änderung, bevor jemand zum alten Halt geht.
+        ru: Хорошо. Сообщим группе об изменении, прежде чем кто-то пойдёт на старую остановку.
+words:
+  useful:
+    title: Wörter für die Aufgabe
+    ru: Слова для действия
+    items:
+      - de: die Absage
+        ru: отмена
+        pl: Absagen
+      - de: bei einer Verschiebung
+        ru: при переносе
+      - de: die Erstattung
+        ru: возврат оплаты
+        pl: Erstattungen
+      - de: die Bootsfahrt
+        ru: прогулка на катере
+        pl: Bootsfahrten
+      - de: die Anlegestelle
+        ru: место причаливания
+        pl: Anlegestellen
+      - de: die Ersatzhaltestelle
+        ru: временная остановка
+        pl: Ersatzhaltestellen
+      - de: der Wind
+        ru: ветер
+        pl: Winde
+      - de: die Rückmeldung
+        ru: ответ, обратная связь
+        pl: Rückmeldungen
+      - de: abgesagt werden
+        ru: быть отменённым
+      - de: verschoben werden
+        ru: быть перенесённым
+      - de: verlegt werden
+        ru: быть перемещённым
+      - de: stattdessen
+        ru: вместо этого
+      - de: bereits erstattet
+        ru: уже возвращено
+      - de: betreffen
+        ru: касаться чего-либо
+      - de: rechtzeitig Bescheid sagen
+        ru: заранее сообщить
+tables:
+  rule:
+    title: "Passiv Präteritum: wurde / wurden + Partizip II"
+    ru: Опора для решения
+    head:
+      - Beispiel
+      - Смысл и форма
+    ruCols:
+      - 1
+    rows:
+      - - Die Fahrt wurde abgesagt.
+        - "Прошлое Passiv: wurde + Partizip II."
+      - - Die Tickets wurden erstattet.
+        - "Множественное число: wurden, не wurde."
+      - - Die Fahrt wurde abgesagt. / Es wurde heller.
+        - "Не каждое wurde — Passiv: ищите Partizip II."
+tasks:
+  update:
+    kind: message
+    part: b1-lesen-2
+    title: Nachrichten zur Fahrt · Ausschnitt
+    text: "Bootsfahrt 11:00: abgesagt wegen starken Windes. Tickets: bereits erstattet. Museum:
+      geöffnet ab 12:00,6 Euro. Café: geöffnet ab 11:00, Pause 8 Euro. Bus nach Kiel: von 15:10
+      auf 15:40 verschoben. Neuer Halt: Hafenstraße statt Markt. Gruppe spätestens 15:25 am
+      neuen Halt. Budget 20 Euro pro Person. Alle Zeiten und Angebote sind Lernbedingungen."
+  gaps:
+    kind: worksheet
+    part: b1-sprachbausteine-1
+    format: cloze
+    title: Ein Bericht über die Änderungen
+    text: Liebe Nora, unsere Bootsfahrt [[1]] abgesagt. Die Tickets [[2]] erstattet, [[3]] es zu
+      stark wehte. [[4]] hatten wir einen guten Tag. Wir gingen [[5]] Museum und machten eine
+      Pause [[6]] Hafen. Wir brauchten diese Pause, [[7]] wir waren etwas müde. Der Bus fuhr
+      [[8]] 15:40 Uhr. Wir wussten, [[9]] die alte Zeit nicht mehr galt. Es war wichtig, den
+      neuen Halt vorher [[10]] prüfen. Liebe Grüße, Dana
+    questions:
+      - prompt: Lücke 1
+        options:
+          - wurde
+          - wurden
+          - wird
+        answers:
+          - wurde
+      - prompt: Lücke 2
+        options:
+          - werden
+          - wurden
+          - wurde
+        answers:
+          - wurden
+      - prompt: Lücke 3
+        options:
+          - trotzdem
+          - obwohl
+          - weil
+        answers:
+          - weil
+      - prompt: Lücke 4
+        options:
+          - Trotzdem
+          - Obwohl
+          - Weil
+        answers:
+          - Trotzdem
+      - prompt: Lücke 5
+        options:
+          - am
+          - ins
+          - im
+        answers:
+          - ins
+      - prompt: Lücke 6
+        options:
+          - ins
+          - zum
+          - am
+        answers:
+          - am
+      - prompt: Lücke 7
+        options:
+          - denn
+          - weil
+          - ob
+        answers:
+          - denn
+      - prompt: Lücke 8
+        options:
+          - im
+          - um
+          - am
+        answers:
+          - um
+      - prompt: Lücke 9
+        options:
+          - weil
+          - ob
+          - dass
+        answers:
+          - dass
+      - prompt: Lücke 10
+        options:
+          - zu
+          - um
+          - damit
+        answers:
+          - zu
+  notices:
+    kind: worksheet
+    part: b1-hoeren-3
+    format: article
+    title: Fünf Mitteilungen aus Büsum
+    recordings:
+      - voice: Grandpa
+        text: Die Bootsfahrt um elf Uhr wurde wegen des starken Windes abgesagt. Diese Meldung betrifft
+          nur die genannte Fahrt. Bitte prüfen Sie andere Angebote jeweils am
+          Informationsschalter.
+      - voice: Sandy
+        text: Die Tickets für die abgesagte Fahrt wurden bereits auf dem ursprünglichen Zahlungsweg
+          erstattet. Sie müssen dafür heute nicht noch einmal zum Schalter kommen. Bei Fragen
+          nennen Sie bitte Ihre Buchungsnummer.
+      - voice: Shelley
+        text: Unser kleines Museum öffnet heute um zwölf Uhr. Die Ausstellung ist bis sechzehn Uhr
+          zugänglich. Eine gebuchte Führung um dreizehn Uhr wurde verschoben; der normale
+          Besuch ab zwölf bleibt möglich.
+      - voice: Reed
+        text: Im Café wurde für Ihre Gruppe ein Tisch ab elf Uhr reserviert. Die warme Pause kostet in
+          dieser Lernaufgabe acht Euro pro Person. Weitere Speisen bestellen Sie bitte nur nach
+          Absprache.
+      - voice: Eddy
+        text: Der Bus nach Kiel wurde von fünfzehn Uhr zehn auf fünfzehn Uhr vierzig verschoben. Auch
+          die Haltestelle wurde verlegt. Bitte warten Sie in der Hafenstraße, nicht mehr am
+          Markt.
+    questions:
+      - prompt: Alle Fahrten des Tages wurden abgesagt.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Für die Erstattung muss die Gruppe heute erneut zum Schalter.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Der normale Museumsbesuch ist ab 12 Uhr möglich.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+      - prompt: Für die Gruppe gibt es ab 11 Uhr einen Tisch.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+      - prompt: Der Bus fährt weiterhin um 15:10 am Markt.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+  talk:
+    kind: card
+    part: b1-sprechen-3
+    title: Nach einer Absage gemeinsam weiterplanen
+    theme: Pause, Museum und Rückfahrt
+    word: Änderung · Wunsch · Zeit · Budget · Nachricht
+    situation: Die Bootsfahrt fällt aus. Planen Sie eine Alternative mit Pause und eventuell
+      Museum. Budget 20 Euro pro Person. Der Bus fährt 15:40; alle sollen 15:25 an der
+      Hafenstraße sein.
+    roles:
+      - title: Person A
+        text: Sie möchten zuerst ins Warme. Eine Pause kostet 8 Euro. Danach könnten Sie das Museum für
+          6 Euro besuchen.
+      - title: Person B
+        text: Sie möchten noch etwas sehen und haben die Nachricht über den Bus gelesen. Übernehmen Sie
+          die Information der Gruppe und prüfen Sie die Reihenfolge.
+steps:
+  - id: start
+    chapter: scene
+    title: Новое дело команды
+    beats:
+      - read: "В учебной поездке в Бюзум запланированную прогулку на катере отменили из-за сильного
+          ветра. Друзья уже получили сообщение о возврате билетов, но новый дневной план нужно
+          согласовать. Встреча FördeTreff в Киле остаётся в подтверждённом Raum C и к этой
+          отмене не относится. Все нужные условия даны в сцене: знания географии, настоящих цен
+          или расписаний не требуются. Сначала попробуйте понять, какого результата добиваются
+          друзья, затем слушайте реплики. На новом уровне важно не только найти число или
+          знакомое слово, но и связать несколько сведений."
+        point: Рассказываем об отмене и находим замену
+        set:
+          view: dialogue
+          dialogue: scene
+          reveal: 4
+      - read: "В предыдущей главе Passiv описывал происходящее: wird renoviert. Здесь речь о уже
+          принятом изменении: wurde abgesagt. Wurde и wurden показывают прошлое время, а
+          причастие называет действие. Важно отдельно понять границы сообщения. Отмена нашей
+          прогулки на катере не доказывает, что закрыт весь порт, отменены все автобусы или
+          изменена встреча в Киле."
+        point: "Passiv Präteritum: wurde / wurden + Partizip II"
+        set:
+          reveal: 8
+  - id: words
+    chapter: words
+    title: Слова, которые понадобятся
+    beats:
+      - read: "Объявления об отменах содержат несколько связанных сведений: что отменили, вернули ли
+          оплату, куда идти и какое время теперь действует. Эти условия в уроке вымышлены.
+          Слова морской поездки нужны для обычных действий путешественника: выбрать тёплую
+          паузу, договориться о музее, предупредить друзей и вовремя прийти к автобусу."
+        point: Сначала используйте слово для решения; словарь остаётся справочником.
+        set:
+          view: words
+          words: useful
+          reveal: 6
+      - read: "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к
+          ситуации: какие слова обозначают человека, место, условие или уже выполненное
+          действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово
+          встретится снова в записке или разговоре, попробуйте восстановить его смысл до
+          подсказки."
+        point: Возвращайтесь к выражениям в сообщениях и новых действиях.
+        set:
+          reveal: 15
+  - id: grammar
+    chapter: grammar
+    title: "Passiv Präteritum: wurde / wurden + Partizip II"
+    beats:
+      - read: "Вспомогательный глагол werden переходит в Präteritum: wurde. Причастие abgesagt
+          сохраняется. Сравните *Die Fahrt wird abgesagt* и *Die Fahrt wurde abgesagt*. Вторая
+          форма сообщает о прошлом действии, но сама по себе не говорит, вернули ли деньги или
+          предложили замену. Для этих выводов нужны отдельные сведения источника."
+        point: "Прошлое Passiv: wurde + Partizip II."
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: Число подлежащего остаётся важным в прошлом времени. Одна Fahrt wurde abgesagt, несколько
+          Tickets wurden erstattet. Причастие не меняется из-за числа. Если в сообщении много
+          деталей, сначала выделите предмет каждого действия. Тогда будет легче не перепутать
+          отменённую услугу с возвращёнными билетами или перенесённой остановкой.
+        point: "Множественное число: wurden, не wurde."
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: "В знакомом рассказе из Экенфьорде *Es wurde heller* означало «стало светлее». Причастия
+          действия там нет: heller — сравнительная форма прилагательного. В *wurde abgesagt*
+          есть Partizip II, поэтому конструкция пассивная. Смотрите на вторую часть рамки, а не
+          только на одно слово wurde. Так вы различите изменение состояния и действие над
+          предметом."
+        point: "Не каждое wurde — Passiv: ищите Partizip II."
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+  - id: frames
+    chapter: grammar
+    title: Как устроена реплика
+    beats:
+      - read: Автобус — предмет изменения, wurde показывает прошлое время, verschoben называет перенос.
+          Между ними стоит новое время. Старое значение не нужно сохранять как действующее,
+          если источник прямо заменяет его новым. В игре затем установите часы на 15:40, а в
+          разговоре отдельно согласуйте более раннее прибытие группы к остановке.
+        point: "*Der Bus wurde auf fünfzehn Uhr vierzig verschoben.*"
+        set:
+          view: sentence
+          rows:
+            - de:
+                - Der Bus
+                - wurde
+                - auf fünfzehn Uhr vierzig
+                - verschoben.
+              ru: Автобус перенесли на15:40.
+  - id: check
+    chapter: practice
+    title: Проверьте смысл до подсказки
+    beats:
+      - question: Wurde всегда означает, что действие пассивное?
+        read: "Нет. Сравните *Es wurde heller* и *Die Fahrt wurde abgesagt*. В первом случае сообщают
+          об изменении состояния, во втором — о действии над поездкой. Найдите причастие,
+          которое закрывает рамку Passiv. Если его нет, не определяйте конструкцию только по
+          вспомогательному слову: нужен смысл всего предложения."
+        point: Проверяем всю рамку, включая причастие.
+        set:
+          view: table
+          table: rule
+      - question: Отмена катера в 11:00 доказывает отмену всех прогулок?
+        read: Нет. Сообщение ограничено нашей поездкой и её временем. О других рейсах в источнике
+          ничего не сказано. Нельзя расширять один факт до всего дня или города. Для нового
+          плана достаточно знать, что исходный пункт недоступен, а музей, кафе и автобус
+          описаны отдельно. Их статус проверяется по собственным сообщениям.
+        point: У изменения есть точный предмет и границы.
+        set:
+          view: table
+          table: rule
+  - id: exam-update
+    chapter: exam
+    title: Nachrichten zur Fahrt · Ausschnitt
+    beats:
+      - read: "Найдите отдельный статус каждого пункта: отменённый катер, возвращённая оплата, открытый
+          музей и изменённый автобус. Сравните старое и новое время. Карточка даёт данные для
+          игры, а не настоящие расписания Бюзума. Для общего плана важно не только куда пойти,
+          но и когда предупредить остальных участников."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: update
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: update
+        set:
+          view: task
+          task: update
+          solved: true
+  - id: exam-gaps
+    chapter: exam
+    title: Ein Bericht über die Änderungen
+    beats:
+      - read: "Рассказ связывает прошлые изменения и обычные причины. Для двух первых пропусков
+          определите число подлежащего. Потом сравните уступку, причину и две разные формы
+          связи с главной частью. Выбор должен сохранить понятную историю: несмотря на отмену,
+          у группы был хороший день. В конце проверьте порядок слов, а не только знакомое
+          окончание."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: gaps
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: gaps
+        set:
+          view: task
+          task: gaps
+          solved: true
+  - id: exam-notices
+    chapter: exam
+    title: Fünf Mitteilungen aus Büsum
+    beats:
+      - read: Слушайте пять сообщений дважды. Формулировка о переносе экскурсии по музею не обязательно
+          закрывает весь музей. Аналогично возврат оплаты может уже быть выполнен, а не
+          требовать нового посещения кассы. Ищите подтверждение каждого утверждения в
+          соответствующей записи. Учебный текст открывайте после своей попытки.
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: notices
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: notices
+        set:
+          view: task
+          task: notices
+          solved: true
+  - id: exam-talk
+    chapter: exam
+    title: Nach einer Absage gemeinsam weiterplanen
+    beats:
+      - read: "Сообщите партнёру об отмене и новом автобусе. Затем предложите выполнимую
+          последовательность, учитывая просьбу о тёплой паузе. В итоге назовите место и время
+          встречи группы и того, кто её предупредит. Расходы считайте вместе: музей и кафе
+          стоят четырнадцать, а не только стоимость одного пункта."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: talk
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: talk
+        set:
+          view: task
+          task: talk
+          solved: true
+exercises:
+  - type: choice
+    q: Die Fahrt ___ abgesagt. Gestern.
+    options:
+      - werden
+      - wurde
+      - wird
+    answer: 1
+    why: Прошлое Passiv.
+  - type: choice
+    q: Die Tickets ___ erstattet.
+    options:
+      - wirst
+      - wurden
+      - wurde
+    answer: 1
+    why: Множественное число.
+  - type: choice
+    q: Es wurde heller. Это…
+    options:
+      - Passiv с причастием
+      - Подтверждение брони
+      - Изменение состояния
+    answer: 2
+    why: Heller не Partizip II.
+  - type: choice
+    q: Die Haltestelle wurde ___.
+    options:
+      - verlegte
+      - verlegt
+      - verlegen
+    answer: 1
+    why: Partizip II.
+  - type: choice
+    q: Die Fahrt wird abgesagt — время?
+    options:
+      - Plusquamperfekt
+      - Präsens
+      - Präteritum
+    answer: 1
+    why: Präsens вспомогательного werden.
+  - type: choice
+    q: Изменён автобус, значит Raum C отменён?
+    options:
+      - Да
+      - Только кухня
+      - Нет
+    answer: 2
+    why: Это разные события.
+  - type: order
+    de: Die Bootsfahrt wurde wegen des Windes abgesagt.
+    ru: Прогулку на катере отменили из-за ветра.
+  - type: order
+    de: Die Tickets wurden bereits erstattet.
+    ru: Деньги за билеты уже вернули.
+  - type: order
+    de: Die Haltestelle wurde verlegt.
+    ru: Остановку перенесли.
+  - type: order
+    de: Der Bus wurde auf fünfzehn Uhr vierzig verschoben.
+    ru: Автобус перенесли на 15:40.
+  - type: order
+    de: Wir sollten die Gruppe rechtzeitig informieren.
+    ru: Нам стоит вовремя сообщить группе.
+  - type: order
+    de: Danach können wir ins Museum gehen.
+    ru: Потом можно пойти в музей.
+case:
+  title: "Absage heißt nicht: Alles ist abgesagt"
+  ru: Сверка дневника
+  intro: В дневнике перепутали предмет отмены, старое время и место встречи.
+  people: {}
+  steps:
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Die Bootsfahrt um elf wurde abgesagt. Über andere Fahrten steht nichts in der Nachricht.
+          ru: Отменили катер в 11. О других поездках ничего не сказано.
+      question: Что можно уверенно записать?
+      options:
+        - Все автобусы отменены
+        - Отменена названная прогулка
+        - Весь порт закрыт
+      answer: 1
+      right: Границы сообщения названы прямо.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Die Tickets wurden bereits erstattet.
+          ru: Оплату билетов уже вернули.
+      question: Возврат ещё только обещают?
+      options:
+        - Нет, сообщают о выполненном возврате
+        - Да
+        - Он заменяет билет в музей
+      answer: 0
+      right: Bereits и прошедшее действие сообщают результат.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Bus 15:40, Hafenstraße. Gruppe 15:25 am Halt.
+          ru: Автобус 15:40, Hafenstraße. Группа у остановки 15:25.
+      question: Где и когда собирается группа?
+      options:
+        - Markt в 15:10
+        - В Raum C в 11:00
+        - Hafenstraße в 15:25
+      answer: 2
+      right: Приход группы отделён от отправления и старого плана.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+  ending: Исправлены предмет отмены, статус возврата и новый маршрут. В проектный дневник не
+    перенесены изменения из другой поездки.
+adventure:
+  kind: sequence
+  title: Спасите день после отмены
+  intro: В учебной поездке в Бюзум запланированную прогулку на катере отменили из-за сильного
+    ветра. Друзья уже получили сообщение о возврате билетов, но новый дневной план нужно
+    согласовать. Встреча FördeTreff в Киле остаётся в подтверждённом Raum C и к этой отмене не
+    относится.
+  ending: Отмена одной прогулки не отменила весь день. Запасной план согласован, группе переданы
+    новый Halt Hafenstraße и автобус 15:40. Подтверждённая встреча в Raum C остаётся без
+    изменений.
+  challenges:
+    - id: scope
+      kind: select
+      title: Что отменено по источнику?
+      intro: Не расширяйте сообщение на все услуги города.
+      mode: reading
+      clue:
+        task: update
+      options:
+        - id: o0
+          label: Прогулка на катере в 11:00
+        - id: o1
+          label: Все поездки города
+        - id: o2
+          label: Встреча в Raum C
+      answer:
+        - o0
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."
+    - id: number
+      kind: match
+      title: Согласуйте прошедшее действие
+      intro: Найдите форму по числу предмета.
+      slots:
+        - id: a
+          label: Die Fahrt … abgesagt.
+          answer: one
+        - id: b
+          label: Die Tickets … erstattet.
+          answer: many
+        - id: c
+          label: Die Haltestelle … verlegt.
+          answer: one
+      options:
+        - id: one
+          label: wurde
+        - id: many
+          label: wurden
+      success: Wurde и wurden согласованы с подлежащим.
+      wrong: Одна поездка и одна остановка; несколько билетов.
+    - id: past
+      kind: order
+      title: Передайте уже принятое изменение
+      intro: Соберите Passiv Präteritum.
+      label: Реплика для команды
+      tokens:
+        - Die Bootsfahrt
+        - wurde
+        - wegen des Windes
+        - abgesagt.
+      success: Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.
+      wrong: "Проверьте положение глагола и конец предложения: используйте все фрагменты."
+    - id: bus
+      kind: clock
+      title: Установите новое время автобуса
+      intro: Учитывайте, что старое время заменено.
+      mode: reading
+      clue:
+        task: update
+      answer: 15:40
+      initial: 15:10
+      minuteStep: 5
+      success: Новое время 15:40, приход группы 15:25.
+      wrong: 15:10 было старым временем.
+    - id: talk
+      kind: negotiation
+      title: Согласуйте запасной план и уведомление
+      intro: Учтите просьбу о паузе и обратное время.
+      start: a
+      nodes:
+        - id: a
+          text: "Mateo: Ich brauche zuerst eine warme Pause. Danach können wir gern ins Museum."
+          choices:
+            - label: Dann zuerst Café, danach Museum. Zusammen sind das 14 Euro.
+              next: b
+              feedback: Просьба о паузе и бюджет учтены.
+        - id: b
+          text: "Elif: Gut. Wer informiert die Gruppe über den neuen Bus?"
+          choices:
+            - label: "Ich schreibe allen: 15:25 Hafenstraße, Abfahrt 15:40."
+              next: end
+              feedback: Переданы место, приход группы и отправление.
+        - id: end
+          text: "Elif: Einverstanden. Dann warten wir nicht am alten Halt."
+          terminal: true
+          choices: []
+      success: Новый план и информация согласованы.
+      wrong: Сохраните паузу, бюджет и новый Halt.

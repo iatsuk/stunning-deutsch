@@ -1,0 +1,1924 @@
+{
+ "id": "b1-ablaeufe",
+ "level": "b1",
+ "order": 7,
+ "title": "Während Elif fotografiert, prüft Hauke den Weg.",
+ "ru": "Согласуем последовательность и параллельные дела",
+ "lede": "Друзья собирают для альбома фотографии и короткие истории из Плёна. Нужно успеть к обратному автобусу, не превращая прогулку в гонку. Часть дел можно распределить между участниками, но проверку обратного пути следует сделать до выхода к воде. Расписание урока вымышленное.",
+ "goals": [
+  "Отличить действие до другого от одновременного",
+  "Согласовать задачи разных участников",
+  "Понять пять объявлений об изменениях",
+  "Проверить план по общему времени"
+ ],
+ "grammar": [
+  "bevor и während: до действия и одновременно"
+ ],
+ "exam": [
+  "b1-lesen-2",
+  "b1-hoeren-3",
+  "b1-sprachbausteine-1",
+  "b1-sprechen-3"
+ ],
+ "chapters": [
+  {
+   "id": "scene",
+   "title": "Ситуация"
+  },
+  {
+   "id": "words",
+   "title": "Слова"
+  },
+  {
+   "id": "grammar",
+   "title": "Грамматика"
+  },
+  {
+   "id": "practice",
+   "title": "Проверка"
+  },
+  {
+   "id": "exam",
+   "title": "На экзамене"
+  }
+ ],
+ "dialogues": {
+  "scene": {
+   "title": "Während Elif fotografiert, prüft Hauke den Weg.",
+   "ru": "Согласуем последовательность и параллельные дела",
+   "place": "Plön · прогулка у озера · вымышленная учебная ситуация",
+   "people": {
+    "D": {
+     "name": "Dana",
+     "voice": "Anna"
+    },
+    "M": {
+     "name": "Mateo",
+     "voice": "Reed"
+    },
+    "E": {
+     "name": "Elif",
+     "voice": "Flo"
+    },
+    "H": {
+     "name": "Hauke",
+     "voice": "Rocko"
+    }
+   },
+   "lines": [
+    {
+     "who": "H",
+     "de": "Bevor wir zum See gehen, prüfen wir die Rückfahrt.",
+     "ru": "Прежде чем пойдём к озеру, проверим обратную дорогу.",
+     "audio": "audio/cf00c8c70580.m4a"
+    },
+    {
+     "who": "E",
+     "de": "Unser Bus fährt um dreizehn Uhr zwanzig.",
+     "ru": "Наш автобус отправляется в тринадцать двадцать.",
+     "audio": "audio/ed758ea83852.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Während du den Weg prüfst, hole ich Wasser.",
+     "ru": "Пока ты проверяешь путь, я возьму воду.",
+     "audio": "audio/468d609120b5.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Ich packe das Brot ein, bevor wir losgehen.",
+     "ru": "Я упакую хлеб, прежде чем мы выйдем.",
+     "audio": "audio/79392aeb4cff.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Am Steg machen wir nur eine kurze Pause.",
+     "ru": "На причале сделаем только короткую остановку.",
+     "audio": "audio/95677ad3faaf.m4a"
+    },
+    {
+     "who": "E",
+     "de": "Während ihr esst, schreibe ich die Bildunterschriften.",
+     "ru": "Пока вы едите, я напишу подписи к фотографиям.",
+     "audio": "audio/0e7bbb5f9a24.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Dann wechseln wir. Du brauchst auch eine Pause.",
+     "ru": "Потом поменяемся. Тебе тоже нужен перерыв.",
+     "audio": "audio/2e935a6493e3.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Gut. Um dreizehn Uhr sind wir wieder an der Haltestelle.",
+     "ru": "Хорошо. В тринадцать мы снова у остановки.",
+     "audio": "audio/6c20b8981ef7.m4a"
+    }
+   ]
+  }
+ },
+ "words": {
+  "useful": {
+   "title": "Wörter für die Aufgabe",
+   "ru": "Слова для действия",
+   "items": [
+    {
+     "de": "der Ablauf",
+     "ru": "порядок действий",
+     "gender": "m",
+     "plural": "Abläufe",
+     "audio": "audio/3a95e86c26b7.m4a"
+    },
+    {
+     "de": "die Rückfahrt",
+     "ru": "обратная дорога",
+     "gender": "f",
+     "plural": "Rückfahrten",
+     "audio": "audio/7a1c4ea9325c.m4a"
+    },
+    {
+     "de": "der Steg",
+     "ru": "причал, мостки",
+     "gender": "m",
+     "plural": "Stege",
+     "audio": "audio/b9a3c3466bca.m4a"
+    },
+    {
+     "de": "das Ufer",
+     "ru": "берег",
+     "gender": "n",
+     "plural": "Ufer",
+     "audio": "audio/66a7bb646518.m4a"
+    },
+    {
+     "de": "die Bildunterschrift",
+     "ru": "подпись к фото",
+     "gender": "f",
+     "plural": "Bildunterschriften",
+     "audio": "audio/9d28fe2bf82a.m4a"
+    },
+    {
+     "de": "der Treffpunkt",
+     "ru": "место встречи",
+     "gender": "m",
+     "plural": "Treffpunkte",
+     "audio": "audio/c034855451dc.m4a"
+    },
+    {
+     "de": "der Hinweis",
+     "ru": "указание, сообщение",
+     "gender": "m",
+     "plural": "Hinweise",
+     "audio": "audio/fbc252e8f199.m4a"
+    },
+    {
+     "de": "die Durchsage",
+     "ru": "объявление по громкой связи",
+     "gender": "f",
+     "plural": "Durchsagen",
+     "audio": "audio/368b428df6fd.m4a"
+    },
+    {
+     "de": "losgehen",
+     "ru": "отправляться пешком",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/e547f881aa06.m4a"
+    },
+    {
+     "de": "einpacken",
+     "ru": "упаковывать",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/3e5c30d06027.m4a"
+    },
+    {
+     "de": "gleichzeitig",
+     "ru": "одновременно",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/1071ac0aaf1a.m4a"
+    },
+    {
+     "de": "rechtzeitig",
+     "ru": "заблаговременно, вовремя",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/4a0391a863be.m4a"
+    },
+    {
+     "de": "wechseln",
+     "ru": "меняться",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/a2a191bfeae4.m4a"
+    },
+    {
+     "de": "während",
+     "ru": "пока, в то время как",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/479618953c1b.m4a"
+    },
+    {
+     "de": "bevor",
+     "ru": "прежде чем",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/6cc95809f0f2.m4a"
+    }
+   ]
+  }
+ },
+ "tables": {
+  "rule": {
+   "title": "bevor и während: до действия и одновременно",
+   "ru": "Опора для решения",
+   "head": [
+    "Beispiel",
+    "Смысл и форма"
+   ],
+   "rows": [
+    [
+     "Bevor wir losgehen, prüfen wir die Rückfahrt.",
+     "bevor: сначала проверка, потом выход."
+    ],
+    [
+     "Während Hauke prüft, holt Dana Wasser.",
+     "während: действия идут одновременно."
+    ],
+    [
+     "Wir packen Brot ein, bevor wir losgehen.",
+     "Главная часть может стоять перед придаточной."
+    ]
+   ],
+   "ruCols": [
+    1
+   ]
+  }
+ },
+ "tasks": {
+  "plan": {
+   "kind": "message",
+   "part": "b1-lesen-2",
+   "title": "Der gemeinsame Tagesplan · Ausschnitt",
+   "text": "Vor dem Weg zum See: Rückfahrt prüfen und Brot einpacken. Während Hauke den Weg prüft, holt Dana Wasser. Am Steg fotografiert Elif; die anderen machen eine kurze Pause. Danach wechseln sie. Spätestens um 13 Uhr sind alle an der Haltestelle. Abfahrt: 13:20 Uhr. Der Steg ist kein Einstieg für eine gebuchte Bootsfahrt. Update am See: Der kleine Steg ist während der Arbeiten gesperrt. Der Uferweg bleibt offen.",
+   "sample": []
+  },
+  "notices": {
+   "kind": "worksheet",
+   "part": "b1-hoeren-3",
+   "format": "article",
+   "title": "Fünf Ansagen zum Tagesablauf",
+   "recordings": [
+    {
+     "text": "Guten Tag. Bevor Sie den Ausstellungsraum betreten, geben Sie bitte große Rucksäcke an der Garderobe ab. Kleine Taschen können Sie mitnehmen. Die Garderobe ist heute kostenlos.",
+     "audio": "audio/6f900770ea2a.m4a"
+    },
+    {
+     "text": "Während wir die Tische im Innenraum reinigen, können Sie auf der überdachten Terrasse sitzen. Die Küche bleibt geöffnet. Getränke bestellen Sie bitte wie gewohnt an der Theke.",
+     "audio": "audio/98cea080c9a1.m4a"
+    },
+    {
+     "text": "Der Bus nach Kiel fährt heute um dreizehn Uhr zwanzig. Die Abfahrt bleibt unverändert. Bitte beachten Sie nur den neuen Haltepunkt gegenüber dem Kiosk.",
+     "audio": "audio/14c2ae8bb365.m4a"
+    },
+    {
+     "text": "Der kleine Steg ist während der Arbeiten gesperrt. Der Uferweg bleibt offen. Sie können am Wasser spazieren gehen, aber bitte betreten Sie den Steg heute nicht.",
+     "audio": "audio/ab222ce68ff4.m4a"
+    },
+    {
+     "text": "Bevor unsere Fotoausstellung um zwölf Uhr öffnet, findet im Vorraum eine kurze Einführung statt. Sie beginnt um Viertel vor zwölf. Dafür ist keine Anmeldung nötig.",
+     "audio": "audio/09b6b18f6160.m4a"
+    }
+   ],
+   "questions": [
+    {
+     "prompt": "Große Rucksäcke soll man vor dem Besuch abgeben.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "richtig"
+     ]
+    },
+    {
+     "prompt": "Während der Reinigung ist die Küche geschlossen.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Der Bus fährt heute später als geplant.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Der gesamte Uferweg ist gesperrt.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Die Einführung beginnt vor der Ausstellung.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "richtig"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "gaps": {
+   "kind": "worksheet",
+   "part": "b1-sprachbausteine-1",
+   "format": "cloze",
+   "title": "Den Ablauf weitergeben",
+   "text": "Hallo Nora, [[1]] wir losgehen, prüfen wir die Rückfahrt. [[2]] Hauke die Karte liest, hole ich Wasser. Wir nehmen [[3]] kleinen Rucksack mit. Heute [[4]] wir genug Zeit. Elif fotografiert [[5]] ihrem Handy. Sie sagt, [[6]] die Bilder gut sind. Wir treffen uns [[7]] Steg. Es ist wichtig, rechtzeitig [[8]] kommen. [[9]] gehen wir zur Haltestelle. Wir freuen [[10]] auf den Tag.",
+   "questions": [
+    {
+     "prompt": "Lücke 1",
+     "options": [
+      "bevor",
+      "während",
+      "weil"
+     ],
+     "answers": [
+      "bevor"
+     ]
+    },
+    {
+     "prompt": "Lücke 2",
+     "options": [
+      "nachdem",
+      "während",
+      "bevor"
+     ],
+     "answers": [
+      "während"
+     ]
+    },
+    {
+     "prompt": "Lücke 3",
+     "options": [
+      "dem",
+      "der",
+      "den"
+     ],
+     "answers": [
+      "den"
+     ]
+    },
+    {
+     "prompt": "Lücke 4",
+     "options": [
+      "haben",
+      "sind",
+      "werden"
+     ],
+     "answers": [
+      "haben"
+     ]
+    },
+    {
+     "prompt": "Lücke 5",
+     "options": [
+      "an",
+      "mit",
+      "für"
+     ],
+     "answers": [
+      "mit"
+     ]
+    },
+    {
+     "prompt": "Lücke 6",
+     "options": [
+      "weil",
+      "wenn",
+      "dass"
+     ],
+     "answers": [
+      "dass"
+     ]
+    },
+    {
+     "prompt": "Lücke 7",
+     "options": [
+      "am",
+      "im",
+      "ins"
+     ],
+     "answers": [
+      "am"
+     ]
+    },
+    {
+     "prompt": "Lücke 8",
+     "options": [
+      "für",
+      "zu",
+      "um"
+     ],
+     "answers": [
+      "zu"
+     ]
+    },
+    {
+     "prompt": "Lücke 9",
+     "options": [
+      "Bevor",
+      "Während",
+      "Danach"
+     ],
+     "answers": [
+      "Danach"
+     ]
+    },
+    {
+     "prompt": "Lücke 10",
+     "options": [
+      "uns",
+      "wir",
+      "unser"
+     ],
+     "answers": [
+      "uns"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "talk": {
+   "kind": "card",
+   "part": "b1-sprechen-3",
+   "title": "Einen ruhigen Ausflug planen",
+   "theme": "Reihenfolge und Aufgaben",
+   "word": "Vorher · gleichzeitig · danach · Rückfahrt",
+   "situation": "Planen Sie einen Ausflug am Wasser. Eine Person möchte fotografieren, die andere braucht eine längere Pause. Einigen Sie sich auf Reihenfolge und Aufgaben. Rückfahrt: 13:20, spätestens 13 Uhr am Halt.",
+   "roles": [
+    {
+     "title": "Person A",
+     "text": "Sie möchten zehn Minuten fotografieren und können vorher den Weg prüfen. Auch die andere Person soll eine Pause bekommen."
+    },
+    {
+     "title": "Person B",
+     "text": "Sie können Wasser holen, möchten aber nicht während jeder Pause arbeiten. Schlagen Sie einen Wechsel vor."
+    }
+   ],
+   "sample": []
+  }
+ },
+ "beats": [
+  {
+   "id": "start-1",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 0,
+   "read": "Друзья собирают для альбома фотографии и короткие истории из Плёна. Нужно успеть к обратному автобусу, не превращая прогулку в гонку. Часть дел можно распределить между участниками, но проверку обратного пути следует сделать до выхода к воде. Расписание урока вымышленное. Все нужные условия даны в сцене: знания географии, настоящих цен или расписаний не требуются. Сначала попробуйте понять, какого результата добиваются друзья, затем слушайте реплики. На новом уровне важно не только найти число или знакомое слово, но и связать несколько сведений.",
+   "point": "Согласуем последовательность и параллельные дела",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 4,
+    "fresh": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "start-2",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 1,
+   "read": "В плане есть дела, которые должны предшествовать друг другу, и дела, которые можно выполнять одновременно. Bevor ставит границу до действия, während показывает пересечение во времени. Участники могут быть разными: один проверяет путь, другая набирает воду. Сначала восстановите смысл пары действий, потом проверьте положение личного глагола в придаточной части.",
+   "point": "bevor и während: до действия и одновременно",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 8,
+    "fresh": [
+     4,
+     5,
+     6,
+     7
+    ]
+   }
+  },
+  {
+   "id": "words-1",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 0,
+   "read": "Причал, берег и обратный путь связывают морскую тему с обычной поездкой. В игре задача не в том, чтобы выполнить как можно больше пунктов, а в том, чтобы сохранить обязательные условия и оставить время для людей. Названия учреждений и расписание здесь служат учебными данными. По ним нужно ориентироваться внутри истории, а не планировать настоящую поездку.",
+   "point": "Сначала используйте слово для решения; словарь остаётся справочником.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 6,
+    "words": "useful"
+   }
+  },
+  {
+   "id": "words-2",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 1,
+   "read": "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к ситуации: какие слова обозначают человека, место, условие или уже выполненное действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово встретится снова в записке или разговоре, попробуйте восстановить его смысл до подсказки.",
+   "point": "Возвращайтесь к выражениям в сообщениях и новых действиях.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 15,
+    "words": "useful",
+    "fresh": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   }
+  },
+  {
+   "id": "grammar-1",
+   "step": "grammar",
+   "stepTitle": "bevor и während: до действия и одновременно",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "Порядок частей фразы не обязан совпадать с порядком событий. Bevor wir losgehen стоит первым, но выход происходит после проверки. Найдите два действия и назовите, какое нужно завершить раньше. В игре правильная последовательность зависит от союза, а не от того, какое слово написано первым. Личный глагол придаточного уходит в конец.",
+   "point": "bevor: сначала проверка, потом выход.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "grammar-2",
+   "step": "grammar",
+   "stepTitle": "bevor и während: до действия и одновременно",
+   "chapterIndex": 2,
+   "indexInStep": 1,
+   "read": "Während связывает два действия, которые пересекаются во времени. Они не обязаны начинаться и заканчиваться в одну секунду. В нашей сцене один участник проверяет путь, другая получает воду. Это позволяет распределить задачи без потери смысла. Если действия требуют одного и того же человека одновременно, нужно дополнительно проверить, реалистичен ли план.",
+   "point": "während: действия идут одновременно.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "grammar-3",
+   "step": "grammar",
+   "stepTitle": "bevor и während: до действия и одновременно",
+   "chapterIndex": 2,
+   "indexInStep": 2,
+   "read": "Когда главная часть стоит первой, её порядок остаётся знакомым: wir packen ... ein. После bevor начинается придаточная часть, заканчивающаяся losgehen. Сравните два варианта одного плана и убедитесь, что реальная последовательность не изменилась. Перестановка частей предложения сама по себе не переносит упаковку хлеба на время после выхода.",
+   "point": "Главная часть может стоять перед придаточной.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "frames-1",
+   "step": "frames",
+   "stepTitle": "Как устроена реплика",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "Оба участника названы явно, поэтому параллельный план можно проверить. Во второй части личный глагол следует сразу после запятой: *holt Dana*. Сочетание *während Hauke den Weg prüft* занимает первую позицию целиком. Сначала произнесите простые реплики о каждом участнике, затем соедините их и сохраните нужную временную связь.",
+   "point": "*Während Hauke den Weg prüft, holt Dana Wasser.*",
+   "scene": {
+    "view": "sentence",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "während",
+         "text": "Während"
+        },
+        {
+         "key": "hauke",
+         "text": "Hauke"
+        },
+        {
+         "key": "den",
+         "text": "den"
+        },
+        {
+         "key": "weg",
+         "text": "Weg"
+        }
+       ],
+       [
+        {
+         "key": "prüft",
+         "text": "prüft,"
+        }
+       ],
+       [
+        {
+         "key": "holt",
+         "text": "holt"
+        }
+       ],
+       [
+        {
+         "key": "dana",
+         "text": "Dana"
+        },
+        {
+         "key": "wasser",
+         "text": "Wasser"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Während Hauke den Weg prüft, holt Dana Wasser.",
+      "ru": "Пока Хауке проверяет путь, Дана берёт воду.",
+      "audio": "audio/32fc0cf122fa.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-1",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 0,
+   "read": "Раньше упаковывают хлеб, потом выходят. Часть с bevor называет действие, до которого нужно сделать другое. Не читайте предложение как список действий слева направо. Представьте два момента на линии времени и проверьте, можно ли выйти с неупакованным хлебом по этому условию. Это помогает выбрать последовательность без перевода каждого слова.",
+   "point": "Сначала *einpacken*, потом *losgehen*.",
+   "question": "«Bevor wir losgehen, packen wir Brot ein»: что раньше?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "während",
+         "text": "Während"
+        },
+        {
+         "key": "hauke",
+         "text": "Hauke"
+        },
+        {
+         "key": "den",
+         "text": "den"
+        },
+        {
+         "key": "weg",
+         "text": "Weg"
+        }
+       ],
+       [
+        {
+         "key": "prüft",
+         "text": "prüft,"
+        }
+       ],
+       [
+        {
+         "key": "holt",
+         "text": "holt"
+        }
+       ],
+       [
+        {
+         "key": "dana",
+         "text": "Dana"
+        },
+        {
+         "key": "wasser",
+         "text": "Wasser"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Während Hauke den Weg prüft, holt Dana Wasser.",
+      "ru": "Пока Хауке проверяет путь, Дана берёт воду.",
+      "audio": "audio/32fc0cf122fa.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-2",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 1,
+   "read": "Нет. Während описывает совпадение действий во времени, но не устанавливает постоянную обязанность. В сцене друзья затем меняются. Для согласования нужно слышать не только грамматику, но и весь разговор: участник может помочь сейчас и отдохнуть позже. Не превращайте один временной отрезок в правило на весь день.",
+   "point": "Одновременность не означает постоянную обязанность.",
+   "question": "Во время еды Элиф пишет подписи. Это запрет на её перерыв?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "während",
+         "text": "Während"
+        },
+        {
+         "key": "hauke",
+         "text": "Hauke"
+        },
+        {
+         "key": "den",
+         "text": "den"
+        },
+        {
+         "key": "weg",
+         "text": "Weg"
+        }
+       ],
+       [
+        {
+         "key": "prüft",
+         "text": "prüft,"
+        }
+       ],
+       [
+        {
+         "key": "holt",
+         "text": "holt"
+        }
+       ],
+       [
+        {
+         "key": "dana",
+         "text": "Dana"
+        },
+        {
+         "key": "wasser",
+         "text": "Wasser"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Während Hauke den Weg prüft, holt Dana Wasser.",
+      "ru": "Пока Хауке проверяет путь, Дана берёт воду.",
+      "audio": "audio/32fc0cf122fa.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "exam-plan-1",
+   "step": "exam-plan",
+   "stepTitle": "Der gemeinsame Tagesplan · Ausschnitt",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Найдите обязательный срок и отдельно предложение о параллельных действиях. Это короткий фрагмент, а не полный Lesen 2. Используйте его как источник в игре: кто делает что и когда участники должны быть у остановки? Не добавляйте несуществующую лодочную экскурсию только из-за слова Steg.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "während",
+         "text": "Während"
+        },
+        {
+         "key": "hauke",
+         "text": "Hauke"
+        },
+        {
+         "key": "den",
+         "text": "den"
+        },
+        {
+         "key": "weg",
+         "text": "Weg"
+        }
+       ],
+       [
+        {
+         "key": "prüft",
+         "text": "prüft,"
+        }
+       ],
+       [
+        {
+         "key": "holt",
+         "text": "holt"
+        }
+       ],
+       [
+        {
+         "key": "dana",
+         "text": "Dana"
+        },
+        {
+         "key": "wasser",
+         "text": "Wasser"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Während Hauke den Weg prüft, holt Dana Wasser.",
+      "ru": "Пока Хауке проверяет путь, Дана берёт воду.",
+      "audio": "audio/32fc0cf122fa.m4a"
+     }
+    ],
+    "task": "plan"
+   }
+  },
+  {
+   "id": "exam-plan-2",
+   "step": "exam-plan",
+   "stepTitle": "Der gemeinsame Tagesplan · Ausschnitt",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "während",
+         "text": "Während"
+        },
+        {
+         "key": "hauke",
+         "text": "Hauke"
+        },
+        {
+         "key": "den",
+         "text": "den"
+        },
+        {
+         "key": "weg",
+         "text": "Weg"
+        }
+       ],
+       [
+        {
+         "key": "prüft",
+         "text": "prüft,"
+        }
+       ],
+       [
+        {
+         "key": "holt",
+         "text": "holt"
+        }
+       ],
+       [
+        {
+         "key": "dana",
+         "text": "Dana"
+        },
+        {
+         "key": "wasser",
+         "text": "Wasser"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Während Hauke den Weg prüft, holt Dana Wasser.",
+      "ru": "Пока Хауке проверяет путь, Дана берёт воду.",
+      "audio": "audio/32fc0cf122fa.m4a"
+     }
+    ],
+    "task": "plan"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "während",
+         "text": "Während"
+        },
+        {
+         "key": "hauke",
+         "text": "Hauke"
+        },
+        {
+         "key": "den",
+         "text": "den"
+        },
+        {
+         "key": "weg",
+         "text": "Weg"
+        }
+       ],
+       [
+        {
+         "key": "prüft",
+         "text": "prüft,"
+        }
+       ],
+       [
+        {
+         "key": "holt",
+         "text": "holt"
+        }
+       ],
+       [
+        {
+         "key": "dana",
+         "text": "Dana"
+        },
+        {
+         "key": "wasser",
+         "text": "Wasser"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Während Hauke den Weg prüft, holt Dana Wasser.",
+      "ru": "Пока Хауке проверяет путь, Дана берёт воду.",
+      "audio": "audio/32fc0cf122fa.m4a"
+     }
+    ],
+    "task": "plan",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-notices-1",
+   "step": "exam-notices",
+   "stepTitle": "Fünf Ansagen zum Tagesablauf",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Пять объявлений относятся к разным местам. Сначала прочитайте утверждение, затем слушайте соответствующую запись дважды. Проверяйте границы: закрытый причал не означает закрытый береговой путь. Во время учебной попытки можно открыть текст и повторить запись, а в самостоятельной работе сначала попробуйте обойтись без подсказок.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "während",
+         "text": "Während"
+        },
+        {
+         "key": "hauke",
+         "text": "Hauke"
+        },
+        {
+         "key": "den",
+         "text": "den"
+        },
+        {
+         "key": "weg",
+         "text": "Weg"
+        }
+       ],
+       [
+        {
+         "key": "prüft",
+         "text": "prüft,"
+        }
+       ],
+       [
+        {
+         "key": "holt",
+         "text": "holt"
+        }
+       ],
+       [
+        {
+         "key": "dana",
+         "text": "Dana"
+        },
+        {
+         "key": "wasser",
+         "text": "Wasser"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Während Hauke den Weg prüft, holt Dana Wasser.",
+      "ru": "Пока Хауке проверяет путь, Дана берёт воду.",
+      "audio": "audio/32fc0cf122fa.m4a"
+     }
+    ],
+    "task": "notices"
+   }
+  },
+  {
+   "id": "exam-notices-2",
+   "step": "exam-notices",
+   "stepTitle": "Fünf Ansagen zum Tagesablauf",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "während",
+         "text": "Während"
+        },
+        {
+         "key": "hauke",
+         "text": "Hauke"
+        },
+        {
+         "key": "den",
+         "text": "den"
+        },
+        {
+         "key": "weg",
+         "text": "Weg"
+        }
+       ],
+       [
+        {
+         "key": "prüft",
+         "text": "prüft,"
+        }
+       ],
+       [
+        {
+         "key": "holt",
+         "text": "holt"
+        }
+       ],
+       [
+        {
+         "key": "dana",
+         "text": "Dana"
+        },
+        {
+         "key": "wasser",
+         "text": "Wasser"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Während Hauke den Weg prüft, holt Dana Wasser.",
+      "ru": "Пока Хауке проверяет путь, Дана берёт воду.",
+      "audio": "audio/32fc0cf122fa.m4a"
+     }
+    ],
+    "task": "notices"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "während",
+         "text": "Während"
+        },
+        {
+         "key": "hauke",
+         "text": "Hauke"
+        },
+        {
+         "key": "den",
+         "text": "den"
+        },
+        {
+         "key": "weg",
+         "text": "Weg"
+        }
+       ],
+       [
+        {
+         "key": "prüft",
+         "text": "prüft,"
+        }
+       ],
+       [
+        {
+         "key": "holt",
+         "text": "holt"
+        }
+       ],
+       [
+        {
+         "key": "dana",
+         "text": "Dana"
+        },
+        {
+         "key": "wasser",
+         "text": "Wasser"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Während Hauke den Weg prüft, holt Dana Wasser.",
+      "ru": "Пока Хауке проверяет путь, Дана берёт воду.",
+      "audio": "audio/32fc0cf122fa.m4a"
+     }
+    ],
+    "task": "notices",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-gaps-1",
+   "step": "exam-gaps",
+   "stepTitle": "Den Ablauf weitergeben",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Прочитайте сообщение целиком, чтобы отличить одновременность от порядка действий. Не все пропуски относятся к новому правилу: вернутся падеж, dass, артикль и zu. Выберите формы, затем произнесите связный текст. Если предложение не объясняет план, вернитесь к контексту, даже когда отдельное окончание кажется знакомым.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "während",
+         "text": "Während"
+        },
+        {
+         "key": "hauke",
+         "text": "Hauke"
+        },
+        {
+         "key": "den",
+         "text": "den"
+        },
+        {
+         "key": "weg",
+         "text": "Weg"
+        }
+       ],
+       [
+        {
+         "key": "prüft",
+         "text": "prüft,"
+        }
+       ],
+       [
+        {
+         "key": "holt",
+         "text": "holt"
+        }
+       ],
+       [
+        {
+         "key": "dana",
+         "text": "Dana"
+        },
+        {
+         "key": "wasser",
+         "text": "Wasser"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Während Hauke den Weg prüft, holt Dana Wasser.",
+      "ru": "Пока Хауке проверяет путь, Дана берёт воду.",
+      "audio": "audio/32fc0cf122fa.m4a"
+     }
+    ],
+    "task": "gaps"
+   }
+  },
+  {
+   "id": "exam-gaps-2",
+   "step": "exam-gaps",
+   "stepTitle": "Den Ablauf weitergeben",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "während",
+         "text": "Während"
+        },
+        {
+         "key": "hauke",
+         "text": "Hauke"
+        },
+        {
+         "key": "den",
+         "text": "den"
+        },
+        {
+         "key": "weg",
+         "text": "Weg"
+        }
+       ],
+       [
+        {
+         "key": "prüft",
+         "text": "prüft,"
+        }
+       ],
+       [
+        {
+         "key": "holt",
+         "text": "holt"
+        }
+       ],
+       [
+        {
+         "key": "dana",
+         "text": "Dana"
+        },
+        {
+         "key": "wasser",
+         "text": "Wasser"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Während Hauke den Weg prüft, holt Dana Wasser.",
+      "ru": "Пока Хауке проверяет путь, Дана берёт воду.",
+      "audio": "audio/32fc0cf122fa.m4a"
+     }
+    ],
+    "task": "gaps"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "während",
+         "text": "Während"
+        },
+        {
+         "key": "hauke",
+         "text": "Hauke"
+        },
+        {
+         "key": "den",
+         "text": "den"
+        },
+        {
+         "key": "weg",
+         "text": "Weg"
+        }
+       ],
+       [
+        {
+         "key": "prüft",
+         "text": "prüft,"
+        }
+       ],
+       [
+        {
+         "key": "holt",
+         "text": "holt"
+        }
+       ],
+       [
+        {
+         "key": "dana",
+         "text": "Dana"
+        },
+        {
+         "key": "wasser",
+         "text": "Wasser"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Während Hauke den Weg prüft, holt Dana Wasser.",
+      "ru": "Пока Хауке проверяет путь, Дана берёт воду.",
+      "audio": "audio/32fc0cf122fa.m4a"
+     }
+    ],
+    "task": "gaps",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-talk-1",
+   "step": "exam-talk",
+   "stepTitle": "Einen ruhigen Ausflug planen",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Разговор должен учитывать желания обоих участников. Предложите распределение, спросите, подходит ли оно партнёру, и отреагируйте на просьбу о перерыве. Итог должен назвать обратное время и допустимый порядок. Два независимых списка желаний без общего решения ещё не выполняют задачу.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "während",
+         "text": "Während"
+        },
+        {
+         "key": "hauke",
+         "text": "Hauke"
+        },
+        {
+         "key": "den",
+         "text": "den"
+        },
+        {
+         "key": "weg",
+         "text": "Weg"
+        }
+       ],
+       [
+        {
+         "key": "prüft",
+         "text": "prüft,"
+        }
+       ],
+       [
+        {
+         "key": "holt",
+         "text": "holt"
+        }
+       ],
+       [
+        {
+         "key": "dana",
+         "text": "Dana"
+        },
+        {
+         "key": "wasser",
+         "text": "Wasser"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Während Hauke den Weg prüft, holt Dana Wasser.",
+      "ru": "Пока Хауке проверяет путь, Дана берёт воду.",
+      "audio": "audio/32fc0cf122fa.m4a"
+     }
+    ],
+    "task": "talk"
+   }
+  },
+  {
+   "id": "exam-talk-2",
+   "step": "exam-talk",
+   "stepTitle": "Einen ruhigen Ausflug planen",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "während",
+         "text": "Während"
+        },
+        {
+         "key": "hauke",
+         "text": "Hauke"
+        },
+        {
+         "key": "den",
+         "text": "den"
+        },
+        {
+         "key": "weg",
+         "text": "Weg"
+        }
+       ],
+       [
+        {
+         "key": "prüft",
+         "text": "prüft,"
+        }
+       ],
+       [
+        {
+         "key": "holt",
+         "text": "holt"
+        }
+       ],
+       [
+        {
+         "key": "dana",
+         "text": "Dana"
+        },
+        {
+         "key": "wasser",
+         "text": "Wasser"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Während Hauke den Weg prüft, holt Dana Wasser.",
+      "ru": "Пока Хауке проверяет путь, Дана берёт воду.",
+      "audio": "audio/32fc0cf122fa.m4a"
+     }
+    ],
+    "task": "talk"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "während",
+         "text": "Während"
+        },
+        {
+         "key": "hauke",
+         "text": "Hauke"
+        },
+        {
+         "key": "den",
+         "text": "den"
+        },
+        {
+         "key": "weg",
+         "text": "Weg"
+        }
+       ],
+       [
+        {
+         "key": "prüft",
+         "text": "prüft,"
+        }
+       ],
+       [
+        {
+         "key": "holt",
+         "text": "holt"
+        }
+       ],
+       [
+        {
+         "key": "dana",
+         "text": "Dana"
+        },
+        {
+         "key": "wasser",
+         "text": "Wasser"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Während Hauke den Weg prüft, holt Dana Wasser.",
+      "ru": "Пока Хауке проверяет путь, Дана берёт воду.",
+      "audio": "audio/32fc0cf122fa.m4a"
+     }
+    ],
+    "task": "talk",
+    "solved": true
+   }
+  }
+ ],
+ "exercises": [
+  {
+   "id": "b1-ablaeufe-1",
+   "type": "choice",
+   "q": "___ wir losgehen, prüfen wir den Weg.",
+   "options": [
+    "Während",
+    "Ob",
+    "Bevor"
+   ],
+   "answer": 2,
+   "why": "Проверка до выхода.",
+   "audio": "audio/07e0811b89bc.m4a"
+  },
+  {
+   "id": "b1-ablaeufe-2",
+   "type": "choice",
+   "q": "___ Elif fotografiert, essen die anderen.",
+   "options": [
+    "Bevor",
+    "Nachdem",
+    "Während"
+   ],
+   "answer": 2,
+   "why": "Одновременно.",
+   "audio": "audio/84d1b0070e48.m4a"
+  },
+  {
+   "id": "b1-ablaeufe-3",
+   "type": "choice",
+   "q": "Bevor wir gehen, ___ wir Brot ein.",
+   "options": [
+    "packen",
+    "wir packen",
+    "packt"
+   ],
+   "answer": 0,
+   "why": "Главный глагол сразу после запятой.",
+   "audio": "audio/22279eaab1b9.m4a"
+  },
+  {
+   "id": "b1-ablaeufe-4",
+   "type": "choice",
+   "q": "Während Hauke die Karte ___.",
+   "options": [
+    "lesen",
+    "gelesen",
+    "liest"
+   ],
+   "answer": 2,
+   "why": "Личный глагол в конце.",
+   "audio": "audio/94a0ce5b59e9.m4a"
+  },
+  {
+   "id": "b1-ablaeufe-5",
+   "type": "choice",
+   "q": "Автобус 13:20, у остановки 13:00. Это…",
+   "options": [
+    "Ошибка числа",
+    "Два автобуса",
+    "Разные моменты"
+   ],
+   "answer": 2,
+   "why": "Приход группы раньше отправления."
+  },
+  {
+   "id": "b1-ablaeufe-6",
+   "type": "choice",
+   "q": "Steg gesperrt, Uferweg offen. Можно…",
+   "options": [
+    "Идти по береговому пути",
+    "Идти по причалу",
+    "Никуда"
+   ],
+   "answer": 0,
+   "why": "Границы запрета названы явно."
+  },
+  {
+   "id": "b1-ablaeufe-7",
+   "type": "order",
+   "de": "Bevor wir losgehen, prüfen wir die Rückfahrt.",
+   "ru": "До выхода проверим обратный путь.",
+   "audio": "audio/72dfa1c6e058.m4a"
+  },
+  {
+   "id": "b1-ablaeufe-8",
+   "type": "order",
+   "de": "Während Hauke den Weg prüft, holt Dana Wasser.",
+   "ru": "Пока Хауке проверяет путь, Дана берёт воду.",
+   "audio": "audio/32fc0cf122fa.m4a"
+  },
+  {
+   "id": "b1-ablaeufe-9",
+   "type": "order",
+   "de": "Ich packe das Brot ein, bevor wir losgehen.",
+   "ru": "Я упакую хлеб до выхода.",
+   "audio": "audio/42262f338263.m4a"
+  },
+  {
+   "id": "b1-ablaeufe-10",
+   "type": "order",
+   "de": "Danach wechseln wir die Aufgaben.",
+   "ru": "Потом поменяемся задачами.",
+   "audio": "audio/5769d31e7803.m4a"
+  },
+  {
+   "id": "b1-ablaeufe-11",
+   "type": "order",
+   "de": "Wir sind um dreizehn Uhr an der Haltestelle.",
+   "ru": "В тринадцать мы у остановки.",
+   "audio": "audio/0af0aafa5a3a.m4a"
+  },
+  {
+   "id": "b1-ablaeufe-12",
+   "type": "order",
+   "de": "Der Uferweg bleibt offen.",
+   "ru": "Береговой путь остаётся открытым.",
+   "audio": "audio/aafa769425c7.m4a"
+  }
+ ],
+ "case": {
+  "title": "Ein geschlossener Steg verändert nicht alles",
+  "ru": "Сверка дневника",
+  "intro": "После объявления в дневнике перепутали границы изменения.",
+  "people": {},
+  "steps": [
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Der Steg ist gesperrt. Der Uferweg bleibt offen.",
+      "ru": "Причал закрыт. Береговой путь открыт."
+     }
+    ],
+    "question": "Что закрыто?",
+    "options": [
+     "Весь берег",
+     "Все кафе",
+     "Только причал"
+    ],
+    "answer": 2,
+    "right": "Открытый путь назван отдельно.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Während wir die Tische reinigen, bleibt die Küche geöffnet.",
+      "ru": "Пока убирают столы, кухня остаётся открытой."
+     }
+    ],
+    "question": "Кухня не работает?",
+    "options": [
+     "Открыта только вчера",
+     "Нет, работает",
+     "Да"
+    ],
+    "answer": 1,
+    "right": "Ограничение относится к столам.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Spätestens um 13 Uhr am Halt. Abfahrt um 13:20 Uhr.",
+      "ru": "У остановки не позже 13:00. Отправление 13:20."
+     }
+    ],
+    "question": "Приход группы и отправление совпадают?",
+    "options": [
+     "Нет, есть запас 20 минут",
+     "Да",
+     "Разница2 часа"
+    ],
+    "answer": 0,
+    "right": "Это два разных события.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   }
+  ],
+  "ending": "План изменён только там, где об этом сказано в источнике. Закрытый причал не отменяет весь день."
+ },
+ "adventure": {
+  "kind": "sequence",
+  "title": "Соберите день без спешки",
+  "intro": "Друзья собирают для альбома фотографии и короткие истории из Плёна. Нужно успеть к обратному автобусу, не превращая прогулку в гонку. Часть дел можно распределить между участниками, но проверку обратного пути следует сделать до выхода к воде. Расписание урока вымышленное.",
+  "ending": "Распределены параллельные дела и общий перерыв. После сообщения о закрытом причале команда остаётся на открытом береговом пути. Обратное время сохранено.",
+  "challenges": [
+   {
+    "id": "first",
+    "kind": "order",
+    "title": "Что сделать до выхода?",
+    "intro": "Расположите два действия по условию bevor.",
+    "success": "Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.",
+    "wrong": "Проверьте положение глагола и конец предложения: используйте все фрагменты.",
+    "tokens": [
+     "Rückfahrt prüfen und Brot einpacken.",
+     "Zum See gehen."
+    ],
+    "label": "Реплика для команды"
+   },
+   {
+    "id": "parallel",
+    "kind": "match",
+    "title": "Разделите параллельные дела",
+    "intro": "Используйте исходный план.",
+    "success": "У каждого участника своё действие.",
+    "wrong": "Сравните имена и глаголы в плане.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Vor dem Weg zum See: Rückfahrt prüfen und Brot einpacken. Während Hauke den Weg prüft, holt Dana Wasser. Am Steg fotografiert Elif; die anderen machen eine kurze Pause. Danach wechseln sie. Spätestens um 13 Uhr sind alle an der Haltestelle. Abfahrt: 13:20 Uhr. Der Steg ist kein Einstieg für eine gebuchte Bootsfahrt. Update am See: Der kleine Steg ist während der Arbeiten gesperrt. Der Uferweg bleibt offen.",
+      "name": "Der gemeinsame Tagesplan · Ausschnitt"
+     }
+    ],
+    "options": [
+     {
+      "id": "weg",
+      "label": "den Weg prüfen"
+     },
+     {
+      "id": "wasser",
+      "label": "Wasser holen"
+     },
+     {
+      "id": "foto",
+      "label": "fotografieren"
+     }
+    ],
+    "slots": [
+     {
+      "id": "h",
+      "label": "Hauke",
+      "answer": "weg"
+     },
+     {
+      "id": "d",
+      "label": "Dana",
+      "answer": "wasser"
+     },
+     {
+      "id": "e",
+      "label": "Elif am Steg",
+      "answer": "foto"
+     }
+    ]
+   },
+   {
+    "id": "while",
+    "kind": "order",
+    "title": "Согласуйте одновременность",
+    "intro": "Начните с действия Хауке.",
+    "success": "Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.",
+    "wrong": "Проверьте положение глагола и конец предложения: используйте все фрагменты.",
+    "tokens": [
+     "Während Hauke den Weg",
+     "prüft,",
+     "holt",
+     "Dana Wasser."
+    ],
+    "label": "Реплика для команды"
+   },
+   {
+    "id": "bus",
+    "kind": "clock",
+    "title": "Сохраните отправление автобуса",
+    "intro": "Не перепутайте приход группы и отправление.",
+    "success": "Группа приходит в 13:00, автобус уходит в 13:20.",
+    "wrong": "Нужно время отправления, а не прибытия группы.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Vor dem Weg zum See: Rückfahrt prüfen und Brot einpacken. Während Hauke den Weg prüft, holt Dana Wasser. Am Steg fotografiert Elif; die anderen machen eine kurze Pause. Danach wechseln sie. Spätestens um 13 Uhr sind alle an der Haltestelle. Abfahrt: 13:20 Uhr. Der Steg ist kein Einstieg für eine gebuchte Bootsfahrt. Update am See: Der kleine Steg ist während der Arbeiten gesperrt. Der Uferweg bleibt offen.",
+      "name": "Der gemeinsame Tagesplan · Ausschnitt"
+     }
+    ],
+    "answer": "13:20",
+    "initial": "13:00",
+    "minuteStep": 5
+   },
+   {
+    "id": "closed",
+    "kind": "select",
+    "title": "После объявления о Steg",
+    "intro": "Прочитайте Update am See в плане. Что остаётся допустимым?",
+    "success": "Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы одно из них.",
+    "wrong": "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание и адресата.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Vor dem Weg zum See: Rückfahrt prüfen und Brot einpacken. Während Hauke den Weg prüft, holt Dana Wasser. Am Steg fotografiert Elif; die anderen machen eine kurze Pause. Danach wechseln sie. Spätestens um 13 Uhr sind alle an der Haltestelle. Abfahrt: 13:20 Uhr. Der Steg ist kein Einstieg für eine gebuchte Bootsfahrt. Update am See: Der kleine Steg ist während der Arbeiten gesperrt. Der Uferweg bleibt offen.",
+      "name": "Der gemeinsame Tagesplan · Ausschnitt"
+     }
+    ],
+    "options": [
+     {
+      "id": "o0",
+      "label": "Прогулка по береговому пути"
+     },
+     {
+      "id": "o1",
+      "label": "Выход на закрытый причал"
+     },
+     {
+      "id": "o2",
+      "label": "Отмена всего дня"
+     }
+    ],
+    "answer": [
+     "o0"
+    ]
+   }
+  ]
+ },
+ "spy": []
+}

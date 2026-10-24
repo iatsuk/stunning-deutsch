@@ -1,0 +1,854 @@
+id: b1-ziele
+order: 8
+title: Wir schreiben kurze Texte, damit alle die Bilder verstehen.
+ru: Объясняем цель и готовим понятную выставку
+lede: Для раздела о Шлезвиге друзья выбирают собственные фотографии поездки к домам викингов в
+  Хайтабу. Одним гостям интересны детали, другим нужен короткий рассказ без специальных слов.
+  Нужно подготовить подписи и задания так, чтобы люди действительно поняли материал.
+goals:
+  - Выразить цель своего действия через um … zu
+  - Назвать цель для другого человека через damit
+  - Отличить причину от цели
+  - Сопоставить разные мнения о выставках
+grammar:
+  - "Цель: um … zu / damit; отличие от причины weil"
+exam:
+  - b1-lesen-2
+  - b1-sprachbausteine-2
+  - b1-hoeren-1
+  - b1-sprechen-2
+dialogues:
+  scene:
+    title: Wir schreiben kurze Texte, damit alle die Bilder verstehen.
+    ru: Объясняем цель и готовим понятную выставку
+    place: Schleswig / Haithabu · материал для FördeTreff · вымышленная учебная ситуация
+    people:
+      D:
+        name: Dana
+        voice: Anna
+      M:
+        name: Mateo
+        voice: Reed
+      E:
+        name: Elif
+        voice: Flo
+      H:
+        name: Hauke
+        voice: Rocko
+    lines:
+      - E: Ich wähle drei Fotos aus, um die Geschichte kurz zu erzählen.
+        ru: Я выбираю три фотографии, чтобы коротко рассказать историю.
+      - D: Wir schreiben einfache Texte, damit auch neue Gäste alles verstehen.
+        ru: Мы пишем простые тексты, чтобы и новые гости всё поняли.
+      - H: Auf einem Foto sieht man die Häuser in Haithabu.
+        ru: На одной фотографии видны дома в Хайтабу.
+      - M: Ich bringe eine Karte mit, damit die Gäste den Ort finden.
+        ru: Я принесу карту, чтобы гости нашли это место.
+      - E: Wir brauchen nicht viele Fachwörter, um neugierig zu machen.
+        ru: Нам не нужно много специальных слов, чтобы заинтересовать.
+      - D: Ich lese die Texte laut, um schwierige Stellen zu finden.
+        ru: Я прочитаю тексты вслух, чтобы найти трудные места.
+      - H: Danach teste ich die kleine Bilderaufgabe mit einem Nachbarn.
+        ru: Потом проверю небольшое задание по картинкам с соседом.
+      - M: Gut. Er soll den Ort erkennen und eine Frage stellen können.
+        ru: Хорошо. Он должен суметь узнать место и задать вопрос.
+words:
+  useful:
+    title: Wörter für die Aufgabe
+    ru: Слова для действия
+    items:
+      - de: das Ziel
+        ru: цель
+        pl: Ziele
+      - de: der Zweck
+        ru: назначение, цель
+        pl: Zwecke
+      - de: die Fachsprache
+        ru: специальный язык
+        pl: "-"
+      - de: das Fachwort
+        ru: специальное слово
+        pl: Fachwörter
+      - de: die Karte
+        ru: карта
+        pl: Karten
+      - de: die Stelle
+        ru: место, фрагмент
+        pl: Stellen
+      - de: der Besucher
+        ru: посетитель
+        pl: Besucher
+      - de: die Besucherin
+        ru: посетительница
+        pl: Besucherinnen
+      - de: auswählen
+        ru: выбирать
+      - de: neugierig machen
+        ru: вызывать интерес
+      - de: laut vorlesen
+        ru: читать вслух
+      - de: erkennen
+        ru: узнавать
+      - de: verständlich
+        ru: понятный
+      - de: kurz erklären
+        ru: кратко объяснить
+      - de: eine Frage stellen
+        ru: задать вопрос
+tables:
+  rule:
+    title: "Цель: um … zu / damit; отличие от причины weil"
+    ru: Опора для решения
+    head:
+      - Beispiel
+      - Смысл и форма
+    ruCols:
+      - 1
+    rows:
+      - - Ich lese laut, um schwierige Stellen zu finden.
+        - "um … zu: цель того же действующего лица."
+      - - Wir schreiben einfach, damit die Gäste alles verstehen.
+        - damit + подлежащее; личный глагол в конце.
+      - - Wir schreiben neu, weil der alte Text zu schwer ist.
+        - "weil: причина; damit / um … zu: желаемая цель."
+tasks:
+  materials:
+    kind: message
+    part: b1-lesen-2
+    title: Material für drei Ziele · Ausschnitt
+    text: "Ziel A: Die Gäste sollen Schleswig und Haithabu auf der Karte finden. Material: eine
+      Karte mit zwei markierten Orten. Ziel B: Die Gäste sollen ein Foto verstehen. Material:
+      eine kurze Bildunterschrift mit Ort und Handlung. Ziel C: Die Gäste sollen ins Gespräch
+      kommen. Material: eine offene Frage nach einer eigenen Reise. Ein langer Text mit
+      unbekannten Fachwörtern hilft diesen drei Zielen hier nicht."
+  gaps:
+    kind: worksheet
+    part: b1-sprachbausteine-2
+    format: cloze
+    uniqueOptions: true
+    title: "Zehn Lücken: Warum und wozu?"
+    text: Wir fahren nach Schleswig, [[1]] Fotos für unser Album [[2]] machen. Wir schreiben kurze
+      Texte, [[3]] unsere Gäste die Bilder verstehen. Die Ausstellung ist [[4]] unsere Nachbarn
+      gedacht. Wir sprechen [[5]] einem Gast über den Entwurf, [[6]] wir seine Meinung hören
+      möchten. [[7]] wir die Bilder ausgewählt hatten, begannen wir mit den Texten. Die ersten
+      Texte [[8]] fertig. Elif bringt [[9]] Karte mit. Wir freuen uns auf [[10]]!
+    questions:
+      - prompt: Lücke 1
+        options:
+          - um
+          - zu
+          - damit
+          - für
+          - mit
+          - weil
+          - Nachdem
+          - sind
+          - eine
+          - euch
+          - aber
+          - ohne
+          - den
+          - als
+          - ob
+        answers:
+          - um
+      - prompt: Lücke 2
+        options:
+          - um
+          - zu
+          - damit
+          - für
+          - mit
+          - weil
+          - Nachdem
+          - sind
+          - eine
+          - euch
+          - aber
+          - ohne
+          - den
+          - als
+          - ob
+        answers:
+          - zu
+      - prompt: Lücke 3
+        options:
+          - um
+          - zu
+          - damit
+          - für
+          - mit
+          - weil
+          - Nachdem
+          - sind
+          - eine
+          - euch
+          - aber
+          - ohne
+          - den
+          - als
+          - ob
+        answers:
+          - damit
+      - prompt: Lücke 4
+        options:
+          - um
+          - zu
+          - damit
+          - für
+          - mit
+          - weil
+          - Nachdem
+          - sind
+          - eine
+          - euch
+          - aber
+          - ohne
+          - den
+          - als
+          - ob
+        answers:
+          - für
+      - prompt: Lücke 5
+        options:
+          - um
+          - zu
+          - damit
+          - für
+          - mit
+          - weil
+          - Nachdem
+          - sind
+          - eine
+          - euch
+          - aber
+          - ohne
+          - den
+          - als
+          - ob
+        answers:
+          - mit
+      - prompt: Lücke 6
+        options:
+          - um
+          - zu
+          - damit
+          - für
+          - mit
+          - weil
+          - Nachdem
+          - sind
+          - eine
+          - euch
+          - aber
+          - ohne
+          - den
+          - als
+          - ob
+        answers:
+          - weil
+      - prompt: Lücke 7
+        options:
+          - um
+          - zu
+          - damit
+          - für
+          - mit
+          - weil
+          - Nachdem
+          - sind
+          - eine
+          - euch
+          - aber
+          - ohne
+          - den
+          - als
+          - ob
+        answers:
+          - Nachdem
+      - prompt: Lücke 8
+        options:
+          - um
+          - zu
+          - damit
+          - für
+          - mit
+          - weil
+          - Nachdem
+          - sind
+          - eine
+          - euch
+          - aber
+          - ohne
+          - den
+          - als
+          - ob
+        answers:
+          - sind
+      - prompt: Lücke 9
+        options:
+          - um
+          - zu
+          - damit
+          - für
+          - mit
+          - weil
+          - Nachdem
+          - sind
+          - eine
+          - euch
+          - aber
+          - ohne
+          - den
+          - als
+          - ob
+        answers:
+          - eine
+      - prompt: Lücke 10
+        options:
+          - um
+          - zu
+          - damit
+          - für
+          - mit
+          - weil
+          - Nachdem
+          - sind
+          - eine
+          - euch
+          - aber
+          - ohne
+          - den
+          - als
+          - ob
+        answers:
+          - euch
+  voices:
+    kind: worksheet
+    part: b1-hoeren-1
+    format: article
+    title: Fünf Meinungen zu kleinen Ausstellungen
+    recordings:
+      - voice: Anna
+        text: Ich gehe gern in kleine Ausstellungen, um mit anderen ins Gespräch zu kommen. Lange Texte
+          lese ich selten. Eine persönliche Frage neben dem Bild finde ich oft interessanter
+          als viele technische Angaben.
+      - voice: Reed
+        text: Für mich sind kurze Texte gut, aber ganz ohne Informationen möchte ich die Bilder nicht
+          sehen. Ich möchte wissen, wo und wann ein Foto entstanden ist. Danach kann ich besser
+          Fragen stellen.
+      - voice: Flo
+        text: Ich fotografiere selbst und sehe mir gern Details an. Trotzdem muss eine Ausstellung
+          nicht nur für Fachleute sein. Ich finde einfache Erklärungen hilfreich, damit auch
+          Anfänger etwas mitnehmen.
+      - voice: Grandpa
+        text: Ich brauche in einer Ausstellung Ruhe. Wenn an jedem Bild jemand etwas erklärt, kann ich
+          mich schlecht konzentrieren. Ich lese lieber allein und spreche erst am Ende über
+          meine Eindrücke.
+      - voice: Shelley
+        text: Mit meinen Kindern wähle ich Ausstellungen mit kleinen Aufgaben. Wir suchen zum Beispiel
+          einen Ort auf einer Karte. Dabei möchte ich ihnen nicht ständig die richtige Antwort
+          vorsagen.
+    questions:
+      - prompt: Die erste Person möchte durch die Ausstellung Gespräche beginnen.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+      - prompt: Die zweite Person möchte überhaupt keine Informationen.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Die dritte Person möchte nur Angebote für Fachleute.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Die vierte Person liest lieber zuerst allein.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+      - prompt: Die fünfte Person möchte den Kindern jede Lösung vorsagen.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+  opinions:
+    kind: card
+    part: b1-sprechen-2
+    title: Wie wird eine Ausstellung interessant?
+    theme: Information oder Entdeckung?
+    word: Meinung wiedergeben · Beispiel · Rückfrage
+    situation: Lesen Sie verschiedene Meinungen. Erzählen Sie dem Partner, was Ihre Person wichtig
+      findet. Vergleichen Sie dann mit einer eigenen Erfahrung.
+    roles:
+      - title: Person A · Karin
+        text: Ich brauche klare Informationen, um eine Ausstellung zu verstehen. Nur schöne Bilder
+          reichen mir nicht. Ich lese gern einen kurzen Text über den Ort und die Menschen.
+          Danach stelle ich Fragen. Eine gute Karte ist für mich wichtiger als ein lautes
+          Video.
+      - title: Person B · Jonas
+        text: Ich merke mir mehr, wenn ich selbst etwas herausfinden muss. Letzte Woche suchte ich in
+          einer Ausstellung drei Orte auf einer Karte. Darüber kam ich mit einem anderen
+          Besucher ins Gespräch. Zu lange Texte machen mich müde.
+steps:
+  - id: start
+    chapter: scene
+    title: Новое дело команды
+    beats:
+      - read: "Для раздела о Шлезвиге друзья выбирают собственные фотографии поездки к домам викингов в
+          Хайтабу. Одним гостям интересны детали, другим нужен короткий рассказ без специальных
+          слов. Нужно подготовить подписи и задания так, чтобы люди действительно поняли
+          материал. Все нужные условия даны в сцене: знания географии, настоящих цен или
+          расписаний не требуются. Сначала попробуйте понять, какого результата добиваются
+          друзья, затем слушайте реплики. На новом уровне важно не только найти число или
+          знакомое слово, но и связать несколько сведений."
+        point: Объясняем цель и готовим понятную выставку
+        set:
+          view: dialogue
+          dialogue: scene
+          reveal: 4
+      - read: "В этой главе важен результат для посетителя. Um ... zu связывает действие с целью того
+          же действующего лица. Damit позволяет явно назвать, кто должен получить результат: мы
+          пишем, гости понимают. При этом damit можно использовать и с тем же участником. Не
+          выбирайте союз только по русскому «чтобы»: сначала найдите, кто действует в каждой
+          части."
+        point: "Цель: um … zu / damit; отличие от причины weil"
+        set:
+          reveal: 8
+  - id: words
+    chapter: words
+    title: Слова, которые понадобятся
+    beats:
+      - read: "Выставка не должна превращаться в список сложных терминов. Карта помогает найти место,
+          подпись — понять фотографию, вопрос — начать разговор. В игре каждый элемент
+          выбирается ради конкретной цели. Исторические факты мы не придумываем: упражнение
+          описывает действия организаторов, а фотографии остаются материалом, которому нужна
+          понятная подпись и указанное авторство."
+        point: Сначала используйте слово для решения; словарь остаётся справочником.
+        set:
+          view: words
+          words: useful
+          reveal: 6
+      - read: "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к
+          ситуации: какие слова обозначают человека, место, условие или уже выполненное
+          действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово
+          встретится снова в записке или разговоре, попробуйте восстановить его смысл до
+          подсказки."
+        point: Возвращайтесь к выражениям в сообщениях и новых действиях.
+        set:
+          reveal: 15
+  - id: grammar
+    chapter: grammar
+    title: "Цель: um … zu / damit; отличие от причины weil"
+    beats:
+      - read: "Читает и ищет трудные места один человек. Поэтому во второй части не требуется новое
+          подлежащее: после um стоит нужное дополнение, а в конце — zu finden. Это развитие уже
+          знакомой инфинитивной группы. Цель отвечает на вопрос «для чего?». Она ещё не
+          доказывает, что желаемый результат действительно получен; после чтения всё равно
+          нужно проверить текст."
+        point: "um … zu: цель того же действующего лица."
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: "Пишем мы, а понять должны гости. В части с damit действующее лицо названо явно, глагол
+          получает личную форму и стоит в конце. Damit допустимо и при одном участнике: *Ich
+          lese laut, damit ich Fehler finde*. Не превращайте полезное различие в неверное
+          правило, будто damit разрешено только для разных людей."
+        point: damit + подлежащее; личный глагол в конце.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: "Причина объясняет, почему решение принято: старый текст слишком трудный. Цель описывает,
+          чего хотим достичь: чтобы гости поняли. Одно действие может иметь и причину, и цель.
+          В игре не достаточно найти знакомый союз: свяжите его с фактом или ожидаемым
+          результатом. В обеих моделях затем проверьте правильное положение глагола."
+        point: "weil: причина; damit / um … zu: желаемая цель."
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+  - id: frames
+    chapter: grammar
+    title: Как устроена реплика
+    beats:
+      - read: "В этом предложении подлежащее меняется: мы подготавливаем текст для гостей. Поэтому в
+          конце стоит личная форма verstehen, а не zu verstehen без названного участника. Перед
+          сборкой переведите связь простыми словами: кто делает материал и кому он помогает?
+          Форма должна сохранить эту связь, иначе получатель помощи исчезнет из реплики."
+        point: "*Wir schreiben einfach, damit die Gäste alles verstehen.*"
+        set:
+          view: sentence
+          rows:
+            - de:
+                - Wir schreiben einfach,
+                - damit
+                - die Gäste alles
+                - verstehen.
+              ru: Мы пишем просто, чтобы гости всё поняли.
+  - id: check
+    chapter: practice
+    title: Проверьте смысл до подсказки
+    beats:
+      - question: Можно ли использовать damit, когда участник один?
+        read: "Да. Можно сказать *Ich lese laut, damit ich Fehler finde*. Конструкция um ... zu в этом
+          случае короче, но damit не становится ошибкой. Главное — сохранить понятную цель и
+          правильно построить выбранную модель. Различие особенно полезно, когда действующие
+          лица разные: тогда их нельзя незаметно объединить в одну инфинитивную группу."
+        point: При одном участнике возможны обе модели.
+        set:
+          view: table
+          table: rule
+      - question: «Damit alle verstehen» уже подтверждает, что все поняли?
+        read: "Нет. Это цель организаторов. Чтобы узнать результат, нужно проверить материал с
+          посетителем и услышать его ответ. В этой истории Хауке тестирует задание с соседом.
+          Не записывайте намерение как достигнутый результат: короткий текст может всё ещё
+          содержать незнакомые слова или непонятную связь между картой и фотографией."
+        point: Цель нужно отдельно проверить действием.
+        set:
+          view: table
+          table: rule
+  - id: exam-materials
+    chapter: exam
+    title: Material für drei Ziele · Ausschnitt
+    beats:
+      - read: Сравните три результата для посетителей. Для каждого выберите материал, который помогает
+          именно этому действию. Карта не заменяет подпись к фотографии, а подпись не
+          гарантирует начало разговора. Это дополнительный фрагмент чтения для игры; полную
+          экзаменационную часть он не имитирует. Позже перенесите выбранную цель в свою
+          реплику.
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: materials
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: materials
+        set:
+          view: task
+          task: materials
+          solved: true
+  - id: exam-gaps
+    chapter: exam
+    title: "Zehn Lücken: Warum und wozu?"
+    beats:
+      - read: "В общем банке пятнадцать слов, а пропусков десять. Используйте каждый выбранный вариант
+          не более одного раза. Контекст вернёт после новой модели также weil и nachdem.
+          Сначала прочитайте весь план, затем проверьте соседние слова у каждого пропуска:
+          предлог, личная форма и причастие дают разные подсказки."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: gaps
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: gaps
+        set:
+          view: task
+          task: gaps
+          solved: true
+  - id: exam-voices
+    chapter: exam
+    title: Fünf Meinungen zu kleinen Ausstellungen
+    beats:
+      - read: "Пять мнений показывают разные потребности посетителей. В самостоятельной попытке
+          слушайте каждую запись один раз. Утверждение может преувеличивать мысль словами
+          «совсем» или «только». Не решайте по отношению автора к музеям вообще: найдите, что
+          именно ему важно. Учебный текст и повтор помогают разобрать ошибку после своей
+          попытки."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: voices
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: voices
+        set:
+          view: task
+          task: voices
+          solved: true
+  - id: exam-opinions
+    chapter: exam
+    title: Wie wird eine Ausstellung interessant?
+    beats:
+      - read: "Передайте основную мысль своей карточки, не зачитывая весь текст партнёру. Затем
+          приведите собственный пример и спросите о его опыте. В этом задании нет правильного
+          вкуса: любить карты или небольшие задачи допустимо. Проверяется понятный пересказ и
+          реакция на другое мнение, а не совпадение с предпочтением автора курса."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: opinions
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: opinions
+        set:
+          view: task
+          task: opinions
+          solved: true
+exercises:
+  - type: choice
+    q: Ich lese laut, ___ Fehler zu finden.
+    options:
+      - weil
+      - um
+      - damit
+    answer: 1
+    why: Одна цель одного участника.
+  - type: choice
+    q: Wir erklären einfach, ___ die Gäste alles verstehen.
+    options:
+      - zu
+      - damit
+      - um
+    answer: 1
+    why: Вторая часть с подлежащим и личным глаголом.
+  - type: choice
+    q: Um die Texte besser ___ verstehen.
+    options:
+      - damit
+      - für
+      - zu
+    answer: 2
+    why: Инфинитивная группа.
+  - type: choice
+    q: Damit die Gäste den Ort ___.
+    options:
+      - gefunden
+      - finden
+      - zu finden
+    answer: 1
+    why: Личная форма в конце.
+  - type: choice
+    q: Weil der Text zu schwer ist — это…
+    options:
+      - Место
+      - Причина
+      - Подтверждённый результат
+    answer: 1
+    why: Объясняет принятое решение.
+  - type: choice
+    q: Damit при одном участнике…
+    options:
+      - Всегда запрещено
+      - Только о прошлом
+      - Возможно
+    answer: 2
+    why: Umzu короче, но damit тоже возможно.
+  - type: order
+    de: Ich lese laut, um Fehler zu finden.
+    ru: Я читаю вслух, чтобы найти ошибки.
+  - type: order
+    de: Wir schreiben einfach, damit alle die Bilder verstehen.
+    ru: Мы пишем просто, чтобы все поняли фотографии.
+  - type: order
+    de: Ich bringe eine Karte mit.
+    ru: Я принесу карту.
+  - type: order
+    de: Die Gäste sollen den Ort erkennen.
+    ru: Гости должны узнать место.
+  - type: order
+    de: Wir testen die Aufgabe mit einem Nachbarn.
+    ru: Мы проверим задание с соседом.
+  - type: order
+    de: Die Markierung ist zu klein.
+    ru: Метка слишком маленькая.
+case:
+  title: Ein Ziel ist noch kein Ergebnis
+  ru: Сверка дневника
+  intro: Проверьте, что хотел сделать организатор и что подтвердил посетитель.
+  people: {}
+  steps:
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Wir schreiben einfache Texte, damit alle die Bilder verstehen.
+          ru: Мы пишем простые тексты, чтобы все поняли фото.
+      question: Это уже результат проверки?
+      options:
+        - Да, музей открыт
+        - Нет, это цель
+        - Да, все поняли
+      answer: 1
+      right: Damit выражает желаемый результат.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Der Nachbar erkennt die zweite Markierung zuerst nicht.
+          ru: Сосед сначала не узнаёт вторую метку.
+      question: Что стоит изменить?
+      options:
+        - Сделать метку заметнее
+        - Объявить гостя невнимательным
+        - Убрать карту без замены
+      answer: 0
+      right: Реплика показывает конкретную трудность материала.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Jetzt erkenne ich beide Orte.
+          ru: Теперь я узнаю оба места.
+      question: Что подтверждено?
+      options:
+        - Все будущие гости всё поймут
+        - Все материалы идеальны
+        - Этот посетитель нашёл оба места
+      answer: 2
+      right: Ответ подтверждает конкретную проверку.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+  ending: Цель, трудность и проверенный результат записаны отдельно. Материал улучшен по действию
+    посетителя.
+adventure:
+  kind: sequence
+  title: Сделайте материал полезным посетителю
+  intro: Для раздела о Шлезвиге друзья выбирают собственные фотографии поездки к домам викингов в
+    Хайтабу. Одним гостям интересны детали, другим нужен короткий рассказ без специальных слов.
+    Нужно подготовить подписи и задания так, чтобы люди действительно поняли материал.
+  ending: "У трёх материалов есть понятные цели: найти место, понять фото и начать разговор.
+    Намерение отделено от результата; подготовленный вариант ещё нужно попробовать с гостем."
+  challenges:
+    - id: goals
+      kind: match
+      title: Материал должен помогать действию
+      intro: Свяжите материал с задачей посетителя.
+      mode: reading
+      clue:
+        task: materials
+      slots:
+        - id: a
+          label: Karte mit markierten Orten
+          answer: finden
+        - id: b
+          label: Kurze Bildunterschrift
+          answer: verstehen
+        - id: c
+          label: Offene Reisefrage
+          answer: sprechen
+      options:
+        - id: finden
+          label: Ort finden
+        - id: verstehen
+          label: Foto verstehen
+        - id: sprechen
+          label: ins Gespräch kommen
+      success: Выбрана функция каждого элемента.
+      wrong: Сравните цель A, B и C.
+    - id: purpose
+      kind: order
+      title: Скажите, для кого вы упрощаете текст
+      intro: Сохраните разных участников.
+      label: Реплика для команды
+      tokens:
+        - Wir schreiben einfach,
+        - damit
+        - die Gäste alles
+        - verstehen.
+      success: Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.
+      wrong: "Проверьте положение глагола и конец предложения: используйте все фрагменты."
+    - id: kit
+      kind: pack
+      title: Соберите набор под три цели
+      intro: Нужны место, понятное фото и разговор.
+      mode: reading
+      clue:
+        task: materials
+      options:
+        - id: o0
+          label: Карта с отмеченными местами
+        - id: o1
+          label: Короткая подпись
+        - id: o2
+          label: Открытый вопрос о поездке
+        - id: o3
+          label: Только длинный текст с терминами
+      answer:
+        - o0
+        - o1
+        - o2
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."
+    - id: same
+      kind: select
+      title: Один человек читает и ищет ошибки
+      intro: Как выразить цель без смены действующего лица?
+      options:
+        - id: good
+          label: Ich lese laut, um Fehler zu finden.
+        - id: bad
+          label: Ich lese laut, damit die Gäste Fehler zu finden.
+        - id: reason
+          label: Ich lese laut, weil Fehler.
+      answer:
+        - good
+      success: "Читаю и ищу я сам: um ... zu подходит."
+      wrong: В damit нужна личная форма, а weil вводит причину.
+    - id: test
+      kind: negotiation
+      title: Проверьте, работает ли замысел
+      intro: Не считайте цель достигнутой до ответа гостя.
+      start: a
+      nodes:
+        - id: a
+          text: "Nachbar: Ich sehe die Karte. Was soll ich suchen?"
+          choices:
+            - label: Finden Sie bitte Schleswig und Haithabu.
+              next: b
+              feedback: Посетителю дано конкретное действие.
+        - id: b
+          text: "Nachbar: Schleswig finde ich. Wo ist die zweite Markierung?"
+          choices:
+            - label: Die Markierung ist zu klein. Ich mache sie deutlicher.
+              next: end
+              feedback: Материал улучшен по реальной трудности.
+        - id: end
+          text: "Nachbar: Jetzt erkenne ich beide Orte. Danke."
+          terminal: true
+          choices: []
+      success: Понимание подтверждено ответом, а не намерением.
+      wrong: Уточните трудность посетителя.

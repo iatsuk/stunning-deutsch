@@ -1,0 +1,1854 @@
+{
+ "id": "a2-arbeit",
+ "level": "a2",
+ "order": 9,
+ "title": "Mateo sagt, dass er am Sonntag frei hat.",
+ "ru": "Работа и сообщения",
+ "lede": "Матео продолжает работать в Fördeblick. Перед новой встречей команды он пересказывает сообщение руководителя и объясняет, почему вчера не смог помочь. Нужно отделить чужое сообщение, личное желание и реально выполненную задачу.",
+ "goals": [
+  "Передать содержание сообщения с dass",
+  "Распознать мог, должен был и хотел",
+  "Понять особое время из рабочего сообщения",
+  "Рассказать о профессии и заполнить сведения об опыте"
+ ],
+ "grammar": [
+  "dass; konnte, musste, wollte"
+ ],
+ "exam": [
+  "a2-lesen-2",
+  "a2-hoeren-1",
+  "a2-schreiben-1",
+  "a2-sprechen-1"
+ ],
+ "chapters": [
+  {
+   "id": "scene",
+   "title": "Ситуация"
+  },
+  {
+   "id": "words",
+   "title": "Слова"
+  },
+  {
+   "id": "grammar",
+   "title": "Грамматика"
+  },
+  {
+   "id": "practice",
+   "title": "Проверка"
+  },
+  {
+   "id": "exam",
+   "title": "На экзамене"
+  }
+ ],
+ "dialogues": {
+  "scene": {
+   "title": "Mateo sagt, dass er am Sonntag frei hat.",
+   "ru": "Работа и сообщения",
+   "place": "Sprachschule Förde, Kiel · перед занятием A2 · вымышленная учебная ситуация",
+   "people": {
+    "D": {
+     "name": "Dana",
+     "voice": "Anna"
+    },
+    "M": {
+     "name": "Mateo",
+     "voice": "Reed"
+    },
+    "E": {
+     "name": "Elif",
+     "voice": "Flo"
+    },
+    "H": {
+     "name": "Hauke",
+     "voice": "Rocko"
+    }
+   },
+   "lines": [
+    {
+     "who": "D",
+     "de": "Mateo, kannst du am Sonntag zum Club kommen?",
+     "ru": "Матео, сможешь в воскресенье прийти в клуб?",
+     "audio": "audio/a9ad17491766.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Ja. Herr Wagner sagt, dass ich am Sonntag frei habe.",
+     "ru": "Да. Господин Вагнер говорит, что в воскресенье у меня выходной.",
+     "audio": "audio/46d67273101f.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Und warum warst du gestern nicht da?",
+     "ru": "А почему тебя вчера не было?",
+     "audio": "audio/858751abf637.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Ich wollte kommen, aber ich musste arbeiten.",
+     "ru": "Я хотел прийти, но должен был работать.",
+     "audio": "audio/724b55fa445c.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Konntest du die Liste trotzdem lesen?",
+     "ru": "Ты всё же смог прочитать список?",
+     "audio": "audio/74b40120b01c.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Ja. Ich habe gelesen, dass wir um sechzehn Uhr im Club sein sollen.",
+     "ru": "Да. Я прочитал, что мы должны быть в клубе в шестнадцать.",
+     "audio": "audio/9a6eb0f7c761.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Für Sonntag stimmt das. Am Freitag hast du aber ein Treffen im Restaurant.",
+     "ru": "Для воскресенья верно. Но в пятницу у тебя встреча в ресторане.",
+     "audio": "audio/39001578eb26.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Genau. Herr Wagner schreibt, dass ich am Freitag schon um sechzehn Uhr kommen soll.",
+     "ru": "Именно. Господин Вагнер пишет, чтобы я в пятницу пришёл уже в шестнадцать.",
+     "audio": "audio/002c8e7fad93.m4a"
+    }
+   ]
+  }
+ },
+ "words": {
+  "useful": {
+   "title": "Wörter für die Aufgabe",
+   "ru": "Слова для действия",
+   "items": [
+    {
+     "de": "sagen",
+     "ru": "говорить",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/b22e2ea8184a.m4a"
+    },
+    {
+     "de": "mitteilen",
+     "ru": "сообщать",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/4cdf885718f4.m4a"
+    },
+    {
+     "de": "die Mitteilung",
+     "ru": "сообщение",
+     "gender": "f",
+     "plural": "Mitteilungen",
+     "audio": "audio/da6a5ded8aa1.m4a"
+    },
+    {
+     "de": "die Schicht",
+     "ru": "смена",
+     "gender": "f",
+     "plural": "Schichten",
+     "audio": "audio/960426b984c3.m4a"
+    },
+    {
+     "de": "der Dienstplan",
+     "ru": "рабочее расписание",
+     "gender": "m",
+     "plural": "Dienstpläne",
+     "audio": "audio/9caa9cc968be.m4a"
+    },
+    {
+     "de": "die Besprechung",
+     "ru": "рабочее обсуждение",
+     "gender": "f",
+     "plural": "Besprechungen",
+     "audio": "audio/6594c7fbb7e3.m4a"
+    },
+    {
+     "de": "der Leiter",
+     "ru": "руководитель",
+     "gender": "m",
+     "plural": "Leiter",
+     "audio": "audio/7ea21db8674e.m4a"
+    },
+    {
+     "de": "der Mitarbeiter",
+     "ru": "сотрудник",
+     "gender": "m",
+     "plural": "Mitarbeiter",
+     "audio": "audio/c3e223e571b9.m4a"
+    },
+    {
+     "de": "trotzdem",
+     "ru": "всё же",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/782365ae175a.m4a"
+    },
+    {
+     "de": "schon",
+     "ru": "уже, раньше ожидаемого",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/b147d2d30d9f.m4a"
+    },
+    {
+     "de": "konnte",
+     "ru": "мог",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/d27cc93e6bd6.m4a"
+    },
+    {
+     "de": "musste",
+     "ru": "должен был",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/4b4a85310d2d.m4a"
+    }
+   ]
+  }
+ },
+ "tables": {
+  "rule": {
+   "title": "dass; konnte, musste, wollte",
+   "ru": "Опора для решения",
+   "head": [
+    "Beispiel",
+    "Смысл и форма"
+   ],
+   "rows": [
+    [
+     "Er sagt, dass er am Sonntag frei hat.",
+     "dass передаёт содержание; глагол в конце."
+    ],
+    [
+     "Ich wollte kommen, aber ich musste arbeiten.",
+     "wollte — хотел; musste — должен был."
+    ],
+    [
+     "Konntest du die Liste lesen?",
+     "konnte — мог; konntest — мог ты."
+    ],
+    [
+     "Er schreibt, dass ich früher kommen soll.",
+     "sollen передаёт поручение или ожидаемое действие."
+    ]
+   ],
+   "ruCols": [
+    1
+   ]
+  }
+ },
+ "tasks": {
+  "work": {
+   "kind": "message",
+   "part": "a2-lesen-2",
+   "title": "Nachricht von Herrn Wagner",
+   "from": "Herr Wagner",
+   "to": "Mateo Fernández",
+   "text": "Hallo Mateo, am Freitag beginnt deine Schicht wie immer um 17 Uhr. Komm bitte schon um 16 Uhr zur Besprechung. Am Sonntag hast du frei. Die Liste für das Restaurant habe ich schon gelesen. Die Einkaufsliste für den Club ist eine andere Liste.",
+   "sample": []
+  },
+  "phone": {
+   "kind": "worksheet",
+   "part": "a2-hoeren-1",
+   "format": "notes",
+   "title": "Telefonnotiz aus dem Restaurant",
+   "voice": "Eddy",
+   "text": "Guten Tag, Herr Fernández. Hier ist Wagner vom Restaurant Fördeblick. Unsere Besprechung ist am Freitag um sechzehn Uhr im Restaurant. Ihre Schicht beginnt um siebzehn Uhr. Bringen Sie bitte die Liste mit. Am Sonntag haben Sie frei.",
+   "questions": [
+    {
+     "prompt": "Besprechung am",
+     "answers": [
+      "Freitag",
+      "am Freitag"
+     ]
+    },
+    {
+     "prompt": "Besprechung um",
+     "answers": [
+      "16:00",
+      "16 Uhr",
+      "sechzehn Uhr"
+     ]
+    },
+    {
+     "prompt": "Ort",
+     "answers": [
+      "Restaurant",
+      "im Restaurant",
+      "Fördeblick"
+     ]
+    },
+    {
+     "prompt": "Schichtbeginn",
+     "answers": [
+      "17:00",
+      "17 Uhr",
+      "siebzehn Uhr"
+     ]
+    },
+    {
+     "prompt": "Mitbringen",
+     "answers": [
+      "Liste",
+      "die Liste"
+     ]
+    }
+   ],
+   "audio": "audio/fd15c72515a6.m4a",
+   "sample": []
+  },
+  "form": {
+   "kind": "form",
+   "part": "a2-schreiben-1",
+   "title": "Berufskurs · Anmeldung",
+   "situation": "Mateo Fernández ist 28 Jahre alt. Er kommt aus Argentinien und wohnt in Kiel. Er ist Koch. Er spricht Spanisch und Englisch. Ergänzen Sie die fünf fehlenden Angaben.",
+   "fields": [
+    {
+     "label": "Familienname",
+     "value": "Fernández",
+     "given": true
+    },
+    {
+     "label": "Vorname",
+     "value": "Mateo",
+     "given": false
+    },
+    {
+     "label": "Alter",
+     "value": "28",
+     "given": false
+    },
+    {
+     "label": "Herkunftsland",
+     "value": "Argentinien",
+     "given": false
+    },
+    {
+     "label": "Wohnort",
+     "value": "Kiel",
+     "given": false
+    },
+    {
+     "label": "Beruf",
+     "value": "Koch",
+     "given": false
+    },
+    {
+     "label": "Sprachen",
+     "value": "Spanisch, Englisch",
+     "given": true
+    }
+   ],
+   "sample": []
+  },
+  "self": {
+   "kind": "keywords",
+   "part": "a2-sprechen-1",
+   "title": "Beruf und Erfahrung",
+   "words": [
+    "Beruf",
+    "Früher",
+    "Jetzt",
+    "Gestern",
+    "Pläne"
+   ],
+   "sample": [
+    {
+     "de": "Ich bin Koch und arbeite in Kiel.",
+     "audio": "audio/ef81728eea9a.m4a"
+    },
+    {
+     "de": "Früher habe ich in Buenos Aires gearbeitet.",
+     "audio": "audio/752cee2512c3.m4a"
+    },
+    {
+     "de": "Gestern musste ich arbeiten.",
+     "audio": "audio/3bdb258da4f7.m4a"
+    },
+    {
+     "de": "Am Sonntag habe ich frei.",
+     "audio": "audio/f9d7ae4d9680.m4a"
+    }
+   ]
+  }
+ },
+ "beats": [
+  {
+   "id": "start-1",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 0,
+   "read": "Матео продолжает работать в Fördeblick. Перед новой встречей команды он пересказывает сообщение руководителя и объясняет, почему вчера не смог помочь. Нужно отделить чужое сообщение, личное желание и реально выполненную задачу. Все нужные условия даны в сцене: знания географии, настоящих цен или расписаний не требуются. Сначала попробуйте понять, какого результата добиваются друзья, затем слушайте реплики. На новом уровне важно не только найти число или знакомое слово, но и связать несколько сведений.",
+   "point": "Работа и сообщения",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 4,
+    "fresh": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "start-2",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 1,
+   "read": "В разговоре два события с одинаковым временем: пятница в ресторане и воскресенье в клубе. Совпадение числа не делает события одинаковыми. *Dass* вводит содержание того, что сказано или написано. Формы *wollte* и *musste* объясняют прошлую ситуацию: желание прийти не означает, что Матео действительно пришёл.",
+   "point": "dass; konnte, musste, wollte",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 8,
+    "fresh": [
+     4,
+     5,
+     6,
+     7
+    ]
+   }
+  },
+  {
+   "id": "words-1",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 0,
+   "read": "*Sagen*, *schreiben*, *lesen* помогают назвать источник сообщения. После них можно сообщить содержание с *dass*. *Konnte*, *musste*, *wollte* относятся к прошлому. Они не заменяют друг друга по смыслу: возможность, необходимость и желание — разные сведения для отчёта команды.",
+   "point": "Сначала используйте слово для решения; словарь остаётся справочником.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 6,
+    "words": "useful"
+   }
+  },
+  {
+   "id": "words-2",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 1,
+   "read": "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к ситуации: какие слова обозначают человека, место, условие или уже выполненное действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово встретится снова в записке или разговоре, попробуйте восстановить его смысл до подсказки.",
+   "point": "Возвращайтесь к выражениям в сообщениях и новых действиях.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 12,
+    "words": "useful",
+    "fresh": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   }
+  },
+  {
+   "id": "grammar-1",
+   "step": "grammar",
+   "stepTitle": "dass; konnte, musste, wollte",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "В главной части назван источник: *Er sagt*. После *dass* сообщается содержание: *er am Sonntag frei hat*. Личная форма *hat* стоит в конце придаточного. Это не причина и не условие: не подменяйте *dass* знакомыми *weil* или *wenn*. В отчёте полезно сохранить, кто именно сообщил сведения.",
+   "point": "dass передаёт содержание; глагол в конце.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "grammar-2",
+   "step": "grammar",
+   "stepTitle": "dass; konnte, musste, wollte",
+   "chapterIndex": 2,
+   "indexInStep": 1,
+   "read": "У этих частых модальных глаголов в прошлом используется короткая форма. Инфинитив остаётся в конце своей части: *wollte kommen*, *musste arbeiten*. Желание не равно выполнению. Из фразы нельзя сделать вывод, что человек успел и прийти, и отработать: в контексте он объясняет отсутствие.",
+   "point": "wollte — хотел; musste — должен был.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "grammar-3",
+   "step": "grammar",
+   "stepTitle": "dass; konnte, musste, wollte",
+   "chapterIndex": 2,
+   "indexInStep": 2,
+   "read": "Формы *konnte*, *musste*, *wollte* не имеют умлаута, в отличие от инфинитивов *können* и *müssen*. У *du* появляется окончание: *konntest*, *musstest*, *wolltest*. В вопросе да/нет личная форма стоит первой, инфинитив в конце. Сначала определите, о какой возможности спрашивают, затем проверяйте форму.",
+   "point": "konnte — мог; konntest — мог ты.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "grammar-4",
+   "step": "grammar",
+   "stepTitle": "dass; konnte, musste, wollte",
+   "chapterIndex": 2,
+   "indexInStep": 3,
+   "read": "В сообщении *soll* передаёт, что требуется по просьбе другого человека. Здесь это рабочая встреча: руководитель просит прийти раньше. Для первого шага воспринимаем *soll* как частую модель пересказа поручения. Более подробно её разберём в теме о записях и указаниях; не трактуем любое такое сообщение как собственный совет говорящего.",
+   "point": "sollen передаёт поручение или ожидаемое действие.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "frames-1",
+   "step": "frames",
+   "stepTitle": "Как устроена реплика",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "В прямой фразе было бы *Ich habe am Sonntag frei*. При пересказе после *dass* личная форма *habe* уходит в конец. Если меняется говорящий, меняется местоимение: *Mateo sagt, dass er …*. Сохраняйте источник и человека, о котором говорится, иначе грамматически верный пересказ может приписать выходной другому участнику.",
+   "point": "*Mateo sagt, dass er am Sonntag frei hat.*",
+   "scene": {
+    "view": "sentence",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "mateo",
+         "text": "Mateo"
+        }
+       ],
+       [
+        {
+         "key": "sagt",
+         "text": "sagt,"
+        }
+       ],
+       [
+        {
+         "key": "dass",
+         "text": "dass"
+        },
+        {
+         "key": "er",
+         "text": "er"
+        },
+        {
+         "key": "am",
+         "text": "am"
+        },
+        {
+         "key": "sonntag",
+         "text": "Sonntag"
+        },
+        {
+         "key": "frei",
+         "text": "frei"
+        },
+        {
+         "key": "hat",
+         "text": "hat"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Mateo sagt, dass er am Sonntag frei hat.",
+      "ru": "Матео говорит, что в воскресенье у него выходной.",
+      "audio": "audio/6c8a45484698.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-1",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 0,
+   "read": "Нет. Это сообщение о желании в прошлом. Для подтверждения прихода нужно другое действие или факт, например *Ich bin gekommen*. В нашем разговоре следующая часть *aber ich musste arbeiten* как раз объясняет отсутствие. Не превращайте намерение в завершённое дело при заполнении отчёта.",
+   "point": "Желание, возможность и выполненное действие — разные факты.",
+   "question": "Ich wollte kommen доказывает, что человек пришёл?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "mateo",
+         "text": "Mateo"
+        }
+       ],
+       [
+        {
+         "key": "sagt",
+         "text": "sagt,"
+        }
+       ],
+       [
+        {
+         "key": "dass",
+         "text": "dass"
+        },
+        {
+         "key": "er",
+         "text": "er"
+        },
+        {
+         "key": "am",
+         "text": "am"
+        },
+        {
+         "key": "sonntag",
+         "text": "Sonntag"
+        },
+        {
+         "key": "frei",
+         "text": "frei"
+        },
+        {
+         "key": "hat",
+         "text": "hat"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Mateo sagt, dass er am Sonntag frei hat.",
+      "ru": "Матео говорит, что в воскресенье у него выходной.",
+      "audio": "audio/6c8a45484698.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-2",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 1,
+   "read": "Нет: *dass ich am Sonntag frei habe*. Знакомая рамка главного предложения здесь меняется. После союза начинается придаточное, и личная форма завершает его. В начале пересказа можно назвать источник: кто говорит, пишет или что вы прочитали.",
+   "point": "*dass ich … frei habe* — глагол в конце.",
+   "question": "После dass форма habe остаётся на втором месте?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "mateo",
+         "text": "Mateo"
+        }
+       ],
+       [
+        {
+         "key": "sagt",
+         "text": "sagt,"
+        }
+       ],
+       [
+        {
+         "key": "dass",
+         "text": "dass"
+        },
+        {
+         "key": "er",
+         "text": "er"
+        },
+        {
+         "key": "am",
+         "text": "am"
+        },
+        {
+         "key": "sonntag",
+         "text": "Sonntag"
+        },
+        {
+         "key": "frei",
+         "text": "frei"
+        },
+        {
+         "key": "hat",
+         "text": "hat"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Mateo sagt, dass er am Sonntag frei hat.",
+      "ru": "Матео говорит, что в воскресенье у него выходной.",
+      "audio": "audio/6c8a45484698.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "exam-work-1",
+   "step": "exam-work",
+   "stepTitle": "Nachricht von Herrn Wagner",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным текстом: объясните, какой фрагмент подтверждает каждое решение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "mateo",
+         "text": "Mateo"
+        }
+       ],
+       [
+        {
+         "key": "sagt",
+         "text": "sagt,"
+        }
+       ],
+       [
+        {
+         "key": "dass",
+         "text": "dass"
+        },
+        {
+         "key": "er",
+         "text": "er"
+        },
+        {
+         "key": "am",
+         "text": "am"
+        },
+        {
+         "key": "sonntag",
+         "text": "Sonntag"
+        },
+        {
+         "key": "frei",
+         "text": "frei"
+        },
+        {
+         "key": "hat",
+         "text": "hat"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Mateo sagt, dass er am Sonntag frei hat.",
+      "ru": "Матео говорит, что в воскресенье у него выходной.",
+      "audio": "audio/6c8a45484698.m4a"
+     }
+    ],
+    "task": "work"
+   }
+  },
+  {
+   "id": "exam-work-2",
+   "step": "exam-work",
+   "stepTitle": "Nachricht von Herrn Wagner",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "mateo",
+         "text": "Mateo"
+        }
+       ],
+       [
+        {
+         "key": "sagt",
+         "text": "sagt,"
+        }
+       ],
+       [
+        {
+         "key": "dass",
+         "text": "dass"
+        },
+        {
+         "key": "er",
+         "text": "er"
+        },
+        {
+         "key": "am",
+         "text": "am"
+        },
+        {
+         "key": "sonntag",
+         "text": "Sonntag"
+        },
+        {
+         "key": "frei",
+         "text": "frei"
+        },
+        {
+         "key": "hat",
+         "text": "hat"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Mateo sagt, dass er am Sonntag frei hat.",
+      "ru": "Матео говорит, что в воскресенье у него выходной.",
+      "audio": "audio/6c8a45484698.m4a"
+     }
+    ],
+    "task": "work"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "mateo",
+         "text": "Mateo"
+        }
+       ],
+       [
+        {
+         "key": "sagt",
+         "text": "sagt,"
+        }
+       ],
+       [
+        {
+         "key": "dass",
+         "text": "dass"
+        },
+        {
+         "key": "er",
+         "text": "er"
+        },
+        {
+         "key": "am",
+         "text": "am"
+        },
+        {
+         "key": "sonntag",
+         "text": "Sonntag"
+        },
+        {
+         "key": "frei",
+         "text": "frei"
+        },
+        {
+         "key": "hat",
+         "text": "hat"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Mateo sagt, dass er am Sonntag frei hat.",
+      "ru": "Матео говорит, что в воскресенье у него выходной.",
+      "audio": "audio/6c8a45484698.m4a"
+     }
+    ],
+    "task": "work",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-phone-1",
+   "step": "exam-phone",
+   "stepTitle": "Telefonnotiz aus dem Restaurant",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным текстом: объясните, какой фрагмент подтверждает каждое решение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "mateo",
+         "text": "Mateo"
+        }
+       ],
+       [
+        {
+         "key": "sagt",
+         "text": "sagt,"
+        }
+       ],
+       [
+        {
+         "key": "dass",
+         "text": "dass"
+        },
+        {
+         "key": "er",
+         "text": "er"
+        },
+        {
+         "key": "am",
+         "text": "am"
+        },
+        {
+         "key": "sonntag",
+         "text": "Sonntag"
+        },
+        {
+         "key": "frei",
+         "text": "frei"
+        },
+        {
+         "key": "hat",
+         "text": "hat"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Mateo sagt, dass er am Sonntag frei hat.",
+      "ru": "Матео говорит, что в воскресенье у него выходной.",
+      "audio": "audio/6c8a45484698.m4a"
+     }
+    ],
+    "task": "phone"
+   }
+  },
+  {
+   "id": "exam-phone-2",
+   "step": "exam-phone",
+   "stepTitle": "Telefonnotiz aus dem Restaurant",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "mateo",
+         "text": "Mateo"
+        }
+       ],
+       [
+        {
+         "key": "sagt",
+         "text": "sagt,"
+        }
+       ],
+       [
+        {
+         "key": "dass",
+         "text": "dass"
+        },
+        {
+         "key": "er",
+         "text": "er"
+        },
+        {
+         "key": "am",
+         "text": "am"
+        },
+        {
+         "key": "sonntag",
+         "text": "Sonntag"
+        },
+        {
+         "key": "frei",
+         "text": "frei"
+        },
+        {
+         "key": "hat",
+         "text": "hat"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Mateo sagt, dass er am Sonntag frei hat.",
+      "ru": "Матео говорит, что в воскресенье у него выходной.",
+      "audio": "audio/6c8a45484698.m4a"
+     }
+    ],
+    "task": "phone"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "mateo",
+         "text": "Mateo"
+        }
+       ],
+       [
+        {
+         "key": "sagt",
+         "text": "sagt,"
+        }
+       ],
+       [
+        {
+         "key": "dass",
+         "text": "dass"
+        },
+        {
+         "key": "er",
+         "text": "er"
+        },
+        {
+         "key": "am",
+         "text": "am"
+        },
+        {
+         "key": "sonntag",
+         "text": "Sonntag"
+        },
+        {
+         "key": "frei",
+         "text": "frei"
+        },
+        {
+         "key": "hat",
+         "text": "hat"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Mateo sagt, dass er am Sonntag frei hat.",
+      "ru": "Матео говорит, что в воскресенье у него выходной.",
+      "audio": "audio/6c8a45484698.m4a"
+     }
+    ],
+    "task": "phone",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-form-1",
+   "step": "exam-form",
+   "stepTitle": "Berufskurs · Anmeldung",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным текстом: объясните, какой фрагмент подтверждает каждое решение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "mateo",
+         "text": "Mateo"
+        }
+       ],
+       [
+        {
+         "key": "sagt",
+         "text": "sagt,"
+        }
+       ],
+       [
+        {
+         "key": "dass",
+         "text": "dass"
+        },
+        {
+         "key": "er",
+         "text": "er"
+        },
+        {
+         "key": "am",
+         "text": "am"
+        },
+        {
+         "key": "sonntag",
+         "text": "Sonntag"
+        },
+        {
+         "key": "frei",
+         "text": "frei"
+        },
+        {
+         "key": "hat",
+         "text": "hat"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Mateo sagt, dass er am Sonntag frei hat.",
+      "ru": "Матео говорит, что в воскресенье у него выходной.",
+      "audio": "audio/6c8a45484698.m4a"
+     }
+    ],
+    "task": "form",
+    "reveal": 0
+   }
+  },
+  {
+   "id": "exam-form-2",
+   "step": "exam-form",
+   "stepTitle": "Berufskurs · Anmeldung",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "mateo",
+         "text": "Mateo"
+        }
+       ],
+       [
+        {
+         "key": "sagt",
+         "text": "sagt,"
+        }
+       ],
+       [
+        {
+         "key": "dass",
+         "text": "dass"
+        },
+        {
+         "key": "er",
+         "text": "er"
+        },
+        {
+         "key": "am",
+         "text": "am"
+        },
+        {
+         "key": "sonntag",
+         "text": "Sonntag"
+        },
+        {
+         "key": "frei",
+         "text": "frei"
+        },
+        {
+         "key": "hat",
+         "text": "hat"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Mateo sagt, dass er am Sonntag frei hat.",
+      "ru": "Матео говорит, что в воскресенье у него выходной.",
+      "audio": "audio/6c8a45484698.m4a"
+     }
+    ],
+    "task": "form",
+    "reveal": 0
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "mateo",
+         "text": "Mateo"
+        }
+       ],
+       [
+        {
+         "key": "sagt",
+         "text": "sagt,"
+        }
+       ],
+       [
+        {
+         "key": "dass",
+         "text": "dass"
+        },
+        {
+         "key": "er",
+         "text": "er"
+        },
+        {
+         "key": "am",
+         "text": "am"
+        },
+        {
+         "key": "sonntag",
+         "text": "Sonntag"
+        },
+        {
+         "key": "frei",
+         "text": "frei"
+        },
+        {
+         "key": "hat",
+         "text": "hat"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Mateo sagt, dass er am Sonntag frei hat.",
+      "ru": "Матео говорит, что в воскресенье у него выходной.",
+      "audio": "audio/6c8a45484698.m4a"
+     }
+    ],
+    "task": "form",
+    "reveal": 0,
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-self-1",
+   "step": "exam-self",
+   "stepTitle": "Beruf und Erfahrung",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным текстом: объясните, какой фрагмент подтверждает каждое решение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "mateo",
+         "text": "Mateo"
+        }
+       ],
+       [
+        {
+         "key": "sagt",
+         "text": "sagt,"
+        }
+       ],
+       [
+        {
+         "key": "dass",
+         "text": "dass"
+        },
+        {
+         "key": "er",
+         "text": "er"
+        },
+        {
+         "key": "am",
+         "text": "am"
+        },
+        {
+         "key": "sonntag",
+         "text": "Sonntag"
+        },
+        {
+         "key": "frei",
+         "text": "frei"
+        },
+        {
+         "key": "hat",
+         "text": "hat"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Mateo sagt, dass er am Sonntag frei hat.",
+      "ru": "Матео говорит, что в воскресенье у него выходной.",
+      "audio": "audio/6c8a45484698.m4a"
+     }
+    ],
+    "task": "self",
+    "reveal": 0
+   }
+  },
+  {
+   "id": "exam-self-2",
+   "step": "exam-self",
+   "stepTitle": "Beruf und Erfahrung",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "mateo",
+         "text": "Mateo"
+        }
+       ],
+       [
+        {
+         "key": "sagt",
+         "text": "sagt,"
+        }
+       ],
+       [
+        {
+         "key": "dass",
+         "text": "dass"
+        },
+        {
+         "key": "er",
+         "text": "er"
+        },
+        {
+         "key": "am",
+         "text": "am"
+        },
+        {
+         "key": "sonntag",
+         "text": "Sonntag"
+        },
+        {
+         "key": "frei",
+         "text": "frei"
+        },
+        {
+         "key": "hat",
+         "text": "hat"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Mateo sagt, dass er am Sonntag frei hat.",
+      "ru": "Матео говорит, что в воскресенье у него выходной.",
+      "audio": "audio/6c8a45484698.m4a"
+     }
+    ],
+    "task": "self",
+    "reveal": 0
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "mateo",
+         "text": "Mateo"
+        }
+       ],
+       [
+        {
+         "key": "sagt",
+         "text": "sagt,"
+        }
+       ],
+       [
+        {
+         "key": "dass",
+         "text": "dass"
+        },
+        {
+         "key": "er",
+         "text": "er"
+        },
+        {
+         "key": "am",
+         "text": "am"
+        },
+        {
+         "key": "sonntag",
+         "text": "Sonntag"
+        },
+        {
+         "key": "frei",
+         "text": "frei"
+        },
+        {
+         "key": "hat",
+         "text": "hat"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Mateo sagt, dass er am Sonntag frei hat.",
+      "ru": "Матео говорит, что в воскресенье у него выходной.",
+      "audio": "audio/6c8a45484698.m4a"
+     }
+    ],
+    "task": "self",
+    "reveal": 0,
+    "solved": true
+   }
+  }
+ ],
+ "exercises": [
+  {
+   "id": "a2-arbeit-1",
+   "type": "choice",
+   "q": "Mateo sagt, ___ er frei hat.",
+   "options": [
+    "dass",
+    "weil",
+    "wenn"
+   ],
+   "answer": 0,
+   "why": "Содержание сообщения.",
+   "audio": "audio/b6336764b418.m4a"
+  },
+  {
+   "id": "a2-arbeit-2",
+   "type": "choice",
+   "q": "Ich glaube, dass er am Sonntag Zeit ___.",
+   "options": [
+    "hat",
+    "haben",
+    "habe"
+   ],
+   "answer": 0,
+   "why": "Личная форма в конце.",
+   "audio": "audio/984407b31abf.m4a"
+  },
+  {
+   "id": "a2-arbeit-3",
+   "type": "choice",
+   "q": "Gestern ___ ich arbeiten.",
+   "options": [
+    "musste",
+    "müsste",
+    "muss"
+   ],
+   "answer": 0,
+   "why": "Прошлая необходимость.",
+   "audio": "audio/3bdb258da4f7.m4a"
+  },
+  {
+   "id": "a2-arbeit-4",
+   "type": "choice",
+   "q": "Ich ___ kommen, aber ich hatte keine Zeit.",
+   "options": [
+    "wollte",
+    "wollen",
+    "willst"
+   ],
+   "answer": 0,
+   "why": "Прошлое желание.",
+   "audio": "audio/c7a2610373d0.m4a"
+  },
+  {
+   "id": "a2-arbeit-5",
+   "type": "choice",
+   "q": "___ du die Liste lesen?",
+   "options": [
+    "Konntest",
+    "Konntet",
+    "Konnten"
+   ],
+   "answer": 0,
+   "why": "Вопрос к du.",
+   "audio": "audio/10eaa7c31118.m4a"
+  },
+  {
+   "id": "a2-arbeit-6",
+   "type": "choice",
+   "q": "Eine Besprechung um 16 Uhr und Schichtbeginn um 17 Uhr sind:",
+   "options": [
+    "zwei Zeiten",
+    "dieselbe Zeit",
+    "kein Termin"
+   ],
+   "answer": 0,
+   "why": "Разные события."
+  },
+  {
+   "id": "a2-arbeit-7",
+   "type": "order",
+   "ru": "Он говорит, что в воскресенье у него выходной.",
+   "de": "Er sagt, dass er am Sonntag frei hat.",
+   "audio": "audio/83e4eb1f66ba.m4a"
+  },
+  {
+   "id": "a2-arbeit-8",
+   "type": "order",
+   "ru": "Я хотел прийти, но должен был работать.",
+   "de": "Ich wollte kommen, aber ich musste arbeiten.",
+   "audio": "audio/23bcc9644cf9.m4a"
+  },
+  {
+   "id": "a2-arbeit-9",
+   "type": "order",
+   "ru": "Ты смог прочитать список?",
+   "de": "Konntest du die Liste lesen?",
+   "audio": "audio/10eaa7c31118.m4a"
+  },
+  {
+   "id": "a2-arbeit-10",
+   "type": "order",
+   "ru": "Рабочая встреча начинается в шестнадцать.",
+   "de": "Die Besprechung beginnt um sechzehn Uhr.",
+   "audio": "audio/a3932ea5aa22.m4a"
+  },
+  {
+   "id": "a2-arbeit-11",
+   "type": "order",
+   "ru": "Моя смена начинается в семнадцать.",
+   "de": "Meine Schicht beginnt um siebzehn Uhr.",
+   "audio": "audio/6648509909ce.m4a"
+  },
+  {
+   "id": "a2-arbeit-12",
+   "type": "order",
+   "ru": "Я думаю, что список готов.",
+   "de": "Ich glaube, dass die Liste fertig ist.",
+   "audio": "audio/cd7ab36e35ee.m4a"
+  }
+ ],
+ "case": {
+  "title": "Zwei Listen, zwei Termine",
+  "ru": "Сверка дневника",
+  "intro": "В отчёте клуба рабочую встречу приняли за общее собрание, а намерение — за результат. Разделите сведения по источникам.",
+  "people": {},
+  "steps": [
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Die Schicht beginnt um 17 Uhr. Die Besprechung ist um 16 Uhr.",
+      "ru": "Смена начинается в 17:00. Встреча в 16:00."
+     }
+    ],
+    "question": "Когда нужно быть на рабочей встрече?",
+    "options": [
+     "16:00",
+     "17:00",
+     "В воскресенье"
+    ],
+    "answer": 0,
+    "right": "Начало смены не заменяет особое время встречи.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Ich wollte helfen, aber ich musste arbeiten.",
+      "ru": "Я хотел помочь, но должен был работать."
+     }
+    ],
+    "question": "Что подтверждено?",
+    "options": [
+     "Он помог",
+     "Он хотел помочь, но был занят работой",
+     "Он не хотел помогать"
+    ],
+    "answer": 1,
+    "right": "Желание не означает выполненное действие.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Wagner schreibt, dass Mateo am Sonntag frei hat.",
+      "ru": "Вагнер пишет, что у Матео выходной в воскресенье."
+     }
+    ],
+    "question": "Чей выходной назван?",
+    "options": [
+     "Даны",
+     "Вагнера",
+     "Матео"
+    ],
+    "answer": 2,
+    "right": "В пересказе сохранены источник и человек, о котором сообщают.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   }
+  ],
+  "ending": "Запись исправлена по источникам. В следующей главе команда воспользуется подтверждёнными сведениями для нового решения."
+ },
+ "adventure": {
+  "kind": "sequence",
+  "title": "Сверьте поручения с расписанием",
+  "intro": "Матео продолжает работать в Fördeblick. Перед новой встречей команды он пересказывает сообщение руководителя и объясняет, почему вчера не смог помочь. Нужно отделить чужое сообщение, личное желание и реально выполненную задачу.",
+  "ending": "Рабочая встреча и клубный план разделены; желание и обязанность не выданы за выполненное действие. Дальше понадобится пересказать указание из практики и изменить запись.",
+  "challenges": [
+   {
+    "id": "source",
+    "kind": "select",
+    "title": "Кто сообщил о выходном?",
+    "intro": "Опирайтесь на рабочее сообщение.",
+    "success": "Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы одно из них.",
+    "wrong": "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание и адресата.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Hallo Mateo, am Freitag beginnt deine Schicht wie immer um 17 Uhr. Komm bitte schon um 16 Uhr zur Besprechung. Am Sonntag hast du frei. Die Liste für das Restaurant habe ich schon gelesen. Die Einkaufsliste für den Club ist eine andere Liste.",
+      "name": "Herr Wagner"
+     }
+    ],
+    "options": [
+     {
+      "id": "o0",
+      "label": "Herr Wagner"
+     },
+     {
+      "id": "o1",
+      "label": "Die Gäste"
+     },
+     {
+      "id": "o2",
+      "label": "Der Hafenmeister"
+     }
+    ],
+    "answer": [
+     "o0"
+    ]
+   },
+   {
+    "id": "meeting-time",
+    "kind": "note",
+    "title": "Запишите особое время",
+    "intro": "В записи названы встреча и начало обычной смены. Заполните оба поля, не меняя их местами.",
+    "success": "Встреча в 16:00, смена в 17:00. Это разные события.",
+    "wrong": "Сначала встреча в шестнадцать, затем смена в семнадцать.",
+    "quotes": [
+     {
+      "de": "Guten Tag, Herr Fernández. Hier ist Wagner vom Restaurant Fördeblick. Unsere Besprechung ist am Freitag um sechzehn Uhr im Restaurant. Ihre Schicht beginnt um siebzehn Uhr. Bringen Sie bitte die Liste mit. Am Sonntag haben Sie frei.",
+      "audio": "audio/fd15c72515a6.m4a",
+      "name": "Telefonnotiz aus dem Restaurant"
+     }
+    ],
+    "fields": [
+     {
+      "label": "Besprechung",
+      "answers": [
+       "16:00",
+       "16 Uhr",
+       "sechzehn Uhr"
+      ]
+     },
+     {
+      "label": "Schichtbeginn",
+      "answers": [
+       "17:00",
+       "17 Uhr",
+       "siebzehn Uhr"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "dass",
+    "kind": "order",
+    "title": "Передайте выходной Матео",
+    "intro": "Начните: «Матео говорит, что…».",
+    "success": "Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.",
+    "wrong": "Проверьте положение глагола и конец предложения: используйте все фрагменты.",
+    "tokens": [
+     "Mateo sagt,",
+     "dass",
+     "er am Sonntag frei",
+     "hat."
+    ],
+    "label": "Реплика для команды"
+   },
+   {
+    "id": "modals",
+    "kind": "match",
+    "title": "Не перепутайте желание и обязанность",
+    "intro": "Для отчёта различите смысл трёх форм.",
+    "success": "Три разных смысла сохранены.",
+    "wrong": "*Wollte* — желание, *musste* — необходимость, *konnte* — возможность.",
+    "mode": "reading",
+    "options": [
+     {
+      "id": "want",
+      "label": "Я хотел прийти."
+     },
+     {
+      "id": "must",
+      "label": "Я должен был работать."
+     },
+     {
+      "id": "can",
+      "label": "Я мог прочитать список."
+     }
+    ],
+    "slots": [
+     {
+      "id": "want",
+      "label": "Ich wollte kommen.",
+      "answer": "want"
+     },
+     {
+      "id": "must",
+      "label": "Ich musste arbeiten.",
+      "answer": "must"
+     },
+     {
+      "id": "can",
+      "label": "Ich konnte die Liste lesen.",
+      "answer": "can"
+     }
+    ]
+   },
+   {
+    "id": "separate",
+    "kind": "select",
+    "title": "Не объединяйте два списка",
+    "intro": "Что руководитель уточнил о списках?",
+    "success": "Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы одно из них.",
+    "wrong": "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание и адресата.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Hallo Mateo, am Freitag beginnt deine Schicht wie immer um 17 Uhr. Komm bitte schon um 16 Uhr zur Besprechung. Am Sonntag hast du frei. Die Liste für das Restaurant habe ich schon gelesen. Die Einkaufsliste für den Club ist eine andere Liste.",
+      "name": "Herr Wagner"
+     }
+    ],
+    "options": [
+     {
+      "id": "o0",
+      "label": "Die Listen sind verschieden."
+     },
+     {
+      "id": "o1",
+      "label": "Die Listen sind identisch."
+     },
+     {
+      "id": "o2",
+      "label": "Es gibt keine Liste."
+     }
+    ],
+    "answer": [
+     "o0"
+    ]
+   }
+  ]
+ },
+ "spy": []
+}

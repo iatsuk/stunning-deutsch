@@ -7,6 +7,7 @@ import { Stage } from "../stage/Stage";
 import { WordCard } from "../stage/Words";
 import { Trainer } from "../trainer/Trainer";
 import { CaseFile } from "../case/Case";
+import { Adventure } from "../adventure/Adventure";
 
 export function TopicPage({ level, topicId }: { level: Level; topicId: string }) {
   const [topic, setTopic] = useState<Topic | null | undefined>(undefined);
@@ -43,8 +44,9 @@ export function TopicPage({ level, topicId }: { level: Level; topicId: string })
         nav={[
           ["story", "Разбор"],
           ["summary", "Шпаргалка"],
-          ...(topic?.case ? [["case", "Дело"] as [string, string]] : []),
           ["trainer", "Тренажёр"],
+          ...(topic?.adventure ? [["adventure", "Игра темы"] as [string, string]] : []),
+          ...(topic?.case ? [["case", "Дело"] as [string, string]] : []),
           ["vocabulary", "Словарь"],
         ]}
       />
@@ -121,6 +123,18 @@ export function TopicPage({ level, topicId }: { level: Level; topicId: string })
           <>
             <Story topic={topic} />
             <Summary topic={topic} />
+            <section className="trainer-section" id="trainer">
+              <div className="section-head">
+                <div className="kicker">Тренажёр</div>
+                <h2>Закрепите тему</h2>
+                <p>
+                  Потренируйте отдельные навыки перед сюжетными заданиями. Упражнения проверяются сразу,
+                  решённые сохраняются в этом браузере.
+                </p>
+              </div>
+              <Trainer topic={topic} />
+            </section>
+            {topic.adventure && <Adventure key={topic.id} game={topic.adventure} topicId={topic.id} />}
             {topic.case && (
               <section className="case-section" id="case">
                 <div className="section-head">
@@ -133,17 +147,6 @@ export function TopicPage({ level, topicId }: { level: Level; topicId: string })
                 <CaseFile topic={topic} investigation={topic.case} />
               </section>
             )}
-            <section className="trainer-section" id="trainer">
-              <div className="section-head">
-                <div className="kicker">Тренажёр</div>
-                <h2>Закрепите тему</h2>
-                <p>
-                  Упражнения проверяются сразу, решённые сохраняются в этом браузере. «Шпион» собран из фраз темы,
-                  артикли и карточки — из её слов.
-                </p>
-              </div>
-              <Trainer topic={topic} />
-            </section>
             <Vocabulary topic={topic} />
           </>
         ) : (
@@ -191,7 +194,9 @@ function Story({ topic }: { topic: Topic }) {
     let n = 0;
     return new Map(topic.beats.filter((b) => b.question).map((b) => [b.id, ++n]));
   }, [topic]);
-  const scene = beat.question && !answered.has(beat.id) ? (beat.sceneBefore ?? beat.scene) : beat.scene;
+  const pending = Boolean(beat.question && !answered.has(beat.id));
+  const scene = pending ? beat.sceneBefore : beat.scene;
+  const reveal = () => setAnswered((prev) => new Set(prev).add(beat.id));
   const chapter = topic.chapters[beat.chapterIndex];
 
   return (
@@ -205,7 +210,18 @@ function Story({ topic }: { topic: Topic }) {
           </span>
           <span className="stage-title">{beat.question ? <Text text={beat.question} /> : <Text text={beat.stepTitle} />}</span>
         </div>
-        <Stage topic={topic} scene={scene} />
+        {scene ? <Stage topic={topic} scene={scene} onReveal={pending ? reveal : undefined} /> : (
+          <div className="board" data-view="question">
+            <div className="board-view" key={beat.id}>
+              <div className="stage-question">
+                <span className="kicker">Ваш ход</span>
+                <h3><Text text={beat.question!} /></h3>
+                <p>Сначала предложите свой вариант. После «Показать ответ» здесь появится разбор.</p>
+              </div>
+            </div>
+            <button type="button" className="stage-reveal" onClick={reveal}>Показать ответ</button>
+          </div>
+        )}
         <ol className="stage-steps" aria-label="Главы">
           {topic.chapters.map((c, i) => (
             <li key={c.id} data-state={i < beat.chapterIndex ? "done" : i === beat.chapterIndex ? "now" : undefined}>

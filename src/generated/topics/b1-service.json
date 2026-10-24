@@ -1,0 +1,1862 @@
+{
+ "id": "b1-service",
+ "level": "b1",
+ "order": 13,
+ "title": "Der Raum wird renoviert. Was bleibt vereinbart?",
+ "ru": "Уточняем изменение и сохраняем нужные условия",
+ "lede": "Администрация сообщает о ремонте подтверждённого Raum B. Для встречи предлагают Raum C с той же кухней и ценой. Нужно проверить замену, получить письменное подтверждение и не перепутать 15:00 начало встречи с 14:30 выдачей ключа.",
+ "goals": [
+  "Понять действие в Passiv Präsens",
+  "Согласовать wird/werden с предметом действия",
+  "Уточнить замену без потери условий",
+  "Написать ответ и извлечь время выдачи ключа"
+ ],
+ "grammar": [
+  "Passiv Präsens: werden + Partizip II"
+ ],
+ "exam": [
+  "b1-lesen-2",
+  "b1-lesen-3",
+  "b1-hoeren-3",
+  "b1-schreiben-1"
+ ],
+ "chapters": [
+  {
+   "id": "scene",
+   "title": "Ситуация"
+  },
+  {
+   "id": "words",
+   "title": "Слова"
+  },
+  {
+   "id": "grammar",
+   "title": "Грамматика"
+  },
+  {
+   "id": "practice",
+   "title": "Проверка"
+  },
+  {
+   "id": "exam",
+   "title": "На экзамене"
+  }
+ ],
+ "dialogues": {
+  "scene": {
+   "title": "Der Raum wird renoviert. Was bleibt vereinbart?",
+   "ru": "Уточняем изменение и сохраняем нужные условия",
+   "place": "Kiel · Nachbarschaftshaus · вымышленная учебная ситуация",
+   "people": {
+    "D": {
+     "name": "Dana",
+     "voice": "Anna"
+    },
+    "M": {
+     "name": "Mateo",
+     "voice": "Reed"
+    },
+    "E": {
+     "name": "Elif",
+     "voice": "Flo"
+    },
+    "H": {
+     "name": "Hauke",
+     "voice": "Rocko"
+    },
+    "P": {
+     "name": "Frau Petersen",
+     "voice": "Sandy"
+    }
+   },
+   "lines": [
+    {
+     "who": "P",
+     "de": "Raum B wird zurzeit renoviert. Wir bieten Ihnen Raum C an.",
+     "ru": "ПомещениеB сейчас ремонтируется. Мы предлагаем помещение C.",
+     "audio": "audio/8be128577ad8.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Wird dort auch die kleine Küche genutzt?",
+     "ru": "Там также используют маленькую кухню?",
+     "audio": "audio/bacace0bbbe5.m4a"
+    },
+    {
+     "who": "P",
+     "de": "Ja. Die Küche wird heute gereinigt. Raum C hat ebenfalls achtzehn Plätze.",
+     "ru": "Да. Кухню сегодня убирают. В помещенииC также восемнадцать мест.",
+     "audio": "audio/c3ceefb23886.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Bleiben die Miete und der Termin gleich?",
+     "ru": "Стоимость и срок остаются прежними?",
+     "audio": "audio/c049dfda719a.m4a"
+    },
+    {
+     "who": "P",
+     "de": "Ja. Vierzig Euro mit Küche, am achtzehnten Oktober von fünfzehn bis achtzehn Uhr.",
+     "ru": "Да. Сорок евро с кухней, восемнадцатого октября с пятнадцати до восемнадцати.",
+     "audio": "audio/d8047292f849.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Dann könnten wir Raum C nehmen. Wann bekommen wir den Schlüssel?",
+     "ru": "Тогда мы могли бы взять помещение C. Когда получим ключ?",
+     "audio": "audio/f1f6b3942bb3.m4a"
+    },
+    {
+     "who": "P",
+     "de": "Die Schlüssel werden ab halb drei im Seitenbüro ausgegeben. Der Aufbau ist dann möglich.",
+     "ru": "Ключи выдают с половины третьего в боковом офисе. Тогда можно начинать подготовку.",
+     "audio": "audio/f56ad0583bd0.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Gut. Bitte bestätigen Sie den Wechsel schriftlich.",
+     "ru": "Хорошо. Пожалуйста, подтвердите замену письменно.",
+     "audio": "audio/68610f0d7fa1.m4a"
+    }
+   ]
+  }
+ },
+ "words": {
+  "useful": {
+   "title": "Wörter für die Aufgabe",
+   "ru": "Слова для действия",
+   "items": [
+    {
+     "de": "der Ausweichraum",
+     "ru": "помещение на замену",
+     "gender": "m",
+     "plural": "Ausweichräume",
+     "audio": "audio/c0970d37a68c.m4a"
+    },
+    {
+     "de": "die Renovierung",
+     "ru": "ремонт, обновление",
+     "gender": "f",
+     "plural": "Renovierungen",
+     "audio": "audio/96e447ae400d.m4a"
+    },
+    {
+     "de": "die Reparatur",
+     "ru": "починка",
+     "gender": "f",
+     "plural": "Reparaturen",
+     "audio": "audio/581f38a3505f.m4a"
+    },
+    {
+     "de": "die Reinigung",
+     "ru": "уборка",
+     "gender": "f",
+     "plural": "Reinigungen",
+     "audio": "audio/1cf59e121eb9.m4a"
+    },
+    {
+     "de": "die Schlüsselübergabe",
+     "ru": "передача ключа",
+     "gender": "f",
+     "plural": "Schlüsselübergaben",
+     "audio": "audio/e812436b044d.m4a"
+    },
+    {
+     "de": "der Seiteneingang",
+     "ru": "боковой вход",
+     "gender": "m",
+     "plural": "Seiteneingänge",
+     "audio": "audio/1c0222f1d85e.m4a"
+    },
+    {
+     "de": "das Seitenbüro",
+     "ru": "боковой офис",
+     "gender": "n",
+     "plural": "Seitenbüros",
+     "audio": "audio/d5729dfec521.m4a"
+    },
+    {
+     "de": "die Änderung",
+     "ru": "изменение",
+     "gender": "f",
+     "plural": "Änderungen",
+     "audio": "audio/5ea33f13131d.m4a"
+    },
+    {
+     "de": "der Aufbau",
+     "ru": "подготовка, установка",
+     "gender": "m",
+     "plural": "Aufbauten",
+     "audio": "audio/a1d48fd2a425.m4a"
+    },
+    {
+     "de": "renoviert werden",
+     "ru": "ремонтироваться",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/1a22a19e1ea5.m4a"
+    },
+    {
+     "de": "geprüft werden",
+     "ru": "проходить проверку",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/b5d02d2a8712.m4a"
+    },
+    {
+     "de": "verschickt werden",
+     "ru": "отправляться",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/67f0fa0a27c7.m4a"
+    },
+    {
+     "de": "ebenfalls",
+     "ru": "также",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/62770a4321ea.m4a"
+    },
+    {
+     "de": "unverändert",
+     "ru": "без изменений",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/540f44bceabc.m4a"
+    },
+    {
+     "de": "bereitstehen",
+     "ru": "быть приготовленным",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/a1cdf7156659.m4a"
+    }
+   ]
+  }
+ },
+ "tables": {
+  "rule": {
+   "title": "Passiv Präsens: werden + Partizip II",
+   "ru": "Опора для решения",
+   "head": [
+    "Beispiel",
+    "Смысл и форма"
+   ],
+   "rows": [
+    [
+     "Der Raum wird renoviert.",
+     "werden в личной форме + Partizip II."
+    ],
+    [
+     "Die Küche wird gereinigt. Die Schlüssel werden ausgegeben.",
+     "Единственное число: wird; множественное: werden."
+    ],
+    [
+     "Die Verwaltung verschickt die Bestätigung. → Die Bestätigung wird verschickt.",
+     "Актив и Passiv могут описывать одно действие с разным фокусом."
+    ]
+   ],
+   "ruCols": [
+    1
+   ]
+  }
+ },
+ "tasks": {
+  "update": {
+   "kind": "message",
+   "part": "b1-lesen-2",
+   "title": "Schriftliche Änderung der Buchung · Ausschnitt",
+   "text": "Ihre Buchung wird geändert: Raum C ersetzt Raum B. Bestätigt bleiben Sonntag, 18. Oktober, 15–18 Uhr, 18 Plätze und kleine Küche. Die Raummiete bleibt 40 Euro. Die Schlüssel werden 14:30–14:45 Uhr im Seitenbüro ausgegeben. Ab 14:30 ist Aufbau erlaubt. Zugang über den Seiteneingang. Essen organisieren Sie wie vereinbart selbst. Frau Petersen",
+   "sample": []
+  },
+  "offers": {
+   "kind": "worksheet",
+   "part": "b1-lesen-3",
+   "format": "matching",
+   "uniqueOptions": true,
+   "reusableOptions": [
+    "x"
+   ],
+   "title": "Zehn Anliegen bei verschiedenen Diensten",
+   "text": "a) Fahrradservice. Montag bis Freitag 9–18 Uhr. Fahrräder werden geprüft und repariert, keine Autos.\nb) Druckstudio. Kleine Mengen von Karten und Bildunterschriften werden bis Samstag gedruckt. Datei per E-Mail.\nc) Hilfe nach dem Fest. Sonntag 18–20 Uhr werden Räume gereinigt. Vorher anmelden.\nd) Aufbauhilfe. Sonntag 14 Uhr werden Tische und Stühle aufgestellt. Keine Hilfe nach 18 Uhr.\ne) Schlüsselbüro. Sonntag 14:30–14:45 Uhr im Seitenbüro. Nur Schlüsselübergabe, keine Raumführung.\nf) Ersatzraum C. Sonntag 15–18 Uhr, 18 Plätze und kleine Küche, 40 Euro. Aufbau ab 14:30 möglich.\ng) Großer Saal.25 Plätze, 60 Euro, ohne Küche.\nh) Mehrwegbecher. Abholung Freitag, Rückgabe Montag. Kein Getränkeservice.\ni) Sprachhilfe. Private kurze Texte werden auf Deutsch und Russisch erklärt, keine amtliche Übersetzung.\nj) Computerhilfe. Dienstag 18 Uhr, kleine Gruppe, keine Reparatur von Kameras.\nk) Fotos ausstellen. Eigene Fotos werden in einem monatlichen offenen Treffen besprochen.\nl) Getränke liefern. Sonntag 14–15 Uhr, Lieferung nur nach vorheriger Bestellung.\nx) Kein passendes Angebot. Alle Bedingungen sind erfunden.",
+   "situation": "Jede Anzeige höchstens einmal; x ist mehrfach möglich.",
+   "questions": [
+    {
+     "prompt": "Ein Fahrrad unter der Woche prüfen lassen",
+     "options": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "i",
+      "j",
+      "k",
+      "l",
+      "x"
+     ],
+     "answers": [
+      "a"
+     ]
+    },
+    {
+     "prompt": "Wenige Bildunterschriften bis Samstag drucken",
+     "options": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "i",
+      "j",
+      "k",
+      "l",
+      "x"
+     ],
+     "answers": [
+      "b"
+     ]
+    },
+    {
+     "prompt": "Sonntag nach 18 Uhr den Raum reinigen lassen",
+     "options": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "i",
+      "j",
+      "k",
+      "l",
+      "x"
+     ],
+     "answers": [
+      "c"
+     ]
+    },
+    {
+     "prompt": "Sonntag um 14 Uhr Tische aufstellen lassen",
+     "options": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "i",
+      "j",
+      "k",
+      "l",
+      "x"
+     ],
+     "answers": [
+      "d"
+     ]
+    },
+    {
+     "prompt": "Sonntag um 14:30 den Schlüssel abholen",
+     "options": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "i",
+      "j",
+      "k",
+      "l",
+      "x"
+     ],
+     "answers": [
+      "e"
+     ]
+    },
+    {
+     "prompt": "Einen Ersatzraum mit Küche und 18 Plätzen suchen",
+     "options": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "i",
+      "j",
+      "k",
+      "l",
+      "x"
+     ],
+     "answers": [
+      "f"
+     ]
+    },
+    {
+     "prompt": "Becher fürs Wochenende ausleihen",
+     "options": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "i",
+      "j",
+      "k",
+      "l",
+      "x"
+     ],
+     "answers": [
+      "h"
+     ]
+    },
+    {
+     "prompt": "Einen privaten Text auf Deutsch und Russisch verstehen",
+     "options": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "i",
+      "j",
+      "k",
+      "l",
+      "x"
+     ],
+     "answers": [
+      "i"
+     ]
+    },
+    {
+     "prompt": "Sonntag um 14 Uhr Getränke liefern lassen",
+     "options": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "i",
+      "j",
+      "k",
+      "l",
+      "x"
+     ],
+     "answers": [
+      "l"
+     ]
+    },
+    {
+     "prompt": "Eine Kamera am Montag reparieren lassen",
+     "options": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "i",
+      "j",
+      "k",
+      "l",
+      "x"
+     ],
+     "answers": [
+      "x"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "notices": {
+   "kind": "worksheet",
+   "part": "b1-hoeren-3",
+   "format": "article",
+   "title": "Fünf Hinweise aus dem Nachbarschaftshaus",
+   "recordings": [
+    {
+     "text": "Raum B wird zurzeit renoviert. Die Veranstaltung findet deshalb in Raum C statt. Die Uhrzeit bleibt gleich. Folgen Sie bitte den Schildern zum Seiteneingang.",
+     "audio": "audio/f7ce8d5be067.m4a"
+    },
+    {
+     "text": "Die Schlüssel werden heute von halb drei bis Viertel vor drei im Seitenbüro ausgegeben. Bitte holen Sie den Schlüssel vor dem Aufbau ab. Die Veranstaltung beginnt wie geplant um drei.",
+     "audio": "audio/054585c5e8d8.m4a"
+    },
+    {
+     "text": "Die kleine Küche in Raum C wird vor Ihrer Ankunft gereinigt. Sie dürfen sie wie vereinbart benutzen. Bitte bringen Sie Ihre Lebensmittel selbst mit; sie sind nicht Teil der Raummiete.",
+     "audio": "audio/750c7cd9ab8e.m4a"
+    },
+    {
+     "text": "Die Stühle werden in Raum C bereitgestellt. Achtzehn Plätze sind vorhanden. Die Miete bleibt bei vierzig Euro einschließlich der kleinen Küche.",
+     "audio": "audio/b2828e10c262.m4a"
+    },
+    {
+     "text": "Der Haupteingang ist während der Arbeiten geschlossen. Das Haus bleibt geöffnet. Bitte benutzen Sie den Seiteneingang neben dem Büro. Dort finden Sie auch den Hinweis zu Raum C.",
+     "audio": "audio/9e672fdcf1f6.m4a"
+    }
+   ],
+   "questions": [
+    {
+     "prompt": "Wegen des Raumwechsels beginnt die Veranstaltung später.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Die Schlüsselausgabe beginnt um 14:30 Uhr.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "richtig"
+     ]
+    },
+    {
+     "prompt": "Lebensmittel sind in der Miete enthalten.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Für die Küche wird zusätzlich Geld verlangt.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Man kann das Haus über den Seiteneingang betreten.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "richtig"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "write": {
+   "kind": "message",
+   "part": "b1-schreiben-1",
+   "title": "Auf die Raumänderung antworten",
+   "text": "Schreiben Sie Frau Petersen nach der schriftlichen Änderung der Buchung.",
+   "points": [
+    "Auf die Änderung reagieren und den Ersatzraum nennen",
+    "Die unveränderten Bedingungen zusammenfassen",
+    "Zeit und Ort der Schlüsselübergabe bestätigen",
+    "Eine konkrete Frage zur Rückgabe stellen"
+   ],
+   "sample": [
+    {
+     "de": "Sehr geehrte Frau Petersen, vielen Dank für Ihre Nachricht. Wir haben verstanden, dass Raum B renoviert wird und unsere Veranstaltung in Raum C stattfindet. Bitte beachten Sie, dass wir weiterhin 18 Plätze und die kleine Küche brauchen. Laut Ihrer Bestätigung bleibt die Miete bei 40 Euro. Auch der Termin am 18. Oktober von 15 bis 18 Uhr bleibt gleich. Wir holen den Schlüssel um 14:30 im Seitenbüro ab und benutzen den Seiteneingang. Können Sie uns bitte noch sagen, wo und bis wann wir den Schlüssel nach der Veranstaltung zurückgeben sollen? Vielen Dank und mit freundlichen Grüßen Hauke",
+     "audio": "audio/f5ae061a798c.m4a"
+    }
+   ]
+  }
+ },
+ "beats": [
+  {
+   "id": "start-1",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 0,
+   "read": "Администрация сообщает о ремонте подтверждённого Raum B. Для встречи предлагают Raum C с той же кухней и ценой. Нужно проверить замену, получить письменное подтверждение и не перепутать 15:00 начало встречи с 14:30 выдачей ключа. Все нужные условия даны в сцене: знания географии, настоящих цен или расписаний не требуются. Сначала попробуйте понять, какого результата добиваются друзья, затем слушайте реплики. На новом уровне важно не только найти число или знакомое слово, но и связать несколько сведений.",
+   "point": "Уточняем изменение и сохраняем нужные условия",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 4,
+    "fresh": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "start-2",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 1,
+   "read": "В объявлениях часто важнее действие над предметом, чем имя исполнителя. Der Raum wird renoviert сообщает, что с помещением происходит ремонт. Кто выполняет работу, здесь не назван. Это не повод угадывать исполнителя или обвинять участника команды. После сообщения о ремонте нужно отдельно проверить, какие условия замены подтверждены и что осталось прежним.",
+   "point": "Passiv Präsens: werden + Partizip II",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 8,
+    "fresh": [
+     4,
+     5,
+     6,
+     7
+    ]
+   }
+  },
+  {
+   "id": "words-1",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 0,
+   "read": "Сервисное сообщение может менять одно условие и сохранять остальные. В нашем случае меняется помещение, но не срок и не цена. Выдача ключа относится к подготовке до начала встречи. Эти слова понадобятся для понятного вопроса администрации и выбора помощи из объявлений. Знание устройства настоящего здания не требуется: все нужные данные приведены в уроке.",
+   "point": "Сначала используйте слово для решения; словарь остаётся справочником.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 6,
+    "words": "useful"
+   }
+  },
+  {
+   "id": "words-2",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 1,
+   "read": "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к ситуации: какие слова обозначают человека, место, условие или уже выполненное действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово встретится снова в записке или разговоре, попробуйте восстановить его смысл до подсказки.",
+   "point": "Возвращайтесь к выражениям в сообщениях и новых действиях.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 15,
+    "words": "useful",
+    "fresh": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   }
+  },
+  {
+   "id": "grammar-1",
+   "step": "grammar",
+   "stepTitle": "Passiv Präsens: werden + Partizip II",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "Passiv меняет фокус: говорим о предмете и действии над ним. В активной фразе *Die Firma renoviert den Raum* подлежащее — исполнитель. В Passiv подлежащим становится Raum, а действие выражается wird renoviert. Личная форма werden стоит на обычном месте, причастие — в конце. Называть исполнителя не обязательно, если сообщение его не содержит.",
+   "point": "werden в личной форме + Partizip II.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "grammar-2",
+   "step": "grammar",
+   "stepTitle": "Passiv Präsens: werden + Partizip II",
+   "chapterIndex": 2,
+   "indexInStep": 1,
+   "read": "Согласуйте личную форму с новым подлежащим. Küche одна, поэтому wird; Schlüssel во множественном числе, поэтому werden. Причастие при этом не получает окончания множественного числа. Сначала найдите, что проверяют, ремонтируют или выдают. В этой теме отрабатываем Präsens, а не все времена Passiv сразу: прошлые изменения появятся в следующем уроке.",
+   "point": "Единственное число: wird; множественное: werden.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "grammar-3",
+   "step": "grammar",
+   "stepTitle": "Passiv Präsens: werden + Partizip II",
+   "chapterIndex": 2,
+   "indexInStep": 2,
+   "read": "При преобразовании сохраняйте действие и предмет, не добавляя неизвестного исполнителя. Активная фраза называет администрацию, пассивная может оставить её за кадром. Но из одной пассивной фразы нельзя восстановить имя конкретного человека без источника. Для ответа на практический вопрос важнее понять, отправляют ли подтверждение и какие условия оно содержит.",
+   "point": "Актив и Passiv могут описывать одно действие с разным фокусом.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "frames-1",
+   "step": "frames",
+   "stepTitle": "Как устроена реплика",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "В этой рамке главный участник предложения — помещение C. Wird показывает единственное число и Präsens, vorbereitet остаётся причастием в конце. Слово heute относится ко времени действия, но не превращает конструкцию в Futur. Позже мы отдельно сравним эти модели. Сейчас восстановите простую мысль: что именно готовят и когда.",
+   "point": "*Raum C wird heute vorbereitet.*",
+   "scene": {
+    "view": "sentence",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "raum",
+         "text": "Raum"
+        },
+        {
+         "key": "c",
+         "text": "C"
+        }
+       ],
+       [
+        {
+         "key": "wird",
+         "text": "wird"
+        }
+       ],
+       [
+        {
+         "key": "heute",
+         "text": "heute"
+        }
+       ],
+       [
+        {
+         "key": "vorbereitet",
+         "text": "vorbereitet"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Raum C wird heute vorbereitet.",
+      "ru": "ПомещениеC сегодня подготавливают.",
+      "audio": "audio/80e4c9ea00eb.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-1",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 0,
+   "read": "Нет. Мы знаем предмет и действие, но имя работника не названо. Нельзя записывать в дневник, что ремонт делает Матео, только потому, что он участвует в проекте. При необходимости спросите администрацию отдельно. В этой задаче для решения достаточно понять недоступность B и проверить предложенную замену C.",
+   "point": "Passiv без исполнителя не разрешает угадывать имя.",
+   "question": "В «Der Raum wird renoviert» назван конкретный исполнитель?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "raum",
+         "text": "Raum"
+        },
+        {
+         "key": "c",
+         "text": "C"
+        }
+       ],
+       [
+        {
+         "key": "wird",
+         "text": "wird"
+        }
+       ],
+       [
+        {
+         "key": "heute",
+         "text": "heute"
+        }
+       ],
+       [
+        {
+         "key": "vorbereitet",
+         "text": "vorbereitet"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Raum C wird heute vorbereitet.",
+      "ru": "ПомещениеC сегодня подготавливают.",
+      "audio": "audio/80e4c9ea00eb.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-2",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 1,
+   "read": "Schlüssel здесь обозначает несколько ключей. Новое подлежащее управляет формой werden так же, как любое подлежащее управляет личным глаголом. Сравните один Schlüssel wird и несколько Schlüssel werden. Причастие ausgegeben при этом одинаковое. Эта проверка помогает понять объявление даже при незнакомом названии услуги.",
+   "point": "*ein Schlüssel wird / die Schlüssel werden*.",
+   "question": "Почему «Die Schlüssel werden ausgegeben», а не wird?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "raum",
+         "text": "Raum"
+        },
+        {
+         "key": "c",
+         "text": "C"
+        }
+       ],
+       [
+        {
+         "key": "wird",
+         "text": "wird"
+        }
+       ],
+       [
+        {
+         "key": "heute",
+         "text": "heute"
+        }
+       ],
+       [
+        {
+         "key": "vorbereitet",
+         "text": "vorbereitet"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Raum C wird heute vorbereitet.",
+      "ru": "ПомещениеC сегодня подготавливают.",
+      "audio": "audio/80e4c9ea00eb.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "exam-update-1",
+   "step": "exam-update",
+   "stepTitle": "Schriftliche Änderung der Buchung · Ausschnitt",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сопоставьте изменённое помещение и сохранённые условия. Ключ выдаётся до начала встречи: это отдельное событие для подготовки. Не расширяйте изменение до отмены всего дня. Письменный текст подтверждает C, срок, кухню и цену; по нему можно уточнить итог в игре. Возврат ключа ещё нужно спросить отдельно.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "raum",
+         "text": "Raum"
+        },
+        {
+         "key": "c",
+         "text": "C"
+        }
+       ],
+       [
+        {
+         "key": "wird",
+         "text": "wird"
+        }
+       ],
+       [
+        {
+         "key": "heute",
+         "text": "heute"
+        }
+       ],
+       [
+        {
+         "key": "vorbereitet",
+         "text": "vorbereitet"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Raum C wird heute vorbereitet.",
+      "ru": "ПомещениеC сегодня подготавливают.",
+      "audio": "audio/80e4c9ea00eb.m4a"
+     }
+    ],
+    "task": "update"
+   }
+  },
+  {
+   "id": "exam-update-2",
+   "step": "exam-update",
+   "stepTitle": "Schriftliche Änderung der Buchung · Ausschnitt",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "raum",
+         "text": "Raum"
+        },
+        {
+         "key": "c",
+         "text": "C"
+        }
+       ],
+       [
+        {
+         "key": "wird",
+         "text": "wird"
+        }
+       ],
+       [
+        {
+         "key": "heute",
+         "text": "heute"
+        }
+       ],
+       [
+        {
+         "key": "vorbereitet",
+         "text": "vorbereitet"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Raum C wird heute vorbereitet.",
+      "ru": "ПомещениеC сегодня подготавливают.",
+      "audio": "audio/80e4c9ea00eb.m4a"
+     }
+    ],
+    "task": "update"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "raum",
+         "text": "Raum"
+        },
+        {
+         "key": "c",
+         "text": "C"
+        }
+       ],
+       [
+        {
+         "key": "wird",
+         "text": "wird"
+        }
+       ],
+       [
+        {
+         "key": "heute",
+         "text": "heute"
+        }
+       ],
+       [
+        {
+         "key": "vorbereitet",
+         "text": "vorbereitet"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Raum C wird heute vorbereitet.",
+      "ru": "ПомещениеC сегодня подготавливают.",
+      "audio": "audio/80e4c9ea00eb.m4a"
+     }
+    ],
+    "task": "update",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-offers-1",
+   "step": "exam-offers",
+   "stepTitle": "Zehn Anliegen bei verschiedenen Diensten",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Десять запросов относятся к разным услугам. Сравните день и вид работы: компьютерная помощь не равна ремонту камеры. Одно объявление используйте один раз; при отсутствии подходящего выбирайте x. Пассивные формулировки помогут узнать услугу, но не сообщают больше, чем прямо написано в объявлении.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "raum",
+         "text": "Raum"
+        },
+        {
+         "key": "c",
+         "text": "C"
+        }
+       ],
+       [
+        {
+         "key": "wird",
+         "text": "wird"
+        }
+       ],
+       [
+        {
+         "key": "heute",
+         "text": "heute"
+        }
+       ],
+       [
+        {
+         "key": "vorbereitet",
+         "text": "vorbereitet"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Raum C wird heute vorbereitet.",
+      "ru": "ПомещениеC сегодня подготавливают.",
+      "audio": "audio/80e4c9ea00eb.m4a"
+     }
+    ],
+    "task": "offers"
+   }
+  },
+  {
+   "id": "exam-offers-2",
+   "step": "exam-offers",
+   "stepTitle": "Zehn Anliegen bei verschiedenen Diensten",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "raum",
+         "text": "Raum"
+        },
+        {
+         "key": "c",
+         "text": "C"
+        }
+       ],
+       [
+        {
+         "key": "wird",
+         "text": "wird"
+        }
+       ],
+       [
+        {
+         "key": "heute",
+         "text": "heute"
+        }
+       ],
+       [
+        {
+         "key": "vorbereitet",
+         "text": "vorbereitet"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Raum C wird heute vorbereitet.",
+      "ru": "ПомещениеC сегодня подготавливают.",
+      "audio": "audio/80e4c9ea00eb.m4a"
+     }
+    ],
+    "task": "offers"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "raum",
+         "text": "Raum"
+        },
+        {
+         "key": "c",
+         "text": "C"
+        }
+       ],
+       [
+        {
+         "key": "wird",
+         "text": "wird"
+        }
+       ],
+       [
+        {
+         "key": "heute",
+         "text": "heute"
+        }
+       ],
+       [
+        {
+         "key": "vorbereitet",
+         "text": "vorbereitet"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Raum C wird heute vorbereitet.",
+      "ru": "ПомещениеC сегодня подготавливают.",
+      "audio": "audio/80e4c9ea00eb.m4a"
+     }
+    ],
+    "task": "offers",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-notices-1",
+   "step": "exam-notices",
+   "stepTitle": "Fünf Hinweise aus dem Nachbarschaftshaus",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Пять коротких объявлений уточняют замену. Слушайте каждое дважды в самостоятельной попытке. Отделите выдачу ключа от начала встречи, открытый боковой вход от закрытого главного и включённую кухню от самостоятельных продуктов. После своей попытки откройте учебный текст и укажите конкретное слово, которое изменило ответ.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "raum",
+         "text": "Raum"
+        },
+        {
+         "key": "c",
+         "text": "C"
+        }
+       ],
+       [
+        {
+         "key": "wird",
+         "text": "wird"
+        }
+       ],
+       [
+        {
+         "key": "heute",
+         "text": "heute"
+        }
+       ],
+       [
+        {
+         "key": "vorbereitet",
+         "text": "vorbereitet"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Raum C wird heute vorbereitet.",
+      "ru": "ПомещениеC сегодня подготавливают.",
+      "audio": "audio/80e4c9ea00eb.m4a"
+     }
+    ],
+    "task": "notices"
+   }
+  },
+  {
+   "id": "exam-notices-2",
+   "step": "exam-notices",
+   "stepTitle": "Fünf Hinweise aus dem Nachbarschaftshaus",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "raum",
+         "text": "Raum"
+        },
+        {
+         "key": "c",
+         "text": "C"
+        }
+       ],
+       [
+        {
+         "key": "wird",
+         "text": "wird"
+        }
+       ],
+       [
+        {
+         "key": "heute",
+         "text": "heute"
+        }
+       ],
+       [
+        {
+         "key": "vorbereitet",
+         "text": "vorbereitet"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Raum C wird heute vorbereitet.",
+      "ru": "ПомещениеC сегодня подготавливают.",
+      "audio": "audio/80e4c9ea00eb.m4a"
+     }
+    ],
+    "task": "notices"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "raum",
+         "text": "Raum"
+        },
+        {
+         "key": "c",
+         "text": "C"
+        }
+       ],
+       [
+        {
+         "key": "wird",
+         "text": "wird"
+        }
+       ],
+       [
+        {
+         "key": "heute",
+         "text": "heute"
+        }
+       ],
+       [
+        {
+         "key": "vorbereitet",
+         "text": "vorbereitet"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Raum C wird heute vorbereitet.",
+      "ru": "ПомещениеC сегодня подготавливают.",
+      "audio": "audio/80e4c9ea00eb.m4a"
+     }
+    ],
+    "task": "notices",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-write-1",
+   "step": "exam-write",
+   "stepTitle": "Auf die Raumänderung antworten",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Администрация уже прислала изменение, поэтому ваш ответ должен отразить новый Raum C. Подтвердите сохранённые условия и время получения ключа, затем задайте ещё открытый вопрос. Все четыре пункта обязательны. Не требуйте автоматической оценки письма: после черновика проверьте понятный смысл, связность и обращение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "raum",
+         "text": "Raum"
+        },
+        {
+         "key": "c",
+         "text": "C"
+        }
+       ],
+       [
+        {
+         "key": "wird",
+         "text": "wird"
+        }
+       ],
+       [
+        {
+         "key": "heute",
+         "text": "heute"
+        }
+       ],
+       [
+        {
+         "key": "vorbereitet",
+         "text": "vorbereitet"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Raum C wird heute vorbereitet.",
+      "ru": "ПомещениеC сегодня подготавливают.",
+      "audio": "audio/80e4c9ea00eb.m4a"
+     }
+    ],
+    "task": "write",
+    "reveal": 0
+   }
+  },
+  {
+   "id": "exam-write-2",
+   "step": "exam-write",
+   "stepTitle": "Auf die Raumänderung antworten",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "raum",
+         "text": "Raum"
+        },
+        {
+         "key": "c",
+         "text": "C"
+        }
+       ],
+       [
+        {
+         "key": "wird",
+         "text": "wird"
+        }
+       ],
+       [
+        {
+         "key": "heute",
+         "text": "heute"
+        }
+       ],
+       [
+        {
+         "key": "vorbereitet",
+         "text": "vorbereitet"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Raum C wird heute vorbereitet.",
+      "ru": "ПомещениеC сегодня подготавливают.",
+      "audio": "audio/80e4c9ea00eb.m4a"
+     }
+    ],
+    "task": "write",
+    "reveal": 0
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "raum",
+         "text": "Raum"
+        },
+        {
+         "key": "c",
+         "text": "C"
+        }
+       ],
+       [
+        {
+         "key": "wird",
+         "text": "wird"
+        }
+       ],
+       [
+        {
+         "key": "heute",
+         "text": "heute"
+        }
+       ],
+       [
+        {
+         "key": "vorbereitet",
+         "text": "vorbereitet"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Raum C wird heute vorbereitet.",
+      "ru": "ПомещениеC сегодня подготавливают.",
+      "audio": "audio/80e4c9ea00eb.m4a"
+     }
+    ],
+    "task": "write",
+    "reveal": 0,
+    "solved": true
+   }
+  }
+ ],
+ "exercises": [
+  {
+   "id": "b1-service-1",
+   "type": "choice",
+   "q": "Der Raum ___ renoviert.",
+   "options": [
+    "werden",
+    "werde",
+    "wird"
+   ],
+   "answer": 2,
+   "why": "Raum в единственном числе.",
+   "audio": "audio/4ec22dd89aa9.m4a"
+  },
+  {
+   "id": "b1-service-2",
+   "type": "choice",
+   "q": "Die Schlüssel ___ ausgegeben.",
+   "options": [
+    "wird",
+    "wirst",
+    "werden"
+   ],
+   "answer": 2,
+   "why": "Множественное число.",
+   "audio": "audio/7641ec4bf06e.m4a"
+  },
+  {
+   "id": "b1-service-3",
+   "type": "choice",
+   "q": "Die Küche wird ___.",
+   "options": [
+    "gereinigt",
+    "reinigen",
+    "reinigt"
+   ],
+   "answer": 0,
+   "why": "Нужно Partizip II.",
+   "audio": "audio/ab1ec0d5e7e5.m4a"
+  },
+  {
+   "id": "b1-service-4",
+   "type": "choice",
+   "q": "Die Verwaltung verschickt den Brief. Passiv:",
+   "options": [
+    "Der Brief verschickt.",
+    "Die Verwaltung wird Brief.",
+    "Der Brief wird verschickt."
+   ],
+   "answer": 2,
+   "why": "Фокус на письме."
+  },
+  {
+   "id": "b1-service-5",
+   "type": "choice",
+   "q": "В Passiv обязательно назван исполнитель?",
+   "options": [
+    "Да",
+    "Только во вторник",
+    "Нет"
+   ],
+   "answer": 2,
+   "why": "Исполнитель может быть не указан."
+  },
+  {
+   "id": "b1-service-6",
+   "type": "choice",
+   "q": "Ключ 14:30, встреча 15:00. Это…",
+   "options": [
+    "Разные события",
+    "Противоречие",
+    "Перенос дня"
+   ],
+   "answer": 0,
+   "why": "Ключ нужен для подготовки."
+  },
+  {
+   "id": "b1-service-7",
+   "type": "order",
+   "de": "Raum B wird zurzeit renoviert.",
+   "ru": "ПомещениеB сейчас ремонтируют.",
+   "audio": "audio/8f0e9f1e9a64.m4a"
+  },
+  {
+   "id": "b1-service-8",
+   "type": "order",
+   "de": "Die Küche wird heute gereinigt.",
+   "ru": "Кухню сегодня убирают.",
+   "audio": "audio/52e7c1d15b53.m4a"
+  },
+  {
+   "id": "b1-service-9",
+   "type": "order",
+   "de": "Die Schlüssel werden im Seitenbüro ausgegeben.",
+   "ru": "Ключи выдают в боковом офисе.",
+   "audio": "audio/0cea5e51c31e.m4a"
+  },
+  {
+   "id": "b1-service-10",
+   "type": "order",
+   "de": "Raum C wird heute vorbereitet.",
+   "ru": "ПомещениеC сегодня подготавливают.",
+   "audio": "audio/80e4c9ea00eb.m4a"
+  },
+  {
+   "id": "b1-service-11",
+   "type": "order",
+   "de": "Die Miete bleibt unverändert.",
+   "ru": "Аренда остаётся без изменений.",
+   "audio": "audio/9635f36a60cd.m4a"
+  },
+  {
+   "id": "b1-service-12",
+   "type": "order",
+   "de": "Wir benutzen den Seiteneingang.",
+   "ru": "Мы используем боковой вход.",
+   "audio": "audio/12954b70ce2d.m4a"
+  }
+ ],
+ "case": {
+  "title": "Die Änderung hat klare Grenzen",
+  "ru": "Сверка дневника",
+  "intro": "Не превращайте ремонт одного помещения в отмену или подорожание всего проекта.",
+  "people": {},
+  "steps": [
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Raum B wird renoviert. Raum C ersetzt ihn.",
+      "ru": "ПомещениеB ремонтируется. Его заменяетC."
+     }
+    ],
+    "question": "Кто именно делает ремонт?",
+    "options": [
+     "Матео",
+     "Дана",
+     "В этой фразе не назван"
+    ],
+    "answer": 2,
+    "right": "Passiv не содержит имени исполнителя.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Die Miete bleibt 40 Euro einschließlich Küche.",
+      "ru": "Аренда остаётся 40 евро с кухней."
+     }
+    ],
+    "question": "Кухня стала дополнительной платной услугой?",
+    "options": [
+     "Еду тоже оплатили",
+     "Нет",
+     "Да"
+    ],
+    "answer": 1,
+    "right": "Кухня включена, цена не изменилась.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Schlüssel 14:30–14:45. Beginn 15:00. Seiteneingang.",
+      "ru": "Ключ 14:30–14:45. Начало 15:00. Боковой вход."
+     }
+    ],
+    "question": "Какой порядок подходит?",
+    "options": [
+     "Получить ключ, подготовить зал, встретить гостей",
+     "Прийти к выдаче ключа в 15:00",
+     "Отменить встречу"
+    ],
+    "answer": 0,
+    "right": "Выдача до начала, не в момент прихода гостей.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   }
+  ],
+  "ending": "Уточнены действие, границы изменения и последовательность подготовки. Источник не использован для выдуманного обвинения или лишнего платежа."
+ },
+ "adventure": {
+  "kind": "sequence",
+  "title": "Сохраните договорённость после изменения",
+  "intro": "Администрация сообщает о ремонте подтверждённого Raum B. Для встречи предлагают Raum C с той же кухней и ценой. Нужно проверить замену, получить письменное подтверждение и не перепутать 15:00 начало встречи с 14:30 выдачей ключа.",
+  "ending": "Вместо B подтверждён Raum C с кухней на прежний срок и за 40 евро. Ключ получают 14:30–14:45 через боковой офис; встреча начинается 15:00. Продукты и возврат ключа остаются отдельными задачами.",
+  "challenges": [
+   {
+    "id": "change",
+    "kind": "select",
+    "title": "Что действительно изменилось?",
+    "intro": "Прочитайте письменное изменение.",
+    "success": "Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы одно из них.",
+    "wrong": "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание и адресата.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Ihre Buchung wird geändert: Raum C ersetzt Raum B. Bestätigt bleiben Sonntag, 18. Oktober, 15–18 Uhr, 18 Plätze und kleine Küche. Die Raummiete bleibt 40 Euro. Die Schlüssel werden 14:30–14:45 Uhr im Seitenbüro ausgegeben. Ab 14:30 ist Aufbau erlaubt. Zugang über den Seiteneingang. Essen organisieren Sie wie vereinbart selbst. Frau Petersen",
+      "name": "Schriftliche Änderung der Buchung · Ausschnitt"
+     }
+    ],
+    "options": [
+     {
+      "id": "o0",
+      "label": "Помещение B заменено на C"
+     },
+     {
+      "id": "o1",
+      "label": "Встреча перенесена на 19 октября"
+     },
+     {
+      "id": "o2",
+      "label": "Аренда стала 60 евро"
+     }
+    ],
+    "answer": [
+     "o0"
+    ]
+   },
+   {
+    "id": "agreement",
+    "kind": "match",
+    "title": "О чём идёт действие?",
+    "intro": "Подберите форму по числу подлежащего.",
+    "success": "Форма согласована с предметом действия.",
+    "wrong": "Raum и Küche — единственное; Schlüssel здесь множественное.",
+    "options": [
+     {
+      "id": "wird",
+      "label": "wird"
+     },
+     {
+      "id": "werden",
+      "label": "werden"
+     }
+    ],
+    "slots": [
+     {
+      "id": "r",
+      "label": "Der Raum … renoviert.",
+      "answer": "wird"
+     },
+     {
+      "id": "k",
+      "label": "Die Küche … gereinigt.",
+      "answer": "wird"
+     },
+     {
+      "id": "s",
+      "label": "Die Schlüssel … ausgegeben.",
+      "answer": "werden"
+     }
+    ]
+   },
+   {
+    "id": "passive",
+    "kind": "order",
+    "title": "Сохраните фокус на помещении",
+    "intro": "Соберите Passiv Präsens.",
+    "success": "Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.",
+    "wrong": "Проверьте положение глагола и конец предложения: используйте все фрагменты.",
+    "tokens": [
+     "Raum C",
+     "wird",
+     "heute",
+     "vorbereitet."
+    ],
+    "label": "Реплика для команды"
+   },
+   {
+    "id": "key",
+    "kind": "clock",
+    "title": "Когда начинается выдача ключа?",
+    "intro": "Используйте письменное изменение, а не время начала встречи.",
+    "success": "Ключ получают с 14:30, до начала встречи.",
+    "wrong": "Встреча в 15:00; выдача ключа с 14:30.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Ihre Buchung wird geändert: Raum C ersetzt Raum B. Bestätigt bleiben Sonntag, 18. Oktober, 15–18 Uhr, 18 Plätze und kleine Küche. Die Raummiete bleibt 40 Euro. Die Schlüssel werden 14:30–14:45 Uhr im Seitenbüro ausgegeben. Ab 14:30 ist Aufbau erlaubt. Zugang über den Seiteneingang. Essen organisieren Sie wie vereinbart selbst. Frau Petersen",
+      "name": "Schriftliche Änderung der Buchung · Ausschnitt"
+     }
+    ],
+    "answer": "14:30",
+    "initial": "14:00",
+    "minuteStep": 5
+   },
+   {
+    "id": "record",
+    "kind": "note",
+    "title": "Обновите помещение и цену",
+    "intro": "Запишите новое помещение и прежнюю арендную плату.",
+    "success": "Заменён только нужный пункт; цена сохранена.",
+    "wrong": "Подтверждены C и 40 евро.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Ihre Buchung wird geändert: Raum C ersetzt Raum B. Bestätigt bleiben Sonntag, 18. Oktober, 15–18 Uhr, 18 Plätze und kleine Küche. Die Raummiete bleibt 40 Euro. Die Schlüssel werden 14:30–14:45 Uhr im Seitenbüro ausgegeben. Ab 14:30 ist Aufbau erlaubt. Zugang über den Seiteneingang. Essen organisieren Sie wie vereinbart selbst. Frau Petersen",
+      "name": "Schriftliche Änderung der Buchung · Ausschnitt"
+     }
+    ],
+    "fields": [
+     {
+      "label": "Raum",
+      "answers": [
+       "C",
+       "Raum C"
+      ]
+     },
+     {
+      "label": "Miete in Euro",
+      "answers": [
+       "40",
+       "vierzig",
+       "40 Euro"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "spy": []
+}

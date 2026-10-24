@@ -2,9 +2,9 @@
  "id": "gesundheit",
  "level": "a1",
  "order": 10,
- "title": "Gute Besserung, Marco!",
+ "title": "Gute Besserung, Mateo!",
  "ru": "Здоровье и врач",
- "lede": "Марко просыпается с температурой и звонит во врачебную практику, а в перерыве между занятиями Анна звонит ему и даёт советы. Учимся говорить, что болит, записываться к врачу, разбираем *müssen* и *dürfen* и повелительное наклонение для «ты» и для компании друзей.",
+ "lede": "До Kieler Woche ещё есть время, но Матео заболел и отменяет участие в подготовке. Помогите ему точно передать симптомы, разобраться с переносом записи и сообщить преподавательнице об отсутствии. Медицинские сцены вымышлены: здесь учимся понимать немецкий, а не выбирать лечение.",
  "goals": [
   "Назвать части тела и сказать, что у вас болит",
   "Записаться к врачу по телефону и понять, когда приходить",
@@ -49,14 +49,14 @@
   "praxis": {
    "title": "Ein Termin beim Arzt",
    "ru": "Запись к врачу",
-   "place": "Arztpraxis Dr. Hoffmann, Leipzig",
+   "place": "Вымышленная Praxis Dr. Hoffmann, Kiel",
    "people": {
     "P": {
      "name": "Frau Klein",
      "voice": "Shelley"
     },
     "M": {
-     "name": "Marco",
+     "name": "Mateo",
      "voice": "Reed"
     }
    },
@@ -65,55 +65,55 @@
      "who": "P",
      "de": "Praxis Dr. Hoffmann, guten Morgen!",
      "ru": "Практика доктора Хофман, доброе утро!",
-     "audio": "audio/e4d1b6509c66.m4a"
+     "audio": "audio/686a710a93d3.m4a"
     },
     {
      "who": "M",
-     "de": "Guten Morgen, hier ist Marco Rossi. Ich brauche einen Termin, bitte.",
-     "ru": "Доброе утро, это Марко Росси. Мне нужно записаться на приём.",
-     "audio": "audio/3bb469c0afda.m4a"
+     "de": "Guten Morgen, hier ist Mateo Fernández. Ich brauche einen Termin, bitte.",
+     "ru": "Доброе утро, это Матео Фернандес. Мне нужно записаться на приём.",
+     "audio": "audio/03a8225a386e.m4a"
     },
     {
      "who": "P",
-     "de": "Was haben Sie denn, Herr Rossi?",
-     "ru": "А что у вас, господин Росси?",
-     "audio": "audio/453470314f48.m4a"
+     "de": "Was haben Sie denn, Herr Fernández?",
+     "ru": "А что у вас, господин Фернандес?",
+     "audio": "audio/7752376e0fb5.m4a"
     },
     {
      "who": "M",
      "de": "Ich habe Halsschmerzen und Kopfschmerzen. Und ich habe Fieber.",
      "ru": "У меня болит горло и голова. И у меня температура.",
-     "audio": "audio/a767aae63721.m4a"
+     "audio": "audio/ffc951b18c3f.m4a"
     },
     {
      "who": "P",
      "de": "Können Sie heute um Viertel nach elf kommen?",
      "ru": "Можете прийти сегодня в четверть двенадцатого?",
-     "audio": "audio/70b36bc12694.m4a"
+     "audio": "audio/8b22be109482.m4a"
     },
     {
      "who": "M",
      "de": "Ja, das geht. Muss ich etwas mitbringen?",
      "ru": "Да, могу. Мне нужно что-то взять с собой?",
-     "audio": "audio/5743245736c6.m4a"
+     "audio": "audio/b109d9704589.m4a"
     },
     {
      "who": "P",
      "de": "Ja, bringen Sie bitte Ihre Versichertenkarte mit.",
      "ru": "Да, возьмите, пожалуйста, вашу карту медицинской страховки.",
-     "audio": "audio/4b76f55ca4c4.m4a"
+     "audio": "audio/df288210d552.m4a"
     },
     {
      "who": "M",
      "de": "Gut. Vielen Dank!",
      "ru": "Хорошо. Большое спасибо!",
-     "audio": "audio/484607b0cf07.m4a"
+     "audio": "audio/272bcfa2d996.m4a"
     },
     {
      "who": "P",
-     "de": "Gute Besserung, Herr Rossi. Bis später!",
-     "ru": "Выздоравливайте, господин Росси. До встречи!",
-     "audio": "audio/0fb66b282f23.m4a"
+     "de": "Gute Besserung, Herr Fernández. Bis später!",
+     "ru": "Выздоравливайте, господин Фернандес. До встречи!",
+     "audio": "audio/abc27020283e.m4a"
     }
    ]
   },
@@ -123,68 +123,68 @@
    "place": "Am Telefon",
    "people": {
     "A": {
-     "name": "Anna",
+     "name": "Dana",
      "voice": "Anna"
     },
     "M": {
-     "name": "Marco",
+     "name": "Mateo",
      "voice": "Reed"
     }
    },
    "lines": [
     {
      "who": "A",
-     "de": "Hallo, Marco! Du bist heute nicht im Kurs. Bist du krank?",
-     "ru": "Привет, Марко! Тебя сегодня нет на курсе. Ты заболел?",
-     "audio": "audio/bd32dc840227.m4a"
+     "de": "Hallo, Mateo! Du bist heute nicht im Kurs. Bist du krank?",
+     "ru": "Привет, Матео! Тебя сегодня нет на курсе. Ты заболел?",
+     "audio": "audio/d315a5190269.m4a"
     },
     {
      "who": "M",
      "de": "Ja, leider. Ich habe Fieber, und mein Hals tut weh.",
      "ru": "Да, к сожалению. У меня температура, и болит горло.",
-     "audio": "audio/ea28ac4bf75c.m4a"
+     "audio": "audio/7f17498bcebd.m4a"
     },
     {
      "who": "A",
      "de": "Oh nein! Und was sagt der Arzt?",
      "ru": "О нет! А что говорит врач?",
-     "audio": "audio/609b64aa8927.m4a"
+     "audio": "audio/f31ff8f35bf0.m4a"
     },
     {
      "who": "M",
      "de": "Ich muss drei Tage im Bett bleiben. Und ich darf keinen Sport machen.",
      "ru": "Мне нужно три дня лежать в постели. И спортом заниматься нельзя.",
-     "audio": "audio/cb96977364ff.m4a"
+     "audio": "audio/9db8294d09c6.m4a"
     },
     {
      "who": "A",
-     "de": "Oh, du Armer! Trink viel Tee und schlaf viel! Und nimm die Tabletten!",
-     "ru": "Ох, бедняга! Пей много чая и побольше спи! И принимай таблетки!",
-     "audio": "audio/e2e90438419f.m4a"
+     "de": "Oh, du Armer! Ruf bitte in der Praxis an! Und nimm deine Karte mit!",
+     "ru": "Ох, бедняга! Позвони, пожалуйста, в практику! И возьми свою карту!",
+     "audio": "audio/bbb3abc75882.m4a"
     },
     {
      "who": "M",
-     "de": "Ja, Frau Doktor!",
-     "ru": "Слушаюсь, доктор!",
-     "audio": "audio/d32beac4ad45.m4a"
+     "de": "Ja, danke für deine Hilfe!",
+     "ru": "Да, спасибо за помощь!",
+     "audio": "audio/6185236e2b6d.m4a"
     },
     {
      "who": "A",
-     "de": "Lena und ich kommen morgen. Wir bringen Suppe mit.",
-     "ru": "Мы с Леной завтра придём. Принесём суп.",
-     "audio": "audio/4ff4f0e04cb7.m4a"
+     "de": "Elif und ich bringen morgen Suppe mit. Geht das?",
+     "ru": "Мы с Элиф завтра принесём суп. Так можно?",
+     "audio": "audio/f480aab80753.m4a"
     },
     {
      "who": "M",
-     "de": "Super, danke! Kommt um vier! Und bringt bitte auch Schokolade mit!",
-     "ru": "Супер, спасибо! Приходите в четыре! И принесите, пожалуйста, ещё шоколад!",
-     "audio": "audio/719d262cb0ca.m4a"
+     "de": "Ja, danke! Kommt um vier! Und bringt bitte auch Brot mit!",
+     "ru": "Да, спасибо! Приходите в четыре! И принесите, пожалуйста, ещё хлеб!",
+     "audio": "audio/432914cf6d3d.m4a"
     },
     {
      "who": "A",
-     "de": "Schokolade? Na gut. Gute Besserung, Marco!",
-     "ru": "Шоколад? Ну ладно. Выздоравливай, Марко!",
-     "audio": "audio/b759150fa26a.m4a"
+     "de": "Brot, alles klar. Gute Besserung, Mateo!",
+     "ru": "Хлеб, понятно. Выздоравливай, Матео!",
+     "audio": "audio/3987285d40fe.m4a"
     }
    ]
   }
@@ -199,63 +199,63 @@
      "ru": "голова",
      "gender": "m",
      "plural": "Köpfe",
-     "audio": "audio/d0e55413d601.m4a"
+     "audio": "audio/0a9af49274da.m4a"
     },
     {
      "de": "das Auge",
      "ru": "глаз",
      "gender": "n",
      "plural": "Augen",
-     "audio": "audio/de0d3c864ac1.m4a"
+     "audio": "audio/ac9a0d54bd5f.m4a"
     },
     {
      "de": "das Ohr",
      "ru": "ухо",
      "gender": "n",
      "plural": "Ohren",
-     "audio": "audio/29c663494fb3.m4a"
+     "audio": "audio/a2f15fb2ebc9.m4a"
     },
     {
      "de": "die Nase",
      "ru": "нос",
      "gender": "f",
      "plural": "Nasen",
-     "audio": "audio/c61fb5d34c86.m4a"
+     "audio": "audio/e4b7c4c2526f.m4a"
     },
     {
      "de": "der Zahn",
      "ru": "зуб",
      "gender": "m",
      "plural": "Zähne",
-     "audio": "audio/3ec528416741.m4a"
+     "audio": "audio/8c6502a6c336.m4a"
     },
     {
      "de": "der Hals",
      "ru": "горло, шея",
      "gender": "m",
      "plural": "Hälse",
-     "audio": "audio/125d51f02d10.m4a"
+     "audio": "audio/9793e8c1a4d0.m4a"
     },
     {
      "de": "der Arm",
      "ru": "рука (от плеча)",
      "gender": "m",
      "plural": "Arme",
-     "audio": "audio/d6934ca6574d.m4a"
+     "audio": "audio/ba5642d502e2.m4a"
     },
     {
      "de": "die Hand",
      "ru": "кисть руки",
      "gender": "f",
      "plural": "Hände",
-     "audio": "audio/4e1d15d2019c.m4a"
+     "audio": "audio/2958431260fc.m4a"
     },
     {
      "de": "der Bauch",
      "ru": "живот",
      "gender": "m",
      "plural": "Bäuche",
-     "audio": "audio/a7dba939f2fa.m4a"
+     "audio": "audio/3f82ba556272.m4a"
     },
     {
      "de": "der Rücken",
@@ -263,21 +263,21 @@
      "gender": "m",
      "plural": "Rücken",
      "note": "мн. ч. не меняется",
-     "audio": "audio/19b837e8e115.m4a"
+     "audio": "audio/ae863dec357a.m4a"
     },
     {
      "de": "das Bein",
      "ru": "нога",
      "gender": "n",
      "plural": "Beine",
-     "audio": "audio/ae902fb8bf89.m4a"
+     "audio": "audio/81d020f9482c.m4a"
     },
     {
      "de": "der Fuß",
      "ru": "ступня",
      "gender": "m",
      "plural": "Füße",
-     "audio": "audio/3a66b93d8e71.m4a"
+     "audio": "audio/f73efc050ee2.m4a"
     }
    ]
   },
@@ -291,21 +291,21 @@
      "gender": null,
      "plural": null,
      "note": "Ich bin krank.",
-     "audio": "audio/ecfd0749e84b.m4a"
+     "audio": "audio/7c20d0afc943.m4a"
     },
     {
      "de": "gesund",
      "ru": "здоровый",
      "gender": null,
      "plural": null,
-     "audio": "audio/fde3d7cfe09a.m4a"
+     "audio": "audio/b146404d59e3.m4a"
     },
     {
      "de": "die Erkältung",
      "ru": "простуда",
      "gender": "f",
      "plural": "Erkältungen",
-     "audio": "audio/6acb14e247fd.m4a"
+     "audio": "audio/d66c8ef675bb.m4a"
     },
     {
      "de": "das Fieber",
@@ -314,7 +314,7 @@
      "plural": null,
      "noPlural": true,
      "note": "Ich habe Fieber.",
-     "audio": "audio/200e6e3a79aa.m4a"
+     "audio": "audio/55dc4cc205ec.m4a"
     },
     {
      "de": "der Husten",
@@ -323,7 +323,7 @@
      "plural": null,
      "noPlural": true,
      "note": "Ich habe Husten.",
-     "audio": "audio/e9589ba747db.m4a"
+     "audio": "audio/b4494ce3783e.m4a"
     },
     {
      "de": "der Schnupfen",
@@ -332,7 +332,7 @@
      "plural": null,
      "noPlural": true,
      "note": "Ich habe Schnupfen.",
-     "audio": "audio/0ed21327995e.m4a"
+     "audio": "audio/0a80b6a6de54.m4a"
     },
     {
      "de": "der Schmerz",
@@ -340,7 +340,7 @@
      "gender": "m",
      "plural": "Schmerzen",
      "note": "обычно во мн. ч.",
-     "audio": "audio/c981fd3d2e2c.m4a"
+     "audio": "audio/d5ded5e1da0a.m4a"
     },
     {
      "de": "wehtun",
@@ -348,14 +348,14 @@
      "gender": null,
      "plural": null,
      "note": "Mein Kopf tut weh.",
-     "audio": "audio/5a42b33e5510.m4a"
+     "audio": "audio/1f6f5c66b1f6.m4a"
     },
     {
      "de": "Gute Besserung!",
      "ru": "Выздоравливайте!",
      "gender": null,
      "plural": null,
-     "audio": "audio/c0bca35e95c0.m4a"
+     "audio": "audio/322125118847.m4a"
     }
    ]
   },
@@ -369,21 +369,21 @@
      "gender": "m",
      "plural": "Ärzte",
      "note": "женщина — die Ärztin",
-     "audio": "audio/9ed37f4a526e.m4a"
+     "audio": "audio/df79b4cec3b2.m4a"
     },
     {
      "de": "die Praxis",
      "ru": "кабинет врача",
      "gender": "f",
      "plural": "Praxen",
-     "audio": "audio/18a06c159981.m4a"
+     "audio": "audio/843941125ca1.m4a"
     },
     {
      "de": "das Wartezimmer",
      "ru": "приёмная",
      "gender": "n",
      "plural": "Wartezimmer",
-     "audio": "audio/82edfe3eaeb1.m4a"
+     "audio": "audio/1a75f582a2a4.m4a"
     },
     {
      "de": "der Termin",
@@ -391,42 +391,42 @@
      "gender": "m",
      "plural": "Termine",
      "note": "einen Termin machen",
-     "audio": "audio/d9ff5b64fe77.m4a"
+     "audio": "audio/6608b0bc6e50.m4a"
     },
     {
      "de": "die Versichertenkarte",
      "ru": "карта медицинской страховки",
      "gender": "f",
      "plural": "Versichertenkarten",
-     "audio": "audio/dbe4ed495af7.m4a"
+     "audio": "audio/381258c4b4e4.m4a"
     },
     {
      "de": "das Rezept",
      "ru": "рецепт",
      "gender": "n",
      "plural": "Rezepte",
-     "audio": "audio/a7bab94adaca.m4a"
+     "audio": "audio/efc00f536838.m4a"
     },
     {
      "de": "die Apotheke",
      "ru": "аптека",
      "gender": "f",
      "plural": "Apotheken",
-     "audio": "audio/ea023d9367c2.m4a"
+     "audio": "audio/65b50c1a94a8.m4a"
     },
     {
      "de": "die Tablette",
      "ru": "таблетка",
      "gender": "f",
      "plural": "Tabletten",
-     "audio": "audio/23a58e0b8c6f.m4a"
+     "audio": "audio/dd1be24374ad.m4a"
     },
     {
      "de": "das Medikament",
      "ru": "лекарство",
      "gender": "n",
      "plural": "Medikamente",
-     "audio": "audio/a27df86e719d.m4a"
+     "audio": "audio/07e107e9a1a1.m4a"
     }
    ]
   },
@@ -440,7 +440,7 @@
      "gender": null,
      "plural": null,
      "note": "Trink viel Tee!",
-     "audio": "audio/e2df87f82745.m4a"
+     "audio": "audio/bd60f3a0a073.m4a"
     },
     {
      "de": "schlafen",
@@ -448,7 +448,7 @@
      "gender": null,
      "plural": null,
      "note": "du schläfst → Schlaf!",
-     "audio": "audio/2a407504fec3.m4a"
+     "audio": "audio/5583767a3b94.m4a"
     },
     {
      "de": "nehmen",
@@ -456,7 +456,7 @@
      "gender": null,
      "plural": null,
      "note": "du nimmst → Nimm!",
-     "audio": "audio/f860bd017e74.m4a"
+     "audio": "audio/eceab039b81a.m4a"
     },
     {
      "de": "essen",
@@ -464,7 +464,7 @@
      "gender": null,
      "plural": null,
      "note": "du isst → Iss!",
-     "audio": "audio/6100cc311c52.m4a"
+     "audio": "audio/352ea3276466.m4a"
     },
     {
      "de": "bleiben",
@@ -472,7 +472,7 @@
      "gender": null,
      "plural": null,
      "note": "im Bett bleiben",
-     "audio": "audio/f6f9aa2cb404.m4a"
+     "audio": "audio/d2b6d50e6684.m4a"
     },
     {
      "de": "gehen",
@@ -480,7 +480,7 @@
      "gender": null,
      "plural": null,
      "note": "zum Arzt gehen",
-     "audio": "audio/5c57850609b7.m4a"
+     "audio": "audio/dfc8038b8ca5.m4a"
     },
     {
      "de": "rauchen",
@@ -488,7 +488,7 @@
      "gender": null,
      "plural": null,
      "note": "Rauch nicht!",
-     "audio": "audio/337745eb398a.m4a"
+     "audio": "audio/1d3c0cd7892e.m4a"
     },
     {
      "de": "müssen",
@@ -496,7 +496,7 @@
      "gender": null,
      "plural": null,
      "note": "ich muss, du musst",
-     "audio": "audio/d0de4b2219b6.m4a"
+     "audio": "audio/c4f51001283f.m4a"
     },
     {
      "de": "dürfen",
@@ -504,7 +504,7 @@
      "gender": null,
      "plural": null,
      "note": "ich darf, du darfst",
-     "audio": "audio/80f6f676a4a4.m4a"
+     "audio": "audio/c709bfdc1ec1.m4a"
     }
    ]
   }
@@ -661,7 +661,7 @@
    "title": "Hören, Teil 3",
    "situation": "Sie hören eine Nachricht auf dem Anrufbeantworter. Sie hören den Text zweimal.",
    "voice": "Shelley",
-   "text": "Guten Tag, Herr Rossi, hier ist die Praxis Dr. Hoffmann. Sie haben am Freitag um zehn Uhr einen Termin. Das geht leider nicht: Frau Dr. Hoffmann ist am Freitag nicht da. Können Sie am Montag um halb neun kommen? Bitte rufen Sie uns kurz an. Vielen Dank und auf Wiederhören!",
+   "text": "Guten Tag, Herr Fernández, hier ist die Praxis Dr. Hoffmann. Sie haben am Freitag um zehn Uhr einen Termin. Das geht leider nicht: Frau Dr. Hoffmann ist am Freitag nicht da. Können Sie am Montag um halb neun kommen? Bitte rufen Sie uns kurz an. Vielen Dank und auf Wiederhören!",
    "question": "Wann ist der neue Termin?",
    "options": [
     "Am Freitag um 10 Uhr.",
@@ -669,17 +669,17 @@
     "Am Montag um 10 Uhr."
    ],
    "answer": 1,
-   "audio": "audio/15602006e7a3.m4a",
+   "audio": "audio/58d038d9b536.m4a",
    "sample": []
   },
   "absage": {
    "kind": "message",
    "part": "schreiben-2",
    "title": "Schreiben, Teil 2",
-   "situation": "Sie sind krank und können morgen nicht zum Deutschkurs kommen. Schreiben Sie eine E-Mail an Ihren Kursleiter, Herrn Schulz. Schreiben Sie zu jedem Punkt ein bis zwei Sätze. Vergessen Sie nicht Anrede und Gruß.",
-   "to": "Herr Schulz",
+   "situation": "Sie sind krank und können morgen nicht zum Deutschkurs kommen. Schreiben Sie eine E-Mail an Ihre Kursleiterin, Frau Thomsen. Schreiben Sie zu jedem Punkt ein bis zwei Sätze. Vergessen Sie nicht Anrede und Gruß.",
+   "to": "Frau Thomsen",
    "subject": "Ich bin krank",
-   "text": "Lieber Herr Schulz,\n…\nViele Grüße",
+   "text": "Liebe Frau Thomsen,\n…\nViele Grüße",
    "points": [
     "Warum kommen Sie nicht?",
     "Wann kommen Sie wieder?",
@@ -687,34 +687,42 @@
    ],
    "sample": [
     {
-     "de": "Lieber Herr Schulz,",
-     "audio": "audio/e5d451949ef9.m4a"
+     "de": "Liebe Frau Thomsen,",
+     "audio": "audio/67446b1c8657.m4a"
     },
     {
      "de": "ich bin krank und kann morgen leider nicht zum Kurs kommen.",
-     "audio": "audio/15b991bd6fb2.m4a"
+     "audio": "audio/d6f5f6849ec3.m4a"
     },
     {
      "de": "Ich habe Fieber und Halsschmerzen. Ich muss drei Tage im Bett bleiben.",
-     "audio": "audio/068cfc81dc5f.m4a"
+     "audio": "audio/95851fe3f91a.m4a"
     },
     {
      "de": "Am Donnerstag komme ich wieder.",
-     "audio": "audio/326e95982d21.m4a"
+     "audio": "audio/1df4b8a86148.m4a"
     },
     {
      "de": "Welche Hausaufgaben haben wir?",
-     "audio": "audio/7b715efe1efa.m4a"
+     "audio": "audio/0d8f7b06ff60.m4a"
     },
     {
      "de": "Viele Grüße",
-     "audio": "audio/68fa7e678d7f.m4a"
+     "audio": "audio/faf8fee74cb4.m4a"
     },
     {
-     "de": "Marco",
-     "audio": "audio/439de2b86c9b.m4a"
+     "de": "Mateo",
+     "audio": "audio/241987688e33.m4a"
     }
    ]
+  },
+  "modalplan": {
+   "kind": "message",
+   "part": "lesen-1",
+   "title": "Plan für die Clubhelfer",
+   "from": "Hauke",
+   "text": "Die Helfer müssen am Samstag um zehn Uhr zum Club kommen. Sie dürfen nicht im Club rauchen. Sie müssen kein Essen mitbringen. Essen ist schon da.",
+   "sample": []
   }
  },
  "beats": [
@@ -724,7 +732,7 @@
    "stepTitle": "Звонок в практику",
    "chapterIndex": 0,
    "indexInStep": 0,
-   "read": "Утро понедельника. У Марко болит горло и голова — на курс он сегодня не пойдёт. Сначала к врачу. В Германии к терапевту, *Hausarzt*, обычно идут по записи, поэтому Марко звонит в практику. По телефону представляются не через *Ich bin …*, а так: *Hier ist Marco Rossi* — «это Марко Росси». И сразу о деле: *Ich brauche einen Termin* — «мне нужно записаться на приём».",
+   "read": "Матео звонит в вымышленную практику: *Hier ist Mateo Fernández. Ich brauche einen Termin, bitte.* Так можно представиться по телефону и сразу назвать цель. *Ich bin …* тоже возможно; это не запрет, а полезный готовый вариант. Все симптомы и реплики о лечении в этой теме относятся к учебным персонажам. Задача — передать слова и понять назначенное время.",
    "point": "По телефону: *Hier ist …*; к врачу: *Ich brauche einen Termin.*",
    "scene": {
     "view": "dialogue",
@@ -742,7 +750,7 @@
    "stepTitle": "Звонок в практику",
    "chapterIndex": 0,
    "indexInStep": 1,
-   "read": "Секретарь спрашивает: *Was haben Sie denn?* — «А что у вас?». Частица *denn* делает вопрос мягче и живее. Марко отвечает так, как говорят немцы, — через *haben*: *Ich habe Halsschmerzen und Kopfschmerzen*, буквально «у меня есть боли в горле и в голове». И ещё пара, которую стоит запомнить: русское «у меня температура» — по-немецки *Ich habe Fieber*.",
+   "read": "Секретарь спрашивает: *Was haben Sie denn?* — «А что у вас?». Частица *denn* делает вопрос мягче и живее. Матео отвечает так, как говорят немцы, — через *haben*: *Ich habe Halsschmerzen und Kopfschmerzen*, буквально «у меня есть боли в горле и в голове». И ещё пара, которую стоит запомнить: русское «у меня температура» — по-немецки *Ich habe Fieber*.",
    "point": "Боль и температура — через *haben*: *Ich habe Kopfschmerzen*, *Ich habe Fieber*",
    "scene": {
     "view": "dialogue",
@@ -764,7 +772,7 @@
    "stepTitle": "Звонок в практику",
    "chapterIndex": 0,
    "indexInStep": 2,
-   "read": "Приём — *um Viertel nach elf*, в 11:15: часы из шестой темы пригодились. Марко уточняет: *Muss ich etwas mitbringen?* — «мне нужно что-то взять с собой?». Это новый модальный глагол *müssen* — «нужно, должен». В ответ — вежливая просьба на *Sie*: *Bringen Sie bitte Ihre Versichertenkarte mit.* Карту медицинской страховки к врачу берут всегда. На прощание больному желают выздоровления: *Gute Besserung!*",
+   "read": "Первый приём в диалоге — *um Viertel nach elf*, в 11:15. Матео уточняет *Muss ich etwas mitbringen?* В ответ сотрудница просит взять карту: *Bringen Sie bitte Ihre Versichertenkarte mit.* Для этой задачи нужно понять конкретную просьбу. Позже в отдельном сообщении практика переносит другую, последующую запись: старые и новые времена нельзя смешивать. На прощание — *Gute Besserung!*",
    "point": "*Muss ich …?* — «мне нужно …?»; *Gute Besserung!* — «выздоравливайте!»",
    "scene": {
     "view": "dialogue",
@@ -788,10 +796,10 @@
   {
    "id": "tipps-1",
    "step": "tipps",
-   "stepTitle": "Советы Анны",
+   "stepTitle": "Помощь друзей",
    "chapterIndex": 0,
    "indexInStep": 0,
-   "read": "В перерыве звонит Анна: Марко нет на курсе. Он показывает второй способ сказать о боли: *Mein Hals tut weh* — «у меня болит горло». Подлежащее здесь — сама часть тела, а глагол — *wehtun*, «болеть». Потом Марко пересказывает слова врача: *Ich muss drei Tage im Bett bleiben* — «три дня лежать в постели». И ещё: *Ich darf keinen Sport machen* — спорт ему нельзя.",
+   "read": "В перерыве звонит Дана: Матео нет на курсе. Он показывает второй способ сказать о боли: *Mein Hals tut weh* — «у меня болит горло». Подлежащее здесь — сама часть тела, а глагол — *wehtun*, «болеть». Потом Матео пересказывает слова врача: *Ich muss drei Tage im Bett bleiben* — «три дня лежать в постели». И ещё: *Ich darf keinen Sport machen* — спорт ему нельзя.",
    "point": "*Mein Hals tut weh.* — «болит горло»: подлежащее — часть тела",
    "scene": {
     "view": "dialogue",
@@ -812,11 +820,11 @@
   {
    "id": "tipps-2",
    "step": "tipps",
-   "stepTitle": "Советы Анны",
+   "stepTitle": "Помощь друзей",
    "chapterIndex": 0,
    "indexInStep": 1,
-   "read": "Анна тут же даёт советы: *Trink viel Tee und schlaf viel! Und nimm die Tabletten!* Это повелительное наклонение для «ты». Глагол стоит первым, местоимения *du* нет, окончания *-st* тоже: *du trinkst* → *Trink!*. По-русски мы тоже обходимся без «ты»: «пей», «спи». Марко шутит в ответ: *Ja, Frau Doktor!* — «Слушаюсь, доктор!»",
-   "point": "Совет на «ты»: глагол первым, без *du* и без *-st*: *Trink viel Tee!*",
+   "read": "Дана помогает с организацией: *Ruf bitte in der Praxis an! Und nimm deine Karte mit!* Это просьбы на «ты», без *du*. У *anrufen* и *mitnehmen* приставки стоят в конце. Форма *Nimm!* сохраняет замену гласной из *du nimmst*. Дана не назначает таблетки: в игре вы передаёте сообщения и собираете нужные сведения, а не подбираете лечение.",
+   "point": "*Ruf … an!* · *Nimm … mit!* — просьбы на «ты», приставка в конце",
    "scene": {
     "view": "dialogue",
     "dialogue": "tipps",
@@ -834,11 +842,11 @@
   {
    "id": "tipps-3",
    "step": "tipps",
-   "stepTitle": "Советы Анны",
+   "stepTitle": "Помощь друзей",
    "chapterIndex": 0,
    "indexInStep": 2,
-   "read": "*Lena und ich kommen morgen* — так по-немецки звучит русское «мы с Леной придём». Сказать *wir mit Lena* нельзя: людей перечисляют через *und*, а себя вежливо называют последним. Марко отвечает сразу обеим подругам, поэтому берёт форму *ihr*: *Kommt um vier! Und bringt bitte auch Schokolade mit!* Это та же форма, что в *ihr kommt*, только без *ihr*.",
-   "point": "«Мы с Леной» — *Lena und ich*; двум друзьям: *Kommt um vier!*",
+   "read": "*Elif und ich bringen morgen Suppe mit* — «мы с Элиф завтра принесём суп». Матео отвечает обеим: *Kommt um vier! Und bringt bitte auch Brot mit!* Это форма *ihr* без местоимения: *ihr kommt* → *Kommt!*, *ihr bringt mit* → *Bringt … mit!* Просьбы друзьям отличаются от вежливых *Kommen Sie* и *Bringen Sie*. Сравните адресатов, прежде чем собирать реплику в игре.",
+   "point": "Двум друзьям: *Kommt um vier! Bringt bitte Brot mit!*",
    "scene": {
     "view": "dialogue",
     "dialogue": "tipps",
@@ -860,7 +868,7 @@
    "stepTitle": "Части тела",
    "chapterIndex": 1,
    "indexInStep": 0,
-   "read": "Русские «рука» и «нога» по-немецки делятся на два слова. *Der Arm* — рука от плеча, *die Hand* — кисть. *Das Bein* — нога, *der Fuß* — ступня. Врач спросит точно, и ответ «рука» его не устроит. *Der Hals* — и горло, и шея. Больше всего здесь слов мужского рода, но *das Auge*, *das Ohr* и *das Bein* — среднего, а *die Nase* и *die Hand* — женского.",
+   "read": "У «руки» и «ноги» здесь по два частых слова: *der Arm* — рука от плеча, *die Hand* — кисть, *das Bein* — нога, *der Fuß* — ступня. В сообщении важно назвать то, о чём говорит персонаж, без догадок о диагнозе. *Der Hals* означает и горло, и шею. Род пригодится для *mein Kopf*, *meine Hand*, а множественное число — для *meine Ohren tun weh*.",
    "point": "*der Arm* и *die Hand*, *das Bein* и *der Fuß* — у «руки» и «ноги» по два слова",
    "scene": {
     "view": "words",
@@ -888,7 +896,7 @@
    "stepTitle": "У врача",
    "chapterIndex": 1,
    "indexInStep": 0,
-   "read": "Врач — *der Arzt*, женщина-врач — *die Ärztin*. Принимают они в *Praxis*: это не «практика» в смысле опыта, а сам кабинет. Сначала вы ждёте в *Wartezimmer* — сложное слово, род по последней части, *das Zimmer*. С рецептом, *das Rezept*, идут в *Apotheke*. А *Versichertenkarte* показывают на входе: без карты страховки приём не начнётся.",
+   "read": "*Die Praxis* — врачебный кабинет или практика, *das Wartezimmer* — комната ожидания. *Das Rezept* — рецепт, *die Apotheke* — аптека. В нашем диалоге сотрудница просит *die Versichertenkarte*, карту страховки. Это содержание конкретной реплики: курс не устанавливает универсальные условия допуска к приёму. Сложные слова читаем с конца, как в теме о жилье: *Wartezimmer* среднего рода по *Zimmer*.",
    "point": "*die Praxis* — кабинет врача; *das Rezept* несут в *die Apotheke*",
    "scene": {
     "view": "words",
@@ -975,7 +983,7 @@
       "punct": ".",
       "plain": "Ich bleibe im Bett.",
       "ru": "Я лежу в постели.",
-      "audio": "audio/a9c7f9a5fdda.m4a"
+      "audio": "audio/b7615964cee9.m4a"
      }
     ]
    }
@@ -1028,7 +1036,7 @@
       "punct": ".",
       "plain": "Ich muss im Bett bleiben.",
       "ru": "Мне нужно лежать в постели.",
-      "audio": "audio/08202376b39f.m4a"
+      "audio": "audio/b27cee309138.m4a"
      }
     ]
    }
@@ -1081,7 +1089,7 @@
       "punct": ".",
       "plain": "Ich muss im Bett bleiben.",
       "ru": "Мне нужно лежать в постели.",
-      "audio": "audio/08202376b39f.m4a"
+      "audio": "audio/b27cee309138.m4a"
      }
     ]
    }
@@ -1092,7 +1100,7 @@
    "stepTitle": "Нужно и нельзя",
    "chapterIndex": 2,
    "indexInStep": 3,
-   "read": "*dürfen* — «можно, разрешено». Чаще всего его слышат с отрицанием: *Du darfst nicht rauchen* — «тебе нельзя курить». Главная ловушка этой темы: «нельзя» — это всегда *nicht dürfen*. *Du musst nicht kommen* значит совсем другое — «тебе не нужно приходить», хочешь — приходи. Английское must not тоже подведёт: по смыслу оно ближе к *darf nicht*.",
+   "read": "*dürfen* — «можно, разрешено». Чаще всего его слышат с отрицанием: *Du darfst nicht rauchen* — «тебе нельзя курить». Главная ловушка этой темы: Запрет здесь выражает *nicht dürfen*. *Du musst nicht kommen* значит совсем другое — «тебе не нужно приходить», хочешь — приходи. Английское must not тоже подведёт: по смыслу оно ближе к *darf nicht*.",
    "point": "«Нельзя» — *nicht dürfen*, «не нужно» — *nicht müssen*",
    "scene": {
     "view": "sentence",
@@ -1130,7 +1138,7 @@
       "punct": ".",
       "plain": "Du darfst nicht rauchen.",
       "ru": "Тебе нельзя курить.",
-      "audio": "audio/b59e007e1914.m4a"
+      "audio": "audio/783485b2a3d1.m4a"
      },
      {
       "slots": [
@@ -1162,7 +1170,7 @@
       "punct": ".",
       "plain": "Du musst nicht kommen.",
       "ru": "Тебе не нужно приходить.",
-      "audio": "audio/ccb36423b5d0.m4a"
+      "audio": "audio/33821d243616.m4a"
      }
     ]
    }
@@ -1210,7 +1218,7 @@
       "punct": ".",
       "plain": "Du bleibst im Bett.",
       "ru": "Ты лежишь в постели.",
-      "audio": "audio/cd2d6236a8c1.m4a"
+      "audio": "audio/800be6d76ec3.m4a"
      },
      {
       "slots": [
@@ -1241,7 +1249,7 @@
       "punct": ".",
       "plain": "Ihr bleibt im Bett.",
       "ru": "Вы лежите в постели.",
-      "audio": "audio/d69b0ab863d5.m4a"
+      "audio": "audio/7f35442db879.m4a"
      }
     ]
    }
@@ -1284,7 +1292,7 @@
       "punct": "!",
       "plain": "Bleib im Bett!",
       "ru": "Лежи в постели!",
-      "audio": "audio/515d48f10060.m4a"
+      "audio": "audio/2e3440b76c46.m4a"
      },
      {
       "slots": [
@@ -1310,7 +1318,7 @@
       "punct": "!",
       "plain": "Bleibt im Bett!",
       "ru": "Лежите в постели! (друзьям)",
-      "audio": "audio/78e6c0572986.m4a"
+      "audio": "audio/5af837e4c496.m4a"
      },
      {
       "slots": [
@@ -1340,7 +1348,7 @@
       "punct": "!",
       "plain": "Bleiben Sie im Bett!",
       "ru": "Лежите в постели! (вежливо)",
-      "audio": "audio/422794748400.m4a"
+      "audio": "audio/2156e0c2b466.m4a"
      }
     ],
     "fresh": [
@@ -1386,7 +1394,7 @@
       "punct": "!",
       "plain": "Bleib im Bett!",
       "ru": "Лежи в постели!",
-      "audio": "audio/515d48f10060.m4a"
+      "audio": "audio/2e3440b76c46.m4a"
      },
      {
       "slots": [
@@ -1412,7 +1420,7 @@
       "punct": "!",
       "plain": "Bleibt im Bett!",
       "ru": "Лежите в постели! (друзьям)",
-      "audio": "audio/78e6c0572986.m4a"
+      "audio": "audio/5af837e4c496.m4a"
      },
      {
       "slots": [
@@ -1442,7 +1450,7 @@
       "punct": "!",
       "plain": "Bleiben Sie im Bett!",
       "ru": "Лежите в постели! (вежливо)",
-      "audio": "audio/422794748400.m4a"
+      "audio": "audio/2156e0c2b466.m4a"
      }
     ],
     "focus": [
@@ -1459,105 +1467,9 @@
    "stepTitle": "Проверьте себя",
    "chapterIndex": 3,
    "indexInStep": 0,
-   "read": "*Meine Hand tut weh.* Слово на *-schmerzen* есть не для каждой части тела: *Handschmerzen* в обычной речи почти не говорят. А *wehtun* подходит всегда. Следите за числом: если болят уши или ноги, глагол во множественном — *Meine Ohren tun weh*, *Meine Beine tun weh*. Ошибка *Meine Ohren tut weh* очень частая.",
+   "read": "*Meine Hand tut weh.* Эта фраза прямо называет место боли. Слова на *-schmerzen* тоже встречаются, но здесь удобно использовать *wehtun*. Следите за числом: *Meine Ohren tun weh*, *Meine Beine tun weh*. Глагол согласуется с тем, что болит, а не с говорящим: *Hand tut*, но *Ohren tun*.",
    "point": "*Meine Hand tut weh.* Мн. ч.: *Meine Ohren tun weh.*",
    "question": "У вас болит рука. Как сказать об этом врачу?",
-   "sceneBefore": {
-    "view": "table",
-    "dialogue": "tipps",
-    "words": "rat",
-    "table": "imperativ",
-    "rows": [
-     {
-      "slots": [
-       [],
-       [
-        {
-         "key": "bleib",
-         "text": "Bleib"
-        }
-       ],
-       [
-        {
-         "key": "im",
-         "text": "im"
-        },
-        {
-         "key": "bett",
-         "text": "Bett"
-        }
-       ],
-       []
-      ],
-      "punct": "!",
-      "plain": "Bleib im Bett!",
-      "ru": "Лежи в постели!",
-      "audio": "audio/515d48f10060.m4a"
-     },
-     {
-      "slots": [
-       [],
-       [
-        {
-         "key": "bleib",
-         "text": "Bleib+t"
-        }
-       ],
-       [
-        {
-         "key": "im",
-         "text": "im"
-        },
-        {
-         "key": "bett",
-         "text": "Bett"
-        }
-       ],
-       []
-      ],
-      "punct": "!",
-      "plain": "Bleibt im Bett!",
-      "ru": "Лежите в постели! (друзьям)",
-      "audio": "audio/78e6c0572986.m4a"
-     },
-     {
-      "slots": [
-       [],
-       [
-        {
-         "key": "bleib",
-         "text": "Bleib+en"
-        }
-       ],
-       [
-        {
-         "key": "sie",
-         "text": "Sie"
-        },
-        {
-         "key": "im",
-         "text": "im"
-        },
-        {
-         "key": "bett",
-         "text": "Bett"
-        }
-       ],
-       []
-      ],
-      "punct": "!",
-      "plain": "Bleiben Sie im Bett!",
-      "ru": "Лежите в постели! (вежливо)",
-      "audio": "audio/422794748400.m4a"
-     }
-    ],
-    "focus": [
-     2,
-     3,
-     4,
-     5
-    ]
-   },
    "scene": {
     "view": "table",
     "dialogue": "tipps",
@@ -1588,7 +1500,7 @@
       "punct": "!",
       "plain": "Bleib im Bett!",
       "ru": "Лежи в постели!",
-      "audio": "audio/515d48f10060.m4a"
+      "audio": "audio/2e3440b76c46.m4a"
      },
      {
       "slots": [
@@ -1614,7 +1526,7 @@
       "punct": "!",
       "plain": "Bleibt im Bett!",
       "ru": "Лежите в постели! (друзьям)",
-      "audio": "audio/78e6c0572986.m4a"
+      "audio": "audio/5af837e4c496.m4a"
      },
      {
       "slots": [
@@ -1644,7 +1556,7 @@
       "punct": "!",
       "plain": "Bleiben Sie im Bett!",
       "ru": "Лежите в постели! (вежливо)",
-      "audio": "audio/422794748400.m4a"
+      "audio": "audio/2156e0c2b466.m4a"
      }
     ],
     "focus": [
@@ -1662,100 +1574,6 @@
    "read": "*Darf ich morgen zum Kurs gehen?* Разрешение — это *dürfen*. В вопросе без W-слова модальный глагол встаёт первым, *ich* — сразу за ним, а инфинитив *gehen* по-прежнему в конце: рамка никуда не делась. Вопрос *Muss ich morgen zum Kurs gehen?* значил бы «я обязан идти?» — а это совсем другое.",
    "point": "*Darf ich …?* — «можно мне …?»; инфинитив в конце",
    "question": "Как спросить врача, можно ли вам завтра на курс?",
-   "sceneBefore": {
-    "view": "table",
-    "dialogue": "tipps",
-    "words": "rat",
-    "table": "schmerzen",
-    "rows": [
-     {
-      "slots": [
-       [],
-       [
-        {
-         "key": "bleib",
-         "text": "Bleib"
-        }
-       ],
-       [
-        {
-         "key": "im",
-         "text": "im"
-        },
-        {
-         "key": "bett",
-         "text": "Bett"
-        }
-       ],
-       []
-      ],
-      "punct": "!",
-      "plain": "Bleib im Bett!",
-      "ru": "Лежи в постели!",
-      "audio": "audio/515d48f10060.m4a"
-     },
-     {
-      "slots": [
-       [],
-       [
-        {
-         "key": "bleib",
-         "text": "Bleib+t"
-        }
-       ],
-       [
-        {
-         "key": "im",
-         "text": "im"
-        },
-        {
-         "key": "bett",
-         "text": "Bett"
-        }
-       ],
-       []
-      ],
-      "punct": "!",
-      "plain": "Bleibt im Bett!",
-      "ru": "Лежите в постели! (друзьям)",
-      "audio": "audio/78e6c0572986.m4a"
-     },
-     {
-      "slots": [
-       [],
-       [
-        {
-         "key": "bleib",
-         "text": "Bleib+en"
-        }
-       ],
-       [
-        {
-         "key": "sie",
-         "text": "Sie"
-        },
-        {
-         "key": "im",
-         "text": "im"
-        },
-        {
-         "key": "bett",
-         "text": "Bett"
-        }
-       ],
-       []
-      ],
-      "punct": "!",
-      "plain": "Bleiben Sie im Bett!",
-      "ru": "Лежите в постели! (вежливо)",
-      "audio": "audio/422794748400.m4a"
-     }
-    ],
-    "focus": [
-     5,
-     6
-    ]
-   },
    "scene": {
     "view": "sentence",
     "dialogue": "tipps",
@@ -1799,7 +1617,7 @@
       "punct": "?",
       "plain": "Darf ich morgen zum Kurs gehen?",
       "ru": "Можно мне завтра на курс?",
-      "audio": "audio/ec25b21db9cb.m4a"
+      "audio": "audio/ec47f2a0bdda.m4a"
      }
     ]
    }
@@ -1813,53 +1631,6 @@
    "read": "*Geh bitte zum Arzt! Und rauch nicht!* Берём формы *du gehst* и *du rauchst*, убираем *du* и *-st* — глагол встаёт первым. *nicht* стоит после глагола, как в обычном предложении *Du rauchst nicht*. А *zum Arzt* — «к врачу» — это *zu* с дательным падежом из девятой темы.",
    "point": "*Geh zum Arzt!* · *Rauch nicht!* — *nicht* после глагола",
    "question": "Подруга кашляет. Как на «ты» посоветовать ей сходить к врачу и не курить?",
-   "sceneBefore": {
-    "view": "sentence",
-    "dialogue": "tipps",
-    "words": "rat",
-    "table": "schmerzen",
-    "rows": [
-     {
-      "slots": [
-       [],
-       [
-        {
-         "key": "darf",
-         "text": "Darf"
-        }
-       ],
-       [
-        {
-         "key": "ich",
-         "text": "ich"
-        },
-        {
-         "key": "morgen",
-         "text": "morgen"
-        },
-        {
-         "key": "zum",
-         "text": "zum"
-        },
-        {
-         "key": "kurs",
-         "text": "Kurs"
-        }
-       ],
-       [
-        {
-         "key": "geh",
-         "text": "geh+en"
-        }
-       ]
-      ],
-      "punct": "?",
-      "plain": "Darf ich morgen zum Kurs gehen?",
-      "ru": "Можно мне завтра на курс?",
-      "audio": "audio/ec25b21db9cb.m4a"
-     }
-    ]
-   },
    "scene": {
     "view": "sentence",
     "dialogue": "tipps",
@@ -1894,7 +1665,7 @@
       "punct": "!",
       "plain": "Geh bitte zum Arzt!",
       "ru": "Сходи, пожалуйста, к врачу!",
-      "audio": "audio/1a018364603f.m4a"
+      "audio": "audio/f959c3d6f045.m4a"
      },
      {
       "slots": [
@@ -1916,7 +1687,7 @@
       "punct": "!",
       "plain": "Rauch nicht!",
       "ru": "Не кури!",
-      "audio": "audio/c739c67faa5e.m4a"
+      "audio": "audio/fef169da2c2a.m4a"
      }
     ],
     "fresh": [
@@ -1930,7 +1701,7 @@
    "stepTitle": "Аудирование: сообщение из практики",
    "chapterIndex": 4,
    "indexInStep": 0,
-   "read": "В третьей части аудирования звучат сообщения на автоответчике: от друзей, из фирмы и очень часто — из врачебной практики. Каждое звучит дважды. До прослушивания прочитайте вопрос и варианты ответа. Здесь все три варианта — день и время, значит, слушать нужно именно их. И будьте готовы: в таких сообщениях обычно звучат два времени — старое и новое.",
+   "read": "В отдельном учебном сообщении практика переносит последующую запись Матео. Это не приём «сегодня в 11:15» из первого диалога. В третьей части аудирования текст звучит дважды. Сначала прочитайте вопрос и варианты, затем отделите отменённую пятницу 10:00 от предложенного понедельника. Ответственный следующий шаг в сообщении — перезвонить и подтвердить время.",
    "point": "Аудирование, часть 3: сначала прочитайте вопрос и варианты",
    "scene": {
     "view": "task",
@@ -1966,7 +1737,7 @@
       "punct": "!",
       "plain": "Geh bitte zum Arzt!",
       "ru": "Сходи, пожалуйста, к врачу!",
-      "audio": "audio/1a018364603f.m4a"
+      "audio": "audio/f959c3d6f045.m4a"
      },
      {
       "slots": [
@@ -1988,7 +1759,7 @@
       "punct": "!",
       "plain": "Rauch nicht!",
       "ru": "Не кури!",
-      "audio": "audio/c739c67faa5e.m4a"
+      "audio": "audio/fef169da2c2a.m4a"
      }
     ],
     "task": "anruf"
@@ -2002,68 +1773,7 @@
    "indexInStep": 1,
    "read": "Ответ b: в понедельник в 8:30. Пятница и десять часов в записи тоже звучат, но это старый приём, и он отменяется: *Das geht leider nicht.* Новое время — *halb neun*, «половина девятого», то есть 8:30, а не 9:30. На таких деталях и строят ловушки. Заметьте и прощание по телефону: *Auf Wiederhören!* — от *hören*, «слышать».",
    "point": "Ловушка: звучат два времени. *halb neun* — это 8:30",
-   "question": "Когда у Марко новый приём?",
-   "sceneBefore": {
-    "view": "task",
-    "dialogue": "tipps",
-    "words": "rat",
-    "table": "schmerzen",
-    "rows": [
-     {
-      "slots": [
-       [],
-       [
-        {
-         "key": "geh",
-         "text": "Geh"
-        }
-       ],
-       [
-        {
-         "key": "bitte",
-         "text": "bitte"
-        },
-        {
-         "key": "zum",
-         "text": "zum"
-        },
-        {
-         "key": "arzt",
-         "text": "Arzt"
-        }
-       ],
-       []
-      ],
-      "punct": "!",
-      "plain": "Geh bitte zum Arzt!",
-      "ru": "Сходи, пожалуйста, к врачу!",
-      "audio": "audio/1a018364603f.m4a"
-     },
-     {
-      "slots": [
-       [],
-       [
-        {
-         "key": "rauch",
-         "text": "Rauch"
-        }
-       ],
-       [
-        {
-         "key": "nicht",
-         "text": "nicht"
-        }
-       ],
-       []
-      ],
-      "punct": "!",
-      "plain": "Rauch nicht!",
-      "ru": "Не кури!",
-      "audio": "audio/c739c67faa5e.m4a"
-     }
-    ],
-    "task": "anruf"
-   },
+   "question": "Когда у Матео новый приём?",
    "scene": {
     "view": "task",
     "dialogue": "tipps",
@@ -2098,7 +1808,7 @@
       "punct": "!",
       "plain": "Geh bitte zum Arzt!",
       "ru": "Сходи, пожалуйста, к врачу!",
-      "audio": "audio/1a018364603f.m4a"
+      "audio": "audio/f959c3d6f045.m4a"
      },
      {
       "slots": [
@@ -2120,7 +1830,7 @@
       "punct": "!",
       "plain": "Rauch nicht!",
       "ru": "Не кури!",
-      "audio": "audio/c739c67faa5e.m4a"
+      "audio": "audio/fef169da2c2a.m4a"
      }
     ],
     "task": "anruf",
@@ -2169,7 +1879,7 @@
       "punct": "!",
       "plain": "Geh bitte zum Arzt!",
       "ru": "Сходи, пожалуйста, к врачу!",
-      "audio": "audio/1a018364603f.m4a"
+      "audio": "audio/f959c3d6f045.m4a"
      },
      {
       "slots": [
@@ -2191,7 +1901,7 @@
       "punct": "!",
       "plain": "Rauch nicht!",
       "ru": "Не кури!",
-      "audio": "audio/c739c67faa5e.m4a"
+      "audio": "audio/fef169da2c2a.m4a"
      }
     ],
     "task": "absage",
@@ -2204,7 +1914,7 @@
    "stepTitle": "Письмо: я заболел",
    "chapterIndex": 4,
    "indexInStep": 1,
-   "read": "Образец закрывает все три пункта: почему автор не придёт, когда вернётся и что с домашним заданием. Посмотрите на начало: после обращения *Lieber Herr Schulz* ставится запятая, а следующая строка начинается со строчной буквы — *ich bin krank …*. Заканчивают письмо *Viele Grüße* и именем. Другу пишут *Lieber Marco* или *Liebe Anna*.",
+   "read": "Образец закрывает все три пункта: почему автор не придёт, когда вернётся и что с домашним заданием. Посмотрите на начало: после обращения *Liebe Frau Thomsen* ставится запятая, а следующая строка начинается со строчной буквы — *ich bin krank …*. Заканчивают письмо *Viele Grüße* и именем. Другу пишут *Lieber Mateo* или *Liebe Dana*.",
    "point": "*Lieber Herr …,* — запятая, дальше со строчной; в конце *Viele Grüße*",
    "scene": {
     "view": "task",
@@ -2240,7 +1950,7 @@
       "punct": "!",
       "plain": "Geh bitte zum Arzt!",
       "ru": "Сходи, пожалуйста, к врачу!",
-      "audio": "audio/1a018364603f.m4a"
+      "audio": "audio/f959c3d6f045.m4a"
      },
      {
       "slots": [
@@ -2262,7 +1972,7 @@
       "punct": "!",
       "plain": "Rauch nicht!",
       "ru": "Не кури!",
-      "audio": "audio/c739c67faa5e.m4a"
+      "audio": "audio/fef169da2c2a.m4a"
      }
     ],
     "task": "absage",
@@ -2316,7 +2026,7 @@
       "punct": "!",
       "plain": "Mach bitte das Fenster auf!",
       "ru": "Открой, пожалуйста, окно!",
-      "audio": "audio/456fef186315.m4a"
+      "audio": "audio/e2186c547839.m4a"
      },
      {
       "slots": [
@@ -2355,7 +2065,7 @@
       "punct": "!",
       "plain": "Machen Sie bitte das Fenster auf!",
       "ru": "Откройте, пожалуйста, окно!",
-      "audio": "audio/bf66bf768593.m4a"
+      "audio": "audio/10bf5d914e16.m4a"
      }
     ],
     "task": "absage"
@@ -2374,7 +2084,7 @@
    ],
    "answer": 0,
    "why": "Часть тела + *schmerzen* — одно слово во мн. ч.: *Kopfschmerzen*.",
-   "audio": "audio/cf27637a45fc.m4a"
+   "audio": "audio/739191262e36.m4a"
   },
   {
    "id": "gesundheit-2",
@@ -2387,7 +2097,7 @@
    ],
    "answer": 1,
    "why": "*Ohren* — множественное число, поэтому *tun*.",
-   "audio": "audio/5e54a8e566aa.m4a"
+   "audio": "audio/5ab8d6f7396d.m4a"
   },
   {
    "id": "gesundheit-3",
@@ -2410,7 +2120,7 @@
    ],
    "hint": "müssen",
    "ru": "Мне сегодня нужно лежать в постели.",
-   "audio": "audio/0d6a2ebbc8e3.m4a"
+   "audio": "audio/e9bfec8c3c06.m4a"
   },
   {
    "id": "gesundheit-5",
@@ -2421,7 +2131,7 @@
    ],
    "hint": "dürfen",
    "why": "«Нельзя» — *nicht dürfen*: *du darf+st*.",
-   "audio": "audio/8276509afefc.m4a"
+   "audio": "audio/0d9283bf102a.m4a"
   },
   {
    "id": "gesundheit-6",
@@ -2444,23 +2154,23 @@
    ],
    "hint": "dürfen",
    "why": "Спрашиваем разрешения — *dürfen*; в вопросе да/нет глагол первым.",
-   "audio": "audio/edfd224e0385.m4a"
+   "audio": "audio/ea6ac08884cc.m4a"
   },
   {
    "id": "gesundheit-8",
    "type": "gap",
-   "q": "Ihr ___ die Tabletten nehmen.",
+   "q": "Ihr ___ die Karte mitnehmen.",
    "answer": [
     "müsst"
    ],
    "hint": "müssen",
    "why": "*ihr müsst* — во множественном числе умлаут возвращается.",
-   "audio": "audio/b8d650a24fd1.m4a"
+   "audio": "audio/1d4247bc2516.m4a"
   },
   {
    "id": "gesundheit-9",
    "type": "choice",
-   "q": "___ viel Tee, Marco!",
+   "q": "___ viel Tee, Mateo!",
    "options": [
     "Trinkst",
     "Trink",
@@ -2468,34 +2178,34 @@
    ],
    "answer": 1,
    "why": "Совет на «ты»: без *du* и без *-st* — *Trink!*",
-   "audio": "audio/f395f0e6340e.m4a"
+   "audio": "audio/6647ce574069.m4a"
   },
   {
    "id": "gesundheit-10",
    "type": "gap",
-   "q": "___ viel, Marco!",
+   "q": "___ viel, Mateo!",
    "answer": [
     "Schlaf|Schlafe"
    ],
    "hint": "schlafen",
    "why": "*du schläfst*, но *Schlaf!* — умлаут пропадает.",
-   "audio": "audio/801075db321c.m4a"
+   "audio": "audio/1c7e2fd2a5ff.m4a"
   },
   {
    "id": "gesundheit-11",
    "type": "gap",
-   "q": "___ die Tabletten, Marco!",
+   "q": "___ die Karte mit, Mateo!",
    "answer": [
     "Nimm"
    ],
-   "hint": "nehmen",
+   "hint": "mitnehmen",
    "why": "*du nimmst* → *Nimm!*: замена *e → i* остаётся.",
-   "audio": "audio/9649b7c7f2d9.m4a"
+   "audio": "audio/9d43642c7322.m4a"
   },
   {
    "id": "gesundheit-12",
    "type": "choice",
-   "q": "Anna und Lena, ___ bitte um vier!",
+   "q": "Dana und Elif, ___ bitte um vier!",
    "options": [
     "komm",
     "kommt",
@@ -2503,7 +2213,7 @@
    ],
    "answer": 1,
    "why": "Двум друзьям — форма *ihr* без *ihr*: *Kommt!*",
-   "audio": "audio/fb756cd4567f.m4a"
+   "audio": "audio/c9c01d545615.m4a"
   },
   {
    "id": "gesundheit-13",
@@ -2515,7 +2225,7 @@
    ],
    "hint": "mitbringen",
    "why": "Вежливо: глагол первым, *Sie* за ним, приставка *mit* — в конце.",
-   "audio": "audio/75951d8d82bd.m4a"
+   "audio": "audio/5a1b6cbca932.m4a"
   },
   {
    "id": "gesundheit-14",
@@ -2523,14 +2233,14 @@
    "ru": "Мне нужно лежать в постели.",
    "de": "Ich muss im Bett bleiben.",
    "why": "*muss* — на втором месте, *bleiben* — в конце.",
-   "audio": "audio/08202376b39f.m4a"
+   "audio": "audio/b27cee309138.m4a"
   },
   {
    "id": "gesundheit-15",
    "type": "order",
    "ru": "Можно мне завтра прийти на курс?",
    "de": "Darf ich morgen zum Kurs kommen?",
-   "audio": "audio/935865247226.m4a"
+   "audio": "audio/7047aaeae292.m4a"
   },
   {
    "id": "gesundheit-16",
@@ -2540,9 +2250,292 @@
    "also": [
     "Bitte geh zum Arzt!"
    ],
-   "audio": "audio/1a018364603f.m4a"
+   "audio": "audio/f959c3d6f045.m4a"
   }
  ],
+ "case": {
+  "title": "Der Termin auf dem falschen Zettel",
+  "ru": "Приём на неверном листке",
+  "intro": "В папке подготовки осталась старая запись и неточный пересказ правил. Помогите Матео восстановить сообщения. Выводы касаются слов в документах, а не медицинских решений.",
+  "people": {
+   "P": {
+    "name": "Frau Klein",
+    "voice": "Shelley"
+   }
+  },
+  "steps": [
+   {
+    "read": "Сверьте место боли с записанным словом.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Mein Hals tut weh. Ich habe Halsschmerzen.",
+      "ru": "У меня болит горло."
+     }
+    ],
+    "question": "О какой боли говорит запись?",
+    "options": [
+     "В горле",
+     "В зубе",
+     "В животе"
+    ],
+    "answer": 0,
+    "right": "*Hals* — горло или шея; *Halsschmerzen* здесь боль в горле.",
+    "wrong": [
+     null,
+     "Зуб — *Zahn*.",
+     "Живот — *Bauch*."
+    ]
+   },
+   {
+    "read": "Пятница осталась на старой карточке. В новом сообщении есть изменение.",
+    "evidence": [
+     {
+      "kind": "quote",
+      "who": "P",
+      "de": "Am Freitag geht es nicht. Können Sie am Montag um halb neun kommen? Bitte rufen Sie uns an.",
+      "ru": "В пятницу не получается. Можете прийти в понедельник в 8:30? Пожалуйста, позвоните нам.",
+      "audio": "audio/fceebe0b1c20.m4a"
+     }
+    ],
+    "question": "Какое время предлагают и что просят сделать?",
+    "options": [
+     "Пятница 10:00, ничего не делать",
+     "Понедельник 9:30, написать другу",
+     "Понедельник 8:30, перезвонить"
+    ],
+    "answer": 2,
+    "right": "*Halb neun* — 8:30. *Rufen Sie uns an* — просьба перезвонить, не молчаливое подтверждение.",
+    "wrong": [
+     "Пятница отменена.",
+     "*Halb neun* не 9:30.",
+     null
+    ]
+   },
+   {
+    "read": "В плане клуба фразу о необязательной еде переписали как запрет.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Ihr müsst kein Essen mitbringen. Essen ist schon da.",
+      "ru": "Вам не нужно приносить еду. Еда уже есть."
+     }
+    ],
+    "question": "Что означает исходное сообщение?",
+    "options": [
+     "Еду приносить запрещено",
+     "Приносить еду не обязательно",
+     "Нужно принести только хлеб"
+    ],
+    "answer": 1,
+    "right": "*Nicht müssen* — нет необходимости. Запрет требовал бы *nicht dürfen*.",
+    "wrong": [
+     "Так меняется смысл модального глагола.",
+     null,
+     "Ограничения только хлебом нет."
+    ]
+   },
+   {
+    "read": "В копии пропала приставка просьбы к друзьям.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Bringt bitte Brot mit!",
+      "ru": "Принесите, пожалуйста, хлеб!"
+     }
+    ],
+    "question": "К кому обращена просьба?",
+    "options": [
+     "К нескольким друзьям",
+     "К одному другу на du",
+     "Вежливо на Sie"
+    ],
+    "answer": 0,
+    "right": "*Bringt* — форма *ihr* без местоимения. Приставка *mit* завершает просьбу.",
+    "wrong": [
+     null,
+     "Одному другу: *Bring!*",
+     "Вежливо: *Bringen Sie!*"
+    ]
+   }
+  ],
+  "ending": "Старое время отделено от нового, необходимость не перепутана с запретом, просьба передана без потерь. Исправления отмечены рядом с источниками. Команда продолжит подготовку: нужно согласовать работу и понять, что уже сделано."
+ },
+ "adventure": {
+  "kind": "sequence",
+  "title": "Помогите Матео передать всё точно",
+  "intro": "Симптомы, новое время, правила и короткое сообщение требуют разных слов. Не угадывайте лечение — работайте только с информацией учебных сцен.",
+  "ending": "Симптомы переданы без подмены, новое время выбрано, просьба друзьям собрана, отсутствие на курсе объяснено. Матео может отдохнуть, а команда продолжит подготовку.",
+  "challenges": [
+   {
+    "id": "symptoms",
+    "kind": "match",
+    "title": "Передайте названные симптомы",
+    "intro": "Соедините слова Матео с их смыслом. Мы фиксируем сообщение, а не делаем медицинский вывод.",
+    "success": "Три названных симптома сохранены. Зубную боль Матео не упоминал.",
+    "wrong": "Сверьте части сложных слов: *Kopf*, *Hals*. *Fieber* — температура.",
+    "quotes": [
+     {
+      "de": "Ich habe Halsschmerzen und Kopfschmerzen. Und ich habe Fieber.",
+      "audio": "audio/ffc951b18c3f.m4a",
+      "name": "Mateo"
+     }
+    ],
+    "options": [
+     {
+      "id": "head",
+      "label": "Болит голова"
+     },
+     {
+      "id": "throat",
+      "label": "Болит горло"
+     },
+     {
+      "id": "fever",
+      "label": "Температура"
+     },
+     {
+      "id": "tooth",
+      "label": "Болит зуб"
+     }
+    ],
+    "slots": [
+     {
+      "id": "head",
+      "label": "Kopfschmerzen",
+      "answer": "head"
+     },
+     {
+      "id": "throat",
+      "label": "Halsschmerzen",
+      "answer": "throat"
+     },
+     {
+      "id": "fever",
+      "label": "Fieber",
+      "answer": "fever"
+     }
+    ]
+   },
+   {
+    "id": "new-appointment",
+    "kind": "clock",
+    "title": "Запишите предложенное новое время",
+    "intro": "В отдельном сообщении отменяют пятницу и предлагают понедельник. Установите часы для нового приёма, затем по сюжету нужно перезвонить в практику.",
+    "success": "Понедельник 8:30 — *halb neun*. Пятница 10:00 отменена; новое время нужно подтвердить звонком.",
+    "wrong": "Новое предложение — *am Montag um halb neun*, то есть 8:30, не 9:30.",
+    "quotes": [
+     {
+      "de": "Guten Tag, Herr Fernández, hier ist die Praxis Dr. Hoffmann. Sie haben am Freitag um zehn Uhr einen Termin. Das geht leider nicht: Frau Dr. Hoffmann ist am Freitag nicht da. Können Sie am Montag um halb neun kommen? Bitte rufen Sie uns kurz an. Vielen Dank und auf Wiederhören!",
+      "audio": "audio/58d038d9b536.m4a",
+      "name": "Hören, Teil 3"
+     }
+    ],
+    "answer": "08:30",
+    "initial": "08:00",
+    "minuteStep": 5
+   },
+   {
+    "id": "modal-plan",
+    "kind": "match",
+    "title": "Не превратите необязательное в запрет",
+    "intro": "Хауке прислал план помощникам клуба. Разнесите три сообщения: требуется, запрещено или не обязательно.",
+    "success": "Прийти нужно; курить в клубе нельзя; приносить еду не обязательно, потому что она уже есть.",
+    "wrong": "*Müssen kein Essen mitbringen* не запрещает еду, а снимает необходимость.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Die Helfer müssen am Samstag um zehn Uhr zum Club kommen. Sie dürfen nicht im Club rauchen. Sie müssen kein Essen mitbringen. Essen ist schon da.",
+      "name": "Hauke"
+     }
+    ],
+    "options": [
+     {
+      "id": "must",
+      "label": "müssen · нужно"
+     },
+     {
+      "id": "forbidden",
+      "label": "nicht dürfen · нельзя"
+     },
+     {
+      "id": "optional",
+      "label": "nicht müssen · не нужно"
+     }
+    ],
+    "slots": [
+     {
+      "id": "arrive",
+      "label": "am Samstag um zehn kommen",
+      "answer": "must"
+     },
+     {
+      "id": "smoke",
+      "label": "im Club rauchen",
+      "answer": "forbidden"
+     },
+     {
+      "id": "food",
+      "label": "Essen mitbringen",
+      "answer": "optional"
+     }
+    ]
+   },
+   {
+    "id": "friends-request",
+    "kind": "order",
+    "title": "Попросите двух друзей принести хлеб",
+    "intro": "Обращайтесь к Дане и Элиф на «вы» как к друзьям, без вежливого Sie: «Принесите, пожалуйста, хлеб!»",
+    "success": "*Bringt bitte Brot mit!* Для нескольких друзей форма *ihr bringt*, местоимение в просьбе опускается.",
+    "wrong": "Нужна форма *Bringt*, затем *bitte Brot*, в конце приставка *mit!*",
+    "tokens": [
+     "Bringt",
+     "bitte",
+     "Brot",
+     "mit!"
+    ],
+    "label": "Просьба двум друзьям"
+   },
+   {
+    "id": "course-message",
+    "kind": "pack",
+    "title": "Проверьте сообщение преподавательнице",
+    "intro": "Выберите все три смысловых пункта, которые просили сообщить в задании. Обращение и подпись уже добавлены. После игры попробуйте сформулировать свой вариант в экзаменационном задании.",
+    "success": "Есть причина отсутствия, время возвращения и вопрос о домашнем задании. Посторонний заказ кофе не нужен. Это опоры для собственного короткого письма.",
+    "wrong": "Проверьте три пункта задания: почему не придёте, когда вернётесь, что с домашней работой.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Sie sind krank und können morgen nicht zum Deutschkurs kommen. Schreiben Sie eine E-Mail an Ihre Kursleiterin, Frau Thomsen. Schreiben Sie zu jedem Punkt ein bis zwei Sätze. Vergessen Sie nicht Anrede und Gruß.\n\nLiebe Frau Thomsen,\n…\nViele Grüße\n\nWarum kommen Sie nicht?\n\nWann kommen Sie wieder?\n\nHausaufgaben?",
+      "name": "Schreiben, Teil 2"
+     }
+    ],
+    "options": [
+     {
+      "id": "why",
+      "label": "Ich bin krank und kann morgen nicht zum Kurs kommen."
+     },
+     {
+      "id": "return",
+      "label": "Am Donnerstag komme ich wieder."
+     },
+     {
+      "id": "homework",
+      "label": "Welche Hausaufgaben haben wir?"
+     },
+     {
+      "id": "food",
+      "label": "Ich möchte einen Kaffee bestellen."
+     }
+    ],
+    "answer": [
+     "why",
+     "return",
+     "homework"
+    ]
+   }
+  ]
+ },
  "spy": [
   {
    "de": "Ich bleibe im Bett.",

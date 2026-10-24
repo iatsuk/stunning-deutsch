@@ -1,0 +1,156 @@
+.adventure-section { max-width: 1240px; margin: 0 auto; padding: 80px var(--gutter); border-top: 1px solid var(--line); }
+.adventure-game { padding: clamp(18px, 3vw, 36px); background: var(--panel); border: 1px solid var(--line-strong); border-radius: 12px; }
+.adventure-game h3 { font-size: clamp(23px, 3vw, 32px); margin: 20px 0 12px; line-height: 1.25; }
+.adventure-game > p { color: var(--muted); max-width: 780px; }
+.adventure-progress { display: flex; align-items: center; gap: 18px; color: var(--muted); font: 12px var(--mono); margin-bottom: 22px; }
+.adventure-progress progress { flex: 1; max-width: 240px; height: 5px; accent-color: var(--accent); }
+.adventure-challenge > p { color: var(--muted); max-width: 780px; }
+.challenge-answer { margin: 24px 0 16px; border: 1px dashed var(--line-strong); border-radius: 8px; padding: 18px; background: var(--bg); }
+.challenge-answer > div, .challenge-tokens { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+.challenge-answer > div { min-height: 48px; }
+.challenge-answer p { margin: 8px 0; color: var(--muted); font-size: 14px; }
+.challenge-answer button > span:last-child { color: var(--muted); }
+.challenge-tokens button:disabled { opacity: .3; }
+.challenge-answer button:disabled { opacity: 1; }
+.adventure-game .challenge-clear { margin-top: 16px; background: none; font-size: 13px; padding: 6px 10px; }
+.challenge-options { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr)); gap: 12px; margin-top: 24px; }
+.challenge-options button { display: flex; gap: 12px; align-items: center; min-height: 90px; text-align: left; }
+.challenge-options button[aria-pressed="true"] { border-color: var(--accent); background: #343023; }
+.challenge-icon { font-size: 28px; }
+.challenge-tick { margin-left: auto; color: var(--accent); }
+.matching-workbench { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(200px, 1fr); gap: 24px; margin-top: 24px; align-items: start; }
+.matching-map { min-width: 0; }
+.matching-count { font: 12px var(--mono); margin-top: 24px; color: var(--muted); }
+.matching-workbench[data-done] { grid-template-columns: 1fr; }
+.matching-anchor { display: flex; align-items: center; justify-content: center; gap: 12px; margin: 0 auto 22px; padding: 12px; border-bottom: 1px solid var(--line-strong); font-size: 24px; }
+.matching-slots { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.matching-slots button { display: flex; flex-direction: column; align-items: start; text-align: left; gap: 12px; min-height: 106px; }
+.matching-slots button[aria-pressed="true"] { border-color: var(--accent); box-shadow: inset 3px 0 var(--accent); }
+.matching-slots button[data-invalid] { border-color: var(--question); }
+.matching-label { color: var(--muted); font-size: 16px; }
+.matching-slots strong { font-size: 17px; font-weight: 500; overflow-wrap: anywhere; }
+.matching-choices { border-left: 1px solid var(--line); padding-left: 24px; }
+.matching-choices h4 { font-size: 22px; margin: 10px 0 18px; }
+.matching-choices > div { display: flex; flex-wrap: wrap; gap: 10px; }
+.matching-choices > p { color: var(--muted); font-size: 13px; }
+.adventure-results { list-style: none; padding: 0; margin: 24px 0; color: var(--ok); line-height: 1.8; }
+.quantity-cart { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 14px; margin-top: 24px; }
+.quantity-cart article { padding: 18px; border: 1px solid var(--line-strong); border-radius: 9px; background: var(--bg); }
+.quantity-cart article[data-invalid] { border-color: var(--question); }
+.quantity-product { display: flex; gap: 14px; align-items: center; }
+.quantity-product > span { font-size: 30px; }
+.quantity-product h4 { font-size: 22px; margin: 0; }
+.quantity-controls { display: flex; align-items: center; gap: 8px; margin-top: 18px; }
+.quantity-controls output { flex: 1; text-align: center; font: 16px var(--mono); }
+.quantity-controls button { min-width: 44px; font-size: 20px; }
+.game-clock { margin-top: 24px; padding: 20px; border: 1px solid var(--line-strong); border-radius: 10px; background: var(--bg); }
+.game-clock .clock { grid-template-columns: minmax(120px, 220px) 1fr; }
+.game-clock .clock-digital { font-size: clamp(30px, 5vw, 48px); }
+.game-clock-controls { display: flex; flex-wrap: wrap; gap: 16px 30px; margin: 20px 0; }
+.game-clock-controls > div { display: flex; align-items: center; gap: 10px; }
+.game-clock-controls span { font-size: 14px; color: var(--muted); min-width: 58px; }
+.game-clock > p { color: var(--muted); font-size: 13px; margin-bottom: 0; }
+.adventure-game button, .adventure-primary { cursor: pointer; border: 1px solid var(--line-strong); background: var(--panel-2); color: var(--text); border-radius: 7px; padding: 10px 14px; font: inherit; line-height: 1.5; text-decoration: none; }
+.adventure-game button:hover:not(:disabled), .adventure-primary:hover { border-color: var(--accent); }
+.adventure-game button:disabled { cursor: default; }
+.adventure-game .adventure-primary { display: inline-flex; justify-content: center; align-items: center; background: var(--accent); color: #17150f; border-color: var(--accent); font-weight: 600; }
+.adventure-step { display: flex; justify-content: space-between; gap: 16px; color: var(--accent); font: 12px var(--mono); text-transform: uppercase; letter-spacing: .07em; }
+.crew-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 14px; margin: 26px 0; }
+.crew-card { min-width: 0; border: 1px solid var(--line-strong); border-radius: 9px; padding: 16px; background: var(--bg); }
+.crew-card header { display: flex; gap: 12px; align-items: center; margin-bottom: 16px; }
+.crew-card h4 { margin: 0; font-size: 21px; }
+.crew-avatar { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 50%; color: #b9dded; background: #284451; font-family: var(--serif); font-size: 22px; }
+.crew-card[data-person="mateo"] .crew-avatar { background: #48362c; color: #efc79f; }
+.crew-card[data-person="elif"] .crew-avatar { background: #314332; color: #c2dba7; }
+.crew-card .crew-slot { display: block; text-align: left; width: 100%; margin-top: 8px; padding: 10px; min-height: 72px; background: var(--panel); }
+.crew-slot small { display: block; font-size: 11px; color: var(--muted); font-family: var(--mono); }
+.crew-slot strong { display: block; font-weight: 500; margin-top: 4px; overflow-wrap: anywhere; }
+.crew-card button[aria-pressed="true"] { border-color: var(--accent); box-shadow: inset 3px 0 var(--accent); }
+.crew-card .adventure-primary { width: 100%; margin-top: 16px; }
+.crew-workbench { display: grid; grid-template-columns: 1.2fr 1fr; gap: 24px; border-top: 1px solid var(--line); padding-top: 20px; }
+.crew-workbench h4 { margin: 0 0 12px; }
+.crew-labels > div { display: flex; flex-wrap: wrap; gap: 10px; }
+.crew-labels > p { color: var(--muted); margin: 8px 0 16px; font-size: 15px; }
+.crew-labels button { background: #252c2e; }
+.adventure-clue { background: var(--bg); border: 1px solid var(--line); padding: 16px; border-radius: 8px; }
+.clue-controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.clue-sender { width: 100%; font: 11px var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .08em; }
+.clue-controls button { padding: 8px 10px; font-size: 13px; }
+.adventure-clue blockquote { border: 0; padding: 0; margin: 16px 0 0; font-size: 19px; }
+.adventure-clue blockquote p { margin: 8px 0; white-space: pre-line; }
+.clue-hidden, .adventure-clue > small { font-size: 13px; color: var(--muted); }
+.adventure-feedback { min-height: 32px; margin-top: 20px; padding: 0; color: var(--question); }
+.adventure-feedback:not(:empty) { border-left: 3px solid currentColor; padding: 10px 16px; background: rgb(255 159 107 / 5%); }
+.adventure-feedback[data-ok="true"] { color: var(--ok); }
+.adventure-storage { color: var(--muted); font-size: 13px; margin: 16px 0 0; }
+.adventure-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+.adventure-win h3 { margin-top: 10px; }
+.win-stamp { display: grid; place-items: center; width: 54px; height: 54px; margin-bottom: 20px; border: 1px solid var(--ok); color: var(--ok); border-radius: 50%; font-size: 26px; }
+.harbor-map { margin: 24px 0; overflow: hidden; border-radius: 10px; border: 1px solid #3b606d; }
+.harbor-shore { display: flex; justify-content: space-between; gap: 16px; padding: 16px 22px; background: #303737; border-bottom: 8px solid #6b6250; font-size: 15px; }
+.harbor-walker { color: var(--accent); }
+.harbor-water { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; padding: 0 26px 24px; background: repeating-linear-gradient(175deg, transparent, transparent 24px, rgb(159 213 224 / 7%) 25px, transparent 27px), #16333e; }
+.harbor-water .harbor-berth { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; background: transparent; border: 1px solid transparent; border-radius: 0 0 8px 8px; padding: 0 8px 12px; min-height: 215px; }
+.harbor-berth:hover:not(:disabled) { background: rgb(255 255 255 / 5%); }
+.harbor-berth[aria-pressed="true"] { background: rgb(95 212 156 / 12%); border-color: var(--ok); }
+.harbor-berth[data-visited="true"]:not([aria-pressed="true"]) { border-color: var(--question); }
+.pier-number { position: relative; z-index: 1; min-width: 62px; padding: 8px; font: 20px var(--mono); color: #fff0c5; background: #655840; border: 1px solid #8c7953; }
+.pier-planks { width: 38px; height: 86px; background: repeating-linear-gradient(0deg, #7c6e51 0 12px, #4d4839 13px 15px); }
+.boat-shape { font-size: 48px; margin-top: -28px; margin-left: 52px; line-height: 1.2; filter: drop-shadow(0 5px 5px #0c1e27); }
+.boat-name { font-size: 12px; color: #c1dce5; margin-top: 10px; }
+.phone-scene { display: grid; grid-template-columns: 1fr 300px; gap: 28px; align-items: start; margin-top: 24px; }
+.game-phone { padding: 24px; border: 2px solid #525c61; border-radius: 28px; background: #101719; box-shadow: 0 10px 25px rgb(0 0 0 / 20%); }
+.game-phone output { display: block; padding: 24px 0 10px; min-height: 76px; font: 22px var(--mono); color: #d0e5d3; text-align: center; white-space: nowrap; }
+.game-phone > small { display: block; font-size: 11px; text-align: center; color: var(--muted); }
+.phone-keys { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 20px 0 12px; }
+.phone-keys button { font: 22px var(--mono); min-height: 52px; border-radius: 10px; }
+.game-phone .phone-call { width: 100%; background: #246044; color: #ddf4e7; border-color: #528e70; }
+.phone-call:disabled { opacity: .5; }
+.phone-hint { margin-top: 20px; font-size: 14px; color: var(--muted); }
+.phone-hint summary { cursor: pointer; color: var(--text); padding: 8px 0; }
+.phone-hint .adventure-clue { margin-top: 14px; }
+.school-doors { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; margin-top: 28px; padding: 24px 24px 0; background: linear-gradient(#343b3c 85%, #675d4b 85%); border-radius: 8px; }
+.school-doors button { position: relative; min-height: 190px; background: linear-gradient(90deg, #4f463a, #625544); border: 5px solid #2d2c29; border-bottom: 0; border-radius: 3px 3px 0 0; padding: 20px 8px 80px; }
+.school-doors button > span { display: inline-block; padding: 6px 9px; font: 14px var(--mono); background: #d9d4c6; color: #302c25; border-radius: 3px; }
+.school-doors i { position: absolute; width: 24px; height: 5px; background: #d0b97d; right: 12px; top: 115px; border-radius: 2px; }
+.adventure-receipt { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 24px 0; border: 1px solid var(--line-strong); border-radius: 8px; }
+.adventure-receipt > span { padding: 18px; color: var(--muted); font-size: 13px; }
+.adventure-receipt strong { display: block; color: var(--text); margin-top: 6px; font-weight: 500; }
+.adventure-mode { color: var(--muted); font-size: 14px; }
+@media (max-width: 700px) {
+  .game-clock { padding: 12px; }
+  .game-clock .clock { grid-template-columns: minmax(100px, 140px) minmax(0, 1fr); gap: 12px; }
+  .matching-workbench { grid-template-columns: 1fr; }
+  .matching-choices { border-left: 0; border-top: 1px solid var(--line); padding: 18px 0 0; }
+  .matching-slots button { padding: 10px; min-height: 104px; }
+  .adventure-section { padding-top: 44px; }
+  .crew-cards { grid-template-columns: 1fr; }
+  .crew-card { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 12px; }
+  .crew-card header { grid-column: 1 / -1; margin: 0; }
+  .crew-card .crew-slot { margin: 0; min-height: 66px; }
+  .crew-card .adventure-primary { grid-column: 1 / -1; margin-top: 4px; }
+  .crew-workbench, .phone-scene { grid-template-columns: 1fr; gap: 18px; }
+  .game-phone { width: 100%; max-width: 320px; justify-self: center; }
+  .harbor-water { gap: 4px; padding: 0 4px 16px; }
+  .harbor-shore { padding: 12px; font-size: 12px; }
+  .harbor-water .harbor-berth { padding: 0 2px 12px; min-width: 0; }
+  .pier-number { font-size: 18px; min-width: 48px; }
+  .boat-shape { font-size: 36px; margin-left: 22px; }
+  .school-doors { gap: 6px; padding: 18px 6px 0; }
+  .school-doors button { padding: 16px 3px 60px; min-height: 160px; border-width: 3px; }
+  .school-doors button > span { padding: 5px 3px; font-size: 12px; }
+  .adventure-receipt { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .crew-slot, .harbor-berth, .school-doors button { transition: border-color .18s, background-color .18s; }
+}
+.note-fields, .worksheet { display:grid;gap:1rem; }
+.note-fields label, .worksheet-question label { display:grid;gap:.5rem; }
+.note-fields input, .worksheet input, .worksheet select { width:100%;min-width:0;box-sizing:border-box;padding:.7rem;color:var(--text,#eee);background:var(--surface,#18191c);border:1px solid #5b5b60;border-radius:.4rem;font:inherit; }
+.conversation-reply { padding:1rem;border-left:3px solid #d4bc75;white-space:pre-line; }
+.worksheet .message-text { white-space:pre-line; }
+.worksheet-question { padding:.5rem 0;border-bottom:1px solid #444; }
+.writing-draft { display:grid;gap:1rem;margin-block:1rem; }
+.writing-draft label { display:block;margin-block:.5rem; }
+.writing-draft input { margin-right:.5rem; }
+.writing-draft textarea { width:100%;box-sizing:border-box;font:inherit;padding:.7rem;background:#18191c;color:#eee;border:1px solid #777;border-radius:.4rem; }

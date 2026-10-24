@@ -66,9 +66,13 @@
 .topbar nav {
   display: flex;
   gap: 22px;
+  min-width: 0;
+  overflow-x: auto;
+  scrollbar-width: thin;
 }
 
 .topbar nav button {
+  flex: none;
   padding: 0;
   border: 0;
   background: none;
@@ -82,6 +86,40 @@
 
 .topbar nav button:hover {
   color: var(--text);
+}
+
+html:has(.topbar-lesson) {
+  --header-height: 100px;
+  scroll-padding-top: 116px;
+}
+
+.topbar-lesson {
+  height: 100px;
+  display: grid;
+  grid-template-rows: 56px 44px;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
+}
+
+.topbar-lesson nav {
+  height: 44px;
+  border-top: 1px solid var(--line);
+}
+
+.topbar-lesson nav button {
+  border-bottom: 2px solid transparent;
+}
+
+.topbar nav button[aria-current] {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+@media (max-width: 520px) {
+  html:has(.topbar-lesson) { --header-height: 128px; scroll-padding-top: 144px; }
+  .topbar-lesson { height: 128px; grid-template-rows: 56px 72px; }
+  .topbar-lesson nav { height: 72px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 14px; overflow: visible; }
+  .topbar-lesson nav button { text-align: left; font-size: 11px; }
 }
 
 /* Обложки */
@@ -146,6 +184,29 @@
 
 .cta:hover {
   filter: brightness(1.08);
+}
+
+.home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 24px;
+  margin-top: 36px;
+}
+
+.home-actions .cta {
+  margin-top: 0;
+}
+
+.home-actions button {
+  padding: 12px 0;
+  border: 0;
+  background: none;
+  color: var(--text);
+  font: inherit;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  cursor: pointer;
 }
 
 .topic-facts {
@@ -290,9 +351,9 @@
   grid-column: 2;
   grid-row: 1;
   position: sticky;
-  top: 72px;
+  top: calc(var(--header-height, 56px) + 16px);
   align-self: start;
-  height: calc(100vh - 96px);
+  height: calc(100vh - var(--header-height, 56px) - 40px);
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -674,7 +735,7 @@
 
 .how-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
   margin: 40px 0 0;
   padding: 0;
@@ -703,6 +764,22 @@
   margin: 0;
   font-size: 14.5px;
   line-height: 1.5;
+  color: var(--muted);
+}
+
+.home-practice {
+  max-width: 760px;
+  margin-top: 40px;
+}
+
+.home-practice h3 {
+  margin: 0 0 12px;
+  font-size: 22px;
+}
+
+.home-practice p {
+  margin: 0;
+  line-height: 1.6;
   color: var(--muted);
 }
 
@@ -1008,10 +1085,6 @@ li[data-done] .stop-dot {
 /* Телефон: сцена закреплена сверху, текст идёт под ней */
 
 @media (max-width: 860px) {
-  .topbar nav button:not(:first-child) {
-    display: none;
-  }
-
   .crumb:last-child:not(:nth-child(2)) {
     display: none;
   }
@@ -1033,7 +1106,7 @@ li[data-done] .stop-dot {
   .stage {
     grid-column: 1;
     grid-row: 1;
-    top: 56px;
+    top: var(--header-height, 56px);
     z-index: 5;
     height: auto;
     gap: 8px;

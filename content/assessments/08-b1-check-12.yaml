@@ -1,0 +1,179 @@
+id: b1-check-12
+level: b1
+mode: review
+title: "После уроков 9–12: вечер обмена книгами"
+intro: Другая группа выбирает помещение и распределяет задачи. Различите интерес и
+  ответственность, восстановите ссылки в письме и предложите решение. Все суммы и предложения
+  вымышлены.
+sections:
+  - id: check
+    title: Условия и общий компромисс
+    taskIds:
+      - read
+      - listen
+      - gaps
+      - write
+      - talk
+tasks:
+  read:
+    kind: worksheet
+    part: b1-lesen-2
+    format: article
+    title: Ein Raum für den Bücherabend
+    text: Karin kümmert sich um die Bücher. Jonas interessiert sich für alte Geschichten, hat aber
+      noch keine Aufgabe übernommen. Nora wartet auf die Antwort zur Küche. Darauf wartet sie
+      seit Dienstag. Für den Bücherabend kommen 20 Personen. Die Gruppe hat 100 Euro
+      einschließlich 35 Euro für Essen. Raum A kostet 70 Euro ohne Küche. Raum B kostet 50 Euro
+      mit Küche und hat 20 Plätze. Beide Räume sind am gewünschten Samstag von 15 bis 17 Uhr
+      frei. Obwohl A näher am Bahnhof liegt, schlägt Nora B vor. Sie würde lieber etwas länger
+      gehen und dafür im Budget bleiben. Eine Buchung gibt es noch nicht.
+    questions:
+      - prompt: Wer hat schon eine Aufgabe übernommen?
+        options:
+          - Niemand
+          - Karin
+          - Jonas
+        answers:
+          - Karin
+      - prompt: Worauf bezieht sich darauf?
+        options:
+          - Auf Jonas
+          - Auf alte Geschichten
+          - Auf die Antwort zur Küche
+        answers:
+          - Auf die Antwort zur Küche
+      - prompt: Welches Angebot erfüllt Küche und Budget?
+        options:
+          - B mit Essen für 85 Euro
+          - A mit Essen für 105 Euro
+          - Beide ohne Einschränkung
+        answers:
+          - B mit Essen für 85 Euro
+      - prompt: Was ist noch nicht geschehen?
+        options:
+          - Die Berechnung des Budgets
+          - Die Buchung
+          - Der Vorschlag
+        answers:
+          - Die Buchung
+  listen:
+    kind: worksheet
+    part: b1-hoeren-1
+    format: article
+    title: Zwei Meinungen · Ausschnitt
+    recordings:
+      - voice: Shelley
+        text: Ein kurzer Weg ist mir wichtig. Trotzdem würde ich den anderen Raum wählen, wenn dort die
+          Küche enthalten ist. Nach einem gemeinsamen Abend möchte ich nicht noch einen zweiten
+          Ort für das Essen suchen.
+      - voice: Eddy
+        text: Ich interessiere mich sehr für alte Bücher. Beim nächsten Treffen möchte ich gern eine
+          Geschichte vorstellen. Für den Einkauf kann ich diesmal aber keine Verantwortung
+          übernehmen, weil ich vorher arbeiten muss.
+    questions:
+      - prompt: Die erste Person würde trotz des längeren Weges einen Raum mit Küche wählen.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+      - prompt: Die zweite Person hat den Einkauf bereits fest übernommen.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+  gaps:
+    kind: worksheet
+    part: b1-sprachbausteine-1
+    format: cloze
+    title: Vorschlag an die Gruppe · Ausschnitt
+    text: Ich warte [[1]] die Antwort zur Küche. [[2]] der Weg länger ist, würde ich Raum B nehmen.
+      [[3]] brauchen wir nur 85 Euro. Wir [[4]] die Bücher vorher gemeinsam sortieren. Karin
+      kümmert [[5]] um die Liste.
+    questions:
+      - prompt: Lücke 1
+        options:
+          - um
+          - für
+          - auf
+        answers:
+          - auf
+      - prompt: Lücke 2
+        options:
+          - Obwohl
+          - Trotzdem
+          - Deshalb
+        answers:
+          - Obwohl
+      - prompt: Lücke 3
+        options:
+          - Mit wem
+          - Dafür
+          - Für wen
+        answers:
+          - Dafür
+      - prompt: Lücke 4
+        options:
+          - würde
+          - hätte
+          - könnten
+        answers:
+          - könnten
+      - prompt: Lücke 5
+        options:
+          - sich
+          - sie
+          - ihr
+        answers:
+          - sich
+  write:
+    kind: message
+    part: b1-schreiben-1
+    title: Einen passenden Raum vorschlagen
+    text: Schreiben Sie an die Gruppe.20 Gäste, Samstag 15–17 Uhr, Budget 100 einschließlich 35
+      Essen. B kostet 50 mit Küche, A70 ohne Küche.
+    points:
+      - Einen Vorschlag machen
+      - Den Vorschlag trotz des längeren Weges begründen
+      - Die vollständigen Kosten und die Küche erklären
+      - Eine konkrete Aufgabe übernehmen und um Bestätigung bitten
+    situation: Behandeln Sie alle vier Punkte. Schreiben Sie einen zusammenhängenden Brief mit
+      Anrede und Gruß. Die Antwort wird nicht automatisch bewertet.
+  talk:
+    kind: card
+    part: b1-sprechen-3
+    title: Ein gemeinsames Ergebnis finden
+    situation: Einigen Sie sich auf den Raum und die Verteilung der Aufgaben. Behalten Sie 20
+      Plätze, Küche und 100 Euro Gesamtbudget im Blick.
+    word: Vorschlag · Rückfrage · Reaktion · Einigung
+    roles:
+      - title: Person A
+        text: Sie möchten einen kurzen Weg und können die Gäste informieren. Hören Sie den anderen
+          Vorschlag an und fragen Sie nach der Küche.
+      - title: Person B
+        text: Sie möchten unter 100 Euro bleiben und können die Verwaltung anrufen. Karin übernimmt die
+          Bücher; der Einkauf ist noch offen.
+review:
+  - level: b1
+    topic: b1-absprachen
+    label: Интерес, ответственность и управление
+    taskIds:
+      - read
+      - listen
+      - gaps
+  - level: b1
+    topic: b1-online
+    label: К чему относится короткий ответ
+    taskIds:
+      - read
+      - gaps
+  - level: b1
+    topic: b1-meinungen
+    label: Обстоятельство и уступка
+    taskIds:
+      - gaps
+      - listen
+  - level: b1
+    topic: b1-vorschlaege
+    label: Предложение и письмо с четырьмя пунктами

@@ -6,7 +6,8 @@ lede: >-
   Первый день на курсах немецкого в Киле. Здесь здороваются коротким *Moin* —
   и утром, и вечером. Учимся называть себя, говорить, откуда вы и где живёте, —
   и сразу видим главное правило немецкого предложения: глагол стоит на втором
-  месте.
+  месте. После занятий знакомимся в парусном клубе на Kiellinie: то же
+  правило помогает представить и себя, и лодку.
 goals:
   - Поздороваться и попрощаться — с соседом, с другом и в официальном офисе
   - Назвать имя, страну, город и языки, на которых вы говорите
@@ -69,6 +70,30 @@ dialogues:
         ru: Большое спасибо. До свидания, госпожа Йылдыз!
       - E: Auf Wiedersehen!
         ru: До свидания!
+  hafen:
+    title: Moin an der Kiellinie!
+    ru: Знакомство у воды
+    place: Парусный клуб на Kiellinie, Kiel
+    people:
+      M: { name: Mateo, voice: Reed }
+      H: { name: Hauke, voice: Rocko }
+    lines:
+      - H: Moin! Ich bin Hauke. Wie heißt du?
+        ru: Привет! Я Хауке. Как тебя зовут?
+      - M: Ich heiße Mateo. Ich komme aus Argentinien.
+        ru: Меня зовут Матео. Я из Аргентины.
+      - H: Wohnst du jetzt in Kiel?
+        ru: Ты сейчас живёшь в Киле?
+      - M: Ja, ich wohne in Holtenau. Ich segle gern. Und du?
+        ru: Да, я живу в Хольтенау. Я люблю ходить под парусом. А ты?
+      - H: Ich segle auch gern. Das ist die „Sprotte“.
+        ru: Я тоже люблю ходить под парусом. Это «Шпротта».
+      - M: Die „Sprotte“? Wie heißt das Boot?
+        ru: «Шпротта»? Как называется лодка?
+      - H: Das Boot heißt „Sprotte“. Wir segeln hier in Kiel.
+        ru: Лодка называется «Шпротта». Мы ходим под парусом здесь, в Киле.
+      - M: Super! Tschüss, Hauke!
+        ru: Здорово! Пока, Хауке!
 
 words:
   hallo:
@@ -112,6 +137,15 @@ words:
       - { de: die Ukraine, ru: Украина, pl: "-", note: "aus der Ukraine · Ukrainisch" }
       - { de: die Schweiz, ru: Швейцария, pl: "-", note: aus der Schweiz }
       - { de: die USA, ru: США, pl: pl, note: aus den USA }
+  am-wasser:
+    title: Am Wasser
+    ru: У воды и после прогулки
+    items:
+      - { de: der Hafen, ru: "порт, гавань", pl: Häfen }
+      - { de: das Boot, ru: лодка, pl: Boote, note: Das Boot heißt Sprotte. }
+      - { de: segeln, ru: ходить под парусом, note: "ich segle · wir segeln" }
+      - { de: das Café, ru: кафе, pl: Cafés }
+      - { de: der Strand, ru: пляж, pl: Strände }
   fragen:
     title: Fragewörter
     ru: Вопросительные слова
@@ -252,6 +286,28 @@ steps:
         point: "*Auf Wiedersehen!* — официально; *Tschüss!* — привычно на севере"
         set: { reveal: 8, focus: [3, 5, 6, 7] }
 
+  - id: hafen
+    chapter: scene
+    title: Теперь — в парусном клубе
+    beats:
+      - read: >-
+          После курса Матео знакомится с Хауке на Kiellinie. Место другое,
+          но вопросы те же: имя, откуда вы и где живёте. Прежде чем открыть
+          следующие реплики, ответьте за себя на вопрос *Wohnst du jetzt in
+          Kiel?* Настоящий ответ полезнее заученной биографии Матео.
+          *Ich segle gern* — готовая фраза «я люблю ходить под парусом»;
+          *gern* подробнее разберём в теме о еде.
+        point: "На курсе и в клубе: *Wie heißt du? Woher kommst du? Wo wohnst du?*"
+        set: { view: dialogue, dialogue: hafen, reveal: 4, focus: [0, 1, 2, 3] }
+      - read: >-
+          *heißen* подходит не только людям: *Wie heißt das Boot?* — «как
+          называется лодка?». Ответ — *Das Boot heißt Sprotte*. У *segeln*
+          запомните короткое *ich segle*; с *wir* всё привычно: *wir segeln*.
+          Теперь сыграйте сцену ещё раз: представьтесь Хауке от своего имени,
+          назовите свой город и язык. Лодку и парусный опыт выдумывать не нужно.
+        point: "*Wie heißt das Boot?* — название спрашивают тем же *heißen*, что и имя"
+        set: { reveal: 8, focus: [3, 4, 5, 6, 7] }
+
   - id: hallo
     chapter: words
     title: Здороваемся и прощаемся
@@ -293,6 +349,20 @@ steps:
           *woher* — «откуда».
         point: "*wo?* — где, *woher?* — откуда"
         set: { view: words, words: fragen }
+
+  - id: am-wasser
+    chapter: words
+    title: Пять слов для береговой жизни
+    beats:
+      - read: >-
+          Для первой встречи у воды не нужны названия снастей. Достаточно
+          пяти слов: гавань, лодка, ходить под парусом, кафе и пляж. Они
+          пригодятся и в обычной прогулке по Килю. *Das Boot* — общее слово
+          «лодка», а *die Jolle* из дела темы — небольшая парусная лодка.
+          Учите прежде всего слова с карточек; незнакомую морскую деталь
+          сюжета пока достаточно понять из контекста.
+        point: "Береговая жизнь: *der Hafen, das Boot, segeln, das Café, der Strand*"
+        set: { view: words, words: am-wasser }
 
   - id: pronomen
     chapter: grammar
@@ -411,6 +481,32 @@ steps:
           совпадают.
         point: "Основа на *-s*, *-ß*, *-z*: *du heißt*, *du tanzt*"
         set: { view: table, table: endungen, focus: [1, 2] }
+
+  - id: selbst-erklaeren
+    chapter: practice
+    title: Объясните Хауке — потом скажите о себе
+    beats:
+      - question: Почему *In Kiel ich wohne* не подходит? Объясните до открытия ответа.
+        read: >-
+          *In Kiel* — одна группа на первой позиции. Спрягаемый глагол
+          *wohne* должен быть вторым, поэтому *ich* переходит за него:
+          *In Kiel wohne ich*. Объясните это своими словами, будто помогаете
+          новичку разобраться в немецком. Затем закройте пример и скажите
+          два правдивых предложения о себе: сначала с *Ich*, потом с городом.
+          Если назвать правило трудно, вернитесь к схеме, а не перечитывайте
+          весь урок.
+        point: "Объясните правило своими словами и составьте свой пример"
+        before:
+          view: sentence
+          rows:
+            - de: [Ich, wohn+e, in Kiel., ""]
+              ru: Я живу в Киле.
+        set:
+          rows:
+            - de: [Ich, wohn+e, in Kiel., ""]
+              ru: Я живу в Киле.
+            - de: [In Kiel, wohn+e, ich., ""]
+              ru: В Киле живу я.
 
   - id: sprechen
     chapter: exam
@@ -531,14 +627,15 @@ case:
           ru: Привет! Я Хауке. Я из Киля, но сейчас живу в Гамбурге.
         - L: Moin! Wir sind Lars und Merle. Wir wohnen in Holtenau.
           ru: Привет! Мы Ларс и Мерле. Мы живём в Хольтенау.
-      question: Кто взял «Шпротту»?
+      question: Кого нужно расспросить первым по этим уликам?
       options: [Хауке, Ларс и Мерле, Фрауке из киоска]
       answer: 1
       right: >-
-        Сходится всё: в записке *wir* — авторов двое, как Ларса и Мерле.
+        Первыми расспросим Ларса и Мерле: в записке *wir* — авторов несколько.
         Шлюпка в Хольтенау, а они *wohnen in Holtenau* — живут там. А Хауке
         *kommt aus Kiel* — родом из Киля, но *wohnt in Hamburg*: живёт он в
-        Гамбурге.
+        Гамбурге. Это зацепки для разговора, а не доказательство: жить в
+        Хольтенау может и кто-то ещё. Что случилось, узнаем из их объяснения.
       wrong:
         - >-
           *Ich komme aus Kiel* значит «я родом из Киля», а не «я живу в Киле».
@@ -554,9 +651,92 @@ case:
     Утром хотели всё объяснить — отсюда вежливое *Sind Sie morgen um neun
     hier?* Йенсен ворчит, но прощает. Дело закрыто… почти. Вечером у клуба
     крутится незнакомец в куртке Kieler Woche и говорит Йенсену: *Moin! Ich
-    wohnen in Kiel.* Кильцы так не скажут — правильно *ich wohne*. Кто он?
+    wohnen in Kiel.* Правильно *ich wohne*: его рассказ стоит проверить.
+    Ошибка сама по себе не делает человека шпионом — ошибаются и ученики.
+    Кто он?
     Тренироваться ловить таких — в игре «Шпион» в тренажёре, продолжение дела
     — в следующей теме.
+
+adventure:
+  kind: crew
+  title: Соберите команду
+  intro: >-
+    До Kieler Woche ещё есть время. Хауке собирает друзей для прогулки на
+    «Шпротте», но карточки команды пока пустые. Познакомьтесь с каждым,
+    разложите сведения, найдите помощника, подготовьте вопрос Йенсену и
+    языковые бейджи для знакомства.
+  origins: [Kasachstan, Argentinien, Türkei, Kiel, Hamburg]
+  places: [Gaarden, Holtenau, Holtenauer Straße, Kiel, Hamburg]
+  members:
+    - id: dana
+      name: Dana
+      origin: Kasachstan
+      home: Gaarden
+      clue: { dialogue: kurs, lines: [4] }
+    - id: mateo
+      name: Mateo
+      origin: Argentinien
+      home: Holtenau
+      clue: { dialogue: kurs, lines: [3, 5] }
+    - id: elif
+      name: Elif
+      origin: Türkei
+      home: Holtenauer Straße
+      clue: { dialogue: buero, lines: [3, 5] }
+    - id: hauke
+      name: Hauke
+      origin: Kiel
+      home: Hamburg
+      clue: { caseStep: 2, evidence: 0 }
+  contact:
+    question: >-
+      Хауке занят. Кто из команды живёт в Holtenau? Найдите этого человека
+      по собранным карточкам: он поможет встретиться с Йенсеном и найти лодку.
+    answer: mateo
+    success: >-
+      Матео поможет с лодкой, вопрос для Йенсена готов, а языковые бейджи Даны
+      собраны. Вы сможете познакомить друзей друг с другом. В следующей теме
+      пригодятся числа: нужно будет понять номер места и позвонить Дане.
+    wrong: >-
+      Здесь нужен не город, откуда человек родом, а место, где он живёт.
+      Посмотрите на поле Wo? в карточках команды.
+  challenges:
+    - id: jensen-question
+      kind: order
+      title: Первое знакомство с Йенсеном
+      intro: >-
+        Матео знакомит вас с начальником гавани. Вы хотите спросить Йенсена,
+        откуда он родом. Вы ещё не знакомы — соберите вежливый вопрос на «Вы».
+      label: Ваш вопрос
+      tokens: [Woher, kommen, Sie?]
+      success: >-
+        *Woher kommen Sie?* — вежливый вопрос готов. Йенсен улыбается:
+        знакомство началось!
+      wrong: >-
+        Сначала вопросительное слово «откуда», затем глагол, затем вежливое
+        местоимение. Форма глагола с *Sie* — *kommen*.
+    - id: dana-languages
+      kind: pack
+      title: Языковые бейджи для Даны
+      intro: >-
+        На встрече друзья будут искать собеседников по языковым бейджам.
+        Послушайте Дану и прикрепите к её карточке все языки, которые она
+        назвала. Даже «немного» — повод попробовать поговорить.
+      clue: { dialogue: kurs, lines: [6] }
+      options:
+        - { id: kasachisch, label: Kasachisch }
+        - { id: russisch, label: Russisch }
+        - { id: englisch, label: Englisch }
+        - { id: deutsch, label: Deutsch }
+        - { id: spanisch, label: Spanisch }
+        - { id: turkisch, label: Türkisch }
+      answer: [kasachisch, russisch, englisch, deutsch]
+      success: >-
+        Бейджи на месте! Дана сможет найти собеседников на казахском, русском,
+        английском и немного на немецком. Команда готова к знакомству.
+      wrong: >-
+        Нужны все языки из реплики Даны, включая *ein bisschen Deutsch*.
+        Испанский назвал Матео, турецкий в этой реплике не звучит.
 
 spy:
   - de: Ich bin Dana.
@@ -655,3 +835,14 @@ exercises:
   - type: order
     ru: Ты говоришь по-немецки?
     de: Sprichst du Deutsch?
+  - type: gap
+    q: Das Boot ___ Sprotte.
+    answer: [heißt]
+    hint: heißen
+    ru: Лодка называется «Шпротта».
+    why: "*das Boot* — как *es*: *es heißt*. *heißen* подходит и для имени человека, и для названия лодки."
+  - type: order
+    ru: Мы ходим под парусом в Киле.
+    de: Wir segeln in Kiel.
+    also: [In Kiel segeln wir.]
+    why: "С *wir* — *segeln*. Начать можно с города, но глагол остаётся вторым."

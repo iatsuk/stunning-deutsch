@@ -1,0 +1,2049 @@
+{
+ "id": "a2-abschluss",
+ "level": "a2",
+ "order": 14,
+ "title": "Welcher Plan passt für uns alle?",
+ "ru": "Завершаем общий дневник",
+ "lede": "В конце августа команда заканчивает Küstenlogbuch. Для последней поездки в Люнебургскую пустошь нужно совместить время, бюджет и интересы. Теперь читатель сам собирает решение из нескольких источников. Даты, дорога, цены и погода в заданиях вымышлены.",
+ "goals": [
+  "Сопоставить ограничения нескольких людей",
+  "Предложить и подтвердить общий план",
+  "Обновить решение после сообщения о погоде",
+  "Самостоятельно написать приглашение и обсудить поездку"
+ ],
+ "grammar": [
+  "Повтор: причины, условия, уточнение и совместный план"
+ ],
+ "exam": [
+  "a2-lesen-2",
+  "a2-hoeren-2",
+  "a2-schreiben-2",
+  "a2-sprechen-3"
+ ],
+ "chapters": [
+  {
+   "id": "scene",
+   "title": "Ситуация"
+  },
+  {
+   "id": "words",
+   "title": "Слова"
+  },
+  {
+   "id": "grammar",
+   "title": "Грамматика"
+  },
+  {
+   "id": "practice",
+   "title": "Проверка"
+  },
+  {
+   "id": "exam",
+   "title": "На экзамене"
+  }
+ ],
+ "dialogues": {
+  "scene": {
+   "title": "Welcher Plan passt für uns alle?",
+   "ru": "Завершаем общий дневник",
+   "place": "Kiel · план поездки в Lüneburger Heide · вымышленная учебная ситуация",
+   "people": {
+    "D": {
+     "name": "Dana",
+     "voice": "Anna"
+    },
+    "M": {
+     "name": "Mateo",
+     "voice": "Reed"
+    },
+    "E": {
+     "name": "Elif",
+     "voice": "Flo"
+    },
+    "H": {
+     "name": "Hauke",
+     "voice": "Rocko"
+    }
+   },
+   "lines": [
+    {
+     "who": "D",
+     "de": "Wir planen seit Montag unsere letzte Fahrt im August.",
+     "ru": "Мы с понедельника планируем последнюю поездку в августе.",
+     "audio": "audio/49d94b91bc9d.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Am Sonntag habe ich frei. Am Samstag muss ich arbeiten.",
+     "ru": "В воскресенье я свободен. В субботу мне нужно работать.",
+     "audio": "audio/a853e5dfd9b8.m4a"
+    },
+    {
+     "who": "E",
+     "de": "Ich möchte wandern, aber nicht länger als zwei Stunden.",
+     "ru": "Я хочу погулять пешком, но не дольше двух часов.",
+     "audio": "audio/1e5be3f98094.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Ich kann am Sonntag ab elf Uhr. Wo treffen wir uns?",
+     "ru": "В воскресенье я могу с одиннадцати. Где встречаемся?",
+     "audio": "audio/8d93b4106302.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Unser Lernplan A beginnt um elf Uhr. Er kostet achtzehn Euro pro Person.",
+     "ru": "Наш учебный план A начинается в одиннадцать. Он стоит восемнадцать евро с человека.",
+     "audio": "audio/4c758971dc36.m4a"
+    },
+    {
+     "who": "E",
+     "de": "Das passt. Wenn es regnet, gehen wir ins Lernmuseum.",
+     "ru": "Подходит. Если будет дождь, пойдём в учебный музей.",
+     "audio": "audio/a9224bc62530.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Können wir dort auch etwas essen?",
+     "ru": "Мы можем там и поесть?",
+     "audio": "audio/8925aa799838.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Ja. Ich frage noch, ob im Café Plätze frei sind.",
+     "ru": "Да. Я ещё спрошу, есть ли свободные места в кафе.",
+     "audio": "audio/b348adb1c5bd.m4a"
+    }
+   ]
+  }
+ },
+ "words": {
+  "useful": {
+   "title": "Wörter für die Aufgabe",
+   "ru": "Слова для действия",
+   "items": [
+    {
+     "de": "gemeinsam entscheiden",
+     "ru": "решать вместе",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/fe29c42e3a7d.m4a"
+    },
+    {
+     "de": "der Vorschlag",
+     "ru": "предложение",
+     "gender": "m",
+     "plural": "Vorschläge",
+     "audio": "audio/1ce35d0e8c75.m4a"
+    },
+    {
+     "de": "die Entscheidung",
+     "ru": "решение",
+     "gender": "f",
+     "plural": "Entscheidungen",
+     "audio": "audio/3eac14b75b7b.m4a"
+    },
+    {
+     "de": "bestätigen",
+     "ru": "подтверждать",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/1f0598fc0422.m4a"
+    },
+    {
+     "de": "noch offen",
+     "ru": "пока не решено",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/48db9a3e922a.m4a"
+    },
+    {
+     "de": "die Wanderung",
+     "ru": "пешая прогулка",
+     "gender": "f",
+     "plural": "Wanderungen",
+     "audio": "audio/d3ac0a889d83.m4a"
+    },
+    {
+     "de": "die Rückfahrt",
+     "ru": "обратная поездка",
+     "gender": "f",
+     "plural": "Rückfahrten",
+     "audio": "audio/7a1c4ea9325c.m4a"
+    },
+    {
+     "de": "der Treffpunkt",
+     "ru": "место встречи",
+     "gender": "m",
+     "plural": "Treffpunkte",
+     "audio": "audio/c034855451dc.m4a"
+    },
+    {
+     "de": "das Budget",
+     "ru": "бюджет",
+     "gender": "n",
+     "plural": "Budgets",
+     "audio": "audio/8316ef905853.m4a"
+    },
+    {
+     "de": "pro Person",
+     "ru": "с человека",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/e5a7a56b87a5.m4a"
+    },
+    {
+     "de": "höchstens",
+     "ru": "не больше, максимум",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/4368cbeda00c.m4a"
+    },
+    {
+     "de": "der Abschluss",
+     "ru": "завершение",
+     "gender": "m",
+     "plural": "Abschlüsse",
+     "audio": "audio/4f76426b53c5.m4a"
+    }
+   ]
+  }
+ },
+ "tables": {
+  "rule": {
+   "title": "Повтор: причины, условия, уточнение и совместный план",
+   "ru": "Опора для решения",
+   "head": [
+    "Beispiel",
+    "Смысл и форма"
+   ],
+   "rows": [
+    [
+     "Wir fahren am Sonntag, weil Mateo frei hat.",
+     "Причина объясняет выбор, а не заменяет условие."
+    ],
+    [
+     "Wenn es regnet, gehen wir ins Museum.",
+     "Условие меняет часть плана."
+    ],
+    [
+     "Ich frage, ob im Café Plätze frei sind.",
+     "Вопрос остаётся открытым до ответа."
+    ]
+   ],
+   "ruCols": [
+    1
+   ]
+  }
+ },
+ "tasks": {
+  "plans": {
+   "kind": "message",
+   "part": "a2-lesen-2",
+   "title": "Drei Lernpläne für Sonntag",
+   "text": "Alle können am Sonntag ab 11 Uhr. Budget: höchstens 20 Euro pro Person. Elif möchte höchstens zwei Stunden wandern. A: Beginn 11 Uhr, Wanderung 2 Stunden, 18 Euro. B: Beginn 12 Uhr, Wanderung 1 Stunde, 20 Euro. C: Beginn 10 Uhr, Wanderung 3 Stunden, 12 Euro. Wenn es regnet, besucht die Gruppe statt der Wanderung ein Lernmuseum. Zeit und Preis bleiben gleich.",
+   "sample": []
+  },
+  "radio": {
+   "kind": "worksheet",
+   "part": "a2-hoeren-2",
+   "format": "radio",
+   "title": "Fünf Nachrichten zum Tagesplan",
+   "recordings": [
+    {
+     "text": "Am Sonntag regnet es in unserem Lerngebiet. Am Nachmittag bleibt es auch nass.",
+     "audio": "audio/c652bc29126a.m4a"
+    },
+    {
+     "text": "Der Bus zum Treffpunkt fährt heute von Platz B, nicht von Platz A.",
+     "audio": "audio/56cc11de5098.m4a"
+    },
+    {
+     "text": "Das Lernmuseum öffnet am Sonntag um elf Uhr. Die Cafeteria öffnet erst um zwölf.",
+     "audio": "audio/bdedfef06cae.m4a"
+    },
+    {
+     "text": "Im Lerncafé sind heute nur draußen Plätze frei. Drinnen ist alles besetzt.",
+     "audio": "audio/f7b99b5a385a.m4a"
+    },
+    {
+     "text": "Die Rückfahrt der Lerngruppe ist um siebzehn Uhr. Bitte seien Sie fünf Minuten früher am Bus.",
+     "audio": "audio/599598114651.m4a"
+    }
+   ],
+   "questions": [
+    {
+     "prompt": "Wie ist das Wetter?",
+     "options": [
+      "regnerisch",
+      "trocken",
+      "heiß"
+     ],
+     "answers": [
+      "regnerisch"
+     ]
+    },
+    {
+     "prompt": "Wo fährt der Bus ab?",
+     "options": [
+      "Platz A",
+      "Platz B",
+      "Platz C"
+     ],
+     "answers": [
+      "Platz B"
+     ]
+    },
+    {
+     "prompt": "Wann öffnet das Museum?",
+     "options": [
+      "10 Uhr",
+      "11 Uhr",
+      "12 Uhr"
+     ],
+     "answers": [
+      "11 Uhr"
+     ]
+    },
+    {
+     "prompt": "Wo sind Plätze frei?",
+     "options": [
+      "drinnen",
+      "draußen",
+      "nirgends"
+     ],
+     "answers": [
+      "draußen"
+     ]
+    },
+    {
+     "prompt": "Wann ist die Rückfahrt?",
+     "options": [
+      "16 Uhr",
+      "17 Uhr",
+      "18 Uhr"
+     ],
+     "answers": [
+      "17 Uhr"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "article": {
+   "kind": "worksheet",
+   "part": "a2-lesen-2",
+   "format": "article",
+   "title": "Ein Eintrag zum Abschluss",
+   "text": "Seit Montag plant die Gruppe ihre letzte Fahrt im August. Am Samstag arbeitet Mateo. Die Gruppe hat Sonntag gewählt, weil Mateo dann frei hat. Hauke kann ab elf Uhr. Elif möchte nicht länger als zwei Stunden wandern. Bei Regen besucht die Gruppe ein Lernmuseum. Dana weiß noch nicht, ob im Café Plätze frei sind. Am Abend möchten alle den letzten Eintrag im Küstenlogbuch schreiben.",
+   "questions": [
+    {
+     "prompt": "Die Gruppe hat Sonntag gewählt.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "richtig"
+     ]
+    },
+    {
+     "prompt": "Mateo hat am Samstag frei.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Hauke kann schon um zehn Uhr.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Bei Regen ist ein Museum geplant.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "richtig"
+     ]
+    },
+    {
+     "prompt": "Dana hat die Plätze im Café schon bestätigt.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "falsch"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "letter": {
+   "kind": "message",
+   "part": "a2-schreiben-2",
+   "title": "Die letzte Einladung",
+   "text": "Schreiben Sie an eine Freundin oder einen Freund.",
+   "situation": "Sie planen einen gemeinsamen Ausflug. Schreiben Sie ungefähr 40 Wörter. Wählen Sie drei von vier Punkten. Schreiben Sie eine Begrüßung und einen Gruß.",
+   "choose": 3,
+   "points": [
+    "Wohin und wann?",
+    "Warum dieser Ausflug?",
+    "Was bei Regen?",
+    "Was mitbringen?"
+   ],
+   "sample": [
+    {
+     "de": "Liebe Mia, wir fahren am Sonntag in die Lüneburger Heide. Wir treffen uns um elf Uhr. Ich freue mich auf den Ausflug, weil wir zusammen Zeit haben. Wenn es regnet, besuchen wir ein Museum. Kommst du mit? Viele Grüße, Dana",
+     "audio": "audio/07a3ca08a48b.m4a"
+    }
+   ]
+  },
+  "pair": {
+   "kind": "card",
+   "part": "a2-sprechen-3",
+   "title": "Gemeinsam entscheiden",
+   "theme": "Ausflug planen",
+   "word": "Tag – Uhrzeit – Preis – Plan bei Regen",
+   "situation": "Person A: Sonntag ab 11 Uhr, Budget 20 Euro. Person B: höchstens zwei Stunden wandern, bei Regen lieber Museum. Machen Sie Vorschläge, fragen Sie nach und bestätigen Sie einen gemeinsamen Plan.",
+   "sample": [
+    {
+     "de": "Passt Sonntag um elf Uhr für dich?",
+     "audio": "audio/f29f14fcd341.m4a"
+    },
+    {
+     "de": "Ja, aber ich möchte höchstens zwei Stunden wandern.",
+     "audio": "audio/df5ee1a6de1c.m4a"
+    },
+    {
+     "de": "Wenn es regnet, gehen wir ins Museum.",
+     "audio": "audio/07a6d2d105ef.m4a"
+    },
+    {
+     "de": "Abgemacht. Wir treffen uns um elf Uhr.",
+     "audio": "audio/f35b67cbd92c.m4a"
+    }
+   ]
+  }
+ },
+ "beats": [
+  {
+   "id": "start-1",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 0,
+   "read": "В конце августа команда заканчивает Küstenlogbuch. Для последней поездки в Люнебургскую пустошь нужно совместить время, бюджет и интересы. Теперь читатель сам собирает решение из нескольких источников. Даты, дорога, цены и погода в заданиях вымышлены. Все нужные условия даны в сцене: знания географии, настоящих цен или расписаний не требуются. Сначала попробуйте понять, какого результата добиваются друзья, затем слушайте реплики. На новом уровне важно не только найти число или знакомое слово, но и связать несколько сведений.",
+   "point": "Завершаем общий дневник",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 4,
+    "fresh": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "start-2",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 1,
+   "read": "Последняя тема не вводит большой новый блок грамматики. В разговоре встречаются *seit*, модальный глагол, сравнение, *wenn* и вопрос с *ob*. Каждая форма выполняет знакомую работу: назвать начало, ограничение, условие или неизвестное. Сначала составьте общее решение, затем отдельно отметьте сведения, которые ещё нужно подтвердить.",
+   "point": "Повтор: причины, условия, уточнение и совместный план",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 8,
+    "fresh": [
+     4,
+     5,
+     6,
+     7
+    ]
+   }
+  },
+  {
+   "id": "words-1",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 0,
+   "read": "В дневнике полезны выражения *gemeinsam entscheiden*, *einen Vorschlag machen*, *bestätigen*. Не обязательно запоминать их списком: используйте одно, когда предлагаете план, второе — когда сравниваете варианты, третье — когда фиксируете ответ. *Noch offen* означает, что вопрос пока не решён, а не что место обязательно открыто для посетителей.",
+   "point": "Сначала используйте слово для решения; словарь остаётся справочником.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 6,
+    "words": "useful"
+   }
+  },
+  {
+   "id": "words-2",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 1,
+   "read": "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к ситуации: какие слова обозначают человека, место, условие или уже выполненное действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово встретится снова в записке или разговоре, попробуйте восстановить его смысл до подсказки.",
+   "point": "Возвращайтесь к выражениям в сообщениях и новых действиях.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 12,
+    "words": "useful",
+    "fresh": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   }
+  },
+  {
+   "id": "grammar-1",
+   "step": "grammar",
+   "stepTitle": "Повтор: причины, условия, уточнение и совместный план",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "С *weil* личный глагол остаётся в конце. Воскресенье подходит Матео, потому что он свободен. Этого факта ещё недостаточно для всех: нужно проверить время Хауке, длительность прогулки для Элиф и общий бюджет. Объяснение одного предпочтения не подтверждает согласие всей команды.",
+   "point": "Причина объясняет выбор, а не заменяет условие.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "grammar-2",
+   "step": "grammar",
+   "stepTitle": "Повтор: причины, условия, уточнение и совместный план",
+   "chapterIndex": 2,
+   "indexInStep": 1,
+   "read": "После придаточной части с *wenn* главная начинается с глагола. Здесь дождь меняет занятие, но сам по себе не переносит день и время встречи. Когда приходит новое сообщение, изменяйте только то, к чему оно относится. Если перенос не назван, не добавляйте его от себя.",
+   "point": "Условие меняет часть плана.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "grammar-3",
+   "step": "grammar",
+   "stepTitle": "Повтор: причины, условия, уточнение и совместный план",
+   "chapterIndex": 2,
+   "indexInStep": 2,
+   "read": "Вопрос с *ob* сохраняет глагол в конце и запрашивает ответ да или нет. В итоговой заметке отделите подтверждённые данные от открытого вопроса. Команда согласовала прогулку, но наличие мест в кафе ещё нужно узнать. Это полезнее уверенной записи, основанной только на предположении.",
+   "point": "Вопрос остаётся открытым до ответа.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "frames-1",
+   "step": "frames",
+   "stepTitle": "Как устроена реплика",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "Вы уже умеете сказать и причину, и условие. Соберите знакомую рамку *Wenn es regnet, gehen wir ins Museum*. Личная форма придаточного *regnet* стоит перед запятой, а *gehen* сразу после неё. Произнесите собственный вариант с кафе вместо музея и проверьте, что порядок слов сохранился.",
+   "point": "*Wenn es regnet, gehen wir ins Museum.*",
+   "scene": {
+    "view": "sentence",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wenn",
+         "text": "Wenn"
+        },
+        {
+         "key": "es",
+         "text": "es"
+        },
+        {
+         "key": "regnet",
+         "text": "regnet,"
+        }
+       ],
+       [
+        {
+         "key": "gehen",
+         "text": "gehen"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "ins",
+         "text": "ins"
+        },
+        {
+         "key": "museum",
+         "text": "Museum"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Wenn es regnet, gehen wir ins Museum.",
+      "ru": "Если будет дождь, мы пойдём в музей.",
+      "audio": "audio/07a6d2d105ef.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-1",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 0,
+   "read": "Нет. Сначала проверяем обязательные ограничения: день, начало, длительность и максимальную цену. После этого можно выбирать по предпочтениям. В нашей задаче два варианта проходят все условия. Игра принимает любой из них: решение не должно зависеть от того, какой вариант больше нравится автору.",
+   "point": "Любой вариант, соблюдающий все условия, допустим.",
+   "question": "Один дешёвый вариант автоматически подходит всей команде?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wenn",
+         "text": "Wenn"
+        },
+        {
+         "key": "es",
+         "text": "es"
+        },
+        {
+         "key": "regnet",
+         "text": "regnet,"
+        }
+       ],
+       [
+        {
+         "key": "gehen",
+         "text": "gehen"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "ins",
+         "text": "ins"
+        },
+        {
+         "key": "museum",
+         "text": "Museum"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Wenn es regnet, gehen wir ins Museum.",
+      "ru": "Если будет дождь, мы пойдём в музей.",
+      "audio": "audio/07a6d2d105ef.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-2",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 1,
+   "read": "Нет. В сообщении сказано, что меняется занятие. Время осталось прежним, пока отдельная реплика не сообщает перенос. Так же вопрос о местах в кафе не доказывает наличие мест. В итоговом дневнике каждое утверждение должно иметь свой источник.",
+   "point": "Изменяйте только подтверждённую часть плана.",
+   "question": "Дождь обязательно переносит встречу на другое время?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wenn",
+         "text": "Wenn"
+        },
+        {
+         "key": "es",
+         "text": "es"
+        },
+        {
+         "key": "regnet",
+         "text": "regnet,"
+        }
+       ],
+       [
+        {
+         "key": "gehen",
+         "text": "gehen"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "ins",
+         "text": "ins"
+        },
+        {
+         "key": "museum",
+         "text": "Museum"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Wenn es regnet, gehen wir ins Museum.",
+      "ru": "Если будет дождь, мы пойдём в музей.",
+      "audio": "audio/07a6d2d105ef.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "exam-plans-1",
+   "step": "exam-plans",
+   "stepTitle": "Drei Lernpläne für Sonntag",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным текстом: объясните, какой фрагмент подтверждает каждое решение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wenn",
+         "text": "Wenn"
+        },
+        {
+         "key": "es",
+         "text": "es"
+        },
+        {
+         "key": "regnet",
+         "text": "regnet,"
+        }
+       ],
+       [
+        {
+         "key": "gehen",
+         "text": "gehen"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "ins",
+         "text": "ins"
+        },
+        {
+         "key": "museum",
+         "text": "Museum"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Wenn es regnet, gehen wir ins Museum.",
+      "ru": "Если будет дождь, мы пойдём в музей.",
+      "audio": "audio/07a6d2d105ef.m4a"
+     }
+    ],
+    "task": "plans"
+   }
+  },
+  {
+   "id": "exam-plans-2",
+   "step": "exam-plans",
+   "stepTitle": "Drei Lernpläne für Sonntag",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wenn",
+         "text": "Wenn"
+        },
+        {
+         "key": "es",
+         "text": "es"
+        },
+        {
+         "key": "regnet",
+         "text": "regnet,"
+        }
+       ],
+       [
+        {
+         "key": "gehen",
+         "text": "gehen"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "ins",
+         "text": "ins"
+        },
+        {
+         "key": "museum",
+         "text": "Museum"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Wenn es regnet, gehen wir ins Museum.",
+      "ru": "Если будет дождь, мы пойдём в музей.",
+      "audio": "audio/07a6d2d105ef.m4a"
+     }
+    ],
+    "task": "plans"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wenn",
+         "text": "Wenn"
+        },
+        {
+         "key": "es",
+         "text": "es"
+        },
+        {
+         "key": "regnet",
+         "text": "regnet,"
+        }
+       ],
+       [
+        {
+         "key": "gehen",
+         "text": "gehen"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "ins",
+         "text": "ins"
+        },
+        {
+         "key": "museum",
+         "text": "Museum"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Wenn es regnet, gehen wir ins Museum.",
+      "ru": "Если будет дождь, мы пойдём в музей.",
+      "audio": "audio/07a6d2d105ef.m4a"
+     }
+    ],
+    "task": "plans",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-radio-1",
+   "step": "exam-radio",
+   "stepTitle": "Fünf Nachrichten zum Tagesplan",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным текстом: объясните, какой фрагмент подтверждает каждое решение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wenn",
+         "text": "Wenn"
+        },
+        {
+         "key": "es",
+         "text": "es"
+        },
+        {
+         "key": "regnet",
+         "text": "regnet,"
+        }
+       ],
+       [
+        {
+         "key": "gehen",
+         "text": "gehen"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "ins",
+         "text": "ins"
+        },
+        {
+         "key": "museum",
+         "text": "Museum"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Wenn es regnet, gehen wir ins Museum.",
+      "ru": "Если будет дождь, мы пойдём в музей.",
+      "audio": "audio/07a6d2d105ef.m4a"
+     }
+    ],
+    "task": "radio"
+   }
+  },
+  {
+   "id": "exam-radio-2",
+   "step": "exam-radio",
+   "stepTitle": "Fünf Nachrichten zum Tagesplan",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wenn",
+         "text": "Wenn"
+        },
+        {
+         "key": "es",
+         "text": "es"
+        },
+        {
+         "key": "regnet",
+         "text": "regnet,"
+        }
+       ],
+       [
+        {
+         "key": "gehen",
+         "text": "gehen"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "ins",
+         "text": "ins"
+        },
+        {
+         "key": "museum",
+         "text": "Museum"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Wenn es regnet, gehen wir ins Museum.",
+      "ru": "Если будет дождь, мы пойдём в музей.",
+      "audio": "audio/07a6d2d105ef.m4a"
+     }
+    ],
+    "task": "radio"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wenn",
+         "text": "Wenn"
+        },
+        {
+         "key": "es",
+         "text": "es"
+        },
+        {
+         "key": "regnet",
+         "text": "regnet,"
+        }
+       ],
+       [
+        {
+         "key": "gehen",
+         "text": "gehen"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "ins",
+         "text": "ins"
+        },
+        {
+         "key": "museum",
+         "text": "Museum"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Wenn es regnet, gehen wir ins Museum.",
+      "ru": "Если будет дождь, мы пойдём в музей.",
+      "audio": "audio/07a6d2d105ef.m4a"
+     }
+    ],
+    "task": "radio",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-article-1",
+   "step": "exam-article",
+   "stepTitle": "Ein Eintrag zum Abschluss",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным текстом: объясните, какой фрагмент подтверждает каждое решение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wenn",
+         "text": "Wenn"
+        },
+        {
+         "key": "es",
+         "text": "es"
+        },
+        {
+         "key": "regnet",
+         "text": "regnet,"
+        }
+       ],
+       [
+        {
+         "key": "gehen",
+         "text": "gehen"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "ins",
+         "text": "ins"
+        },
+        {
+         "key": "museum",
+         "text": "Museum"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Wenn es regnet, gehen wir ins Museum.",
+      "ru": "Если будет дождь, мы пойдём в музей.",
+      "audio": "audio/07a6d2d105ef.m4a"
+     }
+    ],
+    "task": "article"
+   }
+  },
+  {
+   "id": "exam-article-2",
+   "step": "exam-article",
+   "stepTitle": "Ein Eintrag zum Abschluss",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wenn",
+         "text": "Wenn"
+        },
+        {
+         "key": "es",
+         "text": "es"
+        },
+        {
+         "key": "regnet",
+         "text": "regnet,"
+        }
+       ],
+       [
+        {
+         "key": "gehen",
+         "text": "gehen"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "ins",
+         "text": "ins"
+        },
+        {
+         "key": "museum",
+         "text": "Museum"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Wenn es regnet, gehen wir ins Museum.",
+      "ru": "Если будет дождь, мы пойдём в музей.",
+      "audio": "audio/07a6d2d105ef.m4a"
+     }
+    ],
+    "task": "article"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wenn",
+         "text": "Wenn"
+        },
+        {
+         "key": "es",
+         "text": "es"
+        },
+        {
+         "key": "regnet",
+         "text": "regnet,"
+        }
+       ],
+       [
+        {
+         "key": "gehen",
+         "text": "gehen"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "ins",
+         "text": "ins"
+        },
+        {
+         "key": "museum",
+         "text": "Museum"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Wenn es regnet, gehen wir ins Museum.",
+      "ru": "Если будет дождь, мы пойдём в музей.",
+      "audio": "audio/07a6d2d105ef.m4a"
+     }
+    ],
+    "task": "article",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-letter-1",
+   "step": "exam-letter",
+   "stepTitle": "Die letzte Einladung",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным текстом: объясните, какой фрагмент подтверждает каждое решение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wenn",
+         "text": "Wenn"
+        },
+        {
+         "key": "es",
+         "text": "es"
+        },
+        {
+         "key": "regnet",
+         "text": "regnet,"
+        }
+       ],
+       [
+        {
+         "key": "gehen",
+         "text": "gehen"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "ins",
+         "text": "ins"
+        },
+        {
+         "key": "museum",
+         "text": "Museum"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Wenn es regnet, gehen wir ins Museum.",
+      "ru": "Если будет дождь, мы пойдём в музей.",
+      "audio": "audio/07a6d2d105ef.m4a"
+     }
+    ],
+    "task": "letter",
+    "reveal": 0
+   }
+  },
+  {
+   "id": "exam-letter-2",
+   "step": "exam-letter",
+   "stepTitle": "Die letzte Einladung",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wenn",
+         "text": "Wenn"
+        },
+        {
+         "key": "es",
+         "text": "es"
+        },
+        {
+         "key": "regnet",
+         "text": "regnet,"
+        }
+       ],
+       [
+        {
+         "key": "gehen",
+         "text": "gehen"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "ins",
+         "text": "ins"
+        },
+        {
+         "key": "museum",
+         "text": "Museum"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Wenn es regnet, gehen wir ins Museum.",
+      "ru": "Если будет дождь, мы пойдём в музей.",
+      "audio": "audio/07a6d2d105ef.m4a"
+     }
+    ],
+    "task": "letter",
+    "reveal": 0
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wenn",
+         "text": "Wenn"
+        },
+        {
+         "key": "es",
+         "text": "es"
+        },
+        {
+         "key": "regnet",
+         "text": "regnet,"
+        }
+       ],
+       [
+        {
+         "key": "gehen",
+         "text": "gehen"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "ins",
+         "text": "ins"
+        },
+        {
+         "key": "museum",
+         "text": "Museum"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Wenn es regnet, gehen wir ins Museum.",
+      "ru": "Если будет дождь, мы пойдём в музей.",
+      "audio": "audio/07a6d2d105ef.m4a"
+     }
+    ],
+    "task": "letter",
+    "reveal": 0,
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-pair-1",
+   "step": "exam-pair",
+   "stepTitle": "Gemeinsam entscheiden",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным текстом: объясните, какой фрагмент подтверждает каждое решение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wenn",
+         "text": "Wenn"
+        },
+        {
+         "key": "es",
+         "text": "es"
+        },
+        {
+         "key": "regnet",
+         "text": "regnet,"
+        }
+       ],
+       [
+        {
+         "key": "gehen",
+         "text": "gehen"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "ins",
+         "text": "ins"
+        },
+        {
+         "key": "museum",
+         "text": "Museum"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Wenn es regnet, gehen wir ins Museum.",
+      "ru": "Если будет дождь, мы пойдём в музей.",
+      "audio": "audio/07a6d2d105ef.m4a"
+     }
+    ],
+    "task": "pair",
+    "reveal": 0
+   }
+  },
+  {
+   "id": "exam-pair-2",
+   "step": "exam-pair",
+   "stepTitle": "Gemeinsam entscheiden",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wenn",
+         "text": "Wenn"
+        },
+        {
+         "key": "es",
+         "text": "es"
+        },
+        {
+         "key": "regnet",
+         "text": "regnet,"
+        }
+       ],
+       [
+        {
+         "key": "gehen",
+         "text": "gehen"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "ins",
+         "text": "ins"
+        },
+        {
+         "key": "museum",
+         "text": "Museum"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Wenn es regnet, gehen wir ins Museum.",
+      "ru": "Если будет дождь, мы пойдём в музей.",
+      "audio": "audio/07a6d2d105ef.m4a"
+     }
+    ],
+    "task": "pair",
+    "reveal": 0
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wenn",
+         "text": "Wenn"
+        },
+        {
+         "key": "es",
+         "text": "es"
+        },
+        {
+         "key": "regnet",
+         "text": "regnet,"
+        }
+       ],
+       [
+        {
+         "key": "gehen",
+         "text": "gehen"
+        }
+       ],
+       [
+        {
+         "key": "wir",
+         "text": "wir"
+        },
+        {
+         "key": "ins",
+         "text": "ins"
+        },
+        {
+         "key": "museum",
+         "text": "Museum"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Wenn es regnet, gehen wir ins Museum.",
+      "ru": "Если будет дождь, мы пойдём в музей.",
+      "audio": "audio/07a6d2d105ef.m4a"
+     }
+    ],
+    "task": "pair",
+    "reveal": 0,
+    "solved": true
+   }
+  }
+ ],
+ "exercises": [
+  {
+   "id": "a2-abschluss-1",
+   "type": "choice",
+   "q": "Wir fahren Sonntag, weil Mateo frei ___.",
+   "options": [
+    "hat",
+    "haben",
+    "hast"
+   ],
+   "answer": 0,
+   "why": "Глагол в конце придаточного.",
+   "audio": "audio/71990a0de01d.m4a"
+  },
+  {
+   "id": "a2-abschluss-2",
+   "type": "choice",
+   "q": "Wenn es regnet, ___ wir ins Museum.",
+   "options": [
+    "gehen",
+    "wir gehen",
+    "geht"
+   ],
+   "answer": 0,
+   "why": "Главная начинается с глагола.",
+   "audio": "audio/07a6d2d105ef.m4a"
+  },
+  {
+   "id": "a2-abschluss-3",
+   "type": "choice",
+   "q": "Ich frage, ___ Plätze frei sind.",
+   "options": [
+    "ob",
+    "denn",
+    "als"
+   ],
+   "answer": 0,
+   "why": "Косвенный вопрос да/нет.",
+   "audio": "audio/293b7e6a85a9.m4a"
+  },
+  {
+   "id": "a2-abschluss-4",
+   "type": "choice",
+   "q": "Wir planen ___ Montag.",
+   "options": [
+    "seit",
+    "vor",
+    "um"
+   ],
+   "answer": 0,
+   "why": "Начало продолжающегося действия.",
+   "audio": "audio/fdfb9d5902ad.m4a"
+  },
+  {
+   "id": "a2-abschluss-5",
+   "type": "choice",
+   "q": "Plan A ist billiger ___ Plan B.",
+   "options": [
+    "als",
+    "wie",
+    "ob"
+   ],
+   "answer": 0,
+   "why": "Сравнение с als.",
+   "audio": "audio/95cf9ba5f1b5.m4a"
+  },
+  {
+   "id": "a2-abschluss-6",
+   "type": "choice",
+   "q": "Wir haben ___ Geld für Plan A.",
+   "options": [
+    "genug",
+    "zu",
+    "ob"
+   ],
+   "answer": 0,
+   "why": "Genug перед существительным.",
+   "audio": "audio/6f74d530f50b.m4a"
+  },
+  {
+   "id": "a2-abschluss-7",
+   "type": "order",
+   "ru": "Мы едем в воскресенье, потому что Матео свободен.",
+   "de": "Wir fahren am Sonntag, weil Mateo frei hat.",
+   "audio": "audio/145920b93b87.m4a"
+  },
+  {
+   "id": "a2-abschluss-8",
+   "type": "order",
+   "ru": "Если будет дождь, мы пойдём в музей.",
+   "de": "Wenn es regnet, gehen wir ins Museum.",
+   "audio": "audio/07a6d2d105ef.m4a"
+  },
+  {
+   "id": "a2-abschluss-9",
+   "type": "order",
+   "ru": "Я спрашиваю, есть ли свободные места.",
+   "de": "Ich frage, ob Plätze frei sind.",
+   "audio": "audio/293b7e6a85a9.m4a"
+  },
+  {
+   "id": "a2-abschluss-10",
+   "type": "order",
+   "ru": "Мы планируем поездку с понедельника.",
+   "de": "Wir planen seit Montag die Fahrt.",
+   "audio": "audio/b1e50e8740b9.m4a"
+  },
+  {
+   "id": "a2-abschluss-11",
+   "type": "order",
+   "ru": "План A дешевле плана B.",
+   "de": "Plan A ist billiger als Plan B.",
+   "audio": "audio/95cf9ba5f1b5.m4a"
+  },
+  {
+   "id": "a2-abschluss-12",
+   "type": "order",
+   "ru": "Мы встречаемся в одиннадцать.",
+   "de": "Wir treffen uns um elf Uhr.",
+   "audio": "audio/3bcf292c50e3.m4a"
+  }
+ ],
+ "case": {
+  "title": "Der letzte Eintrag",
+  "ru": "Сверка дневника",
+  "intro": "Перед завершением дневника проверьте три утверждения: день, запасной вариант и открытый вопрос.",
+  "people": {},
+  "steps": [
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Am Samstag muss Mateo arbeiten. Am Sonntag hat er frei.",
+      "ru": "В субботу Матео работает, в воскресенье свободен."
+     }
+    ],
+    "question": "Какой день подходит его условию?",
+    "options": [
+     "Суббота",
+     "Воскресенье",
+     "Ни один"
+    ],
+    "answer": 1,
+    "right": "Воскресенье названо свободным днём.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Wenn es regnet, besuchen wir das Museum. Die Zeit bleibt gleich.",
+      "ru": "Если дождь, посетим музей. Время остаётся прежним."
+     }
+    ],
+    "question": "Что меняется?",
+    "options": [
+     "Занятие",
+     "Время встречи",
+     "День недели"
+    ],
+    "answer": 0,
+    "right": "Условие меняет занятие, время явно сохранено.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Dana fragt noch, ob im Café Plätze frei sind.",
+      "ru": "Дана ещё спрашивает, есть ли свободные места в кафе."
+     }
+    ],
+    "question": "Что записать о кафе?",
+    "options": [
+     "Все места свободны",
+     "Нужно дождаться ответа",
+     "Кафе закрыто"
+    ],
+    "answer": 1,
+    "right": "Косвенный вопрос не содержит подтверждённого ответа.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   }
+  ],
+  "ending": "Küstenlogbuch завершён. Дана, Матео, Элиф и Хауке договорились о плане, а читатель научился проверять причины, условия и подтверждения. Теперь можно попробовать итоговую самостоятельную работу."
+ },
+ "adventure": {
+  "kind": "sequence",
+  "title": "Согласуйте последнюю запись Küstenlogbuch",
+  "intro": "В конце августа команда заканчивает Küstenlogbuch. Для последней поездки в Люнебургскую пустошь нужно совместить время, бюджет и интересы. Теперь читатель сам собирает решение из нескольких источников. Даты, дорога, цены и погода в заданиях вымышлены.",
+  "ending": "Общий дневник закончен: у команды есть проверенный план, запасной вариант и список открытых вопросов. Следующий шаг — самостоятельные задания A2: понять новый текст, написать своё сообщение и договориться без готовых реплик.",
+  "challenges": [
+   {
+    "id": "plan",
+    "kind": "select",
+    "title": "Выберите общий план",
+    "intro": "Проверьте день, начало, длительность и бюджет. Два решения допустимы.",
+    "success": "Все ограничения соблюдены. A и B подходят по исходным данным.",
+    "wrong": "Дешёвый C нарушает и начало после 11, и предел двух часов.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Alle können am Sonntag ab 11 Uhr. Budget: höchstens 20 Euro pro Person. Elif möchte höchstens zwei Stunden wandern. A: Beginn 11 Uhr, Wanderung 2 Stunden, 18 Euro. B: Beginn 12 Uhr, Wanderung 1 Stunde, 20 Euro. C: Beginn 10 Uhr, Wanderung 3 Stunden, 12 Euro. Wenn es regnet, besucht die Gruppe statt der Wanderung ein Lernmuseum. Zeit und Preis bleiben gleich.",
+      "name": "Drei Lernpläne für Sonntag"
+     }
+    ],
+    "options": [
+     {
+      "id": "a",
+      "label": "Plan A · 11 Uhr · 2 Stunden · 18 €"
+     },
+     {
+      "id": "b",
+      "label": "Plan B · 12 Uhr · 1 Stunde · 20 €"
+     },
+     {
+      "id": "c",
+      "label": "Plan C · 10 Uhr · 3 Stunden · 12 €"
+     }
+    ],
+    "answer": [
+     "a"
+    ],
+    "alternatives": [
+     [
+      "b"
+     ]
+    ]
+   },
+   {
+    "id": "weather",
+    "kind": "order",
+    "title": "Объясните запасной вариант",
+    "intro": "Соберите условие с главным предложением.",
+    "success": "Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.",
+    "wrong": "Проверьте положение глагола и конец предложения: используйте все фрагменты.",
+    "tokens": [
+     "Wenn es regnet,",
+     "gehen",
+     "wir",
+     "ins Museum."
+    ],
+    "label": "Реплика для команды"
+   },
+   {
+    "id": "negotiate",
+    "kind": "negotiation",
+    "title": "Проверьте выбранный план с Хауке",
+    "intro": "В предыдущем шаге подошли A и B. Уточните, соблюдает ли выбранный вами вариант ограничение Хауке.",
+    "success": "Хауке подтвердил: оба допустимых варианта учитывают его время.",
+    "wrong": "Учтите ограничение собеседника.",
+    "start": "start",
+    "nodes": [
+     {
+      "id": "start",
+      "text": "Hauke: Ich kann erst ab elf Uhr. Wann treffen wir uns?",
+      "choices": [
+       {
+        "label": "Ab elf Uhr passen beide Pläne.",
+        "next": "weather",
+        "feedback": "Ограничение учтено."
+       },
+       {
+        "label": "Wir treffen uns um zehn Uhr.",
+        "next": "retry",
+        "feedback": "Хауке не может в десять."
+       }
+      ]
+     },
+     {
+      "id": "retry",
+      "text": "Hauke: Um zehn geht es nicht. Erst ab elf.",
+      "choices": [
+       {
+        "label": "Dann nehmen wir A oder B, beide beginnen ab elf.",
+        "next": "weather",
+        "feedback": "Время исправлено."
+       }
+      ]
+     },
+     {
+      "id": "weather",
+      "text": "Hauke: Und wenn es regnet?",
+      "choices": [
+       {
+        "label": "Dann gehen wir ins Museum. Die Zeit bleibt gleich.",
+        "next": "end",
+        "feedback": "Изменилось занятие, время сохранено."
+       }
+      ]
+     },
+     {
+      "id": "end",
+      "text": "Hauke: Gut, A oder B passt für mich!",
+      "terminal": true,
+      "choices": []
+     }
+    ]
+   },
+   {
+    "id": "list",
+    "kind": "match",
+    "title": "Разделите подтверждённое и неизвестное",
+    "intro": "Сопоставьте записи дневника с их статусом.",
+    "success": "В дневнике нет выдуманного подтверждения кафе.",
+    "wrong": "Вопрос о местах ещё не получил ответа.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Seit Montag plant die Gruppe ihre letzte Fahrt im August. Am Samstag arbeitet Mateo. Die Gruppe hat Sonntag gewählt, weil Mateo dann frei hat. Hauke kann ab elf Uhr. Elif möchte nicht länger als zwei Stunden wandern. Bei Regen besucht die Gruppe ein Lernmuseum. Dana weiß noch nicht, ob im Café Plätze frei sind. Am Abend möchten alle den letzten Eintrag im Küstenlogbuch schreiben.",
+      "name": "Ein Eintrag zum Abschluss"
+     }
+    ],
+    "options": [
+     {
+      "id": "yes",
+      "label": "день подтверждён"
+     },
+     {
+      "id": "open",
+      "label": "пока нужно уточнить"
+     },
+     {
+      "id": "condition",
+      "label": "запасной вариант при условии"
+     }
+    ],
+    "slots": [
+     {
+      "id": "day",
+      "label": "Sonntag gewählt",
+      "answer": "yes"
+     },
+     {
+      "id": "cafe",
+      "label": "Plätze im Café",
+      "answer": "open"
+     },
+     {
+      "id": "rain",
+      "label": "Museum bei Regen",
+      "answer": "condition"
+     }
+    ]
+   },
+   {
+    "id": "final",
+    "kind": "select",
+    "title": "Оставьте точную запись",
+    "intro": "Завершите дневник тем, что действительно известно.",
+    "success": "Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы одно из них.",
+    "wrong": "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание и адресата.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Seit Montag plant die Gruppe ihre letzte Fahrt im August. Am Samstag arbeitet Mateo. Die Gruppe hat Sonntag gewählt, weil Mateo dann frei hat. Hauke kann ab elf Uhr. Elif möchte nicht länger als zwei Stunden wandern. Bei Regen besucht die Gruppe ein Lernmuseum. Dana weiß noch nicht, ob im Café Plätze frei sind. Am Abend möchten alle den letzten Eintrag im Küstenlogbuch schreiben.",
+      "name": "Ein Eintrag zum Abschluss"
+     }
+    ],
+    "options": [
+     {
+      "id": "o0",
+      "label": "Sonntag ist gewählt; die Plätze im Café sind noch nicht bestätigt."
+     },
+     {
+      "id": "o1",
+      "label": "Alle Plätze im Café sind schon bestätigt."
+     },
+     {
+      "id": "o2",
+      "label": "Mateo hat am Samstag frei."
+     }
+    ],
+    "answer": [
+     "o0"
+    ]
+   }
+  ]
+ },
+ "spy": [
+  {
+   "de": "Wenn es regnet, gehen wir ins Museum.",
+   "wrong": "Wenn es regnet, wir gehen ins Museum.",
+   "why": "Глагол стоит на второй позиции: после *Wenn es regnet,* сразу идёт *gehen*, а *wir* — за ним.",
+   "auto": true
+  }
+ ]
+}

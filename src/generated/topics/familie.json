@@ -4,7 +4,7 @@
  "order": 3,
  "title": "Das ist meine Familie.",
  "ru": "Семья",
- "lede": "Анна показывает Марко фотографию семьи из Польши, а Марко рассказывает о сёстрах в Риме. Учимся говорить «мой», «твой», «её» и «наш», отвечать «нет» с *kein* и разбираемся, как немецкие существительные образуют множественное число.",
+ "lede": "После занятия Дана и Матео встречаются в Café Brunswik в Киле и показывают семейные фотографии. К прогулке команды готовятся присоединиться гости из Аргентины. Разберёмся, кто кому кем приходится, кому принадлежат вещи и как сказать «мой», «её», «наш» и «никаких».",
  "goals": [
   "Представить свою семью по фотографии",
   "Спросить о семье собеседника — на «ты» и на «Вы»",
@@ -47,130 +47,171 @@
   "foto": {
    "title": "Das ist meine Familie",
    "ru": "Это моя семья",
-   "place": "Café, Leipzig",
+   "place": "Café Brunswik, Kiel",
    "people": {
     "A": {
-     "name": "Anna",
+     "name": "Dana",
      "voice": "Anna"
     },
     "M": {
-     "name": "Marco",
+     "name": "Mateo",
      "voice": "Reed"
     }
    },
    "lines": [
     {
      "who": "M",
-     "de": "Anna, ist das ein Foto aus Polen?",
-     "ru": "Анна, это фото из Польши?",
-     "audio": "audio/6cc90b76a5d3.m4a"
+     "de": "Dana, ist das ein Foto aus Kasachstan?",
+     "ru": "Дана, это фото из Казахстана?",
+     "audio": "audio/cc4d113ac0a7.m4a"
     },
     {
      "who": "A",
-     "de": "Ja, das ist meine Familie. Das sind meine Eltern, Marta und Tomasz.",
-     "ru": "Да, это моя семья. Это мои родители, Марта и Томаш.",
-     "audio": "audio/6f43d1d5cac0.m4a"
+     "de": "Ja, das ist meine Familie. Das ist meine Mutter Aigul, und das ist mein Vater Marat. Das sind meine Eltern.",
+     "ru": "Да, это моя семья. Это моя мама Айгуль, а это мой папа Марат. Это мои родители.",
+     "audio": "audio/326e1f471c3e.m4a"
     },
     {
      "who": "M",
      "de": "Und wer ist das? Dein Bruder?",
      "ru": "А это кто? Твой брат?",
-     "audio": "audio/078d3e9341ac.m4a"
+     "audio": "audio/f30ef61b9d63.m4a"
     },
     {
      "who": "A",
-     "de": "Ja, das ist mein Bruder Piotr. Und das ist Jan. Ich habe zwei Brüder.",
-     "ru": "Да, это мой брат Пётр. А это Ян. У меня два брата.",
-     "audio": "audio/2eb2edcb02aa.m4a"
+     "de": "Ja, das ist mein Bruder Arman. Und das ist Nurlan. Ich habe zwei Brüder.",
+     "ru": "Да, это мой брат Арман. А это Нурлан. У меня два брата.",
+     "audio": "audio/2104aad007b4.m4a"
     },
     {
      "who": "M",
      "de": "Und hast du auch eine Schwester?",
      "ru": "А сестра у тебя тоже есть?",
-     "audio": "audio/dd36fe20466a.m4a"
+     "audio": "audio/58ecef44e063.m4a"
     },
     {
      "who": "A",
      "de": "Nein, ich habe keine Schwester.",
      "ru": "Нет, сестры у меня нет.",
-     "audio": "audio/5521cf653ea5.m4a"
+     "audio": "audio/3fb518289b56.m4a"
     },
     {
      "who": "M",
      "de": "Und der Hund? Ist das euer Hund?",
      "ru": "А собака? Это ваш пёс?",
-     "audio": "audio/825c31fdb9c5.m4a"
+     "audio": "audio/0e620c289ff8.m4a"
     },
     {
      "who": "A",
-     "de": "Ja, das ist unser Hund Burek. Er ist schon zwölf Jahre alt.",
-     "ru": "Да, это наш пёс Бурек. Ему уже двенадцать лет.",
-     "audio": "audio/13e1d014be39.m4a"
+     "de": "Ja, das ist unser Hund Balu. Er ist schon zwölf Jahre alt.",
+     "ru": "Да, это наш пёс Балу. Ему уже двенадцать лет.",
+     "audio": "audio/cc4f4b448680.m4a"
     }
    ]
   },
-  "marco": {
+  "mateo": {
    "title": "Drei Schwestern und ein Baby",
    "ru": "Три сестры и малыш",
-   "place": "Café, Leipzig",
+   "place": "Café Brunswik, Kiel",
    "people": {
     "A": {
-     "name": "Anna",
+     "name": "Dana",
      "voice": "Anna"
     },
     "M": {
-     "name": "Marco",
+     "name": "Mateo",
      "voice": "Reed"
     }
    },
    "lines": [
     {
      "who": "A",
-     "de": "Und du, Marco? Hast du Geschwister?",
-     "ru": "А ты, Марко? У тебя есть братья и сёстры?",
-     "audio": "audio/4e9613661bf5.m4a"
+     "de": "Und du, Mateo? Hast du Geschwister?",
+     "ru": "А ты, Матео? У тебя есть братья и сёстры?",
+     "audio": "audio/6016b9e0c70a.m4a"
     },
     {
      "who": "M",
-     "de": "Ja, ich habe drei Schwestern. Das ist Giulia, meine Schwester in Rom.",
-     "ru": "Да, у меня три сестры. Это Джулия, моя сестра в Риме.",
-     "audio": "audio/4ee6428f7a5a.m4a"
+     "de": "Ja, ich habe drei Schwestern. Das ist Lucía, meine Schwester in Buenos Aires.",
+     "ru": "Да, у меня три сестры. Это Лусия, моя сестра в Буэнос-Айресе.",
+     "audio": "audio/4fd15a95342b.m4a"
     },
     {
      "who": "A",
      "de": "Und wer ist das? Ist das ihr Mann?",
      "ru": "А это кто? Это её муж?",
-     "audio": "audio/5461c69efca3.m4a"
+     "audio": "audio/59de48176263.m4a"
     },
     {
      "who": "M",
-     "de": "Ja, das ist Luca, ihr Mann. Und das ist ihr Baby.",
-     "ru": "Да, это Лука, её муж. А это её малыш.",
-     "audio": "audio/2fc3f15fbd4b.m4a"
+     "de": "Ja, das ist Diego, ihr Mann. Und das ist ihr Baby.",
+     "ru": "Да, это Диего, её муж. А это её малыш.",
+     "audio": "audio/96db4726d618.m4a"
     },
     {
      "who": "A",
      "de": "Ein Baby! Ist das ein Junge oder ein Mädchen?",
      "ru": "Малыш! Это мальчик или девочка?",
-     "audio": "audio/d08e4391944a.m4a"
+     "audio": "audio/38edd82fa3d7.m4a"
     },
     {
      "who": "M",
      "de": "Ein Mädchen – Sofia. Ich bin jetzt Onkel!",
      "ru": "Девочка — София. Я теперь дядя!",
-     "audio": "audio/dbbdefc8b558.m4a"
+     "audio": "audio/77f43781d9b0.m4a"
     },
     {
      "who": "A",
-     "de": "Toll! Und deine Eltern? Wohnen sie auch in Rom?",
-     "ru": "Здорово! А твои родители? Они тоже живут в Риме?",
-     "audio": "audio/4b08eecf85ad.m4a"
+     "de": "Toll! Und deine Eltern? Wohnen sie auch in Buenos Aires?",
+     "ru": "Здорово! А твои родители? Они тоже живут в Буэнос-Айресе?",
+     "audio": "audio/05bedc186c5f.m4a"
     },
     {
      "who": "M",
-     "de": "Ja, unsere Familie ist in Rom. Nur ich bin hier in Leipzig.",
-     "ru": "Да, наша семья в Риме. Только я здесь, в Лейпциге.",
-     "audio": "audio/7676eb2c0152.m4a"
+     "de": "Ja, unsere Familie ist in Buenos Aires. Ich wohne jetzt hier in Kiel.",
+     "ru": "Да, наша семья в Буэнос-Айресе. Я сейчас живу здесь, в Киле.",
+     "audio": "audio/59f498e51d7c.m4a"
+    }
+   ]
+  },
+  "sachen": {
+   "title": "Unsere Sachen am Steg",
+   "ru": "Наши вещи у причала",
+   "place": "Парусный клуб на Kiellinie, Kiel",
+   "people": {
+    "D": {
+     "name": "Dana",
+     "voice": "Anna"
+    },
+    "M": {
+     "name": "Mateo",
+     "voice": "Reed"
+    }
+   },
+   "lines": [
+    {
+     "who": "D",
+     "de": "Das ist mein Rucksack. Und das sind meine Schlüssel.",
+     "ru": "Это мой рюкзак. А это мои ключи.",
+     "audio": "audio/b0e9498781fd.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Das ist Lucía. Das ist ihr Handy. Und das ist Diego. Das ist seine Tasche.",
+     "ru": "Это Лусия. Это её телефон. А это Диего. Это его сумка.",
+     "audio": "audio/e68954124b5b.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Dana, sind das unsere Fotos?",
+     "ru": "Дана, это наши фотографии?",
+     "audio": "audio/fce880a0d6d0.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Ja, Mateo, das sind unsere Fotos.",
+     "ru": "Да, Матео, это наши фотографии.",
+     "audio": "audio/4c36c3ac594e.m4a"
     }
    ]
   }
@@ -185,14 +226,14 @@
      "ru": "семья",
      "gender": "f",
      "plural": "Familien",
-     "audio": "audio/373e0ec65d5f.m4a"
+     "audio": "audio/5a28fd21c3b7.m4a"
     },
     {
      "de": "die Eltern",
      "ru": "родители",
      "gender": "pl",
      "plural": null,
-     "audio": "audio/d816f020077f.m4a"
+     "audio": "audio/1f029a2302e0.m4a"
     },
     {
      "de": "der Vater",
@@ -200,7 +241,7 @@
      "gender": "m",
      "plural": "Väter",
      "note": "по-домашнему — Papa",
-     "audio": "audio/fd4258943b4f.m4a"
+     "audio": "audio/1098dbda494a.m4a"
     },
     {
      "de": "die Mutter",
@@ -208,28 +249,28 @@
      "gender": "f",
      "plural": "Mütter",
      "note": "по-домашнему — Mama",
-     "audio": "audio/4fe784b8132d.m4a"
+     "audio": "audio/d71f0becc16a.m4a"
     },
     {
      "de": "das Kind",
      "ru": "ребёнок",
      "gender": "n",
      "plural": "Kinder",
-     "audio": "audio/77cb20fed3d6.m4a"
+     "audio": "audio/681a7733b607.m4a"
     },
     {
      "de": "der Sohn",
      "ru": "сын",
      "gender": "m",
      "plural": "Söhne",
-     "audio": "audio/96113f90eced.m4a"
+     "audio": "audio/dc2f375fef6c.m4a"
     },
     {
      "de": "die Tochter",
      "ru": "дочь",
      "gender": "f",
      "plural": "Töchter",
-     "audio": "audio/32902db50fea.m4a"
+     "audio": "audio/7e63a3094c5a.m4a"
     },
     {
      "de": "die Geschwister",
@@ -237,21 +278,21 @@
      "gender": "pl",
      "plural": null,
      "note": "одно слово на всех",
-     "audio": "audio/4b0dafcc8eb2.m4a"
+     "audio": "audio/74098c7c0fd9.m4a"
     },
     {
      "de": "der Bruder",
      "ru": "брат",
      "gender": "m",
      "plural": "Brüder",
-     "audio": "audio/a6e27006a671.m4a"
+     "audio": "audio/9f7e8bf039a7.m4a"
     },
     {
      "de": "die Schwester",
      "ru": "сестра",
      "gender": "f",
      "plural": "Schwestern",
-     "audio": "audio/c03254f149a5.m4a"
+     "audio": "audio/b9c8cb555d29.m4a"
     }
    ]
   },
@@ -264,7 +305,7 @@
      "ru": "бабушка и дедушка",
      "gender": "pl",
      "plural": null,
-     "audio": "audio/c408cfa8635c.m4a"
+     "audio": "audio/39c75127a6ba.m4a"
     },
     {
      "de": "der Opa",
@@ -272,7 +313,7 @@
      "gender": "m",
      "plural": "Opas",
      "note": "официально — der Großvater",
-     "audio": "audio/cd9d3940c878.m4a"
+     "audio": "audio/c2d02f2fdb64.m4a"
     },
     {
      "de": "die Oma",
@@ -280,21 +321,21 @@
      "gender": "f",
      "plural": "Omas",
      "note": "официально — die Großmutter",
-     "audio": "audio/19effc7ea66d.m4a"
+     "audio": "audio/b4c1861a5617.m4a"
     },
     {
      "de": "der Onkel",
      "ru": "дядя",
      "gender": "m",
      "plural": "Onkel",
-     "audio": "audio/34260058fdab.m4a"
+     "audio": "audio/bde44390eead.m4a"
     },
     {
      "de": "die Tante",
      "ru": "тётя",
      "gender": "f",
      "plural": "Tanten",
-     "audio": "audio/6eb61ba5c637.m4a"
+     "audio": "audio/e09cbeedacee.m4a"
     },
     {
      "de": "der Cousin",
@@ -302,7 +343,7 @@
      "gender": "m",
      "plural": "Cousins",
      "note": "[кузэ́н]",
-     "audio": "audio/6600a498aba4.m4a"
+     "audio": "audio/d6f9c0d769ab.m4a"
     },
     {
      "de": "die Cousine",
@@ -310,21 +351,21 @@
      "gender": "f",
      "plural": "Cousinen",
      "note": "[кузи́не]",
-     "audio": "audio/d1622aea9d27.m4a"
+     "audio": "audio/54548b74882a.m4a"
     },
     {
      "de": "der Enkel",
      "ru": "внук",
      "gender": "m",
      "plural": "Enkel",
-     "audio": "audio/cecf172f46e1.m4a"
+     "audio": "audio/ba13b18b7108.m4a"
     },
     {
      "de": "die Enkelin",
      "ru": "внучка",
      "gender": "f",
      "plural": "Enkelinnen",
-     "audio": "audio/ec6355ee7053.m4a"
+     "audio": "audio/5727c2216f9d.m4a"
     }
    ]
   },
@@ -337,7 +378,7 @@
      "ru": "мужчина; муж",
      "gender": "m",
      "plural": "Männer",
-     "audio": "audio/9c8e789b3de0.m4a"
+     "audio": "audio/027ae5757b29.m4a"
     },
     {
      "de": "die Frau",
@@ -345,14 +386,14 @@
      "gender": "f",
      "plural": "Frauen",
      "note": "и обращение — Frau Weber",
-     "audio": "audio/79398885b572.m4a"
+     "audio": "audio/d1c9c8d599cf.m4a"
     },
     {
      "de": "der Junge",
      "ru": "мальчик",
      "gender": "m",
      "plural": "Jungen",
-     "audio": "audio/9fb8f9d3f4b8.m4a"
+     "audio": "audio/ce41cc2992e7.m4a"
     },
     {
      "de": "das Mädchen",
@@ -360,28 +401,28 @@
      "gender": "n",
      "plural": "Mädchen",
      "note": "средний род, как das Kind",
-     "audio": "audio/16c27eb56751.m4a"
+     "audio": "audio/d8e10dced8d1.m4a"
     },
     {
      "de": "das Baby",
      "ru": "малыш, младенец",
      "gender": "n",
      "plural": "Babys",
-     "audio": "audio/452fd7cf14e8.m4a"
+     "audio": "audio/b2138a98e441.m4a"
     },
     {
      "de": "der Freund",
      "ru": "друг; парень",
      "gender": "m",
      "plural": "Freunde",
-     "audio": "audio/de1cace5b47e.m4a"
+     "audio": "audio/5e139a9885c2.m4a"
     },
     {
      "de": "die Freundin",
      "ru": "подруга; девушка",
      "gender": "f",
      "plural": "Freundinnen",
-     "audio": "audio/55cdb7ea8de5.m4a"
+     "audio": "audio/1a5a2a1e5291.m4a"
     },
     {
      "de": "der Hund",
@@ -389,14 +430,14 @@
      "gender": "m",
      "plural": "Hunde",
      "note": "мужской род: der Hund — er",
-     "audio": "audio/e191b0feaaee.m4a"
+     "audio": "audio/69e3026f4074.m4a"
     },
     {
      "de": "die Katze",
      "ru": "кошка",
      "gender": "f",
      "plural": "Katzen",
-     "audio": "audio/745291c564d3.m4a"
+     "audio": "audio/00cd01ce47ae.m4a"
     }
    ]
   },
@@ -410,7 +451,7 @@
      "gender": null,
      "plural": null,
      "note": "Ich bin verheiratet.",
-     "audio": "audio/29d174800bbd.m4a"
+     "audio": "audio/d5416b69dca9.m4a"
     },
     {
      "de": "ledig",
@@ -418,28 +459,70 @@
      "gender": null,
      "plural": null,
      "note": "слово из анкет",
-     "audio": "audio/a3e6b1a7e44b.m4a"
+     "audio": "audio/a5100f127ab8.m4a"
     },
     {
      "de": "geschieden",
      "ru": "разведён / разведена",
      "gender": null,
      "plural": null,
-     "audio": "audio/a16f0abe093f.m4a"
+     "audio": "audio/67b002fb0a9d.m4a"
     },
     {
      "de": "der Partner",
      "ru": "партнёр",
      "gender": "m",
      "plural": "Partner",
-     "audio": "audio/e768b06c81ff.m4a"
+     "audio": "audio/467a5899f26d.m4a"
     },
     {
      "de": "die Partnerin",
      "ru": "партнёрша",
      "gender": "f",
      "plural": "Partnerinnen",
-     "audio": "audio/6b9277a54a7d.m4a"
+     "audio": "audio/e166b920847a.m4a"
+    }
+   ]
+  },
+  "sachen": {
+   "title": "Gäste und Sachen",
+   "ru": "Гости и вещи для встречи",
+   "items": [
+    {
+     "de": "der Gast",
+     "ru": "гость",
+     "gender": "m",
+     "plural": "Gäste",
+     "audio": "audio/78ce0f055058.m4a"
+    },
+    {
+     "de": "die Tasche",
+     "ru": "сумка",
+     "gender": "f",
+     "plural": "Taschen",
+     "audio": "audio/8d7ec2dd610d.m4a"
+    },
+    {
+     "de": "der Rucksack",
+     "ru": "рюкзак",
+     "gender": "m",
+     "plural": "Rucksäcke",
+     "audio": "audio/71c1c1309faf.m4a"
+    },
+    {
+     "de": "der Schlüssel",
+     "ru": "ключ",
+     "gender": "m",
+     "plural": "Schlüssel",
+     "note": "Один и несколько выглядят одинаково: der Schlüssel — die Schlüssel.",
+     "audio": "audio/df9315794234.m4a"
+    },
+    {
+     "de": "das Foto",
+     "ru": "фотография",
+     "gender": "n",
+     "plural": "Fotos",
+     "audio": "audio/9e784cc977d1.m4a"
     }
    ]
   }
@@ -612,7 +695,7 @@
    "ruCols": [
     2
    ],
-   "note": "Во множественном числе артикль всегда *die*. Форму учите вместе со словом: *der Bruder — die Brüder*."
+   "note": "Во множественном числе артикль всегда *die*. Сверяйте форму в карточке и используйте её, подписывая фото и возвращая вещи владельцам."
   }
  },
  "tasks": {
@@ -626,11 +709,11 @@
    "sample": [
     {
      "de": "Hast du Kinder?",
-     "audio": "audio/b5506c58aecb.m4a"
+     "audio": "audio/508aed099108.m4a"
     },
     {
      "de": "Nein, ich habe keine Kinder. Aber meine Schwester hat ein Baby.",
-     "audio": "audio/a22419fa7058.m4a"
+     "audio": "audio/7d2baf729de7.m4a"
     }
    ]
   },
@@ -639,11 +722,11 @@
    "part": "lesen-1",
    "title": "Lesen, Teil 1",
    "situation": "Lesen Sie die E-Mail. Ist die Aussage richtig oder falsch?",
-   "from": "Marco Rossi",
-   "to": "Anna Nowak",
-   "subject": "Besuch aus Rom",
-   "text": "Liebe Anna,\nmeine Schwester Giulia ist jetzt hier in Leipzig! Ihr Mann Luca und ihr Baby Sofia sind auch hier. Sofia ist drei Monate alt. Giulia spricht ein bisschen Deutsch, aber Luca spricht nur Italienisch und Englisch. Hast du heute Abend Zeit?\nViele Grüße\nMarco",
-   "statement": "Sofia ist Marcos Tochter.",
+   "from": "Mateo Fernández",
+   "to": "Dana Ospanowa",
+   "subject": "Gäste in Kiel",
+   "text": "Liebe Dana,\nmeine Schwester Lucía ist jetzt hier in Kiel! Ihr Mann Diego und ihr Baby Sofia sind auch hier. Sofia ist drei Monate alt. Lucía spricht ein bisschen Deutsch, aber Diego spricht nur Spanisch und Englisch. Unsere Gäste sind heute am Hafen. Hast du auch Zeit?\nViele Grüße\nMateo",
+   "statement": "Sofia ist Mateos Tochter.",
    "answer": false,
    "sample": []
   }
@@ -652,10 +735,10 @@
   {
    "id": "foto-1",
    "step": "foto",
-   "stepTitle": "Фотография из Польши",
+   "stepTitle": "Семейная фотография из Алматы",
    "chapterIndex": 0,
    "indexInStep": 0,
-   "read": "После занятия Марко замечает у Анны в телефоне фотографию: *Ist das ein Foto aus Polen?* — «это фото из Польши?». Анна кивает: *Das ist meine Familie*, а потом — *Das sind meine Eltern*. Заметьте: «это» по-немецки всегда *das*, но глагол меняется. Об одном человеке или предмете говорят *das ist*, о нескольких — *das sind*. В русском глагола здесь нет вовсе.",
+   "read": "После занятия Матео замечает у Даны в телефоне фотографию: *Ist das ein Foto aus Kasachstan?* — «это фото из Казахстана?». Дана кивает: *Das ist meine Familie*, а потом — *Das sind meine Eltern*. Заметьте: «это» по-немецки всегда *das*, но глагол меняется. Об одном человеке или предмете говорят *das ist*, о нескольких — *das sind*. В русском глагола здесь нет вовсе.",
    "point": "*Das ist* — один, *Das sind* — несколько: *Das sind meine Eltern.*",
    "scene": {
     "view": "dialogue",
@@ -670,10 +753,10 @@
   {
    "id": "foto-2",
    "step": "foto",
-   "stepTitle": "Фотография из Польши",
+   "stepTitle": "Семейная фотография из Алматы",
    "chapterIndex": 0,
    "indexInStep": 1,
-   "read": "Марко спрашивает *Dein Bruder?* — «твой брат?», и Анна отвечает *Ja, das ist mein Bruder Piotr.* Как русские «мой» и «моя», немецкие *mein* и *dein* меняют окончание: *meine Familie*, но *mein Bruder*. Почему так, разберём в грамматике. А в *zwei Brüder* — первое множественное число темы: над *u* появились две точки, и больше ничего не изменилось.",
+   "read": "Матео спрашивает *Dein Bruder?* — «твой брат?», и Дана отвечает *Ja, das ist mein Bruder Arman.* Как русские «мой» и «моя», немецкие *mein* и *dein* меняют окончание: *meine Familie*, но *mein Bruder*. Почему так, разберём в грамматике. А в *zwei Brüder* — первое множественное число темы: над *u* появились две точки, и больше ничего не изменилось.",
    "point": "*mein Bruder*, но *meine Familie* — окончание зависит от слова",
    "scene": {
     "view": "dialogue",
@@ -693,10 +776,10 @@
   {
    "id": "foto-3",
    "step": "foto",
-   "stepTitle": "Фотография из Польши",
+   "stepTitle": "Семейная фотография из Алматы",
    "chapterIndex": 0,
    "indexInStep": 2,
-   "read": "На вопрос *Hast du auch eine Schwester?* Анна отвечает *Nein, ich habe keine Schwester.* По-русски «сестры нет», а по-немецки отрицание встаёт прямо перед словом: *keine* — «никакой». Дальше на фото собака. Марко спрашивает *Ist das euer Hund?* — «ваш», то есть всей семьи. Анна отвечает *unser Hund* — «наш» — и говорит о нём *er*: *der Hund* мужского рода.",
+   "read": "На вопрос *Hast du auch eine Schwester?* Дана отвечает *Nein, ich habe keine Schwester.* По-русски «сестры нет», а по-немецки отрицание встаёт прямо перед словом: *keine* — «никакой». Дальше на фото собака. Матео спрашивает *Ist das euer Hund?* — «ваш», то есть всей семьи. Дана отвечает *unser Hund* — «наш» — и говорит о нём *er*: *der Hund* мужского рода.",
    "point": "*Ich habe keine Schwester.* — «У меня нет сестры»",
    "scene": {
     "view": "dialogue",
@@ -717,16 +800,16 @@
    }
   },
   {
-   "id": "marco-1",
-   "step": "marco",
+   "id": "mateo-1",
+   "step": "mateo",
    "stepTitle": "Три сестры и малыш",
    "chapterIndex": 0,
    "indexInStep": 0,
-   "read": "Теперь очередь Марко. *Geschwister* — одно слово для братьев и сестёр вместе, в русском такого нет. У Марко три сестры, и он показывает Джулию. Анна спрашивает *Ist das ihr Mann?* — «это её муж?». *ihr* здесь не «вы», как в первой теме, а «её»: владелица — Джулия. А *der Mann* — это и «мужчина», и «муж».",
+   "read": "Теперь очередь Матео. *Geschwister* — одно слово для братьев и сестёр вместе, в русском такого нет. У Матео три сестры, и он показывает Лусию. Дана спрашивает *Ist das ihr Mann?* — «это её муж?». *ihr* здесь не «вы», как в первой теме, а «её»: владелица — Лусия. А *der Mann* — это и «мужчина», и «муж».",
    "point": "*ihr Mann* — «её муж»; *der Mann* — и мужчина, и муж",
    "scene": {
     "view": "dialogue",
-    "dialogue": "marco",
+    "dialogue": "mateo",
     "reveal": 4,
     "fresh": [
      0,
@@ -743,16 +826,16 @@
    }
   },
   {
-   "id": "marco-2",
-   "step": "marco",
+   "id": "mateo-2",
+   "step": "mateo",
    "stepTitle": "Три сестры и малыш",
    "chapterIndex": 0,
    "indexInStep": 1,
-   "read": "*Ist das ein Junge oder ein Mädchen?* — оба раза *ein*, потому что *das Mädchen* среднего рода, как *das Kind* и *das Baby*. Это правило грамматики, а не биологии: слова на *-chen* всегда среднего рода. Марко теперь дядя — *Ich bin jetzt Onkel*, без артикля, как с профессией. А *unsere Familie* — «наша семья»: снова *-e* перед словом с *die*.",
+   "read": "*Ist das ein Junge oder ein Mädchen?* — оба раза *ein*, потому что *das Mädchen* среднего рода, как *das Kind* и *das Baby*. Это правило грамматики, а не биологии: слова на *-chen* всегда среднего рода. Матео теперь дядя — *Ich bin jetzt Onkel*, без артикля, как с профессией. А *unsere Familie* — «наша семья»: снова *-e* перед словом с *die*.",
    "point": "*das Mädchen* — средний род: *ein Mädchen*",
    "scene": {
     "view": "dialogue",
-    "dialogue": "marco",
+    "dialogue": "mateo",
     "reveal": 8,
     "fresh": [
      4,
@@ -768,16 +851,56 @@
    }
   },
   {
+   "id": "sachen-1",
+   "step": "sachen",
+   "stepTitle": "Кто оставил вещи у причала?",
+   "chapterIndex": 0,
+   "indexInStep": 0,
+   "read": "После кафе друзья заходят в клуб на Kiellinie. Для встречи гостей нужно разобрать вещи. Дана показывает: *Das ist mein Rucksack. Und das sind meine Schlüssel.* *der Schlüssel* и *die Schlüssel* выглядят одинаково: сколько ключей, подсказывают артикль, *mein / meine* и глагол *ist / sind*. Матео показывает Лусию и её телефон, затем Диего и его сумку. Следите за тем, кто владелец.",
+   "point": "*mein Rucksack*, *meine Schlüssel*; *ihr Handy* — Лусии, *seine Tasche* — Диего",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "sachen",
+    "reveal": 2,
+    "fresh": [
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "sachen-2",
+   "step": "sachen",
+   "stepTitle": "Кто оставил вещи у причала?",
+   "chapterIndex": 0,
+   "indexInStep": 1,
+   "read": "Матео спрашивает *Sind das unsere Fotos?* — «это наши фотографии?». Дана подтверждает: *Ja, Mateo, das sind unsere Fotos.* Слово *unsere* относится к ним обоим. По отдельной реплике не всегда понятно, кто входит в «мы», поэтому здесь назван собеседник. В игре вы вернёте эти вещи людям по их сообщениям: окончания станут подсказками для настоящего действия.",
+   "point": "*unsere Fotos* — фотографии Даны и Матео; *Fotos* требует *sind*",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "sachen",
+    "reveal": 4,
+    "fresh": [
+     2,
+     3
+    ],
+    "focus": [
+     2,
+     3
+    ]
+   }
+  },
+  {
    "id": "familie-1",
    "step": "familie",
    "stepTitle": "Самые близкие",
    "chapterIndex": 1,
    "indexInStep": 0,
-   "read": "Учите слова сразу с множественным числом: *der Bruder — die Brüder*, *die Tochter — die Töchter*. Угадать его почти никогда нельзя, поэтому на карточках оно всегда рядом. Два слова здесь бывают только во множественном: *die Eltern* и *die Geschwister*. Об одном родителе говорят просто *Vater* или *Mutter*, а о брате или сестре — *Bruder* или *Schwester*.",
+   "read": "На фотографии Даны два брата: *der Bruder — die Brüder*. Несколько детей — *das Kind — die Kinder*. Угадать множественное число не всегда можно: проверяйте форму в карточке, а затем используйте её, чтобы представить людей на фото. Два слова здесь бывают только во множественном: *die Eltern* и *die Geschwister*. Об одном родителе говорят *Vater* или *Mutter*, о брате или сестре — *Bruder* или *Schwester*.",
    "point": "*die Eltern*, *die Geschwister* — только мн. ч.",
    "scene": {
     "view": "words",
-    "dialogue": "marco",
+    "dialogue": "sachen",
     "words": "familie"
    }
   },
@@ -791,7 +914,7 @@
    "point": "*Oma*, *Opa* — по-домашнему; *Großmutter*, *Großvater* — официально",
    "scene": {
     "view": "words",
-    "dialogue": "marco",
+    "dialogue": "sachen",
     "words": "verwandte"
    }
   },
@@ -801,11 +924,11 @@
    "stepTitle": "Мужчина, женщина, ребёнок",
    "chapterIndex": 1,
    "indexInStep": 0,
-   "read": "*der Mann* — и «мужчина», и «муж», *die Frau* — и «женщина», и «жена», и обращение, как в *Frau Weber*. Значение подсказывает контекст: *mein Mann* — точно муж. С *der Freund* и *die Freundin* так же: это и друг или подруга, и парень или девушка. И запомните род: *das Mädchen* — среднего, а собака *der Hund* — мужского, поэтому про Бурека говорят *er*.",
+   "read": "*der Mann* — и «мужчина», и «муж», *die Frau* — и «женщина», и «жена», и обращение, как в *Frau Weber*. Значение подсказывает контекст: *mein Mann* — точно муж. С *der Freund* и *die Freundin* так же: это и друг или подруга, и парень или девушка. И запомните род: *das Mädchen* — среднего, а собака *der Hund* — мужского, поэтому про Балу говорят *er*.",
    "point": "*mein Mann* — муж, *meine Frau* — жена; *der Freund* — друг или парень",
    "scene": {
     "view": "words",
-    "dialogue": "marco",
+    "dialogue": "sachen",
     "words": "leute"
    }
   },
@@ -819,8 +942,22 @@
    "point": "*Ich bin verheiratet / ledig / geschieden.* — с *sein*",
    "scene": {
     "view": "words",
-    "dialogue": "marco",
+    "dialogue": "sachen",
     "words": "stand"
+   }
+  },
+  {
+   "id": "gaeste-und-sachen-1",
+   "step": "gaeste-und-sachen",
+   "stepTitle": "Гости, сумки и ключи",
+   "chapterIndex": 1,
+   "indexInStep": 0,
+   "read": "Гостей на встрече называют *die Gäste*, одного гостя — *der Gast*. У лодки пригодятся ещё четыре слова: *die Tasche*, *der Rucksack*, *der Schlüssel*, *das Foto*. Форма *Schlüssel* не меняется во множественном числе, а в *Rucksäcke* появляется умлаут. Не нужно отдельно зубрить весь список: в игре вы найдёте владельцев вещей и подпишете список гостей.",
+   "point": "*der Gast — die Gäste*, *der Schlüssel — die Schlüssel*",
+   "scene": {
+    "view": "words",
+    "dialogue": "sachen",
+    "words": "sachen"
    }
   },
   {
@@ -833,8 +970,8 @@
    "point": "*mein* стоит вместо артикля: *der Vater* → *mein Vater*",
    "scene": {
     "view": "sentence",
-    "dialogue": "marco",
-    "words": "stand",
+    "dialogue": "sachen",
+    "words": "sachen",
     "rows": [
      {
       "slots": [
@@ -865,7 +1002,7 @@
       "punct": ".",
       "plain": "Das ist mein Vater.",
       "ru": "Это мой отец.",
-      "audio": "audio/dbe75e2d328e.m4a"
+      "audio": "audio/0ad54b720968.m4a"
      }
     ]
    }
@@ -880,8 +1017,8 @@
    "point": "*der* / *das* → *mein*, *die* → *mein+e*",
    "scene": {
     "view": "sentence",
-    "dialogue": "marco",
-    "words": "stand",
+    "dialogue": "sachen",
+    "words": "sachen",
     "rows": [
      {
       "slots": [
@@ -912,7 +1049,7 @@
       "punct": ".",
       "plain": "Das ist meine Mutter.",
       "ru": "Это моя мать.",
-      "audio": "audio/3574033f45b9.m4a"
+      "audio": "audio/cbe6d45dbae5.m4a"
      }
     ]
    }
@@ -927,8 +1064,8 @@
    "point": "Мн. ч.: *Das sind mein+e Eltern.*",
    "scene": {
     "view": "sentence",
-    "dialogue": "marco",
-    "words": "stand",
+    "dialogue": "sachen",
+    "words": "sachen",
     "rows": [
      {
       "slots": [
@@ -959,7 +1096,7 @@
       "punct": ".",
       "plain": "Das sind meine Eltern.",
       "ru": "Это мои родители.",
-      "audio": "audio/a42c9bea374c.m4a"
+      "audio": "audio/7152d81b3677.m4a"
      }
     ]
    }
@@ -970,12 +1107,12 @@
    "stepTitle": "Его или её",
    "chapterIndex": 2,
    "indexInStep": 0,
-   "read": "У каждого личного местоимения есть своё притяжательное слово: *ich* — *mein*, *du* — *dein*. В третьем лице всё решает владелец, как в русском «его» и «её»: Пётр и *sein Sohn*, Джулия и *ihr Mann*. С глаголом *sein* — «быть» — это слово просто совпадает. А в отличие от русского, у «его» и «её» есть окончание — по слову после них: *seine Frau*, *ihre Tochter*.",
+   "read": "У каждого личного местоимения есть своё притяжательное слово: *ich* — *mein*, *du* — *dein*. В третьем лице всё решает владелец, как в русском «его» и «её»: Арман и *sein Sohn*, Лусия и *ihr Mann*. С глаголом *sein* — «быть» — это слово просто совпадает. А в отличие от русского, у «его» и «её» есть окончание — по слову после них: *seine Frau*, *ihre Tochter*.",
    "point": "Корень — по владельцу (*sein* / *ihr*), окончание — по слову после него",
    "scene": {
     "view": "table",
-    "dialogue": "marco",
-    "words": "stand",
+    "dialogue": "sachen",
+    "words": "sachen",
     "rows": [
      {
       "slots": [
@@ -1006,7 +1143,7 @@
       "punct": ".",
       "plain": "Das sind meine Eltern.",
       "ru": "Это мои родители.",
-      "audio": "audio/a42c9bea374c.m4a"
+      "audio": "audio/7152d81b3677.m4a"
      }
     ],
     "table": "possessiv",
@@ -1023,12 +1160,12 @@
    "stepTitle": "Его или её",
    "chapterIndex": 2,
    "indexInStep": 1,
-   "read": "Главная ловушка — *ihr*. Это и «её», и «их», а с большой буквы — вежливое «Ваш»: *Ist das Ihr Sohn, Frau Weber?* Плюс *ihr* — «вы» из первой темы. Вторая ловушка: *euer* теряет *e* перед окончанием — *euer Hund*, но *eure Kinder*. И третья: в немецком нет слова «свой». «Анна и её брат» — *Anna und ihr Bruder*, «я и мой брат» — *ich und mein Bruder*.",
-   "point": "Нет «свой»: *Anna und ihr Bruder*; *euer* → *eure Kinder*",
+   "read": "Главная ловушка — *ihr*: это и «её», и «их», а с большой буквы — вежливое «Ваш»: *Ist das Ihr Sohn, Frau Weber?* Плюс *ihr* — «вы» из первой темы. *euer* теряет *e* перед окончанием: *euer Hund*, но *eure Kinder*. Русское «свой» здесь передаём словом по владельцу: «Дана и её брат» — *Dana und ihr Bruder*, «я и мой брат» — *ich und mein Bruder*.",
+   "point": "«Свой» передаём по владельцу: *mein*, *dein*, *ihr*; *euer* → *eure Kinder*",
    "scene": {
     "view": "table",
-    "dialogue": "marco",
-    "words": "stand",
+    "dialogue": "sachen",
+    "words": "sachen",
     "rows": [
      {
       "slots": [
@@ -1059,7 +1196,7 @@
       "punct": ".",
       "plain": "Das sind meine Eltern.",
       "ru": "Это мои родители.",
-      "audio": "audio/a42c9bea374c.m4a"
+      "audio": "audio/7152d81b3677.m4a"
      }
     ],
     "table": "possessiv",
@@ -1088,8 +1225,8 @@
    "point": "*ein* / *eine* — когда говорим впервые; во мн. ч. артикля нет",
    "scene": {
     "view": "table",
-    "dialogue": "marco",
-    "words": "stand",
+    "dialogue": "sachen",
+    "words": "sachen",
     "rows": [
      {
       "slots": [
@@ -1120,7 +1257,7 @@
       "punct": ".",
       "plain": "Das sind meine Eltern.",
       "ru": "Это мои родители.",
-      "audio": "audio/a42c9bea374c.m4a"
+      "audio": "audio/7152d81b3677.m4a"
      }
     ],
     "table": "einkein",
@@ -1133,12 +1270,12 @@
    "stepTitle": "*ein* или *kein*",
    "chapterIndex": 2,
    "indexInStep": 1,
-   "read": "Отрицание существительного — *kein*: *Ich habe keine Schwester*, *Marco hat keine Kinder*. Не путайте его с *nein*: *nein* — ответ на вопрос, а *kein* стоит прямо перед словом, на месте артикля. Окончания — как у *mein*, включая множественное: *keine Kinder*. Осторожно с мужским родом после *haben*: «у меня есть брат» — *Ich habe einen Bruder*. Почему *einen*, узнаем в следующей теме.",
+   "read": "Отрицание существительного — *kein*: *Ich habe keine Schwester*, *Mateo hat keine Kinder*. Не путайте его с *nein*: *nein* — ответ на вопрос, а *kein* стоит прямо перед словом, на месте артикля. Окончания — как у *mein*, включая множественное: *keine Kinder*. Осторожно с мужским родом после *haben*: «у меня есть брат» — *Ich habe einen Bruder*. Почему *einen*, узнаем в следующей теме.",
    "point": "*kein* / *keine* — «нет» перед словом: *Ich habe keine Kinder.*",
    "scene": {
     "view": "table",
-    "dialogue": "marco",
-    "words": "stand",
+    "dialogue": "sachen",
+    "words": "sachen",
     "rows": [
      {
       "slots": [
@@ -1169,7 +1306,7 @@
       "punct": ".",
       "plain": "Das sind meine Eltern.",
       "ru": "Это мои родители.",
-      "audio": "audio/a42c9bea374c.m4a"
+      "audio": "audio/7152d81b3677.m4a"
      }
     ],
     "table": "einkein",
@@ -1194,8 +1331,8 @@
    "point": "*der* / *das*: часто *-e* или *-er*, иногда с умлаутом: *Söhne*, *Männer*",
    "scene": {
     "view": "table",
-    "dialogue": "marco",
-    "words": "stand",
+    "dialogue": "sachen",
+    "words": "sachen",
     "rows": [
      {
       "slots": [
@@ -1226,7 +1363,7 @@
       "punct": ".",
       "plain": "Das sind meine Eltern.",
       "ru": "Это мои родители.",
-      "audio": "audio/a42c9bea374c.m4a"
+      "audio": "audio/7152d81b3677.m4a"
      }
     ],
     "table": "plural",
@@ -1239,12 +1376,12 @@
    "stepTitle": "Много братьев и сестёр",
    "chapterIndex": 2,
    "indexInStep": 1,
-   "read": "Слова с *die* почти всегда получают *-n* или *-en*: *die Schwestern*, *die Frauen*, *die Tanten*. Слова на *-el* и *-er* часто не меняются или меняют только гласную: *die Onkel*, *die Brüder*. Короткие и заимствованные слова — на *-s*: *die Fotos*, *die Omas*, *die Babys*. И главное: во множественном числе артикль всегда *die*, какого бы рода ни было слово.",
-   "point": "*die*-слова — на *-(e)n*; артикль во мн. ч. — всегда *die*",
+   "read": "Многие слова с *die* получают *-n* или *-en*: *die Schwestern*, *die Frauen*, *die Tanten*. Но уже знакомые *Mutter* и *Tochter* меняют гласную: *Mütter*, *Töchter*. Слова на *-el* и *-er* часто не меняются или меняют только гласную: *die Onkel*, *die Brüder*. Короткие и заимствованные слова нередко получают *-s*: *die Fotos*, *die Omas*, *die Babys*. Артикль во множественном числе всегда *die*.",
+   "point": "У мн. ч. разные формы: *Schwestern*, *Mütter*, *Brüder*, *Fotos*; артикль — *die*",
    "scene": {
     "view": "table",
-    "dialogue": "marco",
-    "words": "stand",
+    "dialogue": "sachen",
+    "words": "sachen",
     "rows": [
      {
       "slots": [
@@ -1275,7 +1412,7 @@
       "punct": ".",
       "plain": "Das sind meine Eltern.",
       "ru": "Это мои родители.",
-      "audio": "audio/a42c9bea374c.m4a"
+      "audio": "audio/7152d81b3677.m4a"
      }
     ],
     "table": "plural",
@@ -1302,12 +1439,12 @@
    "stepTitle": "Много братьев и сестёр",
    "chapterIndex": 2,
    "indexInStep": 2,
-   "read": "Множественное число меняет и всё вокруг. Сравните: *Mein Bruder wohnt in Warschau* и *Meine Brüder wohnen in Warschau*. Группа *meine Brüder* по-прежнему занимает одну позицию, глагол — вторую. Но у *mein* появилось *-e*, а у глагола — окончание *-en*, как у *wir* и *sie*. Проверяйте подлежащее: если оно во множественном числе, глагол тоже.",
+   "read": "Множественное число меняет и всё вокруг. Сравните: *Mein Bruder wohnt in Almaty* и *Meine Brüder wohnen in Almaty*. Группа *meine Brüder* по-прежнему занимает одну позицию, глагол — вторую. Но у *mein* появилось *-e*, а у глагола — окончание *-en*, как у *wir* и *sie*. Проверяйте подлежащее: если оно во множественном числе, глагол тоже.",
    "point": "*Mein Bruder wohn+t* → *Mein+e Brüder wohn+en*",
    "scene": {
     "view": "sentence",
-    "dialogue": "marco",
-    "words": "stand",
+    "dialogue": "sachen",
+    "words": "sachen",
     "rows": [
      {
       "slots": [
@@ -1333,16 +1470,16 @@
          "text": "in"
         },
         {
-         "key": "warschau",
-         "text": "Warschau"
+         "key": "almaty",
+         "text": "Almaty"
         }
        ],
        []
       ],
       "punct": ".",
-      "plain": "Mein Bruder wohnt in Warschau.",
-      "ru": "Мой брат живёт в Варшаве.",
-      "audio": "audio/6e0cfe0715a6.m4a"
+      "plain": "Mein Bruder wohnt in Almaty.",
+      "ru": "Мой брат живёт в Алматы.",
+      "audio": "audio/3ddb1ec5932e.m4a"
      },
      {
       "slots": [
@@ -1368,16 +1505,16 @@
          "text": "in"
         },
         {
-         "key": "warschau",
-         "text": "Warschau"
+         "key": "almaty",
+         "text": "Almaty"
         }
        ],
        []
       ],
       "punct": ".",
-      "plain": "Meine Brüder wohnen in Warschau.",
-      "ru": "Мои братья живут в Варшаве.",
-      "audio": "audio/14d085035d69.m4a"
+      "plain": "Meine Brüder wohnen in Almaty.",
+      "ru": "Мои братья живут в Алматы.",
+      "audio": "audio/7c5c68b44091.m4a"
      }
     ],
     "table": "plural"
@@ -1392,88 +1529,10 @@
    "read": "*Das sind unsere Kinder.* Детей несколько, поэтому глагол *sind*. От *wir* — *unser*, а перед множественным числом — окончание *-e*: *unsere*. Множественное от *das Kind* — *die Kinder*, с *-er*. Три правила темы в одной короткой фразе. Обратите внимание: *unser* само кончается на *-er*, но это часть корня, а не окончание.",
    "point": "*Das sind unser+e Kinder.*",
    "question": "Как сказать «Это наши дети»?",
-   "sceneBefore": {
-    "view": "sentence",
-    "dialogue": "marco",
-    "words": "stand",
-    "rows": [
-     {
-      "slots": [
-       [
-        {
-         "key": "mein",
-         "text": "Mein"
-        },
-        {
-         "key": "bruder",
-         "text": "Bruder"
-        }
-       ],
-       [
-        {
-         "key": "wohn",
-         "text": "wohn+t"
-        }
-       ],
-       [
-        {
-         "key": "in",
-         "text": "in"
-        },
-        {
-         "key": "warschau",
-         "text": "Warschau"
-        }
-       ],
-       []
-      ],
-      "punct": ".",
-      "plain": "Mein Bruder wohnt in Warschau.",
-      "ru": "Мой брат живёт в Варшаве.",
-      "audio": "audio/6e0cfe0715a6.m4a"
-     },
-     {
-      "slots": [
-       [
-        {
-         "key": "mein",
-         "text": "Mein+e"
-        },
-        {
-         "key": "brüder",
-         "text": "Brüder"
-        }
-       ],
-       [
-        {
-         "key": "wohn",
-         "text": "wohn+en"
-        }
-       ],
-       [
-        {
-         "key": "in",
-         "text": "in"
-        },
-        {
-         "key": "warschau",
-         "text": "Warschau"
-        }
-       ],
-       []
-      ],
-      "punct": ".",
-      "plain": "Meine Brüder wohnen in Warschau.",
-      "ru": "Мои братья живут в Варшаве.",
-      "audio": "audio/14d085035d69.m4a"
-     }
-    ],
-    "table": "plural"
-   },
    "scene": {
     "view": "sentence",
-    "dialogue": "marco",
-    "words": "stand",
+    "dialogue": "sachen",
+    "words": "sachen",
     "rows": [
      {
       "slots": [
@@ -1504,7 +1563,7 @@
       "punct": ".",
       "plain": "Das sind unsere Kinder.",
       "ru": "Это наши дети.",
-      "audio": "audio/1c3424187d63.m4a"
+      "audio": "audio/5095d1430f09.m4a"
      }
     ],
     "table": "plural"
@@ -1516,52 +1575,13 @@
    "stepTitle": "Проверьте себя",
    "chapterIndex": 3,
    "indexInStep": 1,
-   "read": "*Das ist seine Frau.* Владелец — Пётр, мужчина, поэтому корень *sein*. Жена — *die Frau*, женский род, поэтому окончание *-e*. А о муже Джулии скажут *ihr Mann*: корень *ihr* — по владелице, окончания нет, потому что *der Mann*. Одно слово отвечает сразу на два вопроса: чьё и какого рода.",
-   "point": "*seine Frau* — жена Петра; *ihr Mann* — муж Джулии",
-   "question": "Пётр женат. Как сказать о нём «Это его жена»?",
-   "sceneBefore": {
-    "view": "sentence",
-    "dialogue": "marco",
-    "words": "stand",
-    "rows": [
-     {
-      "slots": [
-       [
-        {
-         "key": "das",
-         "text": "Das"
-        }
-       ],
-       [
-        {
-         "key": "sind",
-         "text": "sind"
-        }
-       ],
-       [
-        {
-         "key": "unser",
-         "text": "unser+e"
-        },
-        {
-         "key": "kinder",
-         "text": "Kinder"
-        }
-       ],
-       []
-      ],
-      "punct": ".",
-      "plain": "Das sind unsere Kinder.",
-      "ru": "Это наши дети.",
-      "audio": "audio/1c3424187d63.m4a"
-     }
-    ],
-    "table": "plural"
-   },
+   "read": "*Das ist seine Frau.* Владелец — Арман, мужчина, поэтому корень *sein*. Жена — *die Frau*, женский род, поэтому окончание *-e*. А о муже Лусии скажут *ihr Mann*: корень *ihr* — по владелице, окончания нет, потому что *der Mann*. Одно слово отвечает сразу на два вопроса: чьё и какого рода.",
+   "point": "*seine Frau* — жена Армана; *ihr Mann* — муж Лусии",
+   "question": "Арман женат. Как сказать о нём «Это его жена»?",
    "scene": {
     "view": "table",
-    "dialogue": "marco",
-    "words": "stand",
+    "dialogue": "sachen",
+    "words": "sachen",
     "rows": [
      {
       "slots": [
@@ -1592,7 +1612,7 @@
       "punct": ".",
       "plain": "Das sind unsere Kinder.",
       "ru": "Это наши дети.",
-      "audio": "audio/1c3424187d63.m4a"
+      "audio": "audio/5095d1430f09.m4a"
      }
     ],
     "table": "possessiv",
@@ -1613,8 +1633,8 @@
    "question": "Как ответить на *Hast du Kinder?*, если детей нет?",
    "sceneBefore": {
     "view": "sentence",
-    "dialogue": "marco",
-    "words": "stand",
+    "dialogue": "sachen",
+    "words": "sachen",
     "rows": [
      {
       "slots": [
@@ -1640,15 +1660,15 @@
       "punct": "?",
       "plain": "Hast du Kinder?",
       "ru": "У тебя есть дети?",
-      "audio": "audio/b5506c58aecb.m4a"
+      "audio": "audio/508aed099108.m4a"
      }
     ],
     "table": "possessiv"
    },
    "scene": {
     "view": "sentence",
-    "dialogue": "marco",
-    "words": "stand",
+    "dialogue": "sachen",
+    "words": "sachen",
     "rows": [
      {
       "slots": [
@@ -1674,7 +1694,7 @@
       "punct": "?",
       "plain": "Hast du Kinder?",
       "ru": "У тебя есть дети?",
-      "audio": "audio/b5506c58aecb.m4a"
+      "audio": "audio/508aed099108.m4a"
      },
      {
       "slots": [
@@ -1705,7 +1725,7 @@
       "punct": ".",
       "plain": "Ich habe keine Kinder.",
       "ru": "Нет, у меня нет детей.",
-      "audio": "audio/51afd2603588.m4a"
+      "audio": "audio/d7ef53a304f7.m4a"
      }
     ],
     "table": "possessiv",
@@ -1724,8 +1744,8 @@
    "point": "Часть 2: тема + слово → свой вопрос партнёру и ответ на его вопрос",
    "scene": {
     "view": "task",
-    "dialogue": "marco",
-    "words": "stand",
+    "dialogue": "sachen",
+    "words": "sachen",
     "rows": [
      {
       "slots": [
@@ -1751,7 +1771,7 @@
       "punct": "?",
       "plain": "Hast du Kinder?",
       "ru": "У тебя есть дети?",
-      "audio": "audio/b5506c58aecb.m4a"
+      "audio": "audio/508aed099108.m4a"
      },
      {
       "slots": [
@@ -1782,7 +1802,7 @@
       "punct": ".",
       "plain": "Ich habe keine Kinder.",
       "ru": "Нет, у меня нет детей.",
-      "audio": "audio/51afd2603588.m4a"
+      "audio": "audio/d7ef53a304f7.m4a"
      }
     ],
     "table": "possessiv",
@@ -1799,77 +1819,10 @@
    "read": "Самый простой — вопрос да/нет: *Hast du Kinder?* или вежливо *Haben Sie Kinder?* Подойдёт и W-вопрос: *Wie alt sind deine Kinder?* — но он предполагает, что дети есть. Партнёр отвечает полным предложением: *Nein, ich habe keine Kinder.* Добавьте ещё одну фразу — так ответ звучит увереннее: *Aber meine Schwester hat ein Baby.*",
    "point": "Вопрос по карточке — со словом с карточки: *Haben Sie Kinder?*",
    "question": "Тема — *Familie*, слово — *Kinder*. Какой вопрос задать?",
-   "sceneBefore": {
-    "view": "task",
-    "dialogue": "marco",
-    "words": "stand",
-    "rows": [
-     {
-      "slots": [
-       [],
-       [
-        {
-         "key": "ha",
-         "text": "Ha+st"
-        }
-       ],
-       [
-        {
-         "key": "du",
-         "text": "du"
-        },
-        {
-         "key": "kinder",
-         "text": "Kinder"
-        }
-       ],
-       []
-      ],
-      "punct": "?",
-      "plain": "Hast du Kinder?",
-      "ru": "У тебя есть дети?",
-      "audio": "audio/b5506c58aecb.m4a"
-     },
-     {
-      "slots": [
-       [
-        {
-         "key": "ich",
-         "text": "Ich"
-        }
-       ],
-       [
-        {
-         "key": "hab",
-         "text": "hab+e"
-        }
-       ],
-       [
-        {
-         "key": "kein",
-         "text": "kein+e"
-        },
-        {
-         "key": "kinder",
-         "text": "Kinder"
-        }
-       ],
-       []
-      ],
-      "punct": ".",
-      "plain": "Ich habe keine Kinder.",
-      "ru": "Нет, у меня нет детей.",
-      "audio": "audio/51afd2603588.m4a"
-     }
-    ],
-    "table": "possessiv",
-    "task": "karte",
-    "reveal": 0
-   },
    "scene": {
     "view": "task",
-    "dialogue": "marco",
-    "words": "stand",
+    "dialogue": "sachen",
+    "words": "sachen",
     "rows": [
      {
       "slots": [
@@ -1895,7 +1848,7 @@
       "punct": "?",
       "plain": "Hast du Kinder?",
       "ru": "У тебя есть дети?",
-      "audio": "audio/b5506c58aecb.m4a"
+      "audio": "audio/508aed099108.m4a"
      },
      {
       "slots": [
@@ -1926,7 +1879,7 @@
       "punct": ".",
       "plain": "Ich habe keine Kinder.",
       "ru": "Нет, у меня нет детей.",
-      "audio": "audio/51afd2603588.m4a"
+      "audio": "audio/d7ef53a304f7.m4a"
      }
     ],
     "table": "possessiv",
@@ -1940,12 +1893,12 @@
    "stepTitle": "Чтение: часть 1",
    "chapterIndex": 4,
    "indexInStep": 0,
-   "read": "В первой части чтения — две короткие записки или письма и пять утверждений: верно или неверно. Тексты простые, но утверждения проверяют детали: кто кому кем приходится, сколько, когда. Здесь Марко пишет Анне о сестре из Рима. Прочитайте утверждение до текста — и ищите в письме именно то место, о котором оно.",
+   "read": "В первой части чтения — две короткие записки или письма и пять утверждений: верно или неверно. Тексты простые, но утверждения проверяют детали: кто кому кем приходится, сколько, когда. Здесь Матео пишет Дане о сестре из Буэнос-Айреса. Прочитайте утверждение до текста — и ищите в письме именно то место, о котором оно.",
    "point": "Чтение, часть 1: сначала утверждение, потом нужное место в тексте",
    "scene": {
     "view": "task",
-    "dialogue": "marco",
-    "words": "stand",
+    "dialogue": "sachen",
+    "words": "sachen",
     "rows": [
      {
       "slots": [
@@ -1971,7 +1924,7 @@
       "punct": "?",
       "plain": "Hast du Kinder?",
       "ru": "У тебя есть дети?",
-      "audio": "audio/b5506c58aecb.m4a"
+      "audio": "audio/508aed099108.m4a"
      },
      {
       "slots": [
@@ -2002,7 +1955,7 @@
       "punct": ".",
       "plain": "Ich habe keine Kinder.",
       "ru": "Нет, у меня нет детей.",
-      "audio": "audio/51afd2603588.m4a"
+      "audio": "audio/d7ef53a304f7.m4a"
      }
     ],
     "table": "possessiv",
@@ -2015,79 +1968,13 @@
    "stepTitle": "Чтение: часть 1",
    "chapterIndex": 4,
    "indexInStep": 1,
-   "read": "*Falsch.* В письме сказано *Ihr Mann Luca und ihr Baby Sofia* — *ihr*, то есть ребёнок Джулии. Марко Софии — дядя, а не отец. На таких маленьких словах, как *ihr* и *sein*, экзамен и ловит. Кстати, *Marcos Tochter* — «дочь Марко»: к имени просто добавляют *-s*, как в английском, только без апострофа.",
-   "point": "*ihr Baby* — ребёнок Джулии; *Marcos Schwester* — «сестра Марко»",
-   "question": "*Sofia ist Marcos Tochter.* — richtig или falsch?",
-   "sceneBefore": {
-    "view": "task",
-    "dialogue": "marco",
-    "words": "stand",
-    "rows": [
-     {
-      "slots": [
-       [],
-       [
-        {
-         "key": "ha",
-         "text": "Ha+st"
-        }
-       ],
-       [
-        {
-         "key": "du",
-         "text": "du"
-        },
-        {
-         "key": "kinder",
-         "text": "Kinder"
-        }
-       ],
-       []
-      ],
-      "punct": "?",
-      "plain": "Hast du Kinder?",
-      "ru": "У тебя есть дети?",
-      "audio": "audio/b5506c58aecb.m4a"
-     },
-     {
-      "slots": [
-       [
-        {
-         "key": "ich",
-         "text": "Ich"
-        }
-       ],
-       [
-        {
-         "key": "hab",
-         "text": "hab+e"
-        }
-       ],
-       [
-        {
-         "key": "kein",
-         "text": "kein+e"
-        },
-        {
-         "key": "kinder",
-         "text": "Kinder"
-        }
-       ],
-       []
-      ],
-      "punct": ".",
-      "plain": "Ich habe keine Kinder.",
-      "ru": "Нет, у меня нет детей.",
-      "audio": "audio/51afd2603588.m4a"
-     }
-    ],
-    "table": "possessiv",
-    "task": "brief"
-   },
+   "read": "*Falsch.* В письме сказано *Ihr Mann Diego und ihr Baby Sofia*. *Ihr* относится к Лусии: София — ребёнок Лусии и Диего. Матео ей дядя, а не отец. Для ответа нужно связать местоимение с владельцем, а не просто найти знакомое имя. *Mateos Tochter* — «дочь Матео»: к имени добавляют *-s*, без апострофа.",
+   "point": "*ihr Baby* — ребёнок Лусии; *Mateos Schwester* — «сестра Матео»",
+   "question": "*Sofia ist Mateos Tochter.* — richtig или falsch?",
    "scene": {
     "view": "task",
-    "dialogue": "marco",
-    "words": "stand",
+    "dialogue": "sachen",
+    "words": "sachen",
     "rows": [
      {
       "slots": [
@@ -2113,7 +2000,7 @@
       "punct": "?",
       "plain": "Hast du Kinder?",
       "ru": "У тебя есть дети?",
-      "audio": "audio/b5506c58aecb.m4a"
+      "audio": "audio/508aed099108.m4a"
      },
      {
       "slots": [
@@ -2144,7 +2031,7 @@
       "punct": ".",
       "plain": "Ich habe keine Kinder.",
       "ru": "Нет, у меня нет детей.",
-      "audio": "audio/51afd2603588.m4a"
+      "audio": "audio/d7ef53a304f7.m4a"
      }
     ],
     "table": "possessiv",
@@ -2157,41 +2044,41 @@
   {
    "id": "familie-1",
    "type": "choice",
-   "q": "Anna: Das ist ___ Mutter.",
+   "q": "Dana zeigt ihre Mutter: Das ist ___ Mutter.",
    "options": [
     "mein",
     "meine",
     "deine"
    ],
    "answer": 1,
-   "why": "Говорит Анна — значит, *mein*; *die Mutter* — окончание *-e*: *meine*.",
-   "audio": "audio/52e450e813cb.m4a"
+   "why": "Говорит Дана — значит, *mein*; *die Mutter* — окончание *-e*: *meine*.",
+   "audio": "audio/5cb71f8c2f0f.m4a"
   },
   {
    "id": "familie-2",
    "type": "choice",
-   "q": "Das ist Giulia, und das ist ___ Mann.",
+   "q": "Das ist Lucía, und das ist ___ Mann.",
    "options": [
     "sein",
     "ihr",
     "ihre"
    ],
    "answer": 1,
-   "why": "Владелица — Джулия: *ihr*. *der Mann* — без окончания.",
-   "audio": "audio/339939185001.m4a"
+   "why": "Владелица — Лусия: *ihr*. *der Mann* — без окончания.",
+   "audio": "audio/f10d59d84d89.m4a"
   },
   {
    "id": "familie-3",
    "type": "choice",
-   "q": "Das ist Piotr, und das ist ___ Frau.",
+   "q": "Das ist Arman, und das ist ___ Frau.",
    "options": [
     "seine",
     "ihre",
     "sein"
    ],
    "answer": 0,
-   "why": "Владелец — Пётр: *sein*. *die Frau* — с *-e*: *seine*.",
-   "audio": "audio/f4112fbee3fc.m4a"
+   "why": "Владелец — Арман: *sein*. *die Frau* — с *-e*: *seine*.",
+   "audio": "audio/e1936d014010.m4a"
   },
   {
    "id": "familie-4",
@@ -2202,29 +2089,29 @@
    ],
    "hint": "sein",
    "why": "Родителей двое — *das sind*. В русском глагола тут нет, в немецком он обязателен.",
-   "audio": "audio/a42c9bea374c.m4a"
+   "audio": "audio/7152d81b3677.m4a"
   },
   {
    "id": "familie-5",
    "type": "gap",
-   "q": "Marco, ist das ___ Schwester?",
+   "q": "Mateo, ist das ___ Schwester?",
    "answer": [
     "deine"
    ],
    "hint": "du",
    "why": "*du* → *dein*; *die Schwester* → *deine*.",
-   "audio": "audio/2f4cf9f7e074.m4a"
+   "audio": "audio/959905a8e535.m4a"
   },
   {
    "id": "familie-6",
    "type": "gap",
-   "q": "Anna und Jan, ist das ___ Hund?",
+   "q": "Dana und Nurlan, ist das ___ Hund?",
    "answer": [
     "euer"
    ],
    "hint": "ihr",
    "why": "*ihr* → *euer*; перед *der Hund* — без окончания.",
-   "audio": "audio/207de099cd96.m4a"
+   "audio": "audio/8a82767b805e.m4a"
   },
   {
    "id": "familie-7",
@@ -2235,7 +2122,7 @@
    ],
    "hint": "Sie",
    "why": "Вежливо — *Ihr* с большой буквы; *Kinder* — мн. ч., поэтому *-e*.",
-   "audio": "audio/45d0d7260eb4.m4a"
+   "audio": "audio/826468d87c2d.m4a"
   },
   {
    "id": "familie-8",
@@ -2247,7 +2134,7 @@
    ],
    "answer": 0,
    "why": "*das Mädchen* — средний род: *ein Mädchen*.",
-   "audio": "audio/00dbb9723e2e.m4a"
+   "audio": "audio/7d3f1143a988.m4a"
   },
   {
    "id": "familie-9",
@@ -2258,19 +2145,19 @@
    ],
    "hint": "kein",
    "ru": "У меня нет сестры.",
-   "audio": "audio/a36de26b0ba9.m4a"
+   "audio": "audio/a6422f1d5a8e.m4a"
   },
   {
    "id": "familie-10",
    "type": "gap",
-   "q": "Marco hat ___ Kinder.",
+   "q": "Mateo hat ___ Kinder.",
    "answer": [
     "keine"
    ],
    "hint": "kein",
-   "ru": "У Марко нет детей.",
+   "ru": "У Матео нет детей.",
    "why": "Мн. ч. — *keine*, как *meine*.",
-   "audio": "audio/c77c9bd4a66e.m4a"
+   "audio": "audio/2ad9618c8688.m4a"
   },
   {
    "id": "familie-11",
@@ -2283,7 +2170,7 @@
    ],
    "answer": 1,
    "why": "Только умлаут: *die Brüder*.",
-   "audio": "audio/5d0aa2e40bc3.m4a"
+   "audio": "audio/b2e083de2f3d.m4a"
   },
   {
    "id": "familie-12",
@@ -2296,7 +2183,7 @@
    ],
    "answer": 0,
    "why": "Слова с *die* почти всегда получают *-(e)n*.",
-   "audio": "audio/efd3fff97c0e.m4a"
+   "audio": "audio/d22e59b11d2e.m4a"
   },
   {
    "id": "familie-13",
@@ -2306,14 +2193,14 @@
     "Kinder"
    ],
    "why": "*das*-слова часто получают *-er*: *die Kinder*.",
-   "audio": "audio/978c375f5cf4.m4a"
+   "audio": "audio/31ed5481acf7.m4a"
   },
   {
    "id": "familie-14",
    "type": "order",
    "ru": "Это мои родители.",
    "de": "Das sind meine Eltern.",
-   "audio": "audio/a42c9bea374c.m4a"
+   "audio": "audio/7152d81b3677.m4a"
   },
   {
    "id": "familie-15",
@@ -2321,26 +2208,485 @@
    "ru": "Это твой брат?",
    "de": "Ist das dein Bruder?",
    "why": "Вопрос да/нет: глагол первый, *das* — сразу за ним.",
-   "audio": "audio/cc6ffe5a0003.m4a"
+   "audio": "audio/69fca33aa182.m4a"
   },
   {
    "id": "familie-16",
    "type": "order",
    "ru": "У тебя есть братья и сёстры?",
    "de": "Hast du Geschwister?",
-   "audio": "audio/9bc63ee25aa5.m4a"
+   "audio": "audio/316f66308d35.m4a"
+  },
+  {
+   "id": "familie-17",
+   "type": "gap",
+   "q": "Das sind ___ Fotos.",
+   "answer": [
+    "unsere"
+   ],
+   "hint": "wir",
+   "why": "*wir* → *unser*, перед *Fotos* во множественном числе — *unsere*.",
+   "audio": "audio/73911eb3ab0d.m4a"
+  },
+  {
+   "id": "familie-18",
+   "type": "choice",
+   "q": "Dana hat zwei Brüder. Das sind ___ Brüder.",
+   "options": [
+    "ihre",
+    "seine",
+    "ihr"
+   ],
+   "answer": 0,
+   "why": "Владелица — Дана: *ihr*. Перед *Brüder* во множественном числе — *ihre*.",
+   "audio": "audio/c35292f517e6.m4a"
+  },
+  {
+   "id": "familie-19",
+   "type": "choice",
+   "q": "Die Schlüssel ___ hier.",
+   "options": [
+    "ist",
+    "sind",
+    "seid"
+   ],
+   "answer": 1,
+   "why": "*die Schlüssel* — несколько ключей. Нужна форма *sind*, хотя само слово выглядит как в единственном числе.",
+   "audio": "audio/de9b985eda9b.m4a"
+  },
+  {
+   "id": "familie-20",
+   "type": "gap",
+   "q": "Diego hat ___ Geschwister.",
+   "answer": [
+    "keine"
+   ],
+   "hint": "kein",
+   "ru": "У Диего нет братьев и сестёр.",
+   "why": "*Geschwister* — множественное число, отрицание — *keine*.",
+   "audio": "audio/8ad21c9d1d2e.m4a"
   }
  ],
+ "case": {
+  "title": "Der Rucksack am Steg",
+  "ru": "Рюкзак у причала",
+  "intro": "Вещи Даны уже разобраны, но после знакомства с гостями у причала остаётся ещё один рюкзак. Йенсен хочет вернуть его владельцу. Незнакомец, который раньше назывался господином Ферсом, тоже спрашивает о нём. Соберите сведения о семье и проверьте его слова: хорошая немецкая фраза сама по себе ещё не доказывает, что вещь принадлежит говорящему.",
+  "people": {
+   "J": {
+    "name": "Herr Jensen",
+    "voice": "Grandpa",
+    "role": "Hafenmeister"
+   },
+   "L": {
+    "name": "Lucía",
+    "voice": "Flo",
+    "role": "Mateos Schwester"
+   },
+   "V": {
+    "name": "Herr Vehrs",
+    "voice": "Eddy",
+    "role": "Besucher"
+   }
+  },
+  "steps": [
+   {
+    "read": "Сначала восстановите, кто приехал к Матео. Это копия его сообщения Дане.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Meine Schwester Lucía ist hier. Ihr Mann Diego und ihr Baby Sofia sind auch hier.",
+      "ru": "Моя сестра Лусия здесь. Её муж Диего и её малышка София тоже здесь."
+     }
+    ],
+    "question": "Кто родители Софии?",
+    "options": [
+     "Дана и Матео",
+     "Лусия и Диего",
+     "Йенсен и Лусия"
+    ],
+    "answer": 1,
+    "right": "*Ihr* относится к Лусии. Диего — её муж, София — их дочь. Матео приходится Софии дядей.",
+    "wrong": [
+     "Такой вывод путает отправителя сообщения с владельцем: *meine Schwester* — сестра Матео, а *ihr Baby* — её ребёнок.",
+     null,
+     "Йенсен в сообщении не назван родственником. Свяжите *ihr* с Лусией."
+    ]
+   },
+   {
+    "read": "Лусия замечает рюкзак и показывает фотографию мужа. Послушайте, кому какая вещь принадлежит.",
+    "evidence": [
+     {
+      "kind": "quote",
+      "who": "L",
+      "de": "Das ist mein Mann Diego. Das ist sein Rucksack. Meine Tasche ist hier.",
+      "ru": "Это мой муж Диего. Это его рюкзак. Моя сумка здесь.",
+      "audio": "audio/9e67089f341f.m4a"
+     }
+    ],
+    "question": "Для кого Йенсен должен пока отложить рюкзак?",
+    "options": [
+     "Для Лусии",
+     "Для Матео",
+     "Для Диего"
+    ],
+    "answer": 2,
+    "right": "*Sein Rucksack* — рюкзак Диего. Лусия отдельно говорит *meine Tasche*: её собственная вещь — сумка.",
+    "wrong": [
+     "Лусия говорит о своём муже: *sein Rucksack*. Её вещь названа отдельно — *meine Tasche*.",
+     "В этой реплике владелец — Диего, не его знакомый Матео.",
+     null
+    ]
+   },
+   {
+    "read": "Незнакомец представляется братом Диего. Лусия уже оставила Йенсену короткое пояснение о семье.",
+    "evidence": [
+     {
+      "kind": "quote",
+      "who": "V",
+      "de": "Ich bin Diegos Bruder. Das ist mein Rucksack.",
+      "ru": "Я брат Диего. Это мой рюкзак.",
+      "audio": "audio/c1de4ca08f3a.m4a"
+     },
+     {
+      "kind": "quote",
+      "who": "L",
+      "de": "Diego hat keine Geschwister. Wir haben eine Tochter, Sofia.",
+      "ru": "У Диего нет братьев и сестёр. У нас одна дочь, София.",
+      "audio": "audio/05ff7ea55bd2.m4a"
+     }
+    ],
+    "question": "Какое противоречие нужно проверить?",
+    "options": [
+     "Незнакомец называет себя братом человека, у которого нет братьев и сестёр",
+     "У Диего две дочери",
+     "Ферс сказал «мой», значит, рюкзак точно его"
+    ],
+    "answer": 0,
+    "right": "*Keine Geschwister* исключает и братьев, и сестёр. Это противоречие в сведениях, которое требует проверки. Отдельное *mein* — только заявление говорящего.",
+    "wrong": [
+     null,
+     "*Eine Tochter* — одна дочь. Множественное число здесь относится к слову *Geschwister*.",
+     "*Mein* показывает, что человек заявляет о владении, но не подтверждает право забрать вещь."
+    ]
+   },
+   {
+    "read": "Йенсен не выдаёт чужую вещь по одному заявлению. Матео связывается с Диего по известному контакту и показывает фото рюкзака. Диего отвечает письменно.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Ja, das ist mein Rucksack. Meine Frau heißt Lucía. Unsere Tochter heißt Sofia. Ich habe keine Geschwister.",
+      "ru": "Да, это мой рюкзак. Мою жену зовут Лусия. Нашу дочь зовут София. У меня нет братьев и сестёр."
+     }
+    ],
+    "question": "Какая запись в журнале согласуется со всеми проверенными сведениями?",
+    "options": [
+     "Рюкзак — Диего; Лусия — его жена; София — их дочь",
+     "Рюкзак — Матео; София — его дочь",
+     "Рюкзак — Ферс; Диего — его брат"
+    ],
+    "answer": 0,
+    "right": "Сведения Диего совпадают с сообщением Матео и словами Лусии. *Unsere Tochter* относится к Диего и Лусии. Йенсен возвращает рюкзак Диего.",
+    "wrong": [
+     null,
+     "Матео — брат Лусии и дядя Софии. Он помогает связаться с владельцем, но не становится владельцем вещи.",
+     "Версия Ферса противоречит двум согласующимся сообщениям: у Диего *keine Geschwister*."
+    ]
+   }
+  ],
+  "ending": "Рюкзак возвращён Диего. Йенсен записывает противоречивые слова незнакомца и обещает уточнить его личность. Ошибка или правильная форма в немецком — не доказательство честности: вы проверили связи между людьми по нескольким сообщениям. Гости теперь знакомы с командой; в следующей теме пора выбрать еду для встречи."
+ },
+ "adventure": {
+  "kind": "sequence",
+  "title": "Гости команды",
+  "intro": "Лодка и контакт Даны уже найдены. Теперь к встрече присоединяются близкие Матео. Помогите Хауке разобраться в семьях, вернуть вещи владельцам и подготовить список гостей. Все сведения доступны в сообщениях; помнить чужую биографию наизусть не требуется.",
+  "ending": "Семейные карточки заполнены, вещи вернулись владельцам, гости отмечены в списке. Дана и Матео готовы познакомить всех в клубе. В следующей теме выберем еду и напитки для встречи.",
+  "challenges": [
+   {
+    "id": "dana-family",
+    "kind": "match",
+    "title": "Семейная карточка Даны",
+    "intro": "Дана показывает фотографию. Выберите поле родства, затем подходящую подпись. Братьев двое, а сестры нет — это тоже нужно отметить.",
+    "success": "Карточка заполнена: Айгуль и Марат — родители Даны, Арман и Нурлан — братья. Элиф — подруга, а не сестра.",
+    "wrong": "Вернитесь к репликам Даны. *Meine Eltern* — родители, *zwei Brüder* — два брата, *keine Schwester* — сестры нет. Не нужно заполнять отрицательное поле случайным знакомым.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Ja, das ist meine Familie. Das ist meine Mutter Aigul, und das ist mein Vater Marat. Das sind meine Eltern.",
+      "audio": "audio/326e1f471c3e.m4a",
+      "name": "Dana"
+     },
+     {
+      "de": "Ja, das ist mein Bruder Arman. Und das ist Nurlan. Ich habe zwei Brüder.",
+      "audio": "audio/2104aad007b4.m4a",
+      "name": "Dana"
+     },
+     {
+      "de": "Nein, ich habe keine Schwester.",
+      "audio": "audio/3fb518289b56.m4a",
+      "name": "Dana"
+     }
+    ],
+    "options": [
+     {
+      "id": "aigul",
+      "label": "Aigul"
+     },
+     {
+      "id": "marat",
+      "label": "Marat"
+     },
+     {
+      "id": "brothers",
+      "label": "Arman und Nurlan"
+     },
+     {
+      "id": "none",
+      "label": "keine Schwester"
+     },
+     {
+      "id": "elif",
+      "label": "Elif"
+     }
+    ],
+    "slots": [
+     {
+      "id": "mother",
+      "label": "Mutter",
+      "answer": "aigul"
+     },
+     {
+      "id": "father",
+      "label": "Vater",
+      "answer": "marat"
+     },
+     {
+      "id": "brothers",
+      "label": "Brüder",
+      "answer": "brothers"
+     },
+     {
+      "id": "sister",
+      "label": "Schwester",
+      "answer": "none"
+     }
+    ],
+    "anchor": "Dana"
+   },
+   {
+    "id": "sofia-family",
+    "kind": "match",
+    "title": "Кто семья Софии?",
+    "intro": "Матео показывает сестру и её семью. Составьте карточку Софии: кто её мама, папа и дядя? Слова *ihr Mann* и *ihr Baby* связывают людей между собой.",
+    "success": "София — дочь Лусии и Диего. Матео — брат Лусии, поэтому для Софии он дядя. Карточка поможет представить гостей команде.",
+    "wrong": "*Ihr Baby* относится к сестре Матео, Лусии. Её муж — Диего. Матео сам говорит *Ich bin jetzt Onkel!*",
+    "quotes": [
+     {
+      "de": "Ja, ich habe drei Schwestern. Das ist Lucía, meine Schwester in Buenos Aires.",
+      "audio": "audio/4fd15a95342b.m4a",
+      "name": "Mateo"
+     },
+     {
+      "de": "Ja, das ist Diego, ihr Mann. Und das ist ihr Baby.",
+      "audio": "audio/96db4726d618.m4a",
+      "name": "Mateo"
+     },
+     {
+      "de": "Ein Mädchen – Sofia. Ich bin jetzt Onkel!",
+      "audio": "audio/77f43781d9b0.m4a",
+      "name": "Mateo"
+     }
+    ],
+    "options": [
+     {
+      "id": "lucia",
+      "label": "Lucía"
+     },
+     {
+      "id": "diego",
+      "label": "Diego"
+     },
+     {
+      "id": "mateo",
+      "label": "Mateo"
+     },
+     {
+      "id": "dana",
+      "label": "Dana"
+     }
+    ],
+    "slots": [
+     {
+      "id": "mother",
+      "label": "Mutter",
+      "answer": "lucia"
+     },
+     {
+      "id": "father",
+      "label": "Vater",
+      "answer": "diego"
+     },
+     {
+      "id": "uncle",
+      "label": "Onkel",
+      "answer": "mateo"
+     }
+    ],
+    "anchor": "Sofia"
+   },
+   {
+    "id": "return-belongings",
+    "kind": "match",
+    "title": "Верните вещи владельцам",
+    "intro": "У причала лежат вещи друзей. Выберите вещь и того, кому она принадлежит. Одному человеку можно вернуть несколько вещей. *Mein*, *ihr*, *sein* и *unser* подскажут адресата.",
+    "success": "Вещи вернулись людям: рюкзак и ключи Дане, телефон Лусии, сумка Диего, фотографии Дане и Матео. Один и тот же владелец может быть у нескольких вещей.",
+    "wrong": "*Mein Rucksack* и *meine Schlüssel* произносит Дана. *Ihr Handy* — телефон Лусии, *seine Tasche* — сумка Диего. На вопрос Матео об *unsere Fotos* отвечает Дана.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Das ist mein Rucksack. Und das sind meine Schlüssel.",
+      "audio": "audio/b0e9498781fd.m4a",
+      "name": "Dana"
+     },
+     {
+      "de": "Das ist Lucía. Das ist ihr Handy. Und das ist Diego. Das ist seine Tasche.",
+      "audio": "audio/e68954124b5b.m4a",
+      "name": "Mateo"
+     },
+     {
+      "de": "Dana, sind das unsere Fotos?",
+      "audio": "audio/fce880a0d6d0.m4a",
+      "name": "Mateo"
+     },
+     {
+      "de": "Ja, Mateo, das sind unsere Fotos.",
+      "audio": "audio/4c36c3ac594e.m4a",
+      "name": "Dana"
+     }
+    ],
+    "options": [
+     {
+      "id": "dana",
+      "label": "Dana"
+     },
+     {
+      "id": "lucia",
+      "label": "Lucía"
+     },
+     {
+      "id": "diego",
+      "label": "Diego"
+     },
+     {
+      "id": "both",
+      "label": "Dana und Mateo"
+     },
+     {
+      "id": "jensen",
+      "label": "Herr Jensen"
+     }
+    ],
+    "slots": [
+     {
+      "id": "rucksack",
+      "label": "der Rucksack",
+      "answer": "dana",
+      "icon": "🎒"
+     },
+     {
+      "id": "keys",
+      "label": "die Schlüssel",
+      "answer": "dana",
+      "icon": "🔑"
+     },
+     {
+      "id": "phone",
+      "label": "das Handy",
+      "answer": "lucia",
+      "icon": "📱"
+     },
+     {
+      "id": "bag",
+      "label": "die Tasche",
+      "answer": "diego",
+      "icon": "👜"
+     },
+     {
+      "id": "photos",
+      "label": "die Fotos",
+      "answer": "both",
+      "icon": "📷"
+     }
+    ]
+   },
+   {
+    "id": "guest-list",
+    "kind": "pack",
+    "title": "Кого встречаем из Аргентины?",
+    "intro": "Прочитайте письмо Матео и отметьте всех приехавших гостей. Дана и Матео уже организуют встречу: их в этот список добавлять не нужно.",
+    "success": "В списке три гостя: сестра Матео, её муж и их дочь. Вы нашли всех по письму, не смешав гостей с организаторами.",
+    "wrong": "Найдите *meine Schwester*, затем *ihr Mann* и *ihr Baby*. В письме названы три приехавших человека.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Liebe Dana,\nmeine Schwester Lucía ist jetzt hier in Kiel! Ihr Mann Diego und ihr Baby Sofia sind auch hier. Sofia ist drei Monate alt. Lucía spricht ein bisschen Deutsch, aber Diego spricht nur Spanisch und Englisch. Unsere Gäste sind heute am Hafen. Hast du auch Zeit?\nViele Grüße\nMateo",
+      "name": "Mateo Fernández"
+     }
+    ],
+    "options": [
+     {
+      "id": "lucia",
+      "label": "Lucía"
+     },
+     {
+      "id": "diego",
+      "label": "Diego"
+     },
+     {
+      "id": "sofia",
+      "label": "Sofia"
+     },
+     {
+      "id": "mateo",
+      "label": "Mateo"
+     },
+     {
+      "id": "dana",
+      "label": "Dana"
+     }
+    ],
+    "answer": [
+     "lucia",
+     "diego",
+     "sofia"
+    ]
+   },
+   {
+    "id": "welcome-sign",
+    "kind": "order",
+    "title": "Подпишите карточку встречи",
+    "intro": "Хауке знакомит команду с приехавшей семьёй. Соберите подпись «Это наши гости». Гостей несколько, и вы представляете их от имени всей команды.",
+    "success": "*Das sind unsere Gäste.* Теперь Хауке сможет представить семью команде. Список и подпись готовы!",
+    "wrong": "Несколько гостей требуют *sind*. «Наши» — *unsere*, с окончанием *-e* перед множественным числом. Глагол остаётся вторым.",
+    "tokens": [
+     "Das",
+     "sind",
+     "unsere",
+     "Gäste."
+    ],
+    "label": "Подпись под фотографией"
+   }
+  ]
+ },
  "spy": [
   {
-   "de": "Mein Bruder wohnt in Warschau.",
-   "wrong": "Mein Bruder wohnst in Warschau.",
+   "de": "Mein Bruder wohnt in Almaty.",
+   "wrong": "Mein Bruder wohnst in Almaty.",
    "why": "Окончание глагола не подходит к подлежащему: правильно *wohnt*.",
    "auto": true
   },
   {
-   "de": "Meine Brüder wohnen in Warschau.",
-   "wrong": "Meine Brüder wohnst in Warschau.",
+   "de": "Meine Brüder wohnen in Almaty.",
+   "wrong": "Meine Brüder wohnst in Almaty.",
    "why": "Окончание глагола не подходит к подлежащему: правильно *wohnen*.",
    "auto": true
   },

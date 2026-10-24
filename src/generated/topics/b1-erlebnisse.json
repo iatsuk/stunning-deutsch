@@ -1,0 +1,2005 @@
+{
+ "id": "b1-erlebnisse",
+ "level": "b1",
+ "order": 5,
+ "title": "Als wir am Strand ankamen, wurde es heller.",
+ "ru": "Рассказываем о поездке и привычках",
+ "lede": "Для альбома FördeTreff друзья вспоминают поездку в Экенфьорде. Важно отделить одно событие от обычной привычки и восстановить порядок остановок. Пока администрация проверяет запрос на помещение, команда собирает истории, которые можно показать на встрече.",
+ "goals": [
+  "Отличить одно прошлое событие от повторяющегося",
+  "Понять частые формы Präteritum в рассказе",
+  "Подобрать заголовок к смыслу текста",
+  "Пересказать мнение и добавить свой опыт"
+ ],
+ "grammar": [
+  "als / wenn в прошлом; war, hatte, ging, kam, fand"
+ ],
+ "exam": [
+  "b1-lesen-1",
+  "b1-hoeren-2",
+  "b1-sprachbausteine-1",
+  "b1-sprechen-2"
+ ],
+ "chapters": [
+  {
+   "id": "scene",
+   "title": "Ситуация"
+  },
+  {
+   "id": "words",
+   "title": "Слова"
+  },
+  {
+   "id": "grammar",
+   "title": "Грамматика"
+  },
+  {
+   "id": "practice",
+   "title": "Проверка"
+  },
+  {
+   "id": "exam",
+   "title": "На экзамене"
+  }
+ ],
+ "dialogues": {
+  "scene": {
+   "title": "Als wir am Strand ankamen, wurde es heller.",
+   "ru": "Рассказываем о поездке и привычках",
+   "place": "Eckernförde · воспоминание для альбома · вымышленная учебная ситуация",
+   "people": {
+    "D": {
+     "name": "Dana",
+     "voice": "Anna"
+    },
+    "M": {
+     "name": "Mateo",
+     "voice": "Reed"
+    },
+    "E": {
+     "name": "Elif",
+     "voice": "Flo"
+    },
+    "H": {
+     "name": "Hauke",
+     "voice": "Rocko"
+    }
+   },
+   "lines": [
+    {
+     "who": "D",
+     "de": "Als wir am Strand ankamen, wurde es heller.",
+     "ru": "Когда мы приехали на пляж, стало светлее.",
+     "audio": "audio/288793347861.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Vorher war der Himmel ganz grau.",
+     "ru": "До этого небо было совсем серым.",
+     "audio": "audio/a34bc2e7e14b.m4a"
+    },
+    {
+     "who": "E",
+     "de": "Wir gingen zuerst ans Wasser und danach ins Café.",
+     "ru": "Сначала мы пошли к воде, а потом в кафе.",
+     "audio": "audio/cab0aa098b46.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Wenn ich früher am Sonntag frei hatte, nahm ich oft Essen mit.",
+     "ru": "Когда раньше у меня было свободно в воскресенье, я часто брал еду с собой.",
+     "audio": "audio/d0bab90fd0a0.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Diesmal kauften wir Brot unterwegs.",
+     "ru": "В этот раз мы купили хлеб по дороге.",
+     "audio": "audio/63e09500b901.m4a"
+    },
+    {
+     "who": "E",
+     "de": "Ich fand die kleine Ausstellung interessant.",
+     "ru": "Мне показалась интересной маленькая выставка.",
+     "audio": "audio/302279ad2024.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Als wir zurückfahren wollten, war die Straße gesperrt.",
+     "ru": "Когда мы хотели ехать обратно, улица была перекрыта.",
+     "audio": "audio/0dab7bd108c9.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Zum Glück kam der Bus an der Ersatzhaltestelle pünktlich.",
+     "ru": "К счастью, автобус пришёл на временную остановку вовремя.",
+     "audio": "audio/58b5cc5ae334.m4a"
+    }
+   ]
+  },
+  "interview": {
+   "title": "Rückblick mit Dana",
+   "ru": "Воспоминание Даны",
+   "place": "Kiel · учебное интервью",
+   "people": {
+    "H": {
+     "name": "Hauke",
+     "voice": "Rocko"
+    },
+    "D": {
+     "name": "Dana",
+     "voice": "Anna"
+    }
+   },
+   "lines": [
+    {
+     "who": "H",
+     "de": "War der Ausflug trotz der grauen Wolken gut?",
+     "ru": "Поездка удалась, несмотря на серые облака?",
+     "audio": "audio/365dec1d3d9c.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Ja. Als ich ankam, dachte ich zuerst an Regen. Dann wurde es heller. Am Wasser konnte ich mich gut erholen.",
+     "ru": "Да. Когда я приехала, то сначала подумала о дожде. Потом стало светлее. У воды я смогла хорошо отдохнуть.",
+     "audio": "audio/496530827654.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Warst du allein?",
+     "ru": "Ты была одна?",
+     "audio": "audio/6124e0aca666.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Nein, wir waren zu viert. Früher fuhr ich manchmal allein ans Meer. Wenn ich wenig Zeit hatte, blieb ich nur kurz. Diesmal hatten wir den ganzen Vormittag.",
+     "ru": "Нет, нас было четверо. Раньше я иногда ездила к морю одна. Если было мало времени, оставалась ненадолго. В этот раз у нас была вся первая половина дня.",
+     "audio": "audio/cfe11c7850bb.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Was hat dir besonders gefallen?",
+     "ru": "Что тебе особенно понравилось?",
+     "audio": "audio/d294269472a7.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Das Gespräch am Strand. Die Ausstellung war auch interessant, aber ich brauchte vor allem eine Pause.",
+     "ru": "Разговор на пляже. Выставка тоже была интересной, но мне прежде всего нужен был отдых.",
+     "audio": "audio/3857b1280c1f.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Und die Rückfahrt?",
+     "ru": "А обратная дорога?",
+     "audio": "audio/db96e896f1c4.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Die Haltestelle war verlegt. Wir fanden den Hinweis und kamen pünktlich nach Kiel.",
+     "ru": "Остановку перенесли. Мы нашли указатель и вовремя приехали в Киль.",
+     "audio": "audio/b48a68610ef7.m4a"
+    }
+   ]
+  }
+ },
+ "words": {
+  "useful": {
+   "title": "Wörter für die Aufgabe",
+   "ru": "Слова для действия",
+   "items": [
+    {
+     "de": "das Erlebnis",
+     "ru": "пережитое событие",
+     "gender": "n",
+     "plural": "Erlebnisse",
+     "audio": "audio/9e19a6162ba4.m4a"
+    },
+    {
+     "de": "die Erinnerung",
+     "ru": "воспоминание",
+     "gender": "f",
+     "plural": "Erinnerungen",
+     "audio": "audio/84d9fd0e0175.m4a"
+    },
+    {
+     "de": "die Küste",
+     "ru": "побережье",
+     "gender": "f",
+     "plural": "Küsten",
+     "audio": "audio/56aed1477f60.m4a"
+    },
+    {
+     "de": "die Ausstellung",
+     "ru": "выставка",
+     "gender": "f",
+     "plural": "Ausstellungen",
+     "audio": "audio/cefd646461c3.m4a"
+    },
+    {
+     "de": "das Porträt",
+     "ru": "портрет",
+     "gender": "n",
+     "plural": "Porträts",
+     "audio": "audio/f036784406eb.m4a"
+    },
+    {
+     "de": "die Ersatzhaltestelle",
+     "ru": "временная остановка",
+     "gender": "f",
+     "plural": "Ersatzhaltestellen",
+     "audio": "audio/463636cf0a70.m4a"
+    },
+    {
+     "de": "der Himmel",
+     "ru": "небо",
+     "gender": "m",
+     "plural": null,
+     "noPlural": true,
+     "audio": "audio/a88a3d75bbc4.m4a"
+    },
+    {
+     "de": "die Unterbrechung",
+     "ru": "перерыв",
+     "gender": "f",
+     "plural": "Unterbrechungen",
+     "audio": "audio/393c7238d8d1.m4a"
+    },
+    {
+     "de": "früher",
+     "ru": "раньше",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/25911b3a0802.m4a"
+    },
+    {
+     "de": "diesmal",
+     "ru": "в этот раз",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/4adfa5407126.m4a"
+    },
+    {
+     "de": "unterwegs",
+     "ru": "по дороге",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/60af68f07981.m4a"
+    },
+    {
+     "de": "gesperrt",
+     "ru": "перекрыт",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/904e06a84f51.m4a"
+    },
+    {
+     "de": "zum Glück",
+     "ru": "к счастью",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/f634b8474768.m4a"
+    },
+    {
+     "de": "ankommen",
+     "ru": "прибывать",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/90fa7c7e91ac.m4a"
+    },
+    {
+     "de": "mitnehmen",
+     "ru": "брать с собой",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/ca2229391ebc.m4a"
+    }
+   ]
+  }
+ },
+ "tables": {
+  "rule": {
+   "title": "als / wenn в прошлом; war, hatte, ging, kam, fand",
+   "ru": "Опора для решения",
+   "head": [
+    "Beispiel",
+    "Смысл и форма"
+   ],
+   "rows": [
+    [
+     "Als wir ankamen, wurde es heller.",
+     "als: один прошлый эпизод, глагол в конце придаточного."
+    ],
+    [
+     "Wenn ich frei hatte, nahm ich oft Essen mit.",
+     "wenn: повторяющиеся случаи, также в прошлом."
+    ],
+    [
+     "war · hatte · ging · kam · fand",
+     "Частые Präteritum: sein, haben, gehen, kommen, finden."
+    ]
+   ],
+   "ruCols": [
+    1
+   ]
+  }
+ },
+ "tasks": {
+  "headlines": {
+   "kind": "worksheet",
+   "part": "b1-lesen-1",
+   "format": "matching",
+   "uniqueOptions": true,
+   "title": "Fünf Texte, zehn Überschriften",
+   "text": "1) Als Dana zum ersten Mal nach Eckernförde fuhr, war der Himmel grau. Am Strand wurde es heller. Sie blieb lange am Wasser und machte erst danach eine Pause im Café. Die Reise war für sie eine gute Unterbrechung nach einer anstrengenden Woche.\n\n2) Mateo fährt gern mit anderen Menschen an die Küste. Wenn er früher am Sonntag frei hatte, nahm er oft Essen für alle mit. Diesmal kaufte die Gruppe unterwegs Brot. Mateo fand das gemeinsame Frühstück wichtiger als ein langes Programm.\n\n3) Elif besuchte eine kleine Fotoausstellung. Der Eintritt kostete wenig. Sie sah nicht nur Bilder vom Meer, sondern auch Porträts von Menschen aus der Stadt. Für das Album wählte sie ein eigenes Foto vom Strand.\n\n4) Hauke wollte mit dem Bus zurückfahren. Als die Gruppe an der Haltestelle ankam, war die Straße gesperrt. Ein Hinweis führte sie zur Ersatzhaltestelle. Der Bus kam dort pünktlich.\n\n5) Ein Nachbar schrieb nach dem Ausflug: Früher reiste ich fast immer allein. Jetzt freue ich mich, wenn Freunde mitkommen. Ich brauche nicht viele Sehenswürdigkeiten. Ein gutes Gespräch unterwegs reicht mir oft.",
+   "questions": [
+    {
+     "prompt": "Text 1",
+     "options": [
+      "Erholung nach einer langen Woche",
+      "Gemeinsam essen statt viel besichtigen",
+      "Bilder von Stadt und Menschen",
+      "Ein anderer Weg zum Bus",
+      "Lieber mit Freunden unterwegs",
+      "Ein neues Restaurant eröffnet",
+      "Regen verhindert die ganze Reise",
+      "Eine Ausstellung nur über Segelboote",
+      "Der Bus fährt gar nicht",
+      "Ein Kurs für Fotografie"
+     ],
+     "answers": [
+      "Erholung nach einer langen Woche"
+     ]
+    },
+    {
+     "prompt": "Text 2",
+     "options": [
+      "Erholung nach einer langen Woche",
+      "Gemeinsam essen statt viel besichtigen",
+      "Bilder von Stadt und Menschen",
+      "Ein anderer Weg zum Bus",
+      "Lieber mit Freunden unterwegs",
+      "Ein neues Restaurant eröffnet",
+      "Regen verhindert die ganze Reise",
+      "Eine Ausstellung nur über Segelboote",
+      "Der Bus fährt gar nicht",
+      "Ein Kurs für Fotografie"
+     ],
+     "answers": [
+      "Gemeinsam essen statt viel besichtigen"
+     ]
+    },
+    {
+     "prompt": "Text 3",
+     "options": [
+      "Erholung nach einer langen Woche",
+      "Gemeinsam essen statt viel besichtigen",
+      "Bilder von Stadt und Menschen",
+      "Ein anderer Weg zum Bus",
+      "Lieber mit Freunden unterwegs",
+      "Ein neues Restaurant eröffnet",
+      "Regen verhindert die ganze Reise",
+      "Eine Ausstellung nur über Segelboote",
+      "Der Bus fährt gar nicht",
+      "Ein Kurs für Fotografie"
+     ],
+     "answers": [
+      "Bilder von Stadt und Menschen"
+     ]
+    },
+    {
+     "prompt": "Text 4",
+     "options": [
+      "Erholung nach einer langen Woche",
+      "Gemeinsam essen statt viel besichtigen",
+      "Bilder von Stadt und Menschen",
+      "Ein anderer Weg zum Bus",
+      "Lieber mit Freunden unterwegs",
+      "Ein neues Restaurant eröffnet",
+      "Regen verhindert die ganze Reise",
+      "Eine Ausstellung nur über Segelboote",
+      "Der Bus fährt gar nicht",
+      "Ein Kurs für Fotografie"
+     ],
+     "answers": [
+      "Ein anderer Weg zum Bus"
+     ]
+    },
+    {
+     "prompt": "Text 5",
+     "options": [
+      "Erholung nach einer langen Woche",
+      "Gemeinsam essen statt viel besichtigen",
+      "Bilder von Stadt und Menschen",
+      "Ein anderer Weg zum Bus",
+      "Lieber mit Freunden unterwegs",
+      "Ein neues Restaurant eröffnet",
+      "Regen verhindert die ganze Reise",
+      "Eine Ausstellung nur über Segelboote",
+      "Der Bus fährt gar nicht",
+      "Ein Kurs für Fotografie"
+     ],
+     "answers": [
+      "Lieber mit Freunden unterwegs"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "interview": {
+   "kind": "worksheet",
+   "part": "b1-hoeren-2",
+   "format": "article",
+   "title": "Ein Rückblick · gekürztes Interview",
+   "questions": [
+    {
+     "prompt": "Dana erwartete zuerst Regen.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "richtig"
+     ]
+    },
+    {
+     "prompt": "Die Gruppe bestand aus vier Personen.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "richtig"
+     ]
+    },
+    {
+     "prompt": "Dana reiste früher immer mit der Gruppe.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Diesmal blieb nur eine kurze Pause.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Der Hinweis half bei der Rückfahrt.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "richtig"
+     ]
+    }
+   ],
+   "dialogue": "interview",
+   "script": [
+    {
+     "who": "Hauke",
+     "de": "War der Ausflug trotz der grauen Wolken gut?",
+     "audio": "audio/365dec1d3d9c.m4a"
+    },
+    {
+     "who": "Dana",
+     "de": "Ja. Als ich ankam, dachte ich zuerst an Regen. Dann wurde es heller. Am Wasser konnte ich mich gut erholen.",
+     "audio": "audio/496530827654.m4a"
+    },
+    {
+     "who": "Hauke",
+     "de": "Warst du allein?",
+     "audio": "audio/6124e0aca666.m4a"
+    },
+    {
+     "who": "Dana",
+     "de": "Nein, wir waren zu viert. Früher fuhr ich manchmal allein ans Meer. Wenn ich wenig Zeit hatte, blieb ich nur kurz. Diesmal hatten wir den ganzen Vormittag.",
+     "audio": "audio/cfe11c7850bb.m4a"
+    },
+    {
+     "who": "Hauke",
+     "de": "Was hat dir besonders gefallen?",
+     "audio": "audio/d294269472a7.m4a"
+    },
+    {
+     "who": "Dana",
+     "de": "Das Gespräch am Strand. Die Ausstellung war auch interessant, aber ich brauchte vor allem eine Pause.",
+     "audio": "audio/3857b1280c1f.m4a"
+    },
+    {
+     "who": "Hauke",
+     "de": "Und die Rückfahrt?",
+     "audio": "audio/db96e896f1c4.m4a"
+    },
+    {
+     "who": "Dana",
+     "de": "Die Haltestelle war verlegt. Wir fanden den Hinweis und kamen pünktlich nach Kiel.",
+     "audio": "audio/b48a68610ef7.m4a"
+    }
+   ],
+   "sample": []
+  },
+  "gaps": {
+   "kind": "worksheet",
+   "part": "b1-sprachbausteine-1",
+   "format": "cloze",
+   "title": "Ein Brief nach dem Ausflug",
+   "text": "Liebe Nora, [[1]] wir in Eckernförde ankamen, [[2]] der Himmel grau. Ich war [[3]] meinen Freunden unterwegs. Zuerst gingen wir an [[4]] Strand. Später [[5]] wir ins Café, [[6]] wir Hunger hatten. Dort saßen wir [[7]] warmen Raum. [[8]] besuchten wir eine Ausstellung. Wir [[9]] viel Zeit. Ich freue mich immer, [[10]] wir zusammen reisen. Liebe Grüße, Dana",
+   "questions": [
+    {
+     "prompt": "Lücke 1",
+     "options": [
+      "Wenn",
+      "Weil",
+      "Als"
+     ],
+     "answers": [
+      "Als"
+     ]
+    },
+    {
+     "prompt": "Lücke 2",
+     "options": [
+      "war",
+      "hatte",
+      "wurde"
+     ],
+     "answers": [
+      "war"
+     ]
+    },
+    {
+     "prompt": "Lücke 3",
+     "options": [
+      "bei",
+      "mit",
+      "für"
+     ],
+     "answers": [
+      "mit"
+     ]
+    },
+    {
+     "prompt": "Lücke 4",
+     "options": [
+      "dem",
+      "der",
+      "den"
+     ],
+     "answers": [
+      "den"
+     ]
+    },
+    {
+     "prompt": "Lücke 5",
+     "options": [
+      "gingen",
+      "ging",
+      "gehen"
+     ],
+     "answers": [
+      "gingen"
+     ]
+    },
+    {
+     "prompt": "Lücke 6",
+     "options": [
+      "ob",
+      "weil",
+      "dass"
+     ],
+     "answers": [
+      "weil"
+     ]
+    },
+    {
+     "prompt": "Lücke 7",
+     "options": [
+      "ins",
+      "am",
+      "im"
+     ],
+     "answers": [
+      "im"
+     ]
+    },
+    {
+     "prompt": "Lücke 8",
+     "options": [
+      "Danach",
+      "Als",
+      "Weil"
+     ],
+     "answers": [
+      "Danach"
+     ]
+    },
+    {
+     "prompt": "Lücke 9",
+     "options": [
+      "wurde",
+      "hatten",
+      "waren"
+     ],
+     "answers": [
+      "hatten"
+     ]
+    },
+    {
+     "prompt": "Lücke 10",
+     "options": [
+      "als",
+      "ob",
+      "wenn"
+     ],
+     "answers": [
+      "wenn"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "opinions": {
+   "kind": "card",
+   "part": "b1-sprechen-2",
+   "title": "Wie reisen Sie gern?",
+   "theme": "Gemeinsam oder allein?",
+   "word": "Text wiedergeben · eigene Erfahrung · Rückfrage",
+   "situation": "Lesen Sie je einen Text. Geben Sie dem Partner die Meinung wieder, hören Sie zu und vergleichen Sie mit Ihrer Erfahrung.",
+   "roles": [
+    {
+     "title": "Person A · Nora",
+     "text": "Ich reise gern allein. Dann entscheide ich selbst, wann ich eine Pause mache und was ich besuche. Letzten Sommer war ich drei Tage an der Küste. Aber ich spreche unterwegs gern mit anderen Menschen."
+    },
+    {
+     "title": "Person B · Jonas",
+     "text": "Für mich ist eine Reise mit Freunden schöner. Ein gemeinsames Frühstück bleibt mir länger in Erinnerung als ein Museum. Manchmal muss ich warten, weil jemand länger fotografieren möchte. Das stört mich selten."
+    }
+   ],
+   "sample": []
+  }
+ },
+ "beats": [
+  {
+   "id": "start-1",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 0,
+   "read": "Для альбома FördeTreff друзья вспоминают поездку в Экенфьорде. Важно отделить одно событие от обычной привычки и восстановить порядок остановок. Пока администрация проверяет запрос на помещение, команда собирает истории, которые можно показать на встрече. Все нужные условия даны в сцене: знания географии, настоящих цен или расписаний не требуются. Сначала попробуйте понять, какого результата добиваются друзья, затем слушайте реплики. На новом уровне важно не только найти число или знакомое слово, но и связать несколько сведений.",
+   "point": "Рассказываем о поездке и привычках",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 4,
+    "fresh": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "start-2",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 1,
+   "read": "Вспоминать поездку можно с Perfekt, а в письменном рассказе часто встречается Präteritum. Здесь вы узнаёте несколько частых форм по смыслу, а не учите всю систему сразу. *Als* связывает части одного прошлого эпизода. *Wenn* подходит для повторяющихся случаев. Слово *früher* само по себе не выбирает союз: важно, было ли это однажды или повторялось.",
+   "point": "als / wenn в прошлом; war, hatte, ging, kam, fand",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 8,
+    "fresh": [
+     4,
+     5,
+     6,
+     7
+    ]
+   }
+  },
+  {
+   "id": "words-1",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 0,
+   "read": "Друзья выбирают для альбома разные впечатления. Для Даны важен отдых у воды, для Матео — общая еда, для Элиф — фотографии. Заголовок должен передавать основную мысль, а не случайное слово. Сначала решите, почему автор вообще рассказал этот эпизод. Затем используйте отдельные детали для проверки своего выбора.",
+   "point": "Сначала используйте слово для решения; словарь остаётся справочником.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 6,
+    "words": "useful"
+   }
+  },
+  {
+   "id": "words-2",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 1,
+   "read": "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к ситуации: какие слова обозначают человека, место, условие или уже выполненное действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово встретится снова в записке или разговоре, попробуйте восстановить его смысл до подсказки.",
+   "point": "Возвращайтесь к выражениям в сообщениях и новых действиях.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 15,
+    "words": "useful",
+    "fresh": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   }
+  },
+  {
+   "id": "grammar-1",
+   "step": "grammar",
+   "stepTitle": "als / wenn в прошлом; war, hatte, ging, kam, fand",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "Для одного события в прошлом используйте als. Действие может длиться долго: важна неповторяемость описываемого периода, а не его длина. В примере придаточная часть заканчивается *ankamen*. После запятой сразу идёт личный глагол главной части. Сравните с привычкой: она может повторяться каждый свободный воскресный день.",
+   "point": "als: один прошлый эпизод, глагол в конце придаточного.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "grammar-2",
+   "step": "grammar",
+   "stepTitle": "als / wenn в прошлом; war, hatte, ging, kam, fand",
+   "chapterIndex": 2,
+   "indexInStep": 1,
+   "read": "Если ситуация повторялась, подходит wenn: всякий раз, когда было свободное воскресенье. *Oft* помогает увидеть повторение. Не переносите русское «когда» автоматически в один немецкий союз. Сначала определите, описывает ли автор один эпизод или обычный порядок действий. Затем проверьте глагол в конце придаточного и начало главной части.",
+   "point": "wenn: повторяющиеся случаи, также в прошлом.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "grammar-3",
+   "step": "grammar",
+   "stepTitle": "als / wenn в прошлом; war, hatte, ging, kam, fand",
+   "chapterIndex": 2,
+   "indexInStep": 2,
+   "read": "В письменных рассказах вы встретите *war* вместо *ist gewesen*, *ging* вместо *ist gegangen*. Это не меняет факт события. Формы *sein* и *haben* уже знакомы из разговорных ситуаций. Здесь добавляем узнавание *ging, kam, fand*; в собственном устном рассказе можно пользоваться знакомым Perfekt. Для понимания важнее связать событие и его участника.",
+   "point": "Частые Präteritum: sein, haben, gehen, kommen, finden.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "frames-1",
+   "step": "frames",
+   "stepTitle": "Как устроена реплика",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "Придаточная часть занимает первую позицию целиком. Поэтому после запятой идёт *wurde*, а не ещё одно подлежащее перед глаголом. Это тот же принцип главного предложения, который вы уже применяли после weil. Здесь союз передаёт время, а не причину. Назовите по-русски связь событий до сборки немецкой фразы.",
+   "point": "*Als wir ankamen, wurde es heller.*",
+   "scene": {
+    "view": "sentence",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "als",
+         "text": "Als"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "ankamen",
+         "text": "ankamen,"
+        }
+       ],
+       [
+        {
+         "key": "wurde",
+         "text": "wurde"
+        }
+       ],
+       [
+        {
+         "key": "es",
+         "text": "es"
+        },
+        {
+         "key": "heller",
+         "text": "heller"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Als wir ankamen, wurde es heller.",
+      "ru": "Когда мы приехали, стало светлее.",
+      "audio": "audio/d44b58815408.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-1",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 0,
+   "read": "Wenn: речь идёт о повторяющихся случаях. Даже если все они были в прошлом, повторение остаётся важным. Сравните *Als ich zum ersten Mal dort war* — один первый визит — и *Wenn ich dort war, ging ich ans Wasser* — привычка при посещениях. Выбор зависит от картины событий, а не только от времени глагола.",
+   "point": "Повторение в прошлом: *wenn*.",
+   "question": "«Каждое свободное воскресенье раньше»: als или wenn?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "als",
+         "text": "Als"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "ankamen",
+         "text": "ankamen,"
+        }
+       ],
+       [
+        {
+         "key": "wurde",
+         "text": "wurde"
+        }
+       ],
+       [
+        {
+         "key": "es",
+         "text": "es"
+        },
+        {
+         "key": "heller",
+         "text": "heller"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Als wir ankamen, wurde es heller.",
+      "ru": "Когда мы приехали, стало светлее.",
+      "audio": "audio/d44b58815408.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-2",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 1,
+   "read": "Нет. Ging — форма Präteritum глагола gehen, то есть действие в прошлом. Увидев незнакомую форму, свяжите её с соседними указателями времени и действиями. В рассказе группа сначала была у воды, потом пошла в кафе. Не нужно переводить форму отдельно, если последовательность помогает восстановить смысл.",
+   "point": "*ging* = прошедшая форма *gehen*.",
+   "question": "«Sie ging ins Café» означает будущее действие?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "als",
+         "text": "Als"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "ankamen",
+         "text": "ankamen,"
+        }
+       ],
+       [
+        {
+         "key": "wurde",
+         "text": "wurde"
+        }
+       ],
+       [
+        {
+         "key": "es",
+         "text": "es"
+        },
+        {
+         "key": "heller",
+         "text": "heller"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Als wir ankamen, wurde es heller.",
+      "ru": "Когда мы приехали, стало светлее.",
+      "audio": "audio/d44b58815408.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "exam-headlines-1",
+   "step": "exam-headlines",
+   "stepTitle": "Fünf Texte, zehn Überschriften",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным текстом: объясните, какой фрагмент подтверждает каждое решение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "als",
+         "text": "Als"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "ankamen",
+         "text": "ankamen,"
+        }
+       ],
+       [
+        {
+         "key": "wurde",
+         "text": "wurde"
+        }
+       ],
+       [
+        {
+         "key": "es",
+         "text": "es"
+        },
+        {
+         "key": "heller",
+         "text": "heller"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Als wir ankamen, wurde es heller.",
+      "ru": "Когда мы приехали, стало светлее.",
+      "audio": "audio/d44b58815408.m4a"
+     }
+    ],
+    "task": "headlines"
+   }
+  },
+  {
+   "id": "exam-headlines-2",
+   "step": "exam-headlines",
+   "stepTitle": "Fünf Texte, zehn Überschriften",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "als",
+         "text": "Als"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "ankamen",
+         "text": "ankamen,"
+        }
+       ],
+       [
+        {
+         "key": "wurde",
+         "text": "wurde"
+        }
+       ],
+       [
+        {
+         "key": "es",
+         "text": "es"
+        },
+        {
+         "key": "heller",
+         "text": "heller"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Als wir ankamen, wurde es heller.",
+      "ru": "Когда мы приехали, стало светлее.",
+      "audio": "audio/d44b58815408.m4a"
+     }
+    ],
+    "task": "headlines"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "als",
+         "text": "Als"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "ankamen",
+         "text": "ankamen,"
+        }
+       ],
+       [
+        {
+         "key": "wurde",
+         "text": "wurde"
+        }
+       ],
+       [
+        {
+         "key": "es",
+         "text": "es"
+        },
+        {
+         "key": "heller",
+         "text": "heller"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Als wir ankamen, wurde es heller.",
+      "ru": "Когда мы приехали, стало светлее.",
+      "audio": "audio/d44b58815408.m4a"
+     }
+    ],
+    "task": "headlines",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-interview-1",
+   "step": "exam-interview",
+   "stepTitle": "Ein Rückblick · gekürztes Interview",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным текстом: объясните, какой фрагмент подтверждает каждое решение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "als",
+         "text": "Als"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "ankamen",
+         "text": "ankamen,"
+        }
+       ],
+       [
+        {
+         "key": "wurde",
+         "text": "wurde"
+        }
+       ],
+       [
+        {
+         "key": "es",
+         "text": "es"
+        },
+        {
+         "key": "heller",
+         "text": "heller"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Als wir ankamen, wurde es heller.",
+      "ru": "Когда мы приехали, стало светлее.",
+      "audio": "audio/d44b58815408.m4a"
+     }
+    ],
+    "task": "interview"
+   }
+  },
+  {
+   "id": "exam-interview-2",
+   "step": "exam-interview",
+   "stepTitle": "Ein Rückblick · gekürztes Interview",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "als",
+         "text": "Als"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "ankamen",
+         "text": "ankamen,"
+        }
+       ],
+       [
+        {
+         "key": "wurde",
+         "text": "wurde"
+        }
+       ],
+       [
+        {
+         "key": "es",
+         "text": "es"
+        },
+        {
+         "key": "heller",
+         "text": "heller"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Als wir ankamen, wurde es heller.",
+      "ru": "Когда мы приехали, стало светлее.",
+      "audio": "audio/d44b58815408.m4a"
+     }
+    ],
+    "task": "interview"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "als",
+         "text": "Als"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "ankamen",
+         "text": "ankamen,"
+        }
+       ],
+       [
+        {
+         "key": "wurde",
+         "text": "wurde"
+        }
+       ],
+       [
+        {
+         "key": "es",
+         "text": "es"
+        },
+        {
+         "key": "heller",
+         "text": "heller"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Als wir ankamen, wurde es heller.",
+      "ru": "Когда мы приехали, стало светлее.",
+      "audio": "audio/d44b58815408.m4a"
+     }
+    ],
+    "task": "interview",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-gaps-1",
+   "step": "exam-gaps",
+   "stepTitle": "Ein Brief nach dem Ausflug",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным текстом: объясните, какой фрагмент подтверждает каждое решение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "als",
+         "text": "Als"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "ankamen",
+         "text": "ankamen,"
+        }
+       ],
+       [
+        {
+         "key": "wurde",
+         "text": "wurde"
+        }
+       ],
+       [
+        {
+         "key": "es",
+         "text": "es"
+        },
+        {
+         "key": "heller",
+         "text": "heller"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Als wir ankamen, wurde es heller.",
+      "ru": "Когда мы приехали, стало светлее.",
+      "audio": "audio/d44b58815408.m4a"
+     }
+    ],
+    "task": "gaps"
+   }
+  },
+  {
+   "id": "exam-gaps-2",
+   "step": "exam-gaps",
+   "stepTitle": "Ein Brief nach dem Ausflug",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "als",
+         "text": "Als"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "ankamen",
+         "text": "ankamen,"
+        }
+       ],
+       [
+        {
+         "key": "wurde",
+         "text": "wurde"
+        }
+       ],
+       [
+        {
+         "key": "es",
+         "text": "es"
+        },
+        {
+         "key": "heller",
+         "text": "heller"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Als wir ankamen, wurde es heller.",
+      "ru": "Когда мы приехали, стало светлее.",
+      "audio": "audio/d44b58815408.m4a"
+     }
+    ],
+    "task": "gaps"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "als",
+         "text": "Als"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "ankamen",
+         "text": "ankamen,"
+        }
+       ],
+       [
+        {
+         "key": "wurde",
+         "text": "wurde"
+        }
+       ],
+       [
+        {
+         "key": "es",
+         "text": "es"
+        },
+        {
+         "key": "heller",
+         "text": "heller"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Als wir ankamen, wurde es heller.",
+      "ru": "Когда мы приехали, стало светлее.",
+      "audio": "audio/d44b58815408.m4a"
+     }
+    ],
+    "task": "gaps",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-opinions-1",
+   "step": "exam-opinions",
+   "stepTitle": "Wie reisen Sie gern?",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным текстом: объясните, какой фрагмент подтверждает каждое решение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "als",
+         "text": "Als"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "ankamen",
+         "text": "ankamen,"
+        }
+       ],
+       [
+        {
+         "key": "wurde",
+         "text": "wurde"
+        }
+       ],
+       [
+        {
+         "key": "es",
+         "text": "es"
+        },
+        {
+         "key": "heller",
+         "text": "heller"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Als wir ankamen, wurde es heller.",
+      "ru": "Когда мы приехали, стало светлее.",
+      "audio": "audio/d44b58815408.m4a"
+     }
+    ],
+    "task": "opinions"
+   }
+  },
+  {
+   "id": "exam-opinions-2",
+   "step": "exam-opinions",
+   "stepTitle": "Wie reisen Sie gern?",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "als",
+         "text": "Als"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "ankamen",
+         "text": "ankamen,"
+        }
+       ],
+       [
+        {
+         "key": "wurde",
+         "text": "wurde"
+        }
+       ],
+       [
+        {
+         "key": "es",
+         "text": "es"
+        },
+        {
+         "key": "heller",
+         "text": "heller"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Als wir ankamen, wurde es heller.",
+      "ru": "Когда мы приехали, стало светлее.",
+      "audio": "audio/d44b58815408.m4a"
+     }
+    ],
+    "task": "opinions"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "als",
+         "text": "Als"
+        },
+        {
+         "key": "wir",
+         "text": "wir"
+        }
+       ],
+       [
+        {
+         "key": "ankamen",
+         "text": "ankamen,"
+        }
+       ],
+       [
+        {
+         "key": "wurde",
+         "text": "wurde"
+        }
+       ],
+       [
+        {
+         "key": "es",
+         "text": "es"
+        },
+        {
+         "key": "heller",
+         "text": "heller"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Als wir ankamen, wurde es heller.",
+      "ru": "Когда мы приехали, стало светлее.",
+      "audio": "audio/d44b58815408.m4a"
+     }
+    ],
+    "task": "opinions",
+    "solved": true
+   }
+  }
+ ],
+ "exercises": [
+  {
+   "id": "b1-erlebnisse-1",
+   "type": "choice",
+   "q": "___ ich zum ersten Mal dort war, regnete es.",
+   "options": [
+    "Ob",
+    "Als",
+    "Wenn"
+   ],
+   "answer": 1,
+   "why": "Один первый визит.",
+   "audio": "audio/6f5132ceada5.m4a"
+  },
+  {
+   "id": "b1-erlebnisse-2",
+   "type": "choice",
+   "q": "___ ich früher frei hatte, fuhr ich oft ans Meer.",
+   "options": [
+    "Dass",
+    "Wenn",
+    "Als"
+   ],
+   "answer": 1,
+   "why": "Повторение.",
+   "audio": "audio/3e0ee2930f49.m4a"
+  },
+  {
+   "id": "b1-erlebnisse-3",
+   "type": "choice",
+   "q": "Präteritum от gehen:",
+   "options": [
+    "ginge",
+    "gegangen",
+    "ging"
+   ],
+   "answer": 2,
+   "why": "ging — прошедшая форма."
+  },
+  {
+   "id": "b1-erlebnisse-4",
+   "type": "choice",
+   "q": "Präteritum от finden:",
+   "options": [
+    "gefunden",
+    "fand",
+    "findet"
+   ],
+   "answer": 1,
+   "why": "fand."
+  },
+  {
+   "id": "b1-erlebnisse-5",
+   "type": "choice",
+   "q": "Als wir ankamen, ___ es heller.",
+   "options": [
+    "werden",
+    "wurde",
+    "es wurde"
+   ],
+   "answer": 1,
+   "why": "Личный глагол сразу после запятой.",
+   "audio": "audio/d44b58815408.m4a"
+  },
+  {
+   "id": "b1-erlebnisse-6",
+   "type": "choice",
+   "q": "Die Straße war gesperrt. Значит…",
+   "options": [
+    "Автобус отменён",
+    "Город закрыт",
+    "Улица была перекрыта"
+   ],
+   "answer": 2,
+   "why": "Не расширяйте сообщение."
+  },
+  {
+   "id": "b1-erlebnisse-7",
+   "type": "order",
+   "de": "Als wir ankamen, wurde es heller.",
+   "ru": "Когда мы приехали, стало светлее.",
+   "audio": "audio/d44b58815408.m4a"
+  },
+  {
+   "id": "b1-erlebnisse-8",
+   "type": "order",
+   "de": "Wenn ich frei hatte, nahm ich Essen mit.",
+   "ru": "Когда у меня было свободно, я брал еду.",
+   "audio": "audio/1c8599d55136.m4a"
+  },
+  {
+   "id": "b1-erlebnisse-9",
+   "type": "order",
+   "de": "Wir gingen danach ins Café.",
+   "ru": "Потом мы пошли в кафе.",
+   "audio": "audio/b89bd0150ded.m4a"
+  },
+  {
+   "id": "b1-erlebnisse-10",
+   "type": "order",
+   "de": "Ich fand die Ausstellung interessant.",
+   "ru": "Мне показалась интересной выставка.",
+   "audio": "audio/2566d626f069.m4a"
+  },
+  {
+   "id": "b1-erlebnisse-11",
+   "type": "order",
+   "de": "Der Bus kam pünktlich.",
+   "ru": "Автобус пришёл вовремя.",
+   "audio": "audio/6c6200ffddda.m4a"
+  },
+  {
+   "id": "b1-erlebnisse-12",
+   "type": "order",
+   "de": "Diesmal hatten wir viel Zeit.",
+   "ru": "В этот раз у нас было много времени.",
+   "audio": "audio/e7b32f4d88cc.m4a"
+  }
+ ],
+ "case": {
+  "title": "Ein grauer Morgen ist kein Regentag",
+  "ru": "Сверка дневника",
+  "intro": "В пересказ добавили сведения, которых нет в источниках.",
+  "people": {},
+  "steps": [
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Als wir ankamen, war der Himmel grau. Danach wurde es heller.",
+      "ru": "Когда приехали, небо было серым. Потом стало светлее."
+     }
+    ],
+    "question": "Весь день шёл дождь?",
+    "options": [
+     "Поездка отменена",
+     "Это не сказано",
+     "Да"
+    ],
+    "answer": 1,
+    "right": "Серое небо ещё не доказывает дождь весь день.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Wenn Mateo früher frei hatte, nahm er oft Essen mit. Diesmal kaufte die Gruppe Brot.",
+      "ru": "Раньше в свободные дни Матео часто брал еду. В этот раз группа купила хлеб."
+     }
+    ],
+    "question": "Что относится именно к этой поездке?",
+    "options": [
+     "Купили хлеб",
+     "Матео всегда готовил",
+     "Каждый ел один"
+    ],
+    "answer": 0,
+    "right": "Diesmal выделяет конкретный эпизод.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Der Bus kam an der Ersatzhaltestelle pünktlich.",
+      "ru": "Автобус пришёл на временную остановку вовремя."
+     }
+    ],
+    "question": "Что изменилось?",
+    "options": [
+     "Время прибытия",
+     "Город назначения",
+     "Остановка"
+    ],
+    "answer": 2,
+    "right": "Изменилось место остановки, не пунктуальность.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   }
+  ],
+  "ending": "Запись исправлена по источникам. В следующей главе команда воспользуется подтверждёнными сведениями для нового решения."
+ },
+ "adventure": {
+  "kind": "sequence",
+  "title": "Stellen Sie die Reisegeschichte wieder her",
+  "intro": "Для альбома FördeTreff друзья вспоминают поездку в Экенфьорде. Важно отделить одно событие от обычной привычки и восстановить порядок остановок. Пока администрация проверяет запрос на помещение, команда собирает истории, которые можно показать на встрече.",
+  "ending": "Die Gruppe unterscheidet einzelne Erlebnisse und frühere Gewohnheiten. Die Erinnerungen sind für das Album sortiert; ein grauer Morgen wird im Tagebuch nicht mehr zum vollständig verregneten Tag.",
+  "challenges": [
+   {
+    "id": "title",
+    "kind": "select",
+    "title": "Finden Sie den passenden Blickwinkel",
+    "intro": "Что является главной мыслью первого текста?",
+    "success": "Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы одно из них.",
+    "wrong": "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание и адресата.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "1) Als Dana zum ersten Mal nach Eckernförde fuhr, war der Himmel grau. Am Strand wurde es heller. Sie blieb lange am Wasser und machte erst danach eine Pause im Café. Die Reise war für sie eine gute Unterbrechung nach einer anstrengenden Woche.\n\n2) Mateo fährt gern mit anderen Menschen an die Küste. Wenn er früher am Sonntag frei hatte, nahm er oft Essen für alle mit. Diesmal kaufte die Gruppe unterwegs Brot. Mateo fand das gemeinsame Frühstück wichtiger als ein langes Programm.\n\n3) Elif besuchte eine kleine Fotoausstellung. Der Eintritt kostete wenig. Sie sah nicht nur Bilder vom Meer, sondern auch Porträts von Menschen aus der Stadt. Für das Album wählte sie ein eigenes Foto vom Strand.\n\n4) Hauke wollte mit dem Bus zurückfahren. Als die Gruppe an der Haltestelle ankam, war die Straße gesperrt. Ein Hinweis führte sie zur Ersatzhaltestelle. Der Bus kam dort pünktlich.\n\n5) Ein Nachbar schrieb nach dem Ausflug: Früher reiste ich fast immer allein. Jetzt freue ich mich, wenn Freunde mitkommen. Ich brauche nicht viele Sehenswürdigkeiten. Ein gutes Gespräch unterwegs reicht mir oft.",
+      "name": "Fünf Texte, zehn Überschriften"
+     }
+    ],
+    "options": [
+     {
+      "id": "o0",
+      "label": "Отдых после трудной недели"
+     },
+     {
+      "id": "o1",
+      "label": "Отмена всей поездки"
+     },
+     {
+      "id": "o2",
+      "label": "Открытие ресторана"
+     }
+    ],
+    "answer": [
+     "o0"
+    ]
+   },
+   {
+    "id": "time",
+    "kind": "match",
+    "title": "Один раз или повторение?",
+    "intro": "Соедините начало со значением.",
+    "success": "Союз показывает, один эпизод перед нами или привычка.",
+    "wrong": "Первый визит и конкретное прибытие — отдельные события.",
+    "options": [
+     {
+      "id": "once",
+      "label": "один прошлый эпизод"
+     },
+     {
+      "id": "often",
+      "label": "повторяющиеся случаи"
+     }
+    ],
+    "slots": [
+     {
+      "id": "a",
+      "label": "Als ich zum ersten Mal dort war, …",
+      "answer": "once"
+     },
+     {
+      "id": "b",
+      "label": "Wenn ich sonntags frei hatte, …",
+      "answer": "often"
+     },
+     {
+      "id": "c",
+      "label": "Als wir an der Haltestelle ankamen, …",
+      "answer": "once"
+     }
+    ]
+   },
+   {
+    "id": "als",
+    "kind": "order",
+    "title": "Соберите воспоминание",
+    "intro": "Начните с прибытия.",
+    "success": "Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.",
+    "wrong": "Проверьте положение глагола и конец предложения: используйте все фрагменты.",
+    "tokens": [
+     "Als wir",
+     "ankamen,",
+     "wurde",
+     "es heller."
+    ],
+    "label": "Реплика для команды"
+   },
+   {
+    "id": "route",
+    "kind": "pack",
+    "title": "Что действительно произошло?",
+    "intro": "Отберите подтверждённые детали текстов.",
+    "success": "Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы одно из них.",
+    "wrong": "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание и адресата.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "1) Als Dana zum ersten Mal nach Eckernförde fuhr, war der Himmel grau. Am Strand wurde es heller. Sie blieb lange am Wasser und machte erst danach eine Pause im Café. Die Reise war für sie eine gute Unterbrechung nach einer anstrengenden Woche.\n\n2) Mateo fährt gern mit anderen Menschen an die Küste. Wenn er früher am Sonntag frei hatte, nahm er oft Essen für alle mit. Diesmal kaufte die Gruppe unterwegs Brot. Mateo fand das gemeinsame Frühstück wichtiger als ein langes Programm.\n\n3) Elif besuchte eine kleine Fotoausstellung. Der Eintritt kostete wenig. Sie sah nicht nur Bilder vom Meer, sondern auch Porträts von Menschen aus der Stadt. Für das Album wählte sie ein eigenes Foto vom Strand.\n\n4) Hauke wollte mit dem Bus zurückfahren. Als die Gruppe an der Haltestelle ankam, war die Straße gesperrt. Ein Hinweis führte sie zur Ersatzhaltestelle. Der Bus kam dort pünktlich.\n\n5) Ein Nachbar schrieb nach dem Ausflug: Früher reiste ich fast immer allein. Jetzt freue ich mich, wenn Freunde mitkommen. Ich brauche nicht viele Sehenswürdigkeiten. Ein gutes Gespräch unterwegs reicht mir oft.",
+      "name": "Fünf Texte, zehn Überschriften"
+     }
+    ],
+    "options": [
+     {
+      "id": "o0",
+      "label": "Сначала вода, потом кафе"
+     },
+     {
+      "id": "o1",
+      "label": "Автобус пришёл вовремя"
+     },
+     {
+      "id": "o2",
+      "label": "Весь день шёл дождь"
+     },
+     {
+      "id": "o3",
+      "label": "Группа купила хлеб"
+     }
+    ],
+    "answer": [
+     "o0",
+     "o1",
+     "o3"
+    ]
+   },
+   {
+    "id": "stop",
+    "kind": "note",
+    "title": "Сохраните полезную деталь",
+    "intro": "Где группа села на обратный автобус? Используйте текст 4.",
+    "success": "Временная остановка сохранена в заметке.",
+    "wrong": "В тексте названо Ersatzhaltestelle.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "1) Als Dana zum ersten Mal nach Eckernförde fuhr, war der Himmel grau. Am Strand wurde es heller. Sie blieb lange am Wasser und machte erst danach eine Pause im Café. Die Reise war für sie eine gute Unterbrechung nach einer anstrengenden Woche.\n\n2) Mateo fährt gern mit anderen Menschen an die Küste. Wenn er früher am Sonntag frei hatte, nahm er oft Essen für alle mit. Diesmal kaufte die Gruppe unterwegs Brot. Mateo fand das gemeinsame Frühstück wichtiger als ein langes Programm.\n\n3) Elif besuchte eine kleine Fotoausstellung. Der Eintritt kostete wenig. Sie sah nicht nur Bilder vom Meer, sondern auch Porträts von Menschen aus der Stadt. Für das Album wählte sie ein eigenes Foto vom Strand.\n\n4) Hauke wollte mit dem Bus zurückfahren. Als die Gruppe an der Haltestelle ankam, war die Straße gesperrt. Ein Hinweis führte sie zur Ersatzhaltestelle. Der Bus kam dort pünktlich.\n\n5) Ein Nachbar schrieb nach dem Ausflug: Früher reiste ich fast immer allein. Jetzt freue ich mich, wenn Freunde mitkommen. Ich brauche nicht viele Sehenswürdigkeiten. Ein gutes Gespräch unterwegs reicht mir oft.",
+      "name": "Fünf Texte, zehn Überschriften"
+     }
+    ],
+    "fields": [
+     {
+      "label": "Haltestelle für die Rückfahrt",
+      "answers": [
+       "Ersatzhaltestelle",
+       "an der Ersatzhaltestelle",
+       "zur Ersatzhaltestelle"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "spy": []
+}

@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-23",
+  "audioFiles": 1521,
+  "audioReferences": 1521,
+  "a2Files": 455,
+  "a2QuietLast250Ms": 455,
+  "decodeFailures": 0,
+  "seconds": 3846.442666666667,
+  "bytes": 44912575,
+  "synthesisAttempts": 462,
+  "ownRunsChecked": 19,
+  "ownResultsRemaining": 0,
+  "ownManifestsRemaining": 0,
+  "ownProcessesRemaining": 0,
+  "modelsEnvironmentScriptsVoicesRetained": true
+}

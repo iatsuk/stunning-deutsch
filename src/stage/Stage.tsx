@@ -7,7 +7,7 @@ import { TaskView } from "./Task";
 import { WordsView } from "./Words";
 
 /** Сцена справа от текста: один из шести видов, состояние полностью задано фрагментом. */
-export function Stage({ topic, scene }: { topic: Topic; scene: Scene }) {
+export function Stage({ topic, scene, onReveal }: { topic: Topic; scene: Scene; onReveal?: () => void }) {
   // Новый вид или новый объект появляется плавно; внутри одного объекта
   // (реплики диалога, плитки схемы, стрелки часов) анимирует сам вид.
   const key = `${scene.view}:${scene.dialogue ?? scene.words ?? scene.table ?? scene.task ?? ""}`;
@@ -16,6 +16,7 @@ export function Stage({ topic, scene }: { topic: Topic; scene: Scene }) {
       <div key={key} className="board-view">
         <View topic={topic} scene={scene} />
       </div>
+      {onReveal && <button type="button" className="stage-reveal" onClick={onReveal}>Показать ответ</button>}
     </div>
   );
 }

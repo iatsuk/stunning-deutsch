@@ -4,7 +4,7 @@
  "order": 11,
  "title": "Was sind Sie von Beruf?",
  "ru": "Работа и профессии",
- "lede": "Анна в Польше работала врачом, Марко десять лет готовил в Риме. Теперь он ищет в Лейпциге работу поваром и идёт на собеседование. Учимся называть профессии мужчин и женщин, рассказывать о прошлом в Perfekt с *haben* и говорить *war* и *hatte*.",
+ "lede": "Матео уже работает в Fördeblick, а перед праздником команда вспоминает, как он нашёл это место. Вернитесь к знакомству и собеседованию, восстановите опыт Даны и Матео и разберите, что уже сделано для клуба. Новая грамматика — Perfekt с *haben*, формы *war* и *hatte*, названия профессий.",
  "goals": [
   "Назвать профессию — свою и чужую, мужчины и женщины",
   "Рассказать, где и кем вы работали раньше",
@@ -49,154 +49,154 @@
   "pause": {
    "title": "In der Pause",
    "ru": "В перерыве",
-   "place": "Sprachschule, Leipzig",
+   "place": "Sprachschule Förde, Kiel · воспоминание о первых занятиях",
    "people": {
     "A": {
-     "name": "Anna",
+     "name": "Dana",
      "voice": "Anna"
     },
     "M": {
-     "name": "Marco",
+     "name": "Mateo",
      "voice": "Reed"
     }
    },
    "lines": [
     {
      "who": "M",
-     "de": "Anna, was bist du eigentlich von Beruf?",
-     "ru": "Анна, а кто ты, собственно, по профессии?",
-     "audio": "audio/d695c3a564ae.m4a"
+     "de": "Dana, was bist du eigentlich von Beruf?",
+     "ru": "Дана, а кто ты, собственно, по профессии?",
+     "audio": "audio/b319d8c8b692.m4a"
     },
     {
      "who": "A",
-     "de": "Ich bin Ärztin. In Polen habe ich in einem Krankenhaus gearbeitet.",
-     "ru": "Я врач. В Польше я работала в больнице.",
-     "audio": "audio/a5268dd35080.m4a"
+     "de": "Ich bin Ärztin. In Kasachstan habe ich in einem Krankenhaus gearbeitet.",
+     "ru": "Я врач. В Казахстане я работала в больнице.",
+     "audio": "audio/51ccb46348df.m4a"
     },
     {
      "who": "M",
      "de": "Ach so! Dann bist du ja wirklich „Frau Doktor“!",
      "ru": "Вот как! Значит, ты и правда «фрау доктор»!",
-     "audio": "audio/0c3dfe59c703.m4a"
+     "audio": "audio/e35526878efb.m4a"
     },
     {
      "who": "A",
      "de": "Genau. Aber ich hatte immer viel Stress. Und du? Du warst Koch, oder?",
      "ru": "Точно. Но у меня всегда было много стресса. А ты? Ты ведь был поваром?",
-     "audio": "audio/4762097227fe.m4a"
+     "audio": "audio/e8e657939967.m4a"
     },
     {
      "who": "M",
-     "de": "Ja, zehn Jahre. Ich habe in Rom Pizza und Pasta gekocht.",
-     "ru": "Да, десять лет. Я готовил в Риме пиццу и пасту.",
-     "audio": "audio/3727048fdfcb.m4a"
+     "de": "Ja, sechs Jahre. Ich habe in Buenos Aires Fisch und Pasta gekocht.",
+     "ru": "Да, шесть лет. Я готовил в Буэнос-Айресе рыбу и пасту.",
+     "audio": "audio/c205b2c8b576.m4a"
     },
     {
      "who": "A",
      "de": "Und hier? Hast du schon eine Stelle als Koch gefunden?",
      "ru": "А здесь? Ты уже нашёл работу поваром?",
-     "audio": "audio/30fc9feef34f.m4a"
+     "audio": "audio/6d86dc9a4faf.m4a"
     },
     {
      "who": "M",
      "de": "Noch nicht. Aber gestern habe ich eine Anzeige gelesen: Ein Restaurant sucht einen Koch!",
      "ru": "Пока нет. Но вчера я прочитал объявление: ресторан ищет повара!",
-     "audio": "audio/f94958b5d002.m4a"
+     "audio": "audio/764aaf6e45f6.m4a"
     },
     {
      "who": "A",
      "de": "Super! Hast du schon eine E-Mail geschrieben?",
      "ru": "Здорово! Ты уже написал письмо?",
-     "audio": "audio/11c95ab4fa8a.m4a"
+     "audio": "audio/1c49c7aa345f.m4a"
     },
     {
      "who": "M",
      "de": "Ja, gestern Abend. Und morgen habe ich ein Vorstellungsgespräch!",
      "ru": "Да, вчера вечером. А завтра у меня собеседование!",
-     "audio": "audio/7f9f41672056.m4a"
+     "audio": "audio/5d7c1879f0c4.m4a"
     },
     {
      "who": "A",
      "de": "Toll! Viel Glück!",
      "ru": "Отлично! Удачи!",
-     "audio": "audio/8f4863173e31.m4a"
+     "audio": "audio/00e8c40644ee.m4a"
     }
    ]
   },
   "gespraech": {
    "title": "Das Vorstellungsgespräch",
    "ru": "Собеседование",
-   "place": "Restaurant „Lindenhof“, Leipzig",
+   "place": "Вымышленный Restaurant Fördeblick, Kiel · воспоминание о собеседовании",
    "people": {
     "S": {
      "name": "Herr Wagner",
      "voice": "Eddy"
     },
     "M": {
-     "name": "Marco",
+     "name": "Mateo",
      "voice": "Reed"
     }
    },
    "lines": [
     {
      "who": "S",
-     "de": "Guten Tag, Herr Rossi! Bitte nehmen Sie Platz.",
-     "ru": "Добрый день, господин Росси! Присаживайтесь, пожалуйста.",
-     "audio": "audio/8e8c5ae85853.m4a"
+     "de": "Guten Tag, Herr Fernández! Bitte nehmen Sie Platz.",
+     "ru": "Добрый день, господин Фернандес! Присаживайтесь, пожалуйста.",
+     "audio": "audio/3ee28591c478.m4a"
     },
     {
      "who": "M",
      "de": "Guten Tag, Herr Wagner. Danke.",
      "ru": "Добрый день, господин Вагнер. Спасибо.",
-     "audio": "audio/22f4e589de76.m4a"
+     "audio": "audio/b4b0d56688ae.m4a"
     },
     {
      "who": "S",
      "de": "Sie sind Koch. Wo haben Sie gearbeitet?",
      "ru": "Вы повар. Где вы работали?",
-     "audio": "audio/7511fadc966c.m4a"
+     "audio": "audio/35e63cbd1b25.m4a"
     },
     {
      "who": "M",
-     "de": "In Rom, im Restaurant „Da Mario“. Ich habe dort zehn Jahre gearbeitet.",
-     "ru": "В Риме, в ресторане «Да Марио». Я проработал там десять лет.",
-     "audio": "audio/50179d91dca9.m4a"
+     "de": "In Buenos Aires, im Restaurant „La Ribera“. Ich habe dort sechs Jahre gearbeitet.",
+     "ru": "В Буэнос-Айресе, в ресторане «Ла Рибера». Я проработал там шесть лет.",
+     "audio": "audio/51b95365102e.m4a"
     },
     {
      "who": "S",
      "de": "Und was haben Sie gekocht?",
      "ru": "А что вы готовили?",
-     "audio": "audio/e27fca424eeb.m4a"
+     "audio": "audio/f23a9afdc7ff.m4a"
     },
     {
      "who": "M",
      "de": "Pasta, Fisch und Fleisch. Und ich habe auch Desserts gemacht.",
      "ru": "Пасту, рыбу и мясо. И десерты тоже делал.",
-     "audio": "audio/696f1c1cfb2c.m4a"
+     "audio": "audio/03d8b225da7a.m4a"
     },
     {
      "who": "S",
      "de": "Haben Sie schon in Deutschland gearbeitet?",
      "ru": "Вы уже работали в Германии?",
-     "audio": "audio/f21d0cee68a4.m4a"
+     "audio": "audio/b8f0919440f3.m4a"
     },
     {
      "who": "M",
-     "de": "Ja, hier in Leipzig, als Kellner in einer Pizzeria. Und mein Deutschkurs ist am Vormittag.",
-     "ru": "Да, здесь, в Лейпциге, официантом в пиццерии. А курс немецкого у меня до обеда.",
-     "audio": "audio/dac74a6c58a7.m4a"
+     "de": "Ja, hier in Kiel, als Kellner in einem Café. Und mein Deutschkurs ist am Vormittag.",
+     "ru": "Да, здесь, в Киле, официантом в кафе. А курс немецкого у меня до обеда.",
+     "audio": "audio/584931a96892.m4a"
     },
     {
      "who": "S",
      "de": "Kein Problem, die Arbeit ist am Abend. Können Sie am Samstag einen Probetag machen?",
      "ru": "Не страшно, работа вечером. Можете в субботу выйти на пробный день?",
-     "audio": "audio/1ff31439d0f3.m4a"
+     "audio": "audio/09847614cba6.m4a"
     },
     {
      "who": "M",
      "de": "Ja, gern! Vielen Dank!",
      "ru": "Да, с удовольствием! Большое спасибо!",
-     "audio": "audio/abf44b1fa68f.m4a"
+     "audio": "audio/dda0718b96b8.m4a"
     }
    ]
   }
@@ -211,70 +211,70 @@
      "ru": "учитель",
      "gender": "m",
      "plural": "Lehrer",
-     "audio": "audio/5bc1062d9444.m4a"
+     "audio": "audio/782f1d0e35b3.m4a"
     },
     {
      "de": "die Lehrerin",
      "ru": "учительница",
      "gender": "f",
      "plural": "Lehrerinnen",
-     "audio": "audio/1fedba97bc3f.m4a"
+     "audio": "audio/df52c915745f.m4a"
     },
     {
      "de": "der Arzt",
      "ru": "врач",
      "gender": "m",
      "plural": "Ärzte",
-     "audio": "audio/9ed37f4a526e.m4a"
+     "audio": "audio/df79b4cec3b2.m4a"
     },
     {
      "de": "die Ärztin",
      "ru": "врач (женщина)",
      "gender": "f",
      "plural": "Ärztinnen",
-     "audio": "audio/74d1d61e1874.m4a"
+     "audio": "audio/f65c0a7e3cc6.m4a"
     },
     {
      "de": "der Koch",
      "ru": "повар",
      "gender": "m",
      "plural": "Köche",
-     "audio": "audio/8d091881948a.m4a"
+     "audio": "audio/4efc415aecc9.m4a"
     },
     {
      "de": "die Köchin",
      "ru": "повар (женщина)",
      "gender": "f",
      "plural": "Köchinnen",
-     "audio": "audio/d069a4cd3c43.m4a"
+     "audio": "audio/f8eeb021fde6.m4a"
     },
     {
      "de": "der Verkäufer",
      "ru": "продавец",
      "gender": "m",
      "plural": "Verkäufer",
-     "audio": "audio/00cfa119f084.m4a"
+     "audio": "audio/8fe32eafa7d1.m4a"
     },
     {
      "de": "die Verkäuferin",
      "ru": "продавщица",
      "gender": "f",
      "plural": "Verkäuferinnen",
-     "audio": "audio/7ee33045af5d.m4a"
+     "audio": "audio/a777750d1949.m4a"
     },
     {
      "de": "der Kellner",
      "ru": "официант",
      "gender": "m",
      "plural": "Kellner",
-     "audio": "audio/5027fc83d142.m4a"
+     "audio": "audio/fc742a79754e.m4a"
     },
     {
      "de": "die Kellnerin",
      "ru": "официантка",
      "gender": "f",
      "plural": "Kellnerinnen",
-     "audio": "audio/7cfa220d4467.m4a"
+     "audio": "audio/0fd02909e634.m4a"
     }
    ]
   },
@@ -288,7 +288,7 @@
      "gender": "m",
      "plural": "Ingenieure",
      "note": "die Ingenieurin",
-     "audio": "audio/c0e43f93fe89.m4a"
+     "audio": "audio/cbea907fbe16.m4a"
     },
     {
      "de": "der Friseur",
@@ -296,7 +296,7 @@
      "gender": "m",
      "plural": "Friseure",
      "note": "die Friseurin",
-     "audio": "audio/166bb19c86d1.m4a"
+     "audio": "audio/dbaf61145ee6.m4a"
     },
     {
      "de": "der Informatiker",
@@ -304,7 +304,7 @@
      "gender": "m",
      "plural": "Informatiker",
      "note": "die Informatikerin",
-     "audio": "audio/e68fafea83bb.m4a"
+     "audio": "audio/38df6f54dcc9.m4a"
     },
     {
      "de": "der Mechaniker",
@@ -312,7 +312,7 @@
      "gender": "m",
      "plural": "Mechaniker",
      "note": "die Mechanikerin",
-     "audio": "audio/d40878639a67.m4a"
+     "audio": "audio/4a034c21dd3a.m4a"
     },
     {
      "de": "der Student",
@@ -320,7 +320,7 @@
      "gender": "m",
      "plural": "Studenten",
      "note": "die Studentin",
-     "audio": "audio/44d8202e0455.m4a"
+     "audio": "audio/0c84e8ecf859.m4a"
     },
     {
      "de": "der Krankenpfleger",
@@ -328,7 +328,7 @@
      "gender": "m",
      "plural": "Krankenpfleger",
      "note": "die Krankenpflegerin — медсестра",
-     "audio": "audio/25b45e90945e.m4a"
+     "audio": "audio/eecf4f49a76e.m4a"
     },
     {
      "de": "der Hausmann",
@@ -336,7 +336,7 @@
      "gender": "m",
      "plural": "Hausmänner",
      "note": "die Hausfrau, die Hausfrauen",
-     "audio": "audio/ff2ca7b14553.m4a"
+     "audio": "audio/e695d0b45525.m4a"
     }
    ]
   },
@@ -350,7 +350,7 @@
      "gender": "f",
      "plural": "Arbeiten",
      "note": "Ich habe viel Arbeit.",
-     "audio": "audio/6b8ad5427884.m4a"
+     "audio": "audio/3f174a50011d.m4a"
     },
     {
      "de": "der Beruf",
@@ -358,28 +358,28 @@
      "gender": "m",
      "plural": "Berufe",
      "note": "Was sind Sie von Beruf?",
-     "audio": "audio/615a6fd0829b.m4a"
+     "audio": "audio/2425838153ef.m4a"
     },
     {
      "de": "die Stelle",
      "ru": "место работы, вакансия",
      "gender": "f",
      "plural": "Stellen",
-     "audio": "audio/6c096501b891.m4a"
+     "audio": "audio/03832bf19986.m4a"
     },
     {
      "de": "die Firma",
      "ru": "фирма",
      "gender": "f",
      "plural": "Firmen",
-     "audio": "audio/6430a4cb558a.m4a"
+     "audio": "audio/d23320685c7c.m4a"
     },
     {
      "de": "das Krankenhaus",
      "ru": "больница",
      "gender": "n",
      "plural": "Krankenhäuser",
-     "audio": "audio/471e0932e88f.m4a"
+     "audio": "audio/6e4005ad510a.m4a"
     },
     {
      "de": "der Kollege",
@@ -387,21 +387,21 @@
      "gender": "m",
      "plural": "Kollegen",
      "note": "die Kollegin",
-     "audio": "audio/303ad296bc11.m4a"
+     "audio": "audio/b6a798a9a336.m4a"
     },
     {
      "de": "die Anzeige",
      "ru": "объявление",
      "gender": "f",
      "plural": "Anzeigen",
-     "audio": "audio/e1ff7b028abf.m4a"
+     "audio": "audio/f99595a42112.m4a"
     },
     {
      "de": "das Vorstellungsgespräch",
      "ru": "собеседование",
      "gender": "n",
      "plural": "Vorstellungsgespräche",
-     "audio": "audio/469607bb31dc.m4a"
+     "audio": "audio/8ffda742e1a3.m4a"
     },
     {
      "de": "arbeiten als",
@@ -409,7 +409,7 @@
      "gender": null,
      "plural": null,
      "note": "Ich arbeite als Koch.",
-     "audio": "audio/fc2da97707b3.m4a"
+     "audio": "audio/a213e1fbf192.m4a"
     },
     {
      "de": "suchen",
@@ -417,7 +417,7 @@
      "gender": null,
      "plural": null,
      "note": "Wir suchen einen Koch.",
-     "audio": "audio/08bf84c4bb8d.m4a"
+     "audio": "audio/2b8648906d96.m4a"
     }
    ]
   },
@@ -430,21 +430,21 @@
      "ru": "вчера",
      "gender": null,
      "plural": null,
-     "audio": "audio/4cbaac5dc15c.m4a"
+     "audio": "audio/4d3cb7ffdf55.m4a"
     },
     {
      "de": "gestern Abend",
      "ru": "вчера вечером",
      "gender": null,
      "plural": null,
-     "audio": "audio/e6e5f46a75a4.m4a"
+     "audio": "audio/aed151b7f280.m4a"
     },
     {
      "de": "früher",
      "ru": "раньше",
      "gender": null,
      "plural": null,
-     "audio": "audio/8fb57b16a6b8.m4a"
+     "audio": "audio/25911b3a0802.m4a"
     },
     {
      "de": "letzte Woche",
@@ -452,7 +452,7 @@
      "gender": null,
      "plural": null,
      "note": "готовое выражение",
-     "audio": "audio/c84fc778cb29.m4a"
+     "audio": "audio/b76e067c66b7.m4a"
     },
     {
      "de": "letztes Jahr",
@@ -460,7 +460,7 @@
      "gender": null,
      "plural": null,
      "note": "готовое выражение",
-     "audio": "audio/7a98e3442364.m4a"
+     "audio": "audio/9a7b89a27bcc.m4a"
     },
     {
      "de": "schon",
@@ -468,21 +468,21 @@
      "gender": null,
      "plural": null,
      "note": "Hast du schon …?",
-     "audio": "audio/96821afa2ddc.m4a"
+     "audio": "audio/b147d2d30d9f.m4a"
     },
     {
      "de": "noch nicht",
      "ru": "ещё нет",
      "gender": null,
      "plural": null,
-     "audio": "audio/29dc43bd21d1.m4a"
+     "audio": "audio/76cc5f24c546.m4a"
     },
     {
      "de": "jetzt",
      "ru": "сейчас",
      "gender": null,
      "plural": null,
-     "audio": "audio/b1b43d6143ed.m4a"
+     "audio": "audio/285f88fa2f76.m4a"
     }
    ]
   }
@@ -563,7 +563,7 @@
     [
      "arbeiten",
      "*ge*arbeit+et",
-     "Ich *habe* in Rom *gearbeitet*."
+     "Ich *habe* in Buenos Aires *gearbeitet*."
     ],
     [
      "lesen",
@@ -587,7 +587,7 @@
     ]
    ],
    "ruCols": [],
-   "note": "Слабые глаголы — *ge-…-t*, сильные — *ge-…-en*. Сильные учите наизусть."
+   "note": "Формы нужны для рассказа о сделанных делах. Возвращайтесь к таблице во время чтения отчёта. Здесь показаны частые глаголы с ge-."
   },
   "praeteritum": {
    "title": "Präteritum: war und hatte",
@@ -637,13 +637,13 @@
   "mail": {
    "kind": "message",
    "part": "lesen-1",
-   "title": "Lesen, Teil 1",
+   "title": "Die erste Arbeitswoche · Rückblick",
    "situation": "Lesen Sie die E-Mail. Ist die Aussage richtig oder falsch?",
    "from": "Julia Becker",
-   "to": "Marco Rossi",
+   "to": "Mateo Fernández",
    "subject": "Dein Probetag",
-   "text": "Hallo Marco,\nder Probetag am Samstag war super! Die Gäste haben alles gegessen. Und Herr Wagner sagt: Die Stelle ist für dich!\nDu arbeitest von Dienstag bis Samstag, immer von 17 bis 23 Uhr. Am Sonntag und am Montag hast du frei.\nKomm bitte am Dienstag schon um 16 Uhr. Dann lernst du die Kollegen kennen.\nBis Dienstag!\nJulia",
-   "statement": "Marco muss am Dienstag um 17 Uhr im Restaurant sein.",
+   "text": "Hallo Mateo,\nder Probetag am Samstag war super! Die Gäste haben alles gegessen. Und Herr Wagner sagt: Die Stelle ist für dich!\nDu arbeitest von Dienstag bis Samstag, immer von 17 bis 23 Uhr. Am Sonntag und am Montag hast du frei.\nKomm bitte am Dienstag schon um 16 Uhr. Dann lernst du die Kollegen kennen.\nBis Dienstag!\nJulia",
+   "statement": "Mateo muss am Dienstag um 17 Uhr im Restaurant sein.",
    "answer": false,
    "sample": []
   },
@@ -663,38 +663,98 @@
    ],
    "sample": [
     {
-     "de": "Mein Name ist Marco Rossi.",
-     "audio": "audio/cc34a6dad60d.m4a"
+     "de": "Mein Name ist Mateo Fernández.",
+     "audio": "audio/6e24bd3651b2.m4a"
     },
     {
      "de": "Ich bin 28 Jahre alt.",
-     "audio": "audio/dcf5a9e1ecbe.m4a"
+     "audio": "audio/a8bfbe036243.m4a"
     },
     {
-     "de": "Ich komme aus Italien und wohne jetzt in Leipzig.",
-     "audio": "audio/023c79ba4f97.m4a"
+     "de": "Ich komme aus Argentinien und wohne jetzt in Kiel.",
+     "audio": "audio/61d29c374f54.m4a"
     },
     {
-     "de": "Ich spreche Italienisch, Englisch und ein bisschen Deutsch.",
-     "audio": "audio/b716d0565b94.m4a"
+     "de": "Ich spreche Spanisch, Englisch und ein bisschen Deutsch.",
+     "audio": "audio/1eab01208092.m4a"
     },
     {
      "de": "Ich bin Koch von Beruf.",
-     "audio": "audio/7254db79fd4f.m4a"
+     "audio": "audio/138bd0818594.m4a"
     },
     {
-     "de": "In Rom habe ich zehn Jahre in einem Restaurant gearbeitet.",
-     "audio": "audio/6c2b439a7cb0.m4a"
+     "de": "In Buenos Aires habe ich sechs Jahre in einem Restaurant gearbeitet.",
+     "audio": "audio/7591c2c25068.m4a"
     },
     {
-     "de": "Jetzt arbeite ich im Restaurant „Lindenhof“.",
-     "audio": "audio/d87dce5860fb.m4a"
+     "de": "Jetzt arbeite ich im Restaurant „Fördeblick“.",
+     "audio": "audio/8c18a0c50085.m4a"
     },
     {
-     "de": "Mein Hobby ist Fußball.",
-     "audio": "audio/f705a84cdea5.m4a"
+     "de": "Mein Hobby ist Segeln.",
+     "audio": "audio/44910f158065.m4a"
     }
    ]
+  },
+  "done": {
+   "kind": "message",
+   "part": "lesen-1",
+   "title": "Vorbereitung für den Club",
+   "from": "Mateo",
+   "text": "Gestern habe ich Suppe gekocht. Dana hat eine E-Mail geschrieben. Elif hat die Anzeige gelesen. Den Kuchen habe ich noch nicht gemacht.",
+   "sample": []
+  },
+  "past": {
+   "kind": "message",
+   "part": "lesen-1",
+   "title": "Früher und gestern",
+   "from": "Dana",
+   "text": "Früher war ich Ärztin in Almaty. Ich hatte viel Arbeit. Gestern habe ich Deutsch gelernt. Ich hatte Zeit für den Kurs.",
+   "sample": []
+  },
+  "formular": {
+   "kind": "form",
+   "part": "schreiben-1",
+   "title": "Anmeldung zum Berufskurs",
+   "situation": "Mateo Fernández ist 28 Jahre alt. Er kommt aus Argentinien und wohnt in Kiel. Er ist Koch und spricht Spanisch und Englisch. Helfen Sie ihm bei der Anmeldung.",
+   "fields": [
+    {
+     "label": "Familienname",
+     "value": "Fernández",
+     "given": true
+    },
+    {
+     "label": "Vorname",
+     "value": "Mateo",
+     "given": false
+    },
+    {
+     "label": "Alter",
+     "value": "28",
+     "given": false
+    },
+    {
+     "label": "Herkunftsland",
+     "value": "Argentinien",
+     "given": false
+    },
+    {
+     "label": "Wohnort",
+     "value": "Kiel",
+     "given": true
+    },
+    {
+     "label": "Beruf",
+     "value": "Koch",
+     "given": false
+    },
+    {
+     "label": "Sprachen",
+     "value": "Spanisch, Englisch",
+     "given": false
+    }
+   ],
+   "sample": []
   }
  },
  "beats": [
@@ -704,7 +764,7 @@
    "stepTitle": "В перерыве",
    "chapterIndex": 0,
    "indexInStep": 0,
-   "read": "Перерыв на курсе. Марко наконец спрашивает Анну о работе: *Was bist du von Beruf?* — «кто ты по профессии?». Ответ его удивляет: *Ich bin Ärztin*. Обратите внимание: артикля нет, как и в русском «я врач». Английское I am a doctor здесь подводит — *Ich bin eine Ärztin* звучит неестественно. А окончание *-in* показывает, что врач — женщина.",
+   "read": "Перед Kieler Woche команда вспоминает первые занятия. Это сцена из прошлого: Матео ещё только собирался устроиться в Fördeblick. Теперь мы знаем результат, но послушаем, как он рассказывал об опыте. Дана отвечает *Ich bin Ärztin*. При простом названии профессии обычно обходятся без артикля. Женская форма *Ärztin* отличается и окончанием *-in*, и умлаутом.",
    "point": "Профессия — без артикля: *Ich bin Ärztin.* *-in* — женская форма",
    "scene": {
     "view": "dialogue",
@@ -726,7 +786,7 @@
    "stepTitle": "В перерыве",
    "chapterIndex": 0,
    "indexInStep": 1,
-   "read": "Дальше Анна и Марко говорят о прошлом. *In Polen habe ich in einem Krankenhaus gearbeitet* — «в Польше я работала в больнице». Это Perfekt: *habe* плюс особая форма глагола в конце, *gearbeitet*. А «был» и «было» звучат короче: *Du warst Koch* — «ты был поваром», *Ich hatte immer viel Stress* — «у меня всегда было много стресса».",
+   "read": "Дальше Дана и Матео говорят о прошлом. *In Kasachstan habe ich in einem Krankenhaus gearbeitet* — «в Казахстане я работала в больнице». Это Perfekt: *habe* плюс особая форма глагола в конце, *gearbeitet*. А «был» и «было» звучат короче: *Du warst Koch* — «ты был поваром», *Ich hatte immer viel Stress* — «у меня всегда было много стресса».",
    "point": "О прошлом: *ich habe … gearbeitet*, *ich war*, *ich hatte*",
    "scene": {
     "view": "dialogue",
@@ -750,7 +810,7 @@
    "stepTitle": "В перерыве",
    "chapterIndex": 0,
    "indexInStep": 2,
-   "read": "Марко ищет работу поваром, по-немецки *eine Stelle* — «место». Анна спрашивает: *Hast du schon eine Stelle als Koch gefunden?* — «ты уже нашёл?». Марко отвечает *Noch nicht* — «пока нет», но вчера он прочитал объявление и написал письмо: *gelesen*, *geschrieben*. Эти формы кончаются на *-en*, а не на *-t*, как *gearbeitet*. Почему — разберём в грамматике.",
+   "read": "В воспоминании Матео ещё ищет место: *Hast du schon eine Stelle als Koch gefunden?* — *Noch nicht.* Он уже прочитал объявление и написал письмо: *gelesen*, *geschrieben*. Сейчас он работает в Fördeblick, поэтому эта сцена не отменяет сведения предыдущих тем. Важно научиться отделять прошлую ситуацию от нынешней — это пригодится и для папки подготовки клуба.",
    "point": "*schon* — «уже», *noch nicht* — «ещё нет»; *gefunden*, *gelesen*, *geschrieben*",
    "scene": {
     "view": "dialogue",
@@ -778,7 +838,7 @@
    "stepTitle": "Собеседование",
    "chapterIndex": 0,
    "indexInStep": 0,
-   "read": "На следующий день Марко в ресторане у господина Вагнера. Вопросы на собеседовании почти всегда о прошлом: *Wo haben Sie gearbeitet?* — «где вы работали?». W-слово первым, *haben* вторым, причастие *gearbeitet* — в конце. Марко отвечает так же: *Ich habe dort zehn Jahre gearbeitet.* Всё, что между *habe* и *gearbeitet*, — середина предложения.",
+   "read": "Следующая сцена тоже воспоминание: собеседование в Fördeblick. *Wo haben Sie gearbeitet?* — *In Buenos Aires, im Restaurant „La Ribera“.* Названия ресторанов и обстоятельства вымышлены. W-слово стоит первым, *haben* — вторым, *gearbeitet* — в конце. Опыт Матео длится шесть лет. На первом месте ответа может быть место, но рамка Perfekt сохраняется.",
    "point": "*Wo haben Sie gearbeitet?* — *haben* второй, причастие в конце",
    "scene": {
     "view": "dialogue",
@@ -802,7 +862,7 @@
    "stepTitle": "Собеседование",
    "chapterIndex": 0,
    "indexInStep": 1,
-   "read": "*Was haben Sie gekocht?* — *Ich habe auch Desserts gemacht.* Знакомые глаголы *kochen* и *machen* в Perfekt получают *ge-* в начале и *-t* в конце. А *Haben Sie schon in Deutschland gearbeitet?* — вопрос да/нет: *haben* стоит первым, причастие всё равно в конце. Разговор кончается хорошо: господин Вагнер предлагает *Probetag* — пробный день, обычное дело в ресторанах.",
+   "read": "*Was haben Sie gekocht?* — *Ich habe auch Desserts gemacht.* У *kochen* и *machen* получается *ge-…-t*. Вопрос *Haben Sie schon in Deutschland gearbeitet?* начинается с *haben*. Матео рассказывает о прежней работе в кафе в Киле; господин Вагнер предлагает пробный день. Это сюжет конкретного вымышленного собеседования, а не описание условий найма.",
    "point": "*kochen → gekocht*, *machen → gemacht*: *ge-* + основа + *-t*",
    "scene": {
     "view": "dialogue",
@@ -901,7 +961,7 @@
    "stepTitle": "Perfekt: что я делал",
    "chapterIndex": 2,
    "indexInStep": 0,
-   "read": "В разговорном немецком о прошлом почти всегда говорят в Perfekt. Он состоит из двух частей — как предложение с *müssen* из прошлой темы. Возьмём простое *Ich arbeite in Rom* — «я работаю в Риме». Глагол стоит на втором месте, конец предложения пуст. Посмотрите, что произойдёт, когда мы перенесём это предложение в прошлое.",
+   "read": "В разговорном немецком о прошлом почти всегда говорят в Perfekt. Он состоит из двух частей — как предложение с *müssen* из прошлой темы. Возьмём простое *Ich arbeite in Buenos Aires* — «я работаю в Буэнос-Айресе». Глагол стоит на втором месте, конец предложения пуст. Посмотрите, что произойдёт, когда мы перенесём это предложение в прошлое.",
    "point": "Perfekt — главное прошедшее время в разговоре",
    "scene": {
     "view": "sentence",
@@ -929,16 +989,20 @@
          "text": "in"
         },
         {
-         "key": "rom",
-         "text": "Rom"
+         "key": "buenos",
+         "text": "Buenos"
+        },
+        {
+         "key": "aires",
+         "text": "Aires"
         }
        ],
        []
       ],
       "punct": ".",
-      "plain": "Ich arbeite in Rom.",
-      "ru": "Я работаю в Риме.",
-      "audio": "audio/ded2af09630e.m4a"
+      "plain": "Ich arbeite in Buenos Aires.",
+      "ru": "Я работаю в Буэнос-Айресе.",
+      "audio": "audio/7f5492801ba2.m4a"
      }
     ]
    }
@@ -950,7 +1014,7 @@
    "chapterIndex": 2,
    "indexInStep": 1,
    "read": "На второе место встаёт *habe* — обычная форма *haben*. А смысловой глагол уходит в конец и превращается в причастие, Partizip II: *gearbeitet*. Получается та же рамка, что с *muss … bleiben*. По-русски всё сказано одним словом «работал», а по-немецки работа разделена: лицо показывает *habe*, а смысл — *gearbeitet*.",
-   "point": "*Ich habe in Rom gearbeitet.* — *haben* второй, причастие в конце",
+   "point": "*Ich habe in Buenos Aires gearbeitet.* — *haben* второй, причастие в конце",
    "scene": {
     "view": "sentence",
     "dialogue": "gespraech",
@@ -977,8 +1041,12 @@
          "text": "in"
         },
         {
-         "key": "rom",
-         "text": "Rom"
+         "key": "buenos",
+         "text": "Buenos"
+        },
+        {
+         "key": "aires",
+         "text": "Aires"
         }
        ],
        [
@@ -989,9 +1057,9 @@
        ]
       ],
       "punct": ".",
-      "plain": "Ich habe in Rom gearbeitet.",
-      "ru": "Я работал в Риме.",
-      "audio": "audio/0ab719c0116a.m4a"
+      "plain": "Ich habe in Buenos Aires gearbeitet.",
+      "ru": "Я работал в Буэнос-Айресе.",
+      "audio": "audio/8890dd70614c.m4a"
      }
     ]
    }
@@ -1002,8 +1070,8 @@
    "stepTitle": "Perfekt: что я делал",
    "chapterIndex": 2,
    "indexInStep": 2,
-   "read": "Рамка держится при любом порядке слов. Поставим *in Rom* на первое место: *habe* остаётся вторым, *ich* уходит за него, а причастие — по-прежнему в конце. В вопросе да/нет первым встаёт *hast*: *Hast du schon eine Stelle gefunden?* Частая ошибка — поставить причастие сразу за *haben*: *Ich habe gearbeitet in Rom*. Так нельзя.",
-   "point": "Причастие всегда в конце: *In Rom habe ich gearbeitet.*",
+   "read": "Рамка держится при любом порядке слов. Поставим *in Buenos Aires* на первое место: *habe* остаётся вторым, *ich* уходит за него, а причастие — по-прежнему в конце. В вопросе да/нет первым встаёт *hast*: *Hast du schon eine Stelle gefunden?* Частая ошибка — поставить причастие сразу за *haben*: *Ich habe gearbeitet in Buenos Aires*. Так нельзя.",
+   "point": "Причастие всегда в конце: *In Buenos Aires habe ich gearbeitet.*",
    "scene": {
     "view": "sentence",
     "dialogue": "gespraech",
@@ -1018,8 +1086,12 @@
          "text": "In"
         },
         {
-         "key": "rom",
-         "text": "Rom"
+         "key": "buenos",
+         "text": "Buenos"
+        },
+        {
+         "key": "aires",
+         "text": "Aires"
         }
        ],
        [
@@ -1042,9 +1114,9 @@
        ]
       ],
       "punct": ".",
-      "plain": "In Rom habe ich gearbeitet.",
-      "ru": "В Риме я работал.",
-      "audio": "audio/a8ce0476b754.m4a"
+      "plain": "In Buenos Aires habe ich gearbeitet.",
+      "ru": "В Буэнос-Айресе я работал.",
+      "audio": "audio/64f36b3dbf44.m4a"
      },
      {
       "slots": [
@@ -1083,7 +1155,7 @@
       "punct": "?",
       "plain": "Hast du schon eine Stelle gefunden?",
       "ru": "Ты уже нашёл работу?",
-      "audio": "audio/93420b5d57bc.m4a"
+      "audio": "audio/fa050a755df3.m4a"
      }
     ],
     "fresh": [
@@ -1113,8 +1185,12 @@
          "text": "In"
         },
         {
-         "key": "rom",
-         "text": "Rom"
+         "key": "buenos",
+         "text": "Buenos"
+        },
+        {
+         "key": "aires",
+         "text": "Aires"
         }
        ],
        [
@@ -1137,9 +1213,9 @@
        ]
       ],
       "punct": ".",
-      "plain": "In Rom habe ich gearbeitet.",
-      "ru": "В Риме я работал.",
-      "audio": "audio/a8ce0476b754.m4a"
+      "plain": "In Buenos Aires habe ich gearbeitet.",
+      "ru": "В Буэнос-Айресе я работал.",
+      "audio": "audio/64f36b3dbf44.m4a"
      },
      {
       "slots": [
@@ -1178,7 +1254,7 @@
       "punct": "?",
       "plain": "Hast du schon eine Stelle gefunden?",
       "ru": "Ты уже нашёл работу?",
-      "audio": "audio/93420b5d57bc.m4a"
+      "audio": "audio/fa050a755df3.m4a"
      }
     ],
     "reveal": 4
@@ -1190,7 +1266,7 @@
    "stepTitle": "Perfekt: что я делал",
    "chapterIndex": 2,
    "indexInStep": 4,
-   "read": "Вторая группа — сильные глаголы. У них причастие кончается на *-en*: *lesen → gelesen*, *schreiben → geschrieben*. Часто меняется и гласная в корне: *finden → gefunden*, *sprechen → gesprochen*. Правила здесь нет, поэтому сильные глаголы учат сразу в трёх формах: *sprechen — er spricht — gesprochen*. Их немного, и почти все — очень частые.",
+   "read": "У сильных глаголов причастие часто оканчивается на *-en*: *gelesen*, *geschrieben*. Может меняться гласная: *finden → gefunden*, *sprechen → gesprochen*. Вместо списка для зубрёжки в игре прочитайте отчёт и решите, что уже сделано. Повторное употребление форм поможет их узнавать; таблица остаётся справочником. Отсутствие *ge-* и другие группы разберём позже.",
    "point": "Сильные: *ge-* + основа + *-en*, гласная может меняться: *gefunden*",
    "scene": {
     "view": "table",
@@ -1206,8 +1282,12 @@
          "text": "In"
         },
         {
-         "key": "rom",
-         "text": "Rom"
+         "key": "buenos",
+         "text": "Buenos"
+        },
+        {
+         "key": "aires",
+         "text": "Aires"
         }
        ],
        [
@@ -1230,9 +1310,9 @@
        ]
       ],
       "punct": ".",
-      "plain": "In Rom habe ich gearbeitet.",
-      "ru": "В Риме я работал.",
-      "audio": "audio/a8ce0476b754.m4a"
+      "plain": "In Buenos Aires habe ich gearbeitet.",
+      "ru": "В Буэнос-Айресе я работал.",
+      "audio": "audio/64f36b3dbf44.m4a"
      },
      {
       "slots": [
@@ -1271,7 +1351,7 @@
       "punct": "?",
       "plain": "Hast du schon eine Stelle gefunden?",
       "ru": "Ты уже нашёл работу?",
-      "audio": "audio/93420b5d57bc.m4a"
+      "audio": "audio/fa050a755df3.m4a"
      }
     ],
     "reveal": 8,
@@ -1311,8 +1391,12 @@
          "text": "In"
         },
         {
-         "key": "rom",
-         "text": "Rom"
+         "key": "buenos",
+         "text": "Buenos"
+        },
+        {
+         "key": "aires",
+         "text": "Aires"
         }
        ],
        [
@@ -1335,9 +1419,9 @@
        ]
       ],
       "punct": ".",
-      "plain": "In Rom habe ich gearbeitet.",
-      "ru": "В Риме я работал.",
-      "audio": "audio/a8ce0476b754.m4a"
+      "plain": "In Buenos Aires habe ich gearbeitet.",
+      "ru": "В Буэнос-Айресе я работал.",
+      "audio": "audio/64f36b3dbf44.m4a"
      },
      {
       "slots": [
@@ -1376,7 +1460,7 @@
       "punct": "?",
       "plain": "Hast du schon eine Stelle gefunden?",
       "ru": "Ты уже нашёл работу?",
-      "audio": "audio/93420b5d57bc.m4a"
+      "audio": "audio/fa050a755df3.m4a"
      }
     ]
    }
@@ -1387,7 +1471,7 @@
    "stepTitle": "*war* и *hatte*",
    "chapterIndex": 2,
    "indexInStep": 1,
-   "read": "Сравните два предложения на схеме. В Perfekt две части и рамка: *habe … gearbeitet*. У *war* и *hatte* рамки нет — одно слово на втором месте, конец пуст. Perfekt от *sein* и *haben* тоже существует, но в разговоре звучит тяжеловесно. Поэтому правило простое: *war* и *hatte* — для «был» и «было», Perfekt — для остальных глаголов.",
+   "read": "В этой теме для *sein* и *haben* тренируем частые короткие формы *war* и *hatte*. У них нет рамки с причастием: *Ich war Koch*, *Ich hatte viel Arbeit*. Сравните с *Ich habe gearbeitet*. Это удобная опора для первых рассказов о прошлом, а не запрет на Perfekt этих глаголов: формы *ist gewesen* и *hat gehabt* тоже существуют.",
    "point": "«Был», «было» — *war*, *hatte*; остальные глаголы — Perfekt",
    "scene": {
     "view": "sentence",
@@ -1419,16 +1503,20 @@
          "text": "in"
         },
         {
-         "key": "rom",
-         "text": "Rom"
+         "key": "buenos",
+         "text": "Buenos"
+        },
+        {
+         "key": "aires",
+         "text": "Aires"
         }
        ],
        []
       ],
       "punct": ".",
-      "plain": "Ich war Koch in Rom.",
-      "ru": "Я был поваром в Риме.",
-      "audio": "audio/c289eccf5de7.m4a"
+      "plain": "Ich war Koch in Buenos Aires.",
+      "ru": "Я был поваром в Буэнос-Айресе.",
+      "audio": "audio/a5520b50424f.m4a"
      },
      {
       "slots": [
@@ -1450,8 +1538,12 @@
          "text": "in"
         },
         {
-         "key": "rom",
-         "text": "Rom"
+         "key": "buenos",
+         "text": "Buenos"
+        },
+        {
+         "key": "aires",
+         "text": "Aires"
         }
        ],
        [
@@ -1462,9 +1554,9 @@
        ]
       ],
       "punct": ".",
-      "plain": "Ich habe in Rom gearbeitet.",
-      "ru": "Я работал в Риме.",
-      "audio": "audio/0ab719c0116a.m4a"
+      "plain": "Ich habe in Buenos Aires gearbeitet.",
+      "ru": "Я работал в Буэнос-Айресе.",
+      "audio": "audio/8890dd70614c.m4a"
      }
     ]
    }
@@ -1477,86 +1569,7 @@
    "indexInStep": 0,
    "read": "*Sie ist Köchin.* Артикля нет — это профессия, как и в мужской форме *Er ist Koch*. К основе добавляется *-in*, а в корне появляется умлаут: *o* → *ö*. Так же *Arzt* → *Ärztin*. Если сказать *Kochin*, вас поймут, но это ошибка, поэтому женскую форму учите вместе с мужской.",
    "point": "*Koch → Köchin*, *Arzt → Ärztin* — с умлаутом",
-   "question": "Марко — *Koch*. Как сказать о женщине «она повар»?",
-   "sceneBefore": {
-    "view": "sentence",
-    "dialogue": "gespraech",
-    "words": "zeit",
-    "table": "praeteritum",
-    "rows": [
-     {
-      "slots": [
-       [
-        {
-         "key": "ich",
-         "text": "Ich"
-        }
-       ],
-       [
-        {
-         "key": "war",
-         "text": "war"
-        }
-       ],
-       [
-        {
-         "key": "koch",
-         "text": "Koch"
-        },
-        {
-         "key": "in",
-         "text": "in"
-        },
-        {
-         "key": "rom",
-         "text": "Rom"
-        }
-       ],
-       []
-      ],
-      "punct": ".",
-      "plain": "Ich war Koch in Rom.",
-      "ru": "Я был поваром в Риме.",
-      "audio": "audio/c289eccf5de7.m4a"
-     },
-     {
-      "slots": [
-       [
-        {
-         "key": "ich",
-         "text": "Ich"
-        }
-       ],
-       [
-        {
-         "key": "hab",
-         "text": "hab+e"
-        }
-       ],
-       [
-        {
-         "key": "in",
-         "text": "in"
-        },
-        {
-         "key": "rom",
-         "text": "Rom"
-        }
-       ],
-       [
-        {
-         "key": "gearbeit",
-         "text": "*ge*arbeit+et"
-        }
-       ]
-      ],
-      "punct": ".",
-      "plain": "Ich habe in Rom gearbeitet.",
-      "ru": "Я работал в Риме.",
-      "audio": "audio/0ab719c0116a.m4a"
-     }
-    ]
-   },
+   "question": "Матео — *Koch*. Как сказать о женщине «она повар»?",
    "scene": {
     "view": "table",
     "dialogue": "gespraech",
@@ -1587,16 +1600,20 @@
          "text": "in"
         },
         {
-         "key": "rom",
-         "text": "Rom"
+         "key": "buenos",
+         "text": "Buenos"
+        },
+        {
+         "key": "aires",
+         "text": "Aires"
         }
        ],
        []
       ],
       "punct": ".",
-      "plain": "Ich war Koch in Rom.",
-      "ru": "Я был поваром в Риме.",
-      "audio": "audio/c289eccf5de7.m4a"
+      "plain": "Ich war Koch in Buenos Aires.",
+      "ru": "Я был поваром в Буэнос-Айресе.",
+      "audio": "audio/a5520b50424f.m4a"
      },
      {
       "slots": [
@@ -1618,8 +1635,12 @@
          "text": "in"
         },
         {
-         "key": "rom",
-         "text": "Rom"
+         "key": "buenos",
+         "text": "Buenos"
+        },
+        {
+         "key": "aires",
+         "text": "Aires"
         }
        ],
        [
@@ -1630,9 +1651,9 @@
        ]
       ],
       "punct": ".",
-      "plain": "Ich habe in Rom gearbeitet.",
-      "ru": "Я работал в Риме.",
-      "audio": "audio/0ab719c0116a.m4a"
+      "plain": "Ich habe in Buenos Aires gearbeitet.",
+      "ru": "Я работал в Буэнос-Айресе.",
+      "audio": "audio/8890dd70614c.m4a"
      }
     ],
     "focus": [
@@ -1649,88 +1670,6 @@
    "read": "*Was hast du gestern gemacht?* W-слово первым, *hast* — вторым, причастие *gemacht* — в конце, а *du gestern* — в середине. Русское «делал» распадается на две части: *hast* показывает лицо, *gemacht* — смысл. Ответ строится так же: *Ich habe Deutsch gelernt.* Оба глагола слабые: *ge-* + основа + *-t*. А *gestern* можно поставить и первым: *Gestern habe ich Deutsch gelernt.*",
    "point": "*Was hast du gestern gemacht?* — *Ich habe Deutsch gelernt.*",
    "question": "Как спросить друга «Что ты делал вчера?» и ответить «Я учил немецкий»?",
-   "sceneBefore": {
-    "view": "table",
-    "dialogue": "gespraech",
-    "words": "zeit",
-    "table": "beruf",
-    "rows": [
-     {
-      "slots": [
-       [
-        {
-         "key": "ich",
-         "text": "Ich"
-        }
-       ],
-       [
-        {
-         "key": "war",
-         "text": "war"
-        }
-       ],
-       [
-        {
-         "key": "koch",
-         "text": "Koch"
-        },
-        {
-         "key": "in",
-         "text": "in"
-        },
-        {
-         "key": "rom",
-         "text": "Rom"
-        }
-       ],
-       []
-      ],
-      "punct": ".",
-      "plain": "Ich war Koch in Rom.",
-      "ru": "Я был поваром в Риме.",
-      "audio": "audio/c289eccf5de7.m4a"
-     },
-     {
-      "slots": [
-       [
-        {
-         "key": "ich",
-         "text": "Ich"
-        }
-       ],
-       [
-        {
-         "key": "hab",
-         "text": "hab+e"
-        }
-       ],
-       [
-        {
-         "key": "in",
-         "text": "in"
-        },
-        {
-         "key": "rom",
-         "text": "Rom"
-        }
-       ],
-       [
-        {
-         "key": "gearbeit",
-         "text": "*ge*arbeit+et"
-        }
-       ]
-      ],
-      "punct": ".",
-      "plain": "Ich habe in Rom gearbeitet.",
-      "ru": "Я работал в Риме.",
-      "audio": "audio/0ab719c0116a.m4a"
-     }
-    ],
-    "focus": [
-     5
-    ]
-   },
    "scene": {
     "view": "sentence",
     "dialogue": "gespraech",
@@ -1771,7 +1710,7 @@
       "punct": "?",
       "plain": "Was hast du gestern gemacht?",
       "ru": "Что ты делал вчера?",
-      "audio": "audio/aeadb895dac8.m4a"
+      "audio": "audio/e60f4c34cef3.m4a"
      },
      {
       "slots": [
@@ -1803,7 +1742,7 @@
       "punct": ".",
       "plain": "Ich habe Deutsch gelernt.",
       "ru": "Я учил немецкий.",
-      "audio": "audio/879cf4414723.m4a"
+      "audio": "audio/1e4e035d3460.m4a"
      }
     ]
    }
@@ -1817,82 +1756,6 @@
    "read": "*Gestern hatte ich keine Zeit.* Для «было» берём *hatte* — без рамки и без причастия. *Gestern* на первом месте, поэтому *ich* уходит за глагол. А «не было времени» — это *keine Zeit*: перед существительным отрицание — *kein*, как в четвёртой теме. По-русски «у меня не было», по-немецки — «я не имел»: *ich hatte keine*.",
    "point": "*Gestern hatte ich keine Zeit.* — *hatte* + *kein*",
    "question": "Как сказать «Вчера у меня не было времени»?",
-   "sceneBefore": {
-    "view": "sentence",
-    "dialogue": "gespraech",
-    "words": "zeit",
-    "table": "beruf",
-    "rows": [
-     {
-      "slots": [
-       [
-        {
-         "key": "was",
-         "text": "Was"
-        }
-       ],
-       [
-        {
-         "key": "hast",
-         "text": "hast"
-        }
-       ],
-       [
-        {
-         "key": "du",
-         "text": "du"
-        },
-        {
-         "key": "gestern",
-         "text": "gestern"
-        }
-       ],
-       [
-        {
-         "key": "gemach",
-         "text": "*ge*mach+t"
-        }
-       ]
-      ],
-      "punct": "?",
-      "plain": "Was hast du gestern gemacht?",
-      "ru": "Что ты делал вчера?",
-      "audio": "audio/aeadb895dac8.m4a"
-     },
-     {
-      "slots": [
-       [
-        {
-         "key": "ich",
-         "text": "Ich"
-        }
-       ],
-       [
-        {
-         "key": "hab",
-         "text": "hab+e"
-        }
-       ],
-       [
-        {
-         "key": "deutsch",
-         "text": "Deutsch"
-        }
-       ],
-       [
-        {
-         "key": "gelern",
-         "text": "*ge*lern+t"
-        }
-       ]
-      ],
-      "punct": ".",
-      "plain": "Ich habe Deutsch gelernt.",
-      "ru": "Я учил немецкий.",
-      "audio": "audio/879cf4414723.m4a"
-     }
-    ]
-   },
    "scene": {
     "view": "sentence",
     "dialogue": "gespraech",
@@ -1932,7 +1795,7 @@
       "punct": ".",
       "plain": "Gestern hatte ich keine Zeit.",
       "ru": "Вчера у меня не было времени.",
-      "audio": "audio/9b9505b492c8.m4a"
+      "audio": "audio/f460d7baac55.m4a"
      }
     ]
    }
@@ -1943,7 +1806,7 @@
    "stepTitle": "Чтение: письмо от коллеги",
    "chapterIndex": 4,
    "indexInStep": 0,
-   "read": "В первой части чтения — два коротких письма или записки, к ним пять утверждений: *richtig* или *falsch*. Начинайте с утверждения, а не с текста. Здесь оно о дне и времени, значит, ищите в письме дни недели и числа. Марко получил письмо от Юлии, официантки из ресторана «Линденхоф», после пробного дня.",
+   "read": "В первой части чтения нужно сопоставлять утверждение с письмом. Здесь Юлия Беккер, коллега Матео в Fördeblick, пишет после того самого пробного дня. Письмо сохранено в старой папке: оно показывает, как начиналась его работа, а не сообщает о новой смене работодателя сейчас. Обычная смена с 17 до 23 часов и особая просьба прийти во вторник в 16:00 — разные сведения.",
    "point": "Чтение, часть 1: сначала утверждение, потом нужное место в тексте",
    "scene": {
     "view": "task",
@@ -1984,7 +1847,7 @@
       "punct": ".",
       "plain": "Gestern hatte ich keine Zeit.",
       "ru": "Вчера у меня не было времени.",
-      "audio": "audio/9b9505b492c8.m4a"
+      "audio": "audio/f460d7baac55.m4a"
      }
     ],
     "task": "mail"
@@ -1999,50 +1862,6 @@
    "read": "*Falsch.* Число 17 в письме есть, но это начало обычной смены: *immer von 17 bis 23 Uhr*. Во вторник Юлия просит прийти раньше: *Komm bitte am Dienstag schon um 16 Uhr.* Слово *schon* — «уже», здесь «пораньше» — и есть ключ. Составители любят такие ловушки: в тексте те же числа, но в другой связи.",
    "point": "Ловушка: число из текста, но в другой связи",
    "question": "Утверждение верное или нет?",
-   "sceneBefore": {
-    "view": "task",
-    "dialogue": "gespraech",
-    "words": "zeit",
-    "table": "beruf",
-    "rows": [
-     {
-      "slots": [
-       [
-        {
-         "key": "gestern",
-         "text": "Gestern"
-        }
-       ],
-       [
-        {
-         "key": "hatt",
-         "text": "hatt+e"
-        }
-       ],
-       [
-        {
-         "key": "ich",
-         "text": "ich"
-        },
-        {
-         "key": "keine",
-         "text": "keine"
-        },
-        {
-         "key": "zeit",
-         "text": "Zeit"
-        }
-       ],
-       []
-      ],
-      "punct": ".",
-      "plain": "Gestern hatte ich keine Zeit.",
-      "ru": "Вчера у меня не было времени.",
-      "audio": "audio/9b9505b492c8.m4a"
-     }
-    ],
-    "task": "mail"
-   },
    "scene": {
     "view": "task",
     "dialogue": "gespraech",
@@ -2082,7 +1901,7 @@
       "punct": ".",
       "plain": "Gestern hatte ich keine Zeit.",
       "ru": "Вчера у меня не было времени.",
-      "audio": "audio/9b9505b492c8.m4a"
+      "audio": "audio/f460d7baac55.m4a"
      }
     ],
     "task": "mail",
@@ -2136,7 +1955,7 @@
       "punct": ".",
       "plain": "Gestern hatte ich keine Zeit.",
       "ru": "Вчера у меня не было времени.",
-      "audio": "audio/9b9505b492c8.m4a"
+      "audio": "audio/f460d7baac55.m4a"
      }
     ],
     "task": "vorstellen",
@@ -2149,7 +1968,7 @@
    "stepTitle": "Устный экзамен: профессия",
    "chapterIndex": 4,
    "indexInStep": 1,
-   "read": "А дальше — одно-два предложения о прошлом, и рассказ звучит живее: *In Rom habe ich zehn Jahre in einem Restaurant gearbeitet.* Потом — о настоящем: *Jetzt arbeite ich im Restaurant „Lindenhof“.* Сложные конструкции не нужны: одно предложение в Perfekt уже показывает, что вы умеете говорить о прошлом. Подготовьте такое предложение о себе заранее.",
+   "read": "А дальше — одно-два предложения о прошлом, и рассказ звучит живее: *In Buenos Aires habe ich sechs Jahre in einem Restaurant gearbeitet.* Потом — о настоящем: *Jetzt arbeite ich im Restaurant „Fördeblick“.* Сложные конструкции не нужны: одно предложение в Perfekt уже показывает, что вы умеете говорить о прошлом. Подготовьте такое предложение о себе заранее.",
    "point": "Добавьте прошлое: *Ich habe … gearbeitet.* *Früher war ich …*",
    "scene": {
     "view": "task",
@@ -2190,11 +2009,166 @@
       "punct": ".",
       "plain": "Gestern hatte ich keine Zeit.",
       "ru": "Вчера у меня не было времени.",
-      "audio": "audio/9b9505b492c8.m4a"
+      "audio": "audio/f460d7baac55.m4a"
      }
     ],
     "task": "vorstellen",
     "reveal": 8
+   }
+  },
+  {
+   "id": "formular-1",
+   "step": "formular",
+   "stepTitle": "Анкета: опыт не заменяет профессию",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Для первой части письма перенесите сведения в пять незаполненных полей анкеты. *Beruf* требует названия профессии *Koch*, а не места работы или целого рассказа в Perfekt. Фамилия и город уже заполнены; допишите имя, возраст, страну, профессию и языки. Это отдельная практика точного переноса сведений, не заявление в настоящую организацию.",
+   "point": "*Beruf* — профессия; в поле достаточно *Koch*",
+   "scene": {
+    "view": "task",
+    "dialogue": "gespraech",
+    "words": "zeit",
+    "table": "beruf",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "gestern",
+         "text": "Gestern"
+        }
+       ],
+       [
+        {
+         "key": "hatt",
+         "text": "hatt+e"
+        }
+       ],
+       [
+        {
+         "key": "ich",
+         "text": "ich"
+        },
+        {
+         "key": "keine",
+         "text": "keine"
+        },
+        {
+         "key": "zeit",
+         "text": "Zeit"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Gestern hatte ich keine Zeit.",
+      "ru": "Вчера у меня не было времени.",
+      "audio": "audio/f460d7baac55.m4a"
+     }
+    ],
+    "task": "formular",
+    "reveal": 0
+   }
+  },
+  {
+   "id": "formular-2",
+   "step": "formular",
+   "stepTitle": "Анкета: опыт не заменяет профессию",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "*Koch.* *Fördeblick* — название места работы, *gearbeitet* — причастие «работал». Переносим в анкету нужную категорию сведений, а не первое знакомое слово. Остальные пять полей проверьте по тексту задания.",
+   "point": "Профессия — *Koch*, место работы — *Fördeblick*",
+   "question": "Что записать в поле Beruf: Koch, Fördeblick или gearbeitet?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "gespraech",
+    "words": "zeit",
+    "table": "beruf",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "gestern",
+         "text": "Gestern"
+        }
+       ],
+       [
+        {
+         "key": "hatt",
+         "text": "hatt+e"
+        }
+       ],
+       [
+        {
+         "key": "ich",
+         "text": "ich"
+        },
+        {
+         "key": "keine",
+         "text": "keine"
+        },
+        {
+         "key": "zeit",
+         "text": "Zeit"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Gestern hatte ich keine Zeit.",
+      "ru": "Вчера у меня не было времени.",
+      "audio": "audio/f460d7baac55.m4a"
+     }
+    ],
+    "task": "formular",
+    "reveal": 0
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "gespraech",
+    "words": "zeit",
+    "table": "beruf",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "gestern",
+         "text": "Gestern"
+        }
+       ],
+       [
+        {
+         "key": "hatt",
+         "text": "hatt+e"
+        }
+       ],
+       [
+        {
+         "key": "ich",
+         "text": "ich"
+        },
+        {
+         "key": "keine",
+         "text": "keine"
+        },
+        {
+         "key": "zeit",
+         "text": "Zeit"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Gestern hatte ich keine Zeit.",
+      "ru": "Вчера у меня не было времени.",
+      "audio": "audio/f460d7baac55.m4a"
+     }
+    ],
+    "task": "formular",
+    "reveal": 5,
+    "solved": true
    }
   }
  ],
@@ -2202,7 +2176,7 @@
   {
    "id": "arbeit-1",
    "type": "choice",
-   "q": "Anna ist ___ von Beruf.",
+   "q": "Dana ist ___ von Beruf.",
    "options": [
     "Arzt",
     "Ärztin",
@@ -2210,19 +2184,19 @@
    ],
    "answer": 1,
    "why": "Женщина — форма на *-in*; профессия — без артикля.",
-   "audio": "audio/4988f2d00968.m4a"
+   "audio": "audio/0001cac86140.m4a"
   },
   {
    "id": "arbeit-2",
    "type": "gap",
-   "q": "Marco ist Koch, und Maria ist auch ___.",
+   "q": "Mateo ist Koch, und Maria ist auch ___.",
    "answer": [
     "Köchin"
    ],
    "hint": "Koch",
-   "ru": "Марко повар, и Мария тоже.",
+   "ru": "Матео повар, и Мария тоже.",
    "why": "*Koch → Köchin*: окончание *-in* и умлаут.",
-   "audio": "audio/c7fdd1c14e77.m4a"
+   "audio": "audio/518645bb0f46.m4a"
   },
   {
    "id": "arbeit-3",
@@ -2235,7 +2209,7 @@
    ],
    "answer": 1,
    "why": "Женщины во множественном числе — *-innen* с двумя *n*.",
-   "audio": "audio/0ed0144d1552.m4a"
+   "audio": "audio/c03226efff2e.m4a"
   },
   {
    "id": "arbeit-4",
@@ -2248,18 +2222,18 @@
    ],
    "answer": 0,
    "why": "О профессии спрашивают с *sein*: *Was sind Sie von Beruf?*",
-   "audio": "audio/216f3ad8160e.m4a"
+   "audio": "audio/11ea747dff24.m4a"
   },
   {
    "id": "arbeit-5",
    "type": "gap",
-   "q": "Ich habe zehn Jahre in Rom ___.",
+   "q": "Ich habe sechs Jahre in Buenos Aires ___.",
    "answer": [
     "gearbeitet"
    ],
    "hint": "arbeiten",
    "why": "Основа на *-t*, поэтому перед окончанием *e*: *gearbeit+et*.",
-   "audio": "audio/896f2ee0333c.m4a"
+   "audio": "audio/5e9e73139ed9.m4a"
   },
   {
    "id": "arbeit-6",
@@ -2269,7 +2243,7 @@
     "gemacht"
    ],
    "hint": "machen",
-   "audio": "audio/aeadb895dac8.m4a"
+   "audio": "audio/e60f4c34cef3.m4a"
   },
   {
    "id": "arbeit-7",
@@ -2280,7 +2254,7 @@
    ],
    "hint": "haben",
    "ru": "Мы много выучили на курсе.",
-   "audio": "audio/b1758568c595.m4a"
+   "audio": "audio/fd60e0a262d2.m4a"
   },
   {
    "id": "arbeit-8",
@@ -2291,7 +2265,7 @@
    ],
    "hint": "lesen",
    "why": "*lesen* — сильный глагол: *ge-…-en*.",
-   "audio": "audio/d10b67c0702b.m4a"
+   "audio": "audio/ea267a632499.m4a"
   },
   {
    "id": "arbeit-9",
@@ -2303,7 +2277,7 @@
    ],
    "hint": "schreiben",
    "why": "Вопрос да/нет: *hast* первым, причастие *geschrieben* — в конце.",
-   "audio": "audio/2731e7750a9c.m4a"
+   "audio": "audio/dd1a28ec6ce2.m4a"
   },
   {
    "id": "arbeit-10",
@@ -2316,30 +2290,30 @@
    ],
    "answer": 1,
    "why": "*finden → gefunden*: окончание *-en* и другая гласная.",
-   "audio": "audio/1b8dc0cefe61.m4a"
+   "audio": "audio/b54b086669d5.m4a"
   },
   {
    "id": "arbeit-11",
    "type": "order",
-   "ru": "В Риме я работал десять лет.",
-   "de": "In Rom habe ich zehn Jahre gearbeitet.",
+   "ru": "В Буэнос-Айресе я работал шесть лет.",
+   "de": "In Buenos Aires habe ich sechs Jahre gearbeitet.",
    "also": [
-    "Ich habe in Rom zehn Jahre gearbeitet.",
-    "Ich habe zehn Jahre in Rom gearbeitet.",
-    "Zehn Jahre habe ich in Rom gearbeitet."
+    "Ich habe in Buenos Aires sechs Jahre gearbeitet.",
+    "Ich habe sechs Jahre in Buenos Aires gearbeitet.",
+    "Zehn Jahre habe ich in Buenos Aires gearbeitet."
    ],
    "why": "*habe* — на втором месте, причастие — всегда в конце.",
-   "audio": "audio/98f1cd1c29ca.m4a"
+   "audio": "audio/a36c07c9fc4d.m4a"
   },
   {
    "id": "arbeit-12",
    "type": "gap",
-   "q": "Früher ___ ich Koch in Rom.",
+   "q": "Früher ___ ich Koch in Buenos Aires.",
    "answer": [
     "war"
    ],
    "hint": "sein",
-   "audio": "audio/b94fd40f46a6.m4a"
+   "audio": "audio/790f9f9c7719.m4a"
   },
   {
    "id": "arbeit-13",
@@ -2350,7 +2324,7 @@
    ],
    "hint": "haben",
    "why": "*wir hatt+en*: у *wir* окончание *-en*, как в настоящем времени.",
-   "audio": "audio/8bb46eedcbd7.m4a"
+   "audio": "audio/c45a961121e4.m4a"
   },
   {
    "id": "arbeit-14",
@@ -2363,14 +2337,14 @@
    ],
    "answer": 0,
    "why": "«Ты был?» — *Warst du …?* Со словом *gestern* нужно прошедшее время.",
-   "audio": "audio/6de58cb0b935.m4a"
+   "audio": "audio/7b2eb4f2348b.m4a"
   },
   {
    "id": "arbeit-15",
    "type": "order",
    "ru": "Что ты делал вчера?",
    "de": "Was hast du gestern gemacht?",
-   "audio": "audio/aeadb895dac8.m4a"
+   "audio": "audio/e60f4c34cef3.m4a"
   },
   {
    "id": "arbeit-16",
@@ -2380,31 +2354,329 @@
    "also": [
     "Ich hatte gestern viel Arbeit."
    ],
-   "audio": "audio/ed94a75ec95e.m4a"
+   "audio": "audio/048b813d5077.m4a"
   }
  ],
+ "case": {
+  "title": "Schon gemacht oder noch nicht?",
+  "ru": "Уже сделано или ещё нет?",
+  "intro": "Перед праздником команда сверяет отчёт с исходными сообщениями. В копии появились готовый торт и неправильное время. Проверьте факты, а не уверенный тон записи.",
+  "people": {
+   "M": {
+    "name": "Mateo",
+    "voice": "Reed"
+   }
+  },
+  "steps": [
+   {
+    "read": "В копии место прежней работы превратилось в нынешний адрес.",
+    "evidence": [
+     {
+      "kind": "quote",
+      "who": "M",
+      "de": "Ich habe sechs Jahre in Buenos Aires gearbeitet. Jetzt arbeite ich in Kiel.",
+      "ru": "Я работал в Буэнос-Айресе шесть лет. Сейчас я работаю в Киле.",
+      "audio": "audio/3975a32a7abc.m4a"
+     }
+    ],
+    "question": "Где Матео работает сейчас?",
+    "options": [
+     "В Буэнос-Айресе",
+     "В Киле",
+     "Место не названо"
+    ],
+    "answer": 1,
+    "right": "*Jetzt arbeite ich in Kiel* — настоящее. Perfekt относится к прежнему опыту.",
+    "wrong": [
+     "Это прошлое место работы.",
+     null,
+     "Настоящее место названо прямо."
+    ]
+   },
+   {
+    "read": "Сверьте готовность еды: наличие причастия ещё не отменяет отрицание.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Die Suppe habe ich gekocht. Den Kuchen habe ich noch nicht gemacht.",
+      "ru": "Суп я сварил. Торт я ещё не сделал."
+     }
+    ],
+    "question": "Что уже готово?",
+    "options": [
+     "Суп и торт",
+     "Только торт",
+     "Только суп"
+    ],
+    "answer": 2,
+    "right": "У торта стоит *noch nicht*. В отчёте отмечаем только суп.",
+    "wrong": [
+     "Торт ещё не сделан.",
+     "Это переворачивает смысл.",
+     null
+    ]
+   },
+   {
+    "read": "Старая копия письма потеряла просьбу прийти раньше.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Die Arbeit beginnt um 17 Uhr. Komm bitte am Dienstag schon um 16 Uhr.",
+      "ru": "Работа начинается в 17:00. Во вторник, пожалуйста, приди уже в 16:00."
+     }
+    ],
+    "question": "Во сколько просили прийти в тот вторник?",
+    "options": [
+     "16:00",
+     "17:00",
+     "23:00"
+    ],
+    "answer": 0,
+    "right": "Отдельная просьба на тот день — 16:00. Обычное начало не заменяет её.",
+    "wrong": [
+     null,
+     "Это обычное начало, но не специальная просьба.",
+     "Такое время прихода не указано."
+    ]
+   },
+   {
+    "read": "Последняя строка будто объясняет отсутствие человека отсутствием времени. Исходник другой.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Gestern war ich im Club. Ich hatte Zeit. Ich habe den Plan gelesen.",
+      "ru": "Вчера я был в клубе. У меня было время. Я прочитал план."
+     }
+    ],
+    "question": "Какие сведения подтверждены?",
+    "options": [
+     "Его не было в клубе",
+     "Он был в клубе и прочитал план",
+     "У него не было времени"
+    ],
+    "answer": 1,
+    "right": "*War* сообщает о присутствии, *hatte Zeit* — о времени, *habe gelesen* — о действии. Это три согласованных факта.",
+    "wrong": [
+     "В исходнике утверждается присутствие.",
+     null,
+     "Отрицания перед *Zeit* нет."
+    ]
+   }
+  ],
+  "ending": "В папке разделены прошлое и настоящее, готовое и незавершённое, обычная смена и отдельная просьба. Теперь команда знает, какие пункты плана можно подтвердить источниками. На Kieler Woche предстоит последняя сверка поездки и объяснение происхождения неверных копий."
+ },
+ "adventure": {
+  "kind": "sequence",
+  "title": "Соберите отчёт команды",
+  "intro": "В папке рядом лежат старые документы о работе Матео и сегодняшний отчёт клуба. Восстановите опыт, сделанные дела и точное время из письма. Собеседование — воспоминание, работа Матео в Fördeblick продолжается.",
+  "ending": "Опыт героев, выполненные задачи и время из старого письма восстановлены. В отчёте отмечено только то, что действительно сделано. Осталась поездка и финальная сверка плана Kieler Woche.",
+  "challenges": [
+   {
+    "id": "experience",
+    "kind": "match",
+    "title": "Восстановите карточки опыта",
+    "intro": "Сопоставьте героев с подтверждённым опытом. Национальность не подсказывает профессию — ответ есть в разговоре.",
+    "success": "Дана работала врачом в Казахстане, Матео — поваром в Буэнос-Айресе шесть лет.",
+    "wrong": "Сверьте *Ich bin Ärztin* и рассказ Матео о шести годах готовки.",
+    "quotes": [
+     {
+      "de": "Dana, was bist du eigentlich von Beruf?",
+      "audio": "audio/b319d8c8b692.m4a",
+      "name": "Mateo"
+     },
+     {
+      "de": "Ich bin Ärztin. In Kasachstan habe ich in einem Krankenhaus gearbeitet.",
+      "audio": "audio/51ccb46348df.m4a",
+      "name": "Dana"
+     },
+     {
+      "de": "Ach so! Dann bist du ja wirklich „Frau Doktor“!",
+      "audio": "audio/e35526878efb.m4a",
+      "name": "Mateo"
+     },
+     {
+      "de": "Genau. Aber ich hatte immer viel Stress. Und du? Du warst Koch, oder?",
+      "audio": "audio/e8e657939967.m4a",
+      "name": "Dana"
+     },
+     {
+      "de": "Ja, sechs Jahre. Ich habe in Buenos Aires Fisch und Pasta gekocht.",
+      "audio": "audio/c205b2c8b576.m4a",
+      "name": "Mateo"
+     }
+    ],
+    "options": [
+     {
+      "id": "doctor",
+      "label": "Ärztin · Krankenhaus · Kasachstan"
+     },
+     {
+      "id": "cook",
+      "label": "Koch · Buenos Aires · sechs Jahre"
+     },
+     {
+      "id": "teacher",
+      "label": "Lehrerin · Deutschland"
+     }
+    ],
+    "slots": [
+     {
+      "id": "dana",
+      "label": "Dana · früher",
+      "answer": "doctor"
+     },
+     {
+      "id": "mateo",
+      "label": "Mateo · früher",
+      "answer": "cook"
+     }
+    ]
+   },
+   {
+    "id": "completed",
+    "kind": "pack",
+    "title": "Отметьте только сделанное",
+    "intro": "Отчёт нужен для подготовки угощения. Выберите все завершённые действия, не включая то, что ещё не готово.",
+    "success": "Суп сварен, письмо написано, объявление прочитано. Торт пока не сделан: *noch nicht gemacht*.",
+    "wrong": "В последней строке торт отрицается словами *noch nicht*. Остальные три действия завершены.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Gestern habe ich Suppe gekocht. Dana hat eine E-Mail geschrieben. Elif hat die Anzeige gelesen. Den Kuchen habe ich noch nicht gemacht.",
+      "name": "Mateo"
+     }
+    ],
+    "options": [
+     {
+      "id": "soup",
+      "label": "Suppe · gekocht"
+     },
+     {
+      "id": "email",
+      "label": "E-Mail · geschrieben"
+     },
+     {
+      "id": "ad",
+      "label": "Anzeige · gelesen"
+     },
+     {
+      "id": "cake",
+      "label": "Kuchen · gemacht"
+     }
+    ],
+    "answer": [
+     "soup",
+     "email",
+     "ad"
+    ]
+   },
+   {
+    "id": "report-order",
+    "kind": "order",
+    "title": "Скажите, что вы сделали вчера",
+    "intro": "Соберите «Вчера я учил немецкий». Начните со слова Gestern и удержите рамку Perfekt.",
+    "success": "*Gestern habe ich Deutsch gelernt.* Время впереди, *habe* вторым, *gelernt* в конце.",
+    "wrong": "После *Gestern* нужен глагол *habe*. Причастие *gelernt* завершает предложение.",
+    "tokens": [
+     "Gestern",
+     "habe",
+     "ich Deutsch",
+     "gelernt."
+    ],
+    "label": "Короткий отчёт"
+   },
+   {
+    "id": "first-day",
+    "kind": "clock",
+    "title": "Когда просили прийти в первый вторник?",
+    "intro": "Это старое письмо о начале работы. Обычная смена начинается в 17:00, но в тот день была отдельная просьба. Поставьте нужное время.",
+    "success": "В тот вторник просили прийти в 16:00, чтобы познакомиться с коллегами. Обычная смена в 17:00 — другой факт.",
+    "wrong": "В письме *am Dienstag schon um 16 Uhr*, на час раньше обычной смены.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Hallo Mateo,\nder Probetag am Samstag war super! Die Gäste haben alles gegessen. Und Herr Wagner sagt: Die Stelle ist für dich!\nDu arbeitest von Dienstag bis Samstag, immer von 17 bis 23 Uhr. Am Sonntag und am Montag hast du frei.\nKomm bitte am Dienstag schon um 16 Uhr. Dann lernst du die Kollegen kennen.\nBis Dienstag!\nJulia",
+      "name": "Julia Becker"
+     }
+    ],
+    "answer": "16:00",
+    "initial": "17:00",
+    "minuteStep": 5
+   },
+   {
+    "id": "past-meaning",
+    "kind": "match",
+    "title": "Сохраните разницу между была и было",
+    "intro": "Для итоговой карточки выберите смысл форм, а не только знакомые слова.",
+    "success": "*War* связывает с профессией, *hatte* сообщает о наличии, *habe … gelernt* называет действие в прошлом.",
+    "wrong": "Проверьте смысл целой рамки: *habe gelernt* — учила, а не «имею немецкий».",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Früher war ich Ärztin in Almaty. Ich hatte viel Arbeit. Gestern habe ich Deutsch gelernt. Ich hatte Zeit für den Kurs.",
+      "name": "Dana"
+     }
+    ],
+    "options": [
+     {
+      "id": "was",
+      "label": "Я была врачом."
+     },
+     {
+      "id": "had",
+      "label": "У меня было много работы."
+     },
+     {
+      "id": "learned",
+      "label": "Я учила немецкий."
+     },
+     {
+      "id": "future",
+      "label": "Я буду учить немецкий."
+     }
+    ],
+    "slots": [
+     {
+      "id": "profession",
+      "label": "Ich war Ärztin.",
+      "answer": "was"
+     },
+     {
+      "id": "work",
+      "label": "Ich hatte viel Arbeit.",
+      "answer": "had"
+     },
+     {
+      "id": "learning",
+      "label": "Ich habe Deutsch gelernt.",
+      "answer": "learned"
+     }
+    ]
+   }
+  ]
+ },
  "spy": [
   {
-   "de": "Ich arbeite in Rom.",
-   "wrong": "Ich arbeiten in Rom.",
+   "de": "Ich arbeite in Buenos Aires.",
+   "wrong": "Ich arbeiten in Buenos Aires.",
    "why": "Окончание глагола не подходит к подлежащему: правильно *arbeite*.",
    "auto": true
   },
   {
-   "de": "Ich habe in Rom gearbeitet.",
-   "wrong": "Ich haben in Rom gearbeitet.",
+   "de": "Ich habe in Buenos Aires gearbeitet.",
+   "wrong": "Ich haben in Buenos Aires gearbeitet.",
    "why": "Окончание глагола не подходит к подлежащему: правильно *habe*.",
    "auto": true
   },
   {
-   "de": "In Rom habe ich gearbeitet.",
-   "wrong": "In Rom ich habe gearbeitet.",
-   "why": "Глагол стоит на второй позиции: после *In Rom* сразу идёт *habe*, а *ich* — за ним.",
+   "de": "In Buenos Aires habe ich gearbeitet.",
+   "wrong": "In Buenos Aires ich habe gearbeitet.",
+   "why": "Глагол стоит на второй позиции: после *In Buenos Aires* сразу идёт *habe*, а *ich* — за ним.",
    "auto": true
   },
   {
-   "de": "In Rom habe ich gearbeitet.",
-   "wrong": "In Rom haben ich gearbeitet.",
+   "de": "In Buenos Aires habe ich gearbeitet.",
+   "wrong": "In Buenos Aires haben ich gearbeitet.",
    "why": "Окончание глагола не подходит к подлежащему: правильно *habe*.",
    "auto": true
   },

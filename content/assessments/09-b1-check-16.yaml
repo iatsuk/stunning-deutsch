@@ -1,0 +1,184 @@
+id: b1-check-16
+level: b1
+mode: review
+title: "После уроков 13–16: вечер в общественном саду"
+intro: Новая группа меняет место встречи и распределяет помощь. Проверьте действие, его время и
+  реальную необходимость задачи. Условия вымышлены.
+sections:
+  - id: check
+    title: Изменения, помощники и посильные задачи
+    taskIds:
+      - read
+      - listen
+      - gaps
+      - write
+      - talk
+tasks:
+  read:
+    kind: worksheet
+    part: b1-lesen-2
+    format: article
+    title: Ein Abend für den Gemeinschaftsgarten
+    text: Der Informationsabend zum Gemeinschaftsgarten findet jetzt im kleinen Nachbarschaftsraum
+      statt. Der Treffpunkt wurde gestern wegen des Regens geändert. Das Gartenprojekt selbst
+      wurde nicht abgesagt. Die Schilder für die Gäste werden heute gedruckt. Jonas ist der
+      Kollege, mit dem Nora den Aufbau plant. Er bringt die fertigen Schilder erst nach dem
+      Druck mit. Karin braucht keine zusätzlichen Kisten zu kaufen, weil zehn Leihkisten schon
+      im Raum stehen. Sie prüft nur die Liste. Der Raum muss um 19 Uhr leer sein; den Schlüssel
+      gibt Jonas bis 19:15 zurück. Der Eingang darf nicht mit Kisten blockiert werden.
+    questions:
+      - prompt: Was wurde geändert?
+        options:
+          - Der Treffpunkt
+          - Das ganze Gartenprojekt
+          - Die Zahl aller Nachbarn
+        answers:
+          - Der Treffpunkt
+      - prompt: Sind die Schilder bereits im Raum?
+        options:
+          - Sie wurden abgesagt.
+          - Nein, sie werden erst gedruckt und gebracht.
+          - Ja, seit gestern.
+        answers:
+          - Nein, sie werden erst gedruckt und gebracht.
+      - prompt: Mit wem plant Nora den Aufbau?
+        options:
+          - Mit dem Drucker
+          - Mit keinem Helfer
+          - Mit Jonas
+        answers:
+          - Mit Jonas
+      - prompt: Warum braucht Karin keine Kisten zu kaufen?
+        options:
+          - Zehn Leihkisten sind vorhanden.
+          - Kisten sind generell verboten.
+          - Sie darf nichts tun.
+        answers:
+          - Zehn Leihkisten sind vorhanden.
+      - prompt: Kann man den Raum bis 19:15 benutzen?
+        options:
+          - Nur mit neuen Kisten.
+          - Nein, nur der Schlüssel hat diese Frist.
+          - Ja, immer.
+        answers:
+          - Nein, nur der Schlüssel hat diese Frist.
+  listen:
+    kind: worksheet
+    part: b1-hoeren-3
+    format: article
+    title: Zwei Ergänzungen zum neuen Ort
+    recordings:
+      - voice: Shelley
+        text: Der Seiteneingang wird ab halb sechs geöffnet. Sie brauchen nicht früher zu kommen. Der
+          Abend beginnt um sechs. Bitte stellen Sie keine Kisten vor den Eingang.
+      - voice: Eddy
+        text: Hier ist Jonas. Die Schilder wurden gerade fertig gedruckt. Ich habe sie noch nicht
+          abgeholt. Nach der Abholung melde ich mich noch einmal, damit ihr den tatsächlichen
+          Stand kennt.
+    questions:
+      - prompt: Die Helfer müssen schon um 17 Uhr kommen.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Jonas hat die Schilder bereits abgeholt.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+  gaps:
+    kind: worksheet
+    part: b1-sprachbausteine-1
+    format: cloze
+    title: Eine kurze Rückmeldung · Ausschnitt
+    text: Der Treffpunkt [[1]] gestern geändert. Die Gäste, mit [[2]] wir sprechen, bekommen die
+      neue Adresse. Ich helfe dem [[3]] beim Aufbau. Du brauchst keine Kisten [[4]] kaufen. Der
+      Eingang darf nicht [[5]] werden.
+    questions:
+      - prompt: Lücke 1
+        options:
+          - wurden
+          - wurde
+          - wird
+        answers:
+          - wurde
+      - prompt: Lücke 2
+        options:
+          - den
+          - die
+          - denen
+        answers:
+          - denen
+      - prompt: Lücke 3
+        options:
+          - Kollegen
+          - Kollege
+          - Kollegin
+        answers:
+          - Kollegen
+      - prompt: Lücke 4
+        options:
+          - damit
+          - zu
+          - um
+        answers:
+          - zu
+      - prompt: Lücke 5
+        options:
+          - blockieren
+          - blockierte
+          - blockiert
+        answers:
+          - blockiert
+  write:
+    kind: message
+    part: b1-schreiben-1
+    title: Einen Helfer über die Änderungen informieren
+    text: Schreiben Sie einem Helfer, der noch den alten Treffpunkt kennt. Der Abend beginnt 18
+      Uhr; Zugang 17:30. Raum leer 19:00, Schlüssel 19:15.
+    points:
+      - Den geänderten Ort und den Grund nennen
+      - Eine bereits geklärte und eine noch offene Aufgabe unterscheiden
+      - Erklären, was nicht zusätzlich gekauft werden muss
+      - Eine konkrete Hilfe vereinbaren und nach einer Rückmeldung fragen
+    situation: Behandeln Sie alle vier Punkte. Schreiben Sie einen zusammenhängenden Brief mit
+      Anrede und Gruß. Die Antwort wird nicht automatisch bewertet.
+  talk:
+    kind: card
+    part: b1-sprechen-3
+    title: Aufbau ohne doppelte Arbeit
+    situation: Verteilen Sie Schilder, Kisten, Begrüßung und Schlüssel. Beachten Sie die
+      verschiedenen Fristen und bestätigen Sie die Aufgaben gegenseitig.
+    word: Vorschlag · Rückfrage · Reaktion · Einigung
+    roles:
+      - title: Person A
+        text: Sie können die Gäste begrüßen und die Liste prüfen. Die Kisten sind bereits da. Sie haben
+          nur bis 19 Uhr Zeit.
+      - title: Person B
+        text: Sie übernehmen die Abholung der Schilder. Jonas kann den Schlüssel zurückbringen. Klären
+          Sie, wer den neuen Treffpunkt an die Gäste schickt.
+review:
+  - level: b1
+    topic: b1-service
+    label: Passiv и границы изменения
+    taskIds:
+      - read
+      - gaps
+  - level: b1
+    topic: b1-stoerungen
+    label: Выполненное действие и будущая задача
+    taskIds:
+      - read
+      - listen
+      - gaps
+  - level: b1
+    topic: b1-arbeit
+    label: Контактное лицо и слабое склонение
+    taskIds:
+      - read
+      - gaps
+  - level: b1
+    topic: b1-alltag
+    label: Не нужно, нельзя и распределение задач

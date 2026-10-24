@@ -4,7 +4,7 @@
  "order": 9,
  "title": "Wie komme ich zum Bahnhof?",
  "ru": "Город и транспорт",
- "lede": "Анна едет к подруге в Дрезден: спрашивает у прохожего дорогу к вокзалу, слушает объявление на перроне, а вечером по телефону рассказывает Марко, когда будет дома. Учимся говорить, куда и на чём вы едете, вежливо объяснять дорогу и разбираемся с предлогами, после которых всегда дательный падеж.",
+ "lede": "Гости готовятся идти к клубу, а Дана учится разбираться в дороге: спрашивает путь к вокзалу перед поездкой в Любек, слушает смену пути и уточняет, как добраться к Матео в Holtenau. В игре нужно выполнить инструкции по учебной схеме, услышать окончательное решение и передать гостям точный маршрут.",
  "goals": [
   "Спросить дорогу и понять ответ: прямо, налево, у светофора",
   "Сказать, на чём, куда и откуда вы едете",
@@ -49,14 +49,14 @@
   "weg": {
    "title": "Wie komme ich zum Hauptbahnhof?",
    "ru": "Как пройти к вокзалу?",
-   "place": "Augustusplatz, Leipzig",
+   "place": "Kiel · условная учебная схема, не реальный маршрут",
    "people": {
     "A": {
-     "name": "Anna",
+     "name": "Dana",
      "voice": "Anna"
     },
     "P": {
-     "name": "Passant",
+     "name": "Kieler Passant",
      "voice": "Grandpa"
     }
    },
@@ -65,120 +65,120 @@
      "who": "A",
      "de": "Entschuldigung! Wie komme ich zum Hauptbahnhof?",
      "ru": "Извините! Как мне пройти к главному вокзалу?",
-     "audio": "audio/57e2e5341cf3.m4a"
+     "audio": "audio/90ccbf8ef1aa.m4a"
     },
     {
      "who": "P",
      "de": "Zum Hauptbahnhof? Das ist nicht weit. Gehen Sie hier geradeaus.",
      "ru": "К главному вокзалу? Это недалеко. Идите здесь прямо.",
-     "audio": "audio/4b7c9cdd48cf.m4a"
+     "audio": "audio/cce37c8a7813.m4a"
     },
     {
      "who": "A",
      "de": "Geradeaus – und dann?",
      "ru": "Прямо — а потом?",
-     "audio": "audio/ffc0da7009ed.m4a"
+     "audio": "audio/22771911761c.m4a"
     },
     {
      "who": "P",
      "de": "Dann gehen Sie an der Ampel links. Da sehen Sie schon den Bahnhof.",
      "ru": "Потом у светофора налево. Там вы уже увидите вокзал.",
-     "audio": "audio/b9194b960140.m4a"
+     "audio": "audio/443429b6b90e.m4a"
     },
     {
      "who": "A",
      "de": "Kann ich auch mit dem Bus fahren?",
      "ru": "А можно поехать на автобусе?",
-     "audio": "audio/e681c1ab474f.m4a"
+     "audio": "audio/9449b964883c.m4a"
     },
     {
      "who": "P",
-     "de": "Mit dem Bus? Nehmen Sie lieber die Straßenbahn, die Linie 16. Aber zu Fuß sind es nur zehn Minuten.",
-     "ru": "На автобусе? Лучше садитесь на трамвай, на 16-й. Но пешком всего десять минут.",
-     "audio": "audio/9f5ce03c3b19.m4a"
+     "de": "Mit dem Bus geht es auch. Aber zu Fuß sind es nur zehn Minuten.",
+     "ru": "На автобусе тоже можно. Но пешком всего десять минут.",
+     "audio": "audio/e09582983abb.m4a"
     },
     {
      "who": "A",
      "de": "Dann gehe ich zu Fuß. Vielen Dank!",
      "ru": "Тогда я пойду пешком. Большое спасибо!",
-     "audio": "audio/302e6704a025.m4a"
+     "audio": "audio/75760574fc2a.m4a"
     },
     {
      "who": "P",
      "de": "Gern geschehen!",
      "ru": "Не за что!",
-     "audio": "audio/2c376379afa5.m4a"
+     "audio": "audio/b605b74164a2.m4a"
     }
    ]
   },
   "abends": {
    "title": "Bist du schon zu Hause?",
    "ru": "Ты уже дома?",
-   "place": "Telefon",
+   "place": "Телефон · учебные времена и путь, не расписание",
    "people": {
     "M": {
-     "name": "Marco",
+     "name": "Mateo",
      "voice": "Reed"
     },
     "A": {
-     "name": "Anna",
+     "name": "Dana",
      "voice": "Anna"
     }
    },
    "lines": [
     {
      "who": "M",
-     "de": "Hallo, Anna! Bist du schon zu Hause?",
-     "ru": "Привет, Анна! Ты уже дома?",
-     "audio": "audio/0a2bd0355e1b.m4a"
+     "de": "Hallo, Dana! Bist du schon zu Hause?",
+     "ru": "Привет, Дана! Ты уже дома?",
+     "audio": "audio/00cf3544e367.m4a"
     },
     {
      "who": "A",
-     "de": "Nein, ich bin noch in Dresden, bei Ewa.",
-     "ru": "Нет, я ещё в Дрездене, у Эвы.",
-     "audio": "audio/69a3c8324a16.m4a"
+     "de": "Nein, ich bin noch in Lübeck, bei Mira.",
+     "ru": "Нет, я ещё в Любеке, у Миры.",
+     "audio": "audio/af6c9c082058.m4a"
     },
     {
      "who": "M",
      "de": "Wann fährst du nach Hause?",
      "ru": "Когда ты поедешь домой?",
-     "audio": "audio/1a4a47f1449d.m4a"
+     "audio": "audio/e8ac2ddbed31.m4a"
     },
     {
      "who": "A",
      "de": "Mein Zug fährt um acht. Um zehn bin ich zu Hause.",
      "ru": "Мой поезд в восемь. В десять я буду дома.",
-     "audio": "audio/ba10dda2da70.m4a"
+     "audio": "audio/9b5fc6c649ee.m4a"
     },
     {
      "who": "M",
-     "de": "Morgen ist meine Party. Kommst du?",
-     "ru": "Завтра у меня вечеринка. Придёшь?",
-     "audio": "audio/a24cab70f1cb.m4a"
+     "de": "Morgen sind die Gäste bei mir in Holtenau. Kommst du auch?",
+     "ru": "Завтра гости будут у меня в Holtenau. Ты тоже придёшь?",
+     "audio": "audio/066a5ba9f703.m4a"
     },
     {
      "who": "A",
-     "de": "Ja, gern! Wie komme ich zur Lindenstraße?",
-     "ru": "Да, с удовольствием! Как мне добраться до Линденштрассе?",
-     "audio": "audio/fa7ab4ce3dad.m4a"
+     "de": "Ja, gern! Wie komme ich zu dir?",
+     "ru": "Да, с удовольствием! Как мне добраться к тебе?",
+     "audio": "audio/6ce0b1516544.m4a"
     },
     {
      "who": "M",
-     "de": "Du fährst mit der Linie 4 und steigst in Gohlis aus. Von der Haltestelle sind es nur zwei Minuten.",
-     "ru": "Едешь на четвёрке и выходишь в Голисе. От остановки всего две минуты.",
-     "audio": "audio/04589d59edd7.m4a"
+     "de": "Du fährst mit dem Bus nach Holtenau. Von der Haltestelle sind es nur zwei Minuten.",
+     "ru": "Едешь на автобусе в Holtenau. От остановки всего две минуты.",
+     "audio": "audio/254e9d4057d2.m4a"
     },
     {
      "who": "A",
      "de": "Super! Dann bis morgen!",
      "ru": "Супер! Тогда до завтра!",
-     "audio": "audio/7c0a7878d28c.m4a"
+     "audio": "audio/3f9404b672dc.m4a"
     },
     {
      "who": "M",
      "de": "Bis morgen! Gute Fahrt nach Hause!",
      "ru": "До завтра! Хорошей дороги домой!",
-     "audio": "audio/ffac0461cfab.m4a"
+     "audio": "audio/f209e4ba9728.m4a"
     }
    ]
   },
@@ -187,44 +187,44 @@
    "ru": "Где встретимся?",
    "people": {
     "L": {
-     "name": "Lisa",
-     "voice": "Sandy"
+     "name": "Elif",
+     "voice": "Flo"
     },
     "T": {
-     "name": "Tom",
-     "voice": "Eddy"
+     "name": "Hauke",
+     "voice": "Rocko"
     }
    },
    "lines": [
     {
      "who": "L",
-     "de": "Hallo, Tom! Wo treffen wir uns morgen? Am Bahnhof?",
-     "ru": "Привет, Том! Где встретимся завтра? На вокзале?",
-     "audio": "audio/81445b9a8a3a.m4a"
+     "de": "Hallo, Hauke! Wo treffen wir uns morgen? Am Bahnhof?",
+     "ru": "Привет, Хауке! Где мы встретимся завтра? У вокзала?",
+     "audio": "audio/b2e974b7272e.m4a"
     },
     {
      "who": "T",
      "de": "Am Bahnhof ist es so voll. Lieber vor dem Kino.",
      "ru": "На вокзале так людно. Лучше перед кинотеатром.",
-     "audio": "audio/e97612d2027f.m4a"
+     "audio": "audio/fa85a7ab9cf0.m4a"
     },
     {
      "who": "L",
      "de": "Vor dem Kino? Gut. Und wann?",
      "ru": "Перед кинотеатром? Хорошо. А когда?",
-     "audio": "audio/c806295b38ef.m4a"
+     "audio": "audio/8fe63a6c772e.m4a"
     },
     {
      "who": "T",
      "de": "Um halb sieben. Der Film fängt um sieben an.",
      "ru": "В половине седьмого. Фильм начинается в семь.",
-     "audio": "audio/62f0d5f8d580.m4a"
+     "audio": "audio/1e5423ca3e9c.m4a"
     },
     {
      "who": "L",
      "de": "Super. Ich komme mit dem Fahrrad. Bis morgen!",
      "ru": "Супер. Я приеду на велосипеде. До завтра!",
-     "audio": "audio/5b1c9a427ac7.m4a"
+     "audio": "audio/0b393fec543b.m4a"
     }
    ]
   }
@@ -240,22 +240,22 @@
      "gender": "m",
      "plural": "Bahnhöfe",
      "note": "der Hauptbahnhof (Hbf) — главный вокзал",
-     "audio": "audio/310ea0f15dab.m4a"
+     "audio": "audio/b9e1a0624846.m4a"
     },
     {
      "de": "die Haltestelle",
      "ru": "остановка",
      "gender": "f",
      "plural": "Haltestellen",
-     "audio": "audio/2f6bc0b40dd4.m4a"
+     "audio": "audio/05f685b1a1ab.m4a"
     },
     {
      "de": "der Platz",
      "ru": "площадь",
      "gender": "m",
      "plural": "Plätze",
-     "note": "der Augustusplatz",
-     "audio": "audio/31ba01470ea8.m4a"
+     "note": "der Rathausplatz",
+     "audio": "audio/0e0e5149d6fb.m4a"
     },
     {
      "de": "die Straße",
@@ -263,7 +263,7 @@
      "gender": "f",
      "plural": "Straßen",
      "note": "in der Straße — на улице",
-     "audio": "audio/956db22fa80d.m4a"
+     "audio": "audio/77fea95e1ac2.m4a"
     },
     {
      "de": "die Post",
@@ -272,7 +272,7 @@
      "plural": null,
      "noPlural": true,
      "note": "zur Post",
-     "audio": "audio/1d008a179e6c.m4a"
+     "audio": "audio/86c0d4a2b204.m4a"
     },
     {
      "de": "die Bank",
@@ -280,21 +280,21 @@
      "gender": "f",
      "plural": "Banken",
      "note": "die Bänke — скамейки",
-     "audio": "audio/70d00d99e54d.m4a"
+     "audio": "audio/c57c5676a342.m4a"
     },
     {
      "de": "die Apotheke",
      "ru": "аптека",
      "gender": "f",
      "plural": "Apotheken",
-     "audio": "audio/ea023d9367c2.m4a"
+     "audio": "audio/65b50c1a94a8.m4a"
     },
     {
      "de": "der Supermarkt",
      "ru": "супермаркет",
      "gender": "m",
      "plural": "Supermärkte",
-     "audio": "audio/e5e21a869e90.m4a"
+     "audio": "audio/09d7abfc3ad1.m4a"
     },
     {
      "de": "das Rathaus",
@@ -302,7 +302,7 @@
      "gender": "n",
      "plural": "Rathäuser",
      "note": "der Rat + das Haus",
-     "audio": "audio/56bc8e572452.m4a"
+     "audio": "audio/68006ae07fe5.m4a"
     },
     {
      "de": "das Bürgeramt",
@@ -310,7 +310,7 @@
      "gender": "n",
      "plural": "Bürgerämter",
      "note": "здесь регистрируют адрес",
-     "audio": "audio/319ec48b4b98.m4a"
+     "audio": "audio/106c21b901c3.m4a"
     },
     {
      "de": "das Krankenhaus",
@@ -318,7 +318,7 @@
      "gender": "n",
      "plural": "Krankenhäuser",
      "note": "krank + das Haus",
-     "audio": "audio/471e0932e88f.m4a"
+     "audio": "audio/6e4005ad510a.m4a"
     },
     {
      "de": "der Arzt",
@@ -326,7 +326,7 @@
      "gender": "m",
      "plural": "Ärzte",
      "note": "beim Arzt — у врача",
-     "audio": "audio/9ed37f4a526e.m4a"
+     "audio": "audio/df79b4cec3b2.m4a"
     }
    ]
   },
@@ -340,7 +340,7 @@
      "gender": "m",
      "plural": "Busse",
      "note": "mit dem Bus",
-     "audio": "audio/3c6348ab4d42.m4a"
+     "audio": "audio/5c26d1e4c622.m4a"
     },
     {
      "de": "die Straßenbahn",
@@ -348,22 +348,22 @@
      "gender": "f",
      "plural": "Straßenbahnen",
      "note": "mit der Straßenbahn",
-     "audio": "audio/2d6ca00889b5.m4a"
+     "audio": "audio/eb05aeb0ca77.m4a"
     },
     {
      "de": "die S-Bahn",
      "ru": "городская электричка",
      "gender": "f",
      "plural": "S-Bahnen",
-     "audio": "audio/25e3a5bd594c.m4a"
+     "audio": "audio/ccd7e23959d1.m4a"
     },
     {
      "de": "die U-Bahn",
      "ru": "метро",
      "gender": "f",
      "plural": "U-Bahnen",
-     "note": "в Лейпциге метро нет",
-     "audio": "audio/8daa208e46ad.m4a"
+     "note": "для поездок, например в Hamburg",
+     "audio": "audio/92b6769811e0.m4a"
     },
     {
      "de": "der Zug",
@@ -371,14 +371,14 @@
      "gender": "m",
      "plural": "Züge",
      "note": "mit dem Zug",
-     "audio": "audio/ce3401221cb9.m4a"
+     "audio": "audio/fbaed702927d.m4a"
     },
     {
      "de": "das Auto",
      "ru": "машина",
      "gender": "n",
      "plural": "Autos",
-     "audio": "audio/20d9a6fe6a2d.m4a"
+     "audio": "audio/2f86e8eda1a6.m4a"
     },
     {
      "de": "das Fahrrad",
@@ -386,14 +386,14 @@
      "gender": "n",
      "plural": "Fahrräder",
      "note": "mit dem Fahrrad",
-     "audio": "audio/4fac7cd28753.m4a"
+     "audio": "audio/94aad7c9fb24.m4a"
     },
     {
      "de": "das Taxi",
      "ru": "такси",
      "gender": "n",
      "plural": "Taxis",
-     "audio": "audio/6e3e4873a028.m4a"
+     "audio": "audio/0045325b657f.m4a"
     },
     {
      "de": "zu Fuß",
@@ -401,14 +401,14 @@
      "gender": null,
      "plural": null,
      "note": "без mit и без артикля",
-     "audio": "audio/2bfc98b7c104.m4a"
+     "audio": "audio/f861a1c52922.m4a"
     },
     {
      "de": "die Fahrkarte",
      "ru": "билет",
      "gender": "f",
      "plural": "Fahrkarten",
-     "audio": "audio/38ca470224e7.m4a"
+     "audio": "audio/298d90a0d52c.m4a"
     },
     {
      "de": "das Gleis",
@@ -416,7 +416,7 @@
      "gender": "n",
      "plural": "Gleise",
      "note": "von Gleis 5",
-     "audio": "audio/6f2b4fbced29.m4a"
+     "audio": "audio/cb93bec4ea43.m4a"
     },
     {
      "de": "die Linie",
@@ -424,7 +424,7 @@
      "gender": "f",
      "plural": "Linien",
      "note": "die Linie 16",
-     "audio": "audio/b8c63d370b2e.m4a"
+     "audio": "audio/d0d986b156ce.m4a"
     }
    ]
   },
@@ -437,7 +437,7 @@
      "ru": "Извините!",
      "gender": null,
      "plural": null,
-     "audio": "audio/3897b702eca8.m4a"
+     "audio": "audio/72b2197c4516.m4a"
     },
     {
      "de": "Wie komme ich zum …?",
@@ -445,7 +445,7 @@
      "gender": null,
      "plural": null,
      "note": "zum Bahnhof, zur Post",
-     "audio": "audio/72587f7ac045.m4a"
+     "audio": "audio/d15ba7790b45.m4a"
     },
     {
      "de": "Wohin?",
@@ -453,28 +453,28 @@
      "gender": null,
      "plural": null,
      "note": "Wohin fährst du?",
-     "audio": "audio/ad57c9683a5c.m4a"
+     "audio": "audio/0713a8a93dfb.m4a"
     },
     {
      "de": "geradeaus",
      "ru": "прямо",
      "gender": null,
      "plural": null,
-     "audio": "audio/89ab4154af34.m4a"
+     "audio": "audio/0f4798b742fd.m4a"
     },
     {
      "de": "links",
      "ru": "налево / слева",
      "gender": null,
      "plural": null,
-     "audio": "audio/dc499c4677d7.m4a"
+     "audio": "audio/47f64b062075.m4a"
     },
     {
      "de": "rechts",
      "ru": "направо / справа",
      "gender": null,
      "plural": null,
-     "audio": "audio/2b63b2015bbf.m4a"
+     "audio": "audio/2129b37cdf49.m4a"
     },
     {
      "de": "die Ampel",
@@ -482,7 +482,7 @@
      "gender": "f",
      "plural": "Ampeln",
      "note": "an der Ampel — у светофора",
-     "audio": "audio/16e2f1c1c5f9.m4a"
+     "audio": "audio/f387bf8734f6.m4a"
     },
     {
      "de": "weit",
@@ -490,7 +490,7 @@
      "gender": null,
      "plural": null,
      "note": "Ist das weit?",
-     "audio": "audio/e979969e1e9a.m4a"
+     "audio": "audio/653ee2228d2b.m4a"
     },
     {
      "de": "in der Nähe",
@@ -498,7 +498,7 @@
      "gender": null,
      "plural": null,
      "note": "Gibt es hier in der Nähe eine Apotheke?",
-     "audio": "audio/0ab9319ea21e.m4a"
+     "audio": "audio/c846a4998d73.m4a"
     },
     {
      "de": "einsteigen",
@@ -506,7 +506,7 @@
      "gender": null,
      "plural": null,
      "note": "Ich steige hier ein.",
-     "audio": "audio/c8f6f6d6b1d4.m4a"
+     "audio": "audio/36dd7a80c618.m4a"
     },
     {
      "de": "aussteigen",
@@ -514,7 +514,7 @@
      "gender": null,
      "plural": null,
      "note": "Ich steige am Bahnhof aus.",
-     "audio": "audio/a47897578179.m4a"
+     "audio": "audio/bf50ab118d55.m4a"
     },
     {
      "de": "umsteigen",
@@ -522,7 +522,7 @@
      "gender": null,
      "plural": null,
      "note": "Wo steige ich um?",
-     "audio": "audio/76c23a2b2c7d.m4a"
+     "audio": "audio/581464bf6ae5.m4a"
     }
    ]
   }
@@ -599,8 +599,8 @@
     ],
     [
      "nach",
-     "«в» — город, страна",
-     "nach Dresden"
+     "«в» — город, страна без артикля",
+     "nach Lübeck"
     ]
    ],
    "ruCols": [
@@ -630,7 +630,7 @@
     [
      "bei + d+em",
      "beim",
-     "Marco ist beim Arzt."
+     "Mateo ist beim Arzt."
     ],
     [
      "von + d+em",
@@ -640,7 +640,7 @@
     [
      "in + d+em",
      "im",
-     "Anna sitzt im Zug."
+     "Dana sitzt im Zug."
     ]
    ],
    "ruCols": [],
@@ -683,10 +683,10 @@
    "title": "Durchsage am Hauptbahnhof",
    "situation": "Sie sind am Hauptbahnhof. Sie hören den Text nur einmal.",
    "voice": "Shelley",
-   "text": "Achtung an Gleis 3! Der Regionalexpress nach Dresden, Abfahrt zehn Uhr fünfzehn, fährt heute von Gleis 5. Der Zug hat zehn Minuten Verspätung. Wir bitten um Entschuldigung.",
-   "statement": "Der Zug nach Dresden fährt heute von Gleis 3.",
+   "text": "Achtung an Gleis 3! Der Regionalexpress nach Lübeck, Abfahrt zehn Uhr fünfzehn, fährt heute von Gleis 5. Der Zug hat zehn Minuten Verspätung. Wir bitten um Entschuldigung.",
+   "statement": "Der Zug nach Lübeck fährt heute von Gleis 3.",
    "answer": false,
-   "audio": "audio/6bb9e1f33f71.m4a",
+   "audio": "audio/768e517287dc.m4a",
    "sample": []
   },
   "gespraech": {
@@ -695,7 +695,7 @@
    "title": "Hören, Teil 1",
    "situation": "Sie hören ein Gespräch zweimal. Was ist richtig? Kreuzen Sie an.",
    "dialogue": "treffpunkt",
-   "question": "Wo treffen sich Lisa und Tom?",
+   "question": "Wo treffen sich Elif und Hauke?",
    "options": [
     "Am Bahnhof.",
     "Vor dem Kino.",
@@ -704,29 +704,29 @@
    "answer": 1,
    "script": [
     {
-     "who": "Lisa",
-     "de": "Hallo, Tom! Wo treffen wir uns morgen? Am Bahnhof?",
-     "audio": "audio/81445b9a8a3a.m4a"
+     "who": "Elif",
+     "de": "Hallo, Hauke! Wo treffen wir uns morgen? Am Bahnhof?",
+     "audio": "audio/b2e974b7272e.m4a"
     },
     {
-     "who": "Tom",
+     "who": "Hauke",
      "de": "Am Bahnhof ist es so voll. Lieber vor dem Kino.",
-     "audio": "audio/e97612d2027f.m4a"
+     "audio": "audio/fa85a7ab9cf0.m4a"
     },
     {
-     "who": "Lisa",
+     "who": "Elif",
      "de": "Vor dem Kino? Gut. Und wann?",
-     "audio": "audio/c806295b38ef.m4a"
+     "audio": "audio/8fe63a6c772e.m4a"
     },
     {
-     "who": "Tom",
+     "who": "Hauke",
      "de": "Um halb sieben. Der Film fängt um sieben an.",
-     "audio": "audio/62f0d5f8d580.m4a"
+     "audio": "audio/1e5423ca3e9c.m4a"
     },
     {
-     "who": "Lisa",
+     "who": "Elif",
      "de": "Super. Ich komme mit dem Fahrrad. Bis morgen!",
-     "audio": "audio/5b1c9a427ac7.m4a"
+     "audio": "audio/0b393fec543b.m4a"
     }
    ],
    "sample": []
@@ -740,6 +740,14 @@
    "statement": "Sie haben eine Frage. Sie gehen zum Eingang B.",
    "answer": true,
    "sample": []
+  },
+  "clubweg": {
+   "kind": "message",
+   "part": "lesen-1",
+   "title": "Weg zum Club · Lernplan",
+   "from": "Hauke",
+   "text": "Vom Start gehen Sie geradeaus. An der Ampel gehen Sie rechts. Dann gehen Sie zum Hafen, nicht zum Bahnhof. Hier ist der Club.",
+   "sample": []
   }
  },
  "beats": [
@@ -749,7 +757,7 @@
    "stepTitle": "Как пройти к вокзалу?",
    "chapterIndex": 0,
    "indexInStep": 0,
-   "read": "Суббота. Анна едет в Дрезден к подруге Эве, но дорогу к вокзалу не знает. Самая полезная фраза в незнакомом городе: *Entschuldigung! Wie komme ich zum Hauptbahnhof?* — «извините, как пройти к главному вокзалу?». *zum* — это *zu dem*: после *zu* всегда дательный падеж. Прохожий отвечает вежливой просьбой: *Gehen Sie hier geradeaus.*",
+   "read": "Дана едет в Любек к подруге Мире. Перед поездкой она спрашивает путь к вокзалу: *Entschuldigung! Wie komme ich zum Hauptbahnhof?* Прохожий отвечает *Gehen Sie hier geradeaus*. Сцена использует условную схему: направление и десять минут нужны для языковой задачи, а не служат реальной навигацией по Килю. В игре похожие инструкции помогут гостям найти клуб.",
    "point": "*Entschuldigung! Wie komme ich zum …?* — как пройти к …?",
    "scene": {
     "view": "dialogue",
@@ -789,7 +797,7 @@
    "stepTitle": "Как пройти к вокзалу?",
    "chapterIndex": 0,
    "indexInStep": 2,
-   "read": "На чём ехать? Для транспорта немецкий берёт предлог *mit* — «с»: *mit dem Bus*, *mit der Straßenbahn*. Русское «на автобусе» дословно не переводится: *auf dem Bus* — это на крыше автобуса. «Пешком» — *zu Fuß*, без *mit* и без артикля. Анна выбирает именно его: десять минут пешком — быстрее, чем ждать трамвай.",
+   "read": "На чём ехать? *Mit dem Bus*, *mit dem Zug*, *mit dem Fahrrad*. «Пешком» — *zu Fuß*, без *mit* и артикля. Прохожий допускает автобус, но Дана принимает другое решение: *Dann gehe ich zu Fuß.* Для ответа важно выбранное действие, а не просто упомянутый вид транспорта. Слова о трамвае и метро пригодятся и в поездках за пределы Киля.",
    "point": "Транспорт — *mit*: *mit dem Bus*, *mit der Straßenbahn*; пешком — *zu Fuß*",
    "scene": {
     "view": "dialogue",
@@ -814,7 +822,7 @@
    "stepTitle": "Вечером по телефону",
    "chapterIndex": 0,
    "indexInStep": 0,
-   "read": "Вечером звонит Марко: *Bist du schon zu Hause?* — «ты уже дома?». Анна ещё в гостях: *bei Ewa* — «у Эвы». Дальше пара, которую путают почти все: *zu Hause* — «дома», где вы находитесь, и *nach Hause* — «домой», куда вы идёте или едете. Поэтому Марко спрашивает: *Wann fährst du nach Hause?*",
+   "read": "Вечером звонит Матео: *Bist du schon zu Hause?* — «ты уже дома?». Дана ещё в гостях: *bei Mira* — «у Миры». Дальше пара, которую путают почти все: *zu Hause* — «дома», где вы находитесь, и *nach Hause* — «домой», куда вы идёте или едете. Поэтому Матео спрашивает: *Wann fährst du nach Hause?*",
    "point": "*zu Hause* — дома (где?), *nach Hause* — домой (куда?)",
    "scene": {
     "view": "dialogue",
@@ -840,8 +848,8 @@
    "stepTitle": "Вечером по телефону",
    "chapterIndex": 0,
    "indexInStep": 1,
-   "read": "Марко зовёт Анну на новоселье — в ту самую квартиру на Линденштрассе. *Wie komme ich zur Lindenstraße?* *zur* — это *zu der*: *die Straße* женского рода. Марко отвечает простым настоящим временем: *Du fährst mit der Linie 4 und steigst in Gohlis aus.* Глагол *aussteigen* — «выходить» — отделяемый, его приставка уходит в конец.",
-   "point": "*zur* = *zu der*: *zur Lindenstraße*, *zur Post*",
+   "read": "Матео зовёт Дану к себе в Holtenau: завтра там будут гости. Это не новоселье — он по-прежнему живёт в знакомом районе. *Wie komme ich zu dir?* — «Как мне добраться к тебе?». Ответ *Du fährst mit dem Bus nach Holtenau* содержит транспорт и направление. От остановки ещё две минуты пешком. Эти времена и путь учебные; действующее расписание здесь не проверяется.",
+   "point": "*zu dir* — к тебе; *mit dem Bus* — на автобусе",
    "scene": {
     "view": "dialogue",
     "dialogue": "abends",
@@ -879,8 +887,8 @@
    "stepTitle": "Транспорт",
    "chapterIndex": 1,
    "indexInStep": 0,
-   "read": "В Лейпциге нет метро, зато много трамваев: *die Straßenbahn* — дословно «уличная железная дорога». *die S-Bahn* — городская электричка, *die U-Bahn* — метро, как в Берлине или Мюнхене. Номер маршрута — *die Linie*: *die Linie 16*, по-русски «шестнадцатый». *die Fahrkarte* — билет, а *das Gleis* на вокзале — путь, к которому подходит поезд.",
-   "point": "*die Linie 16* — 16-й маршрут; *das Gleis* — путь на вокзале",
+   "read": "*Der Bus*, *der Zug*, *das Fahrrad* нужны для городских и загородных поездок. *Die Straßenbahn* и *die U-Bahn* остаются в словаре для других городов: наличие слова не означает, что на таком транспорте можно ехать по нашей сцене в Киле. *Die Linie* — маршрут, *die Fahrkarte* — билет, *das Gleis* — путь на вокзале. В учебном объявлении поезд на Любек меняет путь: нужно слушать изменение до конца.",
+   "point": "*die Fahrkarte* — билет; *das Gleis* — путь на вокзале",
    "scene": {
     "view": "words",
     "dialogue": "abends",
@@ -960,8 +968,8 @@
    "stepTitle": "Шесть предлогов с дательным",
    "chapterIndex": 2,
    "indexInStep": 1,
-   "read": "Как выбрать между *zu* и *nach*, если оба значат «куда»? *nach* — для городов и стран без артикля: *nach Dresden*, *nach Polen*. *zu* — для мест с артиклем и для людей: *zum Bahnhof*, *zu Ewa*. *nach dem Bahnhof* — частая ошибка, так не говорят. А *nach Hause* — «домой» — особый случай, его запомните целиком.",
-   "point": "*nach* — города и страны: *nach Dresden*; *zu* — места и люди: *zum Bahnhof*",
+   "read": "Как выбрать между *zu* и *nach*, если оба значат «куда»? *nach* — для городов и стран без артикля: *nach Lübeck*, *nach Dänemark*. *zu* — для мест с артиклем и для людей: *zum Bahnhof*, *zu Mira*. Для направления к вокзалу здесь нужно *zum Bahnhof*. А *nach Hause* — «домой» — особый случай, его запомните целиком.",
+   "point": "*nach* — города и страны: *nach Lübeck*; *zu* — места и люди: *zum Bahnhof*",
    "scene": {
     "view": "table",
     "dialogue": "abends",
@@ -1027,7 +1035,7 @@
       "punct": ".",
       "plain": "Sie gehen geradeaus.",
       "ru": "Вы идёте прямо.",
-      "audio": "audio/23d24792b83c.m4a"
+      "audio": "audio/617e1c8d892c.m4a"
      }
     ]
    }
@@ -1070,7 +1078,7 @@
       "punct": "!",
       "plain": "Gehen Sie geradeaus!",
       "ru": "Идите прямо!",
-      "audio": "audio/feceedf77578.m4a"
+      "audio": "audio/945ef4dacc04.m4a"
      }
     ]
    }
@@ -1113,7 +1121,7 @@
       "punct": "!",
       "plain": "Gehen Sie geradeaus!",
       "ru": "Идите прямо!",
-      "audio": "audio/feceedf77578.m4a"
+      "audio": "audio/945ef4dacc04.m4a"
      },
      {
       "slots": [
@@ -1148,7 +1156,7 @@
       "punct": "!",
       "plain": "Steigen Sie bitte hier aus!",
       "ru": "Выходите, пожалуйста, здесь!",
-      "audio": "audio/44d55574f3c6.m4a"
+      "audio": "audio/66b69340c4bd.m4a"
      }
     ],
     "fresh": [
@@ -1194,7 +1202,7 @@
       "punct": "!",
       "plain": "Gehen Sie geradeaus!",
       "ru": "Идите прямо!",
-      "audio": "audio/feceedf77578.m4a"
+      "audio": "audio/945ef4dacc04.m4a"
      },
      {
       "slots": [
@@ -1229,7 +1237,7 @@
       "punct": "!",
       "plain": "Steigen Sie bitte hier aus!",
       "ru": "Выходите, пожалуйста, здесь!",
-      "audio": "audio/44d55574f3c6.m4a"
+      "audio": "audio/66b69340c4bd.m4a"
      }
     ]
    }
@@ -1240,9 +1248,9 @@
    "stepTitle": "Проверьте себя",
    "chapterIndex": 3,
    "indexInStep": 0,
-   "read": "*Steigen Sie in Gohlis aus!* Глагол *steigen* встаёт в начало, *Sie* — сразу за ним, а приставка *aus* остаётся в конце, как и в обычном предложении. Частая ошибка — *Aussteigen Sie in Gohlis!*: в повелительном наклонении приставка отрывается от глагола так же, как в утверждении *Sie steigen in Gohlis aus*.",
-   "point": "*Steigen Sie in Gohlis aus!* — приставка остаётся в конце",
-   "question": "Как вежливо сказать «Выходите в Голисе!»?",
+   "read": "*Steigen Sie in Holtenau aus!* Глагол *steigen* встаёт в начало, *Sie* — сразу за ним, а приставка *aus* остаётся в конце, как и в обычном предложении. Частая ошибка — *Aussteigen Sie in Holtenau!*: в повелительном наклонении приставка отрывается от глагола так же, как в утверждении *Sie steigen in Holtenau aus*.",
+   "point": "*Steigen Sie in Holtenau aus!* — приставка остаётся в конце",
+   "question": "Как вежливо сказать «Выходите в Хольтенау!»?",
    "sceneBefore": {
     "view": "sentence",
     "dialogue": "abends",
@@ -1269,8 +1277,8 @@
          "text": "in"
         },
         {
-         "key": "gohlis",
-         "text": "Gohlis"
+         "key": "holtenau",
+         "text": "Holtenau"
         }
        ],
        [
@@ -1281,9 +1289,9 @@
        ]
       ],
       "punct": ".",
-      "plain": "Sie steigen in Gohlis aus.",
-      "ru": "Вы выходите в Голисе.",
-      "audio": "audio/6827637af0b8.m4a"
+      "plain": "Sie steigen in Holtenau aus.",
+      "ru": "Вы выходите в Хольтенау.",
+      "audio": "audio/834cb27bdd7f.m4a"
      }
     ]
    },
@@ -1312,8 +1320,8 @@
          "text": "in"
         },
         {
-         "key": "gohlis",
-         "text": "Gohlis"
+         "key": "holtenau",
+         "text": "Holtenau"
         }
        ],
        [
@@ -1324,9 +1332,9 @@
        ]
       ],
       "punct": "!",
-      "plain": "Steigen Sie in Gohlis aus!",
-      "ru": "Выходите в Голисе!",
-      "audio": "audio/b786131f9f4a.m4a"
+      "plain": "Steigen Sie in Holtenau aus!",
+      "ru": "Выходите в Хольтенау!",
+      "audio": "audio/10925346aeff.m4a"
      }
     ]
    }
@@ -1337,52 +1345,9 @@
    "stepTitle": "Проверьте себя",
    "chapterIndex": 3,
    "indexInStep": 1,
-   "read": "Зависит от вопроса. Анна уже там — значит *bei*: *Ich bin bei Ewa* — «я у Эвы». Утром она туда ехала — значит *zu*: *Ich fahre zu Ewa* — «я еду к Эве». *Ich fahre bei Ewa* звучит для немца так же странно, как для нас «я еду у Эвы». С врачом то же: *beim Arzt* — у врача, *zum Arzt* — к врачу.",
+   "read": "Зависит от вопроса. Дана уже там — значит *bei*: *Ich bin bei Mira* — «я у Миры». Утром она туда ехала — значит *zu*: *Ich fahre zu Mira* — «я еду к Мире». *Ich fahre bei Mira* звучит для немца так же странно, как для нас «я еду у Миры». С врачом то же: *beim Arzt* — у врача, *zum Arzt* — к врачу.",
    "point": "*bei* — у кого (где?), *zu* — к кому (куда?): *beim Arzt*, *zum Arzt*",
-   "question": "Анна в гостях у подруги. Как сказать — *bei Ewa* или *zu Ewa*?",
-   "sceneBefore": {
-    "view": "sentence",
-    "dialogue": "abends",
-    "words": "weg",
-    "table": "hause",
-    "rows": [
-     {
-      "slots": [
-       [],
-       [
-        {
-         "key": "steig",
-         "text": "Steig+en"
-        }
-       ],
-       [
-        {
-         "key": "sie",
-         "text": "Sie"
-        },
-        {
-         "key": "in",
-         "text": "in"
-        },
-        {
-         "key": "gohlis",
-         "text": "Gohlis"
-        }
-       ],
-       [
-        {
-         "key": "aus",
-         "text": "aus"
-        }
-       ]
-      ],
-      "punct": "!",
-      "plain": "Steigen Sie in Gohlis aus!",
-      "ru": "Выходите в Голисе!",
-      "audio": "audio/b786131f9f4a.m4a"
-     }
-    ]
-   },
+   "question": "Дана в гостях у подруги. Как сказать — *bei Mira* или *zu Mira*?",
    "scene": {
     "view": "sentence",
     "dialogue": "abends",
@@ -1409,16 +1374,16 @@
          "text": "bei"
         },
         {
-         "key": "ewa",
-         "text": "Ewa"
+         "key": "mira",
+         "text": "Mira"
         }
        ],
        []
       ],
       "punct": ".",
-      "plain": "Ich bin bei Ewa.",
-      "ru": "Я у Эвы.",
-      "audio": "audio/5e33ad623b2b.m4a"
+      "plain": "Ich bin bei Mira.",
+      "ru": "Я у Миры.",
+      "audio": "audio/e9840a75c738.m4a"
      },
      {
       "slots": [
@@ -1440,16 +1405,16 @@
          "text": "zu"
         },
         {
-         "key": "ewa",
-         "text": "Ewa"
+         "key": "mira",
+         "text": "Mira"
         }
        ],
        []
       ],
       "punct": ".",
-      "plain": "Ich fahre zu Ewa.",
-      "ru": "Я еду к Эве.",
-      "audio": "audio/c9256131df65.m4a"
+      "plain": "Ich fahre zu Mira.",
+      "ru": "Я еду к Мире.",
+      "audio": "audio/6e7dc24942bc.m4a"
      }
     ],
     "fresh": [
@@ -1463,82 +1428,9 @@
    "stepTitle": "Проверьте себя",
    "chapterIndex": 3,
    "indexInStep": 2,
-   "read": "*Ich fahre mit dem Zug nach Dresden.* *der Zug* после *mit* становится *dem Zug*, а *Dresden* — город без артикля, поэтому *nach*. Обратите внимание на порядок в середине: сначала «на чём», потом «куда». *Ich fahre nach Dresden mit dem Zug* немцы тоже поймут, но звучит это непривычно — как будто «на поезде» добавили в последний момент.",
-   "point": "*Ich fahre mit dem Zug nach Dresden.* — сначала «на чём», потом «куда»",
-   "question": "Как сказать «Я еду в Дрезден на поезде»?",
-   "sceneBefore": {
-    "view": "sentence",
-    "dialogue": "abends",
-    "words": "weg",
-    "table": "hause",
-    "rows": [
-     {
-      "slots": [
-       [
-        {
-         "key": "ich",
-         "text": "Ich"
-        }
-       ],
-       [
-        {
-         "key": "bin",
-         "text": "bin"
-        }
-       ],
-       [
-        {
-         "key": "bei",
-         "text": "bei"
-        },
-        {
-         "key": "ewa",
-         "text": "Ewa"
-        }
-       ],
-       []
-      ],
-      "punct": ".",
-      "plain": "Ich bin bei Ewa.",
-      "ru": "Я у Эвы.",
-      "audio": "audio/5e33ad623b2b.m4a"
-     },
-     {
-      "slots": [
-       [
-        {
-         "key": "ich",
-         "text": "Ich"
-        }
-       ],
-       [
-        {
-         "key": "fahr",
-         "text": "fahr+e"
-        }
-       ],
-       [
-        {
-         "key": "zu",
-         "text": "zu"
-        },
-        {
-         "key": "ewa",
-         "text": "Ewa"
-        }
-       ],
-       []
-      ],
-      "punct": ".",
-      "plain": "Ich fahre zu Ewa.",
-      "ru": "Я еду к Эве.",
-      "audio": "audio/c9256131df65.m4a"
-     }
-    ],
-    "fresh": [
-     1
-    ]
-   },
+   "read": "*Ich fahre mit dem Zug nach Lübeck.* *der Zug* после *mit* становится *dem Zug*, а *Lübeck* — город без артикля, поэтому *nach*. Обратите внимание на порядок в середине: сначала «на чём», потом «куда». *Ich fahre nach Lübeck mit dem Zug* немцы тоже поймут, но звучит это непривычно — как будто «на поезде» добавили в последний момент.",
+   "point": "*Ich fahre mit dem Zug nach Lübeck.* — сначала «на чём», потом «куда»",
+   "question": "Как сказать «Я еду в Любек на поезде»?",
    "scene": {
     "view": "sentence",
     "dialogue": "abends",
@@ -1577,16 +1469,16 @@
          "text": "nach"
         },
         {
-         "key": "dresden",
-         "text": "Dresden"
+         "key": "lübeck",
+         "text": "Lübeck"
         }
        ],
        []
       ],
       "punct": ".",
-      "plain": "Ich fahre mit dem Zug nach Dresden.",
-      "ru": "Я еду в Дрезден на поезде.",
-      "audio": "audio/1233bbcd49e8.m4a"
+      "plain": "Ich fahre mit dem Zug nach Lübeck.",
+      "ru": "Я еду в Любек на поезде.",
+      "audio": "audio/647f3ac9b576.m4a"
      }
     ]
    }
@@ -1637,16 +1529,16 @@
          "text": "nach"
         },
         {
-         "key": "dresden",
-         "text": "Dresden"
+         "key": "lübeck",
+         "text": "Lübeck"
         }
        ],
        []
       ],
       "punct": ".",
-      "plain": "Ich fahre mit dem Zug nach Dresden.",
-      "ru": "Я еду в Дрезден на поезде.",
-      "audio": "audio/1233bbcd49e8.m4a"
+      "plain": "Ich fahre mit dem Zug nach Lübeck.",
+      "ru": "Я еду в Любек на поезде.",
+      "audio": "audio/647f3ac9b576.m4a"
      }
     ],
     "task": "durchsage"
@@ -1660,59 +1552,7 @@
    "indexInStep": 1,
    "read": "*Falsch.* Объявление начинается словами *Achtung an Gleis 3* — так обращаются к тем, кто ждёт на 3-м пути. Но дальше главное: *fährt heute von Gleis 5*. Классическая ловушка: первое услышанное число — не всегда ответ. Слово *heute* подсказывает, что сегодня всё не так, как в расписании. А *Verspätung* — опоздание: поезд уйдёт на 10 минут позже.",
    "point": "Первое услышанное число — не всегда ответ: слушайте до конца",
-   "question": "Поезд на Дрезден уходит с 3-го пути — *richtig* или *falsch*?",
-   "sceneBefore": {
-    "view": "task",
-    "dialogue": "abends",
-    "words": "weg",
-    "table": "hause",
-    "rows": [
-     {
-      "slots": [
-       [
-        {
-         "key": "ich",
-         "text": "Ich"
-        }
-       ],
-       [
-        {
-         "key": "fahr",
-         "text": "fahr+e"
-        }
-       ],
-       [
-        {
-         "key": "mit",
-         "text": "mit"
-        },
-        {
-         "key": "dem",
-         "text": "dem"
-        },
-        {
-         "key": "zug",
-         "text": "Zug"
-        },
-        {
-         "key": "nach",
-         "text": "nach"
-        },
-        {
-         "key": "dresden",
-         "text": "Dresden"
-        }
-       ],
-       []
-      ],
-      "punct": ".",
-      "plain": "Ich fahre mit dem Zug nach Dresden.",
-      "ru": "Я еду в Дрезден на поезде.",
-      "audio": "audio/1233bbcd49e8.m4a"
-     }
-    ],
-    "task": "durchsage"
-   },
+   "question": "Поезд на Любек уходит с 3-го пути — *richtig* или *falsch*?",
    "scene": {
     "view": "task",
     "dialogue": "abends",
@@ -1751,16 +1591,16 @@
          "text": "nach"
         },
         {
-         "key": "dresden",
-         "text": "Dresden"
+         "key": "lübeck",
+         "text": "Lübeck"
         }
        ],
        []
       ],
       "punct": ".",
-      "plain": "Ich fahre mit dem Zug nach Dresden.",
-      "ru": "Я еду в Дрезден на поезде.",
-      "audio": "audio/1233bbcd49e8.m4a"
+      "plain": "Ich fahre mit dem Zug nach Lübeck.",
+      "ru": "Я еду в Любек на поезде.",
+      "audio": "audio/647f3ac9b576.m4a"
      }
     ],
     "task": "durchsage",
@@ -1773,7 +1613,7 @@
    "stepTitle": "Аудирование: вокзал и разговоры",
    "chapterIndex": 4,
    "indexInStep": 2,
-   "read": "В первой части аудирования — короткие разговоры, как у Анны с прохожим, и звучат они дважды. Вопрос мог бы быть таким: *Wie kommt Anna zum Bahnhof?* — *mit dem Bus*, *mit der Straßenbahn* или *zu Fuß*? Коварство в том, что в разговоре звучат все три варианта. Верный — последнее решение: *Dann gehe ich zu Fuß.*",
+   "read": "В коротком разговоре могут прозвучать несколько возможных решений. Дана обсуждает автобус, затем выбирает *zu Fuß*. Это и есть ответ на вопрос *Wie kommt Dana zum Bahnhof?* В другом задании Элиф и Хауке обсуждают вокзал и кино. Слушайте, где они договорились встретиться, а не хватайтесь за первое знакомое место.",
    "point": "Часть 1 аудирования: звучат все варианты — ищите, чем закончился разговор",
    "scene": {
     "view": "dialogue",
@@ -1813,16 +1653,16 @@
          "text": "nach"
         },
         {
-         "key": "dresden",
-         "text": "Dresden"
+         "key": "lübeck",
+         "text": "Lübeck"
         }
        ],
        []
       ],
       "punct": ".",
-      "plain": "Ich fahre mit dem Zug nach Dresden.",
-      "ru": "Я еду в Дрезден на поезде.",
-      "audio": "audio/1233bbcd49e8.m4a"
+      "plain": "Ich fahre mit dem Zug nach Lübeck.",
+      "ru": "Я еду в Любек на поезде.",
+      "audio": "audio/647f3ac9b576.m4a"
      }
     ],
     "task": "durchsage",
@@ -1849,9 +1689,9 @@
    "stepTitle": "Аудирование: вокзал и разговоры",
    "chapterIndex": 4,
    "indexInStep": 3,
-   "read": "*Vor dem Kino* — ответ b. *Am Bahnhof* звучит первым, но Том сразу отказывается: *Am Bahnhof ist es so voll* — «на вокзале так людно». *Im Kino* — тоже ловушка: в кино они пойдут, но встречаются перед ним. Одно маленькое слово *vor* или *im* меняет ответ, поэтому слушайте предлоги. Хорошо, что в первой части разговор звучит дважды: во второй раз проверьте свой вариант.",
+   "read": "*Vor dem Kino* — ответ b. *Am Bahnhof* звучит первым, но Хауке сразу отказывается: *Am Bahnhof ist es so voll* — «на вокзале так людно». *Im Kino* — тоже ловушка: в кино они пойдут, но встречаются перед ним. Одно маленькое слово *vor* или *im* меняет ответ, поэтому слушайте предлоги. Хорошо, что в первой части разговор звучит дважды: во второй раз проверьте свой вариант.",
    "point": "*vor dem Kino* — перед кинотеатром, *im Kino* — в нём: слушайте предлоги",
-   "question": "Где встречаются Лиза и Том — a, b или c?",
+   "question": "Где встречаются Элиф и Хауке — a, b или c?",
    "sceneBefore": {
     "view": "task",
     "dialogue": "weg",
@@ -1890,16 +1730,16 @@
          "text": "nach"
         },
         {
-         "key": "dresden",
-         "text": "Dresden"
+         "key": "lübeck",
+         "text": "Lübeck"
         }
        ],
        []
       ],
       "punct": ".",
-      "plain": "Ich fahre mit dem Zug nach Dresden.",
-      "ru": "Я еду в Дрезден на поезде.",
-      "audio": "audio/1233bbcd49e8.m4a"
+      "plain": "Ich fahre mit dem Zug nach Lübeck.",
+      "ru": "Я еду в Любек на поезде.",
+      "audio": "audio/647f3ac9b576.m4a"
      }
     ],
     "task": "gespraech"
@@ -1942,16 +1782,16 @@
          "text": "nach"
         },
         {
-         "key": "dresden",
-         "text": "Dresden"
+         "key": "lübeck",
+         "text": "Lübeck"
         }
        ],
        []
       ],
       "punct": ".",
-      "plain": "Ich fahre mit dem Zug nach Dresden.",
-      "ru": "Я еду в Дрезден на поезде.",
-      "audio": "audio/1233bbcd49e8.m4a"
+      "plain": "Ich fahre mit dem Zug nach Lübeck.",
+      "ru": "Я еду в Любек на поезде.",
+      "audio": "audio/647f3ac9b576.m4a"
      }
     ],
     "task": "gespraech",
@@ -2004,16 +1844,16 @@
          "text": "nach"
         },
         {
-         "key": "dresden",
-         "text": "Dresden"
+         "key": "lübeck",
+         "text": "Lübeck"
         }
        ],
        []
       ],
       "punct": ".",
-      "plain": "Ich fahre mit dem Zug nach Dresden.",
-      "ru": "Я еду в Дрезден на поезде.",
-      "audio": "audio/1233bbcd49e8.m4a"
+      "plain": "Ich fahre mit dem Zug nach Lübeck.",
+      "ru": "Я еду в Любек на поезде.",
+      "audio": "audio/647f3ac9b576.m4a"
      }
     ],
     "task": "hinweis"
@@ -2028,58 +1868,6 @@
    "read": "*Richtig.* В утверждении нет слова *Information*, зато есть *eine Frage* — «вопрос». С вопросами идут в справочную, а она за входом B: *Zur Information bitte Eingang B benutzen.* На экзамене утверждение почти всегда пересказывает табличку другими словами. Не ищите точного совпадения — ищите тот же смысл. И не отвлекайтесь на первую строку: *Heute geschlossen!* касается кассы, а не справочной.",
    "point": "Утверждение пересказывает табличку другими словами — ищите смысл",
    "question": "*Sie haben eine Frage. Sie gehen zum Eingang B.* — *richtig* или *falsch*?",
-   "sceneBefore": {
-    "view": "task",
-    "dialogue": "weg",
-    "words": "weg",
-    "table": "hause",
-    "rows": [
-     {
-      "slots": [
-       [
-        {
-         "key": "ich",
-         "text": "Ich"
-        }
-       ],
-       [
-        {
-         "key": "fahr",
-         "text": "fahr+e"
-        }
-       ],
-       [
-        {
-         "key": "mit",
-         "text": "mit"
-        },
-        {
-         "key": "dem",
-         "text": "dem"
-        },
-        {
-         "key": "zug",
-         "text": "Zug"
-        },
-        {
-         "key": "nach",
-         "text": "nach"
-        },
-        {
-         "key": "dresden",
-         "text": "Dresden"
-        }
-       ],
-       []
-      ],
-      "punct": ".",
-      "plain": "Ich fahre mit dem Zug nach Dresden.",
-      "ru": "Я еду в Дрезден на поезде.",
-      "audio": "audio/1233bbcd49e8.m4a"
-     }
-    ],
-    "task": "hinweis"
-   },
    "scene": {
     "view": "task",
     "dialogue": "weg",
@@ -2118,16 +1906,16 @@
          "text": "nach"
         },
         {
-         "key": "dresden",
-         "text": "Dresden"
+         "key": "lübeck",
+         "text": "Lübeck"
         }
        ],
        []
       ],
       "punct": ".",
-      "plain": "Ich fahre mit dem Zug nach Dresden.",
-      "ru": "Я еду в Дрезден на поезде.",
-      "audio": "audio/1233bbcd49e8.m4a"
+      "plain": "Ich fahre mit dem Zug nach Lübeck.",
+      "ru": "Я еду в Любек на поезде.",
+      "audio": "audio/647f3ac9b576.m4a"
      }
     ],
     "task": "hinweis",
@@ -2147,12 +1935,12 @@
    ],
    "answer": 0,
    "why": "*der Bus* → *mit dem Bus*.",
-   "audio": "audio/1b5e888cd835.m4a"
+   "audio": "audio/54c44045fbba.m4a"
   },
   {
    "id": "stadt-2",
    "type": "choice",
-   "q": "Anna fährt ___ Straßenbahn.",
+   "q": "Dana fährt ___ Straßenbahn.",
    "options": [
     "mit dem",
     "mit der",
@@ -2160,7 +1948,7 @@
    ],
    "answer": 1,
    "why": "*die Straßenbahn* → *mit der Straßenbahn*. *mit die* — частая ошибка.",
-   "audio": "audio/32df060aa601.m4a"
+   "audio": "audio/e9b76e4463ff.m4a"
   },
   {
    "id": "stadt-3",
@@ -2171,7 +1959,7 @@
    ],
    "hint": "zu + dem",
    "why": "*der Bahnhof* → *zu dem* → *zum*.",
-   "audio": "audio/f7704bae934b.m4a"
+   "audio": "audio/92214e201e47.m4a"
   },
   {
    "id": "stadt-4",
@@ -2182,12 +1970,12 @@
    ],
    "hint": "zu + der",
    "why": "*die Post* — женский род: *zu der* → *zur*.",
-   "audio": "audio/4d21ed43323f.m4a"
+   "audio": "audio/5c27f137a4f2.m4a"
   },
   {
    "id": "stadt-5",
    "type": "choice",
-   "q": "Wir fahren am Samstag ___ Dresden.",
+   "q": "Wir fahren am Samstag ___ Lübeck.",
    "options": [
     "nach",
     "zu",
@@ -2195,12 +1983,12 @@
    ],
    "answer": 0,
    "why": "Город без артикля, вопрос «куда?» — *nach*.",
-   "audio": "audio/4defda20521e.m4a"
+   "audio": "audio/4d35664bf41c.m4a"
   },
   {
    "id": "stadt-6",
    "type": "choice",
-   "q": "Marco geht morgen ___ Arzt.",
+   "q": "Mateo geht morgen ___ Arzt.",
    "options": [
     "beim",
     "zum",
@@ -2208,7 +1996,7 @@
    ],
    "answer": 1,
    "why": "Куда? — *zum Arzt*. Где? — *beim Arzt*.",
-   "audio": "audio/b4a24712d5a7.m4a"
+   "audio": "audio/2b44028c87ec.m4a"
   },
   {
    "id": "stadt-7",
@@ -2218,7 +2006,7 @@
     "zu"
    ],
    "why": "Где? — *zu Hause*.",
-   "audio": "audio/b233c23568f7.m4a"
+   "audio": "audio/e866ec2d5fc8.m4a"
   },
   {
    "id": "stadt-8",
@@ -2228,7 +2016,7 @@
     "nach"
    ],
    "why": "Куда? — *nach Hause*.",
-   "audio": "audio/daffa2541a3c.m4a"
+   "audio": "audio/2e990605ebdb.m4a"
   },
   {
    "id": "stadt-9",
@@ -2241,20 +2029,20 @@
    ],
    "answer": 0,
    "why": "*die Haltestelle* → *von der*. *vom* — только для *der* и *das*.",
-   "audio": "audio/d8fbb68bd52c.m4a"
+   "audio": "audio/7b8f34dee7ec.m4a"
   },
   {
    "id": "stadt-10",
    "type": "choice",
-   "q": "Ewa kommt ___ Polen.",
+   "q": "Mira kommt ___ der Ukraine.",
    "options": [
     "aus",
     "von",
     "nach"
    ],
    "answer": 0,
-   "why": "Откуда родом — *aus*: *aus Polen*, *aus der Schweiz*.",
-   "audio": "audio/6657b6548fd0.m4a"
+   "why": "Откуда родом — *aus*: *aus der Ukraine*, *aus der Schweiz*.",
+   "audio": "audio/4fa5e95bc817.m4a"
   },
   {
    "id": "stadt-11",
@@ -2277,14 +2065,14 @@
    ],
    "hint": "sein",
    "why": "*sein* — единственный неправильный: *Seien Sie …!*",
-   "audio": "audio/61294a0ad0de.m4a"
+   "audio": "audio/aef9aeeaa276.m4a"
   },
   {
    "id": "stadt-13",
    "type": "order",
    "ru": "Садитесь на 16-й!",
    "de": "Nehmen Sie die Linie 16!",
-   "audio": "audio/476421eecd7b.m4a"
+   "audio": "audio/60ff7ed4df00.m4a"
   },
   {
    "id": "stadt-14",
@@ -2292,17 +2080,328 @@
    "ru": "Выходите, пожалуйста, здесь!",
    "de": "Steigen Sie bitte hier aus!",
    "why": "Глагол первым, приставка *aus* — в конце.",
-   "audio": "audio/44d55574f3c6.m4a"
+   "audio": "audio/66b69340c4bd.m4a"
   },
   {
    "id": "stadt-15",
    "type": "order",
-   "ru": "Я еду в Дрезден на поезде.",
-   "de": "Ich fahre mit dem Zug nach Dresden.",
-   "why": "Сначала «на чём» — *mit dem Zug*, потом «куда» — *nach Dresden*.",
-   "audio": "audio/1233bbcd49e8.m4a"
+   "ru": "Я еду в Любек на поезде.",
+   "de": "Ich fahre mit dem Zug nach Lübeck.",
+   "why": "Сначала «на чём» — *mit dem Zug*, потом «куда» — *nach Lübeck*.",
+   "audio": "audio/647f3ac9b576.m4a"
   }
  ],
+ "case": {
+  "title": "Ein Weg mit einem falschen Pfeil",
+  "ru": "Маршрут с неверной стрелкой",
+  "intro": "На копии плана клуба стрелки и подписи не совпадают с сообщениями. Исправьте каждую деталь по источнику; настоящую карту Киля знать не нужно.",
+  "people": {
+   "H": {
+    "name": "Hauke",
+    "voice": "Rocko"
+   }
+  },
+  "steps": [
+   {
+    "read": "Сначала отделите место отправления от назначения.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Ich komme vom Bahnhof. Ich gehe zum Hafen.",
+      "ru": "Я иду от вокзала. Я иду к гавани."
+     }
+    ],
+    "question": "Откуда и куда идёт гость?",
+    "options": [
+     "От гавани к вокзалу",
+     "От вокзала к гавани",
+     "Он уже дома"
+    ],
+    "answer": 1,
+    "right": "*Vom* — от, *zum* — к. Направление нельзя перевернуть.",
+    "wrong": [
+     "Здесь направление перевёрнуто.",
+     null,
+     "Дом в записке не упоминается."
+    ]
+   },
+   {
+    "read": "В неверной копии стрелка у светофора смотрит в другую сторону.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Gehen Sie geradeaus. An der Ampel gehen Sie rechts, nicht links.",
+      "ru": "Идите прямо. У светофора идите направо, не налево."
+     }
+    ],
+    "question": "Какая стрелка нужна у светофора?",
+    "options": [
+     "Налево",
+     "Назад",
+     "Направо"
+    ],
+    "answer": 2,
+    "right": "*Rechts* — направо. *Nicht links* отдельно исключает налево.",
+    "wrong": [
+     "Налево прямо исключено.",
+     "Назад не указано.",
+     null
+    ]
+   },
+   {
+    "read": "Копия использует старый путь на вокзале.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Der Zug fährt heute von Gleis 5, nicht von Gleis 3.",
+      "ru": "Сегодня поезд отправляется с пути 5, не с пути 3."
+     }
+    ],
+    "question": "Какой номер пути оставить?",
+    "options": [
+     "3",
+     "5",
+     "Ни одного"
+    ],
+    "answer": 1,
+    "right": "Сегодня действует 5. Изменение важнее старой подписи.",
+    "wrong": [
+     "Это исключённый старый путь.",
+     null,
+     "Новый путь назван прямо."
+    ]
+   },
+   {
+    "read": "Последняя подпись будто сообщает, что Дана уже дома. Сверьте направление движения.",
+    "evidence": [
+     {
+      "kind": "quote",
+      "who": "H",
+      "de": "Dana fährt nach Hause. Sie ist noch nicht zu Hause.",
+      "ru": "Дана едет домой. Она ещё не дома.",
+      "audio": "audio/d0f3cfbc1a56.m4a"
+     }
+    ],
+    "question": "Что известно о Дане?",
+    "options": [
+     "Она уже дома",
+     "Она едет домой",
+     "Она уезжает из дома"
+    ],
+    "answer": 1,
+    "right": "*Nach Hause* — домой, *noch nicht zu Hause* — ещё не дома. Копия перепутала действие и место.",
+    "wrong": [
+     "Это отрицается словами *noch nicht*.",
+     null,
+     "Для этого нужно было бы *von zu Hause*."
+    ]
+   }
+  ],
+  "ending": "Маршрут исправлен: от вокзала к гавани, направо у светофора, актуальный путь 5. В копиях снова смешались направление и положение, старые данные и новые. Источники сохранены; дальше команда проверит ещё одну запись — время приёма у врача."
+ },
+ "adventure": {
+  "kind": "sequence",
+  "title": "Доведите гостей до нужного места",
+  "intro": "Сначала разберитесь с транспортом и изменениями, затем передайте гостям путь к клубу. Все маршруты, минуты и номера путей — условные учебные данные.",
+  "ending": "Путь по схеме передан точно: нужный транспорт, актуальный путь, направление у светофора и место встречи. Гости добрались до клуба. Следующая бытовая задача — понять запись к врачу.",
+  "challenges": [
+   {
+    "id": "walk",
+    "kind": "select",
+    "title": "Как Дана решила идти к вокзалу?",
+    "intro": "Возможный транспорт и принятое решение — разные вещи. Прослушайте конец разговора.",
+    "success": "Дана выбирает *zu Fuß*. Возможность ехать автобусом не стала решением.",
+    "wrong": "Последнее решение — *Dann gehe ich zu Fuß*.",
+    "quotes": [
+     {
+      "de": "Kann ich auch mit dem Bus fahren?",
+      "audio": "audio/9449b964883c.m4a",
+      "name": "Dana"
+     },
+     {
+      "de": "Mit dem Bus geht es auch. Aber zu Fuß sind es nur zehn Minuten.",
+      "audio": "audio/e09582983abb.m4a",
+      "name": "Kieler Passant"
+     },
+     {
+      "de": "Dann gehe ich zu Fuß. Vielen Dank!",
+      "audio": "audio/75760574fc2a.m4a",
+      "name": "Dana"
+     }
+    ],
+    "options": [
+     {
+      "id": "bus",
+      "label": "mit dem Bus"
+     },
+     {
+      "id": "foot",
+      "label": "zu Fuß"
+     },
+     {
+      "id": "tram",
+      "label": "mit der Straßenbahn"
+     }
+    ],
+    "answer": [
+     "foot"
+    ]
+   },
+   {
+    "id": "platform",
+    "kind": "select",
+    "title": "Отведите гостя к актуальному пути",
+    "intro": "Сначала объявление обращается к пассажирам на старом пути. Куда поезд подают сегодня?",
+    "success": "Сегодня *von Gleis 5*. Три — прежний путь, десять — минуты задержки.",
+    "wrong": "После *heute* указан путь 5. Не путайте его с задержкой в десять минут.",
+    "quotes": [
+     {
+      "de": "Achtung an Gleis 3! Der Regionalexpress nach Lübeck, Abfahrt zehn Uhr fünfzehn, fährt heute von Gleis 5. Der Zug hat zehn Minuten Verspätung. Wir bitten um Entschuldigung.",
+      "audio": "audio/768e517287dc.m4a",
+      "name": "Durchsage am Hauptbahnhof"
+     }
+    ],
+    "options": [
+     {
+      "id": "three",
+      "label": "Gleis 3"
+     },
+     {
+      "id": "five",
+      "label": "Gleis 5"
+     },
+     {
+      "id": "ten",
+      "label": "Gleis 10"
+     }
+    ],
+    "answer": [
+     "five"
+    ]
+   },
+   {
+    "id": "club-route",
+    "kind": "match",
+    "title": "Передайте маршрут по учебной схеме",
+    "intro": "На карточке три последовательных действия. Соедините каждое место с его инструкцией. Знание настоящих улиц не требуется.",
+    "success": "Гости идут прямо, у светофора направо и приходят к гавани. *Nicht zum Bahnhof* исключает ложную цель.",
+    "wrong": "В записке у светофора *rechts*, а цель *zum Hafen*, не вокзал.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Vom Start gehen Sie geradeaus. An der Ampel gehen Sie rechts. Dann gehen Sie zum Hafen, nicht zum Bahnhof. Hier ist der Club.",
+      "name": "Hauke"
+     }
+    ],
+    "options": [
+     {
+      "id": "straight",
+      "label": "geradeaus"
+     },
+     {
+      "id": "right",
+      "label": "rechts"
+     },
+     {
+      "id": "left",
+      "label": "links"
+     },
+     {
+      "id": "harbor",
+      "label": "zum Hafen"
+     },
+     {
+      "id": "station",
+      "label": "zum Bahnhof"
+     }
+    ],
+    "slots": [
+     {
+      "id": "start",
+      "label": "1 · Vom Start",
+      "answer": "straight"
+     },
+     {
+      "id": "light",
+      "label": "2 · An der Ampel",
+      "answer": "right"
+     },
+     {
+      "id": "goal",
+      "label": "3 · Ziel",
+      "answer": "harbor"
+     }
+    ]
+   },
+   {
+    "id": "polite-exit",
+    "kind": "order",
+    "title": "Вежливо попросите гостя выйти",
+    "intro": "Скажите на «Вы»: «Выходите, пожалуйста, здесь!» Приставка должна остаться в конце.",
+    "success": "*Steigen Sie bitte hier aus!* Глагол впереди, *Sie* сохранено, приставка замыкает рамку.",
+    "wrong": "Начните со *Steigen*, затем *Sie*, приставку *aus!* оставьте в конце.",
+    "tokens": [
+     "Steigen",
+     "Sie",
+     "bitte hier",
+     "aus!"
+    ],
+    "label": "Просьба пассажиру"
+   },
+   {
+    "id": "meet-cinema",
+    "kind": "select",
+    "title": "Не потеряйте Элиф и Хауке",
+    "intro": "Гости хотят передать друзьям фотографии. Где назначена отдельная встреча перед фильмом?",
+    "success": "Перед кинотеатром. Вокзал отвергнут, внутрь кинотеатра они пойдут уже после встречи.",
+    "wrong": "Хауке отвергает вокзал и говорит *vor dem Kino*.",
+    "quotes": [
+     {
+      "de": "Hallo, Hauke! Wo treffen wir uns morgen? Am Bahnhof?",
+      "audio": "audio/b2e974b7272e.m4a",
+      "name": "Elif"
+     },
+     {
+      "de": "Am Bahnhof ist es so voll. Lieber vor dem Kino.",
+      "audio": "audio/fa85a7ab9cf0.m4a",
+      "name": "Hauke"
+     },
+     {
+      "de": "Vor dem Kino? Gut. Und wann?",
+      "audio": "audio/8fe63a6c772e.m4a",
+      "name": "Elif"
+     },
+     {
+      "de": "Um halb sieben. Der Film fängt um sieben an.",
+      "audio": "audio/1e5423ca3e9c.m4a",
+      "name": "Hauke"
+     },
+     {
+      "de": "Super. Ich komme mit dem Fahrrad. Bis morgen!",
+      "audio": "audio/0b393fec543b.m4a",
+      "name": "Elif"
+     }
+    ],
+    "options": [
+     {
+      "id": "station",
+      "label": "Am Bahnhof."
+     },
+     {
+      "id": "front",
+      "label": "Vor dem Kino."
+     },
+     {
+      "id": "inside",
+      "label": "Im Kino."
+     }
+    ],
+    "answer": [
+     "front"
+    ]
+   }
+  ]
+ },
  "spy": [
   {
    "de": "Sie gehen geradeaus.",
@@ -2323,26 +2422,26 @@
    "auto": true
   },
   {
-   "de": "Steigen Sie in Gohlis aus!",
-   "wrong": "Steigst Sie in Gohlis aus!",
+   "de": "Steigen Sie in Holtenau aus!",
+   "wrong": "Steigst Sie in Holtenau aus!",
    "why": "Окончание глагола не подходит к подлежащему: правильно *Steigen*.",
    "auto": true
   },
   {
-   "de": "Sie steigen in Gohlis aus.",
-   "wrong": "Sie steigst in Gohlis aus.",
+   "de": "Sie steigen in Holtenau aus.",
+   "wrong": "Sie steigst in Holtenau aus.",
    "why": "Окончание глагола не подходит к подлежащему: правильно *steigen*.",
    "auto": true
   },
   {
-   "de": "Ich fahre zu Ewa.",
-   "wrong": "Ich fahren zu Ewa.",
+   "de": "Ich fahre zu Mira.",
+   "wrong": "Ich fahren zu Mira.",
    "why": "Окончание глагола не подходит к подлежащему: правильно *fahre*.",
    "auto": true
   },
   {
-   "de": "Ich fahre mit dem Zug nach Dresden.",
-   "wrong": "Ich fahren mit dem Zug nach Dresden.",
+   "de": "Ich fahre mit dem Zug nach Lübeck.",
+   "wrong": "Ich fahren mit dem Zug nach Lübeck.",
    "why": "Окончание глагола не подходит к подлежащему: правильно *fahre*.",
    "auto": true
   }

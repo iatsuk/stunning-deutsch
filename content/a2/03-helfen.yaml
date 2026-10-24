@@ -1,0 +1,609 @@
+id: a2-helfen
+order: 3
+title: Kannst du mir helfen?
+ru: Кому нужна вещь
+lede: Перед поездкой в клубе лежат билеты, камера и ключи. Элиф готовит список, Дана раздаёт
+  вещи, Матео помогает гостям. Чтобы ничего не потерять, нужно понять не только что передают,
+  но и кому.
+goals:
+  - Понять адресата действия по местоимению
+  - Попросить о помощи и отреагировать
+  - Различить предмет в Akkusativ и получателя в Dativ
+  - Сопоставить людей и сведения из разговора
+grammar:
+  - "Dativ: mir, dir, ihm, ihr, uns, euch, ihnen"
+exam:
+  - a2-hoeren-3
+  - a2-sprechen-2
+  - a2-lesen-2
+dialogues:
+  scene:
+    title: Kannst du mir helfen?
+    ru: Кому нужна вещь
+    place: Kiel · клуб перед поездкой · вымышленная учебная ситуация
+    people:
+      D:
+        name: Dana
+        voice: Anna
+      M:
+        name: Mateo
+        voice: Reed
+      E:
+        name: Elif
+        voice: Flo
+      H:
+        name: Hauke
+        voice: Rocko
+    lines:
+      - E: Dana, kannst du mir bitte helfen?
+        ru: Дана, можешь мне помочь?
+      - D: Ja, gern. Was brauchst du?
+        ru: Да, охотно. Что тебе нужно?
+      - E: Gib mir bitte die Liste. Mateo braucht sein Ticket.
+        ru: Дай мне список. Матео нужен его билет.
+      - D: Ich gebe ihm das Ticket. Und wer bekommt die Kamera?
+        ru: Я дам ему билет. А кто получит камеру?
+      - M: Die Kamera ist für Elif. Bring ihr bitte auch die Tasche.
+        ru: Камера для Элиф. Принеси ей ещё и сумку.
+      - H: Die Gäste brauchen Wasser. Können wir ihnen helfen?
+        ru: Гостям нужна вода. Можем им помочь?
+      - M: Ja. Ich bringe ihnen zwei Flaschen.
+        ru: Да. Я принесу им две бутылки.
+      - D: Danke! Dann fehlt uns nur noch der Schlüssel.
+        ru: Спасибо! Тогда нам не хватает только ключа.
+  assignment:
+    title: Die Verteilung
+    place: Kiel · отдельное распределение перед отправлением
+    people:
+      D:
+        name: Dana
+        voice: Anna
+      M:
+        name: Mateo
+        voice: Reed
+    lines:
+      - D: Mateo, wer bekommt die Liste und die Kamera?
+        ru: Матео, кто получает список и камеру?
+      - M: Elif bekommt beides. Ich brauche nur mein Ticket.
+        ru: Элиф получает и то и другое. Мне нужен только мой билет.
+      - D: Und was bekommen die Gäste?
+        ru: А что получают гости?
+      - M: Sie bekommen Wasser. Hauke hat den Schlüssel schon.
+        ru: Они получают воду. Ключ у Хауке уже есть.
+      - D: Gut. Dann nehme ich das Fotoalbum.
+        ru: Хорошо. Тогда я возьму фотоальбом.
+words:
+  useful:
+    title: Wörter für die Aufgabe
+    ru: Слова для действия
+    items:
+      - de: helfen
+        ru: помогать
+      - de: geben
+        ru: давать
+      - de: bringen
+        ru: приносить
+      - de: bekommen
+        ru: получать
+      - de: fehlen
+        ru: не хватать
+      - de: der Empfänger
+        ru: получатель
+        pl: Empfänger
+      - de: die Liste
+        ru: список
+        pl: Listen
+      - de: die Kamera
+        ru: камера
+        pl: Kameras
+      - de: das Ticket
+        ru: билет
+        pl: Tickets
+      - de: der Schlüssel
+        ru: ключ
+        pl: Schlüssel
+      - de: zurückgeben
+        ru: возвращать
+      - de: brauchen
+        ru: нуждаться
+tables:
+  rule:
+    title: "Dativ: mir, dir, ihm, ihr, uns, euch, ihnen"
+    ru: Опора для решения
+    head:
+      - Beispiel
+      - Смысл и форма
+    ruCols:
+      - 1
+    rows:
+      - - Kannst du mir helfen?
+        - "helfen требует Dativ: mir, dir, ihm, ihr."
+      - - Ich gebe ihm das Ticket.
+        - ihm — получатель; das Ticket — предмет.
+      - - Ich bringe ihnen Wasser.
+        - Гости → ihnen; команда → uns / euch.
+tasks:
+  matching:
+    kind: worksheet
+    part: a2-hoeren-3
+    format: matching
+    title: Wer bekommt was?
+    questions:
+      - prompt: Elif
+        options:
+          - Liste und Kamera
+          - Ticket
+          - Wasser
+          - Schlüssel
+          - Tasche
+        answers:
+          - Liste und Kamera
+      - prompt: Mateo
+        options:
+          - Liste und Kamera
+          - Ticket
+          - Wasser
+          - Schlüssel
+          - Tasche
+        answers:
+          - Ticket
+      - prompt: Gäste
+        options:
+          - Liste und Kamera
+          - Ticket
+          - Wasser
+          - Schlüssel
+          - Tasche
+        answers:
+          - Wasser
+      - prompt: Hauke
+        options:
+          - Liste und Kamera
+          - Ticket
+          - Wasser
+          - Schlüssel
+          - Tasche
+        answers:
+          - Schlüssel
+      - prompt: Dana
+        options:
+          - Liste und Kamera
+          - Ticket
+          - Wasser
+          - Schlüssel
+          - Fotoalbum
+        answers:
+          - Fotoalbum
+    dialogue: assignment
+  talk:
+    kind: card
+    part: a2-sprechen-2
+    title: Hilfe im Alltag
+    theme: Hilfe
+    word: Wem? Was?
+    sample:
+      - Kannst du mir bitte helfen?
+      - Ja, gern. Was brauchst du?
+      - Bring mir bitte die Tasche.
+  note:
+    kind: message
+    part: a2-lesen-2
+    title: Nachricht vor der Abfahrt
+    from: Dana
+    text: Mateo braucht das Ticket. Gib es ihm bitte. Elif braucht die Kamera und die Tasche. Bring
+      ihr beides. Die Gäste brauchen Wasser. Hauke hat den Schlüssel schon.
+steps:
+  - id: start
+    chapter: scene
+    title: Новое дело команды
+    beats:
+      - read: "Перед поездкой в клубе лежат билеты, камера и ключи. Элиф готовит список, Дана раздаёт
+          вещи, Матео помогает гостям. Чтобы ничего не потерять, нужно понять не только что
+          передают, но и кому. Все нужные условия даны в сцене: знания географии, настоящих цен
+          или расписаний не требуются. Сначала попробуйте понять, какого результата добиваются
+          друзья, затем слушайте реплики. На новом уровне важно не только найти число или
+          знакомое слово, но и связать несколько сведений."
+        point: Кому нужна вещь
+        set:
+          view: dialogue
+          dialogue: scene
+          reveal: 4
+      - read: "*Ihm* отсылает к Матео, *ihr* — к Элиф, *ihnen* — к гостям. Получатель может повторяться
+          у нескольких предметов. Вопрос *Wer bekommt die Kamera?* помогает установить адресата
+          по имени, а следующая реплика уже использует местоимение. Не определяйте получателя
+          по роду вещи: женское *die Kamera* не делает владельца женщиной — это разные связи."
+        point: "Dativ: mir, dir, ihm, ihr, uns, euch, ihnen"
+        set:
+          reveal: 8
+  - id: words
+    chapter: words
+    title: Слова, которые понадобятся
+    beats:
+      - read: Для действия нужны глаголы *helfen*, *geben*, *bringen*, *bekommen*. Они описывают разные
+          стороны передачи. В просьбе *Gib mir die Liste* получатель — говорящий, а список —
+          предмет. *Die Gäste* во множественном числе заменяются *ihnen*. В игре сначала
+          установите, кто назван в сообщении, затем найдите подходящее местоимение и действие.
+        point: Сначала используйте слово для решения; словарь остаётся справочником.
+        set:
+          view: words
+          words: useful
+          reveal: 6
+      - read: "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к
+          ситуации: какие слова обозначают человека, место, условие или уже выполненное
+          действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово
+          встретится снова в записке или разговоре, попробуйте восстановить его смысл до
+          подсказки."
+        point: Возвращайтесь к выражениям в сообщениях и новых действиях.
+        set:
+          reveal: 12
+  - id: grammar
+    chapter: grammar
+    title: "Dativ: mir, dir, ihm, ihr, uns, euch, ihnen"
+    beats:
+      - read: "После *helfen* адресат стоит в дательном: *mir helfen*, *dir helfen*. Это не форма
+          *mich*, знакомая по Akkusativ. Смысл просьбы — кому нужна помощь. Местоимение
+          позволяет не повторять имя в соседних репликах, но сначала должно быть понятно, о ком
+          идёт речь. Если адресат неясен, уточните имя."
+        point: "helfen требует Dativ: mir, dir, ihm, ihr."
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: "У *geben* часто есть два участника: то, что дают, и человек, которому дают. В нашем
+          примере билет передают Матео: *ihm*. Билет остаётся предметом в Akkusativ. Для первых
+          шагов используйте порядок «получатель — предмет»: он помогает удерживать обе связи и
+          не менять их местами по смыслу."
+        point: ihm — получатель; das Ticket — предмет.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: "Нескольким гостям соответствуют *ihnen*. Когда говорящий включает себя в группу,
+          используется *uns*. Когда обращается к нескольким друзьям — *euch*. Вежливое *Ihnen*
+          пишется с большой буквы. Не смешивайте его с обычным *ihnen*: контекст разговора и
+          обращение помогают различить формы."
+        point: Гости → ihnen; команда → uns / euch.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+  - id: frames
+    chapter: grammar
+    title: Как устроена реплика
+    beats:
+      - read: "Вопрос начинается с *Kannst*, после него *du*, затем адресат *mir*, в конце *helfen*.
+          Инфинитив сохраняет рамку модального глагола из A1. Новая часть здесь — падеж
+          получателя. Можно ответить *Ja, gern* и уточнить задачу: это реакция на просьбу, а не
+          автоматическое обещание передать любую вещь."
+        point: "*Kannst du mir helfen?* — просьба о помощи."
+        set:
+          view: sentence
+          rows:
+            - de:
+                - ""
+                - Kannst
+                - du mir
+                - helfen?
+              ru: Можешь мне помочь?
+  - id: check
+    chapter: practice
+    title: Проверьте смысл до подсказки
+    beats:
+      - question: Матео нужен билет. Кого заменяет ihm?
+        read: В этом контексте *ihm* заменяет Матео. Род местоимения связан с человеком, а не с
+          билетом. Сначала найдите предыдущую реплику, где адресат назван прямо. Если бы билет
+          передавали Элиф, было бы *ihr das Ticket*. Сам билет от этого не меняет род.
+        point: Получатель определяется по контексту, не по предмету.
+        set:
+          view: table
+          table: rule
+      - question: Как попросить друга помочь вам?
+        read: "*Kannst du mir bitte helfen?* Получатель помощи — вы, поэтому *mir*. Если помощь нужна
+          нескольким людям вместе с вами, используйте *uns*. В ответе можно уточнить, что
+          требуется. Это безопаснее, чем угадывать действие по одному знакомому слову."
+        point: "*mir* — мне; *uns* — нам."
+        set:
+          view: table
+          table: rule
+  - id: exam-matching
+    chapter: exam
+    title: Wer bekommt was?
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: matching
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: matching
+        set:
+          view: task
+          task: matching
+          solved: true
+  - id: exam-talk
+    chapter: exam
+    title: Hilfe im Alltag
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: talk
+          reveal: 0
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: talk
+          reveal: 0
+        set:
+          view: task
+          task: talk
+          solved: true
+  - id: exam-note
+    chapter: exam
+    title: Nachricht vor der Abfahrt
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: note
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: note
+        set:
+          view: task
+          task: note
+          solved: true
+exercises:
+  - type: choice
+    q: Kannst du ___ helfen?
+    options:
+      - mir
+      - mich
+      - mein
+    answer: 0
+    why: "*helfen* + Dativ."
+  - type: choice
+    q: Mateo braucht ein Ticket. Ich gebe ___ das Ticket.
+    options:
+      - ihm
+      - ihr
+      - ihnen
+    answer: 0
+    why: Матео → *ihm*.
+  - type: choice
+    q: Elif braucht die Tasche. Ich bringe ___ die Tasche.
+    options:
+      - ihr
+      - ihm
+      - uns
+    answer: 0
+    why: Элиф → *ihr*.
+  - type: choice
+    q: Die Gäste brauchen Wasser. Wir helfen ___.
+    options:
+      - ihnen
+      - ihm
+      - ihr
+    answer: 0
+    why: Множественное число → *ihnen*.
+  - type: choice
+    ru: Помогите нам, пожалуйста!
+    q: Helft ___ bitte!
+    options:
+      - uns
+      - euch
+      - ihn
+    answer: 0
+    why: Нам — *uns*.
+  - type: choice
+    ru: Дай мне, пожалуйста, список!
+    q: Gib ___ bitte die Liste!
+    options:
+      - mir
+      - mich
+      - mein
+    answer: 0
+    why: Получатель — *mir*.
+  - type: order
+    ru: Можешь мне помочь?
+    de: Kannst du mir helfen?
+  - type: order
+    ru: Я даю ему билет.
+    de: Ich gebe ihm das Ticket.
+  - type: order
+    ru: Принеси ей, пожалуйста, сумку.
+    de: Bring ihr bitte die Tasche.
+  - type: order
+    ru: Мы им помогаем.
+    de: Wir helfen ihnen.
+  - type: order
+    ru: Спасибо за твою помощь!
+    de: Danke für deine Hilfe!
+  - type: order
+    ru: Нам не хватает ключа.
+    de: Der Schlüssel fehlt uns.
+case:
+  title: Für wen ist das Ticket?
+  ru: Кому нужен билет
+  intro: В дневнике оказались две версии сообщения. Установите, что подтверждено первоисточником.
+    Вывод зависит от языка, а не от личности автора.
+  people: {}
+  steps:
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Mateo braucht das Ticket. Ich gebe es ihm.
+          ru: Матео нужен билет. Я даю его ему.
+      question: Кто получатель?
+      options:
+        - Матео
+        - Билет
+        - Элиф
+      answer: 0
+      right: "*Ihm* заменяет названного Матео."
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Die Gäste sind da. Wir bringen ihnen Wasser.
+          ru: Гости здесь. Мы приносим им воду.
+      question: Кого заменяет ihnen?
+      options:
+        - Одного Хауке
+        - Гостей
+        - Элиф
+      answer: 1
+      right: "*Ihnen* здесь дательный множественного числа."
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Elif bekommt die Kamera. Mateo bekommt das Ticket.
+          ru: Элиф получает камеру. Матео получает билет.
+      question: Можно поменять получателей без изменения смысла?
+      options:
+        - Да
+        - Нет
+        - Только если предмет женского рода
+      answer: 1
+      right: Род вещи не определяет её получателя.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+  ending: Запись исправлена по источникам. В следующей главе команда воспользуется
+    подтверждёнными сведениями для нового решения.
+adventure:
+  kind: sequence
+  title: Передайте вещи адресатам
+  intro: Перед поездкой в клубе лежат билеты, камера и ключи. Элиф готовит список, Дана раздаёт
+    вещи, Матео помогает гостям. Чтобы ничего не потерять, нужно понять не только что передают,
+    но и кому.
+  ending: "Адресаты проверены: вещи переданы по сообщениям, а не по догадкам. В Плёне нужно будет
+    разобраться, где встречаться и куда поставить сумки."
+  challenges:
+    - id: recipients
+      kind: match
+      title: Кому передать?
+      intro: Сначала выберите предмет, затем получателя. Несколько вещей могут достаться одному
+        человеку.
+      mode: reading
+      clue:
+        task: note
+      slots:
+        - id: ticket
+          label: Ticket
+          answer: mateo
+        - id: camera
+          label: Kamera
+          answer: elif
+        - id: bag
+          label: Tasche
+          answer: elif
+      options:
+        - id: mateo
+          label: Mateo
+        - id: elif
+          label: Elif
+        - id: hauke
+          label: Hauke
+      success: Билет передан Матео, камера и сумка — Элиф.
+      wrong: Сверьте все три предмета с сообщением.
+    - id: request
+      kind: order
+      title: Попросите о помощи
+      intro: "Обратитесь к одному другу: «Можешь мне помочь?»"
+      label: Реплика для команды
+      tokens:
+        - Kannst
+        - du mir
+        - helfen?
+      success: Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.
+      wrong: "Проверьте положение глагола и конец предложения: используйте все фрагменты."
+    - id: water
+      kind: select
+      title: Помогите гостям
+      intro: Выберите действие для гостей, не для Хауке.
+      mode: reading
+      clue:
+        task: note
+      options:
+        - id: o0
+          label: Ich bringe ihnen Wasser.
+        - id: o1
+          label: Ich gebe ihm den Schlüssel.
+        - id: o2
+          label: Ich bringe ihr die Kamera.
+      answer:
+        - o0
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."
+    - id: ticket
+      kind: order
+      title: Назовите получателя билета
+      intro: "Скажите: «Я даю ему билет»."
+      label: Реплика для команды
+      tokens:
+        - Ich
+        - gebe
+        - ihm
+        - das Ticket.
+      success: Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.
+      wrong: "Проверьте положение глагола и конец предложения: используйте все фрагменты."
+    - id: key
+      kind: select
+      title: Не ищите уже переданное
+      intro: Ключ не нужно передавать повторно. Кто уже его получил?
+      mode: reading
+      clue:
+        task: note
+      options:
+        - id: o0
+          label: Hauke
+        - id: o1
+          label: Dana
+        - id: o2
+          label: Die Gäste
+      answer:
+        - o0
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."

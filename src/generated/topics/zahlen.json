@@ -4,7 +4,7 @@
  "order": 2,
  "title": "Wie schreibt man das?",
  "ru": "Числа, алфавит, телефон",
- "lede": "Дана записывается на экзамен по телефону: называет фамилию по буквам, диктует номер — и выясняет, что немцы читают числа задом наперёд. А в перерыве у Матео день рождения, и оказывается, что возраст по-немецки не «имеют».",
+ "lede": "Дана записывается на экзамен по телефону: называет фамилию по буквам, диктует номер — и выясняет, что немцы читают числа задом наперёд. А в перерыве у Матео день рождения, и оказывается, что возраст по-немецки не «имеют». После занятий эти же числа помогают найти место у причала и проверить, есть ли вода и хлеб для прогулки под парусом.",
  "goals": [
   "Считать от 0 до 1000 и понимать числа на слух",
   "Назвать по буквам имя и фамилию и переспросить, если не расслышали",
@@ -65,61 +65,61 @@
      "who": "P",
      "de": "Moin, Sprachschule Förde, Petersen!",
      "ru": "Здравствуйте, языковая школа «Фёрде», Петерсен!",
-     "audio": "audio/4ba874204c1f.m4a"
+     "audio": "audio/68923dc2cd0b.m4a"
     },
     {
      "who": "D",
      "de": "Moin, hier ist Dana Ospanowa. Ich möchte die A1-Prüfung machen.",
      "ru": "Здравствуйте, это Дана Оспанова. Я хотела бы сдать экзамен A1.",
-     "audio": "audio/43e4294fe31f.m4a"
+     "audio": "audio/71c30c72c054.m4a"
     },
     {
      "who": "P",
      "de": "Gern. Ospanowa – wie schreibt man das?",
      "ru": "Хорошо. Оспанова — как это пишется?",
-     "audio": "audio/21ed4d7c9bed.m4a"
+     "audio": "audio/25786e782a3b.m4a"
     },
     {
      "who": "D",
      "de": "O – S – P – A – N – O – W – A. W wie Wilhelm.",
      "ru": "О — эс — пэ — а — эн — о — вэ — а. «Вэ», как Вильгельм.",
-     "audio": "audio/5ae54e6f62a2.m4a"
+     "audio": "audio/885553db2bc9.m4a"
     },
     {
      "who": "P",
      "de": "Danke. Und Ihre Telefonnummer, bitte?",
      "ru": "Спасибо. А ваш номер телефона?",
-     "audio": "audio/8b20de974243.m4a"
+     "audio": "audio/b92d26509823.m4a"
     },
     {
      "who": "D",
      "de": "Null eins sieben sechs – dreiundzwanzig – fünfundvierzig – einundachtzig.",
      "ru": "0176 — 23 — 45 — 81.",
-     "audio": "audio/cc7f543aede6.m4a"
+     "audio": "audio/432c4fe0e379.m4a"
     },
     {
      "who": "P",
      "de": "Null eins sieben sechs – zweiunddreißig …?",
      "ru": "0176 — 32…?",
-     "audio": "audio/04336aeabada.m4a"
+     "audio": "audio/c34e9fceb7ad.m4a"
     },
     {
      "who": "D",
      "de": "Nein, dreiundzwanzig! Zwei – drei.",
      "ru": "Нет, двадцать три! Два — три.",
-     "audio": "audio/f64877f0bdbf.m4a"
+     "audio": "audio/a61bce7d6f8e.m4a"
     },
     {
      "who": "P",
      "de": "Ah, dreiundzwanzig! Danke, Frau Ospanowa. Auf Wiederhören!",
      "ru": "А, двадцать три! Спасибо, госпожа Оспанова. До свидания!",
-     "audio": "audio/9c532323822f.m4a"
+     "audio": "audio/6dc325782582.m4a"
     },
     {
      "who": "D",
      "de": "Auf Wiederhören!",
      "ru": "До свидания!",
-     "audio": "audio/2f37f2a8e823.m4a"
+     "audio": "audio/14f3311d59ec.m4a"
     }
    ]
   },
@@ -146,61 +146,126 @@
      "who": "D",
      "de": "Mateo, hast du heute Geburtstag?",
      "ru": "Матео, у тебя сегодня день рождения?",
-     "audio": "audio/09d0c58d66e5.m4a"
+     "audio": "audio/5f8b668851ad.m4a"
     },
     {
      "who": "M",
      "de": "Ja! Ich habe heute achtundzwanzig Jahre.",
      "ru": "Да! Я «имею» сегодня двадцать восемь лет.",
-     "audio": "audio/736667ed3303.m4a"
+     "audio": "audio/4c32a47a0688.m4a"
     },
     {
      "who": "D",
      "de": "Alles Gute! Aber auf Deutsch sagt man: Ich bin achtundzwanzig.",
      "ru": "Поздравляю! Но по-немецки говорят: «Я — двадцать восемь».",
-     "audio": "audio/31dcd87e3233.m4a"
+     "audio": "audio/b1b3fbbc5c09.m4a"
     },
     {
      "who": "M",
      "de": "Ach so! Ich bin achtundzwanzig Jahre alt. Und du? Bist du auch achtundzwanzig?",
      "ru": "Ах вот как! Мне двадцать восемь лет. А тебе? Тебе тоже двадцать восемь?",
-     "audio": "audio/a4504f56a113.m4a"
+     "audio": "audio/31369adc7a94.m4a"
     },
     {
      "who": "D",
      "de": "Nein, ich bin einunddreißig.",
      "ru": "Нет, мне тридцать один.",
-     "audio": "audio/ed1f9af4376b.m4a"
+     "audio": "audio/8093ecdf54a2.m4a"
     },
     {
      "who": "M",
      "de": "Ich habe Kuchen für alle! Habt ihr Zeit?",
      "ru": "У меня торт для всех! У вас есть время?",
-     "audio": "audio/06166b810048.m4a"
+     "audio": "audio/e8c74cd3f41a.m4a"
     },
     {
      "who": "D",
      "de": "Ja, klar! Wir haben jetzt Pause.",
      "ru": "Да, конечно! У нас сейчас перерыв.",
-     "audio": "audio/9d35a6f9beb4.m4a"
+     "audio": "audio/ba75a3cdb374.m4a"
     },
     {
      "who": "M",
      "de": "Und Frau Thomsen? Hat sie auch Zeit?",
      "ru": "А фрау Томсен? У неё тоже есть время?",
-     "audio": "audio/7cf1dbbc2c59.m4a"
+     "audio": "audio/d1543ed73666.m4a"
     },
     {
      "who": "D",
      "de": "Frau Thomsen, haben Sie Zeit? Mateo hat Geburtstag!",
      "ru": "Фрау Томсен, у вас есть время? У Матео день рождения!",
-     "audio": "audio/1ecb008fe006.m4a"
+     "audio": "audio/8178467aa86c.m4a"
     },
     {
      "who": "T",
      "de": "Ja, natürlich! Alles Gute, Mateo!",
      "ru": "Да, конечно! Поздравляю, Матео!",
-     "audio": "audio/e361b9f5b576.m4a"
+     "audio": "audio/3bb256f8de37.m4a"
+    }
+   ]
+  },
+  "am-steg": {
+   "title": "Welche Nummer?",
+   "ru": "Нужное место у причала",
+   "place": "Парусный клуб на Kiellinie, Kiel",
+   "people": {
+    "M": {
+     "name": "Mateo",
+     "voice": "Reed"
+    },
+    "J": {
+     "name": "Herr Jensen",
+     "voice": "Grandpa"
+    }
+   },
+   "lines": [
+    {
+     "who": "M",
+     "de": "Moin, Herr Jensen! Wo ist die „Sprotte“?",
+     "ru": "Здравствуйте, господин Йенсен! Где «Шпротта»?",
+     "audio": "audio/412f77d65d20.m4a"
+    },
+    {
+     "who": "J",
+     "de": "Liegeplatz zweiunddreißig.",
+     "ru": "Место у причала тридцать два.",
+     "audio": "audio/12c402ab7f4a.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Dreiundzwanzig?",
+     "ru": "Двадцать три?",
+     "audio": "audio/2fc1818340c7.m4a"
+    },
+    {
+     "who": "J",
+     "de": "Nein, zweiunddreißig. Drei – zwei.",
+     "ru": "Нет, тридцать два. Три — два.",
+     "audio": "audio/7e711370cd07.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Danke! Wie schreibt man „Sprotte“?",
+     "ru": "Спасибо! Как пишется «Шпротта»?",
+     "audio": "audio/eed5faea21f5.m4a"
+    },
+    {
+     "who": "J",
+     "de": "Es – Pe – Er – O – Te – Te – E. Habt ihr Wasser?",
+     "ru": "Эс — пэ — эр — о — тэ — тэ — э. У вас есть вода?",
+     "audio": "audio/c0ad3cc127d7.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Ja, wir haben Wasser und Brot.",
+     "ru": "Да, у нас есть вода и хлеб.",
+     "audio": "audio/ad7f2db83a2a.m4a"
+    },
+    {
+     "who": "J",
+     "de": "Super! Viel Spaß!",
+     "ru": "Отлично! Хорошо провести время!",
+     "audio": "audio/5b20e8faa173.m4a"
     }
    ]
   }
@@ -215,7 +280,7 @@
      "ru": "0",
      "gender": null,
      "plural": null,
-     "audio": "audio/5ed7a5aaffce.m4a"
+     "audio": "audio/dfb2f51e0161.m4a"
     },
     {
      "de": "eins",
@@ -223,7 +288,7 @@
      "gender": null,
      "plural": null,
      "note": "в составе числа — ein: einundzwanzig",
-     "audio": "audio/760b335a91ae.m4a"
+     "audio": "audio/03fc47d40371.m4a"
     },
     {
      "de": "zwei",
@@ -231,14 +296,14 @@
      "gender": null,
      "plural": null,
      "note": "по телефону часто zwo",
-     "audio": "audio/84635ba21925.m4a"
+     "audio": "audio/a0deeea7bad0.m4a"
     },
     {
      "de": "drei",
      "ru": "3",
      "gender": null,
      "plural": null,
-     "audio": "audio/4721c4b58273.m4a"
+     "audio": "audio/2aa67b004408.m4a"
     },
     {
      "de": "vier",
@@ -246,14 +311,14 @@
      "gender": null,
      "plural": null,
      "note": "v = ф: [фир]",
-     "audio": "audio/47f335a21524.m4a"
+     "audio": "audio/f7c2cf910dc9.m4a"
     },
     {
      "de": "fünf",
      "ru": "5",
      "gender": null,
      "plural": null,
-     "audio": "audio/4e297e1b3a88.m4a"
+     "audio": "audio/8ddb8e42c11e.m4a"
     },
     {
      "de": "sechs",
@@ -261,7 +326,7 @@
      "gender": null,
      "plural": null,
      "note": "chs = кс: [зекс]",
-     "audio": "audio/4f40effb7162.m4a"
+     "audio": "audio/e7431ef2579c.m4a"
     },
     {
      "de": "sieben",
@@ -269,14 +334,14 @@
      "gender": null,
      "plural": null,
      "note": "s = з: [зи́бен]",
-     "audio": "audio/a52dcc27dc46.m4a"
+     "audio": "audio/359e2e96fea8.m4a"
     },
     {
      "de": "acht",
      "ru": "8",
      "gender": null,
      "plural": null,
-     "audio": "audio/858b4ccaa5af.m4a"
+     "audio": "audio/0e4972190cd3.m4a"
     },
     {
      "de": "neun",
@@ -284,7 +349,7 @@
      "gender": null,
      "plural": null,
      "note": "eu = ой: [нойн]",
-     "audio": "audio/da07618e3299.m4a"
+     "audio": "audio/415b4f07fe44.m4a"
     },
     {
      "de": "zehn",
@@ -292,21 +357,21 @@
      "gender": null,
      "plural": null,
      "note": "z = ц: [цэ:н]",
-     "audio": "audio/df9ba06921b6.m4a"
+     "audio": "audio/2e0aabad80a7.m4a"
     },
     {
      "de": "elf",
      "ru": "11",
      "gender": null,
      "plural": null,
-     "audio": "audio/9d12ddb7a283.m4a"
+     "audio": "audio/5e47ac6d39df.m4a"
     },
     {
      "de": "zwölf",
      "ru": "12",
      "gender": null,
      "plural": null,
-     "audio": "audio/559730b4b3a2.m4a"
+     "audio": "audio/97eafa051592.m4a"
     }
    ]
   },
@@ -319,7 +384,7 @@
      "ru": "номер телефона",
      "gender": "f",
      "plural": "Telefonnummern",
-     "audio": "audio/06ae2158e763.m4a"
+     "audio": "audio/b5142bccf91c.m4a"
     },
     {
      "de": "das Handy",
@@ -327,14 +392,14 @@
      "gender": "n",
      "plural": "Handys",
      "note": "[хэ́нди]",
-     "audio": "audio/0db09a58bc4f.m4a"
+     "audio": "audio/5f0517aaf744.m4a"
     },
     {
      "de": "die Handynummer",
      "ru": "номер мобильного",
      "gender": "f",
      "plural": "Handynummern",
-     "audio": "audio/9ea704f4c279.m4a"
+     "audio": "audio/c10ddcbbf5c1.m4a"
     },
     {
      "de": "die Adresse",
@@ -342,14 +407,14 @@
      "gender": "f",
      "plural": "Adressen",
      "note": "одна d, две s",
-     "audio": "audio/af3c629997ab.m4a"
+     "audio": "audio/5a8d11752955.m4a"
     },
     {
      "de": "die Hausnummer",
      "ru": "номер дома",
      "gender": "f",
      "plural": "Hausnummern",
-     "audio": "audio/af851f99e66c.m4a"
+     "audio": "audio/ec4098fc492c.m4a"
     },
     {
      "de": "die Postleitzahl",
@@ -357,7 +422,7 @@
      "gender": "f",
      "plural": "Postleitzahlen",
      "note": "PLZ — 24103 Kiel",
-     "audio": "audio/262865555bf4.m4a"
+     "audio": "audio/ca0df44ca602.m4a"
     },
     {
      "de": "buchstabieren",
@@ -365,7 +430,7 @@
      "gender": null,
      "plural": null,
      "note": "Wie schreibt man das?",
-     "audio": "audio/dca64d0dcc2c.m4a"
+     "audio": "audio/2d60bac4c41c.m4a"
     },
     {
      "de": "Wie bitte?",
@@ -373,21 +438,21 @@
      "gender": null,
      "plural": null,
      "note": "если не расслышали",
-     "audio": "audio/392527b6fa27.m4a"
+     "audio": "audio/c7e609b39725.m4a"
     },
     {
      "de": "Noch einmal, bitte.",
      "ru": "Ещё раз, пожалуйста.",
      "gender": null,
      "plural": null,
-     "audio": "audio/10723a1eae37.m4a"
+     "audio": "audio/e43749d33af2.m4a"
     },
     {
      "de": "Langsam, bitte.",
      "ru": "Помедленнее, пожалуйста.",
      "gender": null,
      "plural": null,
-     "audio": "audio/4d90b14b4cde.m4a"
+     "audio": "audio/2f97f0e4c360.m4a"
     },
     {
      "de": "Auf Wiederhören!",
@@ -395,7 +460,7 @@
      "gender": null,
      "plural": null,
      "note": "hören — слышать",
-     "audio": "audio/2f37f2a8e823.m4a"
+     "audio": "audio/14f3311d59ec.m4a"
     }
    ]
   },
@@ -409,7 +474,7 @@
      "gender": null,
      "plural": null,
      "note": "ich habe, du hast, er hat",
-     "audio": "audio/695cd989f5e4.m4a"
+     "audio": "audio/0174379a2855.m4a"
     },
     {
      "de": "die Zeit",
@@ -417,7 +482,7 @@
      "gender": "f",
      "plural": "Zeiten",
      "note": "Hast du Zeit?",
-     "audio": "audio/e17e1ea123db.m4a"
+     "audio": "audio/86e725563605.m4a"
     },
     {
      "de": "die Pause",
@@ -425,7 +490,7 @@
      "gender": "f",
      "plural": "Pausen",
      "note": "Wir haben Pause.",
-     "audio": "audio/afc5be5c0fa8.m4a"
+     "audio": "audio/8d6ee20d0c3e.m4a"
     },
     {
      "de": "der Geburtstag",
@@ -433,7 +498,7 @@
      "gender": "m",
      "plural": "Geburtstage",
      "note": "Ich habe heute Geburtstag.",
-     "audio": "audio/a6fe3bc4585f.m4a"
+     "audio": "audio/a5cad6901e31.m4a"
     },
     {
      "de": "Alles Gute!",
@@ -441,14 +506,14 @@
      "gender": null,
      "plural": null,
      "note": "и «всего хорошего»",
-     "audio": "audio/0fc4bba10ba4.m4a"
+     "audio": "audio/391cc74d0be8.m4a"
     },
     {
      "de": "das Jahr",
      "ru": "год",
      "gender": "n",
      "plural": "Jahre",
-     "audio": "audio/16ff9f052746.m4a"
+     "audio": "audio/2ab14b96ad42.m4a"
     },
     {
      "de": "alt",
@@ -456,21 +521,21 @@
      "gender": null,
      "plural": null,
      "note": "Wie alt bist du?",
-     "audio": "audio/62ee5b5198ef.m4a"
+     "audio": "audio/f91b8285d56e.m4a"
     },
     {
      "de": "der Kuchen",
      "ru": "пирог, торт",
      "gender": "m",
      "plural": "Kuchen",
-     "audio": "audio/5af08ae39ab2.m4a"
+     "audio": "audio/7a3359329b13.m4a"
     },
     {
      "de": "die Prüfung",
      "ru": "экзамен",
      "gender": "f",
      "plural": "Prüfungen",
-     "audio": "audio/2a3e2a92a8a6.m4a"
+     "audio": "audio/00c9a5d41782.m4a"
     },
     {
      "de": "der Raum",
@@ -478,7 +543,7 @@
      "gender": "m",
      "plural": "Räume",
      "note": "Raum 214",
-     "audio": "audio/e247b04d76dd.m4a"
+     "audio": "audio/c3b09d268614.m4a"
     },
     {
      "de": "die Frage",
@@ -486,14 +551,52 @@
      "gender": "f",
      "plural": "Fragen",
      "note": "Haben Sie Fragen?",
-     "audio": "audio/473c2b685699.m4a"
+     "audio": "audio/6861fee5c3e2.m4a"
     },
     {
      "de": "die Zahl",
      "ru": "число",
      "gender": "f",
      "plural": "Zahlen",
-     "audio": "audio/6a943019f10f.m4a"
+     "audio": "audio/78b8a464cf86.m4a"
+    }
+   ]
+  },
+  "proviant": {
+   "title": "Vor dem Segeln",
+   "ru": "Перед выходом под парусом",
+   "items": [
+    {
+     "de": "der Liegeplatz",
+     "ru": "место у причала",
+     "gender": "m",
+     "plural": "Liegeplätze",
+     "note": "Liegeplatz 32",
+     "audio": "audio/ce99bae57f01.m4a"
+    },
+    {
+     "de": "die Nummer",
+     "ru": "номер",
+     "gender": "f",
+     "plural": "Nummern",
+     "audio": "audio/a1e93791a9db.m4a"
+    },
+    {
+     "de": "das Wasser",
+     "ru": "вода",
+     "gender": "n",
+     "plural": null,
+     "noPlural": true,
+     "note": "Wir haben Wasser.",
+     "audio": "audio/8f766557d2a4.m4a"
+    },
+    {
+     "de": "das Brot",
+     "ru": "хлеб",
+     "gender": "n",
+     "plural": "Brote",
+     "note": "Wir haben Brot.",
+     "audio": "audio/b56ce826c04e.m4a"
     }
    ]
   }
@@ -746,15 +849,15 @@
    "sample": [
     {
      "de": "Mein Familienname ist Yıldız.",
-     "audio": "audio/0bb51fa412e1.m4a"
+     "audio": "audio/3438a8ccca99.m4a"
     },
     {
      "de": "Ypsilon – I – El – De – I – Zett.",
-     "audio": "audio/4a327999c1eb.m4a"
+     "audio": "audio/ea83e72614f8.m4a"
     },
     {
      "de": "Meine Handynummer ist null eins fünf neun – drei vier sieben sieben eins zwei.",
-     "audio": "audio/60b297b20824.m4a"
+     "audio": "audio/6fc7d92e7ac7.m4a"
     }
    ]
   },
@@ -772,7 +875,7 @@
     "Raum 241"
    ],
    "answer": 1,
-   "audio": "audio/e80126eb756e.m4a",
+   "audio": "audio/5d7ecf8e0075.m4a",
    "sample": []
   }
  },
@@ -921,6 +1024,59 @@
    }
   },
   {
+   "id": "wieder-am-wasser-1",
+   "step": "wieder-am-wasser",
+   "stepTitle": "Вспомните знакомство — найдите лодку",
+   "chapterIndex": 0,
+   "indexInStep": 0,
+   "read": "Сначала, не открывая прошлую тему, представьтесь Йенсену: имя, откуда вы и где живёте. Теперь послушайте Матео. Он ищет ту же «Шпротту», но *Liegeplatz* — «место у причала» — получает номер. Какой номер называет Йенсен? Запишите цифры до следующего фрагмента. Это та же задача, что с номером аудитории или дома: морская обстановка меняется, навык остаётся.",
+   "point": "*Liegeplatz* — место у причала; ловим номер, как номер аудитории",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "am-steg",
+    "reveal": 2,
+    "fresh": [
+     0,
+     1
+    ],
+    "focus": [
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "wieder-am-wasser-2",
+   "step": "wieder-am-wasser",
+   "stepTitle": "Вспомните знакомство — найдите лодку",
+   "chapterIndex": 0,
+   "indexInStep": 1,
+   "read": "Йенсен сказал 32 — *zweiunddreißig*. Матео услышал 23 и переспросил: это полезная стратегия, а не провал. После уточнения *Drei – zwei* путаница исчезает. Дальше название лодки по буквам и знакомое *haben*: *Habt ihr Wasser?* — *Wir haben Wasser und Brot*. *Viel Spaß!* — готовое пожелание «хорошо провести время». Потренируйтесь отвечать за Матео, прежде чем включать его реплику.",
+   "point": "Не уверены в числе — повторите его и попросите назвать цифры",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "am-steg",
+    "reveal": 8,
+    "fresh": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "focus": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ]
+   }
+  },
+  {
    "id": "null-bis-zwoelf-1",
    "step": "null-bis-zwoelf",
    "stepTitle": "От нуля до двенадцати",
@@ -930,7 +1086,7 @@
    "point": "0–12 учим наизусть; по телефону *zwo* вместо *zwei*",
    "scene": {
     "view": "words",
-    "dialogue": "geburtstag",
+    "dialogue": "am-steg",
     "words": "zahlen"
    }
   },
@@ -944,7 +1100,7 @@
    "point": "Переспросить: *Wie bitte?* *Noch einmal, bitte.* *Langsam, bitte.*",
    "scene": {
     "view": "words",
-    "dialogue": "geburtstag",
+    "dialogue": "am-steg",
     "words": "telefon"
    }
   },
@@ -958,8 +1114,22 @@
    "point": "*Ich habe Zeit*, *Wir haben Pause* — без артикля",
    "scene": {
     "view": "words",
-    "dialogue": "geburtstag",
+    "dialogue": "am-steg",
     "words": "kurs"
+   }
+  },
+  {
+   "id": "proviant-1",
+   "step": "proviant",
+   "stepTitle": "Вода и хлеб — тоже яхтинг",
+   "chapterIndex": 1,
+   "indexInStep": 0,
+   "read": "Прогулка под парусом начинается с обычных вещей: найти место, сверить номер, взять воду и хлеб. *Wasser* здесь не считают поштучно; у *Brot* форма *Brote* нужна, когда речь о целых буханках или видах хлеба. Сейчас достаточно *Wir haben Wasser und Brot*. Как заказать еду в кафе, купить продукты и назвать количество, разберём в темах о еде и покупках. Новые слова не требуют заранее учить винительный падеж.",
+   "point": "*Habt ihr Wasser?* — *Ja, wir haben Wasser und Brot.*",
+   "scene": {
+    "view": "words",
+    "dialogue": "am-steg",
+    "words": "proviant"
    }
   },
   {
@@ -972,8 +1142,8 @@
    "point": "13–19: единица + *zehn*, десятки — *-zig*; но *sechzehn*, *siebzig*, *zwanzig*, *dreißig*",
    "scene": {
     "view": "table",
-    "dialogue": "geburtstag",
-    "words": "kurs",
+    "dialogue": "am-steg",
+    "words": "proviant",
     "table": "zehn",
     "focus": [
      0,
@@ -996,8 +1166,8 @@
    "point": "21–99: единицы + *und* + десятки: *einundzwanzig*, *siebenundsechzig*",
    "scene": {
     "view": "table",
-    "dialogue": "geburtstag",
-    "words": "kurs",
+    "dialogue": "am-steg",
+    "words": "proviant",
     "table": "zwanzig",
     "reveal": 5
    }
@@ -1012,8 +1182,8 @@
    "point": "Сотни — как в русском, внутри снова сначала единицы; всё одним словом",
    "scene": {
     "view": "table",
-    "dialogue": "geburtstag",
-    "words": "kurs",
+    "dialogue": "am-steg",
+    "words": "proviant",
     "table": "zwanzig",
     "reveal": 9,
     "focus": [
@@ -1040,8 +1210,8 @@
    "point": "*E* — «э», *I* — «и», *C* — «цэ», *H* — «ха»",
    "scene": {
     "view": "table",
-    "dialogue": "geburtstag",
-    "words": "kurs",
+    "dialogue": "am-steg",
+    "words": "proviant",
     "table": "alphabet",
     "focus": [
      0,
@@ -1061,8 +1231,8 @@
    "point": "*J* — «йот», *V* — «фау», *W* — «вэ», *Z* — «цэт»; две *l* — *Doppel-L*",
    "scene": {
     "view": "table",
-    "dialogue": "geburtstag",
-    "words": "kurs",
+    "dialogue": "am-steg",
+    "words": "proviant",
     "table": "alphabet",
     "focus": [
      4,
@@ -1085,8 +1255,8 @@
    "point": "*ich habe*, но *du hast*, *er hat* — без *b*",
    "scene": {
     "view": "table",
-    "dialogue": "geburtstag",
-    "words": "kurs",
+    "dialogue": "am-steg",
+    "words": "proviant",
     "table": "haben",
     "reveal": 3
    }
@@ -1101,8 +1271,8 @@
    "point": "«У нас перерыв» — *Wir haben Pause*: обладатель — подлежащее",
    "scene": {
     "view": "table",
-    "dialogue": "geburtstag",
-    "words": "kurs",
+    "dialogue": "am-steg",
+    "words": "proviant",
     "table": "haben",
     "reveal": 6,
     "focus": [
@@ -1128,8 +1298,8 @@
    "point": "Утверждение: *Du hast heute Geburtstag.* — подлежащее, потом глагол",
    "scene": {
     "view": "sentence",
-    "dialogue": "geburtstag",
-    "words": "kurs",
+    "dialogue": "am-steg",
+    "words": "proviant",
     "table": "haben",
     "rows": [
      {
@@ -1161,7 +1331,7 @@
       "punct": ".",
       "plain": "Du hast heute Geburtstag.",
       "ru": "У тебя сегодня день рождения.",
-      "audio": "audio/5a64491b181a.m4a"
+      "audio": "audio/914003d683f4.m4a"
      }
     ]
    }
@@ -1176,8 +1346,8 @@
    "point": "*Ja* / *Nein* + запятая + обычный порядок: *Nein, ich bin 31.*",
    "scene": {
     "view": "sentence",
-    "dialogue": "geburtstag",
-    "words": "kurs",
+    "dialogue": "am-steg",
+    "words": "proviant",
     "table": "haben",
     "rows": [
      {
@@ -1208,7 +1378,7 @@
       "punct": "?",
       "plain": "Hast du heute Geburtstag?",
       "ru": "У тебя сегодня день рождения?",
-      "audio": "audio/c9184b2b3a95.m4a"
+      "audio": "audio/2c9b48bd7ce7.m4a"
      },
      {
       "slots": [
@@ -1239,7 +1409,7 @@
       "punct": ".",
       "plain": "Ich habe heute Geburtstag.",
       "ru": "Да, у меня сегодня день рождения.",
-      "audio": "audio/0db9ab29fc29.m4a"
+      "audio": "audio/47c10267f736.m4a"
      }
     ],
     "fresh": [
@@ -1257,8 +1427,8 @@
    "point": "*Wie alt bist du?* — *Ich bin 28 (Jahre alt).* С *sein*, не с *haben*",
    "scene": {
     "view": "sentence",
-    "dialogue": "geburtstag",
-    "words": "kurs",
+    "dialogue": "am-steg",
+    "words": "proviant",
     "table": "haben",
     "rows": [
      {
@@ -1290,7 +1460,7 @@
       "punct": "?",
       "plain": "Wie alt bist du?",
       "ru": "Сколько тебе лет?",
-      "audio": "audio/839ca5437fc1.m4a"
+      "audio": "audio/ed1da89ac9f9.m4a"
      },
      {
       "slots": [
@@ -1325,7 +1495,7 @@
       "punct": ".",
       "plain": "Ich bin achtundzwanzig Jahre alt.",
       "ru": "Мне двадцать восемь лет.",
-      "audio": "audio/2dded2b12670.m4a"
+      "audio": "audio/a06aac060336.m4a"
      }
     ]
    }
@@ -1339,84 +1509,10 @@
    "read": "32. *zwei* — двойка, *dreißig* — тридцать, но звучат они в обратном порядке. Дана сказала *dreiundzwanzig* — 23: те же цифры, только наоборот. Такие пары — 23 и 32, 45 и 54 — главный источник ошибок в аудировании. Записывайте сначала единицы справа и только потом десяток слева. Через неделю тренировки рука начнёт делать это сама.",
    "point": "*zweiunddreißig* = 32, *dreiundzwanzig* = 23",
    "question": "Фрау Петерсен слышит *zweiunddreißig*. Какое число она записывает?",
-   "sceneBefore": {
-    "view": "sentence",
-    "dialogue": "geburtstag",
-    "words": "kurs",
-    "table": "haben",
-    "rows": [
-     {
-      "slots": [
-       [
-        {
-         "key": "wie",
-         "text": "Wie"
-        },
-        {
-         "key": "alt",
-         "text": "alt"
-        }
-       ],
-       [
-        {
-         "key": "bist",
-         "text": "bist"
-        }
-       ],
-       [
-        {
-         "key": "du",
-         "text": "du"
-        }
-       ],
-       []
-      ],
-      "punct": "?",
-      "plain": "Wie alt bist du?",
-      "ru": "Сколько тебе лет?",
-      "audio": "audio/839ca5437fc1.m4a"
-     },
-     {
-      "slots": [
-       [
-        {
-         "key": "ich",
-         "text": "Ich"
-        }
-       ],
-       [
-        {
-         "key": "bin",
-         "text": "bin"
-        }
-       ],
-       [
-        {
-         "key": "achtundzwanzig",
-         "text": "achtundzwanzig"
-        },
-        {
-         "key": "jahre",
-         "text": "Jahre"
-        },
-        {
-         "key": "alt",
-         "text": "alt"
-        }
-       ],
-       []
-      ],
-      "punct": ".",
-      "plain": "Ich bin achtundzwanzig Jahre alt.",
-      "ru": "Мне двадцать восемь лет.",
-      "audio": "audio/2dded2b12670.m4a"
-     }
-    ]
-   },
    "scene": {
     "view": "table",
-    "dialogue": "geburtstag",
-    "words": "kurs",
+    "dialogue": "am-steg",
+    "words": "proviant",
     "table": "zwanzig",
     "rows": [
      {
@@ -1448,7 +1544,7 @@
       "punct": "?",
       "plain": "Wie alt bist du?",
       "ru": "Сколько тебе лет?",
-      "audio": "audio/839ca5437fc1.m4a"
+      "audio": "audio/ed1da89ac9f9.m4a"
      },
      {
       "slots": [
@@ -1483,7 +1579,7 @@
       "punct": ".",
       "plain": "Ich bin achtundzwanzig Jahre alt.",
       "ru": "Мне двадцать восемь лет.",
-      "audio": "audio/2dded2b12670.m4a"
+      "audio": "audio/a06aac060336.m4a"
      }
     ],
     "focus": [
@@ -1501,88 +1597,10 @@
    "read": "*M – Ü – Doppel-L – E – R.* Букву *Ü* называют по звуку — «ю» с вытянутыми губами — или *U-Umlaut*. Две *l* подряд — *Doppel-L*: так короче и понятнее, чем «эль, эль». И не забудьте, что *E* — это «э». Если вас переспросят *Mit U-Umlaut?*, ответ — *Ja, mit Ü*. А если умлаута на клавиатуре нет, фамилию пишут *Mueller*.",
    "point": "*Müller*: *M – Ü – Doppel-L – E – R*",
    "question": "Как продиктовать по буквам фамилию *Müller*?",
-   "sceneBefore": {
-    "view": "table",
-    "dialogue": "geburtstag",
-    "words": "kurs",
-    "table": "zwanzig",
-    "rows": [
-     {
-      "slots": [
-       [
-        {
-         "key": "wie",
-         "text": "Wie"
-        },
-        {
-         "key": "alt",
-         "text": "alt"
-        }
-       ],
-       [
-        {
-         "key": "bist",
-         "text": "bist"
-        }
-       ],
-       [
-        {
-         "key": "du",
-         "text": "du"
-        }
-       ],
-       []
-      ],
-      "punct": "?",
-      "plain": "Wie alt bist du?",
-      "ru": "Сколько тебе лет?",
-      "audio": "audio/839ca5437fc1.m4a"
-     },
-     {
-      "slots": [
-       [
-        {
-         "key": "ich",
-         "text": "Ich"
-        }
-       ],
-       [
-        {
-         "key": "bin",
-         "text": "bin"
-        }
-       ],
-       [
-        {
-         "key": "achtundzwanzig",
-         "text": "achtundzwanzig"
-        },
-        {
-         "key": "jahre",
-         "text": "Jahre"
-        },
-        {
-         "key": "alt",
-         "text": "alt"
-        }
-       ],
-       []
-      ],
-      "punct": ".",
-      "plain": "Ich bin achtundzwanzig Jahre alt.",
-      "ru": "Мне двадцать восемь лет.",
-      "audio": "audio/2dded2b12670.m4a"
-     }
-    ],
-    "focus": [
-     1,
-     2
-    ]
-   },
    "scene": {
     "view": "table",
-    "dialogue": "geburtstag",
-    "words": "kurs",
+    "dialogue": "am-steg",
+    "words": "proviant",
     "table": "alphabet",
     "rows": [
      {
@@ -1614,7 +1632,7 @@
       "punct": "?",
       "plain": "Wie alt bist du?",
       "ru": "Сколько тебе лет?",
-      "audio": "audio/839ca5437fc1.m4a"
+      "audio": "audio/ed1da89ac9f9.m4a"
      },
      {
       "slots": [
@@ -1649,7 +1667,7 @@
       "punct": ".",
       "plain": "Ich bin achtundzwanzig Jahre alt.",
       "ru": "Мне двадцать восемь лет.",
-      "audio": "audio/2dded2b12670.m4a"
+      "audio": "audio/a06aac060336.m4a"
      }
     ],
     "focus": [
@@ -1669,8 +1687,8 @@
    "question": "Как спросить Матео, есть ли у него время?",
    "sceneBefore": {
     "view": "sentence",
-    "dialogue": "geburtstag",
-    "words": "kurs",
+    "dialogue": "am-steg",
+    "words": "proviant",
     "table": "alphabet",
     "rows": [
      {
@@ -1698,14 +1716,14 @@
       "punct": ".",
       "plain": "Du hast Zeit.",
       "ru": "У тебя есть время.",
-      "audio": "audio/805bff54773f.m4a"
+      "audio": "audio/d72a29da901a.m4a"
      }
     ]
    },
    "scene": {
     "view": "sentence",
-    "dialogue": "geburtstag",
-    "words": "kurs",
+    "dialogue": "am-steg",
+    "words": "proviant",
     "table": "alphabet",
     "rows": [
      {
@@ -1732,7 +1750,7 @@
       "punct": "?",
       "plain": "Hast du Zeit?",
       "ru": "У тебя есть время?",
-      "audio": "audio/3d2deeeebd6a.m4a"
+      "audio": "audio/1e9409fad97a.m4a"
      },
      {
       "slots": [
@@ -1759,11 +1777,87 @@
       "punct": ".",
       "plain": "Ich habe Zeit.",
       "ru": "Да, у меня есть время.",
-      "audio": "audio/79651f885d25.m4a"
+      "audio": "audio/45a922c923ef.m4a"
      }
     ],
     "fresh": [
      1
+    ]
+   }
+  },
+  {
+   "id": "erklaeren-und-anwenden-1",
+   "step": "erklaeren-und-anwenden",
+   "stepTitle": "Научите напарника читать числа",
+   "chapterIndex": 3,
+   "indexInStep": 0,
+   "read": "В *dreiundzwanzig* сначала слышим 3, потом 20: получается 23. В *zweiunddreißig* — 2 и 30: получается 32. Объясните это своими словами и продиктуйте напарнику ещё одну пару: 45 и 54. Затем проверьте, может ли он повторить правило вам. Если занимаетесь один, запишите короткое объяснение на диктофон и прослушайте его. Называть цифры по одной при затруднении совершенно нормально.",
+   "point": "Умеете объяснить разницу и уточнить число — значит, навык работает",
+   "question": "Напарник путает 23 и 32. Как объяснить разницу без готовой подсказки?",
+   "scene": {
+    "view": "table",
+    "dialogue": "am-steg",
+    "words": "proviant",
+    "table": "zwanzig",
+    "rows": [
+     {
+      "slots": [
+       [],
+       [
+        {
+         "key": "ha",
+         "text": "Ha+st"
+        }
+       ],
+       [
+        {
+         "key": "du",
+         "text": "du"
+        },
+        {
+         "key": "zeit",
+         "text": "Zeit"
+        }
+       ],
+       []
+      ],
+      "punct": "?",
+      "plain": "Hast du Zeit?",
+      "ru": "У тебя есть время?",
+      "audio": "audio/1e9409fad97a.m4a"
+     },
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "hab",
+         "text": "hab+e"
+        }
+       ],
+       [
+        {
+         "key": "zeit",
+         "text": "Zeit"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Ich habe Zeit.",
+      "ru": "Да, у меня есть время.",
+      "audio": "audio/45a922c923ef.m4a"
+     }
+    ],
+    "focus": [
+     1,
+     2,
+     3
     ]
    }
   },
@@ -1777,9 +1871,9 @@
    "point": "Часть 1: после рассказа — фамилия по буквам и номер по цифрам",
    "scene": {
     "view": "task",
-    "dialogue": "geburtstag",
-    "words": "kurs",
-    "table": "alphabet",
+    "dialogue": "am-steg",
+    "words": "proviant",
+    "table": "zwanzig",
     "rows": [
      {
       "slots": [
@@ -1805,7 +1899,7 @@
       "punct": "?",
       "plain": "Hast du Zeit?",
       "ru": "У тебя есть время?",
-      "audio": "audio/3d2deeeebd6a.m4a"
+      "audio": "audio/1e9409fad97a.m4a"
      },
      {
       "slots": [
@@ -1832,7 +1926,7 @@
       "punct": ".",
       "plain": "Ich habe Zeit.",
       "ru": "Да, у меня есть время.",
-      "audio": "audio/79651f885d25.m4a"
+      "audio": "audio/45a922c923ef.m4a"
      }
     ],
     "task": "buchstabieren"
@@ -1848,9 +1942,9 @@
    "point": "Аудирование, часть 3: сначала вопрос, потом запись",
    "scene": {
     "view": "task",
-    "dialogue": "geburtstag",
-    "words": "kurs",
-    "table": "alphabet",
+    "dialogue": "am-steg",
+    "words": "proviant",
+    "table": "zwanzig",
     "rows": [
      {
       "slots": [
@@ -1876,7 +1970,7 @@
       "punct": "?",
       "plain": "Hast du Zeit?",
       "ru": "У тебя есть время?",
-      "audio": "audio/3d2deeeebd6a.m4a"
+      "audio": "audio/1e9409fad97a.m4a"
      },
      {
       "slots": [
@@ -1903,7 +1997,7 @@
       "punct": ".",
       "plain": "Ich habe Zeit.",
       "ru": "Да, у меня есть время.",
-      "audio": "audio/79651f885d25.m4a"
+      "audio": "audio/45a922c923ef.m4a"
      }
     ],
     "task": "nachricht"
@@ -1918,73 +2012,11 @@
    "read": "Ответ *b* — *Raum 214*. Фрау Петерсен говорит *zweihundertvierzehn* и для верности повторяет по цифрам: *zwei – eins – vier*. 241 было бы *zweihunderteinundvierzig*, 140 — *hundertvierzig*. В записи звучит ещё одно число — телефон школы с кильским кодом *0431*. Лишние числа в аудировании есть почти всегда: отвечайте на вопрос, а не на всё подряд.",
    "point": "Лишние числа в записи — норма: слушайте то, о чём спросили",
    "question": "Где теперь курс Матео?",
-   "sceneBefore": {
-    "view": "task",
-    "dialogue": "geburtstag",
-    "words": "kurs",
-    "table": "alphabet",
-    "rows": [
-     {
-      "slots": [
-       [],
-       [
-        {
-         "key": "ha",
-         "text": "Ha+st"
-        }
-       ],
-       [
-        {
-         "key": "du",
-         "text": "du"
-        },
-        {
-         "key": "zeit",
-         "text": "Zeit"
-        }
-       ],
-       []
-      ],
-      "punct": "?",
-      "plain": "Hast du Zeit?",
-      "ru": "У тебя есть время?",
-      "audio": "audio/3d2deeeebd6a.m4a"
-     },
-     {
-      "slots": [
-       [
-        {
-         "key": "ich",
-         "text": "Ich"
-        }
-       ],
-       [
-        {
-         "key": "hab",
-         "text": "hab+e"
-        }
-       ],
-       [
-        {
-         "key": "zeit",
-         "text": "Zeit"
-        }
-       ],
-       []
-      ],
-      "punct": ".",
-      "plain": "Ich habe Zeit.",
-      "ru": "Да, у меня есть время.",
-      "audio": "audio/79651f885d25.m4a"
-     }
-    ],
-    "task": "nachricht"
-   },
    "scene": {
     "view": "task",
-    "dialogue": "geburtstag",
-    "words": "kurs",
-    "table": "alphabet",
+    "dialogue": "am-steg",
+    "words": "proviant",
+    "table": "zwanzig",
     "rows": [
      {
       "slots": [
@@ -2010,7 +2042,7 @@
       "punct": "?",
       "plain": "Hast du Zeit?",
       "ru": "У тебя есть время?",
-      "audio": "audio/3d2deeeebd6a.m4a"
+      "audio": "audio/1e9409fad97a.m4a"
      },
      {
       "slots": [
@@ -2037,7 +2069,7 @@
       "punct": ".",
       "plain": "Ich habe Zeit.",
       "ru": "Да, у меня есть время.",
-      "audio": "audio/79651f885d25.m4a"
+      "audio": "audio/45a922c923ef.m4a"
      }
     ],
     "task": "nachricht",
@@ -2091,7 +2123,7 @@
    ],
    "ru": "Десять плюс двадцать — тридцать.",
    "why": "30 — единственный десяток на *-ßig*: *dreißig*.",
-   "audio": "audio/c31da39be9f5.m4a"
+   "audio": "audio/f4520ce70c4d.m4a"
   },
   {
    "id": "zahlen-5",
@@ -2102,7 +2134,7 @@
    ],
    "ru": "Сорок плюс семь — сорок семь.",
    "why": "Сначала единицы, потом десятки, всё одним словом: *sieben-und-vierzig*.",
-   "audio": "audio/84f5ea35f62c.m4a"
+   "audio": "audio/e9ee246079d0.m4a"
   },
   {
    "id": "zahlen-6",
@@ -2147,7 +2179,7 @@
     "habe"
    ],
    "hint": "haben",
-   "audio": "audio/0db9ab29fc29.m4a"
+   "audio": "audio/47c10267f736.m4a"
   },
   {
    "id": "zahlen-10",
@@ -2158,7 +2190,7 @@
    ],
    "hint": "haben",
    "why": "*du hast* — без *b*. В вопросе да/нет глагол стоит первым.",
-   "audio": "audio/3d2deeeebd6a.m4a"
+   "audio": "audio/1e9409fad97a.m4a"
   },
   {
    "id": "zahlen-11",
@@ -2169,7 +2201,7 @@
    ],
    "hint": "haben",
    "why": "*er hat* — тоже без *b*.",
-   "audio": "audio/9a782b360539.m4a"
+   "audio": "audio/7772f61c9c3c.m4a"
   },
   {
    "id": "zahlen-12",
@@ -2182,7 +2214,7 @@
    ],
    "answer": 1,
    "why": "Возраст — с *sein*: *Wie alt bist du?*",
-   "audio": "audio/839ca5437fc1.m4a"
+   "audio": "audio/ed1da89ac9f9.m4a"
   },
   {
    "id": "zahlen-13",
@@ -2195,7 +2227,7 @@
    ],
    "answer": 1,
    "why": "Не *Ich habe … Jahre*: возраст по-немецки «есть», а не «имеют».",
-   "audio": "audio/c4d1bdfc2259.m4a"
+   "audio": "audio/904339f8ac51.m4a"
   },
   {
    "id": "zahlen-14",
@@ -2203,21 +2235,53 @@
    "ru": "У тебя сегодня день рождения?",
    "de": "Hast du heute Geburtstag?",
    "why": "Вопрос да/нет: глагол на первом месте, *du* — сразу за ним.",
-   "audio": "audio/c9184b2b3a95.m4a"
+   "audio": "audio/2c9b48bd7ce7.m4a"
   },
   {
    "id": "zahlen-15",
    "type": "order",
    "ru": "У Вас есть вопросы?",
    "de": "Haben Sie Fragen?",
-   "audio": "audio/6c37038cc762.m4a"
+   "audio": "audio/80ae83467505.m4a"
   },
   {
    "id": "zahlen-16",
    "type": "order",
    "ru": "Мне двадцать восемь лет.",
    "de": "Ich bin achtundzwanzig Jahre alt.",
-   "audio": "audio/2dded2b12670.m4a"
+   "audio": "audio/a06aac060336.m4a"
+  },
+  {
+   "id": "zahlen-17",
+   "type": "choice",
+   "q": "Йенсен сказал *zweiunddreißig*. Где искать лодку?",
+   "options": [
+    "Liegeplatz 23",
+    "Liegeplatz 32",
+    "Liegeplatz 302"
+   ],
+   "answer": 1,
+   "why": "*zwei* + *dreißig* — 2 и 30, то есть 32. Если сомневаетесь, уточните цифры."
+  },
+  {
+   "id": "zahlen-18",
+   "type": "gap",
+   "q": "Wir ___ Wasser und Brot.",
+   "answer": [
+    "haben"
+   ],
+   "hint": "haben",
+   "ru": "У нас есть вода и хлеб.",
+   "why": "Повторяем *wir haben* в новой ситуации: правило то же, что в *Wir haben Pause*.",
+   "audio": "audio/44db98d47d14.m4a"
+  },
+  {
+   "id": "zahlen-19",
+   "type": "order",
+   "ru": "Как называется лодка?",
+   "de": "Wie heißt das Boot?",
+   "why": "Повторение темы 1: W-вопрос, затем *heißt*, затем *das Boot*.",
+   "audio": "audio/cb805e5b94b0.m4a"
   }
  ],
  "case": {
@@ -2245,14 +2309,14 @@
       "who": "X",
       "de": "Ja, Liegeplatz dreiundzwanzig. Morgen um acht.",
       "ru": "Да, место у причала двадцать три. Завтра в восемь.",
-      "audio": "audio/9767fa438e3a.m4a"
+      "audio": "audio/6d0f5620ec01.m4a"
      },
      {
       "kind": "quote",
       "who": "J",
       "de": "Zweiunddreißig? Da liegt die „Sprotte“!",
       "ru": "Тридцать два? Там же стоит «Шпротта»!",
-      "audio": "audio/06c1f37d1ae4.m4a"
+      "audio": "audio/08602e5b49cc.m4a"
      }
     ],
     "question": "Какое место у причала забронировал незнакомец?",
@@ -2277,7 +2341,7 @@
       "who": "X",
       "de": "Mein Name ist Vehrs. Vau – E – Ha – Er – Es.",
       "ru": "Моя фамилия Ферс. Фау — э — ха — эр — эс.",
-      "audio": "audio/e514bc3b53a8.m4a"
+      "audio": "audio/d050d5f292cc.m4a"
      }
     ],
     "question": "Как на самом деле пишется фамилия?",
@@ -2318,7 +2382,118 @@
     ]
    }
   ],
-  "ending": "Йенсен набирает номер. Незнакомец отвечает вежливо и обещает прийти завтра в восемь. На вопрос о возрасте для анкеты клуба он говорит: *Ich habe dreißig Jahre.* Йенсен хмурится: так ошибается Матео, но кильцы так не говорят — по-немецки *Ich bin dreißig*. Кто же он? Продолжение — в следующей теме, а ловить такие ошибки можно в «Шпионе»."
+  "ending": "Йенсен набирает номер. Незнакомец отвечает вежливо и обещает прийти завтра в восемь. На вопрос о возрасте для анкеты клуба он говорит: *Ich habe dreißig Jahre.* По-немецки *Ich bin dreißig*. Но и Матео так ошибался: одного окончания для обвинения недостаточно. Йенсен решает проверить бронь и документы. Кто же звонил? Продолжение — в следующей теме, а ловить такие ошибки можно в «Шпионе»."
+ },
+ "adventure": {
+  "kind": "harbor",
+  "title": "Найдите «Шпротту»",
+  "intro": "Команда собирается на прогулку к Kieler Woche. Матео встречает вас у клуба на Kiellinie. Найдите лодку по указанию Йенсена, позвоните Дане, узнайте, в какой аудитории искать Матео после занятий, соберите название лодки по буквам и проверьте провизию.",
+  "berths": [
+   23,
+   32,
+   203
+  ],
+  "berth": 32,
+  "directions": [
+   {
+    "de": "Liegeplatz zweiunddreißig.",
+    "audio": "audio/12c402ab7f4a.m4a",
+    "name": "Herr Jensen"
+   }
+  ],
+  "phone": "0176234581",
+  "phoneClue": [
+   {
+    "de": "Null eins sieben sechs – dreiundzwanzig – fünfundvierzig – einundachtzig.",
+    "audio": "audio/432c4fe0e379.m4a",
+    "name": "Dana"
+   }
+  ],
+  "phoneHelp": [
+   {
+    "de": "Nein, dreiundzwanzig! Zwei – drei.",
+    "audio": "audio/a61bce7d6f8e.m4a",
+    "name": "Dana"
+   }
+  ],
+  "room": {
+   "text": "Moin, hier ist Kerstin Petersen, Sprachschule Förde. Eine Nachricht für Mateo Fernández: Herr Fernández, Ihr Kurs ist jetzt in Raum zweihundertvierzehn. Zwei – eins – vier. Haben Sie Fragen? Meine Nummer ist null vier drei eins – achtundfünfzig – siebenundneunzig – dreißig. Auf Wiederhören!",
+   "audio": "audio/5d7ecf8e0075.m4a",
+   "options": [
+    "Raum 140",
+    "Raum 214",
+    "Raum 241"
+   ],
+   "answer": 1
+  },
+  "challenges": [
+   {
+    "id": "boat-name",
+    "kind": "order",
+    "title": "Подпишите бирку для лодки",
+    "intro": "Матео нашёл пустую бирку для ключа. Йенсен продиктовал название лодки по буквам. Послушайте запись и соберите надпись. Две одинаковые буквы тоже нужно поставить на свои места.",
+    "success": "*SPROTTE* — бирка готова. Ключ от нужной лодки теперь не перепутается с другими.",
+    "wrong": "Слушайте названия букв: *Es – Pe – Er – O – Te – Te – E*. В названии две *T*. Можно убрать отдельную букву из надписи и попробовать снова.",
+    "quotes": [
+     {
+      "de": "Es – Pe – Er – O – Te – Te – E. Habt ihr Wasser?",
+      "audio": "audio/c0ad3cc127d7.m4a",
+      "name": "Herr Jensen"
+     }
+    ],
+    "tokens": [
+     "S",
+     "P",
+     "R",
+     "O",
+     "T",
+     "T",
+     "E"
+    ],
+    "label": "Название на бирке"
+   },
+   {
+    "id": "provisions",
+    "kind": "pack",
+    "title": "Что уже есть для прогулки?",
+    "intro": "Перед выходом нужно проверить провизию. Матео рассказал, что уже есть у команды. Положите в корзину только то, что он назвал. Не смешайте сборы у лодки с историей про день рождения в школе.",
+    "success": "Вода и хлеб на месте. *Wir haben Wasser und Brot.* Лодка найдена, команда на связи, можно собираться на прогулку!",
+    "wrong": "Матео перечислил два продукта после *wir haben*. Переслушайте и уберите лишнее или добавьте недостающее. Торт был в школе, не у лодки.",
+    "quotes": [
+     {
+      "de": "Ja, wir haben Wasser und Brot.",
+      "audio": "audio/ad7f2db83a2a.m4a",
+      "name": "Mateo"
+     }
+    ],
+    "options": [
+     {
+      "id": "wasser",
+      "label": "Wasser",
+      "icon": "💧"
+     },
+     {
+      "id": "brot",
+      "label": "Brot",
+      "icon": "🍞"
+     },
+     {
+      "id": "kuchen",
+      "label": "Kuchen",
+      "icon": "🍰"
+     },
+     {
+      "id": "handy",
+      "label": "Handy",
+      "icon": "📱"
+     }
+    ],
+    "answer": [
+     "wasser",
+     "brot"
+    ]
+   }
+  ]
  },
  "spy": [
   {

@@ -1,0 +1,218 @@
+{
+ "id": "b1-check-04",
+ "level": "b1",
+ "mode": "review",
+ "title": "После уроков 1–4: мастерская для соседей",
+ "intro": "Новая группа готовит ремонтную мастерскую в Гаардене. Подберите помощника, отделите запись от подтверждения и составьте запрос. Все условия вымышлены.",
+ "sections": [
+  {
+   "id": "check",
+   "title": "Помощник, курс и запрос",
+   "taskIds": [
+    "read",
+    "phone",
+    "gaps",
+    "write",
+    "talk"
+   ]
+  }
+ ],
+ "tasks": {
+  "read": {
+   "kind": "worksheet",
+   "part": "b1-lesen-2",
+   "format": "article",
+   "title": "Wer hilft bei der Werkstatt?",
+   "text": "Nora möchte eine kleine Reparaturwerkstatt für Nachbarn organisieren. Sie sucht jemanden, der Fahrräder reparieren kann und am Samstag Zeit hat. Jonas arbeitet am Samstag im Laden. Karin hat samstags frei und repariert seit Jahren Fahrräder. Der Werkraum ist noch nicht bestätigt. Eine automatische Nachricht bestätigt nur den Eingang der Anfrage. Nora hat sich unabhängig davon für einen Kurs am Dienstag angemeldet. Der Kurs kostet 20 Euro. Für die Werkstatt hat sie bisher kein Geld bezahlt.",
+   "questions": [
+    {
+     "prompt": "Wer erfüllt beide Bedingungen?",
+     "options": [
+      "Jonas",
+      "Karin",
+      "Niemand"
+     ],
+     "answers": [
+      "Karin"
+     ]
+    },
+    {
+     "prompt": "Was bestätigt die automatische Nachricht?",
+     "options": [
+      "Die Buchung",
+      "Den Eingang der Anfrage",
+      "Die kostenlose Nutzung"
+     ],
+     "answers": [
+      "Den Eingang der Anfrage"
+     ]
+    },
+    {
+     "prompt": "Wofür sind die 20 Euro?",
+     "options": [
+      "Für den Kurs",
+      "Für die Miete",
+      "Für Getränke"
+     ],
+     "answers": [
+      "Für den Kurs"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "phone": {
+   "kind": "worksheet",
+   "part": "b1-hoeren-3",
+   "format": "article",
+   "title": "Rückruf der Verwaltung",
+   "recordings": [
+    {
+     "text": "Guten Tag, hier ist Frau Thomsen. Wir prüfen Ihre Anfrage für Samstag. Der Raum ist wahrscheinlich frei, aber die Kosten sind noch offen. Bitte warten Sie auf unsere schriftliche Zusage.",
+     "audio": "audio/ae94e06d2e08.m4a"
+    }
+   ],
+   "questions": [
+    {
+     "prompt": "Nora kann den Raum schon als gebucht ankündigen.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "falsch"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "gaps": {
+   "kind": "worksheet",
+   "part": "b1-sprachbausteine-1",
+   "format": "cloze",
+   "title": "Eine kurze Nachfrage · Ausschnitt",
+   "text": "Guten Tag, ich habe vor, eine Werkstatt [[1]] organisieren. Wir suchen jemanden, [[2]] Fahrräder reparieren kann. In einer [[3]] Gruppe möchten wir gemeinsam üben. Bitte sagen Sie mir, [[4]] der Raum am Samstag frei ist.",
+   "questions": [
+    {
+     "prompt": "Lücke 1",
+     "options": [
+      "zu",
+      "um",
+      "für"
+     ],
+     "answers": [
+      "zu"
+     ]
+    },
+    {
+     "prompt": "Lücke 2",
+     "options": [
+      "den",
+      "der",
+      "dem"
+     ],
+     "answers": [
+      "der"
+     ]
+    },
+    {
+     "prompt": "Lücke 3",
+     "options": [
+      "kleine",
+      "kleinen",
+      "kleiner"
+     ],
+     "answers": [
+      "kleinen"
+     ]
+    },
+    {
+     "prompt": "Lücke 4",
+     "options": [
+      "ob",
+      "weil",
+      "denn"
+     ],
+     "answers": [
+      "ob"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "write": {
+   "kind": "message",
+   "part": "b1-schreiben-1",
+   "title": "Anfrage zur Werkstatt",
+   "text": "Sie sind Nora. Schreiben Sie an Frau Thomsen: Samstag 10–13 Uhr, acht Personen. Raum und Kosten sind noch offen.",
+   "points": [
+    "Was Sie organisieren möchten",
+    "Tag, Uhrzeit und Personenzahl",
+    "Fragen nach Werkzeug und Kosten",
+    "Bitte um schriftliche Zusage und Kontakt"
+   ],
+   "situation": "Behandeln Sie alle vier Punkte. Schreiben Sie einen zusammenhängenden Brief mit Anrede und Gruß. Die Antwort wird nicht automatisch bewertet.",
+   "sample": [
+    {
+     "de": "Sehr geehrte Frau Thomsen, ich möchte am Samstag eine Reparaturwerkstatt für acht Nachbarn organisieren. Wir brauchen den Raum von 10 bis 13 Uhr. Gibt es dort Werkzeug? Wie hoch ist die Miete? Bitte bestätigen Sie die Bedingungen schriftlich. Sie erreichen mich per E-Mail. Mit freundlichen Grüßen Nora",
+     "audio": "audio/cf3c5d689004.m4a"
+    }
+   ]
+  },
+  "talk": {
+   "kind": "card",
+   "part": "b1-sprechen-3",
+   "title": "Aufgaben verteilen",
+   "situation": "Planen Sie die Werkstatt gemeinsam. Die Raumanfrage ist offen. Vereinbaren Sie einen nächsten Schritt statt eine Buchung zu erfinden.",
+   "word": "Vorschlag · Rückfrage · Reaktion · Einigung",
+   "roles": [
+    {
+     "title": "Person A",
+     "text": "Sie können am Samstag helfen und die Nachbarn informieren. Vor der Zusage möchten Sie noch keine Adresse schicken."
+    },
+    {
+     "title": "Person B",
+     "text": "Sie können Werkzeug besorgen und die Verwaltung anrufen. Entscheiden Sie gemeinsam, wer welche Aufgabe übernimmt."
+    }
+   ],
+   "sample": []
+  }
+ },
+ "review": [
+  {
+   "level": "b1",
+   "topic": "b1-neustart",
+   "label": "Связный рассказ и подтверждённые действия",
+   "taskIds": [
+    "read"
+   ]
+  },
+  {
+   "level": "b1",
+   "topic": "b1-menschen",
+   "label": "Кто соответствует описанию",
+   "taskIds": [
+    "read",
+    "gaps"
+   ]
+  },
+  {
+   "level": "b1",
+   "topic": "b1-lernen",
+   "label": "Условия и Dativ с прилагательными",
+   "taskIds": [
+    "gaps"
+   ]
+  },
+  {
+   "level": "b1",
+   "topic": "b1-anfragen",
+   "label": "Запрос с четырьмя пунктами",
+   "taskIds": [
+    "phone",
+    "write"
+   ]
+  }
+ ],
+ "dialogues": {}
+}

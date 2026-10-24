@@ -28,6 +28,36 @@
   margin-block: auto;
 }
 
+.stage-question {
+  max-width: 540px;
+  padding: 16px;
+}
+
+.stage-question h3 {
+  font-size: clamp(21px, 2.2vw, 30px);
+  line-height: 1.4;
+  margin: 14px 0;
+}
+
+.stage-question p {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.stage-reveal {
+  flex: none;
+  align-self: start;
+  padding: 10px 16px;
+  margin-top: 12px;
+  border: 1px solid var(--question);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--question);
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+
 .board[data-view="dialogue"] .board-view {
   overflow: hidden;
 }
@@ -974,6 +1004,9 @@ li[data-focus] > .word {
 /* Телефон */
 
 @media (max-width: 860px) {
+  .stage-question { padding: 4px; }
+  .stage-question h3 { font-size: 20px; margin: 8px 0; }
+  .stage-question p { font-size: 13px; margin: 8px 0; }
   .board {
     height: 38vh;
     min-height: 260px;
@@ -1102,3 +1135,27 @@ li[data-focus] > .word {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
   }
 }
+
+.task-role {
+  margin: 12px 0;
+  padding: 12px 16px;
+  border: 1px solid var(--line-strong);
+  border-radius: 6px;
+}
+.task-role summary { cursor: pointer; color: var(--accent); }
+.task-role p { margin: 12px 0 0; }
+
+.worksheet button:not(.play) {
+  padding: 8px 12px;
+  min-height: 40px;
+  border: 1px solid var(--line-strong);
+  border-radius: 6px;
+  background: var(--panel-2);
+  color: var(--text);
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+.worksheet button:not(.play):hover { border-color: var(--accent); }
+.worksheet .play { margin-right: 8px; }
+.cloze-text{line-height:2.9;white-space:pre-line}.cloze-gap{display:inline-flex!important;align-items:center;gap:5px;vertical-align:baseline;margin:0 5px}.cloze-gap span{font:11px var(--mono);color:var(--accent)}.cloze-gap select{display:inline-block!important;width:auto!important;max-width:190px;padding:5px!important;font-size:16px!important}.cloze ol{font-size:14px}

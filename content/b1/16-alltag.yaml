@@ -1,0 +1,776 @@
+id: b1-alltag
+order: 16
+title: Du brauchst nicht alles allein zu machen.
+ru: Разгружаем план и различаем необходимость и запрет
+lede: "Матео работает со вторника по субботу 17–23 и пытается взять ещё несколько задач
+  подготовки. Команда проверяет список: что обязательно, что уже предусмотрено, а что можно
+  поручить другому. Raum C и кухня подтверждены; встреча остаётся 18 октября 15–18 часов."
+goals:
+  - Понять отсутствие необходимости через nicht brauchen … zu
+  - Отличить его от запрета nicht dürfen
+  - Объяснить ограниченную задачу через nur
+  - Согласовать посильное распределение и возврат ключа
+grammar:
+  - nicht brauchen … zu / nur brauchen … zu; совет и обязанность
+exam:
+  - b1-lesen-2
+  - b1-sprachbausteine-1
+  - b1-hoeren-3
+  - b1-schreiben-1
+  - b1-sprechen-3
+dialogues:
+  scene:
+    title: Du brauchst nicht alles allein zu machen.
+    ru: Разгружаем план и различаем необходимость и запрет
+    place: Kiel · последняя неделя подготовки · вымышленная учебная ситуация
+    people:
+      D:
+        name: Dana
+        voice: Anna
+      M:
+        name: Mateo
+        voice: Reed
+      E:
+        name: Elif
+        voice: Flo
+      H:
+        name: Hauke
+        voice: Rocko
+    lines:
+      - M: Ich muss am Freitag auch noch die Becher kaufen.
+        ru: Мне ещё нужно в пятницу купить стаканы.
+      - E: Du brauchst die Becher nicht zu kaufen. Ich leihe Mehrwegbecher aus.
+        ru: Тебе не нужно покупать стаканы. Я возьму многоразовые напрокат.
+      - D: Du brauchst nicht alles allein zu machen. Du kümmerst dich um das Essen.
+        ru: Не нужно делать всё одному. Ты занимаешься едой.
+      - H: Ich hole den Schlüssel um halb drei ab. Du brauchst dafür nicht extra zu kommen.
+        ru: Я заберу ключ в половине третьего. Тебе не нужно ради этого специально приходить.
+      - M: Dann brauche ich nur die Zutatenliste zu prüfen.
+        ru: Тогда мне нужно только проверить список ингредиентов.
+      - E: Genau. Am Freitag arbeitest du ab fünf. Wir stimmen die Abholung ohne dich ab.
+        ru: Верно. В пятницу ты работаешь с пяти. Самовывоз согласуем без тебя.
+      - D: Wir sollten auch kurze Pausen einplanen und die Aufgaben wechseln.
+        ru: Нам стоит предусмотреть и короткие перерывы и меняться задачами.
+      - H: Um zwanzig vor sechs räumen wir gemeinsam auf. Den Schlüssel gebe ich bis Viertel nach sechs
+          zurück.
+        ru: В без двадцати шесть начнём убирать вместе. Ключ я верну до четверти седьмого.
+words:
+  useful:
+    title: Wörter für die Aufgabe
+    ru: Слова для действия
+    items:
+      - de: die Belastung
+        ru: нагрузка
+        pl: Belastungen
+      - de: die Entlastung
+        ru: снижение нагрузки
+        pl: Entlastungen
+      - de: die Zutatenliste
+        ru: список ингредиентов
+        pl: Zutatenlisten
+      - de: die Aufgabenverteilung
+        ru: распределение задач
+        pl: Aufgabenverteilungen
+      - de: die Schlüsselbox
+        ru: ящик для ключа
+        pl: Schlüsselboxen
+      - de: die Spätschicht
+        ru: вечерняя смена
+        pl: Spätschichten
+      - de: die Leihgabe
+        ru: вещь, данная во временное пользование
+        pl: Leihgaben
+      - de: der Wechsel
+        ru: смена, замена
+        pl: Wechsel
+      - de: nicht nötig
+        ru: не требуется
+      - de: nur noch
+        ru: ещё только
+      - de: überlastet
+        ru: перегруженный
+      - de: eine Pause einplanen
+        ru: предусмотреть перерыв
+      - de: gegenseitig helfen
+        ru: помогать друг другу
+      - de: abstimmen
+        ru: согласовать
+      - de: allein übernehmen
+        ru: взять на себя одному
+tables:
+  rule:
+    title: nicht brauchen … zu / nur brauchen … zu; совет и обязанность
+    ru: Опора для решения
+    head:
+      - Beispiel
+      - Смысл и форма
+    ruCols:
+      - 1
+    rows:
+      - - Du brauchst die Becher nicht zu kaufen.
+        - nicht brauchen … zu = не нужно, не обязательно.
+      - - Du brauchst nur die Liste zu prüfen.
+        - "nur ограничивает объём: нужно только это действие."
+      - - Du brauchst nicht zu kommen. / Du darfst nicht kommen.
+        - Отсутствие необходимости не равно запрету.
+tasks:
+  plan:
+    kind: message
+    part: b1-lesen-2
+    title: Was bleibt für wen? · Ausschnitt
+    text: "Bestätigt: Raum C mit Küche, 18. Oktober 15–18 Uhr, 40 Euro. Hauke holt den Schlüssel
+      14:30 ab und gibt ihn bis 18:15 in die Schlüsselbox zurück. Ab 17:40 räumen alle
+      gemeinsam auf; 18:00 verlassen sie den Raum. Elif leiht am Freitag Mehrwegbecher aus. Bis
+      Donnerstag prüft Mateo nur die Zutatenliste. Am Sonntag organisiert er das Essen. Er
+      braucht keine Becher zu kaufen und den Schlüssel nicht selbst abzuholen. Abholung der
+      Becher ist eine Aufgabe, noch kein erledigter Punkt."
+  gaps:
+    kind: worksheet
+    part: b1-sprachbausteine-1
+    format: cloze
+    title: Eine Nachricht zur Entlastung
+    text: Hallo Mateo, du [[1]] die Becher nicht [[2]] kaufen. Elif übernimmt das, [[3]] du am
+      Freitag arbeitest. Der Raum [[4]] letzte Woche bestätigt. Hauke spricht mit [[5]]
+      Hausmeister. Das sind Menschen, mit [[6]] wir die Übergabe klären. [[7]] wir losgehen,
+      prüfen wir die Liste. Es ist wichtig, [[8]] alle ihren Teil kennen. Du brauchst [[9]] die
+      Zutaten zu prüfen. Wir helfen [[10]] gegenseitig. Viele Grüße, Dana
+    questions:
+      - prompt: Lücke 1
+        options:
+          - hast
+          - brauchst
+          - darfst
+        answers:
+          - brauchst
+      - prompt: Lücke 2
+        options:
+          - um
+          - damit
+          - zu
+        answers:
+          - zu
+      - prompt: Lücke 3
+        options:
+          - weil
+          - trotzdem
+          - obwohl
+        answers:
+          - weil
+      - prompt: Lücke 4
+        options:
+          - wurden
+          - wurde
+          - wird
+        answers:
+          - wurde
+      - prompt: Lücke 5
+        options:
+          - den
+          - der
+          - dem
+        answers:
+          - dem
+      - prompt: Lücke 6
+        options:
+          - denen
+          - den
+          - die
+        answers:
+          - denen
+      - prompt: Lücke 7
+        options:
+          - Nachdem
+          - Bevor
+          - Während
+        answers:
+          - Bevor
+      - prompt: Lücke 8
+        options:
+          - weil
+          - ob
+          - dass
+        answers:
+          - dass
+      - prompt: Lücke 9
+        options:
+          - nur
+          - nie
+          - keine
+        answers:
+          - nur
+      - prompt: Lücke 10
+        options:
+          - unser
+          - uns
+          - wir
+        answers:
+          - uns
+  notices:
+    kind: worksheet
+    part: b1-hoeren-3
+    format: article
+    title: Fünf Hinweise für die Vorbereitung
+    recordings:
+      - voice: Sandy
+        text: Sie brauchen keine eigenen Teller mitzubringen. Achtzehn Teller werden in der Küche
+          bereitgestellt. Lebensmittel und Getränke organisieren Sie weiterhin selbst.
+      - voice: Flo
+        text: Hier ist Elif. Die Becher hole ich am Freitag ab. Mateo braucht dafür nicht vor seiner
+          Arbeit durch die Stadt zu fahren. Ich melde mich nach der Abholung noch einmal.
+      - voice: Eddy
+        text: Die Schlüsselbox wird am Sonntag bis Viertel nach sechs kontrolliert. Bitte geben Sie
+          Ihren Schlüssel spätestens dann zurück. Bitte verlassen Sie den Raum schon um sechs.
+      - voice: Shelley
+        text: Sie brauchen den Raum nicht allein aufzuräumen. Die Gruppe hat gemeinsame Hilfe ab
+          zwanzig vor sechs eingeplant. Bitte räumen Sie eigene Sachen trotzdem selbst weg.
+      - voice: Grandpa
+        text: "Bitte beachten Sie: Sie dürfen keine Sachen vor dem Seiteneingang abstellen. Das ist
+          keine freiwillige Empfehlung. Der Zugang soll frei bleiben."
+    questions:
+      - prompt: Eigene Teller sind unbedingt notwendig.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Elif meldet sich erst nach der tatsächlichen Abholung zurück.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+      - prompt: Der Raum darf bis 18:15 benutzt werden.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Für das Aufräumen ist gemeinsame Hilfe vorgesehen.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+      - prompt: Sachen vor dem Seiteneingang sind nur nicht notwendig, aber erlaubt.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+  write:
+    kind: message
+    part: b1-schreiben-1
+    title: Einen überlasteten Helfer informieren
+    text: Mateo glaubt, dass er alle Aufgaben zusätzlich zur Arbeit allein erledigen muss.
+      Schreiben Sie ihm nach dem gemeinsamen Gespräch.
+    points:
+      - Seine Situation aufgreifen
+      - Zwei Aufgaben nennen, die er nicht selbst machen muss
+      - Seine verbleibende Aufgabe und die Hilfe erklären
+      - Zeit für eine Rückmeldung vorschlagen und nachfragen
+    sample:
+      - "Hallo Mateo, du arbeitest diese Woche viel und brauchst nicht alles allein zu machen.
+        Elif holt am Freitag die Mehrwegbecher ab. Du brauchst also keine neuen Becher zu
+        kaufen. Auch den Schlüssel musst du nicht selbst holen: Das übernimmt Hauke am Sonntag
+        um 14:30. Bis Donnerstag brauchst du nur die Zutatenliste zu prüfen. Am Sonntag
+        organisierst du das Essen. Wenn du dabei Hilfe brauchst, sag bitte Bescheid. Beim
+        Aufräumen helfen wir ab 17:40 alle zusammen. Könntest du uns bis Donnerstag sagen, ob
+        die Zutatenliste vollständig ist? Passt das für dich? Viele Grüße Dana"
+  talk:
+    kind: card
+    part: b1-sprechen-3
+    title: Arbeit und Vorbereitung vereinbaren
+    theme: Aufgaben ohne Überlastung
+    word: Zeit · notwendige Aufgabe · Hilfe · Rückmeldung
+    situation: Eine Person arbeitet Freitag 17–23 Uhr und kann keine zusätzliche Abholung
+      übernehmen. Verteilen Sie Becher, Essen, Schlüssel und Aufräumen realistisch. Bestätigen
+      Sie, was nicht mehr nötig ist.
+    roles:
+      - title: Person A
+        text: Sie kümmern sich um das Essen und prüfen die Zutaten. Am Freitag müssen Sie arbeiten. Sie
+          möchten wissen, welche Zusatzaufgaben wegfallen.
+      - title: Person B
+        text: Sie können die Becher abholen. Hauke übernimmt den Schlüssel. Für das Aufräumen gibt es
+          gemeinsame Hilfe. Fragen Sie nach dem Stand der Zutatenliste.
+steps:
+  - id: start
+    chapter: scene
+    title: Новое дело команды
+    beats:
+      - read: "Матео работает со вторника по субботу 17–23 и пытается взять ещё несколько задач
+          подготовки. Команда проверяет список: что обязательно, что уже предусмотрено, а что
+          можно поручить другому. Raum C и кухня подтверждены; встреча остаётся 18 октября
+          15–18 часов. Все нужные условия даны в сцене: знания географии, настоящих цен или
+          расписаний не требуются. Сначала попробуйте понять, какого результата добиваются
+          друзья, затем слушайте реплики. На новом уровне важно не только найти число или
+          знакомое слово, но и связать несколько сведений."
+        point: Разгружаем план и различаем необходимость и запрет
+        set:
+          view: dialogue
+          dialogue: scene
+          reveal: 4
+      - read: Brauchen с отрицанием и инфинитивом означает отсутствие необходимости. Это не запрет и не
+          сообщение о уже выполненном деле. Если Элиф возьмёт стаканы, Матео не нужно покупать
+          новые; из этого ещё не следует, что стаканы уже получены. Сначала разберите статус
+          каждого действия, затем выбирайте посильный следующий шаг и человека, который его
+          подтвердит.
+        point: nicht brauchen … zu / nur brauchen … zu; совет и обязанность
+        set:
+          reveal: 8
+  - id: words
+    chapter: words
+    title: Слова, которые понадобятся
+    beats:
+      - read: "Организация встречи включает небольшие, но разные задачи: список продуктов, получение
+          вещей, подготовка зала и возврат ключа. Их не стоит без проверки складывать на одного
+          человека. Здесь немецкий помогает перераспределить конкретное действие по времени.
+          Личный отдых и смена задач становятся частью согласованного плана, а не
+          неопределённой просьбой «как-нибудь не уставать»."
+        point: Сначала используйте слово для решения; словарь остаётся справочником.
+        set:
+          view: words
+          words: useful
+          reveal: 6
+      - read: "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к
+          ситуации: какие слова обозначают человека, место, условие или уже выполненное
+          действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово
+          встретится снова в записке или разговоре, попробуйте восстановить его смысл до
+          подсказки."
+        point: Возвращайтесь к выражениям в сообщениях и новых действиях.
+        set:
+          reveal: 15
+  - id: grammar
+    chapter: grammar
+    title: nicht brauchen … zu / nur brauchen … zu; совет и обязанность
+    beats:
+      - read: В нашей письменной модели brauchen соединяется с отрицанием и инфинитивом с zu. Смысл
+          близок к *Du musst die Becher nicht kaufen*. Это снимает необходимость покупки, а не
+          запрещает любые стаканы. В разговорной речи можно услышать и вариант без zu; здесь
+          тренируем явную письменную рамку. Обязательно проверьте, почему действие не требуется
+          и какая задача остаётся.
+        point: nicht brauchen … zu = не нужно, не обязательно.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: С nur человек получает небольшую конкретную задачу вместо всего списка. В примере нужно
+          проверить ингредиенты, а стаканы и ключ берут другие. Такая фраза не говорит, что
+          список уже проверен. Для общей работы всё равно потребуется подтвердить выполнение.
+          Не добавляйте новые обязанности в пересказ только потому, что человек остаётся
+          ответственным за еду.
+        point: "nur ограничивает объём: нужно только это действие."
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: "Первая фраза сообщает, что приход не нужен. Вторая запрещает приходить. Знакомое *nicht
+          müssen* тоже снимает необходимость, но не запрещает действие. В игре это различие
+          меняет решение: не нужно тратить лишнее время на ключ, если его получает Хауке. Само
+          отсутствие необходимости не даёт права нарушать отдельно объявленные правила доступа
+          к помещению."
+        point: Отсутствие необходимости не равно запрету.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+  - id: frames
+    chapter: grammar
+    title: Как устроена реплика
+    beats:
+      - read: Отрицание стоит перед инфинитивной группой, но относится к необходимости действия.
+          Основной глагол machen остаётся в конце с zu. Сначала назовите задачу, которую
+          снимают с человека, затем проверьте новый ответственный пункт в плане. Одна
+          поддерживающая фраза без распределения дел не решает практическую проблему.
+        point: "*Du brauchst nicht alles allein zu machen.*"
+        set:
+          view: sentence
+          rows:
+            - de:
+                - Du brauchst
+                - nicht
+                - alles allein
+                - zu machen.
+              ru: Тебе не нужно делать всё одному.
+  - id: check
+    chapter: practice
+    title: Проверьте смысл до подсказки
+    beats:
+      - question: «Du brauchst nicht zu kommen» означает запрет приходить?
+        read: "Нет. Приход не требуется, но эта фраза сама по себе его не запрещает. Для запрета
+          используется nicht dürfen. Сверьте контекст: Хауке получает ключ, поэтому Матео не
+          нужно отдельно ехать ради той же задачи. Не превращайте помощь с распределением
+          работы в новое ограничение для человека."
+        point: Не нужно ≠ нельзя.
+        set:
+          view: table
+          table: rule
+      - question: Элиф обещала взять стаканы. Значит, они уже получены?
+        read: Нет. Это назначенная задача и согласованное будущее действие. В дневнике можно указать
+          ответственного и время проверки, но статус «получены» потребует сообщения о
+          выполнении. Такое различие помогает не забыть важный предмет к встрече. В конце
+          подготовки команда ещё раз сверит реальные результаты.
+        point: Делегирование не равно выполнению.
+        set:
+          view: table
+          table: rule
+  - id: exam-plan
+    chapter: exam
+    title: Was bleibt für wen? · Ausschnitt
+    beats:
+      - read: "Разделите подтверждённые условия, распределённые задачи и уже выполненные действия. В
+          списке есть разные времена: получение ключа, начало уборки, выход из помещения и
+          возврат ключа. Они не заменяют друг друга. Для игры важен объём ответственности
+          Матео, а не попытка назначить ему всё, что относится к еде или кухне."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: plan
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: plan
+        set:
+          view: task
+          task: plan
+          solved: true
+  - id: exam-gaps
+    chapter: exam
+    title: Eine Nachricht zur Entlastung
+    beats:
+      - read: Письмо связывает освобождение от лишних дел с причиной и оставшейся задачей. После
+          brauchen в этой модели нужен инфинитив с zu. Затем возвращаются Passiv в прошлом,
+          слабое существительное и relative denen. Сначала поймите распределение, потом
+          проверьте форму каждого пропуска в контексте связного сообщения.
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: gaps
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: gaps
+        set:
+          view: task
+          task: gaps
+          solved: true
+  - id: exam-notices
+    chapter: exam
+    title: Fünf Hinweise für die Vorbereitung
+    beats:
+      - read: Прослушайте пять сообщений дважды. Слова «не нужно» и «нельзя» меняют решение по-разному.
+          Также различите выход из помещения и крайний срок возврата ключа. После попытки
+          откройте текст и найдите точную формулировку обязанности, отсутствия необходимости
+          или запрета. Не добавляйте обещанный результат к уже выполненным пунктам.
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: notices
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: notices
+        set:
+          view: task
+          task: notices
+          solved: true
+  - id: exam-write
+    chapter: exam
+    title: Einen überlasteten Helfer informieren
+    beats:
+      - read: Письмо должно помогать человеку понять реальный объём дел. Назовите снятые задачи, нового
+          ответственного и срок обратной связи. Все четыре пункта обязательны. Не
+          ограничивайтесь общей поддержкой без действий. После черновика проверьте, не звучит
+          ли отсутствие необходимости как запрет и не назначено ли снова всё тому же человеку.
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: write
+          reveal: 0
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: write
+          reveal: 0
+        set:
+          view: task
+          task: write
+          solved: true
+  - id: exam-talk
+    chapter: exam
+    title: Arbeit und Vorbereitung vereinbaren
+    beats:
+      - read: Сначала выясните доступное время. Предложите помощь с конкретной задачей и спросите,
+          подходит ли это партнёру. Итог должен назвать, кто делает что и когда сообщает
+          результат. Не принимайте молчание за согласие и не планируйте самовывоз на рабочую
+          смену. Паузы и совместная уборка входят в реальный общий план.
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: talk
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: talk
+        set:
+          view: task
+          task: talk
+          solved: true
+exercises:
+  - type: choice
+    q: Du ___ die Becher nicht zu kaufen.
+    options:
+      - darfst
+      - hast
+      - brauchst
+    answer: 2
+    why: Отсутствие необходимости.
+  - type: choice
+    q: "Не нужно приходить:"
+    options:
+      - Du darfst nicht kommen.
+      - Du musst kommen.
+      - Du brauchst nicht zu kommen.
+    answer: 2
+    why: Brauchen снимает необходимость.
+  - type: choice
+    q: "Запрет:"
+    options:
+      - Du darfst nicht kommen.
+      - Du brauchst nicht zu kommen.
+      - Du musst nicht kommen.
+    answer: 0
+    why: Nicht dürfen.
+  - type: choice
+    q: Du brauchst nur die Liste ___ prüfen.
+    options:
+      - um
+      - damit
+      - zu
+    answer: 2
+    why: Письменная рамка brauchenzu.
+  - type: choice
+    q: Du brauchst den Schlüssel nicht ___.
+    options:
+      - zu abholen
+      - holen ab
+      - abzuholen
+    answer: 2
+    why: Zu внутри отделяемого глагола.
+  - type: choice
+    q: Элиф возьмёт стаканы, значит уже получила?
+    options:
+      - Нет
+      - Да
+      - Только после 17
+    answer: 0
+    why: Будущая задача не равна выполнению.
+  - type: order
+    de: Du brauchst nicht alles allein zu machen.
+    ru: Не нужно делать всё одному.
+  - type: order
+    de: Du brauchst die Becher nicht zu kaufen.
+    ru: Не нужно покупать стаканы.
+  - type: order
+    de: Ich brauche nur die Liste zu prüfen.
+    ru: Мне нужно только проверить список.
+  - type: order
+    de: Wir sollten kurze Pausen einplanen.
+    ru: Нам стоит предусмотреть короткие перерывы.
+  - type: order
+    de: Hauke übernimmt die Schlüsselübergabe.
+    ru: Хауке берёт на себя передачу ключа.
+  - type: order
+    de: Elif meldet sich nach der Abholung.
+    ru: Элиф сообщит после самовывоза.
+case:
+  title: Nicht nötig ist kein Verbot und keine Erledigung
+  ru: Сверка дневника
+  intro: Проверьте необходимость, ответственность и реальный результат.
+  people: {}
+  steps:
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Du brauchst keine Becher zu kaufen. Elif leiht sie am Freitag aus.
+          ru: Не нужно покупать стаканы. Элиф возьмёт их в пятницу.
+      question: Покупку Матео запрещают?
+      options:
+        - Да, это прямой запрет
+        - Он уже купил стаканы
+        - Нет, она не требуется по плану
+      answer: 2
+      right: Brauchen с отрицанием снимает необходимость.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Elif meldet sich nach der Abholung.
+          ru: Элиф сообщит после получения.
+      question: Статус сейчас — стаканы уже получены?
+      options:
+        - Элиф отказалась
+        - Нет, ждём подтверждения выполнения
+        - Да
+      answer: 1
+      right: Нужно реальное сообщение после действия.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Raum verlassen 18:00. Schlüssel zurück bis 18:15.
+          ru: Выйти из помещения 18:00. Вернуть ключ до 18:15.
+      question: Можно использовать зал до 18:15?
+      options:
+        - Нет, это срок ключа
+        - Да
+        - Только после уборки
+      answer: 0
+      right: Разные сроки относятся к разным действиям.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+  ending: Снятая необходимость, новая ответственность и выполненная задача больше не смешиваются.
+    План учитывает рабочее время участников.
+adventure:
+  kind: sequence
+  title: Снимите лишние задачи, сохранив нужные
+  intro: "Матео работает со вторника по субботу 17–23 и пытается взять ещё несколько задач
+    подготовки. Команда проверяет список: что обязательно, что уже предусмотрено, а что можно
+    поручить другому. Raum C и кухня подтверждены; встреча остаётся 18 октября 15–18 часов."
+  ending: Задачи распределены по времени и подтверждены участниками. Матео не покупает лишние
+    стаканы и не дублирует получение ключа; выполненные пункты будут отмечены после реальных
+    сообщений.
+  challenges:
+    - id: meaning
+      kind: match
+      title: Не нужно, нельзя или только это?
+      intro: Определите смысл фразы, а не только отрицание.
+      slots:
+        - id: a
+          label: Du brauchst nicht zu kommen.
+          answer: optional
+        - id: b
+          label: Du darfst nicht kommen.
+          answer: forbidden
+        - id: c
+          label: Du brauchst nur die Liste zu prüfen.
+          answer: limited
+      options:
+        - id: optional
+          label: не требуется
+        - id: forbidden
+          label: запрещено
+        - id: limited
+          label: ограниченная задача
+      success: Необходимость, запрет и объём различены.
+      wrong: Brauchen с отрицанием снимает необходимость; dürfen запрещает.
+    - id: alone
+      kind: order
+      title: Снимите перегрузку понятной фразой
+      intro: Сохраните zu в письменной модели.
+      label: Реплика для команды
+      tokens:
+        - Du brauchst
+        - nicht
+        - alles allein
+        - zu machen.
+      success: Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.
+      wrong: "Проверьте положение глагола и конец предложения: используйте все фрагменты."
+    - id: todo
+      kind: select
+      title: Что остаётся у Матео?
+      intro: Прочитайте список распределения.
+      mode: reading
+      clue:
+        task: plan
+      options:
+        - id: o0
+          label: Проверить ингредиенты и организовать еду
+        - id: o1
+          label: Самому купить стаканы
+        - id: o2
+          label: Лично забрать ключ вместо Хауке
+      answer:
+        - o0
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."
+    - id: return
+      kind: clock
+      title: Крайний срок возврата ключа
+      intro: Не перепутайте его с выходом из зала.
+      mode: reading
+      clue:
+        task: plan
+      answer: 18:15
+      initial: 18:00
+      minuteStep: 5
+      success: Из зала выходят 18:00, ключ возвращают до 18:15.
+      wrong: Нужно 18:15 — срок ключа, не 18:00 — выход.
+    - id: delegate
+      kind: negotiation
+      title: Получите реальную помощь, а не новое обещание за другого
+      intro: Матео работает в пятницу. Согласуйте другой вариант.
+      start: a
+      nodes:
+        - id: a
+          text: "Mateo: Am Freitag arbeite ich ab 17 Uhr. Die zusätzliche Abholung schaffe ich nicht."
+          choices:
+            - label: Dann fragen wir Elif nach der Abholung.
+              next: c
+              feedback: Вы предлагаете проверить другую возможность.
+            - label: Du solltest trotzdem alles selbst abholen.
+              next: b
+              feedback: Это не учитывает названное ограничение.
+        - id: b
+          text: "Mateo: Dann komme ich nicht rechtzeitig zur Arbeit. Wir brauchen eine andere
+            Verteilung."
+          choices:
+            - label: Stimmt. Wir fragen Elif, statt die Aufgabe einfach festzulegen.
+              next: c
+              feedback: Вы исправили предложение после возражения.
+        - id: c
+          text: "Elif: Ich kann die Becher am Freitag holen und danach eine Nachricht schicken."
+          choices:
+            - label: Danke. Dann braucht Mateo keine Becher zu kaufen. Wir warten auf deine Rückmeldung.
+              next: end
+              feedback: Есть согласие, задача и проверка выполнения.
+        - id: end
+          text: "Elif: Einverstanden. Nach der Abholung bestätige ich, dass die Becher da sind."
+          terminal: true
+          choices: []
+      success: Помощь подтверждена, её выполнение ещё будет проверено.
+      wrong: Учтите смену и дождитесь согласия другого участника.

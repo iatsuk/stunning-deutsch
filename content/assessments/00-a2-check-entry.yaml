@@ -1,0 +1,133 @@
+id: a2-check-entry
+level: a2
+mode: review
+title: "Перед A2: десять действий из A1"
+intro: "Новая встреча в учебном клубе Киля: восемь коротких ответов, своё сообщение и рассказ.
+  Проверка предлагает повторение, но не закрывает доступ к A2."
+sections:
+  - id: entry
+    title: Знакомство и план встречи
+    taskIds:
+      - listen
+      - read
+      - write
+      - talk
+tasks:
+  listen:
+    kind: worksheet
+    part: a2-hoeren-1
+    format: notes
+    title: Zwei kurze Nachrichten
+    questions:
+      - prompt: "Treffen: Uhrzeit"
+        answers:
+          - 09:30
+          - 9:30
+          - halb zehn
+          - "9.30"
+          - "09.30"
+      - prompt: Mitbringen
+        answers:
+          - Wasser
+          - eine Flasche Wasser
+          - Flasche Wasser
+    recordings:
+      - text: Hallo, hier ist Nora. Wir treffen uns morgen um halb zehn vor dem Lernclub. Nicht um
+          neun. Bis morgen!
+        voice: Shelley
+      - text: Hallo, hier ist Jonas. Ich bringe Brot und Käse mit. Kannst du bitte eine Flasche Wasser
+          mitbringen? Danke!
+        voice: Eddy
+  read:
+    kind: worksheet
+    part: a2-lesen-2
+    format: article
+    title: Der neue Gast
+    text: "Mira ist 27 Jahre alt und kommt aus Österreich. Sie wohnt jetzt in Kiel. Sie arbeitet in
+      einem Hotel. Am Sonntag besucht sie den Lernclub. Gestern hat sie Brot gekauft. Ihre
+      Tasche steht neben dem Tisch. Weg zum Club: Gehen Sie geradeaus und dann rechts. Für die
+      Pause: zwei Äpfel und eine Flasche Wasser."
+    questions:
+      - prompt: Wie alt ist Mira?
+        answers:
+          - "27"
+        options:
+          - "17"
+          - "27"
+          - "37"
+      - prompt: Wo arbeitet Mira?
+        answers:
+          - im Hotel
+        options:
+          - im Hotel
+          - in der Schule
+          - im Museum
+      - prompt: Was hat Mira gestern gekauft?
+        answers:
+          - Brot
+        options:
+          - Wasser
+          - Brot
+          - Äpfel
+      - prompt: Wo steht die Tasche?
+        answers:
+          - neben dem Tisch
+        options:
+          - unter dem Tisch
+          - neben dem Tisch
+          - auf dem Tisch
+      - prompt: "Nach geradeaus: wohin?"
+        answers:
+          - rechts
+        options:
+          - links
+          - rechts
+          - zurück
+      - prompt: Wie viele Äpfel?
+        answers:
+          - "2"
+        options:
+          - "1"
+          - "2"
+          - "3"
+  write:
+    kind: message
+    part: a2-schreiben-2
+    title: Eine Nachricht an Mira
+    text: Schreiben Sie eine persönliche Nachricht.
+    situation: Laden Sie Mira für Sonntag ein. Schreiben Sie ungefähr 40 Wörter. Wählen Sie drei
+      der vier Punkte. Begrüßung und Gruß nicht vergessen.
+    choose: 3
+    points:
+      - Wann treffen?
+      - Wo treffen?
+      - Was mitbringen?
+      - Warum kommen?
+  talk:
+    kind: card
+    part: a2-sprechen-1
+    title: Kurz vorstellen
+    word: Name · Wohnort · Sprachen · Freizeit
+    situation: Stellen Sie sich kurz vor. Erzählen Sie auch, was Sie gestern gemacht haben.
+review:
+  - level: a1
+    topic: zahlen
+    label: "A1: часы и числа"
+    taskIds:
+      - listen
+      - read
+  - level: a1
+    topic: stadt
+    label: "A1: дорога и расположение"
+    taskIds:
+      - read
+  - level: a1
+    topic: arbeit
+    label: "A1: прошлое и работа"
+    taskIds:
+      - read
+  - level: a1
+    topic: kennenlernen
+    label: "A1: знакомство"
+    taskIds:
+      - talk

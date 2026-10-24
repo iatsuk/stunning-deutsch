@@ -1,0 +1,1572 @@
+{
+ "id": "a2-unterwegs",
+ "level": "a2",
+ "order": 4,
+ "title": "Wo liegt die Tasche? Wohin kommt sie?",
+ "ru": "Место и направление",
+ "lede": "В Плёне друзья готовят место для пикника у воды. На условной схеме нужно найти встречу, поставить вещи и объяснить, где они теперь находятся. Знание настоящей карты не требуется: все ориентиры даны в сообщениях.",
+ "goals": [
+  "Различать вопрос о месте и о направлении",
+  "Понять, куда поставить вещь и где её искать",
+  "Прочитать указатель и выбрать нужное место",
+  "Уточнить инструкцию перед действием"
+ ],
+ "grammar": [
+  "Wo + Dativ, Wohin + Akkusativ"
+ ],
+ "exam": [
+  "a2-lesen-1",
+  "a2-lesen-2",
+  "a2-sprechen-2"
+ ],
+ "chapters": [
+  {
+   "id": "scene",
+   "title": "Ситуация"
+  },
+  {
+   "id": "words",
+   "title": "Слова"
+  },
+  {
+   "id": "grammar",
+   "title": "Грамматика"
+  },
+  {
+   "id": "practice",
+   "title": "Проверка"
+  },
+  {
+   "id": "exam",
+   "title": "На экзамене"
+  }
+ ],
+ "dialogues": {
+  "scene": {
+   "title": "Wo liegt die Tasche? Wohin kommt sie?",
+   "ru": "Место и направление",
+   "place": "Учебная схема встречи в Plön · вымышленная учебная ситуация",
+   "people": {
+    "D": {
+     "name": "Dana",
+     "voice": "Anna"
+    },
+    "M": {
+     "name": "Mateo",
+     "voice": "Reed"
+    },
+    "E": {
+     "name": "Elif",
+     "voice": "Flo"
+    },
+    "H": {
+     "name": "Hauke",
+     "voice": "Rocko"
+    }
+   },
+   "lines": [
+    {
+     "who": "D",
+     "de": "Wo treffen wir uns in Plön?",
+     "ru": "Где мы встречаемся в Плёне?",
+     "audio": "audio/c5f35e7f409b.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Auf unserem Lernplan liegt der Treffpunkt neben dem Museum.",
+     "ru": "На нашей учебной схеме встреча рядом с музеем.",
+     "audio": "audio/1f2ac6621587.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Ich stelle die Tasche auf den Tisch.",
+     "ru": "Я ставлю сумку на стол.",
+     "audio": "audio/e88806148e45.m4a"
+    },
+    {
+     "who": "E",
+     "de": "Die Kamera liegt schon auf dem Tisch.",
+     "ru": "Камера уже лежит на столе.",
+     "audio": "audio/fc55c4432d0b.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Wohin legen wir die Tickets?",
+     "ru": "Куда положим билеты?",
+     "audio": "audio/7cccfacf5405.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Legt sie bitte in die Tasche. Der Schlüssel bleibt in der Jacke.",
+     "ru": "Положите их в сумку. Ключ остаётся в куртке.",
+     "audio": "audio/d9302ddf339e.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Gut. Jetzt sind die Tickets in der Tasche.",
+     "ru": "Хорошо. Теперь билеты в сумке.",
+     "audio": "audio/f35a472bdb19.m4a"
+    },
+    {
+     "who": "E",
+     "de": "Dann gehen wir an den See. Am See machen wir eine Pause.",
+     "ru": "Тогда идём к озеру. У озера сделаем перерыв.",
+     "audio": "audio/62ac304421e8.m4a"
+    }
+   ]
+  }
+ },
+ "words": {
+  "useful": {
+   "title": "Wörter für die Aufgabe",
+   "ru": "Слова для действия",
+   "items": [
+    {
+     "de": "stellen",
+     "ru": "ставить",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/2bc5445c1fde.m4a"
+    },
+    {
+     "de": "legen",
+     "ru": "класть",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/24626b69ddd3.m4a"
+    },
+    {
+     "de": "stehen",
+     "ru": "стоять",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/7c8a8731922b.m4a"
+    },
+    {
+     "de": "liegen",
+     "ru": "лежать",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/090e2a3c1a83.m4a"
+    },
+    {
+     "de": "neben",
+     "ru": "рядом с",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/ba6fe1508a96.m4a"
+    },
+    {
+     "de": "zwischen",
+     "ru": "между",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/4a709c038cac.m4a"
+    },
+    {
+     "de": "unter",
+     "ru": "под",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/c8d6cd156302.m4a"
+    },
+    {
+     "de": "über",
+     "ru": "над",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/ebcf22e97bbd.m4a"
+    },
+    {
+     "de": "vor",
+     "ru": "перед",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/0e84ac67219f.m4a"
+    },
+    {
+     "de": "hinter",
+     "ru": "за",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/16a9ca31d564.m4a"
+    },
+    {
+     "de": "der Treffpunkt",
+     "ru": "место встречи",
+     "gender": "m",
+     "plural": "Treffpunkte",
+     "audio": "audio/c034855451dc.m4a"
+    },
+    {
+     "de": "der See",
+     "ru": "озеро",
+     "gender": "m",
+     "plural": "Seen",
+     "audio": "audio/9d7157e27f3e.m4a"
+    }
+   ]
+  }
+ },
+ "tables": {
+  "rule": {
+   "title": "Wo + Dativ, Wohin + Akkusativ",
+   "ru": "Опора для решения",
+   "head": [
+    "Beispiel",
+    "Смысл и форма"
+   ],
+   "rows": [
+    [
+     "Die Kamera liegt auf dem Tisch.",
+     "Где? → auf dem Tisch, Dativ."
+    ],
+    [
+     "Ich stelle die Tasche auf den Tisch.",
+     "Куда? → auf den Tisch, Akkusativ."
+    ],
+    [
+     "Legt die Tickets in die Tasche.",
+     "Куда? in die Tasche; где? in der Tasche."
+    ],
+    [
+     "Wir gehen an den See. Am See machen wir Pause.",
+     "К озеру → an den See; у озера → am See."
+    ]
+   ],
+   "ruCols": [
+    1
+   ]
+  }
+ },
+ "tasks": {
+  "directory": {
+   "kind": "worksheet",
+   "part": "a2-lesen-1",
+   "format": "directory",
+   "title": "Wegweiser im Gästehaus",
+   "text": "Erdgeschoss: Empfang, Café, Toiletten.\nErster Stock: Leseraum, Kursraum.\nZweiter Stock: Zimmer, Ruhebereich.\nKeller: Fahrräder, Gepäckraum.",
+   "questions": [
+    {
+     "prompt": "Sie möchten Kaffee trinken.",
+     "options": [
+      "Erdgeschoss",
+      "Erster Stock",
+      "Anderes Stockwerk"
+     ],
+     "answers": [
+      "Erdgeschoss"
+     ]
+    },
+    {
+     "prompt": "Sie suchen einen ruhigen Raum zum Lesen.",
+     "options": [
+      "Erdgeschoss",
+      "Erster Stock",
+      "Anderes Stockwerk"
+     ],
+     "answers": [
+      "Erster Stock"
+     ]
+    },
+    {
+     "prompt": "Sie möchten Ihr Fahrrad abstellen.",
+     "options": [
+      "Erdgeschoss",
+      "Erster Stock",
+      "Anderes Stockwerk"
+     ],
+     "answers": [
+      "Anderes Stockwerk"
+     ]
+    },
+    {
+     "prompt": "Sie brauchen Informationen am Empfang.",
+     "options": [
+      "Erdgeschoss",
+      "Erster Stock",
+      "Anderes Stockwerk"
+     ],
+     "answers": [
+      "Erdgeschoss"
+     ]
+    },
+    {
+     "prompt": "Sie suchen Ihr Zimmer.",
+     "options": [
+      "Erdgeschoss",
+      "Erster Stock",
+      "Anderes Stockwerk"
+     ],
+     "answers": [
+      "Anderes Stockwerk"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "map": {
+   "kind": "message",
+   "part": "a2-lesen-2",
+   "title": "Der Plan am See",
+   "from": "Hauke",
+   "text": "Unser Treffpunkt ist neben dem Museum. Die Kamera liegt auf dem Tisch. Stellt die Tasche unter den Tisch. Legt die Tickets in die Tasche. Der Schlüssel bleibt in der Jacke. Danach gehen wir an den See.",
+   "sample": []
+  },
+  "talk": {
+   "kind": "card",
+   "part": "a2-sprechen-2",
+   "title": "Nach einem Ort fragen",
+   "theme": "Unterwegs",
+   "word": "Wo? Wohin?",
+   "sample": [
+    {
+     "de": "Wo ist der Treffpunkt?",
+     "audio": "audio/1bf595996b3c.m4a"
+    },
+    {
+     "de": "Er ist neben dem Museum.",
+     "audio": "audio/bcc7c25d5cbf.m4a"
+    },
+    {
+     "de": "Wohin kommt die Tasche?",
+     "audio": "audio/f144d9f0464e.m4a"
+    },
+    {
+     "de": "Stell sie bitte unter den Tisch.",
+     "audio": "audio/3bd2f819bd16.m4a"
+    }
+   ]
+  }
+ },
+ "beats": [
+  {
+   "id": "start-1",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 0,
+   "read": "В Плёне друзья готовят место для пикника у воды. На условной схеме нужно найти встречу, поставить вещи и объяснить, где они теперь находятся. Знание настоящей карты не требуется: все ориентиры даны в сообщениях. Все нужные условия даны в сцене: знания географии, настоящих цен или расписаний не требуются. Сначала попробуйте понять, какого результата добиваются друзья, затем слушайте реплики. На новом уровне важно не только найти число или знакомое слово, но и связать несколько сведений.",
+   "point": "Место и направление",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 4,
+    "fresh": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "start-2",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 1,
+   "read": "Предмет может быть неподвижен или перемещаться к новому месту. *Auf den Tisch* описывает, куда ставят сумку; *auf dem Tisch* — где лежит камера. Одного наличия движения недостаточно: прогулка внутри парка тоже может отвечать на *Wo?*. В этой теме решает вопрос к месту, а не правило «любой глагол движения требует Akkusativ».",
+   "point": "Wo + Dativ, Wohin + Akkusativ",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 8,
+    "fresh": [
+     4,
+     5,
+     6,
+     7
+    ]
+   }
+  },
+  {
+   "id": "words-1",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 0,
+   "read": "*Stellen* и *legen* обозначают размещение, *stehen* и *liegen* — положение. Сумку можно поставить, билет — положить. Сначала поймите, о каком действии просит сообщение. Потом выберите форму артикля. Учебный указатель помогает искать место по функции, даже если формулировка вопроса не повторяет подпись дословно.",
+   "point": "Сначала используйте слово для решения; словарь остаётся справочником.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 6,
+    "words": "useful"
+   }
+  },
+  {
+   "id": "words-2",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 1,
+   "read": "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к ситуации: какие слова обозначают человека, место, условие или уже выполненное действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово встретится снова в записке или разговоре, попробуйте восстановить его смысл до подсказки.",
+   "point": "Возвращайтесь к выражениям в сообщениях и новых действиях.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 12,
+    "words": "useful",
+    "fresh": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   }
+  },
+  {
+   "id": "grammar-1",
+   "step": "grammar",
+   "stepTitle": "Wo + Dativ, Wohin + Akkusativ",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "Если спрашиваем, где находится вещь, после *auf* используем дательный падеж: *auf dem Tisch*. Это знакомая модель из A1. Слово *liegen* описывает положение камеры. Чтобы найти предмет, не нужно заново перемещать его. В сообщении важно отличить текущее место от инструкции, которую ещё предстоит выполнить.",
+   "point": "Где? → auf dem Tisch, Dativ.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "grammar-2",
+   "step": "grammar",
+   "stepTitle": "Wo + Dativ, Wohin + Akkusativ",
+   "chapterIndex": 2,
+   "indexInStep": 1,
+   "read": "Когда сумку ставят на стол, возникает новое место назначения: *Wohin?*. У мужского рода *der Tisch* становится *den Tisch*. Смысл не сводится к движению рук: немецкая форма показывает, какое место становится результатом. Сравните команду и отчёт после выполнения, чтобы не перепутать действие с положением.",
+   "point": "Куда? → auf den Tisch, Akkusativ.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "grammar-3",
+   "step": "grammar",
+   "stepTitle": "Wo + Dativ, Wohin + Akkusativ",
+   "chapterIndex": 2,
+   "indexInStep": 2,
+   "read": "У женского рода направление сохраняет форму *die*, а место выражается через *der*. После выполнения просьбы можно сообщить *Die Tickets sind in der Tasche*. В обоих предложениях участвуют те же билеты и сумка, но вопросы разные. Смена артикля помогает прочитать этап действия.",
+   "point": "Куда? in die Tasche; где? in der Tasche.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "grammar-4",
+   "step": "grammar",
+   "stepTitle": "Wo + Dativ, Wohin + Akkusativ",
+   "chapterIndex": 2,
+   "indexInStep": 3,
+   "read": "*An* работает по той же схеме. В нашем примере сначала идём к месту, потом находимся там. Слияние *am* означает *an dem*. Другие предлоги этой группы — *neben*, *unter*, *vor*, *hinter*, *zwischen*, *über*. Не учите их как случайный список: используйте для поиска и размещения на понятной схеме.",
+   "point": "К озеру → an den See; у озера → am See.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "frames-1",
+   "step": "frames",
+   "stepTitle": "Как устроена реплика",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте инструкцию: *Wir legen die Tickets in die Tasche*. Вторая фраза описывает результат: *Jetzt sind die Tickets in der Tasche*. Артикль меняется, потому что вопрос изменился с «куда?» на «где?». В игре нужно выбрать нужное сообщение для текущего этапа, а не переставлять одну букву без понимания.",
+   "point": "*in die Tasche* → после действия *in der Tasche*.",
+   "scene": {
+    "view": "sentence",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "jetzt",
+         "text": "Jetzt"
+        }
+       ],
+       [
+        {
+         "key": "sind",
+         "text": "sind"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "tickets",
+         "text": "Tickets"
+        },
+        {
+         "key": "in",
+         "text": "in"
+        },
+        {
+         "key": "der",
+         "text": "der"
+        },
+        {
+         "key": "tasche",
+         "text": "Tasche"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Jetzt sind die Tickets in der Tasche.",
+      "ru": "Теперь билеты в сумке.",
+      "audio": "audio/4f3c44d662b0.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-1",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 0,
+   "read": "*Auf dem Tisch*: камера уже находится там, вопрос *Wo?*. Для просьбы положить её на стол понадобилось бы *auf den Tisch*. Не ориентируйтесь только на слово «стол»: установите, сообщает ли реплика положение или новое место назначения.",
+   "point": "*Wo? auf dem Tisch*; *Wohin? auf den Tisch*.",
+   "question": "Камера уже на столе. Нужен den или dem?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "jetzt",
+         "text": "Jetzt"
+        }
+       ],
+       [
+        {
+         "key": "sind",
+         "text": "sind"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "tickets",
+         "text": "Tickets"
+        },
+        {
+         "key": "in",
+         "text": "in"
+        },
+        {
+         "key": "der",
+         "text": "der"
+        },
+        {
+         "key": "tasche",
+         "text": "Tasche"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Jetzt sind die Tickets in der Tasche.",
+      "ru": "Теперь билеты в сумке.",
+      "audio": "audio/4f3c44d662b0.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-2",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 1,
+   "read": "Нет. Важно направление к новому месту или нахождение внутри него. *Wir gehen im Park spazieren* описывает прогулку в парке, а *Wir gehen in den Park* — вход в парк. В первом случае вопрос о месте прогулки, во втором — о том, куда идут.",
+   "point": "Вопрос к месту важнее самого наличия движения.",
+   "question": "Всегда ли движение означает Akkusativ после in?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "jetzt",
+         "text": "Jetzt"
+        }
+       ],
+       [
+        {
+         "key": "sind",
+         "text": "sind"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "tickets",
+         "text": "Tickets"
+        },
+        {
+         "key": "in",
+         "text": "in"
+        },
+        {
+         "key": "der",
+         "text": "der"
+        },
+        {
+         "key": "tasche",
+         "text": "Tasche"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Jetzt sind die Tickets in der Tasche.",
+      "ru": "Теперь билеты в сумке.",
+      "audio": "audio/4f3c44d662b0.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "exam-directory-1",
+   "step": "exam-directory",
+   "stepTitle": "Wegweiser im Gästehaus",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным текстом: объясните, какой фрагмент подтверждает каждое решение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "jetzt",
+         "text": "Jetzt"
+        }
+       ],
+       [
+        {
+         "key": "sind",
+         "text": "sind"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "tickets",
+         "text": "Tickets"
+        },
+        {
+         "key": "in",
+         "text": "in"
+        },
+        {
+         "key": "der",
+         "text": "der"
+        },
+        {
+         "key": "tasche",
+         "text": "Tasche"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Jetzt sind die Tickets in der Tasche.",
+      "ru": "Теперь билеты в сумке.",
+      "audio": "audio/4f3c44d662b0.m4a"
+     }
+    ],
+    "task": "directory"
+   }
+  },
+  {
+   "id": "exam-directory-2",
+   "step": "exam-directory",
+   "stepTitle": "Wegweiser im Gästehaus",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "jetzt",
+         "text": "Jetzt"
+        }
+       ],
+       [
+        {
+         "key": "sind",
+         "text": "sind"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "tickets",
+         "text": "Tickets"
+        },
+        {
+         "key": "in",
+         "text": "in"
+        },
+        {
+         "key": "der",
+         "text": "der"
+        },
+        {
+         "key": "tasche",
+         "text": "Tasche"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Jetzt sind die Tickets in der Tasche.",
+      "ru": "Теперь билеты в сумке.",
+      "audio": "audio/4f3c44d662b0.m4a"
+     }
+    ],
+    "task": "directory"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "jetzt",
+         "text": "Jetzt"
+        }
+       ],
+       [
+        {
+         "key": "sind",
+         "text": "sind"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "tickets",
+         "text": "Tickets"
+        },
+        {
+         "key": "in",
+         "text": "in"
+        },
+        {
+         "key": "der",
+         "text": "der"
+        },
+        {
+         "key": "tasche",
+         "text": "Tasche"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Jetzt sind die Tickets in der Tasche.",
+      "ru": "Теперь билеты в сумке.",
+      "audio": "audio/4f3c44d662b0.m4a"
+     }
+    ],
+    "task": "directory",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-map-1",
+   "step": "exam-map",
+   "stepTitle": "Der Plan am See",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным текстом: объясните, какой фрагмент подтверждает каждое решение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "jetzt",
+         "text": "Jetzt"
+        }
+       ],
+       [
+        {
+         "key": "sind",
+         "text": "sind"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "tickets",
+         "text": "Tickets"
+        },
+        {
+         "key": "in",
+         "text": "in"
+        },
+        {
+         "key": "der",
+         "text": "der"
+        },
+        {
+         "key": "tasche",
+         "text": "Tasche"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Jetzt sind die Tickets in der Tasche.",
+      "ru": "Теперь билеты в сумке.",
+      "audio": "audio/4f3c44d662b0.m4a"
+     }
+    ],
+    "task": "map"
+   }
+  },
+  {
+   "id": "exam-map-2",
+   "step": "exam-map",
+   "stepTitle": "Der Plan am See",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "jetzt",
+         "text": "Jetzt"
+        }
+       ],
+       [
+        {
+         "key": "sind",
+         "text": "sind"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "tickets",
+         "text": "Tickets"
+        },
+        {
+         "key": "in",
+         "text": "in"
+        },
+        {
+         "key": "der",
+         "text": "der"
+        },
+        {
+         "key": "tasche",
+         "text": "Tasche"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Jetzt sind die Tickets in der Tasche.",
+      "ru": "Теперь билеты в сумке.",
+      "audio": "audio/4f3c44d662b0.m4a"
+     }
+    ],
+    "task": "map"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "jetzt",
+         "text": "Jetzt"
+        }
+       ],
+       [
+        {
+         "key": "sind",
+         "text": "sind"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "tickets",
+         "text": "Tickets"
+        },
+        {
+         "key": "in",
+         "text": "in"
+        },
+        {
+         "key": "der",
+         "text": "der"
+        },
+        {
+         "key": "tasche",
+         "text": "Tasche"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Jetzt sind die Tickets in der Tasche.",
+      "ru": "Теперь билеты в сумке.",
+      "audio": "audio/4f3c44d662b0.m4a"
+     }
+    ],
+    "task": "map",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-talk-1",
+   "step": "exam-talk",
+   "stepTitle": "Nach einem Ort fragen",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным текстом: объясните, какой фрагмент подтверждает каждое решение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "jetzt",
+         "text": "Jetzt"
+        }
+       ],
+       [
+        {
+         "key": "sind",
+         "text": "sind"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "tickets",
+         "text": "Tickets"
+        },
+        {
+         "key": "in",
+         "text": "in"
+        },
+        {
+         "key": "der",
+         "text": "der"
+        },
+        {
+         "key": "tasche",
+         "text": "Tasche"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Jetzt sind die Tickets in der Tasche.",
+      "ru": "Теперь билеты в сумке.",
+      "audio": "audio/4f3c44d662b0.m4a"
+     }
+    ],
+    "task": "talk",
+    "reveal": 0
+   }
+  },
+  {
+   "id": "exam-talk-2",
+   "step": "exam-talk",
+   "stepTitle": "Nach einem Ort fragen",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "jetzt",
+         "text": "Jetzt"
+        }
+       ],
+       [
+        {
+         "key": "sind",
+         "text": "sind"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "tickets",
+         "text": "Tickets"
+        },
+        {
+         "key": "in",
+         "text": "in"
+        },
+        {
+         "key": "der",
+         "text": "der"
+        },
+        {
+         "key": "tasche",
+         "text": "Tasche"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Jetzt sind die Tickets in der Tasche.",
+      "ru": "Теперь билеты в сумке.",
+      "audio": "audio/4f3c44d662b0.m4a"
+     }
+    ],
+    "task": "talk",
+    "reveal": 0
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "jetzt",
+         "text": "Jetzt"
+        }
+       ],
+       [
+        {
+         "key": "sind",
+         "text": "sind"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "tickets",
+         "text": "Tickets"
+        },
+        {
+         "key": "in",
+         "text": "in"
+        },
+        {
+         "key": "der",
+         "text": "der"
+        },
+        {
+         "key": "tasche",
+         "text": "Tasche"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Jetzt sind die Tickets in der Tasche.",
+      "ru": "Теперь билеты в сумке.",
+      "audio": "audio/4f3c44d662b0.m4a"
+     }
+    ],
+    "task": "talk",
+    "reveal": 0,
+    "solved": true
+   }
+  }
+ ],
+ "exercises": [
+  {
+   "id": "a2-unterwegs-1",
+   "type": "choice",
+   "q": "Die Kamera liegt auf ___ Tisch.",
+   "options": [
+    "dem",
+    "den",
+    "der"
+   ],
+   "answer": 0,
+   "why": "Где? Dativ.",
+   "audio": "audio/04e92e08b9f7.m4a"
+  },
+  {
+   "id": "a2-unterwegs-2",
+   "type": "choice",
+   "q": "Ich stelle die Tasche auf ___ Tisch.",
+   "options": [
+    "den",
+    "dem",
+    "des"
+   ],
+   "answer": 0,
+   "why": "Куда? Akkusativ.",
+   "audio": "audio/7ae11eb449d0.m4a"
+  },
+  {
+   "id": "a2-unterwegs-3",
+   "type": "choice",
+   "q": "Die Tickets sind in ___ Tasche.",
+   "options": [
+    "der",
+    "die",
+    "den"
+   ],
+   "answer": 0,
+   "why": "Место, женский род.",
+   "audio": "audio/292f0cd6f851.m4a"
+  },
+  {
+   "id": "a2-unterwegs-4",
+   "type": "choice",
+   "q": "Leg die Tickets in ___ Tasche.",
+   "options": [
+    "die",
+    "der",
+    "dem"
+   ],
+   "answer": 0,
+   "why": "Направление, женский род.",
+   "audio": "audio/d93f3abf93f1.m4a"
+  },
+  {
+   "id": "a2-unterwegs-5",
+   "type": "choice",
+   "q": "Wir gehen ___ See.",
+   "options": [
+    "an den",
+    "am",
+    "im"
+   ],
+   "answer": 0,
+   "why": "К озеру.",
+   "audio": "audio/cc642f380635.m4a"
+  },
+  {
+   "id": "a2-unterwegs-6",
+   "type": "choice",
+   "q": "___ See machen wir eine Pause.",
+   "options": [
+    "Am",
+    "An den",
+    "In die"
+   ],
+   "answer": 0,
+   "why": "Место у озера.",
+   "audio": "audio/c479ee69fd66.m4a"
+  },
+  {
+   "id": "a2-unterwegs-7",
+   "type": "order",
+   "ru": "Камера лежит на столе.",
+   "de": "Die Kamera liegt auf dem Tisch.",
+   "audio": "audio/04e92e08b9f7.m4a"
+  },
+  {
+   "id": "a2-unterwegs-8",
+   "type": "order",
+   "ru": "Я ставлю сумку под стол.",
+   "de": "Ich stelle die Tasche unter den Tisch.",
+   "audio": "audio/cec0d5345647.m4a"
+  },
+  {
+   "id": "a2-unterwegs-9",
+   "type": "order",
+   "ru": "Билеты в сумке.",
+   "de": "Die Tickets sind in der Tasche.",
+   "audio": "audio/292f0cd6f851.m4a"
+  },
+  {
+   "id": "a2-unterwegs-10",
+   "type": "order",
+   "ru": "Мы идём к озеру.",
+   "de": "Wir gehen an den See.",
+   "audio": "audio/cc642f380635.m4a"
+  },
+  {
+   "id": "a2-unterwegs-11",
+   "type": "order",
+   "ru": "У озера мы делаем перерыв.",
+   "de": "Am See machen wir eine Pause.",
+   "audio": "audio/c479ee69fd66.m4a"
+  },
+  {
+   "id": "a2-unterwegs-12",
+   "type": "order",
+   "ru": "Место встречи рядом с музеем.",
+   "de": "Der Treffpunkt ist neben dem Museum.",
+   "audio": "audio/cc6e209b94a9.m4a"
+  }
+ ],
+ "case": {
+  "title": "Eine Tasche, zwei Orte",
+  "ru": "Сумка и её место",
+  "intro": "В дневнике оказались две версии сообщения. Установите, что подтверждено первоисточником. Вывод зависит от языка, а не от личности автора.",
+  "people": {},
+  "steps": [
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Stell die Tasche unter den Tisch.",
+      "ru": "Поставь сумку под стол."
+     }
+    ],
+    "question": "Что требуется?",
+    "options": [
+     "Переместить сумку под стол",
+     "Искать сумку на столе",
+     "Поставить стол в сумку"
+    ],
+    "answer": 0,
+    "right": "*Unter den Tisch* — место назначения.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Jetzt liegt die Kamera auf dem Tisch.",
+      "ru": "Теперь камера лежит на столе."
+     }
+    ],
+    "question": "Какой это этап?",
+    "options": [
+     "Просьба переместить",
+     "Описание положения",
+     "План завтрашней поездки"
+    ],
+    "answer": 1,
+    "right": "*Liegt auf dem Tisch* отвечает на *Wo?*.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Der Treffpunkt ist neben dem Museum. Danach gehen wir an den See.",
+      "ru": "Встреча рядом с музеем. Потом идём к озеру."
+     }
+    ],
+    "question": "Где сначала встретиться?",
+    "options": [
+     "У озера",
+     "Внутри музея",
+     "Рядом с музеем"
+    ],
+    "answer": 2,
+    "right": "Следующая цель не заменяет первоначальное место встречи.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   }
+  ],
+  "ending": "Запись исправлена по источникам. В следующей главе команда воспользуется подтверждёнными сведениями для нового решения."
+ },
+ "adventure": {
+  "kind": "sequence",
+  "title": "Подготовьте место встречи",
+  "intro": "В Плёне друзья готовят место для пикника у воды. На условной схеме нужно найти встречу, поставить вещи и объяснить, где они теперь находятся. Знание настоящей карты не требуется: все ориентиры даны в сообщениях.",
+  "ending": "Вещи размещены, их новое положение описано, место встречи найдено по схеме. Следующая задача — сравнить несколько вариантов поездки.",
+  "challenges": [
+   {
+    "id": "meeting",
+    "kind": "select",
+    "title": "Найдите встречу по схеме",
+    "intro": "Клуб прислал условные ориентиры.",
+    "success": "Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы одно из них.",
+    "wrong": "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание и адресата.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Unser Treffpunkt ist neben dem Museum. Die Kamera liegt auf dem Tisch. Stellt die Tasche unter den Tisch. Legt die Tickets in die Tasche. Der Schlüssel bleibt in der Jacke. Danach gehen wir an den See.",
+      "name": "Hauke"
+     }
+    ],
+    "options": [
+     {
+      "id": "o0",
+      "label": "neben dem Museum"
+     },
+     {
+      "id": "o1",
+      "label": "im Museum"
+     },
+     {
+      "id": "o2",
+      "label": "hinter dem Bahnhof"
+     }
+    ],
+    "answer": [
+     "o0"
+    ]
+   },
+   {
+    "id": "objects",
+    "kind": "match",
+    "title": "Выполните инструкции с вещами",
+    "intro": "Сопоставьте каждую вещь с указанным местом. Для сумки дана команда, для камеры — уже известное положение.",
+    "success": "Команда на размещение и описание положения не перепутаны.",
+    "wrong": "Сумка — под стол, камера уже на столе, билеты — в сумку.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Unser Treffpunkt ist neben dem Museum. Die Kamera liegt auf dem Tisch. Stellt die Tasche unter den Tisch. Legt die Tickets in die Tasche. Der Schlüssel bleibt in der Jacke. Danach gehen wir an den See.",
+      "name": "Hauke"
+     }
+    ],
+    "options": [
+     {
+      "id": "under",
+      "label": "unter den Tisch"
+     },
+     {
+      "id": "table",
+      "label": "auf dem Tisch"
+     },
+     {
+      "id": "inside",
+      "label": "in die Tasche"
+     },
+     {
+      "id": "wrong",
+      "label": "auf den Tisch"
+     }
+    ],
+    "slots": [
+     {
+      "id": "bag",
+      "label": "Tasche · stellen",
+      "answer": "under"
+     },
+     {
+      "id": "camera",
+      "label": "Kamera · liegt",
+      "answer": "table"
+     },
+     {
+      "id": "tickets",
+      "label": "Tickets · legen",
+      "answer": "inside"
+     }
+    ]
+   },
+   {
+    "id": "report",
+    "kind": "order",
+    "title": "Сообщите результат",
+    "intro": "Скажите: «Теперь билеты в сумке».",
+    "success": "Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.",
+    "wrong": "Проверьте положение глагола и конец предложения: используйте все фрагменты.",
+    "tokens": [
+     "Jetzt",
+     "sind",
+     "die Tickets",
+     "in der Tasche."
+    ],
+    "label": "Реплика для команды"
+   },
+   {
+    "id": "key",
+    "kind": "select",
+    "title": "Найдите оставленный ключ",
+    "intro": "Выберите текущее место ключа, не команду переместить его.",
+    "success": "Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы одно из них.",
+    "wrong": "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание и адресата.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Unser Treffpunkt ist neben dem Museum. Die Kamera liegt auf dem Tisch. Stellt die Tasche unter den Tisch. Legt die Tickets in die Tasche. Der Schlüssel bleibt in der Jacke. Danach gehen wir an den See.",
+      "name": "Hauke"
+     }
+    ],
+    "options": [
+     {
+      "id": "o0",
+      "label": "in der Jacke"
+     },
+     {
+      "id": "o1",
+      "label": "in die Jacke"
+     },
+     {
+      "id": "o2",
+      "label": "neben das Museum"
+     }
+    ],
+    "answer": [
+     "o0"
+    ]
+   },
+   {
+    "id": "lake",
+    "kind": "order",
+    "title": "Объясните, куда идут дальше",
+    "intro": "«Потом мы идём к озеру».",
+    "success": "Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.",
+    "wrong": "Проверьте положение глагола и конец предложения: используйте все фрагменты.",
+    "tokens": [
+     "Danach",
+     "gehen",
+     "wir",
+     "an den See."
+    ],
+    "label": "Реплика для команды"
+   }
+  ]
+ },
+ "spy": []
+}

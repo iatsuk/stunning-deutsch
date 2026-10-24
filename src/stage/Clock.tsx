@@ -15,7 +15,7 @@ function useTurn(target: number) {
   return angle;
 }
 
-export function ClockView({ clock }: { clock: NonNullable<Scene["clock"]> }) {
+export function ClockView({ clock, showReading = true }: { clock: NonNullable<Scene["clock"]>; showReading?: boolean }) {
   const minute = useTurn(clock.minutes * 6);
   const hour = useTurn(((clock.hours % 12) + clock.minutes / 60) * 30);
   const evening = clock.hours >= 12;
@@ -56,20 +56,20 @@ export function ClockView({ clock }: { clock: NonNullable<Scene["clock"]> }) {
           {clock.time}
           <small>{evening ? "после полудня" : "до полудня"}</small>
         </div>
-        <div className="clock-say">
+        {showReading && <div className="clock-say">
           <span className="clock-label">официально</span>
           <span>
             <De text={`Es ist ${clock.formal}.`} />
             <PlayButton src={clock.audio[0]} />
           </span>
-        </div>
-        <div className="clock-say">
+        </div>}
+        {showReading && <div className="clock-say">
           <span className="clock-label">в разговоре</span>
           <span>
             <De text={`Es ist ${clock.informal}.`} />
             <PlayButton src={clock.audio[1]} />
           </span>
-        </div>
+        </div>}
       </div>
     </div>
   );

@@ -1,0 +1,2282 @@
+{
+ "id": "b1-absprachen",
+ "level": "b1",
+ "order": 9,
+ "title": "Ich kümmere mich um das Essen.",
+ "ru": "Распределяем ответственность и ищем предложения",
+ "lede": "Матео берёт на себя еду, Хауке связывается с администрацией, Дана ждёт ответа об условиях. Предложение помещения на 18 октября стоит 60 евро без кухни; это ещё не бронь. Нужно выяснить потребности гостей и распределить конкретные действия, не принимая интерес к теме за обещание всё сделать.",
+ "goals": [
+  "Использовать глагол вместе с его предлогом",
+  "Различить интерес, ожидание и взятую ответственность",
+  "Выбрать предложение по дню и условиям",
+  "Передать договорённости в письме"
+ ],
+ "grammar": [
+  "Глагол с предлогом: warten auf, sich kümmern um, sich interessieren für"
+ ],
+ "exam": [
+  "b1-lesen-3",
+  "b1-lesen-2",
+  "b1-sprachbausteine-2",
+  "b1-schreiben-1",
+  "b1-sprechen-3"
+ ],
+ "chapters": [
+  {
+   "id": "scene",
+   "title": "Ситуация"
+  },
+  {
+   "id": "words",
+   "title": "Слова"
+  },
+  {
+   "id": "grammar",
+   "title": "Грамматика"
+  },
+  {
+   "id": "practice",
+   "title": "Проверка"
+  },
+  {
+   "id": "exam",
+   "title": "На экзамене"
+  }
+ ],
+ "dialogues": {
+  "scene": {
+   "title": "Ich kümmere mich um das Essen.",
+   "ru": "Распределяем ответственность и ищем предложения",
+   "place": "Kiel · подготовка FördeTreff · вымышленная учебная ситуация",
+   "people": {
+    "D": {
+     "name": "Dana",
+     "voice": "Anna"
+    },
+    "M": {
+     "name": "Mateo",
+     "voice": "Reed"
+    },
+    "E": {
+     "name": "Elif",
+     "voice": "Flo"
+    },
+    "H": {
+     "name": "Hauke",
+     "voice": "Rocko"
+    }
+   },
+   "lines": [
+    {
+     "who": "M",
+     "de": "Ich kümmere mich um das Essen für unseren Treff.",
+     "ru": "Я займусь едой для нашей встречи.",
+     "audio": "audio/8b606cc25eb0.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Danke. Ich warte noch auf die Antwort zur Küche.",
+     "ru": "Спасибо. Я ещё жду ответа о кухне.",
+     "audio": "audio/093ca93e94d4.m4a"
+    },
+    {
+     "who": "E",
+     "de": "Ich interessiere mich für einfache Rezepte.",
+     "ru": "Мне интересны простые рецепты.",
+     "audio": "audio/e7198ad703c4.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Möchtest du mit mir die vegetarischen Angebote vergleichen?",
+     "ru": "Хочешь сравнить со мной вегетарианские предложения?",
+     "audio": "audio/822c76afffdb.m4a"
+    },
+    {
+     "who": "E",
+     "de": "Ja, am Montag habe ich nach dem Kurs Zeit.",
+     "ru": "Да, в понедельник после курса у меня есть время.",
+     "audio": "audio/047010664f05.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Ich spreche morgen mit der Verwaltung über den Raum.",
+     "ru": "Завтра я поговорю с администрацией о помещении.",
+     "audio": "audio/a53647e1abfd.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Das Angebot kostet sechzig Euro ohne Küche. Wir haben noch nicht zugesagt.",
+     "ru": "Предложение стоит шестьдесят евро без кухни. Мы ещё не согласились.",
+     "audio": "audio/604f0799cd9c.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Dann planen wir erst weiter, wenn die Bedingungen klar sind.",
+     "ru": "Тогда продолжим планировать, когда условия станут ясны.",
+     "audio": "audio/6a67264c71ef.m4a"
+    }
+   ]
+  }
+ },
+ "words": {
+  "useful": {
+   "title": "Wörter für die Aufgabe",
+   "ru": "Слова для действия",
+   "items": [
+    {
+     "de": "die Verantwortung",
+     "ru": "ответственность",
+     "gender": "f",
+     "plural": null,
+     "noPlural": true,
+     "audio": "audio/6cd8af6b9b60.m4a"
+    },
+    {
+     "de": "die Bedingung",
+     "ru": "условие",
+     "gender": "f",
+     "plural": "Bedingungen",
+     "audio": "audio/1894b31bad36.m4a"
+    },
+    {
+     "de": "die Verwaltung",
+     "ru": "администрация",
+     "gender": "f",
+     "plural": "Verwaltungen",
+     "audio": "audio/502f48294d68.m4a"
+    },
+    {
+     "de": "die Lieferung",
+     "ru": "доставка",
+     "gender": "f",
+     "plural": "Lieferungen",
+     "audio": "audio/4a471b45e046.m4a"
+    },
+    {
+     "de": "die Abholung",
+     "ru": "самовывоз",
+     "gender": "f",
+     "plural": "Abholungen",
+     "audio": "audio/a080f885edd7.m4a"
+    },
+    {
+     "de": "die Rückgabe",
+     "ru": "возврат",
+     "gender": "f",
+     "plural": "Rückgaben",
+     "audio": "audio/eeb18b776736.m4a"
+    },
+    {
+     "de": "die Mindestbestellung",
+     "ru": "минимальный заказ",
+     "gender": "f",
+     "plural": "Mindestbestellungen",
+     "audio": "audio/1ad8a1078f55.m4a"
+    },
+    {
+     "de": "der Mehrwegbecher",
+     "ru": "многоразовый стакан",
+     "gender": "m",
+     "plural": "Mehrwegbecher",
+     "audio": "audio/e10294b5611b.m4a"
+    },
+    {
+     "de": "die Kühlbox",
+     "ru": "сумка-холодильник",
+     "gender": "f",
+     "plural": "Kühlboxen",
+     "audio": "audio/461af5712c38.m4a"
+    },
+    {
+     "de": "warten auf",
+     "ru": "ждать чего-либо",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/18e0a78847b8.m4a"
+    },
+    {
+     "de": "sich kümmern um",
+     "ru": "заниматься чем-либо",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/7621f961d658.m4a"
+    },
+    {
+     "de": "sich interessieren für",
+     "ru": "интересоваться чем-либо",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/793cb185812a.m4a"
+    },
+    {
+     "de": "sprechen mit",
+     "ru": "говорить с кем-либо",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/3b84dfc8eafa.m4a"
+    },
+    {
+     "de": "zusagen",
+     "ru": "согласиться, подтвердить участие",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/53709ba2a5c6.m4a"
+    },
+    {
+     "de": "übernehmen",
+     "ru": "брать на себя",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/cae0433b4d7a.m4a"
+    },
+    {
+     "de": "vegetarisch",
+     "ru": "вегетарианский",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/4f8842df503f.m4a"
+    }
+   ]
+  }
+ },
+ "tables": {
+  "rule": {
+   "title": "Глагол с предлогом: warten auf, sich kümmern um, sich interessieren für",
+   "ru": "Опора для решения",
+   "head": [
+    "Beispiel",
+    "Смысл и форма"
+   ],
+   "rows": [
+    [
+     "Ich warte auf die Antwort.",
+     "warten auf + Akkusativ."
+    ],
+    [
+     "Ich kümmere mich um das Essen.",
+     "sich kümmern um + Akkusativ; ich → mich."
+    ],
+    [
+     "Ich interessiere mich für Rezepte. Ich spreche mit Elif.",
+     "für + Akkusativ; mit + Dativ."
+    ]
+   ],
+   "ruCols": [
+    1
+   ]
+  }
+ },
+ "tasks": {
+  "offers": {
+   "kind": "worksheet",
+   "part": "b1-lesen-3",
+   "format": "matching",
+   "uniqueOptions": true,
+   "reusableOptions": [
+    "x"
+   ],
+   "title": "Zehn Wünsche, zwölf Anzeigen",
+   "text": "a) Gemüse am Markt. Montag 10–14 Uhr. Kleine Mengen möglich, kein Lieferservice.\nb) Brot am Sonntag. Bäckerei am Hafen, 8–12 Uhr. Abholung; nach zwölf geschlossen.\nc) Vegetarisches Essen nach Hause. Sonntag Lieferung 14–15 Uhr, Mindestbestellung 20 Euro.\nd) Getränke für Vereine. Montag 16–19 Uhr; Lieferung nur nach Vereinbarung.\ne) Mehrwegbecher ausleihen. Montag oder Freitag abholen, Rückgabe nach dem Wochenende.\nf) Kühlbox fürs Wochenende. Samstag abholen, Montag zurückbringen.\ng) Einfache Rezepte. Freitag 18 Uhr, Kochabend für Anfänger mit Anmeldung.\nh) Gemeinsam sprechen. Mittwoch 18 Uhr, Gespräche auf Deutsch und Türkisch.\ni) Segelclub kennenlernen. Sonntag 10–12 Uhr am Hafen. Kostenloser Infotag, kein Segelkurs.\nj) Bilder der Küste. Sonntag 14 Uhr, kleine Fotoausstellung.\nk) Frühstück am Montag. Café 9–11 Uhr, auch vegetarisch.\nl) Lebensmittel einkaufen. Montag bis Samstag bis 20 Uhr, sonntags geschlossen.\nx) Kein passendes Angebot. Alle Bedingungen sind erfunden.",
+   "situation": "Jede Anzeige höchstens einmal; x dürfen Sie mehrmals wählen.",
+   "questions": [
+    {
+     "prompt": "Montagvormittag frisches Gemüse selbst abholen",
+     "options": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "i",
+      "j",
+      "k",
+      "l",
+      "x"
+     ],
+     "answers": [
+      "a"
+     ]
+    },
+    {
+     "prompt": "Sonntag um elf Brot kaufen",
+     "options": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "i",
+      "j",
+      "k",
+      "l",
+      "x"
+     ],
+     "answers": [
+      "b"
+     ]
+    },
+    {
+     "prompt": "Sonntag vegetarisches Essen liefern lassen, Bestellung 25 Euro",
+     "options": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "i",
+      "j",
+      "k",
+      "l",
+      "x"
+     ],
+     "answers": [
+      "c"
+     ]
+    },
+    {
+     "prompt": "Mehrwegbecher für das Wochenende ausleihen",
+     "options": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "i",
+      "j",
+      "k",
+      "l",
+      "x"
+     ],
+     "answers": [
+      "e"
+     ]
+    },
+    {
+     "prompt": "Eine Kühlbox Samstag bis Montag benutzen",
+     "options": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "i",
+      "j",
+      "k",
+      "l",
+      "x"
+     ],
+     "answers": [
+      "f"
+     ]
+    },
+    {
+     "prompt": "Freitag einfache Rezepte mit anderen ausprobieren",
+     "options": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "i",
+      "j",
+      "k",
+      "l",
+      "x"
+     ],
+     "answers": [
+      "g"
+     ]
+    },
+    {
+     "prompt": "Mittwoch Deutsch und Türkisch sprechen",
+     "options": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "i",
+      "j",
+      "k",
+      "l",
+      "x"
+     ],
+     "answers": [
+      "h"
+     ]
+    },
+    {
+     "prompt": "Sonntag kostenlos einen Segelclub kennenlernen",
+     "options": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "i",
+      "j",
+      "k",
+      "l",
+      "x"
+     ],
+     "answers": [
+      "i"
+     ]
+    },
+    {
+     "prompt": "Sonntag um 21 Uhr warmes Essen liefern lassen",
+     "options": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "i",
+      "j",
+      "k",
+      "l",
+      "x"
+     ],
+     "answers": [
+      "x"
+     ]
+    },
+    {
+     "prompt": "Samstag einen kostenlosen Schwimmkurs besuchen",
+     "options": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "i",
+      "j",
+      "k",
+      "l",
+      "x"
+     ],
+     "answers": [
+      "x"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "roles": {
+   "kind": "message",
+   "part": "b1-lesen-2",
+   "title": "Was schon vereinbart ist · Ausschnitt",
+   "text": "Mateo kümmert sich um das Essen. Elif vergleicht am Montag nach ihrem Kurs mit ihm die vegetarischen Angebote. Dana wartet auf die Antwort zur Küchennutzung. Hauke spricht morgen mit der Verwaltung. Angebot für den Raum am 18. Oktober, 15–18 Uhr: 60 Euro ohne Küche. Die Gruppe hat noch nicht zugesagt.",
+   "sample": []
+  },
+  "gaps": {
+   "kind": "worksheet",
+   "part": "b1-sprachbausteine-2",
+   "format": "cloze",
+   "uniqueOptions": true,
+   "title": "Eine Nachricht zur Vorbereitung",
+   "text": "Liebe Nora, wir warten [[1]] die Antwort der Verwaltung. Mateo kümmert sich [[2]] das Essen. Elif interessiert sich [[3]] einfache Rezepte und vergleicht Angebote [[4]] ihm. Wir fragen früh, [[5]] wir gut planen möchten. Dana schreibt [[6]] klare Anfrage. [[7]] Schluss prüfen wir alle Angaben. Wir versuchen, die Kosten niedrig [[8]] halten. Der Raum ist [[9]] nicht gebucht. Hoffentlich hören wir [[10]] etwas. Viele Grüße, Hauke",
+   "questions": [
+    {
+     "prompt": "Lücke 1",
+     "options": [
+      "auf",
+      "um",
+      "für",
+      "mit",
+      "weil",
+      "eine",
+      "Zum",
+      "zu",
+      "noch",
+      "bald",
+      "aber",
+      "ohne",
+      "den",
+      "als",
+      "ob"
+     ],
+     "answers": [
+      "auf"
+     ]
+    },
+    {
+     "prompt": "Lücke 2",
+     "options": [
+      "auf",
+      "um",
+      "für",
+      "mit",
+      "weil",
+      "eine",
+      "Zum",
+      "zu",
+      "noch",
+      "bald",
+      "aber",
+      "ohne",
+      "den",
+      "als",
+      "ob"
+     ],
+     "answers": [
+      "um"
+     ]
+    },
+    {
+     "prompt": "Lücke 3",
+     "options": [
+      "auf",
+      "um",
+      "für",
+      "mit",
+      "weil",
+      "eine",
+      "Zum",
+      "zu",
+      "noch",
+      "bald",
+      "aber",
+      "ohne",
+      "den",
+      "als",
+      "ob"
+     ],
+     "answers": [
+      "für"
+     ]
+    },
+    {
+     "prompt": "Lücke 4",
+     "options": [
+      "auf",
+      "um",
+      "für",
+      "mit",
+      "weil",
+      "eine",
+      "Zum",
+      "zu",
+      "noch",
+      "bald",
+      "aber",
+      "ohne",
+      "den",
+      "als",
+      "ob"
+     ],
+     "answers": [
+      "mit"
+     ]
+    },
+    {
+     "prompt": "Lücke 5",
+     "options": [
+      "auf",
+      "um",
+      "für",
+      "mit",
+      "weil",
+      "eine",
+      "Zum",
+      "zu",
+      "noch",
+      "bald",
+      "aber",
+      "ohne",
+      "den",
+      "als",
+      "ob"
+     ],
+     "answers": [
+      "weil"
+     ]
+    },
+    {
+     "prompt": "Lücke 6",
+     "options": [
+      "auf",
+      "um",
+      "für",
+      "mit",
+      "weil",
+      "eine",
+      "Zum",
+      "zu",
+      "noch",
+      "bald",
+      "aber",
+      "ohne",
+      "den",
+      "als",
+      "ob"
+     ],
+     "answers": [
+      "eine"
+     ]
+    },
+    {
+     "prompt": "Lücke 7",
+     "options": [
+      "auf",
+      "um",
+      "für",
+      "mit",
+      "weil",
+      "eine",
+      "Zum",
+      "zu",
+      "noch",
+      "bald",
+      "aber",
+      "ohne",
+      "den",
+      "als",
+      "ob"
+     ],
+     "answers": [
+      "Zum"
+     ]
+    },
+    {
+     "prompt": "Lücke 8",
+     "options": [
+      "auf",
+      "um",
+      "für",
+      "mit",
+      "weil",
+      "eine",
+      "Zum",
+      "zu",
+      "noch",
+      "bald",
+      "aber",
+      "ohne",
+      "den",
+      "als",
+      "ob"
+     ],
+     "answers": [
+      "zu"
+     ]
+    },
+    {
+     "prompt": "Lücke 9",
+     "options": [
+      "auf",
+      "um",
+      "für",
+      "mit",
+      "weil",
+      "eine",
+      "Zum",
+      "zu",
+      "noch",
+      "bald",
+      "aber",
+      "ohne",
+      "den",
+      "als",
+      "ob"
+     ],
+     "answers": [
+      "noch"
+     ]
+    },
+    {
+     "prompt": "Lücke 10",
+     "options": [
+      "auf",
+      "um",
+      "für",
+      "mit",
+      "weil",
+      "eine",
+      "Zum",
+      "zu",
+      "noch",
+      "bald",
+      "aber",
+      "ohne",
+      "den",
+      "als",
+      "ob"
+     ],
+     "answers": [
+      "bald"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "write": {
+   "kind": "message",
+   "part": "b1-schreiben-1",
+   "title": "Die Aufgaben an einen neuen Helfer weitergeben",
+   "text": "Ein neuer Helfer fragt nach dem Stand der Vorbereitung. Schreiben Sie ihm eine persönliche Nachricht.",
+   "points": [
+    "Den Plan und den gewünschten Termin erklären",
+    "Zwei vereinbarte Aufgaben mit Personen nennen",
+    "Eine offene Frage zur Küche erklären",
+    "Um eine konkrete Hilfe bitten und eine Rückfrage stellen"
+   ],
+   "sample": [
+    {
+     "de": "Hallo Jonas, wir bereiten den FördeTreff für den 18. Oktober von 15 bis 18 Uhr vor. Mateo kümmert sich um das Essen. Elif vergleicht am Montag nach ihrem Kurs die vegetarischen Angebote mit ihm. Dana wartet noch auf die Antwort zur Küche. Für den Raum gibt es ein Angebot über 60 Euro ohne Küche, aber wir haben noch nicht zugesagt. Kannst du bitte nach Mehrwegbechern fragen? Wir brauchen sie für 18 Gäste. Hast du am Freitag Zeit für die Abholung? Bitte sag mir Bescheid, bevor du etwas bestellst. Viele Grüße Hauke",
+     "audio": "audio/2b494030f70a.m4a"
+    }
+   ]
+  },
+  "talk": {
+   "kind": "card",
+   "part": "b1-sprechen-3",
+   "title": "Hilfe konkret vereinbaren",
+   "theme": "Essen und Abholung",
+   "word": "Aufgabe · Tag · Rückfrage · Zusage",
+   "situation": "Verteilen Sie Einkauf und Abholung. Eine Person arbeitet sonntags, die andere hat nur am Montag ein Auto. Interessen allein reichen nicht: bestätigen Sie konkrete Aufgaben.",
+   "sample": []
+  }
+ },
+ "beats": [
+  {
+   "id": "start-1",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 0,
+   "read": "Матео берёт на себя еду, Хауке связывается с администрацией, Дана ждёт ответа об условиях. Предложение помещения на 18 октября стоит 60 евро без кухни; это ещё не бронь. Нужно выяснить потребности гостей и распределить конкретные действия, не принимая интерес к теме за обещание всё сделать. Все нужные условия даны в сцене: знания географии, настоящих цен или расписаний не требуются. Сначала попробуйте понять, какого результата добиваются друзья, затем слушайте реплики. На новом уровне важно не только найти число или знакомое слово, но и связать несколько сведений.",
+   "point": "Распределяем ответственность и ищем предложения",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 4,
+    "fresh": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "start-2",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 1,
+   "read": "Здесь предлог зависит от глагола и не переводится по одному русскому слову. Warten auf сообщает об ожидании, sich kümmern um — о принятой задаче, sich interessieren für — об интересе. Похожие окончания не делают эти действия одинаковыми. Для общего плана важно понять, кто уже взял ответственность, кто только проявил интерес и какой ответ ещё ожидается.",
+   "point": "Глагол с предлогом: warten auf, sich kümmern um, sich interessieren für",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 8,
+    "fresh": [
+     4,
+     5,
+     6,
+     7
+    ]
+   }
+  },
+  {
+   "id": "words-1",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 0,
+   "read": "Предложения из объявлений различаются не только продуктами. Нужно учитывать день, часы, доставку, возврат и минимальную сумму. Информационный день в яхт-клубе не становится курсом парусного спорта; наличие вегетарианской еды не означает бесплатную доставку. В игре немецкий нужен для выбора подходящего действия и точной записи договорённости.",
+   "point": "Сначала используйте слово для решения; словарь остаётся справочником.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 6,
+    "words": "useful"
+   }
+  },
+  {
+   "id": "words-2",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 1,
+   "read": "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к ситуации: какие слова обозначают человека, место, условие или уже выполненное действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово встретится снова в записке или разговоре, попробуйте восстановить его смысл до подсказки.",
+   "point": "Возвращайтесь к выражениям в сообщениях и новых действиях.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 16,
+    "words": "useful",
+    "fresh": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   }
+  },
+  {
+   "id": "grammar-1",
+   "step": "grammar",
+   "stepTitle": "Глагол с предлогом: warten auf, sich kümmern um, sich interessieren für",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "Учите связку целиком: warten auf. Нельзя выбирать предлог по русскому «ждать ответа». В этой модели после auf стоит Akkusativ: *auf die Antwort, auf den Bus*. Здесь нет движения на поверхность; пространственное правило Wechselpräpositionen не решает управление глагола. Сначала определите устойчивое сочетание, затем форму существительного.",
+   "point": "warten auf + Akkusativ.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "grammar-2",
+   "step": "grammar",
+   "stepTitle": "Глагол с предлогом: warten auf, sich kümmern um, sich interessieren für",
+   "chapterIndex": 2,
+   "indexInStep": 1,
+   "read": "Kümmern используется с возвратным местоимением: *ich kümmere mich*, *du kümmerst dich*, *wir kümmern uns*. После um называем предмет заботы в Akkusativ. Реплика означает, что человек займётся задачей, а не просто любит эту тему. В игре это различие меняет список ответственных. Не удаляйте местоимение при сборке предложения.",
+   "point": "sich kümmern um + Akkusativ; ich → mich.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "grammar-3",
+   "step": "grammar",
+   "stepTitle": "Глагол с предлогом: warten auf, sich kümmern um, sich interessieren für",
+   "chapterIndex": 2,
+   "indexInStep": 2,
+   "read": "Interesse ещё не является согласием выполнить работу. В предложении *Ich interessiere mich für Rezepte* названа тема интереса. Чтобы распределить дело, нужно предложение и явное согласие. *Sprechen mit* называет собеседника и требует Dativ. Предлог сохраняется, даже когда имя человека не показывает падежное окончание.",
+   "point": "für + Akkusativ; mit + Dativ.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "frames-1",
+   "step": "frames",
+   "stepTitle": "Как устроена реплика",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "Возвратное mich и предложная группа um das Essen относятся к одному глаголу. Если убрать mich, исчезнет нормативная модель kümmern. Если заменить um на für, фраза смешается с interessieren. Сначала соберите устойчивую рамку, затем добавьте содержание задачи. В разговоре можно уточнить объём ответственности: закупка, приготовление или выбор поставщика.",
+   "point": "*Ich kümmere mich um das Essen.*",
+   "scene": {
+    "view": "sentence",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "kümmere",
+         "text": "kümmere"
+        },
+        {
+         "key": "mich",
+         "text": "mich"
+        }
+       ],
+       [
+        {
+         "key": "um",
+         "text": "um"
+        }
+       ],
+       [
+        {
+         "key": "das",
+         "text": "das"
+        },
+        {
+         "key": "essen",
+         "text": "Essen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich kümmere mich um das Essen.",
+      "ru": "Я займусь едой.",
+      "audio": "audio/1bdd2458dd60.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-1",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 0,
+   "read": "Нет. Это интерес к рецептам. Чтобы взять задачу, человек должен согласиться на конкретное действие. В сцене Матео предлагает сравнить предложения, а Элиф отвечает да и называет удобное время. Только после этого можно добавить её участие в план. Различайте языковой смысл и выводы, которые хочется сделать за собеседника.",
+   "point": "Интерес → предложение → согласие, это разные шаги.",
+   "question": "«Ich interessiere mich für Rezepte» уже назначает человека поваром?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "kümmere",
+         "text": "kümmere"
+        },
+        {
+         "key": "mich",
+         "text": "mich"
+        }
+       ],
+       [
+        {
+         "key": "um",
+         "text": "um"
+        }
+       ],
+       [
+        {
+         "key": "das",
+         "text": "das"
+        },
+        {
+         "key": "essen",
+         "text": "Essen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich kümmere mich um das Essen.",
+      "ru": "Я займусь едой.",
+      "audio": "audio/1bdd2458dd60.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-2",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 1,
+   "read": "Потому что здесь auf входит в управление warten auf. Пространственное различие «куда или где» к этой связке не применяется. Akkusativ нужен по модели глагола. Аналогично *um das Essen* называет предмет заботы, а не обход вокруг еды. Учите короткое полезное предложение и меняйте в нём предмет ожидания или задачи.",
+   "point": "Устойчивое управление важнее пространственного перевода.",
+   "question": "Почему auf den Bus, хотя никто не движется «на автобус»?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "kümmere",
+         "text": "kümmere"
+        },
+        {
+         "key": "mich",
+         "text": "mich"
+        }
+       ],
+       [
+        {
+         "key": "um",
+         "text": "um"
+        }
+       ],
+       [
+        {
+         "key": "das",
+         "text": "das"
+        },
+        {
+         "key": "essen",
+         "text": "Essen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich kümmere mich um das Essen.",
+      "ru": "Я займусь едой.",
+      "audio": "audio/1bdd2458dd60.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "exam-offers-1",
+   "step": "exam-offers",
+   "stepTitle": "Zehn Wünsche, zwölf Anzeigen",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала отметьте обязательные ограничения каждого запроса: день, время, цена или конкретный вид услуги. Объявление можно использовать один раз, x — несколько. Две ситуации намеренно не имеют подходящего предложения. Не выбирайте похожее слово вместо решения, которое действительно выполняет все условия.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "kümmere",
+         "text": "kümmere"
+        },
+        {
+         "key": "mich",
+         "text": "mich"
+        }
+       ],
+       [
+        {
+         "key": "um",
+         "text": "um"
+        }
+       ],
+       [
+        {
+         "key": "das",
+         "text": "das"
+        },
+        {
+         "key": "essen",
+         "text": "Essen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich kümmere mich um das Essen.",
+      "ru": "Я займусь едой.",
+      "audio": "audio/1bdd2458dd60.m4a"
+     }
+    ],
+    "task": "offers"
+   }
+  },
+  {
+   "id": "exam-offers-2",
+   "step": "exam-offers",
+   "stepTitle": "Zehn Wünsche, zwölf Anzeigen",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "kümmere",
+         "text": "kümmere"
+        },
+        {
+         "key": "mich",
+         "text": "mich"
+        }
+       ],
+       [
+        {
+         "key": "um",
+         "text": "um"
+        }
+       ],
+       [
+        {
+         "key": "das",
+         "text": "das"
+        },
+        {
+         "key": "essen",
+         "text": "Essen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich kümmere mich um das Essen.",
+      "ru": "Я займусь едой.",
+      "audio": "audio/1bdd2458dd60.m4a"
+     }
+    ],
+    "task": "offers"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "kümmere",
+         "text": "kümmere"
+        },
+        {
+         "key": "mich",
+         "text": "mich"
+        }
+       ],
+       [
+        {
+         "key": "um",
+         "text": "um"
+        }
+       ],
+       [
+        {
+         "key": "das",
+         "text": "das"
+        },
+        {
+         "key": "essen",
+         "text": "Essen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich kümmere mich um das Essen.",
+      "ru": "Я займусь едой.",
+      "audio": "audio/1bdd2458dd60.m4a"
+     }
+    ],
+    "task": "offers",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-roles-1",
+   "step": "exam-roles",
+   "stepTitle": "Was schon vereinbart ist · Ausschnitt",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Разделите четыре разных типа записи: назначенная задача, согласованная помощь, ожидаемый ответ и полученное предложение. В коротком тексте не сказано, что помещение уже забронировано. Эта карточка — источник для игры и письма, а не полная часть Lesen 2. После чтения перескажите статус без лишних обещаний.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "kümmere",
+         "text": "kümmere"
+        },
+        {
+         "key": "mich",
+         "text": "mich"
+        }
+       ],
+       [
+        {
+         "key": "um",
+         "text": "um"
+        }
+       ],
+       [
+        {
+         "key": "das",
+         "text": "das"
+        },
+        {
+         "key": "essen",
+         "text": "Essen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich kümmere mich um das Essen.",
+      "ru": "Я займусь едой.",
+      "audio": "audio/1bdd2458dd60.m4a"
+     }
+    ],
+    "task": "roles"
+   }
+  },
+  {
+   "id": "exam-roles-2",
+   "step": "exam-roles",
+   "stepTitle": "Was schon vereinbart ist · Ausschnitt",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "kümmere",
+         "text": "kümmere"
+        },
+        {
+         "key": "mich",
+         "text": "mich"
+        }
+       ],
+       [
+        {
+         "key": "um",
+         "text": "um"
+        }
+       ],
+       [
+        {
+         "key": "das",
+         "text": "das"
+        },
+        {
+         "key": "essen",
+         "text": "Essen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich kümmere mich um das Essen.",
+      "ru": "Я займусь едой.",
+      "audio": "audio/1bdd2458dd60.m4a"
+     }
+    ],
+    "task": "roles"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "kümmere",
+         "text": "kümmere"
+        },
+        {
+         "key": "mich",
+         "text": "mich"
+        }
+       ],
+       [
+        {
+         "key": "um",
+         "text": "um"
+        }
+       ],
+       [
+        {
+         "key": "das",
+         "text": "das"
+        },
+        {
+         "key": "essen",
+         "text": "Essen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich kümmere mich um das Essen.",
+      "ru": "Я займусь едой.",
+      "audio": "audio/1bdd2458dd60.m4a"
+     }
+    ],
+    "task": "roles",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-gaps-1",
+   "step": "exam-gaps",
+   "stepTitle": "Eine Nachricht zur Vorbereitung",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Общий банк связывает устойчивые глагольные сочетания с уже знакомыми причинами и инфинитивом zu. Прочитайте сообщение целиком и восстановите смысл распределения. Каждый вариант используйте один раз. В конце проверьте не только отдельный предлог, но и то, не превратился ли ожидаемый ответ в уже полученный.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "kümmere",
+         "text": "kümmere"
+        },
+        {
+         "key": "mich",
+         "text": "mich"
+        }
+       ],
+       [
+        {
+         "key": "um",
+         "text": "um"
+        }
+       ],
+       [
+        {
+         "key": "das",
+         "text": "das"
+        },
+        {
+         "key": "essen",
+         "text": "Essen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich kümmere mich um das Essen.",
+      "ru": "Я займусь едой.",
+      "audio": "audio/1bdd2458dd60.m4a"
+     }
+    ],
+    "task": "gaps"
+   }
+  },
+  {
+   "id": "exam-gaps-2",
+   "step": "exam-gaps",
+   "stepTitle": "Eine Nachricht zur Vorbereitung",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "kümmere",
+         "text": "kümmere"
+        },
+        {
+         "key": "mich",
+         "text": "mich"
+        }
+       ],
+       [
+        {
+         "key": "um",
+         "text": "um"
+        }
+       ],
+       [
+        {
+         "key": "das",
+         "text": "das"
+        },
+        {
+         "key": "essen",
+         "text": "Essen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich kümmere mich um das Essen.",
+      "ru": "Я займусь едой.",
+      "audio": "audio/1bdd2458dd60.m4a"
+     }
+    ],
+    "task": "gaps"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "kümmere",
+         "text": "kümmere"
+        },
+        {
+         "key": "mich",
+         "text": "mich"
+        }
+       ],
+       [
+        {
+         "key": "um",
+         "text": "um"
+        }
+       ],
+       [
+        {
+         "key": "das",
+         "text": "das"
+        },
+        {
+         "key": "essen",
+         "text": "Essen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich kümmere mich um das Essen.",
+      "ru": "Я займусь едой.",
+      "audio": "audio/1bdd2458dd60.m4a"
+     }
+    ],
+    "task": "gaps",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-write-1",
+   "step": "exam-write",
+   "stepTitle": "Die Aufgaben an einen neuen Helfer weitergeben",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Новому помощнику нужно понять и готовое, и открытое. Назовите конкретных людей и задачи, затем задайте выполнимую просьбу. Письмо должно раскрыть все четыре пункта. Не назначайте человеку действие только потому, что ему интересна тема: сначала нужна просьба и возможность ответить.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "kümmere",
+         "text": "kümmere"
+        },
+        {
+         "key": "mich",
+         "text": "mich"
+        }
+       ],
+       [
+        {
+         "key": "um",
+         "text": "um"
+        }
+       ],
+       [
+        {
+         "key": "das",
+         "text": "das"
+        },
+        {
+         "key": "essen",
+         "text": "Essen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich kümmere mich um das Essen.",
+      "ru": "Я займусь едой.",
+      "audio": "audio/1bdd2458dd60.m4a"
+     }
+    ],
+    "task": "write",
+    "reveal": 0
+   }
+  },
+  {
+   "id": "exam-write-2",
+   "step": "exam-write",
+   "stepTitle": "Die Aufgaben an einen neuen Helfer weitergeben",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "kümmere",
+         "text": "kümmere"
+        },
+        {
+         "key": "mich",
+         "text": "mich"
+        }
+       ],
+       [
+        {
+         "key": "um",
+         "text": "um"
+        }
+       ],
+       [
+        {
+         "key": "das",
+         "text": "das"
+        },
+        {
+         "key": "essen",
+         "text": "Essen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich kümmere mich um das Essen.",
+      "ru": "Я займусь едой.",
+      "audio": "audio/1bdd2458dd60.m4a"
+     }
+    ],
+    "task": "write",
+    "reveal": 0
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "kümmere",
+         "text": "kümmere"
+        },
+        {
+         "key": "mich",
+         "text": "mich"
+        }
+       ],
+       [
+        {
+         "key": "um",
+         "text": "um"
+        }
+       ],
+       [
+        {
+         "key": "das",
+         "text": "das"
+        },
+        {
+         "key": "essen",
+         "text": "Essen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich kümmere mich um das Essen.",
+      "ru": "Я займусь едой.",
+      "audio": "audio/1bdd2458dd60.m4a"
+     }
+    ],
+    "task": "write",
+    "reveal": 0,
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-talk-1",
+   "step": "exam-talk",
+   "stepTitle": "Hilfe konkret vereinbaren",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Задайте уточняющий вопрос о времени и транспорте, затем предложите посильное распределение. Отдельно подтвердите, кто берёт каждую задачу. Можно отказаться от неподходящего дня и предложить другой. Проверяется совместное решение, а не умение быстро согласиться на всё.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "kümmere",
+         "text": "kümmere"
+        },
+        {
+         "key": "mich",
+         "text": "mich"
+        }
+       ],
+       [
+        {
+         "key": "um",
+         "text": "um"
+        }
+       ],
+       [
+        {
+         "key": "das",
+         "text": "das"
+        },
+        {
+         "key": "essen",
+         "text": "Essen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich kümmere mich um das Essen.",
+      "ru": "Я займусь едой.",
+      "audio": "audio/1bdd2458dd60.m4a"
+     }
+    ],
+    "task": "talk"
+   }
+  },
+  {
+   "id": "exam-talk-2",
+   "step": "exam-talk",
+   "stepTitle": "Hilfe konkret vereinbaren",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "kümmere",
+         "text": "kümmere"
+        },
+        {
+         "key": "mich",
+         "text": "mich"
+        }
+       ],
+       [
+        {
+         "key": "um",
+         "text": "um"
+        }
+       ],
+       [
+        {
+         "key": "das",
+         "text": "das"
+        },
+        {
+         "key": "essen",
+         "text": "Essen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich kümmere mich um das Essen.",
+      "ru": "Я займусь едой.",
+      "audio": "audio/1bdd2458dd60.m4a"
+     }
+    ],
+    "task": "talk"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "kümmere",
+         "text": "kümmere"
+        },
+        {
+         "key": "mich",
+         "text": "mich"
+        }
+       ],
+       [
+        {
+         "key": "um",
+         "text": "um"
+        }
+       ],
+       [
+        {
+         "key": "das",
+         "text": "das"
+        },
+        {
+         "key": "essen",
+         "text": "Essen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Ich kümmere mich um das Essen.",
+      "ru": "Я займусь едой.",
+      "audio": "audio/1bdd2458dd60.m4a"
+     }
+    ],
+    "task": "talk",
+    "solved": true
+   }
+  }
+ ],
+ "exercises": [
+  {
+   "id": "b1-absprachen-1",
+   "type": "choice",
+   "q": "Ich warte ___ die Antwort.",
+   "options": [
+    "auf",
+    "um",
+    "für"
+   ],
+   "answer": 0,
+   "why": "Warten auf.",
+   "audio": "audio/952253d5f279.m4a"
+  },
+  {
+   "id": "b1-absprachen-2",
+   "type": "choice",
+   "q": "Wir kümmern ___ um das Essen.",
+   "options": [
+    "uns",
+    "wir",
+    "unser"
+   ],
+   "answer": 0,
+   "why": "Wir kümmern uns.",
+   "audio": "audio/feab3c952aa4.m4a"
+  },
+  {
+   "id": "b1-absprachen-3",
+   "type": "choice",
+   "q": "Sie interessiert sich ___ Rezepte.",
+   "options": [
+    "mit",
+    "für",
+    "um"
+   ],
+   "answer": 1,
+   "why": "sich interessieren für + Akkusativ.",
+   "audio": "audio/6d2d1f9242d1.m4a"
+  },
+  {
+   "id": "b1-absprachen-4",
+   "type": "choice",
+   "q": "Ich spreche ___ der Verwaltung.",
+   "options": [
+    "mit",
+    "für",
+    "um"
+   ],
+   "answer": 0,
+   "why": "Mit Dativ.",
+   "audio": "audio/962901caa9db.m4a"
+  },
+  {
+   "id": "b1-absprachen-5",
+   "type": "choice",
+   "q": "Wir warten auf ___ Bus.",
+   "options": [
+    "den",
+    "dem",
+    "der"
+   ],
+   "answer": 0,
+   "why": "Warten auf Akkusativ.",
+   "audio": "audio/ab6f880818b1.m4a"
+  },
+  {
+   "id": "b1-absprachen-6",
+   "type": "choice",
+   "q": "Интерес к теме равен обещанию?",
+   "options": [
+    "Только в воскресенье",
+    "Нет",
+    "Да"
+   ],
+   "answer": 1,
+   "why": "Нужна явная договорённость."
+  },
+  {
+   "id": "b1-absprachen-7",
+   "type": "order",
+   "de": "Ich kümmere mich um das Essen.",
+   "ru": "Я займусь едой.",
+   "audio": "audio/1bdd2458dd60.m4a"
+  },
+  {
+   "id": "b1-absprachen-8",
+   "type": "order",
+   "de": "Wir warten auf die Antwort.",
+   "ru": "Мы ждём ответа.",
+   "audio": "audio/3f1dec23a330.m4a"
+  },
+  {
+   "id": "b1-absprachen-9",
+   "type": "order",
+   "de": "Elif interessiert sich für einfache Rezepte.",
+   "ru": "Элиф интересуется простыми рецептами.",
+   "audio": "audio/5c985cefc304.m4a"
+  },
+  {
+   "id": "b1-absprachen-10",
+   "type": "order",
+   "de": "Hauke spricht mit der Verwaltung.",
+   "ru": "Хауке говорит с администрацией.",
+   "audio": "audio/8202e2cfe86d.m4a"
+  },
+  {
+   "id": "b1-absprachen-11",
+   "type": "order",
+   "de": "Wir haben noch nicht zugesagt.",
+   "ru": "Мы ещё не согласились.",
+   "audio": "audio/d6db38c490db.m4a"
+  },
+  {
+   "id": "b1-absprachen-12",
+   "type": "order",
+   "de": "Bitte bestell noch nichts.",
+   "ru": "Пожалуйста, пока ничего не заказывай.",
+   "audio": "audio/bc2ced4eaa89.m4a"
+  }
+ ],
+ "case": {
+  "title": "Interesse ist noch keine Zuständigkeit",
+  "ru": "Сверка дневника",
+  "intro": "В дневнике назначили слишком много ответственных и превратили предложение в бронь.",
+  "people": {},
+  "steps": [
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Elif interessiert sich für Rezepte. Sie vergleicht am Montag Angebote mit Mateo.",
+      "ru": "Элиф интересуется рецептами. В понедельник она сравнит предложения с Матео."
+     }
+    ],
+    "question": "Элиф обещала приготовить всю еду?",
+    "options": [
+     "Нет, согласовано сравнение",
+     "Да",
+     "Она отказалась от любой помощи"
+    ],
+    "answer": 0,
+    "right": "Названо конкретное действие, а не готовка всего.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Dana wartet auf die Antwort zur Küche.",
+      "ru": "Дана ждёт ответа о кухне."
+     }
+    ],
+    "question": "Ответ уже получен?",
+    "options": [
+     "Да",
+     "Кухня точно бесплатна",
+     "Нет"
+    ],
+    "answer": 2,
+    "right": "Warten означает ожидание.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Angebot: 60 Euro ohne Küche. Noch keine Zusage.",
+      "ru": "Предложение: 60 евро без кухни. Пока нет согласия."
+     }
+    ],
+    "question": "Что подтверждено?",
+    "options": [
+     "Бесплатное помещение",
+     "Предложение цены, ещё не бронь",
+     "Бронь с кухней"
+    ],
+    "answer": 1,
+    "right": "Наличие предложения не означает принятие.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   }
+  ],
+  "ending": "В план вошли только согласованные задачи. Интерес, ожидание, предложение и согласие больше не смешиваются."
+ },
+ "adventure": {
+  "kind": "sequence",
+  "title": "От интереса к конкретной договорённости",
+  "intro": "Матео берёт на себя еду, Хауке связывается с администрацией, Дана ждёт ответа об условиях. Предложение помещения на 18 октября стоит 60 евро без кухни; это ещё не бронь. Нужно выяснить потребности гостей и распределить конкретные действия, не принимая интерес к теме за обещание всё сделать.",
+  "ending": "Ответственность за еду и помощь со сравнением подтверждены. Кухня и помещение остаются открытыми условиями; новые заказы без согласования не делаются.",
+  "challenges": [
+   {
+    "id": "prep",
+    "kind": "match",
+    "title": "Соберите устойчивые связки",
+    "intro": "Выберите предлог к глаголу.",
+    "success": "Предлог связан с глаголом.",
+    "wrong": "Повторите warten auf, kümmern um, interessieren für.",
+    "options": [
+     {
+      "id": "auf",
+      "label": "auf"
+     },
+     {
+      "id": "um",
+      "label": "um"
+     },
+     {
+      "id": "fur",
+      "label": "für"
+     }
+    ],
+    "slots": [
+     {
+      "id": "wait",
+      "label": "warten … die Antwort",
+      "answer": "auf"
+     },
+     {
+      "id": "care",
+      "label": "sich kümmern … das Essen",
+      "answer": "um"
+     },
+     {
+      "id": "interest",
+      "label": "sich interessieren … Rezepte",
+      "answer": "fur"
+     }
+    ]
+   },
+   {
+    "id": "care",
+    "kind": "order",
+    "title": "Возьмите конкретную задачу",
+    "intro": "Сохраните возвратное местоимение.",
+    "success": "Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.",
+    "wrong": "Проверьте положение глагола и конец предложения: используйте все фрагменты.",
+    "tokens": [
+     "Ich",
+     "kümmere mich",
+     "um",
+     "das Essen."
+    ],
+    "label": "Реплика для команды"
+   },
+   {
+    "id": "bread",
+    "kind": "select",
+    "title": "Найдите хлеб на воскресенье",
+    "intro": "Нужно забрать хлеб в 11:00 в воскресенье.",
+    "success": "Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы одно из них.",
+    "wrong": "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание и адресата.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "a) Gemüse am Markt. Montag 10–14 Uhr. Kleine Mengen möglich, kein Lieferservice.\nb) Brot am Sonntag. Bäckerei am Hafen, 8–12 Uhr. Abholung; nach zwölf geschlossen.\nc) Vegetarisches Essen nach Hause. Sonntag Lieferung 14–15 Uhr, Mindestbestellung 20 Euro.\nd) Getränke für Vereine. Montag 16–19 Uhr; Lieferung nur nach Vereinbarung.\ne) Mehrwegbecher ausleihen. Montag oder Freitag abholen, Rückgabe nach dem Wochenende.\nf) Kühlbox fürs Wochenende. Samstag abholen, Montag zurückbringen.\ng) Einfache Rezepte. Freitag 18 Uhr, Kochabend für Anfänger mit Anmeldung.\nh) Gemeinsam sprechen. Mittwoch 18 Uhr, Gespräche auf Deutsch und Türkisch.\ni) Segelclub kennenlernen. Sonntag 10–12 Uhr am Hafen. Kostenloser Infotag, kein Segelkurs.\nj) Bilder der Küste. Sonntag 14 Uhr, kleine Fotoausstellung.\nk) Frühstück am Montag. Café 9–11 Uhr, auch vegetarisch.\nl) Lebensmittel einkaufen. Montag bis Samstag bis 20 Uhr, sonntags geschlossen.\nx) Kein passendes Angebot. Alle Bedingungen sind erfunden.",
+      "name": "Zehn Wünsche, zwölf Anzeigen"
+     }
+    ],
+    "options": [
+     {
+      "id": "o0",
+      "label": "b"
+     },
+     {
+      "id": "o1",
+      "label": "k"
+     },
+     {
+      "id": "o2",
+      "label": "l"
+     }
+    ],
+    "answer": [
+     "o0"
+    ]
+   },
+   {
+    "id": "person",
+    "kind": "note",
+    "title": "Запишите ответственного за еду",
+    "intro": "Кто уже взял эту задачу? Не записывайте только заинтересовавшегося человека.",
+    "success": "Ответственный назначен по явной реплике.",
+    "wrong": "Mateo kümmert sich um das Essen.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Mateo kümmert sich um das Essen. Elif vergleicht am Montag nach ihrem Kurs mit ihm die vegetarischen Angebote. Dana wartet auf die Antwort zur Küchennutzung. Hauke spricht morgen mit der Verwaltung. Angebot für den Raum am 18. Oktober, 15–18 Uhr: 60 Euro ohne Küche. Die Gruppe hat noch nicht zugesagt.",
+      "name": "Was schon vereinbart ist · Ausschnitt"
+     }
+    ],
+    "fields": [
+     {
+      "label": "Verantwortlich für das Essen",
+      "answers": [
+       "Mateo"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "agreement",
+    "kind": "negotiation",
+    "title": "Превратите интерес в посильную помощь",
+    "intro": "Элиф хочет участвовать, но нужно согласовать действие.",
+    "success": "Согласованы помощь и граница заказа.",
+    "wrong": "Уточните действие и открытое условие.",
+    "start": "a",
+    "nodes": [
+     {
+      "id": "a",
+      "text": "Elif: Ich interessiere mich für Rezepte. Beim Einkaufen kann ich heute nicht helfen.",
+      "choices": [
+       {
+        "label": "Kannst du am Montag nach deinem Kurs Angebote mit mir vergleichen?",
+        "next": "b",
+        "feedback": "Предложена другая конкретная помощь."
+       }
+      ]
+     },
+     {
+      "id": "b",
+      "text": "Elif: Ja, nach dem Kurs habe ich Zeit. Bestellen wir dann sofort?",
+      "choices": [
+       {
+        "label": "Noch nicht. Wir warten zuerst auf die Bedingungen zur Küche.",
+        "next": "end",
+        "feedback": "Открытые условия не потеряны."
+       }
+      ]
+     },
+     {
+      "id": "end",
+      "text": "Elif: Einverstanden. Montag vergleichen wir, danach stimmen wir die Bestellung ab.",
+      "terminal": true,
+      "choices": []
+     }
+    ]
+   }
+  ]
+ },
+ "spy": []
+}

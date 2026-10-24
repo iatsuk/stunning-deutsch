@@ -1,0 +1,2037 @@
+{
+ "id": "a2-vergleichen",
+ "level": "a2",
+ "order": 5,
+ "title": "Welcher Plan passt besser?",
+ "ru": "Сравниваем варианты",
+ "lede": "Для поездки в Любек друзья сравнивают кафе, музей и прогулку. Нужно учитывать цену, расстояние и интересы, а затем согласовать подходящий план. Все предложения и суммы в уроке вымышлены.",
+ "goals": [
+  "Сравнить два варианта и назвать отличие",
+  "Понять превосходную степень частых слов",
+  "Выбрать несколько допустимых планов по условиям",
+  "Сопоставить объявление и запрос, включая отсутствие подходящего"
+ ],
+ "grammar": [
+  "Komparativ: günstiger als, so … wie, am liebsten"
+ ],
+ "exam": [
+  "a2-lesen-3",
+  "a2-hoeren-2",
+  "a2-sprechen-3"
+ ],
+ "chapters": [
+  {
+   "id": "scene",
+   "title": "Ситуация"
+  },
+  {
+   "id": "words",
+   "title": "Слова"
+  },
+  {
+   "id": "grammar",
+   "title": "Грамматика"
+  },
+  {
+   "id": "practice",
+   "title": "Проверка"
+  },
+  {
+   "id": "exam",
+   "title": "На экзамене"
+  }
+ ],
+ "dialogues": {
+  "scene": {
+   "title": "Welcher Plan passt besser?",
+   "ru": "Сравниваем варианты",
+   "place": "Lübeck · вымышленные предложения · вымышленная учебная ситуация",
+   "people": {
+    "D": {
+     "name": "Dana",
+     "voice": "Anna"
+    },
+    "M": {
+     "name": "Mateo",
+     "voice": "Reed"
+    },
+    "E": {
+     "name": "Elif",
+     "voice": "Flo"
+    },
+    "H": {
+     "name": "Hauke",
+     "voice": "Rocko"
+    }
+   },
+   "lines": [
+    {
+     "who": "D",
+     "de": "Welches Café ist günstiger?",
+     "ru": "Какое кафе дешевле?",
+     "audio": "audio/78b8734e61bd.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Café B ist günstiger als Café A.",
+     "ru": "Кафе B дешевле кафе A.",
+     "audio": "audio/eb7def064352.m4a"
+    },
+    {
+     "who": "E",
+     "de": "Ist es auch näher am Museum?",
+     "ru": "А оно ближе к музею?",
+     "audio": "audio/29fda4e0d383.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Ja. Café A ist weiter weg, aber genauso ruhig wie Café B.",
+     "ru": "Да. Кафе A дальше, но такое же тихое, как B.",
+     "audio": "audio/210d2db9fc1b.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Ich möchte am liebsten ins Museum.",
+     "ru": "Я больше всего хочу в музей.",
+     "audio": "audio/1b0372a6c9ca.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Mit Café B kostet unser Plan zwanzig Euro. Das passt.",
+     "ru": "С кафе B наш план стоит двадцать евро. Подходит.",
+     "audio": "audio/11efe938aa6f.m4a"
+    },
+    {
+     "who": "E",
+     "de": "Ein Spaziergang ist noch günstiger.",
+     "ru": "Прогулка ещё дешевле.",
+     "audio": "audio/1831e05fa4a7.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Beides ist möglich. Was gefällt euch besser?",
+     "ru": "Возможны оба варианта. Что вам нравится больше?",
+     "audio": "audio/2bc00ec9ed13.m4a"
+    }
+   ]
+  }
+ },
+ "words": {
+  "useful": {
+   "title": "Wörter für die Aufgabe",
+   "ru": "Слова для действия",
+   "items": [
+    {
+     "de": "günstig",
+     "ru": "недорогой, выгодный",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/a72b85bc7f07.m4a"
+    },
+    {
+     "de": "günstiger",
+     "ru": "дешевле",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/c93b06c1a290.m4a"
+    },
+    {
+     "de": "teuer",
+     "ru": "дорогой",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/c101f9801004.m4a"
+    },
+    {
+     "de": "näher am Museum",
+     "ru": "ближе к музею",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/87159c9dc35e.m4a"
+    },
+    {
+     "de": "weiter weg",
+     "ru": "дальше",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/ef3d1af8f09e.m4a"
+    },
+    {
+     "de": "genauso",
+     "ru": "точно так же",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/9945c3fd15fa.m4a"
+    },
+    {
+     "de": "vergleichen",
+     "ru": "сравнивать",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/211e790b03be.m4a"
+    },
+    {
+     "de": "die Auswahl",
+     "ru": "выбор",
+     "gender": "f",
+     "plural": null,
+     "noPlural": true,
+     "audio": "audio/128de14cd018.m4a"
+    },
+    {
+     "de": "das Angebot",
+     "ru": "предложение",
+     "gender": "n",
+     "plural": "Angebote",
+     "audio": "audio/f02fe3836d37.m4a"
+    },
+    {
+     "de": "der Eintritt",
+     "ru": "входная плата",
+     "gender": "m",
+     "plural": null,
+     "noPlural": true,
+     "audio": "audio/cc46692cc6dd.m4a"
+    },
+    {
+     "de": "möglich",
+     "ru": "возможный",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/c2ee5ca1bf74.m4a"
+    },
+    {
+     "de": "lieber",
+     "ru": "охотнее",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/d77b7cfdf799.m4a"
+    }
+   ]
+  }
+ },
+ "tables": {
+  "rule": {
+   "title": "Komparativ: günstiger als, so … wie, am liebsten",
+   "ru": "Опора для решения",
+   "head": [
+    "Beispiel",
+    "Смысл и форма"
+   ],
+   "rows": [
+    [
+     "Café B ist günstiger als Café A.",
+     "Сравнительная степень: -er + als."
+    ],
+    [
+     "Café A ist genauso ruhig wie Café B.",
+     "Равенство: so / genauso … wie."
+    ],
+    [
+     "gut – besser – am besten; nah – näher – am nächsten",
+     "Частые формы сравнения меняются заметнее."
+    ]
+   ],
+   "ruCols": [
+    1
+   ]
+  }
+ },
+ "tasks": {
+  "offers": {
+   "kind": "message",
+   "part": "a2-lesen-3",
+   "title": "Angebote für den Ausflug",
+   "text": "Lernangebote: Café A kostet 10 Euro, Café B 8 Euro. Beide sind ruhig. Café B ist näher am Museum. Museum: Eintritt 12 Euro. Spaziergang: kostenlos. Wählen Sie ein Café und eine Aktivität. Budget: maximal 20 Euro.",
+   "sample": []
+  },
+  "offers15": {
+   "kind": "message",
+   "part": "a2-lesen-3",
+   "title": "Neuer Tag, anderes Budget",
+   "text": "Café A: 10 Euro. Café B: 8 Euro. Museum: 12 Euro. Spaziergang: kostenlos. Wählen Sie genau ein Café und eine Aktivität. Heute haben Sie maximal 15 Euro.",
+   "sample": []
+  },
+  "ads": {
+   "kind": "worksheet",
+   "part": "a2-lesen-3",
+   "format": "matching",
+   "title": "Welche Anzeige passt?",
+   "text": "a) Hafenraum: Ausstellung, täglich 10–18 Uhr, Eintritt 12 Euro.\nb) Stadtcafé: Frühstück von 8 bis 11 Uhr, ruhiger Innenraum, 8 Euro.\nc) Abendcafé: ab 17 Uhr, Musik, kein Frühstück.\nd) Stadtspaziergang: kostenlos, Treffpunkt 14 Uhr.\nx) Keine passende Anzeige.",
+   "questions": [
+    {
+     "prompt": "Frühstück in einem ruhigen Raum",
+     "options": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "x"
+     ],
+     "answers": [
+      "b"
+     ]
+    },
+    {
+     "prompt": "Kostenlose Aktivität am Nachmittag",
+     "options": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "x"
+     ],
+     "answers": [
+      "d"
+     ]
+    },
+    {
+     "prompt": "Eine Ausstellung ansehen",
+     "options": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "x"
+     ],
+     "answers": [
+      "a"
+     ]
+    },
+    {
+     "prompt": "Abends Musik hören",
+     "options": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "x"
+     ],
+     "answers": [
+      "c"
+     ]
+    },
+    {
+     "prompt": "Um 6 Uhr morgens im Café frühstücken",
+     "options": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "x"
+     ],
+     "answers": [
+      "x"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "radio": {
+   "kind": "worksheet",
+   "part": "a2-hoeren-2",
+   "format": "radio",
+   "title": "Freizeitradio · Lernmeldung",
+   "situation": "Hören Sie die Meldung einmal. Was ist richtig?",
+   "voice": "Sandy",
+   "text": "Hier sind unsere Freizeittipps. Die Ausstellung ist heute bis achtzehn Uhr geöffnet. Im Stadtcafé gibt es Frühstück bis elf Uhr. Der Stadtspaziergang beginnt um vierzehn Uhr und kostet nichts.",
+   "questions": [
+    {
+     "prompt": "Ausstellung geöffnet bis",
+     "options": [
+      "16 Uhr",
+      "18 Uhr",
+      "20 Uhr"
+     ],
+     "answers": [
+      "18 Uhr"
+     ]
+    },
+    {
+     "prompt": "Frühstück bis",
+     "options": [
+      "10 Uhr",
+      "11 Uhr",
+      "14 Uhr"
+     ],
+     "answers": [
+      "11 Uhr"
+     ]
+    },
+    {
+     "prompt": "Spaziergang beginnt um",
+     "options": [
+      "11 Uhr",
+      "12 Uhr",
+      "14 Uhr"
+     ],
+     "answers": [
+      "14 Uhr"
+     ]
+    },
+    {
+     "prompt": "Spaziergang kostet",
+     "options": [
+      "0 Euro",
+      "8 Euro",
+      "12 Euro"
+     ],
+     "answers": [
+      "0 Euro"
+     ]
+    },
+    {
+     "prompt": "Worum geht es?",
+     "options": [
+      "Freizeit",
+      "Arbeitssuche",
+      "Arzttermin"
+     ],
+     "answers": [
+      "Freizeit"
+     ]
+    }
+   ],
+   "audio": "audio/e3f1bede7157.m4a",
+   "sample": []
+  },
+  "pair": {
+   "kind": "card",
+   "part": "a2-sprechen-3",
+   "title": "Wählen und begründen",
+   "theme": "Ausflug",
+   "word": "Café – Museum – Spaziergang",
+   "sample": [
+    {
+     "de": "Welcher Plan gefällt dir besser?",
+     "audio": "audio/c554cab0941b.m4a"
+    },
+    {
+     "de": "Ich möchte lieber ins Museum.",
+     "audio": "audio/f958f06095bf.m4a"
+    },
+    {
+     "de": "Dann nehmen wir Café B. So bleiben wir im Budget.",
+     "audio": "audio/ac1f15698b14.m4a"
+    }
+   ]
+  }
+ },
+ "beats": [
+  {
+   "id": "start-1",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 0,
+   "read": "Для поездки в Любек друзья сравнивают кафе, музей и прогулку. Нужно учитывать цену, расстояние и интересы, а затем согласовать подходящий план. Все предложения и суммы в уроке вымышлены. Все нужные условия даны в сцене: знания географии, настоящих цен или расписаний не требуются. Сначала попробуйте понять, какого результата добиваются друзья, затем слушайте реплики. На новом уровне важно не только найти число или знакомое слово, но и связать несколько сведений.",
+   "point": "Сравниваем варианты",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 4,
+    "fresh": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "start-2",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 1,
+   "read": "Разница в цене не делает один план обязательным для всех. Дана предпочитает музей, но прогулка тоже может подходить бюджету. В сообщениях сравниваются конкретные параметры: дешевле, ближе, дальше, такой же тихий. Для решения сначала проверяют жёсткие условия, затем обсуждают предпочтения. В игре несколько сочетаний будут признаны верными.",
+   "point": "Komparativ: günstiger als, so … wie, am liebsten",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 8,
+    "fresh": [
+     4,
+     5,
+     6,
+     7
+    ]
+   }
+  },
+  {
+   "id": "words-1",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 0,
+   "read": "В поездке полезно сравнивать *günstig*, *nah*, *weit*, *ruhig*, а не только говорить «хорошо» и «плохо». Формы *besser* и *lieber* уже частично знакомы из A1. Здесь они помогают объяснить выбор. Название кафе само по себе ничего не сообщает о качестве: вся нужная информация дана в учебных карточках.",
+   "point": "Сначала используйте слово для решения; словарь остаётся справочником.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 6,
+    "words": "useful"
+   }
+  },
+  {
+   "id": "words-2",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 1,
+   "read": "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к ситуации: какие слова обозначают человека, место, условие или уже выполненное действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово встретится снова в записке или разговоре, попробуйте восстановить его смысл до подсказки.",
+   "point": "Возвращайтесь к выражениям в сообщениях и новых действиях.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 12,
+    "words": "useful",
+    "fresh": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   }
+  },
+  {
+   "id": "grammar-1",
+   "step": "grammar",
+   "stepTitle": "Komparativ: günstiger als, so … wie, am liebsten",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "К частому прилагательному добавляется *-er*: *günstig → günstiger*. Если называем второй объект сравнения, используется *als*. Не смешивайте *als* и *wie*: они выражают разные отношения. Цена B ниже цены A, поэтому здесь есть различие. Фраза описывает только цену, а не все достоинства места.",
+   "point": "Сравнительная степень: -er + als.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "grammar-2",
+   "step": "grammar",
+   "stepTitle": "Komparativ: günstiger als, so … wie, am liebsten",
+   "chapterIndex": 2,
+   "indexInStep": 1,
+   "read": "При равной степени признака используем *so … wie* или *genauso … wie*. Оба кафе могут быть одинаково тихими, но иметь разные цены и расстояния. Для игры это отдельные условия. Не переносите равенство одного свойства на все остальные: одинаково тихо не означает одинаково дорого.",
+   "point": "Равенство: so / genauso … wie.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "grammar-3",
+   "step": "grammar",
+   "stepTitle": "Komparativ: günstiger als, so … wie, am liebsten",
+   "chapterIndex": 2,
+   "indexInStep": 2,
+   "read": "Некоторые частые слова имеют особые формы. У *gut* это *besser*, у *nah* — *näher*, у *gern* — *lieber*. Превосходная форма в наших примерах: *am besten*, *am nächsten*, *am liebsten*. Лучше употреблять их в выборе конкретного действия, чем запоминать без контекста. Таблица остаётся опорой во время сравнения.",
+   "point": "Частые формы сравнения меняются заметнее.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "frames-1",
+   "step": "frames",
+   "stepTitle": "Как устроена реплика",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "В сравнении *Café B ist günstiger als Café A* личная форма *ist* сохраняет вторую позицию. Степень сравнения меняет прилагательное и связь между объектами, но не переносит глагол в конец. Если добавляется причина с *weil*, у неё будет собственный порядок. Сначала потренируем простое сравнение, затем объединим его с выбором.",
+   "point": "*Café B ist günstiger als Café A.*",
+   "scene": {
+    "view": "sentence",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "café",
+         "text": "Café"
+        },
+        {
+         "key": "b",
+         "text": "B"
+        }
+       ],
+       [
+        {
+         "key": "ist",
+         "text": "ist"
+        }
+       ],
+       [
+        {
+         "key": "günstiger",
+         "text": "günstiger"
+        },
+        {
+         "key": "als",
+         "text": "als"
+        },
+        {
+         "key": "café~1",
+         "text": "Café"
+        },
+        {
+         "key": "a",
+         "text": "A"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Café B ist günstiger als Café A.",
+      "ru": "Кафе B дешевле кафе A.",
+      "audio": "audio/ba3fe0e46c71.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-1",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 0,
+   "read": "*Wie*: *genauso ruhig wie*. *Als* используется после сравнительной степени, когда выражается различие: *günstiger als*. Проверьте, есть ли в тексте равенство или преимущество по конкретному параметру. Уверенная интонация собеседника не заменяет эту связь.",
+   "point": "Различие: *-er als*; равенство: *so … wie*.",
+   "question": "Для равенства нужен als или wie?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "café",
+         "text": "Café"
+        },
+        {
+         "key": "b",
+         "text": "B"
+        }
+       ],
+       [
+        {
+         "key": "ist",
+         "text": "ist"
+        }
+       ],
+       [
+        {
+         "key": "günstiger",
+         "text": "günstiger"
+        },
+        {
+         "key": "als",
+         "text": "als"
+        },
+        {
+         "key": "café~1",
+         "text": "Café"
+        },
+        {
+         "key": "a",
+         "text": "A"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Café B ist günstiger als Café A.",
+      "ru": "Кафе B дешевле кафе A.",
+      "audio": "audio/ba3fe0e46c71.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-2",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 1,
+   "read": "Нет. Если несколько планов удовлетворяют бюджету и другим обязательным условиям, каждый допустим. Предпочтение музея или прогулки обсуждается отдельно. В игре требуется доказать соответствие условиям, а не угадать любимый вариант составителя.",
+   "point": "Проверяйте условия, затем сравнивайте предпочтения.",
+   "question": "Всегда ли самый дешёвый план — единственный верный?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "café",
+         "text": "Café"
+        },
+        {
+         "key": "b",
+         "text": "B"
+        }
+       ],
+       [
+        {
+         "key": "ist",
+         "text": "ist"
+        }
+       ],
+       [
+        {
+         "key": "günstiger",
+         "text": "günstiger"
+        },
+        {
+         "key": "als",
+         "text": "als"
+        },
+        {
+         "key": "café~1",
+         "text": "Café"
+        },
+        {
+         "key": "a",
+         "text": "A"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Café B ist günstiger als Café A.",
+      "ru": "Кафе B дешевле кафе A.",
+      "audio": "audio/ba3fe0e46c71.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "exam-offers-1",
+   "step": "exam-offers",
+   "stepTitle": "Angebote für den Ausflug",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным текстом: объясните, какой фрагмент подтверждает каждое решение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "café",
+         "text": "Café"
+        },
+        {
+         "key": "b",
+         "text": "B"
+        }
+       ],
+       [
+        {
+         "key": "ist",
+         "text": "ist"
+        }
+       ],
+       [
+        {
+         "key": "günstiger",
+         "text": "günstiger"
+        },
+        {
+         "key": "als",
+         "text": "als"
+        },
+        {
+         "key": "café~1",
+         "text": "Café"
+        },
+        {
+         "key": "a",
+         "text": "A"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Café B ist günstiger als Café A.",
+      "ru": "Кафе B дешевле кафе A.",
+      "audio": "audio/ba3fe0e46c71.m4a"
+     }
+    ],
+    "task": "offers"
+   }
+  },
+  {
+   "id": "exam-offers-2",
+   "step": "exam-offers",
+   "stepTitle": "Angebote für den Ausflug",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "café",
+         "text": "Café"
+        },
+        {
+         "key": "b",
+         "text": "B"
+        }
+       ],
+       [
+        {
+         "key": "ist",
+         "text": "ist"
+        }
+       ],
+       [
+        {
+         "key": "günstiger",
+         "text": "günstiger"
+        },
+        {
+         "key": "als",
+         "text": "als"
+        },
+        {
+         "key": "café~1",
+         "text": "Café"
+        },
+        {
+         "key": "a",
+         "text": "A"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Café B ist günstiger als Café A.",
+      "ru": "Кафе B дешевле кафе A.",
+      "audio": "audio/ba3fe0e46c71.m4a"
+     }
+    ],
+    "task": "offers"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "café",
+         "text": "Café"
+        },
+        {
+         "key": "b",
+         "text": "B"
+        }
+       ],
+       [
+        {
+         "key": "ist",
+         "text": "ist"
+        }
+       ],
+       [
+        {
+         "key": "günstiger",
+         "text": "günstiger"
+        },
+        {
+         "key": "als",
+         "text": "als"
+        },
+        {
+         "key": "café~1",
+         "text": "Café"
+        },
+        {
+         "key": "a",
+         "text": "A"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Café B ist günstiger als Café A.",
+      "ru": "Кафе B дешевле кафе A.",
+      "audio": "audio/ba3fe0e46c71.m4a"
+     }
+    ],
+    "task": "offers",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-offers15-1",
+   "step": "exam-offers15",
+   "stepTitle": "Neuer Tag, anderes Budget",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным текстом: объясните, какой фрагмент подтверждает каждое решение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "café",
+         "text": "Café"
+        },
+        {
+         "key": "b",
+         "text": "B"
+        }
+       ],
+       [
+        {
+         "key": "ist",
+         "text": "ist"
+        }
+       ],
+       [
+        {
+         "key": "günstiger",
+         "text": "günstiger"
+        },
+        {
+         "key": "als",
+         "text": "als"
+        },
+        {
+         "key": "café~1",
+         "text": "Café"
+        },
+        {
+         "key": "a",
+         "text": "A"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Café B ist günstiger als Café A.",
+      "ru": "Кафе B дешевле кафе A.",
+      "audio": "audio/ba3fe0e46c71.m4a"
+     }
+    ],
+    "task": "offers15"
+   }
+  },
+  {
+   "id": "exam-offers15-2",
+   "step": "exam-offers15",
+   "stepTitle": "Neuer Tag, anderes Budget",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "café",
+         "text": "Café"
+        },
+        {
+         "key": "b",
+         "text": "B"
+        }
+       ],
+       [
+        {
+         "key": "ist",
+         "text": "ist"
+        }
+       ],
+       [
+        {
+         "key": "günstiger",
+         "text": "günstiger"
+        },
+        {
+         "key": "als",
+         "text": "als"
+        },
+        {
+         "key": "café~1",
+         "text": "Café"
+        },
+        {
+         "key": "a",
+         "text": "A"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Café B ist günstiger als Café A.",
+      "ru": "Кафе B дешевле кафе A.",
+      "audio": "audio/ba3fe0e46c71.m4a"
+     }
+    ],
+    "task": "offers15"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "café",
+         "text": "Café"
+        },
+        {
+         "key": "b",
+         "text": "B"
+        }
+       ],
+       [
+        {
+         "key": "ist",
+         "text": "ist"
+        }
+       ],
+       [
+        {
+         "key": "günstiger",
+         "text": "günstiger"
+        },
+        {
+         "key": "als",
+         "text": "als"
+        },
+        {
+         "key": "café~1",
+         "text": "Café"
+        },
+        {
+         "key": "a",
+         "text": "A"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Café B ist günstiger als Café A.",
+      "ru": "Кафе B дешевле кафе A.",
+      "audio": "audio/ba3fe0e46c71.m4a"
+     }
+    ],
+    "task": "offers15",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-ads-1",
+   "step": "exam-ads",
+   "stepTitle": "Welche Anzeige passt?",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным текстом: объясните, какой фрагмент подтверждает каждое решение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "café",
+         "text": "Café"
+        },
+        {
+         "key": "b",
+         "text": "B"
+        }
+       ],
+       [
+        {
+         "key": "ist",
+         "text": "ist"
+        }
+       ],
+       [
+        {
+         "key": "günstiger",
+         "text": "günstiger"
+        },
+        {
+         "key": "als",
+         "text": "als"
+        },
+        {
+         "key": "café~1",
+         "text": "Café"
+        },
+        {
+         "key": "a",
+         "text": "A"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Café B ist günstiger als Café A.",
+      "ru": "Кафе B дешевле кафе A.",
+      "audio": "audio/ba3fe0e46c71.m4a"
+     }
+    ],
+    "task": "ads"
+   }
+  },
+  {
+   "id": "exam-ads-2",
+   "step": "exam-ads",
+   "stepTitle": "Welche Anzeige passt?",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "café",
+         "text": "Café"
+        },
+        {
+         "key": "b",
+         "text": "B"
+        }
+       ],
+       [
+        {
+         "key": "ist",
+         "text": "ist"
+        }
+       ],
+       [
+        {
+         "key": "günstiger",
+         "text": "günstiger"
+        },
+        {
+         "key": "als",
+         "text": "als"
+        },
+        {
+         "key": "café~1",
+         "text": "Café"
+        },
+        {
+         "key": "a",
+         "text": "A"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Café B ist günstiger als Café A.",
+      "ru": "Кафе B дешевле кафе A.",
+      "audio": "audio/ba3fe0e46c71.m4a"
+     }
+    ],
+    "task": "ads"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "café",
+         "text": "Café"
+        },
+        {
+         "key": "b",
+         "text": "B"
+        }
+       ],
+       [
+        {
+         "key": "ist",
+         "text": "ist"
+        }
+       ],
+       [
+        {
+         "key": "günstiger",
+         "text": "günstiger"
+        },
+        {
+         "key": "als",
+         "text": "als"
+        },
+        {
+         "key": "café~1",
+         "text": "Café"
+        },
+        {
+         "key": "a",
+         "text": "A"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Café B ist günstiger als Café A.",
+      "ru": "Кафе B дешевле кафе A.",
+      "audio": "audio/ba3fe0e46c71.m4a"
+     }
+    ],
+    "task": "ads",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-radio-1",
+   "step": "exam-radio",
+   "stepTitle": "Freizeitradio · Lernmeldung",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным текстом: объясните, какой фрагмент подтверждает каждое решение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "café",
+         "text": "Café"
+        },
+        {
+         "key": "b",
+         "text": "B"
+        }
+       ],
+       [
+        {
+         "key": "ist",
+         "text": "ist"
+        }
+       ],
+       [
+        {
+         "key": "günstiger",
+         "text": "günstiger"
+        },
+        {
+         "key": "als",
+         "text": "als"
+        },
+        {
+         "key": "café~1",
+         "text": "Café"
+        },
+        {
+         "key": "a",
+         "text": "A"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Café B ist günstiger als Café A.",
+      "ru": "Кафе B дешевле кафе A.",
+      "audio": "audio/ba3fe0e46c71.m4a"
+     }
+    ],
+    "task": "radio"
+   }
+  },
+  {
+   "id": "exam-radio-2",
+   "step": "exam-radio",
+   "stepTitle": "Freizeitradio · Lernmeldung",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "café",
+         "text": "Café"
+        },
+        {
+         "key": "b",
+         "text": "B"
+        }
+       ],
+       [
+        {
+         "key": "ist",
+         "text": "ist"
+        }
+       ],
+       [
+        {
+         "key": "günstiger",
+         "text": "günstiger"
+        },
+        {
+         "key": "als",
+         "text": "als"
+        },
+        {
+         "key": "café~1",
+         "text": "Café"
+        },
+        {
+         "key": "a",
+         "text": "A"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Café B ist günstiger als Café A.",
+      "ru": "Кафе B дешевле кафе A.",
+      "audio": "audio/ba3fe0e46c71.m4a"
+     }
+    ],
+    "task": "radio"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "café",
+         "text": "Café"
+        },
+        {
+         "key": "b",
+         "text": "B"
+        }
+       ],
+       [
+        {
+         "key": "ist",
+         "text": "ist"
+        }
+       ],
+       [
+        {
+         "key": "günstiger",
+         "text": "günstiger"
+        },
+        {
+         "key": "als",
+         "text": "als"
+        },
+        {
+         "key": "café~1",
+         "text": "Café"
+        },
+        {
+         "key": "a",
+         "text": "A"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Café B ist günstiger als Café A.",
+      "ru": "Кафе B дешевле кафе A.",
+      "audio": "audio/ba3fe0e46c71.m4a"
+     }
+    ],
+    "task": "radio",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-pair-1",
+   "step": "exam-pair",
+   "stepTitle": "Wählen und begründen",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным текстом: объясните, какой фрагмент подтверждает каждое решение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "café",
+         "text": "Café"
+        },
+        {
+         "key": "b",
+         "text": "B"
+        }
+       ],
+       [
+        {
+         "key": "ist",
+         "text": "ist"
+        }
+       ],
+       [
+        {
+         "key": "günstiger",
+         "text": "günstiger"
+        },
+        {
+         "key": "als",
+         "text": "als"
+        },
+        {
+         "key": "café~1",
+         "text": "Café"
+        },
+        {
+         "key": "a",
+         "text": "A"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Café B ist günstiger als Café A.",
+      "ru": "Кафе B дешевле кафе A.",
+      "audio": "audio/ba3fe0e46c71.m4a"
+     }
+    ],
+    "task": "pair",
+    "reveal": 0
+   }
+  },
+  {
+   "id": "exam-pair-2",
+   "step": "exam-pair",
+   "stepTitle": "Wählen und begründen",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "café",
+         "text": "Café"
+        },
+        {
+         "key": "b",
+         "text": "B"
+        }
+       ],
+       [
+        {
+         "key": "ist",
+         "text": "ist"
+        }
+       ],
+       [
+        {
+         "key": "günstiger",
+         "text": "günstiger"
+        },
+        {
+         "key": "als",
+         "text": "als"
+        },
+        {
+         "key": "café~1",
+         "text": "Café"
+        },
+        {
+         "key": "a",
+         "text": "A"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Café B ist günstiger als Café A.",
+      "ru": "Кафе B дешевле кафе A.",
+      "audio": "audio/ba3fe0e46c71.m4a"
+     }
+    ],
+    "task": "pair",
+    "reveal": 0
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "café",
+         "text": "Café"
+        },
+        {
+         "key": "b",
+         "text": "B"
+        }
+       ],
+       [
+        {
+         "key": "ist",
+         "text": "ist"
+        }
+       ],
+       [
+        {
+         "key": "günstiger",
+         "text": "günstiger"
+        },
+        {
+         "key": "als",
+         "text": "als"
+        },
+        {
+         "key": "café~1",
+         "text": "Café"
+        },
+        {
+         "key": "a",
+         "text": "A"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Café B ist günstiger als Café A.",
+      "ru": "Кафе B дешевле кафе A.",
+      "audio": "audio/ba3fe0e46c71.m4a"
+     }
+    ],
+    "task": "pair",
+    "reveal": 0,
+    "solved": true
+   }
+  }
+ ],
+ "exercises": [
+  {
+   "id": "a2-vergleichen-1",
+   "type": "choice",
+   "q": "Café B ist günstiger ___ Café A.",
+   "options": [
+    "als",
+    "wie",
+    "weil"
+   ],
+   "answer": 0,
+   "why": "Различие: *als*.",
+   "audio": "audio/ba3fe0e46c71.m4a"
+  },
+  {
+   "id": "a2-vergleichen-2",
+   "type": "choice",
+   "q": "Beide Cafés sind genauso ruhig ___ das Hotel.",
+   "options": [
+    "wie",
+    "als",
+    "denn"
+   ],
+   "answer": 0,
+   "why": "Равенство: *wie*.",
+   "audio": "audio/0b4c33baaf37.m4a"
+  },
+  {
+   "id": "a2-vergleichen-3",
+   "type": "choice",
+   "q": "gut – ___ – am besten",
+   "options": [
+    "besser",
+    "guter",
+    "gutest"
+   ],
+   "answer": 0,
+   "why": "Неправильная форма.",
+   "audio": "audio/2b17db0defcc.m4a"
+  },
+  {
+   "id": "a2-vergleichen-4",
+   "type": "choice",
+   "q": "nah – ___",
+   "options": [
+    "näher",
+    "naher",
+    "nächst"
+   ],
+   "answer": 0,
+   "why": "Сравнительная степень.",
+   "audio": "audio/696beb08413c.m4a"
+  },
+  {
+   "id": "a2-vergleichen-5",
+   "type": "choice",
+   "q": "Ich gehe ___ ins Museum als ins Kino.",
+   "options": [
+    "lieber",
+    "gernsten",
+    "bester"
+   ],
+   "answer": 0,
+   "why": "Предпочтение.",
+   "audio": "audio/50117c6396a6.m4a"
+  },
+  {
+   "id": "a2-vergleichen-6",
+   "type": "choice",
+   "q": "12 Euro sind ___ als 8 Euro.",
+   "options": [
+    "mehr",
+    "weniger",
+    "gleich"
+   ],
+   "answer": 0,
+   "why": "Двенадцать больше восьми.",
+   "audio": "audio/ac932d142485.m4a"
+  },
+  {
+   "id": "a2-vergleichen-7",
+   "type": "order",
+   "ru": "Кафе B дешевле кафе A.",
+   "de": "Café B ist günstiger als Café A.",
+   "audio": "audio/ba3fe0e46c71.m4a"
+  },
+  {
+   "id": "a2-vergleichen-8",
+   "type": "order",
+   "ru": "Оба кафе тихие.",
+   "de": "Beide Cafés sind ruhig.",
+   "audio": "audio/50b8718c8241.m4a"
+  },
+  {
+   "id": "a2-vergleichen-9",
+   "type": "order",
+   "ru": "Я предпочитаю пойти в музей.",
+   "de": "Ich möchte lieber ins Museum.",
+   "audio": "audio/f958f06095bf.m4a"
+  },
+  {
+   "id": "a2-vergleichen-10",
+   "type": "order",
+   "ru": "Прогулка бесплатная.",
+   "de": "Der Spaziergang ist kostenlos.",
+   "audio": "audio/66e692982118.m4a"
+  },
+  {
+   "id": "a2-vergleichen-11",
+   "type": "order",
+   "ru": "Какой план нравится тебе больше?",
+   "de": "Welcher Plan gefällt dir besser?",
+   "audio": "audio/c554cab0941b.m4a"
+  },
+  {
+   "id": "a2-vergleichen-12",
+   "type": "order",
+   "ru": "Кафе B ближе к музею.",
+   "de": "Café B ist näher am Museum.",
+   "audio": "audio/eca4b0640914.m4a"
+  }
+ ],
+ "case": {
+  "title": "Welcher Vergleich stimmt?",
+  "ru": "Проверяем сравнение",
+  "intro": "В дневнике оказались две версии сообщения. Установите, что подтверждено первоисточником. Вывод зависит от языка, а не от личности автора.",
+  "people": {},
+  "steps": [
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Café B ist günstiger als Café A. Beide sind ruhig.",
+      "ru": "Кафе B дешевле A. Оба тихие."
+     }
+    ],
+    "question": "В чём подтверждённое различие?",
+    "options": [
+     "Цена",
+     "Тишина",
+     "В обоих свойствах"
+    ],
+    "answer": 0,
+    "right": "Различается цена, тишина одинакова.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Café B kostet 8 Euro. Der Eintritt kostet 12 Euro. Budget: 20 Euro.",
+      "ru": "Кафе B стоит 8 евро. Вход стоит 12 евро. Бюджет 20."
+     }
+    ],
+    "question": "Подходит ли сочетание?",
+    "options": [
+     "Да, ровно 20",
+     "Нет, 22",
+     "Только без кафе"
+    ],
+    "answer": 0,
+    "right": "8 + 12 = 20, превышения нет.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Für Frühstück um sechs Uhr gibt es keine passende Anzeige.",
+      "ru": "Для завтрака в шесть утра нет подходящего объявления."
+     }
+    ],
+    "question": "Что выбрать?",
+    "options": [
+     "Первое кафе наугад",
+     "x — ничего не подходит",
+     "Любое место с едой"
+    ],
+    "answer": 1,
+    "right": "Отсутствие подходящего варианта — допустимый результат поиска.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   }
+  ],
+  "ending": "Запись исправлена по источникам. В следующей главе команда воспользуется подтверждёнными сведениями для нового решения."
+ },
+ "adventure": {
+  "kind": "sequence",
+  "title": "Выберите план по условиям",
+  "intro": "Для поездки в Любек друзья сравнивают кафе, музей и прогулку. Нужно учитывать цену, расстояние и интересы, а затем согласовать подходящий план. Все предложения и суммы в уроке вымышлены.",
+  "ending": "Выбор объяснён сравнением и подтверждён условиями. В следующем уроке планы придётся согласовать с курсом и рабочими сменами.",
+  "challenges": [
+   {
+    "id": "cheaper",
+    "kind": "select",
+    "title": "Сравните цену кафе",
+    "intro": "Какое кафе дешевле по объявлению?",
+    "success": "Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы одно из них.",
+    "wrong": "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание и адресата.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Lernangebote: Café A kostet 10 Euro, Café B 8 Euro. Beide sind ruhig. Café B ist näher am Museum. Museum: Eintritt 12 Euro. Spaziergang: kostenlos. Wählen Sie ein Café und eine Aktivität. Budget: maximal 20 Euro.",
+      "name": "Angebote für den Ausflug"
+     }
+    ],
+    "options": [
+     {
+      "id": "o0",
+      "label": "Café A"
+     },
+     {
+      "id": "o1",
+      "label": "Café B"
+     },
+     {
+      "id": "o2",
+      "label": "Beide kosten gleich viel."
+     }
+    ],
+    "answer": [
+     "o1"
+    ]
+   },
+   {
+    "id": "compare",
+    "kind": "order",
+    "title": "Объясните разницу",
+    "intro": "«Кафе B дешевле кафе A».",
+    "success": "Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.",
+    "wrong": "Проверьте положение глагола и конец предложения: используйте все фрагменты.",
+    "tokens": [
+     "Café B",
+     "ist",
+     "günstiger als",
+     "Café A."
+    ],
+    "label": "Реплика для команды"
+   },
+   {
+    "id": "budget",
+    "kind": "pack",
+    "title": "Соберите подходящий план",
+    "intro": "Выберите ровно одно кафе и одно занятие. Общая цена не выше 20 евро. Подходит несколько сочетаний; игра принимает каждое.",
+    "success": "Соблюдены бюджет и состав плана: одно кафе и одно занятие. Подходящий вариант не обязан совпадать с выбором автора.",
+    "wrong": "Нужны ровно одно кафе и одно занятие; сумма должна укладываться в 20 евро.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Lernangebote: Café A kostet 10 Euro, Café B 8 Euro. Beide sind ruhig. Café B ist näher am Museum. Museum: Eintritt 12 Euro. Spaziergang: kostenlos. Wählen Sie ein Café und eine Aktivität. Budget: maximal 20 Euro.",
+      "name": "Angebote für den Ausflug"
+     }
+    ],
+    "variants": [
+     {
+      "id": "budget-fifteen",
+      "kind": "pack",
+      "title": "Соберите подходящий план",
+      "intro": "Новый день, новый бюджет: не выше 15 евро. Выберите ровно одно кафе и одно занятие.",
+      "success": "Соблюдены бюджет и состав плана: одно кафе и одно занятие. Подходящий вариант не обязан совпадать с выбором автора.",
+      "wrong": "При бюджете 15 евро музей вместе с любым из кафе уже не подходит.",
+      "mode": "reading",
+      "quotes": [
+       {
+        "de": "Café A: 10 Euro. Café B: 8 Euro. Museum: 12 Euro. Spaziergang: kostenlos. Wählen Sie genau ein Café und eine Aktivität. Heute haben Sie maximal 15 Euro.",
+        "name": "Neuer Tag, anderes Budget"
+       }
+      ],
+      "options": [
+       {
+        "id": "a",
+        "label": "Café A · 10 €"
+       },
+       {
+        "id": "b",
+        "label": "Café B · 8 €"
+       },
+       {
+        "id": "museum",
+        "label": "Museum · 12 €"
+       },
+       {
+        "id": "walk",
+        "label": "Spaziergang · 0 €"
+       }
+      ],
+      "answer": [
+       "a",
+       "walk"
+      ],
+      "alternatives": [
+       [
+        "b",
+        "walk"
+       ]
+      ]
+     }
+    ],
+    "options": [
+     {
+      "id": "a",
+      "label": "Café A · 10 €"
+     },
+     {
+      "id": "b",
+      "label": "Café B · 8 €"
+     },
+     {
+      "id": "museum",
+      "label": "Museum · 12 €"
+     },
+     {
+      "id": "walk",
+      "label": "Spaziergang · 0 €"
+     }
+    ],
+    "answer": [
+     "a",
+     "walk"
+    ],
+    "alternatives": [
+     [
+      "b",
+      "walk"
+     ],
+     [
+      "b",
+      "museum"
+     ]
+    ]
+   },
+   {
+    "id": "equal",
+    "kind": "select",
+    "title": "Что у кафе одинаково?",
+    "intro": "Не переносите одинаковое качество на цену.",
+    "success": "Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы одно из них.",
+    "wrong": "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание и адресата.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Lernangebote: Café A kostet 10 Euro, Café B 8 Euro. Beide sind ruhig. Café B ist näher am Museum. Museum: Eintritt 12 Euro. Spaziergang: kostenlos. Wählen Sie ein Café und eine Aktivität. Budget: maximal 20 Euro.",
+      "name": "Angebote für den Ausflug"
+     }
+    ],
+    "options": [
+     {
+      "id": "o0",
+      "label": "Beide sind ruhig."
+     },
+     {
+      "id": "o1",
+      "label": "Beide kosten 8 Euro."
+     },
+     {
+      "id": "o2",
+      "label": "Beide sind gleich weit weg."
+     }
+    ],
+    "answer": [
+     "o0"
+    ]
+   },
+   {
+    "id": "no-match",
+    "kind": "select",
+    "title": "Не выбирайте заведомо неподходящее",
+    "intro": "Гости хотят завтрак в шесть утра. Найдите подходящее объявление или отметьте его отсутствие.",
+    "success": "Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы одно из них.",
+    "wrong": "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание и адресата.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "a) Hafenraum: Ausstellung, täglich 10–18 Uhr, Eintritt 12 Euro.\nb) Stadtcafé: Frühstück von 8 bis 11 Uhr, ruhiger Innenraum, 8 Euro.\nc) Abendcafé: ab 17 Uhr, Musik, kein Frühstück.\nd) Stadtspaziergang: kostenlos, Treffpunkt 14 Uhr.\nx) Keine passende Anzeige.",
+      "name": "Welche Anzeige passt?"
+     }
+    ],
+    "options": [
+     {
+      "id": "o0",
+      "label": "a"
+     },
+     {
+      "id": "o1",
+      "label": "b"
+     },
+     {
+      "id": "o2",
+      "label": "x"
+     }
+    ],
+    "answer": [
+     "o2"
+    ]
+   }
+  ]
+ },
+ "spy": []
+}

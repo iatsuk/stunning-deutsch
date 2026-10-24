@@ -1,0 +1,728 @@
+id: a2-abschluss
+order: 14
+title: Welcher Plan passt für uns alle?
+ru: Завершаем общий дневник
+lede: В конце августа команда заканчивает Küstenlogbuch. Для последней поездки в Люнебургскую
+  пустошь нужно совместить время, бюджет и интересы. Теперь читатель сам собирает решение из
+  нескольких источников. Даты, дорога, цены и погода в заданиях вымышлены.
+goals:
+  - Сопоставить ограничения нескольких людей
+  - Предложить и подтвердить общий план
+  - Обновить решение после сообщения о погоде
+  - Самостоятельно написать приглашение и обсудить поездку
+grammar:
+  - "Повтор: причины, условия, уточнение и совместный план"
+exam:
+  - a2-lesen-2
+  - a2-hoeren-2
+  - a2-schreiben-2
+  - a2-sprechen-3
+dialogues:
+  scene:
+    title: Welcher Plan passt für uns alle?
+    ru: Завершаем общий дневник
+    place: Kiel · план поездки в Lüneburger Heide · вымышленная учебная ситуация
+    people:
+      D:
+        name: Dana
+        voice: Anna
+      M:
+        name: Mateo
+        voice: Reed
+      E:
+        name: Elif
+        voice: Flo
+      H:
+        name: Hauke
+        voice: Rocko
+    lines:
+      - D: Wir planen seit Montag unsere letzte Fahrt im August.
+        ru: Мы с понедельника планируем последнюю поездку в августе.
+      - M: Am Sonntag habe ich frei. Am Samstag muss ich arbeiten.
+        ru: В воскресенье я свободен. В субботу мне нужно работать.
+      - E: Ich möchte wandern, aber nicht länger als zwei Stunden.
+        ru: Я хочу погулять пешком, но не дольше двух часов.
+      - H: Ich kann am Sonntag ab elf Uhr. Wo treffen wir uns?
+        ru: В воскресенье я могу с одиннадцати. Где встречаемся?
+      - D: Unser Lernplan A beginnt um elf Uhr. Er kostet achtzehn Euro pro Person.
+        ru: Наш учебный план A начинается в одиннадцать. Он стоит восемнадцать евро с человека.
+      - E: Das passt. Wenn es regnet, gehen wir ins Lernmuseum.
+        ru: Подходит. Если будет дождь, пойдём в учебный музей.
+      - M: Können wir dort auch etwas essen?
+        ru: Мы можем там и поесть?
+      - D: Ja. Ich frage noch, ob im Café Plätze frei sind.
+        ru: Да. Я ещё спрошу, есть ли свободные места в кафе.
+words:
+  useful:
+    title: Wörter für die Aufgabe
+    ru: Слова для действия
+    items:
+      - de: gemeinsam entscheiden
+        ru: решать вместе
+      - de: der Vorschlag
+        ru: предложение
+        pl: Vorschläge
+      - de: die Entscheidung
+        ru: решение
+        pl: Entscheidungen
+      - de: bestätigen
+        ru: подтверждать
+      - de: noch offen
+        ru: пока не решено
+      - de: die Wanderung
+        ru: пешая прогулка
+        pl: Wanderungen
+      - de: die Rückfahrt
+        ru: обратная поездка
+        pl: Rückfahrten
+      - de: der Treffpunkt
+        ru: место встречи
+        pl: Treffpunkte
+      - de: das Budget
+        ru: бюджет
+        pl: Budgets
+      - de: pro Person
+        ru: с человека
+      - de: höchstens
+        ru: не больше, максимум
+      - de: der Abschluss
+        ru: завершение
+        pl: Abschlüsse
+tables:
+  rule:
+    title: "Повтор: причины, условия, уточнение и совместный план"
+    ru: Опора для решения
+    head:
+      - Beispiel
+      - Смысл и форма
+    ruCols:
+      - 1
+    rows:
+      - - Wir fahren am Sonntag, weil Mateo frei hat.
+        - Причина объясняет выбор, а не заменяет условие.
+      - - Wenn es regnet, gehen wir ins Museum.
+        - Условие меняет часть плана.
+      - - Ich frage, ob im Café Plätze frei sind.
+        - Вопрос остаётся открытым до ответа.
+tasks:
+  plans:
+    kind: message
+    part: a2-lesen-2
+    title: Drei Lernpläne für Sonntag
+    text: "Alle können am Sonntag ab 11 Uhr. Budget: höchstens 20 Euro pro Person. Elif möchte
+      höchstens zwei Stunden wandern. A: Beginn 11 Uhr, Wanderung 2 Stunden, 18 Euro. B: Beginn
+      12 Uhr, Wanderung 1 Stunde, 20 Euro. C: Beginn 10 Uhr, Wanderung 3 Stunden, 12 Euro. Wenn
+      es regnet, besucht die Gruppe statt der Wanderung ein Lernmuseum. Zeit und Preis bleiben
+      gleich."
+  radio:
+    kind: worksheet
+    part: a2-hoeren-2
+    format: radio
+    title: Fünf Nachrichten zum Tagesplan
+    recordings:
+      - text: Am Sonntag regnet es in unserem Lerngebiet. Am Nachmittag bleibt es auch nass.
+      - text: Der Bus zum Treffpunkt fährt heute von Platz B, nicht von Platz A.
+      - text: Das Lernmuseum öffnet am Sonntag um elf Uhr. Die Cafeteria öffnet erst um zwölf.
+      - text: Im Lerncafé sind heute nur draußen Plätze frei. Drinnen ist alles besetzt.
+      - text: Die Rückfahrt der Lerngruppe ist um siebzehn Uhr. Bitte seien Sie fünf Minuten früher am
+          Bus.
+    questions:
+      - prompt: Wie ist das Wetter?
+        options:
+          - regnerisch
+          - trocken
+          - heiß
+        answers:
+          - regnerisch
+      - prompt: Wo fährt der Bus ab?
+        options:
+          - Platz A
+          - Platz B
+          - Platz C
+        answers:
+          - Platz B
+      - prompt: Wann öffnet das Museum?
+        options:
+          - 10 Uhr
+          - 11 Uhr
+          - 12 Uhr
+        answers:
+          - 11 Uhr
+      - prompt: Wo sind Plätze frei?
+        options:
+          - drinnen
+          - draußen
+          - nirgends
+        answers:
+          - draußen
+      - prompt: Wann ist die Rückfahrt?
+        options:
+          - 16 Uhr
+          - 17 Uhr
+          - 18 Uhr
+        answers:
+          - 17 Uhr
+  article:
+    kind: worksheet
+    part: a2-lesen-2
+    format: article
+    title: Ein Eintrag zum Abschluss
+    text: Seit Montag plant die Gruppe ihre letzte Fahrt im August. Am Samstag arbeitet Mateo. Die
+      Gruppe hat Sonntag gewählt, weil Mateo dann frei hat. Hauke kann ab elf Uhr. Elif möchte
+      nicht länger als zwei Stunden wandern. Bei Regen besucht die Gruppe ein Lernmuseum. Dana
+      weiß noch nicht, ob im Café Plätze frei sind. Am Abend möchten alle den letzten Eintrag
+      im Küstenlogbuch schreiben.
+    questions:
+      - prompt: Die Gruppe hat Sonntag gewählt.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+      - prompt: Mateo hat am Samstag frei.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Hauke kann schon um zehn Uhr.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Bei Regen ist ein Museum geplant.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+      - prompt: Dana hat die Plätze im Café schon bestätigt.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+  letter:
+    kind: message
+    part: a2-schreiben-2
+    title: Die letzte Einladung
+    text: Schreiben Sie an eine Freundin oder einen Freund.
+    situation: Sie planen einen gemeinsamen Ausflug. Schreiben Sie ungefähr 40 Wörter. Wählen Sie
+      drei von vier Punkten. Schreiben Sie eine Begrüßung und einen Gruß.
+    choose: 3
+    points:
+      - Wohin und wann?
+      - Warum dieser Ausflug?
+      - Was bei Regen?
+      - Was mitbringen?
+    sample:
+      - Liebe Mia, wir fahren am Sonntag in die Lüneburger Heide. Wir treffen uns um elf Uhr.
+        Ich freue mich auf den Ausflug, weil wir zusammen Zeit haben. Wenn es regnet, besuchen
+        wir ein Museum. Kommst du mit? Viele Grüße, Dana
+  pair:
+    kind: card
+    part: a2-sprechen-3
+    title: Gemeinsam entscheiden
+    theme: Ausflug planen
+    word: Tag – Uhrzeit – Preis – Plan bei Regen
+    situation: "Person A: Sonntag ab 11 Uhr, Budget 20 Euro. Person B: höchstens zwei Stunden
+      wandern, bei Regen lieber Museum. Machen Sie Vorschläge, fragen Sie nach und bestätigen
+      Sie einen gemeinsamen Plan."
+    sample:
+      - Passt Sonntag um elf Uhr für dich?
+      - Ja, aber ich möchte höchstens zwei Stunden wandern.
+      - Wenn es regnet, gehen wir ins Museum.
+      - Abgemacht. Wir treffen uns um elf Uhr.
+steps:
+  - id: start
+    chapter: scene
+    title: Новое дело команды
+    beats:
+      - read: "В конце августа команда заканчивает Küstenlogbuch. Для последней поездки в Люнебургскую
+          пустошь нужно совместить время, бюджет и интересы. Теперь читатель сам собирает
+          решение из нескольких источников. Даты, дорога, цены и погода в заданиях вымышлены.
+          Все нужные условия даны в сцене: знания географии, настоящих цен или расписаний не
+          требуются. Сначала попробуйте понять, какого результата добиваются друзья, затем
+          слушайте реплики. На новом уровне важно не только найти число или знакомое слово, но
+          и связать несколько сведений."
+        point: Завершаем общий дневник
+        set:
+          view: dialogue
+          dialogue: scene
+          reveal: 4
+      - read: "Последняя тема не вводит большой новый блок грамматики. В разговоре встречаются *seit*,
+          модальный глагол, сравнение, *wenn* и вопрос с *ob*. Каждая форма выполняет знакомую
+          работу: назвать начало, ограничение, условие или неизвестное. Сначала составьте общее
+          решение, затем отдельно отметьте сведения, которые ещё нужно подтвердить."
+        point: "Повтор: причины, условия, уточнение и совместный план"
+        set:
+          reveal: 8
+  - id: words
+    chapter: words
+    title: Слова, которые понадобятся
+    beats:
+      - read: "В дневнике полезны выражения *gemeinsam entscheiden*, *einen Vorschlag machen*,
+          *bestätigen*. Не обязательно запоминать их списком: используйте одно, когда
+          предлагаете план, второе — когда сравниваете варианты, третье — когда фиксируете
+          ответ. *Noch offen* означает, что вопрос пока не решён, а не что место обязательно
+          открыто для посетителей."
+        point: Сначала используйте слово для решения; словарь остаётся справочником.
+        set:
+          view: words
+          words: useful
+          reveal: 6
+      - read: "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к
+          ситуации: какие слова обозначают человека, место, условие или уже выполненное
+          действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово
+          встретится снова в записке или разговоре, попробуйте восстановить его смысл до
+          подсказки."
+        point: Возвращайтесь к выражениям в сообщениях и новых действиях.
+        set:
+          reveal: 12
+  - id: grammar
+    chapter: grammar
+    title: "Повтор: причины, условия, уточнение и совместный план"
+    beats:
+      - read: "С *weil* личный глагол остаётся в конце. Воскресенье подходит Матео, потому что он
+          свободен. Этого факта ещё недостаточно для всех: нужно проверить время Хауке,
+          длительность прогулки для Элиф и общий бюджет. Объяснение одного предпочтения не
+          подтверждает согласие всей команды."
+        point: Причина объясняет выбор, а не заменяет условие.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: После придаточной части с *wenn* главная начинается с глагола. Здесь дождь меняет
+          занятие, но сам по себе не переносит день и время встречи. Когда приходит новое
+          сообщение, изменяйте только то, к чему оно относится. Если перенос не назван, не
+          добавляйте его от себя.
+        point: Условие меняет часть плана.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: Вопрос с *ob* сохраняет глагол в конце и запрашивает ответ да или нет. В итоговой заметке
+          отделите подтверждённые данные от открытого вопроса. Команда согласовала прогулку, но
+          наличие мест в кафе ещё нужно узнать. Это полезнее уверенной записи, основанной
+          только на предположении.
+        point: Вопрос остаётся открытым до ответа.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+  - id: frames
+    chapter: grammar
+    title: Как устроена реплика
+    beats:
+      - read: Вы уже умеете сказать и причину, и условие. Соберите знакомую рамку *Wenn es regnet,
+          gehen wir ins Museum*. Личная форма придаточного *regnet* стоит перед запятой, а
+          *gehen* сразу после неё. Произнесите собственный вариант с кафе вместо музея и
+          проверьте, что порядок слов сохранился.
+        point: "*Wenn es regnet, gehen wir ins Museum.*"
+        set:
+          view: sentence
+          rows:
+            - de:
+                - Wenn es regnet,
+                - gehen
+                - wir ins Museum.
+                - ""
+              ru: Если будет дождь, мы пойдём в музей.
+  - id: check
+    chapter: practice
+    title: Проверьте смысл до подсказки
+    beats:
+      - question: Один дешёвый вариант автоматически подходит всей команде?
+        read: "Нет. Сначала проверяем обязательные ограничения: день, начало, длительность и
+          максимальную цену. После этого можно выбирать по предпочтениям. В нашей задаче два
+          варианта проходят все условия. Игра принимает любой из них: решение не должно
+          зависеть от того, какой вариант больше нравится автору."
+        point: Любой вариант, соблюдающий все условия, допустим.
+        set:
+          view: table
+          table: rule
+      - question: Дождь обязательно переносит встречу на другое время?
+        read: Нет. В сообщении сказано, что меняется занятие. Время осталось прежним, пока отдельная
+          реплика не сообщает перенос. Так же вопрос о местах в кафе не доказывает наличие
+          мест. В итоговом дневнике каждое утверждение должно иметь свой источник.
+        point: Изменяйте только подтверждённую часть плана.
+        set:
+          view: table
+          table: rule
+  - id: exam-plans
+    chapter: exam
+    title: Drei Lernpläne für Sonntag
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: plans
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: plans
+        set:
+          view: task
+          task: plans
+          solved: true
+  - id: exam-radio
+    chapter: exam
+    title: Fünf Nachrichten zum Tagesplan
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: radio
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: radio
+        set:
+          view: task
+          task: radio
+          solved: true
+  - id: exam-article
+    chapter: exam
+    title: Ein Eintrag zum Abschluss
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: article
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: article
+        set:
+          view: task
+          task: article
+          solved: true
+  - id: exam-letter
+    chapter: exam
+    title: Die letzte Einladung
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: letter
+          reveal: 0
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: letter
+          reveal: 0
+        set:
+          view: task
+          task: letter
+          solved: true
+  - id: exam-pair
+    chapter: exam
+    title: Gemeinsam entscheiden
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: pair
+          reveal: 0
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: pair
+          reveal: 0
+        set:
+          view: task
+          task: pair
+          solved: true
+exercises:
+  - type: choice
+    q: Wir fahren Sonntag, weil Mateo frei ___.
+    options:
+      - hat
+      - haben
+      - hast
+    answer: 0
+    why: Глагол в конце придаточного.
+  - type: choice
+    q: Wenn es regnet, ___ wir ins Museum.
+    options:
+      - gehen
+      - wir gehen
+      - geht
+    answer: 0
+    why: Главная начинается с глагола.
+  - type: choice
+    q: Ich frage, ___ Plätze frei sind.
+    options:
+      - ob
+      - denn
+      - als
+    answer: 0
+    why: Косвенный вопрос да/нет.
+  - type: choice
+    q: Wir planen ___ Montag.
+    options:
+      - seit
+      - vor
+      - um
+    answer: 0
+    why: Начало продолжающегося действия.
+  - type: choice
+    q: Plan A ist billiger ___ Plan B.
+    options:
+      - als
+      - wie
+      - ob
+    answer: 0
+    why: Сравнение с als.
+  - type: choice
+    q: Wir haben ___ Geld für Plan A.
+    options:
+      - genug
+      - zu
+      - ob
+    answer: 0
+    why: Genug перед существительным.
+  - type: order
+    ru: Мы едем в воскресенье, потому что Матео свободен.
+    de: Wir fahren am Sonntag, weil Mateo frei hat.
+  - type: order
+    ru: Если будет дождь, мы пойдём в музей.
+    de: Wenn es regnet, gehen wir ins Museum.
+  - type: order
+    ru: Я спрашиваю, есть ли свободные места.
+    de: Ich frage, ob Plätze frei sind.
+  - type: order
+    ru: Мы планируем поездку с понедельника.
+    de: Wir planen seit Montag die Fahrt.
+  - type: order
+    ru: План A дешевле плана B.
+    de: Plan A ist billiger als Plan B.
+  - type: order
+    ru: Мы встречаемся в одиннадцать.
+    de: Wir treffen uns um elf Uhr.
+case:
+  title: Der letzte Eintrag
+  ru: Сверка дневника
+  intro: "Перед завершением дневника проверьте три утверждения: день, запасной вариант и открытый
+    вопрос."
+  people: {}
+  steps:
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Am Samstag muss Mateo arbeiten. Am Sonntag hat er frei.
+          ru: В субботу Матео работает, в воскресенье свободен.
+      question: Какой день подходит его условию?
+      options:
+        - Суббота
+        - Воскресенье
+        - Ни один
+      answer: 1
+      right: Воскресенье названо свободным днём.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Wenn es regnet, besuchen wir das Museum. Die Zeit bleibt gleich.
+          ru: Если дождь, посетим музей. Время остаётся прежним.
+      question: Что меняется?
+      options:
+        - Занятие
+        - Время встречи
+        - День недели
+      answer: 0
+      right: Условие меняет занятие, время явно сохранено.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Dana fragt noch, ob im Café Plätze frei sind.
+          ru: Дана ещё спрашивает, есть ли свободные места в кафе.
+      question: Что записать о кафе?
+      options:
+        - Все места свободны
+        - Нужно дождаться ответа
+        - Кафе закрыто
+      answer: 1
+      right: Косвенный вопрос не содержит подтверждённого ответа.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+  ending: Küstenlogbuch завершён. Дана, Матео, Элиф и Хауке договорились о плане, а читатель
+    научился проверять причины, условия и подтверждения. Теперь можно попробовать итоговую
+    самостоятельную работу.
+adventure:
+  kind: sequence
+  title: Согласуйте последнюю запись Küstenlogbuch
+  intro: В конце августа команда заканчивает Küstenlogbuch. Для последней поездки в Люнебургскую
+    пустошь нужно совместить время, бюджет и интересы. Теперь читатель сам собирает решение из
+    нескольких источников. Даты, дорога, цены и погода в заданиях вымышлены.
+  ending: "Общий дневник закончен: у команды есть проверенный план, запасной вариант и список
+    открытых вопросов. Следующий шаг — самостоятельные задания A2: понять новый текст, написать
+    своё сообщение и договориться без готовых реплик."
+  challenges:
+    - id: plan
+      kind: select
+      title: Выберите общий план
+      intro: Проверьте день, начало, длительность и бюджет. Два решения допустимы.
+      mode: reading
+      clue:
+        task: plans
+      options:
+        - id: a
+          label: Plan A · 11 Uhr · 2 Stunden · 18 €
+        - id: b
+          label: Plan B · 12 Uhr · 1 Stunde · 20 €
+        - id: c
+          label: Plan C · 10 Uhr · 3 Stunden · 12 €
+      answer:
+        - a
+      alternatives:
+        - - b
+      success: Все ограничения соблюдены. A и B подходят по исходным данным.
+      wrong: Дешёвый C нарушает и начало после 11, и предел двух часов.
+    - id: weather
+      kind: order
+      title: Объясните запасной вариант
+      intro: Соберите условие с главным предложением.
+      label: Реплика для команды
+      tokens:
+        - Wenn es regnet,
+        - gehen
+        - wir
+        - ins Museum.
+      success: Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.
+      wrong: "Проверьте положение глагола и конец предложения: используйте все фрагменты."
+    - id: negotiate
+      kind: negotiation
+      title: Проверьте выбранный план с Хауке
+      intro: В предыдущем шаге подошли A и B. Уточните, соблюдает ли выбранный вами вариант
+        ограничение Хауке.
+      start: start
+      success: "Хауке подтвердил: оба допустимых варианта учитывают его время."
+      wrong: Учтите ограничение собеседника.
+      nodes:
+        - id: start
+          text: "Hauke: Ich kann erst ab elf Uhr. Wann treffen wir uns?"
+          choices:
+            - label: Ab elf Uhr passen beide Pläne.
+              next: weather
+              feedback: Ограничение учтено.
+            - label: Wir treffen uns um zehn Uhr.
+              next: retry
+              feedback: Хауке не может в десять.
+        - id: retry
+          text: "Hauke: Um zehn geht es nicht. Erst ab elf."
+          choices:
+            - label: Dann nehmen wir A oder B, beide beginnen ab elf.
+              next: weather
+              feedback: Время исправлено.
+        - id: weather
+          text: "Hauke: Und wenn es regnet?"
+          choices:
+            - label: Dann gehen wir ins Museum. Die Zeit bleibt gleich.
+              next: end
+              feedback: Изменилось занятие, время сохранено.
+        - id: end
+          text: "Hauke: Gut, A oder B passt für mich!"
+          terminal: true
+          choices: []
+    - id: list
+      kind: match
+      title: Разделите подтверждённое и неизвестное
+      intro: Сопоставьте записи дневника с их статусом.
+      mode: reading
+      clue:
+        task: article
+      slots:
+        - id: day
+          label: Sonntag gewählt
+          answer: yes
+        - id: cafe
+          label: Plätze im Café
+          answer: open
+        - id: rain
+          label: Museum bei Regen
+          answer: condition
+      options:
+        - id: yes
+          label: день подтверждён
+        - id: open
+          label: пока нужно уточнить
+        - id: condition
+          label: запасной вариант при условии
+      success: В дневнике нет выдуманного подтверждения кафе.
+      wrong: Вопрос о местах ещё не получил ответа.
+    - id: final
+      kind: select
+      title: Оставьте точную запись
+      intro: Завершите дневник тем, что действительно известно.
+      mode: reading
+      clue:
+        task: article
+      options:
+        - id: o0
+          label: Sonntag ist gewählt; die Plätze im Café sind noch nicht bestätigt.
+        - id: o1
+          label: Alle Plätze im Café sind schon bestätigt.
+        - id: o2
+          label: Mateo hat am Samstag frei.
+      answer:
+        - o0
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."

@@ -1,0 +1,600 @@
+id: a2-unterwegs
+order: 4
+title: Wo liegt die Tasche? Wohin kommt sie?
+ru: Место и направление
+lede: "В Плёне друзья готовят место для пикника у воды. На условной схеме нужно найти встречу,
+  поставить вещи и объяснить, где они теперь находятся. Знание настоящей карты не требуется:
+  все ориентиры даны в сообщениях."
+goals:
+  - Различать вопрос о месте и о направлении
+  - Понять, куда поставить вещь и где её искать
+  - Прочитать указатель и выбрать нужное место
+  - Уточнить инструкцию перед действием
+grammar:
+  - Wo + Dativ, Wohin + Akkusativ
+exam:
+  - a2-lesen-1
+  - a2-lesen-2
+  - a2-sprechen-2
+dialogues:
+  scene:
+    title: Wo liegt die Tasche? Wohin kommt sie?
+    ru: Место и направление
+    place: Учебная схема встречи в Plön · вымышленная учебная ситуация
+    people:
+      D:
+        name: Dana
+        voice: Anna
+      M:
+        name: Mateo
+        voice: Reed
+      E:
+        name: Elif
+        voice: Flo
+      H:
+        name: Hauke
+        voice: Rocko
+    lines:
+      - D: Wo treffen wir uns in Plön?
+        ru: Где мы встречаемся в Плёне?
+      - H: Auf unserem Lernplan liegt der Treffpunkt neben dem Museum.
+        ru: На нашей учебной схеме встреча рядом с музеем.
+      - M: Ich stelle die Tasche auf den Tisch.
+        ru: Я ставлю сумку на стол.
+      - E: Die Kamera liegt schon auf dem Tisch.
+        ru: Камера уже лежит на столе.
+      - D: Wohin legen wir die Tickets?
+        ru: Куда положим билеты?
+      - H: Legt sie bitte in die Tasche. Der Schlüssel bleibt in der Jacke.
+        ru: Положите их в сумку. Ключ остаётся в куртке.
+      - M: Gut. Jetzt sind die Tickets in der Tasche.
+        ru: Хорошо. Теперь билеты в сумке.
+      - E: Dann gehen wir an den See. Am See machen wir eine Pause.
+        ru: Тогда идём к озеру. У озера сделаем перерыв.
+words:
+  useful:
+    title: Wörter für die Aufgabe
+    ru: Слова для действия
+    items:
+      - de: stellen
+        ru: ставить
+      - de: legen
+        ru: класть
+      - de: stehen
+        ru: стоять
+      - de: liegen
+        ru: лежать
+      - de: neben
+        ru: рядом с
+      - de: zwischen
+        ru: между
+      - de: unter
+        ru: под
+      - de: über
+        ru: над
+      - de: vor
+        ru: перед
+      - de: hinter
+        ru: за
+      - de: der Treffpunkt
+        ru: место встречи
+        pl: Treffpunkte
+      - de: der See
+        ru: озеро
+        pl: Seen
+tables:
+  rule:
+    title: Wo + Dativ, Wohin + Akkusativ
+    ru: Опора для решения
+    head:
+      - Beispiel
+      - Смысл и форма
+    ruCols:
+      - 1
+    rows:
+      - - Die Kamera liegt auf dem Tisch.
+        - Где? → auf dem Tisch, Dativ.
+      - - Ich stelle die Tasche auf den Tisch.
+        - Куда? → auf den Tisch, Akkusativ.
+      - - Legt die Tickets in die Tasche.
+        - Куда? in die Tasche; где? in der Tasche.
+      - - Wir gehen an den See. Am See machen wir Pause.
+        - К озеру → an den See; у озера → am See.
+tasks:
+  directory:
+    kind: worksheet
+    part: a2-lesen-1
+    format: directory
+    title: Wegweiser im Gästehaus
+    text: |-
+      Erdgeschoss: Empfang, Café, Toiletten.
+      Erster Stock: Leseraum, Kursraum.
+      Zweiter Stock: Zimmer, Ruhebereich.
+      Keller: Fahrräder, Gepäckraum.
+    questions:
+      - prompt: Sie möchten Kaffee trinken.
+        options:
+          - Erdgeschoss
+          - Erster Stock
+          - Anderes Stockwerk
+        answers:
+          - Erdgeschoss
+      - prompt: Sie suchen einen ruhigen Raum zum Lesen.
+        options:
+          - Erdgeschoss
+          - Erster Stock
+          - Anderes Stockwerk
+        answers:
+          - Erster Stock
+      - prompt: Sie möchten Ihr Fahrrad abstellen.
+        options:
+          - Erdgeschoss
+          - Erster Stock
+          - Anderes Stockwerk
+        answers:
+          - Anderes Stockwerk
+      - prompt: Sie brauchen Informationen am Empfang.
+        options:
+          - Erdgeschoss
+          - Erster Stock
+          - Anderes Stockwerk
+        answers:
+          - Erdgeschoss
+      - prompt: Sie suchen Ihr Zimmer.
+        options:
+          - Erdgeschoss
+          - Erster Stock
+          - Anderes Stockwerk
+        answers:
+          - Anderes Stockwerk
+  map:
+    kind: message
+    part: a2-lesen-2
+    title: Der Plan am See
+    from: Hauke
+    text: Unser Treffpunkt ist neben dem Museum. Die Kamera liegt auf dem Tisch. Stellt die Tasche
+      unter den Tisch. Legt die Tickets in die Tasche. Der Schlüssel bleibt in der Jacke.
+      Danach gehen wir an den See.
+  talk:
+    kind: card
+    part: a2-sprechen-2
+    title: Nach einem Ort fragen
+    theme: Unterwegs
+    word: Wo? Wohin?
+    sample:
+      - Wo ist der Treffpunkt?
+      - Er ist neben dem Museum.
+      - Wohin kommt die Tasche?
+      - Stell sie bitte unter den Tisch.
+steps:
+  - id: start
+    chapter: scene
+    title: Новое дело команды
+    beats:
+      - read: "В Плёне друзья готовят место для пикника у воды. На условной схеме нужно найти встречу,
+          поставить вещи и объяснить, где они теперь находятся. Знание настоящей карты не
+          требуется: все ориентиры даны в сообщениях. Все нужные условия даны в сцене: знания
+          географии, настоящих цен или расписаний не требуются. Сначала попробуйте понять,
+          какого результата добиваются друзья, затем слушайте реплики. На новом уровне важно не
+          только найти число или знакомое слово, но и связать несколько сведений."
+        point: Место и направление
+        set:
+          view: dialogue
+          dialogue: scene
+          reveal: 4
+      - read: "Предмет может быть неподвижен или перемещаться к новому месту. *Auf den Tisch*
+          описывает, куда ставят сумку; *auf dem Tisch* — где лежит камера. Одного наличия
+          движения недостаточно: прогулка внутри парка тоже может отвечать на *Wo?*. В этой
+          теме решает вопрос к месту, а не правило «любой глагол движения требует Akkusativ»."
+        point: Wo + Dativ, Wohin + Akkusativ
+        set:
+          reveal: 8
+  - id: words
+    chapter: words
+    title: Слова, которые понадобятся
+    beats:
+      - read: "*Stellen* и *legen* обозначают размещение, *stehen* и *liegen* — положение. Сумку можно
+          поставить, билет — положить. Сначала поймите, о каком действии просит сообщение.
+          Потом выберите форму артикля. Учебный указатель помогает искать место по функции,
+          даже если формулировка вопроса не повторяет подпись дословно."
+        point: Сначала используйте слово для решения; словарь остаётся справочником.
+        set:
+          view: words
+          words: useful
+          reveal: 6
+      - read: "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к
+          ситуации: какие слова обозначают человека, место, условие или уже выполненное
+          действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово
+          встретится снова в записке или разговоре, попробуйте восстановить его смысл до
+          подсказки."
+        point: Возвращайтесь к выражениям в сообщениях и новых действиях.
+        set:
+          reveal: 12
+  - id: grammar
+    chapter: grammar
+    title: Wo + Dativ, Wohin + Akkusativ
+    beats:
+      - read: "Если спрашиваем, где находится вещь, после *auf* используем дательный падеж: *auf dem
+          Tisch*. Это знакомая модель из A1. Слово *liegen* описывает положение камеры. Чтобы
+          найти предмет, не нужно заново перемещать его. В сообщении важно отличить текущее
+          место от инструкции, которую ещё предстоит выполнить."
+        point: Где? → auf dem Tisch, Dativ.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+            - 3
+      - read: "Когда сумку ставят на стол, возникает новое место назначения: *Wohin?*. У мужского рода
+          *der Tisch* становится *den Tisch*. Смысл не сводится к движению рук: немецкая форма
+          показывает, какое место становится результатом. Сравните команду и отчёт после
+          выполнения, чтобы не перепутать действие с положением."
+        point: Куда? → auf den Tisch, Akkusativ.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+            - 3
+      - read: У женского рода направление сохраняет форму *die*, а место выражается через *der*. После
+          выполнения просьбы можно сообщить *Die Tickets sind in der Tasche*. В обоих
+          предложениях участвуют те же билеты и сумка, но вопросы разные. Смена артикля
+          помогает прочитать этап действия.
+        point: Куда? in die Tasche; где? in der Tasche.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+            - 3
+      - read: "*An* работает по той же схеме. В нашем примере сначала идём к месту, потом находимся
+          там. Слияние *am* означает *an dem*. Другие предлоги этой группы — *neben*, *unter*,
+          *vor*, *hinter*, *zwischen*, *über*. Не учите их как случайный список: используйте
+          для поиска и размещения на понятной схеме."
+        point: К озеру → an den See; у озера → am See.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+            - 3
+  - id: frames
+    chapter: grammar
+    title: Как устроена реплика
+    beats:
+      - read: "Сначала прочитайте инструкцию: *Wir legen die Tickets in die Tasche*. Вторая фраза
+          описывает результат: *Jetzt sind die Tickets in der Tasche*. Артикль меняется, потому
+          что вопрос изменился с «куда?» на «где?». В игре нужно выбрать нужное сообщение для
+          текущего этапа, а не переставлять одну букву без понимания."
+        point: "*in die Tasche* → после действия *in der Tasche*."
+        set:
+          view: sentence
+          rows:
+            - de:
+                - Jetzt
+                - sind
+                - die Tickets in der Tasche.
+                - ""
+              ru: Теперь билеты в сумке.
+  - id: check
+    chapter: practice
+    title: Проверьте смысл до подсказки
+    beats:
+      - question: Камера уже на столе. Нужен den или dem?
+        read: "*Auf dem Tisch*: камера уже находится там, вопрос *Wo?*. Для просьбы положить её на стол
+          понадобилось бы *auf den Tisch*. Не ориентируйтесь только на слово «стол»:
+          установите, сообщает ли реплика положение или новое место назначения."
+        point: "*Wo? auf dem Tisch*; *Wohin? auf den Tisch*."
+        set:
+          view: table
+          table: rule
+      - question: Всегда ли движение означает Akkusativ после in?
+        read: Нет. Важно направление к новому месту или нахождение внутри него. *Wir gehen im Park
+          spazieren* описывает прогулку в парке, а *Wir gehen in den Park* — вход в парк. В
+          первом случае вопрос о месте прогулки, во втором — о том, куда идут.
+        point: Вопрос к месту важнее самого наличия движения.
+        set:
+          view: table
+          table: rule
+  - id: exam-directory
+    chapter: exam
+    title: Wegweiser im Gästehaus
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: directory
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: directory
+        set:
+          view: task
+          task: directory
+          solved: true
+  - id: exam-map
+    chapter: exam
+    title: Der Plan am See
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: map
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: map
+        set:
+          view: task
+          task: map
+          solved: true
+  - id: exam-talk
+    chapter: exam
+    title: Nach einem Ort fragen
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: talk
+          reveal: 0
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: talk
+          reveal: 0
+        set:
+          view: task
+          task: talk
+          solved: true
+exercises:
+  - type: choice
+    q: Die Kamera liegt auf ___ Tisch.
+    options:
+      - dem
+      - den
+      - der
+    answer: 0
+    why: Где? Dativ.
+  - type: choice
+    q: Ich stelle die Tasche auf ___ Tisch.
+    options:
+      - den
+      - dem
+      - des
+    answer: 0
+    why: Куда? Akkusativ.
+  - type: choice
+    q: Die Tickets sind in ___ Tasche.
+    options:
+      - der
+      - die
+      - den
+    answer: 0
+    why: Место, женский род.
+  - type: choice
+    q: Leg die Tickets in ___ Tasche.
+    options:
+      - die
+      - der
+      - dem
+    answer: 0
+    why: Направление, женский род.
+  - type: choice
+    q: Wir gehen ___ See.
+    options:
+      - an den
+      - am
+      - im
+    answer: 0
+    why: К озеру.
+  - type: choice
+    q: ___ See machen wir eine Pause.
+    options:
+      - Am
+      - An den
+      - In die
+    answer: 0
+    why: Место у озера.
+  - type: order
+    ru: Камера лежит на столе.
+    de: Die Kamera liegt auf dem Tisch.
+  - type: order
+    ru: Я ставлю сумку под стол.
+    de: Ich stelle die Tasche unter den Tisch.
+  - type: order
+    ru: Билеты в сумке.
+    de: Die Tickets sind in der Tasche.
+  - type: order
+    ru: Мы идём к озеру.
+    de: Wir gehen an den See.
+  - type: order
+    ru: У озера мы делаем перерыв.
+    de: Am See machen wir eine Pause.
+  - type: order
+    ru: Место встречи рядом с музеем.
+    de: Der Treffpunkt ist neben dem Museum.
+case:
+  title: Eine Tasche, zwei Orte
+  ru: Сумка и её место
+  intro: В дневнике оказались две версии сообщения. Установите, что подтверждено первоисточником.
+    Вывод зависит от языка, а не от личности автора.
+  people: {}
+  steps:
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Stell die Tasche unter den Tisch.
+          ru: Поставь сумку под стол.
+      question: Что требуется?
+      options:
+        - Переместить сумку под стол
+        - Искать сумку на столе
+        - Поставить стол в сумку
+      answer: 0
+      right: "*Unter den Tisch* — место назначения."
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Jetzt liegt die Kamera auf dem Tisch.
+          ru: Теперь камера лежит на столе.
+      question: Какой это этап?
+      options:
+        - Просьба переместить
+        - Описание положения
+        - План завтрашней поездки
+      answer: 1
+      right: "*Liegt auf dem Tisch* отвечает на *Wo?*."
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Der Treffpunkt ist neben dem Museum. Danach gehen wir an den See.
+          ru: Встреча рядом с музеем. Потом идём к озеру.
+      question: Где сначала встретиться?
+      options:
+        - У озера
+        - Внутри музея
+        - Рядом с музеем
+      answer: 2
+      right: Следующая цель не заменяет первоначальное место встречи.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+  ending: Запись исправлена по источникам. В следующей главе команда воспользуется
+    подтверждёнными сведениями для нового решения.
+adventure:
+  kind: sequence
+  title: Подготовьте место встречи
+  intro: "В Плёне друзья готовят место для пикника у воды. На условной схеме нужно найти встречу,
+    поставить вещи и объяснить, где они теперь находятся. Знание настоящей карты не требуется:
+    все ориентиры даны в сообщениях."
+  ending: Вещи размещены, их новое положение описано, место встречи найдено по схеме. Следующая
+    задача — сравнить несколько вариантов поездки.
+  challenges:
+    - id: meeting
+      kind: select
+      title: Найдите встречу по схеме
+      intro: Клуб прислал условные ориентиры.
+      mode: reading
+      clue:
+        task: map
+      options:
+        - id: o0
+          label: neben dem Museum
+        - id: o1
+          label: im Museum
+        - id: o2
+          label: hinter dem Bahnhof
+      answer:
+        - o0
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."
+    - id: objects
+      kind: match
+      title: Выполните инструкции с вещами
+      intro: Сопоставьте каждую вещь с указанным местом. Для сумки дана команда, для камеры — уже
+        известное положение.
+      mode: reading
+      clue:
+        task: map
+      slots:
+        - id: bag
+          label: Tasche · stellen
+          answer: under
+        - id: camera
+          label: Kamera · liegt
+          answer: table
+        - id: tickets
+          label: Tickets · legen
+          answer: inside
+      options:
+        - id: under
+          label: unter den Tisch
+        - id: table
+          label: auf dem Tisch
+        - id: inside
+          label: in die Tasche
+        - id: wrong
+          label: auf den Tisch
+      success: Команда на размещение и описание положения не перепутаны.
+      wrong: Сумка — под стол, камера уже на столе, билеты — в сумку.
+    - id: report
+      kind: order
+      title: Сообщите результат
+      intro: "Скажите: «Теперь билеты в сумке»."
+      label: Реплика для команды
+      tokens:
+        - Jetzt
+        - sind
+        - die Tickets
+        - in der Tasche.
+      success: Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.
+      wrong: "Проверьте положение глагола и конец предложения: используйте все фрагменты."
+    - id: key
+      kind: select
+      title: Найдите оставленный ключ
+      intro: Выберите текущее место ключа, не команду переместить его.
+      mode: reading
+      clue:
+        task: map
+      options:
+        - id: o0
+          label: in der Jacke
+        - id: o1
+          label: in die Jacke
+        - id: o2
+          label: neben das Museum
+      answer:
+        - o0
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."
+    - id: lake
+      kind: order
+      title: Объясните, куда идут дальше
+      intro: «Потом мы идём к озеру».
+      label: Реплика для команды
+      tokens:
+        - Danach
+        - gehen
+        - wir
+        - an den See.
+      success: Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.
+      wrong: "Проверьте положение глагола и конец предложения: используйте все фрагменты."

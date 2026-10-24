@@ -1,0 +1,189 @@
+id: b1-check-08
+level: b1
+mode: review
+title: "После уроков 5–8: прогулка у канала"
+intro: Новая группа делает небольшую выставку о прогулке у канала. Восстановите прошлое,
+  распределите параллельные дела и объясните цель материала. Условия вымышлены.
+sections:
+  - id: check
+    title: События, порядок и цель
+    taskIds:
+      - read
+      - listen
+      - gaps
+      - write
+      - talk
+tasks:
+  read:
+    kind: worksheet
+    part: b1-lesen-2
+    format: article
+    title: Der erste Versuch am Kanal
+    text: Als Nora und Jonas am Kanal ankamen, war es noch kühl. Sie hatten am Vorabend ihre
+      Kameras geprüft, aber Nora hatte den Ersatzakku zu Hause vergessen. Deshalb fotografierte
+      sie später mit dem Handy. Während Jonas Bilder von den Schiffen machte, schrieb Nora die
+      Ortsnamen auf. Bevor sie weitergingen, verglichen sie ihre Notizen. Für die kleine
+      Ausstellung wählten sie nur sechs Fotos aus, um genug Platz für kurze Erklärungen zu
+      lassen. Früher brachte Jonas nach jedem Ausflug sehr viele Bilder mit. Wenn er die
+      Auswahl allein machte, brauchte er oft den ganzen Abend. Diesmal entschieden sie
+      gemeinsam. Für neue Besucher zeichneten sie eine einfache Karte, damit auch Menschen ohne
+      Ortskenntnisse den Weg verstehen. Zuerst waren zwei Markierungen zu klein. Nach einem
+      Test mit einer Nachbarin änderten sie die Karte. Danach konnte diese beide Orte finden.
+    questions:
+      - prompt: Was war zu Hause geblieben?
+        options:
+          - Der Ersatzakku
+          - Alle Kameras
+          - Die Notizen
+        answers:
+          - Der Ersatzakku
+      - prompt: Wann verglichen sie die Notizen?
+        options:
+          - Vor dem Weitergehen
+          - Erst nach der Ausstellung
+          - Während der Rückfahrt
+        answers:
+          - Vor dem Weitergehen
+      - prompt: Was geschah gleichzeitig?
+        options:
+          - Jonas fotografierte, Nora schrieb Namen auf.
+          - Beide schliefen.
+          - Die Ausstellung öffnete und schloss.
+        answers:
+          - Jonas fotografierte, Nora schrieb Namen auf.
+      - prompt: Warum nur sechs Fotos?
+        options:
+          - Mehr Platz für Erklärungen
+          - Nur sechs Dateien waren vorhanden.
+          - Der Rest war gelöscht.
+        answers:
+          - Mehr Platz für Erklärungen
+      - prompt: Welches Ergebnis ist tatsächlich geprüft?
+        options:
+          - Die Nachbarin fand danach beide Orte.
+          - Alle Besucher kennen den Weg.
+          - Die Ausstellung ist beendet.
+        answers:
+          - Die Nachbarin fand danach beide Orte.
+  listen:
+    kind: worksheet
+    part: b1-hoeren-3
+    format: article
+    title: Änderung der Einführung
+    recordings:
+      - voice: Sandy
+        text: Guten Tag. Unsere Einführung zur Fotoausstellung beginnt heute um halb drei im kleinen
+          Leseraum. Die Ausstellung selbst öffnet wie geplant um drei. Während wir den großen
+          Raum vorbereiten, können Sie im Café warten.
+      - voice: Eddy
+        text: Bitte prüfen Sie vor der Weitergabe der Bilder, ob alle Autoren einverstanden sind. Die
+          Erlaubnis für unsere interne Gruppe bedeutet nicht automatisch eine Erlaubnis für
+          eine öffentliche Internetseite.
+    questions:
+      - prompt: Die Ausstellung beginnt heute früher als geplant.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Eine interne Erlaubnis gilt automatisch auch für eine öffentliche Website.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+  gaps:
+    kind: worksheet
+    part: b1-sprachbausteine-1
+    format: cloze
+    title: Ein Bericht · Ausschnitt
+    text: "[[1]] wir zum ersten Mal am Kanal waren, war es kühl. Ich [[2]] den Akku zu Hause
+      vergessen. [[3]] Jonas fotografierte, schrieb ich Namen auf. Wir machten eine Karte,
+      [[4]] die Gäste den Weg verstehen. [[5]] wir weitergingen, verglichen wir die Notizen."
+    questions:
+      - prompt: Lücke 1
+        options:
+          - Als
+          - Wenn
+          - Ob
+        answers:
+          - Als
+      - prompt: Lücke 2
+        options:
+          - hatte
+          - war
+          - wurde
+        answers:
+          - hatte
+      - prompt: Lücke 3
+        options:
+          - Während
+          - Bevor
+          - Nachdem
+        answers:
+          - Während
+      - prompt: Lücke 4
+        options:
+          - damit
+          - um
+          - weil
+        answers:
+          - damit
+      - prompt: Lücke 5
+        options:
+          - Bevor
+          - Während
+          - Weil
+        answers:
+          - Bevor
+  write:
+    kind: message
+    part: b1-schreiben-1
+    title: Einem Helfer den Ablauf erklären
+    text: Schreiben Sie einem neuen Helfer zur Ausstellung. Einführung 14:30, Öffnung 15:00. Nach dem Test haben die Helfer die Karte verbessert.
+    points:
+      - Kurz vom Ausflug erzählen
+      - Eine Vorbereitung erklären, die schon vor dem Ausflug passiert war
+      - Aufgaben vor und während der Öffnung vorschlagen
+      - Den Zweck der Karte erklären und um Rückmeldung bitten
+    situation: Behandeln Sie alle vier Punkte. Schreiben Sie einen zusammenhängenden Brief mit
+      Anrede und Gruß. Die Antwort wird nicht automatisch bewertet.
+  talk:
+    kind: card
+    part: b1-sprechen-3
+    title: Einführung und Vorbereitung planen
+    situation: Vereinbaren Sie Vorbereitung und Einführung. Alle sollen eine Pause bekommen.
+      Stimmen Sie auch ab, was nach dem Test verbessert wird.
+    word: Vorschlag · Rückfrage · Reaktion · Einigung
+    roles:
+      - title: Person A
+        text: Sie erklären gern die Fotos, brauchen vor der Einführung aber zehn Minuten Ruhe. Sie
+          können vorher Bildunterschriften prüfen.
+      - title: Person B
+        text: Sie können den Raum und die Karte vorbereiten. Eine Markierung war beim Test schwer zu
+          erkennen. Schlagen Sie eine konkrete Verbesserung vor.
+review:
+  - level: b1
+    topic: b1-erlebnisse
+    label: Разовый эпизод и привычка
+    taskIds:
+      - gaps
+      - read
+  - level: b1
+    topic: b1-vorgeschichte
+    label: Что произошло раньше
+    taskIds:
+      - gaps
+      - read
+  - level: b1
+    topic: b1-ablaeufe
+    label: До действия и параллельно
+    taskIds:
+      - listen
+      - gaps
+  - level: b1
+    topic: b1-ziele
+    label: Цель и проверенный результат
+    taskIds:
+      - read
+      - gaps

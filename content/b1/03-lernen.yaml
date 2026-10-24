@@ -1,0 +1,823 @@
+id: b1-lernen
+order: 3
+title: In einem passenden Kurs lerne ich besser.
+ru: Выбираем обучение по условиям
+lede: "Матео хочет увереннее разговаривать с гостями ресторана. Он ищет практический курс в
+  свободный понедельник, до обеда и не дороже 30 евро. Школа помогает сравнить предложения. Это
+  отдельная учебная запись: вопрос о помещении FördeTreff пока остаётся открытым."
+goals:
+  - Описать условия курса с прилагательным в Dativ
+  - Выбрать предложение по всем ограничениям
+  - Понять уточнение из короткого сообщения
+  - Задать встречный вопрос об учёбе
+grammar:
+  - "Прилагательные в Dativ: dem kleinen, einem passenden, neuen Kursen"
+exam:
+  - b1-lesen-3
+  - b1-lesen-2
+  - b1-hoeren-3
+  - b1-sprechen-1
+dialogues:
+  scene:
+    title: In einem passenden Kurs lerne ich besser.
+    ru: Выбираем обучение по условиям
+    place: Kiel · Sprachschule Förde · вымышленная учебная ситуация
+    people:
+      D:
+        name: Dana
+        voice: Anna
+      M:
+        name: Mateo
+        voice: Reed
+      E:
+        name: Elif
+        voice: Flo
+      H:
+        name: Hauke
+        voice: Rocko
+      P:
+        name: Frau Petersen
+        voice: Sandy
+    lines:
+      - M: Ich möchte mit meinen Gästen sicherer sprechen. Gibt es einen passenden Kurs?
+        ru: Я хочу увереннее разговаривать с гостями. Есть подходящий курс?
+      - P: Ja. In einem praktischen Kurs üben Sie Gespräche aus dem Alltag.
+        ru: Да. На практическом курсе вы тренируете повседневные разговоры.
+      - M: Ich habe am Montagvormittag Zeit. Mehr als dreißig Euro möchte ich nicht ausgeben.
+        ru: У меня есть время в понедельник до обеда. Больше тридцати евро я не хочу тратить.
+      - P: Dann passt Angebot A. Der Kurs beginnt um neun Uhr und kostet fünfundzwanzig Euro.
+        ru: Тогда подходит предложение A. Курс начинается в девять и стоит двадцать пять евро.
+      - M: Wie viele Menschen lernen in der Gruppe?
+        ru: Сколько человек в группе?
+      - P: In der kleinen Gruppe sind acht Personen. Im Unterricht arbeiten Sie mit praktischen
+          Beispielen.
+        ru: В маленькой группе восемь человек. На занятиях вы работаете с практическими примерами.
+      - M: Gut. Ich möchte mich für diesen Kurs anmelden.
+        ru: Хорошо. Я хочу записаться на этот курс.
+      - P: Ich bestätige Ihre Anmeldung für Montag um neun in der Sprachschule.
+        ru: Подтверждаю вашу запись на понедельник в девять в языковой школе.
+words:
+  useful:
+    title: Wörter für die Aufgabe
+    ru: Слова для действия
+    items:
+      - de: die Weiterbildung
+        ru: дальнейшее обучение
+        pl: Weiterbildungen
+      - de: der Unterricht
+        ru: занятия, преподавание
+        pl: "-"
+      - de: die Lerngruppe
+        ru: учебная группа
+        pl: Lerngruppen
+      - de: das Beispiel
+        ru: пример
+        pl: Beispiele
+      - de: die Anmeldung
+        ru: запись
+        pl: Anmeldungen
+      - de: das Angebot
+        ru: предложение
+        pl: Angebote
+      - de: der Anfänger
+        ru: начинающий
+        pl: Anfänger
+      - de: die Anfängerin
+        ru: начинающая
+        pl: Anfängerinnen
+      - de: der Vormittag
+        ru: время до обеда
+        pl: Vormittage
+      - de: praktisch
+        ru: практический
+      - de: passend
+        ru: подходящий
+      - de: sicherer sprechen
+        ru: говорить увереннее
+      - de: teilnehmen
+        ru: участвовать
+      - de: ausgeben
+        ru: тратить
+      - de: gemeinsam üben
+        ru: тренироваться вместе
+      - de: nach dem Unterricht
+        ru: после занятий
+tables:
+  rule:
+    title: "Прилагательные в Dativ: dem kleinen, einem passenden, neuen Kursen"
+    ru: Опора для решения
+    head:
+      - Beispiel
+      - Смысл и форма
+    ruCols:
+      - 1
+    rows:
+      - - in dem kleinen Raum / in einem kleinen Raum
+        - После dem/einem прилагательное получает -en.
+      - - in der kleinen Gruppe / in einer kleinen Gruppe
+        - После der/einer в Dativ тоже -en.
+      - - mit neuen Beispielen / in kleinen Kursen
+        - "Во множественном Dativ: -en; проверьте и существительное."
+tasks:
+  offers:
+    kind: worksheet
+    part: b1-lesen-3
+    format: matching
+    title: Zehn Situationen und zwölf Angebote
+    text: |-
+      a) Deutsch für den Service. Montag 9–11 Uhr, 25 Euro. Sprechen mit Gästen.
+      b) Deutsch am Abend. Montag 19–21 Uhr, 20 Euro.
+      c) Deutsch am Mittwoch. 10–12 Uhr, kostenlos.
+      d) Intensivkurs am Montag. 10–13 Uhr, 45 Euro.
+      e) Computerkurs für Anfänger. Dienstag 18 Uhr.
+      f) Schreibwerkstatt: persönliche Briefe. Samstag 10 Uhr.
+      g) Eltern-Kind-Malen am Sonntag. Erwachsene bleiben dabei.
+      h) Lernen in der Bibliothek. Mittwoch, ruhiger Raum ohne Unterricht.
+      i) Spaziergang mit Gespräch. Freitag 16 Uhr, kostenlos.
+      j) Fotokurs am Samstag. Eigene Kamera mitbringen.
+      k) Kochen in der Gruppe. Donnerstag 18 Uhr, vegetarisch.
+      l) Musik hören und besprechen. Sonntag 15 Uhr.
+      x) Kein passendes Angebot. Alle Angebote sind erfundene Lernbedingungen.
+    situation: "Ordnen Sie die Situationen zu. Jede Anzeige höchstens einmal; x bedeutet: kein
+      passendes Angebot."
+    questions:
+      - prompt: Montagvormittag Service-Deutsch, höchstens 30 Euro
+        options:
+          - a
+          - b
+          - c
+          - d
+          - e
+          - f
+          - g
+          - h
+          - i
+          - j
+          - k
+          - l
+          - x
+        answers:
+          - a
+      - prompt: Montag nach 18 Uhr Deutsch lernen
+        options:
+          - a
+          - b
+          - c
+          - d
+          - e
+          - f
+          - g
+          - h
+          - i
+          - j
+          - k
+          - l
+          - x
+        answers:
+          - b
+      - prompt: Mittwochvormittag kostenlos Deutsch lernen
+        options:
+          - a
+          - b
+          - c
+          - d
+          - e
+          - f
+          - g
+          - h
+          - i
+          - j
+          - k
+          - l
+          - x
+        answers:
+          - c
+      - prompt: Dienstagabend den Computer kennenlernen
+        options:
+          - a
+          - b
+          - c
+          - d
+          - e
+          - f
+          - g
+          - h
+          - i
+          - j
+          - k
+          - l
+          - x
+        answers:
+          - e
+      - prompt: Samstag persönliche Briefe üben
+        options:
+          - a
+          - b
+          - c
+          - d
+          - e
+          - f
+          - g
+          - h
+          - i
+          - j
+          - k
+          - l
+          - x
+        answers:
+          - f
+      - prompt: Sonntag mit einem Kind malen und dabeibleiben
+        options:
+          - a
+          - b
+          - c
+          - d
+          - e
+          - f
+          - g
+          - h
+          - i
+          - j
+          - k
+          - l
+          - x
+        answers:
+          - g
+      - prompt: Mittwoch selbstständig in Ruhe lernen
+        options:
+          - a
+          - b
+          - c
+          - d
+          - e
+          - f
+          - g
+          - h
+          - i
+          - j
+          - k
+          - l
+          - x
+        answers:
+          - h
+      - prompt: Freitag kostenlos spazieren und sprechen
+        options:
+          - a
+          - b
+          - c
+          - d
+          - e
+          - f
+          - g
+          - h
+          - i
+          - j
+          - k
+          - l
+          - x
+        answers:
+          - i
+      - prompt: Samstag fotografieren, Kamera ist vorhanden
+        options:
+          - a
+          - b
+          - c
+          - d
+          - e
+          - f
+          - g
+          - h
+          - i
+          - j
+          - k
+          - l
+          - x
+        answers:
+          - j
+      - prompt: Sonntag einen Schwimmkurs besuchen
+        options:
+          - a
+          - b
+          - c
+          - d
+          - e
+          - f
+          - g
+          - h
+          - i
+          - j
+          - k
+          - l
+          - x
+        answers:
+          - x
+    uniqueOptions: true
+    reusableOptions:
+      - x
+  confirmation:
+    kind: message
+    part: b1-lesen-2
+    title: Bestätigung des Lernkurses · Ausschnitt
+    text: "Mateos Lernkurs ist bestätigt: Montag, 9–11 Uhr, Sprachschule Förde, 25 Euro. Bitte ein
+      kleines Heft mitbringen. Diese Bestätigung gilt nur für den Sprachkurs. Für den Raum des
+      FördeTreffs gibt es noch keine Zusage."
+  notices:
+    kind: worksheet
+    part: b1-hoeren-3
+    format: article
+    title: Fünf kurze Mitteilungen
+    situation: "Hören Sie jede Mitteilung zweimal. Entscheiden Sie: richtig oder falsch."
+    recordings:
+      - voice: Sandy
+        text: Ihr Kurs am Montag beginnt wie geplant um neun Uhr. Bringen Sie bitte ein kleines Heft
+          mit. Die Lehrerin verteilt die Texte im Unterricht.
+      - voice: Shelley
+        text: Am Mittwoch bleibt der Leseraum wegen einer Besprechung geschlossen. Die Ausleihe ist
+          geöffnet. Am Donnerstag können Sie wieder im Leseraum lernen.
+      - voice: Sandy
+        text: Der Abendkurs findet heute in Raum zwei statt, nicht im Café. Die Anfangszeit bleibt
+          neunzehn Uhr. Bitte kommen Sie direkt zum Raum.
+      - voice: Eddy
+        text: Für unseren Fotokurs brauchen Sie eine eigene Kamera. Ein Computer ist nicht nötig. Wir
+          üben draußen und besprechen danach die Bilder.
+      - voice: Shelley
+        text: Beim Eltern-Kind-Malen bleiben die Erwachsenen dabei. Sie können Ihr Kind nicht abgeben
+          und später abholen. Wir malen gemeinsam.
+    questions:
+      - prompt: Für Montag soll man ein Heft mitbringen.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+      - prompt: Mittwoch kann man im Leseraum lernen.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Der Abendkurs beginnt heute früher.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Für den Fotokurs braucht man keinen Computer.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+      - prompt: Beim Malen bleiben die Erwachsenen bei den Kindern.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+  self:
+    kind: card
+    part: b1-sprechen-1
+    title: Über das Lernen sprechen
+    theme: Lernen im Alltag
+    word: Ziel · Zeit · Erfahrung · Frage
+    situation: Erzählen Sie von Ihrem Lernen. Fragen Sie nach dem Ziel und einer Erfahrung Ihres
+      Gegenübers. Reagieren Sie auf die Antwort.
+    sample:
+      - Ich lerne am besten mit konkreten Aufgaben. In einer kleinen Gruppe spreche ich mehr.
+      - Was möchtest du mit deinem Deutsch als Nächstes machen?
+steps:
+  - id: start
+    chapter: scene
+    title: Новое дело команды
+    beats:
+      - read: "Матео хочет увереннее разговаривать с гостями ресторана. Он ищет практический курс в
+          свободный понедельник, до обеда и не дороже 30 евро. Школа помогает сравнить
+          предложения. Это отдельная учебная запись: вопрос о помещении FördeTreff пока
+          остаётся открытым. Все нужные условия даны в сцене: знания географии, настоящих цен
+          или расписаний не требуются. Сначала попробуйте понять, какого результата добиваются
+          друзья, затем слушайте реплики. На новом уровне важно не только найти число или
+          знакомое слово, но и связать несколько сведений."
+        point: Выбираем обучение по условиям
+        set:
+          view: dialogue
+          dialogue: scene
+          reveal: 4
+      - read: "Глагол *lernen* остаётся знакомым, но описание условий становится точнее: в подходящем
+          курсе, в маленькой группе, с новыми примерами. Сначала найдите предлог и артикль,
+          затем окончание прилагательного. В этой теме не нужно заучивать сразу все падежные
+          таблицы. Задача — использовать Dativ в повторяющихся бытовых сочетаниях и выбрать
+          курс по трём условиям."
+        point: "Прилагательные в Dativ: dem kleinen, einem passenden, neuen Kursen"
+        set:
+          reveal: 8
+  - id: words
+    chapter: words
+    title: Слова, которые понадобятся
+    beats:
+      - read: Объявления часто похожи по теме, но не по условиям. *Vormittag* ограничивает часть суток,
+          *kostenlos* означает отсутствие платы, *praktisch* описывает способ занятий. Самая
+          низкая цена не компенсирует неподходящий день. В игре условия Матео даны явно, а в
+          разговоре вы сможете сформулировать собственную цель и спросить об удобном времени.
+        point: Сначала используйте слово для решения; словарь остаётся справочником.
+        set:
+          view: words
+          words: useful
+          reveal: 6
+      - read: "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к
+          ситуации: какие слова обозначают человека, место, условие или уже выполненное
+          действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово
+          встретится снова в записке или разговоре, попробуйте восстановить его смысл до
+          подсказки."
+        point: Возвращайтесь к выражениям в сообщениях и новых действиях.
+        set:
+          reveal: 16
+  - id: grammar
+    chapter: grammar
+    title: "Прилагательные в Dativ: dem kleinen, einem passenden, neuen Kursen"
+    beats:
+      - read: "Dativ мужского и среднего рода уже виден в артикле *dem/einem*. Прилагательное в этих
+          сочетаниях получает *-en*. Сравните знакомое *ein kleiner Raum* и *in einem kleinen
+          Raum*. Меняется функция всей группы слов: мы описываем, где проходит занятие. Не
+          добавляйте новое окончание только потому, что слово незнакомо; определите форму
+          группы."
+        point: После dem/einem прилагательное получает -en.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: В этой группе *der* обозначает Dativ женского рода. Оно не превращает слово *Gruppe* в
+          мужской род. Существительное остаётся женского рода, а прилагательное получает *-en*.
+          Сравните *die kleine Gruppe* с *in der kleinen Gruppe*. Контекст и предлог помогают
+          отличить одинаково написанные формы артикля.
+        point: После der/einer в Dativ тоже -en.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: "Без артикля во множественном Dativ прилагательное получает *-en*. У существительных
+          часто появляется дополнительное *-n*: *Beispiele → Beispielen*, *Kurse → Kursen*.
+          Если форма уже заканчивается на n или s, не добавляйте его механически. Здесь важно
+          передать условия обучения, поэтому читайте сочетание целиком, а не отдельное
+          окончание."
+        point: "Во множественном Dativ: -en; проверьте и существительное."
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+  - id: frames
+    chapter: grammar
+    title: Как устроена реплика
+    beats:
+      - read: Сочетание *in einem praktischen Kurs* занимает первую позицию целиком. Сразу после него
+          идёт личный глагол *üben*, затем подлежащее *wir*. Порядок главного предложения не
+          меняется из-за того, что обстоятельство стало длиннее. Если трудно, сначала соберите
+          *Wir üben Gespräche*, затем добавьте описание места и условий.
+        point: "*In einem praktischen Kurs üben wir Gespräche.*"
+        set:
+          view: sentence
+          rows:
+            - de:
+                - In einem praktischen Kurs
+                - üben
+                - wir Gespräche.
+                - ""
+              ru: На практическом курсе мы тренируем разговоры.
+  - id: check
+    chapter: practice
+    title: Проверьте смысл до подсказки
+    beats:
+      - question: В «in der kleinen Gruppe» слово Gruppe стало мужского рода?
+        read: "Нет. Это Dativ женского рода. Сравните с исходным *die Gruppe*. Род существительного
+          сохраняется, а форма артикля зависит от функции сочетания. Полезно произнести пару
+          целиком: *die kleine Gruppe — in der kleinen Gruppe*. Так вы связываете форму с
+          действием, а не с отдельной буквой."
+        point: "*die Gruppe → in der kleinen Gruppe*."
+        set:
+          view: table
+          table: rule
+      - question: Бесплатный курс в среду подходит запросу на понедельник?
+        read: Нет. В запросе день является обязательным условием. Сначала исключаем неподходящее время,
+          затем сравниваем оставшиеся условия. Для другого человека среда может быть идеальной.
+          Игра проверяет понимание конкретного запроса, а не общую привлекательность курса.
+        point: Все обязательные условия должны совпасть.
+        set:
+          view: table
+          table: rule
+  - id: exam-offers
+    chapter: exam
+    title: Zehn Situationen und zwölf Angebote
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: offers
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: offers
+        set:
+          view: task
+          task: offers
+          solved: true
+  - id: exam-confirmation
+    chapter: exam
+    title: Bestätigung des Lernkurses · Ausschnitt
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: confirmation
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: confirmation
+        set:
+          view: task
+          task: confirmation
+          solved: true
+  - id: exam-notices
+    chapter: exam
+    title: Fünf kurze Mitteilungen
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: notices
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: notices
+        set:
+          view: task
+          task: notices
+          solved: true
+  - id: exam-self
+    chapter: exam
+    title: Über das Lernen sprechen
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: self
+          reveal: 0
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: self
+          reveal: 0
+        set:
+          view: task
+          task: self
+          solved: true
+exercises:
+  - type: choice
+    q: in einem klein___ Raum
+    options:
+      - en
+      - er
+      - es
+    answer: 0
+    why: Dativ после einem.
+  - type: choice
+    q: in der klein___ Gruppe
+    options:
+      - en
+      - e
+      - er
+    answer: 0
+    why: Dativ женского рода.
+  - type: choice
+    q: mit neu___ Beispielen
+    options:
+      - er
+      - en
+      - e
+    answer: 1
+    why: Множественный Dativ.
+  - type: choice
+    q: nach dem praktisch___ Kurs
+    options:
+      - en
+      - e
+      - er
+    answer: 0
+    why: После dem — en.
+  - type: choice
+    q: in einer passend___ Gruppe
+    options:
+      - en
+      - e
+      - es
+    answer: 0
+    why: После einer — en.
+  - type: choice
+    q: mit neuen ___
+    options:
+      - Kontakt
+      - Kontakten
+      - Kontakte
+    answer: 1
+    why: Dativ множественного числа.
+  - type: order
+    ru: На практическом курсе мы тренируем разговоры.
+    de: In einem praktischen Kurs üben wir Gespräche.
+  - type: order
+    ru: Я учусь в маленькой группе.
+    de: Ich lerne in einer kleinen Gruppe.
+  - type: order
+    ru: Мы работаем с новыми примерами.
+    de: Wir arbeiten mit neuen Beispielen.
+  - type: order
+    ru: Курс начинается в понедельник в девять.
+    de: Der Kurs beginnt am Montag um neun Uhr.
+  - type: order
+    ru: Я не хочу тратить больше тридцати евро.
+    de: Ich möchte nicht mehr als dreißig Euro ausgeben.
+  - type: order
+    ru: Запись на курс подтверждена.
+    de: Die Anmeldung zum Kurs ist bestätigt.
+case:
+  title: Zwei verschiedene Bestätigungen
+  ru: Сверка дневника
+  intro: В заметке о проекте использовали ответ о другом событии. Разделите курс и помещение встречи.
+  people: {}
+  steps:
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Montag 9–11 Uhr, Service-Deutsch, 25 Euro.
+          ru: Понедельник 9–11, немецкий для обслуживания, 25 евро.
+      question: Соответствует запросу Матео?
+      options:
+        - Да
+        - Нет, нужен вечер
+        - Нет, больше бюджета
+      answer: 0
+      right: День, цель и бюджет совпадают.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Die Anmeldung zum Sprachkurs ist bestätigt.
+          ru: Запись на языковой курс подтверждена.
+      question: Что подтверждено?
+      options:
+        - Помещение FördeTreff
+        - Все планы команды
+        - Курс
+      answer: 2
+      right: Подтверждение относится к названному курсу.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Für den Raum des FördeTreffs gibt es noch keine Zusage.
+          ru: Для помещения FördeTreff пока нет согласия.
+      question: Какая запись верна?
+      options:
+        - Матео не записан на курс
+        - Все помещения получены
+        - Проектный запрос остаётся открытым
+      answer: 2
+      right: Разные запросы нужно учитывать отдельно.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+  ending: Запись исправлена по источникам. В следующей главе команда воспользуется
+    подтверждёнными сведениями для нового решения.
+adventure:
+  kind: sequence
+  title: Подберите курс под жизнь человека
+  intro: "Матео хочет увереннее разговаривать с гостями ресторана. Он ищет практический курс в
+    свободный понедельник, до обеда и не дороже 30 евро. Школа помогает сравнить предложения.
+    Это отдельная учебная запись: вопрос о помещении FördeTreff пока остаётся открытым."
+  ending: Курс выбран и подтверждён по своим условиям. Подтверждение учебной записи не решает
+    вопрос помещения праздника. Теперь команда может составить отдельный запрос для FördeTreff.
+  challenges:
+    - id: offer
+      kind: select
+      title: Сопоставьте три условия
+      intro: Нужны понедельник до обеда, Service-Deutsch и цена не выше 30 евро.
+      mode: reading
+      clue:
+        task: offers
+      options:
+        - id: o0
+          label: a
+        - id: o1
+          label: b
+        - id: o2
+          label: c
+        - id: o3
+          label: d
+      answer:
+        - o0
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."
+    - id: forms
+      kind: match
+      title: Соберите описания условий
+      intro: Соедините начало группы с правильным окончанием.
+      slots:
+        - id: r
+          label: in einem … Raum
+          answer: small
+        - id: g
+          label: in einer … Gruppe
+          answer: small
+        - id: b
+          label: mit … Beispielen
+          answer: new
+      options:
+        - id: small
+          label: kleinen
+        - id: new
+          label: neuen
+        - id: other
+          label: kleiner
+      success: Во всех этих моделях Dativ прилагательное заканчивается на -en.
+      wrong: После einem/einer нужен -en; во множественном mit тоже.
+    - id: sentence
+      kind: order
+      title: Объясните способ учёбы
+      intro: Начните с условий курса.
+      label: Реплика для команды
+      tokens:
+        - In einem praktischen Kurs
+        - üben
+        - wir
+        - Gespräche.
+      success: Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.
+      wrong: "Проверьте положение глагола и конец предложения: используйте все фрагменты."
+    - id: clock
+      kind: clock
+      title: Запишите начало подтверждённого курса
+      intro: Используйте отдельное подтверждение курса.
+      mode: reading
+      clue:
+        task: confirmation
+      answer: 09:00
+      initial: 08:00
+      minuteStep: 5
+      success: Курс начинается в 09:00.
+      wrong: В подтверждении курса указано 9–11.
+    - id: place
+      kind: note
+      title: Отделите курс от проекта
+      intro: Где проходит подтверждённый курс? Это не бронь помещения FördeTreff.
+      mode: reading
+      clue:
+        task: confirmation
+      fields:
+        - label: Ort des Kurses
+          answers:
+            - Sprachschule Förde
+            - in der Sprachschule Förde
+            - Sprachschule
+      success: Учебная запись сохранена отдельно от проектного запроса.
+      wrong: В подтверждении названа Sprachschule Förde.

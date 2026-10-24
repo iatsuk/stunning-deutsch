@@ -1,0 +1,2085 @@
+{
+ "id": "b1-ziele",
+ "level": "b1",
+ "order": 8,
+ "title": "Wir schreiben kurze Texte, damit alle die Bilder verstehen.",
+ "ru": "Объясняем цель и готовим понятную выставку",
+ "lede": "Для раздела о Шлезвиге друзья выбирают собственные фотографии поездки к домам викингов в Хайтабу. Одним гостям интересны детали, другим нужен короткий рассказ без специальных слов. Нужно подготовить подписи и задания так, чтобы люди действительно поняли материал.",
+ "goals": [
+  "Выразить цель своего действия через um … zu",
+  "Назвать цель для другого человека через damit",
+  "Отличить причину от цели",
+  "Сопоставить разные мнения о выставках"
+ ],
+ "grammar": [
+  "Цель: um … zu / damit; отличие от причины weil"
+ ],
+ "exam": [
+  "b1-lesen-2",
+  "b1-sprachbausteine-2",
+  "b1-hoeren-1",
+  "b1-sprechen-2"
+ ],
+ "chapters": [
+  {
+   "id": "scene",
+   "title": "Ситуация"
+  },
+  {
+   "id": "words",
+   "title": "Слова"
+  },
+  {
+   "id": "grammar",
+   "title": "Грамматика"
+  },
+  {
+   "id": "practice",
+   "title": "Проверка"
+  },
+  {
+   "id": "exam",
+   "title": "На экзамене"
+  }
+ ],
+ "dialogues": {
+  "scene": {
+   "title": "Wir schreiben kurze Texte, damit alle die Bilder verstehen.",
+   "ru": "Объясняем цель и готовим понятную выставку",
+   "place": "Schleswig / Haithabu · материал для FördeTreff · вымышленная учебная ситуация",
+   "people": {
+    "D": {
+     "name": "Dana",
+     "voice": "Anna"
+    },
+    "M": {
+     "name": "Mateo",
+     "voice": "Reed"
+    },
+    "E": {
+     "name": "Elif",
+     "voice": "Flo"
+    },
+    "H": {
+     "name": "Hauke",
+     "voice": "Rocko"
+    }
+   },
+   "lines": [
+    {
+     "who": "E",
+     "de": "Ich wähle drei Fotos aus, um die Geschichte kurz zu erzählen.",
+     "ru": "Я выбираю три фотографии, чтобы коротко рассказать историю.",
+     "audio": "audio/61c2d30a9e6e.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Wir schreiben einfache Texte, damit auch neue Gäste alles verstehen.",
+     "ru": "Мы пишем простые тексты, чтобы и новые гости всё поняли.",
+     "audio": "audio/2c901fd1efea.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Auf einem Foto sieht man die Häuser in Haithabu.",
+     "ru": "На одной фотографии видны дома в Хайтабу.",
+     "audio": "audio/4cc719cc9e8e.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Ich bringe eine Karte mit, damit die Gäste den Ort finden.",
+     "ru": "Я принесу карту, чтобы гости нашли это место.",
+     "audio": "audio/2514e31dcac5.m4a"
+    },
+    {
+     "who": "E",
+     "de": "Wir brauchen nicht viele Fachwörter, um neugierig zu machen.",
+     "ru": "Нам не нужно много специальных слов, чтобы заинтересовать.",
+     "audio": "audio/017364912a1f.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Ich lese die Texte laut, um schwierige Stellen zu finden.",
+     "ru": "Я прочитаю тексты вслух, чтобы найти трудные места.",
+     "audio": "audio/5122dee21a7c.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Danach teste ich die kleine Bilderaufgabe mit einem Nachbarn.",
+     "ru": "Потом проверю небольшое задание по картинкам с соседом.",
+     "audio": "audio/389494ca6005.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Gut. Er soll den Ort erkennen und eine Frage stellen können.",
+     "ru": "Хорошо. Он должен суметь узнать место и задать вопрос.",
+     "audio": "audio/e7ee76be83bb.m4a"
+    }
+   ]
+  }
+ },
+ "words": {
+  "useful": {
+   "title": "Wörter für die Aufgabe",
+   "ru": "Слова для действия",
+   "items": [
+    {
+     "de": "das Ziel",
+     "ru": "цель",
+     "gender": "n",
+     "plural": "Ziele",
+     "audio": "audio/b6c621d0bca3.m4a"
+    },
+    {
+     "de": "der Zweck",
+     "ru": "назначение, цель",
+     "gender": "m",
+     "plural": "Zwecke",
+     "audio": "audio/cda65e04d0ea.m4a"
+    },
+    {
+     "de": "die Fachsprache",
+     "ru": "специальный язык",
+     "gender": "f",
+     "plural": null,
+     "noPlural": true,
+     "audio": "audio/90d670ee0848.m4a"
+    },
+    {
+     "de": "das Fachwort",
+     "ru": "специальное слово",
+     "gender": "n",
+     "plural": "Fachwörter",
+     "audio": "audio/c3a5a90576bd.m4a"
+    },
+    {
+     "de": "die Karte",
+     "ru": "карта",
+     "gender": "f",
+     "plural": "Karten",
+     "audio": "audio/346484c3e50f.m4a"
+    },
+    {
+     "de": "die Stelle",
+     "ru": "место, фрагмент",
+     "gender": "f",
+     "plural": "Stellen",
+     "audio": "audio/03832bf19986.m4a"
+    },
+    {
+     "de": "der Besucher",
+     "ru": "посетитель",
+     "gender": "m",
+     "plural": "Besucher",
+     "audio": "audio/762bccd7358f.m4a"
+    },
+    {
+     "de": "die Besucherin",
+     "ru": "посетительница",
+     "gender": "f",
+     "plural": "Besucherinnen",
+     "audio": "audio/0f08886dec7d.m4a"
+    },
+    {
+     "de": "auswählen",
+     "ru": "выбирать",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/a6743fefd03e.m4a"
+    },
+    {
+     "de": "neugierig machen",
+     "ru": "вызывать интерес",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/2cd7c752f8c5.m4a"
+    },
+    {
+     "de": "laut vorlesen",
+     "ru": "читать вслух",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/0fa2c8d9d47f.m4a"
+    },
+    {
+     "de": "erkennen",
+     "ru": "узнавать",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/4b6caea7ccc2.m4a"
+    },
+    {
+     "de": "verständlich",
+     "ru": "понятный",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/bbdffa2d641d.m4a"
+    },
+    {
+     "de": "kurz erklären",
+     "ru": "кратко объяснить",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/bad01cbe59c3.m4a"
+    },
+    {
+     "de": "eine Frage stellen",
+     "ru": "задать вопрос",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/9ec0f9043a38.m4a"
+    }
+   ]
+  }
+ },
+ "tables": {
+  "rule": {
+   "title": "Цель: um … zu / damit; отличие от причины weil",
+   "ru": "Опора для решения",
+   "head": [
+    "Beispiel",
+    "Смысл и форма"
+   ],
+   "rows": [
+    [
+     "Ich lese laut, um schwierige Stellen zu finden.",
+     "um … zu: цель того же действующего лица."
+    ],
+    [
+     "Wir schreiben einfach, damit die Gäste alles verstehen.",
+     "damit + подлежащее; личный глагол в конце."
+    ],
+    [
+     "Wir schreiben neu, weil der alte Text zu schwer ist.",
+     "weil: причина; damit / um … zu: желаемая цель."
+    ]
+   ],
+   "ruCols": [
+    1
+   ]
+  }
+ },
+ "tasks": {
+  "materials": {
+   "kind": "message",
+   "part": "b1-lesen-2",
+   "title": "Material für drei Ziele · Ausschnitt",
+   "text": "Ziel A: Die Gäste sollen Schleswig und Haithabu auf der Karte finden. Material: eine Karte mit zwei markierten Orten. Ziel B: Die Gäste sollen ein Foto verstehen. Material: eine kurze Bildunterschrift mit Ort und Handlung. Ziel C: Die Gäste sollen ins Gespräch kommen. Material: eine offene Frage nach einer eigenen Reise. Ein langer Text mit unbekannten Fachwörtern hilft diesen drei Zielen hier nicht.",
+   "sample": []
+  },
+  "gaps": {
+   "kind": "worksheet",
+   "part": "b1-sprachbausteine-2",
+   "format": "cloze",
+   "uniqueOptions": true,
+   "title": "Zehn Lücken: Warum und wozu?",
+   "text": "Wir fahren nach Schleswig, [[1]] Fotos für unser Album [[2]] machen. Wir schreiben kurze Texte, [[3]] unsere Gäste die Bilder verstehen. Die Ausstellung ist [[4]] unsere Nachbarn gedacht. Wir sprechen [[5]] einem Gast über den Entwurf, [[6]] wir seine Meinung hören möchten. [[7]] wir die Bilder ausgewählt hatten, begannen wir mit den Texten. Die ersten Texte [[8]] fertig. Elif bringt [[9]] Karte mit. Wir freuen uns auf [[10]]!",
+   "questions": [
+    {
+     "prompt": "Lücke 1",
+     "options": [
+      "um",
+      "zu",
+      "damit",
+      "für",
+      "mit",
+      "weil",
+      "Nachdem",
+      "sind",
+      "eine",
+      "euch",
+      "aber",
+      "ohne",
+      "den",
+      "als",
+      "ob"
+     ],
+     "answers": [
+      "um"
+     ]
+    },
+    {
+     "prompt": "Lücke 2",
+     "options": [
+      "um",
+      "zu",
+      "damit",
+      "für",
+      "mit",
+      "weil",
+      "Nachdem",
+      "sind",
+      "eine",
+      "euch",
+      "aber",
+      "ohne",
+      "den",
+      "als",
+      "ob"
+     ],
+     "answers": [
+      "zu"
+     ]
+    },
+    {
+     "prompt": "Lücke 3",
+     "options": [
+      "um",
+      "zu",
+      "damit",
+      "für",
+      "mit",
+      "weil",
+      "Nachdem",
+      "sind",
+      "eine",
+      "euch",
+      "aber",
+      "ohne",
+      "den",
+      "als",
+      "ob"
+     ],
+     "answers": [
+      "damit"
+     ]
+    },
+    {
+     "prompt": "Lücke 4",
+     "options": [
+      "um",
+      "zu",
+      "damit",
+      "für",
+      "mit",
+      "weil",
+      "Nachdem",
+      "sind",
+      "eine",
+      "euch",
+      "aber",
+      "ohne",
+      "den",
+      "als",
+      "ob"
+     ],
+     "answers": [
+      "für"
+     ]
+    },
+    {
+     "prompt": "Lücke 5",
+     "options": [
+      "um",
+      "zu",
+      "damit",
+      "für",
+      "mit",
+      "weil",
+      "Nachdem",
+      "sind",
+      "eine",
+      "euch",
+      "aber",
+      "ohne",
+      "den",
+      "als",
+      "ob"
+     ],
+     "answers": [
+      "mit"
+     ]
+    },
+    {
+     "prompt": "Lücke 6",
+     "options": [
+      "um",
+      "zu",
+      "damit",
+      "für",
+      "mit",
+      "weil",
+      "Nachdem",
+      "sind",
+      "eine",
+      "euch",
+      "aber",
+      "ohne",
+      "den",
+      "als",
+      "ob"
+     ],
+     "answers": [
+      "weil"
+     ]
+    },
+    {
+     "prompt": "Lücke 7",
+     "options": [
+      "um",
+      "zu",
+      "damit",
+      "für",
+      "mit",
+      "weil",
+      "Nachdem",
+      "sind",
+      "eine",
+      "euch",
+      "aber",
+      "ohne",
+      "den",
+      "als",
+      "ob"
+     ],
+     "answers": [
+      "Nachdem"
+     ]
+    },
+    {
+     "prompt": "Lücke 8",
+     "options": [
+      "um",
+      "zu",
+      "damit",
+      "für",
+      "mit",
+      "weil",
+      "Nachdem",
+      "sind",
+      "eine",
+      "euch",
+      "aber",
+      "ohne",
+      "den",
+      "als",
+      "ob"
+     ],
+     "answers": [
+      "sind"
+     ]
+    },
+    {
+     "prompt": "Lücke 9",
+     "options": [
+      "um",
+      "zu",
+      "damit",
+      "für",
+      "mit",
+      "weil",
+      "Nachdem",
+      "sind",
+      "eine",
+      "euch",
+      "aber",
+      "ohne",
+      "den",
+      "als",
+      "ob"
+     ],
+     "answers": [
+      "eine"
+     ]
+    },
+    {
+     "prompt": "Lücke 10",
+     "options": [
+      "um",
+      "zu",
+      "damit",
+      "für",
+      "mit",
+      "weil",
+      "Nachdem",
+      "sind",
+      "eine",
+      "euch",
+      "aber",
+      "ohne",
+      "den",
+      "als",
+      "ob"
+     ],
+     "answers": [
+      "euch"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "voices": {
+   "kind": "worksheet",
+   "part": "b1-hoeren-1",
+   "format": "article",
+   "title": "Fünf Meinungen zu kleinen Ausstellungen",
+   "recordings": [
+    {
+     "text": "Ich gehe gern in kleine Ausstellungen, um mit anderen ins Gespräch zu kommen. Lange Texte lese ich selten. Eine persönliche Frage neben dem Bild finde ich oft interessanter als viele technische Angaben.",
+     "audio": "audio/4e21a7beddaa.m4a"
+    },
+    {
+     "text": "Für mich sind kurze Texte gut, aber ganz ohne Informationen möchte ich die Bilder nicht sehen. Ich möchte wissen, wo und wann ein Foto entstanden ist. Danach kann ich besser Fragen stellen.",
+     "audio": "audio/22f4bcaad724.m4a"
+    },
+    {
+     "text": "Ich fotografiere selbst und sehe mir gern Details an. Trotzdem muss eine Ausstellung nicht nur für Fachleute sein. Ich finde einfache Erklärungen hilfreich, damit auch Anfänger etwas mitnehmen.",
+     "audio": "audio/64cf67d4ee0e.m4a"
+    },
+    {
+     "text": "Ich brauche in einer Ausstellung Ruhe. Wenn an jedem Bild jemand etwas erklärt, kann ich mich schlecht konzentrieren. Ich lese lieber allein und spreche erst am Ende über meine Eindrücke.",
+     "audio": "audio/82f8ccda3daa.m4a"
+    },
+    {
+     "text": "Mit meinen Kindern wähle ich Ausstellungen mit kleinen Aufgaben. Wir suchen zum Beispiel einen Ort auf einer Karte. Dabei möchte ich ihnen nicht ständig die richtige Antwort vorsagen.",
+     "audio": "audio/5a983c410fe9.m4a"
+    }
+   ],
+   "questions": [
+    {
+     "prompt": "Die erste Person möchte durch die Ausstellung Gespräche beginnen.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "richtig"
+     ]
+    },
+    {
+     "prompt": "Die zweite Person möchte überhaupt keine Informationen.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Die dritte Person möchte nur Angebote für Fachleute.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Die vierte Person liest lieber zuerst allein.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "richtig"
+     ]
+    },
+    {
+     "prompt": "Die fünfte Person möchte den Kindern jede Lösung vorsagen.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "falsch"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "opinions": {
+   "kind": "card",
+   "part": "b1-sprechen-2",
+   "title": "Wie wird eine Ausstellung interessant?",
+   "theme": "Information oder Entdeckung?",
+   "word": "Meinung wiedergeben · Beispiel · Rückfrage",
+   "situation": "Lesen Sie verschiedene Meinungen. Erzählen Sie dem Partner, was Ihre Person wichtig findet. Vergleichen Sie dann mit einer eigenen Erfahrung.",
+   "roles": [
+    {
+     "title": "Person A · Karin",
+     "text": "Ich brauche klare Informationen, um eine Ausstellung zu verstehen. Nur schöne Bilder reichen mir nicht. Ich lese gern einen kurzen Text über den Ort und die Menschen. Danach stelle ich Fragen. Eine gute Karte ist für mich wichtiger als ein lautes Video."
+    },
+    {
+     "title": "Person B · Jonas",
+     "text": "Ich merke mir mehr, wenn ich selbst etwas herausfinden muss. Letzte Woche suchte ich in einer Ausstellung drei Orte auf einer Karte. Darüber kam ich mit einem anderen Besucher ins Gespräch. Zu lange Texte machen mich müde."
+    }
+   ],
+   "sample": []
+  }
+ },
+ "beats": [
+  {
+   "id": "start-1",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 0,
+   "read": "Для раздела о Шлезвиге друзья выбирают собственные фотографии поездки к домам викингов в Хайтабу. Одним гостям интересны детали, другим нужен короткий рассказ без специальных слов. Нужно подготовить подписи и задания так, чтобы люди действительно поняли материал. Все нужные условия даны в сцене: знания географии, настоящих цен или расписаний не требуются. Сначала попробуйте понять, какого результата добиваются друзья, затем слушайте реплики. На новом уровне важно не только найти число или знакомое слово, но и связать несколько сведений.",
+   "point": "Объясняем цель и готовим понятную выставку",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 4,
+    "fresh": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "start-2",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 1,
+   "read": "В этой главе важен результат для посетителя. Um ... zu связывает действие с целью того же действующего лица. Damit позволяет явно назвать, кто должен получить результат: мы пишем, гости понимают. При этом damit можно использовать и с тем же участником. Не выбирайте союз только по русскому «чтобы»: сначала найдите, кто действует в каждой части.",
+   "point": "Цель: um … zu / damit; отличие от причины weil",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 8,
+    "fresh": [
+     4,
+     5,
+     6,
+     7
+    ]
+   }
+  },
+  {
+   "id": "words-1",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 0,
+   "read": "Выставка не должна превращаться в список сложных терминов. Карта помогает найти место, подпись — понять фотографию, вопрос — начать разговор. В игре каждый элемент выбирается ради конкретной цели. Исторические факты мы не придумываем: упражнение описывает действия организаторов, а фотографии остаются материалом, которому нужна понятная подпись и указанное авторство.",
+   "point": "Сначала используйте слово для решения; словарь остаётся справочником.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 6,
+    "words": "useful"
+   }
+  },
+  {
+   "id": "words-2",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 1,
+   "read": "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к ситуации: какие слова обозначают человека, место, условие или уже выполненное действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово встретится снова в записке или разговоре, попробуйте восстановить его смысл до подсказки.",
+   "point": "Возвращайтесь к выражениям в сообщениях и новых действиях.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 15,
+    "words": "useful",
+    "fresh": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   }
+  },
+  {
+   "id": "grammar-1",
+   "step": "grammar",
+   "stepTitle": "Цель: um … zu / damit; отличие от причины weil",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "Читает и ищет трудные места один человек. Поэтому во второй части не требуется новое подлежащее: после um стоит нужное дополнение, а в конце — zu finden. Это развитие уже знакомой инфинитивной группы. Цель отвечает на вопрос «для чего?». Она ещё не доказывает, что желаемый результат действительно получен; после чтения всё равно нужно проверить текст.",
+   "point": "um … zu: цель того же действующего лица.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "grammar-2",
+   "step": "grammar",
+   "stepTitle": "Цель: um … zu / damit; отличие от причины weil",
+   "chapterIndex": 2,
+   "indexInStep": 1,
+   "read": "Пишем мы, а понять должны гости. В части с damit действующее лицо названо явно, глагол получает личную форму и стоит в конце. Damit допустимо и при одном участнике: *Ich lese laut, damit ich Fehler finde*. Не превращайте полезное различие в неверное правило, будто damit разрешено только для разных людей.",
+   "point": "damit + подлежащее; личный глагол в конце.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "grammar-3",
+   "step": "grammar",
+   "stepTitle": "Цель: um … zu / damit; отличие от причины weil",
+   "chapterIndex": 2,
+   "indexInStep": 2,
+   "read": "Причина объясняет, почему решение принято: старый текст слишком трудный. Цель описывает, чего хотим достичь: чтобы гости поняли. Одно действие может иметь и причину, и цель. В игре не достаточно найти знакомый союз: свяжите его с фактом или ожидаемым результатом. В обеих моделях затем проверьте правильное положение глагола.",
+   "point": "weil: причина; damit / um … zu: желаемая цель.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "frames-1",
+   "step": "frames",
+   "stepTitle": "Как устроена реплика",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "В этом предложении подлежащее меняется: мы подготавливаем текст для гостей. Поэтому в конце стоит личная форма verstehen, а не zu verstehen без названного участника. Перед сборкой переведите связь простыми словами: кто делает материал и кому он помогает? Форма должна сохранить эту связь, иначе получатель помощи исчезнет из реплики.",
+   "point": "*Wir schreiben einfach, damit die Gäste alles verstehen.*",
+   "scene": {
+    "view": "sentence",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        },
+        {
+         "key": "schreiben",
+         "text": "schreiben"
+        },
+        {
+         "key": "einfach",
+         "text": "einfach,"
+        }
+       ],
+       [
+        {
+         "key": "damit",
+         "text": "damit"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "gäste",
+         "text": "Gäste"
+        },
+        {
+         "key": "alles",
+         "text": "alles"
+        }
+       ],
+       [
+        {
+         "key": "verstehen",
+         "text": "verstehen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir schreiben einfach, damit die Gäste alles verstehen.",
+      "ru": "Мы пишем просто, чтобы гости всё поняли.",
+      "audio": "audio/6ceabd5d253a.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-1",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 0,
+   "read": "Да. Можно сказать *Ich lese laut, damit ich Fehler finde*. Конструкция um ... zu в этом случае короче, но damit не становится ошибкой. Главное — сохранить понятную цель и правильно построить выбранную модель. Различие особенно полезно, когда действующие лица разные: тогда их нельзя незаметно объединить в одну инфинитивную группу.",
+   "point": "При одном участнике возможны обе модели.",
+   "question": "Можно ли использовать damit, когда участник один?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        },
+        {
+         "key": "schreiben",
+         "text": "schreiben"
+        },
+        {
+         "key": "einfach",
+         "text": "einfach,"
+        }
+       ],
+       [
+        {
+         "key": "damit",
+         "text": "damit"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "gäste",
+         "text": "Gäste"
+        },
+        {
+         "key": "alles",
+         "text": "alles"
+        }
+       ],
+       [
+        {
+         "key": "verstehen",
+         "text": "verstehen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir schreiben einfach, damit die Gäste alles verstehen.",
+      "ru": "Мы пишем просто, чтобы гости всё поняли.",
+      "audio": "audio/6ceabd5d253a.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-2",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 1,
+   "read": "Нет. Это цель организаторов. Чтобы узнать результат, нужно проверить материал с посетителем и услышать его ответ. В этой истории Хауке тестирует задание с соседом. Не записывайте намерение как достигнутый результат: короткий текст может всё ещё содержать незнакомые слова или непонятную связь между картой и фотографией.",
+   "point": "Цель нужно отдельно проверить действием.",
+   "question": "«Damit alle verstehen» уже подтверждает, что все поняли?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        },
+        {
+         "key": "schreiben",
+         "text": "schreiben"
+        },
+        {
+         "key": "einfach",
+         "text": "einfach,"
+        }
+       ],
+       [
+        {
+         "key": "damit",
+         "text": "damit"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "gäste",
+         "text": "Gäste"
+        },
+        {
+         "key": "alles",
+         "text": "alles"
+        }
+       ],
+       [
+        {
+         "key": "verstehen",
+         "text": "verstehen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir schreiben einfach, damit die Gäste alles verstehen.",
+      "ru": "Мы пишем просто, чтобы гости всё поняли.",
+      "audio": "audio/6ceabd5d253a.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "exam-materials-1",
+   "step": "exam-materials",
+   "stepTitle": "Material für drei Ziele · Ausschnitt",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сравните три результата для посетителей. Для каждого выберите материал, который помогает именно этому действию. Карта не заменяет подпись к фотографии, а подпись не гарантирует начало разговора. Это дополнительный фрагмент чтения для игры; полную экзаменационную часть он не имитирует. Позже перенесите выбранную цель в свою реплику.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        },
+        {
+         "key": "schreiben",
+         "text": "schreiben"
+        },
+        {
+         "key": "einfach",
+         "text": "einfach,"
+        }
+       ],
+       [
+        {
+         "key": "damit",
+         "text": "damit"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "gäste",
+         "text": "Gäste"
+        },
+        {
+         "key": "alles",
+         "text": "alles"
+        }
+       ],
+       [
+        {
+         "key": "verstehen",
+         "text": "verstehen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir schreiben einfach, damit die Gäste alles verstehen.",
+      "ru": "Мы пишем просто, чтобы гости всё поняли.",
+      "audio": "audio/6ceabd5d253a.m4a"
+     }
+    ],
+    "task": "materials"
+   }
+  },
+  {
+   "id": "exam-materials-2",
+   "step": "exam-materials",
+   "stepTitle": "Material für drei Ziele · Ausschnitt",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        },
+        {
+         "key": "schreiben",
+         "text": "schreiben"
+        },
+        {
+         "key": "einfach",
+         "text": "einfach,"
+        }
+       ],
+       [
+        {
+         "key": "damit",
+         "text": "damit"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "gäste",
+         "text": "Gäste"
+        },
+        {
+         "key": "alles",
+         "text": "alles"
+        }
+       ],
+       [
+        {
+         "key": "verstehen",
+         "text": "verstehen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir schreiben einfach, damit die Gäste alles verstehen.",
+      "ru": "Мы пишем просто, чтобы гости всё поняли.",
+      "audio": "audio/6ceabd5d253a.m4a"
+     }
+    ],
+    "task": "materials"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        },
+        {
+         "key": "schreiben",
+         "text": "schreiben"
+        },
+        {
+         "key": "einfach",
+         "text": "einfach,"
+        }
+       ],
+       [
+        {
+         "key": "damit",
+         "text": "damit"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "gäste",
+         "text": "Gäste"
+        },
+        {
+         "key": "alles",
+         "text": "alles"
+        }
+       ],
+       [
+        {
+         "key": "verstehen",
+         "text": "verstehen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir schreiben einfach, damit die Gäste alles verstehen.",
+      "ru": "Мы пишем просто, чтобы гости всё поняли.",
+      "audio": "audio/6ceabd5d253a.m4a"
+     }
+    ],
+    "task": "materials",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-gaps-1",
+   "step": "exam-gaps",
+   "stepTitle": "Zehn Lücken: Warum und wozu?",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "В общем банке пятнадцать слов, а пропусков десять. Используйте каждый выбранный вариант не более одного раза. Контекст вернёт после новой модели также weil и nachdem. Сначала прочитайте весь план, затем проверьте соседние слова у каждого пропуска: предлог, личная форма и причастие дают разные подсказки.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        },
+        {
+         "key": "schreiben",
+         "text": "schreiben"
+        },
+        {
+         "key": "einfach",
+         "text": "einfach,"
+        }
+       ],
+       [
+        {
+         "key": "damit",
+         "text": "damit"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "gäste",
+         "text": "Gäste"
+        },
+        {
+         "key": "alles",
+         "text": "alles"
+        }
+       ],
+       [
+        {
+         "key": "verstehen",
+         "text": "verstehen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir schreiben einfach, damit die Gäste alles verstehen.",
+      "ru": "Мы пишем просто, чтобы гости всё поняли.",
+      "audio": "audio/6ceabd5d253a.m4a"
+     }
+    ],
+    "task": "gaps"
+   }
+  },
+  {
+   "id": "exam-gaps-2",
+   "step": "exam-gaps",
+   "stepTitle": "Zehn Lücken: Warum und wozu?",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        },
+        {
+         "key": "schreiben",
+         "text": "schreiben"
+        },
+        {
+         "key": "einfach",
+         "text": "einfach,"
+        }
+       ],
+       [
+        {
+         "key": "damit",
+         "text": "damit"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "gäste",
+         "text": "Gäste"
+        },
+        {
+         "key": "alles",
+         "text": "alles"
+        }
+       ],
+       [
+        {
+         "key": "verstehen",
+         "text": "verstehen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir schreiben einfach, damit die Gäste alles verstehen.",
+      "ru": "Мы пишем просто, чтобы гости всё поняли.",
+      "audio": "audio/6ceabd5d253a.m4a"
+     }
+    ],
+    "task": "gaps"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        },
+        {
+         "key": "schreiben",
+         "text": "schreiben"
+        },
+        {
+         "key": "einfach",
+         "text": "einfach,"
+        }
+       ],
+       [
+        {
+         "key": "damit",
+         "text": "damit"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "gäste",
+         "text": "Gäste"
+        },
+        {
+         "key": "alles",
+         "text": "alles"
+        }
+       ],
+       [
+        {
+         "key": "verstehen",
+         "text": "verstehen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir schreiben einfach, damit die Gäste alles verstehen.",
+      "ru": "Мы пишем просто, чтобы гости всё поняли.",
+      "audio": "audio/6ceabd5d253a.m4a"
+     }
+    ],
+    "task": "gaps",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-voices-1",
+   "step": "exam-voices",
+   "stepTitle": "Fünf Meinungen zu kleinen Ausstellungen",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Пять мнений показывают разные потребности посетителей. В самостоятельной попытке слушайте каждую запись один раз. Утверждение может преувеличивать мысль словами «совсем» или «только». Не решайте по отношению автора к музеям вообще: найдите, что именно ему важно. Учебный текст и повтор помогают разобрать ошибку после своей попытки.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        },
+        {
+         "key": "schreiben",
+         "text": "schreiben"
+        },
+        {
+         "key": "einfach",
+         "text": "einfach,"
+        }
+       ],
+       [
+        {
+         "key": "damit",
+         "text": "damit"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "gäste",
+         "text": "Gäste"
+        },
+        {
+         "key": "alles",
+         "text": "alles"
+        }
+       ],
+       [
+        {
+         "key": "verstehen",
+         "text": "verstehen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir schreiben einfach, damit die Gäste alles verstehen.",
+      "ru": "Мы пишем просто, чтобы гости всё поняли.",
+      "audio": "audio/6ceabd5d253a.m4a"
+     }
+    ],
+    "task": "voices"
+   }
+  },
+  {
+   "id": "exam-voices-2",
+   "step": "exam-voices",
+   "stepTitle": "Fünf Meinungen zu kleinen Ausstellungen",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        },
+        {
+         "key": "schreiben",
+         "text": "schreiben"
+        },
+        {
+         "key": "einfach",
+         "text": "einfach,"
+        }
+       ],
+       [
+        {
+         "key": "damit",
+         "text": "damit"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "gäste",
+         "text": "Gäste"
+        },
+        {
+         "key": "alles",
+         "text": "alles"
+        }
+       ],
+       [
+        {
+         "key": "verstehen",
+         "text": "verstehen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir schreiben einfach, damit die Gäste alles verstehen.",
+      "ru": "Мы пишем просто, чтобы гости всё поняли.",
+      "audio": "audio/6ceabd5d253a.m4a"
+     }
+    ],
+    "task": "voices"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        },
+        {
+         "key": "schreiben",
+         "text": "schreiben"
+        },
+        {
+         "key": "einfach",
+         "text": "einfach,"
+        }
+       ],
+       [
+        {
+         "key": "damit",
+         "text": "damit"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "gäste",
+         "text": "Gäste"
+        },
+        {
+         "key": "alles",
+         "text": "alles"
+        }
+       ],
+       [
+        {
+         "key": "verstehen",
+         "text": "verstehen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir schreiben einfach, damit die Gäste alles verstehen.",
+      "ru": "Мы пишем просто, чтобы гости всё поняли.",
+      "audio": "audio/6ceabd5d253a.m4a"
+     }
+    ],
+    "task": "voices",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-opinions-1",
+   "step": "exam-opinions",
+   "stepTitle": "Wie wird eine Ausstellung interessant?",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Передайте основную мысль своей карточки, не зачитывая весь текст партнёру. Затем приведите собственный пример и спросите о его опыте. В этом задании нет правильного вкуса: любить карты или небольшие задачи допустимо. Проверяется понятный пересказ и реакция на другое мнение, а не совпадение с предпочтением автора курса.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        },
+        {
+         "key": "schreiben",
+         "text": "schreiben"
+        },
+        {
+         "key": "einfach",
+         "text": "einfach,"
+        }
+       ],
+       [
+        {
+         "key": "damit",
+         "text": "damit"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "gäste",
+         "text": "Gäste"
+        },
+        {
+         "key": "alles",
+         "text": "alles"
+        }
+       ],
+       [
+        {
+         "key": "verstehen",
+         "text": "verstehen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir schreiben einfach, damit die Gäste alles verstehen.",
+      "ru": "Мы пишем просто, чтобы гости всё поняли.",
+      "audio": "audio/6ceabd5d253a.m4a"
+     }
+    ],
+    "task": "opinions"
+   }
+  },
+  {
+   "id": "exam-opinions-2",
+   "step": "exam-opinions",
+   "stepTitle": "Wie wird eine Ausstellung interessant?",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        },
+        {
+         "key": "schreiben",
+         "text": "schreiben"
+        },
+        {
+         "key": "einfach",
+         "text": "einfach,"
+        }
+       ],
+       [
+        {
+         "key": "damit",
+         "text": "damit"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "gäste",
+         "text": "Gäste"
+        },
+        {
+         "key": "alles",
+         "text": "alles"
+        }
+       ],
+       [
+        {
+         "key": "verstehen",
+         "text": "verstehen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir schreiben einfach, damit die Gäste alles verstehen.",
+      "ru": "Мы пишем просто, чтобы гости всё поняли.",
+      "audio": "audio/6ceabd5d253a.m4a"
+     }
+    ],
+    "task": "opinions"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        },
+        {
+         "key": "schreiben",
+         "text": "schreiben"
+        },
+        {
+         "key": "einfach",
+         "text": "einfach,"
+        }
+       ],
+       [
+        {
+         "key": "damit",
+         "text": "damit"
+        }
+       ],
+       [
+        {
+         "key": "die",
+         "text": "die"
+        },
+        {
+         "key": "gäste",
+         "text": "Gäste"
+        },
+        {
+         "key": "alles",
+         "text": "alles"
+        }
+       ],
+       [
+        {
+         "key": "verstehen",
+         "text": "verstehen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir schreiben einfach, damit die Gäste alles verstehen.",
+      "ru": "Мы пишем просто, чтобы гости всё поняли.",
+      "audio": "audio/6ceabd5d253a.m4a"
+     }
+    ],
+    "task": "opinions",
+    "solved": true
+   }
+  }
+ ],
+ "exercises": [
+  {
+   "id": "b1-ziele-1",
+   "type": "choice",
+   "q": "Ich lese laut, ___ Fehler zu finden.",
+   "options": [
+    "weil",
+    "um",
+    "damit"
+   ],
+   "answer": 1,
+   "why": "Одна цель одного участника.",
+   "audio": "audio/e6170a1e9e64.m4a"
+  },
+  {
+   "id": "b1-ziele-2",
+   "type": "choice",
+   "q": "Wir erklären einfach, ___ die Gäste alles verstehen.",
+   "options": [
+    "zu",
+    "damit",
+    "um"
+   ],
+   "answer": 1,
+   "why": "Вторая часть с подлежащим и личным глаголом.",
+   "audio": "audio/17bbecfb96de.m4a"
+  },
+  {
+   "id": "b1-ziele-3",
+   "type": "choice",
+   "q": "Um die Texte besser ___ verstehen.",
+   "options": [
+    "damit",
+    "für",
+    "zu"
+   ],
+   "answer": 2,
+   "why": "Инфинитивная группа.",
+   "audio": "audio/4f6e48e6d6c8.m4a"
+  },
+  {
+   "id": "b1-ziele-4",
+   "type": "choice",
+   "q": "Damit die Gäste den Ort ___.",
+   "options": [
+    "gefunden",
+    "finden",
+    "zu finden"
+   ],
+   "answer": 1,
+   "why": "Личная форма в конце.",
+   "audio": "audio/5d41dbfabaac.m4a"
+  },
+  {
+   "id": "b1-ziele-5",
+   "type": "choice",
+   "q": "Weil der Text zu schwer ist — это…",
+   "options": [
+    "Место",
+    "Причина",
+    "Подтверждённый результат"
+   ],
+   "answer": 1,
+   "why": "Объясняет принятое решение."
+  },
+  {
+   "id": "b1-ziele-6",
+   "type": "choice",
+   "q": "Damit при одном участнике…",
+   "options": [
+    "Всегда запрещено",
+    "Только о прошлом",
+    "Возможно"
+   ],
+   "answer": 2,
+   "why": "Umzu короче, но damit тоже возможно."
+  },
+  {
+   "id": "b1-ziele-7",
+   "type": "order",
+   "de": "Ich lese laut, um Fehler zu finden.",
+   "ru": "Я читаю вслух, чтобы найти ошибки.",
+   "audio": "audio/e6170a1e9e64.m4a"
+  },
+  {
+   "id": "b1-ziele-8",
+   "type": "order",
+   "de": "Wir schreiben einfach, damit alle die Bilder verstehen.",
+   "ru": "Мы пишем просто, чтобы все поняли фотографии.",
+   "audio": "audio/3dde1df0dd06.m4a"
+  },
+  {
+   "id": "b1-ziele-9",
+   "type": "order",
+   "de": "Ich bringe eine Karte mit.",
+   "ru": "Я принесу карту.",
+   "audio": "audio/dcb3393fcf91.m4a"
+  },
+  {
+   "id": "b1-ziele-10",
+   "type": "order",
+   "de": "Die Gäste sollen den Ort erkennen.",
+   "ru": "Гости должны узнать место.",
+   "audio": "audio/3845f0bd1177.m4a"
+  },
+  {
+   "id": "b1-ziele-11",
+   "type": "order",
+   "de": "Wir testen die Aufgabe mit einem Nachbarn.",
+   "ru": "Мы проверим задание с соседом.",
+   "audio": "audio/2c89358348db.m4a"
+  },
+  {
+   "id": "b1-ziele-12",
+   "type": "order",
+   "de": "Die Markierung ist zu klein.",
+   "ru": "Метка слишком маленькая.",
+   "audio": "audio/c6ac3b58c520.m4a"
+  }
+ ],
+ "case": {
+  "title": "Ein Ziel ist noch kein Ergebnis",
+  "ru": "Сверка дневника",
+  "intro": "Проверьте, что хотел сделать организатор и что подтвердил посетитель.",
+  "people": {},
+  "steps": [
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Wir schreiben einfache Texte, damit alle die Bilder verstehen.",
+      "ru": "Мы пишем простые тексты, чтобы все поняли фото."
+     }
+    ],
+    "question": "Это уже результат проверки?",
+    "options": [
+     "Да, музей открыт",
+     "Нет, это цель",
+     "Да, все поняли"
+    ],
+    "answer": 1,
+    "right": "Damit выражает желаемый результат.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Der Nachbar erkennt die zweite Markierung zuerst nicht.",
+      "ru": "Сосед сначала не узнаёт вторую метку."
+     }
+    ],
+    "question": "Что стоит изменить?",
+    "options": [
+     "Сделать метку заметнее",
+     "Объявить гостя невнимательным",
+     "Убрать карту без замены"
+    ],
+    "answer": 0,
+    "right": "Реплика показывает конкретную трудность материала.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Jetzt erkenne ich beide Orte.",
+      "ru": "Теперь я узнаю оба места."
+     }
+    ],
+    "question": "Что подтверждено?",
+    "options": [
+     "Все будущие гости всё поймут",
+     "Все материалы идеальны",
+     "Этот посетитель нашёл оба места"
+    ],
+    "answer": 2,
+    "right": "Ответ подтверждает конкретную проверку.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   }
+  ],
+  "ending": "Цель, трудность и проверенный результат записаны отдельно. Материал улучшен по действию посетителя."
+ },
+ "adventure": {
+  "kind": "sequence",
+  "title": "Сделайте материал полезным посетителю",
+  "intro": "Для раздела о Шлезвиге друзья выбирают собственные фотографии поездки к домам викингов в Хайтабу. Одним гостям интересны детали, другим нужен короткий рассказ без специальных слов. Нужно подготовить подписи и задания так, чтобы люди действительно поняли материал.",
+  "ending": "У трёх материалов есть понятные цели: найти место, понять фото и начать разговор. Намерение отделено от результата; подготовленный вариант ещё нужно попробовать с гостем.",
+  "challenges": [
+   {
+    "id": "goals",
+    "kind": "match",
+    "title": "Материал должен помогать действию",
+    "intro": "Свяжите материал с задачей посетителя.",
+    "success": "Выбрана функция каждого элемента.",
+    "wrong": "Сравните цель A, B и C.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Ziel A: Die Gäste sollen Schleswig und Haithabu auf der Karte finden. Material: eine Karte mit zwei markierten Orten. Ziel B: Die Gäste sollen ein Foto verstehen. Material: eine kurze Bildunterschrift mit Ort und Handlung. Ziel C: Die Gäste sollen ins Gespräch kommen. Material: eine offene Frage nach einer eigenen Reise. Ein langer Text mit unbekannten Fachwörtern hilft diesen drei Zielen hier nicht.",
+      "name": "Material für drei Ziele · Ausschnitt"
+     }
+    ],
+    "options": [
+     {
+      "id": "finden",
+      "label": "Ort finden"
+     },
+     {
+      "id": "verstehen",
+      "label": "Foto verstehen"
+     },
+     {
+      "id": "sprechen",
+      "label": "ins Gespräch kommen"
+     }
+    ],
+    "slots": [
+     {
+      "id": "a",
+      "label": "Karte mit markierten Orten",
+      "answer": "finden"
+     },
+     {
+      "id": "b",
+      "label": "Kurze Bildunterschrift",
+      "answer": "verstehen"
+     },
+     {
+      "id": "c",
+      "label": "Offene Reisefrage",
+      "answer": "sprechen"
+     }
+    ]
+   },
+   {
+    "id": "purpose",
+    "kind": "order",
+    "title": "Скажите, для кого вы упрощаете текст",
+    "intro": "Сохраните разных участников.",
+    "success": "Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.",
+    "wrong": "Проверьте положение глагола и конец предложения: используйте все фрагменты.",
+    "tokens": [
+     "Wir schreiben einfach,",
+     "damit",
+     "die Gäste alles",
+     "verstehen."
+    ],
+    "label": "Реплика для команды"
+   },
+   {
+    "id": "kit",
+    "kind": "pack",
+    "title": "Соберите набор под три цели",
+    "intro": "Нужны место, понятное фото и разговор.",
+    "success": "Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы одно из них.",
+    "wrong": "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание и адресата.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Ziel A: Die Gäste sollen Schleswig und Haithabu auf der Karte finden. Material: eine Karte mit zwei markierten Orten. Ziel B: Die Gäste sollen ein Foto verstehen. Material: eine kurze Bildunterschrift mit Ort und Handlung. Ziel C: Die Gäste sollen ins Gespräch kommen. Material: eine offene Frage nach einer eigenen Reise. Ein langer Text mit unbekannten Fachwörtern hilft diesen drei Zielen hier nicht.",
+      "name": "Material für drei Ziele · Ausschnitt"
+     }
+    ],
+    "options": [
+     {
+      "id": "o0",
+      "label": "Карта с отмеченными местами"
+     },
+     {
+      "id": "o1",
+      "label": "Короткая подпись"
+     },
+     {
+      "id": "o2",
+      "label": "Открытый вопрос о поездке"
+     },
+     {
+      "id": "o3",
+      "label": "Только длинный текст с терминами"
+     }
+    ],
+    "answer": [
+     "o0",
+     "o1",
+     "o2"
+    ]
+   },
+   {
+    "id": "same",
+    "kind": "select",
+    "title": "Один человек читает и ищет ошибки",
+    "intro": "Как выразить цель без смены действующего лица?",
+    "success": "Читаю и ищу я сам: um ... zu подходит.",
+    "wrong": "В damit нужна личная форма, а weil вводит причину.",
+    "options": [
+     {
+      "id": "good",
+      "label": "Ich lese laut, um Fehler zu finden."
+     },
+     {
+      "id": "bad",
+      "label": "Ich lese laut, damit die Gäste Fehler zu finden."
+     },
+     {
+      "id": "reason",
+      "label": "Ich lese laut, weil Fehler."
+     }
+    ],
+    "answer": [
+     "good"
+    ]
+   },
+   {
+    "id": "test",
+    "kind": "negotiation",
+    "title": "Проверьте, работает ли замысел",
+    "intro": "Не считайте цель достигнутой до ответа гостя.",
+    "success": "Понимание подтверждено ответом, а не намерением.",
+    "wrong": "Уточните трудность посетителя.",
+    "start": "a",
+    "nodes": [
+     {
+      "id": "a",
+      "text": "Nachbar: Ich sehe die Karte. Was soll ich suchen?",
+      "choices": [
+       {
+        "label": "Finden Sie bitte Schleswig und Haithabu.",
+        "next": "b",
+        "feedback": "Посетителю дано конкретное действие."
+       }
+      ]
+     },
+     {
+      "id": "b",
+      "text": "Nachbar: Schleswig finde ich. Wo ist die zweite Markierung?",
+      "choices": [
+       {
+        "label": "Die Markierung ist zu klein. Ich mache sie deutlicher.",
+        "next": "end",
+        "feedback": "Материал улучшен по реальной трудности."
+       }
+      ]
+     },
+     {
+      "id": "end",
+      "text": "Nachbar: Jetzt erkenne ich beide Orte. Danke.",
+      "terminal": true,
+      "choices": []
+     }
+    ]
+   }
+  ]
+ },
+ "spy": []
+}

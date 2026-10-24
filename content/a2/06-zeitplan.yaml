@@ -1,0 +1,569 @@
+id: a2-zeitplan
+order: 6
+title: Wenn es regnet, bleiben wir im Café.
+ru: План с условием
+lede: У команды есть свободное окно, но время друзей не совпадает целиком. Нужно найти общую
+  часть расписаний и договориться о запасном месте. Новый план должен учитывать и время, и
+  условие на случай дождя.
+goals:
+  - Найти общее время по нескольким сообщениям
+  - Выразить условие с wenn
+  - Поставить глагол после придаточного в начале
+  - Понять перенос встречи и подтвердить его письменно
+grammar:
+  - "wenn: условие и порядок слов"
+exam:
+  - a2-lesen-2
+  - a2-hoeren-1
+  - a2-schreiben-2
+dialogues:
+  scene:
+    title: Wenn es regnet, bleiben wir im Café.
+    ru: План с условием
+    place: Kiel · учебные расписания команды · вымышленная учебная ситуация
+    people:
+      D:
+        name: Dana
+        voice: Anna
+      M:
+        name: Mateo
+        voice: Reed
+      E:
+        name: Elif
+        voice: Flo
+      H:
+        name: Hauke
+        voice: Rocko
+    lines:
+      - D: Ich kann am Sonntag von zwölf bis sechzehn Uhr.
+        ru: Я могу в воскресенье с двенадцати до шестнадцати.
+      - M: Ich habe am Sonntag frei. Ab dreizehn Uhr bin ich im Club.
+        ru: В воскресенье у меня выходной. С тринадцати я в клубе.
+      - E: Mein Kurs ist bis vierzehn Uhr. Danach habe ich Zeit.
+        ru: Мой курс до четырнадцати. Потом у меня есть время.
+      - H: Dann treffen wir uns um vierzehn Uhr.
+        ru: Тогда встретимся в четырнадцать.
+      - D: Und wenn es regnet?
+        ru: А если пойдёт дождь?
+      - M: Wenn es regnet, bleiben wir im Café.
+        ru: Если идёт дождь, останемся в кафе.
+      - E: Wenn das Wetter gut ist, gehen wir an die Förde.
+        ru: Если погода хорошая, пойдём к фьорду.
+      - H: Abgemacht. Ich bestätige die Zeit am Samstag.
+        ru: Договорились. Подтвержу время в субботу.
+words:
+  useful:
+    title: Wörter für die Aufgabe
+    ru: Слова для действия
+    items:
+      - de: wenn
+        ru: если; когда при условии
+      - de: die Bedingung
+        ru: условие
+        pl: Bedingungen
+      - de: bestätigen
+        ru: подтверждать
+      - de: verschieben
+        ru: переносить
+      - de: ab
+        ru: начиная с
+      - de: bis
+        ru: до
+      - de: frei haben
+        ru: иметь выходной
+      - de: die Verabredung
+        ru: договорённость о встрече
+        pl: Verabredungen
+      - de: der Zeitraum
+        ru: промежуток времени
+        pl: Zeiträume
+      - de: pünktlich
+        ru: вовремя
+      - de: stattfinden
+        ru: состояться
+      - de: abgemacht
+        ru: договорились
+tables:
+  rule:
+    title: "wenn: условие и порядок слов"
+    ru: Опора для решения
+    head:
+      - Beispiel
+      - Смысл и форма
+    ruCols:
+      - 1
+    rows:
+      - - Wir bleiben im Café, wenn es regnet.
+        - После wenn личная форма в конце.
+      - - Wenn es regnet, bleiben wir im Café.
+        - "После начального придаточного: bleiben wir."
+      - - Wenn das Wetter gut ist, gehen wir an die Förde.
+        - Условие выбирает ветку, а не новое время.
+tasks:
+  schedule:
+    kind: message
+    part: a2-lesen-2
+    title: Zeiten für Sonntag
+    from: Hauke
+    text: "Dana: 12–16 Uhr. Mateo: ab 13 Uhr. Elif: ab 14 Uhr. Treffen: 14–15 Uhr. Wenn es regnet,
+      bleiben wir im Café. Bei gutem Wetter gehen wir an die Förde. Die Zeit bleibt gleich."
+  phone:
+    kind: worksheet
+    part: a2-hoeren-1
+    format: notes
+    title: Bestätigung am Telefon
+    voice: Rocko
+    text: Hallo Dana, hier ist Hauke. Unser Treffen ist am Sonntag um vierzehn Uhr. Wir treffen uns
+      im Café, nicht am Bahnhof. Bring bitte die Liste mit. Ruf Elif am Samstag an. Danke!
+    questions:
+      - prompt: Tag
+        answers:
+          - Sonntag
+          - am Sonntag
+      - prompt: Zeit
+        answers:
+          - 14:00
+          - 14 Uhr
+          - vierzehn Uhr
+      - prompt: Ort
+        answers:
+          - Café
+          - im Café
+          - Cafe
+          - im Cafe
+      - prompt: Mitbringen
+        answers:
+          - Liste
+          - die Liste
+      - prompt: Elif anrufen am
+        answers:
+          - Samstag
+          - am Samstag
+  letter:
+    kind: message
+    part: a2-schreiben-2
+    title: Treffen bestätigen
+    from: Hauke
+    text: Bitte bestätige unser Treffen und deinen Plan für schlechtes Wetter.
+    situation: Wählen Sie drei von vier Punkten. Schreiben Sie circa 40 Wörter mit Anrede und Gruß.
+    choose: 3
+    points:
+      - Tag und Uhrzeit
+      - Treffpunkt
+      - Plan bei Regen
+      - Was bringen Sie mit?
+    sample:
+      - Hallo Hauke,
+      - Sonntag um 14 Uhr passt für mich. Ich komme ins Café. Wenn es regnet, bleiben wir dort.
+        Wir können unsere nächste Fahrt planen und Fotos ansehen. Bitte sag Elif Bescheid. Ich
+        freue mich auf unser Treffen.
+      - Viele Grüße
+steps:
+  - id: start
+    chapter: scene
+    title: Новое дело команды
+    beats:
+      - read: "У команды есть свободное окно, но время друзей не совпадает целиком. Нужно найти общую
+          часть расписаний и договориться о запасном месте. Новый план должен учитывать и
+          время, и условие на случай дождя. Все нужные условия даны в сцене: знания географии,
+          настоящих цен или расписаний не требуются. Сначала попробуйте понять, какого
+          результата добиваются друзья, затем слушайте реплики. На новом уровне важно не только
+          найти число или знакомое слово, но и связать несколько сведений."
+        point: План с условием
+        set:
+          view: dialogue
+          dialogue: scene
+          reveal: 4
+      - read: "Для встречи недостаточно выбрать время одного человека. Элиф свободна только после
+          курса, Дана — до шестнадцати, Матео будет в клубе с тринадцати. Общее окно начинается
+          в четырнадцать и заканчивается в шестнадцать. Затем друзья обсуждают условие: дождь
+          меняет место, но не отменяет договорённое время."
+        point: "wenn: условие и порядок слов"
+        set:
+          reveal: 8
+  - id: words
+    chapter: words
+    title: Слова, которые понадобятся
+    beats:
+      - read: "*Ab* обозначает начало доступности, *bis* — её конец. *Danach* связывает занятие с
+          последующим свободным временем. *Bestätigen* возвращается из первого урока:
+          обсуждение и подтверждение — разные действия. В игре придётся связать расписания и
+          новое сообщение, а не просто найти первое число."
+        point: Сначала используйте слово для решения; словарь остаётся справочником.
+        set:
+          view: words
+          words: useful
+          reveal: 6
+      - read: "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к
+          ситуации: какие слова обозначают человека, место, условие или уже выполненное
+          действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово
+          встретится снова в записке или разговоре, попробуйте восстановить его смысл до
+          подсказки."
+        point: Возвращайтесь к выражениям в сообщениях и новых действиях.
+        set:
+          reveal: 12
+  - id: grammar
+    chapter: grammar
+    title: "wenn: условие и порядок слов"
+    beats:
+      - read: "Придаточное с *wenn* задаёт условие. В нём *regnet* стоит в конце, как знакомая личная
+          форма после *weil*. Но смысл другой: *weil* объясняет причину, а *wenn* сообщает, при
+          каком условии выбирается действие. В нашем плане дождь ещё не объявлен фактом —
+          друзья заранее договариваются о варианте."
+        point: После wenn личная форма в конце.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: "Всё начальное придаточное занимает первую позицию главного предложения. Поэтому после
+          запятой сразу идёт *bleiben*, затем *wir*. Не добавляйте лишнюю первую позицию: *Wenn
+          es regnet, wir bleiben …* не соответствует этой модели. Сначала произнесите условие
+          целиком, потом назовите действие."
+        point: "После начального придаточного: bleiben wir."
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: Хорошая погода ведёт к прогулке, дождь — к кафе. Оба варианта относятся к одному
+          согласованному времени. Если сообщение меняет только место, не переносите вместе с
+          ним часы или день без основания. В заданиях часто проверяют именно то, что
+          изменилось, и то, что осталось прежним.
+        point: Условие выбирает ветку, а не новое время.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+  - id: frames
+    chapter: grammar
+    title: Как устроена реплика
+    beats:
+      - read: "Посмотрите, как условие занимает начало: *Wenn es regnet*. Личная форма главной части
+          *bleiben* оказывается сразу после него, а подлежащее *wir* следует за глаголом. После
+          *wenn* внутри условия глагол *regnet* уже стоит последним. В одном предложении
+          действуют два порядка, каждый в своей части."
+        point: "*Wenn es regnet, bleiben wir im Café.*"
+        set:
+          view: sentence
+          rows:
+            - de:
+                - Wenn es regnet,
+                - bleiben
+                - wir im Café.
+                - ""
+              ru: Если идёт дождь, мы остаёмся в кафе.
+  - id: check
+    chapter: practice
+    title: Проверьте смысл до подсказки
+    beats:
+      - question: После Wenn es regnet идёт wir bleiben или bleiben wir?
+        read: "*Bleiben wir*: всё придаточное уже заняло первую позицию. Порядок относится к главной
+          части, а не к одному слову *wenn*. Если поставить условие в конец, получится *Wir
+          bleiben im Café, wenn es regnet*. Смысл сохраняется, устройство начала меняется."
+        point: Начальное придаточное → глагол, затем подлежащее.
+        set:
+          view: table
+          table: rule
+      - question: Если из-за дождя выбрано кафе, встреча отменена?
+        read: "Нет. В этом плане дождь меняет место на кафе. Чтобы сделать вывод об отмене, нужно
+          отдельное сообщение. Сопоставляйте действие и условие: не добавляйте к источнику то,
+          что кажется привычным или логичным в другой ситуации."
+        point: Меняйте только те условия, которые названы в сообщении.
+        set:
+          view: table
+          table: rule
+  - id: exam-schedule
+    chapter: exam
+    title: Zeiten für Sonntag
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: schedule
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: schedule
+        set:
+          view: task
+          task: schedule
+          solved: true
+  - id: exam-phone
+    chapter: exam
+    title: Bestätigung am Telefon
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: phone
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: phone
+        set:
+          view: task
+          task: phone
+          solved: true
+  - id: exam-letter
+    chapter: exam
+    title: Treffen bestätigen
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: letter
+          reveal: 0
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: letter
+          reveal: 0
+        set:
+          view: task
+          task: letter
+          solved: true
+exercises:
+  - type: choice
+    q: Wenn es regnet, ___ wir im Café.
+    options:
+      - bleiben
+      - wir bleiben
+      - bleibt
+    answer: 0
+    why: Глагол сразу после придаточного.
+  - type: choice
+    q: Wir gehen spazieren, wenn das Wetter gut ___.
+    options:
+      - ist
+      - sein
+      - sind
+    answer: 0
+    why: Личная форма в конце.
+  - type: choice
+    q: "Условие вводит:"
+    options:
+      - wenn
+      - weil
+      - denn
+    answer: 0
+    why: "*Wenn* — условие."
+  - type: choice
+    q: "Причину вводит:"
+    options:
+      - weil
+      - wenn
+      - oder
+    answer: 0
+    why: "*Weil* — потому что."
+  - type: choice
+    q: Elif hat ___ 14 Uhr Zeit.
+    options:
+      - ab
+      - bis um ab
+      - von bis
+    answer: 0
+    why: Начало доступности.
+  - type: choice
+    q: Dana kann von 12 ___ 16 Uhr.
+    options:
+      - bis
+      - ab
+      - nach
+    answer: 0
+    why: Конец интервала.
+  - type: order
+    ru: Если идёт дождь, мы остаёмся в кафе.
+    de: Wenn es regnet, bleiben wir im Café.
+  - type: order
+    ru: Мы гуляем, если погода хорошая.
+    de: Wir gehen spazieren, wenn das Wetter gut ist.
+  - type: order
+    ru: У Элиф есть время с четырнадцати.
+    de: Elif hat ab vierzehn Uhr Zeit.
+  - type: order
+    ru: Время остаётся прежним.
+    de: Die Uhrzeit bleibt gleich.
+  - type: order
+    ru: Я подтверждаю нашу встречу.
+    de: Ich bestätige unser Treffen.
+  - type: order
+    ru: В воскресенье мы встречаемся в кафе.
+    de: Am Sonntag treffen wir uns im Café.
+case:
+  title: Nur das Wetter ändert sich
+  ru: Дождь меняет только место
+  intro: В дневнике оказались две версии сообщения. Установите, что подтверждено первоисточником.
+    Вывод зависит от языка, а не от личности автора.
+  people: {}
+  steps:
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Elif hat ab 14 Uhr Zeit. Dana hat bis 16 Uhr Zeit.
+          ru: Элиф свободна с 14:00. Дана свободна до 16:00.
+      question: Какое время входит в общее окно?
+      options:
+        - 13:00
+        - 14:30
+        - 17:00
+      answer: 1
+      right: 14:30 находится после начала Элиф и до конца Даны.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Wenn es regnet, bleiben wir im Café. Das Treffen beginnt um 14 Uhr.
+          ru: Если идёт дождь, остаёмся в кафе. Встреча начинается в 14:00.
+      question: Что меняет дождь?
+      options:
+        - Место
+        - День
+        - Время
+      answer: 0
+      right: В условии названо действие в кафе, время не изменено.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Wir treffen uns im Café, nicht am Bahnhof.
+          ru: Мы встречаемся в кафе, не у вокзала.
+      question: Где искать команду?
+      options:
+        - У вокзала
+        - В кафе
+        - У музея
+      answer: 1
+      right: "*Nicht* прямо исключает вокзал."
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+  ending: Запись исправлена по источникам. В следующей главе команда воспользуется
+    подтверждёнными сведениями для нового решения.
+adventure:
+  kind: sequence
+  title: Согласуйте время и запасной вариант
+  intro: У команды есть свободное окно, но время друзей не совпадает целиком. Нужно найти общую
+    часть расписаний и договориться о запасном месте. Новый план должен учитывать и время, и
+    условие на случай дождя.
+  ending: Встреча подтверждена, запасное место связано с условием, время сохранено. Теперь можно
+    уточнять бронирование для следующей поездки.
+  challenges:
+    - id: window
+      kind: clock
+      title: Найдите начало общего окна
+      intro: Поставьте самое раннее время, когда все трое свободны. Учитывайте и начало, и конец
+        доступности.
+      mode: reading
+      clue:
+        task: schedule
+      answer: 14:00
+      initial: 12:00
+      minuteStep: 5
+      success: С 14:00 все свободны; Дана остаётся доступна до 16:00.
+      wrong: Элиф свободна лишь с 14:00. Более раннее время не подходит всей группе.
+    - id: condition
+      kind: order
+      title: Соберите условный план
+      intro: «Если идёт дождь, мы остаёмся в кафе».
+      label: Реплика для команды
+      tokens:
+        - Wenn es regnet,
+        - bleiben
+        - wir
+        - im Café.
+      success: Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.
+      wrong: "Проверьте положение глагола и конец предложения: используйте все фрагменты."
+    - id: rain
+      kind: select
+      title: Выберите ветку для дождя
+      intro: В новом сообщении подтвердили дождь. Что делать по плану?
+      mode: reading
+      clue:
+        task: schedule
+      options:
+        - id: o0
+          label: im Café bleiben
+        - id: o1
+          label: das Treffen absagen
+        - id: o2
+          label: schon um 12 Uhr gehen
+      answer:
+        - o0
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."
+    - id: note
+      kind: note
+      title: Запишите подтверждение
+      intro: Телефонное сообщение уточняет место. Запишите время и место, не возвращайтесь к
+        обсуждённому вокзалу.
+      clue:
+        task: phone
+      fields:
+        - label: Uhrzeit
+          answers:
+            - 14:00
+            - 14 Uhr
+            - vierzehn Uhr
+        - label: Ort
+          answers:
+            - Café
+            - im Café
+            - Cafe
+            - im Cafe
+      success: Подтверждены 14:00 и кафе.
+      wrong: В записи *vierzehn Uhr*, место — кафе, вокзал исключён.
+    - id: unchanged
+      kind: select
+      title: Что остаётся прежним?
+      intro: При смене погоды меняется не весь план.
+      mode: reading
+      clue:
+        task: schedule
+      options:
+        - id: o0
+          label: Die Uhrzeit bleibt gleich.
+        - id: o1
+          label: Der Tag wird Samstag.
+        - id: o2
+          label: Alle müssen früher kommen.
+      answer:
+        - o0
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."

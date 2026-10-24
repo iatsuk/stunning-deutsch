@@ -1,0 +1,1643 @@
+{
+ "id": "b1-menschen",
+ "level": "b1",
+ "order": 2,
+ "title": "Wir suchen jemanden, der gern erzählt.",
+ "ru": "Описываем людей и выбираем помощника",
+ "lede": "Для FördeTreff нужны люди с разными интересами. Дана помогает найти подходящего собеседника для новых гостей. Читатель связывает описание человека с задачей, не делая выводов по имени или происхождению.",
+ "goals": [
+  "Описать человека через действие",
+  "Различить род исходного существительного и падеж внутри относительной части",
+  "Найти адресата по нескольким признакам",
+  "Пересказать чужое мнение о совместном досуге"
+ ],
+ "grammar": [
+  "Относительные предложения: der, die, das, den"
+ ],
+ "exam": [
+  "b1-lesen-2",
+  "b1-sprachbausteine-1",
+  "b1-sprechen-2"
+ ],
+ "chapters": [
+  {
+   "id": "scene",
+   "title": "Ситуация"
+  },
+  {
+   "id": "words",
+   "title": "Слова"
+  },
+  {
+   "id": "grammar",
+   "title": "Грамматика"
+  },
+  {
+   "id": "practice",
+   "title": "Проверка"
+  },
+  {
+   "id": "exam",
+   "title": "На экзамене"
+  }
+ ],
+ "dialogues": {
+  "scene": {
+   "title": "Wir suchen jemanden, der gern erzählt.",
+   "ru": "Описываем людей и выбираем помощника",
+   "place": "Kiel · клуб · вымышленная учебная ситуация",
+   "people": {
+    "D": {
+     "name": "Dana",
+     "voice": "Anna"
+    },
+    "M": {
+     "name": "Mateo",
+     "voice": "Reed"
+    },
+    "E": {
+     "name": "Elif",
+     "voice": "Flo"
+    },
+    "H": {
+     "name": "Hauke",
+     "voice": "Rocko"
+    }
+   },
+   "lines": [
+    {
+     "who": "D",
+     "de": "Wir suchen jemanden, der gern mit neuen Gästen spricht.",
+     "ru": "Мы ищем кого-то, кто любит разговаривать с новыми гостями.",
+     "audio": "audio/83328ad1e61d.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Dana ist eine Person, die gut zuhört.",
+     "ru": "Дана — человек, который умеет слушать.",
+     "audio": "audio/eb8b8a44a141.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Danke. Ich brauche aber auch jemanden, den ich um Hilfe bitten kann.",
+     "ru": "Спасибо. Но мне также нужен кто-то, кого я могу попросить о помощи.",
+     "audio": "audio/4af5682c4691.m4a"
+    },
+    {
+     "who": "E",
+     "de": "Mateo kann am Sonntag helfen. Er erzählt gern von seinen Reisen.",
+     "ru": "Матео может помочь в воскресенье. Он любит рассказывать о поездках.",
+     "audio": "audio/d5cef691f1ed.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Ja. Aber die Fotos, die wir zeigen, wählen wir zusammen aus.",
+     "ru": "Да. Но фотографии, которые мы покажем, выберем вместе.",
+     "audio": "audio/35caf7fcc618.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Das ist ein Projekt, das viele kleine Beiträge braucht.",
+     "ru": "Это проект, которому нужно много небольших вкладов.",
+     "audio": "audio/356ceb8b8860.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Dann fragen wir zuerst nach den Interessen und erst danach nach einer Aufgabe.",
+     "ru": "Тогда сначала спросим об интересах, а уже потом о задаче.",
+     "audio": "audio/b3351cdcfe9f.m4a"
+    },
+    {
+     "who": "E",
+     "de": "Gut. Niemand muss eine Rolle übernehmen, die nicht passt.",
+     "ru": "Хорошо. Никто не обязан брать роль, которая ему не подходит.",
+     "audio": "audio/07ddd015dc05.m4a"
+    }
+   ]
+  }
+ },
+ "words": {
+  "useful": {
+   "title": "Wörter für die Aufgabe",
+   "ru": "Слова для действия",
+   "items": [
+    {
+     "de": "zuhören",
+     "ru": "слушать внимательно",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/d1244e9c9519.m4a"
+    },
+    {
+     "de": "erzählen",
+     "ru": "рассказывать",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/a6a690a817a7.m4a"
+    },
+    {
+     "de": "erklären",
+     "ru": "объяснять",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/19d249184f57.m4a"
+    },
+    {
+     "de": "auswählen",
+     "ru": "выбирать",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/a6743fefd03e.m4a"
+    },
+    {
+     "de": "die Beschreibung",
+     "ru": "описание",
+     "gender": "f",
+     "plural": "Beschreibungen",
+     "audio": "audio/28baa6e603ee.m4a"
+    },
+    {
+     "de": "das Interesse",
+     "ru": "интерес",
+     "gender": "n",
+     "plural": "Interessen",
+     "audio": "audio/b3a5e456e781.m4a"
+    },
+    {
+     "de": "der Helfer",
+     "ru": "помощник",
+     "gender": "m",
+     "plural": "Helfer",
+     "audio": "audio/ee49bcc97fcb.m4a"
+    },
+    {
+     "de": "die Helferin",
+     "ru": "помощница",
+     "gender": "f",
+     "plural": "Helferinnen",
+     "audio": "audio/e625b4c76aae.m4a"
+    },
+    {
+     "de": "der Gesprächspartner",
+     "ru": "собеседник",
+     "gender": "m",
+     "plural": "Gesprächspartner",
+     "audio": "audio/0096dd8af458.m4a"
+    },
+    {
+     "de": "die Rolle",
+     "ru": "роль",
+     "gender": "f",
+     "plural": "Rollen",
+     "audio": "audio/6634d2387e91.m4a"
+    },
+    {
+     "de": "die Eigenschaft",
+     "ru": "качество",
+     "gender": "f",
+     "plural": "Eigenschaften",
+     "audio": "audio/c8077b11475b.m4a"
+    },
+    {
+     "de": "jemanden um Hilfe bitten",
+     "ru": "попросить кого-то о помощи",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/3b6e52d0bb8a.m4a"
+    },
+    {
+     "de": "zuverlässig",
+     "ru": "надёжный",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/ef3f319288c0.m4a"
+    },
+    {
+     "de": "geduldig",
+     "ru": "терпеливый",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/05810d0d67ff.m4a"
+    },
+    {
+     "de": "freiwillig",
+     "ru": "добровольно",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/0411b1de2334.m4a"
+    },
+    {
+     "de": "gemeinsame Interessen",
+     "ru": "общие интересы",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/a0647d761b50.m4a"
+    }
+   ]
+  }
+ },
+ "tables": {
+  "rule": {
+   "title": "Относительные предложения: der, die, das, den",
+   "ru": "Опора для решения",
+   "head": [
+    "Beispiel",
+    "Смысл и форма"
+   ],
+   "rows": [
+    [
+     "Ein Helfer, der zuhört. Eine Person, die zuhört.",
+     "Род определяет существительное перед запятой."
+    ],
+    [
+     "Ein Helfer, den ich kenne.",
+     "Падеж задаёт роль внутри относительной части."
+    ],
+    [
+     "Die Fotos, die wir zeigen, sind aus Kiel.",
+     "Личный глагол относительной части стоит в конце."
+    ]
+   ],
+   "ruCols": [
+    1
+   ]
+  }
+ },
+ "tasks": {
+  "profiles": {
+   "kind": "message",
+   "part": "b1-lesen-2",
+   "title": "Interessen der Gruppe · Leseausschnitt",
+   "text": "Dana hört gern zu und begrüßt neue Gäste. Mateo erzählt gern von Reisen, hat aber samstags keine freie Zeit. Elif wählt Fotos aus und erklärt ihre Auswahl. Hauke hat beim Club nachgefragt, aber noch keine Raumzusage bekommen. Für Sonntag sucht die Gruppe jemanden, der Geschichten erzählt. Die Person, die die Fotos erklärt, ist Elif.",
+   "sample": []
+  },
+  "gaps": {
+   "kind": "worksheet",
+   "part": "b1-sprachbausteine-1",
+   "format": "cloze",
+   "title": "Ein Brief mit zehn Lücken",
+   "situation": "Wählen Sie für jede Lücke die passende Form. Lesen Sie den Brief als zusammenhängenden Text.",
+   "text": "Liebe Dana, wir suchen einen Helfer, [[1]] gern erzählt. Kennst du jemanden, [[2]] wir fragen können? Die Bilder, [[3]] wir zeigen, sind schon ausgewählt. Elif ist die Person, [[4]] die Auswahl erklärt. Das Treffen, [[5]] wir planen, hat noch keinen Termin. Mateo kann helfen, [[6]] er am Sonntag frei hat. Deshalb [[7]] wir ihn zuerst. Ich finde, [[8]] jeder eine kleine Aufgabe übernehmen kann. Zuerst sammeln wir Ideen, [[9]] schreiben wir den Plan. Der Raum ist [[10]] nicht bestätigt. Viele Grüße, Hauke",
+   "questions": [
+    {
+     "prompt": "Lücke",
+     "answers": [
+      "der"
+     ],
+     "options": [
+      "der",
+      "den",
+      "das"
+     ]
+    },
+    {
+     "prompt": "Lücke",
+     "answers": [
+      "den"
+     ],
+     "options": [
+      "die",
+      "der",
+      "den"
+     ]
+    },
+    {
+     "prompt": "Lücke",
+     "answers": [
+      "die"
+     ],
+     "options": [
+      "das",
+      "die",
+      "der"
+     ]
+    },
+    {
+     "prompt": "Lücke",
+     "answers": [
+      "die"
+     ],
+     "options": [
+      "die",
+      "den",
+      "das"
+     ]
+    },
+    {
+     "prompt": "Lücke",
+     "answers": [
+      "das"
+     ],
+     "options": [
+      "den",
+      "der",
+      "das"
+     ]
+    },
+    {
+     "prompt": "Lücke",
+     "answers": [
+      "weil"
+     ],
+     "options": [
+      "deshalb",
+      "denn",
+      "weil"
+     ]
+    },
+    {
+     "prompt": "Lücke",
+     "answers": [
+      "fragen"
+     ],
+     "options": [
+      "fragen",
+      "wir fragen",
+      "fragt"
+     ]
+    },
+    {
+     "prompt": "Lücke",
+     "answers": [
+      "dass"
+     ],
+     "options": [
+      "deshalb",
+      "dass",
+      "denn"
+     ]
+    },
+    {
+     "prompt": "Lücke",
+     "answers": [
+      "danach"
+     ],
+     "options": [
+      "weil",
+      "dass",
+      "danach"
+     ]
+    },
+    {
+     "prompt": "Lücke",
+     "answers": [
+      "noch"
+     ],
+     "options": [
+      "noch",
+      "schon",
+      "nie"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "talk": {
+   "kind": "card",
+   "part": "b1-sprechen-2",
+   "title": "Freizeit gemeinsam oder allein?",
+   "theme": "Gemeinsame Interessen",
+   "word": "Berichten · Meinung · eigenes Beispiel · Rückfrage",
+   "situation": "Lesen Sie nur Ihre Karte. Berichten Sie Ihrem Gegenüber über die Meinung. Sagen Sie dann Ihre eigene Meinung und erzählen Sie von einer Erfahrung.",
+   "roles": [
+    {
+     "title": "Person A",
+     "text": "Eine Person schreibt: Ich verbringe freie Zeit gern mit anderen. Eine Gruppe, die ähnliche Interessen hat, gibt mir neue Ideen. Ich muss nicht alles allein organisieren. Wichtig ist, dass jeder mitentscheiden kann."
+    },
+    {
+     "title": "Person B",
+     "text": "Eine andere Person schreibt: Ich mache in meiner Freizeit gern etwas allein. Dann kann ich selbst entscheiden, wie lange ich bleibe. In einer großen Gruppe dauert die Planung oft zu lange. Manchmal treffe ich aber gern einen Freund."
+    }
+   ],
+   "sample": [
+    {
+     "de": "Auf meiner Karte geht es um gemeinsame Freizeit. Die Person bekommt in einer Gruppe neue Ideen.",
+     "audio": "audio/865c9f4fd1c4.m4a"
+    },
+    {
+     "de": "Ich verstehe das. Mir ist auch wichtig, dass jeder mitentscheiden kann. Wie ist das bei dir?",
+     "audio": "audio/865af1a81485.m4a"
+    }
+   ]
+  }
+ },
+ "beats": [
+  {
+   "id": "start-1",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 0,
+   "read": "Для FördeTreff нужны люди с разными интересами. Дана помогает найти подходящего собеседника для новых гостей. Читатель связывает описание человека с задачей, не делая выводов по имени или происхождению. Все нужные условия даны в сцене: знания географии, настоящих цен или расписаний не требуются. Сначала попробуйте понять, какого результата добиваются друзья, затем слушайте реплики. На новом уровне важно не только найти число или знакомое слово, но и связать несколько сведений.",
+   "point": "Описываем людей и выбираем помощника",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 4,
+    "fresh": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "start-2",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 1,
+   "read": "Описание не является ярлыком. Из реплик нужно понять, кто любит рассказывать, кто слушает и какая помощь действительно нужна. Относительная часть уточняет существительное: *eine Person, die zuhört*. Род берём из этого существительного, а роль местоимения определяем внутри новой части. Один человек может подходить нескольким задачам. Сначала используйте подтверждённые интересы, затем уточните согласие.",
+   "point": "Относительные предложения: der, die, das, den",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 8,
+    "fresh": [
+     4,
+     5,
+     6,
+     7
+    ]
+   }
+  },
+  {
+   "id": "words-1",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 0,
+   "read": "Полезно описывать действие вместо общей оценки «хороший человек»: слушает, объясняет, рассказывает. *Jemanden um Hilfe bitten* — попросить кого-то о помощи. Это готовая фраза; сейчас важен объект *jemanden*, который в относительной части станет *den*. Слова обозначают реальные действия в игре, поэтому возвращайтесь к ним при выборе собеседника.",
+   "point": "Сначала используйте слово для решения; словарь остаётся справочником.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 6,
+    "words": "useful"
+   }
+  },
+  {
+   "id": "words-2",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 1,
+   "read": "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к ситуации: какие слова обозначают человека, место, условие или уже выполненное действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово встретится снова в записке или разговоре, попробуйте восстановить его смысл до подсказки.",
+   "point": "Возвращайтесь к выражениям в сообщениях и новых действиях.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 16,
+    "words": "useful",
+    "fresh": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   }
+  },
+  {
+   "id": "grammar-1",
+   "step": "grammar",
+   "stepTitle": "Относительные предложения: der, die, das, den",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "Один и тот же человек может быть *ein Helfer* или *eine Person*. Поэтому форма меняется не из-за биологического пола, а из-за выбранного существительного. После *Person* ставим *die*, после *Helfer* — *der*. Относительная часть уточняет, о каком человеке идёт речь. Не отделяйте её от существительного так далеко, чтобы слушатель потерял связь.",
+   "point": "Род определяет существительное перед запятой.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "grammar-2",
+   "step": "grammar",
+   "stepTitle": "Относительные предложения: der, die, das, den",
+   "chapterIndex": 2,
+   "indexInStep": 1,
+   "read": "Внутри части *ich kenne den Helfer* подлежащее — *ich*, помощник является объектом. Поэтому мужской род получает *den*. Сравните: *der mich kennt* — он знает меня; *den ich kenne* — я знаю его. Для выбора помощника это разная информация. Внешний падеж существительного не нужно механически копировать в относительную часть.",
+   "point": "Падеж задаёт роль внутри относительной части.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "grammar-3",
+   "step": "grammar",
+   "stepTitle": "Относительные предложения: der, die, das, den",
+   "chapterIndex": 2,
+   "indexInStep": 2,
+   "read": "Рамку относительной части выделяют запятые. В ней *wir* является подлежащим, фотографии — объектом, *zeigen* закрывает часть. Основное предложение продолжается после второй запятой. Сначала прочитайте его без уточнения: *Die Fotos sind aus Kiel*. Затем верните информацию о том, какие именно фотографии показывает группа.",
+   "point": "Личный глагол относительной части стоит в конце.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "frames-1",
+   "step": "frames",
+   "stepTitle": "Как устроена реплика",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "В главной части сообщаем, что ищем помощника. В уточнении говорим, какое действие он выполняет: *der gern erzählt*. Оставьте личный глагол в конце относительной части. Чтобы проверить падеж, восстановите простую фразу: *Der Helfer erzählt*. Здесь нужен Nominativ. Если действие выполняю я — *ich kenne ihn* — модель изменится.",
+   "point": "*Wir suchen einen Helfer, der gern erzählt.*",
+   "scene": {
+    "view": "sentence",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        }
+       ],
+       [
+        {
+         "key": "suchen",
+         "text": "suchen"
+        }
+       ],
+       [
+        {
+         "key": "einen",
+         "text": "einen"
+        },
+        {
+         "key": "helfer",
+         "text": "Helfer,"
+        },
+        {
+         "key": "der",
+         "text": "der"
+        },
+        {
+         "key": "gern",
+         "text": "gern"
+        }
+       ],
+       [
+        {
+         "key": "erzählt",
+         "text": "erzählt"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir suchen einen Helfer, der gern erzählt.",
+      "ru": "Мы ищем помощника, который любит рассказывать.",
+      "audio": "audio/b63e2560cbb6.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-1",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 0,
+   "read": "Нет. В первом случае он знает меня, во втором я знаю его. Не ориентируйтесь только на знакомое существительное: найдите, кто выполняет действие внутри уточнения. Это поможет не отправить просьбу человеку, о котором в источнике сказано совсем другое.",
+   "point": "*der mich kennt* ≠ *den ich kenne*.",
+   "question": "«Der mich kennt» и «den ich kenne» описывают одну связь?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        }
+       ],
+       [
+        {
+         "key": "suchen",
+         "text": "suchen"
+        }
+       ],
+       [
+        {
+         "key": "einen",
+         "text": "einen"
+        },
+        {
+         "key": "helfer",
+         "text": "Helfer,"
+        },
+        {
+         "key": "der",
+         "text": "der"
+        },
+        {
+         "key": "gern",
+         "text": "gern"
+        }
+       ],
+       [
+        {
+         "key": "erzählt",
+         "text": "erzählt"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir suchen einen Helfer, der gern erzählt.",
+      "ru": "Мы ищем помощника, который любит рассказывать.",
+      "audio": "audio/b63e2560cbb6.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-2",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 1,
+   "read": "Потому что относительное местоимение согласуется с существительным *Person*, а не выбирается по полу человека. Та же логика работает с *das Mitglied*: средний род слова не сообщает пол участника. Используйте форму выбранного существительного, затем определите падеж внутри новой части.",
+   "point": "Род слова и роль внутри части проверяются отдельно.",
+   "question": "Почему о мужчине можно сказать «eine Person, die …»?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        }
+       ],
+       [
+        {
+         "key": "suchen",
+         "text": "suchen"
+        }
+       ],
+       [
+        {
+         "key": "einen",
+         "text": "einen"
+        },
+        {
+         "key": "helfer",
+         "text": "Helfer,"
+        },
+        {
+         "key": "der",
+         "text": "der"
+        },
+        {
+         "key": "gern",
+         "text": "gern"
+        }
+       ],
+       [
+        {
+         "key": "erzählt",
+         "text": "erzählt"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir suchen einen Helfer, der gern erzählt.",
+      "ru": "Мы ищем помощника, который любит рассказывать.",
+      "audio": "audio/b63e2560cbb6.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "exam-profiles-1",
+   "step": "exam-profiles",
+   "stepTitle": "Interessen der Gruppe · Leseausschnitt",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным текстом: объясните, какой фрагмент подтверждает каждое решение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        }
+       ],
+       [
+        {
+         "key": "suchen",
+         "text": "suchen"
+        }
+       ],
+       [
+        {
+         "key": "einen",
+         "text": "einen"
+        },
+        {
+         "key": "helfer",
+         "text": "Helfer,"
+        },
+        {
+         "key": "der",
+         "text": "der"
+        },
+        {
+         "key": "gern",
+         "text": "gern"
+        }
+       ],
+       [
+        {
+         "key": "erzählt",
+         "text": "erzählt"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir suchen einen Helfer, der gern erzählt.",
+      "ru": "Мы ищем помощника, который любит рассказывать.",
+      "audio": "audio/b63e2560cbb6.m4a"
+     }
+    ],
+    "task": "profiles"
+   }
+  },
+  {
+   "id": "exam-profiles-2",
+   "step": "exam-profiles",
+   "stepTitle": "Interessen der Gruppe · Leseausschnitt",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        }
+       ],
+       [
+        {
+         "key": "suchen",
+         "text": "suchen"
+        }
+       ],
+       [
+        {
+         "key": "einen",
+         "text": "einen"
+        },
+        {
+         "key": "helfer",
+         "text": "Helfer,"
+        },
+        {
+         "key": "der",
+         "text": "der"
+        },
+        {
+         "key": "gern",
+         "text": "gern"
+        }
+       ],
+       [
+        {
+         "key": "erzählt",
+         "text": "erzählt"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir suchen einen Helfer, der gern erzählt.",
+      "ru": "Мы ищем помощника, который любит рассказывать.",
+      "audio": "audio/b63e2560cbb6.m4a"
+     }
+    ],
+    "task": "profiles"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        }
+       ],
+       [
+        {
+         "key": "suchen",
+         "text": "suchen"
+        }
+       ],
+       [
+        {
+         "key": "einen",
+         "text": "einen"
+        },
+        {
+         "key": "helfer",
+         "text": "Helfer,"
+        },
+        {
+         "key": "der",
+         "text": "der"
+        },
+        {
+         "key": "gern",
+         "text": "gern"
+        }
+       ],
+       [
+        {
+         "key": "erzählt",
+         "text": "erzählt"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir suchen einen Helfer, der gern erzählt.",
+      "ru": "Мы ищем помощника, который любит рассказывать.",
+      "audio": "audio/b63e2560cbb6.m4a"
+     }
+    ],
+    "task": "profiles",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-gaps-1",
+   "step": "exam-gaps",
+   "stepTitle": "Ein Brief mit zehn Lücken",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным текстом: объясните, какой фрагмент подтверждает каждое решение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        }
+       ],
+       [
+        {
+         "key": "suchen",
+         "text": "suchen"
+        }
+       ],
+       [
+        {
+         "key": "einen",
+         "text": "einen"
+        },
+        {
+         "key": "helfer",
+         "text": "Helfer,"
+        },
+        {
+         "key": "der",
+         "text": "der"
+        },
+        {
+         "key": "gern",
+         "text": "gern"
+        }
+       ],
+       [
+        {
+         "key": "erzählt",
+         "text": "erzählt"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir suchen einen Helfer, der gern erzählt.",
+      "ru": "Мы ищем помощника, который любит рассказывать.",
+      "audio": "audio/b63e2560cbb6.m4a"
+     }
+    ],
+    "task": "gaps"
+   }
+  },
+  {
+   "id": "exam-gaps-2",
+   "step": "exam-gaps",
+   "stepTitle": "Ein Brief mit zehn Lücken",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        }
+       ],
+       [
+        {
+         "key": "suchen",
+         "text": "suchen"
+        }
+       ],
+       [
+        {
+         "key": "einen",
+         "text": "einen"
+        },
+        {
+         "key": "helfer",
+         "text": "Helfer,"
+        },
+        {
+         "key": "der",
+         "text": "der"
+        },
+        {
+         "key": "gern",
+         "text": "gern"
+        }
+       ],
+       [
+        {
+         "key": "erzählt",
+         "text": "erzählt"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir suchen einen Helfer, der gern erzählt.",
+      "ru": "Мы ищем помощника, который любит рассказывать.",
+      "audio": "audio/b63e2560cbb6.m4a"
+     }
+    ],
+    "task": "gaps"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        }
+       ],
+       [
+        {
+         "key": "suchen",
+         "text": "suchen"
+        }
+       ],
+       [
+        {
+         "key": "einen",
+         "text": "einen"
+        },
+        {
+         "key": "helfer",
+         "text": "Helfer,"
+        },
+        {
+         "key": "der",
+         "text": "der"
+        },
+        {
+         "key": "gern",
+         "text": "gern"
+        }
+       ],
+       [
+        {
+         "key": "erzählt",
+         "text": "erzählt"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir suchen einen Helfer, der gern erzählt.",
+      "ru": "Мы ищем помощника, который любит рассказывать.",
+      "audio": "audio/b63e2560cbb6.m4a"
+     }
+    ],
+    "task": "gaps",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-talk-1",
+   "step": "exam-talk",
+   "stepTitle": "Freizeit gemeinsam oder allein?",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным текстом: объясните, какой фрагмент подтверждает каждое решение.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        }
+       ],
+       [
+        {
+         "key": "suchen",
+         "text": "suchen"
+        }
+       ],
+       [
+        {
+         "key": "einen",
+         "text": "einen"
+        },
+        {
+         "key": "helfer",
+         "text": "Helfer,"
+        },
+        {
+         "key": "der",
+         "text": "der"
+        },
+        {
+         "key": "gern",
+         "text": "gern"
+        }
+       ],
+       [
+        {
+         "key": "erzählt",
+         "text": "erzählt"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir suchen einen Helfer, der gern erzählt.",
+      "ru": "Мы ищем помощника, который любит рассказывать.",
+      "audio": "audio/b63e2560cbb6.m4a"
+     }
+    ],
+    "task": "talk",
+    "reveal": 0
+   }
+  },
+  {
+   "id": "exam-talk-2",
+   "step": "exam-talk",
+   "stepTitle": "Freizeit gemeinsam oder allein?",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        }
+       ],
+       [
+        {
+         "key": "suchen",
+         "text": "suchen"
+        }
+       ],
+       [
+        {
+         "key": "einen",
+         "text": "einen"
+        },
+        {
+         "key": "helfer",
+         "text": "Helfer,"
+        },
+        {
+         "key": "der",
+         "text": "der"
+        },
+        {
+         "key": "gern",
+         "text": "gern"
+        }
+       ],
+       [
+        {
+         "key": "erzählt",
+         "text": "erzählt"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir suchen einen Helfer, der gern erzählt.",
+      "ru": "Мы ищем помощника, который любит рассказывать.",
+      "audio": "audio/b63e2560cbb6.m4a"
+     }
+    ],
+    "task": "talk",
+    "reveal": 0
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        }
+       ],
+       [
+        {
+         "key": "suchen",
+         "text": "suchen"
+        }
+       ],
+       [
+        {
+         "key": "einen",
+         "text": "einen"
+        },
+        {
+         "key": "helfer",
+         "text": "Helfer,"
+        },
+        {
+         "key": "der",
+         "text": "der"
+        },
+        {
+         "key": "gern",
+         "text": "gern"
+        }
+       ],
+       [
+        {
+         "key": "erzählt",
+         "text": "erzählt"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir suchen einen Helfer, der gern erzählt.",
+      "ru": "Мы ищем помощника, который любит рассказывать.",
+      "audio": "audio/b63e2560cbb6.m4a"
+     }
+    ],
+    "task": "talk",
+    "reveal": 0,
+    "solved": true
+   }
+  }
+ ],
+ "exercises": [
+  {
+   "id": "b1-menschen-1",
+   "type": "choice",
+   "q": "Ein Helfer, ___ gern erzählt.",
+   "options": [
+    "das",
+    "der",
+    "den"
+   ],
+   "answer": 1,
+   "why": "Он выполняет действие.",
+   "audio": "audio/c43055b2293e.m4a"
+  },
+  {
+   "id": "b1-menschen-2",
+   "type": "choice",
+   "q": "Ein Helfer, ___ ich kenne.",
+   "options": [
+    "das",
+    "den",
+    "der"
+   ],
+   "answer": 1,
+   "why": "Я знаю его: Akkusativ.",
+   "audio": "audio/c3ab9b24ef16.m4a"
+  },
+  {
+   "id": "b1-menschen-3",
+   "type": "choice",
+   "q": "Eine Person, ___ zuhört.",
+   "options": [
+    "der",
+    "das",
+    "die"
+   ],
+   "answer": 2,
+   "why": "Person — женский род.",
+   "audio": "audio/22e0cf07a0d9.m4a"
+  },
+  {
+   "id": "b1-menschen-4",
+   "type": "choice",
+   "q": "Das Projekt, ___ wir planen.",
+   "options": [
+    "der",
+    "das",
+    "den"
+   ],
+   "answer": 1,
+   "why": "Средний род в Akkusativ.",
+   "audio": "audio/37721f3e4d91.m4a"
+  },
+  {
+   "id": "b1-menschen-5",
+   "type": "choice",
+   "q": "Die Bilder, ___ wir zeigen.",
+   "options": [
+    "den",
+    "die",
+    "das"
+   ],
+   "answer": 1,
+   "why": "Множественное число.",
+   "audio": "audio/c22df6cdafd4.m4a"
+  },
+  {
+   "id": "b1-menschen-6",
+   "type": "choice",
+   "q": "Wir fragen Mateo, weil er am Sonntag frei ___.",
+   "options": [
+    "haben",
+    "hast",
+    "hat"
+   ],
+   "answer": 2,
+   "why": "Личная форма в конце.",
+   "audio": "audio/12ed5b35d750.m4a"
+  },
+  {
+   "id": "b1-menschen-7",
+   "type": "order",
+   "ru": "Мы ищем помощника, который любит рассказывать.",
+   "de": "Wir suchen einen Helfer, der gern erzählt.",
+   "audio": "audio/b63e2560cbb6.m4a"
+  },
+  {
+   "id": "b1-menschen-8",
+   "type": "order",
+   "ru": "Это человек, который внимательно слушает.",
+   "de": "Das ist eine Person, die gut zuhört.",
+   "audio": "audio/251244f92080.m4a"
+  },
+  {
+   "id": "b1-menschen-9",
+   "type": "order",
+   "ru": "Я знаю помощника, которого ты ищешь.",
+   "de": "Ich kenne den Helfer, den du suchst.",
+   "audio": "audio/219325646729.m4a"
+  },
+  {
+   "id": "b1-menschen-10",
+   "type": "order",
+   "ru": "Фотографии, которые мы показываем, из Киля.",
+   "de": "Die Bilder, die wir zeigen, sind aus Kiel.",
+   "audio": "audio/f04c103b9726.m4a"
+  },
+  {
+   "id": "b1-menschen-11",
+   "type": "order",
+   "ru": "Проекту, который мы планируем, нужно время.",
+   "de": "Das Projekt, das wir planen, braucht Zeit.",
+   "audio": "audio/b3f25233d078.m4a"
+  },
+  {
+   "id": "b1-menschen-12",
+   "type": "order",
+   "ru": "Матео может помочь в воскресенье.",
+   "de": "Mateo kann am Sonntag helfen.",
+   "audio": "audio/c137fbf79f76.m4a"
+  }
+ ],
+ "case": {
+  "title": "Wer kennt wen?",
+  "ru": "Сверка дневника",
+  "intro": "В пересказе перепутали того, кто знает человека, и того, кого знают. Проверьте связи.",
+  "people": {},
+  "steps": [
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Das ist ein Helfer, den Dana kennt.",
+      "ru": "Это помощник, которого знает Дана."
+     }
+    ],
+    "question": "Кто кого знает?",
+    "options": [
+     "Никто не знаком",
+     "Дана знает помощника",
+     "Помощник знает Дану"
+    ],
+    "answer": 1,
+    "right": "Подлежащее в уточнении — Dana.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Die Person, die die Fotoauswahl erklärt, ist Elif.",
+      "ru": "Человек, который объясняет выбор фотографий, — Элиф."
+     }
+    ],
+    "question": "Кому передать вопрос о выборе фото?",
+    "options": [
+     "Элиф",
+     "Любому гостю",
+     "Только сотруднику клуба"
+    ],
+    "answer": 0,
+    "right": "Описание указывает конкретного человека.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Mateo kann am Sonntag helfen. Er hat noch nicht zugesagt.",
+      "ru": "Матео может помочь в воскресенье. Он ещё не согласился."
+     }
+    ],
+    "question": "Какая запись точна?",
+    "options": [
+     "Можно спросить; согласия ещё нет",
+     "Он отказался",
+     "Участие подтверждено"
+    ],
+    "answer": 0,
+    "right": "Возможность не равна согласию.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   }
+  ],
+  "ending": "Запись исправлена по источникам. В следующей главе команда воспользуется подтверждёнными сведениями для нового решения."
+ },
+ "adventure": {
+  "kind": "sequence",
+  "title": "Найдите подходящего собеседника",
+  "intro": "Для FördeTreff нужны люди с разными интересами. Дана помогает найти подходящего собеседника для новых гостей. Читатель связывает описание человека с задачей, не делая выводов по имени или происхождению.",
+  "ending": "Задачи связаны с интересами и возможностями, а описания не превратились в ярлыки. Следующий шаг — подобрать обучение и время под реальные условия участников.",
+  "challenges": [
+   {
+    "id": "people",
+    "kind": "match",
+    "title": "Кто подходит к описанию?",
+    "intro": "Сопоставьте действие с человеком по сообщению.",
+    "success": "Описания подтверждены действиями.",
+    "wrong": "Различайте рассказы о поездках и объяснение выбора фотографий.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Dana hört gern zu und begrüßt neue Gäste. Mateo erzählt gern von Reisen, hat aber samstags keine freie Zeit. Elif wählt Fotos aus und erklärt ihre Auswahl. Hauke hat beim Club nachgefragt, aber noch keine Raumzusage bekommen. Für Sonntag sucht die Gruppe jemanden, der Geschichten erzählt. Die Person, die die Fotos erklärt, ist Elif.",
+      "name": "Interessen der Gruppe · Leseausschnitt"
+     }
+    ],
+    "options": [
+     {
+      "id": "d",
+      "label": "Dana"
+     },
+     {
+      "id": "e",
+      "label": "Elif"
+     },
+     {
+      "id": "m",
+      "label": "Mateo"
+     }
+    ],
+    "slots": [
+     {
+      "id": "g",
+      "label": "die Person, die Gäste begrüßt",
+      "answer": "d"
+     },
+     {
+      "id": "p",
+      "label": "die Person, die die Fotoauswahl erklärt",
+      "answer": "e"
+     },
+     {
+      "id": "s",
+      "label": "der Helfer, der gern von Reisen erzählt",
+      "answer": "m"
+     }
+    ]
+   },
+   {
+    "id": "relative",
+    "kind": "order",
+    "title": "Представьте помощника",
+    "intro": "Скажите, кого ищет группа.",
+    "success": "Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.",
+    "wrong": "Проверьте положение глагола и конец предложения: используйте все фрагменты.",
+    "tokens": [
+     "Wir suchen",
+     "einen Helfer,",
+     "der gern",
+     "erzählt."
+    ],
+    "label": "Реплика для команды"
+   },
+   {
+    "id": "day",
+    "kind": "select",
+    "title": "Учтите ограничение",
+    "intro": "Кого можно спросить о рассказе в воскресенье?",
+    "success": "Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы одно из них.",
+    "wrong": "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание и адресата.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Dana hört gern zu und begrüßt neue Gäste. Mateo erzählt gern von Reisen, hat aber samstags keine freie Zeit. Elif wählt Fotos aus und erklärt ihre Auswahl. Hauke hat beim Club nachgefragt, aber noch keine Raumzusage bekommen. Für Sonntag sucht die Gruppe jemanden, der Geschichten erzählt. Die Person, die die Fotos erklärt, ist Elif.",
+      "name": "Interessen der Gruppe · Leseausschnitt"
+     }
+    ],
+    "options": [
+     {
+      "id": "o0",
+      "label": "Mateo"
+     },
+     {
+      "id": "o1",
+      "label": "Mateo am Samstagabend"
+     },
+     {
+      "id": "o2",
+      "label": "Alle haben schon zugesagt."
+     }
+    ],
+    "answer": [
+     "o0"
+    ]
+   },
+   {
+    "id": "meaning",
+    "kind": "select",
+    "title": "Не поменяйте направление связи",
+    "intro": "Вы знаете человека: «ein Helfer, den ich kenne». Какой смысл нужно сохранить?",
+    "success": "Объект внутри части определён верно.",
+    "wrong": "В части подлежащее ich, помощник — объект.",
+    "options": [
+     {
+      "id": "a",
+      "label": "Я знаю помощника."
+     },
+     {
+      "id": "b",
+      "label": "Помощник знает меня."
+     },
+     {
+      "id": "c",
+      "label": "Никто никого не знает."
+     }
+    ],
+    "answer": [
+     "a"
+    ]
+   },
+   {
+    "id": "note",
+    "kind": "note",
+    "title": "Подпишите выбранную роль",
+    "intro": "По исходному сообщению запишите, кто объясняет выбор фотографий.",
+    "success": "Запись соответствует конкретному описанию.",
+    "wrong": "О выборе фотографий рассказывает Элиф.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Dana hört gern zu und begrüßt neue Gäste. Mateo erzählt gern von Reisen, hat aber samstags keine freie Zeit. Elif wählt Fotos aus und erklärt ihre Auswahl. Hauke hat beim Club nachgefragt, aber noch keine Raumzusage bekommen. Für Sonntag sucht die Gruppe jemanden, der Geschichten erzählt. Die Person, die die Fotos erklärt, ist Elif.",
+      "name": "Interessen der Gruppe · Leseausschnitt"
+     }
+    ],
+    "fields": [
+     {
+      "label": "Fotoauswahl erklären: Name",
+      "answers": [
+       "Elif"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "spy": []
+}

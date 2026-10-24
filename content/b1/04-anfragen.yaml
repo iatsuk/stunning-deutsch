@@ -1,0 +1,673 @@
+id: b1-anfragen
+order: 4
+title: Wir haben vor, ein Treffen zu organisieren.
+ru: Запрашиваем помещение и уточняем условия
+lede: Хауке готовит запрос на помещение для осенней встречи. Предлагаемый срок — воскресенье 18
+  октября, 15–18 часов, 18 гостей. Это учебный календарь. Команда должна назвать условия и
+  получить ответ, прежде чем сообщать гостям окончательный адрес.
+goals:
+  - Связать намерение с инфинитивом zu
+  - Составить запрос с четырьмя обязательными пунктами
+  - Отделить просьбу от подтверждения
+  - Согласовать содержание письма
+grammar:
+  - "Infinitiv mit zu: vorhaben, versuchen, Zeit haben"
+exam:
+  - b1-schreiben-1
+  - b1-lesen-2
+  - b1-sprachbausteine-2
+  - b1-sprechen-3
+dialogues:
+  scene:
+    title: Wir haben vor, ein Treffen zu organisieren.
+    ru: Запрашиваем помещение и уточняем условия
+    place: Kiel · команда FördeTreff · вымышленная учебная ситуация
+    people:
+      D:
+        name: Dana
+        voice: Anna
+      M:
+        name: Mateo
+        voice: Reed
+      E:
+        name: Elif
+        voice: Flo
+      H:
+        name: Hauke
+        voice: Rocko
+    lines:
+      - H: Wir haben vor, im Oktober ein Treffen zu organisieren.
+        ru: Мы намерены организовать встречу в октябре.
+      - E: Ich habe Zeit, das Programm vorzubereiten.
+        ru: У меня есть время подготовить программу.
+      - D: Wir müssen zuerst nach einem Raum fragen.
+        ru: Сначала нам нужно спросить о помещении.
+      - H: Ich versuche, heute eine klare Anfrage zu schreiben.
+        ru: Я попробую сегодня написать понятный запрос.
+      - M: Denk bitte an die Kosten und die kleine Küche.
+        ru: Подумай, пожалуйста, о стоимости и маленькой кухне.
+      - E: Es ist wichtig, die Zahl der Gäste zu nennen.
+        ru: Важно назвать число гостей.
+      - D: Vergiss nicht, um eine Bestätigung zu bitten.
+        ru: Не забудь попросить подтверждение.
+      - H: Gut. Ich schicke die Anfrage ab. Eine Zusage haben wir noch nicht.
+        ru: Хорошо. Отправлю запрос. Согласия у нас пока нет.
+words:
+  useful:
+    title: Wörter für die Aufgabe
+    ru: Слова для действия
+    items:
+      - de: die Anfrage
+        ru: запрос
+        pl: Anfragen
+      - de: die Zusage
+        ru: согласие
+        pl: Zusagen
+      - de: die Ausstattung
+        ru: оснащение
+        pl: "-"
+      - de: die Veranstaltung
+        ru: мероприятие
+        pl: Veranstaltungen
+      - de: die Bestätigung
+        ru: подтверждение
+        pl: Bestätigungen
+      - de: die Küche
+        ru: кухня
+        pl: Küchen
+      - de: die Miete
+        ru: арендная плата
+        pl: Mieten
+      - de: der Kontakt
+        ru: контакт
+        pl: Kontakte
+      - de: der Gast
+        ru: гость
+        pl: Gäste
+      - de: vorhaben
+        ru: намереваться
+      - de: versuchen
+        ru: пытаться
+      - de: vorbereiten
+        ru: подготавливать
+      - de: abschicken
+        ru: отправлять
+      - de: um eine Antwort bitten
+        ru: просить об ответе
+      - de: Zahl nennen
+        ru: назвать количество
+tables:
+  rule:
+    title: "Infinitiv mit zu: vorhaben, versuchen, Zeit haben"
+    ru: Опора для решения
+    head:
+      - Beispiel
+      - Смысл и форма
+    ruCols:
+      - 1
+    rows:
+      - - Ich versuche, eine Anfrage zu schreiben.
+        - "После versuchen: zu + Infinitiv."
+      - - Ich habe Zeit, das Programm vorzubereiten.
+        - "Отделяемая приставка: vor + zu + bereiten."
+      - - Wir müssen zuerst nach einem Raum fragen.
+        - После модального müssen — Infinitiv без zu.
+tasks:
+  request:
+    kind: message
+    part: b1-schreiben-1
+    title: Eine vollständige Anfrage
+    text: "Sie organisieren einen nichtkommerziellen Nachbarschaftstreff. Schreiben Sie an Frau
+      Petersen. Gewünscht: Sonntag, 18. Oktober, 15–18 Uhr, 18 Gäste. Küche und Mietpreis sind
+      noch unklar."
+    points:
+      - Grund der Anfrage und Art der Veranstaltung
+      - Gewünschter Termin und Zahl der Gäste
+      - Zwei Fragen zur Ausstattung und zu den Kosten
+      - Bitte um Bestätigung und Kontakt
+    situation: Behandeln Sie alle vier Punkte. Schreiben Sie einen zusammenhängenden Brief mit
+      Anrede und Gruß. Etwa 100–120 Wörter sind hier ein Übungsziel, keine feste
+      telc-Mindestwortzahl.
+    sample:
+      - Sehr geehrte Frau Petersen, wir haben vor, einen kleinen Nachbarschaftstreff zu
+        organisieren. Dabei möchten wir Fotos aus der Region zeigen und miteinander Deutsch
+        sprechen. Wir suchen einen Raum für Sonntag, den 18. Oktober, von 15 bis 18 Uhr.
+        Insgesamt erwarten wir 18 Gäste. Ist der Raum an diesem Tag frei? Gibt es dort eine
+        kleine Küche? Außerdem möchten wir wissen, wie hoch die Miete ist. Wir versuchen, die
+        Kosten für alle niedrig zu halten. Bitte bestätigen Sie uns den Termin und die
+        Bedingungen schriftlich. Sie erreichen mich per E-Mail. Vielen Dank für Ihre Hilfe. Mit
+        freundlichen Grüßen Hauke
+  reply:
+    kind: message
+    part: b1-lesen-2
+    title: Eingang ist noch keine Zusage · Ausschnitt
+    text: Vielen Dank für Ihre Anfrage. Wir haben Ihre Nachricht erhalten und prüfen den Termin.
+      Bitte informieren Sie die Gäste noch nicht über den Raum. Die Kosten und die
+      Küchennutzung klären wir mit der Verwaltung. Eine verbindliche Antwort folgt nächste
+      Woche.
+  gaps:
+    kind: worksheet
+    part: b1-sprachbausteine-2
+    format: cloze
+    uniqueOptions: true
+    title: Zehn Lücken in einer Anfrage
+    text: Guten Tag, wir haben vor, ein Treffen [[1]] organisieren. Es soll [[2]] Sonntag
+      stattfinden und ist [[3]] unsere Nachbarn gedacht. Bitte teilen Sie uns mit, [[4]] der
+      Raum frei ist. Wir kommen [[5]] achtzehn Gästen [[6]] bringen eigene Getränke mit. Gibt
+      es [[7]] Küche? Vielen Dank für [[8]] Hilfe. Wir fragen früh, [[9]] wir gut planen
+      möchten. Hoffentlich können Sie [[10]] antworten.
+    questions:
+      - prompt: Lücke 1
+        options: &a1
+          - zu
+          - am
+          - für
+          - ob
+          - mit
+          - und
+          - eine
+          - Ihre
+          - weil
+          - bald
+          - aber
+          - ohne
+          - einen
+          - zum
+          - dass
+        answers:
+          - zu
+      - prompt: Lücke 2
+        options: *a1
+        answers:
+          - am
+      - prompt: Lücke 3
+        options: *a1
+        answers:
+          - für
+      - prompt: Lücke 4
+        options: *a1
+        answers:
+          - ob
+      - prompt: Lücke 5
+        options: *a1
+        answers:
+          - mit
+      - prompt: Lücke 6
+        options: *a1
+        answers:
+          - und
+      - prompt: Lücke 7
+        options: *a1
+        answers:
+          - eine
+      - prompt: Lücke 8
+        options: *a1
+        answers:
+          - Ihre
+      - prompt: Lücke 9
+        options: *a1
+        answers:
+          - weil
+      - prompt: Lücke 10
+        options: *a1
+        answers:
+          - bald
+  planning:
+    kind: card
+    part: b1-sprechen-3
+    title: Den Brief gemeinsam planen
+    theme: Eine Anfrage vorbereiten
+    word: Termin · Gäste · Küche · Kosten · Zuständigkeit
+    situation: Planen Sie gemeinsam die Anfrage. Machen Sie Vorschläge, reagieren Sie und einigen
+      Sie sich auf die Zuständigkeit. Der Raum ist noch nicht bestätigt.
+    sample:
+      - Ich schlage vor, zuerst den Termin und die Zahl der Gäste zu nennen.
+      - Einverstanden. Ich übernehme die Fragen zur Küche. Kannst du nach den Kosten fragen?
+steps:
+  - id: start
+    chapter: scene
+    title: Новое дело команды
+    beats:
+      - read: "Хауке готовит запрос на помещение для осенней встречи. Предлагаемый срок — воскресенье
+          18 октября, 15–18 часов, 18 гостей. Это учебный календарь. Команда должна назвать
+          условия и получить ответ, прежде чем сообщать гостям окончательный адрес. Все нужные
+          условия даны в сцене: знания географии, настоящих цен или расписаний не требуются.
+          Сначала попробуйте понять, какого результата добиваются друзья, затем слушайте
+          реплики. На новом уровне важно не только найти число или знакомое слово, но и связать
+          несколько сведений."
+        point: Запрашиваем помещение и уточняем условия
+        set:
+          view: dialogue
+          dialogue: scene
+          reveal: 4
+      - read: "В сцене три разных отношения к действию: намерение, попытка и необходимость. *Wir haben
+          vor, ... zu organisieren* описывает план. *Wir müssen fragen* выражает необходимость
+          и не требует zu. Сначала определите смысл, затем соберите форму. Участники ещё не
+          получили помещение: даже хорошо написанный запрос не становится согласием адресата."
+        point: "Infinitiv mit zu: vorhaben, versuchen, Zeit haben"
+        set:
+          reveal: 8
+  - id: words
+    chapter: words
+    title: Слова, которые понадобятся
+    beats:
+      - read: Слова запроса помогают получить полезный ответ. *Anfrage* — обращение с вопросом,
+          *Zusage* — согласие, *Bestätigung* — подтверждение названных условий. В игре нужно
+          включить сведения, без которых администрация не сможет принять решение. Потом из тех
+          же фактов вы составите связное письмо; список пунктов служит проверкой содержания, а
+          не готовым текстом.
+        point: Сначала используйте слово для решения; словарь остаётся справочником.
+        set:
+          view: words
+          words: useful
+          reveal: 6
+      - read: "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к
+          ситуации: какие слова обозначают человека, место, условие или уже выполненное
+          действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово
+          встретится снова в записке или разговоре, попробуйте восстановить его смысл до
+          подсказки."
+        point: Возвращайтесь к выражениям в сообщениях и новых действиях.
+        set:
+          reveal: 15
+  - id: grammar
+    chapter: grammar
+    title: "Infinitiv mit zu: vorhaben, versuchen, Zeit haben"
+    beats:
+      - read: "После *versuchen*, *vorhaben* и выражения *Zeit haben* можно назвать следующее действие
+          инфинитивной группой. Личного окончания у *schreiben* здесь нет: кто действует, уже
+          видно из *ich versuche*. В учебных примерах ставим запятую, чтобы видеть границу
+          частей. Эта модель не заменяет все придаточные предложения: используйте её в
+          показанных выражениях."
+        point: "После versuchen: zu + Infinitiv."
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: В отделяемом глаголе *vorbereiten* частица zu встаёт между приставкой и основой. Так же
+          устроено *abzuschicken*. В инфинитивной группе глагол остаётся одним словом. Сравните
+          с личной формой *Ich bereite das Programm vor*. В игре вы собираете готовые
+          фрагменты, но должны определить, какое намерение они передают.
+        point: "Отделяемая приставка: vor + zu + bereiten."
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: "Знакомая модель с модальным глаголом сохраняется: *müssen fragen*, *können helfen*,
+          *möchten kommen*. Не вставляйте zu перед каждым вторым глаголом. Сначала найдите
+          слово, от которого зависит инфинитив. Полезно сравнить две реплики об одном действии:
+          *Ich versuche zu helfen* и *Ich kann helfen*. Смысл и форма различаются."
+        point: После модального müssen — Infinitiv без zu.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+  - id: frames
+    chapter: grammar
+    title: Как устроена реплика
+    beats:
+      - read: "Сначала называем намерение команды, затем само действие. Вторая часть завершается *zu
+          organisieren*. В запросе этого недостаточно: нужны срок, число людей и вопросы об
+          условиях. Поэтому игру заканчивает проверка содержания письма. Вежливое обращение и
+          понятные абзацы помогают адресату ответить на каждый вопрос."
+        point: "*Wir haben vor, ein Treffen zu organisieren.*"
+        set:
+          view: sentence
+          rows:
+            - de:
+                - Wir
+                - haben vor,
+                - ein Treffen
+                - zu organisieren.
+              ru: Мы намерены организовать встречу.
+  - id: check
+    chapter: practice
+    title: Проверьте смысл до подсказки
+    beats:
+      - question: Можно ли «Wir müssen einen Raum zu finden»?
+        read: "В этой модели нет: после *müssen* употребляется инфинитив без zu — *Wir müssen einen
+          Raum finden*. С *versuchen* строение другое: *Wir versuchen, einen Raum zu finden*.
+          Не переводите частицы отдельно с русского. Определяйте управляющее слово и сверяйтесь
+          с примером, а затем проверяйте смысл всей реплики."
+        point: "*müssen finden* / *versuchen, ... zu finden*."
+        set:
+          view: table
+          table: rule
+      - question: Отправленный запрос уже подтверждает помещение?
+        read: "Нет. Запрос описывает желаемые условия и вопросы. Нужен ответ владельца помещения. В
+          дневнике можно записать «запрос отправлен», но нельзя превращать это в «помещение
+          получено». Такая точность пригодится и в экзаменационном письме: объясняйте, чего
+          хотите, и просите конкретный ответ."
+        point: "*Anfrage abgeschickt* ≠ *Raum bestätigt*."
+        set:
+          view: table
+          table: rule
+  - id: exam-request
+    chapter: exam
+    title: Eine vollständige Anfrage
+    beats:
+      - read: "Здесь все четыре пункта обязательны: причину, срок с числом гостей, вопросы и просьбу о
+          подтверждении нужно связать в письмо. Сначала самостоятельно напишите черновик в поле
+          сцены. Не копируйте образец: он открывается только для сравнения после попытки. В
+          этой практике 100–120 слов — удобный ориентир, а не официальная минимальная длина
+          выбранного экзамена."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: request
+          reveal: 0
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: request
+          reveal: 0
+        set:
+          view: task
+          task: request
+          solved: true
+  - id: exam-reply
+    chapter: exam
+    title: Eingang ist noch keine Zusage · Ausschnitt
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: reply
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: reply
+        set:
+          view: task
+          task: reply
+          solved: true
+  - id: exam-gaps
+    chapter: exam
+    title: Zehn Lücken in einer Anfrage
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: gaps
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: gaps
+        set:
+          view: task
+          task: gaps
+          solved: true
+  - id: exam-planning
+    chapter: exam
+    title: Den Brief gemeinsam planen
+    beats:
+      - read: "Сначала прочитайте ситуацию и определите, какие сведения требуется получить. Выполните
+          задание самостоятельно до раскрытия образца. Игровые подсказки помогают учиться, но
+          для проверки навыка попробуйте обойтись без них. После ответа сравните его с исходным
+          текстом: объясните, какой фрагмент подтверждает каждое решение."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: planning
+          reveal: 0
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: planning
+          reveal: 0
+        set:
+          view: task
+          task: planning
+          solved: true
+exercises:
+  - type: choice
+    q: Ich versuche, pünktlich ___ kommen.
+    options:
+      - um
+      - "-"
+      - zu
+    answer: 2
+    why: Versuchen + zu.
+  - type: choice
+    q: Wir müssen den Raum ___.
+    options:
+      - zu suchen
+      - sucht
+      - suchen
+    answer: 2
+    why: Модальный глагол без zu.
+  - type: choice
+    q: Ich habe Zeit, alles ___.
+    options:
+      - vorzubereiten
+      - zu vorbereiten
+      - vorbereite
+    answer: 0
+    why: Zu внутри отделяемого глагола.
+  - type: choice
+    q: Es ist wichtig, die Zahl ___ nennen.
+    options:
+      - für
+      - um
+      - zu
+    answer: 2
+    why: Es ist wichtig, ... zu.
+  - type: choice
+    q: Wir planen, die Anfrage ___.
+    options:
+      - zu abschicken
+      - schicken ab
+      - abzuschicken
+    answer: 2
+    why: ab + zu + schicken.
+  - type: choice
+    q: Ihre Nachricht ist angekommen. Значит…
+    options:
+      - Запрос получен
+      - Зал подтверждён
+      - Кухня бесплатна
+    answer: 0
+    why: Получение не означает согласие.
+  - type: order
+    de: Wir haben vor, ein Treffen zu organisieren.
+    ru: Мы намерены организовать встречу.
+  - type: order
+    de: Ich versuche, eine klare Anfrage zu schreiben.
+    ru: Я попробую написать понятный запрос.
+  - type: order
+    de: Es ist wichtig, die Zahl der Gäste zu nennen.
+    ru: Важно назвать число гостей.
+  - type: order
+    de: Wir müssen zuerst nach einem Raum fragen.
+    ru: Сначала нам нужно спросить о помещении.
+  - type: order
+    de: Ich habe Zeit, das Programm vorzubereiten.
+    ru: У меня есть время подготовить программу.
+  - type: order
+    de: Eine verbindliche Antwort folgt nächste Woche.
+    ru: Обязательный ответ последует на следующей неделе.
+case:
+  title: Schon gebucht?
+  ru: Сверка дневника
+  intro: В дневнике отправку письма превратили в бронь. Проверьте каждое утверждение.
+  people: {}
+  steps:
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Wir haben Ihre Nachricht erhalten.
+          ru: Мы получили ваше сообщение.
+      question: Что известно?
+      options:
+        - Всё согласовано
+        - Запрос отклонён
+        - Запрос получен
+      answer: 2
+      right: Erhalten подтверждает получение.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Die Kosten und die Küchennutzung klären wir mit der Verwaltung.
+          ru: Стоимость и использование кухни уточним с администрацией.
+      question: Кухня уже согласована?
+      options:
+        - Да, за 18 евро
+        - Нет, вопрос уточняется
+        - Да, бесплатна
+      answer: 1
+      right: Klärung ещё продолжается.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Bitte informieren Sie die Gäste noch nicht über den Raum.
+          ru: Пока не сообщайте гостям о помещении.
+      question: Как поступить?
+      options:
+        - Отправить окончательный адрес
+        - Дождаться подтверждения
+        - Отменить встречу
+      answer: 1
+      right: Нужно дождаться ответа об условиях.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+  ending: Запись исправлена по источникам. В следующей главе команда воспользуется
+    подтверждёнными сведениями для нового решения.
+adventure:
+  kind: sequence
+  title: Подготовьте запрос, на который можно ответить
+  intro: Хауке готовит запрос на помещение для осенней встречи. Предлагаемый срок — воскресенье
+    18 октября, 15–18 часов, 18 гостей. Это учебный календарь. Команда должна назвать условия и
+    получить ответ, прежде чем сообщать гостям окончательный адрес.
+  ending: В запросе есть цель, срок, число гостей и вопросы. Администрация получила письмо и
+    проверяет условия. В дневнике отмечена отправка; место встречи пока не объявлено.
+  challenges:
+    - id: facts
+      kind: pack
+      title: Что обязательно включить?
+      intro: Выберите три сведения о запросе.
+      mode: reading
+      clue:
+        task: request
+      options:
+        - id: o0
+          label: 18 гостей
+        - id: o1
+          label: 18 октября, 15–18
+        - id: o2
+          label: Запросить кухню и цену
+        - id: o3
+          label: Бесплатный зал уже получен
+      answer:
+        - o0
+        - o1
+        - o2
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."
+    - id: zu
+      kind: order
+      title: Сформулируйте намерение
+      intro: Соберите предложение.
+      label: Реплика для команды
+      tokens:
+        - Wir
+        - haben vor,
+        - ein Treffen
+        - zu organisieren.
+      success: Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.
+      wrong: "Проверьте положение глагола и конец предложения: используйте все фрагменты."
+    - id: parts
+      kind: match
+      title: Свяжите выражение и форму
+      intro: Выберите продолжение.
+      slots:
+        - id: a
+          label: Wir versuchen, die Anfrage …
+          answer: zu
+        - id: b
+          label: Wir müssen die Anfrage …
+          answer: plain
+        - id: c
+          label: Ich habe Zeit, das Programm …
+          answer: prepare
+      options:
+        - id: zu
+          label: zu schreiben
+        - id: plain
+          label: schreiben
+        - id: prepare
+          label: vorzubereiten
+      success: Форма зависит от управляющего слова.
+      wrong: После müssen нет zu; у vorbereiten оно внутри.
+    - id: status
+      kind: select
+      title: Как обновить дневник?
+      intro: Прочитайте полученный ответ.
+      mode: reading
+      clue:
+        task: reply
+      options:
+        - id: o0
+          label: Запрос получен; ждём условий
+        - id: o1
+          label: Помещение забронировано
+        - id: o2
+          label: Кухня бесплатна
+      answer:
+        - o0
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."
+    - id: guests
+      kind: note
+      title: Проверьте число перед отправкой
+      intro: Введите число гостей из задания письма.
+      mode: reading
+      clue:
+        task: request
+      fields:
+        - label: Zahl der Gäste
+          answers:
+            - "18"
+            - achtzehn
+      success: Число совпадает с запросом.
+      wrong: В условии указано 18 гостей.

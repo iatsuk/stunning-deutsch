@@ -1,0 +1,2099 @@
+{
+ "id": "b1-alltag",
+ "level": "b1",
+ "order": 16,
+ "title": "Du brauchst nicht alles allein zu machen.",
+ "ru": "Разгружаем план и различаем необходимость и запрет",
+ "lede": "Матео работает со вторника по субботу 17–23 и пытается взять ещё несколько задач подготовки. Команда проверяет список: что обязательно, что уже предусмотрено, а что можно поручить другому. Raum C и кухня подтверждены; встреча остаётся 18 октября 15–18 часов.",
+ "goals": [
+  "Понять отсутствие необходимости через nicht brauchen … zu",
+  "Отличить его от запрета nicht dürfen",
+  "Объяснить ограниченную задачу через nur",
+  "Согласовать посильное распределение и возврат ключа"
+ ],
+ "grammar": [
+  "nicht brauchen … zu / nur brauchen … zu; совет и обязанность"
+ ],
+ "exam": [
+  "b1-lesen-2",
+  "b1-sprachbausteine-1",
+  "b1-hoeren-3",
+  "b1-schreiben-1",
+  "b1-sprechen-3"
+ ],
+ "chapters": [
+  {
+   "id": "scene",
+   "title": "Ситуация"
+  },
+  {
+   "id": "words",
+   "title": "Слова"
+  },
+  {
+   "id": "grammar",
+   "title": "Грамматика"
+  },
+  {
+   "id": "practice",
+   "title": "Проверка"
+  },
+  {
+   "id": "exam",
+   "title": "На экзамене"
+  }
+ ],
+ "dialogues": {
+  "scene": {
+   "title": "Du brauchst nicht alles allein zu machen.",
+   "ru": "Разгружаем план и различаем необходимость и запрет",
+   "place": "Kiel · последняя неделя подготовки · вымышленная учебная ситуация",
+   "people": {
+    "D": {
+     "name": "Dana",
+     "voice": "Anna"
+    },
+    "M": {
+     "name": "Mateo",
+     "voice": "Reed"
+    },
+    "E": {
+     "name": "Elif",
+     "voice": "Flo"
+    },
+    "H": {
+     "name": "Hauke",
+     "voice": "Rocko"
+    }
+   },
+   "lines": [
+    {
+     "who": "M",
+     "de": "Ich muss am Freitag auch noch die Becher kaufen.",
+     "ru": "Мне ещё нужно в пятницу купить стаканы.",
+     "audio": "audio/2481944f5fd5.m4a"
+    },
+    {
+     "who": "E",
+     "de": "Du brauchst die Becher nicht zu kaufen. Ich leihe Mehrwegbecher aus.",
+     "ru": "Тебе не нужно покупать стаканы. Я возьму многоразовые напрокат.",
+     "audio": "audio/7e363cac7bad.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Du brauchst nicht alles allein zu machen. Du kümmerst dich um das Essen.",
+     "ru": "Не нужно делать всё одному. Ты занимаешься едой.",
+     "audio": "audio/a3517d3fd2ea.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Ich hole den Schlüssel um halb drei ab. Du brauchst dafür nicht extra zu kommen.",
+     "ru": "Я заберу ключ в половине третьего. Тебе не нужно ради этого специально приходить.",
+     "audio": "audio/831ad22635e5.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Dann brauche ich nur die Zutatenliste zu prüfen.",
+     "ru": "Тогда мне нужно только проверить список ингредиентов.",
+     "audio": "audio/7494d0b00376.m4a"
+    },
+    {
+     "who": "E",
+     "de": "Genau. Am Freitag arbeitest du ab fünf. Wir stimmen die Abholung ohne dich ab.",
+     "ru": "Верно. В пятницу ты работаешь с пяти. Самовывоз согласуем без тебя.",
+     "audio": "audio/ea917d27874d.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Wir sollten auch kurze Pausen einplanen und die Aufgaben wechseln.",
+     "ru": "Нам стоит предусмотреть и короткие перерывы и меняться задачами.",
+     "audio": "audio/02e9cabf421f.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Um zwanzig vor sechs räumen wir gemeinsam auf. Den Schlüssel gebe ich bis Viertel nach sechs zurück.",
+     "ru": "В без двадцати шесть начнём убирать вместе. Ключ я верну до четверти седьмого.",
+     "audio": "audio/5d78628287a5.m4a"
+    }
+   ]
+  }
+ },
+ "words": {
+  "useful": {
+   "title": "Wörter für die Aufgabe",
+   "ru": "Слова для действия",
+   "items": [
+    {
+     "de": "die Belastung",
+     "ru": "нагрузка",
+     "gender": "f",
+     "plural": "Belastungen",
+     "audio": "audio/9918a6bb8946.m4a"
+    },
+    {
+     "de": "die Entlastung",
+     "ru": "снижение нагрузки",
+     "gender": "f",
+     "plural": "Entlastungen",
+     "audio": "audio/3ad46718489c.m4a"
+    },
+    {
+     "de": "die Zutatenliste",
+     "ru": "список ингредиентов",
+     "gender": "f",
+     "plural": "Zutatenlisten",
+     "audio": "audio/ff1696bffd9a.m4a"
+    },
+    {
+     "de": "die Aufgabenverteilung",
+     "ru": "распределение задач",
+     "gender": "f",
+     "plural": "Aufgabenverteilungen",
+     "audio": "audio/ae26d8ef8078.m4a"
+    },
+    {
+     "de": "die Schlüsselbox",
+     "ru": "ящик для ключа",
+     "gender": "f",
+     "plural": "Schlüsselboxen",
+     "audio": "audio/89c38080ed86.m4a"
+    },
+    {
+     "de": "die Spätschicht",
+     "ru": "вечерняя смена",
+     "gender": "f",
+     "plural": "Spätschichten",
+     "audio": "audio/a85c7ba61ba8.m4a"
+    },
+    {
+     "de": "die Leihgabe",
+     "ru": "вещь, данная во временное пользование",
+     "gender": "f",
+     "plural": "Leihgaben",
+     "audio": "audio/18ba81a07f70.m4a"
+    },
+    {
+     "de": "der Wechsel",
+     "ru": "смена, замена",
+     "gender": "m",
+     "plural": "Wechsel",
+     "audio": "audio/1e172b2e2759.m4a"
+    },
+    {
+     "de": "nicht nötig",
+     "ru": "не требуется",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/50cb2afdd0c0.m4a"
+    },
+    {
+     "de": "nur noch",
+     "ru": "ещё только",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/0faccba151d5.m4a"
+    },
+    {
+     "de": "überlastet",
+     "ru": "перегруженный",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/549be828efe8.m4a"
+    },
+    {
+     "de": "eine Pause einplanen",
+     "ru": "предусмотреть перерыв",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/ac18a74ae6c9.m4a"
+    },
+    {
+     "de": "gegenseitig helfen",
+     "ru": "помогать друг другу",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/eceef44950cb.m4a"
+    },
+    {
+     "de": "abstimmen",
+     "ru": "согласовать",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/10115048bddf.m4a"
+    },
+    {
+     "de": "allein übernehmen",
+     "ru": "взять на себя одному",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/19cb69698852.m4a"
+    }
+   ]
+  }
+ },
+ "tables": {
+  "rule": {
+   "title": "nicht brauchen … zu / nur brauchen … zu; совет и обязанность",
+   "ru": "Опора для решения",
+   "head": [
+    "Beispiel",
+    "Смысл и форма"
+   ],
+   "rows": [
+    [
+     "Du brauchst die Becher nicht zu kaufen.",
+     "nicht brauchen … zu = не нужно, не обязательно."
+    ],
+    [
+     "Du brauchst nur die Liste zu prüfen.",
+     "nur ограничивает объём: нужно только это действие."
+    ],
+    [
+     "Du brauchst nicht zu kommen. / Du darfst nicht kommen.",
+     "Отсутствие необходимости не равно запрету."
+    ]
+   ],
+   "ruCols": [
+    1
+   ]
+  }
+ },
+ "tasks": {
+  "plan": {
+   "kind": "message",
+   "part": "b1-lesen-2",
+   "title": "Was bleibt für wen? · Ausschnitt",
+   "text": "Bestätigt: Raum C mit Küche, 18. Oktober 15–18 Uhr, 40 Euro. Hauke holt den Schlüssel 14:30 ab und gibt ihn bis 18:15 in die Schlüsselbox zurück. Ab 17:40 räumen alle gemeinsam auf; 18:00 verlassen sie den Raum. Elif leiht am Freitag Mehrwegbecher aus. Bis Donnerstag prüft Mateo nur die Zutatenliste. Am Sonntag organisiert er das Essen. Er braucht keine Becher zu kaufen und den Schlüssel nicht selbst abzuholen. Abholung der Becher ist eine Aufgabe, noch kein erledigter Punkt.",
+   "sample": []
+  },
+  "gaps": {
+   "kind": "worksheet",
+   "part": "b1-sprachbausteine-1",
+   "format": "cloze",
+   "title": "Eine Nachricht zur Entlastung",
+   "text": "Hallo Mateo, du [[1]] die Becher nicht [[2]] kaufen. Elif übernimmt das, [[3]] du am Freitag arbeitest. Der Raum [[4]] letzte Woche bestätigt. Hauke spricht mit [[5]] Hausmeister. Das sind Menschen, mit [[6]] wir die Übergabe klären. [[7]] wir losgehen, prüfen wir die Liste. Es ist wichtig, [[8]] alle ihren Teil kennen. Du brauchst [[9]] die Zutaten zu prüfen. Wir helfen [[10]] gegenseitig. Viele Grüße, Dana",
+   "questions": [
+    {
+     "prompt": "Lücke 1",
+     "options": [
+      "hast",
+      "brauchst",
+      "darfst"
+     ],
+     "answers": [
+      "brauchst"
+     ]
+    },
+    {
+     "prompt": "Lücke 2",
+     "options": [
+      "um",
+      "damit",
+      "zu"
+     ],
+     "answers": [
+      "zu"
+     ]
+    },
+    {
+     "prompt": "Lücke 3",
+     "options": [
+      "weil",
+      "trotzdem",
+      "obwohl"
+     ],
+     "answers": [
+      "weil"
+     ]
+    },
+    {
+     "prompt": "Lücke 4",
+     "options": [
+      "wurden",
+      "wurde",
+      "wird"
+     ],
+     "answers": [
+      "wurde"
+     ]
+    },
+    {
+     "prompt": "Lücke 5",
+     "options": [
+      "den",
+      "der",
+      "dem"
+     ],
+     "answers": [
+      "dem"
+     ]
+    },
+    {
+     "prompt": "Lücke 6",
+     "options": [
+      "denen",
+      "den",
+      "die"
+     ],
+     "answers": [
+      "denen"
+     ]
+    },
+    {
+     "prompt": "Lücke 7",
+     "options": [
+      "Nachdem",
+      "Bevor",
+      "Während"
+     ],
+     "answers": [
+      "Bevor"
+     ]
+    },
+    {
+     "prompt": "Lücke 8",
+     "options": [
+      "weil",
+      "ob",
+      "dass"
+     ],
+     "answers": [
+      "dass"
+     ]
+    },
+    {
+     "prompt": "Lücke 9",
+     "options": [
+      "nur",
+      "nie",
+      "keine"
+     ],
+     "answers": [
+      "nur"
+     ]
+    },
+    {
+     "prompt": "Lücke 10",
+     "options": [
+      "unser",
+      "uns",
+      "wir"
+     ],
+     "answers": [
+      "uns"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "notices": {
+   "kind": "worksheet",
+   "part": "b1-hoeren-3",
+   "format": "article",
+   "title": "Fünf Hinweise für die Vorbereitung",
+   "recordings": [
+    {
+     "text": "Sie brauchen keine eigenen Teller mitzubringen. Achtzehn Teller werden in der Küche bereitgestellt. Lebensmittel und Getränke organisieren Sie weiterhin selbst.",
+     "audio": "audio/7a04b0f44a51.m4a"
+    },
+    {
+     "text": "Hier ist Elif. Die Becher hole ich am Freitag ab. Mateo braucht dafür nicht vor seiner Arbeit durch die Stadt zu fahren. Ich melde mich nach der Abholung noch einmal.",
+     "audio": "audio/a5c2bce17201.m4a"
+    },
+    {
+     "text": "Die Schlüsselbox wird am Sonntag bis Viertel nach sechs kontrolliert. Bitte geben Sie Ihren Schlüssel spätestens dann zurück. Bitte verlassen Sie den Raum schon um sechs.",
+     "audio": "audio/d3734850f39b.m4a"
+    },
+    {
+     "text": "Sie brauchen den Raum nicht allein aufzuräumen. Die Gruppe hat gemeinsame Hilfe ab zwanzig vor sechs eingeplant. Bitte räumen Sie eigene Sachen trotzdem selbst weg.",
+     "audio": "audio/fef3a8bcc040.m4a"
+    },
+    {
+     "text": "Bitte beachten Sie: Sie dürfen keine Sachen vor dem Seiteneingang abstellen. Das ist keine freiwillige Empfehlung. Der Zugang soll frei bleiben.",
+     "audio": "audio/c5ee61b2ddbe.m4a"
+    }
+   ],
+   "questions": [
+    {
+     "prompt": "Eigene Teller sind unbedingt notwendig.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Elif meldet sich erst nach der tatsächlichen Abholung zurück.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "richtig"
+     ]
+    },
+    {
+     "prompt": "Der Raum darf bis 18:15 benutzt werden.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Für das Aufräumen ist gemeinsame Hilfe vorgesehen.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "richtig"
+     ]
+    },
+    {
+     "prompt": "Sachen vor dem Seiteneingang sind nur nicht notwendig, aber erlaubt.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "falsch"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "write": {
+   "kind": "message",
+   "part": "b1-schreiben-1",
+   "title": "Einen überlasteten Helfer informieren",
+   "text": "Mateo glaubt, dass er alle Aufgaben zusätzlich zur Arbeit allein erledigen muss. Schreiben Sie ihm nach dem gemeinsamen Gespräch.",
+   "points": [
+    "Seine Situation aufgreifen",
+    "Zwei Aufgaben nennen, die er nicht selbst machen muss",
+    "Seine verbleibende Aufgabe und die Hilfe erklären",
+    "Zeit für eine Rückmeldung vorschlagen und nachfragen"
+   ],
+   "sample": [
+    {
+     "de": "Hallo Mateo, du arbeitest diese Woche viel und brauchst nicht alles allein zu machen. Elif holt am Freitag die Mehrwegbecher ab. Du brauchst also keine neuen Becher zu kaufen. Auch den Schlüssel musst du nicht selbst holen: Das übernimmt Hauke am Sonntag um 14:30. Bis Donnerstag brauchst du nur die Zutatenliste zu prüfen. Am Sonntag organisierst du das Essen. Wenn du dabei Hilfe brauchst, sag bitte Bescheid. Beim Aufräumen helfen wir ab 17:40 alle zusammen. Könntest du uns bis Donnerstag sagen, ob die Zutatenliste vollständig ist? Passt das für dich? Viele Grüße Dana",
+     "audio": "audio/c4e2191b18cd.m4a"
+    }
+   ]
+  },
+  "talk": {
+   "kind": "card",
+   "part": "b1-sprechen-3",
+   "title": "Arbeit und Vorbereitung vereinbaren",
+   "theme": "Aufgaben ohne Überlastung",
+   "word": "Zeit · notwendige Aufgabe · Hilfe · Rückmeldung",
+   "situation": "Eine Person arbeitet Freitag 17–23 Uhr und kann keine zusätzliche Abholung übernehmen. Verteilen Sie Becher, Essen, Schlüssel und Aufräumen realistisch. Bestätigen Sie, was nicht mehr nötig ist.",
+   "roles": [
+    {
+     "title": "Person A",
+     "text": "Sie kümmern sich um das Essen und prüfen die Zutaten. Am Freitag müssen Sie arbeiten. Sie möchten wissen, welche Zusatzaufgaben wegfallen."
+    },
+    {
+     "title": "Person B",
+     "text": "Sie können die Becher abholen. Hauke übernimmt den Schlüssel. Für das Aufräumen gibt es gemeinsame Hilfe. Fragen Sie nach dem Stand der Zutatenliste."
+    }
+   ],
+   "sample": []
+  }
+ },
+ "beats": [
+  {
+   "id": "start-1",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 0,
+   "read": "Матео работает со вторника по субботу 17–23 и пытается взять ещё несколько задач подготовки. Команда проверяет список: что обязательно, что уже предусмотрено, а что можно поручить другому. Raum C и кухня подтверждены; встреча остаётся 18 октября 15–18 часов. Все нужные условия даны в сцене: знания географии, настоящих цен или расписаний не требуются. Сначала попробуйте понять, какого результата добиваются друзья, затем слушайте реплики. На новом уровне важно не только найти число или знакомое слово, но и связать несколько сведений.",
+   "point": "Разгружаем план и различаем необходимость и запрет",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 4,
+    "fresh": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "start-2",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 1,
+   "read": "Brauchen с отрицанием и инфинитивом означает отсутствие необходимости. Это не запрет и не сообщение о уже выполненном деле. Если Элиф возьмёт стаканы, Матео не нужно покупать новые; из этого ещё не следует, что стаканы уже получены. Сначала разберите статус каждого действия, затем выбирайте посильный следующий шаг и человека, который его подтвердит.",
+   "point": "nicht brauchen … zu / nur brauchen … zu; совет и обязанность",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 8,
+    "fresh": [
+     4,
+     5,
+     6,
+     7
+    ]
+   }
+  },
+  {
+   "id": "words-1",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 0,
+   "read": "Организация встречи включает небольшие, но разные задачи: список продуктов, получение вещей, подготовка зала и возврат ключа. Их не стоит без проверки складывать на одного человека. Здесь немецкий помогает перераспределить конкретное действие по времени. Личный отдых и смена задач становятся частью согласованного плана, а не неопределённой просьбой «как-нибудь не уставать».",
+   "point": "Сначала используйте слово для решения; словарь остаётся справочником.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 6,
+    "words": "useful"
+   }
+  },
+  {
+   "id": "words-2",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 1,
+   "read": "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к ситуации: какие слова обозначают человека, место, условие или уже выполненное действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово встретится снова в записке или разговоре, попробуйте восстановить его смысл до подсказки.",
+   "point": "Возвращайтесь к выражениям в сообщениях и новых действиях.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 15,
+    "words": "useful",
+    "fresh": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   }
+  },
+  {
+   "id": "grammar-1",
+   "step": "grammar",
+   "stepTitle": "nicht brauchen … zu / nur brauchen … zu; совет и обязанность",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "В нашей письменной модели brauchen соединяется с отрицанием и инфинитивом с zu. Смысл близок к *Du musst die Becher nicht kaufen*. Это снимает необходимость покупки, а не запрещает любые стаканы. В разговорной речи можно услышать и вариант без zu; здесь тренируем явную письменную рамку. Обязательно проверьте, почему действие не требуется и какая задача остаётся.",
+   "point": "nicht brauchen … zu = не нужно, не обязательно.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "grammar-2",
+   "step": "grammar",
+   "stepTitle": "nicht brauchen … zu / nur brauchen … zu; совет и обязанность",
+   "chapterIndex": 2,
+   "indexInStep": 1,
+   "read": "С nur человек получает небольшую конкретную задачу вместо всего списка. В примере нужно проверить ингредиенты, а стаканы и ключ берут другие. Такая фраза не говорит, что список уже проверен. Для общей работы всё равно потребуется подтвердить выполнение. Не добавляйте новые обязанности в пересказ только потому, что человек остаётся ответственным за еду.",
+   "point": "nur ограничивает объём: нужно только это действие.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "grammar-3",
+   "step": "grammar",
+   "stepTitle": "nicht brauchen … zu / nur brauchen … zu; совет и обязанность",
+   "chapterIndex": 2,
+   "indexInStep": 2,
+   "read": "Первая фраза сообщает, что приход не нужен. Вторая запрещает приходить. Знакомое *nicht müssen* тоже снимает необходимость, но не запрещает действие. В игре это различие меняет решение: не нужно тратить лишнее время на ключ, если его получает Хауке. Само отсутствие необходимости не даёт права нарушать отдельно объявленные правила доступа к помещению.",
+   "point": "Отсутствие необходимости не равно запрету.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "frames-1",
+   "step": "frames",
+   "stepTitle": "Как устроена реплика",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "Отрицание стоит перед инфинитивной группой, но относится к необходимости действия. Основной глагол machen остаётся в конце с zu. Сначала назовите задачу, которую снимают с человека, затем проверьте новый ответственный пункт в плане. Одна поддерживающая фраза без распределения дел не решает практическую проблему.",
+   "point": "*Du brauchst nicht alles allein zu machen.*",
+   "scene": {
+    "view": "sentence",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "du",
+         "text": "Du"
+        },
+        {
+         "key": "brauchst",
+         "text": "brauchst"
+        }
+       ],
+       [
+        {
+         "key": "nicht",
+         "text": "nicht"
+        }
+       ],
+       [
+        {
+         "key": "alles",
+         "text": "alles"
+        },
+        {
+         "key": "allein",
+         "text": "allein"
+        }
+       ],
+       [
+        {
+         "key": "zu",
+         "text": "zu"
+        },
+        {
+         "key": "machen",
+         "text": "machen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Du brauchst nicht alles allein zu machen.",
+      "ru": "Тебе не нужно делать всё одному.",
+      "audio": "audio/6dcece2cb4b5.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-1",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 0,
+   "read": "Нет. Приход не требуется, но эта фраза сама по себе его не запрещает. Для запрета используется nicht dürfen. Сверьте контекст: Хауке получает ключ, поэтому Матео не нужно отдельно ехать ради той же задачи. Не превращайте помощь с распределением работы в новое ограничение для человека.",
+   "point": "Не нужно ≠ нельзя.",
+   "question": "«Du brauchst nicht zu kommen» означает запрет приходить?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "du",
+         "text": "Du"
+        },
+        {
+         "key": "brauchst",
+         "text": "brauchst"
+        }
+       ],
+       [
+        {
+         "key": "nicht",
+         "text": "nicht"
+        }
+       ],
+       [
+        {
+         "key": "alles",
+         "text": "alles"
+        },
+        {
+         "key": "allein",
+         "text": "allein"
+        }
+       ],
+       [
+        {
+         "key": "zu",
+         "text": "zu"
+        },
+        {
+         "key": "machen",
+         "text": "machen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Du brauchst nicht alles allein zu machen.",
+      "ru": "Тебе не нужно делать всё одному.",
+      "audio": "audio/6dcece2cb4b5.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-2",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 1,
+   "read": "Нет. Это назначенная задача и согласованное будущее действие. В дневнике можно указать ответственного и время проверки, но статус «получены» потребует сообщения о выполнении. Такое различие помогает не забыть важный предмет к встрече. В конце подготовки команда ещё раз сверит реальные результаты.",
+   "point": "Делегирование не равно выполнению.",
+   "question": "Элиф обещала взять стаканы. Значит, они уже получены?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "du",
+         "text": "Du"
+        },
+        {
+         "key": "brauchst",
+         "text": "brauchst"
+        }
+       ],
+       [
+        {
+         "key": "nicht",
+         "text": "nicht"
+        }
+       ],
+       [
+        {
+         "key": "alles",
+         "text": "alles"
+        },
+        {
+         "key": "allein",
+         "text": "allein"
+        }
+       ],
+       [
+        {
+         "key": "zu",
+         "text": "zu"
+        },
+        {
+         "key": "machen",
+         "text": "machen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Du brauchst nicht alles allein zu machen.",
+      "ru": "Тебе не нужно делать всё одному.",
+      "audio": "audio/6dcece2cb4b5.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "exam-plan-1",
+   "step": "exam-plan",
+   "stepTitle": "Was bleibt für wen? · Ausschnitt",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Разделите подтверждённые условия, распределённые задачи и уже выполненные действия. В списке есть разные времена: получение ключа, начало уборки, выход из помещения и возврат ключа. Они не заменяют друг друга. Для игры важен объём ответственности Матео, а не попытка назначить ему всё, что относится к еде или кухне.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "du",
+         "text": "Du"
+        },
+        {
+         "key": "brauchst",
+         "text": "brauchst"
+        }
+       ],
+       [
+        {
+         "key": "nicht",
+         "text": "nicht"
+        }
+       ],
+       [
+        {
+         "key": "alles",
+         "text": "alles"
+        },
+        {
+         "key": "allein",
+         "text": "allein"
+        }
+       ],
+       [
+        {
+         "key": "zu",
+         "text": "zu"
+        },
+        {
+         "key": "machen",
+         "text": "machen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Du brauchst nicht alles allein zu machen.",
+      "ru": "Тебе не нужно делать всё одному.",
+      "audio": "audio/6dcece2cb4b5.m4a"
+     }
+    ],
+    "task": "plan"
+   }
+  },
+  {
+   "id": "exam-plan-2",
+   "step": "exam-plan",
+   "stepTitle": "Was bleibt für wen? · Ausschnitt",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "du",
+         "text": "Du"
+        },
+        {
+         "key": "brauchst",
+         "text": "brauchst"
+        }
+       ],
+       [
+        {
+         "key": "nicht",
+         "text": "nicht"
+        }
+       ],
+       [
+        {
+         "key": "alles",
+         "text": "alles"
+        },
+        {
+         "key": "allein",
+         "text": "allein"
+        }
+       ],
+       [
+        {
+         "key": "zu",
+         "text": "zu"
+        },
+        {
+         "key": "machen",
+         "text": "machen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Du brauchst nicht alles allein zu machen.",
+      "ru": "Тебе не нужно делать всё одному.",
+      "audio": "audio/6dcece2cb4b5.m4a"
+     }
+    ],
+    "task": "plan"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "du",
+         "text": "Du"
+        },
+        {
+         "key": "brauchst",
+         "text": "brauchst"
+        }
+       ],
+       [
+        {
+         "key": "nicht",
+         "text": "nicht"
+        }
+       ],
+       [
+        {
+         "key": "alles",
+         "text": "alles"
+        },
+        {
+         "key": "allein",
+         "text": "allein"
+        }
+       ],
+       [
+        {
+         "key": "zu",
+         "text": "zu"
+        },
+        {
+         "key": "machen",
+         "text": "machen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Du brauchst nicht alles allein zu machen.",
+      "ru": "Тебе не нужно делать всё одному.",
+      "audio": "audio/6dcece2cb4b5.m4a"
+     }
+    ],
+    "task": "plan",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-gaps-1",
+   "step": "exam-gaps",
+   "stepTitle": "Eine Nachricht zur Entlastung",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Письмо связывает освобождение от лишних дел с причиной и оставшейся задачей. После brauchen в этой модели нужен инфинитив с zu. Затем возвращаются Passiv в прошлом, слабое существительное и relative denen. Сначала поймите распределение, потом проверьте форму каждого пропуска в контексте связного сообщения.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "du",
+         "text": "Du"
+        },
+        {
+         "key": "brauchst",
+         "text": "brauchst"
+        }
+       ],
+       [
+        {
+         "key": "nicht",
+         "text": "nicht"
+        }
+       ],
+       [
+        {
+         "key": "alles",
+         "text": "alles"
+        },
+        {
+         "key": "allein",
+         "text": "allein"
+        }
+       ],
+       [
+        {
+         "key": "zu",
+         "text": "zu"
+        },
+        {
+         "key": "machen",
+         "text": "machen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Du brauchst nicht alles allein zu machen.",
+      "ru": "Тебе не нужно делать всё одному.",
+      "audio": "audio/6dcece2cb4b5.m4a"
+     }
+    ],
+    "task": "gaps"
+   }
+  },
+  {
+   "id": "exam-gaps-2",
+   "step": "exam-gaps",
+   "stepTitle": "Eine Nachricht zur Entlastung",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "du",
+         "text": "Du"
+        },
+        {
+         "key": "brauchst",
+         "text": "brauchst"
+        }
+       ],
+       [
+        {
+         "key": "nicht",
+         "text": "nicht"
+        }
+       ],
+       [
+        {
+         "key": "alles",
+         "text": "alles"
+        },
+        {
+         "key": "allein",
+         "text": "allein"
+        }
+       ],
+       [
+        {
+         "key": "zu",
+         "text": "zu"
+        },
+        {
+         "key": "machen",
+         "text": "machen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Du brauchst nicht alles allein zu machen.",
+      "ru": "Тебе не нужно делать всё одному.",
+      "audio": "audio/6dcece2cb4b5.m4a"
+     }
+    ],
+    "task": "gaps"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "du",
+         "text": "Du"
+        },
+        {
+         "key": "brauchst",
+         "text": "brauchst"
+        }
+       ],
+       [
+        {
+         "key": "nicht",
+         "text": "nicht"
+        }
+       ],
+       [
+        {
+         "key": "alles",
+         "text": "alles"
+        },
+        {
+         "key": "allein",
+         "text": "allein"
+        }
+       ],
+       [
+        {
+         "key": "zu",
+         "text": "zu"
+        },
+        {
+         "key": "machen",
+         "text": "machen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Du brauchst nicht alles allein zu machen.",
+      "ru": "Тебе не нужно делать всё одному.",
+      "audio": "audio/6dcece2cb4b5.m4a"
+     }
+    ],
+    "task": "gaps",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-notices-1",
+   "step": "exam-notices",
+   "stepTitle": "Fünf Hinweise für die Vorbereitung",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Прослушайте пять сообщений дважды. Слова «не нужно» и «нельзя» меняют решение по-разному. Также различите выход из помещения и крайний срок возврата ключа. После попытки откройте текст и найдите точную формулировку обязанности, отсутствия необходимости или запрета. Не добавляйте обещанный результат к уже выполненным пунктам.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "du",
+         "text": "Du"
+        },
+        {
+         "key": "brauchst",
+         "text": "brauchst"
+        }
+       ],
+       [
+        {
+         "key": "nicht",
+         "text": "nicht"
+        }
+       ],
+       [
+        {
+         "key": "alles",
+         "text": "alles"
+        },
+        {
+         "key": "allein",
+         "text": "allein"
+        }
+       ],
+       [
+        {
+         "key": "zu",
+         "text": "zu"
+        },
+        {
+         "key": "machen",
+         "text": "machen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Du brauchst nicht alles allein zu machen.",
+      "ru": "Тебе не нужно делать всё одному.",
+      "audio": "audio/6dcece2cb4b5.m4a"
+     }
+    ],
+    "task": "notices"
+   }
+  },
+  {
+   "id": "exam-notices-2",
+   "step": "exam-notices",
+   "stepTitle": "Fünf Hinweise für die Vorbereitung",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "du",
+         "text": "Du"
+        },
+        {
+         "key": "brauchst",
+         "text": "brauchst"
+        }
+       ],
+       [
+        {
+         "key": "nicht",
+         "text": "nicht"
+        }
+       ],
+       [
+        {
+         "key": "alles",
+         "text": "alles"
+        },
+        {
+         "key": "allein",
+         "text": "allein"
+        }
+       ],
+       [
+        {
+         "key": "zu",
+         "text": "zu"
+        },
+        {
+         "key": "machen",
+         "text": "machen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Du brauchst nicht alles allein zu machen.",
+      "ru": "Тебе не нужно делать всё одному.",
+      "audio": "audio/6dcece2cb4b5.m4a"
+     }
+    ],
+    "task": "notices"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "du",
+         "text": "Du"
+        },
+        {
+         "key": "brauchst",
+         "text": "brauchst"
+        }
+       ],
+       [
+        {
+         "key": "nicht",
+         "text": "nicht"
+        }
+       ],
+       [
+        {
+         "key": "alles",
+         "text": "alles"
+        },
+        {
+         "key": "allein",
+         "text": "allein"
+        }
+       ],
+       [
+        {
+         "key": "zu",
+         "text": "zu"
+        },
+        {
+         "key": "machen",
+         "text": "machen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Du brauchst nicht alles allein zu machen.",
+      "ru": "Тебе не нужно делать всё одному.",
+      "audio": "audio/6dcece2cb4b5.m4a"
+     }
+    ],
+    "task": "notices",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-write-1",
+   "step": "exam-write",
+   "stepTitle": "Einen überlasteten Helfer informieren",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Письмо должно помогать человеку понять реальный объём дел. Назовите снятые задачи, нового ответственного и срок обратной связи. Все четыре пункта обязательны. Не ограничивайтесь общей поддержкой без действий. После черновика проверьте, не звучит ли отсутствие необходимости как запрет и не назначено ли снова всё тому же человеку.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "du",
+         "text": "Du"
+        },
+        {
+         "key": "brauchst",
+         "text": "brauchst"
+        }
+       ],
+       [
+        {
+         "key": "nicht",
+         "text": "nicht"
+        }
+       ],
+       [
+        {
+         "key": "alles",
+         "text": "alles"
+        },
+        {
+         "key": "allein",
+         "text": "allein"
+        }
+       ],
+       [
+        {
+         "key": "zu",
+         "text": "zu"
+        },
+        {
+         "key": "machen",
+         "text": "machen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Du brauchst nicht alles allein zu machen.",
+      "ru": "Тебе не нужно делать всё одному.",
+      "audio": "audio/6dcece2cb4b5.m4a"
+     }
+    ],
+    "task": "write",
+    "reveal": 0
+   }
+  },
+  {
+   "id": "exam-write-2",
+   "step": "exam-write",
+   "stepTitle": "Einen überlasteten Helfer informieren",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "du",
+         "text": "Du"
+        },
+        {
+         "key": "brauchst",
+         "text": "brauchst"
+        }
+       ],
+       [
+        {
+         "key": "nicht",
+         "text": "nicht"
+        }
+       ],
+       [
+        {
+         "key": "alles",
+         "text": "alles"
+        },
+        {
+         "key": "allein",
+         "text": "allein"
+        }
+       ],
+       [
+        {
+         "key": "zu",
+         "text": "zu"
+        },
+        {
+         "key": "machen",
+         "text": "machen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Du brauchst nicht alles allein zu machen.",
+      "ru": "Тебе не нужно делать всё одному.",
+      "audio": "audio/6dcece2cb4b5.m4a"
+     }
+    ],
+    "task": "write",
+    "reveal": 0
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "du",
+         "text": "Du"
+        },
+        {
+         "key": "brauchst",
+         "text": "brauchst"
+        }
+       ],
+       [
+        {
+         "key": "nicht",
+         "text": "nicht"
+        }
+       ],
+       [
+        {
+         "key": "alles",
+         "text": "alles"
+        },
+        {
+         "key": "allein",
+         "text": "allein"
+        }
+       ],
+       [
+        {
+         "key": "zu",
+         "text": "zu"
+        },
+        {
+         "key": "machen",
+         "text": "machen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Du brauchst nicht alles allein zu machen.",
+      "ru": "Тебе не нужно делать всё одному.",
+      "audio": "audio/6dcece2cb4b5.m4a"
+     }
+    ],
+    "task": "write",
+    "reveal": 0,
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-talk-1",
+   "step": "exam-talk",
+   "stepTitle": "Arbeit und Vorbereitung vereinbaren",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Сначала выясните доступное время. Предложите помощь с конкретной задачей и спросите, подходит ли это партнёру. Итог должен назвать, кто делает что и когда сообщает результат. Не принимайте молчание за согласие и не планируйте самовывоз на рабочую смену. Паузы и совместная уборка входят в реальный общий план.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "du",
+         "text": "Du"
+        },
+        {
+         "key": "brauchst",
+         "text": "brauchst"
+        }
+       ],
+       [
+        {
+         "key": "nicht",
+         "text": "nicht"
+        }
+       ],
+       [
+        {
+         "key": "alles",
+         "text": "alles"
+        },
+        {
+         "key": "allein",
+         "text": "allein"
+        }
+       ],
+       [
+        {
+         "key": "zu",
+         "text": "zu"
+        },
+        {
+         "key": "machen",
+         "text": "machen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Du brauchst nicht alles allein zu machen.",
+      "ru": "Тебе не нужно делать всё одному.",
+      "audio": "audio/6dcece2cb4b5.m4a"
+     }
+    ],
+    "task": "talk"
+   }
+  },
+  {
+   "id": "exam-talk-2",
+   "step": "exam-talk",
+   "stepTitle": "Arbeit und Vorbereitung vereinbaren",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "du",
+         "text": "Du"
+        },
+        {
+         "key": "brauchst",
+         "text": "brauchst"
+        }
+       ],
+       [
+        {
+         "key": "nicht",
+         "text": "nicht"
+        }
+       ],
+       [
+        {
+         "key": "alles",
+         "text": "alles"
+        },
+        {
+         "key": "allein",
+         "text": "allein"
+        }
+       ],
+       [
+        {
+         "key": "zu",
+         "text": "zu"
+        },
+        {
+         "key": "machen",
+         "text": "machen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Du brauchst nicht alles allein zu machen.",
+      "ru": "Тебе не нужно делать всё одному.",
+      "audio": "audio/6dcece2cb4b5.m4a"
+     }
+    ],
+    "task": "talk"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "du",
+         "text": "Du"
+        },
+        {
+         "key": "brauchst",
+         "text": "brauchst"
+        }
+       ],
+       [
+        {
+         "key": "nicht",
+         "text": "nicht"
+        }
+       ],
+       [
+        {
+         "key": "alles",
+         "text": "alles"
+        },
+        {
+         "key": "allein",
+         "text": "allein"
+        }
+       ],
+       [
+        {
+         "key": "zu",
+         "text": "zu"
+        },
+        {
+         "key": "machen",
+         "text": "machen"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Du brauchst nicht alles allein zu machen.",
+      "ru": "Тебе не нужно делать всё одному.",
+      "audio": "audio/6dcece2cb4b5.m4a"
+     }
+    ],
+    "task": "talk",
+    "solved": true
+   }
+  }
+ ],
+ "exercises": [
+  {
+   "id": "b1-alltag-1",
+   "type": "choice",
+   "q": "Du ___ die Becher nicht zu kaufen.",
+   "options": [
+    "darfst",
+    "hast",
+    "brauchst"
+   ],
+   "answer": 2,
+   "why": "Отсутствие необходимости.",
+   "audio": "audio/e7f052593683.m4a"
+  },
+  {
+   "id": "b1-alltag-2",
+   "type": "choice",
+   "q": "Не нужно приходить:",
+   "options": [
+    "Du darfst nicht kommen.",
+    "Du musst kommen.",
+    "Du brauchst nicht zu kommen."
+   ],
+   "answer": 2,
+   "why": "Brauchen снимает необходимость."
+  },
+  {
+   "id": "b1-alltag-3",
+   "type": "choice",
+   "q": "Запрет:",
+   "options": [
+    "Du darfst nicht kommen.",
+    "Du brauchst nicht zu kommen.",
+    "Du musst nicht kommen."
+   ],
+   "answer": 0,
+   "why": "Nicht dürfen."
+  },
+  {
+   "id": "b1-alltag-4",
+   "type": "choice",
+   "q": "Du brauchst nur die Liste ___ prüfen.",
+   "options": [
+    "um",
+    "damit",
+    "zu"
+   ],
+   "answer": 2,
+   "why": "Письменная рамка brauchenzu.",
+   "audio": "audio/35464aace62b.m4a"
+  },
+  {
+   "id": "b1-alltag-5",
+   "type": "choice",
+   "q": "Du brauchst den Schlüssel nicht ___.",
+   "options": [
+    "zu abholen",
+    "holen ab",
+    "abzuholen"
+   ],
+   "answer": 2,
+   "why": "Zu внутри отделяемого глагола.",
+   "audio": "audio/ca21a463d7ed.m4a"
+  },
+  {
+   "id": "b1-alltag-6",
+   "type": "choice",
+   "q": "Элиф возьмёт стаканы, значит уже получила?",
+   "options": [
+    "Нет",
+    "Да",
+    "Только после 17"
+   ],
+   "answer": 0,
+   "why": "Будущая задача не равна выполнению."
+  },
+  {
+   "id": "b1-alltag-7",
+   "type": "order",
+   "de": "Du brauchst nicht alles allein zu machen.",
+   "ru": "Не нужно делать всё одному.",
+   "audio": "audio/6dcece2cb4b5.m4a"
+  },
+  {
+   "id": "b1-alltag-8",
+   "type": "order",
+   "de": "Du brauchst die Becher nicht zu kaufen.",
+   "ru": "Не нужно покупать стаканы.",
+   "audio": "audio/e7f052593683.m4a"
+  },
+  {
+   "id": "b1-alltag-9",
+   "type": "order",
+   "de": "Ich brauche nur die Liste zu prüfen.",
+   "ru": "Мне нужно только проверить список.",
+   "audio": "audio/d98e700379c1.m4a"
+  },
+  {
+   "id": "b1-alltag-10",
+   "type": "order",
+   "de": "Wir sollten kurze Pausen einplanen.",
+   "ru": "Нам стоит предусмотреть короткие перерывы.",
+   "audio": "audio/0d86b15e7e73.m4a"
+  },
+  {
+   "id": "b1-alltag-11",
+   "type": "order",
+   "de": "Hauke übernimmt die Schlüsselübergabe.",
+   "ru": "Хауке берёт на себя передачу ключа.",
+   "audio": "audio/c09eaf95d68a.m4a"
+  },
+  {
+   "id": "b1-alltag-12",
+   "type": "order",
+   "de": "Elif meldet sich nach der Abholung.",
+   "ru": "Элиф сообщит после самовывоза.",
+   "audio": "audio/bfee9da18fc0.m4a"
+  }
+ ],
+ "case": {
+  "title": "Nicht nötig ist kein Verbot und keine Erledigung",
+  "ru": "Сверка дневника",
+  "intro": "Проверьте необходимость, ответственность и реальный результат.",
+  "people": {},
+  "steps": [
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Du brauchst keine Becher zu kaufen. Elif leiht sie am Freitag aus.",
+      "ru": "Не нужно покупать стаканы. Элиф возьмёт их в пятницу."
+     }
+    ],
+    "question": "Покупку Матео запрещают?",
+    "options": [
+     "Да, это прямой запрет",
+     "Он уже купил стаканы",
+     "Нет, она не требуется по плану"
+    ],
+    "answer": 2,
+    "right": "Brauchen с отрицанием снимает необходимость.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Elif meldet sich nach der Abholung.",
+      "ru": "Элиф сообщит после получения."
+     }
+    ],
+    "question": "Статус сейчас — стаканы уже получены?",
+    "options": [
+     "Элиф отказалась",
+     "Нет, ждём подтверждения выполнения",
+     "Да"
+    ],
+    "answer": 1,
+    "right": "Нужно реальное сообщение после действия.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Raum verlassen 18:00. Schlüssel zurück bis 18:15.",
+      "ru": "Выйти из помещения 18:00. Вернуть ключ до 18:15."
+     }
+    ],
+    "question": "Можно использовать зал до 18:15?",
+    "options": [
+     "Нет, это срок ключа",
+     "Да",
+     "Только после уборки"
+    ],
+    "answer": 0,
+    "right": "Разные сроки относятся к разным действиям.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   }
+  ],
+  "ending": "Снятая необходимость, новая ответственность и выполненная задача больше не смешиваются. План учитывает рабочее время участников."
+ },
+ "adventure": {
+  "kind": "sequence",
+  "title": "Снимите лишние задачи, сохранив нужные",
+  "intro": "Матео работает со вторника по субботу 17–23 и пытается взять ещё несколько задач подготовки. Команда проверяет список: что обязательно, что уже предусмотрено, а что можно поручить другому. Raum C и кухня подтверждены; встреча остаётся 18 октября 15–18 часов.",
+  "ending": "Задачи распределены по времени и подтверждены участниками. Матео не покупает лишние стаканы и не дублирует получение ключа; выполненные пункты будут отмечены после реальных сообщений.",
+  "challenges": [
+   {
+    "id": "meaning",
+    "kind": "match",
+    "title": "Не нужно, нельзя или только это?",
+    "intro": "Определите смысл фразы, а не только отрицание.",
+    "success": "Необходимость, запрет и объём различены.",
+    "wrong": "Brauchen с отрицанием снимает необходимость; dürfen запрещает.",
+    "options": [
+     {
+      "id": "optional",
+      "label": "не требуется"
+     },
+     {
+      "id": "forbidden",
+      "label": "запрещено"
+     },
+     {
+      "id": "limited",
+      "label": "ограниченная задача"
+     }
+    ],
+    "slots": [
+     {
+      "id": "a",
+      "label": "Du brauchst nicht zu kommen.",
+      "answer": "optional"
+     },
+     {
+      "id": "b",
+      "label": "Du darfst nicht kommen.",
+      "answer": "forbidden"
+     },
+     {
+      "id": "c",
+      "label": "Du brauchst nur die Liste zu prüfen.",
+      "answer": "limited"
+     }
+    ]
+   },
+   {
+    "id": "alone",
+    "kind": "order",
+    "title": "Снимите перегрузку понятной фразой",
+    "intro": "Сохраните zu в письменной модели.",
+    "success": "Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.",
+    "wrong": "Проверьте положение глагола и конец предложения: используйте все фрагменты.",
+    "tokens": [
+     "Du brauchst",
+     "nicht",
+     "alles allein",
+     "zu machen."
+    ],
+    "label": "Реплика для команды"
+   },
+   {
+    "id": "todo",
+    "kind": "select",
+    "title": "Что остаётся у Матео?",
+    "intro": "Прочитайте список распределения.",
+    "success": "Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы одно из них.",
+    "wrong": "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание и адресата.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Bestätigt: Raum C mit Küche, 18. Oktober 15–18 Uhr, 40 Euro. Hauke holt den Schlüssel 14:30 ab und gibt ihn bis 18:15 in die Schlüsselbox zurück. Ab 17:40 räumen alle gemeinsam auf; 18:00 verlassen sie den Raum. Elif leiht am Freitag Mehrwegbecher aus. Bis Donnerstag prüft Mateo nur die Zutatenliste. Am Sonntag organisiert er das Essen. Er braucht keine Becher zu kaufen und den Schlüssel nicht selbst abzuholen. Abholung der Becher ist eine Aufgabe, noch kein erledigter Punkt.",
+      "name": "Was bleibt für wen? · Ausschnitt"
+     }
+    ],
+    "options": [
+     {
+      "id": "o0",
+      "label": "Проверить ингредиенты и организовать еду"
+     },
+     {
+      "id": "o1",
+      "label": "Самому купить стаканы"
+     },
+     {
+      "id": "o2",
+      "label": "Лично забрать ключ вместо Хауке"
+     }
+    ],
+    "answer": [
+     "o0"
+    ]
+   },
+   {
+    "id": "return",
+    "kind": "clock",
+    "title": "Крайний срок возврата ключа",
+    "intro": "Не перепутайте его с выходом из зала.",
+    "success": "Из зала выходят 18:00, ключ возвращают до 18:15.",
+    "wrong": "Нужно 18:15 — срок ключа, не 18:00 — выход.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Bestätigt: Raum C mit Küche, 18. Oktober 15–18 Uhr, 40 Euro. Hauke holt den Schlüssel 14:30 ab und gibt ihn bis 18:15 in die Schlüsselbox zurück. Ab 17:40 räumen alle gemeinsam auf; 18:00 verlassen sie den Raum. Elif leiht am Freitag Mehrwegbecher aus. Bis Donnerstag prüft Mateo nur die Zutatenliste. Am Sonntag organisiert er das Essen. Er braucht keine Becher zu kaufen und den Schlüssel nicht selbst abzuholen. Abholung der Becher ist eine Aufgabe, noch kein erledigter Punkt.",
+      "name": "Was bleibt für wen? · Ausschnitt"
+     }
+    ],
+    "answer": "18:15",
+    "initial": "18:00",
+    "minuteStep": 5
+   },
+   {
+    "id": "delegate",
+    "kind": "negotiation",
+    "title": "Получите реальную помощь, а не новое обещание за другого",
+    "intro": "Матео работает в пятницу. Согласуйте другой вариант.",
+    "success": "Помощь подтверждена, её выполнение ещё будет проверено.",
+    "wrong": "Учтите смену и дождитесь согласия другого участника.",
+    "start": "a",
+    "nodes": [
+     {
+      "id": "a",
+      "text": "Mateo: Am Freitag arbeite ich ab 17 Uhr. Die zusätzliche Abholung schaffe ich nicht.",
+      "choices": [
+       {
+        "label": "Dann fragen wir Elif nach der Abholung.",
+        "next": "c",
+        "feedback": "Вы предлагаете проверить другую возможность."
+       },
+       {
+        "label": "Du solltest trotzdem alles selbst abholen.",
+        "next": "b",
+        "feedback": "Это не учитывает названное ограничение."
+       }
+      ]
+     },
+     {
+      "id": "b",
+      "text": "Mateo: Dann komme ich nicht rechtzeitig zur Arbeit. Wir brauchen eine andere Verteilung.",
+      "choices": [
+       {
+        "label": "Stimmt. Wir fragen Elif, statt die Aufgabe einfach festzulegen.",
+        "next": "c",
+        "feedback": "Вы исправили предложение после возражения."
+       }
+      ]
+     },
+     {
+      "id": "c",
+      "text": "Elif: Ich kann die Becher am Freitag holen und danach eine Nachricht schicken.",
+      "choices": [
+       {
+        "label": "Danke. Dann braucht Mateo keine Becher zu kaufen. Wir warten auf deine Rückmeldung.",
+        "next": "end",
+        "feedback": "Есть согласие, задача и проверка выполнения."
+       }
+      ]
+     },
+     {
+      "id": "end",
+      "text": "Elif: Einverstanden. Nach der Abholung bestätige ich, dass die Becher da sind.",
+      "terminal": true,
+      "choices": []
+     }
+    ]
+   }
+  ]
+ },
+ "spy": []
+}

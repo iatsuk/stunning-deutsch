@@ -3,10 +3,10 @@ order: 8
 title: "Zwei Zimmer, Küche, Bad"
 ru: Жильё
 lede: >-
-  Марко ищет квартиру в Лейпциге: вместе с Анной читает объявление, а потом
-  идёт смотреть квартиру с хозяином. Учимся называть комнаты и мебель,
-  говорить, где что стоит, и расшифровывать сокращения в объявлениях. Новая
-  грамматика — сложные слова и дательный падеж после in и auf.
+  Лусия и Диего обсуждают более долгий визит в Киль. Матео помогает найти жильё для гостей:
+  читает объявления с Даной и осматривает квартиру на Holtenauer Straße. Учимся сравнивать
+  условия, понимать сложные слова и находить вещи по описаниям *im Keller*, *in der Küche*,
+  *auf dem Balkon*.
 goals:
   - "Назвать комнаты, мебель и технику в квартире"
   - "Сказать, где что стоит: im Keller, in der Küche, auf dem Balkon"
@@ -17,19 +17,19 @@ grammar:
   - "Дательный после in и auf на вопрос «где?»"
   - "im = in dem"
   - "Прилагательное после sein"
-exam: [lesen-2, lesen-3]
+exam: [ lesen-2, lesen-3 ]
 
 dialogues:
   anzeige:
-    title: Marco sucht eine Wohnung
-    ru: Марко ищет квартиру
-    place: Café, Leipzig
+    title: Eine Wohnung für die Gäste
+    ru: Жильё для гостей
+    place: Café Brunswik, Kiel · учебные объявления и цены
     people:
-      M: { name: Marco, voice: Reed }
-      A: { name: Anna, voice: Anna }
+      M: { name: Mateo, voice: Reed }
+      A: { name: Dana, voice: Anna }
     lines:
-      - M: Anna, ich suche eine Wohnung. Mein Zimmer im Wohnheim ist zu klein.
-        ru: Анна, я ищу квартиру. Моя комната в общежитии слишком маленькая.
+      - M: Dana, Lucía und Diego suchen eine Wohnung. Ihr Zimmer ist zu klein.
+        ru: Дана, Лусия и Диего ищут квартиру. Их комната слишком маленькая.
       - A: "Hier ist eine Anzeige: zwei Zimmer, Küche, Bad und Balkon!"
         ru: Вот объявление — две комнаты, кухня, ванная и балкон!
       - M: Klingt gut! Was kostet die Wohnung?
@@ -38,24 +38,24 @@ dialogues:
         ru: 450 евро «холодными» плюс 130 евро коммунальных.
       - M: Kalt? Was bedeutet das?
         ru: «Холодными»? Что это значит?
-      - A: Kalt – das ist nur die Miete. Heizung und Wasser kosten extra.
-        ru: «Холодная» — это только аренда. Отопление и вода — отдельно.
+      - A: Hier ist die Kaltmiete nur die Miete. Heizung und Wasser kosten extra.
+        ru: Здесь холодная аренда — только плата за квартиру. Отопление и вода оплачиваются отдельно.
       - M: Und wo ist die Wohnung?
         ru: А где квартира?
-      - A: In Gohlis, in der Lindenstraße. Das ist nicht weit.
-        ru: В Голисе, на Линденштрассе. Это недалеко.
+      - A: In Kiel, in der Holtenauer Straße. Das ist nicht weit.
+        ru: В Киле, на Holtenauer Straße. Это недалеко.
       - M: Super, ich rufe gleich an!
         ru: Супер, сейчас же позвоню!
   besichtigung:
     title: Die Wohnungsbesichtigung
     ru: Смотрим квартиру
-    place: Lindenstraße, Leipzig-Gohlis
+    place: Вымышленная квартира на Holtenauer Straße, Kiel
     people:
       K: { name: Herr Krüger, voice: Eddy }
-      M: { name: Marco, voice: Reed }
+      M: { name: Mateo, voice: Reed }
     lines:
-      - K: Guten Tag, Herr Rossi! Hier ist der Flur, und links ist das Wohnzimmer.
-        ru: Добрый день, господин Росси! Вот прихожая, а слева гостиная.
+      - K: Guten Tag, Herr Fernández! Hier ist der Flur, und links ist das Wohnzimmer.
+        ru: Добрый день, господин Фернандес! Вот прихожая, а слева гостиная.
       - M: Oh, das Wohnzimmer ist groß und hell!
         ru: О, гостиная большая и светлая!
       - K: Ja, und hier ist der Balkon. Auf dem Balkon haben Sie am Nachmittag Sonne.
@@ -72,8 +72,8 @@ dialogues:
         ru: А в спальне тихо?
       - K: Ja, sehr ruhig. Im Schlafzimmer steht auch ein Kleiderschrank.
         ru: Да, очень тихо. И в спальне стоит платяной шкаф.
-      - M: Die Wohnung ist perfekt! Ich nehme sie.
-        ru: Квартира идеальная! Я её беру.
+      - M: Ich finde sie gut. Ich rufe Lucía und Diego an.
+        ru: Квартира мне нравится. Я позвоню Лусии и Диего.
 
 words:
   wohnung:
@@ -90,7 +90,12 @@ words:
       - { de: der Flur, ru: прихожая, pl: Flure }
       - { de: der Balkon, ru: балкон, pl: Balkone, note: auf dem Balkon }
       - { de: der Keller, ru: подвал, pl: Keller, note: im Keller }
-      - { de: das Treppenhaus, ru: лестничная клетка, pl: Treppenhäuser, note: die Treppe + das Haus }
+      - {
+          de: das Treppenhaus,
+          ru: лестничная клетка,
+          pl: Treppenhäuser,
+          note: die Treppe + das Haus
+        }
       - { de: das Wohnheim, ru: общежитие, pl: Wohnheime }
   moebel:
     title: Möbel und Geräte
@@ -102,11 +107,26 @@ words:
       - { de: das Bett, ru: кровать, pl: Betten }
       - { de: das Sofa, ru: диван, pl: Sofas }
       - { de: der Schrank, ru: шкаф, pl: Schränke }
-      - { de: der Kleiderschrank, ru: платяной шкаф, pl: Kleiderschränke, note: die Kleider + der Schrank }
+      - {
+          de: der Kleiderschrank,
+          ru: платяной шкаф,
+          pl: Kleiderschränke,
+          note: die Kleider + der Schrank
+        }
       - { de: der Kühlschrank, ru: холодильник, pl: Kühlschränke, note: kühl + der Schrank }
       - { de: der Herd, ru: плита, pl: Herde }
-      - { de: die Waschmaschine, ru: стиральная машина, pl: Waschmaschinen, note: waschen + die Maschine }
-      - { de: der Schreibtisch, ru: письменный стол, pl: Schreibtische, note: schreiben + der Tisch }
+      - {
+          de: die Waschmaschine,
+          ru: стиральная машина,
+          pl: Waschmaschinen,
+          note: waschen + die Maschine
+        }
+      - {
+          de: der Schreibtisch,
+          ru: письменный стол,
+          pl: Schreibtische,
+          note: schreiben + der Tisch
+        }
       - { de: die Lampe, ru: лампа, pl: Lampen }
   eigenschaften:
     title: Wie ist die Wohnung?
@@ -116,7 +136,11 @@ words:
       - { de: hell – dunkel, ru: светлый — тёмный }
       - { de: ruhig – laut, ru: тихий — шумный }
       - { de: neu – alt, ru: новый — старый }
-      - { de: teuer – günstig, ru: дорогой — недорогой, note: "billig — дешёвый, часто с оттенком «дешёвка»" }
+      - {
+          de: teuer – günstig,
+          ru: дорогой — недорогой,
+          note: "billig — дешёвый, часто с оттенком «дешёвка»"
+        }
       - { de: schön, ru: красивый }
       - { de: modern, ru: современный }
       - { de: frei, ru: свободный, note: ab sofort frei — свободна сразу }
@@ -141,57 +165,57 @@ tables:
   komposita:
     title: Zusammengesetzte Wörter
     ru: Сложные слова
-    head: [Wort 1, Wort 2, Kompositum, По-русски]
-    ruCols: [3]
+    head: [ Wort 1, Wort 2, Kompositum, По-русски ]
+    ruCols: [ 3 ]
     rows:
-      - [schlafen, das Zimmer, das Schlaf*zimmer*, спальня]
-      - [wohnen, das Zimmer, das Wohn*zimmer*, гостиная]
-      - [kühl, der Schrank, der Kühl*schrank*, холодильник]
-      - [die Kleider, der Schrank, der Kleider*schrank*, платяной шкаф]
-      - [waschen, die Maschine, die Wasch*maschine*, стиральная машина]
-      - [das Haus, die Tür, die Haus*tür*, входная дверь]
-      - [die Treppe, das Haus, das Treppen*haus*, лестничная клетка]
+      - [ schlafen, das Zimmer, das Schlaf*zimmer*, спальня ]
+      - [ wohnen, das Zimmer, das Wohn*zimmer*, гостиная ]
+      - [ kühl, der Schrank, der Kühl*schrank*, холодильник ]
+      - [ die Kleider, der Schrank, der Kleider*schrank*, платяной шкаф ]
+      - [ waschen, die Maschine, die Wasch*maschine*, стиральная машина ]
+      - [ das Haus, die Tür, die Haus*tür*, входная дверь ]
+      - [ die Treppe, das Haus, das Treppen*haus*, лестничная клетка ]
     note: Род и множественное число — по последней части. Ударение — на первой.
   dativ:
     title: "in / auf + Dativ"
     ru: Где? — дательный падеж
-    head: [Род, "Wer? Was?", "Wo?"]
-    ruCols: [0]
+    head: [ Род, "Wer? Was?", "Wo?" ]
+    ruCols: [ 0 ]
     rows:
-      - [мужской, der Balkon, auf d+em Balkon]
-      - [средний, das Haus, in d+em Haus]
-      - [женский, die Küche, in d+er Küche]
-      - [мужской, ein Balkon, auf ein+em Balkon]
-      - [средний, ein Haus, in ein+em Haus]
-      - [женский, eine Küche, in ein+er Küche]
+      - [ мужской, der Balkon, auf d+em Balkon ]
+      - [ средний, das Haus, in d+em Haus ]
+      - [ женский, die Küche, in d+er Küche ]
+      - [ мужской, ein Balkon, auf ein+em Balkon ]
+      - [ средний, ein Haus, in ein+em Haus ]
+      - [ женский, eine Küche, in ein+er Küche ]
     note: "Во множественном числе — *den*, а к слову добавляется *-n*: *in den Zimmern*."
   kurz:
     title: im = in dem
     ru: Предлог и артикль сливаются
-    head: [Präposition + Artikel, Form, Beispiel]
+    head: [ Präposition + Artikel, Form, Beispiel ]
     rows:
-      - [in + d+em, im, Die Waschmaschine steht im Keller.]
-      - [an + d+em, am, Am Montag besichtigt Marco die Wohnung.]
-      - [auf + d+em, auf dem, Wir sitzen auf dem Balkon.]
-      - [in + d+er, in der, Der Herd ist in der Küche.]
+      - [ in + d+em, im, Die Waschmaschine steht im Keller. ]
+      - [ an + d+em, am, Am Montag besichtigt Mateo die Wohnung. ]
+      - [ auf + d+em, auf dem, Wir sitzen auf dem Balkon. ]
+      - [ in + d+er, in der, Der Herd ist in der Küche. ]
     note: "*in* и *an* сливаются с *dem*. *auf dem* и *in der* остаются как есть."
   abk:
     title: Abkürzungen in Wohnungsanzeigen
     ru: Сокращения в объявлениях
-    head: [Abkürzung, Bedeutung, По-русски]
-    ruCols: [2]
+    head: [ Abkürzung, Bedeutung, По-русски ]
+    ruCols: [ 2 ]
     rows:
-      - [Zi., Zimmer, комната]
-      - [Whg., Wohnung, квартира]
-      - [Kü. / EBK, Küche / Einbauküche, кухня / встроенная кухня с техникой]
-      - [Blk., Balkon, балкон]
-      - [m² / qm, Quadratmeter, квадратный метр]
-      - [KM, Kaltmiete, аренда без коммунальных]
-      - [NK, Nebenkosten, коммунальные платежи]
-      - [WM, Warmmiete, аренда вместе с коммунальными]
-      - [EG / 1. OG, Erdgeschoss / 1. Obergeschoss, наш 1-й этаж / наш 2-й этаж]
-      - [ab sof., ab sofort, сразу]
-      - [möbl., möbliert, с мебелью]
+      - [ Zi., Zimmer, комната ]
+      - [ Whg., Wohnung, квартира ]
+      - [ Kü. / EBK, Küche / Einbauküche, кухня / встроенная кухня с техникой ]
+      - [ Blk., Balkon, балкон ]
+      - [ m² / qm, Quadratmeter, квадратный метр ]
+      - [ KM, Kaltmiete, аренда без коммунальных ]
+      - [ NK, Nebenkosten, коммунальные платежи ]
+      - [ WM, Warmmiete, аренда вместе с коммунальными ]
+      - [ EG / 1. OG, Erdgeschoss / 1. Obergeschoss, наш 1-й этаж / наш 2-й этаж ]
+      - [ ab sof., ab sofort, сразу ]
+      - [ möbl., möbliert, с мебелью ]
 
 tasks:
   anzeigen:
@@ -200,19 +224,19 @@ tasks:
     title: Wohnungsanzeigen
     situation: Sie suchen eine Wohnung mit Balkon. Sie möchten maximal 600 Euro warm bezahlen.
     options:
-      - title: "Plagwitz: 2-Zi.-Whg. mit Blk."
+      - title: "Wik: 2-Zi.-Whg. mit Blk."
         text: |-
           55 m², 2. OG, EBK
           KM 520 €, NK 150 €
           ab sofort frei
-          Tel. 0341 / 56 23 89
-      - title: Schöne 2-Zi.-Whg. in Lindenau
+          Tel. 0431 / 56 23 89
+      - title: 2-Zi.-Whg. nahe Holtenauer Straße
         text: |-
           48 m², 1. OG, Blk.
           ruhig und hell
-          WM 590 €
+          WM 580 €
           ab sofort frei
-          Tel. 0341 / 98 47 12
+          Tel. 0431 / 98 47 12
     answer: 1
   hausordnung:
     kind: sign
@@ -227,79 +251,82 @@ tasks:
       Die Mülltonnen stehen im Hof.
     statement: Ihr Fahrrad kann im Treppenhaus stehen.
     answer: false
+  schluessel:
+    kind: message
+    part: lesen-1
+    title: Nachricht für die Gäste
+    from: Herr Krüger
+    text: Der Hausschlüssel ist auf dem Tisch im Wohnzimmer, nicht im Schlafzimmer. Das Sofa ist
+      auch im Wohnzimmer.
 
 steps:
   - id: anzeige
     chapter: scene
-    title: Марко ищет квартиру
+    title: Жильё для Лусии и Диего
     beats:
       - read: >-
-          Марко живёт в общежитии, и комната ему тесна: *Mein Zimmer im
-          Wohnheim ist zu klein.* Анна тут же находит объявление: *zwei
-          Zimmer, Küche, Bad und Balkon*. Так в Германии описывают квартиру —
-          числом комнат. Кухня и ванная в это число не входят: *2-Zimmer-Wohnung*
-          — это две жилые комнаты плюс кухня и ванная, по-нашему «двушка».
+          Гости Матео ищут квартиру: *Lucía und Diego suchen eine Wohnung. Ihr Zimmer ist zu
+          klein.* Сам Матео по-прежнему живёт в Holtenau и помогает с чтением объявления. Дана
+          находит *zwei Zimmer, Küche, Bad und Balkon*. В таком объявлении *2-Zimmer-Wohnung*
+          означает две жилые комнаты; кухня и ванная указаны отдельно. Все объявления и цены в
+          теме вымышлены для языковых задач.
         point: "*2-Zimmer-Wohnung* — две комнаты; кухня и ванная не в счёт"
         set: { view: dialogue, dialogue: anzeige, reveal: 2 }
       - read: >-
-          Главный вопрос — цена. *450 Euro kalt* — это «холодная» аренда, *die
-          Kaltmiete*: плата только за саму квартиру. Отопление, вода и вывоз
-          мусора — *die Nebenkosten*, их платят сверху. Вместе получается *die
-          Warmmiete*, «тёплая» аренда. Сравнивайте объявления всегда по ней: у
-          Марко выйдет 580 евро в месяц, а не 450.
+          В этой учебной смете *450 Euro kalt* — базовая плата за квартиру. Указанные *130 Euro
+          Nebenkosten* прибавляются отдельно: получается 580 евро. Так читаем связь
+          *Kaltmiete*, *Nebenkosten*, *Warmmiete* в данном объявлении. Не считайте слово *warm*
+          обещанием включить абсолютно любые расходы: для задачи учитываем именно названные
+          строки. Это пример чтения объявления, а не описание текущих цен аренды в Киле.
         point: "*Kaltmiete* + *Nebenkosten* = *Warmmiete*"
-        set: { reveal: 6, focus: [3, 4, 5] }
+        set: { reveal: 6, focus: [ 3, 4, 5 ] }
       - read: >-
-          Где квартира? *In Gohlis, in der Lindenstraße* — в районе Голис, на
-          Линденштрассе. По-русски мы живём «на улице», а немцы — «в улице»:
-          *in der Straße*. Вы уже видели это в первой теме: *in der
-          Goethestraße*. Почему *der*, если улица — *die Straße*, — главный
-          вопрос этой темы. А Марко не теряет времени: *Ich rufe gleich an!*
+          Квартира находится *in Kiel, in der Holtenauer Straße*. Улица знакома по школе и
+          покупкам. По-русски живут «на улице», а здесь нужен *in der Straße*. Почему *der*,
+          если слово *die Straße*, — вопрос этой темы. Матео говорит *Ich rufe gleich an*:
+          сначала он уточнит условия, затем передаст информацию Лусии и Диего. Решение о жилье
+          остаётся за гостями.
         point: "Улица — *in der …straße*: по-немецки «в улице», а не «на»"
-        set: { reveal: 9, focus: [6, 7, 8] }
+        set: { reveal: 9, focus: [ 6, 7, 8 ] }
 
   - id: besichtigung
     chapter: scene
     title: Смотрим квартиру
     beats:
       - read: >-
-          Хозяин квартиры, господин Крюгер, показывает комнаты: *der Flur* —
-          прихожая, *das Wohnzimmer* — гостиная. Марко доволен: *Das
-          Wohnzimmer ist groß und hell!* Прилагательное после *ist* остаётся в
-          словарной форме — вы уже видели это в теме о покупках: *zu groß*,
-          *zu teuer*. По-русски «гостиная светлая», но «балкон светлый», а
+          Хозяин квартиры, господин Крюгер, показывает комнаты: *der Flur* — прихожая, *das
+          Wohnzimmer* — гостиная. Матео доволен: *Das Wohnzimmer ist groß und hell!*
+          Прилагательное после *ist* остаётся в словарной форме — вы уже видели это в теме о
+          покупках: *zu groß*, *zu teuer*. По-русски «гостиная светлая», но «балкон светлый», а
           по-немецки и то и другое — просто *hell*.
         point: "После *sein* прилагательное без окончания: *Das Zimmer ist hell.*"
         set: { view: dialogue, dialogue: besichtigung, reveal: 2 }
       - read: >-
-          Теперь ответы на вопрос «где?». *Auf dem Balkon* — на балконе, *in
-          der Küche* — на кухне. После *in* и *auf* артикль меняет форму: *der
-          Balkon* превращается в *dem Balkon*, *die Küche* — в *der Küche*. Это
-          дательный падеж. Заметьте и разницу с русским: кухня у немцев тоже
-          «внутри» — *in der Küche*, а не «на».
+          Теперь ответы на вопрос «где?». *Auf dem Balkon* — на балконе, *in der Küche* — на
+          кухне. После *in* и *auf* артикль меняет форму: *der Balkon* превращается в *dem
+          Balkon*, *die Küche* — в *der Küche*. Это дательный падеж. Заметьте и разницу с
+          русским: кухня у немцев тоже «внутри» — *in der Küche*, а не «на».
         point: "*auf dem Balkon* — на балконе, *in der Küche* — на кухне"
-        set: { reveal: 5, focus: [2, 3, 4] }
+        set: { reveal: 5, focus: [ 2, 3, 4 ] }
       - read: >-
-          Стиральной машины в ванной нет: *sie steht im Keller*. *im* — это
-          *in dem*, слитые в одно слово. Во многих немецких домах стиральные
-          машины стоят в общем подвале. Мебель и технику немцы описывают
-          глаголом *stehen* — «стоять»: *Im Schlafzimmer steht ein
-          Kleiderschrank.* А в конце Марко решается: *Ich nehme sie* — «беру
-          её». *sie* — это *die Wohnung*.
+          Стиральной машины в ванной нет: *sie steht im Keller*. *Im* — это *in dem*, слитые в
+          одно слово. В этой квартире машина стоит в подвале, а шкаф — в спальне: *Im
+          Schlafzimmer steht auch ein Kleiderschrank*. В конце Матео говорит *Ich finde sie
+          gut. Ich rufe Lucía und Diego an.* *Sie* заменяет *die Wohnung*. Он передаёт гостям
+          впечатление, а не принимает за них окончательное решение.
         point: "*im* = *in dem*: *im Keller*, *im Bad*, *im Schlafzimmer*"
-        set: { reveal: 10, focus: [5, 6, 8, 9] }
+        set: { reveal: 10, focus: [ 5, 6, 8, 9 ] }
 
   - id: raeume
     chapter: words
     title: Комнаты
     beats:
       - read: >-
-          Посмотрите на род: *das Wohnzimmer*, *das Schlafzimmer* — средний,
-          как *das Zimmer*, хотя по-русски «гостиная» и «спальня» женского
-          рода. Ванную называют коротко *das Bad* или полностью *das
-          Badezimmer*. Не путайте *die Wohnung* — квартиру — и *das Haus* —
-          дом, здание. У *Zimmer* множественное число совпадает с
-          единственным: *ein Zimmer, zwei Zimmer*.
+          Посмотрите на род: *das Wohnzimmer*, *das Schlafzimmer* — средний, как *das Zimmer*,
+          хотя по-русски «гостиная» и «спальня» женского рода. Ванную называют коротко *das
+          Bad* или полностью *das Badezimmer*. Не путайте *die Wohnung* — квартиру — и *das
+          Haus* — дом, здание. У *Zimmer* множественное число совпадает с единственным: *ein
+          Zimmer, zwei Zimmer*.
         point: "*das Wohnzimmer*, *das Schlafzimmer* — средний род, как *das Zimmer*"
         set: { view: words, words: wohnung }
 
@@ -308,12 +335,11 @@ steps:
     title: Мебель и техника
     beats:
       - read: >-
-          Немецкий охотно склеивает слова. *der Kühlschrank* — «холодный
-          шкаф», то есть холодильник. *der Kleiderschrank* — «шкаф для
-          одежды», *der Schreibtisch* — «стол для письма». Где русский берёт
-          прилагательное или суффикс, немецкий просто ставит слова подряд. А
-          *die Möbel* — «мебель» — обычно употребляют во множественном числе:
-          *Die Möbel sind neu.*
+          Немецкий охотно склеивает слова. *der Kühlschrank* — «холодный шкаф», то есть
+          холодильник. *der Kleiderschrank* — «шкаф для одежды», *der Schreibtisch* — «стол для
+          письма». Где русский берёт прилагательное или суффикс, немецкий просто ставит слова
+          подряд. А *die Möbel* — «мебель» — обычно употребляют во множественном числе: *Die
+          Möbel sind neu.*
         point: "*der Kühlschrank* = *kühl* + *der Schrank*: немецкий склеивает слова"
         set: { view: words, words: moebel }
 
@@ -322,12 +348,11 @@ steps:
     title: Какая квартира?
     beats:
       - read: >-
-          Прилагательные удобно учить парами: *groß – klein*, *hell –
-          dunkel*, *ruhig – laut*. О цене в объявлениях пишут *günstig* —
-          «недорогой», «выгодный». *billig* тоже значит «дешёвый», но часто с
-          оттенком «дешёвка», поэтому о квартире так говорят редко. *möbliert*
-          — «с мебелью»: в такую квартиру можно въехать, не купив ни одного
-          стула.
+          При описании квартиры полезны пары *groß – klein*, *hell – dunkel*, *ruhig – laut*.
+          *Günstig* — «недорогой» или «выгодный», *billig* — «дешёвый»; оттенок зависит от
+          контекста. *Möbliert* сообщает о мебели, но конкретный набор ищут в тексте
+          объявления. В игре нельзя выбрать вариант только по одному привлекательному слову:
+          должны совпасть условия.
         point: "*günstig* — недорогой, *billig* — дешёвый, часто с оттенком «дешёвка»"
         set: { view: words, words: eigenschaften }
 
@@ -336,11 +361,11 @@ steps:
     title: Аренда
     beats:
       - read: >-
-          В Германии квартиры чаще снимают, чем покупают. *mieten* —
-          «снимать», *der Vermieter* — хозяин, который сдаёт квартиру, *die
-          Miete* — плата за неё. Площадь считают в квадратных метрах: *der
-          Quadratmeter*, в объявлениях — *m²* или *qm*. И ловушка с этажами:
-          *das Erdgeschoss* — это наш первый этаж, а *1. OG* — уже второй.
+          *Mieten* — снимать жильё, *der Vermieter* — тот, кто его сдаёт, *die Miete* — плата.
+          Площадь обозначают *m²* или *qm*: *der Quadratmeter*. *Erdgeschoss*, сокращённо *EG*,
+          — этаж на уровне земли; *1. OG* — следующий над ним. Это помогает понимать объявления
+          и находить нужный этаж. Наши герои используют вымышленные предложения, а не выбирают
+          реальный договор.
         point: "*das Erdgeschoss* (*EG*) — наш первый этаж, *1. OG* — второй"
         set: { view: words, words: miete }
 
@@ -349,54 +374,49 @@ steps:
     title: Слово из слов
     beats:
       - read: >-
-          В сложном слове главная — последняя часть. Она называет предмет и
-          даёт ему род: *das Haus* + *die Tür* = *die Haustür*, ведь это
-          дверь, а не дом. И наоборот: *die Treppe* + *das Haus* = *das
-          Treppenhaus*, лестничная клетка. Множественное число — тоже по
-          последней части: *die Kühlschränke*, как *die Schränke*. А ударение
-          падает на первую: *KÜHLschrank*.
+          В сложном слове главная — последняя часть. Она называет предмет и даёт ему род: *das
+          Haus* + *die Tür* = *die Haustür*, ведь это дверь, а не дом. И наоборот: *die Treppe*
+          + *das Haus* = *das Treppenhaus*, лестничная клетка. Множественное число — тоже по
+          последней части: *die Kühlschränke*, как *die Schränke*. А ударение падает на первую:
+          *KÜHLschrank*.
         point: "Род и мн. ч. — по последней части: *die Haustür*, *das Treppenhaus*"
-        set: { view: table, table: komposita, focus: [2, 5, 6] }
+        set: { view: table, table: komposita, focus: [ 2, 5, 6 ] }
 
   - id: wo
     chapter: grammar
     title: Где? — дательный падеж
     beats:
       - read: >-
-          На вопрос *Wo?* — «где?» — после *in* и *auf* артикль меняет форму.
-          Это дательный падеж, *der Dativ*. Мужской и средний род получают
-          *dem*: *der Balkon* → *auf dem Balkon*, *das Haus* → *in dem Haus*.
-          Русский тоже меняет окончание — «на балконе», «в доме». Разница в
-          том, что немецкий меняет не само слово, а артикль перед ним.
+          На вопрос *Wo?* — «где?» — после *in* и *auf* артикль меняет форму. Это дательный
+          падеж, *der Dativ*. Мужской и средний род получают *dem*: *der Balkon* → *auf dem
+          Balkon*, *das Haus* → *in dem Haus*. Русский тоже меняет окончание — «на балконе», «в
+          доме». Разница в том, что немецкий меняет не само слово, а артикль перед ним.
         point: "*Wo?* + *in* / *auf* → дательный: *der*, *das* → *dem*"
-        set: { view: table, table: dativ, reveal: 3, focus: [0, 1] }
+        set: { view: table, table: dativ, reveal: 3, focus: [ 0, 1 ] }
       - read: >-
-          Самая коварная строка — женский род: *die Küche* → *in der Küche*.
-          Да, *der* — тот же артикль, что у мужского рода в именительном
-          падеже. Не пугайтесь: *der Tisch* — «стол», а *in der Küche* — «на
-          кухне», после предлога путаницы не бывает. Главное — не говорить
-          *in die Küche* на вопрос «где?»: это значит «на кухню», куда.
-        point: "Женский род: *die* → *der*: *in der Küche*, *in der Lindenstraße*"
-        set: { focus: [2] }
+          Самая коварная строка — женский род: *die Küche* → *in der Küche*. Да, *der* — тот же
+          артикль, что у мужского рода в именительном падеже. Не пугайтесь: *der Tisch* —
+          «стол», а *in der Küche* — «на кухне», после предлога путаницы не бывает. Главное —
+          не говорить *in die Küche* на вопрос «где?»: это значит «на кухню», куда.
+        point: "Женский род: *die* → *der*: *in der Küche*, *in der Holtenauer Straße*"
+        set: { focus: [ 2 ] }
       - read: >-
-          С неопределённым артиклем окончания те же: *-em* для мужского и
-          среднего рода, *-er* для женского. *ein Haus* → *in einem Haus*,
-          *eine Wohnung* → *in einer Wohnung*. Сравните пары: *d+em* —
-          *ein+em*, *d+er* — *ein+er*. Запомните два окончания, *-em* и *-er*,
-          — и дательный падеж в единственном числе у вас в руках.
+          С неопределённым артиклем окончания те же: *-em* для мужского и среднего рода, *-er*
+          для женского. *ein Haus* → *in einem Haus*, *eine Wohnung* → *in einer Wohnung*.
+          Сравните пары: *d+em* — *ein+em*, *d+er* — *ein+er*. Запомните два окончания, *-em* и
+          *-er*, — и дательный падеж в единственном числе у вас в руках.
         point: "*ein+em* — мужской и средний род, *ein+er* — женский: *in einer Wohnung*"
-        set: { reveal: 6, focus: [3, 4, 5] }
+        set: { reveal: 6, focus: [ 3, 4, 5 ] }
 
   - id: im
     chapter: grammar
     title: im = in dem
     beats:
       - read: >-
-          *in dem* немцы почти всегда сливают в одно слово: *im Keller*, *im
-          Bad*, *im Wohnzimmer*. Полную форму вы услышите редко. С *auf*
-          такого слияния нет — *auf dem Balkon*, и с женским родом тоже — *in
-          der Küche*. А *am* вы уже знаете по *am Montag*: это тоже слияние,
-          *an dem*. Тот же механизм, только с другим предлогом.
+          *in dem* немцы почти всегда сливают в одно слово: *im Keller*, *im Bad*, *im
+          Wohnzimmer*. Полную форму вы услышите редко. С *auf* такого слияния нет — *auf dem
+          Balkon*, и с женским родом тоже — *in der Küche*. А *am* вы уже знаете по *am
+          Montag*: это тоже слияние, *an dem*. Тот же механизм, только с другим предлогом.
         point: "*in dem* → *im*, *an dem* → *am*; *auf dem* и *in der* не сливаются"
         set: { view: table, table: kurz }
 
@@ -405,29 +425,26 @@ steps:
     title: Место в предложении
     beats:
       - read: >-
-          Ответ на вопрос «где?» — целая группа: *im Keller*, *in der Küche*,
-          *auf dem Balkon*. В предложении она занимает одну позицию — как *in
-          Leipzig* в первой теме. Обычно группа стоит в середине, после
-          глагола: *Die Waschmaschine steht im Keller.* Вещи в квартире,
-          кстати, «стоят»: шкаф, кровать и машина *stehen*, а не просто
-          *sind*.
+          Ответ на вопрос «где?» — целая группа: *im Keller*, *in der Küche*, *auf dem Balkon*.
+          В предложении она занимает одну позицию — как *in Kiel* в первой теме. Обычно группа
+          стоит в середине, после глагола: *Die Waschmaschine steht im Keller.* Вещи в
+          квартире, кстати, «стоят»: шкаф, кровать и машина *stehen*, а не просто *sind*.
         point: "Место — одна позиция: *Die Waschmaschine steht im Keller.*"
         set:
           view: sentence
           rows:
-            - de: [Die Waschmaschine, steht, im Keller., ""]
+            - de: [ Die Waschmaschine, steht, im Keller., "" ]
               ru: Стиральная машина стоит в подвале.
       - read: >-
-          Поставим *im Keller* в начало — так говорил господин Крюгер: *Im
-          Schlafzimmer steht auch ein Kleiderschrank.* Группа переезжает
-          целиком, глагол *steht* остаётся на второй позиции, а подлежащее
-          уходит в середину. Так удобно описывать квартиру: сначала место,
-          потом то, что там есть. Разделить группу нельзя: *im* и *Keller*
+          Поставим *im Keller* в начало — так говорил господин Крюгер: *Im Schlafzimmer steht
+          auch ein Kleiderschrank.* Группа переезжает целиком, глагол *steht* остаётся на
+          второй позиции, а подлежащее уходит в середину. Так удобно описывать квартиру:
+          сначала место, потом то, что там есть. Разделить группу нельзя: *im* и *Keller*
           всегда вместе.
         point: "*Im Keller steht die Waschmaschine.* — место первым, глагол второй"
         set:
           rows:
-            - de: [Im Keller, steht, die Waschmaschine., ""]
+            - de: [ Im Keller, steht, die Waschmaschine., "" ]
               ru: В подвале стоит стиральная машина.
 
   - id: adjektiv
@@ -435,23 +452,22 @@ steps:
     title: Какая она?
     beats:
       - read: >-
-          Посмотрите на русский перевод: «большой», «большая», «большое»,
-          «большие» — прилагательное согласуется с существительным. В
-          немецком после *sein* оно не меняется вообще: *groß* для любого рода
-          и числа. Меняется только глагол — *ist* или *sind*. Окончания у
-          прилагательного появятся, когда оно встанет перед существительным,
-          но это уже другая тема.
+          Посмотрите на русский перевод: «большой», «большая», «большое», «большие» —
+          прилагательное согласуется с существительным. В немецком после *sein* оно не меняется
+          вообще: *groß* для любого рода и числа. Меняется только глагол — *ist* или *sind*.
+          Окончания у прилагательного появятся, когда оно встанет перед существительным, но это
+          уже другая тема.
         point: "После *sein* — без окончаний: *Der Balkon ist groß. Die Zimmer sind groß.*"
         set:
           view: sentence
           rows:
-            - de: [Der Balkon, ist, groß., ""]
+            - de: [ Der Balkon, ist, groß., "" ]
               ru: Балкон большой.
-            - de: [Die Küche, ist, groß., ""]
+            - de: [ Die Küche, ist, groß., "" ]
               ru: Кухня большая.
-            - de: [Das Fenster, ist, groß., ""]
+            - de: [ Das Fenster, ist, groß., "" ]
               ru: Окно большое.
-            - de: [Die Zimmer, sind, groß., ""]
+            - de: [ Die Zimmer, sind, groß., "" ]
               ru: Комнаты большие.
 
   - id: check
@@ -460,73 +476,67 @@ steps:
     beats:
       - question: Как сказать, что кровать стоит в спальне?
         read: >-
-          *Das Bett steht im Schlafzimmer.* *das Schlafzimmer* — средний род,
-          как *das Zimmer*, поэтому *in dem*, а вместе — *im*. Глагол —
-          *steht*: кровать, как и шкаф, «стоит». Две частые ошибки: *in das
-          Schlafzimmer* — артикль не изменился, и *auf dem Schlafzimmer* — в
-          комнате по-немецки всегда *in*. *auf* оставьте для поверхностей:
+          *Das Bett steht im Schlafzimmer.* *das Schlafzimmer* — средний род, как *das Zimmer*,
+          поэтому *in dem*, а вместе — *im*. Глагол — *steht*: кровать, как и шкаф, «стоит».
+          Две частые ошибки: *in das Schlafzimmer* — артикль не изменился, и *auf dem
+          Schlafzimmer* — в комнате по-немецки всегда *in*. *auf* оставьте для поверхностей:
           *auf dem Tisch*, *auf dem Balkon*.
         point: "*Das Bett steht im Schlafzimmer.* — комната всегда с *in*"
         set:
           view: sentence
           rows:
-            - de: [Das Bett, steht, im Schlafzimmer., ""]
+            - de: [ Das Bett, steht, im Schlafzimmer., "" ]
               ru: Кровать стоит в спальне.
       - question: Как спросить хозяина, тихая ли спальня?
         read: >-
-          *Ist das Schlafzimmer ruhig?* Это вопрос да/нет, поэтому глагол
-          *ist* встаёт в начало, а первая позиция пустеет. Прилагательное
-          *ruhig* остаётся без окончания и стоит в конце. Можно спросить и
-          короче: *Ist es ruhig?* — *es* заменяет *das Schlafzimmer*, потому
-          что слово среднего рода. А о кухне спросите *Ist sie groß?* — *die
-          Küche* женского рода.
+          *Ist das Schlafzimmer ruhig?* Это вопрос да/нет, поэтому глагол *ist* встаёт в
+          начало, а первая позиция пустеет. Прилагательное *ruhig* остаётся без окончания и
+          стоит в конце. Можно спросить и короче: *Ist es ruhig?* — *es* заменяет *das
+          Schlafzimmer*, потому что слово среднего рода. А о кухне спросите *Ist sie groß?* —
+          *die Küche* женского рода.
         point: "*Ist das Schlafzimmer ruhig?* — глагол первым, прилагательное без окончания"
         before:
           view: sentence
           rows:
-            - de: [Das Schlafzimmer, ist, ruhig., ""]
+            - de: [ Das Schlafzimmer, ist, ruhig., "" ]
               ru: Спальня тихая.
         set:
           rows:
-            - de: ["", Ist, das Schlafzimmer ruhig?, ""]
+            - de: [ "", Ist, das Schlafzimmer ruhig?, "" ]
               ru: Спальня тихая?
       - question: Какой род у слова *Schreibtischlampe*?
         read: >-
-          *die Schreibtischlampe* — настольная лампа. Слово из трёх частей:
-          *schreiben* + *der Tisch* + *die Lampe*. Длина не важна: род всегда
-          даёт последняя часть, а это *die Lampe*. Длинные слова разбирайте с
-          конца — так быстрее понять, что это за предмет. Немцы склеивают и
-          четыре, и пять частей, а правило остаётся тем же.
+          *die Schreibtischlampe* — настольная лампа. Слово из трёх частей: *schreiben* + *der
+          Tisch* + *die Lampe*. Длина не важна: род всегда даёт последняя часть, а это *die
+          Lampe*. Длинные слова разбирайте с конца — так быстрее понять, что это за предмет.
+          Немцы склеивают и четыре, и пять частей, а правило остаётся тем же.
         point: "*die Schreibtischlampe* — род по последней части, *die Lampe*"
-        set: { view: words, words: moebel, focus: [1, 10, 11] }
+        set: { view: words, words: moebel, focus: [ 1, 10, 11 ] }
 
   - id: lesen2
     chapter: exam
     title: "Чтение, часть 2: объявления"
     beats:
       - read: >-
-          Объявления о квартирах экономят место, поэтому почти всё в них
-          сокращено. Типичная строка: *2-Zi.-Whg., 55 m², Blk., KM 520 €*.
-          Сокращений немного, и они повторяются из объявления в объявление.
-          Самые важные — про деньги: *KM*, *NK* и *WM*. Выучите эту таблицу —
-          и любое объявление читается за полминуты.
+          Объявления экономят место: *2-Zi.-Whg., 55 m², Blk., KM 520 €*. Сокращения
+          повторяются, поэтому таблица — справочник для действия. Найдите число комнат, наличие
+          балкона и способ указания цены. Не нужно заучивать всё до чтения: в игре вы вернётесь
+          к нужным сокращениям, чтобы выбрать подходящее объявление.
         point: "*Zi.* — комната, *Whg.* — квартира, *Blk.* — балкон, *KM* / *NK* / *WM* — аренда"
         set: { view: table, table: abk }
       - read: >-
-          Во второй части чтения — объявления и сайты. Сверху ситуация: кто вы
-          и что ищете. Ниже два объявления, *a* и *b*, и подходит только одно.
-          Сначала выделите в ситуации все требования — здесь их два: *mit
-          Balkon* и *maximal 600 Euro warm*. Потом проверяйте каждое
-          объявление по обоим пунктам, а не только по первому.
+          Во второй части чтения — объявления и сайты. Сверху ситуация: кто вы и что ищете.
+          Ниже два объявления, *a* и *b*, и подходит только одно. Сначала выделите в ситуации
+          все требования — здесь их два: *mit Balkon* и *maximal 600 Euro warm*. Потом
+          проверяйте каждое объявление по обоим пунктам, а не только по первому.
         point: "Выпишите из ситуации все требования и проверьте по ним оба объявления"
         set: { view: task, task: anzeigen }
       - question: Какое объявление подходит — *a* или *b*?
         read: >-
-          *b*. В объявлении *a* балкон стоит прямо в заголовке, и на этом
-          легко остановиться. Но там указана холодная аренда: *KM 520 €* и *NK
-          150 €* — вместе 670 евро, больше, чем можно. В объявлении *b* сразу
-          тёплая аренда, *WM 590 €*, и балкон тоже есть. Деньги всегда
-          считайте в тёплой аренде.
+          *b*. В объявлении *a* балкон стоит прямо в заголовке, и на этом легко остановиться.
+          Но там указана холодная аренда: *KM 520 €* и *NK 150 €* — вместе 670 евро, больше,
+          чем можно. В объявлении *b* сразу тёплая аренда, *WM 580 €*, и балкон тоже есть. Для
+          этой задачи сравниваем указанные расходы: у *a* — 670 евро, у *b* — 580.
         point: "*KM* + *NK* = *WM*: сравнивайте объявления по тёплой аренде"
         set: { solved: true }
 
@@ -535,84 +545,82 @@ steps:
     title: "Чтение, часть 3: правила дома"
     beats:
       - read: >-
-          Третья часть чтения — таблички и объявления: на двери, в подъезде, в
-          магазине. Здесь — правила дома, *die Hausordnung*. Их вешают почти в
-          каждом немецком подъезде. *Ruhezeit* — «время тишины»: с 22 до 6
-          часов шуметь нельзя, и соседи за этим следят. Дательный падеж тут
-          почти в каждой строке: *im Keller*, *im Treppenhaus*, *im Hof*.
+          На табличке — *die Hausordnung*, правила конкретного дома. В нашем примере *Ruhezeit*
+          указана с 22 до 6 часов. Это не универсальное расписание для всех домов: на экзамене
+          читают именно предъявленный текст. В строках много мест с дательным: *im Keller*, *im
+          Treppenhaus*, *im Hof*. Важны и ограничения *nur* и *nicht*: они показывают, где
+          можно оставить велосипед.
         point: "*die Hausordnung* — правила дома, *die Ruhezeit* — время тишины"
         set: { view: task, task: hausordnung }
       - question: "*Ihr Fahrrad kann im Treppenhaus stehen.* — *richtig* или *falsch*?"
         read: >-
-          *Falsch.* На табличке ясно сказано: *Fahrräder bitte nur im Keller
-          abstellen, nicht im Treppenhaus!* Всё решают два коротких слова:
-          *nur* — «только» и *nicht* — «не». На экзамене такие слова стоит
-          подчёркивать: они переворачивают смысл. И заметьте: *das
-          Treppenhaus* среднего рода — по последней части, *das Haus*. Слово
-          *abstellen* — «ставить, оставлять» — на табличках встречается
-          постоянно.
+          *Falsch.* На табличке ясно сказано: *Fahrräder bitte nur im Keller abstellen, nicht
+          im Treppenhaus!* Всё решают два коротких слова: *nur* — «только» и *nicht* — «не». На
+          экзамене такие слова стоит подчёркивать: они переворачивают смысл. И заметьте: *das
+          Treppenhaus* среднего рода — по последней части, *das Haus*. Слово *abstellen* —
+          «ставить, оставлять» — на табличках встречается постоянно.
         point: "Ищите короткие слова, которые меняют смысл: *nur*, *nicht*, *kein*"
         set: { solved: true }
 
 exercises:
   - type: choice
     q: ___ Schlafzimmer ist klein.
-    options: [Der, Die, Das]
+    options: [ Der, Die, Das ]
     answer: 2
     why: "*das Zimmer* → *das Schlafzimmer*: род по последней части."
   - type: choice
     q: ___ Haustür ist offen.
-    options: [Der, Die, Das]
+    options: [ Der, Die, Das ]
     answer: 1
     why: "*das Haus* + *die Tür* = *die Haustür*. Решает последняя часть."
   - type: gap
     q: Die Waschmaschine steht ___ Keller.
-    answer: [im]
+    answer: [ im ]
     hint: in + dem
     why: "*der Keller* → *in dem Keller* → *im Keller*."
   - type: gap
     q: Der Herd ist in ___ Küche.
-    answer: [der]
+    answer: [ der ]
     hint: die Küche
     why: "Женский род в дательном: *die* → *der*. *in die Küche* — это «на кухню», куда."
   - type: gap
     q: Wir sitzen auf ___ Balkon.
-    answer: [dem]
+    answer: [ dem ]
     hint: der Balkon
     why: "*der Balkon* → *auf dem Balkon*. *auf dem* не сливается."
   - type: choice
-    q: Marco wohnt jetzt in ___ Wohnung in Gohlis.
-    options: [eine, einer, einem]
+    q: Mateo wohnt jetzt in ___ Wohnung in Holtenau.
+    options: [ eine, einer, einem ]
     answer: 1
     why: "*eine Wohnung* → *in einer Wohnung*: у женского рода *-er*."
   - type: gap
-    q: Meine Schwester wohnt in ___ Haus in Rom.
-    answer: [einem]
+    q: Meine Schwester wohnt in ___ Haus in Buenos Aires.
+    answer: [ einem ]
     hint: ein Haus
     why: "*das Haus* — средний род: *in einem Haus*."
   - type: choice
     q: Wo ist das Bett? – ___ Schlafzimmer.
-    options: [Im, In der, Auf dem]
+    options: [ Im, In der, Auf dem ]
     answer: 0
     why: "*das Schlafzimmer* → *in dem* → *im*. В комнате — всегда *in*, не *auf*."
   - type: choice
     q: Die Küche ist ___.
-    options: [klein, kleine, kleiner]
+    options: [ klein, kleine, kleiner ]
     answer: 0
     why: "После *sein* прилагательное без окончания — для любого рода."
   - type: gap
     q: Die Zimmer ___ hell und ruhig.
-    answer: [sind]
+    answer: [ sind ]
     hint: sein
     why: "Множественное число — *sind*, а прилагательные не меняются."
   - type: choice
     q: Что значит *NK* в объявлении о квартире?
-    options: [Nebenkosten, Nähe Kino, neue Küche]
+    options: [ Nebenkosten, Nähe Kino, neue Küche ]
     answer: 0
     why: "*NK* — *Nebenkosten*: вода, отопление, мусор. *KM* + *NK* = *WM*."
   - type: choice
     q: "В объявлении: *KM 450 €, NK 130 €*. Сколько составит *Warmmiete*?"
-    options: [450 €, 580 €, 320 €]
+    options: [ 450 €, 580 €, 320 € ]
     answer: 1
     why: "*Warmmiete* = *Kaltmiete* + *Nebenkosten*: 450 + 130 = 580 евро."
   - type: order
@@ -626,3 +634,207 @@ exercises:
   - type: order
     ru: Ванная маленькая, но современная.
     de: Das Bad ist klein, aber modern.
+adventure:
+  kind: sequence
+  title: Подготовьте жильё для гостей
+  intro: Помогите Лусии и Диего разобраться в вымышленных объявлениях, найти нужные комнаты и
+    понять правила дома. Задачи проверяют чтение и язык; цены и условия не являются реальными
+    предложениями аренды.
+  ending: Объявление укладывается в заданные условия, комнаты и техника найдены, правила переданы
+    гостям, ключ обнаружен. Теперь нужно объяснить, как добраться от жилья до набережной и
+    клуба.
+  challenges:
+    - id: choose-flat
+      kind: select
+      title: Выберите подходящее объявление
+      intro: Гостям нужен балкон, а указанная общая плата должна быть не выше 600 евро. Сравните обе
+        записи, включая дополнительные платежи.
+      mode: reading
+      clue:
+        task: anzeigen
+      options:
+        - id: a
+          label: a · Wik · KM 520 € + NK 150 €
+        - id: b
+          label: b · Holtenauer Straße · WM 580 €
+      answer:
+        - b
+      success: "Вариант b: балкон есть, 580 евро не превышают 600. Вариант a стоит 670 евро по
+        указанным строкам."
+      wrong: У первого объявления 520 евро — только базовая плата, к ней добавляются 150. У второго
+        указано 580 евро.
+    - id: find-devices
+      kind: match
+      title: Помогите гостям найти технику
+      intro: После осмотра надо объяснить, где уже стоят вещи. Выберите предмет, затем нужное место.
+        Мы отвечаем на *Wo?*, а не даём команду переставить мебель.
+      clue:
+        dialogue: besichtigung
+        lines:
+          - 4
+          - 5
+          - 6
+          - 8
+      slots:
+        - id: washer
+          label: die Waschmaschine
+          answer: cellar
+        - id: fridge
+          label: der Kühlschrank
+          answer: kitchen
+        - id: wardrobe
+          label: der Kleiderschrank
+          answer: bedroom
+      options:
+        - id: cellar
+          label: im Keller
+        - id: kitchen
+          label: in der Küche
+        - id: bedroom
+          label: im Schlafzimmer
+        - id: bath
+          label: im Bad
+        - id: balcony
+          label: auf dem Balkon
+      success: Машина — в подвале, холодильник — на кухне, платяной шкаф — в спальне. Названия
+        сложных слов помогли отличить шкафы друг от друга.
+      wrong: "Стиральная машина прямо исключена из ванной: *Nein, sie steht im Keller*. Холодильник
+        назван в кухне, платяной шкаф — в спальне."
+      mode: reading
+    - id: house-rules
+      kind: pack
+      title: Передайте гостям правила дома
+      intro: Выберите только те карточки размещения, которые соответствуют табличке. Эти правила
+        относятся к этому вымышленному дому.
+      mode: reading
+      clue:
+        task: hausordnung
+      options:
+        - id: bikes-cellar
+          label: Fahrräder · im Keller
+          icon: 🚲
+        - id: bikes-stairs
+          label: Fahrräder · im Treppenhaus
+          icon: 🚲
+        - id: bins-yard
+          label: Mülltonnen · im Hof
+          icon: 🗑️
+        - id: bins-balcony
+          label: Mülltonnen · auf dem Balkon
+          icon: 🗑️
+      answer:
+        - bikes-cellar
+        - bins-yard
+      success: Велосипеды оставляют в подвале, мусорные контейнеры — во дворе. *Nur* и *nicht* не
+        дали принять лестницу за разрешённое место.
+      wrong: В тексте велосипеды — *nur im Keller*, не на лестнице; контейнеры стоят *im Hof*.
+    - id: ask-bedroom
+      kind: order
+      title: Уточните тишину в спальне
+      intro: Перед тем как передать впечатления гостям, задайте хозяину вопрос «В спальне тихо?».
+      label: Вопрос на осмотре
+      tokens:
+        - Ist
+        - das Schlafzimmer
+        - ruhig?
+      success: "*Ist das Schlafzimmer ruhig?* Вопрос начинается с *ist*, прилагательное остаётся без
+        окончания."
+      wrong: Вопрос да/нет начинается с глагола *Ist*. Затем *das Schlafzimmer*, в конце *ruhig?*
+    - id: find-key
+      kind: select
+      title: Найдите ключ для гостей
+      intro: Хозяин прислал точное место ключа. Выберите совпадающее описание, не останавливаясь на
+        знакомом названии комнаты.
+      mode: reading
+      clue:
+        task: schluessel
+      options:
+        - id: living-table
+          label: auf dem Tisch im Wohnzimmer
+          icon: 🔑
+        - id: bedroom-table
+          label: auf dem Tisch im Schlafzimmer
+          icon: 🔑
+        - id: cellar
+          label: im Keller
+          icon: 🔑
+      answer:
+        - living-table
+      success: "Ключ на столе в гостиной. *Hausschlüssel* — ключ, а не дом: главная часть сложного
+        слова стоит в конце."
+      wrong: "Нужны и предмет, и комната: *auf dem Tisch im Wohnzimmer*. Спальня прямо исключена."
+case:
+  title: Der Schlüssel und das falsche Zimmer
+  ru: Ключ и неверная комната
+  intro: Гостям передали карточку квартиры с перепутанными комнатами и ценами. Сверьте исходное
+    объявление и сообщения хозяина, прежде чем направлять людей не туда.
+  people:
+    K:
+      name: Herr Krüger
+      voice: Eddy
+  steps:
+    - read: Один листок указывает только 450 евро. В полном учебном предложении есть ещё одна строка.
+      evidence:
+        - note: Kaltmiete 450 Euro. Nebenkosten 130 Euro. Zusammen 580 Euro.
+          ru: Базовая аренда 450 евро. Дополнительные платежи 130 евро. Вместе 580 евро.
+      question: Какую указанную сумму нужно записать для этой задачи?
+      options:
+        - 450 €
+        - 580 €
+        - 130 €
+      answer: 1
+      right: "В этой смете обе строки складываются: 450 + 130 = 580."
+      wrong:
+        - Здесь не учтены названные дополнительные платежи.
+        - null
+        - Это только дополнительные платежи, не вся названная сумма.
+    - read: В карточке нарисовали машину в ванной. Хозяин говорит другое.
+      evidence:
+        - K: Die Waschmaschine steht im Keller, nicht im Bad.
+          ru: Стиральная машина стоит в подвале, не в ванной.
+      question: Куда направить гостя к стиральной машине?
+      options:
+        - Im Keller
+        - Im Bad
+        - Auf dem Balkon
+      answer: 0
+      right: "*Im Keller* — нужное место. Ванную исключает *nicht*."
+      wrong:
+        - null
+        - Это место прямо исключено.
+        - Балкон не назван местом машины.
+    - read: На конверте подписано *Hausschlüssel*. Не спутайте длинное слово с названием помещения.
+      evidence:
+        - note: Der Hausschlüssel ist auf dem Tisch im Wohnzimmer.
+          ru: Ключ от дома на столе в гостиной.
+      question: Что ищут гости и где?
+      options:
+        - Ключ — на столе в гостиной
+        - Дом — в спальне
+        - Стол — в подвале
+      answer: 0
+      right: "Последняя часть *Schlüssel* называет предмет. Две группы места уточняют: на столе, в
+        гостиной."
+      wrong:
+        - null
+        - В слове главная часть — ключ, не дом.
+        - Ни предмет, ни комната не совпадают с запиской.
+    - read: Осталось проверить строку о велосипедах. В неверной копии пропущено одно короткое слово.
+      evidence:
+        - note: Fahrräder bitte nur im Keller abstellen, nicht im Treppenhaus!
+          ru: Велосипеды, пожалуйста, оставляйте только в подвале, не на лестнице!
+      question: Какую инструкцию передать гостям?
+      options:
+        - Велосипед можно оставить в любом месте
+        - Велосипед — в подвале; лестница исключена
+        - Велосипед нужно оставить на балконе
+      answer: 1
+      right: "*Nur* ограничивает место, *nicht* исключает лестницу. Без этих слов копия меняет
+        правило."
+      wrong:
+        - Это убирает ключевые ограничения оригинала.
+        - null
+        - Балкон в инструкции не назван.
+  ending: "Карточка исправлена: сумма указана полностью, техника и ключ находятся в правильных
+    местах, правила переданы без пропусков. В неверной копии терялись короткие слова и
+    уточнения. Теперь гости готовы идти в клуб — осталось разобраться в маршруте по Килю."

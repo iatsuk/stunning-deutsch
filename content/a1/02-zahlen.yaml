@@ -6,7 +6,8 @@ lede: >-
   Дана записывается на экзамен по телефону: называет фамилию по буквам,
   диктует номер — и выясняет, что немцы читают числа задом наперёд. А в
   перерыве у Матео день рождения, и оказывается, что возраст по-немецки не
-  «имеют».
+  «имеют». После занятий эти же числа помогают найти место у причала и
+  проверить, есть ли вода и хлеб для прогулки под парусом.
 goals:
   - Считать от 0 до 1000 и понимать числа на слух
   - Назвать по буквам имя и фамилию и переспросить, если не расслышали
@@ -78,6 +79,30 @@ dialogues:
         ru: Фрау Томсен, у вас есть время? У Матео день рождения!
       - T: Ja, natürlich! Alles Gute, Mateo!
         ru: Да, конечно! Поздравляю, Матео!
+  am-steg:
+    title: Welche Nummer?
+    ru: Нужное место у причала
+    place: Парусный клуб на Kiellinie, Kiel
+    people:
+      M: { name: Mateo, voice: Reed }
+      J: { name: Herr Jensen, voice: Grandpa }
+    lines:
+      - M: Moin, Herr Jensen! Wo ist die „Sprotte“?
+        ru: Здравствуйте, господин Йенсен! Где «Шпротта»?
+      - J: Liegeplatz zweiunddreißig.
+        ru: Место у причала тридцать два.
+      - M: Dreiundzwanzig?
+        ru: Двадцать три?
+      - J: Nein, zweiunddreißig. Drei – zwei.
+        ru: Нет, тридцать два. Три — два.
+      - M: Danke! Wie schreibt man „Sprotte“?
+        ru: Спасибо! Как пишется «Шпротта»?
+      - J: Es – Pe – Er – O – Te – Te – E. Habt ihr Wasser?
+        ru: Эс — пэ — эр — о — тэ — тэ — э. У вас есть вода?
+      - M: Ja, wir haben Wasser und Brot.
+        ru: Да, у нас есть вода и хлеб.
+      - J: Super! Viel Spaß!
+        ru: Отлично! Хорошо провести время!
 
 words:
   zahlen:
@@ -128,6 +153,15 @@ words:
       - { de: der Raum, ru: "аудитория, комната", pl: Räume, note: Raum 214 }
       - { de: die Frage, ru: вопрос, pl: Fragen, note: Haben Sie Fragen? }
       - { de: die Zahl, ru: число, pl: Zahlen }
+
+  proviant:
+    title: Vor dem Segeln
+    ru: Перед выходом под парусом
+    items:
+      - { de: der Liegeplatz, ru: место у причала, pl: Liegeplätze, note: Liegeplatz 32 }
+      - { de: die Nummer, ru: номер, pl: Nummern }
+      - { de: das Wasser, ru: вода, pl: "-", note: Wir haben Wasser. }
+      - { de: das Brot, ru: хлеб, pl: Brote, note: Wir haben Brot. }
 
 tables:
   zehn:
@@ -284,6 +318,29 @@ steps:
         point: "«У меня есть …» — *Ich habe …*: *Ich habe Zeit*, *Wir haben Pause*"
         set: { reveal: 10, focus: [3, 4, 5, 6, 7, 8] }
 
+  - id: wieder-am-wasser
+    chapter: scene
+    title: Вспомните знакомство — найдите лодку
+    beats:
+      - read: >-
+          Сначала, не открывая прошлую тему, представьтесь Йенсену: имя,
+          откуда вы и где живёте. Теперь послушайте Матео. Он ищет ту же
+          «Шпротту», но *Liegeplatz* — «место у причала» — получает номер.
+          Какой номер называет Йенсен? Запишите цифры до следующего фрагмента.
+          Это та же задача, что с номером аудитории или дома: морская
+          обстановка меняется, навык остаётся.
+        point: "*Liegeplatz* — место у причала; ловим номер, как номер аудитории"
+        set: { view: dialogue, dialogue: am-steg, reveal: 2, focus: [0, 1] }
+      - read: >-
+          Йенсен сказал 32 — *zweiunddreißig*. Матео услышал 23 и
+          переспросил: это полезная стратегия, а не провал. После уточнения
+          *Drei – zwei* путаница исчезает. Дальше название лодки по буквам
+          и знакомое *haben*: *Habt ihr Wasser?* — *Wir haben Wasser und
+          Brot*. *Viel Spaß!* — готовое пожелание «хорошо провести время».
+          Потренируйтесь отвечать за Матео, прежде чем включать его реплику.
+        point: "Не уверены в числе — повторите его и попросите назвать цифры"
+        set: { reveal: 8, focus: [1, 2, 3, 4, 5, 6, 7] }
+
   - id: null-bis-zwoelf
     chapter: words
     title: От нуля до двенадцати
@@ -325,6 +382,21 @@ steps:
           даже привычнее.
         point: "*Ich habe Zeit*, *Wir haben Pause* — без артикля"
         set: { view: words, words: kurs }
+
+  - id: proviant
+    chapter: words
+    title: Вода и хлеб — тоже яхтинг
+    beats:
+      - read: >-
+          Прогулка под парусом начинается с обычных вещей: найти место,
+          сверить номер, взять воду и хлеб. *Wasser* здесь не считают
+          поштучно; у *Brot* форма *Brote* нужна, когда речь о целых буханках
+          или видах хлеба. Сейчас достаточно *Wir haben Wasser und Brot*.
+          Как заказать еду в кафе, купить продукты и назвать количество,
+          разберём в темах о еде и покупках. Новые слова не требуют заранее
+          учить винительный падеж.
+        point: "*Habt ihr Wasser?* — *Ja, wir haben Wasser und Brot.*"
+        set: { view: words, words: proviant }
 
   - id: zehner
     chapter: grammar
@@ -493,6 +565,21 @@ steps:
             - de: [Ich, hab+e, Zeit., ""]
               ru: Да, у меня есть время.
 
+  - id: erklaeren-und-anwenden
+    chapter: practice
+    title: Научите напарника читать числа
+    beats:
+      - question: Напарник путает 23 и 32. Как объяснить разницу без готовой подсказки?
+        read: >-
+          В *dreiundzwanzig* сначала слышим 3, потом 20: получается 23.
+          В *zweiunddreißig* — 2 и 30: получается 32. Объясните это своими
+          словами и продиктуйте напарнику ещё одну пару: 45 и 54. Затем
+          проверьте, может ли он повторить правило вам. Если занимаетесь
+          один, запишите короткое объяснение на диктофон и прослушайте его.
+          Называть цифры по одной при затруднении совершенно нормально.
+        point: "Умеете объяснить разницу и уточнить число — значит, навык работает"
+        set: { view: table, table: zwanzig, focus: [1, 2, 3] }
+
   - id: sprechen
     chapter: exam
     title: "Устный экзамен: буквы и номер"
@@ -617,9 +704,63 @@ case:
   ending: >-
     Йенсен набирает номер. Незнакомец отвечает вежливо и обещает прийти
     завтра в восемь. На вопрос о возрасте для анкеты клуба он говорит: *Ich
-    habe dreißig Jahre.* Йенсен хмурится: так ошибается Матео, но кильцы так
-    не говорят — по-немецки *Ich bin dreißig*. Кто же он? Продолжение — в
+    habe dreißig Jahre.* По-немецки *Ich bin dreißig*. Но и Матео так
+    ошибался: одного окончания для обвинения недостаточно. Йенсен решает
+    проверить бронь и документы. Кто же звонил? Продолжение — в
     следующей теме, а ловить такие ошибки можно в «Шпионе».
+
+adventure:
+  kind: harbor
+  title: Найдите «Шпротту»
+  intro: >-
+    Команда собирается на прогулку к Kieler Woche. Матео встречает вас у
+    клуба на Kiellinie. Найдите лодку по указанию Йенсена, позвоните Дане,
+    узнайте, в какой аудитории искать Матео после занятий, соберите название
+    лодки по буквам и проверьте провизию.
+  berths: [23, 32, 203]
+  berth: 32
+  directions: { dialogue: am-steg, lines: [1] }
+  phone: "0176234581"
+  phoneClue: { dialogue: anruf, lines: [5] }
+  phoneHelp: { dialogue: anruf, lines: [7] }
+  roomTask: nachricht
+  challenges:
+    - id: boat-name
+      kind: order
+      title: Подпишите бирку для лодки
+      intro: >-
+        Матео нашёл пустую бирку для ключа. Йенсен продиктовал название лодки
+        по буквам. Послушайте запись и соберите надпись. Две одинаковые буквы
+        тоже нужно поставить на свои места.
+      clue: { dialogue: am-steg, lines: [5] }
+      label: Название на бирке
+      tokens: [S, P, R, O, T, T, E]
+      success: >-
+        *SPROTTE* — бирка готова. Ключ от нужной лодки теперь не перепутается
+        с другими.
+      wrong: >-
+        Слушайте названия букв: *Es – Pe – Er – O – Te – Te – E*. В названии
+        две *T*. Можно убрать отдельную букву из надписи и попробовать снова.
+    - id: provisions
+      kind: pack
+      title: Что уже есть для прогулки?
+      intro: >-
+        Перед выходом нужно проверить провизию. Матео рассказал, что уже есть
+        у команды. Положите в корзину только то, что он назвал. Не смешайте
+        сборы у лодки с историей про день рождения в школе.
+      clue: { dialogue: am-steg, lines: [6] }
+      options:
+        - { id: wasser, label: Wasser, icon: 💧 }
+        - { id: brot, label: Brot, icon: 🍞 }
+        - { id: kuchen, label: Kuchen, icon: 🍰 }
+        - { id: handy, label: Handy, icon: 📱 }
+      answer: [wasser, brot]
+      success: >-
+        Вода и хлеб на месте. *Wir haben Wasser und Brot.* Лодка найдена,
+        команда на связи, можно собираться на прогулку!
+      wrong: >-
+        Матео перечислил два продукта после *wir haben*. Переслушайте и
+        уберите лишнее или добавьте недостающее. Торт был в школе, не у лодки.
 
 spy:
   - de: Ich bin achtundzwanzig.
@@ -721,3 +862,18 @@ exercises:
   - type: order
     ru: Мне двадцать восемь лет.
     de: Ich bin achtundzwanzig Jahre alt.
+  - type: choice
+    q: Йенсен сказал *zweiunddreißig*. Где искать лодку?
+    options: [Liegeplatz 23, Liegeplatz 32, Liegeplatz 302]
+    answer: 1
+    why: "*zwei* + *dreißig* — 2 и 30, то есть 32. Если сомневаетесь, уточните цифры."
+  - type: gap
+    q: Wir ___ Wasser und Brot.
+    answer: [haben]
+    hint: haben
+    ru: У нас есть вода и хлеб.
+    why: "Повторяем *wir haben* в новой ситуации: правило то же, что в *Wir haben Pause*."
+  - type: order
+    ru: Как называется лодка?
+    de: Wie heißt das Boot?
+    why: "Повторение темы 1: W-вопрос, затем *heißt*, затем *das Boot*."

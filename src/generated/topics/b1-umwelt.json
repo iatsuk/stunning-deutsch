@@ -1,0 +1,2380 @@
+{
+ "id": "b1-umwelt",
+ "level": "b1",
+ "order": 17,
+ "title": "Wir bieten sowohl Wasser als auch Tee an.",
+ "ru": "Соединяем альтернативы и совместные требования",
+ "lede": "Элиф уже получила многоразовые стаканы. Теперь команда выбирает, как доставить их и фотографии к Raum C. Люди по-разному относятся к транспорту и еде. Нужно предложить выбор, сохранить обязательный набор материалов и не объявлять личное предпочтение правилом для всех.",
+ "goals": [
+  "Различить альтернативу и добавление двух условий",
+  "Собрать один из допустимых наборов",
+  "Передать мнение с примером",
+  "Уважить различие потребностей при совместном плане"
+ ],
+ "grammar": [
+  "entweder … oder / sowohl … als auch"
+ ],
+ "exam": [
+  "b1-lesen-1",
+  "b1-lesen-2",
+  "b1-sprachbausteine-2",
+  "b1-hoeren-1",
+  "b1-sprechen-2"
+ ],
+ "chapters": [
+  {
+   "id": "scene",
+   "title": "Ситуация"
+  },
+  {
+   "id": "words",
+   "title": "Слова"
+  },
+  {
+   "id": "grammar",
+   "title": "Грамматика"
+  },
+  {
+   "id": "practice",
+   "title": "Проверка"
+  },
+  {
+   "id": "exam",
+   "title": "На экзамене"
+  }
+ ],
+ "dialogues": {
+  "scene": {
+   "title": "Wir bieten sowohl Wasser als auch Tee an.",
+   "ru": "Соединяем альтернативы и совместные требования",
+   "place": "Kiel · транспорт, напитки и многоразовые вещи · вымышленная учебная ситуация",
+   "people": {
+    "D": {
+     "name": "Dana",
+     "voice": "Anna"
+    },
+    "M": {
+     "name": "Mateo",
+     "voice": "Reed"
+    },
+    "E": {
+     "name": "Elif",
+     "voice": "Flo"
+    },
+    "H": {
+     "name": "Hauke",
+     "voice": "Rocko"
+    }
+   },
+   "lines": [
+    {
+     "who": "E",
+     "de": "Die Mehrwegbecher habe ich abgeholt. Sie sind jetzt bei mir.",
+     "ru": "Многоразовые стаканы я получила. Теперь они у меня.",
+     "audio": "audio/ae410e1e0919.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Für den Materialtransport nehmen wir entweder den Bus oder das Fahrrad.",
+     "ru": "Для перевозки материалов возьмём либо автобус, либо велосипед.",
+     "audio": "audio/a5bc40376254.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Wir brauchen sowohl die Fotomappe als auch die Becher.",
+     "ru": "Нам нужны и папка с фотографиями, и стаканы.",
+     "audio": "audio/c268c1b1e6c1.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Beim Treff bieten wir sowohl Wasser als auch Tee an.",
+     "ru": "На встрече предложим и воду, и чай.",
+     "audio": "audio/c8f5d82808f6.m4a"
+    },
+    {
+     "who": "E",
+     "de": "Dann muss aber niemand beides trinken. Jeder kann wählen.",
+     "ru": "Но никому не нужно пить и то и другое. Каждый может выбрать.",
+     "audio": "audio/2525848639b0.m4a"
+    },
+    {
+     "who": "D",
+     "de": "Genau. Ein Angebot mit zwei Möglichkeiten ist keine Pflicht für jeden Gast.",
+     "ru": "Верно. Предложение двух вариантов не является обязанностью для каждого гостя.",
+     "audio": "audio/a100bdafef01.m4a"
+    },
+    {
+     "who": "H",
+     "de": "Raum und Essen kosten zusammen siebzig Euro. Für den Transport bleiben höchstens zehn.",
+     "ru": "Помещение и еда вместе стоят семьдесят евро. На перевозку остаётся не больше десяти.",
+     "audio": "audio/d0a149d26d13.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Gut. Dann passen beide Wege, wenn alle Materialien mitkommen.",
+     "ru": "Хорошо. Тогда подходят оба способа, если все материалы будут доставлены.",
+     "audio": "audio/58c982dec2cd.m4a"
+    }
+   ]
+  }
+ },
+ "words": {
+  "useful": {
+   "title": "Wörter für die Aufgabe",
+   "ru": "Слова для действия",
+   "items": [
+    {
+     "de": "die Gewohnheit",
+     "ru": "привычка",
+     "gender": "f",
+     "plural": "Gewohnheiten",
+     "audio": "audio/dbe10efdb190.m4a"
+    },
+    {
+     "de": "die Auswahl",
+     "ru": "выбор, ассортимент",
+     "gender": "f",
+     "plural": "Auswahlen",
+     "audio": "audio/4cb9db8d6e64.m4a"
+    },
+    {
+     "de": "das Verkehrsmittel",
+     "ru": "средство транспорта",
+     "gender": "n",
+     "plural": "Verkehrsmittel",
+     "audio": "audio/32ee782a498e.m4a"
+    },
+    {
+     "de": "der Materialtransport",
+     "ru": "перевозка материалов",
+     "gender": "m",
+     "plural": "Materialtransporte",
+     "audio": "audio/b1daaf7b9139.m4a"
+    },
+    {
+     "de": "die Fotomappe",
+     "ru": "папка с фотографиями",
+     "gender": "f",
+     "plural": "Fotomappen",
+     "audio": "audio/74ed7227f544.m4a"
+    },
+    {
+     "de": "die Rückgabefrist",
+     "ru": "срок возврата",
+     "gender": "f",
+     "plural": "Rückgabefristen",
+     "audio": "audio/1ebc517299cb.m4a"
+    },
+    {
+     "de": "das Gepäck",
+     "ru": "багаж",
+     "gender": "n",
+     "plural": null,
+     "noPlural": true,
+     "audio": "audio/fb2dd0ae453b.m4a"
+    },
+    {
+     "de": "die Möglichkeit",
+     "ru": "возможность",
+     "gender": "f",
+     "plural": "Möglichkeiten",
+     "audio": "audio/33cfd9b11d94.m4a"
+    },
+    {
+     "de": "entweder oder",
+     "ru": "либо одно, либо другое",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/b6715c60aa45.m4a"
+    },
+    {
+     "de": "sowohl als auch",
+     "ru": "как одно, так и другое",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/76a47e1a9043.m4a"
+    },
+    {
+     "de": "zuverlässig",
+     "ru": "надёжно",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/ef3f319288c0.m4a"
+    },
+    {
+     "de": "selten brauchen",
+     "ru": "редко нуждаться",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/e52f776f3a7e.m4a"
+    },
+    {
+     "de": "Rücksicht nehmen",
+     "ru": "учитывать других",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/b9683974e0be.m4a"
+    },
+    {
+     "de": "selbst entscheiden",
+     "ru": "решать самостоятельно",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/97e78381ac07.m4a"
+    },
+    {
+     "de": "beides berücksichtigen",
+     "ru": "учитывать оба условия",
+     "gender": null,
+     "plural": null,
+     "audio": "audio/b016fb28bacc.m4a"
+    }
+   ]
+  }
+ },
+ "tables": {
+  "rule": {
+   "title": "entweder … oder / sowohl … als auch",
+   "ru": "Опора для решения",
+   "head": [
+    "Beispiel",
+    "Смысл и форма"
+   ],
+   "rows": [
+    [
+     "Wir nehmen entweder den Bus oder das Fahrrad.",
+     "entweder … oder: альтернативы; здесь выбираем одну."
+    ],
+    [
+     "Wir brauchen sowohl die Mappe als auch die Becher.",
+     "sowohl … als auch: оба названных элемента."
+    ],
+    [
+     "Wir bieten sowohl Wasser als auch Tee an.",
+     "Парные союзы не превращают часть в придаточную."
+    ]
+   ],
+   "ruCols": [
+    1
+   ]
+  }
+ },
+ "tasks": {
+  "headlines": {
+   "kind": "worksheet",
+   "part": "b1-lesen-1",
+   "format": "matching",
+   "uniqueOptions": true,
+   "title": "Fünf Alltagstexte, zehn Überschriften",
+   "text": "1) Nora nimmt ihren Becher gern selbst mit. Für sie ist wichtig, dass sie unterwegs nicht jedes Mal einen neuen braucht. Wenn sie ihn zu Hause vergisst, kauft sie trotzdem ein Getränk. Eine Gewohnheit soll ihr helfen und nicht den ganzen Tag bestimmen.\n\n2) Jonas fährt oft mit dem Fahrrad. Bei starkem Regen oder viel Gepäck nimmt er den Bus. Er findet es sinnvoll, eine Alternative zu haben. Für einen gemeinsamen Ausflug möchte er vorher wissen, ob alle den Weg gut schaffen können.\n\n3) Karin plant Essen gern gemeinsam. Sie bietet sowohl ein vegetarisches Gericht als auch Wasser und Tee an. Trotzdem sollen Gäste selbst entscheiden, was sie mögen. Wer nur Wasser trinkt, muss nichts erklären. Eine Auswahl ist für sie eine Einladung und keine Pflicht.\n\n4) Ben leiht Dinge lieber aus, wenn er sie nur selten braucht. Für ein kleines Treffen holt er Becher bei einem Nachbarn. Dafür muss er die Rückgabe zuverlässig planen. Der niedrige Preis allein reicht ihm nicht, wenn die Abholung zu viel Zeit kostet.\n\n5) Eine Gruppe vergleicht vor einem Fest unterschiedliche Wünsche. Eine Person möchte günstig einkaufen, eine andere wenig tragen. Sie wählen einen Plan, der beides berücksichtigt. Dabei behaupten sie nicht, für jede Veranstaltung dieselbe beste Lösung gefunden zu haben.",
+   "questions": [
+    {
+     "prompt": "Text 1",
+     "options": [
+      "Eine hilfreiche Gewohnheit ohne Zwang",
+      "Ein anderer Weg bleibt möglich",
+      "Auswahl anbieten und Vorlieben respektieren",
+      "Ausleihen braucht auch einen Rückgabeplan",
+      "Mehrere Bedürfnisse gemeinsam beachten",
+      "Nie wieder ein Getränk kaufen",
+      "Radfahren muss für alle passen",
+      "Jeder muss Wasser und Tee trinken",
+      "Nur der Preis entscheidet",
+      "Ein Plan passt immer für alle"
+     ],
+     "answers": [
+      "Eine hilfreiche Gewohnheit ohne Zwang"
+     ]
+    },
+    {
+     "prompt": "Text 2",
+     "options": [
+      "Eine hilfreiche Gewohnheit ohne Zwang",
+      "Ein anderer Weg bleibt möglich",
+      "Auswahl anbieten und Vorlieben respektieren",
+      "Ausleihen braucht auch einen Rückgabeplan",
+      "Mehrere Bedürfnisse gemeinsam beachten",
+      "Nie wieder ein Getränk kaufen",
+      "Radfahren muss für alle passen",
+      "Jeder muss Wasser und Tee trinken",
+      "Nur der Preis entscheidet",
+      "Ein Plan passt immer für alle"
+     ],
+     "answers": [
+      "Ein anderer Weg bleibt möglich"
+     ]
+    },
+    {
+     "prompt": "Text 3",
+     "options": [
+      "Eine hilfreiche Gewohnheit ohne Zwang",
+      "Ein anderer Weg bleibt möglich",
+      "Auswahl anbieten und Vorlieben respektieren",
+      "Ausleihen braucht auch einen Rückgabeplan",
+      "Mehrere Bedürfnisse gemeinsam beachten",
+      "Nie wieder ein Getränk kaufen",
+      "Radfahren muss für alle passen",
+      "Jeder muss Wasser und Tee trinken",
+      "Nur der Preis entscheidet",
+      "Ein Plan passt immer für alle"
+     ],
+     "answers": [
+      "Auswahl anbieten und Vorlieben respektieren"
+     ]
+    },
+    {
+     "prompt": "Text 4",
+     "options": [
+      "Eine hilfreiche Gewohnheit ohne Zwang",
+      "Ein anderer Weg bleibt möglich",
+      "Auswahl anbieten und Vorlieben respektieren",
+      "Ausleihen braucht auch einen Rückgabeplan",
+      "Mehrere Bedürfnisse gemeinsam beachten",
+      "Nie wieder ein Getränk kaufen",
+      "Radfahren muss für alle passen",
+      "Jeder muss Wasser und Tee trinken",
+      "Nur der Preis entscheidet",
+      "Ein Plan passt immer für alle"
+     ],
+     "answers": [
+      "Ausleihen braucht auch einen Rückgabeplan"
+     ]
+    },
+    {
+     "prompt": "Text 5",
+     "options": [
+      "Eine hilfreiche Gewohnheit ohne Zwang",
+      "Ein anderer Weg bleibt möglich",
+      "Auswahl anbieten und Vorlieben respektieren",
+      "Ausleihen braucht auch einen Rückgabeplan",
+      "Mehrere Bedürfnisse gemeinsam beachten",
+      "Nie wieder ein Getränk kaufen",
+      "Radfahren muss für alle passen",
+      "Jeder muss Wasser und Tee trinken",
+      "Nur der Preis entscheidet",
+      "Ein Plan passt immer für alle"
+     ],
+     "answers": [
+      "Mehrere Bedürfnisse gemeinsam beachten"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "plan": {
+   "kind": "message",
+   "part": "b1-lesen-2",
+   "title": "Ein Verkehrsmittel, beide Materialien · Ausschnitt",
+   "text": "Für das Material wird genau ein Verkehrsmittel gewählt: entweder Bus 8 Euro oder Fahrrad 0 Euro. Sowohl die Fotomappe als auch die Mehrwegbecher müssen mit. Raum und Essen kosten bereits 70 Euro; Gesamtbudget 80 Euro. Beide Transportmöglichkeiten sind in dieser Lernaufgabe verfügbar. Die Wahl betrifft das Material, nicht die individuelle Anreise aller Gäste.",
+   "sample": []
+  },
+  "gaps": {
+   "kind": "worksheet",
+   "part": "b1-sprachbausteine-2",
+   "format": "cloze",
+   "uniqueOptions": true,
+   "title": "Zehn Lücken: Alternative und Ergänzung",
+   "text": "Für den Materialtransport nehmen wir [[1]] den Bus [[2]] das Fahrrad. Beim Treff bieten wir [[3]] Wasser [[4]] [[5]] Tee an. Die Becher werden [[6]] klarem Wasser gereinigt. Der Treff ist [[7]] unsere Nachbarn gedacht. Wir planen sorgfältig, [[8]] wir unterschiedliche Wünsche berücksichtigen möchten. Wir sprechen noch einmal mit [[9]] Verleiher. Am Montag versuchen wir, pünktlich zur Rückgabe [[10]] kommen.",
+   "questions": [
+    {
+     "prompt": "Lücke 1",
+     "options": [
+      "entweder",
+      "oder",
+      "sowohl",
+      "als",
+      "auch",
+      "mit",
+      "für",
+      "weil",
+      "dem",
+      "zu",
+      "aber",
+      "trotzdem",
+      "einen",
+      "ohne",
+      "zum"
+     ],
+     "answers": [
+      "entweder"
+     ]
+    },
+    {
+     "prompt": "Lücke 2",
+     "options": [
+      "entweder",
+      "oder",
+      "sowohl",
+      "als",
+      "auch",
+      "mit",
+      "für",
+      "weil",
+      "dem",
+      "zu",
+      "aber",
+      "trotzdem",
+      "einen",
+      "ohne",
+      "zum"
+     ],
+     "answers": [
+      "oder"
+     ]
+    },
+    {
+     "prompt": "Lücke 3",
+     "options": [
+      "entweder",
+      "oder",
+      "sowohl",
+      "als",
+      "auch",
+      "mit",
+      "für",
+      "weil",
+      "dem",
+      "zu",
+      "aber",
+      "trotzdem",
+      "einen",
+      "ohne",
+      "zum"
+     ],
+     "answers": [
+      "sowohl"
+     ]
+    },
+    {
+     "prompt": "Lücke 4",
+     "options": [
+      "entweder",
+      "oder",
+      "sowohl",
+      "als",
+      "auch",
+      "mit",
+      "für",
+      "weil",
+      "dem",
+      "zu",
+      "aber",
+      "trotzdem",
+      "einen",
+      "ohne",
+      "zum"
+     ],
+     "answers": [
+      "als"
+     ]
+    },
+    {
+     "prompt": "Lücke 5",
+     "options": [
+      "entweder",
+      "oder",
+      "sowohl",
+      "als",
+      "auch",
+      "mit",
+      "für",
+      "weil",
+      "dem",
+      "zu",
+      "aber",
+      "trotzdem",
+      "einen",
+      "ohne",
+      "zum"
+     ],
+     "answers": [
+      "auch"
+     ]
+    },
+    {
+     "prompt": "Lücke 6",
+     "options": [
+      "entweder",
+      "oder",
+      "sowohl",
+      "als",
+      "auch",
+      "mit",
+      "für",
+      "weil",
+      "dem",
+      "zu",
+      "aber",
+      "trotzdem",
+      "einen",
+      "ohne",
+      "zum"
+     ],
+     "answers": [
+      "mit"
+     ]
+    },
+    {
+     "prompt": "Lücke 7",
+     "options": [
+      "entweder",
+      "oder",
+      "sowohl",
+      "als",
+      "auch",
+      "mit",
+      "für",
+      "weil",
+      "dem",
+      "zu",
+      "aber",
+      "trotzdem",
+      "einen",
+      "ohne",
+      "zum"
+     ],
+     "answers": [
+      "für"
+     ]
+    },
+    {
+     "prompt": "Lücke 8",
+     "options": [
+      "entweder",
+      "oder",
+      "sowohl",
+      "als",
+      "auch",
+      "mit",
+      "für",
+      "weil",
+      "dem",
+      "zu",
+      "aber",
+      "trotzdem",
+      "einen",
+      "ohne",
+      "zum"
+     ],
+     "answers": [
+      "weil"
+     ]
+    },
+    {
+     "prompt": "Lücke 9",
+     "options": [
+      "entweder",
+      "oder",
+      "sowohl",
+      "als",
+      "auch",
+      "mit",
+      "für",
+      "weil",
+      "dem",
+      "zu",
+      "aber",
+      "trotzdem",
+      "einen",
+      "ohne",
+      "zum"
+     ],
+     "answers": [
+      "dem"
+     ]
+    },
+    {
+     "prompt": "Lücke 10",
+     "options": [
+      "entweder",
+      "oder",
+      "sowohl",
+      "als",
+      "auch",
+      "mit",
+      "für",
+      "weil",
+      "dem",
+      "zu",
+      "aber",
+      "trotzdem",
+      "einen",
+      "ohne",
+      "zum"
+     ],
+     "answers": [
+      "zu"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "voices": {
+   "kind": "worksheet",
+   "part": "b1-hoeren-1",
+   "format": "article",
+   "title": "Fünf persönliche Gewohnheiten",
+   "recordings": [
+    {
+     "text": "Ich gehe im Alltag viel zu Fuß. Wenn ich schwere Sachen mitnehme, wähle ich aber ein anderes Verkehrsmittel. Mir hilft ein Plan, der sowohl die Zeit als auch das Gepäck berücksichtigt.",
+     "audio": "audio/52a85520c464.m4a"
+    },
+    {
+     "text": "Beim gemeinsamen Essen möchte ich eine Auswahl anbieten. Ich koche oft vegetarisch. Trotzdem verlange ich nicht, dass alle Menschen immer genau wie ich essen. Ich frage lieber nach den Wünschen der Gruppe.",
+     "audio": "audio/5d1035bfe938.m4a"
+    },
+    {
+     "text": "Für seltene Treffen leihe ich Becher aus. Dafür brauche ich einen klaren Rückgabetermin. Wenn die Abholung überhaupt nicht in meinen Alltag passt, suche ich eine andere Lösung statt einfach zuzusagen.",
+     "audio": "audio/d552cec551ae.m4a"
+    },
+    {
+     "text": "Ich fahre gern mit dem Fahrrad, aber nicht bei jedem Wetter. Für den Transport großer Sachen nehme ich manchmal den Bus. Eine Alternative zu haben, ist mir wichtiger als immer bei einer einzigen Gewohnheit zu bleiben.",
+     "audio": "audio/5e3d1466acf4.m4a"
+    },
+    {
+     "text": "Ich finde kleine Schritte im Alltag hilfreich. Bei einem Fest muss für mich nicht alles perfekt sein. Wichtig ist, dass die Gruppe zuverlässig zusammenarbeitet und die geliehenen Dinge wieder zurückbringt.",
+     "audio": "audio/537f7c00e4e6.m4a"
+    }
+   ],
+   "questions": [
+    {
+     "prompt": "Die erste Person berücksichtigt Zeit und Gepäck.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "richtig"
+     ]
+    },
+    {
+     "prompt": "Die zweite Person verlangt von allen dieselbe Ernährung.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Die dritte Person sagt jede Abholung ohne Prüfung zu.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Die vierte Person nutzt je nach Situation verschiedene Verkehrsmittel.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "richtig"
+     ]
+    },
+    {
+     "prompt": "Die fünfte Person hält zuverlässige Rückgabe für wichtig.",
+     "options": [
+      "richtig",
+      "falsch"
+     ],
+     "answers": [
+      "richtig"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "opinions": {
+   "kind": "card",
+   "part": "b1-sprechen-2",
+   "title": "Was passt in Ihren Alltag?",
+   "theme": "Gewohnheit und praktische Möglichkeit",
+   "word": "Meinung · Beispiel · Grenze · Nachfrage",
+   "situation": "Geben Sie die Position wieder und vergleichen Sie mit Ihrem Alltag. Fragen Sie, wann eine gute Gewohnheit für den Partner schwierig wird.",
+   "roles": [
+    {
+     "title": "Person A · Nora",
+     "text": "Ich leihe gern Dinge aus, statt sie nur für einen Abend zu kaufen. Dafür plane ich sowohl die Abholung als auch die Rückgabe. Ohne diese Organisation wird aus der guten Idee schnell eine zusätzliche Belastung."
+    },
+    {
+     "title": "Person B · Jonas",
+     "text": "Ich möchte im Alltag flexibel bleiben. Entweder gehe ich zu Fuß oder ich nehme den Bus; das hängt von Zeit und Gepäck ab. Eine Regel, die für einen Menschen gut passt, muss nicht für alle gleich praktisch sein."
+    }
+   ],
+   "sample": []
+  }
+ },
+ "beats": [
+  {
+   "id": "start-1",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 0,
+   "read": "Элиф уже получила многоразовые стаканы. Теперь команда выбирает, как доставить их и фотографии к Raum C. Люди по-разному относятся к транспорту и еде. Нужно предложить выбор, сохранить обязательный набор материалов и не объявлять личное предпочтение правилом для всех. Все нужные условия даны в сцене: знания географии, настоящих цен или расписаний не требуются. Сначала попробуйте понять, какого результата добиваются друзья, затем слушайте реплики. На новом уровне важно не только найти число или знакомое слово, но и связать несколько сведений.",
+   "point": "Соединяем альтернативы и совместные требования",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 4,
+    "fresh": [
+     0,
+     1,
+     2,
+     3
+    ]
+   }
+  },
+  {
+   "id": "start-2",
+   "step": "start",
+   "stepTitle": "Новое дело команды",
+   "chapterIndex": 0,
+   "indexInStep": 1,
+   "read": "Парные союзы соединяют не только слова, но и требования задачи. Entweder ... oder разделяет альтернативы: в нашем плане нужно выбрать одно средство доставки. Sowohl ... als auch добавляет оба элемента: папку и стаканы. Но тот же союз в предложении напитков описывает доступный выбор, а не обязанность каждого выпить всё. Смысл зависит от действия, которое связывает элементы.",
+   "point": "entweder … oder / sowohl … als auch",
+   "scene": {
+    "view": "dialogue",
+    "dialogue": "scene",
+    "reveal": 8,
+    "fresh": [
+     4,
+     5,
+     6,
+     7
+    ]
+   }
+  },
+  {
+   "id": "words-1",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 0,
+   "read": "В этой теме важны обычные решения для маленькой встречи: одолженные стаканы, своевременный возврат, посильная доставка и разные вкусы. Персонажи объясняют свои предпочтения как собственный опыт. Упражнения не требуют объявлять один способ передвижения лучшим для всех. В игре два набора выполняют условия, поэтому нужно проверить весь состав, а не угадывать любимый вариант автора.",
+   "point": "Сначала используйте слово для решения; словарь остаётся справочником.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 6,
+    "words": "useful"
+   }
+  },
+  {
+   "id": "words-2",
+   "step": "words",
+   "stepTitle": "Слова, которые понадобятся",
+   "chapterIndex": 1,
+   "indexInStep": 1,
+   "read": "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к ситуации: какие слова обозначают человека, место, условие или уже выполненное действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово встретится снова в записке или разговоре, попробуйте восстановить его смысл до подсказки.",
+   "point": "Возвращайтесь к выражениям в сообщениях и новых действиях.",
+   "scene": {
+    "view": "words",
+    "dialogue": "scene",
+    "reveal": 15,
+    "words": "useful",
+    "fresh": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   }
+  },
+  {
+   "id": "grammar-1",
+   "step": "grammar",
+   "stepTitle": "entweder … oder / sowohl … als auch",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "Парные части показывают два варианта одного решения. В нашей игре требуется ровно одно средство перевозки, поэтому нельзя выбрать одновременно автобус и велосипед. Сначала найдите, к какому действию относятся варианты. Не переносите это ограничение на всё сообщение: папка и стаканы соединены другим союзом и нужны вместе. У каждого требования свой смысл.",
+   "point": "entweder … oder: альтернативы; здесь выбираем одну.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "grammar-2",
+   "step": "grammar",
+   "stepTitle": "entweder … oder / sowohl … als auch",
+   "chapterIndex": 2,
+   "indexInStep": 1,
+   "read": "Эта конструкция добавляет два элемента без выбора одного вместо другого. В материальном наборе нужны оба. Пропуск слова auch делает привычную парную модель неполной. Сравните с напитками: *Wir bieten sowohl Wasser als auch Tee an* означает наличие обоих предложений, но не обязывает одного гостя выбрать оба напитка. Найдите основной глагол до вывода.",
+   "point": "sowohl … als auch: оба названных элемента.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "grammar-3",
+   "step": "grammar",
+   "stepTitle": "entweder … oder / sowohl … als auch",
+   "chapterIndex": 2,
+   "indexInStep": 2,
+   "read": "Порядок главного предложения сохраняется: wir bieten ... an. Оба объекта находятся внутри одной рамки. Не переносите личный глагол в конец только потому, что встретили союз: это правило придаточных, например с obwohl. В нашей схеме действие предлагают гостям, а парные слова соединяют два дополнения. Сначала соберите простую рамку, потом добавьте второй элемент.",
+   "point": "Парные союзы не превращают часть в придаточную.",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "focus": [
+     0,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "id": "frames-1",
+   "step": "frames",
+   "stepTitle": "Как устроена реплика",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "Глагол anbieten отделяемый: bieten стоит вторым, an закрывает рамку. Между ними находятся оба напитка с парным союзом. Если один элемент удалить, предложение уже не передаст полный набор предложения. Но гостю по-прежнему можно выбрать только воду: грамматика описывает наличие вариантов на столе, а не действие каждого человека.",
+   "point": "*Wir bieten sowohl Wasser als auch Tee an.*",
+   "scene": {
+    "view": "sentence",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        },
+        {
+         "key": "bieten",
+         "text": "bieten"
+        }
+       ],
+       [
+        {
+         "key": "sowohl",
+         "text": "sowohl"
+        },
+        {
+         "key": "wasser",
+         "text": "Wasser"
+        }
+       ],
+       [
+        {
+         "key": "als",
+         "text": "als"
+        },
+        {
+         "key": "auch",
+         "text": "auch"
+        },
+        {
+         "key": "tee",
+         "text": "Tee"
+        }
+       ],
+       [
+        {
+         "key": "an",
+         "text": "an"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir bieten sowohl Wasser als auch Tee an.",
+      "ru": "Мы предлагаем и воду, и чай.",
+      "audio": "audio/286c4694ab29.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-1",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 0,
+   "read": "Нет. В этом требовании нужны оба предмета. Чтобы проверить, что именно соединяет союз, вернитесь к глаголу brauchen. Для доставки выбирают одно средство через entweder oder, а внутри перевозимого набора обязательны два элемента. Одно правило выбора не должно случайно отменять другое условие.",
+   "point": "Одно средство доставки, оба предмета.",
+   "question": "В наборе нужны sowohl Mappe als auch Becher. Можно взять только папку?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        },
+        {
+         "key": "bieten",
+         "text": "bieten"
+        }
+       ],
+       [
+        {
+         "key": "sowohl",
+         "text": "sowohl"
+        },
+        {
+         "key": "wasser",
+         "text": "Wasser"
+        }
+       ],
+       [
+        {
+         "key": "als",
+         "text": "als"
+        },
+        {
+         "key": "auch",
+         "text": "auch"
+        },
+        {
+         "key": "tee",
+         "text": "Tee"
+        }
+       ],
+       [
+        {
+         "key": "an",
+         "text": "an"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir bieten sowohl Wasser als auch Tee an.",
+      "ru": "Мы предлагаем и воду, и чай.",
+      "audio": "audio/286c4694ab29.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "check-2",
+   "step": "check",
+   "stepTitle": "Проверьте смысл до подсказки",
+   "chapterIndex": 3,
+   "indexInStep": 1,
+   "read": "Нет. Глагол anbieten означает предложение доступных вариантов. На столе должны быть оба напитка, а гость сам выбирает, что пить. Для вывода о действии человека нужен соответствующий глагол и контекст. Такая проверка предотвращает механический перевод парного союза в правило для всех участников.",
+   "point": "Предлагать оба ≠ требовать оба от каждого.",
+   "question": "«Wir bieten sowohl Wasser als auch Tee an» обязывает пить оба?",
+   "scene": {
+    "view": "table",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        },
+        {
+         "key": "bieten",
+         "text": "bieten"
+        }
+       ],
+       [
+        {
+         "key": "sowohl",
+         "text": "sowohl"
+        },
+        {
+         "key": "wasser",
+         "text": "Wasser"
+        }
+       ],
+       [
+        {
+         "key": "als",
+         "text": "als"
+        },
+        {
+         "key": "auch",
+         "text": "auch"
+        },
+        {
+         "key": "tee",
+         "text": "Tee"
+        }
+       ],
+       [
+        {
+         "key": "an",
+         "text": "an"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir bieten sowohl Wasser als auch Tee an.",
+      "ru": "Мы предлагаем и воду, и чай.",
+      "audio": "audio/286c4694ab29.m4a"
+     }
+    ]
+   }
+  },
+  {
+   "id": "exam-headlines-1",
+   "step": "exam-headlines",
+   "stepTitle": "Fünf Alltagstexte, zehn Überschriften",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Пять текстов показывают личные привычки и их границы. Найдите главную мысль, а не один предмет вроде велосипеда или стакана. Заголовки с «всегда» и «все» могут добавлять крайность. Каждый правильный заголовок используйте один раз. Затем объясните, какую реальную потребность человек пытается учесть.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        },
+        {
+         "key": "bieten",
+         "text": "bieten"
+        }
+       ],
+       [
+        {
+         "key": "sowohl",
+         "text": "sowohl"
+        },
+        {
+         "key": "wasser",
+         "text": "Wasser"
+        }
+       ],
+       [
+        {
+         "key": "als",
+         "text": "als"
+        },
+        {
+         "key": "auch",
+         "text": "auch"
+        },
+        {
+         "key": "tee",
+         "text": "Tee"
+        }
+       ],
+       [
+        {
+         "key": "an",
+         "text": "an"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir bieten sowohl Wasser als auch Tee an.",
+      "ru": "Мы предлагаем и воду, и чай.",
+      "audio": "audio/286c4694ab29.m4a"
+     }
+    ],
+    "task": "headlines"
+   }
+  },
+  {
+   "id": "exam-headlines-2",
+   "step": "exam-headlines",
+   "stepTitle": "Fünf Alltagstexte, zehn Überschriften",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        },
+        {
+         "key": "bieten",
+         "text": "bieten"
+        }
+       ],
+       [
+        {
+         "key": "sowohl",
+         "text": "sowohl"
+        },
+        {
+         "key": "wasser",
+         "text": "Wasser"
+        }
+       ],
+       [
+        {
+         "key": "als",
+         "text": "als"
+        },
+        {
+         "key": "auch",
+         "text": "auch"
+        },
+        {
+         "key": "tee",
+         "text": "Tee"
+        }
+       ],
+       [
+        {
+         "key": "an",
+         "text": "an"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir bieten sowohl Wasser als auch Tee an.",
+      "ru": "Мы предлагаем и воду, и чай.",
+      "audio": "audio/286c4694ab29.m4a"
+     }
+    ],
+    "task": "headlines"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        },
+        {
+         "key": "bieten",
+         "text": "bieten"
+        }
+       ],
+       [
+        {
+         "key": "sowohl",
+         "text": "sowohl"
+        },
+        {
+         "key": "wasser",
+         "text": "Wasser"
+        }
+       ],
+       [
+        {
+         "key": "als",
+         "text": "als"
+        },
+        {
+         "key": "auch",
+         "text": "auch"
+        },
+        {
+         "key": "tee",
+         "text": "Tee"
+        }
+       ],
+       [
+        {
+         "key": "an",
+         "text": "an"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir bieten sowohl Wasser als auch Tee an.",
+      "ru": "Мы предлагаем и воду, и чай.",
+      "audio": "audio/286c4694ab29.m4a"
+     }
+    ],
+    "task": "headlines",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-plan-1",
+   "step": "exam-plan",
+   "stepTitle": "Ein Verkehrsmittel, beide Materialien · Ausschnitt",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Доставка материалов и прибытие гостей — разные задачи. В игре нужно одно средство перевозки и оба предмета. Общая сумма должна оставаться в пределах 80 евро с уже учтёнными помещением и едой. Оба способа доставки доступны по условиям, поэтому два полных набора допустимы. Личная симпатия к транспорту не заменяет проверку состава.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        },
+        {
+         "key": "bieten",
+         "text": "bieten"
+        }
+       ],
+       [
+        {
+         "key": "sowohl",
+         "text": "sowohl"
+        },
+        {
+         "key": "wasser",
+         "text": "Wasser"
+        }
+       ],
+       [
+        {
+         "key": "als",
+         "text": "als"
+        },
+        {
+         "key": "auch",
+         "text": "auch"
+        },
+        {
+         "key": "tee",
+         "text": "Tee"
+        }
+       ],
+       [
+        {
+         "key": "an",
+         "text": "an"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir bieten sowohl Wasser als auch Tee an.",
+      "ru": "Мы предлагаем и воду, и чай.",
+      "audio": "audio/286c4694ab29.m4a"
+     }
+    ],
+    "task": "plan"
+   }
+  },
+  {
+   "id": "exam-plan-2",
+   "step": "exam-plan",
+   "stepTitle": "Ein Verkehrsmittel, beide Materialien · Ausschnitt",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        },
+        {
+         "key": "bieten",
+         "text": "bieten"
+        }
+       ],
+       [
+        {
+         "key": "sowohl",
+         "text": "sowohl"
+        },
+        {
+         "key": "wasser",
+         "text": "Wasser"
+        }
+       ],
+       [
+        {
+         "key": "als",
+         "text": "als"
+        },
+        {
+         "key": "auch",
+         "text": "auch"
+        },
+        {
+         "key": "tee",
+         "text": "Tee"
+        }
+       ],
+       [
+        {
+         "key": "an",
+         "text": "an"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir bieten sowohl Wasser als auch Tee an.",
+      "ru": "Мы предлагаем и воду, и чай.",
+      "audio": "audio/286c4694ab29.m4a"
+     }
+    ],
+    "task": "plan"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        },
+        {
+         "key": "bieten",
+         "text": "bieten"
+        }
+       ],
+       [
+        {
+         "key": "sowohl",
+         "text": "sowohl"
+        },
+        {
+         "key": "wasser",
+         "text": "Wasser"
+        }
+       ],
+       [
+        {
+         "key": "als",
+         "text": "als"
+        },
+        {
+         "key": "auch",
+         "text": "auch"
+        },
+        {
+         "key": "tee",
+         "text": "Tee"
+        }
+       ],
+       [
+        {
+         "key": "an",
+         "text": "an"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir bieten sowohl Wasser als auch Tee an.",
+      "ru": "Мы предлагаем и воду, и чай.",
+      "audio": "audio/286c4694ab29.m4a"
+     }
+    ],
+    "task": "plan",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-gaps-1",
+   "step": "exam-gaps",
+   "stepTitle": "Zehn Lücken: Alternative und Ergänzung",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Парные союзы занимают несколько пропусков, но смысл остаётся связным. Сначала восстановите альтернативу транспорта и предложение двух напитков. Затем проверьте падежи, причину и инфинитивную рамку. Каждый вариант из общего банка используйте один раз. Прочитайте весь текст после заполнения, чтобы убедиться, что предложение выбора не стало обязанностью гостя.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        },
+        {
+         "key": "bieten",
+         "text": "bieten"
+        }
+       ],
+       [
+        {
+         "key": "sowohl",
+         "text": "sowohl"
+        },
+        {
+         "key": "wasser",
+         "text": "Wasser"
+        }
+       ],
+       [
+        {
+         "key": "als",
+         "text": "als"
+        },
+        {
+         "key": "auch",
+         "text": "auch"
+        },
+        {
+         "key": "tee",
+         "text": "Tee"
+        }
+       ],
+       [
+        {
+         "key": "an",
+         "text": "an"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir bieten sowohl Wasser als auch Tee an.",
+      "ru": "Мы предлагаем и воду, и чай.",
+      "audio": "audio/286c4694ab29.m4a"
+     }
+    ],
+    "task": "gaps"
+   }
+  },
+  {
+   "id": "exam-gaps-2",
+   "step": "exam-gaps",
+   "stepTitle": "Zehn Lücken: Alternative und Ergänzung",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        },
+        {
+         "key": "bieten",
+         "text": "bieten"
+        }
+       ],
+       [
+        {
+         "key": "sowohl",
+         "text": "sowohl"
+        },
+        {
+         "key": "wasser",
+         "text": "Wasser"
+        }
+       ],
+       [
+        {
+         "key": "als",
+         "text": "als"
+        },
+        {
+         "key": "auch",
+         "text": "auch"
+        },
+        {
+         "key": "tee",
+         "text": "Tee"
+        }
+       ],
+       [
+        {
+         "key": "an",
+         "text": "an"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir bieten sowohl Wasser als auch Tee an.",
+      "ru": "Мы предлагаем и воду, и чай.",
+      "audio": "audio/286c4694ab29.m4a"
+     }
+    ],
+    "task": "gaps"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        },
+        {
+         "key": "bieten",
+         "text": "bieten"
+        }
+       ],
+       [
+        {
+         "key": "sowohl",
+         "text": "sowohl"
+        },
+        {
+         "key": "wasser",
+         "text": "Wasser"
+        }
+       ],
+       [
+        {
+         "key": "als",
+         "text": "als"
+        },
+        {
+         "key": "auch",
+         "text": "auch"
+        },
+        {
+         "key": "tee",
+         "text": "Tee"
+        }
+       ],
+       [
+        {
+         "key": "an",
+         "text": "an"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir bieten sowohl Wasser als auch Tee an.",
+      "ru": "Мы предлагаем и воду, и чай.",
+      "audio": "audio/286c4694ab29.m4a"
+     }
+    ],
+    "task": "gaps",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-voices-1",
+   "step": "exam-voices",
+   "stepTitle": "Fünf persönliche Gewohnheiten",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Слушайте пять мнений один раз для самостоятельной попытки. Люди называют предпочтение и его границу: тяжёлый багаж, время получения, погоду. Не превращайте такую позицию в абсолютное правило. После попытки учебный транскрипт поможет найти именно ту оговорку, из-за которой утверждение оказалось неверным.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        },
+        {
+         "key": "bieten",
+         "text": "bieten"
+        }
+       ],
+       [
+        {
+         "key": "sowohl",
+         "text": "sowohl"
+        },
+        {
+         "key": "wasser",
+         "text": "Wasser"
+        }
+       ],
+       [
+        {
+         "key": "als",
+         "text": "als"
+        },
+        {
+         "key": "auch",
+         "text": "auch"
+        },
+        {
+         "key": "tee",
+         "text": "Tee"
+        }
+       ],
+       [
+        {
+         "key": "an",
+         "text": "an"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir bieten sowohl Wasser als auch Tee an.",
+      "ru": "Мы предлагаем и воду, и чай.",
+      "audio": "audio/286c4694ab29.m4a"
+     }
+    ],
+    "task": "voices"
+   }
+  },
+  {
+   "id": "exam-voices-2",
+   "step": "exam-voices",
+   "stepTitle": "Fünf persönliche Gewohnheiten",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        },
+        {
+         "key": "bieten",
+         "text": "bieten"
+        }
+       ],
+       [
+        {
+         "key": "sowohl",
+         "text": "sowohl"
+        },
+        {
+         "key": "wasser",
+         "text": "Wasser"
+        }
+       ],
+       [
+        {
+         "key": "als",
+         "text": "als"
+        },
+        {
+         "key": "auch",
+         "text": "auch"
+        },
+        {
+         "key": "tee",
+         "text": "Tee"
+        }
+       ],
+       [
+        {
+         "key": "an",
+         "text": "an"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir bieten sowohl Wasser als auch Tee an.",
+      "ru": "Мы предлагаем и воду, и чай.",
+      "audio": "audio/286c4694ab29.m4a"
+     }
+    ],
+    "task": "voices"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        },
+        {
+         "key": "bieten",
+         "text": "bieten"
+        }
+       ],
+       [
+        {
+         "key": "sowohl",
+         "text": "sowohl"
+        },
+        {
+         "key": "wasser",
+         "text": "Wasser"
+        }
+       ],
+       [
+        {
+         "key": "als",
+         "text": "als"
+        },
+        {
+         "key": "auch",
+         "text": "auch"
+        },
+        {
+         "key": "tee",
+         "text": "Tee"
+        }
+       ],
+       [
+        {
+         "key": "an",
+         "text": "an"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir bieten sowohl Wasser als auch Tee an.",
+      "ru": "Мы предлагаем и воду, и чай.",
+      "audio": "audio/286c4694ab29.m4a"
+     }
+    ],
+    "task": "voices",
+    "solved": true
+   }
+  },
+  {
+   "id": "exam-opinions-1",
+   "step": "exam-opinions",
+   "stepTitle": "Was passt in Ihren Alltag?",
+   "chapterIndex": 4,
+   "indexInStep": 0,
+   "read": "Расскажите, что человеку удобно и что требует организации. Затем приведите собственный пример из работы, поездки или подготовки встречи. Спросите партнёра о границе его привычки и отреагируйте на ответ. Не требуется защищать универсальное решение для всех: важны понятная позиция и внимание к условиям другого.",
+   "point": "Ищите подтверждение в источнике, а не совпадение отдельного слова.",
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        },
+        {
+         "key": "bieten",
+         "text": "bieten"
+        }
+       ],
+       [
+        {
+         "key": "sowohl",
+         "text": "sowohl"
+        },
+        {
+         "key": "wasser",
+         "text": "Wasser"
+        }
+       ],
+       [
+        {
+         "key": "als",
+         "text": "als"
+        },
+        {
+         "key": "auch",
+         "text": "auch"
+        },
+        {
+         "key": "tee",
+         "text": "Tee"
+        }
+       ],
+       [
+        {
+         "key": "an",
+         "text": "an"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir bieten sowohl Wasser als auch Tee an.",
+      "ru": "Мы предлагаем и воду, и чай.",
+      "audio": "audio/286c4694ab29.m4a"
+     }
+    ],
+    "task": "opinions"
+   }
+  },
+  {
+   "id": "exam-opinions-2",
+   "step": "exam-opinions",
+   "stepTitle": "Was passt in Ihren Alltag?",
+   "chapterIndex": 4,
+   "indexInStep": 1,
+   "read": "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы поняли иначе. Для письма и разговора образец не является единственным допустимым ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте сказать тот же смысл своими словами, прежде чем идти дальше.",
+   "point": "Сначала самостоятельная попытка, затем разбор.",
+   "question": "Готовы сверить своё решение с источником?",
+   "sceneBefore": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        },
+        {
+         "key": "bieten",
+         "text": "bieten"
+        }
+       ],
+       [
+        {
+         "key": "sowohl",
+         "text": "sowohl"
+        },
+        {
+         "key": "wasser",
+         "text": "Wasser"
+        }
+       ],
+       [
+        {
+         "key": "als",
+         "text": "als"
+        },
+        {
+         "key": "auch",
+         "text": "auch"
+        },
+        {
+         "key": "tee",
+         "text": "Tee"
+        }
+       ],
+       [
+        {
+         "key": "an",
+         "text": "an"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir bieten sowohl Wasser als auch Tee an.",
+      "ru": "Мы предлагаем и воду, и чай.",
+      "audio": "audio/286c4694ab29.m4a"
+     }
+    ],
+    "task": "opinions"
+   },
+   "scene": {
+    "view": "task",
+    "dialogue": "scene",
+    "words": "useful",
+    "table": "rule",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "wir",
+         "text": "Wir"
+        },
+        {
+         "key": "bieten",
+         "text": "bieten"
+        }
+       ],
+       [
+        {
+         "key": "sowohl",
+         "text": "sowohl"
+        },
+        {
+         "key": "wasser",
+         "text": "Wasser"
+        }
+       ],
+       [
+        {
+         "key": "als",
+         "text": "als"
+        },
+        {
+         "key": "auch",
+         "text": "auch"
+        },
+        {
+         "key": "tee",
+         "text": "Tee"
+        }
+       ],
+       [
+        {
+         "key": "an",
+         "text": "an"
+        }
+       ]
+      ],
+      "punct": ".",
+      "plain": "Wir bieten sowohl Wasser als auch Tee an.",
+      "ru": "Мы предлагаем и воду, и чай.",
+      "audio": "audio/286c4694ab29.m4a"
+     }
+    ],
+    "task": "opinions",
+    "solved": true
+   }
+  }
+ ],
+ "exercises": [
+  {
+   "id": "b1-umwelt-1",
+   "type": "choice",
+   "q": "Entweder Bus ___ Fahrrad.",
+   "options": [
+    "auch",
+    "oder",
+    "als"
+   ],
+   "answer": 1,
+   "why": "Парная альтернатива.",
+   "audio": "audio/34f567aac1a3.m4a"
+  },
+  {
+   "id": "b1-umwelt-2",
+   "type": "choice",
+   "q": "Sowohl Wasser ___ auch Tee.",
+   "options": [
+    "aber",
+    "als",
+    "oder"
+   ],
+   "answer": 1,
+   "why": "Sowohl ... als auch.",
+   "audio": "audio/57c3dc370bc4.m4a"
+  },
+  {
+   "id": "b1-umwelt-3",
+   "type": "choice",
+   "q": "Wir bieten sowohl Wasser als auch Tee ___.",
+   "options": [
+    "zu",
+    "mit",
+    "an"
+   ],
+   "answer": 2,
+   "why": "Anbieten — отделяемая рамка.",
+   "audio": "audio/286c4694ab29.m4a"
+  },
+  {
+   "id": "b1-umwelt-4",
+   "type": "choice",
+   "q": "Нужны и папка, и стаканы. Только папка подходит?",
+   "options": [
+    "Только в автобусе",
+    "Нет",
+    "Да"
+   ],
+   "answer": 1,
+   "why": "Обязательны оба предмета."
+  },
+  {
+   "id": "b1-umwelt-5",
+   "type": "choice",
+   "q": "Два напитка предлагаются, значит каждый пьётоба?",
+   "options": [
+    "Только гости",
+    "Нет",
+    "Да"
+   ],
+   "answer": 1,
+   "why": "Предложение не равно действию гостя."
+  },
+  {
+   "id": "b1-umwelt-6",
+   "type": "choice",
+   "q": "70 базовых +8 транспорт при бюджете 80…",
+   "options": [
+    "Не подходит",
+    "Ровно 80",
+    "Подходит"
+   ],
+   "answer": 2,
+   "why": "78 меньше 80."
+  },
+  {
+   "id": "b1-umwelt-7",
+   "type": "order",
+   "de": "Wir nehmen entweder den Bus oder das Fahrrad.",
+   "ru": "Возьмём либо автобус, либо велосипед.",
+   "audio": "audio/59380c91540c.m4a"
+  },
+  {
+   "id": "b1-umwelt-8",
+   "type": "order",
+   "de": "Wir brauchen sowohl die Mappe als auch die Becher.",
+   "ru": "Нам нужны и папка, и стаканы.",
+   "audio": "audio/d9feee2a9a76.m4a"
+  },
+  {
+   "id": "b1-umwelt-9",
+   "type": "order",
+   "de": "Wir bieten sowohl Wasser als auch Tee an.",
+   "ru": "Мы предлагаем и воду, и чай.",
+   "audio": "audio/286c4694ab29.m4a"
+  },
+  {
+   "id": "b1-umwelt-10",
+   "type": "order",
+   "de": "Jeder Gast kann selbst entscheiden.",
+   "ru": "Каждый гость может решить сам.",
+   "audio": "audio/20b07e3ff521.m4a"
+  },
+  {
+   "id": "b1-umwelt-11",
+   "type": "order",
+   "de": "Elif hat die Becher bereits abgeholt.",
+   "ru": "Элиф уже получила стаканы.",
+   "audio": "audio/34cc227f20bc.m4a"
+  },
+  {
+   "id": "b1-umwelt-12",
+   "type": "order",
+   "de": "Wir planen sowohl die Abholung als auch die Rückgabe.",
+   "ru": "Мы планируем и получение, и возврат.",
+   "audio": "audio/ace171acf0ba.m4a"
+  }
+ ],
+ "case": {
+  "title": "Beides anbieten heißt nicht: Alle müssen beides nehmen",
+  "ru": "Сверка дневника",
+  "intro": "Проверьте предмет альтернативы, реальный статус стаканов и выбор гостя.",
+  "people": {},
+  "steps": [
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Für den Materialtransport entweder Bus oder Fahrrad. Sowohl Mappe als auch Becher müssen mit.",
+      "ru": "Для доставки либо автобус, либо велосипед. Нужны и папка, и стаканы."
+     }
+    ],
+    "question": "Какой полный набор допустим?",
+    "options": [
+     "Только папка",
+     "Велосипед, папка и стаканы",
+     "Автобус и велосипед без стаканов"
+    ],
+    "answer": 1,
+    "right": "Одно средство и оба предмета.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Elif: Die Mehrwegbecher habe ich abgeholt. Sie sind jetzt bei mir.",
+      "ru": "Элиф: Стаканы я получила. Они теперь у меня."
+     }
+    ],
+    "question": "Получение ещё только обещано?",
+    "options": [
+     "Нет, подтверждено выполнение",
+     "Да",
+     "Они потеряны"
+    ],
+    "answer": 0,
+    "right": "Есть сообщение о выполненном действии.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   },
+   {
+    "read": "Сверьте запись с исходным сообщением.",
+    "evidence": [
+     {
+      "kind": "note",
+      "de": "Wir bieten sowohl Wasser als auch Tee an. Jeder kann wählen.",
+      "ru": "Предлагаем и воду, и чай. Каждый может выбрать."
+     }
+    ],
+    "question": "Гость обязан пить оба?",
+    "options": [
+     "Да",
+     "Только если пришёл на велосипеде",
+     "Нет"
+    ],
+    "answer": 2,
+    "right": "Anbieten описывает доступные варианты.",
+    "wrong": [
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями.",
+     "Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между частями."
+    ]
+   }
+  ],
+  "ending": "Сохранены обязательные материалы, допустимый выбор и подтверждённое получение. Предпочтения не стали выдуманными обязанностями."
+ },
+ "adventure": {
+  "kind": "sequence",
+  "title": "Одно средство, оба материала, разные вкусы",
+  "intro": "Элиф уже получила многоразовые стаканы. Теперь команда выбирает, как доставить их и фотографии к Raum C. Люди по-разному относятся к транспорту и еде. Нужно предложить выбор, сохранить обязательный набор материалов и не объявлять личное предпочтение правилом для всех.",
+  "ending": "Выбран один подходящий способ доставки с обоими материалами. Стаканы уже получены, а возврат запланирован на понедельник. Предложение воды и чая оставляет гостям личный выбор.",
+  "challenges": [
+   {
+    "id": "logic",
+    "kind": "match",
+    "title": "Альтернатива или добавление?",
+    "intro": "Определите, какие элементы связывает конструкция.",
+    "success": "Различены два способа связи.",
+    "wrong": "Entwederoder предлагает альтернативы; sowohlalsauch добавляет оба.",
+    "options": [
+     {
+      "id": "one",
+      "label": "альтернатива в этом выборе"
+     },
+     {
+      "id": "both",
+      "label": "оба элемента"
+     }
+    ],
+    "slots": [
+     {
+      "id": "a",
+      "label": "entweder Bus oder Fahrrad",
+      "answer": "one"
+     },
+     {
+      "id": "b",
+      "label": "sowohl Mappe als auch Becher",
+      "answer": "both"
+     },
+     {
+      "id": "c",
+      "label": "entweder Montag oder Dienstag",
+      "answer": "one"
+     }
+    ]
+   },
+   {
+    "id": "drinks",
+    "kind": "order",
+    "title": "Предложите два напитка",
+    "intro": "Сохраните рамку anbieten.",
+    "success": "Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.",
+    "wrong": "Проверьте положение глагола и конец предложения: используйте все фрагменты.",
+    "tokens": [
+     "Wir bieten",
+     "sowohl Wasser",
+     "als auch Tee",
+     "an."
+    ],
+    "label": "Реплика для команды"
+   },
+   {
+    "id": "kit",
+    "kind": "pack",
+    "title": "Соберите доставку материалов",
+    "intro": "Ровно одно средство доставки; обязательно и папка, и стаканы. Учитывайте общие 80 евро.",
+    "success": "Один транспорт и оба материала. Сумма укладывается в 80.",
+    "wrong": "Не берите оба транспорта и не оставляйте один из материалов.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "Für das Material wird genau ein Verkehrsmittel gewählt: entweder Bus 8 Euro oder Fahrrad 0 Euro. Sowohl die Fotomappe als auch die Mehrwegbecher müssen mit. Raum und Essen kosten bereits 70 Euro; Gesamtbudget 80 Euro. Beide Transportmöglichkeiten sind in dieser Lernaufgabe verfügbar. Die Wahl betrifft das Material, nicht die individuelle Anreise aller Gäste.",
+      "name": "Ein Verkehrsmittel, beide Materialien · Ausschnitt"
+     }
+    ],
+    "options": [
+     {
+      "id": "bus",
+      "label": "Bus · 8 €"
+     },
+     {
+      "id": "bike",
+      "label": "Fahrrad · 0 €"
+     },
+     {
+      "id": "mappe",
+      "label": "Fotomappe"
+     },
+     {
+      "id": "becher",
+      "label": "Mehrwegbecher"
+     }
+    ],
+    "answer": [
+     "bus",
+     "mappe",
+     "becher"
+    ],
+    "alternatives": [
+     [
+      "bike",
+      "mappe",
+      "becher"
+     ]
+    ]
+   },
+   {
+    "id": "meaning",
+    "kind": "select",
+    "title": "Что важно четвёртому автору?",
+    "intro": "Прочитайте четвёртый текст.",
+    "success": "Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы одно из них.",
+    "wrong": "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание и адресата.",
+    "mode": "reading",
+    "quotes": [
+     {
+      "de": "1) Nora nimmt ihren Becher gern selbst mit. Für sie ist wichtig, dass sie unterwegs nicht jedes Mal einen neuen braucht. Wenn sie ihn zu Hause vergisst, kauft sie trotzdem ein Getränk. Eine Gewohnheit soll ihr helfen und nicht den ganzen Tag bestimmen.\n\n2) Jonas fährt oft mit dem Fahrrad. Bei starkem Regen oder viel Gepäck nimmt er den Bus. Er findet es sinnvoll, eine Alternative zu haben. Für einen gemeinsamen Ausflug möchte er vorher wissen, ob alle den Weg gut schaffen können.\n\n3) Karin plant Essen gern gemeinsam. Sie bietet sowohl ein vegetarisches Gericht als auch Wasser und Tee an. Trotzdem sollen Gäste selbst entscheiden, was sie mögen. Wer nur Wasser trinkt, muss nichts erklären. Eine Auswahl ist für sie eine Einladung und keine Pflicht.\n\n4) Ben leiht Dinge lieber aus, wenn er sie nur selten braucht. Für ein kleines Treffen holt er Becher bei einem Nachbarn. Dafür muss er die Rückgabe zuverlässig planen. Der niedrige Preis allein reicht ihm nicht, wenn die Abholung zu viel Zeit kostet.\n\n5) Eine Gruppe vergleicht vor einem Fest unterschiedliche Wünsche. Eine Person möchte günstig einkaufen, eine andere wenig tragen. Sie wählen einen Plan, der beides berücksichtigt. Dabei behaupten sie nicht, für jede Veranstaltung dieselbe beste Lösung gefunden zu haben.",
+      "name": "Fünf Alltagstexte, zehn Überschriften"
+     }
+    ],
+    "options": [
+     {
+      "id": "o0",
+      "label": "Учесть получение и возврат одолженных вещей"
+     },
+     {
+      "id": "o1",
+      "label": "Смотреть только на самую низкую цену"
+     },
+     {
+      "id": "o2",
+      "label": "Покупать всё новое"
+     }
+    ],
+    "answer": [
+     "o0"
+    ]
+   },
+   {
+    "id": "guest",
+    "kind": "negotiation",
+    "title": "Не превращайте выбор в обязанность",
+    "intro": "Гость выбирает один напиток.",
+    "success": "Оба напитка доступны, выбор гостя сохранён.",
+    "wrong": "Предлагать два варианта не означает требовать оба.",
+    "start": "a",
+    "nodes": [
+     {
+      "id": "a",
+      "text": "Gast: Ich trinke keinen Tee. Muss ich hier beides nehmen?",
+      "choices": [
+       {
+        "label": "Nein. Wir bieten beides an, aber Sie können selbst wählen.",
+        "next": "b",
+        "feedback": "Уточнено значение предложения двух вариантов."
+       }
+      ]
+     },
+     {
+      "id": "b",
+      "text": "Gast: Dann nehme ich gern nur Wasser.",
+      "choices": [
+       {
+        "label": "Gern. Das passt genauso.",
+        "next": "end",
+        "feedback": "Предпочтение принято без дополнительного условия."
+       }
+      ]
+     },
+     {
+      "id": "end",
+      "text": "Gast: Danke, jetzt habe ich das Angebot verstanden.",
+      "terminal": true,
+      "choices": []
+     }
+    ]
+   }
+  ]
+ },
+ "spy": []
+}

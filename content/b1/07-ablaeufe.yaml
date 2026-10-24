@@ -1,0 +1,710 @@
+id: b1-ablaeufe
+order: 7
+title: Während Elif fotografiert, prüft Hauke den Weg.
+ru: Согласуем последовательность и параллельные дела
+lede: Друзья собирают для альбома фотографии и короткие истории из Плёна. Нужно успеть к
+  обратному автобусу, не превращая прогулку в гонку. Часть дел можно распределить между
+  участниками, но проверку обратного пути следует сделать до выхода к воде. Расписание урока
+  вымышленное.
+goals:
+  - Отличить действие до другого от одновременного
+  - Согласовать задачи разных участников
+  - Понять пять объявлений об изменениях
+  - Проверить план по общему времени
+grammar:
+  - "bevor и während: до действия и одновременно"
+exam:
+  - b1-lesen-2
+  - b1-hoeren-3
+  - b1-sprachbausteine-1
+  - b1-sprechen-3
+dialogues:
+  scene:
+    title: Während Elif fotografiert, prüft Hauke den Weg.
+    ru: Согласуем последовательность и параллельные дела
+    place: Plön · прогулка у озера · вымышленная учебная ситуация
+    people:
+      D:
+        name: Dana
+        voice: Anna
+      M:
+        name: Mateo
+        voice: Reed
+      E:
+        name: Elif
+        voice: Flo
+      H:
+        name: Hauke
+        voice: Rocko
+    lines:
+      - H: Bevor wir zum See gehen, prüfen wir die Rückfahrt.
+        ru: Прежде чем пойдём к озеру, проверим обратную дорогу.
+      - E: Unser Bus fährt um dreizehn Uhr zwanzig.
+        ru: Наш автобус отправляется в тринадцать двадцать.
+      - D: Während du den Weg prüfst, hole ich Wasser.
+        ru: Пока ты проверяешь путь, я возьму воду.
+      - M: Ich packe das Brot ein, bevor wir losgehen.
+        ru: Я упакую хлеб, прежде чем мы выйдем.
+      - H: Am Steg machen wir nur eine kurze Pause.
+        ru: На причале сделаем только короткую остановку.
+      - E: Während ihr esst, schreibe ich die Bildunterschriften.
+        ru: Пока вы едите, я напишу подписи к фотографиям.
+      - D: Dann wechseln wir. Du brauchst auch eine Pause.
+        ru: Потом поменяемся. Тебе тоже нужен перерыв.
+      - M: Gut. Um dreizehn Uhr sind wir wieder an der Haltestelle.
+        ru: Хорошо. В тринадцать мы снова у остановки.
+words:
+  useful:
+    title: Wörter für die Aufgabe
+    ru: Слова для действия
+    items:
+      - de: der Ablauf
+        ru: порядок действий
+        pl: Abläufe
+      - de: die Rückfahrt
+        ru: обратная дорога
+        pl: Rückfahrten
+      - de: der Steg
+        ru: причал, мостки
+        pl: Stege
+      - de: das Ufer
+        ru: берег
+        pl: Ufer
+      - de: die Bildunterschrift
+        ru: подпись к фото
+        pl: Bildunterschriften
+      - de: der Treffpunkt
+        ru: место встречи
+        pl: Treffpunkte
+      - de: der Hinweis
+        ru: указание, сообщение
+        pl: Hinweise
+      - de: die Durchsage
+        ru: объявление по громкой связи
+        pl: Durchsagen
+      - de: losgehen
+        ru: отправляться пешком
+      - de: einpacken
+        ru: упаковывать
+      - de: gleichzeitig
+        ru: одновременно
+      - de: rechtzeitig
+        ru: заблаговременно, вовремя
+      - de: wechseln
+        ru: меняться
+      - de: während
+        ru: пока, в то время как
+      - de: bevor
+        ru: прежде чем
+tables:
+  rule:
+    title: "bevor и während: до действия и одновременно"
+    ru: Опора для решения
+    head:
+      - Beispiel
+      - Смысл и форма
+    ruCols:
+      - 1
+    rows:
+      - - Bevor wir losgehen, prüfen wir die Rückfahrt.
+        - "bevor: сначала проверка, потом выход."
+      - - Während Hauke prüft, holt Dana Wasser.
+        - "während: действия идут одновременно."
+      - - Wir packen Brot ein, bevor wir losgehen.
+        - Главная часть может стоять перед придаточной.
+tasks:
+  plan:
+    kind: message
+    part: b1-lesen-2
+    title: Der gemeinsame Tagesplan · Ausschnitt
+    text: "Vor dem Weg zum See: Rückfahrt prüfen und Brot einpacken. Während Hauke den Weg prüft,
+      holt Dana Wasser. Am Steg fotografiert Elif; die anderen machen eine kurze Pause. Danach
+      wechseln sie. Spätestens um 13 Uhr sind alle an der Haltestelle. Abfahrt: 13:20 Uhr. Der
+      Steg ist kein Einstieg für eine gebuchte Bootsfahrt. Update am See: Der kleine Steg ist
+      während der Arbeiten gesperrt. Der Uferweg bleibt offen."
+  notices:
+    kind: worksheet
+    part: b1-hoeren-3
+    format: article
+    title: Fünf Ansagen zum Tagesablauf
+    recordings:
+      - voice: Shelley
+        text: Guten Tag. Bevor Sie den Ausstellungsraum betreten, geben Sie bitte große Rucksäcke an
+          der Garderobe ab. Kleine Taschen können Sie mitnehmen. Die Garderobe ist heute
+          kostenlos.
+      - voice: Eddy
+        text: Während wir die Tische im Innenraum reinigen, können Sie auf der überdachten Terrasse
+          sitzen. Die Küche bleibt geöffnet. Getränke bestellen Sie bitte wie gewohnt an der
+          Theke.
+      - voice: Sandy
+        text: Der Bus nach Kiel fährt heute um dreizehn Uhr zwanzig. Die Abfahrt bleibt unverändert.
+          Bitte beachten Sie nur den neuen Haltepunkt gegenüber dem Kiosk.
+      - voice: Grandpa
+        text: Der kleine Steg ist während der Arbeiten gesperrt. Der Uferweg bleibt offen. Sie können
+          am Wasser spazieren gehen, aber bitte betreten Sie den Steg heute nicht.
+      - voice: Shelley
+        text: Bevor unsere Fotoausstellung um zwölf Uhr öffnet, findet im Vorraum eine kurze Einführung
+          statt. Sie beginnt um Viertel vor zwölf. Dafür ist keine Anmeldung nötig.
+    questions:
+      - prompt: Große Rucksäcke soll man vor dem Besuch abgeben.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+      - prompt: Während der Reinigung ist die Küche geschlossen.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Der Bus fährt heute später als geplant.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Der gesamte Uferweg ist gesperrt.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Die Einführung beginnt vor der Ausstellung.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+  gaps:
+    kind: worksheet
+    part: b1-sprachbausteine-1
+    format: cloze
+    title: Den Ablauf weitergeben
+    text: Hallo Nora, [[1]] wir losgehen, prüfen wir die Rückfahrt. [[2]] Hauke die Karte liest,
+      hole ich Wasser. Wir nehmen [[3]] kleinen Rucksack mit. Heute [[4]] wir genug Zeit. Elif
+      fotografiert [[5]] ihrem Handy. Sie sagt, [[6]] die Bilder gut sind. Wir treffen uns
+      [[7]] Steg. Es ist wichtig, rechtzeitig [[8]] kommen. [[9]] gehen wir zur Haltestelle.
+      Wir freuen [[10]] auf den Tag.
+    questions:
+      - prompt: Lücke 1
+        options:
+          - bevor
+          - während
+          - weil
+        answers:
+          - bevor
+      - prompt: Lücke 2
+        options:
+          - nachdem
+          - während
+          - bevor
+        answers:
+          - während
+      - prompt: Lücke 3
+        options:
+          - dem
+          - der
+          - den
+        answers:
+          - den
+      - prompt: Lücke 4
+        options:
+          - haben
+          - sind
+          - werden
+        answers:
+          - haben
+      - prompt: Lücke 5
+        options:
+          - an
+          - mit
+          - für
+        answers:
+          - mit
+      - prompt: Lücke 6
+        options:
+          - weil
+          - wenn
+          - dass
+        answers:
+          - dass
+      - prompt: Lücke 7
+        options:
+          - am
+          - im
+          - ins
+        answers:
+          - am
+      - prompt: Lücke 8
+        options:
+          - für
+          - zu
+          - um
+        answers:
+          - zu
+      - prompt: Lücke 9
+        options:
+          - Bevor
+          - Während
+          - Danach
+        answers:
+          - Danach
+      - prompt: Lücke 10
+        options:
+          - uns
+          - wir
+          - unser
+        answers:
+          - uns
+  talk:
+    kind: card
+    part: b1-sprechen-3
+    title: Einen ruhigen Ausflug planen
+    theme: Reihenfolge und Aufgaben
+    word: Vorher · gleichzeitig · danach · Rückfahrt
+    situation: "Planen Sie einen Ausflug am Wasser. Eine Person möchte fotografieren, die andere
+      braucht eine längere Pause. Einigen Sie sich auf Reihenfolge und Aufgaben. Rückfahrt:
+      13:20, spätestens 13 Uhr am Halt."
+    roles:
+      - title: Person A
+        text: Sie möchten zehn Minuten fotografieren und können vorher den Weg prüfen. Auch die andere
+          Person soll eine Pause bekommen.
+      - title: Person B
+        text: Sie können Wasser holen, möchten aber nicht während jeder Pause arbeiten. Schlagen Sie
+          einen Wechsel vor.
+steps:
+  - id: start
+    chapter: scene
+    title: Новое дело команды
+    beats:
+      - read: "Друзья собирают для альбома фотографии и короткие истории из Плёна. Нужно успеть к
+          обратному автобусу, не превращая прогулку в гонку. Часть дел можно распределить между
+          участниками, но проверку обратного пути следует сделать до выхода к воде. Расписание
+          урока вымышленное. Все нужные условия даны в сцене: знания географии, настоящих цен
+          или расписаний не требуются. Сначала попробуйте понять, какого результата добиваются
+          друзья, затем слушайте реплики. На новом уровне важно не только найти число или
+          знакомое слово, но и связать несколько сведений."
+        point: Согласуем последовательность и параллельные дела
+        set:
+          view: dialogue
+          dialogue: scene
+          reveal: 4
+      - read: "В плане есть дела, которые должны предшествовать друг другу, и дела, которые можно
+          выполнять одновременно. Bevor ставит границу до действия, während показывает
+          пересечение во времени. Участники могут быть разными: один проверяет путь, другая
+          набирает воду. Сначала восстановите смысл пары действий, потом проверьте положение
+          личного глагола в придаточной части."
+        point: "bevor и während: до действия и одновременно"
+        set:
+          reveal: 8
+  - id: words
+    chapter: words
+    title: Слова, которые понадобятся
+    beats:
+      - read: Причал, берег и обратный путь связывают морскую тему с обычной поездкой. В игре задача не
+          в том, чтобы выполнить как можно больше пунктов, а в том, чтобы сохранить
+          обязательные условия и оставить время для людей. Названия учреждений и расписание
+          здесь служат учебными данными. По ним нужно ориентироваться внутри истории, а не
+          планировать настоящую поездку.
+        point: Сначала используйте слово для решения; словарь остаётся справочником.
+        set:
+          view: words
+          words: useful
+          reveal: 6
+      - read: "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к
+          ситуации: какие слова обозначают человека, место, условие или уже выполненное
+          действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово
+          встретится снова в записке или разговоре, попробуйте восстановить его смысл до
+          подсказки."
+        point: Возвращайтесь к выражениям в сообщениях и новых действиях.
+        set:
+          reveal: 15
+  - id: grammar
+    chapter: grammar
+    title: "bevor и während: до действия и одновременно"
+    beats:
+      - read: Порядок частей фразы не обязан совпадать с порядком событий. Bevor wir losgehen стоит
+          первым, но выход происходит после проверки. Найдите два действия и назовите, какое
+          нужно завершить раньше. В игре правильная последовательность зависит от союза, а не
+          от того, какое слово написано первым. Личный глагол придаточного уходит в конец.
+        point: "bevor: сначала проверка, потом выход."
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: Während связывает два действия, которые пересекаются во времени. Они не обязаны
+          начинаться и заканчиваться в одну секунду. В нашей сцене один участник проверяет
+          путь, другая получает воду. Это позволяет распределить задачи без потери смысла. Если
+          действия требуют одного и того же человека одновременно, нужно дополнительно
+          проверить, реалистичен ли план.
+        point: "während: действия идут одновременно."
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: "Когда главная часть стоит первой, её порядок остаётся знакомым: wir packen ... ein.
+          После bevor начинается придаточная часть, заканчивающаяся losgehen. Сравните два
+          варианта одного плана и убедитесь, что реальная последовательность не изменилась.
+          Перестановка частей предложения сама по себе не переносит упаковку хлеба на время
+          после выхода."
+        point: Главная часть может стоять перед придаточной.
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+  - id: frames
+    chapter: grammar
+    title: Как устроена реплика
+    beats:
+      - read: "Оба участника названы явно, поэтому параллельный план можно проверить. Во второй части
+          личный глагол следует сразу после запятой: *holt Dana*. Сочетание *während Hauke den
+          Weg prüft* занимает первую позицию целиком. Сначала произнесите простые реплики о
+          каждом участнике, затем соедините их и сохраните нужную временную связь."
+        point: "*Während Hauke den Weg prüft, holt Dana Wasser.*"
+        set:
+          view: sentence
+          rows:
+            - de:
+                - Während Hauke den Weg
+                - prüft,
+                - holt
+                - Dana Wasser.
+              ru: Пока Хауке проверяет путь, Дана берёт воду.
+  - id: check
+    chapter: practice
+    title: Проверьте смысл до подсказки
+    beats:
+      - question: "«Bevor wir losgehen, packen wir Brot ein»: что раньше?"
+        read: Раньше упаковывают хлеб, потом выходят. Часть с bevor называет действие, до которого
+          нужно сделать другое. Не читайте предложение как список действий слева направо.
+          Представьте два момента на линии времени и проверьте, можно ли выйти с неупакованным
+          хлебом по этому условию. Это помогает выбрать последовательность без перевода каждого
+          слова.
+        point: Сначала *einpacken*, потом *losgehen*.
+        set:
+          view: table
+          table: rule
+      - question: Во время еды Элиф пишет подписи. Это запрет на её перерыв?
+        read: "Нет. Während описывает совпадение действий во времени, но не устанавливает постоянную
+          обязанность. В сцене друзья затем меняются. Для согласования нужно слышать не только
+          грамматику, но и весь разговор: участник может помочь сейчас и отдохнуть позже. Не
+          превращайте один временной отрезок в правило на весь день."
+        point: Одновременность не означает постоянную обязанность.
+        set:
+          view: table
+          table: rule
+  - id: exam-plan
+    chapter: exam
+    title: Der gemeinsame Tagesplan · Ausschnitt
+    beats:
+      - read: "Найдите обязательный срок и отдельно предложение о параллельных действиях. Это короткий
+          фрагмент, а не полный Lesen 2. Используйте его как источник в игре: кто делает что и
+          когда участники должны быть у остановки? Не добавляйте несуществующую лодочную
+          экскурсию только из-за слова Steg."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: plan
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: plan
+        set:
+          view: task
+          task: plan
+          solved: true
+  - id: exam-notices
+    chapter: exam
+    title: Fünf Ansagen zum Tagesablauf
+    beats:
+      - read: "Пять объявлений относятся к разным местам. Сначала прочитайте утверждение, затем
+          слушайте соответствующую запись дважды. Проверяйте границы: закрытый причал не
+          означает закрытый береговой путь. Во время учебной попытки можно открыть текст и
+          повторить запись, а в самостоятельной работе сначала попробуйте обойтись без
+          подсказок."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: notices
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: notices
+        set:
+          view: task
+          task: notices
+          solved: true
+  - id: exam-gaps
+    chapter: exam
+    title: Den Ablauf weitergeben
+    beats:
+      - read: "Прочитайте сообщение целиком, чтобы отличить одновременность от порядка действий. Не все
+          пропуски относятся к новому правилу: вернутся падеж, dass, артикль и zu. Выберите
+          формы, затем произнесите связный текст. Если предложение не объясняет план, вернитесь
+          к контексту, даже когда отдельное окончание кажется знакомым."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: gaps
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: gaps
+        set:
+          view: task
+          task: gaps
+          solved: true
+  - id: exam-talk
+    chapter: exam
+    title: Einen ruhigen Ausflug planen
+    beats:
+      - read: Разговор должен учитывать желания обоих участников. Предложите распределение, спросите,
+          подходит ли оно партнёру, и отреагируйте на просьбу о перерыве. Итог должен назвать
+          обратное время и допустимый порядок. Два независимых списка желаний без общего
+          решения ещё не выполняют задачу.
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: talk
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: talk
+        set:
+          view: task
+          task: talk
+          solved: true
+exercises:
+  - type: choice
+    q: ___ wir losgehen, prüfen wir den Weg.
+    options:
+      - Während
+      - Ob
+      - Bevor
+    answer: 2
+    why: Проверка до выхода.
+  - type: choice
+    q: ___ Elif fotografiert, essen die anderen.
+    options:
+      - Bevor
+      - Nachdem
+      - Während
+    answer: 2
+    why: Одновременно.
+  - type: choice
+    q: Bevor wir gehen, ___ wir Brot ein.
+    options:
+      - packen
+      - wir packen
+      - packt
+    answer: 0
+    why: Главный глагол сразу после запятой.
+  - type: choice
+    q: Während Hauke die Karte ___.
+    options:
+      - lesen
+      - gelesen
+      - liest
+    answer: 2
+    why: Личный глагол в конце.
+  - type: choice
+    q: Автобус 13:20, у остановки 13:00. Это…
+    options:
+      - Ошибка числа
+      - Два автобуса
+      - Разные моменты
+    answer: 2
+    why: Приход группы раньше отправления.
+  - type: choice
+    q: Steg gesperrt, Uferweg offen. Можно…
+    options:
+      - Идти по береговому пути
+      - Идти по причалу
+      - Никуда
+    answer: 0
+    why: Границы запрета названы явно.
+  - type: order
+    de: Bevor wir losgehen, prüfen wir die Rückfahrt.
+    ru: До выхода проверим обратный путь.
+  - type: order
+    de: Während Hauke den Weg prüft, holt Dana Wasser.
+    ru: Пока Хауке проверяет путь, Дана берёт воду.
+  - type: order
+    de: Ich packe das Brot ein, bevor wir losgehen.
+    ru: Я упакую хлеб до выхода.
+  - type: order
+    de: Danach wechseln wir die Aufgaben.
+    ru: Потом поменяемся задачами.
+  - type: order
+    de: Wir sind um dreizehn Uhr an der Haltestelle.
+    ru: В тринадцать мы у остановки.
+  - type: order
+    de: Der Uferweg bleibt offen.
+    ru: Береговой путь остаётся открытым.
+case:
+  title: Ein geschlossener Steg verändert nicht alles
+  ru: Сверка дневника
+  intro: После объявления в дневнике перепутали границы изменения.
+  people: {}
+  steps:
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Der Steg ist gesperrt. Der Uferweg bleibt offen.
+          ru: Причал закрыт. Береговой путь открыт.
+      question: Что закрыто?
+      options:
+        - Весь берег
+        - Все кафе
+        - Только причал
+      answer: 2
+      right: Открытый путь назван отдельно.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Während wir die Tische reinigen, bleibt die Küche geöffnet.
+          ru: Пока убирают столы, кухня остаётся открытой.
+      question: Кухня не работает?
+      options:
+        - Открыта только вчера
+        - Нет, работает
+        - Да
+      answer: 1
+      right: Ограничение относится к столам.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Spätestens um 13 Uhr am Halt. Abfahrt um 13:20 Uhr.
+          ru: У остановки не позже 13:00. Отправление 13:20.
+      question: Приход группы и отправление совпадают?
+      options:
+        - Нет, есть запас 20 минут
+        - Да
+        - Разница2 часа
+      answer: 0
+      right: Это два разных события.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+  ending: План изменён только там, где об этом сказано в источнике. Закрытый причал не отменяет
+    весь день.
+adventure:
+  kind: sequence
+  title: Соберите день без спешки
+  intro: Друзья собирают для альбома фотографии и короткие истории из Плёна. Нужно успеть к
+    обратному автобусу, не превращая прогулку в гонку. Часть дел можно распределить между
+    участниками, но проверку обратного пути следует сделать до выхода к воде. Расписание урока
+    вымышленное.
+  ending: Распределены параллельные дела и общий перерыв. После сообщения о закрытом причале
+    команда остаётся на открытом береговом пути. Обратное время сохранено.
+  challenges:
+    - id: first
+      kind: order
+      title: Что сделать до выхода?
+      intro: Расположите два действия по условию bevor.
+      label: Реплика для команды
+      tokens:
+        - Rückfahrt prüfen und Brot einpacken.
+        - Zum See gehen.
+      success: Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.
+      wrong: "Проверьте положение глагола и конец предложения: используйте все фрагменты."
+    - id: parallel
+      kind: match
+      title: Разделите параллельные дела
+      intro: Используйте исходный план.
+      mode: reading
+      clue:
+        task: plan
+      slots:
+        - id: h
+          label: Hauke
+          answer: weg
+        - id: d
+          label: Dana
+          answer: wasser
+        - id: e
+          label: Elif am Steg
+          answer: foto
+      options:
+        - id: weg
+          label: den Weg prüfen
+        - id: wasser
+          label: Wasser holen
+        - id: foto
+          label: fotografieren
+      success: У каждого участника своё действие.
+      wrong: Сравните имена и глаголы в плане.
+    - id: while
+      kind: order
+      title: Согласуйте одновременность
+      intro: Начните с действия Хауке.
+      label: Реплика для команды
+      tokens:
+        - Während Hauke den Weg
+        - prüft,
+        - holt
+        - Dana Wasser.
+      success: Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.
+      wrong: "Проверьте положение глагола и конец предложения: используйте все фрагменты."
+    - id: bus
+      kind: clock
+      title: Сохраните отправление автобуса
+      intro: Не перепутайте приход группы и отправление.
+      mode: reading
+      clue:
+        task: plan
+      answer: 13:20
+      initial: 13:00
+      minuteStep: 5
+      success: Группа приходит в 13:00, автобус уходит в 13:20.
+      wrong: Нужно время отправления, а не прибытия группы.
+    - id: closed
+      kind: select
+      title: После объявления о Steg
+      intro: Прочитайте Update am See в плане. Что остаётся допустимым?
+      mode: reading
+      clue:
+        task: plan
+      options:
+        - id: o0
+          label: Прогулка по береговому пути
+        - id: o1
+          label: Выход на закрытый причал
+        - id: o2
+          label: Отмена всего дня
+      answer:
+        - o0
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."

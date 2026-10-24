@@ -1,0 +1,727 @@
+id: b1-online
+order: 10
+title: Worauf wartest du? Darauf, dass die Antwort kommt.
+ru: Уточняем ссылки и сведения в переписке
+lede: Хауке работает в Гамбурге и следит за подготовкой через сообщения. В группу попала старая
+  пересылка о другом помещении. Нужно найти, к чему относятся короткие ответы, и обновить общий
+  документ по действующему источнику, сохранив открытые вопросы.
+goals:
+  - Связать darauf/dafür с названной темой
+  - Задать вопрос worauf/wofür/womit
+  - Отличить вопрос о человеке от вопроса о вещи
+  - Проверить десять деталей длинного разговора
+grammar:
+  - wo(r)- / da(r)- с предлогом; вопросы о вещах и людях
+exam:
+  - b1-lesen-2
+  - b1-hoeren-2
+  - b1-sprechen-2
+dialogues:
+  scene:
+    title: Worauf wartest du? Darauf, dass die Antwort kommt.
+    ru: Уточняем ссылки и сведения в переписке
+    place: Hamburg / Kiel · общий документ команды · вымышленная учебная ситуация
+    people:
+      D:
+        name: Dana
+        voice: Anna
+      M:
+        name: Mateo
+        voice: Reed
+      E:
+        name: Elif
+        voice: Flo
+      H:
+        name: Hauke
+        voice: Rocko
+    lines:
+      - H: Worauf wartest du noch?
+        ru: Чего ты ещё ждёшь?
+      - D: Auf die Antwort zur Küche. Darauf warten wir seit Montag.
+        ru: Ответа о кухне. Этого мы ждём с понедельника.
+      - E: Wofür braucht Mateo die Liste?
+        ru: Для чего Матео нужен список?
+      - D: Für den Vergleich der Angebote. Dafür hat er am Montag Zeit.
+        ru: Для сравнения предложений. Для этого у него есть время в понедельник.
+      - H: Und für wen ist die Kopie der Liste?
+        ru: А для кого копия списка?
+      - D: Für Elif. Mit ihr vergleicht Mateo die Angebote.
+        ru: Для Элиф. С ней Матео сравнит предложения.
+      - E: Ich bearbeite die Bilder am Computer. Damit geht es für mich leichter.
+        ru: Я обрабатываю снимки на компьютере. На нём мне это делать проще.
+      - H: Gut. Wir sprechen darüber, wenn die gültigen Angaben im Dokument stehen.
+        ru: Хорошо. Обсудим это, когда действующие данные появятся в документе.
+  interview:
+    title: Überblick im digitalen Projekt
+    ru: Как не потерять сведения в переписке
+    place: Kiel / Hamburg · учебное интервью
+    people:
+      H:
+        name: Hauke
+        voice: Rocko
+      E:
+        name: Elif
+        voice: Flo
+    lines:
+      - H: Wie behältst du bei vielen Nachrichten den Überblick?
+        ru: Как ты сохраняешь обзор при большом числе сообщений?
+      - E: Ich lese die Projektgruppe zweimal am Tag. Benachrichtigungen sind meistens aus. Sonst
+          schaue ich auch während des Kurses ständig auf das Handy.
+        ru: Я читаю группу проекта дважды в день. Уведомления обычно выключены. Иначе постоянно смотрю
+          в телефон даже на курсе.
+      - H: Worauf achtest du bei einer weitergeleiteten Nachricht?
+        ru: На что ты обращаешь внимание в пересланном сообщении?
+      - E: Auf den ursprünglichen Absender und das Datum. Gestern stand in einer alten Nachricht ein
+          anderer Raum. Das war nur eine frühere Idee.
+        ru: На исходного отправителя и дату. Вчера в старом сообщении было другое помещение. Это была
+          только прежняя идея.
+      - H: Wo stehen die gültigen Angaben?
+        ru: Где находятся действующие данные?
+      - E: In unserem gemeinsamen Dokument. Dort trennen wir Angebot, Entscheidung und offene Frage.
+          Die Küche ist immer noch offen, und die Gruppe hat den Raum noch nicht gebucht.
+        ru: В общем документе. Там мы разделяем предложение, решение и открытый вопрос. Кухня ещё не
+          решена, и группа пока не забронировала помещение.
+      - H: Womit bearbeitest du die Bilder?
+        ru: На чём ты обрабатываешь фотографии?
+      - E: Am liebsten am Computer. Mit dem Handy wähle ich unterwegs nur Bilder aus. Die Originale
+          bleiben erhalten. Für die Ausstellung mache ich kleinere Kopien.
+        ru: Предпочитаю компьютер. На телефоне я только выбираю фото в дороге. Оригиналы сохраняются.
+          Для выставки делаю уменьшенные копии.
+      - H: Für wen ist der kurze Text neben der Karte?
+        ru: Для кого короткий текст рядом с картой?
+      - E: Für neue Gäste. Sie kennen die Orte vielleicht noch nicht. Deshalb erklären wir die Namen
+          und stellen eine persönliche Frage.
+        ru: Для новых гостей. Возможно, они ещё не знают эти места. Поэтому объясняем названия и задаём
+          личный вопрос.
+      - H: Und was passiert, wenn jemand einen Fehler findet?
+        ru: А что происходит, если кто-то находит ошибку?
+      - E: Dann ändern wir das gemeinsame Dokument. Eine private Nachricht allein reicht nicht. Danach
+          informieren wir die Gruppe über die Änderung, damit alle denselben Stand kennen.
+        ru: Тогда меняем общий документ. Одного личного сообщения недостаточно. Потом сообщаем группе
+          об изменении, чтобы у всех были одинаковые данные.
+words:
+  useful:
+    title: Wörter für die Aufgabe
+    ru: Слова для действия
+    items:
+      - de: der Absender
+        ru: отправитель
+        pl: Absender
+      - de: die Benachrichtigung
+        ru: уведомление
+        pl: Benachrichtigungen
+      - de: die Weiterleitung
+        ru: пересылка
+        pl: Weiterleitungen
+      - de: der Entwurf
+        ru: черновой вариант
+        pl: Entwürfe
+      - de: der Überblick
+        ru: обзор, общее представление
+        pl: "-"
+      - de: die Angabe
+        ru: сведение
+        pl: Angaben
+      - de: das Original
+        ru: оригинал
+        pl: Originale
+      - de: die Kopie
+        ru: копия
+        pl: Kopien
+      - de: das Dokument
+        ru: документ
+        pl: Dokumente
+      - de: gültig
+        ru: действующий
+      - de: ursprünglich
+        ru: исходный
+      - de: darauf warten
+        ru: ждать этого
+      - de: dafür Zeit haben
+        ru: иметь на это время
+      - de: darüber sprechen
+        ru: говорить об этом
+      - de: womit
+        ru: с помощью чего
+tables:
+  rule:
+    title: wo(r)- / da(r)- с предлогом; вопросы о вещах и людях
+    ru: Опора для решения
+    head:
+      - Beispiel
+      - Смысл и форма
+    ruCols:
+      - 1
+    rows:
+      - - Auf die Antwort warten → darauf warten. Worauf?
+        - "Перед гласной добавляется r: darauf, worauf."
+      - - Für den Vergleich → dafür. Für Elif → für sie.
+        - "О человеке: für wen? / für sie; о теме: wofür? / dafür."
+      - - Ich arbeite damit. / Ich schreibe einfach, damit alle verstehen.
+        - "damit: средство или союз цели — смотрите на строение."
+tasks:
+  article:
+    kind: worksheet
+    part: b1-lesen-2
+    format: article
+    title: Eine alte Nachricht im neuen Plan
+    text: >-
+      Hauke arbeitet in Hamburg und liest die Projektgruppe oft erst am Abend. Am Dienstag
+      findet er eine weitergeleitete Nachricht über einen Raum am Hafen. Dort steht: „Der
+      Termin passt.“ Auf den ersten Blick klingt das wie eine Buchung. Elif prüft den
+      ursprünglichen Absender und das Datum. Die Nachricht stammt aus dem Sommer und gehört zu
+      einer anderen Veranstaltung.
+
+
+      Für den FördeTreff gilt ein neuer Entwurf. Im gemeinsamen Dokument steht das aktuelle
+      Angebot: 18. Oktober, 15–18 Uhr, 60 Euro ohne Küche. Die Gruppe hat das Angebot noch
+      nicht angenommen. Dana wartet auf die Antwort zur Küche. Darauf wartet sie seit Montag.
+      Mateo vergleicht mit Elif die Angebote für das Essen. Dafür braucht er die Liste mit den
+      Preisen. Die Kopie der Liste ist für Elif.
+
+
+      Die Gruppe beschließt, Änderungen zuerst im gemeinsamen Dokument einzutragen und danach
+      kurz im Chat zu nennen. So müssen die Helfer nicht zwischen vielen privaten Nachrichten
+      suchen. Alte Entwürfe bleiben als solche markiert. Wer eine Information nicht versteht,
+      fragt nach dem konkreten Gegenstand oder der Person. Eine kurze Rückfrage kostet weniger
+      Zeit als ein Einkauf nach einem veralteten Plan.
+    questions:
+      - prompt: Wozu gehört die weitergeleitete Nachricht?
+        options:
+          - Zur aktuellen Buchung
+          - Zu Mateos Kurs
+          - Zu einer anderen Veranstaltung
+        answers:
+          - Zu einer anderen Veranstaltung
+      - prompt: Was steht zum aktuellen Raum fest?
+        options:
+          - Es gibt ein Angebot, aber keine Annahme.
+          - Er ist schon gebucht.
+          - Die Küche ist kostenlos.
+        answers:
+          - Es gibt ein Angebot, aber keine Annahme.
+      - prompt: Worauf bezieht sich darauf im zweiten Absatz?
+        options:
+          - Auf den Sommer
+          - Auf die Antwort zur Küche
+          - Auf Elif
+        answers:
+          - Auf die Antwort zur Küche
+      - prompt: Wofür braucht Mateo die Liste?
+        options:
+          - Für einen Segelkurs
+          - Für die Raumreinigung
+          - Für den Preisvergleich
+        answers:
+          - Für den Preisvergleich
+      - prompt: Wo sollen Änderungen zuerst stehen?
+        options:
+          - Im gemeinsamen Dokument
+          - Nur privat
+          - In einer alten Weiterleitung
+        answers:
+          - Im gemeinsamen Dokument
+  interview:
+    kind: worksheet
+    part: b1-hoeren-2
+    format: article
+    dialogue: interview
+    title: Zehn Details aus einem Gespräch
+    situation: Hören Sie das Gespräch zweimal. Entscheiden Sie bei allen zehn Aussagen richtig oder
+      falsch.
+    questions:
+      - prompt: Elif liest die Projektgruppe zweimal am Tag.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+      - prompt: Ihre Benachrichtigungen sind immer eingeschaltet.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Bei Weiterleitungen prüft sie Absender und Datum.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+      - prompt: Die alte Nachricht enthielt eine endgültige neue Buchung.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Die Gruppe trennt Angebot, Entscheidung und offene Frage.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+      - prompt: Die Küche ist bereits bestätigt.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Elif bearbeitet Bilder am liebsten am Computer.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+      - prompt: Sie löscht die Originale nach der Auswahl.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+      - prompt: Der Text neben der Karte ist für neue Gäste.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - richtig
+      - prompt: Eine Korrektur nur in einer privaten Nachricht reicht aus.
+        options:
+          - richtig
+          - falsch
+        answers:
+          - falsch
+  opinions:
+    kind: card
+    part: b1-sprechen-2
+    title: Wie viele Nachrichten sind hilfreich?
+    theme: Digitale Gruppen im Alltag
+    word: Meinung · Erfahrung · Vor- und Nachteil
+    situation: Geben Sie die Meinung Ihrer Person wieder. Sprechen Sie anschließend über eigene
+      Erfahrungen mit Gruppen und fragen Sie nach der Erfahrung des Partners.
+    roles:
+      - title: Person A · Karin
+        text: Ich finde Gruppenchats praktisch, weil neue Informationen schnell alle erreichen. Eine
+          kurze Nachricht ist leichter als viele einzelne Anrufe. Für wichtige Entscheidungen
+          benutze ich zusätzlich ein gemeinsames Dokument. Sonst finde ich nach drei Tagen die
+          richtige Nachricht nicht mehr.
+      - title: Person B · Jonas
+        text: Mir werden Gruppen schnell zu laut. Ich stelle die Benachrichtigungen aus und lese nur
+          abends. Manchmal verpasse ich dadurch eine schnelle Änderung. Bei wirklich dringenden
+          Fragen möchte ich lieber einen kurzen Anruf bekommen.
+steps:
+  - id: start
+    chapter: scene
+    title: Новое дело команды
+    beats:
+      - read: "Хауке работает в Гамбурге и следит за подготовкой через сообщения. В группу попала
+          старая пересылка о другом помещении. Нужно найти, к чему относятся короткие ответы, и
+          обновить общий документ по действующему источнику, сохранив открытые вопросы. Все
+          нужные условия даны в сцене: знания географии, настоящих цен или расписаний не
+          требуются. Сначала попробуйте понять, какого результата добиваются друзья, затем
+          слушайте реплики. На новом уровне важно не только найти число или знакомое слово, но
+          и связать несколько сведений."
+        point: Уточняем ссылки и сведения в переписке
+        set:
+          view: dialogue
+          dialogue: scene
+          reveal: 4
+      - read: "Короткие ответы экономят слова, но требуют понятной ссылки. Darauf заменяет уже
+          названную вещь или тему после auf. Wofür спрашивает о цели или предмете с für, а für
+          wen — о человеке. Если в переписке несколько тем, полезно назвать существительное ещё
+          раз. Угадавать ссылку по последнему знакомому слову опасно: сначала найдите
+          управляющий глагол и предлог."
+        point: wo(r)- / da(r)- с предлогом; вопросы о вещах и людях
+        set:
+          reveal: 8
+  - id: words
+    chapter: words
+    title: Слова, которые понадобятся
+    beats:
+      - read: "Старое сообщение может быть настоящим и всё же не описывать текущий план. Проверьте
+          отправителя, дату и статус: предложение, решение или открытая задача. Общий документ
+          помогает участникам из разных городов работать с одними сведениями. В игре важна не
+          скорость чтения уведомлений, а точная связь между коротким местоименным ответом и его
+          предметом."
+        point: Сначала используйте слово для решения; словарь остаётся справочником.
+        set:
+          view: words
+          words: useful
+          reveal: 6
+      - read: "Прочитайте остальные выражения и найдите знакомые части сложных слов. Затем вернитесь к
+          ситуации: какие слова обозначают человека, место, условие или уже выполненное
+          действие? Не требуется запомнить всю группу перед игрой. Когда нужное слово
+          встретится снова в записке или разговоре, попробуйте восстановить его смысл до
+          подсказки."
+        point: Возвращайтесь к выражениям в сообщениях и новых действиях.
+        set:
+          reveal: 15
+  - id: grammar
+    chapter: grammar
+    title: wo(r)- / da(r)- с предлогом; вопросы о вещах и людях
+    beats:
+      - read: "Возвращаем управление из прошлого урока. Предлог auf сохраняется, но вместо названия
+          вещи используем darauf. Вопрос — worauf. Буква r появляется между da/wo и предлогом,
+          начинающимся на гласную: darüber, worüber тоже подчиняются этой модели. Сначала
+          восстановите полное сочетание с существительным; тогда короткая форма перестанет быть
+          отдельным словом для зубрёжки."
+        point: "Перед гласной добавляется r: darauf, worauf."
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: "Для людей используйте предлог с вопросительным или личным местоимением: für wen, mit
+          wem, für sie. Формы dafür и damit обычно отсылают к вещам, средствам или ситуации. В
+          нашей сцене копия для Элиф, а время — для сравнения предложений. Не заменяйте имя
+          человека короткой формой по одному только совпадению предлога."
+        point: "О человеке: für wen? / für sie; о теме: wofür? / dafür."
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+      - read: В *Ich arbeite damit* слово damit означает «с этим, при помощи этого» и занимает место
+          предложной группы. В *damit alle verstehen* оно начинает придаточную часть цели.
+          Значение становится понятно по конструкции, поэтому не пытайтесь присвоить слову один
+          перевод на все случаи. В упражнении сначала найдите, есть ли после damit отдельное
+          подлежащее и личный глагол.
+        point: "damit: средство или союз цели — смотрите на строение."
+        set:
+          view: table
+          table: rule
+          focus:
+            - 0
+            - 1
+            - 2
+  - id: frames
+    chapter: grammar
+    title: Как устроена реплика
+    beats:
+      - read: Darauf может заранее указывать на содержание следующей части с dass. Мы ждём не
+          абстрактного предмета, а того, что администрация ответит. Само darauf относится к
+          глаголу warten, а придаточное раскрывает ожидаемое событие. Постройте сначала полную
+          мысль простыми словами, затем проверьте глагол antwortet в конце части с dass.
+        point: "*Wir warten darauf, dass die Verwaltung antwortet.*"
+        set:
+          view: sentence
+          rows:
+            - de:
+                - Wir warten
+                - darauf,
+                - dass die Verwaltung
+                - antwortet.
+              ru: Мы ждём, что администрация ответит.
+  - id: check
+    chapter: practice
+    title: Проверьте смысл до подсказки
+    beats:
+      - question: Копия предназначена Элиф. Спросить wofür или für wen?
+        read: "Für wen: спрашиваем о человеке. Wofür подходит для цели или темы, например для чего
+          нужен список. В ответе *für Elif* можно затем сказать *für sie*. Если заменить это на
+          dafür, связь с человеком потеряется или станет неясной. В переписке лучше повторить
+          имя, когда обсуждаются несколько списков и адресатов."
+        point: "Человек: *für wen — für Elif — für sie*."
+        set:
+          view: table
+          table: rule
+      - question: Любое damit вводит цель?
+        read: Нет. В *Ich arbeite damit* это указание на средство, например компьютер. После слова нет
+          отдельного придаточного предложения. В *damit die Gäste verstehen* есть подлежащее и
+          личная форма глагола в конце. Сравните конструкции целиком; перевод одного слова без
+          соседей не позволяет выбрать значение.
+        point: "*damit arbeiten* ≠ *damit jemand versteht*."
+        set:
+          view: table
+          table: rule
+  - id: exam-article
+    chapter: exam
+    title: Eine alte Nachricht im neuen Plan
+    beats:
+      - read: "Прочитайте сообщение до конца и проследите две разные линии: старая пересылка и нынешний
+          проект. Для darauf и dafür восстановите полное сочетание с существительным. Вопрос о
+          статусе помещения требует учитывать и цену, и отсутствие согласия. Не превращайте
+          знакомую фразу «срок подходит» из другого события в подтверждение нового."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: article
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: article
+        set:
+          view: task
+          task: article
+          solved: true
+  - id: exam-interview
+    chapter: exam
+    title: Zehn Details aus einem Gespräch
+    beats:
+      - read: "Это полный набор из десяти утверждений к одному разговору, а не десять отдельных
+          объявлений. Сначала просмотрите все утверждения, затем слушайте разговор дважды.
+          Проверьте слова «всегда», «уже» и «достаточно»: они меняют смысл. Учебное раскрытие
+          текста используйте после самостоятельной попытки, чтобы найти конкретную причину
+          ошибки."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: interview
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: interview
+        set:
+          view: task
+          task: interview
+          solved: true
+  - id: exam-opinions
+    chapter: exam
+    title: Wie viele Nachrichten sind hilfreich?
+    beats:
+      - read: "Обе карточки предлагают разумные способы справляться с сообщениями. Сначала передайте
+          позицию своего героя, затем скажите, что подходит лично вам. Спросите партнёра, как
+          он узнаёт о срочных изменениях. Не нужно решать спор в пользу одного мессенджера:
+          важно связно объяснить опыт и отреагировать на ответ."
+        point: Ищите подтверждение в источнике, а не совпадение отдельного слова.
+        set:
+          view: task
+          task: opinions
+      - question: Готовы сверить своё решение с источником?
+        read: "Сверьте все пункты. Если ответ отличается, найдите место в тексте или записи, которое вы
+          поняли иначе. Для письма и разговора образец не является единственным допустимым
+          ответом: важны понятный смысл, выполнение задания и подходящее обращение. Попробуйте
+          сказать тот же смысл своими словами, прежде чем идти дальше."
+        point: Сначала самостоятельная попытка, затем разбор.
+        before:
+          view: task
+          task: opinions
+        set:
+          view: task
+          task: opinions
+          solved: true
+exercises:
+  - type: choice
+    q: Auf die Antwort warten → ___ warten.
+    options:
+      - dafür
+      - damit
+      - darauf
+    answer: 2
+    why: Сохраняется auf.
+  - type: choice
+    q: ___ ist die Kopie? Für Elif.
+    options:
+      - Wofür
+      - Womit
+      - Für wen
+    answer: 2
+    why: Вопрос о человеке.
+  - type: choice
+    q: Mit dem Computer → ___.
+    options:
+      - damit
+      - darauf
+      - dafür
+    answer: 0
+    why: Средство с mit.
+  - type: choice
+    q: ___ braucht er die Liste? Für den Vergleich.
+    options:
+      - Für wen
+      - Mit wem
+      - Wofür
+    answer: 2
+    why: Цель с für.
+  - type: choice
+    q: Wir warten darauf, dass die Antwort ___.
+    options:
+      - kommen
+      - gekommen
+      - kommt
+    answer: 2
+    why: Личная форма в конце dass.
+  - type: choice
+    q: «Damit geht es leichter» здесь…
+    options:
+      - С этим средством
+      - Чтобы легче
+      - Для Элиф
+    answer: 0
+    why: Нет придаточной части цели.
+  - type: order
+    de: Worauf wartest du noch?
+    ru: Чего ты ещё ждёшь?
+  - type: order
+    de: Wir warten darauf, dass die Verwaltung antwortet.
+    ru: Мы ждём, что администрация ответит.
+  - type: order
+    de: Für wen ist die Kopie?
+    ru: Для кого копия?
+  - type: order
+    de: Dafür braucht Mateo die Liste.
+    ru: Для этого Матео нужен список.
+  - type: order
+    de: Elif bearbeitet die Bilder am Computer.
+    ru: Элиф обрабатывает фото на компьютере.
+  - type: order
+    de: Die Gruppe hat noch nicht zugesagt.
+    ru: Группа ещё не согласилась.
+case:
+  title: Eine echte Nachricht kann veraltet sein
+  ru: Сверка дневника
+  intro: Проверьте дату, предмет и адресата, прежде чем менять общий план.
+  people: {}
+  steps:
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Die weitergeleitete Nachricht stammt aus dem Sommer und gehört zu einer anderen
+            Veranstaltung.
+          ru: Пересылка относится к другому летнему событию.
+      question: Она подтверждает осеннюю бронь?
+      options:
+        - Да
+        - Только кухню
+        - Нет
+      answer: 2
+      right: Другой срок и другое событие.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Dana wartet auf die Antwort zur Küche. Darauf wartet sie seit Montag.
+          ru: Дана ждёт ответа о кухне с понедельника.
+      question: На что ссылается darauf?
+      options:
+        - На список цен
+        - На ответ о кухне
+        - На Элиф
+      answer: 1
+      right: Сохраняется связка warten auf.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+    - read: Сверьте запись с исходным сообщением.
+      evidence:
+        - note: Die Kopie ist für Elif. Die Liste braucht Mateo für den Vergleich.
+          ru: Копия для Элиф. Список нужен Матео для сравнения.
+      question: Как спросить об адресате?
+      options:
+        - Für wen?
+        - Wofür?
+        - Womit?
+      answer: 0
+      right: Спрашиваем о человеке.
+      wrong: Этот вывод не подтверждается исходным сообщением. Сверьте время, отрицание и связь между
+        частями.
+  ending: Ссылки и статусы уточнены. Новое решение не выводится из старого сообщения о другой встрече.
+adventure:
+  kind: sequence
+  title: Расшифруйте короткие ответы команды
+  intro: Хауке работает в Гамбурге и следит за подготовкой через сообщения. В группу попала
+    старая пересылка о другом помещении. Нужно найти, к чему относятся короткие ответы, и
+    обновить общий документ по действующему источнику, сохранив открытые вопросы.
+  ending: Старая пересылка отделена от текущего предложения. Для коротких darauf/dafür найдены
+    точные темы, а копия списка отправляется названному человеку. Общий документ остаётся
+    источником текущего плана.
+  challenges:
+    - id: links
+      kind: match
+      title: Восстановите полную ссылку
+      intro: Сначала определите, спрашивают о теме, человеке или средстве.
+      slots:
+        - id: a
+          label: Worauf wartet Dana?
+          answer: antwort
+        - id: b
+          label: Für wen ist die Kopie?
+          answer: elif
+        - id: c
+          label: Womit bearbeitet Elif die Bilder?
+          answer: computer
+      options:
+        - id: antwort
+          label: auf die Antwort zur Küche
+        - id: elif
+          label: für Elif
+        - id: computer
+          label: mit dem Computer
+      success: Ссылки восстановлены по смыслу и предлогу.
+      wrong: Для человека нужен für wen, для средства womit.
+    - id: darauf
+      kind: order
+      title: Назовите ожидаемое событие
+      intro: Соберите полную мысль с dass.
+      label: Реплика для команды
+      tokens:
+        - Wir warten
+        - darauf,
+        - dass die Verwaltung
+        - antwortet.
+      success: Реплика передаёт нужный смысл. Сравните порядок слов с правилом в разборе.
+      wrong: "Проверьте положение глагола и конец предложения: используйте все фрагменты."
+    - id: source
+      kind: select
+      title: Выберите актуальный статус
+      intro: Сверьте старую пересылку с текущим документом.
+      mode: reading
+      clue:
+        task: article
+      options:
+        - id: o0
+          label: Есть предложение 60 евро; согласия ещё нет
+        - id: o1
+          label: Есть бесплатная бронь с кухней
+        - id: o2
+          label: Любая пересылка равна подтверждению
+      answer:
+        - o0
+      success: Выбор согласуется со всеми условиями сообщения. Остальные варианты нарушают хотя бы
+        одно из них.
+      wrong: "Вернитесь к условиям: совпадения одного слова недостаточно. Проверьте время, отрицание
+        и адресата."
+    - id: reference
+      kind: note
+      title: Замените darauf точным названием
+      intro: Чего ждёт Дана? Введите предмет ожидания из второго абзаца.
+      mode: reading
+      clue:
+        task: article
+      fields:
+        - label: Dana wartet auf …
+          answers:
+            - die Antwort zur Küche
+            - Antwort zur Küche
+            - die Antwort zur Küchennutzung
+      success: Короткая ссылка раскрыта.
+      wrong: Ожидается ответ о кухне, не сама Элиф.
+    - id: recipient
+      kind: negotiation
+      title: Уточните адресата копии
+      intro: Короткий ответ должен сохранить человека.
+      start: a
+      nodes:
+        - id: a
+          text: "Hauke: Für wen ist die Kopie der Liste?"
+          choices:
+            - label: Für Elif. Mit ihr vergleicht Mateo die Angebote.
+              next: end
+              feedback: Названы человек и его связь с задачей.
+        - id: end
+          text: "Hauke: Danke. Ich schicke sie an Elif und aktualisiere das Dokument."
+          terminal: true
+          choices: []
+      success: Копия направлена конкретному адресату.
+      wrong: Не заменяйте человека формой dafür.

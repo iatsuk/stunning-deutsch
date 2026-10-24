@@ -3,10 +3,10 @@ order: 7
 title: Hast du am Samstag Zeit?
 ru: Досуг и встречи
 lede: >-
-  Выходные в Лейпциге: Анна зовёт Марко поплавать, а её друг Йонас — на
-  барбекю. Учимся говорить, что мы умеем и хотим делать, что любим больше
-  всего, и договариваться о встрече — соглашаться и вежливо отказываться.
-  Главное правило темы: после модального глагола инфинитив уходит в конец.
+  Воскресная встреча назначена на 17:30. Теперь нужно выбрать занятие, которое подходит
+  друзьям: парус, фотографии у воды или что-то ещё. Дана и Матео сравнивают желания и
+  возможности, Хауке звонит с приглашением, а Элиф ждёт ответа на своё. Учимся соглашаться,
+  отказываться и предлагать другой план.
 goals:
   - Рассказать, что вы умеете и хотите делать в свободное время
   - Сказать, что вы любите, что любите больше и что больше всего
@@ -17,19 +17,19 @@ grammar:
   - Инфинитив в конце
   - gern, lieber, am liebsten
   - Предложить, согласиться, отказаться
-exam: [schreiben-2, sprechen-2, lesen-1]
+exam: [ schreiben-2, sprechen-2, lesen-1 ]
 
 dialogues:
   wochenende:
     title: Was machst du am Wochenende?
     ru: Что ты делаешь в выходные?
-    place: Sprachschule, Leipzig
+    place: Sprachschule Förde, Kiel
     people:
-      A: { name: Anna, voice: Anna }
-      M: { name: Marco, voice: Reed }
+      A: { name: Dana, voice: Anna }
+      M: { name: Mateo, voice: Reed }
     lines:
-      - A: Marco, was machst du am Wochenende?
-        ru: Марко, что ты делаешь в выходные?
+      - A: Mateo, was machst du am Wochenende?
+        ru: Матео, что ты делаешь в выходные?
       - M: Am Samstag arbeite ich. Aber am Sonntag habe ich Zeit.
         ru: В субботу я работаю. Но в воскресенье я свободен.
       - A: Ich will am Sonntag schwimmen. Kommst du mit?
@@ -50,46 +50,90 @@ dialogues:
     title: Am Telefon
     ru: По телефону
     people:
-      J: { name: Jonas, voice: Eddy }
-      A: { name: Anna, voice: Anna }
+      J:
+        name: Hauke
+        voice: Rocko
+      A: { name: Dana, voice: Anna }
     lines:
-      - J: Hallo Anna, hier ist Jonas. Hast du am Samstag Zeit?
-        ru: Привет, Анна, это Йонас. Ты свободна в субботу?
-      - A: Hallo Jonas! Warum?
-        ru: Привет, Йонас! А что?
+      - J: Hallo Dana, hier ist Hauke. Hast du am Samstag Zeit?
+        ru: Привет, Дана, это Хауке. Ты свободна в субботу?
+      - A: Hallo Hauke! Warum?
+        ru: Привет, Хауке! А что?
       - J: Wir wollen am Samstag grillen. Kommst du mit?
         ru: Мы хотим в субботу устроить барбекю. Пойдёшь с нами?
       - A: Am Samstag kann ich leider nicht. Mein Bruder besucht mich.
         ru: В субботу я, к сожалению, не могу. Ко мне приезжает брат.
       - J: Oh, schade!
         ru: Ой, жаль!
-      - A: Aber am Freitag habe ich Zeit. Wollen wir zusammen kochen?
+      - A: Aber am Sonntag habe ich Zeit. Wollen wir zusammen kochen?
         ru: Но в пятницу я свободна. Давай вместе что-нибудь приготовим?
       - J: Gute Idee! Um wie viel Uhr?
         ru: Отличная идея! Во сколько?
       - A: Um sieben?
         ru: В семь?
-      - J: Ja, das passt. Bis Freitag!
+      - J: Ja, das passt. Bis Sonntag!
         ru: Да, мне подходит. До пятницы!
+  hafen:
+    title: Können und wollen
+    ru: Уметь и хотеть — разные вещи
+    place: Парусный клуб на Kiellinie · учебный план
+    people:
+      D:
+        name: Dana
+        voice: Anna
+      M:
+        name: Mateo
+        voice: Reed
+      E:
+        name: Elif
+        voice: Flo
+    lines:
+      - D: Ich will am Sonntag lieber am Wasser fotografieren.
+        ru: Я хочу в воскресенье лучше пофотографировать у воды.
+      - M: Ich kann segeln. Aber am Sonntag will ich lieber fotografieren.
+        ru: Я умею ходить под парусом. Но в воскресенье я лучше пофотографирую.
+      - E: Ich fotografiere sehr gern. Am liebsten fotografiere ich am Wasser.
+        ru: Я очень люблю фотографировать. Больше всего — у воды.
 
 words:
   hobbys:
     title: Hobbys
     ru: Чем заняться
     items:
-      - { de: schwimmen, ru: плавать }
-      - { de: tanzen, ru: танцевать, note: du tanzt }
-      - { de: lesen, ru: читать, note: "du liest, er liest" }
-      - { de: kochen, ru: готовить }
-      - { de: grillen, ru: жарить на гриле }
-      - { de: Fußball spielen, ru: играть в футбол }
-      - { de: Tennis spielen, ru: играть в теннис }
-      - { de: Gitarre spielen, ru: играть на гитаре }
-      - { de: Fahrrad fahren, ru: кататься на велосипеде, note: "du fährst, er fährt" }
-      - { de: Musik hören, ru: слушать музыку }
-      - { de: fotografieren, ru: фотографировать }
-      - { de: Freunde treffen, ru: встречаться с друзьями, note: "du triffst, er trifft" }
-      - { de: ins Kino gehen, ru: ходить в кино, note: готовое выражение }
+      - de: schwimmen
+        ru: плавать
+      - de: tanzen
+        ru: танцевать
+        note: du tanzt
+      - de: lesen
+        ru: читать
+        note: du liest, er liest
+      - de: kochen
+        ru: готовить
+      - de: grillen
+        ru: жарить на гриле
+      - de: Fußball spielen
+        ru: играть в футбол
+      - de: Tennis spielen
+        ru: играть в теннис
+      - de: Gitarre spielen
+        ru: играть на гитаре
+      - de: Fahrrad fahren
+        ru: кататься на велосипеде
+        note: du fährst, er fährt
+      - de: Musik hören
+        ru: слушать музыку
+      - de: fotografieren
+        ru: фотографировать
+      - de: Freunde treffen
+        ru: встречаться с друзьями
+        note: du triffst, er trifft
+      - de: ins Kino gehen
+        ru: ходить в кино
+        note: готовое выражение
+      - de: segeln
+        ru: ходить под парусом
+        note: Ich kann segeln.
   freizeit:
     title: Freizeit
     ru: Свободное время
@@ -136,36 +180,38 @@ tables:
   modal:
     title: können und wollen
     ru: уметь, мочь и хотеть
-    head: [Person, können, wollen]
+    head: [ Person, können, wollen ]
     rows:
-      - [ich, kann, will]
-      - [du, kann+st, will+st]
-      - [er / sie / es, kann, will]
-      - [wir, könn+en, woll+en]
-      - [ihr, könn+t, woll+t]
-      - [sie / Sie, könn+en, woll+en]
-    note: "В единственном числе меняется гласная, а у *ich* и *er* нет окончания: *ich kann*, *er kann*."
+      - [ ich, kann, will ]
+      - [ du, kann+st, will+st ]
+      - [ er / sie / es, kann, will ]
+      - [ wir, könn+en, woll+en ]
+      - [ ihr, könn+t, woll+t ]
+      - [ sie / Sie, könn+en, woll+en ]
+    note: "В единственном числе меняется гласная, а у *ich* и *er* нет окончания: *ich kann*, *er
+      kann*."
   gern:
     title: gern – lieber – am liebsten
     ru: люблю — больше люблю — больше всего люблю
-    head: [Wort, Beispiel, По-русски]
-    ruCols: [2]
+    head: [ Wort, Beispiel, По-русски ]
+    ruCols: [ 2 ]
     rows:
-      - [gern, Ich schwimme gern., Я люблю плавать.]
-      - [lieber, Ich spiele lieber Tennis., Я больше люблю теннис.]
-      - [am liebsten, Am liebsten lese ich., Больше всего я люблю читать.]
-      - [nicht gern, Ich koche nicht gern., Я не люблю готовить.]
+      - [ gern, Ich schwimme gern., Я люблю плавать. ]
+      - [ lieber, Ich spiele lieber Tennis., Я больше люблю теннис. ]
+      - [ am liebsten, Am liebsten lese ich., Больше всего я люблю читать. ]
+      - [ nicht gern, Ich koche nicht gern., Я не люблю готовить. ]
     note: "Как «хорошо — лучше — лучше всего»: формы не образуются по правилу, их надо запомнить."
   verabreden:
     title: Verabredungen
     ru: Договориться о встрече
-    head: [Vorschlag, Ja, Nein]
+    head: [ Vorschlag, Ja, Nein ]
     rows:
-      - [Hast du am Samstag Zeit?, "Ja, gern!", Leider nicht.]
-      - [Kommst du mit?, Gute Idee!, "Schade, ich kann nicht."]
-      - [Wollen wir zusammen kochen?, "Ja, das passt.", Am Samstag kann ich leider nicht.]
-      - [Um sieben?, "Ja, um sieben!", Lieber um acht.]
-    note: "Отказываясь, назовите причину или другой день: *Leider nicht. Aber am Freitag habe ich Zeit.*"
+      - [ Hast du am Samstag Zeit?, "Ja, gern!", Leider nicht. ]
+      - [ Kommst du mit?, Gute Idee!, "Schade, ich kann nicht." ]
+      - [ Wollen wir zusammen kochen?, "Ja, das passt.", Am Samstag kann ich leider nicht. ]
+      - [ Um sieben?, "Ja, um sieben!", Lieber um acht. ]
+    note: "Отказываясь, назовите причину или другой день: *Leider nicht. Aber am Freitag habe ich
+      Zeit.*"
 
 tasks:
   kursfest:
@@ -173,7 +219,7 @@ tasks:
     part: lesen-1
     title: Lesen, Teil 1
     situation: Lesen Sie die E-Mail. Ist die Aussage richtig oder falsch?
-    from: Sabine Weber
+    from: Frau Petersen
     to: Kurs A1
     subject: Kursfest am Freitag
     text: |
@@ -181,7 +227,7 @@ tasks:
       am Freitag machen wir ein Kursfest! Es fängt um 18 Uhr an und hört um 21 Uhr auf.
       Wer kann einen Salat oder einen Kuchen mitbringen? Die Getränke kauft die Schule.
       Viele Grüße
-      Sabine Weber
+      Kerstin Petersen
     statement: Die Kursteilnehmer kaufen die Getränke.
     answer: false
   antwort:
@@ -189,29 +235,29 @@ tasks:
     part: schreiben-2
     title: Schreiben, Teil 2
     situation: >-
-      Ihre Freundin Lena schreibt Ihnen. Sie können am Samstag nicht kommen.
-      Antworten Sie Lena. Schreiben Sie zu jedem Punkt ein bis zwei Sätze
-      (circa 30 Wörter). Vergessen Sie Anrede und Gruß nicht.
-    from: Lena
+      Ihre Freundin Elif schreibt Ihnen. Sie können am Samstag nicht kommen. Antworten Sie
+      Elif. Schreiben Sie zu jedem Punkt ein bis zwei Sätze (circa 30 Wörter). Vergessen Sie
+      Anrede und Gruß nicht.
+    from: Elif
     subject: Party am Samstag
     text: |
-      Hallo!
+      Hallo Dana!
       Am Samstag habe ich Geburtstag. Ich mache um 19 Uhr eine Party. Kommst du?
       Liebe Grüße
-      Lena
+      Elif
     points:
       - Dank für die Einladung
       - Warum können Sie nicht kommen?
       - "Neuer Termin: Tag und Uhrzeit"
     sample:
-      - "Liebe Lena,"
+      - Liebe Elif,
       - danke für die Einladung!
       - Leider kann ich am Samstag nicht kommen.
-      - Mein Bruder aus Polen besucht mich.
+      - Mein Bruder aus Kasachstan besucht mich.
       - Wollen wir am Sonntag zusammen frühstücken?
       - Um zehn Uhr habe ich Zeit.
       - Viele Grüße
-      - Anna
+      - Dana
   karte:
     kind: card
     part: sprechen-2
@@ -222,6 +268,16 @@ tasks:
     sample:
       - Was machst du am Wochenende?
       - Am Samstag arbeite ich. Am Sonntag spiele ich Tennis.
+  teamplan:
+    kind: message
+    part: lesen-1
+    title: Zeit für die Freunde
+    from: Gruppenchat
+    text: |-
+      Dana: Am Sonntag habe ich von 17 bis 20 Uhr Zeit.
+      Mateo: Am Samstag arbeite ich. Am Sonntag kann ich von 17 bis 19 Uhr kommen.
+      Elif: Am Sonntag habe ich ab 17.30 Uhr Zeit.
+      Treffpunkt: Kiellinie.
 
 steps:
   - id: plaene
@@ -229,67 +285,76 @@ steps:
     title: Планы на выходные
     beats:
       - read: >-
-          Четверг, перемена. Анна спрашивает Марко о планах: *Was machst du am
-          Wochenende?* В субботу Марко, как мы уже знаем, работает, а в
-          воскресенье свободен. Анна зовёт его плавать: *Ich will am Sonntag
-          schwimmen. Kommst du mit?* Заметьте: *will* — «хочу» — стоит на
-          втором месте, а *schwimmen* — в самом конце. И знакомый по прошлой
-          теме глагол с приставкой: *mitkommen* — *Kommst du mit?*
+          Четверг, перемена. Дана спрашивает Матео о планах: *Was machst du am Wochenende?* В
+          субботу Матео, как мы уже знаем, работает, а в воскресенье свободен. Дана зовёт его
+          плавать: *Ich will am Sonntag schwimmen. Kommst du mit?* Заметьте: *will* — «хочу» —
+          стоит на втором месте, а *schwimmen* — в самом конце. И знакомый по прошлой теме
+          глагол с приставкой: *mitkommen* — *Kommst du mit?*
         point: "*Ich will am Sonntag schwimmen.* — *will* второй, *schwimmen* в конце"
-        set: { view: dialogue, dialogue: wochenende, reveal: 3, focus: [0, 2] }
+        set: { view: dialogue, dialogue: wochenende, reveal: 3, focus: [ 0, 2 ] }
       - read: >-
-          Но плавать Марко почти не умеет: *Ich kann nicht gut schwimmen* — «я плохо
-          плаваю», буквально «не умею хорошо плавать». Тогда Анна предлагает
-          теннис: *Kannst du Tennis spielen?* *können* здесь значит «уметь». А
-          Марко отвечает с *gern*: *Tennis spiele ich sehr gern* — «в теннис я
-          играю очень охотно». Чтобы сказать «люблю что-то делать», немцы не
-          берут глагол «любить», а добавляют *gern*.
+          Но плавать Матео почти не умеет: *Ich kann nicht gut schwimmen* — «я плохо плаваю»,
+          буквально «не умею хорошо плавать». Тогда Дана предлагает теннис: *Kannst du Tennis
+          spielen?* *können* здесь значит «уметь». А Матео отвечает с *gern*: *Tennis spiele
+          ich sehr gern* — «в теннис я играю очень охотно». Чтобы сказать «люблю что-то
+          делать», немцы не берут глагол «любить», а добавляют *gern*.
         point: "*Kannst du Tennis spielen?* — «умеешь?»; *gern* — «люблю делать»"
-        set: { reveal: 6, focus: [3, 4, 5] }
+        set: { reveal: 6, focus: [ 3, 4, 5 ] }
       - read: >-
-          Осталось договориться о времени. *Wollen wir um zehn Uhr spielen?* —
-          так по-немецки звучит «давай сыграем в десять?». Но в десять Марко
-          ещё спит: по воскресеньям он отсыпается. Он предлагает своё: *Lieber
-          um zwölf* — «лучше в двенадцать». *lieber* — сравнительная степень от
-          *gern*. Анна соглашается: *Gut, um zwölf. Bis Sonntag!* — «до
-          воскресенья!».
+          Осталось договориться о времени. *Wollen wir um zehn Uhr spielen?* — так по-немецки
+          звучит «давай сыграем в десять?». Но в десять Матео ещё спит: по воскресеньям он
+          отсыпается. Он предлагает своё: *Lieber um zwölf* — «лучше в двенадцать». *lieber* —
+          сравнительная степень от *gern*. Дана соглашается: *Gut, um zwölf. Bis Sonntag!* —
+          «до воскресенья!».
         point: "*Wollen wir …?* — «давай …?»; *Lieber um zwölf.* — «лучше в двенадцать»"
-        set: { reveal: 9, focus: [6, 7, 8] }
+        set: { reveal: 9, focus: [ 6, 7, 8 ] }
 
   - id: telefon
     chapter: scene
-    title: Звонок Йонаса
+    title: Звонок Хауке
     beats:
       - read: >-
-          Вечером Анне звонит Йонас — её немецкий друг по языковому тандему. По
-          телефону представляются через *hier ist*: *Hallo Anna, hier ist
-          Jonas.* И сразу к делу: *Hast du am Samstag Zeit?* — «ты свободна в
-          субботу?», буквально «есть у тебя время?». Йонас зовёт на барбекю, но
-          в субботу к Анне приезжает брат. Анна не говорит просто *Nein*: *Am
-          Samstag kann ich leider nicht* — и сразу объясняет почему.
+          Вечером Дане звонит Хауке — знакомый по клубу и языковому тандему. Он представляется:
+          *Hallo Dana, hier ist Hauke* — и спрашивает *Hast du am Samstag Zeit?* Хауке зовёт на
+          барбекю. Дана отвечает *Am Samstag kann ich leider nicht. Mein Bruder besucht mich.*
+          Это обычный вежливый отказ: способность и свободное время здесь важнее буквального
+          перевода «могу».
         point: "*Hast du am Samstag Zeit?* Отказ: *Am Samstag kann ich leider nicht.*"
-        set: { view: dialogue, dialogue: telefon, reveal: 4, focus: [0, 2, 3] }
+        set: { view: dialogue, dialogue: telefon, reveal: 4, focus: [ 0, 2, 3 ] }
       - read: >-
-          Отказ без встречного предложения звучит холодно, поэтому Анна тут же
-          называет другой день: *Aber am Freitag habe ich Zeit. Wollen wir
-          zusammen kochen?* Йонас соглашается: *Gute Idee!* Время Анна
-          предлагает вопросом — *Um sieben?* — и Йонас отвечает *Das passt* —
-          «мне подходит». Схема «нет — потому что — давай в другой день»
-          пригодится на письменном экзамене.
+          Дана предлагает альтернативу: *Aber am Sonntag habe ich Zeit. Wollen wir zusammen
+          kochen?* Хауке отвечает *Gute Idee!* Они договариваются на *Um sieben* — воскресный
+          вечер, после встречи команды у воды. Уточнять время полезнее, чем угадывать по одному
+          числу. Вежливый отказ может сопровождаться причиной и новым предложением; это удобная
+          схема для экзаменационного сообщения, а не обязательное правило поведения для всех
+          немцев.
         point: "*Aber am Freitag habe ich Zeit.* — после отказа предложите другой день"
-        set: { reveal: 9, focus: [5, 6, 7, 8] }
+        set: { reveal: 9, focus: [ 5, 6, 7, 8 ] }
+  - id: am-wasser
+    chapter: scene
+    title: Что выберем для всей команды?
+    beats:
+      - read: "У Матео есть опыт паруса: *Ich kann segeln*. Но его план на воскресенье другой: *Ich
+          will lieber fotografieren*. Дана тоже выбирает фотографии у воды, Элиф говорит *Am
+          liebsten fotografiere ich am Wasser*. Здесь важно различить три вещи: что человек
+          умеет, что любит вообще и что хочет сейчас. Для общей встречи на Kiellinie в 17:30
+          друзья выбирают фотографии; теннис в полдень и вечерняя встреча — разные события."
+        point: "*kann* — возможность; *will lieber* — текущий выбор; *am liebsten* — предпочтение"
+        set:
+          view: dialogue
+          dialogue: hafen
+          reveal: 3
 
   - id: hobbys
     chapter: words
     title: Хобби
     beats:
       - read: >-
-          Хобби по-немецки — чаще всего глагол или пара «существительное +
-          глагол»: *schwimmen*, *Tennis spielen*, *Fahrrad fahren*. Обратите
-          внимание: «играть в теннис» и «играть на гитаре» — одно и то же
-          *spielen*, без всяких предлогов: *Tennis spielen*, *Gitarre spielen*.
-          А у *lesen*, *fahren* и *treffen* в единственном числе меняется
-          гласная: *du liest*, *er fährt*, *du triffst*.
+          Хобби по-немецки — чаще всего глагол или пара «существительное + глагол»:
+          *schwimmen*, *Tennis spielen*, *Fahrrad fahren*. Обратите внимание: «играть в теннис»
+          и «играть на гитаре» — одно и то же *spielen*, без всяких предлогов: *Tennis
+          spielen*, *Gitarre spielen*. А у *lesen*, *fahren* и *treffen* в единственном числе
+          меняется гласная: *du liest*, *er fährt*, *du triffst*.
         point: "*Tennis spielen*, *Gitarre spielen* — без предлогов, в отличие от русского"
         set: { view: words, words: hobbys }
 
@@ -298,11 +363,11 @@ steps:
     title: Куда пойти
     beats:
       - read: >-
-          Где проводят свободное время — в кино, в бассейне, в парке. Род опять
-          не совпадает с русским: *das Kino*, *das Konzert*, *das Schwimmbad* —
-          среднего рода. Слова из английского — *das Hobby*, *die Party* —
-          образуют множественное число на *-s*: *Hobbys*, *Partys*. А «пойти в
-          кино» удобнее выучить целиком, как готовую фразу: *ins Kino gehen*.
+          Где проводят свободное время — в кино, в бассейне, в парке. Род опять не совпадает с
+          русским: *das Kino*, *das Konzert*, *das Schwimmbad* — среднего рода. Слова из
+          английского — *das Hobby*, *die Party* — образуют множественное число на *-s*:
+          *Hobbys*, *Partys*. А «пойти в кино» удобнее выучить целиком, как готовую фразу: *ins
+          Kino gehen*.
         point: "*das Kino*, *das Konzert*, *das Schwimmbad*; *Hobbys*, *Partys* — мн. ч. на *-s*"
         set: { view: words, words: freizeit }
 
@@ -311,12 +376,11 @@ steps:
     title: Как охотно и как часто
     beats:
       - read: >-
-          «Люблю» о занятиях по-немецки говорят не глаголом, а наречием *gern*:
-          *Ich schwimme gern* — «я люблю плавать», буквально «плаваю охотно».
-          Сравнительная степень — *lieber*, превосходная — *am liebsten*. Это
-          другие слова, как «хорошо — лучше». Частоту называют словами
-          *immer*, *oft*, *manchmal*, *nie*. Они, как и *gern*, обычно стоят в
-          середине: *Ich spiele oft Tennis.*
+          «Люблю» о занятиях по-немецки говорят не глаголом, а наречием *gern*: *Ich schwimme
+          gern* — «я люблю плавать», буквально «плаваю охотно». Сравнительная степень —
+          *lieber*, превосходная — *am liebsten*. Это другие слова, как «хорошо — лучше».
+          Частоту называют словами *immer*, *oft*, *manchmal*, *nie*. Они, как и *gern*, обычно
+          стоят в середине: *Ich spiele oft Tennis.*
         point: "*Ich schwimme gern.* — «люблю плавать»; *gern*, *lieber*, *am liebsten*"
         set: { view: words, words: wiegern }
 
@@ -325,11 +389,10 @@ steps:
     title: Слова для встречи
     beats:
       - read: >-
-          *Hast du Zeit?* — «ты свободен?». *mitkommen* — «пойти вместе» —
-          глагол с отделяемой приставкой, как в прошлой теме: *Kommst du mit?*
-          *einladen* — «приглашать» — тоже с приставкой и со сменой гласной:
-          *er lädt ein*. *Das passt* — «мне подходит». А если не получается,
-          пригодятся *leider* и *schade* — «к сожалению» и «жаль». И два новых
+          *Hast du Zeit?* — «ты свободен?». *mitkommen* — «пойти вместе» — глагол с отделяемой
+          приставкой, как в прошлой теме: *Kommst du mit?* *einladen* — «приглашать» — тоже с
+          приставкой и со сменой гласной: *er lädt ein*. *Das passt* — «мне подходит». А если
+          не получается, пригодятся *leider* и *schade* — «к сожалению» и «жаль». И два новых
           глагола темы: *können* и *wollen*.
         point: "*Hast du Zeit?* — *Kommst du mit?* — *Das passt.* / *Leider nicht.*"
         set: { view: words, words: treffen }
@@ -339,21 +402,19 @@ steps:
     title: Уметь, мочь и хотеть
     beats:
       - read: >-
-          *können* закрывает сразу два русских глагола: «уметь» — *Ich kann
-          schwimmen* — и «мочь» — *Am Samstag kann ich nicht*. В единственном
-          числе гласная меняется: не *könn-*, а *kann*. И главное отличие от
-          обычных глаголов: у *ich* и *er* нет окончания, обе формы — просто
-          *kann*. Сказать *er kannt* по образцу *er kommt* — очень частая
-          ошибка.
+          *können* закрывает сразу два русских глагола: «уметь» — *Ich kann schwimmen* — и
+          «мочь» — *Am Samstag kann ich nicht*. В единственном числе гласная меняется: не
+          *könn-*, а *kann*. И главное отличие от обычных глаголов: у *ich* и *er* нет
+          окончания, обе формы — просто *kann*. Сказать *er kannt* по образцу *er kommt* —
+          очень частая ошибка.
         point: "*können* — «уметь» и «мочь»: *ich kann*, *du kannst*, *er kann*"
         set: { view: table, table: modal, reveal: 3 }
       - read: >-
-          *wollen* — «хотеть», и устроен так же: *ich will*, *du willst*, *er
-          will*, во множественном — *wollen*. Осторожно с английским: *will*
-          здесь не будущее время, а «хочу». И ещё нюанс: *Ich will* звучит
-          твёрдо, почти требовательно. В кафе или в магазине вежливее *Ich
-          möchte* из темы о еде. А о планах с друзьями — *Ich will am Sonntag
-          schwimmen* — говорить нормально.
+          *wollen* — «хотеть», и устроен так же: *ich will*, *du willst*, *er will*, во
+          множественном — *wollen*. Осторожно с английским: *will* здесь не будущее время, а
+          «хочу». И ещё нюанс: *Ich will* звучит твёрдо, почти требовательно. В кафе или в
+          магазине вежливее *Ich möchte* из темы о еде. А о планах с друзьями — *Ich will am
+          Sonntag schwimmen* — говорить нормально.
         point: "*ich will*, *du willst*, *er will*; просьба вежливее — *Ich möchte …*"
         set: { reveal: 6 }
 
@@ -362,55 +423,52 @@ steps:
     title: Инфинитив — в конец
     beats:
       - read: >-
-          Возьмём простое предложение: *Ich spiele Tennis.* Глагол *spiele* на
-          второй позиции, поле «конец» пустое — это вы знаете с первой темы.
-          Теперь Марко хочет сказать, что умеет играть. В русском мы просто
-          поставим «умею» перед «играть», и оба глагола окажутся рядом. Смотрите
-          на схему: в немецком второй глагол рядом с первым не останется.
+          Возьмём простое предложение: *Ich spiele Tennis.* Глагол *spiele* на второй позиции,
+          поле «конец» пустое — это вы знаете с первой темы. Теперь Матео хочет сказать, что
+          умеет играть. В русском мы просто поставим «умею» перед «играть», и оба глагола
+          окажутся рядом. Смотрите на схему: в немецком второй глагол рядом с первым не
+          останется.
         point: "*Ich spiele Tennis.* — один глагол, поле «конец» пустое"
         set:
           view: sentence
           rows:
-            - de: [Ich, spiel+e, Tennis., ""]
+            - de: [ Ich, spiel+e, Tennis., "" ]
               ru: Я играю в теннис.
       - read: >-
-          *Ich kann Tennis spielen.* На второе место встаёт модальный глагол
-          *kann* — он и спрягается. А *spielen* уезжает в самый конец и теряет
-          личное окончание: было *spiel+e*, стало *spiel+en*. Получается такая
-          же рамка, как с отделяемой приставкой: *Ich stehe um sieben auf* —
-          *Ich kann Tennis spielen*. Типичная ошибка — *Ich kann spielen
-          Tennis*, по-русски или по-английски.
+          *Ich kann Tennis spielen.* На второе место встаёт модальный глагол *kann* — он и
+          спрягается. А *spielen* уезжает в самый конец и теряет личное окончание: было
+          *spiel+e*, стало *spiel+en*. Получается такая же рамка, как с отделяемой приставкой:
+          *Ich stehe um sieben auf* — *Ich kann Tennis spielen*. Типичная ошибка — *Ich kann
+          spielen Tennis*, по-русски или по-английски.
         point: "*Ich kann Tennis spielen.* — модальный глагол второй, инфинитив в конце"
         set:
           rows:
-            - de: [Ich, kann, Tennis, spiel+en.]
+            - de: [ Ich, kann, Tennis, spiel+en. ]
               ru: Я умею играть в теннис.
       - read: >-
-          В вопросах рамка сохраняется. Вопрос да/нет начинается с модального
-          глагола: *Kannst du Tennis spielen?* — «ты умеешь играть в теннис?».
-          В W-вопросе первым идёт вопросительное слово: *Was willst du am
-          Sonntag machen?* — «что ты хочешь делать в воскресенье?». Всё, что
-          между двумя глаголами, — середина: подлежащее, время, дополнение.
-          Инфинитив всегда замыкает предложение.
+          В вопросах рамка сохраняется. Вопрос да/нет начинается с модального глагола: *Kannst
+          du Tennis spielen?* — «ты умеешь играть в теннис?». В W-вопросе первым идёт
+          вопросительное слово: *Was willst du am Sonntag machen?* — «что ты хочешь делать в
+          воскресенье?». Всё, что между двумя глаголами, — середина: подлежащее, время,
+          дополнение. Инфинитив всегда замыкает предложение.
         point: "*Kannst du Tennis spielen?* — *Was willst du am Sonntag machen?*"
         set:
           rows:
-            - de: ["", Kann+st, du Tennis, spiel+en?]
+            - de: [ "", Kann+st, du Tennis, spiel+en? ]
               ru: Ты умеешь играть в теннис?
-            - de: [Was, will+st, du am Sonntag, mach+en?]
+            - de: [ Was, will+st, du am Sonntag, mach+en? ]
               ru: Что ты хочешь делать в воскресенье?
       - read: >-
-          *nicht* стоит перед инфинитивом: *Ich kann nicht gut schwimmen.* А в
-          отказе инфинитив часто опускают совсем — и так понятно, о чём речь:
-          *Am Samstag kann ich leider nicht.* Поле «конец» пустеет, рамки нет.
-          По-русски тоже говорят просто «не могу». Добавьте *leider* — и отказ
-          прозвучит вежливо.
+          *nicht* стоит перед инфинитивом: *Ich kann nicht gut schwimmen.* А в отказе инфинитив
+          часто опускают совсем — и так понятно, о чём речь: *Am Samstag kann ich leider
+          nicht.* Поле «конец» пустеет, рамки нет. По-русски тоже говорят просто «не могу».
+          Добавьте *leider* — и отказ прозвучит вежливо.
         point: "*Ich kann nicht gut schwimmen.* Отказ: *Am Samstag kann ich leider nicht.*"
         set:
           rows:
-            - de: [Ich, kann, nicht gut, schwimm+en.]
+            - de: [ Ich, kann, nicht gut, schwimm+en. ]
               ru: Я плохо плаваю.
-            - de: [Am Samstag, kann, ich leider nicht., ""]
+            - de: [ Am Samstag, kann, ich leider nicht., "" ]
               ru: В субботу я, к сожалению, не могу.
 
   - id: gern
@@ -418,12 +476,11 @@ steps:
     title: Люблю, больше люблю, больше всего
     beats:
       - read: >-
-          Чтобы сказать «люблю», к глаголу добавляют *gern*: *Ich schwimme
-          gern*. «Больше люблю» — *lieber*, «больше всего» — *am liebsten*.
-          Марко так и отвечает на «давай в десять»: *Lieber um zwölf* — «лучше
-          в двенадцать». Не говорите *Ich liebe schwimmen*: глагол *lieben*
-          оставьте для людей. А «не люблю» — *nicht gern*: *Ich koche nicht
-          gern.*
+          К глаголу добавляем *gern*: *Ich schwimme gern*. Сравнение — *lieber*, предпочтение
+          среди всех вариантов — *am liebsten*. Матео предлагает *Lieber um zwölf*, когда
+          выбирает время тенниса. Не нужно механически заменять «люблю» на *lieben*: для
+          обычных предпочтений проще *gern*. Если *lieben* относится к занятию, у него другая
+          конструкция; её разберём позже. «Не люблю готовить» — *Ich koche nicht gern*.
         point: "*gern* — люблю, *lieber* — больше люблю, *am liebsten* — больше всего"
         set: { view: table, table: gern }
 
@@ -432,12 +489,12 @@ steps:
     title: Предложить, согласиться, отказаться
     beats:
       - read: >-
-          Договориться о встрече помогают три шага. Предложить: *Hast du am
-          Samstag Zeit?*, *Kommst du mit?*, *Wollen wir …?* — «давай …?».
-          Согласиться: *Ja, gern!*, *Gute Idee!*, *Das passt.* Отказаться — и
-          тут немцы почти никогда не говорят просто *Nein*. Принято назвать
-          причину и предложить другое время: *Leider nicht. Mein Bruder
-          besucht mich. Aber am Freitag habe ich Zeit.*
+          Для встречи нужны предложение, ответ и подтверждение. Предложить: *Hast du am Samstag
+          Zeit?*, *Kommst du mit?*, *Wollen wir …?* Согласиться: *Ja, gern!*, *Gute Idee!*,
+          *Das passt.* Отказаться: *Leider nicht.* Если хотите продолжить общение, добавьте
+          причину или предложите другой день: *Mein Bruder besucht mich. Aber am Sonntag habe
+          ich Zeit.* Не считайте умение человека согласием: *Ich kann segeln* ещё не
+          приглашение выйти под парусом.
         point: "Отказ = *leider* + причина + новый день: *Aber am Freitag habe ich Zeit.*"
         set: { view: table, table: verabreden }
 
@@ -447,49 +504,47 @@ steps:
     beats:
       - question: Как сказать «К сожалению, я не могу пойти с вами»?
         read: >-
-          *Ich kann leider nicht mitkommen.* Помните *Kommst du mit?* — там
-          приставка *mit* стоит в конце отдельно. С модальным глаголом
-          *mitkommen* уходит в конец целиком и снова пишется одним словом:
-          инфинитив не разрывается. *leider* и *nicht* — в середине, перед
-          инфинитивом. Так же: *Ich will um sechs aufstehen*, *Kannst du heute
+          *Ich kann leider nicht mitkommen.* Помните *Kommst du mit?* — там приставка *mit*
+          стоит в конце отдельно. С модальным глаголом *mitkommen* уходит в конец целиком и
+          снова пишется одним словом: инфинитив не разрывается. *leider* и *nicht* — в
+          середине, перед инфинитивом. Так же: *Ich will um sechs aufstehen*, *Kannst du heute
           einkaufen?*
         point: "С модальным глаголом приставка не отрывается: *Ich kann nicht mitkommen.*"
         before:
           view: sentence
           rows:
-            - de: ["", Komm+st, du, mit?]
+            - de: [ "", Komm+st, du, mit? ]
               ru: Ты пойдёшь с нами?
         set:
           view: sentence
           rows:
-            - de: ["", Komm+st, du, mit?]
+            - de: [ "", Komm+st, du, mit? ]
               ru: Ты пойдёшь с нами?
-            - de: [Ich, kann, leider nicht, mitkomm+en.]
+            - de: [ Ich, kann, leider nicht, mitkomm+en. ]
               ru: К сожалению, я не могу пойти с вами.
       - question: Как сказать «Больше всего я люблю читать»?
         read: >-
-          *Am liebsten lese ich.* «Люблю» снова передаёт наречие, а не глагол.
-          Для выразительности немцы охотно ставят *am liebsten* на первое место,
-          и тогда глагол, как всегда, второй, а *ich* уходит за него. Можно
-          сказать и спокойнее: *Ich lese am liebsten.* А вот *Am liebsten ich
-          lese* — ошибка: между первой позицией и глаголом ничего не
-          помещается.
+          *Am liebsten lese ich.* «Люблю» снова передаёт наречие, а не глагол. Для
+          выразительности немцы охотно ставят *am liebsten* на первое место, и тогда глагол,
+          как всегда, второй, а *ich* уходит за него. Можно сказать и спокойнее: *Ich lese am
+          liebsten.* А вот *Am liebsten ich lese* — ошибка: между первой позицией и глаголом
+          ничего не помещается.
         point: "*Am liebsten lese ich.* — на первом месте, глагол всё равно второй"
         set:
           rows:
-            - de: [Am liebsten, les+e, ich., ""]
+            - de: [ Am liebsten, les+e, ich., "" ]
               ru: Больше всего я люблю читать.
       - question: "Как предложить: «Давай в воскресенье поиграем в теннис»?"
         read: >-
-          *Wollen wir am Sonntag Tennis spielen?* Русское «давай…» по-немецки —
-          вопрос с *wollen*: модальный глагол первым, потом *wir*, инфинитив в
-          конце. Это не «хотим ли мы?», а приглашение, и отвечают на него *Ja,
-          gern!* или *Gute Idee!* Сравните с утверждением: *Wir wollen am
-          Sonntag Tennis spielen* — «мы хотим в воскресенье поиграть в теннис».
+          *Wollen wir am Sonntag Tennis spielen?* Русское «давай…» по-немецки — вопрос с
+          *wollen*: модальный глагол первым, потом *wir*, инфинитив в конце. Это не «хотим ли
+          мы?», а приглашение, и отвечают на него *Ja, gern!* или *Gute Idee!* Сравните с
+          утверждением: *Wir wollen am Sonntag Tennis spielen* — «мы хотим в воскресенье
+          поиграть в теннис».
         point: "«Давай …?» — *Wollen wir am Sonntag Tennis spielen?*"
         set:
           rows:
-            - de: ["", Woll+en, wir am Sonntag Tennis, spiel+en?]
+            - de: [ "", Woll+en, wir am Sonntag Tennis, spiel+en? ]
               ru: Давай в воскресенье поиграем в теннис?
 
   - id: lesen
@@ -498,11 +553,10 @@ steps:
     beats:
       - question: Правда ли, что напитки для праздника покупают участники курса?
         read: >-
-          *Falsch.* В первой части чтения — две короткие записки или письма и
-          утверждения к ним: *richtig* или *falsch*. Ловушка обычно в деталях:
-          слова те же, но речь о другом человеке или дне. Здесь есть и
-          *kaufen*, и *Getränke*, но покупает их школа: *Die Getränke kauft die
-          Schule.* Первым стоит дополнение, а подлежащее — после глагола.
+          *Falsch.* В первой части чтения — две короткие записки или письма и утверждения к
+          ним: *richtig* или *falsch*. Ловушка обычно в деталях: слова те же, но речь о другом
+          человеке или дне. Здесь есть и *kaufen*, и *Getränke*, но покупает их школа: *Die
+          Getränke kauft die Schule.* Первым стоит дополнение, а подлежащее — после глагола.
           Участники приносят салат или пирог.
         point: "*Die Getränke kauft die Schule.* — подлежащее ищите и после глагола"
         before: { view: task, task: kursfest }
@@ -513,20 +567,18 @@ steps:
     title: "Письмо: ответ на приглашение"
     beats:
       - read: >-
-          Вторая часть письменного экзамена — короткое сообщение, около 30
-          слов. В задании описана ситуация и даны три пункта, *Leitpunkte*. На
-          каждый — одно-два предложения. Пропустите пункт — потеряете баллы:
-          за каждый дают до трёх, ещё один — за оформление. Оформление — это
-          обращение и подпись: *Liebe Lena,* или *Lieber Marco,* в начале,
+          Вторая часть письменного экзамена — короткое сообщение, около 30 слов. В задании
+          описана ситуация и даны три пункта, *Leitpunkte*. На каждый — одно-два предложения.
+          Пропустите пункт — потеряете баллы: за каждый дают до трёх, ещё один — за оформление.
+          Оформление — это обращение и подпись: *Liebe Elif,* или *Lieber Mateo,* в начале,
           *Viele Grüße* в конце.
         point: "*Schreiben*, часть 2: около 30 слов, три пункта, обращение и подпись"
         set: { view: task, task: antwort, reveal: 0 }
       - read: >-
-          Образец закрывает все три пункта. Благодарность: *danke für die
-          Einladung!* Причина: *Leider kann ich am Samstag nicht kommen. Mein
-          Bruder aus Polen besucht mich.* Новый день и время: *Wollen wir am
-          Sonntag zusammen frühstücken? Um zehn Uhr habe ich Zeit.* Модальный
-          глагол на втором месте, инфинитив в конце. Длинные фразы не нужны:
+          Образец закрывает все три пункта. Благодарность: *danke für die Einladung!* Причина:
+          *Leider kann ich am Samstag nicht kommen. Mein Bruder aus Kasachstan besucht mich.*
+          Новый день и время: *Wollen wir am Sonntag zusammen frühstücken? Um zehn Uhr habe ich
+          Zeit.* Модальный глагол на втором месте, инфинитив в конце. Длинные фразы не нужны:
           оценивают, понятно ли и всё ли вы сказали.
         point: "Спасибо + причина + новый день — по одному-два предложения на пункт"
         set: { reveal: 8 }
@@ -536,57 +588,56 @@ steps:
     title: "Устный экзамен: часть 2"
     beats:
       - read: >-
-          Во второй части устного экзамена каждый тянет карточку: сверху тема,
-          в центре слово. По этому слову нужно задать вопрос партнёру, а потом
-          ответить на его вопрос. Тема здесь — *Freizeit*, слово —
-          *Wochenende*. За вопрос дают два балла, за ответ — один. Вопрос
-          должен быть настоящим вопросом и содержать слово с карточки.
+          Во второй части устного экзамена каждый тянет карточку: сверху тема, в центре слово.
+          По этому слову нужно задать вопрос партнёру, а потом ответить на его вопрос. Тема
+          здесь — *Freizeit*, слово — *Wochenende*. За вопрос дают два балла, за ответ — один.
+          Вопрос должен быть настоящим вопросом и содержать слово с карточки.
         point: "*Sprechen*, часть 2: по слову с карточки задать вопрос и ответить партнёру"
         set: { view: task, task: karte }
       - question: Какой вопрос задать по карточке *Wochenende*?
         read: >-
-          Самый простой — *Was machst du am Wochenende?* Слово с карточки стоит
-          в вопросе, глагол на втором месте. Можно и с модальным глаголом:
-          *Was willst du am Wochenende machen?* Отвечайте коротко, но полным
-          предложением: *Am Sonntag spiele ich Tennis.* Если партнёр говорит с
-          вами на *Sie*, отвечайте так же: *Was machen Sie am Wochenende?*
+          Самый простой — *Was machst du am Wochenende?* Слово с карточки стоит в вопросе,
+          глагол на втором месте. Можно и с модальным глаголом: *Was willst du am Wochenende
+          machen?* Отвечайте коротко, но полным предложением: *Am Sonntag spiele ich Tennis.*
+          Если партнёр говорит с вами на *Sie*, отвечайте так же: *Was machen Sie am
+          Wochenende?*
         point: "*Was machst du am Wochenende?* — слово с карточки прямо в вопросе"
         set: { solved: true }
 
 exercises:
   - type: choice
     q: Ich ___ leider nicht kommen.
-    options: [kann, kanne, kannt]
+    options: [ kann, kanne, kannt ]
     answer: 0
     why: "*ich kann* — без окончания, как и *er kann*."
   - type: gap
     q: ___ du Tennis spielen?
-    answer: [Kannst]
+    answer: [ Kannst ]
     hint: können
     ru: Ты умеешь играть в теннис?
   - type: gap
-    q: Anna ___ am Sonntag schwimmen.
-    answer: [will]
+    q: Dana ___ am Sonntag schwimmen.
+    answer: [ will ]
     hint: wollen
     why: "*er / sie will* — без окончания, как и *ich will*."
   - type: gap
     q: ___ ihr am Freitag kommen?
-    answer: [Könnt]
+    answer: [ Könnt ]
     hint: können
     why: "*ihr könnt* — во множественном числе возвращается *ö*."
   - type: gap
     q: Was ___ du am Wochenende machen?
-    answer: [willst]
+    answer: [ willst ]
     hint: wollen
     why: "*du willst* — *i* в единственном числе и окончание *-st*."
   - type: choice
-    q: Marco kann nicht gut ___.
-    options: [schwimmt, schwimmen, schwimme]
+    q: Mateo kann nicht gut ___.
+    options: [ schwimmt, schwimmen, schwimme ]
     answer: 1
     why: "После модального глагола — инфинитив, и он стоит в конце."
   - type: choice
     q: Какое предложение верное?
-    options: [Ich will spielen Tennis., Ich will Tennis spielen., Ich Tennis spielen will.]
+    options: [ Ich will spielen Tennis., Ich will Tennis spielen., Ich Tennis spielen will. ]
     answer: 1
     why: "Инфинитив — в самом конце: *Ich will Tennis spiel+en.*"
   - type: order
@@ -595,34 +646,264 @@ exercises:
   - type: order
     ru: В субботу я хочу почитать.
     de: Am Samstag will ich lesen.
-    also: [Ich will am Samstag lesen.]
+    also: [ Ich will am Samstag lesen. ]
     why: "*Am Samstag* на первом месте — *will* второй, *ich* за ним, *lesen* в конце."
   - type: order
     ru: К сожалению, я не могу пойти с вами.
     de: Ich kann leider nicht mitkommen.
-    also: [Leider kann ich nicht mitkommen.]
+    also: [ Leider kann ich nicht mitkommen. ]
   - type: choice
     q: Как сказать «В футбол я люблю играть больше» (чем в теннис)?
-    options: [Ich spiele gern Fußball., Ich spiele lieber Fußball., Ich spiele am liebsten Fußball.]
+    options: [ Ich spiele gern Fußball., Ich spiele lieber Fußball., Ich spiele am liebsten Fußball. ]
     answer: 1
-    why: "*lieber* — «больше люблю»: сравниваем два занятия. *am liebsten* — «больше всего», из всех."
+    why: "*lieber* — «больше люблю»: сравниваем два занятия. *am liebsten* — «больше всего», из
+      всех."
   - type: choice
     q: ___ lese ich. Das ist mein Hobby Nummer eins!
-    options: [Gern, Lieber, Am liebsten]
+    options: [ Gern, Lieber, Am liebsten ]
     answer: 2
     why: "*am liebsten* — «больше всего», лучшее из всех."
   - type: choice
     q: Hast du am Freitag Zeit? – ___ Da arbeite ich.
-    options: [Gute Idee!, Leider nicht., "Ja, gern!"]
+    options: [ Gute Idee!, Leider nicht., "Ja, gern!" ]
     answer: 1
     why: "Отказ — *Leider nicht.* — и сразу причина: *Da arbeite ich.*"
   - type: choice
     q: Как предложить другу вместе приготовить ужин?
-    options: [Wollen wir zusammen kochen?, Wir wollen zusammen kochen., Willst du kochen zusammen?]
+    options: [ Wollen wir zusammen kochen?, Wir wollen zusammen kochen., Willst du kochen zusammen? ]
     answer: 0
     why: "*Wollen wir …?* — «давай …?»: глагол первым, инфинитив в конце."
   - type: gap
     q: Am Samstag ___ ich leider nicht. Mein Bruder ___ mich.
-    answer: [kann, besucht]
+    answer: [ kann, besucht ]
     hint: können / besuchen
     ru: В субботу я, к сожалению, не могу. Ко мне приезжает брат.
+  - type: choice
+    q: Mateo kann segeln, aber er will lieber fotografieren. Was möchte er jetzt machen?
+    options:
+      - fotografieren
+      - segeln
+      - schlafen
+    answer: 0
+    why: "*kann* — умение, *will lieber* — нынешнее предпочтение."
+  - type: order
+    ru: Мы хотим вместе фотографировать.
+    de: Wir wollen zusammen fotografieren.
+adventure:
+  kind: sequence
+  title: План, который подходит всем
+  intro: Время встречи уже известно. Помогите команде выбрать занятие, найти общее окно и
+    ответить на приглашение. Нельзя считать «умеет» согласием, а первое предложение —
+    окончательным решением.
+  ending: Команда согласовала воскресенье 17:30 на Kiellinie и выбрала фотографии у воды. Отказ
+    от субботнего приглашения оформлен с благодарностью и новым предложением. Гостям теперь
+    понадобится место для проживания — это следующая тема.
+  challenges:
+    - id: ability
+      kind: match
+      title: Что умеет Матео?
+      intro: Послушайте разговор о воскресенье. Разделите хорошее умение и занятие, с которым Матео
+        справляется неуверенно.
+      clue:
+        dialogue: wochenende
+        lines:
+          - 3
+          - 4
+          - 5
+      slots:
+        - id: can
+          label: Mateo kann …
+          answer: tennis
+        - id: not-well
+          label: Mateo kann nicht gut …
+          answer: swim
+      options:
+        - id: tennis
+          label: Tennis spielen
+          icon: 🎾
+        - id: swim
+          label: schwimmen
+          icon: 🏊
+        - id: guitar
+          label: Gitarre spielen
+          icon: 🎸
+      success: Матео умеет играть в теннис, а плавать хорошо не умеет. Это сведения об умении, не
+        готовый план всей команды.
+      wrong: Отрицание относится к *gut schwimmen*. На предложение тенниса Матео отвечает
+        утвердительно.
+    - id: common-time
+      kind: select
+      title: Найдите общее время
+      intro: Прочитайте сообщения друзей. В какой из предложенных моментов свободны все трое?
+      mode: reading
+      clue:
+        task: teamplan
+      options:
+        - id: sunday-1730
+          label: So · 17:30
+        - id: saturday-1730
+          label: Sa · 17:30
+        - id: sunday-1930
+          label: So · 19:30
+      answer:
+        - sunday-1730
+      success: В воскресенье в 17:30 свободны все. В субботу Матео работает, а в 19:30 он уже не
+        может прийти.
+      wrong: Пересеките все три условия. *Ab 17.30* у Элиф означает не раньше 17:30; Матео ограничил
+        своё окно 19 часами.
+    - id: can-want-prefer
+      kind: match
+      title: Возможность или желание?
+      intro: По сообщениям у воды заполните три поля. Одно и то же занятие может оказаться в
+        нескольких полях.
+      clue:
+        dialogue: hafen
+        lines:
+          - 0
+          - 1
+          - 2
+      slots:
+        - id: mateo-can
+          label: Mateo · kann
+          answer: sail
+        - id: mateo-wants
+          label: Mateo · will lieber
+          answer: photo
+        - id: elif-favorite
+          label: Elif · am liebsten
+          answer: photo
+      options:
+        - id: sail
+          label: segeln
+          icon: ⛵
+        - id: photo
+          label: fotografieren
+          icon: 📷
+        - id: swim
+          label: schwimmen
+          icon: 🏊
+      success: Парус — умение Матео, фотографии — его нынешний выбор и любимое занятие Элиф у воды.
+        Общий план не обязан повторять самое заметное умение.
+      wrong: Матео сказал *kann segeln*, затем *will lieber fotografieren*. Элиф тоже выбрала
+        фотографии.
+    - id: invite
+      kind: order
+      title: Пригласите всех вместе
+      intro: Отправьте вопрос «Давай в воскресенье вместе пофотографируем?». Начните с *Wollen wir*.
+      label: Приглашение в чат
+      tokens:
+        - Wollen
+        - wir
+        - am Sonntag zusammen
+        - fotografieren?
+      success: "*Wollen wir am Sonntag zusammen fotografieren?* Предложение готово: модальный глагол
+        первым, инфинитив в конце."
+      wrong: "У приглашения форма вопроса: *Wollen wir …?* Основное действие *fotografieren*
+        завершает рамку."
+    - id: reply
+      kind: order
+      title: Ответьте на приглашение Элиф
+      intro: "В субботу Дана занята. Соберите ответ в таком порядке: обращение, благодарность, отказ
+        с причиной, новое предложение со временем, прощание с подписью. Это тренировка
+        структуры; на экзамене сообщение нужно написать самостоятельно."
+      label: Ответ на приглашение
+      tokens:
+        - Liebe Elif,
+        - danke für die Einladung!
+        - Leider kann ich am Samstag nicht kommen. Mein Bruder besucht mich.
+        - Wollen wir am Sonntag zusammen frühstücken? Um zehn Uhr habe ich Zeit.
+        - Viele Grüße, Dana
+      success: В ответе есть благодарность, причина отказа и конкретная альтернатива. Обращение и
+        подпись тоже на месте.
+      wrong: Сначала поприветствуйте Элиф и поблагодарите, затем откажитесь с причиной. После этого
+        предложите новый день и время; в конце попрощайтесь и подпишите ответ.
+case:
+  title: Können heißt nicht zusagen
+  ru: Уметь — не значит согласиться
+  intro: В журнале клуба запись «Матео умеет ходить под парусом» превратилась в подтверждение
+    выхода всей команды. Но в сообщениях есть другие планы. Найдите, где возможность перепутали
+    с согласием, а предложение — с договорённостью.
+  people:
+    M:
+      name: Mateo
+      voice: Reed
+    D:
+      name: Dana
+      voice: Anna
+    E:
+      name: Elif
+      voice: Flo
+  steps:
+    - read: Матео уточняет умение и план на воскресенье в одной реплике.
+      evidence:
+        - M: Ich kann segeln. Aber am Sonntag will ich lieber fotografieren.
+          ru: Я умею ходить под парусом. Но в воскресенье я лучше пофотографирую.
+      question: Что Матео подтвердил о воскресном занятии?
+      options:
+        - Он предпочитает фотографии
+        - Он согласился на парус для всей команды
+        - Он не умеет ходить под парусом
+      answer: 0
+      right: "*Kann* говорит об умении. Текущий выбор стоит после *aber*: *will lieber
+        fotografieren*."
+      wrong:
+        - null
+        - Умение не является согласием на конкретный план.
+        - Матео прямо сказал, что умеет.
+    - read: Второй листок содержит время, предложенное до возражения Матео.
+      evidence:
+        - note: |-
+            Dana: Wollen wir um zehn Uhr Tennis spielen?
+            Mateo: Lieber um zwölf.
+            Dana: Gut, um zwölf.
+          ru: |-
+            Дана: Давай в десять поиграем в теннис?
+            Матео: Лучше в двенадцать.
+            Дана: Хорошо, в двенадцать.
+      question: Когда договорились играть в теннис?
+      options:
+        - В 10:00
+        - В 12:00
+        - В 17:30
+      answer: 1
+      right: Последнее подтверждение — *Gut, um zwölf*. 10:00 было только первым предложением.
+      wrong:
+        - Это предложение отменено встречным временем.
+        - null
+        - 17:30 относится к другой, общей встрече у воды.
+    - read: Организатору важно не включить в план человека, который отказался.
+      evidence:
+        - D: Am Samstag kann ich leider nicht. Mein Bruder besucht mich. Aber am Sonntag habe ich Zeit.
+          ru: В субботу я, к сожалению, не могу. Ко мне приезжает брат. Но в воскресенье я свободна.
+      question: Как отметить ответ Даны?
+      options:
+        - Суббота подтверждена
+        - Она отказалась от общения навсегда
+        - В субботу не может; воскресенье можно обсуждать
+      answer: 2
+      right: Отказ относится к конкретному дню. Предложена альтернатива, а не полный отказ от
+        встречи.
+      wrong:
+        - "*Kann ich leider nicht* отменяет субботу."
+        - Ответ прямо предлагает другой день.
+        - null
+    - read: Элиф подтверждает согласованный план всей команды. Теннис Матео и Даны не нужно
+        переносить в эту запись.
+      evidence:
+        - E: Am Sonntag um halb sechs an der Kiellinie. Wir wollen zusammen fotografieren.
+          ru: В воскресенье в половине шестого на Kiellinie. Мы хотим вместе фотографировать.
+      question: Какая запись должна остаться для общей встречи?
+      options:
+        - Воскресенье 17:30 · Kiellinie · фотографии
+        - Воскресенье 12:00 · парус для всех
+        - Суббота 17:30 · плавание
+      answer: 0
+      right: В записи совпадают день, время, место и действие. Умения и старые предложения хранятся
+        отдельно от подтверждённого плана.
+      wrong:
+        - null
+        - 12:00 — теннис двоих, парус не подтверждён.
+        - Суббота не согласована; плавание не выбрано.
+  ending: "Журнал исправлен: предложения, умения и подтверждения теперь разделены. Именно их
+    смешивали неверные листки. Встреча команды остаётся в воскресенье в 17:30. После прогулки
+    гости обсуждают, где остановиться и как устроено жильё в Киле."
