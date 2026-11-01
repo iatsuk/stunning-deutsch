@@ -303,15 +303,53 @@ export function StoryPage() {
                 <div className="kicker">Детективная история · A1</div>
                 <h1>Дело о пропавшем Moin</h1>
               </div>
-              <button
-                type="button"
-                className="moin-notebook-button"
-                aria-expanded={notebook}
-                onClick={() => setNotebook(!notebook)}
-              >
-                Блокнот · {plural(clues.length, ["улика", "улики", "улик"])}
-              </button>
+              <div className="moin-heading-tools">
+                <button
+                  type="button"
+                  className="moin-notebook-button"
+                  aria-expanded={notebook}
+                  onClick={() => setNotebook(!notebook)}
+                >
+                  Блокнот · {plural(clues.length, ["улика", "улики", "улик"])}
+                </button>
+                <button
+                  type="button"
+                  className="moin-reset-button"
+                  aria-expanded={resetPrompt}
+                  onClick={() => setResetPrompt(!resetPrompt)}
+                >
+                  Сброс
+                </button>
+              </div>
             </header>
+            {resetPrompt && (
+              <div className="moin-reset" role="group" aria-label="Сброс игры">
+                <p>
+                  Начать дело с первого шага? Прогресс игры, ошибки и черновики
+                  удалятся, прогресс уроков сохранится.
+                </p>
+                <button
+                  type="button"
+                  className="primary"
+                  onClick={() => {
+                    stopAudio();
+                    setSave(normalizeSave(null, beats));
+                    setPhrase(null);
+                    setResetPrompt(false);
+                    setNotebook(false);
+                  }}
+                >
+                  Да, сбросить
+                </button>
+                <button
+                  type="button"
+                  className="link-button"
+                  onClick={() => setResetPrompt(false)}
+                >
+                  Отмена
+                </button>
+              </div>
+            )}
             <div className="moin-progress">
               <span>
                 {save.completed} / {beats.length} действий
@@ -367,35 +405,6 @@ export function StoryPage() {
                 <p className="moin-route-note">
                   Язык помогает расследовать. Улики открываются по ходу истории.
                 </p>
-                <button
-                  type="button"
-                  className="link-button"
-                  onClick={() => setResetPrompt(!resetPrompt)}
-                >
-                  Начать дело заново
-                </button>
-                {resetPrompt && (
-                  <div className="moin-reset">
-                    <p>
-                      Сбросить только эту историю? Прогресс уроков сохранится.
-                    </p>
-                    <button
-                      type="button"
-                      onClick={() => {
-                        stopAudio();
-                        setSave(normalizeSave(null, beats));
-                        setPhrase(null);
-                        setResetPrompt(false);
-                        setNotebook(false);
-                      }}
-                    >
-                      Да, начать заново
-                    </button>
-                    <button type="button" onClick={() => setResetPrompt(false)}>
-                      Отмена
-                    </button>
-                  </div>
-                )}
               </aside>
               <section
                 className="moin-scene"

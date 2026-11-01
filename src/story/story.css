@@ -91,6 +91,23 @@
   letter-spacing: -0.03em;
   margin: 8px 0;
 }
+.moin-heading-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.moin-reset-button {
+  min-height: 42px;
+  padding: 10px 17px;
+  border: 1px solid var(--line-strong);
+  border-radius: 6px;
+  background: transparent;
+  font-size: 14px;
+  cursor: pointer;
+}
+.moin-reset-button:hover {
+  border-color: var(--text);
+}
 .moin-notebook-button {
   padding: 10px 17px;
   border: 1px solid var(--accent-line);
@@ -1179,19 +1196,21 @@
   font-size: 15px;
 }
 .moin-reset {
-  padding: 12px;
-  background: var(--panel-2);
-  font-size: 12px;
-  margin-top: 12px;
-}
-.moin-reset button {
-  display: block;
-  margin: 8px 0;
-  padding: 6px;
-  background: var(--bg);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 18px;
+  margin-bottom: 20px;
+  padding: 14px 16px;
   border: 1px solid var(--line-strong);
-  cursor: pointer;
-  font-size: 12px;
+  border-radius: 6px;
+  background: var(--panel-2);
+}
+.moin-reset p {
+  flex-basis: 100%;
+  margin: 0;
+  font-size: 14px;
+  color: var(--muted);
 }
 .moin-sr {
   position: absolute;
@@ -1325,7 +1344,7 @@
   .moin-game-heading {
     display: block;
   }
-  .moin-notebook-button {
+  .moin-heading-tools {
     margin-top: 12px;
   }
   .moin-route ol {
@@ -1400,8 +1419,5 @@
   }
   .moin-turn-actions .primary {
     width: 100%;
-  }
-  .moin-route .link-button {
-    font-size: 12px;
   }
 }
