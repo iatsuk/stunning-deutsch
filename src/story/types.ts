@@ -1,5 +1,12 @@
 export type Phrase = { ru: string; de: string; note: string };
 export type Option = { id: string; text: string; why: string };
+export type ChatTurn = {
+  say: string;
+  ru: string;
+  options: Option[];
+  answer: string;
+};
+export type Move = "links" | "geradeaus" | "rechts";
 export type Challenge =
   | { kind: "choice"; options: Option[]; answer: string }
   | { kind: "order"; tiles: string[]; answer: string[]; also?: string[][] }
@@ -14,7 +21,44 @@ export type Challenge =
       items: { id: string; text: string; max: number }[];
       answer: Record<string, number>;
     }
-  | { kind: "code"; length: number; answer: string };
+  | { kind: "code"; length: number; answer: string }
+  | { kind: "chat"; who: string; turns: ChatTurn[] }
+  | {
+      kind: "verdict";
+      labels: [string, string];
+      items: { id: string; text: string; answer: boolean; why: string }[];
+    }
+  | { kind: "gaps"; parts: (string | null)[]; bank: string[]; answer: string[] }
+  | {
+      kind: "sort";
+      bins: { id: string; text: string }[];
+      cards: { id: string; text: string; icon?: string }[];
+      answer: Record<string, string>;
+    }
+  | { kind: "spot"; title: string; lines: string[][]; answer: string[] }
+  | { kind: "memory"; pairs: { id: string; de: string; ru: string }[] }
+  | {
+      kind: "clock";
+      start: string;
+      step: number;
+      answer: string;
+      traps: Record<string, string>;
+    }
+  | {
+      kind: "route";
+      width: number;
+      height: number;
+      start: { x: number; y: number; heading: number };
+      places: Record<string, string>;
+      goal: string;
+      moves: Move[];
+    }
+  | { kind: "coins"; coins: number[]; answer: number }
+  | {
+      kind: "calendar";
+      months: { name: string; days: number }[];
+      answer: string;
+    };
 export type Beat = {
   id: string;
   title: string;

@@ -492,7 +492,7 @@ function AttemptPage({ data, level }: { data: Assessment; level: Level }) {
                 <h3>Что повторить</h3>
                 <ul>
                   {links.map((l) => (
-                    <li key={l.topic}>
+                    <li key={l.label}>
                       <a href={`#/${l.level}/${l.topic}`}>{l.label}</a>
                     </li>
                   ))}

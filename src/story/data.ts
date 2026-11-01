@@ -1,4 +1,4 @@
-import type { Episode, Phrase, Challenge } from "./types.ts";
+import type { ChatTurn, Episode, Phrase, Challenge } from "./types.ts";
 const choice = (
   answer: string,
   options: [string, string, string][],
@@ -21,6 +21,81 @@ const pairs = (
   left: left.map(([id, text]) => ({ id, text })),
   right: right.map(([id, text]) => ({ id, text })),
   answer,
+});
+
+const verdict = (
+  labels: [string, string],
+  items: [string, boolean, string][],
+): Challenge => ({
+  kind: "verdict",
+  labels,
+  items: items.map(([text, answer, why], i) => ({
+    id: String(i),
+    text,
+    answer,
+    why,
+  })),
+});
+const turn = (
+  say: string,
+  ru: string,
+  answer: string,
+  options: [string, string, string][],
+): ChatTurn => ({
+  say,
+  ru,
+  answer,
+  options: options.map(([id, text, why]) => ({ id, text, why })),
+});
+const chat = (who: string, turns: ChatTurn[]): Challenge => ({
+  kind: "chat",
+  who,
+  turns,
+});
+/** Пропуск в тексте записки обозначается ___. */
+const gaps = (text: string, bank: string[], answer: string[]): Challenge => ({
+  kind: "gaps",
+  parts: text.split("___").flatMap((part, i) => (i ? [null, part] : [part])),
+  bank,
+  answer,
+});
+const sort = (
+  bins: [string, string][],
+  cards: [string, string, string, string?][],
+): Challenge => ({
+  kind: "sort",
+  bins: bins.map(([id, text]) => ({ id, text })),
+  cards: cards.map(([id, text, , icon]) => ({
+    id,
+    text,
+    ...(icon ? { icon } : {}),
+  })),
+  answer: Object.fromEntries(cards.map(([id, , bin]) => [id, bin])),
+});
+/** Строки документа делятся на нажимаемые части знаком |; ответ — текст нужных частей. */
+const spot = (title: string, text: string[], answer: string[]): Challenge => {
+  const lines = text.map((line) => line.split("|"));
+  const id = (token: string) => {
+    const line = lines.findIndex((l) => l.includes(token));
+    return `${line}:${lines[line].indexOf(token)}`;
+  };
+  return { kind: "spot", title, lines, answer: answer.map(id) };
+};
+/** Пары строятся из уже проверенных единиц; ru задаёт форму для карточки. */
+const memory = (ids: string[], ru: Record<string, string> = {}): Challenge => ({
+  kind: "memory",
+  pairs: ids.map((id) => ({
+    id,
+    de: phrases[id].de,
+    ru: ru[id] ?? phrases[id].ru,
+  })),
+});
+const clock = (answer: string, traps: Record<string, string>): Challenge => ({
+  kind: "clock",
+  start: "12:00",
+  step: 15,
+  answer,
+  traps,
 });
 
 // Each replacement is an authored grammatical unit, never a dictionary substitution.
@@ -336,20 +411,27 @@ export const episodes: Episode[] = [
           text: "Ich komme aus Argentinien, aus Buenos Aires. Und du?",
           ru: "Я из Аргентины, из Буэнос-Айреса. А ты?",
         },
-        prompt: "Что Матео сообщил о себе?",
-        challenge: choice("origin", [
+        prompt: "Что Матео сообщил о себе? Поставьте штамп на каждой записи.",
+        challenge: verdict(
+          ["Сказал", "Не сказал"],
           [
-            "live",
-            "Он живёт в Буэнос-Айресе.",
-            "kommen aus сообщает происхождение. Это не адрес проживания.",
+            [
+              "Матео родом из Аргентины.",
+              true,
+              "В сообщении прямо сказано: Ich komme aus Argentinien.",
+            ],
+            [
+              "Матео живёт в Буэнос-Айресе.",
+              false,
+              "kommen aus сообщает происхождение. Это не адрес проживания.",
+            ],
+            [
+              "Матео работает в Аргентине.",
+              false,
+              "О работе здесь ничего нет.",
+            ],
           ],
-          [
-            "origin",
-            "Он родом из Аргентины.",
-            "Да: Ich komme aus Argentinien.",
-          ],
-          ["work", "Он работает в Аргентине.", "О работе здесь ничего нет."],
-        ]),
+        ),
         hint: "kommen aus — быть родом из; wohnen in — жить в.",
         success:
           "Страна записана. Альби пока нет, зато у блокнота международный состав.",
@@ -583,20 +665,12 @@ export const episodes: Episode[] = [
           title: "Greta",
           lines: ["Das ist Nils. Das ist seine Tasche. Meine Tasche ist blau."],
         },
-        prompt: "Кому принадлежит красная сумка на фото?",
-        challenge: choice("nils", [
-          [
-            "greta",
-            "Грете",
-            "Грета говорит Meine Tasche ist blau: её сумка синяя.",
-          ],
-          [
-            "nils",
-            "Нильсу",
-            "seine Tasche указывает на Нильса; -e согласуется с Tasche.",
-          ],
-          ["mateo", "Матео", "Матео здесь только помогает читать."],
-        ]),
+        prompt: "Подпишите фото: чья сумка красная, а чья синяя?",
+        challenge: gaps(
+          "Das ist Nils. ___ Tasche ist rot.\nDas ist Greta. ___ Tasche ist ___.",
+          ["Seine", "Ihre", "Sein", "blau", "rot"],
+          ["Seine", "Ihre", "blau"],
+        ),
         hint: "sein- — его; ihr- — её. Окончание зависит от предмета, а не пола владельца.",
         success: "Красная сумка — Нильса. Это ещё не делает его похитителем.",
       },
@@ -606,16 +680,23 @@ export const episodes: Episode[] = [
         story: [
           "Вы показываете Матео фотографию. Он отвечает: «{nobag}». Его собственный рюкзак пахнет хлебом, но запах не числится удостоверением личности.",
         ],
-        prompt: "Как понять ответ Матео?",
-        challenge: choice("notmine", [
+        prompt: "Как понять ответ Матео? Поставьте штамп на каждой записи.",
+        challenge: verdict(
+          ["Верно", "Неверно"],
           [
-            "none",
-            "У него вообще нет сумки.",
-            "nicht meine отрицает именно принадлежность. Свою сумку иметь можно.",
+            [
+              "Эта сумка не его.",
+              true,
+              "В ответе прямо сказано: Das ist nicht meine Tasche.",
+            ],
+            [
+              "У него вообще нет сумки.",
+              false,
+              "nicht meine отрицает именно принадлежность. Свою сумку иметь можно.",
+            ],
+            ["Его сумка пустая.", false, "О содержимом ответа нет."],
           ],
-          ["notmine", "Эта сумка не его.", "Да: Das ist nicht meine Tasche."],
-          ["empty", "Его сумка пустая.", "О содержимом ответа нет."],
-        ]),
+        ),
         hint: "nicht meine Tasche — не моя сумка; keine Tasche — никакой сумки / нет сумки.",
         success:
           "Список владельцев стал короче. Никого не обвиняем по запаху хлеба.",
@@ -633,21 +714,20 @@ export const episodes: Episode[] = [
             "Lucía und Diego haben eine Tochter. Sie heißt Sofia.",
           ],
         },
-        prompt: "Какая карточка соответствует списку?",
-        challenge: choice("sofia", [
-          ["two", "У Греты и Нильса двое детей.", "keine Kinder — детей нет."],
+        prompt: "Разложите карточки гостей: что относится к кому?",
+        challenge: sort(
           [
-            "sofia",
-            "София — дочь Лусии и Диего.",
-            "eine Tochter — одна дочь; её зовут Sofia.",
+            ["gn", "Greta und Nils"],
+            ["ld", "Lucía und Diego"],
           ],
           [
-            "son",
-            "София — сын Матео.",
-            "Tochter — дочь, родители названы в списке.",
+            ["none", "keine Kinder", "gn"],
+            ["siblings", "Geschwister", "gn"],
+            ["daughter", "eine Tochter", "ld"],
+            ["sofia", "Sofia", "ld"],
           ],
-        ]),
-        hint: "Kinder — множественное число от das Kind; Tochter — дочь.",
+        ),
+        hint: "keine Kinder — детей нет; eine Tochter — одна дочь; Geschwister — брат и сестра.",
         success:
           "Карточки готовы. София пока единственная участница, которой можно простить молчание весь вечер.",
       },
@@ -700,11 +780,37 @@ export const episodes: Episode[] = [
         story: [
           "В кафе Матео приветствует вас: «{moin}!» Грета вспоминает заказ: «{nocoffee} {tea}». Запах {coffee} делает показания особенно убедительными.",
         ],
-        prompt: "Что принести Грете?",
-        challenge: choice("tea", [
-          ["coffee", "Einen Kaffee", "keinen Kaffee — кофе она не хочет."],
-          ["tea", "Einen Tee", "einen Tee — мужской род в Akkusativ."],
-          ["beer", "Ein Bier", "Пиво в заказе не упомянуто."],
+        prompt: "Передайте официанту заказ Греты.",
+        challenge: chat("Kellner", [
+          turn("Moin! Was möchte Greta?", "Привет! Что хочет Грета?", "tea", [
+            ["tea", "Einen Tee, bitte.", ""],
+            [
+              "coffee",
+              "Einen Kaffee, bitte.",
+              "«Keinen Kaffee!» — напоминает Грета: кофе она не хочет.",
+            ],
+            [
+              "beer",
+              "Ein Bier, bitte.",
+              "Официант поднимает брови: пиво в заказе не упомянуто.",
+            ],
+          ]),
+          turn("Und einen Kaffee?", "А кофе?", "no", [
+            [
+              "yes",
+              "Ja, einen Kaffee, bitte.",
+              "Грета качает головой: keinen Kaffee.",
+            ],
+            ["no", "Nein, keinen Kaffee, danke.", ""],
+          ]),
+          turn("Noch etwas?", "Что-нибудь ещё?", "thanks", [
+            [
+              "kiel",
+              "Ich wohne in Kiel.",
+              "Официант спрашивал о заказе, а не об адресе.",
+            ],
+            ["thanks", "Nein, danke.", ""],
+          ]),
         ]),
         hint: "möchte — хотел(а) бы; keinen — отрицание существительного мужского рода.",
         success: "Чай доставлен. Свидетель сотрудничает добровольно.",
@@ -735,17 +841,16 @@ export const episodes: Episode[] = [
       },
       {
         id: "04-request",
-        title: "Слова для официанта",
+        title: "Карточки меню",
         story: [
-          "Грета снова говорит: «{tea}» Матео просит вас передать просьбу целиком.",
+          "Грета снова говорит: «{tea}» Матео спешит с подносом, задевает стол — и карточки меню разлетаются рубашкой вверх. Чайка за окном делает вид, что ни при чём.",
         ],
-        prompt: "Соберите «Я хочу чай».",
-        challenge: order(
-          ["Ich", "möchte", "einen Tee."],
-          ["einen Tee.", "Ich", "möchte"],
-        ),
-        hint: "Подлежащее → möchte → дополнение. der Tee становится einen Tee.",
-        success: "Ich möchte einen Tee. Вежливо, понятно, без допросной лампы.",
+        prompt: "Откройте пары: немецкое выражение и его перевод.",
+        challenge: memory(["water", "coffee", "bread", "tea", "nocoffee"], {
+          water: "вода",
+        }),
+        hint: "Запоминайте, где лежат карточки. Ошибка ничего не стоит: неверная пара просто закроется при следующем нажатии.",
+        success: "Меню снова на столе. Заказ понятен без допросной лампы.",
       },
       {
         id: "04-receipt",
@@ -753,29 +858,17 @@ export const episodes: Episode[] = [
         story: [
           "Нильс произносит: «{bill}» Счёт оказывается полезнее салфетки с портретом подозрительной чайки.",
         ],
-        source: {
-          title: "Учебный чек · стол 4",
-          lines: [
+        prompt: "Нажмите на две строки: итог заказа и запись о сумке.",
+        challenge: spot(
+          "Учебный чек · стол 4",
+          [
             "2 Tee — 5,00 €",
             "1 Brot — 3,50 €",
             "Gesamt: 8,50 €",
             "Keine Tasche im Café.",
           ],
-        },
-        prompt: "Что подтверждает чек вместе с записью сотрудника?",
-        challenge: choice("paid", [
-          [
-            "paid",
-            "Заказ на 8,50 €; сумки в кафе нет.",
-            "Gesamt — итог; Keine Tasche im Café — сумки в кафе нет.",
-          ],
-          [
-            "stolen",
-            "Официант украл сумку.",
-            "Запись об отсутствии сумки не доказывает кражу.",
-          ],
-          ["coffee", "Заказали два кофе.", "В чеке Tee, а не Kaffee."],
-        ]),
+          ["Gesamt: 8,50 €", "Keine Tasche im Café."],
+        ),
         hint: "Gesamt — всего; keine Tasche — нет сумки.",
         success:
           "Вы сохраняете чек. Он подтверждает остановку, но не виновника.",
@@ -837,13 +930,13 @@ export const episodes: Episode[] = [
             "Das T-Shirt: 8,50 €",
           ],
         },
-        prompt: "Какой товар стоит 18,50 €?",
-        challenge: choice("p", [
-          ["j", "Die Jacke", "Куртка стоит 38,50 €."],
-          ["t", "Das T-Shirt", "Футболка стоит 8,50 €."],
-          ["p", "Der Pullover", "Да: свитер стоит 18,50 €."],
-        ]),
-        hint: "Сравните товар и его собственный ценник.",
+        prompt: "Продиктуйте цену свитера словами.",
+        challenge: gaps(
+          "Der Pullover kostet ___ Euro ___.",
+          ["achtzehn", "achtzig", "fünfzig", "fünfzehn"],
+          ["achtzehn", "fünfzig"],
+        ),
+        hint: "Найдите ценник свитера. achtzehn — 18, achtzig — 80; fünfzig — 50, fünfzehn — 15.",
         success:
           "18,50 €. Это цена свитера, а не взнос в фонд поиска табличек.",
       },
@@ -860,12 +953,12 @@ export const episodes: Episode[] = [
             "Greta bezahlt zwanzig Euro.",
           ],
         },
-        prompt: "Сколько сдачи должна получить Грета?",
-        challenge: choice("150", [
-          ["250", "2,50 €", "20 − 18,50 = 1,50, а не 2,50."],
-          ["150", "1,50 €", "Верно: ein Euro fünfzig."],
-          ["1850", "18,50 €", "Это цена покупки, не сдача."],
-        ]),
+        prompt: "Выдайте Грете сдачу монетами.",
+        challenge: {
+          kind: "coins",
+          coins: [200, 100, 50, 20, 10],
+          answer: 150,
+        },
         hint: "achtzehn Euro fünfzig = 18,50; zwanzig = 20.",
         success:
           "Сдача правильная. Продавец благодарен, что вы расследуете не всю бухгалтерию.",
@@ -882,11 +975,35 @@ export const episodes: Episode[] = [
             "Ich brauche Größe M. Größe L ist zu groß. Der Pullover in M ist blau.",
           ],
         },
-        prompt: "Какой свитер нужен Грете?",
-        challenge: choice("m", [
-          ["l", "Красный, L", "L ist zu groß — L слишком большой."],
-          ["m", "Синий, M", "Нужен M; свитер этого размера синий."],
-          ["s", "Синий, S", "Размер S никто не просил."],
+        prompt: "Ответьте продавцу за Грету.",
+        challenge: chat("Verkäufer", [
+          turn(
+            "Welche Größe braucht Greta?",
+            "Какой размер нужен Грете?",
+            "m",
+            [
+              [
+                "l",
+                "Größe L.",
+                "Продавец приносит L, но Грета сказала: L ist zu groß.",
+              ],
+              ["m", "Größe M.", ""],
+              ["s", "Größe S.", "Размер S никто не просил."],
+            ],
+          ),
+          turn(
+            "Gut. Und welche Farbe hat der Pullover in M?",
+            "Хорошо. А какого цвета свитер в размере M?",
+            "blue",
+            [
+              [
+                "red",
+                "Er ist rot.",
+                "Красная здесь только сумка: Der Pullover in M ist blau.",
+              ],
+              ["blue", "Er ist blau.", ""],
+            ],
+          ),
         ]),
         hint: "brauchen — нуждаться; zu groß — слишком большой.",
         success:
@@ -898,10 +1015,15 @@ export const episodes: Episode[] = [
         story: [
           "Нильс кивает на der Pullover. Грета: «{him}» Местоимение короткое, а покупка уже решена.",
         ],
-        prompt: "Соберите ответ «Я беру его» о свитере.",
-        challenge: order(["Ich", "nehme", "ihn."], ["ihn.", "nehme", "Ich"]),
-        hint: "der Pullover → Akkusativ ihn. Не sie и не es.",
-        success: "Ich nehme ihn. Продавец упаковывает покупку.",
+        prompt: "Допишите ответы Греты: замените товары местоимениями.",
+        challenge: gaps(
+          "Der Pullover? Ich nehme ___.\nDie Jacke? Ich nehme ___ nicht.\nDas T-Shirt? Ich nehme ___ auch nicht.",
+          ["ihn", "sie", "es", "er"],
+          ["ihn", "sie", "es"],
+        ),
+        hint: "В Akkusativ: der Pullover → ihn, die Jacke → sie, das T-Shirt → es.",
+        success:
+          "Ich nehme ihn. Продавец упаковывает покупку, а куртка и футболка остаются висеть.",
       },
       {
         id: "05-bag",
@@ -963,24 +1085,11 @@ export const episodes: Episode[] = [
           text: "Am Sonntag um halb sechs am Nachmittag. Nicht um halb sieben.",
           ru: "В воскресенье в половине шестого дня. Не в половине седьмого.",
         },
-        prompt: "На какое время поставить напоминание?",
-        challenge: choice("1730", [
-          [
-            "1830",
-            "Воскресенье 18:30",
-            "halb sieben — 18:30, это время прямо отрицается.",
-          ],
-          [
-            "0530",
-            "Воскресенье 05:30",
-            "am Nachmittag — после полудня; не раннее утро.",
-          ],
-          [
-            "1730",
-            "Воскресенье 17:30",
-            "halb sechs — половина шестого; после полудня это 17:30.",
-          ],
-        ]),
+        prompt: "Поставьте часы на время встречи.",
+        challenge: clock("17:30", {
+          "18:30": "halb sieben — 18:30, это время прямо отрицается.",
+          "05:30": "am Nachmittag — после полудня; не раннее утро.",
+        }),
         hint: "halb называет следующий час: halb sechs = 5:30; Nachmittag уточняет 17:30.",
         success:
           "17:30. Чайку можно было бы пригласить к 05:30, но она и так приходит без приглашения.",
@@ -1033,17 +1142,15 @@ export const episodes: Episode[] = [
       },
       {
         id: "06-call",
-        title: "Подтвердить звонок",
+        title: "Карточки расписания",
         story: [
-          "«{call}», — обещает Нильс Йенсену. В записке край потерялся вместе с последним словом.",
+          "«{call}», — обещает Нильс Йенсену и убегает за зарядкой. Элиф тем временем роняет карточки расписания, и они ложатся на стол рубашкой вверх.",
         ],
-        prompt: "Верните обещанию правильный порядок.",
-        challenge: order(
-          ["Ich", "rufe", "dich", "an."],
-          ["dich", "an.", "Ich", "rufe"],
-        ),
-        hint: "anrufen — отделяемый глагол: ich rufe … an.",
-        success: "Звонок восстановлен. Теперь можно восстанавливать события.",
+        prompt: "Откройте пары: немецкое выражение и его перевод.",
+        challenge: memory(["have", "half", "sunday", "starts", "call"]),
+        hint: "Запоминайте, где лежат карточки. Ошибка ничего не стоит: неверная пара просто закроется при следующем нажатии.",
+        success:
+          "Карточки снова по порядку. Теперь можно восстанавливать события.",
       },
       {
         id: "06-log",
@@ -1051,32 +1158,20 @@ export const episodes: Episode[] = [
         story: [
           "{starts} Гости приходят {half}; Нильс оставляет сумку у двери и отходит за чаем.",
         ],
-        source: {
-          title: "Журнал клуба · воскресенье",
-          lines: [
+        prompt:
+          "Нажмите на две записи: когда началось и когда закончилось время, пока обе сумки были в клубе.",
+        challenge: spot(
+          "Журнал клуба · воскресенье",
+          [
             "17:30 Nils kommt mit einer roten Tasche.",
             "17:35 Jensen kommt mit einer roten Tasche.",
             "17:45 Jensen geht. Nils trinkt Tee.",
           ],
-        },
-        prompt: "Какой промежуток нужно проверить?",
-        challenge: choice("gap", [
           [
-            "morning",
-            "С 05:30 до 06:00",
-            "Журнал относится к вечерней встрече.",
+            "17:35 Jensen kommt mit einer roten Tasche.",
+            "17:45 Jensen geht. Nils trinkt Tee.",
           ],
-          [
-            "gap",
-            "С 17:35 до 17:45: обе сумки были в клубе.",
-            "В это время оба владельца и похожие сумки были в одном месте.",
-          ],
-          [
-            "night",
-            "После 23:00 на работе Матео",
-            "В воскресенье Матео свободен; журнал о другом времени.",
-          ],
-        ]),
+        ),
         hint: "Найдите пересечение времени присутствия Нильса и Йенсена.",
         success:
           "Пятнадцать минут сузились до десяти. Дело движется быстрее очереди за чаем.",
@@ -1107,16 +1202,27 @@ export const episodes: Episode[] = [
             "Hauke: Ich komme um 17:30 zum Club.",
           ],
         },
-        prompt: "Кто уже прямо подтвердил приход к 17:30?",
-        challenge: choice("h", [
+        prompt: "Что команда подтвердила? Поставьте штамп на каждой записи.",
+        challenge: verdict(
+          ["Точно", "Пока неясно"],
           [
-            "both",
-            "Оба",
-            "kann выражает возможность; Элиф пока не подтвердила время.",
+            [
+              "Хауке придёт к клубу в 17:30.",
+              true,
+              "Ich komme um 17:30 — прямое сообщение о плане.",
+            ],
+            [
+              "Элиф придёт к клубу в 17:30.",
+              false,
+              "kann выражает возможность; Элиф пока не подтвердила время.",
+            ],
+            [
+              "Элиф сначала хочет в музей.",
+              true,
+              "В чате прямо сказано: Ich möchte zuerst ins Museum.",
+            ],
           ],
-          ["h", "Хауке", "Ich komme um 17:30 — прямое сообщение о плане."],
-          ["e", "Только Элиф", "Элиф сказала kann и сначала хочет в музей."],
-        ]),
+        ),
         hint: "kann kommen — могу прийти; komme um… — приду в указанное время.",
         success: "В план записан Хауке. За Элиф решение не принимаем.",
       },
@@ -1173,29 +1279,39 @@ export const episodes: Episode[] = [
         story: [
           "Нильс пишет: «{cannot}» Приглашение на прогулку не пропало — нужно предложить другое время.",
         ],
-        source: {
-          title: "Nils",
-          lines: [
+        prompt: "Договоритесь с Нильсом о времени.",
+        challenge: chat("Nils", [
+          turn(
             "Am Samstag kann ich nicht. Am Sonntag habe ich ab 16 Uhr Zeit.",
-          ],
-        },
-        prompt: "Какое приглашение подходит?",
-        challenge: choice("sun", [
-          [
-            "sat",
-            "Kommst du am Samstag um 15 Uhr?",
-            "Нильс не может в субботу.",
-          ],
-          [
-            "early",
-            "Kommst du am Sonntag um 14 Uhr?",
-            "В воскресенье он свободен только с 16:00.",
-          ],
-          [
+            "В субботу я не могу. В воскресенье у меня есть время с 16:00.",
             "sun",
-            "Kommst du am Sonntag um 17 Uhr?",
-            "Воскресенье после 16:00 соответствует сообщению.",
-          ],
+            [
+              [
+                "sat",
+                "Kommst du am Samstag um 15 Uhr?",
+                "«Am Samstag kann ich nicht», — напоминает Нильс.",
+              ],
+              [
+                "early",
+                "Kommst du am Sonntag um 14 Uhr?",
+                "В воскресенье он свободен только с 16:00.",
+              ],
+              ["sun", "Kommst du am Sonntag um 17 Uhr?", ""],
+            ],
+          ),
+          turn(
+            "Ja, um 17 Uhr kann ich kommen!",
+            "Да, в 17 часов я могу прийти!",
+            "bye",
+            [
+              [
+                "wrong",
+                "Gut, bis Samstag!",
+                "Договорились на воскресенье, а не на субботу.",
+              ],
+              ["bye", "Gut, bis Sonntag!", ""],
+            ],
+          ),
         ]),
         hint: "ab 16 Uhr — начиная с 16:00.",
         success:
@@ -1263,18 +1379,17 @@ export const episodes: Episode[] = [
           ],
         },
         prompt: "Разложите предметы по местам.",
-        challenge: pairs(
-          [
-            ["k", "Schlüssel"],
-            ["t", "Tasche"],
-            ["b", "Brot"],
-          ],
+        challenge: sort(
           [
             ["table", "auf dem Tisch"],
             ["kitchen", "in der Küche"],
             ["bag", "in der Tasche"],
           ],
-          { k: "table", t: "kitchen", b: "bag" },
+          [
+            ["k", "der Schlüssel", "table", "🔑"],
+            ["t", "die Tasche", "kitchen", "👜"],
+            ["b", "das Brot", "bag", "🥖"],
+          ],
         ),
         hint: "Вопрос «где?» → Dativ: auf dem Tisch, in der Küche, in der Tasche.",
         success:
@@ -1286,25 +1401,13 @@ export const episodes: Episode[] = [
         story: [
           "Вы видите: «Das Brot ist {inbag}». Слово {bag} уже знакомо, но артикль меняется вместе с ролью в предложении.",
         ],
-        prompt: "Выберите грамматически верное «Хлеб в сумке».",
-        challenge: choice("dat", [
-          [
-            "nom",
-            "Das Brot ist in die Tasche.",
-            "Для места «где?» нужен Dativ: in der Tasche.",
-          ],
-          [
-            "dat",
-            "Das Brot ist in der Tasche.",
-            "Да: die Tasche → in der Tasche.",
-          ],
-          [
-            "masc",
-            "Das Brot ist in dem Tasche.",
-            "Tasche женского рода; в Dativ der, не dem.",
-          ],
-        ]),
-        hint: "Заменяем целое «в сумке» на in der Tasche, а не отдельное «сумке» на Tasche.",
+        prompt: "Допишите записку без ошибок в падеже.",
+        challenge: gaps(
+          "Das Brot ist ___ Tasche.\nDer Schlüssel liegt ___ Tisch.",
+          ["in der", "in die", "in dem", "auf dem", "auf den"],
+          ["in der", "auf dem"],
+        ),
+        hint: "Где? Значит Dativ: die Tasche → in der Tasche, der Tisch → auf dem Tisch. Заменяем целое «в сумке», а не отдельное слово.",
         success:
           "Падеж сохранился. Смешанный рассказ не должен учить сломанному немецкому.",
       },
@@ -1343,18 +1446,24 @@ export const episodes: Episode[] = [
           lines: [
             "die Küche + der Schrank = der Küchenschrank",
             "das Haus + die Tür = die Haustür",
+            "schlafen + das Zimmer = das Schlafzimmer",
           ],
         },
-        prompt: "Какой артикль нужен у Küchenschrank?",
-        challenge: choice("der", [
+        prompt: "Разложите слова по артиклям.",
+        challenge: sort(
           [
-            "die",
-            "die",
-            "Первое слово Küche не определяет род сложного слова.",
+            ["der", "der"],
+            ["die", "die"],
+            ["das", "das"],
           ],
-          ["das", "das", "Schrank мужского рода, не среднего."],
-          ["der", "der", "Род определяется последней частью: der Schrank."],
-        ]),
+          [
+            ["schrank", "Küchenschrank", "der"],
+            ["kuehl", "Kühlschrank", "der"],
+            ["haustuer", "Haustür", "die"],
+            ["kuechentuer", "Küchentür", "die"],
+            ["wohnzimmer", "Wohnzimmer", "das"],
+          ],
+        ),
         hint: "В сложном существительном смотрите на последнее существительное.",
         success: "Шкаф оказался мужского рода. Это не улика против Йенсена.",
       },
@@ -1364,30 +1473,16 @@ export const episodes: Episode[] = [
         story: [
           "Вы открываете красную сумку в гостевой комнате: {inbag} только {bread}. {table} лежит ещё записка.",
         ],
-        source: {
-          title: "Jensen",
-          lines: [
-            "Die Tasche mit Brot bleibt hier. Die andere Tasche ist im Bus. Ich bin zu Hause.",
-          ],
-        },
-        prompt: "Где искать вторую сумку?",
-        challenge: choice("bus", [
+        prompt: "Где искать вторую сумку? Нажмите на нужные слова в записке.",
+        challenge: spot(
+          "Jensen",
           [
-            "kitchen",
-            "На кухне",
-            "Hier остаётся сумка с хлебом; другая — im Bus.",
+            "Die Tasche mit Brot|bleibt|hier.",
+            "Die andere Tasche|ist|im Bus.",
+            "Ich|bin|zu Hause.",
           ],
-          [
-            "bus",
-            "В автобусе",
-            "Die andere Tasche ist im Bus — вторая сумка в автобусе.",
-          ],
-          [
-            "home",
-            "У Йенсена дома",
-            "Zu Hause относится к Йенсену, не к сумке.",
-          ],
-        ]),
+          ["im Bus."],
+        ),
         hint: "Отслеживайте подлежащее: Tasche и Ich — разные объекты.",
         success:
           "Хлеб остаётся в комнате. Команда отправляется по автобусному следу.",
@@ -1455,21 +1550,26 @@ export const episodes: Episode[] = [
             "Gehen Sie geradeaus. Dann gehen Sie links. Das Café ist rechts.",
           ],
         },
-        prompt: "Что делать сразу после движения прямо?",
-        challenge: choice("left", [
-          [
-            "right",
-            "Повернуть направо",
-            "Справа находится кафе; сначала указано links.",
-          ],
-          [
-            "left",
-            "Пойти налево",
-            "Dann gehen Sie links — затем идите налево.",
-          ],
-          ["back", "Вернуться к клубу", "Такой инструкции нет."],
-        ]),
-        hint: "geradeaus — прямо; links — налево/слева; rechts — направо/справа.",
+        prompt:
+          "Дойдите до кафе по указаниям водителя. Названия мест видны, только когда вы рядом.",
+        challenge: {
+          kind: "route",
+          width: 3,
+          height: 3,
+          start: { x: 1, y: 2, heading: 0 },
+          places: {
+            "1,2": "die Haltestelle",
+            "0,0": "das Café Nordlicht",
+            "1,0": "der Bahnhof",
+            "2,0": "das Museum",
+            "2,1": "die Apotheke",
+            "0,2": "der Club",
+            "2,2": "die Post",
+          },
+          goal: "0,0",
+          moves: ["geradeaus", "links", "rechts"],
+        },
+        hint: "geradeaus — прямо; links — налево; rechts — направо. Поворот зависит от того, куда вы идёте, а не от верха схемы.",
         success:
           "Вы находите кафе. Даже у детектива есть право не кружить по кварталу.",
       },
@@ -1479,16 +1579,20 @@ export const episodes: Episode[] = [
         story: [
           "Йенсен написал: «Ich bin {home}». Вы уточняете, движется ли он куда-нибудь.",
         ],
-        prompt: "Что означает сообщение Йенсена?",
-        challenge: choice("at", [
+        prompt: "Йенсен дома или идёт домой? Разложите выражения.",
+        challenge: sort(
           [
-            "to",
-            "Он сейчас едет домой.",
-            "Направление было бы nach Hause; bin zu Hause описывает место.",
+            ["wo", "Wo? — где"],
+            ["wohin", "Wohin? — куда"],
           ],
-          ["at", "Он находится дома.", "zu Hause — дома."],
-          ["cafe", "Он у кафе.", "Кафе в этой фразе не упомянуто."],
-        ]),
+          [
+            ["home", "zu Hause", "wo"],
+            ["bus", "im Bus", "wo"],
+            ["gohome", "nach Hause", "wohin"],
+            ["cafe", "zum Café", "wohin"],
+            ["museum", "ins Museum", "wohin"],
+          ],
+        ),
         hint: "zu Hause — где; nach Hause — куда.",
         success:
           "Йенсен остаётся дома. Для поиска сумки его телепортация не требуется.",
@@ -1507,24 +1611,33 @@ export const episodes: Episode[] = [
             "Heute bis 12 Uhr. Morgen geschlossen.",
           ],
         },
-        prompt: "Куда и когда нужно обратиться?",
-        challenge: choice("practice", [
+        prompt:
+          "Куда и когда нужно обратиться? Поставьте штамп на каждой записи.",
+        challenge: verdict(
+          ["Верно", "Неверно"],
           [
-            "tomorrow",
-            "Завтра в кафе",
-            "Morgen geschlossen — завтра закрыто; выдача не в кафе.",
+            [
+              "Сумку выдаёт фрау Кляйн.",
+              true,
+              "bei Frau Klein — у фрау Кляйн.",
+            ],
+            [
+              "Выдача находится в самом кафе.",
+              false,
+              "Praxis neben dem Café — практика рядом с кафе.",
+            ],
+            [
+              "Забрать сумку можно сегодня до 12:00.",
+              true,
+              "Heute bis 12 Uhr.",
+            ],
+            [
+              "Завтра тоже можно прийти.",
+              false,
+              "Morgen geschlossen — завтра закрыто.",
+            ],
           ],
-          [
-            "practice",
-            "Сегодня до 12:00 к фрау Кляйн в соседнюю практику.",
-            "bei Frau Klein, Praxis neben dem Café, heute bis 12 Uhr.",
-          ],
-          [
-            "station",
-            "На вокзал после 17:00",
-            "В объявлении другие место и время.",
-          ],
-        ]),
+        ),
         hint: "Abholung — получение; bei — у; neben — рядом. Читайте все ограничения.",
         success:
           "Остаётся успеть к Кляйн. Поиск таблички неожиданно привёл к медицинскому словарю.",
@@ -1553,16 +1666,11 @@ export const episodes: Episode[] = [
           text: "Können Sie heute um Viertel nach elf kommen?",
           ru: "Вы можете сегодня прийти в четверть двенадцатого?",
         },
-        prompt: "Какое время предлагает Кляйн?",
-        challenge: choice("1115", [
-          [
-            "1145",
-            "11:45",
-            "Viertel vor zwölf — 11:45. Здесь Viertel nach elf.",
-          ],
-          ["1015", "10:15", "elf — одиннадцать, не десять."],
-          ["1115", "11:15", "Четверть после одиннадцати = 11:15."],
-        ]),
+        prompt: "Поставьте часы на время, которое предлагает Кляйн.",
+        challenge: clock("11:15", {
+          "11:45": "Viertel vor zwölf — 11:45. Здесь Viertel nach elf.",
+          "10:15": "elf — одиннадцать, не десять.",
+        }),
         hint: "Viertel nach elf = 11:15.",
         success:
           "Это предложение времени, ещё не диагноз. Вы уточняете, что пришли за сумкой.",
@@ -1604,39 +1712,24 @@ export const episodes: Episode[] = [
         story: [
           "Кляйн говорит: «{must}» Дверь в кабинет закрыта. Рядом табличка: «{noentry}»",
         ],
-        prompt: "Что сделать сейчас?",
-        challenge: choice("wait", [
-          [
-            "enter",
-            "Войти без спроса",
-            "dürfen nicht — нельзя; дверь кабинета закрыта.",
-          ],
-          [
-            "leave",
-            "Обязательно уйти домой",
-            "müssen warten — нужно подождать, не уйти.",
-          ],
-          [
-            "wait",
-            "Подождать у стойки",
-            "Sie müssen warten и запрет входа согласуются.",
-          ],
-        ]),
+        prompt: "Запишите в блокнот, что нужно и что нельзя.",
+        challenge: gaps(
+          "Sie ___ warten.\nSie ___ hier nicht hinein.",
+          ["müssen", "dürfen", "möchten"],
+          ["müssen", "dürfen"],
+        ),
         hint: "müssen — необходимость; nicht dürfen — запрет.",
         success: "Вы ждёте. Терпение не считается новой уликой, но пригодится.",
       },
       {
         id: "10-sit",
-        title: "Дружеская просьба",
+        title: "Пауза с карточками",
         story: [
-          "Дана видит усталого Матео: «{sit}» Он садится, не превращая ожидание в медицинскую драму.",
+          "Дана видит усталого Матео: «{sit}» Он садится, а чтобы ожидание не превратилось в медицинскую драму, Дана раскладывает на соседнем стуле карточки из блокнота.",
         ],
-        prompt: "Соберите просьбу «Садись, пожалуйста».",
-        challenge: order(
-          ["Setz", "dich", "bitte."],
-          ["bitte.", "dich", "Setz"],
-        ),
-        hint: "Setz — повелительное du; setz dich — садись.",
+        prompt: "Откройте пары: немецкое выражение и его перевод.",
+        challenge: memory(["inbag", "table", "kitchen", "bus", "cafe"]),
+        hint: "Запоминайте, где лежат карточки. Ошибка ничего не стоит: неверная пара просто закроется при следующем нажатии.",
         success: "Матео сидит. Даже расследованию полезна короткая пауза.",
       },
       {
@@ -1645,32 +1738,16 @@ export const episodes: Episode[] = [
         story: [
           "Кляйн приносит сумку. {inbag} деревянный край, но замок закрыт. На клапане карточка.",
         ],
-        source: {
-          title: "Бирка выдачи",
-          lines: [
-            "Nils. Inhalt: Schild MOIN.",
-            "Bitte im Büro abholen. Jensen hat den Schlüssel.",
-            "Frau Klein: Die Tasche ist hier. Der Schlüssel ist nicht hier.",
-          ],
-        },
-        prompt: "Что ещё нужно, чтобы открыть сумку?",
-        challenge: choice("key", [
+        prompt: "У кого ключ от сумки? Нажмите на нужную фразу.",
+        challenge: spot(
+          "Бирка выдачи",
           [
-            "doctor",
-            "Разрешение врача на прогулку",
-            "Сумка не медицинская задача; разрешение здесь не требуется.",
+            "Nils.|Inhalt: Schild MOIN.",
+            "Bitte im Büro abholen.|Jensen hat den Schlüssel.",
+            "Frau Klein:|Die Tasche ist hier.|Der Schlüssel ist nicht hier.",
           ],
-          [
-            "key",
-            "Ключ Йенсена из офиса.",
-            "Jensen hat den Schlüssel; ключа у Кляйн нет.",
-          ],
-          [
-            "bread",
-            "Купить хлеб вместо ключа",
-            "Хлеб уже найден и не открывает замок.",
-          ],
-        ]),
+          ["Jensen hat den Schlüssel."],
+        ),
         hint: "Сумка и ключ находятся в разных местах. По бирке ключ у Йенсена, выдача через офис.",
         success:
           "Сумка найдена, но дело ещё не закрыто: нужно проверить её содержимое и восстановить путь.",
@@ -1749,16 +1826,28 @@ export const episodes: Episode[] = [
             "17:25 Petersen hat das Büro geschlossen.",
           ],
         },
-        prompt: "Кто получил ключ в 17:20?",
-        challenge: choice("j", [
+        prompt: "Сверьте записи с журналом ключей.",
+        challenge: verdict(
+          ["Richtig", "Falsch"],
           [
-            "p",
-            "Петерсен",
-            "В 17:00 ключ был у неё; в 17:20 его получил Йенсен.",
+            [
+              "Um 17:00 hatte Petersen den Schlüssel.",
+              true,
+              "17:00 Petersen hatte den Schlüssel.",
+            ],
+            [
+              "Um 17:00 hatte Jensen den Schlüssel.",
+              false,
+              "В 17:00 ключ был у Петерсен.",
+            ],
+            ["Um 17:20 war Jensen im Büro.", true, "17:20 Jensen war im Büro."],
+            [
+              "Nils hat den Schlüssel bekommen.",
+              false,
+              "Нильс в журнале не указан; Er hat den Schlüssel bekommen относится к Йенсену.",
+            ],
           ],
-          ["j", "Йенсен", "Er hat den Schlüssel bekommen относится к Йенсену."],
-          ["n", "Нильс", "Нильс в журнале не указан."],
-        ]),
+        ),
         hint: "hatte — имел(а); hat bekommen — получил. Следите за временем и er.",
         success:
           "Ключ должен быть у Йенсена. Его записка «не было ключа» относится к более раннему моменту.",
@@ -1852,24 +1941,19 @@ export const episodes: Episode[] = [
             "Morgen: Sonne. Treffen im Club.",
           ],
         },
-        prompt: "Как вернуть табличку по текущему плану?",
-        challenge: choice("bus", [
+        prompt: "Разложите план: что сегодня, а что завтра.",
+        challenge: sort(
           [
-            "walk",
-            "Сегодня пешком под дождём",
-            "План явно говорит mit dem Bus и сохранить сумку сухой.",
+            ["today", "Heute"],
+            ["tomorrow", "Morgen"],
           ],
           [
-            "bus",
-            "Сегодня на автобусе, сохранив сумку сухой.",
-            "Это соответствует и погоде, и плану.",
+            ["rain", "Regen und Wind", "today"],
+            ["bus", "mit dem Bus", "today"],
+            ["sun", "Sonne", "tomorrow"],
+            ["club", "Treffen im Club", "tomorrow"],
           ],
-          [
-            "wait",
-            "Ждать лето на пляже",
-            "План не откладывает возврат на сезон.",
-          ],
-        ]),
+        ),
         hint: "Regen — дождь; Wind — ветер; trocken — сухой.",
         success: "Сумка сухая. Чайка мокрая, но сохраняет достоинство.",
       },
@@ -1901,16 +1985,16 @@ export const episodes: Episode[] = [
             "Bitte Wasser und Brot mitbringen.",
           ],
         },
-        prompt: "Какую дату поставить в приглашении?",
-        challenge: choice("june", [
-          ["july", "1 июля, 17:30", "Juni — июнь; Juli — июль."],
-          ["june", "1 июня, 17:30", "am ersten Juni — первого июня."],
-          [
-            "jan",
-            "6 января, 05:30",
-            "ersten — первого; Juni — июнь; 17:30 указано прямо.",
+        prompt: "Отметьте в календаре дату из приглашения.",
+        challenge: {
+          kind: "calendar",
+          months: [
+            { name: "Mai", days: 31 },
+            { name: "Juni", days: 30 },
+            { name: "Juli", days: 31 },
           ],
-        ]),
+          answer: "Juni:1",
+        },
         hint: "Дата после am: am ersten Juni. Не путайте Juni и Juli.",
         success:
           "Приглашение готово. Для {water} и {bread} теперь есть и повод, и время.",

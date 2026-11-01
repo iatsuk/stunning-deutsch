@@ -29,6 +29,15 @@ export function zahl(n: number): string {
   return `${thousand === 1 ? "ein" : zahl(thousand)}tausend${rest ? zahl(rest) : ""}`;
 }
 
+/** Сумма словами, как на кассе: 150 → "ein Euro fünfzig", 50 → "fünfzig Cent". */
+export function preis(cents: number): string {
+  const euro = Math.floor(cents / 100);
+  const cent = cents % 100;
+  if (!euro) return `${zahl(cent)} ${cent ? "Cent" : "Euro"}`;
+  const whole = `${euro === 1 ? "ein" : zahl(euro)} Euro`;
+  return cent ? `${whole} ${zahl(cent)}` : whole;
+}
+
 export type Uhrzeit = {
   time: string;
   hours: number;

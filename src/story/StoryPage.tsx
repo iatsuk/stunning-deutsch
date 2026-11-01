@@ -5,15 +5,50 @@ import { shuffle } from "../lib/shuffle";
 import { plural } from "../markup";
 import { beats, episodes, phrases } from "./data";
 import {
+  Calendar,
+  Chat,
+  ClockGame,
+  Coins,
+  Gaps,
+  Memory,
+  Pairs,
+  Sort,
+  Spot,
+  Verdict,
+  Walk,
+} from "./games";
+import {
   beatPhrases,
   initialAnswer,
   isCorrect,
   knownBefore,
+  mistake,
   normalizeSave,
+  solution,
   STORY_KEY,
 } from "./logic";
-import type { Answer, Beat, StorySave } from "./types";
+import type { Answer, Beat, Challenge, StorySave } from "./types";
 import "./story.css";
+
+const GAME_NAMES: Record<Challenge["kind"], string> = {
+  choice: "Вывод",
+  order: "Сборка фразы",
+  match: "Пары",
+  quantity: "Заказ",
+  code: "Набор номера",
+  chat: "Разговор",
+  verdict: "Штамп",
+  gaps: "Записка с пропусками",
+  sort: "Раскладка",
+  spot: "Улика в тексте",
+  memory: "Карточки",
+  clock: "Часы",
+  route: "Прогулка",
+  coins: "Касса",
+  calendar: "Календарь",
+};
+/** Разговор и карточки завершаются сами: кнопка проверки там не нужна. */
+const AUTOMATIC: Challenge["kind"][] = ["chat", "memory"];
 
 function load(): { save: StorySave; started: boolean } {
   try {
@@ -234,8 +269,9 @@ export function StoryPage() {
               <div>
                 <b>Читайте и действуйте</b>
                 <p>
-                  Звоните, выбирайте заказы, собирайте фразы и проверяйте улики.
-                  Ошибка даёт подсказку и новую попытку.
+                  Разговаривайте, ставьте часы, ищите дорогу по схеме,
+                  раскладывайте карточки и проверяйте улики. Ошибка даёт
+                  подсказку и новую попытку.
                 </p>
               </div>
               <div>
@@ -533,9 +569,11 @@ function StoryTurn({
     [audioError, setAudioError] = useState(false);
   const c = beat.challenge;
   const correct = isCorrect(c, value);
-  const list = Array.isArray(value) ? value : [];
+  // В старом сохранении шаг мог быть другой игрой: показываем готовый ответ.
+  const shown = solved && !correct ? solution(c) : value;
+  const list = Array.isArray(shown) ? shown : [];
   const record =
-    typeof value === "object" && !Array.isArray(value) ? value : {};
+    typeof shown === "object" && !Array.isArray(shown) ? shown : {};
   const disabled = solved;
   function change(v: Answer) {
     setChecked(false);
@@ -545,6 +583,14 @@ function StoryTurn({
     setChecked(true);
     if (correct) onWin();
   }
+  const game = {
+    value: shown,
+    seed: beat.id,
+    disabled,
+    checked,
+    change,
+    win: onWin,
+  };
   return (
     <div className="moin-turn">
       {beat.audio && (
@@ -579,17 +625,29 @@ function StoryTurn({
           )}
         </div>
       )}
+      <div className="kicker moin-game-name">{GAME_NAMES[c.kind]}</div>
       <h3>{beat.prompt}</h3>
+      {c.kind === "match" && <Pairs c={c} {...game} />}
+      {c.kind === "chat" && <Chat c={c} {...game} />}
+      {c.kind === "verdict" && <Verdict c={c} {...game} />}
+      {c.kind === "gaps" && <Gaps c={c} {...game} />}
+      {c.kind === "sort" && <Sort c={c} {...game} />}
+      {c.kind === "spot" && <Spot c={c} {...game} />}
+      {c.kind === "memory" && <Memory c={c} {...game} />}
+      {c.kind === "clock" && <ClockGame c={c} {...game} />}
+      {c.kind === "route" && <Walk c={c} {...game} />}
+      {c.kind === "coins" && <Coins c={c} {...game} />}
+      {c.kind === "calendar" && <Calendar c={c} {...game} />}
       {c.kind === "choice" && (
         <fieldset className="moin-choices" disabled={disabled}>
           <legend className="moin-sr">Варианты ответа</legend>
           {shuffle(c.options, beat.id).map((o, i) => (
-            <label key={o.id} className={value === o.id ? "is-selected" : ""}>
+            <label key={o.id} className={shown === o.id ? "is-selected" : ""}>
               <input
                 type="radio"
                 name={beat.id}
                 value={o.id}
-                checked={value === o.id}
+                checked={shown === o.id}
                 onChange={() => change(o.id)}
               />
               <span className="moin-option-n">
@@ -650,27 +708,6 @@ function StoryTurn({
           </button>
         </div>
       )}
-      {c.kind === "match" && (
-        <div className="moin-matches">
-          {c.left.map((i) => (
-            <label key={i.id}>
-              <span>{i.text}</span>
-              <select
-                disabled={disabled}
-                value={record[i.id] ?? ""}
-                onChange={(e) => change({ ...record, [i.id]: e.target.value })}
-              >
-                <option value="">Выберите пару</option>
-                {c.right.map((r) => (
-                  <option key={r.id} value={r.id}>
-                    {r.text}
-                  </option>
-                ))}
-              </select>
-            </label>
-          ))}
-        </div>
-      )}
       {c.kind === "quantity" && (
         <div className="moin-quantities">
           {c.items.map((i) => (
@@ -714,7 +751,7 @@ function StoryTurn({
               inputMode="numeric"
               autoComplete="off"
               disabled={disabled}
-              value={typeof value === "string" ? value : ""}
+              value={typeof shown === "string" ? shown : ""}
               onChange={(e) =>
                 change(e.target.value.replace(/\D/g, "").slice(0, c.length))
               }
@@ -726,8 +763,8 @@ function StoryTurn({
               <button
                 type="button"
                 key={n}
-                disabled={disabled || String(value).length >= c.length}
-                onClick={() => change(String(value) + n)}
+                disabled={disabled || String(shown).length >= c.length}
+                onClick={() => change(String(shown) + n)}
               >
                 {n}
               </button>
@@ -736,7 +773,7 @@ function StoryTurn({
               type="button"
               disabled={disabled}
               aria-label="Удалить последнюю цифру"
-              onClick={() => change(String(value).slice(0, -1))}
+              onClick={() => change(String(shown).slice(0, -1))}
             >
               ⌫
             </button>
@@ -745,9 +782,11 @@ function StoryTurn({
       )}
       {!solved && (
         <div className="moin-turn-actions">
-          <button type="button" className="primary" onClick={check}>
-            Проверить действие
-          </button>
+          {!AUTOMATIC.includes(c.kind) && (
+            <button type="button" className="primary" onClick={check}>
+              Проверить действие
+            </button>
+          )}
           <button
             type="button"
             className="link-button"
@@ -777,12 +816,7 @@ function StoryTurn({
           ) : (
             <>
               <strong>Попробуйте ещё раз.</strong>
-              <p>
-                {c.kind === "choice"
-                  ? (c.options.find((o) => o.id === value)?.why ??
-                    "Выберите действие по сообщению.")
-                  : beat.hint}
-              </p>
+              <p>{mistake(c, shown, beat.hint)}</p>
             </>
           )}
         </div>

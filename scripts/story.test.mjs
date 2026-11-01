@@ -2,15 +2,21 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { existsSync, readFileSync } from "node:fs";
 import { spawnSync } from "node:child_process";
+import { preis } from "../src/lib/german.ts";
 import { episodes, beats, phrases } from "../src/story/data.ts";
 import {
   beatPhrases,
+  canMove,
   initialAnswer,
   isCorrect,
   knownBefore,
+  mistake,
   normalizeSave,
+  placeKey,
+  solution,
   STORY_KEY,
   validateStory,
+  walk,
 } from "../src/story/logic.ts";
 const byId = (id) => beats.find((b) => b.id === id);
 
@@ -20,7 +26,7 @@ test("12 sequential chapters cover the A1 route, with reachable, unique actions"
   assert.equal(new Set(episodes.map((e) => e.id)).size, 12);
   assert.deepEqual(validateStory(episodes, phrases), []);
   assert.ok(episodes.every((e) => e.beats.length === 5));
-  assert.equal(new Set(beats.map((b) => b.challenge.kind)).size, 5);
+  assert.equal(new Set(beats.map((b) => b.challenge.kind)).size, 15);
   assert.equal(beats.at(-1).id, "12-finale");
 });
 test("detective answers require evidence; photos do not prove theft or intent", () => {
@@ -39,10 +45,11 @@ test("numbers, offered times and amounts preserve meaningful distinctions", () =
   assert.ok(!isCorrect(byId("02-number").challenge, "176234581"));
   assert.ok(isCorrect(byId("02-pin").challenge, "32"));
   assert.ok(!isCorrect(byId("02-pin").challenge, "23"));
-  assert.ok(isCorrect(byId("06-time").challenge, "1730"));
-  assert.ok(!isCorrect(byId("06-time").challenge, "1830"));
-  assert.ok(isCorrect(byId("10-reception").challenge, "1115"));
-  assert.ok(!isCorrect(byId("10-reception").challenge, "1145"));
+  assert.ok(isCorrect(byId("06-time").challenge, "17:30"));
+  assert.ok(!isCorrect(byId("06-time").challenge, "18:30"));
+  assert.ok(!isCorrect(byId("06-time").challenge, "05:30"));
+  assert.ok(isCorrect(byId("10-reception").challenge, "11:15"));
+  assert.ok(!isCorrect(byId("10-reception").challenge, "11:45"));
   const c = byId("04-basket").challenge;
   assert.ok(isCorrect(c, { w: 2, b: 3, c: 0 }));
   assert.ok(!isCorrect(c, { w: 3, b: 2, c: 0 })); // Same total is not the same order.
@@ -149,6 +156,162 @@ test("no initial draft earns a success; missing pairs cannot pass", () => {
   assert.equal(
     isCorrect(byId("03-family").challenge, { g: "sister", n: "brother" }),
     false,
+  );
+});
+test("games vary: choice no longer dominates and the same game never repeats in a row", () => {
+  const kinds = beats.map((b) => b.challenge.kind);
+  assert.ok(kinds.filter((k) => k === "choice").length <= 12);
+  kinds.forEach((kind, i) =>
+    assert.notEqual(kind, kinds[i - 1], `${beats[i].id} repeats ${kind}`),
+  );
+  for (const episode of episodes)
+    assert.ok(
+      new Set(episode.beats.map((b) => b.challenge.kind)).size >= 3,
+      episode.id,
+    );
+});
+test("every step shows a working answer, also for saves from another game kind", () => {
+  for (const b of beats) {
+    assert.ok(isCorrect(b.challenge, solution(b.challenge)), b.id);
+    assert.ok(mistake(b.challenge, initialAnswer(b.challenge), b.hint), b.id);
+  }
+  const old = normalizeSave(
+    {
+      cursor: 7,
+      completed: 22,
+      drafts: {
+        "01-mateo": "origin",
+        "04-order": "tea",
+        "04-request": ["Ich", "möchte"],
+        "06-time": "1730",
+        "08-where": { k: "table", t: "kitchen" },
+      },
+    },
+    beats,
+  );
+  assert.equal(old.cursor, 7);
+  assert.equal(old.completed, 22);
+  assert.equal(old.drafts["01-mateo"], undefined);
+  assert.equal(old.drafts["04-order"], undefined);
+  assert.equal(old.drafts["06-time"], undefined);
+  assert.deepEqual(old.drafts["04-request"], []);
+  assert.deepEqual(old.drafts["08-where"], { k: "table", t: "kitchen" });
+});
+test("chat needs every reply in order and remembers only correct ones", () => {
+  const c = byId("04-order").challenge;
+  assert.ok(isCorrect(c, ["tea", "no", "thanks"]));
+  assert.ok(!isCorrect(c, ["tea", "no"]));
+  assert.ok(!isCorrect(c, ["coffee", "no", "thanks"]));
+  const saved = normalizeSave(
+    { drafts: { "04-order": ["tea", "yes", "thanks"] } },
+    beats,
+  );
+  assert.deepEqual(saved.drafts["04-order"], ["tea"]);
+});
+test("stamps, gaps, sorting and text spotting require the exact evidence", () => {
+  const stamps = byId("03-no").challenge;
+  assert.ok(isCorrect(stamps, { 0: "yes", 1: "no", 2: "no" }));
+  assert.ok(!isCorrect(stamps, { 0: "yes", 1: "no" }));
+  assert.ok(!isCorrect(stamps, { 0: "yes", 1: "yes", 2: "no" }));
+  assert.match(
+    mistake(stamps, { 0: "yes", 1: "yes", 2: "no" }, ""),
+    /принадлежность/,
+  );
+  const cases = byId("08-case").challenge;
+  assert.ok(isCorrect(cases, ["in der", "auf dem"]));
+  assert.ok(!isCorrect(cases, ["in die", "auf dem"]));
+  assert.ok(!isCorrect(cases, ["auf dem", "in der"]));
+  const pronouns = byId("05-pronoun").challenge;
+  assert.ok(isCorrect(pronouns, ["ihn", "sie", "es"]));
+  assert.ok(!isCorrect(pronouns, ["sie", "ihn", "es"]));
+  const genders = byId("08-compound").challenge;
+  assert.equal(genders.answer.schrank, "der");
+  assert.equal(genders.answer.haustuer, "die");
+  assert.equal(genders.answer.wohnzimmer, "das");
+  const note = byId("08-note").challenge;
+  assert.deepEqual(note.answer, ["1:2"]);
+  assert.equal(note.lines[1][2], "im Bus.");
+  assert.ok(!isCorrect(note, ["2:2"]));
+  const log = byId("06-log").challenge;
+  assert.ok(isCorrect(log, [...log.answer].reverse()));
+  assert.ok(!isCorrect(log, [log.answer[0]]));
+  assert.deepEqual(
+    normalizeSave({ drafts: { "06-log": ["1:0", "1:0", "9:9"] } }, beats)
+      .drafts["06-log"],
+    ["1:0"],
+  );
+});
+test("memory repeats only phrases the story has already shown", () => {
+  const memories = beats.filter((b) => b.challenge.kind === "memory");
+  assert.equal(memories.length, 3);
+  for (const b of memories) {
+    const known = knownBefore(beats, beats.indexOf(b) + 1);
+    for (const pair of b.challenge.pairs) {
+      assert.ok(known.has(pair.id), `${b.id}: ${pair.id}`);
+      assert.equal(pair.de, phrases[pair.id].de);
+      assert.ok(pair.ru);
+    }
+    assert.ok(
+      !isCorrect(
+        b.challenge,
+        b.challenge.pairs.slice(1).map((p) => p.id),
+      ),
+    );
+  }
+});
+test("the walk follows the driver's words and stays on the map", () => {
+  const c = byId("09-directions").challenge;
+  assert.ok(isCorrect(c, ["geradeaus", "links", "rechts"]));
+  assert.equal(
+    c.places[placeKey(walk(c, c.moves).at(-1))],
+    "das Café Nordlicht",
+  );
+  assert.ok(!isCorrect(c, ["geradeaus", "rechts", "links"]));
+  assert.ok(!isCorrect(c, ["geradeaus", "geradeaus"]));
+  assert.equal(
+    c.places[placeKey(walk(c, ["geradeaus", "geradeaus"]).at(-1))],
+    "der Bahnhof",
+  );
+  assert.equal(canMove(c, ["geradeaus", "geradeaus"], "geradeaus"), false);
+  assert.equal(canMove(c, ["geradeaus"], "links"), true);
+  assert.deepEqual(
+    normalizeSave(
+      { drafts: { "09-directions": ["geradeaus", "geradeaus", "geradeaus"] } },
+      beats,
+    ).drafts["09-directions"],
+    ["geradeaus", "geradeaus"],
+  );
+});
+test("change can be paid in any coins, the amount is what counts", () => {
+  const c = byId("05-change").challenge;
+  assert.ok(isCorrect(c, { 100: 1, 50: 1 }));
+  assert.ok(isCorrect(c, { 50: 3 }));
+  assert.ok(!isCorrect(c, { 200: 1 }));
+  assert.ok(!isCorrect(c, {}));
+  assert.equal(preis(150), "ein Euro fünfzig");
+  assert.equal(preis(200), "zwei Euro");
+  assert.equal(preis(70), "siebzig Cent");
+});
+test("calendar and clock keep similar dates and times apart", () => {
+  const date = byId("12-date").challenge;
+  assert.ok(isCorrect(date, "Juni:1"));
+  assert.ok(!isCorrect(date, "Juli:1"));
+  assert.ok(!isCorrect(date, "Juni:7"));
+  assert.equal(
+    normalizeSave({ drafts: { "12-date": "Juni:31" } }, beats).drafts[
+      "12-date"
+    ],
+    undefined,
+  );
+  const time = byId("06-time").challenge;
+  assert.match(mistake(time, "18:30", byId("06-time").hint), /halb sieben/);
+  assert.equal(
+    normalizeSave({ drafts: { "06-time": "17:37" } }, beats).drafts["06-time"],
+    undefined,
+  );
+  assert.equal(
+    normalizeSave({ drafts: { "06-time": "17:45" } }, beats).drafts["06-time"],
+    "17:45",
   );
 });
 test("all three story recordings exist and the active generator refuses Qwen before loading models", () => {
