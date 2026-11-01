@@ -18,7 +18,7 @@ import {
 const dictionary = JSON.parse(
   readFileSync(new URL("../src/generated/a1-words.json", import.meta.url)),
 );
-const CHAPTER = 14;
+const CHAPTER = 16;
 const chapterOf = (index) => Math.floor(index / CHAPTER);
 const all = Object.keys(dictionary);
 
@@ -219,7 +219,7 @@ test("most words come back in a later chapter, whatever the pace", () => {
   for (const pace of [20, 40, 168]) {
     const { later, storyRounds } = playthrough({ pace, slipRate: 0.15 });
     assert.ok(later >= all.length * 0.7, `${pace}: ${later} of ${all.length}`);
-    assert.ok(storyRounds <= 60, `${pace}: ${storyRounds} rounds`);
+    assert.ok(storyRounds <= 66, `${pace}: ${storyRounds} rounds`);
   }
   const usual = playthrough({ pace: 20, slipRate: 0.15 });
   assert.ok(usual.later >= all.length * 0.8, `${usual.later}`);

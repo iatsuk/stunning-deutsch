@@ -15,6 +15,16 @@ export type VoiceLine = {
 };
 /** Фраза на дисках кодового замка: один диск — одна часть предложения. */
 export type LockRound = { ru: string; reels: string[][]; answer: string[] };
+/** Шаг устной практики: сказать вслух по карточке или в ответ партнёру, затем сверить с образцом. */
+export type OralRound = {
+  part: 1 | 2 | 3;
+  task: string;
+  card?: string;
+  hear?: string;
+  hint?: string;
+  model: string;
+  ru: string;
+};
 export type Challenge =
   | { kind: "choice"; options: Option[]; answer: string }
   | { kind: "order"; tiles: string[]; answer: string[]; also?: string[][] }
@@ -73,6 +83,13 @@ export type Challenge =
   | { kind: "docks"; words: string[] }
   | { kind: "gull"; words: string[] }
   | { kind: "lock"; rounds: LockRound[] }
+  | { kind: "oral"; rounds: OralRound[] }
+  | {
+      kind: "letter";
+      to: string;
+      model: string[];
+      fields: { id: string; label: string; answers: string[] }[];
+    }
   | {
       kind: "write";
       title: string;

@@ -1,4 +1,4 @@
-import type { Beat, Challenge } from "./types.ts";
+import type { Beat, Challenge, OralRound } from "./types.ts";
 
 // Шаги со словарём уроков A1. Один шаг охватывает сразу несколько слов, поэтому объём лексики
 // растёт быстрее числа шагов. Ключ — шаг основной истории, после которого идут эти шаги.
@@ -31,6 +31,26 @@ const lock = (rounds: [string, string[][]][]): Challenge => ({
   kind: "lock",
   rounds: rounds.map(([ru, reels]) => ({ ru, reels, answer: reels.map((r) => r[0]) })),
 });
+const letter = (to: string, model: string[], fields: string[][]): Challenge => ({
+  kind: "letter",
+  to,
+  model,
+  fields: fields.map(([label, ...answers], i) => ({ id: `f${i}`, label, answers })),
+});
+/** Обращение и подпись: образец показывает один вариант, но верны и другие обычные формы. */
+const an = (greeting: string, name: string) => [
+  `Anrede: an ${name.replace(/^Herr /, "Herrn ")}`,
+  `${greeting} ${name}`,
+  `Hallo ${name}`,
+  ...(/^(Frau|Herr) /.test(name) ? [`Sehr ${name.startsWith("Frau") ? "geehrte" : "geehrter"} ${name}`] : []),
+];
+const gruss = (name: string) => [
+  `Gruß und Name: ${name}`,
+  ...["Viele Grüße", "Liebe Grüße", "Herzliche Grüße"].flatMap((g) => [`${g}, ${name}`, `${g} ${name}`]),
+];
+const oral = (rounds: OralRound[]): Challenge => ({ kind: "oral", rounds });
+const say = (part: OralRound["part"], task: string, card: string, model: string, ru: string, hint?: string): OralRound => ({ part, task, card, model, ru, hint });
+const reply = (part: OralRound["part"], task: string, hear: string, model: string, ru: string): OralRound => ({ part, task, hear, model, ru });
 const write = (title: string, fields: [string, string][]): Challenge => ({
   kind: "write",
   title,
@@ -44,6 +64,12 @@ const write = (title: string, fields: [string, string][]): Challenge => ({
 const DOCK = "Слово без артикля. К какому причалу оно подходит: der, die или das?";
 const RACE = "Прочитайте перевод и нажмите немецкое слово, пока чайка не долетела.";
 const LOCK = "Поверните диски, чтобы получилась фраза, и откройте замок.";
+const LETTER = "Напишите письмо по образцу. Пункты подсказывают, что сказать; меняются только данные.";
+const ORAL = "Сначала скажите вслух сами, потом сверьтесь с образцом.";
+const ASK = "Задайте партнёру вопрос по карточке.";
+const ANSWER = "Партнёр спрашивает вас. Ответьте вслух.";
+const REQUEST = "Попросите о том, что на картинке.";
+const REACT = "Партнёр обращается к вам. Отреагируйте вслух.";
 const HEAR = "Нажмите кнопку, послушайте слово и закройте его на карточке.";
 const PICTURE = "Послушайте слово и нажмите на подходящую картинку.";
 const ODD = "Одно слово в группе лишнее. Найдите его.";
@@ -53,6 +79,8 @@ const WRITE = "Напишите по-немецки. У существитель
 const HINT_DOCK = "Артикль запоминают вместе со словом. После ошибки слово вернётся в конце очереди.";
 const HINT_RACE = "Унесённое слово вернётся, а времени станет больше. Проиграть здесь нельзя.";
 const HINT_LOCK = "Замок считает верные диски, но не называет их. Проверьте форму глагола и порядок слов.";
+const HINT_LETTER = "Берите предложения образца и меняйте данные. После второй неудачной проверки откроется правильный вариант.";
+const HINT_ORAL = "Здесь проверяете вы сами. Запись остаётся на этой странице и никуда не отправляется.";
 const HINT_HEAR = "Переслушивать можно сколько угодно. Ошибка ничего не стоит.";
 const HINT_PICTURE = "Неверное нажатие подскажет, как называется картинка.";
 const HINT_ODD = "Ищите общую тему трёх слов. Перевод открывается после нажатия.";
@@ -94,6 +122,21 @@ export const extras: Record<string, Beat[]> = {
         ["Откуда ты родом?", [["Woher", "Wo", "Wie"], ["kommst", "komme", "kommt"], ["du?", "ich?", "wir?"]]],
         ["Мы из Аргентины.", [["Wir", "Ich", "Er"], ["sind", "bin", "ist"], ["aus Argentinien.", "in Argentinien.", "nach Argentinien."]]],
       ])),
+    step("01-x-letter", "Первое письмо", "Новая участница клуба Анна просит помочь с письмом Грете. Матео разрешает взять его письмо за образец, только данные у Анны другие.", LETTER, HINT_LETTER, "Письмо ушло. Грета отвечает одним словом: Moin.",
+      letter("Greta", ["Liebe Elif,", "ich heiße Mateo. Ich komme aus Argentinien. Ich wohne in Gaarden.", "Viele Grüße", "Mateo"], [
+        an("Liebe", "Greta"),
+        ["Wie heißen Sie? → Anna", "Ich heiße Anna."],
+        ["Woher kommen Sie? → Russland", "Ich komme aus Russland."],
+        ["Wo wohnen Sie? → Kiel", "Ich wohne in Kiel."],
+        gruss("Anna"),
+      ])),
+    step("01-x-oral", "Репетиция знакомства", "Завтра в клубе гости. Йенсен просит порепетировать вслух, как на экзамене, без бумажки.", ORAL, HINT_ORAL, "Йенсен не нашёл ни одной ошибки. Правда, он и не слушал, но всё равно доволен.",
+      oral([
+        say(1, "Скажите, как вас зовут и откуда вы.", "Name · Land", "Ich heiße Mateo. Ich komme aus Argentinien.", "Меня зовут Матео. Я из Аргентины."),
+        say(1, "Скажите, где вы живёте и на каких языках говорите.", "Wohnort · Sprachen", "Ich wohne in Kiel. Ich spreche Spanisch und Deutsch.", "Я живу в Киле. Я говорю по-испански и по-немецки."),
+        say(2, ASK, "Thema: Person · Wort: Wohnort", "Wo wohnen Sie?", "Где вы живёте?", "Wo …?"),
+        reply(2, ANSWER, "Woher kommen Sie?", "Ich komme aus Deutschland.", "Я из Германии."),
+      ])),
   ],
   "02-number": [
     step("02-x-numbers", "Лото в офисе", "Пока Нильс ищет ручку, Петерсен предлагает проверить слух. В офисе тихо, на столе карточки.", HEAR, HINT_HEAR, "Петерсен кивает. В её офисе это считается бурными аплодисментами.",
@@ -127,6 +170,21 @@ export const extras: Record<string, Beat[]> = {
         ["У меня есть вопрос.", [["Ich", "Du", "Wir"], ["habe", "hast", "haben"], ["eine Frage.", "ein Frage.", "einen Frage."]]],
         ["У тебя есть телефон?", [["Hast", "Habe", "Hat"], ["du", "ich", "er"], ["ein Handy?", "eine Handy?", "einen Handy?"]]],
         ["Она живёт в Киле?", [["Wohnt", "Wohnst", "Wohne"], ["sie", "du", "ich"], ["in Kiel?", "aus Kiel?", "nach Kiel?"]]],
+      ])),
+    step("02-x-letter", "Письмо с номером", "Лена поменяла телефон и хочет сообщить об этом Хауке. Письмо Даны годится как образец, данные нужны свои.", LETTER, HINT_LETTER, "Хауке сохранил номер. На всякий случай на бумаге.",
+      letter("Hauke", ["Lieber Nils,", "ich habe heute Geburtstag. Ich bin 30 Jahre alt. Meine Nummer ist 0176 2345.", "Viele Grüße", "Dana"], [
+        an("Lieber", "Hauke"),
+        ["Wann haben Sie Geburtstag? → morgen", "Ich habe morgen Geburtstag."],
+        ["Wie alt sind Sie? → 25", "Ich bin 25 Jahre alt."],
+        ["Wie ist Ihre Nummer? → 0151 7788", "Meine Nummer ist 0151 7788."],
+        gruss("Lena"),
+      ])),
+    step("02-x-oral", "Телефон и буквы", "Петерсен тренирует звонки: номер продиктовать, слово назвать по буквам, вежливо спросить.", ORAL, HINT_ORAL, "Петерсен записала всё верно с первого раза. Это её личный рекорд.",
+      oral([
+        say(1, "Продиктуйте номер телефона.", "Telefonnummer", "Meine Telefonnummer ist null eins sieben sechs, zwei drei vier fünf.", "Мой номер телефона: 0176 2345."),
+        say(1, "Назовите слово MOIN по буквам.", "M · O · I · N", "Em, O, I, En.", "Эм, о, и, эн."),
+        say(2, ASK, "Thema: Telefon · Wort: Nummer", "Wie ist Ihre Telefonnummer?", "Какой у вас номер телефона?", "Wie …?"),
+        reply(2, ANSWER, "Wie alt sind Sie?", "Ich bin dreißig Jahre alt.", "Мне тридцать лет."),
       ])),
   ],
   "03-family": [
@@ -162,6 +220,21 @@ export const extras: Record<string, Beat[]> = {
         ["У меня нет детей.", [["Ich", "Du", "Er"], ["habe", "hast", "hat"], ["keine Kinder.", "kein Kinder.", "keinen Kinder."]]],
         ["Её сын живёт в Киле.", [["Ihr Sohn", "Sein Sohn", "Mein Sohn"], ["wohnt", "wohne", "wohnst"], ["in Kiel.", "aus Kiel.", "nach Kiel."]]],
       ])),
+    step("03-x-letter", "Письмо о семье", "Марта рассказывает Петерсен о своей семье. Письмо Хауке подходит как образец, только родня у всех своя.", LETTER, HINT_LETTER, "Петерсен завела на семью Марты отдельную папку.",
+      letter("Frau Petersen", ["Liebe Greta,", "mein Bruder heißt Tom. Er hat zwei Kinder. Mein Vater wohnt in Kiel.", "Viele Grüße", "Hauke"], [
+        an("Liebe", "Frau Petersen"),
+        ["Wie heißt Ihre Schwester? → Lena", "Meine Schwester heißt Lena."],
+        ["Wie viele Kinder hat sie? → ein Kind", "Sie hat ein Kind."],
+        ["Wo wohnt Ihre Mutter? → Lübeck", "Meine Mutter wohnt in Lübeck."],
+        gruss("Marta"),
+      ])),
+    step("03-x-oral", "Вопросы о семье", "За столом Грета спрашивает всех обо всех. Лучше заранее попробовать вслух.", ORAL, HINT_ORAL, "Грета довольна. Матео теперь тоже знает всю вашу родню.",
+      oral([
+        say(1, "Расскажите о себе и о детях.", "Familie · Kinder", "Ich bin verheiratet und habe zwei Kinder.", "Я в браке, у меня двое детей."),
+        say(2, ASK, "Thema: Familie · Wort: Kinder", "Haben Sie Kinder?", "У вас есть дети?", "Haben …?"),
+        reply(2, ANSWER, "Haben Sie Geschwister?", "Ja, ich habe eine Schwester.", "Да, у меня есть сестра."),
+        say(2, ASK, "Thema: Familie · Wort: Bruder", "Wie heißt Ihr Bruder?", "Как зовут вашего брата?", "Wie …?"),
+      ])),
   ],
   "04-order": [
     step("04-x-menu", "Лото с меню", "Пока готовят заказ, официант от скуки читает меню вслух. Матео слушает с большим вниманием.", HEAR, HINT_HEAR, "Меню закрыто. Матео требует вторую партию.",
@@ -195,6 +268,21 @@ export const extras: Record<string, Beat[]> = {
         ["Я хотел(а) бы кофе.", [["Ich", "Du", "Er"], ["möchte", "möchtest", "möchten"], ["einen Kaffee.", "ein Kaffee.", "eine Kaffee."]]],
         ["Хочешь воды?", [["Möchtest", "Möchte", "Möchten"], ["du", "ich", "er"], ["ein Wasser?", "einen Wasser?", "eine Wasser?"]]],
         ["Я не ем мясо.", [["Ich", "Du", "Wir"], ["esse", "isst", "essen"], ["kein Fleisch.", "nicht Fleisch.", "keinen Fleisch."]]],
+      ])),
+    step("04-x-letter", "Письмо перед ужином", "Том приглашён на ужин и пишет Дане, что он ест. Письмо Греты подойдёт как образец.", LETTER, HINT_LETTER, "Дана получила письмо. Матео спрашивает, можно ли ему то же самое, только больше.",
+      letter("Dana", ["Lieber Mateo,", "ich esse gern Fisch. Ich trinke keinen Kaffee. Ich möchte einen Tee.", "Viele Grüße", "Greta"], [
+        an("Liebe", "Dana"),
+        ["Was essen Sie gern? → Salat", "Ich esse gern Salat."],
+        ["Was trinken Sie nicht? → Cola", "Ich trinke keine Cola."],
+        ["Was möchten Sie? → ein Wasser", "Ich möchte ein Wasser."],
+        gruss("Tom"),
+      ])),
+    step("04-x-oral", "Разговор за столом", "В кафе можно репетировать сколько угодно: официант всё равно занят.", ORAL, HINT_ORAL, "Заказ принят. Кофе, правда, уже остыл, но это проблема кафе.",
+      oral([
+        say(2, ASK, "Thema: Essen · Wort: Frühstück", "Was essen Sie zum Frühstück?", "Что вы едите на завтрак?", "Was …?"),
+        reply(2, ANSWER, "Was trinken Sie gern?", "Ich trinke gern Tee.", "Я люблю чай."),
+        say(3, REQUEST, "☕", "Einen Kaffee, bitte.", "Кофе, пожалуйста."),
+        reply(3, REACT, "Möchten Sie Milch?", "Ja, gern.", "Да, с удовольствием."),
       ])),
   ],
   "05-price": [
@@ -230,6 +318,21 @@ export const extras: Record<string, Beat[]> = {
         ["Свитер? Я беру его.", [["Ich", "Du", "Er"], ["nehme", "nimmst", "nimmt"], ["ihn.", "sie.", "es."]]],
         ["Футболка слишком большая.", [["Das T-Shirt", "Der T-Shirt", "Die T-Shirt"], ["ist", "bin", "bist"], ["zu groß.", "zu klein.", "sehr klein."]]],
       ])),
+    step("05-x-letter", "Письмо из примерочной", "Ольга пишет Матео, что купила. Письмо Элиф подойдёт как образец, а вот покупки другие.", LETTER, HINT_LETTER, "Матео отвечает, что рынок ему всё равно нравится больше.",
+      letter("Mateo", ["Liebe Greta,", "die Jacke ist zu groß. Der Pullover kostet 30 Euro. Ich nehme ihn.", "Viele Grüße", "Elif"], [
+        an("Lieber", "Mateo"),
+        ["Was ist zu klein? → die Hose", "Die Hose ist zu klein."],
+        ["Was kostet der Rock? → 25 Euro", "Der Rock kostet 25 Euro."],
+        ["Nehmen Sie den Rock? → ja", "Ich nehme ihn."],
+        gruss("Olga"),
+      ])),
+    step("05-x-oral", "У прилавка", "Продавец не торопится, поэтому можно спокойно потренироваться прямо у кассы.", ORAL, HINT_ORAL, "Продавец впечатлён. Очередь нет.",
+      oral([
+        say(2, ASK, "Thema: Einkaufen · Wort: Preis", "Was kostet das?", "Сколько это стоит?", "Was …?"),
+        reply(2, ANSWER, "Was kaufen Sie am Samstag?", "Ich kaufe Brot und Käse.", "Я покупаю хлеб и сыр."),
+        say(3, REQUEST, "👕", "Ich möchte ein T-Shirt, bitte.", "Мне, пожалуйста, футболку."),
+        reply(3, REACT, "Möchten Sie eine Tüte?", "Ja, bitte.", "Да, пожалуйста."),
+      ])),
   ],
   "06-time": [
     step("06-x-days", "Лото расписания", "Хауке вешает на стену расписание недели и читает его вслух, чтобы никто не сказал, что не слышал.", HEAR, HINT_HEAR, "Расписание услышано. Отговорок стало меньше.",
@@ -263,6 +366,21 @@ export const extras: Record<string, Beat[]> = {
         ["Я встаю в 7 часов.", [["Ich", "Du", "Er"], ["stehe", "stehst", "steht"], ["um 7 Uhr", "am 7 Uhr", "im 7 Uhr"], ["auf.", "an.", "aus."]]],
         ["Встреча начинается в понедельник.", [["Das Treffen", "Der Treffen", "Die Treffen"], ["fängt", "fange", "fangen"], ["am Montag", "um Montag", "im Montag"], ["an.", "auf.", "aus."]]],
         ["Я работаю с 9 до 5.", [["Ich", "Du", "Wir"], ["arbeite", "arbeitest", "arbeiten"], ["von 9", "um 9", "am 9"], ["bis 5.", "nach 5.", "vor 5."]]],
+      ])),
+    step("06-x-letter", "Письмо о расписании", "Ян пишет Дане о своём дне. Письмо Элиф подойдёт как образец, только время другое.", LETTER, HINT_LETTER, "Дана вносит Яна в расписание. Хауке вносит его туда же, но на другое время.",
+      letter("Dana", ["Hallo Hauke,", "ich stehe um sieben Uhr auf. Der Kurs fängt um neun Uhr an. Am Freitag habe ich Zeit.", "Viele Grüße", "Elif"], [
+        an("Liebe", "Dana"),
+        ["Wann stehen Sie auf? → um sechs Uhr", "Ich stehe um sechs Uhr auf."],
+        ["Wann fängt die Arbeit an? → um acht Uhr", "Die Arbeit fängt um acht Uhr an."],
+        ["Wann haben Sie Zeit? → am Montag", "Am Montag habe ich Zeit.", "Ich habe am Montag Zeit."],
+        gruss("Jan"),
+      ])),
+    step("06-x-oral", "Который час", "Часы в клубе всё ещё сломаны, а значит, повод поговорить есть всегда.", ORAL, HINT_ORAL, "Время выяснено. Часы об этом не узнали.",
+      oral([
+        say(2, ASK, "Thema: Alltag · Wort: Arbeit", "Wann fängt Ihre Arbeit an?", "Когда начинается ваша работа?", "Wann …?"),
+        reply(2, ANSWER, "Wann stehen Sie auf?", "Ich stehe um sieben Uhr auf.", "Я встаю в семь часов."),
+        say(3, REQUEST, "🕐", "Wie spät ist es, bitte?", "Который час, скажите, пожалуйста?"),
+        reply(3, REACT, "Haben Sie am Montag Zeit?", "Ja, am Montag habe ich Zeit.", "Да, в понедельник у меня есть время."),
       ])),
   ],
   "07-can": [
@@ -298,6 +416,21 @@ export const extras: Record<string, Beat[]> = {
         ["Мы хотим пойти в кино.", [["Wir", "Ich", "Er"], ["wollen", "will", "willst"], ["ins Kino", "im Kino", "in Kino"], ["gehen.", "gehe.", "geht."]]],
         ["Больше всего я люблю читать.", [["Am liebsten", "Lieber", "Gern"], ["lese", "lesen", "liest"], ["ich.", "du.", "er."]]],
       ])),
+    step("07-x-letter", "Письмо с отказом", "Лена не может прийти и пишет Нильсу. Письмо Даны подойдёт как образец.", LETTER, HINT_LETTER, "Нильс не обиделся и уже позвал вместо вас чайку.",
+      letter("Nils", ["Liebe Elif,", "am Samstag kann ich leider nicht kommen. Ich will am Sonntag ins Kino gehen. Kommst du mit?", "Viele Grüße", "Dana"], [
+        an("Lieber", "Nils"),
+        ["Wann können Sie nicht kommen? → am Freitag", "Am Freitag kann ich leider nicht kommen.", "Ich kann am Freitag leider nicht kommen.", "Am Freitag kann ich nicht kommen.", "Ich kann am Freitag nicht kommen."],
+        ["Was wollen Sie machen? → am Samstag schwimmen gehen", "Ich will am Samstag schwimmen gehen.", "Am Samstag will ich schwimmen gehen."],
+        ["Fragen Sie: Kommt Nils mit?", "Kommst du mit?"],
+        gruss("Lena"),
+      ])),
+    step("07-x-oral", "Планы вслух", "Элиф считает, что договариваться надо вслух, иначе никто никуда не придёт.", ORAL, HINT_ORAL, "Договорились. Теперь осталось прийти.",
+      oral([
+        say(2, ASK, "Thema: Freizeit · Wort: Sport", "Machen Sie gern Sport?", "Вы любите заниматься спортом?", "Machen …?"),
+        reply(2, ANSWER, "Was machen Sie am Wochenende?", "Am Wochenende gehe ich ins Kino.", "На выходных я иду в кино."),
+        say(3, REQUEST, "🪟", "Können Sie bitte das Fenster öffnen?", "Откройте, пожалуйста, окно.", "Können Sie bitte …?"),
+        reply(3, REACT, "Kommst du am Samstag mit?", "Leider nicht. Am Samstag arbeite ich.", "К сожалению, нет. В субботу я работаю."),
+      ])),
   ],
   "08-where": [
     step("08-x-rooms", "Лото объявлений", "Йенсен читает вслух объявления о жилье, а гости закрывают карточки.", HEAR, HINT_HEAR, "Карточка закрыта. Подвал по-прежнему никому не нужен.",
@@ -331,6 +464,21 @@ export const extras: Record<string, Beat[]> = {
         ["Чашка на кухне.", [["Die Tasse", "Der Tasse", "Das Tasse"], ["ist", "bin", "sind"], ["in der Küche.", "in die Küche.", "im Küche."]]],
         ["Ключ лежит на столе.", [["Der Schlüssel", "Das Schlüssel", "Die Schlüssel"], ["liegt", "liege", "liegst"], ["auf dem Tisch.", "auf der Tisch.", "auf den Tisch."]]],
         ["Диван стоит в гостиной.", [["Das Sofa", "Der Sofa", "Die Sofa"], ["steht", "stehe", "stehst"], ["im Wohnzimmer.", "in der Wohnzimmer.", "in Wohnzimmer."]]],
+      ])),
+    step("08-x-letter", "Письмо о квартире", "Том переехал и пишет Грете. Письмо Даны подойдёт как образец, только квартира другая.", LETTER, HINT_LETTER, "Грета хочет посмотреть квартиру. Матео хочет посмотреть кухню.",
+      letter("Greta", ["Lieber Herr Jensen,", "meine Wohnung ist klein, aber schön. Das Bad ist neu. Der Schlüssel liegt auf dem Tisch.", "Viele Grüße", "Dana"], [
+        an("Liebe", "Greta"),
+        ["Wie ist Ihre Wohnung? → groß und hell", "Meine Wohnung ist groß und hell."],
+        ["Wo ist die Waschmaschine? → im Keller", "Die Waschmaschine ist im Keller.", "Die Waschmaschine steht im Keller."],
+        ["Wo liegt der Schlüssel? → auf dem Schrank", "Der Schlüssel liegt auf dem Schrank."],
+        gruss("Tom"),
+      ])),
+    step("08-x-oral", "Осмотр вслух", "Хозяин квартиры глуховат, поэтому все вопросы лучше заранее произнести чётко.", ORAL, HINT_ORAL, "Хозяин всё понял. Или кивает из вежливости.",
+      oral([
+        say(2, ASK, "Thema: Wohnen · Wort: Zimmer", "Wie viele Zimmer hat Ihre Wohnung?", "Сколько комнат в вашей квартире?", "Wie viele …?"),
+        reply(2, ANSWER, "Wie ist Ihre Wohnung?", "Meine Wohnung ist klein, aber schön.", "Моя квартира маленькая, но красивая."),
+        say(3, REQUEST, "💡", "Können Sie bitte das Licht anmachen?", "Включите, пожалуйста, свет.", "Können Sie bitte …?"),
+        reply(3, REACT, "Wo ist das Bad, bitte?", "Das Bad ist links.", "Ванная слева."),
       ])),
   ],
   "09-route": [
@@ -366,6 +514,21 @@ export const extras: Record<string, Beat[]> = {
         ["Идите прямо!", [["Gehen", "Gehe", "Geht"], ["Sie", "ich", "er"], ["geradeaus!", "links!", "rechts!"]]],
         ["Мы идём к вокзалу.", [["Wir", "Ich", "Er"], ["gehen", "gehe", "geht"], ["zum Bahnhof.", "zur Bahnhof.", "zu Bahnhof."]]],
       ])),
+    step("09-x-letter", "Письмо о дороге", "Лена объясняет Хауке, как доберётся. Письмо Матео подойдёт как образец.", LETTER, HINT_LETTER, "Хауке знает маршрут. Автобус по-прежнему нет.",
+      letter("Hauke", ["Liebe Dana,", "ich komme heute mit dem Bus und bin um zehn Uhr am Bahnhof. Dann gehe ich zum Hafen. Wir treffen uns am Café.", "Viele Grüße", "Mateo"], [
+        an("Lieber", "Hauke"),
+        ["Wie kommen Sie heute? Wann sind Sie da? → mit der Straßenbahn, um neun Uhr am Bahnhof", "Ich komme heute mit der Straßenbahn und bin um neun Uhr am Bahnhof."],
+        ["Wohin gehen Sie dann? → zur Post", "Dann gehe ich zur Post."],
+        ["Wo treffen Sie sich? → am Rathaus", "Wir treffen uns am Rathaus."],
+        gruss("Lena"),
+      ])),
+    step("09-x-oral", "Спросить в городе", "На остановке тихо, и Дана предлагает прогнать всё вслух, пока нет автобуса.", ORAL, HINT_ORAL, "Отлично. Автобус пришёл как раз тогда, когда вы закончили, то есть с опозданием.",
+      oral([
+        say(2, ASK, "Thema: Stadt · Wort: Bahnhof", "Wo ist der Bahnhof?", "Где вокзал?", "Wo …?"),
+        reply(2, ANSWER, "Wie kommen Sie zur Arbeit?", "Ich fahre mit dem Bus.", "Я езжу на автобусе."),
+        say(3, REQUEST, "🎫", "Ich möchte eine Fahrkarte nach Hamburg, bitte.", "Мне, пожалуйста, билет до Гамбурга."),
+        reply(3, REACT, "Wie komme ich zur Post?", "Gehen Sie geradeaus und dann links.", "Идите прямо, а потом налево."),
+      ])),
   ],
   "10-reception": [
     step("10-x-health", "Лото в приёмной", "В приёмной долго ждать, и фрау Кляйн читает вслух слова с плаката.", HEAR, HINT_HEAR, "Карточка закрыта. Очередь не сдвинулась, зато словарь вырос.",
@@ -399,6 +562,21 @@ export const extras: Record<string, Beat[]> = {
         ["Мне нужно к врачу.", [["Ich", "Du", "Er"], ["muss", "musst", "müssen"], ["zum Arzt", "zur Arzt", "zu Arzt"], ["gehen.", "gehe.", "geht."]]],
         ["Вам нельзя курить.", [["Sie", "Ich", "Du"], ["dürfen", "darf", "darfst"], ["nicht rauchen.", "nicht rauche.", "kein rauchen."]]],
         ["У меня болит голова.", [["Ich", "Du", "Er"], ["habe", "hast", "hat"], ["Kopfschmerzen.", "Kopf Schmerzen.", "Schmerzen Kopf."]]],
+      ])),
+    step("10-x-letter", "Письмо о болезни", "Ян заболел и пишет Йенсену. Письмо Хауке подойдёт как образец.", LETTER, HINT_LETTER, "Йенсен желает скорейшего выздоровления и напоминает, что печать ждёт.",
+      letter("Herr Jensen", ["Liebe Frau Petersen,", "ich bin krank und kann heute nicht arbeiten. Ich muss im Bett bleiben. Am Montag komme ich wieder.", "Viele Grüße", "Hauke"], [
+        an("Lieber", "Herr Jensen"),
+        ["Warum können Sie nicht kommen? → eine Erkältung", "Ich habe eine Erkältung und kann heute nicht kommen."],
+        ["Was müssen Sie machen? → zum Arzt gehen", "Ich muss zum Arzt gehen."],
+        ["Wann kommen Sie wieder? → am Mittwoch", "Am Mittwoch komme ich wieder.", "Ich komme am Mittwoch wieder."],
+        gruss("Jan"),
+      ])),
+    step("10-x-oral", "В приёмной", "Пока очередь не двигается, фрау Кляйн разрешает потренироваться, только негромко.", ORAL, HINT_ORAL, "Фрау Кляйн кивает. Советы по лечению по-прежнему даёт только врач.",
+      oral([
+        say(2, ASK, "Thema: Gesundheit · Wort: Arzt", "Wann gehen Sie zum Arzt?", "Когда вы идёте к врачу?", "Wann …?"),
+        reply(2, ANSWER, "Was fehlt Ihnen?", "Ich habe Kopfschmerzen.", "У меня болит голова."),
+        say(3, REQUEST, "💊", "Können Sie mir bitte eine Tablette geben?", "Дайте мне, пожалуйста, таблетку.", "Können Sie mir bitte …?"),
+        reply(3, REACT, "Darf ich hier rauchen?", "Nein, hier dürfen Sie nicht rauchen.", "Нет, здесь нельзя курить."),
       ])),
   ],
   "11-job": [
@@ -434,6 +612,21 @@ export const extras: Record<string, Beat[]> = {
         ["Что ты делал(а) вчера?", [["Was", "Wer", "Wo"], ["hast", "hat", "habe"], ["du", "er", "ich"], ["gestern gemacht?", "gestern machen?", "morgen gemacht?"]]],
         ["У неё не было времени.", [["Sie", "Ich", "Du"], ["hatte", "hattest", "hatten"], ["keine Zeit.", "kein Zeit.", "keinen Zeit."]]],
       ])),
+    step("11-x-letter", "Письмо о вчерашнем дне", "Марек извиняется перед Элиф: он не позвонил. Письмо Петерсен подойдёт как образец.", LETTER, HINT_LETTER, "Элиф прощает Марека. В журнале это отмечено.",
+      letter("Elif", ["Lieber Nils,", "ich habe gestern viel gearbeitet und hatte keine Zeit. Heute Abend habe ich Zeit. Rufst du mich an?", "Viele Grüße", "Frau Petersen"], [
+        an("Liebe", "Elif"),
+        ["Was haben Sie gestern gemacht? → viel gelernt, keine Zeit", "Ich habe gestern viel gelernt und hatte keine Zeit."],
+        ["Wann haben Sie Zeit? → morgen Abend", "Morgen Abend habe ich Zeit.", "Ich habe morgen Abend Zeit."],
+        ["Fragen Sie: Ruft Elif an?", "Rufst du mich an?"],
+        gruss("Marek"),
+      ])),
+    step("11-x-oral", "Перед собеседованием", "Петерсен изображает строгого работодателя. Получается пугающе убедительно.", ORAL, HINT_ORAL, "Вас бы взяли. Петерсен этого, конечно, не скажет.",
+      oral([
+        say(1, "Скажите, кем вы работаете.", "Beruf", "Ich arbeite als Koch.", "Я работаю поваром."),
+        say(2, ASK, "Thema: Arbeit · Wort: Beruf", "Was sind Sie von Beruf?", "Кто вы по профессии?", "Was …?"),
+        reply(2, ANSWER, "Was haben Sie gestern gemacht?", "Gestern habe ich gearbeitet.", "Вчера я работал(а)."),
+        say(3, REQUEST, "🖊️", "Können Sie mir bitte einen Stift geben?", "Дайте мне, пожалуйста, ручку.", "Können Sie mir bitte …?"),
+      ])),
   ],
   "12-weather": [
     step("12-x-travel", "Лото перед дорогой", "Гости обсуждают обратный путь, а Хауке читает слова с листа подготовки.", HEAR, HINT_HEAR, "Карточка закрыта. Гости готовы, их чемоданы пока нет.",
@@ -467,6 +660,21 @@ export const extras: Record<string, Beat[]> = {
         ["Мы поехали в Киль.", [["Wir", "Ich", "Er"], ["sind", "bin", "ist"], ["nach Kiel", "in Kiel", "aus Kiel"], ["gefahren.", "fahren.", "gefährt."]]],
         ["Он приехал вчера.", [["Er", "Ich", "Wir"], ["ist", "bin", "sind"], ["gestern", "morgen", "jetzt"], ["angekommen.", "ankommen.", "ankommt."]]],
         ["Первого июня я в Киле.", [["Am ersten Juni", "Um ersten Juni", "Im ersten Juni"], ["bin", "bist", "ist"], ["ich", "du", "er"], ["in Kiel.", "nach Kiel.", "aus Kiel."]]],
+      ])),
+    step("12-x-letter", "Письмо с дороги", "Дана пишет Йенсену из поездки. Письмо Хауке подойдёт как образец.", LETTER, HINT_LETTER, "Йенсен подшил письмо к делу. Теперь в нём есть и погода.",
+      letter("Herr Jensen", ["Liebe Greta,", "wir sind gut in Hamburg angekommen. Das Wetter ist schön und warm. Am ersten Juni fahren wir nach Hause.", "Viele Grüße", "Hauke"], [
+        an("Lieber", "Herr Jensen"),
+        ["Wo sind Sie angekommen? → gut in Berlin", "Wir sind gut in Berlin angekommen."],
+        ["Wie ist das Wetter? → schlecht und kalt", "Das Wetter ist schlecht und kalt."],
+        ["Wann fahren Sie nach Hause? → am zweiten Juli", "Am zweiten Juli fahren wir nach Hause.", "Wir fahren am zweiten Juli nach Hause."],
+        gruss("Dana"),
+      ])),
+    step("12-x-oral", "Последняя репетиция", "Гости уезжают, а Хауке просит напоследок поговорить с ним по-немецки.", ORAL, HINT_ORAL, "Хауке доволен. Чайка делает вид, что всё поняла.",
+      oral([
+        say(2, ASK, "Thema: Reisen · Wort: Urlaub", "Wohin fahren Sie im Urlaub?", "Куда вы едете в отпуск?", "Wohin …?"),
+        reply(2, ANSWER, "Wie war Ihre Reise?", "Die Reise war schön.", "Поездка была хорошей."),
+        say(3, REQUEST, "🧳", "Können Sie mir bitte mit dem Koffer helfen?", "Помогите мне, пожалуйста, с чемоданом.", "Können Sie mir bitte …?"),
+        reply(3, REACT, "Wie ist das Wetter heute?", "Heute scheint die Sonne.", "Сегодня светит солнце."),
       ])),
   ],
 };

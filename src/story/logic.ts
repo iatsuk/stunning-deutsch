@@ -25,6 +25,8 @@ export function knownBefore(beats: Beat[], cursor: number): Set<string> {
 
 /** Голос выражений рассказа; реплики героев задают свой голос. */
 export const NARRATOR = "Anna";
+/** Голос партнёра в устной практике. */
+export const PARTNER = "Reed";
 export const audioKey = (text: string, voice = NARRATOR) => `${voice}|${text}`;
 /** Всё, что звучит в истории: по этому списку сборка связывает фразы с записями. */
 export function storyLines(
@@ -36,6 +38,12 @@ export function storyLines(
     ...episodes.flatMap((e) =>
       e.beats.flatMap((b) => [
         ...(b.voices ?? []).map(({ text, voice }) => ({ text, voice })),
+        ...(b.challenge.kind === "oral"
+          ? b.challenge.rounds.flatMap((r) => [
+              { text: r.model, voice: NARRATOR },
+              ...(r.hear ? [{ text: r.hear, voice: PARTNER }] : []),
+            ])
+          : []),
         ...(b.challenge.kind === "chat"
           ? b.challenge.turns.map((t) => ({
               text: t.say,
@@ -168,6 +176,11 @@ export function isCorrect(
       return sameList(value, challenge.rounds.map(lockKey));
     case "speak":
       return sameSet(value, challenge.lines);
+    case "oral":
+      return sameSet(
+        value,
+        challenge.rounds.map((r) => r.model),
+      );
     case "scene":
       return sameSet(
         value,
@@ -189,6 +202,7 @@ export function isCorrect(
     case "coins":
       return coinTotal(value) === challenge.answer;
     case "write":
+    case "letter":
       return (
         isRecord(value) &&
         challenge.fields.every(
@@ -228,6 +242,8 @@ export function solution(challenge: Challenge): Answer {
       return challenge.rounds.map(lockKey);
     case "speak":
       return challenge.lines;
+    case "oral":
+      return challenge.rounds.map((r) => r.model);
     case "scene":
       return challenge.items.map((i) => i.word);
     case "odd":
@@ -235,6 +251,7 @@ export function solution(challenge: Challenge): Answer {
     case "route":
       return challenge.moves;
     case "write":
+    case "letter":
       return Object.fromEntries(
         challenge.fields.map((f) => [f.id, f.answers[0]]),
       );
@@ -272,6 +289,7 @@ export function initialAnswer(challenge: Challenge): Answer {
     case "docks":
     case "gull":
     case "lock":
+    case "oral":
       return [];
     case "gaps":
       return challenge.answer.map(() => "");
@@ -282,6 +300,7 @@ export function initialAnswer(challenge: Challenge): Answer {
     case "sort":
     case "coins":
     case "write":
+    case "letter":
       return {};
     case "clock":
       return challenge.start;
@@ -292,7 +311,7 @@ export function initialAnswer(challenge: Challenge): Answer {
 
 /** Какие ответы формуляра ещё не верны: они возвращаются в память как ошибки. */
 export const wrongAnswers = (
-  c: Extract<Challenge, { kind: "write" }>,
+  c: Extract<Challenge, { kind: "write" | "letter" }>,
   value: Answer,
 ) =>
   c.fields
@@ -399,6 +418,7 @@ function restoreDraft(c: Challenge, v: unknown): Answer | undefined {
     case "speak":
     case "docks":
     case "gull":
+    case "oral":
     case "scene": {
       if (!strings) return undefined;
       const known =
@@ -406,7 +426,9 @@ function restoreDraft(c: Challenge, v: unknown): Answer | undefined {
           ? c.items.map((i) => i.word)
           : c.kind === "speak"
             ? c.lines
-            : c.words;
+            : c.kind === "oral"
+              ? c.rounds.map((r) => r.model)
+              : c.words;
       return [...new Set(v as string[])].filter((id) => known.includes(id));
     }
     case "odd":
@@ -458,7 +480,7 @@ function restoreDraft(c: Challenge, v: unknown): Answer | undefined {
               Number.isInteger(x) &&
               Number(x) >= 0
             );
-          if (c.kind === "write")
+          if (c.kind === "write" || c.kind === "letter")
             return c.fields.some((f) => f.id === id) && typeof x === "string";
           return c.items.some(
             (i) =>
@@ -640,7 +662,14 @@ function validateChallenge(
               options.includes(r.answer[i]),
           ),
       );
+    case "oral":
+      return (
+        c.rounds.length >= 2 &&
+        new Set(c.rounds.map((r) => r.model)).size === c.rounds.length &&
+        c.rounds.every((r) => r.model && r.ru && r.task && (r.card || r.hear))
+      );
     case "write":
+    case "letter":
       return (
         c.fields.length > 0 &&
         new Set(c.fields.map((f) => f.id)).size === c.fields.length &&

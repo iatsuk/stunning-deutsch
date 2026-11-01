@@ -1,0 +1,42 @@
+{
+ "date": "2026-11-01",
+ "scope": "Moin story: model answers and partner lines of the oral practice steps",
+ "model": "k2-fsa/OmniVoice",
+ "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+ "newFiles": 62,
+ "seconds": 135.8,
+ "bytes": 1492488,
+ "decodeFailures": 0,
+ "cutEndings": 0,
+ "asr": {
+  "model": "openai/whisper-large-v3",
+  "exact": 57,
+  "differences": [
+   {
+    "text": "Ich heiße Mateo. Ich komme aus Argentinien.",
+    "heard": "Ich heiße Matteo, ich komme aus Argentinien."
+   },
+   {
+    "text": "Meine Telefonnummer ist null eins sieben sechs, zwei drei vier fünf.",
+    "heard": "Meine Telefonnummer ist 0176 2345."
+   },
+   {
+    "text": "Ich bin dreißig Jahre alt.",
+    "heard": "Ich bin 30 Jahre alt."
+   }
+  ]
+ },
+ "seedOverrides": [
+  {
+   "text": "Em, O, I, En.",
+   "seed": 20640084,
+   "heard": "M-O-I-N"
+  },
+  {
+   "text": "Wie heißt Ihr Bruder?",
+   "seed": 20606875,
+   "heard": "Wie heißt ihr Bruder?"
+  }
+ ],
+ "note": "Remaining differences are Matteo for Mateo and digits for number words. Automated checks do not replace listening."
+}

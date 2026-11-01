@@ -27,11 +27,11 @@ const byId = (id) => beats.find((b) => b.id === id);
 
 test("12 sequential chapters cover the A1 route, with reachable, unique actions", () => {
   assert.equal(episodes.length, 12);
-  assert.equal(beats.length, 168);
+  assert.equal(beats.length, 192);
   assert.equal(new Set(episodes.map((e) => e.id)).size, 12);
   assert.deepEqual(validateStory(episodes, phrases), []);
-  assert.ok(episodes.every((e) => e.beats.length === 14));
-  assert.equal(new Set(beats.map((b) => b.challenge.kind)).size, 24);
+  assert.ok(episodes.every((e) => e.beats.length === 16));
+  assert.equal(new Set(beats.map((b) => b.challenge.kind)).size, 26);
   assert.equal(beats.at(-1).id, "12-finale");
 });
 test("detective answers require evidence; photos do not prove theft or intent", () => {
@@ -485,6 +485,65 @@ test("the game uses every word of the A1 lessons", () => {
     Object.keys(words).filter((w) => !used.has(w)),
     [],
   );
+});
+test("a letter needs every sentence right, adapted from the model and not copied", () => {
+  const letters = beats.filter((b) => b.challenge.kind === "letter");
+  assert.equal(letters.length, 12);
+  for (const b of letters) {
+    const c = b.challenge;
+    assert.equal(c.fields.length, 5, b.id);
+    const body = c.fields.flatMap((f) => f.answers[0]);
+    for (const sentence of body)
+      assert.ok(!c.model.includes(sentence), `${b.id}: ${sentence}`);
+    assert.ok(isCorrect(c, solution(c)), b.id);
+    assert.ok(!isCorrect(c, { ...solution(c), f1: "falsch" }), b.id);
+  }
+  const first = byId("01-x-letter").challenge;
+  assert.ok(isCorrect(first, { ...solution(first), f0: "Hallo Greta," }));
+  assert.ok(isCorrect(first, { ...solution(first), f4: "Liebe Grüße Anna" }));
+  assert.ok(
+    !isCorrect(first, { ...solution(first), f2: "ich komme aus russland." }),
+  );
+  const words = (b) =>
+    b.challenge.fields
+      .map((f) => f.answers[0])
+      .join(" ")
+      .split(/\s+/).length;
+  for (const b of letters.slice(9))
+    assert.ok(words(b) >= 22, `${b.id}: ${words(b)}`);
+  assert.deepEqual(
+    normalizeSave(
+      { drafts: { "01-x-letter": { f1: "Ich", bad: "x", f2: 3 } } },
+      beats,
+    ).drafts["01-x-letter"],
+    { f1: "Ich" },
+  );
+});
+test("oral practice follows the exam parts and always has a model to compare with", () => {
+  const steps = beats.filter((b) => b.challenge.kind === "oral");
+  assert.equal(steps.length, 12);
+  const parts = new Set();
+  for (const b of steps)
+    for (const r of b.challenge.rounds) {
+      parts.add(r.part);
+      assert.ok(r.card || r.hear, b.id);
+      assert.ok(!/[а-яё]/i.test(r.model), b.id);
+      assert.match(r.ru, /[а-яё]/i, b.id);
+    }
+  assert.deepEqual([...parts].sort(), [1, 2, 3]);
+  const c = byId("04-x-oral").challenge;
+  assert.ok(isCorrect(c, [...solution(c)].reverse()));
+  assert.ok(!isCorrect(c, solution(c).slice(1)));
+  assert.deepEqual(
+    normalizeSave({ drafts: { "04-x-oral": ["Ja, gern.", "bogus"] } }, beats)
+      .drafts["04-x-oral"],
+    ["Ja, gern."],
+  );
+  const lines = storyLines(episodes, phrases);
+  assert.ok(
+    lines.some((l) => l.text === "Möchten Sie Milch?" && l.voice === "Reed"),
+  );
+  assert.ok(lines.some((l) => l.text === "Ja, gern." && l.voice === "Anna"));
 });
 test("every chapter and every lock explain the grammar they ask for", () => {
   for (const episode of episodes)

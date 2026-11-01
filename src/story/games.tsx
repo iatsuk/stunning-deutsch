@@ -15,13 +15,23 @@ import { ClockView } from "../stage/Clock";
 import { judge, UMLAUTS } from "../trainer/logic";
 import { storyAudio, wordInfo } from "./audio";
 import { phrases } from "./data";
-import { canMove, coinTotal, lockKey, MOVES, placeKey, walk } from "./logic";
+import { wordCount } from "../assessment/logic";
+import {
+  canMove,
+  coinTotal,
+  lockKey,
+  MOVES,
+  PARTNER,
+  placeKey,
+  walk,
+} from "./logic";
 import type {
   Answer,
   ChatTurn,
   Challenge,
   LockRound,
   Move,
+  OralRound,
   VoiceLine,
 } from "./types";
 
@@ -1266,20 +1276,11 @@ export function Letters({
 }
 
 /** Запись живёт только в памяти этой страницы: на сервер и в сохранение она не попадает. */
-function SpeakLine({
-  line,
-  done,
-  onDone,
-}: {
-  line: string;
-  done: boolean;
-  onDone: () => void;
-}) {
+function useRecorder() {
   const [recording, setRecording] = useState(false);
   const [blocked, setBlocked] = useState(false);
   const [url, setUrl] = useState<string>();
   const recorder = useRef<MediaRecorder | null>(null);
-  const supported = typeof MediaRecorder !== "undefined";
   useEffect(
     () => () => {
       recorder.current?.stream.getTracks().forEach((t) => t.stop());
@@ -1311,6 +1312,35 @@ function SpeakLine({
       setBlocked(true);
     }
   }
+  return {
+    available: typeof MediaRecorder !== "undefined" && !blocked,
+    blocked,
+    recording,
+    url,
+    toggle,
+    clear: () => setUrl(undefined),
+  };
+}
+
+function RecordButton({ rec }: { rec: ReturnType<typeof useRecorder> }) {
+  if (!rec.available) return null;
+  return (
+    <button type="button" aria-pressed={rec.recording} onClick={rec.toggle}>
+      {rec.recording ? "■ Стоп" : "● Записать себя"}
+    </button>
+  );
+}
+
+function SpeakLine({
+  line,
+  done,
+  onDone,
+}: {
+  line: string;
+  done: boolean;
+  onDone: () => void;
+}) {
+  const rec = useRecorder();
   return (
     <li data-done={done || undefined}>
       <div>
@@ -1319,14 +1349,10 @@ function SpeakLine({
       </div>
       {!done && (
         <div className="moin-speak-tools">
-          {supported && !blocked && (
-            <button type="button" aria-pressed={recording} onClick={toggle}>
-              {recording ? "■ Стоп" : "● Записать себя"}
-            </button>
-          )}
-          {url && (
+          <RecordButton rec={rec} />
+          {rec.url && (
             <span>
-              <PlayButton src={url} label="Послушать себя" /> Моя запись
+              <PlayButton src={rec.url} label="Послушать себя" /> Моя запись
             </span>
           )}
           <button type="button" className="primary" onClick={onDone}>
@@ -1334,7 +1360,7 @@ function SpeakLine({
           </button>
         </div>
       )}
-      {blocked && (
+      {rec.blocked && (
         <p>
           Запись недоступна: браузер не дал доступ к микрофону. Скажите вслух.
         </p>
@@ -1667,6 +1693,216 @@ export function Lock({
         onMiss={() => miss()}
         onDone={() => {
           const next = [...solved, lockKey(round)];
+          change(next);
+          if (next.length === c.rounds.length) win();
+        }}
+      />
+    </>
+  );
+}
+
+/** Письмо по образцу: меняются только данные, поэтому каждое предложение можно проверить точно. */
+export function Letter({
+  c,
+  value,
+  disabled,
+  change,
+  win,
+  miss,
+}: Game<"letter">) {
+  const record = asRecord(value);
+  const field = useRef<HTMLInputElement | null>(null);
+  const [tries, setTries] = useState(0);
+  const [checked, setChecked] = useState(false);
+  const text = (id: string) => String(record[id] ?? "");
+  const verdict = (f: (typeof c.fields)[number]) =>
+    judge(text(f.id), f.answers);
+  function check() {
+    setChecked(true);
+    setTries(tries + 1);
+    if (c.fields.every((f) => verdict(f) === "right")) return win();
+    miss();
+  }
+  return (
+    <div className="moin-letter">
+      <div className="moin-source">
+        <div className="kicker">Образец</div>
+        {c.model.map((line, i) => (
+          <p key={i} lang="de">
+            {line}
+          </p>
+        ))}
+      </div>
+      <div className="moin-write">
+        <div className="kicker">Письмо · {c.to}</div>
+        {c.fields.map((f) => {
+          const wrong = checked && !disabled && verdict(f) !== "right";
+          return (
+            <label key={f.id}>
+              <span lang="de">{f.label}</span>
+              <input
+                {...textInput}
+                data-field={f.id}
+                disabled={disabled}
+                value={text(f.id)}
+                data-wrong={wrong || undefined}
+                onFocus={(event) => (field.current = event.currentTarget)}
+                onChange={(event) => {
+                  setChecked(false);
+                  change({ ...record, [f.id]: event.target.value });
+                }}
+              />
+              {wrong && (
+                <small role="status">
+                  {verdict(f) === "case"
+                    ? "Почти: проверьте заглавные буквы."
+                    : verdict(f) === "umlaut"
+                      ? "Почти: нужна буква с умлаутом или ß."
+                      : tries > 1
+                        ? `Правильно: ${f.answers[0]}`
+                        : "Сравните с образцом: меняются только данные."}
+                </small>
+              )}
+            </label>
+          );
+        })}
+        {!disabled && (
+          <UmlautKeys
+            field={field}
+            apply={(input, value) => {
+              setChecked(false);
+              change({ ...record, [input.dataset.field!]: value });
+            }}
+          />
+        )}
+      </div>
+      <p className="moin-count">
+        Слов: {wordCount(c.fields.map((f) => text(f.id)).join(" "))}
+      </p>
+      {!disabled && (
+        <button type="button" className="primary" onClick={check}>
+          Проверить письмо
+        </button>
+      )}
+    </div>
+  );
+}
+
+/** Сначала сказать самому, потом сверить: образец до ответа превратил бы речь в чтение вслух. */
+function OralTurn({ round, onDone }: { round: OralRound; onDone: () => void }) {
+  const [compare, setCompare] = useState(false);
+  const [hint, setHint] = useState(false);
+  const rec = useRecorder();
+  const model = storyAudio(round.model);
+  return (
+    <div className="moin-oral">
+      <div className="kicker">Sprechen · Teil {round.part}</div>
+      <p>{round.task}</p>
+      {round.card && (
+        <div
+          className="moin-oral-card"
+          lang="de"
+          data-picture={!/\p{L}/u.test(round.card) || undefined}
+        >
+          {round.card}
+        </div>
+      )}
+      {round.hear && (
+        <div className="moin-call">
+          <PlayButton
+            src={storyAudio(round.hear, PARTNER)}
+            size="md"
+            label="Послушать партнёра"
+          />
+          <span>Послушайте партнёра</span>
+        </div>
+      )}
+      {hint && <p lang="de">{round.hint}</p>}
+      {compare ? (
+        <>
+          <div className="moin-oral-result">
+            {round.hear && <small lang="de">{round.hear}</small>}
+            <span className="moin-word-line" lang="de">
+              {round.model} <PlayButton src={model} label="Послушать образец" />
+            </span>
+            <small>{round.ru}</small>
+            {rec.url && (
+              <span>
+                <PlayButton src={rec.url} label="Послушать себя" /> Моя запись
+              </span>
+            )}
+          </div>
+          <div className="moin-speak-tools">
+            <button type="button" className="primary" onClick={onDone}>
+              Получилось
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                stopAudio();
+                rec.clear();
+                setCompare(false);
+              }}
+            >
+              Ещё раз
+            </button>
+          </div>
+        </>
+      ) : (
+        <div className="moin-speak-tools">
+          <RecordButton rec={rec} />
+          {rec.url && (
+            <span>
+              <PlayButton src={rec.url} label="Послушать себя" /> Моя запись
+            </span>
+          )}
+          {round.hint && !hint && (
+            <button type="button" onClick={() => setHint(true)}>
+              Начало фразы
+            </button>
+          )}
+          <button
+            type="button"
+            className="primary"
+            onClick={() => {
+              setCompare(true);
+              play(model);
+            }}
+          >
+            Сверить с образцом
+          </button>
+        </div>
+      )}
+      {rec.blocked && (
+        <p>
+          Запись недоступна: браузер не дал доступ к микрофону. Скажите вслух.
+        </p>
+      )}
+    </div>
+  );
+}
+
+export function Oral({ c, value, disabled, change, win }: Game<"oral">) {
+  const done = asList(value);
+  const round = c.rounds.find((r) => !done.includes(r.model));
+  if (!round || disabled)
+    return (
+      <ul className="moin-lock-done" lang="de">
+        {c.rounds.map((r) => (
+          <li key={r.model}>{r.model}</li>
+        ))}
+      </ul>
+    );
+  return (
+    <>
+      <p className="moin-count">
+        Задание {done.length + 1} из {c.rounds.length}
+      </p>
+      <OralTurn
+        key={round.model}
+        round={round}
+        onDone={() => {
+          const next = [...done, round.model];
           change(next);
           if (next.length === c.rounds.length) win();
         }}

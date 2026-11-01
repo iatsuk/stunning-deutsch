@@ -18,10 +18,12 @@ import {
   Docks,
   Gaps,
   Gull,
+  Letter,
   Letters,
   Lock,
   Memory,
   Odd,
+  Oral,
   Pairs,
   Scene,
   Sort,
@@ -73,6 +75,8 @@ const GAME_NAMES: Record<Challenge["kind"], string> = {
   docks: "Три причала",
   gull: "Наперегонки с чайкой",
   lock: "Кодовый замок",
+  letter: "Письмо по образцу",
+  oral: "Вслух, как на экзамене",
   chat: "Разговор",
   verdict: "Штамп",
   gaps: "Записка с пропусками",
@@ -96,6 +100,8 @@ const AUTOMATIC: Challenge["kind"][] = [
   "docks",
   "gull",
   "lock",
+  "letter",
+  "oral",
 ];
 
 function load(): { save: StorySave; started: boolean } {
@@ -846,6 +852,8 @@ function StoryTurn({
       {c.kind === "docks" && <Docks c={c} {...game} />}
       {c.kind === "gull" && <Gull c={c} {...game} />}
       {c.kind === "lock" && <Lock c={c} {...game} />}
+      {c.kind === "letter" && <Letter c={c} {...game} />}
+      {c.kind === "oral" && <Oral c={c} {...game} />}
       {c.kind === "chat" && <Chat c={c} {...game} />}
       {c.kind === "verdict" && <Verdict c={c} {...game} />}
       {c.kind === "gaps" && <Gaps c={c} {...game} />}
