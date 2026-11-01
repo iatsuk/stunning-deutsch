@@ -25,6 +25,7 @@ import {
   placeKey,
   walk,
 } from "./logic";
+import { lockCard } from "./memory";
 import type {
   Answer,
   ChatTurn,
@@ -1690,7 +1691,7 @@ export function Lock({
         key={lockKey(round)}
         round={round}
         seed={`${seed}-${solved.length}`}
-        onMiss={() => miss()}
+        onMiss={() => miss(lockCard(round))}
         onDone={() => {
           const next = [...solved, lockKey(round)];
           change(next);

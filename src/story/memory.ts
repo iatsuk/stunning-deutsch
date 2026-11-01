@@ -1,14 +1,22 @@
 import { plain } from "../lib/german.ts";
-import { beatPhrases, challengeWords } from "./logic.ts";
-import type { Beat, Challenge, Mark, WordCard } from "./types.ts";
+import { beatPhrases, challengeWords, lockKey } from "./logic.ts";
+import { stepRules } from "./rules.ts";
+import type { Beat, Challenge, LockRound, Mark, WordCard } from "./types.ts";
 
 // Память слов: коробки Лейтнера с двумя часами. Слово возвращается через заданное число шагов
 // истории или дней, смотря что наступит раньше. Шаги работают, пока игрок проходит много за раз,
-// дни — когда он сделал перерыв или уже закончил историю.
+// дни — когда он сделал перерыв или уже закончил историю. Фразы замков идут в той же очереди,
+// поэтому грамматика возвращается вместе со словами своей главы.
 
 export type Cards = Record<string, WordCard>;
 export type Dictionary = Record<string, { ru: string; audio?: string }>;
-export type Round = { words: string[]; challenge: Challenge };
+export type Round = {
+  words: string[];
+  challenge: Challenge;
+  /** Какие правила открыть при ошибке в фразе замка. */
+  rules?: Record<string, string[]>;
+};
+export type Locks = Record<string, { round: LockRound; rules: string[] }>;
 
 const INTERVALS = [
   { steps: 14, days: 1 },
@@ -21,6 +29,9 @@ const INTERVALS = [
 /** Сколько шагов истории между раундами, если не наступил новый день. */
 const EVERY = 4;
 const MIN_ROUND = 4;
+/** Фразы замков в раунде и то, насколько близко к началу очереди они должны стоять. */
+const LOCK_ROUND = 3;
+const QUEUE_HEAD = 12;
 const SIZE = { bingo: 12, gull: 10, docks: 10, letters: 5, write: 6 };
 type RoundKind = keyof typeof SIZE;
 /** Чем прочнее слово, тем труднее игры: услышать, вспомнить по смыслу, собрать, написать. */
@@ -61,7 +72,21 @@ const meaning = (ru: string) =>
 export const dayNumber = (now = Date.now()) =>
   Math.floor((now - new Date(now).getTimezoneOffset() * 60_000) / 86_400_000);
 
-/** Слова шага, которые есть в словаре уроков: у них есть перевод и запись. */
+/** Фраза замка в памяти: приставка не даёт ей совпасть со словом словаря. */
+const LOCK = "lock:";
+export const lockCard = (round: LockRound) => `${LOCK}${lockKey(round)}`;
+
+/** Все фразы замков вместе с правилами шага, откуда они взяты. */
+export function lockCards(beats: Beat[]): Locks {
+  const locks: Locks = {};
+  for (const { id, challenge: c } of beats)
+    if (c.kind === "lock")
+      for (const round of c.rounds)
+        locks[lockCard(round)] = { round, rules: stepRules[id] ?? [] };
+  return locks;
+}
+
+/** Что запоминает шаг: слова из словаря уроков (у них есть перевод и запись) и фразы замка. */
 export function stepWords(
   beat: Beat,
   dictionary: Dictionary,
@@ -72,7 +97,9 @@ export function stepWords(
     ...challengeWords(c),
     ...(c.kind === "write" ? c.fields.flatMap((f) => f.answers) : []),
     ...beatPhrases(beat).map((id) => plain(phrases[id].de)),
-  ].filter((word) => dictionary[word]);
+  ]
+    .filter((word) => dictionary[word])
+    .concat(c.kind === "lock" ? c.rounds.map(lockCard) : []);
 }
 
 /** Первая встреча кладёт слово в начальную коробку; повторная встреча его не трогает. */
@@ -176,7 +203,15 @@ function candidates(kind: RoundKind, pool: string[], dictionary: Dictionary) {
   return kind === "gull" ? distinct(pool, dictionary) : pool;
 }
 
+const lockRound = (cards: string[], locks: Locks): Round => ({
+  words: cards,
+  challenge: { kind: "lock", rounds: cards.map((card) => locks[card].round) },
+  rules: Object.fromEntries(cards.map((card) => [card, locks[card].rules])),
+});
+
 /**
+ * Фразы замков берём, когда их очередь подошла вместе со словами той же главы: так грамматика
+ * возвращается и не отнимает весь раунд у слов. Если слов не хватает, раунд тоже из фраз.
  * Трудность задаёт самое просроченное слово.
  * Игры чередуются по длине очереди, запасной вариант — чайка, она подходит любому слову.
  */
@@ -185,9 +220,20 @@ export function buildRound(
   step: number,
   day: number,
   dictionary: Dictionary,
+  locks: Locks = {},
 ): Round | null {
-  const due = dueWords(cards, step, day).filter((word) => dictionary[word]);
-  if (due.length < MIN_ROUND) return null;
+  const queue = dueWords(cards, step, day);
+  const phrases = queue.filter((card) => locks[card]);
+  if (
+    queue.slice(0, QUEUE_HEAD).filter((card) => locks[card]).length >=
+    LOCK_ROUND
+  )
+    return lockRound(phrases.slice(0, LOCK_ROUND), locks);
+  const due = queue.filter((word) => dictionary[word]);
+  if (due.length < MIN_ROUND)
+    return phrases.length
+      ? lockRound(phrases.slice(0, LOCK_ROUND), locks)
+      : null;
   const main = level(cards[due[0]].box);
   const same = due.filter((word) => level(cards[word].box) === main);
   const pool = [...same, ...due.filter((word) => !same.includes(word))];
@@ -209,8 +255,14 @@ export function buildRound(
 export const timeForRound = (last: Mark, step: number, day: number) =>
   step - last.step >= EVERY || day > last.day;
 
-export const memoryStats = (cards: Cards) => ({
-  met: Object.keys(cards).length,
-  returned: Object.values(cards).filter((c) => c.box >= 1).length,
-  firm: Object.values(cards).filter((c) => c.box >= FIRM_BOX).length,
-});
+export function memoryStats(cards: Cards) {
+  const entries = Object.entries(cards);
+  const words = entries.filter(([key]) => !key.startsWith(LOCK));
+  return {
+    met: words.length,
+    returned: words.filter(([, c]) => c.box >= 1).length,
+    firm: words.filter(([, c]) => c.box >= FIRM_BOX).length,
+    phrases: entries.filter(([key, c]) => key.startsWith(LOCK) && c.box >= 1)
+      .length,
+  };
+}

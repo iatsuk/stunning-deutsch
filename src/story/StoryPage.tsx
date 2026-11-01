@@ -51,6 +51,7 @@ import {
   dayNumber,
   dueWords,
   grade,
+  lockCards,
   memoryStats,
   remember,
   slip,
@@ -59,6 +60,8 @@ import {
 } from "./memory";
 import type { Answer, Beat, Challenge, StorySave } from "./types";
 import "./story.css";
+
+const LOCKS = lockCards(beats);
 
 const GAME_NAMES: Record<Challenge["kind"], string> = {
   choice: "Вывод",
@@ -229,7 +232,7 @@ export function StoryPage() {
   const newPhrases = beatPhrases(beat).filter((id) => !known.has(id));
   const finished = save.completed === beats.length;
   const today = dayNumber();
-  const round = buildRound(save.cards, save.completed, today, a1Words);
+  const round = buildRound(save.cards, save.completed, today, a1Words, LOCKS);
   // Посреди истории раунд встаёт перед новым шагом, а после финала ждёт следующего захода:
   // закончившему дело сначала показываем развязку.
   const drillDue = finished
@@ -405,7 +408,7 @@ export function StoryPage() {
                     Повторить ·{" "}
                     {plural(
                       dueWords(save.cards, save.completed, today).length,
-                      ["слово", "слова", "слов"],
+                      ["карточка", "карточки", "карточек"],
                     )}
                   </button>
                 )}
@@ -614,7 +617,7 @@ export function StoryPage() {
                       })
                     }
                     onSlip={(word) =>
-                      wordInfo(word) &&
+                      (wordInfo(word) || LOCKS[word]) &&
                       setSave((s) => ({
                         ...s,
                         cards: slip(s.cards, word, s.completed, dayNumber()),
@@ -726,8 +729,9 @@ export function StoryPage() {
                   </p>
                   <p className="moin-route-note">
                     Слов встречено: {stats.met}, повторено: {stats.returned},
-                    закреплено: {stats.firm}. Это счётчик повторений, а не
-                    проверка владения.
+                    закреплено: {stats.firm}. Фраз замков повторено:{" "}
+                    {stats.phrases} из {Object.keys(LOCKS).length}. Это счётчик
+                    повторений, а не проверка владения.
                   </p>
                 </aside>
               )}

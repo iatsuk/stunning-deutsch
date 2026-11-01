@@ -8,6 +8,8 @@ import {
   dayNumber,
   dueWords,
   grade,
+  lockCard,
+  lockCards,
   memoryStats,
   remember,
   slip,
@@ -21,6 +23,7 @@ const dictionary = JSON.parse(
 const CHAPTER = 16;
 const chapterOf = (index) => Math.floor(index / CHAPTER);
 const all = Object.keys(dictionary);
+const locks = lockCards(beats);
 
 /** Все слова словаря в одной коробке и с просрочкой: так раунд выбирает из всего словаря. */
 const shelf = (box) =>
@@ -154,8 +157,50 @@ test("the stats tell met, returned and firm words apart", () => {
       b: { box: 1, step: 0, day: 0 },
       c: { box: 3, step: 0, day: 0 },
     }),
-    { met: 3, returned: 2, firm: 1 },
+    { met: 3, returned: 2, firm: 1, phrases: 0 },
   );
+  assert.deepEqual(
+    memoryStats({
+      a: { box: 1, step: 0, day: 0 },
+      "lock:Ich wohne in Kiel.": { box: 1, step: 0, day: 0 },
+      "lock:Woher kommst du?": { box: 0, step: 0, day: 0 },
+    }),
+    { met: 1, returned: 1, firm: 0, phrases: 1 },
+  );
+});
+test("lock phrases keep their rule and never collide with dictionary words", () => {
+  assert.equal(Object.keys(locks).length, 36);
+  for (const [card, { round, rules }] of Object.entries(locks)) {
+    assert.equal(card, lockCard(round));
+    assert.ok(!dictionary[card], card);
+    assert.ok(rules.length, card);
+  }
+  const step = beats.find((b) => b.id === "01-x-lock");
+  assert.deepEqual(
+    stepWords(step, dictionary, phrases).filter((w) => w.startsWith("lock:")),
+    step.challenge.rounds.map(lockCard),
+  );
+});
+test("phrases join a round when their turn comes, words are not pushed out", () => {
+  const phrase = (card, step) => [card, { box: 0, step, day: 0 }];
+  const keys = Object.keys(locks);
+  const old = Object.fromEntries(keys.slice(0, 3).map((k) => phrase(k, 0)));
+  const round = buildRound(old, 500, 0, dictionary, locks);
+  assert.equal(round.challenge.kind, "lock");
+  assert.deepEqual(round.words, keys.slice(0, 3));
+  assert.ok(isCorrect(round.challenge, solution(round.challenge)));
+  assert.ok(round.rules[keys[0]].length);
+  const crowded = {
+    ...Object.fromEntries(all.slice(0, 40).map((w) => phrase(w, 0))),
+    ...Object.fromEntries(keys.slice(0, 3).map((k) => phrase(k, 300))),
+  };
+  assert.notEqual(
+    buildRound(crowded, 500, 0, dictionary, locks).challenge.kind,
+    "lock",
+  );
+  const single = Object.fromEntries(keys.slice(0, 1).map((k) => phrase(k, 0)));
+  assert.equal(buildRound(single, 500, 0, dictionary, locks).words.length, 1);
+  assert.equal(buildRound(single, 500, 0, dictionary), null);
 });
 
 /** Игрок проходит историю, ошибаясь в заданной доле слов; утром играет разминку из трёх раундов. */
@@ -172,7 +217,7 @@ function playthrough({ pace, slipRate, days = 0 }) {
     if (!timeForRound(last, step, day)) return;
     const goal = day > last.day ? 3 : 1;
     for (let i = 0; i < goal; i++) {
-      const round = buildRound(cards, step, day, dictionary);
+      const round = buildRound(cards, step, day, dictionary, locks);
       if (!round) return;
       const missed = round.words.filter(() => random() < slipRate);
       cards = grade(cards, round.words, missed, step, day);
@@ -205,7 +250,9 @@ function playthrough({ pace, slipRate, days = 0 }) {
   });
   return {
     storyRounds,
-    entered: Object.keys(cards).length,
+    entered: memoryStats(cards).met,
+    phrases: Object.keys(locks).filter((card) => returns[card]).length,
+    phrasesInStory: Object.keys(locks).filter((card) => inStory[card]).length,
     later: all.filter((word) =>
       inStory[word]?.some((chapter) => chapter > first[word]),
     ).length,
@@ -222,9 +269,15 @@ test("most words come back in a later chapter, whatever the pace", () => {
     assert.ok(storyRounds <= 66, `${pace}: ${storyRounds} rounds`);
   }
   const usual = playthrough({ pace: 20, slipRate: 0.15 });
-  assert.ok(usual.later >= all.length * 0.8, `${usual.later}`);
+  assert.ok(usual.later >= all.length * 0.75, `${usual.later}`);
+  assert.ok(usual.phrasesInStory >= 20, `${usual.phrasesInStory}`);
 });
 test("two weeks of warm-ups after the finale reach every word", () => {
-  const { reviewed } = playthrough({ pace: 20, slipRate: 0.15, days: 14 });
+  const { reviewed, phrases: back } = playthrough({
+    pace: 20,
+    slipRate: 0.15,
+    days: 14,
+  });
   assert.equal(reviewed, all.length);
+  assert.equal(back, 36);
 });

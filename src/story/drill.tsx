@@ -1,8 +1,9 @@
 import { useRef, useState } from "react";
 import { wordInfo } from "./audio";
-import { Bingo, Docks, Gull, Letters, Write } from "./games";
-import { initialAnswer, wrongAnswers } from "./logic";
-import { WELCOME_ROUNDS, type Round } from "./memory";
+import { Bingo, Docks, Gull, Letters, Lock, Write } from "./games";
+import { initialAnswer, lockKey, wrongAnswers } from "./logic";
+import { lockCard, WELCOME_ROUNDS, type Round } from "./memory";
+import { RuleCard } from "./RuleCard";
 import type { Answer, Challenge } from "./types";
 
 // Повторение поверх истории: те же игры, но слова подбирает память, а не автор главы.
@@ -13,6 +14,7 @@ const PROMPTS: Partial<Record<Challenge["kind"], string>> = {
   gull: "Прочитайте перевод и нажмите немецкое слово, пока чайка не долетела.",
   docks: "К какому причалу подходит слово: der, die или das?",
   letters: "Соберите слово по буквам.",
+  lock: "Поверните диски, чтобы получилась фраза, и откройте замок.",
   write: "Напишите по-немецки. У существительных нужен артикль.",
 };
 
@@ -29,6 +31,7 @@ function DrillRound({
   const [value, setValue] = useState<Answer>(() => initialAnswer(c));
   const [checked, setChecked] = useState(false);
   const [revealed, setRevealed] = useState<string[]>([]);
+  const [rules, setRules] = useState<string[]>([]);
   const missed = useRef(new Set<string>());
   const win = () => onFinish([...missed.current]);
   const game = {
@@ -42,7 +45,9 @@ function DrillRound({
     },
     win,
     miss(word?: string) {
-      if (word) missed.current.add(word);
+      if (!word) return;
+      missed.current.add(word);
+      setRules(round.rules?.[word] ?? []);
     },
   };
   function check() {
@@ -60,6 +65,7 @@ function DrillRound({
       {c.kind === "gull" && <Gull c={c} {...game} />}
       {c.kind === "docks" && <Docks c={c} {...game} />}
       {c.kind === "letters" && <Letters c={c} {...game} />}
+      {c.kind === "lock" && <Lock c={c} {...game} />}
       {c.kind === "write" && (
         <>
           <Write c={c} {...game} />
@@ -80,8 +86,22 @@ function DrillRound({
           </div>
         </>
       )}
+      {rules.map((id) => (
+        <RuleCard key={id} id={id} open />
+      ))}
     </>
   );
+}
+
+/** Что показать в итоге раунда: у фразы замка ключ служебный, а перевод лежит в ней самой. */
+function missedLine(word: string, round: Round) {
+  const phrase =
+    round.challenge.kind === "lock"
+      ? round.challenge.rounds.find((r) => lockCard(r) === word)
+      : undefined;
+  return phrase
+    ? { de: lockKey(phrase), ru: phrase.ru }
+    : { de: word, ru: wordInfo(word)?.ru };
 }
 
 export function WordDrill({
@@ -142,13 +162,15 @@ export function WordDrill({
             </strong>
             {missed.length > 0 && (
               <>
-                Эти слова вернутся раньше:
+                Это вернётся раньше:
                 <ul>
-                  {missed.map((word) => (
-                    <li key={word}>
-                      <span lang="de">{word}</span> — {wordInfo(word)?.ru}
-                    </li>
-                  ))}
+                  {missed
+                    .map((word) => missedLine(word, round))
+                    .map(({ de, ru }) => (
+                      <li key={de}>
+                        <span lang="de">{de}</span> — {ru}
+                      </li>
+                    ))}
                 </ul>
               </>
             )}
