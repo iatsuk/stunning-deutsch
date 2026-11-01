@@ -1776,9 +1776,9 @@ export const episodes: Episode[] = [
         practice: ["headache"],
         prompt: "Послушайте пациентов и запишите, где болит.",
         challenge: write("Wartekarten", [
-          ["a", "Patient A · Wo tut es weh?", ["Kopf", "der Kopf"]],
-          ["b", "Patientin B · Wo tut es weh?", ["Bauch", "der Bauch"]],
-          ["c", "Patient C · Wo tut es weh?", ["Rücken", "der Rücken"]],
+          ["a", "Patient A · Wo tut es weh?", ["der Kopf", "Kopf"]],
+          ["b", "Patientin B · Wo tut es weh?", ["der Bauch", "Bauch"]],
+          ["c", "Patient C · Wo tut es weh?", ["der Rücken", "Rücken"]],
         ]),
         hint: "Kopf — голова; Bauch — живот; Rücken — спина.",
         success: "Карточки разложены. Назначения остаются делом врача.",

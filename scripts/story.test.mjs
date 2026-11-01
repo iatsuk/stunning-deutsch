@@ -131,6 +131,8 @@ test("saved progress survives reload, clamps malformed data, and retains unfinis
     drafts: { "02-number": "0176", "01-question": ["Wo", "ist"] },
     support: true,
     weak: { where: 2 },
+    cards: { "der Hafen": { box: 1, step: 3, day: 4 } },
+    last: { step: 3, day: 4 },
   };
   assert.deepEqual(
     normalizeSave(JSON.parse(JSON.stringify(draft)), beats),

@@ -37,7 +37,8 @@ type Game<K extends Challenge["kind"]> = {
   checked: boolean;
   change: (value: Answer) => void;
   win: () => void;
-  miss: () => void;
+  /** Ошибка на шаге; слово передают игры, которые знают, в каком слове ошиблись. */
+  miss: (word?: string) => void;
 };
 
 const asList = (value: Answer) => (Array.isArray(value) ? value : []);
@@ -968,6 +969,7 @@ export function Bingo({
   disabled,
   change,
   win,
+  miss: slip,
 }: Game<"bingo">) {
   const found = asList(value);
   const card = useMemo(() => shuffle(c.words, seed), [c, seed]);
@@ -975,7 +977,10 @@ export function Bingo({
   const [miss, setMiss] = useState("");
   const current = calls.find((word) => !found.includes(word));
   function tap(word: string) {
-    if (word !== current) return setMiss(word);
+    if (word !== current) {
+      if (current) slip(current);
+      return setMiss(word);
+    }
     const next = [...found, word];
     setMiss("");
     change(next);
@@ -1029,6 +1034,7 @@ export function Scene({
   disabled,
   change,
   win,
+  miss: slip,
 }: Game<"scene">) {
   const found = asList(value);
   const items = useMemo(() => shuffle(c.items, seed), [c, seed]);
@@ -1036,7 +1042,10 @@ export function Scene({
   const [miss, setMiss] = useState("");
   const current = tasks.find((item) => !found.includes(item.word));
   function tap(word: string) {
-    if (word !== current?.word) return setMiss(word);
+    if (word !== current?.word) {
+      if (current) slip(current.word);
+      return setMiss(word);
+    }
     const next = [...found, word];
     setMiss("");
     change(next);
@@ -1157,10 +1166,12 @@ function LetterWord({
   word,
   seed,
   onDone,
+  onMiss,
 }: {
   word: string;
   seed: string;
   onDone: () => void;
+  onMiss: () => void;
 }) {
   const article = /^(der|die|das) /.exec(word)?.[1];
   const target = article ? word.slice(article.length + 1) : word;
@@ -1174,7 +1185,10 @@ function LetterWord({
   }, [target, seed]);
   const finished = typed === target.length;
   function tap(letter: string, index: number) {
-    if (letter !== target[typed].toLowerCase()) return setMiss(index);
+    if (letter !== target[typed].toLowerCase()) {
+      onMiss();
+      return setMiss(index);
+    }
     setMiss(null);
     setTyped(typed + 1);
     setUsed([...used, index]);
@@ -1221,6 +1235,7 @@ export function Letters({
   disabled,
   change,
   win,
+  miss,
 }: Game<"letters">) {
   const done = asList(value);
   const current = c.words.find((word) => !done.includes(word));
@@ -1239,6 +1254,7 @@ export function Letters({
         key={current}
         word={current}
         seed={`${seed}-${done.length}`}
+        onMiss={() => miss(current)}
         onDone={() => {
           const next = [...done, current];
           change(next);
@@ -1372,6 +1388,7 @@ export function Docks({
   disabled,
   change,
   win,
+  miss,
 }: Game<"docks">) {
   const done = asList(value);
   const { current, postpone } = useQueue(c.words, seed, done);
@@ -1382,6 +1399,7 @@ export function Docks({
     play(info?.audio);
     if (!current.startsWith(`${article} `)) {
       setNote(`Нет, ${current} (${info?.ru}). Слово вернётся в конце.`);
+      miss(current);
       return postpone(current);
     }
     const next = [...done, current];
@@ -1478,7 +1496,15 @@ function GullRound({
   );
 }
 
-export function Gull({ c, value, seed, disabled, change, win }: Game<"gull">) {
+export function Gull({
+  c,
+  value,
+  seed,
+  disabled,
+  change,
+  win,
+  miss,
+}: Game<"gull">) {
   const done = asList(value);
   const { current, postpone } = useQueue(c.words, seed, done);
   const [lost, setLost] = useState(0);
@@ -1492,6 +1518,7 @@ export function Gull({ c, value, seed, disabled, change, win }: Game<"gull">) {
   const lose = (message: string) => {
     setNote(message);
     setLost((n) => n + 1);
+    miss(current);
     postpone(current);
   };
   return (

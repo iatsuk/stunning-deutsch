@@ -46,28 +46,28 @@ export function storyLines(
     ),
   ];
 }
-/** Слова словаря уроков, которые использует игра: сборка проверяет, что они существуют. */
-export function storyWords(episodes: Episode[]): string[] {
-  return [
-    ...new Set(
-      episodes.flatMap((e) =>
-        e.beats.flatMap(({ challenge: c }) => {
-          if (
-            c.kind === "bingo" ||
-            c.kind === "letters" ||
-            c.kind === "docks" ||
-            c.kind === "gull"
-          )
-            return c.words;
-          if (c.kind === "speak") return c.lines;
-          if (c.kind === "scene") return c.items.map((i) => i.word);
-          if (c.kind === "odd") return c.rounds.flatMap((r) => r.words);
-          return [];
-        }),
-      ),
-    ),
-  ];
+/** Слова словаря уроков, которыми играет этот шаг. */
+export function challengeWords(c: Challenge): string[] {
+  if (
+    c.kind === "bingo" ||
+    c.kind === "letters" ||
+    c.kind === "docks" ||
+    c.kind === "gull"
+  )
+    return c.words;
+  if (c.kind === "speak") return c.lines;
+  if (c.kind === "scene") return c.items.map((i) => i.word);
+  if (c.kind === "odd") return c.rounds.flatMap((r) => r.words);
+  return [];
 }
+/** Сборка проверяет, что каждое слово игры есть в словаре уроков. */
+export const storyWords = (episodes: Episode[]) => [
+  ...new Set(
+    episodes.flatMap((e) =>
+      e.beats.flatMap((b) => challengeWords(b.challenge)),
+    ),
+  ),
+];
 
 /** Решённый раунд замка хранится как собранная фраза. */
 export const lockKey = (round: LockRound) => round.answer.join(" ");
@@ -290,6 +290,18 @@ export function initialAnswer(challenge: Challenge): Answer {
   }
 }
 
+/** Какие ответы формуляра ещё не верны: они возвращаются в память как ошибки. */
+export const wrongAnswers = (
+  c: Extract<Challenge, { kind: "write" }>,
+  value: Answer,
+) =>
+  c.fields
+    .filter((f) => {
+      const text = isRecord(value) ? String(value[f.id] ?? "") : "";
+      return judge(text, f.answers) !== "right";
+    })
+    .map((f) => f.answers[0]);
+
 /** Что сказать после неудачной проверки: сначала о незавершённом, затем о смысле. */
 export function mistake(c: Challenge, value: Answer, hint: string): string {
   const record = isRecord(value) ? value : {};
@@ -461,6 +473,9 @@ function restoreDraft(c: Challenge, v: unknown): Answer | undefined {
   }
 }
 
+const isCount = (value: unknown) =>
+  Number.isInteger(value) && Number(value) >= 0;
+
 export function normalizeSave(raw: unknown, beats: Beat[]): StorySave {
   const data =
     raw && typeof raw === "object" ? (raw as Partial<StorySave>) : {};
@@ -484,6 +499,15 @@ export function normalizeSave(raw: unknown, beats: Beat[]): StorySave {
           ),
         )
       : {};
+  const cards =
+    data.cards && typeof data.cards === "object"
+      ? Object.fromEntries(
+          Object.entries(data.cards).filter(
+            ([, card]) =>
+              isCount(card?.box) && isCount(card?.step) && isCount(card?.day),
+          ),
+        )
+      : {};
   return {
     version: 1,
     cursor,
@@ -491,6 +515,11 @@ export function normalizeSave(raw: unknown, beats: Beat[]): StorySave {
     drafts,
     support: data.support === true,
     weak,
+    cards,
+    last:
+      isCount(data.last?.step) && isCount(data.last?.day)
+        ? data.last!
+        : { step: 0, day: 0 },
   };
 }
 

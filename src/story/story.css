@@ -1343,6 +1343,44 @@
   text-align: center;
   overflow-wrap: anywhere;
 }
+.moin-drill {
+  padding: 26px 30px;
+}
+.moin-scene .moin-drill h2 {
+  margin: 6px 0 10px;
+}
+.moin-drill > p {
+  margin: 0 0 18px;
+  font-size: 15px;
+  color: var(--muted);
+}
+.moin-drill h3 {
+  margin: 0 0 14px;
+  font-size: 17px;
+}
+.moin-drill-answers {
+  margin: 12px 0 0;
+  padding-left: 18px;
+  font-size: 14px;
+}
+.moin-drill-result strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+.moin-drill-result ul {
+  margin: 8px 0 0;
+  padding-left: 18px;
+  font-family: var(--serif);
+  font-size: 16px;
+}
+.moin-drill-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 22px;
+  margin-top: 22px;
+}
 .moin-lock-done {
   margin: 0;
   padding-left: 20px;
@@ -1664,6 +1702,9 @@
   }
   .moin-turn {
     padding: 22px 18px 0;
+  }
+  .moin-drill {
+    padding: 22px 18px;
   }
   .moin-turn h3 {
     font-size: 17px;

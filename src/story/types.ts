@@ -110,6 +110,9 @@ export type Episode = {
   beats: Beat[];
 };
 export type Answer = string | string[] | Record<string, string | number>;
+/** Когда слово встречали в последний раз: шаг истории и календарный день. */
+export type Mark = { step: number; day: number };
+export type WordCard = Mark & { box: number };
 export type StorySave = {
   version: 1;
   cursor: number;
@@ -118,4 +121,8 @@ export type StorySave = {
   support: boolean;
   /** Сколько раз ошибались в выражении; запись на слух убирает его из списка. */
   weak: Record<string, number>;
+  /** Память слов словаря: когда какое слово вернуть. */
+  cards: Record<string, WordCard>;
+  /** Когда закончился последний раунд повторения. */
+  last: Mark;
 };

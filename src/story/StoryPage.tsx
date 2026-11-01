@@ -3,8 +3,9 @@ import { Footer, Topbar, useTitle } from "../App";
 import { stopAudio, useMobile } from "../hooks";
 import { shuffle } from "../lib/shuffle";
 import { PlayButton, plural } from "../markup";
-import { storyAudio } from "./audio";
+import { a1Words, storyAudio, wordInfo } from "./audio";
 import { beats, episodes, phrases } from "./data";
+import { WordDrill } from "./drill";
 import {
   Bingo,
   Calendar,
@@ -39,7 +40,19 @@ import {
   reviewItems,
   solution,
   STORY_KEY,
+  wrongAnswers,
 } from "./logic";
+import {
+  buildRound,
+  dayNumber,
+  dueWords,
+  grade,
+  memoryStats,
+  remember,
+  slip,
+  stepWords,
+  timeForRound,
+} from "./memory";
 import type { Answer, Beat, Challenge, StorySave } from "./types";
 import "./story.css";
 
@@ -197,6 +210,7 @@ export function StoryPage() {
   const [phrase, setPhrase] = useState<string | null>(null);
   const [resetPrompt, setResetPrompt] = useState(false);
   const [notebook, setNotebook] = useState(false);
+  const [drilling, setDrilling] = useState(false);
   const scene = useRef<HTMLElement>(null);
   const beat = beats[save.cursor];
   const episode = episodes.find((e) => e.beats.some((b) => b.id === beat.id))!;
@@ -206,6 +220,16 @@ export function StoryPage() {
   const known = knownBefore(beats, save.cursor);
   const newPhrases = beatPhrases(beat).filter((id) => !known.has(id));
   const finished = save.completed === beats.length;
+  const today = dayNumber();
+  const round = buildRound(save.cards, save.completed, today, a1Words);
+  // Посреди истории раунд встаёт перед новым шагом, а после финала ждёт следующего захода:
+  // закончившему дело сначала показываем развязку.
+  const drillDue = finished
+    ? loaded.save.completed === beats.length && today > save.last.day
+    : save.cursor === save.completed &&
+      timeForRound(save.last, save.completed, today);
+  const drillOpen = drilling || (!!round && drillDue);
+  const stats = memoryStats(save.cards);
   useEffect(() => {
     if (!started) return;
     try {
@@ -216,14 +240,32 @@ export function StoryPage() {
     }
   }, [save, started]);
   useEffect(() => () => stopAudio(), []);
-  function go(cursor: number) {
-    stopAudio();
-    setPhrase(null);
-    setSave((s) => ({ ...s, cursor }));
+  function focusScene() {
     requestAnimationFrame(() => {
       scene.current?.focus();
       scene.current?.scrollIntoView({ block: "start", behavior: "instant" });
     });
+  }
+  function go(cursor: number) {
+    stopAudio();
+    setPhrase(null);
+    setDrilling(false);
+    setSave((s) => ({ ...s, cursor }));
+    focusScene();
+  }
+  function closeDrill() {
+    stopAudio();
+    setDrilling(false);
+    setSave((s) => ({ ...s, last: { step: s.completed, day: dayNumber() } }));
+    focusScene();
+  }
+  function gradeRound(words: string[], missed: string[]) {
+    // Панель остаётся открытой: показать итог, даже если новых слов к повторению нет.
+    setDrilling(true);
+    setSave((s) => ({
+      ...s,
+      cards: grade(s.cards, words, missed, s.completed, dayNumber()),
+    }));
   }
   function rich(text: string) {
     return text.split(/(\{[\w-]+\})/g).map((part, i) => {
@@ -284,8 +326,10 @@ export function StoryPage() {
               </button>
               <div className="moin-cover-meta">
                 <span>12 глав</span>
-                <span>{beats.length} действия</span>
-                <span>Без таймера</span>
+                <span>
+                  {plural(beats.length, ["действие", "действия", "действий"])}
+                </span>
+                <span>Проиграть нельзя</span>
               </div>
             </div>
             <div>
@@ -317,8 +361,9 @@ export function StoryPage() {
               <div>
                 <b>Продолжайте с того же места</b>
                 <p>
-                  Блокнот и ответы сохраняются в этом браузере. Игра повторяет
-                  темы A1; письмо и разговор практикуйте также в уроках.
+                  Блокнот, ответы и память слов сохраняются в этом браузере.
+                  Старые слова возвращаются в новых главах и после перерыва;
+                  письмо и разговор практикуйте также в уроках.
                 </p>
               </div>
             </div>
@@ -339,6 +384,23 @@ export function StoryPage() {
                 >
                   Блокнот · {plural(clues.length, ["улика", "улики", "улик"])}
                 </button>
+                {round && !drillOpen && (
+                  <button
+                    type="button"
+                    className="moin-reset-button"
+                    onClick={() => {
+                      stopAudio();
+                      setDrilling(true);
+                      focusScene();
+                    }}
+                  >
+                    Повторить ·{" "}
+                    {plural(
+                      dueWords(save.cards, save.completed, today).length,
+                      ["слово", "слова", "слов"],
+                    )}
+                  </button>
+                )}
                 <button
                   type="button"
                   className="moin-reset-button"
@@ -352,8 +414,8 @@ export function StoryPage() {
             {resetPrompt && (
               <div className="moin-reset" role="group" aria-label="Сброс игры">
                 <p>
-                  Начать дело с первого шага? Прогресс игры, ошибки и черновики
-                  удалятся, прогресс уроков сохранится.
+                  Начать дело с первого шага? Прогресс игры, ошибки, черновики и
+                  память слов удалятся, прогресс уроков сохранится.
                 </p>
                 <button
                   type="button"
@@ -364,6 +426,7 @@ export function StoryPage() {
                     setPhrase(null);
                     setResetPrompt(false);
                     setNotebook(false);
+                    setDrilling(false);
                   }}
                 >
                   Да, сбросить
@@ -433,153 +496,187 @@ export function StoryPage() {
                   Язык помогает расследовать. Улики открываются по ходу истории.
                 </p>
               </aside>
-              <section
-                className="moin-scene"
-                ref={scene}
-                tabIndex={-1}
-                aria-label={`Глава ${chapter + 1}. ${beat.title}`}
-              >
-                <div className="moin-scene-top">
-                  <span>{episode.place}</span>
-                  <span>
-                    {chapterStep + 1} / {episode.beats.length}
-                  </span>
-                </div>
-                <div className="moin-chapter-title">
-                  Глава {chapter + 1} · {episode.title}
-                </div>
-                <h2>{beat.title}</h2>
-                <div className="moin-language-tools">
-                  <label>
-                    <input
-                      type="checkbox"
-                      checked={save.support}
-                      onChange={(e) =>
-                        setSave((s) => ({ ...s, support: e.target.checked }))
-                      }
-                    />{" "}
-                    Переводы рядом
-                  </label>
-                  <span>
-                    {newPhrases.length
-                      ? `Новых выражений: ${newPhrases.length}`
-                      : "Знакомый язык в новой ситуации"}
-                  </span>
-                </div>
-                <div className="moin-narrative">
-                  {beat.story.map((p, i) => (
-                    <p key={i}>{rich(p)}</p>
-                  ))}
-                </div>
-                {phrase && (
-                  <aside className="moin-translation" role="status">
-                    <button
-                      type="button"
-                      className="moin-close"
-                      aria-label="Закрыть перевод"
-                      onClick={() => setPhrase(null)}
-                    >
-                      ×
-                    </button>
-                    <strong lang="de">
-                      {phrases[phrase].de}{" "}
-                      <PlayButton src={storyAudio(phrases[phrase].de)} />
-                    </strong>
-                    <div>{phrases[phrase].ru}</div>
-                    <small>{phrases[phrase].note}</small>
-                  </aside>
-                )}
-                {beat.source && (
-                  <div className="moin-source">
-                    <div className="kicker">{beat.source.title}</div>
-                    {beat.source.lines.map((l, i) => (
-                      <p key={i}>{rich(l)}</p>
+              {drillOpen ? (
+                <section
+                  className="moin-scene"
+                  ref={scene}
+                  tabIndex={-1}
+                  aria-label="Повторение слов"
+                >
+                  <WordDrill
+                    next={round}
+                    welcome={save.last.day > 0 && today > save.last.day}
+                    onGrade={gradeRound}
+                    onClose={closeDrill}
+                  />
+                </section>
+              ) : (
+                <section
+                  className="moin-scene"
+                  ref={scene}
+                  tabIndex={-1}
+                  aria-label={`Глава ${chapter + 1}. ${beat.title}`}
+                >
+                  <div className="moin-scene-top">
+                    <span>{episode.place}</span>
+                    <span>
+                      {chapterStep + 1} / {episode.beats.length}
+                    </span>
+                  </div>
+                  <div className="moin-chapter-title">
+                    Глава {chapter + 1} · {episode.title}
+                  </div>
+                  <h2>{beat.title}</h2>
+                  <div className="moin-language-tools">
+                    <label>
+                      <input
+                        type="checkbox"
+                        checked={save.support}
+                        onChange={(e) =>
+                          setSave((s) => ({ ...s, support: e.target.checked }))
+                        }
+                      />{" "}
+                      Переводы рядом
+                    </label>
+                    <span>
+                      {newPhrases.length
+                        ? `Новых выражений: ${newPhrases.length}`
+                        : "Знакомый язык в новой ситуации"}
+                    </span>
+                  </div>
+                  <div className="moin-narrative">
+                    {beat.story.map((p, i) => (
+                      <p key={i}>{rich(p)}</p>
                     ))}
                   </div>
-                )}
-                <StoryTurn
-                  key={beat.id}
-                  beat={beat}
-                  value={save.drafts[beat.id] ?? initialAnswer(beat.challenge)}
-                  solved={save.completed > save.cursor}
-                  rich={rich}
-                  onChange={(v) =>
-                    setSave((s) => ({
-                      ...s,
-                      drafts: { ...s.drafts, [beat.id]: v },
-                    }))
-                  }
-                  onWin={() =>
-                    setSave((s) => ({
-                      ...s,
-                      completed: Math.max(s.completed, s.cursor + 1),
-                    }))
-                  }
-                  onMiss={() =>
-                    setSave((s) => ({
-                      ...s,
-                      weak: {
-                        ...s.weak,
-                        ...Object.fromEntries(
-                          (beat.practice ?? []).map((id) => [
-                            id,
-                            (s.weak[id] ?? 0) + 1,
-                          ]),
-                        ),
-                      },
-                    }))
-                  }
-                />
-                {save.completed > save.cursor &&
-                  chapterStep === episode.beats.length - 1 &&
-                  reviewItems(episode, save.weak).length > 0 && (
-                    <ChapterReview
-                      key={episode.id}
-                      items={reviewItems(episode, save.weak)}
-                      onRight={(id) =>
-                        setSave((s) => {
-                          const { [id]: _, ...weak } = s.weak;
-                          return { ...s, weak };
-                        })
-                      }
-                    />
-                  )}
-                {save.completed > save.cursor && (
-                  <div className="moin-next">
-                    {save.cursor < beats.length - 1 ? (
+                  {phrase && (
+                    <aside className="moin-translation" role="status">
                       <button
                         type="button"
-                        className="primary"
-                        onClick={() => go(save.cursor + 1)}
+                        className="moin-close"
+                        aria-label="Закрыть перевод"
+                        onClick={() => setPhrase(null)}
                       >
-                        {chapterStep === episode.beats.length - 1
-                          ? "Следующая глава →"
-                          : "Продолжить историю →"}
+                        ×
                       </button>
-                    ) : (
-                      <div className="moin-ending">
-                        <div className="kicker">Moin снова на месте</div>
-                        <h3>Дело раскрыто. Немецкий остался с вами.</h3>
-                        <p>
-                          Вы прошли 12 тем A1 в одной истории. Это игровой
-                          прогресс; для подготовки к экзамену продолжайте
-                          практиковать аудирование, письмо и разговор в курсе.
-                        </p>
-                        <a href="#/a1">Вернуться к курсу A1 →</a>
-                      </div>
+                      <strong lang="de">
+                        {phrases[phrase].de}{" "}
+                        <PlayButton src={storyAudio(phrases[phrase].de)} />
+                      </strong>
+                      <div>{phrases[phrase].ru}</div>
+                      <small>{phrases[phrase].note}</small>
+                    </aside>
+                  )}
+                  {beat.source && (
+                    <div className="moin-source">
+                      <div className="kicker">{beat.source.title}</div>
+                      {beat.source.lines.map((l, i) => (
+                        <p key={i}>{rich(l)}</p>
+                      ))}
+                    </div>
+                  )}
+                  <StoryTurn
+                    key={beat.id}
+                    beat={beat}
+                    value={
+                      save.drafts[beat.id] ?? initialAnswer(beat.challenge)
+                    }
+                    solved={save.completed > save.cursor}
+                    rich={rich}
+                    onChange={(v) =>
+                      setSave((s) => ({
+                        ...s,
+                        drafts: { ...s.drafts, [beat.id]: v },
+                      }))
+                    }
+                    onWin={() =>
+                      setSave((s) => {
+                        const completed = Math.max(s.completed, s.cursor + 1);
+                        return {
+                          ...s,
+                          completed,
+                          cards: remember(
+                            s.cards,
+                            stepWords(beat, a1Words, phrases),
+                            completed,
+                            dayNumber(),
+                          ),
+                        };
+                      })
+                    }
+                    onSlip={(word) =>
+                      wordInfo(word) &&
+                      setSave((s) => ({
+                        ...s,
+                        cards: slip(s.cards, word, s.completed, dayNumber()),
+                      }))
+                    }
+                    onMiss={() =>
+                      setSave((s) => ({
+                        ...s,
+                        weak: {
+                          ...s.weak,
+                          ...Object.fromEntries(
+                            (beat.practice ?? []).map((id) => [
+                              id,
+                              (s.weak[id] ?? 0) + 1,
+                            ]),
+                          ),
+                        },
+                      }))
+                    }
+                  />
+                  {save.completed > save.cursor &&
+                    chapterStep === episode.beats.length - 1 &&
+                    reviewItems(episode, save.weak).length > 0 && (
+                      <ChapterReview
+                        key={episode.id}
+                        items={reviewItems(episode, save.weak)}
+                        onRight={(id) =>
+                          setSave((s) => {
+                            const { [id]: _, ...weak } = s.weak;
+                            return { ...s, weak };
+                          })
+                        }
+                      />
                     )}
-                  </div>
-                )}
-                <details className="moin-rule">
-                  <summary>Языковой фокус главы</summary>
-                  <p>{episode.grammar}</p>
-                  <p>
-                    Новые выражения показаны с переводом при первом появлении.
-                    Знакомые возвращаются по-немецки; нажмите на них или
-                    включите «Переводы рядом».
-                  </p>
-                </details>
-              </section>
+                  {save.completed > save.cursor && (
+                    <div className="moin-next">
+                      {save.cursor < beats.length - 1 ? (
+                        <button
+                          type="button"
+                          className="primary"
+                          onClick={() => go(save.cursor + 1)}
+                        >
+                          {chapterStep === episode.beats.length - 1
+                            ? "Следующая глава →"
+                            : "Продолжить историю →"}
+                        </button>
+                      ) : (
+                        <div className="moin-ending">
+                          <div className="kicker">Moin снова на месте</div>
+                          <h3>Дело раскрыто. Немецкий остался с вами.</h3>
+                          <p>
+                            Вы прошли 12 тем A1 в одной истории. Это игровой
+                            прогресс; для подготовки к экзамену продолжайте
+                            практиковать аудирование, письмо и разговор в курсе.
+                          </p>
+                          <a href="#/a1">Вернуться к курсу A1 →</a>
+                        </div>
+                      )}
+                    </div>
+                  )}
+                  <details className="moin-rule">
+                    <summary>Языковой фокус главы</summary>
+                    <p>{episode.grammar}</p>
+                    <p>
+                      Новые выражения показаны с переводом при первом появлении.
+                      Знакомые возвращаются по-немецки; нажмите на них или
+                      включите «Переводы рядом».
+                    </p>
+                  </details>
+                </section>
+              )}
               {notebook && (
                 <aside className="moin-notebook">
                   <div className="kicker">Блокнот детектива</div>
@@ -610,6 +707,11 @@ export function StoryPage() {
                     Знакомых выражений в рассказе: {known.size}. Это число
                     встреченных фраз, не оценка знания A1.
                   </p>
+                  <p className="moin-route-note">
+                    Слов встречено: {stats.met}, повторено: {stats.returned},
+                    закреплено: {stats.firm}. Это счётчик повторений, а не
+                    проверка владения.
+                  </p>
                 </aside>
               )}
             </div>
@@ -628,6 +730,7 @@ function StoryTurn({
   onChange,
   onWin,
   onMiss,
+  onSlip,
   rich,
 }: {
   beat: Beat;
@@ -636,6 +739,7 @@ function StoryTurn({
   onChange: (v: Answer) => void;
   onWin: () => void;
   onMiss: () => void;
+  onSlip: (word: string) => void;
   rich: (s: string) => React.ReactNode;
 }) {
   const [checked, setChecked] = useState(false),
@@ -656,8 +760,9 @@ function StoryTurn({
   }
   function check() {
     setChecked(true);
-    if (correct) onWin();
-    else onMiss();
+    if (correct) return onWin();
+    onMiss();
+    if (c.kind === "write") wrongAnswers(c, value).forEach(onSlip);
   }
   const game = {
     value: shown,
@@ -666,7 +771,7 @@ function StoryTurn({
     checked,
     change,
     win: onWin,
-    miss: onMiss,
+    miss: (word?: string) => (word ? onSlip(word) : onMiss()),
   };
   return (
     <div className="moin-turn">
