@@ -13,6 +13,8 @@ export type VoiceLine = {
   text: string;
   ru: string;
 };
+/** Фраза на дисках кодового замка: один диск — одна часть предложения. */
+export type LockRound = { ru: string; reels: string[][]; answer: string[] };
 export type Challenge =
   | { kind: "choice"; options: Option[]; answer: string }
   | { kind: "order"; tiles: string[]; answer: string[]; also?: string[][] }
@@ -60,6 +62,17 @@ export type Challenge =
       moves: Move[];
     }
   | { kind: "coins"; coins: number[]; answer: number }
+  | { kind: "bingo"; words: string[] }
+  | { kind: "scene"; items: { word: string; icon: string }[] }
+  | {
+      kind: "odd";
+      rounds: { words: string[]; odd: string; why: string }[];
+    }
+  | { kind: "letters"; words: string[] }
+  | { kind: "speak"; lines: string[] }
+  | { kind: "docks"; words: string[] }
+  | { kind: "gull"; words: string[] }
+  | { kind: "lock"; rounds: LockRound[] }
   | {
       kind: "write";
       title: string;

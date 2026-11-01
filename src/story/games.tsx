@@ -1,17 +1,33 @@
-import { Fragment, useMemo, useRef, useState, type RefObject } from "react";
-import { play } from "../hooks";
+import {
+  Fragment,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+  type CSSProperties,
+  type RefObject,
+} from "react";
+import { play, stopAudio } from "../hooks";
 import { preis, uhrzeit } from "../lib/german";
 import { shuffle } from "../lib/shuffle";
 import { PlayButton } from "../markup";
 import { ClockView } from "../stage/Clock";
 import { judge, UMLAUTS } from "../trainer/logic";
-import { storyAudio } from "./audio";
+import { storyAudio, wordInfo } from "./audio";
 import { phrases } from "./data";
-import { canMove, coinTotal, MOVES, placeKey, walk } from "./logic";
-import type { Answer, ChatTurn, Challenge, Move, VoiceLine } from "./types";
+import { canMove, coinTotal, lockKey, MOVES, placeKey, walk } from "./logic";
+import type {
+  Answer,
+  ChatTurn,
+  Challenge,
+  LockRound,
+  Move,
+  VoiceLine,
+} from "./types";
 
 // Игровые действия истории. Всё управляется нажатием и с клавиатуры:
-// перетаскивания и таймеров нет, ошибка только даёт подсказку.
+// перетаскиваний нет, ошибка только даёт подсказку. Таймер есть в одной игре,
+// с чайкой: упущенное слово возвращается, а времени становится больше.
 
 type Game<K extends Challenge["kind"]> = {
   c: Extract<Challenge, { kind: K }>;
@@ -933,5 +949,688 @@ export function ChapterReview({
         <ReviewItem key={id} id={id} onRight={onRight} />
       ))}
     </section>
+  );
+}
+
+/** Немецкое слово с кнопкой озвучки из словаря уроков. */
+function Word({ word }: { word: string }) {
+  return (
+    <span className="moin-word-line" lang="de">
+      {word} <PlayButton src={wordInfo(word)?.audio} />
+    </span>
+  );
+}
+
+export function Bingo({
+  c,
+  value,
+  seed,
+  disabled,
+  change,
+  win,
+}: Game<"bingo">) {
+  const found = asList(value);
+  const card = useMemo(() => shuffle(c.words, seed), [c, seed]);
+  const calls = useMemo(() => shuffle(c.words, `${seed}-call`), [c, seed]);
+  const [miss, setMiss] = useState("");
+  const current = calls.find((word) => !found.includes(word));
+  function tap(word: string) {
+    if (word !== current) return setMiss(word);
+    const next = [...found, word];
+    setMiss("");
+    change(next);
+    if (next.length === c.words.length) return win();
+    play(wordInfo(calls[next.length])?.audio);
+  }
+  return (
+    <>
+      {current && !disabled && (
+        <div className="moin-call">
+          <PlayButton
+            src={wordInfo(current)?.audio}
+            size="md"
+            label="Послушать слово"
+          />
+          <span>Нажмите, послушайте и закройте слово на карточке</span>
+        </div>
+      )}
+      <div className="moin-bingo">
+        {card.map((word) => {
+          const done = found.includes(word);
+          return (
+            <button
+              type="button"
+              key={word}
+              lang="de"
+              disabled={disabled || done}
+              data-done={done || undefined}
+              data-wrong={miss === word || undefined}
+              onClick={() => tap(word)}
+            >
+              {word}
+              {done && <small>{wordInfo(word)?.ru}</small>}
+            </button>
+          );
+        })}
+      </div>
+      <p className="moin-count" aria-live="polite">
+        {miss
+          ? `Это другое слово: ${wordInfo(miss)?.ru}`
+          : `Закрыто: ${found.length} из ${c.words.length}`}
+      </p>
+    </>
+  );
+}
+
+export function Scene({
+  c,
+  value,
+  seed,
+  disabled,
+  change,
+  win,
+}: Game<"scene">) {
+  const found = asList(value);
+  const items = useMemo(() => shuffle(c.items, seed), [c, seed]);
+  const tasks = useMemo(() => shuffle(c.items, `${seed}-task`), [c, seed]);
+  const [miss, setMiss] = useState("");
+  const current = tasks.find((item) => !found.includes(item.word));
+  function tap(word: string) {
+    if (word !== current?.word) return setMiss(word);
+    const next = [...found, word];
+    setMiss("");
+    change(next);
+    if (next.length === c.items.length) win();
+    else play(wordInfo(tasks[next.length].word)?.audio);
+  }
+  return (
+    <>
+      {current && !disabled && (
+        <div className="moin-call">
+          <span>Wo ist:</span> <Word word={current.word} />
+        </div>
+      )}
+      <div className="moin-scene-grid">
+        {items.map(({ word, icon }) => {
+          const done = found.includes(word);
+          return (
+            <button
+              type="button"
+              key={word}
+              disabled={disabled || done}
+              data-done={done || undefined}
+              data-wrong={miss === word || undefined}
+              aria-label={done ? word : `Картинка ${icon}`}
+              onClick={() => tap(word)}
+            >
+              <span aria-hidden="true">{icon}</span>
+              {done && <small lang="de">{word}</small>}
+            </button>
+          );
+        })}
+      </div>
+      <p className="moin-count" aria-live="polite">
+        {miss ? (
+          <>
+            Это: <span lang="de">{miss}</span>
+          </>
+        ) : (
+          `Найдено: ${found.length} из ${c.items.length}`
+        )}
+      </p>
+    </>
+  );
+}
+
+function OddRound({
+  round,
+  seed,
+  onDone,
+}: {
+  round: Extract<Challenge, { kind: "odd" }>["rounds"][number];
+  seed: string;
+  onDone: () => void;
+}) {
+  const [missed, setMissed] = useState<string[]>([]);
+  const [right, setRight] = useState(false);
+  const words = useMemo(() => shuffle(round.words, seed), [round, seed]);
+  return (
+    <>
+      <div className="moin-odd">
+        {words.map((word) => (
+          <button
+            type="button"
+            key={word}
+            lang="de"
+            disabled={right || missed.includes(word)}
+            data-done={(right && word === round.odd) || undefined}
+            onClick={() =>
+              word === round.odd ? setRight(true) : setMissed([...missed, word])
+            }
+          >
+            {word}
+            {(right || missed.includes(word)) && (
+              <small>{wordInfo(word)?.ru}</small>
+            )}
+          </button>
+        ))}
+      </div>
+      {right && (
+        <div className="moin-odd-result">
+          <p>{round.why}</p>
+          <button type="button" className="primary" onClick={onDone}>
+            Дальше
+          </button>
+        </div>
+      )}
+    </>
+  );
+}
+
+export function Odd({ c, value, seed, disabled, change, win }: Game<"odd">) {
+  const solved = asList(value);
+  const round = c.rounds[solved.length];
+  if (!round || disabled)
+    return <p className="moin-count">Все группы разобраны.</p>;
+  return (
+    <>
+      <p className="moin-count">
+        Группа {solved.length + 1} из {c.rounds.length}
+      </p>
+      <OddRound
+        key={round.odd}
+        round={round}
+        seed={`${seed}-${solved.length}`}
+        onDone={() => {
+          const next = [...solved, round.odd];
+          change(next);
+          if (next.length === c.rounds.length) win();
+        }}
+      />
+    </>
+  );
+}
+
+const DECOYS = "aeinrstlo";
+
+function LetterWord({
+  word,
+  seed,
+  onDone,
+}: {
+  word: string;
+  seed: string;
+  onDone: () => void;
+}) {
+  const article = /^(der|die|das) /.exec(word)?.[1];
+  const target = article ? word.slice(article.length + 1) : word;
+  const [typed, setTyped] = useState(0);
+  const [used, setUsed] = useState<number[]>([]);
+  const [miss, setMiss] = useState<number | null>(null);
+  const pool = useMemo(() => {
+    const letters = [...target.toLowerCase()];
+    const extra = [...DECOYS].filter((l) => !letters.includes(l)).slice(0, 3);
+    return shuffle([...letters, ...extra], seed);
+  }, [target, seed]);
+  const finished = typed === target.length;
+  function tap(letter: string, index: number) {
+    if (letter !== target[typed].toLowerCase()) return setMiss(index);
+    setMiss(null);
+    setTyped(typed + 1);
+    setUsed([...used, index]);
+  }
+  return (
+    <div className="moin-letters">
+      <p>
+        {wordInfo(word)?.ru}{" "}
+        <PlayButton src={wordInfo(word)?.audio} label="Послушать слово" />
+      </p>
+      <div className="moin-slots" lang="de">
+        {article && <span>{article}</span>}
+        {[...target].map((letter, i) => (
+          <b key={i}>{i < typed ? letter : "_"}</b>
+        ))}
+      </div>
+      {finished ? (
+        <button type="button" className="primary" onClick={onDone}>
+          Дальше
+        </button>
+      ) : (
+        <div className="moin-tiles">
+          {pool.map((letter, i) => (
+            <button
+              type="button"
+              key={i}
+              disabled={used.includes(i)}
+              data-wrong={miss === i || undefined}
+              onClick={() => tap(letter, i)}
+            >
+              {letter}
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+export function Letters({
+  c,
+  value,
+  seed,
+  disabled,
+  change,
+  win,
+}: Game<"letters">) {
+  const done = asList(value);
+  const current = c.words.find((word) => !done.includes(word));
+  if (!current || disabled)
+    return (
+      <p className="moin-count" lang="de">
+        {c.words.join(" · ")}
+      </p>
+    );
+  return (
+    <>
+      <p className="moin-count">
+        Слово {done.length + 1} из {c.words.length}
+      </p>
+      <LetterWord
+        key={current}
+        word={current}
+        seed={`${seed}-${done.length}`}
+        onDone={() => {
+          const next = [...done, current];
+          change(next);
+          if (next.length === c.words.length) win();
+        }}
+      />
+    </>
+  );
+}
+
+/** Запись живёт только в памяти этой страницы: на сервер и в сохранение она не попадает. */
+function SpeakLine({
+  line,
+  done,
+  onDone,
+}: {
+  line: string;
+  done: boolean;
+  onDone: () => void;
+}) {
+  const [recording, setRecording] = useState(false);
+  const [blocked, setBlocked] = useState(false);
+  const [url, setUrl] = useState<string>();
+  const recorder = useRef<MediaRecorder | null>(null);
+  const supported = typeof MediaRecorder !== "undefined";
+  useEffect(
+    () => () => {
+      recorder.current?.stream.getTracks().forEach((t) => t.stop());
+    },
+    [],
+  );
+  useEffect(() => () => void (url && URL.revokeObjectURL(url)), [url]);
+  async function toggle() {
+    if (recording) return recorder.current?.stop();
+    stopAudio();
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      const media = new MediaRecorder(stream);
+      const chunks: Blob[] = [];
+      media.ondataavailable = (event) => chunks.push(event.data);
+      media.onstop = () => {
+        stream.getTracks().forEach((t) => t.stop());
+        setUrl(URL.createObjectURL(new Blob(chunks, { type: media.mimeType })));
+        setRecording(false);
+      };
+      recorder.current = media;
+      media.start();
+      setRecording(true);
+      window.setTimeout(
+        () => media.state === "recording" && media.stop(),
+        8000,
+      );
+    } catch {
+      setBlocked(true);
+    }
+  }
+  return (
+    <li data-done={done || undefined}>
+      <div>
+        <Word word={line} />
+        <small>{wordInfo(line)?.ru}</small>
+      </div>
+      {!done && (
+        <div className="moin-speak-tools">
+          {supported && !blocked && (
+            <button type="button" aria-pressed={recording} onClick={toggle}>
+              {recording ? "■ Стоп" : "● Записать себя"}
+            </button>
+          )}
+          {url && (
+            <span>
+              <PlayButton src={url} label="Послушать себя" /> Моя запись
+            </span>
+          )}
+          <button type="button" className="primary" onClick={onDone}>
+            Повторил(а) вслух
+          </button>
+        </div>
+      )}
+      {blocked && (
+        <p>
+          Запись недоступна: браузер не дал доступ к микрофону. Скажите вслух.
+        </p>
+      )}
+    </li>
+  );
+}
+
+export function Speak({ c, value, disabled, change, win }: Game<"speak">) {
+  const done = asList(value);
+  return (
+    <ul className="moin-speak">
+      {c.lines.map((line) => (
+        <SpeakLine
+          key={line}
+          line={line}
+          done={disabled || done.includes(line)}
+          onDone={() => {
+            const next = [...done, line];
+            change(next);
+            if (next.length === c.lines.length) win();
+          }}
+        />
+      ))}
+    </ul>
+  );
+}
+
+/** Очередь слов: упущенное слово ждёт, пока пройдут остальные. */
+function useQueue(words: string[], seed: string, done: string[]) {
+  const queue = useMemo(() => shuffle(words, seed), [words, seed]);
+  const [later, setLater] = useState<string[]>([]);
+  const rest = queue.filter((word) => !done.includes(word));
+  return {
+    current:
+      rest.find((word) => !later.includes(word)) ??
+      later.find((word) => rest.includes(word)),
+    postpone: (word: string) =>
+      setLater((list) => [...list.filter((w) => w !== word), word]),
+  };
+}
+
+const ARTICLES = ["der", "die", "das"];
+const noun = (word: string) => word.replace(/^(der|die|das) /, "");
+
+/** Запись слова звучит с артиклем, поэтому включается только после выбора причала. */
+export function Docks({
+  c,
+  value,
+  seed,
+  disabled,
+  change,
+  win,
+}: Game<"docks">) {
+  const done = asList(value);
+  const { current, postpone } = useQueue(c.words, seed, done);
+  const [note, setNote] = useState("");
+  function tap(article: string) {
+    if (!current) return;
+    const info = wordInfo(current);
+    play(info?.audio);
+    if (!current.startsWith(`${article} `)) {
+      setNote(`Нет, ${current} (${info?.ru}). Слово вернётся в конце.`);
+      return postpone(current);
+    }
+    const next = [...done, current];
+    setNote(`${current} — ${info?.ru}`);
+    change(next);
+    if (next.length === c.words.length) win();
+  }
+  return (
+    <>
+      {current && !disabled && (
+        <div className="moin-boat">
+          <span aria-hidden="true">⛵</span> <b lang="de">{noun(current)}</b>
+        </div>
+      )}
+      <div className="moin-docks">
+        {ARTICLES.map((article) => (
+          <div key={article}>
+            <button
+              type="button"
+              lang="de"
+              disabled={disabled}
+              onClick={() => tap(article)}
+            >
+              {article}
+            </button>
+            <ul lang="de">
+              {done
+                .filter((word) => word.startsWith(`${article} `))
+                .map((word) => (
+                  <li key={word}>{noun(word)}</li>
+                ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+      <p className="moin-count" aria-live="polite">
+        {note || `У причала: ${done.length} из ${c.words.length}`}
+      </p>
+    </>
+  );
+}
+
+const GULL_SECONDS = 10;
+const GULL_BONUS = 3;
+
+/** Компонент пересоздаётся на каждую попытку, поэтому таймер всегда начинается заново. */
+function GullRound({
+  word,
+  words,
+  seed,
+  seconds,
+  onPick,
+  onLost,
+}: {
+  word: string;
+  words: string[];
+  seed: string;
+  seconds: number;
+  onPick: (word: string) => void;
+  onLost: () => void;
+}) {
+  const options = useMemo(() => {
+    const others = shuffle(
+      words.filter((w) => w !== word),
+      seed,
+    ).slice(0, 3);
+    return shuffle([word, ...others], `${seed}-options`);
+  }, [word, words, seed]);
+  useEffect(() => {
+    const timer = window.setTimeout(onLost, seconds * 1000);
+    return () => window.clearTimeout(timer);
+  }, []);
+  return (
+    <>
+      <div className="moin-gull-track" aria-hidden="true">
+        <span style={{ "--gull-time": `${seconds}s` } as CSSProperties}>
+          🐦
+        </span>
+      </div>
+      <p className="moin-gull-task">{wordInfo(word)?.ru}</p>
+      <div className="moin-odd">
+        {options.map((option) => (
+          <button
+            type="button"
+            key={option}
+            lang="de"
+            onClick={() => onPick(option)}
+          >
+            {option}
+          </button>
+        ))}
+      </div>
+    </>
+  );
+}
+
+export function Gull({ c, value, seed, disabled, change, win }: Game<"gull">) {
+  const done = asList(value);
+  const { current, postpone } = useQueue(c.words, seed, done);
+  const [lost, setLost] = useState(0);
+  const [note, setNote] = useState("");
+  if (!current || disabled)
+    return (
+      <p className="moin-count" lang="de">
+        {c.words.join(" · ")}
+      </p>
+    );
+  const lose = (message: string) => {
+    setNote(message);
+    setLost((n) => n + 1);
+    postpone(current);
+  };
+  return (
+    <>
+      <p className="moin-count">
+        Спасено: {done.length} из {c.words.length}
+      </p>
+      <GullRound
+        key={`${current}-${lost}`}
+        word={current}
+        words={c.words}
+        seed={`${seed}-${done.length}-${lost}`}
+        seconds={GULL_SECONDS + lost * GULL_BONUS}
+        onLost={() =>
+          lose(
+            `Чайка унесла ${current} (${wordInfo(current)?.ru}). Слово вернётся, времени станет больше.`,
+          )
+        }
+        onPick={(word) => {
+          if (word !== current)
+            return lose(
+              `Это ${word} (${wordInfo(word)?.ru}). Нужно было ${current}. Слово вернётся.`,
+            );
+          const next = [...done, word];
+          play(wordInfo(word)?.audio);
+          setNote(`${word} — ${wordInfo(word)?.ru}`);
+          change(next);
+          if (next.length === c.words.length) win();
+        }}
+      />
+      <p className="moin-count" aria-live="polite">
+        {note}
+      </p>
+    </>
+  );
+}
+
+/** Замок считает верные диски, но не называет их: подобрать фразу помогает грамматика. */
+function LockBox({
+  round,
+  seed,
+  onDone,
+}: {
+  round: LockRound;
+  seed: string;
+  onDone: () => void;
+}) {
+  const reels = useMemo(
+    () => round.reels.map((options, i) => shuffle(options, `${seed}-${i}`)),
+    [round, seed],
+  );
+  const [at, setAt] = useState<number[]>(() => {
+    const ready = reels.every((options, i) => options[0] === round.answer[i]);
+    return reels.map((_, i) => (ready && i === 0 ? 1 : 0));
+  });
+  const [right, setRight] = useState<number | null>(null);
+  const opened = right === reels.length;
+  function spin(reel: number, by: number) {
+    const size = reels[reel].length;
+    setAt(at.map((n, i) => (i === reel ? (n + by + size) % size : n)));
+    setRight(null);
+  }
+  function tryOpen() {
+    setRight(
+      reels.filter((options, i) => options[at[i]] === round.answer[i]).length,
+    );
+  }
+  return (
+    <>
+      <p className="moin-gull-task">{round.ru}</p>
+      <div className="moin-reels" data-open={opened || undefined}>
+        {reels.map((options, i) => (
+          <div key={i}>
+            <button
+              type="button"
+              aria-label={`Диск ${i + 1}: предыдущий вариант`}
+              disabled={opened}
+              onClick={() => spin(i, -1)}
+            >
+              ▲
+            </button>
+            <output lang="de" aria-label={`Диск ${i + 1}`}>
+              {options[at[i]]}
+            </output>
+            <button
+              type="button"
+              aria-label={`Диск ${i + 1}: следующий вариант`}
+              disabled={opened}
+              onClick={() => spin(i, 1)}
+            >
+              ▼
+            </button>
+          </div>
+        ))}
+      </div>
+      <p className="moin-count" aria-live="polite">
+        {opened
+          ? "Замок открыт."
+          : right === null
+            ? ""
+            : `Щёлкнуло дисков: ${right} из ${reels.length}`}
+      </p>
+      <button
+        type="button"
+        className="primary"
+        onClick={opened ? onDone : tryOpen}
+      >
+        {opened ? "Дальше" : "Открыть замок"}
+      </button>
+    </>
+  );
+}
+
+export function Lock({ c, value, seed, disabled, change, win }: Game<"lock">) {
+  const solved = asList(value);
+  const round = c.rounds[solved.length];
+  if (!round || disabled)
+    return (
+      <ul className="moin-lock-done" lang="de">
+        {c.rounds.map((r) => (
+          <li key={lockKey(r)}>{lockKey(r)}</li>
+        ))}
+      </ul>
+    );
+  return (
+    <>
+      <p className="moin-count">
+        Замок {solved.length + 1} из {c.rounds.length}
+      </p>
+      <LockBox
+        key={lockKey(round)}
+        round={round}
+        seed={`${seed}-${solved.length}`}
+        onDone={() => {
+          const next = [...solved, lockKey(round)];
+          change(next);
+          if (next.length === c.rounds.length) win();
+        }}
+      />
+    </>
   );
 }

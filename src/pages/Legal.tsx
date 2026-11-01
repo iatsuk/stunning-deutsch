@@ -93,6 +93,11 @@ export function DatenschutzPage() {
         ist für die von Ihnen gewünschte Funktion erforderlich (§ 25 Abs. 2 Nr. 2 TDDDG). Sie können die Daten
         jederzeit über die Einstellungen Ihres Browsers löschen.
       </p>
+      <p>
+        In der Lernspielübung „Vorlesen“ können Sie sich auf eigenen Wunsch selbst aufnehmen. Der Browser fragt dafür
+        nach dem Zugriff auf das Mikrofon. Die Aufnahme bleibt nur im Arbeitsspeicher Ihres Browsers, wird nicht
+        gespeichert und nicht übertragen und verschwindet beim Verlassen der Seite.
+      </p>
 
       <h2>5. Externe Links</h2>
       <p>

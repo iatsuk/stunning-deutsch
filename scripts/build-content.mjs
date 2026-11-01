@@ -18,7 +18,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { parse } from "yaml";
 import { episodes as storyEpisodes, phrases as storyPhrases } from "../src/story/data.ts";
-import { audioKey, storyLines, validateStory } from "../src/story/logic.ts";
+import { audioKey, storyLines, storyWords, validateStory } from "../src/story/logic.ts";
 import { uhrzeit } from "../src/lib/german.ts";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
@@ -140,6 +140,22 @@ for (const { text, voice } of storyLines(storyEpisodes, storyPhrases)) {
   if (src) storyAudio[audioKey(text, voice)] = src;
 }
 
+// Словарь уроков A1 для игр со словами: перевод и готовая озвучка без новых записей.
+const a1Words = {};
+for (const topic of topics.filter((t) => t.level === "a1")) {
+  for (const group of Object.values(topic.words)) {
+    for (const word of group.items) {
+      const key = plain(word.de);
+      a1Words[key] ??= { ru: word.ru, ...(word.audio ? { audio: word.audio } : {}) };
+    }
+  }
+}
+if (!ONLY) {
+  for (const word of storyWords(storyEpisodes)) {
+    if (!a1Words[word]) fail("story", `слова «${word}» нет в словаре уроков A1`);
+  }
+}
+
 for (const message of warnings) console.warn(`  ! ${message}`);
 if (errors.length) {
   console.error(`\n${errors.length} ошибок в контенте:\n`);
@@ -177,6 +193,7 @@ const synthesized = DRAFT ? 0 : await synthesize();
 mkdirSync(path.join(generatedDir, "topics"), { recursive: true });
 writeJson(path.join(generatedDir, "catalog.json"), catalog);
 writeJson(path.join(generatedDir, "story-audio.json"), storyAudio);
+writeJson(path.join(generatedDir, "a1-words.json"), a1Words);
 for (const file of readdirSync(path.join(generatedDir, "topics"))) {
   if (!ids.includes(file.replace(/\.json$/, ""))) rmSync(path.join(generatedDir, "topics", file));
 }

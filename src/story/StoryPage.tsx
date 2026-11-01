@@ -6,15 +6,23 @@ import { PlayButton, plural } from "../markup";
 import { storyAudio } from "./audio";
 import { beats, episodes, phrases } from "./data";
 import {
+  Bingo,
   Calendar,
   ChapterReview,
   Chat,
   ClockGame,
   Coins,
+  Docks,
   Gaps,
+  Gull,
+  Letters,
+  Lock,
   Memory,
+  Odd,
   Pairs,
+  Scene,
   Sort,
+  Speak,
   Spot,
   Verdict,
   VoiceLines,
@@ -42,6 +50,14 @@ const GAME_NAMES: Record<Challenge["kind"], string> = {
   quantity: "Заказ",
   code: "Набор номера",
   write: "Запись",
+  bingo: "Лото",
+  scene: "Найди на картинке",
+  odd: "Лишнее слово",
+  letters: "Буквы",
+  speak: "Вслух",
+  docks: "Три причала",
+  gull: "Наперегонки с чайкой",
+  lock: "Кодовый замок",
   chat: "Разговор",
   verdict: "Штамп",
   gaps: "Записка с пропусками",
@@ -53,8 +69,19 @@ const GAME_NAMES: Record<Challenge["kind"], string> = {
   coins: "Касса",
   calendar: "Календарь",
 };
-/** Разговор и карточки завершаются сами: кнопка проверки там не нужна. */
-const AUTOMATIC: Challenge["kind"][] = ["chat", "memory"];
+/** Эти игры завершаются сами: кнопка проверки там не нужна. */
+const AUTOMATIC: Challenge["kind"][] = [
+  "chat",
+  "memory",
+  "bingo",
+  "scene",
+  "odd",
+  "letters",
+  "speak",
+  "docks",
+  "gull",
+  "lock",
+];
 
 function load(): { save: StorySave; started: boolean } {
   try {
@@ -257,7 +284,7 @@ export function StoryPage() {
               </button>
               <div className="moin-cover-meta">
                 <span>12 глав</span>
-                <span>60 действий</span>
+                <span>{beats.length} действия</span>
                 <span>Без таймера</span>
               </div>
             </div>
@@ -680,6 +707,14 @@ function StoryTurn({
       <h3>{beat.prompt}</h3>
       {c.kind === "match" && <Pairs c={c} {...game} />}
       {c.kind === "write" && <Write c={c} {...game} />}
+      {c.kind === "bingo" && <Bingo c={c} {...game} />}
+      {c.kind === "scene" && <Scene c={c} {...game} />}
+      {c.kind === "odd" && <Odd c={c} {...game} />}
+      {c.kind === "letters" && <Letters c={c} {...game} />}
+      {c.kind === "speak" && <Speak c={c} {...game} />}
+      {c.kind === "docks" && <Docks c={c} {...game} />}
+      {c.kind === "gull" && <Gull c={c} {...game} />}
+      {c.kind === "lock" && <Lock c={c} {...game} />}
       {c.kind === "chat" && <Chat c={c} {...game} />}
       {c.kind === "verdict" && <Verdict c={c} {...game} />}
       {c.kind === "gaps" && <Gaps c={c} {...game} />}

@@ -4,6 +4,7 @@ import type {
   Beat,
   Challenge,
   Episode,
+  LockRound,
   Move,
   Phrase,
   StorySave,
@@ -45,6 +46,32 @@ export function storyLines(
     ),
   ];
 }
+/** Слова словаря уроков, которые использует игра: сборка проверяет, что они существуют. */
+export function storyWords(episodes: Episode[]): string[] {
+  return [
+    ...new Set(
+      episodes.flatMap((e) =>
+        e.beats.flatMap(({ challenge: c }) => {
+          if (
+            c.kind === "bingo" ||
+            c.kind === "letters" ||
+            c.kind === "docks" ||
+            c.kind === "gull"
+          )
+            return c.words;
+          if (c.kind === "speak") return c.lines;
+          if (c.kind === "scene") return c.items.map((i) => i.word);
+          if (c.kind === "odd") return c.rounds.flatMap((r) => r.words);
+          return [];
+        }),
+      ),
+    ),
+  ];
+}
+
+/** Решённый раунд замка хранится как собранная фраза. */
+export const lockKey = (round: LockRound) => round.answer.join(" ");
+
 /** Старые ошибки возвращаются, пока их не исправят, но не вытесняют выражения текущей главы. */
 export const reviewItems = (episode: Episode, weak: Record<string, number>) =>
   [
@@ -132,6 +159,25 @@ export function isCorrect(
         value,
         challenge.pairs.map((p) => p.id),
       );
+    case "bingo":
+    case "letters":
+    case "docks":
+    case "gull":
+      return sameSet(value, challenge.words);
+    case "lock":
+      return sameList(value, challenge.rounds.map(lockKey));
+    case "speak":
+      return sameSet(value, challenge.lines);
+    case "scene":
+      return sameSet(
+        value,
+        challenge.items.map((i) => i.word),
+      );
+    case "odd":
+      return sameList(
+        value,
+        challenge.rounds.map((r) => r.odd),
+      );
     case "route": {
       if (!Array.isArray(value)) return false;
       const path = walk(challenge, value);
@@ -173,6 +219,19 @@ export function solution(challenge: Challenge): Answer {
       return challenge.turns.map((t) => t.answer);
     case "memory":
       return challenge.pairs.map((p) => p.id);
+    case "bingo":
+    case "letters":
+    case "docks":
+    case "gull":
+      return challenge.words;
+    case "lock":
+      return challenge.rounds.map(lockKey);
+    case "speak":
+      return challenge.lines;
+    case "scene":
+      return challenge.items.map((i) => i.word);
+    case "odd":
+      return challenge.rounds.map((r) => r.odd);
     case "route":
       return challenge.moves;
     case "write":
@@ -205,6 +264,14 @@ export function initialAnswer(challenge: Challenge): Answer {
     case "spot":
     case "memory":
     case "route":
+    case "bingo":
+    case "scene":
+    case "odd":
+    case "letters":
+    case "speak":
+    case "docks":
+    case "gull":
+    case "lock":
       return [];
     case "gaps":
       return challenge.answer.map(() => "");
@@ -315,6 +382,30 @@ function restoreDraft(c: Challenge, v: unknown): Answer | undefined {
             c.pairs.some((p) => p.id === id),
           )
         : undefined;
+    case "bingo":
+    case "letters":
+    case "speak":
+    case "docks":
+    case "gull":
+    case "scene": {
+      if (!strings) return undefined;
+      const known =
+        c.kind === "scene"
+          ? c.items.map((i) => i.word)
+          : c.kind === "speak"
+            ? c.lines
+            : c.words;
+      return [...new Set(v as string[])].filter((id) => known.includes(id));
+    }
+    case "odd":
+    case "lock": {
+      if (!strings) return undefined;
+      const solved = v as string[];
+      const keys =
+        c.kind === "odd" ? c.rounds.map((r) => r.odd) : c.rounds.map(lockKey);
+      const wrong = keys.findIndex((key, i) => solved[i] !== key);
+      return solved.slice(0, wrong < 0 ? keys.length : wrong);
+    }
     case "route":
       return strings
         ? (v as string[]).slice(0, walk(c, v as string[]).length - 1)
@@ -482,6 +573,44 @@ function validateChallenge(
       return coinTotal(solution(c)) === c.answer;
     case "calendar":
       return restoreDraft(c, c.answer) === c.answer;
+    case "bingo":
+      return c.words.length === 9 && new Set(c.words).size === 9;
+    case "scene":
+      return (
+        c.items.length >= 6 &&
+        new Set(c.items.map((i) => i.word)).size === c.items.length
+      );
+    case "odd":
+      return c.rounds.every(
+        (r) => r.words.length === 4 && r.words.includes(r.odd) && r.why,
+      );
+    case "letters":
+      return (
+        c.words.length >= 3 &&
+        c.words.every((w) => /^\p{L}+$/u.test(w.replace(/^(der|die|das) /, "")))
+      );
+    case "speak":
+      return c.lines.length >= 2;
+    case "docks":
+      return (
+        c.words.length >= 4 &&
+        new Set(c.words).size === c.words.length &&
+        c.words.every((w) => /^(der|die|das) /.test(w))
+      );
+    case "gull":
+      return c.words.length >= 4 && new Set(c.words).size === c.words.length;
+    case "lock":
+      return c.rounds.every(
+        (r) =>
+          r.ru &&
+          r.reels.length === r.answer.length &&
+          r.reels.every(
+            (options, i) =>
+              options.length >= 2 &&
+              new Set(options).size === options.length &&
+              options.includes(r.answer[i]),
+          ),
+      );
     case "write":
       return (
         c.fields.length > 0 &&

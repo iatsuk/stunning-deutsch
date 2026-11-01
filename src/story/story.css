@@ -1074,6 +1074,281 @@
   font-size: 14px;
   color: var(--muted);
 }
+.moin-call {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: var(--muted);
+}
+.moin-word-line {
+  font-family: var(--serif);
+  font-size: 20px;
+  color: var(--text);
+}
+.moin-bingo {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+}
+.moin-bingo button,
+.moin-odd button {
+  min-height: 62px;
+  padding: 6px;
+  border: 1px solid var(--line-strong);
+  border-radius: 5px;
+  background: var(--panel-2);
+  font-family: var(--serif);
+  font-size: 15px;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+  cursor: pointer;
+}
+.moin-bingo small,
+.moin-odd small,
+.moin-scene-grid small {
+  display: block;
+  margin-top: 2px;
+  font-family: var(--sans);
+  font-size: 11px;
+  color: var(--muted);
+}
+.moin-bingo [data-done],
+.moin-odd [data-done],
+.moin-scene-grid [data-done] {
+  border-color: var(--ok);
+  background: #5fd49c14;
+  cursor: default;
+}
+.moin-scene-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+}
+.moin-scene-grid button {
+  min-height: 84px;
+  padding: 6px;
+  border: 1px solid var(--line-strong);
+  border-radius: 5px;
+  background: var(--panel-2);
+  cursor: pointer;
+}
+.moin-scene-grid button > span {
+  font-size: 34px;
+  line-height: 1.2;
+}
+.moin-scene-grid small {
+  font-family: var(--serif);
+  font-size: 12px;
+  color: var(--text);
+}
+.moin-odd {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+}
+.moin-odd button:disabled {
+  cursor: default;
+}
+.moin-odd-result {
+  margin-top: 12px;
+}
+.moin-odd-result p {
+  margin: 0 0 12px;
+  font-size: 15px;
+}
+.moin-letters > p {
+  margin: 0 0 10px;
+  font-size: 16px;
+}
+.moin-slots {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px;
+  margin-bottom: 14px;
+  font-family: var(--serif);
+  font-size: 24px;
+}
+.moin-slots span {
+  margin-right: 6px;
+  color: var(--accent);
+}
+.moin-slots b {
+  min-width: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+.moin-speak {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.moin-speak li {
+  padding: 12px 14px;
+  border: 1px solid var(--line-strong);
+  border-radius: 5px;
+  background: var(--panel-2);
+}
+.moin-speak li[data-done] {
+  border-color: var(--ok);
+}
+.moin-speak li small {
+  display: block;
+  font-size: 13px;
+  color: var(--muted);
+}
+.moin-speak li p {
+  margin: 8px 0 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+.moin-speak-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  margin-top: 10px;
+  font-size: 13px;
+}
+.moin-speak-tools > button:not(.primary) {
+  min-height: 42px;
+  padding: 0 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: 4px;
+  background: transparent;
+  font-size: 14px;
+  cursor: pointer;
+}
+.moin-speak-tools > button[aria-pressed="true"] {
+  border-color: var(--bad);
+  color: var(--bad);
+}
+.moin-boat {
+  margin-bottom: 12px;
+  font-size: 24px;
+}
+.moin-boat b {
+  font-family: var(--serif);
+  font-weight: 500;
+}
+.moin-docks {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+}
+.moin-docks button {
+  width: 100%;
+  min-height: 62px;
+  border: 1px solid var(--line-strong);
+  border-radius: 5px;
+  background: var(--panel-2);
+  font-family: var(--serif);
+  font-size: 22px;
+  cursor: pointer;
+}
+.moin-docks button:disabled {
+  cursor: default;
+}
+.moin-docks ul {
+  display: grid;
+  gap: 2px;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+  font-family: var(--serif);
+  font-size: 14px;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+.moin-gull-track {
+  position: relative;
+  height: 34px;
+  border-bottom: 2px dashed var(--line-strong);
+  margin-bottom: 12px;
+}
+.moin-gull-track::after {
+  content: "📝";
+  position: absolute;
+  right: 0;
+  bottom: 2px;
+  font-size: 20px;
+}
+.moin-gull-track span {
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  font-size: 22px;
+  scale: -1 1;
+  animation: moin-gull var(--gull-time) linear both;
+}
+@keyframes moin-gull {
+  to {
+    left: calc(100% - 56px);
+  }
+}
+@keyframes moin-gull-fade {
+  to {
+    opacity: 0.15;
+  }
+}
+/* Таймер остаётся видимым: птица не летит, а тает. Общее правило темы иначе схлопнуло бы анимацию. */
+@media (prefers-reduced-motion: reduce) {
+  .moin-gull-track span {
+    animation-name: moin-gull-fade;
+    animation-duration: var(--gull-time) !important;
+  }
+}
+.moin-gull-task {
+  margin: 0 0 12px;
+  font-family: var(--serif);
+  font-size: 22px;
+}
+.moin-reels {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(112px, 1fr));
+  gap: 6px;
+  margin-bottom: 8px;
+}
+.moin-reels > div {
+  display: grid;
+  border: 1px solid var(--line-strong);
+  border-radius: 5px;
+  background: var(--panel-2);
+}
+.moin-reels[data-open] > div {
+  border-color: var(--ok);
+}
+.moin-reels button {
+  min-height: 44px;
+  border: 0;
+  background: transparent;
+  font-size: 14px;
+  color: var(--muted);
+  cursor: pointer;
+}
+.moin-reels button:disabled {
+  visibility: hidden;
+}
+.moin-reels output {
+  padding: 8px 6px;
+  border-block: 1px solid var(--line);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.2;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+.moin-lock-done {
+  margin: 0;
+  padding-left: 20px;
+  font-family: var(--serif);
+  font-size: 17px;
+}
 .moin-turn-actions {
   display: flex;
   align-items: center;

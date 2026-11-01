@@ -1,3 +1,4 @@
+import { extras } from "./extra.ts";
 import type {
   ChatTurn,
   Episode,
@@ -2129,6 +2130,8 @@ export const episodes: Episode[] = [
     ],
   },
 ];
+for (const episode of episodes)
+  episode.beats = episode.beats.flatMap((b) => [b, ...(extras[b.id] ?? [])]);
 export const beats = episodes.flatMap((e) => e.beats);
 
 // Later scenes bring back the same grammatical units in a new situation.

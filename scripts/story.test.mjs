@@ -2,7 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { existsSync, readFileSync } from "node:fs";
 import { spawnSync } from "node:child_process";
-import { preis } from "../src/lib/german.ts";
+import { plain, preis } from "../src/lib/german.ts";
 import { episodes, beats, phrases } from "../src/story/data.ts";
 import {
   beatPhrases,
@@ -18,6 +18,7 @@ import {
   solution,
   STORY_KEY,
   storyLines,
+  storyWords,
   validateStory,
   walk,
 } from "../src/story/logic.ts";
@@ -25,11 +26,11 @@ const byId = (id) => beats.find((b) => b.id === id);
 
 test("12 sequential chapters cover the A1 route, with reachable, unique actions", () => {
   assert.equal(episodes.length, 12);
-  assert.equal(beats.length, 60);
+  assert.equal(beats.length, 168);
   assert.equal(new Set(episodes.map((e) => e.id)).size, 12);
   assert.deepEqual(validateStory(episodes, phrases), []);
-  assert.ok(episodes.every((e) => e.beats.length === 5));
-  assert.equal(new Set(beats.map((b) => b.challenge.kind)).size, 16);
+  assert.ok(episodes.every((e) => e.beats.length === 14));
+  assert.equal(new Set(beats.map((b) => b.challenge.kind)).size, 24);
   assert.equal(beats.at(-1).id, "12-finale");
 });
 test("detective answers require evidence; photos do not prove theft or intent", () => {
@@ -107,7 +108,7 @@ test("phrases are introduced before becoming German-only; callbacks repeat in ne
   assert.equal(knownBefore(beats, 0).has("moin"), false);
   assert.equal(knownBefore(beats, 1).has("moin"), true);
   assert.equal(knownBefore(beats, 1).has("inbag"), false);
-  assert.ok(knownBefore(beats, 59).has("inbag"));
+  assert.ok(knownBefore(beats, beats.length - 1).has("inbag"));
   for (const [id, p] of Object.entries(phrases)) {
     assert.ok(
       beats.some((b) => beatPhrases(b).includes(id)),
@@ -336,7 +337,7 @@ test("every chapter teaches through listening, exact writing and returning mista
       `${episode.id}: ошибки не возвращаются`,
     );
   }
-  assert.equal(beats.filter((b) => b.challenge.kind === "write").length, 12);
+  assert.equal(beats.filter((b) => b.challenge.kind === "write").length, 24);
 });
 test("write checks the exact German form and explains near misses", () => {
   const c = byId("01-card").challenge;
@@ -388,6 +389,99 @@ test("errors stay until written correctly and return in later chapters", () => {
   assert.deepEqual(normalizeSave(null, beats).weak, {});
   for (const b of beats)
     for (const id of b.practice ?? []) assert.ok(phrases[id], `${b.id}: ${id}`);
+});
+test("word games need every word once, and a draft keeps only known words", () => {
+  for (const id of [
+    "01-x-hello",
+    "01-x-flags",
+    "01-x-letters",
+    "01-x-say",
+    "01-x-docks",
+    "01-x-race",
+  ]) {
+    const c = byId(id).challenge;
+    const all = solution(c);
+    assert.ok(isCorrect(c, [...all].reverse()), id);
+    assert.ok(!isCorrect(c, all.slice(1)), id);
+    assert.ok(!isCorrect(c, [...all.slice(1), all[1]]), id);
+    assert.deepEqual(
+      normalizeSave({ drafts: { [id]: [all[0], all[0], "bogus"] } }, beats)
+        .drafts[id],
+      [all[0]],
+      id,
+    );
+  }
+});
+test("rounds of odd and lock go in order, a draft keeps only the solved start", () => {
+  for (const id of ["01-x-odd", "01-x-lock"]) {
+    const c = byId(id).challenge;
+    const [first, second, third] = solution(c);
+    assert.ok(isCorrect(c, [first, second, third]), id);
+    assert.ok(!isCorrect(c, [second, first, third]), id);
+    assert.deepEqual(
+      normalizeSave({ drafts: { [id]: [first, "bogus", third] } }, beats)
+        .drafts[id],
+      [first],
+      id,
+    );
+  }
+});
+test("the three docks take singular nouns, a plural article would teach nothing", () => {
+  const docks = beats.filter((b) => b.challenge.kind === "docks");
+  assert.equal(docks.length, 12);
+  const plurals = [
+    "die Eltern",
+    "die Geschwister",
+    "die Großeltern",
+    "die Möbel",
+    "die Nebenkosten",
+    "die Ferien",
+    "die USA",
+  ];
+  for (const b of docks)
+    for (const word of b.challenge.words)
+      assert.ok(!plurals.includes(word), `${b.id}: ${word}`);
+});
+test("the gull race never asks for one of two words with the same translation", () => {
+  const words = JSON.parse(
+    readFileSync(new URL("../src/generated/a1-words.json", import.meta.url)),
+  );
+  const races = beats.filter((b) => b.challenge.kind === "gull");
+  assert.equal(races.length, 12);
+  for (const b of races) {
+    const meanings = b.challenge.words.map((w) => words[w].ru);
+    assert.equal(new Set(meanings).size, meanings.length, b.id);
+  }
+});
+test("a lock has a Russian task, real alternatives and one stored answer per reel", () => {
+  const locks = beats.filter((b) => b.challenge.kind === "lock");
+  assert.equal(locks.length, 12);
+  for (const b of locks)
+    for (const round of b.challenge.rounds) {
+      assert.match(round.ru, /[а-яё]/i, b.id);
+      assert.ok(
+        round.reels.every((reel) => reel.length === 3),
+        b.id,
+      );
+      assert.ok(!/[а-яё]/i.test(round.answer.join(" ")), b.id);
+      assert.match(round.answer.at(-1), /[.?!]$/, b.id);
+    }
+});
+test("the game uses every word of the A1 lessons", () => {
+  const words = JSON.parse(
+    readFileSync(new URL("../src/generated/a1-words.json", import.meta.url)),
+  );
+  const used = new Set(storyWords(episodes).map(plain));
+  for (const p of Object.values(phrases)) used.add(plain(p.de));
+  for (const b of beats)
+    if (b.challenge.kind === "write")
+      for (const f of b.challenge.fields)
+        for (const a of f.answers) used.add(plain(a));
+  assert.ok(Object.keys(words).length > 400);
+  assert.deepEqual(
+    Object.keys(words).filter((w) => !used.has(w)),
+    [],
+  );
 });
 test("every phrase and voice line resolves to a recording that exists", () => {
   const map = JSON.parse(
