@@ -2237,6 +2237,10 @@
    "id": "einkaufen-14",
    "type": "order",
    "ru": "По-моему, он слишком дорогой.",
+   "also": [
+    "Zu teuer finde ich ihn.",
+    "Ihn finde ich zu teuer."
+   ],
    "de": "Ich finde ihn zu teuer.",
    "audio": "audio/86836df18b8e.m4a"
   },

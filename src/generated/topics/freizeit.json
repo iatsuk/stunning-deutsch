@@ -2123,6 +2123,10 @@
    "id": "freizeit-8",
    "type": "order",
    "ru": "Я умею играть на гитаре.",
+   "also": [
+    "Gitarre spielen kann ich.",
+    "Gitarre kann ich spielen."
+   ],
    "de": "Ich kann Gitarre spielen.",
    "audio": "audio/780f4c317820.m4a"
   },
@@ -2132,7 +2136,8 @@
    "ru": "В субботу я хочу почитать.",
    "de": "Am Samstag will ich lesen.",
    "also": [
-    "Ich will am Samstag lesen."
+    "Ich will am Samstag lesen.",
+    "Lesen will ich am Samstag."
    ],
    "why": "*Am Samstag* на первом месте — *will* второй, *ich* за ним, *lesen* в конце.",
    "audio": "audio/9e87930a226d.m4a"
@@ -2225,6 +2230,10 @@
    "id": "freizeit-17",
    "type": "order",
    "ru": "Мы хотим вместе фотографировать.",
+   "also": [
+    "Zusammen wollen wir fotografieren.",
+    "Fotografieren wollen wir zusammen."
+   ],
    "de": "Wir wollen zusammen fotografieren.",
    "audio": "audio/7a0c8236e1c4.m4a"
   }

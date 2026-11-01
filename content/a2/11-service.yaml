@@ -383,6 +383,20 @@ steps:
           view: task
           task: talk
           solved: true
+spy:
+  - de: "Welchen Stuhl nehmen Sie?"
+    wrong: "Welcher Stuhl nehmen Sie?"
+    why: "*Stuhl* здесь дополнение, мужской род: *welchen*."
+  - de: "Welche Jacke brauchen Sie?"
+    wrong: "Welches Jacke brauchen Sie?"
+    why: "*die Jacke* — женский род: *welche*."
+  - de: "Die Jacke ist groß genug."
+    wrong: "Die Jacke ist genug groß."
+    why: "*genug* ставится после прилагательного: *groß genug*."
+  - de: "Diese Jacke ist mir zu klein."
+    wrong: "Diese Jacke ist mich zu klein."
+    why: "Кому мала? Дательный падеж: *mir*."
+
 exercises:
   - type: choice
     q: ___ Stuhl nehmen Sie?
@@ -438,18 +452,23 @@ exercises:
     de: Welche Größe brauchen Sie?
   - type: order
     ru: Эта куртка мне слишком мала.
+    also: ["Mir ist diese Jacke zu klein.", "Zu klein ist mir diese Jacke."]
     de: Diese Jacke ist mir zu klein.
   - type: order
     ru: Куртка достаточно большая.
+    also: ["Groß genug ist die Jacke."]
     de: Die Jacke ist groß genug.
   - type: order
     ru: У нас достаточно времени.
+    also: ["Genug Zeit haben wir.", "Zeit haben wir genug."]
     de: Wir haben genug Zeit.
   - type: order
     ru: Я заказал размер M.
+    also: ["Größe M habe ich bestellt."]
     de: Ich habe Größe M bestellt.
   - type: order
     ru: Не могли бы вы проверить заказ?
+    also: ["Könnten Sie bitte die Bestellung prüfen?"]
     de: Könnten Sie die Bestellung bitte prüfen?
 case:
   title: Bestellt M, geliefert S

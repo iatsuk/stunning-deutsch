@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import type { CaseEvidence, Investigation, Topic } from "../content";
 import { useCaseProgress } from "../hooks";
+import { shuffle } from "../lib/shuffle";
 import { De, PlayButton, Text } from "../markup";
 
 /**
@@ -61,7 +62,7 @@ export function CaseFile({ topic, investigation }: { topic: Topic; investigation
                   <Text text={step.question} />
                 </h4>
                 <div className="option-row">
-                  {step.options.map((option, k) => (
+                  {shuffle(step.options.map((_, k) => k), `${topic.id}-case-${i}`).map((k) => (
                     <button
                       key={k}
                       type="button"
@@ -73,7 +74,7 @@ export function CaseFile({ topic, investigation }: { topic: Topic; investigation
                         else setMisses((m) => ({ ...m, [i]: [...(m[i] ?? []), k] }));
                       }}
                     >
-                      <Text text={option} />
+                      <Text text={step.options[k]} />
                     </button>
                   ))}
                 </div>

@@ -1736,6 +1736,7 @@
    "id": "b1-alltag-1",
    "type": "choice",
    "q": "Du ___ die Becher nicht zu kaufen.",
+   "ru": "Тебе не нужно покупать стаканы.",
    "options": [
     "darfst",
     "hast",
@@ -1812,6 +1813,9 @@
    "type": "order",
    "de": "Du brauchst nicht alles allein zu machen.",
    "ru": "Не нужно делать всё одному.",
+   "also": [
+    "Allein brauchst du nicht alles zu machen."
+   ],
    "audio": "audio/6dcece2cb4b5.m4a"
   },
   {
@@ -1819,6 +1823,9 @@
    "type": "order",
    "de": "Du brauchst die Becher nicht zu kaufen.",
    "ru": "Не нужно покупать стаканы.",
+   "also": [
+    "Die Becher brauchst du nicht zu kaufen."
+   ],
    "audio": "audio/e7f052593683.m4a"
   },
   {
@@ -1826,6 +1833,10 @@
    "type": "order",
    "de": "Ich brauche nur die Liste zu prüfen.",
    "ru": "Мне нужно только проверить список.",
+   "also": [
+    "Nur die Liste brauche ich zu prüfen.",
+    "Die Liste brauche ich nur zu prüfen."
+   ],
    "audio": "audio/d98e700379c1.m4a"
   },
   {
@@ -1833,6 +1844,9 @@
    "type": "order",
    "de": "Wir sollten kurze Pausen einplanen.",
    "ru": "Нам стоит предусмотреть короткие перерывы.",
+   "also": [
+    "Kurze Pausen sollten wir einplanen."
+   ],
    "audio": "audio/0d86b15e7e73.m4a"
   },
   {
@@ -1840,6 +1854,9 @@
    "type": "order",
    "de": "Hauke übernimmt die Schlüsselübergabe.",
    "ru": "Хауке берёт на себя передачу ключа.",
+   "also": [
+    "Die Schlüsselübergabe übernimmt Hauke."
+   ],
    "audio": "audio/c09eaf95d68a.m4a"
   },
   {
@@ -1847,6 +1864,9 @@
    "type": "order",
    "de": "Elif meldet sich nach der Abholung.",
    "ru": "Элиф сообщит после самовывоза.",
+   "also": [
+    "Nach der Abholung meldet sich Elif."
+   ],
    "audio": "audio/bfee9da18fc0.m4a"
   }
  ],
@@ -2095,5 +2115,26 @@
    }
   ]
  },
- "spy": []
+ "spy": [
+  {
+   "de": "Du brauchst den Schlüssel nicht abzuholen.",
+   "wrong": "Du brauchst den Schlüssel nicht zu abholen.",
+   "why": "У отделяемого глагола *zu* стоит внутри слова: *abzuholen*."
+  },
+  {
+   "de": "Ich brauche nur die Liste zu prüfen.",
+   "wrong": "Ich brauche nur die Liste prüfen zu.",
+   "why": "*zu* стоит перед инфинитивом: *zu prüfen*."
+  },
+  {
+   "de": "Du brauchst nicht alles allein zu machen.",
+   "wrong": "Du brauchst nicht alles allein zu machst.",
+   "why": "После *zu* нужен инфинитив: *machen*."
+  },
+  {
+   "de": "Wir sollten kurze Pausen einplanen.",
+   "wrong": "Wir sollten kurze Pausen eingeplant.",
+   "why": "После *sollten* в конце стоит инфинитив: *einplanen*."
+  }
+ ]
 }

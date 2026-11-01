@@ -1241,6 +1241,10 @@
    "id": "a2-service-8",
    "type": "order",
    "ru": "Эта куртка мне слишком мала.",
+   "also": [
+    "Mir ist diese Jacke zu klein.",
+    "Zu klein ist mir diese Jacke."
+   ],
    "de": "Diese Jacke ist mir zu klein.",
    "audio": "audio/40d4f4446b69.m4a"
   },
@@ -1248,6 +1252,9 @@
    "id": "a2-service-9",
    "type": "order",
    "ru": "Куртка достаточно большая.",
+   "also": [
+    "Groß genug ist die Jacke."
+   ],
    "de": "Die Jacke ist groß genug.",
    "audio": "audio/b05eeed33f1b.m4a"
   },
@@ -1255,6 +1262,10 @@
    "id": "a2-service-10",
    "type": "order",
    "ru": "У нас достаточно времени.",
+   "also": [
+    "Genug Zeit haben wir.",
+    "Zeit haben wir genug."
+   ],
    "de": "Wir haben genug Zeit.",
    "audio": "audio/38d52c1a4501.m4a"
   },
@@ -1262,6 +1273,9 @@
    "id": "a2-service-11",
    "type": "order",
    "ru": "Я заказал размер M.",
+   "also": [
+    "Größe M habe ich bestellt."
+   ],
    "de": "Ich habe Größe M bestellt.",
    "audio": "audio/6a738d40b704.m4a"
   },
@@ -1269,6 +1283,9 @@
    "id": "a2-service-12",
    "type": "order",
    "ru": "Не могли бы вы проверить заказ?",
+   "also": [
+    "Könnten Sie bitte die Bestellung prüfen?"
+   ],
    "de": "Könnten Sie die Bestellung bitte prüfen?",
    "audio": "audio/2ba5d4c05cad.m4a"
   }
@@ -1515,5 +1532,26 @@
    }
   ]
  },
- "spy": []
+ "spy": [
+  {
+   "de": "Welchen Stuhl nehmen Sie?",
+   "wrong": "Welcher Stuhl nehmen Sie?",
+   "why": "*Stuhl* здесь дополнение, мужской род: *welchen*."
+  },
+  {
+   "de": "Welche Jacke brauchen Sie?",
+   "wrong": "Welches Jacke brauchen Sie?",
+   "why": "*die Jacke* — женский род: *welche*."
+  },
+  {
+   "de": "Die Jacke ist groß genug.",
+   "wrong": "Die Jacke ist genug groß.",
+   "why": "*genug* ставится после прилагательного: *groß genug*."
+  },
+  {
+   "de": "Diese Jacke ist mir zu klein.",
+   "wrong": "Diese Jacke ist mich zu klein.",
+   "why": "Кому мала? Дательный падеж: *mir*."
+  }
+ ]
 }

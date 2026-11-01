@@ -707,7 +707,7 @@ case:
     habe dreißig Jahre.* По-немецки *Ich bin dreißig*. Но и Матео так
     ошибался: одного окончания для обвинения недостаточно. Йенсен решает
     проверить бронь и документы. Кто же звонил? Продолжение — в
-    следующей теме, а ловить такие ошибки можно в «Шпионе».
+    следующей теме, а находить такие ошибки можно в «Поиске ошибки».
 
 adventure:
   kind: harbor
@@ -861,6 +861,7 @@ exercises:
     de: Haben Sie Fragen?
   - type: order
     ru: Мне двадцать восемь лет.
+    also: ["Achtundzwanzig Jahre alt bin ich."]
     de: Ich bin achtundzwanzig Jahre alt.
   - type: choice
     q: Йенсен сказал *zweiunddreißig*. Где искать лодку?

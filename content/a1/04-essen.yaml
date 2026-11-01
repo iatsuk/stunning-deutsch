@@ -700,6 +700,7 @@ exercises:
     why: "*der Döner* — мужской род, после *möchte* винительный: *einen*."
   - type: order
     ru: Я возьму булочку с рыбой и сок.
+    also: ["Ich nehme einen Saft und ein Fischbrötchen.", "Ein Fischbrötchen und einen Saft nehme ich.", "Einen Saft und ein Fischbrötchen nehme ich."]
     de: Ich nehme ein Fischbrötchen und einen Saft.
     why: "*das Fischbrötchen* — *ein*, *der Saft* — *einen*."
 adventure:

@@ -1732,6 +1732,9 @@
    "type": "order",
    "de": "Als wir ankamen, wurde es heller.",
    "ru": "Когда мы приехали, стало светлее.",
+   "also": [
+    "Es wurde heller, als wir ankamen."
+   ],
    "audio": "audio/d44b58815408.m4a"
   },
   {
@@ -1739,6 +1742,9 @@
    "type": "order",
    "de": "Wenn ich frei hatte, nahm ich Essen mit.",
    "ru": "Когда у меня было свободно, я брал еду.",
+   "also": [
+    "Ich nahm Essen mit, wenn ich frei hatte."
+   ],
    "audio": "audio/1c8599d55136.m4a"
   },
   {
@@ -1746,6 +1752,10 @@
    "type": "order",
    "de": "Wir gingen danach ins Café.",
    "ru": "Потом мы пошли в кафе.",
+   "also": [
+    "Danach gingen wir ins Café.",
+    "Ins Café gingen wir danach."
+   ],
    "audio": "audio/b89bd0150ded.m4a"
   },
   {
@@ -1753,6 +1763,10 @@
    "type": "order",
    "de": "Ich fand die Ausstellung interessant.",
    "ru": "Мне показалась интересной выставка.",
+   "also": [
+    "Die Ausstellung fand ich interessant.",
+    "Interessant fand ich die Ausstellung."
+   ],
    "audio": "audio/2566d626f069.m4a"
   },
   {
@@ -1760,6 +1774,9 @@
    "type": "order",
    "de": "Der Bus kam pünktlich.",
    "ru": "Автобус пришёл вовремя.",
+   "also": [
+    "Pünktlich kam der Bus."
+   ],
    "audio": "audio/6c6200ffddda.m4a"
   },
   {
@@ -1767,6 +1784,10 @@
    "type": "order",
    "de": "Diesmal hatten wir viel Zeit.",
    "ru": "В этот раз у нас было много времени.",
+   "also": [
+    "Wir hatten diesmal viel Zeit.",
+    "Viel Zeit hatten wir diesmal."
+   ],
    "audio": "audio/e7b32f4d88cc.m4a"
   }
  ],
@@ -2001,5 +2022,26 @@
    }
   ]
  },
- "spy": []
+ "spy": [
+  {
+   "de": "Als ich zum ersten Mal dort war, regnete es.",
+   "wrong": "Wenn ich zum ersten Mal dort war, regnete es.",
+   "why": "Однократное событие в прошлом вводит *als*."
+  },
+  {
+   "de": "Wenn ich früher frei hatte, fuhr ich oft ans Meer.",
+   "wrong": "Als ich früher frei hatte, fuhr ich oft ans Meer.",
+   "why": "Повторяющееся в прошлом вводит *wenn*: на это указывает *oft*."
+  },
+  {
+   "de": "Wir gingen danach ins Café.",
+   "wrong": "Wir gehten danach ins Café.",
+   "why": "*gehen* — сильный глагол: *gingen*."
+  },
+  {
+   "de": "Ich fand die Ausstellung interessant.",
+   "wrong": "Ich findete die Ausstellung interessant.",
+   "why": "*finden* — сильный глагол: *fand*."
+  }
+ ]
 }

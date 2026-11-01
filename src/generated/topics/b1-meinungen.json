@@ -1955,7 +1955,7 @@
    "q": "Музей 6 + кафе 8 при бюджете 10…",
    "options": [
     "Подходит",
-    "Стоит10",
+    "Стоит 10",
     "Не подходит"
    ],
    "answer": 2,
@@ -1966,6 +1966,9 @@
    "type": "order",
    "de": "Obwohl ich müde bin, gehe ich kurz spazieren.",
    "ru": "Хотя я устала, немного прогуляюсь.",
+   "also": [
+    "Ich gehe kurz spazieren, obwohl ich müde bin."
+   ],
    "audio": "audio/da25f7e1ac38.m4a"
   },
   {
@@ -1973,6 +1976,10 @@
    "type": "order",
    "de": "Es regnet. Trotzdem machen wir eine kurze Runde.",
    "ru": "Идёт дождь. Всё же сделаем короткую прогулку.",
+   "also": [
+    "Es regnet. Wir machen trotzdem eine kurze Runde.",
+    "Es regnet. Eine kurze Runde machen wir trotzdem."
+   ],
    "audio": "audio/fc2670a0839f.m4a"
   },
   {
@@ -1980,6 +1987,10 @@
    "type": "order",
    "de": "Ich gehe ins Café, weil ich eine Pause brauche.",
    "ru": "Я иду в кафе, потому что нужен перерыв.",
+   "also": [
+    "Weil ich eine Pause brauche, gehe ich ins Café.",
+    "Ins Café gehe ich, weil ich eine Pause brauche."
+   ],
    "audio": "audio/0cca6edf7b7b.m4a"
   },
   {
@@ -1987,6 +1998,9 @@
    "type": "order",
    "de": "Wir haben unterschiedliche Interessen.",
    "ru": "У нас разные интересы.",
+   "also": [
+    "Unterschiedliche Interessen haben wir."
+   ],
    "audio": "audio/49487c6ddbf3.m4a"
   },
   {
@@ -1994,6 +2008,9 @@
    "type": "order",
    "de": "Trotzdem können wir uns einigen.",
    "ru": "И всё же мы можем договориться.",
+   "also": [
+    "Wir können uns trotzdem einigen."
+   ],
    "audio": "audio/2f06abec2f0c.m4a"
   },
   {
@@ -2001,6 +2018,10 @@
    "type": "order",
    "de": "Ich bestelle selbst auf Deutsch.",
    "ru": "Я закажу сама на немецком.",
+   "also": [
+    "Auf Deutsch bestelle ich selbst.",
+    "Selbst bestelle ich auf Deutsch."
+   ],
    "audio": "audio/459a34e47f68.m4a"
   }
  ],
@@ -2235,5 +2256,26 @@
    }
   ]
  },
- "spy": []
+ "spy": [
+  {
+   "de": "Obwohl es regnet, gehen wir hinaus.",
+   "wrong": "Obwohl es regnet, wir gehen hinaus.",
+   "why": "После придаточного сразу идёт глагол: *gehen wir*."
+  },
+  {
+   "de": "Es regnet. Trotzdem gehen wir hinaus.",
+   "wrong": "Es regnet. Trotzdem wir gehen hinaus.",
+   "why": "*trotzdem* занимает первую позицию, глагол идёт сразу за ним."
+  },
+  {
+   "de": "Ich gehe spazieren, obwohl ich müde bin.",
+   "wrong": "Ich gehe spazieren, obwohl ich bin müde.",
+   "why": "После *obwohl* глагол уходит в конец: *müde bin*."
+  },
+  {
+   "de": "Obwohl ich müde bin, gehe ich kurz spazieren.",
+   "wrong": "Trotzdem ich müde bin, gehe ich kurz spazieren.",
+   "why": "Придаточное вводит союз *obwohl*; *trotzdem* стоит в главном предложении."
+  }
+ ]
 }

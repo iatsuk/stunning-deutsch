@@ -1705,6 +1705,9 @@
    "id": "a2-vergleichen-7",
    "type": "order",
    "ru": "Кафе B дешевле кафе A.",
+   "also": [
+    "Günstiger als Café A ist Café B."
+   ],
    "de": "Café B ist günstiger als Café A.",
    "audio": "audio/ba3fe0e46c71.m4a"
   },
@@ -1712,6 +1715,9 @@
    "id": "a2-vergleichen-8",
    "type": "order",
    "ru": "Оба кафе тихие.",
+   "also": [
+    "Ruhig sind beide Cafés."
+   ],
    "de": "Beide Cafés sind ruhig.",
    "audio": "audio/50b8718c8241.m4a"
   },
@@ -1719,6 +1725,10 @@
    "id": "a2-vergleichen-9",
    "type": "order",
    "ru": "Я предпочитаю пойти в музей.",
+   "also": [
+    "Lieber möchte ich ins Museum.",
+    "Ins Museum möchte ich lieber."
+   ],
    "de": "Ich möchte lieber ins Museum.",
    "audio": "audio/f958f06095bf.m4a"
   },
@@ -1726,6 +1736,9 @@
    "id": "a2-vergleichen-10",
    "type": "order",
    "ru": "Прогулка бесплатная.",
+   "also": [
+    "Kostenlos ist der Spaziergang."
+   ],
    "de": "Der Spaziergang ist kostenlos.",
    "audio": "audio/66e692982118.m4a"
   },
@@ -1740,6 +1753,9 @@
    "id": "a2-vergleichen-12",
    "type": "order",
    "ru": "Кафе B ближе к музею.",
+   "also": [
+    "Näher am Museum ist Café B."
+   ],
    "de": "Café B ist näher am Museum.",
    "audio": "audio/eca4b0640914.m4a"
   }
@@ -2033,5 +2049,26 @@
    }
   ]
  },
- "spy": []
+ "spy": [
+  {
+   "de": "Café B ist günstiger als Café A.",
+   "wrong": "Café B ist günstiger wie Café A.",
+   "why": "После сравнительной степени нужно *als*."
+  },
+  {
+   "de": "Beide Cafés sind genauso ruhig wie das Hotel.",
+   "wrong": "Beide Cafés sind genauso ruhig als das Hotel.",
+   "why": "Равенство: *genauso … wie*."
+  },
+  {
+   "de": "Mein Plan ist besser.",
+   "wrong": "Mein Plan ist guter.",
+   "why": "*gut* образует форму особо: *besser*."
+  },
+  {
+   "de": "Café B ist näher am Museum.",
+   "wrong": "Café B ist naher am Museum.",
+   "why": "*nah* получает умлаут: *näher*."
+  }
+ ]
 }

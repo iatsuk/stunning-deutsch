@@ -1689,6 +1689,7 @@
    "id": "a2-abschluss-4",
    "type": "choice",
    "q": "Wir planen ___ Montag.",
+   "ru": "Мы планируем с понедельника.",
    "options": [
     "seit",
     "vor",
@@ -1728,6 +1729,10 @@
    "id": "a2-abschluss-7",
    "type": "order",
    "ru": "Мы едем в воскресенье, потому что Матео свободен.",
+   "also": [
+    "Am Sonntag fahren wir, weil Mateo frei hat.",
+    "Weil Mateo frei hat, fahren wir am Sonntag."
+   ],
    "de": "Wir fahren am Sonntag, weil Mateo frei hat.",
    "audio": "audio/145920b93b87.m4a"
   },
@@ -1735,6 +1740,10 @@
    "id": "a2-abschluss-8",
    "type": "order",
    "ru": "Если будет дождь, мы пойдём в музей.",
+   "also": [
+    "Wir gehen ins Museum, wenn es regnet.",
+    "Ins Museum gehen wir, wenn es regnet."
+   ],
    "de": "Wenn es regnet, gehen wir ins Museum.",
    "audio": "audio/07a6d2d105ef.m4a"
   },
@@ -1742,6 +1751,9 @@
    "id": "a2-abschluss-9",
    "type": "order",
    "ru": "Я спрашиваю, есть ли свободные места.",
+   "also": [
+    "Ob Plätze frei sind, frage ich."
+   ],
    "de": "Ich frage, ob Plätze frei sind.",
    "audio": "audio/293b7e6a85a9.m4a"
   },
@@ -1749,6 +1761,10 @@
    "id": "a2-abschluss-10",
    "type": "order",
    "ru": "Мы планируем поездку с понедельника.",
+   "also": [
+    "Seit Montag planen wir die Fahrt.",
+    "Die Fahrt planen wir seit Montag."
+   ],
    "de": "Wir planen seit Montag die Fahrt.",
    "audio": "audio/b1e50e8740b9.m4a"
   },
@@ -1756,6 +1772,9 @@
    "id": "a2-abschluss-11",
    "type": "order",
    "ru": "План A дешевле плана B.",
+   "also": [
+    "Billiger als Plan B ist Plan A."
+   ],
    "de": "Plan A ist billiger als Plan B.",
    "audio": "audio/95cf9ba5f1b5.m4a"
   },
@@ -1763,6 +1782,9 @@
    "id": "a2-abschluss-12",
    "type": "order",
    "ru": "Мы встречаемся в одиннадцать.",
+   "also": [
+    "Um elf Uhr treffen wir uns."
+   ],
    "de": "Wir treffen uns um elf Uhr.",
    "audio": "audio/3bcf292c50e3.m4a"
   }
@@ -2040,10 +2062,24 @@
  },
  "spy": [
   {
+   "de": "Wir fahren am Sonntag, weil Mateo frei hat.",
+   "wrong": "Wir fahren am Sonntag, weil Mateo hat frei.",
+   "why": "После *weil* глагол уходит в конец: *frei hat*."
+  },
+  {
    "de": "Wenn es regnet, gehen wir ins Museum.",
    "wrong": "Wenn es regnet, wir gehen ins Museum.",
-   "why": "Глагол стоит на второй позиции: после *Wenn es regnet,* сразу идёт *gehen*, а *wir* — за ним.",
-   "auto": true
+   "why": "После придаточного сразу идёт глагол: *gehen wir*."
+  },
+  {
+   "de": "Plan A ist billiger als Plan B.",
+   "wrong": "Plan A ist billiger wie Plan B.",
+   "why": "После сравнительной степени нужно *als*."
+  },
+  {
+   "de": "Wir treffen uns um elf Uhr.",
+   "wrong": "Wir treffen sich um elf Uhr.",
+   "why": "С *wir* нужно *uns*."
   }
  ]
 }

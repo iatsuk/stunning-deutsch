@@ -1258,6 +1258,10 @@
    "id": "a2-zeitplan-7",
    "type": "order",
    "ru": "Если идёт дождь, мы остаёмся в кафе.",
+   "also": [
+    "Wir bleiben im Café, wenn es regnet.",
+    "Im Café bleiben wir, wenn es regnet."
+   ],
    "de": "Wenn es regnet, bleiben wir im Café.",
    "audio": "audio/d562269427ef.m4a"
   },
@@ -1265,6 +1269,9 @@
    "id": "a2-zeitplan-8",
    "type": "order",
    "ru": "Мы гуляем, если погода хорошая.",
+   "also": [
+    "Wenn das Wetter gut ist, gehen wir spazieren."
+   ],
    "de": "Wir gehen spazieren, wenn das Wetter gut ist.",
    "audio": "audio/8b3ad1b4750f.m4a"
   },
@@ -1272,6 +1279,9 @@
    "id": "a2-zeitplan-9",
    "type": "order",
    "ru": "У Элиф есть время с четырнадцати.",
+   "also": [
+    "Ab vierzehn Uhr hat Elif Zeit."
+   ],
    "de": "Elif hat ab vierzehn Uhr Zeit.",
    "audio": "audio/858f814a1a4b.m4a"
   },
@@ -1279,6 +1289,9 @@
    "id": "a2-zeitplan-10",
    "type": "order",
    "ru": "Время остаётся прежним.",
+   "also": [
+    "Gleich bleibt die Uhrzeit."
+   ],
    "de": "Die Uhrzeit bleibt gleich.",
    "audio": "audio/60811cc520c1.m4a"
   },
@@ -1286,6 +1299,9 @@
    "id": "a2-zeitplan-11",
    "type": "order",
    "ru": "Я подтверждаю нашу встречу.",
+   "also": [
+    "Unser Treffen bestätige ich."
+   ],
    "de": "Ich bestätige unser Treffen.",
    "audio": "audio/b6f6109d9032.m4a"
   },
@@ -1293,6 +1309,10 @@
    "id": "a2-zeitplan-12",
    "type": "order",
    "ru": "В воскресенье мы встречаемся в кафе.",
+   "also": [
+    "Wir treffen uns am Sonntag im Café.",
+    "Im Café treffen wir uns am Sonntag."
+   ],
    "de": "Am Sonntag treffen wir uns im Café.",
    "audio": "audio/0d1ede26be3f.m4a"
   }
@@ -1518,8 +1538,22 @@
   {
    "de": "Wenn es regnet, bleiben wir im Café.",
    "wrong": "Wenn es regnet, wir bleiben im Café.",
-   "why": "Глагол стоит на второй позиции: после *Wenn es regnet,* сразу идёт *bleiben*, а *wir* — за ним.",
-   "auto": true
+   "why": "Придаточное занимает первую позицию, поэтому дальше сразу глагол: *bleiben wir*."
+  },
+  {
+   "de": "Wir gehen spazieren, wenn das Wetter gut ist.",
+   "wrong": "Wir gehen spazieren, wenn das Wetter ist gut.",
+   "why": "После *wenn* глагол уходит в конец: *gut ist*."
+  },
+  {
+   "de": "Elif hat ab vierzehn Uhr Zeit.",
+   "wrong": "Elif hat von vierzehn Uhr Zeit.",
+   "why": "Начало без конца — *ab*: *von* требует пары с *bis*."
+  },
+  {
+   "de": "Dana kann von zwölf bis sechzehn Uhr.",
+   "wrong": "Dana kann von zwölf nach sechzehn Uhr.",
+   "why": "Промежуток времени: *von … bis*."
   }
  ]
 }

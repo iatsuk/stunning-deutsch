@@ -1719,6 +1719,10 @@
    "id": "b1-lernen-7",
    "type": "order",
    "ru": "На практическом курсе мы тренируем разговоры.",
+   "also": [
+    "Wir üben in einem praktischen Kurs Gespräche.",
+    "Gespräche üben wir in einem praktischen Kurs."
+   ],
    "de": "In einem praktischen Kurs üben wir Gespräche.",
    "audio": "audio/e6bdc28fa0d2.m4a"
   },
@@ -1726,6 +1730,9 @@
    "id": "b1-lernen-8",
    "type": "order",
    "ru": "Я учусь в маленькой группе.",
+   "also": [
+    "In einer kleinen Gruppe lerne ich."
+   ],
    "de": "Ich lerne in einer kleinen Gruppe.",
    "audio": "audio/2a2d1f8095e1.m4a"
   },
@@ -1733,6 +1740,9 @@
    "id": "b1-lernen-9",
    "type": "order",
    "ru": "Мы работаем с новыми примерами.",
+   "also": [
+    "Mit neuen Beispielen arbeiten wir."
+   ],
    "de": "Wir arbeiten mit neuen Beispielen.",
    "audio": "audio/d602ecaae5e0.m4a"
   },
@@ -1740,6 +1750,10 @@
    "id": "b1-lernen-10",
    "type": "order",
    "ru": "Курс начинается в понедельник в девять.",
+   "also": [
+    "Am Montag beginnt der Kurs um neun Uhr.",
+    "Um neun Uhr beginnt der Kurs am Montag."
+   ],
    "de": "Der Kurs beginnt am Montag um neun Uhr.",
    "audio": "audio/1588caab5e94.m4a"
   },
@@ -1747,6 +1761,11 @@
    "id": "b1-lernen-11",
    "type": "order",
    "ru": "Я не хочу тратить больше тридцати евро.",
+   "also": [
+    "Mehr als dreißig Euro möchte ich nicht ausgeben.",
+    "Nicht mehr als dreißig Euro möchte ich ausgeben.",
+    "Ausgeben möchte ich nicht mehr als dreißig Euro."
+   ],
    "de": "Ich möchte nicht mehr als dreißig Euro ausgeben.",
    "audio": "audio/d9445b57cd25.m4a"
   },
@@ -1754,6 +1773,9 @@
    "id": "b1-lernen-12",
    "type": "order",
    "ru": "Запись на курс подтверждена.",
+   "also": [
+    "Bestätigt ist die Anmeldung zum Kurs."
+   ],
    "de": "Die Anmeldung zum Kurs ist bestätigt.",
    "audio": "audio/391b2bb1ae3a.m4a"
   }
@@ -1979,10 +2001,24 @@
  },
  "spy": [
   {
+   "de": "Ich lerne in einer kleinen Gruppe.",
+   "wrong": "Ich lerne in einer kleine Gruppe.",
+   "why": "В дательном падеже прилагательное получает *-en*: *kleinen*."
+  },
+  {
+   "de": "Wir arbeiten mit neuen Beispielen.",
+   "wrong": "Wir arbeiten mit neue Beispielen.",
+   "why": "Дательный падеж мн. ч. без артикля: *neuen*."
+  },
+  {
    "de": "In einem praktischen Kurs üben wir Gespräche.",
-   "wrong": "In einem praktischen Kurs wir üben Gespräche.",
-   "why": "Глагол стоит на второй позиции: после *In einem praktischen Kurs* сразу идёт *üben*, а *wir* — за ним.",
-   "auto": true
+   "wrong": "In einem praktischer Kurs üben wir Gespräche.",
+   "why": "*in einem* — дательный падеж: *praktischen*."
+  },
+  {
+   "de": "Ich möchte mit neuen Kontakten sprechen.",
+   "wrong": "Ich möchte mit neuen Kontakte sprechen.",
+   "why": "В дательном падеже мн. ч. существительное получает *-n*: *Kontakten*."
   }
  ]
 }

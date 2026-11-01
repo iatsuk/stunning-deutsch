@@ -6,7 +6,7 @@
   --line-strong: #393d47;
   --text: #ece8e0;
   --muted: #a39d93;
-  --faint: #6d685f;
+  --faint: #8d877c;
   /* Акцент — золото флага: окончания, глагол, активные элементы. */
   --accent: #f2c14e;
   --accent-soft: rgb(242 193 78 / 0.13);
@@ -174,6 +174,27 @@ h3 .de,
 
 .link-button:hover {
   color: var(--text);
+}
+
+/* На телефоне цель нажатия шире видимой кнопки: вёрстка и внешний вид не меняются. */
+@media (pointer: coarse) {
+  .play,
+  .link-button,
+  .chip-button {
+    position: relative;
+  }
+
+  .play::after,
+  .link-button::after,
+  .chip-button::after {
+    content: "";
+    position: absolute;
+    inset: -11px -9px;
+  }
+
+  .chip-button::after {
+    inset: -9px -2px;
+  }
 }
 
 .play {

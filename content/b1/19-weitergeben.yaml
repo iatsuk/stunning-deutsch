@@ -562,6 +562,20 @@ steps:
           view: task
           task: opinions
           solved: true
+spy:
+  - de: "Die Fotos des Hafens stammen aus Flensburg."
+    wrong: "Die Fotos des Hafen stammen aus Flensburg."
+    why: "Родительный падеж мужского рода: *des Hafens*."
+  - de: "Die Bilder der Stadt zeigen den Ausflug."
+    wrong: "Die Bilder des Stadt zeigen den Ausflug."
+    why: "*die Stadt* — женский род: *der Stadt*."
+  - de: "Wir nennen den Namen des Fotografen."
+    wrong: "Wir nennen den Namen des Fotograf."
+    why: "*der Fotograf* склоняется: *des Fotografen*."
+  - de: "Die Eindrücke der Freunde waren unterschiedlich."
+    wrong: "Die Eindrücke den Freunde waren unterschiedlich."
+    why: "Родительный падеж мн. ч.: *der Freunde*."
+
 exercises:
   - type: choice
     q: die Fotos ___ Hafens
@@ -614,21 +628,27 @@ exercises:
   - type: order
     de: Die Fotos des Hafens stammen aus Flensburg.
     ru: Фотографии гавани из Фленсбурга.
+    also: ["Aus Flensburg stammen die Fotos des Hafens."]
   - type: order
     de: Die Bilder der Stadt zeigen einen Teil des Ausflugs.
     ru: Снимки города показывают часть поездки.
+    also: ["Einen Teil des Ausflugs zeigen die Bilder der Stadt."]
   - type: order
     de: Wir nennen den Namen des Fotografen.
     ru: Мы назовём имя фотографа.
+    also: ["Den Namen des Fotografen nennen wir."]
   - type: order
     de: Die Eindrücke der Freunde waren unterschiedlich.
     ru: Впечатления друзей различались.
+    also: ["Unterschiedlich waren die Eindrücke der Freunde."]
   - type: order
     de: Wir haben das Museum besucht.
     ru: Мы посетили музей.
+    also: ["Das Museum haben wir besucht."]
   - type: order
     de: Der Preis steht nicht in unseren Notizen.
     ru: Цена не указана в наших заметках.
+    also: ["In unseren Notizen steht der Preis nicht."]
 case:
   title: Ein schöner Ausschnitt ist nicht die ganze Region
   ru: Сверка дневника

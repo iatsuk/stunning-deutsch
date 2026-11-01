@@ -2231,6 +2231,9 @@
    "id": "gesundheit-14",
    "type": "order",
    "ru": "Мне нужно лежать в постели.",
+   "also": [
+    "Im Bett muss ich bleiben."
+   ],
    "de": "Ich muss im Bett bleiben.",
    "why": "*muss* — на втором месте, *bleiben* — в конце.",
    "audio": "audio/b27cee309138.m4a"

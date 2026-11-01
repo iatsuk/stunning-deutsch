@@ -1737,6 +1737,9 @@
    "type": "order",
    "de": "Die Fotos des Hafens stammen aus Flensburg.",
    "ru": "Фотографии гавани из Фленсбурга.",
+   "also": [
+    "Aus Flensburg stammen die Fotos des Hafens."
+   ],
    "audio": "audio/a1355951b4ab.m4a"
   },
   {
@@ -1744,6 +1747,9 @@
    "type": "order",
    "de": "Die Bilder der Stadt zeigen einen Teil des Ausflugs.",
    "ru": "Снимки города показывают часть поездки.",
+   "also": [
+    "Einen Teil des Ausflugs zeigen die Bilder der Stadt."
+   ],
    "audio": "audio/a140de2522d6.m4a"
   },
   {
@@ -1751,6 +1757,9 @@
    "type": "order",
    "de": "Wir nennen den Namen des Fotografen.",
    "ru": "Мы назовём имя фотографа.",
+   "also": [
+    "Den Namen des Fotografen nennen wir."
+   ],
    "audio": "audio/b7589142bc47.m4a"
   },
   {
@@ -1758,6 +1767,9 @@
    "type": "order",
    "de": "Die Eindrücke der Freunde waren unterschiedlich.",
    "ru": "Впечатления друзей различались.",
+   "also": [
+    "Unterschiedlich waren die Eindrücke der Freunde."
+   ],
    "audio": "audio/ae303ad7253d.m4a"
   },
   {
@@ -1765,6 +1777,9 @@
    "type": "order",
    "de": "Wir haben das Museum besucht.",
    "ru": "Мы посетили музей.",
+   "also": [
+    "Das Museum haben wir besucht."
+   ],
    "audio": "audio/a4a014a3d640.m4a"
   },
   {
@@ -1772,6 +1787,9 @@
    "type": "order",
    "de": "Der Preis steht nicht in unseren Notizen.",
    "ru": "Цена не указана в наших заметках.",
+   "also": [
+    "In unseren Notizen steht der Preis nicht."
+   ],
    "audio": "audio/c079b1dcb2b6.m4a"
   }
  ],
@@ -2032,5 +2050,26 @@
    }
   ]
  },
- "spy": []
+ "spy": [
+  {
+   "de": "Die Fotos des Hafens stammen aus Flensburg.",
+   "wrong": "Die Fotos des Hafen stammen aus Flensburg.",
+   "why": "Родительный падеж мужского рода: *des Hafens*."
+  },
+  {
+   "de": "Die Bilder der Stadt zeigen den Ausflug.",
+   "wrong": "Die Bilder des Stadt zeigen den Ausflug.",
+   "why": "*die Stadt* — женский род: *der Stadt*."
+  },
+  {
+   "de": "Wir nennen den Namen des Fotografen.",
+   "wrong": "Wir nennen den Namen des Fotograf.",
+   "why": "*der Fotograf* склоняется: *des Fotografen*."
+  },
+  {
+   "de": "Die Eindrücke der Freunde waren unterschiedlich.",
+   "wrong": "Die Eindrücke den Freunde waren unterschiedlich.",
+   "why": "Родительный падеж мн. ч.: *der Freunde*."
+  }
+ ]
 }

@@ -446,6 +446,20 @@ steps:
           view: task
           task: talk
           solved: true
+spy:
+  - de: "Ich fühle mich nicht gut."
+    wrong: "Ich fühle sich nicht gut."
+    why: "С *ich* нужно *mich*: *sich* только для третьего лица."
+  - de: "Du meldest dich an."
+    wrong: "Du meldest sich an."
+    why: "С *du* нужно *dich*."
+  - de: "Wir möchten uns anmelden."
+    wrong: "Wir möchten sich anmelden."
+    why: "С *wir* нужно *uns*."
+  - de: "Ich soll zuerst anrufen."
+    wrong: "Ich soll zuerst rufe an."
+    why: "После *soll* нужен инфинитив: *anrufen*."
+
 exercises:
   - type: choice
     q: Ich fühle ___ nicht gut.
@@ -497,21 +511,27 @@ exercises:
     why: Ich soll.
   - type: order
     ru: Я плохо себя чувствую.
+    also: ["Gut fühle ich mich nicht."]
     de: Ich fühle mich nicht gut.
   - type: order
     ru: Мы регистрируемся у стойки.
+    also: ["Am Empfang melden wir uns an."]
     de: Wir melden uns am Empfang an.
   - type: order
     ru: Я хотел бы перенести свою запись.
+    also: ["Meinen Termin möchte ich verschieben."]
     de: Ich möchte meinen Termin verschieben.
   - type: order
     ru: Мне сказали сначала позвонить.
+    also: ["Zuerst soll ich anrufen."]
     de: Ich soll zuerst anrufen.
   - type: order
     ru: Пожалуйста, подтвердите новое время.
+    also: ["Bestätigen Sie bitte die neue Zeit.", "Bestätigen Sie die neue Zeit bitte."]
     de: Bitte bestätigen Sie die neue Zeit.
   - type: order
     ru: Она говорит, чтобы я пришёл позже.
+    also: ["Dass ich später kommen soll, sagt sie."]
     de: Sie sagt, dass ich später kommen soll.
 case:
   title: Erst anrufen, dann bestätigen

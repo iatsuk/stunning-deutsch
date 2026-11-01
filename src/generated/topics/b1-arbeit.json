@@ -1805,6 +1805,9 @@
    "type": "order",
    "de": "Das ist der Kollege, mit dem ich arbeite.",
    "ru": "Это коллега, с которым я работаю.",
+   "also": [
+    "Der Kollege, mit dem ich arbeite, ist das."
+   ],
    "audio": "audio/d5cf8e889aa3.m4a"
   },
   {
@@ -1812,6 +1815,9 @@
    "type": "order",
    "de": "Das sind Menschen, mit denen ich offen sprechen kann.",
    "ru": "Это люди, с которыми я могу открыто говорить.",
+   "also": [
+    "Menschen, mit denen ich offen sprechen kann, sind das."
+   ],
    "audio": "audio/fb44ff89b0f1.m4a"
   },
   {
@@ -1819,6 +1825,9 @@
    "type": "order",
    "de": "Ich brauche jemanden, dem ich Fragen stellen kann.",
    "ru": "Мне нужен кто-то, кому я могу задать вопросы.",
+   "also": [
+    "Jemanden, dem ich Fragen stellen kann, brauche ich."
+   ],
    "audio": "audio/cae2745311fe.m4a"
   },
   {
@@ -1826,6 +1835,9 @@
    "type": "order",
    "de": "Ich spreche mit dem Kollegen.",
    "ru": "Я говорю с одним коллегой.",
+   "also": [
+    "Mit dem Kollegen spreche ich."
+   ],
    "audio": "audio/623c73316e60.m4a"
   },
   {
@@ -1833,6 +1845,10 @@
    "type": "order",
    "de": "Wir sammeln zuerst die Fragen.",
    "ru": "Сначала мы соберём вопросы.",
+   "also": [
+    "Zuerst sammeln wir die Fragen.",
+    "Die Fragen sammeln wir zuerst."
+   ],
    "audio": "audio/46ea893ea64d.m4a"
   },
   {
@@ -1840,6 +1856,9 @@
    "type": "order",
    "de": "Der Beobachtungstag ist keine neue Arbeitsstelle.",
    "ru": "День наблюдения не является новой работой.",
+   "also": [
+    "Keine neue Arbeitsstelle ist der Beobachtungstag."
+   ],
    "audio": "audio/d2be9f755cb3.m4a"
   }
  ],
@@ -2073,9 +2092,23 @@
  "spy": [
   {
    "de": "Das ist der Kollege, mit dem ich arbeite.",
-   "wrong": "Das ist der Kollege, ich mit dem arbeite.",
-   "why": "Глагол стоит на второй позиции: после *Das ist der Kollege,* сразу идёт *mit dem*, а *ich* — за ним.",
-   "auto": true
+   "wrong": "Das ist der Kollege, mit den ich arbeite.",
+   "why": "*mit* требует дательного падежа: *dem*."
+  },
+  {
+   "de": "Das sind Menschen, mit denen ich offen sprechen kann.",
+   "wrong": "Das sind Menschen, mit den ich offen sprechen kann.",
+   "why": "Относительное местоимение в дательном падеже мн. ч. — *denen*."
+  },
+  {
+   "de": "Ich spreche mit dem Kollegen.",
+   "wrong": "Ich spreche mit dem Kollege.",
+   "why": "*der Kollege* склоняется: *dem Kollegen*."
+  },
+  {
+   "de": "Die Kollegin, von der ich lerne, ist nett.",
+   "wrong": "Die Kollegin, von die ich lerne, ist nett.",
+   "why": "*von* требует дательного падежа: *der*."
   }
  ]
 }

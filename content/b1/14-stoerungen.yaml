@@ -378,7 +378,7 @@ steps:
                 - wurde
                 - auf fünfzehn Uhr vierzig
                 - verschoben.
-              ru: Автобус перенесли на15:40.
+              ru: Автобус перенесли на 15:40.
   - id: check
     chapter: practice
     title: Проверьте смысл до подсказки
@@ -502,6 +502,20 @@ steps:
           view: task
           task: talk
           solved: true
+spy:
+  - de: "Die Fahrt wurde gestern abgesagt."
+    wrong: "Die Fahrt wird gestern abgesagt."
+    why: "*gestern* — прошлое, нужна форма *wurde*."
+  - de: "Die Tickets wurden bereits erstattet."
+    wrong: "Die Tickets wurde bereits erstattet."
+    why: "Подлежащее во мн. ч.: *wurden*."
+  - de: "Die Haltestelle wurde verlegt."
+    wrong: "Die Haltestelle wurde verlegte."
+    why: "В Passiv нужно причастие: *verlegt*."
+  - de: "Die Bootsfahrt wurde wegen des Windes abgesagt."
+    wrong: "Die Bootsfahrt wurde wegen das Windes abgesagt."
+    why: "*wegen* требует родительного падежа: *des Windes*."
+
 exercises:
   - type: choice
     q: Die Fahrt ___ abgesagt. Gestern.
@@ -554,21 +568,27 @@ exercises:
   - type: order
     de: Die Bootsfahrt wurde wegen des Windes abgesagt.
     ru: Прогулку на катере отменили из-за ветра.
+    also: ["Wegen des Windes wurde die Bootsfahrt abgesagt."]
   - type: order
     de: Die Tickets wurden bereits erstattet.
     ru: Деньги за билеты уже вернули.
+    also: ["Bereits wurden die Tickets erstattet.", "Erstattet wurden die Tickets bereits."]
   - type: order
     de: Die Haltestelle wurde verlegt.
     ru: Остановку перенесли.
+    also: ["Verlegt wurde die Haltestelle."]
   - type: order
     de: Der Bus wurde auf fünfzehn Uhr vierzig verschoben.
     ru: Автобус перенесли на 15:40.
+    also: ["Auf fünfzehn Uhr vierzig wurde der Bus verschoben."]
   - type: order
     de: Wir sollten die Gruppe rechtzeitig informieren.
     ru: Нам стоит вовремя сообщить группе.
+    also: ["Die Gruppe sollten wir rechtzeitig informieren.", "Rechtzeitig sollten wir die Gruppe informieren.", "Wir sollten rechtzeitig die Gruppe informieren."]
   - type: order
     de: Danach können wir ins Museum gehen.
     ru: Потом можно пойти в музей.
+    also: ["Wir können danach ins Museum gehen.", "Ins Museum können wir danach gehen."]
 case:
   title: "Absage heißt nicht: Alles ist abgesagt"
   ru: Сверка дневника

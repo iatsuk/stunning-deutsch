@@ -656,6 +656,7 @@ exercises:
     why: "*zu* — «слишком», это всегда минус. «Очень» — *sehr*."
   - type: order
     ru: По-моему, он слишком дорогой.
+    also: ["Zu teuer finde ich ihn.", "Ihn finde ich zu teuer."]
     de: Ich finde ihn zu teuer.
   - type: order
     ru: Я возьму килограмм помидоров.

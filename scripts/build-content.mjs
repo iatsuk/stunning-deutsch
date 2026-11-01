@@ -17,6 +17,8 @@ import { copyFileSync, existsSync, mkdirSync, readdirSync, readFileSync, rmSync,
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { parse } from "yaml";
+import { episodes as storyEpisodes, phrases as storyPhrases } from "../src/story/data.ts";
+import { validateStory } from "../src/story/logic.ts";
 import { uhrzeit } from "../src/lib/german.ts";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
@@ -33,6 +35,8 @@ let missingAudio = 0;
 
 /** Логические голоса из YAML; модель и образцы зафиксированы в конфигурации. */
 const audioConfig = JSON.parse(readFileSync(path.join(root, "scripts/tts/config.json"), "utf8"));
+const legacyAudioConfig = JSON.parse(readFileSync(path.join(root, "scripts/tts/legacy-qwen-config.json"), "utf8"));
+const LEGACY_AUDIO_VERSION = createHash("sha256").update(JSON.stringify(legacyAudioConfig)).digest("hex");
 const AUDIO_VERSION = createHash("sha256").update(JSON.stringify(audioConfig)).digest("hex");
 const DEFAULT_VOICE = "Anna";
 const VOICES = Object.keys(audioConfig.voices);
@@ -45,7 +49,7 @@ const EXERCISE_TYPES = ["choice", "gap", "order"];
 const PRONOUNS = new Set(["ich", "du", "er", "sie", "es", "wir", "ihr"]);
 const WRONG_ENDING = { e: "en", st: "t", t: "st", en: "st" };
 
-const errors = [];
+const errors = validateStory(storyEpisodes, storyPhrases);
 const warnings = [];
 const fail = (where, message) => errors.push(`${where}: ${message}`);
 const warn = (where, message) => warnings.push(`${where}: ${message}`);
@@ -921,6 +925,9 @@ function buildExercise(ex, where, id) {
   // order
   if (!ex.de || String(ex.de).split(/\s+/).length < 2) fail(where, "order: нужно немецкое предложение de из двух слов и больше");
   if (!ex.ru) fail(where, "order: нужен русский перевод ru — это и есть задание");
+  // Вариант, который нельзя собрать из плиток, никогда не будет принят.
+  const tiles = (text) => plain(String(text)).toLowerCase().replace(/[.,!?]/g, "").split(" ").sort().join(" ");
+  for (const also of ex.also ?? []) if (tiles(also) !== tiles(ex.de)) fail(where, `also «${also}»: другие слова, чем в de`);
   return { id, ...ex, de: String(ex.de ?? ""), audio: speak(plain(String(ex.de ?? ""))) };
 }
 
@@ -952,8 +959,14 @@ function speak(text, voice = DEFAULT_VOICE) {
   const clean = plain(text ?? "");
   if (!clean) return undefined;
   const hash = createHash("sha1").update(`${AUDIO_VERSION}|${voice}|${clean}`).digest("hex").slice(0, 12);
-  const file = `${hash}.m4a`;
-  audio.set(file, { text: clean, voice });
+  const currentFile = `${hash}.m4a`;
+  const legacyHash = createHash("sha1").update(`${LEGACY_AUDIO_VERSION}|${voice}|${clean}`).digest("hex").slice(0, 12);
+  const legacyFile = `${legacyHash}.m4a`;
+  // Existing course audio stays intact; a missing or new phrase is always OmniVoice.
+  const useLegacy = !existsSync(path.join(audioDir, currentFile)) && existsSync(path.join(audioDir, legacyFile));
+  const file = useLegacy ? legacyFile : currentFile;
+  const selectedConfig = useLegacy ? legacyAudioConfig : audioConfig;
+  audio.set(file, { text: clean, voice, model: selectedConfig.model, revision: selectedConfig.revision });
   if (DRAFT && !existsSync(path.join(audioDir, file))) {
     missingAudio += 1;
     return undefined;

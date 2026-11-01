@@ -1218,6 +1218,7 @@
    "id": "a2-ausflug-2",
    "type": "choice",
    "q": "___ Montag planen wir die Fahrt.",
+   "ru": "С понедельника мы планируем поездку.",
    "options": [
     "Seit",
     "Vor",
@@ -1282,6 +1283,10 @@
    "id": "a2-ausflug-7",
    "type": "order",
    "ru": "С понедельника мы планируем поездку.",
+   "also": [
+    "Wir planen seit Montag die Fahrt.",
+    "Die Fahrt planen wir seit Montag."
+   ],
    "de": "Seit Montag planen wir die Fahrt.",
    "audio": "audio/0fd780793d20.m4a"
   },
@@ -1289,6 +1294,10 @@
    "id": "a2-ausflug-8",
    "type": "order",
    "ru": "Две недели назад мы об этом говорили.",
+   "also": [
+    "Wir haben vor zwei Wochen darüber gesprochen.",
+    "Darüber haben wir vor zwei Wochen gesprochen."
+   ],
    "de": "Vor zwei Wochen haben wir darüber gesprochen.",
    "audio": "audio/8c9a2cc02ce1.m4a"
   },
@@ -1296,6 +1305,10 @@
    "id": "a2-ausflug-9",
    "type": "order",
    "ru": "Мы в музее уже час.",
+   "also": [
+    "Seit einer Stunde sind wir im Museum.",
+    "Im Museum sind wir seit einer Stunde."
+   ],
    "de": "Wir sind seit einer Stunde im Museum.",
    "audio": "audio/8ca1d5eebac1.m4a"
   },
@@ -1303,6 +1316,10 @@
    "id": "a2-ausflug-10",
    "type": "order",
    "ru": "Раньше Хайтабу было торговым поселением.",
+   "also": [
+    "Haithabu war früher ein Handelsplatz.",
+    "Ein Handelsplatz war Haithabu früher."
+   ],
    "de": "Früher war Haithabu ein Handelsplatz.",
    "audio": "audio/4704c15e4171.m4a"
   },
@@ -1310,6 +1327,9 @@
    "id": "a2-ausflug-11",
    "type": "order",
    "ru": "Наше посещение длится три часа.",
+   "also": [
+    "Drei Stunden dauert unser Besuch."
+   ],
    "de": "Unser Besuch dauert drei Stunden.",
    "audio": "audio/127938ec1b4e.m4a"
   },
@@ -1317,6 +1337,10 @@
    "id": "a2-ausflug-12",
    "type": "order",
    "ru": "В тринадцать мы снова встречаемся.",
+   "also": [
+    "Wir treffen uns um dreizehn Uhr wieder.",
+    "Wir treffen uns wieder um dreizehn Uhr."
+   ],
    "de": "Um dreizehn Uhr treffen wir uns wieder.",
    "audio": "audio/1aa6be0915a0.m4a"
   }
@@ -1552,10 +1576,24 @@
  },
  "spy": [
   {
+   "de": "Wir sind seit einer Stunde hier.",
+   "wrong": "Wir sind seit eine Stunde hier.",
+   "why": "*seit* требует дательного падежа: *seit einer Stunde*."
+  },
+  {
+   "de": "Vor einem Jahr war ich in Kiel.",
+   "wrong": "Vor ein Jahr war ich in Kiel.",
+   "why": "*vor* о времени требует дательного падежа: *vor einem Jahr*."
+  },
+  {
    "de": "Seit Montag planen wir die Fahrt.",
    "wrong": "Seit Montag wir planen die Fahrt.",
-   "why": "Глагол стоит на второй позиции: после *Seit Montag* сразу идёт *planen*, а *wir* — за ним.",
-   "auto": true
+   "why": "После *seit Montag* сразу идёт глагол: *planen wir*."
+  },
+  {
+   "de": "Früher war Haithabu ein Handelsplatz.",
+   "wrong": "Früher Haithabu war ein Handelsplatz.",
+   "why": "После *früher* сразу идёт глагол: *war Haithabu*."
   }
  ]
 }

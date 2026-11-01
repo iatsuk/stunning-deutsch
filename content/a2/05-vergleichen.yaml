@@ -477,6 +477,20 @@ steps:
           view: task
           task: pair
           solved: true
+spy:
+  - de: "Café B ist günstiger als Café A."
+    wrong: "Café B ist günstiger wie Café A."
+    why: "После сравнительной степени нужно *als*."
+  - de: "Beide Cafés sind genauso ruhig wie das Hotel."
+    wrong: "Beide Cafés sind genauso ruhig als das Hotel."
+    why: "Равенство: *genauso … wie*."
+  - de: "Mein Plan ist besser."
+    wrong: "Mein Plan ist guter."
+    why: "*gut* образует форму особо: *besser*."
+  - de: "Café B ist näher am Museum."
+    wrong: "Café B ist naher am Museum."
+    why: "*nah* получает умлаут: *näher*."
+
 exercises:
   - type: choice
     q: Café B ist günstiger ___ Café A.
@@ -528,21 +542,26 @@ exercises:
     why: Двенадцать больше восьми.
   - type: order
     ru: Кафе B дешевле кафе A.
+    also: ["Günstiger als Café A ist Café B."]
     de: Café B ist günstiger als Café A.
   - type: order
     ru: Оба кафе тихие.
+    also: ["Ruhig sind beide Cafés."]
     de: Beide Cafés sind ruhig.
   - type: order
     ru: Я предпочитаю пойти в музей.
+    also: ["Lieber möchte ich ins Museum.", "Ins Museum möchte ich lieber."]
     de: Ich möchte lieber ins Museum.
   - type: order
     ru: Прогулка бесплатная.
+    also: ["Kostenlos ist der Spaziergang."]
     de: Der Spaziergang ist kostenlos.
   - type: order
     ru: Какой план нравится тебе больше?
     de: Welcher Plan gefällt dir besser?
   - type: order
     ru: Кафе B ближе к музею.
+    also: ["Näher am Museum ist Café B."]
     de: Café B ist näher am Museum.
 case:
   title: Welcher Vergleich stimmt?

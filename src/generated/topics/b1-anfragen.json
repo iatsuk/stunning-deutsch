@@ -1678,6 +1678,9 @@
    "type": "order",
    "de": "Wir haben vor, ein Treffen zu organisieren.",
    "ru": "Мы намерены организовать встречу.",
+   "also": [
+    "Ein Treffen zu organisieren, haben wir vor."
+   ],
    "audio": "audio/6b70486a49e9.m4a"
   },
   {
@@ -1685,6 +1688,9 @@
    "type": "order",
    "de": "Ich versuche, eine klare Anfrage zu schreiben.",
    "ru": "Я попробую написать понятный запрос.",
+   "also": [
+    "Eine klare Anfrage zu schreiben, versuche ich."
+   ],
    "audio": "audio/97c882bb33dd.m4a"
   },
   {
@@ -1692,6 +1698,9 @@
    "type": "order",
    "de": "Es ist wichtig, die Zahl der Gäste zu nennen.",
    "ru": "Важно назвать число гостей.",
+   "also": [
+    "Wichtig ist es, die Zahl der Gäste zu nennen."
+   ],
    "audio": "audio/f08dac2268ec.m4a"
   },
   {
@@ -1699,6 +1708,10 @@
    "type": "order",
    "de": "Wir müssen zuerst nach einem Raum fragen.",
    "ru": "Сначала нам нужно спросить о помещении.",
+   "also": [
+    "Zuerst müssen wir nach einem Raum fragen.",
+    "Nach einem Raum müssen wir zuerst fragen."
+   ],
    "audio": "audio/2c29406b4f94.m4a"
   },
   {
@@ -1706,6 +1719,9 @@
    "type": "order",
    "de": "Ich habe Zeit, das Programm vorzubereiten.",
    "ru": "У меня есть время подготовить программу.",
+   "also": [
+    "Zeit, das Programm vorzubereiten, habe ich."
+   ],
    "audio": "audio/0b081c00322c.m4a"
   },
   {
@@ -1713,6 +1729,9 @@
    "type": "order",
    "de": "Eine verbindliche Antwort folgt nächste Woche.",
    "ru": "Обязательный ответ последует на следующей неделе.",
+   "also": [
+    "Nächste Woche folgt eine verbindliche Antwort."
+   ],
    "audio": "audio/94e814e11a6c.m4a"
   }
  ],
@@ -1950,5 +1969,26 @@
    }
   ]
  },
- "spy": []
+ "spy": [
+  {
+   "de": "Ich versuche, pünktlich zu kommen.",
+   "wrong": "Ich versuche, pünktlich kommen.",
+   "why": "После *versuchen* нужен инфинитив с *zu*."
+  },
+  {
+   "de": "Wir müssen den Raum suchen.",
+   "wrong": "Wir müssen den Raum zu suchen.",
+   "why": "После модального глагола *zu* не нужен."
+  },
+  {
+   "de": "Ich habe Zeit, alles vorzubereiten.",
+   "wrong": "Ich habe Zeit, alles zu vorbereiten.",
+   "why": "У отделяемого глагола *zu* стоит внутри слова: *vorzubereiten*."
+  },
+  {
+   "de": "Wir planen, die Anfrage abzuschicken.",
+   "wrong": "Wir planen, die Anfrage zu abschicken.",
+   "why": "У отделяемого глагола *zu* стоит внутри слова: *abzuschicken*."
+  }
+ ]
 }

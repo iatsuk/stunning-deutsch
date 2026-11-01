@@ -430,6 +430,20 @@ steps:
           view: task
           task: talk
           solved: true
+spy:
+  - de: "Wir suchen einen Helfer, der gern erzählt."
+    wrong: "Wir suchen einen Helfer, den gern erzählt."
+    why: "В придаточном он подлежащее: *der*."
+  - de: "Ich kenne den Helfer, den du suchst."
+    wrong: "Ich kenne den Helfer, der du suchst."
+    why: "Подлежащее придаточного — *du*, а Helfer там дополнение: *den*."
+  - de: "Das ist eine Person, die gut zuhört."
+    wrong: "Das ist eine Person, die hört gut zu."
+    why: "В относительном придаточном глагол в конце, приставка не отделяется: *zuhört*."
+  - de: "Das Projekt, das wir planen, braucht Zeit."
+    wrong: "Das Projekt, der wir planen, braucht Zeit."
+    why: "*das Projekt* — средний род: *das*."
+
 exercises:
   - type: choice
     q: Ein Helfer, ___ gern erzählt.
@@ -481,21 +495,27 @@ exercises:
     why: Личная форма в конце.
   - type: order
     ru: Мы ищем помощника, который любит рассказывать.
+    also: ["Einen Helfer, der gern erzählt, suchen wir."]
     de: Wir suchen einen Helfer, der gern erzählt.
   - type: order
     ru: Это человек, который внимательно слушает.
+    also: ["Eine Person, die gut zuhört, ist das."]
     de: Das ist eine Person, die gut zuhört.
   - type: order
     ru: Я знаю помощника, которого ты ищешь.
+    also: ["Den Helfer, den du suchst, kenne ich."]
     de: Ich kenne den Helfer, den du suchst.
   - type: order
     ru: Фотографии, которые мы показываем, из Киля.
+    also: ["Aus Kiel sind die Bilder, die wir zeigen."]
     de: Die Bilder, die wir zeigen, sind aus Kiel.
   - type: order
     ru: Проекту, который мы планируем, нужно время.
+    also: ["Zeit braucht das Projekt, das wir planen."]
     de: Das Projekt, das wir planen, braucht Zeit.
   - type: order
     ru: Матео может помочь в воскресенье.
+    also: ["Am Sonntag kann Mateo helfen."]
     de: Mateo kann am Sonntag helfen.
 case:
   title: Wer kennt wen?

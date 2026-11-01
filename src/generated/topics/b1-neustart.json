@@ -1755,6 +1755,10 @@
    "id": "b1-neustart-7",
    "type": "order",
    "ru": "Сначала мы спланировали поездки.",
+   "also": [
+    "Wir haben zuerst die Fahrten geplant.",
+    "Die Fahrten haben wir zuerst geplant."
+   ],
    "de": "Zuerst haben wir die Fahrten geplant.",
    "audio": "audio/84a5fbe38dc5.m4a"
   },
@@ -1762,6 +1766,10 @@
    "id": "b1-neustart-8",
    "type": "order",
    "ru": "После этого мы собрали фотографии.",
+   "also": [
+    "Wir haben danach die Fotos gesammelt.",
+    "Die Fotos haben wir danach gesammelt."
+   ],
    "de": "Danach haben wir die Fotos gesammelt.",
    "audio": "audio/d950d8a10b10.m4a"
   },
@@ -1769,6 +1777,10 @@
    "id": "b1-neustart-9",
    "type": "order",
    "ru": "Поэтому Матео может помочь в воскресенье.",
+   "also": [
+    "Mateo kann deshalb am Sonntag helfen.",
+    "Am Sonntag kann Mateo deshalb helfen."
+   ],
    "de": "Deshalb kann Mateo am Sonntag helfen.",
    "audio": "audio/579058f68a4b.m4a"
   },
@@ -1776,6 +1788,9 @@
    "id": "b1-neustart-10",
    "type": "order",
    "ru": "Я могу помочь, потому что свободен в воскресенье.",
+   "also": [
+    "Weil ich am Sonntag frei habe, kann ich helfen."
+   ],
    "de": "Ich kann helfen, weil ich am Sonntag frei habe.",
    "audio": "audio/3bf39b2b50aa.m4a"
   },
@@ -1783,6 +1798,9 @@
    "id": "b1-neustart-11",
    "type": "order",
    "ru": "Думаю, каждый может взять задачу.",
+   "also": [
+    "Dass jeder eine Aufgabe übernehmen kann, finde ich."
+   ],
    "de": "Ich finde, dass jeder eine Aufgabe übernehmen kann.",
    "audio": "audio/ad54e562cb2a.m4a"
   },
@@ -1790,6 +1808,10 @@
    "id": "b1-neustart-12",
    "type": "order",
    "ru": "Помещение ещё не подтверждено.",
+   "also": [
+    "Bestätigt ist der Raum noch nicht.",
+    "Noch nicht bestätigt ist der Raum."
+   ],
    "de": "Der Raum ist noch nicht bestätigt.",
    "audio": "audio/5cb300b18f1a.m4a"
   },
@@ -2109,10 +2131,24 @@
  },
  "spy": [
   {
+   "de": "Deshalb kann Mateo am Sonntag helfen.",
+   "wrong": "Deshalb Mateo kann am Sonntag helfen.",
+   "why": "*deshalb* занимает первую позицию, глагол идёт сразу за ним."
+  },
+  {
+   "de": "Mateo kann helfen, weil er am Sonntag frei hat.",
+   "wrong": "Mateo kann helfen, weil er hat am Sonntag frei.",
+   "why": "После *weil* глагол уходит в конец: *frei hat*."
+  },
+  {
+   "de": "Ich finde, dass jeder eine Aufgabe übernehmen kann.",
+   "wrong": "Ich finde, dass jeder kann eine Aufgabe übernehmen.",
+   "why": "После *dass* спрягаемый глагол уходит в конец: *übernehmen kann*."
+  },
+  {
    "de": "Danach haben wir die Fotos gesammelt.",
    "wrong": "Danach wir haben die Fotos gesammelt.",
-   "why": "Глагол стоит на второй позиции: после *Danach* сразу идёт *haben*, а *wir* — за ним.",
-   "auto": true
+   "why": "После *danach* сразу идёт глагол: *haben wir*."
   }
  ]
 }

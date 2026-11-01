@@ -1,6 +1,9 @@
 // Числа и время по-немецки. Модуль без зависимостей: его импортирует и
 // сборка контента (Node умеет запускать .ts без компиляции), и страница.
 
+/** Текст без разметки — для сравнения ответов и подписей. */
+export const plain = (text: string) => text.replace(/[*+]/g, "").replace(/\s+/g, " ").trim();
+
 const ONES = [
   "null", "eins", "zwei", "drei", "vier", "fünf", "sechs", "sieben", "acht", "neun",
   "zehn", "elf", "zwölf", "dreizehn", "vierzehn", "fünfzehn", "sechzehn", "siebzehn", "achtzehn", "neunzehn",

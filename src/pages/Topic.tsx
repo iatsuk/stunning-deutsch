@@ -11,15 +11,19 @@ import { Adventure } from "../adventure/Adventure";
 
 export function TopicPage({ level, topicId }: { level: Level; topicId: string }) {
   const [topic, setTopic] = useState<Topic | null | undefined>(undefined);
+  const [error, setError] = useState<unknown>(null);
   useEffect(() => {
     let alive = true;
-    loadTopic(topicId).then((loaded) => alive && setTopic(loaded));
+    loadTopic(topicId)
+      .then((loaded) => alive && setTopic(loaded))
+      .catch((reason) => alive && setError(reason));
     return () => {
       alive = false;
     };
   }, [topicId]);
   const meta = level.topics.find((t) => t.id === topicId);
   useTitle(meta ? `${meta.ru} · ${level.code} · Stunning Deutsch` : "Stunning Deutsch");
+  if (error) throw error;
 
   if (topic === null || !meta) {
     return (

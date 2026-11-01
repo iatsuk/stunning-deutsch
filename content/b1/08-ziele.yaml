@@ -628,6 +628,20 @@ steps:
           view: task
           task: opinions
           solved: true
+spy:
+  - de: "Ich lese laut, um Fehler zu finden."
+    wrong: "Ich lese laut, um Fehler finden."
+    why: "В конструкции *um … zu* перед инфинитивом нужно *zu*."
+  - de: "Wir schreiben einfach, damit alle die Bilder verstehen."
+    wrong: "Wir schreiben einfach, damit alle verstehen die Bilder."
+    why: "После *damit* глагол уходит в конец: *die Bilder verstehen*."
+  - de: "Wir erklären einfach, damit die Gäste alles verstehen."
+    wrong: "Wir erklären einfach, um die Gäste alles verstehen."
+    why: "Подлежащие разные, поэтому нужно *damit*, а не *um … zu*."
+  - de: "Ich bringe eine Karte mit, um den Weg zu zeigen."
+    wrong: "Ich bringe eine Karte mit, für den Weg zu zeigen."
+    why: "Цель с инфинитивом выражает *um … zu*, а не *für*."
+
 exercises:
   - type: choice
     q: Ich lese laut, ___ Fehler zu finden.
@@ -680,21 +694,27 @@ exercises:
   - type: order
     de: Ich lese laut, um Fehler zu finden.
     ru: Я читаю вслух, чтобы найти ошибки.
+    also: ["Um Fehler zu finden, lese ich laut."]
   - type: order
     de: Wir schreiben einfach, damit alle die Bilder verstehen.
     ru: Мы пишем просто, чтобы все поняли фотографии.
+    also: ["Damit alle die Bilder verstehen, schreiben wir einfach."]
   - type: order
     de: Ich bringe eine Karte mit.
     ru: Я принесу карту.
+    also: ["Eine Karte bringe ich mit."]
   - type: order
     de: Die Gäste sollen den Ort erkennen.
     ru: Гости должны узнать место.
+    also: ["Den Ort sollen die Gäste erkennen."]
   - type: order
     de: Wir testen die Aufgabe mit einem Nachbarn.
     ru: Мы проверим задание с соседом.
+    also: ["Die Aufgabe testen wir mit einem Nachbarn.", "Mit einem Nachbarn testen wir die Aufgabe.", "Wir testen mit einem Nachbarn die Aufgabe."]
   - type: order
     de: Die Markierung ist zu klein.
     ru: Метка слишком маленькая.
+    also: ["Zu klein ist die Markierung."]
 case:
   title: Ein Ziel ist noch kein Ergebnis
   ru: Сверка дневника

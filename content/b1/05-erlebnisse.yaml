@@ -608,6 +608,20 @@ steps:
           view: task
           task: opinions
           solved: true
+spy:
+  - de: "Als ich zum ersten Mal dort war, regnete es."
+    wrong: "Wenn ich zum ersten Mal dort war, regnete es."
+    why: "Однократное событие в прошлом вводит *als*."
+  - de: "Wenn ich früher frei hatte, fuhr ich oft ans Meer."
+    wrong: "Als ich früher frei hatte, fuhr ich oft ans Meer."
+    why: "Повторяющееся в прошлом вводит *wenn*: на это указывает *oft*."
+  - de: "Wir gingen danach ins Café."
+    wrong: "Wir gehten danach ins Café."
+    why: "*gehen* — сильный глагол: *gingen*."
+  - de: "Ich fand die Ausstellung interessant."
+    wrong: "Ich findete die Ausstellung interessant."
+    why: "*finden* — сильный глагол: *fand*."
+
 exercises:
   - type: choice
     q: ___ ich zum ersten Mal dort war, regnete es.
@@ -660,21 +674,27 @@ exercises:
   - type: order
     de: Als wir ankamen, wurde es heller.
     ru: Когда мы приехали, стало светлее.
+    also: ["Es wurde heller, als wir ankamen."]
   - type: order
     de: Wenn ich frei hatte, nahm ich Essen mit.
     ru: Когда у меня было свободно, я брал еду.
+    also: ["Ich nahm Essen mit, wenn ich frei hatte."]
   - type: order
     de: Wir gingen danach ins Café.
     ru: Потом мы пошли в кафе.
+    also: ["Danach gingen wir ins Café.", "Ins Café gingen wir danach."]
   - type: order
     de: Ich fand die Ausstellung interessant.
     ru: Мне показалась интересной выставка.
+    also: ["Die Ausstellung fand ich interessant.", "Interessant fand ich die Ausstellung."]
   - type: order
     de: Der Bus kam pünktlich.
     ru: Автобус пришёл вовремя.
+    also: ["Pünktlich kam der Bus."]
   - type: order
     de: Diesmal hatten wir viel Zeit.
     ru: В этот раз у нас было много времени.
+    also: ["Wir hatten diesmal viel Zeit.", "Viel Zeit hatten wir diesmal."]
 case:
   title: Ein grauer Morgen ist kein Regentag
   ru: Сверка дневника

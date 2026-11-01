@@ -597,10 +597,12 @@ exercises:
     de: Nehmen Sie die Linie 16!
   - type: order
     ru: Выходите, пожалуйста, здесь!
+    also: ["Steigen Sie hier bitte aus!"]
     de: Steigen Sie bitte hier aus!
     why: "Глагол первым, приставка *aus* — в конце."
   - type: order
     ru: Я еду в Любек на поезде.
+    also: ["Mit dem Zug fahre ich nach Lübeck.", "Nach Lübeck fahre ich mit dem Zug.", "Ich fahre nach Lübeck mit dem Zug."]
     de: Ich fahre mit dem Zug nach Lübeck.
     why: "Сначала «на чём» — *mit dem Zug*, потом «куда» — *nach Lübeck*."
 adventure:

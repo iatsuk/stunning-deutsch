@@ -1486,6 +1486,9 @@
    "id": "a2-termine-7",
    "type": "order",
    "ru": "Я плохо себя чувствую.",
+   "also": [
+    "Gut fühle ich mich nicht."
+   ],
    "de": "Ich fühle mich nicht gut.",
    "audio": "audio/f1041a62cd5f.m4a"
   },
@@ -1493,6 +1496,9 @@
    "id": "a2-termine-8",
    "type": "order",
    "ru": "Мы регистрируемся у стойки.",
+   "also": [
+    "Am Empfang melden wir uns an."
+   ],
    "de": "Wir melden uns am Empfang an.",
    "audio": "audio/9d223c60d67b.m4a"
   },
@@ -1500,6 +1506,9 @@
    "id": "a2-termine-9",
    "type": "order",
    "ru": "Я хотел бы перенести свою запись.",
+   "also": [
+    "Meinen Termin möchte ich verschieben."
+   ],
    "de": "Ich möchte meinen Termin verschieben.",
    "audio": "audio/9570b05959d3.m4a"
   },
@@ -1507,6 +1516,9 @@
    "id": "a2-termine-10",
    "type": "order",
    "ru": "Мне сказали сначала позвонить.",
+   "also": [
+    "Zuerst soll ich anrufen."
+   ],
    "de": "Ich soll zuerst anrufen.",
    "audio": "audio/7bd02d943365.m4a"
   },
@@ -1514,6 +1526,10 @@
    "id": "a2-termine-11",
    "type": "order",
    "ru": "Пожалуйста, подтвердите новое время.",
+   "also": [
+    "Bestätigen Sie bitte die neue Zeit.",
+    "Bestätigen Sie die neue Zeit bitte."
+   ],
    "de": "Bitte bestätigen Sie die neue Zeit.",
    "audio": "audio/ca513e866232.m4a"
   },
@@ -1521,6 +1537,9 @@
    "id": "a2-termine-12",
    "type": "order",
    "ru": "Она говорит, чтобы я пришёл позже.",
+   "also": [
+    "Dass ich später kommen soll, sagt sie."
+   ],
    "de": "Sie sagt, dass ich später kommen soll.",
    "audio": "audio/5f17574c66f0.m4a"
   }
@@ -1752,5 +1771,26 @@
    }
   ]
  },
- "spy": []
+ "spy": [
+  {
+   "de": "Ich fühle mich nicht gut.",
+   "wrong": "Ich fühle sich nicht gut.",
+   "why": "С *ich* нужно *mich*: *sich* только для третьего лица."
+  },
+  {
+   "de": "Du meldest dich an.",
+   "wrong": "Du meldest sich an.",
+   "why": "С *du* нужно *dich*."
+  },
+  {
+   "de": "Wir möchten uns anmelden.",
+   "wrong": "Wir möchten sich anmelden.",
+   "why": "С *wir* нужно *uns*."
+  },
+  {
+   "de": "Ich soll zuerst anrufen.",
+   "wrong": "Ich soll zuerst rufe an.",
+   "why": "После *soll* нужен инфинитив: *anrufen*."
+  }
+ ]
 }

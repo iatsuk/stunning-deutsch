@@ -440,6 +440,20 @@ steps:
           view: task
           task: form
           solved: true
+spy:
+  - de: "Wir haben die Fotos sortiert."
+    wrong: "Wir haben die Fotos gesortiert."
+    why: "У глаголов на *-ieren* нет *ge-*: *sortiert*."
+  - de: "Ich habe Brot eingekauft."
+    wrong: "Ich habe Brot geeinkauft."
+    why: "У отделяемого глагола *ge-* стоит между приставкой и корнем: *eingekauft*."
+  - de: "Die Gäste sind nach Hause gefahren."
+    wrong: "Die Gäste haben nach Hause gefahren."
+    why: "Движение к цели — Perfekt с *sein*: *sind gefahren*."
+  - de: "Wir haben die Zeit bestätigt."
+    wrong: "Wir haben die Zeit gebestätigt."
+    why: "У глаголов с приставкой *be-* нет *ge-*: *bestätigt*."
+
 exercises:
   - type: choice
     q: Wir haben die Fotos ___.
@@ -467,6 +481,7 @@ exercises:
     why: "*Wir haben aufgeräumt*."
   - type: choice
     q: Die Tickets sind ___ reserviert.
+    ru: Билеты ещё не забронированы.
     options:
       - noch nicht
       - schon
@@ -491,21 +506,26 @@ exercises:
     why: "Неотделяемая be-: без ge-."
   - type: order
     ru: Мы рассортировали фотографии.
+    also: ["Die Fotos haben wir sortiert."]
     de: Wir haben die Fotos sortiert.
   - type: order
     ru: Потом мы прибрались.
+    also: ["Wir haben dann aufgeräumt."]
     de: Dann haben wir aufgeräumt.
   - type: order
     ru: Я купил хлеб.
+    also: ["Brot habe ich eingekauft."]
     de: Ich habe Brot eingekauft.
   - type: order
     ru: Ты позвонил гостям?
     de: Hast du die Gäste angerufen?
   - type: order
     ru: Мы организовали поездку.
+    also: ["Die Fahrt haben wir organisiert."]
     de: Wir haben die Fahrt organisiert.
   - type: order
     ru: Гости добрались домой.
+    also: ["Nach Hause sind die Gäste gekommen."]
     de: Die Gäste sind nach Hause gekommen.
 case:
   title: Der erste Eintrag

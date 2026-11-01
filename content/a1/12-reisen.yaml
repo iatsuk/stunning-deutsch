@@ -665,6 +665,7 @@ exercises:
     why: "Точка после числа делает его порядковым: *8. August* — *der achte August*."
   - type: order
     ru: В пятницу мы поехали в Гамбург.
+    also: ["Wir sind am Freitag nach Hamburg gefahren.", "Nach Hamburg sind wir am Freitag gefahren."]
     de: Am Freitag sind wir nach Hamburg gefahren.
     why: "Время на первом месте: *sind* второй, *wir* за ним, *gefahren* в конце."
   - type: order
@@ -673,7 +674,7 @@ exercises:
   - type: order
     ru: Вчера было холодно и ветрено.
     de: Gestern war es kalt und windig.
-    also: [ Gestern war es windig und kalt. ]
+    also: ["Gestern war es windig und kalt.", "Es war gestern kalt und windig.", "Es war gestern windig und kalt."]
 adventure:
   kind: sequence
   title: Сверьте поездку перед финалом

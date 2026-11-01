@@ -683,6 +683,20 @@ steps:
           view: task
           task: talk
           solved: true
+spy:
+  - de: "Wir warten auf die Antwort."
+    wrong: "Wir warten für die Antwort."
+    why: "Управление глагола: *warten auf*."
+  - de: "Ich kümmere mich um das Essen."
+    wrong: "Ich kümmere mich für das Essen."
+    why: "Управление глагола: *sich kümmern um*."
+  - de: "Elif interessiert sich für einfache Rezepte."
+    wrong: "Elif interessiert sich an einfachen Rezepten."
+    why: "Управление глагола: *sich interessieren für*."
+  - de: "Hauke spricht mit der Verwaltung."
+    wrong: "Hauke spricht mit die Verwaltung."
+    why: "*mit* всегда требует дательного падежа: *mit der*."
+
 exercises:
   - type: choice
     q: Ich warte ___ die Antwort.
@@ -735,21 +749,27 @@ exercises:
   - type: order
     de: Ich kümmere mich um das Essen.
     ru: Я займусь едой.
+    also: ["Um das Essen kümmere ich mich."]
   - type: order
     de: Wir warten auf die Antwort.
     ru: Мы ждём ответа.
+    also: ["Auf die Antwort warten wir."]
   - type: order
     de: Elif interessiert sich für einfache Rezepte.
     ru: Элиф интересуется простыми рецептами.
+    also: ["Für einfache Rezepte interessiert sich Elif."]
   - type: order
     de: Hauke spricht mit der Verwaltung.
     ru: Хауке говорит с администрацией.
+    also: ["Mit der Verwaltung spricht Hauke."]
   - type: order
     de: Wir haben noch nicht zugesagt.
     ru: Мы ещё не согласились.
+    also: ["Zugesagt haben wir noch nicht.", "Noch nicht zugesagt haben wir."]
   - type: order
     de: Bitte bestell noch nichts.
     ru: Пожалуйста, пока ничего не заказывай.
+    also: ["Bestell bitte noch nichts.", "Bestell noch nichts bitte."]
 case:
   title: Interesse ist noch keine Zuständigkeit
   ru: Сверка дневника

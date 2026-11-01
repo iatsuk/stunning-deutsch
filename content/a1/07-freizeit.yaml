@@ -642,11 +642,12 @@ exercises:
     why: "Инфинитив — в самом конце: *Ich will Tennis spiel+en.*"
   - type: order
     ru: Я умею играть на гитаре.
+    also: ["Gitarre spielen kann ich.", "Gitarre kann ich spielen."]
     de: Ich kann Gitarre spielen.
   - type: order
     ru: В субботу я хочу почитать.
     de: Am Samstag will ich lesen.
-    also: [ Ich will am Samstag lesen. ]
+    also: ["Ich will am Samstag lesen.", "Lesen will ich am Samstag."]
     why: "*Am Samstag* на первом месте — *will* второй, *ich* за ним, *lesen* в конце."
   - type: order
     ru: К сожалению, я не могу пойти с вами.
@@ -688,6 +689,7 @@ exercises:
     why: "*kann* — умение, *will lieber* — нынешнее предпочтение."
   - type: order
     ru: Мы хотим вместе фотографировать.
+    also: ["Zusammen wollen wir fotografieren.", "Fotografieren wollen wir zusammen."]
     de: Wir wollen zusammen fotografieren.
 adventure:
   kind: sequence

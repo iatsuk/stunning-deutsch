@@ -635,6 +635,7 @@ exercises:
     why: "*das*-слова часто получают *-er*: *die Kinder*."
   - type: order
     ru: Это мои родители.
+    also: ["Meine Eltern sind das."]
     de: Das sind meine Eltern.
   - type: order
     ru: Это твой брат?

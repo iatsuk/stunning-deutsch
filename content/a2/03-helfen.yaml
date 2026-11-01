@@ -391,6 +391,20 @@ steps:
           view: task
           task: note
           solved: true
+spy:
+  - de: "Kannst du mir helfen?"
+    wrong: "Kannst du mich helfen?"
+    why: "*helfen* требует дательного падежа: *mir*."
+  - de: "Ich gebe ihm das Ticket."
+    wrong: "Ich gebe ihn das Ticket."
+    why: "Кому дать? Дательный падеж: *ihm*."
+  - de: "Wir helfen ihnen."
+    wrong: "Wir helfen sie."
+    why: "После *helfen* нужен дательный падеж: *ihnen*."
+  - de: "Gib mir bitte die Liste!"
+    wrong: "Gib mich bitte die Liste!"
+    why: "Кому дать? Дательный падеж: *mir*."
+
 exercises:
   - type: choice
     q: Kannst du ___ helfen?
@@ -447,18 +461,22 @@ exercises:
     de: Kannst du mir helfen?
   - type: order
     ru: Я даю ему билет.
+    also: ["Das Ticket gebe ich ihm.", "Ihm gebe ich das Ticket."]
     de: Ich gebe ihm das Ticket.
   - type: order
     ru: Принеси ей, пожалуйста, сумку.
+    also: ["Bring ihr die Tasche bitte.", "Bitte bring ihr die Tasche."]
     de: Bring ihr bitte die Tasche.
   - type: order
     ru: Мы им помогаем.
+    also: ["Ihnen helfen wir."]
     de: Wir helfen ihnen.
   - type: order
     ru: Спасибо за твою помощь!
     de: Danke für deine Hilfe!
   - type: order
     ru: Нам не хватает ключа.
+    also: ["Uns fehlt der Schlüssel."]
     de: Der Schlüssel fehlt uns.
 case:
   title: Für wen ist das Ticket?

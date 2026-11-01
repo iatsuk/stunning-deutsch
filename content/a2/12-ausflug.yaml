@@ -416,6 +416,20 @@ steps:
           view: task
           task: plan
           solved: true
+spy:
+  - de: "Wir sind seit einer Stunde hier."
+    wrong: "Wir sind seit eine Stunde hier."
+    why: "*seit* требует дательного падежа: *seit einer Stunde*."
+  - de: "Vor einem Jahr war ich in Kiel."
+    wrong: "Vor ein Jahr war ich in Kiel."
+    why: "*vor* о времени требует дательного падежа: *vor einem Jahr*."
+  - de: "Seit Montag planen wir die Fahrt."
+    wrong: "Seit Montag wir planen die Fahrt."
+    why: "После *seit Montag* сразу идёт глагол: *planen wir*."
+  - de: "Früher war Haithabu ein Handelsplatz."
+    wrong: "Früher Haithabu war ein Handelsplatz."
+    why: "После *früher* сразу идёт глагол: *war Haithabu*."
+
 exercises:
   - type: choice
     q: ___ zwei Wochen haben wir die Idee besprochen.
@@ -427,6 +441,7 @@ exercises:
     why: "Завершённый момент: назад."
   - type: choice
     q: ___ Montag planen wir die Fahrt.
+    ru: С понедельника мы планируем поездку.
     options:
       - Seit
       - Vor
@@ -467,21 +482,27 @@ exercises:
     why: Контекст распределения времени.
   - type: order
     ru: С понедельника мы планируем поездку.
+    also: ["Wir planen seit Montag die Fahrt.", "Die Fahrt planen wir seit Montag."]
     de: Seit Montag planen wir die Fahrt.
   - type: order
     ru: Две недели назад мы об этом говорили.
+    also: ["Wir haben vor zwei Wochen darüber gesprochen.", "Darüber haben wir vor zwei Wochen gesprochen."]
     de: Vor zwei Wochen haben wir darüber gesprochen.
   - type: order
     ru: Мы в музее уже час.
+    also: ["Seit einer Stunde sind wir im Museum.", "Im Museum sind wir seit einer Stunde."]
     de: Wir sind seit einer Stunde im Museum.
   - type: order
     ru: Раньше Хайтабу было торговым поселением.
+    also: ["Haithabu war früher ein Handelsplatz.", "Ein Handelsplatz war Haithabu früher."]
     de: Früher war Haithabu ein Handelsplatz.
   - type: order
     ru: Наше посещение длится три часа.
+    also: ["Drei Stunden dauert unser Besuch."]
     de: Unser Besuch dauert drei Stunden.
   - type: order
     ru: В тринадцать мы снова встречаемся.
+    also: ["Wir treffen uns um dreizehn Uhr wieder.", "Wir treffen uns wieder um dreizehn Uhr."]
     de: Um dreizehn Uhr treffen wir uns wieder.
 case:
   title: Vorher, seitdem und unser Plan

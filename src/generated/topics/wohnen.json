@@ -1924,6 +1924,9 @@
    "id": "wohnen-13",
    "type": "order",
    "ru": "Холодильник стоит на кухне.",
+   "also": [
+    "In der Küche steht der Kühlschrank."
+   ],
    "de": "Der Kühlschrank steht in der Küche.",
    "why": "*die Küche* → *in der Küche*. По-русски «на кухне», по-немецки — *in*.",
    "audio": "audio/e8fd7b76e6e1.m4a"
@@ -1932,6 +1935,9 @@
    "id": "wohnen-14",
    "type": "order",
    "ru": "В спальне стоит шкаф.",
+   "also": [
+    "Ein Schrank steht im Schlafzimmer."
+   ],
    "de": "Im Schlafzimmer steht ein Schrank.",
    "why": "Место на первой позиции, глагол второй, подлежащее — за ним.",
    "audio": "audio/caf59cb5ac9e.m4a"
@@ -1940,6 +1946,9 @@
    "id": "wohnen-15",
    "type": "order",
    "ru": "Ванная маленькая, но современная.",
+   "also": [
+    "Klein, aber modern ist das Bad."
+   ],
    "de": "Das Bad ist klein, aber modern.",
    "audio": "audio/b89595f66857.m4a"
   }
@@ -2248,5 +2257,26 @@
    }
   ]
  },
- "spy": []
+ "spy": [
+  {
+   "de": "Das Bett steht im Schlafzimmer.",
+   "wrong": "Das Bett steht in Schlafzimmer.",
+   "why": "*in* и *dem* сливаются в *im*: без артикля здесь нельзя."
+  },
+  {
+   "de": "Der Kühlschrank steht in der Küche.",
+   "wrong": "Der Kühlschrank steht in die Küche.",
+   "why": "На вопрос *Wo?* нужен дательный падеж: *in der Küche*."
+  },
+  {
+   "de": "Die Küche ist klein.",
+   "wrong": "Die Küche ist kleine.",
+   "why": "После *sein* прилагательное стоит без окончания: *klein*."
+  },
+  {
+   "de": "Das Schlafzimmer ist klein.",
+   "wrong": "Die Schlafzimmer ist klein.",
+   "why": "Род сложного слова даёт последняя часть: *das Zimmer*, значит *das Schlafzimmer*."
+  }
+ ]
 }

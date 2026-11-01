@@ -1773,6 +1773,12 @@
    "type": "order",
    "de": "Deshalb haben wir die Materialien mit dem Bus gebracht.",
    "ru": "Поэтому мы привезли материалы автобусом.",
+   "also": [
+    "Wir haben deshalb die Materialien mit dem Bus gebracht.",
+    "Wir haben die Materialien deshalb mit dem Bus gebracht.",
+    "Die Materialien haben wir deshalb mit dem Bus gebracht.",
+    "Mit dem Bus haben wir deshalb die Materialien gebracht."
+   ],
    "audio": "audio/069f28525a6d.m4a"
   },
   {
@@ -1780,6 +1786,11 @@
    "type": "order",
    "de": "Wir haben den Schlüssel rechtzeitig zurückgegeben.",
    "ru": "Мы вовремя вернули ключ.",
+   "also": [
+    "Den Schlüssel haben wir rechtzeitig zurückgegeben.",
+    "Rechtzeitig haben wir den Schlüssel zurückgegeben.",
+    "Wir haben rechtzeitig den Schlüssel zurückgegeben."
+   ],
    "audio": "audio/eda535bc5a18.m4a"
   },
   {
@@ -1787,6 +1798,9 @@
    "type": "order",
    "de": "Die Hafenfotos stammen aus Flensburg.",
    "ru": "Фотографии гавани из Фленсбурга.",
+   "also": [
+    "Aus Flensburg stammen die Hafenfotos."
+   ],
    "audio": "audio/6b537f766055.m4a"
   },
   {
@@ -1794,6 +1808,10 @@
    "type": "order",
    "de": "Ich habe das so verstanden. Stimmt das?",
    "ru": "Я понял это так. Верно?",
+   "also": [
+    "So habe ich das verstanden. Stimmt das?",
+    "Das habe ich so verstanden. Stimmt das?"
+   ],
    "audio": "audio/6667b23a0cd0.m4a"
   },
   {
@@ -1801,6 +1819,10 @@
    "type": "order",
    "de": "Wir könnten mehr Zeit für Gespräche einplanen.",
    "ru": "Мы могли бы предусмотреть больше времени для разговоров.",
+   "also": [
+    "Mehr Zeit für Gespräche könnten wir einplanen.",
+    "Für Gespräche könnten wir mehr Zeit einplanen."
+   ],
    "audio": "audio/e566fbeb07f0.m4a"
   },
   {
@@ -2106,5 +2128,26 @@
    }
   ]
  },
- "spy": []
+ "spy": [
+  {
+   "de": "Es regnete. Deshalb nahmen wir den Bus.",
+   "wrong": "Es regnete. Deshalb wir nahmen den Bus.",
+   "why": "*deshalb* занимает первую позицию, глагол идёт сразу за ним."
+  },
+  {
+   "de": "Die Materialien wurden mit dem Bus gebracht.",
+   "wrong": "Die Materialien wurde mit dem Bus gebracht.",
+   "why": "Подлежащее во мн. ч.: *wurden*."
+  },
+  {
+   "de": "Die Gäste, mit denen wir sprachen, waren zufrieden.",
+   "wrong": "Die Gäste, mit den wir sprachen, waren zufrieden.",
+   "why": "Относительное местоимение в дательном падеже мн. ч. — *denen*."
+  },
+  {
+   "de": "Wir hätten gern mehr Zeit, um zu sprechen.",
+   "wrong": "Wir hätten gern mehr Zeit, um sprechen.",
+   "why": "В конструкции *um … zu* перед инфинитивом нужно *zu*."
+  }
+ ]
 }

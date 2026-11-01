@@ -5,12 +5,12 @@
   "private": true,
   "type": "module",
   "engines": {
-    "node": "^20.19.0 || ^22.13.0 || >=24"
+    "node": ">=22.18.0"
   },
   "scripts": {
     "content": "node scripts/build-content.mjs",
     "check": "node scripts/build-content.mjs --check",
-    "test": "node --test scripts/adventure.test.mjs scripts/assessment.test.mjs",
+    "test": "node --test scripts/adventure.test.mjs scripts/assessment.test.mjs scripts/story.test.mjs scripts/trainer.test.mjs scripts/store.test.mjs",
     "draft": "node scripts/build-content.mjs --draft",
     "dev": "vite --host 127.0.0.1 --port 5180 --strictPort",
     "build": "node scripts/build-content.mjs && tsc --noEmit && vite build",

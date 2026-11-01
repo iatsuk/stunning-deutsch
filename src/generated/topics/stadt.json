@@ -2078,6 +2078,9 @@
    "id": "stadt-14",
    "type": "order",
    "ru": "Выходите, пожалуйста, здесь!",
+   "also": [
+    "Steigen Sie hier bitte aus!"
+   ],
    "de": "Steigen Sie bitte hier aus!",
    "why": "Глагол первым, приставка *aus* — в конце.",
    "audio": "audio/66b69340c4bd.m4a"
@@ -2086,6 +2089,11 @@
    "id": "stadt-15",
    "type": "order",
    "ru": "Я еду в Любек на поезде.",
+   "also": [
+    "Mit dem Zug fahre ich nach Lübeck.",
+    "Nach Lübeck fahre ich mit dem Zug.",
+    "Ich fahre nach Lübeck mit dem Zug."
+   ],
    "de": "Ich fahre mit dem Zug nach Lübeck.",
    "why": "Сначала «на чём» — *mit dem Zug*, потом «куда» — *nach Lübeck*.",
    "audio": "audio/647f3ac9b576.m4a"

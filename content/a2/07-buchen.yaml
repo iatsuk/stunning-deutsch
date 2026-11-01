@@ -408,6 +408,20 @@ steps:
           view: task
           task: talk
           solved: true
+spy:
+  - de: "Könnten Sie mir bitte helfen?"
+    wrong: "Könntest Sie mir bitte helfen?"
+    why: "С вежливым *Sie* нужна форма *könnten*."
+  - de: "Ich würde gern ein Zimmer reservieren."
+    wrong: "Ich würde gern ein Zimmer reserviert."
+    why: "После *würde* в конце стоит инфинитив: *reservieren*."
+  - de: "Ich hätte gern eine Bestätigung."
+    wrong: "Ich hättest gern eine Bestätigung."
+    why: "С *ich* нужна форма *hätte*."
+  - de: "Wir möchten kein Frühstück."
+    wrong: "Wir möchten keinen Frühstück."
+    why: "*das Frühstück* — средний род: *kein*."
+
 exercises:
   - type: choice
     q: ___ Sie mir bitte helfen?
@@ -462,18 +476,23 @@ exercises:
     de: Könnten Sie mir den Preis nennen?
   - type: order
     ru: Я хотел бы забронировать два номера.
+    also: ["Gern würde ich zwei Zimmer reservieren.", "Zwei Zimmer würde ich gern reservieren."]
     de: Ich würde gern zwei Zimmer reservieren.
   - type: order
     ru: Я хотел бы получить подтверждение.
+    also: ["Gern hätte ich eine Bestätigung.", "Eine Bestätigung hätte ich gern."]
     de: Ich hätte gern eine Bestätigung.
   - type: order
     ru: Мы не хотим завтрак.
+    also: ["Kein Frühstück möchten wir."]
     de: Wir möchten kein Frühstück.
   - type: order
     ru: Общая цена — 180 евро.
+    also: ["180 Euro ist der Gesamtpreis."]
     de: Der Gesamtpreis ist 180 Euro.
   - type: order
     ru: Пожалуйста, подтвердите данные.
+    also: ["Bestätigen Sie bitte die Daten.", "Bestätigen Sie die Daten bitte."]
     de: Bitte bestätigen Sie die Daten.
 case:
   title: Anfrage oder Bestätigung?

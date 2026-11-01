@@ -687,7 +687,7 @@
       ],
       "punct": ".",
       "plain": "Der Bus wurde auf fünfzehn Uhr vierzig verschoben.",
-      "ru": "Автобус перенесли на15:40.",
+      "ru": "Автобус перенесли на 15:40.",
       "audio": "audio/58fb0fc551a8.m4a"
      }
     ]
@@ -753,7 +753,7 @@
       ],
       "punct": ".",
       "plain": "Der Bus wurde auf fünfzehn Uhr vierzig verschoben.",
-      "ru": "Автобус перенесли на15:40.",
+      "ru": "Автобус перенесли на 15:40.",
       "audio": "audio/58fb0fc551a8.m4a"
      }
     ]
@@ -819,7 +819,7 @@
       ],
       "punct": ".",
       "plain": "Der Bus wurde auf fünfzehn Uhr vierzig verschoben.",
-      "ru": "Автобус перенесли на15:40.",
+      "ru": "Автобус перенесли на 15:40.",
       "audio": "audio/58fb0fc551a8.m4a"
      }
     ]
@@ -884,7 +884,7 @@
       ],
       "punct": ".",
       "plain": "Der Bus wurde auf fünfzehn Uhr vierzig verschoben.",
-      "ru": "Автобус перенесли на15:40.",
+      "ru": "Автобус перенесли на 15:40.",
       "audio": "audio/58fb0fc551a8.m4a"
      }
     ],
@@ -951,7 +951,7 @@
       ],
       "punct": ".",
       "plain": "Der Bus wurde auf fünfzehn Uhr vierzig verschoben.",
-      "ru": "Автобус перенесли на15:40.",
+      "ru": "Автобус перенесли на 15:40.",
       "audio": "audio/58fb0fc551a8.m4a"
      }
     ],
@@ -1008,7 +1008,7 @@
       ],
       "punct": ".",
       "plain": "Der Bus wurde auf fünfzehn Uhr vierzig verschoben.",
-      "ru": "Автобус перенесли на15:40.",
+      "ru": "Автобус перенесли на 15:40.",
       "audio": "audio/58fb0fc551a8.m4a"
      }
     ],
@@ -1075,7 +1075,7 @@
       ],
       "punct": ".",
       "plain": "Der Bus wurde auf fünfzehn Uhr vierzig verschoben.",
-      "ru": "Автобус перенесли на15:40.",
+      "ru": "Автобус перенесли на 15:40.",
       "audio": "audio/58fb0fc551a8.m4a"
      }
     ],
@@ -1142,7 +1142,7 @@
       ],
       "punct": ".",
       "plain": "Der Bus wurde auf fünfzehn Uhr vierzig verschoben.",
-      "ru": "Автобус перенесли на15:40.",
+      "ru": "Автобус перенесли на 15:40.",
       "audio": "audio/58fb0fc551a8.m4a"
      }
     ],
@@ -1199,7 +1199,7 @@
       ],
       "punct": ".",
       "plain": "Der Bus wurde auf fünfzehn Uhr vierzig verschoben.",
-      "ru": "Автобус перенесли на15:40.",
+      "ru": "Автобус перенесли на 15:40.",
       "audio": "audio/58fb0fc551a8.m4a"
      }
     ],
@@ -1266,7 +1266,7 @@
       ],
       "punct": ".",
       "plain": "Der Bus wurde auf fünfzehn Uhr vierzig verschoben.",
-      "ru": "Автобус перенесли на15:40.",
+      "ru": "Автобус перенесли на 15:40.",
       "audio": "audio/58fb0fc551a8.m4a"
      }
     ],
@@ -1333,7 +1333,7 @@
       ],
       "punct": ".",
       "plain": "Der Bus wurde auf fünfzehn Uhr vierzig verschoben.",
-      "ru": "Автобус перенесли на15:40.",
+      "ru": "Автобус перенесли на 15:40.",
       "audio": "audio/58fb0fc551a8.m4a"
      }
     ],
@@ -1390,7 +1390,7 @@
       ],
       "punct": ".",
       "plain": "Der Bus wurde auf fünfzehn Uhr vierzig verschoben.",
-      "ru": "Автобус перенесли на15:40.",
+      "ru": "Автобус перенесли на 15:40.",
       "audio": "audio/58fb0fc551a8.m4a"
      }
     ],
@@ -1457,7 +1457,7 @@
       ],
       "punct": ".",
       "plain": "Der Bus wurde auf fünfzehn Uhr vierzig verschoben.",
-      "ru": "Автобус перенесли на15:40.",
+      "ru": "Автобус перенесли на 15:40.",
       "audio": "audio/58fb0fc551a8.m4a"
      }
     ],
@@ -1524,7 +1524,7 @@
       ],
       "punct": ".",
       "plain": "Der Bus wurde auf fünfzehn Uhr vierzig verschoben.",
-      "ru": "Автобус перенесли на15:40.",
+      "ru": "Автобус перенесли на 15:40.",
       "audio": "audio/58fb0fc551a8.m4a"
      }
     ],
@@ -1581,7 +1581,7 @@
       ],
       "punct": ".",
       "plain": "Der Bus wurde auf fünfzehn Uhr vierzig verschoben.",
-      "ru": "Автобус перенесли на15:40.",
+      "ru": "Автобус перенесли на 15:40.",
       "audio": "audio/58fb0fc551a8.m4a"
      }
     ],
@@ -1671,6 +1671,9 @@
    "type": "order",
    "de": "Die Bootsfahrt wurde wegen des Windes abgesagt.",
    "ru": "Прогулку на катере отменили из-за ветра.",
+   "also": [
+    "Wegen des Windes wurde die Bootsfahrt abgesagt."
+   ],
    "audio": "audio/eccb08df8cc9.m4a"
   },
   {
@@ -1678,6 +1681,10 @@
    "type": "order",
    "de": "Die Tickets wurden bereits erstattet.",
    "ru": "Деньги за билеты уже вернули.",
+   "also": [
+    "Bereits wurden die Tickets erstattet.",
+    "Erstattet wurden die Tickets bereits."
+   ],
    "audio": "audio/bdd7bb16a20c.m4a"
   },
   {
@@ -1685,6 +1692,9 @@
    "type": "order",
    "de": "Die Haltestelle wurde verlegt.",
    "ru": "Остановку перенесли.",
+   "also": [
+    "Verlegt wurde die Haltestelle."
+   ],
    "audio": "audio/7f0231b97326.m4a"
   },
   {
@@ -1692,6 +1702,9 @@
    "type": "order",
    "de": "Der Bus wurde auf fünfzehn Uhr vierzig verschoben.",
    "ru": "Автобус перенесли на 15:40.",
+   "also": [
+    "Auf fünfzehn Uhr vierzig wurde der Bus verschoben."
+   ],
    "audio": "audio/58fb0fc551a8.m4a"
   },
   {
@@ -1699,6 +1712,11 @@
    "type": "order",
    "de": "Wir sollten die Gruppe rechtzeitig informieren.",
    "ru": "Нам стоит вовремя сообщить группе.",
+   "also": [
+    "Die Gruppe sollten wir rechtzeitig informieren.",
+    "Rechtzeitig sollten wir die Gruppe informieren.",
+    "Wir sollten rechtzeitig die Gruppe informieren."
+   ],
    "audio": "audio/c4c35dd5d65e.m4a"
   },
   {
@@ -1706,6 +1724,10 @@
    "type": "order",
    "de": "Danach können wir ins Museum gehen.",
    "ru": "Потом можно пойти в музей.",
+   "also": [
+    "Wir können danach ins Museum gehen.",
+    "Ins Museum können wir danach gehen."
+   ],
    "audio": "audio/1258ea972bb7.m4a"
   }
  ],
@@ -1934,5 +1956,26 @@
    }
   ]
  },
- "spy": []
+ "spy": [
+  {
+   "de": "Die Fahrt wurde gestern abgesagt.",
+   "wrong": "Die Fahrt wird gestern abgesagt.",
+   "why": "*gestern* — прошлое, нужна форма *wurde*."
+  },
+  {
+   "de": "Die Tickets wurden bereits erstattet.",
+   "wrong": "Die Tickets wurde bereits erstattet.",
+   "why": "Подлежащее во мн. ч.: *wurden*."
+  },
+  {
+   "de": "Die Haltestelle wurde verlegt.",
+   "wrong": "Die Haltestelle wurde verlegte.",
+   "why": "В Passiv нужно причастие: *verlegt*."
+  },
+  {
+   "de": "Die Bootsfahrt wurde wegen des Windes abgesagt.",
+   "wrong": "Die Bootsfahrt wurde wegen das Windes abgesagt.",
+   "why": "*wegen* требует родительного падежа: *des Windes*."
+  }
+ ]
 }

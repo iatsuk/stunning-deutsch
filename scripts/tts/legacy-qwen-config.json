@@ -1,0 +1,81 @@
+{
+  "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+  "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+  "version": "de-a1-qwen-20261023-tail-v2",
+  "referenceModel": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+  "referenceRevision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+  "language": "German",
+  "generation": {
+    "language": "German",
+    "temperature": 0.7,
+    "max_new_tokens": 1024,
+    "batchSize": 8,
+    "seed": 20261019,
+    "terminalPunctuation": "Append a full stop when no . ! ? or ellipsis is present at the end.",
+    "batchOrdering": "Manifest slice shard::shards, sorted by text length and filename; batch seed = seed + shard*100000 + batch index.",
+    "curatedVariants": {
+      "Anna|zu": {
+        "seed": 2026101901,
+        "texts": [
+          "zu.",
+          "Zu.",
+          "zu!",
+          "zu",
+          "Die Tür ist zu."
+        ],
+        "select": 1,
+        "temperature": 0.7,
+        "max_new_tokens": 256,
+        "reason": "The selected isolated Zu variant was recognized as zu by both Whisper large-v3 and Qwen3-ASR-0.6B."
+      }
+    }
+  },
+  "encoding": {
+    "codec": "aac",
+    "bitrate": 96000,
+    "channels": 1,
+    "rmsTarget": 0.1,
+    "peakLimit": 0.84,
+    "trimRelativeRms": 0.006,
+    "trimFloorRms": 0.00035,
+    "preserveStartMs": 80,
+    "preserveEndMs": 150,
+    "trimEnd": false,
+    "paddingStartMs": 60,
+    "paddingEndMs": 300
+  },
+  "voices": {
+    "Anna": {
+      "reference": "Anna.wav",
+      "sha256": "ef788af7868d2e721e928117448c509e4f0d5440344dca1e3a4332b5d8ef7b6b"
+    },
+    "Reed": {
+      "reference": "Reed.wav",
+      "sha256": "f4fe2dc333e08863761a595434fb78304ff316b8a3bdd40e7323b2f10e677d1b"
+    },
+    "Eddy": {
+      "reference": "Eddy.wav",
+      "sha256": "4e3071e5ceb6c7eb8495cc6222f7879f293d53acfe52088097872a561b7ec21f"
+    },
+    "Sandy": {
+      "reference": "Sandy.wav",
+      "sha256": "75d2152e770ddb7de2d6ed176aaffcde6fe27b1d2f975f705e5ed6dc805288e7"
+    },
+    "Shelley": {
+      "reference": "Shelley.wav",
+      "sha256": "ceef85684140ec8cd995dd914eafea76a6002c0875be4f4f83385f810aa66cc2"
+    },
+    "Rocko": {
+      "reference": "Rocko.wav",
+      "sha256": "c733f8229bad27f3c589531905bf9e99920a7259b5a8e05642633f2ed133f41d"
+    },
+    "Grandpa": {
+      "reference": "Grandpa.wav",
+      "sha256": "f0bb6b22dd3973a7c51f3f5179753ec18fdb23d22f568bd2683019d796e6f791"
+    },
+    "Flo": {
+      "reference": "Flo.wav",
+      "sha256": "fdc9a69c0cafde5fa4a7f6dc1110544249f01662e6f25374f29e371bd1c1fca6"
+    }
+  }
+}

@@ -1560,6 +1560,9 @@
    "type": "order",
    "de": "Wir warten darauf, dass die Verwaltung antwortet.",
    "ru": "Мы ждём, что администрация ответит.",
+   "also": [
+    "Darauf, dass die Verwaltung antwortet, warten wir."
+   ],
    "audio": "audio/2687a79d0ea8.m4a"
   },
   {
@@ -1574,6 +1577,10 @@
    "type": "order",
    "de": "Dafür braucht Mateo die Liste.",
    "ru": "Для этого Матео нужен список.",
+   "also": [
+    "Mateo braucht dafür die Liste.",
+    "Die Liste braucht Mateo dafür."
+   ],
    "audio": "audio/fc80a5ff7828.m4a"
   },
   {
@@ -1581,6 +1588,10 @@
    "type": "order",
    "de": "Elif bearbeitet die Bilder am Computer.",
    "ru": "Элиф обрабатывает фото на компьютере.",
+   "also": [
+    "Die Bilder bearbeitet Elif am Computer.",
+    "Am Computer bearbeitet Elif die Bilder."
+   ],
    "audio": "audio/3f2218aca5dc.m4a"
   },
   {
@@ -1588,6 +1599,10 @@
    "type": "order",
    "de": "Die Gruppe hat noch nicht zugesagt.",
    "ru": "Группа ещё не согласилась.",
+   "also": [
+    "Zugesagt hat die Gruppe noch nicht.",
+    "Noch nicht zugesagt hat die Gruppe."
+   ],
    "audio": "audio/856a8899d3a9.m4a"
   }
  ],
@@ -1816,5 +1831,26 @@
    }
   ]
  },
- "spy": []
+ "spy": [
+  {
+   "de": "Die Antwort? Wir warten darauf.",
+   "wrong": "Die Antwort? Wir warten auf es.",
+   "why": "О предмете с предлогом говорят через *da(r)-*: *darauf*."
+  },
+  {
+   "de": "Für wen ist die Kopie? Für Elif.",
+   "wrong": "Wofür ist die Kopie? Für Elif.",
+   "why": "О человеке спрашивают *für wen*, о предмете — *wofür*."
+  },
+  {
+   "de": "Dafür braucht Mateo die Liste.",
+   "wrong": "Dafür Mateo braucht die Liste.",
+   "why": "*dafür* занимает первую позицию, глагол идёт сразу за ним."
+  },
+  {
+   "de": "Wir warten darauf, dass die Verwaltung antwortet.",
+   "wrong": "Wir warten auf, dass die Verwaltung antwortet.",
+   "why": "Перед придаточным предлог заменяет *darauf*."
+  }
+ ]
 }

@@ -1252,6 +1252,10 @@
    "type": "order",
    "de": "Sie hatte die Kamera zu Hause vergessen.",
    "ru": "Она забыла камеру дома.",
+   "also": [
+    "Die Kamera hatte sie zu Hause vergessen.",
+    "Zu Hause hatte sie die Kamera vergessen."
+   ],
    "audio": "audio/f1b413711e2f.m4a"
   },
   {
@@ -1259,6 +1263,9 @@
    "type": "order",
    "de": "Wir waren in Lübeck angekommen.",
    "ru": "Мы приехали в Любек раньше этого момента.",
+   "also": [
+    "In Lübeck waren wir angekommen."
+   ],
    "audio": "audio/80f62f991251.m4a"
   },
   {
@@ -1266,6 +1273,9 @@
    "type": "order",
    "de": "Nachdem wir angekommen waren, frühstückten wir.",
    "ru": "После прибытия мы позавтракали.",
+   "also": [
+    "Wir frühstückten, nachdem wir angekommen waren."
+   ],
    "audio": "audio/8dc8170a4a73.m4a"
   },
   {
@@ -1273,6 +1283,9 @@
    "type": "order",
    "de": "Ich hatte die Bilder noch nicht kopiert.",
    "ru": "Я ещё не скопировала фотографии.",
+   "also": [
+    "Die Bilder hatte ich noch nicht kopiert."
+   ],
    "audio": "audio/a961a5031a9e.m4a"
   },
   {
@@ -1280,6 +1293,9 @@
    "type": "order",
    "de": "Die Fotos sind auf dem Handy vorhanden.",
    "ru": "Фотографии имеются на телефоне.",
+   "also": [
+    "Auf dem Handy sind die Fotos vorhanden."
+   ],
    "audio": "audio/550b05db84f1.m4a"
   },
   {
@@ -1287,6 +1303,9 @@
    "type": "order",
    "de": "Darf ich deine Fotos im Album verwenden?",
    "ru": "Можно использовать твои фото в альбоме?",
+   "also": [
+    "Darf ich im Album deine Fotos verwenden?"
+   ],
    "audio": "audio/0c82af411628.m4a"
   }
  ],
@@ -1517,5 +1536,26 @@
    }
   ]
  },
- "spy": []
+ "spy": [
+  {
+   "de": "Sie hatte die Kamera vergessen.",
+   "wrong": "Sie war die Kamera vergessen.",
+   "why": "*vergessen* образует Plusquamperfekt с *hatte*."
+  },
+  {
+   "de": "Wir waren in Lübeck angekommen.",
+   "wrong": "Wir hatten in Lübeck angekommen.",
+   "why": "*ankommen* — движение к цели: *waren*."
+  },
+  {
+   "de": "Nachdem wir angekommen waren, frühstückten wir.",
+   "wrong": "Nachdem wir angekommen sind, frühstückten wir.",
+   "why": "То, что было раньше прошлого, — Plusquamperfekt: *waren*."
+  },
+  {
+   "de": "Ich hatte die Bilder noch nicht kopiert.",
+   "wrong": "Ich hatte die Bilder noch nicht gekopiert.",
+   "why": "У глаголов на *-ieren* нет *ge-*: *kopiert*."
+  }
+ ]
 }

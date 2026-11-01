@@ -1792,6 +1792,10 @@
    "type": "order",
    "de": "Ein kleinerer Raum wäre auch möglich.",
    "ru": "Помещение поменьше тоже было бы возможно.",
+   "also": [
+    "Auch ein kleinerer Raum wäre möglich.",
+    "Möglich wäre auch ein kleinerer Raum."
+   ],
    "audio": "audio/75104d83e4e0.m4a"
   },
   {
@@ -1799,6 +1803,10 @@
    "type": "order",
    "de": "Ich hätte gern eine kleine Küche.",
    "ru": "Я хотел бы маленькую кухню.",
+   "also": [
+    "Eine kleine Küche hätte ich gern.",
+    "Gern hätte ich eine kleine Küche."
+   ],
    "audio": "audio/a33b059ca014.m4a"
   },
   {
@@ -1806,6 +1814,9 @@
    "type": "order",
    "de": "Wir könnten Raum B nehmen.",
    "ru": "Мы могли бы взять помещение B.",
+   "also": [
+    "Raum B könnten wir nehmen."
+   ],
    "audio": "audio/8d0a43f00764.m4a"
   },
   {
@@ -1813,6 +1824,9 @@
    "type": "order",
    "de": "Ich würde beide Angebote vergleichen.",
    "ru": "Я бы сравнил оба предложения.",
+   "also": [
+    "Beide Angebote würde ich vergleichen."
+   ],
    "audio": "audio/8e9ddd65b4f9.m4a"
   },
   {
@@ -1820,6 +1834,9 @@
    "type": "order",
    "de": "Wir sollten schriftlich nachfragen.",
    "ru": "Нам стоит письменно уточнить.",
+   "also": [
+    "Schriftlich sollten wir nachfragen."
+   ],
    "audio": "audio/9d20fcfc0b41.m4a"
   },
   {
@@ -1827,6 +1844,9 @@
    "type": "order",
    "de": "Raum B ist für diesen Termin bestätigt.",
    "ru": "ПомещениеB подтверждено на этот срок.",
+   "also": [
+    "Für diesen Termin ist Raum B bestätigt."
+   ],
    "audio": "audio/9b38ba5cb021.m4a"
   }
  ],
@@ -2082,5 +2102,26 @@
    }
   ]
  },
- "spy": []
+ "spy": [
+  {
+   "de": "Ein kleinerer Raum wäre auch möglich.",
+   "wrong": "Ein kleinerer Raum hätte auch möglich.",
+   "why": "С *möglich* нужна форма от *sein*: *wäre*."
+  },
+  {
+   "de": "Ich hätte gern eine kleine Küche.",
+   "wrong": "Ich wäre gern eine kleine Küche.",
+   "why": "Желание что-то иметь: *hätte gern*."
+  },
+  {
+   "de": "Wir könnten Raum B nehmen.",
+   "wrong": "Wir könnten Raum B genommen.",
+   "why": "После *könnten* в конце стоит инфинитив: *nehmen*."
+  },
+  {
+   "de": "Du solltest die Bedingungen prüfen.",
+   "wrong": "Du solltest die Bedingungen zu prüfen.",
+   "why": "После *solltest* частица *zu* не нужна."
+  }
+ ]
 }

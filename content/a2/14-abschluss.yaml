@@ -488,6 +488,20 @@ steps:
           view: task
           task: pair
           solved: true
+spy:
+  - de: "Wir fahren am Sonntag, weil Mateo frei hat."
+    wrong: "Wir fahren am Sonntag, weil Mateo hat frei."
+    why: "После *weil* глагол уходит в конец: *frei hat*."
+  - de: "Wenn es regnet, gehen wir ins Museum."
+    wrong: "Wenn es regnet, wir gehen ins Museum."
+    why: "После придаточного сразу идёт глагол: *gehen wir*."
+  - de: "Plan A ist billiger als Plan B."
+    wrong: "Plan A ist billiger wie Plan B."
+    why: "После сравнительной степени нужно *als*."
+  - de: "Wir treffen uns um elf Uhr."
+    wrong: "Wir treffen sich um elf Uhr."
+    why: "С *wir* нужно *uns*."
+
 exercises:
   - type: choice
     q: Wir fahren Sonntag, weil Mateo frei ___.
@@ -515,6 +529,7 @@ exercises:
     why: Косвенный вопрос да/нет.
   - type: choice
     q: Wir planen ___ Montag.
+    ru: Мы планируем с понедельника.
     options:
       - seit
       - vor
@@ -539,21 +554,27 @@ exercises:
     why: Genug перед существительным.
   - type: order
     ru: Мы едем в воскресенье, потому что Матео свободен.
+    also: ["Am Sonntag fahren wir, weil Mateo frei hat.", "Weil Mateo frei hat, fahren wir am Sonntag."]
     de: Wir fahren am Sonntag, weil Mateo frei hat.
   - type: order
     ru: Если будет дождь, мы пойдём в музей.
+    also: ["Wir gehen ins Museum, wenn es regnet.", "Ins Museum gehen wir, wenn es regnet."]
     de: Wenn es regnet, gehen wir ins Museum.
   - type: order
     ru: Я спрашиваю, есть ли свободные места.
+    also: ["Ob Plätze frei sind, frage ich."]
     de: Ich frage, ob Plätze frei sind.
   - type: order
     ru: Мы планируем поездку с понедельника.
+    also: ["Seit Montag planen wir die Fahrt.", "Die Fahrt planen wir seit Montag."]
     de: Wir planen seit Montag die Fahrt.
   - type: order
     ru: План A дешевле плана B.
+    also: ["Billiger als Plan B ist Plan A."]
     de: Plan A ist billiger als Plan B.
   - type: order
     ru: Мы встречаемся в одиннадцать.
+    also: ["Um elf Uhr treffen wir uns."]
     de: Wir treffen uns um elf Uhr.
 case:
   title: Der letzte Eintrag

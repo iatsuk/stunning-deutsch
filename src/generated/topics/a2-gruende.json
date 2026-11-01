@@ -1232,6 +1232,7 @@
    "id": "a2-gruende-5",
    "type": "choice",
    "q": "Am Sonntag ___ ich frei.",
+   "ru": "В воскресенье у меня выходной.",
    "options": [
     "habe",
     "haben",
@@ -1258,6 +1259,9 @@
    "id": "a2-gruende-7",
    "type": "order",
    "ru": "Я не приду, потому что должен работать.",
+   "also": [
+    "Weil ich arbeiten muss, komme ich nicht."
+   ],
    "de": "Ich komme nicht, weil ich arbeiten muss.",
    "audio": "audio/f35067233c66.m4a"
   },
@@ -1265,6 +1269,10 @@
    "id": "a2-gruende-8",
    "type": "order",
    "ru": "Мы едем поездом, потому что у нас нет машины.",
+   "also": [
+    "Weil wir kein Auto haben, fahren wir mit dem Zug.",
+    "Mit dem Zug fahren wir, weil wir kein Auto haben."
+   ],
    "de": "Wir fahren mit dem Zug, weil wir kein Auto haben.",
    "audio": "audio/25d8fb358d2d.m4a"
   },
@@ -1272,6 +1280,10 @@
    "id": "a2-gruende-9",
    "type": "order",
    "ru": "Сначала мы завтракаем в кафе.",
+   "also": [
+    "Wir frühstücken zuerst im Café.",
+    "Im Café frühstücken wir zuerst."
+   ],
    "de": "Zuerst frühstücken wir im Café.",
    "audio": "audio/288b678bc92c.m4a"
   },
@@ -1279,6 +1291,9 @@
    "id": "a2-gruende-10",
    "type": "order",
    "ru": "После этого мы гуляем.",
+   "also": [
+    "Wir gehen danach spazieren."
+   ],
    "de": "Danach gehen wir spazieren.",
    "audio": "audio/48eeaade5607.m4a"
   },
@@ -1286,6 +1301,9 @@
    "id": "a2-gruende-11",
    "type": "order",
    "ru": "В воскресенье у меня выходной.",
+   "also": [
+    "Ich habe am Sonntag frei."
+   ],
    "de": "Am Sonntag habe ich frei.",
    "audio": "audio/f9d7ae4d9680.m4a"
   },
@@ -1533,5 +1551,26 @@
    }
   ]
  },
- "spy": []
+ "spy": [
+  {
+   "de": "Ich komme nicht, weil ich arbeiten muss.",
+   "wrong": "Ich komme nicht, weil ich muss arbeiten.",
+   "why": "После *weil* спрягаемый глагол уходит в конец: *arbeiten muss*."
+  },
+  {
+   "de": "Wir fahren mit dem Zug, weil wir kein Auto haben.",
+   "wrong": "Wir fahren mit dem Zug, weil wir haben kein Auto.",
+   "why": "После *weil* глагол стоит в конце: *kein Auto haben*."
+  },
+  {
+   "de": "Ich komme nicht, denn ich muss arbeiten.",
+   "wrong": "Ich komme nicht, denn ich arbeiten muss.",
+   "why": "*denn* не меняет порядок слов: глагол остаётся на втором месте."
+  },
+  {
+   "de": "Zuerst frühstücken wir im Café.",
+   "wrong": "Zuerst wir frühstücken im Café.",
+   "why": "После *zuerst* сразу идёт глагол: *frühstücken wir*."
+  }
+ ]
 }

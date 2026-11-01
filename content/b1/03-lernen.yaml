@@ -614,6 +614,20 @@ steps:
           view: task
           task: self
           solved: true
+spy:
+  - de: "Ich lerne in einer kleinen Gruppe."
+    wrong: "Ich lerne in einer kleine Gruppe."
+    why: "В дательном падеже прилагательное получает *-en*: *kleinen*."
+  - de: "Wir arbeiten mit neuen Beispielen."
+    wrong: "Wir arbeiten mit neue Beispielen."
+    why: "Дательный падеж мн. ч. без артикля: *neuen*."
+  - de: "In einem praktischen Kurs üben wir Gespräche."
+    wrong: "In einem praktischer Kurs üben wir Gespräche."
+    why: "*in einem* — дательный падеж: *praktischen*."
+  - de: "Ich möchte mit neuen Kontakten sprechen."
+    wrong: "Ich möchte mit neuen Kontakte sprechen."
+    why: "В дательном падеже мн. ч. существительное получает *-n*: *Kontakten*."
+
 exercises:
   - type: choice
     q: in einem klein___ Raum
@@ -665,21 +679,27 @@ exercises:
     why: Dativ множественного числа.
   - type: order
     ru: На практическом курсе мы тренируем разговоры.
+    also: ["Wir üben in einem praktischen Kurs Gespräche.", "Gespräche üben wir in einem praktischen Kurs."]
     de: In einem praktischen Kurs üben wir Gespräche.
   - type: order
     ru: Я учусь в маленькой группе.
+    also: ["In einer kleinen Gruppe lerne ich."]
     de: Ich lerne in einer kleinen Gruppe.
   - type: order
     ru: Мы работаем с новыми примерами.
+    also: ["Mit neuen Beispielen arbeiten wir."]
     de: Wir arbeiten mit neuen Beispielen.
   - type: order
     ru: Курс начинается в понедельник в девять.
+    also: ["Am Montag beginnt der Kurs um neun Uhr.", "Um neun Uhr beginnt der Kurs am Montag."]
     de: Der Kurs beginnt am Montag um neun Uhr.
   - type: order
     ru: Я не хочу тратить больше тридцати евро.
+    also: ["Mehr als dreißig Euro möchte ich nicht ausgeben.", "Nicht mehr als dreißig Euro möchte ich ausgeben.", "Ausgeben möchte ich nicht mehr als dreißig Euro."]
     de: Ich möchte nicht mehr als dreißig Euro ausgeben.
   - type: order
     ru: Запись на курс подтверждена.
+    also: ["Bestätigt ist die Anmeldung zum Kurs."]
     de: Die Anmeldung zum Kurs ist bestätigt.
 case:
   title: Zwei verschiedene Bestätigungen

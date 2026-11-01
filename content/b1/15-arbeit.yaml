@@ -555,6 +555,20 @@ steps:
           view: task
           task: opinions
           solved: true
+spy:
+  - de: "Das ist der Kollege, mit dem ich arbeite."
+    wrong: "Das ist der Kollege, mit den ich arbeite."
+    why: "*mit* требует дательного падежа: *dem*."
+  - de: "Das sind Menschen, mit denen ich offen sprechen kann."
+    wrong: "Das sind Menschen, mit den ich offen sprechen kann."
+    why: "Относительное местоимение в дательном падеже мн. ч. — *denen*."
+  - de: "Ich spreche mit dem Kollegen."
+    wrong: "Ich spreche mit dem Kollege."
+    why: "*der Kollege* склоняется: *dem Kollegen*."
+  - de: "Die Kollegin, von der ich lerne, ist nett."
+    wrong: "Die Kollegin, von die ich lerne, ist nett."
+    why: "*von* требует дательного падежа: *der*."
+
 exercises:
   - type: choice
     q: der Kollege, mit ___ ich arbeite
@@ -607,21 +621,27 @@ exercises:
   - type: order
     de: Das ist der Kollege, mit dem ich arbeite.
     ru: Это коллега, с которым я работаю.
+    also: ["Der Kollege, mit dem ich arbeite, ist das."]
   - type: order
     de: Das sind Menschen, mit denen ich offen sprechen kann.
     ru: Это люди, с которыми я могу открыто говорить.
+    also: ["Menschen, mit denen ich offen sprechen kann, sind das."]
   - type: order
     de: Ich brauche jemanden, dem ich Fragen stellen kann.
     ru: Мне нужен кто-то, кому я могу задать вопросы.
+    also: ["Jemanden, dem ich Fragen stellen kann, brauche ich."]
   - type: order
     de: Ich spreche mit dem Kollegen.
     ru: Я говорю с одним коллегой.
+    also: ["Mit dem Kollegen spreche ich."]
   - type: order
     de: Wir sammeln zuerst die Fragen.
     ru: Сначала мы соберём вопросы.
+    also: ["Zuerst sammeln wir die Fragen.", "Die Fragen sammeln wir zuerst."]
   - type: order
     de: Der Beobachtungstag ist keine neue Arbeitsstelle.
     ru: День наблюдения не является новой работой.
+    also: ["Keine neue Arbeitsstelle ist der Beobachtungstag."]
 case:
   title: Eine hilfreiche Person ist kein unbegrenztes Versprechen
   ru: Сверка дневника

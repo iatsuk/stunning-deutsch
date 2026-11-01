@@ -59,9 +59,6 @@ export function plural(n: number, [one, few, many]: [string, string, string]) {
   return `${n} ${word}`;
 }
 
-/** Текст без разметки — для сравнения ответов и подписей. */
-export const plain = (text: string) => text.replace(/[*+]/g, "").replace(/\s+/g, " ").trim();
-
 export function PlayButton({ src, label = "Послушать", size = "sm" }: { src?: string; label?: string; size?: "sm" | "md" }) {
   const playing = usePlaying();
   if (!src) return null;

@@ -431,6 +431,20 @@ steps:
           view: task
           task: self
           solved: true
+spy:
+  - de: "Mateo sagt, dass er frei hat."
+    wrong: "Mateo sagt, dass er hat frei."
+    why: "После *dass* спрягаемый глагол уходит в конец."
+  - de: "Gestern musste ich arbeiten."
+    wrong: "Gestern muss ich arbeiten."
+    why: "*gestern* — прошлое, нужна форма *musste*."
+  - de: "Ich wollte kommen, aber ich hatte keine Zeit."
+    wrong: "Ich wolle kommen, aber ich hatte keine Zeit."
+    why: "Прошедшее время модального глагола: *wollte*."
+  - de: "Konntest du die Liste lesen?"
+    wrong: "Konntet du die Liste lesen?"
+    why: "С *du* окончание *-st*: *konntest*."
+
 exercises:
   - type: choice
     q: Mateo sagt, ___ er frei hat.
@@ -482,21 +496,26 @@ exercises:
     why: Разные события.
   - type: order
     ru: Он говорит, что в воскресенье у него выходной.
+    also: ["Dass er am Sonntag frei hat, sagt er."]
     de: Er sagt, dass er am Sonntag frei hat.
   - type: order
     ru: Я хотел прийти, но должен был работать.
+    also: ["Kommen wollte ich, aber ich musste arbeiten."]
     de: Ich wollte kommen, aber ich musste arbeiten.
   - type: order
     ru: Ты смог прочитать список?
     de: Konntest du die Liste lesen?
   - type: order
     ru: Рабочая встреча начинается в шестнадцать.
+    also: ["Um sechzehn Uhr beginnt die Besprechung."]
     de: Die Besprechung beginnt um sechzehn Uhr.
   - type: order
     ru: Моя смена начинается в семнадцать.
+    also: ["Um siebzehn Uhr beginnt meine Schicht."]
     de: Meine Schicht beginnt um siebzehn Uhr.
   - type: order
     ru: Я думаю, что список готов.
+    also: ["Dass die Liste fertig ist, glaube ich."]
     de: Ich glaube, dass die Liste fertig ist.
 case:
   title: Zwei Listen, zwei Termine

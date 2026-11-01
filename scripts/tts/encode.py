@@ -5,6 +5,8 @@ import numpy as np,soundfile as sf,imageio_ffmpeg
 p=argparse.ArgumentParser();p.add_argument('--manifest',required=True);p.add_argument('--input',required=True);p.add_argument('--out',required=True);p.add_argument('--config',default=str(Path(__file__).with_name('config.json')));args=p.parse_args()
 config=json.load(open(args.config));enc=config['encoding']
 items=json.load(open(args.manifest));dest=Path(args.out);dest.mkdir(parents=True,exist_ok=True);ffmpeg=imageio_ffmpeg.get_ffmpeg_exe()
+if not items:
+ print(json.dumps({'files':0}));raise SystemExit(0)
 def encode(item):
  src=Path(args.input)/(Path(item['file']).stem+'.wav');a,sr=sf.read(src)
  if a.ndim!=1 or not np.isfinite(a).all() or len(a)<sr*.2:raise ValueError(str(src))

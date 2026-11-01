@@ -1299,6 +1299,9 @@
    "id": "a2-unterwegs-7",
    "type": "order",
    "ru": "Камера лежит на столе.",
+   "also": [
+    "Auf dem Tisch liegt die Kamera."
+   ],
    "de": "Die Kamera liegt auf dem Tisch.",
    "audio": "audio/04e92e08b9f7.m4a"
   },
@@ -1306,6 +1309,10 @@
    "id": "a2-unterwegs-8",
    "type": "order",
    "ru": "Я ставлю сумку под стол.",
+   "also": [
+    "Die Tasche stelle ich unter den Tisch.",
+    "Unter den Tisch stelle ich die Tasche."
+   ],
    "de": "Ich stelle die Tasche unter den Tisch.",
    "audio": "audio/cec0d5345647.m4a"
   },
@@ -1313,6 +1320,9 @@
    "id": "a2-unterwegs-9",
    "type": "order",
    "ru": "Билеты в сумке.",
+   "also": [
+    "In der Tasche sind die Tickets."
+   ],
    "de": "Die Tickets sind in der Tasche.",
    "audio": "audio/292f0cd6f851.m4a"
   },
@@ -1320,6 +1330,9 @@
    "id": "a2-unterwegs-10",
    "type": "order",
    "ru": "Мы идём к озеру.",
+   "also": [
+    "An den See gehen wir."
+   ],
    "de": "Wir gehen an den See.",
    "audio": "audio/cc642f380635.m4a"
   },
@@ -1327,6 +1340,10 @@
    "id": "a2-unterwegs-11",
    "type": "order",
    "ru": "У озера мы делаем перерыв.",
+   "also": [
+    "Wir machen am See eine Pause.",
+    "Eine Pause machen wir am See."
+   ],
    "de": "Am See machen wir eine Pause.",
    "audio": "audio/c479ee69fd66.m4a"
   },
@@ -1334,6 +1351,9 @@
    "id": "a2-unterwegs-12",
    "type": "order",
    "ru": "Место встречи рядом с музеем.",
+   "also": [
+    "Neben dem Museum ist der Treffpunkt."
+   ],
    "de": "Der Treffpunkt ist neben dem Museum.",
    "audio": "audio/cc6e209b94a9.m4a"
   }
@@ -1568,5 +1588,26 @@
    }
   ]
  },
- "spy": []
+ "spy": [
+  {
+   "de": "Die Kamera liegt auf dem Tisch.",
+   "wrong": "Die Kamera liegt auf den Tisch.",
+   "why": "На вопрос *Wo?* нужен дательный падеж: *auf dem Tisch*."
+  },
+  {
+   "de": "Ich stelle die Tasche auf den Tisch.",
+   "wrong": "Ich stelle die Tasche auf dem Tisch.",
+   "why": "На вопрос *Wohin?* нужен винительный падеж: *auf den Tisch*."
+  },
+  {
+   "de": "Die Tickets sind in der Tasche.",
+   "wrong": "Die Tickets sind in die Tasche.",
+   "why": "На вопрос *Wo?* нужен дательный падеж: *in der Tasche*."
+  },
+  {
+   "de": "Leg die Tickets in die Tasche.",
+   "wrong": "Leg die Tickets in der Tasche.",
+   "why": "На вопрос *Wohin?* нужен винительный падеж: *in die Tasche*."
+  }
+ ]
 }

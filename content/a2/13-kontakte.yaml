@@ -491,6 +491,20 @@ steps:
         set:
           view: task
           task: conversation
+spy:
+  - de: "Ich frage, ob Plätze frei sind."
+    wrong: "Ich frage, ob sind Plätze frei."
+    why: "В косвенном вопросе глагол уходит в конец: *frei sind*."
+  - de: "Wissen Sie, wann der Kurs beginnt?"
+    wrong: "Wissen Sie, wann beginnt der Kurs?"
+    why: "В косвенном вопросе глагол уходит в конец: *der Kurs beginnt*."
+  - de: "Können Sie mir sagen, wie lange der Kurs dauert?"
+    wrong: "Können Sie mir sagen, wie lange dauert der Kurs?"
+    why: "В косвенном вопросе глагол уходит в конец: *der Kurs dauert*."
+  - de: "Ich frage, ob sie Zeit haben."
+    wrong: "Ich frage, wenn sie Zeit haben."
+    why: "Вопрос «ли» вводит *ob*, а не *wenn*."
+
 exercises:
   - type: choice
     q: Ich frage, ___ Plätze frei sind.
@@ -545,18 +559,22 @@ exercises:
     de: Wissen Sie, ob Plätze frei sind?
   - type: order
     ru: Я спрашиваю, когда начинается курс.
+    also: ["Wann der Kurs beginnt, frage ich."]
     de: Ich frage, wann der Kurs beginnt.
   - type: order
     ru: Не могли бы вы сказать, сколько длится курс?
     de: Können Sie mir sagen, wie lange der Kurs dauert?
   - type: order
     ru: Я спрашиваю друзей, есть ли у них время.
+    also: ["Ob sie Zeit haben, frage ich meine Freunde.", "Meine Freunde frage ich, ob sie Zeit haben."]
     de: Ich frage meine Freunde, ob sie Zeit haben.
   - type: order
     ru: Пожалуйста, запишитесь до пятницы.
+    also: ["Melden Sie sich bitte bis Freitag an.", "Melden Sie sich bis Freitag bitte an."]
     de: Bitte melden Sie sich bis Freitag an.
   - type: order
     ru: Ещё два места свободны.
+    also: ["Noch sind zwei Plätze frei.", "Frei sind noch zwei Plätze.", "Noch frei sind zwei Plätze."]
     de: Zwei Plätze sind noch frei.
 case:
   title: Frage oder Zusage?

@@ -1,34 +1,16 @@
 {
-  "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
-  "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
-  "version": "de-a1-qwen-20261023-tail-v2",
+  "model": "k2-fsa/OmniVoice",
+  "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+  "version": "de-omnivoice-20261026-v1",
   "referenceModel": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
   "referenceRevision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
   "language": "German",
   "generation": {
     "language": "German",
-    "temperature": 0.7,
-    "max_new_tokens": 1024,
-    "batchSize": 8,
-    "seed": 20261019,
-    "terminalPunctuation": "Append a full stop when no . ! ? or ellipsis is present at the end.",
-    "batchOrdering": "Manifest slice shard::shards, sorted by text length and filename; batch seed = seed + shard*100000 + batch index.",
-    "curatedVariants": {
-      "Anna|zu": {
-        "seed": 2026101901,
-        "texts": [
-          "zu.",
-          "Zu.",
-          "zu!",
-          "zu",
-          "Die Tür ist zu."
-        ],
-        "select": 1,
-        "temperature": 0.7,
-        "max_new_tokens": 256,
-        "reason": "The selected isolated Zu variant was recognized as zu by both Whisper large-v3 and Qwen3-ASR-0.6B."
-      }
-    }
+    "num_step": 32,
+    "postprocess_output": false,
+    "seed": 20261024,
+    "terminalPunctuation": "Append a full stop when no . ! ? or ellipsis is present at the end."
   },
   "encoding": {
     "codec": "aac",

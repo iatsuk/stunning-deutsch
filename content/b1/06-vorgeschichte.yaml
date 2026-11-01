@@ -410,6 +410,20 @@ steps:
           view: task
           task: letter
           solved: true
+spy:
+  - de: "Sie hatte die Kamera vergessen."
+    wrong: "Sie war die Kamera vergessen."
+    why: "*vergessen* образует Plusquamperfekt с *hatte*."
+  - de: "Wir waren in Lübeck angekommen."
+    wrong: "Wir hatten in Lübeck angekommen."
+    why: "*ankommen* — движение к цели: *waren*."
+  - de: "Nachdem wir angekommen waren, frühstückten wir."
+    wrong: "Nachdem wir angekommen sind, frühstückten wir."
+    why: "То, что было раньше прошлого, — Plusquamperfekt: *waren*."
+  - de: "Ich hatte die Bilder noch nicht kopiert."
+    wrong: "Ich hatte die Bilder noch nicht gekopiert."
+    why: "У глаголов на *-ieren* нет *ge-*: *kopiert*."
+
 exercises:
   - type: choice
     q: Sie ___ die Kamera vergessen.
@@ -462,21 +476,27 @@ exercises:
   - type: order
     de: Sie hatte die Kamera zu Hause vergessen.
     ru: Она забыла камеру дома.
+    also: ["Die Kamera hatte sie zu Hause vergessen.", "Zu Hause hatte sie die Kamera vergessen."]
   - type: order
     de: Wir waren in Lübeck angekommen.
     ru: Мы приехали в Любек раньше этого момента.
+    also: ["In Lübeck waren wir angekommen."]
   - type: order
     de: Nachdem wir angekommen waren, frühstückten wir.
     ru: После прибытия мы позавтракали.
+    also: ["Wir frühstückten, nachdem wir angekommen waren."]
   - type: order
     de: Ich hatte die Bilder noch nicht kopiert.
     ru: Я ещё не скопировала фотографии.
+    also: ["Die Bilder hatte ich noch nicht kopiert."]
   - type: order
     de: Die Fotos sind auf dem Handy vorhanden.
     ru: Фотографии имеются на телефоне.
+    also: ["Auf dem Handy sind die Fotos vorhanden."]
   - type: order
     de: Darf ich deine Fotos im Album verwenden?
     ru: Можно использовать твои фото в альбоме?
+    also: ["Darf ich im Album deine Fotos verwenden?"]
 case:
   title: Kamera weg oder Datei am anderen Ort?
   ru: Сверка дневника

@@ -1608,6 +1608,7 @@
    "id": "b1-ablaeufe-2",
    "type": "choice",
    "q": "___ Elif fotografiert, essen die anderen.",
+   "ru": "Пока Элиф фотографирует, остальные едят.",
    "options": [
     "Bevor",
     "Nachdem",
@@ -1672,6 +1673,10 @@
    "type": "order",
    "de": "Bevor wir losgehen, prüfen wir die Rückfahrt.",
    "ru": "До выхода проверим обратный путь.",
+   "also": [
+    "Wir prüfen die Rückfahrt, bevor wir losgehen.",
+    "Die Rückfahrt prüfen wir, bevor wir losgehen."
+   ],
    "audio": "audio/72dfa1c6e058.m4a"
   },
   {
@@ -1679,6 +1684,9 @@
    "type": "order",
    "de": "Während Hauke den Weg prüft, holt Dana Wasser.",
    "ru": "Пока Хауке проверяет путь, Дана берёт воду.",
+   "also": [
+    "Dana holt Wasser, während Hauke den Weg prüft."
+   ],
    "audio": "audio/32fc0cf122fa.m4a"
   },
   {
@@ -1686,6 +1694,10 @@
    "type": "order",
    "de": "Ich packe das Brot ein, bevor wir losgehen.",
    "ru": "Я упакую хлеб до выхода.",
+   "also": [
+    "Bevor wir losgehen, packe ich das Brot ein.",
+    "Das Brot packe ich ein, bevor wir losgehen."
+   ],
    "audio": "audio/42262f338263.m4a"
   },
   {
@@ -1693,6 +1705,10 @@
    "type": "order",
    "de": "Danach wechseln wir die Aufgaben.",
    "ru": "Потом поменяемся задачами.",
+   "also": [
+    "Wir wechseln danach die Aufgaben.",
+    "Die Aufgaben wechseln wir danach."
+   ],
    "audio": "audio/5769d31e7803.m4a"
   },
   {
@@ -1700,6 +1716,10 @@
    "type": "order",
    "de": "Wir sind um dreizehn Uhr an der Haltestelle.",
    "ru": "В тринадцать мы у остановки.",
+   "also": [
+    "Um dreizehn Uhr sind wir an der Haltestelle.",
+    "An der Haltestelle sind wir um dreizehn Uhr."
+   ],
    "audio": "audio/0af0aafa5a3a.m4a"
   },
   {
@@ -1707,6 +1727,9 @@
    "type": "order",
    "de": "Der Uferweg bleibt offen.",
    "ru": "Береговой путь остаётся открытым.",
+   "also": [
+    "Offen bleibt der Uferweg."
+   ],
    "audio": "audio/aafa769425c7.m4a"
   }
  ],
@@ -1775,7 +1798,7 @@
     "options": [
      "Нет, есть запас 20 минут",
      "Да",
-     "Разница2 часа"
+     "Разница 2 часа"
     ],
     "answer": 0,
     "right": "Это два разных события.",
@@ -1920,5 +1943,26 @@
    }
   ]
  },
- "spy": []
+ "spy": [
+  {
+   "de": "Bevor wir losgehen, prüfen wir die Rückfahrt.",
+   "wrong": "Bevor wir losgehen, wir prüfen die Rückfahrt.",
+   "why": "После придаточного сразу идёт глагол: *prüfen wir*."
+  },
+  {
+   "de": "Während Hauke den Weg prüft, holt Dana Wasser.",
+   "wrong": "Während Hauke prüft den Weg, holt Dana Wasser.",
+   "why": "После *während* глагол уходит в конец придаточного: *den Weg prüft*."
+  },
+  {
+   "de": "Ich packe das Brot ein, bevor wir losgehen.",
+   "wrong": "Ich packe das Brot ein, bevor wir gehen los.",
+   "why": "В придаточном приставка не отделяется: *losgehen*."
+  },
+  {
+   "de": "Bevor wir gehen, packen wir Brot ein.",
+   "wrong": "Vor wir gehen, packen wir Brot ein.",
+   "why": "*vor* — предлог; придаточное вводит союз *bevor*."
+  }
+ ]
 }

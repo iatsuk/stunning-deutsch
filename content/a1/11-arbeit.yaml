@@ -597,10 +597,7 @@ exercises:
   - type: order
     ru: В Буэнос-Айресе я работал шесть лет.
     de: In Buenos Aires habe ich sechs Jahre gearbeitet.
-    also:
-      - Ich habe in Buenos Aires sechs Jahre gearbeitet.
-      - Ich habe sechs Jahre in Buenos Aires gearbeitet.
-      - Zehn Jahre habe ich in Buenos Aires gearbeitet.
+    also: ["Ich habe in Buenos Aires sechs Jahre gearbeitet.", "Ich habe sechs Jahre in Buenos Aires gearbeitet.", "Sechs Jahre habe ich in Buenos Aires gearbeitet."]
     why: "*habe* — на втором месте, причастие — всегда в конце."
   - type: gap
     q: Früher ___ ich Koch in Buenos Aires.
@@ -622,7 +619,7 @@ exercises:
   - type: order
     ru: Вчера у меня было много работы.
     de: Gestern hatte ich viel Arbeit.
-    also: [ Ich hatte gestern viel Arbeit. ]
+    also: ["Ich hatte gestern viel Arbeit.", "Viel Arbeit hatte ich gestern."]
 adventure:
   kind: sequence
   title: Соберите отчёт команды

@@ -1,4 +1,5 @@
 import { useEffect, useState, useSyncExternalStore, type RefObject } from "react";
+import { createStore } from "./lib/store.ts";
 
 export function useMedia(query: string) {
   const [matches, setMatches] = useState(() => window.matchMedia(query).matches);
@@ -78,15 +79,19 @@ const emitAudio = () => audioListeners.forEach((listener) => listener());
 
 function start(src: string) {
   player?.pause();
-  player = new Audio(src);
+  const audio = new Audio(src);
+  player = audio;
   playing = src;
   emitAudio();
-  player.addEventListener("ended", () => {
+  audio.addEventListener("ended", () => {
     const next = queue.shift();
     if (next) start(next);
     else stop();
   });
-  player.play().catch(() => stop());
+  // Прерванная запись отклоняет запуск уже после смены плеера: новую не трогаем.
+  audio.play().catch(() => {
+    if (player === audio) stop();
+  });
 }
 
 function stop() {
@@ -125,43 +130,6 @@ export const usePlaying = () =>
 
 // ───────────── Локальное хранилище: прогресс и настройки ─────────────
 
-function readStore<T>(key: string, fallback: T): T {
-  try {
-    const raw = window.localStorage.getItem(key);
-    return raw ? (JSON.parse(raw) as T) : fallback;
-  } catch {
-    return fallback;
-  }
-}
-
-function writeStore(key: string, value: unknown) {
-  try {
-    window.localStorage.setItem(key, JSON.stringify(value));
-    return true;
-  } catch {
-    // приватное окно или запрет на хранение — прогресс просто не сохранится
-    return false;
-  }
-}
-
-function createStore<T>(key: string, fallback: T) {
-  let value = readStore(key, fallback);
-  const listeners = new Set<() => void>();
-  return {
-    get: () => value,
-    set(next: T) {
-      value = next;
-      const saved = writeStore(key, next);
-      listeners.forEach((listener) => listener());
-      return saved;
-    },
-    subscribe(listener: () => void) {
-      listeners.add(listener);
-      return () => listeners.delete(listener);
-    },
-  };
-}
-
 /** Решённые упражнения: { [темa]: { [id упражнения]: 1 } } */
 const progressStore = createStore<Record<string, Record<string, 1>>>("sd-progress-v1", {});
 
@@ -171,12 +139,10 @@ export function useProgress() {
     solved: (topic: string) => Object.keys(progress[topic] ?? {}).length,
     isSolved: (topic: string, exercise: string) => Boolean(progress[topic]?.[exercise]),
     mark(topic: string, exercise: string) {
-      if (progress[topic]?.[exercise]) return;
-      progressStore.set({ ...progress, [topic]: { ...progress[topic], [exercise]: 1 } });
+      progressStore.update((all) => ({ ...all, [topic]: { ...all[topic], [exercise]: 1 } }));
     },
     reset(topic: string) {
-      const { [topic]: _, ...rest } = progress;
-      progressStore.set(rest);
+      progressStore.update(({ [topic]: _, ...rest }) => rest);
     },
   };
 }
@@ -190,11 +156,10 @@ export function useCaseProgress(topic: string) {
   return {
     solved,
     advance(step: number) {
-      if (step > solved) caseStore.set({ ...all, [topic]: step });
+      caseStore.update((current) => (step > (current[topic] ?? 0) ? { ...current, [topic]: step } : current));
     },
     reset() {
-      const { [topic]: _, ...rest } = all;
-      caseStore.set(rest);
+      caseStore.update(({ [topic]: _, ...rest }) => rest);
     },
   };
 }
@@ -211,22 +176,22 @@ export type AdventureSave = {
 
 const adventureStore = createStore<Record<string, AdventureSave>>("sd-adventure-v1", {});
 
+function restoreEpisode(raw?: AdventureSave): AdventureSave {
+  return {
+    step: Number.isInteger(raw?.step) && raw!.step >= 0 ? raw!.step : 0,
+    answers: raw?.answers && typeof raw.answers === "object" ? Object.fromEntries(Object.entries(raw.answers).filter(([, v]) => typeof v === "string")) : {},
+    won: raw?.won === true,
+    assisted: raw?.assisted === true,
+    seed: Number.isInteger(raw?.seed) && raw!.seed >= 0 ? raw!.seed : 1,
+  };
+}
+
 export function useAdventureProgress() {
   const all = useSyncExternalStore(adventureStore.subscribe, adventureStore.get);
-  const episode = (id: string): AdventureSave => {
-    const raw = all?.[id];
-    return {
-      step: Number.isInteger(raw?.step) && raw.step >= 0 ? raw.step : 0,
-      answers: raw?.answers && typeof raw.answers === "object" ? Object.fromEntries(Object.entries(raw.answers).filter(([, v]) => typeof v === "string")) : {},
-      won: raw?.won === true,
-      assisted: raw?.assisted === true,
-      seed: Number.isInteger(raw?.seed) && raw.seed >= 0 ? raw.seed : 1,
-    };
-  };
   return {
-    episode,
+    episode: (id: string) => restoreEpisode(all[id]),
     update(id: string, patch: Partial<AdventureSave>) {
-      return adventureStore.set({ ...adventureStore.get(), [id]: { ...episode(id), ...patch } });
+      return adventureStore.update((current) => ({ ...current, [id]: { ...restoreEpisode(current[id]), ...patch } }));
     },
   };
 }

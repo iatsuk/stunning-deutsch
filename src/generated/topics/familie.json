@@ -2199,6 +2199,9 @@
    "id": "familie-14",
    "type": "order",
    "ru": "Это мои родители.",
+   "also": [
+    "Meine Eltern sind das."
+   ],
    "de": "Das sind meine Eltern.",
    "audio": "audio/7152d81b3677.m4a"
   },

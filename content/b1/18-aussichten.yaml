@@ -633,6 +633,20 @@ steps:
           view: task
           task: write
           solved: true
+spy:
+  - de: "Ich werde die Gruppe rechtzeitig informieren."
+    wrong: "Ich werde die Gruppe rechtzeitig informiert."
+    why: "Будущее время: *werde* + инфинитив *informieren*."
+  - de: "Wir werden die Verbindung noch einmal prüfen."
+    wrong: "Wir wird die Verbindung noch einmal prüfen."
+    why: "С *wir* нужна форма *werden*."
+  - de: "Die Fotos werden heute geprüft."
+    wrong: "Die Fotos wird heute geprüft."
+    why: "Подлежащее во мн. ч.: *werden*."
+  - de: "Es wird wahrscheinlich regnen."
+    wrong: "Es wird wahrscheinlich regnet."
+    why: "После *wird* в конце стоит инфинитив: *regnen*."
+
 exercises:
   - type: choice
     q: Ich werde die Verbindung ___.
@@ -685,21 +699,27 @@ exercises:
   - type: order
     de: Ich werde die Gruppe rechtzeitig informieren.
     ru: Я своевременно сообщу группе.
+    also: ["Die Gruppe werde ich rechtzeitig informieren.", "Rechtzeitig werde ich die Gruppe informieren.", "Ich werde rechtzeitig die Gruppe informieren."]
   - type: order
     de: Es wird wahrscheinlich regnen.
     ru: Вероятно, будет дождь.
+    also: ["Wahrscheinlich wird es regnen."]
   - type: order
     de: Wir werden die Verbindung noch einmal prüfen.
     ru: Мы ещё раз проверим поезд.
+    also: ["Die Verbindung werden wir noch einmal prüfen.", "Noch einmal werden wir die Verbindung prüfen.", "Wir werden noch einmal die Verbindung prüfen."]
   - type: order
     de: Die Fotos werden heute geprüft.
     ru: Фотографии сегодня проверяют.
+    also: ["Heute werden die Fotos geprüft."]
   - type: order
     de: Wenn der Zug verspätet ist, holt Dana den Schlüssel.
     ru: Если поезд опоздает, ключ получит Дана.
+    also: ["Dana holt den Schlüssel, wenn der Zug verspätet ist."]
   - type: order
     de: Der Treff beginnt morgen um fünfzehn Uhr.
     ru: Встреча начинается завтра в 15 часов.
+    also: ["Morgen beginnt der Treff um fünfzehn Uhr.", "Um fünfzehn Uhr beginnt der Treff morgen."]
 case:
   title: Eine Erwartung ist noch kein beobachteter Tag
   ru: Сверка дневника

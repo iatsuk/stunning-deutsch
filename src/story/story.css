@@ -1,0 +1,859 @@
+.moin-page {
+  max-width: 1440px;
+  margin: auto;
+  padding: 48px var(--gutter) 80px;
+}
+.moin-cover {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 32px 56px;
+  align-items: center;
+  padding: 32px 0;
+}
+.moin-cover h1 {
+  font-size: clamp(40px, 5vw, 70px);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+  margin: 24px 0;
+}
+.moin-cover h1 em {
+  font-family: var(--serif);
+  color: var(--accent);
+  font-weight: 500;
+}
+.moin-cover-copy > p {
+  max-width: 570px;
+  color: var(--muted);
+}
+.moin-cover-copy .moin-cover-lede {
+  font-size: 21px;
+  color: var(--text);
+}
+.moin-cover .primary {
+  margin-top: 16px;
+  padding: 14px 26px;
+}
+.moin-cover-meta {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--muted);
+}
+.moin-art {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.moin-stamp {
+  margin: 4px 0 0 auto;
+  width: fit-content;
+  border: 1px solid var(--line-strong);
+  border-radius: 3px;
+  padding: 14px 20px;
+  font-family: var(--mono);
+  font-size: 11px;
+  line-height: 1.8;
+  color: var(--muted);
+  transform: rotate(-3deg);
+}
+.moin-stamp strong {
+  color: var(--text);
+  font-weight: 500;
+}
+.moin-method {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  border-top: 1px solid var(--line);
+  margin-top: 36px;
+  padding-top: 28px;
+  font-size: 15px;
+}
+.moin-method p {
+  color: var(--muted);
+  margin: 8px 0;
+}
+.moin-game-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.moin-game-heading h1 {
+  font-family: var(--serif);
+  font-size: clamp(25px, 3vw, 38px);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  margin: 8px 0;
+}
+.moin-notebook-button {
+  padding: 10px 17px;
+  border: 1px solid var(--accent-line);
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.moin-progress {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+  margin-bottom: 32px;
+}
+.moin-progress progress {
+  flex: 1;
+  height: 4px;
+  border: 0;
+  border-radius: 4px;
+  appearance: none;
+  background: var(--line);
+}
+.moin-progress progress::-webkit-progress-bar {
+  background: var(--line);
+  border-radius: 4px;
+}
+.moin-progress progress::-webkit-progress-value {
+  background: var(--accent);
+  border-radius: 4px;
+}
+.moin-progress progress::-moz-progress-bar {
+  background: var(--accent);
+}
+.moin-layout {
+  display: grid;
+  grid-template-columns: 235px minmax(0, 760px);
+  gap: 36px;
+  align-items: start;
+  justify-content: center;
+}
+.moin-layout:has(.moin-notebook) {
+  grid-template-columns: 200px minmax(0, 720px) minmax(210px, 270px);
+  gap: 24px;
+}
+.moin-route {
+  font-size: 13px;
+  position: sticky;
+  top: 80px;
+}
+.moin-route summary {
+  font-family: var(--mono);
+  color: var(--muted);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  padding: 0 0 15px;
+}
+.moin-route ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.moin-route li {
+  margin: 0;
+}
+.moin-route li button {
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+  width: 100%;
+  text-align: left;
+  border: 0;
+  border-left: 2px solid var(--line);
+  background: none;
+  padding: 10px 12px;
+  font-size: 13px;
+  line-height: 1.35;
+  cursor: pointer;
+}
+.moin-route li button > span:first-child {
+  font-family: var(--mono);
+  color: var(--muted);
+  font-size: 11px;
+}
+.moin-route small {
+  display: block;
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 5px;
+}
+.moin-route li button[aria-current] {
+  border-left-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.moin-route li button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+.moin-route-note {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-top: 22px;
+}
+.moin-scene {
+  background: var(--panel);
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  min-width: 0;
+  scroll-margin-top: 76px;
+  overflow-wrap: anywhere;
+}
+.moin-scene:focus {
+  outline: 0;
+}
+.moin-scene-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 28px;
+  border-bottom: 1px solid var(--line);
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.moin-chapter-title {
+  margin: 28px 30px 8px;
+  font-size: 12px;
+  color: var(--accent);
+}
+.moin-scene h2 {
+  font-family: var(--serif);
+  font-size: clamp(25px, 3vw, 34px);
+  font-weight: 500;
+  line-height: 1.3;
+  margin: 0 30px 20px;
+  letter-spacing: -0.02em;
+}
+.moin-language-tools {
+  margin: 0 30px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 11px;
+  color: var(--muted);
+}
+.moin-language-tools label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+.moin-language-tools input {
+  accent-color: var(--accent);
+}
+.moin-narrative {
+  margin: 0 30px 26px;
+  line-height: 1.9;
+  font-size: 17px;
+}
+.moin-narrative p {
+  margin: 12px 0;
+}
+.moin-word {
+  display: inline;
+  padding: 0 1px;
+  border: 0;
+  border-bottom: 1px dotted #b9a16c;
+  background: none;
+  color: #f5dfb0;
+  font-family: var(--serif);
+  font-size: 1em;
+  line-height: inherit;
+  cursor: pointer;
+}
+.moin-word.is-new {
+  color: var(--accent);
+}
+.moin-word:hover {
+  background: var(--accent-soft);
+}
+.moin-translation {
+  position: relative;
+  margin: 0 30px 24px;
+  border: 1px solid var(--accent-line);
+  background: var(--accent-soft);
+  border-radius: 5px;
+  padding: 14px 35px 14px 16px;
+  font-size: 15px;
+}
+.moin-translation strong {
+  font-family: var(--serif);
+  color: var(--accent);
+}
+.moin-translation small {
+  display: block;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 12px;
+}
+.moin-close {
+  position: absolute;
+  right: 6px;
+  top: 4px;
+  background: none;
+  border: 0;
+  font-size: 23px;
+  cursor: pointer;
+}
+.moin-source {
+  margin: 0 30px 24px;
+  background: #e5deca;
+  color: #292c30;
+  padding: 20px 24px;
+  border-radius: 2px;
+  border-left: 3px solid #b3a77e;
+  box-shadow: 0 4px 12px #0002;
+  font-size: 16px;
+  line-height: 1.7;
+}
+.moin-source .kicker {
+  color: #645b46;
+  font-size: 10px;
+  margin-bottom: 12px;
+  letter-spacing: 0.08em;
+}
+.moin-source p {
+  margin: 5px 0;
+  white-space: pre-line;
+}
+.moin-source .moin-word {
+  color: #514117;
+  border-bottom-color: #766027;
+}
+.moin-turn {
+  padding: 26px 30px 0;
+  border-top: 1px solid var(--line);
+}
+.moin-turn h3 {
+  margin: 0 0 20px;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 550;
+}
+.moin-choices {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+}
+.moin-choices label {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  border: 1px solid var(--line-strong);
+  background: var(--panel-2);
+  padding: 14px 16px;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.moin-choices input {
+  accent-color: var(--accent);
+  flex-shrink: 0;
+}
+.moin-option-n {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+}
+.moin-choices .is-selected {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+.moin-choices:disabled label {
+  cursor: default;
+}
+.moin-sentence {
+  min-height: 82px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 14px;
+  align-items: center;
+  background: var(--bg);
+  border: 1px dashed var(--line-strong);
+  border-radius: 5px;
+}
+.moin-sentence > span {
+  font-size: 13px;
+  color: var(--muted);
+}
+.moin-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 14px 0;
+}
+.moin-sentence button,
+.moin-tiles button {
+  padding: 10px 14px;
+  border: 1px solid var(--line-strong);
+  background: var(--panel-2);
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: var(--serif);
+  font-size: 17px;
+}
+.moin-sentence button {
+  border-color: var(--accent-line);
+  color: var(--accent);
+}
+.moin-sentence button span {
+  font-family: var(--sans);
+  font-size: 12px;
+  color: var(--muted);
+  margin-left: 7px;
+}
+.moin-tiles button:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+.moin-matches {
+  display: grid;
+  gap: 12px;
+}
+.moin-matches label {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  align-items: center;
+  gap: 16px;
+  font-size: 15px;
+}
+.moin-matches select,
+.moin-dial input {
+  font: inherit;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--line-strong);
+  border-radius: 4px;
+  padding: 12px;
+  min-width: 0;
+  width: 100%;
+}
+.moin-quantities > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 16px;
+}
+.moin-quantities > div > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.moin-quantities button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--line-strong);
+  border-radius: 50%;
+  background: var(--panel-2);
+  cursor: pointer;
+  font-size: 22px;
+}
+.moin-quantities output {
+  width: 24px;
+  text-align: center;
+  font-family: var(--mono);
+}
+.moin-dial {
+  max-width: 300px;
+  margin: auto;
+}
+.moin-dial label {
+  font-size: 12px;
+  color: var(--muted);
+}
+.moin-dial input {
+  display: block;
+  margin: 8px 0 14px;
+  font-family: var(--mono);
+  letter-spacing: 0.12em;
+  font-size: 22px;
+  text-align: center;
+}
+.moin-keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+.moin-keypad button {
+  background: var(--panel-2);
+  border: 1px solid var(--line-strong);
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: var(--mono);
+  font-size: 20px;
+}
+.moin-keypad button:nth-child(10) {
+  grid-column: 2;
+}
+.moin-turn-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 22px;
+  margin: 26px 0;
+}
+.moin-hint {
+  font-size: 14px;
+  color: var(--muted);
+  border-left: 2px solid var(--accent);
+  padding-left: 14px;
+}
+.moin-feedback {
+  padding: 18px 20px;
+  margin: 24px 0 0;
+  border-radius: 4px;
+  background: #ff9f6b12;
+  border: 1px solid #ff9f6b44;
+  font-size: 15px;
+}
+.moin-feedback > strong {
+  color: var(--question);
+}
+.moin-feedback p {
+  margin: 8px 0 0;
+}
+.moin-feedback.is-correct {
+  border-color: #5fd49c55;
+  background: #5fd49c0b;
+}
+.moin-feedback.is-correct > strong {
+  color: var(--ok);
+}
+.moin-clue-earned {
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 11px;
+}
+.moin-next {
+  padding: 24px 30px 0;
+}
+.moin-rule {
+  padding: 24px 30px;
+  font-size: 13px;
+  color: var(--muted);
+}
+.moin-rule summary {
+  cursor: pointer;
+}
+.moin-rule p {
+  margin-bottom: 0;
+}
+.moin-notebook {
+  background: #202528;
+  border: 1px solid #3a464b;
+  border-radius: 5px;
+  padding: 22px;
+  max-height: calc(100dvh - 110px);
+  overflow: auto;
+  position: sticky;
+  top: 80px;
+  font-size: 13px;
+}
+.moin-notebook .kicker {
+  font-size: 10px;
+  letter-spacing: 0.07em;
+}
+.moin-notebook h2 {
+  font-family: var(--serif);
+  font-size: 22px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+.moin-notebook ol {
+  padding-left: 18px;
+}
+.moin-notebook li {
+  padding: 12px 0;
+  border-bottom: 1px solid #3a464b;
+}
+.moin-notebook h3 {
+  font-size: 13px;
+  font-weight: 550;
+  color: var(--accent);
+  margin: 0;
+}
+.moin-notebook p {
+  color: var(--muted);
+  margin-bottom: 0;
+}
+.moin-ending h3 {
+  font-family: var(--serif);
+  font-size: 25px;
+  font-weight: 500;
+}
+.moin-ending p {
+  color: var(--muted);
+  font-size: 15px;
+}
+.moin-ending a {
+  font-size: 15px;
+  color: var(--accent);
+}
+.moin-recording {
+  margin: 0 0 26px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid var(--line);
+}
+.moin-recording .kicker {
+  font-size: 10px;
+}
+.moin-recording audio {
+  width: 100%;
+  height: 40px;
+  display: block;
+  margin: 14px 0;
+}
+.moin-recording p {
+  font-size: 15px;
+}
+.moin-reset {
+  padding: 12px;
+  background: var(--panel-2);
+  font-size: 12px;
+  margin-top: 12px;
+}
+.moin-reset button {
+  display: block;
+  margin: 8px 0;
+  padding: 6px;
+  background: var(--bg);
+  border: 1px solid var(--line-strong);
+  cursor: pointer;
+  font-size: 12px;
+}
+.moin-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip-path: inset(50%);
+  overflow: hidden;
+}
+.moin-storage-warning {
+  font-size: 13px;
+  color: var(--question);
+}
+@media (min-width: 861px) {
+  .moin-route details > summary {
+    list-style: none;
+  }
+}
+@media (max-width: 1100px) {
+  .moin-layout:has(.moin-notebook) {
+    grid-template-columns: 200px minmax(0, 1fr);
+  }
+  .moin-notebook {
+    grid-column: 2;
+    position: static;
+    max-height: none;
+    grid-row: 1;
+  }
+  .moin-layout:has(.moin-notebook) .moin-scene {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .moin-layout:has(.moin-notebook) .moin-route {
+    grid-row: 1/3;
+  }
+  .moin-layout {
+    gap: 22px;
+  }
+}
+@media (max-width: 860px) {
+  .moin-cover {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .moin-cover-copy > p {
+    max-width: none;
+  }
+  .moin-cover > div:nth-child(2) {
+    max-width: 480px;
+    justify-self: center;
+    width: 100%;
+  }
+  .moin-method {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 8px;
+  }
+  .moin-layout,
+  .moin-layout:has(.moin-notebook) {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 22px;
+  }
+  .moin-route {
+    position: static;
+  }
+  .moin-route ol {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+  }
+  .moin-route small {
+    display: none;
+  }
+  .moin-route li button {
+    padding: 9px 6px;
+    font-size: 12px;
+    gap: 8px;
+  }
+  .moin-route summary {
+    padding-bottom: 10px;
+  }
+  .moin-route-note {
+    margin: 12px 0;
+  }
+  .moin-layout:has(.moin-notebook) .moin-route,
+  .moin-layout:has(.moin-notebook) .moin-scene,
+  .moin-notebook {
+    grid-column: 1;
+    grid-row: auto;
+  }
+  .moin-notebook {
+    grid-row: 2 !important;
+  }
+  .moin-layout:has(.moin-notebook) .moin-scene {
+    grid-row: 3;
+  }
+  .moin-game-heading {
+    align-items: flex-start;
+  }
+  .moin-page {
+    padding-top: 26px;
+  }
+  .moin-game-heading .kicker {
+    font-size: 10px;
+  }
+  .moin-progress {
+    font-size: 10px;
+    gap: 10px;
+  }
+  .moin-notebook-button {
+    font-size: 12px;
+    padding: 9px;
+  }
+  .moin-game-heading h1 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 520px) {
+  .moin-page {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+  .moin-cover {
+    padding: 8px 4px;
+  }
+  .moin-cover h1 {
+    font-size: 44px;
+  }
+  .moin-cover-copy .moin-cover-lede {
+    font-size: 18px;
+  }
+  .moin-game-heading {
+    display: block;
+  }
+  .moin-notebook-button {
+    margin-top: 12px;
+  }
+  .moin-route ol {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .moin-route li button {
+    font-size: 10px;
+  }
+  .moin-route li button > span:first-child {
+    font-size: 9px;
+  }
+  .moin-scene-top {
+    padding: 14px 18px;
+    font-size: 9px;
+  }
+  .moin-chapter-title {
+    margin: 22px 18px 8px;
+    font-size: 11px;
+  }
+  .moin-scene h2 {
+    margin-left: 18px;
+    margin-right: 18px;
+    font-size: 27px;
+  }
+  .moin-language-tools {
+    margin-left: 18px;
+    margin-right: 18px;
+    align-items: flex-start;
+    font-size: 10px;
+  }
+  .moin-narrative {
+    margin-left: 18px;
+    margin-right: 18px;
+    font-size: 16px;
+  }
+  .moin-source,
+  .moin-translation {
+    margin-left: 18px;
+    margin-right: 18px;
+    padding: 16px;
+    font-size: 15px;
+  }
+  .moin-turn {
+    padding: 22px 18px 0;
+  }
+  .moin-turn h3 {
+    font-size: 17px;
+  }
+  .moin-choices label {
+    padding: 12px 10px;
+    gap: 9px;
+    font-size: 14px;
+  }
+  .moin-option-n {
+    display: none;
+  }
+  .moin-matches label {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+  .moin-sentence button,
+  .moin-tiles button {
+    font-size: 15px;
+    padding: 9px 11px;
+  }
+  .moin-next,
+  .moin-rule {
+    padding: 22px 18px 0;
+  }
+  .moin-rule {
+    padding-bottom: 22px;
+  }
+  .moin-turn-actions .primary {
+    width: 100%;
+  }
+  .moin-route .link-button {
+    font-size: 12px;
+  }
+}

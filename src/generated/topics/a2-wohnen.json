@@ -1199,6 +1199,9 @@
    "id": "a2-wohnen-7",
    "type": "order",
    "ru": "Нам нужен маленький стол.",
+   "also": [
+    "Einen kleinen Tisch brauchen wir."
+   ],
    "de": "Wir brauchen einen kleinen Tisch.",
    "audio": "audio/2e2e9c846415.m4a"
   },
@@ -1206,6 +1209,9 @@
    "id": "a2-wohnen-8",
    "type": "order",
    "ru": "Стол маленький.",
+   "also": [
+    "Klein ist der Tisch."
+   ],
    "de": "Der Tisch ist klein.",
    "audio": "audio/eb198173823f.m4a"
   },
@@ -1213,6 +1219,9 @@
    "id": "a2-wohnen-9",
    "type": "order",
    "ru": "Я беру синий стул.",
+   "also": [
+    "Den blauen Stuhl nehme ich."
+   ],
    "de": "Ich nehme den blauen Stuhl.",
    "audio": "audio/245e60a408b0.m4a"
   },
@@ -1220,6 +1229,10 @@
    "id": "a2-wohnen-10",
    "type": "order",
    "ru": "Светлая лампа у нас уже есть.",
+   "also": [
+    "Wir haben die helle Lampe schon.",
+    "Wir haben schon die helle Lampe."
+   ],
    "de": "Die helle Lampe haben wir schon.",
    "audio": "audio/6afdcdb19fbf.m4a"
   },
@@ -1227,6 +1240,9 @@
    "id": "a2-wohnen-11",
    "type": "order",
    "ru": "Здесь стоит маленький стеллаж.",
+   "also": [
+    "Hier steht ein kleines Regal."
+   ],
    "de": "Ein kleines Regal steht hier.",
    "audio": "audio/7fe10c6af654.m4a"
   },
@@ -1234,6 +1250,9 @@
    "id": "a2-wohnen-12",
    "type": "order",
    "ru": "Мы не покупаем новую лампу.",
+   "also": [
+    "Keine neue Lampe kaufen wir."
+   ],
    "de": "Wir kaufen keine neue Lampe.",
    "audio": "audio/9ea6c160dff2.m4a"
   }
@@ -1475,5 +1494,26 @@
    }
   ]
  },
- "spy": []
+ "spy": [
+  {
+   "de": "Wir brauchen einen kleinen Tisch.",
+   "wrong": "Wir brauchen einen kleiner Tisch.",
+   "why": "Винительный падеж, мужской род: *einen kleinen Tisch*."
+  },
+  {
+   "de": "Ein kleiner Tisch ist hier.",
+   "wrong": "Ein kleinen Tisch ist hier.",
+   "why": "Подлежащее, мужской род: *ein kleiner Tisch*."
+  },
+  {
+   "de": "Wir brauchen eine helle Lampe.",
+   "wrong": "Wir brauchen eine hellen Lampe.",
+   "why": "Женский род в винительном падеже: *eine helle Lampe*."
+  },
+  {
+   "de": "Das Zimmer ist hell.",
+   "wrong": "Das Zimmer ist helles.",
+   "why": "После *sein* прилагательное стоит без окончания."
+  }
+ ]
 }

@@ -587,6 +587,20 @@ steps:
           view: task
           task: self
           solved: true
+spy:
+  - de: "Deshalb kann Mateo am Sonntag helfen."
+    wrong: "Deshalb Mateo kann am Sonntag helfen."
+    why: "*deshalb* занимает первую позицию, глагол идёт сразу за ним."
+  - de: "Mateo kann helfen, weil er am Sonntag frei hat."
+    wrong: "Mateo kann helfen, weil er hat am Sonntag frei."
+    why: "После *weil* глагол уходит в конец: *frei hat*."
+  - de: "Ich finde, dass jeder eine Aufgabe übernehmen kann."
+    wrong: "Ich finde, dass jeder kann eine Aufgabe übernehmen."
+    why: "После *dass* спрягаемый глагол уходит в конец: *übernehmen kann*."
+  - de: "Danach haben wir die Fotos gesammelt."
+    wrong: "Danach wir haben die Fotos gesammelt."
+    why: "После *danach* сразу идёт глагол: *haben wir*."
+
 exercises:
   - type: choice
     q: Die Berichte sind interessant. ___ möchte Hauke Gäste einladen.
@@ -638,21 +652,27 @@ exercises:
     why: Запрос и ответ — разные факты.
   - type: order
     ru: Сначала мы спланировали поездки.
+    also: ["Wir haben zuerst die Fahrten geplant.", "Die Fahrten haben wir zuerst geplant."]
     de: Zuerst haben wir die Fahrten geplant.
   - type: order
     ru: После этого мы собрали фотографии.
+    also: ["Wir haben danach die Fotos gesammelt.", "Die Fotos haben wir danach gesammelt."]
     de: Danach haben wir die Fotos gesammelt.
   - type: order
     ru: Поэтому Матео может помочь в воскресенье.
+    also: ["Mateo kann deshalb am Sonntag helfen.", "Am Sonntag kann Mateo deshalb helfen."]
     de: Deshalb kann Mateo am Sonntag helfen.
   - type: order
     ru: Я могу помочь, потому что свободен в воскресенье.
+    also: ["Weil ich am Sonntag frei habe, kann ich helfen."]
     de: Ich kann helfen, weil ich am Sonntag frei habe.
   - type: order
     ru: Думаю, каждый может взять задачу.
+    also: ["Dass jeder eine Aufgabe übernehmen kann, finde ich."]
     de: Ich finde, dass jeder eine Aufgabe übernehmen kann.
   - type: order
     ru: Помещение ещё не подтверждено.
+    also: ["Bestätigt ist der Raum noch nicht.", "Noch nicht bestätigt ist der Raum."]
     de: Der Raum ist noch nicht bestätigt.
   - type: choice
     q: Нужно выразить только порядок действий. Что выбрать?

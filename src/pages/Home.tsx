@@ -37,6 +37,7 @@ export function Home() {
               </a>
             )}
             <button type="button" onClick={() => scrollToSection("levels")}>Выбрать уровень</button>
+            <a href="#/a1/moin">Сюжетная игра A1 · Дело о пропавшем Moin →</a>
           </div>
         </section>
 

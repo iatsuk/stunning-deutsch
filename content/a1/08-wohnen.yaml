@@ -562,6 +562,20 @@ steps:
         point: "Ищите короткие слова, которые меняют смысл: *nur*, *nicht*, *kein*"
         set: { solved: true }
 
+spy:
+  - de: "Das Bett steht im Schlafzimmer."
+    wrong: "Das Bett steht in Schlafzimmer."
+    why: "*in* и *dem* сливаются в *im*: без артикля здесь нельзя."
+  - de: "Der Kühlschrank steht in der Küche."
+    wrong: "Der Kühlschrank steht in die Küche."
+    why: "На вопрос *Wo?* нужен дательный падеж: *in der Küche*."
+  - de: "Die Küche ist klein."
+    wrong: "Die Küche ist kleine."
+    why: "После *sein* прилагательное стоит без окончания: *klein*."
+  - de: "Das Schlafzimmer ist klein."
+    wrong: "Die Schlafzimmer ist klein."
+    why: "Род сложного слова даёт последняя часть: *das Zimmer*, значит *das Schlafzimmer*."
+
 exercises:
   - type: choice
     q: ___ Schlafzimmer ist klein.
@@ -625,14 +639,17 @@ exercises:
     why: "*Warmmiete* = *Kaltmiete* + *Nebenkosten*: 450 + 130 = 580 евро."
   - type: order
     ru: Холодильник стоит на кухне.
+    also: ["In der Küche steht der Kühlschrank."]
     de: Der Kühlschrank steht in der Küche.
     why: "*die Küche* → *in der Küche*. По-русски «на кухне», по-немецки — *in*."
   - type: order
     ru: В спальне стоит шкаф.
+    also: ["Ein Schrank steht im Schlafzimmer."]
     de: Im Schlafzimmer steht ein Schrank.
     why: "Место на первой позиции, глагол второй, подлежащее — за ним."
   - type: order
     ru: Ванная маленькая, но современная.
+    also: ["Klein, aber modern ist das Bad."]
     de: Das Bad ist klein, aber modern.
 adventure:
   kind: sequence

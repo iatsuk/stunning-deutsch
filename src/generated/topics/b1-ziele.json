@@ -1794,6 +1794,9 @@
    "type": "order",
    "de": "Ich lese laut, um Fehler zu finden.",
    "ru": "Я читаю вслух, чтобы найти ошибки.",
+   "also": [
+    "Um Fehler zu finden, lese ich laut."
+   ],
    "audio": "audio/e6170a1e9e64.m4a"
   },
   {
@@ -1801,6 +1804,9 @@
    "type": "order",
    "de": "Wir schreiben einfach, damit alle die Bilder verstehen.",
    "ru": "Мы пишем просто, чтобы все поняли фотографии.",
+   "also": [
+    "Damit alle die Bilder verstehen, schreiben wir einfach."
+   ],
    "audio": "audio/3dde1df0dd06.m4a"
   },
   {
@@ -1808,6 +1814,9 @@
    "type": "order",
    "de": "Ich bringe eine Karte mit.",
    "ru": "Я принесу карту.",
+   "also": [
+    "Eine Karte bringe ich mit."
+   ],
    "audio": "audio/dcb3393fcf91.m4a"
   },
   {
@@ -1815,6 +1824,9 @@
    "type": "order",
    "de": "Die Gäste sollen den Ort erkennen.",
    "ru": "Гости должны узнать место.",
+   "also": [
+    "Den Ort sollen die Gäste erkennen."
+   ],
    "audio": "audio/3845f0bd1177.m4a"
   },
   {
@@ -1822,6 +1834,11 @@
    "type": "order",
    "de": "Wir testen die Aufgabe mit einem Nachbarn.",
    "ru": "Мы проверим задание с соседом.",
+   "also": [
+    "Die Aufgabe testen wir mit einem Nachbarn.",
+    "Mit einem Nachbarn testen wir die Aufgabe.",
+    "Wir testen mit einem Nachbarn die Aufgabe."
+   ],
    "audio": "audio/2c89358348db.m4a"
   },
   {
@@ -1829,6 +1846,9 @@
    "type": "order",
    "de": "Die Markierung ist zu klein.",
    "ru": "Метка слишком маленькая.",
+   "also": [
+    "Zu klein ist die Markierung."
+   ],
    "audio": "audio/c6ac3b58c520.m4a"
   }
  ],
@@ -2081,5 +2101,26 @@
    }
   ]
  },
- "spy": []
+ "spy": [
+  {
+   "de": "Ich lese laut, um Fehler zu finden.",
+   "wrong": "Ich lese laut, um Fehler finden.",
+   "why": "В конструкции *um … zu* перед инфинитивом нужно *zu*."
+  },
+  {
+   "de": "Wir schreiben einfach, damit alle die Bilder verstehen.",
+   "wrong": "Wir schreiben einfach, damit alle verstehen die Bilder.",
+   "why": "После *damit* глагол уходит в конец: *die Bilder verstehen*."
+  },
+  {
+   "de": "Wir erklären einfach, damit die Gäste alles verstehen.",
+   "wrong": "Wir erklären einfach, um die Gäste alles verstehen.",
+   "why": "Подлежащие разные, поэтому нужно *damit*, а не *um … zu*."
+  },
+  {
+   "de": "Ich bringe eine Karte mit, um den Weg zu zeigen.",
+   "wrong": "Ich bringe eine Karte mit, für den Weg zu zeigen.",
+   "why": "Цель с инфинитивом выражает *um … zu*, а не *für*."
+  }
+ ]
 }

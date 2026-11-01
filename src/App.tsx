@@ -1,11 +1,14 @@
-import { useEffect, useState, type ReactNode } from "react";
+import { lazy, Suspense, useEffect, useState, type ReactNode } from "react";
 import { assessmentCatalog, levelById } from "./content";
+import { ErrorBoundary } from "./ErrorBoundary";
 import { AssessmentPage } from "./pages/Assessment";
 import { scrollToSection, stopAudio, useRoute } from "./hooks";
 import { Home } from "./pages/Home";
 import { DatenschutzPage, ImpressumPage } from "./pages/Legal";
 import { LevelPage } from "./pages/Level";
 import { TopicPage } from "./pages/Topic";
+
+const StoryPage = lazy(() => import("./story/StoryPage").then(m => ({ default: m.StoryPage })));
 
 export function App() {
   const route = useRoute();
@@ -15,7 +18,16 @@ export function App() {
     stopAudio();
   }, [path]);
 
+  return (
+    <ErrorBoundary key={path}>
+      <Page route={route} />
+    </ErrorBoundary>
+  );
+}
+
+function Page({ route }: { route: string[] }) {
   const [levelId, topicId] = route;
+  if (levelId === "a1" && topicId === "moin") return <Suspense fallback={<p className="hero">Открываем дело…</p>}><StoryPage /></Suspense>;
   if (levelId === "impressum") return <ImpressumPage />;
   if (levelId === "datenschutz") return <DatenschutzPage />;
   const level = levelId ? levelById(levelId) : undefined;
@@ -82,7 +94,8 @@ export function Footer({ children }: { children?: ReactNode }) {
     <footer className="footer">
       {children}
       <p>
-        Озвучка — <a href="https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base">Qwen3-TTS 1.7B</a> (Apache 2.0).
+        Озвучка курса — <a href="https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base">Qwen3-TTS 1.7B</a> (Apache 2.0).
+        {" "}Новая озвучка и сообщения игры Moin — <a href="https://huggingface.co/k2-fsa/OmniVoice">OmniVoice</a> (модель CC-BY-NC).
         {" "}Задания и записи авторские. Экзаменационная практика ориентирована на Start Deutsch 1 (A1),
         {" "}<a href="https://www.telc.net/sprachpruefungen/deutsch/start-deutsch-2-telc-deutsch-a2/">Start Deutsch 2 (A2)</a>
         {" "}и <a href="https://www.telc.net/sprachpruefungen/deutsch/zertifikat-deutsch-telc-deutsch-b1/">Zertifikat Deutsch / telc Deutsch B1</a>.

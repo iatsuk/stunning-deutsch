@@ -595,6 +595,20 @@ steps:
           view: task
           task: opinions
           solved: true
+spy:
+  - de: "Obwohl es regnet, gehen wir hinaus."
+    wrong: "Obwohl es regnet, wir gehen hinaus."
+    why: "После придаточного сразу идёт глагол: *gehen wir*."
+  - de: "Es regnet. Trotzdem gehen wir hinaus."
+    wrong: "Es regnet. Trotzdem wir gehen hinaus."
+    why: "*trotzdem* занимает первую позицию, глагол идёт сразу за ним."
+  - de: "Ich gehe spazieren, obwohl ich müde bin."
+    wrong: "Ich gehe spazieren, obwohl ich bin müde."
+    why: "После *obwohl* глагол уходит в конец: *müde bin*."
+  - de: "Obwohl ich müde bin, gehe ich kurz spazieren."
+    wrong: "Trotzdem ich müde bin, gehe ich kurz spazieren."
+    why: "Придаточное вводит союз *obwohl*; *trotzdem* стоит в главном предложении."
+
 exercises:
   - type: choice
     q: Obwohl es regnet, ___ wir hinaus.
@@ -640,28 +654,34 @@ exercises:
     q: Музей 6 + кафе 8 при бюджете 10…
     options:
       - Подходит
-      - Стоит10
+      - Стоит 10
       - Не подходит
     answer: 2
     why: Сравнивается полный набор.
   - type: order
     de: Obwohl ich müde bin, gehe ich kurz spazieren.
     ru: Хотя я устала, немного прогуляюсь.
+    also: ["Ich gehe kurz spazieren, obwohl ich müde bin."]
   - type: order
     de: Es regnet. Trotzdem machen wir eine kurze Runde.
     ru: Идёт дождь. Всё же сделаем короткую прогулку.
+    also: ["Es regnet. Wir machen trotzdem eine kurze Runde.", "Es regnet. Eine kurze Runde machen wir trotzdem."]
   - type: order
     de: Ich gehe ins Café, weil ich eine Pause brauche.
     ru: Я иду в кафе, потому что нужен перерыв.
+    also: ["Weil ich eine Pause brauche, gehe ich ins Café.", "Ins Café gehe ich, weil ich eine Pause brauche."]
   - type: order
     de: Wir haben unterschiedliche Interessen.
     ru: У нас разные интересы.
+    also: ["Unterschiedliche Interessen haben wir."]
   - type: order
     de: Trotzdem können wir uns einigen.
     ru: И всё же мы можем договориться.
+    also: ["Wir können uns trotzdem einigen."]
   - type: order
     de: Ich bestelle selbst auf Deutsch.
     ru: Я закажу сама на немецком.
+    also: ["Auf Deutsch bestelle ich selbst.", "Selbst bestelle ich auf Deutsch."]
 case:
   title: "Trotzdem heißt nicht: Das Hindernis ist weg"
   ru: Сверка дневника

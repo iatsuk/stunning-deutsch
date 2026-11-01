@@ -1373,6 +1373,9 @@
    "id": "b1-menschen-7",
    "type": "order",
    "ru": "Мы ищем помощника, который любит рассказывать.",
+   "also": [
+    "Einen Helfer, der gern erzählt, suchen wir."
+   ],
    "de": "Wir suchen einen Helfer, der gern erzählt.",
    "audio": "audio/b63e2560cbb6.m4a"
   },
@@ -1380,6 +1383,9 @@
    "id": "b1-menschen-8",
    "type": "order",
    "ru": "Это человек, который внимательно слушает.",
+   "also": [
+    "Eine Person, die gut zuhört, ist das."
+   ],
    "de": "Das ist eine Person, die gut zuhört.",
    "audio": "audio/251244f92080.m4a"
   },
@@ -1387,6 +1393,9 @@
    "id": "b1-menschen-9",
    "type": "order",
    "ru": "Я знаю помощника, которого ты ищешь.",
+   "also": [
+    "Den Helfer, den du suchst, kenne ich."
+   ],
    "de": "Ich kenne den Helfer, den du suchst.",
    "audio": "audio/219325646729.m4a"
   },
@@ -1394,6 +1403,9 @@
    "id": "b1-menschen-10",
    "type": "order",
    "ru": "Фотографии, которые мы показываем, из Киля.",
+   "also": [
+    "Aus Kiel sind die Bilder, die wir zeigen."
+   ],
    "de": "Die Bilder, die wir zeigen, sind aus Kiel.",
    "audio": "audio/f04c103b9726.m4a"
   },
@@ -1401,6 +1413,9 @@
    "id": "b1-menschen-11",
    "type": "order",
    "ru": "Проекту, который мы планируем, нужно время.",
+   "also": [
+    "Zeit braucht das Projekt, das wir planen."
+   ],
    "de": "Das Projekt, das wir planen, braucht Zeit.",
    "audio": "audio/b3f25233d078.m4a"
   },
@@ -1408,6 +1423,9 @@
    "id": "b1-menschen-12",
    "type": "order",
    "ru": "Матео может помочь в воскресенье.",
+   "also": [
+    "Am Sonntag kann Mateo helfen."
+   ],
    "de": "Mateo kann am Sonntag helfen.",
    "audio": "audio/c137fbf79f76.m4a"
   }
@@ -1639,5 +1657,26 @@
    }
   ]
  },
- "spy": []
+ "spy": [
+  {
+   "de": "Wir suchen einen Helfer, der gern erzählt.",
+   "wrong": "Wir suchen einen Helfer, den gern erzählt.",
+   "why": "В придаточном он подлежащее: *der*."
+  },
+  {
+   "de": "Ich kenne den Helfer, den du suchst.",
+   "wrong": "Ich kenne den Helfer, der du suchst.",
+   "why": "Подлежащее придаточного — *du*, а Helfer там дополнение: *den*."
+  },
+  {
+   "de": "Das ist eine Person, die gut zuhört.",
+   "wrong": "Das ist eine Person, die hört gut zu.",
+   "why": "В относительном придаточном глагол в конце, приставка не отделяется: *zuhört*."
+  },
+  {
+   "de": "Das Projekt, das wir planen, braucht Zeit.",
+   "wrong": "Das Projekt, der wir planen, braucht Zeit.",
+   "why": "*das Projekt* — средний род: *das*."
+  }
+ ]
 }

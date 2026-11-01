@@ -1602,6 +1602,9 @@
    "type": "order",
    "de": "Raum B wird zurzeit renoviert.",
    "ru": "ПомещениеB сейчас ремонтируют.",
+   "also": [
+    "Zurzeit wird Raum B renoviert."
+   ],
    "audio": "audio/8f0e9f1e9a64.m4a"
   },
   {
@@ -1609,6 +1612,9 @@
    "type": "order",
    "de": "Die Küche wird heute gereinigt.",
    "ru": "Кухню сегодня убирают.",
+   "also": [
+    "Heute wird die Küche gereinigt."
+   ],
    "audio": "audio/52e7c1d15b53.m4a"
   },
   {
@@ -1616,6 +1622,9 @@
    "type": "order",
    "de": "Die Schlüssel werden im Seitenbüro ausgegeben.",
    "ru": "Ключи выдают в боковом офисе.",
+   "also": [
+    "Im Seitenbüro werden die Schlüssel ausgegeben."
+   ],
    "audio": "audio/0cea5e51c31e.m4a"
   },
   {
@@ -1623,6 +1632,9 @@
    "type": "order",
    "de": "Raum C wird heute vorbereitet.",
    "ru": "ПомещениеC сегодня подготавливают.",
+   "also": [
+    "Heute wird Raum C vorbereitet."
+   ],
    "audio": "audio/80e4c9ea00eb.m4a"
   },
   {
@@ -1630,6 +1642,9 @@
    "type": "order",
    "de": "Die Miete bleibt unverändert.",
    "ru": "Аренда остаётся без изменений.",
+   "also": [
+    "Unverändert bleibt die Miete."
+   ],
    "audio": "audio/9635f36a60cd.m4a"
   },
   {
@@ -1637,6 +1652,9 @@
    "type": "order",
    "de": "Wir benutzen den Seiteneingang.",
    "ru": "Мы используем боковой вход.",
+   "also": [
+    "Den Seiteneingang benutzen wir."
+   ],
    "audio": "audio/12954b70ce2d.m4a"
   }
  ],
@@ -1858,5 +1876,26 @@
    }
   ]
  },
- "spy": []
+ "spy": [
+  {
+   "de": "Die Küche wird heute gereinigt.",
+   "wrong": "Die Küche wird heute reinigt.",
+   "why": "Passiv: *wird* + причастие *gereinigt*."
+  },
+  {
+   "de": "Die Schlüssel werden im Seitenbüro ausgegeben.",
+   "wrong": "Die Schlüssel wird im Seitenbüro ausgegeben.",
+   "why": "Подлежащее во мн. ч.: *werden*."
+  },
+  {
+   "de": "Raum B wird zurzeit renoviert.",
+   "wrong": "Raum B wird zurzeit gerenoviert.",
+   "why": "У глаголов на *-ieren* нет *ge-*: *renoviert*."
+  },
+  {
+   "de": "Der Brief wird verschickt.",
+   "wrong": "Der Brief wird geverschickt.",
+   "why": "У глаголов с приставкой *ver-* нет *ge-*: *verschickt*."
+  }
+ ]
 }

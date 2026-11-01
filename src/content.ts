@@ -162,7 +162,7 @@ export type Investigation = {
   ending: string;
 };
 
-/** Фраза для игры «Шпион»: верный вариант, вариант с ошибкой и объяснение. */
+/** Фраза для игры «Поиск ошибки»: верный вариант, вариант с ошибкой и объяснение. */
 export type SpyItem = { de: string; wrong: string; why: string; auto?: boolean };
 
 export type AdventureQuote = { de: string; audio?: string; name: string };

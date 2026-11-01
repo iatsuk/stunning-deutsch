@@ -642,6 +642,20 @@ steps:
           view: task
           task: write
           solved: true
+spy:
+  - de: "Die Küche wird heute gereinigt."
+    wrong: "Die Küche wird heute reinigt."
+    why: "Passiv: *wird* + причастие *gereinigt*."
+  - de: "Die Schlüssel werden im Seitenbüro ausgegeben."
+    wrong: "Die Schlüssel wird im Seitenbüro ausgegeben."
+    why: "Подлежащее во мн. ч.: *werden*."
+  - de: "Raum B wird zurzeit renoviert."
+    wrong: "Raum B wird zurzeit gerenoviert."
+    why: "У глаголов на *-ieren* нет *ge-*: *renoviert*."
+  - de: "Der Brief wird verschickt."
+    wrong: "Der Brief wird geverschickt."
+    why: "У глаголов с приставкой *ver-* нет *ge-*: *verschickt*."
+
 exercises:
   - type: choice
     q: Der Raum ___ renoviert.
@@ -694,21 +708,27 @@ exercises:
   - type: order
     de: Raum B wird zurzeit renoviert.
     ru: ПомещениеB сейчас ремонтируют.
+    also: ["Zurzeit wird Raum B renoviert."]
   - type: order
     de: Die Küche wird heute gereinigt.
     ru: Кухню сегодня убирают.
+    also: ["Heute wird die Küche gereinigt."]
   - type: order
     de: Die Schlüssel werden im Seitenbüro ausgegeben.
     ru: Ключи выдают в боковом офисе.
+    also: ["Im Seitenbüro werden die Schlüssel ausgegeben."]
   - type: order
     de: Raum C wird heute vorbereitet.
     ru: ПомещениеC сегодня подготавливают.
+    also: ["Heute wird Raum C vorbereitet."]
   - type: order
     de: Die Miete bleibt unverändert.
     ru: Аренда остаётся без изменений.
+    also: ["Unverändert bleibt die Miete."]
   - type: order
     de: Wir benutzen den Seiteneingang.
     ru: Мы используем боковой вход.
+    also: ["Den Seiteneingang benutzen wir."]
 case:
   title: Die Änderung hat klare Grenzen
   ru: Сверка дневника

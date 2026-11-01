@@ -1,7 +1,10 @@
 import { useMemo, useRef, useState } from "react";
 import type { Exercise, SpyItem, Topic, Word } from "../content";
 import { play, useProgress } from "../hooks";
-import { De, GENDER_LABEL, PlayButton, Text, plain, withoutArticle } from "../markup";
+import { plain } from "../lib/german";
+import { scramble, shuffle } from "../lib/shuffle";
+import { De, GENDER_LABEL, PlayButton, Text, withoutArticle } from "../markup";
+import { normalize, orderAccepted } from "./logic";
 
 type Tab = "exercises" | "spy" | "articles" | "cards";
 
@@ -13,7 +16,7 @@ export function Trainer({ topic }: { topic: Topic }) {
   const solved = progress.solved(topic.id);
   const tabs: { id: Tab; label: string; count: string }[] = [
     { id: "exercises", label: "Упражнения", count: `${solved}/${topic.exercises.length}` },
-    ...(topic.spy.length >= 4 ? [{ id: "spy" as const, label: "Шпион", count: String(topic.spy.length) }] : []),
+    ...(topic.spy.length >= 4 ? [{ id: "spy" as const, label: "Поиск ошибки", count: String(topic.spy.length) }] : []),
     { id: "articles", label: "Артикли", count: String(nouns.length) },
     { id: "cards", label: "Карточки", count: String(words.length) },
   ];
@@ -127,12 +130,14 @@ function Prompt({ q, fill }: { q: string; fill?: string }) {
 
 function Choice({ exercise, solved, onSolve }: { exercise: Extract<Exercise, { type: "choice" }>; solved: boolean; onSolve: () => void }) {
   const [wrong, setWrong] = useState<number[]>([]);
+  // В YAML верный вариант часто стоит на одном месте; ответ не должен угадываться по позиции.
+  const order = useMemo(() => shuffle(exercise.options.map((_, i) => i), exercise.id), [exercise]);
   return (
     <>
       <Prompt q={exercise.q} fill={solved ? exercise.options[exercise.answer] : undefined} />
       {exercise.ru && <p className="exercise-ru">{exercise.ru}</p>}
       <div className="option-row">
-        {exercise.options.map((option, i) => (
+        {order.map((i) => (
           <button
             key={i}
             type="button"
@@ -146,7 +151,7 @@ function Choice({ exercise, solved, onSolve }: { exercise: Extract<Exercise, { t
               } else setWrong((w) => [...w, i]);
             }}
           >
-            <De text={option} />
+            <De text={exercise.options[i]} />
           </button>
         ))}
       </div>
@@ -156,7 +161,6 @@ function Choice({ exercise, solved, onSolve }: { exercise: Extract<Exercise, { t
 
 const UMLAUTS = ["ä", "ö", "ü", "ß", "Ä", "Ö", "Ü"];
 
-const normalize = (text: string) => plain(text).replace(/[.!?,;:]+$/g, "").replace(/\s+/g, " ").trim();
 const deUmlaut = (text: string) =>
   text.replace(/ä/g, "ae").replace(/ö/g, "oe").replace(/ü/g, "ue").replace(/ß/g, "ss").replace(/Ä/g, "Ae").replace(/Ö/g, "Oe").replace(/Ü/g, "Ue");
 
@@ -291,20 +295,6 @@ function Gap({ exercise, solved, onSolve }: { exercise: Extract<Exercise, { type
   );
 }
 
-/** Детерминированное перемешивание: у каждого упражнения свой порядок, но он не прыгает между рендерами. */
-function shuffle<T>(items: T[], seed: string): T[] {
-  let h = 2166136261;
-  for (const c of seed) h = Math.imul(h ^ c.charCodeAt(0), 16777619);
-  const out = items.slice();
-  for (let i = out.length - 1; i > 0; i--) {
-    h = Math.imul(h ^ (h >>> 15), 2246822507);
-    const j = Math.abs(h) % (i + 1);
-    [out[i], out[j]] = [out[j], out[i]];
-  }
-  const same = out.every((item, i) => item === items[i]);
-  return same && out.length > 1 ? [...out.slice(1), out[0]] : out;
-}
-
 /** Служебные слова, которые в начале предложения пишутся с большой буквы только из-за позиции. */
 const LOWER_FIRST = new Set(
   (
@@ -334,7 +324,7 @@ const capitalize = (text: string) => text.charAt(0).toUpperCase() + text.slice(1
 function Order({ exercise, solved, onSolve }: { exercise: Extract<Exercise, { type: "order" }>; solved: boolean; onSolve: () => void }) {
   const punct = /[.!?]+$/.exec(plain(exercise.de))?.[0] ?? "";
   const tiles = useMemo(
-    () => shuffle(orderTiles(exercise).map((text, i) => ({ id: i, text })), exercise.id),
+    () => scramble(orderTiles(exercise).map((text, i) => ({ id: i, text })), exercise.id),
     [exercise],
   );
   const [picked, setPicked] = useState<number[]>([]);
@@ -356,9 +346,8 @@ function Order({ exercise, solved, onSolve }: { exercise: Extract<Exercise, { ty
     setPicked(next);
     setWrong(false);
     if (next.length === tiles.length) {
-      // Регистр сравнивать незачем: плитки даны, их можно только переставлять.
-      const sentence = next.map((i) => tiles.find((t) => t.id === i)!.text).join(" ").toLowerCase();
-      if ([exercise.de, ...(exercise.also ?? [])].some((s) => normalize(s).toLowerCase() === sentence)) {
+      const words = next.map((i) => tiles.find((t) => t.id === i)!.text);
+      if (orderAccepted(words, [exercise.de, ...(exercise.also ?? [])])) {
         onSolve();
         play(exercise.audio);
       } else setWrong(true);
@@ -562,14 +551,14 @@ function Flashcards({ words }: { words: Word[] }) {
   );
 }
 
-// ───────────────────────────── шпион ─────────────────────────────
+// ───────────────────────────── поиск ошибки ─────────────────────────────
 
-/** Кильцы, за которых выдаёт себя шпион. Имена — типичные для северной Германии. */
+/** Авторы записок на доске клуба. Имена — типичные для северной Германии. */
 const LOCALS = ["Hauke", "Frauke", "Ole", "Telse", "Sönke", "Wiebke", "Jens", "Imke", "Kai", "Merle"];
 
 /**
- * Четверо говорят, что они из Киля; один выдаёт себя ошибкой. Ошибка — из грамматики
- * темы: глагол не на своём месте, чужое окончание, пропущенная связка.
+ * Четыре записки, в одной ошибка из грамматики темы: глагол не на своём месте, чужое
+ * окончание, пропущенная связка. Ошибка ничего не говорит о человеке: ищем её, а не виновного.
  */
 function SpyGame({ items }: { items: SpyItem[] }) {
   const [round, setRound] = useState(0);
@@ -595,10 +584,10 @@ function SpyGame({ items }: { items: SpyItem[] }) {
     <div className="spy">
       <div className="spy-head">
         <p>
-          Все четверо говорят, что они из Киля. Один — нет: его выдаёт ошибка в немецком. Кто?
+          На доске клуба четыре записки. В одной есть ошибка: найдите её.
         </p>
         <span className="quiz-count">
-          Раунд {round + 1} · поймано {score.right} из {score.total}
+          Раунд {round + 1} · найдено {score.right} из {score.total}
         </span>
       </div>
       <ol className="spy-lines">
@@ -626,10 +615,10 @@ function SpyGame({ items }: { items: SpyItem[] }) {
       {pick !== null && (
         <div className="spy-verdict" data-caught={caught || undefined}>
           <p>
-            <b>{caught ? "Попался!" : `Мимо: ${names[pick]} говорит правильно.`}</b>
+            <b>{caught ? "Нашли!" : `Здесь всё правильно, у ${names[pick]} ошибки нет.`}</b>
           </p>
           <dl className="spy-compare">
-            <dt>Шпион</dt>
+            <dt>С ошибкой</dt>
             <dd>
               <De text={spy.wrong} />
             </dd>

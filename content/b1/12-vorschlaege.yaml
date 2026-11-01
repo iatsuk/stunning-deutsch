@@ -623,6 +623,20 @@ steps:
           view: task
           task: talk
           solved: true
+spy:
+  - de: "Ein kleinerer Raum wäre auch möglich."
+    wrong: "Ein kleinerer Raum hätte auch möglich."
+    why: "С *möglich* нужна форма от *sein*: *wäre*."
+  - de: "Ich hätte gern eine kleine Küche."
+    wrong: "Ich wäre gern eine kleine Küche."
+    why: "Желание что-то иметь: *hätte gern*."
+  - de: "Wir könnten Raum B nehmen."
+    wrong: "Wir könnten Raum B genommen."
+    why: "После *könnten* в конце стоит инфинитив: *nehmen*."
+  - de: "Du solltest die Bedingungen prüfen."
+    wrong: "Du solltest die Bedingungen zu prüfen."
+    why: "После *solltest* частица *zu* не нужна."
+
 exercises:
   - type: choice
     q: Das ___ günstiger.
@@ -675,21 +689,27 @@ exercises:
   - type: order
     de: Ein kleinerer Raum wäre auch möglich.
     ru: Помещение поменьше тоже было бы возможно.
+    also: ["Auch ein kleinerer Raum wäre möglich.", "Möglich wäre auch ein kleinerer Raum."]
   - type: order
     de: Ich hätte gern eine kleine Küche.
     ru: Я хотел бы маленькую кухню.
+    also: ["Eine kleine Küche hätte ich gern.", "Gern hätte ich eine kleine Küche."]
   - type: order
     de: Wir könnten Raum B nehmen.
     ru: Мы могли бы взять помещение B.
+    also: ["Raum B könnten wir nehmen."]
   - type: order
     de: Ich würde beide Angebote vergleichen.
     ru: Я бы сравнил оба предложения.
+    also: ["Beide Angebote würde ich vergleichen."]
   - type: order
     de: Wir sollten schriftlich nachfragen.
     ru: Нам стоит письменно уточнить.
+    also: ["Schriftlich sollten wir nachfragen."]
   - type: order
     de: Raum B ist für diesen Termin bestätigt.
     ru: ПомещениеB подтверждено на этот срок.
+    also: ["Für diesen Termin ist Raum B bestätigt."]
 case:
   title: Vorschlag, Annahme oder Bestätigung?
   ru: Сверка дневника

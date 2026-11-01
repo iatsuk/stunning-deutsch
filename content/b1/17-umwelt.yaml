@@ -757,6 +757,20 @@ steps:
           view: task
           task: opinions
           solved: true
+spy:
+  - de: "Wir nehmen entweder den Bus oder das Fahrrad."
+    wrong: "Wir nehmen entweder den Bus und das Fahrrad."
+    why: "Парный союз: *entweder … oder*."
+  - de: "Wir brauchen sowohl die Mappe als auch die Becher."
+    wrong: "Wir brauchen sowohl die Mappe oder die Becher."
+    why: "Парный союз: *sowohl … als auch*."
+  - de: "Wir bieten sowohl Wasser als auch Tee an."
+    wrong: "Wir anbieten sowohl Wasser als auch Tee."
+    why: "Отделяемая приставка уходит в конец: *bieten … an*."
+  - de: "Elif hat die Becher bereits abgeholt."
+    wrong: "Elif hat die Becher bereits geabholt."
+    why: "У отделяемого глагола *ge-* стоит внутри слова: *abgeholt*."
+
 exercises:
   - type: choice
     q: Entweder Bus ___ Fahrrad.
@@ -791,7 +805,7 @@ exercises:
     answer: 1
     why: Обязательны оба предмета.
   - type: choice
-    q: Два напитка предлагаются, значит каждый пьётоба?
+    q: Два напитка предлагаются, значит каждый пьёт оба?
     options:
       - Только гости
       - Нет
@@ -799,7 +813,7 @@ exercises:
     answer: 1
     why: Предложение не равно действию гостя.
   - type: choice
-    q: 70 базовых +8 транспорт при бюджете 80…
+    q: 70 базовых + 8 на транспорт при бюджете 80…
     options:
       - Не подходит
       - Ровно 80
@@ -809,21 +823,27 @@ exercises:
   - type: order
     de: Wir nehmen entweder den Bus oder das Fahrrad.
     ru: Возьмём либо автобус, либо велосипед.
+    also: ["Wir nehmen entweder das Fahrrad oder den Bus.", "Entweder nehmen wir den Bus oder das Fahrrad.", "Entweder nehmen wir das Fahrrad oder den Bus.", "Entweder den Bus oder das Fahrrad nehmen wir."]
   - type: order
     de: Wir brauchen sowohl die Mappe als auch die Becher.
     ru: Нам нужны и папка, и стаканы.
+    also: ["Wir brauchen sowohl die Becher als auch die Mappe.", "Sowohl die Mappe als auch die Becher brauchen wir."]
   - type: order
     de: Wir bieten sowohl Wasser als auch Tee an.
     ru: Мы предлагаем и воду, и чай.
+    also: ["Wir bieten sowohl Tee als auch Wasser an.", "Sowohl Wasser als auch Tee bieten wir an."]
   - type: order
     de: Jeder Gast kann selbst entscheiden.
     ru: Каждый гость может решить сам.
+    also: ["Selbst entscheiden kann jeder Gast."]
   - type: order
     de: Elif hat die Becher bereits abgeholt.
     ru: Элиф уже получила стаканы.
+    also: ["Die Becher hat Elif bereits abgeholt.", "Elif hat bereits die Becher abgeholt."]
   - type: order
     de: Wir planen sowohl die Abholung als auch die Rückgabe.
     ru: Мы планируем и получение, и возврат.
+    also: ["Wir planen sowohl die Rückgabe als auch die Abholung.", "Sowohl die Abholung als auch die Rückgabe planen wir."]
 case:
   title: "Beides anbieten heißt nicht: Alle müssen beides nehmen"
   ru: Сверка дневника

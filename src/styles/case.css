@@ -251,7 +251,7 @@
   }
 }
 
-/* Шпион */
+/* Поиск ошибки */
 
 .spy {
   margin-top: 24px;
@@ -332,7 +332,7 @@
 }
 
 .spy-line[data-state="spy"] .spy-name::after {
-  content: " · шпион";
+  content: " · ошибка";
   color: var(--die);
 }
 

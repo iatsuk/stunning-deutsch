@@ -601,6 +601,7 @@ exercises:
     why: "Вежливо: глагол первым, *Sie* за ним, приставка *mit* — в конце."
   - type: order
     ru: Мне нужно лежать в постели.
+    also: ["Im Bett muss ich bleiben."]
     de: Ich muss im Bett bleiben.
     why: "*muss* — на втором месте, *bleiben* — в конце."
   - type: order
