@@ -226,8 +226,8 @@ test("stamps, gaps, sorting and text spotting require the exact evidence", () =>
   assert.ok(!isCorrect(cases, ["in die", "auf dem"]));
   assert.ok(!isCorrect(cases, ["auf dem", "in der"]));
   const pronouns = byId("05-pronoun").challenge;
-  assert.ok(isCorrect(pronouns, ["ihn", "sie", "es"]));
-  assert.ok(!isCorrect(pronouns, ["sie", "ihn", "es"]));
+  assert.ok(isCorrect(pronouns, { p: "ihn", j: "sie", t: "es" }));
+  assert.ok(!isCorrect(pronouns, { p: "sie", j: "ihn", t: "es" }));
   const genders = byId("08-compound").challenge;
   assert.equal(genders.answer.schrank, "der");
   assert.equal(genders.answer.haustuer, "die");
@@ -318,6 +318,26 @@ test("calendar and clock keep similar dates and times apart", () => {
     "17:45",
   );
 });
+test("every chapter teaches through listening, exact writing and returning mistakes", () => {
+  for (const episode of episodes) {
+    assert.ok(
+      episode.beats.some(
+        (b) => b.voices || b.audio || b.challenge.kind === "chat",
+      ),
+      `${episode.id}: нет голоса`,
+    );
+    assert.ok(
+      episode.beats.some((b) => b.challenge.kind === "write"),
+      `${episode.id}: нет записи`,
+    );
+    assert.ok(episode.review?.length >= 3, `${episode.id}: нет закрепления`);
+    assert.ok(
+      episode.beats.some((b) => b.practice?.length),
+      `${episode.id}: ошибки не возвращаются`,
+    );
+  }
+  assert.equal(beats.filter((b) => b.challenge.kind === "write").length, 12);
+});
 test("write checks the exact German form and explains near misses", () => {
   const c = byId("01-card").challenge;
   const good = {
@@ -347,12 +367,22 @@ test("write checks the exact German form and explains near misses", () => {
 test("errors stay until written correctly and return in later chapters", () => {
   const [first, second] = episodes;
   assert.deepEqual(reviewItems(first, {}), first.review);
-  assert.deepEqual(reviewItems(second, {}), []);
-  assert.deepEqual(reviewItems(second, { argentina: 1 }), ["argentina"]);
+  assert.deepEqual(reviewItems(second, {}), second.review);
+  assert.equal(reviewItems(second, { argentina: 1 })[0], "argentina");
   const merged = reviewItems(first, { argentina: 2, where: 1 });
   assert.equal(merged[0], "argentina");
   assert.equal(new Set(merged).size, merged.length);
   assert.ok(merged.length <= 6);
+  const many = Object.fromEntries(
+    Object.keys(phrases)
+      .slice(0, 16)
+      .map((id) => [id, 1]),
+  );
+  const crowded = reviewItems(episodes.at(-1), many);
+  assert.ok(crowded.length <= 6);
+  assert.ok(
+    crowded.filter((id) => episodes.at(-1).review.includes(id)).length >= 3,
+  );
   const saved = normalizeSave({ weak: { where: 2, bad: -1, odd: "x" } }, beats);
   assert.deepEqual(saved.weak, { where: 2 });
   assert.deepEqual(normalizeSave(null, beats).weak, {});
@@ -364,7 +394,7 @@ test("every phrase and voice line resolves to a recording that exists", () => {
     readFileSync(new URL("../src/generated/story-audio.json", import.meta.url)),
   );
   const lines = storyLines(episodes, phrases);
-  assert.equal(lines.length, Object.keys(phrases).length + 4);
+  assert.ok(lines.length > Object.keys(phrases).length + 20);
   for (const { text, voice } of lines) {
     const src = map[audioKey(text, voice)];
     assert.ok(src, `${voice}: ${text}`);

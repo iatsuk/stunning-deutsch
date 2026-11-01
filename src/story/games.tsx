@@ -21,6 +21,7 @@ type Game<K extends Challenge["kind"]> = {
   checked: boolean;
   change: (value: Answer) => void;
   win: () => void;
+  miss: () => void;
 };
 
 const asList = (value: Answer) => (Array.isArray(value) ? value : []);
@@ -88,12 +89,22 @@ export function Pairs({
   );
 }
 
-function Line({ who, turn }: { who: string; turn: ChatTurn }) {
+function Line({
+  who,
+  voice,
+  turn,
+}: {
+  who: string;
+  voice: string;
+  turn: ChatTurn;
+}) {
   const [open, setOpen] = useState(false);
   return (
     <div className="moin-bubble">
       <small>{who}</small>
-      <p lang="de">{turn.say}</p>
+      <p lang="de">
+        {turn.say} <PlayButton src={storyAudio(turn.say, voice)} />
+      </p>
       {open && <small>{turn.ru}</small>}
       <button
         type="button"
@@ -107,7 +118,15 @@ function Line({ who, turn }: { who: string; turn: ChatTurn }) {
   );
 }
 
-export function Chat({ c, value, seed, disabled, change, win }: Game<"chat">) {
+export function Chat({
+  c,
+  value,
+  seed,
+  disabled,
+  change,
+  win,
+  miss,
+}: Game<"chat">) {
   const said = asList(value);
   const [missed, setMissed] = useState<string[]>([]);
   const [reaction, setReaction] = useState("");
@@ -116,6 +135,7 @@ export function Chat({ c, value, seed, disabled, change, win }: Game<"chat">) {
     if (id !== current.answer) {
       setMissed([...missed, id]);
       setReaction(why);
+      miss();
       return;
     }
     const next = [...said, id];
@@ -128,7 +148,7 @@ export function Chat({ c, value, seed, disabled, change, win }: Game<"chat">) {
     <div className="moin-chat" aria-live="polite">
       {c.turns.slice(0, said.length + 1).map((turn, i) => (
         <Fragment key={i}>
-          <Line who={c.who} turn={turn} />
+          <Line who={c.who} voice={c.voice} turn={turn} />
           {said[i] && (
             <p className="moin-bubble is-you" lang="de">
               {turn.options.find((o) => o.id === said[i])?.text}

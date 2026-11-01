@@ -28,7 +28,7 @@ export type Challenge =
       answer: Record<string, number>;
     }
   | { kind: "code"; length: number; answer: string }
-  | { kind: "chat"; who: string; turns: ChatTurn[] }
+  | { kind: "chat"; who: string; voice: string; turns: ChatTurn[] }
   | {
       kind: "verdict";
       labels: [string, string];

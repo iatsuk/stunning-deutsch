@@ -33,15 +33,23 @@ export function storyLines(
   return [
     ...Object.values(phrases).map((p) => ({ text: p.de, voice: NARRATOR })),
     ...episodes.flatMap((e) =>
-      e.beats.flatMap((b) =>
-        (b.voices ?? []).map(({ text, voice }) => ({ text, voice })),
-      ),
+      e.beats.flatMap((b) => [
+        ...(b.voices ?? []).map(({ text, voice }) => ({ text, voice })),
+        ...(b.challenge.kind === "chat"
+          ? b.challenge.turns.map((t) => ({
+              text: t.say,
+              voice: (b.challenge as { voice: string }).voice,
+            }))
+          : []),
+      ]),
     ),
   ];
 }
-/** Выражения главы и то, в чём ошибались раньше: ошибка возвращается, пока её не исправят. */
+/** Старые ошибки возвращаются, пока их не исправят, но не вытесняют выражения текущей главы. */
 export const reviewItems = (episode: Episode, weak: Record<string, number>) =>
-  [...new Set([...Object.keys(weak), ...(episode.review ?? [])])].slice(0, 6);
+  [
+    ...new Set([...Object.keys(weak).slice(0, 3), ...(episode.review ?? [])]),
+  ].slice(0, 6);
 
 export const MOVES: Move[] = ["links", "geradeaus", "rechts"];
 /** Север, восток, юг, запад: y растёт вниз, как на схеме. */
@@ -490,7 +498,7 @@ export function validateStory(
   const errors: string[] = [],
     ids = new Set<string>(),
     known = new Set<string>();
-  for (const episode of episodes)
+  for (const episode of episodes) {
     for (const beat of episode.beats) {
       if (ids.has(beat.id)) errors.push(`Duplicate beat: ${beat.id}`);
       ids.add(beat.id);
@@ -506,8 +514,9 @@ export function validateStory(
       for (const id of beat.practice ?? [])
         if (!phrases[id]) errors.push(`Unknown practice: ${beat.id}: ${id}`);
     }
-  for (const episode of episodes)
+    // В конце главы диктуем только то, что рассказ уже показал.
     for (const id of episode.review ?? [])
-      if (!phrases[id]) errors.push(`Unknown review: ${episode.id}: ${id}`);
+      if (!known.has(id)) errors.push(`Unknown review: ${episode.id}: ${id}`);
+  }
   return errors;
 }

@@ -1,4 +1,10 @@
-import type { ChatTurn, Episode, Phrase, Challenge } from "./types.ts";
+import type {
+  ChatTurn,
+  Episode,
+  Phrase,
+  Challenge,
+  VoiceLine,
+} from "./types.ts";
 const choice = (
   answer: string,
   options: [string, string, string][],
@@ -47,10 +53,25 @@ const turn = (
   answer,
   options: options.map(([id, text, why]) => ({ id, text, why })),
 });
-const chat = (who: string, turns: ChatTurn[]): Challenge => ({
+const chat = (who: string, voice: string, turns: ChatTurn[]): Challenge => ({
   kind: "chat",
   who,
+  voice,
   turns,
+});
+const line = (
+  who: string,
+  voice: string,
+  text: string,
+  ru: string,
+): VoiceLine => ({ who, voice, text, ru });
+const write = (
+  title: string,
+  fields: [string, string, string[]][],
+): Challenge => ({
+  kind: "write",
+  title,
+  fields: fields.map(([id, label, answers]) => ({ id, label, answers })),
 });
 /** Пропуск в тексте записки обозначается ___. */
 const gaps = (text: string, bank: string[], answer: string[]): Challenge => ({
@@ -545,18 +566,25 @@ export const episodes: Episode[] = [
     place: "Holtenauer Straße · офис",
     topic: "Числа и алфавит",
     grammar: "0–1000 · haben · да/нет · спеллинг",
+    review: ["phone", "have", "bitte", "danke"],
     beats: [
       {
         id: "02-number",
         title: "Одна цифра — другой детектив",
         story: [
-          "Петерсен протягивает {phone}. «Запишите аккуратно, {bitte}». На соседней бумажке номер пиццерии. У неё, вероятно, более приятные дела.",
+          "Петерсен диктует {phone}. «Запишите аккуратно, {bitte}». На соседней бумажке номер пиццерии. У неё, вероятно, более приятные дела.",
         ],
-        source: {
-          title: "Контакт Нильса · учебный номер",
-          lines: ["null eins sieben sechs · zwei drei · vier fünf · acht eins"],
-        },
-        prompt: "Наберите номер Нильса. Начальный ноль тоже нужен.",
+        voices: [
+          line(
+            "Frau Petersen",
+            "Sandy",
+            "Null eins sieben sechs, zwei drei, vier fünf, acht eins.",
+            "0176 23 45 81",
+          ),
+        ],
+        practice: ["phone"],
+        prompt:
+          "Послушайте и наберите номер Нильса. Начальный ноль тоже нужен.",
         challenge: { kind: "code", length: 10, answer: "0176234581" },
         hint: "null=0, eins=1, zwei=2, drei=3, vier=4, fünf=5, sechs=6, sieben=7, acht=8.",
         success:
@@ -568,6 +596,7 @@ export const episodes: Episode[] = [
         story: [
           "Вы говорите «{danke}». Нильс: «{have}» — и готов помочь. Он не просит ждать до пенсии.",
         ],
+        practice: ["have"],
         prompt: "Ответьте «У тебя есть время?»",
         challenge: order(["Hast", "du", "Zeit?"], ["Zeit?", "Hast", "du"]),
         hint: "В вопросе да/нет глагол стоит первым. haben: du hast.",
@@ -579,13 +608,15 @@ export const episodes: Episode[] = [
         story: [
           "Нильс оставил записку в офисе. Петерсен просит принести папку: {bitte}, без всех архивов за тридцать лет.",
         ],
-        source: {
-          title: "Сообщение Петерсен",
-          lines: [
+        voices: [
+          line(
+            "Frau Petersen",
+            "Sandy",
             "Die Mappe ist in Zimmer zweihundertvierzehn. Nicht zweihundertvierzig.",
-          ],
-        },
-        prompt: "Выберите комнату.",
+            "Папка в комнате 214. Не 240.",
+          ),
+        ],
+        prompt: "Послушайте Петерсен и выберите комнату.",
         challenge: choice("214", [
           [
             "240",
@@ -603,24 +634,32 @@ export const episodes: Episode[] = [
         id: "02-spell",
         title: "M, а не N",
         story: [
-          "В папке бирка на сумку. Петерсен диктует название: «M — O — I — N». Это то самое пропавшее приветствие {moin}.",
+          "В папке бирка на сумку. Петерсен диктует название по буквам. Это то самое пропавшее приветствие {moin}.",
         ],
-        prompt: "Соберите надпись на бирке.",
-        challenge: order(["M", "O", "I", "N"], ["N", "I", "M", "O"]),
-        hint: "Порядок задан спеллингом; не переставляйте буквы по звучанию русского слова.",
+        voices: [
+          line("Frau Petersen", "Sandy", "Em, O, I, En.", "M, O, I, N."),
+        ],
+        practice: ["moin"],
+        prompt: "Запишите надпись на бирке заглавными буквами.",
+        challenge: write("Etikett", [["tag", "Etikett", ["MOIN"]]]),
+        hint: "Em — M, O — O, I — I, En — N. На бирке все буквы заглавные.",
         success: "MOIN. Теперь известно, что сумка связана с табличкой.",
       },
       {
         id: "02-pin",
         title: "Где искать фотографию",
         story: [
-          "Нильс объясняет: «Ich habe ein Foto». {phone} больше не нужен: следующий след на бумаге.",
+          "Нильс объясняет: «Ich habe ein Foto». {phone} больше не нужен: следующий след в голосовом сообщении.",
         ],
-        source: {
-          title: "Сообщение Нильса",
-          lines: ["Das Foto ist in Fach zweiunddreißig. Ja, zweiunddreißig."],
-        },
-        prompt: "Введите номер ячейки с фотографией.",
+        voices: [
+          line(
+            "Nils",
+            "Eddy",
+            "Das Foto ist in Fach zweiunddreißig. Ja, zweiunddreißig.",
+            "Фото в ячейке 32. Да, 32.",
+          ),
+        ],
+        prompt: "Послушайте Нильса и введите номер ячейки с фотографией.",
         challenge: { kind: "code", length: 2, answer: "32" },
         hint: "В 32 сначала произносят единицы: zwei-und-dreißig.",
         success:
@@ -638,6 +677,7 @@ export const episodes: Episode[] = [
     place: "Kiellinie · гости",
     topic: "Семья и вещи",
     grammar: "mein/dein/sein/ihr · ein/kein · множественное число",
+    review: ["sister", "brother", "hisbag", "nobag"],
     beats: [
       {
         id: "03-family",
@@ -653,6 +693,7 @@ export const episodes: Episode[] = [
             "Greta und Nils sind Geschwister.",
           ],
         },
+        practice: ["sister", "brother"],
         prompt: "Кто кому приходится?",
         challenge: pairs(
           [
@@ -677,11 +718,17 @@ export const episodes: Episode[] = [
         story: [
           "Грета подписывает фото: «Nils und {hisbag}». Матео притворяется, что уже всё понял, но держит ручку вверх ногами.",
         ],
-        source: {
-          title: "Greta",
-          lines: ["Das ist Nils. Das ist seine Tasche. Meine Tasche ist blau."],
-        },
-        prompt: "Подпишите фото: чья сумка красная, а чья синяя?",
+        voices: [
+          line(
+            "Greta",
+            "Shelley",
+            "Das ist Nils. Das ist seine Tasche. Meine Tasche ist blau.",
+            "Это Нильс. Это его сумка. Моя сумка синяя.",
+          ),
+        ],
+        practice: ["hisbag"],
+        prompt:
+          "Послушайте Грету и подпишите фото: чья сумка красная, а чья синяя?",
         challenge: gaps(
           "Das ist Nils. ___ Tasche ist rot.\nDas ist Greta. ___ Tasche ist ___.",
           ["Seine", "Ihre", "Sein", "blau", "rot"],
@@ -696,6 +743,7 @@ export const episodes: Episode[] = [
         story: [
           "Вы показываете Матео фотографию. Он отвечает: «{nobag}». Его собственный рюкзак пахнет хлебом, но запах не числится удостоверением личности.",
         ],
+        practice: ["nobag"],
         prompt: "Как понять ответ Матео? Поставьте штамп на каждой записи.",
         challenge: verdict(
           ["Верно", "Неверно"],
@@ -730,20 +778,13 @@ export const episodes: Episode[] = [
             "Lucía und Diego haben eine Tochter. Sie heißt Sofia.",
           ],
         },
-        prompt: "Разложите карточки гостей: что относится к кому?",
-        challenge: sort(
-          [
-            ["gn", "Greta und Nils"],
-            ["ld", "Lucía und Diego"],
-          ],
-          [
-            ["none", "keine Kinder", "gn"],
-            ["siblings", "Geschwister", "gn"],
-            ["daughter", "eine Tochter", "ld"],
-            ["sofia", "Sofia", "ld"],
-          ],
-        ),
-        hint: "keine Kinder — детей нет; eine Tochter — одна дочь; Geschwister — брат и сестра.",
+        prompt: "Заполните карточки гостей по списку.",
+        challenge: write("Gästekarten", [
+          ["bruder", "Greta · Bruder", ["Nils"]],
+          ["tochter", "Lucía und Diego · Tochter", ["Sofia"]],
+          ["kinder", "Greta und Nils · Kinder", ["keine", "keine Kinder"]],
+        ]),
+        hint: "keine Kinder — детей нет; Tochter — дочь; Bruder — брат.",
         success:
           "Карточки готовы. София пока единственная участница, которой можно простить молчание весь вечер.",
       },
@@ -759,6 +800,7 @@ export const episodes: Episode[] = [
             "Die Tasche ist rot. Sie ist nicht hier. Nils und Greta sind im Café Fördeblick.",
           ],
         },
+        practice: ["hisbag"],
         prompt: "Какая зацепка ведёт дальше?",
         challenge: choice("cafe", [
           ["home", "Искать дома у Даны.", "Дом Даны в сообщении не упомянут."],
@@ -789,6 +831,7 @@ export const episodes: Episode[] = [
     place: "Holtenau · Fördeblick",
     topic: "Еда и напитки",
     grammar: "Akkusativ · möchten · nicht/kein · gern",
+    review: ["nocoffee", "tea", "bill", "bread"],
     beats: [
       {
         id: "04-order",
@@ -796,8 +839,9 @@ export const episodes: Episode[] = [
         story: [
           "В кафе Матео приветствует вас: «{moin}!» Грета вспоминает заказ: «{nocoffee} {tea}». Запах {coffee} делает показания особенно убедительными.",
         ],
+        practice: ["tea", "nocoffee"],
         prompt: "Передайте официанту заказ Греты.",
-        challenge: chat("Kellner", [
+        challenge: chat("Kellner", "Eddy", [
           turn("Moin! Was möchte Greta?", "Привет! Что хочет Грета?", "tea", [
             ["tea", "Einen Tee, bitte.", ""],
             [
@@ -837,11 +881,16 @@ export const episodes: Episode[] = [
         story: [
           "Дана выбирает {water} и {bread}. «{danke}», — говорит она. В блокноте немецкие слова уже не выглядят посторонними.",
         ],
-        source: {
-          title: "Заказ",
-          lines: ["Zwei Flaschen Wasser, drei Brote und keinen Kaffee, bitte."],
-        },
-        prompt: "Соберите заказ по количествам.",
+        voices: [
+          line(
+            "Dana",
+            "Anna",
+            "Zwei Flaschen Wasser, drei Brote und keinen Kaffee, bitte.",
+            "Две бутылки воды, три хлеба и никакого кофе, пожалуйста.",
+          ),
+        ],
+        practice: ["water", "bread"],
+        prompt: "Послушайте заказ и соберите количества.",
         challenge: {
           kind: "quantity",
           items: [
@@ -874,6 +923,7 @@ export const episodes: Episode[] = [
         story: [
           "Нильс произносит: «{bill}» Счёт оказывается полезнее салфетки с портретом подозрительной чайки.",
         ],
+        practice: ["bill"],
         prompt: "Нажмите на две строки: итог заказа и запись о сумке.",
         challenge: spot(
           "Учебный чек · стол 4",
@@ -901,21 +951,12 @@ export const episodes: Episode[] = [
             "Nach dem Café: einkaufen. Ein Pullover für Greta. Die Tasche ist rot.",
           ],
         },
-        prompt: "Что искать в магазине?",
-        challenge: choice("sweater", [
-          [
-            "sweater",
-            "Покупку свитера для Греты.",
-            "Ein Pullover für Greta — свитер для Греты.",
-          ],
-          [
-            "bread",
-            "Три хлеба для чайки.",
-            "Это был заказ команды; в новой записке назван Pullover.",
-          ],
-          ["keys", "Новый ключ от лодки.", "Ключей здесь нет."],
+        prompt: "Запишите в блокнот, что и для кого искать в магазине.",
+        challenge: write("Einkaufszettel", [
+          ["was", "Was?", ["Pullover", "ein Pullover", "einen Pullover"]],
+          ["fuer", "Für wen?", ["Greta", "für Greta"]],
         ]),
-        hint: "einkaufen — делать покупки; Pullover — свитер.",
+        hint: "Ein Pullover für Greta: Pullover — свитер, für Greta — для Греты.",
         success:
           "Впереди магазин. Матео просит не покупать чайку в качестве свидетеля.",
         clue: {
@@ -931,6 +972,7 @@ export const episodes: Episode[] = [
     place: "Holtenauer Straße · магазин",
     topic: "Покупки",
     grammar: "цены · количества · welcher · ihn/sie/es · zu groß",
+    review: ["price", "him", "expensive"],
     beats: [
       {
         id: "05-price",
@@ -946,6 +988,7 @@ export const episodes: Episode[] = [
             "Das T-Shirt: 8,50 €",
           ],
         },
+        practice: ["price"],
         prompt: "Продиктуйте цену свитера словами.",
         challenge: gaps(
           "Der Pullover kostet ___ Euro ___.",
@@ -962,14 +1005,21 @@ export const episodes: Episode[] = [
         story: [
           "Грета спрашивает «{price}», платит двадцать евро и ждёт сдачу. Матео считает быстрее, когда речь не о рецептах.",
         ],
-        source: {
-          title: "Покупка",
-          lines: [
-            "Ein Pullover: achtzehn Euro fünfzig.",
-            "Greta bezahlt zwanzig Euro.",
-          ],
-        },
-        prompt: "Выдайте Грете сдачу монетами.",
+        voices: [
+          line(
+            "Verkäufer",
+            "Rocko",
+            "Das macht achtzehn Euro fünfzig.",
+            "С вас 18,50 €.",
+          ),
+          line(
+            "Greta",
+            "Shelley",
+            "Hier sind zwanzig Euro.",
+            "Вот двадцать евро.",
+          ),
+        ],
+        prompt: "Послушайте и выдайте Грете сдачу монетами.",
         challenge: {
           kind: "coins",
           coins: [200, 100, 50, 20, 10],
@@ -985,14 +1035,16 @@ export const episodes: Episode[] = [
         story: [
           "Свитер найден, но размер не тот. Продавец говорит «zu groß». Это не комплимент вашему детективному таланту.",
         ],
-        source: {
-          title: "Greta",
-          lines: [
+        voices: [
+          line(
+            "Greta",
+            "Shelley",
             "Ich brauche Größe M. Größe L ist zu groß. Der Pullover in M ist blau.",
-          ],
-        },
-        prompt: "Ответьте продавцу за Грету.",
-        challenge: chat("Verkäufer", [
+            "Мне нужен размер M. L слишком большой. Свитер в размере M синий.",
+          ),
+        ],
+        prompt: "Послушайте Грету и ответьте продавцу за неё.",
+        challenge: chat("Verkäufer", "Rocko", [
           turn(
             "Welche Größe braucht Greta?",
             "Какой размер нужен Грете?",
@@ -1031,12 +1083,13 @@ export const episodes: Episode[] = [
         story: [
           "Нильс кивает на der Pullover. Грета: «{him}» Местоимение короткое, а покупка уже решена.",
         ],
+        practice: ["him"],
         prompt: "Допишите ответы Греты: замените товары местоимениями.",
-        challenge: gaps(
-          "Der Pullover? Ich nehme ___.\nDie Jacke? Ich nehme ___ nicht.\nDas T-Shirt? Ich nehme ___ auch nicht.",
-          ["ihn", "sie", "es", "er"],
-          ["ihn", "sie", "es"],
-        ),
+        challenge: write("Antworten von Greta", [
+          ["p", "Der Pullover? Ich nehme …", ["ihn"]],
+          ["j", "Die Jacke? Ich nehme … nicht.", ["sie"]],
+          ["t", "Das T-Shirt? Ich nehme … auch nicht.", ["es"]],
+        ]),
         hint: "В Akkusativ: der Pullover → ihn, die Jacke → sie, das T-Shirt → es.",
         success:
           "Ich nehme ihn. Продавец упаковывает покупку, а куртка и футболка остаются висеть.",
@@ -1089,6 +1142,7 @@ export const episodes: Episode[] = [
     place: "Клуб · расписание",
     topic: "Время и распорядок",
     grammar: "часы · отделяемые глаголы · um/am/von…bis",
+    review: ["half", "sunday", "starts", "call"],
     beats: [
       {
         id: "06-time",
@@ -1101,6 +1155,7 @@ export const episodes: Episode[] = [
           text: "Am Sonntag um halb sechs am Nachmittag. Nicht um halb sieben.",
           ru: "В воскресенье в половине шестого дня. Не в половине седьмого.",
         },
+        practice: ["half", "sunday"],
         prompt: "Поставьте часы на время встречи.",
         challenge: clock("17:30", {
           "18:30": "halb sieben — 18:30, это время прямо отрицается.",
@@ -1116,6 +1171,7 @@ export const episodes: Episode[] = [
         story: [
           "На доске написано: «{starts}» Нужно добавить время так, чтобы an не осталось посреди комнаты.",
         ],
+        practice: ["starts"],
         prompt: "Соберите «Встреча начинается в 17:30».",
         challenge: order(
           ["Das Treffen", "fängt", "um 17:30 Uhr", "an."],
@@ -1138,20 +1194,13 @@ export const episodes: Episode[] = [
             "Jensen ist am Sonntag ab 17 Uhr im Club.",
           ],
         },
-        prompt: "Сопоставьте человека и воскресный план.",
-        challenge: pairs(
-          [
-            ["m", "Mateo"],
-            ["g", "Greta"],
-            ["j", "Jensen"],
-          ],
-          [
-            ["club", "В клубе с 17:00"],
-            ["free", "Воскресенье свободно"],
-            ["work", "Работа до 16:00"],
-          ],
-          { m: "free", g: "work", j: "club" },
-        ),
+        practice: ["sunday"],
+        prompt: "Запишите воскресный план команды.",
+        challenge: write("Sonntagsplan", [
+          ["m", "Mateo · am Sonntag", ["frei"]],
+          ["g", "Greta arbeitet bis", ["16 Uhr", "16"]],
+          ["j", "Jensen ist im Club ab", ["17 Uhr", "17"]],
+        ]),
         hint: "von…bis — с…до; ab — начиная с. Матео работает со вторника по субботу.",
         success:
           "В 17:30 все могут оказаться у клуба. График Матео не меняем ради удобной улики.",
@@ -1204,6 +1253,7 @@ export const episodes: Episode[] = [
     place: "Kiellinie · планы команды",
     topic: "Досуг и встречи",
     grammar: "können/wollen · инфинитив · gern/lieber/am liebsten",
+    review: ["can", "cannot", "rather", "together"],
     beats: [
       {
         id: "07-can",
@@ -1211,14 +1261,23 @@ export const episodes: Episode[] = [
         story: [
           "Элиф пишет: «{can}» Матео радуется так, будто команда уже в сборе. Вы пока сохраняете спокойствие.",
         ],
-        source: {
-          title: "Чат",
-          lines: [
-            "Elif: Ich kann am Sonntag kommen. Ich möchte zuerst ins Museum.",
-            "Hauke: Ich komme um 17:30 zum Club.",
-          ],
-        },
-        prompt: "Что команда подтвердила? Поставьте штамп на каждой записи.",
+        voices: [
+          line(
+            "Elif",
+            "Flo",
+            "Ich kann am Sonntag kommen. Ich möchte zuerst ins Museum.",
+            "Я могу прийти в воскресенье. Сначала я хочу в музей.",
+          ),
+          line(
+            "Hauke",
+            "Rocko",
+            "Ich komme um siebzehn Uhr dreißig zum Club.",
+            "Я приду к клубу в 17:30.",
+          ),
+        ],
+        practice: ["can"],
+        prompt:
+          "Послушайте сообщения. Что команда подтвердила? Поставьте штамп на каждой записи.",
         challenge: verdict(
           ["Точно", "Пока неясно"],
           [
@@ -1248,6 +1307,7 @@ export const episodes: Episode[] = [
         story: [
           "Дана говорит: «{together}» Матео не возражает, если поиск заканчивается ужином.",
         ],
+        practice: ["together"],
         prompt: "Соберите фразу «Мы хотим искать вместе».",
         challenge: order(
           ["Wir", "wollen", "zusammen", "suchen."],
@@ -1271,20 +1331,13 @@ export const episodes: Episode[] = [
             "Mateo fotografiert gern.",
           ],
         },
-        prompt: "Соедините человека с предпочтением.",
-        challenge: pairs(
-          [
-            ["e", "Elif"],
-            ["d", "Dana"],
-            ["m", "Mateo"],
-          ],
-          [
-            ["photo", "Фотографировать"],
-            ["walk", "Гулять на Kiellinie"],
-            ["museum", "Музей"],
-          ],
-          { e: "museum", d: "walk", m: "photo" },
-        ),
+        practice: ["rather"],
+        prompt: "Запишите, кто что любит.",
+        challenge: write("Wer mag was?", [
+          ["e", "Elif geht lieber ins …", ["Museum"]],
+          ["d", "Dana geht am liebsten an der … spazieren", ["Kiellinie"]],
+          ["m", "Mateo … gern", ["fotografiert"]],
+        ]),
         hint: "lieber — охотнее, am liebsten — больше всего любит.",
         success:
           "Никого не отправили на пляж против воли. Чайка отправилась сама.",
@@ -1295,10 +1348,11 @@ export const episodes: Episode[] = [
         story: [
           "Нильс пишет: «{cannot}» Приглашение на прогулку не пропало — нужно предложить другое время.",
         ],
+        practice: ["cannot"],
         prompt: "Договоритесь с Нильсом о времени.",
-        challenge: chat("Nils", [
+        challenge: chat("Nils", "Eddy", [
           turn(
-            "Am Samstag kann ich nicht. Am Sonntag habe ich ab 16 Uhr Zeit.",
+            "Am Samstag kann ich nicht. Am Sonntag habe ich ab sechzehn Uhr Zeit.",
             "В субботу я не могу. В воскресенье у меня есть время с 16:00.",
             "sun",
             [
@@ -1316,7 +1370,7 @@ export const episodes: Episode[] = [
             ],
           ),
           turn(
-            "Ja, um 17 Uhr kann ich kommen!",
+            "Ja, um siebzehn Uhr kann ich kommen!",
             "Да, в 17 часов я могу прийти!",
             "bye",
             [
@@ -1379,6 +1433,7 @@ export const episodes: Episode[] = [
     place: "Клуб · гостевая комната",
     topic: "Жильё и вещи",
     grammar: "Dativ: im/in der/auf dem · сложные слова · объявления",
+    review: ["inbag", "table", "kitchen", "key"],
     beats: [
       {
         id: "08-where",
@@ -1386,15 +1441,16 @@ export const episodes: Episode[] = [
         story: [
           "Йенсен оставил {key} для гостевой комнаты. Записка лежит {table}, сумка — {kitchen}. Элиф смеётся: скоро блокнот будет немецким, а вы — его русской сноской.",
         ],
-        source: {
-          title: "План комнаты",
-          lines: [
-            "Der Schlüssel liegt auf dem Tisch.",
-            "Die Tasche steht in der Küche.",
-            "Das Brot ist in der Tasche.",
-          ],
-        },
-        prompt: "Разложите предметы по местам.",
+        practice: ["table", "kitchen", "key"],
+        voices: [
+          line(
+            "Jensen",
+            "Grandpa",
+            "Der Schlüssel liegt auf dem Tisch. Die Tasche steht in der Küche. Das Brot ist in der Tasche.",
+            "Ключ лежит на столе. Сумка стоит на кухне. Хлеб в сумке.",
+          ),
+        ],
+        prompt: "Послушайте Йенсена и разложите предметы по местам.",
         challenge: sort(
           [
             ["table", "auf dem Tisch"],
@@ -1417,6 +1473,7 @@ export const episodes: Episode[] = [
         story: [
           "Вы видите: «Das Brot ist {inbag}». Слово {bag} уже знакомо, но артикль меняется вместе с ролью в предложении.",
         ],
+        practice: ["inbag", "table"],
         prompt: "Допишите записку без ошибок в падеже.",
         challenge: gaps(
           "Das Brot ist ___ Tasche.\nDer Schlüssel liegt ___ Tisch.",
@@ -1441,13 +1498,12 @@ export const episodes: Episode[] = [
             "Greta: maximal 50 €, ein Zimmer, mit Küche.",
           ],
         },
-        prompt: "Какое объявление подходит Грете?",
-        challenge: choice("a", [
-          ["b", "B", "90 € выше бюджета, и кухни нет."],
-          ["a", "A", "45 €, одна комната и кухня — все условия соблюдены."],
-          ["none", "Ни одно", "A выполняет каждое условие."],
+        prompt: "Выберите объявление для Греты и заполните заявку.",
+        challenge: write("Anfrage für Greta", [
+          ["ad", "Anzeige", ["A"]],
+          ["preis", "Preis pro Nacht", ["45 €", "45", "45 Euro"]],
         ]),
-        hint: "Сверяйте цену, число комнат и наличие кухни одновременно.",
+        hint: "Сверьте цену, число комнат и наличие кухни. Подходит только одно объявление.",
         success:
           "Ночь устроена. В счёт не включили аренду подозрительной чайки.",
       },
@@ -1515,6 +1571,7 @@ export const episodes: Episode[] = [
     place: "Киль · учебная схема маршрута",
     topic: "Город и транспорт",
     grammar: "mit/zu/bei/von/aus · Dativ · повелительное Sie",
+    review: ["bus", "station", "straight", "home"],
     beats: [
       {
         id: "09-route",
@@ -1530,6 +1587,7 @@ export const episodes: Episode[] = [
             "Bus 9 → Museum",
           ],
         },
+        practice: ["bus"],
         prompt: "На каком автобусе по учебной схеме ехать к Café Nordlicht?",
         challenge: choice("8", [
           ["9", "Bus 9", "Он идёт к музею."],
@@ -1546,6 +1604,7 @@ export const episodes: Episode[] = [
         story: [
           "Вы снова едете {bus}. Водитель не требует рассказать всю историю, только куда вам нужно.",
         ],
+        practice: ["bus", "cafe"],
         prompt: "Соберите «Мы едем на автобусе к кафе».",
         challenge: order(
           ["Wir", "fahren", "mit dem Bus", "zum Café."],
@@ -1560,14 +1619,17 @@ export const episodes: Episode[] = [
         story: [
           "У остановки водитель говорит: «{straight}» Затем добавляет ещё два коротких указания.",
         ],
-        source: {
-          title: "Маршрут пешком",
-          lines: [
+        voices: [
+          line(
+            "Busfahrer",
+            "Rocko",
             "Gehen Sie geradeaus. Dann gehen Sie links. Das Café ist rechts.",
-          ],
-        },
+            "Идите прямо. Затем идите налево. Кафе справа.",
+          ),
+        ],
+        practice: ["straight"],
         prompt:
-          "Дойдите до кафе по указаниям водителя. Названия мест видны, только когда вы рядом.",
+          "Послушайте водителя и дойдите до кафе. Названия мест видны, только когда вы рядом.",
         challenge: {
           kind: "route",
           width: 3,
@@ -1595,20 +1657,12 @@ export const episodes: Episode[] = [
         story: [
           "Йенсен написал: «Ich bin {home}». Вы уточняете, движется ли он куда-нибудь.",
         ],
-        prompt: "Йенсен дома или идёт домой? Разложите выражения.",
-        challenge: sort(
-          [
-            ["wo", "Wo? — где"],
-            ["wohin", "Wohin? — куда"],
-          ],
-          [
-            ["home", "zu Hause", "wo"],
-            ["bus", "im Bus", "wo"],
-            ["gohome", "nach Hause", "wohin"],
-            ["cafe", "zum Café", "wohin"],
-            ["museum", "ins Museum", "wohin"],
-          ],
-        ),
+        practice: ["home"],
+        prompt: "Запишите обе формы: «я дома» и «я иду домой».",
+        challenge: write("Wo oder wohin?", [
+          ["at", "Ich bin …", ["zu Hause"]],
+          ["to", "Ich gehe …", ["nach Hause"]],
+        ]),
         hint: "zu Hause — где; nach Hause — куда.",
         success:
           "Йенсен остаётся дома. Для поиска сумки его телепортация не требуется.",
@@ -1670,6 +1724,7 @@ export const episodes: Episode[] = [
     place: "Вымышленная Praxis · Nordlicht",
     topic: "Здоровье и врач",
     grammar: "Kopfschmerzen · müssen/dürfen · просьбы du/ihr",
+    review: ["must", "headache", "sit", "noentry"],
     beats: [
       {
         id: "10-reception",
@@ -1697,28 +1752,33 @@ export const episodes: Episode[] = [
         story: [
           "Пока ждёте, Кляйн просит помочь с карточками. Никаких медицинских советов: только понять слова пациентов.",
         ],
-        source: {
-          title: "Карточки ожидания",
-          lines: [
-            "A: Ich habe Kopfschmerzen.",
-            "B: Mein Bauch tut weh.",
-            "C: Mein Rücken tut weh.",
-          ],
-        },
-        prompt: "Сопоставьте карточку и место боли.",
-        challenge: pairs(
-          [
-            ["a", "A"],
-            ["b", "B"],
-            ["c", "C"],
-          ],
-          [
-            ["back", "спина"],
-            ["head", "голова"],
-            ["belly", "живот"],
-          ],
-          { a: "head", b: "belly", c: "back" },
-        ),
+        voices: [
+          line(
+            "Patient A",
+            "Eddy",
+            "Ich habe Kopfschmerzen.",
+            "У меня болит голова.",
+          ),
+          line(
+            "Patientin B",
+            "Sandy",
+            "Mein Bauch tut weh.",
+            "У меня болит живот.",
+          ),
+          line(
+            "Patient C",
+            "Rocko",
+            "Mein Rücken tut weh.",
+            "У меня болит спина.",
+          ),
+        ],
+        practice: ["headache"],
+        prompt: "Послушайте пациентов и запишите, где болит.",
+        challenge: write("Wartekarten", [
+          ["a", "Patient A · Wo tut es weh?", ["Kopf", "der Kopf"]],
+          ["b", "Patientin B · Wo tut es weh?", ["Bauch", "der Bauch"]],
+          ["c", "Patient C · Wo tut es weh?", ["Rücken", "der Rücken"]],
+        ]),
         hint: "Kopf — голова; Bauch — живот; Rücken — спина.",
         success: "Карточки разложены. Назначения остаются делом врача.",
       },
@@ -1728,6 +1788,7 @@ export const episodes: Episode[] = [
         story: [
           "Кляйн говорит: «{must}» Дверь в кабинет закрыта. Рядом табличка: «{noentry}»",
         ],
+        practice: ["must", "noentry"],
         prompt: "Запишите в блокнот, что нужно и что нельзя.",
         challenge: gaps(
           "Sie ___ warten.\nSie ___ hier nicht hinein.",
@@ -1780,6 +1841,7 @@ export const episodes: Episode[] = [
     place: "Офис клуба · записи",
     topic: "Работа и прошлый день",
     grammar: "профессии · Perfekt с haben · war/hatte",
+    review: ["worked", "cook", "was", "had"],
     beats: [
       {
         id: "11-job",
@@ -1795,21 +1857,14 @@ export const episodes: Episode[] = [
             "Frau Petersen arbeitet im Büro der Sprachschule.",
           ],
         },
-        prompt: "Соедините человека и занятие.",
-        challenge: pairs(
-          [
-            ["m", "Mateo"],
-            ["d", "Dana"],
-            ["p", "Petersen"],
-          ],
-          [
-            ["office", "Офис языковой школы"],
-            ["cook", "Koch"],
-            ["doctor", "Ärztin"],
-          ],
-          { m: "cook", d: "doctor", p: "office" },
-        ),
-        hint: "Koch — повар; Ärztin — врач (женщина); Büro — офис.",
+        practice: ["cook"],
+        prompt: "Заполните карточки героев.",
+        challenge: write("Steckbriefe", [
+          ["m", "Mateo ist", ["Koch"]],
+          ["d", "Dana ist", ["Ärztin"]],
+          ["p", "Frau Petersen arbeitet im", ["Büro"]],
+        ]),
+        hint: "Koch — повар; Ärztin — врач; Büro — офис.",
         success:
           "Биографии согласованы. Ни одному герою не пришлось увольняться ради сюжета.",
       },
@@ -1819,6 +1874,7 @@ export const episodes: Episode[] = [
         story: [
           "Йенсен оставил записку: «{worked}» Слова habe и gearbeitet держат прошедшее событие с двух сторон.",
         ],
+        practice: ["worked"],
         prompt: "Соберите «Я вчера работал».",
         challenge: order(
           ["Ich", "habe", "gestern", "gearbeitet."],
@@ -1842,6 +1898,7 @@ export const episodes: Episode[] = [
             "17:25 Petersen hat das Büro geschlossen.",
           ],
         },
+        practice: ["was", "had"],
         prompt: "Сверьте записи с журналом ключей.",
         challenge: verdict(
           ["Richtig", "Falsch"],
@@ -1874,16 +1931,15 @@ export const episodes: Episode[] = [
         story: [
           "Второе сообщение наконец объясняет, зачем Йенсен взял обе сумки.",
         ],
-        source: {
-          title: "Jensen · отчёт",
-          lines: [
-            "Ich habe beide Taschen getragen. Nils hat Tee geholt.",
-            "Ich habe das Brot im Club gelassen.",
-            "Die andere Tasche habe ich im Bus vergessen.",
-            "Ich hatte Stress. Es tut mir leid.",
-          ],
-        },
-        prompt: "Какая цепочка соответствует отчёту?",
+        voices: [
+          line(
+            "Jensen",
+            "Grandpa",
+            "Ich habe beide Taschen getragen. Nils hat Tee geholt. Ich habe das Brot im Club gelassen. Die andere Tasche habe ich im Bus vergessen. Ich hatte Stress. Es tut mir leid.",
+            "Я нёс обе сумки. Нильс ходил за чаем. Хлеб я оставил в клубе. Другую сумку я забыл в автобусе. У меня был стресс. Мне жаль.",
+          ),
+        ],
+        prompt: "Послушайте отчёт Йенсена. Какая цепочка ему соответствует?",
         challenge: order(
           [
             "Взял обе сумки",
@@ -1942,6 +1998,7 @@ export const episodes: Episode[] = [
     place: "Киль · клуб",
     topic: "Поездки, погода и даты",
     grammar: "Perfekt с sein · погода · am ersten… · повторение A1",
+    review: ["rain", "arrived", "date", "traveled"],
     beats: [
       {
         id: "12-weather",
@@ -1949,27 +2006,21 @@ export const episodes: Episode[] = [
         story: [
           "{rain} Команда едет {bus}, а не идёт пешком. {arrived} — теперь рядом с ней и вы.",
         ],
-        source: {
-          title: "План возвращения",
-          lines: [
-            "Heute: Regen und Wind.",
-            "Wir fahren mit dem Bus. Die Tasche bleibt trocken.",
-            "Morgen: Sonne. Treffen im Club.",
-          ],
-        },
-        prompt: "Разложите план: что сегодня, а что завтра.",
-        challenge: sort(
-          [
-            ["today", "Heute"],
-            ["tomorrow", "Morgen"],
-          ],
-          [
-            ["rain", "Regen und Wind", "today"],
-            ["bus", "mit dem Bus", "today"],
-            ["sun", "Sonne", "tomorrow"],
-            ["club", "Treffen im Club", "tomorrow"],
-          ],
-        ),
+        voices: [
+          line(
+            "Dana",
+            "Anna",
+            "Heute Regen und Wind. Wir fahren mit dem Bus. Die Tasche bleibt trocken. Morgen Sonne. Treffen im Club.",
+            "Сегодня дождь и ветер. Мы едем на автобусе. Сумка останется сухой. Завтра солнце. Встреча в клубе.",
+          ),
+        ],
+        practice: ["rain"],
+        prompt: "Послушайте план и запишите, что сегодня, а что завтра.",
+        challenge: write("Plan", [
+          ["h", "Heute", ["Regen und Wind", "Regen"]],
+          ["b", "Wir fahren mit dem", ["Bus"]],
+          ["m", "Morgen", ["Sonne"]],
+        ]),
         hint: "Regen — дождь; Wind — ветер; trocken — сухой.",
         success: "Сумка сухая. Чайка мокрая, но сохраняет достоинство.",
       },
@@ -1979,6 +2030,7 @@ export const episodes: Episode[] = [
         story: [
           "Вы пишете в блокнот: «{traveled}» У движения другой вспомогательный глагол, чем у gearbeitet.",
         ],
+        practice: ["arrived"],
         prompt: "Соберите «Сумка прибыла».",
         challenge: order(
           ["Die Tasche", "ist", "angekommen."],
@@ -1994,14 +2046,16 @@ export const episodes: Episode[] = [
         story: [
           "Йенсен назначает маленькую встречу {date}. Это вымышленная дата встречи команды, а не календарь Kieler Woche.",
         ],
-        source: {
-          title: "Приглашение",
-          lines: [
-            "Treffen am ersten Juni um 17:30 Uhr im Club.",
-            "Bitte Wasser und Brot mitbringen.",
-          ],
-        },
-        prompt: "Отметьте в календаре дату из приглашения.",
+        voices: [
+          line(
+            "Jensen",
+            "Grandpa",
+            "Treffen am ersten Juni um siebzehn Uhr dreißig im Club. Bitte Wasser und Brot mitbringen.",
+            "Встреча первого июня в 17:30 в клубе. Пожалуйста, принесите воду и хлеб.",
+          ),
+        ],
+        practice: ["date"],
+        prompt: "Послушайте приглашение и отметьте дату в календаре.",
         challenge: {
           kind: "calendar",
           months: [
@@ -2062,6 +2116,7 @@ export const episodes: Episode[] = [
           "{found} На подставке снова MOIN. Йенсен говорит «{danke}», Матео приносит {bread}, Дана — {water}. Даже чайка на секунду молчит.",
           "Вы начинали с русского рассказа. Теперь {moin}, {inbag}, {table}, {bus} и целые немецкие фразы стали частью одной истории. Блокнот всё ещё нужен — но уже по другой причине.",
         ],
+        practice: ["found"],
         prompt: "Соберите финальную запись «Мы нашли табличку».",
         challenge: order(
           ["Wir", "haben", "das Schild", "gefunden."],

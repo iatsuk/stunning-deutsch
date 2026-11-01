@@ -630,6 +630,7 @@ function StoryTurn({
     checked,
     change,
     win: onWin,
+    miss: onMiss,
   };
   return (
     <div className="moin-turn">

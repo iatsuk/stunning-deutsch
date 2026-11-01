@@ -1,29 +1,35 @@
 {
  "date": "2026-11-01",
- "scope": "Moin story phrases and chapter 1 voice lines",
+ "scope": "Moin story phrases and character lines in all 12 chapters",
  "model": "k2-fsa/OmniVoice",
  "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
- "newFiles": 52,
- "seconds": 90.9,
- "bytes": 934082,
+ "newFiles": 78,
+ "seconds": 183.7,
+ "bytes": 2045687,
  "decodeFailures": 0,
  "cutEndings": 0,
  "asr": {
   "model": "openai/whisper-large-v3",
-  "exact": 46,
+  "exact": 62,
   "reviewed": {
    "Brot": "repetition artifact on a very short clip; clean with added silence",
    "Wir wollen zusammen suchen.": "spelling variant",
    "am ersten Juni": "digit notation",
    "Ich wohne in Gaarden.": "unknown place name",
    "zu Hause": "replaced; new seed heard correctly with and without context",
-   "zum Café": "heard as Kaffee without context and Café with context on 11 seeds; recogniser ambiguity, original seed kept, listen by ear"
+   "zum Café": "heard as Kaffee without context and Café with context on 11 seeds; recogniser ambiguity, original seed kept, listen by ear",
+   "numbers": "nine character lines were heard with digits (0176 23 45 81, 214, 240, 32, 18,50, 20, 17:30, 16, 17, 1. Juni); values match",
+   "Em, O, I, En.": "first seed sounded like M O E N; replaced by a seed heard as M O I N with and without context"
   }
  },
  "seedOverrides": [
   {
    "text": "zu Hause",
    "seed": 21082238
+  },
+  {
+   "text": "Em, O, I, En.",
+   "seed": 20349651
   }
  ],
  "note": "Automated checks do not replace listening."
