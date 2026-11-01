@@ -80,7 +80,7 @@ export function LevelPage({ level }: { level: Level }) {
           </ol>
         </section>
 
-        {assessments.length > 0 && <section className="exam" id="checks"><div className="section-head"><div className="kicker">Самостоятельно</div><h2>Проверки и пробник</h2><p>{level.id === "a1" ? "Итоговая проверка в формате экзамена на новых ситуациях." : "Входная проверка и новые ситуации после блоков уроков."} Доступ к темам открыт независимо от результата. Ответы разбираются после попытки; письмо и речь требуют отдельной проверки.</p></div><ol className="assessment-links">{assessments.map(a=><li key={a.id}><a href={`#/${level.id}/${a.id}`}>{a.title}</a><p>{a.intro}</p></li>)}</ol></section>}
+        {assessments.length > 0 && <section className="exam" id="checks"><div className="section-head"><div className="kicker">Самостоятельно</div><h2>Проверки и пробник</h2><p>{level.id === "a1" ? "Проверки после тем 4, 8 и 12 и итоговый пробник на новых ситуациях." : "Входная проверка и новые ситуации после блоков уроков."} Доступ к темам открыт независимо от результата. Ответы разбираются после попытки; письмо и речь требуют отдельной проверки.</p></div><ol className="assessment-links">{assessments.map(a=><li key={a.id}><a href={`#/${level.id}/${a.id}`}>{a.title}</a><p>{a.intro}</p></li>)}</ol></section>}
         {level.examInfo && (
           <section className="exam" id="exam">
             <div className="section-head">

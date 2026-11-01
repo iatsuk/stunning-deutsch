@@ -363,9 +363,9 @@ export const extras: Record<string, Beat[]> = {
       write("Notizen", [["вставать", "aufstehen"], ["начинать", "anfangen"], ["заканчивать", "aufhören"], ["длиться", "dauern"], ["рано", "früh"], ["поздно", "spät"]])),
     step("06-x-lock", "Ящик с журналом", "Судовой журнал лежит в ящике с замком. Хауке признаётся, что выбрал фразы про время, потому что вечно опаздывает.", LOCK, HINT_LOCK, "Журнал у вас. В нём записано, что Хауке опоздал к собственному ящику.",
       lock([
-        ["Я встаю в 7 часов.", [["Ich", "Du", "Er"], ["stehe", "stehst", "steht"], ["um 7 Uhr", "am 7 Uhr", "im 7 Uhr"], ["auf.", "an.", "aus."]]],
+        ["Я встаю в 7 часов.", [["Ich", "Du", "Er"], ["stehe", "stehst", "steht"], ["um sieben Uhr", "am sieben Uhr", "im sieben Uhr"], ["auf.", "an.", "aus."]]],
         ["Встреча начинается в понедельник.", [["Das Treffen", "Der Treffen", "Die Treffen"], ["fängt", "fange", "fangen"], ["am Montag", "um Montag", "im Montag"], ["an.", "auf.", "aus."]]],
-        ["Я работаю с 9 до 5.", [["Ich", "Du", "Wir"], ["arbeite", "arbeitest", "arbeiten"], ["von 9", "um 9", "am 9"], ["bis 5.", "nach 5.", "vor 5."]]],
+        ["Я работаю с 9 до 5.", [["Ich", "Du", "Wir"], ["arbeite", "arbeitest", "arbeiten"], ["von neun", "um neun", "am neun"], ["bis fünf.", "nach fünf.", "vor fünf."]]],
       ])),
     step("06-x-letter", "Письмо о расписании", "Ян пишет Дане о своём дне. Письмо Элиф подойдёт как образец, только время другое.", LETTER, HINT_LETTER, "Дана вносит Яна в расписание. Хауке вносит его туда же, но на другое время.",
       letter("Dana", ["Hallo Hauke,", "ich stehe um sieben Uhr auf. Der Kurs fängt um neun Uhr an. Am Freitag habe ich Zeit.", "Viele Grüße", "Elif"], [

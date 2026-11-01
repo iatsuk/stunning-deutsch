@@ -44,6 +44,12 @@ export function storyLines(
               ...(r.hear ? [{ text: r.hear, voice: PARTNER }] : []),
             ])
           : []),
+        ...(b.challenge.kind === "lock"
+          ? b.challenge.rounds.map((r) => ({
+              text: lockKey(r),
+              voice: NARRATOR,
+            }))
+          : []),
         ...(b.challenge.kind === "chat"
           ? b.challenge.turns.map((t) => ({
               text: t.say,

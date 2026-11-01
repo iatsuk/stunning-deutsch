@@ -545,6 +545,17 @@ test("oral practice follows the exam parts and always has a model to compare wit
   );
   assert.ok(lines.some((l) => l.text === "Ja, gern." && l.voice === "Anna"));
 });
+test("every lock phrase is voiced in the narrator's voice", () => {
+  const lines = storyLines(episodes, phrases);
+  for (const b of beats.filter((b) => b.challenge.kind === "lock"))
+    for (const round of b.challenge.rounds)
+      assert.ok(
+        lines.some(
+          (l) => l.text === round.answer.join(" ") && l.voice === "Anna",
+        ),
+        round.answer.join(" "),
+      );
+});
 test("every chapter and every lock explain the grammar they ask for", () => {
   for (const episode of episodes)
     assert.ok(

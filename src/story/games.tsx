@@ -1616,6 +1616,7 @@ function LockBox({
     ).length;
     setRight(clicked);
     if (clicked < reels.length) onMiss();
+    else play(storyAudio(lockKey(round)));
   }
   return (
     <>
@@ -1652,6 +1653,15 @@ function LockBox({
             ? ""
             : `Щёлкнуло дисков: ${right} из ${reels.length}`}
       </p>
+      {opened && (
+        <p className="moin-word-line" lang="de">
+          {lockKey(round)}{" "}
+          <PlayButton
+            src={storyAudio(lockKey(round))}
+            label="Послушать фразу"
+          />
+        </p>
+      )}
       <button
         type="button"
         className="primary"
@@ -1678,7 +1688,9 @@ export function Lock({
     return (
       <ul className="moin-lock-done" lang="de">
         {c.rounds.map((r) => (
-          <li key={lockKey(r)}>{lockKey(r)}</li>
+          <li key={lockKey(r)}>
+            {lockKey(r)} <PlayButton src={storyAudio(lockKey(r))} />
+          </li>
         ))}
       </ul>
     );

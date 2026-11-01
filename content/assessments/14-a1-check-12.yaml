@@ -1,0 +1,165 @@
+id: a1-check-12
+level: a1
+mode: review
+title: "После тем 9–12: поездка в Гамбург"
+intro: Поездка почти готова, но кто-то заболел. Поймите объявление и сообщения, забронируйте номер и
+  напишите на работу. Все люди и адреса вымышлены и не связаны с героями курса.
+sections:
+  - id: check
+    title: Подготовьте поездку
+    taskIds:
+      - phone
+      - read
+      - form
+      - write
+      - talk
+tasks:
+  phone:
+    kind: worksheet
+    part: hoeren-2
+    format: radio
+    title: Drei Nachrichten vor der Reise
+    situation: Hören Sie die Nachrichten. Wählen Sie die richtige Antwort.
+    questions:
+      - prompt: Von welchem Gleis fährt der Zug?
+        answers:
+          - Gleis 7
+        options:
+          - Gleis 5
+          - Gleis 17
+          - Gleis 7
+      - prompt: Was soll Herr Novak mitbringen?
+        answers:
+          - die Versichertenkarte
+        options:
+          - die Versichertenkarte
+          - das Rezept
+          - die Tabletten
+      - prompt: Wann fahren sie zurück?
+        answers:
+          - am Montag
+        options:
+          - am Sonntag
+          - am Montag
+          - am Dienstag
+    recordings:
+      - text: Achtung auf Gleis fünf. Der Zug nach Hamburg fährt heute von Gleis sieben ab.
+        voice: Sandy
+      - text: Guten Tag, Herr Novak. Hier ist die Praxis Doktor Lorenz. Sie haben morgen um neun Uhr einen
+          Termin. Bitte bringen Sie Ihre Versichertenkarte mit.
+        voice: Anna
+      - text: Hallo Emil, hier ist Nora. Wir sind gut in Hamburg angekommen. Das Wetter ist schön. Am
+          Montag fahren wir mit dem Zug zurück.
+        voice: Shelley
+  read:
+    kind: worksheet
+    part: lesen-1
+    format: article
+    title: Eine Nachricht von Nora
+    situation: Lesen Sie die Nachricht. Ist die Aussage richtig oder falsch?
+    text: |-
+      Lieber Emil,
+      gestern habe ich lange gearbeitet. Heute habe ich Fieber und muss im Bett bleiben. Der Arzt sagt: viel trinken und nicht arbeiten. Kannst du bitte zur Apotheke gehen? Das Rezept liegt auf dem Tisch.
+      Danke!
+      Nora
+    questions:
+      - prompt: Nora ist heute krank.
+        answers:
+          - richtig
+        options:
+          - richtig
+          - falsch
+      - prompt: Nora darf heute arbeiten.
+        answers:
+          - falsch
+        options:
+          - richtig
+          - falsch
+      - prompt: Emil soll zur Apotheke gehen.
+        answers:
+          - richtig
+        options:
+          - richtig
+          - falsch
+      - prompt: Das Rezept ist in der Tasche.
+        answers:
+          - falsch
+        options:
+          - richtig
+          - falsch
+  form:
+    kind: worksheet
+    part: schreiben-1
+    format: notes
+    title: Reservierung im Hotel
+    situation: Ihre Freundin Nora Bauer fährt am 3. Juli nach Hamburg. Sie möchte zwei Nächte im Hotel
+      bleiben und braucht ein Einzelzimmer. Füllen Sie das Formular für sie aus.
+    questions:
+      - prompt: Familienname
+        answers:
+          - Bauer
+      - prompt: Anreise
+        answers:
+          - 3. Juli
+          - 3.7.
+          - 03.07.
+          - am 3. Juli
+      - prompt: Nächte
+        answers:
+          - "2"
+          - zwei
+      - prompt: Zimmer
+        answers:
+          - Einzelzimmer
+          - ein Einzelzimmer
+  write:
+    kind: message
+    part: schreiben-2
+    title: Eine E-Mail an die Chefin
+    text: Schreiben Sie eine E-Mail.
+    situation: Sie waren krank und konnten nicht arbeiten. Schreiben Sie Ihrer Chefin, Frau Lange.
+      Schreiben Sie etwa 30 Wörter. Schreiben Sie etwas zu allen drei Punkten. Anrede und Gruß nicht
+      vergessen.
+    points:
+      - Warum waren Sie nicht bei der Arbeit?
+      - Was hat der Arzt gesagt?
+      - Wann kommen Sie wieder?
+    sample:
+      - Liebe Frau Lange, ich hatte Fieber und war gestern beim Arzt. Der Arzt hat gesagt, ich muss im
+        Bett bleiben. Am Montag komme ich wieder. Viele Grüße, Emil
+  talk:
+    kind: card
+    part: sprechen-3
+    title: Bitten formulieren
+    word: Eine Bitte zu jedem Bild
+    situation: Bitten Sie Ihren Partner oder Ihre Partnerin zu jedem Bild um etwas. Reagieren Sie auch auf
+      die Bitten von der anderen Person.
+    roles:
+      - title: Person A
+        text: "Ihre Bilder: 🚪 · 🧳"
+      - title: Person B
+        text: "Ihre Bilder: 💊 · 🎫"
+review:
+  - level: a1
+    topic: stadt
+    label: "Тема 9: вокзал и дорога"
+    taskIds:
+      - phone
+      - read
+  - level: a1
+    topic: gesundheit
+    label: "Тема 10: врач и запреты"
+    taskIds:
+      - phone
+      - read
+  - level: a1
+    topic: arbeit
+    label: "Тема 11: работа и прошлое"
+    taskIds:
+      - read
+  - level: a1
+    topic: reisen
+    label: "Тема 12: поездка и даты"
+    taskIds:
+      - phone
+      - form

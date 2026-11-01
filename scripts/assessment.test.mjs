@@ -62,7 +62,7 @@ test('полный B1: 60 закрытых заданий, реальные ве
 });
 
 test('пробник A1 повторяет формат Start Deutsch 1',()=>{
- const mock=parse(readFileSync(new URL('../content/assessments/12-a1-mock.yaml',import.meta.url),'utf8'));
+ const mock=parse(readFileSync(new URL('../content/assessments/15-a1-mock.yaml',import.meta.url),'utf8'));
  assert.deepEqual(mock.sections.map(s=>s.minutes),[20,25,20,15]);
  const count=part=>Object.values(mock.tasks).filter(t=>t.part===part).reduce((n,t)=>n+t.questions.length,0);
  assert.deepEqual(['hoeren-1','hoeren-2','hoeren-3','lesen-1','lesen-2','lesen-3','schreiben-1'].map(count),[6,4,5,5,5,5,5]);
@@ -74,7 +74,7 @@ test('пробник A1 повторяет формат Start Deutsch 1',()=>{
  assert.equal(mock.tasks.ask.roles.length,2);assert.notEqual(mock.tasks.please.roles[0].text,mock.tasks.please.roles[1].text);
 });
 test('в пробнике A1 верный ответ не угадывается по позиции',()=>{
- const mock=parse(readFileSync(new URL('../content/assessments/12-a1-mock.yaml',import.meta.url),'utf8'));
+ const mock=parse(readFileSync(new URL('../content/assessments/15-a1-mock.yaml',import.meta.url),'utf8'));
  const questions=Object.values(mock.tasks).flatMap(t=>t.questions??[]).filter(q=>q.options);
  assert.ok(questions.every(q=>q.answers.length===1&&q.options.includes(q.answers[0])));
  const three=questions.filter(q=>q.options.length===3).map(q=>q.options.indexOf(q.answers[0]));
@@ -87,11 +87,34 @@ test('в пробнике A1 верный ответ не угадывается
  }
 });
 test('результат A1 считается по модулям и не объявляет сдачу',()=>{
- const mock=parse(readFileSync(new URL('../content/assessments/12-a1-mock.yaml',import.meta.url),'utf8'));
+ const mock=parse(readFileSync(new URL('../content/assessments/15-a1-mock.yaml',import.meta.url),'utf8'));
  const values={};for(const[id,t]of Object.entries(mock.tasks))for(const[i,q]of(t.questions??[]).entries())values[`${id}:${i}`]=q.answers[0];
  assert.deepEqual(a1ModuleResult(mock.tasks,values),{hoeren:{correct:15,total:15},lesen:{correct:15,total:15},form:{correct:5,total:5}});
  assert.equal(objectiveResult(mock.tasks,values).total,35);
  values['talk1:0']='10:00 Uhr';values['sign1:0']='falsch';values['form:1']='28';
  assert.deepEqual(a1ModuleResult(mock.tasks,values),{hoeren:{correct:14,total:15},lesen:{correct:14,total:15},form:{correct:4,total:5}});
  values['form:1']=' 27 Jahre ';assert.equal(a1ModuleResult(mock.tasks,values).form.correct,5);
+});
+
+test('проверки A1 идут после тем 4, 8 и 12 и не ограничивают попытку',()=>{
+ const load=file=>parse(readFileSync(new URL(`../content/assessments/${file}`,import.meta.url),'utf8'));
+ const checks=['12-a1-check-04.yaml','13-a1-check-08.yaml','14-a1-check-12.yaml'].map(load);
+ assert.deepEqual(checks.map(c=>c.id),['a1-check-04','a1-check-08','a1-check-12']);
+ for(const c of checks){
+  assert.equal(c.mode,'review');assert.equal(c.level,'a1');
+  assert.ok(c.sections.every(s=>s.minutes===undefined));
+  const tasks=Object.values(c.tasks);
+  assert.ok(tasks.some(t=>t.part.startsWith('hoeren')&&t.recordings?.length===t.questions.length));
+  assert.ok(tasks.some(t=>t.part.startsWith('lesen')));
+  assert.ok(tasks.some(t=>t.part==='schreiben-2'&&t.points.length===3&&t.sample.length===1));
+  assert.ok(tasks.some(t=>t.part.startsWith('sprechen')));
+  const three=tasks.flatMap(t=>t.questions??[]).filter(q=>q.options?.length===3).map(q=>q.options.indexOf(q.answers[0]));
+  assert.equal(new Set(three).size,3,c.id);
+  assert.ok(c.review.length>=4);
+ }
+});
+test('проверка после темы 4 не требует грамматики следующих тем',()=>{
+ const c=parse(readFileSync(new URL('../content/assessments/12-a1-check-04.yaml',import.meta.url),'utf8'));
+ const text=JSON.stringify(c.tasks);
+ for(const later of ['kann','muss','will','hat gesagt','gegangen','gearbeitet'])assert.ok(!new RegExp(`\\b${later}\\b`).test(text),later);
 });

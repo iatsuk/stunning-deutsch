@@ -1,0 +1,54 @@
+{
+ "date": "2026-11-01",
+ "scope": "A1 checks after topics 4, 8 and 12, and the Moin lock phrases",
+ "model": "k2-fsa/OmniVoice",
+ "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+ "newFiles": 35,
+ "seconds": 139.3,
+ "bytes": 1665034,
+ "decodeFailures": 0,
+ "cutEndings": 0,
+ "asr": {
+  "model": "openai/whisper-large-v3",
+  "exact": 26,
+  "differences": [
+   {
+    "text": "Hallo, hier ist Sofia. Ich wohne jetzt in der Feldstraße. Meine Telefonnummer ist null, eins, fünf, eins, drei, sechs, neun, zwei.",
+    "heard": "Hallo, hier ist Sophia. Ich wohne jetzt in der Feldstraße. Meine Telefonnummer ist 01513692."
+   },
+   {
+    "text": "Liebe Sofia, danke für die Einladung. Ich esse kein Fleisch. Ich möchte einen Tee trinken. Viele Grüße, Marta",
+    "heard": "Liebe Sophia, danke für die Einladung. Ich esse kein Fleisch. Ich möchte einen Tee trinken. Viele Grüße, Marta."
+   },
+   {
+    "text": "Liebe Kundinnen und Kunden! Heute kostet ein Kilo Tomaten nur zwei Euro fünfzig.",
+    "heard": "Liebe Kundinnen und Kunden, heute kostet ein Kilo Tomaten nur 2,50 Euro."
+   },
+   {
+    "text": "Hallo Sara, hier ist Ben. Der Film fängt heute um acht Uhr an, nicht um sieben. Ich warte um halb acht am Kino.",
+    "heard": "Hallo Sarah, hier ist Ben. Der Film fängt heute um 8 Uhr an, nicht um 7. Ich warte um halb 8 am Kino."
+   },
+   {
+    "text": "Guten Tag, Frau Weber. Die Wohnung in der Hafenstraße ist noch frei. Sie hat zwei Zimmer und einen Balkon. Sie können am Samstag um elf Uhr kommen.",
+    "heard": "Guten Tag, Frau Weber. Die Wohnung in der Hafenstraße ist noch frei. Sie hat zwei Zimmer und einen Balkon. Sie können am Samstag um 11 Uhr kommen."
+   },
+   {
+    "text": "Lieber Ben, ich kann heute leider nicht kommen. Ich muss arbeiten. Am Sonntag habe ich Zeit. Ich möchte dann ins Schwimmbad gehen. Viele Grüße, Sara",
+    "heard": "Lieber Ben, ich kann heute leider nicht kommen. Ich muss arbeiten. Am Sonntag habe ich Zeit. Ich möchte dann ins Schwimmbad gehen. Viele Grüße, Sarah."
+   },
+   {
+    "text": "Achtung auf Gleis fünf. Der Zug nach Hamburg fährt heute von Gleis sieben ab.",
+    "heard": "Achtung auf Gleis 5. Der Zug nach Hamburg fährt heute von Gleis 7 ab."
+   },
+   {
+    "text": "Guten Tag, Herr Novak. Hier ist die Praxis Doktor Lorenz. Sie haben morgen um neun Uhr einen Termin. Bitte bringen Sie Ihre Versichertenkarte mit.",
+    "heard": "Guten Tag, Herr Nowak. Hier ist die Praxis Dr. Lorenz. Sie haben morgen um 9 Uhr einen Termin. Bitte bringen Sie Ihre Versichertenkarte mit."
+   },
+   {
+    "text": "Am ersten Juni bin ich in Kiel.",
+    "heard": "Am 1. Juni bin ich in Kiel."
+   }
+  ]
+ },
+ "note": "All differences are spellings of names, digits for number words and Dr. for Doktor; every number the answers depend on was heard correctly. Automated checks do not replace listening."
+}

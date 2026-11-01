@@ -1,0 +1,232 @@
+{
+ "id": "a1-check-04",
+ "level": "a1",
+ "mode": "review",
+ "title": "После тем 1–4: новая соседка",
+ "intro": "В доме новая соседка. Познакомьтесь с ней, поймите приглашение и ответьте на него. Все люди и адреса вымышлены и не связаны с героями курса.",
+ "sections": [
+  {
+   "id": "check",
+   "title": "Познакомьтесь с соседкой",
+   "taskIds": [
+    "phone",
+    "read",
+    "form",
+    "write",
+    "talk"
+   ]
+  }
+ ],
+ "tasks": {
+  "phone": {
+   "kind": "worksheet",
+   "part": "hoeren-3",
+   "format": "radio",
+   "title": "Drei Nachrichten von Sofia",
+   "situation": "Hören Sie die Nachrichten. Wählen Sie die richtige Antwort.",
+   "questions": [
+    {
+     "prompt": "Wie ist die Telefonnummer von Sofia?",
+     "answers": [
+      "0151 3692"
+     ],
+     "options": [
+      "0151 3629",
+      "0151 3692",
+      "0115 3692"
+     ]
+    },
+    {
+     "prompt": "Wie alt ist Leo?",
+     "answers": [
+      "8 Jahre"
+     ],
+     "options": [
+      "8 Jahre",
+      "6 Jahre",
+      "18 Jahre"
+     ]
+    },
+    {
+     "prompt": "Was gibt es am Samstag?",
+     "answers": [
+      "Suppe und Brot"
+     ],
+     "options": [
+      "Kaffee und Kuchen",
+      "Fisch und Salat",
+      "Suppe und Brot"
+     ]
+    }
+   ],
+   "recordings": [
+    {
+     "text": "Hallo, hier ist Sofia. Ich wohne jetzt in der Feldstraße. Meine Telefonnummer ist null, eins, fünf, eins, drei, sechs, neun, zwei.",
+     "audio": "audio/15388cc1480d.m4a"
+    },
+    {
+     "text": "Ich habe zwei Kinder. Mein Sohn heißt Leo, meine Tochter heißt Mia. Leo ist acht Jahre alt.",
+     "audio": "audio/72cd4b96b772.m4a"
+    },
+    {
+     "text": "Am Samstag essen wir zusammen. Es gibt Suppe und Brot. Ich habe keinen Kaffee, aber ich habe Tee.",
+     "audio": "audio/1bb85a48c387.m4a"
+    }
+   ],
+   "sample": []
+  },
+  "read": {
+   "kind": "worksheet",
+   "part": "lesen-1",
+   "format": "article",
+   "title": "Eine Nachricht im Treppenhaus",
+   "situation": "Lesen Sie die Nachricht. Ist die Aussage richtig oder falsch?",
+   "text": "Liebe Nachbarn,\nich heiße Sofia Marin und komme aus Spanien. Ich wohne jetzt in der Feldstraße 8. Mein Mann heißt Jorge. Wir haben zwei Kinder. Am Samstag um 18 Uhr gibt es bei uns Suppe und Brot. Möchten Sie auch kommen?\nViele Grüße\nSofia",
+   "questions": [
+    {
+     "prompt": "Sofia kommt aus Spanien.",
+     "answers": [
+      "richtig"
+     ],
+     "options": [
+      "richtig",
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Sofia hat drei Kinder.",
+     "answers": [
+      "falsch"
+     ],
+     "options": [
+      "richtig",
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Das Essen ist am Samstag um 18 Uhr.",
+     "answers": [
+      "richtig"
+     ],
+     "options": [
+      "richtig",
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Es gibt Kaffee und Kuchen.",
+     "answers": [
+      "falsch"
+     ],
+     "options": [
+      "richtig",
+      "falsch"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "form": {
+   "kind": "worksheet",
+   "part": "schreiben-1",
+   "format": "notes",
+   "title": "Anmeldung zum Deutschkurs",
+   "situation": "Ihre Nachbarin Sofia Marin möchte Deutsch lernen. Sie ist 34 Jahre alt und kommt aus Spanien. Sie wohnt in der Feldstraße 8 in Kiel. Sie spricht Spanisch und Englisch. Füllen Sie das Formular für sie aus.",
+   "questions": [
+    {
+     "prompt": "Familienname",
+     "answers": [
+      "Marin"
+     ]
+    },
+    {
+     "prompt": "Alter",
+     "answers": [
+      "34",
+      "34 Jahre",
+      "34 Jahre alt",
+      "vierunddreißig"
+     ]
+    },
+    {
+     "prompt": "Herkunftsland",
+     "answers": [
+      "Spanien"
+     ]
+    },
+    {
+     "prompt": "Wohnort",
+     "answers": [
+      "Kiel"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "write": {
+   "kind": "message",
+   "part": "schreiben-2",
+   "title": "Antwort an Sofia",
+   "text": "Schreiben Sie eine Nachricht.",
+   "situation": "Sofia hat Sie am Samstag eingeladen. Antworten Sie ihr. Schreiben Sie etwa 20 Wörter. Schreiben Sie etwas zu allen drei Punkten. Anrede und Gruß nicht vergessen.",
+   "points": [
+    "Danke sagen",
+    "Was essen Sie nicht?",
+    "Was möchten Sie trinken?"
+   ],
+   "sample": [
+    {
+     "de": "Liebe Sofia, danke für die Einladung. Ich esse kein Fleisch. Ich möchte einen Tee trinken. Viele Grüße, Marta",
+     "audio": "audio/531c7e3ad03a.m4a"
+    }
+   ]
+  },
+  "talk": {
+   "kind": "card",
+   "part": "sprechen-1",
+   "title": "Sich vorstellen",
+   "word": "Name · Land · Wohnort · Sprachen · Familie",
+   "situation": "Stellen Sie sich Ihrer neuen Nachbarin vor. Buchstabieren Sie dann Ihren Namen und nennen Sie Ihre Telefonnummer.",
+   "sample": []
+  }
+ },
+ "review": [
+  {
+   "level": "a1",
+   "topic": "zahlen",
+   "label": "Тема 2: числа на слух",
+   "taskIds": [
+    "phone",
+    "form"
+   ]
+  },
+  {
+   "level": "a1",
+   "topic": "kennenlernen",
+   "label": "Тема 1: откуда и где",
+   "taskIds": [
+    "read",
+    "form"
+   ]
+  },
+  {
+   "level": "a1",
+   "topic": "familie",
+   "label": "Тема 3: семья",
+   "taskIds": [
+    "phone",
+    "read"
+   ]
+  },
+  {
+   "level": "a1",
+   "topic": "essen",
+   "label": "Тема 4: еда и напитки",
+   "taskIds": [
+    "phone",
+    "read"
+   ]
+  }
+ ],
+ "dialogues": {}
+}

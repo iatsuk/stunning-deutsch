@@ -1,0 +1,201 @@
+{
+ "id": "a1-check-08",
+ "level": "a1",
+ "mode": "review",
+ "title": "После тем 5–8: выходные в Киле",
+ "intro": "Выходные полны дел. Поймите цену и время, прочитайте объявление о квартире и договоритесь о встрече. Все люди и адреса вымышлены и не связаны с героями курса.",
+ "sections": [
+  {
+   "id": "check",
+   "title": "Спланируйте выходные",
+   "taskIds": [
+    "phone",
+    "read",
+    "write",
+    "talk"
+   ]
+  }
+ ],
+ "tasks": {
+  "phone": {
+   "kind": "worksheet",
+   "part": "hoeren-1",
+   "format": "radio",
+   "title": "Drei Nachrichten am Wochenende",
+   "situation": "Hören Sie die Nachrichten. Wählen Sie die richtige Antwort.",
+   "questions": [
+    {
+     "prompt": "Was kostet ein Kilo Tomaten?",
+     "answers": [
+      "2,50 €"
+     ],
+     "options": [
+      "2,15 €",
+      "5,20 €",
+      "2,50 €"
+     ]
+    },
+    {
+     "prompt": "Wann fängt der Film an?",
+     "answers": [
+      "um 8 Uhr"
+     ],
+     "options": [
+      "um 8 Uhr",
+      "um 7 Uhr",
+      "um 7:30 Uhr"
+     ]
+    },
+    {
+     "prompt": "Wann kann Frau Weber die Wohnung sehen?",
+     "answers": [
+      "am Samstag um 11 Uhr"
+     ],
+     "options": [
+      "am Sonntag um 11 Uhr",
+      "am Samstag um 11 Uhr",
+      "am Samstag um 10 Uhr"
+     ]
+    }
+   ],
+   "recordings": [
+    {
+     "text": "Liebe Kundinnen und Kunden! Heute kostet ein Kilo Tomaten nur zwei Euro fünfzig.",
+     "audio": "audio/a67c82a8a6fb.m4a"
+    },
+    {
+     "text": "Hallo Sara, hier ist Ben. Der Film fängt heute um acht Uhr an, nicht um sieben. Ich warte um halb acht am Kino.",
+     "audio": "audio/72d0b1f7d3d3.m4a"
+    },
+    {
+     "text": "Guten Tag, Frau Weber. Die Wohnung in der Hafenstraße ist noch frei. Sie hat zwei Zimmer und einen Balkon. Sie können am Samstag um elf Uhr kommen.",
+     "audio": "audio/ff076c4b1081.m4a"
+    }
+   ],
+   "sample": []
+  },
+  "read": {
+   "kind": "worksheet",
+   "part": "lesen-2",
+   "format": "article",
+   "title": "Eine Anzeige",
+   "situation": "Lesen Sie die Anzeige. Ist die Aussage richtig oder falsch?",
+   "text": "Schöne Wohnung in Kiel-Gaarden\n2 Zimmer, Küche, Bad, Balkon, 52 m², 480 Euro warm.\nDie Waschmaschine steht im Keller. Die Wohnung ist ruhig und hell. Die Haltestelle ist in der Nähe.\nAnrufe bitte ab 17 Uhr.",
+   "questions": [
+    {
+     "prompt": "Die Wohnung hat einen Balkon.",
+     "answers": [
+      "richtig"
+     ],
+     "options": [
+      "richtig",
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Die Waschmaschine steht im Bad.",
+     "answers": [
+      "falsch"
+     ],
+     "options": [
+      "richtig",
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Die Wohnung kostet 520 Euro warm.",
+     "answers": [
+      "falsch"
+     ],
+     "options": [
+      "richtig",
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Sie können ab 17 Uhr anrufen.",
+     "answers": [
+      "richtig"
+     ],
+     "options": [
+      "richtig",
+      "falsch"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "write": {
+   "kind": "message",
+   "part": "schreiben-2",
+   "title": "Eine Nachricht an Ben",
+   "text": "Schreiben Sie eine Nachricht.",
+   "situation": "Sie können heute nicht ins Kino gehen. Schreiben Sie Ben. Schreiben Sie etwa 25 Wörter. Schreiben Sie etwas zu allen drei Punkten. Anrede und Gruß nicht vergessen.",
+   "points": [
+    "Warum können Sie nicht kommen?",
+    "Wann haben Sie Zeit?",
+    "Was möchten Sie dann machen?"
+   ],
+   "sample": [
+    {
+     "de": "Lieber Ben, ich kann heute leider nicht kommen. Ich muss arbeiten. Am Sonntag habe ich Zeit. Ich möchte dann ins Schwimmbad gehen. Viele Grüße, Sara",
+     "audio": "audio/9061b00611e8.m4a"
+    }
+   ]
+  },
+  "talk": {
+   "kind": "card",
+   "part": "sprechen-2",
+   "title": "Um Informationen bitten",
+   "word": "Thema: Wohnen und Freizeit",
+   "situation": "Stellen Sie zu jedem Wort eine Frage. Antworten Sie auch auf die Fragen von Ihrem Partner oder Ihrer Partnerin.",
+   "roles": [
+    {
+     "title": "Person A",
+     "text": "Ihre Wörter: Küche · Miete"
+    },
+    {
+     "title": "Person B",
+     "text": "Ihre Wörter: Hobby · Wochenende"
+    }
+   ],
+   "sample": []
+  }
+ },
+ "review": [
+  {
+   "level": "a1",
+   "topic": "einkaufen",
+   "label": "Тема 5: цены",
+   "taskIds": [
+    "phone"
+   ]
+  },
+  {
+   "level": "a1",
+   "topic": "tagesablauf",
+   "label": "Тема 6: время и отделяемые глаголы",
+   "taskIds": [
+    "phone",
+    "read"
+   ]
+  },
+  {
+   "level": "a1",
+   "topic": "freizeit",
+   "label": "Тема 7: планы и отказ",
+   "taskIds": [
+    "phone"
+   ]
+  },
+  {
+   "level": "a1",
+   "topic": "wohnen",
+   "label": "Тема 8: квартира и объявления",
+   "taskIds": [
+    "read"
+   ]
+  }
+ ],
+ "dialogues": {}
+}
