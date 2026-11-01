@@ -4,6 +4,7 @@ import { existsSync, readFileSync } from "node:fs";
 import { spawnSync } from "node:child_process";
 import { plain, preis } from "../src/lib/german.ts";
 import { episodes, beats, phrases } from "../src/story/data.ts";
+import { rulesBefore, stepRules } from "../src/story/rules.ts";
 import {
   beatPhrases,
   audioKey,
@@ -484,6 +485,55 @@ test("the game uses every word of the A1 lessons", () => {
     Object.keys(words).filter((w) => !used.has(w)),
     [],
   );
+});
+test("every chapter and every lock explain the grammar they ask for", () => {
+  for (const episode of episodes)
+    assert.ok(
+      episode.beats.some((b) => stepRules[b.id]?.length),
+      episode.id,
+    );
+  for (const b of beats.filter((b) => b.challenge.kind === "lock"))
+    assert.ok(stepRules[b.id]?.length, b.id);
+  for (const id of Object.keys(stepRules)) assert.ok(byId(id), id);
+});
+test("rules come from the lesson of their chapter, with text and a schema", () => {
+  const rules = JSON.parse(
+    readFileSync(new URL("../src/generated/story-rules.json", import.meta.url)),
+  );
+  const lessons = [
+    "kennenlernen",
+    "zahlen",
+    "familie",
+    "essen",
+    "einkaufen",
+    "tagesablauf",
+    "freizeit",
+    "wohnen",
+    "stadt",
+    "gesundheit",
+    "arbeit",
+    "reisen",
+  ];
+  for (const [step, refs] of Object.entries(stepRules))
+    for (const ref of refs) {
+      const rule = rules[ref];
+      assert.ok(rule?.point && rule.read, ref);
+      assert.ok(rule.table || rule.rows?.length, ref);
+      assert.ok(!/схем\p{L}* справа/iu.test(rule.read), ref);
+      const chapter = episodes.findIndex((e) =>
+        e.beats.some((b) => b.id === step),
+      );
+      assert.equal(ref.split("/")[0], lessons[chapter], `${step}: ${ref}`);
+    }
+});
+test("rules already seen are listed once, in the order of the story", () => {
+  assert.deepEqual(rulesBefore(beats, 0), []);
+  const all = rulesBefore(beats, beats.length);
+  assert.equal(new Set(all).size, all.length);
+  assert.equal(all[0], stepRules["01-question"][0]);
+  const before = beats.findIndex((b) => b.id === "03-x-lock");
+  assert.ok(rulesBefore(beats, before).includes("familie/wessen-1"));
+  assert.ok(!rulesBefore(beats, before).includes("familie/kein-2"));
 });
 test("every phrase and voice line resolves to a recording that exists", () => {
   const map = JSON.parse(

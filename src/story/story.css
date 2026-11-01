@@ -1343,6 +1343,45 @@
   text-align: center;
   overflow-wrap: anywhere;
 }
+.moin-rule-card {
+  margin: 0 0 18px;
+  border: 1px solid var(--line-strong);
+  border-radius: 5px;
+  background: var(--panel-2);
+}
+.moin-rule-card summary {
+  padding: 10px 14px;
+  font-size: 15px;
+  line-height: 1.45;
+  cursor: pointer;
+}
+.moin-rule-point {
+  display: block;
+}
+/* Узкая таблица прокручивается: немецкие слова в ней нельзя рвать посередине. */
+.moin-rule-card .gtable {
+  overflow-wrap: normal;
+  word-break: normal;
+}
+.moin-rule-card > :not(summary) {
+  margin: 0 14px 14px;
+}
+.moin-rule-card > p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+.moin-turn-actions + .moin-rule-card,
+.moin-hint + .moin-rule-card,
+.moin-feedback + .moin-rule-card {
+  margin-top: 18px;
+}
+.moin-notebook-rules h3 {
+  margin: 18px 0 10px;
+  font-size: 16px;
+}
+.moin-notebook-rules .moin-rule-card {
+  margin-bottom: 8px;
+}
 .moin-drill {
   padding: 26px 30px;
 }
@@ -1705,6 +1744,21 @@
   }
   .moin-drill {
     padding: 22px 18px;
+  }
+  .moin-rule-card > :not(summary) {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .moin-rule-card .gtable {
+    font-size: 14px;
+  }
+  .moin-rule-card .gtable th,
+  .moin-rule-card .gtable td {
+    padding: 5px 4px;
+  }
+  .moin-rule-card .tile {
+    padding: 3px 5px 4px;
+    font-size: 13.5px;
   }
   .moin-turn h3 {
     font-size: 17px;

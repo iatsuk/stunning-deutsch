@@ -6,6 +6,8 @@ import { PlayButton, plural } from "../markup";
 import { a1Words, storyAudio, wordInfo } from "./audio";
 import { beats, episodes, phrases } from "./data";
 import { WordDrill } from "./drill";
+import { RuleCard } from "./RuleCard";
+import { rulesBefore, stepRules } from "./rules";
 import {
   Bingo,
   Calendar,
@@ -582,6 +584,7 @@ export function StoryPage() {
                       save.drafts[beat.id] ?? initialAnswer(beat.challenge)
                     }
                     solved={save.completed > save.cursor}
+                    seenRules={rulesBefore(beats, save.cursor)}
                     rich={rich}
                     onChange={(v) =>
                       setSave((s) => ({
@@ -703,6 +706,14 @@ export function StoryPage() {
                       — ещё не доказательство.
                     </p>
                   )}
+                  {rulesBefore(beats, save.cursor + 1).length > 0 && (
+                    <section className="moin-notebook-rules">
+                      <h3>Правила</h3>
+                      {rulesBefore(beats, save.cursor + 1).map((id) => (
+                        <RuleCard key={id} id={id} open={false} />
+                      ))}
+                    </section>
+                  )}
                   <p className="moin-route-note">
                     Знакомых выражений в рассказе: {known.size}. Это число
                     встреченных фраз, не оценка знания A1.
@@ -727,6 +738,7 @@ function StoryTurn({
   beat,
   value,
   solved,
+  seenRules,
   onChange,
   onWin,
   onMiss,
@@ -736,6 +748,7 @@ function StoryTurn({
   beat: Beat;
   value: Answer;
   solved: boolean;
+  seenRules: string[];
   onChange: (v: Answer) => void;
   onWin: () => void;
   onMiss: () => void;
@@ -745,8 +758,15 @@ function StoryTurn({
   const [checked, setChecked] = useState(false),
     [hint, setHint] = useState(false),
     [script, setScript] = useState(false),
-    [audioError, setAudioError] = useState(false);
+    [audioError, setAudioError] = useState(false),
+    [ruleOpen, setRuleOpen] = useState(false);
   const c = beat.challenge;
+  // Новое правило открыто перед игрой. Остальные ждут под ней: после ошибки они
+  // раскрываются там, где смотрит игрок, и не сдвигают само задание.
+  const rules = stepRules[beat.id] ?? [];
+  const firstRule = solved
+    ? undefined
+    : rules.find((id) => !seenRules.includes(id));
   const correct = isCorrect(c, value);
   // В старом сохранении шаг мог быть другой игрой: показываем готовый ответ.
   const shown = solved && !correct ? solution(c) : value;
@@ -762,6 +782,7 @@ function StoryTurn({
     setChecked(true);
     if (correct) return onWin();
     onMiss();
+    setRuleOpen(true);
     if (c.kind === "write") wrongAnswers(c, value).forEach(onSlip);
   }
   const game = {
@@ -771,7 +792,11 @@ function StoryTurn({
     checked,
     change,
     win: onWin,
-    miss: (word?: string) => (word ? onSlip(word) : onMiss()),
+    miss(word?: string) {
+      setRuleOpen(true);
+      if (word) onSlip(word);
+      else onMiss();
+    },
   };
   return (
     <div className="moin-turn">
@@ -810,6 +835,7 @@ function StoryTurn({
       {beat.voices && <VoiceLines lines={beat.voices} />}
       <div className="kicker moin-game-name">{GAME_NAMES[c.kind]}</div>
       <h3>{beat.prompt}</h3>
+      {firstRule && <RuleCard id={firstRule} open />}
       {c.kind === "match" && <Pairs c={c} {...game} />}
       {c.kind === "write" && <Write c={c} {...game} />}
       {c.kind === "bingo" && <Bingo c={c} {...game} />}
@@ -1013,6 +1039,11 @@ function StoryTurn({
           )}
         </div>
       )}
+      {rules
+        .filter((id) => id !== firstRule)
+        .map((id) => (
+          <RuleCard key={id} id={id} open={ruleOpen} />
+        ))}
     </div>
   );
 }

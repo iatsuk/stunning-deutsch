@@ -1561,10 +1561,12 @@ function LockBox({
   round,
   seed,
   onDone,
+  onMiss,
 }: {
   round: LockRound;
   seed: string;
   onDone: () => void;
+  onMiss: () => void;
 }) {
   const reels = useMemo(
     () => round.reels.map((options, i) => shuffle(options, `${seed}-${i}`)),
@@ -1582,9 +1584,11 @@ function LockBox({
     setRight(null);
   }
   function tryOpen() {
-    setRight(
-      reels.filter((options, i) => options[at[i]] === round.answer[i]).length,
-    );
+    const clicked = reels.filter(
+      (options, i) => options[at[i]] === round.answer[i],
+    ).length;
+    setRight(clicked);
+    if (clicked < reels.length) onMiss();
   }
   return (
     <>
@@ -1632,7 +1636,15 @@ function LockBox({
   );
 }
 
-export function Lock({ c, value, seed, disabled, change, win }: Game<"lock">) {
+export function Lock({
+  c,
+  value,
+  seed,
+  disabled,
+  change,
+  win,
+  miss,
+}: Game<"lock">) {
   const solved = asList(value);
   const round = c.rounds[solved.length];
   if (!round || disabled)
@@ -1652,6 +1664,7 @@ export function Lock({ c, value, seed, disabled, change, win }: Game<"lock">) {
         key={lockKey(round)}
         round={round}
         seed={`${seed}-${solved.length}`}
+        onMiss={() => miss()}
         onDone={() => {
           const next = [...solved, lockKey(round)];
           change(next);
