@@ -6,6 +6,7 @@ import { preis } from "../src/lib/german.ts";
 import { episodes, beats, phrases } from "../src/story/data.ts";
 import {
   beatPhrases,
+  audioKey,
   canMove,
   initialAnswer,
   isCorrect,
@@ -13,8 +14,10 @@ import {
   mistake,
   normalizeSave,
   placeKey,
+  reviewItems,
   solution,
   STORY_KEY,
+  storyLines,
   validateStory,
   walk,
 } from "../src/story/logic.ts";
@@ -26,7 +29,7 @@ test("12 sequential chapters cover the A1 route, with reachable, unique actions"
   assert.equal(new Set(episodes.map((e) => e.id)).size, 12);
   assert.deepEqual(validateStory(episodes, phrases), []);
   assert.ok(episodes.every((e) => e.beats.length === 5));
-  assert.equal(new Set(beats.map((b) => b.challenge.kind)).size, 15);
+  assert.equal(new Set(beats.map((b) => b.challenge.kind)).size, 16);
   assert.equal(beats.at(-1).id, "12-finale");
 });
 test("detective answers require evidence; photos do not prove theft or intent", () => {
@@ -126,6 +129,7 @@ test("saved progress survives reload, clamps malformed data, and retains unfinis
     completed: 5,
     drafts: { "02-number": "0176", "01-question": ["Wo", "ist"] },
     support: true,
+    weak: { where: 2 },
   };
   assert.deepEqual(
     normalizeSave(JSON.parse(JSON.stringify(draft)), beats),
@@ -313,6 +317,59 @@ test("calendar and clock keep similar dates and times apart", () => {
     normalizeSave({ drafts: { "06-time": "17:45" } }, beats).drafts["06-time"],
     "17:45",
   );
+});
+test("write checks the exact German form and explains near misses", () => {
+  const c = byId("01-card").challenge;
+  const good = {
+    wohnort: "Gaarden",
+    land: "Argentinien",
+    familienname: "Jensen",
+  };
+  assert.ok(isCorrect(c, good));
+  assert.ok(isCorrect(c, { ...good, land: " Argentinien. " }));
+  assert.ok(!isCorrect(c, { ...good, land: "argentinien" }));
+  assert.ok(!isCorrect(c, { ...good, wohnort: "Kiel" }));
+  assert.ok(!isCorrect(c, { wohnort: "Gaarden" }));
+  assert.match(
+    mistake(c, { ...good, land: "argentinien" }, "hint"),
+    /заглавные/,
+  );
+  assert.equal(mistake(c, { ...good, wohnort: "Kiel" }, "hint"), "hint");
+  assert.match(mistake(c, { wohnort: "Gaarden" }, "hint"), /Заполните/);
+  const umlaut = {
+    kind: "write",
+    title: "t",
+    fields: [{ id: "a", label: "l", answers: ["Küche"] }],
+  };
+  assert.match(mistake(umlaut, { a: "Kueche" }, "hint"), /умлаутом/);
+  assert.ok(!isCorrect(umlaut, { a: "Kueche" }));
+});
+test("errors stay until written correctly and return in later chapters", () => {
+  const [first, second] = episodes;
+  assert.deepEqual(reviewItems(first, {}), first.review);
+  assert.deepEqual(reviewItems(second, {}), []);
+  assert.deepEqual(reviewItems(second, { argentina: 1 }), ["argentina"]);
+  const merged = reviewItems(first, { argentina: 2, where: 1 });
+  assert.equal(merged[0], "argentina");
+  assert.equal(new Set(merged).size, merged.length);
+  assert.ok(merged.length <= 6);
+  const saved = normalizeSave({ weak: { where: 2, bad: -1, odd: "x" } }, beats);
+  assert.deepEqual(saved.weak, { where: 2 });
+  assert.deepEqual(normalizeSave(null, beats).weak, {});
+  for (const b of beats)
+    for (const id of b.practice ?? []) assert.ok(phrases[id], `${b.id}: ${id}`);
+});
+test("every phrase and voice line resolves to a recording that exists", () => {
+  const map = JSON.parse(
+    readFileSync(new URL("../src/generated/story-audio.json", import.meta.url)),
+  );
+  const lines = storyLines(episodes, phrases);
+  assert.equal(lines.length, Object.keys(phrases).length + 4);
+  for (const { text, voice } of lines) {
+    const src = map[audioKey(text, voice)];
+    assert.ok(src, `${voice}: ${text}`);
+    assert.ok(existsSync(new URL(`../public/${src}`, import.meta.url)), src);
+  }
 });
 test("all three story recordings exist and the active generator refuses Qwen before loading models", () => {
   assert.equal(beats.filter((b) => b.audio).length, 3);

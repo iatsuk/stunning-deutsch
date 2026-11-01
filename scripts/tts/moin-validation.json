@@ -1,0 +1,30 @@
+{
+ "date": "2026-11-01",
+ "scope": "Moin story phrases and chapter 1 voice lines",
+ "model": "k2-fsa/OmniVoice",
+ "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+ "newFiles": 52,
+ "seconds": 90.9,
+ "bytes": 934082,
+ "decodeFailures": 0,
+ "cutEndings": 0,
+ "asr": {
+  "model": "openai/whisper-large-v3",
+  "exact": 46,
+  "reviewed": {
+   "Brot": "repetition artifact on a very short clip; clean with added silence",
+   "Wir wollen zusammen suchen.": "spelling variant",
+   "am ersten Juni": "digit notation",
+   "Ich wohne in Gaarden.": "unknown place name",
+   "zu Hause": "replaced; new seed heard correctly with and without context",
+   "zum Café": "heard as Kaffee without context and Café with context on 11 seeds; recogniser ambiguity, original seed kept, listen by ear"
+  }
+ },
+ "seedOverrides": [
+  {
+   "text": "zu Hause",
+   "seed": 21082238
+  }
+ ],
+ "note": "Automated checks do not replace listening."
+}

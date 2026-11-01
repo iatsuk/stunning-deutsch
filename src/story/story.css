@@ -933,6 +933,130 @@
     transition: none;
   }
 }
+.moin-voices {
+  margin-bottom: 22px;
+  padding: 14px 16px;
+  border: 1px solid var(--line-strong);
+  border-radius: 5px;
+}
+.moin-voices .kicker {
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+.moin-voices > div:not(.kicker) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 12px;
+  padding: 6px 0;
+  font-size: 15px;
+}
+.moin-voices p {
+  flex-basis: 100%;
+  margin: 0;
+  font-family: var(--serif);
+}
+.moin-voices small {
+  display: block;
+  font-family: var(--sans);
+  color: var(--muted);
+}
+.moin-write {
+  display: grid;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid var(--line-strong);
+  border-radius: 5px;
+  background: var(--panel-2);
+}
+.moin-write .kicker {
+  font-size: 10px;
+}
+.moin-write label {
+  display: grid;
+  gap: 4px;
+  font-size: 13px;
+  color: var(--muted);
+}
+.moin-write input,
+.moin-review-item input {
+  width: 100%;
+  min-width: 0;
+  padding: 11px 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: 4px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--serif);
+  font-size: 18px;
+}
+.moin-umlauts {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 4px;
+  max-width: 340px;
+}
+.moin-umlauts button {
+  min-width: 0;
+  min-height: 42px;
+  padding: 0;
+  border: 1px solid var(--line-strong);
+  border-radius: 4px;
+  background: var(--panel);
+  font-family: var(--serif);
+  font-size: 17px;
+  cursor: pointer;
+}
+.moin-review {
+  margin: 24px 30px 0;
+  padding: 18px;
+  border: 1px solid var(--accent-line);
+  border-radius: 6px;
+}
+.moin-review .kicker {
+  font-size: 10px;
+}
+.moin-review h3 {
+  margin: 6px 0;
+  font-size: 18px;
+}
+.moin-review > p {
+  margin: 0 0 12px;
+  font-size: 14px;
+  color: var(--muted);
+}
+.moin-review-item {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
+  padding: 10px 0;
+  border-top: 1px solid var(--line);
+}
+.moin-review-item > button[type="submit"] {
+  grid-column: 1 / -1;
+  justify-self: start;
+  min-height: 44px;
+  padding: 0 16px;
+  border: 1px solid var(--line-strong);
+  border-radius: 4px;
+  background: var(--panel-2);
+  font-size: 14px;
+  cursor: pointer;
+}
+.moin-review-item > button[type="submit"]:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+.moin-review-item .moin-umlauts,
+.moin-review-item p {
+  grid-column: 1 / -1;
+}
+.moin-review-item p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--muted);
+}
 .moin-turn-actions {
   display: flex;
   align-items: center;
@@ -1262,6 +1386,10 @@
   .moin-tiles button {
     font-size: 15px;
     padding: 9px 11px;
+  }
+  .moin-review {
+    margin: 22px 18px 0;
+    padding: 14px;
   }
   .moin-next,
   .moin-rule {

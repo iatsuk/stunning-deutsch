@@ -1,9 +1,14 @@
-import { Fragment, useMemo, useState } from "react";
+import { Fragment, useMemo, useRef, useState, type RefObject } from "react";
+import { play } from "../hooks";
 import { preis, uhrzeit } from "../lib/german";
 import { shuffle } from "../lib/shuffle";
+import { PlayButton } from "../markup";
 import { ClockView } from "../stage/Clock";
+import { judge, UMLAUTS } from "../trainer/logic";
+import { storyAudio } from "./audio";
+import { phrases } from "./data";
 import { canMove, coinTotal, MOVES, placeKey, walk } from "./logic";
-import type { Answer, ChatTurn, Challenge, Move } from "./types";
+import type { Answer, ChatTurn, Challenge, Move, VoiceLine } from "./types";
 
 // Игровые действия истории. Всё управляется нажатием и с клавиатуры:
 // перетаскивания и таймеров нет, ошибка только даёт подсказку.
@@ -415,6 +420,7 @@ export function Memory({
   // Неверная пара остаётся открытой до следующего нажатия: читать можно без спешки.
   function flip(id: string, pair: string) {
     const turned = open.length === 2 ? [id] : [...open, id];
+    if (id.endsWith(":de")) play(storyAudio(phrases[pair].de));
     if (turned.length === 2 && turned[0].split(":")[0] === pair) {
       const next = [...found, pair];
       setOpen([]);
@@ -705,5 +711,207 @@ export function Calendar({
         })}
       </div>
     </div>
+  );
+}
+
+export function VoiceLines({ lines }: { lines: VoiceLine[] }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="moin-voices">
+      <div className="kicker">Послушайте</div>
+      {lines.map((line) => (
+        <div key={line.text}>
+          <PlayButton
+            src={storyAudio(line.text, line.voice)}
+            size="md"
+            label={`Послушать: ${line.who}`}
+          />
+          <span>{line.who}</span>
+          {open && (
+            <p>
+              <span lang="de">{line.text}</span> <small>{line.ru}</small>
+            </p>
+          )}
+        </div>
+      ))}
+      <button
+        type="button"
+        className="link-button"
+        aria-expanded={open}
+        onClick={() => setOpen(!open)}
+      >
+        {open ? "Скрыть текст" : "Показать текст"}
+      </button>
+    </div>
+  );
+}
+
+/** Вставка букв с умлаутом в поле, где стоит курсор. */
+function UmlautKeys({
+  field,
+  apply,
+}: {
+  field: RefObject<HTMLInputElement | null>;
+  apply: (input: HTMLInputElement, text: string) => void;
+}) {
+  function insert(letter: string) {
+    const input = field.current;
+    if (!input) return;
+    const start = input.selectionStart ?? input.value.length;
+    const end = input.selectionEnd ?? start;
+    apply(input, input.value.slice(0, start) + letter + input.value.slice(end));
+    requestAnimationFrame(() => {
+      input.focus();
+      input.setSelectionRange(start + 1, start + 1);
+    });
+  }
+  return (
+    <div className="moin-umlauts" aria-label="Буквы с умлаутом">
+      {UMLAUTS.map((letter) => (
+        <button
+          type="button"
+          key={letter}
+          onMouseDown={(event) => event.preventDefault()}
+          onClick={() => insert(letter)}
+        >
+          {letter}
+        </button>
+      ))}
+    </div>
+  );
+}
+
+const textInput = {
+  type: "text",
+  lang: "de",
+  autoComplete: "off",
+  autoCapitalize: "off",
+  autoCorrect: "off",
+  spellCheck: false,
+} as const;
+
+export function Write({ c, value, disabled, checked, change }: Game<"write">) {
+  const record = asRecord(value);
+  const field = useRef<HTMLInputElement | null>(null);
+  return (
+    <div className="moin-write">
+      <div className="kicker">{c.title}</div>
+      {c.fields.map((f) => (
+        <label key={f.id}>
+          <span lang="de">{f.label}</span>
+          <input
+            {...textInput}
+            data-field={f.id}
+            disabled={disabled}
+            value={String(record[f.id] ?? "")}
+            data-wrong={
+              (checked &&
+                judge(String(record[f.id] ?? ""), f.answers) !== "right") ||
+              undefined
+            }
+            onFocus={(event) => (field.current = event.currentTarget)}
+            onChange={(event) =>
+              change({ ...record, [f.id]: event.target.value })
+            }
+          />
+        </label>
+      ))}
+      {!disabled && (
+        <UmlautKeys
+          field={field}
+          apply={(input, text) =>
+            change({ ...record, [input.dataset.field!]: text })
+          }
+        />
+      )}
+    </div>
+  );
+}
+
+function ReviewItem({
+  id,
+  onRight,
+}: {
+  id: string;
+  onRight: (id: string) => void;
+}) {
+  const phrase = phrases[id];
+  const [text, setText] = useState("");
+  const [verdict, setVerdict] = useState<ReturnType<typeof judge> | null>(null);
+  const [typing, setTyping] = useState(false);
+  const field = useRef<HTMLInputElement | null>(null);
+  const done = verdict === "right";
+  function check() {
+    const result = judge(text, [phrase.de]);
+    setVerdict(result);
+    if (result === "right") onRight(id);
+  }
+  return (
+    <form
+      className="moin-review-item"
+      onSubmit={(event) => {
+        event.preventDefault();
+        check();
+      }}
+    >
+      <PlayButton src={storyAudio(phrase.de)} size="md" />
+      <input
+        {...textInput}
+        ref={field}
+        aria-label="Запишите услышанное"
+        disabled={done}
+        value={text}
+        data-wrong={(verdict && !done) || undefined}
+        onFocus={() => setTyping(true)}
+        onChange={(event) => {
+          setText(event.target.value);
+          setVerdict(null);
+        }}
+      />
+      {!done && typing && (
+        <UmlautKeys field={field} apply={(_, value) => setText(value)} />
+      )}
+      {!done && (
+        <button type="submit" disabled={!text.trim()}>
+          Проверить
+        </button>
+      )}
+      {verdict && (
+        <p role="status">
+          {done && `Верно: ${phrase.ru}`}
+          {verdict === "case" && "Почти: проверьте заглавные буквы."}
+          {verdict === "umlaut" && "Почти: нужна буква с умлаутом или ß."}
+          {verdict === "wrong" && (
+            <>
+              Запишем ещё раз. Правильно: <span lang="de">{phrase.de}</span>
+            </>
+          )}
+        </p>
+      )}
+    </form>
+  );
+}
+
+/** Выражения главы и прошлые ошибки: запись на слух, можно пропустить и вернуться позже. */
+export function ChapterReview({
+  items,
+  onRight,
+}: {
+  items: string[];
+  onRight: (id: string) => void;
+}) {
+  const [shown] = useState(items);
+  return (
+    <section className="moin-review">
+      <div className="kicker">Закрепление</div>
+      <h3>Запишите на слух</h3>
+      <p>
+        Послушайте и напишите фразу по памяти. Это необязательно: то, в чём вы
+        ошиблись, вернётся в конце следующей главы.
+      </p>
+      {shown.map((id) => (
+        <ReviewItem key={id} id={id} onRight={onRight} />
+      ))}
+    </section>
   );
 }

@@ -4,7 +4,7 @@ import { play, useProgress } from "../hooks";
 import { plain } from "../lib/german";
 import { scramble, shuffle } from "../lib/shuffle";
 import { De, GENDER_LABEL, PlayButton, Text, withoutArticle } from "../markup";
-import { normalize, orderAccepted } from "./logic";
+import { judge, normalize, orderAccepted, UMLAUTS } from "./logic";
 
 type Tab = "exercises" | "spy" | "articles" | "cards";
 
@@ -157,21 +157,6 @@ function Choice({ exercise, solved, onSolve }: { exercise: Extract<Exercise, { t
       </div>
     </>
   );
-}
-
-const UMLAUTS = ["ä", "ö", "ü", "ß", "Ä", "Ö", "Ü"];
-
-const deUmlaut = (text: string) =>
-  text.replace(/ä/g, "ae").replace(/ö/g, "oe").replace(/ü/g, "ue").replace(/ß/g, "ss").replace(/Ä/g, "Ae").replace(/Ö/g, "Oe").replace(/Ü/g, "Ue");
-
-/** Сравнение ответа: точно, с точностью до регистра или до записи умлаутов. */
-function judge(input: string, accepted: string[]): "right" | "case" | "umlaut" | "wrong" {
-  const value = normalize(input);
-  const options = accepted.map(normalize);
-  if (options.includes(value)) return "right";
-  if (options.some((o) => o.toLowerCase() === value.toLowerCase())) return "case";
-  if (options.some((o) => deUmlaut(o).toLowerCase() === deUmlaut(value).toLowerCase())) return "umlaut";
-  return "wrong";
 }
 
 const VERDICT = {

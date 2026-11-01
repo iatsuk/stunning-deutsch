@@ -370,6 +370,7 @@ export const episodes: Episode[] = [
     place: "Kiellinie · клуб",
     topic: "Знакомство",
     grammar: "sein · Präsens · вопросы · глагол на втором месте",
+    review: ["moin", "name", "kiel", "where"],
     beats: [
       {
         id: "01-welcome",
@@ -378,6 +379,10 @@ export const episodes: Episode[] = [
           "У клуба на Kiellinie стоит пустая подставка. Вчера здесь была табличка MOIN — приветствие для гостей Kieler Woche. Сегодня даже поздороваться нечем.",
           "Йенсен вздыхает: «{moin}! У нас пропало слово. Начнём с вашего имени». Чайка на крыше уже выглядит виноватой, но это её обычное выражение лица.",
         ],
+        voices: [
+          { who: "Jensen", voice: "Grandpa", text: "Moin!", ru: "Привет!" },
+        ],
+        practice: ["moin", "name"],
         prompt: "Поздоровайтесь и вежливо узнайте имя начальника гавани.",
         challenge: choice("name", [
           [
@@ -411,6 +416,7 @@ export const episodes: Episode[] = [
           text: "Ich komme aus Argentinien, aus Buenos Aires. Und du?",
           ru: "Я из Аргентины, из Буэнос-Айреса. А ты?",
         },
+        practice: ["argentina"],
         prompt: "Что Матео сообщил о себе? Поставьте штамп на каждой записи.",
         challenge: verdict(
           ["Сказал", "Не сказал"],
@@ -442,6 +448,7 @@ export const episodes: Episode[] = [
         story: [
           "На подставке записан вопрос: «{where}» — кто-то уже начал расследование и убежал за кофе. Вы уже спрашивали имя: «{name}»; теперь нужен вопрос о табличке.",
         ],
+        practice: ["where"],
         prompt: "Соберите вопрос «Где табличка?»",
         challenge: order(
           ["Wo", "ist", "das Schild?"],
@@ -457,29 +464,38 @@ export const episodes: Episode[] = [
         story: [
           "Элиф готовит карточки свидетелей. Ваш образец: «{kiel}»; у Матео — «{argentina}». Немецкий понемногу занимает место в блокноте.",
         ],
-        source: {
-          title: "Карточки",
-          lines: [
-            "Dana: Ich wohne in Gaarden.",
-            "Mateo: Ich komme aus Argentinien.",
-            "Jensen: Ich heiße Jensen.",
+        voices: [
+          {
+            who: "Dana",
+            voice: "Anna",
+            text: "Ich wohne in Gaarden.",
+            ru: "Я живу в Гаардене.",
+          },
+          {
+            who: "Mateo",
+            voice: "Reed",
+            text: "Ich komme aus Argentinien.",
+            ru: "Я из Аргентины.",
+          },
+          {
+            who: "Jensen",
+            voice: "Grandpa",
+            text: "Ich heiße Jensen.",
+            ru: "Меня зовут Йенсен.",
+          },
+        ],
+        practice: ["kiel", "argentina"],
+        prompt: "Послушайте свидетелей и заполните карточки клуба.",
+        challenge: {
+          kind: "write",
+          title: "Karten für den Club",
+          fields: [
+            { id: "wohnort", label: "Dana · Wohnort", answers: ["Gaarden"] },
+            { id: "land", label: "Mateo · Land", answers: ["Argentinien"] },
+            { id: "familienname", label: "Jensen · Name", answers: ["Jensen"] },
           ],
         },
-        prompt: "Сопоставьте сообщение с тем, что оно сообщает.",
-        challenge: pairs(
-          [
-            ["d", "Dana"],
-            ["m", "Mateo"],
-            ["j", "Jensen"],
-          ],
-          [
-            ["name", "имя"],
-            ["origin", "происхождение"],
-            ["home", "место жительства"],
-          ],
-          { d: "home", m: "origin", j: "name" },
-        ),
-        hint: "wohnen — жить; kommen aus — происхождение; heißen — зваться.",
+        hint: "Wohnort — где живёт, Land — страна, Name — имя. Название города можно посмотреть в тексте.",
         success:
           "Карточки на месте. Чайка отказалась сообщать адрес: постоянная регистрация на крыше её устраивает.",
       },

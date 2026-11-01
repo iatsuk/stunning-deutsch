@@ -1,9 +1,11 @@
+import { judge } from "../trainer/logic.ts";
 import type {
   Answer,
   Beat,
   Challenge,
   Episode,
   Move,
+  Phrase,
   StorySave,
 } from "./types.ts";
 
@@ -19,6 +21,27 @@ export const beatPhrases = (beat: Beat) => [
 export function knownBefore(beats: Beat[], cursor: number): Set<string> {
   return new Set(beats.slice(0, cursor).flatMap(beatPhrases));
 }
+
+/** Голос выражений рассказа; реплики героев задают свой голос. */
+export const NARRATOR = "Anna";
+export const audioKey = (text: string, voice = NARRATOR) => `${voice}|${text}`;
+/** Всё, что звучит в истории: по этому списку сборка связывает фразы с записями. */
+export function storyLines(
+  episodes: Episode[],
+  phrases: Record<string, Phrase>,
+): { text: string; voice: string }[] {
+  return [
+    ...Object.values(phrases).map((p) => ({ text: p.de, voice: NARRATOR })),
+    ...episodes.flatMap((e) =>
+      e.beats.flatMap((b) =>
+        (b.voices ?? []).map(({ text, voice }) => ({ text, voice })),
+      ),
+    ),
+  ];
+}
+/** Выражения главы и то, в чём ошибались раньше: ошибка возвращается, пока её не исправят. */
+export const reviewItems = (episode: Episode, weak: Record<string, number>) =>
+  [...new Set([...Object.keys(weak), ...(episode.review ?? [])])].slice(0, 6);
 
 export const MOVES: Move[] = ["links", "geradeaus", "rechts"];
 /** Север, восток, юг, запад: y растёт вниз, как на схеме. */
@@ -111,6 +134,13 @@ export function isCorrect(
     }
     case "coins":
       return coinTotal(value) === challenge.answer;
+    case "write":
+      return (
+        isRecord(value) &&
+        challenge.fields.every(
+          (f) => judge(String(value[f.id] ?? ""), f.answers) === "right",
+        )
+      );
     case "verdict":
       return (
         isRecord(value) &&
@@ -137,6 +167,10 @@ export function solution(challenge: Challenge): Answer {
       return challenge.pairs.map((p) => p.id);
     case "route":
       return challenge.moves;
+    case "write":
+      return Object.fromEntries(
+        challenge.fields.map((f) => [f.id, f.answers[0]]),
+      );
     case "verdict":
       return Object.fromEntries(
         challenge.items.map((i) => [i.id, i.answer ? "yes" : "no"]),
@@ -172,6 +206,7 @@ export function initialAnswer(challenge: Challenge): Answer {
     case "verdict":
     case "sort":
     case "coins":
+    case "write":
       return {};
     case "clock":
       return challenge.start;
@@ -210,6 +245,18 @@ export function mistake(c: Challenge, value: Answer, hint: string): string {
       return Object.keys(record).length < c.left.length
         ? "Соедините все пары."
         : hint;
+    case "write": {
+      const verdicts = c.fields.map((f) =>
+        String(record[f.id] ?? "").trim()
+          ? judge(String(record[f.id]), f.answers)
+          : "empty",
+      );
+      if (verdicts.includes("empty")) return "Заполните все поля.";
+      if (verdicts.includes("wrong")) return hint;
+      return verdicts.includes("case")
+        ? "Почти: проверьте заглавные и строчные буквы."
+        : "Почти: нужна буква с умлаутом или ß.";
+    }
     case "spot":
       return list.length === c.answer.length
         ? hint
@@ -300,6 +347,8 @@ function restoreDraft(c: Challenge, v: unknown): Answer | undefined {
               Number.isInteger(x) &&
               Number(x) >= 0
             );
+          if (c.kind === "write")
+            return c.fields.some((f) => f.id === id) && typeof x === "string";
           return c.items.some(
             (i) =>
               i.id === id &&
@@ -328,12 +377,21 @@ export function normalizeSave(raw: unknown, beats: Beat[]): StorySave {
       const draft = restoreDraft(beat.challenge, data.drafts[beat.id]);
       if (draft !== undefined) drafts[beat.id] = draft;
     }
+  const weak =
+    data.weak && typeof data.weak === "object"
+      ? Object.fromEntries(
+          Object.entries(data.weak).filter(
+            ([, count]) => Number.isInteger(count) && count > 0,
+          ),
+        )
+      : {};
   return {
     version: 1,
     cursor,
     completed,
     drafts,
     support: data.support === true,
+    weak,
   };
 }
 
@@ -416,6 +474,12 @@ function validateChallenge(
       return coinTotal(solution(c)) === c.answer;
     case "calendar":
       return restoreDraft(c, c.answer) === c.answer;
+    case "write":
+      return (
+        c.fields.length > 0 &&
+        new Set(c.fields.map((f) => f.id)).size === c.fields.length &&
+        c.fields.every((f) => f.answers.length > 0)
+      );
   }
 }
 
@@ -439,6 +503,11 @@ export function validateStory(
         errors.push(`Unreachable solution: ${beat.id}`);
       if (!validateChallenge(c, known, phrases))
         errors.push(`Wrong ${c.kind}: ${beat.id}`);
+      for (const id of beat.practice ?? [])
+        if (!phrases[id]) errors.push(`Unknown practice: ${beat.id}: ${id}`);
     }
+  for (const episode of episodes)
+    for (const id of episode.review ?? [])
+      if (!phrases[id]) errors.push(`Unknown review: ${episode.id}: ${id}`);
   return errors;
 }

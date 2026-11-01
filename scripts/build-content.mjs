@@ -18,7 +18,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { parse } from "yaml";
 import { episodes as storyEpisodes, phrases as storyPhrases } from "../src/story/data.ts";
-import { validateStory } from "../src/story/logic.ts";
+import { audioKey, storyLines, validateStory } from "../src/story/logic.ts";
 import { uhrzeit } from "../src/lib/german.ts";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
@@ -133,6 +133,13 @@ if (existsSync(assessmentDir) && !ONLY) for (const file of readdirSync(assessmen
 }
 catalog.assessments = assessments.map(({ id, level, title, intro, mode }) => ({ id, level, title, intro, mode }));
 
+// Озвучка истории входит в общий учёт: манифест, импорт и защита от удаления те же.
+const storyAudio = {};
+for (const { text, voice } of storyLines(storyEpisodes, storyPhrases)) {
+  const src = speak(text, voice);
+  if (src) storyAudio[audioKey(text, voice)] = src;
+}
+
 for (const message of warnings) console.warn(`  ! ${message}`);
 if (errors.length) {
   console.error(`\n${errors.length} ошибок в контенте:\n`);
@@ -169,6 +176,7 @@ const synthesized = DRAFT ? 0 : await synthesize();
 
 mkdirSync(path.join(generatedDir, "topics"), { recursive: true });
 writeJson(path.join(generatedDir, "catalog.json"), catalog);
+writeJson(path.join(generatedDir, "story-audio.json"), storyAudio);
 for (const file of readdirSync(path.join(generatedDir, "topics"))) {
   if (!ids.includes(file.replace(/\.json$/, ""))) rmSync(path.join(generatedDir, "topics", file));
 }

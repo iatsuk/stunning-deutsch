@@ -2,10 +2,12 @@ import { Fragment, useEffect, useRef, useState } from "react";
 import { Footer, Topbar, useTitle } from "../App";
 import { stopAudio, useMobile } from "../hooks";
 import { shuffle } from "../lib/shuffle";
-import { plural } from "../markup";
+import { PlayButton, plural } from "../markup";
+import { storyAudio } from "./audio";
 import { beats, episodes, phrases } from "./data";
 import {
   Calendar,
+  ChapterReview,
   Chat,
   ClockGame,
   Coins,
@@ -15,7 +17,9 @@ import {
   Sort,
   Spot,
   Verdict,
+  VoiceLines,
   Walk,
+  Write,
 } from "./games";
 import {
   beatPhrases,
@@ -24,6 +28,7 @@ import {
   knownBefore,
   mistake,
   normalizeSave,
+  reviewItems,
   solution,
   STORY_KEY,
 } from "./logic";
@@ -36,6 +41,7 @@ const GAME_NAMES: Record<Challenge["kind"], string> = {
   match: "Пары",
   quantity: "Заказ",
   code: "Набор номера",
+  write: "Запись",
   chat: "Разговор",
   verdict: "Штамп",
   gaps: "Записка с пропусками",
@@ -439,7 +445,10 @@ export function StoryPage() {
                     >
                       ×
                     </button>
-                    <strong lang="de">{phrases[phrase].de}</strong>
+                    <strong lang="de">
+                      {phrases[phrase].de}{" "}
+                      <PlayButton src={storyAudio(phrases[phrase].de)} />
+                    </strong>
                     <div>{phrases[phrase].ru}</div>
                     <small>{phrases[phrase].note}</small>
                   </aside>
@@ -470,7 +479,35 @@ export function StoryPage() {
                       completed: Math.max(s.completed, s.cursor + 1),
                     }))
                   }
+                  onMiss={() =>
+                    setSave((s) => ({
+                      ...s,
+                      weak: {
+                        ...s.weak,
+                        ...Object.fromEntries(
+                          (beat.practice ?? []).map((id) => [
+                            id,
+                            (s.weak[id] ?? 0) + 1,
+                          ]),
+                        ),
+                      },
+                    }))
+                  }
                 />
+                {save.completed > save.cursor &&
+                  chapterStep === episode.beats.length - 1 &&
+                  reviewItems(episode, save.weak).length > 0 && (
+                    <ChapterReview
+                      key={episode.id}
+                      items={reviewItems(episode, save.weak)}
+                      onRight={(id) =>
+                        setSave((s) => {
+                          const { [id]: _, ...weak } = s.weak;
+                          return { ...s, weak };
+                        })
+                      }
+                    />
+                  )}
                 {save.completed > save.cursor && (
                   <div className="moin-next">
                     {save.cursor < beats.length - 1 ? (
@@ -554,6 +591,7 @@ function StoryTurn({
   solved,
   onChange,
   onWin,
+  onMiss,
   rich,
 }: {
   beat: Beat;
@@ -561,6 +599,7 @@ function StoryTurn({
   solved: boolean;
   onChange: (v: Answer) => void;
   onWin: () => void;
+  onMiss: () => void;
   rich: (s: string) => React.ReactNode;
 }) {
   const [checked, setChecked] = useState(false),
@@ -582,6 +621,7 @@ function StoryTurn({
   function check() {
     setChecked(true);
     if (correct) onWin();
+    else onMiss();
   }
   const game = {
     value: shown,
@@ -625,9 +665,11 @@ function StoryTurn({
           )}
         </div>
       )}
+      {beat.voices && <VoiceLines lines={beat.voices} />}
       <div className="kicker moin-game-name">{GAME_NAMES[c.kind]}</div>
       <h3>{beat.prompt}</h3>
       {c.kind === "match" && <Pairs c={c} {...game} />}
+      {c.kind === "write" && <Write c={c} {...game} />}
       {c.kind === "chat" && <Chat c={c} {...game} />}
       {c.kind === "verdict" && <Verdict c={c} {...game} />}
       {c.kind === "gaps" && <Gaps c={c} {...game} />}

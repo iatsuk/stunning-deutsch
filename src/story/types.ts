@@ -7,6 +7,12 @@ export type ChatTurn = {
   answer: string;
 };
 export type Move = "links" | "geradeaus" | "rechts";
+export type VoiceLine = {
+  who: string;
+  voice: string;
+  text: string;
+  ru: string;
+};
 export type Challenge =
   | { kind: "choice"; options: Option[]; answer: string }
   | { kind: "order"; tiles: string[]; answer: string[]; also?: string[][] }
@@ -55,6 +61,11 @@ export type Challenge =
     }
   | { kind: "coins"; coins: number[]; answer: number }
   | {
+      kind: "write";
+      title: string;
+      fields: { id: string; label: string; answers: string[] }[];
+    }
+  | {
       kind: "calendar";
       months: { name: string; days: number }[];
       answer: string;
@@ -65,6 +76,10 @@ export type Beat = {
   story: string[];
   source?: { title: string; lines: string[] };
   audio?: { file: string; text: string; ru: string };
+  /** Реплики голосом: текст открывается по кнопке. */
+  voices?: VoiceLine[];
+  /** Выражения, которые возвращаются в конце главы после ошибки на этом шаге. */
+  practice?: string[];
   prompt: string;
   hint: string;
   challenge: Challenge;
@@ -77,6 +92,8 @@ export type Episode = {
   place: string;
   topic: string;
   grammar: string;
+  /** Выражения главы для записи на слух в конце главы. */
+  review?: string[];
   beats: Beat[];
 };
 export type Answer = string | string[] | Record<string, string | number>;
@@ -86,4 +103,6 @@ export type StorySave = {
   completed: number;
   drafts: Record<string, Answer>;
   support: boolean;
+  /** Сколько раз ошибались в выражении; запись на слух убирает его из списка. */
+  weak: Record<string, number>;
 };
