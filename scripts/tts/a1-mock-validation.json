@@ -1,0 +1,62 @@
+{
+ "date": "2026-11-01",
+ "scope": "A1 mock exam: Hören recordings and the writing sample",
+ "model": "k2-fsa/OmniVoice",
+ "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+ "newFiles": 32,
+ "seconds": 134.7,
+ "bytes": 1617270,
+ "decodeFailures": 0,
+ "cutEndings": 0,
+ "asr": {
+  "model": "openai/whisper-large-v3",
+  "exact": 21,
+  "differences": [
+   {
+    "text": "Um Viertel nach zehn. Jetzt ist es zehn Uhr.",
+    "heard": "Um Viertel nach 10. Jetzt ist es 10 Uhr."
+   },
+   {
+    "text": "Zwei Euro achtzig.",
+    "heard": "2,80 €"
+   },
+   {
+    "text": "Fünfzig Cent.",
+    "heard": "50 Cent."
+   },
+   {
+    "text": "Achtung, eine Durchsage auf Gleis drei. Der Zug nach Hamburg kommt heute zwanzig Minuten später.",
+    "heard": "Achtung, eine Durchsage auf Gleis 3. Der Zug nach Hamburg kommt heute 20 Minuten später."
+   },
+   {
+    "text": "Liebe Kundinnen und Kunden! Heute im Angebot: ein Kilo Äpfel für nur einen Euro neunundneunzig.",
+    "heard": "Liebe Kundinnen und Kunden, heute im Angebot ein Kilo Äpfel für nur 1,99 Euro."
+   },
+   {
+    "text": "Die Reisenden nach Wien gehen bitte sofort zum Ausgang B zwölf. Das Flugzeug fliegt gleich ab.",
+    "heard": "Die Reisenden nach Wien gehen bitte sofort zum Ausgang B12. Das Flugzeug fliegt gleich ab."
+   },
+   {
+    "text": "Liebe Gäste, das Museum schließt in fünfzehn Minuten. Bitte gehen Sie jetzt zum Ausgang. Morgen sind wir ab neun Uhr wieder für Sie da.",
+    "heard": "Liebe Gäste, das Museum schließt in 15 Minuten. Bitte gehen Sie jetzt zum Ausgang. Morgen sind wir ab 9 Uhr wieder für Sie da."
+   },
+   {
+    "text": "Hallo Tom, hier ist Lena. Unser Deutschkurs beginnt heute nicht um sechs, sondern um sieben Uhr. Bis später!",
+    "heard": "Hallo Tom, hier ist Lena. Unser Deutschkurs beginnt heute nicht um 6, sondern um 7 Uhr. Bis später!"
+   },
+   {
+    "text": "Guten Tag, Frau Krüger. Hier ist die Praxis Doktor Lorenz. Ihr Termin am Dienstag geht leider nicht. Können Sie am Donnerstag um zehn Uhr kommen?",
+    "heard": "Guten Tag, Frau Krüger. Hier ist die Praxis Dr. Lorenz. Ihr Termin am Dienstag geht leider nicht. Können Sie am Donnerstag um 10 Uhr kommen?"
+   },
+   {
+    "text": "Hallo, hier ist Papa. Ich bin noch im Supermarkt. Brauchst du etwas? Ruf mich bitte an. Meine neue Nummer ist null, eins, sieben, fünf, vier, zwei, sechs, acht.",
+    "heard": "Hallo, hier ist Papa. Ich bin noch im Supermarkt. Brauchst du etwas? Ruf mich bitte an. Meine neue Nummer ist 0 1 7 5 4 2 6 8."
+   },
+   {
+    "text": "Guten Tag, Herr Aydin. Hier ist das Fahrradgeschäft Nord. Ihr Fahrrad ist fertig. Es kostet fünfunddreißig Euro. Wir sind bis achtzehn Uhr da.",
+    "heard": "Guten Tag, Herr Aydin. Hier ist das Fahrradgeschäft Nord. Ihr Fahrrad ist fertig. Es kostet 35 Euro. Wir sind bis 18 Uhr da."
+   }
+  ]
+ },
+ "note": "All differences are digits for number words and Dr. for Doktor; every number the answers depend on was heard correctly. Automated checks do not replace listening."
+}

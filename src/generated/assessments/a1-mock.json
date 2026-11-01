@@ -1,0 +1,1159 @@
+{
+ "id": "a1-mock",
+ "level": "a1",
+ "mode": "mock",
+ "title": "Авторский пробник Start Deutsch 1",
+ "intro": "Новые задания о повседневной жизни в Киле и вокруг него. Это тренировка формата telc Deutsch A1: самостоятельная письменная попытка и дополнительный устный разговор. Все организации, сообщения и предложения вымышлены, люди не связаны с героями курса.",
+ "sections": [
+  {
+   "id": "listening",
+   "title": "Hören",
+   "minutes": 20,
+   "taskIds": [
+    "talk1",
+    "talk2",
+    "talk3",
+    "talk4",
+    "talk5",
+    "talk6",
+    "notices",
+    "phone"
+   ]
+  },
+  {
+   "id": "reading",
+   "title": "Lesen",
+   "minutes": 25,
+   "taskIds": [
+    "email",
+    "note",
+    "ad1",
+    "ad2",
+    "ad3",
+    "ad4",
+    "ad5",
+    "sign1",
+    "sign2",
+    "sign3",
+    "sign4",
+    "sign5"
+   ]
+  },
+  {
+   "id": "writing",
+   "title": "Schreiben",
+   "minutes": 20,
+   "taskIds": [
+    "form",
+    "letter"
+   ]
+  },
+  {
+   "id": "speaking",
+   "title": "Sprechen · дополнительно, в паре",
+   "minutes": 15,
+   "taskIds": [
+    "self",
+    "ask",
+    "please"
+   ]
+  }
+ ],
+ "tasks": {
+  "talk1": {
+   "kind": "worksheet",
+   "part": "hoeren-1",
+   "format": "radio",
+   "title": "Teil 1 · Aufgabe 1",
+   "situation": "Hören Sie das Gespräch zweimal. Wählen Sie die richtige Antwort.",
+   "dialogue": "bus",
+   "questions": [
+    {
+     "prompt": "Wann fährt der Bus?",
+     "answers": [
+      "10:15 Uhr"
+     ],
+     "options": [
+      "10:00 Uhr",
+      "10:15 Uhr",
+      "10:45 Uhr"
+     ]
+    }
+   ],
+   "script": [
+    {
+     "who": "Frau",
+     "de": "Entschuldigung, wann fährt der Bus zum Bahnhof?",
+     "audio": "audio/4367ec9f00bd.m4a"
+    },
+    {
+     "who": "Mann",
+     "de": "Um Viertel nach zehn. Jetzt ist es zehn Uhr.",
+     "audio": "audio/c02791737224.m4a"
+    },
+    {
+     "who": "Frau",
+     "de": "Danke! Dann habe ich noch Zeit für einen Kaffee.",
+     "audio": "audio/14b88fa4ebe1.m4a"
+    }
+   ],
+   "sample": []
+  },
+  "talk2": {
+   "kind": "worksheet",
+   "part": "hoeren-1",
+   "format": "radio",
+   "title": "Teil 1 · Aufgabe 2",
+   "situation": "Hören Sie das Gespräch zweimal. Wählen Sie die richtige Antwort.",
+   "dialogue": "bread",
+   "questions": [
+    {
+     "prompt": "Was kostet das Brot?",
+     "answers": [
+      "2,80 €"
+     ],
+     "options": [
+      "0,50 €",
+      "2,08 €",
+      "2,80 €"
+     ]
+    }
+   ],
+   "script": [
+    {
+     "who": "Frau",
+     "de": "Guten Tag. Was kostet das Brot?",
+     "audio": "audio/105124071a3a.m4a"
+    },
+    {
+     "who": "Verkäufer",
+     "de": "Zwei Euro achtzig.",
+     "audio": "audio/b3ab64157345.m4a"
+    },
+    {
+     "who": "Frau",
+     "de": "Und ein Brötchen?",
+     "audio": "audio/b322381bb704.m4a"
+    },
+    {
+     "who": "Verkäufer",
+     "de": "Fünfzig Cent.",
+     "audio": "audio/8604a2ccbdfa.m4a"
+    }
+   ],
+   "sample": []
+  },
+  "talk3": {
+   "kind": "worksheet",
+   "part": "hoeren-1",
+   "format": "radio",
+   "title": "Teil 1 · Aufgabe 3",
+   "situation": "Hören Sie das Gespräch zweimal. Wählen Sie die richtige Antwort.",
+   "dialogue": "mobile",
+   "questions": [
+    {
+     "prompt": "Wo ist das Handy?",
+     "answers": [
+      "im Bad"
+     ],
+     "options": [
+      "auf dem Tisch",
+      "im Bad",
+      "in der Tasche"
+     ]
+    }
+   ],
+   "script": [
+    {
+     "who": "Frau",
+     "de": "Wo ist denn mein Handy? Ich finde es nicht.",
+     "audio": "audio/12c9f4cd05a9.m4a"
+    },
+    {
+     "who": "Mann",
+     "de": "Ist es nicht in deiner Tasche?",
+     "audio": "audio/21c3018bbf68.m4a"
+    },
+    {
+     "who": "Frau",
+     "de": "Nein, und auf dem Tisch ist es auch nicht.",
+     "audio": "audio/9d7ee6a79686.m4a"
+    },
+    {
+     "who": "Mann",
+     "de": "Ach, hier! Es liegt im Bad.",
+     "audio": "audio/29dafde611e1.m4a"
+    }
+   ],
+   "sample": []
+  },
+  "talk4": {
+   "kind": "worksheet",
+   "part": "hoeren-1",
+   "format": "radio",
+   "title": "Teil 1 · Aufgabe 4",
+   "situation": "Hören Sie das Gespräch zweimal. Wählen Sie die richtige Antwort.",
+   "dialogue": "cinema",
+   "questions": [
+    {
+     "prompt": "Wann gehen die zwei ins Kino?",
+     "answers": [
+      "am Samstag"
+     ],
+     "options": [
+      "am Samstag",
+      "am Sonntag",
+      "am Freitag"
+     ]
+    }
+   ],
+   "script": [
+    {
+     "who": "Mann",
+     "de": "Hast du am Freitag Zeit? Ich möchte ins Kino gehen.",
+     "audio": "audio/65cec9ba7e7d.m4a"
+    },
+    {
+     "who": "Frau",
+     "de": "Am Freitag arbeite ich. Aber am Samstag kann ich.",
+     "audio": "audio/9dda328c1d69.m4a"
+    },
+    {
+     "who": "Mann",
+     "de": "Gut, dann gehen wir am Samstag.",
+     "audio": "audio/8a4d9d35b665.m4a"
+    }
+   ],
+   "sample": []
+  },
+  "talk5": {
+   "kind": "worksheet",
+   "part": "hoeren-1",
+   "format": "radio",
+   "title": "Teil 1 · Aufgabe 5",
+   "situation": "Hören Sie das Gespräch zweimal. Wählen Sie die richtige Antwort.",
+   "dialogue": "cafe",
+   "questions": [
+    {
+     "prompt": "Was nimmt der Mann?",
+     "answers": [
+      "einen Tee"
+     ],
+     "options": [
+      "Kuchen und Tee",
+      "einen Kaffee",
+      "einen Tee"
+     ]
+    }
+   ],
+   "script": [
+    {
+     "who": "Kellnerin",
+     "de": "Was möchten Sie trinken?",
+     "audio": "audio/a48e8fc2e06b.m4a"
+    },
+    {
+     "who": "Mann",
+     "de": "Einen Tee, bitte. Haben Sie auch Kuchen?",
+     "audio": "audio/86a5fe6f8a1f.m4a"
+    },
+    {
+     "who": "Kellnerin",
+     "de": "Ja, wir haben Apfelkuchen.",
+     "audio": "audio/588b281a5fc9.m4a"
+    },
+    {
+     "who": "Mann",
+     "de": "Nein, danke. Dann nur den Tee.",
+     "audio": "audio/f400db4900f6.m4a"
+    }
+   ],
+   "sample": []
+  },
+  "talk6": {
+   "kind": "worksheet",
+   "part": "hoeren-1",
+   "format": "radio",
+   "title": "Teil 1 · Aufgabe 6",
+   "situation": "Hören Sie das Gespräch zweimal. Wählen Sie die richtige Antwort.",
+   "dialogue": "way",
+   "questions": [
+    {
+     "prompt": "Wie weit ist es zum Bahnhof?",
+     "answers": [
+      "fünf Minuten zu Fuß"
+     ],
+     "options": [
+      "fünf Minuten zu Fuß",
+      "fünf Minuten mit dem Bus",
+      "fünfzehn Minuten zu Fuß"
+     ]
+    }
+   ],
+   "script": [
+    {
+     "who": "Mann",
+     "de": "Entschuldigung, wie komme ich zum Bahnhof?",
+     "audio": "audio/5fbe1e8ea31c.m4a"
+    },
+    {
+     "who": "Frau",
+     "de": "Gehen Sie hier geradeaus und dann links.",
+     "audio": "audio/a6788e784425.m4a"
+    },
+    {
+     "who": "Mann",
+     "de": "Ist das weit?",
+     "audio": "audio/61607f85a543.m4a"
+    },
+    {
+     "who": "Frau",
+     "de": "Nein, nur fünf Minuten zu Fuß.",
+     "audio": "audio/ab2992e7fa69.m4a"
+    }
+   ],
+   "sample": []
+  },
+  "notices": {
+   "kind": "worksheet",
+   "part": "hoeren-2",
+   "format": "radio",
+   "title": "Teil 2 · Durchsagen",
+   "situation": "Hören Sie jede Durchsage einmal. Ist die Aussage richtig oder falsch?",
+   "questions": [
+    {
+     "prompt": "Der Zug nach Hamburg kommt heute später.",
+     "answers": [
+      "richtig"
+     ],
+     "options": [
+      "richtig",
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Ein Kilo Äpfel kostet heute 2,99 Euro.",
+     "answers": [
+      "falsch"
+     ],
+     "options": [
+      "richtig",
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Die Reisenden nach Wien gehen zum Ausgang B 2.",
+     "answers": [
+      "falsch"
+     ],
+     "options": [
+      "richtig",
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Das Museum ist morgen ab 9 Uhr offen.",
+     "answers": [
+      "richtig"
+     ],
+     "options": [
+      "richtig",
+      "falsch"
+     ]
+    }
+   ],
+   "recordings": [
+    {
+     "text": "Achtung, eine Durchsage auf Gleis drei. Der Zug nach Hamburg kommt heute zwanzig Minuten später.",
+     "audio": "audio/9146af083ea1.m4a"
+    },
+    {
+     "text": "Liebe Kundinnen und Kunden! Heute im Angebot: ein Kilo Äpfel für nur einen Euro neunundneunzig.",
+     "audio": "audio/f83c8e821315.m4a"
+    },
+    {
+     "text": "Die Reisenden nach Wien gehen bitte sofort zum Ausgang B zwölf. Das Flugzeug fliegt gleich ab.",
+     "audio": "audio/78b789625911.m4a"
+    },
+    {
+     "text": "Liebe Gäste, das Museum schließt in fünfzehn Minuten. Bitte gehen Sie jetzt zum Ausgang. Morgen sind wir ab neun Uhr wieder für Sie da.",
+     "audio": "audio/71623d665ca3.m4a"
+    }
+   ],
+   "sample": []
+  },
+  "phone": {
+   "kind": "worksheet",
+   "part": "hoeren-3",
+   "format": "radio",
+   "title": "Teil 3 · Nachrichten am Telefon",
+   "situation": "Hören Sie jede Nachricht zweimal. Wählen Sie die richtige Antwort.",
+   "questions": [
+    {
+     "prompt": "Wann beginnt der Kurs heute?",
+     "answers": [
+      "um 7 Uhr"
+     ],
+     "options": [
+      "um 6 Uhr",
+      "um 7 Uhr",
+      "um 8 Uhr"
+     ]
+    },
+    {
+     "prompt": "Wann soll Frau Krüger kommen?",
+     "answers": [
+      "am Donnerstag um 10 Uhr"
+     ],
+     "options": [
+      "am Donnerstag um 10 Uhr",
+      "am Dienstag um 10 Uhr",
+      "am Donnerstag um 12 Uhr"
+     ]
+    },
+    {
+     "prompt": "Wie ist die Telefonnummer?",
+     "answers": [
+      "0175 4268"
+     ],
+     "options": [
+      "0157 4268",
+      "0175 4286",
+      "0175 4268"
+     ]
+    },
+    {
+     "prompt": "Wie viel muss Herr Aydin bezahlen?",
+     "answers": [
+      "35 Euro"
+     ],
+     "options": [
+      "25 Euro",
+      "35 Euro",
+      "53 Euro"
+     ]
+    },
+    {
+     "prompt": "Was soll Maria machen?",
+     "answers": [
+      "die Kinder abholen"
+     ],
+     "options": [
+      "zur Arbeit gehen",
+      "zum Arzt gehen",
+      "die Kinder abholen"
+     ]
+    }
+   ],
+   "recordings": [
+    {
+     "text": "Hallo Tom, hier ist Lena. Unser Deutschkurs beginnt heute nicht um sechs, sondern um sieben Uhr. Bis später!",
+     "audio": "audio/1200a56fca0d.m4a"
+    },
+    {
+     "text": "Guten Tag, Frau Krüger. Hier ist die Praxis Doktor Lorenz. Ihr Termin am Dienstag geht leider nicht. Können Sie am Donnerstag um zehn Uhr kommen?",
+     "audio": "audio/393b309c0f7d.m4a"
+    },
+    {
+     "text": "Hallo, hier ist Papa. Ich bin noch im Supermarkt. Brauchst du etwas? Ruf mich bitte an. Meine neue Nummer ist null, eins, sieben, fünf, vier, zwei, sechs, acht.",
+     "audio": "audio/849a2783a5e4.m4a"
+    },
+    {
+     "text": "Guten Tag, Herr Aydin. Hier ist das Fahrradgeschäft Nord. Ihr Fahrrad ist fertig. Es kostet fünfunddreißig Euro. Wir sind bis achtzehn Uhr da.",
+     "audio": "audio/61886d94ca02.m4a"
+    },
+    {
+     "text": "Hallo Maria, hier ist Jan. Ich bin krank und kann heute nicht arbeiten. Kannst du bitte die Kinder von der Schule abholen? Danke!",
+     "audio": "audio/344c46b5742a.m4a"
+    }
+   ],
+   "sample": []
+  },
+  "email": {
+   "kind": "worksheet",
+   "part": "lesen-1",
+   "format": "article",
+   "title": "Teil 1 · Eine E-Mail",
+   "situation": "Lesen Sie die E-Mail. Ist die Aussage richtig oder falsch?",
+   "text": "Liebe Anna,\nich habe jetzt eine neue Wohnung in Flensburg. Sie ist klein, aber sehr schön. Am Samstag um 15 Uhr mache ich eine kleine Party. Kommst du auch? Bitte bring einen Salat mit. Getränke habe ich schon.\nViele Grüße\nKatrin",
+   "questions": [
+    {
+     "prompt": "Katrin wohnt jetzt in Flensburg.",
+     "answers": [
+      "richtig"
+     ],
+     "options": [
+      "richtig",
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Die Party ist am Sonntag.",
+     "answers": [
+      "falsch"
+     ],
+     "options": [
+      "richtig",
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Anna soll Getränke mitbringen.",
+     "answers": [
+      "falsch"
+     ],
+     "options": [
+      "richtig",
+      "falsch"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "note": {
+   "kind": "worksheet",
+   "part": "lesen-1",
+   "format": "article",
+   "title": "Teil 1 · Eine Nachricht",
+   "situation": "Lesen Sie die Nachricht. Ist die Aussage richtig oder falsch?",
+   "text": "Hallo Paul,\nich bin beim Arzt und komme erst um 17 Uhr nach Hause. Das Essen steht im Kühlschrank. Kannst du bitte mit dem Hund spazieren gehen? Danke!\nMama",
+   "questions": [
+    {
+     "prompt": "Die Mutter ist um 17 Uhr zu Hause.",
+     "answers": [
+      "richtig"
+     ],
+     "options": [
+      "richtig",
+      "falsch"
+     ]
+    },
+    {
+     "prompt": "Paul soll das Essen kochen.",
+     "answers": [
+      "falsch"
+     ],
+     "options": [
+      "richtig",
+      "falsch"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "ad1": {
+   "kind": "worksheet",
+   "part": "lesen-2",
+   "format": "radio",
+   "title": "Teil 2 · Aufgabe 1",
+   "situation": "Sie möchten am Sonntag mit Ihrer Familie schwimmen.",
+   "text": "a) Hallenbad Kiel-Mitte: Montag bis Freitag 8–20 Uhr, am Wochenende geschlossen\nb) Freibad am Strand: jeden Tag 9–19 Uhr, Familienkarte 12 Euro",
+   "questions": [
+    {
+     "prompt": "Welche Anzeige passt?",
+     "answers": [
+      "b"
+     ],
+     "options": [
+      "a",
+      "b"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "ad2": {
+   "kind": "worksheet",
+   "part": "lesen-2",
+   "format": "radio",
+   "title": "Teil 2 · Aufgabe 2",
+   "situation": "Sie suchen in Kiel eine Wohnung mit zwei Zimmern.",
+   "text": "a) Kiel-Gaarden: 2-Zimmer-Wohnung, 55 m², Balkon, 520 Euro warm\nb) Lübeck: 2-Zimmer-Wohnung, 60 m², ruhig, 490 Euro warm",
+   "questions": [
+    {
+     "prompt": "Welche Anzeige passt?",
+     "answers": [
+      "a"
+     ],
+     "options": [
+      "a",
+      "b"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "ad3": {
+   "kind": "worksheet",
+   "part": "lesen-2",
+   "format": "radio",
+   "title": "Teil 2 · Aufgabe 3",
+   "situation": "Ihr Fahrrad ist kaputt.",
+   "text": "a) Autowerkstatt Nord: Wir reparieren Ihr Auto schnell und billig.\nb) Rad und Tour: Fahrräder kaufen und reparieren, Montag bis Samstag 9–18 Uhr",
+   "questions": [
+    {
+     "prompt": "Welche Anzeige passt?",
+     "answers": [
+      "b"
+     ],
+     "options": [
+      "a",
+      "b"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "ad4": {
+   "kind": "worksheet",
+   "part": "lesen-2",
+   "format": "radio",
+   "title": "Teil 2 · Aufgabe 4",
+   "situation": "Sie arbeiten am Tag und möchten am Abend Deutsch lernen.",
+   "text": "a) Sprachschule Förde: Deutsch A1, Montag und Mittwoch, 18:30–20:00 Uhr\nb) Volkshochschule: Deutsch A1, Dienstag und Donnerstag, 9:00–11:00 Uhr",
+   "questions": [
+    {
+     "prompt": "Welche Anzeige passt?",
+     "answers": [
+      "a"
+     ],
+     "options": [
+      "a",
+      "b"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "ad5": {
+   "kind": "worksheet",
+   "part": "lesen-2",
+   "format": "radio",
+   "title": "Teil 2 · Aufgabe 5",
+   "situation": "Sie möchten am Sonntag im Restaurant essen.",
+   "text": "a) Restaurant Hafenblick: Montag bis Samstag 12–22 Uhr, sonntags geschlossen\nb) Pizzeria Roma: jeden Tag 11–23 Uhr",
+   "questions": [
+    {
+     "prompt": "Welche Anzeige passt?",
+     "answers": [
+      "b"
+     ],
+     "options": [
+      "a",
+      "b"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "sign1": {
+   "kind": "worksheet",
+   "part": "lesen-3",
+   "format": "radio",
+   "title": "Teil 3 · Aufgabe 1",
+   "situation": "An der Tür einer Arztpraxis",
+   "text": "Wir machen Urlaub vom 1. bis 14. August. Ab 15. August sind wir wieder für Sie da.",
+   "questions": [
+    {
+     "prompt": "Am 10. August ist die Praxis geschlossen.",
+     "answers": [
+      "richtig"
+     ],
+     "options": [
+      "richtig",
+      "falsch"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "sign2": {
+   "kind": "worksheet",
+   "part": "lesen-3",
+   "format": "radio",
+   "title": "Teil 3 · Aufgabe 2",
+   "situation": "Am Bahnhof",
+   "text": "Bitte hier nicht rauchen!",
+   "questions": [
+    {
+     "prompt": "Sie dürfen hier rauchen.",
+     "answers": [
+      "falsch"
+     ],
+     "options": [
+      "richtig",
+      "falsch"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "sign3": {
+   "kind": "worksheet",
+   "part": "lesen-3",
+   "format": "radio",
+   "title": "Teil 3 · Aufgabe 3",
+   "situation": "An der Tür einer Bäckerei",
+   "text": "Eingang heute nur in der Bahnhofstraße.",
+   "questions": [
+    {
+     "prompt": "Der Eingang ist heute in der Bahnhofstraße.",
+     "answers": [
+      "richtig"
+     ],
+     "options": [
+      "richtig",
+      "falsch"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "sign4": {
+   "kind": "worksheet",
+   "part": "lesen-3",
+   "format": "radio",
+   "title": "Teil 3 · Aufgabe 4",
+   "situation": "An der Haltestelle",
+   "text": "Die Linie 11 fährt heute nicht. Bitte nehmen Sie die Linie 12.",
+   "questions": [
+    {
+     "prompt": "Sie können heute mit der Linie 11 fahren.",
+     "answers": [
+      "falsch"
+     ],
+     "options": [
+      "richtig",
+      "falsch"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "sign5": {
+   "kind": "worksheet",
+   "part": "lesen-3",
+   "format": "radio",
+   "title": "Teil 3 · Aufgabe 5",
+   "situation": "In der Sprachschule",
+   "text": "Der Deutschkurs ist heute in Raum 204, nicht in Raum 104.",
+   "questions": [
+    {
+     "prompt": "Der Kurs ist heute in Raum 104.",
+     "answers": [
+      "falsch"
+     ],
+     "options": [
+      "richtig",
+      "falsch"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "form": {
+   "kind": "worksheet",
+   "part": "schreiben-1",
+   "format": "notes",
+   "title": "Teil 1 · Anmeldung zum Schwimmkurs",
+   "situation": "Ihr Freund Marek Nowak möchte in Kiel einen Schwimmkurs machen. Er ist 27 Jahre alt und kommt aus Polen. Marek wohnt in der Feldstraße 8 in 24105 Kiel. Er ist Koch von Beruf. Füllen Sie das Formular für ihn aus.",
+   "questions": [
+    {
+     "prompt": "Vorname",
+     "answers": [
+      "Marek"
+     ]
+    },
+    {
+     "prompt": "Alter",
+     "answers": [
+      "27",
+      "27 Jahre",
+      "27 Jahre alt",
+      "siebenundzwanzig"
+     ]
+    },
+    {
+     "prompt": "Herkunftsland",
+     "answers": [
+      "Polen"
+     ]
+    },
+    {
+     "prompt": "Postleitzahl und Wohnort",
+     "answers": [
+      "24105 Kiel"
+     ]
+    },
+    {
+     "prompt": "Beruf",
+     "answers": [
+      "Koch"
+     ]
+    }
+   ],
+   "sample": []
+  },
+  "letter": {
+   "kind": "message",
+   "part": "schreiben-2",
+   "title": "Teil 2 · Eine E-Mail an die Lehrerin",
+   "text": "Schreiben Sie eine E-Mail.",
+   "situation": "Sie können am Freitag nicht zum Deutschkurs kommen. Schreiben Sie Ihrer Lehrerin, Frau Berg. Schreiben Sie etwa 30 Wörter. Schreiben Sie etwas zu allen drei Punkten. Anrede und Gruß nicht vergessen.",
+   "points": [
+    "Warum können Sie nicht kommen?",
+    "Wann kommen Sie wieder?",
+    "Bitten Sie um die Hausaufgaben."
+   ],
+   "sample": [
+    {
+     "de": "Liebe Frau Berg, ich bin krank und kann am Freitag nicht zum Kurs kommen. Am Montag komme ich wieder. Können Sie mir bitte die Hausaufgaben schicken? Viele Grüße, Ihr Marek",
+     "audio": "audio/babb38decf01.m4a"
+    }
+   ]
+  },
+  "self": {
+   "kind": "card",
+   "part": "sprechen-1",
+   "title": "Teil 1 · Sich vorstellen",
+   "word": "Name · Alter · Land · Wohnort · Sprachen · Beruf · Hobby",
+   "situation": "Stellen Sie sich vor. Buchstabieren Sie dann Ihren Namen und nennen Sie eine Telefonnummer.",
+   "sample": []
+  },
+  "ask": {
+   "kind": "card",
+   "part": "sprechen-2",
+   "title": "Teil 2 · Um Informationen bitten",
+   "word": "Thema: Freizeit",
+   "situation": "Stellen Sie zu jedem Wort eine Frage. Antworten Sie auch auf die Fragen von Ihrem Partner oder Ihrer Partnerin.",
+   "roles": [
+    {
+     "title": "Person A",
+     "text": "Ihre Wörter: Sport · Wochenende"
+    },
+    {
+     "title": "Person B",
+     "text": "Ihre Wörter: Kino · Musik"
+    }
+   ],
+   "sample": []
+  },
+  "please": {
+   "kind": "card",
+   "part": "sprechen-3",
+   "title": "Teil 3 · Bitten formulieren",
+   "word": "Eine Bitte zu jedem Bild",
+   "situation": "Bitten Sie Ihren Partner oder Ihre Partnerin zu jedem Bild um etwas. Reagieren Sie auch auf die Bitten von der anderen Person.",
+   "roles": [
+    {
+     "title": "Person A",
+     "text": "Ihre Bilder: 🪟 · ☕"
+    },
+    {
+     "title": "Person B",
+     "text": "Ihre Bilder: 📞 · ✏️"
+    }
+   ],
+   "sample": []
+  }
+ },
+ "dialogues": {
+  "bus": {
+   "title": "An der Haltestelle",
+   "people": {
+    "F": {
+     "name": "Frau",
+     "voice": "Sandy"
+    },
+    "M": {
+     "name": "Mann",
+     "voice": "Eddy"
+    }
+   },
+   "lines": [
+    {
+     "who": "F",
+     "de": "Entschuldigung, wann fährt der Bus zum Bahnhof?",
+     "ru": "Извините, когда идёт автобус до вокзала?",
+     "audio": "audio/4367ec9f00bd.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Um Viertel nach zehn. Jetzt ist es zehn Uhr.",
+     "ru": "В четверть одиннадцатого. Сейчас десять часов.",
+     "audio": "audio/c02791737224.m4a"
+    },
+    {
+     "who": "F",
+     "de": "Danke! Dann habe ich noch Zeit für einen Kaffee.",
+     "ru": "Спасибо! Тогда я ещё успею выпить кофе.",
+     "audio": "audio/14b88fa4ebe1.m4a"
+    }
+   ]
+  },
+  "bread": {
+   "title": "In der Bäckerei",
+   "people": {
+    "F": {
+     "name": "Frau",
+     "voice": "Shelley"
+    },
+    "M": {
+     "name": "Verkäufer",
+     "voice": "Reed"
+    }
+   },
+   "lines": [
+    {
+     "who": "F",
+     "de": "Guten Tag. Was kostet das Brot?",
+     "ru": "Добрый день. Сколько стоит хлеб?",
+     "audio": "audio/105124071a3a.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Zwei Euro achtzig.",
+     "ru": "Два евро восемьдесят.",
+     "audio": "audio/b3ab64157345.m4a"
+    },
+    {
+     "who": "F",
+     "de": "Und ein Brötchen?",
+     "ru": "А булочка?",
+     "audio": "audio/b322381bb704.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Fünfzig Cent.",
+     "ru": "Пятьдесят центов.",
+     "audio": "audio/8604a2ccbdfa.m4a"
+    }
+   ]
+  },
+  "mobile": {
+   "title": "Zu Hause",
+   "people": {
+    "F": {
+     "name": "Frau",
+     "voice": "Anna"
+    },
+    "M": {
+     "name": "Mann",
+     "voice": "Rocko"
+    }
+   },
+   "lines": [
+    {
+     "who": "F",
+     "de": "Wo ist denn mein Handy? Ich finde es nicht.",
+     "ru": "Где же мой телефон? Я его не нахожу.",
+     "audio": "audio/12c9f4cd05a9.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Ist es nicht in deiner Tasche?",
+     "ru": "Он не в твоей сумке?",
+     "audio": "audio/21c3018bbf68.m4a"
+    },
+    {
+     "who": "F",
+     "de": "Nein, und auf dem Tisch ist es auch nicht.",
+     "ru": "Нет, и на столе его тоже нет.",
+     "audio": "audio/9d7ee6a79686.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Ach, hier! Es liegt im Bad.",
+     "ru": "А, вот! Он лежит в ванной.",
+     "audio": "audio/29dafde611e1.m4a"
+    }
+   ]
+  },
+  "cinema": {
+   "title": "Am Telefon",
+   "people": {
+    "M": {
+     "name": "Mann",
+     "voice": "Eddy"
+    },
+    "F": {
+     "name": "Frau",
+     "voice": "Sandy"
+    }
+   },
+   "lines": [
+    {
+     "who": "M",
+     "de": "Hast du am Freitag Zeit? Ich möchte ins Kino gehen.",
+     "ru": "У тебя есть время в пятницу? Я хочу пойти в кино.",
+     "audio": "audio/65cec9ba7e7d.m4a"
+    },
+    {
+     "who": "F",
+     "de": "Am Freitag arbeite ich. Aber am Samstag kann ich.",
+     "ru": "В пятницу я работаю. Но в субботу могу.",
+     "audio": "audio/9dda328c1d69.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Gut, dann gehen wir am Samstag.",
+     "ru": "Хорошо, тогда идём в субботу.",
+     "audio": "audio/8a4d9d35b665.m4a"
+    }
+   ]
+  },
+  "cafe": {
+   "title": "Im Café",
+   "people": {
+    "F": {
+     "name": "Kellnerin",
+     "voice": "Flo"
+    },
+    "M": {
+     "name": "Mann",
+     "voice": "Grandpa"
+    }
+   },
+   "lines": [
+    {
+     "who": "F",
+     "de": "Was möchten Sie trinken?",
+     "ru": "Что вы будете пить?",
+     "audio": "audio/a48e8fc2e06b.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Einen Tee, bitte. Haben Sie auch Kuchen?",
+     "ru": "Чай, пожалуйста. У вас есть пирог?",
+     "audio": "audio/86a5fe6f8a1f.m4a"
+    },
+    {
+     "who": "F",
+     "de": "Ja, wir haben Apfelkuchen.",
+     "ru": "Да, у нас есть яблочный пирог.",
+     "audio": "audio/588b281a5fc9.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Nein, danke. Dann nur den Tee.",
+     "ru": "Нет, спасибо. Тогда только чай.",
+     "audio": "audio/f400db4900f6.m4a"
+    }
+   ]
+  },
+  "way": {
+   "title": "Auf der Straße",
+   "people": {
+    "M": {
+     "name": "Mann",
+     "voice": "Reed"
+    },
+    "F": {
+     "name": "Frau",
+     "voice": "Anna"
+    }
+   },
+   "lines": [
+    {
+     "who": "M",
+     "de": "Entschuldigung, wie komme ich zum Bahnhof?",
+     "ru": "Извините, как мне пройти к вокзалу?",
+     "audio": "audio/5fbe1e8ea31c.m4a"
+    },
+    {
+     "who": "F",
+     "de": "Gehen Sie hier geradeaus und dann links.",
+     "ru": "Идите здесь прямо, а потом налево.",
+     "audio": "audio/a6788e784425.m4a"
+    },
+    {
+     "who": "M",
+     "de": "Ist das weit?",
+     "ru": "Это далеко?",
+     "audio": "audio/61607f85a543.m4a"
+    },
+    {
+     "who": "F",
+     "de": "Nein, nur fünf Minuten zu Fuß.",
+     "ru": "Нет, всего пять минут пешком.",
+     "audio": "audio/ab2992e7fa69.m4a"
+    }
+   ]
+  }
+ },
+ "review": [
+  {
+   "level": "a1",
+   "topic": "tagesablauf",
+   "label": "Тема 6: время и дни недели",
+   "taskIds": [
+    "talk1",
+    "talk4",
+    "phone"
+   ]
+  },
+  {
+   "level": "a1",
+   "topic": "einkaufen",
+   "label": "Тема 5: цены",
+   "taskIds": [
+    "talk2",
+    "notices"
+   ]
+  },
+  {
+   "level": "a1",
+   "topic": "wohnen",
+   "label": "Тема 8: где что находится",
+   "taskIds": [
+    "talk3",
+    "ad2"
+   ]
+  },
+  {
+   "level": "a1",
+   "topic": "essen",
+   "label": "Тема 4: заказ в кафе",
+   "taskIds": [
+    "talk5",
+    "ad5"
+   ]
+  },
+  {
+   "level": "a1",
+   "topic": "stadt",
+   "label": "Тема 9: дорога и транспорт",
+   "taskIds": [
+    "talk6",
+    "sign4"
+   ]
+  },
+  {
+   "level": "a1",
+   "topic": "freizeit",
+   "label": "Тема 7: планы и встречи",
+   "taskIds": [
+    "email",
+    "ad1"
+   ]
+  },
+  {
+   "level": "a1",
+   "topic": "gesundheit",
+   "label": "Тема 10: просьбы и запреты",
+   "taskIds": [
+    "note",
+    "sign1",
+    "sign2"
+   ]
+  },
+  {
+   "level": "a1",
+   "topic": "kennenlernen",
+   "label": "Тема 1: анкета",
+   "taskIds": [
+    "form"
+   ]
+  }
+ ]
+}

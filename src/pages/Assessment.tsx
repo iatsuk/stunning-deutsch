@@ -3,9 +3,31 @@ import { useEffect, useRef, useState } from "react";
 import { Footer, Topbar, useTitle } from "../App";
 import { loadAssessment, examLabel, type Assessment, type Level, type Task } from "../content";
 import { De } from "../markup";
-import { advanceExpired, objectiveResult, playbackLimit, wordCount, b1WeightedResult } from "../assessment/logic";
+import {
+  a1ModuleResult,
+  advanceExpired,
+  objectiveResult,
+  playbackLimit,
+  wordCount,
+  b1WeightedResult,
+} from "../assessment/logic";
 import { normalizeAnswer } from "../adventure/logic";
 import "../styles/assessment.css";
+
+const SEASON: Record<string, string> = { a1: "Kieler Woche", a2: "Küstenlogbuch", b1: "FördeTreff" };
+const MOCK_RULES: Record<string, string> = {
+  a1: "Письменная часть: Hören 20 минут, Lesen 25, Schreiben 20. В Hören 1 и 3 каждую запись можно слушать дважды, в Hören 2 — один раз. Тексты аудио, ответы и разбор появятся после завершения. Устная часть — дополнительно, около 15 минут.",
+  a2: "Письменная часть: 20 + 50 минут. Записи доступны один или два раза по формату задания. Тексты аудио, ответы и разбор появятся после завершения. Устная часть — дополнительно, около 15 минут.",
+  b1: "Таймер каждого раздела продолжается после перезагрузки. Hören 1: каждую запись можно слушать один раз, Hören 2 и 3 — дважды. После завершения будут доступны транскрипты, ответы и свободное переслушивание.",
+};
+const SPEAKING_CHECK: Record<string, string> = {
+  "sprechen-1": "Проверьте: вы рассказали о себе по всем словам, назвали имя по буквам и продиктовали номер?",
+  "sprechen-2": "Проверьте: вы задали вопрос к каждому слову и ответили на вопросы партнёра?",
+  "sprechen-3": "Проверьте: вы высказали просьбу к каждой картинке и отреагировали на просьбы партнёра?",
+  "b1-sprechen-1": "Проверьте: вы представились, задали встречный вопрос и отреагировали на ответ?",
+  "b1-sprechen-2":
+    "Проверьте: вы передали позицию своей карточки, добавили собственный опыт, спросили партнёра и отреагировали?",
+};
 
 type Attempt = {
   index: number;
@@ -123,6 +145,7 @@ function AttemptPage({ data, level }: { data: Assessment; level: Level }) {
   const started = state.startedAt !== null;
   const result = objectiveResult(data.tasks, state.values);
   const weighted = data.level === "b1" && data.mode === "mock" ? b1WeightedResult(data.tasks, state.values) : null;
+  const modules = data.level === "a1" && data.mode === "mock" ? a1ModuleResult(data.tasks, state.values) : null;
   const next = () => {
     stop();
     const n = Date.now();
@@ -306,7 +329,7 @@ function AttemptPage({ data, level }: { data: Assessment; level: Level }) {
             </div>
           );
         })}
-        {task.kind === "message" && (task.choose || task.part === "b1-schreiben-1") && (
+        {task.kind === "message" && (task.choose || task.part === "b1-schreiben-1" || task.part === "schreiben-2") && (
           <>
             {task.choose ? (
               <fieldset disabled={review}>
@@ -335,7 +358,7 @@ function AttemptPage({ data, level }: { data: Assessment; level: Level }) {
               </fieldset>
             ) : (
               <div>
-                <p>Ответьте на все четыре пункта.</p>
+                <p>Ответьте на все пункты.</p>
                 <ul>
                   {task.points?.map((p) => (
                     <li key={p}>
@@ -363,7 +386,9 @@ function AttemptPage({ data, level }: { data: Assessment; level: Level }) {
                 Проверьте с человеком или самостоятельно:{" "}
                 {task.choose
                   ? "раскрыты ли три выбранных пункта и подходит ли объём примерно 40 слов"
-                  : "раскрыты ли все четыре пункта и отвечает ли текст на исходное письмо"}
+                  : task.part === "schreiben-2"
+                    ? "раскрыты ли все три пункта и подходит ли объём примерно 30 слов"
+                    : "раскрыты ли все четыре пункта и отвечает ли текст на исходное письмо"}
                 , есть ли обращение и завершение, связны ли абзацы и понятен ли смысл? Проверьте грамматику и написание.
                 Письмо автоматически не оценивается.
               </p>
@@ -414,11 +439,8 @@ function AttemptPage({ data, level }: { data: Assessment; level: Level }) {
             ))}
             {review && (
               <p>
-                {task.part === "b1-sprechen-1"
-                  ? "Проверьте: вы представились, задали встречный вопрос и отреагировали на ответ?"
-                  : task.part === "b1-sprechen-2"
-                    ? "Проверьте: вы передали позицию своей карточки, добавили собственный опыт, спросили партнёра и отреагировали?"
-                    : "Проверьте: собеседник понял ответ? Вы задали вопрос и отреагировали на его ответ? В совместном плане согласованы время, место и задачи?"}{" "}
+                {SPEAKING_CHECK[task.part] ??
+                  "Проверьте: собеседник понял ответ? Вы задали вопрос и отреагировали на его ответ? В совместном плане согласованы время, место и задачи?"}{" "}
                 Оцените также понятность произношения, разнообразие выражений и правильность форм. Автоматической оценки
                 речи нет.
               </p>
@@ -443,7 +465,7 @@ function AttemptPage({ data, level }: { data: Assessment; level: Level }) {
         ]}
       />
       <main className="assessment-page">
-        <div className="kicker">{data.level === "b1" ? "FördeTreff" : "Küstenlogbuch"} · самостоятельная работа</div>
+        <div className="kicker">{SEASON[data.level]} · самостоятельная работа</div>
         <h1>{data.title}</h1>
         <p className="lede">{data.intro}</p>
         {saveError && <p role="alert">Браузер не разрешил сохранить попытку. Не закрывайте страницу до завершения.</p>}
@@ -460,9 +482,7 @@ function AttemptPage({ data, level }: { data: Assessment; level: Level }) {
             </ul>
             <p>
               {data.mode === "mock"
-                ? data.level === "b1"
-                  ? "Таймер каждого раздела продолжается после перезагрузки. Hören 1: каждую запись можно слушать один раз, Hören 2 и 3 — дважды. После завершения будут доступны транскрипты, ответы и свободное переслушивание."
-                  : "Письменная часть: 20 + 50 минут. Записи доступны один или два раза по формату задания. Тексты аудио, ответы и разбор появятся после завершения. Устная часть — дополнительно, около 15 минут."
+                ? MOCK_RULES[data.level]
                 : "Без таймера и ограничения прослушиваний. Сначала выполните все задания, затем откройте разбор."}
             </p>
             <p>
@@ -480,6 +500,14 @@ function AttemptPage({ data, level }: { data: Assessment; level: Level }) {
               Закрытые задания: {result.correct} из {result.total}. Это число верных ответов, а не официальные баллы или
               прогноз сдачи экзамена.
             </p>
+            {modules && (
+              <p>
+                Hören: {modules.hoeren.correct} из {modules.hoeren.total}, Lesen: {modules.lesen.correct} из{" "}
+                {modules.lesen.total}, формуляр: {modules.form.correct} из {modules.form.total}. Письмо (до 10) и речь
+                (до 15) оцениваются отдельно человеком. Экзамен сдан от 36 баллов из 60; без этих двух оценок итог сдачи
+                не определяется.
+              </p>
+            )}
             {weighted && (
               <p>
                 Взвешенный результат закрытых частей: {weighted.earned} из {weighted.possible}. Письмо (до 45) и речь

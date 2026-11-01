@@ -16,6 +16,13 @@ export function objectiveResult(tasks:Record<string,Task>, values:Record<string,
 export const playbackLimit=(part:string)=>part.startsWith('b1-')?(part==='b1-hoeren-1'?1:2):(part.includes('hoeren-2')?1:2);
 export const wordCount=(value:string)=>value.trim()?value.trim().split(/\s+/).length:0;
 
+/** Start Deutsch 1: Hören and Lesen give 15 points each, the form 5; letter and speech stay ungraded. */
+export function a1ModuleResult(tasks:Record<string,Task>, values:Record<string,string>) {
+ const {details}=objectiveResult(tasks,values);
+ const module=(prefix:string)=>{const items=details.filter(q=>tasks[q.id].part.startsWith(prefix));return {correct:items.filter(q=>q.correct).length,total:items.length};};
+ return {hoeren:module('hoeren'),lesen:module('lesen'),form:module('schreiben')};
+}
+
 /** Zertifikat Deutsch: closed written tasks total 180; productive parts stay ungraded. */
 export function b1WeightedResult(tasks:Record<string,Task>, values:Record<string,string>) {
  const weights:Record<string,number>={'b1-lesen-1':5,'b1-lesen-2':5,'b1-lesen-3':2.5,'b1-sprachbausteine-1':1.5,'b1-sprachbausteine-2':1.5,'b1-hoeren-1':5,'b1-hoeren-2':2.5,'b1-hoeren-3':5};

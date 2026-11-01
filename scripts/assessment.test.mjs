@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 import { readFileSync } from 'node:fs';
 import { parse } from 'yaml';
-import { advanceExpired, objectiveResult, playbackLimit, b1WeightedResult } from '../src/assessment/logic.ts';
+import { a1ModuleResult, advanceExpired, objectiveResult, playbackLimit, b1WeightedResult } from '../src/assessment/logic.ts';
 test('пробник после перезагрузки сохраняет исходные сроки и пропускает просроченные разделы',()=>{
  const sections=[{minutes:20},{minutes:50},{minutes:15}];const s={index:0,startedAt:1000,values:{one:'answer'}};
  assert.equal(advanceExpired(s,sections,1000+19*60000),s);
@@ -59,4 +59,39 @@ test('полный B1: 60 закрытых заданий, реальные ве
  assert.deepEqual(mock.tasks.prepareTopic.roles,mock.tasks.topic.roles);assert.deepEqual(mock.tasks.preparePlan.roles,mock.tasks.plan.roles);
  const state={index:0,startedAt:1000,values:{saved:'yes'}};
  for(const[minutes,index]of [[90,1],[150,3],[170,4],[185,5]]){const n=advanceExpired(state,mock.sections,1000+minutes*60000);assert.equal(n.index,index);assert.deepEqual(n.values,state.values);}
+});
+
+test('пробник A1 повторяет формат Start Deutsch 1',()=>{
+ const mock=parse(readFileSync(new URL('../content/assessments/12-a1-mock.yaml',import.meta.url),'utf8'));
+ assert.deepEqual(mock.sections.map(s=>s.minutes),[20,25,20,15]);
+ const count=part=>Object.values(mock.tasks).filter(t=>t.part===part).reduce((n,t)=>n+t.questions.length,0);
+ assert.deepEqual(['hoeren-1','hoeren-2','hoeren-3','lesen-1','lesen-2','lesen-3','schreiben-1'].map(count),[6,4,5,5,5,5,5]);
+ assert.deepEqual(['hoeren-1','hoeren-2','hoeren-3'].map(playbackLimit),[2,1,2]);
+ for(const t of Object.values(mock.tasks).filter(t=>t.part==='hoeren-1'))assert.ok(mock.dialogues[t.dialogue].lines.length>=3);
+ for(const t of [mock.tasks.notices,mock.tasks.phone])assert.equal(t.recordings.length,t.questions.length);
+ assert.equal(mock.tasks.letter.choose,undefined);assert.equal(mock.tasks.letter.points.length,3);
+ assert.deepEqual(['self','ask','please'].map(id=>mock.tasks[id].part),['sprechen-1','sprechen-2','sprechen-3']);
+ assert.equal(mock.tasks.ask.roles.length,2);assert.notEqual(mock.tasks.please.roles[0].text,mock.tasks.please.roles[1].text);
+});
+test('в пробнике A1 верный ответ не угадывается по позиции',()=>{
+ const mock=parse(readFileSync(new URL('../content/assessments/12-a1-mock.yaml',import.meta.url),'utf8'));
+ const questions=Object.values(mock.tasks).flatMap(t=>t.questions??[]).filter(q=>q.options);
+ assert.ok(questions.every(q=>q.answers.length===1&&q.options.includes(q.answers[0])));
+ const three=questions.filter(q=>q.options.length===3).map(q=>q.options.indexOf(q.answers[0]));
+ assert.equal(three.length,11);
+ for(const place of [0,1,2])assert.ok(three.filter(i=>i===place).length>=3,`позиция ${place}`);
+ const two=questions.filter(q=>q.options.length===2);
+ for(const answer of [two.filter(q=>q.options.includes('richtig')),two.filter(q=>q.options.includes('a'))]){
+  const first=answer.filter(q=>q.answers[0]===q.options[0]).length;
+  assert.ok(first>=2&&first<=answer.length-2,`${first} из ${answer.length}`);
+ }
+});
+test('результат A1 считается по модулям и не объявляет сдачу',()=>{
+ const mock=parse(readFileSync(new URL('../content/assessments/12-a1-mock.yaml',import.meta.url),'utf8'));
+ const values={};for(const[id,t]of Object.entries(mock.tasks))for(const[i,q]of(t.questions??[]).entries())values[`${id}:${i}`]=q.answers[0];
+ assert.deepEqual(a1ModuleResult(mock.tasks,values),{hoeren:{correct:15,total:15},lesen:{correct:15,total:15},form:{correct:5,total:5}});
+ assert.equal(objectiveResult(mock.tasks,values).total,35);
+ values['talk1:0']='10:00 Uhr';values['sign1:0']='falsch';values['form:1']='28';
+ assert.deepEqual(a1ModuleResult(mock.tasks,values),{hoeren:{correct:14,total:15},lesen:{correct:14,total:15},form:{correct:4,total:5}});
+ values['form:1']=' 27 Jahre ';assert.equal(a1ModuleResult(mock.tasks,values).form.correct,5);
 });
