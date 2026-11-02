@@ -112,7 +112,7 @@
      "who": "V",
      "de": "Das macht sechs Euro achtzig.",
      "ru": "С вас шесть евро восемьдесят.",
-     "audio": "audio/11674a16a5c9.m4a"
+     "audio": "audio/6a4af30bdef1.m4a"
     },
     {
      "who": "A",
@@ -193,7 +193,7 @@
      "who": "A",
      "de": "Super! Und er ist nicht teuer – nur neunundzwanzig Euro neunzig.",
      "ru": "Супер! И он недорогой — всего двадцать девять девяносто.",
-     "audio": "audio/47d2bba4ad35.m4a"
+     "audio": "audio/0eb8bbf2a184.m4a"
     },
     {
      "who": "M",
@@ -228,7 +228,7 @@
      "who": "D",
      "de": "Die Jacke ist zu teuer. Ich kaufe sie nicht.",
      "ru": "Куртка слишком дорогая. Я её не покупаю.",
-     "audio": "audio/c2a8a2876b18.m4a"
+     "audio": "audio/72528b01df41.m4a"
     },
     {
      "who": "M",
@@ -240,7 +240,7 @@
      "who": "D",
      "de": "Die Schuhe sind zu klein. Ich kaufe sie nicht.",
      "ru": "Туфли слишком маленькие. Я их не покупаю.",
-     "audio": "audio/df97e8ade0f2.m4a"
+     "audio": "audio/82ec9a97b980.m4a"
     }
    ]
   }
@@ -264,7 +264,7 @@
      "gender": null,
      "plural": null,
      "note": "ein Pfund Tomaten = 500 Gramm",
-     "audio": "audio/3730ffcffea3.m4a"
+     "audio": "audio/c3e472b6dab2.m4a"
     },
     {
      "de": "100 Gramm",
@@ -520,7 +520,7 @@
      "ru": "дешёвый",
      "gender": null,
      "plural": null,
-     "audio": "audio/c605e4589294.m4a"
+     "audio": "audio/d63b4e58aeec.m4a"
     },
     {
      "de": "teuer",
@@ -548,7 +548,7 @@
      "ru": "длинный",
      "gender": null,
      "plural": null,
-     "audio": "audio/a017062dae54.m4a"
+     "audio": "audio/3cec1773d732.m4a"
     },
     {
      "de": "kurz",
@@ -776,7 +776,7 @@
     },
     {
      "de": "Ja, gern. Sie kostet zwanzig Cent.",
-     "audio": "audio/c82b113d89b9.m4a"
+     "audio": "audio/b1a2312269b4.m4a"
     },
     {
      "de": "Leider habe ich keine Tüte.",
@@ -1707,7 +1707,7 @@
       "punct": "?",
       "plain": "Wie finden Sie das Kleid?",
       "ru": "Как вам платье?",
-      "audio": "audio/276e43951798.m4a"
+      "audio": "audio/0d32bb491938.m4a"
      }
     ]
    },
@@ -1803,7 +1803,7 @@
       "punct": ".",
       "plain": "Das macht zwölf Euro neunundvierzig.",
       "ru": "С вас двенадцать евро сорок девять.",
-      "audio": "audio/265ee58ff002.m4a"
+      "audio": "audio/799f0aab56f8.m4a"
      }
     ]
    }
@@ -1855,7 +1855,7 @@
       "punct": ".",
       "plain": "Das macht zwölf Euro neunundvierzig.",
       "ru": "С вас двенадцать евро сорок девять.",
-      "audio": "audio/265ee58ff002.m4a"
+      "audio": "audio/799f0aab56f8.m4a"
      }
     ],
     "task": "durchsage"
@@ -1909,7 +1909,7 @@
       "punct": ".",
       "plain": "Das macht zwölf Euro neunundvierzig.",
       "ru": "С вас двенадцать евро сорок девять.",
-      "audio": "audio/265ee58ff002.m4a"
+      "audio": "audio/799f0aab56f8.m4a"
      }
     ],
     "task": "durchsage",
@@ -1963,7 +1963,7 @@
       "punct": ".",
       "plain": "Das macht zwölf Euro neunundvierzig.",
       "ru": "С вас двенадцать евро сорок девять.",
-      "audio": "audio/265ee58ff002.m4a"
+      "audio": "audio/799f0aab56f8.m4a"
      }
     ],
     "task": "anzeigen"
@@ -2017,7 +2017,7 @@
       "punct": ".",
       "plain": "Das macht zwölf Euro neunundvierzig.",
       "ru": "С вас двенадцать евро сорок девять.",
-      "audio": "audio/265ee58ff002.m4a"
+      "audio": "audio/799f0aab56f8.m4a"
      }
     ],
     "task": "anzeigen",
@@ -2071,7 +2071,7 @@
       "punct": ".",
       "plain": "Das macht zwölf Euro neunundvierzig.",
       "ru": "С вас двенадцать евро сорок девять.",
-      "audio": "audio/265ee58ff002.m4a"
+      "audio": "audio/799f0aab56f8.m4a"
      }
     ],
     "task": "tuete",
@@ -2160,7 +2160,7 @@
    ],
    "ru": "Куртка слишком дорогая. Я её не покупаю.",
    "why": "*die Jacke* → *sie*: женский род в винительном не меняется.",
-   "audio": "audio/c2a8a2876b18.m4a"
+   "audio": "audio/72528b01df41.m4a"
   },
   {
    "id": "einkaufen-8",
@@ -2505,7 +2505,7 @@
     "quotes": [
      {
       "de": "Das macht sechs Euro achtzig.",
-      "audio": "audio/11674a16a5c9.m4a",
+      "audio": "audio/6a4af30bdef1.m4a",
       "name": "Verkäuferin"
      },
      {
@@ -2552,7 +2552,7 @@
      },
      {
       "de": "Super! Und er ist nicht teuer – nur neunundzwanzig Euro neunzig.",
-      "audio": "audio/47d2bba4ad35.m4a",
+      "audio": "audio/0eb8bbf2a184.m4a",
       "name": "Dana"
      }
     ],
@@ -2592,7 +2592,7 @@
      },
      {
       "de": "Die Jacke ist zu teuer. Ich kaufe sie nicht.",
-      "audio": "audio/c2a8a2876b18.m4a",
+      "audio": "audio/72528b01df41.m4a",
       "name": "Dana"
      },
      {
@@ -2602,7 +2602,7 @@
      },
      {
       "de": "Die Schuhe sind zu klein. Ich kaufe sie nicht.",
-      "audio": "audio/df97e8ade0f2.m4a",
+      "audio": "audio/82ec9a97b980.m4a",
       "name": "Dana"
      }
     ],

@@ -101,7 +101,7 @@
      "who": "A",
      "de": "Dann gehe ich zu Fuß. Vielen Dank!",
      "ru": "Тогда я пойду пешком. Большое спасибо!",
-     "audio": "audio/75760574fc2a.m4a"
+     "audio": "audio/3aed95a4e0bd.m4a"
     },
     {
      "who": "P",
@@ -272,7 +272,7 @@
      "plural": null,
      "noPlural": true,
      "note": "zur Post",
-     "audio": "audio/86c0d4a2b204.m4a"
+     "audio": "audio/c29487807f1a.m4a"
     },
     {
      "de": "die Bank",
@@ -437,7 +437,7 @@
      "ru": "Извините!",
      "gender": null,
      "plural": null,
-     "audio": "audio/72b2197c4516.m4a"
+     "audio": "audio/d9bd7d66783d.m4a"
     },
     {
      "de": "Wie komme ich zum …?",
@@ -490,7 +490,7 @@
      "gender": null,
      "plural": null,
      "note": "Ist das weit?",
-     "audio": "audio/653ee2228d2b.m4a"
+     "audio": "audio/28eb44a019b0.m4a"
     },
     {
      "de": "in der Nähe",
@@ -606,7 +606,7 @@
    "ruCols": [
     1
    ],
-   "note": "Какой бы ни был вопрос — «где», «куда» или «откуда», — после этих предлогов всегда дательный."
+   "note": "Какой бы ни был вопрос — «где», «куда» или «откуда», — после этих предлогов всегда дательный падеж."
   },
   "kurz": {
    "title": "zum, zur, beim, vom",
@@ -686,7 +686,7 @@
    "text": "Achtung an Gleis 3! Der Regionalexpress nach Lübeck, Abfahrt zehn Uhr fünfzehn, fährt heute von Gleis 5. Der Zug hat zehn Minuten Verspätung. Wir bitten um Entschuldigung.",
    "statement": "Der Zug nach Lübeck fährt heute von Gleis 3.",
    "answer": false,
-   "audio": "audio/768e517287dc.m4a",
+   "audio": "audio/0bdb95e6347b.m4a",
    "sample": []
   },
   "gespraech": {
@@ -1478,7 +1478,7 @@
       "punct": ".",
       "plain": "Ich fahre mit dem Zug nach Lübeck.",
       "ru": "Я еду в Любек на поезде.",
-      "audio": "audio/647f3ac9b576.m4a"
+      "audio": "audio/468850f44194.m4a"
      }
     ]
    }
@@ -1538,7 +1538,7 @@
       "punct": ".",
       "plain": "Ich fahre mit dem Zug nach Lübeck.",
       "ru": "Я еду в Любек на поезде.",
-      "audio": "audio/647f3ac9b576.m4a"
+      "audio": "audio/468850f44194.m4a"
      }
     ],
     "task": "durchsage"
@@ -1600,7 +1600,7 @@
       "punct": ".",
       "plain": "Ich fahre mit dem Zug nach Lübeck.",
       "ru": "Я еду в Любек на поезде.",
-      "audio": "audio/647f3ac9b576.m4a"
+      "audio": "audio/468850f44194.m4a"
      }
     ],
     "task": "durchsage",
@@ -1662,7 +1662,7 @@
       "punct": ".",
       "plain": "Ich fahre mit dem Zug nach Lübeck.",
       "ru": "Я еду в Любек на поезде.",
-      "audio": "audio/647f3ac9b576.m4a"
+      "audio": "audio/468850f44194.m4a"
      }
     ],
     "task": "durchsage",
@@ -1739,7 +1739,7 @@
       "punct": ".",
       "plain": "Ich fahre mit dem Zug nach Lübeck.",
       "ru": "Я еду в Любек на поезде.",
-      "audio": "audio/647f3ac9b576.m4a"
+      "audio": "audio/468850f44194.m4a"
      }
     ],
     "task": "gespraech"
@@ -1791,7 +1791,7 @@
       "punct": ".",
       "plain": "Ich fahre mit dem Zug nach Lübeck.",
       "ru": "Я еду в Любек на поезде.",
-      "audio": "audio/647f3ac9b576.m4a"
+      "audio": "audio/468850f44194.m4a"
      }
     ],
     "task": "gespraech",
@@ -1853,7 +1853,7 @@
       "punct": ".",
       "plain": "Ich fahre mit dem Zug nach Lübeck.",
       "ru": "Я еду в Любек на поезде.",
-      "audio": "audio/647f3ac9b576.m4a"
+      "audio": "audio/468850f44194.m4a"
      }
     ],
     "task": "hinweis"
@@ -1915,7 +1915,7 @@
       "punct": ".",
       "plain": "Ich fahre mit dem Zug nach Lübeck.",
       "ru": "Я еду в Любек на поезде.",
-      "audio": "audio/647f3ac9b576.m4a"
+      "audio": "audio/468850f44194.m4a"
      }
     ],
     "task": "hinweis",
@@ -1970,7 +1970,7 @@
    ],
    "hint": "zu + der",
    "why": "*die Post* — женский род: *zu der* → *zur*.",
-   "audio": "audio/5c27f137a4f2.m4a"
+   "audio": "audio/eb230a5b1e92.m4a"
   },
   {
    "id": "stadt-5",
@@ -1983,7 +1983,7 @@
    ],
    "answer": 0,
    "why": "Город без артикля, вопрос «куда?» — *nach*.",
-   "audio": "audio/4d35664bf41c.m4a"
+   "audio": "audio/da2e8f14f609.m4a"
   },
   {
    "id": "stadt-6",
@@ -1996,7 +1996,7 @@
    ],
    "answer": 1,
    "why": "Куда? — *zum Arzt*. Где? — *beim Arzt*.",
-   "audio": "audio/2b44028c87ec.m4a"
+   "audio": "audio/06b3008cf21b.m4a"
   },
   {
    "id": "stadt-7",
@@ -2096,7 +2096,7 @@
    ],
    "de": "Ich fahre mit dem Zug nach Lübeck.",
    "why": "Сначала «на чём» — *mit dem Zug*, потом «куда» — *nach Lübeck*.",
-   "audio": "audio/647f3ac9b576.m4a"
+   "audio": "audio/468850f44194.m4a"
   }
  ],
  "case": {
@@ -2233,7 +2233,7 @@
      },
      {
       "de": "Dann gehe ich zu Fuß. Vielen Dank!",
-      "audio": "audio/75760574fc2a.m4a",
+      "audio": "audio/3aed95a4e0bd.m4a",
       "name": "Dana"
      }
     ],
@@ -2265,7 +2265,7 @@
     "quotes": [
      {
       "de": "Achtung an Gleis 3! Der Regionalexpress nach Lübeck, Abfahrt zehn Uhr fünfzehn, fährt heute von Gleis 5. Der Zug hat zehn Minuten Verspätung. Wir bitten um Entschuldigung.",
-      "audio": "audio/768e517287dc.m4a",
+      "audio": "audio/0bdb95e6347b.m4a",
       "name": "Durchsage am Hauptbahnhof"
      }
     ],

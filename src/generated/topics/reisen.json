@@ -70,7 +70,7 @@
      "who": "K",
      "de": "Guten Abend! Willkommen im Hotel Elbblick.",
      "ru": "Добрый вечер! Добро пожаловать в отель «Эльбблик».",
-     "audio": "audio/3c998000a575.m4a"
+     "audio": "audio/23ab1d12f196.m4a"
     },
     {
      "who": "A",
@@ -94,7 +94,7 @@
      "who": "K",
      "de": "Ja, das geht. Ein Einzelzimmer kostet 80 Euro pro Nacht, mit Frühstück.",
      "ru": "Да, это возможно. Одноместный номер стоит 80 евро за ночь, с завтраком.",
-     "audio": "audio/ae776034c227.m4a"
+     "audio": "audio/18c98a65a6ca.m4a"
     },
     {
      "who": "A",
@@ -112,7 +112,7 @@
      "who": "M",
      "de": "Ja, aber der Zug ist erst um acht Uhr angekommen. Er hatte eine Stunde Verspätung.",
      "ru": "Да, но поезд прибыл только в восемь. Он опоздал на час.",
-     "audio": "audio/c86cefa7461c.m4a"
+     "audio": "audio/f3d4295080df.m4a"
     },
     {
      "who": "K",
@@ -147,31 +147,31 @@
      "who": "L",
      "de": "Hallo, Dana! Na, wie ist es in Hamburg?",
      "ru": "Привет, Дана! Ну как там, в Гамбурге?",
-     "audio": "audio/3dfdce39cae1.m4a"
+     "audio": "audio/660839a4752f.m4a"
     },
     {
      "who": "A",
      "de": "Super! Aber das Wetter ist nicht so gut. Es ist kalt und windig.",
      "ru": "Супер! Но погода не очень. Холодно и ветрено.",
-     "audio": "audio/4fcf412aed31.m4a"
+     "audio": "audio/d2157461caf5.m4a"
     },
     {
      "who": "L",
      "de": "Wirklich? Hier in Kiel scheint die Sonne. Es sind 25 Grad!",
      "ru": "Правда? А здесь, в Киле, светит солнце. 25 градусов!",
-     "audio": "audio/b467236b87a2.m4a"
+     "audio": "audio/cda603d67507.m4a"
     },
     {
      "who": "A",
      "de": "Und hier hat es heute Morgen geregnet. Wir haben einen Regenschirm gekauft.",
      "ru": "А здесь сегодня утром шёл дождь. Мы купили зонт.",
-     "audio": "audio/ac792ad03dd4.m4a"
+     "audio": "audio/6c0013507990.m4a"
     },
     {
      "who": "L",
      "de": "Was habt ihr gestern gemacht?",
      "ru": "А что вы делали вчера?",
-     "audio": "audio/917721c93c2e.m4a"
+     "audio": "audio/0ef9f3fc9fce.m4a"
     },
     {
      "who": "A",
@@ -388,7 +388,7 @@
      "gender": null,
      "plural": null,
      "note": "die Sonne",
-     "audio": "audio/e195c7f85385.m4a"
+     "audio": "audio/31639c52abe6.m4a"
     },
     {
      "de": "Es regnet.",
@@ -396,7 +396,7 @@
      "gender": null,
      "plural": null,
      "note": "der Regen",
-     "audio": "audio/2f9e1753aedc.m4a"
+     "audio": "audio/2a1bde48da3c.m4a"
     },
     {
      "de": "Es schneit.",
@@ -404,28 +404,28 @@
      "gender": null,
      "plural": null,
      "note": "der Schnee",
-     "audio": "audio/6d8ac123f236.m4a"
+     "audio": "audio/a828d2b2330d.m4a"
     },
     {
      "de": "sonnig",
      "ru": "солнечно",
      "gender": null,
      "plural": null,
-     "audio": "audio/72e31cb5863b.m4a"
+     "audio": "audio/a32ed8d9da8b.m4a"
     },
     {
      "de": "bewölkt",
      "ru": "облачно",
      "gender": null,
      "plural": null,
-     "audio": "audio/be148c569f8d.m4a"
+     "audio": "audio/addf3cd68ec4.m4a"
     },
     {
      "de": "windig",
      "ru": "ветрено",
      "gender": null,
      "plural": null,
-     "audio": "audio/4efbf61fb4a8.m4a"
+     "audio": "audio/04522ab582ec.m4a"
     },
     {
      "de": "warm",
@@ -439,7 +439,7 @@
      "ru": "холодно",
      "gender": null,
      "plural": null,
-     "audio": "audio/ec448bc4e1df.m4a"
+     "audio": "audio/8ae45295d6e5.m4a"
     },
     {
      "de": "Es sind 20 Grad.",
@@ -447,7 +447,7 @@
      "gender": null,
      "plural": null,
      "note": "Grad после числа не меняется",
-     "audio": "audio/2ede520bbecc.m4a"
+     "audio": "audio/656869daaa7a.m4a"
     },
     {
      "de": "der Regenschirm",
@@ -729,11 +729,11 @@
     },
     {
      "de": "Das Wetter war leider nicht so gut. Es hat oft geregnet.",
-     "audio": "audio/d42bf9894406.m4a"
+     "audio": "audio/48a82abb34c5.m4a"
     },
     {
      "de": "Im Juli fahre ich nach Eckernförde und gehe zum Strand.",
-     "audio": "audio/9a94a9bf4e58.m4a"
+     "audio": "audio/1ebd9da26efc.m4a"
     },
     {
      "de": "Viele Grüße",
@@ -798,7 +798,7 @@
    "text": "Achtung an Gleis 8! Der Intercity nach Kiel, Abfahrt 17 Uhr 46, fährt heute nicht von Gleis 8, sondern von Gleis 12 ab. Der Zug hat circa 20 Minuten Verspätung. Wir bitten um Entschuldigung.",
    "statement": "Der Zug nach Kiel fährt von Gleis 8 ab.",
    "answer": false,
-   "audio": "audio/7ea6447c6b12.m4a",
+   "audio": "audio/38b5d6a0c04b.m4a",
    "sample": []
   },
   "wetterplan": {
@@ -1017,7 +1017,7 @@
       "punct": ".",
       "plain": "Wir haben im Hotel gefrühstückt.",
       "ru": "Мы позавтракали в отеле.",
-      "audio": "audio/1b9cadcbfa1e.m4a"
+      "audio": "audio/cd7af7ca5e13.m4a"
      },
      {
       "slots": [
@@ -1105,7 +1105,7 @@
       "punct": ".",
       "plain": "Wir haben im Hotel gefrühstückt.",
       "ru": "Мы позавтракали в отеле.",
-      "audio": "audio/1b9cadcbfa1e.m4a"
+      "audio": "audio/cd7af7ca5e13.m4a"
      },
      {
       "slots": [
@@ -1216,7 +1216,7 @@
       "punct": ".",
       "plain": "Wir haben im Hotel gefrühstückt.",
       "ru": "Мы позавтракали в отеле.",
-      "audio": "audio/1b9cadcbfa1e.m4a"
+      "audio": "audio/cd7af7ca5e13.m4a"
      },
      {
       "slots": [
@@ -1470,7 +1470,7 @@
       "punct": ".",
       "plain": "Gestern hat es geregnet.",
       "ru": "Вчера шёл дождь.",
-      "audio": "audio/4e0bef620fc9.m4a"
+      "audio": "audio/8f82d3586829.m4a"
      }
     ],
     "table": "hilfsverb",
@@ -1549,7 +1549,7 @@
       "punct": ".",
       "plain": "Gestern hat es geregnet.",
       "ru": "Вчера шёл дождь.",
-      "audio": "audio/4e0bef620fc9.m4a"
+      "audio": "audio/8f82d3586829.m4a"
      }
     ],
     "table": "monate"
@@ -1625,7 +1625,7 @@
       "punct": ".",
       "plain": "Gestern hat es geregnet.",
       "ru": "Вчера шёл дождь.",
-      "audio": "audio/4e0bef620fc9.m4a"
+      "audio": "audio/8f82d3586829.m4a"
      }
     ],
     "table": "datum",
@@ -1708,7 +1708,7 @@
       "punct": ".",
       "plain": "Gestern hat es geregnet.",
       "ru": "Вчера шёл дождь.",
-      "audio": "audio/4e0bef620fc9.m4a"
+      "audio": "audio/8f82d3586829.m4a"
      }
     ],
     "table": "datum",
@@ -2380,7 +2380,7 @@
       "punct": "!",
       "plain": "Sie haben es geschafft!",
       "ru": "У вас получилось!",
-      "audio": "audio/dcd90c82e033.m4a"
+      "audio": "audio/c8b5f6b8802e.m4a"
      }
     ],
     "table": "datum",
@@ -2413,7 +2413,7 @@
    ],
    "answer": 1,
    "why": "Погода — без движения: *es hat geregnet*.",
-   "audio": "audio/d8cda630260f.m4a"
+   "audio": "audio/2db32a94a1b9.m4a"
   },
   {
    "id": "reisen-3",
@@ -2469,7 +2469,7 @@
    ],
    "hint": "kaufen",
    "why": "*kaufen* — без движения: *hat gekauft*, причастие в конце.",
-   "audio": "audio/5dfea9a36c03.m4a"
+   "audio": "audio/cf7492b808b8.m4a"
   },
   {
    "id": "reisen-8",
@@ -2507,7 +2507,7 @@
    "hint": "20.",
    "ru": "У меня день рождения 20 мая.",
    "why": "С 20 — *-ste*, после *am* — *-en*: *am zwanzigsten*.",
-   "audio": "audio/87211bb5d8b0.m4a"
+   "audio": "audio/f713568e9f96.m4a"
   },
   {
    "id": "reisen-11",
@@ -2533,7 +2533,7 @@
    ],
    "answer": 1,
    "why": "У погоды всегда есть подлежащее *es*: *Es ist kalt.*",
-   "audio": "audio/c610bc11cb4c.m4a"
+   "audio": "audio/3cbb2861e0f7.m4a"
   },
   {
    "id": "reisen-13",
@@ -2576,7 +2576,7 @@
     "Es war gestern kalt und windig.",
     "Es war gestern windig und kalt."
    ],
-   "audio": "audio/b3e565e1d280.m4a"
+   "audio": "audio/28da9c7c577b.m4a"
   }
  ],
  "case": {
@@ -2625,7 +2625,7 @@
       "who": "J",
       "de": "Dana und Mateo sind nach Kiel zurückgekommen. Jetzt sind sie im Club.",
       "ru": "Дана и Матео вернулись в Киль. Теперь они в клубе.",
-      "audio": "audio/bcee3079af5d.m4a"
+      "audio": "audio/e2b4d3f1779b.m4a"
      }
     ],
     "question": "Что подтверждает отчёт?",
@@ -2675,7 +2675,7 @@
       "who": "J",
       "de": "Die Sprotte ist zurückgekommen. Sie ist an Liegeplatz zweiunddreißig geblieben. Herr Vehrs hatte Liegeplatz dreiundzwanzig.",
       "ru": "«Шпротта» вернулась. Она осталась на месте 32. У господина Ферса было место 23.",
-      "audio": "audio/c440cbc9a454.m4a"
+      "audio": "audio/3600c3970449.m4a"
      }
     ],
     "question": "Какой итог соответствует подтверждению?",
@@ -2824,7 +2824,7 @@
     "quotes": [
      {
       "de": "Und hier hat es heute Morgen geregnet. Wir haben einen Regenschirm gekauft.",
-      "audio": "audio/ac792ad03dd4.m4a",
+      "audio": "audio/6c0013507990.m4a",
       "name": "Dana"
      },
      {
@@ -2904,7 +2904,7 @@
     "quotes": [
      {
       "de": "Achtung an Gleis 8! Der Intercity nach Kiel, Abfahrt 17 Uhr 46, fährt heute nicht von Gleis 8, sondern von Gleis 12 ab. Der Zug hat circa 20 Minuten Verspätung. Wir bitten um Entschuldigung.",
-      "audio": "audio/7ea6447c6b12.m4a",
+      "audio": "audio/38b5d6a0c04b.m4a",
       "name": "Hören, Teil 2"
      }
     ],

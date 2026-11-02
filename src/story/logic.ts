@@ -1,4 +1,4 @@
-import { judge } from "../trainer/logic.ts";
+import { judge, nearMisses } from "../trainer/logic.ts";
 import type {
   Answer,
   Beat,
@@ -366,9 +366,12 @@ export function mistake(c: Challenge, value: Answer, hint: string): string {
       if (verdicts.includes("empty")) return "Заполните все поля.";
       if (verdicts.includes("wrong"))
         return "Красные поля пока неверны. Если слово не вспоминается, проверьте ещё раз: под полем появится правильный ответ.";
+      const near = c.fields
+        .flatMap((f) => nearMisses(String(record[f.id] ?? ""), f.answers))
+        .join(", ");
       return verdicts.includes("case")
-        ? "Почти: проверьте заглавные и строчные буквы."
-        : "Почти: нужна буква с умлаутом или ß.";
+        ? `Почти: проверьте заглавные и строчные буквы — ${near}.`
+        : `Почти: нужна буква с умлаутом или ß — ${near}.`;
     }
     case "spot":
       return list.length === c.answer.length

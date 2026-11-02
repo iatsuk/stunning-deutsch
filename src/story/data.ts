@@ -579,7 +579,7 @@ export const episodes: Episode[] = [
           line(
             "Frau Petersen",
             "Sandy",
-            "Null eins sieben sechs, zwei drei, vier fünf, acht eins.",
+            "Null, eins, sieben, sechs. Zwei, drei. Vier, fünf. Acht, eins.",
             "0176 23 45 81",
           ),
         ],

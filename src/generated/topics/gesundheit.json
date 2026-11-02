@@ -101,13 +101,13 @@
      "who": "P",
      "de": "Ja, bringen Sie bitte Ihre Versichertenkarte mit.",
      "ru": "Да, возьмите, пожалуйста, вашу карту медицинской страховки.",
-     "audio": "audio/df288210d552.m4a"
+     "audio": "audio/04836751c710.m4a"
     },
     {
      "who": "M",
      "de": "Gut. Vielen Dank!",
      "ru": "Хорошо. Большое спасибо!",
-     "audio": "audio/272bcfa2d996.m4a"
+     "audio": "audio/ce528f1e651a.m4a"
     },
     {
      "who": "P",
@@ -136,7 +136,7 @@
      "who": "A",
      "de": "Hallo, Mateo! Du bist heute nicht im Kurs. Bist du krank?",
      "ru": "Привет, Матео! Тебя сегодня нет на курсе. Ты заболел?",
-     "audio": "audio/d315a5190269.m4a"
+     "audio": "audio/0fa8d915b3db.m4a"
     },
     {
      "who": "M",
@@ -148,7 +148,7 @@
      "who": "A",
      "de": "Oh nein! Und was sagt der Arzt?",
      "ru": "О нет! А что говорит врач?",
-     "audio": "audio/f31ff8f35bf0.m4a"
+     "audio": "audio/4b8d96352dd6.m4a"
     },
     {
      "who": "M",
@@ -160,7 +160,7 @@
      "who": "A",
      "de": "Oh, du Armer! Ruf bitte in der Praxis an! Und nimm deine Karte mit!",
      "ru": "Ох, бедняга! Позвони, пожалуйста, в практику! И возьми свою карту!",
-     "audio": "audio/bbb3abc75882.m4a"
+     "audio": "audio/4dfef65b446c.m4a"
     },
     {
      "who": "M",
@@ -178,7 +178,7 @@
      "who": "M",
      "de": "Ja, danke! Kommt um vier! Und bringt bitte auch Brot mit!",
      "ru": "Да, спасибо! Приходите в четыре! И принесите, пожалуйста, ещё хлеб!",
-     "audio": "audio/432914cf6d3d.m4a"
+     "audio": "audio/6c6bb655c69d.m4a"
     },
     {
      "who": "A",
@@ -291,14 +291,14 @@
      "gender": null,
      "plural": null,
      "note": "Ich bin krank.",
-     "audio": "audio/7c20d0afc943.m4a"
+     "audio": "audio/c3be36ebcb52.m4a"
     },
     {
      "de": "gesund",
      "ru": "здоровый",
      "gender": null,
      "plural": null,
-     "audio": "audio/b146404d59e3.m4a"
+     "audio": "audio/bba3940ce6a1.m4a"
     },
     {
      "de": "die Erkältung",
@@ -355,7 +355,7 @@
      "ru": "Выздоравливайте!",
      "gender": null,
      "plural": null,
-     "audio": "audio/322125118847.m4a"
+     "audio": "audio/3097ed992d11.m4a"
     }
    ]
   },
@@ -983,7 +983,7 @@
       "punct": ".",
       "plain": "Ich bleibe im Bett.",
       "ru": "Я лежу в постели.",
-      "audio": "audio/b7615964cee9.m4a"
+      "audio": "audio/6941621b2256.m4a"
      }
     ]
    }
@@ -1218,7 +1218,7 @@
       "punct": ".",
       "plain": "Du bleibst im Bett.",
       "ru": "Ты лежишь в постели.",
-      "audio": "audio/800be6d76ec3.m4a"
+      "audio": "audio/176c48d19ba5.m4a"
      },
      {
       "slots": [
@@ -1249,7 +1249,7 @@
       "punct": ".",
       "plain": "Ihr bleibt im Bett.",
       "ru": "Вы лежите в постели.",
-      "audio": "audio/7f35442db879.m4a"
+      "audio": "audio/29210826ef44.m4a"
      }
     ]
    }
@@ -1292,7 +1292,7 @@
       "punct": "!",
       "plain": "Bleib im Bett!",
       "ru": "Лежи в постели!",
-      "audio": "audio/2e3440b76c46.m4a"
+      "audio": "audio/2f19e65ba662.m4a"
      },
      {
       "slots": [
@@ -1318,7 +1318,7 @@
       "punct": "!",
       "plain": "Bleibt im Bett!",
       "ru": "Лежите в постели! (друзьям)",
-      "audio": "audio/5af837e4c496.m4a"
+      "audio": "audio/95fb06fa59ed.m4a"
      },
      {
       "slots": [
@@ -1348,7 +1348,7 @@
       "punct": "!",
       "plain": "Bleiben Sie im Bett!",
       "ru": "Лежите в постели! (вежливо)",
-      "audio": "audio/2156e0c2b466.m4a"
+      "audio": "audio/89b3b10a98b1.m4a"
      }
     ],
     "fresh": [
@@ -1394,7 +1394,7 @@
       "punct": "!",
       "plain": "Bleib im Bett!",
       "ru": "Лежи в постели!",
-      "audio": "audio/2e3440b76c46.m4a"
+      "audio": "audio/2f19e65ba662.m4a"
      },
      {
       "slots": [
@@ -1420,7 +1420,7 @@
       "punct": "!",
       "plain": "Bleibt im Bett!",
       "ru": "Лежите в постели! (друзьям)",
-      "audio": "audio/5af837e4c496.m4a"
+      "audio": "audio/95fb06fa59ed.m4a"
      },
      {
       "slots": [
@@ -1450,7 +1450,7 @@
       "punct": "!",
       "plain": "Bleiben Sie im Bett!",
       "ru": "Лежите в постели! (вежливо)",
-      "audio": "audio/2156e0c2b466.m4a"
+      "audio": "audio/89b3b10a98b1.m4a"
      }
     ],
     "focus": [
@@ -1500,7 +1500,7 @@
       "punct": "!",
       "plain": "Bleib im Bett!",
       "ru": "Лежи в постели!",
-      "audio": "audio/2e3440b76c46.m4a"
+      "audio": "audio/2f19e65ba662.m4a"
      },
      {
       "slots": [
@@ -1526,7 +1526,7 @@
       "punct": "!",
       "plain": "Bleibt im Bett!",
       "ru": "Лежите в постели! (друзьям)",
-      "audio": "audio/5af837e4c496.m4a"
+      "audio": "audio/95fb06fa59ed.m4a"
      },
      {
       "slots": [
@@ -1556,7 +1556,7 @@
       "punct": "!",
       "plain": "Bleiben Sie im Bett!",
       "ru": "Лежите в постели! (вежливо)",
-      "audio": "audio/2156e0c2b466.m4a"
+      "audio": "audio/89b3b10a98b1.m4a"
      }
     ],
     "focus": [
@@ -1665,7 +1665,7 @@
       "punct": "!",
       "plain": "Geh bitte zum Arzt!",
       "ru": "Сходи, пожалуйста, к врачу!",
-      "audio": "audio/f959c3d6f045.m4a"
+      "audio": "audio/74e02a09bf25.m4a"
      },
      {
       "slots": [
@@ -1687,7 +1687,7 @@
       "punct": "!",
       "plain": "Rauch nicht!",
       "ru": "Не кури!",
-      "audio": "audio/fef169da2c2a.m4a"
+      "audio": "audio/714d499fba72.m4a"
      }
     ],
     "fresh": [
@@ -1737,7 +1737,7 @@
       "punct": "!",
       "plain": "Geh bitte zum Arzt!",
       "ru": "Сходи, пожалуйста, к врачу!",
-      "audio": "audio/f959c3d6f045.m4a"
+      "audio": "audio/74e02a09bf25.m4a"
      },
      {
       "slots": [
@@ -1759,7 +1759,7 @@
       "punct": "!",
       "plain": "Rauch nicht!",
       "ru": "Не кури!",
-      "audio": "audio/fef169da2c2a.m4a"
+      "audio": "audio/714d499fba72.m4a"
      }
     ],
     "task": "anruf"
@@ -1808,7 +1808,7 @@
       "punct": "!",
       "plain": "Geh bitte zum Arzt!",
       "ru": "Сходи, пожалуйста, к врачу!",
-      "audio": "audio/f959c3d6f045.m4a"
+      "audio": "audio/74e02a09bf25.m4a"
      },
      {
       "slots": [
@@ -1830,7 +1830,7 @@
       "punct": "!",
       "plain": "Rauch nicht!",
       "ru": "Не кури!",
-      "audio": "audio/fef169da2c2a.m4a"
+      "audio": "audio/714d499fba72.m4a"
      }
     ],
     "task": "anruf",
@@ -1879,7 +1879,7 @@
       "punct": "!",
       "plain": "Geh bitte zum Arzt!",
       "ru": "Сходи, пожалуйста, к врачу!",
-      "audio": "audio/f959c3d6f045.m4a"
+      "audio": "audio/74e02a09bf25.m4a"
      },
      {
       "slots": [
@@ -1901,7 +1901,7 @@
       "punct": "!",
       "plain": "Rauch nicht!",
       "ru": "Не кури!",
-      "audio": "audio/fef169da2c2a.m4a"
+      "audio": "audio/714d499fba72.m4a"
      }
     ],
     "task": "absage",
@@ -1950,7 +1950,7 @@
       "punct": "!",
       "plain": "Geh bitte zum Arzt!",
       "ru": "Сходи, пожалуйста, к врачу!",
-      "audio": "audio/f959c3d6f045.m4a"
+      "audio": "audio/74e02a09bf25.m4a"
      },
      {
       "slots": [
@@ -1972,7 +1972,7 @@
       "punct": "!",
       "plain": "Rauch nicht!",
       "ru": "Не кури!",
-      "audio": "audio/fef169da2c2a.m4a"
+      "audio": "audio/714d499fba72.m4a"
      }
     ],
     "task": "absage",
@@ -2154,7 +2154,7 @@
    ],
    "hint": "dürfen",
    "why": "Спрашиваем разрешения — *dürfen*; в вопросе да/нет глагол первым.",
-   "audio": "audio/ea6ac08884cc.m4a"
+   "audio": "audio/22da7949ba52.m4a"
   },
   {
    "id": "gesundheit-8",
@@ -2225,7 +2225,7 @@
    ],
    "hint": "mitbringen",
    "why": "Вежливо: глагол первым, *Sie* за ним, приставка *mit* — в конце.",
-   "audio": "audio/5a1b6cbca932.m4a"
+   "audio": "audio/240313868770.m4a"
   },
   {
    "id": "gesundheit-14",
@@ -2253,7 +2253,7 @@
    "also": [
     "Bitte geh zum Arzt!"
    ],
-   "audio": "audio/f959c3d6f045.m4a"
+   "audio": "audio/74e02a09bf25.m4a"
   }
  ],
  "case": {

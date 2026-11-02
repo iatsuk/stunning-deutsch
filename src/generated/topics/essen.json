@@ -104,7 +104,7 @@
      "who": "K",
      "de": "Zusammen oder getrennt?",
      "ru": "Вместе или раздельно?",
-     "audio": "audio/8126c75b6101.m4a"
+     "audio": "audio/c41188a435dd.m4a"
     },
     {
      "who": "M",
@@ -163,7 +163,7 @@
      "who": "A",
      "de": "Super! Kochst du oft?",
      "ru": "Супер! Ты часто готовишь?",
-     "audio": "audio/d839e078d0a4.m4a"
+     "audio": "audio/136b890be7b2.m4a"
     },
     {
      "who": "M",
@@ -278,7 +278,7 @@
      "who": "H",
      "de": "Ich nehme ein Fischbrötchen und einen Saft.",
      "ru": "Я возьму булочку с рыбой и сок.",
-     "audio": "audio/4d34722efcd1.m4a"
+     "audio": "audio/ae1ee1b02652.m4a"
     }
    ]
   }
@@ -635,14 +635,14 @@
      "ru": "Приятного аппетита!",
      "gender": null,
      "plural": null,
-     "audio": "audio/69b34cc3caeb.m4a"
+     "audio": "audio/291f1e4a6cc9.m4a"
     },
     {
      "de": "Zusammen oder getrennt?",
      "ru": "Вместе или раздельно?",
      "gender": null,
      "plural": null,
-     "audio": "audio/e0d14b421cd0.m4a"
+     "audio": "audio/c9756698508c.m4a"
     }
    ]
   }
@@ -1160,7 +1160,7 @@
       "punct": ".",
       "plain": "Der Kaffee ist hier sehr gut.",
       "ru": "Кофе здесь очень хороший.",
-      "audio": "audio/f5dd939299b5.m4a"
+      "audio": "audio/62ee202c2744.m4a"
      }
     ]
    }
@@ -1218,7 +1218,7 @@
    "stepTitle": "Кого? Что? — винительный падеж",
    "chapterIndex": 2,
    "indexInStep": 2,
-   "read": "Хорошая новость: винительный меняет только мужской род. *der* → *den*, *ein* → *einen*, *kein* → *keinen* — у всех трёх появляется *-en*. Женский, средний род и множественное число выглядят так же, как в именительном: *Ich nehme die Suppe*, *Ich möchte ein Ei*. Так что вопрос «какое окончание?» сводится к вопросу «какого рода слово?» — ещё одна причина учить слова с артиклем.",
+   "read": "Хорошая новость: винительный падеж меняет только мужской род. *der* → *den*, *ein* → *einen*, *kein* → *keinen* — у всех трёх появляется *-en*. Женский, средний род и множественное число выглядят так же, как в именительном: *Ich nehme die Suppe*, *Ich möchte ein Ei*. Так что вопрос «какое окончание?» сводится к вопросу «какого рода слово?» — ещё одна причина учить слова с артиклем.",
    "point": "Меняется только мужской род: *den*, *einen*, *keinen*",
    "scene": {
     "view": "table",
@@ -2028,7 +2028,7 @@
    "stepTitle": "Устный экзамен: часть 3",
    "chapterIndex": 4,
    "indexInStep": 0,
-   "read": "В третьей части на карточке не слово, а картинка. По ней нужно попросить партнёра о чём-то, а потом отреагировать на его просьбу. За просьбу дают 2 балла, за реакцию — 1. Видите чашку кофе — просите кофе. Здесь и пригодится винительный: кофе — *der Kaffee*, значит, в просьбе *einen Kaffee*.",
+   "read": "В третьей части на карточке не слово, а картинка. По ней нужно попросить партнёра о чём-то, а потом отреагировать на его просьбу. За просьбу дают 2 балла, за реакцию — 1. Видите чашку кофе — просите кофе. Здесь и пригодится винительный падеж: кофе — *der Kaffee*, значит, в просьбе *einen Kaffee*.",
    "point": "Часть 3: по картинке попросить и отреагировать на просьбу",
    "scene": {
     "view": "task",
@@ -2559,7 +2559,7 @@
    ],
    "de": "Ich nehme ein Fischbrötchen und einen Saft.",
    "why": "*das Fischbrötchen* — *ein*, *der Saft* — *einen*.",
-   "audio": "audio/5293426cce62.m4a"
+   "audio": "audio/3851863e0008.m4a"
   }
  ],
  "case": {
@@ -2777,7 +2777,7 @@
     "quotes": [
      {
       "de": "Zusammen oder getrennt?",
-      "audio": "audio/8126c75b6101.m4a",
+      "audio": "audio/c41188a435dd.m4a",
       "name": "Kellner"
      },
      {
@@ -2898,7 +2898,7 @@
      },
      {
       "de": "Ich nehme ein Fischbrötchen und einen Saft.",
-      "audio": "audio/4d34722efcd1.m4a",
+      "audio": "audio/ae1ee1b02652.m4a",
       "name": "Hauke"
      }
     ],

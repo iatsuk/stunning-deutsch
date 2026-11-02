@@ -99,13 +99,13 @@
      "who": "M",
      "de": "Und der Hund? Ist das euer Hund?",
      "ru": "А собака? Это ваш пёс?",
-     "audio": "audio/0e620c289ff8.m4a"
+     "audio": "audio/847a00ab42ad.m4a"
     },
     {
      "who": "A",
      "de": "Ja, das ist unser Hund Balu. Er ist schon zwölf Jahre alt.",
      "ru": "Да, это наш пёс Балу. Ему уже двенадцать лет.",
-     "audio": "audio/cc4f4b448680.m4a"
+     "audio": "audio/37bb0a74ec17.m4a"
     }
    ]
   },
@@ -451,7 +451,7 @@
      "gender": null,
      "plural": null,
      "note": "Ich bin verheiratet.",
-     "audio": "audio/d5416b69dca9.m4a"
+     "audio": "audio/7b2d21c9871e.m4a"
     },
     {
      "de": "ledig",
@@ -459,7 +459,7 @@
      "gender": null,
      "plural": null,
      "note": "слово из анкет",
-     "audio": "audio/a5100f127ab8.m4a"
+     "audio": "audio/ace4da18d0b7.m4a"
     },
     {
      "de": "geschieden",
@@ -2111,7 +2111,7 @@
    ],
    "hint": "ihr",
    "why": "*ihr* → *euer*; перед *der Hund* — без окончания.",
-   "audio": "audio/8a82767b805e.m4a"
+   "audio": "audio/094d0ed631e3.m4a"
   },
   {
    "id": "familie-7",
@@ -2348,7 +2348,7 @@
       "who": "V",
       "de": "Ich bin Diegos Bruder. Das ist mein Rucksack.",
       "ru": "Я брат Диего. Это мой рюкзак.",
-      "audio": "audio/c1de4ca08f3a.m4a"
+      "audio": "audio/8cf4b621f211.m4a"
      },
      {
       "kind": "quote",

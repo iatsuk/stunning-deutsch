@@ -70,13 +70,13 @@
      "who": "M",
      "de": "Am Samstag arbeite ich. Aber am Sonntag habe ich Zeit.",
      "ru": "В субботу я работаю. Но в воскресенье я свободен.",
-     "audio": "audio/8c7e4d93efbd.m4a"
+     "audio": "audio/3a199bc5cb6e.m4a"
     },
     {
      "who": "A",
      "de": "Ich will am Sonntag schwimmen. Kommst du mit?",
      "ru": "Я хочу в воскресенье поплавать. Пойдёшь со мной?",
-     "audio": "audio/1b4a086653dd.m4a"
+     "audio": "audio/6cae4c151e0b.m4a"
     },
     {
      "who": "M",
@@ -112,7 +112,7 @@
      "who": "A",
      "de": "Gut, um zwölf. Bis Sonntag!",
      "ru": "Хорошо, в двенадцать. До воскресенья!",
-     "audio": "audio/f1e6c4454402.m4a"
+     "audio": "audio/04e99c569641.m4a"
     }
    ]
   },
@@ -134,7 +134,7 @@
      "who": "J",
      "de": "Hallo Dana, hier ist Hauke. Hast du am Samstag Zeit?",
      "ru": "Привет, Дана, это Хауке. Ты свободна в субботу?",
-     "audio": "audio/e3030b8d2ccd.m4a"
+     "audio": "audio/00466e235545.m4a"
     },
     {
      "who": "A",
@@ -146,7 +146,7 @@
      "who": "J",
      "de": "Wir wollen am Samstag grillen. Kommst du mit?",
      "ru": "Мы хотим в субботу устроить барбекю. Пойдёшь с нами?",
-     "audio": "audio/5a24a91f0d5e.m4a"
+     "audio": "audio/e01e7c9feacc.m4a"
     },
     {
      "who": "A",
@@ -182,7 +182,7 @@
      "who": "J",
      "de": "Ja, das passt. Bis Sonntag!",
      "ru": "Да, мне подходит. До пятницы!",
-     "audio": "audio/8e490a348107.m4a"
+     "audio": "audio/6806f9a7cd01.m4a"
     }
    ]
   },
@@ -347,7 +347,7 @@
      "gender": "f",
      "plural": null,
      "noPlural": true,
-     "audio": "audio/003186903a61.m4a"
+     "audio": "audio/02f94b068e46.m4a"
     },
     {
      "de": "das Hobby",
@@ -362,7 +362,7 @@
      "gender": "m",
      "plural": null,
      "noPlural": true,
-     "audio": "audio/52243755c076.m4a"
+     "audio": "audio/443193b2e842.m4a"
     },
     {
      "de": "der Film",
@@ -463,7 +463,7 @@
      "ru": "часто",
      "gender": null,
      "plural": null,
-     "audio": "audio/33be5559a9de.m4a"
+     "audio": "audio/739b25310ac1.m4a"
     },
     {
      "de": "manchmal",
@@ -720,7 +720,7 @@
     },
     {
      "de": "danke für die Einladung!",
-     "audio": "audio/0f3ad9c54061.m4a"
+     "audio": "audio/cd600c6e3d8a.m4a"
     },
     {
      "de": "Leider kann ich am Samstag nicht kommen.",
@@ -736,7 +736,7 @@
     },
     {
      "de": "Um zehn Uhr habe ich Zeit.",
-     "audio": "audio/490c4c4026b8.m4a"
+     "audio": "audio/e841e997c1ef.m4a"
     },
     {
      "de": "Viele Grüße",
@@ -1282,7 +1282,7 @@
       "punct": ".",
       "plain": "Am Samstag kann ich leider nicht.",
       "ru": "В субботу я, к сожалению, не могу.",
-      "audio": "audio/4ac2ede42898.m4a"
+      "audio": "audio/091815f8a064.m4a"
      }
     ]
    }
@@ -1374,7 +1374,7 @@
       "punct": ".",
       "plain": "Am Samstag kann ich leider nicht.",
       "ru": "В субботу я, к сожалению, не могу.",
-      "audio": "audio/4ac2ede42898.m4a"
+      "audio": "audio/091815f8a064.m4a"
      }
     ]
    }
@@ -1466,7 +1466,7 @@
       "punct": ".",
       "plain": "Am Samstag kann ich leider nicht.",
       "ru": "В субботу я, к сожалению, не могу.",
-      "audio": "audio/4ac2ede42898.m4a"
+      "audio": "audio/091815f8a064.m4a"
      }
     ]
    }
@@ -1511,7 +1511,7 @@
       "punct": "?",
       "plain": "Kommst du mit?",
       "ru": "Ты пойдёшь с нами?",
-      "audio": "audio/e6ee66acccef.m4a"
+      "audio": "audio/91e7785d59eb.m4a"
      }
     ]
    },
@@ -1546,7 +1546,7 @@
       "punct": "?",
       "plain": "Kommst du mit?",
       "ru": "Ты пойдёшь с нами?",
-      "audio": "audio/e6ee66acccef.m4a"
+      "audio": "audio/91e7785d59eb.m4a"
      },
      {
       "slots": [
@@ -2313,7 +2313,7 @@
       "who": "D",
       "de": "Am Samstag kann ich leider nicht. Mein Bruder besucht mich. Aber am Sonntag habe ich Zeit.",
       "ru": "В субботу я, к сожалению, не могу. Ко мне приезжает брат. Но в воскресенье я свободна.",
-      "audio": "audio/027fca0f4f3b.m4a"
+      "audio": "audio/ffebcf241c2c.m4a"
      }
     ],
     "question": "Как отметить ответ Даны?",

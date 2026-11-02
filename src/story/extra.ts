@@ -181,7 +181,7 @@ export const extras: Record<string, Beat[]> = {
       ])),
     step("02-x-oral", "Телефон и буквы", "Петерсен тренирует звонки: номер продиктовать, слово назвать по буквам, вежливо спросить.", ORAL, HINT_ORAL, "Петерсен записала всё верно с первого раза. Это её личный рекорд.",
       oral([
-        say(1, "Продиктуйте номер телефона.", "Telefonnummer", "Meine Telefonnummer ist null eins sieben sechs, zwei drei vier fünf.", "Мой номер телефона: 0176 2345."),
+        say(1, "Продиктуйте номер телефона.", "Telefonnummer", "Meine Telefonnummer ist: null, eins, sieben, sechs. Zwei, drei, vier, fünf.", "Мой номер телефона: 0176 2345."),
         say(1, "Назовите слово MOIN по буквам.", "M · O · I · N", "Em, O, I, En.", "Эм, о, и, эн."),
         say(2, ASK, "Thema: Telefon · Wort: Nummer", "Wie ist Ihre Telefonnummer?", "Какой у вас номер телефона?", "Wie …?"),
         reply(2, ANSWER, "Wie alt sind Sie?", "Ich bin dreißig Jahre alt.", "Мне тридцать лет."),

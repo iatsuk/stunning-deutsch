@@ -147,13 +147,13 @@
      "who": "M",
      "de": "Um siebzehn Uhr. Ich arbeite von siebzehn bis dreiundzwanzig Uhr im Restaurant.",
      "ru": "В семнадцать. Я работаю в ресторане с 17 до 23 часов.",
-     "audio": "audio/c397ef99781d.m4a"
+     "audio": "audio/2bfe773faade.m4a"
     },
     {
      "who": "A",
      "de": "Und was machst du am Vormittag?",
      "ru": "А что ты делаешь до обеда?",
-     "audio": "audio/6a9cefc15566.m4a"
+     "audio": "audio/22e4738e7d20.m4a"
     },
     {
      "who": "M",
@@ -165,7 +165,7 @@
      "who": "A",
      "de": "Und wann hast du Feierabend?",
      "ru": "А когда у тебя заканчивается рабочий день?",
-     "audio": "audio/caf24efd0092.m4a"
+     "audio": "audio/93f1c6e21a87.m4a"
     },
     {
      "who": "M",
@@ -216,13 +216,13 @@
      "who": "M",
      "de": "Um halb sechs am Nachmittag.",
      "ru": "В половине шестого дня.",
-     "audio": "audio/456bdff987ab.m4a"
+     "audio": "audio/f4c3f286f2e1.m4a"
     },
     {
      "who": "D",
      "de": "Gut. Um halb sechs bin ich am Steg.",
      "ru": "Хорошо. В половине шестого я буду у причала.",
-     "audio": "audio/42a7cb648559.m4a"
+     "audio": "audio/458ed08800e5.m4a"
     },
     {
      "who": "H",
@@ -290,7 +290,7 @@
      "gender": null,
      "plural": null,
      "note": "halb acht = 7:30",
-     "audio": "audio/713689af2a8c.m4a"
+     "audio": "audio/46e402308a5d.m4a"
     },
     {
      "de": "nach",
@@ -320,7 +320,7 @@
      "ru": "поздно",
      "gender": null,
      "plural": null,
-     "audio": "audio/198130da4362.m4a"
+     "audio": "audio/a95477b6406f.m4a"
     },
     {
      "de": "dauern",
@@ -948,7 +948,7 @@
      "formal": "sechs Uhr dreißig",
      "informal": "halb sieben",
      "audio": [
-      "audio/10c0318ff0e4.m4a",
+      "audio/e7e655503db2.m4a",
       "audio/bc1e1baef0c3.m4a"
      ]
     }
@@ -973,7 +973,7 @@
      "formal": "acht Uhr fünfundvierzig",
      "informal": "Viertel vor neun",
      "audio": [
-      "audio/c820d5bf128e.m4a",
+      "audio/e70894463042.m4a",
       "audio/2d3db1e487ce.m4a"
      ]
     }
@@ -998,7 +998,7 @@
      "formal": "zweiundzwanzig Uhr dreißig",
      "informal": "halb elf",
      "audio": [
-      "audio/bd7b605ec246.m4a",
+      "audio/96728b6b10de.m4a",
       "audio/8f8c37eab03a.m4a"
      ]
     }
@@ -1023,7 +1023,7 @@
      "formal": "zweiundzwanzig Uhr dreißig",
      "informal": "halb elf",
      "audio": [
-      "audio/bd7b605ec246.m4a",
+      "audio/96728b6b10de.m4a",
       "audio/8f8c37eab03a.m4a"
      ]
     },
@@ -1049,7 +1049,7 @@
      "formal": "zweiundzwanzig Uhr dreißig",
      "informal": "halb elf",
      "audio": [
-      "audio/bd7b605ec246.m4a",
+      "audio/96728b6b10de.m4a",
       "audio/8f8c37eab03a.m4a"
      ]
     },
@@ -1139,7 +1139,7 @@
      "formal": "zweiundzwanzig Uhr dreißig",
      "informal": "halb elf",
      "audio": [
-      "audio/bd7b605ec246.m4a",
+      "audio/96728b6b10de.m4a",
       "audio/8f8c37eab03a.m4a"
      ]
     },
@@ -1229,7 +1229,7 @@
      "formal": "zweiundzwanzig Uhr dreißig",
      "informal": "halb elf",
      "audio": [
-      "audio/bd7b605ec246.m4a",
+      "audio/96728b6b10de.m4a",
       "audio/8f8c37eab03a.m4a"
      ]
     },
@@ -1297,7 +1297,7 @@
      "formal": "zweiundzwanzig Uhr dreißig",
      "informal": "halb elf",
      "audio": [
-      "audio/bd7b605ec246.m4a",
+      "audio/96728b6b10de.m4a",
       "audio/8f8c37eab03a.m4a"
      ]
     },
@@ -1365,7 +1365,7 @@
      "formal": "zweiundzwanzig Uhr dreißig",
      "informal": "halb elf",
      "audio": [
-      "audio/bd7b605ec246.m4a",
+      "audio/96728b6b10de.m4a",
       "audio/8f8c37eab03a.m4a"
      ]
     },
@@ -1468,8 +1468,8 @@
      "formal": "sieben Uhr dreißig",
      "informal": "halb acht",
      "audio": [
-      "audio/28d39ad0c9ca.m4a",
-      "audio/25a4b6e451e4.m4a"
+      "audio/a2a5f06f97eb.m4a",
+      "audio/63dd14997fbc.m4a"
      ]
     },
     "table": "trennbar",
@@ -1558,8 +1558,8 @@
      "formal": "sieben Uhr fünfunddreißig",
      "informal": "fünf nach halb acht",
      "audio": [
-      "audio/57f51af37bb5.m4a",
-      "audio/3bbd4d2a0f7a.m4a"
+      "audio/09507e9600c6.m4a",
+      "audio/069bae955eff.m4a"
      ]
     },
     "table": "trennbar",
@@ -1658,8 +1658,8 @@
      "formal": "sieben Uhr fünfunddreißig",
      "informal": "fünf nach halb acht",
      "audio": [
-      "audio/57f51af37bb5.m4a",
-      "audio/3bbd4d2a0f7a.m4a"
+      "audio/09507e9600c6.m4a",
+      "audio/069bae955eff.m4a"
      ]
     },
     "table": "trennbar",
@@ -1719,8 +1719,8 @@
      "formal": "sieben Uhr fünfunddreißig",
      "informal": "fünf nach halb acht",
      "audio": [
-      "audio/57f51af37bb5.m4a",
-      "audio/3bbd4d2a0f7a.m4a"
+      "audio/09507e9600c6.m4a",
+      "audio/069bae955eff.m4a"
      ]
     },
     "table": "trennbar",
@@ -1783,8 +1783,8 @@
      "formal": "sieben Uhr fünfunddreißig",
      "informal": "fünf nach halb acht",
      "audio": [
-      "audio/57f51af37bb5.m4a",
-      "audio/3bbd4d2a0f7a.m4a"
+      "audio/09507e9600c6.m4a",
+      "audio/069bae955eff.m4a"
      ]
     },
     "table": "trennbar",
@@ -1849,8 +1849,8 @@
      "formal": "sieben Uhr fünfunddreißig",
      "informal": "fünf nach halb acht",
      "audio": [
-      "audio/57f51af37bb5.m4a",
-      "audio/3bbd4d2a0f7a.m4a"
+      "audio/09507e9600c6.m4a",
+      "audio/069bae955eff.m4a"
      ]
     },
     "table": "trennbar",
@@ -1915,8 +1915,8 @@
      "formal": "sieben Uhr fünfunddreißig",
      "informal": "fünf nach halb acht",
      "audio": [
-      "audio/57f51af37bb5.m4a",
-      "audio/3bbd4d2a0f7a.m4a"
+      "audio/09507e9600c6.m4a",
+      "audio/069bae955eff.m4a"
      ]
     },
     "table": "trennbar",
@@ -1981,8 +1981,8 @@
      "formal": "sieben Uhr fünfunddreißig",
      "informal": "fünf nach halb acht",
      "audio": [
-      "audio/57f51af37bb5.m4a",
-      "audio/3bbd4d2a0f7a.m4a"
+      "audio/09507e9600c6.m4a",
+      "audio/069bae955eff.m4a"
      ]
     },
     "table": "trennbar",
@@ -2509,12 +2509,12 @@
      },
      {
       "de": "Um halb sechs am Nachmittag.",
-      "audio": "audio/456bdff987ab.m4a",
+      "audio": "audio/f4c3f286f2e1.m4a",
       "name": "Mateo"
      },
      {
       "de": "Gut. Um halb sechs bin ich am Steg.",
-      "audio": "audio/42a7cb648559.m4a",
+      "audio": "audio/458ed08800e5.m4a",
       "name": "Dana"
      }
     ],

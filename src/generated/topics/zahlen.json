@@ -95,13 +95,13 @@
      "who": "D",
      "de": "Null eins sieben sechs – dreiundzwanzig – fünfundvierzig – einundachtzig.",
      "ru": "0176 — 23 — 45 — 81.",
-     "audio": "audio/432c4fe0e379.m4a"
+     "audio": "audio/67613262fbe9.m4a"
     },
     {
      "who": "P",
      "de": "Null eins sieben sechs – zweiunddreißig …?",
      "ru": "0176 — 32…?",
-     "audio": "audio/c34e9fceb7ad.m4a"
+     "audio": "audio/18381a9ea53b.m4a"
     },
     {
      "who": "D",
@@ -146,7 +146,7 @@
      "who": "D",
      "de": "Mateo, hast du heute Geburtstag?",
      "ru": "Матео, у тебя сегодня день рождения?",
-     "audio": "audio/5f8b668851ad.m4a"
+     "audio": "audio/c45886cc025f.m4a"
     },
     {
      "who": "M",
@@ -158,25 +158,25 @@
      "who": "D",
      "de": "Alles Gute! Aber auf Deutsch sagt man: Ich bin achtundzwanzig.",
      "ru": "Поздравляю! Но по-немецки говорят: «Я — двадцать восемь».",
-     "audio": "audio/b1b3fbbc5c09.m4a"
+     "audio": "audio/31d4884a1a78.m4a"
     },
     {
      "who": "M",
      "de": "Ach so! Ich bin achtundzwanzig Jahre alt. Und du? Bist du auch achtundzwanzig?",
      "ru": "Ах вот как! Мне двадцать восемь лет. А тебе? Тебе тоже двадцать восемь?",
-     "audio": "audio/31369adc7a94.m4a"
+     "audio": "audio/7eb2b6c8ebcc.m4a"
     },
     {
      "who": "D",
      "de": "Nein, ich bin einunddreißig.",
      "ru": "Нет, мне тридцать один.",
-     "audio": "audio/8093ecdf54a2.m4a"
+     "audio": "audio/bcfa33f312e0.m4a"
     },
     {
      "who": "M",
      "de": "Ich habe Kuchen für alle! Habt ihr Zeit?",
      "ru": "У меня торт для всех! У вас есть время?",
-     "audio": "audio/e8c74cd3f41a.m4a"
+     "audio": "audio/32fb3c616dce.m4a"
     },
     {
      "who": "D",
@@ -188,13 +188,13 @@
      "who": "M",
      "de": "Und Frau Thomsen? Hat sie auch Zeit?",
      "ru": "А фрау Томсен? У неё тоже есть время?",
-     "audio": "audio/d1543ed73666.m4a"
+     "audio": "audio/e942051ae847.m4a"
     },
     {
      "who": "D",
      "de": "Frau Thomsen, haben Sie Zeit? Mateo hat Geburtstag!",
      "ru": "Фрау Томсен, у вас есть время? У Матео день рождения!",
-     "audio": "audio/8178467aa86c.m4a"
+     "audio": "audio/8722f11cc105.m4a"
     },
     {
      "who": "T",
@@ -229,13 +229,13 @@
      "who": "J",
      "de": "Liegeplatz zweiunddreißig.",
      "ru": "Место у причала тридцать два.",
-     "audio": "audio/12c402ab7f4a.m4a"
+     "audio": "audio/f3eed7c03aa1.m4a"
     },
     {
      "who": "M",
      "de": "Dreiundzwanzig?",
      "ru": "Двадцать три?",
-     "audio": "audio/2fc1818340c7.m4a"
+     "audio": "audio/61407efc770e.m4a"
     },
     {
      "who": "J",
@@ -259,7 +259,7 @@
      "who": "M",
      "de": "Ja, wir haben Wasser und Brot.",
      "ru": "Да, у нас есть вода и хлеб.",
-     "audio": "audio/ad7f2db83a2a.m4a"
+     "audio": "audio/bedd4164402a.m4a"
     },
     {
      "who": "J",
@@ -341,7 +341,7 @@
      "ru": "8",
      "gender": null,
      "plural": null,
-     "audio": "audio/0e4972190cd3.m4a"
+     "audio": "audio/12bd918d74d3.m4a"
     },
     {
      "de": "neun",
@@ -521,7 +521,7 @@
      "gender": null,
      "plural": null,
      "note": "Wie alt bist du?",
-     "audio": "audio/f91b8285d56e.m4a"
+     "audio": "audio/650352c7ee1e.m4a"
     },
     {
      "de": "der Kuchen",
@@ -853,7 +853,7 @@
     },
     {
      "de": "Ypsilon – I – El – De – I – Zett.",
-     "audio": "audio/ea83e72614f8.m4a"
+     "audio": "audio/0e1b7d0a8e3f.m4a"
     },
     {
      "de": "Meine Handynummer ist null eins fünf neun – drei vier sieben sieben eins zwei.",
@@ -1331,7 +1331,7 @@
       "punct": ".",
       "plain": "Du hast heute Geburtstag.",
       "ru": "У тебя сегодня день рождения.",
-      "audio": "audio/914003d683f4.m4a"
+      "audio": "audio/d44fc995fd6b.m4a"
      }
     ]
    }
@@ -1378,7 +1378,7 @@
       "punct": "?",
       "plain": "Hast du heute Geburtstag?",
       "ru": "У тебя сегодня день рождения?",
-      "audio": "audio/2c9b48bd7ce7.m4a"
+      "audio": "audio/eb88a1e95592.m4a"
      },
      {
       "slots": [
@@ -1409,7 +1409,7 @@
       "punct": ".",
       "plain": "Ich habe heute Geburtstag.",
       "ru": "Да, у меня сегодня день рождения.",
-      "audio": "audio/47c10267f736.m4a"
+      "audio": "audio/e7a94de4e171.m4a"
      }
     ],
     "fresh": [
@@ -1495,7 +1495,7 @@
       "punct": ".",
       "plain": "Ich bin achtundzwanzig Jahre alt.",
       "ru": "Мне двадцать восемь лет.",
-      "audio": "audio/a06aac060336.m4a"
+      "audio": "audio/eaf80f36fe7c.m4a"
      }
     ]
    }
@@ -1579,7 +1579,7 @@
       "punct": ".",
       "plain": "Ich bin achtundzwanzig Jahre alt.",
       "ru": "Мне двадцать восемь лет.",
-      "audio": "audio/a06aac060336.m4a"
+      "audio": "audio/eaf80f36fe7c.m4a"
      }
     ],
     "focus": [
@@ -1667,7 +1667,7 @@
       "punct": ".",
       "plain": "Ich bin achtundzwanzig Jahre alt.",
       "ru": "Мне двадцать восемь лет.",
-      "audio": "audio/a06aac060336.m4a"
+      "audio": "audio/eaf80f36fe7c.m4a"
      }
     ],
     "focus": [
@@ -1716,7 +1716,7 @@
       "punct": ".",
       "plain": "Du hast Zeit.",
       "ru": "У тебя есть время.",
-      "audio": "audio/d72a29da901a.m4a"
+      "audio": "audio/a31b01c6c838.m4a"
      }
     ]
    },
@@ -1750,7 +1750,7 @@
       "punct": "?",
       "plain": "Hast du Zeit?",
       "ru": "У тебя есть время?",
-      "audio": "audio/1e9409fad97a.m4a"
+      "audio": "audio/2500a95e9211.m4a"
      },
      {
       "slots": [
@@ -1777,7 +1777,7 @@
       "punct": ".",
       "plain": "Ich habe Zeit.",
       "ru": "Да, у меня есть время.",
-      "audio": "audio/45a922c923ef.m4a"
+      "audio": "audio/5b4db2b2ac37.m4a"
      }
     ],
     "fresh": [
@@ -1824,7 +1824,7 @@
       "punct": "?",
       "plain": "Hast du Zeit?",
       "ru": "У тебя есть время?",
-      "audio": "audio/1e9409fad97a.m4a"
+      "audio": "audio/2500a95e9211.m4a"
      },
      {
       "slots": [
@@ -1851,7 +1851,7 @@
       "punct": ".",
       "plain": "Ich habe Zeit.",
       "ru": "Да, у меня есть время.",
-      "audio": "audio/45a922c923ef.m4a"
+      "audio": "audio/5b4db2b2ac37.m4a"
      }
     ],
     "focus": [
@@ -1899,7 +1899,7 @@
       "punct": "?",
       "plain": "Hast du Zeit?",
       "ru": "У тебя есть время?",
-      "audio": "audio/1e9409fad97a.m4a"
+      "audio": "audio/2500a95e9211.m4a"
      },
      {
       "slots": [
@@ -1926,7 +1926,7 @@
       "punct": ".",
       "plain": "Ich habe Zeit.",
       "ru": "Да, у меня есть время.",
-      "audio": "audio/45a922c923ef.m4a"
+      "audio": "audio/5b4db2b2ac37.m4a"
      }
     ],
     "task": "buchstabieren"
@@ -1970,7 +1970,7 @@
       "punct": "?",
       "plain": "Hast du Zeit?",
       "ru": "У тебя есть время?",
-      "audio": "audio/1e9409fad97a.m4a"
+      "audio": "audio/2500a95e9211.m4a"
      },
      {
       "slots": [
@@ -1997,7 +1997,7 @@
       "punct": ".",
       "plain": "Ich habe Zeit.",
       "ru": "Да, у меня есть время.",
-      "audio": "audio/45a922c923ef.m4a"
+      "audio": "audio/5b4db2b2ac37.m4a"
      }
     ],
     "task": "nachricht"
@@ -2042,7 +2042,7 @@
       "punct": "?",
       "plain": "Hast du Zeit?",
       "ru": "У тебя есть время?",
-      "audio": "audio/1e9409fad97a.m4a"
+      "audio": "audio/2500a95e9211.m4a"
      },
      {
       "slots": [
@@ -2069,7 +2069,7 @@
       "punct": ".",
       "plain": "Ich habe Zeit.",
       "ru": "Да, у меня есть время.",
-      "audio": "audio/45a922c923ef.m4a"
+      "audio": "audio/5b4db2b2ac37.m4a"
      }
     ],
     "task": "nachricht",
@@ -2123,7 +2123,7 @@
    ],
    "ru": "Десять плюс двадцать — тридцать.",
    "why": "30 — единственный десяток на *-ßig*: *dreißig*.",
-   "audio": "audio/f4520ce70c4d.m4a"
+   "audio": "audio/bea41b6a9669.m4a"
   },
   {
    "id": "zahlen-5",
@@ -2134,7 +2134,7 @@
    ],
    "ru": "Сорок плюс семь — сорок семь.",
    "why": "Сначала единицы, потом десятки, всё одним словом: *sieben-und-vierzig*.",
-   "audio": "audio/e9ee246079d0.m4a"
+   "audio": "audio/5156bfba1fa3.m4a"
   },
   {
    "id": "zahlen-6",
@@ -2179,7 +2179,7 @@
     "habe"
    ],
    "hint": "haben",
-   "audio": "audio/47c10267f736.m4a"
+   "audio": "audio/e7a94de4e171.m4a"
   },
   {
    "id": "zahlen-10",
@@ -2190,7 +2190,7 @@
    ],
    "hint": "haben",
    "why": "*du hast* — без *b*. В вопросе да/нет глагол стоит первым.",
-   "audio": "audio/1e9409fad97a.m4a"
+   "audio": "audio/2500a95e9211.m4a"
   },
   {
    "id": "zahlen-11",
@@ -2227,7 +2227,7 @@
    ],
    "answer": 1,
    "why": "Не *Ich habe … Jahre*: возраст по-немецки «есть», а не «имеют».",
-   "audio": "audio/904339f8ac51.m4a"
+   "audio": "audio/43f11c191f58.m4a"
   },
   {
    "id": "zahlen-14",
@@ -2235,7 +2235,7 @@
    "ru": "У тебя сегодня день рождения?",
    "de": "Hast du heute Geburtstag?",
    "why": "Вопрос да/нет: глагол на первом месте, *du* — сразу за ним.",
-   "audio": "audio/2c9b48bd7ce7.m4a"
+   "audio": "audio/eb88a1e95592.m4a"
   },
   {
    "id": "zahlen-15",
@@ -2252,7 +2252,7 @@
     "Achtundzwanzig Jahre alt bin ich."
    ],
    "de": "Ich bin achtundzwanzig Jahre alt.",
-   "audio": "audio/a06aac060336.m4a"
+   "audio": "audio/eaf80f36fe7c.m4a"
   },
   {
    "id": "zahlen-17",
@@ -2276,7 +2276,7 @@
    "hint": "haben",
    "ru": "У нас есть вода и хлеб.",
    "why": "Повторяем *wir haben* в новой ситуации: правило то же, что в *Wir haben Pause*.",
-   "audio": "audio/44db98d47d14.m4a"
+   "audio": "audio/a24ad555a66a.m4a"
   },
   {
    "id": "zahlen-19",
@@ -2284,7 +2284,7 @@
    "ru": "Как называется лодка?",
    "de": "Wie heißt das Boot?",
    "why": "Повторение темы 1: W-вопрос, затем *heißt*, затем *das Boot*.",
-   "audio": "audio/cb805e5b94b0.m4a"
+   "audio": "audio/111c67968e42.m4a"
   }
  ],
  "case": {
@@ -2312,7 +2312,7 @@
       "who": "X",
       "de": "Ja, Liegeplatz dreiundzwanzig. Morgen um acht.",
       "ru": "Да, место у причала двадцать три. Завтра в восемь.",
-      "audio": "audio/6d0f5620ec01.m4a"
+      "audio": "audio/9483ac8f654f.m4a"
      },
      {
       "kind": "quote",
@@ -2400,7 +2400,7 @@
   "directions": [
    {
     "de": "Liegeplatz zweiunddreißig.",
-    "audio": "audio/12c402ab7f4a.m4a",
+    "audio": "audio/f3eed7c03aa1.m4a",
     "name": "Herr Jensen"
    }
   ],
@@ -2408,7 +2408,7 @@
   "phoneClue": [
    {
     "de": "Null eins sieben sechs – dreiundzwanzig – fünfundvierzig – einundachtzig.",
-    "audio": "audio/432c4fe0e379.m4a",
+    "audio": "audio/67613262fbe9.m4a",
     "name": "Dana"
    }
   ],
@@ -2465,7 +2465,7 @@
     "quotes": [
      {
       "de": "Ja, wir haben Wasser und Brot.",
-      "audio": "audio/ad7f2db83a2a.m4a",
+      "audio": "audio/bedd4164402a.m4a",
       "name": "Mateo"
      }
     ],

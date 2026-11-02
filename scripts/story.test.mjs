@@ -356,7 +356,7 @@ test("write checks the exact German form and explains near misses", () => {
   assert.ok(!isCorrect(c, { wohnort: "Gaarden" }));
   assert.match(
     mistake(c, { ...good, land: "argentinien" }, "hint"),
-    /заглавные/,
+    /заглавные.*Argentinien/,
   );
   assert.match(
     mistake(c, { ...good, wohnort: "Kiel" }, "hint"),
@@ -548,6 +548,19 @@ test("oral practice follows the exam parts and always has a model to compare wit
     lines.some((l) => l.text === "Möchten Sie Milch?" && l.voice === "Reed"),
   );
   assert.ok(lines.some((l) => l.text === "Ja, gern." && l.voice === "Anna"));
+});
+test("the dictated phone number is slowed down for A1", () => {
+  const slow = JSON.parse(
+    readFileSync(new URL("../scripts/tts/slow.json", import.meta.url)),
+  );
+  const lines = storyLines(episodes, phrases);
+  for (const { voice, text, speed } of slow) {
+    assert.ok(speed > 0.5 && speed < 1, text);
+    assert.ok(
+      lines.some((l) => l.text === text && l.voice === voice),
+      text,
+    );
+  }
 });
 test("every lock phrase is voiced in the narrator's voice", () => {
   const lines = storyLines(episodes, phrases);

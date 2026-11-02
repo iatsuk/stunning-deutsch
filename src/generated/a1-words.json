@@ -13,15 +13,15 @@
  },
  "Guten Tag!": {
   "ru": "Добрый день!",
-  "audio": "audio/7f55de1b0c90.m4a"
+  "audio": "audio/c52058586685.m4a"
  },
  "Guten Abend!": {
   "ru": "Добрый вечер!",
-  "audio": "audio/740d4b661cbc.m4a"
+  "audio": "audio/7b0f91930611.m4a"
  },
  "Gute Nacht!": {
   "ru": "Спокойной ночи!",
-  "audio": "audio/71e94344dd27.m4a"
+  "audio": "audio/7b8ed62a22a9.m4a"
  },
  "Wie geht's?": {
   "ru": "Как дела?",
@@ -29,7 +29,7 @@
  },
  "Danke, gut!": {
   "ru": "Спасибо, хорошо!",
-  "audio": "audio/a648f4423e9e.m4a"
+  "audio": "audio/ef2da8278257.m4a"
  },
  "Tschüss!": {
   "ru": "Пока!",
@@ -81,11 +81,11 @@
  },
  "Deutschland": {
   "ru": "Германия",
-  "audio": "audio/445ba81a6d34.m4a"
+  "audio": "audio/a196d5ba945e.m4a"
  },
  "Dänemark": {
   "ru": "Дания",
-  "audio": "audio/cb8deda323fe.m4a"
+  "audio": "audio/ff0e57d49848.m4a"
  },
  "Kasachstan": {
   "ru": "Казахстан",
@@ -93,7 +93,7 @@
  },
  "Russland": {
   "ru": "Россия",
-  "audio": "audio/d23d61e6964d.m4a"
+  "audio": "audio/b6ad2c2eace0.m4a"
  },
  "Argentinien": {
   "ru": "Аргентина",
@@ -193,7 +193,7 @@
  },
  "acht": {
   "ru": "8",
-  "audio": "audio/0e4972190cd3.m4a"
+  "audio": "audio/12bd918d74d3.m4a"
  },
  "neun": {
   "ru": "9",
@@ -281,7 +281,7 @@
  },
  "alt": {
   "ru": "старый",
-  "audio": "audio/f91b8285d56e.m4a"
+  "audio": "audio/650352c7ee1e.m4a"
  },
  "der Kuchen": {
   "ru": "пирог, торт",
@@ -433,11 +433,11 @@
  },
  "verheiratet": {
   "ru": "женат / замужем",
-  "audio": "audio/d5416b69dca9.m4a"
+  "audio": "audio/7b2d21c9871e.m4a"
  },
  "ledig": {
   "ru": "не женат / не замужем",
-  "audio": "audio/a5100f127ab8.m4a"
+  "audio": "audio/ace4da18d0b7.m4a"
  },
  "geschieden": {
   "ru": "разведён / разведена",
@@ -629,11 +629,11 @@
  },
  "Guten Appetit!": {
   "ru": "Приятного аппетита!",
-  "audio": "audio/69b34cc3caeb.m4a"
+  "audio": "audio/291f1e4a6cc9.m4a"
  },
  "Zusammen oder getrennt?": {
   "ru": "Вместе или раздельно?",
-  "audio": "audio/e0d14b421cd0.m4a"
+  "audio": "audio/c9756698508c.m4a"
  },
  "ein Kilo": {
   "ru": "килограмм",
@@ -641,7 +641,7 @@
  },
  "ein Pfund": {
   "ru": "полкило",
-  "audio": "audio/3730ffcffea3.m4a"
+  "audio": "audio/c3e472b6dab2.m4a"
  },
  "100 Gramm": {
   "ru": "100 граммов",
@@ -765,7 +765,7 @@
  },
  "billig": {
   "ru": "дешёвый",
-  "audio": "audio/c605e4589294.m4a"
+  "audio": "audio/d63b4e58aeec.m4a"
  },
  "teuer": {
   "ru": "дорогой",
@@ -781,7 +781,7 @@
  },
  "lang": {
   "ru": "длинный",
-  "audio": "audio/a017062dae54.m4a"
+  "audio": "audio/3cec1773d732.m4a"
  },
  "kurz": {
   "ru": "короткий",
@@ -821,7 +821,7 @@
  },
  "halb": {
   "ru": "половина",
-  "audio": "audio/713689af2a8c.m4a"
+  "audio": "audio/46e402308a5d.m4a"
  },
  "nach": {
   "ru": "после",
@@ -837,7 +837,7 @@
  },
  "spät": {
   "ru": "поздно",
-  "audio": "audio/198130da4362.m4a"
+  "audio": "audio/a95477b6406f.m4a"
  },
  "dauern": {
   "ru": "длиться",
@@ -1009,7 +1009,7 @@
  },
  "die Freizeit": {
   "ru": "свободное время",
-  "audio": "audio/003186903a61.m4a"
+  "audio": "audio/02f94b068e46.m4a"
  },
  "das Hobby": {
   "ru": "хобби",
@@ -1017,7 +1017,7 @@
  },
  "der Sport": {
   "ru": "спорт",
-  "audio": "audio/52243755c076.m4a"
+  "audio": "audio/443193b2e842.m4a"
  },
  "der Film": {
   "ru": "фильм",
@@ -1065,7 +1065,7 @@
  },
  "oft": {
   "ru": "часто",
-  "audio": "audio/33be5559a9de.m4a"
+  "audio": "audio/739b25310ac1.m4a"
  },
  "manchmal": {
   "ru": "иногда",
@@ -1225,15 +1225,15 @@
  },
  "ruhig – laut": {
   "ru": "тихий — шумный",
-  "audio": "audio/49d4b7855b56.m4a"
+  "audio": "audio/6233e56f212f.m4a"
  },
  "neu – alt": {
   "ru": "новый — старый",
-  "audio": "audio/4a5e878c634a.m4a"
+  "audio": "audio/3d5345974c3d.m4a"
  },
  "teuer – günstig": {
   "ru": "дорогой — недорогой",
-  "audio": "audio/afeec7d41fa9.m4a"
+  "audio": "audio/14fbbaac4b62.m4a"
  },
  "modern": {
   "ru": "современный",
@@ -1245,11 +1245,11 @@
  },
  "möbliert": {
   "ru": "с мебелью",
-  "audio": "audio/54c242b37450.m4a"
+  "audio": "audio/867acfec9347.m4a"
  },
  "kaputt": {
   "ru": "сломанный",
-  "audio": "audio/12bd5a5c708f.m4a"
+  "audio": "audio/69f40478d5ba.m4a"
  },
  "die Anzeige": {
   "ru": "объявление",
@@ -1309,7 +1309,7 @@
  },
  "die Post": {
   "ru": "почта",
-  "audio": "audio/86c0d4a2b204.m4a"
+  "audio": "audio/c29487807f1a.m4a"
  },
  "die Bank": {
   "ru": "банк",
@@ -1389,7 +1389,7 @@
  },
  "Entschuldigung!": {
   "ru": "Извините!",
-  "audio": "audio/72b2197c4516.m4a"
+  "audio": "audio/d9bd7d66783d.m4a"
  },
  "Wie komme ich zum …?": {
   "ru": "Как пройти к …?",
@@ -1417,7 +1417,7 @@
  },
  "weit": {
   "ru": "далеко",
-  "audio": "audio/653ee2228d2b.m4a"
+  "audio": "audio/28eb44a019b0.m4a"
  },
  "in der Nähe": {
   "ru": "поблизости",
@@ -1485,11 +1485,11 @@
  },
  "krank": {
   "ru": "больной",
-  "audio": "audio/7c20d0afc943.m4a"
+  "audio": "audio/c3be36ebcb52.m4a"
  },
  "gesund": {
   "ru": "здоровый",
-  "audio": "audio/b146404d59e3.m4a"
+  "audio": "audio/bba3940ce6a1.m4a"
  },
  "die Erkältung": {
   "ru": "простуда",
@@ -1517,7 +1517,7 @@
  },
  "Gute Besserung!": {
   "ru": "Выздоравливайте!",
-  "audio": "audio/322125118847.m4a"
+  "audio": "audio/3097ed992d11.m4a"
  },
  "die Praxis": {
   "ru": "кабинет врача",
@@ -1661,7 +1661,7 @@
  },
  "gestern Abend": {
   "ru": "вчера вечером",
-  "audio": "audio/aed151b7f280.m4a"
+  "audio": "audio/702c23907713.m4a"
  },
  "früher": {
   "ru": "раньше",
@@ -1681,11 +1681,11 @@
  },
  "noch nicht": {
   "ru": "ещё нет",
-  "audio": "audio/76cc5f24c546.m4a"
+  "audio": "audio/563c13014284.m4a"
  },
  "jetzt": {
   "ru": "сейчас",
-  "audio": "audio/285f88fa2f76.m4a"
+  "audio": "audio/6ab9be8ec163.m4a"
  },
  "die Reise": {
   "ru": "поездка, путешествие",
@@ -1749,27 +1749,27 @@
  },
  "Die Sonne scheint.": {
   "ru": "Светит солнце.",
-  "audio": "audio/e195c7f85385.m4a"
+  "audio": "audio/31639c52abe6.m4a"
  },
  "Es regnet.": {
   "ru": "Идёт дождь.",
-  "audio": "audio/2f9e1753aedc.m4a"
+  "audio": "audio/2a1bde48da3c.m4a"
  },
  "Es schneit.": {
   "ru": "Идёт снег.",
-  "audio": "audio/6d8ac123f236.m4a"
+  "audio": "audio/a828d2b2330d.m4a"
  },
  "sonnig": {
   "ru": "солнечно",
-  "audio": "audio/72e31cb5863b.m4a"
+  "audio": "audio/a32ed8d9da8b.m4a"
  },
  "bewölkt": {
   "ru": "облачно",
-  "audio": "audio/be148c569f8d.m4a"
+  "audio": "audio/addf3cd68ec4.m4a"
  },
  "windig": {
   "ru": "ветрено",
-  "audio": "audio/4efbf61fb4a8.m4a"
+  "audio": "audio/04522ab582ec.m4a"
  },
  "warm": {
   "ru": "тепло",
@@ -1777,11 +1777,11 @@
  },
  "kalt": {
   "ru": "холодно",
-  "audio": "audio/ec448bc4e1df.m4a"
+  "audio": "audio/8ae45295d6e5.m4a"
  },
  "Es sind 20 Grad.": {
   "ru": "20 градусов.",
-  "audio": "audio/2ede520bbecc.m4a"
+  "audio": "audio/656869daaa7a.m4a"
  },
  "der Regenschirm": {
   "ru": "зонт",

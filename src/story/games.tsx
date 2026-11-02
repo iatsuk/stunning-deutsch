@@ -13,7 +13,7 @@ import { preis, uhrzeit } from "../lib/german";
 import { shuffle } from "../lib/shuffle";
 import { PlayButton } from "../markup";
 import { ClockView } from "../stage/Clock";
-import { judge, UMLAUTS } from "../trainer/logic";
+import { judge, nearMisses, UMLAUTS } from "../trainer/logic";
 import { storyAudio, wordInfo } from "./audio";
 import { phrases } from "./data";
 import { wordCount } from "../assessment/logic";
@@ -73,8 +73,20 @@ function Note({ tone, children }: { tone?: Tone; children: ReactNode }) {
 
 const ARTICLE = /^(der|die|das) /;
 /** Род существительного цветом, как в уроках: der синий, die красный, das зелёный. */
+/** Страны без артикля — среднего рода: (das) Deutschland. */
+const NEUTER = [
+  "Deutschland",
+  "Dänemark",
+  "Kasachstan",
+  "Russland",
+  "Argentinien",
+];
 const genderOf = (word: string) =>
-  PLURALS.includes(word) ? "plural" : ARTICLE.exec(word)?.[1];
+  PLURALS.includes(word)
+    ? "plural"
+    : NEUTER.includes(word)
+      ? "das"
+      : ARTICLE.exec(word)?.[1];
 function Gendered({ text }: { text: string }) {
   const gender = genderOf(text);
   return gender ? (
@@ -959,11 +971,14 @@ function ReviewItem({
   const [text, setText] = useState("");
   const [verdict, setVerdict] = useState<ReturnType<typeof judge> | null>(null);
   const [typing, setTyping] = useState(false);
+  const [tries, setTries] = useState(0);
   const field = useRef<HTMLInputElement | null>(null);
   const done = verdict === "right";
+  const near = nearMisses(text, [phrase.de]).join(", ");
   function check() {
     const result = judge(text, [phrase.de]);
     setVerdict(result);
+    setTries((n) => n + 1);
     if (result === "right") onRight(id);
   }
   return (
@@ -999,11 +1014,14 @@ function ReviewItem({
       {verdict && (
         <p role="status" data-tone={done ? "good" : "bad"}>
           {done && `✓ Верно: ${phrase.ru}`}
-          {verdict === "case" && "Почти: проверьте заглавные буквы."}
-          {verdict === "umlaut" && "Почти: нужна буква с умлаутом или ß."}
-          {verdict === "wrong" && (
+          {verdict === "case" && `Почти: проверьте заглавные буквы — ${near}.`}
+          {verdict === "umlaut" &&
+            `Почти: нужна буква с умлаутом или ß — ${near}.`}
+          {verdict === "wrong" && "Запишем ещё раз."}
+          {!done && (verdict === "wrong" || tries > 1) && (
             <>
-              Запишем ещё раз. Правильно: <span lang="de">{phrase.de}</span>
+              {" "}
+              Правильно: <span lang="de">{phrase.de}</span>
             </>
           )}
         </p>
@@ -1875,12 +1893,12 @@ export function Letter({
               />
               {wrong && (
                 <small role="status" data-tone="bad">
-                  {verdict(f) === "case"
-                    ? "Почти: проверьте заглавные буквы."
-                    : verdict(f) === "umlaut"
-                      ? "Почти: нужна буква с умлаутом или ß."
-                      : tries > 1
-                        ? `Правильно: ${f.answers[0]}`
+                  {tries > 1
+                    ? `Правильно: ${f.answers[0]}`
+                    : verdict(f) === "case"
+                      ? `Почти: проверьте заглавные буквы — ${nearMisses(text(f.id), f.answers).join(", ")}.`
+                      : verdict(f) === "umlaut"
+                        ? `Почти: нужна буква с умлаутом или ß — ${nearMisses(text(f.id), f.answers).join(", ")}.`
                         : "Сравните с образцом: меняются только данные."}
                 </small>
               )}

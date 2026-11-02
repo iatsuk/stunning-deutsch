@@ -1,10 +1,26 @@
 [
  {
+  "text": "Alles Gute! Aber auf Deutsch sagt man: Ich bin achtundzwanzig.",
+  "voice": "Anna"
+ },
+ {
   "text": "Am Samstag arbeite ich. Am Sonntag spiele ich Tennis.",
   "voice": "Anna"
  },
  {
+  "text": "Am Samstag hat es in Hamburg geregnet.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Am Samstag kann ich leider nicht.",
+  "voice": "Anna"
+ },
+ {
   "text": "Am Samstag kann ich leider nicht. Mein Bruder besucht mich.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Am Samstag kann ich leider nicht. Mein Bruder besucht mich. Aber am Sonntag habe ich Zeit.",
   "voice": "Anna"
  },
  {
@@ -28,6 +44,22 @@
   "voice": "Anna"
  },
  {
+  "text": "Bleib im Bett!",
+  "voice": "Anna"
+ },
+ {
+  "text": "Bleiben Sie im Bett!",
+  "voice": "Anna"
+ },
+ {
+  "text": "Bleibt im Bett!",
+  "voice": "Anna"
+ },
+ {
+  "text": "Bringen Sie bitte Ihre Versichertenkarte mit!",
+  "voice": "Anna"
+ },
+ {
   "text": "Dana isst kein Fleisch.",
   "voice": "Anna"
  },
@@ -36,11 +68,27 @@
   "voice": "Anna"
  },
  {
+  "text": "Dana und Nurlan, ist das euer Hund?",
+  "voice": "Anna"
+ },
+ {
   "text": "Danke, Elif! Tschüss!",
   "voice": "Anna"
  },
  {
+  "text": "Danke, gut!",
+  "voice": "Anna"
+ },
+ {
   "text": "Dann frühstücke ich.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Dann gehe ich zu Fuß. Vielen Dank!",
+  "voice": "Anna"
+ },
+ {
+  "text": "Darf ich Sport machen? – Nein, eine Woche nicht.",
   "voice": "Anna"
  },
  {
@@ -52,7 +100,19 @@
   "voice": "Anna"
  },
  {
+  "text": "Das Schlafzimmer ist ruhig.",
+  "voice": "Anna"
+ },
+ {
   "text": "Das T-Shirt ist gut. Mateo nimmt es.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Das Wetter war leider nicht so gut. Es hat oft geregnet.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Das macht zwölf Euro neunundvierzig.",
   "voice": "Anna"
  },
  {
@@ -64,11 +124,23 @@
   "voice": "Anna"
  },
  {
+  "text": "Der Kaffee ist hier sehr gut.",
+  "voice": "Anna"
+ },
+ {
   "text": "Der Pullover ist zu groß.",
   "voice": "Anna"
  },
  {
+  "text": "Deutschland",
+  "voice": "Anna"
+ },
+ {
   "text": "Die Jacke ist zu groß.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Die Jacke ist zu teuer. Ich kaufe sie nicht.",
   "voice": "Anna"
  },
  {
@@ -80,7 +152,35 @@
   "voice": "Anna"
  },
  {
+  "text": "Die Schuhe sind zu klein. Ich kaufe sie nicht.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Die Sonne scheint.",
+  "voice": "Anna"
+ },
+ {
   "text": "Die Zimmer sind groß.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Die Zimmer sind hell und ruhig.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Du bleibst im Bett.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Du hast Zeit.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Du hast heute Geburtstag.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Dänemark",
   "voice": "Anna"
  },
  {
@@ -88,7 +188,23 @@
   "voice": "Anna"
  },
  {
+  "text": "Entschuldigung!",
+  "voice": "Anna"
+ },
+ {
   "text": "Entschuldigung! Wie komme ich zum Hauptbahnhof?",
+  "voice": "Anna"
+ },
+ {
+  "text": "Es ist acht Uhr fünfundvierzig.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Es ist fünf nach halb acht.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Es ist halb acht.",
   "voice": "Anna"
  },
  {
@@ -96,7 +212,39 @@
   "voice": "Anna"
  },
  {
+  "text": "Es ist sechs Uhr dreißig.",
+  "voice": "Anna"
+ },
+ {
   "text": "Es ist sechs.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Es ist sieben Uhr dreißig.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Es ist sieben Uhr fünfunddreißig.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Es ist zweiundzwanzig Uhr dreißig.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Es regnet.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Es schneit.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Es sind 20 Grad.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Frau Thomsen, haben Sie Zeit? Mateo hat Geburtstag!",
   "voice": "Anna"
  },
  {
@@ -104,7 +252,59 @@
   "voice": "Anna"
  },
  {
+  "text": "Geh bitte zum Arzt!",
+  "voice": "Anna"
+ },
+ {
   "text": "Gehen Sie geradeaus!",
+  "voice": "Anna"
+ },
+ {
+  "text": "Gestern hat es geregnet.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Gestern hatte ich keine Zeit.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Gestern hatte ich viel Arbeit.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Gestern hatten wir keine Zeit.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Gestern war es kalt und windig.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Gut, um zwölf. Bis Sonntag!",
+  "voice": "Anna"
+ },
+ {
+  "text": "Gut. Um halb sechs bin ich am Steg.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Gute Besserung!",
+  "voice": "Anna"
+ },
+ {
+  "text": "Gute Nacht!",
+  "voice": "Anna"
+ },
+ {
+  "text": "Guten Abend!",
+  "voice": "Anna"
+ },
+ {
+  "text": "Guten Appetit!",
+  "voice": "Anna"
+ },
+ {
+  "text": "Guten Tag!",
   "voice": "Anna"
  },
  {
@@ -112,7 +312,19 @@
   "voice": "Anna"
  },
  {
+  "text": "Hallo, Mateo! Du bist heute nicht im Kurs. Bist du krank?",
+  "voice": "Anna"
+ },
+ {
+  "text": "Hast du Zeit?",
+  "voice": "Anna"
+ },
+ {
   "text": "Hast du am Freitag Zeit? – Leider nicht. Da arbeite ich.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Hast du heute Geburtstag?",
   "voice": "Anna"
  },
  {
@@ -128,7 +340,27 @@
   "voice": "Anna"
  },
  {
+  "text": "Ich bin 28 Jahre alt.",
+  "voice": "Anna"
+ },
+ {
   "text": "Ich bin Koch von Beruf.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Ich bin achtundzwanzig Jahre alt.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Ich bin einunddreißig Jahre alt.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Ich bin Ärztin. In Kasachstan habe ich in einem Krankenhaus gearbeitet.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Ich bleibe im Bett.",
   "voice": "Anna"
  },
  {
@@ -137,6 +369,10 @@
  },
  {
   "text": "Ich fahre mit dem Bus.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Ich fahre mit dem Zug nach Lübeck.",
   "voice": "Anna"
  },
  {
@@ -149,6 +385,34 @@
  },
  {
   "text": "Ich finde ihn zu groß.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Ich habe Deutsch gelernt.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Ich habe Zeit.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Ich habe am zwanzigsten Mai Geburtstag.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Ich habe heute Geburtstag.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Ich habe in Buenos Aires gearbeitet.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Ich habe sechs Jahre in Buenos Aires gearbeitet.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Ich nehme ein Fischbrötchen und einen Saft.",
   "voice": "Anna"
  },
  {
@@ -172,7 +436,39 @@
   "voice": "Anna"
  },
  {
+  "text": "Ich will am Sonntag schwimmen. Kommst du mit?",
+  "voice": "Anna"
+ },
+ {
+  "text": "Ihr bleibt im Bett.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Im Juli fahre ich nach Eckernförde und gehe zum Strand.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Im Schlafzimmer steht ein Schrank.",
+  "voice": "Anna"
+ },
+ {
+  "text": "In Buenos Aires habe ich gearbeitet.",
+  "voice": "Anna"
+ },
+ {
+  "text": "In Buenos Aires habe ich sechs Jahre gearbeitet.",
+  "voice": "Anna"
+ },
+ {
+  "text": "In Buenos Aires habe ich sechs Jahre in einem Restaurant gearbeitet.",
+  "voice": "Anna"
+ },
+ {
   "text": "In Kiel wohne ich.",
+  "voice": "Anna"
+ },
+ {
+  "text": "In Kiel, in der Holtenauer Straße. Das ist nicht weit.",
   "voice": "Anna"
  },
  {
@@ -180,7 +476,19 @@
   "voice": "Anna"
  },
  {
+  "text": "Ist das Schlafzimmer ruhig?",
+  "voice": "Anna"
+ },
+ {
   "text": "Ja, Mateo, das sind unsere Fotos.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Ja, das ist unser Hund Balu. Er ist schon zwölf Jahre alt.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Ja, gern. Sie kostet zwanzig Cent.",
   "voice": "Anna"
  },
  {
@@ -192,7 +500,15 @@
   "voice": "Anna"
  },
  {
+  "text": "Jetzt arbeite ich im Restaurant „Fördeblick“.",
+  "voice": "Anna"
+ },
+ {
   "text": "Kasachisch, Russisch, Englisch und ein bisschen Deutsch.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Kommst du mit?",
   "voice": "Anna"
  },
  {
@@ -204,7 +520,19 @@
   "voice": "Anna"
  },
  {
+  "text": "Mateo geht morgen zum Arzt.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Mateo hat in Hamburg einen Regenschirm gekauft.",
+  "voice": "Anna"
+ },
+ {
   "text": "Mateo spricht Spanisch und Englisch.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Mateo, hast du heute Geburtstag?",
   "voice": "Anna"
  },
  {
@@ -232,11 +560,39 @@
   "voice": "Anna"
  },
  {
+  "text": "Nein, ich bin einunddreißig.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Null eins sieben sechs – dreiundzwanzig – fünfundvierzig – einundachtzig.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Oh nein! Und was sagt der Arzt?",
+  "voice": "Anna"
+ },
+ {
+  "text": "Oh, du Armer! Ruf bitte in der Praxis an! Und nimm deine Karte mit!",
+  "voice": "Anna"
+ },
+ {
+  "text": "Rauch nicht!",
+  "voice": "Anna"
+ },
+ {
+  "text": "Russland",
+  "voice": "Anna"
+ },
+ {
   "text": "Seien Sie bitte pünktlich!",
   "voice": "Anna"
  },
  {
   "text": "Sie gehen geradeaus.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Sie haben es geschafft!",
   "voice": "Anna"
  },
  {
@@ -264,7 +620,23 @@
   "voice": "Anna"
  },
  {
+  "text": "Super! Aber das Wetter ist nicht so gut. Es ist kalt und windig.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Super! Kochst du oft?",
+  "voice": "Anna"
+ },
+ {
+  "text": "Super! Und er ist nicht teuer – nur neunundzwanzig Euro neunzig.",
+  "voice": "Anna"
+ },
+ {
   "text": "Toll! Und deine Eltern? Wohnen sie auch in Buenos Aires?",
+  "voice": "Anna"
+ },
+ {
+  "text": "Toll! Viel Glück!",
   "voice": "Anna"
  },
  {
@@ -280,6 +652,26 @@
   "voice": "Anna"
  },
  {
+  "text": "Um zehn Uhr habe ich Zeit.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Und hier hat es heute Morgen geregnet. Wir haben einen Regenschirm gekauft.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Und wann hast du Feierabend?",
+  "voice": "Anna"
+ },
+ {
+  "text": "Und was machst du am Vormittag?",
+  "voice": "Anna"
+ },
+ {
+  "text": "Vierzig plus sieben ist siebenundvierzig.",
+  "voice": "Anna"
+ },
+ {
   "text": "Von halb sieben bis sieben jogge ich, dann frühstücke ich.",
   "voice": "Anna"
  },
@@ -292,6 +684,10 @@
   "voice": "Anna"
  },
  {
+  "text": "Was hast du gestern gemacht?",
+  "voice": "Anna"
+ },
+ {
   "text": "Was sind Sie von Beruf?",
   "voice": "Anna"
  },
@@ -300,11 +696,27 @@
   "voice": "Anna"
  },
  {
+  "text": "Wie finden Sie das Kleid?",
+  "voice": "Anna"
+ },
+ {
   "text": "Wie geht's?",
   "voice": "Anna"
  },
  {
+  "text": "Wie heißt das Boot?",
+  "voice": "Anna"
+ },
+ {
+  "text": "Wie ist das Wetter? – Es ist kalt und windig.",
+  "voice": "Anna"
+ },
+ {
   "text": "Wie komme ich zum Bahnhof?",
+  "voice": "Anna"
+ },
+ {
+  "text": "Wie komme ich zur Post?",
   "voice": "Anna"
  },
  {
@@ -316,11 +728,59 @@
   "voice": "Anna"
  },
  {
+  "text": "Wir fahren am Samstag nach Lübeck.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Wir haben Wasser und Brot.",
+  "voice": "Anna"
+ },
+ {
   "text": "Wir haben am Montag Kurs.",
   "voice": "Anna"
  },
  {
+  "text": "Wir haben im Hotel gefrühstückt.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Wir haben im Kurs viel gelernt.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Ypsilon – I – El – De – I – Zett.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Zehn plus zwanzig ist dreißig.",
+  "voice": "Anna"
+ },
+ {
+  "text": "Zusammen oder getrennt?",
+  "voice": "Anna"
+ },
+ {
+  "text": "acht",
+  "voice": "Anna"
+ },
+ {
+  "text": "alt",
+  "voice": "Anna"
+ },
+ {
   "text": "arbeiten als",
+  "voice": "Anna"
+ },
+ {
+  "text": "bewölkt",
+  "voice": "Anna"
+ },
+ {
+  "text": "billig",
+  "voice": "Anna"
+ },
+ {
+  "text": "danke für die Einladung!",
   "voice": "Anna"
  },
  {
@@ -392,11 +852,19 @@
   "voice": "Anna"
  },
  {
+  "text": "der Sport",
+  "voice": "Anna"
+ },
+ {
   "text": "der Tee, die Tees",
   "voice": "Anna"
  },
  {
   "text": "die Cola, die Colas",
+  "voice": "Anna"
+ },
+ {
+  "text": "die Freizeit",
   "voice": "Anna"
  },
  {
@@ -412,7 +880,15 @@
   "voice": "Anna"
  },
  {
+  "text": "die Post",
+  "voice": "Anna"
+ },
+ {
   "text": "die Schweiz",
+  "voice": "Anna"
+ },
+ {
+  "text": "ein Pfund",
   "voice": "Anna"
  },
  {
@@ -432,7 +908,31 @@
   "voice": "Anna"
  },
  {
+  "text": "gestern Abend",
+  "voice": "Anna"
+ },
+ {
+  "text": "gesund",
+  "voice": "Anna"
+ },
+ {
   "text": "groß",
+  "voice": "Anna"
+ },
+ {
+  "text": "halb",
+  "voice": "Anna"
+ },
+ {
+  "text": "jetzt",
+  "voice": "Anna"
+ },
+ {
+  "text": "kalt",
+  "voice": "Anna"
+ },
+ {
+  "text": "kaputt",
   "voice": "Anna"
  },
  {
@@ -440,7 +940,19 @@
   "voice": "Anna"
  },
  {
+  "text": "krank",
+  "voice": "Anna"
+ },
+ {
   "text": "kurz",
+  "voice": "Anna"
+ },
+ {
+  "text": "lang",
+  "voice": "Anna"
+ },
+ {
+  "text": "ledig",
   "voice": "Anna"
  },
  {
@@ -448,7 +960,23 @@
   "voice": "Anna"
  },
  {
+  "text": "möbliert",
+  "voice": "Anna"
+ },
+ {
   "text": "nach",
+  "voice": "Anna"
+ },
+ {
+  "text": "neu – alt",
+  "voice": "Anna"
+ },
+ {
+  "text": "noch nicht",
+  "voice": "Anna"
+ },
+ {
+  "text": "oft",
   "voice": "Anna"
  },
  {
@@ -456,7 +984,35 @@
   "voice": "Anna"
  },
  {
+  "text": "ruhig – laut",
+  "voice": "Anna"
+ },
+ {
   "text": "sechs",
+  "voice": "Anna"
+ },
+ {
+  "text": "sonnig",
+  "voice": "Anna"
+ },
+ {
+  "text": "spät",
+  "voice": "Anna"
+ },
+ {
+  "text": "teuer – günstig",
+  "voice": "Anna"
+ },
+ {
+  "text": "verheiratet",
+  "voice": "Anna"
+ },
+ {
+  "text": "weit",
+  "voice": "Anna"
+ },
+ {
+  "text": "windig",
   "voice": "Anna"
  },
  {
@@ -468,7 +1024,39 @@
   "voice": "Anna"
  },
  {
+  "text": "Die Waschmaschine steht im Keller, nicht im Bad.",
+  "voice": "Eddy"
+ },
+ {
+  "text": "Guten Abend! Willkommen im Hotel Elbblick.",
+  "voice": "Eddy"
+ },
+ {
   "text": "Guten Tag, Herr Fernández! Bitte nehmen Sie Platz.",
+  "voice": "Eddy"
+ },
+ {
+  "text": "Haben Sie schon in Deutschland gearbeitet?",
+  "voice": "Eddy"
+ },
+ {
+  "text": "Hier rechts. In der Küche gibt es einen Herd und einen Kühlschrank.",
+  "voice": "Eddy"
+ },
+ {
+  "text": "Ich bin Diegos Bruder. Das ist mein Rucksack.",
+  "voice": "Eddy"
+ },
+ {
+  "text": "Ja, Liegeplatz dreiundzwanzig. Morgen um acht.",
+  "voice": "Eddy"
+ },
+ {
+  "text": "Ja, das geht. Ein Einzelzimmer kostet 80 Euro pro Nacht, mit Frühstück.",
+  "voice": "Eddy"
+ },
+ {
+  "text": "Ja, sehr ruhig. Im Schlafzimmer steht auch ein Kleiderschrank.",
   "voice": "Eddy"
  },
  {
@@ -478,6 +1066,22 @@
  {
   "text": "Mit Milch?",
   "voice": "Eddy"
+ },
+ {
+  "text": "Sie sind Koch. Wo haben Sie gearbeitet?",
+  "voice": "Eddy"
+ },
+ {
+  "text": "Und was haben Sie gekocht?",
+  "voice": "Eddy"
+ },
+ {
+  "text": "Zusammen oder getrennt?",
+  "voice": "Eddy"
+ },
+ {
+  "text": "Hallo, Dana! Na, wie ist es in Hamburg?",
+  "voice": "Flo"
  },
  {
   "text": "Hallo, Hauke! Wo treffen wir uns morgen? Am Bahnhof?",
@@ -492,7 +1096,31 @@
   "voice": "Flo"
  },
  {
+  "text": "Was habt ihr gestern gemacht?",
+  "voice": "Flo"
+ },
+ {
+  "text": "Wirklich? Hier in Kiel scheint die Sonne. Es sind 25 Grad!",
+  "voice": "Flo"
+ },
+ {
+  "text": "Dana und Mateo sind nach Kiel zurückgekommen. Jetzt sind sie im Club.",
+  "voice": "Grandpa"
+ },
+ {
   "text": "Dann gehen Sie an der Ampel links. Da sehen Sie schon den Bahnhof.",
+  "voice": "Grandpa"
+ },
+ {
+  "text": "Die Sprotte ist zurückgekommen. Sie ist an Liegeplatz zweiunddreißig geblieben. Herr Vehrs hatte Liegeplatz dreiundzwanzig.",
+  "voice": "Grandpa"
+ },
+ {
+  "text": "Liegeplatz zweiunddreißig.",
+  "voice": "Grandpa"
+ },
+ {
+  "text": "Moin! Die „Sprotte“ ist weg!",
   "voice": "Grandpa"
  },
  {
@@ -502,6 +1130,14 @@
  {
   "text": "Zum Hauptbahnhof? Das ist nicht weit. Gehen Sie hier geradeaus.",
   "voice": "Grandpa"
+ },
+ {
+  "text": "Ach so! Ich bin achtundzwanzig Jahre alt. Und du? Bist du auch achtundzwanzig?",
+  "voice": "Reed"
+ },
+ {
+  "text": "Am Samstag arbeite ich. Aber am Sonntag habe ich Zeit.",
+  "voice": "Reed"
  },
  {
   "text": "Dana, sind das unsere Fotos?",
@@ -516,7 +1152,19 @@
   "voice": "Reed"
  },
  {
+  "text": "Die „Sprotte“? Wie heißt das Boot?",
+  "voice": "Reed"
+ },
+ {
+  "text": "Dreiundzwanzig?",
+  "voice": "Reed"
+ },
+ {
   "text": "Entschuldigung! Ich stehe immer um halb neun auf.",
+  "voice": "Reed"
+ },
+ {
+  "text": "Gut. Vielen Dank!",
   "voice": "Reed"
  },
  {
@@ -524,7 +1172,31 @@
   "voice": "Reed"
  },
  {
+  "text": "Ich habe Kuchen für alle! Habt ihr Zeit?",
+  "voice": "Reed"
+ },
+ {
   "text": "Ich spreche Spanisch und Englisch – und auch ein bisschen Deutsch!",
+  "voice": "Reed"
+ },
+ {
+  "text": "In Buenos Aires, im Restaurant „La Ribera“. Ich habe dort sechs Jahre gearbeitet.",
+  "voice": "Reed"
+ },
+ {
+  "text": "Ist das Schlafzimmer ruhig?",
+  "voice": "Reed"
+ },
+ {
+  "text": "Ja, aber der Zug ist erst um acht Uhr angekommen. Er hatte eine Stunde Verspätung.",
+  "voice": "Reed"
+ },
+ {
+  "text": "Ja, danke! Kommt um vier! Und bringt bitte auch Brot mit!",
+  "voice": "Reed"
+ },
+ {
+  "text": "Ja, gern! Vielen Dank!",
   "voice": "Reed"
  },
  {
@@ -532,11 +1204,27 @@
   "voice": "Reed"
  },
  {
+  "text": "Ja, hier in Kiel, als Kellner in einem Café. Und mein Deutschkurs ist am Vormittag.",
+  "voice": "Reed"
+ },
+ {
   "text": "Ja, ich habe drei Schwestern. Das ist Lucía, meine Schwester in Buenos Aires.",
   "voice": "Reed"
  },
  {
+  "text": "Ja, sechs Jahre. Ich habe in Buenos Aires Fisch und Pasta gekocht.",
+  "voice": "Reed"
+ },
+ {
+  "text": "Ja, wir haben Wasser und Brot.",
+  "voice": "Reed"
+ },
+ {
   "text": "Kalt? Was bedeutet das?",
+  "voice": "Reed"
+ },
+ {
+  "text": "Klingt gut! Was kostet die Wohnung?",
   "voice": "Reed"
  },
  {
@@ -548,7 +1236,35 @@
   "voice": "Reed"
  },
  {
+  "text": "Pasta, Fisch und Fleisch. Und ich habe auch Desserts gemacht.",
+  "voice": "Reed"
+ },
+ {
+  "text": "Um halb sechs am Nachmittag.",
+  "voice": "Reed"
+ },
+ {
+  "text": "Um siebzehn Uhr. Ich arbeite von siebzehn bis dreiundzwanzig Uhr im Restaurant.",
+  "voice": "Reed"
+ },
+ {
   "text": "Um zehn? Da schlafe ich noch! Lieber um zwölf.",
+  "voice": "Reed"
+ },
+ {
+  "text": "Und Frau Thomsen? Hat sie auch Zeit?",
+  "voice": "Reed"
+ },
+ {
+  "text": "Und der Hund? Ist das euer Hund?",
+  "voice": "Reed"
+ },
+ {
+  "text": "Und die Waschmaschine? Ist sie im Bad?",
+  "voice": "Reed"
+ },
+ {
+  "text": "Und wo ist die Wohnung?",
   "voice": "Reed"
  },
  {
@@ -556,7 +1272,31 @@
   "voice": "Reed"
  },
  {
+  "text": "Achtung an Gleis 8! Der Intercity nach Kiel, Abfahrt 17 Uhr 46, fährt heute nicht von Gleis 8, sondern von Gleis 12 ab. Der Zug hat circa 20 Minuten Verspätung. Wir bitten um Entschuldigung.",
+  "voice": "Rocko"
+ },
+ {
   "text": "Guten Tag! Suchen Sie etwas?",
+  "voice": "Rocko"
+ },
+ {
+  "text": "Hallo Dana, hier ist Hauke. Hast du am Samstag Zeit?",
+  "voice": "Rocko"
+ },
+ {
+  "text": "Ich nehme ein Fischbrötchen und einen Saft.",
+  "voice": "Rocko"
+ },
+ {
+  "text": "Ja, das passt. Bis Sonntag!",
+  "voice": "Rocko"
+ },
+ {
+  "text": "Moin! Ich bin Hauke. Ich komme aus Kiel, aber ich wohne jetzt in Hamburg.",
+  "voice": "Rocko"
+ },
+ {
+  "text": "Wir wollen am Samstag grillen. Kommst du mit?",
   "voice": "Rocko"
  },
  {
@@ -568,8 +1308,24 @@
   "voice": "Sandy"
  },
  {
+  "text": "Null eins sieben sechs – zweiunddreißig …?",
+  "voice": "Sandy"
+ },
+ {
   "text": "Und woher kommen Sie, Frau Yıldız?",
   "voice": "Sandy"
+ },
+ {
+  "text": "Achtung an Gleis 3! Der Regionalexpress nach Lübeck, Abfahrt zehn Uhr fünfzehn, fährt heute von Gleis 5. Der Zug hat zehn Minuten Verspätung. Wir bitten um Entschuldigung.",
+  "voice": "Shelley"
+ },
+ {
+  "text": "Das macht sechs Euro achtzig.",
+  "voice": "Shelley"
+ },
+ {
+  "text": "Ja, bringen Sie bitte Ihre Versichertenkarte mit.",
+  "voice": "Shelley"
  },
  {
   "text": "Noch etwas?",

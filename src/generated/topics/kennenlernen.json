@@ -224,7 +224,7 @@
      "who": "M",
      "de": "Die „Sprotte“? Wie heißt das Boot?",
      "ru": "«Шпротта»? Как называется лодка?",
-     "audio": "audio/0726de46d44e.m4a"
+     "audio": "audio/7dc1350d0fb4.m4a"
     },
     {
      "who": "H",
@@ -275,14 +275,14 @@
      "ru": "Добрый день!",
      "gender": null,
      "plural": null,
-     "audio": "audio/7f55de1b0c90.m4a"
+     "audio": "audio/c52058586685.m4a"
     },
     {
      "de": "Guten Abend!",
      "ru": "Добрый вечер!",
      "gender": null,
      "plural": null,
-     "audio": "audio/740d4b661cbc.m4a"
+     "audio": "audio/7b0f91930611.m4a"
     },
     {
      "de": "Gute Nacht!",
@@ -290,7 +290,7 @@
      "gender": null,
      "plural": null,
      "note": "только перед сном",
-     "audio": "audio/71e94344dd27.m4a"
+     "audio": "audio/7b8ed62a22a9.m4a"
     },
     {
      "de": "Wie geht's?",
@@ -304,7 +304,7 @@
      "ru": "Спасибо, хорошо!",
      "gender": null,
      "plural": null,
-     "audio": "audio/a648f4423e9e.m4a"
+     "audio": "audio/ef2da8278257.m4a"
     },
     {
      "de": "Tschüss!",
@@ -413,7 +413,7 @@
      "gender": null,
      "plural": null,
      "note": "Deutsch",
-     "audio": "audio/445ba81a6d34.m4a"
+     "audio": "audio/a196d5ba945e.m4a"
     },
     {
      "de": "Dänemark",
@@ -421,7 +421,7 @@
      "gender": null,
      "plural": null,
      "note": "Dänisch",
-     "audio": "audio/cb8deda323fe.m4a"
+     "audio": "audio/ff0e57d49848.m4a"
     },
     {
      "de": "Kasachstan",
@@ -437,7 +437,7 @@
      "gender": null,
      "plural": null,
      "note": "Russisch",
-     "audio": "audio/d23d61e6964d.m4a"
+     "audio": "audio/b6ad2c2eace0.m4a"
     },
     {
      "de": "Argentinien",
@@ -735,7 +735,7 @@
     },
     {
      "de": "Ich bin 28 Jahre alt.",
-     "audio": "audio/a8bfbe036243.m4a"
+     "audio": "audio/ce7820b5da6c.m4a"
     },
     {
      "de": "Ich komme aus Argentinien.",
@@ -2240,7 +2240,7 @@
       "who": "J",
       "de": "Moin! Die „Sprotte“ ist weg!",
       "ru": "Привет! «Шпротта» пропала!",
-      "audio": "audio/63e965f9190d.m4a"
+      "audio": "audio/985cff25e8a2.m4a"
      },
      {
       "kind": "quote",
@@ -2295,7 +2295,7 @@
       "who": "H",
       "de": "Moin! Ich bin Hauke. Ich komme aus Kiel, aber ich wohne jetzt in Hamburg.",
       "ru": "Привет! Я Хауке. Я из Киля, но сейчас живу в Гамбурге.",
-      "audio": "audio/6599bc11a405.m4a"
+      "audio": "audio/90a10ff03210.m4a"
      },
      {
       "kind": "quote",
@@ -2398,7 +2398,7 @@
     "quotes": [
      {
       "de": "Moin! Ich bin Hauke. Ich komme aus Kiel, aber ich wohne jetzt in Hamburg.",
-      "audio": "audio/6599bc11a405.m4a",
+      "audio": "audio/90a10ff03210.m4a",
       "name": "Hauke"
      }
     ]

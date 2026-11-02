@@ -61,7 +61,8 @@ for item in items:
     waves = model.generate(text=text, language=config['generation']['language'],
                            ref_audio=str(voices / config['voices'][item['voice']]['reference']),
                            ref_text=profiles['text'], num_step=config['generation']['num_step'],
-                           postprocess_output=config['generation']['postprocess_output'])
+                           postprocess_output=config['generation']['postprocess_output'],
+                           speed=item.get('speed'))
     wave = np.asarray(waves[0])
     if wave.ndim != 1 or not np.isfinite(wave).all() or len(wave) < 4800:
         raise ValueError(f'Invalid waveform: {target.name}')

@@ -228,7 +228,7 @@
     "punct": "?",
     "plain": "Hast du Zeit?",
     "ru": "У тебя есть время?",
-    "audio": "audio/1e9409fad97a.m4a"
+    "audio": "audio/2500a95e9211.m4a"
    },
    {
     "slots": [
@@ -255,7 +255,7 @@
     "punct": ".",
     "plain": "Ich habe Zeit.",
     "ru": "Да, у меня есть время.",
-    "audio": "audio/45a922c923ef.m4a"
+    "audio": "audio/5b4db2b2ac37.m4a"
    }
   ]
  },
@@ -433,7 +433,7 @@
  },
  "essen/akkusativ-3": {
   "point": "Меняется только мужской род: *den*, *einen*, *keinen*",
-  "read": "Хорошая новость: винительный меняет только мужской род. *der* → *den*, *ein* → *einen*, *kein* → *keinen* — у всех трёх появляется *-en*. Женский, средний род и множественное число выглядят так же, как в именительном: *Ich nehme die Suppe*, *Ich möchte ein Ei*. Так что вопрос «какое окончание?» сводится к вопросу «какого рода слово?» — ещё одна причина учить слова с артиклем.",
+  "read": "Хорошая новость: винительный падеж меняет только мужской род. *der* → *den*, *ein* → *einen*, *kein* → *keinen* — у всех трёх появляется *-en*. Женский, средний род и множественное число выглядят так же, как в именительном: *Ich nehme die Suppe*, *Ich möchte ein Ei*. Так что вопрос «какое окончание?» сводится к вопросу «какого рода слово?» — ещё одна причина учить слова с артиклем.",
   "table": {
    "title": "Nominativ und Akkusativ",
    "ru": "Именительный и винительный падеж",
@@ -1511,7 +1511,7 @@
     "punct": ".",
     "plain": "Ich habe in Buenos Aires gearbeitet.",
     "ru": "Я работал в Буэнос-Айресе.",
-    "audio": "audio/8890dd70614c.m4a"
+    "audio": "audio/e26cf52502a5.m4a"
    }
   ]
  },
@@ -1707,7 +1707,7 @@
     "punct": ".",
     "plain": "Wir haben im Hotel gefrühstückt.",
     "ru": "Мы позавтракали в отеле.",
-    "audio": "audio/1b9cadcbfa1e.m4a"
+    "audio": "audio/cd7af7ca5e13.m4a"
    },
    {
     "slots": [

@@ -43,6 +43,10 @@ const AUDIO_VERSION = createHash("sha256").update(JSON.stringify(audioConfig)).d
 const revoice = new Set(
   JSON.parse(readFileSync(path.join(root, "scripts/tts/revoice.json"), "utf8")).map((r) => `${r.voice}|${r.text}`),
 );
+// Медленная речь для диктовки: скорость входит в адрес только этих записей, остальные не меняются.
+const slow = new Map(
+  JSON.parse(readFileSync(path.join(root, "scripts/tts/slow.json"), "utf8")).map((r) => [`${r.voice}|${r.text}`, r.speed]),
+);
 const DEFAULT_VOICE = "Anna";
 const VOICES = Object.keys(audioConfig.voices);
 
@@ -1015,7 +1019,11 @@ function plain(text) {
 function speak(text, voice = DEFAULT_VOICE) {
   const clean = plain(text ?? "");
   if (!clean) return undefined;
-  const hash = createHash("sha1").update(`${AUDIO_VERSION}|${voice}|${clean}`).digest("hex").slice(0, 12);
+  const speed = slow.get(`${voice}|${clean}`);
+  const hash = createHash("sha1")
+    .update(`${AUDIO_VERSION}|${voice}|${clean}${speed ? `|speed:${speed}` : ""}`)
+    .digest("hex")
+    .slice(0, 12);
   const currentFile = `${hash}.m4a`;
   const legacyHash = createHash("sha1").update(`${LEGACY_AUDIO_VERSION}|${voice}|${clean}`).digest("hex").slice(0, 12);
   const legacyFile = `${legacyHash}.m4a`;
@@ -1026,7 +1034,13 @@ function speak(text, voice = DEFAULT_VOICE) {
     existsSync(path.join(audioDir, legacyFile));
   const file = useLegacy ? legacyFile : currentFile;
   const selectedConfig = useLegacy ? legacyAudioConfig : audioConfig;
-  audio.set(file, { text: clean, voice, model: selectedConfig.model, revision: selectedConfig.revision });
+  audio.set(file, {
+    text: clean,
+    voice,
+    model: selectedConfig.model,
+    revision: selectedConfig.revision,
+    ...(speed && !useLegacy ? { speed } : {}),
+  });
   if (DRAFT && !existsSync(path.join(audioDir, file))) {
     missingAudio += 1;
     return undefined;

@@ -75,7 +75,7 @@
      "who": "M",
      "de": "Klingt gut! Was kostet die Wohnung?",
      "ru": "Звучит неплохо! Сколько стоит квартира?",
-     "audio": "audio/0ee66429b5b6.m4a"
+     "audio": "audio/6027fdcb7026.m4a"
     },
     {
      "who": "A",
@@ -99,13 +99,13 @@
      "who": "M",
      "de": "Und wo ist die Wohnung?",
      "ru": "А где квартира?",
-     "audio": "audio/a7bd95428e32.m4a"
+     "audio": "audio/2290d8c398fa.m4a"
     },
     {
      "who": "A",
      "de": "In Kiel, in der Holtenauer Straße. Das ist nicht weit.",
      "ru": "В Киле, на Holtenauer Straße. Это недалеко.",
-     "audio": "audio/2682c61666a1.m4a"
+     "audio": "audio/d24537750620.m4a"
     },
     {
      "who": "M",
@@ -158,13 +158,13 @@
      "who": "K",
      "de": "Hier rechts. In der Küche gibt es einen Herd und einen Kühlschrank.",
      "ru": "Здесь, справа. На кухне есть плита и холодильник.",
-     "audio": "audio/1844d39bc976.m4a"
+     "audio": "audio/a64b4fe5995f.m4a"
     },
     {
      "who": "M",
      "de": "Und die Waschmaschine? Ist sie im Bad?",
      "ru": "А стиральная машина? Она в ванной?",
-     "audio": "audio/998f558f7c93.m4a"
+     "audio": "audio/54c2c4c92aad.m4a"
     },
     {
      "who": "K",
@@ -176,13 +176,13 @@
      "who": "M",
      "de": "Ist das Schlafzimmer ruhig?",
      "ru": "А в спальне тихо?",
-     "audio": "audio/c8183046f1c1.m4a"
+     "audio": "audio/ee8dd01051f4.m4a"
     },
     {
      "who": "K",
      "de": "Ja, sehr ruhig. Im Schlafzimmer steht auch ein Kleiderschrank.",
      "ru": "Да, очень тихо. И в спальне стоит платяной шкаф.",
-     "audio": "audio/4fb50e0ea543.m4a"
+     "audio": "audio/dfbf7fbb57ab.m4a"
     },
     {
      "who": "M",
@@ -409,14 +409,14 @@
      "ru": "тихий — шумный",
      "gender": null,
      "plural": null,
-     "audio": "audio/49d4b7855b56.m4a"
+     "audio": "audio/6233e56f212f.m4a"
     },
     {
      "de": "neu – alt",
      "ru": "новый — старый",
      "gender": null,
      "plural": null,
-     "audio": "audio/4a5e878c634a.m4a"
+     "audio": "audio/3d5345974c3d.m4a"
     },
     {
      "de": "teuer – günstig",
@@ -424,7 +424,7 @@
      "gender": null,
      "plural": null,
      "note": "billig — дешёвый, часто с оттенком «дешёвка»",
-     "audio": "audio/afeec7d41fa9.m4a"
+     "audio": "audio/14fbbaac4b62.m4a"
     },
     {
      "de": "schön",
@@ -454,7 +454,7 @@
      "gender": null,
      "plural": null,
      "note": "в объявлениях möbl.",
-     "audio": "audio/54c242b37450.m4a"
+     "audio": "audio/867acfec9347.m4a"
     },
     {
      "de": "kaputt",
@@ -462,7 +462,7 @@
      "gender": null,
      "plural": null,
      "note": "Die Heizung ist kaputt.",
-     "audio": "audio/12bd5a5c708f.m4a"
+     "audio": "audio/69f40478d5ba.m4a"
     }
    ]
   },
@@ -1435,7 +1435,7 @@
       "punct": ".",
       "plain": "Das Schlafzimmer ist ruhig.",
       "ru": "Спальня тихая.",
-      "audio": "audio/df9586f24c54.m4a"
+      "audio": "audio/b6c8634b8c4e.m4a"
      }
     ]
    },
@@ -1473,7 +1473,7 @@
       "punct": "?",
       "plain": "Ist das Schlafzimmer ruhig?",
       "ru": "Спальня тихая?",
-      "audio": "audio/8cf52368b5bc.m4a"
+      "audio": "audio/d6bc241945d5.m4a"
      }
     ]
    }
@@ -1521,7 +1521,7 @@
       "punct": "?",
       "plain": "Ist das Schlafzimmer ruhig?",
       "ru": "Спальня тихая?",
-      "audio": "audio/8cf52368b5bc.m4a"
+      "audio": "audio/d6bc241945d5.m4a"
      }
     ],
     "focus": [
@@ -1573,7 +1573,7 @@
       "punct": "?",
       "plain": "Ist das Schlafzimmer ruhig?",
       "ru": "Спальня тихая?",
-      "audio": "audio/8cf52368b5bc.m4a"
+      "audio": "audio/d6bc241945d5.m4a"
      }
     ]
    }
@@ -1620,7 +1620,7 @@
       "punct": "?",
       "plain": "Ist das Schlafzimmer ruhig?",
       "ru": "Спальня тихая?",
-      "audio": "audio/8cf52368b5bc.m4a"
+      "audio": "audio/d6bc241945d5.m4a"
      }
     ],
     "task": "anzeigen"
@@ -1669,7 +1669,7 @@
       "punct": "?",
       "plain": "Ist das Schlafzimmer ruhig?",
       "ru": "Спальня тихая?",
-      "audio": "audio/8cf52368b5bc.m4a"
+      "audio": "audio/d6bc241945d5.m4a"
      }
     ],
     "task": "anzeigen",
@@ -1718,7 +1718,7 @@
       "punct": "?",
       "plain": "Ist das Schlafzimmer ruhig?",
       "ru": "Спальня тихая?",
-      "audio": "audio/8cf52368b5bc.m4a"
+      "audio": "audio/d6bc241945d5.m4a"
      }
     ],
     "task": "hausordnung"
@@ -1767,7 +1767,7 @@
       "punct": "?",
       "plain": "Ist das Schlafzimmer ruhig?",
       "ru": "Спальня тихая?",
-      "audio": "audio/8cf52368b5bc.m4a"
+      "audio": "audio/d6bc241945d5.m4a"
      }
     ],
     "task": "hausordnung",
@@ -1894,7 +1894,7 @@
    ],
    "hint": "sein",
    "why": "Множественное число — *sind*, а прилагательные не меняются.",
-   "audio": "audio/4eb05b8322a1.m4a"
+   "audio": "audio/a1cf03af1128.m4a"
   },
   {
    "id": "wohnen-11",
@@ -1940,7 +1940,7 @@
    ],
    "de": "Im Schlafzimmer steht ein Schrank.",
    "why": "Место на первой позиции, глагол второй, подлежащее — за ним.",
-   "audio": "audio/caf59cb5ac9e.m4a"
+   "audio": "audio/0b075f457281.m4a"
   },
   {
    "id": "wohnen-15",
@@ -1995,7 +1995,7 @@
       "who": "K",
       "de": "Die Waschmaschine steht im Keller, nicht im Bad.",
       "ru": "Стиральная машина стоит в подвале, не в ванной.",
-      "audio": "audio/9b2ba45dea16.m4a"
+      "audio": "audio/1d97ff9adb24.m4a"
      }
     ],
     "question": "Куда направить гостя к стиральной машине?",
@@ -2106,12 +2106,12 @@
     "quotes": [
      {
       "de": "Hier rechts. In der Küche gibt es einen Herd und einen Kühlschrank.",
-      "audio": "audio/1844d39bc976.m4a",
+      "audio": "audio/a64b4fe5995f.m4a",
       "name": "Herr Krüger"
      },
      {
       "de": "Und die Waschmaschine? Ist sie im Bad?",
-      "audio": "audio/998f558f7c93.m4a",
+      "audio": "audio/54c2c4c92aad.m4a",
       "name": "Mateo"
      },
      {
@@ -2121,7 +2121,7 @@
      },
      {
       "de": "Ja, sehr ruhig. Im Schlafzimmer steht auch ein Kleiderschrank.",
-      "audio": "audio/4fb50e0ea543.m4a",
+      "audio": "audio/dfbf7fbb57ab.m4a",
       "name": "Herr Krüger"
      }
     ],

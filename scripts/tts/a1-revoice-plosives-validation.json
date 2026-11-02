@@ -1,0 +1,185 @@
+{
+ "date": "2026-11-02",
+ "scope": "A1 recordings from Qwen ending in t, d, k, g, p or b, re-voiced because Qwen clipped final consonants; two slowed phone-number dictations",
+ "model": "k2-fsa/OmniVoice",
+ "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+ "newFiles": 191,
+ "seconds": 505.7,
+ "bytes": 5837549,
+ "decodeFailures": 0,
+ "cutEndings": 0,
+ "asr": {
+  "model": "openai/whisper-large-v3",
+  "exact": 149,
+  "differences": [
+   {
+    "text": "Mateo, hast du heute Geburtstag?",
+    "heard": "Matteo, hast du heute Geburtstag?"
+   },
+   {
+    "text": "Alles Gute! Aber auf Deutsch sagt man: Ich bin achtundzwanzig.",
+    "heard": "Alles Gute, aber auf Deutsch sagt man, ich bin 28."
+   },
+   {
+    "text": "Ach so! Ich bin achtundzwanzig Jahre alt. Und du? Bist du auch achtundzwanzig?",
+    "heard": "Ach so, ich bin 28 Jahre alt. Und du? Bist du auch 28?"
+   },
+   {
+    "text": "Nein, ich bin einunddreißig.",
+    "heard": "Nein, ich bin 31."
+   },
+   {
+    "text": "Frau Thomsen, haben Sie Zeit? Mateo hat Geburtstag!",
+    "heard": "Frau Thomsen, haben Sie Zeit? Matteo hat Geburtstag."
+   },
+   {
+    "text": "Liegeplatz zweiunddreißig.",
+    "heard": "Liegeplatz 32"
+   },
+   {
+    "text": "Dreiundzwanzig?",
+    "heard": "23"
+   },
+   {
+    "text": "acht",
+    "heard": "8."
+   },
+   {
+    "text": "Ypsilon – I – El – De – I – Zett.",
+    "heard": "y-i-l-d-i-z"
+   },
+   {
+    "text": "Ich bin achtundzwanzig Jahre alt.",
+    "heard": "Ich bin 28 Jahre alt."
+   },
+   {
+    "text": "Zehn plus zwanzig ist dreißig.",
+    "heard": "10 plus 20 ist 30."
+   },
+   {
+    "text": "Vierzig plus sieben ist siebenundvierzig.",
+    "heard": "40 plus 7 ist 47."
+   },
+   {
+    "text": "Ich bin einunddreißig Jahre alt.",
+    "heard": "Ich bin 31 Jahre alt."
+   },
+   {
+    "text": "Ja, Liegeplatz dreiundzwanzig. Morgen um acht.",
+    "heard": "Ja, Liegeplatz 23. Morgen um 8."
+   },
+   {
+    "text": "Ja, das ist unser Hund Balu. Er ist schon zwölf Jahre alt.",
+    "heard": "Ja, das ist unser Hund Balo. Er ist schon zwölf Jahre alt."
+   },
+   {
+    "text": "Ich bin Diegos Bruder. Das ist mein Rucksack.",
+    "heard": "Ich bin Digos Bruder. Das ist mein Rucksack."
+   },
+   {
+    "text": "Das macht sechs Euro achtzig.",
+    "heard": "Das macht 6,80 Euro."
+   },
+   {
+    "text": "Super! Und er ist nicht teuer – nur neunundzwanzig Euro neunzig.",
+    "heard": "Super, und er ist nicht teuer, nur 29,90 Euro."
+   },
+   {
+    "text": "Ja, gern. Sie kostet zwanzig Cent.",
+    "heard": "Ja gern, sie kostet 20 Cent."
+   },
+   {
+    "text": "Das macht zwölf Euro neunundvierzig.",
+    "heard": "Das macht 12,49 Euro."
+   },
+   {
+    "text": "Um siebzehn Uhr. Ich arbeite von siebzehn bis dreiundzwanzig Uhr im Restaurant.",
+    "heard": "Um 17 Uhr. Ich arbeite von 17 bis 23 Uhr im Restaurant."
+   },
+   {
+    "text": "Es ist sechs Uhr dreißig.",
+    "heard": "Es ist 6.30 Uhr."
+   },
+   {
+    "text": "Es ist acht Uhr fünfundvierzig.",
+    "heard": "Es ist 8.45 Uhr."
+   },
+   {
+    "text": "Es ist zweiundzwanzig Uhr dreißig.",
+    "heard": "Es ist 22.30 Uhr."
+   },
+   {
+    "text": "Es ist sieben Uhr dreißig.",
+    "heard": "Es ist 7.30 Uhr."
+   },
+   {
+    "text": "Es ist sieben Uhr fünfunddreißig.",
+    "heard": "Es ist 7.35 Uhr."
+   },
+   {
+    "text": "Um zehn Uhr habe ich Zeit.",
+    "heard": "Um 10 Uhr habe ich Zeit."
+   },
+   {
+    "text": "neu – alt",
+    "heard": "Neu-Alt"
+   },
+   {
+    "text": "Achtung an Gleis 3! Der Regionalexpress nach Lübeck, Abfahrt zehn Uhr fünfzehn, fährt heute von Gleis 5. Der Zug hat zehn Minuten Verspätung. Wir bitten um Entschuldigung.",
+    "heard": "Achtung an Gleis 3. Der Regionalexpress nach Lübeck, Abfahrt 10.15 Uhr, fährt heute von Gleis 5. Der Zug hat 10 Minuten Verspätung. Wir bitten um Entschuldigung."
+   },
+   {
+    "text": "Mateo geht morgen zum Arzt.",
+    "heard": "Matteo geht morgen zum Arzt."
+   },
+   {
+    "text": "Hallo, Mateo! Du bist heute nicht im Kurs. Bist du krank?",
+    "heard": "Hallo, Matteo. Du bist heute nicht im Kurs. Bist du krank?"
+   },
+   {
+    "text": "Ja, aber der Zug ist erst um acht Uhr angekommen. Er hatte eine Stunde Verspätung.",
+    "heard": "Ja, aber der Zug ist erst um 8 Uhr angekommen. Er hatte eine Stunde Verspätung."
+   },
+   {
+    "text": "Achtung an Gleis 8! Der Intercity nach Kiel, Abfahrt 17 Uhr 46, fährt heute nicht von Gleis 8, sondern von Gleis 12 ab. Der Zug hat circa 20 Minuten Verspätung. Wir bitten um Entschuldigung.",
+    "heard": "Achtung an Gleis 8. Der Intercity nach Kiel, Abfahrt 17.46 Uhr, fährt heute nicht von Gleis 8, sondern von Gleis 12 ab. Der Zug hat ca. 20 Minuten Verspätung. Wir bitten um Entschuldigung."
+   },
+   {
+    "text": "Mateo hat in Hamburg einen Regenschirm gekauft.",
+    "heard": "Matteo hat in Hamburg einen Regenschirm gekauft."
+   },
+   {
+    "text": "Ich habe am zwanzigsten Mai Geburtstag.",
+    "heard": "Ich habe am 20. Mai Geburtstag."
+   },
+   {
+    "text": "Dana und Mateo sind nach Kiel zurückgekommen. Jetzt sind sie im Club.",
+    "heard": "Dana und Matteo sind nach Kiel zurückgekommen. Jetzt sind sie im Club."
+   },
+   {
+    "text": "Die Sprotte ist zurückgekommen. Sie ist an Liegeplatz zweiunddreißig geblieben. Herr Vehrs hatte Liegeplatz dreiundzwanzig.",
+    "heard": "Die Sprotte ist zurückgekommen. Sie ist an Liegeplatz 32 geblieben. Herr Feers hatte Liegeplatz 23."
+   }
+  ]
+ },
+ "seedOverrides": [
+  {
+   "text": "Es sind 20 Grad.",
+   "seed": 21203355,
+   "heard": "Es sind 20 Grad."
+  }
+ ],
+ "slow": [
+  {
+   "text": "Null, eins, sieben, sechs. Zwei, drei. Vier, fünf. Acht, eins.",
+   "voice": "Sandy",
+   "speed": 0.6
+  },
+  {
+   "text": "Meine Telefonnummer ist: null, eins, sieben, sechs. Zwei, drei, vier, fünf.",
+   "voice": "Anna",
+   "speed": 0.7
+  }
+ ],
+ "note": "Remaining differences are digits for number words, Matteo for Mateo and spelled letters. Automated checks do not replace listening."
+}

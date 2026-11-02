@@ -71,7 +71,7 @@
      "who": "A",
      "de": "Ich bin Ärztin. In Kasachstan habe ich in einem Krankenhaus gearbeitet.",
      "ru": "Я врач. В Казахстане я работала в больнице.",
-     "audio": "audio/51ccb46348df.m4a"
+     "audio": "audio/974512bc191d.m4a"
     },
     {
      "who": "M",
@@ -89,7 +89,7 @@
      "who": "M",
      "de": "Ja, sechs Jahre. Ich habe in Buenos Aires Fisch und Pasta gekocht.",
      "ru": "Да, шесть лет. Я готовил в Буэнос-Айресе рыбу и пасту.",
-     "audio": "audio/c205b2c8b576.m4a"
+     "audio": "audio/f695be3bd226.m4a"
     },
     {
      "who": "A",
@@ -119,7 +119,7 @@
      "who": "A",
      "de": "Toll! Viel Glück!",
      "ru": "Отлично! Удачи!",
-     "audio": "audio/00e8c40644ee.m4a"
+     "audio": "audio/76e81b3a3c02.m4a"
     }
    ]
   },
@@ -154,37 +154,37 @@
      "who": "S",
      "de": "Sie sind Koch. Wo haben Sie gearbeitet?",
      "ru": "Вы повар. Где вы работали?",
-     "audio": "audio/35e63cbd1b25.m4a"
+     "audio": "audio/36b446ba7ba7.m4a"
     },
     {
      "who": "M",
      "de": "In Buenos Aires, im Restaurant „La Ribera“. Ich habe dort sechs Jahre gearbeitet.",
      "ru": "В Буэнос-Айресе, в ресторане «Ла Рибера». Я проработал там шесть лет.",
-     "audio": "audio/51b95365102e.m4a"
+     "audio": "audio/53a2ed74d043.m4a"
     },
     {
      "who": "S",
      "de": "Und was haben Sie gekocht?",
      "ru": "А что вы готовили?",
-     "audio": "audio/f23a9afdc7ff.m4a"
+     "audio": "audio/03e6466102c9.m4a"
     },
     {
      "who": "M",
      "de": "Pasta, Fisch und Fleisch. Und ich habe auch Desserts gemacht.",
      "ru": "Пасту, рыбу и мясо. И десерты тоже делал.",
-     "audio": "audio/03d8b225da7a.m4a"
+     "audio": "audio/72d46b4413ed.m4a"
     },
     {
      "who": "S",
      "de": "Haben Sie schon in Deutschland gearbeitet?",
      "ru": "Вы уже работали в Германии?",
-     "audio": "audio/b8f0919440f3.m4a"
+     "audio": "audio/8752e4a81591.m4a"
     },
     {
      "who": "M",
      "de": "Ja, hier in Kiel, als Kellner in einem Café. Und mein Deutschkurs ist am Vormittag.",
      "ru": "Да, здесь, в Киле, официантом в кафе. А курс немецкого у меня до обеда.",
-     "audio": "audio/584931a96892.m4a"
+     "audio": "audio/69c65b0c0ce6.m4a"
     },
     {
      "who": "S",
@@ -196,7 +196,7 @@
      "who": "M",
      "de": "Ja, gern! Vielen Dank!",
      "ru": "Да, с удовольствием! Большое спасибо!",
-     "audio": "audio/dda0718b96b8.m4a"
+     "audio": "audio/e46d43b1fbfe.m4a"
     }
    ]
   }
@@ -437,7 +437,7 @@
      "ru": "вчера вечером",
      "gender": null,
      "plural": null,
-     "audio": "audio/aed151b7f280.m4a"
+     "audio": "audio/702c23907713.m4a"
     },
     {
      "de": "früher",
@@ -475,14 +475,14 @@
      "ru": "ещё нет",
      "gender": null,
      "plural": null,
-     "audio": "audio/76cc5f24c546.m4a"
+     "audio": "audio/563c13014284.m4a"
     },
     {
      "de": "jetzt",
      "ru": "сейчас",
      "gender": null,
      "plural": null,
-     "audio": "audio/285f88fa2f76.m4a"
+     "audio": "audio/6ab9be8ec163.m4a"
     }
    ]
   }
@@ -668,7 +668,7 @@
     },
     {
      "de": "Ich bin 28 Jahre alt.",
-     "audio": "audio/a8bfbe036243.m4a"
+     "audio": "audio/ce7820b5da6c.m4a"
     },
     {
      "de": "Ich komme aus Argentinien und wohne jetzt in Kiel.",
@@ -684,11 +684,11 @@
     },
     {
      "de": "In Buenos Aires habe ich sechs Jahre in einem Restaurant gearbeitet.",
-     "audio": "audio/7591c2c25068.m4a"
+     "audio": "audio/5c8e16ce977d.m4a"
     },
     {
      "de": "Jetzt arbeite ich im Restaurant „Fördeblick“.",
-     "audio": "audio/8c18a0c50085.m4a"
+     "audio": "audio/44509d8680b3.m4a"
     },
     {
      "de": "Mein Hobby ist Segeln.",
@@ -1059,7 +1059,7 @@
       "punct": ".",
       "plain": "Ich habe in Buenos Aires gearbeitet.",
       "ru": "Я работал в Буэнос-Айресе.",
-      "audio": "audio/8890dd70614c.m4a"
+      "audio": "audio/e26cf52502a5.m4a"
      }
     ]
    }
@@ -1116,7 +1116,7 @@
       "punct": ".",
       "plain": "In Buenos Aires habe ich gearbeitet.",
       "ru": "В Буэнос-Айресе я работал.",
-      "audio": "audio/64f36b3dbf44.m4a"
+      "audio": "audio/9e38ecdf45c7.m4a"
      },
      {
       "slots": [
@@ -1215,7 +1215,7 @@
       "punct": ".",
       "plain": "In Buenos Aires habe ich gearbeitet.",
       "ru": "В Буэнос-Айресе я работал.",
-      "audio": "audio/64f36b3dbf44.m4a"
+      "audio": "audio/9e38ecdf45c7.m4a"
      },
      {
       "slots": [
@@ -1312,7 +1312,7 @@
       "punct": ".",
       "plain": "In Buenos Aires habe ich gearbeitet.",
       "ru": "В Буэнос-Айресе я работал.",
-      "audio": "audio/64f36b3dbf44.m4a"
+      "audio": "audio/9e38ecdf45c7.m4a"
      },
      {
       "slots": [
@@ -1421,7 +1421,7 @@
       "punct": ".",
       "plain": "In Buenos Aires habe ich gearbeitet.",
       "ru": "В Буэнос-Айресе я работал.",
-      "audio": "audio/64f36b3dbf44.m4a"
+      "audio": "audio/9e38ecdf45c7.m4a"
      },
      {
       "slots": [
@@ -1556,7 +1556,7 @@
       "punct": ".",
       "plain": "Ich habe in Buenos Aires gearbeitet.",
       "ru": "Я работал в Буэнос-Айресе.",
-      "audio": "audio/8890dd70614c.m4a"
+      "audio": "audio/e26cf52502a5.m4a"
      }
     ]
    }
@@ -1653,7 +1653,7 @@
       "punct": ".",
       "plain": "Ich habe in Buenos Aires gearbeitet.",
       "ru": "Я работал в Буэнос-Айресе.",
-      "audio": "audio/8890dd70614c.m4a"
+      "audio": "audio/e26cf52502a5.m4a"
      }
     ],
     "focus": [
@@ -1710,7 +1710,7 @@
       "punct": "?",
       "plain": "Was hast du gestern gemacht?",
       "ru": "Что ты делал вчера?",
-      "audio": "audio/e60f4c34cef3.m4a"
+      "audio": "audio/bfcc194b3fe6.m4a"
      },
      {
       "slots": [
@@ -1742,7 +1742,7 @@
       "punct": ".",
       "plain": "Ich habe Deutsch gelernt.",
       "ru": "Я учил немецкий.",
-      "audio": "audio/1e4e035d3460.m4a"
+      "audio": "audio/29f580c4aae0.m4a"
      }
     ]
    }
@@ -1795,7 +1795,7 @@
       "punct": ".",
       "plain": "Gestern hatte ich keine Zeit.",
       "ru": "Вчера у меня не было времени.",
-      "audio": "audio/f460d7baac55.m4a"
+      "audio": "audio/13deef876db7.m4a"
      }
     ]
    }
@@ -1847,7 +1847,7 @@
       "punct": ".",
       "plain": "Gestern hatte ich keine Zeit.",
       "ru": "Вчера у меня не было времени.",
-      "audio": "audio/f460d7baac55.m4a"
+      "audio": "audio/13deef876db7.m4a"
      }
     ],
     "task": "mail"
@@ -1901,7 +1901,7 @@
       "punct": ".",
       "plain": "Gestern hatte ich keine Zeit.",
       "ru": "Вчера у меня не было времени.",
-      "audio": "audio/f460d7baac55.m4a"
+      "audio": "audio/13deef876db7.m4a"
      }
     ],
     "task": "mail",
@@ -1955,7 +1955,7 @@
       "punct": ".",
       "plain": "Gestern hatte ich keine Zeit.",
       "ru": "Вчера у меня не было времени.",
-      "audio": "audio/f460d7baac55.m4a"
+      "audio": "audio/13deef876db7.m4a"
      }
     ],
     "task": "vorstellen",
@@ -2009,7 +2009,7 @@
       "punct": ".",
       "plain": "Gestern hatte ich keine Zeit.",
       "ru": "Вчера у меня не было времени.",
-      "audio": "audio/f460d7baac55.m4a"
+      "audio": "audio/13deef876db7.m4a"
      }
     ],
     "task": "vorstellen",
@@ -2063,7 +2063,7 @@
       "punct": ".",
       "plain": "Gestern hatte ich keine Zeit.",
       "ru": "Вчера у меня не было времени.",
-      "audio": "audio/f460d7baac55.m4a"
+      "audio": "audio/13deef876db7.m4a"
      }
     ],
     "task": "formular",
@@ -2118,7 +2118,7 @@
       "punct": ".",
       "plain": "Gestern hatte ich keine Zeit.",
       "ru": "Вчера у меня не было времени.",
-      "audio": "audio/f460d7baac55.m4a"
+      "audio": "audio/13deef876db7.m4a"
      }
     ],
     "task": "formular",
@@ -2163,7 +2163,7 @@
       "punct": ".",
       "plain": "Gestern hatte ich keine Zeit.",
       "ru": "Вчера у меня не было времени.",
-      "audio": "audio/f460d7baac55.m4a"
+      "audio": "audio/13deef876db7.m4a"
      }
     ],
     "task": "formular",
@@ -2233,7 +2233,7 @@
    ],
    "hint": "arbeiten",
    "why": "Основа на *-t*, поэтому перед окончанием *e*: *gearbeit+et*.",
-   "audio": "audio/5e9e73139ed9.m4a"
+   "audio": "audio/cc5eed84690f.m4a"
   },
   {
    "id": "arbeit-6",
@@ -2243,7 +2243,7 @@
     "gemacht"
    ],
    "hint": "machen",
-   "audio": "audio/e60f4c34cef3.m4a"
+   "audio": "audio/bfcc194b3fe6.m4a"
   },
   {
    "id": "arbeit-7",
@@ -2254,7 +2254,7 @@
    ],
    "hint": "haben",
    "ru": "Мы много выучили на курсе.",
-   "audio": "audio/fd60e0a262d2.m4a"
+   "audio": "audio/ce21662a4ef6.m4a"
   },
   {
    "id": "arbeit-8",
@@ -2303,7 +2303,7 @@
     "Sechs Jahre habe ich in Buenos Aires gearbeitet."
    ],
    "why": "*habe* — на втором месте, причастие — всегда в конце.",
-   "audio": "audio/a36c07c9fc4d.m4a"
+   "audio": "audio/d0428a5ac650.m4a"
   },
   {
    "id": "arbeit-12",
@@ -2324,7 +2324,7 @@
    ],
    "hint": "haben",
    "why": "*wir hatt+en*: у *wir* окончание *-en*, как в настоящем времени.",
-   "audio": "audio/c45a961121e4.m4a"
+   "audio": "audio/f5a9d7580dad.m4a"
   },
   {
    "id": "arbeit-14",
@@ -2344,7 +2344,7 @@
    "type": "order",
    "ru": "Что ты делал вчера?",
    "de": "Was hast du gestern gemacht?",
-   "audio": "audio/e60f4c34cef3.m4a"
+   "audio": "audio/bfcc194b3fe6.m4a"
   },
   {
    "id": "arbeit-16",
@@ -2355,7 +2355,7 @@
     "Ich hatte gestern viel Arbeit.",
     "Viel Arbeit hatte ich gestern."
    ],
-   "audio": "audio/048b813d5077.m4a"
+   "audio": "audio/cc40d05de17a.m4a"
   }
  ],
  "case": {
@@ -2487,7 +2487,7 @@
      },
      {
       "de": "Ich bin Ärztin. In Kasachstan habe ich in einem Krankenhaus gearbeitet.",
-      "audio": "audio/51ccb46348df.m4a",
+      "audio": "audio/974512bc191d.m4a",
       "name": "Dana"
      },
      {
@@ -2502,7 +2502,7 @@
      },
      {
       "de": "Ja, sechs Jahre. Ich habe in Buenos Aires Fisch und Pasta gekocht.",
-      "audio": "audio/c205b2c8b576.m4a",
+      "audio": "audio/f695be3bd226.m4a",
       "name": "Mateo"
      }
     ],

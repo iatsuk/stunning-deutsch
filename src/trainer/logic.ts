@@ -21,6 +21,18 @@ export function judge(input: string, accepted: string[]): "right" | "case" | "um
   return "wrong";
 }
 
+/** Слова ответа, которые написаны с другим регистром или без умлаута: их и называем в подсказке. */
+export function nearMisses(input: string, accepted: string[]): string[] {
+  const words = normalize(input).split(" ");
+  const loose = (word: string) => deUmlaut(word).toLowerCase();
+  for (const answer of accepted) {
+    const target = normalize(answer).split(" ");
+    if (target.length === words.length && target.every((w, i) => loose(w) === loose(words[i])))
+      return target.filter((w, i) => w !== words[i]);
+  }
+  return [];
+}
+
 /** Плитки заданы вместе с запятыми, поэтому запятые не влияют на проверку порядка слов. */
 const bare = (text: string) => normalize(text).replace(/,/g, "").toLowerCase();
 
