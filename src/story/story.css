@@ -1426,6 +1426,12 @@
     animation-duration: var(--gull-time) !important;
   }
 }
+.moin-gull-start {
+  display: grid;
+  justify-items: center;
+  gap: 14px;
+  padding: 18px 0 6px;
+}
 .moin-gull-task {
   margin: 0 0 12px;
   font-family: var(--serif);

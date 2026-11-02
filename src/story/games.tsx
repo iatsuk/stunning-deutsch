@@ -39,7 +39,7 @@ import type {
 
 // Игровые действия истории. Всё управляется нажатием и с клавиатуры:
 // перетаскиваний нет, ошибка только даёт подсказку. Таймер есть в одной игре,
-// с чайкой: упущенное слово возвращается, а времени становится больше.
+// с чайкой: он запускается кнопкой, упущенное слово возвращается, а времени становится больше.
 
 type Game<K extends Challenge["kind"]> = {
   c: Extract<Challenge, { kind: K }>;
@@ -1625,11 +1625,30 @@ export function Gull({
   const [lost, setLost] = useState(0);
   const [note, setNote] = useState("");
   const [tone, setTone] = useState<Tone>();
+  // Чайка взлетает по кнопке: сначала спокойно прочитать задание.
+  const [running, setRunning] = useState(false);
   if (!current || disabled)
     return (
       <p className="moin-count" lang="de">
         {c.words.join(" · ")}
       </p>
+    );
+  if (!running)
+    return (
+      <div className="moin-gull-start">
+        <p className="moin-count">
+          {done.length
+            ? `Спасено: ${done.length} из ${c.words.length}. Продолжим?`
+            : `Слов: ${c.words.length}. На каждое — ${GULL_SECONDS} секунд.`}
+        </p>
+        <button
+          type="button"
+          className="primary"
+          onClick={() => setRunning(true)}
+        >
+          Старт
+        </button>
+      </div>
     );
   const lose = (message: string) => {
     setNote(message);
