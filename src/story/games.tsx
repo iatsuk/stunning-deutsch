@@ -8,7 +8,7 @@ import {
   type ReactNode,
   type RefObject,
 } from "react";
-import { play, stopAudio } from "../hooks";
+import { say, stopAudio } from "../hooks";
 import { preis, uhrzeit } from "../lib/german";
 import { shuffle } from "../lib/shuffle";
 import { PlayButton } from "../markup";
@@ -538,7 +538,7 @@ export function Memory({
   // Неверная пара остаётся открытой до следующего нажатия: читать можно без спешки.
   function flip(id: string, pair: string) {
     const turned = open.length === 2 ? [id] : [...open, id];
-    if (id.endsWith(":de")) play(storyAudio(phrases[pair].de));
+    if (id.endsWith(":de")) say(storyAudio(phrases[pair].de));
     if (turned.length === 2 && turned[0].split(":")[0] === pair) {
       const next = [...found, pair];
       setOpen([]);
@@ -1086,7 +1086,7 @@ export function Bingo({
     setMiss("");
     change(next);
     if (next.length === c.words.length) return win();
-    play(wordInfo(calls[next.length])?.audio);
+    say(wordInfo(calls[next.length])?.audio);
   }
   return (
     <>
@@ -1151,7 +1151,7 @@ export function Scene({
     setMiss("");
     change(next);
     if (next.length === c.items.length) win();
-    else play(wordInfo(tasks[next.length].word)?.audio);
+    else say(wordInfo(tasks[next.length].word)?.audio);
   }
   return (
     <>
@@ -1525,7 +1525,7 @@ export function Docks({
   function tap(article: string) {
     if (!current) return;
     const info = wordInfo(current);
-    play(info?.audio);
+    say(info?.audio);
     if (!current.startsWith(`${article} `)) {
       setNote(`Нет, ${current} (${info?.ru}). Слово вернётся в конце.`);
       setTone("bad");
@@ -1697,7 +1697,7 @@ export function Gull({
               `Это ${word} (${wordInfo(word)?.ru}). Нужно было ${current}. Слово вернётся.`,
             );
           const next = [...done, word];
-          play(wordInfo(word)?.audio);
+          say(wordInfo(word)?.audio);
           setNote(`${word} — ${wordInfo(word)?.ru}`);
           setTone("good");
           change(next);
@@ -1742,7 +1742,7 @@ function LockBox({
     ).length;
     setRight(clicked);
     if (clicked < reels.length) onMiss();
-    else play(storyAudio(lockKey(round)));
+    else say(storyAudio(lockKey(round)));
   }
   return (
     <>
@@ -2006,7 +2006,7 @@ function OralTurn({ round, onDone }: { round: OralRound; onDone: () => void }) {
             className="primary"
             onClick={() => {
               setCompare(true);
-              play(model);
+              say(model);
             }}
           >
             Сверить с образцом

@@ -84,6 +84,8 @@ function start(src: string) {
   playing = src;
   emitAudio();
   audio.addEventListener("ended", () => {
+    // Окончание прошлой записи может прийти уже после запуска новой: её не трогаем.
+    if (player !== audio) return;
     const next = queue.shift();
     if (next) start(next);
     else stop();
@@ -106,6 +108,12 @@ function stop() {
 export function play(src?: string) {
   if (!src) return;
   if (playing === src) return stop();
+  say(src);
+}
+
+/** Звук в ответ на ход в игре: всегда с начала, даже если та же запись ещё звучит. */
+export function say(src?: string) {
+  if (!src) return;
   queue = [];
   start(src);
 }
