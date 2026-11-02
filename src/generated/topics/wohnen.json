@@ -87,7 +87,7 @@
      "who": "M",
      "de": "Kalt? Was bedeutet das?",
      "ru": "«Холодными»? Что это значит?",
-     "audio": "audio/8cf753e6dae4.m4a"
+     "audio": "audio/5bd5e4e5c226.m4a"
     },
     {
      "who": "A",
@@ -329,7 +329,7 @@
      "ru": "диван",
      "gender": "n",
      "plural": "Sofas",
-     "audio": "audio/1dc412b2f3bb.m4a"
+     "audio": "audio/28c3f7d73eb5.m4a"
     },
     {
      "de": "der Schrank",
@@ -1235,7 +1235,7 @@
       "punct": ".",
       "plain": "Der Balkon ist groß.",
       "ru": "Балкон большой.",
-      "audio": "audio/f65896b520ef.m4a"
+      "audio": "audio/38eac8118c86.m4a"
      },
      {
       "slots": [
@@ -1266,7 +1266,7 @@
       "punct": ".",
       "plain": "Die Küche ist groß.",
       "ru": "Кухня большая.",
-      "audio": "audio/d65a07f1120d.m4a"
+      "audio": "audio/c4068c80e007.m4a"
      },
      {
       "slots": [
@@ -1297,7 +1297,7 @@
       "punct": ".",
       "plain": "Das Fenster ist groß.",
       "ru": "Окно большое.",
-      "audio": "audio/246c91c5be72.m4a"
+      "audio": "audio/ff0555cca4b6.m4a"
      },
      {
       "slots": [
@@ -1328,7 +1328,7 @@
       "punct": ".",
       "plain": "Die Zimmer sind groß.",
       "ru": "Комнаты большие.",
-      "audio": "audio/b296edcd7e6c.m4a"
+      "audio": "audio/08b7f911b18c.m4a"
      }
     ],
     "fresh": [
@@ -1857,7 +1857,7 @@
    ],
    "hint": "ein Haus",
    "why": "*das Haus* — средний род: *in einem Haus*.",
-   "audio": "audio/6627287703c5.m4a"
+   "audio": "audio/9f64873c82e8.m4a"
   },
   {
    "id": "wohnen-8",

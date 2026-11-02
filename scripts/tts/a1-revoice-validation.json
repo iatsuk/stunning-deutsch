@@ -1,0 +1,162 @@
+{
+ "date": "2026-11-02",
+ "scope": "A1 recordings from Qwen ending in s, ß, z, x, sch, ch or f, re-voiced because Qwen clipped final fricatives; the list is revoice.json",
+ "model": "k2-fsa/OmniVoice",
+ "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+ "newFiles": 145,
+ "seconds": 348.9,
+ "bytes": 3984365,
+ "decodeFailures": 0,
+ "cutEndings": 0,
+ "asr": {
+  "model": "openai/whisper-large-v3",
+  "exact": 111,
+  "differences": [
+   {
+    "text": "Mein Name ist Elif Yıldız.",
+    "heard": "Mein Name ist Elif Yildiz."
+   },
+   {
+    "text": "Und woher kommen Sie, Frau Yıldız?",
+    "heard": "Und woher kommen Sie, Frau Yildiz?"
+   },
+   {
+    "text": "Danke schön. Auf Wiedersehen, Frau Yıldız!",
+    "heard": "Dankeschön. Auf Wiedersehen, Frau Yildiz."
+   },
+   {
+    "text": "Mein Name ist Mateo Fernández.",
+    "heard": "Mein Name ist Matteo Fernandes."
+   },
+   {
+    "text": "Sind Sie Frau Yıldız?",
+    "heard": "Sind Sie Frau Yildiz?"
+   },
+   {
+    "text": "Mateo spricht Spanisch und Englisch.",
+    "heard": "Matteo spricht Spanisch und Englisch."
+   },
+   {
+    "text": "Gern. Ospanowa – wie schreibt man das?",
+    "heard": "Gern aus Panova. Wie schreibt man das?"
+   },
+   {
+    "text": "eins",
+    "heard": "1."
+   },
+   {
+    "text": "fünf",
+    "heard": "5."
+   },
+   {
+    "text": "sechs",
+    "heard": "6."
+   },
+   {
+    "text": "elf",
+    "heard": "11."
+   },
+   {
+    "text": "zwölf",
+    "heard": "12."
+   },
+   {
+    "text": "Mein Familienname ist Yıldız.",
+    "heard": "Mein Familienname ist Yildiz."
+   },
+   {
+    "text": "Mein Name ist Vehrs. Vau – E – Ha – Er – Es.",
+    "heard": "Mein Name ist Vers VE HRS."
+   },
+   {
+    "text": "Ja, ich habe drei Schwestern. Das ist Lucía, meine Schwester in Buenos Aires.",
+    "heard": "Ja, ich habe drei Schwestern. Das ist Lucia, meine Schwester in Buenos Aires."
+   },
+   {
+    "text": "Ja, Mateo, das sind unsere Fotos.",
+    "heard": "Ja, Matteo, das sind unsere Fotos."
+   },
+   {
+    "text": "der Kaffee, die Kaffees",
+    "heard": "Der Kaffee, die Cafés"
+   },
+   {
+    "text": "Liebe Kundinnen und Kunden! Heute im Angebot: Tomaten aus Italien, das Kilo nur zwei Euro zwanzig. Und Orangen aus Spanien: Das Kilo kostet heute nur zwei Euro neunzig. Das Angebot gibt es nur heute. Vielen Dank für Ihren Einkauf!",
+    "heard": "Liebe Kundinnen und Kunden, heute im Angebot Tomaten aus Italien, das Kilo nur 2,20 Euro und Orangen aus Spanien. Das Kilo kostet heute nur 2,90 Euro. Das Angebot gibt es nur heute. Vielen Dank für Ihren Einkauf."
+   },
+   {
+    "text": "Das T-Shirt ist gut. Mateo nimmt es.",
+    "heard": "Das T-Shirt ist gut. Matteo nimmt es."
+   },
+   {
+    "text": "Ja, zwei Kilo Äpfel und ein Pfund Tomaten. Mateo nimmt den Pullover in S.",
+    "heard": "Ja, zwei Kilo Äpfel und ein Pfund Tomaten. Matteo nimmt den Pullover in S."
+   },
+   {
+    "text": "Moin, Mateo! Wie spät ist es?",
+    "heard": "Moin Matteo, wie spät ist es?"
+   },
+   {
+    "text": "Ich stehe um sieben Uhr auf.",
+    "heard": "Ich stehe um 7 Uhr auf."
+   },
+   {
+    "text": "Um sieben Uhr stehe ich auf.",
+    "heard": "Um 7 Uhr stehe ich auf."
+   },
+   {
+    "text": "Ich arbeite von neun bis fünf.",
+    "heard": "Ich arbeite von 9 bis 5."
+   },
+   {
+    "text": "Ich stehe um sechs Uhr auf.",
+    "heard": "Ich stehe um 6 Uhr auf."
+   },
+   {
+    "text": "zu Fuß",
+    "heard": "ZUFUS"
+   },
+   {
+    "text": "Sie steigen in Holtenau aus.",
+    "heard": "Sie steigen in Holdenau aus."
+   },
+   {
+    "text": "Guten Tag, Herr Fernández! Bitte nehmen Sie Platz.",
+    "heard": "Guten Tag, Herr Fernandes. Bitte nehmen Sie Platz."
+   }
+  ]
+ },
+ "seedOverrides": [
+  {
+   "text": "der Cousin, die Cousins",
+   "seed": 20416840,
+   "heard": "Der Cousin, die Cousins"
+  },
+  {
+   "text": "Hm, ich finde ihn zu groß. Haben Sie ihn auch in S?",
+   "seed": 20319921,
+   "heard": "Hm, ich finde ihn zu groß. Haben Sie ihn auch in S?"
+  },
+  {
+   "text": "groß",
+   "seed": 21076259,
+   "heard": "Groß."
+  },
+  {
+   "text": "Am Vormittag habe ich Kurs.",
+   "seed": 20758878,
+   "heard": "Am Vormittag habe ich Kurs."
+  },
+  {
+   "text": "Die Zimmer sind groß.",
+   "seed": 20984749,
+   "heard": "Die Zimmer sind groß."
+  },
+  {
+   "text": "Was haben Sie denn, Herr Fernández?",
+   "seed": 21022299,
+   "heard": "Was haben Sie denn, Herr Fernandes?"
+  }
+ ],
+ "note": "Remaining differences are spellings of names, digits for number words and spelled letters. Automated checks do not replace listening."
+}

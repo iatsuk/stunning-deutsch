@@ -77,7 +77,7 @@
      "who": "P",
      "de": "Gern. Ospanowa – wie schreibt man das?",
      "ru": "Хорошо. Оспанова — как это пишется?",
-     "audio": "audio/25786e782a3b.m4a"
+     "audio": "audio/16ad449e335f.m4a"
     },
     {
      "who": "D",
@@ -265,7 +265,7 @@
      "who": "J",
      "de": "Super! Viel Spaß!",
      "ru": "Отлично! Хорошо провести время!",
-     "audio": "audio/5b20e8faa173.m4a"
+     "audio": "audio/0746feed3410.m4a"
     }
    ]
   }
@@ -288,7 +288,7 @@
      "gender": null,
      "plural": null,
      "note": "в составе числа — ein: einundzwanzig",
-     "audio": "audio/03fc47d40371.m4a"
+     "audio": "audio/87b39230abc4.m4a"
     },
     {
      "de": "zwei",
@@ -318,7 +318,7 @@
      "ru": "5",
      "gender": null,
      "plural": null,
-     "audio": "audio/8ddb8e42c11e.m4a"
+     "audio": "audio/1ce3466dde99.m4a"
     },
     {
      "de": "sechs",
@@ -326,7 +326,7 @@
      "gender": null,
      "plural": null,
      "note": "chs = кс: [зекс]",
-     "audio": "audio/e7431ef2579c.m4a"
+     "audio": "audio/5df274426077.m4a"
     },
     {
      "de": "sieben",
@@ -364,14 +364,14 @@
      "ru": "11",
      "gender": null,
      "plural": null,
-     "audio": "audio/5e47ac6d39df.m4a"
+     "audio": "audio/db06c2c3e5be.m4a"
     },
     {
      "de": "zwölf",
      "ru": "12",
      "gender": null,
      "plural": null,
-     "audio": "audio/97eafa051592.m4a"
+     "audio": "audio/8abd8f4ecae8.m4a"
     }
    ]
   },
@@ -392,7 +392,7 @@
      "gender": "n",
      "plural": "Handys",
      "note": "[хэ́нди]",
-     "audio": "audio/5f0517aaf744.m4a"
+     "audio": "audio/d3aaeabb027e.m4a"
     },
     {
      "de": "die Handynummer",
@@ -849,7 +849,7 @@
    "sample": [
     {
      "de": "Mein Familienname ist Yıldız.",
-     "audio": "audio/3438a8ccca99.m4a"
+     "audio": "audio/b305874943d6.m4a"
     },
     {
      "de": "Ypsilon – I – El – De – I – Zett.",
@@ -2344,7 +2344,7 @@
       "who": "X",
       "de": "Mein Name ist Vehrs. Vau – E – Ha – Er – Es.",
       "ru": "Моя фамилия Ферс. Фау — э — ха — эр — эс.",
-      "audio": "audio/d050d5f292cc.m4a"
+      "audio": "audio/a5390d84d619.m4a"
      }
     ],
     "question": "Как на самом деле пишется фамилия?",

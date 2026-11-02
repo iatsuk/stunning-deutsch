@@ -358,7 +358,11 @@ test("write checks the exact German form and explains near misses", () => {
     mistake(c, { ...good, land: "argentinien" }, "hint"),
     /заглавные/,
   );
-  assert.equal(mistake(c, { ...good, wohnort: "Kiel" }, "hint"), "hint");
+  assert.match(
+    mistake(c, { ...good, wohnort: "Kiel" }, "hint"),
+    /правильный ответ/,
+  );
+  assert.notEqual(mistake(c, { ...good, wohnort: "Kiel" }, "hint"), "hint");
   assert.match(mistake(c, { wohnort: "Gaarden" }, "hint"), /Заполните/);
   const umlaut = {
     kind: "write",

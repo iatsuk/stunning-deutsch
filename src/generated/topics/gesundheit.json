@@ -77,7 +77,7 @@
      "who": "P",
      "de": "Was haben Sie denn, Herr Fernández?",
      "ru": "А что у вас, господин Фернандес?",
-     "audio": "audio/7752376e0fb5.m4a"
+     "audio": "audio/12d5a8d368fa.m4a"
     },
     {
      "who": "M",
@@ -172,7 +172,7 @@
      "who": "A",
      "de": "Elif und ich bringen morgen Suppe mit. Geht das?",
      "ru": "Мы с Элиф завтра принесём суп. Так можно?",
-     "audio": "audio/f480aab80753.m4a"
+     "audio": "audio/acad99e55ffb.m4a"
     },
     {
      "who": "M",
@@ -2026,7 +2026,7 @@
       "punct": "!",
       "plain": "Mach bitte das Fenster auf!",
       "ru": "Открой, пожалуйста, окно!",
-      "audio": "audio/e2186c547839.m4a"
+      "audio": "audio/070611ce12d1.m4a"
      },
      {
       "slots": [
@@ -2065,7 +2065,7 @@
       "punct": "!",
       "plain": "Machen Sie bitte das Fenster auf!",
       "ru": "Откройте, пожалуйста, окно!",
-      "audio": "audio/10bf5d914e16.m4a"
+      "audio": "audio/363b565f0f74.m4a"
      }
     ],
     "task": "absage"

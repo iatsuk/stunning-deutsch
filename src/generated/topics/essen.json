@@ -110,7 +110,7 @@
      "who": "M",
      "de": "Zusammen. Heute zahle ich!",
      "ru": "Вместе. Сегодня плачу я!",
-     "audio": "audio/3795fd23e537.m4a"
+     "audio": "audio/5f907ed9a0fe.m4a"
     },
     {
      "who": "K",
@@ -151,7 +151,7 @@
      "who": "A",
      "de": "Ja, sehr gern! Aber ich esse kein Fleisch.",
      "ru": "Да, очень! Но я не ем мяса.",
-     "audio": "audio/16cf92ced8d8.m4a"
+     "audio": "audio/8bace98d5498.m4a"
     },
     {
      "who": "M",
@@ -233,7 +233,7 @@
      "who": "K",
      "de": "Mit Milch?",
      "ru": "С молоком?",
-     "audio": "audio/a97cf1fe4143.m4a"
+     "audio": "audio/7a54db57d231.m4a"
     },
     {
      "who": "F",
@@ -294,14 +294,14 @@
      "gender": "m",
      "plural": "Kaffees",
      "note": "Einen Kaffee, bitte!",
-     "audio": "audio/af06a03f23c3.m4a"
+     "audio": "audio/21b567982d56.m4a"
     },
     {
      "de": "der Tee",
      "ru": "чай",
      "gender": "m",
      "plural": "Tees",
-     "audio": "audio/e5d0838adb0c.m4a"
+     "audio": "audio/b60bf6e70768.m4a"
     },
     {
      "de": "der Saft",
@@ -326,14 +326,14 @@
      "gender": "f",
      "plural": null,
      "noPlural": true,
-     "audio": "audio/36ea6196b864.m4a"
+     "audio": "audio/a70380464462.m4a"
     },
     {
      "de": "die Cola",
      "ru": "кола",
      "gender": "f",
      "plural": "Colas",
-     "audio": "audio/82ef645dd274.m4a"
+     "audio": "audio/75f37fb36517.m4a"
     },
     {
      "de": "das Bier",
@@ -397,7 +397,7 @@
      "gender": "n",
      "plural": null,
      "noPlural": true,
-     "audio": "audio/17f5556d3b05.m4a"
+     "audio": "audio/6234bd616844.m4a"
     },
     {
      "de": "der Fisch",
@@ -476,7 +476,7 @@
      "ru": "кафе",
      "gender": "n",
      "plural": "Cafés",
-     "audio": "audio/5817267f164f.m4a"
+     "audio": "audio/682f5e53861e.m4a"
     },
     {
      "de": "die Speisekarte",
@@ -828,7 +828,7 @@
    "sample": [
     {
      "de": "Isst du gern Fleisch?",
-     "audio": "audio/8e4997786d11.m4a"
+     "audio": "audio/311d3d83babb.m4a"
     },
     {
      "de": "Nein, ich esse kein Fleisch. Ich esse gern Gemüse.",
@@ -899,7 +899,7 @@
     {
      "who": "Kellner",
      "de": "Mit Milch?",
-     "audio": "audio/a97cf1fe4143.m4a"
+     "audio": "audio/7a54db57d231.m4a"
     },
     {
      "who": "Frau",
@@ -2455,7 +2455,7 @@
    ],
    "hint": "essen",
    "why": "*essen*: *du isst*, *er / sie isst*.",
-   "audio": "audio/8b2370b97616.m4a"
+   "audio": "audio/b4f74e0bc2c3.m4a"
   },
   {
    "id": "essen-10",
@@ -2468,7 +2468,7 @@
    ],
    "answer": 0,
    "why": "Отрицаем *gern* — значит, *nicht*: *nicht gern*.",
-   "audio": "audio/118037df3321.m4a"
+   "audio": "audio/8112b71fbe3f.m4a"
   },
   {
    "id": "essen-11",
@@ -2782,7 +2782,7 @@
      },
      {
       "de": "Zusammen. Heute zahle ich!",
-      "audio": "audio/3795fd23e537.m4a",
+      "audio": "audio/5f907ed9a0fe.m4a",
       "name": "Mateo"
      },
      {
@@ -2830,7 +2830,7 @@
      },
      {
       "de": "Ja, sehr gern! Aber ich esse kein Fleisch.",
-      "audio": "audio/16cf92ced8d8.m4a",
+      "audio": "audio/8bace98d5498.m4a",
       "name": "Dana"
      },
      {

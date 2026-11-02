@@ -68,10 +68,10 @@ function DrillRound({
       {c.kind === "lock" && <Lock c={c} {...game} />}
       {c.kind === "write" && (
         <>
-          <Write c={c} {...game} />
+          <Write c={c} {...game} reveal={false} />
           {/* Вспомнить нечем, поэтому ответ открывается: его нужно переписать. */}
           {revealed.length > 0 && (
-            <ul className="moin-drill-answers" role="status">
+            <ul className="moin-drill-answers" role="status" data-tone="bad">
               {revealed.map((word) => (
                 <li key={word}>
                   {wordInfo(word)?.ru} — <b lang="de">{word}</b>
@@ -155,7 +155,11 @@ export function WordDrill({
       )}
       {round && missed && (
         <>
-          <div className="moin-drill-result" role="status">
+          <div
+            className="moin-drill-result"
+            role="status"
+            data-tone={missed.length ? "bad" : "good"}
+          >
             <strong>
               С первого раза: {round.words.length - missed.length} из{" "}
               {round.words.length}

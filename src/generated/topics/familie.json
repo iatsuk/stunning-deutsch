@@ -134,7 +134,7 @@
      "who": "M",
      "de": "Ja, ich habe drei Schwestern. Das ist Lucía, meine Schwester in Buenos Aires.",
      "ru": "Да, у меня три сестры. Это Лусия, моя сестра в Буэнос-Айресе.",
-     "audio": "audio/4fd15a95342b.m4a"
+     "audio": "audio/09932f9b237d.m4a"
     },
     {
      "who": "A",
@@ -164,7 +164,7 @@
      "who": "A",
      "de": "Toll! Und deine Eltern? Wohnen sie auch in Buenos Aires?",
      "ru": "Здорово! А твои родители? Они тоже живут в Буэнос-Айресе?",
-     "audio": "audio/05bedc186c5f.m4a"
+     "audio": "audio/741d06470d41.m4a"
     },
     {
      "who": "M",
@@ -205,13 +205,13 @@
      "who": "M",
      "de": "Dana, sind das unsere Fotos?",
      "ru": "Дана, это наши фотографии?",
-     "audio": "audio/fce880a0d6d0.m4a"
+     "audio": "audio/082270dc931e.m4a"
     },
     {
      "who": "D",
      "de": "Ja, Mateo, das sind unsere Fotos.",
      "ru": "Да, Матео, это наши фотографии.",
-     "audio": "audio/4c36c3ac594e.m4a"
+     "audio": "audio/867f36e6d077.m4a"
     }
    ]
   }
@@ -313,7 +313,7 @@
      "gender": "m",
      "plural": "Opas",
      "note": "официально — der Großvater",
-     "audio": "audio/c2d02f2fdb64.m4a"
+     "audio": "audio/4eadfc2d0c02.m4a"
     },
     {
      "de": "die Oma",
@@ -321,7 +321,7 @@
      "gender": "f",
      "plural": "Omas",
      "note": "официально — die Großmutter",
-     "audio": "audio/b4c1861a5617.m4a"
+     "audio": "audio/4280fa258dd5.m4a"
     },
     {
      "de": "der Onkel",
@@ -343,7 +343,7 @@
      "gender": "m",
      "plural": "Cousins",
      "note": "[кузэ́н]",
-     "audio": "audio/d6f9c0d769ab.m4a"
+     "audio": "audio/8e7eb60a5c66.m4a"
     },
     {
      "de": "die Cousine",
@@ -408,7 +408,7 @@
      "ru": "малыш, младенец",
      "gender": "n",
      "plural": "Babys",
-     "audio": "audio/b2138a98e441.m4a"
+     "audio": "audio/bae5d3e6374a.m4a"
     },
     {
      "de": "der Freund",
@@ -522,7 +522,7 @@
      "ru": "фотография",
      "gender": "n",
      "plural": "Fotos",
-     "audio": "audio/9e784cc977d1.m4a"
+     "audio": "audio/2dbb2f4636f4.m4a"
     }
    ]
   }
@@ -2229,7 +2229,7 @@
    ],
    "hint": "wir",
    "why": "*wir* → *unser*, перед *Fotos* во множественном числе — *unsere*.",
-   "audio": "audio/73911eb3ab0d.m4a"
+   "audio": "audio/becfafb7209b.m4a"
   },
   {
    "id": "familie-18",
@@ -2485,7 +2485,7 @@
     "quotes": [
      {
       "de": "Ja, ich habe drei Schwestern. Das ist Lucía, meine Schwester in Buenos Aires.",
-      "audio": "audio/4fd15a95342b.m4a",
+      "audio": "audio/09932f9b237d.m4a",
       "name": "Mateo"
      },
      {
@@ -2557,12 +2557,12 @@
      },
      {
       "de": "Dana, sind das unsere Fotos?",
-      "audio": "audio/fce880a0d6d0.m4a",
+      "audio": "audio/082270dc931e.m4a",
       "name": "Mateo"
      },
      {
       "de": "Ja, Mateo, das sind unsere Fotos.",
-      "audio": "audio/4c36c3ac594e.m4a",
+      "audio": "audio/867f36e6d077.m4a",
       "name": "Dana"
      }
     ],

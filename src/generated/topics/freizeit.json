@@ -106,7 +106,7 @@
      "who": "M",
      "de": "Um zehn? Da schlafe ich noch! Lieber um zwölf.",
      "ru": "В десять? Я тогда ещё сплю! Лучше в двенадцать.",
-     "audio": "audio/5556b4e89406.m4a"
+     "audio": "audio/cc38f69addb9.m4a"
     },
     {
      "who": "A",
@@ -152,7 +152,7 @@
      "who": "A",
      "de": "Am Samstag kann ich leider nicht. Mein Bruder besucht mich.",
      "ru": "В субботу я, к сожалению, не могу. Ко мне приезжает брат.",
-     "audio": "audio/82e409052bf6.m4a"
+     "audio": "audio/96ff7d1da22a.m4a"
     },
     {
      "who": "J",
@@ -354,7 +354,7 @@
      "ru": "хобби",
      "gender": "n",
      "plural": "Hobbys",
-     "audio": "audio/bd1ab3d08921.m4a"
+     "audio": "audio/0a936d2303a9.m4a"
     },
     {
      "de": "der Sport",
@@ -376,7 +376,7 @@
      "ru": "кинотеатр",
      "gender": "n",
      "plural": "Kinos",
-     "audio": "audio/ccdb727ffc1d.m4a"
+     "audio": "audio/56cabfb5b061.m4a"
     },
     {
      "de": "das Konzert",
@@ -397,14 +397,14 @@
      "ru": "парк",
      "gender": "m",
      "plural": "Parks",
-     "audio": "audio/d91668db5313.m4a"
+     "audio": "audio/ef2e2401e249.m4a"
     },
     {
      "de": "die Party",
      "ru": "вечеринка",
      "gender": "f",
      "plural": "Partys",
-     "audio": "audio/f7255ec24cdd.m4a"
+     "audio": "audio/57d55e7c0a02.m4a"
     },
     {
      "de": "das Buch",
@@ -728,7 +728,7 @@
     },
     {
      "de": "Mein Bruder aus Kasachstan besucht mich.",
-     "audio": "audio/ae8cc4277a1b.m4a"
+     "audio": "audio/dc71ed87d31a.m4a"
     },
     {
      "de": "Wollen wir am Sonntag zusammen frühstücken?",
@@ -762,7 +762,7 @@
     },
     {
      "de": "Am Samstag arbeite ich. Am Sonntag spiele ich Tennis.",
-     "audio": "audio/a04d310aa89a.m4a"
+     "audio": "audio/7079f2f5e1b0.m4a"
     }
    ]
   },
@@ -1050,7 +1050,7 @@
       "punct": ".",
       "plain": "Ich spiele Tennis.",
       "ru": "Я играю в теннис.",
-      "audio": "audio/61186c29801b.m4a"
+      "audio": "audio/555893c53356.m4a"
      }
     ]
    }
@@ -1634,7 +1634,7 @@
       "punct": ".",
       "plain": "Am liebsten lese ich.",
       "ru": "Больше всего я люблю читать.",
-      "audio": "audio/6ebbc130dccf.m4a"
+      "audio": "audio/0989e77211f0.m4a"
      }
     ]
    }
@@ -2175,7 +2175,7 @@
    ],
    "answer": 2,
    "why": "*am liebsten* — «больше всего», лучшее из всех.",
-   "audio": "audio/bd71ca7e8485.m4a"
+   "audio": "audio/7313acfa585f.m4a"
   },
   {
    "id": "freizeit-13",
@@ -2188,7 +2188,7 @@
    ],
    "answer": 1,
    "why": "Отказ — *Leider nicht.* — и сразу причина: *Da arbeite ich.*",
-   "audio": "audio/29227e22bf42.m4a"
+   "audio": "audio/b133e7c6b51a.m4a"
   },
   {
    "id": "freizeit-14",
@@ -2212,7 +2212,7 @@
    ],
    "hint": "können / besuchen",
    "ru": "В субботу я, к сожалению, не могу. Ко мне приезжает брат.",
-   "audio": "audio/82e409052bf6.m4a"
+   "audio": "audio/96ff7d1da22a.m4a"
   },
   {
    "id": "freizeit-16",

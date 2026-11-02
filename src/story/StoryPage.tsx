@@ -530,10 +530,49 @@ export function StoryPage() {
                 >
                   <div className="moin-scene-top">
                     <span>{episode.place}</span>
-                    <span>
+                    <span className="moin-step-nav">
+                      <button
+                        type="button"
+                        aria-label="Предыдущий шаг"
+                        disabled={save.cursor === 0}
+                        onClick={() => go(save.cursor - 1)}
+                      >
+                        ‹
+                      </button>
                       {chapterStep + 1} / {episode.beats.length}
+                      <button
+                        type="button"
+                        aria-label="Следующий шаг"
+                        disabled={
+                          save.cursor >=
+                          Math.min(save.completed, beats.length - 1)
+                        }
+                        onClick={() => go(save.cursor + 1)}
+                      >
+                        ›
+                      </button>
                     </span>
                   </div>
+                  {/* Пройденные шаги главы открываются нажатием; будущие закрыты. */}
+                  <ol className="moin-steps" aria-label="Шаги главы">
+                    {episode.beats.map((b, i) => {
+                      const index = chapterStart + i;
+                      return (
+                        <li key={b.id}>
+                          <button
+                            type="button"
+                            aria-label={`Шаг ${i + 1}: ${b.title}`}
+                            aria-current={
+                              index === save.cursor ? "step" : undefined
+                            }
+                            data-done={index < save.completed || undefined}
+                            disabled={index > save.completed}
+                            onClick={() => go(index)}
+                          />
+                        </li>
+                      );
+                    })}
+                  </ol>
                   <div className="moin-chapter-title">
                     Глава {chapter + 1} · {episode.title}
                   </div>
@@ -769,7 +808,8 @@ function StoryTurn({
     [hint, setHint] = useState(false),
     [script, setScript] = useState(false),
     [audioError, setAudioError] = useState(false),
-    [ruleOpen, setRuleOpen] = useState(false);
+    [ruleOpen, setRuleOpen] = useState(false),
+    [attempts, setAttempts] = useState(0);
   const c = beat.challenge;
   // Новое правило открыто перед игрой. Остальные ждут под ней: после ошибки они
   // раскрываются там, где смотрит игрок, и не сдвигают само задание.
@@ -790,6 +830,7 @@ function StoryTurn({
   }
   function check() {
     setChecked(true);
+    setAttempts((n) => n + 1);
     if (correct) return onWin();
     onMiss();
     setRuleOpen(true);
@@ -800,6 +841,7 @@ function StoryTurn({
     seed: beat.id,
     disabled,
     checked,
+    attempts,
     change,
     win: onWin,
     miss(word?: string) {

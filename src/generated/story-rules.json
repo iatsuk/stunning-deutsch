@@ -641,7 +641,7 @@
     "punct": ".",
     "plain": "Der Pullover ist zu groß.",
     "ru": "Свитер велик.",
-    "audio": "audio/ba2532d4f95e.m4a"
+    "audio": "audio/88ad1a6cf284.m4a"
    },
    {
     "slots": [
@@ -676,7 +676,7 @@
     "punct": ".",
     "plain": "Die Jacke ist zu groß.",
     "ru": "Куртка велика.",
-    "audio": "audio/396b690a0a3c.m4a"
+    "audio": "audio/92135d80adc1.m4a"
    },
    {
     "slots": [
@@ -711,7 +711,7 @@
     "punct": ".",
     "plain": "Das Hemd ist zu groß.",
     "ru": "Рубашка велика.",
-    "audio": "audio/2ff0fbfd3105.m4a"
+    "audio": "audio/f888eb50f6b1.m4a"
    },
    {
     "slots": [
@@ -746,7 +746,7 @@
     "punct": ".",
     "plain": "Die Schuhe sind zu groß.",
     "ru": "Ботинки велики.",
-    "audio": "audio/66085f8ed4aa.m4a"
+    "audio": "audio/852785ccb4dd.m4a"
    }
   ]
  },
@@ -792,7 +792,7 @@
     "punct": ".",
     "plain": "Ich stehe um sieben Uhr auf.",
     "ru": "Я встаю в семь часов.",
-    "audio": "audio/a39898a574cb.m4a"
+    "audio": "audio/1ac7c5589876.m4a"
    }
   ]
  },
@@ -970,7 +970,7 @@
     "punct": ".",
     "plain": "Am liebsten lese ich.",
     "ru": "Больше всего я люблю читать.",
-    "audio": "audio/6ebbc130dccf.m4a"
+    "audio": "audio/0989e77211f0.m4a"
    }
   ]
  },
@@ -1292,7 +1292,7 @@
     "punct": "!",
     "plain": "Gehen Sie geradeaus!",
     "ru": "Идите прямо!",
-    "audio": "audio/945ef4dacc04.m4a"
+    "audio": "audio/158a3b81daf9.m4a"
    }
   ]
  },

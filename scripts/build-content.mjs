@@ -39,6 +39,10 @@ const audioConfig = JSON.parse(readFileSync(path.join(root, "scripts/tts/config.
 const legacyAudioConfig = JSON.parse(readFileSync(path.join(root, "scripts/tts/legacy-qwen-config.json"), "utf8"));
 const LEGACY_AUDIO_VERSION = createHash("sha256").update(JSON.stringify(legacyAudioConfig)).digest("hex");
 const AUDIO_VERSION = createHash("sha256").update(JSON.stringify(audioConfig)).digest("hex");
+// Старые записи, которые нужно перезаписать OmniVoice: например, Qwen обрывал конечные шипящие.
+const revoice = new Set(
+  JSON.parse(readFileSync(path.join(root, "scripts/tts/revoice.json"), "utf8")).map((r) => `${r.voice}|${r.text}`),
+);
 const DEFAULT_VOICE = "Anna";
 const VOICES = Object.keys(audioConfig.voices);
 
@@ -1016,7 +1020,10 @@ function speak(text, voice = DEFAULT_VOICE) {
   const legacyHash = createHash("sha1").update(`${LEGACY_AUDIO_VERSION}|${voice}|${clean}`).digest("hex").slice(0, 12);
   const legacyFile = `${legacyHash}.m4a`;
   // Existing course audio stays intact; a missing or new phrase is always OmniVoice.
-  const useLegacy = !existsSync(path.join(audioDir, currentFile)) && existsSync(path.join(audioDir, legacyFile));
+  const useLegacy =
+    !revoice.has(`${voice}|${clean}`) &&
+    !existsSync(path.join(audioDir, currentFile)) &&
+    existsSync(path.join(audioDir, legacyFile));
   const file = useLegacy ? legacyFile : currentFile;
   const selectedConfig = useLegacy ? legacyAudioConfig : audioConfig;
   audio.set(file, { text: clean, voice, model: selectedConfig.model, revision: selectedConfig.revision });

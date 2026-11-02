@@ -525,6 +525,129 @@
   color: var(--muted);
   text-align: center;
 }
+/* Итог действия: зелёный — верно, красный — ошибка; значок дублирует цвет. */
+.moin-turn [data-tone="good"],
+.moin-drill [data-tone="good"],
+.moin-review [data-tone="good"] {
+  color: var(--ok);
+}
+.moin-turn [data-tone="bad"],
+.moin-drill [data-tone="bad"],
+.moin-review [data-tone="bad"] {
+  color: var(--bad);
+}
+.moin-count[data-tone] {
+  font-weight: 600;
+}
+.moin-gender[data-gender="der"],
+[data-gender="der"] > .moin-gender,
+.moin-slots[data-gender="der"] {
+  color: var(--der);
+}
+.moin-gender[data-gender="die"],
+.moin-slots[data-gender="die"] {
+  color: var(--die);
+}
+.moin-gender[data-gender="das"],
+.moin-slots[data-gender="das"] {
+  color: var(--das);
+}
+.moin-gender[data-gender="plural"],
+.moin-slots[data-gender="plural"] {
+  color: var(--plural);
+}
+.moin-slots[data-gender] span {
+  color: inherit;
+}
+.moin-docks [data-gender="der"] button {
+  color: var(--der);
+  border-color: var(--der);
+}
+.moin-docks [data-gender="die"] button {
+  color: var(--die);
+  border-color: var(--die);
+}
+.moin-docks [data-gender="das"] button {
+  color: var(--das);
+  border-color: var(--das);
+}
+.moin-turn button[data-wrong],
+.moin-drill button[data-wrong] {
+  border-color: var(--bad);
+  background: rgb(255 123 134 / 0.12);
+  animation: moin-shake 0.3s;
+}
+@keyframes moin-shake {
+  25% {
+    transform: translateX(-3px);
+  }
+  75% {
+    transform: translateX(3px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .moin-turn button[data-wrong],
+  .moin-drill button[data-wrong] {
+    animation: none;
+  }
+}
+.moin-step-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.moin-step-nav button {
+  min-width: 32px;
+  min-height: 32px;
+  border: 1px solid var(--line-strong);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--text);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+.moin-step-nav button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+.moin-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  gap: 3px;
+  margin: 0 30px 18px;
+  padding: 0;
+  list-style: none;
+}
+.moin-steps button {
+  display: block;
+  width: 100%;
+  height: 24px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.moin-steps button::before {
+  content: "";
+  display: block;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--line-strong);
+}
+.moin-steps button[data-done]::before {
+  background: var(--accent-line);
+}
+.moin-steps button[aria-current="step"]::before {
+  height: 10px;
+  background: var(--accent);
+}
+.moin-steps button:disabled {
+  cursor: default;
+}
+.moin-steps button:disabled::before {
+  opacity: 0.45;
+}
 .moin-turn .moin-source {
   margin: 0;
 }
@@ -1486,12 +1609,18 @@
   padding: 18px 20px;
   margin: 24px 0 0;
   border-radius: 4px;
-  background: #ff9f6b12;
-  border: 1px solid #ff9f6b44;
+  background: rgb(255 123 134 / 0.08);
+  border: 1px solid rgb(255 123 134 / 0.45);
   font-size: 15px;
 }
 .moin-feedback > strong {
-  color: var(--question);
+  color: var(--bad);
+}
+.moin-feedback > strong::before {
+  content: "✗ ";
+}
+.moin-feedback.is-correct > strong::before {
+  content: "✓ ";
 }
 .moin-feedback p {
   margin: 8px 0 0;
@@ -1763,6 +1892,10 @@
     margin-left: 18px;
     margin-right: 18px;
     font-size: 27px;
+  }
+  .moin-steps {
+    margin-left: 18px;
+    margin-right: 18px;
   }
   .moin-language-tools {
     margin-left: 18px;

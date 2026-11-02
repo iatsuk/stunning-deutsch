@@ -364,7 +364,8 @@ export function mistake(c: Challenge, value: Answer, hint: string): string {
           : "empty",
       );
       if (verdicts.includes("empty")) return "Заполните все поля.";
-      if (verdicts.includes("wrong")) return hint;
+      if (verdicts.includes("wrong"))
+        return "Красные поля пока неверны. Если слово не вспоминается, проверьте ещё раз: под полем появится правильный ответ.";
       return verdicts.includes("case")
         ? "Почти: проверьте заглавные и строчные буквы."
         : "Почти: нужна буква с умлаутом или ß.";

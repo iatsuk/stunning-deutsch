@@ -3,7 +3,7 @@ import { readFileSync } from "node:fs";
 import test from "node:test";
 import { scramble, shuffle } from "../src/lib/shuffle.ts";
 import { beats } from "../src/story/data.ts";
-import { orderAccepted } from "../src/trainer/logic.ts";
+import { judge, orderAccepted } from "../src/trainer/logic.ts";
 
 const read = (path) => JSON.parse(readFileSync(new URL(`../src/generated/${path}`, import.meta.url), "utf8"));
 const catalog = read("catalog.json");
@@ -59,4 +59,12 @@ test("в каждой теме хватает фраз для поиска ош�
       assert.doesNotMatch(item.de + item.wrong, /[Ѐ-ӿ]/);
     }
   }
+});
+
+test("accents of loanwords are optional, umlauts and ß are not", () => {
+  assert.equal(judge("das Cafe", ["das Café"]), "right");
+  assert.equal(judge("das Café", ["das Café"]), "right");
+  assert.equal(judge("Kueche", ["Küche"]), "umlaut");
+  assert.equal(judge("Kuche", ["Küche"]), "wrong");
+  assert.equal(judge("gross", ["groß"]), "umlaut");
 });

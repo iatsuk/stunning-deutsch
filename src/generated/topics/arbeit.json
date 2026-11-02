@@ -65,7 +65,7 @@
      "who": "M",
      "de": "Dana, was bist du eigentlich von Beruf?",
      "ru": "Дана, а кто ты, собственно, по профессии?",
-     "audio": "audio/b319d8c8b692.m4a"
+     "audio": "audio/edd32c1f7127.m4a"
     },
     {
      "who": "A",
@@ -101,7 +101,7 @@
      "who": "M",
      "de": "Noch nicht. Aber gestern habe ich eine Anzeige gelesen: Ein Restaurant sucht einen Koch!",
      "ru": "Пока нет. Но вчера я прочитал объявление: ресторан ищет повара!",
-     "audio": "audio/764aaf6e45f6.m4a"
+     "audio": "audio/732c82278639.m4a"
     },
     {
      "who": "A",
@@ -113,7 +113,7 @@
      "who": "M",
      "de": "Ja, gestern Abend. Und morgen habe ich ein Vorstellungsgespräch!",
      "ru": "Да, вчера вечером. А завтра у меня собеседование!",
-     "audio": "audio/5d7c1879f0c4.m4a"
+     "audio": "audio/b565d0767375.m4a"
     },
     {
      "who": "A",
@@ -142,7 +142,7 @@
      "who": "S",
      "de": "Guten Tag, Herr Fernández! Bitte nehmen Sie Platz.",
      "ru": "Добрый день, господин Фернандес! Присаживайтесь, пожалуйста.",
-     "audio": "audio/3ee28591c478.m4a"
+     "audio": "audio/9e10515193b4.m4a"
     },
     {
      "who": "M",
@@ -409,7 +409,7 @@
      "gender": null,
      "plural": null,
      "note": "Ich arbeite als Koch.",
-     "audio": "audio/a213e1fbf192.m4a"
+     "audio": "audio/a4015a61fdaa.m4a"
     },
     {
      "de": "suchen",
@@ -664,7 +664,7 @@
    "sample": [
     {
      "de": "Mein Name ist Mateo Fernández.",
-     "audio": "audio/6e24bd3651b2.m4a"
+     "audio": "audio/1854e0418e9e.m4a"
     },
     {
      "de": "Ich bin 28 Jahre alt.",
@@ -676,11 +676,11 @@
     },
     {
      "de": "Ich spreche Spanisch, Englisch und ein bisschen Deutsch.",
-     "audio": "audio/1eab01208092.m4a"
+     "audio": "audio/c4e8bf4166a2.m4a"
     },
     {
      "de": "Ich bin Koch von Beruf.",
-     "audio": "audio/138bd0818594.m4a"
+     "audio": "audio/f46148976c4f.m4a"
     },
     {
      "de": "In Buenos Aires habe ich sechs Jahre in einem Restaurant gearbeitet.",
@@ -1002,7 +1002,7 @@
       "punct": ".",
       "plain": "Ich arbeite in Buenos Aires.",
       "ru": "Я работаю в Буэнос-Айресе.",
-      "audio": "audio/7f5492801ba2.m4a"
+      "audio": "audio/223ae18fc064.m4a"
      }
     ]
    }
@@ -1516,7 +1516,7 @@
       "punct": ".",
       "plain": "Ich war Koch in Buenos Aires.",
       "ru": "Я был поваром в Буэнос-Айресе.",
-      "audio": "audio/a5520b50424f.m4a"
+      "audio": "audio/ab07cb08c268.m4a"
      },
      {
       "slots": [
@@ -1613,7 +1613,7 @@
       "punct": ".",
       "plain": "Ich war Koch in Buenos Aires.",
       "ru": "Я был поваром в Буэнос-Айресе.",
-      "audio": "audio/a5520b50424f.m4a"
+      "audio": "audio/ab07cb08c268.m4a"
      },
      {
       "slots": [
@@ -2184,7 +2184,7 @@
    ],
    "answer": 1,
    "why": "Женщина — форма на *-in*; профессия — без артикля.",
-   "audio": "audio/0001cac86140.m4a"
+   "audio": "audio/4704dc141ab9.m4a"
   },
   {
    "id": "arbeit-2",
@@ -2222,7 +2222,7 @@
    ],
    "answer": 0,
    "why": "О профессии спрашивают с *sein*: *Was sind Sie von Beruf?*",
-   "audio": "audio/11ea747dff24.m4a"
+   "audio": "audio/66ea128b7245.m4a"
   },
   {
    "id": "arbeit-5",
@@ -2313,7 +2313,7 @@
     "war"
    ],
    "hint": "sein",
-   "audio": "audio/790f9f9c7719.m4a"
+   "audio": "audio/a03ec1b4d2a3.m4a"
   },
   {
    "id": "arbeit-13",
@@ -2337,7 +2337,7 @@
    ],
    "answer": 0,
    "why": "«Ты был?» — *Warst du …?* Со словом *gestern* нужно прошедшее время.",
-   "audio": "audio/7b2eb4f2348b.m4a"
+   "audio": "audio/cc2b37688cd1.m4a"
   },
   {
    "id": "arbeit-15",
@@ -2482,7 +2482,7 @@
     "quotes": [
      {
       "de": "Dana, was bist du eigentlich von Beruf?",
-      "audio": "audio/b319d8c8b692.m4a",
+      "audio": "audio/edd32c1f7127.m4a",
       "name": "Mateo"
      },
      {

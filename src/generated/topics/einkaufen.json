@@ -100,13 +100,13 @@
      "who": "V",
      "de": "Noch etwas?",
      "ru": "Что-нибудь ещё?",
-     "audio": "audio/721cb9e1de2a.m4a"
+     "audio": "audio/fb284822a7c3.m4a"
     },
     {
      "who": "A",
      "de": "Nein, danke, das ist alles.",
      "ru": "Нет, спасибо, это всё.",
-     "audio": "audio/3bae283477fb.m4a"
+     "audio": "audio/acb01c892104.m4a"
     },
     {
      "who": "V",
@@ -145,7 +145,7 @@
      "who": "V",
      "de": "Guten Tag! Suchen Sie etwas?",
      "ru": "Добрый день! Вы что-то ищете?",
-     "audio": "audio/44f4603365b6.m4a"
+     "audio": "audio/638c6b1da238.m4a"
     },
     {
      "who": "M",
@@ -175,7 +175,7 @@
      "who": "M",
      "de": "Hm, ich finde ihn zu groß. Haben Sie ihn auch in S?",
      "ru": "Хм, по-моему, он великоват. А в размере S он у вас есть?",
-     "audio": "audio/bb13d3b561ba.m4a"
+     "audio": "audio/16521415230a.m4a"
     },
     {
      "who": "V",
@@ -234,7 +234,7 @@
      "who": "M",
      "de": "Das T-Shirt ist schön. Ich nehme es.",
      "ru": "Футболка красивая. Я её беру.",
-     "audio": "audio/81f081ed440f.m4a"
+     "audio": "audio/0b902406f41b.m4a"
     },
     {
      "who": "D",
@@ -424,7 +424,7 @@
      "ru": "футболка",
      "gender": "n",
      "plural": "T-Shirts",
-     "audio": "audio/9067c391406c.m4a"
+     "audio": "audio/95e3b9cb2fd3.m4a"
     },
     {
      "de": "das Kleid",
@@ -513,7 +513,7 @@
      "gender": "m",
      "plural": "Euros",
      "note": "после числа без -s — zehn Euro",
-     "audio": "audio/87e71fa54946.m4a"
+     "audio": "audio/d2422a0996ff.m4a"
     },
     {
      "de": "billig",
@@ -534,7 +534,7 @@
      "ru": "большой",
      "gender": null,
      "plural": null,
-     "audio": "audio/552b6876d228.m4a"
+     "audio": "audio/6829eaf41f82.m4a"
     },
     {
      "de": "klein",
@@ -555,7 +555,7 @@
      "ru": "короткий",
      "gender": null,
      "plural": null,
-     "audio": "audio/cbe0a66330ed.m4a"
+     "audio": "audio/f7606a87105f.m4a"
     },
     {
      "de": "schön",
@@ -737,7 +737,7 @@
    "text": "Liebe Kundinnen und Kunden! Heute im Angebot: Tomaten aus Italien, das Kilo nur zwei Euro zwanzig. Und Orangen aus Spanien: Das Kilo kostet heute nur zwei Euro neunzig. Das Angebot gibt es nur heute. Vielen Dank für Ihren Einkauf!",
    "statement": "Ein Kilo Orangen kostet heute 2,20 €.",
    "answer": false,
-   "audio": "audio/2feba2483822.m4a",
+   "audio": "audio/fb4ec696bfd7.m4a",
    "sample": []
   },
   "anzeigen": {
@@ -772,7 +772,7 @@
     },
     {
      "de": "Haben Sie eine Tüte für mich?",
-     "audio": "audio/340df5caa624.m4a"
+     "audio": "audio/3de3a7457806.m4a"
     },
     {
      "de": "Ja, gern. Sie kostet zwanzig Cent.",
@@ -1085,7 +1085,7 @@
       "punct": ".",
       "plain": "Ich finde den Pullover zu groß.",
       "ru": "По-моему, свитер великоват.",
-      "audio": "audio/89f01d07b521.m4a"
+      "audio": "audio/358f18549c66.m4a"
      }
     ]
    }
@@ -1137,7 +1137,7 @@
       "punct": ".",
       "plain": "Ich finde ihn zu groß.",
       "ru": "По-моему, он великоват.",
-      "audio": "audio/fabee8df8062.m4a"
+      "audio": "audio/3de5abb1eee8.m4a"
      }
     ]
    }
@@ -1189,7 +1189,7 @@
       "punct": ".",
       "plain": "Ich finde ihn zu groß.",
       "ru": "По-моему, он великоват.",
-      "audio": "audio/fabee8df8062.m4a"
+      "audio": "audio/3de5abb1eee8.m4a"
      }
     ],
     "focus": [
@@ -1469,7 +1469,7 @@
       "punct": ".",
       "plain": "Der Pullover ist zu groß.",
       "ru": "Свитер велик.",
-      "audio": "audio/ba2532d4f95e.m4a"
+      "audio": "audio/88ad1a6cf284.m4a"
      },
      {
       "slots": [
@@ -1504,7 +1504,7 @@
       "punct": ".",
       "plain": "Die Jacke ist zu groß.",
       "ru": "Куртка велика.",
-      "audio": "audio/396b690a0a3c.m4a"
+      "audio": "audio/92135d80adc1.m4a"
      },
      {
       "slots": [
@@ -1539,7 +1539,7 @@
       "punct": ".",
       "plain": "Das Hemd ist zu groß.",
       "ru": "Рубашка велика.",
-      "audio": "audio/2ff0fbfd3105.m4a"
+      "audio": "audio/f888eb50f6b1.m4a"
      },
      {
       "slots": [
@@ -1574,7 +1574,7 @@
       "punct": ".",
       "plain": "Die Schuhe sind zu groß.",
       "ru": "Ботинки велики.",
-      "audio": "audio/66085f8ed4aa.m4a"
+      "audio": "audio/852785ccb4dd.m4a"
      }
     ]
    }
@@ -1750,7 +1750,7 @@
       "punct": ".",
       "plain": "Ich finde es zu kurz.",
       "ru": "По-моему, оно коротковато.",
-      "audio": "audio/b310343ab09f.m4a"
+      "audio": "audio/8d3ac8d675d8.m4a"
      }
     ]
    }
@@ -2269,7 +2269,7 @@
     "es"
    ],
    "why": "*das T-Shirt* — средний род, в винительном — *es*.",
-   "audio": "audio/ad0a896a0012.m4a"
+   "audio": "audio/33d83f47d847.m4a"
   },
   {
    "id": "einkaufen-18",
@@ -2378,7 +2378,7 @@
       "who": "D",
       "de": "Ja, zwei Kilo Äpfel und ein Pfund Tomaten. Mateo nimmt den Pullover in S.",
       "ru": "Да, два килограмма яблок и полкило помидоров. Матео берёт свитер в размере S.",
-      "audio": "audio/d941530b477c.m4a"
+      "audio": "audio/f6664d9ea3c7.m4a"
      }
     ],
     "question": "Какой вариант согласуется с подтверждениями?",
@@ -2547,7 +2547,7 @@
      },
      {
       "de": "Hm, ich finde ihn zu groß. Haben Sie ihn auch in S?",
-      "audio": "audio/bb13d3b561ba.m4a",
+      "audio": "audio/16521415230a.m4a",
       "name": "Mateo"
      },
      {
@@ -2597,7 +2597,7 @@
      },
      {
       "de": "Das T-Shirt ist schön. Ich nehme es.",
-      "audio": "audio/81f081ed440f.m4a",
+      "audio": "audio/0b902406f41b.m4a",
       "name": "Mateo"
      },
      {

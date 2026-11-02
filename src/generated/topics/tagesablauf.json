@@ -64,7 +64,7 @@
      "who": "A",
      "de": "Moin, Mateo! Wie spät ist es?",
      "ru": "Привет, Матео! Который час?",
-     "audio": "audio/5bd1825f917a.m4a"
+     "audio": "audio/8f6a9d7fef88.m4a"
     },
     {
      "who": "M",
@@ -82,13 +82,13 @@
      "who": "M",
      "de": "Entschuldigung! Ich stehe immer um halb neun auf.",
      "ru": "Извини! Я всегда встаю в половине девятого.",
-     "audio": "audio/60c19ea3fa3b.m4a"
+     "audio": "audio/7cc554bf3100.m4a"
     },
     {
      "who": "A",
      "de": "Um halb neun? Ich stehe schon um sechs auf.",
      "ru": "В половине девятого? А я встаю уже в шесть.",
-     "audio": "audio/5f8197728a92.m4a"
+     "audio": "audio/90f3a7c83f1f.m4a"
     },
     {
      "who": "M",
@@ -100,7 +100,7 @@
      "who": "A",
      "de": "Von halb sieben bis sieben jogge ich, dann frühstücke ich.",
      "ru": "С половины седьмого до семи бегаю, потом завтракаю.",
-     "audio": "audio/5ce5faf3d7a7.m4a"
+     "audio": "audio/df10f9e67eb5.m4a"
     },
     {
      "who": "M",
@@ -243,7 +243,7 @@
      "ru": "Который час?",
      "gender": null,
      "plural": null,
-     "audio": "audio/e0e5009174e0.m4a"
+     "audio": "audio/a423531fdf66.m4a"
     },
     {
      "de": "Wie viel Uhr ist es?",
@@ -251,7 +251,7 @@
      "gender": null,
      "plural": null,
      "note": "то же самое",
-     "audio": "audio/7e099b648152.m4a"
+     "audio": "audio/56a605529e12.m4a"
     },
     {
      "de": "die Uhr",
@@ -298,7 +298,7 @@
      "gender": null,
      "plural": null,
      "note": "Viertel nach neun = 9:15",
-     "audio": "audio/91ae66189ba6.m4a"
+     "audio": "audio/9518af08b34a.m4a"
     },
     {
      "de": "vor",
@@ -924,7 +924,7 @@
      "informal": "sechs",
      "audio": [
       "audio/a8fd8b5187a6.m4a",
-      "audio/0d8b723fa4ba.m4a"
+      "audio/58e6dc7272dd.m4a"
      ]
     }
    }
@@ -999,7 +999,7 @@
      "informal": "halb elf",
      "audio": [
       "audio/bd7b605ec246.m4a",
-      "audio/1977d5c4dc86.m4a"
+      "audio/8f8c37eab03a.m4a"
      ]
     }
    }
@@ -1024,7 +1024,7 @@
      "informal": "halb elf",
      "audio": [
       "audio/bd7b605ec246.m4a",
-      "audio/1977d5c4dc86.m4a"
+      "audio/8f8c37eab03a.m4a"
      ]
     },
     "table": "zeitangaben"
@@ -1050,7 +1050,7 @@
      "informal": "halb elf",
      "audio": [
       "audio/bd7b605ec246.m4a",
-      "audio/1977d5c4dc86.m4a"
+      "audio/8f8c37eab03a.m4a"
      ]
     },
     "table": "zeitangaben",
@@ -1088,7 +1088,7 @@
       "punct": ".",
       "plain": "Am Vormittag habe ich Kurs.",
       "ru": "До обеда у меня курс.",
-      "audio": "audio/553e6287ae83.m4a"
+      "audio": "audio/4495cb5a22bd.m4a"
      },
      {
       "slots": [
@@ -1115,7 +1115,7 @@
       "punct": ".",
       "plain": "Dann frühstücke ich.",
       "ru": "Потом я завтракаю.",
-      "audio": "audio/12d72ade5110.m4a"
+      "audio": "audio/9887836a33f9.m4a"
      }
     ]
    }
@@ -1140,7 +1140,7 @@
      "informal": "halb elf",
      "audio": [
       "audio/bd7b605ec246.m4a",
-      "audio/1977d5c4dc86.m4a"
+      "audio/8f8c37eab03a.m4a"
      ]
     },
     "table": "trennbar",
@@ -1178,7 +1178,7 @@
       "punct": ".",
       "plain": "Am Vormittag habe ich Kurs.",
       "ru": "До обеда у меня курс.",
-      "audio": "audio/553e6287ae83.m4a"
+      "audio": "audio/4495cb5a22bd.m4a"
      },
      {
       "slots": [
@@ -1205,7 +1205,7 @@
       "punct": ".",
       "plain": "Dann frühstücke ich.",
       "ru": "Потом я завтракаю.",
-      "audio": "audio/12d72ade5110.m4a"
+      "audio": "audio/9887836a33f9.m4a"
      }
     ]
    }
@@ -1230,7 +1230,7 @@
      "informal": "halb elf",
      "audio": [
       "audio/bd7b605ec246.m4a",
-      "audio/1977d5c4dc86.m4a"
+      "audio/8f8c37eab03a.m4a"
      ]
     },
     "table": "trennbar",
@@ -1273,7 +1273,7 @@
       "punct": ".",
       "plain": "Ich stehe um sieben Uhr auf.",
       "ru": "Я встаю в семь часов.",
-      "audio": "audio/a39898a574cb.m4a"
+      "audio": "audio/1ac7c5589876.m4a"
      }
     ]
    }
@@ -1298,7 +1298,7 @@
      "informal": "halb elf",
      "audio": [
       "audio/bd7b605ec246.m4a",
-      "audio/1977d5c4dc86.m4a"
+      "audio/8f8c37eab03a.m4a"
      ]
     },
     "table": "trennbar",
@@ -1341,7 +1341,7 @@
       "punct": ".",
       "plain": "Um sieben Uhr stehe ich auf.",
       "ru": "В семь часов я встаю.",
-      "audio": "audio/45911bfd4452.m4a"
+      "audio": "audio/8a3e239c6c7b.m4a"
      }
     ]
    }
@@ -1366,7 +1366,7 @@
      "informal": "halb elf",
      "audio": [
       "audio/bd7b605ec246.m4a",
-      "audio/1977d5c4dc86.m4a"
+      "audio/8f8c37eab03a.m4a"
      ]
     },
     "table": "trennbar",
@@ -1401,7 +1401,7 @@
       "punct": "?",
       "plain": "Wann stehst du auf?",
       "ru": "Когда ты встаёшь?",
-      "audio": "audio/9c533cb750b6.m4a"
+      "audio": "audio/351f4169d7ba.m4a"
      },
      {
       "slots": [
@@ -1440,7 +1440,7 @@
       "punct": "?",
       "plain": "Stehst du morgen um sieben auf?",
       "ru": "Ты завтра встанешь в семь?",
-      "audio": "audio/426d77f5d137.m4a"
+      "audio": "audio/ec91dfbee03c.m4a"
      }
     ],
     "fresh": [
@@ -1504,7 +1504,7 @@
       "punct": "?",
       "plain": "Wann stehst du auf?",
       "ru": "Когда ты встаёшь?",
-      "audio": "audio/9c533cb750b6.m4a"
+      "audio": "audio/351f4169d7ba.m4a"
      },
      {
       "slots": [
@@ -1543,7 +1543,7 @@
       "punct": "?",
       "plain": "Stehst du morgen um sieben auf?",
       "ru": "Ты завтра встанешь в семь?",
-      "audio": "audio/426d77f5d137.m4a"
+      "audio": "audio/ec91dfbee03c.m4a"
      }
     ]
    },
@@ -1594,7 +1594,7 @@
       "punct": "?",
       "plain": "Wann stehst du auf?",
       "ru": "Когда ты встаёшь?",
-      "audio": "audio/9c533cb750b6.m4a"
+      "audio": "audio/351f4169d7ba.m4a"
      },
      {
       "slots": [
@@ -1633,7 +1633,7 @@
       "punct": "?",
       "plain": "Stehst du morgen um sieben auf?",
       "ru": "Ты завтра встанешь в семь?",
-      "audio": "audio/426d77f5d137.m4a"
+      "audio": "audio/ec91dfbee03c.m4a"
      }
     ]
    }
@@ -2041,7 +2041,7 @@
    ],
    "answer": 0,
    "why": "*Wie spät ist es?* — «который час?». *Wann?* — «когда?»: *Wann fängt der Kurs an?*",
-   "audio": "audio/e0e5009174e0.m4a"
+   "audio": "audio/a423531fdf66.m4a"
   },
   {
    "id": "tagesablauf-2",
@@ -2103,7 +2103,7 @@
    ],
    "answer": 1,
    "why": "Дни недели — с *am*: *am Montag*.",
-   "audio": "audio/69c43b4c6273.m4a"
+   "audio": "audio/6da8e83cb332.m4a"
   },
   {
    "id": "tagesablauf-7",
@@ -2114,7 +2114,7 @@
     "bis"
    ],
    "ru": "Я работаю с девяти до пяти.",
-   "audio": "audio/fa129990f36b.m4a"
+   "audio": "audio/40e0ec907e2e.m4a"
   },
   {
    "id": "tagesablauf-8",
@@ -2127,7 +2127,7 @@
    "hint": "aufstehen",
    "ru": "Я встаю в шесть часов.",
    "why": "Корень *stehe* — на втором месте, приставка *auf* — в конце.",
-   "audio": "audio/2ba4dbda89b8.m4a"
+   "audio": "audio/02b1321b070f.m4a"
   },
   {
    "id": "tagesablauf-9",
@@ -2210,14 +2210,14 @@
     "Ich räume am Samstag auf."
    ],
    "why": "*Am Samstag* на первом месте — *räume* второй, *auf* в конце.",
-   "audio": "audio/230895b986dd.m4a"
+   "audio": "audio/c88711f0f853.m4a"
   },
   {
    "id": "tagesablauf-16",
    "type": "order",
    "ru": "Когда ты встаёшь?",
    "de": "Wann stehst du auf?",
-   "audio": "audio/9c533cb750b6.m4a"
+   "audio": "audio/351f4169d7ba.m4a"
   },
   {
    "id": "tagesablauf-17",
@@ -2374,7 +2374,7 @@
     "quotes": [
      {
       "de": "Entschuldigung! Ich stehe immer um halb neun auf.",
-      "audio": "audio/60c19ea3fa3b.m4a",
+      "audio": "audio/7cc554bf3100.m4a",
       "name": "Mateo"
      },
      {
@@ -2403,12 +2403,12 @@
     "quotes": [
      {
       "de": "Um halb neun? Ich stehe schon um sechs auf.",
-      "audio": "audio/5f8197728a92.m4a",
+      "audio": "audio/90f3a7c83f1f.m4a",
       "name": "Dana"
      },
      {
       "de": "Von halb sieben bis sieben jogge ich, dann frühstücke ich.",
-      "audio": "audio/5ce5faf3d7a7.m4a",
+      "audio": "audio/df10f9e67eb5.m4a",
       "name": "Dana"
      }
     ],

@@ -5,6 +5,7 @@ import {
   useRef,
   useState,
   type CSSProperties,
+  type ReactNode,
   type RefObject,
 } from "react";
 import { play, stopAudio } from "../hooks";
@@ -25,7 +26,7 @@ import {
   placeKey,
   walk,
 } from "./logic";
-import { lockCard } from "./memory";
+import { lockCard, PLURALS } from "./memory";
 import type {
   Answer,
   ChatTurn,
@@ -48,6 +49,8 @@ type Game<K extends Challenge["kind"]> = {
   checked: boolean;
   change: (value: Answer) => void;
   win: () => void;
+  /** Сколько раз нажата общая кнопка проверки шага. */
+  attempts?: number;
   /** Ошибка на шаге; слово передают игры, которые знают, в каком слове ошиблись. */
   miss: (word?: string) => void;
 };
@@ -56,6 +59,61 @@ const asList = (value: Answer) => (Array.isArray(value) ? value : []);
 const asRecord = (value: Answer) =>
   typeof value === "object" && !Array.isArray(value) ? value : {};
 const lang = (text: string) => (/[а-яё]/i.test(text) ? undefined : "de");
+
+type Tone = "good" | "bad" | undefined;
+/** Итог действия: зелёный с галочкой — верно, красный с крестиком — ошибка, серый — справка. */
+function Note({ tone, children }: { tone?: Tone; children: ReactNode }) {
+  return (
+    <p className="moin-count" data-tone={tone} aria-live="polite">
+      {tone === "good" ? "✓ " : tone === "bad" ? "✗ " : ""}
+      {children}
+    </p>
+  );
+}
+
+const ARTICLE = /^(der|die|das) /;
+/** Род существительного цветом, как в уроках: der синий, die красный, das зелёный. */
+const genderOf = (word: string) =>
+  PLURALS.includes(word) ? "plural" : ARTICLE.exec(word)?.[1];
+function Gendered({ text }: { text: string }) {
+  const gender = genderOf(text);
+  return gender ? (
+    <span className="moin-gender" data-gender={gender}>
+      {text}
+    </span>
+  ) : (
+    <>{text}</>
+  );
+}
+
+/** Образец и своя запись одновременно: так слышно, где расходятся темп и ударение. */
+function Together({ model, own }: { model?: string; own?: string }) {
+  const players = useRef<HTMLAudioElement[]>([]);
+  const [on, setOn] = useState(false);
+  useEffect(() => () => players.current.forEach((p) => p.pause()), []);
+  if (!model || !own) return null;
+  function toggle() {
+    players.current.forEach((p) => p.pause());
+    if (on) return setOn(false);
+    stopAudio();
+    const list = [new Audio(model), new Audio(own)];
+    players.current = list;
+    let left = list.length;
+    for (const p of list) {
+      p.onended = () => {
+        left -= 1;
+        if (!left) setOn(false);
+      };
+      p.play().catch(() => setOn(false));
+    }
+    setOn(true);
+  }
+  return (
+    <button type="button" aria-pressed={on} onClick={toggle}>
+      {on ? "■ Стоп" : "▶ Вместе с образцом"}
+    </button>
+  );
+}
 
 export function Pairs({
   c,
@@ -838,32 +896,46 @@ const textInput = {
   spellCheck: false,
 } as const;
 
-export function Write({ c, value, disabled, checked, change }: Game<"write">) {
+/** После второй неудачной проверки открываем ответ: незнакомое слово иначе не вспомнить. */
+export function Write({
+  c,
+  value,
+  disabled,
+  checked,
+  change,
+  attempts = 0,
+  reveal = true,
+}: Game<"write"> & { reveal?: boolean }) {
   const record = asRecord(value);
   const field = useRef<HTMLInputElement | null>(null);
   return (
     <div className="moin-write">
       <div className="kicker">{c.title}</div>
-      {c.fields.map((f) => (
-        <label key={f.id}>
-          <span lang="de">{f.label}</span>
-          <input
-            {...textInput}
-            data-field={f.id}
-            disabled={disabled}
-            value={String(record[f.id] ?? "")}
-            data-wrong={
-              (checked &&
-                judge(String(record[f.id] ?? ""), f.answers) !== "right") ||
-              undefined
-            }
-            onFocus={(event) => (field.current = event.currentTarget)}
-            onChange={(event) =>
-              change({ ...record, [f.id]: event.target.value })
-            }
-          />
-        </label>
-      ))}
+      {c.fields.map((f) => {
+        const wrong =
+          checked && judge(String(record[f.id] ?? ""), f.answers) !== "right";
+        return (
+          <label key={f.id}>
+            <span lang="de">{f.label}</span>
+            <input
+              {...textInput}
+              data-field={f.id}
+              disabled={disabled}
+              value={String(record[f.id] ?? "")}
+              data-wrong={wrong || undefined}
+              onFocus={(event) => (field.current = event.currentTarget)}
+              onChange={(event) =>
+                change({ ...record, [f.id]: event.target.value })
+              }
+            />
+            {wrong && reveal && attempts > 1 && (
+              <small data-tone="bad">
+                Правильно: <span lang="de">{f.answers[0]}</span>
+              </small>
+            )}
+          </label>
+        );
+      })}
       {!disabled && (
         <UmlautKeys
           field={field}
@@ -925,8 +997,8 @@ function ReviewItem({
         </button>
       )}
       {verdict && (
-        <p role="status">
-          {done && `Верно: ${phrase.ru}`}
+        <p role="status" data-tone={done ? "good" : "bad"}>
+          {done && `✓ Верно: ${phrase.ru}`}
           {verdict === "case" && "Почти: проверьте заглавные буквы."}
           {verdict === "umlaut" && "Почти: нужна буква с умлаутом или ß."}
           {verdict === "wrong" && (
@@ -968,7 +1040,7 @@ export function ChapterReview({
 function Word({ word }: { word: string }) {
   return (
     <span className="moin-word-line" lang="de">
-      {word} <PlayButton src={wordInfo(word)?.audio} />
+      <Gendered text={word} /> <PlayButton src={wordInfo(word)?.audio} />
     </span>
   );
 }
@@ -1023,17 +1095,17 @@ export function Bingo({
               data-wrong={miss === word || undefined}
               onClick={() => tap(word)}
             >
-              {word}
+              <Gendered text={word} />
               {done && <small>{wordInfo(word)?.ru}</small>}
             </button>
           );
         })}
       </div>
-      <p className="moin-count" aria-live="polite">
+      <Note tone={miss ? "bad" : undefined}>
         {miss
           ? `Это другое слово: ${wordInfo(miss)?.ru}`
           : `Закрыто: ${found.length} из ${c.words.length}`}
-      </p>
+      </Note>
     </>
   );
 }
@@ -1084,20 +1156,24 @@ export function Scene({
               onClick={() => tap(word)}
             >
               <span aria-hidden="true">{icon}</span>
-              {done && <small lang="de">{word}</small>}
+              {done && (
+                <small lang="de">
+                  <Gendered text={word} />
+                </small>
+              )}
             </button>
           );
         })}
       </div>
-      <p className="moin-count" aria-live="polite">
+      <Note tone={miss ? "bad" : undefined}>
         {miss ? (
           <>
-            Это: <span lang="de">{miss}</span>
+            Это <Gendered text={miss} />, а нужно другое.
           </>
         ) : (
           `Найдено: ${found.length} из ${c.items.length}`
         )}
-      </p>
+      </Note>
     </>
   );
 }
@@ -1128,16 +1204,19 @@ function OddRound({
               word === round.odd ? setRight(true) : setMissed([...missed, word])
             }
           >
-            {word}
+            <Gendered text={word} />
             {(right || missed.includes(word)) && (
               <small>{wordInfo(word)?.ru}</small>
             )}
           </button>
         ))}
       </div>
+      {!right && missed.length > 0 && (
+        <Note tone="bad">Это слово из группы. Ищите лишнее.</Note>
+      )}
       {right && (
         <div className="moin-odd-result">
-          <p>{round.why}</p>
+          <p data-tone="good">✓ {round.why}</p>
           <button type="button" className="primary" onClick={onDone}>
             Дальше
           </button>
@@ -1210,7 +1289,7 @@ function LetterWord({
         {wordInfo(word)?.ru}{" "}
         <PlayButton src={wordInfo(word)?.audio} label="Послушать слово" />
       </p>
-      <div className="moin-slots" lang="de">
+      <div className="moin-slots" lang="de" data-gender={genderOf(word)}>
         {article && <span>{article}</span>}
         {[...target].map((letter, i) => (
           <b key={i}>{i < typed ? letter : "_"}</b>
@@ -1234,6 +1313,9 @@ function LetterWord({
             </button>
           ))}
         </div>
+      )}
+      {miss !== null && !finished && (
+        <Note tone="bad">Не эта буква. Нужна следующая по порядку.</Note>
       )}
     </div>
   );
@@ -1356,6 +1438,7 @@ function SpeakLine({
               <PlayButton src={rec.url} label="Послушать себя" /> Моя запись
             </span>
           )}
+          <Together model={wordInfo(line)?.audio} own={rec.url} />
           <button type="button" className="primary" onClick={onDone}>
             Повторил(а) вслух
           </button>
@@ -1420,17 +1503,20 @@ export function Docks({
   const done = asList(value);
   const { current, postpone } = useQueue(c.words, seed, done);
   const [note, setNote] = useState("");
+  const [tone, setTone] = useState<Tone>();
   function tap(article: string) {
     if (!current) return;
     const info = wordInfo(current);
     play(info?.audio);
     if (!current.startsWith(`${article} `)) {
       setNote(`Нет, ${current} (${info?.ru}). Слово вернётся в конце.`);
+      setTone("bad");
       miss(current);
       return postpone(current);
     }
     const next = [...done, current];
     setNote(`${current} — ${info?.ru}`);
+    setTone("good");
     change(next);
     if (next.length === c.words.length) win();
   }
@@ -1443,7 +1529,7 @@ export function Docks({
       )}
       <div className="moin-docks">
         {ARTICLES.map((article) => (
-          <div key={article}>
+          <div key={article} data-gender={article}>
             <button
               type="button"
               lang="de"
@@ -1456,15 +1542,17 @@ export function Docks({
               {done
                 .filter((word) => word.startsWith(`${article} `))
                 .map((word) => (
-                  <li key={word}>{noun(word)}</li>
+                  <li key={word} className="moin-gender" data-gender={article}>
+                    {noun(word)}
+                  </li>
                 ))}
             </ul>
           </div>
         ))}
       </div>
-      <p className="moin-count" aria-live="polite">
+      <Note tone={note ? tone : undefined}>
         {note || `У причала: ${done.length} из ${c.words.length}`}
-      </p>
+      </Note>
     </>
   );
 }
@@ -1515,7 +1603,7 @@ function GullRound({
             lang="de"
             onClick={() => onPick(option)}
           >
-            {option}
+            <Gendered text={option} />
           </button>
         ))}
       </div>
@@ -1536,6 +1624,7 @@ export function Gull({
   const { current, postpone } = useQueue(c.words, seed, done);
   const [lost, setLost] = useState(0);
   const [note, setNote] = useState("");
+  const [tone, setTone] = useState<Tone>();
   if (!current || disabled)
     return (
       <p className="moin-count" lang="de">
@@ -1544,6 +1633,7 @@ export function Gull({
     );
   const lose = (message: string) => {
     setNote(message);
+    setTone("bad");
     setLost((n) => n + 1);
     miss(current);
     postpone(current);
@@ -1572,13 +1662,12 @@ export function Gull({
           const next = [...done, word];
           play(wordInfo(word)?.audio);
           setNote(`${word} — ${wordInfo(word)?.ru}`);
+          setTone("good");
           change(next);
           if (next.length === c.words.length) win();
         }}
       />
-      <p className="moin-count" aria-live="polite">
-        {note}
-      </p>
+      <Note tone={tone}>{note}</Note>
     </>
   );
 }
@@ -1646,13 +1735,13 @@ function LockBox({
           </div>
         ))}
       </div>
-      <p className="moin-count" aria-live="polite">
+      <Note tone={opened ? "good" : right === null ? undefined : "bad"}>
         {opened
           ? "Замок открыт."
           : right === null
             ? ""
             : `Щёлкнуло дисков: ${right} из ${reels.length}`}
-      </p>
+      </Note>
       {opened && (
         <p className="moin-word-line" lang="de">
           {lockKey(round)}{" "}
@@ -1766,7 +1855,7 @@ export function Letter({
                 }}
               />
               {wrong && (
-                <small role="status">
+                <small role="status" data-tone="bad">
                   {verdict(f) === "case"
                     ? "Почти: проверьте заглавные буквы."
                     : verdict(f) === "umlaut"
@@ -1846,6 +1935,7 @@ function OralTurn({ round, onDone }: { round: OralRound; onDone: () => void }) {
             )}
           </div>
           <div className="moin-speak-tools">
+            <Together model={model} own={rec.url} />
             <button type="button" className="primary" onClick={onDone}>
               Получилось
             </button>

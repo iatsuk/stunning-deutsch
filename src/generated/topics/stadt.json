@@ -65,13 +65,13 @@
      "who": "A",
      "de": "Entschuldigung! Wie komme ich zum Hauptbahnhof?",
      "ru": "Извините! Как мне пройти к главному вокзалу?",
-     "audio": "audio/90ccbf8ef1aa.m4a"
+     "audio": "audio/4fe36ecefae4.m4a"
     },
     {
      "who": "P",
      "de": "Zum Hauptbahnhof? Das ist nicht weit. Gehen Sie hier geradeaus.",
      "ru": "К главному вокзалу? Это недалеко. Идите здесь прямо.",
-     "audio": "audio/cce37c8a7813.m4a"
+     "audio": "audio/023899eeef7a.m4a"
     },
     {
      "who": "A",
@@ -83,7 +83,7 @@
      "who": "P",
      "de": "Dann gehen Sie an der Ampel links. Da sehen Sie schon den Bahnhof.",
      "ru": "Потом у светофора налево. Там вы уже увидите вокзал.",
-     "audio": "audio/443429b6b90e.m4a"
+     "audio": "audio/8e5fbaddfdfd.m4a"
     },
     {
      "who": "A",
@@ -154,7 +154,7 @@
      "who": "M",
      "de": "Morgen sind die Gäste bei mir in Holtenau. Kommst du auch?",
      "ru": "Завтра гости будут у меня в Holtenau. Ты тоже придёшь?",
-     "audio": "audio/066a5ba9f703.m4a"
+     "audio": "audio/cfb7bcb4133d.m4a"
     },
     {
      "who": "A",
@@ -200,7 +200,7 @@
      "who": "L",
      "de": "Hallo, Hauke! Wo treffen wir uns morgen? Am Bahnhof?",
      "ru": "Привет, Хауке! Где мы встретимся завтра? У вокзала?",
-     "audio": "audio/b2e974b7272e.m4a"
+     "audio": "audio/1caed915be4a.m4a"
     },
     {
      "who": "T",
@@ -378,7 +378,7 @@
      "ru": "машина",
      "gender": "n",
      "plural": "Autos",
-     "audio": "audio/2f86e8eda1a6.m4a"
+     "audio": "audio/fa20cead723e.m4a"
     },
     {
      "de": "das Fahrrad",
@@ -393,7 +393,7 @@
      "ru": "такси",
      "gender": "n",
      "plural": "Taxis",
-     "audio": "audio/0045325b657f.m4a"
+     "audio": "audio/049e53d62c18.m4a"
     },
     {
      "de": "zu Fuß",
@@ -401,7 +401,7 @@
      "gender": null,
      "plural": null,
      "note": "без mit и без артикля",
-     "audio": "audio/f861a1c52922.m4a"
+     "audio": "audio/c90008a34cbc.m4a"
     },
     {
      "de": "die Fahrkarte",
@@ -460,21 +460,21 @@
      "ru": "прямо",
      "gender": null,
      "plural": null,
-     "audio": "audio/0f4798b742fd.m4a"
+     "audio": "audio/fb34d5f00c54.m4a"
     },
     {
      "de": "links",
      "ru": "налево / слева",
      "gender": null,
      "plural": null,
-     "audio": "audio/47f64b062075.m4a"
+     "audio": "audio/bafaf30d3fb9.m4a"
     },
     {
      "de": "rechts",
      "ru": "направо / справа",
      "gender": null,
      "plural": null,
-     "audio": "audio/2129b37cdf49.m4a"
+     "audio": "audio/e7cdbd0c1640.m4a"
     },
     {
      "de": "die Ampel",
@@ -706,7 +706,7 @@
     {
      "who": "Elif",
      "de": "Hallo, Hauke! Wo treffen wir uns morgen? Am Bahnhof?",
-     "audio": "audio/b2e974b7272e.m4a"
+     "audio": "audio/1caed915be4a.m4a"
     },
     {
      "who": "Hauke",
@@ -1035,7 +1035,7 @@
       "punct": ".",
       "plain": "Sie gehen geradeaus.",
       "ru": "Вы идёте прямо.",
-      "audio": "audio/617e1c8d892c.m4a"
+      "audio": "audio/61764f9e0485.m4a"
      }
     ]
    }
@@ -1078,7 +1078,7 @@
       "punct": "!",
       "plain": "Gehen Sie geradeaus!",
       "ru": "Идите прямо!",
-      "audio": "audio/945ef4dacc04.m4a"
+      "audio": "audio/158a3b81daf9.m4a"
      }
     ]
    }
@@ -1121,7 +1121,7 @@
       "punct": "!",
       "plain": "Gehen Sie geradeaus!",
       "ru": "Идите прямо!",
-      "audio": "audio/945ef4dacc04.m4a"
+      "audio": "audio/158a3b81daf9.m4a"
      },
      {
       "slots": [
@@ -1156,7 +1156,7 @@
       "punct": "!",
       "plain": "Steigen Sie bitte hier aus!",
       "ru": "Выходите, пожалуйста, здесь!",
-      "audio": "audio/66b69340c4bd.m4a"
+      "audio": "audio/848f718c7d83.m4a"
      }
     ],
     "fresh": [
@@ -1202,7 +1202,7 @@
       "punct": "!",
       "plain": "Gehen Sie geradeaus!",
       "ru": "Идите прямо!",
-      "audio": "audio/945ef4dacc04.m4a"
+      "audio": "audio/158a3b81daf9.m4a"
      },
      {
       "slots": [
@@ -1237,7 +1237,7 @@
       "punct": "!",
       "plain": "Steigen Sie bitte hier aus!",
       "ru": "Выходите, пожалуйста, здесь!",
-      "audio": "audio/66b69340c4bd.m4a"
+      "audio": "audio/848f718c7d83.m4a"
      }
     ]
    }
@@ -1291,7 +1291,7 @@
       "punct": ".",
       "plain": "Sie steigen in Holtenau aus.",
       "ru": "Вы выходите в Хольтенау.",
-      "audio": "audio/834cb27bdd7f.m4a"
+      "audio": "audio/7872f76b7757.m4a"
      }
     ]
    },
@@ -1334,7 +1334,7 @@
       "punct": "!",
       "plain": "Steigen Sie in Holtenau aus!",
       "ru": "Выходите в Хольтенау!",
-      "audio": "audio/10925346aeff.m4a"
+      "audio": "audio/17b789c114cd.m4a"
      }
     ]
    }
@@ -1935,7 +1935,7 @@
    ],
    "answer": 0,
    "why": "*der Bus* → *mit dem Bus*.",
-   "audio": "audio/54c44045fbba.m4a"
+   "audio": "audio/74bca59076b2.m4a"
   },
   {
    "id": "stadt-2",
@@ -1959,7 +1959,7 @@
    ],
    "hint": "zu + dem",
    "why": "*der Bahnhof* → *zu dem* → *zum*.",
-   "audio": "audio/92214e201e47.m4a"
+   "audio": "audio/a714413d1ba8.m4a"
   },
   {
    "id": "stadt-4",
@@ -2065,7 +2065,7 @@
    ],
    "hint": "sein",
    "why": "*sein* — единственный неправильный: *Seien Sie …!*",
-   "audio": "audio/aef9aeeaa276.m4a"
+   "audio": "audio/83c6f1aef6e1.m4a"
   },
   {
    "id": "stadt-13",
@@ -2083,7 +2083,7 @@
    ],
    "de": "Steigen Sie bitte hier aus!",
    "why": "Глагол первым, приставка *aus* — в конце.",
-   "audio": "audio/66b69340c4bd.m4a"
+   "audio": "audio/848f718c7d83.m4a"
   },
   {
    "id": "stadt-15",
@@ -2366,7 +2366,7 @@
     "quotes": [
      {
       "de": "Hallo, Hauke! Wo treffen wir uns morgen? Am Bahnhof?",
-      "audio": "audio/b2e974b7272e.m4a",
+      "audio": "audio/1caed915be4a.m4a",
       "name": "Elif"
      },
      {

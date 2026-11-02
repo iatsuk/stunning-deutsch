@@ -100,13 +100,13 @@
      "who": "D",
      "de": "Kasachisch, Russisch, Englisch und ein bisschen Deutsch.",
      "ru": "На казахском, русском, английском и немного на немецком.",
-     "audio": "audio/a956fbf80661.m4a"
+     "audio": "audio/897bd4889679.m4a"
     },
     {
      "who": "M",
      "de": "Ich spreche Spanisch und Englisch – und auch ein bisschen Deutsch!",
      "ru": "Я говорю по-испански и по-английски — и тоже немного по-немецки!",
-     "audio": "audio/32a7726304a5.m4a"
+     "audio": "audio/00dd76b59e27.m4a"
     }
    ]
   },
@@ -135,13 +135,13 @@
      "who": "E",
      "de": "Mein Name ist Elif Yıldız.",
      "ru": "Меня зовут Элиф Йылдыз.",
-     "audio": "audio/8132d47233b5.m4a"
+     "audio": "audio/4c464ecaae1d.m4a"
     },
     {
      "who": "P",
      "de": "Und woher kommen Sie, Frau Yıldız?",
      "ru": "А откуда вы, госпожа Йылдыз?",
-     "audio": "audio/b87346016169.m4a"
+     "audio": "audio/861872a5c625.m4a"
     },
     {
      "who": "E",
@@ -165,7 +165,7 @@
      "who": "P",
      "de": "Danke schön. Auf Wiedersehen, Frau Yıldız!",
      "ru": "Большое спасибо. До свидания, госпожа Йылдыз!",
-     "audio": "audio/4d0229d1e9cc.m4a"
+     "audio": "audio/6bb7e8eaed2f.m4a"
     },
     {
      "who": "E",
@@ -297,7 +297,7 @@
      "ru": "Как дела?",
      "gender": null,
      "plural": null,
-     "audio": "audio/f1296cc8446a.m4a"
+     "audio": "audio/88ecfc15be66.m4a"
     },
     {
      "de": "Danke, gut!",
@@ -312,7 +312,7 @@
      "gender": null,
      "plural": null,
      "note": "на севере — и в магазине",
-     "audio": "audio/88fbf055ea13.m4a"
+     "audio": "audio/ddb6e17a999c.m4a"
     },
     {
      "de": "Auf Wiedersehen!",
@@ -383,7 +383,7 @@
      "gender": null,
      "plural": null,
      "note": "Ich komme aus Kasachstan.",
-     "audio": "audio/be7ff9121ad0.m4a"
+     "audio": "audio/ab35f49adc71.m4a"
     },
     {
      "de": "wohnen in",
@@ -472,7 +472,7 @@
      "plural": null,
      "noPlural": true,
      "note": "aus der Schweiz",
-     "audio": "audio/6cff6e57fb01.m4a"
+     "audio": "audio/8ed0dca65e34.m4a"
     },
     {
      "de": "die USA",
@@ -516,7 +516,7 @@
      "ru": "кафе",
      "gender": "n",
      "plural": "Cafés",
-     "audio": "audio/5817267f164f.m4a"
+     "audio": "audio/682f5e53861e.m4a"
     },
     {
      "de": "der Strand",
@@ -564,7 +564,7 @@
      "ru": "Что?",
      "gender": null,
      "plural": null,
-     "audio": "audio/136c1a08c4bd.m4a"
+     "audio": "audio/4c2c8eb3f298.m4a"
     },
     {
      "de": "Welche?",
@@ -731,7 +731,7 @@
    "sample": [
     {
      "de": "Mein Name ist Mateo Fernández.",
-     "audio": "audio/6e24bd3651b2.m4a"
+     "audio": "audio/1854e0418e9e.m4a"
     },
     {
      "de": "Ich bin 28 Jahre alt.",
@@ -747,11 +747,11 @@
     },
     {
      "de": "Ich spreche Spanisch, Englisch und ein bisschen Deutsch.",
-     "audio": "audio/1eab01208092.m4a"
+     "audio": "audio/c4e8bf4166a2.m4a"
     },
     {
      "de": "Ich bin Koch von Beruf.",
-     "audio": "audio/138bd0818594.m4a"
+     "audio": "audio/f46148976c4f.m4a"
     },
     {
      "de": "Mein Hobby ist Segeln.",
@@ -1230,7 +1230,7 @@
       "punct": ".",
       "plain": "In Kiel wohne ich.",
       "ru": "В Киле живу я.",
-      "audio": "audio/5e33b5c6044b.m4a"
+      "audio": "audio/29c68694fea1.m4a"
      }
     ]
    }
@@ -1471,7 +1471,7 @@
       "punct": ".",
       "plain": "Aus Argentinien komme ich.",
       "ru": "Из Аргентины я родом.",
-      "audio": "audio/1828509b0667.m4a"
+      "audio": "audio/e2f32f805edc.m4a"
      }
     ],
     "fresh": [
@@ -1554,7 +1554,7 @@
       "punct": ".",
       "plain": "Aus Argentinien komme ich.",
       "ru": "Из Аргентины я родом.",
-      "audio": "audio/1828509b0667.m4a"
+      "audio": "audio/e2f32f805edc.m4a"
      }
     ],
     "focus": [
@@ -1677,7 +1677,7 @@
       "punct": ".",
       "plain": "In Kiel wohne ich.",
       "ru": "В Киле живу я.",
-      "audio": "audio/5e33b5c6044b.m4a"
+      "audio": "audio/29c68694fea1.m4a"
      }
     ],
     "fresh": [
@@ -1759,7 +1759,7 @@
       "punct": ".",
       "plain": "In Kiel wohne ich.",
       "ru": "В Киле живу я.",
-      "audio": "audio/5e33b5c6044b.m4a"
+      "audio": "audio/29c68694fea1.m4a"
      }
     ],
     "task": "vorstellen",
@@ -1840,7 +1840,7 @@
       "punct": ".",
       "plain": "In Kiel wohne ich.",
       "ru": "В Киле живу я.",
-      "audio": "audio/5e33b5c6044b.m4a"
+      "audio": "audio/29c68694fea1.m4a"
      }
     ],
     "task": "vorstellen",
@@ -1921,7 +1921,7 @@
       "punct": ".",
       "plain": "In Kiel wohne ich.",
       "ru": "В Киле живу я.",
-      "audio": "audio/5e33b5c6044b.m4a"
+      "audio": "audio/29c68694fea1.m4a"
      }
     ],
     "task": "anmeldung",
@@ -2003,7 +2003,7 @@
       "punct": ".",
       "plain": "In Kiel wohne ich.",
       "ru": "В Киле живу я.",
-      "audio": "audio/5e33b5c6044b.m4a"
+      "audio": "audio/29c68694fea1.m4a"
      }
     ],
     "task": "anmeldung",
@@ -2092,7 +2092,7 @@
    ],
    "hint": "sein",
    "why": "*Sie sind* — в вопросе да/нет глагол встаёт первым.",
-   "audio": "audio/f9e13f080d23.m4a"
+   "audio": "audio/ae8f1997f2d4.m4a"
   },
   {
    "id": "kennenlernen-8",
@@ -2103,7 +2103,7 @@
    ],
    "hint": "sprechen",
    "why": "*sprechen* меняет *e* на *i*: *du sprichst*, *er spricht*.",
-   "audio": "audio/5ba726422385.m4a"
+   "audio": "audio/26b8e9f12b00.m4a"
   },
   {
    "id": "kennenlernen-9",
@@ -2179,7 +2179,7 @@
    "type": "order",
    "ru": "Ты говоришь по-немецки?",
    "de": "Sprichst du Deutsch?",
-   "audio": "audio/be666e96edf9.m4a"
+   "audio": "audio/07feb233f0be.m4a"
   },
   {
    "id": "kennenlernen-16",
@@ -2435,7 +2435,7 @@
     "quotes": [
      {
       "de": "Kasachisch, Russisch, Englisch und ein bisschen Deutsch.",
-      "audio": "audio/a956fbf80661.m4a",
+      "audio": "audio/897bd4889679.m4a",
       "name": "Dana"
      }
     ],

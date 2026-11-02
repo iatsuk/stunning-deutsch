@@ -47,7 +47,7 @@ const FIRM_BOX = 3;
 /** Столько раундов предлагает разминка после перерыва. */
 export const WELCOME_ROUNDS = 3;
 
-const PLURALS = [
+export const PLURALS = [
   "die Eltern",
   "die Geschwister",
   "die Großeltern",
