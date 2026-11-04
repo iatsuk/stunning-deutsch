@@ -2383,3 +2383,13 @@
   font-size: 12px;
   color: var(--accent);
 }
+.moin-preview-quiet {
+  justify-content: flex-start;
+  margin: -8px 30px 16px;
+}
+@media (max-width: 520px) {
+  .moin-preview-quiet {
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+}

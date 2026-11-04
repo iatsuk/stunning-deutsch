@@ -49,6 +49,7 @@ export function SceneView({
   win,
   miss,
   rich,
+  quiet,
   world = {},
 }: GameProps & { c: Play; rich: Rich; world?: World }) {
   const entries = Array.isArray(value) ? value : [];
@@ -312,6 +313,7 @@ export function SceneView({
               seed={`${seed}-${here.key}`}
               miss={miss}
               rich={rich}
+              quiet={quiet}
               done={(entry) => advance(entry)}
             />
           )}
@@ -567,6 +569,7 @@ function Task({
   seed,
   miss,
   rich,
+  quiet,
   done,
 }: {
   node: SceneNode;
@@ -574,6 +577,8 @@ function Task({
   seed: string;
   miss: (word?: string) => void;
   rich: Rich;
+  /** Отвечать письменно там, где нужно говорить: например, в офисе. */
+  quiet?: boolean;
   done: (entry: string) => void;
 }) {
   switch (node.t) {
@@ -635,6 +640,7 @@ function Task({
           seed={seed}
           miss={miss}
           rich={rich}
+          quiet={quiet}
           done={() => done(nodeKey)}
         />
       );
@@ -838,12 +844,14 @@ function Embedded({
   seed,
   miss,
   rich,
+  quiet,
   done,
 }: {
   node: Extract<SceneNode, { t: "game" }>;
   seed: string;
   miss: (word?: string) => void;
   rich: Rich;
+  quiet?: boolean;
   done: () => void;
 }) {
   const c = node.c;
@@ -863,6 +871,7 @@ function Embedded({
     },
     win: () => setWon(true),
     miss,
+    quiet,
   };
   return (
     <div className="moin-play-task moin-play-game">

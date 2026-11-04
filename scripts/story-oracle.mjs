@@ -2,8 +2,10 @@
 // Предмет берётся из словаря урока главы, поэтому поворот сам вводит в сюжет слова урока.
 // Результат — заготовка для автора, а не готовый текст: его ещё нужно увязать с сюжетом.
 //
-//   node scripts/story-oracle.mjs --chapter 5 [--rolls 2] [--seed 20261103]
+//   node scripts/story-oracle.mjs --chapter 5 [--rolls 2] [--seed 1793800000]
 //
+// По умолчанию seed — Unix-время в секундах: так каждый бросок уникален (правило автора).
+// Несколько бросков подряд делайте одним запуском с --rolls, иначе в одну секунду seed совпадёт.
 // Seed записывается в журнал бросков, чтобы бросок можно было повторить.
 
 import { readdirSync, readFileSync } from "node:fs";
@@ -18,7 +20,7 @@ const arg = (name, fallback) => {
 };
 const chapter = Number(arg("chapter", "1"));
 const rolls = Number(arg("rolls", "1"));
-const seed = Number(arg("seed", String(Date.now() % 1e9)));
+const seed = Number(arg("seed", String(Math.floor(Date.now() / 1000))));
 
 // Детерминированный генератор (mulberry32): тот же seed — те же броски.
 let state = seed >>> 0;

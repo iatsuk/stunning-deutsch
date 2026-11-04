@@ -17,6 +17,14 @@ import "./story.css";
 // не трогая прогресс основной истории. Своё сохранение: sd-moin-neu-v1.
 
 const KEY = "sd-moin-neu-v1";
+const QUIET = "sd-moin-quiet";
+const readQuiet = () => {
+  try {
+    return localStorage.getItem(QUIET) === "on";
+  } catch {
+    return false;
+  }
+};
 const scenes = sceneChapter1.beats;
 type Save = { at: number; drafts: Record<string, string[]> };
 
@@ -43,6 +51,8 @@ export function ScenePreview() {
   useTitle("Глава 1 в сценах · прототип · Stunning Deutsch");
   const [save, setSave] = useState(load);
   const [phrase, setPhrase] = useState<string | null>(null);
+  // Где нужно говорить вслух, можно отвечать письменно: например, в офисе.
+  const [quiet, setQuiet] = useState(readQuiet);
   const beat = scenes[save.at];
   const value: Answer =
     save.drafts[beat.id] ?? (initialAnswer(beat.challenge) as string[]);
@@ -126,7 +136,7 @@ export function ScenePreview() {
         <header className="moin-game-heading">
           <div>
             <div className="kicker">
-              Прототип нового формата · глава 1, сцены 1–3 и интерлюдия
+              Прототип нового формата · глава 1 целиком: шесть сцен и интерлюдия
             </div>
             <h1>Дело о пропавшем Moin</h1>
           </div>
@@ -164,6 +174,24 @@ export function ScenePreview() {
             <h2>{beat.title}</h2>
             {beat.pov && <p className="moin-pov">Тем временем · {beat.pov}</p>}
             <p className="moin-preview-lede">{beat.prompt}</p>
+            <label className="moin-play-voice moin-preview-quiet">
+              <input
+                type="checkbox"
+                checked={quiet}
+                onChange={(e) => {
+                  setQuiet(e.target.checked);
+                  try {
+                    localStorage.setItem(
+                      QUIET,
+                      e.target.checked ? "on" : "off",
+                    );
+                  } catch {
+                    // Без хранилища настройка живёт до перезагрузки.
+                  }
+                }}
+              />{" "}
+              Не могу говорить вслух — отвечаю письменно
+            </label>
             {phrase && (
               <aside className="moin-translation" role="status">
                 <button
@@ -206,6 +234,7 @@ export function ScenePreview() {
                     })),
                   win: () => undefined,
                   miss: () => undefined,
+                  quiet,
                 }}
               />
               {solved(save.at) && (
