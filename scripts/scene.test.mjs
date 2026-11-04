@@ -62,6 +62,9 @@ test("the scene keeps a rhythm: short reading between actions and no long run of
       assert.ok(choices <= 3, `${beat.id}: четыре выбора подряд: ${n.task}`);
     }
     if (!beat.pov) assert.ok(all.filter((n) => n.t === "game").length >= 2, `${beat.id}: меньше двух игр`);
+    // Правило истории: два одинаковых действия подряд не ставим; игры сравниваются по виду.
+    const kinds = all.filter((n) => ACTIONS.includes(n.t)).map((n) => (n.t === "game" ? `game:${n.c.kind}` : n.t));
+    kinds.forEach((k, i) => assert.ok(i === 0 || k !== kinds[i - 1], `${beat.id}: два ${k} подряд`));
   }
 });
 
@@ -94,6 +97,12 @@ test("the right answer is not given away by its place", () => {
     const count = shown.filter((p) => p === place).length;
     assert.ok(Math.abs(count - shown.length / 3) <= 3, `верный на месте ${place + 1}: ${count} из ${shown.length}`);
   }
+});
+
+test("story nouns are spoken with their plural, like lesson words", () => {
+  // CONTENT.md: у существительного pl обязателен, запись произносит «der Name, die Namen».
+  for (const [id, p] of Object.entries(phrases))
+    if (/^(der|die|das) \p{L}+$/u.test(p.de)) assert.ok(p.pl, `нет множественного: ${id} ${p.de}`);
 });
 
 test("everything the player examines is named in German, once per chapter", () => {

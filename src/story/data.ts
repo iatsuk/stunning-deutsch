@@ -131,61 +131,73 @@ export const phrases: Record<string, Phrase> = {
   schild: {
     ru: "табличка",
     de: "das Schild",
+    pl: "Schilder",
     note: "Средний род: das Schild. Табличка MOIN — талисман клуба.",
   },
   moewe: {
     ru: "чайка",
     de: "die Möwe",
+    pl: "Möwen",
     note: "Женский род: die Möwe. В Киле их больше, чем свидетелей.",
   },
   aufsteller: {
     ru: "подставка",
     de: "der Aufsteller",
+    pl: "Aufsteller",
     note: "Мужской род: der Aufsteller — подставка для таблички или меню у входа.",
   },
   kiste: {
     ru: "ящик",
     de: "die Kiste",
+    pl: "Kisten",
     note: "Женский род: die Kiste; во множественном числе die Kisten.",
   },
   boot: {
     ru: "лодка",
     de: "das Boot",
+    pl: "Boote",
     note: "Средний род: das Boot. «Sprotte» — лодка Хауке.",
   },
   tuer: {
     ru: "дверь",
     de: "die Tür",
+    pl: "Türen",
     note: "Женский род: die Tür; во множественном числе die Türen.",
   },
   ehrentafel: {
     ru: "доска почёта",
     de: "die Ehrentafel",
+    pl: "Ehrentafeln",
     note: "die Ehre — честь, die Tafel — доска; род у сложного слова — по последней части.",
   },
   fenster: {
     ru: "окно",
     de: "das Fenster",
+    pl: "Fenster",
     note: "Средний род: das Fenster; во множественном числе тоже die Fenster.",
   },
   logbuch: {
     ru: "журнал клуба",
     de: "das Logbuch",
+    pl: "Logbücher",
     note: "das Buch — книга: бортовой журнал, куда записывают всё за день. Род — по последней части.",
   },
   anhaenger: {
     ru: "бирка",
     de: "der Anhänger",
+    pl: "Anhänger",
     note: "an + hängen — «навешивать»: бирка на верёвочке. Мужской род, как der Aufsteller.",
   },
   feder: {
     ru: "перо",
     de: "die Feder",
+    pl: "Federn",
     note: "Женский род: die Feder. Перо чайки — die Möwenfeder.",
   },
   taschenlampe: {
     ru: "фонарик",
     de: "die Taschenlampe",
+    pl: "Taschenlampen",
     note: "die Tasche — карман, die Lampe — лампа: фонарь, который носят в кармане.",
   },
   neu: {
@@ -222,6 +234,7 @@ export const phrases: Record<string, Phrase> = {
   phone: {
     ru: "номер телефона",
     de: "die Telefonnummer",
+    pl: "Telefonnummern",
     note: "Существительное женского рода: die.",
   },
   have: {
@@ -242,6 +255,7 @@ export const phrases: Record<string, Phrase> = {
   bag: {
     ru: "сумка",
     de: "die Tasche",
+    pl: "Taschen",
     note: "Форма для знакомства со словом. В других контекстах артикль может меняться.",
   },
   hisbag: {
@@ -357,6 +371,7 @@ export const phrases: Record<string, Phrase> = {
   key: {
     ru: "ключ",
     de: "der Schlüssel",
+    pl: "Schlüssel",
     note: "Мужской род; множественное число die Schlüssel.",
   },
   bus: {

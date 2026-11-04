@@ -1,8 +1,8 @@
-import { Fragment, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Footer, Topbar, useTitle } from "../App";
-import { stopAudio } from "../hooks";
+import { say, stopAudio } from "../hooks";
 import { PlayButton } from "../markup";
-import { storyAudio } from "./audio";
+import { phraseAudio } from "./audio";
 import { ChallengeView } from "./ChallengeView";
 import { phrases } from "./data";
 import { mnemonic } from "./mnemonics";
@@ -50,7 +50,6 @@ function load(): Save {
 export function ScenePreview() {
   useTitle("Глава 1 в сценах · прототип · Stunning Deutsch");
   const [save, setSave] = useState(load);
-  const [phrase, setPhrase] = useState<string | null>(null);
   // Где нужно говорить вслух, можно отвечать письменно: например, в офисе.
   const [quiet, setQuiet] = useState(readQuiet);
   const beat = scenes[save.at];
@@ -100,7 +99,6 @@ export function ScenePreview() {
 
   function go(at: number) {
     stopAudio();
-    setPhrase(null);
     setSave((s) => ({ ...s, at }));
     window.scrollTo({ top: 0 });
   }
@@ -112,19 +110,7 @@ export function ScenePreview() {
       if (!p) return part;
       const fresh =
         !known.has(id) && !words.includes(p.de) && !seen?.has(id) && !seen?.has(p.de);
-      return (
-        <Fragment key={i}>
-          {fresh && <span>{p.ru} </span>}
-          <button
-            type="button"
-            className={`moin-word${fresh ? " is-new" : ""}`}
-            lang="de"
-            onClick={() => setPhrase(phrase === id ? null : id)}
-          >
-            {fresh ? `(${p.de})` : p.de}
-          </button>
-        </Fragment>
-      );
+      return <Word key={i} id={id} fresh={fresh} />;
     });
   }
 
@@ -197,29 +183,6 @@ export function ScenePreview() {
               />{" "}
               Не могу говорить вслух — отвечаю письменно
             </label>
-            {phrase && (
-              <aside className="moin-translation" role="status">
-                <button
-                  type="button"
-                  className="moin-close"
-                  aria-label="Закрыть перевод"
-                  onClick={() => setPhrase(null)}
-                >
-                  ×
-                </button>
-                <strong lang="de">
-                  {phrases[phrase].de}{" "}
-                  <PlayButton src={storyAudio(phrases[phrase].de)} />
-                </strong>
-                <div>{phrases[phrase].ru}</div>
-                <small>{phrases[phrase].note}</small>
-                {mnemonic(phrases[phrase].de) && (
-                  <span className="moin-hook">
-                    💡 {mnemonic(phrases[phrase].de)}
-                  </span>
-                )}
-              </aside>
-            )}
             <div className="moin-turn">
               <ChallengeView
                 key={beat.id}
@@ -336,6 +299,44 @@ export function ScenePreview() {
         </div>
       </main>
       <Footer />
+    </>
+  );
+}
+
+/**
+ * Немецкая единица в рассказе. Перевод раскрывается прямо за словом, а не в блоке наверху
+ * страницы: так его видно там, где читаешь. Нажатие сразу озвучивает выражение.
+ */
+function Word({ id, fresh }: { id: string; fresh: boolean }) {
+  const [open, setOpen] = useState(false);
+  const p = phrases[id];
+  return (
+    <>
+      {fresh && <span>{p.ru} </span>}
+      <button
+        type="button"
+        className={`moin-word${fresh ? " is-new" : ""}`}
+        lang="de"
+        aria-expanded={open}
+        onClick={() => {
+          if (!open) say(phraseAudio(p));
+          setOpen(!open);
+        }}
+      >
+        {fresh ? `(${p.de})` : p.de}
+      </button>
+      {open && (
+        <span className="moin-word-info" role="status">
+          {p.ru}
+          {p.pl && (
+            <>
+              {" "}· мн. ч. <span lang="de">die {p.pl}</span>
+            </>
+          )}{" "}
+          <PlayButton src={phraseAudio(p)} /> <small>{p.note}</small>
+          {mnemonic(p.de) && <span className="moin-hook">💡 {mnemonic(p.de)}</span>}
+        </span>
+      )}
     </>
   );
 }

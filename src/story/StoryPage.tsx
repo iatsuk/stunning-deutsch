@@ -2,7 +2,7 @@ import { Fragment, useEffect, useRef, useState } from "react";
 import { Footer, Topbar, useTitle } from "../App";
 import { stopAudio, useMobile } from "../hooks";
 import { PlayButton, plural } from "../markup";
-import { a1Words, storyAudio, wordInfo } from "./audio";
+import { a1Words, phraseAudio, wordInfo } from "./audio";
 import { beats, episodes, phrases } from "./data";
 import { mnemonic } from "./mnemonics";
 import { WordDrill } from "./drill";
@@ -589,7 +589,7 @@ export function StoryPage() {
                       </button>
                       <strong lang="de">
                         {phrases[phrase].de}{" "}
-                        <PlayButton src={storyAudio(phrases[phrase].de)} />
+                        <PlayButton src={phraseAudio(phrases[phrase])} />
                       </strong>
                       <div>{phrases[phrase].ru}</div>
                       <small>{phrases[phrase].note}</small>

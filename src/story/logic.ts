@@ -19,6 +19,10 @@ type Route = Extract<Challenge, { kind: "route" }>;
 type Position = { x: number; y: number; heading: number };
 
 export const STORY_KEY = "sd-moin-story-v1";
+/** Что звучит в записи выражения: существительное — с множественным, как в словаре уроков. */
+export const spoken = (p: { de: string; pl?: string }) =>
+  p.pl ? `${p.de}, die ${p.pl}` : p.de;
+
 export const phraseIds = (text: string): string[] =>
   [...text.matchAll(/\{([\w-]+)\}/g)].map((m) => m[1]);
 export const beatPhrases = (beat: Beat) => [
@@ -47,7 +51,9 @@ export function storyLines(
   phrases: Record<string, Phrase>,
 ): { text: string; voice: string }[] {
   return [
-    ...Object.values(phrases).map((p) => ({ text: p.de, voice: NARRATOR })),
+    ...Object.values(phrases).map((p) => ({ text: spoken(p), voice: NARRATOR })),
+    // Диктовка в конце главы произносит ровно то, что нужно записать: без множественного.
+    ...episodes.flatMap((e) => (e.review ?? []).map((id) => ({ text: phrases[id].de, voice: NARRATOR }))),
     ...episodes.flatMap((e) =>
       e.beats.flatMap((b) => [
         ...(b.voices ?? []).map(({ text, voice }) => ({ text, voice })),

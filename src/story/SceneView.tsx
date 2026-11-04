@@ -2,7 +2,7 @@ import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from 
 import { playAll, say } from "../hooks";
 import { PlayButton } from "../markup";
 import { nearMisses } from "../trainer/logic";
-import { storyAudio, wordInfo } from "./audio";
+import { nounAudio, storyAudio, wordInfo } from "./audio";
 import { AUTOMATIC, ChallengeView } from "./ChallengeView";
 import { Gendered, Note, textInput, UmlautKeys, type GameProps } from "./games";
 import { phrases } from "./data";
@@ -25,15 +25,14 @@ import {
 } from "./scene";
 import type { Answer, Challenge, Pick, SceneNode } from "./types";
 import { mnemonic } from "./mnemonics";
-import { applyEffects, effectText, holds, TRACKS, type World } from "./world";
+import { effectText, holds, TRACKS, type World } from "./world";
 
 // Сцена: разговор и осмотр места, в который вплетены действия. Сцена помещается на экран:
-// видны картинка момента, последние реплики и текущее действие, а весь разговор раскрывается
-// кнопкой. Рассказ и реплики между действиями появляются сами, одна за другой: останавливает
-// сцену только действие игрока. Реплики героев звучат сами, если озвучка включена.
+// видны картинка момента, ответ на прошлое действие, новый поток реплик и текущее действие.
+// Рассказ и реплики между действиями появляются сами, одна за другой: останавливает сцену
+// только действие игрока. Ячейки действий над сценой открывают прошлые моменты, как шаги
+// в основной игре. Реплики героев звучат сами, если озвучка включена.
 
-/** Сколько последних реплик видно, пока разговор свёрнут. */
-const RECENT = 3;
 /** Действия игрока: они останавливают поток сцены и отмечаются ячейками. */
 const ACTIONS: SceneNode["t"][] = ["reply", "type", "gap", "hear", "pick", "look", "game"];
 
@@ -66,16 +65,16 @@ export function SceneView({
   c: Play;
   rich: Rich;
   world?: World;
-  /** Слова, которые игрок уже видел в прошлых сценах главы: при осмотре они без перевода. */
+  /** Слова, которые игрок уже видел в прошлых сценах главы: в рассказе они без перевода. */
   known?: string[];
 }) {
   const entries = Array.isArray(value) ? value : [];
-  const done = new Set(entries.map(keyOf));
   // Мир к этому моменту: что было до сцены и последствия уже пройденных узлов.
   const state = worldAfter(c.nodes, entries, world);
   const [open, setOpen] = useState<string>();
   const [voice, setVoice] = useState(readVoice);
-  const [full, setFull] = useState(false);
+  // Прошлое действие, которое игрок открыл ячейкой; без него виден текущий момент.
+  const [view, setView] = useState<number>();
   const [notesOpen, setNotesOpen] = useState(false);
   const here = spot(c.nodes, entries, open, state);
   const current = useRef<HTMLDivElement>(null);
@@ -90,7 +89,7 @@ export function SceneView({
     const next = [...entries, ...added];
     change(next);
     setOpen(undefined);
-    setFull(false);
+    setView(undefined);
     if (isCorrect(c, next)) win();
     return next;
   }
@@ -110,8 +109,10 @@ export function SceneView({
       const n = nodeAt(c.nodes, keyOf(e));
       return n?.t === "say" ? [storyAudio(n.de, n.voice)] : [];
     });
+    // «Послушайте» не повторяет реплику, которая только что прозвучала в этом потоке.
     if (after.at === "node" && after.node.t === "hear" && lines.length) {
-      lines.push(storyAudio(after.node.de, after.node.voice));
+      const again = storyAudio(after.node.de, after.node.voice);
+      if (!lines.includes(again)) lines.push(again);
       queued.current = after.key;
     }
     playAll(lines);
@@ -140,19 +141,23 @@ export function SceneView({
   // знакома, если уже встречалась: в прошлых сценах, в рассказе выше или среди новых слов.
   const heard = new Set<string>();
   const met = new Set(known);
+  // Последствие показывается так, как сдвинуло мир: часы у нуля назад не идут, и строки нет.
+  let before = world;
   const items = (disabled ? (solution(c) as string[]) : entries).flatMap(
     (entry) => {
       const key = keyOf(entry);
       const node = nodeAt(c.nodes, key);
+      const after = worldAfter(c.nodes, [entry], before);
+      const effects = Object.fromEntries(
+        Object.keys(after)
+          .filter((q) => after[q] !== (before[q] ?? 0))
+          .map((q) => [q, after[q] - (before[q] ?? 0)]),
+      );
+      before = after;
       if (!node || node.t === "when") return [];
       const fresh = node.t === "say" && !heard.has(node.de);
-      const chosen =
-        node.t === "reply" || node.t === "pick"
-          ? node.options.find((o) => o.text === typedOf(entry))?.set
-          : undefined;
-      const effects = applyEffects(applyEffects({}, node.set), chosen);
       if (node.t === "say") heard.add(node.de);
-      const before = new Set(met);
+      const seen = new Set(met);
       if (node.t === "narr")
         for (const id of phraseIds(node.text)) {
           met.add(id);
@@ -165,6 +170,7 @@ export function SceneView({
         {
           key,
           node,
+          action: ACTIONS.includes(node.t),
           pics,
           branch: branchOf(c.nodes, key),
           element: (
@@ -181,7 +187,7 @@ export function SceneView({
                 node={node}
                 typed={typedOf(entry)}
                 fresh={fresh}
-                rich={(s) => rich(s, before)}
+                rich={(s) => rich(s, seen)}
               />
               {Object.keys(effects).length > 0 && (
                 <p className="moin-play-effect">{effectText(effects)}</p>
@@ -192,52 +198,72 @@ export function SceneView({
       ];
     },
   );
-  // Свёрнутый разговор показывает весь последний поток и ответ перед ним.
-  const batchStart = items.findIndex((i) => batch.includes(i.key));
-  const from = full
-    ? 0
-    : Math.max(
-        0,
-        Math.min(
-          items.length - RECENT,
-          batchStart < 0 ? items.length : batchStart - 1,
-        ),
-      );
-  // Картинка момента — последняя пройденная. Она остаётся на экране, даже когда реплика, к которой
-  // она относится, свёрнута; более ранние картинки видны только в развёрнутом разговоре.
-  const currentPics = here.at === "node" ? picsBefore(c.nodes, here.key) : [];
+  // Пройденные действия в порядке прохождения: каждое — ячейка, которая открывает свой момент,
+  // от прошлого действия до этого. Без открытой ячейки виден ответ на последнее действие и всё,
+  // что случилось после него.
+  const played = items.flatMap((item, i) => (item.action ? [i] : []));
+  const from = view === undefined ? (played.at(-1) ?? 0) : view > 0 ? played[view - 1] + 1 : 0;
+  const to = view === undefined ? items.length : played[view] + 1;
+  const shown = items.slice(from, to);
+  // Картинка момента — последняя до конца показанного. Она остаётся на экране, даже когда реплика,
+  // к которой она относится, осталась в прошлом моменте.
+  const currentPics =
+    view === undefined && here.at === "node" ? picsBefore(c.nodes, here.key) : [];
   const moment = currentPics.length
     ? undefined
-    : items.flatMap((i) => i.pics).at(-1);
+    : items
+        .slice(0, to)
+        .flatMap((i) => i.pics)
+        .at(-1);
   const slots = answerSlots(c.nodes, seed);
   const keys = requiredKeys(c.nodes, entries);
-  const actions = keys.filter((k) => {
-    const n = nodeAt(c.nodes, k);
-    return n && ACTIONS.includes(n.t);
-  });
-  const passed = actions.filter((k) => done.has(k)).length;
+  const playedKeys = played.map((i) => items[i].key);
+  const cells = [
+    ...playedKeys,
+    ...keys.filter((k) => {
+      const n = nodeAt(c.nodes, k);
+      return n && ACTIONS.includes(n.t) && !playedKeys.includes(k);
+    }),
+  ];
   // Часы и отношения, которые уже сдвинулись: их показывает блокнот сцены.
   const tracks = Object.entries(state).filter(([q, v]) => v > 0 && TRACKS[q]);
   // Блокнот сцены: улики и предметы под рукой, чтобы не искать их в разговоре.
   const notes = items.flatMap((i) =>
     i.node.t === "clue" || i.node.t === "item" ? [i.node] : [],
   );
-  const shown = items.slice(from);
   const currentBranch =
     here.at === "node" && here.branch ? branchOf(c.nodes, here.key) : undefined;
 
   return (
     <div className="moin-play">
       <div className="moin-play-bar">
-        <span
+        <ol
           className="moin-play-cells"
-          role="img"
-          aria-label={`Действий в сцене: ${disabled ? actions.length : passed} из ${actions.length}`}
+          aria-label={`Действий в сцене: ${played.length} из ${cells.length}`}
         >
-          {actions.map((k) => (
-            <i key={k} data-done={disabled || done.has(k) || undefined} />
+          {cells.map((k, i) => (
+            <li key={k}>
+              <button
+                type="button"
+                aria-label={
+                  i < played.length
+                    ? `Действие ${i + 1}: открыть этот момент`
+                    : i === played.length
+                      ? `Действие ${i + 1}: текущее`
+                      : `Действие ${i + 1}: впереди`
+                }
+                aria-current={
+                  (view === undefined ? i === played.length : i === view)
+                    ? "step"
+                    : undefined
+                }
+                data-done={i < played.length || undefined}
+                disabled={i > played.length}
+                onClick={() => setView(i < played.length ? i : undefined)}
+              />
+            </li>
           ))}
-        </span>
+        </ol>
         <label className="moin-play-voice">
           <input
             type="checkbox"
@@ -301,44 +327,25 @@ export function SceneView({
           </ul>
         </aside>
       )}
-      {from > 0 && (
-        <button
-          type="button"
-          className="link-button moin-play-more"
-          onClick={() => setFull(true)}
-        >
-          ▲ Весь разговор · выше ещё {from}
-        </button>
+      {view !== undefined && (
+        <p className="moin-play-past">
+          Момент действия {view + 1} из {played.length}.{" "}
+          <button
+            type="button"
+            className="link-button"
+            onClick={() => setView(undefined)}
+          >
+            Вернуться к текущему ▸
+          </button>
+        </p>
       )}
-      {full && items.length > RECENT && (
-        <button
-          type="button"
-          className="link-button moin-play-more"
-          onClick={() => setFull(false)}
-        >
-          ▼ Свернуть разговор
-        </button>
-      )}
-      {moment && !items.slice(from).some((i) => i.pics.includes(moment)) && (
+      {moment && !shown.some((i) => i.pics.includes(moment)) && (
         <Pic node={moment} />
       )}
       <div className="moin-play-log" aria-live="polite">
         {groups(shown).map((g, n) =>
           !g.branch ? (
             g.items.map((i) => i.element)
-          ) : full ? (
-            // В развёрнутом разговоре каждая ветка — отдельный блок, открывается по нажатию.
-            <details
-              key={n}
-              className="moin-play-group"
-              open={g.branch.key === currentBranch?.key}
-            >
-              <summary>
-                <span aria-hidden="true">{g.branch.icon}</span> {g.branch.label}
-                <small>{g.items.length} реплик и действий</small>
-              </summary>
-              {g.items.map((i) => i.element)}
-            </details>
           ) : (
             <div key={n} className="moin-play-group is-open">
               <p className="moin-play-group-title">
@@ -349,7 +356,7 @@ export function SceneView({
           ),
         )}
       </div>
-      {!disabled && here.at === "menu" && (
+      {!disabled && view === undefined && here.at === "menu" && (
         <div className="moin-play-current" ref={current}>
           <Menu
             node={here.node}
@@ -362,7 +369,7 @@ export function SceneView({
           />
         </div>
       )}
-      {!disabled && here.at === "node" && (
+      {!disabled && view === undefined && here.at === "node" && (
         <div
           className={`moin-play-current${batch.length ? " moin-rise" : ""}`}
           ref={current}
@@ -400,7 +407,6 @@ export function SceneView({
               miss={miss}
               rich={rich}
               quiet={quiet}
-              known={met}
               done={(entry) => {
                 setBatch([]);
                 advance(entry);
@@ -660,7 +666,6 @@ function Task({
   miss,
   rich,
   quiet,
-  known,
   slot,
   done,
 }: {
@@ -673,7 +678,6 @@ function Task({
   rich: Rich;
   /** Отвечать письменно там, где нужно говорить: например, в офисе. */
   quiet?: boolean;
-  known: Set<string>;
   done: (entry: string) => void;
 }) {
   switch (node.t) {
@@ -731,12 +735,7 @@ function Task({
       );
     case "look":
       return (
-        <Look
-          node={node}
-          seed={seed}
-          known={known}
-          done={() => done(nodeKey)}
-        />
+        <Look node={node} seed={seed} done={() => done(nodeKey)} />
       );
     case "game":
       return (
@@ -888,18 +887,14 @@ function Typed({
 function Look({
   node,
   seed,
-  known,
   done,
 }: {
   node: Extract<SceneNode, { t: "look" }>;
   seed: string;
-  /** Знакомое слово показывается без перевода: перевод — по нажатию. */
-  known: Set<string>;
   done: () => void;
 }) {
   const [seen, setSeen] = useState<number[]>([]);
   const [focus, setFocus] = useState<number>();
-  const [translated, setTranslated] = useState<number[]>([]);
   const keys = node.items.flatMap((item, i) => (item.key ? [i] : []));
   const ready = keys.every((i) => seen.includes(i));
   const item = focus === undefined ? undefined : node.items[focus];
@@ -917,8 +912,7 @@ function Look({
             onClick={() => {
               setFocus(i);
               if (!seen.includes(i)) setSeen([...seen, i]);
-              const de = node.items[i].de;
-              say(wordInfo(de)?.audio ?? storyAudio(de));
+              say(nounAudio(node.items[i].de));
             }}
           >
             <span aria-hidden="true">{node.items[i].icon}</span>
@@ -931,19 +925,7 @@ function Look({
           <b lang="de">
             <Gendered text={item.de} />
           </b>{" "}
-          {!known.has(item.de) || translated.includes(focus!) ? (
-            <>— {item.ru}. </>
-          ) : (
-            <>
-              <button
-                type="button"
-                className="link-button"
-                onClick={() => setTranslated([...translated, focus!])}
-              >
-                Перевод
-              </button>{" "}
-            </>
-          )}
+          — {item.ru}.{" "}
           {item.note}
           {mnemonic(item.de) && (
             <span className="moin-hook">💡 {mnemonic(item.de)}</span>

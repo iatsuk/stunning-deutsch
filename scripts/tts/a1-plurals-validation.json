@@ -1,0 +1,88 @@
+{
+  "date": "2026-11-05",
+  "scope": "Story nouns of the Moin game spoken with their plural, like lesson words (CONTENT.md): phrases with pl in src/story/data.ts",
+  "model": "k2-fsa/OmniVoice",
+  "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+  "candidatesPerPhrase": 3,
+  "asr": "openai/whisper-large-v3",
+  "files": [
+    {
+      "file": "6ab4ffa19105.m4a",
+      "text": "das Schild, die Schilder",
+      "voice": "Anna",
+      "seed": 20697061,
+      "heard": "Das Schild. Die Schilder."
+    },
+    {
+      "file": "f8a44c9eb52e.m4a",
+      "text": "die Möwe, die Möwen",
+      "voice": "Anna",
+      "seed": 21055502,
+      "heard": "Die Möwe, die Möwen"
+    },
+    {
+      "file": "16f643b7786b.m4a",
+      "text": "der Aufsteller, die Aufsteller",
+      "voice": "Anna",
+      "seed": 21132218,
+      "heard": "Der Aufsteller. Die Aufsteller."
+    },
+    {
+      "file": "271a3b13b846.m4a",
+      "text": "die Kiste, die Kisten",
+      "voice": "Anna",
+      "seed": 21057924,
+      "heard": "Die Kiste, die Kisten."
+    },
+    {
+      "file": "525193a6443e.m4a",
+      "text": "die Tür, die Türen",
+      "voice": "Anna",
+      "seed": 21236830,
+      "heard": "Die Tür, die Türen"
+    },
+    {
+      "file": "bb7092bd01f1.m4a",
+      "text": "die Ehrentafel, die Ehrentafeln",
+      "voice": "Anna",
+      "seed": 20852625,
+      "heard": "Die Ehrentafel, die Ehrentafeln"
+    },
+    {
+      "file": "7e49195c497d.m4a",
+      "text": "das Fenster, die Fenster",
+      "voice": "Anna",
+      "seed": 20451933,
+      "heard": "Das Fenster. Die Fenster."
+    },
+    {
+      "file": "8853ae71f614.m4a",
+      "text": "das Logbuch, die Logbücher",
+      "voice": "Anna",
+      "seed": 20636195,
+      "heard": "Das Logbuch. Die Logbücher."
+    },
+    {
+      "file": "4069386d954c.m4a",
+      "text": "der Anhänger, die Anhänger",
+      "voice": "Anna",
+      "seed": 20726346,
+      "heard": "Der Anhänger. Die Anhänger."
+    },
+    {
+      "file": "825e769810bf.m4a",
+      "text": "die Feder, die Federn",
+      "voice": "Anna",
+      "seed": 20474975,
+      "heard": "Die Feder, die Federn."
+    },
+    {
+      "file": "5f25f1cfbc65.m4a",
+      "text": "die Taschenlampe, die Taschenlampen",
+      "voice": "Anna",
+      "seed": 20628771,
+      "heard": "Die Taschenlampe. Die Taschenlampen."
+    }
+  ],
+  "note": "All 33 candidates were recognised correctly and passed tails.py (fragments and clipped endings); the take with the quietest ending was chosen. das Boot, die Telefonnummer, die Tasche and der Schlüssel reuse the lesson recordings with the same text. Automated checks do not replace listening. The singular recordings of these phrases (some listed in a1-cutoff-validation.json) are no longer used and were removed by the full build; the dictation of die Telefonnummer and der Schlüssel keeps its singular recordings."
+}

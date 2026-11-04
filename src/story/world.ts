@@ -48,6 +48,6 @@ export const effectText = (effects: Effects) =>
   Object.entries(effects)
     .map(
       ([q, by]) =>
-        `${TRACKS[q]?.icon ?? ""} ${TRACKS[q]?.label ?? q} ${by > 0 ? "+" : ""}${by}`,
+        `${TRACKS[q]?.icon ?? ""} ${TRACKS[q]?.label ?? q} ${by > 0 ? "+" : "−"}${Math.abs(by)}`,
     )
     .join(" · ");

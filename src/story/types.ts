@@ -1,6 +1,7 @@
 import type { Cond, Effects } from "./world.ts";
 
-export type Phrase = { ru: string; de: string; note: string };
+/** pl — множественное число существительного без артикля, как в словаре уроков: оно звучит в записи. */
+export type Phrase = { ru: string; de: string; note: string; pl?: string };
 export type Option = { id: string; text: string; why: string };
 export type ChatTurn = {
   say: string;

@@ -14,7 +14,7 @@ import { shuffle } from "../lib/shuffle";
 import { PlayButton } from "../markup";
 import { ClockView } from "../stage/Clock";
 import { judge, nearMisses, UMLAUTS } from "../trainer/logic";
-import { storyAudio, wordInfo } from "./audio";
+import { phraseAudio, storyAudio, wordInfo } from "./audio";
 import { phrases } from "./data";
 import { wordCount } from "../assessment/logic";
 import {
@@ -544,7 +544,7 @@ export function Memory({
   // Неверная пара остаётся открытой до следующего нажатия: читать можно без спешки.
   function flip(id: string, pair: string) {
     const turned = open.length === 2 ? [id] : [...open, id];
-    if (id.endsWith(":de")) say(storyAudio(phrases[pair].de));
+    if (id.endsWith(":de")) say(phraseAudio(phrases[pair]));
     if (turned.length === 2 && turned[0].split(":")[0] === pair) {
       const next = [...found, pair];
       setOpen([]);
