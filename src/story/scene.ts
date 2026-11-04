@@ -1,3 +1,4 @@
+import { shuffle } from "../lib/shuffle.ts";
 import { judge } from "../trainer/logic.ts";
 import type { SceneNode } from "./types.ts";
 import { applyEffects, holds, type World } from "./world.ts";
@@ -187,6 +188,59 @@ export const shownWords = (nodes: SceneNode[]): string[] =>
   nodes.flatMap((n) =>
     n.t === "say" ? (n.learn ?? []) : n.t === "look" ? n.items.map((i) => i.de) : n.t === "item" ? [n.de] : [],
   );
+
+/** Сколько вариантов у выбора из кнопок с одним верным; где верных несколько, место не выдаёт ответ. */
+const choiceCount = (n: SceneNode | undefined) =>
+  n && (n.t === "gap" || n.t === "hear" || ((n.t === "reply" || n.t === "pick") && n.options.filter((o) => o.ok).length === 1))
+    ? n.options.length
+    : 0;
+
+/**
+ * Место верного варианта в каждом выборе сцены. Верный вариант обычно написан первым, и случайная
+ * перестановка оставляла его первым слишком часто (в главе 1 — 22 выбора из 45). Места берутся из
+ * колоды: в ней каждое место дважды, колода перемешана по seed и пополняется, когда кончится.
+ * Так места распределены поровну, но очередь не угадать: строгий круг был бы так же заметен.
+ * Третий раз подряд на том же месте верный вариант не встаёт.
+ */
+export function answerSlots(nodes: SceneNode[], seed: string): Map<string, number> {
+  const slots = new Map<string, number>();
+  const decks = new Map<number, number[]>();
+  const placed: number[] = [];
+  let refills = 0;
+  for (const key of sceneKeys(nodes)) {
+    const count = choiceCount(nodeAt(nodes, key));
+    if (!count) continue;
+    const deck = decks.get(count) ?? [];
+    decks.set(count, deck);
+    const [a, b] = placed.slice(-2);
+    const twice = placed.length >= 2 && a === b ? a : -1;
+    if (!deck.some((p) => p !== twice)) {
+      const places = [...Array(count).keys()];
+      deck.push(...shuffle([...places, ...places], `${seed}-deck-${refills++}`));
+    }
+    const [place] = deck.splice(deck.findIndex((p) => p !== twice), 1);
+    slots.set(key, place);
+    placed.push(place);
+  }
+  return slots;
+}
+
+/** Порядок вариантов: один верный — на назначенном месте, остальные перемешаны. */
+export function arrange<T extends { ok?: boolean }>(options: T[], seed: string, slot = 0): T[] {
+  const [right, ...more] = shuffle(options.filter((o) => o.ok), seed);
+  const rest = shuffle([...more, ...options.filter((o) => !o.ok)], `${seed}/`);
+  rest.splice(Math.min(slot, rest.length), 0, right);
+  return rest;
+}
+
+/** Порядок предметов при осмотре: важные не стоят подряд в начале, иначе их видно по месту. */
+export function lookOrder(items: { key?: true }[], seed: string): number[] {
+  const order = shuffle([...items.keys()], seed);
+  const keys = items.filter((i) => i.key).length;
+  const first = order.findIndex((i) => !items[i].key);
+  if (first === keys && keys > 1) order.splice(Math.floor(keys / 2), 0, ...order.splice(first, 1));
+  return order;
+}
 
 /** Набранная реплика верна, если совпала с ответом; * — любое имя с большой буквы. */
 export function typedRight(text: string, answers: string[]) {

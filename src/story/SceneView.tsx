@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
 import { playAll, say } from "../hooks";
-import { shuffle } from "../lib/shuffle";
 import { PlayButton } from "../markup";
 import { nearMisses } from "../trainer/logic";
 import { storyAudio, wordInfo } from "./audio";
@@ -9,9 +8,12 @@ import { Gendered, Note, textInput, UmlautKeys, type GameProps } from "./games";
 import { phrases } from "./data";
 import { initialAnswer, isCorrect, mistake, phraseIds, solution } from "./logic";
 import {
+  answerSlots,
+  arrange,
   flow,
   isPassive,
   keyOf,
+  lookOrder,
   nodeAt,
   picsBefore,
   requiredKeys,
@@ -207,6 +209,7 @@ export function SceneView({
   const moment = currentPics.length
     ? undefined
     : items.flatMap((i) => i.pics).at(-1);
+  const slots = answerSlots(c.nodes, seed);
   const keys = requiredKeys(c.nodes, entries);
   const actions = keys.filter((k) => {
     const n = nodeAt(c.nodes, k);
@@ -393,6 +396,7 @@ export function SceneView({
               node={here.node}
               nodeKey={here.key}
               seed={`${seed}-${here.key}`}
+              slot={slots.get(here.key)}
               miss={miss}
               rich={rich}
               quiet={quiet}
@@ -657,11 +661,14 @@ function Task({
   rich,
   quiet,
   known,
+  slot,
   done,
 }: {
   node: SceneNode;
   nodeKey: string;
   seed: string;
+  /** Место верного варианта в выборе из кнопок (answerSlots). */
+  slot?: number;
   miss: (word?: string) => void;
   rich: Rich;
   /** Отвечать письменно там, где нужно говорить: например, в офисе. */
@@ -678,6 +685,7 @@ function Task({
           options={node.options}
           german={node.t === "reply"}
           seed={seed}
+          slot={slot}
           miss={miss}
           done={(text) => done(`${nodeKey}|${text}`)}
         />
@@ -692,6 +700,7 @@ function Task({
           )}
           german
           seed={seed}
+          slot={slot}
           miss={() => miss(node.answer)}
           ru={node.ru}
           done={() => done(nodeKey)}
@@ -707,6 +716,7 @@ function Task({
           )}
           german={!/[а-яё]/i.test(node.answer)}
           seed={seed}
+          slot={slot}
           miss={miss}
           done={() => done(nodeKey)}
         />
@@ -720,7 +730,14 @@ function Task({
         />
       );
     case "look":
-      return <Look node={node} known={known} done={() => done(nodeKey)} />;
+      return (
+        <Look
+          node={node}
+          seed={seed}
+          known={known}
+          done={() => done(nodeKey)}
+        />
+      );
     case "game":
       return (
         <Embedded
@@ -745,6 +762,7 @@ function Options({
   options,
   german,
   seed,
+  slot,
   miss,
   done,
 }: {
@@ -755,12 +773,13 @@ function Options({
   options: Pick[];
   german: boolean;
   seed: string;
+  slot?: number;
   miss: () => void;
   done: (text: string) => void;
 }) {
   const [missed, setMissed] = useState<string[]>([]);
   const [reaction, setReaction] = useState<string>();
-  const order = shuffle(options, seed);
+  const order = arrange(options, seed, slot);
   return (
     <div className="moin-play-task">
       <p className="moin-play-ask">{task}</p>
@@ -868,10 +887,12 @@ function Typed({
 
 function Look({
   node,
+  seed,
   known,
   done,
 }: {
   node: Extract<SceneNode, { t: "look" }>;
+  seed: string;
   /** Знакомое слово показывается без перевода: перевод — по нажатию. */
   known: Set<string>;
   done: () => void;
@@ -886,21 +907,22 @@ function Look({
     <div className="moin-play-task">
       <p className="moin-play-ask">{node.task}</p>
       <div className="moin-look">
-        {node.items.map((it, i) => (
+        {lookOrder(node.items, seed).map((i) => (
           <button
             type="button"
             key={i}
             aria-pressed={focus === i}
             data-seen={seen.includes(i) || undefined}
-            aria-label={seen.includes(i) ? it.de : "Осмотреть"}
+            aria-label={seen.includes(i) ? node.items[i].de : "Осмотреть"}
             onClick={() => {
               setFocus(i);
               if (!seen.includes(i)) setSeen([...seen, i]);
-              say(wordInfo(it.de)?.audio ?? storyAudio(it.de));
+              const de = node.items[i].de;
+              say(wordInfo(de)?.audio ?? storyAudio(de));
             }}
           >
-            <span aria-hidden="true">{it.icon}</span>
-            <small lang="de">{seen.includes(i) ? it.de : "?"}</small>
+            <span aria-hidden="true">{node.items[i].icon}</span>
+            <small lang="de">{seen.includes(i) ? node.items[i].de : "?"}</small>
           </button>
         ))}
       </div>

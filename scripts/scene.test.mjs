@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { phrases } from "../src/story/data.ts";
 import { initialAnswer, isCorrect, normalizeSave, solution, storyLines, validateStory } from "../src/story/logic.ts";
-import { flatNodes, flow, keyOf, requiredKeys, sceneKeys, shownWords, spot, typedRight, worldAfter } from "../src/story/scene.ts";
+import { answerSlots, arrange, flatNodes, flow, keyOf, lookOrder, nodeAt, requiredKeys, sceneKeys, shownWords, spot, typedRight, worldAfter } from "../src/story/scene.ts";
 import { MNEMONICS } from "../src/story/mnemonics.ts";
 import { applyEffects, holds, TRACKS } from "../src/story/world.ts";
 import { sceneChapter1 } from "../src/story/scenes/01.ts";
@@ -62,6 +62,37 @@ test("the scene keeps a rhythm: short reading between actions and no long run of
       assert.ok(choices <= 3, `${beat.id}: четыре выбора подряд: ${n.task}`);
     }
     if (!beat.pov) assert.ok(all.filter((n) => n.t === "game").length >= 2, `${beat.id}: меньше двух игр`);
+  }
+});
+
+test("the right answer is not given away by its place", () => {
+  // Сид — id сцены, как в прототипе. Верный вариант стоит на каждом месте примерно поровну и не
+  // стоит на одном месте три выбора подряд; важные предметы осмотра не идут подряд в начале.
+  const shown = [];
+  for (const beat of scenes) {
+    const slots = answerSlots(nodes(beat), beat.id);
+    const run = [];
+    for (const key of sceneKeys(nodes(beat))) {
+      const n = nodeAt(nodes(beat), key);
+      if (n.t === "look") {
+        const order = lookOrder(n.items, `${beat.id}-${key}`);
+        const keys = n.items.filter((i) => i.key).length;
+        if (keys > 1 && keys < n.items.length)
+          assert.ok(order.slice(0, keys).some((i) => !n.items[i].key), `${beat.id}: важное — первым рядом`);
+        continue;
+      }
+      if (!["reply", "pick", "gap", "hear"].includes(n.t)) continue;
+      if (n.options.filter((o) => o.ok).length > 1) continue;
+      const options = n.t === "gap" || n.t === "hear" ? n.options.map((text) => ({ text, ok: text === n.answer })) : n.options;
+      const place = arrange(options, `${beat.id}-${key}`, slots.get(key)).findIndex((o) => o.ok);
+      run.push(place);
+      assert.ok(run.length < 3 || new Set(run.slice(-3)).size > 1, `${beat.id} ${key}: третий раз подряд на месте ${place}`);
+      shown.push(place);
+    }
+  }
+  for (const place of [0, 1, 2]) {
+    const count = shown.filter((p) => p === place).length;
+    assert.ok(Math.abs(count - shown.length / 3) <= 3, `верный на месте ${place + 1}: ${count} из ${shown.length}`);
   }
 });
 
