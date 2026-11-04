@@ -48,7 +48,8 @@ type SceneStep =
   /** Ответ игрока герою по-немецки: верных может быть несколько. */
   | { t: "reply"; task?: string; options: Pick[] }
   /** Своя реплика с клавиатуры; * в ответе — любое имя с большой буквы. */
-  | { t: "type"; task: string; answers: string[]; ru?: string }
+  /** sample — образец для подсказки; обязателен, если в ответе есть * (любое имя или место). */
+  | { t: "type"; task: string; answers: string[]; ru?: string; sample?: string }
   /** Пропуск в немецкой фразе. */
   | { t: "gap"; task: string; text: string; options: string[]; answer: string; ru?: string }
   /** Послушать реплику ещё раз и выбрать, что прозвучало или что она значит. */
@@ -56,7 +57,7 @@ type SceneStep =
   /** Решение детектива по-русски. */
   | { t: "pick"; task: string; options: Pick[] }
   /** Осмотр места: нажимать на предметы; все отмеченные key нужно найти. */
-  | { t: "look"; task: string; items: { icon: string; de?: string; ru: string; note: string; key?: true }[] }
+  | { t: "look"; task: string; items: { icon: string; de: string; ru: string; note: string; key?: true }[] }
   /**
    * Развилка: куда пойти или кого спросить; обязательные ветки игрок проходит в своём порядке,
    * побочные — по желанию, после чего «Дальше по делу» (next) уводит из развилки.

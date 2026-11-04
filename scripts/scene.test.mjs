@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { phrases } from "../src/story/data.ts";
 import { initialAnswer, isCorrect, normalizeSave, solution, storyLines, validateStory } from "../src/story/logic.ts";
-import { flatNodes, keyOf, requiredKeys, sceneKeys, spot, typedRight, worldAfter } from "../src/story/scene.ts";
+import { flatNodes, flow, keyOf, requiredKeys, sceneKeys, shownWords, spot, typedRight, worldAfter } from "../src/story/scene.ts";
 import { MNEMONICS } from "../src/story/mnemonics.ts";
 import { applyEffects, holds, TRACKS } from "../src/story/world.ts";
 import { sceneChapter1 } from "../src/story/scenes/01.ts";
@@ -44,6 +44,91 @@ test("a scene is mostly the player's actions, not reading", () => {
     assert.ok(new Set(all.filter((n) => ACTIONS.includes(n.t)).map((n) => n.t)).size >= 5, `${beat.id}: однообразно`);
   }
   assert.ok(actions >= 35, `${actions}`);
+});
+
+test("the scene keeps a rhythm: short reading between actions and no long run of the same choice", () => {
+  // Рассказ и реплики идут потоком до действия, поэтому чтение между действиями короткое,
+  // а выбор из кнопок (reply, pick, gap, hear) разбавлен играми и вводом.
+  const CHOICE = ["reply", "pick", "gap", "hear"];
+  for (const beat of scenes) {
+    const all = flatNodes(nodes(beat)).filter((n) => n.t !== "go" && n.t !== "when" && n.t !== "pic");
+    let reading = 0;
+    let choices = 0;
+    for (const n of all) {
+      if (n.t === "narr") assert.ok(n.text.length <= 170, `${beat.id}: длинный рассказ: ${n.text.slice(0, 40)}`);
+      if (ACTIONS.includes(n.t)) reading = 0;
+      else assert.ok(++reading <= 4, `${beat.id}: пять узлов чтения подряд перед «${n.text ?? n.de}»`);
+      choices = CHOICE.includes(n.t) ? choices + 1 : ACTIONS.includes(n.t) ? 0 : choices;
+      assert.ok(choices <= 3, `${beat.id}: четыре выбора подряд: ${n.task}`);
+    }
+    if (!beat.pov) assert.ok(all.filter((n) => n.t === "game").length >= 2, `${beat.id}: меньше двух игр`);
+  }
+});
+
+test("everything the player examines is named in German, once per chapter", () => {
+  const units = new Set([...Object.keys(words), ...Object.values(phrases).map((p) => p.de)]);
+  const seen = new Set();
+  for (const beat of scenes)
+    for (const n of flatNodes(nodes(beat))) {
+      if (n.t !== "look") continue;
+      for (const item of n.items) {
+        assert.ok(item.de, `${beat.id}: без немецкого: ${item.ru}`);
+        assert.ok(units.has(item.de), `${beat.id}: нет записи слова: ${item.de}`);
+        assert.ok(!seen.has(item.de), `${beat.id}: уже осматривали: ${item.de}`);
+        seen.add(item.de);
+      }
+    }
+});
+
+test("a typed answer with a free part shows a sample that fits, not a name in the wrong place", () => {
+  for (const beat of scenes)
+    for (const n of flatNodes(nodes(beat)))
+      if (n.t === "type" && n.answers.some((a) => a.includes("*"))) {
+        assert.ok(n.sample, `${beat.id}: ${n.task}`);
+        assert.equal(typedRight(n.sample, n.answers), "right", n.sample);
+      }
+  // Без образца сцена не проходит проверку.
+  const bare = { kind: "play", nodes: [{ t: "type", task: "x", answers: ["Ich komme aus *."] }] };
+  assert.ok(validateStory([{ ...sceneChapter1, beats: [{ ...scenes[0], challenge: bare }] }], phrases).length > 0);
+});
+
+test("reading flows by itself up to the next action and settles conditions on the way", () => {
+  const nodes = [
+    { t: "narr", text: "a" },
+    { t: "say", who: "A", voice: "Anna", de: "Moin!", ru: "Привет!" },
+    { t: "when", if: [{ q: "gull", min: 1 }], then: [{ t: "narr", text: "b" }], else: [{ t: "clue", title: "c", text: "c" }] },
+    { t: "gap", task: "x", text: "___", options: ["a", "b"], answer: "a" },
+    { t: "narr", text: "d" },
+  ];
+  assert.deepEqual(flow(nodes, [], undefined, { gull: 1 }), ["0", "1", "2|0", "2.0.0"]);
+  assert.deepEqual(flow(nodes, [], undefined, {}), ["0", "1", "2|1", "2.1.0"]);
+  // Действие останавливает поток, после него поток идёт до конца сцены.
+  assert.deepEqual(flow(nodes, ["0", "1", "2|1", "2.1.0"], undefined, {}), []);
+  assert.deepEqual(flow(nodes, ["0", "1", "2|1", "2.1.0", "3"], undefined, {}), ["4"]);
+});
+
+test("the narration names known things in German: at least the chapter 1 share of the plot plan", () => {
+  // Новое выражение читается с переводом, знакомое (выражение или слово, которое сцены уже
+  // показали) — только по-немецки. Цель главы 1 в A1-PLOT.md — 10% немецких слов в рассказе.
+  const known = new Set();
+  let de = 0;
+  let ru = 0;
+  for (const beat of scenes)
+    for (const n of flatNodes(nodes(beat))) {
+      if (n.t === "narr") {
+        const text = n.text.replace(/\{([\w-]+)\}/g, (_, id) => {
+          const p = phrases[id];
+          const shown = known.has(id) || known.has(p.de) ? p.de : `${p.ru} ${p.de}`;
+          known.add(id);
+          return ` ${shown} `;
+        });
+        for (const w of text.split(/[\s«»„“"(),.!?:;—–…-]+/).filter(Boolean))
+          if (/[а-яё]/i.test(w)) ru++;
+          else if (/^\p{L}+$/u.test(w)) de++;
+      }
+      for (const w of shownWords([n])) known.add(w);
+    }
+  assert.ok((100 * de) / (de + ru) >= 10, `${((100 * de) / (de + ru)).toFixed(1)}%`);
 });
 
 test("every new word is a lesson word and comes back in an action after it is heard", () => {

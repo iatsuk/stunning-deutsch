@@ -83,13 +83,16 @@ export function ChallengeView({
   beatId,
   rich,
   world,
+  known,
 }: {
   c: Challenge;
   game: GameProps;
   beatId: string;
-  rich: (s: string) => ReactNode;
+  rich: (s: string, known?: Set<string>) => ReactNode;
   /** Состояние мира до сцены: часы и отношения из прошлых сцен. */
   world?: World;
+  /** Слова, которые прошлые сцены главы уже показали. */
+  known?: string[];
 }) {
   const shown: Answer = game.value;
   const list = Array.isArray(shown) ? shown : [];
@@ -98,7 +101,7 @@ export function ChallengeView({
   const { disabled, change } = game;
   return (
     <>
-      {c.kind === "play" && <SceneView c={c} {...game} rich={rich} world={world} />}
+      {c.kind === "play" && <SceneView c={c} {...game} rich={rich} world={world} known={known} />}
       {c.kind === "match" && <Pairs c={c} {...game} />}
       {c.kind === "write" && <Write c={c} {...game} />}
       {c.kind === "bingo" && <Bingo c={c} {...game} />}

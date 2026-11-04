@@ -148,6 +148,46 @@ export const phrases: Record<string, Phrase> = {
     de: "die Kiste",
     note: "Женский род: die Kiste; во множественном числе die Kisten.",
   },
+  boot: {
+    ru: "лодка",
+    de: "das Boot",
+    note: "Средний род: das Boot. «Sprotte» — лодка Хауке.",
+  },
+  tuer: {
+    ru: "дверь",
+    de: "die Tür",
+    note: "Женский род: die Tür; во множественном числе die Türen.",
+  },
+  ehrentafel: {
+    ru: "доска почёта",
+    de: "die Ehrentafel",
+    note: "die Ehre — честь, die Tafel — доска; род у сложного слова — по последней части.",
+  },
+  fenster: {
+    ru: "окно",
+    de: "das Fenster",
+    note: "Средний род: das Fenster; во множественном числе тоже die Fenster.",
+  },
+  logbuch: {
+    ru: "журнал клуба",
+    de: "das Logbuch",
+    note: "das Buch — книга: бортовой журнал, куда записывают всё за день. Род — по последней части.",
+  },
+  anhaenger: {
+    ru: "бирка",
+    de: "der Anhänger",
+    note: "an + hängen — «навешивать»: бирка на верёвочке. Мужской род, как der Aufsteller.",
+  },
+  feder: {
+    ru: "перо",
+    de: "die Feder",
+    note: "Женский род: die Feder. Перо чайки — die Möwenfeder.",
+  },
+  taschenlampe: {
+    ru: "фонарик",
+    de: "die Taschenlampe",
+    note: "die Tasche — карман, die Lampe — лампа: фонарь, который носят в кармане.",
+  },
   neu: {
     ru: "Вы новичок. Вы видите всё.",
     de: "Sie sind neu. Sie sehen alles.",

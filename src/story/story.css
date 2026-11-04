@@ -2278,19 +2278,38 @@
   justify-content: flex-end;
   gap: 10px 12px;
 }
-/* Полоска хода сцены — на всю ширину, над переключателями. */
-.moin-play-progress {
+/* Ячейки действий сцены — на всю ширину, над переключателями: каждое действие заполняет свою. */
+.moin-play-cells {
   flex: 1 1 100%;
-  height: 4px;
-  border-radius: 2px;
-  background: var(--line);
-  overflow: hidden;
+  display: flex;
+  gap: 4px;
 }
-.moin-play-progress span {
-  display: block;
-  height: 100%;
+.moin-play-cells i {
+  flex: 1;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--line);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+.moin-play-cells i[data-done] {
   background: var(--accent);
-  transition: width 0.3s ease;
+}
+/* Рассказ и реплики потока появляются по очереди, затем — действие. */
+.moin-rise {
+  animation: moin-rise 0.35s ease-out both;
+  animation-delay: calc(var(--i, 0) * 0.32s);
+  scroll-margin-top: 72px;
+}
+@keyframes moin-rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .moin-rise {
+    animation: none;
+  }
 }
 .moin-play-more {
   justify-self: start;

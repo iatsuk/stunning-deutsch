@@ -1,17 +1,21 @@
-import { useEffect, useRef, useState, type ReactNode } from "react";
-import { say } from "../hooks";
+import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
+import { playAll, say } from "../hooks";
 import { shuffle } from "../lib/shuffle";
 import { PlayButton } from "../markup";
 import { nearMisses } from "../trainer/logic";
 import { storyAudio, wordInfo } from "./audio";
 import { AUTOMATIC, ChallengeView } from "./ChallengeView";
 import { Gendered, Note, textInput, UmlautKeys, type GameProps } from "./games";
-import { initialAnswer, isCorrect, mistake, solution } from "./logic";
+import { phrases } from "./data";
+import { initialAnswer, isCorrect, mistake, phraseIds, solution } from "./logic";
 import {
+  flow,
+  isPassive,
   keyOf,
   nodeAt,
   picsBefore,
   requiredKeys,
+  shownWords,
   spot,
   typedOf,
   typedRight,
@@ -23,13 +27,17 @@ import { applyEffects, effectText, holds, TRACKS, type World } from "./world";
 
 // Сцена: разговор и осмотр места, в который вплетены действия. Сцена помещается на экран:
 // видны картинка момента, последние реплики и текущее действие, а весь разговор раскрывается
-// кнопкой. Реплики героев звучат сами, если озвучка включена.
+// кнопкой. Рассказ и реплики между действиями появляются сами, одна за другой: останавливает
+// сцену только действие игрока. Реплики героев звучат сами, если озвучка включена.
 
 /** Сколько последних реплик видно, пока разговор свёрнут. */
 const RECENT = 3;
+/** Действия игрока: они останавливают поток сцены и отмечаются ячейками. */
+const ACTIONS: SceneNode["t"][] = ["reply", "type", "gap", "hear", "pick", "look", "game"];
 
 type Play = Extract<Challenge, { kind: "play" }>;
-type Rich = (s: string) => ReactNode;
+/** Текст с немецкими единицами; known — что игрок уже видел: такие единицы без перевода. */
+type Rich = (s: string, known?: Set<string>) => ReactNode;
 
 const VOICE_KEY = "sd-moin-voice";
 function readVoice() {
@@ -51,7 +59,14 @@ export function SceneView({
   rich,
   quiet,
   world = {},
-}: GameProps & { c: Play; rich: Rich; world?: World }) {
+  known = [],
+}: GameProps & {
+  c: Play;
+  rich: Rich;
+  world?: World;
+  /** Слова, которые игрок уже видел в прошлых сценах главы: при осмотре они без перевода. */
+  known?: string[];
+}) {
   const entries = Array.isArray(value) ? value : [];
   const done = new Set(entries.map(keyOf));
   // Мир к этому моменту: что было до сцены и последствия уже пройденных узлов.
@@ -62,31 +77,67 @@ export function SceneView({
   const [notesOpen, setNotesOpen] = useState(false);
   const here = spot(c.nodes, entries, open, state);
   const current = useRef<HTMLDivElement>(null);
+  const first = useRef<HTMLDivElement>(null);
+  // Реплики последнего потока: они появляются по очереди, а свёрнутый разговор показывает их все.
+  const [batch, setBatch] = useState<string[]>([]);
+  // Запись следующего действия уже стоит в очереди за репликами потока: не прерывать её.
+  const queued = useRef<string | undefined>(undefined);
   const position = here.at === "end" ? "end" : here.key;
 
-  function advance(entry: string) {
-    const next = [...entries, entry];
+  function advance(...added: string[]) {
+    const next = [...entries, ...added];
     change(next);
     setOpen(undefined);
     setFull(false);
     if (isCorrect(c, next)) win();
+    return next;
   }
-  // Условие решается, как только сцена до него дошла, и решение запоминается: последствия,
-  // которые случатся позже, уже не перевернут то, что игрок видел.
+  // Рассказ, реплики, предметы и улики идут потоком до следующего действия. Условие решается,
+  // как только сцена до него дошла, и решение запоминается: последствия, которые случатся
+  // позже, уже не перевернут то, что игрок видел.
   useEffect(() => {
-    if (disabled || here.at !== "auto") return;
-    advance(`${here.key}|${holds(here.node.if, state) ? 0 : 1}`);
+    if (disabled) return;
+    if (here.at !== "auto" && !(here.at === "node" && isPassive(here.node)))
+      return;
+    const added = flow(c.nodes, entries, open, state);
+    const next = advance(...added);
+    setBatch(added.map(keyOf));
+    if (!voice) return;
+    const after = spot(c.nodes, next, undefined, worldAfter(c.nodes, next, world));
+    const lines = added.flatMap((e) => {
+      const n = nodeAt(c.nodes, keyOf(e));
+      return n?.t === "say" ? [storyAudio(n.de, n.voice)] : [];
+    });
+    if (after.at === "node" && after.node.t === "hear" && lines.length) {
+      lines.push(storyAudio(after.node.de, after.node.voice));
+      queued.current = after.key;
+    }
+    playAll(lines);
   }, [position]);
-  // Новая реплика звучит сама; переход к следующему узлу держит его в поле зрения.
+  // Новое действие держится в поле зрения; новый поток читается с начала. Запись для «послушайте»
+  // звучит сама, если она не стоит в очереди за репликами.
   useEffect(() => {
-    if (disabled || here.at !== "node") return;
-    if (voice && (here.node.t === "say" || here.node.t === "hear"))
+    if (disabled || here.at === "auto") return;
+    if (here.at === "node" && isPassive(here.node)) return;
+    if (
+      voice &&
+      here.at === "node" &&
+      here.node.t === "hear" &&
+      queued.current !== here.key
+    )
       say(storyAudio(here.node.de, here.node.voice));
-    current.current?.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    queued.current = undefined;
+    const target = batch.length ? first.current : current.current;
+    target?.scrollIntoView({
+      block: batch.length ? "start" : "nearest",
+      behavior: "smooth",
+    });
   }, [position]);
 
-  // Перевод реплики сразу виден, пока она звучит впервые в сцене.
+  // Перевод реплики сразу виден, пока она звучит впервые в сцене. Немецкая единица рассказа
+  // знакома, если уже встречалась: в прошлых сценах, в рассказе выше или среди новых слов.
   const heard = new Set<string>();
+  const met = new Set(known);
   const items = (disabled ? (solution(c) as string[]) : entries).flatMap(
     (entry) => {
       const key = keyOf(entry);
@@ -99,14 +150,28 @@ export function SceneView({
           : undefined;
       const effects = applyEffects(applyEffects({}, node.set), chosen);
       if (node.t === "say") heard.add(node.de);
+      const before = new Set(met);
+      if (node.t === "narr")
+        for (const id of phraseIds(node.text)) {
+          met.add(id);
+          if (phrases[id]) met.add(phrases[id].de);
+        }
+      shownWords([node]).forEach((w) => met.add(w));
       const pics = picsBefore(c.nodes, key);
+      const order = batch.indexOf(key);
       return [
         {
+          key,
           node,
           pics,
           branch: branchOf(c.nodes, key),
           element: (
-            <div key={key}>
+            <div
+              key={key}
+              ref={order === 0 ? first : undefined}
+              className={order >= 0 ? "moin-rise" : undefined}
+              style={order >= 0 ? ({ "--i": order } as CSSProperties) : undefined}
+            >
               {pics.map((p) => (
                 <Pic key={p.src} node={p} />
               ))}
@@ -114,7 +179,7 @@ export function SceneView({
                 node={node}
                 typed={typedOf(entry)}
                 fresh={fresh}
-                rich={rich}
+                rich={(s) => rich(s, before)}
               />
               {Object.keys(effects).length > 0 && (
                 <p className="moin-play-effect">{effectText(effects)}</p>
@@ -125,7 +190,17 @@ export function SceneView({
       ];
     },
   );
-  const from = full ? 0 : Math.max(0, items.length - RECENT);
+  // Свёрнутый разговор показывает весь последний поток и ответ перед ним.
+  const batchStart = items.findIndex((i) => batch.includes(i.key));
+  const from = full
+    ? 0
+    : Math.max(
+        0,
+        Math.min(
+          items.length - RECENT,
+          batchStart < 0 ? items.length : batchStart - 1,
+        ),
+      );
   // Картинка момента — последняя пройденная. Она остаётся на экране, даже когда реплика, к которой
   // она относится, свёрнута; более ранние картинки видны только в развёрнутом разговоре.
   const currentPics = here.at === "node" ? picsBefore(c.nodes, here.key) : [];
@@ -133,7 +208,11 @@ export function SceneView({
     ? undefined
     : items.flatMap((i) => i.pics).at(-1);
   const keys = requiredKeys(c.nodes, entries);
-  const passed = keys.filter((k) => done.has(k)).length;
+  const actions = keys.filter((k) => {
+    const n = nodeAt(c.nodes, k);
+    return n && ACTIONS.includes(n.t);
+  });
+  const passed = actions.filter((k) => done.has(k)).length;
   // Часы и отношения, которые уже сдвинулись: их показывает блокнот сцены.
   const tracks = Object.entries(state).filter(([q, v]) => v > 0 && TRACKS[q]);
   // Блокнот сцены: улики и предметы под рукой, чтобы не искать их в разговоре.
@@ -148,14 +227,13 @@ export function SceneView({
     <div className="moin-play">
       <div className="moin-play-bar">
         <span
-          className="moin-play-progress"
-          aria-label={`Пройдено узлов сцены: ${passed} из ${keys.length}`}
+          className="moin-play-cells"
+          role="img"
+          aria-label={`Действий в сцене: ${disabled ? actions.length : passed} из ${actions.length}`}
         >
-          <span
-            style={{
-              width: `${(100 * (disabled ? keys.length : passed)) / keys.length}%`,
-            }}
-          />
+          {actions.map((k) => (
+            <i key={k} data-done={disabled || done.has(k) || undefined} />
+          ))}
         </span>
         <label className="moin-play-voice">
           <input
@@ -282,7 +360,11 @@ export function SceneView({
         </div>
       )}
       {!disabled && here.at === "node" && (
-        <div className="moin-play-current" ref={current}>
+        <div
+          className={`moin-play-current${batch.length ? " moin-rise" : ""}`}
+          ref={current}
+          style={{ "--i": batch.length } as CSSProperties}
+        >
           {currentBranch &&
             !shown.some((i) => i.branch?.key === currentBranch.key) && (
               <p className="moin-play-group-title">
@@ -301,7 +383,7 @@ export function SceneView({
               <DoneNode
                 node={here.node}
                 fresh={!heard.has(here.node.t === "say" ? here.node.de : "")}
-                rich={rich}
+                rich={(s) => rich(s, met)}
               />
               <NextButton onClick={() => advance(here.key)} />
             </>
@@ -314,7 +396,11 @@ export function SceneView({
               miss={miss}
               rich={rich}
               quiet={quiet}
-              done={(entry) => advance(entry)}
+              known={met}
+              done={(entry) => {
+                setBatch([]);
+                advance(entry);
+              }}
             />
           )}
         </div>
@@ -415,7 +501,7 @@ function DoneNode({
       return (
         <p className="moin-play-note">
           Осмотрено:{" "}
-          {node.items.map((i) => `${i.icon} ${i.de ?? i.ru}`).join(", ")}
+          {node.items.map((i) => `${i.icon} ${i.de}`).join(", ")}
         </p>
       );
     case "item":
@@ -570,6 +656,7 @@ function Task({
   miss,
   rich,
   quiet,
+  known,
   done,
 }: {
   node: SceneNode;
@@ -579,6 +666,7 @@ function Task({
   rich: Rich;
   /** Отвечать письменно там, где нужно говорить: например, в офисе. */
   quiet?: boolean;
+  known: Set<string>;
   done: (entry: string) => void;
 }) {
   switch (node.t) {
@@ -632,7 +720,7 @@ function Task({
         />
       );
     case "look":
-      return <Look node={node} done={() => done(nodeKey)} />;
+      return <Look node={node} known={known} done={() => done(nodeKey)} />;
     case "game":
       return (
         <Embedded
@@ -726,7 +814,8 @@ function Typed({
   const [tries, setTries] = useState(0);
   const [verdict, setVerdict] = useState<string>();
   const field = useRef<HTMLInputElement | null>(null);
-  const model = node.answers[0].replace("*", "Anna");
+  const model =
+    node.sample ?? node.answers.find((a) => !a.includes("*")) ?? node.answers[0];
   function check() {
     const result = typedRight(text, node.answers);
     if (result === "right") return done(text.trim());
@@ -779,13 +868,17 @@ function Typed({
 
 function Look({
   node,
+  known,
   done,
 }: {
   node: Extract<SceneNode, { t: "look" }>;
+  /** Знакомое слово показывается без перевода: перевод — по нажатию. */
+  known: Set<string>;
   done: () => void;
 }) {
   const [seen, setSeen] = useState<number[]>([]);
   const [focus, setFocus] = useState<number>();
+  const [translated, setTranslated] = useState<number[]>([]);
   const keys = node.items.flatMap((item, i) => (item.key ? [i] : []));
   const ready = keys.every((i) => seen.includes(i));
   const item = focus === undefined ? undefined : node.items[focus];
@@ -799,32 +892,38 @@ function Look({
             key={i}
             aria-pressed={focus === i}
             data-seen={seen.includes(i) || undefined}
-            aria-label={seen.includes(i) ? (it.de ?? it.ru) : "Осмотреть"}
+            aria-label={seen.includes(i) ? it.de : "Осмотреть"}
             onClick={() => {
               setFocus(i);
               if (!seen.includes(i)) setSeen([...seen, i]);
-              if (it.de) say(wordInfo(it.de)?.audio ?? storyAudio(it.de));
+              say(wordInfo(it.de)?.audio ?? storyAudio(it.de));
             }}
           >
             <span aria-hidden="true">{it.icon}</span>
-            <small lang={it.de ? "de" : undefined}>
-              {seen.includes(i) ? (it.de ?? it.ru) : "?"}
-            </small>
+            <small lang="de">{seen.includes(i) ? it.de : "?"}</small>
           </button>
         ))}
       </div>
       {item && (
         <p className="moin-play-note">
-          {item.de && (
+          <b lang="de">
+            <Gendered text={item.de} />
+          </b>{" "}
+          {!known.has(item.de) || translated.includes(focus!) ? (
+            <>— {item.ru}. </>
+          ) : (
             <>
-              <b lang="de">
-                <Gendered text={item.de} />
-              </b>{" "}
-              — {item.ru}.{" "}
+              <button
+                type="button"
+                className="link-button"
+                onClick={() => setTranslated([...translated, focus!])}
+              >
+                Перевод
+              </button>{" "}
             </>
           )}
           {item.note}
-          {item.de && mnemonic(item.de) && (
+          {mnemonic(item.de) && (
             <span className="moin-hook">💡 {mnemonic(item.de)}</span>
           )}
         </p>

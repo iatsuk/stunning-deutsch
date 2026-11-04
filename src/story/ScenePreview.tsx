@@ -7,7 +7,7 @@ import { ChallengeView } from "./ChallengeView";
 import { phrases } from "./data";
 import { mnemonic } from "./mnemonics";
 import { beatPhrases, initialAnswer, isCorrect } from "./logic";
-import { flatNodes, keyOf, nodeAt, worldAfter } from "./scene";
+import { flatNodes, keyOf, nodeAt, shownWords, worldAfter } from "./scene";
 import { sceneChapter1 } from "./scenes/01";
 import type { Answer, SceneNode } from "./types";
 import { TRACKS, type World } from "./world";
@@ -58,7 +58,8 @@ export function ScenePreview() {
     save.drafts[beat.id] ?? (initialAnswer(beat.challenge) as string[]);
   const solved = (i: number) =>
     isCorrect(scenes[i].challenge, save.drafts[scenes[i].id]);
-  // Немецкая единица в рассказе знакома, если звучала в прошлых сценах.
+  // Немецкая единица в рассказе знакома, если звучала в прошлых сценах; слово — если сцены
+  // его уже показали: среди новых слов реплик, при осмотре или в инвентаре.
   const known = new Set(scenes.slice(0, save.at).flatMap(beatPhrases));
   useEffect(() => {
     try {
@@ -82,6 +83,9 @@ export function ScenePreview() {
         {} as World,
       );
   const before = worldBefore(save.at);
+  const words = scenes
+    .slice(0, save.at)
+    .flatMap((_, i) => shownWords(flatNodes(nodesOf(i))));
   const now = worldBefore(scenes.length);
   // Блокнот и инвентарь собираются из пройденных узлов всех сцен.
   const gains = scenes.flatMap((s) =>
@@ -100,13 +104,14 @@ export function ScenePreview() {
     setSave((s) => ({ ...s, at }));
     window.scrollTo({ top: 0 });
   }
-  function rich(text: string) {
+  function rich(text: string, seen?: Set<string>) {
     return text.split(/(\{[\w-]+\})/g).map((part, i) => {
       if (!part.startsWith("{")) return part;
       const id = part.slice(1, -1);
       const p = phrases[id];
       if (!p) return part;
-      const fresh = !known.has(id);
+      const fresh =
+        !known.has(id) && !words.includes(p.de) && !seen?.has(id) && !seen?.has(p.de);
       return (
         <Fragment key={i}>
           {fresh && <span>{p.ru} </span>}
@@ -222,6 +227,7 @@ export function ScenePreview() {
                 beatId={beat.id}
                 rich={rich}
                 world={before}
+                known={words}
                 game={{
                   value,
                   seed: beat.id,

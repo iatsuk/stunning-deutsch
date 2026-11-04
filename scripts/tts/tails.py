@@ -1,7 +1,9 @@
-"""Find recordings where a fragment of a new phrase follows the end and is cut off.
+"""Find recordings whose end is broken: a fragment after the phrase, or the phrase cut off.
 
 OmniVoice sometimes keeps generating after the text: after a pause a short burst starts
-and ends abruptly at the end of the output. Whisper does not report such a fragment.
+and ends abruptly at the end of the output. It also sometimes stops in the middle of the last
+vowel: the output ends while the voice is still loud, and the added silence follows at once.
+Whisper reports neither.
 
     python3 tails.py --manifest manifest.json WAV...
 
@@ -22,6 +24,10 @@ import numpy as np
 PAUSE_MS = 300
 BLIP_MS = 60
 FRAGMENT_MS = 250
+# Level of the last 20 ms of the output before the added silence, relative to the peak. Over
+# 591 OmniVoice recordings, the three with a clipped last vowel (Super! Bravo! among them) end
+# louder than -30 dB; complete endings fade below -32 dB.
+CUT_DB = -30
 
 
 def pcm(path):
@@ -38,8 +44,20 @@ def pcm(path):
     raise ValueError(f'No PCM data: {path}')
 
 
+def end_level(rate, audio):
+    """Level in dB of the last 20 ms before the trailing silence, relative to the peak."""
+    peak = np.abs(audio).max()
+    sound = np.flatnonzero(np.abs(audio) >= peak * 10 ** (-60 / 20))
+    end = sound[-1] + 1
+    seg = audio[max(0, end - rate // 50):end]
+    return 20 * np.log10(np.sqrt((seg ** 2).mean()) / peak + 1e-9)
+
+
 def tail(path, text):
     rate, audio = pcm(path)
+    level = end_level(rate, audio)
+    if level > CUT_DB:
+        return {'file': Path(path).name, 'text': text, 'endDb': round(float(level), 1), 'reason': 'cut off at the end'}
     win = rate // 100
     frames = len(audio) // win
     energy = np.sqrt((audio[:frames * win].reshape(frames, win) ** 2).mean(1))

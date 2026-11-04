@@ -156,6 +156,38 @@ export function spot(nodes: SceneNode[], entries: string[], open?: string, world
   return walk(nodes, "") ?? { at: "end" };
 }
 
+/** Узлы, которые игрок только читает: они идут потоком до следующего действия. */
+export const isPassive = (node: SceneNode) =>
+  node.t === "narr" || node.t === "say" || node.t === "item" || node.t === "clue";
+
+/**
+ * Поток до следующего действия: реплики, рассказ, предметы и улики проходят сами, условия
+ * решаются по состоянию мира. Останавливает поток только действие игрока, меню развилки или
+ * конец сцены. Возвращает записи, которые нужно добавить к прохождению.
+ */
+export function flow(nodes: SceneNode[], entries: string[], open?: string, world: World = {}): string[] {
+  const out: string[] = [];
+  let state = world;
+  for (;;) {
+    const here = spot(nodes, [...entries, ...out], open, state);
+    const entry =
+      here.at === "auto"
+        ? `${here.key}|${holds(here.node.if, state) ? 0 : 1}`
+        : here.at === "node" && isPassive(here.node)
+          ? here.key
+          : undefined;
+    if (!entry) return out;
+    out.push(entry);
+    state = worldAfter(nodes, [entry], state);
+  }
+}
+
+/** Слова, которые узлы уже показали игроку: новые слова реплик, осмотр и предметы. */
+export const shownWords = (nodes: SceneNode[]): string[] =>
+  nodes.flatMap((n) =>
+    n.t === "say" ? (n.learn ?? []) : n.t === "look" ? n.items.map((i) => i.de) : n.t === "item" ? [n.de] : [],
+  );
+
 /** Набранная реплика верна, если совпала с ответом; * — любое имя с большой буквы. */
 export function typedRight(text: string, answers: string[]) {
   const plainAnswers = answers.filter((a) => !a.includes("*"));

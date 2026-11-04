@@ -1,7 +1,7 @@
 import { shuffle } from "../lib/shuffle.ts";
 import { judge, nearMisses } from "../trainer/logic.ts";
 import { V1_ORDER } from "./v1-order.ts";
-import { flatNodes, keyOf, requiredKeys, sceneKeys, sceneVoices, sceneWords, solutionEntries } from "./scene.ts";
+import { flatNodes, keyOf, requiredKeys, sceneKeys, sceneVoices, sceneWords, solutionEntries, typedRight } from "./scene.ts";
 import { TRACKS, type Cond, type Effects } from "./world.ts";
 import type {
   SceneNode,
@@ -813,13 +813,18 @@ function validateScene(
           n.options.every((o) => (o.ok || o.react) && (!o.set || (o.ok && effects(o.set))))
         );
       case "type":
-        return n.answers.length > 0 && Boolean(n.task);
+        // Образец не может подставлять в «*» случайное имя: где есть *, он задан и сам верен.
+        return (
+          n.answers.length > 0 &&
+          Boolean(n.task) &&
+          (!n.answers.some((a) => a.includes("*")) || (Boolean(n.sample) && typedRight(n.sample!, n.answers) === "right"))
+        );
       case "gap":
         return n.text.includes("___") && n.options.includes(n.answer) && new Set(n.options).size === n.options.length && n.options.length >= 2;
       case "hear":
         return n.options.includes(n.answer) && new Set(n.options).size === n.options.length && n.options.length >= 2;
       case "look":
-        return n.items.some((i) => i.key) && n.items.every((i) => i.note && i.ru && i.icon);
+        return n.items.some((i) => i.key) && n.items.every((i) => i.note && i.ru && i.icon && i.de);
       case "go":
         // Обязательных веток не меньше двух — или есть побочные; условие появления — только у побочных.
         return (

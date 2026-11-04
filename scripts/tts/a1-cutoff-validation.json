@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-04",
+  "scope": "OmniVoice recordings whose last vowel was clipped: found by scripts/tts/tails.py (end level) over all 591 OmniVoice recordings and re-voiced with another seed under the same file name; plus the new words and line of the chapter 1 scene prototype",
+  "model": "k2-fsa/OmniVoice",
+  "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+  "detector": "tails.py: level of the last 20 ms before the added silence above -30 dB of the peak; complete endings in the set fade below -32 dB",
+  "candidatesPerPhrase": {
+    "revoiced": 6,
+    "new": 3
+  },
+  "asr": "openai/whisper-large-v3",
+  "files": [
+    {
+      "file": "aa3efe28fa93.m4a",
+      "text": "das Boot",
+      "voice": "Anna",
+      "seed": 21061666,
+      "heard": "Das Boot",
+      "new": true
+    },
+    {
+      "file": "b732cb1245fa.m4a",
+      "text": "die Tür",
+      "voice": "Anna",
+      "seed": 20497080,
+      "heard": "Die Tür",
+      "new": true
+    },
+    {
+      "file": "378fe6378ba8.m4a",
+      "text": "die Ehrentafel",
+      "voice": "Anna",
+      "seed": 20527782,
+      "heard": "Die Ehrentafel",
+      "new": true
+    },
+    {
+      "file": "bafe102e062e.m4a",
+      "text": "das Fenster",
+      "voice": "Anna",
+      "seed": 21180157,
+      "heard": "Das Fenster",
+      "new": true
+    },
+    {
+      "file": "ec71dd62f502.m4a",
+      "text": "das Logbuch",
+      "voice": "Anna",
+      "seed": 20970594,
+      "heard": "Das Logbuch",
+      "new": true
+    },
+    {
+      "file": "8a5a1a99eb56.m4a",
+      "text": "der Anhänger",
+      "voice": "Anna",
+      "seed": 21261460,
+      "heard": "Der Anhänger",
+      "new": true
+    },
+    {
+      "file": "c253684664c7.m4a",
+      "text": "die Feder",
+      "voice": "Anna",
+      "seed": 20778919,
+      "heard": "Die Feder",
+      "new": true
+    },
+    {
+      "file": "7f852e8546e1.m4a",
+      "text": "die Taschenlampe",
+      "voice": "Anna",
+      "seed": 21133232,
+      "heard": "Die Taschenlampe",
+      "new": true
+    },
+    {
+      "file": "2d6677081075.m4a",
+      "text": "Die Farbe ist alt.",
+      "voice": "Rocko",
+      "seed": 21192341,
+      "heard": "Die Farbe ist alt.",
+      "new": true
+    },
+    {
+      "file": "0d81528931be.m4a",
+      "text": "Können Sie mir bitte mit dem Koffer helfen?",
+      "voice": "Anna",
+      "seed": 20973688,
+      "heard": "Können Sie mir bitte mit dem Koffer helfen?",
+      "found": "clipped ending, -26.3 dB before the silence"
+    },
+    {
+      "file": "786b44fbd086.m4a",
+      "text": "Super! Bravo!",
+      "voice": "Reed",
+      "seed": 20480098,
+      "heard": "Super! Bravo!",
+      "found": "clipped ending, -26.7 dB before the silence"
+    },
+    {
+      "file": "a3fa4c1fb994.m4a",
+      "text": "Und du, Möwe? Woher kommst du?",
+      "voice": "Flo",
+      "seed": 20607566,
+      "heard": "Und du, Möwe, woher kommst du?",
+      "found": "clipped ending, -29.0 dB before the silence"
+    }
+  ],
+  "note": "All 45 candidates were recognised correctly. The new check also rejected two clipped candidates (das Logbuch, das Boot) and one blip after the end (das Fenster). Among the rest, the take with the quietest ending was chosen. Automated checks do not replace listening."
+}
