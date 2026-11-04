@@ -4,6 +4,7 @@ import { stopAudio, useMobile } from "../hooks";
 import { PlayButton, plural } from "../markup";
 import { a1Words, storyAudio, wordInfo } from "./audio";
 import { beats, episodes, phrases } from "./data";
+import { mnemonic } from "./mnemonics";
 import { WordDrill } from "./drill";
 import { RuleCard } from "./RuleCard";
 import { rulesBefore, stepRules } from "./rules";
@@ -592,6 +593,9 @@ export function StoryPage() {
                       </strong>
                       <div>{phrases[phrase].ru}</div>
                       <small>{phrases[phrase].note}</small>
+                      {mnemonic(phrases[phrase].de) && (
+                        <span className="moin-hook">💡 {mnemonic(phrases[phrase].de)}</span>
+                      )}
                     </aside>
                   )}
                   {beat.source && (

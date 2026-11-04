@@ -1,3 +1,5 @@
+import type { Cond, Effects } from "./world.ts";
+
 export type Phrase = { ru: string; de: string; note: string };
 export type Option = { id: string; text: string; why: string };
 export type ChatTurn = {
@@ -25,13 +27,20 @@ export type OralRound = {
   model: string;
   ru: string;
 };
-/** Вариант в сцене: верный продвигает разговор, неверный получает реакцию. */
-export type Pick = { text: string; ok?: true; react?: string };
+/**
+ * Вариант в сцене: верный продвигает разговор, неверный получает реакцию. Верных может быть
+ * несколько, и у каждого свои последствия (set): так выбор меняет мир.
+ */
+export type Pick = { text: string; ok?: true; react?: string; set?: Effects };
+/** Ветка развилки; optional — побочное задание, if — когда оно вообще появляется. */
+export type Branch = { label: string; icon: string; nodes: SceneNode[]; optional?: true; if?: Cond[] };
 /**
  * Узел сцены. Сцена — разговор и осмотр места, в который вплетены действия: так сюжет
- * идёт через действия игрока, а не между отдельными играми.
+ * идёт через действия игрока, а не между отдельными играми. У любого узла могут быть
+ * последствия set: они срабатывают, когда узел пройден.
  */
-export type SceneNode =
+export type SceneNode = SceneStep & { set?: Effects };
+type SceneStep =
   /** Рассказчик по-русски; немецкие единицы — {id}, как в рассказе шагов. */
   | { t: "narr"; text: string }
   /** Реплика героя голосом; learn — новые слова уроков, которые она вводит. */
@@ -48,8 +57,13 @@ export type SceneNode =
   | { t: "pick"; task: string; options: Pick[] }
   /** Осмотр места: нажимать на предметы; все отмеченные key нужно найти. */
   | { t: "look"; task: string; items: { icon: string; de?: string; ru: string; note: string; key?: true }[] }
-  /** Развилка: куда пойти или кого спросить; пройти нужно все ветки, порядок выбирает игрок. */
-  | { t: "go"; task: string; branches: { label: string; icon: string; nodes: SceneNode[] }[] }
+  /**
+   * Развилка: куда пойти или кого спросить; обязательные ветки игрок проходит в своём порядке,
+   * побочные — по желанию, после чего «Дальше по делу» (next) уводит из развилки.
+   */
+  | { t: "go"; task: string; branches: Branch[]; next?: string }
+  /** Вариант по состоянию мира: решение принимается, когда сцена до него дошла, и запоминается. */
+  | { t: "when"; if: Cond[]; then: SceneNode[]; else?: SceneNode[] }
   /** Предмет в инвентарь. */
   | { t: "item"; icon: string; de: string; ru: string }
   /** Улика в блокнот. */
@@ -142,6 +156,8 @@ export type Beat = {
   audio?: { file: string; text: string; ru: string };
   /** Реплики голосом: текст открывается по кнопке. */
   voices?: VoiceLine[];
+  /** Интерлюдия: сцена глазами другого героя («Тем временем · глазами чайки»). */
+  pov?: string;
   /** Выражения, которые возвращаются в конце главы после ошибки на этом шаге. */
   practice?: string[];
   prompt: string;

@@ -192,6 +192,10 @@
  "Rocko|Und jetzt wohnst du hier, in Kiel!": "audio/6bc5dd69b7db.m4a",
  "Eddy|Guten Morgen!": "audio/40c30ec74fa8.m4a",
  "Sandy|Moin moin! Wie geht's?": "audio/a990ff6d15e8.m4a",
+ "Reed|Guten Tag!": "audio/886fd8f80303.m4a",
+ "Anna|Guten Abend!": "audio/7b0f91930611.m4a",
+ "Flo|Tschüss!": "audio/45dc960f009b.m4a",
+ "Sandy|Danke! Super!": "audio/5a067c9f871a.m4a",
  "Shelley|Hallo, Hauke! Tschüss, Hauke!": "audio/636b5b1430c5.m4a",
  "Rocko|Das ist der Hafen. Und das ist mein Boot.": "audio/b4a02b541823.m4a",
  "Rocko|Das Boot heißt „Sprotte“. Wir segeln hier.": "audio/5a839b80c8c8.m4a",
@@ -208,5 +212,9 @@
  "Anna|Ich komme aus Kasachstan. Aber ich wohne jetzt hier in Kiel, in Gaarden.": "audio/67a0bf93ace8.m4a",
  "Anna|Welche Sprachen sprichst du?": "audio/075d3bc16c7d.m4a",
  "Anna|Super! Ich spreche Kasachisch, Russisch, Englisch und ein bisschen Deutsch.": "audio/9059b0cdb391.m4a",
- "Rocko|Die Gäste schlafen noch.": "audio/0cd8842cac48.m4a"
+ "Rocko|Die Gäste schlafen noch.": "audio/0cd8842cac48.m4a",
+ "Shelley|Ich bin die Möwe.": "audio/6252a793bf07.m4a",
+ "Shelley|Ich wohne hier. Das ist mein Hafen.": "audio/3d7f24c47656.m4a",
+ "Shelley|Ich spreche Möwisch. Kreeh!": "audio/f1578bf74af8.m4a",
+ "Shelley|Gestern: ein Mann, eine Frau und das Schild. Tschüss, Schild!": "audio/deabce06b8e7.m4a"
 }

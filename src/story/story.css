@@ -2348,3 +2348,38 @@
 .moin-play-group-title {
   cursor: default;
 }
+/* Мнемоника: ассоциация рядом с переводом. */
+.moin-hook {
+  display: block;
+  margin-top: 4px;
+  color: var(--accent);
+  font-size: 13px;
+}
+/* Последствие выбора: какие часы или отношения сдвинулись. */
+.moin-play-effect {
+  margin: 4px 0 0;
+  font-size: 12px;
+  color: var(--accent);
+}
+.moin-play-tracks {
+  margin: 8px 0 10px;
+  padding: 0;
+  list-style: none;
+  font-size: 13px;
+}
+.moin-play-tracks span {
+  margin-left: 6px;
+  letter-spacing: 2px;
+  color: var(--accent);
+}
+.moin-play-menu button[data-optional] {
+  border-style: dashed;
+}
+.moin-play-menu small {
+  color: var(--muted);
+}
+.moin-pov {
+  margin: -4px 30px 10px;
+  font-size: 12px;
+  color: var(--accent);
+}

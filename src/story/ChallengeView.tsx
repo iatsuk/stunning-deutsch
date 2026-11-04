@@ -27,6 +27,7 @@ import {
 } from "./games";
 import { SceneView } from "./SceneView";
 import type { Answer, Challenge } from "./types";
+import type { World } from "./world";
 
 // Отрисовка любого действия по его виду. Нужна и шагу истории, и сцене, куда игра встроена.
 
@@ -81,11 +82,14 @@ export function ChallengeView({
   game,
   beatId,
   rich,
+  world,
 }: {
   c: Challenge;
   game: GameProps;
   beatId: string;
   rich: (s: string) => ReactNode;
+  /** Состояние мира до сцены: часы и отношения из прошлых сцен. */
+  world?: World;
 }) {
   const shown: Answer = game.value;
   const list = Array.isArray(shown) ? shown : [];
@@ -94,7 +98,7 @@ export function ChallengeView({
   const { disabled, change } = game;
   return (
     <>
-      {c.kind === "play" && <SceneView c={c} {...game} rich={rich} />}
+      {c.kind === "play" && <SceneView c={c} {...game} rich={rich} world={world} />}
       {c.kind === "match" && <Pairs c={c} {...game} />}
       {c.kind === "write" && <Write c={c} {...game} />}
       {c.kind === "bingo" && <Bingo c={c} {...game} />}

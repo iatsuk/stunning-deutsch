@@ -1,7 +1,8 @@
 import { shuffle } from "../lib/shuffle.ts";
 import { judge, nearMisses } from "../trainer/logic.ts";
 import { V1_ORDER } from "./v1-order.ts";
-import { flatNodes, keyOf, sceneKeys, sceneVoices, sceneWords } from "./scene.ts";
+import { flatNodes, keyOf, requiredKeys, sceneKeys, sceneVoices, sceneWords, solutionEntries } from "./scene.ts";
+import { TRACKS, type Cond, type Effects } from "./world.ts";
 import type {
   SceneNode,
   Answer,
@@ -185,8 +186,9 @@ export function isCorrect(
   switch (challenge.kind) {
     case "play": {
       if (!Array.isArray(value)) return false;
+      // Сцена пройдена, когда пройдены обязательные узлы при выбранных сторонах условий.
       const done = new Set(value.map(keyOf));
-      return sceneKeys(challenge.nodes).every((k) => done.has(k));
+      return requiredKeys(challenge.nodes, value).every((k) => done.has(k));
     }
     case "choice":
     case "code":
@@ -274,7 +276,7 @@ export function isCorrect(
 export function solution(challenge: Challenge): Answer {
   switch (challenge.kind) {
     case "play":
-      return sceneKeys(challenge.nodes);
+      return solutionEntries(challenge.nodes);
     case "chat":
       return challenge.turns.map((t) => t.answer);
     case "memory":
@@ -793,7 +795,11 @@ function validateScene(
 ): boolean {
   // Картинка показывается перед следующим узлом, поэтому последней в списке стоять не может.
   if (!nodes.length || nodes.at(-1)!.t === "pic") return false;
+  // Последствия и условия говорят только о часах и отношениях из TRACKS.
+  const effects = (set?: Effects) => !set || Object.keys(set).every((q) => TRACKS[q]);
+  const conds = (list?: Cond[]) => !list || (list.length > 0 && list.every((c) => TRACKS[c.q]));
   return nodes.every((n) => {
+    if (!effects(n.set)) return false;
     switch (n.t) {
       case "narr":
         return phraseIds(n.text).every((id) => phrases[id]);
@@ -801,7 +807,11 @@ function validateScene(
         return Boolean(n.de && n.ru && n.who && n.voice) && !/[а-яё]/i.test(n.de);
       case "reply":
       case "pick":
-        return n.options.length >= 2 && n.options.some((o) => o.ok) && n.options.every((o) => o.ok || o.react);
+        return (
+          n.options.length >= 2 &&
+          n.options.some((o) => o.ok) &&
+          n.options.every((o) => (o.ok || o.react) && (!o.set || (o.ok && effects(o.set))))
+        );
       case "type":
         return n.answers.length > 0 && Boolean(n.task);
       case "gap":
@@ -811,7 +821,16 @@ function validateScene(
       case "look":
         return n.items.some((i) => i.key) && n.items.every((i) => i.note && i.ru && i.icon);
       case "go":
-        return !nested && n.branches.length >= 2 && n.branches.every((b) => b.label && validateScene(b.nodes, known, phrases, true));
+        // Обязательных веток не меньше двух — или есть побочные; условие появления — только у побочных.
+        return (
+          !nested &&
+          (n.branches.length >= 2 || n.branches.some((b) => b.optional)) &&
+          n.branches.every(
+            (b) => b.label && (b.optional || !b.if) && conds(b.if) && validateScene(b.nodes, known, phrases, true),
+          )
+        );
+      case "when":
+        return conds(n.if) && validateScene(n.then, known, phrases, true) && (!n.else || validateScene(n.else, known, phrases, true));
       case "item":
         return Boolean(n.icon && n.de && n.ru);
       case "clue":

@@ -11,12 +11,15 @@ import {
   keyOf,
   nodeAt,
   picsBefore,
-  sceneKeys,
+  requiredKeys,
   spot,
   typedOf,
   typedRight,
+  worldAfter,
 } from "./scene";
 import type { Answer, Challenge, Pick, SceneNode } from "./types";
+import { mnemonic } from "./mnemonics";
+import { applyEffects, effectText, holds, TRACKS, type World } from "./world";
 
 // Сцена: разговор и осмотр места, в который вплетены действия. Сцена помещается на экран:
 // видны картинка момента, последние реплики и текущее действие, а весь разговор раскрывается
@@ -46,14 +49,17 @@ export function SceneView({
   win,
   miss,
   rich,
-}: GameProps & { c: Play; rich: Rich }) {
+  world = {},
+}: GameProps & { c: Play; rich: Rich; world?: World }) {
   const entries = Array.isArray(value) ? value : [];
   const done = new Set(entries.map(keyOf));
+  // Мир к этому моменту: что было до сцены и последствия уже пройденных узлов.
+  const state = worldAfter(c.nodes, entries, world);
   const [open, setOpen] = useState<string>();
   const [voice, setVoice] = useState(readVoice);
   const [full, setFull] = useState(false);
   const [notesOpen, setNotesOpen] = useState(false);
-  const here = spot(c.nodes, done, open);
+  const here = spot(c.nodes, entries, open, state);
   const current = useRef<HTMLDivElement>(null);
   const position = here.at === "end" ? "end" : here.key;
 
@@ -64,6 +70,12 @@ export function SceneView({
     setFull(false);
     if (isCorrect(c, next)) win();
   }
+  // Условие решается, как только сцена до него дошла, и решение запоминается: последствия,
+  // которые случатся позже, уже не перевернут то, что игрок видел.
+  useEffect(() => {
+    if (disabled || here.at !== "auto") return;
+    advance(`${here.key}|${holds(here.node.if, state) ? 0 : 1}`);
+  }, [position]);
   // Новая реплика звучит сама; переход к следующему узлу держит его в поле зрения.
   useEffect(() => {
     if (disabled || here.at !== "node") return;
@@ -78,8 +90,13 @@ export function SceneView({
     (entry) => {
       const key = keyOf(entry);
       const node = nodeAt(c.nodes, key);
-      if (!node) return [];
+      if (!node || node.t === "when") return [];
       const fresh = node.t === "say" && !heard.has(node.de);
+      const chosen =
+        node.t === "reply" || node.t === "pick"
+          ? node.options.find((o) => o.text === typedOf(entry))?.set
+          : undefined;
+      const effects = applyEffects(applyEffects({}, node.set), chosen);
       if (node.t === "say") heard.add(node.de);
       const pics = picsBefore(c.nodes, key);
       return [
@@ -98,6 +115,9 @@ export function SceneView({
                 fresh={fresh}
                 rich={rich}
               />
+              {Object.keys(effects).length > 0 && (
+                <p className="moin-play-effect">{effectText(effects)}</p>
+              )}
             </div>
           ),
         },
@@ -111,8 +131,10 @@ export function SceneView({
   const moment = currentPics.length
     ? undefined
     : items.flatMap((i) => i.pics).at(-1);
-  const keys = sceneKeys(c.nodes);
+  const keys = requiredKeys(c.nodes, entries);
   const passed = keys.filter((k) => done.has(k)).length;
+  // Часы и отношения, которые уже сдвинулись: их показывает блокнот сцены.
+  const tracks = Object.entries(state).filter(([q, v]) => v > 0 && TRACKS[q]);
   // Блокнот сцены: улики и предметы под рукой, чтобы не искать их в разговоре.
   const notes = items.flatMap((i) =>
     i.node.t === "clue" || i.node.t === "item" ? [i.node] : [],
@@ -152,20 +174,34 @@ export function SceneView({
           />{" "}
           Озвучивать реплики
         </label>
-        {notes.length > 0 && (
+        {notes.length + tracks.length > 0 && (
           <button
             type="button"
             className="moin-play-notes-button"
             aria-expanded={notesOpen}
             onClick={() => setNotesOpen(!notesOpen)}
           >
-            📓 {notes.length}
+            📓 {notes.length + tracks.length}
           </button>
         )}
       </div>
       {notesOpen && (
         <aside className="moin-play-notes" aria-label="Блокнот сцены">
           <div className="kicker">Блокнот сцены</div>
+          {tracks.length > 0 && (
+            <ul className="moin-play-tracks">
+              {tracks.map(([q, v]) => (
+                <li key={q}>
+                  {TRACKS[q].icon} {TRACKS[q].label}{" "}
+                  <span aria-label={`${v} из ${TRACKS[q].size ?? v}`}>
+                    {TRACKS[q].size
+                      ? "●".repeat(v) + "○".repeat(TRACKS[q].size! - v)
+                      : "●".repeat(v)}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          )}
           <ul>
             {notes.map((n, i) => (
               <li key={i}>
@@ -236,8 +272,11 @@ export function SceneView({
           <Menu
             node={here.node}
             goKey={here.key}
-            done={done}
+            entries={entries}
+            ready={here.ready}
+            world={state}
             choose={(branch) => setOpen(branch)}
+            leave={() => advance(here.key)}
           />
         </div>
       )}
@@ -287,8 +326,8 @@ type Branch = { key: string; label: string; icon: string };
 /** Ветка развилки, к которой относится узел: в развёрнутом разговоре она — отдельный блок. */
 function branchOf(nodes: SceneNode[], key: string): Branch | undefined {
   const [i, j] = key.split(".");
-  if (j === undefined) return undefined;
-  const go = nodes[Number(i)] as Extract<SceneNode, { t: "go" }>;
+  const go = nodes[Number(i)];
+  if (j === undefined || go?.t !== "go") return undefined;
   const b = go.branches[Number(j)];
   return { key: `${i}.${j}`, label: b.label, icon: b.icon };
 }
@@ -393,6 +432,7 @@ function DoneNode({
     case "game":
       return <p className="moin-play-note">✓ {node.task}</p>;
     case "go":
+    case "when":
     case "pic":
       return null;
   }
@@ -459,44 +499,63 @@ function SayLine({
         <small className="moin-chip-info">
           <span lang="de">{word}</span> — {wordInfo(word)?.ru ?? "—"}{" "}
           <PlayButton src={wordInfo(word)?.audio} />
+          {mnemonic(word) && (
+            <span className="moin-hook">💡 {mnemonic(word)}</span>
+          )}
         </small>
       )}
     </div>
   );
 }
 
+/** Меню развилки: обязательные ветки, побочные задания «по желанию» и выход дальше по делу. */
 function Menu({
   node,
   goKey,
-  done,
+  entries,
+  ready,
+  world,
   choose,
+  leave,
 }: {
   node: Extract<SceneNode, { t: "go" }>;
   goKey: string;
-  done: Set<string>;
+  entries: string[];
+  ready: boolean;
+  world: World;
   choose: (branch: string) => void;
+  leave: () => void;
 }) {
+  const done = new Set(entries.map(keyOf));
   return (
     <div className="moin-play-task">
       <p className="moin-play-ask">{node.task}</p>
       <div className="moin-play-menu">
         {node.branches.map((b, j) => {
-          const finished = b.nodes.every((_, n) =>
-            done.has(`${goKey}.${j}.${n}`),
-          );
+          if (b.if && !holds(b.if, world)) return null;
+          const finished = requiredKeys(
+            b.nodes,
+            entries,
+            `${goKey}.${j}.`,
+          ).every((k) => done.has(k));
           return (
             <button
               type="button"
               key={j}
               disabled={finished}
+              data-optional={b.optional || undefined}
               onClick={() => choose(`${goKey}.${j}`)}
             >
               <span aria-hidden="true">{finished ? "✓" : b.icon}</span>{" "}
               {b.label}
+              {b.optional && <small> · по желанию</small>}
             </button>
           );
         })}
       </div>
+      {ready && (
+        <NextButton onClick={leave} label={node.next ?? "Дальше по делу"} />
+      )}
     </div>
   );
 }
@@ -759,6 +818,9 @@ function Look({
             </>
           )}
           {item.note}
+          {item.de && mnemonic(item.de) && (
+            <span className="moin-hook">💡 {mnemonic(item.de)}</span>
+          )}
         </p>
       )}
       <Note>
