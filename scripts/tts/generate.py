@@ -55,7 +55,8 @@ for item in items:
     if target.exists() and sf.info(target).frames > 0:
         continue
     # Per-file seeds do not depend on sharding or restart position.
-    seed = config['generation']['seed'] + int(Path(item['file']).stem, 16) % 1000000
+    # A manifest may name another seed to re-voice a recording that came out wrong.
+    seed = item.get('seed', config['generation']['seed'] + int(Path(item['file']).stem, 16) % 1000000)
     torch.manual_seed(seed)
     text = item['text'] if re.search(r'[.!?…]$', item['text']) else item['text'] + '.'
     waves = model.generate(text=text, language=config['generation']['language'],

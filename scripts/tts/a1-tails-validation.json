@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-03",
+  "scope": "A1 recordings where OmniVoice kept generating after the text: found by scripts/tts/tails.py over all 2507 recordings, re-voiced with another seed under the same file name",
+  "model": "k2-fsa/OmniVoice",
+  "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+  "detector": "tails.py: last speech segment after a pause of 300 ms or more that is a blip up to 60 ms, or up to 250 ms where the text has no punctuation or article gap",
+  "candidatesPerPhrase": 6,
+  "asr": "openai/whisper-large-v3",
+  "files": [
+    {
+      "file": "56a605529e12.m4a",
+      "text": "Wie viel Uhr ist es?",
+      "found": "a cut-off fragment of a new phrase after a 500 ms pause",
+      "seed": 21160989,
+      "heard": "Wie viel Uhr ist es?"
+    },
+    {
+      "file": "c3be36ebcb52.m4a",
+      "text": "krank",
+      "found": "a 30 ms blip 600 ms after the word",
+      "seed": 20910015,
+      "heard": "Krank"
+    },
+    {
+      "file": "ff0e57d49848.m4a",
+      "text": "Dänemark",
+      "found": "a 10 ms blip 430 ms after the word",
+      "seed": 20460213,
+      "heard": "Dänemark"
+    }
+  ],
+  "note": "All 18 candidates were recognised correctly and passed tails.py; the takes with silence right after the last sound were chosen. Automated checks do not replace listening."
+}
