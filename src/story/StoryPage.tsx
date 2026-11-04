@@ -1,39 +1,14 @@
 import { Fragment, useEffect, useRef, useState } from "react";
 import { Footer, Topbar, useTitle } from "../App";
 import { stopAudio, useMobile } from "../hooks";
-import { shuffle } from "../lib/shuffle";
 import { PlayButton, plural } from "../markup";
 import { a1Words, storyAudio, wordInfo } from "./audio";
 import { beats, episodes, phrases } from "./data";
 import { WordDrill } from "./drill";
 import { RuleCard } from "./RuleCard";
 import { rulesBefore, stepRules } from "./rules";
-import {
-  Bingo,
-  Calendar,
-  ChapterReview,
-  Chat,
-  ClockGame,
-  Coins,
-  Docks,
-  Gaps,
-  Gull,
-  Letter,
-  Letters,
-  Lock,
-  Memory,
-  Odd,
-  Oral,
-  Pairs,
-  Scene,
-  Sort,
-  Speak,
-  Spot,
-  Verdict,
-  VoiceLines,
-  Walk,
-  Write,
-} from "./games";
+import { ChapterReview, VoiceLines } from "./games";
+import { AUTOMATIC, ChallengeView, GAME_NAMES } from "./ChallengeView";
 import {
   beatPhrases,
   initialAnswer,
@@ -41,6 +16,7 @@ import {
   knownBefore,
   mistake,
   normalizeSave,
+  reachOf,
   reviewItems,
   solution,
   STORY_KEY,
@@ -58,54 +34,10 @@ import {
   stepWords,
   timeForRound,
 } from "./memory";
-import type { Answer, Beat, Challenge, StorySave } from "./types";
+import type { Answer, Beat, StorySave } from "./types";
 import "./story.css";
 
 const LOCKS = lockCards(beats);
-
-const GAME_NAMES: Record<Challenge["kind"], string> = {
-  choice: "Вывод",
-  order: "Сборка фразы",
-  match: "Пары",
-  quantity: "Заказ",
-  code: "Набор номера",
-  write: "Запись",
-  bingo: "Лото",
-  scene: "Найди на картинке",
-  odd: "Лишнее слово",
-  letters: "Буквы",
-  speak: "Вслух",
-  docks: "Три причала",
-  gull: "Наперегонки с чайкой",
-  lock: "Кодовый замок",
-  letter: "Письмо по образцу",
-  oral: "Вслух, как на экзамене",
-  chat: "Разговор",
-  verdict: "Штамп",
-  gaps: "Записка с пропусками",
-  sort: "Раскладка",
-  spot: "Улика в тексте",
-  memory: "Карточки",
-  clock: "Часы",
-  route: "Прогулка",
-  coins: "Касса",
-  calendar: "Календарь",
-};
-/** Эти игры завершаются сами: кнопка проверки там не нужна. */
-const AUTOMATIC: Challenge["kind"][] = [
-  "chat",
-  "memory",
-  "bingo",
-  "scene",
-  "odd",
-  "letters",
-  "speak",
-  "docks",
-  "gull",
-  "lock",
-  "letter",
-  "oral",
-];
 
 function load(): { save: StorySave; started: boolean } {
   try {
@@ -223,22 +155,30 @@ export function StoryPage() {
   const [notebook, setNotebook] = useState(false);
   const [drilling, setDrilling] = useState(false);
   const scene = useRef<HTMLElement>(null);
-  const beat = beats[save.cursor];
+  const at = Math.max(
+    0,
+    beats.findIndex((b) => b.id === save.cursor),
+  );
+  const beat = beats[at];
+  const done = new Set(save.done);
+  const solved = done.has(beat.id);
+  const reach = reachOf(save, beats);
+  // Счётчик пройденных шагов — часы памяти слов; он только растёт.
+  const count = save.done.length;
   const episode = episodes.find((e) => e.beats.some((b) => b.id === beat.id))!;
   const chapter = episodes.indexOf(episode);
   const chapterStart = beats.indexOf(episode.beats[0]);
-  const chapterStep = save.cursor - chapterStart;
-  const known = knownBefore(beats, save.cursor);
+  const chapterStep = at - chapterStart;
+  const known = knownBefore(beats, at);
   const newPhrases = beatPhrases(beat).filter((id) => !known.has(id));
-  const finished = save.completed === beats.length;
+  const finished = count === beats.length;
   const today = dayNumber();
-  const round = buildRound(save.cards, save.completed, today, a1Words, LOCKS);
+  const round = buildRound(save.cards, count, today, a1Words, LOCKS);
   // Посреди истории раунд встаёт перед новым шагом, а после финала ждёт следующего захода:
   // закончившему дело сначала показываем развязку.
   const drillDue = finished
-    ? loaded.save.completed === beats.length && today > save.last.day
-    : save.cursor === save.completed &&
-      timeForRound(save.last, save.completed, today);
+    ? loaded.save.done.length === beats.length && today > save.last.day
+    : at === reach && !solved && timeForRound(save.last, count, today);
   const drillOpen = drilling || (!!round && drillDue);
   const stats = memoryStats(save.cards);
   useEffect(() => {
@@ -257,17 +197,31 @@ export function StoryPage() {
       scene.current?.scrollIntoView({ block: "start", behavior: "instant" });
     });
   }
-  function go(cursor: number) {
+  function go(index: number) {
     stopAudio();
     setPhrase(null);
     setDrilling(false);
-    setSave((s) => ({ ...s, cursor }));
+    setSave((s) => ({ ...s, cursor: beats[index].id }));
+    focusScene();
+  }
+  /** Отложить шаг: он остаётся пустой ячейкой, а история идёт дальше. */
+  function skip() {
+    stopAudio();
+    setPhrase(null);
+    setSave((s) => ({
+      ...s,
+      skipped: s.skipped.includes(beat.id) ? s.skipped : [...s.skipped, beat.id],
+      cursor: beats[Math.min(at + 1, beats.length - 1)].id,
+    }));
     focusScene();
   }
   function closeDrill() {
     stopAudio();
     setDrilling(false);
-    setSave((s) => ({ ...s, last: { step: s.completed, day: dayNumber() } }));
+    setSave((s) => ({
+      ...s,
+      last: { step: s.done.length, day: dayNumber() },
+    }));
     focusScene();
   }
   function gradeRound(words: string[], missed: string[]) {
@@ -275,7 +229,7 @@ export function StoryPage() {
     setDrilling(true);
     setSave((s) => ({
       ...s,
-      cards: grade(s.cards, words, missed, s.completed, dayNumber()),
+      cards: grade(s.cards, words, missed, s.done.length, dayNumber()),
     }));
   }
   function rich(text: string) {
@@ -302,7 +256,7 @@ export function StoryPage() {
       );
     });
   }
-  const clues = beats.slice(0, save.completed).filter((b) => b.clue);
+  const clues = beats.filter((b) => b.clue && done.has(b.id));
   return (
     <>
       <Topbar crumbs={[{ label: "A1", href: "#/a1" }, { label: "Moin" }]} />
@@ -407,7 +361,7 @@ export function StoryPage() {
                   >
                     Повторить ·{" "}
                     {plural(
-                      dueWords(save.cards, save.completed, today).length,
+                      dueWords(save.cards, count, today).length,
                       ["карточка", "карточки", "карточек"],
                     )}
                   </button>
@@ -453,10 +407,10 @@ export function StoryPage() {
             )}
             <div className="moin-progress">
               <span>
-                {save.completed} / {beats.length} действий
+                {count} / {beats.length} действий
               </span>
               <progress
-                value={save.completed}
+                value={count}
                 max={beats.length}
                 aria-label="Пройдено игровых действий"
               />
@@ -477,24 +431,45 @@ export function StoryPage() {
                   <ol>
                     {episodes.map((e, i) => {
                       const start = beats.indexOf(e.beats[0]),
-                        done = save.completed >= start + e.beats.length;
+                        complete = e.beats.every((b) => done.has(b.id)),
+                        // Глава позади, но в ней есть пустые ячейки: пропуск или новый шаг.
+                        waiting =
+                          !complete &&
+                          e.beats.some(
+                            (b) => beats.indexOf(b) < reach && !done.has(b.id),
+                          );
                       return (
                         <li key={e.id}>
                           <button
                             type="button"
-                            disabled={start > save.completed}
+                            disabled={start > reach}
                             aria-current={i === chapter ? "step" : undefined}
-                            onClick={() => go(start)}
+                            onClick={() => {
+                              const open = e.beats.find(
+                                (b) =>
+                                  !done.has(b.id) && beats.indexOf(b) <= reach,
+                              );
+                              go(open ? beats.indexOf(open) : start);
+                            }}
                           >
-                            <span>
-                              {done ? "✓" : String(i + 1).padStart(2, "0")}
+                            <span
+                              data-waiting={waiting || undefined}
+                              aria-label={waiting ? "Есть непройденные шаги" : undefined}
+                            >
+                              {complete
+                                ? "✓"
+                                : waiting
+                                  ? "●"
+                                  : String(i + 1).padStart(2, "0")}
                             </span>
                             <span>
                               {e.topic}
                               <small>
-                                {start > save.completed
+                                {start > reach
                                   ? "След пока не открыт"
-                                  : e.title}
+                                  : waiting
+                                    ? `Ждут шаги: ${e.beats.filter((b) => beats.indexOf(b) < reach && !done.has(b.id)).length}`
+                                    : e.title}
                               </small>
                             </span>
                           </button>
@@ -534,8 +509,8 @@ export function StoryPage() {
                       <button
                         type="button"
                         aria-label="Предыдущий шаг"
-                        disabled={save.cursor === 0}
-                        onClick={() => go(save.cursor - 1)}
+                        disabled={at === 0}
+                        onClick={() => go(at - 1)}
                       >
                         ‹
                       </button>
@@ -543,17 +518,15 @@ export function StoryPage() {
                       <button
                         type="button"
                         aria-label="Следующий шаг"
-                        disabled={
-                          save.cursor >=
-                          Math.min(save.completed, beats.length - 1)
-                        }
-                        onClick={() => go(save.cursor + 1)}
+                        disabled={at >= reach}
+                        onClick={() => go(at + 1)}
                       >
                         ›
                       </button>
                     </span>
                   </div>
-                  {/* Пройденные шаги главы открываются нажатием; будущие закрыты. */}
+                  {/* Пройденные шаги закрашены, пустые ячейки до границы тоже открываются;
+                      будущие закрыты. */}
                   <ol className="moin-steps" aria-label="Шаги главы">
                     {episode.beats.map((b, i) => {
                       const index = chapterStart + i;
@@ -561,12 +534,10 @@ export function StoryPage() {
                         <li key={b.id}>
                           <button
                             type="button"
-                            aria-label={`Шаг ${i + 1}: ${b.title}`}
-                            aria-current={
-                              index === save.cursor ? "step" : undefined
-                            }
-                            data-done={index < save.completed || undefined}
-                            disabled={index > save.completed}
+                            aria-label={`Шаг ${i + 1}: ${b.title}${done.has(b.id) ? "" : index < reach ? " — ещё не пройден" : ""}`}
+                            aria-current={index === at ? "step" : undefined}
+                            data-done={done.has(b.id) || undefined}
+                            disabled={index > reach}
                             onClick={() => go(index)}
                           />
                         </li>
@@ -576,6 +547,12 @@ export function StoryPage() {
                   <div className="moin-chapter-title">
                     Глава {chapter + 1} · {episode.title}
                   </div>
+                  {/* Глава нового сюжета — один день до Kieler Woche. */}
+                  {episode.day && (
+                    <div className="moin-day">
+                      <b lang="de">{episode.day.de}</b> · {episode.day.ru}
+                    </div>
+                  )}
                   <h2>{beat.title}</h2>
                   <div className="moin-language-tools">
                     <label>
@@ -631,8 +608,11 @@ export function StoryPage() {
                     value={
                       save.drafts[beat.id] ?? initialAnswer(beat.challenge)
                     }
-                    solved={save.completed > save.cursor}
-                    seenRules={rulesBefore(beats, save.cursor)}
+                    solved={solved}
+                    seenRules={rulesBefore(beats, at)}
+                    quiet={save.quiet}
+                    onQuiet={(quiet) => setSave((s) => ({ ...s, quiet }))}
+                    onSkip={skip}
                     rich={rich}
                     onChange={(v) =>
                       setSave((s) => ({
@@ -642,14 +622,16 @@ export function StoryPage() {
                     }
                     onWin={() =>
                       setSave((s) => {
-                        const completed = Math.max(s.completed, s.cursor + 1);
+                        if (s.done.includes(beat.id)) return s;
+                        const done = [...s.done, beat.id];
                         return {
                           ...s,
-                          completed,
+                          done,
+                          skipped: s.skipped.filter((id) => id !== beat.id),
                           cards: remember(
                             s.cards,
                             stepWords(beat, a1Words, phrases),
-                            completed,
+                            done.length,
                             dayNumber(),
                           ),
                         };
@@ -659,7 +641,7 @@ export function StoryPage() {
                       (wordInfo(word) || LOCKS[word]) &&
                       setSave((s) => ({
                         ...s,
-                        cards: slip(s.cards, word, s.completed, dayNumber()),
+                        cards: slip(s.cards, word, s.done.length, dayNumber()),
                       }))
                     }
                     onMiss={() =>
@@ -677,7 +659,7 @@ export function StoryPage() {
                       }))
                     }
                   />
-                  {save.completed > save.cursor &&
+                  {solved &&
                     chapterStep === episode.beats.length - 1 &&
                     reviewItems(episode, save.weak).length > 0 && (
                       <ChapterReview
@@ -691,13 +673,13 @@ export function StoryPage() {
                         }
                       />
                     )}
-                  {save.completed > save.cursor && (
+                  {solved && (
                     <div className="moin-next">
-                      {save.cursor < beats.length - 1 ? (
+                      {at < beats.length - 1 ? (
                         <button
                           type="button"
                           className="primary"
-                          onClick={() => go(save.cursor + 1)}
+                          onClick={() => go(at + 1)}
                         >
                           {chapterStep === episode.beats.length - 1
                             ? "Следующая глава →"
@@ -754,10 +736,10 @@ export function StoryPage() {
                       — ещё не доказательство.
                     </p>
                   )}
-                  {rulesBefore(beats, save.cursor + 1).length > 0 && (
+                  {rulesBefore(beats, at + 1).length > 0 && (
                     <section className="moin-notebook-rules">
                       <h3>Правила</h3>
-                      {rulesBefore(beats, save.cursor + 1).map((id) => (
+                      {rulesBefore(beats, at + 1).map((id) => (
                         <RuleCard key={id} id={id} open={false} />
                       ))}
                     </section>
@@ -792,6 +774,9 @@ function StoryTurn({
   onWin,
   onMiss,
   onSlip,
+  quiet,
+  onQuiet,
+  onSkip,
   rich,
 }: {
   beat: Beat;
@@ -802,6 +787,9 @@ function StoryTurn({
   onWin: () => void;
   onMiss: () => void;
   onSlip: (word: string) => void;
+  quiet: boolean;
+  onQuiet: (quiet: boolean) => void;
+  onSkip: () => void;
   rich: (s: string) => React.ReactNode;
 }) {
   const [checked, setChecked] = useState(false),
@@ -820,9 +808,6 @@ function StoryTurn({
   const correct = isCorrect(c, value);
   // В старом сохранении шаг мог быть другой игрой: показываем готовый ответ.
   const shown = solved && !correct ? solution(c) : value;
-  const list = Array.isArray(shown) ? shown : [];
-  const record =
-    typeof shown === "object" && !Array.isArray(shown) ? shown : {};
   const disabled = solved;
   function change(v: Answer) {
     setChecked(false);
@@ -836,12 +821,15 @@ function StoryTurn({
     setRuleOpen(true);
     if (c.kind === "write") wrongAnswers(c, value).forEach(onSlip);
   }
+  // Где нужно говорить, можно ответить письменно или отложить шаг: например, в офисе.
+  const voiced = c.kind === "speak" || c.kind === "oral";
   const game = {
     value: shown,
     seed: beat.id,
     disabled,
     checked,
     attempts,
+    quiet,
     change,
     win: onWin,
     miss(word?: string) {
@@ -888,170 +876,25 @@ function StoryTurn({
       <div className="kicker moin-game-name">{GAME_NAMES[c.kind]}</div>
       <h3>{beat.prompt}</h3>
       {firstRule && <RuleCard id={firstRule} open />}
-      {c.kind === "match" && <Pairs c={c} {...game} />}
-      {c.kind === "write" && <Write c={c} {...game} />}
-      {c.kind === "bingo" && <Bingo c={c} {...game} />}
-      {c.kind === "scene" && <Scene c={c} {...game} />}
-      {c.kind === "odd" && <Odd c={c} {...game} />}
-      {c.kind === "letters" && <Letters c={c} {...game} />}
-      {c.kind === "speak" && <Speak c={c} {...game} />}
-      {c.kind === "docks" && <Docks c={c} {...game} />}
-      {c.kind === "gull" && <Gull c={c} {...game} />}
-      {c.kind === "lock" && <Lock c={c} {...game} />}
-      {c.kind === "letter" && <Letter c={c} {...game} />}
-      {c.kind === "oral" && <Oral c={c} {...game} />}
-      {c.kind === "chat" && <Chat c={c} {...game} />}
-      {c.kind === "verdict" && <Verdict c={c} {...game} />}
-      {c.kind === "gaps" && <Gaps c={c} {...game} />}
-      {c.kind === "sort" && <Sort c={c} {...game} />}
-      {c.kind === "spot" && <Spot c={c} {...game} />}
-      {c.kind === "memory" && <Memory c={c} {...game} />}
-      {c.kind === "clock" && <ClockGame c={c} {...game} />}
-      {c.kind === "route" && <Walk c={c} {...game} />}
-      {c.kind === "coins" && <Coins c={c} {...game} />}
-      {c.kind === "calendar" && <Calendar c={c} {...game} />}
-      {c.kind === "choice" && (
-        <fieldset className="moin-choices" disabled={disabled}>
-          <legend className="moin-sr">Варианты ответа</legend>
-          {shuffle(c.options, beat.id).map((o, i) => (
-            <label key={o.id} className={shown === o.id ? "is-selected" : ""}>
-              <input
-                type="radio"
-                name={beat.id}
-                value={o.id}
-                checked={shown === o.id}
-                onChange={() => change(o.id)}
-              />
-              <span className="moin-option-n">
-                {String.fromCharCode(65 + i)}
-              </span>
-              <span>{o.text}</span>
-            </label>
-          ))}
-        </fieldset>
-      )}
-      {c.kind === "order" && (
-        <div className="moin-order">
-          <div
-            className="moin-sentence"
-            aria-label="Собранная фраза"
-            aria-live="polite"
-          >
-            {list.length ? (
-              list.map((t, i) => (
-                <button
-                  type="button"
-                  disabled={disabled}
-                  key={i}
-                  onClick={() => change(list.filter((_, j) => j !== i))}
-                  aria-label={`Убрать ${t}`}
-                >
-                  {t} <span>×</span>
-                </button>
-              ))
-            ) : (
-              <span>Нажимайте на фрагменты ниже</span>
-            )}
-          </div>
-          <div className="moin-tiles">
-            {c.tiles.map((t, i) => {
-              const used =
-                list.filter((x) => x === t).length >=
-                c.tiles.slice(0, i + 1).filter((x) => x === t).length;
-              return (
-                <button
-                  type="button"
-                  key={i}
-                  disabled={disabled || used}
-                  onClick={() => change([...list, t])}
-                >
-                  {t}
-                </button>
-              );
-            })}
-          </div>
-          <button
-            type="button"
-            className="link-button"
-            disabled={disabled || !list.length}
-            onClick={() => change([])}
-          >
-            Очистить фразу
-          </button>
-        </div>
-      )}
-      {c.kind === "quantity" && (
-        <div className="moin-quantities">
-          {c.items.map((i) => (
-            <div key={i.id}>
-              <span lang="de">{i.text}</span>
-              <div>
-                <button
-                  type="button"
-                  aria-label={`Уменьшить ${i.text}`}
-                  disabled={disabled || Number(record[i.id] ?? 0) <= 0}
-                  onClick={() =>
-                    change({ ...record, [i.id]: Number(record[i.id] ?? 0) - 1 })
-                  }
-                >
-                  −
-                </button>
-                <output aria-label={`Количество ${i.text}`}>
-                  {record[i.id] ?? 0}
-                </output>
-                <button
-                  type="button"
-                  aria-label={`Добавить ${i.text}`}
-                  disabled={disabled || Number(record[i.id] ?? 0) >= i.max}
-                  onClick={() =>
-                    change({ ...record, [i.id]: Number(record[i.id] ?? 0) + 1 })
-                  }
-                >
-                  +
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
-      )}
-      {c.kind === "code" && (
-        <div className="moin-dial">
+      {voiced && !solved && (
+        <div className="moin-quiet">
           <label>
-            {c.length > 2 ? "Номер телефона" : "Номер ячейки"}
             <input
-              type="text"
-              inputMode="numeric"
-              autoComplete="off"
-              disabled={disabled}
-              value={typeof shown === "string" ? shown : ""}
-              onChange={(e) =>
-                change(e.target.value.replace(/\D/g, "").slice(0, c.length))
-              }
-              maxLength={c.length}
-            />
+              type="checkbox"
+              checked={quiet}
+              onChange={(e) => onQuiet(e.target.checked)}
+            />{" "}
+            Не могу говорить вслух — отвечу письменно
           </label>
-          <div className="moin-keypad">
-            {["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"].map((n) => (
-              <button
-                type="button"
-                key={n}
-                disabled={disabled || String(shown).length >= c.length}
-                onClick={() => change(String(shown) + n)}
-              >
-                {n}
-              </button>
-            ))}
-            <button
-              type="button"
-              disabled={disabled}
-              aria-label="Удалить последнюю цифру"
-              onClick={() => change(String(shown).slice(0, -1))}
-            >
-              ⌫
-            </button>
-          </div>
+          <button type="button" className="link-button" onClick={onSkip}>
+            Пропустить шаг
+          </button>
+          <small>
+            Пропущенный шаг останется пустой ячейкой, к нему можно вернуться.
+          </small>
         </div>
       )}
+      <ChallengeView c={c} game={game} beatId={beat.id} rich={rich} />
       {!solved && (
         <div className="moin-turn-actions">
           {!AUTOMATIC.includes(c.kind) && (

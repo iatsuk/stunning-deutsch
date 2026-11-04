@@ -1,3 +1,4 @@
+import { chapter1 } from "./chapters/01-moin.ts";
 import { extras } from "./extra.ts";
 import type {
   ChatTurn,
@@ -126,6 +127,31 @@ export const phrases: Record<string, Phrase> = {
     ru: "привет",
     de: "Moin",
     note: "Северогерманское приветствие; подходит не только утром.",
+  },
+  schild: {
+    ru: "табличка",
+    de: "das Schild",
+    note: "Средний род: das Schild. Табличка MOIN — талисман клуба.",
+  },
+  moewe: {
+    ru: "чайка",
+    de: "die Möwe",
+    note: "Женский род: die Möwe. В Киле их больше, чем свидетелей.",
+  },
+  aufsteller: {
+    ru: "подставка",
+    de: "der Aufsteller",
+    note: "Мужской род: der Aufsteller — подставка для таблички или меню у входа.",
+  },
+  kiste: {
+    ru: "ящик",
+    de: "die Kiste",
+    note: "Женский род: die Kiste; во множественном числе die Kisten.",
+  },
+  neu: {
+    ru: "Вы новичок. Вы видите всё.",
+    de: "Sie sind neu. Sie sehen alles.",
+    note: "sein: Sie sind. Вежливое Sie пишется с большой буквы; sehen — видеть.",
   },
   name: {
     ru: "Как вас зовут?",
@@ -386,181 +412,7 @@ export const phrases: Record<string, Phrase> = {
 };
 
 export const episodes: Episode[] = [
-  {
-    id: "moin",
-    title: "Исчезло даже «привет»",
-    place: "Kiellinie · клуб",
-    topic: "Знакомство",
-    grammar: "sein · Präsens · вопросы · глагол на втором месте",
-    review: ["moin", "name", "kiel", "where"],
-    beats: [
-      {
-        id: "01-welcome",
-        title: "Детектив поневоле",
-        story: [
-          "У клуба на Kiellinie стоит пустая подставка. Вчера здесь была табличка MOIN — приветствие для гостей Kieler Woche. Сегодня даже поздороваться нечем.",
-          "Йенсен вздыхает: «{moin}! У нас пропало слово. Начнём с вашего имени». Чайка на крыше уже выглядит виноватой, но это её обычное выражение лица.",
-        ],
-        voices: [
-          { who: "Jensen", voice: "Grandpa", text: "Moin!", ru: "Привет!" },
-        ],
-        practice: ["moin", "name"],
-        prompt: "Поздоровайтесь и вежливо узнайте имя начальника гавани.",
-        challenge: choice("name", [
-          [
-            "name",
-            "Moin! Wie heißen Sie?",
-            "Верно: вежливое Sie и вопрос об имени.",
-          ],
-          [
-            "home",
-            "Wo wohnen Sie?",
-            "Это вопрос о месте жительства. Йенсен пока просит познакомиться.",
-          ],
-          [
-            "origin",
-            "Woher kommen Sie?",
-            "Это вопрос о происхождении, а не об имени.",
-          ],
-        ]),
-        hint: "Wie — как; heißen — зваться; Sie — вежливое «вы».",
-        success:
-          "«Jensen. Herr Jensen». Он выдаёт вам блокнот и звание «помощник по всему». Зарплата — спасибо.",
-      },
-      {
-        id: "01-mateo",
-        title: "Первый свидетель",
-        story: [
-          "Матео машет у причала: «{moin}!» Он познакомится с вами и поможет искать табличку. Сначала нужно правильно записать его слова.",
-        ],
-        audio: {
-          file: "mateo",
-          text: "Ich komme aus Argentinien, aus Buenos Aires. Und du?",
-          ru: "Я из Аргентины, из Буэнос-Айреса. А ты?",
-        },
-        practice: ["argentina"],
-        prompt: "Что Матео сообщил о себе? Поставьте штамп на каждой записи.",
-        challenge: verdict(
-          ["Сказал", "Не сказал"],
-          [
-            [
-              "Матео родом из Аргентины.",
-              true,
-              "В сообщении прямо сказано: Ich komme aus Argentinien.",
-            ],
-            [
-              "Матео живёт в Буэнос-Айресе.",
-              false,
-              "kommen aus сообщает происхождение. Это не адрес проживания.",
-            ],
-            [
-              "Матео работает в Аргентине.",
-              false,
-              "О работе здесь ничего нет.",
-            ],
-          ],
-        ),
-        hint: "kommen aus — быть родом из; wohnen in — жить в.",
-        success:
-          "Страна записана. Альби пока нет, зато у блокнота международный состав.",
-      },
-      {
-        id: "01-question",
-        title: "Вопрос, с которого всё начинается",
-        story: [
-          "На подставке записан вопрос: «{where}» — кто-то уже начал расследование и убежал за кофе. Вы уже спрашивали имя: «{name}»; теперь нужен вопрос о табличке.",
-        ],
-        practice: ["where"],
-        prompt: "Соберите вопрос «Где табличка?»",
-        challenge: order(
-          ["Wo", "ist", "das Schild?"],
-          ["das Schild?", "Wo", "ist"],
-        ),
-        hint: "Вопросительное слово → спрягаемый глагол → подлежащее.",
-        success:
-          "Wo ist das Schild? Теперь вопрос есть. Таблички по-прежнему нет.",
-      },
-      {
-        id: "01-card",
-        title: "Не путайте адрес с биографией",
-        story: [
-          "Элиф готовит карточки свидетелей. Ваш образец: «{kiel}»; у Матео — «{argentina}». Немецкий понемногу занимает место в блокноте.",
-        ],
-        voices: [
-          {
-            who: "Dana",
-            voice: "Anna",
-            text: "Ich wohne in Gaarden.",
-            ru: "Я живу в Гаардене.",
-          },
-          {
-            who: "Mateo",
-            voice: "Reed",
-            text: "Ich komme aus Argentinien.",
-            ru: "Я из Аргентины.",
-          },
-          {
-            who: "Jensen",
-            voice: "Grandpa",
-            text: "Ich heiße Jensen.",
-            ru: "Меня зовут Йенсен.",
-          },
-        ],
-        practice: ["kiel", "argentina"],
-        prompt: "Послушайте свидетелей и заполните карточки клуба.",
-        challenge: {
-          kind: "write",
-          title: "Karten für den Club",
-          fields: [
-            { id: "wohnort", label: "Dana · Wohnort", answers: ["Gaarden"] },
-            { id: "land", label: "Mateo · Land", answers: ["Argentinien"] },
-            { id: "familienname", label: "Jensen · Name", answers: ["Jensen"] },
-          ],
-        },
-        hint: "Wohnort — где живёт, Land — страна, Name — имя. Название города можно посмотреть в тексте.",
-        success:
-          "Карточки на месте. Чайка отказалась сообщать адрес: постоянная регистрация на крыше её устраивает.",
-      },
-      {
-        id: "01-lead",
-        title: "Первая зацепка",
-        story: [
-          "Йенсен повторяет: «{where}» Матео отвечает: «Nicht hier». Под подставкой обнаруживается бумага.",
-        ],
-        source: {
-          title: "Записка",
-          lines: [
-            "Hallo! Ich bin Nils. Ich wohne in Kiel. Meine Telefonnummer: siehe Büro.",
-          ],
-        },
-        prompt: "Что известно наверняка?",
-        challenge: choice("contact", [
-          [
-            "thief",
-            "Нильс украл табличку.",
-            "В записке нет признания. Имя рядом с пропажей ещё ничего не доказывает.",
-          ],
-          [
-            "contact",
-            "Нужно найти номер Нильса в офисе.",
-            "siehe Büro — смотрите в офисе; там можно связаться с Нильсом.",
-          ],
-          [
-            "arg",
-            "Нильс из Аргентины.",
-            "В записке только место жительства: Kiel.",
-          ],
-        ]),
-        hint: "siehe Büro — смотрите в офисе. Ищите следующий проверяемый шаг.",
-        success:
-          "Вы идёте в офис. Матео обещает не допрашивать чайку без переводчика.",
-        clue: {
-          title: "Контакт, а не обвинение",
-          text: "Записка Нильса ведёт в офис. Она не объясняет исчезновение таблички.",
-        },
-      },
-    ],
-  },
+  chapter1,
   {
     id: "zahlen",
     title: "Телефон без паники",

@@ -17,7 +17,8 @@ import { copyFileSync, existsSync, mkdirSync, readdirSync, readFileSync, rmSync,
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { parse } from "yaml";
-import { episodes as storyEpisodes, phrases as storyPhrases } from "../src/story/data.ts";
+import { episodes as gameEpisodes, phrases as storyPhrases } from "../src/story/data.ts";
+import { sceneChapter1 } from "../src/story/scenes/01.ts";
 import { audioKey, storyLines, storyWords, validateStory } from "../src/story/logic.ts";
 import { stepRules } from "../src/story/rules.ts";
 import { uhrzeit } from "../src/lib/german.ts";
@@ -58,6 +59,8 @@ const EXERCISE_TYPES = ["choice", "gap", "order"];
 const PRONOUNS = new Set(["ich", "du", "er", "sie", "es", "wir", "ihr"]);
 const WRONG_ENDING = { e: "en", st: "t", t: "st", en: "st" };
 
+// Прототип сцен (#/a1/moin-neu) проверяется и озвучивается вместе с игрой.
+const storyEpisodes = [...gameEpisodes, sceneChapter1];
 const errors = validateStory(storyEpisodes, storyPhrases);
 const warnings = [];
 const fail = (where, message) => errors.push(`${where}: ${message}`);

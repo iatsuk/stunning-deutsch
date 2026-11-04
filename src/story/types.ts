@@ -25,7 +25,41 @@ export type OralRound = {
   model: string;
   ru: string;
 };
+/** Вариант в сцене: верный продвигает разговор, неверный получает реакцию. */
+export type Pick = { text: string; ok?: true; react?: string };
+/**
+ * Узел сцены. Сцена — разговор и осмотр места, в который вплетены действия: так сюжет
+ * идёт через действия игрока, а не между отдельными играми.
+ */
+export type SceneNode =
+  /** Рассказчик по-русски; немецкие единицы — {id}, как в рассказе шагов. */
+  | { t: "narr"; text: string }
+  /** Реплика героя голосом; learn — новые слова уроков, которые она вводит. */
+  | { t: "say"; who: string; voice: string; de: string; ru: string; learn?: string[] }
+  /** Ответ игрока герою по-немецки: верных может быть несколько. */
+  | { t: "reply"; task?: string; options: Pick[] }
+  /** Своя реплика с клавиатуры; * в ответе — любое имя с большой буквы. */
+  | { t: "type"; task: string; answers: string[]; ru?: string }
+  /** Пропуск в немецкой фразе. */
+  | { t: "gap"; task: string; text: string; options: string[]; answer: string; ru?: string }
+  /** Послушать реплику ещё раз и выбрать, что прозвучало или что она значит. */
+  | { t: "hear"; task: string; voice: string; de: string; options: string[]; answer: string }
+  /** Решение детектива по-русски. */
+  | { t: "pick"; task: string; options: Pick[] }
+  /** Осмотр места: нажимать на предметы; все отмеченные key нужно найти. */
+  | { t: "look"; task: string; items: { icon: string; de?: string; ru: string; note: string; key?: true }[] }
+  /** Развилка: куда пойти или кого спросить; пройти нужно все ветки, порядок выбирает игрок. */
+  | { t: "go"; task: string; branches: { label: string; icon: string; nodes: SceneNode[] }[] }
+  /** Предмет в инвентарь. */
+  | { t: "item"; icon: string; de: string; ru: string }
+  /** Улика в блокнот. */
+  | { t: "clue"; title: string; text: string }
+  /** Иллюстрация к сцене (public/story-img). Проходить её не нужно: она стоит перед следующим узлом. */
+  | { t: "pic"; src: string; alt: string }
+  /** Встроенная игра: часы, касса, причалы и любые другие действия. */
+  | { t: "game"; task: string; c: Challenge; hint?: string };
 export type Challenge =
+  | { kind: "play"; nodes: SceneNode[] }
   | { kind: "choice"; options: Option[]; answer: string }
   | { kind: "order"; tiles: string[]; answer: string[]; also?: string[][] }
   | {
@@ -119,6 +153,8 @@ export type Beat = {
 export type Episode = {
   id: string;
   title: string;
+  /** День до Kieler Woche: глава нового сюжета — один день. */
+  day?: { de: string; ru: string };
   place: string;
   topic: string;
   grammar: string;
@@ -131,11 +167,17 @@ export type Answer = string | string[] | Record<string, string | number>;
 export type Mark = { step: number; day: number };
 export type WordCard = Mark & { box: number };
 export type StorySave = {
-  version: 1;
-  cursor: number;
-  completed: number;
+  version: 2;
+  /** Открытый шаг. */
+  cursor: string;
+  /** Пройденные шаги. Отметка по id: новый шаг в пройденной главе остаётся пустой ячейкой. */
+  done: string[];
+  /** Отложенные шаги: следующий за ними открыт, сами они ждут, как пустые ячейки. */
+  skipped: string[];
   drafts: Record<string, Answer>;
   support: boolean;
+  /** Отвечать письменно на шагах, где нужно говорить вслух. */
+  quiet: boolean;
   /** Сколько раз ошибались в выражении; запись на слух убирает его из списка. */
   weak: Record<string, number>;
   /** Память слов словаря: когда какое слово вернуть. */

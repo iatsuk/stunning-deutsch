@@ -21,6 +21,7 @@ import {
   canMove,
   coinTotal,
   lockKey,
+  lockStart,
   MOVES,
   PARTNER,
   placeKey,
@@ -51,9 +52,14 @@ type Game<K extends Challenge["kind"]> = {
   win: () => void;
   /** Сколько раз нажата общая кнопка проверки шага. */
   attempts?: number;
+  /** Отвечать письменно там, где нужно говорить вслух. */
+  quiet?: boolean;
   /** Ошибка на шаге; слово передают игры, которые знают, в каком слове ошиблись. */
   miss: (word?: string) => void;
 };
+
+/** Общие свойства игры без самого задания: так её встраивает и шаг, и сцена. */
+export type GameProps = Omit<Game<Challenge["kind"]>, "c">;
 
 const asList = (value: Answer) => (Array.isArray(value) ? value : []);
 const asRecord = (value: Answer) =>
@@ -62,7 +68,7 @@ const lang = (text: string) => (/[а-яё]/i.test(text) ? undefined : "de");
 
 type Tone = "good" | "bad" | undefined;
 /** Итог действия: зелёный с галочкой — верно, красный с крестиком — ошибка, серый — справка. */
-function Note({ tone, children }: { tone?: Tone; children: ReactNode }) {
+export function Note({ tone, children }: { tone?: Tone; children: ReactNode }) {
   return (
     <p className="moin-count" data-tone={tone} aria-live="polite">
       {tone === "good" ? "✓ " : tone === "bad" ? "✗ " : ""}
@@ -87,7 +93,7 @@ const genderOf = (word: string) =>
     : NEUTER.includes(word)
       ? "das"
       : ARTICLE.exec(word)?.[1];
-function Gendered({ text }: { text: string }) {
+export function Gendered({ text }: { text: string }) {
   const gender = genderOf(text);
   return gender ? (
     <span className="moin-gender" data-gender={gender}>
@@ -865,7 +871,7 @@ export function VoiceLines({ lines }: { lines: VoiceLine[] }) {
 }
 
 /** Вставка букв с умлаутом в поле, где стоит курсор. */
-function UmlautKeys({
+export function UmlautKeys({
   field,
   apply,
 }: {
@@ -899,7 +905,7 @@ function UmlautKeys({
   );
 }
 
-const textInput = {
+export const textInput = {
   type: "text",
   lang: "de",
   autoComplete: "off",
@@ -968,18 +974,42 @@ function ReviewItem({
   onRight: (id: string) => void;
 }) {
   const phrase = phrases[id];
+  return (
+    <Dictation
+      de={phrase.de}
+      ru={phrase.ru}
+      audio={storyAudio(phrase.de)}
+      onRight={() => onRight(id)}
+    />
+  );
+}
+
+/** Запись на слух с точной проверкой; перевод открывается после верного ответа или заранее. */
+function Dictation({
+  de,
+  ru,
+  audio,
+  showRu = false,
+  onRight,
+}: {
+  de: string;
+  ru?: string;
+  audio?: string;
+  showRu?: boolean;
+  onRight: () => void;
+}) {
   const [text, setText] = useState("");
   const [verdict, setVerdict] = useState<ReturnType<typeof judge> | null>(null);
   const [typing, setTyping] = useState(false);
   const [tries, setTries] = useState(0);
   const field = useRef<HTMLInputElement | null>(null);
   const done = verdict === "right";
-  const near = nearMisses(text, [phrase.de]).join(", ");
+  const near = nearMisses(text, [de]).join(", ");
   function check() {
-    const result = judge(text, [phrase.de]);
+    const result = judge(text, [de]);
     setVerdict(result);
     setTries((n) => n + 1);
-    if (result === "right") onRight(id);
+    if (result === "right") onRight();
   }
   return (
     <form
@@ -989,7 +1019,8 @@ function ReviewItem({
         check();
       }}
     >
-      <PlayButton src={storyAudio(phrase.de)} size="md" />
+      <PlayButton src={audio} size="md" />
+      {showRu && ru && !done && <small>{ru}</small>}
       <input
         {...textInput}
         ref={field}
@@ -1013,7 +1044,7 @@ function ReviewItem({
       )}
       {verdict && (
         <p role="status" data-tone={done ? "good" : "bad"}>
-          {done && `✓ Верно: ${phrase.ru}`}
+          {done && `✓ Верно${ru ? `: ${ru}` : ""}`}
           {verdict === "case" && `Почти: проверьте заглавные буквы — ${near}.`}
           {verdict === "umlaut" &&
             `Почти: нужна буква с умлаутом или ß — ${near}.`}
@@ -1021,7 +1052,7 @@ function ReviewItem({
           {!done && (verdict === "wrong" || tries > 1) && (
             <>
               {" "}
-              Правильно: <span lang="de">{phrase.de}</span>
+              Правильно: <span lang="de">{de}</span>
             </>
           )}
         </p>
@@ -1435,13 +1466,28 @@ function RecordButton({ rec }: { rec: ReturnType<typeof useRecorder> }) {
 function SpeakLine({
   line,
   done,
+  quiet,
   onDone,
 }: {
   line: string;
   done: boolean;
+  quiet?: boolean;
   onDone: () => void;
 }) {
   const rec = useRecorder();
+  // Без голоса фраза записывается на слух: текст скрыт, иначе это было бы переписывание.
+  if (quiet && !done)
+    return (
+      <li>
+        <Dictation
+          de={line}
+          ru={wordInfo(line)?.ru}
+          audio={wordInfo(line)?.audio}
+          showRu
+          onRight={onDone}
+        />
+      </li>
+    );
   return (
     <li data-done={done || undefined}>
       <div>
@@ -1471,7 +1517,14 @@ function SpeakLine({
   );
 }
 
-export function Speak({ c, value, disabled, change, win }: Game<"speak">) {
+export function Speak({
+  c,
+  value,
+  disabled,
+  quiet,
+  change,
+  win,
+}: Game<"speak">) {
   const done = asList(value);
   return (
     <ul className="moin-speak">
@@ -1479,6 +1532,7 @@ export function Speak({ c, value, disabled, change, win }: Game<"speak">) {
         <SpeakLine
           key={line}
           line={line}
+          quiet={quiet}
           done={disabled || done.includes(line)}
           onDone={() => {
             const next = [...done, line];
@@ -1725,10 +1779,7 @@ function LockBox({
     () => round.reels.map((options, i) => shuffle(options, `${seed}-${i}`)),
     [round, seed],
   );
-  const [at, setAt] = useState<number[]>(() => {
-    const ready = reels.every((options, i) => options[0] === round.answer[i]);
-    return reels.map((_, i) => (ready && i === 0 ? 1 : 0));
-  });
+  const [at, setAt] = useState(() => lockStart(reels, round.answer, seed));
   const [right, setRight] = useState<number | null>(null);
   const opened = right === reels.length;
   function spin(reel: number, by: number) {
@@ -1928,9 +1979,19 @@ export function Letter({
 }
 
 /** Сначала сказать самому, потом сверить: образец до ответа превратил бы речь в чтение вслух. */
-function OralTurn({ round, onDone }: { round: OralRound; onDone: () => void }) {
+function OralTurn({
+  round,
+  quiet,
+  onDone,
+}: {
+  round: OralRound;
+  quiet?: boolean;
+  onDone: () => void;
+}) {
   const [compare, setCompare] = useState(false);
   const [hint, setHint] = useState(false);
+  // Письменный ответ, если говорить вслух нельзя. Сверяет его сам игрок, как и речь.
+  const [typed, setTyped] = useState("");
   const rec = useRecorder();
   const model = storyAudio(round.model);
   return (
@@ -1965,6 +2026,11 @@ function OralTurn({ round, onDone }: { round: OralRound; onDone: () => void }) {
               {round.model} <PlayButton src={model} label="Послушать образец" />
             </span>
             <small>{round.ru}</small>
+            {typed.trim() && (
+              <span>
+                Мой ответ: <span lang="de">{typed}</span>
+              </span>
+            )}
             {rec.url && (
               <span>
                 <PlayButton src={rec.url} label="Послушать себя" /> Моя запись
@@ -1990,7 +2056,18 @@ function OralTurn({ round, onDone }: { round: OralRound; onDone: () => void }) {
         </>
       ) : (
         <div className="moin-speak-tools">
-          <RecordButton rec={rec} />
+          {quiet ? (
+            <label className="moin-oral-typed">
+              <span>Ваш ответ</span>
+              <input
+                {...textInput}
+                value={typed}
+                onChange={(event) => setTyped(event.target.value)}
+              />
+            </label>
+          ) : (
+            <RecordButton rec={rec} />
+          )}
           {rec.url && (
             <span>
               <PlayButton src={rec.url} label="Послушать себя" /> Моя запись
@@ -2022,7 +2099,14 @@ function OralTurn({ round, onDone }: { round: OralRound; onDone: () => void }) {
   );
 }
 
-export function Oral({ c, value, disabled, change, win }: Game<"oral">) {
+export function Oral({
+  c,
+  value,
+  disabled,
+  quiet,
+  change,
+  win,
+}: Game<"oral">) {
   const done = asList(value);
   const round = c.rounds.find((r) => !done.includes(r.model));
   if (!round || disabled)
@@ -2041,6 +2125,7 @@ export function Oral({ c, value, disabled, change, win }: Game<"oral">) {
       <OralTurn
         key={round.model}
         round={round}
+        quiet={quiet}
         onDone={() => {
           const next = [...done, round.model];
           change(next);

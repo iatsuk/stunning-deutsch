@@ -5,6 +5,8 @@ import { spawnSync } from "node:child_process";
 import { plain, preis } from "../src/lib/german.ts";
 import { episodes, beats, phrases } from "../src/story/data.ts";
 import { rulesBefore, stepRules } from "../src/story/rules.ts";
+import { V1_ORDER } from "../src/story/v1-order.ts";
+import { sceneChapter1 } from "../src/story/scenes/01.ts";
 import {
   beatPhrases,
   audioKey,
@@ -12,8 +14,11 @@ import {
   initialAnswer,
   isCorrect,
   knownBefore,
+  lockStart,
+  missedBefore,
   mistake,
   normalizeSave,
+  reachOf,
   placeKey,
   reviewItems,
   solution,
@@ -110,9 +115,11 @@ test("phrases are introduced before becoming German-only; callbacks repeat in ne
   assert.equal(knownBefore(beats, 1).has("moin"), true);
   assert.equal(knownBefore(beats, 1).has("inbag"), false);
   assert.ok(knownBefore(beats, beats.length - 1).has("inbag"));
+  // Выражения прототипа сцен тоже считаются: у него общий словарь выражений с игрой.
+  const all = [...beats, ...sceneChapter1.beats];
   for (const [id, p] of Object.entries(phrases)) {
     assert.ok(
-      beats.some((b) => beatPhrases(b).includes(id)),
+      all.some((b) => beatPhrases(b).includes(id)),
       `Unused phrase: ${id}`,
     );
     assert.ok(p.ru && p.de && p.note);
@@ -126,11 +133,13 @@ test("phrases are introduced before becoming German-only; callbacks repeat in ne
 test("saved progress survives reload, clamps malformed data, and retains unfinished drafts", () => {
   assert.notEqual(STORY_KEY, "sd-adventure-v1");
   const draft = {
-    version: 1,
-    cursor: 5,
-    completed: 5,
+    version: 2,
+    cursor: beats[5].id,
+    done: beats.slice(0, 5).map((b) => b.id),
+    skipped: [],
     drafts: { "02-number": "0176", "01-question": ["Wo", "ist"] },
     support: true,
+    quiet: true,
     weak: { where: 2 },
     cards: { "der Hafen": { box: 1, step: 3, day: 4 } },
     last: { step: 3, day: 4 },
@@ -147,12 +156,43 @@ test("saved progress survives reload, clamps malformed data, and retains unfinis
     },
     beats,
   );
-  assert.equal(malformed.cursor, 0);
-  assert.equal(malformed.completed, 0);
+  assert.equal(malformed.cursor, beats[0].id);
+  assert.deepEqual(malformed.done, []);
   assert.equal(malformed.drafts["02-number"], undefined);
   assert.deepEqual(malformed.drafts["01-question"], ["Wo", "ist"]);
   assert.equal(normalizeSave(null, beats).support, false);
-  assert.equal(normalizeSave({ completed: 4, cursor: 55 }, beats).cursor, 4);
+  assert.equal(normalizeSave({ completed: 4, cursor: 55 }, beats).cursor, V1_ORDER[4]);
+  const v2 = normalizeSave(
+    { version: 2, cursor: "bogus", done: [beats[0].id, "bogus", 7], skipped: "x" },
+    beats,
+  );
+  assert.deepEqual([v2.done, v2.skipped, v2.cursor], [[beats[0].id], [], beats[1].id]);
+});
+test("progress is kept by step: an old save moves over, a new step waits as an empty cell", () => {
+  // Сохранение версии 1: пройдено шесть глав, открыт первый шаг седьмой.
+  const old = normalizeSave({ version: 1, completed: 96, cursor: 96 }, beats);
+  // Отметки идут в нынешнем порядке шагов; удалённый шаг выпадает, переставленные остаются.
+  const passed = new Set(V1_ORDER.slice(0, 96));
+  assert.deepEqual(old.done, beats.map((b) => b.id).filter((id) => passed.has(id)));
+  assert.equal(old.cursor, V1_ORDER[96]);
+  assert.equal(reachOf(old, beats), 96);
+  // Новый шаг посреди пройденной главы не сбивает границу, а ждёт как пропущенный.
+  const extra = { ...beats[10], id: "03-new" };
+  const longer = [...beats.slice(0, 40), extra, ...beats.slice(40)];
+  const moved = normalizeSave({ version: 1, completed: 96, cursor: 96 }, longer);
+  assert.equal(longer[reachOf(moved, longer)].id, V1_ORDER[96]);
+  // Пустыми ячейками ждут только шаги, которых не было в версии 1: новый разговор главы 1 и вставка.
+  assert.deepEqual(missedBefore(moved, longer).map((b) => b.id), ["01-witness", "03-new"]);
+  // Отложенный шаг открывает следующий и сам остаётся пустой ячейкой.
+  const skipped = normalizeSave(
+    { version: 2, done: beats.slice(0, 3).map((b) => b.id), skipped: [beats[3].id], cursor: beats[4].id },
+    beats,
+  );
+  assert.equal(skipped.cursor, beats[4].id);
+  assert.equal(reachOf(skipped, beats), 4);
+  assert.deepEqual(missedBefore(skipped, beats).map((b) => b.id), [beats[3].id]);
+  const solved = normalizeSave({ ...skipped, done: [...skipped.done, beats[3].id] }, beats);
+  assert.deepEqual(solved.skipped, []);
 });
 test("no initial draft earns a success; missing pairs cannot pass", () => {
   for (const b of beats)
@@ -197,8 +237,9 @@ test("every step shows a working answer, also for saves from another game kind",
     },
     beats,
   );
-  assert.equal(old.cursor, 7);
-  assert.equal(old.completed, 22);
+  // Версия 1 считала шаги по старому порядку; шаг, которого больше нет, просто выпадает.
+  assert.equal(old.cursor, V1_ORDER[7]);
+  assert.equal(old.done.length, V1_ORDER.slice(0, 22).filter(byId).length);
   assert.equal(old.drafts["01-mateo"], undefined);
   assert.equal(old.drafts["04-order"], undefined);
   assert.equal(old.drafts["06-time"], undefined);
@@ -340,30 +381,26 @@ test("every chapter teaches through listening, exact writing and returning mista
       `${episode.id}: ошибки не возвращаются`,
     );
   }
-  assert.equal(beats.filter((b) => b.challenge.kind === "write").length, 24);
+  assert.equal(beats.filter((b) => b.challenge.kind === "write").length, 23);
 });
 test("write checks the exact German form and explains near misses", () => {
   const c = byId("01-card").challenge;
-  const good = {
-    wohnort: "Gaarden",
-    land: "Argentinien",
-    familienname: "Jensen",
-  };
+  // Дана · Wohnort, Матео · Land, Грета · Wohnort, Нильс · kommt aus.
+  const good = { f0: "Gaarden", f1: "Argentinien", f2: "Kiel", f3: "Hamburg" };
   assert.ok(isCorrect(c, good));
-  assert.ok(isCorrect(c, { ...good, land: " Argentinien. " }));
-  assert.ok(!isCorrect(c, { ...good, land: "argentinien" }));
-  assert.ok(!isCorrect(c, { ...good, wohnort: "Kiel" }));
-  assert.ok(!isCorrect(c, { wohnort: "Gaarden" }));
+  assert.ok(isCorrect(c, { ...good, f1: " Argentinien. " }));
+  assert.ok(!isCorrect(c, { ...good, f1: "argentinien" }));
+  assert.ok(!isCorrect(c, { ...good, f0: "Kiel" }));
+  // Грета родом из Гамбурга, но живёт в Киле: kommt aus и wohnt in не путаются.
+  assert.ok(!isCorrect(c, { ...good, f2: "Hamburg" }));
+  assert.ok(!isCorrect(c, { f0: "Gaarden" }));
   assert.match(
-    mistake(c, { ...good, land: "argentinien" }, "hint"),
+    mistake(c, { ...good, f1: "argentinien" }, "hint"),
     /заглавные.*Argentinien/,
   );
-  assert.match(
-    mistake(c, { ...good, wohnort: "Kiel" }, "hint"),
-    /правильный ответ/,
-  );
-  assert.notEqual(mistake(c, { ...good, wohnort: "Kiel" }, "hint"), "hint");
-  assert.match(mistake(c, { wohnort: "Gaarden" }, "hint"), /Заполните/);
+  assert.match(mistake(c, { ...good, f0: "Kiel" }, "hint"), /правильный ответ/);
+  assert.notEqual(mistake(c, { ...good, f0: "Kiel" }, "hint"), "hint");
+  assert.match(mistake(c, { f0: "Gaarden" }, "hint"), /Заполните/);
   const umlaut = {
     kind: "write",
     title: "t",
@@ -474,6 +511,17 @@ test("a lock has a Russian task, real alternatives and one stored answer per ree
       assert.match(round.answer.at(-1), /[.?!]$/, b.id);
     }
 });
+test("a lock starts with no right reel, sometimes with one", () => {
+  const right = [0, 0, 0];
+  for (const b of beats.filter((b) => b.challenge.kind === "lock"))
+    for (const round of b.challenge.rounds)
+      for (let n = 0; n < 50; n++) {
+        const at = lockStart(round.reels, round.answer, `${b.id}-${n}`);
+        right[at.filter((p, i) => round.reels[i][p] === round.answer[i]).length]++;
+      }
+  assert.equal(right[2], 0);
+  assert.ok(right[0] > right[1] * 2 && right[1] > 0, right.join("/"));
+});
 test("the game uses every word of the A1 lessons", () => {
   const words = JSON.parse(
     readFileSync(new URL("../src/generated/a1-words.json", import.meta.url)),
@@ -504,7 +552,7 @@ test("a letter needs every sentence right, adapted from the model and not copied
   }
   const first = byId("01-x-letter").challenge;
   assert.ok(isCorrect(first, { ...solution(first), f0: "Hallo Greta," }));
-  assert.ok(isCorrect(first, { ...solution(first), f4: "Liebe Grüße Anna" }));
+  assert.ok(isCorrect(first, { ...solution(first), f4: "Liebe Grüße Elif" }));
   assert.ok(
     !isCorrect(first, { ...solution(first), f2: "ich komme aus russland." }),
   );
@@ -663,4 +711,33 @@ test("all three story recordings exist and the active generator refuses Qwen bef
   );
   assert.notEqual(rejected.status, 0);
   assert.match(rejected.stderr, /Only OmniVoice/);
+});
+test("rewritten chapters follow the plot plan: real scenes and a growing share of German", () => {
+  // Кривая из A1-PLOT.md: доля немецких слов в рассказе и сообщениях об успехе, по главам.
+  const plan = [10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65];
+  const known = new Set();
+  const rewritten = [];
+  for (const [i, e] of episodes.entries()) {
+    let de = 0;
+    let ru = 0;
+    for (const b of e.beats) {
+      // Новое выражение читается с переводом, знакомое — только по-немецки.
+      const text = [...b.story, b.success]
+        .join(" ")
+        .replace(/\{([\w-]+)\}/g, (_, id) => {
+          const shown = known.has(id) ? phrases[id].de : `${phrases[id].ru} ${phrases[id].de}`;
+          known.add(id);
+          return ` ${shown} `;
+        });
+      for (const w of text.split(/[\s«»„“"(),.!?:;—–…-]+/).filter(Boolean))
+        if (/[а-яё]/i.test(w)) ru++;
+        else if (/^\p{L}+$/u.test(w)) de++;
+    }
+    if (!e.day) continue;
+    rewritten.push(e.id);
+    const share = (100 * de) / (de + ru);
+    assert.ok(Math.abs(share - plan[i]) <= 5, `${e.id}: ${share.toFixed(1)}% вместо ${plan[i]}%`);
+    assert.ok((de + ru) / e.beats.length >= 40, `${e.id}: ${((de + ru) / e.beats.length).toFixed(0)} слов на шаг`);
+  }
+  assert.ok(rewritten.includes("moin"));
 });

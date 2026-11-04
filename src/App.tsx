@@ -9,6 +9,7 @@ import { LevelPage } from "./pages/Level";
 import { TopicPage } from "./pages/Topic";
 
 const StoryPage = lazy(() => import("./story/StoryPage").then(m => ({ default: m.StoryPage })));
+const ScenePreview = lazy(() => import("./story/ScenePreview").then(m => ({ default: m.ScenePreview })));
 
 export function App() {
   const route = useRoute();
@@ -27,6 +28,7 @@ export function App() {
 
 function Page({ route }: { route: string[] }) {
   const [levelId, topicId] = route;
+  if (levelId === "a1" && topicId === "moin-neu") return <Suspense fallback={<p className="hero">Открываем дело…</p>}><ScenePreview /></Suspense>;
   if (levelId === "a1" && topicId === "moin") return <Suspense fallback={<p className="hero">Открываем дело…</p>}><StoryPage /></Suspense>;
   if (levelId === "impressum") return <ImpressumPage />;
   if (levelId === "datenschutz") return <DatenschutzPage />;

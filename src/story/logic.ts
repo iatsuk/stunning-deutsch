@@ -1,5 +1,9 @@
+import { shuffle } from "../lib/shuffle.ts";
 import { judge, nearMisses } from "../trainer/logic.ts";
+import { V1_ORDER } from "./v1-order.ts";
+import { flatNodes, keyOf, sceneKeys, sceneVoices, sceneWords } from "./scene.ts";
 import type {
+  SceneNode,
   Answer,
   Beat,
   Challenge,
@@ -17,7 +21,15 @@ export const STORY_KEY = "sd-moin-story-v1";
 export const phraseIds = (text: string): string[] =>
   [...text.matchAll(/\{([\w-]+)\}/g)].map((m) => m[1]);
 export const beatPhrases = (beat: Beat) => [
-  ...new Set([...beat.story, ...(beat.source?.lines ?? [])].flatMap(phraseIds)),
+  ...new Set(
+    [
+      ...beat.story,
+      ...(beat.source?.lines ?? []),
+      ...(beat.challenge.kind === "play"
+        ? flatNodes(beat.challenge.nodes).flatMap((n) => (n.t === "narr" ? [n.text] : []))
+        : []),
+    ].flatMap(phraseIds),
+  ),
 ];
 export function knownBefore(beats: Beat[], cursor: number): Set<string> {
   return new Set(beats.slice(0, cursor).flatMap(beatPhrases));
@@ -38,30 +50,35 @@ export function storyLines(
     ...episodes.flatMap((e) =>
       e.beats.flatMap((b) => [
         ...(b.voices ?? []).map(({ text, voice }) => ({ text, voice })),
-        ...(b.challenge.kind === "oral"
-          ? b.challenge.rounds.flatMap((r) => [
-              { text: r.model, voice: NARRATOR },
-              ...(r.hear ? [{ text: r.hear, voice: PARTNER }] : []),
-            ])
-          : []),
-        ...(b.challenge.kind === "lock"
-          ? b.challenge.rounds.map((r) => ({
-              text: lockKey(r),
-              voice: NARRATOR,
-            }))
-          : []),
-        ...(b.challenge.kind === "chat"
-          ? b.challenge.turns.map((t) => ({
-              text: t.say,
-              voice: (b.challenge as { voice: string }).voice,
-            }))
-          : []),
+        ...challengeLines(b.challenge),
       ]),
     ),
   ];
 }
+/** Реплики самого действия; сцена отдаёт свои реплики и реплики встроенных игр. */
+function challengeLines(c: Challenge): { text: string; voice: string }[] {
+  switch (c.kind) {
+    case "play":
+      return [
+        ...sceneVoices(c.nodes),
+        ...flatNodes(c.nodes).flatMap((n) => (n.t === "game" ? challengeLines(n.c) : [])),
+      ];
+    case "oral":
+      return c.rounds.flatMap((r) => [
+        { text: r.model, voice: NARRATOR },
+        ...(r.hear ? [{ text: r.hear, voice: PARTNER }] : []),
+      ]);
+    case "lock":
+      return c.rounds.map((r) => ({ text: lockKey(r), voice: NARRATOR }));
+    case "chat":
+      return c.turns.map((t) => ({ text: t.say, voice: c.voice }));
+    default:
+      return [];
+  }
+}
 /** Слова словаря уроков, которыми играет этот шаг. */
 export function challengeWords(c: Challenge): string[] {
+  if (c.kind === "play") return [...new Set(sceneWords(c.nodes, challengeWords))];
   if (
     c.kind === "bingo" ||
     c.kind === "letters" ||
@@ -85,6 +102,22 @@ export const storyWords = (episodes: Episode[]) => [
 
 /** Решённый раунд замка хранится как собранная фраза. */
 export const lockKey = (round: LockRound) => round.answer.join(" ");
+
+/**
+ * С чего начинают диски замка: обычно ни один не стоит верно, примерно в каждом
+ * четвёртом замке — ровно один. Иначе часть фразы уже собрана до первого хода.
+ */
+export function lockStart(reels: string[][], answer: string[], seed: string) {
+  const easy =
+    reels.length > 1 && shuffle([0, 1, 2, 3], `${seed}-easy`)[0] === 0
+      ? shuffle([...reels.keys()], `${seed}-free`)[0]
+      : -1;
+  return reels.map((options, i) => {
+    const right = options.indexOf(answer[i]);
+    if (i === easy) return right;
+    return shuffle([...options.keys()].filter((n) => n !== right), `${seed}-${i}-start`)[0];
+  });
+}
 
 /** Старые ошибки возвращаются, пока их не исправят, но не вытесняют выражения текущей главы. */
 export const reviewItems = (episode: Episode, weak: Record<string, number>) =>
@@ -150,6 +183,11 @@ export function isCorrect(
   value: Answer | undefined,
 ): boolean {
   switch (challenge.kind) {
+    case "play": {
+      if (!Array.isArray(value)) return false;
+      const done = new Set(value.map(keyOf));
+      return sceneKeys(challenge.nodes).every((k) => done.has(k));
+    }
     case "choice":
     case "code":
     case "clock":
@@ -235,6 +273,8 @@ export function isCorrect(
 /** Ответ, который показывается на уже пройденном шаге и проверяется при сборке. */
 export function solution(challenge: Challenge): Answer {
   switch (challenge.kind) {
+    case "play":
+      return sceneKeys(challenge.nodes);
     case "chat":
       return challenge.turns.map((t) => t.answer);
     case "memory":
@@ -282,6 +322,7 @@ export function solution(challenge: Challenge): Answer {
 
 export function initialAnswer(challenge: Challenge): Answer {
   switch (challenge.kind) {
+    case "play":
     case "order":
     case "chat":
     case "spot":
@@ -386,6 +427,17 @@ export function mistake(c: Challenge, value: Answer, hint: string): string {
 function restoreDraft(c: Challenge, v: unknown): Answer | undefined {
   const strings = Array.isArray(v) && v.every((t) => typeof t === "string");
   switch (c.kind) {
+    case "play": {
+      if (!strings) return undefined;
+      const keys = new Set(sceneKeys(c.nodes));
+      const seen = new Set<string>();
+      return (v as string[]).filter((entry) => {
+        const key = keyOf(entry);
+        if (!keys.has(key) || seen.has(key)) return false;
+        seen.add(key);
+        return true;
+      });
+    }
     case "choice":
     case "code":
       return typeof v === "string" ? v : undefined;
@@ -508,15 +560,55 @@ function restoreDraft(c: Challenge, v: unknown): Answer | undefined {
 const isCount = (value: unknown) =>
   Number.isInteger(value) && Number(value) >= 0;
 
+/** Сохранение версии 1 хранило число пройденных шагов и номер открытого. */
+type SaveV1 = { completed?: unknown; cursor?: unknown };
+
+const ids = (value: unknown, beats: Beat[]) =>
+  Array.isArray(value)
+    ? beats.map((b) => b.id).filter((id) => value.includes(id))
+    : [];
+
+/**
+ * До какого шага открыта история: следующий за самым дальним пройденным или отложенным.
+ * Непройденные шаги до него — пустые ячейки, на них можно вернуться.
+ */
+export function reachOf(save: Pick<StorySave, "done" | "skipped">, beats: Beat[]) {
+  const marked = new Set([...save.done, ...save.skipped]);
+  let last = -1;
+  beats.forEach((b, i) => marked.has(b.id) && (last = i));
+  return Math.min(last + 1, beats.length - 1);
+}
+
+/** Шаги до открытой границы, которые ещё не пройдены: пропущенные или добавленные позже. */
+export function missedBefore(save: StorySave, beats: Beat[]) {
+  const reach = reachOf(save, beats),
+    done = new Set(save.done);
+  return beats.filter((b, i) => i < reach && !done.has(b.id));
+}
+
 export function normalizeSave(raw: unknown, beats: Beat[]): StorySave {
   const data =
-    raw && typeof raw === "object" ? (raw as Partial<StorySave>) : {};
-  const completed = Number.isInteger(data.completed)
-    ? Math.max(0, Math.min(beats.length, data.completed!))
-    : 0;
-  const cursor = Number.isInteger(data.cursor)
-    ? Math.max(0, Math.min(beats.length - 1, completed, data.cursor!))
-    : Math.min(completed, beats.length - 1);
+    raw && typeof raw === "object"
+      ? (raw as Partial<Omit<StorySave, "version">> & SaveV1 & { version?: unknown })
+      : {};
+  let done: string[], skipped: string[], cursor: unknown;
+  if (data.version === 2) {
+    done = ids(data.done, beats);
+    skipped = ids(data.skipped, beats).filter((id) => !done.includes(id));
+    cursor = data.cursor;
+  } else {
+    // Версия 1 считала шаги по порядку, поэтому переносим по замороженному списку.
+    const completed = Number.isInteger(data.completed)
+      ? Math.max(0, Number(data.completed))
+      : 0;
+    done = ids(V1_ORDER.slice(0, completed), beats);
+    skipped = [];
+    cursor = Number.isInteger(data.cursor)
+      ? V1_ORDER[Math.min(Number(data.cursor), completed)]
+      : undefined;
+  }
+  const reach = reachOf({ done, skipped }, beats);
+  const at = beats.findIndex((b) => b.id === cursor);
   const drafts: Record<string, Answer> = {};
   if (data.drafts && typeof data.drafts === "object")
     for (const beat of beats) {
@@ -541,11 +633,13 @@ export function normalizeSave(raw: unknown, beats: Beat[]): StorySave {
         )
       : {};
   return {
-    version: 1,
-    cursor,
-    completed,
+    version: 2,
+    cursor: beats[at >= 0 && at <= reach ? at : reach].id,
+    done,
+    skipped,
     drafts,
     support: data.support === true,
+    quiet: data.quiet === true,
     weak,
     cards,
     last:
@@ -561,6 +655,8 @@ function validateChallenge(
   phrases: Record<string, unknown>,
 ): boolean {
   switch (c.kind) {
+    case "play":
+      return validateScene(c.nodes, known, phrases);
     case "choice":
       return c.options.some((o) => o.id === c.answer);
     case "order":
@@ -686,6 +782,46 @@ function validateChallenge(
         c.fields.every((f) => f.answers.length > 0)
       );
   }
+}
+
+/** Сцена: у каждого действия есть верный ответ, встроенные игры решаемы, развилки без вложений. */
+function validateScene(
+  nodes: SceneNode[],
+  known: Set<string>,
+  phrases: Record<string, unknown>,
+  nested = false,
+): boolean {
+  // Картинка показывается перед следующим узлом, поэтому последней в списке стоять не может.
+  if (!nodes.length || nodes.at(-1)!.t === "pic") return false;
+  return nodes.every((n) => {
+    switch (n.t) {
+      case "narr":
+        return phraseIds(n.text).every((id) => phrases[id]);
+      case "say":
+        return Boolean(n.de && n.ru && n.who && n.voice) && !/[а-яё]/i.test(n.de);
+      case "reply":
+      case "pick":
+        return n.options.length >= 2 && n.options.some((o) => o.ok) && n.options.every((o) => o.ok || o.react);
+      case "type":
+        return n.answers.length > 0 && Boolean(n.task);
+      case "gap":
+        return n.text.includes("___") && n.options.includes(n.answer) && new Set(n.options).size === n.options.length && n.options.length >= 2;
+      case "hear":
+        return n.options.includes(n.answer) && new Set(n.options).size === n.options.length && n.options.length >= 2;
+      case "look":
+        return n.items.some((i) => i.key) && n.items.every((i) => i.note && i.ru && i.icon);
+      case "go":
+        return !nested && n.branches.length >= 2 && n.branches.every((b) => b.label && validateScene(b.nodes, known, phrases, true));
+      case "item":
+        return Boolean(n.icon && n.de && n.ru);
+      case "clue":
+        return Boolean(n.title && n.text);
+      case "pic":
+        return /^[\w-]+\.(jpg|png|webp)$/.test(n.src) && Boolean(n.alt);
+      case "game":
+        return n.c.kind !== "play" && validateChallenge(n.c, known, phrases) && isCorrect(n.c, solution(n.c));
+    }
+  });
 }
 
 export function validateStory(

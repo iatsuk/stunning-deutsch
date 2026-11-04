@@ -1,143 +1,16 @@
-import type { Beat, Challenge, OralRound } from "./types.ts";
+import type { Beat } from "./types.ts";
+import {
+  an, ANSWER, ASK, bingo, docks, DOCK, gruss, gull, HEAR, HINT_DOCK, HINT_HEAR, HINT_LETTER,
+  HINT_LOCK, HINT_ODD, HINT_ORAL, HINT_PICTURE, HINT_RACE, HINT_SAY, HINT_SPELL, HINT_WRITE,
+  letter, LETTER, letters, lock, LOCK, odd, ODD, oral, ORAL, PICTURE, RACE, REACT, reply,
+  REQUEST, SAY, say, scene, speak, SPELL, step, write, WRITE,
+} from "./build.ts";
 
 // Шаги со словарём уроков A1. Один шаг охватывает сразу несколько слов, поэтому объём лексики
 // растёт быстрее числа шагов. Ключ — шаг основной истории, после которого идут эти шаги.
-
-const step = (
-  id: string,
-  title: string,
-  story: string,
-  prompt: string,
-  hint: string,
-  success: string,
-  challenge: Challenge,
-): Beat => ({ id, title, story: [story], prompt, hint, success, challenge });
-
-const bingo = (words: string[]): Challenge => ({ kind: "bingo", words });
-const scene = (items: [string, string][]): Challenge => ({
-  kind: "scene",
-  items: items.map(([word, icon]) => ({ word, icon })),
-});
-const odd = (rounds: [string[], string, string][]): Challenge => ({
-  kind: "odd",
-  rounds: rounds.map(([words, answer, why]) => ({ words, odd: answer, why })),
-});
-const letters = (words: string[]): Challenge => ({ kind: "letters", words });
-const speak = (lines: string[]): Challenge => ({ kind: "speak", lines });
-const docks = (words: string[]): Challenge => ({ kind: "docks", words });
-const gull = (words: string[]): Challenge => ({ kind: "gull", words });
-/** Первый вариант на каждом диске — верный; при показе диски перемешиваются. */
-const lock = (rounds: [string, string[][]][]): Challenge => ({
-  kind: "lock",
-  rounds: rounds.map(([ru, reels]) => ({ ru, reels, answer: reels.map((r) => r[0]) })),
-});
-const letter = (to: string, model: string[], fields: string[][]): Challenge => ({
-  kind: "letter",
-  to,
-  model,
-  fields: fields.map(([label, ...answers], i) => ({ id: `f${i}`, label, answers })),
-});
-/** Обращение и подпись: образец показывает один вариант, но верны и другие обычные формы. */
-const an = (greeting: string, name: string) => [
-  `Anrede: an ${name.replace(/^Herr /, "Herrn ")}`,
-  `${greeting} ${name}`,
-  `Hallo ${name}`,
-  ...(/^(Frau|Herr) /.test(name) ? [`Sehr ${name.startsWith("Frau") ? "geehrte" : "geehrter"} ${name}`] : []),
-];
-const gruss = (name: string) => [
-  `Gruß und Name: ${name}`,
-  ...["Viele Grüße", "Liebe Grüße", "Herzliche Grüße"].flatMap((g) => [`${g}, ${name}`, `${g} ${name}`]),
-];
-const oral = (rounds: OralRound[]): Challenge => ({ kind: "oral", rounds });
-const say = (part: OralRound["part"], task: string, card: string, model: string, ru: string, hint?: string): OralRound => ({ part, task, card, model, ru, hint });
-const reply = (part: OralRound["part"], task: string, hear: string, model: string, ru: string): OralRound => ({ part, task, hear, model, ru });
-const write = (title: string, fields: [string, string][]): Challenge => ({
-  kind: "write",
-  title,
-  fields: fields.map(([label, answer], i) => ({
-    id: `f${i}`,
-    label,
-    answers: [answer],
-  })),
-});
-
-const DOCK = "Слово без артикля. К какому причалу оно подходит: der, die или das?";
-const RACE = "Прочитайте перевод и нажмите немецкое слово, пока чайка не долетела.";
-const LOCK = "Поверните диски, чтобы получилась фраза, и откройте замок.";
-const LETTER = "Напишите письмо по образцу. Пункты подсказывают, что сказать; меняются только данные.";
-const ORAL = "Сначала скажите вслух сами, потом сверьтесь с образцом.";
-const ASK = "Задайте партнёру вопрос по карточке.";
-const ANSWER = "Партнёр спрашивает вас. Ответьте вслух.";
-const REQUEST = "Попросите о том, что на картинке.";
-const REACT = "Партнёр обращается к вам. Отреагируйте вслух.";
-const HEAR = "Нажмите кнопку, послушайте слово и закройте его на карточке.";
-const PICTURE = "Послушайте слово и нажмите на подходящую картинку.";
-const ODD = "Одно слово в группе лишнее. Найдите его.";
-const SPELL = "Соберите слово по буквам.";
-const SAY = "Послушайте и повторите вслух. Можно записать себя и сравнить.";
-const WRITE = "Напишите по-немецки. У существительных нужен артикль.";
-const HINT_DOCK = "Артикль запоминают вместе со словом. После ошибки слово вернётся в конце очереди.";
-const HINT_RACE = "Унесённое слово вернётся, а времени станет больше. Проиграть здесь нельзя.";
-const HINT_LOCK = "Замок считает верные диски, но не называет их. Проверьте форму глагола и порядок слов.";
-const HINT_LETTER = "Берите предложения образца и меняйте данные. После второй неудачной проверки откроется правильный вариант.";
-const HINT_ORAL = "Здесь проверяете вы сами. Запись остаётся на этой странице и никуда не отправляется.";
-const HINT_HEAR = "Переслушивать можно сколько угодно. Ошибка ничего не стоит.";
-const HINT_PICTURE = "Неверное нажатие подскажет, как называется картинка.";
-const HINT_ODD = "Ищите общую тему трёх слов. Перевод открывается после нажатия.";
-const HINT_SPELL = "Лишние буквы тоже лежат в наборе. Кнопка рядом с переводом озвучивает слово.";
-const HINT_SAY = "Запись остаётся только на этой странице и никуда не отправляется.";
-const HINT_WRITE = "Существительные пишутся с большой буквы, глаголы — с маленькой.";
+// Глава 1 уже переписана по новому сюжету и лежит целиком в chapters/01-moin.ts.
 
 export const extras: Record<string, Beat[]> = {
-  "01-welcome": [
-    step("01-x-hello", "Лото у причала", "Пока Йенсен ищет блокнот, гости клуба репетируют встречу. Он читает слова из старого разговорника, а Матео уже раздал карточки.", HEAR, HINT_HEAR, "Лото! Йенсен объявляет вас главным по приветствиям. Премия прежняя: danke.",
-      bingo(["Hallo!", "Guten Morgen!", "Guten Tag!", "Guten Abend!", "Gute Nacht!", "Wie geht's?", "Tschüss!", "Auf Wiedersehen!", "das Boot"])),
-    step("01-x-docks", "Три причала", "В гавани Киля три причала: der, die и das. Йенсен уверяет, что у каждого слова свой причал и менять его не положено, как и у яхт.", DOCK, HINT_DOCK, "Слова пришвартованы. Йенсен проверяет узлы и не находит, к чему придраться.",
-      docks(["der Name", "das Land", "der Strand", "die Stadt", "die Sprache", "der Hafen", "das Boot", "das Café"])),
-  ],
-  "01-mateo": [
-    step("01-x-flags", "Флажки на причале", "На Kieler Woche приезжают команды из разных стран. Чайка сорвала подписи с флажков, и теперь Хауке не знает, какой чей.", PICTURE, HINT_PICTURE, "Флажки подписаны. Чайка утверждает, что представляет международное сообщество чаек.",
-      scene([["Deutschland", "🇩🇪"], ["Dänemark", "🇩🇰"], ["Kasachstan", "🇰🇿"], ["Russland", "🇷🇺"], ["die Türkei", "🇹🇷"], ["die Ukraine", "🇺🇦"], ["die Schweiz", "🇨🇭"], ["die USA", "🇺🇸"]])),
-    step("01-x-race", "Чайка и вопросы", "Чайка заметила карточки с вопросами и уже снижается. Заберите слово раньше неё.", RACE, HINT_RACE, "Вопросы спасены. Чайка делает вид, что летела по своим делам.",
-      gull(["Moin!", "heißen", "kommen aus", "wohnen in", "Wer?", "Wie?", "Woher?", "Wo?", "Was?", "Welche?"])),
-  ],
-  "01-question": [
-    step("01-x-say", "Голос для рации", "Йенсен просит поздороваться с гостями по рации. Рация старая, поэтому говорить нужно чётко.", SAY, HINT_SAY, "Рация довольно хрипит. Гости отвечают.",
-      speak(["Guten Morgen!", "Wie geht's?", "Danke, gut!"])),
-    step("01-x-odd", "Разберите карточки", "Ветер смешал карточки клуба. Элиф раскладывает их стопками, но в каждой стопке одна чужая.", ODD, HINT_ODD, "Стопки в порядке. Ветер обещал больше так не делать, но слова не дал.",
-      odd([
-        [["Guten Morgen!", "Guten Tag!", "Guten Abend!", "Tschüss!"], "Tschüss!", "Tschüss — прощание, остальные слова — приветствия."],
-        [["der Hafen", "das Boot", "segeln", "die Sprache"], "die Sprache", "Die Sprache — язык, остальное связано с морем."],
-        [["Gute Nacht!", "Auf Wiedersehen!", "Tschüss!", "Wie geht's?"], "Wie geht's?", "Wie geht's? — вопрос, остальное — прощание."],
-      ])),
-  ],
-  "01-card": [
-    step("01-x-letters", "Чайка любит буквы", "Чайка склевала буквы с таблички клуба. Буквы нашлись под лавкой, теперь их нужно вернуть на место.", SPELL, HINT_SPELL, "Слова снова целы. Чайка заметно поправилась.",
-      letters(["der Vorname", "die Stadt", "die Sprache", "der Hafen", "das Boot"])),
-    step("01-x-write", "Словарик для Матео", "Матео просит записать ему несколько немецких слов в блокнот: почерк у него есть, а слов пока мало.", WRITE, HINT_WRITE, "Матео доволен и обещает выучить всё к обеду. Обед он выучил заранее.",
-      write("Für Mateo", [["город", "die Stadt"], ["говорить", "sprechen"], ["фамилия", "der Familienname"], ["ходить под парусом", "segeln"], ["кафе", "das Café"]])),
-    step("01-x-lock", "Шкафчик Йенсена", "У Йенсена на шкафчике словесный замок: цифры он забывает, а фразы, говорит, помнит. Внутри лежат запасные ключи.", LOCK, HINT_LOCK, "Шкафчик открыт. Внутри ключи и записка: «Цифры надёжнее».",
-      lock([
-        ["Я живу в Киле.", [["Ich", "Du", "Er"], ["wohne", "wohnst", "wohnt"], ["in Kiel.", "aus Kiel.", "nach Kiel."]]],
-        ["Откуда ты родом?", [["Woher", "Wo", "Wie"], ["kommst", "komme", "kommt"], ["du?", "ich?", "wir?"]]],
-        ["Мы из Аргентины.", [["Wir", "Ich", "Er"], ["sind", "bin", "ist"], ["aus Argentinien.", "in Argentinien.", "nach Argentinien."]]],
-      ])),
-    step("01-x-letter", "Первое письмо", "Новая участница клуба Анна просит помочь с письмом Грете. Матео разрешает взять его письмо за образец, только данные у Анны другие.", LETTER, HINT_LETTER, "Письмо ушло. Грета отвечает одним словом: Moin.",
-      letter("Greta", ["Liebe Elif,", "ich heiße Mateo. Ich komme aus Argentinien. Ich wohne in Gaarden.", "Viele Grüße", "Mateo"], [
-        an("Liebe", "Greta"),
-        ["Wie heißen Sie? → Anna", "Ich heiße Anna."],
-        ["Woher kommen Sie? → Russland", "Ich komme aus Russland."],
-        ["Wo wohnen Sie? → Kiel", "Ich wohne in Kiel."],
-        gruss("Anna"),
-      ])),
-    step("01-x-oral", "Репетиция знакомства", "Завтра в клубе гости. Йенсен просит порепетировать вслух, как на экзамене, без бумажки.", ORAL, HINT_ORAL, "Йенсен не нашёл ни одной ошибки. Правда, он и не слушал, но всё равно доволен.",
-      oral([
-        say(1, "Скажите, как вас зовут и откуда вы.", "Name · Land", "Ich heiße Mateo. Ich komme aus Argentinien.", "Меня зовут Матео. Я из Аргентины."),
-        say(1, "Скажите, где вы живёте и на каких языках говорите.", "Wohnort · Sprachen", "Ich wohne in Kiel. Ich spreche Spanisch und Deutsch.", "Я живу в Киле. Я говорю по-испански и по-немецки."),
-        say(2, ASK, "Thema: Person · Wort: Wohnort", "Wo wohnen Sie?", "Где вы живёте?", "Wo …?"),
-        reply(2, ANSWER, "Woher kommen Sie?", "Ich komme aus Deutschland.", "Я из Германии."),
-      ])),
-  ],
   "02-number": [
     step("02-x-numbers", "Лото в офисе", "Пока Нильс ищет ручку, Петерсен предлагает проверить слух. В офисе тихо, на столе карточки.", HEAR, HINT_HEAR, "Петерсен кивает. В её офисе это считается бурными аплодисментами.",
       bingo(["eins", "zwei", "drei", "vier", "fünf", "sechs", "sieben", "acht", "neun"])),

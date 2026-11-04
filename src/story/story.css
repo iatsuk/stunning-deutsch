@@ -198,6 +198,40 @@
   color: var(--muted);
   font-size: 11px;
 }
+/* Глава позади, но в ней ждут шаги: шарик вместо галочки. */
+.moin-route li button > span[data-waiting] {
+  color: var(--accent);
+}
+.moin-quiet {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 16px;
+  margin-bottom: 14px;
+  font-size: 13px;
+}
+.moin-quiet label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+.moin-quiet input {
+  accent-color: var(--accent);
+}
+.moin-quiet small {
+  flex-basis: 100%;
+  color: var(--muted);
+}
+.moin-oral-typed {
+  display: grid;
+  gap: 4px;
+  flex: 1 1 220px;
+}
+.moin-oral-typed span {
+  font-size: 11px;
+  color: var(--muted);
+}
 .moin-route small {
   display: block;
   font-size: 11px;
@@ -246,6 +280,16 @@
   margin: 28px 30px 8px;
   font-size: 12px;
   color: var(--accent);
+}
+.moin-day {
+  margin: -4px 30px 10px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.moin-day b {
+  font-family: var(--mono);
+  font-weight: 500;
+  color: var(--text);
 }
 .moin-scene h2 {
   font-family: var(--serif);
@@ -637,6 +681,11 @@
 }
 .moin-steps button[data-done]::before {
   background: var(--accent-line);
+}
+/* Открытый, но не пройденный шаг: пропущенный или добавленный позже — пустая ячейка. */
+.moin-steps button:not([data-done]):not(:disabled):not([aria-current])::before {
+  background: transparent;
+  box-shadow: inset 0 0 0 1.5px var(--accent);
 }
 .moin-steps button[aria-current="step"]::before {
   height: 10px;
@@ -1119,7 +1168,8 @@
   color: var(--muted);
 }
 .moin-write input,
-.moin-review-item input {
+.moin-review-item input,
+.moin-oral-typed input {
   width: 100%;
   min-width: 0;
   padding: 11px 12px;
@@ -1187,6 +1237,17 @@
 .moin-review-item > button[type="submit"]:disabled {
   opacity: 0.4;
   cursor: default;
+}
+/* С переводом рядом с кнопкой поле ответа уходит на всю ширину. */
+.moin-review-item > small {
+  grid-column: 2;
+}
+.moin-review-item:has(> small) input {
+  grid-column: 1 / -1;
+}
+.moin-speak .moin-review-item {
+  padding: 0;
+  border-top: 0;
 }
 .moin-review-item .moin-umlauts,
 .moin-review-item p {
@@ -1894,6 +1955,11 @@
     margin: 22px 18px 8px;
     font-size: 11px;
   }
+  .moin-day {
+    margin-left: 18px;
+    margin-right: 18px;
+    font-size: 11px;
+  }
   .moin-scene h2 {
     margin-left: 18px;
     margin-right: 18px;
@@ -1972,4 +2038,313 @@
   .moin-turn-actions .primary {
     width: 100%;
   }
+}
+
+/* ───────────── Сцены: разговор с действиями (прототип #/a1/moin-neu) ───────────── */
+.moin-preview {
+  grid-template-columns: minmax(0, 760px) 260px;
+}
+.moin-preview-lede {
+  margin: -6px 30px 18px;
+  color: var(--muted);
+  font-size: 14px;
+}
+.moin-preview-tools {
+  margin: 18px 30px 24px;
+}
+.moin-preview-notebook {
+  align-self: start;
+  padding: 22px;
+  border: 1px solid #3a464b;
+  border-radius: 5px;
+  background: #202528;
+  font-size: 14px;
+}
+.moin-preview-notebook ul {
+  margin: 12px 0 0;
+  padding-left: 18px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.moin-preview-notebook li + li {
+  margin-top: 8px;
+}
+.moin-play {
+  display: grid;
+  gap: 12px;
+  padding-bottom: 8px;
+}
+.moin-play-voice {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--muted);
+  cursor: pointer;
+}
+.moin-play-voice input {
+  accent-color: var(--accent);
+}
+.moin-play-log,
+.moin-play-log > div {
+  display: grid;
+  gap: 12px;
+}
+.moin-play-narr {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7;
+}
+.moin-play-say {
+  max-width: 92%;
+}
+.moin-play-note {
+  margin: 0;
+  padding-left: 12px;
+  border-left: 2px solid var(--ok);
+  font-size: 14px;
+  color: var(--muted);
+}
+.moin-play-gain {
+  margin: 0;
+  padding: 8px 12px;
+  border: 1px dashed var(--accent-line);
+  border-radius: 5px;
+  font-size: 13px;
+  color: var(--accent);
+}
+.moin-play-current {
+  display: grid;
+  gap: 12px;
+  padding-top: 14px;
+  border-top: 1px dashed var(--line-strong);
+  scroll-margin-bottom: 24px;
+}
+.moin-play-next {
+  justify-self: start;
+}
+.moin-play-task {
+  display: grid;
+  gap: 10px;
+}
+.moin-play-ask {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+.moin-play-ru {
+  color: var(--muted);
+  font-size: 13px;
+}
+.moin-play-gap {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 20px;
+}
+.moin-play-blank {
+  display: inline-block;
+  min-width: 3em;
+  padding: 0 6px;
+  border-bottom: 2px solid var(--accent);
+  color: var(--accent);
+  text-align: center;
+}
+.moin-play-type {
+  display: flex;
+  gap: 8px;
+}
+.moin-play-type input {
+  flex: 1;
+  min-width: 0;
+  padding: 11px 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: 4px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--serif);
+  font-size: 18px;
+}
+.moin-play-type button,
+.moin-play-menu button {
+  min-height: 46px;
+  padding: 0 16px;
+  border: 1px solid var(--accent-line);
+  border-radius: 5px;
+  background: transparent;
+  font-size: 15px;
+  cursor: pointer;
+}
+.moin-play-type button:disabled,
+.moin-play-menu button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+.moin-play-menu {
+  display: grid;
+  gap: 8px;
+}
+.moin-play-menu button {
+  text-align: left;
+}
+.moin-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+.moin-chips button {
+  padding: 3px 8px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: transparent;
+  font-size: 13px;
+  cursor: pointer;
+}
+.moin-chips button[aria-expanded="true"] {
+  border-color: var(--accent);
+}
+.moin-chip-info {
+  margin-top: 4px;
+}
+.moin-look {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(84px, 1fr));
+  gap: 8px;
+}
+.moin-look button {
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+  min-height: 84px;
+  padding: 10px 6px;
+  border: 1px solid var(--line-strong);
+  border-radius: 6px;
+  background: var(--panel-2);
+  cursor: pointer;
+}
+.moin-look button span {
+  font-size: 30px;
+  line-height: 1;
+}
+.moin-look button small {
+  font-size: 12px;
+  color: var(--muted);
+}
+.moin-look button[data-seen] {
+  border-color: var(--accent-line);
+}
+.moin-look button[aria-pressed="true"] {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+.moin-play-game {
+  padding: 14px;
+  border: 1px solid var(--line-strong);
+  border-radius: 6px;
+}
+@media (max-width: 860px) {
+  .moin-preview {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .moin-preview-notebook {
+    order: 2;
+  }
+}
+@media (max-width: 520px) {
+  .moin-preview-lede,
+  .moin-preview-tools {
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+  .moin-play-game {
+    padding: 10px;
+  }
+}
+.moin-play-pic {
+  margin: 4px 0;
+}
+.moin-play-pic img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+}
+.moin-play-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px 12px;
+}
+/* Полоска хода сцены — на всю ширину, над переключателями. */
+.moin-play-progress {
+  flex: 1 1 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--line);
+  overflow: hidden;
+}
+.moin-play-progress span {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+  transition: width 0.3s ease;
+}
+.moin-play-more {
+  justify-self: start;
+  font-size: 13px;
+}
+.moin-play-notes-button {
+  min-height: 32px;
+  padding: 0 10px;
+  border: 1px solid var(--accent-line);
+  border-radius: 999px;
+  background: transparent;
+  font-size: 13px;
+  cursor: pointer;
+}
+.moin-play-notes-button[aria-expanded="true"] {
+  background: var(--accent-soft);
+}
+.moin-play-notes {
+  padding: 12px 14px;
+  border: 1px solid #3a464b;
+  border-radius: 6px;
+  background: #202528;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.moin-play-notes ul {
+  margin: 8px 0 0;
+  padding-left: 18px;
+}
+.moin-play-notes li + li {
+  margin-top: 6px;
+}
+/* Ветка развилки — заметный блок: в развёрнутом разговоре открывается по нажатию. */
+.moin-play-group {
+  display: grid;
+  gap: 12px;
+  padding: 10px 12px;
+  border: 1px solid var(--accent-line);
+  border-left-width: 4px;
+  border-radius: 6px;
+}
+.moin-play-group > summary,
+.moin-play-group-title {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--accent);
+  cursor: pointer;
+}
+.moin-play-group > summary small {
+  display: block;
+  font-weight: 400;
+  color: var(--muted);
+}
+.moin-play-group-title {
+  cursor: default;
 }
