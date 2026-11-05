@@ -80,6 +80,30 @@ export const write = (title: string, fields: string[][]): Challenge => ({
   fields: fields.map(([label, ...answers], i) => ({ id: `f${i}`, label, answers })),
 });
 
+/** Строки документа делятся на нажимаемые части знаком |; ответ — текст нужных частей (первое вхождение). */
+export const spot = (title: string, text: string[], answer: string[]): Challenge => {
+  const lines = text.map((l) => l.split("|"));
+  const id = (token: string) => {
+    const line = lines.findIndex((l) => l.includes(token));
+    return `${line}:${lines[line].indexOf(token)}`;
+  };
+  return { kind: "spot", title, lines, answer: answer.map(id) };
+};
+/** Раскладка карточек: [id, текст, корзина, значок?]. */
+export const sort = (bins: [string, string][], cards: [string, string, string, string?][]): Challenge => ({
+  kind: "sort",
+  bins: bins.map(([id, text]) => ({ id, text })),
+  cards: cards.map(([id, text, , icon]) => ({ id, text, ...(icon ? { icon } : {}) })),
+  answer: Object.fromEntries(cards.map(([id, , bin]) => [id, bin])),
+});
+/** Пропуски в тексте записки обозначаются ___; слова банка используются по одному разу. */
+export const gaps = (text: string, bank: string[], answer: string[]): Challenge => ({
+  kind: "gaps",
+  parts: text.split("___").flatMap((part, i) => (i ? [null, part] : [part])),
+  bank,
+  answer,
+});
+
 /** Шаг словесной игры с одной строкой рассказа. */
 export const step = (
   id: string,

@@ -1,0 +1,577 @@
+{
+  "date": "2026-11-05",
+  "scope": "Chapter 2 of the Moin scene prototype (src/story/scenes/02.ts): character lines, replays, lock, oral practice and new story phrases with plurals",
+  "model": "k2-fsa/OmniVoice",
+  "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+  "candidatesPerPhrase": 3,
+  "asr": "openai/whisper-large-v3",
+  "notes": [
+    "Whisper writes numbers as digits (25, 0151 32 54 19, A38); every such take was compared by hand and says the numbers in words as written.",
+    "All three takes of 'Petersen, Büro, Club Kiellinie, Moin! Wer ist da? Hallo?' were cut off at the end; six more seeds were generated and the one ending at -34.4 dB was kept.",
+    "For 'Zwölf … elf! Noch elf Tage!' the take where Whisper hears both numbers was chosen over one that dropped 'elf'.",
+    "tails.py passes on all 69 imported files (no fragment after the phrase, no clipped ending)."
+  ],
+  "files": [
+    {
+      "file": "76c1622578d3.m4a",
+      "text": "das Büro, die Büros",
+      "voice": "Anna",
+      "seed": 20657570,
+      "heard": "Das Büro, die Büros",
+      "endDb": -55.2
+    },
+    {
+      "file": "793d7eb7c424.m4a",
+      "text": "das Gästezimmer, die Gästezimmer",
+      "voice": "Anna",
+      "seed": 21207411,
+      "heard": "Das Gästezimmer. Die Gästezimmer.",
+      "endDb": -54.2
+    },
+    {
+      "file": "b7a4802c6deb.m4a",
+      "text": "das Gästebuch, die Gästebücher",
+      "voice": "Anna",
+      "seed": 21175947,
+      "heard": "Das Gästebuch, die Gästebücher",
+      "endDb": -53.2
+    },
+    {
+      "file": "b614ff2eb54b.m4a",
+      "text": "der Stempel, die Stempel",
+      "voice": "Anna",
+      "seed": 21121242,
+      "heard": "Der Stempel. Die Stempel.",
+      "endDb": -60.6
+    },
+    {
+      "file": "027d4bcc46ff.m4a",
+      "text": "das Formular, die Formulare",
+      "voice": "Anna",
+      "seed": 21115214,
+      "heard": "Das Formular, die Formulare",
+      "endDb": -53.3
+    },
+    {
+      "file": "af448d73e4d0.m4a",
+      "text": "der Ring, die Ringe",
+      "voice": "Anna",
+      "seed": 21080624,
+      "heard": "Der Ring, die Ringe",
+      "endDb": -58.6
+    },
+    {
+      "file": "d229006b7b35.m4a",
+      "text": "die Nachricht, die Nachrichten",
+      "voice": "Anna",
+      "seed": 20812851,
+      "heard": "Die Nachricht. Die Nachrichten.",
+      "endDb": -55.9
+    },
+    {
+      "file": "75890c09b843.m4a",
+      "text": "der Zollstock, die Zollstöcke",
+      "voice": "Anna",
+      "seed": 21209793,
+      "heard": "Der Zollstock, die Zollstöcke",
+      "endDb": -50.6
+    },
+    {
+      "file": "16e6c3cb9494.m4a",
+      "text": "wasserfest",
+      "voice": "Anna",
+      "seed": 20449140,
+      "heard": "Wasserfest",
+      "endDb": -53.2
+    },
+    {
+      "file": "3257c31d8341.m4a",
+      "text": "Zwölf … elf! Noch elf Tage!",
+      "voice": "Rocko",
+      "seed": 20303760,
+      "heard": "12, 11, noch 11 Tage.",
+      "endDb": -53.5
+    },
+    {
+      "file": "94a87c7ed3fe.m4a",
+      "text": "Moin moin.",
+      "voice": "Grandpa",
+      "seed": 20364190,
+      "heard": "Moin Moin",
+      "endDb": -59.8
+    },
+    {
+      "file": "f7ae6a87edbd.m4a",
+      "text": "Hast du Zeit? Wir haben eine Frage: Wer ist Nils H.?",
+      "voice": "Rocko",
+      "seed": 20940155,
+      "heard": "Hast du Zeit? Wir haben eine Frage. Wer ist Nils H.?",
+      "endDb": -60.2
+    },
+    {
+      "file": "eb9245af195f.m4a",
+      "text": "Moin! Frau Petersen hat ein Handy. Ich habe die Nummer!",
+      "voice": "Flo",
+      "seed": 21124718,
+      "heard": "Moin, Frau Petersen hat ein Handy. Ich habe die Nummer.",
+      "endDb": -44.3
+    },
+    {
+      "file": "7e03b3d885ae.m4a",
+      "text": "Null, eins, sieben, zwei. Acht, drei. Fünf, neun. Vier, sechs.",
+      "voice": "Flo",
+      "seed": 20574350,
+      "heard": "0172835946",
+      "endDb": -53.2,
+      "speed": 0.6
+    },
+    {
+      "file": "c6895bf9563b.m4a",
+      "text": "Petersen, Büro, Club Kiellinie, Moin! Wer ist da? Hallo?",
+      "voice": "Sandy",
+      "seed": 21202852,
+      "heard": "Petersen Büro, Club Kierlinie, moin! Wer ist da? Hallo?",
+      "endDb": -34.4
+    },
+    {
+      "file": "ccd3c428c88f.m4a",
+      "text": "Wer … ist … da?",
+      "voice": "Sandy",
+      "seed": 20449741,
+      "heard": "Wer ist da?",
+      "endDb": -55.3,
+      "speed": 0.7
+    },
+    {
+      "file": "c7986791b6b3.m4a",
+      "text": "Ah, Jensens Detektiv! Ich komme. Zehn Minuten!",
+      "voice": "Sandy",
+      "seed": 20828098,
+      "heard": "Ah, Jensens Detektiv, ich komme. Zehn Minuten!",
+      "endDb": -42.4
+    },
+    {
+      "file": "a2784ad13261.m4a",
+      "text": "Zehn Minuten bei Frau Petersen? Das sind zwanzig.",
+      "voice": "Rocko",
+      "seed": 21260161,
+      "heard": "10 Minuten bei Frau Petersen, das sind 20.",
+      "endDb": -68.4
+    },
+    {
+      "file": "da19318dbb59.m4a",
+      "text": "Moin! Eine Nummer, bitte!",
+      "voice": "Sandy",
+      "seed": 20678632,
+      "heard": "Moin, eine Nummer bitte.",
+      "endDb": -46.1
+    },
+    {
+      "file": "acb454987dba.m4a",
+      "text": "Moin! Ich habe Brot. Und ich habe die Nummer dreiundzwanzig.",
+      "voice": "Anna",
+      "seed": 20631578,
+      "heard": "Moin, ich habe Brot. Und ich habe die Nummer 23.",
+      "endDb": -52.0
+    },
+    {
+      "file": "9d0615e41fe5.m4a",
+      "text": "Da ist ein Schild: Wir haben Pause! Und die Nummer … zwölf? Oder zwanzig?",
+      "voice": "Anna",
+      "seed": 20913379,
+      "heard": "Da ist ein Schild. Wir haben Pause. Und die Nummer zwölf oder zwanzig?",
+      "endDb": -49.8
+    },
+    {
+      "file": "2458009f4881.m4a",
+      "text": "Nummer dreiundzwanzig, bitte!",
+      "voice": "Sandy",
+      "seed": 20421793,
+      "heard": "Nummer 23, bitte.",
+      "endDb": -57.7
+    },
+    {
+      "file": "ac3ae450b17f.m4a",
+      "text": "Bitte! Ich habe Zeit.",
+      "voice": "Anna",
+      "seed": 20851069,
+      "heard": "Bitte, ich habe Zeit.",
+      "endDb": -53.3
+    },
+    {
+      "file": "909fccdd4fca.m4a",
+      "text": "Der Club hat Geburtstag. Er ist hundert! Psst!",
+      "voice": "Sandy",
+      "seed": 20516778,
+      "heard": "Der Club hat Geburtstag. Er ist 100. Psst!",
+      "endDb": -45.7
+    },
+    {
+      "file": "d85c5292e73e.m4a",
+      "text": "Hundert Jahre! Und das Schild ist weg.",
+      "voice": "Anna",
+      "seed": 21211038,
+      "heard": "100 Jahre und das Schild ist weg.",
+      "endDb": -50.2
+    },
+    {
+      "file": "38dd6f70bef0.m4a",
+      "text": "Moin! Haben Sie Fragen?",
+      "voice": "Sandy",
+      "seed": 20848784,
+      "heard": "Moin, haben Sie Fragen?",
+      "endDb": -39.8
+    },
+    {
+      "file": "ae8abf591ae2.m4a",
+      "text": "Ja. Aber welcher Hansen? Wir haben drei!",
+      "voice": "Sandy",
+      "seed": 20276657,
+      "heard": "Ja, aber welche Hansen? Wir haben drei.",
+      "endDb": -36.9
+    },
+    {
+      "file": "d80fec482223.m4a",
+      "text": "Nils … Ha – A – En – Es – E – En.",
+      "voice": "Sandy",
+      "seed": 20520387,
+      "heard": "Nils H. A. N. S. E. N.",
+      "endDb": -45.4,
+      "speed": 0.7
+    },
+    {
+      "file": "d1bb2fe512f5.m4a",
+      "text": "Und Nils? Buchstabieren Sie, bitte!",
+      "voice": "Sandy",
+      "seed": 20908147,
+      "heard": "Und Nils, buchstabieren Sie bitte.",
+      "endDb": -55.3
+    },
+    {
+      "file": "a8badf75ac75.m4a",
+      "text": "Die Möwe hat eine Nummer! Wir haben eine Party!",
+      "voice": "Flo",
+      "seed": 20675477,
+      "heard": "Die Möwe hat eine Nummer. Wir haben eine Party.",
+      "endDb": -45.2
+    },
+    {
+      "file": "aebbd160c61c.m4a",
+      "text": "Ha – E – El. Sieben, drei, null, fünf.",
+      "voice": "Flo",
+      "seed": 21174554,
+      "heard": "H.E.L. 7305",
+      "endDb": -54.8,
+      "speed": 0.7
+    },
+    {
+      "file": "be612fda30f9.m4a",
+      "text": "Die Postleitzahl, bitte! Frau Petersen?",
+      "voice": "Flo",
+      "seed": 21194713,
+      "heard": "Die Postleitzahl bitte, Frau Petersen.",
+      "endDb": -63.7
+    },
+    {
+      "file": "ea208d8b79ab.m4a",
+      "text": "Die Postleitzahl ist zwei, vier, eins, fünf, neun.",
+      "voice": "Sandy",
+      "seed": 20858025,
+      "heard": "Die Postleitzahl ist 24159.",
+      "endDb": -46.6,
+      "speed": 0.7
+    },
+    {
+      "file": "2ee5456f4609.m4a",
+      "text": "Danke! Alles Gute, Möwe!",
+      "voice": "Flo",
+      "seed": 20577752,
+      "heard": "Danke. Alles Gute, Möwe.",
+      "endDb": -46.6
+    },
+    {
+      "file": "0ae450dc09f7.m4a",
+      "text": "Formular A achtunddreißig. Wie heißt Ihr Boot? Buchstabieren, bitte!",
+      "voice": "Sandy",
+      "seed": 20695861,
+      "heard": "Formular A38. Wie heißt Ihr Boot? Buchstabieren bitte!",
+      "endDb": -43.0
+    },
+    {
+      "file": "df9ebfbe5a41.m4a",
+      "text": "Nils Hansen: null, eins, fünf, eins – zweiunddreißig – vierundfünfzig – neunzehn.",
+      "voice": "Sandy",
+      "seed": 21018960,
+      "heard": "Nils Hansen 0151 32 54 19",
+      "endDb": -48.4
+    },
+    {
+      "file": "7926eb071559.m4a",
+      "text": "Null … eins … fünf … eins. Zweiunddreißig. Vierundfünfzig. Neunzehn.",
+      "voice": "Sandy",
+      "seed": 21097064,
+      "heard": "0 1 5 1 32 54 19",
+      "endDb": -56.2,
+      "speed": 0.6
+    },
+    {
+      "file": "b13dae77a0f7.m4a",
+      "text": "Hallo! Hier ist Nils, Nils Hansen aus Hamburg! Ich habe jetzt Pause. Bitte Ihre Nummer und Ihre Frage! Tschüss! Nein: Auf Wiederhören!",
+      "voice": "Eddy",
+      "seed": 20458007,
+      "heard": "Hallo, hier ist Nils, Nils Hansen aus Hamburg. Ich habe jetzt Pause. Bitte Ihre Nummer und Ihre Frage. Tschüss. Nein, auf Wiederhören.",
+      "endDb": -58.5
+    },
+    {
+      "file": "943b48f98748.m4a",
+      "text": "Ich habe eine Nummer! Ich bin Ha – E – El, sieben, drei, null, fünf.",
+      "voice": "Shelley",
+      "seed": 20570822,
+      "heard": "Ich habe eine Nummer. Ich bin HEL 7305.",
+      "endDb": -60.9,
+      "speed": 0.7
+    },
+    {
+      "file": "bcd0c39b8189.m4a",
+      "text": "Ich habe elf Karten. Nein: zwölf!",
+      "voice": "Shelley",
+      "seed": 21244679,
+      "heard": "Ich habe elf Karten, nein zwölf.",
+      "endDb": -57.4
+    },
+    {
+      "file": "64ca301ea106.m4a",
+      "text": "Ich habe zwölf Jahre.",
+      "voice": "Shelley",
+      "seed": 20761924,
+      "heard": "Ich habe zwölf Jahre.",
+      "endDb": -64.1
+    },
+    {
+      "file": "5a90ce04743a.m4a",
+      "text": "Gestern: Die Frau hat Farbe. Und der Mann sagt: Moin. Kreeh …",
+      "voice": "Shelley",
+      "seed": 20465720,
+      "heard": "Gestern, die Frau hat Farbe und der Mann sagt Moin, Kree.",
+      "endDb": -51.2
+    },
+    {
+      "file": "25575bc49f61.m4a",
+      "text": "Hallo? Nils? Greta? Haben Sie Zeit?",
+      "voice": "Rocko",
+      "seed": 21256001,
+      "heard": "Hallo Nils Greta, haben Sie Zeit?",
+      "endDb": -58.3
+    },
+    {
+      "file": "ccaaf6397f4f.m4a",
+      "text": "Nils hat zwei Handys? Diagnose: Er spricht viel!",
+      "voice": "Anna",
+      "seed": 20746765,
+      "heard": "Nils hat zwei Handys, Diagnose, er spricht viel.",
+      "endDb": -54.8
+    },
+    {
+      "file": "5eeb54a379a2.m4a",
+      "text": "Wie alt ist das Schild?",
+      "voice": "Anna",
+      "seed": 20602016,
+      "heard": "Wie alt ist das Schild?",
+      "endDb": -54.4
+    },
+    {
+      "file": "f561cfd566de.m4a",
+      "text": "Das Schild ist fünfzig Jahre alt!",
+      "voice": "Rocko",
+      "seed": 20778908,
+      "heard": "Das Schild ist 50 Jahre alt.",
+      "endDb": -60.5
+    },
+    {
+      "file": "d09679c18c77.m4a",
+      "text": "Nils hat eine Frage? Wir haben eine Frage!",
+      "voice": "Rocko",
+      "seed": 20660375,
+      "heard": "Nils hat eine Frage. Wir haben eine Frage.",
+      "endDb": -63.8
+    },
+    {
+      "file": "f31bbcc8caf8.m4a",
+      "text": "Fünfundzwanzig! Ich bin fünfundzwanzig.",
+      "voice": "Rocko",
+      "seed": 21219190,
+      "heard": "25. Ich bin 25.",
+      "endDb": -54.0
+    },
+    {
+      "file": "d013a3e0b6df.m4a",
+      "text": "Greta hat das Schild! Ganz klar!",
+      "voice": "Rocko",
+      "seed": 20645981,
+      "heard": "Greta hat das Schild, ganz klar.",
+      "endDb": -56.6
+    },
+    {
+      "file": "139b6cc26b5f.m4a",
+      "text": "Langsam, bitte. Noch einmal, bitte.",
+      "voice": "Anna",
+      "seed": 20808366,
+      "heard": "Langsam, bitte. Noch einmal, bitte.",
+      "endDb": -44.3
+    },
+    {
+      "file": "aa1edcf978cc.m4a",
+      "text": "Zimmer zwölf? Nein! Wir haben Raum eins. Er ist groß und neu!",
+      "voice": "Sandy",
+      "seed": 20338732,
+      "heard": "Zimmer 12? Nein, wir haben Raum 1. Er ist groß und neu.",
+      "endDb": -38.0
+    },
+    {
+      "file": "671e9cd76feb.m4a",
+      "text": "Raum eins! Das ist super!",
+      "voice": "Rocko",
+      "seed": 20313338,
+      "heard": "Raum 1, das ist super!",
+      "endDb": -67.5
+    },
+    {
+      "file": "0bc98c5be0c7.m4a",
+      "text": "Der Schlüssel! Danke!",
+      "voice": "Sandy",
+      "seed": 20432534,
+      "heard": "Der Schlüssel. Danke.",
+      "endDb": -47.5
+    },
+    {
+      "file": "dbf8d47e3342.m4a",
+      "text": "Nein, danke. Zimmer zwölf ist gut. Bitte nicht fragen. Greta.",
+      "voice": "Rocko",
+      "seed": 20689664,
+      "heard": "Nein, danke. Zimmer 12 ist gut. Bitte nicht fragen. Greta.",
+      "endDb": -61.9
+    },
+    {
+      "file": "2d83e6247a1b.m4a",
+      "text": "Greta hat Farbe. Diagnose: Sie malt!",
+      "voice": "Anna",
+      "seed": 20376955,
+      "heard": "Greta hat Farbe. Diagnose sie malt.",
+      "endDb": -40.2
+    },
+    {
+      "file": "dddf887ea688.m4a",
+      "text": "Raum eins? Nein, danke? Gut. Stempel! Haben Sie noch Fragen?",
+      "voice": "Sandy",
+      "seed": 20715991,
+      "heard": "Raum 1? Nein, danke? Gut, Stempel. Haben Sie noch Fragen?",
+      "endDb": -43.7
+    },
+    {
+      "file": "527bdb73e5e3.m4a",
+      "text": "Wir haben Raum eins.",
+      "voice": "Anna",
+      "seed": 20537697,
+      "heard": "Wir haben Raum 1.",
+      "endDb": -57.6
+    },
+    {
+      "file": "993fde2a3241.m4a",
+      "text": "Ich bin dreiunddreißig.",
+      "voice": "Anna",
+      "seed": 20557729,
+      "heard": "Ich bin 33.",
+      "endDb": -61.7
+    },
+    {
+      "file": "467c9db4bba1.m4a",
+      "text": "Jetzt du! Buchstabieren, bitte!",
+      "voice": "Rocko",
+      "seed": 21025392,
+      "heard": "Jetzt du, buchstabieren bitte.",
+      "endDb": -70.3
+    },
+    {
+      "file": "a74fdf9ae149.m4a",
+      "text": "Super! Die „Sprotte“ hat jetzt ein Team!",
+      "voice": "Rocko",
+      "seed": 21001223,
+      "heard": "Super, die Sprotte hat jetzt ein Team.",
+      "endDb": -56.5
+    },
+    {
+      "file": "7751ae1e8a8b.m4a",
+      "text": "Wasser – Fest! Greta hat ein Wasserfest!",
+      "voice": "Anna",
+      "seed": 20570313,
+      "heard": "Wasserfest! Greta hat ein Wasserfest!",
+      "endDb": -37.8
+    },
+    {
+      "file": "2888eb75eb12.m4a",
+      "text": "Nein! Wasserfest – das ist Farbe für Boote!",
+      "voice": "Rocko",
+      "seed": 20305889,
+      "heard": "Nein, Wasserfest, das ist Farbe für Boote.",
+      "endDb": -52.8
+    },
+    {
+      "file": "54bf6e576d86.m4a",
+      "text": "Aber ein Fest … Der Club hat Geburtstag!",
+      "voice": "Anna",
+      "seed": 20971174,
+      "heard": "Aber ein Fest. Der Club hat Geburtstag.",
+      "endDb": -54.4
+    },
+    {
+      "file": "466862918412.m4a",
+      "text": "Das ist nicht kriminell! Die Möwe hat Hunger.",
+      "voice": "Flo",
+      "seed": 20515745,
+      "heard": "Das ist nicht kriminell. Die Möwe hat Hunger.",
+      "endDb": -53.8
+    },
+    {
+      "file": "5c471e7efb97.m4a",
+      "text": "Mein Familienname ist Ospanowa. O – Es – Pe – A – En – O – We – A.",
+      "voice": "Anna",
+      "seed": 20340774,
+      "heard": "Mein Familienname ist Ospanova. O-S-P-A-N-O-V-A",
+      "endDb": -44.7,
+      "speed": 0.7
+    },
+    {
+      "file": "3f9da97baa4c.m4a",
+      "text": "Meine Handynummer ist null, eins, sieben, sechs. Drei, vier, sieben, sieben, eins, zwei.",
+      "voice": "Anna",
+      "seed": 21146250,
+      "heard": "Meine Handynummer ist 0176 3477 12.",
+      "endDb": -60.9,
+      "speed": 0.7
+    },
+    {
+      "file": "f5e9ed72e2c3.m4a",
+      "text": "Wie alt sind Sie?",
+      "voice": "Anna",
+      "seed": 21183378,
+      "heard": "Wie alt sind Sie?",
+      "endDb": -45.1
+    },
+    {
+      "file": "e0547d6fb246.m4a",
+      "text": "Ja, ich habe ein Handy.",
+      "voice": "Anna",
+      "seed": 20615765,
+      "heard": "Ja, ich habe ein Handy.",
+      "endDb": -51.2
+    },
+    {
+      "file": "c64d858ba22b.m4a",
+      "text": "Haben Sie ein Handy?",
+      "voice": "Reed",
+      "seed": 20563211,
+      "heard": "Haben Sie ein Handy?",
+      "endDb": -61.7
+    }
+  ]
+}

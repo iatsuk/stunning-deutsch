@@ -7,30 +7,34 @@ import { answerSlots, arrange, flatNodes, flow, keyOf, lookOrder, nodeAt, requir
 import { MNEMONICS } from "../src/story/mnemonics.ts";
 import { applyEffects, holds, TRACKS } from "../src/story/world.ts";
 import { sceneChapter1 } from "../src/story/scenes/01.ts";
+import { GERMAN_TARGET, sceneChapters } from "../src/story/scenes/index.ts";
 
 const words = JSON.parse(readFileSync(new URL("../src/generated/a1-words.json", import.meta.url)));
+// Общие правила проверяются во всех главах сцен; частные случаи движка — на главе 1.
 const scenes = sceneChapter1.beats;
+const allScenes = sceneChapters.flatMap((c) => c.beats);
 const nodes = (beat) => beat.challenge.nodes;
 /** Что игрок делает сам: всё, кроме реплик, рассказа, предметов и улик. */
 const ACTIONS = ["reply", "type", "gap", "hear", "pick", "look", "game"];
 
 test("the scene prototype is valid, voiced and needs every node", () => {
-  assert.deepEqual(validateStory([sceneChapter1], phrases), []);
-  for (const beat of scenes) {
+  assert.deepEqual(validateStory(sceneChapters, phrases), []);
+  for (const beat of allScenes) {
     const c = beat.challenge;
     assert.equal(c.kind, "play");
     assert.ok(isCorrect(c, solution(c)), beat.id);
     assert.ok(!isCorrect(c, initialAnswer(c)), beat.id);
     assert.ok(!isCorrect(c, solution(c).slice(1)), beat.id);
   }
-  const voiced = new Set(storyLines([sceneChapter1], {}).map((l) => `${l.voice}|${l.text}`));
+  const voiced = new Set(storyLines(sceneChapters, {}).map((l) => `${l.voice}|${l.text}`));
   const audio = JSON.parse(readFileSync(new URL("../src/generated/story-audio.json", import.meta.url)));
   for (const key of voiced) assert.ok(audio[key], `нет записи: ${key}`);
 });
 
 test("a scene is mostly the player's actions, not reading", () => {
+  for (const chapter of sceneChapters) {
   let actions = 0;
-  for (const beat of scenes) {
+  for (const beat of chapter.beats) {
     const all = flatNodes(nodes(beat));
     const own = all.filter((n) => ACTIONS.includes(n.t)).length;
     actions += own;
@@ -43,14 +47,15 @@ test("a scene is mostly the player's actions, not reading", () => {
     assert.ok(all.filter((n) => n.t === "say").length >= 6, `${beat.id}: мало реплик`);
     assert.ok(new Set(all.filter((n) => ACTIONS.includes(n.t)).map((n) => n.t)).size >= 5, `${beat.id}: однообразно`);
   }
-  assert.ok(actions >= 35, `${actions}`);
+  assert.ok(actions >= 35, `${chapter.id}: ${actions}`);
+  }
 });
 
 test("the scene keeps a rhythm: short reading between actions and no long run of the same choice", () => {
   // Рассказ и реплики идут потоком до действия, поэтому чтение между действиями короткое,
   // а выбор из кнопок (reply, pick, gap, hear) разбавлен играми и вводом.
   const CHOICE = ["reply", "pick", "gap", "hear"];
-  for (const beat of scenes) {
+  for (const beat of allScenes) {
     const all = flatNodes(nodes(beat)).filter((n) => n.t !== "go" && n.t !== "when" && n.t !== "pic");
     let reading = 0;
     let choices = 0;
@@ -71,8 +76,9 @@ test("the scene keeps a rhythm: short reading between actions and no long run of
 test("the right answer is not given away by its place", () => {
   // Сид — id сцены, как в прототипе. Верный вариант стоит на каждом месте примерно поровну и не
   // стоит на одном месте три выбора подряд; важные предметы осмотра не идут подряд в начале.
+  for (const chapter of sceneChapters) {
   const shown = [];
-  for (const beat of scenes) {
+  for (const beat of chapter.beats) {
     const slots = answerSlots(nodes(beat), beat.id);
     const run = [];
     for (const key of sceneKeys(nodes(beat))) {
@@ -95,7 +101,8 @@ test("the right answer is not given away by its place", () => {
   }
   for (const place of [0, 1, 2]) {
     const count = shown.filter((p) => p === place).length;
-    assert.ok(Math.abs(count - shown.length / 3) <= 3, `верный на месте ${place + 1}: ${count} из ${shown.length}`);
+    assert.ok(Math.abs(count - shown.length / 3) <= 3, `${chapter.id}: верный на месте ${place + 1}: ${count} из ${shown.length}`);
+  }
   }
 });
 
@@ -107,8 +114,9 @@ test("story nouns are spoken with their plural, like lesson words", () => {
 
 test("everything the player examines is named in German, once per chapter", () => {
   const units = new Set([...Object.keys(words), ...Object.values(phrases).map((p) => p.de)]);
+  for (const chapter of sceneChapters) {
   const seen = new Set();
-  for (const beat of scenes)
+  for (const beat of chapter.beats)
     for (const n of flatNodes(nodes(beat))) {
       if (n.t !== "look") continue;
       for (const item of n.items) {
@@ -118,10 +126,11 @@ test("everything the player examines is named in German, once per chapter", () =
         seen.add(item.de);
       }
     }
+  }
 });
 
 test("a typed answer with a free part shows a sample that fits, not a name in the wrong place", () => {
-  for (const beat of scenes)
+  for (const beat of allScenes)
     for (const n of flatNodes(nodes(beat)))
       if (n.t === "type" && n.answers.some((a) => a.includes("*"))) {
         assert.ok(n.sample, `${beat.id}: ${n.task}`);
@@ -147,13 +156,15 @@ test("reading flows by itself up to the next action and settles conditions on th
   assert.deepEqual(flow(nodes, ["0", "1", "2|1", "2.1.0", "3"], undefined, {}), ["4"]);
 });
 
-test("the narration names known things in German: at least the chapter 1 share of the plot plan", () => {
+test("the narration names known things in German: at least the share of the plot plan", () => {
   // Новое выражение читается с переводом, знакомое (выражение или слово, которое сцены уже
   // показали) — только по-немецки. Цель главы 1 в A1-PLOT.md — 10% немецких слов в рассказе.
+  // Цель по главам — A1-PLOT.md: 10% в главе 1, 15% в главе 2. Знакомое переходит из главы в главу.
   const known = new Set();
+  for (const chapter of sceneChapters) {
   let de = 0;
   let ru = 0;
-  for (const beat of scenes)
+  for (const beat of chapter.beats)
     for (const n of flatNodes(nodes(beat))) {
       if (n.t === "narr") {
         const text = n.text.replace(/\{([\w-]+)\}/g, (_, id) => {
@@ -168,7 +179,8 @@ test("the narration names known things in German: at least the chapter 1 share o
       }
       for (const w of shownWords([n])) known.add(w);
     }
-  assert.ok((100 * de) / (de + ru) >= 10, `${((100 * de) / (de + ru)).toFixed(1)}%`);
+  assert.ok((100 * de) / (de + ru) >= GERMAN_TARGET[chapter.id], `${chapter.id}: ${((100 * de) / (de + ru)).toFixed(1)}%`);
+  }
 });
 
 test("every new word is a lesson word and comes back in an action after it is heard", () => {
@@ -188,14 +200,16 @@ test("every new word is a lesson word and comes back in an action after it is he
               : n.t === "game"
                 ? JSON.stringify(n.c)
                 : "";
-  const all = scenes.flatMap((beat) => flatNodes(nodes(beat)));
+  for (const chapter of sceneChapters) {
+  const all = chapter.beats.flatMap((beat) => flatNodes(nodes(beat)));
   for (const [i, node] of all.entries()) {
     if (node.t !== "say") continue;
     for (const word of node.learn ?? []) {
       assert.ok(words[word], `не слово урока: ${word}`);
       const later = all.slice(i + 1).filter((n) => ACTIONS.includes(n.t));
-      assert.ok(later.some((n) => text(n).toLowerCase().includes(stem(word))), `не возвращается: ${word}`);
+      assert.ok(later.some((n) => text(n).toLowerCase().includes(stem(word))), `${chapter.id}: не возвращается: ${word}`);
     }
+  }
   }
 });
 
@@ -232,7 +246,7 @@ test("a typed introduction accepts any name but keeps the German frame", () => {
 
 test("every scene picture exists, is a compressed JPEG and stands before a node", async () => {
   const { existsSync, statSync } = await import("node:fs");
-  const pics = scenes.flatMap((beat) => flatNodes(nodes(beat))).filter((n) => n.t === "pic");
+  const pics = allScenes.flatMap((beat) => flatNodes(nodes(beat))).filter((n) => n.t === "pic");
   assert.ok(pics.length >= 4, `${pics.length}`);
   for (const p of pics) {
     const file = new URL(`../public/story-img/${p.src}`, import.meta.url);
@@ -243,7 +257,7 @@ test("every scene picture exists, is a compressed JPEG and stands before a node"
   }
   assert.equal(new Set(pics.map((p) => p.src)).size, pics.length);
   // Каждая сцена открывается картинкой: она задаёт место и героев до первой реплики.
-  for (const beat of scenes) assert.equal(nodes(beat)[0].t, "pic", beat.id);
+  for (const beat of allScenes) assert.equal(nodes(beat)[0].t, "pic", beat.id);
 });
 
 test("clocks stay within their segments and conditions read the world", () => {

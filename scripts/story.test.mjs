@@ -6,7 +6,7 @@ import { plain, preis } from "../src/lib/german.ts";
 import { episodes, beats, phrases } from "../src/story/data.ts";
 import { rulesBefore, stepRules } from "../src/story/rules.ts";
 import { V1_ORDER } from "../src/story/v1-order.ts";
-import { sceneChapter1 } from "../src/story/scenes/01.ts";
+import { sceneChapters } from "../src/story/scenes/index.ts";
 import {
   beatPhrases,
   audioKey,
@@ -116,7 +116,7 @@ test("phrases are introduced before becoming German-only; callbacks repeat in ne
   assert.equal(knownBefore(beats, 1).has("inbag"), false);
   assert.ok(knownBefore(beats, beats.length - 1).has("inbag"));
   // Выражения прототипа сцен тоже считаются: у него общий словарь выражений с игрой.
-  const all = [...beats, ...sceneChapter1.beats];
+  const all = [...beats, ...sceneChapters.flatMap((c) => c.beats)];
   for (const [id, p] of Object.entries(phrases)) {
     assert.ok(
       all.some((b) => beatPhrases(b).includes(id)),
@@ -601,7 +601,8 @@ test("the dictated phone number is slowed down for A1", () => {
   const slow = JSON.parse(
     readFileSync(new URL("../scripts/tts/slow.json", import.meta.url)),
   );
-  const lines = storyLines(episodes, phrases);
+  // Диктовки есть и в главах сцен: они озвучиваются вместе с игрой.
+  const lines = storyLines([...episodes, ...sceneChapters], phrases);
   for (const { voice, text, speed } of slow) {
     assert.ok(speed > 0.5 && speed < 1, text);
     assert.ok(

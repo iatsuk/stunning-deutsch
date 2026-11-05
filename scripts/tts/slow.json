@@ -8,5 +8,50 @@
   "voice": "Sandy",
   "text": "Null, eins, sieben, sechs. Zwei, drei. Vier, fünf. Acht, eins.",
   "speed": 0.6
+ },
+ {
+  "voice": "Flo",
+  "text": "Null, eins, sieben, zwei. Acht, drei. Fünf, neun. Vier, sechs.",
+  "speed": 0.6
+ },
+ {
+  "voice": "Sandy",
+  "text": "Null … eins … fünf … eins. Zweiunddreißig. Vierundfünfzig. Neunzehn.",
+  "speed": 0.6
+ },
+ {
+  "voice": "Sandy",
+  "text": "Die Postleitzahl ist zwei, vier, eins, fünf, neun.",
+  "speed": 0.7
+ },
+ {
+  "voice": "Sandy",
+  "text": "Nils … Ha – A – En – Es – E – En.",
+  "speed": 0.7
+ },
+ {
+  "voice": "Flo",
+  "text": "Ha – E – El. Sieben, drei, null, fünf.",
+  "speed": 0.7
+ },
+ {
+  "voice": "Shelley",
+  "text": "Ich habe eine Nummer! Ich bin Ha – E – El, sieben, drei, null, fünf.",
+  "speed": 0.7
+ },
+ {
+  "voice": "Anna",
+  "text": "Meine Handynummer ist null, eins, sieben, sechs. Drei, vier, sieben, sieben, eins, zwei.",
+  "speed": 0.7
+ },
+ {
+  "voice": "Anna",
+  "text": "Mein Familienname ist Ospanowa. O – Es – Pe – A – En – O – We – A.",
+  "speed": 0.7
+ },
+ {
+  "voice": "Sandy",
+  "text": "Wer … ist … da?",
+  "speed": 0.7
  }
 ]

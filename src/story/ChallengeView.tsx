@@ -231,7 +231,7 @@ export function ChallengeView({
       {c.kind === "code" && (
         <div className="moin-dial">
           <label>
-            {c.length > 2 ? "Номер телефона" : "Номер ячейки"}
+            {c.label ?? (c.length > 2 ? "Номер телефона" : "Номер ячейки")}
             <input
               type="text"
               inputMode="numeric"

@@ -29,6 +29,16 @@ export const MNEMONICS: Record<string, string> = {
   "Woher?": "Woher — wo + her: «где-откуда» — откуда родом.",
   "Wer?": "Wer — «вер»: верите, кто это? Вопрос о человеке.",
   "Welche?": "Welche — «вельхе»: какие из многих? Welche Sprachen…",
+  "die Zeit":
+    "Zeit — как в шахматном «цейтноте» (Zeitnot — нехватка времени): время — die Zeit.",
+  haben: "haben — «хабен»: что «хапнул», то и имеешь. Ich habe Zeit.",
+  elf: "elf — не эльф, а одиннадцать: эльфов в команде одиннадцать, как футболистов.",
+  buchstabieren:
+    "Buchstabe — буква: когда-то буквы вырезали на буковых палочках (Buche + Stab). buchstabieren — разложить слово на такие палочки.",
+  "das Handy":
+    "Handy — то, что всегда в руке (die Hand). Англичане так мобильный не называют: это немецкое слово.",
+  "Auf Wiederhören!":
+    "hören — слышать: «до нового слышания». По телефону друг друга не видно, поэтому не Wiedersehen.",
 };
 
 export const mnemonic = (de: string) => MNEMONICS[de];

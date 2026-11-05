@@ -89,7 +89,8 @@ export type Challenge =
       items: { id: string; text: string; max: number }[];
       answer: Record<string, number>;
     }
-  | { kind: "code"; length: number; answer: string }
+  /** label — подпись поля: «PIN», «Номер телефона»; по умолчанию по длине кода. */
+  | { kind: "code"; length: number; answer: string; label?: string }
   | { kind: "chat"; who: string; voice: string; turns: ChatTurn[] }
   | {
       kind: "verdict";

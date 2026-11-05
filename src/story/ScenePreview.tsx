@@ -8,13 +8,14 @@ import { phrases } from "./data";
 import { mnemonic } from "./mnemonics";
 import { beatPhrases, initialAnswer, isCorrect } from "./logic";
 import { flatNodes, keyOf, nodeAt, shownWords, worldAfter } from "./scene";
-import { sceneChapter1 } from "./scenes/01";
+import { sceneChapters } from "./scenes";
 import type { Answer, SceneNode } from "./types";
 import { TRACKS, type World } from "./world";
 import "./story.css";
 
-// Прототип главы 1 в формате сцен — отдельно от игры, чтобы автор мог сравнить форматы,
-// не трогая прогресс основной истории. Своё сохранение: sd-moin-neu-v1.
+// Прототип глав в формате сцен — отдельно от игры, чтобы автор мог сравнить форматы,
+// не трогая прогресс основной истории. Своё сохранение: sd-moin-neu-v1. Сцены всех глав идут
+// одним списком: новая глава добавляется в конец, и номера сохранённых сцен не сдвигаются.
 
 const KEY = "sd-moin-neu-v1";
 const QUIET = "sd-moin-quiet";
@@ -25,7 +26,13 @@ const readQuiet = () => {
     return false;
   }
 };
-const scenes = sceneChapter1.beats;
+const chapters = sceneChapters;
+const scenes = chapters.flatMap((c) => c.beats);
+/** Первая сцена главы в общем списке. */
+const firstOf = (chapter: number) =>
+  chapters.slice(0, chapter).reduce((n, c) => n + c.beats.length, 0);
+const chapterOf = (at: number) =>
+  chapters.findIndex((_, i) => at < firstOf(i + 1));
 type Save = { at: number; drafts: Record<string, string[]> };
 
 function load(): Save {
@@ -48,8 +55,12 @@ function load(): Save {
 }
 
 export function ScenePreview() {
-  useTitle("Глава 1 в сценах · прототип · Stunning Deutsch");
+  useTitle("Главы в сценах · прототип · Stunning Deutsch");
   const [save, setSave] = useState(load);
+  const ci = chapterOf(save.at);
+  const chapter = chapters[ci];
+  const first = firstOf(ci);
+  const last = first + chapter.beats.length - 1;
   // Где нужно говорить вслух, можно отвечать письменно: например, в офисе.
   const [quiet, setQuiet] = useState(readQuiet);
   const beat = scenes[save.at];
@@ -87,7 +98,7 @@ export function ScenePreview() {
     .flatMap((_, i) => shownWords(flatNodes(nodesOf(i))));
   const now = worldBefore(scenes.length);
   // Блокнот и инвентарь собираются из пройденных узлов всех сцен.
-  const gains = scenes.flatMap((s) =>
+  const gains = chapter.beats.flatMap((s) =>
     (save.drafts[s.id] ?? []).flatMap((entry) => {
       const node =
         s.challenge.kind === "play"
@@ -127,39 +138,59 @@ export function ScenePreview() {
         <header className="moin-game-heading">
           <div>
             <div className="kicker">
-              Прототип нового формата · глава 1 целиком: шесть сцен и интерлюдия
+              Прототип нового формата · главы 1–{chapters.length} в сценах
             </div>
             <h1>Дело о пропавшем Moin</h1>
           </div>
         </header>
+        <nav className="moin-chapters" aria-label="Главы">
+          {chapters.map((c, i) => (
+            <button
+              type="button"
+              key={c.id}
+              aria-current={i === ci ? "page" : undefined}
+              onClick={() => {
+                // Глава открывается на первой непройденной сцене: так легко продолжить.
+                const from = firstOf(i);
+                const open = c.beats.findIndex((_, k) => !solved(from + k));
+                go(from + (open < 0 ? 0 : open));
+              }}
+            >
+              Глава {i + 1} · {c.title}
+            </button>
+          ))}
+        </nav>
         <div className="moin-layout moin-preview">
           <section className="moin-scene" aria-label={beat.title}>
             <div className="moin-scene-top">
-              <span>{sceneChapter1.place}</span>
+              <span>{chapter.place}</span>
               <span>
-                Сцена {save.at + 1} / {scenes.length}
+                Сцена {save.at - first + 1} / {chapter.beats.length}
               </span>
             </div>
             <ol className="moin-steps" aria-label="Сцены главы">
-              {scenes.map((s, i) => (
-                <li key={s.id}>
-                  <button
-                    type="button"
-                    aria-label={`Сцена ${i + 1}: ${s.title}`}
-                    aria-current={i === save.at ? "step" : undefined}
-                    data-done={solved(i) || undefined}
-                    disabled={i > 0 && !solved(i - 1) && i !== save.at}
-                    onClick={() => go(i)}
-                  />
-                </li>
-              ))}
+              {chapter.beats.map((s, k) => {
+                const i = first + k;
+                return (
+                  <li key={s.id}>
+                    <button
+                      type="button"
+                      aria-label={`Сцена ${k + 1}: ${s.title}`}
+                      aria-current={i === save.at ? "step" : undefined}
+                      data-done={solved(i) || undefined}
+                      disabled={k > 0 && !solved(i - 1) && i !== save.at}
+                      onClick={() => go(i)}
+                    />
+                  </li>
+                );
+              })}
             </ol>
             <div className="moin-chapter-title">
-              Глава 1 · {sceneChapter1.title}
+              Глава {ci + 1} · {chapter.title}
             </div>
-            {sceneChapter1.day && (
+            {chapter.day && (
               <div className="moin-day">
-                <b lang="de">{sceneChapter1.day.de}</b> · {sceneChapter1.day.ru}
+                <b lang="de">{chapter.day.de}</b> · {chapter.day.ru}
               </div>
             )}
             <h2>{beat.title}</h2>
@@ -216,7 +247,7 @@ export function ScenePreview() {
                       className="primary"
                       onClick={() => go(save.at + 1)}
                     >
-                      Следующая сцена →
+                      {save.at === last ? `Глава ${ci + 2} →` : "Следующая сцена →"}
                     </button>
                   ) : (
                     <p>Это все сцены прототипа.</p>
@@ -229,11 +260,19 @@ export function ScenePreview() {
                 type="button"
                 className="link-button"
                 onClick={() => {
+                  // Сбрасывается только эта глава: пройденные сцены других глав остаются.
                   stopAudio();
-                  setSave({ at: 0, drafts: {} });
+                  setSave((s) => ({
+                    at: first,
+                    drafts: Object.fromEntries(
+                      Object.entries(s.drafts).filter(
+                        ([id]) => !chapter.beats.some((b) => b.id === id),
+                      ),
+                    ),
+                  }));
                 }}
               >
-                Начать прототип заново
+                Начать главу заново
               </button>
             </div>
           </section>
@@ -276,7 +315,7 @@ export function ScenePreview() {
             )}
             <p className="moin-route-note">
               Действий в сценах:{" "}
-              {scenes.reduce(
+              {chapter.beats.reduce(
                 (n, s) =>
                   n +
                   (s.challenge.kind === "play"
