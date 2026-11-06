@@ -1717,7 +1717,7 @@ export function Gull({
         <p className="moin-count">
           {done.length
             ? `Спасено: ${done.length} из ${c.words.length}. Продолжим?`
-            : `Слов: ${c.words.length}, на первое — ${GULL_SECONDS} секунд. Верный ответ раззадоривает чайку, ошибка её успокаивает.`}
+            : `Слов: ${c.words.length}, на первое — ${GULL_SECONDS} секунд. За верный ответ чайка ускоряется, за ошибку — замедляется.`}
         </p>
         <button
           type="button"

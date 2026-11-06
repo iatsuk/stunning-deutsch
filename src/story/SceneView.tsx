@@ -774,7 +774,9 @@ function Task({
           miss={miss}
           rich={rich}
           quiet={quiet}
-          done={() => done(nodeKey)}
+          done={(misses) =>
+            done(node.outcome ? `${nodeKey}|${misses}` : nodeKey)
+          }
         />
       );
     default:
@@ -984,13 +986,19 @@ function Embedded({
   miss: (word?: string) => void;
   rich: Rich;
   quiet?: boolean;
-  done: () => void;
+  done: (misses: number) => void;
 }) {
   const c = node.c;
   const [value, setValue] = useState<Answer>(() => initialAnswer(c));
   const [checked, setChecked] = useState(false);
   const [attempts, setAttempts] = useState(0);
   const [won, setWon] = useState(false);
+  // Ошибки за игру: от них зависят последствия outcome (в гонке — упущенные слова).
+  const misses = useRef(0);
+  const slip = (word?: string) => {
+    misses.current += 1;
+    miss(word);
+  };
   const game: GameProps = {
     value,
     seed,
@@ -1002,12 +1010,19 @@ function Embedded({
       setValue(v);
     },
     win: () => setWon(true),
-    miss,
+    miss: slip,
     quiet,
   };
+  const { clean, sloppy } = node.outcome ?? {};
   return (
     <div className="moin-play-task moin-play-game">
       <p className="moin-play-ask">{node.task}</p>
+      {(clean || sloppy) && (
+        <p className="moin-play-stakes">
+          {clean && <>Без ошибок: {effectText(clean)}. </>}
+          {sloppy && <>Две ошибки и больше: {effectText(sloppy)}.</>}
+        </p>
+      )}
       <ChallengeView c={c} game={game} beatId={seed} rich={rich} />
       {!won && !AUTOMATIC.includes(c.kind) && (
         <button
@@ -1017,7 +1032,7 @@ function Embedded({
             setChecked(true);
             setAttempts(attempts + 1);
             if (isCorrect(c, value)) setWon(true);
-            else miss();
+            else slip();
           }}
         >
           Проверить
@@ -1032,7 +1047,7 @@ function Embedded({
           )}
         </Note>
       )}
-      {won && <NextButton onClick={done} />}
+      {won && <NextButton onClick={() => done(misses.current)} />}
     </div>
   );
 }

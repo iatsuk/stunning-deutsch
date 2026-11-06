@@ -3,7 +3,8 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { phrases } from "../src/story/data.ts";
 import { initialAnswer, isCorrect, normalizeSave, solution, storyLines, validateStory } from "../src/story/logic.ts";
-import { answerSlots, arrange, flatNodes, flow, keyOf, lookOrder, nodeAt, requiredKeys, sceneKeys, shownWords, spot, typedRight, worldAfter } from "../src/story/scene.ts";
+import { answerSlots, arrange, flatNodes, flow, keyOf, lookOrder, nodeAt, outcomeOf, requiredKeys, sceneKeys, shownWords, spot, typedRight, worldAfter } from "../src/story/scene.ts";
+import { RACE_STAKES } from "../src/story/build.ts";
 import { MNEMONICS } from "../src/story/mnemonics.ts";
 import { applyEffects, holds, TRACKS } from "../src/story/world.ts";
 import { sceneChapter1 } from "../src/story/scenes/01.ts";
@@ -355,6 +356,41 @@ test("clocks stay within their segments and conditions read the world", () => {
   assert.ok(holds([{ q: "gull", min: 2 }], { gull: 2 }));
   assert.ok(!holds([{ q: "gull", min: 2 }, { q: "frauke", min: 1 }], { gull: 2 }));
   assert.ok(holds([{ q: "frauke", max: 0 }], {}));
+});
+
+test("a game moves the world by how it was played", () => {
+  // Без ошибок — clean, одна ошибка — ничего, от двух — sloppy; старая запись без числа — ничего.
+  const stakes = { clean: { nils: 1 }, sloppy: { gull: 1 } };
+  assert.deepEqual(outcomeOf(stakes, "0"), { nils: 1 });
+  assert.equal(outcomeOf(stakes, "1"), undefined);
+  assert.deepEqual(outcomeOf(stakes, "3"), { gull: 1 });
+  assert.equal(outcomeOf(stakes, ""), undefined);
+  const first = nodes(scenes[0]);
+  const race = String(first.findIndex((n) => n.t === "game" && n.c.kind === "gull"));
+  assert.equal(worldAfter(first, [`${race}|2`]).gull, 1);
+  assert.equal(worldAfter(first, [`${race}|1`]).gull, undefined);
+  assert.equal(worldAfter(first, [`${race}|0`]).gull, undefined);
+  assert.equal(worldAfter(first, [race]).gull, undefined);
+});
+
+test("the gull grows bolder only through the player", () => {
+  // Каждая гонка с чайкой ставит на кон её наглость.
+  for (const beat of allScenes)
+    for (const n of flatNodes(nodes(beat)))
+      if (n.t === "game" && n.c.kind === "gull") assert.deepEqual(n.outcome, RACE_STAKES, beat.id);
+  // Сюжет сам часы не двигает: рост наглости — только выбор игрока, итог игры или кража по
+  // условию, которое уже зависит от прохождения.
+  const walk = (list, inWhen, where) => {
+    for (const n of list) {
+      if (!inWhen) assert.ok(!((n.set?.gull ?? 0) > 0), `${where}: ${n.text ?? n.t}`);
+      if (n.t === "when") {
+        walk(n.then, true, where);
+        walk(n.else ?? [], true, where);
+      }
+      if (n.t === "go") for (const b of n.branches) walk(b.nodes, inWhen, where);
+    }
+  };
+  for (const beat of allScenes) walk(nodes(beat), false, beat.id);
 });
 
 test("a side task is optional, but leaving the hub is a step of its own", () => {

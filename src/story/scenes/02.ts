@@ -1,8 +1,4 @@
-import {
-  an, ANSWER, ASK, docks, gaps, gruss, gull as race, HEAR, HINT_DOCK, HINT_HEAR, HINT_LETTER, HINT_LOCK, HINT_ORAL,
-  HINT_PICTURE, HINT_RACE, HINT_SAY, HINT_SPELL, letter, letters, lock, odd, oral, order, pairs, RACE,
-  reply as oralReply, say as oralSay, scene, sort, speak, spot, verdict, write,
-} from "../build.ts";
+import { an, ANSWER, ASK, docks, gaps, gruss, gull as race, HEAR, HINT_DOCK, HINT_HEAR, HINT_LETTER, HINT_LOCK, HINT_ORAL, HINT_PICTURE, HINT_RACE, HINT_SAY, HINT_SPELL, letter, letters, lock, odd, oral, order, pairs, RACE, RACE_STAKES, reply as oralReply, say as oralSay, scene, sort, speak, spot, verdict, write } from "../build.ts";
 import { phrases } from "../data.ts";
 import type { Challenge, Episode, SceneNode } from "../types.ts";
 
@@ -37,11 +33,8 @@ const countdown: SceneNode[] = [
     hint: HINT_PICTURE,
     c: scene([["null", "0️⃣"], ["eins", "1️⃣"], ["zwei", "2️⃣"], ["drei", "3️⃣"], ["vier", "4️⃣"], ["fünf", "5️⃣"], ["sechs", "6️⃣"], ["sieben", "7️⃣"], ["acht", "8️⃣"], ["neun", "9️⃣"], ["zehn", "🔟"]]),
   },
-  {
-    ...narr("Две единицы, elf, Хауке поймал. Остальные карточки держит в клюве {moewe}, усевшись прямо на доску. Элиф сказала бы: это интерес к числам."),
-    set: { gull: 1 },
-  },
-  { t: "game", task: `Отнимите карточки у чайки! ${RACE}`, hint: HINT_RACE, c: race(["elf", "zwölf", "zehn", "acht", "sechs", "drei"]) },
+  narr("Две единицы, elf, Хауке поймал. Остальные карточки держит в клюве {moewe}, усевшись прямо на доску. Элиф сказала бы: это интерес к числам."),
+  { t: "game", task: `Отнимите карточки у чайки! ${RACE}`, hint: HINT_RACE, outcome: RACE_STAKES, c: race(["elf", "zwölf", "zehn", "acht", "sechs", "drei"]) },
   { t: "gap", task: "Поставьте на доску сегодняшнее число.", text: "Noch ___ Tage!", options: ["elf", "zwölf", "zehn"], answer: "elf", ru: "Ещё одиннадцать дней!" },
   jensen("Moin moin.", "Привет-привет."),
   narr("Мимо проходит Йенсен с кружкой чая. Хауке чуть снова не роняет карточки: — Moin moin? Сегодня он разговорчив. Это к переменам."),
@@ -732,12 +725,9 @@ const evening: SceneNode[] = [
       no("Он не любит праздники", "Тогда бы он сказал Moin и ушёл. А он поперхнулся."),
     ],
   },
-  {
-    ...narr("Пока все смотрят на Йенсена, {moewe} влетает в окно и уносит пакет с хлебом Даны. Целиком. Наглость растёт."),
-    set: { gull: 1 },
-  },
+  narr("Пока все смотрят на Йенсена, {moewe} влетает в окно и уносит пакет с хлебом Даны. Целиком. Сколько ещё она унесёт, зависит от вас."),
   elif("Das ist nicht kriminell! Die Möwe hat Hunger.", "Это не преступление! Чайка голодная."),
-  { t: "game", task: `Спасите хотя бы слова! ${RACE}`, hint: HINT_RACE, c: race(["das Brot", "das Wasser", "der Kuchen", "die Zeit", "die Frage", "die Pause"]) },
+  { t: "game", task: `Спасите хотя бы слова! ${RACE}`, hint: HINT_RACE, outcome: RACE_STAKES, c: race(["das Brot", "das Wasser", "der Kuchen", "die Zeit", "die Frage", "die Pause"]) },
   narr("Мобильный Нильса пищит в последний раз за день: «Ich habe noch ein Foto!!! Ein Foto von Opa!!! Morgen!!!»"),
   narr("Вы закрываете блокнот: «День второй. Найдено: {gaestezimmer} 12, номер Нильса, фото с {zollstock} и {dose} краски». Noch zehn Tage."),
   {

@@ -79,8 +79,14 @@ type SceneStep =
   | { t: "clue"; title: string; text: string }
   /** Иллюстрация к сцене (public/story-img). Проходить её не нужно: она стоит перед следующим узлом. */
   | { t: "pic"; src: string; alt: string }
-  /** Встроенная игра: часы, касса, причалы и любые другие действия. */
-  | { t: "game"; task: string; c: Challenge; hint?: string };
+  /**
+   * Встроенная игра: часы, касса, причалы и любые другие действия. outcome — последствия по итогу:
+   * clean — без единой ошибки, sloppy — от двух ошибок (в гонке с чайкой — от двух упущенных
+   * слов); одна ошибка мир не меняет. Так мир двигает то, как игрок сыграл, а не сценарий.
+   */
+  | { t: "game"; task: string; c: Challenge; hint?: string; outcome?: Outcome };
+/** Последствия игры по её итогу. */
+export type Outcome = { clean?: Effects; sloppy?: Effects };
 export type Challenge =
   | { kind: "play"; nodes: SceneNode[] }
   | { kind: "choice"; options: Option[]; answer: string }

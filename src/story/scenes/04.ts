@@ -1,8 +1,4 @@
-import {
-  an, ANSWER, ASK, bingo, docks, gaps, gruss, gull as race, HINT_DOCK, HINT_HEAR, HINT_LETTER, HINT_LOCK, HINT_ODD,
-  HINT_ORAL, HINT_PICTURE, HINT_RACE, HINT_SAY, HINT_SPELL, letter, letters, lock, odd, oral, order, pairs, RACE,
-  REQUEST, reply as oralReply, say as oralSay, scene, sort, speak, spot, verdict, write,
-} from "../build.ts";
+import { an, ANSWER, ASK, bingo, docks, gaps, gruss, gull as race, HINT_DOCK, HINT_HEAR, HINT_LETTER, HINT_LOCK, HINT_ODD, HINT_ORAL, HINT_PICTURE, HINT_RACE, HINT_SAY, HINT_SPELL, letter, letters, lock, odd, oral, order, pairs, RACE, RACE_STAKES, reply as oralReply, REQUEST, say as oralSay, scene, sort, speak, spot, verdict, write } from "../build.ts";
 import { phrases } from "../data.ts";
 import type { ChatTurn, Challenge, Episode, SceneNode } from "../types.ts";
 
@@ -207,11 +203,8 @@ const table: SceneNode[] = [
     hint: "Мера и то, что в ней: второе слово не меняется — eine Tasse Tee, ein Glas Wasser.",
     c: pairs([["eine Tasse", "Tee"], ["ein Glas", "Wasser"], ["ein Stück", "Kuchen"], ["die Speisekarte", "Kaffee, Tee, Cola"]]),
   },
-  {
-    ...narr("{moewe} пикирует прямо на {tablett}. Ein Fischbrötchen исчезает в небе. Взамен в молочник падает что-то бумажное."),
-    set: { gull: 1 },
-  },
-  { t: "game", task: `Спасите слова с подноса, пока чайка не вернулась! ${RACE}`, hint: HINT_RACE, c: race(["der Kaffee", "der Tee", "die Milch", "das Fischbrötchen", "der Kuchen", "das Wasser"]) },
+  narr("{moewe} пикирует прямо на {tablett}. Ein Fischbrötchen исчезает в небе. Взамен в молочник падает что-то бумажное."),
+  { t: "game", task: `Спасите слова с подноса, пока чайка не вернулась! ${RACE}`, hint: HINT_RACE, outcome: RACE_STAKES, c: race(["der Kaffee", "der Tee", "die Milch", "das Fischbrötchen", "der Kuchen", "das Wasser"]) },
   dana("Die Möwe bezahlt! Mit Papier?", "Чайка расплачивается! Бумажкой?", ["bezahlen"]),
   narr("Из Milch вы вылавливаете угол от {anhaenger} — тот, что {moewe} оторвала в первый день. На нём одна цифра: zwei."),
   hauke("Zwei! Zimmer zwölf! Danke, Möwe. Aber das ist nicht neu.", "Два! Комната двенадцать! Спасибо, чайка. Но это не новость."),

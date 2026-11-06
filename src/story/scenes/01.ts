@@ -1,4 +1,4 @@
-import { an, ANSWER, ASK, bingo, docks, gruss, gull as race, HEAR, HINT_HEAR, HINT_RACE, letter, letters, lock, odd, oral, order, pairs, RACE, reply as oralReply, say as oralSay, scene, write } from "../build.ts";
+import { an, ANSWER, ASK, bingo, docks, gruss, gull as race, HEAR, HINT_HEAR, HINT_RACE, letter, letters, lock, odd, oral, order, pairs, RACE, RACE_STAKES, reply as oralReply, say as oralSay, scene, write } from "../build.ts";
 import type { Episode, SceneNode } from "../types.ts";
 
 // Прототип главы 1 в формате сцен (A1-PLOT.md, «Формат сцен»). Сцена — разговор и осмотр
@@ -113,7 +113,7 @@ const arrival: SceneNode[] = [
   narr("— Сколько тут приветствий? — спрашиваете вы. Хауке пожимает плечами: — Много. Но если сомневаешься, говори {moin}. Утром, днём, вечером и даже ночью."),
   { t: "gap", task: "Чем здороваются в Киле в любое время?", text: "___! Wie geht's?", options: ["Moin", "Gute Nacht", "Tschüss"], answer: "Moin" },
   narr("Порыв ветра выдёргивает у Хауке картонку MOIN — и чайка тут же пикирует за ней!"),
-  { t: "game", task: `Отбейте картонку! ${RACE}`, hint: HINT_RACE, c: race(["Guten Morgen!", "Guten Tag!", "Guten Abend!", "Gute Nacht!", "Hallo!", "Tschüss!"]) },
+  { t: "game", task: `Отбейте картонку! ${RACE}`, hint: HINT_RACE, outcome: RACE_STAKES, c: race(["Guten Morgen!", "Guten Tag!", "Guten Abend!", "Gute Nacht!", "Hallo!", "Tschüss!"]) },
   narr("Картонка спасена. Чайка садится на мачту и делает вид, что ей было неинтересно."),
   narr("Kiellinie. Слева вода и мачты, справа белые домики парусных клубов. Хауке останавливается у причала."),
   hauke("Das ist der Hafen. Und das ist mein Boot.", "Это гавань. А это моя лодка.", ["der Hafen", "das Boot"]),
@@ -205,7 +205,7 @@ const harbourMaster: SceneNode[] = [
       no("Звонить в полицию", "Пока неизвестно даже, когда табличка пропала. Сначала факты."),
     ],
   },
-  { ...narr("Кто был в клубе вчера? Хауке показывает на флаги команд у причала. Ночью {moewe} сорвала с флагштоков таблички с названиями стран."), set: { gull: 1 } },
+  narr("Кто был в клубе вчера? Хауке показывает на флаги команд у причала. Ночью {moewe} сорвала с флагштоков таблички с названиями стран."),
   { t: "game", task: "Подпишите флаги: послушайте страну и нажмите на флаг.", c: scene([["Deutschland", "🇩🇪"], ["Dänemark", "🇩🇰"], ["Kasachstan", "🇰🇿"], ["Russland", "🇷🇺"], ["die Türkei", "🇹🇷"], ["die Ukraine", "🇺🇦"], ["die Schweiz", "🇨🇭"], ["die USA", "🇺🇸"]]) },
   narr("Восемь стран, один клуб. Вчера вечером здесь были Матео, Элиф, Дана, Йенсен и гости клуба, брат и сестра aus Hamburg. Гости спят, остальные — у причала."),
   { t: "clue", title: "Место у подставки", text: "Табличку вынули аккуратно: рамка цела. Рядом кусочек старой краски с буквой O и кружка Йенсена — в ней только чай." },
@@ -282,8 +282,8 @@ const witnesses: SceneNode[] = [
           },
           {
             t: "when",
-            if: [{ q: "gull", min: 2 }],
-            then: [narr("Элиф качает головой: — Подозревать чайку — значит её раззадорить. Чайка смотрит на вас с интересом. Со слишком большим интересом.")],
+            if: [{ q: "gull", min: 1 }],
+            then: [narr("Элиф качает головой: чайку уже раззадорили. Она смотрит на вас с интересом. Со слишком большим интересом.")],
             else: [narr("Элиф довольна: чайка записана в свидетели. Чайка тоже выглядит довольной — насколько это возможно для чайки.")],
           },
           narr("Зато Элиф кое-что видела: вчера вечером у {aufsteller} долго сидели гости клуба, брат и сестра. Они спорили, а потом ушли в гостевую комнату."),
@@ -344,14 +344,14 @@ const witnesses: SceneNode[] = [
   },
   {
     t: "when",
-    if: [{ q: "frauke", min: 1 }, { q: "gull", min: 2 }],
+    if: [{ q: "frauke", min: 1 }, { q: "gull", min: 1 }],
     then: [
       { ...narr("Вы достаёте булочку Фрауке — и чайка, которая всё утро копила наглость, уносит её прямо из рук. Элиф разводит руками: — Это не кража. Это природа."), set: { gull: 1 } },
     ],
   },
   {
     t: "when",
-    if: [{ q: "frauke", min: 1 }, { q: "gull", max: 1 }],
+    if: [{ q: "frauke", min: 1 }, { q: "gull", max: 0 }],
     then: [narr("Вы наконец едите булочку Фрауке. Чайка смотрит издалека, но ведёт себя прилично: свидетели себе такого не позволяют.")],
   },
   hauke("Die Gäste schlafen noch.", "Гости ещё спят."),
@@ -608,14 +608,12 @@ const evening: SceneNode[] = [
   },
   narr("Чтобы всех помирить, Элиф поворачивается к {fenster}: там сидит чайка."),
   elif("Und du, Möwe? Woher kommst du?", "А ты, чайка? Откуда ты?"),
-  {
-    ...narr("{moewe} отвечает так громко, что встреча замолкает на минуту. Kreeh! А потом пикирует на стол с карточками участников."),
-    set: { gull: 1 },
-  },
+  narr("{moewe} отвечает так громко, что встреча замолкает на минуту. Kreeh! А потом пикирует на стол с карточками участников."),
   {
     t: "game",
     task: `Спасите карточки! ${RACE}`,
     hint: HINT_RACE,
+    outcome: RACE_STAKES,
     c: race(["der Name", "der Vorname", "das Land", "die Stadt", "die Sprache", "Woher?"]),
   },
   { t: "pic", src: "01-tag.jpg", alt: "Ночь у клуба: свет фонарика на пустой подставке, под ней картонная бирка с оторванным углом" },
@@ -641,7 +639,7 @@ const evening: SceneNode[] = [
   },
   {
     t: "when",
-    if: [{ q: "gull", min: 3 }],
+    if: [{ q: "gull", min: 2 }],
     then: [{ ...narr("Пока вы читаете {anhaenger}, {moewe} уносит {taschenlampe}. Наглость растёт — Элиф это предупреждала."), set: { gull: 1 } }],
     else: [narr("Чайка на крыше молчит. Подозрительно молчит.")],
   },

@@ -1,8 +1,4 @@
-import {
-  an, ANSWER, ASK, bingo, docks, gaps, gruss, gull as race, HINT_DOCK, HINT_HEAR, HINT_LETTER, HINT_LOCK, HINT_ODD,
-  HINT_ORAL, HINT_PICTURE, HINT_RACE, HINT_SAY, HINT_SPELL, letter, letters, lock, odd, oral, order, pairs, RACE,
-  reply as oralReply, say as oralSay, scene, sort, speak, spot, verdict,
-} from "../build.ts";
+import { an, ANSWER, ASK, bingo, docks, gaps, gruss, gull as race, HINT_DOCK, HINT_HEAR, HINT_LETTER, HINT_LOCK, HINT_ODD, HINT_ORAL, HINT_PICTURE, HINT_RACE, HINT_SAY, HINT_SPELL, letter, letters, lock, odd, oral, order, pairs, RACE, RACE_STAKES, reply as oralReply, say as oralSay, scene, sort, speak, spot, verdict } from "../build.ts";
 import { phrases } from "../data.ts";
 import type { Challenge, Episode, SceneNode } from "../types.ts";
 
@@ -30,11 +26,8 @@ const photo: SceneNode[] = [
   { t: "pic", src: "03-morning.jpg", alt: "Утро у клуба: на пустой подставке конверт, чайка тянет из него старое фото за край, Хауке бросается следом" },
   narr("Третий день, noch zehn Tage. На пустом {aufsteller} белеет конверт с тремя восклицательными знаками: почерк Нильса."),
   hauke("Zehn! Noch zehn Tage! Und ein Foto von Nils!", "Десять! Ещё десять дней! И фото от Нильса!", ["das Foto"]),
-  {
-    ...narr("В конверте старое бумажное Foto. Достать его вы не успеваете: {moewe} хватает Foto за край и тянет к воде."),
-    set: { gull: 1 },
-  },
-  { t: "game", task: `Отнимите фото у чайки! ${RACE}`, hint: HINT_RACE, c: race(["das Foto", "die Familie", "der Mann", "die Frau", "das Kind", "der Junge"]) },
+  narr("В конверте старое бумажное Foto. Достать его вы не успеваете: {moewe} хватает Foto за край и тянет к воде."),
+  { t: "game", task: `Отнимите фото у чайки! ${RACE}`, hint: HINT_RACE, outcome: RACE_STAKES, c: race(["das Foto", "die Familie", "der Mann", "die Frau", "das Kind", "der Junge"]) },
   narr("Фото вы отбили, но правый край {moewe} унесла. На оставшемся — 1976 год, {pinsel} и {schild} MOIN, совсем новое."),
   { t: "pic", src: "03-photo1976.jpg", alt: "Старое выцветшее фото 1976 года: мужчина пишет кистью белые буквы MOIN на новой тёмно-синей табличке, женщина держит пирог, мальчик — банку краски; правый край оторван" },
   {
@@ -217,10 +210,7 @@ const roof: SceneNode[] = [
     ],
   },
   { t: "type", task: "Запишите в блокнот: «Это друг дедушки».", answers: ["Das ist ein Freund von Opa.", "Er ist ein Freund von Opa."], ru: "Это друг дедушки." },
-  {
-    ...narr("Теперь на крыше клуба не одна {moewe}, а Familie: Mutter, Vater, drei Kinder. Элиф счастлива. Наглость, говорит Хауке, растёт семьями."),
-    set: { gull: 1 },
-  },
+  narr("Теперь на крыше клуба не одна {moewe}, а Familie: Mutter, Vater, drei Kinder. Элиф счастлива. Наглость, говорит Хауке, растёт семьями."),
   {
     t: "game",
     task: "Птенцов трое, родителей двое. Сведите единственное и множественное число.",
@@ -600,12 +590,9 @@ const cake: SceneNode[] = [
     ],
   },
   hauke("Krümel! Nils und Greta – wie Hänsel und Gretel!", "Крошки! Нильс и Грета — как Гензель и Гретель!"),
-  {
-    ...narr("Дорожка ведёт к {tuer} и обрывается: снаружи её доедает Familie {moewe} с крыши. Сказка короткого пути не даёт."),
-    set: { gull: 1 },
-  },
+  narr("Дорожка ведёт к {tuer} и обрывается: снаружи её доедает Familie {moewe} с крыши. Сказка короткого пути не даёт."),
   elif("Das ist nicht kriminell! Die Möwe hat Hunger.", "Это не преступление! Чайка голодная."),
-  { t: "game", task: `Спасите слова, пока чайки не склевали дорожку! ${RACE}`, hint: HINT_RACE, c: race(["die Enkelin", "der Enkel", "die Tochter", "der Sohn", "die Eltern", "der Bruder"]) },
+  { t: "game", task: `Спасите слова, пока чайки не склевали дорожку! ${RACE}`, hint: HINT_RACE, outcome: RACE_STAKES, c: race(["die Enkelin", "der Enkel", "die Tochter", "der Sohn", "die Eltern", "der Bruder"]) },
   mateo("Und mein Kuchen? Ist er gut?", "А мой пирог? Он хороший?"),
   {
     t: "reply",

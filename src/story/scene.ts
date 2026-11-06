@@ -1,12 +1,13 @@
 import { shuffle } from "../lib/shuffle.ts";
 import { judge } from "../trainer/logic.ts";
-import type { SceneNode } from "./types.ts";
-import { applyEffects, holds, type World } from "./world.ts";
+import type { Outcome, SceneNode } from "./types.ts";
+import { applyEffects, holds, type Effects, type World } from "./world.ts";
 
 // Прохождение сцены хранится списком ключей пройденных узлов в порядке прохождения:
 // "3" — узел верхнего уровня, "5.1.2" — узел ветки 1 развилки 5, "7.0.1" — узел первой стороны
 // условия 7 ("7.1.…" — второй). Порядок нужен, чтобы показать разговор так, как он шёл.
-// После ключа через | хранится ответ: набранная реплика, выбранный вариант или сторона условия.
+// После ключа через | хранится ответ: набранная реплика, выбранный вариант, сторона условия
+// или число ошибок в игре с последствиями (outcome).
 
 export const keyOf = (entry: string) => entry.split("|")[0];
 export const typedOf = (entry: string) => entry.split("|").slice(1).join("|");
@@ -92,6 +93,16 @@ export function requiredKeys(nodes: SceneNode[], entries: string[], prefix = "")
 export const solutionEntries = (nodes: SceneNode[]) =>
   requiredKeys(nodes, []).map((k) => (nodeAt(nodes, k)?.t === "when" ? `${k}|0` : k));
 
+/**
+ * Последствие игры по числу ошибок из записи «ключ|ошибки»: чисто — clean, от двух — sloppy.
+ * Запись без числа (старое прохождение) последствий не даёт.
+ */
+export function outcomeOf(outcome: Outcome, typed: string): Effects | undefined {
+  if (!/^\d+$/.test(typed)) return undefined;
+  const misses = Number(typed);
+  return misses === 0 ? outcome.clean : misses >= 2 ? outcome.sloppy : undefined;
+}
+
 /** Состояние мира после пройденных узлов: последствия узлов и выбранных вариантов по порядку. */
 export function worldAfter(nodes: SceneNode[], entries: string[], start: World = {}): World {
   let world = start;
@@ -101,6 +112,7 @@ export function worldAfter(nodes: SceneNode[], entries: string[], start: World =
     world = applyEffects(world, node.set);
     if (node.t === "reply" || node.t === "pick")
       world = applyEffects(world, node.options.find((o) => o.text === typedOf(entry))?.set);
+    if (node.t === "game" && node.outcome) world = applyEffects(world, outcomeOf(node.outcome, typedOf(entry)));
   }
   return world;
 }

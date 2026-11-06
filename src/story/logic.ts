@@ -812,6 +812,7 @@ function validateScene(
       n.rule.every((r) => /^[\w-]+\/[\w-]+$/.test(r)));
   return nodes.every((n) => {
     if (!effects(n.set) || !rules(n)) return false;
+    if (n.t === "game" && n.outcome && !(Object.keys(n.outcome).length > 0 && effects(n.outcome.clean) && effects(n.outcome.sloppy))) return false;
     switch (n.t) {
       case "narr":
         return phraseIds(n.text).every((id) => phrases[id]);

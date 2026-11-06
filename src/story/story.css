@@ -2444,6 +2444,12 @@
   font-size: 12px;
   color: var(--accent);
 }
+/* Чем грозит игра: последствия её итога видны до старта. */
+.moin-play-stakes {
+  margin: -4px 0 10px;
+  font-size: 13px;
+  color: var(--muted);
+}
 .moin-play-tracks {
   margin: 8px 0 10px;
   padding: 0;
