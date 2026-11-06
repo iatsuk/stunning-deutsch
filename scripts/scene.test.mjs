@@ -215,6 +215,20 @@ test("the narration names known things in German: at least the share of the plot
   }
 });
 
+test("a typing task asks for the answer, it does not show it", () => {
+  // Подсказка под полем — смысл реплики, а не сама реплика; в тексте задания ответа тоже нет.
+  // Номер кольца диктуется словами («Ha – E – El. Sieben, drei, null, fünf»), а пишется буквами и цифрами.
+  const norm = (s) => s.toLowerCase().replace(/[^a-zа-яё0-9äöüß]/gi, "");
+  for (const beat of allScenes)
+    for (const n of flatNodes(nodes(beat))) {
+      if (n.t !== "type") continue;
+      for (const answer of n.answers.filter((a) => !a.includes("*"))) {
+        assert.notEqual(norm(n.ru ?? ""), norm(answer), `${beat.id}: ${n.task}`);
+        assert.ok(norm(answer).length < 4 || !norm(n.task).includes(norm(answer)), `${beat.id}: ${n.task}`);
+      }
+    }
+});
+
 test("a new phrase in narration stands where Russian needs the nominative", () => {
   // В первый раз выражение читается как «перевод + немецкое»: «печать, штамп der Stempel». Перевод
   // стоит в именительном падеже, поэтому после «без», «по», «три» и других слов, которые требуют

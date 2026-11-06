@@ -291,7 +291,7 @@ const guestbook: SceneNode[] = [
             options: ["HEL", "AEL", "HIL"],
             answer: "HEL",
           },
-          { t: "type", task: "Запишите номер кольца в блокнот: буквы и цифры.", answers: ["HEL 7305", "HEL7305", "HEL-7305"], ru: "HEL 7305" },
+          { t: "type", rule: ["zahlen/alphabet-1"], task: "Элиф диктует: «Ha – E – El. Sieben, drei, null, fünf». Запишите номер кольца в блокнот буквами и цифрами.", answers: ["HEL 7305", "HEL7305", "HEL-7305"] },
           { t: "gap", rule: ["zahlen/haben-1"], task: "Подпишите находку.", text: "Die Möwe ___ eine Nummer: HEL 7305.", options: ["hat", "habe", "haben"], answer: "hat", ru: "У чайки есть номер: HEL 7305." },
           elif("Die Postleitzahl, bitte! Frau Petersen?", "Индекс, пожалуйста! Фрау Петерсен?", ["die Postleitzahl"]),
           narr("Фрау Петерсен обожает индексы. Она бросает очередь и ищет индекс птичьей станции. Ваш номерок гаснет на табло."),
