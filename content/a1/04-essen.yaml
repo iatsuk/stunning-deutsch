@@ -16,6 +16,7 @@ grammar:
   - Глагол möchten
   - nicht или kein
   - gern
+  - "Ударение: Café и Kaffee, безударные be- и ge-"
 exam: [ sprechen-2, sprechen-3, hoeren-1 ]
 
 dialogues:
@@ -256,6 +257,17 @@ tables:
       - [ ihr, ess+t, nehm+t, trink+t ]
       - [ sie / Sie, ess+en, nehm+en, trink+en ]
     note: "*essen* и *nehmen* меняют *e* на *i* только у *du* и *er / sie / es* — как *sprechen*."
+  betonung:
+    title: Café oder Kaffee?
+    ru: Ударение различает слова
+    head: [Wort, Звучит]
+    rows:
+      - [das Café, ca·FÉ]
+      - [der Kaffee, KAF·fee]
+      - [bestellen, be·STEL·len]
+      - [bezahlen, be·ZAH·len]
+      - [das Gemüse, ge·MÜ·se]
+    note: "Кафе — заимствование с ударением в конце, кофе — по немецкому правилу. Приставки *be-* и *ge-* безударны. Точки делят слово на слоги, большими буквами выделен ударный. В Австрии и кофе говорят *kaf·FEE*, но в Германии — *KAF·fee*."
 
 tasks:
   frage:
@@ -406,6 +418,25 @@ steps:
           haben*.
         point: "*du isst*, *er nimmt*; перед едой — *Guten Appetit!*"
         set: { view: words, words: verben }
+
+  - id: betonung
+    chapter: words
+    title: Кафе или кофе?
+    beats:
+      - read: >-
+          Два слова темы пишутся почти одинаково, а различает их ударение. *das Café* — кафе, с
+          ударением в конце, как в русском. *der Kaffee* — кофе, и здесь ударение по немецкому
+          правилу, на первом слоге: *KAF·fee*. Скажете «кофе» с ударением в конце — и прозвучит
+          «кафе». Поэтому *Einen Kaffee, bitte!* — с ударением на *KAF-*.
+        point: "*ca·FÉ* — кафе, *KAF·fee* — кофе"
+        set: { view: table, table: betonung, reveal: 2 }
+      - read: >-
+          Приставка *be-*, как *ge-* в *der Geburtstag* из темы 2, никогда не бывает ударной:
+          ударение переходит на корень. *bestellen* — *be·STEL·len*, *bezahlen* — *be·ZAH·len*,
+          *das Gemüse* — *ge·MÜ·se*. Отделяемые приставки, наоборот, всегда ударны — о них в
+          теме 6.
+        point: "*be-* и *ge-* безударны: *be·ZAH·len*, *ge·MÜ·se*"
+        set: { reveal: 5, focus: [2, 3, 4] }
 
   - id: akkusativ
     chapter: grammar
@@ -703,6 +734,21 @@ exercises:
     also: ["Ich nehme einen Saft und ein Fischbrötchen.", "Ein Fischbrötchen und einen Saft nehme ich.", "Einen Saft und ein Fischbrötchen nehme ich."]
     de: Ich nehme ein Fischbrötchen und einen Saft.
     why: "*das Fischbrötchen* — *ein*, *der Saft* — *einen*."
+  - type: choice
+    q: Как в Германии произносят *der Kaffee* — «кофе»?
+    options: [KAF·fee, kaf·FEE]
+    answer: 0
+    why: "Кофе — по немецкому правилу, на первом слоге. Ударение в конце — у *das Café*, «кафе»."
+  - type: choice
+    q: Где ударение в *bezahlen*?
+    options: [be·ZAH·len, BE·zah·len]
+    answer: 0
+    why: "Приставка *be-* никогда не бывает ударной: ударение переходит на корень *zahl-*."
+  - type: choice
+    q: Где ударение в *das Gemüse*?
+    options: [ge·MÜ·se, GE·mü·se]
+    answer: 0
+    why: "*ge-* безударна, как в *der Geburtstag*: ударен корень."
 adventure:
   kind: sequence
   title: Угощение для встречи

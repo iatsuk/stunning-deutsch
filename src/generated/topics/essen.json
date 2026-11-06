@@ -15,7 +15,8 @@
   "Винительный падеж: den, einen, keinen",
   "Глагол möchten",
   "nicht или kein",
-  "gern"
+  "gern",
+  "Ударение: Café и Kaffee, безударные be- и ge-"
  ],
  "exam": [
   "sprechen-2",
@@ -815,6 +816,38 @@
    ],
    "ruCols": [],
    "note": "*essen* и *nehmen* меняют *e* на *i* только у *du* и *er / sie / es* — как *sprechen*."
+  },
+  "betonung": {
+   "title": "Café oder Kaffee?",
+   "ru": "Ударение различает слова",
+   "head": [
+    "Wort",
+    "Звучит"
+   ],
+   "rows": [
+    [
+     "das Café",
+     "ca·FÉ"
+    ],
+    [
+     "der Kaffee",
+     "KAF·fee"
+    ],
+    [
+     "bestellen",
+     "be·STEL·len"
+    ],
+    [
+     "bezahlen",
+     "be·ZAH·len"
+    ],
+    [
+     "das Gemüse",
+     "ge·MÜ·se"
+    ]
+   ],
+   "ruCols": [],
+   "note": "Кафе — заимствование с ударением в конце, кофе — по немецкому правилу. Приставки *be-* и *ge-* безударны. Точки делят слово на слоги, большими буквами выделен ударный. В Австрии и кофе говорят *kaf·FEE*, но в Германии — *KAF·fee*."
   }
  },
  "tasks": {
@@ -1111,6 +1144,48 @@
    }
   },
   {
+   "id": "betonung-1",
+   "step": "betonung",
+   "stepTitle": "Кафе или кофе?",
+   "chapterIndex": 1,
+   "indexInStep": 0,
+   "read": "Два слова темы пишутся почти одинаково, а различает их ударение. *das Café* — кафе, с ударением в конце, как в русском. *der Kaffee* — кофе, и здесь ударение по немецкому правилу, на первом слоге: *KAF·fee*. Скажете «кофе» с ударением в конце — и прозвучит «кафе». Поэтому *Einen Kaffee, bitte!* — с ударением на *KAF-*.",
+   "point": "*ca·FÉ* — кафе, *KAF·fee* — кофе",
+   "scene": {
+    "view": "table",
+    "dialogue": "imbiss",
+    "words": "verben",
+    "table": "betonung",
+    "reveal": 2
+   }
+  },
+  {
+   "id": "betonung-2",
+   "step": "betonung",
+   "stepTitle": "Кафе или кофе?",
+   "chapterIndex": 1,
+   "indexInStep": 1,
+   "read": "Приставка *be-*, как *ge-* в *der Geburtstag* из темы 2, никогда не бывает ударной: ударение переходит на корень. *bestellen* — *be·STEL·len*, *bezahlen* — *be·ZAH·len*, *das Gemüse* — *ge·MÜ·se*. Отделяемые приставки, наоборот, всегда ударны — о них в теме 6.",
+   "point": "*be-* и *ge-* безударны: *be·ZAH·len*, *ge·MÜ·se*",
+   "scene": {
+    "view": "table",
+    "dialogue": "imbiss",
+    "words": "verben",
+    "table": "betonung",
+    "reveal": 5,
+    "focus": [
+     2,
+     3,
+     4
+    ],
+    "fresh": [
+     2,
+     3,
+     4
+    ]
+   }
+  },
+  {
    "id": "akkusativ-1",
    "step": "akkusativ",
    "stepTitle": "Кого? Что? — винительный падеж",
@@ -1122,6 +1197,7 @@
     "view": "sentence",
     "dialogue": "imbiss",
     "words": "verben",
+    "table": "betonung",
     "rows": [
      {
       "slots": [
@@ -1177,6 +1253,7 @@
     "view": "sentence",
     "dialogue": "imbiss",
     "words": "verben",
+    "table": "betonung",
     "rows": [
      {
       "slots": [
@@ -1224,6 +1301,7 @@
     "view": "table",
     "dialogue": "imbiss",
     "words": "verben",
+    "table": "akkusativ",
     "rows": [
      {
       "slots": [
@@ -1257,7 +1335,6 @@
       "audio": "audio/61b9c7303532.m4a"
      }
     ],
-    "table": "akkusativ",
     "focus": [
      0
     ]
@@ -1275,6 +1352,7 @@
     "view": "sentence",
     "dialogue": "imbiss",
     "words": "verben",
+    "table": "akkusativ",
     "rows": [
      {
       "slots": [
@@ -1346,8 +1424,7 @@
       "ru": "Это кофе из Италии.",
       "audio": "audio/5377f275844e.m4a"
      }
-    ],
-    "table": "akkusativ"
+    ]
    }
   },
   {
@@ -1362,6 +1439,7 @@
     "view": "table",
     "dialogue": "imbiss",
     "words": "verben",
+    "table": "moechten",
     "rows": [
      {
       "slots": [
@@ -1434,7 +1512,6 @@
       "audio": "audio/5377f275844e.m4a"
      }
     ],
-    "table": "moechten",
     "focus": [
      0,
      1,
@@ -1455,6 +1532,7 @@
     "view": "sentence",
     "dialogue": "imbiss",
     "words": "verben",
+    "table": "moechten",
     "rows": [
      {
       "slots": [
@@ -1517,8 +1595,7 @@
       "ru": "Ты любишь кофе?",
       "audio": "audio/5fd6af1183da.m4a"
      }
-    ],
-    "table": "moechten"
+    ]
    }
   },
   {
@@ -1533,6 +1610,7 @@
     "view": "sentence",
     "dialogue": "imbiss",
     "words": "verben",
+    "table": "moechten",
     "rows": [
      {
       "slots": [
@@ -1600,8 +1678,7 @@
       "ru": "Я не пью кофе.",
       "audio": "audio/9371c04e465e.m4a"
      }
-    ],
-    "table": "moechten"
+    ]
    }
   },
   {
@@ -1616,6 +1693,7 @@
     "view": "table",
     "dialogue": "imbiss",
     "words": "verben",
+    "table": "negation",
     "rows": [
      {
       "slots": [
@@ -1683,8 +1761,7 @@
       "ru": "Я не пью кофе.",
       "audio": "audio/9371c04e465e.m4a"
      }
-    ],
-    "table": "negation"
+    ]
    }
   },
   {
@@ -1700,6 +1777,7 @@
     "view": "sentence",
     "dialogue": "imbiss",
     "words": "verben",
+    "table": "negation",
     "rows": [
      {
       "slots": [
@@ -1731,8 +1809,7 @@
       "ru": "Хочешь кофе?",
       "audio": "audio/554d8108a6b1.m4a"
      }
-    ],
-    "table": "negation"
+    ]
    }
   },
   {
@@ -1748,6 +1825,7 @@
     "view": "sentence",
     "dialogue": "imbiss",
     "words": "verben",
+    "table": "negation",
     "rows": [
      {
       "slots": [
@@ -1780,13 +1858,13 @@
       "ru": "",
       "audio": "audio/d48fbe1ad64d.m4a"
      }
-    ],
-    "table": "negation"
+    ]
    },
    "scene": {
     "view": "sentence",
     "dialogue": "imbiss",
     "words": "verben",
+    "table": "negation",
     "rows": [
      {
       "slots": [
@@ -1851,7 +1929,6 @@
       "audio": "audio/b9f51edbbe6a.m4a"
      }
     ],
-    "table": "negation",
     "fresh": [
      1
     ]
@@ -1870,6 +1947,7 @@
     "view": "table",
     "dialogue": "imbiss",
     "words": "verben",
+    "table": "verben",
     "rows": [
      {
       "slots": [
@@ -1934,7 +2012,6 @@
       "audio": "audio/b9f51edbbe6a.m4a"
      }
     ],
-    "table": "verben",
     "focus": [
      1,
      2
@@ -1953,6 +2030,7 @@
     "view": "task",
     "dialogue": "imbiss",
     "words": "verben",
+    "table": "verben",
     "rows": [
      {
       "slots": [
@@ -2017,7 +2095,6 @@
       "audio": "audio/b9f51edbbe6a.m4a"
      }
     ],
-    "table": "verben",
     "task": "frage",
     "reveal": 2
    }
@@ -2034,6 +2111,7 @@
     "view": "task",
     "dialogue": "imbiss",
     "words": "verben",
+    "table": "verben",
     "rows": [
      {
       "slots": [
@@ -2098,7 +2176,6 @@
       "audio": "audio/b9f51edbbe6a.m4a"
      }
     ],
-    "table": "verben",
     "task": "bitte",
     "reveal": 0
    }
@@ -2115,6 +2192,7 @@
     "view": "task",
     "dialogue": "imbiss",
     "words": "verben",
+    "table": "verben",
     "rows": [
      {
       "slots": [
@@ -2179,7 +2257,6 @@
       "audio": "audio/b9f51edbbe6a.m4a"
      }
     ],
-    "table": "verben",
     "task": "bitte",
     "reveal": 4
    }
@@ -2196,6 +2273,7 @@
     "view": "task",
     "dialogue": "imbiss",
     "words": "verben",
+    "table": "verben",
     "rows": [
      {
       "slots": [
@@ -2260,7 +2338,6 @@
       "audio": "audio/b9f51edbbe6a.m4a"
      }
     ],
-    "table": "verben",
     "task": "hoeren"
    }
   },
@@ -2277,6 +2354,7 @@
     "view": "task",
     "dialogue": "imbiss",
     "words": "verben",
+    "table": "verben",
     "rows": [
      {
       "slots": [
@@ -2341,7 +2419,6 @@
       "audio": "audio/b9f51edbbe6a.m4a"
      }
     ],
-    "table": "verben",
     "task": "hoeren",
     "solved": true
    }
@@ -2560,6 +2637,39 @@
    "de": "Ich nehme ein Fischbrötchen und einen Saft.",
    "why": "*das Fischbrötchen* — *ein*, *der Saft* — *einen*.",
    "audio": "audio/3851863e0008.m4a"
+  },
+  {
+   "id": "essen-19",
+   "type": "choice",
+   "q": "Как в Германии произносят *der Kaffee* — «кофе»?",
+   "options": [
+    "KAF·fee",
+    "kaf·FEE"
+   ],
+   "answer": 0,
+   "why": "Кофе — по немецкому правилу, на первом слоге. Ударение в конце — у *das Café*, «кафе»."
+  },
+  {
+   "id": "essen-20",
+   "type": "choice",
+   "q": "Где ударение в *bezahlen*?",
+   "options": [
+    "be·ZAH·len",
+    "BE·zah·len"
+   ],
+   "answer": 0,
+   "why": "Приставка *be-* никогда не бывает ударной: ударение переходит на корень *zahl-*."
+  },
+  {
+   "id": "essen-21",
+   "type": "choice",
+   "q": "Где ударение в *das Gemüse*?",
+   "options": [
+    "ge·MÜ·se",
+    "GE·mü·se"
+   ],
+   "answer": 0,
+   "why": "*ge-* безударна, как в *der Geburtstag*: ударен корень."
   }
  ],
  "case": {

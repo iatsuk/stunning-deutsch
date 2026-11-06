@@ -19,6 +19,7 @@ grammar:
   - Глагол sein
   - Вопросы с W-словом и без
   - Глагол на втором месте
+  - "Ударение: первый слог корня"
 exam: [sprechen-1, schreiben-1]
 
 dialogues:
@@ -195,6 +196,18 @@ tables:
       - [ihr, seid, Seid ihr aus Argentinien?]
       - [sie / Sie, sind, Sind Sie Frau Yıldız?]
     note: Неправильный глагол — формы надо просто запомнить.
+  betonung:
+    title: Betonung
+    ru: Ударение
+    head: [Wort, Звучит]
+    rows:
+      - [heißen, HEI·ßen]
+      - [wohnen, WOH·nen]
+      - [der Hafen, HA·fen]
+      - [der Vorname, VOR·na·me]
+      - [woher, wo·HER]
+      - [das Café, ca·FÉ]
+    note: "Ударение — на первом слоге корня, в сложном слове — на первой части. Исключения: вопросы на *wo-* и заимствования. Точки делят слово на слоги, большими буквами выделен ударный; так пишут только в подсказке, в тексте — как обычно: *woher*, *das Café*."
 
 tasks:
   vorstellen:
@@ -363,6 +376,26 @@ steps:
           сюжета пока достаточно понять из контекста.
         point: "Береговая жизнь: *der Hafen, das Boot, segeln, das Café, der Strand*"
         set: { view: words, words: am-wasser }
+
+  - id: betonung
+    chapter: words
+    title: Где ударение?
+    beats:
+      - read: >-
+          В немецком слове ударение почти всегда падает на первый слог корня, а это обычно и
+          первый слог слова: *heißen*, *wohnen*, *der Hafen*. Ударный слог звучит громко и ясно,
+          безударные — коротко и бегло: в *heißen* второй слог почти проглатывается. В сложном
+          слове ударна первая часть: *der Vorname*. В русском ударение надо запоминать для
+          каждого слова, а в немецком оно почти всегда в начале — на это можно опереться.
+        point: "Ударение — на первом слоге корня: *HEI·ßen*, *WOH·nen*, *HA·fen*"
+        set: { view: table, table: betonung, reveal: 4 }
+      - read: >-
+          Исключения есть, и два из них уже встретились в этой теме. Вопрос *woher* ударен на
+          второй части: *wo·HER*. Заимствования часто ударны в конце, как и в русском: *das
+          Café* — «кафе́». Остальные исключения разберём, когда появятся нужные слова: глаголы
+          на *-ieren* — в теме 2, безударные приставки *ge-* и *be-* — в темах 2 и 4.
+        point: "Исключения: *wo·HER*, *ca·FÉ*"
+        set: { reveal: 6, focus: [4, 5] }
 
   - id: pronomen
     chapter: grammar
@@ -846,3 +879,18 @@ exercises:
     de: Wir segeln in Kiel.
     also: [In Kiel segeln wir.]
     why: "С *wir* — *segeln*. Начать можно с города, но глагол остаётся вторым."
+  - type: choice
+    q: Где ударение в *woher*?
+    options: [wo·HER, WO·her]
+    answer: 0
+    why: "Вопрос на *wo-* — исключение: ударна вторая часть, *wo·HER*."
+  - type: choice
+    q: Где ударение в *der Vorname*?
+    options: [VOR·na·me, vor·NA·me]
+    answer: 0
+    why: "Сложное слово ударно по первой части: *vor* + *der Name*."
+  - type: choice
+    q: Где ударение в *das Café*?
+    options: [ca·FÉ, CA·fé]
+    answer: 0
+    why: "Заимствование из французского: ударение в конце, как в русском «кафе́»."

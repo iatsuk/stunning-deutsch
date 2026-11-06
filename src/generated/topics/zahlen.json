@@ -16,7 +16,8 @@
   "Числа 0–1000",
   "Глагол haben",
   "Вопросы да/нет и ответы ja/nein",
-  "Алфавит и спеллинг"
+  "Алфавит и спеллинг",
+  "Ударение: -ieren, ge- и сокращения"
  ],
  "exam": [
   "sprechen-1",
@@ -834,6 +835,34 @@
     2
    ],
    "note": "Остальные буквы звучат почти как в русском: *Be*, *De*, *Ka*, *El*, *Em*, *Er*."
+  },
+  "betonung": {
+   "title": "Betonung",
+   "ru": "Ударение не на первом слоге",
+   "head": [
+    "Wort",
+    "Звучит"
+   ],
+   "rows": [
+    [
+     "buchstabieren",
+     "buch·sta·BIE·ren"
+    ],
+    [
+     "der Geburtstag",
+     "ge·BURTS·tag"
+    ],
+    [
+     "die Adresse",
+     "a·DRES·se"
+    ],
+    [
+     "die USA",
+     "u·es·A"
+    ]
+   ],
+   "ruCols": [],
+   "note": "*-ieren* ударно всегда, приставка *ge-* — никогда. Заимствования часто ударны не в начале, а сокращения по буквам — на последней букве. Точки делят слово на слоги, большими буквами выделен ударный."
   }
  },
  "tasks": {
@@ -1242,6 +1271,46 @@
      8,
      9,
      10
+    ]
+   }
+  },
+  {
+   "id": "betonung-1",
+   "step": "betonung",
+   "stepTitle": "Ударение не на первом слоге",
+   "chapterIndex": 2,
+   "indexInStep": 0,
+   "read": "В теме 1 ударение падало на первый слог корня. В этой теме есть слова, где правило не работает. Глаголы на *-ieren* всегда ударны на *-ie-*: *buchstabieren* — *buch·sta·BIE·ren*, хотя *der Buchstabe* ударен в начале. Приставка *ge-* никогда не бывает ударной, ударение переходит на корень: *der Geburtstag* — *ge·BURTS·tag*.",
+   "point": "*-ieren* всегда ударно: *buch·sta·BIE·ren*; *ge-* безударна: *ge·BURTS·tag*",
+   "scene": {
+    "view": "table",
+    "dialogue": "am-steg",
+    "words": "proviant",
+    "table": "betonung",
+    "reveal": 2
+   }
+  },
+  {
+   "id": "betonung-2",
+   "step": "betonung",
+   "stepTitle": "Ударение не на первом слоге",
+   "chapterIndex": 2,
+   "indexInStep": 1,
+   "read": "*die Adresse* ударна на втором слоге — не как русское «а́дрес». А сокращения, которые читают по буквам, ударны на последней букве: *die USA* — *u·es·A*. Названия букв вы уже знаете из алфавита, теперь осталось сделать громче последнюю.",
+   "point": "*a·DRES·se*; сокращение по буквам ударно в конце: *u·es·A*",
+   "scene": {
+    "view": "table",
+    "dialogue": "am-steg",
+    "words": "proviant",
+    "table": "betonung",
+    "reveal": 4,
+    "focus": [
+     2,
+     3
+    ],
+    "fresh": [
+     2,
+     3
     ]
    }
   },
@@ -2285,6 +2354,39 @@
    "de": "Wie heißt das Boot?",
    "why": "Повторение темы 1: W-вопрос, затем *heißt*, затем *das Boot*.",
    "audio": "audio/111c67968e42.m4a"
+  },
+  {
+   "id": "zahlen-20",
+   "type": "choice",
+   "q": "Где ударение в *buchstabieren*?",
+   "options": [
+    "buch·sta·BIE·ren",
+    "BUCH·sta·bie·ren"
+   ],
+   "answer": 0,
+   "why": "Глаголы на *-ieren* всегда ударны на *-ie-*, как *reservieren* и *fotografieren* в следующих темах."
+  },
+  {
+   "id": "zahlen-21",
+   "type": "choice",
+   "q": "Где ударение в *der Geburtstag*?",
+   "options": [
+    "ge·BURTS·tag",
+    "GE·burts·tag"
+   ],
+   "answer": 0,
+   "why": "Приставка *ge-* безударна: ударение переходит на корень *Geburt*."
+  },
+  {
+   "id": "zahlen-22",
+   "type": "choice",
+   "q": "Как звучит *die Adresse*?",
+   "options": [
+    "a·DRES·se",
+    "A·dres·se"
+   ],
+   "answer": 0,
+   "why": "Не как русское «а́дрес»: по-немецки ударен второй слог."
   }
  ],
  "case": {

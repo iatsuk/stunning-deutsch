@@ -19,6 +19,7 @@ grammar:
   - Глагол haben
   - Вопросы да/нет и ответы ja/nein
   - Алфавит и спеллинг
+  - "Ударение: -ieren, ge- и сокращения"
 exam: [sprechen-1, hoeren-3, schreiben-1]
 
 dialogues:
@@ -226,6 +227,16 @@ tables:
       - ["Ä · Ö · Ü", "A-Umlaut · O-Umlaut · U-Umlaut", "«э» · «ё» · «ю»"]
       - [ß, Eszett, "«эсцэт»"]
     note: "Остальные буквы звучат почти как в русском: *Be*, *De*, *Ka*, *El*, *Em*, *Er*."
+  betonung:
+    title: Betonung
+    ru: Ударение не на первом слоге
+    head: [Wort, Звучит]
+    rows:
+      - [buchstabieren, buch·sta·BIE·ren]
+      - [der Geburtstag, ge·BURTS·tag]
+      - [die Adresse, a·DRES·se]
+      - [die USA, u·es·A]
+    note: "*-ieren* ударно всегда, приставка *ge-* — никогда. Заимствования часто ударны не в начале, а сокращения по буквам — на последней букве. Точки делят слово на слоги, большими буквами выделен ударный."
 
 tasks:
   buchstabieren:
@@ -453,6 +464,24 @@ steps:
           клавиатуре нет *ß* или умлаута, пишут *ss*, *ae*, *oe*, *ue*.
         point: "*J* — «йот», *V* — «фау», *W* — «вэ», *Z* — «цэт»; две *l* — *Doppel-L*"
         set: { focus: [4, 5, 6, 7, 8, 9, 10] }
+
+  - id: betonung
+    chapter: grammar
+    title: Ударение не на первом слоге
+    beats:
+      - read: >-
+          В теме 1 ударение падало на первый слог корня. В этой теме есть слова, где правило
+          не работает. Глаголы на *-ieren* всегда ударны на *-ie-*: *buchstabieren* —
+          *buch·sta·BIE·ren*, хотя *der Buchstabe* ударен в начале. Приставка *ge-* никогда не
+          бывает ударной, ударение переходит на корень: *der Geburtstag* — *ge·BURTS·tag*.
+        point: "*-ieren* всегда ударно: *buch·sta·BIE·ren*; *ge-* безударна: *ge·BURTS·tag*"
+        set: { view: table, table: betonung, reveal: 2 }
+      - read: >-
+          *die Adresse* ударна на втором слоге — не как русское «а́дрес». А сокращения, которые
+          читают по буквам, ударны на последней букве: *die USA* — *u·es·A*. Названия букв вы
+          уже знаете из алфавита, теперь осталось сделать громче последнюю.
+        point: "*a·DRES·se*; сокращение по буквам ударно в конце: *u·es·A*"
+        set: { reveal: 4, focus: [2, 3] }
 
   - id: haben
     chapter: grammar
@@ -878,3 +907,18 @@ exercises:
     ru: Как называется лодка?
     de: Wie heißt das Boot?
     why: "Повторение темы 1: W-вопрос, затем *heißt*, затем *das Boot*."
+  - type: choice
+    q: Где ударение в *buchstabieren*?
+    options: [buch·sta·BIE·ren, BUCH·sta·bie·ren]
+    answer: 0
+    why: "Глаголы на *-ieren* всегда ударны на *-ie-*, как *reservieren* и *fotografieren* в следующих темах."
+  - type: choice
+    q: Где ударение в *der Geburtstag*?
+    options: [ge·BURTS·tag, GE·burts·tag]
+    answer: 0
+    why: "Приставка *ge-* безударна: ударение переходит на корень *Geburt*."
+  - type: choice
+    q: Как звучит *die Adresse*?
+    options: [a·DRES·se, A·dres·se]
+    answer: 0
+    why: "Не как русское «а́дрес»: по-немецки ударен второй слог."
