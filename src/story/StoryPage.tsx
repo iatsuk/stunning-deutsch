@@ -591,7 +591,14 @@ export function StoryPage() {
                         {phrases[phrase].de}{" "}
                         <PlayButton src={phraseAudio(phrases[phrase])} />
                       </strong>
-                      <div>{phrases[phrase].ru}</div>
+                      <div>
+                        {phrases[phrase].ru}
+                        {phrases[phrase].pl && (
+                          <>
+                            {" "}· мн. ч. <span lang="de">die {phrases[phrase].pl}</span>
+                          </>
+                        )}
+                      </div>
                       <small>{phrases[phrase].note}</small>
                       {mnemonic(phrases[phrase].de) && (
                         <span className="moin-hook">💡 {mnemonic(phrases[phrase].de)}</span>

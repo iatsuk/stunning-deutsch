@@ -112,6 +112,16 @@ test("story nouns are spoken with their plural, like lesson words", () => {
     if (/^(der|die|das) \p{L}+$/u.test(p.de)) assert.ok(p.pl, `нет множественного: ${id} ${p.de}`);
 });
 
+test("a story note adds something new, not the gender and plural shown next to it", () => {
+  // Род виден по артиклю, множественное — в подписи «мн. ч. die …» рядом с переводом
+  // (отзыв автора 6 ноября: «дверь · мн. ч. die Türen. Женский род: die Tür; во множественном числе die Türen»).
+  for (const [id, p] of Object.entries(phrases)) {
+    if (!p.pl) continue;
+    assert.ok(!p.note.includes(`die ${p.pl}`), `${id}: заметка повторяет множественное`);
+    assert.doesNotMatch(p.note, /(мужск|женск|средн)[а-я]* род|множественн/i, `${id}: заметка повторяет род или число`);
+  }
+});
+
 test("everything the player examines is named in German, once per chapter", () => {
   const units = new Set([...Object.keys(words), ...Object.values(phrases).map((p) => p.de)]);
   for (const chapter of sceneChapters) {
