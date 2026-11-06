@@ -1178,4 +1178,4 @@ li[data-done] .stop-dot {
   }
 }
 
-.moin-entry{margin:24px 0 32px;padding:22px 0;border-block:1px solid var(--line);max-width:680px}.moin-entry .kicker{font-size:10px}.moin-entry h3{margin:8px 0;font-family:var(--serif);font-size:25px;font-weight:500}.moin-entry p{font-size:15px;color:var(--muted);margin:8px 0}.moin-entry a{display:inline-block;margin-top:8px;color:var(--accent);font-size:15px;text-underline-offset:4px}
+.moin-entry{margin:24px 0 32px;padding:22px 0;border-block:1px solid var(--line);max-width:680px}.moin-entry .kicker{font-size:10px}.moin-entry h3{margin:8px 0;font-family:var(--serif);font-size:25px;font-weight:500}.moin-entry p{font-size:15px;color:var(--muted);margin:8px 0}.moin-entry a{display:inline-block;margin-top:8px;color:var(--accent);font-size:15px;text-underline-offset:4px}.moin-entry .moin-links{display:flex;flex-wrap:wrap;gap:4px 24px}
