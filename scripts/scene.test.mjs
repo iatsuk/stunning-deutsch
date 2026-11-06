@@ -215,6 +215,30 @@ test("the narration names known things in German: at least the share of the plot
   }
 });
 
+test("a new phrase in narration stands where Russian needs the nominative", () => {
+  // В первый раз выражение читается как «перевод + немецкое»: «печать, штамп der Stempel». Перевод
+  // стоит в именительном падеже, поэтому после «без», «по», «три» и других слов, которые требуют
+  // другого падежа, фраза ломается: «три печать». Согласование с прилагательным проверяется глазами.
+  const oblique = new Set(["без", "по", "у", "к", "ко", "от", "до", "для", "из", "при", "о", "об", "около", "после", "кроме", "среди", "два", "две", "три", "четыре", "пять", "шесть", "семь", "восемь", "девять", "десять"]);
+  const known = new Set();
+  for (const chapter of sceneChapters)
+    for (const beat of chapter.beats)
+      for (const n of flatNodes(nodes(beat))) {
+        if (n.t === "narr") {
+          const parts = n.text.split(/(\{[\w-]+\})/);
+          parts.forEach((part, i) => {
+            if (!part.startsWith("{")) return;
+            const id = part.slice(1, -1);
+            const fresh = !known.has(id) && !known.has(phrases[id].de);
+            known.add(id);
+            const word = parts[i - 1]?.trim().split(/\s+/).at(-1)?.toLowerCase();
+            assert.ok(!fresh || !oblique.has(word), `${beat.id}: «${word} ${phrases[id].ru}»`);
+          });
+        }
+        for (const w of shownWords([n])) known.add(w);
+      }
+});
+
 test("every new word is a lesson word and comes back in an action after it is heard", () => {
   // Основа слова без артикля и знаков: Hafen → hafe, kommen aus → komm.
   const stem = (word) => word.replace(/^(der|die|das) /, "").replace(/[?!.,]/g, "").toLowerCase().slice(0, 4);

@@ -145,7 +145,7 @@ const roof: SceneNode[] = [
     options: ["её мать и отца", "её детей", "её мужа"],
     answer: "её мать и отца",
   },
-  narr("В {nest} три пушистых Kinder. Край от Foto {moewe} подложила им, как одеяло. Без {leiter} его не достать."),
+  narr("В {nest} три пушистых Kinder. Край от Foto {moewe} подложила им, как одеяло. Нужна {leiter}, иначе его не достать."),
   {
     t: "look",
     task: "Осмотрите крышу снизу.",
@@ -322,7 +322,7 @@ const memories: SceneNode[] = [
         icon: "👓",
         optional: true,
         nodes: [
-          narr("Из-под двери 12 выезжает записка: «Meine Brille ist weg!!! Bitte!!!» Без {brille} Нильс не видит ни фото, ни экран."),
+          narr("Из-под двери 12 выезжает записка: «Meine Brille ist weg!!! Bitte!!!» Нильс потерял {brille} и не видит ни фото, ни экран."),
           {
             t: "look",
             task: "Поищите в коридоре гостевых комнат.",

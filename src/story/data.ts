@@ -219,10 +219,10 @@ export const phrases: Record<string, Phrase> = {
     note: "das Buch — книга, как в das Logbuch: род по последней части.",
   },
   stempel: {
-    ru: "печать, штамп",
+    ru: "штамп",
     de: "der Stempel",
     pl: "Stempel",
-    note: "Печать в офисе: фрау Петерсен ставит её на каждый формуляр.",
+    note: "Печать в офисе: фрау Петерсен ставит штамп на каждый формуляр.",
   },
   formular: {
     ru: "формуляр, бланк",
@@ -338,7 +338,7 @@ export const phrases: Record<string, Phrase> = {
     note: "Русское «эскиз» — то же слово.",
   },
   fleck: {
-    ru: "пятно, след",
+    ru: "след, пятно",
     de: "der Fleck",
     pl: "Flecken",
     note: "Ein Teefleck — след от чая.",

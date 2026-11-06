@@ -440,7 +440,7 @@ const napkin: SceneNode[] = [
   { t: "pic", src: "04-greta.jpg", alt: "Кафе у воды после обеда: Грета в комбинезоне в пятнах краски молча кладёт купюру на счёт; перед ней стакан колы и салфетка; Хауке и Дана смотрят на неё, рядом официант с подносом" },
   narr("Vier Uhr — время Kaffee und Kuchen. Вы снова в Café: вдруг Грета придёт. И она приходит. Садится к вам, карандаш за ухом."),
   kellner("Wieder eine Cola?", "Снова колу?"),
-  narr("Грета кивает. Хауке открывает рот для первого вопроса. Грета поднимает ладонь и пишет на {serviette} три слова."),
+  narr("Грета кивает. Хауке открывает рот для первого вопроса. Грета поднимает ладонь. Перед ней {serviette}, и на ней Грета пишет три слова."),
   { t: "gap", task: "Что написала Грета?", text: "Nicht ___, bitte.", options: ["fragen", "essen", "trinken"], answer: "fragen", ru: "Не спрашивайте, пожалуйста." },
   hauke("Okay. Keine Fragen. Kaffee und Kuchen!", "Ладно. Никаких вопросов. Кофе и пирог!"),
   narr("Für Hauke und Dana — Kaffee, für Sie — Tee, für Hauke und Sie — Kuchen, für Greta — Cola. Hunger у Даны нет."),

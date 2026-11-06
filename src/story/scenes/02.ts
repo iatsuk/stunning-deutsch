@@ -65,7 +65,7 @@ const countdown: SceneNode[] = [
     c: spot("Anhänger", ["Club Kiellinie|Gästezimmer 1…", "Nils H.|Hamburg", "Telefon: siehe Büro"], ["Gästezimmer 1…", "Telefon: siehe Büro"]),
   },
   { t: "type", rule: ["kennenlernen/endungen-1"], task: "Запишите в блокнот, что известно о Нильсе: «Нильс из Гамбурга».", answers: ["Nils kommt aus Hamburg.", "Er kommt aus Hamburg."], ru: "Нильс из Гамбурга." },
-  narr("Гостевые комнаты — {gaestezimmer} — с десятой по девятнадцатую. Номер на бирке начинается на 1, значит, подходит любая."),
+  narr("Каждая {gaestezimmer} с номером: с десятой по девятнадцатую. Номер на бирке начинается на 1, значит, подходит любая."),
   {
     t: "pick",
     task: "Что делать?",
@@ -223,7 +223,7 @@ const queue: SceneNode[] = [
 // Сцена 3 · развилка. Бросок: неприятность · Элиф · отпраздновать · die Postleitzahl · 6.
 const guestbook: SceneNode[] = [
   { t: "pic", src: "02-desk.jpg", alt: "Стол фрау Петерсен: гостевая книга, штампы, очки; в дверях Элиф с биноклем, на подоконнике чайка с кольцом на лапе" },
-  narr("Ваш номерок, dreiundzwanzig, горит на табло. Фрау Петерсен смотрит поверх очков. На столе {gaestebuch}, три {stempel} и ни одной лишней улыбки."),
+  narr("Ваш номерок, dreiundzwanzig, горит на табло. Фрау Петерсен смотрит поверх очков. На столе {gaestebuch} и {stempel} — целых три. Лишних улыбок нет."),
   petersen("Moin! Haben Sie Fragen?", "Здравствуйте! У вас есть вопросы?"),
   {
     t: "reply",
@@ -311,7 +311,7 @@ const guestbook: SceneNode[] = [
         icon: "🗂️",
         optional: true,
         nodes: [
-          narr("Справки о гостях — только по {formular} A38. Так заведено в клубе уже сорок лет."),
+          narr("Для справки о гостях нужен {formular} A38. Так заведено в клубе уже сорок лет."),
           petersen("Formular A achtunddreißig. Wie heißt Ihr Boot? Buchstabieren, bitte!", "Формуляр A38. Как называется ваша лодка? По буквам, пожалуйста!"),
           {
             t: "reply",
@@ -696,7 +696,7 @@ const evening: SceneNode[] = [
     answer: "краска для лодок",
   },
   { t: "gap", task: "Для чего эта краска?", text: "Das ist Farbe für ___.", options: ["Boote", "Brot", "Kuchen"], answer: "Boote", ru: "Это краска для лодок." },
-  narr("fest — «крепкий»: {wasserfest} — не боится воды. Лодочная краска. И тёмно-синяя, как пятна на комбинезоне Греты."),
+  narr("fest — «крепкий», вместе — {wasserfest}. Лодочная краска. И тёмно-синяя, как пятна на комбинезоне Греты."),
   {
     t: "pick",
     task: "Что из этого следует?",
