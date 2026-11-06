@@ -689,8 +689,8 @@ const ninety: SceneNode[] = [
   },
   {
     t: "game",
-    task: "Позвоните Нильсу, чтобы поздравить Opa. Номер — в блокноте.",
-    hint: "null, eins, fünf, eins – zweiunddreißig – vierundfünfzig – neunzehn.",
+    task: "Позвоните Нильсу, чтобы поздравить Opa. Его номер вы записали во второй день: null, eins, fünf, eins – zweiunddreißig – vierundfünfzig – neunzehn.",
+    hint: "zweiunddreißig — 32, vierundfünfzig — 54, neunzehn — 19: сначала единицы, потом десятки.",
     c: { kind: "code", length: 10, answer: "0151325419" },
   },
   {

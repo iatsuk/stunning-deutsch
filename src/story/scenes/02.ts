@@ -432,8 +432,13 @@ const gift: SceneNode[] = [
     c: gaps("Hallo!!! Ich ___ zwei Handys!!! Das Handy ist für dich!!! Greta ___ eine Frage: Wer bist du??? Wir ___ Pause!!! PIN: dreiundzwanzig – einundzwanzig!!! Nils", ["habe", "hat", "haben", "hast"], ["habe", "hat", "haben"]),
   },
   {
+    t: "clue",
+    title: "Записка Нильса",
+    text: "Hallo!!! Ich habe zwei Handys!!! Das Handy ist für dich!!! Greta hat eine Frage: Wer bist du??? Wir haben Pause!!! PIN: dreiundzwanzig – einundzwanzig!!! Nils",
+  },
+  {
     t: "game",
-    task: "Введите PIN из записки.",
+    task: "Введите PIN из записки: dreiundzwanzig – einundzwanzig.",
     hint: "Сначала единицы, потом десятки: dreiundzwanzig — 23, einundzwanzig — 21.",
     c: { kind: "code", length: 4, answer: "2321", label: "PIN" },
   },

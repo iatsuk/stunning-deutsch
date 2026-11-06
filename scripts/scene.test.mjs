@@ -215,6 +215,23 @@ test("the narration names known things in German: at least the share of the plot
   }
 });
 
+test("a number to dial or a PIN is on screen when it is asked for", () => {
+  // Номер или PIN берутся из того, что видно в этот момент: из задания или из реплики и улики после
+  // прошлого действия. Текст пройденной игры (записки) на экране уже не стоит, а подсказка
+  // появляется только после ошибки.
+  const number = /\b(null|eins|zwei|drei|vier|fünf|sechs|sieben|acht|neun|zehn|elf|zwölf)\b|zehn\b|zig\b/i;
+  for (const beat of allScenes) {
+    const all = flatNodes(nodes(beat)).filter((n) => n.t !== "go" && n.t !== "when" && n.t !== "pic");
+    all.forEach((n, i) => {
+      if (n.t !== "game" || n.c.kind !== "code") return;
+      const since = [];
+      for (let j = i - 1; j >= 0 && !ACTIONS.includes(all[j].t); j--) since.push(all[j]);
+      const shown = [n.task, ...since.map((x) => (x.t === "say" ? x.de : x.t === "clue" ? x.text : x.t === "narr" ? x.text : ""))].join(" ");
+      assert.match(shown, number, `${beat.id}: ${n.task}`);
+    });
+  }
+});
+
 test("a typing task asks for the answer, it does not show it", () => {
   // Подсказка под полем — смысл реплики, а не сама реплика; в тексте задания ответа тоже нет.
   // Номер кольца диктуется словами («Ha – E – El. Sieben, drei, null, fünf»), а пишется буквами и цифрами.
