@@ -1629,7 +1629,12 @@ export function Docks({
   );
 }
 
+/** Темп чайки живой: верный ответ её раззадоривает, и на следующее слово времени меньше
+ * (но не меньше `GULL_MIN`); урвав слово, она довольна и летит медленнее. Тот, кто справляется,
+ * получает азарт, а тот, кто ошибается, — время. */
 const GULL_SECONDS = 10;
+const GULL_RUSH = 1;
+const GULL_MIN = 6;
 const GULL_BONUS = 3;
 
 /** Компонент пересоздаётся на каждую попытку, поэтому таймер всегда начинается заново. */
@@ -1695,6 +1700,7 @@ export function Gull({
   const done = asList(value);
   const { current, postpone } = useQueue(c.words, seed, done);
   const [lost, setLost] = useState(0);
+  const [seconds, setSeconds] = useState(GULL_SECONDS);
   const [note, setNote] = useState("");
   const [tone, setTone] = useState<Tone>();
   // Чайка взлетает по кнопке: сначала спокойно прочитать задание.
@@ -1711,7 +1717,7 @@ export function Gull({
         <p className="moin-count">
           {done.length
             ? `Спасено: ${done.length} из ${c.words.length}. Продолжим?`
-            : `Слов: ${c.words.length}. На каждое — ${GULL_SECONDS} секунд.`}
+            : `Слов: ${c.words.length}, на первое — ${GULL_SECONDS} секунд. Верный ответ раззадоривает чайку, ошибка её успокаивает.`}
         </p>
         <button
           type="button"
@@ -1726,33 +1732,41 @@ export function Gull({
     setNote(message);
     setTone("bad");
     setLost((n) => n + 1);
+    setSeconds((s) => s + GULL_BONUS);
     miss(current);
     postpone(current);
   };
   return (
     <>
       <p className="moin-count">
-        Спасено: {done.length} из {c.words.length}
+        Спасено: {done.length} из {c.words.length} · {seconds} с на слово
       </p>
       <GullRound
         key={`${current}-${lost}`}
         word={current}
         words={c.words}
         seed={`${seed}-${done.length}-${lost}`}
-        seconds={GULL_SECONDS + lost * GULL_BONUS}
+        seconds={seconds}
         onLost={() =>
           lose(
-            `Чайка унесла ${current} (${wordInfo(current)?.ru}). Слово вернётся, времени станет больше.`,
+            `Чайка унесла ${current} (${wordInfo(current)?.ru}) и довольна добычей: дальше полетит медленнее. Слово вернётся.`,
           )
         }
         onPick={(word) => {
           if (word !== current)
             return lose(
-              `Это ${word} (${wordInfo(word)?.ru}). Нужно было ${current}. Слово вернётся.`,
+              `Это ${word} (${wordInfo(word)?.ru}). Нужно было ${current} — чайка урвала слово и полетит медленнее. Слово вернётся.`,
             );
           const next = [...done, word];
           say(wordInfo(word)?.audio);
-          setNote(`${word} — ${wordInfo(word)?.ru}`);
+          const faster = Math.max(GULL_MIN, seconds - GULL_RUSH);
+          const ru = wordInfo(word)?.ru ?? "";
+          setSeconds(faster);
+          setNote(
+            faster < seconds
+              ? `${word} — ${/[.!?…]$/.test(ru) ? ru : `${ru}.`} Чайка раззадорилась: следующее слово быстрее.`
+              : `${word} — ${ru}`,
+          );
           setTone("good");
           change(next);
           if (next.length === c.words.length) win();
