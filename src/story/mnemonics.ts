@@ -39,6 +39,12 @@ export const MNEMONICS: Record<string, string> = {
     "Handy — то, что всегда в руке (die Hand). Англичане так мобильный не называют: это немецкое слово.",
   "Auf Wiederhören!":
     "hören — слышать: «до нового слышания». По телефону друг друга не видно, поэтому не Wiedersehen.",
+  "die Geschwister":
+    "Ge- собирает всех вместе, а внутри — Schwester: братья и сёстры одним словом, как «сестринство» на всех.",
+  "die Brille":
+    "Brille — от Beryll, берилла: первые очки шлифовали из прозрачного камня. Очки по-немецки одна вещь — die Brille.",
+  "der Opa":
+    "Opa — «опа!»: так дедушка подхватывает внука на руки.",
 };
 
 export const mnemonic = (de: string) => MNEMONICS[de];

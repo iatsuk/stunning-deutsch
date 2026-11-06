@@ -1,0 +1,408 @@
+{
+  "date": "2026-11-06",
+  "scope": "Chapter 3 of the Moin scene prototype (src/story/scenes/03.ts): character lines, replays, lock phrases, oral practice and new story phrases with plurals",
+  "model": "k2-fsa/OmniVoice",
+  "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+  "candidatesPerPhrase": 3,
+  "asr": "openai/whisper-large-v3",
+  "notes": [
+    "Whisper writes numbers as digits (50, 55, 100, 20, 90); those takes say the numbers in words as written.",
+    "For 'Moin! Die Leiter? Ja … Moment!' two of three takes dropped 'Moin' and the third ended at -30.6 dB; six more seeds were generated and a complete take ending at -39.7 dB was kept.",
+    "One take of 'Lotte! Krümel! Psst! Hunde – nein! Nicht im Büro!' was cut off at the end (tails.py); a complete take was chosen.",
+    "tails.py passes on all 49 imported files (no fragment after the phrase, no clipped ending)."
+  ],
+  "files": [
+    {
+      "file": "d76113287a6d.m4a",
+      "text": "der Pinsel, die Pinsel",
+      "voice": "Anna",
+      "seed": 20480461,
+      "heard": "Der Pinsel, die Pinsel",
+      "endDb": -61.1
+    },
+    {
+      "file": "7c0202e1c378.m4a",
+      "text": "der Butterkuchen, die Butterkuchen",
+      "voice": "Anna",
+      "seed": 20397831,
+      "heard": "Der Butterkuchen, die Butterkuchen.",
+      "endDb": -63.2
+    },
+    {
+      "file": "e61b24c60e50.m4a",
+      "text": "das Nest, die Nester",
+      "voice": "Anna",
+      "seed": 20741902,
+      "heard": "Das Nest. Die Nester.",
+      "endDb": -62.7
+    },
+    {
+      "file": "b58c99e880da.m4a",
+      "text": "die Leiter, die Leitern",
+      "voice": "Anna",
+      "seed": 20461306,
+      "heard": "Die Leiter, die Leitern",
+      "endDb": -57.9
+    },
+    {
+      "file": "e2ddbfe505ca.m4a",
+      "text": "die Brille, die Brillen",
+      "voice": "Anna",
+      "seed": 20384136,
+      "heard": "Die Brille. Die Brillen.",
+      "endDb": -56.4
+    },
+    {
+      "file": "89e3507f4bef.m4a",
+      "text": "der Krümel, die Krümel",
+      "voice": "Anna",
+      "seed": 20378157,
+      "heard": "Der Krümel, die Krümel",
+      "endDb": -52.3
+    },
+    {
+      "file": "5d1d0ca0330d.m4a",
+      "text": "das Plakat, die Plakate",
+      "voice": "Anna",
+      "seed": 20537035,
+      "heard": "Das Plakat. Die Plakate.",
+      "endDb": -51.4
+    },
+    {
+      "file": "6e9c88641266.m4a",
+      "text": "Zehn! Noch zehn Tage! Und ein Foto von Nils!",
+      "voice": "Rocko",
+      "seed": 20482165,
+      "heard": "Zehn, noch zehn Tage und ein Foto von Nils.",
+      "endDb": -52.4
+    },
+    {
+      "file": "01fc862c3e73.m4a",
+      "text": "Das ist unser Opa! Und das ist unsere Oma!",
+      "voice": "Rocko",
+      "seed": 20709745,
+      "heard": "Das ist unser Opa und das ist unsere Oma.",
+      "endDb": -57.2
+    },
+    {
+      "file": "cacbd0d60cf8.m4a",
+      "text": "Der Junge ist sein Vater. Greta ist seine Schwester. Also auch ihr Vater!",
+      "voice": "Anna",
+      "seed": 21129735,
+      "heard": "Der Junge ist sein Vater, Greta ist seine Schwester, also auch ihr Vater.",
+      "endDb": -43.1
+    },
+    {
+      "file": "897087bf1871.m4a",
+      "text": "Nils … ich bin dein Opa!",
+      "voice": "Rocko",
+      "seed": 21067119,
+      "heard": "Nils, ich bin dein Opa.",
+      "endDb": -65.1
+    },
+    {
+      "file": "67818e9eefbb.m4a",
+      "text": "Nein, Hauke. Er ist nicht dein Opa. Er ist ihr Opa!",
+      "voice": "Anna",
+      "seed": 20483867,
+      "heard": "Nein Hauke, er ist nicht dein Opa, er ist ihr Opa.",
+      "endDb": -51.2
+    },
+    {
+      "file": "3f71bada7eba.m4a",
+      "text": "Butterkuchen! Das ist Oma Hansens Kuchen!",
+      "voice": "Reed",
+      "seed": 20996826,
+      "heard": "Butterkuchen, das ist Oma Hansens Kuchen.",
+      "endDb": -53.1
+    },
+    {
+      "file": "2b50b2f011d5.m4a",
+      "text": "Das ist ihre Familie! Das ist ihre Mutter. Und das ist ihr Vater!",
+      "voice": "Flo",
+      "seed": 20716725,
+      "heard": "Das ist ihre Familie, das ist ihre Mutter und das ist ihr Vater.",
+      "endDb": -44.4
+    },
+    {
+      "file": "83c21bc8b0bd.m4a",
+      "text": "Die Mutter hat drei Kinder. Unsere Möwe hat drei Geschwister!",
+      "voice": "Flo",
+      "seed": 20300300,
+      "heard": "Die Mutter hat drei Kinder. Unsere Möwe hat drei Geschwister.",
+      "endDb": -53.6
+    },
+    {
+      "file": "fffdcd11504f.m4a",
+      "text": "Moin! Die Leiter? Ja … Moment!",
+      "voice": "Sandy",
+      "seed": 20557500,
+      "heard": "Moin, die Leiter? Ja, Moment.",
+      "endDb": -39.7
+    },
+    {
+      "file": "52d40bfe6fa5.m4a",
+      "text": "Hund? Nein! Das ist kein Hund. Das ist … mein Handy!",
+      "voice": "Sandy",
+      "seed": 21045347,
+      "heard": "Hund? Nein, das ist kein Hund. Das ist mein Handy.",
+      "endDb": -45.3
+    },
+    {
+      "file": "dd3fc46f7d60.m4a",
+      "text": "Ein Freund von Opa? Wer ist das?",
+      "voice": "Anna",
+      "seed": 20580096,
+      "heard": "Ein Freund von Opa, wer ist das?",
+      "endDb": -54.0
+    },
+    {
+      "file": "2c177b6b03d2.m4a",
+      "text": "Frau Petersen hat alle Namen. Und Mateo hat das Rezept!",
+      "voice": "Rocko",
+      "seed": 20749793,
+      "heard": "Frau Petersen hat alle Namen und Matteo hat das Rezept.",
+      "endDb": -52.0
+    },
+    {
+      "file": "5ad914d49559.m4a",
+      "text": "Fünfzig Jahre? Ich bin fünfundfünfzig!",
+      "voice": "Sandy",
+      "seed": 21156119,
+      "heard": "50 Jahre, ich bin 55.",
+      "endDb": -52.6
+    },
+    {
+      "file": "8d8f8ca990b0.m4a",
+      "text": "Heinrich Hansen: verheiratet, ein Sohn. Seine Frau ist Hilde.",
+      "voice": "Sandy",
+      "seed": 21039470,
+      "heard": "Heinrich Hansen verheiratet ein Sohn, seine Frau ist Hilde.",
+      "endDb": -45.2
+    },
+    {
+      "file": "c4c228eae3e3.m4a",
+      "text": "Das ist Oma Hansens Rezept. Ihr Kuchen ist super. Mein Kuchen ist … auch super!",
+      "voice": "Reed",
+      "seed": 20450866,
+      "heard": "Das ist Oma Hansens Rezept. Ihr Kuchen ist super. Mein Kuchen ist auch super.",
+      "endDb": -42.3
+    },
+    {
+      "file": "ec0828d605d3.m4a",
+      "text": "Für hundert? Nein, nein. Das ist kein Kuchen. Das ist … Brot!",
+      "voice": "Reed",
+      "seed": 20285201,
+      "heard": "Für 100? Nein, nein, das ist kein Kuchen, das ist Brot!",
+      "endDb": -45.7
+    },
+    {
+      "file": "2a462ddf1853.m4a",
+      "text": "Kein Brot für Möwen, bitte!",
+      "voice": "Flo",
+      "seed": 20941730,
+      "heard": "Kein Brot für Möwen, bitte.",
+      "endDb": -57.8
+    },
+    {
+      "file": "22e4cb99066a.m4a",
+      "text": "Opa, Oma, ein Sohn, ein Freund … und das Schild.",
+      "voice": "Anna",
+      "seed": 20952394,
+      "heard": "Opa, Oma, ein Sohn, ein Freund und das Schild.",
+      "endDb": -50.4
+    },
+    {
+      "file": "a7069abf7a4d.m4a",
+      "text": "Das ist Lotte. Sie ist meine Freundin!",
+      "voice": "Flo",
+      "seed": 21151260,
+      "heard": "Das ist Lotte, sie ist meine Freundin.",
+      "endDb": -47.9
+    },
+    {
+      "file": "1ad2ea3eb124.m4a",
+      "text": "Freundin? Elif hat eine Freundin?",
+      "voice": "Rocko",
+      "seed": 20692484,
+      "heard": "Freundin? Elif hat eine Freundin?",
+      "endDb": -34.9
+    },
+    {
+      "file": "23275b317768.m4a",
+      "text": "Das ist meine Mutter. Sie ist im Club. Und das ist mein Hund Krümel.",
+      "voice": "Flo",
+      "seed": 20942054,
+      "heard": "Das ist meine Mutter. Sie ist im Club. Und das ist mein Hund Krümel.",
+      "endDb": -50.7
+    },
+    {
+      "file": "bbfe301274a2.m4a",
+      "text": "Kieler Woche: Der Club hat Geburtstag. Meine Freunde und ich sind da. Zwanzig Kinder!",
+      "voice": "Flo",
+      "seed": 20872113,
+      "heard": "Kieler Woche. Der Club hat Geburtstag. Meine Freunde und ich sind da. 20 Kinder.",
+      "endDb": -47.9
+    },
+    {
+      "file": "a80d39c462fb.m4a",
+      "text": "Lotte! Krümel! Psst! Hunde – nein! Nicht im Büro!",
+      "voice": "Sandy",
+      "seed": 20473947,
+      "heard": "Lotte, Krümel, Psst, Hunde nein, nicht im Büro.",
+      "endDb": -35.7
+    },
+    {
+      "file": "5f098017ebaf.m4a",
+      "text": "Lotte fragt: Hast du Geschwister?",
+      "voice": "Flo",
+      "seed": 20664638,
+      "heard": "Lotte fragt, hast du Geschwister?",
+      "endDb": -52.8
+    },
+    {
+      "file": "0c1c555ec8d0.m4a",
+      "text": "Moin, Club! Das ist Oma Hansens Kuchen. Und das ist ihre Enkelin: Greta!",
+      "voice": "Reed",
+      "seed": 21153776,
+      "heard": "Moin Club, das ist Oma Hansens Kuchen und das ist ihre Enkelin Greta.",
+      "endDb": -42.1
+    },
+    {
+      "file": "610115b61b1b.m4a",
+      "text": "Greta ist die Enkelin. Nils ist der Enkel. Und Peter ist ihr Vater.",
+      "voice": "Anna",
+      "seed": 20394457,
+      "heard": "Greta ist die Enkelin, Nils ist der Enkel und Peter ist ihr Vater.",
+      "endDb": -43.4
+    },
+    {
+      "file": "83a66bb06c6d.m4a",
+      "text": "Unser Schild? Greta hat das Schild! Ganz klar!",
+      "voice": "Rocko",
+      "seed": 20802940,
+      "heard": "Unser Schild? Greta hat das Schild, ganz klar!",
+      "endDb": -60.1
+    },
+    {
+      "file": "3d4956699e6c.m4a",
+      "text": "Krümel! Nils und Greta – wie Hänsel und Gretel!",
+      "voice": "Rocko",
+      "seed": 20930380,
+      "heard": "Krümel, Nils und Greta wie Hänsel und Gretel.",
+      "endDb": -55.7
+    },
+    {
+      "file": "3c6c80a7846c.m4a",
+      "text": "Und mein Kuchen? Ist er gut?",
+      "voice": "Reed",
+      "seed": 20873450,
+      "heard": "Und mein Kuchen? Ist er gut?",
+      "endDb": -61.2
+    },
+    {
+      "file": "12c9caf26400.m4a",
+      "text": "Das ist ihre Enkelin.",
+      "voice": "Anna",
+      "seed": 20886270,
+      "heard": "Das ist ihre Enkelin.",
+      "endDb": -62.7
+    },
+    {
+      "file": "38940d822450.m4a",
+      "text": "Das ist unser Kuchen.",
+      "voice": "Anna",
+      "seed": 21224910,
+      "heard": "Das ist unser Kuchen.",
+      "endDb": -56.7
+    },
+    {
+      "file": "bddc001fbc11.m4a",
+      "text": "Das sind meine Enkel.",
+      "voice": "Anna",
+      "seed": 20803488,
+      "heard": "Das sind meine Enkel.",
+      "endDb": -53.6
+    },
+    {
+      "file": "dc930edf7c1e.m4a",
+      "text": "Neunzig! Alles Gute, Opa Hansen!",
+      "voice": "Rocko",
+      "seed": 21107420,
+      "heard": "90. Alles Gute, Opa Hansen.",
+      "endDb": -60.0
+    },
+    {
+      "file": "74f5e3a6049a.m4a",
+      "text": "Das ist unsere Karte! Hundert Namen. Und ein Wort: Moin.",
+      "voice": "Rocko",
+      "seed": 20386665,
+      "heard": "Das ist unsere Karte, 100 Namen und ein Wort Moin.",
+      "endDb": -61.4
+    },
+    {
+      "file": "9a6e8755b363.m4a",
+      "text": "Herr Jensen und Opa Hansen? Freunde?",
+      "voice": "Anna",
+      "seed": 20881731,
+      "heard": "Herr Jensen und Opa Hansen, Freunde?",
+      "endDb": -35.6
+    },
+    {
+      "file": "c33d1b2d5b8b.m4a",
+      "text": "Gute Nacht, Möwen! Gute Nacht, Familie!",
+      "voice": "Flo",
+      "seed": 20655625,
+      "heard": "Gute Nacht, Möwen. Gute Nacht, Familie.",
+      "endDb": -42.1
+    },
+    {
+      "file": "37f54dc8d4f4.m4a",
+      "text": "Das ist meine Mutter. Das ist mein Vater. Das sind meine Eltern.",
+      "voice": "Anna",
+      "seed": 20799410,
+      "heard": "Das ist meine Mutter. Das ist mein Vater. Das sind meine Eltern.",
+      "endDb": -42.9
+    },
+    {
+      "file": "50d2b67d11f7.m4a",
+      "text": "Elif, ist das deine Möwe?",
+      "voice": "Rocko",
+      "seed": 20265175,
+      "heard": "Elif, ist das deine Möwe?",
+      "endDb": -70.9
+    },
+    {
+      "file": "5e5baa60b6ba.m4a",
+      "text": "Nein! Sie ist nicht meine Möwe. Sie ist frei!",
+      "voice": "Flo",
+      "seed": 20760858,
+      "heard": "Nein, sie ist nicht meine Möwe. Sie ist frei.",
+      "endDb": -48.3
+    },
+    {
+      "file": "3866efacf782.m4a",
+      "text": "Ich habe auch ein Foto. Das ist meine Tochter!",
+      "voice": "Sandy",
+      "seed": 21186688,
+      "heard": "Ich habe auch ein Foto. Das ist meine Tochter.",
+      "endDb": -59.6
+    },
+    {
+      "file": "4c7bc11c3a08.m4a",
+      "text": "Lotte hat keine Geschwister. Aber sie hat Krümel!",
+      "voice": "Anna",
+      "seed": 20809879,
+      "heard": "Lotte hat keine Geschwister, aber sie hat Krümel.",
+      "endDb": -54.1
+    },
+    {
+      "file": "01841207189d.m4a",
+      "text": "Greta Hansen? Ihr Opa ist auf der Ehrentafel!",
+      "voice": "Sandy",
+      "seed": 21026813,
+      "heard": "Greta Hansen, Ihr Opa ist auf der Ehrentafel.",
+      "endDb": -48.0
+    }
+  ]
+}
