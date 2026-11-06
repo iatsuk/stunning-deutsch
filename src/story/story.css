@@ -286,6 +286,13 @@
   font-size: 12px;
   color: var(--muted);
 }
+/* В прототипе сцен день стоит сразу под полосой главы, а номер сцены — над её ячейками. */
+.moin-preview .moin-day {
+  margin-top: 18px;
+}
+.moin-preview .moin-chapter-title {
+  margin-top: 14px;
+}
 .moin-day b {
   font-family: var(--mono);
   font-weight: 500;

@@ -183,11 +183,20 @@ export function ScenePreview() {
         </nav>
         <div className="moin-layout moin-preview">
           <section className="moin-scene" aria-label={beat.title}>
+            {/* Сверху вниз — от крупного к мелкому: глава и её день, сцена, затем шаги сцены. */}
             <div className="moin-scene-top">
-              <span>{chapter.place}</span>
               <span>
-                Сцена {save.at - first + 1} / {chapter.beats.length}
+                Глава {ci + 1} · {chapter.title}
               </span>
+              <span>{chapter.place}</span>
+            </div>
+            {chapter.day && (
+              <div className="moin-day">
+                <b lang="de">{chapter.day.de}</b> · {chapter.day.ru}
+              </div>
+            )}
+            <div className="moin-chapter-title">
+              Сцена {save.at - first + 1} / {chapter.beats.length}
             </div>
             <ol className="moin-steps" aria-label="Сцены главы">
               {chapter.beats.map((s, k) => {
@@ -206,14 +215,6 @@ export function ScenePreview() {
                 );
               })}
             </ol>
-            <div className="moin-chapter-title">
-              Глава {ci + 1} · {chapter.title}
-            </div>
-            {chapter.day && (
-              <div className="moin-day">
-                <b lang="de">{chapter.day.de}</b> · {chapter.day.ru}
-              </div>
-            )}
             <h2>{beat.title}</h2>
             {beat.pov && <p className="moin-pov">Тем временем · {beat.pov}</p>}
             <p className="moin-preview-lede">{beat.prompt}</p>
