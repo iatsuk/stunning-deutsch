@@ -45,6 +45,12 @@ export const MNEMONICS: Record<string, string> = {
     "Brille — от Beryll, берилла: первые очки шлифовали из прозрачного камня. Очки по-немецки одна вещь — die Brille.",
   "der Opa":
     "Opa — «опа!»: так дедушка подхватывает внука на руки.",
+  "der Kellner":
+    "В старых русских романах официанта так и звали — «кельнер». Слово немецкое: der Kellner.",
+  "die Rechnung":
+    "Rechnung — «рехнуться»: от счёта в кафе у воды можно и рехнуться. Считать — rechnen.",
+  "das Tablett":
+    "Tablett — не таблетка (die Tablette), а поднос: на нём таблетки не носят, а вот Fischbrötchen чайка с него уносит.",
 };
 
 export const mnemonic = (de: string) => MNEMONICS[de];

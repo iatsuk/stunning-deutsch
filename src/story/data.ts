@@ -313,6 +313,36 @@ export const phrases: Record<string, Phrase> = {
     pl: "Karten",
     note: "Женский род: die Karte — и открытка, и карточка, и билет. Открытка ко дню рождения — die Geburtstagskarte.",
   },
+  stand: {
+    ru: "ларёк",
+    de: "der Stand",
+    pl: "Stände",
+    note: "Мужской род: der Stand, во множественном die Stände. Ларёк или палатка: на Kieler Woche вдоль воды стоят сотни Stände.",
+  },
+  tablett: {
+    ru: "поднос",
+    de: "das Tablett",
+    pl: "Tabletts",
+    note: "Средний род: das Tablett, во множественном die Tabletts. Не путать с die Tablette — таблетка.",
+  },
+  serviette: {
+    ru: "салфетка",
+    de: "die Serviette",
+    pl: "Servietten",
+    note: "Женский род: die Serviette, во множественном die Servietten. Почти как по-русски.",
+  },
+  skizze: {
+    ru: "набросок, эскиз",
+    de: "die Skizze",
+    pl: "Skizzen",
+    note: "Женский род: die Skizze, во множественном die Skizzen. Русское «эскиз» — то же слово.",
+  },
+  fleck: {
+    ru: "пятно, след",
+    de: "der Fleck",
+    pl: "Flecken",
+    note: "Мужской род: der Fleck, во множественном die Flecken. Ein Teefleck — след от чая.",
+  },
   neu: {
     ru: "Вы новичок. Вы видите всё.",
     de: "Sie sind neu. Sie sehen alles.",

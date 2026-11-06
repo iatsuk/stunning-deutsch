@@ -1,0 +1,488 @@
+{
+  "date": "2026-11-06",
+  "scope": "Chapter 4 of the Moin scene prototype (src/story/scenes/04.ts): character lines, replays, waiter chat, lock, oral practice and new story phrases with plurals",
+  "model": "k2-fsa/OmniVoice",
+  "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+  "candidatesPerPhrase": 3,
+  "asr": "openai/whisper-large-v3",
+  "notes": [
+    "Whisper writes numbers as digits (4, 7, 10, 18,30); every such take was compared by hand and says the numbers in words as written.",
+    "Hauke's line about Mateo and Greta lost words in every take: OmniVoice fixes the length by the text, and the many short exclamations did not fit. Nine takes of the first wording and three of a second one failed; the final wording with commas ('Greta im Café, Mateo mit Kaffee – Mateo und Greta, ganz klar!') came out complete in all three takes.",
+    "For 'Tee? Greta trinkt Cola. …' Whisper heard 'T.' instead of 'Tee?' in two of three takes, and the third ended at -32.2 dB; three more seeds were generated and a take where Whisper hears 'Tee?' and the end is at -43.5 dB was kept.",
+    "tails.py passes on all 59 imported files (no fragment after the phrase, no clipped ending)."
+  ],
+  "files": [
+    {
+      "file": "2cb11d85bc28.m4a",
+      "text": "das Tablett, die Tabletts",
+      "voice": "Anna",
+      "seed": 20398280,
+      "heard": "Das Tablett, die Tabletts.",
+      "endDb": -67.0
+    },
+    {
+      "file": "d935567d3ce1.m4a",
+      "text": "die Serviette, die Servietten",
+      "voice": "Anna",
+      "seed": 20811184,
+      "heard": "Die Serviette, die Servietten",
+      "endDb": -55.2
+    },
+    {
+      "file": "b8ffb02cbd0d.m4a",
+      "text": "die Skizze, die Skizzen",
+      "voice": "Anna",
+      "seed": 21170123,
+      "heard": "Die Skizze, die Skizzen",
+      "endDb": -68.3
+    },
+    {
+      "file": "9081fec16507.m4a",
+      "text": "der Fleck, die Flecken",
+      "voice": "Anna",
+      "seed": 20544965,
+      "heard": "Der Fleck, die Flecken.",
+      "endDb": -67.2
+    },
+    {
+      "file": "216c0d918103.m4a",
+      "text": "Noch neun Tage! Und hier ist schon Kieler Woche!",
+      "voice": "Rocko",
+      "seed": 21100993,
+      "heard": "Noch neun Tage und hier ist schon Kieler Woche.",
+      "endDb": -61.8
+    },
+    {
+      "file": "974f2e3a42a4.m4a",
+      "text": "Moin! Kaffee für alle!",
+      "voice": "Reed",
+      "seed": 21041668,
+      "heard": "Moin, Kaffee für alle!",
+      "endDb": -57.5
+    },
+    {
+      "file": "04c195996533.m4a",
+      "text": "Tee? Nein. Kaffee? Ja.",
+      "voice": "Reed",
+      "seed": 20334193,
+      "heard": "Tee? Nein, Kaffee? Ja.",
+      "endDb": -65.9
+    },
+    {
+      "file": "0b3d3fc04146.m4a",
+      "text": "Moin! Mein Döner-Stand – hier? Der Platz ist super!",
+      "voice": "Shelley",
+      "seed": 20751684,
+      "heard": "Moin, mein Döner stand hier, der Platz ist super.",
+      "endDb": -45.2
+    },
+    {
+      "file": "8724fdb0488a.m4a",
+      "text": "Nicht hier. Hier ist das Schild! Der Döner ist da.",
+      "voice": "Rocko",
+      "seed": 21029913,
+      "heard": "Nicht hier. Hier ist das Schild. Der Döner ist da.",
+      "endDb": -56.3
+    },
+    {
+      "file": "845c95b7345c.m4a",
+      "text": "Möchten Sie einen Döner?",
+      "voice": "Shelley",
+      "seed": 20930364,
+      "heard": "Möchten Sie einen Döner?",
+      "endDb": -52.1
+    },
+    {
+      "file": "903272f07ed9.m4a",
+      "text": "Ich? Ich bin hier! Mit Kaffee!",
+      "voice": "Reed",
+      "seed": 20389305,
+      "heard": "Ich, ich bin hier. Mit Kaffee.",
+      "endDb": -60.5
+    },
+    {
+      "file": "5f33779306f0.m4a",
+      "text": "Guten Morgen! Was möchten Sie?",
+      "voice": "Eddy",
+      "seed": 20364031,
+      "heard": "Guten Morgen, was möchten Sie?",
+      "endDb": -58.9
+    },
+    {
+      "file": "de7a847a1784.m4a",
+      "text": "Ein Kaffee für alle! Und ein Kuchen!",
+      "voice": "Reed",
+      "seed": 21239251,
+      "heard": "Ein Kaffee für alle und ein Kuchen.",
+      "endDb": -47.1
+    },
+    {
+      "file": "1cbfcf770438.m4a",
+      "text": "Einen Kaffee und ein Stück Kuchen, bitte!",
+      "voice": "Rocko",
+      "seed": 20291702,
+      "heard": "Einen Kaffee und ein Stück Kuchen, bitte.",
+      "endDb": -61.5
+    },
+    {
+      "file": "a2d261ca3a08.m4a",
+      "text": "Einen Kaffee, bitte. Kuchen? Nein, danke. Ich habe keinen Hunger.",
+      "voice": "Anna",
+      "seed": 20743895,
+      "heard": "Einen Kaffee bitte. Kuchen. Nein, danke. Ich habe keinen Hunger.",
+      "endDb": -42.1
+    },
+    {
+      "file": "24ae2793ca94.m4a",
+      "text": "Die Möwe bezahlt! Mit Papier?",
+      "voice": "Anna",
+      "seed": 21175459,
+      "heard": "Die Möwe bezahlt. Mit Papier.",
+      "endDb": -43.4
+    },
+    {
+      "file": "6fb03f6c5f1c.m4a",
+      "text": "Zwei! Zimmer zwölf! Danke, Möwe. Aber das ist nicht neu.",
+      "voice": "Rocko",
+      "seed": 21255100,
+      "heard": "Zwei Zimmer zwölf, danke Möwe. Aber das ist nicht neu.",
+      "endDb": -56.6
+    },
+    {
+      "file": "0b37774c5677.m4a",
+      "text": "Tisch vier? Die Frau nimmt eine Cola. Der Mann möchte keinen Kaffee. Er nimmt einen Tee.",
+      "voice": "Eddy",
+      "seed": 20859415,
+      "heard": "Tisch 4? Die Frau nimmt eine Cola. Der Mann möchte keinen Kaffee. Er nimmt einen Tee.",
+      "endDb": -53.6
+    },
+    {
+      "file": "749ca140cc83.m4a",
+      "text": "Er sagt nichts, kein Wort! Er zeigt auf die Speisekarte: Cola? Nein – Tee.",
+      "voice": "Eddy",
+      "seed": 20359651,
+      "heard": "Er sagt nichts, kein Wort. Er zeigt auf die Speisekarte Cola, nein Tee.",
+      "endDb": -58.0
+    },
+    {
+      "file": "f82c5101b9db.m4a",
+      "text": "Keinen Kaffee? Das bin ich nicht!",
+      "voice": "Reed",
+      "seed": 20586026,
+      "heard": "Keinen Kaffee, das bin ich nicht.",
+      "endDb": -67.5
+    },
+    {
+      "file": "de6ac0cee2ac.m4a",
+      "text": "Und Sie? Was möchten Sie?",
+      "voice": "Eddy",
+      "seed": 20944588,
+      "heard": "Und Sie? Was möchten Sie?",
+      "endDb": -56.8
+    },
+    {
+      "file": "0d2e64cb1c5d.m4a",
+      "text": "Und ein Stück Kuchen?",
+      "voice": "Eddy",
+      "seed": 20950397,
+      "heard": "Und ein Stück Kuchen.",
+      "endDb": -43.8
+    },
+    {
+      "file": "cabe38880fe8.m4a",
+      "text": "Nils! Er ist ihr Bruder. Nils und Greta im Café – ganz klar!",
+      "voice": "Rocko",
+      "seed": 20314918,
+      "heard": "Nils. Er ist ihr Bruder. Nils und Greta im Café, ganz klar.",
+      "endDb": -57.8
+    },
+    {
+      "file": "e0f1b241b440.m4a",
+      "text": "Moin moin! Greta? Im Café? Mit zehn Männern!",
+      "voice": "Sandy",
+      "seed": 20667454,
+      "heard": "Moin Moin Greta, im Café mit 10 Männern.",
+      "endDb": -45.2
+    },
+    {
+      "file": "aa7f92d094c5.m4a",
+      "text": "Na gut … Ein Mann. Er ist groß. Mehr nicht.",
+      "voice": "Sandy",
+      "seed": 20988483,
+      "heard": "Na gut, ein Mann, er ist groß, mehr nicht.",
+      "endDb": -47.6
+    },
+    {
+      "file": "1177b3e0363b.m4a",
+      "text": "Und Nils! Er versteckt etwas! Unter der Jacke!",
+      "voice": "Sandy",
+      "seed": 20872889,
+      "heard": "Und Nils, er versteckt etwas unter der Jacke.",
+      "endDb": -42.2
+    },
+    {
+      "file": "dcbf6bf47b3c.m4a",
+      "text": "Zwei Fischbrötchen? Das macht sieben Euro.",
+      "voice": "Sandy",
+      "seed": 20317643,
+      "heard": "Zwei Fischbrötchen? Das macht 7 Euro.",
+      "endDb": -53.3
+    },
+    {
+      "file": "7145c18d2f07.m4a",
+      "text": "Tee, kein Kaffee. Groß. Und kein Wort.",
+      "voice": "Anna",
+      "seed": 21206358,
+      "heard": "Tee kein Kaffee groß und kein Wort.",
+      "endDb": -43.5
+    },
+    {
+      "file": "62eb896a80e2.m4a",
+      "text": "Tee und kein Wort … Das kenne ich. Aber woher?",
+      "voice": "Rocko",
+      "seed": 20563953,
+      "heard": "Tee und kein Wort, das kenne ich, aber woher?",
+      "endDb": -59.1
+    },
+    {
+      "file": "2ccee818873b.m4a",
+      "text": "Drei Eier, zwei Tassen Milch … und Butter. Viel Butter!",
+      "voice": "Reed",
+      "seed": 21075658,
+      "heard": "Drei Eier, zwei Tassen Milch und Butter. Viel Butter.",
+      "endDb": -49.5
+    },
+    {
+      "file": "55f00cf36182.m4a",
+      "text": "Gemüse von Greta! Tomaten, Karotten … aber keine Zwiebeln?",
+      "voice": "Reed",
+      "seed": 21057745,
+      "heard": "Gemüse von Greta. Tomaten, Karotten, aber keine Zwiebeln?",
+      "endDb": -43.1
+    },
+    {
+      "file": "f0c67f1c3ca4.m4a",
+      "text": "Mateo! Was ist das? Ein Kuchen?",
+      "voice": "Rocko",
+      "seed": 21008836,
+      "heard": "Matteo, was ist das? Ein Kuchen?",
+      "endDb": -59.5
+    },
+    {
+      "file": "6037b131cb7a.m4a",
+      "text": "Kuchen? Nein! Das ist Brot. Brot für … die Möwen!",
+      "voice": "Reed",
+      "seed": 20575224,
+      "heard": "Kuchen? Nein, das ist Brot. Brot für die Möwen.",
+      "endDb": -46.1
+    },
+    {
+      "file": "c39283678a3e.m4a",
+      "text": "Wieder eine Cola?",
+      "voice": "Eddy",
+      "seed": 20519292,
+      "heard": "Wieder eine Cola.",
+      "endDb": -59.5
+    },
+    {
+      "file": "7075546e85df.m4a",
+      "text": "Okay. Keine Fragen. Kaffee und Kuchen!",
+      "voice": "Rocko",
+      "seed": 20274943,
+      "heard": "Okay, keine Fragen, Kaffee und Kuchen.",
+      "endDb": -59.2
+    },
+    {
+      "file": "faef3f176989.m4a",
+      "text": "Das macht achtzehn Euro dreißig.",
+      "voice": "Eddy",
+      "seed": 20895640,
+      "heard": "Das macht 18,30 Euro.",
+      "endDb": -57.6
+    },
+    {
+      "file": "1787fe473a5f.m4a",
+      "text": "Danke, Greta! … Sie bezahlt alles und sagt nichts.",
+      "voice": "Anna",
+      "seed": 20381533,
+      "heard": "Danke, Greta. Sie bezahlt alles und sagt nichts.",
+      "endDb": -61.9
+    },
+    {
+      "file": "ee3743f54dc7.m4a",
+      "text": "Ein Schild! Sie macht ein neues Schild! Eine Kopie!",
+      "voice": "Rocko",
+      "seed": 21038533,
+      "heard": "Ein Schild. Sie macht ein neues Schild. Eine Kopie.",
+      "endDb": -60.8
+    },
+    {
+      "file": "8e1bb5f4c97b.m4a",
+      "text": "Tee? Greta trinkt Cola. Die Serviette ist von Tisch vier!",
+      "voice": "Anna",
+      "seed": 21272343,
+      "heard": "Tee? Greta trinkt Cola. Die Serviette ist von Tisch 4.",
+      "endDb": -43.5
+    },
+    {
+      "file": "31a53da01c96.m4a",
+      "text": "Also: Der Mann trinkt Tee. Er möchte keinen Kaffee. Er ist groß.",
+      "voice": "Anna",
+      "seed": 20537061,
+      "heard": "Also, der Mann trinkt Tee, er möchte keinen Kaffee, er ist groß.",
+      "endDb": -62.9
+    },
+    {
+      "file": "aba472824392.m4a",
+      "text": "Herr Jensen trinkt nur Tee. Aber Herr Jensen geht nie ins Café. Nie!",
+      "voice": "Rocko",
+      "seed": 20394785,
+      "heard": "Herr Jensen trinkt nur Tee, aber Herr Jensen geht nie ins Café, nie.",
+      "endDb": -60.4
+    },
+    {
+      "file": "d47a3099c35f.m4a",
+      "text": "Tee.",
+      "voice": "Grandpa",
+      "seed": 20758877,
+      "heard": "Tee",
+      "endDb": -67.4
+    },
+    {
+      "file": "522cd66ec004.m4a",
+      "text": "Er spricht! Ein Wort – und das Wort ist nicht Moin!",
+      "voice": "Rocko",
+      "seed": 20897858,
+      "heard": "Er spricht, ein Wort, und das Wort ist nicht Moin.",
+      "endDb": -58.0
+    },
+    {
+      "file": "fbc06ec758a3.m4a",
+      "text": "Brot für alle! Mit Butter und Zucker. Das ist kein Kuchen!",
+      "voice": "Reed",
+      "seed": 21111747,
+      "heard": "Brot für alle. Mit Butter und Zucker. Das ist kein Kuchen.",
+      "endDb": -50.1
+    },
+    {
+      "file": "e98f202bbbce.m4a",
+      "text": "Er möchte keinen Kaffee.",
+      "voice": "Anna",
+      "seed": 20609036,
+      "heard": "Er möchte keinen Kaffee.",
+      "endDb": -59.1
+    },
+    {
+      "file": "c58d0bf1bdf0.m4a",
+      "text": "Sie nimmt eine Cola.",
+      "voice": "Anna",
+      "seed": 20729646,
+      "heard": "Sie nimmt eine Cola.",
+      "endDb": -66.4
+    },
+    {
+      "file": "1fd9bea61d96.m4a",
+      "text": "Greta bezahlt alles.",
+      "voice": "Anna",
+      "seed": 21198740,
+      "heard": "Greta bezahlt alles.",
+      "endDb": -51.4
+    },
+    {
+      "file": "2fbaf526fe45.m4a",
+      "text": "Moin! Was möchtet ihr essen und trinken?",
+      "voice": "Shelley",
+      "seed": 20664852,
+      "heard": "Moin, was möchtet ihr essen und trinken?",
+      "endDb": -36.7
+    },
+    {
+      "file": "abd2d696c8a2.m4a",
+      "text": "Drei Döner und drei Cola!",
+      "voice": "Rocko",
+      "seed": 20956785,
+      "heard": "Drei Döner und drei Cola.",
+      "endDb": -63.8
+    },
+    {
+      "file": "199e996053a0.m4a",
+      "text": "Hauke! Ich esse kein Fleisch.",
+      "voice": "Anna",
+      "seed": 21030942,
+      "heard": "Hauke, ich esse kein Fleisch.",
+      "endDb": -51.5
+    },
+    {
+      "file": "cdc512d2491f.m4a",
+      "text": "Und ich trinke keine Cola. Einen Saft, bitte!",
+      "voice": "Flo",
+      "seed": 20291502,
+      "heard": "Und ich trinke keine Cola. Einen Saft, bitte.",
+      "endDb": -43.8
+    },
+    {
+      "file": "a8f1b145ef9c.m4a",
+      "text": "Guten Appetit!",
+      "voice": "Shelley",
+      "seed": 21012122,
+      "heard": "Guten Appetit!",
+      "endDb": -63.8
+    },
+    {
+      "file": "41f6f3e99d91.m4a",
+      "text": "Die Möwe hat heute ein Fischbrötchen. Sie hat keinen Hunger!",
+      "voice": "Flo",
+      "seed": 21202912,
+      "heard": "Die Möwe hat heute ein Fischbrötchen. Sie hat keinen Hunger.",
+      "endDb": -55.3
+    },
+    {
+      "file": "12d8b8b0194e.m4a",
+      "text": "Farbe für Boote? Sie ist wasserfest – wie die Möwe!",
+      "voice": "Flo",
+      "seed": 21053405,
+      "heard": "Farbe für Boote. Sie ist wasserfest wie die Möwe.",
+      "endDb": -44.3
+    },
+    {
+      "file": "12478828e956.m4a",
+      "text": "Isst du gern Fisch?",
+      "voice": "Anna",
+      "seed": 20621558,
+      "heard": "Isst du gern Fisch?",
+      "endDb": -52.6
+    },
+    {
+      "file": "1bab495e7004.m4a",
+      "text": "Nein, ich trinke keinen Kaffee. Ich trinke gern Tee.",
+      "voice": "Anna",
+      "seed": 20544420,
+      "heard": "Nein, ich trinke keinen Kaffee. Ich trinke gern Tee.",
+      "endDb": -50.1
+    },
+    {
+      "file": "9ed5bf1a3bcb.m4a",
+      "text": "Trinkst du gern Kaffee?",
+      "voice": "Reed",
+      "seed": 20651179,
+      "heard": "Trinkst du gern Kaffee?",
+      "endDb": -44.6
+    },
+    {
+      "file": "6a2204f0d745.m4a",
+      "text": "Eine Cola, bitte!",
+      "voice": "Anna",
+      "seed": 20601795,
+      "heard": "Eine Cola, bitte?",
+      "endDb": -53.4
+    },
+    {
+      "file": "b6ea5c916e1c.m4a",
+      "text": "Greta im Café, Mateo mit Kaffee – Mateo und Greta, ganz klar!",
+      "voice": "Rocko",
+      "seed": 20898300,
+      "heard": "Greta im Café, Matteo mit Kaffee, Matteo und Greta, ganz klar.",
+      "endDb": -52.4
+    }
+  ]
+}
