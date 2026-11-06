@@ -113,8 +113,8 @@ test("story nouns are spoken with their plural, like lesson words", () => {
 });
 
 test("a story note adds something new, not the gender and plural shown next to it", () => {
-  // Род виден по артиклю, множественное — в подписи «мн. ч. die …» рядом с переводом
-  // (отзыв автора 6 ноября: «дверь · мн. ч. die Türen. Женский род: die Tür; во множественном числе die Türen»).
+  // Род виден по артиклю, множественное — в подписи «мн. ч. die …» рядом с переводом;
+  // иначе подсказка повторяется: «дверь · мн. ч. die Türen. … во множественном числе die Türen».
   for (const [id, p] of Object.entries(phrases)) {
     if (!p.pl) continue;
     assert.ok(!p.note.includes(`die ${p.pl}`), `${id}: заметка повторяет множественное`);
@@ -142,7 +142,7 @@ test("everything the player examines is named in German, once per chapter", () =
 test("tasks explain their grammar with lesson fragments up to their chapter", () => {
   // Как в основной игре (A1-STORY.md, «Правила в игре»): правило — фрагмент разбора урока с
   // таблицей или схемой. Глава сцен N берёт уроки 1–N: окончания глаголов из урока 1 нужны и
-  // во второй главе («Nils kommt aus Hamburg», отзыв автора 6 ноября).
+  // во второй главе: «Nils kommt aus Hamburg».
   const rules = JSON.parse(readFileSync(new URL("../src/generated/story-rules.json", import.meta.url)));
   const lessons = ["kennenlernen", "zahlen", "familie", "essen", "einkaufen", "tagesablauf", "freizeit", "wohnen", "stadt", "gesundheit", "arbeit", "reisen"];
   sceneChapters.forEach((chapter, i) => {
