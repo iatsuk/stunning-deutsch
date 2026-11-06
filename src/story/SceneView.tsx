@@ -143,9 +143,9 @@ export function SceneView({
     });
   }, [position]);
 
-  // Перевод реплики сразу виден, пока она звучит впервые в сцене. Немецкая единица рассказа
-  // знакома, если уже встречалась: в прошлых сценах, в рассказе выше или среди новых слов.
-  const heard = new Set<string>();
+  // Перевод реплики открывается по нажатию: сначала игрок слушает и читает немецкий
+  // (отзыв автора 6 ноября). Немецкая единица рассказа знакома, если уже встречалась:
+  // в прошлых сценах, в рассказе выше или среди новых слов.
   const met = new Set(known);
   // Последствие показывается так, как сдвинуло мир: часы у нуля назад не идут, и строки нет.
   let before = world;
@@ -161,8 +161,6 @@ export function SceneView({
       );
       before = after;
       if (!node || node.t === "when") return [];
-      const fresh = node.t === "say" && !heard.has(node.de);
-      if (node.t === "say") heard.add(node.de);
       const seen = new Set(met);
       if (node.t === "narr")
         for (const id of phraseIds(node.text)) {
@@ -192,7 +190,6 @@ export function SceneView({
               <DoneNode
                 node={node}
                 typed={typedOf(entry)}
-                fresh={fresh}
                 rich={(s) => rich(s, seen)}
               />
               {Object.keys(effects).length > 0 && (
@@ -416,7 +413,6 @@ export function SceneView({
             <>
               <DoneNode
                 node={here.node}
-                fresh={!heard.has(here.node.t === "say" ? here.node.de : "")}
                 rich={(s) => rich(s, met)}
               />
               <NextButton onClick={() => advance(here.key)} />
@@ -507,19 +503,17 @@ function NextButton({
 function DoneNode({
   node,
   typed = "",
-  fresh,
   rich,
 }: {
   node: SceneNode;
   typed?: string;
-  fresh?: boolean;
   rich: Rich;
 }) {
   switch (node.t) {
     case "narr":
       return <p className="moin-play-narr">{rich(node.text)}</p>;
     case "say":
-      return <SayLine node={node} fresh={fresh} />;
+      return <SayLine node={node} />;
     case "reply":
     case "type":
       return (
@@ -592,23 +586,17 @@ function Pic({ node }: { node: Extract<SceneNode, { t: "pic" }> }) {
   );
 }
 
-function SayLine({
-  node,
-  fresh,
-}: {
-  node: Extract<SceneNode, { t: "say" }>;
-  fresh?: boolean;
-}) {
+/** Реплика героя: немецкий текст и запись, перевод — по нажатию, новые слова — чипами. */
+function SayLine({ node }: { node: Extract<SceneNode, { t: "say" }> }) {
   const [open, setOpen] = useState(false);
   const [word, setWord] = useState<string>();
-  const shown = fresh || open;
   return (
     <div className="moin-bubble moin-play-say">
       <small>{node.who}</small>
       <p lang="de">
         {node.de} <PlayButton src={storyAudio(node.de, node.voice)} />
       </p>
-      {shown ? (
+      {open ? (
         <small>{node.ru}</small>
       ) : (
         <button
