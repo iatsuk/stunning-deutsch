@@ -294,7 +294,7 @@ exercises:
 
 ## Маршрут A1
 
-Грамматика вводится строго по порядку. В теме можно использовать всё, что было раньше, и то, что вводится в ней самой.
+Грамматика вводится строго по порядку. В теме можно использовать всё, что было раньше, и то, что вводится в ней самой. Порядковые числа по решению автора от 6 ноября 2026 года приходят частями, чтобы к датам темы 12 ими уже пользовались: этажи в теме 8, дорога в теме 9, полная система и даты в теме 12.
 
 | № | id | Тема | Новая грамматика | Экзамен |
 |---|---|---|---|---|
@@ -305,11 +305,11 @@ exercises:
 | 5 | `einkaufen` | Покупки и одежда | цены и количества, личные местоимения в винительном (ihn, sie, es), welcher/welche/welches, прилагательное после sein (zu groß) | hoeren-2, lesen-2, sprechen-3 |
 | 6 | `tagesablauf` | Время и распорядок дня | часы (view: clock), отделяемые приставки и рамка предложения, um/am/von … bis, время на первой позиции | hoeren-3, lesen-3 |
 | 7 | `freizeit` | Досуг и встречи | модальные können и wollen, инфинитив в конце, gern/lieber/am liebsten, предложить, согласиться, отказаться | schreiben-2, sprechen-2, lesen-1 |
-| 8 | `wohnen` | Жильё | сложные слова (род по последней части), дательный после in/auf на вопрос «где?» (im, in der, auf dem), прилагательное после sein, объявления о квартире | lesen-2, lesen-3 |
-| 9 | `stadt` | Город и транспорт | предлоги с дательным mit, zu, bei, von, aus, nach (zum, zur), повелительное наклонение на Sie, nach Hause / zu Hause | hoeren-2, hoeren-1, lesen-3 |
+| 8 | `wohnen` | Жильё | сложные слова (род по последней части), дательный после in/auf на вопрос «где?» (im, in der, auf dem), прилагательное после sein, объявления о квартире, порядковые числа 1–5 на этажах (im ersten Stock) | lesen-2, lesen-3 |
+| 9 | `stadt` | Город и транспорт | предлоги с дательным mit, zu, bei, von, aus, nach (zum, zur), повелительное наклонение на Sie, nach Hause / zu Hause, порядковые числа в дороге (die zweite Straße, bis zur zweiten Ampel) | hoeren-2, hoeren-1, lesen-3 |
 | 10 | `gesundheit` | Здоровье и врач | части тела, müssen и dürfen, повелительное наклонение на du и ihr, Ich habe …schmerzen, запись к врачу | hoeren-3, schreiben-2, sprechen-3 |
 | 11 | `arbeit` | Работа и профессии | профессии м. и ж. рода (-in), Perfekt с haben (ge-…-t, ge-…-en), Präteritum war и hatte | sprechen-1, lesen-1, schreiben-1 |
-| 12 | `reisen` | Поездки, погода, даты | Perfekt с sein (gefahren, angekommen), погода, месяцы и времена года, порядковые числа и дата (am ersten Mai) | schreiben-2, schreiben-1, hoeren-2 |
+| 12 | `reisen` | Поездки, погода, даты | Perfekt с sein (gefahren, angekommen), погода, месяцы и времена года, порядковые числа до 31 и дата (am ersten Mai) | schreiben-2, schreiben-1, hoeren-2 |
 
 ## A2: задания с несколькими ответами и новое игровое действие
 

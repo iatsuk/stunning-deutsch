@@ -8,7 +8,7 @@ lede: >-
   игре нужно выполнить инструкции по учебной схеме, услышать окончательное решение и передать
   гостям точный маршрут.
 goals:
-  - "Спросить дорогу и понять ответ: прямо, налево, у светофора"
+  - "Спросить дорогу и понять ответ: прямо, налево, у светофора, вторая улица"
   - "Сказать, на чём, куда и откуда вы едете"
   - "Вежливо попросить или посоветовать — повелительным наклонением на Sie"
   - "Различать «дома» и «домой»: zu Hause и nach Hause"
@@ -31,8 +31,8 @@ dialogues:
     lines:
       - A: Entschuldigung! Wie komme ich zum Hauptbahnhof?
         ru: Извините! Как мне пройти к главному вокзалу?
-      - P: Zum Hauptbahnhof? Das ist nicht weit. Gehen Sie hier geradeaus.
-        ru: К главному вокзалу? Это недалеко. Идите здесь прямо.
+      - P: Zum Hauptbahnhof? Das ist nicht weit. Gehen Sie hier geradeaus, bis zur zweiten Ampel.
+        ru: К главному вокзалу? Это недалеко. Идите здесь прямо до второго светофора.
       - A: Geradeaus – und dann?
         ru: Прямо — а потом?
       - P: Dann gehen Sie an der Ampel links. Da sehen Sie schon den Bahnhof.
@@ -155,6 +155,16 @@ tables:
       - [ женский, die Straßenbahn, mit d+er Straßenbahn ]
       - [ мн. ч., die Freunde, mit d+en Freunde+n ]
     note: "Пешком — без предлога *mit* и без артикля: *zu Fuß*."
+  ordnung:
+    title: Die erste, die zweite …
+    ru: Порядковые числа в дороге
+    head: [ Nummer, Welche Straße?, Bis wohin? ]
+    rows:
+      - [ "1.", die erst+e Straße links, bis zur erst+en Ampel ]
+      - [ "2.", die zwei+te Straße rechts, bis zur zwei+ten Ampel ]
+      - [ "3.", die dritt+e Straße links, bis zur dritt+en Ampel ]
+      - [ "4.", die vier+te Straße rechts, bis zur vier+ten Ampel ]
+    note: "После *die* — *-e*: *die zweite Straße*. После *zur*, *zum*, *im*, *am* — *-en*: *bis zur zweiten Ampel*, *im zweiten Stock*."
   praep:
     title: Präpositionen mit Dativ
     ru: Предлоги, после которых всегда дательный
@@ -372,6 +382,26 @@ steps:
           *zur*, вы ошибаетесь не в предлоге, а в артикле.
         point: "*zum* — для *der* и *das*, *zur* — для *die*: *zum Bahnhof*, *zur Post*"
         set: { view: table, table: kurz }
+
+  - id: ampel
+    chapter: grammar
+    title: Вторая улица налево
+    beats:
+      - read: >-
+          Порядковые числа вы уже знаете по этажам: *im ersten Stock*. В дороге они звучат
+          постоянно: *Nehmen Sie die zweite Straße links* — «вторая улица налево». После *die*
+          окончание простое, *-e*, как у самого артикля. После слитных *zum*, *zur*, *im*, *am*
+          у числа *-en*: *bis zur zweiten Ampel* — «до второго светофора», как *im zweiten
+          Stock*.
+        point: "*die zweite Straße links*; после *zur*, *im* — *-en*: *bis zur zweiten Ampel*"
+        set: { view: table, table: ordnung }
+      - read: >-
+          Вернёмся к прохожему: *Gehen Sie hier geradeaus, bis zur zweiten Ampel*, а потом
+          *Dann gehen Sie an der Ampel links*. Первый светофор Дана проходит, у второго
+          поворачивает. Объясняя длинный путь, немцы почти всегда считают: *die erste Straße*,
+          *die zweite Ampel*. Переспросить можно так: *Die zweite Ampel?*
+        point: "Считайте светофоры и улицы: *bis zur zweiten Ampel*, *dann links*"
+        set: { view: dialogue, dialogue: weg, reveal: 4, focus: [ 1, 3 ] }
 
   - id: imperativ
     chapter: grammar
@@ -595,6 +625,21 @@ exercises:
   - type: order
     ru: Садитесь на 16-й!
     de: Nehmen Sie die Linie 16!
+  - type: choice
+    q: Nehmen Sie die ___ Straße rechts.
+    ru: Сверните на первую улицу направо.
+    options: [ erste, ersten, einste ]
+    answer: 0
+    why: "После *die* — *-e*: *die erste Straße*. *ersten* — после *zur*, *im*: *bis zur ersten Ampel*."
+  - type: gap
+    q: Gehen Sie bis zur ___ Ampel.
+    answer: [ dritten ]
+    hint: "3."
+    ru: Идите до третьего светофора.
+    why: "*zur* = *zu der*: у порядкового числа *-en*. И *drei* → *dritte*, не *dreite*."
+  - type: order
+    ru: Сверните на вторую улицу налево.
+    de: Nehmen Sie die zweite Straße links.
   - type: order
     ru: Выходите, пожалуйста, здесь!
     also: ["Steigen Sie hier bitte aus!"]

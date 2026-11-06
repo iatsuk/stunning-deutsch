@@ -1291,6 +1291,10 @@
   "ru": "первый этаж",
   "audio": "audio/d6b10894bdfe.m4a"
  },
+ "der Stock": {
+  "ru": "этаж над первым",
+  "audio": "audio/e7edb84f99ab.m4a"
+ },
  "der Bahnhof": {
   "ru": "вокзал",
   "audio": "audio/b9e1a0624846.m4a"

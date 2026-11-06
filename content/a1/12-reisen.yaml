@@ -464,11 +464,11 @@ steps:
     title: Какое сегодня число?
     beats:
       - read: >-
-          Дата — это порядковое число: «первое мая», «второе июня». До 19 немецкие порядковые
-          числа образуются просто: к числу добавляется *-te*: *zwei — der zweite*, *vier — der
-          vierte*. Запомните четыре исключения: *der erste*, *der dritte*, *der siebte* и *der
-          achte* — у *acht* уже есть своё *t*, второе не нужно. На письме порядковое число
-          обозначают точкой: *der 2. Juni*.
+          Порядковые числа вы уже встречали: *im zweiten Stock*, *die zweite Straße links*.
+          Дата — тоже порядковое число: «первое мая», «второе июня». До 19 к числу добавляется
+          *-te*: *zwei — der zweite*, *vier — der vierte*. Исключений четыре: к знакомым *der
+          erste* и *der dritte* добавляются *der siebte* и *der achte* — у *acht* уже есть своё
+          *t*, второе не нужно. На письме порядковое число обозначают точкой: *der 2. Juni*.
         point: "До 19 — *-te*: *der zweite*; исключения: *erste*, *dritte*, *siebte*, *achte*"
         set: { view: table, table: datum, reveal: 6, focus: [ 0, 2, 4, 5 ] }
       - read: >-

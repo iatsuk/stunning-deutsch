@@ -309,7 +309,7 @@ export const extras: Record<string, Beat[]> = {
     step("08-x-rooms", "Лото объявлений", "Йенсен читает вслух объявления о жилье, а гости закрывают карточки.", HEAR, HINT_HEAR, "Карточка закрыта. Подвал по-прежнему никому не нужен.",
       bingo(["die Wohnung", "das Bad", "der Flur", "der Keller", "das Treppenhaus", "das Wohnheim", "das Erdgeschoss", "die Möbel", "die Heizung"])),
     step("08-x-docks", "План дома", "На плане дома у каждой комнаты пустая табличка. Йенсен просит подписать артикли, пока гости не заблудились.", DOCK, HINT_DOCK, "План подписан. Кухню теперь найдёт даже Матео, особенно Матео.",
-      docks(["das Haus", "das Zimmer", "das Wohnzimmer", "das Schlafzimmer", "die Küche", "der Tisch", "der Schrank", "der Kühlschrank"])),
+      docks(["das Haus", "das Zimmer", "das Wohnzimmer", "das Schlafzimmer", "die Küche", "der Stock", "der Tisch", "der Schrank", "der Kühlschrank"])),
   ],
   "08-case": [
     step("08-x-furniture", "Мебель для комнаты", "В гостевую комнату привезли мебель. Йенсен называет предметы, вы показываете, куда их нести.", PICTURE, HINT_PICTURE, "Комната обставлена. Диван занят: на нём уже спит Матео.",

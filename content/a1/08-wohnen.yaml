@@ -12,11 +12,13 @@ goals:
   - "Сказать, где что стоит: im Keller, in der Küche, auf dem Balkon"
   - "Описать квартиру: большая, светлая, тихая, недорогая"
   - "Прочитать объявление о квартире со всеми сокращениями"
+  - "Назвать этаж: im ersten Stock — по-нашему второй этаж"
 grammar:
   - "Сложные слова: род по последней части"
   - "Дательный после in и auf на вопрос «где?»"
   - "im = in dem"
   - "Прилагательное после sein"
+  - "Порядковые числа на этажах: im ersten Stock"
 exam: [ lesen-2, lesen-3 ]
 
 dialogues:
@@ -42,8 +44,8 @@ dialogues:
         ru: Здесь холодная аренда — только плата за квартиру. Отопление и вода оплачиваются отдельно.
       - M: Und wo ist die Wohnung?
         ru: А где квартира?
-      - A: In Kiel, in der Holtenauer Straße. Das ist nicht weit.
-        ru: В Киле, на Holtenauer Straße. Это недалеко.
+      - A: In der Holtenauer Straße, im zweiten Stock. Das ist nicht weit.
+        ru: На Holtenauer Straße, на третьем этаже. Это недалеко.
       - M: Super, ich rufe gleich an!
         ru: Супер, сейчас же позвоню!
   besichtigung:
@@ -160,6 +162,7 @@ words:
       - { de: die Heizung, ru: отопление, pl: Heizungen }
       - { de: der Quadratmeter, ru: квадратный метр, pl: Quadratmeter, note: m² или qm }
       - { de: das Erdgeschoss, ru: первый этаж, pl: Erdgeschosse, note: EG }
+      - { de: der Stock, ru: этаж над первым, pl: Stockwerke, note: "im ersten Stock — наш второй этаж" }
 
 tables:
   komposita:
@@ -216,6 +219,19 @@ tables:
       - [ EG / 1. OG, Erdgeschoss / 1. Obergeschoss, наш 1-й этаж / наш 2-й этаж ]
       - [ ab sof., ab sofort, сразу ]
       - [ möbl., möbliert, с мебелью ]
+  stock:
+    title: Der erste, zweite, dritte Stock
+    ru: Этажи и порядковые числа
+    head: [ Anzeige, Welcher Stock?, Wo?, По-русски ]
+    ruCols: [ 3 ]
+    rows:
+      - [ EG, das Erdgeschoss, im Erdgeschoss, первый этаж ]
+      - [ 1. OG, der erst+e Stock, im erst+en Stock, второй этаж ]
+      - [ 2. OG, der zwei+te Stock, im zwei+ten Stock, третий этаж ]
+      - [ 3. OG, der dritt+e Stock, im dritt+en Stock, четвёртый этаж ]
+      - [ 4. OG, der vier+te Stock, im vier+ten Stock, пятый этаж ]
+      - [ 5. OG, der fünf+te Stock, im fünf+ten Stock, шестой этаж ]
+    note: "Порядковое число — число + *-te*: *zwei+te*, *vier+te*; исключения — *erste* и *dritte*. После *im* окончание *-en*: *im zweiten Stock*."
 
 tasks:
   anzeigen:
@@ -281,9 +297,10 @@ steps:
         point: "*Kaltmiete* + *Nebenkosten* = *Warmmiete*"
         set: { reveal: 6, focus: [ 3, 4, 5 ] }
       - read: >-
-          Квартира находится *in Kiel, in der Holtenauer Straße*. Улица знакома по школе и
-          покупкам. По-русски живут «на улице», а здесь нужен *in der Straße*. Почему *der*,
-          если слово *die Straße*, — вопрос этой темы. Матео говорит *Ich rufe gleich an*:
+          Квартира находится *in der Holtenauer Straße, im zweiten Stock*. По-русски живут «на
+          улице», а здесь нужен *in der Straße*. Почему *der*, если слово *die Straße*, — вопрос
+          этой темы. *im zweiten Stock* — это наш третий этаж: немцы считают этажи над землёй,
+          об этом — во фрагменте «На каком этаже?». Матео говорит *Ich rufe gleich an*:
           сначала он уточнит условия, затем передаст информацию Лусии и Диего. Решение о жилье
           остаётся за гостями.
         point: "Улица — *in der …straße*: по-немецки «в улице», а не «на»"
@@ -419,6 +436,26 @@ steps:
           Montag*: это тоже слияние, *an dem*. Тот же механизм, только с другим предлогом.
         point: "*in dem* → *im*, *an dem* → *am*; *auf dem* и *in der* не сливаются"
         set: { view: table, table: kurz }
+
+  - id: stock
+    chapter: grammar
+    title: На каком этаже?
+    beats:
+      - read: >-
+          Немцы считают этажи над землёй: *das Erdgeschoss* — наш первый этаж, а *der erste
+          Stock* — уже второй. Поэтому квартира *im zweiten Stock* — на нашем третьем этаже.
+          *erste*, *zweite* — порядковые числа: к числу добавляется *-te*, *vier* → *vierte*.
+          Исключения — *erste* и *dritte*. После *im* у числа окончание *-en*: *im ersten
+          Stock*, как *im Keller*, только с числом посередине.
+        point: "*im ersten Stock* — наш второй этаж; *zwei* → *zweite*, но *erste*, *dritte*"
+        set: { view: table, table: stock }
+      - read: >-
+          Дана читает Матео объявление: *im zweiten Stock*. В самом объявлении то же написано
+          цифрой с точкой — *2. OG*. Точка после числа и значит «-й»: *der 2. Stock* читается
+          *der zweite Stock*. Так же потом будут записываться даты: *der 2. Juni*. Порядковые
+          числа пригодятся и в дороге — «вторая улица налево» — и в датах в конце курса.
+        point: "*2. OG* = *der zweite Stock*: точка после цифры — порядковое число"
+        set: { view: dialogue, dialogue: anzeige, reveal: 7, focus: [ 6 ] }
 
   - id: satz
     chapter: grammar
@@ -651,6 +688,22 @@ exercises:
     ru: Ванная маленькая, но современная.
     also: ["Klein, aber modern ist das Bad."]
     de: Das Bad ist klein, aber modern.
+  - type: choice
+    q: Die Wohnung ist im ___ Stock.
+    ru: Квартира на третьем этаже.
+    options: [ zweiten, dritten, zweite ]
+    answer: 0
+    why: "Наш третий этаж — *im zweiten Stock*: немцы считают над *Erdgeschoss*. После *im* — *-en*."
+  - type: gap
+    q: Der Keller ist unten, das Bad ist im ___ Stock.
+    answer: [ ersten ]
+    hint: "1."
+    why: "*eins* → *der erste*: исключение. После *im* — *im ersten Stock*."
+  - type: choice
+    q: Как прочитать *3. OG* в объявлении?
+    options: [ der dritte Stock, der dreite Stock, drei Stock ]
+    answer: 0
+    why: "*drei* → *dritte*: исключение, как *erste*. Точка после цифры — порядковое число."
 adventure:
   kind: sequence
   title: Подготовьте жильё для гостей

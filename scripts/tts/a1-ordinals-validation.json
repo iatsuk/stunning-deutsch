@@ -1,0 +1,99 @@
+{
+  "date": "2026-11-06",
+  "scope": "Ordinal numbers in A1 lessons 8 (floors) and 9 (directions): two changed dialogue lines, the word 'der Stock, die Stockwerke' and five exercise sentences; plus two re-voiced takes of 'Wie alt sind Sie?' in the Moin game (Anna in the scene prototype, Reed in the main game)",
+  "model": "k2-fsa/OmniVoice",
+  "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+  "candidatesPerPhrase": 3,
+  "asr": "openai/whisper-large-v3",
+  "notes": [
+    "All eight new phrases were heard in full by Whisper; tails.py passes on every imported file.",
+    "The author heard 'Wie alt sinds' in the Anna take of 'Wie alt sind Sie?' (scene prototype, chapter 2). Whisper had heard the full question, because it completes familiar phrases, so the takes were also checked by counting syllable peaks in the loudness envelope: 4 for 'Wie alt sind Sie', 3 for 'Wie alt sinds'. The old Anna take had 3 peaks, the Reed take of the same question in the main game 2; a known-good 'Wie alt bist du?' had 4.",
+    "Six new seeds were generated for each voice; takes with 4 syllable peaks, a clean ending and a full Whisper transcript replaced the old ones under the same file names."
+  ],
+  "files": [
+    {
+      "file": "531ebd3a2fb0.m4a",
+      "text": "In der Holtenauer Straße, im zweiten Stock. Das ist nicht weit.",
+      "voice": "Anna",
+      "seed": 21092432,
+      "heard": "In der Holtenauer Straße, im zweiten Stock. Das ist nicht weit.",
+      "endDb": -53.4
+    },
+    {
+      "file": "e7edb84f99ab.m4a",
+      "text": "der Stock, die Stockwerke",
+      "voice": "Anna",
+      "seed": 20766697,
+      "heard": "Der Stock. Die Stockwerke.",
+      "endDb": -62.4
+    },
+    {
+      "file": "f6c0f3c91e88.m4a",
+      "text": "Die Wohnung ist im zweiten Stock.",
+      "voice": "Anna",
+      "seed": 20474630,
+      "heard": "Die Wohnung ist im zweiten Stock.",
+      "endDb": -64.5
+    },
+    {
+      "file": "b536139e518c.m4a",
+      "text": "Der Keller ist unten, das Bad ist im ersten Stock.",
+      "voice": "Anna",
+      "seed": 20280970,
+      "heard": "Der Keller ist unten, das Bad ist im ersten Stock.",
+      "endDb": -67.9
+    },
+    {
+      "file": "1fe722141f41.m4a",
+      "text": "Zum Hauptbahnhof? Das ist nicht weit. Gehen Sie hier geradeaus, bis zur zweiten Ampel.",
+      "voice": "Grandpa",
+      "seed": 20911521,
+      "heard": "Zum Hauptbahnhof? Das ist nicht weit. Gehen Sie hier geradeaus bis zur zweiten Ampel.",
+      "endDb": -60.1
+    },
+    {
+      "file": "78f7cda61456.m4a",
+      "text": "Nehmen Sie die erste Straße rechts.",
+      "voice": "Anna",
+      "seed": 20729718,
+      "heard": "Nehmen Sie die erste Straße rechts.",
+      "endDb": -56.5
+    },
+    {
+      "file": "9d2d955ac5ba.m4a",
+      "text": "Gehen Sie bis zur dritten Ampel.",
+      "voice": "Anna",
+      "seed": 21120056,
+      "heard": "Gehen Sie bis zur dritten Ampel.",
+      "endDb": -53.5
+    },
+    {
+      "file": "66780cdb7095.m4a",
+      "text": "Nehmen Sie die zweite Straße links.",
+      "voice": "Anna",
+      "seed": 21093331,
+      "heard": "Nehmen Sie die zweite Straße links.",
+      "endDb": -50.8
+    },
+    {
+      "file": "f5e9ed72e2c3.m4a",
+      "text": "Wie alt sind Sie?",
+      "voice": "Anna",
+      "seed": 21199216,
+      "heard": "Wie alt sind Sie?",
+      "endDb": -48.3,
+      "syllables": 4,
+      "replaces": "an OmniVoice take that swallowed 'Sie'"
+    },
+    {
+      "file": "6a46164e9518.m4a",
+      "text": "Wie alt sind Sie?",
+      "voice": "Reed",
+      "seed": 20828080,
+      "heard": "Wie alt sind Sie?",
+      "endDb": -65.6,
+      "syllables": 4,
+      "replaces": "an OmniVoice take that swallowed 'Sie'"
+    }
+  ]
+}
