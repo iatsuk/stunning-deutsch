@@ -267,6 +267,11 @@ export const flatNodes = (nodes: SceneNode[]): SceneNode[] =>
         : [n],
   );
 
+/** Правила действий сцены по порядку, без повторов: фрагменты разбора уроков «тема/фрагмент». */
+export const sceneRules = (nodes: SceneNode[]): string[] => [
+  ...new Set(flatNodes(nodes).flatMap((n) => n.rule ?? [])),
+];
+
 /**
  * Слова уроков, которые сцена вводит (learn у реплик) или тренирует во встроенных играх.
  * Только они идут в память слов: пропуск вроде der или aus словом словаря не является.

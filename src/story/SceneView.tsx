@@ -25,6 +25,7 @@ import {
 } from "./scene";
 import type { Answer, Challenge, Pick, SceneNode } from "./types";
 import { mnemonic } from "./mnemonics";
+import { RuleCard } from "./RuleCard";
 import { effectText, holds, TRACKS, type World } from "./world";
 
 // Сцена: разговор и осмотр места, в который вплетены действия. Сцена помещается на экран:
@@ -61,12 +62,15 @@ export function SceneView({
   quiet,
   world = {},
   known = [],
+  rules = [],
 }: GameProps & {
   c: Play;
   rich: Rich;
   world?: World;
   /** Слова, которые игрок уже видел в прошлых сценах главы: в рассказе они без перевода. */
   known?: string[];
+  /** Правила, которые прошлые сцены главы уже показали: у задания они свёрнуты. */
+  rules?: string[];
 }) {
   const entries = Array.isArray(value) ? value : [];
   // Мир к этому моменту: что было до сцены и последствия уже пройденных узлов.
@@ -76,6 +80,8 @@ export function SceneView({
   // Прошлое действие, которое игрок открыл ячейкой; без него виден текущий момент.
   const [view, setView] = useState<number>();
   const [notesOpen, setNotesOpen] = useState(false);
+  // Действие, на котором игрок ошибся: его знакомые правила раскрываются под заданием.
+  const [missAt, setMissAt] = useState<string>();
   const here = spot(c.nodes, entries, open, state);
   const current = useRef<HTMLDivElement>(null);
   const first = useRef<HTMLDivElement>(null);
@@ -225,6 +231,16 @@ export function SceneView({
       return n && ACTIONS.includes(n.t) && !playedKeys.includes(k);
     }),
   ];
+  // Правила, которые игрок уже видел: в прошлых сценах главы и у пройденных действий этой сцены.
+  const seenRules = [
+    ...new Set([
+      ...rules,
+      ...entries.flatMap((e) => nodeAt(c.nodes, keyOf(e))?.rule ?? []),
+    ]),
+  ];
+  const taskRules = here.at === "node" ? (here.node.rule ?? []) : [];
+  // Как в основной игре: перед заданием открыто одно правило — первое новое; остальные под заданием.
+  const firstNew = taskRules.find((id) => !seenRules.includes(id));
   // Часы и отношения, которые уже сдвинулись: их показывает блокнот сцены.
   const tracks = Object.entries(state).filter(([q, v]) => v > 0 && TRACKS[q]);
   // Блокнот сцены: улики и предметы под рукой, чтобы не искать их в разговоре.
@@ -282,14 +298,14 @@ export function SceneView({
           />{" "}
           Озвучивать реплики
         </label>
-        {notes.length + tracks.length > 0 && (
+        {notes.length + tracks.length + seenRules.length > 0 && (
           <button
             type="button"
             className="moin-play-notes-button"
             aria-expanded={notesOpen}
             onClick={() => setNotesOpen(!notesOpen)}
           >
-            📓 {notes.length + tracks.length}
+            📓 {notes.length + tracks.length + seenRules.length}
           </button>
         )}
       </div>
@@ -325,6 +341,14 @@ export function SceneView({
               </li>
             ))}
           </ul>
+          {seenRules.length > 0 && (
+            <>
+              <div className="kicker">Правила главы</div>
+              {seenRules.map((id) => (
+                <RuleCard key={id} id={id} open={false} />
+              ))}
+            </>
+          )}
         </aside>
       )}
       {view !== undefined && (
@@ -398,20 +422,37 @@ export function SceneView({
               <NextButton onClick={() => advance(here.key)} />
             </>
           ) : (
-            <Task
-              key={here.key}
-              node={here.node}
-              nodeKey={here.key}
-              seed={`${seed}-${here.key}`}
-              slot={slots.get(here.key)}
-              miss={miss}
-              rich={rich}
-              quiet={quiet}
-              done={(entry) => {
-                setBatch([]);
-                advance(entry);
-              }}
-            />
+            <>
+              {/* Новое правило открыто перед заданием; остальные лежат под ним свёрнутыми и
+                  раскрываются после ошибки, не сдвигая задание. */}
+              {firstNew && <RuleCard key={firstNew} id={firstNew} open />}
+              <Task
+                key={here.key}
+                node={here.node}
+                nodeKey={here.key}
+                seed={`${seed}-${here.key}`}
+                slot={slots.get(here.key)}
+                miss={(word) => {
+                  setMissAt(here.key);
+                  miss(word);
+                }}
+                rich={rich}
+                quiet={quiet}
+                done={(entry) => {
+                  setBatch([]);
+                  advance(entry);
+                }}
+              />
+              {taskRules
+                .filter((id) => id !== firstNew)
+                .map((id) => (
+                  <RuleCard
+                    key={`${here.key}-${id}`}
+                    id={id}
+                    open={missAt === here.key}
+                  />
+                ))}
+            </>
           )}
         </div>
       )}

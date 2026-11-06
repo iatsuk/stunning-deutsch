@@ -50,6 +50,7 @@ const photo: SceneNode[] = [
   hauke("Das ist unser Opa! Und das ist unsere Oma!", "Это наш дедушка! А это наша бабушка!", ["der Opa", "die Oma"]),
   {
     t: "game",
+    rule: ["familie/mein-2"],
     task: "Чайка поцарапала оборот. Вставьте пропавшие слова.",
     hint: "der Opa — unser Opa, die Oma — unsere Oma. Нильс пишет о себе: mein.",
     c: gaps("Hallo!!! Das ist ___ Opa!!! Und das ist ___ Oma mit Kuchen!!! Der Junge? Das ist ___ Vater!!! Opa ist jetzt neunzig!!! Nils", ["unser", "unsere", "mein", "meine"], ["unser", "unsere", "mein"]),
@@ -66,7 +67,7 @@ const photo: SceneNode[] = [
   narr("Хауке подносит Foto к лицу и говорит басом, как злодей в космическом кино:"),
   hauke("Nils … ich bin dein Opa!", "Нильс… я твой дедушка!"),
   dana("Nein, Hauke. Er ist nicht dein Opa. Er ist ihr Opa!", "Нет, Хауке. Он не твой дедушка. Он их дедушка!"),
-  { t: "gap", task: "Чей это дедушка? Нильса и Греты — значит…", text: "Nils und Greta: Das ist ___ Opa.", options: ["ihr", "sein", "dein"], answer: "ihr", ru: "Нильс и Грета: это их дедушка." },
+  { t: "gap", rule: ["familie/wessen-1"], task: "Чей это дедушка? Нильса и Греты — значит…", text: "Nils und Greta: Das ist ___ Opa.", options: ["ihr", "sein", "dein"], answer: "ihr", ru: "Нильс и Грета: это их дедушка." },
   {
     t: "game",
     task: "Дана рисует в блокноте семью Хансен. Послушайте слово и нажмите на рисунок.",
@@ -95,6 +96,7 @@ const photo: SceneNode[] = [
   },
   {
     t: "reply",
+    rule: ["familie/wessen-2"],
     task: "Напишите Нильсу и Грете сразу: это ваш дедушка?",
     options: [
       ok("Ist das euer Opa?"),
@@ -103,7 +105,7 @@ const photo: SceneNode[] = [
     ],
   },
   narr("Ответ приходит через секунду: «Ja!!! Unser Opa!!! Heinrich Hansen!!! Das Schild ist von Opa!!!»"),
-  { t: "type", task: "Запишите в блокнот: «Это их дедушка».", answers: ["Das ist ihr Opa.", "Das ist ihr Opa!"], ru: "Это их дедушка." },
+  { t: "type", rule: ["familie/wessen-1"], task: "Запишите в блокнот: «Это их дедушка».", answers: ["Das ist ihr Opa.", "Das ist ihr Opa!"], ru: "Это их дедушка." },
   narr("1976… Эти цифры вы уже видели: у {gaestezimmer}, на {ehrentafel}, совсем свежей белой краской."),
   {
     t: "pick",
@@ -154,7 +156,7 @@ const roof: SceneNode[] = [
     ],
   },
   elif("Die Mutter hat drei Kinder. Unsere Möwe hat drei Geschwister!", "У матери трое детей. У нашей чайки — трое братьев и сестёр!", ["das Kind", "die Geschwister"]),
-  { t: "gap", task: "Сколько детей у чайки-матери?", text: "Die Mutter hat drei ___.", options: ["Kinder", "Kind", "Kindern"], answer: "Kinder", ru: "У матери трое детей." },
+  { t: "gap", rule: ["familie/plural-1"], task: "Сколько детей у чайки-матери?", text: "Die Mutter hat drei ___.", options: ["Kinder", "Kind", "Kindern"], answer: "Kinder", ru: "У матери трое детей." },
   {
     t: "game",
     task: "Элиф ведёт учёт чаек клуба. Сколько кого на крыше?",
@@ -174,6 +176,7 @@ const roof: SceneNode[] = [
   petersen("Moin! Die Leiter? Ja … Moment!", "Привет! Лестница? Да… минутку!"),
   {
     t: "reply",
+    rule: ["familie/mein-2"],
     task: "Спросите вежливо: это ваша собака?",
     options: [
       ok("Ist das Ihr Hund?"),
@@ -182,7 +185,7 @@ const roof: SceneNode[] = [
     ],
   },
   petersen("Hund? Nein! Das ist kein Hund. Das ist … mein Handy!", "Собака? Нет! Это не собака. Это… мой мобильный!", ["der Hund"]),
-  { t: "gap", task: "Что говорит фрау Петерсен?", text: "Das ist ___ Hund.", options: ["kein", "keine", "nicht"], answer: "kein", ru: "Это не собака." },
+  { t: "gap", rule: ["familie/kein-2"], task: "Что говорит фрау Петерсен?", text: "Das ist ___ Hund.", options: ["kein", "keine", "nicht"], answer: "kein", ru: "Это не собака." },
   {
     ...narr("«Handy» тявкает ещё раз. Frau Petersen краснеет и выдаёт вам {leiter}. Тайна под столом подождёт."),
     set: { petersen: 1 },
@@ -190,6 +193,7 @@ const roof: SceneNode[] = [
   narr("Вы на крыше. Die Mutter смотрит строго: по-своему она права. Надо вежливо объяснить, чьё это Foto."),
   {
     t: "game",
+    rule: ["familie/kein-2"],
     task: "Объясните чайке-матери: это не её фото.",
     hint: "Отрицание перед «чей» — nicht: nicht dein Foto. kein и dein вместе не ставят.",
     c: order(["Das", "ist", "nicht", "dein", "Foto."], ["dein", "Foto.", "nicht", "Das", "ist"]),
@@ -274,11 +278,11 @@ const memories: SceneNode[] = [
             hint: "Frau — жена, Sohn — сын.",
             c: spot("Karte: Heinrich Hansen", ["Name: Heinrich Hansen|Familienstand: verheiratet", "Frau: Hilde Hansen|Sohn: Peter, acht Jahre", "Hobby: Segeln|Schild MOIN: Farbe und Pinsel"], ["Frau: Hilde Hansen", "Sohn: Peter, acht Jahre"]),
           },
-          { t: "gap", task: "Подпишите в блокноте: кто Хильде для Opa?", text: "Hilde ist ___ Frau.", options: ["seine", "sein", "ihre"], answer: "seine", ru: "Хильде — его жена." },
+          { t: "gap", rule: ["familie/wessen-1"], task: "Подпишите в блокноте: кто Хильде для Opa?", text: "Hilde ist ___ Frau.", options: ["seine", "sein", "ihre"], answer: "seine", ru: "Хильде — его жена." },
           narr("Следующий кармашек в папке пуст: карточку кто-то вынул. На пластике круглый коричневый след — как от кружки с чаем."),
           { t: "type", task: "Запишите: Opa женат.", answers: ["Opa ist verheiratet.", "Heinrich Hansen ist verheiratet.", "Er ist verheiratet."], ru: "Дедушка женат." },
           petersen("Ich habe auch ein Foto. Das ist meine Tochter!", "У меня тоже есть фото. Это моя дочь!", ["die Tochter"]),
-          { t: "gap", task: "Что говорит фрау Петерсен о своём фото?", text: "Das ist ___ Tochter!", options: ["meine", "mein", "ihre"], answer: "meine", ru: "Это моя дочь!" },
+          { t: "gap", rule: ["familie/mein-2"], task: "Что говорит фрау Петерсен о своём фото?", text: "Das ist ___ Tochter!", options: ["meine", "mein", "ihre"], answer: "meine", ru: "Это моя дочь!" },
           { t: "clue", title: "Папка «1976»", text: "Heinrich Hansen: verheiratet, жена Hilde, сын Peter. Карточку следующего члена клуба кто-то вынул; на кармашке круглый след от кружки." },
         ],
       },
@@ -300,6 +304,7 @@ const memories: SceneNode[] = [
           mateo("Für hundert? Nein, nein. Das ist kein Kuchen. Das ist … Brot!", "На сто человек? Нет-нет. Это не пирог. Это… хлеб!"),
           {
             t: "reply",
+            rule: ["familie/kein-2"],
             task: "Скажите Матео с улыбкой: это не хлеб.",
             options: [
               ok("Das ist kein Brot."),
@@ -308,7 +313,7 @@ const memories: SceneNode[] = [
             ],
           },
           { t: "game", task: "Соберите по буквам, что написано на карточке рецепта.", hint: HINT_SPELL, c: letters(["die Oma", "der Kuchen", "die Familie"]) },
-          { t: "gap", task: "Матео хвалит себя. Вставьте слово.", text: "___ Kuchen ist auch super!", options: ["Mein", "Meine", "Meinen"], answer: "Mein", ru: "Мой пирог тоже супер!" },
+          { t: "gap", rule: ["familie/mein-2"], task: "Матео хвалит себя. Вставьте слово.", text: "___ Kuchen ist auch super!", options: ["Mein", "Meine", "Meinen"], answer: "Mein", ru: "Мой пирог тоже супер!" },
           { t: "clue", title: "Рецепт Oma Hansen", text: "Матео печёт Butterkuchen по рецепту Oma Hansen и прячет бланк «Kuchen für hundert». Уверяет, что это хлеб." },
         ],
       },
@@ -329,6 +334,7 @@ const memories: SceneNode[] = [
           },
           {
             t: "reply",
+            rule: ["familie/mein-2"],
             task: "Подсуньте очки под дверь с запиской.",
             options: [
               ok("Ist das deine Brille?"),
@@ -400,11 +406,12 @@ const jensenPov: SceneNode[] = [
   narr("Мама показывает на детей: «Das ist unser Sohn, und das ist unsere Tochter. Ein Foto, bitte?»"),
   {
     t: "game",
+    rule: ["familie/mein-2"],
     task: "Мальчик тоже хочет представить сестру. Соберите его фразу.",
     hint: "die Schwester — женского рода: meine.",
     c: order(["Das", "ist", "meine", "Schwester."], ["Schwester.", "meine", "Das", "ist"]),
   },
-  { t: "gap", task: "Как мама представила девочку?", text: "Das ist unsere ___.", options: ["Tochter", "Sohn", "Vater"], answer: "Tochter", ru: "Это наша дочь." },
+  { t: "gap", rule: ["familie/mein-2"], task: "Как мама представила девочку?", text: "Das ist unsere ___.", options: ["Tochter", "Sohn", "Vater"], answer: "Tochter", ru: "Это наша дочь." },
   narr("Ein Foto? Йенсен отказывается тем же словом. Die Gäste уходят довольные: настоящий северный капитан, как в путеводителе."),
   narr("Когда они уходят, Йенсен открывает ящик стола. Там то же Foto, 1976. Целое, с правым краем."),
   narr("На краю молодой человек в фуражке держит {dose} Farbe и улыбается. Йенсен трогает свою фуражку и закрывает ящик."),
@@ -450,7 +457,7 @@ const poster: SceneNode[] = [
     ],
   },
   narr("Krümel — «крошка». Утром Frau Petersen прятала его под столом: Hunde в клуб нельзя. Die Mutter на {plakat} — это она."),
-  { t: "gap", task: "Подпишите в блокноте: чья дочь Лотта?", text: "Lotte ist ___ Tochter.", options: ["ihre", "seine", "deine"], answer: "ihre", ru: "Лотта — её дочь (фрау Петерсен)." },
+  { t: "gap", rule: ["familie/wessen-1"], task: "Подпишите в блокноте: чья дочь Лотта?", text: "Lotte ist ___ Tochter.", options: ["ihre", "seine", "deine"], answer: "ihre", ru: "Лотта — её дочь (фрау Петерсен)." },
   {
     t: "game",
     task: "Разведите героев по семьям.",
@@ -479,6 +486,7 @@ const poster: SceneNode[] = [
   petersen("Lotte! Krümel! Psst! Hunde – nein! Nicht im Büro!", "Лотта! Крюмель! Тсс! Собаки — нет! Не в офисе!"),
   {
     t: "reply",
+    rule: ["familie/kein-2"],
     task: "Скажите фрау Петерсен, что это не ваша собака — и вы ничего не видели.",
     options: [
       ok("Das ist nicht mein Hund."),
@@ -498,6 +506,7 @@ const poster: SceneNode[] = [
   elif("Lotte fragt: Hast du Geschwister?", "Лотта спрашивает: у тебя есть братья или сёстры?"),
   {
     t: "type",
+    rule: ["familie/check-3"],
     task: "Ответьте Лотте о себе: есть ли у вас братья или сёстры.",
     answers: [
       "Nein, ich habe keine Geschwister.", "Ja, ich habe eine Schwester.", "Ja, ich habe einen Bruder.",
@@ -507,7 +516,7 @@ const poster: SceneNode[] = [
     ru: "Нет, у меня нет братьев и сестёр. / Да, у меня есть сестра…",
   },
   dana("Lotte hat keine Geschwister. Aber sie hat Krümel!", "У Лотты нет братьев и сестёр. Зато у неё есть Крюмель!"),
-  { t: "gap", task: "Что сказала Дана о Лотте?", text: "Lotte hat ___ Geschwister.", options: ["keine", "kein", "nicht"], answer: "keine", ru: "У Лотты нет братьев и сестёр." },
+  { t: "gap", rule: ["familie/kein-2"], task: "Что сказала Дана о Лотте?", text: "Lotte hat ___ Geschwister.", options: ["keine", "kein", "nicht"], answer: "keine", ru: "У Лотты нет братьев и сестёр." },
   narr("Лотта кивает и устраивает вам проверку. Тихо, но строго, как ihre Mutter."),
   {
     t: "game",
@@ -560,6 +569,7 @@ const cake: SceneNode[] = [
   petersen("Greta Hansen? Ihr Opa ist auf der Ehrentafel!", "Грета Хансен? Её дедушка — на доске почёта!"),
   {
     t: "reply",
+    rule: ["familie/wessen-1"],
     task: "Подтвердите фрау Петерсен: да, это дедушка Греты.",
     options: [
       ok("Ja, das ist ihr Opa."),
@@ -568,7 +578,7 @@ const cake: SceneNode[] = [
     ],
   },
   narr("Грета Kuchen не берёт. Она пишет на салфетке четыре слова и кладёт её рядом с тарелкой. Одно подчёркнуто дважды."),
-  { t: "gap", task: "Что написала Грета?", text: "Das ist ___ Schild.", options: ["unser", "unsere", "euer"], answer: "unser", ru: "Это наша табличка." },
+  { t: "gap", rule: ["familie/mein-2"], task: "Что написала Грета?", text: "Das ist ___ Schild.", options: ["unser", "unsere", "euer"], answer: "unser", ru: "Это наша табличка." },
   hauke("Unser Schild? Greta hat das Schild! Ganz klar!", "Наша табличка? Табличка у Греты! Ясно как день!"),
   {
     t: "pick",
@@ -599,6 +609,7 @@ const cake: SceneNode[] = [
   mateo("Und mein Kuchen? Ist er gut?", "А мой пирог? Он хороший?"),
   {
     t: "reply",
+    rule: ["familie/mein-2"],
     task: "Утешьте Матео.",
     options: [
       ok("Dein Kuchen ist super!"),
@@ -609,6 +620,7 @@ const cake: SceneNode[] = [
   narr("Матео просит написать Нильсу: Greta он писать боится. Образец есть — его записка Дане."),
   {
     t: "game",
+    rule: ["familie/wessen-2"],
     task: "Напишите Нильсу записку от Матео.",
     hint: HINT_LETTER,
     c: letter(
@@ -629,9 +641,10 @@ const cake: SceneNode[] = [
     then: [narr("Нильс отвечает сразу и без опечаток — очки на месте: «Danke, Mateo!!! Greta hat keine Zeit!!! Aber morgen: Café!!!»")],
     else: [narr("Нильс отвечает сразу, но вслепую: «Dnake, Mtaeo!!! Grtea hat kiene Zeit!!! Morgne: Cfaé!!!» Очки он так и не нашёл.")],
   },
-  { t: "type", task: "Запишите в блокнот слова Греты с салфетки.", answers: ["Das ist unser Schild.", "Das ist unser Schild!"], ru: "Это наша табличка." },
+  { t: "type", rule: ["familie/mein-2"], task: "Запишите в блокнот слова Греты с салфетки.", answers: ["Das ist unser Schild.", "Das ist unser Schild!"], ru: "Это наша табличка." },
   {
     t: "game",
+    rule: ["familie/wessen-1", "familie/mein-3"],
     task: "Нильс присылает альбом Opa. Он закрыт фразой-паролем: поверните диски.",
     hint: HINT_LOCK,
     c: lock([
@@ -653,7 +666,7 @@ const ninety: SceneNode[] = [
   { t: "pic", src: "03-card.jpg", alt: "Поздний вечер в клубе: на экране старого мобильного — пожилой мужчина с открыткой MOIN, покрытой подписями; Хауке и Дана смотрят, Йенсен с кружкой в углу" },
   narr("Поздний вечер. Старый мобильный Нильса пищит: {nachricht}. «Opa hat heute Geburtstag!!! Er ist neunzig!!!»"),
   narr("К сообщению фото: Opa Hansen, седой и весёлый, держит открытку из Киля."),
-  { t: "gap", task: "Сколько лет Opa?", text: "Opa ist heute ___ Jahre alt.", options: ["neunzig", "neunzehn", "neun"], answer: "neunzig", ru: "Дедушке сегодня девяносто лет." },
+  { t: "gap", rule: ["zahlen/zehner-1"], task: "Сколько лет Opa?", text: "Opa ist heute ___ Jahre alt.", options: ["neunzig", "neunzehn", "neun"], answer: "neunzig", ru: "Дедушке сегодня девяносто лет." },
   hauke("Neunzig! Alles Gute, Opa Hansen!", "Девяносто! С днём рождения, дедушка Хансен!"),
   narr("Хауке увеличивает Foto. {karte} знакомая: одно слово, крупно — MOIN. И подписи: Namen, Namen, Namen."),
   {
@@ -702,6 +715,7 @@ const ninety: SceneNode[] = [
   jensen("Moin.", "Привет."),
   {
     t: "reply",
+    rule: ["familie/mein-2"],
     task: "Йенсен поднимает кружку. Спросите его прямо: это ваш друг?",
     options: [
       ok("Ist das Ihr Freund?"),
@@ -725,6 +739,7 @@ const ninety: SceneNode[] = [
   narr("Ещё сообщение. Нильс пишет медленно — видимо, под диктовку Opa."),
   {
     t: "game",
+    rule: ["kennenlernen/wortstellung-3"],
     task: "Соберите вопрос Opa.",
     hint: "Глагол в вопросе «да или нет» — на первом месте.",
     c: order(["Ist", "unser", "Schild", "noch", "da?"], ["Schild", "da?", "unser", "Ist", "noch"]),

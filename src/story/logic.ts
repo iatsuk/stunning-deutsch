@@ -804,8 +804,14 @@ function validateScene(
   // Последствия и условия говорят только о часах и отношениях из TRACKS.
   const effects = (set?: Effects) => !set || Object.keys(set).every((q) => TRACKS[q]);
   const conds = (list?: Cond[]) => !list || (list.length > 0 && list.every((c) => TRACKS[c.q]));
+  // Правило объясняет действие игрока, поэтому стоит только у действий; ссылка — «тема/фрагмент».
+  const rules = (n: SceneNode) =>
+    !n.rule ||
+    (["reply", "type", "gap", "hear", "pick", "look", "game"].includes(n.t) &&
+      n.rule.length > 0 &&
+      n.rule.every((r) => /^[\w-]+\/[\w-]+$/.test(r)));
   return nodes.every((n) => {
-    if (!effects(n.set)) return false;
+    if (!effects(n.set) || !rules(n)) return false;
     switch (n.t) {
       case "narr":
         return phraseIds(n.text).every((id) => phrases[id]);

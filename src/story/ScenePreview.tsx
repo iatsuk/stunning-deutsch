@@ -7,7 +7,8 @@ import { ChallengeView } from "./ChallengeView";
 import { phrases } from "./data";
 import { mnemonic } from "./mnemonics";
 import { beatPhrases, initialAnswer, isCorrect } from "./logic";
-import { flatNodes, keyOf, nodeAt, shownWords, worldAfter } from "./scene";
+import { flatNodes, keyOf, nodeAt, sceneRules, shownWords, worldAfter } from "./scene";
+import { RuleCard } from "./RuleCard";
 import { sceneChapters } from "./scenes";
 import type { Answer, SceneNode } from "./types";
 import { TRACKS, type World } from "./world";
@@ -96,6 +97,26 @@ export function ScenePreview() {
   const words = scenes
     .slice(0, save.at)
     .flatMap((_, i) => shownWords(flatNodes(nodesOf(i))));
+  // Правила прошлых сцен главы уже встречались: у задания они свёрнуты, новое — открыто.
+  const rulesSeen = [
+    ...new Set(
+      scenes
+        .slice(first, save.at)
+        .flatMap((s) => (s.challenge.kind === "play" ? sceneRules(s.challenge.nodes) : [])),
+    ),
+  ];
+  // В блокноте — правила пройденных действий главы, по порядку.
+  const rulesMet = [
+    ...new Set(
+      chapter.beats.flatMap((s) =>
+        (save.drafts[s.id] ?? []).flatMap((entry) =>
+          s.challenge.kind === "play"
+            ? (nodeAt(s.challenge.nodes, keyOf(entry))?.rule ?? [])
+            : [],
+        ),
+      ),
+    ),
+  ];
   const now = worldBefore(scenes.length);
   // Блокнот и инвентарь собираются из пройденных узлов всех сцен.
   const gains = chapter.beats.flatMap((s) =>
@@ -222,6 +243,7 @@ export function ScenePreview() {
                 rich={rich}
                 world={before}
                 known={words}
+                rules={rulesSeen}
                 game={{
                   value,
                   seed: beat.id,
@@ -312,6 +334,14 @@ export function ScenePreview() {
               </ul>
             ) : (
               <p>Пока пусто. Улики и предметы появятся по ходу сцен.</p>
+            )}
+            {rulesMet.length > 0 && (
+              <>
+                <div className="kicker">Правила главы</div>
+                {rulesMet.map((id) => (
+                  <RuleCard key={id} id={id} open={false} />
+                ))}
+              </>
             )}
             <p className="moin-route-note">
               Действий в сценах:{" "}

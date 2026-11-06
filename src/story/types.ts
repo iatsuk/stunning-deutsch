@@ -40,7 +40,14 @@ export type Branch = { label: string; icon: string; nodes: SceneNode[]; optional
  * идёт через действия игрока, а не между отдельными играми. У любого узла могут быть
  * последствия set: они срабатывают, когда узел пройден.
  */
-export type SceneNode = SceneStep & { set?: Effects };
+export type SceneNode = SceneStep & {
+  set?: Effects;
+  /**
+   * Правила к действию — фрагменты разбора уроков «тема/фрагмент», как у шагов основной игры
+   * (`src/story/rules.ts`): карточка стоит рядом с заданием, новая открыта, знакомая — свёрнута.
+   */
+  rule?: string[];
+};
 type SceneStep =
   /** Рассказчик по-русски; немецкие единицы — {id}, как в рассказе шагов. */
   | { t: "narr"; text: string }

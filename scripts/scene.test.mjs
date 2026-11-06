@@ -139,6 +139,28 @@ test("everything the player examines is named in German, once per chapter", () =
   }
 });
 
+test("tasks explain their grammar with lesson fragments up to their chapter", () => {
+  // Как в основной игре (A1-STORY.md, «Правила в игре»): правило — фрагмент разбора урока с
+  // таблицей или схемой. Глава сцен N берёт уроки 1–N: окончания глаголов из урока 1 нужны и
+  // во второй главе («Nils kommt aus Hamburg», отзыв автора 6 ноября).
+  const rules = JSON.parse(readFileSync(new URL("../src/generated/story-rules.json", import.meta.url)));
+  const lessons = ["kennenlernen", "zahlen", "familie", "essen", "einkaufen", "tagesablauf", "freizeit", "wohnen", "stadt", "gesundheit", "arbeit", "reisen"];
+  sceneChapters.forEach((chapter, i) => {
+    const all = chapter.beats.flatMap((beat) => flatNodes(nodes(beat)));
+    for (const n of all.filter((n) => n.rule))
+      for (const ref of n.rule) {
+        assert.ok(rules[ref]?.point && (rules[ref].table || rules[ref].rows?.length), ref);
+        assert.ok(lessons.indexOf(ref.split("/")[0]) <= i, `${chapter.id}: ${ref} — урок ещё впереди`);
+      }
+    // Замок и записка проверяют грамматику целой фразой: без правила их проходят перебором.
+    for (const n of all.filter((n) => n.t === "game" && (n.c.kind === "lock" || n.c.kind === "letter")))
+      assert.ok(n.rule?.length, `${chapter.id}: ${n.task}`);
+    assert.ok(all.filter((n) => n.rule).length >= 10, chapter.id);
+  });
+  const nils = sceneChapters[1].beats.flatMap((b) => flatNodes(nodes(b))).find((n) => n.t === "type" && n.answers.includes("Nils kommt aus Hamburg."));
+  assert.ok(nils.rule.includes("kennenlernen/endungen-1"));
+});
+
 test("a typed answer with a free part shows a sample that fits, not a name in the wrong place", () => {
   for (const beat of allScenes)
     for (const n of flatNodes(nodes(beat)))
@@ -320,6 +342,11 @@ test("validation knows only real clocks and keeps conditions off required branch
   const scene = (nodes) => ({ ...sceneChapter1, beats: [{ ...scenes[0], id: "x", challenge: { kind: "play", nodes } }] });
   const narr = { t: "narr", text: "Текст." };
   assert.deepEqual(validateStory([scene([narr])], phrases), []);
+  // Правило — только у действия и только ссылкой «тема/фрагмент».
+  const gap = { t: "gap", task: "x", text: "Ich ___.", options: ["bin", "ist"], answer: "bin" };
+  assert.deepEqual(validateStory([scene([{ ...gap, rule: ["kennenlernen/endungen-3"] }])], phrases), []);
+  assert.notDeepEqual(validateStory([scene([{ ...narr, rule: ["kennenlernen/endungen-3"] }])], phrases), []);
+  assert.notDeepEqual(validateStory([scene([{ ...gap, rule: ["endungen"] }])], phrases), []);
   assert.notDeepEqual(validateStory([scene([{ ...narr, set: { bogus: 1 } }])], phrases), []);
   assert.notDeepEqual(validateStory([scene([{ t: "when", if: [{ q: "bogus", min: 1 }], then: [narr] }])], phrases), []);
   const branch = (extra) => ({ label: "Ветка", icon: "•", nodes: [narr], ...extra });

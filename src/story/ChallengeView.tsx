@@ -84,6 +84,7 @@ export function ChallengeView({
   rich,
   world,
   known,
+  rules,
 }: {
   c: Challenge;
   game: GameProps;
@@ -93,6 +94,8 @@ export function ChallengeView({
   world?: World;
   /** Слова, которые прошлые сцены главы уже показали. */
   known?: string[];
+  /** Правила, которые прошлые сцены главы уже показали. */
+  rules?: string[];
 }) {
   const shown: Answer = game.value;
   const list = Array.isArray(shown) ? shown : [];
@@ -101,7 +104,7 @@ export function ChallengeView({
   const { disabled, change } = game;
   return (
     <>
-      {c.kind === "play" && <SceneView c={c} {...game} rich={rich} world={world} known={known} />}
+      {c.kind === "play" && <SceneView c={c} {...game} rich={rich} world={world} known={known} rules={rules} />}
       {c.kind === "match" && <Pairs c={c} {...game} />}
       {c.kind === "write" && <Write c={c} {...game} />}
       {c.kind === "bingo" && <Bingo c={c} {...game} />}

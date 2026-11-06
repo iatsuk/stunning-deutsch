@@ -49,6 +49,7 @@ const countdown: SceneNode[] = [
   hauke("Hast du Zeit? Wir haben eine Frage: Wer ist Nils H.?", "У тебя есть время? У нас вопрос: кто такой Нильс Х.?", ["haben", "die Zeit", "die Frage"]),
   {
     t: "reply",
+    rule: ["zahlen/haben-1"],
     task: "Ответьте Хауке: время у вас есть.",
     options: [
       ok("Ja, ich habe Zeit."),
@@ -63,7 +64,7 @@ const countdown: SceneNode[] = [
     hint: "Что оборвано и что написано не до конца?",
     c: spot("Anhänger", ["Club Kiellinie|Gästezimmer 1…", "Nils H.|Hamburg", "Telefon: siehe Büro"], ["Gästezimmer 1…", "Telefon: siehe Büro"]),
   },
-  { t: "type", task: "Запишите в блокнот, что известно о Нильсе: «Нильс из Гамбурга».", answers: ["Nils kommt aus Hamburg.", "Er kommt aus Hamburg."], ru: "Нильс из Гамбурга." },
+  { t: "type", rule: ["kennenlernen/endungen-1"], task: "Запишите в блокнот, что известно о Нильсе: «Нильс из Гамбурга».", answers: ["Nils kommt aus Hamburg.", "Er kommt aus Hamburg."], ru: "Нильс из Гамбурга." },
   narr("Гостевые комнаты — {gaestezimmer} — с десятой по девятнадцатую. Номер на бирке начинается на 1, значит, подходит любая."),
   {
     t: "pick",
@@ -146,7 +147,7 @@ const queue: SceneNode[] = [
   },
   dana("Moin! Ich habe Brot. Und ich habe die Nummer dreiundzwanzig.", "Привет! У меня хлеб. И у меня номерок двадцать три.", ["das Brot"]),
   narr("Дана шла в пекарню, а пришла сюда: в Киле все домики белые. Автомат дал номерок, и она взяла. Врачи с автоматами не спорят."),
-  { t: "gap", task: "Что есть у Даны?", text: "Dana ___ Brot und die Nummer dreiundzwanzig.", options: ["hat", "habe", "hast"], answer: "hat", ru: "У Даны есть хлеб и номерок двадцать три." },
+  { t: "gap", rule: ["zahlen/haben-1"], task: "Что есть у Даны?", text: "Dana ___ Brot und die Nummer dreiundzwanzig.", options: ["hat", "habe", "hast"], answer: "hat", ru: "У Даны есть хлеб и номерок двадцать три." },
   narr("По дороге Дана заблудилась в коридоре, где {gaestezimmer}. За одной дверью кто-то храпел, на ручке висела красная куртка."),
   dana("Da ist ein Schild: Wir haben Pause! Und die Nummer … zwölf? Oder zwanzig?", "Там табличка: «У нас перерыв!» А номер… двенадцать? Или двадцать?"),
   {
@@ -194,6 +195,7 @@ const queue: SceneNode[] = [
   },
   {
     t: "game",
+    rule: ["kennenlernen/wortstellung-1", "zahlen/haben-1"],
     task: "Дана шепчет вам на ухо. Соберите её фразу.",
     hint: "Подлежащее, глагол на втором месте, потом остальное.",
     c: order(["Der", "Club", "hat", "Geburtstag."], ["Geburtstag.", "hat", "Club", "Der"]),
@@ -225,6 +227,7 @@ const guestbook: SceneNode[] = [
   petersen("Moin! Haben Sie Fragen?", "Здравствуйте! У вас есть вопросы?"),
   {
     t: "reply",
+    rule: ["kennenlernen/wortstellung-3", "zahlen/haben-1"],
     task: "Спросите про Нильса — вежливо, вопросом «да или нет».",
     options: [
       ok("Ja. Hat Nils Hansen ein Handy?"),
@@ -262,6 +265,7 @@ const guestbook: SceneNode[] = [
           petersen("Und Nils? Buchstabieren Sie, bitte!", "А Нильс? Назовите по буквам, пожалуйста!", ["buchstabieren"]),
           {
             t: "reply",
+            rule: ["zahlen/alphabet-1"],
             task: "Назовите Nils по буквам.",
             options: [
               ok("En – I – El – Es"),
@@ -288,7 +292,7 @@ const guestbook: SceneNode[] = [
             answer: "HEL",
           },
           { t: "type", task: "Запишите номер кольца в блокнот: буквы и цифры.", answers: ["HEL 7305", "HEL7305", "HEL-7305"], ru: "HEL 7305" },
-          { t: "gap", task: "Подпишите находку.", text: "Die Möwe ___ eine Nummer: HEL 7305.", options: ["hat", "habe", "haben"], answer: "hat", ru: "У чайки есть номер: HEL 7305." },
+          { t: "gap", rule: ["zahlen/haben-1"], task: "Подпишите находку.", text: "Die Möwe ___ eine Nummer: HEL 7305.", options: ["hat", "habe", "haben"], answer: "hat", ru: "У чайки есть номер: HEL 7305." },
           elif("Die Postleitzahl, bitte! Frau Petersen?", "Индекс, пожалуйста! Фрау Петерсен?", ["die Postleitzahl"]),
           narr("Фрау Петерсен обожает индексы. Она бросает очередь и ищет индекс птичьей станции. Ваш номерок гаснет на табло."),
           petersen("Die Postleitzahl ist zwei, vier, eins, fünf, neun.", "Индекс: два, четыре, один, пять, девять."),
@@ -311,6 +315,7 @@ const guestbook: SceneNode[] = [
           petersen("Formular A achtunddreißig. Wie heißt Ihr Boot? Buchstabieren, bitte!", "Формуляр A38. Как называется ваша лодка? По буквам, пожалуйста!"),
           {
             t: "reply",
+            rule: ["zahlen/alphabet-1"],
             task: "Назовите по буквам: Sprotte.",
             options: [
               ok("Es – Pe – Er – O – Te – Te – E"),
@@ -380,11 +385,12 @@ const gullDiary: SceneNode[] = [
     answer: "У меня есть номер",
   },
   gullSays("Ich habe elf Karten. Nein: zwölf!", "У меня одиннадцать карточек. Нет: двенадцать!"),
-  { t: "gap", task: "Сколько карточек у чайки?", text: "Ich ___ zwölf Karten.", options: ["habe", "hat", "bin"], answer: "habe", ru: "У меня двенадцать карточек." },
+  { t: "gap", rule: ["zahlen/haben-1"], task: "Сколько карточек у чайки?", text: "Ich ___ zwölf Karten.", options: ["habe", "hat", "bin"], answer: "habe", ru: "У меня двенадцать карточек." },
   gullSays("Ich habe zwölf Jahre.", "Я «имею» двенадцать лет."),
   narr("Так говорит и Матео, когда торопится. По-немецки возраст не «имеют»: его «есть» — с sein."),
   {
     t: "type",
+    rule: ["zahlen/ja-nein-3"],
     task: "Исправьте чайку: «Мне двенадцать лет».",
     answers: ["Ich bin zwölf Jahre alt.", "Ich bin zwölf.", "Ich bin zwölf Jahre alt!"],
     ru: "Мне двенадцать лет.",
@@ -408,6 +414,7 @@ const gift: SceneNode[] = [
   hauke("Hallo? Nils? Greta? Haben Sie Zeit?", "Алло? Нильс? Грета? У вас есть время?"),
   {
     t: "reply",
+    rule: ["zahlen/haben-1"],
     task: "Добавьте через дверь главное — вежливо.",
     options: [
       ok("Wir haben eine Frage: Wo ist das Schild?"),
@@ -419,6 +426,7 @@ const gift: SceneNode[] = [
   narr("В конверте старый мобильный и записка — конечно, с восклицательными знаками."),
   {
     t: "game",
+    rule: ["zahlen/haben-1"],
     task: "Записку помяло дверью. Вставьте формы haben.",
     hint: "ich habe, er / sie hat, wir haben.",
     c: gaps("Hallo!!! Ich ___ zwei Handys!!! Das Handy ist für dich!!! Greta ___ eine Frage: Wer bist du??? Wir ___ Pause!!! PIN: dreiundzwanzig – einundzwanzig!!! Nils", ["habe", "hat", "haben", "hast"], ["habe", "hat", "haben"]),
@@ -445,7 +453,7 @@ const gift: SceneNode[] = [
   },
   dana("Wie alt ist das Schild?", "Сколько лет табличке?"),
   hauke("Das Schild ist fünfzig Jahre alt!", "Табличке пятьдесят лет!", ["das Jahr", "alt"]),
-  { t: "gap", task: "Сколько лет табличке?", text: "Das Schild ist fünfzig Jahre ___.", options: ["alt", "neu", "groß"], answer: "alt", ru: "Табличке пятьдесят лет." },
+  { t: "gap", rule: ["zahlen/ja-nein-3"], task: "Сколько лет табличке?", text: "Das Schild ist fünfzig Jahre ___.", options: ["alt", "neu", "groß"], answer: "alt", ru: "Табличке пятьдесят лет." },
   {
     t: "pick",
     task: "Что меняет это фото?",
@@ -469,11 +477,12 @@ const gift: SceneNode[] = [
       ["moin", "Ответила на письмо одним «Moin!»", "greta", "✉️"],
     ]),
   },
-  { t: "type", task: "Ответьте Нильсу: «У меня есть фото».", answers: ["Ich habe das Foto.", "Ich habe ein Foto.", "Ich habe die Fotos."], ru: "У меня есть фото." },
+  { t: "type", rule: ["zahlen/haben-1"], task: "Ответьте Нильсу: «У меня есть фото».", answers: ["Ich habe das Foto.", "Ich habe ein Foto.", "Ich habe die Fotos."], ru: "У меня есть фото." },
   narr("Нильс отвечает мгновенно: «Super!!! Und wie alt ist Hauke???» Хауке польщён."),
   hauke("Fünfundzwanzig! Ich bin fünfundzwanzig.", "Двадцать пять! Мне двадцать пять."),
   {
     t: "reply",
+    rule: ["zahlen/ja-nein-3"],
     task: "Напишите Нильсу, сколько лет Хауке.",
     options: [
       ok("Hauke ist fünfundzwanzig."),
@@ -538,6 +547,7 @@ const refusal: SceneNode[] = [
   narr("{key} — в шкафчике для ключей. На дверце словесный замок, как у Йенсена: цифры фрау Петерсен путает, а фразы помнит."),
   {
     t: "game",
+    rule: ["zahlen/haben-1", "kennenlernen/endungen-3"],
     task: "Откройте шкафчик: поверните диски.",
     hint: HINT_LOCK,
     c: lock([
@@ -551,6 +561,7 @@ const refusal: SceneNode[] = [
   narr("Гости отвечают только письменно — значит, и подарок нужно предложить письменно. Образец письма у фрау Петерсен есть на всё."),
   {
     t: "game",
+    rule: ["zahlen/haben-1"],
     task: "Напишите Грете письмо от имени фрау Петерсен.",
     hint: HINT_LETTER,
     c: letter(
@@ -571,7 +582,7 @@ const refusal: SceneNode[] = [
   narr("На пороге Грета: короткая светлая стрижка, карандаш за ухом, рабочий комбинезон. Она читает письмо и пишет ответ на обороте."),
   hauke("Nein, danke. Zimmer zwölf ist gut. Bitte nicht fragen. Greta.", "Нет, спасибо. Комната двенадцать хорошая. Пожалуйста, не спрашивайте. Грета."),
   { t: "gap", task: "Что ответила Грета?", text: "Nein, danke. Zimmer zwölf ist ___.", options: ["gut", "neu", "groß"], answer: "gut", ru: "Нет, спасибо. Комната двенадцать хорошая." },
-  { t: "type", task: "Спросите Грету письменно: «У тебя есть время?»", answers: ["Hast du Zeit?", "Haben Sie Zeit?", "Greta, hast du Zeit?"], ru: "У тебя есть время?" },
+  { t: "type", rule: ["zahlen/check-3"], task: "Спросите Грету письменно: «У тебя есть время?»", answers: ["Hast du Zeit?", "Haben Sie Zeit?", "Greta, hast du Zeit?"], ru: "У тебя есть время?" },
   narr("Грета пишет одно слово — «Nein.» — и закрывает дверь. Тихо, но очень твёрдо."),
   {
     t: "pick",
@@ -697,7 +708,7 @@ const evening: SceneNode[] = [
   },
   dana("Aber ein Fest … Der Club hat Geburtstag!", "Но праздник… У клуба же день рождения!"),
   narr("Ошибка Даны попала в точку дважды: Farbe — лодочная, а Fest — настоящий. Йенсен в углу поперхнулся чаем."),
-  { t: "type", task: "Запишите в блокнот: «Клубу сто лет».", answers: ["Der Club ist hundert Jahre alt.", "Der Club ist hundert.", "Der Club ist hundert Jahre alt!"], ru: "Клубу сто лет." },
+  { t: "type", rule: ["zahlen/ja-nein-3"], task: "Запишите в блокнот: «Клубу сто лет».", answers: ["Der Club ist hundert Jahre alt.", "Der Club ist hundert.", "Der Club ist hundert Jahre alt!"], ru: "Клубу сто лет." },
   {
     t: "reply",
     task: "Поздравьте клуб — пока шёпотом.",

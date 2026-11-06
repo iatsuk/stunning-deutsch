@@ -51,6 +51,7 @@ const stands: SceneNode[] = [
   mateo("Moin! Kaffee für alle!", "Привет! Кофе всем!", ["der Kaffee"]),
   {
     t: "reply",
+    rule: ["essen/akkusativ-3", "essen/moechten-1"],
     task: "Матео протягивает вам чашку. Попросите вежливо чай.",
     options: [
       ok("Ich möchte einen Tee, bitte."),
@@ -62,6 +63,7 @@ const stands: SceneNode[] = [
   narr("Это не вопрос. Это предложение, от которого нельзя отказаться. Хауке пьёт уже zwei Tassen Kaffee и подмигивает."),
   {
     t: "game",
+    rule: ["essen/akkusativ-3"],
     task: "Матео разливает напитки и путает артикли. Разложите заказы: einen, eine или ein?",
     hint: "Меняется только мужской род: der Kaffee → einen Kaffee. die Cola → eine Cola, das Wasser → ein Wasser.",
     c: sort([["einen", "einen …"], ["eine", "eine …"], ["ein", "ein …"]], [
@@ -107,6 +109,7 @@ const stands: SceneNode[] = [
   derya("Möchten Sie einen Döner?", "Хотите донер?"),
   {
     t: "reply",
+    rule: ["essen/negation-2", "essen/akkusativ-3"],
     task: "Десять утра, вы только что завтракали. Откажитесь вежливо.",
     options: [
       ok("Nein, danke. Ich habe keinen Hunger."),
@@ -135,7 +138,7 @@ const stands: SceneNode[] = [
       ["Грета сегодня в кафе", true, "«Greta ist heute im Café!!!» — пишет Нильс."],
     ]),
   },
-  { t: "type", task: "Запишите в блокнот, что Матео пьёт всегда.", answers: ["Mateo trinkt immer Kaffee.", "Er trinkt immer Kaffee.", "Mateo trinkt Kaffee."], ru: "Матео всегда пьёт кофе." },
+  { t: "type", rule: ["kennenlernen/endungen-1"], task: "Запишите в блокнот, что Матео пьёт всегда.", answers: ["Mateo trinkt immer Kaffee.", "Er trinkt immer Kaffee.", "Mateo trinkt Kaffee."], ru: "Матео всегда пьёт кофе." },
   {
     t: "clue",
     title: "Kaffee? Ja.",
@@ -151,11 +154,12 @@ const table: SceneNode[] = [
   kellner("Guten Morgen! Was möchten Sie?", "Доброе утро! Что желаете?", ["möchten"]),
   mateo("Ein Kaffee für alle! Und ein Kuchen!", "Один кофе на всех! И один пирог!"),
   narr("Kellner поднимает бровь: ein Kaffee für alle? Матео хотел сказать «каждому». С падежами он обращается как с солью — на глаз."),
-  { t: "gap", task: "Поправьте Матео: так заказывают кофе.", text: "___ Kaffee, bitte!", options: ["Einen", "Ein", "Eine"], answer: "Einen", ru: "Кофе, пожалуйста!" },
+  { t: "gap", rule: ["essen/akkusativ-3"], task: "Поправьте Матео: так заказывают кофе.", text: "___ Kaffee, bitte!", options: ["Einen", "Ein", "Eine"], answer: "Einen", ru: "Кофе, пожалуйста!" },
   hauke("Einen Kaffee und ein Stück Kuchen, bitte!", "Кофе и кусок пирога, пожалуйста!", ["das Stück"]),
   dana("Einen Kaffee, bitte. Kuchen? Nein, danke. Ich habe keinen Hunger.", "Кофе, пожалуйста. Пирог? Нет, спасибо. Я не голодна.", ["Hunger haben"]),
   {
     t: "game",
+    rule: ["essen/akkusativ-3"],
     task: "Ваша очередь: Kellner спрашивает вас.",
     hint: "der Tee, der Kuchen — мужского рода: einen Tee, keinen Kuchen.",
     c: {
@@ -258,6 +262,7 @@ const table: SceneNode[] = [
   mateo("Keinen Kaffee? Das bin ich nicht!", "Без кофе? Это точно не я!"),
   {
     t: "type",
+    rule: ["essen/check-3", "essen/akkusativ-3"],
     task: "Запишите в блокнот, что взял мужчина.",
     answers: ["Er nimmt einen Tee.", "Der Mann nimmt einen Tee.", "Er möchte keinen Kaffee.", "Der Mann möchte keinen Kaffee.", "Einen Tee, keinen Kaffee."],
     ru: "Он берёт чай. / Он не хочет кофе.",
@@ -276,7 +281,7 @@ const witnesses: SceneNode[] = [
   narr("Wer trinkt Tee, aber keinen Kaffee? Матео отпадает. Хауке тут же находит новую версию — ближе к Грете некуда."),
   hauke("Nils! Er ist ihr Bruder. Nils und Greta im Café – ganz klar!", "Нильс! Он её брат. Нильс и Грета в кафе — ясно как день!"),
   narr("Свидетелей двое. Нильс — на связи по старому Handy. А у киоска с fünf Uhr стоит Фрауке: оттуда видна вся Kiellinie."),
-  { t: "gap", task: "Чей брат Нильс?", text: "Nils ist ___ Bruder.", options: ["ihr", "sein", "dein"], answer: "ihr", ru: "Нильс — её брат." },
+  { t: "gap", rule: ["familie/wessen-1"], task: "Чей брат Нильс?", text: "Nils ist ___ Bruder.", options: ["ihr", "sein", "dein"], answer: "ihr", ru: "Нильс — её брат." },
   {
     t: "go",
     task: "Кого расспросить?",
@@ -294,10 +299,11 @@ const witnesses: SceneNode[] = [
             hint: "Из десяти фактов Нильса важны обычно один-два.",
             c: spot("Nachricht von Nils", ["Hallo!!!!!!!|Mein Handy ist super!!!!!!!", "Ich trinke Kaffee!!!!!!!|Keinen Tee!!!!!!!", "Greta trinkt immer Cola!!!!!!!|Opa ist neunzig!!!!!!!"], ["Ich trinke Kaffee!!!!!!!", "Greta trinkt immer Cola!!!!!!!"]),
           },
-          { t: "gap", task: "Что пьёт Нильс?", text: "Nils trinkt ___ Tee.", options: ["keinen", "kein", "nicht"], answer: "keinen", ru: "Нильс не пьёт чай." },
+          { t: "gap", rule: ["essen/negation-2"], task: "Что пьёт Нильс?", text: "Nils trinkt ___ Tee.", options: ["keinen", "kein", "nicht"], answer: "keinen", ru: "Нильс не пьёт чай." },
           narr("Also: die Cola an Tisch vier — Greta. Der Tee — того, кто сидел с ней. Нильс в это время пил Kaffee в Zimmer zwölf."),
           {
             t: "reply",
+            rule: ["essen/gern-1"],
             task: "Нильс спрашивает: «Kaffee oder Tee???!!!» Ответьте за себя.",
             options: [
               ok("Ich trinke gern Tee."),
@@ -305,7 +311,7 @@ const witnesses: SceneNode[] = [
               no("Ich trinke gern keinen.", "Без существительного kein не стоит: Ich trinke keinen Kaffee."),
             ],
           },
-          { t: "type", task: "Запишите вывод о Нильсе.", answers: ["Nils trinkt keinen Tee.", "Er trinkt keinen Tee.", "Nils trinkt Kaffee."], ru: "Нильс не пьёт чай." },
+          { t: "type", rule: ["essen/negation-2"], task: "Запишите вывод о Нильсе.", answers: ["Nils trinkt keinen Tee.", "Er trinkt keinen Tee.", "Nils trinkt Kaffee."], ru: "Нильс не пьёт чай." },
         ],
       },
       {
@@ -403,7 +409,7 @@ const kitchen: SceneNode[] = [
   },
   { t: "game", task: "Матео подписывает банки для пробы. Подскажите по буквам.", hint: HINT_SPELL, c: letters(["das Gemüse", "die Tomate", "die Tüte"]) },
   mateo("Gemüse von Greta! Tomaten, Karotten … aber keine Zwiebeln?", "Овощи от Греты! Помидоры, морковь… а лука нет?", ["das Gemüse"]),
-  { t: "gap", task: "Чего нет в пакете?", text: "Das ist Gemüse, aber ___ Zwiebeln.", options: ["keine", "kein", "nicht"], answer: "keine", ru: "Это овощи, но без лука." },
+  { t: "gap", rule: ["essen/akkusativ-3"], task: "Чего нет в пакете?", text: "Das ist Gemüse, aber ___ Zwiebeln.", options: ["keine", "kein", "nicht"], answer: "keine", ru: "Это овощи, но без лука." },
   narr("Под пакетом лежит бланк заказа «Kuchen für hundert». Внизу вместо подписи — круглый коричневый {fleck}, как от кружки с чаем."),
   narr("Снаружи шаги: Хауке идёт на запах. Матео накрывает бланк полотенцем."),
   hauke("Mateo! Was ist das? Ein Kuchen?", "Матео! Что это? Пирог?"),
@@ -503,6 +509,7 @@ const napkin: SceneNode[] = [
   },
   {
     t: "game",
+    rule: ["essen/akkusativ-2"],
     task: "Соберите вывод Даны.",
     hint: "Глагол — на втором месте. der Mann после fragt становится den Mann.",
     c: order(["Greta", "fragt", "den", "Mann:", "Farbe?"], ["den", "Farbe?", "Greta", "Mann:", "fragt"]),
@@ -522,6 +529,7 @@ const tea: SceneNode[] = [
   dana("Also: Der Mann trinkt Tee. Er möchte keinen Kaffee. Er ist groß.", "Итак: мужчина пьёт чай. Кофе он не хочет. Он высокий."),
   {
     t: "game",
+    rule: ["essen/akkusativ-3", "essen/negation-2"],
     task: "Блокнот закрыт на фразы дня. Поверните диски.",
     hint: HINT_LOCK,
     c: lock([
@@ -545,6 +553,7 @@ const tea: SceneNode[] = [
   jensen("Moin.", "Привет."),
   {
     t: "reply",
+    rule: ["kennenlernen/pronomen-1"],
     task: "Окликните Йенсена и спросите прямо: он пьёт кофе?",
     options: [
       ok("Herr Jensen, trinken Sie Kaffee?"),
@@ -577,6 +586,7 @@ const tea: SceneNode[] = [
   { t: "gap", task: "Что пьёт Йенсен?", text: "Herr Jensen trinkt nur ___.", options: ["Tee", "Kaffee", "Cola"], answer: "Tee", ru: "Господин Йенсен пьёт только чай." },
   {
     t: "game",
+    rule: ["essen/akkusativ-3"],
     task: "Заполните карточку столика четыре.",
     hint: "Напитки — с артиклем в винительном: einen Tee, eine Cola, keinen Kaffee.",
     c: write("Tisch vier", [
@@ -588,6 +598,7 @@ const tea: SceneNode[] = [
   narr("Тот же Tee, тот же рост, то же молчание. Но «Farbe?» — к кому вопрос? Дана предлагает написать Грете: danke — и keine Fragen."),
   {
     t: "game",
+    rule: ["essen/akkusativ-3"],
     task: "Напишите Грете записку по образцу: записке Даны Матео.",
     hint: HINT_LETTER,
     c: letter(
@@ -623,6 +634,7 @@ const tea: SceneNode[] = [
   { t: "game", task: "Хауке репетирует фразы для кафе. Повторите за ним вслух.", hint: HINT_SAY, c: speak(["Zusammen oder getrennt?", "Guten Appetit!", "die Speisekarte"]) },
   {
     t: "type",
+    rule: ["essen/negation-2"],
     task: "Запишите в блокнот главное за день.",
     answers: ["Der Mann trinkt Tee, keinen Kaffee.", "Der Mann trinkt Tee und keinen Kaffee.", "Er trinkt Tee, keinen Kaffee.", "Einen Tee, keinen Kaffee."],
     ru: "Мужчина пьёт чай, не кофе.",
@@ -641,7 +653,7 @@ const evening: SceneNode[] = [
   derya("Moin! Was möchtet ihr essen und trinken?", "Привет! Что вы хотели бы поесть и попить?"),
   hauke("Drei Döner und drei Cola!", "Три донера и три колы!"),
   dana("Hauke! Ich esse kein Fleisch.", "Хауке! Я не ем мяса.", ["das Fleisch"]),
-  { t: "gap", task: "Что говорит Дана?", text: "Ich esse ___ Fleisch.", options: ["kein", "keinen", "nicht"], answer: "kein", ru: "Я не ем мяса." },
+  { t: "gap", rule: ["essen/negation-2"], task: "Что говорит Дана?", text: "Ich esse ___ Fleisch.", options: ["kein", "keinen", "nicht"], answer: "kein", ru: "Я не ем мяса." },
   elif("Und ich trinke keine Cola. Einen Saft, bitte!", "А я не пью колу. Сок, пожалуйста!"),
   {
     t: "hear",
@@ -653,6 +665,7 @@ const evening: SceneNode[] = [
   },
   {
     t: "game",
+    rule: ["essen/akkusativ-3", "essen/negation-2"],
     task: "Исправьте заказ Хауке: Дане — рыбу, Элиф — сок.",
     hint: "der Saft → einen Saft; das Fleisch без артикля → kein Fleisch.",
     c: gaps("Zwei Döner, ein Fischbrötchen, zwei Cola und ___ Saft, bitte! Dana isst ___ Fleisch.", ["einen", "kein", "eine", "keinen"], ["einen", "kein"]),
@@ -700,7 +713,7 @@ const evening: SceneNode[] = [
               ["Нильс прячет булочку от чайки", true, "«Die Möwe isst alles!!!!!!!» — он защищал обед."],
             ]),
           },
-          { t: "type", task: "Напишите Фрауке, что было под курткой.", answers: ["Das ist ein Fischbrötchen.", "Das ist nur ein Fischbrötchen.", "Nils hat ein Fischbrötchen."], ru: "Это (всего лишь) рыбная булочка." },
+          { t: "type", rule: ["essen/akkusativ-4"], task: "Напишите Фрауке, что было под курткой.", answers: ["Das ist ein Fischbrötchen.", "Das ist nur ein Fischbrötchen.", "Nils hat ein Fischbrötchen."], ru: "Это (всего лишь) рыбная булочка." },
           { ...narr("Фрауке разочарована: Fischbrötchen — не тайна. Но в журнал киоска записывает честно. Слух сдулся."), set: { rumours: -1 } },
         ],
       },
@@ -722,6 +735,7 @@ const evening: SceneNode[] = [
   narr("«Greta ist morgen nicht da. Sie hat eine Liste. Nummer eins: Farbe.»"),
   {
     t: "game",
+    rule: ["kennenlernen/wortstellung-3"],
     task: "Соберите главный вопрос на завтра.",
     hint: "W-вопрос: вопросительное слово, потом глагол.",
     c: order(["Wer", "hat", "die", "Farbe?"], ["Farbe?", "die", "Wer", "hat"]),

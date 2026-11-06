@@ -21,6 +21,7 @@ import { episodes as gameEpisodes, phrases as storyPhrases } from "../src/story/
 import { sceneChapters } from "../src/story/scenes/index.ts";
 import { audioKey, storyLines, storyWords, validateStory } from "../src/story/logic.ts";
 import { stepRules } from "../src/story/rules.ts";
+import { sceneRules } from "../src/story/scene.ts";
 import { uhrzeit } from "../src/lib/german.ts";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
@@ -170,28 +171,36 @@ if (!ONLY) {
 
 // Правила игры — фрагменты разбора уроков A1: текст и схема берутся отсюда, а не копируются руками.
 const storyRules = {};
+/** Копирует фрагмент разбора урока в правила игры; lessons — до какого урока A1 он может быть. */
+function addRule(where, ref, lessons = Infinity) {
+  const [topicId, beatId] = ref.split("/");
+  const topic = topics.find((t) => t.level === "a1" && t.id === topicId);
+  const beat = topic?.beats.find((b) => b.id === beatId);
+  const { view, table, rows, focus } = beat?.scene ?? {};
+  if (view !== "table" && view !== "sentence") {
+    fail(where, `правило ${ref}: нужен фрагмент урока с таблицей или схемой`);
+    return;
+  }
+  if (topic.order > lessons) fail(where, `правило ${ref}: урок ${topic.order} ещё впереди`);
+  storyRules[ref] ??= {
+    point: beat.point,
+    read: beat.read,
+    ...(view === "table" ? { table: topic.tables[table] } : { rows }),
+    ...(focus ? { focus } : {}),
+  };
+}
 if (!ONLY) {
   const storyBeats = storyEpisodes.flatMap((episode) => episode.beats);
   for (const [step, refs] of Object.entries(stepRules)) {
     if (!storyBeats.some((beat) => beat.id === step)) fail("story", `правило для неизвестного шага ${step}`);
-    for (const ref of refs) {
-      if (storyRules[ref]) continue;
-      const [topicId, beatId] = ref.split("/");
-      const topic = topics.find((t) => t.level === "a1" && t.id === topicId);
-      const beat = topic?.beats.find((b) => b.id === beatId);
-      const { view, table, rows, focus } = beat?.scene ?? {};
-      if (view !== "table" && view !== "sentence") {
-        fail("story", `правило ${ref}: нужен фрагмент урока с таблицей или схемой`);
-        continue;
-      }
-      storyRules[ref] = {
-        point: beat.point,
-        read: beat.read,
-        ...(view === "table" ? { table: topic.tables[table] } : { rows }),
-        ...(focus ? { focus } : {}),
-      };
-    }
+    for (const ref of refs) addRule(step, ref);
   }
+  // Глава сцен N опирается на уроки 1–N: «Nils kommt aus Hamburg» во второй главе — окончания из первой.
+  sceneChapters.forEach((chapter, i) => {
+    for (const beat of chapter.beats)
+      if (beat.challenge.kind === "play")
+        for (const ref of sceneRules(beat.challenge.nodes)) addRule(beat.id, ref, i + 1);
+  });
 }
 
 for (const message of warnings) console.warn(`  ! ${message}`);
