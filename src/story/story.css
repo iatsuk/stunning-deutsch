@@ -2103,6 +2103,10 @@
   color: var(--muted);
   text-align: center;
 }
+.moin-chapters-done {
+  margin-left: 4px;
+  color: var(--accent);
+}
 .moin-chapters small {
   display: block;
   font-size: 11px;

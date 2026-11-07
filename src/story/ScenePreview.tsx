@@ -164,8 +164,8 @@ export function ScenePreview() {
             <h1>Дело о пропавшем Moin</h1>
           </div>
         </header>
-        {/* Как в основной игре: у главы номер (или ✓, когда все сцены пройдены), тема урока и
-            её название — видно, какой урок нужен для главы. */}
+        {/* У главы номер, тема урока и название — видно, какой урок нужен для главы. Пройденная
+            глава получает ✓ рядом с номером, а не вместо него: номера нужны и после прохождения. */}
         <nav className="moin-chapters" aria-label="Главы">
           {chapters.map((c, i) => {
             const from = firstOf(i);
@@ -183,7 +183,8 @@ export function ScenePreview() {
                 }}
               >
                 <span className="moin-chapters-num" aria-hidden="true">
-                  {complete ? "✓" : String(i + 1).padStart(2, "0")}
+                  {String(i + 1).padStart(2, "0")}
+                  {complete && <span className="moin-chapters-done">✓</span>}
                 </span>
                 <span aria-hidden="true">
                   {c.topic}
