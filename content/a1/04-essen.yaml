@@ -232,7 +232,7 @@ tables:
       - [ wir, möcht+en, Wir möchten die Speisekarte. ]
       - [ ihr, möcht+et, Möchtet ihr eine Pizza? ]
       - [ sie / Sie, möcht+en, Was möchten Sie? ]
-    note: "У *ich* и *er / sie / es* формы совпадают: *er möchte* — без *-t*."
+    note: "У *ich* и *er / sie / es* формы совпадают: *er möchte* — без *-t*, потому что *möchte* значит «хотел бы». *möchtet* тоже есть, но только у *ihr*."
   negation:
     title: nicht oder kein?
     ru: Отрицание
@@ -499,6 +499,14 @@ steps:
           möchtet*.
         point: "*ich möchte* = *er möchte*, без *-t*; *du möchtest*, *ihr möchtet*"
         set: { view: table, table: moechten, focus: [ 0, 1, 2, 4 ] }
+      - read: >-
+          Почему у *er* нет *-t*? *möchte* — не обычный глагол в настоящем времени, а «хотел бы»:
+          вежливая форма глагола *mögen*, «нравиться». В грамматиках её называют Konjunktiv II.
+          По-русски тоже «я хотел бы» — «он хотел бы»: форма от лица не меняется. Так устроено
+          целое семейство: в теме 7 будут *ich kann* — *er kann*, в теме 11 — *ich war* — *er
+          war*. У всех *er* звучит как *ich*. А *e* в *du möchtest*, *ihr möchtet* — для
+          произношения: основа кончается на *-t*, без гласной вышло бы *möchtst*.
+        point: "*möchte* — «хотел бы»: у таких форм *er* = *ich*, как *er kann*, *er war*"
 
   - id: gern
     chapter: grammar
@@ -679,7 +687,7 @@ exercises:
     q: Mateo ___ ein Stück Kuchen.
     answer: [ möchte ]
     hint: möchten
-    why: "*er möchte* — без *-t*, как *ich möchte*."
+    why: "*er möchte* — без *-t*, как *ich möchte*: это «хотел бы», и у таких форм *er* звучит как *ich*."
   - type: gap
     q: Was ___ du? – Ich nehme die Suppe.
     answer: [ nimmst ]
@@ -749,6 +757,11 @@ exercises:
     options: [ge·MÜ·se, GE·mü·se]
     answer: 0
     why: "*ge-* безударна, как в *der Geburtstag*: ударен корень."
+  - type: choice
+    q: С каким местоимением говорят *möchtet*?
+    options: [ ihr, er, ich ]
+    answer: 0
+    why: "*Möchtet ihr Kaffee?* — так спрашивают друзей. У *er* и *ich* одна форма без окончания: *möchte*."
 adventure:
   kind: sequence
   title: Угощение для встречи

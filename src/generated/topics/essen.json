@@ -725,7 +725,7 @@
     ]
    ],
    "ruCols": [],
-   "note": "У *ich* и *er / sie / es* формы совпадают: *er möchte* — без *-t*."
+   "note": "У *ich* и *er / sie / es* формы совпадают: *er möchte* — без *-t*, потому что *möchte* значит «хотел бы». *möchtet* тоже есть, но только у *ihr*."
   },
   "negation": {
    "title": "nicht oder kein?",
@@ -1435,6 +1435,99 @@
    "indexInStep": 0,
    "read": "Русское «я хочу кофе» так и тянет перевести как *Ich will Kaffee*, но в кафе это звучит как требование. Вежливо — *Ich möchte*, «я хотел бы». Формы почти правильные, с одной особенностью: у *ich* и *er / sie / es* они совпадают, и у *er* нет *-t*: *Mateo möchte ein Stück Kuchen*. У *du* и *ihr* появляется *e*: *du möchtest*, *ihr möchtet*.",
    "point": "*ich möchte* = *er möchte*, без *-t*; *du möchtest*, *ihr möchtet*",
+   "scene": {
+    "view": "table",
+    "dialogue": "imbiss",
+    "words": "verben",
+    "table": "moechten",
+    "rows": [
+     {
+      "slots": [
+       [
+        {
+         "key": "ich",
+         "text": "Ich"
+        }
+       ],
+       [
+        {
+         "key": "möcht",
+         "text": "möcht+e"
+        }
+       ],
+       [
+        {
+         "key": "ein",
+         "text": "ein+en"
+        },
+        {
+         "key": "kaffee",
+         "text": "Kaffee"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Ich möchte einen Kaffee.",
+      "ru": "Я хотел бы кофе.",
+      "audio": "audio/711269f5648f.m4a"
+     },
+     {
+      "slots": [
+       [
+        {
+         "key": "das",
+         "text": "Das"
+        }
+       ],
+       [
+        {
+         "key": "ist",
+         "text": "ist"
+        }
+       ],
+       [
+        {
+         "key": "ein",
+         "text": "ein"
+        },
+        {
+         "key": "kaffee",
+         "text": "Kaffee"
+        },
+        {
+         "key": "aus",
+         "text": "aus"
+        },
+        {
+         "key": "italien",
+         "text": "Italien"
+        }
+       ],
+       []
+      ],
+      "punct": ".",
+      "plain": "Das ist ein Kaffee aus Italien.",
+      "ru": "Это кофе из Италии.",
+      "audio": "audio/5377f275844e.m4a"
+     }
+    ],
+    "focus": [
+     0,
+     1,
+     2,
+     4
+    ]
+   }
+  },
+  {
+   "id": "moechten-2",
+   "step": "moechten",
+   "stepTitle": "*möchten* — вежливое «хочу»",
+   "chapterIndex": 2,
+   "indexInStep": 1,
+   "read": "Почему у *er* нет *-t*? *möchte* — не обычный глагол в настоящем времени, а «хотел бы»: вежливая форма глагола *mögen*, «нравиться». В грамматиках её называют Konjunktiv II. По-русски тоже «я хотел бы» — «он хотел бы»: форма от лица не меняется. Так устроено целое семейство: в теме 7 будут *ich kann* — *er kann*, в теме 11 — *ich war* — *er war*. У всех *er* звучит как *ich*. А *e* в *du möchtest*, *ihr möchtet* — для произношения: основа кончается на *-t*, без гласной вышло бы *möchtst*.",
+   "point": "*möchte* — «хотел бы»: у таких форм *er* = *ich*, как *er kann*, *er war*",
    "scene": {
     "view": "table",
     "dialogue": "imbiss",
@@ -2509,7 +2602,7 @@
     "möchte"
    ],
    "hint": "möchten",
-   "why": "*er möchte* — без *-t*, как *ich möchte*.",
+   "why": "*er möchte* — без *-t*, как *ich möchte*: это «хотел бы», и у таких форм *er* звучит как *ich*.",
    "audio": "audio/0fac12525334.m4a"
   },
   {
@@ -2670,6 +2763,18 @@
    ],
    "answer": 0,
    "why": "*ge-* безударна, как в *der Geburtstag*: ударен корень."
+  },
+  {
+   "id": "essen-22",
+   "type": "choice",
+   "q": "С каким местоимением говорят *möchtet*?",
+   "options": [
+    "ihr",
+    "er",
+    "ich"
+   ],
+   "answer": 0,
+   "why": "*Möchtet ihr Kaffee?* — так спрашивают друзей. У *er* и *ich* одна форма без окончания: *möchte*."
   }
  ],
  "case": {

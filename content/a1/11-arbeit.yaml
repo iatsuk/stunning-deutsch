@@ -418,8 +418,9 @@ steps:
       - read: >-
           Для *sein* и *haben* о прошлом говорят иначе — короткой формой, Präteritum. *Ich war
           Koch* — «я был поваром», *Ich hatte viel Stress* — «у меня было много стресса». Формы
-          *ich* и *er* совпадают: *ich war*, *er war*, *ich hatte*, *sie hatte*. Остальные
-          окончания вам знакомы: *du warst*, *wir waren*, *ihr hattet*.
+          *ich* и *er* совпадают: *ich war*, *er war*, *ich hatte*, *sie hatte*, — как у *ich
+          möchte* — *er möchte* и *ich kann* — *er kann*. Остальные окончания вам знакомы: *du
+          warst*, *wir waren*, *ihr hattet*.
         point: "*ich war, du warst, er war* · *ich hatte, du hattest, er hatte*"
         set: { view: table, table: praeteritum }
       - read: >-

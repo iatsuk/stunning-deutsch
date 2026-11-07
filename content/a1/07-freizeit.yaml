@@ -406,7 +406,8 @@ steps:
           «мочь» — *Am Samstag kann ich nicht*. В единственном числе гласная меняется: не
           *könn-*, а *kann*. И главное отличие от обычных глаголов: у *ich* и *er* нет
           окончания, обе формы — просто *kann*. Сказать *er kannt* по образцу *er kommt* —
-          очень частая ошибка.
+          очень частая ошибка. Это то же семейство, что *möchte* из темы о еде: *ich möchte* —
+          *er möchte*, тоже без *-t*.
         point: "*können* — «уметь» и «мочь»: *ich kann*, *du kannst*, *er kann*"
         set: { view: table, table: modal, reveal: 3 }
       - read: >-
