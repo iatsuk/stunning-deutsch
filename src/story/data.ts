@@ -405,6 +405,36 @@ export const phrases: Record<string, Phrase> = {
     pl: "Sprachnachrichten",
     note: "die Sprache — язык, речь + die Nachricht — сообщение.",
   },
+  kassenbuch: {
+    ru: "кассовая книга",
+    de: "das Kassenbuch",
+    pl: "Kassenbücher",
+    note: "die Kasse + das Buch: что продано и во сколько. У Фрауке — с минутами.",
+  },
+  terrasse: {
+    ru: "терраса",
+    de: "die Terrasse",
+    pl: "Terrassen",
+    note: "Почти как по-русски. У клуба она сзади, у воды: оттуда не видно входа.",
+  },
+  einbruch: {
+    ru: "взлом",
+    de: "der Einbruch",
+    pl: "Einbrüche",
+    note: "ein + brechen, «ломать внутрь». Любимое слово Матео после детективов.",
+  },
+  werkstatt: {
+    ru: "мастерская",
+    de: "die Werkstatt",
+    pl: "Werkstätten",
+    note: "das Werk — работа, die Statt — место: место, где работают руками.",
+  },
+  teebeutel: {
+    ru: "чайный пакетик",
+    de: "der Teebeutel",
+    pl: "Teebeutel",
+    note: "der Tee + der Beutel, мешочек. Ярлычок на нитке — тоже от него.",
+  },
   neu: {
     ru: "Вы новичок. Вы видите всё.",
     de: "Sie sind neu. Sie sehen alles.",

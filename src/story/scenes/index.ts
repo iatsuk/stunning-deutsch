@@ -3,9 +3,10 @@ import { sceneChapter2 } from "./02.ts";
 import { sceneChapter3 } from "./03.ts";
 import { sceneChapter4 } from "./04.ts";
 import { sceneChapter5 } from "./05.ts";
+import { sceneChapter6 } from "./06.ts";
 import type { Episode } from "../types.ts";
 
 // Главы в формате сцен по порядку: прототип показывает их подряд, сборка их озвучивает.
 // Цель доли немецкого в рассказе по главам — A1-PLOT.md, «Немецкий в рассказе».
-export const sceneChapters: Episode[] = [sceneChapter1, sceneChapter2, sceneChapter3, sceneChapter4, sceneChapter5];
-export const GERMAN_TARGET: Record<string, number> = { "moin-neu": 10, "moin-neu-2": 15, "moin-neu-3": 20, "moin-neu-4": 25, "moin-neu-5": 30 };
+export const sceneChapters: Episode[] = [sceneChapter1, sceneChapter2, sceneChapter3, sceneChapter4, sceneChapter5, sceneChapter6];
+export const GERMAN_TARGET: Record<string, number> = { "moin-neu": 10, "moin-neu-2": 15, "moin-neu-3": 20, "moin-neu-4": 25, "moin-neu-5": 30, "moin-neu-6": 35 };

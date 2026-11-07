@@ -1,0 +1,431 @@
+{
+  "date": "2026-11-07",
+  "scope": "Chapter 6 of the Moin scene prototype (src/story/scenes/06.ts): character lines, Jensen's voice message, the gull interlude, replays, lock, oral practice and new story phrases with plurals",
+  "model": "k2-fsa/OmniVoice",
+  "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+  "candidatesPerPhrase": 3,
+  "asr": "openai/whisper-large-v3",
+  "notes": [
+    "Whisper writes the lone word Tee as \"T.\" and numbers as digits; those takes were compared by hand and say the text as written.",
+    "Mateo's line \"Ich backe … Brot. Nur Brot. Bis in die Nacht!\" lost a word in all three takes; it was rewritten as \"Ich backe nur Brot. Bis in die Nacht!\" and voiced again with four takes.",
+    "The chosen take has the closest transcript, an end level below -32 dB and no fragment flagged by tails.py; tails.py also passes on all 52 imported files."
+  ],
+  "files": [
+    {
+      "file": "5e052d6a326b.m4a",
+      "text": "das Kassenbuch, die Kassenbücher",
+      "voice": "Anna",
+      "seed": 21042891,
+      "heard": "Das Kassenbuch, die Kassenbücher",
+      "endDb": -58.7
+    },
+    {
+      "file": "6789cfa2d965.m4a",
+      "text": "die Terrasse, die Terrassen",
+      "voice": "Anna",
+      "seed": 21005620,
+      "heard": "Die Terrasse, die Terrassen",
+      "endDb": -65.1
+    },
+    {
+      "file": "1e9c34bd6e59.m4a",
+      "text": "der Einbruch, die Einbrüche",
+      "voice": "Anna",
+      "seed": 20830184,
+      "heard": "Der Einbruch, die Einbrüche",
+      "endDb": -56.0
+    },
+    {
+      "file": "10b3c62d920e.m4a",
+      "text": "die Werkstatt, die Werkstätten",
+      "voice": "Anna",
+      "seed": 20334621,
+      "heard": "Die Werkstatt. Die Werkstätten.",
+      "endDb": -60.9
+    },
+    {
+      "file": "61b22f15fc61.m4a",
+      "text": "der Teebeutel, die Teebeutel",
+      "voice": "Anna",
+      "seed": 20311920,
+      "heard": "Der Teebeutel. Die Teebeutel.",
+      "endDb": -54.7
+    },
+    {
+      "file": "f8c35ba8ca92.m4a",
+      "text": "Hört zu! Herr Jensen spricht!",
+      "voice": "Anna",
+      "seed": 20360754,
+      "heard": "Hört zu, Herr Jensen spricht.",
+      "endDb": -54.9
+    },
+    {
+      "file": "2f4d78d22230.m4a",
+      "text": "Moin. Heute Tee um halb sechs. Wie immer. Moin.",
+      "voice": "Grandpa",
+      "seed": 20301358,
+      "heard": "Moin, heute Tee um halb sechs, wie immer, moin.",
+      "endDb": -56.7
+    },
+    {
+      "file": "5dff588d16b2.m4a",
+      "text": "Neun Wörter! Und halb sechs – das ist sechs Uhr dreißig!",
+      "voice": "Rocko",
+      "seed": 20946066,
+      "heard": "Neun Wörter. Und halb sechs, das ist sechs Uhr dreißig.",
+      "endDb": -55.7
+    },
+    {
+      "file": "32fe4b8a72b6.m4a",
+      "text": "Die Möwe sitzt auf der Uhr! Die Uhr geht falsch!",
+      "voice": "Flo",
+      "seed": 20715461,
+      "heard": "Die Möwe sitzt auf der Uhr. Die Uhr geht falsch.",
+      "endDb": -55.0
+    },
+    {
+      "file": "6ba0b04fbfd0.m4a",
+      "text": "Fünf Minuten zu spät! Die Möwe ist schwer.",
+      "voice": "Rocko",
+      "seed": 21232718,
+      "heard": "Fünf Minuten zu spät, die Möwe ist schwer.",
+      "endDb": -64.9
+    },
+    {
+      "file": "e0212cb37781.m4a",
+      "text": "Halb sechs? Nein! Das Schild ist in der Nacht weg. Ein Einbruch!",
+      "voice": "Reed",
+      "seed": 20762657,
+      "heard": "Halb sechs? Nein, das Schild ist in der Nacht weg. Ein Einbruch!",
+      "endDb": -54.6
+    },
+    {
+      "file": "378fd3d04fb6.m4a",
+      "text": "Und warum Tee um halb sechs? Warum schickt er uns das?",
+      "voice": "Anna",
+      "seed": 20772340,
+      "heard": "Und warum Tee um halb sechs? Warum schickt er uns das?",
+      "endDb": -54.3
+    },
+    {
+      "file": "05107e3bdb9c.m4a",
+      "text": "Gehen wir um halb sechs zum Tee?",
+      "voice": "Rocko",
+      "seed": 20728700,
+      "heard": "Gehen wir um halb sechs zum Tee?",
+      "endDb": -62.8
+    },
+    {
+      "file": "094103022633.m4a",
+      "text": "Neun Wörter? Von Herrn Jensen? Das glaube ich nicht!",
+      "voice": "Sandy",
+      "seed": 21273585,
+      "heard": "Neun Wörter von Herrn Jensen, das glaube ich nicht.",
+      "endDb": -51.5
+    },
+    {
+      "file": "94f1a6101825.m4a",
+      "text": "Hier, mein Kassenbuch. Jeden Tag, jede Stunde!",
+      "voice": "Sandy",
+      "seed": 20370740,
+      "heard": "Hier mein Kassenbuch. Jeden Tag, jede Stunde.",
+      "endDb": -43.0
+    },
+    {
+      "file": "d38f5f7996eb.m4a",
+      "text": "Am Sonntag um halb sechs ist der Club leer. Alle trinken Tee – hinten, auf der Terrasse.",
+      "voice": "Sandy",
+      "seed": 20864937,
+      "heard": "Am Sonntag um halb sechs ist der Club leer. Alle trinken Tee, hinten auf der Terrasse.",
+      "endDb": -46.7
+    },
+    {
+      "file": "f3c0debca596.m4a",
+      "text": "Und ich passe auf den Club auf! Am Vormittag, jeden Tag!",
+      "voice": "Sandy",
+      "seed": 20444453,
+      "heard": "Und ich passe auf den Club auf. Am Vormittag, jeden Tag.",
+      "endDb": -51.6
+    },
+    {
+      "file": "e06bcce16c76.m4a",
+      "text": "Eine Frau mit einer großen Tasche. Um fünf nach halb sechs. Am Sonntag.",
+      "voice": "Anna",
+      "seed": 20708950,
+      "heard": "Eine Frau mit einer großen Tasche. Um fünf nach halb sechs. Am Sonntag.",
+      "endDb": -49.4
+    },
+    {
+      "file": "ceb06ad85558.m4a",
+      "text": "Möchtet ihr ein Fischbrötchen? Es ist schon Mittag!",
+      "voice": "Sandy",
+      "seed": 20389496,
+      "heard": "Möchtet ihr ein Fischbrötchen? Es ist schon Mittag.",
+      "endDb": -54.7
+    },
+    {
+      "file": "c566d5ef21a0.m4a",
+      "text": "Also: Wer ist um halb sechs wo? Fragen wir alle!",
+      "voice": "Rocko",
+      "seed": 20823727,
+      "heard": "Also wer ist um halb sechs wo, fragen wir alle.",
+      "endDb": -56.2
+    },
+    {
+      "file": "3034a4ee6626.m4a",
+      "text": "Am Sonntag, am Mittag, höre ich Herrn Jensen. Er sagt drei Wörter!",
+      "voice": "Flo",
+      "seed": 20788725,
+      "heard": "Am Sonntag am Mittag höre ich Herrn Jensen. Er sagt drei Wörter.",
+      "endDb": -44.4
+    },
+    {
+      "file": "7fe9ad869e11.m4a",
+      "text": "Tee. Alle. Halb sechs.",
+      "voice": "Flo",
+      "seed": 20649201,
+      "heard": "T. Alle halb sechs.",
+      "endDb": -50.3
+    },
+    {
+      "file": "23ebcae3c57a.m4a",
+      "text": "Der ganze Club ist hinten. Vorne ist niemand!",
+      "voice": "Flo",
+      "seed": 20472602,
+      "heard": "Der ganze Club ist hinten. Vorne ist niemand.",
+      "endDb": -48.9
+    },
+    {
+      "file": "c35ed4c0baad.m4a",
+      "text": "Um halb sechs? Ich bin in der Küche. Ich koche. Ich mache nie Feierabend!",
+      "voice": "Reed",
+      "seed": 21011580,
+      "heard": "Um halb sechs. Ich bin in der Küche, ich koche. Ich mache nie Feierabend.",
+      "endDb": -68.7
+    },
+    {
+      "file": "a55336296c57.m4a",
+      "text": "Ich höre in der Nacht auf. Oder nie!",
+      "voice": "Reed",
+      "seed": 20814007,
+      "heard": "Ich höre in der Nacht auf oder nie.",
+      "endDb": -61.2
+    },
+    {
+      "file": "12e05fd680b5.m4a",
+      "text": "Das Büro? Am Sonntag ist es zu. Hier, das Schild.",
+      "voice": "Sandy",
+      "seed": 21128469,
+      "heard": "Das Büro? Am Sonntag ist es zu. Hier das Schild.",
+      "endDb": -48.6
+    },
+    {
+      "file": "66aea2feb3e7.m4a",
+      "text": "Und um sechs macht Herr Jensen den Club zu. Immer. Hier ist das Logbuch.",
+      "voice": "Sandy",
+      "seed": 21212790,
+      "heard": "Und um sechs macht Herr Jensen den Club zu. Immer. Hier ist das Logbuch.",
+      "endDb": -55.5
+    },
+    {
+      "file": "0733fc7d09dc.m4a",
+      "text": "Lotte braucht Hilfe. Viertel vor neun – wie spät ist das?",
+      "voice": "Sandy",
+      "seed": 21056346,
+      "heard": "Lotte braucht Hilfe. Viertel vor neun, wie spät ist das?",
+      "endDb": -47.5
+    },
+    {
+      "file": "1a1e963d8554.m4a",
+      "text": "Kieler Woche? Eine Woche? Für Möwen ist immer Wochenende!",
+      "voice": "Shelley",
+      "seed": 21224227,
+      "heard": "Kieler Woche? Eine Woche? Für Möwen ist immer Wochenende.",
+      "endDb": -62.7
+    },
+    {
+      "file": "1481f886da0a.m4a",
+      "text": "Heute ist Samstag. Morgen ist … Montag?",
+      "voice": "Shelley",
+      "seed": 21192857,
+      "heard": "Heute ist Samstag, morgen ist Montag?",
+      "endDb": -45.4
+    },
+    {
+      "file": "f509695d7245.m4a",
+      "text": "Eine Frau arbeitet. Am Samstag! Und morgen? Sie arbeitet auch am Sonntag.",
+      "voice": "Shelley",
+      "seed": 20503589,
+      "heard": "Eine Frau arbeitet. Am Samstag. Und morgen? Sie arbeitet auch am Sonntag.",
+      "endDb": -55.4
+    },
+    {
+      "file": "79c8853b9ef9.m4a",
+      "text": "Die Möwe! Sie klaut die Teebeutel!",
+      "voice": "Flo",
+      "seed": 20958169,
+      "heard": "Die Möwe. Sie klaut die Teebeutel.",
+      "endDb": -42.7
+    },
+    {
+      "file": "99e52354797f.m4a",
+      "text": "Vorne ist niemand! Zehn Minuten – und niemand sieht den Aufsteller!",
+      "voice": "Rocko",
+      "seed": 20568142,
+      "heard": "Vorne ist niemand. Zehn Minuten und niemand sieht den Aufsteller.",
+      "endDb": -65.5
+    },
+    {
+      "file": "d5be02b25b31.m4a",
+      "text": "Kein Einbruch? … Schade. Das ist ein guter Film.",
+      "voice": "Reed",
+      "seed": 21022575,
+      "heard": "Kein Einbruch? Schade, das ist ein guter Film.",
+      "endDb": -50.1
+    },
+    {
+      "file": "55be2bec690b.m4a",
+      "text": "Halb sechs. Wie immer.",
+      "voice": "Grandpa",
+      "seed": 20321899,
+      "heard": "Halb sechs, wie immer.",
+      "endDb": -63.6
+    },
+    {
+      "file": "926fa5851ba1.m4a",
+      "text": "Er ruft alle zum Tee. Und vorne ist niemand. Er weiß das!",
+      "voice": "Anna",
+      "seed": 21258096,
+      "heard": "Er ruft alle zum Tee, und vorne ist niemand. Er weiß das.",
+      "endDb": -47.3
+    },
+    {
+      "file": "65b7164fd7c0.m4a",
+      "text": "Am Samstag um fünf nach fünf kauft der Moin-Mann Farbe. Am Sonntag ist der Laden zu.",
+      "voice": "Anna",
+      "seed": 21012896,
+      "heard": "Am Samstag um 5 nach 5 kauft der Moinmann Farbe. Am Sonntag ist der Laden zu.",
+      "endDb": -44.6
+    },
+    {
+      "file": "b82128bb7ede.m4a",
+      "text": "Herr Jensen weiß alles. Seit Sonntag!",
+      "voice": "Rocko",
+      "seed": 21084764,
+      "heard": "Herr Jensen weiß alles. Seit Sonntag.",
+      "endDb": -58.0
+    },
+    {
+      "file": "3ccfcbe10bc2.m4a",
+      "text": "Wir schreiben ihm! Ein Brief – keine Fragen auf der Terrasse.",
+      "voice": "Flo",
+      "seed": 20681314,
+      "heard": "Wir schreiben ihm. Ein Brief, keine Fragen auf der Terrasse.",
+      "endDb": -55.9
+    },
+    {
+      "file": "178a0254bb5d.m4a",
+      "text": "Moin. Das heißt … Ja? Nein? Vielleicht?",
+      "voice": "Anna",
+      "seed": 20294141,
+      "heard": "Moin, das heißt ja? Nein? Vielleicht?",
+      "endDb": -56.0
+    },
+    {
+      "file": "e94a2123bbdd.m4a",
+      "text": "Und ich mache heute keinen Feierabend. Ich koche!",
+      "voice": "Reed",
+      "seed": 21118555,
+      "heard": "Und ich mache heute keinen Feierabend. Ich koche.",
+      "endDb": -50.0
+    },
+    {
+      "file": "b1bf8688dd11.m4a",
+      "text": "Und jetzt ein Test! Was passt nicht?",
+      "voice": "Flo",
+      "seed": 21247345,
+      "heard": "Und jetzt ein Test, was passt nicht.",
+      "endDb": -56.0
+    },
+    {
+      "file": "19dfba1d4826.m4a",
+      "text": "Der Tee fängt um halb sechs an.",
+      "voice": "Anna",
+      "seed": 21151541,
+      "heard": "Der Tee fängt um halb sechs an.",
+      "endDb": -56.1
+    },
+    {
+      "file": "6f14ffab0b2d.m4a",
+      "text": "Um sechs macht Herr Jensen den Club zu.",
+      "voice": "Anna",
+      "seed": 20697596,
+      "heard": "Um sechs macht Herr Jensen den Club zu.",
+      "endDb": -52.9
+    },
+    {
+      "file": "796d961d617a.m4a",
+      "text": "Der Tee dauert eine Stunde.",
+      "voice": "Anna",
+      "seed": 21180920,
+      "heard": "Der Tee dauert eine Stunde.",
+      "endDb": -66.2
+    },
+    {
+      "file": "3dc6c929f89a.m4a",
+      "text": "Feierabend! Und jetzt Regen! Jeden Abend Regen!",
+      "voice": "Sandy",
+      "seed": 21051002,
+      "heard": "Feierabend und jetzt Regen. Jeden Abend Regen.",
+      "endDb": -44.7
+    },
+    {
+      "file": "8ce909afe90a.m4a",
+      "text": "Nils repariert die Uhr am Abend. Und morgen früh ist sie wieder kaputt!",
+      "voice": "Rocko",
+      "seed": 21053034,
+      "heard": "Nils repariert die Uhr am Abend. Und morgen früh ist sie wieder kaputt.",
+      "endDb": -55.5
+    },
+    {
+      "file": "46909e3c82bf.m4a",
+      "text": "Zwölf Nachrichten für eine Uhr! Das ist Nils.",
+      "voice": "Flo",
+      "seed": 20269646,
+      "heard": "Zwölf Nachrichten für eine Uhr. Das ist Nils.",
+      "endDb": -48.7
+    },
+    {
+      "file": "e91e831ed736.m4a",
+      "text": "Er macht das Licht aus. Er spricht nicht mit uns.",
+      "voice": "Anna",
+      "seed": 20404020,
+      "heard": "Er macht das Licht aus, er spricht nicht mit uns.",
+      "endDb": -49.0
+    },
+    {
+      "file": "7c35709e2b25.m4a",
+      "text": "Ich habe um fünf Feierabend.",
+      "voice": "Anna",
+      "seed": 20801699,
+      "heard": "Ich habe um fünf Feierabend.",
+      "endDb": -50.7
+    },
+    {
+      "file": "7e1d5bedbd16.m4a",
+      "text": "Wann hast du Feierabend?",
+      "voice": "Reed",
+      "seed": 20735316,
+      "heard": "Wann hast du Feierabend?",
+      "endDb": -48.9
+    },
+    {
+      "file": "734bf14fcec2.m4a",
+      "text": "Ich backe nur Brot. Bis in die Nacht!",
+      "voice": "Reed",
+      "seed": 20557632,
+      "heard": "Ich backe nur Brot. Bis in die Nacht.",
+      "endDb": -59.1
+    }
+  ]
+}

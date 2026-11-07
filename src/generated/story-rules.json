@@ -2927,5 +2927,150 @@
     "audio": "audio/d1e8686ad0fe.m4a"
    }
   ]
+ },
+ "tagesablauf/klammer-4": {
+  "point": "*Wann stehst du auf?* — *Stehst du morgen um sieben auf?*",
+  "read": "В вопросах рамка тоже на месте. W-вопрос: *Wann stehst du auf?* — *wann* на первой позиции, окончание меняется на *-st*, приставка по-прежнему в конце. Вопрос да/нет начинается с глагола: *Stehst du morgen um sieben auf?* Это фраза Даны из диалога, только вопросом. Ответить можно коротко, совсем без глагола: *Ja, um sieben!*",
+  "rows": [
+   {
+    "slots": [
+     [
+      {
+       "key": "wann",
+       "text": "Wann"
+      }
+     ],
+     [
+      {
+       "key": "steh",
+       "text": "steh+st"
+      }
+     ],
+     [
+      {
+       "key": "du",
+       "text": "du"
+      }
+     ],
+     [
+      {
+       "key": "auf",
+       "text": "auf"
+      }
+     ]
+    ],
+    "punct": "?",
+    "plain": "Wann stehst du auf?",
+    "ru": "Когда ты встаёшь?",
+    "audio": "audio/351f4169d7ba.m4a"
+   },
+   {
+    "slots": [
+     [],
+     [
+      {
+       "key": "steh",
+       "text": "Steh+st"
+      }
+     ],
+     [
+      {
+       "key": "du",
+       "text": "du"
+      },
+      {
+       "key": "morgen",
+       "text": "morgen"
+      },
+      {
+       "key": "um",
+       "text": "um"
+      },
+      {
+       "key": "sieben",
+       "text": "sieben"
+      }
+     ],
+     [
+      {
+       "key": "auf",
+       "text": "auf"
+      }
+     ]
+    ],
+    "punct": "?",
+    "plain": "Stehst du morgen um sieben auf?",
+    "ru": "Ты завтра встанешь в семь?",
+    "audio": "audio/ec91dfbee03c.m4a"
+   }
+  ]
+ },
+ "tagesablauf/vorfeld-1": {
+  "point": "Время на первом месте — глагол всё равно второй: *Dann frühstücke ich.*",
+  "read": "Немцы очень любят начинать фразу со времени: *Am Vormittag habe ich Kurs.* *Dann frühstücke ich.* Правило из первой темы работает и здесь: что бы ни стояло на первой позиции, глагол — второй, а подлежащее уходит за него. Типичная ошибка — русский порядок слов: *Dann ich frühstücke*. Так нельзя: между первой позицией и глаголом ничего не помещается.",
+  "rows": [
+   {
+    "slots": [
+     [
+      {
+       "key": "am",
+       "text": "Am"
+      },
+      {
+       "key": "vormittag",
+       "text": "Vormittag"
+      }
+     ],
+     [
+      {
+       "key": "hab",
+       "text": "hab+e"
+      }
+     ],
+     [
+      {
+       "key": "ich",
+       "text": "ich"
+      },
+      {
+       "key": "kurs",
+       "text": "Kurs"
+      }
+     ],
+     []
+    ],
+    "punct": ".",
+    "plain": "Am Vormittag habe ich Kurs.",
+    "ru": "До обеда у меня курс.",
+    "audio": "audio/4495cb5a22bd.m4a"
+   },
+   {
+    "slots": [
+     [
+      {
+       "key": "dann",
+       "text": "Dann"
+      }
+     ],
+     [
+      {
+       "key": "frühstück",
+       "text": "frühstück+e"
+      }
+     ],
+     [
+      {
+       "key": "ich",
+       "text": "ich"
+      }
+     ],
+     []
+    ],
+    "punct": ".",
+    "plain": "Dann frühstücke ich.",
+    "ru": "Потом я завтракаю.",
+    "audio": "audio/9887836a33f9.m4a"
+   }
+  ]
  }
 }
