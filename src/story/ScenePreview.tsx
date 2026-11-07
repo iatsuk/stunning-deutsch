@@ -164,22 +164,34 @@ export function ScenePreview() {
             <h1>Дело о пропавшем Moin</h1>
           </div>
         </header>
+        {/* Как в основной игре: у главы номер (или ✓, когда все сцены пройдены), тема урока и
+            её название — видно, какой урок нужен для главы. */}
         <nav className="moin-chapters" aria-label="Главы">
-          {chapters.map((c, i) => (
-            <button
-              type="button"
-              key={c.id}
-              aria-current={i === ci ? "page" : undefined}
-              onClick={() => {
-                // Глава открывается на первой непройденной сцене: так легко продолжить.
-                const from = firstOf(i);
-                const open = c.beats.findIndex((_, k) => !solved(from + k));
-                go(from + (open < 0 ? 0 : open));
-              }}
-            >
-              Глава {i + 1} · {c.title}
-            </button>
-          ))}
+          {chapters.map((c, i) => {
+            const from = firstOf(i);
+            const complete = c.beats.every((_, k) => solved(from + k));
+            return (
+              <button
+                type="button"
+                key={c.id}
+                aria-current={i === ci ? "page" : undefined}
+                aria-label={`Глава ${i + 1}: ${c.topic} · ${c.title}${complete ? ", пройдена" : ""}`}
+                onClick={() => {
+                  // Глава открывается на первой непройденной сцене: так легко продолжить.
+                  const open = c.beats.findIndex((_, k) => !solved(from + k));
+                  go(from + (open < 0 ? 0 : open));
+                }}
+              >
+                <span className="moin-chapters-num" aria-hidden="true">
+                  {complete ? "✓" : String(i + 1).padStart(2, "0")}
+                </span>
+                <span aria-hidden="true">
+                  {c.topic}
+                  <small>{c.title}</small>
+                </span>
+              </button>
+            );
+          })}
         </nav>
         <div className="moin-layout moin-preview">
           <section className="moin-scene" aria-label={beat.title}>
