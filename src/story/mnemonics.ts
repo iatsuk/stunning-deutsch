@@ -51,6 +51,12 @@ export const MNEMONICS: Record<string, string> = {
     "Rechnung — «рехнуться»: от счёта в кафе у воды можно и рехнуться. Считать — rechnen.",
   "das Tablett":
     "Tablett — не таблетка (die Tablette), а поднос: на нём таблетки не носят, а вот Fischbrötchen чайка с него уносит.",
+  "die Zwiebel":
+    "Zwiebel — почти «цибуля»: так лук зовут на юге России и в Украине. Лук — die Zwiebel.",
+  "der Kassenbon":
+    "die Kasse + der Bon: бон — талон, бумажка из кассы. Чек — der Kassenbon.",
+  "der Feierabend":
+    "die Feier — праздник + der Abend: вечер, который празднуют, потому что работа кончилась.",
 };
 
 export const mnemonic = (de: string) => MNEMONICS[de];

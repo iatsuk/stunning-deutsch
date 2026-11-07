@@ -2713,5 +2713,219 @@
     "audio": "audio/5377f275844e.m4a"
    }
   ]
+ },
+ "einkaufen/mengen-grammatik-1": {
+  "point": "*eine Flasche Milch* — без падежа; *zwei Kilo*, но *zwei Flaschen*",
+  "read": "В русском после меры нужен родительный падеж: «кило яблок», «бутылка молока». В немецком второе слово остаётся как есть: *ein Kilo Äpfel*, *eine Flasche Milch* — без предлога и без падежа. Ещё одна разница: меры веса и деньги после числа не получают множественного — *zwei Kilo*, *200 Gramm*, *drei Euro*. А *Flasche* — получает: *zwei Flaschen Wasser*.",
+  "table": {
+   "title": "Mengen",
+   "ru": "Количество",
+   "head": [
+    "Menge",
+    "Beispiel"
+   ],
+   "rows": [
+    [
+     "ein Kilo",
+     "ein Kilo Äpfel"
+    ],
+    [
+     "zwei Kilo",
+     "zwei Kilo Tomaten"
+    ],
+    [
+     "ein Pfund",
+     "ein Pfund Kartoffeln"
+    ],
+    [
+     "200 Gramm",
+     "200 Gramm Käse"
+    ],
+    [
+     "eine Flasche",
+     "eine Flasche Milch"
+    ],
+    [
+     "zwei Flasch+en",
+     "zwei Flasch+en Wasser"
+    ]
+   ],
+   "ruCols": [],
+   "note": "*Kilo*, *Pfund*, *Gramm*, *Liter* и *Euro* после числа не меняются, а *Flasche* и *Dose* получают *-n*."
+  },
+  "focus": [
+   0,
+   1,
+   3,
+   4,
+   5
+  ]
+ },
+ "einkaufen/check-1": {
+  "point": "*Was kostet die Hose?* — ед. ч.; *Was kosten die Schuhe?* — мн. ч.",
+  "read": "*Was kostet die Hose?* В русском «брюки» во множественном числе, а в немецком *die Hose* — одна вещь, поэтому и глагол в единственном: *kostet*. Для настоящего множественного — *kosten*: *Was kosten die Schuhe?* Перед окончанием *-t* у *kosten* появляется *e*: основа сама кончается на *t*, и без гласной форму было бы не выговорить.",
+  "rows": [
+   {
+    "slots": [
+     [
+      {
+       "key": "was",
+       "text": "Was"
+      }
+     ],
+     [
+      {
+       "key": "kost",
+       "text": "kost+et"
+      }
+     ],
+     [
+      {
+       "key": "die",
+       "text": "die"
+      },
+      {
+       "key": "hose",
+       "text": "Hose"
+      }
+     ],
+     []
+    ],
+    "punct": "?",
+    "plain": "Was kostet die Hose?",
+    "ru": "Сколько стоят брюки?",
+    "audio": "audio/956af326cf9b.m4a"
+   },
+   {
+    "slots": [
+     [
+      {
+       "key": "was",
+       "text": "Was"
+      }
+     ],
+     [
+      {
+       "key": "kost",
+       "text": "kost+en"
+      }
+     ],
+     [
+      {
+       "key": "die",
+       "text": "die"
+      },
+      {
+       "key": "schuhe",
+       "text": "Schuhe"
+      }
+     ],
+     []
+    ],
+    "punct": "?",
+    "plain": "Was kosten die Schuhe?",
+    "ru": "Сколько стоят ботинки?",
+    "audio": "audio/fd1b94d3b8ff.m4a"
+   }
+  ]
+ },
+ "einkaufen/welch-1": {
+  "point": "*Welche Größe haben Sie?* — *welch-* вместе с существительным на первой позиции",
+  "read": "Вопрос «который из них?» — это *welch-* плюс существительное. Вместе они занимают первую позицию: *Welche Größe* — одна позиция, глагол — вторая, как в любом W-вопросе. Окончание зависит от рода и падежа: *die Größe* → *welche*, а *der Pullover* в роли дополнения — *welchen*. Отвечают часто одним указанием: *den hier* — «вот этот», с тем же *-en*.",
+  "rows": [
+   {
+    "slots": [
+     [
+      {
+       "key": "welch",
+       "text": "Welch+e"
+      },
+      {
+       "key": "größe",
+       "text": "Größe"
+      }
+     ],
+     [
+      {
+       "key": "hab",
+       "text": "hab+en"
+      }
+     ],
+     [
+      {
+       "key": "sie",
+       "text": "Sie"
+      }
+     ],
+     []
+    ],
+    "punct": "?",
+    "plain": "Welche Größe haben Sie?",
+    "ru": "Какой у вас размер?",
+    "audio": "audio/f394cb19c75c.m4a"
+   },
+   {
+    "slots": [
+     [
+      {
+       "key": "welch",
+       "text": "Welch+en"
+      },
+      {
+       "key": "pullover",
+       "text": "Pullover"
+      }
+     ],
+     [
+      {
+       "key": "nehm",
+       "text": "nehm+en"
+      }
+     ],
+     [
+      {
+       "key": "sie",
+       "text": "Sie"
+      }
+     ],
+     []
+    ],
+    "punct": "?",
+    "plain": "Welchen Pullover nehmen Sie?",
+    "ru": "Какой свитер вы берёте?",
+    "audio": "audio/eb8575a8e298.m4a"
+   },
+   {
+    "slots": [
+     [
+      {
+       "key": "ich",
+       "text": "Ich"
+      }
+     ],
+     [
+      {
+       "key": "nehm",
+       "text": "nehm+e"
+      }
+     ],
+     [
+      {
+       "key": "d",
+       "text": "d+en"
+      },
+      {
+       "key": "hier",
+       "text": "hier"
+      }
+     ],
+     []
+    ],
+    "punct": ".",
+    "plain": "Ich nehme den hier.",
+    "ru": "Я беру вот этот.",
+    "audio": "audio/d1e8686ad0fe.m4a"
+   }
+  ]
  }
 }

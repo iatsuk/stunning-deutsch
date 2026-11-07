@@ -343,6 +343,68 @@ export const phrases: Record<string, Phrase> = {
     pl: "Flecken",
     note: "Ein Teefleck — след от чая.",
   },
+  laden: {
+    ru: "лавка, магазин",
+    de: "der Laden",
+    pl: "Läden",
+    note: "Небольшой магазин. Der Bootsladen — всё для лодок: канаты, краска, непромокаемая одежда.",
+  },
+  kassenbon: {
+    ru: "чек",
+    de: "der Kassenbon",
+    pl: "Kassenbons",
+    note: "Его печатает касса: что, сколько и во сколько. Коротко — der Bon.",
+  },
+  zettel: {
+    ru: "список покупок",
+    de: "der Einkaufszettel",
+    pl: "Einkaufszettel",
+    note: "einkaufen + der Zettel, листок: что купить.",
+  },
+  zucker: {
+    ru: "сахар",
+    de: "Zucker",
+    note: "Без артикля, как Wasser или Brot: сахара сколько угодно. С артиклем — der Zucker.",
+  },
+  regal: {
+    ru: "стеллаж, полка",
+    de: "das Regal",
+    pl: "Regale",
+    note: "Полки магазина или шкафа от пола до потолка.",
+  },
+  seil: {
+    ru: "канат, верёвка",
+    de: "das Seil",
+    pl: "Seile",
+    note: "На лодке всё держится на канатах: парус, мачта, причал.",
+  },
+  blau: {
+    ru: "тёмно-синий",
+    de: "dunkelblau",
+    note: "dunkel — тёмный, blau — синий. Цвет таблички MOIN.",
+  },
+  weiss: {
+    ru: "белый",
+    de: "weiß",
+    note: "Цвет букв на табличке. И ещё «знаю»: ich weiß — пишется так же.",
+  },
+  markt: {
+    ru: "рынок",
+    de: "der Markt",
+    pl: "Märkte",
+    note: "Der Wochenmarkt — рынок раз в неделю: овощи, фрукты, рыба, цветы.",
+  },
+  kekse: {
+    ru: "пачка печенья",
+    de: "eine Packung Kekse",
+    note: "Keks — от английского cakes. Пачка у Нильса — для всей команды.",
+  },
+  sprachnachricht: {
+    ru: "голосовое сообщение",
+    de: "die Sprachnachricht",
+    pl: "Sprachnachrichten",
+    note: "die Sprache — язык, речь + die Nachricht — сообщение.",
+  },
   neu: {
     ru: "Вы новичок. Вы видите всё.",
     de: "Sie sind neu. Sie sehen alles.",

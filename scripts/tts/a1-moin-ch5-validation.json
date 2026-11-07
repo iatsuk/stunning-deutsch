@@ -1,0 +1,534 @@
+{
+  "date": "2026-11-07",
+  "scope": "Chapter 5 of the Moin scene prototype (src/story/scenes/05.ts): character lines, replays, shop chat, lock, oral practice and new story phrases with plurals",
+  "model": "k2-fsa/OmniVoice",
+  "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+  "candidatesPerPhrase": 3,
+  "asr": "openai/whisper-large-v3",
+  "notes": [
+    "Whisper writes numbers as digits (5,50, 3,20, 19, 24); every such take was compared by hand and says the numbers in words as written.",
+    "Each phrase has three takes; the chosen take has the closest transcript, an end level below -32 dB and no fragment flagged by tails.py. tails.py also passes on all 65 imported files."
+  ],
+  "files": [
+    {
+      "file": "b0004f416373.m4a",
+      "text": "der Laden, die Läden",
+      "voice": "Anna",
+      "seed": 20450801,
+      "heard": "Der Laden. Die Läden.",
+      "endDb": -56.2
+    },
+    {
+      "file": "36a84670f365.m4a",
+      "text": "der Kassenbon, die Kassenbons",
+      "voice": "Anna",
+      "seed": 20489955,
+      "heard": "Der Kassenbon, die Kassenbons.",
+      "endDb": -64.9
+    },
+    {
+      "file": "0d9271937f86.m4a",
+      "text": "der Einkaufszettel, die Einkaufszettel",
+      "voice": "Anna",
+      "seed": 21155012,
+      "heard": "Der Einkaufszettel. Die Einkaufszettel.",
+      "endDb": -53.1
+    },
+    {
+      "file": "dea8d77df39f.m4a",
+      "text": "Zucker",
+      "voice": "Anna",
+      "seed": 20504669,
+      "heard": "Zucker",
+      "endDb": -66.4
+    },
+    {
+      "file": "6ae264c091e6.m4a",
+      "text": "das Seil, die Seile",
+      "voice": "Anna",
+      "seed": 20771876,
+      "heard": "Das Seil, die Seile.",
+      "endDb": -53.6
+    },
+    {
+      "file": "be8e5bd92c81.m4a",
+      "text": "dunkelblau",
+      "voice": "Anna",
+      "seed": 20853857,
+      "heard": "Dunkelblau",
+      "endDb": -54.9
+    },
+    {
+      "file": "560863d04316.m4a",
+      "text": "weiß",
+      "voice": "Anna",
+      "seed": 20581174,
+      "heard": "Weiß",
+      "endDb": -52.5
+    },
+    {
+      "file": "287529e50af2.m4a",
+      "text": "der Markt, die Märkte",
+      "voice": "Anna",
+      "seed": 20430017,
+      "heard": "Der Markt. Die Märkte.",
+      "endDb": -56.9
+    },
+    {
+      "file": "4e16129a0492.m4a",
+      "text": "eine Packung Kekse",
+      "voice": "Anna",
+      "seed": 20599585,
+      "heard": "Eine Packung Kekse",
+      "endDb": -65.2
+    },
+    {
+      "file": "68468a3bcc61.m4a",
+      "text": "die Sprachnachricht, die Sprachnachrichten",
+      "voice": "Anna",
+      "seed": 20435201,
+      "heard": "Die Sprachnachricht. Die Sprachnachrichten.",
+      "endDb": -64.6
+    },
+    {
+      "file": "29559f78f679.m4a",
+      "text": "Es regnet! Das ist Kiel!",
+      "voice": "Rocko",
+      "seed": 20724761,
+      "heard": "Es regnet, das ist Kiel.",
+      "endDb": -62.4
+    },
+    {
+      "file": "9f68fdc20331.m4a",
+      "text": "Meine Hose! Ich brauche eine Hose!",
+      "voice": "Anna",
+      "seed": 21034560,
+      "heard": "Meine Hose. Ich brauche eine Hose.",
+      "endDb": -55.4
+    },
+    {
+      "file": "634d74eb096e.m4a",
+      "text": "Hier, Dana! Meine Jacke!",
+      "voice": "Rocko",
+      "seed": 20460989,
+      "heard": "Hier, Dana, meine Jacke.",
+      "endDb": -62.1
+    },
+    {
+      "file": "e2aec1a45b2e.m4a",
+      "text": "Hauke! Das Hemd ist zu groß!",
+      "voice": "Flo",
+      "seed": 21221838,
+      "heard": "Hauke, das Hemd ist zu groß.",
+      "endDb": -55.4
+    },
+    {
+      "file": "9f65cc8b085b.m4a",
+      "text": "Das ist nicht mein Hemd. Das ist von Nils! Mein Hemd hat Nils.",
+      "voice": "Rocko",
+      "seed": 20453849,
+      "heard": "Das ist nicht mein Hemd. Das ist von Nils. Mein Hemd hat Nils.",
+      "endDb": -62.3
+    },
+    {
+      "file": "14a762a1f31b.m4a",
+      "text": "Zwei Kilo Zwiebeln? Für Mateo? Was kocht Mateo?",
+      "voice": "Rocko",
+      "seed": 21143594,
+      "heard": "Zwei Kilo Zwiebeln für Matteo. Was kocht Matteo?",
+      "endDb": -55.8
+    },
+    {
+      "file": "cf99766ddf32.m4a",
+      "text": "Der Laden von Frau Kruse hat alles: Farbe, Seile und Hosen!",
+      "voice": "Rocko",
+      "seed": 21126913,
+      "heard": "Der Laden von Frau Kruse hat alles, Farbe, Seile und Hosen.",
+      "endDb": -56.1
+    },
+    {
+      "file": "36d0e97eef75.m4a",
+      "text": "Und die Möwe? Sie ist nass, aber sie braucht keine Hose!",
+      "voice": "Flo",
+      "seed": 20768661,
+      "heard": "Und die Möwe? Sie ist nass, aber sie braucht keine Hose.",
+      "endDb": -46.4
+    },
+    {
+      "file": "79c478a1790f.m4a",
+      "text": "Moin! Was suchen Sie?",
+      "voice": "Shelley",
+      "seed": 20675981,
+      "heard": "Moin, was suchen Sie?",
+      "endDb": -58.0
+    },
+    {
+      "file": "10e1b4822e2f.m4a",
+      "text": "Eine Hose? Welche Größe?",
+      "voice": "Shelley",
+      "seed": 20377423,
+      "heard": "Eine Hose? Welche Größe?",
+      "endDb": -46.0
+    },
+    {
+      "file": "2eb324c4c9e7.m4a",
+      "text": "S? Hm. Ich habe nur eine Hose – Größe XL. Rot wie eine Tomate!",
+      "voice": "Shelley",
+      "seed": 21169142,
+      "heard": "S? Hm, ich habe nur eine Hose, Größe XL, rot wie eine Tomate.",
+      "endDb": -37.3
+    },
+    {
+      "file": "85c715fa94fa.m4a",
+      "text": "Die Hose ist zu groß und zu lang!",
+      "voice": "Anna",
+      "seed": 20998729,
+      "heard": "Die Hose ist zu groß und zu lang.",
+      "endDb": -42.0
+    },
+    {
+      "file": "b520d71dd0ea.m4a",
+      "text": "Farbe? Welche Farbe? Die Hose gibt es in Rot und in Gelb.",
+      "voice": "Shelley",
+      "seed": 20897418,
+      "heard": "Farbe? Welche Farbe? Die Hose gibt es in Rot und in Gelb.",
+      "endDb": -50.4
+    },
+    {
+      "file": "2f48890a99fb.m4a",
+      "text": "Ach, Bootsfarbe! Ein Liter kostet vierundzwanzig Euro.",
+      "voice": "Shelley",
+      "seed": 20585179,
+      "heard": "Ach, Bootsfarbe. Ein Liter kostet 24 Euro.",
+      "endDb": -52.6
+    },
+    {
+      "file": "a1fcaa7a0b2d.m4a",
+      "text": "Viele! Aber einer kauft hier immer Dunkelblau. Groß, alt. Und er sagt nur ein Wort: Moin.",
+      "voice": "Shelley",
+      "seed": 21216525,
+      "heard": "Viele. Aber einer kauft hier immer dunkelblau. Groß, alt. Und er sagt nur ein Wort Moin.",
+      "endDb": -43.5
+    },
+    {
+      "file": "8fbbdc48e42d.m4a",
+      "text": "Nur Moin? Viele sagen Moin!",
+      "voice": "Rocko",
+      "seed": 20689788,
+      "heard": "Nur Moin. Viele sagen Moin.",
+      "endDb": -58.9
+    },
+    {
+      "file": "6f934d57fc37.m4a",
+      "text": "Wie finden Sie die Hose?",
+      "voice": "Shelley",
+      "seed": 20756422,
+      "heard": "Wie finden Sie die Hose?",
+      "endDb": -54.8
+    },
+    {
+      "file": "4254c14a36a5.m4a",
+      "text": "Sie kostet neunzehn Euro. Nehmen Sie sie?",
+      "voice": "Shelley",
+      "seed": 20821364,
+      "heard": "Sie kostet 19 Euro. Nehmen Sie sie?",
+      "endDb": -58.2
+    },
+    {
+      "file": "014f1378ac68.m4a",
+      "text": "Moin! Äpfel, Tomaten, Zwiebeln! Ein Kilo Äpfel – zwei Euro!",
+      "voice": "Sandy",
+      "seed": 20980744,
+      "heard": "Moin! Äpfel, Tomaten, Zwiebeln. Ein Kilo Äpfel, zwei Euro.",
+      "endDb": -34.3
+    },
+    {
+      "file": "b308bf0c553e.m4a",
+      "text": "Greta? Ja! Sie kommt heute früh und kauft ein Kilo Äpfel.",
+      "voice": "Sandy",
+      "seed": 20627806,
+      "heard": "Greta? Ja, sie kommt heute früh und kauft ein Kilo Äpfel.",
+      "endDb": -46.7
+    },
+    {
+      "file": "57ae158eba40.m4a",
+      "text": "Und dann bringt sie einen Apfel zurück! Sie sagt nichts. Sie schreibt: Zu klein!",
+      "voice": "Sandy",
+      "seed": 20878206,
+      "heard": "Und dann bringt sie einen Apfel zurück. Sie sagt nichts. Sie schreibt zu klein.",
+      "endDb": -55.2
+    },
+    {
+      "file": "cfdbb9ade69f.m4a",
+      "text": "Und Nils! Nils trägt eine Packung. Eine große Packung! Was ist da drin? Das Schild?",
+      "voice": "Sandy",
+      "seed": 21238126,
+      "heard": "Und Nils. Nils trägt eine Packung. Eine große Packung. Was ist da drin? Das Schild?",
+      "endDb": -33.6
+    },
+    {
+      "file": "c9156c149c05.m4a",
+      "text": "Zwei Kilo Zwiebeln, ein Kilo Tomaten und keine Äpfel, bitte!",
+      "voice": "Reed",
+      "seed": 21055124,
+      "heard": "Zwei Kilo Zwiebeln, ein Kilo Tomaten und keine Äpfel, bitte.",
+      "endDb": -57.9
+    },
+    {
+      "file": "acc5edca5b43.m4a",
+      "text": "Fünf Euro fünfzig, Mateo.",
+      "voice": "Sandy",
+      "seed": 21257635,
+      "heard": "5,50 Euro, Matteo.",
+      "endDb": -42.9
+    },
+    {
+      "file": "4cde21f6f352.m4a",
+      "text": "Nichts! Ich koche … nichts. Zwiebeln sind gut für alles!",
+      "voice": "Reed",
+      "seed": 20543986,
+      "heard": "Nichts, ich koche nichts. Zwiebeln sind gut für alles.",
+      "endDb": -52.1
+    },
+    {
+      "file": "6f76a5d75e69.m4a",
+      "text": "Das macht drei Euro zwanzig.",
+      "voice": "Sandy",
+      "seed": 20448056,
+      "heard": "Das macht 3,20 Euro.",
+      "endDb": -54.1
+    },
+    {
+      "file": "587d34d16c20.m4a",
+      "text": "Danke! Du bist super!",
+      "voice": "Sandy",
+      "seed": 20557248,
+      "heard": "Danke, du bist super!",
+      "endDb": -52.7
+    },
+    {
+      "file": "d826d3447f07.m4a",
+      "text": "Welche Farbe? Weiß? Ein Liter?",
+      "voice": "Shelley",
+      "seed": 21115269,
+      "heard": "Welche Farbe weiß? Ein Liter?",
+      "endDb": -33.5
+    },
+    {
+      "file": "07e044e19538.m4a",
+      "text": "Vierundzwanzig Euro, bitte.",
+      "voice": "Shelley",
+      "seed": 20972167,
+      "heard": "24 Euro bitte.",
+      "endDb": -67.1
+    },
+    {
+      "file": "2098fdf60ddd.m4a",
+      "text": "Ein Geschenk für das Team: T-Shirts! Größe M, L und XL!",
+      "voice": "Reed",
+      "seed": 21139901,
+      "heard": "Ein Geschenk für das Team, T-Shirts Größe ML und XL.",
+      "endDb": -45.9
+    },
+    {
+      "file": "4e3dba95d09f.m4a",
+      "text": "Das ist die falsche Tüte! Das ist … Zucker für Kaffee!",
+      "voice": "Reed",
+      "seed": 20620974,
+      "heard": "Das ist die falsche Tüte. Das ist Zucker für Kaffee.",
+      "endDb": -62.6
+    },
+    {
+      "file": "48e7fa0aa91f.m4a",
+      "text": "Ich habe eine Idee. Frau Kruse kennt die Stimme!",
+      "voice": "Anna",
+      "seed": 20908927,
+      "heard": "Ich habe eine Idee. Frau Kruse kennt die Stimme.",
+      "endDb": -49.5
+    },
+    {
+      "file": "f73b4b75cec7.m4a",
+      "text": "Bootsladen Kruse, moin!",
+      "voice": "Shelley",
+      "seed": 20411926,
+      "heard": "Bootsladen Kruse moin!",
+      "endDb": -58.9
+    },
+    {
+      "file": "33cb4a7e1810.m4a",
+      "text": "Frau Kruse, hier ist Dana. Hören Sie, bitte!",
+      "voice": "Anna",
+      "seed": 20416368,
+      "heard": "Frau Kruse, hier ist Dana. Hören Sie bitte.",
+      "endDb": -44.4
+    },
+    {
+      "file": "2d413de2b9f1.m4a",
+      "text": "Das ist er! Groß, alt und nur Moin!",
+      "voice": "Shelley",
+      "seed": 20669935,
+      "heard": "Das ist er, groß, alt und nur moin.",
+      "endDb": -39.3
+    },
+    {
+      "file": "1fd3d365fa37.m4a",
+      "text": "Oder? Moment. Hier sagen alle Moin. Ich auch!",
+      "voice": "Shelley",
+      "seed": 20513141,
+      "heard": "Oder Moment, hier sagen alle Moin. Ich auch.",
+      "endDb": -52.9
+    },
+    {
+      "file": "36e2397a89f0.m4a",
+      "text": "Herr Jensen kauft keine Farbe. Er kauft nur Tee!",
+      "voice": "Rocko",
+      "seed": 21101840,
+      "heard": "Herr Jensen kauft keine Farbe, er kauft nur Tee.",
+      "endDb": -59.7
+    },
+    {
+      "file": "3bf5a20a8480.m4a",
+      "text": "Hier! Dein T-Shirt. Wie findest du es?",
+      "voice": "Reed",
+      "seed": 20893519,
+      "heard": "Hier, dein T-Shirt. Wie findest du es?",
+      "endDb": -49.8
+    },
+    {
+      "file": "ab26195bccdc.m4a",
+      "text": "Also: Ein Mann kauft Dunkelblau. Greta braucht Weiß.",
+      "voice": "Anna",
+      "seed": 20830426,
+      "heard": "Also ein Mann kauft Dunkelblau, Greta braucht Weiß.",
+      "endDb": -53.2
+    },
+    {
+      "file": "52e7b131f6f5.m4a",
+      "text": "Dunkelblau und Weiß! Das Schild ist dunkelblau und weiß!",
+      "voice": "Flo",
+      "seed": 21025749,
+      "heard": "Dunkelblau und Weiß. Das Schild ist dunkelblau und weiß.",
+      "endDb": -47.3
+    },
+    {
+      "file": "727b795b0219.m4a",
+      "text": "Weiß für Buchstaben! Und Nils weiß nichts. Zweimal weiß!",
+      "voice": "Rocko",
+      "seed": 20820264,
+      "heard": "Weiß für Buchstaben und Nils weiß nichts. Zweimal weiß.",
+      "endDb": -55.6
+    },
+    {
+      "file": "7be969a79a3e.m4a",
+      "text": "Und der Pinsel ist klein. Für kleine Buchstaben!",
+      "voice": "Flo",
+      "seed": 20449118,
+      "heard": "Und der Pinsel ist klein, für kleine Buchstaben.",
+      "endDb": -46.0
+    },
+    {
+      "file": "1d079d74e79a.m4a",
+      "text": "Und Zucker für Kaffee? Fünf Packungen? Mateo!",
+      "voice": "Rocko",
+      "seed": 20921978,
+      "heard": "Und Zucker für Kaffee, fünf Packungen Matteo.",
+      "endDb": -49.4
+    },
+    {
+      "file": "a0749d71423a.m4a",
+      "text": "Wer hat Hunger? Brot für alle!",
+      "voice": "Reed",
+      "seed": 20372792,
+      "heard": "Wer hat Hunger? Brot für alle!",
+      "endDb": -67.9
+    },
+    {
+      "file": "8c82b71ce902.m4a",
+      "text": "Er kauft einen Liter Farbe.",
+      "voice": "Anna",
+      "seed": 21023330,
+      "heard": "Er kauft einen Liter Farbe.",
+      "endDb": -54.4
+    },
+    {
+      "file": "224d9fa4386d.m4a",
+      "text": "Die Hose? Dana nimmt sie.",
+      "voice": "Anna",
+      "seed": 20434812,
+      "heard": "Die Hose? Dana nimmt sie.",
+      "endDb": -59.1
+    },
+    {
+      "file": "85fd69668fc8.m4a",
+      "text": "Was kostet ein Liter?",
+      "voice": "Anna",
+      "seed": 20810280,
+      "heard": "Was kostet ein Liter?",
+      "endDb": -53.8
+    },
+    {
+      "file": "cf07b38a582e.m4a",
+      "text": "Dana, du bist eine Tomate!",
+      "voice": "Rocko",
+      "seed": 21177853,
+      "heard": "Dana, du bist eine Tomate.",
+      "endDb": -62.3
+    },
+    {
+      "file": "12fd350677ed.m4a",
+      "text": "Und du bist ein Hemd von Nils!",
+      "voice": "Anna",
+      "seed": 20911164,
+      "heard": "Und du bist ein Hemd von Nils.",
+      "endDb": -58.4
+    },
+    {
+      "file": "0a6377257f36.m4a",
+      "text": "Größe XL! Und sie kostet neunzehn Euro. Das ist nicht teuer!",
+      "voice": "Anna",
+      "seed": 21263028,
+      "heard": "Größe XL. Und sie kostet 19 Euro. Das ist nicht teuer.",
+      "endDb": -49.8
+    },
+    {
+      "file": "347490dae64b.m4a",
+      "text": "Zwiebelkuchen? Für die Kieler Woche? Nein, nein! Ich koche … Suppe!",
+      "voice": "Reed",
+      "seed": 20376619,
+      "heard": "Zwiebelkuchen für die Kieler Woche? Nein, nein, ich koche Suppe!",
+      "endDb": -46.8
+    },
+    {
+      "file": "2b3ce18bd63b.m4a",
+      "text": "Herr Jensen schickt eine Sprachnachricht? Er spricht? Mehr als Moin?",
+      "voice": "Flo",
+      "seed": 20346937,
+      "heard": "Herr Jensen schickt eine Sprachnachricht. Er spricht. Mehr als Moin.",
+      "endDb": -43.5
+    },
+    {
+      "file": "ac81f141bb6c.m4a",
+      "text": "Neun Sekunden! Das sind … viele Moins!",
+      "voice": "Rocko",
+      "seed": 20652394,
+      "heard": "Neun Sekunden, das sind viele Moins.",
+      "endDb": -54.7
+    },
+    {
+      "file": "53077f65cc81.m4a",
+      "text": "Ich finde sie zu lang. Und sie ist zu groß.",
+      "voice": "Anna",
+      "seed": 20523344,
+      "heard": "Ich finde sie zu lang und sie ist zu groß.",
+      "endDb": -52.2
+    },
+    {
+      "file": "9ac588775ef1.m4a",
+      "text": "Wie finden Sie die Hose?",
+      "voice": "Reed",
+      "seed": 21020305,
+      "heard": "Wie finden Sie die Hose?",
+      "endDb": -64.7
+    }
+  ]
+}
