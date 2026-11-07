@@ -592,7 +592,7 @@ const tea: SceneNode[] = [
   {
     t: "game",
     rule: ["essen/akkusativ-3"],
-    task: "Напишите Грете записку по образцу: записке Даны Матео.",
+    task: "Напишите Грете записку по образцу: записке Даны Матео. Подписываются двое, Хауке и Дана, поэтому вместо ich — wir.",
     hint: HINT_LETTER,
     c: letter(
       "Greta",
@@ -601,7 +601,7 @@ const tea: SceneNode[] = [
         an("Liebe", "Greta"),
         ["Danke → für den Kaffee und den Kuchen", "danke für den Kaffee und den Kuchen!", "Danke für den Kaffee und den Kuchen!"],
         ["Kuchen → super", "Der Kuchen ist super.", "der Kuchen ist super."],
-        ["Fragen → keine", "Ich habe keine Fragen.", "Wir haben keine Fragen."],
+        ["Wir → keine Fragen", "Wir haben keine Fragen.", "wir haben keine Fragen."],
         gruss("Hauke und Dana"),
       ],
     ),
