@@ -435,6 +435,36 @@ export const phrases: Record<string, Phrase> = {
     pl: "Teebeutel",
     note: "der Tee + der Beutel, мешочек. Ярлычок на нитке — тоже от него.",
   },
+  filmabend: {
+    ru: "вечер кино",
+    de: "der Filmabend",
+    pl: "Filmabende",
+    note: "der Film + der Abend. Летом у гавани — прямо на стене клуба.",
+  },
+  picknick: {
+    ru: "пикник",
+    de: "das Picknick",
+    pl: "Picknicks",
+    note: "Почти как по-русски. На Ostsee его устраивают прямо на пляже, на пледе.",
+  },
+  strandball: {
+    ru: "пляжный мяч",
+    de: "der Strandball",
+    pl: "Strandbälle",
+    note: "der Strand + der Ball. Лёгкий, надувной — для чайки как раз.",
+  },
+  projektor: {
+    ru: "проектор",
+    de: "der Projektor",
+    pl: "Projektoren",
+    note: "Ударение на -jek-: Pro-JEK-tor. Показывает фильм на стене клуба.",
+  },
+  keller: {
+    ru: "подвал",
+    de: "der Keller",
+    pl: "Keller",
+    note: "Под клубом — паруса, вёсла и всё, что не помещается наверху. Im Keller — в подвале.",
+  },
   neu: {
     ru: "Вы новичок. Вы видите всё.",
     de: "Sie sind neu. Sie sehen alles.",

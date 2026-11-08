@@ -3072,5 +3072,447 @@
     "audio": "audio/9887836a33f9.m4a"
    }
   ]
+ },
+ "freizeit/check-3": {
+  "point": "«Давай …?» — *Wollen wir am Sonntag Tennis spielen?*",
+  "read": "*Wollen wir am Sonntag Tennis spielen?* Русское «давай…» по-немецки — вопрос с *wollen*: модальный глагол первым, потом *wir*, инфинитив в конце. Это не «хотим ли мы?», а приглашение, и отвечают на него *Ja, gern!* или *Gute Idee!* Сравните с утверждением: *Wir wollen am Sonntag Tennis spielen* — «мы хотим в воскресенье поиграть в теннис».",
+  "rows": [
+   {
+    "slots": [
+     [],
+     [
+      {
+       "key": "woll",
+       "text": "Woll+en"
+      }
+     ],
+     [
+      {
+       "key": "wir",
+       "text": "wir"
+      },
+      {
+       "key": "am",
+       "text": "am"
+      },
+      {
+       "key": "sonntag",
+       "text": "Sonntag"
+      },
+      {
+       "key": "tennis",
+       "text": "Tennis"
+      }
+     ],
+     [
+      {
+       "key": "spiel",
+       "text": "spiel+en"
+      }
+     ]
+    ],
+    "punct": "?",
+    "plain": "Wollen wir am Sonntag Tennis spielen?",
+    "ru": "Давай в воскресенье поиграем в теннис?",
+    "audio": "audio/a7afaf2e6aec.m4a"
+   }
+  ]
+ },
+ "freizeit/modal-2": {
+  "point": "*ich will*, *du willst*, *er will*; просьба вежливее — *Ich möchte …*",
+  "read": "*wollen* — «хотеть», и устроен так же: *ich will*, *du willst*, *er will*, во множественном — *wollen*. Осторожно с английским: *will* здесь не будущее время, а «хочу». И ещё нюанс: *Ich will* звучит твёрдо, почти требовательно. В кафе или в магазине вежливее *Ich möchte* из темы о еде. А о планах с друзьями — *Ich will am Sonntag schwimmen* — говорить нормально.",
+  "table": {
+   "title": "können und wollen",
+   "ru": "уметь, мочь и хотеть",
+   "head": [
+    "Person",
+    "können",
+    "wollen"
+   ],
+   "rows": [
+    [
+     "ich",
+     "kann",
+     "will"
+    ],
+    [
+     "du",
+     "kann+st",
+     "will+st"
+    ],
+    [
+     "er / sie / es",
+     "kann",
+     "will"
+    ],
+    [
+     "wir",
+     "könn+en",
+     "woll+en"
+    ],
+    [
+     "ihr",
+     "könn+t",
+     "woll+t"
+    ],
+    [
+     "sie / Sie",
+     "könn+en",
+     "woll+en"
+    ]
+   ],
+   "ruCols": [],
+   "note": "В единственном числе меняется гласная, а у *ich* и *er* нет окончания: *ich kann*, *er kann*."
+  }
+ },
+ "freizeit/verabreden-1": {
+  "point": "Отказ = *leider* + причина + новый день: *Aber am Freitag habe ich Zeit.*",
+  "read": "Для встречи нужны предложение, ответ и подтверждение. Предложить: *Hast du am Samstag Zeit?*, *Kommst du mit?*, *Wollen wir …?* Согласиться: *Ja, gern!*, *Gute Idee!*, *Das passt.* Отказаться: *Leider nicht.* Если хотите продолжить общение, добавьте причину или предложите другой день: *Mein Bruder besucht mich. Aber am Sonntag habe ich Zeit.* Не считайте умение человека согласием: *Ich kann segeln* ещё не приглашение выйти под парусом.",
+  "table": {
+   "title": "Verabredungen",
+   "ru": "Договориться о встрече",
+   "head": [
+    "Vorschlag",
+    "Ja",
+    "Nein"
+   ],
+   "rows": [
+    [
+     "Hast du am Samstag Zeit?",
+     "Ja, gern!",
+     "Leider nicht."
+    ],
+    [
+     "Kommst du mit?",
+     "Gute Idee!",
+     "Schade, ich kann nicht."
+    ],
+    [
+     "Wollen wir zusammen kochen?",
+     "Ja, das passt.",
+     "Am Samstag kann ich leider nicht."
+    ],
+    [
+     "Um sieben?",
+     "Ja, um sieben!",
+     "Lieber um acht."
+    ]
+   ],
+   "ruCols": [],
+   "note": "Отказываясь, назовите причину или другой день: *Leider nicht. Aber am Freitag habe ich Zeit.*"
+  }
+ },
+ "freizeit/ende-4": {
+  "point": "*Ich kann nicht gut schwimmen.* Отказ: *Am Samstag kann ich leider nicht.*",
+  "read": "*nicht* стоит перед инфинитивом: *Ich kann nicht gut schwimmen.* А в отказе инфинитив часто опускают совсем — и так понятно, о чём речь: *Am Samstag kann ich leider nicht.* Поле «конец» пустеет, рамки нет. По-русски тоже говорят просто «не могу». Добавьте *leider* — и отказ прозвучит вежливо.",
+  "rows": [
+   {
+    "slots": [
+     [
+      {
+       "key": "ich",
+       "text": "Ich"
+      }
+     ],
+     [
+      {
+       "key": "kann",
+       "text": "kann"
+      }
+     ],
+     [
+      {
+       "key": "nicht",
+       "text": "nicht"
+      },
+      {
+       "key": "gut",
+       "text": "gut"
+      }
+     ],
+     [
+      {
+       "key": "schwimm",
+       "text": "schwimm+en"
+      }
+     ]
+    ],
+    "punct": ".",
+    "plain": "Ich kann nicht gut schwimmen.",
+    "ru": "Я плохо плаваю.",
+    "audio": "audio/85f2b9f6b5aa.m4a"
+   },
+   {
+    "slots": [
+     [
+      {
+       "key": "am",
+       "text": "Am"
+      },
+      {
+       "key": "samstag",
+       "text": "Samstag"
+      }
+     ],
+     [
+      {
+       "key": "kann",
+       "text": "kann"
+      }
+     ],
+     [
+      {
+       "key": "ich",
+       "text": "ich"
+      },
+      {
+       "key": "leider",
+       "text": "leider"
+      },
+      {
+       "key": "nicht",
+       "text": "nicht"
+      }
+     ],
+     []
+    ],
+    "punct": ".",
+    "plain": "Am Samstag kann ich leider nicht.",
+    "ru": "В субботу я, к сожалению, не могу.",
+    "audio": "audio/091815f8a064.m4a"
+   }
+  ]
+ },
+ "freizeit/modal-1": {
+  "point": "*können* — «уметь» и «мочь»: *ich kann*, *du kannst*, *er kann*",
+  "read": "*können* закрывает сразу два русских глагола: «уметь» — *Ich kann schwimmen* — и «мочь» — *Am Samstag kann ich nicht*. В единственном числе гласная меняется: не *könn-*, а *kann*. И главное отличие от обычных глаголов: у *ich* и *er* нет окончания, обе формы — просто *kann*. Сказать *er kannt* по образцу *er kommt* — очень частая ошибка. Это то же семейство, что *möchte* из темы о еде: *ich möchte* — *er möchte*, тоже без *-t*.",
+  "table": {
+   "title": "können und wollen",
+   "ru": "уметь, мочь и хотеть",
+   "head": [
+    "Person",
+    "können",
+    "wollen"
+   ],
+   "rows": [
+    [
+     "ich",
+     "kann",
+     "will"
+    ],
+    [
+     "du",
+     "kann+st",
+     "will+st"
+    ],
+    [
+     "er / sie / es",
+     "kann",
+     "will"
+    ],
+    [
+     "wir",
+     "könn+en",
+     "woll+en"
+    ],
+    [
+     "ihr",
+     "könn+t",
+     "woll+t"
+    ],
+    [
+     "sie / Sie",
+     "könn+en",
+     "woll+en"
+    ]
+   ],
+   "ruCols": [],
+   "note": "В единственном числе меняется гласная, а у *ich* и *er* нет окончания: *ich kann*, *er kann*."
+  }
+ },
+ "freizeit/check-1": {
+  "point": "С модальным глаголом приставка не отрывается: *Ich kann nicht mitkommen.*",
+  "read": "*Ich kann leider nicht mitkommen.* Помните *Kommst du mit?* — там приставка *mit* стоит в конце отдельно. С модальным глаголом *mitkommen* уходит в конец целиком и снова пишется одним словом: инфинитив не разрывается. *leider* и *nicht* — в середине, перед инфинитивом. Так же: *Ich will um sechs aufstehen*, *Kannst du heute einkaufen?*",
+  "rows": [
+   {
+    "slots": [
+     [],
+     [
+      {
+       "key": "komm",
+       "text": "Komm+st"
+      }
+     ],
+     [
+      {
+       "key": "du",
+       "text": "du"
+      }
+     ],
+     [
+      {
+       "key": "mit",
+       "text": "mit"
+      }
+     ]
+    ],
+    "punct": "?",
+    "plain": "Kommst du mit?",
+    "ru": "Ты пойдёшь с нами?",
+    "audio": "audio/91e7785d59eb.m4a"
+   },
+   {
+    "slots": [
+     [
+      {
+       "key": "ich",
+       "text": "Ich"
+      }
+     ],
+     [
+      {
+       "key": "kann",
+       "text": "kann"
+      }
+     ],
+     [
+      {
+       "key": "leider",
+       "text": "leider"
+      },
+      {
+       "key": "nicht",
+       "text": "nicht"
+      }
+     ],
+     [
+      {
+       "key": "mitkomm",
+       "text": "mitkomm+en"
+      }
+     ]
+    ],
+    "punct": ".",
+    "plain": "Ich kann leider nicht mitkommen.",
+    "ru": "К сожалению, я не могу пойти с вами.",
+    "audio": "audio/056900100056.m4a"
+   }
+  ]
+ },
+ "freizeit/gern-1": {
+  "point": "*gern* — люблю, *lieber* — больше люблю, *am liebsten* — больше всего",
+  "read": "К глаголу добавляем *gern*: *Ich schwimme gern*. Сравнение — *lieber*, предпочтение среди всех вариантов — *am liebsten*. Матео предлагает *Lieber um zwölf*, когда выбирает время тенниса. Не нужно механически заменять «люблю» на *lieben*: для обычных предпочтений проще *gern*. Если *lieben* относится к занятию, у него другая конструкция; её разберём позже. «Не люблю готовить» — *Ich koche nicht gern*.",
+  "table": {
+   "title": "gern – lieber – am liebsten",
+   "ru": "люблю — больше люблю — больше всего люблю",
+   "head": [
+    "Wort",
+    "Beispiel",
+    "По-русски"
+   ],
+   "rows": [
+    [
+     "gern",
+     "Ich schwimme gern.",
+     "Я люблю плавать."
+    ],
+    [
+     "lieber",
+     "Ich spiele lieber Tennis.",
+     "Я больше люблю теннис."
+    ],
+    [
+     "am liebsten",
+     "Am liebsten lese ich.",
+     "Больше всего я люблю читать."
+    ],
+    [
+     "nicht gern",
+     "Ich koche nicht gern.",
+     "Я не люблю готовить."
+    ]
+   ],
+   "ruCols": [
+    2
+   ],
+   "note": "Как «хорошо — лучше — лучше всего»: формы не образуются по правилу, их надо запомнить."
+  }
+ },
+ "freizeit/ende-3": {
+  "point": "*Kannst du Tennis spielen?* — *Was willst du am Sonntag machen?*",
+  "read": "В вопросах рамка сохраняется. Вопрос да/нет начинается с модального глагола: *Kannst du Tennis spielen?* — «ты умеешь играть в теннис?». В W-вопросе первым идёт вопросительное слово: *Was willst du am Sonntag machen?* — «что ты хочешь делать в воскресенье?». Всё, что между двумя глаголами, — середина: подлежащее, время, дополнение. Инфинитив всегда замыкает предложение.",
+  "rows": [
+   {
+    "slots": [
+     [],
+     [
+      {
+       "key": "kann",
+       "text": "Kann+st"
+      }
+     ],
+     [
+      {
+       "key": "du",
+       "text": "du"
+      },
+      {
+       "key": "tennis",
+       "text": "Tennis"
+      }
+     ],
+     [
+      {
+       "key": "spiel",
+       "text": "spiel+en"
+      }
+     ]
+    ],
+    "punct": "?",
+    "plain": "Kannst du Tennis spielen?",
+    "ru": "Ты умеешь играть в теннис?",
+    "audio": "audio/5d464720f197.m4a"
+   },
+   {
+    "slots": [
+     [
+      {
+       "key": "was",
+       "text": "Was"
+      }
+     ],
+     [
+      {
+       "key": "will",
+       "text": "will+st"
+      }
+     ],
+     [
+      {
+       "key": "du",
+       "text": "du"
+      },
+      {
+       "key": "am",
+       "text": "am"
+      },
+      {
+       "key": "sonntag",
+       "text": "Sonntag"
+      }
+     ],
+     [
+      {
+       "key": "mach",
+       "text": "mach+en"
+      }
+     ]
+    ],
+    "punct": "?",
+    "plain": "Was willst du am Sonntag machen?",
+    "ru": "Что ты хочешь делать в воскресенье?",
+    "audio": "audio/f14f82477492.m4a"
+   }
+  ]
  }
 }

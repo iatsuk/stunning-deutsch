@@ -1,0 +1,416 @@
+{
+  "date": "2026-11-08",
+  "scope": "Chapter 7 of the Moin scene prototype (src/story/scenes/07.ts): character lines, Jensen's six words and note, Dana's interlude, replays, lock, letter, oral practice and new story phrases with plurals",
+  "model": "k2-fsa/OmniVoice",
+  "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+  "candidatesPerPhrase": 3,
+  "asr": "openai/whisper-large-v3",
+  "notes": [
+    "Whisper writes numbers as digits (\"um 8\"); those takes were compared by hand and say the text as written.",
+    "Frau Petersen's line was rewritten before voicing as \"Entschuldigung, ich komme zu spät! Ich hole das Buch von zu Hause – hier ist es!\".",
+    "Frauke's rumour line \"Nils? Nils ist bei der Polizei! Heute früh! Ich sehe ihn dort!\" told a morning event in the present tense; it was rewritten as \"Nils? Nils ist bei der Polizei! Da, am Hafen! Ich sehe ihn!\" and voiced again with four takes.",
+    "The chosen take has the closest transcript, an end level below -32 dB and no fragment flagged by tails.py; tails.py also passes on all 50 imported files."
+  ],
+  "files": [
+    {
+      "file": "980708a5e2e0.m4a",
+      "text": "der Filmabend, die Filmabende",
+      "voice": "Anna",
+      "seed": 20543296,
+      "heard": "Der Filmabend. Die Filmabende.",
+      "endDb": -45.9
+    },
+    {
+      "file": "ede8bc6ce1a0.m4a",
+      "text": "das Picknick, die Picknicks",
+      "voice": "Anna",
+      "seed": 20708864,
+      "heard": "Das Picknick. Die Picknicks.",
+      "endDb": -57.3
+    },
+    {
+      "file": "949b10dc7901.m4a",
+      "text": "der Strandball, die Strandbälle",
+      "voice": "Anna",
+      "seed": 20995024,
+      "heard": "Der Strandball, die Strandbälle",
+      "endDb": -54.6
+    },
+    {
+      "file": "a1e08a73094e.m4a",
+      "text": "der Projektor, die Projektoren",
+      "voice": "Anna",
+      "seed": 20817932,
+      "heard": "Der Projektor, die Projektoren",
+      "endDb": -58.7
+    },
+    {
+      "file": "aef8f1cf8a2a.m4a",
+      "text": "Wir laden Herrn Jensen ein! Heute Abend gibt es einen Film am Hafen.",
+      "voice": "Anna",
+      "seed": 20309672,
+      "heard": "Wir laden Herrn Jensen ein. Heute Abend gibt es einen Film am Hafen.",
+      "endDb": -43.7
+    },
+    {
+      "file": "21f2dab6e6e5.m4a",
+      "text": "Super Idee! Im Kino spricht man nicht viel. Das kann Herr Jensen!",
+      "voice": "Rocko",
+      "seed": 20483013,
+      "heard": "Super Idee, im Kino spricht man nicht viel, das kann Herr Jensen.",
+      "endDb": -61.5
+    },
+    {
+      "file": "213106657b0e.m4a",
+      "text": "Ich kann nicht. Ich will segeln.",
+      "voice": "Grandpa",
+      "seed": 20696989,
+      "heard": "Ich kann nicht. Ich will segeln.",
+      "endDb": -65.0
+    },
+    {
+      "file": "993891845d5e.m4a",
+      "text": "Kino? Nein! Ich will nicht ins Kino. Ich will kochen!",
+      "voice": "Reed",
+      "seed": 20858221,
+      "heard": "Kino? Nein, ich will nicht ins Kino. Ich will kochen.",
+      "endDb": -49.3
+    },
+    {
+      "file": "3d0d3904e60d.m4a",
+      "text": "Herr Jensen segelt jeden Morgen um acht. Immer allein!",
+      "voice": "Flo",
+      "seed": 20752557,
+      "heard": "Herr Jensen segelt jeden Morgen um acht. Immer allein.",
+      "endDb": -65.9
+    },
+    {
+      "file": "e119d7ba3a2c.m4a",
+      "text": "Gut. Kein Kino. Aber wir haben noch eine Idee!",
+      "voice": "Rocko",
+      "seed": 21006971,
+      "heard": "Gut, kein Kino, aber wir haben noch eine Idee.",
+      "endDb": -61.4
+    },
+    {
+      "file": "ccace146a408.m4a",
+      "text": "Wo ist Frau Petersen? Und wo ist das Buch?",
+      "voice": "Rocko",
+      "seed": 21205352,
+      "heard": "Wo ist Frau Petersen und wo ist das Buch?",
+      "endDb": -63.6
+    },
+    {
+      "file": "40135e369fb1.m4a",
+      "text": "Entschuldigung, ich komme zu spät! Ich hole das Buch von zu Hause – hier ist es!",
+      "voice": "Sandy",
+      "seed": 20455441,
+      "heard": "Entschuldigung, ich komme zu spät. Ich hole das Buch von zu Hause. Hier ist es.",
+      "endDb": -51.0
+    },
+    {
+      "file": "e6b85af3db69.m4a",
+      "text": "Am Montag kann ich nicht. Am Dienstag habe ich Zeit. Und Sie?",
+      "voice": "Sandy",
+      "seed": 20562825,
+      "heard": "Am Montag kann ich nicht, am Dienstag habe ich Zeit. Und Sie?",
+      "endDb": -40.9
+    },
+    {
+      "file": "b1f2c97b348f.m4a",
+      "text": "Heute haben alle Zeit. Wir machen das Picknick heute! Am Strand.",
+      "voice": "Anna",
+      "seed": 20757807,
+      "heard": "Heute haben alle Zeit. Wir machen das Picknick heute am Strand.",
+      "endDb": -48.4
+    },
+    {
+      "file": "fb9d17620b40.m4a",
+      "text": "Um acht? So früh? Um acht schlafe ich!",
+      "voice": "Rocko",
+      "seed": 20999648,
+      "heard": "Um acht, so früh um acht schlafe ich.",
+      "endDb": -48.7
+    },
+    {
+      "file": "11cf69df2412.m4a",
+      "text": "Ein Picknick? Dann brauchen wir ein Formular.",
+      "voice": "Sandy",
+      "seed": 20410768,
+      "heard": "Ein Picknick? Dann brauchen wir ein Formular.",
+      "endDb": -50.9
+    },
+    {
+      "file": "b482397fae8f.m4a",
+      "text": "Können Sie am Montag?",
+      "voice": "Sandy",
+      "seed": 20686174,
+      "heard": "Können Sie am Montag.",
+      "endDb": -55.6
+    },
+    {
+      "file": "0f342e6d19f6.m4a",
+      "text": "Und am Dienstag?",
+      "voice": "Sandy",
+      "seed": 20894900,
+      "heard": "Und am Dienstag?",
+      "endDb": -56.5
+    },
+    {
+      "file": "0d614c23adf6.m4a",
+      "text": "Und Herr Jensen?",
+      "voice": "Sandy",
+      "seed": 20672372,
+      "heard": "Und Herr Jensen?",
+      "endDb": -69.0
+    },
+    {
+      "file": "c1ce30975ed4.m4a",
+      "text": "Alle? Der ganze Club? Wir wollen nur mit Herrn Jensen sprechen!",
+      "voice": "Rocko",
+      "seed": 20911348,
+      "heard": "Alle. Der ganze Club. Wir wollen nur mit Herrn Jensen sprechen.",
+      "endDb": -67.5
+    },
+    {
+      "file": "71b0e4ad2629.m4a",
+      "text": "Eine Party für den Club braucht ein Formular. Name, wer kommt mit, wer bringt was.",
+      "voice": "Sandy",
+      "seed": 21012391,
+      "heard": "Eine Party für den Club braucht ein Formular. Name, wer kommt mit, wer bringt was.",
+      "endDb": -43.6
+    },
+    {
+      "file": "a801f0d7a43a.m4a",
+      "text": "Gut. Das Formular ist fertig. Jetzt ist es eine Party!",
+      "voice": "Sandy",
+      "seed": 20366729,
+      "heard": "Gut, das Formular ist fertig. Jetzt ist es eine Party.",
+      "endDb": -44.5
+    },
+    {
+      "file": "236955e07738.m4a",
+      "text": "Am Strand gibt es viele Möwen. Bitte kein Brot! Brot ist nicht gut für Möwen.",
+      "voice": "Flo",
+      "seed": 20581127,
+      "heard": "Am Strand gibt es viele Möwen. Bitte kein Brot! Brot ist nicht gut für Möwen.",
+      "endDb": -44.5
+    },
+    {
+      "file": "1438eb90dddd.m4a",
+      "text": "Gut, eine Party. Aber Herr Jensen kommt nicht!",
+      "voice": "Rocko",
+      "seed": 21132780,
+      "heard": "Gut, eine Party. Aber Herr Jensen kommt nicht.",
+      "endDb": -58.1
+    },
+    {
+      "file": "1ff60a452f64.m4a",
+      "text": "Wir brauchen ein größeres Boot.",
+      "voice": "Rocko",
+      "seed": 20999010,
+      "heard": "Wir brauchen ein größeres Boot.",
+      "endDb": -68.6
+    },
+    {
+      "file": "96bc37e25022.m4a",
+      "text": "Die Möwe! Sie hat den Ball!",
+      "voice": "Flo",
+      "seed": 20857602,
+      "heard": "Die Möwe. Sie hat den Ball.",
+      "endDb": -51.1
+    },
+    {
+      "file": "5f7e7294c639.m4a",
+      "text": "Ich hole den Ball. Ich komme wieder!",
+      "voice": "Rocko",
+      "seed": 21147575,
+      "heard": "Ich hole den Ball, ich komme wieder.",
+      "endDb": -68.7
+    },
+    {
+      "file": "37782b640858.m4a",
+      "text": "Seht mal! Greta! Ihre Hände – dunkelblau!",
+      "voice": "Anna",
+      "seed": 20856086,
+      "heard": "Seht mal, Greta, ihre Hände dunkelblau.",
+      "endDb": -49.2
+    },
+    {
+      "file": "6f429bc01cd3.m4a",
+      "text": "Keine Fotos. Aber die Hände sind dunkelblau.",
+      "voice": "Flo",
+      "seed": 20860305,
+      "heard": "Keine Fotos, aber die Hände sind dunkelblau.",
+      "endDb": -42.4
+    },
+    {
+      "file": "dcb9ab3f86eb.m4a",
+      "text": "Und wo ist mein Brot? … Das Brot ist für später!",
+      "voice": "Reed",
+      "seed": 20404585,
+      "heard": "Und wo ist mein Brot? Das Brot ist für später.",
+      "endDb": -53.1
+    },
+    {
+      "file": "0bef2f6f32e5.m4a",
+      "text": "Ich habe eine Idee! Herr Jensen will segeln – also segeln wir zu ihm!",
+      "voice": "Rocko",
+      "seed": 21182819,
+      "heard": "Ich habe eine Idee, Herr Jensen will segeln, also segeln wir zu ihm.",
+      "endDb": -58.8
+    },
+    {
+      "file": "280442f68a6e.m4a",
+      "text": "Hauke! Mein Brot ist im Boot!",
+      "voice": "Reed",
+      "seed": 20710636,
+      "heard": "Hauke, mein Brot ist im Boot.",
+      "endDb": -59.6
+    },
+    {
+      "file": "2914f0a795f8.m4a",
+      "text": "Hauke! Kannst du schwimmen?",
+      "voice": "Anna",
+      "seed": 20876342,
+      "heard": "Hauke, kannst du schwimmen?",
+      "endDb": -59.7
+    },
+    {
+      "file": "9256b366b22d.m4a",
+      "text": "Ja! Ich kann schwimmen! Aber nicht gut!",
+      "voice": "Rocko",
+      "seed": 20963644,
+      "heard": "Ja, ich kann schwimmen, aber nicht gut.",
+      "endDb": -62.6
+    },
+    {
+      "file": "464b8fab9043.m4a",
+      "text": "Morgen um acht. Im Keller. Allein.",
+      "voice": "Rocko",
+      "seed": 21145938,
+      "heard": "Morgen um 8, im Keller allein.",
+      "endDb": -65.6
+    },
+    {
+      "file": "334f622f56cb.m4a",
+      "text": "Herr Jensen will segeln.",
+      "voice": "Anna",
+      "seed": 20979401,
+      "heard": "Herr Jensen will segeln.",
+      "endDb": -55.4
+    },
+    {
+      "file": "76ddd55df018.m4a",
+      "text": "Wir können zusammen gehen.",
+      "voice": "Anna",
+      "seed": 20814328,
+      "heard": "Wir können zusammen gehen.",
+      "endDb": -57.8
+    },
+    {
+      "file": "10b7e6331c11.m4a",
+      "text": "Mateo will nicht ins Kino gehen.",
+      "voice": "Anna",
+      "seed": 20445647,
+      "heard": "Matteo will nicht ins Kino gehen.",
+      "endDb": -46.4
+    },
+    {
+      "file": "52d53a7e509a.m4a",
+      "text": "Der Film ist gut. Aber ich kann nichts sehen – der Mann vor mir ist zu groß!",
+      "voice": "Anna",
+      "seed": 21129402,
+      "heard": "Der Film ist gut, aber ich kann nichts sehen, der Mann vor mir ist zu groß.",
+      "endDb": -49.5
+    },
+    {
+      "file": "eed3168deba2.m4a",
+      "text": "Mateo kocht nicht. Mateo backt. Aber was?",
+      "voice": "Anna",
+      "seed": 21186656,
+      "heard": "Matteo kocht nicht, Matteo backt, aber was?",
+      "endDb": -41.4
+    },
+    {
+      "file": "52fd426dfc82.m4a",
+      "text": "Morgen um acht! Ich bin um acht da. Oder um Viertel nach acht.",
+      "voice": "Rocko",
+      "seed": 20976785,
+      "heard": "Morgen um acht. Ich bin um acht da. Oder um viertel nach acht.",
+      "endDb": -56.1
+    },
+    {
+      "file": "4d6b344f597f.m4a",
+      "text": "Und das Foto? Greta hat Farbe an den Händen. Dunkelblau – wie das Schild!",
+      "voice": "Flo",
+      "seed": 20723854,
+      "heard": "Und das Foto? Greta hat Farbe an den Händen. Dunkelblau wie das Schild.",
+      "endDb": -42.9
+    },
+    {
+      "file": "8b80a8d55079.m4a",
+      "text": "Und die Möwe hat den Ball. Sie spielt jetzt Fußball!",
+      "voice": "Flo",
+      "seed": 20887833,
+      "heard": "Und die Möwe hat den Ball. Sie spielt jetzt Fußball.",
+      "endDb": -49.5
+    },
+    {
+      "file": "0d66c8d76809.m4a",
+      "text": "Ich habe eine Diagnose. Aber ich sage sie morgen.",
+      "voice": "Anna",
+      "seed": 20654296,
+      "heard": "Ich habe eine Diagnose, aber ich sage sie morgen.",
+      "endDb": -41.4
+    },
+    {
+      "file": "85593f5183e1.m4a",
+      "text": "Brot? Für morgen? Nein. Für … später. Gute Nacht!",
+      "voice": "Reed",
+      "seed": 21159280,
+      "heard": "Brot für morgen? Nein, für später. Gute Nacht!",
+      "endDb": -48.0
+    },
+    {
+      "file": "238b54da7349.m4a",
+      "text": "Der Wecker ist da. Um sieben stehe ich auf!",
+      "voice": "Rocko",
+      "seed": 20297752,
+      "heard": "Der Wecker ist da, um sieben stehe ich auf.",
+      "endDb": -57.5
+    },
+    {
+      "file": "3a58b5c8c363.m4a",
+      "text": "Ja, ich kann schwimmen. Aber am liebsten segle ich.",
+      "voice": "Anna",
+      "seed": 20627395,
+      "heard": "Ja, ich kann schwimmen, aber am liebsten segle ich.",
+      "endDb": -47.2
+    },
+    {
+      "file": "43ffd23cd14a.m4a",
+      "text": "Kannst du schwimmen?",
+      "voice": "Reed",
+      "seed": 21183594,
+      "heard": "Kannst du schwimmen?",
+      "endDb": -67.6
+    },
+    {
+      "file": "87d7e01d3c06.m4a",
+      "text": "Kommst du mit ins Kino?",
+      "voice": "Anna",
+      "seed": 20991718,
+      "heard": "Kommst du mit ins Kino?",
+      "endDb": -64.1
+    },
+    {
+      "file": "7741a70768db.m4a",
+      "text": "Nils? Nils ist bei der Polizei! Da, am Hafen! Ich sehe ihn!",
+      "voice": "Sandy",
+      "seed": 21145032,
+      "heard": "Nils? Nils ist bei der Polizei. Da am Hafen, ich sehe ihn.",
+      "endDb": -50.0
+    }
+  ]
+}
