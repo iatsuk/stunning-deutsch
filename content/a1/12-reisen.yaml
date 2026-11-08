@@ -5,8 +5,8 @@ ru: Поездки, погода, даты
 lede: >-
   Перед финалом Kieler Woche Дана и Матео вспоминают поездку в Гамбург в начале июня: отель,
   дождь, прогулка по порту и звонок Элиф из Киля. Помогите восстановить даты и события, понять
-  объявление и закрыть историю неверных копий. Учимся Perfekt с *sein*, погоде и порядковым
-  числам в датах.
+  объявление и закрыть историю неверных копий. Учимся Perfekt с *sein*, погоде и датам:
+  порядковые числа из темы 8 теперь называют день.
 goals:
   - Рассказать о поездке в прошлом и не перепутать haben и sein
   - Поговорить о погоде — сегодня и вчера
@@ -18,7 +18,7 @@ grammar:
   - haben или sein
   - Погода с es
   - Месяцы и времена года
-  - Порядковые числа и дата
+  - "Дата: am ersten Mai"
 exam: [ schreiben-2, schreiben-1, hoeren-2 ]
 
 dialogues:
@@ -187,7 +187,7 @@ tables:
       - [ "19. Mai", der neunzehn+te Mai, am neunzehn+ten Mai ]
       - [ "20. Mai", der zwanzig+ste Mai, am zwanzig+sten Mai ]
       - [ "31. Mai", der einunddreißig+ste Mai, am einunddreißig+sten Mai ]
-    note: "До 19 — *-te*, с 20 — *-ste*. После *am*, *vom* и *bis zum* окончание *-en*."
+    note: "Порядковые числа — по правилу темы 8: до 19 *-te*, с 20 *-ste*. Новое — *am*, *vom*, *bis zum* и окончание *-en*."
 
 tasks:
   antwort:
@@ -464,16 +464,15 @@ steps:
     title: Какое сегодня число?
     beats:
       - read: >-
-          Порядковые числа вы уже встречали: *im zweiten Stock*, *die zweite Straße links*.
-          Дата — тоже порядковое число: «первое мая», «второе июня». До 19 к числу добавляется
-          *-te*: *zwei — der zweite*, *vier — der vierte*. Исключений четыре: к знакомым *der
-          erste* и *der dritte* добавляются *der siebte* и *der achte* — у *acht* уже есть своё
-          *t*, второе не нужно. На письме порядковое число обозначают точкой: *der 2. Juni*.
-        point: "До 19 — *-te*: *der zweite*; исключения: *erste*, *dritte*, *siebte*, *achte*"
+          Порядковые числа вы знаете из темы 8: *im zweiten Stock*, а в дороге — *die zweite
+          Straße links*. Дата — то же порядковое число: «первое мая» — *der erste Mai*. Правило
+          прежнее: до 19 *-te*, с 20 *-ste*, исключения *erste*, *dritte*, *siebte*, *achte*.
+          На письме порядковое число, как и на табличке этажа, обозначают точкой: *der 2. Juni*.
+        point: "Дата — порядковое число: *der erste Mai*; *der 2. Juni* = *der zweite Juni*"
         set: { view: table, table: datum, reveal: 6, focus: [ 0, 2, 4, 5 ] }
       - read: >-
-          С 20 окончание длиннее — *-ste*: *der zwanzigste*, *der einunddreißigste*. Последний
-          шаг — «когда?». По-русски «первого мая» — родительный падеж, а по-немецки *am* и
+          С 20 — *-ste*, как в теме 8: *der zwanzigste*, *der einunddreißigste*. Новое здесь
+          одно — «когда?». По-русски «первого мая» — родительный падеж, а по-немецки *am* и
           окончание *-en*: *am ersten Mai*. После *vom* и *bis zum* — тоже *-en*, поэтому Матео
           и сказал *vom zweiten bis zum vierten Juni*. Спросить дату можно так: *Welches Datum
           ist heute?*

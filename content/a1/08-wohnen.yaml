@@ -13,12 +13,13 @@ goals:
   - "Описать квартиру: большая, светлая, тихая, недорогая"
   - "Прочитать объявление о квартире со всеми сокращениями"
   - "Назвать этаж: im ersten Stock — по-нашему второй этаж"
+  - "Образовать любое порядковое число: der siebte, der zwanzigste"
 grammar:
   - "Сложные слова: род по последней части"
   - "Дательный после in и auf на вопрос «где?»"
   - "im = in dem"
   - "Прилагательное после sein"
-  - "Порядковые числа на этажах: im ersten Stock"
+  - "Порядковые числа: до 19 -te, с 20 -ste; im ersten Stock"
 exam: [ lesen-2, lesen-3 ]
 
 dialogues:
@@ -232,6 +233,22 @@ tables:
       - [ 4. OG, der vier+te Stock, im vier+ten Stock, пятый этаж ]
       - [ 5. OG, der fünf+te Stock, im fünf+ten Stock, шестой этаж ]
     note: "Порядковое число — число + *-te*: *zwei+te*, *vier+te*; исключения — *erste* и *dritte*. После *im* окончание *-en*: *im zweiten Stock*."
+  ordinal:
+    title: Erste, zweite, dritte …
+    ru: Порядковые числа целиком
+    head: [ Zahl, Ordinalzahl, "im …", По-русски ]
+    ruCols: [ 3 ]
+    rows:
+      - [ "1.", der erst+e, im erst+en, первый ]
+      - [ "2.", der zwei+te, im zwei+ten, второй ]
+      - [ "3.", der dritt+e, im dritt+en, третий ]
+      - [ "4.", der vier+te, im vier+ten, четвёртый ]
+      - [ "7.", der sieb+te, im sieb+ten, седьмой ]
+      - [ "8.", der acht+e, im acht+en, восьмой ]
+      - [ "19.", der neunzehn+te, im neunzehn+ten, девятнадцатый ]
+      - [ "20.", der zwanzig+ste, im zwanzig+sten, двадцатый ]
+      - [ "31.", der einunddreißig+ste, im einunddreißig+sten, тридцать первый ]
+    note: "До 19 — число + *-te*, с 20 — *-ste*. Исключений четыре: *erste*, *dritte*, *siebte*, *achte*. После *im* — *-en*. Точка после цифры — порядковое число: *7.* = *siebte*."
 
 tasks:
   anzeigen:
@@ -452,10 +469,18 @@ steps:
       - read: >-
           Дана читает Матео объявление: *im zweiten Stock*. В самом объявлении то же написано
           цифрой с точкой — *2. OG*. Точка после числа и значит «-й»: *der 2. Stock* читается
-          *der zweite Stock*. Так же потом будут записываться даты: *der 2. Juni*. Порядковые
-          числа пригодятся и в дороге — «вторая улица налево» — и в датах в конце курса.
+          *der zweite Stock*. Так же потом будут записываться даты: *der 2. Juni*. Дома в
+          Киле невысокие, но правило одно на все порядковые числа — его стоит выучить сразу целиком.
         point: "*2. OG* = *der zweite Stock*: точка после цифры — порядковое число"
         set: { view: dialogue, dialogue: anzeige, reveal: 7, focus: [ 6 ] }
+      - read: >-
+          Всё правило умещается в две строки. До 19 к числу добавляется *-te*: *vierte*,
+          *neunzehnte*. С 20 окончание длиннее — *-ste*: *zwanzigste*, *einunddreißigste*.
+          Исключений четыре: *erste*, *dritte*, *siebte* — у *sieben* выпадает *-en* — и
+          *achte*: у *acht* уже есть своё *t*. После *im* у порядкового числа окончание *-en*.
+          С этим правилом потом не придётся ничего доучивать: в дороге и в датах оно то же.
+        point: "До 19 — *-te*, с 20 — *-ste*; исключения: *erste*, *dritte*, *siebte*, *achte*"
+        set: { view: table, table: ordinal }
 
   - id: satz
     chapter: grammar
@@ -704,6 +729,21 @@ exercises:
     options: [ der dritte Stock, der dreite Stock, drei Stock ]
     answer: 0
     why: "*drei* → *dritte*: исключение, как *erste*. Точка после цифры — порядковое число."
+  - type: choice
+    q: Как сказать «седьмой этаж»?
+    options: [ der siebte Stock, der siebenste Stock, der siebzehnte Stock ]
+    answer: 0
+    why: "У *sieben* выпадает *-en*: *der siebte* (реже говорят *der siebente*). *-ste* — только с 20, а *siebzehnte* — семнадцатый."
+  - type: choice
+    q: Как сказать «двадцатый»?
+    options: [ der zwanzigste, der zwanzigte, der zwanzigeste ]
+    answer: 0
+    why: "С 20 окончание *-ste*: *der zwanzigste*, *der einunddreißigste*."
+  - type: choice
+    q: Как сказать «на восьмом этаже»?
+    options: [ im achten Stock, im achtten Stock, im acht Stock ]
+    answer: 0
+    why: "У *acht* уже есть *t*: *der achte*. После *im* — *-en*: *im achten Stock*."
 adventure:
   kind: sequence
   title: Подготовьте жильё для гостей

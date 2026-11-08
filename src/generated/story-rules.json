@@ -1749,7 +1749,7 @@
  },
  "reisen/datum-2": {
   "point": "С 20 — *-ste*; «когда?» — *am …-en*: *am ersten Mai*, *am zwanzigsten Mai*",
-  "read": "С 20 окончание длиннее — *-ste*: *der zwanzigste*, *der einunddreißigste*. Последний шаг — «когда?». По-русски «первого мая» — родительный падеж, а по-немецки *am* и окончание *-en*: *am ersten Mai*. После *vom* и *bis zum* — тоже *-en*, поэтому Матео и сказал *vom zweiten bis zum vierten Juni*. Спросить дату можно так: *Welches Datum ist heute?*",
+  "read": "С 20 — *-ste*, как в теме 8: *der zwanzigste*, *der einunddreißigste*. Новое здесь одно — «когда?». По-русски «первого мая» — родительный падеж, а по-немецки *am* и окончание *-en*: *am ersten Mai*. После *vom* и *bis zum* — тоже *-en*, поэтому Матео и сказал *vom zweiten bis zum vierten Juni*. Спросить дату можно так: *Welches Datum ist heute?*",
   "table": {
    "title": "Ordinalzahlen und Datum",
    "ru": "Порядковые числа и дата",
@@ -1806,7 +1806,7 @@
     ]
    ],
    "ruCols": [],
-   "note": "До 19 — *-te*, с 20 — *-ste*. После *am*, *vom* и *bis zum* окончание *-en*."
+   "note": "Порядковые числа — по правилу темы 8: до 19 *-te*, с 20 *-ste*. Новое — *am*, *vom*, *bis zum* и окончание *-en*."
   },
   "focus": [
    0,
