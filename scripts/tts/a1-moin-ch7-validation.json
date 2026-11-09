@@ -9,7 +9,8 @@
     "Whisper writes numbers as digits (\"um 8\"); those takes were compared by hand and say the text as written.",
     "Frau Petersen's line was rewritten before voicing as \"Entschuldigung, ich komme zu spät! Ich hole das Buch von zu Hause – hier ist es!\".",
     "Frauke's rumour line \"Nils? Nils ist bei der Polizei! Heute früh! Ich sehe ihn dort!\" told a morning event in the present tense; it was rewritten as \"Nils? Nils ist bei der Polizei! Da, am Hafen! Ich sehe ihn!\" and voiced again with four takes.",
-    "The chosen take has the closest transcript, an end level below -32 dB and no fragment flagged by tails.py; tails.py also passes on all 50 imported files."
+    "The chosen take has the closest transcript, an end level below -32 dB and no fragment flagged by tails.py; tails.py also passes on all 50 imported files.",
+    "Mateo's line \"Ich mag Fisch! Und ich koche gern Fisch!\" was added on 9 November 2026 with the mögen rule; four takes were voiced and all four transcripts matched, the quietest end was chosen."
   ],
   "files": [
     {
@@ -411,6 +412,14 @@
       "seed": 21145032,
       "heard": "Nils? Nils ist bei der Polizei. Da am Hafen, ich sehe ihn.",
       "endDb": -50.0
+    },
+    {
+      "file": "06df148a3fda.m4a",
+      "text": "Ich mag Fisch! Und ich koche gern Fisch!",
+      "voice": "Reed",
+      "seed": 20339322,
+      "heard": "Ich mag Fisch und ich koche gern Fisch.",
+      "endDb": -51.0
     }
   ]
 }

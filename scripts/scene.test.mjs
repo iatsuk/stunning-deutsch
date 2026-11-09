@@ -9,6 +9,7 @@ import { MNEMONICS } from "../src/story/mnemonics.ts";
 import { applyEffects, holds, TRACKS } from "../src/story/world.ts";
 import { sceneChapter1 } from "../src/story/scenes/01.ts";
 import { GERMAN_TARGET, sceneChapters } from "../src/story/scenes/index.ts";
+import { SCENE_RULES } from "../src/story/scenes/rules.ts";
 
 const words = JSON.parse(readFileSync(new URL("../src/generated/a1-words.json", import.meta.url)));
 // Общие правила проверяются во всех главах сцен; частные случаи движка — на главе 1.
@@ -151,7 +152,10 @@ test("tasks explain their grammar with lesson fragments up to their chapter", ()
     for (const n of all.filter((n) => n.rule))
       for (const ref of n.rule) {
         assert.ok(rules[ref]?.point && (rules[ref].table || rules[ref].rows?.length), ref);
-        assert.ok(lessons.indexOf(ref.split("/")[0]) <= i, `${chapter.id}: ${ref} — урок ещё впереди`);
+        // Правило новой версии (sollen, mögen — их нет в уроках A1) открывается со своей главы.
+        const own = ref.startsWith("moin/") ? SCENE_RULES[ref] : null;
+        if (own) assert.ok(own.chapter <= i + 1, `${chapter.id}: ${ref} — правило с главы ${own.chapter}`);
+        else assert.ok(lessons.indexOf(ref.split("/")[0]) >= 0 && lessons.indexOf(ref.split("/")[0]) <= i, `${chapter.id}: ${ref} — урок ещё впереди`);
       }
     // Замок и записка проверяют грамматику целой фразой: без правила их проходят перебором.
     for (const n of all.filter((n) => n.t === "game" && (n.c.kind === "lock" || n.c.kind === "letter")))

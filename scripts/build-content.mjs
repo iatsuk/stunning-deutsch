@@ -22,6 +22,7 @@ import { sceneChapters } from "../src/story/scenes/index.ts";
 import { audioKey, storyLines, storyWords, validateStory } from "../src/story/logic.ts";
 import { stepRules } from "../src/story/rules.ts";
 import { sceneRules } from "../src/story/scene.ts";
+import { SCENE_RULES } from "../src/story/scenes/rules.ts";
 import { uhrzeit } from "../src/lib/german.ts";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
@@ -174,6 +175,20 @@ const storyRules = {};
 /** Копирует фрагмент разбора урока в правила игры; lessons — до какого урока A1 он может быть. */
 function addRule(where, ref, lessons = Infinity) {
   const [topicId, beatId] = ref.split("/");
+  // Правила новой версии Moin (src/story/scenes/rules.ts) — только для сцен и не раньше своей главы.
+  if (topicId === "moin") {
+    const own = SCENE_RULES[ref];
+    if (!own) return fail(where, `правило ${ref}: нет в src/story/scenes/rules.ts`);
+    if (lessons === Infinity) return fail(where, `правило ${ref}: правила новой версии — только для сцен`);
+    if (own.chapter > lessons) fail(where, `правило ${ref}: оно с главы ${own.chapter}`);
+    storyRules[ref] ??= {
+      point: own.point,
+      read: own.read,
+      table: own.table,
+      ...(own.focus ? { focus: own.focus } : {}),
+    };
+    return;
+  }
   const topic = topics.find((t) => t.level === "a1" && t.id === topicId);
   const beat = topic?.beats.find((b) => b.id === beatId);
   const { view, table, rows, focus } = beat?.scene ?? {};

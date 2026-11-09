@@ -373,6 +373,19 @@ const party: SceneNode[] = [
     hint: "gern — люблю, lieber — больше, am liebsten — больше всего.",
     c: gaps("Hauke spielt ___ Fußball, ___ segelt er, aber ___ isst er Fischbrötchen.", ["gern", "lieber", "am liebsten", "nie"], ["gern", "lieber", "am liebsten"]),
   },
+  narr("Во второй графе анкеты Нильса — «Was magst du?». Матео отвечает первым и громко."),
+  mateo("Ich mag Fisch! Und ich koche gern Fisch!", "Я люблю рыбу! И я люблю готовить рыбу!"),
+  { t: "gap", rule: ["moin/moegen-1"], task: "Что Матео написал в анкете?", text: "Mateo ___ Fisch.", options: ["mag", "magt", "mögen"], answer: "mag", ru: "Матео любит рыбу." },
+  {
+    t: "reply",
+    rule: ["moin/moegen-1"],
+    task: "Ответьте в анкете Нильса: вы любите кофе.",
+    options: [
+      ok("Ich mag Kaffee."),
+      no("Ich mage Kaffee.", "ich mag — без окончания, как ich kann."),
+      no("Ich gern Kaffee.", "gern не заменяет глагол: Ich mag Kaffee или Ich trinke gern Kaffee."),
+    ],
+  },
   {
     t: "type",
     task: "Запишите в блокнот, где и когда вечеринка.",
@@ -444,7 +457,7 @@ const beach: SceneNode[] = [
       ["Грета сразу уходит", true, "Увидела камеру — и ушла."],
     ]),
   },
-  narr("Грета была на пляже eine Minute: увидела камеру и ушла. Нильс пожимает плечами: «Greta will keine Fotos!!!»"),
+  narr("Грета была на пляже eine Minute: увидела камеру и ушла. Нильс пожимает плечами: «Greta mag keine Fotos!!!»"),
   elif("Keine Fotos. Aber die Hände sind dunkelblau.", "Никаких фото. Но руки — тёмно-синие."),
   mateo("Und wo ist mein Brot? … Das Brot ist für später!", "А где мой хлеб?… Хлеб — на потом!"),
   {

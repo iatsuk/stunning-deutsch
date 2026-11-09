@@ -3438,6 +3438,53 @@
    "note": "Как «хорошо — лучше — лучше всего»: формы не образуются по правилу, их надо запомнить."
   }
  },
+ "moin/moegen-1": {
+  "point": "*Ich mag Fisch.* — *mögen* + существительное; *Ich esse gern Fisch.* — *gern* + глагол",
+  "read": "*mögen* — «любить, нравиться», когда речь о вещи или человеке: *Ich mag Fisch*, *Greta mag keine Fotos*. Если любите что-то делать, нужен глагол с *gern*: *Ich esse gern Fisch*, *Ich segle gern*. Формы — как у *können*: в единственном числе другая гласная (*mag*, а не *mög-*), а у *ich* и *er* нет окончания: *ich mag*, *er mag*. Ошибка по образцу *er kommt* — *er magt*. Из этой же семьи вежливое *ich möchte* из темы о еде: «хотел бы».",
+  "table": {
+   "title": "mögen",
+   "ru": "любить, нравиться",
+   "head": [
+    "Person",
+    "mögen",
+    "Beispiel"
+   ],
+   "rows": [
+    [
+     "ich",
+     "mag",
+     "Ich mag Fisch."
+    ],
+    [
+     "du",
+     "mag+st",
+     "Magst du Tee?"
+    ],
+    [
+     "er / sie / es",
+     "mag",
+     "Greta mag keine Fotos."
+    ],
+    [
+     "wir",
+     "mög+en",
+     "Wir mögen Kuchen."
+    ],
+    [
+     "ihr",
+     "mög+t",
+     "Mögt ihr Musik?"
+    ],
+    [
+     "sie / Sie",
+     "mög+en",
+     "Mögen Sie Kaffee?"
+    ]
+   ],
+   "ruCols": [],
+   "note": "*Ich mag Fisch* — люблю рыбу. *Ich esse gern Fisch* — люблю её есть: *gern* всегда при глаголе."
+  }
+ },
  "freizeit/ende-3": {
   "point": "*Kannst du Tennis spielen?* — *Was willst du am Sonntag machen?*",
   "read": "В вопросах рамка сохраняется. Вопрос да/нет начинается с модального глагола: *Kannst du Tennis spielen?* — «ты умеешь играть в теннис?». В W-вопросе первым идёт вопросительное слово: *Was willst du am Sonntag machen?* — «что ты хочешь делать в воскресенье?». Всё, что между двумя глаголами, — середина: подлежащее, время, дополнение. Инфинитив всегда замыкает предложение.",
