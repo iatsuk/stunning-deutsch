@@ -8,7 +8,8 @@
   "notes": [
     "Whisper writes numbers as digits (\"20 Jahre\", the phone number as \"0 4 3 1 5 5 6 2 9 0\"); those takes were compared by hand and say the text as written.",
     "Hauke dictates the workshop's phone number, so the line is in slow.json and was voiced at speed 0.7, like the other dictated numbers.",
-    "The chosen take has the closest transcript, an end level below -32 dB and no fragment flagged by tails.py; tails.py also passes on all 56 imported files."
+    "The chosen take has the closest transcript, an end level below -32 dB and no fragment flagged by tails.py; tails.py also passes on all 56 imported files.",
+    "On 9 November 2026 die Entführung and \"Der Karton ist leer.\" became story phrases. A lone \"leer\" was heard as \"Lea\" in all three takes, so the phrase is the short sentence from the scene; all four takes of it were transcribed correctly."
   ],
   "files": [
     {
@@ -459,6 +460,22 @@
       "seed": 20351755,
       "heard": "Ist der Stuhl frei?",
       "endDb": -56.8
+    },
+    {
+      "file": "88f69a1994ad.m4a",
+      "text": "die Entführung, die Entführungen",
+      "voice": "Anna",
+      "seed": 20961101,
+      "heard": "Die Entführung, die Entführungen",
+      "endDb": -59.3
+    },
+    {
+      "file": "3a51a4613390.m4a",
+      "text": "Der Karton ist leer.",
+      "voice": "Anna",
+      "seed": 20880381,
+      "heard": "Der Karton ist leer.",
+      "endDb": -53.4
     }
   ]
 }

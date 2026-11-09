@@ -125,7 +125,7 @@ const invite: SceneNode[] = [
   {
     t: "clue",
     title: "Ich kann nicht",
-    text: "Herr Jensen: «Ich kann nicht. Ich will segeln.» — sechs Wörter. Er segelt jeden Morgen um acht, immer allein. Mateo will nicht ins Kino — er will kochen.",
+    text: "Herr Jensen: «Ich kann nicht. Ich will segeln.» — sechs Wörter. Er segelt am Morgen um acht, immer allein. Mateo will nicht ins Kino — er will kochen.",
   },
 ];
 
@@ -135,7 +135,7 @@ const week: SceneNode[] = [
   { t: "pic", src: "07-office.jpg", alt: "Офис клуба: фрау Петерсен запыхавшись вбегает с толстой книгой под мышкой, Хауке и Дана стоят у стола с недельным календарём, Лотта показывает на часы" },
   narr("Für ein Picknick нужен день, когда у всех есть Zeit. Всё записано im Buch фрау Петерсен. А книга сегодня — zu Hause."),
   hauke("Wo ist Frau Petersen? Und wo ist das Buch?", "Где фрау Петерсен? И где книга?", ["das Buch"]),
-  narr("Frau Petersen kommt zehn Minuten zu spät — впервые за двадцать лет. Запыхавшись, das Buch unter dem Arm."),
+  narr("Frau Petersen kommt zehn Minuten zu spät — впервые за двадцать лет. Запыхавшись, das Buch под мышкой."),
   petersen("Entschuldigung, ich komme zu spät! Ich hole das Buch von zu Hause – hier ist es!", "Извините, я опоздала! Я ходила домой за книгой — вот она!"),
   {
     t: "hear",
@@ -251,7 +251,7 @@ const week: SceneNode[] = [
   {
     t: "clue",
     title: "Das Buch",
-    text: "Heute, Sonntag: alle haben Zeit. Picknick am Strand. Herr Jensen segelt jeden Morgen um acht — immer allein. Frau Petersen braucht ein Formular.",
+    text: "Heute, Sonntag: alle haben Zeit. Picknick am Strand. Herr Jensen segelt am Morgen um acht — immer allein. Frau Petersen braucht ein Formular.",
   },
 ];
 
@@ -260,7 +260,7 @@ const week: SceneNode[] = [
 // Петерсен · обменять · die Party · 13 (из пикника выходит официальная вечеринка с формуляром).
 const party: SceneNode[] = [
   { t: "pic", src: "07-party.jpg", alt: "Клуб днём: Нильс в красной ветровке размахивает телефоном и зовёт всех, фрау Петерсен раздаёт формуляры, Элиф с пакетом рыбы для чаек, Фрауке у киоска шепчется с очередью" },
-  narr("Nils hört alles durch die Wand. Eine Minute später: {nachricht} an den ganzen Club — с прежней щедростью на «!»."),
+  narr("Nils hört alles — через стену. Eine Minute später: {nachricht} an den ganzen Club — с прежней щедростью на «!»."),
   narr("«Picknick!!! Heute!!! Am Strand!!! Alle!!! Herr Jensen auch!!!»"),
   hauke("Alle? Der ganze Club? Wir wollen nur mit Herrn Jensen sprechen!", "Все? Весь клуб? Мы хотим поговорить только с господином Йенсеном!"),
   {
@@ -328,7 +328,7 @@ const party: SceneNode[] = [
             answers: ["Wo bist du?", "Nils, wo bist du?", "Wo bist du, Nils?"],
             ru: "Где ты?",
           },
-          narr("Ответ мгновенный: «Polizei??? Ich frage nur den Weg!!! Zum Strand!!!»"),
+          narr("Ответ мгновенный: «Polizei??? Ich frage nur: Wo ist der Strand???»"),
           {
             t: "game",
             task: "Поставьте штамп: что Фрауке видела сама, а что додумала?",
@@ -338,7 +338,7 @@ const party: SceneNode[] = [
               ["Нильс идёт на пляж", true, "«Zum Strand!!!» — сам написал."],
             ]),
           },
-          { ...narr("Frauke lacht und schreibt ins Journal: «Nils — Polizei — Weg zum Strand». Слух сдулся."), set: { rumours: -1 } },
+          { ...narr("Фрауке смеётся и пишет ins Journal: «Nils — Polizei — Strand». Слух сдулся."), set: { rumours: -1 } },
         ],
       },
       {
@@ -360,7 +360,7 @@ const party: SceneNode[] = [
               ["chips", "Chips", "nein", "🍟"],
             ]),
           },
-          { ...narr("Die Möwen am Club sehen Elif an. Красть Brot стало скучно: Fisch ist besser."), set: { gull: -2 } },
+          { ...narr("Die Möwen am Club sehen Elif an. Красть Brot стало скучно: Fisch — лучше."), set: { gull: -2 } },
         ],
       },
     ],
@@ -396,7 +396,7 @@ const party: SceneNode[] = [
   {
     t: "clue",
     title: "Club-Party am Strand",
-    text: "Nils lädt alle ein: «Heute!!! Am Strand!!! Alle!!!» Frau Petersen macht ein Formular — jetzt ist es eine Party. Nils ist nicht bei der Polizei: er fragt nur den Weg.",
+    text: "Nils lädt alle ein: «Heute!!! Am Strand!!! Alle!!!» Frau Petersen macht ein Formular — jetzt ist es eine Party. Nils ist nicht bei der Polizei: er fragt nur: «Wo ist der Strand?»",
   },
 ];
 
@@ -406,7 +406,7 @@ const beach: SceneNode[] = [
   { t: "pic", src: "07-beach.jpg", alt: "Пляж на Балтике днём: весь клуб на пледах, Хауке у «Sprotte» с горой корзин и пледов, чайка уносит надувной мяч, на заднем плане Нильс фотографирует, а у края кадра Грета в комбинезоне прячет руки в тёмно-синей краске" },
   narr("Am Strand — весь клуб: пледы, корзины, Kuchen, Wasser. {picknick} на vierzig человек. Хауке смотрит на «Sprotte», потом на гору вещей."),
   hauke("Wir brauchen ein größeres Boot.", "Нам нужна лодка побольше."),
-  narr("Так говорят в старом фильме про акулу. Акулы in der Ostsee нет. Aber es gibt {moewe}."),
+  narr("Так говорят в старом фильме про акулу. Акулы in der Ostsee нет. Зато есть {moewe}."),
   {
     t: "look",
     task: "Осмотрите пляж.",
@@ -424,7 +424,7 @@ const beach: SceneNode[] = [
     c: pairs([["Frau Petersen", "Kuchen"], ["Frauke", "Fischbrötchen"], ["Mateo", "Brot"], ["Nils", "das Handy"]]),
   },
   elif("Die Möwe! Sie hat den Ball!", "Чайка! У неё мяч!"),
-  narr("{moewe} nimmt {strandball} — лёгкий, как обещание Хауке, — und fliegt über das Wasser."),
+  narr("{moewe} nimmt {strandball} — лёгкий, как обещание Хауке, — и летит над Wasser."),
   { t: "game", task: `Отбейте мяч! ${RACE}`, hint: HINT_RACE, outcome: RACE_STAKES, c: race(["schwimmen", "tanzen", "zusammen", "die Party", "die Idee", "leider"]) },
   hauke("Ich hole den Ball. Ich komme wieder!", "Я принесу мяч. Я вернусь!"),
   narr("Как в старом фильме про робота: «I'll be back». Хауке возвращается через vierzig Minuten — без мяча, зато с мороженым."),
@@ -436,7 +436,7 @@ const beach: SceneNode[] = [
     options: ["принести мяч и вернуться", "уйти домой", "купить мороженое"],
     answer: "принести мяч и вернуться",
   },
-  narr("Нильс показывает Fotos дня: vierzig Stück. На фото neununddreißig, у самого края, — Грета."),
+  narr("Нильс показывает Fotos дня: vierzig Stück. На фото neununddreißig, у самого края, — Грета. И крупно — {hand}."),
   dana("Seht mal! Greta! Ihre Hände – dunkelblau!", "Посмотрите! Грета! Её руки — тёмно-синие!"),
   {
     t: "pick",
@@ -505,7 +505,7 @@ const beach: SceneNode[] = [
   {
     t: "clue",
     title: "Foto 39",
-    text: "Nils' Foto vom Strand: Greta, ihre Hände dunkelblau. Sie bleibt eine Minute und geht. Herr Jensen segelt — weit weg, allein.",
+    text: "Foto von Nils, am Strand: Greta, ihre Hände dunkelblau. Eine Minute — und Greta geht. Herr Jensen segelt, allein.",
   },
 ];
 
@@ -526,7 +526,7 @@ const water: SceneNode[] = [
       ["Матео не хочет в кино.", [["Mateo", "Mateos", "Mateo und"], ["will nicht", "nicht will", "willst nicht"], ["ins Kino gehen.", "gehen ins Kino.", "ins Kino geht."]]],
     ]),
   },
-  narr("Platsch! Die «Sprotte» kippt, und Hauke ist im Wasser. Мокрый насквозь, как Дана в дождь."),
+  narr("Плюх! «Sprotte» переворачивается, und Hauke ist im Wasser. Мокрый насквозь, как Дана в дождь."),
   mateo("Hauke! Mein Brot ist im Boot!", "Хауке! Мой хлеб в лодке!"),
   dana("Hauke! Kannst du schwimmen?", "Хауке! Ты умеешь плавать?"),
   hauke("Ja! Ich kann schwimmen! Aber nicht gut!", "Да! Я умею плавать! Но не очень!", ["schwimmen"]),
@@ -615,7 +615,7 @@ const water: SceneNode[] = [
   {
     t: "clue",
     title: "Morgen um acht",
-    text: "Herr Jensen: «Morgen um acht. Im Keller. Allein.» — und ein Schlüssel. Die Idee von Hauke: nass, aber gut.",
+    text: "Herr Jensen: «Morgen um acht. Im Keller. Allein.» — und ein Schlüssel. Die Idee von Hauke: im Wasser, aber gut.",
   },
 ];
 
@@ -623,9 +623,9 @@ const water: SceneNode[] = [
 // кино Дана задевает провод проектора, и в темноте видит в окне кухни то, что прячет Матео.
 const film: SceneNode[] = [
   { t: "pic", src: "07-film.jpg", alt: "Вечер кино у клуба: на белой стене погас кадр, зрители в темноте, Дана держит в руке выдернутый провод проектора; в освещённом окне кухни Матео в муке склонился над большим круглым тортом с белыми буквами" },
-  narr("Тем временем am Abend. {filmabend} am Club: ein alter Film auf der Wand. Dana ist allein da: Mateo kocht, Hauke сохнет."),
+  narr("Тем временем am Abend. {filmabend} am Club: старый Film прямо на стене. Dana ist allein da: Mateo kocht, Hauke сохнет."),
   dana("Der Film ist gut. Aber ich kann nichts sehen – der Mann vor mir ist zu groß!", "Фильм хороший. Но мне ничего не видно — мужчина передо мной слишком высокий!"),
-  narr("Dana sucht einen neuen Platz — и задевает провод. {projektor} гаснет. Das Kino ist aus."),
+  narr("Dana sucht новое место — и задевает провод. {projektor} гаснет. Das Kino ist aus."),
   { t: "gap", task: "Почему Дане не видно?", text: "Der Mann vor mir ist zu ___!", options: ["groß", "klein", "laut"], answer: "groß", ru: "Мужчина передо мной слишком высокий!" },
   narr("В темноте светится только das Fenster der Küche. Там Матео — над чем-то большим и круглым. Белые буквы, первая — «M»."),
   {
@@ -637,7 +637,7 @@ const film: SceneNode[] = [
       no("Пустую кухню", "Матео там. И он очень занят."),
     ],
   },
-  narr("Mateo sieht Dana — und задёргивает штору. Der Film läuft wieder."),
+  narr("Mateo sieht Dana — и задёргивает штору. Фильм идёт дальше."),
   dana("Mateo kocht nicht. Mateo backt. Aber was?", "Матео не готовит. Матео печёт. Но что?"),
   {
     t: "hear",
@@ -666,7 +666,7 @@ const film: SceneNode[] = [
 // Сцена 6 · эпилог и крючок: речь как на экзамене и записка к главе 8.
 const evening: SceneNode[] = [
   { t: "pic", src: "07-evening.jpg", alt: "Поздний вечер в клубе: Хауке в пледе сушит куртку у обогревателя, на столе записка Йенсена и старый ключ, Элиф держит фото с телефона Нильса, Дана загадочно молчит" },
-  narr("Abend im Club. Hauke trocknet die Jacke и в третий раз рассказывает, как спас «Sprotte». Wer wen rettet, ist noch nicht klar."),
+  narr("Abend im Club. Хауке сушит die Jacke и в третий раз рассказывает, как спас «Sprotte». Кто кого спас — пока неясно."),
   hauke("Morgen um acht! Ich bin um acht da. Oder um Viertel nach acht.", "Завтра в восемь! Я буду в восемь. Или в четверть девятого."),
   {
     t: "reply",
@@ -715,7 +715,7 @@ const evening: SceneNode[] = [
     hint: "Вопрос «да или нет»: модальный глагол первый, инфинитив в конце.",
     c: order(["Können", "wir", "morgen", "alles", "verstehen?"], ["verstehen?", "alles", "Können", "morgen", "wir"]),
   },
-  narr("Der Schlüssel liegt auf dem Tisch: alt, schwer, с биркой: «{keller}». Daneben ein Wecker: «7:00!»"),
+  narr("Der Schlüssel liegt auf dem Tisch: alt, schwer, с биркой: «{keller}». Рядом будильник: «7:00!»"),
   { t: "game", task: "Хауке раскладывает вещи из корзин по ящикам: der, die, das.", hint: HINT_DOCK, c: docks(["der Film", "das Kino", "das Konzert", "die Party", "der Park", "das Schwimmbad", "das Buch", "die Einladung"]) },
   mateo("Brot? Für morgen? Nein. Für … später. Gute Nacht!", "Хлеб? На завтра? Нет. На… потом. Спокойной ночи!"),
   { t: "gap", task: "Для чего хлеб Матео?", text: "Das Brot ist für ___.", options: ["später", "heute", "Hauke"], answer: "später", ru: "Хлеб — на потом." },

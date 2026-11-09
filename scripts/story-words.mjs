@@ -8,6 +8,7 @@ import { readFileSync, readdirSync } from "node:fs";
 import { phrases } from "../src/story/data.ts";
 import { flatNodes } from "../src/story/scene.ts";
 import { sceneChapters } from "../src/story/scenes/index.ts";
+import { SCENE_RULES } from "../src/story/scenes/rules.ts";
 
 const chapter = Number(process.argv[2]);
 if (!sceneChapters[chapter - 1]) throw new Error("Укажите номер главы сцен: node scripts/story-words.mjs 5");
@@ -25,15 +26,19 @@ const FUNCTION = `der die das den dem des ein eine einen einem einer eines kein 
 mich dich ihn uns euch mir dir ihm ihnen sich mein meine meinen dein deine sein seine ihre ihren unser unsere euer bin bist ist sind
 seid habe hast hat haben habt und oder aber nicht ja nein doch auch sehr hier da so zu für mit von aus in im an am auf bei um wie
 was wer wo woher gut danke bitte alle alles man noch nur jetzt heute`.split(/\s+/);
+// Прозрачные для русскоязычного игрока слова и подписи кнопок игры («Richtig / Falsch»).
+const CLEAR = "kiosk journal diagnose test super profi polizei lotto overall party film foto handy richtig falsch".split(" ");
 const NUMBER = /^(null|eins|zwei|drei|vier|fünf|sechs|sieben|acht|neun|zehn|elf|zwölf|\p{L}*zehn|\p{L}*zig|\p{L}*ßig|hundert|tausend)$/u;
 
-const known = new Set(FUNCTION);
-for (const p of Object.values(phrases)) words(p.de).forEach((w) => known.add(w));
+const known = new Set([...FUNCTION, ...CLEAR]);
+for (const p of Object.values(phrases)) words(`${p.de} ${p.pl ?? ""}`).forEach((w) => known.add(w));
 for (const lesson of lessons) {
   for (const group of Object.values(lesson.words)) for (const w of group.items) words(`${w.de} ${w.pl ?? ""}`).forEach((x) => known.add(x));
   for (const table of Object.values(lesson.tables ?? {})) [table.head, ...table.rows].flat().forEach((cell) => words(cell).forEach((x) => known.add(x)));
   for (const beat of lesson.beats ?? []) for (const row of beat.scene?.rows ?? []) words(row.plain).forEach((x) => known.add(x));
 }
+for (const rule of Object.values(SCENE_RULES))
+  if (rule.chapter <= chapter) [rule.table.head, ...rule.table.rows].flat().forEach((cell) => words(cell).forEach((x) => known.add(x)));
 const stems = [...known].filter((k) => k.length >= 4);
 const familiar = (w) =>
   known.has(w) ||

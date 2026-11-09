@@ -41,7 +41,8 @@ const message: SceneNode[] = [
     options: ["сегодня чай в половине шестого", "сегодня чая не будет", "завтра чай в шесть"],
     answer: "сегодня чай в половине шестого",
   },
-  narr("Neun Wörter! Хауке считает на пальцах: eins, zwei … neun. Zweimal. So viel Йенсен не говорил с первого дня."),
+  narr("{wort} за словом: Хауке считает на пальцах — eins, zwei … neun. Zweimal. So viel Йенсен не говорил с первого дня."),
+  narr("И в середине — {wieimmer}: значит, чай в половине шестого у Йенсена каждый день."),
   hauke("Neun Wörter! Und halb sechs – das ist sechs Uhr dreißig!", "Девять слов! А halb sechs — это шесть тридцать!", ["halb"]),
   {
     t: "reply",
@@ -63,12 +64,13 @@ const message: SceneNode[] = [
       "16:30": "Это halb fünf. После halb называют следующий час: halb sechs — 17:30.",
     }),
   },
-  narr("Die Uhr über der Tür geht heute falsch. На минутной стрелке сидит {moewe} и едет вниз вместе с ней."),
+  narr("Die Uhr над дверью geht heute falsch. На минутной стрелке сидит {moewe} и едет вниз вместе с ней."),
   elif("Die Möwe sitzt auf der Uhr! Die Uhr geht falsch!", "Чайка сидит на часах! Часы врут!", ["die Uhr"]),
   { t: "gap", task: "Что случилось с часами клуба?", text: "Die Möwe sitzt auf der ___!", options: ["Uhr", "Stunde", "Woche"], answer: "Uhr", ru: "Чайка сидит на часах!" },
   hauke("Fünf Minuten zu spät! Die Möwe ist schwer.", "Отстают на пять минут! Чайка тяжёлая.", ["die Minute", "spät"]),
   narr("Mateo kommt: in der Hand Kaffee und ein Buch — детектив в мягкой обложке."),
   mateo("Halb sechs? Nein! Das Schild ist in der Nacht weg. Ein Einbruch!", "Половина шестого? Нет! Табличка пропала ночью. Взлом!", ["die Nacht"]),
+  narr("Матео повторяет одно слово: «{weg}». В голове у него уже детектив: ночь, взлом, тёмная фигура."),
   {
     t: "pick",
     task: "Какая версия у Матео?",
@@ -141,7 +143,7 @@ const message: SceneNode[] = [
 // der Vormittag · 9 — Фрауке обещает присматривать за клубом до обеда и даёт кассовую книгу.
 const book: SceneNode[] = [
   { t: "pic", src: "06-kiosk.jpg", alt: "Утро у киоска Фрауке: Фрауке протягивает толстую кассовую книгу, Дана и Хауке листают её; на столике кружки, рядом на столбе часы" },
-  narr("Vormittag am Kiosk. Frauke weiß schon alles: в Киле новости летают быстрее, чем Möwen."),
+  narr("Vormittag am Kiosk. Фрауке уже всё знает: в Киле новости летают быстрее, чем Möwen."),
   frauke("Neun Wörter? Von Herrn Jensen? Das glaube ich nicht!", "Девять слов? От господина Йенсена? Не верю!"),
   frauke("Hier, mein Kassenbuch. Jeden Tag, jede Stunde!", "Вот моя кассовая книга. Каждый день, каждый час!", ["die Stunde"]),
   {
@@ -171,23 +173,24 @@ const book: SceneNode[] = [
     options: ["сзади, на террасе, пьют чай", "у подставки перед клубом", "в кафе у воды"],
     answer: "сзади, на террасе, пьют чай",
   },
-  narr("Jeden Tag um halb sechs gibt es Tee — hinten. Там {terrasse} у воды, а der Aufsteller vorne — allein."),
+  narr("Каждый день um halb sechs — Tee, {hinten}: там {terrasse} у воды. А der Aufsteller vorne — allein."),
   {
     t: "look",
     task: "Полистайте кассовую книгу за воскресенье.",
     items: [
       { icon: "📒", de: "das Kassenbuch", ru: "кассовая книга", note: "«Sonntag». Каждая продажа — с минутами, почерк Фрауке.", key: true },
       { icon: "🕠", de: "der Nachmittag", ru: "вторая половина дня", note: "17:20 — zwei Fischbrötchen. 17:30 — «Tee! Alle hinten»." },
-      { icon: "👜", de: "die Tasche", ru: "сумка", note: "17:3… — «eine Frau, blau, eine große flache Tasche → Bus».", key: true },
+      { icon: "👜", de: "die Tasche", ru: "сумка", note: "17:3… — «eine Frau, dunkelblau, eine große flache Tasche → Bus».", key: true },
       { icon: "🌙", de: "die Nacht", ru: "ночь", note: "Ночью киоск закрыт. В книге про ночь — ни строчки." },
     ],
   },
   {
     t: "when",
     if: [{ q: "frauke", min: 1 }],
-    then: [narr("Запись в {kassenbuch} аккуратная, как с тех пор, как Фрауке завела журнал: «17:35. Frau, Overall blau, große flache Tasche, Bus».")],
+    then: [narr("Запись в {kassenbuch} аккуратная, как с тех пор, как Фрауке завела журнал: «17:35. Frau, Overall dunkelblau, große flache Tasche, Bus».")],
     else: [narr("Минуты в {kassenbuch} смазаны: «17:3… Frau … Tasche … Bus». Фрауке писала второпях. Но около 17:35 — точно.")],
   },
+  narr("Сумка большая и {flach} — как раз по размеру таблички."),
   {
     t: "type",
     rule: ["tagesablauf/wann-1"],
@@ -254,7 +257,7 @@ const book: SceneNode[] = [
   {
     t: "clue",
     title: "Kassenbuch",
-    text: "Sonntag: 17:30 — Tee, alle hinten auf der Terrasse. 17:35 — eine Frau, Overall blau, große flache Tasche, zum Bus. In der Nacht: nichts.",
+    text: "Sonntag: 17:30 — Tee, alle hinten auf der Terrasse. 17:35 — eine Frau, Overall dunkelblau, große flache Tasche, Bus. In der Nacht: kein Einbruch.",
   },
 ];
 
@@ -284,9 +287,10 @@ const witnesses: SceneNode[] = [
             options: ["Tee. Alle. Halb sechs.", "Moin. Moin. Moin.", "Kaffee. Alle. Sechs."],
             answer: "Tee. Alle. Halb sechs.",
           },
-          narr("Und alle kommen: der ganze Club. Даже яхтсмены, которые пьют только Bier. Даже фрау Петерсен. Zwanzig Leute — hinten."),
+          narr("И приходят все: {ganzeclub}. Даже яхтсмены, которые пьют только Bier. Даже фрау Петерсен. Двадцать человек — hinten."),
           elif("Der ganze Club ist hinten. Vorne ist niemand!", "Весь клуб сзади. Впереди никого!"),
           { t: "gap", task: "Где весь клуб в половине шестого?", text: "Der ganze Club ist ___.", options: ["hinten", "vorne", "im Café"], answer: "hinten", ru: "Весь клуб сзади." },
+          narr("Vorne — {niemand}. Подставка у входа одна, как на ладони."),
           {
             t: "pick",
             task: "Что это значит?",
@@ -381,7 +385,7 @@ const witnesses: SceneNode[] = [
         icon: "⏰",
         optional: true,
         nodes: [
-          narr("Lotte sitzt im Büro und lernt die Uhr. Учительница задала «Viertel vor» и «Viertel nach»."),
+          narr("Лотта сидит im Büro и учит die Uhr. Учительница задала «Viertel vor» и «Viertel nach»."),
           petersen("Lotte braucht Hilfe. Viertel vor neun – wie spät ist das?", "Лотте нужна помощь. Без четверти девять — это сколько?"),
           {
             t: "game",
@@ -393,7 +397,7 @@ const witnesses: SceneNode[] = [
               "09:45": "Это Viertel vor zehn.",
             }),
           },
-          { ...narr("Lotte bekommt eine Eins — по-немецки это лучшая оценка. Фрау Петерсен заметно добреет."), set: { petersen: 1 } },
+          { ...narr("Лотта получает eine Eins — по-немецки это лучшая оценка. Фрау Петерсен заметно добреет."), set: { petersen: 1 } },
         ],
       },
     ],
@@ -421,7 +425,7 @@ const witnesses: SceneNode[] = [
 // По плану интерлюдии здесь — мастерская Греты; её из окна видит чайка, имени она не знает.
 const gullDay: SceneNode[] = [
   { t: "pic", src: "06-gull.jpg", alt: "Чайка с кольцом летит над крышами Гардена и заглядывает в окно мастерской: под тканью большая плоская доска, банки краски — белая и тёмно-синяя, у стола спиной стоит женщина в тёмно-синем комбинезоне" },
-  narr("Тем временем über Kiel. HEL 7305 fliegt по своим делам — то есть за чужими Fischbrötchen."),
+  narr("Тем временем над Kiel. HEL 7305 летит по своим делам — то есть за чужими Fischbrötchen."),
   gullSays("Kieler Woche? Eine Woche? Für Möwen ist immer Wochenende!", "Kieler Woche? Неделя? Для чаек всегда выходные!", ["das Wochenende"]),
   { t: "gap", task: "Что думает чайка о неделе?", text: "Für Möwen ist immer ___!", options: ["Wochenende", "Woche", "Montag"], answer: "Wochenende", ru: "Для чаек всегда выходные!" },
   gullSays("Heute ist Samstag. Morgen ist … Montag?", "Сегодня суббота. Завтра… понедельник?", ["der Samstag", "der Montag"]),
@@ -456,7 +460,7 @@ const gullDay: SceneNode[] = [
       no("Пустую подставку", "Подставка стоит у клуба. В мастерской — доска под тканью."),
     ],
   },
-  narr("Die Frau sieht zum Fenster. Чайка улетает: in der Werkstatt gibt es kein Fischbrötchen. Кто это — чайке всё равно."),
+  narr("Die Frau sieht zum Fenster. Чайка улетает: in der Werkstatt — kein Fischbrötchen. Кто это — чайке всё равно."),
 ];
 
 // Сцена 4 · поворот: чай в 17:30. Отсылка — «Dinner for One»: the same procedure as every year, только
@@ -480,7 +484,7 @@ const tea: SceneNode[] = [
   narr("{moewe} пикирует на стол и уносит {teebeutel} — целую горсть, с ярлычками."),
   { t: "game", task: `Отбейте пакетики! ${RACE}`, hint: HINT_RACE, outcome: RACE_STAKES, c: race(["halb", "die Uhr", "die Stunde", "der Abend", "früh", "spät"]) },
   { t: "game", task: "Подпишите спасённые пакетики по буквам.", hint: HINT_SPELL, c: letters(["die Minute", "die Stunde", "das Viertel"]) },
-  narr("Genau um halb sechs gibt es Tee. Хауке тихо встаёт und geht nach vorne."),
+  narr("Ровно um halb sechs — Tee. Хауке тихо встаёт и идёт nach vorne."),
   hauke("Vorne ist niemand! Zehn Minuten – und niemand sieht den Aufsteller!", "Впереди никого! Десять минут — и никто не видит подставку!"),
   {
     t: "hear",
@@ -513,7 +517,7 @@ const tea: SceneNode[] = [
   },
   jensen("Halb sechs. Wie immer.", "В половине шестого. Как всегда."),
   { t: "gap", rule: ["tagesablauf/klammer-1"], task: "Что ответил Йенсен? Допишите фразу полностью.", text: "Der Tee fängt um halb sechs ___.", options: ["an", "auf", "zu"], answer: "an", ru: "Чай начинается в половине шестого." },
-  narr("Wie immer. Aber am Sonntag ruft Йенсен ВСЕХ — сам, тремя словами. Und der Aufsteller ist allein."),
+  narr("Wie immer. Но в воскресенье Йенсен зовёт ВСЕХ — сам, тремя словами. Und der Aufsteller ist allein."),
   dana("Er ruft alle zum Tee. Und vorne ist niemand. Er weiß das!", "Он зовёт всех на чай. А впереди никого. Он это знает!"),
   {
     t: "game",
@@ -550,14 +554,14 @@ const tea: SceneNode[] = [
   {
     t: "clue",
     title: "Tee um halb sechs",
-    text: "Sonntag, 17:30: der ganze Club ist hinten, vorne ist niemand. Herr Jensen ruft alle zum Tee — und macht um sechs den Club zu. Kein Einbruch. Herr Jensen weiß alles.",
+    text: "Sonntag, 17:30: der ganze Club ist hinten, vorne ist niemand. Herr Jensen: «Tee. Alle. Halb sechs.» Um sechs macht er den Club zu. Kein Einbruch. Herr Jensen weiß alles.",
   },
 ];
 
 // Сцена 5 · кульминация: доска времени, замок урока и записка Йенсену.
 const timeline: SceneNode[] = [
   { t: "pic", src: "06-board.jpg", alt: "Вечер в клубе: на доске линия времени с карточками 17:05, 17:30, 17:35, 18:00; Дана пишет мелом, Хауке показывает на часы клуба, Элиф с блокнотом" },
-  narr("Abend im Club. Дана чертит на доске линию: Samstag und Sonntag, von fünf bis sechs. Am Sonntag sind Läden zu — значит, чек субботний."),
+  narr("Abend im Club. Дана чертит на доске линию: Samstag und Sonntag, von fünf bis sechs. По воскресеньям лавки закрыты — значит, чек субботний."),
   dana("Am Samstag um fünf nach fünf kauft der Moin-Mann Farbe. Am Sonntag ist der Laden zu.", "В субботу в пять минут шестого Moin-Mann покупает краску. В воскресенье лавка закрыта."),
   {
     t: "game",
@@ -665,7 +669,7 @@ const timeline: SceneNode[] = [
   {
     t: "clue",
     title: "Zeitleiste",
-    text: "Samstag, 17:05: Kassenbon (Dunkelblau). Sonntag: 17:30 Tee, alle hinten · 17:35 Frau mit Tasche, Bus · 18:00 Herr Jensen macht zu. Brief an Herrn Jensen — Antwort: «Moin.»",
+    text: "Samstag, 17:05: Kassenbon (Dunkelblau). Sonntag: 17:30 Tee, alle hinten · 17:35 Frau mit Tasche, Bus · 18:00 Herr Jensen macht zu. Brief an Herrn Jensen. Herr Jensen: «Moin.»",
   },
 ];
 
@@ -703,8 +707,8 @@ const evening: SceneNode[] = [
       no("Frauke, wir helfen! Wir zumachen den Kiosk.", "Приставка уходит в конец: wir machen … zu."),
     ],
   },
-  narr("Über der Tür, на стремянке — Нильс. Er repariert die Uhr. И пишет об этом alle zwei Minuten."),
-  narr("«Schraube eins!!! Schraube zwei!!! Die Uhr geht wieder!!! Es ist acht Uhr!!! Genau!!!»"),
+  narr("Над дверью, на стремянке — Нильс. Он чинит die Uhr. И пишет об этом alle zwei Minuten."),
+  narr("«Eins!!! Zwei!!! Die Uhr geht!!! Es ist acht Uhr!!! Acht!!!»"),
   {
     t: "game",
     task: "Поставьте часы так, как их выставил Нильс.",
@@ -737,7 +741,7 @@ const evening: SceneNode[] = [
       no("Он ищет табличку на кухне", "На кухне он ищет только миксер."),
     ],
   },
-  narr("Вы идёте к домику гавани — noch ein Brief. Йенсен видит вас im Fenster und macht das Licht aus."),
+  narr("Вы идёте к домику гавани — noch ein Brief. Йенсен видит вас im Fenster и гасит свет."),
   jensen("Moin.", "Привет."),
   dana("Er macht das Licht aus. Er spricht nicht mit uns.", "Он гасит свет. Он с нами не разговаривает."),
   {
@@ -757,7 +761,7 @@ const evening: SceneNode[] = [
       no("Позвонить и ждать голосового", "Девять слов в неделю — его норма. Неделя кончится раньше."),
     ],
   },
-  narr("Хауке достаёт карточки: Lotto, nur die Uhr. Die Möwe смотрит на карточку с Uhr — и вспоминает утро."),
+  narr("Хауке достаёт карточки лото: nur die Uhr. Die Möwe смотрит на карточку с Uhr — и вспоминает утро."),
   { t: "game", task: "Лото на ночь: послушайте слово и закройте его на карточке.", hint: HINT_HEAR, c: bingo(["die Uhr", "die Stunde", "die Minute", "halb", "der Abend", "die Nacht", "der Feierabend", "früh", "spät"]) },
   { t: "game", task: "Подпишите в блокноте дни по буквам.", hint: HINT_SPELL, c: letters(["der Sonntag", "der Samstag", "das Wochenende"]) },
   {
@@ -770,7 +774,7 @@ const evening: SceneNode[] = [
   {
     t: "clue",
     title: "Herr Jensen weiß alles",
-    text: "Sonntag um halb sechs: Tee für alle — Herr Jensen ruft alle. Vorne ist niemand. Um 17:35 geht eine Frau mit einer großen flachen Tasche zum Bus. Herr Jensen geht uns aus dem Weg.",
+    text: "Sonntag um halb sechs: Tee für alle. Vorne ist niemand. 17:35: eine Frau, eine große flache Tasche, Bus. Herr Jensen weiß alles — und sagt nur «Moin».",
   },
 ];
 

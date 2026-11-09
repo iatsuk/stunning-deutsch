@@ -8,7 +8,8 @@
   "notes": [
     "Whisper writes the lone word Tee as \"T.\" and numbers as digits; those takes were compared by hand and say the text as written.",
     "Mateo's line \"Ich backe … Brot. Nur Brot. Bis in die Nacht!\" lost a word in all three takes; it was rewritten as \"Ich backe nur Brot. Bis in die Nacht!\" and voiced again with four takes.",
-    "The chosen take has the closest transcript, an end level below -32 dB and no fragment flagged by tails.py; tails.py also passes on all 52 imported files."
+    "The chosen take has the closest transcript, an end level below -32 dB and no fragment flagged by tails.py; tails.py also passes on all 52 imported files.",
+    "On 9 November 2026 the recurring key words became story phrases so that narration needs no untranslated German: das Wort, wie immer, hinten, niemand, der ganze Club, flach and weg. Three takes each, all transcribed correctly except one take of weg; the chosen takes end below -32 dB."
   ],
   "files": [
     {
@@ -426,6 +427,62 @@
       "seed": 20557632,
       "heard": "Ich backe nur Brot. Bis in die Nacht.",
       "endDb": -59.1
+    },
+    {
+      "file": "2487f298f278.m4a",
+      "text": "das Wort, die Wörter",
+      "voice": "Anna",
+      "seed": 20563655,
+      "heard": "Das Wort, die Wörter",
+      "endDb": -56.5
+    },
+    {
+      "file": "43cb3b1d0cdb.m4a",
+      "text": "wie immer",
+      "voice": "Anna",
+      "seed": 20450602,
+      "heard": "Wie immer.",
+      "endDb": -51.0
+    },
+    {
+      "file": "13fbf0107dc0.m4a",
+      "text": "hinten",
+      "voice": "Anna",
+      "seed": 20592672,
+      "heard": "Hinten",
+      "endDb": -63.0
+    },
+    {
+      "file": "dea8c279da2e.m4a",
+      "text": "niemand",
+      "voice": "Anna",
+      "seed": 20914476,
+      "heard": "Niemand.",
+      "endDb": -50.6
+    },
+    {
+      "file": "eb6fd1c16b90.m4a",
+      "text": "der ganze Club",
+      "voice": "Anna",
+      "seed": 20280287,
+      "heard": "Der ganze Club.",
+      "endDb": -66.3
+    },
+    {
+      "file": "25cae2b083d0.m4a",
+      "text": "flach",
+      "voice": "Anna",
+      "seed": 21117262,
+      "heard": "Flach",
+      "endDb": -66.6
+    },
+    {
+      "file": "453154151134.m4a",
+      "text": "weg",
+      "voice": "Anna",
+      "seed": 20641876,
+      "heard": "Weg.",
+      "endDb": -60.9
     }
   ]
 }

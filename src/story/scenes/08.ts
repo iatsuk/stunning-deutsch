@@ -34,7 +34,7 @@ const ENTFUEHRUNG = "Herr Jensen sagt nicht mal Moin! Und Greta nimmt ihn mit! D
 // празднует открытие подвала клуба, но сначала формуляр.
 const morning: SceneNode[] = [
   { t: "pic", src: "08-morning.jpg", alt: "Утро понедельника у клуба: пустой стул Йенсена на причале и его лодка, ни одной чайки; Элиф с биноклем смотрит в пустое небо, Хауке бежит с будильником в руке" },
-  narr("Achter Tag, Montag, noch fünf Tage. Punkt acht. Вы у клуба, der Schlüssel в кармане. Es ist ruhig. Zu ruhig."),
+  narr("Achter Tag, Montag, noch fünf Tage. Ровно acht. Вы у клуба, der Schlüssel в кармане. Es ist ruhig. Zu ruhig."),
   narr("Der Stuhl Йенсена на причале пуст: keine Tasse, kein Herr Jensen. Und keine Möwe — ни на крыше, ни на воде."),
   {
     t: "look",
@@ -62,7 +62,7 @@ const morning: SceneNode[] = [
   },
   { ...narr("{sturm} — старая примета на Ostsee: чайки улетают в город, когда у моря будет плохо. Часы погоды тикают."), set: { weather: 1 } },
   { t: "gap", rule: ["wohnen/wo-2"], task: "Где сейчас чайки?", text: "Die Möwen sind in der ___.", options: ["Stadt", "Küche", "Keller"], answer: "Stadt", ru: "Чайки в городе." },
-  narr("Viertel nach acht. Hauke rennt, будильник в руке."),
+  narr("Viertel nach acht. Хауке бежит, будильник в руке."),
   hauke("Der Wecker ist kaputt! Er klingelt nicht!", "Будильник сломан! Он не звонит!", ["kaputt"]),
   {
     t: "reply",
@@ -81,7 +81,7 @@ const morning: SceneNode[] = [
     ru: "Будильник сломан.",
   },
   hauke("Wo ist Herr Jensen? Im Keller! Kommt, wir gehen runter!", "Где господин Йенсен? В подвале! Пошли вниз!"),
-  narr("Im Treppenhaus vom Club — eine Tür nach unten. Die Lampe ist kaputt, es ist dunkel. Der Schlüssel… не подходит."),
+  narr("Im Treppenhaus клуба — дверь вниз. Die Lampe ist kaputt, es ist dunkel. Der Schlüssel… не подходит."),
   dana("Der Schlüssel ist alt. Das Schloss ist neu. Das passt nicht!", "Ключ старый. Замок новый. Не подходит!"),
   {
     t: "pick",
@@ -123,7 +123,7 @@ const morning: SceneNode[] = [
     c: docks(["der Keller", "die Küche", "das Bad", "der Flur", "das Treppenhaus", "der Balkon", "das Zimmer", "die Wohnung"]),
   },
   { t: "game", task: "Фрау Петерсен подписывает новые бирки по буквам. Помогите ей.", hint: HINT_SPELL, c: letters(["das Bad", "die Küche", "das Zimmer"]) },
-  narr("Frau Petersen dreht den Schlüssel. Die Tür ist offen. Kekse für alle — праздник im Treppenhaus длится двадцать секунд."),
+  narr("Фрау Петерсен поворачивает ключ. Дверь открыта. Kekse für alle — праздник im Treppenhaus длится двадцать секунд."),
   {
     t: "game",
     rule: ["wohnen/satz-2"],
@@ -134,7 +134,7 @@ const morning: SceneNode[] = [
   {
     t: "clue",
     title: "Acht Uhr",
-    text: "Acht Uhr: kein Herr Jensen, keine Möwe, das Boot ist da. Der Schlüssel passt nicht. Frau Petersen öffnet den Keller vom Club — nach zwanzig Jahren.",
+    text: "Acht Uhr: kein Herr Jensen, keine Möwe, das Boot ist da. Der Schlüssel passt nicht. Frau Petersen macht den Keller im Club auf — nach zwanzig Jahren.",
   },
 ];
 
@@ -143,7 +143,7 @@ const morning: SceneNode[] = [
 // значит другой подвал.
 const lager: SceneNode[] = [
   { t: "pic", src: "08-cellar.jpg", alt: "Подвал клуба при свете телефона: старые стулья, стол, шкаф, свёрнутые паруса; у окошка с разбитым стеклом — тайник чайки: угол бирки, чек, чайные пакетики, край старого фото и пляжный мяч" },
-  narr("Im Keller vom Club ist es dunkel. Dana macht das Handy an: alte Stühle, ein Tisch, ein Schrank, Segel."),
+  narr("Im Keller клуба ist es dunkel. Dana macht das Handy an: старые стулья, ein Tisch, ein Schrank, паруса."),
   hauke("Herr Jensen? Hallo? … Niemand da.", "Господин Йенсен? Алло? … Никого."),
   { t: "game", task: "Дана светит телефоном по углам. Послушайте слово и нажмите на картинку.", hint: HINT_PICTURE, c: scene([["der Stuhl", "🪑"], ["das Sofa", "🛋️"], ["das Bett", "🛏️"], ["die Lampe", "💡"], ["der Kühlschrank", "🧊"], ["der Herd", "🍳"]]) },
   narr("Am Fenster, в стекле дыра. И тут — {lager}: на столе, в шкафу, в ящике. Всё, что die Möwe унесла за неделю."),
@@ -209,7 +209,7 @@ const lager: SceneNode[] = [
     hint: "Порядковые: am ersten, am dritten, am fünften, am siebten Tag.",
     c: pairs([["der Anhänger", "am ersten Tag"], ["das Foto", "am dritten Tag"], ["der Kassenbon", "am fünften Tag"], ["der Strandball", "am siebten Tag"]]),
   },
-  narr("8:40. Kein Herr Jensen. Frau Petersen sieht den Schlüssel an — und lacht."),
+  narr("8:40. Kein Herr Jensen. Фрау Петерсен смотрит на ключ — и смеётся."),
   petersen("Dieser Schlüssel ist nicht vom Club! Das ist der Keller von Herrn Jensen – im Haus am Hafen.", "Этот ключ не от клуба! Это подвал господина Йенсена — в доме у гавани."),
   {
     t: "hear",
@@ -243,7 +243,7 @@ const lager: SceneNode[] = [
   {
     t: "clue",
     title: "Das Lager",
-    text: "Im Keller vom Club: das Lager der Möwe — Anhänger, Kassenbon, Teebeutel, Strandball. Kein Schild. Der Schlüssel ist vom Keller im Haus am Hafen.",
+    text: "Im Keller im Club: das Lager der Möwe — Anhänger, Kassenbon, Teebeutel, Strandball. Kein Schild. Der Schlüssel ist für den Keller im Haus am Hafen.",
   },
 ];
 
@@ -255,7 +255,7 @@ const kiosk: SceneNode[] = [
   narr("Тем временем, 8:20. Frauke macht den Kiosk auf. Vor dem Kiosk — Greta. Sie sagt nichts, только протягивает записку: «Wo wohnt Herr Jensen?»"),
   frauke("Herr Jensen? Im Haus am Hafen. Im ersten Stock!", "Господин Йенсен? В доме у гавани. На втором этаже!", ["der Stock", "das Haus"]),
   { t: "gap", rule: ["wohnen/stock-1"], task: "Где живёт Йенсен?", text: "Herr Jensen wohnt im ___ Stock.", options: ["ersten", "erste", "eins"], answer: "ersten", ru: "Господин Йенсен живёт на втором этаже." },
-  narr("Greta — в клуб. Zurück. В Kiosk. Zurück. Frauke zeigt noch einmal: das rote Haus, da!"),
+  narr("Greta — в клуб. Назад. В Kiosk. Назад. Фрауке показывает ещё раз: das Haus am Hafen, da!"),
   frauke("Nein! Das Haus am Hafen! Erster Stock – nicht Erdgeschoss!", "Нет! Дом у гавани! Второй этаж — не первый!", ["das Erdgeschoss"]),
   {
     t: "game",
@@ -269,7 +269,7 @@ const kiosk: SceneNode[] = [
     ]),
   },
   narr("8:30. Greta kommt aus dem Haus — mit Herrn Jensen. На шее у него — {schal}, хотя на дворе июнь."),
-  narr("Jensen macht den Mund auf — и ничего. Nicht einmal «Moin». Greta und Herr Jensen — {bus}. Weg."),
+  narr("Йенсен открывает рот — и ничего. Nicht einmal «Moin». Greta und Herr Jensen — {bus}. Weg."),
   frauke(ENTFUEHRUNG, "Господин Йенсен даже «Moin» не сказал! А Грета его уводит! Это похищение!"),
   {
     t: "hear",
@@ -279,7 +279,7 @@ const kiosk: SceneNode[] = [
     options: ["что Грета похищает Йенсена", "что Йенсен уехал в отпуск", "что Грета — его дочь"],
     answer: "что Грета похищает Йенсена",
   },
-  { ...narr("К девяти об этом знает весь Hafen. Слух едет быстрее автобуса."), set: { rumours: 1 } },
+  { ...narr("К девяти весь Hafen знает слово дня: {entfuehrung}. Слух едет быстрее автобуса."), set: { rumours: 1 } },
   {
     t: "type",
     task: "Запишите, что Фрауке видела на самом деле.",
@@ -308,14 +308,14 @@ const kiosk: SceneNode[] = [
 // пока не видит тёплую аренду.
 const stairs: SceneNode[] = [
   { t: "pic", src: "08-stairs.jpg", alt: "Подъезд узкого кирпичного дома у гавани: почтовые ящики с фамилиями, на стене объявление о свободной квартире; Хауке звонит в дверь на втором этаже, Элиф читает объявление, Дана светит телефоном" },
-  narr("Neun Uhr. Das Haus am Hafen: alt, rot, schmal. Erdgeschoss, erster und zweiter Stock. Im Treppenhaus — {briefkasten} для каждой квартиры."),
+  narr("Neun Uhr. Das Haus am Hafen: alt, узкий, кирпичный. Erdgeschoss, erster und zweiter Stock. Im Treppenhaus — {briefkasten} для каждой квартиры."),
   {
     t: "game",
     task: "Найдите на почтовых ящиках Йенсена и его этаж.",
     c: spot("Briefkästen · Haus am Hafen", ["Erdgeschoss|Wulff · Vermieter", "1. Stock|Jensen", "2. Stock|— frei —"], ["1. Stock", "Jensen"]),
   },
   hauke("Herr Jensen wohnt im ersten Stock. Ich klingle!", "Господин Йенсен живёт на втором этаже. Я звоню!", ["das Treppenhaus"]),
-  narr("Hauke klingelt. Einmal, zweimal, dreimal. Nichts. Die Wohnung ist ruhig."),
+  narr("Хауке звонит: раз, два, три. Тишина. Die Wohnung ist ruhig."),
   {
     t: "reply",
     rule: ["wohnen/im-1"],
@@ -366,7 +366,7 @@ const stairs: SceneNode[] = [
         label: "Объявление на стене",
         icon: "📰",
         nodes: [
-          narr("An der Wand — eine Anzeige. Elif liest laut — и глаза у неё загораются."),
+          narr("На стене — eine Anzeige. Элиф читает вслух — и глаза у неё загораются."),
           elif("Zwei Zimmer, Küche, Bad, Balkon! Ich tausche mein Zimmer im Wohnheim!", "Две комнаты, кухня, ванная, балкон! Меняю свою комнату в общежитии!", ["das Wohnheim", "der Balkon"]),
           {
             t: "game",
@@ -406,12 +406,12 @@ const stairs: SceneNode[] = [
               ["На Йенсене был шарф", true, "Шарф она видела — и удивилась."],
             ]),
           },
-          { ...narr("Frauke schreibt ins Journal: «Greta, Herr Jensen, Bus, 8:30». Ohne «Entführung». Слух сдулся."), set: { rumours: -1 } },
+          { ...narr("Фрауке пишет ins Journal: «Greta, Herr Jensen, Bus, 8:30». Без «Entführung». Слух сдулся."), set: { rumours: -1 } },
         ],
       },
     ],
   },
-  narr("Unten im Treppenhaus — noch eine Tür, klein und dunkel. На двери записка, почерк как в {logbuch}."),
+  narr("Внизу, im Treppenhaus, — noch eine Tür, klein und dunkel. На двери записка, почерк как в {logbuch}."),
   hauke(JENSEN_NOTE, "Сегодня нет. К сожалению. Moin."),
   dana("Vier Wörter. Herr Jensen meint diesen Keller. Und wir – im Club!", "Четыре слова. Господин Йенсен имел в виду этот подвал. А мы — в клубе!"),
   {
@@ -459,6 +459,7 @@ const empty: SceneNode[] = [
   { t: "pic", src: "08-karton.jpg", alt: "Подвал Йенсена: на старом столе большая плоская коробка, в поролоне вырезан контур букв MOIN — пусто; Хауке схватился за голову, Дана светит фонариком, Элиф держит карточку с адресом" },
   narr("Der Schlüssel passt. Im Keller von Herrn Jensen ist es hell — и очень аккуратно: ein Tisch, ein Stuhl, ein Schrank, Segel im Regal."),
   narr("Auf dem Tisch — {karton}, groß und flach. Внутри поролон, а в поролоне — {umriss}: M, O, I, N."),
+  narr("Больше в нём ничего нет. {leer}"),
   {
     t: "look",
     task: "Осмотрите подвал Йенсена.",
@@ -492,8 +493,8 @@ const empty: SceneNode[] = [
       no("Ruhig, Hauke! Wir haben dem Karton.", "dem — дательный, на вопрос «где?». После haben — den Karton."),
     ],
   },
-  narr("Im Karton, ganz unten — eine Karte: «Holzwerkstatt · Farbenweg 7 · Kiel-Gaarden». Und eine Telefonnummer."),
-  { t: "item", icon: "🏷️", de: "die Adresse", ru: "Holzwerkstatt, Farbenweg 7, Kiel-Gaarden — карточка из коробки" },
+  narr("На дне Karton — eine Karte: «Werkstatt · Farbenweg 7 · Kiel-Gaarden». Und eine Telefonnummer."),
+  { t: "item", icon: "🏷️", de: "die Adresse", ru: "Werkstatt, Farbenweg 7, Kiel-Gaarden — карточка из коробки" },
   {
     t: "type",
     task: "Перепишите адрес мастерской в блокнот.",
@@ -553,7 +554,7 @@ const empty: SceneNode[] = [
   {
     t: "clue",
     title: "Leer",
-    text: "Im Keller von Herrn Jensen: ein Karton mit dem Umriss MOIN — leer. Im Karton: Holzwerkstatt, Farbenweg 7, Gaarden. Am Telefon: «Heute ist die Werkstatt zu.»",
+    text: "Im Keller von Herrn Jensen: ein Karton mit dem Umriss MOIN — leer. Im Karton: Werkstatt, Farbenweg 7, Gaarden. Am Telefon: «Heute ist die Werkstatt zu.»",
   },
 ];
 
@@ -562,7 +563,7 @@ const empty: SceneNode[] = [
 // диагноз сходится. Заодно она объявляет вчерашний диагноз: Матео печёт торт, он не вор.
 const ticket: SceneNode[] = [
   { t: "pic", src: "08-flur.jpg", alt: "Узкий коридор дома у гавани: Дана подняла с пола автобусный билет и пританцовывает, Хауке и Элиф смотрят на неё, в дверях Матео с пакетом булочек" },
-  narr("Zurück im Flur. Dana bleibt stehen. У самой двери — {fahrkarte}, маленький и мятый."),
+  narr("Снова im Flur. Дана замирает. У самой двери — {fahrkarte}, маленький и мятый."),
   dana("Eine Fahrkarte! Sonntag, Viertel vor sechs, Hafen – Gaarden!", "Билет! Воскресенье, без четверти шесть, гавань — Гаарден!", ["der Flur"]),
   {
     t: "hear",
@@ -572,7 +573,7 @@ const ticket: SceneNode[] = [
     options: ["воскресенье, 17:45, гавань — Гаарден", "понедельник, 8:00, гавань — клуб", "воскресенье, 18:15, Гаарден — гавань"],
     answer: "воскресенье, 17:45, гавань — Гаарден",
   },
-  narr("Dana tanzt im Flur. Vierzig Sekunden, молча. Врачи тоже празднуют, когда диагноз сходится."),
+  narr("Dana tanzt im Flur. Сорок секунд, молча. Врачи тоже празднуют, когда диагноз сходится."),
   {
     t: "game",
     rule: ["tagesablauf/wann-1"],
@@ -678,7 +679,7 @@ const ticket: SceneNode[] = [
   {
     t: "clue",
     title: "Die Fahrkarte",
-    text: "Im Flur: eine Fahrkarte, Sonntag, 17:45, Hafen — Gaarden. Die Werkstatt ist in Gaarden. Greta hat Farbe an den Händen. Mateo backt nur — kein Dieb.",
+    text: "Im Flur: eine Fahrkarte, Sonntag, 17:45, Hafen — Gaarden. Die Werkstatt ist in Gaarden. Greta hat Farbe an den Händen. Mateo: nur ein Kuchen.",
   },
 ];
 
@@ -686,7 +687,7 @@ const ticket: SceneNode[] = [
 // на Gaarden. Если слухи Фрауке так и не сверили, Нильс приходит обиженным, и команда извиняется.
 const evening: SceneNode[] = [
   { t: "pic", src: "08-evening.jpg", alt: "Вечер в клубе, за окном гнутся мачты: чайка с кольцом сидит на стуле фрау Петерсен, как член клуба; Петерсен держит формуляр, Элиф смеётся, Хауке показывает на окно" },
-  narr("Abend im Club. Draußen — Wind, мачты стучат. А в клубе — {moewe}. Nicht auf dem Dach: auf dem Stuhl von Frau Petersen."),
+  narr("Abend im Club. На улице — ветер, мачты стучат. А в клубе — {moewe}. Не на крыше: auf dem Stuhl von Frau Petersen."),
   petersen("Das ist mein Stuhl! Wo ist das Formular für Möwen?", "Это мой стул! Где формуляр для чаек?", ["der Stuhl"]),
   elif("Sie hat Angst vor dem Sturm. Heute schläft sie im Club!", "Она боится шторма. Сегодня она ночует в клубе!"),
   hauke("Den ganzen Tag keine Möwe – und jetzt im Club? Verdächtig!", "Целый день ни одной чайки — а теперь в клубе? Подозрительно!"),
@@ -704,9 +705,9 @@ const evening: SceneNode[] = [
     if: [{ q: "rumours", min: 3 }],
     then: [
       narr("Nils kommt — без единого «!». Он пишет коротко: «Alle sagen: Nils hat das Schild. Nils ist bei der Polizei. Das stimmt nicht.»"),
-      narr("Хауке краснеет первым: «Entschuldigung, Nils.» Нильс кивает. Через минуту в его сообщениях снова «!!!»."),
+      narr("Хауке краснеет первым и говорит: {entschuldigung} Нильс кивает. Через минуту в его сообщениях снова «!!!»."),
     ],
-    else: [narr("Nils kommt mit dem Handy: «Sturm!!! Bald!!! Alle Boote in den Hafen!!!» Нильс снова всё знает первым.")],
+    else: [narr("Nils kommt mit dem Handy: «Sturm!!! Morgen!!! Alle Boote in den Hafen!!!» Нильс снова всё знает первым.")],
   },
   {
     t: "game",
@@ -772,7 +773,7 @@ const evening: SceneNode[] = [
   {
     t: "clue",
     title: "Gaarden",
-    text: "Morgen: mit dem Bus nach Gaarden, Farbenweg 7. Herr Jensen ist weg — mit Greta. Die Möwe schläft im Club, auf dem Stuhl von Frau Petersen. Ein Sturm kommt.",
+    text: "Morgen: mit dem Bus nach Gaarden, Farbenweg 7. Herr Jensen ist weg — mit Greta. Die Möwe ist im Club, auf dem Stuhl von Frau Petersen. Ein Sturm kommt.",
   },
 ];
 

@@ -454,6 +454,42 @@ export const phrases: Record<string, Phrase> = {
     pl: "Teebeutel",
     note: "der Tee + der Beutel, мешочек. Ярлычок на нитке — тоже от него.",
   },
+  wort: {
+    ru: "слово",
+    de: "das Wort",
+    pl: "Wörter",
+    note: "Слова Йенсена в клубе считают поштучно: обычно одно в день — Moin.",
+  },
+  wieimmer: {
+    ru: "как всегда",
+    de: "wie immer",
+    note: "Любимое у Йенсена: чай в половине шестого — wie immer, каждый день.",
+  },
+  hinten: {
+    ru: "сзади",
+    de: "hinten",
+    note: "А спереди — vorne. Терраса клуба — hinten, у воды; подставка — vorne, у входа.",
+  },
+  niemand: {
+    ru: "никто",
+    de: "niemand",
+    note: "Vorne ist niemand — спереди никого. Ответ на вопрос wer?",
+  },
+  ganzeclub: {
+    ru: "весь клуб",
+    de: "der ganze Club",
+    note: "ganz — целый: der ganze Tag — весь день, der ganze Club — весь клуб.",
+  },
+  flach: {
+    ru: "плоский",
+    de: "flach",
+    note: "Плоская сумка или коробка — как раз по размеру таблички.",
+  },
+  weg: {
+    ru: "нет на месте, пропал",
+    de: "weg",
+    note: "Das Schild ist weg — табличка пропала. Короткое слово для всего, что исчезло.",
+  },
   filmabend: {
     ru: "вечер кино",
     de: "der Filmabend",
@@ -507,6 +543,28 @@ export const phrases: Record<string, Phrase> = {
     de: "der Briefkasten",
     pl: "Briefkästen",
     note: "der Brief + der Kasten. В подъезде — по ящику на квартиру, с фамилией и этажом.",
+  },
+  hand: {
+    ru: "рука",
+    de: "die Hand",
+    pl: "Hände",
+    note: "Кисть руки — то, чем держат кисть. У Греты они в тёмно-синей краске.",
+  },
+  leer: {
+    ru: "Коробка пустая.",
+    de: "Der Karton ist leer.",
+    note: "leer — пустой, наоборот — voll, полный.",
+  },
+  entfuehrung: {
+    ru: "похищение",
+    de: "die Entführung",
+    pl: "Entführungen",
+    note: "Любимое слово Фрауке на этой неделе: из любой поездки на автобусе она делает детектив.",
+  },
+  entschuldigung: {
+    ru: "Извините! Простите!",
+    de: "Entschuldigung!",
+    note: "Так извиняются и так обращаются к незнакомому человеку на улице.",
   },
   karton: {
     ru: "коробка",
