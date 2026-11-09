@@ -1,0 +1,855 @@
+import { an, ANSWER, ASK, bingo, chat, docks, gaps, gruss, HINT_DOCK, HINT_HEAR, HINT_LETTER, HINT_LOCK, HINT_ODD, HINT_ORAL, HINT_PICTURE, HINT_SAY, HINT_SPELL, letter, letters, lock, odd, oral, order, pairs, reply as oralReply, REQUEST, say as oralSay, scene, sort, speak, spot, turn, verdict, write } from "../build.ts";
+import { phrases } from "../data.ts";
+import type { Challenge, Episode, SceneNode } from "../types.ts";
+
+// Глава 8 в формате сцен (A1-PLOT.md, «Формат сцен»): жильё, дательный на вопрос «где?» (im, in der,
+// auf dem), этажи и порядковые числа, сложные слова, прилагательное после sein. Вопрос главы — где
+// табличка в клубе. Вход — ключ и записка «Morgen um acht. Im Keller. Allein.», выход — пустая
+// коробка с контуром MOIN, билет на автобус в Gaarden и адрес мастерской. Подвалов два, и команда
+// ждёт Йенсена не в том. Повороты брошены оракулом (seed 1794160007), увязка — в журнале
+// A1-STORYCRAFT.md.
+
+const narr = (text: string): SceneNode => ({ t: "narr", text });
+const learn = (words?: string[]) => (words ? { learn: words } : {});
+const hauke = (de: string, ru: string, words?: string[]): SceneNode => ({ t: "say", who: "Hauke", voice: "Rocko", de, ru, ...learn(words) });
+const elif = (de: string, ru: string, words?: string[]): SceneNode => ({ t: "say", who: "Elif", voice: "Flo", de, ru, ...learn(words) });
+const dana = (de: string, ru: string, words?: string[]): SceneNode => ({ t: "say", who: "Dana", voice: "Anna", de, ru, ...learn(words) });
+const mateo = (de: string, ru: string, words?: string[]): SceneNode => ({ t: "say", who: "Mateo", voice: "Reed", de, ru, ...learn(words) });
+const frauke = (de: string, ru: string, words?: string[]): SceneNode => ({ t: "say", who: "Frauke", voice: "Sandy", de, ru, ...learn(words) });
+const petersen = (de: string, ru: string, words?: string[]): SceneNode => ({ t: "say", who: "Frau Petersen", voice: "Sandy", de, ru, ...learn(words) });
+const wulff = (de: string, ru: string, words?: string[]): SceneNode => ({ t: "say", who: "Herr Wulff", voice: "Eddy", de, ru, ...learn(words) });
+const machine = (de: string, ru: string): SceneNode => ({ t: "say", who: "Anrufbeantworter", voice: "Shelley", de, ru });
+/** Пары памяти — из выражений истории, которые глава уже показала. */
+const memory = (ids: string[]): Challenge => ({ kind: "memory", pairs: ids.map((id) => ({ id, de: phrases[id].de, ru: phrases[id].ru })) });
+const clock = (answer: string, traps: Record<string, string>): Challenge => ({ kind: "clock", start: "12:00", step: 15, answer, traps });
+const ok = (text: string) => ({ text, ok: true as const });
+const no = (text: string, react: string) => ({ text, react });
+
+const JENSEN_NOTE = "Heute nicht. Leider. Moin.";
+const ENTFUEHRUNG = "Herr Jensen sagt nicht mal Moin! Und Greta nimmt ihn mit! Das ist eine Entführung!";
+
+// Сцена 1 · пролог и завязка: восемь утра у клуба. Бросок: глобальное событие · чайка · прийти
+// не туда · der Stuhl · 17 — чаек нет во всей гавани (примета шторма), стул Йенсена пуст.
+// Бросок: сквозная шутка обостряется · Петерсен · отпраздновать · das Treppenhaus · 13 — она
+// празднует открытие подвала клуба, но сначала формуляр.
+const morning: SceneNode[] = [
+  { t: "pic", src: "08-morning.jpg", alt: "Утро понедельника у клуба: пустой стул Йенсена на причале и его лодка, ни одной чайки; Элиф с биноклем смотрит в пустое небо, Хауке бежит с будильником в руке" },
+  narr("Achter Tag, Montag, noch fünf Tage. Punkt acht. Вы у клуба, der Schlüssel в кармане. Es ist ruhig. Zu ruhig."),
+  narr("Der Stuhl Йенсена на причале пуст: keine Tasse, kein Herr Jensen. Und keine Möwe — ни на крыше, ни на воде."),
+  {
+    t: "look",
+    task: "Осмотрите причал.",
+    items: [
+      { icon: "🪑", de: "der Stuhl", ru: "стул", note: "Стул Йенсена. Каждое утро в восемь он сидит здесь с кружкой. Сегодня пусто.", key: true },
+      { icon: "⛵", de: "das Boot", ru: "лодка", note: "Лодка Йенсена у причала. А ведь он выходит в море каждое утро в восемь — всегда.", key: true },
+      { icon: "☕", de: "die Tasse", ru: "чашка, кружка", note: "Кружки нет. Значит, чая утром тоже не было." },
+    ],
+  },
+  {
+    t: "type",
+    task: "Запишите в блокнот главное: Йенсена на месте нет.",
+    answers: ["Herr Jensen ist nicht da.", "Herr Jensen ist nicht hier.", "Er ist nicht da."],
+    ru: "Господина Йенсена нет.",
+  },
+  elif("Keine Möwe! Die Möwen sind in der Stadt. Ein Sturm kommt!", "Ни одной чайки! Чайки в городе. Идёт шторм!"),
+  {
+    t: "hear",
+    task: "Что Элиф говорит о чайках?",
+    voice: "Flo",
+    de: "Keine Möwe! Die Möwen sind in der Stadt. Ein Sturm kommt!",
+    options: ["чайки в городе — идёт шторм", "чайки спят на крыше клуба", "чайки улетели на пляж"],
+    answer: "чайки в городе — идёт шторм",
+  },
+  { ...narr("{sturm} — старая примета на Ostsee: чайки улетают в город, когда у моря будет плохо. Часы погоды тикают."), set: { weather: 1 } },
+  { t: "gap", rule: ["wohnen/wo-2"], task: "Где сейчас чайки?", text: "Die Möwen sind in der ___.", options: ["Stadt", "Küche", "Keller"], answer: "Stadt", ru: "Чайки в городе." },
+  narr("Viertel nach acht. Hauke rennt, будильник в руке."),
+  hauke("Der Wecker ist kaputt! Er klingelt nicht!", "Будильник сломан! Он не звонит!", ["kaputt"]),
+  {
+    t: "reply",
+    task: "Скажите Хауке, сколько сейчас времени.",
+    options: [
+      ok("Hauke, es ist Viertel nach acht!"),
+      no("Hauke, es ist Viertel vor acht!", "Viertel vor acht — 7:45. А сейчас 8:15: Viertel nach acht."),
+      no("Hauke, es ist halb acht!", "halb acht — 7:30. Хауке опоздал, а не пришёл раньше."),
+    ],
+  },
+  {
+    t: "type",
+    rule: ["wohnen/adjektiv-1"],
+    task: "Запишите, почему Хауке опоздал.",
+    answers: ["Der Wecker ist kaputt.", "Sein Wecker ist kaputt.", "Haukes Wecker ist kaputt."],
+    ru: "Будильник сломан.",
+  },
+  hauke("Wo ist Herr Jensen? Im Keller! Kommt, wir gehen runter!", "Где господин Йенсен? В подвале! Пошли вниз!"),
+  narr("Im Treppenhaus vom Club — eine Tür nach unten. Die Lampe ist kaputt, es ist dunkel. Der Schlüssel… не подходит."),
+  dana("Der Schlüssel ist alt. Das Schloss ist neu. Das passt nicht!", "Ключ старый. Замок новый. Не подходит!"),
+  {
+    t: "pick",
+    task: "Ключ не подходит, а уже 8:20. Что делать?",
+    options: [
+      ok("Позвать фрау Петерсен: у неё ключи от всего клуба"),
+      no("Ломать дверь", "Детективы не ломают двери. Тем более в клубе фрау Петерсен."),
+      no("Ждать Йенсена у двери", "Йенсен никогда не опаздывает. Если его нет в восемь — что-то не так."),
+    ],
+  },
+  narr("Frau Petersen kommt: großer Schlüssel, eine Packung Kekse — и сияет, как на Geburtstag."),
+  petersen("Zwanzig Jahre ist der Keller zu! Heute machen wir ihn auf. Das feiern wir!", "Двадцать лет подвал закрыт! Сегодня мы его открываем. Это надо отпраздновать!", ["der Keller"]),
+  petersen("Aber zuerst das Formular. Ohne Formular kein Keller!", "Но сначала формуляр. Без формуляра — никакого подвала!"),
+  {
+    t: "game",
+    rule: ["wohnen/check-1"],
+    task: "Заполните формуляр фрау Петерсен: когда и куда идёт команда.",
+    hint: "Где? — im Keller: in + dem = im.",
+    c: write("Kellerbuch · Club Kiellinie", [
+      ["Tag", "Montag", "am Montag", "heute"],
+      ["Uhrzeit", "8:20", "acht Uhr zwanzig", "zwanzig nach acht"],
+      ["Wo?", "im Keller", "Keller", "im Keller vom Club"],
+      ["Wie viele Personen?", "drei", "3"],
+    ]),
+  },
+  {
+    t: "pick",
+    task: "Что празднует фрау Петерсен?",
+    options: [
+      ok("Подвал клуба открывают впервые за двадцать лет"),
+      no("Свой день рождения", "День рождения скоро у клуба, а не у неё. Сегодня праздник — подвал."),
+      no("Что Йенсен пришёл", "Йенсена нет. Петерсен празднует дверь."),
+    ],
+  },
+  {
+    t: "game",
+    task: "На доске фрау Петерсен ключи висят на трёх крючках: der, die, das. Повесьте бирки.",
+    hint: HINT_DOCK,
+    c: docks(["der Keller", "die Küche", "das Bad", "der Flur", "das Treppenhaus", "der Balkon", "das Zimmer", "die Wohnung"]),
+  },
+  { t: "game", task: "Фрау Петерсен подписывает новые бирки по буквам. Помогите ей.", hint: HINT_SPELL, c: letters(["das Bad", "die Küche", "das Zimmer"]) },
+  narr("Frau Petersen dreht den Schlüssel. Die Tür ist offen. Kekse für alle — праздник im Treppenhaus длится двадцать секунд."),
+  {
+    t: "game",
+    rule: ["wohnen/satz-2"],
+    task: "Соберите фразу фрау Петерсен: место — на первом месте.",
+    hint: "Место первым, глагол всё равно второй.",
+    c: order(["Im", "Keller", "ist", "es", "dunkel."], ["dunkel.", "es", "Im", "ist", "Keller"]),
+  },
+  {
+    t: "clue",
+    title: "Acht Uhr",
+    text: "Acht Uhr: kein Herr Jensen, keine Möwe, das Boot ist da. Der Schlüssel passt nicht. Frau Petersen öffnet den Keller vom Club — nach zwanzig Jahren.",
+  },
+];
+
+// Сцена 2 · развитие: подвал клуба. Бросок: двусмысленность · чайка · спрятать · der Keller · 14 —
+// в подвале клуба тайник чайки со всем, что она унесла за неделю, но Йенсена нет: «Im Keller»
+// значит другой подвал.
+const lager: SceneNode[] = [
+  { t: "pic", src: "08-cellar.jpg", alt: "Подвал клуба при свете телефона: старые стулья, стол, шкаф, свёрнутые паруса; у окошка с разбитым стеклом — тайник чайки: угол бирки, чек, чайные пакетики, край старого фото и пляжный мяч" },
+  narr("Im Keller vom Club ist es dunkel. Dana macht das Handy an: alte Stühle, ein Tisch, ein Schrank, Segel."),
+  hauke("Herr Jensen? Hallo? … Niemand da.", "Господин Йенсен? Алло? … Никого."),
+  { t: "game", task: "Дана светит телефоном по углам. Послушайте слово и нажмите на картинку.", hint: HINT_PICTURE, c: scene([["der Stuhl", "🪑"], ["das Sofa", "🛋️"], ["das Bett", "🛏️"], ["die Lampe", "💡"], ["der Kühlschrank", "🧊"], ["der Herd", "🍳"]]) },
+  narr("Am Fenster, в стекле дыра. И тут — {lager}: на столе, в шкафу, в ящике. Всё, что die Möwe унесла за неделю."),
+  {
+    t: "look",
+    task: "Осмотрите тайник чайки.",
+    items: [
+      { icon: "🏷️", de: "der Anhänger", ru: "бирка", note: "Тот самый угол бирки, который чайка оторвала в первый день. Номер целый: 12.", key: true },
+      { icon: "🧾", de: "der Kassenbon", ru: "чек", note: "Чек фрау Крузе: суббота, 17:05. Чайка унесла его на рынке." },
+      { icon: "🫖", de: "der Teebeutel", ru: "чайный пакетик", note: "Пакетики с террасы — с чая Йенсена в половине шестого." },
+      { icon: "🏐", de: "der Strandball", ru: "пляжный мяч", note: "Вчерашний мяч с пляжа. Сдулся, но цел.", key: true },
+      { icon: "🖼️", de: "das Foto", ru: "фото", note: "Край фото 1976 года — тот, что чайка оторвала в главе про семью." },
+    ],
+  },
+  elif("Seht ihr? Die Möwe ist kein Dieb. Sie sammelt nur!", "Видите? Чайка не вор. Она просто собирает!"),
+  hauke("Und das Schild? Ist das Schild auch hier?", "А табличка? Табличка тоже здесь?"),
+  elif("Nein! Das Schild ist zu groß und zu schwer. Eine Möwe wiegt ein Kilo!", "Нет! Табличка слишком большая и тяжёлая. Чайка весит килограмм!"),
+  {
+    t: "hear",
+    task: "Почему чайка не могла унести табличку?",
+    voice: "Flo",
+    de: "Nein! Das Schild ist zu groß und zu schwer. Eine Möwe wiegt ein Kilo!",
+    options: ["табличка слишком большая и тяжёлая", "табличка прибита к стене", "чайка боится таблички"],
+    answer: "табличка слишком большая и тяжёлая",
+  },
+  {
+    t: "game",
+    task: "Элиф — адвокат чайки. Что верно?",
+    c: verdict(["Richtig", "Falsch"], [
+      ["Чайка унесла табличку", false, "Табличка слишком тяжёлая: чайка весит около килограмма."],
+      ["Чайка собирает мелочи", true, "Бирка, чек, пакетики, мяч — всё лёгкое."],
+      ["В тайнике есть угол бирки", true, "Тот самый, с целым номером."],
+    ]),
+  },
+  {
+    t: "reply",
+    rule: ["wohnen/adjektiv-1"],
+    task: "Хауке всё ещё подозревает чайку. Возразите вежливо, как Элиф.",
+    options: [
+      ok("Nein, das stimmt nicht. Das Schild ist zu schwer."),
+      no("Ja, das stimmt. Das Schild ist zu schwer.", "Вы же возражаете: Nein, das stimmt nicht."),
+      no("Nein, das stimmt nicht. Das Schild ist zu schwerer.", "После sein прилагательное без окончания: zu schwer."),
+    ],
+  },
+  {
+    t: "game",
+    rule: ["wohnen/wo-1", "wohnen/wo-2"],
+    task: "Запишите в блокнот, где что лежит в тайнике.",
+    hint: "Где? — дательный: der, das → dem; die → der. in + dem = im.",
+    c: gaps("Der Strandball liegt ___ Tisch. Das Foto liegt ___ Schrank. Die Teebeutel liegen ___ Kiste.", ["auf dem", "im", "in der", "in den", "auf den"], ["auf dem", "im", "in der"]),
+  },
+  {
+    t: "type",
+    rule: ["wohnen/satz-1"],
+    task: "Запишите, где тайник чайки.",
+    answers: ["Das Lager ist im Keller.", "Das Lager der Möwe ist im Keller.", "Im Keller ist das Lager."],
+    ru: "Тайник — в подвале.",
+  },
+  {
+    t: "game",
+    rule: ["wohnen/stock-3"],
+    task: "Когда чайка унесла каждую находку? Соедините.",
+    hint: "Порядковые: am ersten, am dritten, am fünften, am siebten Tag.",
+    c: pairs([["der Anhänger", "am ersten Tag"], ["das Foto", "am dritten Tag"], ["der Kassenbon", "am fünften Tag"], ["der Strandball", "am siebten Tag"]]),
+  },
+  narr("8:40. Kein Herr Jensen. Frau Petersen sieht den Schlüssel an — und lacht."),
+  petersen("Dieser Schlüssel ist nicht vom Club! Das ist der Keller von Herrn Jensen – im Haus am Hafen.", "Этот ключ не от клуба! Это подвал господина Йенсена — в доме у гавани."),
+  {
+    t: "hear",
+    task: "Что фрау Петерсен говорит о ключе?",
+    voice: "Sandy",
+    de: "Dieser Schlüssel ist nicht vom Club! Das ist der Keller von Herrn Jensen – im Haus am Hafen.",
+    options: ["ключ от подвала Йенсена в доме у гавани", "ключ от подвала клуба", "ключ от офиса клуба"],
+    answer: "ключ от подвала Йенсена в доме у гавани",
+  },
+  dana("Zwei Keller! «Im Keller» – aber in welchem?", "Два подвала! «В подвале» — но в каком?"),
+  {
+    t: "pick",
+    task: "Что пошло не так утром?",
+    options: [
+      ok("Мы ждали Йенсена не в том подвале"),
+      no("Йенсен опоздал", "Йенсен никогда не опаздывает. Это мы пришли не туда."),
+      no("Записка ошибочная", "Записка верная: «Im Keller». Просто подвалов два."),
+    ],
+  },
+  {
+    t: "game",
+    task: "Хауке проверяет: что в группе лишнее?",
+    hint: HINT_ODD,
+    c: odd([
+      [["der Stuhl", "der Tisch", "das Bett", "die Küche"], "die Küche", "Кухня — комната, остальное — мебель."],
+      [["die Miete", "die Kaltmiete", "die Warmmiete", "der Herd"], "der Herd", "Плита — техника, остальное — деньги за квартиру."],
+    ]),
+  },
+  { t: "game", task: "Подпишите находки из подвала по буквам.", hint: HINT_SPELL, c: letters(["der Schrank", "die Lampe", "das Sofa"]) },
+  narr("Хауке уже бежит наверх. Die Kekse фрау Петерсен остаются im Keller — für die Möwe."),
+  {
+    t: "clue",
+    title: "Das Lager",
+    text: "Im Keller vom Club: das Lager der Möwe — Anhänger, Kassenbon, Teebeutel, Strandball. Kein Schild. Der Schlüssel ist vom Keller im Haus am Hafen.",
+  },
+];
+
+// Интерлюдия глазами Фрауке, в то же утро. Бросок: герой по черте · Грета · заблудиться ·
+// die Wohnung · 17 — Грета, которая отвечает только письменно, трижды ищет квартиру Йенсена.
+// Фрауке видит, как Йенсен в шарфе молча уезжает с Гретой, и додумывает похищение.
+const kiosk: SceneNode[] = [
+  { t: "pic", src: "08-kiosk.jpg", alt: "Утро у киоска Фрауке: Грета в комбинезоне молча протягивает записку, Фрауке показывает на узкий кирпичный дом у гавани" },
+  narr("Тем временем, 8:20. Frauke macht den Kiosk auf. Vor dem Kiosk — Greta. Sie sagt nichts, только протягивает записку: «Wo wohnt Herr Jensen?»"),
+  frauke("Herr Jensen? Im Haus am Hafen. Im ersten Stock!", "Господин Йенсен? В доме у гавани. На втором этаже!", ["der Stock", "das Haus"]),
+  { t: "gap", rule: ["wohnen/stock-1"], task: "Где живёт Йенсен?", text: "Herr Jensen wohnt im ___ Stock.", options: ["ersten", "erste", "eins"], answer: "ersten", ru: "Господин Йенсен живёт на втором этаже." },
+  narr("Greta — в клуб. Zurück. В Kiosk. Zurück. Frauke zeigt noch einmal: das rote Haus, da!"),
+  frauke("Nein! Das Haus am Hafen! Erster Stock – nicht Erdgeschoss!", "Нет! Дом у гавани! Второй этаж — не первый!", ["das Erdgeschoss"]),
+  {
+    t: "game",
+    rule: ["wohnen/stock-1"],
+    task: "Фрауке знает, кто где живёт в доме у гавани. Разложите по этажам.",
+    hint: "Erdgeschoss — наш первый этаж, erster Stock — наш второй.",
+    c: sort([["eg", "Erdgeschoss"], ["eins", "erster Stock"], ["zwei", "zweiter Stock"]], [
+      ["wulff", "Herr Wulff, der Vermieter", "eg", "🔑"],
+      ["jensen", "Herr Jensen", "eins", "⚓"],
+      ["frei", "Die Wohnung ist frei.", "zwei", "📰"],
+    ]),
+  },
+  narr("8:30. Greta kommt aus dem Haus — mit Herrn Jensen. На шее у него — {schal}, хотя на дворе июнь."),
+  narr("Jensen macht den Mund auf — и ничего. Nicht einmal «Moin». Greta und Herr Jensen — {bus}. Weg."),
+  frauke(ENTFUEHRUNG, "Господин Йенсен даже «Moin» не сказал! А Грета его уводит! Это похищение!"),
+  {
+    t: "hear",
+    task: "Что думает Фрауке?",
+    voice: "Sandy",
+    de: ENTFUEHRUNG,
+    options: ["что Грета похищает Йенсена", "что Йенсен уехал в отпуск", "что Грета — его дочь"],
+    answer: "что Грета похищает Йенсена",
+  },
+  { ...narr("К девяти об этом знает весь Hafen. Слух едет быстрее автобуса."), set: { rumours: 1 } },
+  {
+    t: "type",
+    task: "Запишите, что Фрауке видела на самом деле.",
+    answers: ["Greta und Herr Jensen fahren mit dem Bus.", "Herr Jensen und Greta fahren mit dem Bus.", "Greta und Herr Jensen nehmen den Bus."],
+    ru: "Грета и господин Йенсен уезжают на автобусе.",
+  },
+  {
+    t: "pick",
+    task: "Что из этого факт, а не слух?",
+    options: [
+      ok("Йенсен молча уехал с Гретой на автобусе"),
+      no("Грета похитила Йенсена", "Это догадка Фрауке. Йенсен шёл сам."),
+      no("Йенсен ушёл в подвал", "Он вышел из дома и сел в автобус."),
+    ],
+  },
+  {
+    t: "when",
+    if: [{ q: "frauke", min: 1 }],
+    then: [narr("В журнал киоска Фрауке пишет аккуратно, как привыкла: «8:30. Greta, Herr Jensen, Schal, Bus»."),],
+    else: [narr("Журнала у Фрауке нет, поэтому запомнит она главное: «Entführung!»")],
+  },
+];
+
+// Сцена 3 · развитие: дом у гавани, свидетели в своём порядке. Бросок: герой по черте · Элиф ·
+// обменять · die Warmmiete · 5 (мелочь) — Элиф готова поменять общежитие на свободную квартиру,
+// пока не видит тёплую аренду.
+const stairs: SceneNode[] = [
+  { t: "pic", src: "08-stairs.jpg", alt: "Подъезд узкого кирпичного дома у гавани: почтовые ящики с фамилиями, на стене объявление о свободной квартире; Хауке звонит в дверь на втором этаже, Элиф читает объявление, Дана светит телефоном" },
+  narr("Neun Uhr. Das Haus am Hafen: alt, rot, schmal. Erdgeschoss, erster und zweiter Stock. Im Treppenhaus — {briefkasten} для каждой квартиры."),
+  {
+    t: "game",
+    task: "Найдите на почтовых ящиках Йенсена и его этаж.",
+    c: spot("Briefkästen · Haus am Hafen", ["Erdgeschoss|Wulff · Vermieter", "1. Stock|Jensen", "2. Stock|— frei —"], ["1. Stock", "Jensen"]),
+  },
+  hauke("Herr Jensen wohnt im ersten Stock. Ich klingle!", "Господин Йенсен живёт на втором этаже. Я звоню!", ["das Treppenhaus"]),
+  narr("Hauke klingelt. Einmal, zweimal, dreimal. Nichts. Die Wohnung ist ruhig."),
+  {
+    t: "reply",
+    rule: ["wohnen/im-1"],
+    task: "Позовите Йенсена через дверь.",
+    options: [
+      ok("Herr Jensen, sind Sie da? Wir sind im Treppenhaus!"),
+      no("Herr Jensen, sind Sie da? Wir sind in Treppenhaus!", "Нужен артикль в дательном: in dem → im Treppenhaus."),
+      no("Herr Jensen, sind Sie da? Wir sind im Treppenhauses!", "После im — просто Treppenhaus, без -es."),
+    ],
+  },
+  narr("Внизу открывается дверь: мужчина в жилете и с папкой — der Vermieter, Herr Wulff."),
+  wulff("Moin! Sie suchen eine Wohnung? Die Wohnung im zweiten Stock ist frei!", "Привет! Вы ищете квартиру? Квартира на третьем этаже свободна!", ["frei", "die Wohnung"]),
+  {
+    t: "hear",
+    task: "Что предлагает хозяин дома?",
+    voice: "Eddy",
+    de: "Moin! Sie suchen eine Wohnung? Die Wohnung im zweiten Stock ist frei!",
+    options: ["квартиру на третьем этаже", "ключ от подвала", "комнату в общежитии"],
+    answer: "квартиру на третьем этаже",
+  },
+  {
+    t: "game",
+    task: "Поговорите с хозяином дома. Выберите ответ.",
+    c: chat("Herr Wulff", "Eddy", [
+      turn("Sie suchen eine Wohnung?", "Вы ищете квартиру?", "b", [
+        ["a", "Ja, zwei Zimmer, bitte.", "Вы ищете не квартиру, а Йенсена."],
+        ["b", "Nein, wir suchen Herrn Jensen.", "Верно: suchen + винительный — Herrn Jensen."],
+        ["c", "Nein, wir suchen Herr Jensen.", "После suchen — винительный: Herrn Jensen."],
+      ]),
+      turn("Herr Jensen? Der ist nicht da. Heute früh – weg, mit einer Frau.", "Господин Йенсен? Его нет. Сегодня рано утром ушёл с какой-то женщиной.", "a", [
+        ["a", "Mit einer Frau? Mit Greta?", "Верно: уточняете, с кем."],
+        ["b", "Mit einer Frau? Danke, tschüss!", "Рано прощаться: это важная улика."],
+        ["c", "Mit eine Frau? Mit Greta?", "mit + дательный: mit einer Frau."],
+      ]),
+      turn("Greta? Ja, vielleicht. Blaue Hände. Und Herr Jensen hat einen Schal!", "Грета? Да, наверное. Синие руки. А на господине Йенсене шарф!", "c", [
+        ["a", "Danke für das Hilfe!", "die Hilfe — женский род: für die Hilfe."],
+        ["b", "Bitte für die Hilfe!", "За помощь благодарят: Danke für die Hilfe."],
+        ["c", "Danke für die Hilfe!", "Верно: вежливо благодарите."],
+      ]),
+    ]),
+  },
+  {
+    t: "go",
+    task: "Йенсена нет. Что проверить в доме?",
+    next: "Дальше по делу",
+    branches: [
+      {
+        label: "Объявление на стене",
+        icon: "📰",
+        nodes: [
+          narr("An der Wand — eine Anzeige. Elif liest laut — и глаза у неё загораются."),
+          elif("Zwei Zimmer, Küche, Bad, Balkon! Ich tausche mein Zimmer im Wohnheim!", "Две комнаты, кухня, ванная, балкон! Меняю свою комнату в общежитии!", ["das Wohnheim", "der Balkon"]),
+          {
+            t: "game",
+            rule: ["wohnen/lesen2-1"],
+            task: "Найдите в объявлении, сколько стоит квартира вместе с отоплением.",
+            hint: "KM — Kaltmiete, NK — Nebenkosten, WM — Warmmiete: всё вместе.",
+            c: spot("Anzeige · 2. Stock", ["2-Zi.-Whg.|Blk.|ruhig", "KM 520 €|NK 130 €|WM 650 €", "frei ab sofort|Tel. Wulff"], ["WM 650 €"]),
+          },
+          elif("650 Euro warm? … Nein, danke. Ich bleibe im Wohnheim.", "650 евро с отоплением? … Нет, спасибо. Я остаюсь в общежитии."),
+          { t: "gap", rule: ["wohnen/komposita-1"], task: "Что стоит 650 евро?", text: "Die ___ ist 650 Euro: Miete und Nebenkosten.", options: ["Warmmiete", "Kaltmiete", "Nebenkosten"], answer: "Warmmiete", ru: "Тёплая аренда — 650 евро: аренда и коммунальные." },
+          narr("Обмен не случился: im Wohnheim у Элиф тоже есть Balkon. Общий, на сорок человек."),
+        ],
+      },
+      {
+        label: "Слух Фрауке",
+        icon: "🗞️",
+        optional: true,
+        nodes: [
+          narr("Фрауке прибегает прямо в фартуке — мимо собственной очереди."),
+          frauke(ENTFUEHRUNG, "Господин Йенсен даже «Moin» не сказал! А Грета его уводит! Это похищение!"),
+          {
+            t: "reply",
+            task: "Сверьте слух с Фрауке.",
+            options: [
+              ok("Stimmt das, Frauke?"),
+              no("Das stimmt, Frauke!", "Вы сверяете, а не соглашаетесь: Stimmt das?"),
+              no("Stimmst das, Frauke?", "das — третье лицо: stimmt."),
+            ],
+          },
+          frauke("Na ja … Greta und Herr Jensen – zusammen, mit dem Bus. Das ist alles.", "Ну… Грета и господин Йенсен — вместе, на автобусе. Вот и всё."),
+          {
+            t: "game",
+            task: "Поставьте штамп: что Фрауке видела сама, а что додумала?",
+            c: verdict(["Видела", "Додумала"], [
+              ["Грета и Йенсен уехали вместе", true, "Это она видела."],
+              ["Это похищение", false, "Йенсен шёл сам. Похищение — догадка Фрауке."],
+              ["На Йенсене был шарф", true, "Шарф она видела — и удивилась."],
+            ]),
+          },
+          { ...narr("Frauke schreibt ins Journal: «Greta, Herr Jensen, Bus, 8:30». Ohne «Entführung». Слух сдулся."), set: { rumours: -1 } },
+        ],
+      },
+    ],
+  },
+  narr("Unten im Treppenhaus — noch eine Tür, klein und dunkel. На двери записка, почерк как в {logbuch}."),
+  hauke(JENSEN_NOTE, "Сегодня нет. К сожалению. Moin."),
+  dana("Vier Wörter. Herr Jensen meint diesen Keller. Und wir – im Club!", "Четыре слова. Господин Йенсен имел в виду этот подвал. А мы — в клубе!"),
+  {
+    t: "hear",
+    task: "Хауке читает записку вслух. Что в ней?",
+    voice: "Rocko",
+    de: JENSEN_NOTE,
+    options: ["сегодня нет, к сожалению", "сегодня в восемь, в подвале", "завтра в клубе"],
+    answer: "сегодня нет, к сожалению",
+  },
+  {
+    t: "pick",
+    task: "Почему Йенсен пишет «Heute nicht»?",
+    options: [
+      ok("Он ждал нас здесь в восемь, мы были в другом подвале, а ему пришлось уехать"),
+      no("Он передумал говорить", "Тогда он не оставил бы ключ и записку."),
+      no("Он нас не звал", "Звал: Morgen um acht. Im Keller."),
+    ],
+  },
+  {
+    t: "type",
+    rule: ["wohnen/satz-1"],
+    task: "Запишите вывод в блокнот: где подвал Йенсена.",
+    answers: ["Der Keller ist im Haus am Hafen.", "Der Keller von Herrn Jensen ist im Haus am Hafen.", "Im Haus am Hafen ist der Keller."],
+    ru: "Подвал — в доме у гавани.",
+  },
+  {
+    t: "game",
+    rule: ["wohnen/stock-1"],
+    task: "Соберите для блокнота, где живёт Йенсен.",
+    hint: "im ersten Stock: in + dem = im, порядковое с окончанием -en.",
+    c: order(["Herr", "Jensen", "wohnt", "im", "ersten", "Stock."], ["Stock.", "im", "wohnt", "ersten", "Herr", "Jensen"]),
+  },
+  { t: "game", task: "Элиф подписывает в блокноте слова подъезда по буквам.", hint: HINT_SPELL, c: letters(["das Erdgeschoss", "der Vermieter", "die Anzeige"]) },
+  {
+    t: "clue",
+    title: "Heute nicht",
+    text: "Haus am Hafen: Herr Jensen wohnt im ersten Stock — niemand da. Herr Wulff: «Weg, mit einer Frau.» An der Kellertür: «Heute nicht. Leider. Moin.»",
+  },
+];
+
+// Сцена 4 · поворот и кризис: подвал Йенсена. Пустая коробка с контуром MOIN, адрес мастерской, и
+// мастерская сегодня закрыта. След обрывается.
+const empty: SceneNode[] = [
+  { t: "pic", src: "08-karton.jpg", alt: "Подвал Йенсена: на старом столе большая плоская коробка, в поролоне вырезан контур букв MOIN — пусто; Хауке схватился за голову, Дана светит фонариком, Элиф держит карточку с адресом" },
+  narr("Der Schlüssel passt. Im Keller von Herrn Jensen ist es hell — и очень аккуратно: ein Tisch, ein Stuhl, ein Schrank, Segel im Regal."),
+  narr("Auf dem Tisch — {karton}, groß und flach. Внутри поролон, а в поролоне — {umriss}: M, O, I, N."),
+  {
+    t: "look",
+    task: "Осмотрите подвал Йенсена.",
+    items: [
+      { icon: "📦", de: "der Karton", ru: "коробка", note: "Плоская коробка точно по размеру таблички. Пустая.", key: true },
+      { icon: "🔠", de: "der Umriss", ru: "контур", note: "Буквы M, O, I, N вырезаны в поролоне. Табличка легла бы сюда точно.", key: true },
+      { icon: "🗄️", de: "der Schrank", ru: "шкаф", note: "Старый плащ Йенсена и банки из-под чая. Таблички нет." },
+      { icon: "🗂️", de: "das Regal", ru: "стеллаж", note: "Паруса, свёрнутые ровно, по-йенсеновски." },
+    ],
+  },
+  dana("Das ist der Umriss vom Schild. Aber das Schild ist weg!", "Это контур таблички. Но самой таблички нет!"),
+  elif("Der Karton ist neu. Und der Umriss ist genau. Das ist Profi-Arbeit.", "Коробка новая. И контур точный. Это работа профи."),
+  hauke("Der Karton ist leer! Noch fünf Tage – und kein Schild!", "Коробка пустая! Ещё пять дней — и никакой таблички!"),
+  {
+    t: "game",
+    task: "Что говорит коробка? Проверьте блокнот.",
+    c: verdict(["Richtig", "Falsch"], [
+      ["В поролоне контур MOIN", true, "M, O, I, N — буквы таблички."],
+      ["Табличка здесь", false, "Коробка пустая."],
+      ["Коробку сделали под табличку", true, "Поролон вырезан точно по буквам. И коробка новая."],
+    ]),
+  },
+  { t: "gap", task: "Что вырезано в поролоне?", text: "Im Karton ist der ___ vom Schild.", options: ["Umriss", "Stempel", "Anhänger"], answer: "Umriss", ru: "В коробке — контур таблички." },
+  {
+    t: "reply",
+    rule: ["essen/akkusativ-2"],
+    task: "Успокойте Хауке: улики у вас есть.",
+    options: [
+      ok("Ruhig, Hauke! Wir haben den Karton."),
+      no("Ruhig, Hauke! Wir haben der Karton.", "haben + винительный: den Karton."),
+      no("Ruhig, Hauke! Wir haben dem Karton.", "dem — дательный, на вопрос «где?». После haben — den Karton."),
+    ],
+  },
+  narr("Im Karton, ganz unten — eine Karte: «Holzwerkstatt · Farbenweg 7 · Kiel-Gaarden». Und eine Telefonnummer."),
+  { t: "item", icon: "🏷️", de: "die Adresse", ru: "Holzwerkstatt, Farbenweg 7, Kiel-Gaarden — карточка из коробки" },
+  {
+    t: "type",
+    task: "Перепишите адрес мастерской в блокнот.",
+    answers: ["Farbenweg 7, Kiel-Gaarden", "Farbenweg 7, Gaarden", "Holzwerkstatt, Farbenweg 7, Kiel-Gaarden", "Farbenweg 7"],
+    ru: "Мастерская: Фарбенвег, дом 7, Гаарден.",
+  },
+  hauke("Null, vier, drei, eins. Fünf, fünf, sechs, zwei. Neun, null. Ich rufe an!", "Ноль, четыре, три, один. Пять, пять, шесть, два. Девять, ноль. Звоню!"),
+  {
+    t: "game",
+    task: "Наберите номер мастерской, который читает Хауке.",
+    c: { kind: "code", length: 10, answer: "0431556290", label: "Номер телефона" },
+  },
+  narr("Гудки. Потом — автоответчик:"),
+  machine("Holzwerkstatt am Farbenweg. Heute ist die Werkstatt zu. Bitte rufen Sie morgen an.", "Столярная мастерская на Фарбенвег. Сегодня мастерская закрыта. Пожалуйста, позвоните завтра."),
+  {
+    t: "hear",
+    task: "Что говорит автоответчик?",
+    voice: "Shelley",
+    de: "Holzwerkstatt am Farbenweg. Heute ist die Werkstatt zu. Bitte rufen Sie morgen an.",
+    options: ["сегодня закрыто, звонить завтра", "открыто до шести вечера", "Грета перезвонит сама"],
+    answer: "сегодня закрыто, звонить завтра",
+  },
+  {
+    t: "game",
+    rule: ["tagesablauf/klammer-1"],
+    task: "Соберите, о чём просит автоответчик.",
+    hint: "anrufen: rufen — второй, an — в конце.",
+    c: order(["Bitte", "rufen", "Sie", "morgen", "an."], ["an.", "morgen", "Bitte", "Sie", "rufen"]),
+  },
+  dana("Die Werkstatt ist zu. Und Herr Jensen ist weg. Das ist kein Zufall.", "Мастерская закрыта. И Йенсена нет. Это не случайность."),
+  {
+    t: "pick",
+    task: "Что теперь главное?",
+    options: [
+      ok("Узнать, кто забрал табличку из коробки и при чём тут мастерская"),
+      no("Сдаться: до старта пять дней", "Детективы не сдаются за пять дней до развязки."),
+      no("Обыскать квартиру Йенсена", "Без Йенсена — нельзя. Ключ у нас только от подвала."),
+    ],
+  },
+  {
+    t: "game",
+    task: "Хауке проверяет себя: что в группе лишнее?",
+    hint: HINT_ODD,
+    c: odd([
+      [["der Keller", "das Erdgeschoss", "der Stock", "der Herd"], "der Herd", "Плита — техника, остальное — этажи дома."],
+      [["der Schrank", "das Bett", "der Tisch", "die Miete"], "die Miete", "Аренда — деньги, остальное — мебель."],
+    ]),
+  },
+  {
+    t: "game",
+    rule: ["wohnen/wo-1"],
+    task: "Что где нашли за утро? Соедините.",
+    hint: "Где? — im Keller, im Karton, an der Tür: дательный.",
+    c: pairs([["im Keller vom Club", "das Lager der Möwe"], ["im Keller von Herrn Jensen", "der Karton"], ["im Karton", "die Adresse"], ["an der Kellertür", "«Heute nicht»"]]),
+  },
+  { t: "game", task: "Хауке повторяет, чтобы не забыть. Повторите за ним вслух.", hint: HINT_SAY, c: speak(["der Keller", "das Haus", "das Erdgeschoss"]) },
+  {
+    t: "clue",
+    title: "Leer",
+    text: "Im Keller von Herrn Jensen: ein Karton mit dem Umriss MOIN — leer. Im Karton: Holzwerkstatt, Farbenweg 7, Gaarden. Am Telefon: «Heute ist die Werkstatt zu.»",
+  },
+];
+
+// Сцена 5 · кульминация: билет в коридоре, замок и записка. Бросок: честная улика · Дана ·
+// отпраздновать · der Flur · 13 — Дана находит в коридоре воскресный билет в Gaarden и празднует:
+// диагноз сходится. Заодно она объявляет вчерашний диагноз: Матео печёт торт, он не вор.
+const ticket: SceneNode[] = [
+  { t: "pic", src: "08-flur.jpg", alt: "Узкий коридор дома у гавани: Дана подняла с пола автобусный билет и пританцовывает, Хауке и Элиф смотрят на неё, в дверях Матео с пакетом булочек" },
+  narr("Zurück im Flur. Dana bleibt stehen. У самой двери — {fahrkarte}, маленький и мятый."),
+  dana("Eine Fahrkarte! Sonntag, Viertel vor sechs, Hafen – Gaarden!", "Билет! Воскресенье, без четверти шесть, гавань — Гаарден!", ["der Flur"]),
+  {
+    t: "hear",
+    task: "Что на билете?",
+    voice: "Anna",
+    de: "Eine Fahrkarte! Sonntag, Viertel vor sechs, Hafen – Gaarden!",
+    options: ["воскресенье, 17:45, гавань — Гаарден", "понедельник, 8:00, гавань — клуб", "воскресенье, 18:15, Гаарден — гавань"],
+    answer: "воскресенье, 17:45, гавань — Гаарден",
+  },
+  narr("Dana tanzt im Flur. Vierzig Sekunden, молча. Врачи тоже празднуют, когда диагноз сходится."),
+  {
+    t: "game",
+    rule: ["tagesablauf/wann-1"],
+    task: "Поставьте часы на время с билета.",
+    c: clock("17:45", {
+      "17:15": "Viertel nach fünf — 17:15. На билете — Viertel vor sechs.",
+      "16:45": "Viertel vor fünf — 16:45. На билете — Viertel vor sechs.",
+      "18:15": "Это Viertel nach sechs. На билете — без четверти шесть.",
+    }),
+  },
+  {
+    t: "game",
+    task: "Сходится ли билет с уликами?",
+    c: verdict(["Richtig", "Falsch"], [
+      ["Фрауке видела женщину у автобуса в 17:35", true, "«Frau, Overall blau, große flache Tasche, Bus» — из кассовой книги."],
+      ["Билет — на понедельник", false, "Sonntag — воскресенье, день пропажи."],
+      ["Мастерская тоже в Gaarden", true, "Farbenweg 7, Kiel-Gaarden."],
+    ]),
+  },
+  dana("Gaarden? Ich wohne in Gaarden! Der Farbenweg ist bei mir um die Ecke!", "Гаарден? Я живу в Гаардене! Фарбенвег — за углом от меня!"),
+  {
+    t: "type",
+    rule: ["kennenlernen/endungen-1"],
+    task: "Запишите в блокнот, где живёт Дана: это пригодится завтра.",
+    answers: ["Dana wohnt in Gaarden.", "Sie wohnt in Gaarden."],
+    ru: "Дана живёт в Гаардене.",
+  },
+  elif("Und Greta hat Farbe an den Händen. Dunkelblau.", "А у Греты краска на руках. Тёмно-синяя."),
+  { t: "gap", rule: ["wohnen/wo-3"], task: "Где работает Грета?", text: "Greta arbeitet in einer ___ in Gaarden.", options: ["Werkstatt", "Keller", "Büro"], answer: "Werkstatt", ru: "Грета работает в мастерской в Гаардене." },
+  narr("В дверях — Mateo, mit einer Tüte Brötchen: «Frühstück!» Dana sieht ihn an — и ставит вчерашний диагноз."),
+  dana("Meine Diagnose von gestern: Mateo backt einen Kuchen. Mateo ist kein Dieb.", "Мой вчерашний диагноз: Матео печёт торт. Матео не вор."),
+  mateo("Ich? Einen Kuchen? Nein! … Brötchen. Nur Brötchen. Für euch!", "Я? Торт? Нет!… Булочки. Только булочки. Для вас!"),
+  {
+    t: "hear",
+    task: "Что отвечает Матео на диагноз?",
+    voice: "Reed",
+    de: "Ich? Einen Kuchen? Nein! … Brötchen. Nur Brötchen. Für euch!",
+    options: ["что принёс только булочки", "что печёт торт для клуба", "что хлеб — для чайки"],
+    answer: "что принёс только булочки",
+  },
+  {
+    t: "pick",
+    task: "Кто теперь главный подозреваемый?",
+    options: [
+      ok("Грета: билет в Gaarden, мастерская, краска на руках"),
+      no("Матео", "Дана сняла с него подозрение: он печёт, а не ворует."),
+      no("Чайка", "Элиф доказала: табличка слишком тяжёлая."),
+    ],
+  },
+  hauke("Greta hat das Schild! Aber warum? Und warum hilft Herr Jensen?", "Табличка у Греты! Но зачем? И почему господин Йенсен ей помогает?"),
+  {
+    t: "game",
+    rule: ["wohnen/wo-1", "wohnen/stock-1"],
+    task: "Блокнот закрыт на фразы дня. Поверните диски.",
+    hint: HINT_LOCK,
+    c: lock([
+      ["Коробка — в подвале.", [["Der Karton", "Den Karton", "Dem Karton"], ["ist", "sind", "bist"], ["im Keller.", "in Keller.", "im Kellern."]]],
+      ["Господин Йенсен живёт на втором этаже.", [["Herr Jensen", "Herrn Jensen", "Herr Jensens"], ["wohnt", "wohne", "wohnst"], ["im ersten Stock.", "im erste Stock.", "in ersten Stock."]]],
+      ["Мастерская — в Гаардене.", [["Die Werkstatt", "Der Werkstatt", "Das Werkstatt"], ["ist", "hat", "sind"], ["in Gaarden.", "im Gaarden.", "nach Gaarden."]]],
+    ]),
+  },
+  {
+    t: "reply",
+    task: "Хауке хочет ехать в мастерскую прямо сейчас. Остановите его.",
+    options: [
+      ok("Heute nicht, Hauke. Die Werkstatt ist heute zu."),
+      no("Heute nicht, Hauke. Die Werkstatt ist heute auf.", "Наоборот: zu — закрыто. Так сказал автоответчик."),
+      no("Heute nicht, Hauke. Die Werkstatt ist morgen zu.", "Автоответчик: сегодня закрыто, звонить — завтра."),
+    ],
+  },
+  {
+    t: "type",
+    rule: ["tagesablauf/vorfeld-1"],
+    task: "Запишите план на завтра: время — на первом месте.",
+    answers: ["Morgen fahren wir nach Gaarden.", "Morgen fahren wir mit dem Bus nach Gaarden.", "Morgen fahren wir zur Werkstatt."],
+    ru: "Завтра мы едем в Гаарден.",
+  },
+  narr("Перед уходом — записка Йенсену. Der Briefkasten im Erdgeschoss ждёт."),
+  {
+    t: "game",
+    rule: ["wohnen/wo-1"],
+    task: "Напишите записку Йенсену по образцу: запиской фрау Петерсен для клуба. Подписываются Хауке и Дана, поэтому — wir.",
+    hint: HINT_LETTER,
+    c: letter(
+      "Herr Jensen",
+      ["Liebe Leute,", "der Keller im Club ist jetzt offen.", "Die Kekse sind im Keller, auf dem Tisch.", "Viele Grüße", "Frau Petersen"],
+      [
+        an("Lieber", "Herr Jensen"),
+        ["Wo? → wir: um acht im Keller vom Club sein", "Wir sind um acht im Keller vom Club.", "wir sind um acht im Keller vom Club.", "Um acht sind wir im Keller vom Club.", "um acht sind wir im Keller vom Club."],
+        ["Karton → im Keller sein, leer", "Der Karton im Keller ist leer.", "der Karton im Keller ist leer.", "Der Karton ist leer.", "der Karton ist leer."],
+        ["Frage → wo: das Schild sein?", "Wo ist das Schild?", "wo ist das Schild?"],
+        gruss("Hauke und Dana"),
+      ],
+    ),
+  },
+  {
+    t: "game",
+    rule: ["wohnen/satz-1"],
+    task: "Соберите вывод Даны для блокнота.",
+    hint: "Подлежащее, глагол второй, место — одной позицией в конце.",
+    c: order(["Die", "Werkstatt", "ist", "in", "Gaarden."], ["Gaarden.", "ist", "Die", "in", "Werkstatt"]),
+  },
+  {
+    t: "clue",
+    title: "Die Fahrkarte",
+    text: "Im Flur: eine Fahrkarte, Sonntag, 17:45, Hafen — Gaarden. Die Werkstatt ist in Gaarden. Greta hat Farbe an den Händen. Mateo backt nur — kein Dieb.",
+  },
+];
+
+// Сцена 6 · эпилог и крючок: вечер в клубе, чайка на чужом стуле, речь как на экзамене и план
+// на Gaarden. Если слухи Фрауке так и не сверили, Нильс приходит обиженным, и команда извиняется.
+const evening: SceneNode[] = [
+  { t: "pic", src: "08-evening.jpg", alt: "Вечер в клубе, за окном гнутся мачты: чайка с кольцом сидит на стуле фрау Петерсен, как член клуба; Петерсен держит формуляр, Элиф смеётся, Хауке показывает на окно" },
+  narr("Abend im Club. Draußen — Wind, мачты стучат. А в клубе — {moewe}. Nicht auf dem Dach: auf dem Stuhl von Frau Petersen."),
+  petersen("Das ist mein Stuhl! Wo ist das Formular für Möwen?", "Это мой стул! Где формуляр для чаек?", ["der Stuhl"]),
+  elif("Sie hat Angst vor dem Sturm. Heute schläft sie im Club!", "Она боится шторма. Сегодня она ночует в клубе!"),
+  hauke("Den ganzen Tag keine Möwe – und jetzt im Club? Verdächtig!", "Целый день ни одной чайки — а теперь в клубе? Подозрительно!"),
+  { t: "gap", rule: ["wohnen/wo-1"], task: "Где сидит чайка?", text: "Die Möwe sitzt auf dem ___ von Frau Petersen.", options: ["Stuhl", "Tisch", "Schrank"], answer: "Stuhl", ru: "Чайка сидит на стуле фрау Петерсен." },
+  {
+    t: "hear",
+    task: "Почему чайка в клубе?",
+    voice: "Flo",
+    de: "Sie hat Angst vor dem Sturm. Heute schläft sie im Club!",
+    options: ["боится шторма", "ищет хлеб", "ждёт Йенсена"],
+    answer: "боится шторма",
+  },
+  {
+    t: "when",
+    if: [{ q: "rumours", min: 3 }],
+    then: [
+      narr("Nils kommt — без единого «!». Он пишет коротко: «Alle sagen: Nils hat das Schild. Nils ist bei der Polizei. Das stimmt nicht.»"),
+      narr("Хауке краснеет первым: «Entschuldigung, Nils.» Нильс кивает. Через минуту в его сообщениях снова «!!!»."),
+    ],
+    else: [narr("Nils kommt mit dem Handy: «Sturm!!! Bald!!! Alle Boote in den Hafen!!!» Нильс снова всё знает первым.")],
+  },
+  {
+    t: "game",
+    task: "Хауке устраивает репетицию экзамена. Тема дня — жильё.",
+    hint: HINT_ORAL,
+    c: oral([
+      oralSay(2, ASK, "Thema: Wohnung · Wort: Zimmer", "Wie viele Zimmer hat deine Wohnung?", "Сколько комнат в твоей квартире?", "Wie viele …?"),
+      oralReply(2, ANSWER, "Wo wohnst du?", "Ich wohne in Kiel, im ersten Stock.", "Я живу в Киле, на втором этаже."),
+      oralSay(3, REQUEST, "🪑", "Ist der Stuhl frei?", "Этот стул свободен?"),
+    ]),
+  },
+  petersen("Der Stuhl ist nicht frei. Die Möwe sitzt da!", "Стул не свободен. На нём сидит чайка!"),
+  {
+    t: "reply",
+    rule: ["wohnen/adjektiv-1"],
+    task: "Предложите чайке другой стул.",
+    options: [
+      ok("Möwe, hier ist ein Stuhl. Der Stuhl ist frei!"),
+      no("Möwe, hier ist ein Stuhl. Der Stuhl ist freie!", "После sein прилагательное без окончания: frei."),
+      no("Möwe, hier ist eine Stuhl. Der Stuhl ist frei!", "der Stuhl — мужской род: ein Stuhl."),
+    ],
+  },
+  {
+    t: "type",
+    task: "Запишите в блокнот главное за день: что с коробкой.",
+    answers: ["Der Karton ist leer.", "Der Karton im Keller ist leer.", "Der Karton von Herrn Jensen ist leer."],
+    ru: "Коробка пустая.",
+  },
+  { t: "game", task: "Слова дня перемешались. Откройте пары: немецкое слово и перевод.", c: memory(["lager", "karton", "umriss", "briefkasten", "fahrkarte", "sturm"]) },
+  mateo("Suppe für alle! Für die Möwe – nein.", "Суп для всех! Для чайки — нет."),
+  {
+    t: "pick",
+    task: "Что нового за день?",
+    options: [
+      ok("У Йенсена в подвале пустая коробка под табличку, а след ведёт в мастерскую в Gaarden"),
+      no("Табличку нашли", "Нашли только пустую коробку и контур."),
+      no("Йенсен всё рассказал", "Йенсен уехал с Гретой. Осталась записка из четырёх слов."),
+    ],
+  },
+  { t: "game", task: "Лото на ночь: послушайте слово и закройте его на карточке.", hint: HINT_HEAR, c: bingo(["der Keller", "der Flur", "das Treppenhaus", "die Wohnung", "der Stuhl", "der Schrank", "die Lampe", "der Balkon", "das Erdgeschoss"]) },
+  dana("Morgen fahren wir nach Gaarden. Ich zeige euch den Weg!", "Завтра едем в Гаарден. Я покажу вам дорогу!"),
+  {
+    t: "game",
+    rule: ["wohnen/check-2"],
+    task: "Соберите вопрос для мастерской на завтра.",
+    hint: "Вопрос «да или нет»: глагол первым, прилагательное без окончания.",
+    c: order(["Ist", "die", "Werkstatt", "morgen", "offen?"], ["offen?", "morgen", "Ist", "Werkstatt", "die"]),
+  },
+  {
+    t: "game",
+    task: "Разложите находки дня: в каком подвале что было?",
+    hint: "Вспомните оба подвала: клубный и подвал Йенсена.",
+    c: sort([["club", "im Keller vom Club"], ["jensen", "im Keller von Herrn Jensen"]], [
+      ["lager", "das Lager der Möwe", "club", "🪶"],
+      ["karton", "der Karton", "jensen", "📦"],
+      ["ball", "der Strandball", "club", "🏐"],
+      ["adresse", "die Adresse", "jensen", "🏷️"],
+    ]),
+  },
+  { t: "game", task: "Повторите за Даной слова на завтра вслух.", hint: HINT_SAY, c: speak(["die Adresse", "die Wohnung", "das Treppenhaus"]) },
+  { t: "game", task: "Хауке засыпает и бормочет комнаты. Послушайте и нажмите на картинку.", hint: HINT_PICTURE, c: scene([["die Küche", "🍳"], ["das Bad", "🛁"], ["das Schlafzimmer", "🛏️"], ["der Balkon", "🌇"], ["das Treppenhaus", "🪜"], ["die Waschmaschine", "🫧"]]) },
+  narr("Вы закрываете блокнот: «День восьмой. Karton leer. Fahrkarte: Sonntag, 17:45, Gaarden. Werkstatt: Farbenweg 7». Noch vier Tage."),
+  {
+    t: "clue",
+    title: "Gaarden",
+    text: "Morgen: mit dem Bus nach Gaarden, Farbenweg 7. Herr Jensen ist weg — mit Greta. Die Möwe schläft im Club, auf dem Stuhl von Frau Petersen. Ein Sturm kommt.",
+  },
+];
+
+const play = (nodes: SceneNode[]) => ({ kind: "play" as const, nodes });
+const HINT = "Ошибка ничего не стоит: собеседник отреагирует, и можно выбрать снова.";
+
+export const sceneChapter8: Episode = {
+  id: "moin-neu-8",
+  title: "Zwei Keller",
+  day: { de: "Noch fünf Tage", ru: "ещё пять дней до Kieler Woche" },
+  place: "Клуб и дом у гавани · два подвала",
+  topic: "Жильё",
+  grammar: "где? — im, in der, auf dem · этажи и порядковые числа · сложные слова · прилагательное после sein",
+  beats: [
+    {
+      id: "08-s1",
+      title: "Um acht",
+      story: [],
+      prompt: "Восемь утра: ни Йенсена, ни чаек, а ключ не подходит.",
+      hint: HINT,
+      success: "Фрау Петерсен открывает подвал клуба — впервые за двадцать лет.",
+      challenge: play(morning),
+    },
+    {
+      id: "08-s2",
+      title: "Das Lager",
+      story: [],
+      prompt: "Подвал клуба: тайник чайки и чужой ключ.",
+      hint: "Wo? — in/auf + дательный: im Schrank, auf dem Tisch, in der Kiste.",
+      success: "Это не тот подвал: ключ Йенсена — от дома у гавани.",
+      challenge: play(lager),
+    },
+    {
+      id: "08-i1",
+      title: "Глазами Фрауке",
+      pov: "глазами Фрауке",
+      story: [],
+      prompt: "Интерлюдия: утро у киоска, Грета с запиской и Йенсен в шарфе.",
+      hint: "im ersten Stock — по-русски это второй этаж.",
+      success: "Йенсен молча уехал с Гретой на автобусе. Фрауке уже придумала похищение.",
+      challenge: play(kiosk),
+    },
+    {
+      id: "08-s3",
+      title: "Im Treppenhaus",
+      story: [],
+      prompt: "Дом у гавани: почтовые ящики, хозяин дома и записка на двери подвала.",
+      hint: "Wir sind im Treppenhaus. — in + dem = im.",
+      success: "Йенсен ждал в своём подвале, а вы — в клубном. «Heute nicht. Leider. Moin.»",
+      challenge: play(stairs),
+    },
+    {
+      id: "08-s4",
+      title: "Leer",
+      story: [],
+      prompt: "Подвал Йенсена: коробка с контуром MOIN и адрес мастерской.",
+      hint: "Wir haben den Karton. — после haben винительный.",
+      success: "Коробка пустая. В ней — адрес мастерской в Gaarden, а мастерская сегодня закрыта.",
+      challenge: play(empty),
+    },
+    {
+      id: "08-s5",
+      title: "Die Fahrkarte",
+      story: [],
+      prompt: "Билет в коридоре, диагноз Даны и записка Йенсену.",
+      hint: "in einer Werkstatt — ein+er для женского рода.",
+      success: "Воскресенье, 17:45, гавань — Гаарден. След ведёт в мастерскую.",
+      challenge: play(ticket),
+    },
+    {
+      id: "08-s6",
+      title: "Noch fünf Tage",
+      story: [],
+      prompt: "Вечер в клубе: чайка на чужом стуле, речь как на экзамене и план на завтра.",
+      hint: "Ist die Werkstatt morgen offen? — глагол первым.",
+      success: "День восьмой закончен. Завтра — Gaarden. Noch vier Tage.",
+      challenge: play(evening),
+    },
+  ],
+};

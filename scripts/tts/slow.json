@@ -53,5 +53,10 @@
   "voice": "Sandy",
   "text": "Wer … ist … da?",
   "speed": 0.7
+ },
+ {
+  "voice": "Rocko",
+  "text": "Null, vier, drei, eins. Fünf, fünf, sechs, zwei. Neun, null. Ich rufe an!",
+  "speed": 0.7
  }
 ]

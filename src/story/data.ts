@@ -465,6 +465,48 @@ export const phrases: Record<string, Phrase> = {
     pl: "Keller",
     note: "Под клубом — паруса, вёсла и всё, что не помещается наверху. Im Keller — в подвале.",
   },
+  sturm: {
+    ru: "шторм",
+    de: "der Sturm",
+    pl: "Stürme",
+    note: "На Ostsee его первыми чуют чайки: улетают в город раньше, чем приходит ветер.",
+  },
+  lager: {
+    ru: "тайник, склад",
+    de: "das Lager",
+    pl: "Lager",
+    note: "Склад, запас. У чайки — в подвале клуба, у окошка с разбитым стеклом.",
+  },
+  schal: {
+    ru: "шарф",
+    de: "der Schal",
+    pl: "Schals",
+    note: "У Йенсена — тёмно-синий. В июне шарф носят, только когда что-то не так.",
+  },
+  briefkasten: {
+    ru: "почтовый ящик",
+    de: "der Briefkasten",
+    pl: "Briefkästen",
+    note: "der Brief + der Kasten. В подъезде — по ящику на квартиру, с фамилией и этажом.",
+  },
+  karton: {
+    ru: "коробка",
+    de: "der Karton",
+    pl: "Kartons",
+    note: "Из плотного картона. У Йенсена — плоская, точно по размеру таблички.",
+  },
+  umriss: {
+    ru: "контур",
+    de: "der Umriss",
+    pl: "Umrisse",
+    note: "um + reißen: «обвести вокруг». Вырезан в поролоне по форме вещи.",
+  },
+  fahrkarte: {
+    ru: "билет",
+    de: "die Fahrkarte",
+    pl: "Fahrkarten",
+    note: "fahren + die Karte. На автобусном билете — день, время и маршрут.",
+  },
   neu: {
     ru: "Вы новичок. Вы видите всё.",
     de: "Sie sind neu. Sie sehen alles.",

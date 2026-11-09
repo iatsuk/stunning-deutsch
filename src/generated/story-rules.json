@@ -3514,5 +3514,551 @@
     "audio": "audio/f14f82477492.m4a"
    }
   ]
+ },
+ "wohnen/adjektiv-1": {
+  "point": "После *sein* — без окончаний: *Der Balkon ist groß. Die Zimmer sind groß.*",
+  "read": "Посмотрите на русский перевод: «большой», «большая», «большое», «большие» — прилагательное согласуется с существительным. В немецком после *sein* оно не меняется вообще: *groß* для любого рода и числа. Меняется только глагол — *ist* или *sind*. Окончания у прилагательного появятся, когда оно встанет перед существительным, но это уже другая тема.",
+  "rows": [
+   {
+    "slots": [
+     [
+      {
+       "key": "der",
+       "text": "Der"
+      },
+      {
+       "key": "balkon",
+       "text": "Balkon"
+      }
+     ],
+     [
+      {
+       "key": "ist",
+       "text": "ist"
+      }
+     ],
+     [
+      {
+       "key": "groß",
+       "text": "groß"
+      }
+     ],
+     []
+    ],
+    "punct": ".",
+    "plain": "Der Balkon ist groß.",
+    "ru": "Балкон большой.",
+    "audio": "audio/38eac8118c86.m4a"
+   },
+   {
+    "slots": [
+     [
+      {
+       "key": "die",
+       "text": "Die"
+      },
+      {
+       "key": "küche",
+       "text": "Küche"
+      }
+     ],
+     [
+      {
+       "key": "ist",
+       "text": "ist"
+      }
+     ],
+     [
+      {
+       "key": "groß",
+       "text": "groß"
+      }
+     ],
+     []
+    ],
+    "punct": ".",
+    "plain": "Die Küche ist groß.",
+    "ru": "Кухня большая.",
+    "audio": "audio/c4068c80e007.m4a"
+   },
+   {
+    "slots": [
+     [
+      {
+       "key": "das",
+       "text": "Das"
+      },
+      {
+       "key": "fenster",
+       "text": "Fenster"
+      }
+     ],
+     [
+      {
+       "key": "ist",
+       "text": "ist"
+      }
+     ],
+     [
+      {
+       "key": "groß",
+       "text": "groß"
+      }
+     ],
+     []
+    ],
+    "punct": ".",
+    "plain": "Das Fenster ist groß.",
+    "ru": "Окно большое.",
+    "audio": "audio/ff0555cca4b6.m4a"
+   },
+   {
+    "slots": [
+     [
+      {
+       "key": "die",
+       "text": "Die"
+      },
+      {
+       "key": "zimmer",
+       "text": "Zimmer"
+      }
+     ],
+     [
+      {
+       "key": "sind",
+       "text": "sind"
+      }
+     ],
+     [
+      {
+       "key": "groß",
+       "text": "groß"
+      }
+     ],
+     []
+    ],
+    "punct": ".",
+    "plain": "Die Zimmer sind groß.",
+    "ru": "Комнаты большие.",
+    "audio": "audio/08b7f911b18c.m4a"
+   }
+  ]
+ },
+ "wohnen/check-1": {
+  "point": "*Das Bett steht im Schlafzimmer.* — комната всегда с *in*",
+  "read": "*Das Bett steht im Schlafzimmer.* *das Schlafzimmer* — средний род, как *das Zimmer*, поэтому *in dem*, а вместе — *im*. Глагол — *steht*: кровать, как и шкаф, «стоит». Две частые ошибки: *in das Schlafzimmer* — артикль не изменился, и *auf dem Schlafzimmer* — в комнате по-немецки всегда *in*. *auf* оставьте для поверхностей: *auf dem Tisch*, *auf dem Balkon*.",
+  "rows": [
+   {
+    "slots": [
+     [
+      {
+       "key": "das",
+       "text": "Das"
+      },
+      {
+       "key": "bett",
+       "text": "Bett"
+      }
+     ],
+     [
+      {
+       "key": "steht",
+       "text": "steht"
+      }
+     ],
+     [
+      {
+       "key": "im",
+       "text": "im"
+      },
+      {
+       "key": "schlafzimmer",
+       "text": "Schlafzimmer"
+      }
+     ],
+     []
+    ],
+    "punct": ".",
+    "plain": "Das Bett steht im Schlafzimmer.",
+    "ru": "Кровать стоит в спальне.",
+    "audio": "audio/75b486ed0fea.m4a"
+   }
+  ]
+ },
+ "wohnen/satz-2": {
+  "point": "*Im Keller steht die Waschmaschine.* — место первым, глагол второй",
+  "read": "Поставим *im Keller* в начало — так говорил господин Крюгер: *Im Schlafzimmer steht auch ein Kleiderschrank.* Группа переезжает целиком, глагол *steht* остаётся на второй позиции, а подлежащее уходит в середину. Так удобно описывать квартиру: сначала место, потом то, что там есть. Разделить группу нельзя: *im* и *Keller* всегда вместе.",
+  "rows": [
+   {
+    "slots": [
+     [
+      {
+       "key": "im",
+       "text": "Im"
+      },
+      {
+       "key": "keller",
+       "text": "Keller"
+      }
+     ],
+     [
+      {
+       "key": "steht",
+       "text": "steht"
+      }
+     ],
+     [
+      {
+       "key": "die",
+       "text": "die"
+      },
+      {
+       "key": "waschmaschine",
+       "text": "Waschmaschine"
+      }
+     ],
+     []
+    ],
+    "punct": ".",
+    "plain": "Im Keller steht die Waschmaschine.",
+    "ru": "В подвале стоит стиральная машина.",
+    "audio": "audio/3c748bee4cae.m4a"
+   }
+  ]
+ },
+ "wohnen/satz-1": {
+  "point": "Место — одна позиция: *Die Waschmaschine steht im Keller.*",
+  "read": "Ответ на вопрос «где?» — целая группа: *im Keller*, *in der Küche*, *auf dem Balkon*. В предложении она занимает одну позицию — как *in Kiel* в первой теме. Обычно группа стоит в середине, после глагола: *Die Waschmaschine steht im Keller.* Вещи в квартире, кстати, «стоят»: шкаф, кровать и машина *stehen*, а не просто *sind*.",
+  "rows": [
+   {
+    "slots": [
+     [
+      {
+       "key": "die",
+       "text": "Die"
+      },
+      {
+       "key": "waschmaschine",
+       "text": "Waschmaschine"
+      }
+     ],
+     [
+      {
+       "key": "steht",
+       "text": "steht"
+      }
+     ],
+     [
+      {
+       "key": "im",
+       "text": "im"
+      },
+      {
+       "key": "keller",
+       "text": "Keller"
+      }
+     ],
+     []
+    ],
+    "punct": ".",
+    "plain": "Die Waschmaschine steht im Keller.",
+    "ru": "Стиральная машина стоит в подвале.",
+    "audio": "audio/e5c5e3e63393.m4a"
+   }
+  ]
+ },
+ "wohnen/stock-3": {
+  "point": "До 19 — *-te*, с 20 — *-ste*; исключения: *erste*, *dritte*, *siebte*, *achte*",
+  "read": "Всё правило умещается в две строки. До 19 к числу добавляется *-te*: *vierte*, *neunzehnte*. С 20 окончание длиннее — *-ste*: *zwanzigste*, *einunddreißigste*. Исключений четыре: *erste*, *dritte*, *siebte* — у *sieben* выпадает *-en* — и *achte*: у *acht* уже есть своё *t*. После *im* у порядкового числа окончание *-en*. С этим правилом потом не придётся ничего доучивать: в дороге и в датах оно то же.",
+  "table": {
+   "title": "Erste, zweite, dritte …",
+   "ru": "Порядковые числа целиком",
+   "head": [
+    "Zahl",
+    "Ordinalzahl",
+    "im …",
+    "По-русски"
+   ],
+   "rows": [
+    [
+     "1.",
+     "der erst+e",
+     "im erst+en",
+     "первый"
+    ],
+    [
+     "2.",
+     "der zwei+te",
+     "im zwei+ten",
+     "второй"
+    ],
+    [
+     "3.",
+     "der dritt+e",
+     "im dritt+en",
+     "третий"
+    ],
+    [
+     "4.",
+     "der vier+te",
+     "im vier+ten",
+     "четвёртый"
+    ],
+    [
+     "7.",
+     "der sieb+te",
+     "im sieb+ten",
+     "седьмой"
+    ],
+    [
+     "8.",
+     "der acht+e",
+     "im acht+en",
+     "восьмой"
+    ],
+    [
+     "19.",
+     "der neunzehn+te",
+     "im neunzehn+ten",
+     "девятнадцатый"
+    ],
+    [
+     "20.",
+     "der zwanzig+ste",
+     "im zwanzig+sten",
+     "двадцатый"
+    ],
+    [
+     "31.",
+     "der einunddreißig+ste",
+     "im einunddreißig+sten",
+     "тридцать первый"
+    ]
+   ],
+   "ruCols": [
+    3
+   ],
+   "note": "До 19 — число + *-te*, с 20 — *-ste*. Исключений четыре: *erste*, *dritte*, *siebte*, *achte*. После *im* — *-en*. Точка после цифры — порядковое число: *7.* = *siebte*."
+  }
+ },
+ "wohnen/stock-1": {
+  "point": "*im ersten Stock* — наш второй этаж; *zwei* → *zweite*, но *erste*, *dritte*",
+  "read": "Немцы считают этажи над землёй: *das Erdgeschoss* — наш первый этаж, а *der erste Stock* — уже второй. Поэтому квартира *im zweiten Stock* — на нашем третьем этаже. *erste*, *zweite* — порядковые числа: к числу добавляется *-te*, *vier* → *vierte*. Исключения — *erste* и *dritte*. После *im* у числа окончание *-en*: *im ersten Stock*, как *im Keller*, только с числом посередине.",
+  "table": {
+   "title": "Der erste, zweite, dritte Stock",
+   "ru": "Этажи и порядковые числа",
+   "head": [
+    "Anzeige",
+    "Welcher Stock?",
+    "Wo?",
+    "По-русски"
+   ],
+   "rows": [
+    [
+     "EG",
+     "das Erdgeschoss",
+     "im Erdgeschoss",
+     "первый этаж"
+    ],
+    [
+     "1. OG",
+     "der erst+e Stock",
+     "im erst+en Stock",
+     "второй этаж"
+    ],
+    [
+     "2. OG",
+     "der zwei+te Stock",
+     "im zwei+ten Stock",
+     "третий этаж"
+    ],
+    [
+     "3. OG",
+     "der dritt+e Stock",
+     "im dritt+en Stock",
+     "четвёртый этаж"
+    ],
+    [
+     "4. OG",
+     "der vier+te Stock",
+     "im vier+ten Stock",
+     "пятый этаж"
+    ],
+    [
+     "5. OG",
+     "der fünf+te Stock",
+     "im fünf+ten Stock",
+     "шестой этаж"
+    ]
+   ],
+   "ruCols": [
+    3
+   ],
+   "note": "Порядковое число — число + *-te*: *zwei+te*, *vier+te*; исключения — *erste* и *dritte*. После *im* окончание *-en*: *im zweiten Stock*."
+  }
+ },
+ "wohnen/lesen2-1": {
+  "point": "*Zi.* — комната, *Whg.* — квартира, *Blk.* — балкон, *KM* / *NK* / *WM* — аренда",
+  "read": "Объявления экономят место: *2-Zi.-Whg., 55 m², Blk., KM 520 €*. Сокращения повторяются, поэтому таблица — справочник для действия. Найдите число комнат, наличие балкона и способ указания цены. Не нужно заучивать всё до чтения: в игре вы вернётесь к нужным сокращениям, чтобы выбрать подходящее объявление.",
+  "table": {
+   "title": "Abkürzungen in Wohnungsanzeigen",
+   "ru": "Сокращения в объявлениях",
+   "head": [
+    "Abkürzung",
+    "Bedeutung",
+    "По-русски"
+   ],
+   "rows": [
+    [
+     "Zi.",
+     "Zimmer",
+     "комната"
+    ],
+    [
+     "Whg.",
+     "Wohnung",
+     "квартира"
+    ],
+    [
+     "Kü. / EBK",
+     "Küche / Einbauküche",
+     "кухня / встроенная кухня с техникой"
+    ],
+    [
+     "Blk.",
+     "Balkon",
+     "балкон"
+    ],
+    [
+     "m² / qm",
+     "Quadratmeter",
+     "квадратный метр"
+    ],
+    [
+     "KM",
+     "Kaltmiete",
+     "аренда без коммунальных"
+    ],
+    [
+     "NK",
+     "Nebenkosten",
+     "коммунальные платежи"
+    ],
+    [
+     "WM",
+     "Warmmiete",
+     "аренда вместе с коммунальными"
+    ],
+    [
+     "EG / 1. OG",
+     "Erdgeschoss / 1. Obergeschoss",
+     "наш 1-й этаж / наш 2-й этаж"
+    ],
+    [
+     "ab sof.",
+     "ab sofort",
+     "сразу"
+    ],
+    [
+     "möbl.",
+     "möbliert",
+     "с мебелью"
+    ]
+   ],
+   "ruCols": [
+    2
+   ]
+  }
+ },
+ "wohnen/wo-3": {
+  "point": "*ein+em* — мужской и средний род, *ein+er* — женский: *in einer Wohnung*",
+  "read": "С неопределённым артиклем окончания те же: *-em* для мужского и среднего рода, *-er* для женского. *ein Haus* → *in einem Haus*, *eine Wohnung* → *in einer Wohnung*. Сравните пары: *d+em* — *ein+em*, *d+er* — *ein+er*. Запомните два окончания, *-em* и *-er*, — и дательный падеж в единственном числе у вас в руках.",
+  "table": {
+   "title": "in / auf + Dativ",
+   "ru": "Где? — дательный падеж",
+   "head": [
+    "Род",
+    "Wer? Was?",
+    "Wo?"
+   ],
+   "rows": [
+    [
+     "мужской",
+     "der Balkon",
+     "auf d+em Balkon"
+    ],
+    [
+     "средний",
+     "das Haus",
+     "in d+em Haus"
+    ],
+    [
+     "женский",
+     "die Küche",
+     "in d+er Küche"
+    ],
+    [
+     "мужской",
+     "ein Balkon",
+     "auf ein+em Balkon"
+    ],
+    [
+     "средний",
+     "ein Haus",
+     "in ein+em Haus"
+    ],
+    [
+     "женский",
+     "eine Küche",
+     "in ein+er Küche"
+    ]
+   ],
+   "ruCols": [
+    0
+   ],
+   "note": "Во множественном числе — *den*, а к слову добавляется *-n*: *in den Zimmern*."
+  },
+  "focus": [
+   3,
+   4,
+   5
+  ]
+ },
+ "wohnen/check-2": {
+  "point": "*Ist das Schlafzimmer ruhig?* — глагол первым, прилагательное без окончания",
+  "read": "*Ist das Schlafzimmer ruhig?* Это вопрос да/нет, поэтому глагол *ist* встаёт в начало, а первая позиция пустеет. Прилагательное *ruhig* остаётся без окончания и стоит в конце. Можно спросить и короче: *Ist es ruhig?* — *es* заменяет *das Schlafzimmer*, потому что слово среднего рода. А о кухне спросите *Ist sie groß?* — *die Küche* женского рода.",
+  "rows": [
+   {
+    "slots": [
+     [],
+     [
+      {
+       "key": "ist",
+       "text": "Ist"
+      }
+     ],
+     [
+      {
+       "key": "das",
+       "text": "das"
+      },
+      {
+       "key": "schlafzimmer",
+       "text": "Schlafzimmer"
+      },
+      {
+       "key": "ruhig",
+       "text": "ruhig"
+      }
+     ],
+     []
+    ],
+    "punct": "?",
+    "plain": "Ist das Schlafzimmer ruhig?",
+    "ru": "Спальня тихая?",
+    "audio": "audio/d6bc241945d5.m4a"
+   }
+  ]
  }
 }

@@ -1,0 +1,464 @@
+{
+  "date": "2026-11-09",
+  "scope": "Chapter 8 of the Moin scene prototype (src/story/scenes/08.ts): character lines, Jensen's four-word note, Frauke's interlude, the landlord and the answering machine, replays, lock, oral practice and new story phrases with plurals",
+  "model": "k2-fsa/OmniVoice",
+  "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+  "candidatesPerPhrase": 3,
+  "asr": "openai/whisper-large-v3",
+  "notes": [
+    "Whisper writes numbers as digits (\"20 Jahre\", the phone number as \"0 4 3 1 5 5 6 2 9 0\"); those takes were compared by hand and say the text as written.",
+    "Hauke dictates the workshop's phone number, so the line is in slow.json and was voiced at speed 0.7, like the other dictated numbers.",
+    "The chosen take has the closest transcript, an end level below -32 dB and no fragment flagged by tails.py; tails.py also passes on all 56 imported files."
+  ],
+  "files": [
+    {
+      "file": "f50b8fb8ca0c.m4a",
+      "text": "der Sturm, die Stürme",
+      "voice": "Anna",
+      "seed": 20966555,
+      "heard": "Der Sturm, die Stürme",
+      "endDb": -61.0
+    },
+    {
+      "file": "3df326b54157.m4a",
+      "text": "das Lager, die Lager",
+      "voice": "Anna",
+      "seed": 21037077,
+      "heard": "Das Lager. Die Lager.",
+      "endDb": -56.7
+    },
+    {
+      "file": "064b72c39a48.m4a",
+      "text": "der Schal, die Schals",
+      "voice": "Anna",
+      "seed": 21012358,
+      "heard": "Der Schal, die Schals.",
+      "endDb": -53.0
+    },
+    {
+      "file": "581b9152ddaf.m4a",
+      "text": "der Briefkasten, die Briefkästen",
+      "voice": "Anna",
+      "seed": 20749327,
+      "heard": "Der Briefkasten. Die Briefkästen.",
+      "endDb": -51.1
+    },
+    {
+      "file": "c56827bbe5a4.m4a",
+      "text": "der Karton, die Kartons",
+      "voice": "Anna",
+      "seed": 21157124,
+      "heard": "Der Karton, die Kartons",
+      "endDb": -52.9
+    },
+    {
+      "file": "a4ae2960c2ff.m4a",
+      "text": "der Umriss, die Umrisse",
+      "voice": "Anna",
+      "seed": 20748861,
+      "heard": "Der Umriss. Die Umrisse.",
+      "endDb": -54.6
+    },
+    {
+      "file": "1e09e23560ca.m4a",
+      "text": "Keine Möwe! Die Möwen sind in der Stadt. Ein Sturm kommt!",
+      "voice": "Flo",
+      "seed": 20956889,
+      "heard": "Keine Möwe. Die Möwen sind in der Stadt. Ein Sturm kommt.",
+      "endDb": -51.2
+    },
+    {
+      "file": "43022c3d8ec2.m4a",
+      "text": "Der Wecker ist kaputt! Er klingelt nicht!",
+      "voice": "Rocko",
+      "seed": 20504192,
+      "heard": "Der Wecker ist kaputt, er klingelt nicht.",
+      "endDb": -56.9
+    },
+    {
+      "file": "d002fbd9c44f.m4a",
+      "text": "Wo ist Herr Jensen? Im Keller! Kommt, wir gehen runter!",
+      "voice": "Rocko",
+      "seed": 21133726,
+      "heard": "Wo ist Herr Jensen? Im Keller. Kommt, wir gehen runter.",
+      "endDb": -57.5
+    },
+    {
+      "file": "1abdcfeaee53.m4a",
+      "text": "Der Schlüssel ist alt. Das Schloss ist neu. Das passt nicht!",
+      "voice": "Anna",
+      "seed": 20682291,
+      "heard": "Der Schlüssel ist alt. Das Schloss ist neu. Das passt nicht.",
+      "endDb": -45.4
+    },
+    {
+      "file": "3fda47501e89.m4a",
+      "text": "Zwanzig Jahre ist der Keller zu! Heute machen wir ihn auf. Das feiern wir!",
+      "voice": "Sandy",
+      "seed": 21130311,
+      "heard": "20 Jahre ist der Keller zu. Heute machen wir ihn auf. Das feiern wir!",
+      "endDb": -52.2
+    },
+    {
+      "file": "a345fcd423f7.m4a",
+      "text": "Aber zuerst das Formular. Ohne Formular kein Keller!",
+      "voice": "Sandy",
+      "seed": 21109045,
+      "heard": "Aber zuerst das Formular. Ohne Formular kein Keller.",
+      "endDb": -49.9
+    },
+    {
+      "file": "10366ea72ec6.m4a",
+      "text": "Herr Jensen? Hallo? … Niemand da.",
+      "voice": "Rocko",
+      "seed": 20997589,
+      "heard": "Herr Jensen? Hallo? Niemand da.",
+      "endDb": -65.3
+    },
+    {
+      "file": "91a97ab32d95.m4a",
+      "text": "Seht ihr? Die Möwe ist kein Dieb. Sie sammelt nur!",
+      "voice": "Flo",
+      "seed": 20340371,
+      "heard": "Seht ihr? Die Möwe ist kein Dieb, sie sammelt nur.",
+      "endDb": -45.9
+    },
+    {
+      "file": "4b6d96c99e42.m4a",
+      "text": "Und das Schild? Ist das Schild auch hier?",
+      "voice": "Rocko",
+      "seed": 20590976,
+      "heard": "Und das Schild ist das Schild auch hier.",
+      "endDb": -57.7
+    },
+    {
+      "file": "176f4a1e5d1c.m4a",
+      "text": "Nein! Das Schild ist zu groß und zu schwer. Eine Möwe wiegt ein Kilo!",
+      "voice": "Flo",
+      "seed": 20573628,
+      "heard": "Nein, das Schild ist zu groß und zu schwer. Eine Möwe wiegt ein Kilo.",
+      "endDb": -39.3
+    },
+    {
+      "file": "ee48ced746e4.m4a",
+      "text": "Dieser Schlüssel ist nicht vom Club! Das ist der Keller von Herrn Jensen – im Haus am Hafen.",
+      "voice": "Sandy",
+      "seed": 20539827,
+      "heard": "Dieser Schlüssel ist nicht vom Club, das ist der Keller von Herrn Jensen, im Haus am Hafen.",
+      "endDb": -47.7
+    },
+    {
+      "file": "2ae63b0cfdab.m4a",
+      "text": "Zwei Keller! «Im Keller» – aber in welchem?",
+      "voice": "Anna",
+      "seed": 20812811,
+      "heard": "Zwei Keller. Im Keller aber in welchem?",
+      "endDb": -41.9
+    },
+    {
+      "file": "b0984d364d92.m4a",
+      "text": "Herr Jensen? Im Haus am Hafen. Im ersten Stock!",
+      "voice": "Sandy",
+      "seed": 21183026,
+      "heard": "Herr Jensen im Haus am Hafen, im ersten Stock.",
+      "endDb": -51.6
+    },
+    {
+      "file": "0158a1ce9631.m4a",
+      "text": "Nein! Das Haus am Hafen! Erster Stock – nicht Erdgeschoss!",
+      "voice": "Sandy",
+      "seed": 20697327,
+      "heard": "Nein, das Haus am Hafen. Erster Stock, nicht Erdgeschoss.",
+      "endDb": -40.7
+    },
+    {
+      "file": "b339e4f16cd7.m4a",
+      "text": "Herr Jensen sagt nicht mal Moin! Und Greta nimmt ihn mit! Das ist eine Entführung!",
+      "voice": "Sandy",
+      "seed": 20804006,
+      "heard": "Herr Jensen sagt nicht mal Moin. Und Greta nimmt ihn mit. Das ist eine Entführung.",
+      "endDb": -43.8
+    },
+    {
+      "file": "b8cc0f64315c.m4a",
+      "text": "Herr Jensen wohnt im ersten Stock. Ich klingle!",
+      "voice": "Rocko",
+      "seed": 20332587,
+      "heard": "Herr Jensen wohnt im ersten Stock. Ich klingle.",
+      "endDb": -67.6
+    },
+    {
+      "file": "b9b5453c0728.m4a",
+      "text": "Moin! Sie suchen eine Wohnung? Die Wohnung im zweiten Stock ist frei!",
+      "voice": "Eddy",
+      "seed": 21042056,
+      "heard": "Moin, Sie suchen eine Wohnung? Die Wohnung im zweiten Stock ist frei.",
+      "endDb": -57.3
+    },
+    {
+      "file": "3cf6df351cbd.m4a",
+      "text": "Zwei Zimmer, Küche, Bad, Balkon! Ich tausche mein Zimmer im Wohnheim!",
+      "voice": "Flo",
+      "seed": 20682333,
+      "heard": "Zwei Zimmer, Küche, Bad, Balkon. Ich tausche mein Zimmer im Wohnheim.",
+      "endDb": -44.6
+    },
+    {
+      "file": "426c72558fcd.m4a",
+      "text": "650 Euro warm? … Nein, danke. Ich bleibe im Wohnheim.",
+      "voice": "Flo",
+      "seed": 20380124,
+      "heard": "650 Euro warm? Nein, danke. Ich bleibe im Wohnheim.",
+      "endDb": -40.7
+    },
+    {
+      "file": "310112711931.m4a",
+      "text": "Na ja … Greta und Herr Jensen – zusammen, mit dem Bus. Das ist alles.",
+      "voice": "Sandy",
+      "seed": 20391249,
+      "heard": "Na ja, Greta und Herr Jensen zusammen mit dem Bus. Das ist alles.",
+      "endDb": -45.0
+    },
+    {
+      "file": "c39fe625e223.m4a",
+      "text": "Heute nicht. Leider. Moin.",
+      "voice": "Rocko",
+      "seed": 20735649,
+      "heard": "Heute nicht. Leider moin.",
+      "endDb": -67.2
+    },
+    {
+      "file": "794024df5ea7.m4a",
+      "text": "Vier Wörter. Herr Jensen meint diesen Keller. Und wir – im Club!",
+      "voice": "Anna",
+      "seed": 20755318,
+      "heard": "Vier Wörter. Herr Jensen meint diesen Keller. Und wir im Club.",
+      "endDb": -55.4
+    },
+    {
+      "file": "e6cb669910aa.m4a",
+      "text": "Sie suchen eine Wohnung?",
+      "voice": "Eddy",
+      "seed": 20317898,
+      "heard": "Sie suchen eine Wohnung?",
+      "endDb": -67.6
+    },
+    {
+      "file": "0edda77e3755.m4a",
+      "text": "Herr Jensen? Der ist nicht da. Heute früh – weg, mit einer Frau.",
+      "voice": "Eddy",
+      "seed": 20889077,
+      "heard": "Herr Jensen, der ist nicht da. Heute früh weg mit einer Frau.",
+      "endDb": -59.3
+    },
+    {
+      "file": "224d9fbdadad.m4a",
+      "text": "Greta? Ja, vielleicht. Blaue Hände. Und Herr Jensen hat einen Schal!",
+      "voice": "Eddy",
+      "seed": 21095309,
+      "heard": "Greta? Ja, vielleicht. Blaue Hände. Und Herr Jensen hat einen Schal.",
+      "endDb": -59.6
+    },
+    {
+      "file": "cbe10571c9b4.m4a",
+      "text": "Das ist der Umriss vom Schild. Aber das Schild ist weg!",
+      "voice": "Anna",
+      "seed": 20700274,
+      "heard": "Das ist der Umriss vom Schild. Aber das Schild ist weg.",
+      "endDb": -47.9
+    },
+    {
+      "file": "fcd1de34ceab.m4a",
+      "text": "Der Karton ist neu. Und der Umriss ist genau. Das ist Profi-Arbeit.",
+      "voice": "Flo",
+      "seed": 20636090,
+      "heard": "Der Karton ist neu. Und der Umriss ist genau, das ist Profiarbeit.",
+      "endDb": -49.9
+    },
+    {
+      "file": "e4e4701690b7.m4a",
+      "text": "Der Karton ist leer! Noch fünf Tage – und kein Schild!",
+      "voice": "Rocko",
+      "seed": 20480309,
+      "heard": "Der Karton ist leer, noch fünf Tage und kein Schild.",
+      "endDb": -60.0
+    },
+    {
+      "file": "4ecafba8c453.m4a",
+      "text": "Null, vier, drei, eins. Fünf, fünf, sechs, zwei. Neun, null. Ich rufe an!",
+      "voice": "Rocko",
+      "seed": 20778705,
+      "heard": "0 4 3 1 5 5 6 2 9 0. Ich rufe an.",
+      "endDb": -65.4,
+      "speed": 0.7
+    },
+    {
+      "file": "7312726ed6f2.m4a",
+      "text": "Holzwerkstatt am Farbenweg. Heute ist die Werkstatt zu. Bitte rufen Sie morgen an.",
+      "voice": "Shelley",
+      "seed": 20733202,
+      "heard": "Holzwerkstatt am Farbenweg. Heute ist die Werkstatt zu. Bitte rufen Sie morgen an.",
+      "endDb": -53.4
+    },
+    {
+      "file": "6f817e9ad5ce.m4a",
+      "text": "Die Werkstatt ist zu. Und Herr Jensen ist weg. Das ist kein Zufall.",
+      "voice": "Anna",
+      "seed": 20801838,
+      "heard": "Die Werkstatt ist zu. Und Herr Jensen ist weg. Das ist kein Zufall.",
+      "endDb": -44.1
+    },
+    {
+      "file": "ff20f5cf5422.m4a",
+      "text": "Eine Fahrkarte! Sonntag, Viertel vor sechs, Hafen – Gaarden!",
+      "voice": "Anna",
+      "seed": 20310705,
+      "heard": "Eine Fahrkarte. Sonntag, Viertel vor sechs. Hafen Garden.",
+      "endDb": -40.2
+    },
+    {
+      "file": "43bc47cfe902.m4a",
+      "text": "Gaarden? Ich wohne in Gaarden! Der Farbenweg ist bei mir um die Ecke!",
+      "voice": "Anna",
+      "seed": 20989521,
+      "heard": "Garden? Ich wohne in Garden. Der Farbenweg ist bei mir um die Ecke.",
+      "endDb": -39.5
+    },
+    {
+      "file": "07a786dbe0fe.m4a",
+      "text": "Und Greta hat Farbe an den Händen. Dunkelblau.",
+      "voice": "Flo",
+      "seed": 20758733,
+      "heard": "Und Greta hat Farbe an den Händen, dunkelblau.",
+      "endDb": -46.8
+    },
+    {
+      "file": "556aa66cb8f3.m4a",
+      "text": "Meine Diagnose von gestern: Mateo backt einen Kuchen. Mateo ist kein Dieb.",
+      "voice": "Anna",
+      "seed": 20306370,
+      "heard": "Meine Diagnose von gestern, Matteo backt einen Kuchen. Matteo ist kein Dieb.",
+      "endDb": -52.5
+    },
+    {
+      "file": "f923a844476b.m4a",
+      "text": "Ich? Einen Kuchen? Nein! … Brötchen. Nur Brötchen. Für euch!",
+      "voice": "Reed",
+      "seed": 20479627,
+      "heard": "Ich? Einen Kuchen? Nein, Brötchen, nur Brötchen. Für euch!",
+      "endDb": -55.1
+    },
+    {
+      "file": "2817a798629b.m4a",
+      "text": "Greta hat das Schild! Aber warum? Und warum hilft Herr Jensen?",
+      "voice": "Rocko",
+      "seed": 20409578,
+      "heard": "Greta hat das Schild, aber warum? Und warum hilft Herr Jensen?",
+      "endDb": -69.6
+    },
+    {
+      "file": "5cb26f51fa6b.m4a",
+      "text": "Der Karton ist im Keller.",
+      "voice": "Anna",
+      "seed": 20854441,
+      "heard": "Der Karton ist im Keller.",
+      "endDb": -52.3
+    },
+    {
+      "file": "f0b1ffca9fc5.m4a",
+      "text": "Herr Jensen wohnt im ersten Stock.",
+      "voice": "Anna",
+      "seed": 20615828,
+      "heard": "Herr Jensen wohnt im ersten Stock.",
+      "endDb": -55.5
+    },
+    {
+      "file": "e17fc527b498.m4a",
+      "text": "Die Werkstatt ist in Gaarden.",
+      "voice": "Anna",
+      "seed": 21070904,
+      "heard": "Die Werkstatt ist in Garden.",
+      "endDb": -60.7
+    },
+    {
+      "file": "10405b7b8c37.m4a",
+      "text": "Das ist mein Stuhl! Wo ist das Formular für Möwen?",
+      "voice": "Sandy",
+      "seed": 21035863,
+      "heard": "Das ist mein Stuhl. Wo ist das Formular für Möwen?",
+      "endDb": -40.2
+    },
+    {
+      "file": "858ae0fbae1a.m4a",
+      "text": "Sie hat Angst vor dem Sturm. Heute schläft sie im Club!",
+      "voice": "Flo",
+      "seed": 20832570,
+      "heard": "Sie hat Angst vor dem Sturm. Heute schläft sie im Club.",
+      "endDb": -60.0
+    },
+    {
+      "file": "b449d7d172a3.m4a",
+      "text": "Den ganzen Tag keine Möwe – und jetzt im Club? Verdächtig!",
+      "voice": "Rocko",
+      "seed": 20716961,
+      "heard": "Den ganzen Tag keine Möwe und jetzt im Club? Verdächtig.",
+      "endDb": -59.1
+    },
+    {
+      "file": "dac9183df829.m4a",
+      "text": "Der Stuhl ist nicht frei. Die Möwe sitzt da!",
+      "voice": "Sandy",
+      "seed": 21272935,
+      "heard": "Der Stuhl ist nicht frei. Die Möwe sitzt da.",
+      "endDb": -46.1
+    },
+    {
+      "file": "2f8142d291de.m4a",
+      "text": "Suppe für alle! Für die Möwe – nein.",
+      "voice": "Reed",
+      "seed": 20659676,
+      "heard": "Suppe für alle, für die Möwe nein.",
+      "endDb": -50.3
+    },
+    {
+      "file": "e717d6c48d47.m4a",
+      "text": "Morgen fahren wir nach Gaarden. Ich zeige euch den Weg!",
+      "voice": "Anna",
+      "seed": 20738454,
+      "heard": "Morgen fahren wir nach Garden. Ich zeige euch den Weg.",
+      "endDb": -49.9
+    },
+    {
+      "file": "ed4882922753.m4a",
+      "text": "Wie viele Zimmer hat deine Wohnung?",
+      "voice": "Anna",
+      "seed": 20313570,
+      "heard": "Wie viele Zimmer hat deine Wohnung?",
+      "endDb": -59.0
+    },
+    {
+      "file": "cd42c93ffa75.m4a",
+      "text": "Ich wohne in Kiel, im ersten Stock.",
+      "voice": "Anna",
+      "seed": 21209941,
+      "heard": "Ich wohne in Kiel im ersten Stock.",
+      "endDb": -55.0
+    },
+    {
+      "file": "7ada41f4b6ee.m4a",
+      "text": "Wo wohnst du?",
+      "voice": "Reed",
+      "seed": 20284797,
+      "heard": "Wo wohnst du?",
+      "endDb": -67.0
+    },
+    {
+      "file": "3254d1d5ab3c.m4a",
+      "text": "Ist der Stuhl frei?",
+      "voice": "Anna",
+      "seed": 20351755,
+      "heard": "Ist der Stuhl frei?",
+      "endDb": -56.8
+    }
+  ]
+}
