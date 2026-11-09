@@ -411,7 +411,7 @@ function Word({ id, fresh }: { id: string; fresh: boolean }) {
       {open && (
         <span className="moin-word-info" role="status">
           {p.ru}
-          {p.pl && (
+          {p.pl && p.pl !== "-" && (
             <>
               {" "}· мн. ч. <span lang="de">die {p.pl}</span>
             </>

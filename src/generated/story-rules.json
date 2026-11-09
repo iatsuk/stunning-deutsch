@@ -2761,73 +2761,44 @@
    5
   ]
  },
- "einkaufen/check-1": {
-  "point": "*Was kostet die Hose?* — ед. ч.; *Was kosten die Schuhe?* — мн. ч.",
-  "read": "*Was kostet die Hose?* В русском «брюки» во множественном числе, а в немецком *die Hose* — одна вещь, поэтому и глагол в единственном: *kostet*. Для настоящего множественного — *kosten*: *Was kosten die Schuhe?* Перед окончанием *-t* у *kosten* появляется *e*: основа сама кончается на *t*, и без гласной форму было бы не выговорить.",
-  "rows": [
-   {
-    "slots": [
-     [
-      {
-       "key": "was",
-       "text": "Was"
-      }
-     ],
-     [
-      {
-       "key": "kost",
-       "text": "kost+et"
-      }
-     ],
-     [
-      {
-       "key": "die",
-       "text": "die"
-      },
-      {
-       "key": "hose",
-       "text": "Hose"
-      }
-     ],
-     []
+ "moin/kosten-1": {
+  "point": "*Was kostet die Jacke?* — одна вещь; *Was kosten die Äpfel?* — несколько",
+  "read": "Глагол согласуется с тем, что стоит: одна вещь — *kostet*, несколько — *kosten*. Проверяйте по немецкому слову, а не по русскому: «брюки» по-русски всегда во множественном, а *die Hose* — одна вещь, поэтому *Was kostet die Hose?* А *ein Liter* — тоже один: *Was kostet ein Liter?*",
+  "table": {
+   "title": "kostet oder kosten?",
+   "ru": "сколько стоит — сколько стоят",
+   "head": [
+    "Was?",
+    "Frage",
+    "По-русски"
+   ],
+   "rows": [
+    [
+     "der Liter",
+     "Was kost+et ein Liter?",
+     "Сколько стоит литр?"
     ],
-    "punct": "?",
-    "plain": "Was kostet die Hose?",
-    "ru": "Сколько стоят брюки?",
-    "audio": "audio/956af326cf9b.m4a"
-   },
-   {
-    "slots": [
-     [
-      {
-       "key": "was",
-       "text": "Was"
-      }
-     ],
-     [
-      {
-       "key": "kost",
-       "text": "kost+en"
-      }
-     ],
-     [
-      {
-       "key": "die",
-       "text": "die"
-      },
-      {
-       "key": "schuhe",
-       "text": "Schuhe"
-      }
-     ],
-     []
+    [
+     "die Jacke",
+     "Was kost+et die Jacke?",
+     "Сколько стоит куртка?"
     ],
-    "punct": "?",
-    "plain": "Was kosten die Schuhe?",
-    "ru": "Сколько стоят ботинки?",
-    "audio": "audio/fd1b94d3b8ff.m4a"
-   }
-  ]
+    [
+     "die Hose",
+     "Was kost+et die Hose?",
+     "Сколько стоят брюки?"
+    ],
+    [
+     "die Äpfel",
+     "Was kost+en die Äpfel?",
+     "Сколько стоят яблоки?"
+    ]
+   ],
+   "ruCols": [
+    2
+   ],
+   "note": "*die Hose* — одна вещь, хотя по-русски «брюки» во множественном: *Was kostet die Hose?*"
+  }
  },
  "einkaufen/welch-1": {
   "point": "*Welche Größe haben Sie?* — *welch-* вместе с существительным на первой позиции",

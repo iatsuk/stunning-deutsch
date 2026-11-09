@@ -21,7 +21,7 @@ type Position = { x: number; y: number; heading: number };
 export const STORY_KEY = "sd-moin-story-v1";
 /** Что звучит в записи выражения: существительное — с множественным, как в словаре уроков. */
 export const spoken = (p: { de: string; pl?: string }) =>
-  p.pl ? `${p.de}, die ${p.pl}` : p.de;
+  p.pl && p.pl !== "-" ? `${p.de}, die ${p.pl}` : p.de;
 
 export const phraseIds = (text: string): string[] =>
   [...text.matchAll(/\{([\w-]+)\}/g)].map((m) => m[1]);

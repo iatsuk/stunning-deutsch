@@ -972,7 +972,7 @@ function Look({
   );
 }
 
-/** Прежняя игра внутри сцены: своё состояние, проверка и «Дальше» после успеха. */
+/** Прежняя игра внутри сцены: своё состояние; «Дальше» проверяет ответ и при успехе ведёт дальше. */
 function Embedded({
   node,
   seed,
@@ -1009,7 +1009,11 @@ function Embedded({
       setChecked(false);
       setValue(v);
     },
-    win: () => setWon(true),
+    // Победа нажатием внутри игры сразу ведёт дальше: две кнопки подряд игроку не нужны.
+    win: (advance) => {
+      setWon(true);
+      if (advance) done(misses.current);
+    },
     miss: slip,
     quiet,
   };
@@ -1024,18 +1028,21 @@ function Embedded({
         </p>
       )}
       <ChallengeView c={c} game={game} beatId={seed} rich={rich} />
+      {/* Одна кнопка: проверяет ответ и при верном сразу ведёт дальше, при ошибке остаётся. */}
       {!won && !AUTOMATIC.includes(c.kind) && (
         <button
           type="button"
-          className="primary"
+          className="primary moin-play-next"
           onClick={() => {
             setChecked(true);
             setAttempts(attempts + 1);
-            if (isCorrect(c, value)) setWon(true);
-            else slip();
+            if (isCorrect(c, value)) {
+              setWon(true);
+              done(misses.current);
+            } else slip();
           }}
         >
-          Проверить
+          Дальше ▸
         </button>
       )}
       {checked && !won && (

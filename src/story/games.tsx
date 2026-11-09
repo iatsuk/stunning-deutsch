@@ -49,7 +49,11 @@ type Game<K extends Challenge["kind"]> = {
   disabled: boolean;
   checked: boolean;
   change: (value: Answer) => void;
-  win: () => void;
+  /**
+   * Игра пройдена. advance — победу принесло нажатие кнопки внутри игры (последний раунд,
+   * «Проверить письмо»), поэтому сцена идёт дальше сама, без второй кнопки «Дальше».
+   */
+  win: (advance?: boolean) => void;
   /** Сколько раз нажата общая кнопка проверки шага. */
   attempts?: number;
   /** Отвечать письменно там, где нужно говорить вслух. */
@@ -1292,7 +1296,7 @@ export function Odd({ c, value, seed, disabled, change, win }: Game<"odd">) {
         onDone={() => {
           const next = [...solved, round.odd];
           change(next);
-          if (next.length === c.rounds.length) win();
+          if (next.length === c.rounds.length) win(true);
         }}
       />
     </>
@@ -1400,7 +1404,7 @@ export function Letters({
         onDone={() => {
           const next = [...done, current];
           change(next);
-          if (next.length === c.words.length) win();
+          if (next.length === c.words.length) win(true);
         }}
       />
     </>
@@ -1537,7 +1541,7 @@ export function Speak({
           onDone={() => {
             const next = [...done, line];
             change(next);
-            if (next.length === c.lines.length) win();
+            if (next.length === c.lines.length) win(true);
           }}
         />
       ))}
@@ -1898,7 +1902,7 @@ export function Lock({
         onDone={() => {
           const next = [...solved, lockKey(round)];
           change(next);
-          if (next.length === c.rounds.length) win();
+          if (next.length === c.rounds.length) win(true);
         }}
       />
     </>
@@ -1924,7 +1928,7 @@ export function Letter({
   function check() {
     setChecked(true);
     setTries(tries + 1);
-    if (c.fields.every((f) => verdict(f) === "right")) return win();
+    if (c.fields.every((f) => verdict(f) === "right")) return win(true);
     miss();
   }
   return (
@@ -2143,7 +2147,7 @@ export function Oral({
         onDone={() => {
           const next = [...done, round.model];
           change(next);
-          if (next.length === c.rounds.length) win();
+          if (next.length === c.rounds.length) win(true);
         }}
       />
     </>

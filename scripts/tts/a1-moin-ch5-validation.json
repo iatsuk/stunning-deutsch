@@ -7,7 +7,8 @@
   "asr": "openai/whisper-large-v3",
   "notes": [
     "Whisper writes numbers as digits (5,50, 3,20, 19, 24); every such take was compared by hand and says the numbers in words as written.",
-    "Each phrase has three takes; the chosen take has the closest transcript, an end level below -32 dB and no fragment flagged by tails.py. tails.py also passes on all 65 imported files."
+    "Each phrase has three takes; the chosen take has the closest transcript, an end level below -32 dB and no fragment flagged by tails.py. tails.py also passes on all 65 imported files.",
+    "After the author's review on 9 November 2026 nine recordings were added with four takes each: the story phrases der Zucker (no plural), das Geschenk, die Stimme and der Buchstabe, and five rewritten lines. Frauke's market cry now ends on \"Zwiebeln\" because the old take clipped the last vowel of \"Euro\". All 36 takes were transcribed correctly except two of the market cry; the chosen ones match the text and end below -32 dB."
   ],
   "files": [
     {
@@ -529,6 +530,78 @@
       "seed": 21020305,
       "heard": "Wie finden Sie die Hose?",
       "endDb": -64.7
+    },
+    {
+      "file": "59d4cd6e4c7f.m4a",
+      "text": "der Zucker",
+      "voice": "Anna",
+      "seed": 20765582,
+      "heard": "Der Zucker",
+      "endDb": -75.2
+    },
+    {
+      "file": "e8dab9610c04.m4a",
+      "text": "das Geschenk, die Geschenke",
+      "voice": "Anna",
+      "seed": 20944369,
+      "heard": "Das Geschenk. Die Geschenke.",
+      "endDb": -56.1
+    },
+    {
+      "file": "55c40cbe9759.m4a",
+      "text": "die Stimme, die Stimmen",
+      "voice": "Anna",
+      "seed": 21052934,
+      "heard": "Die Stimme. Die Stimmen.",
+      "endDb": -59.4
+    },
+    {
+      "file": "abdfe9d140fa.m4a",
+      "text": "der Buchstabe, die Buchstaben",
+      "voice": "Anna",
+      "seed": 21146471,
+      "heard": "Der Buchstabe. Die Buchstaben.",
+      "endDb": -66.3
+    },
+    {
+      "file": "711373ae8e69.m4a",
+      "text": "Moin! Ein Kilo Äpfel – zwei Euro! Äpfel, Tomaten, Zwiebeln!",
+      "voice": "Sandy",
+      "seed": 20397897,
+      "heard": "Moin! Ein Kilo Äpfel, zwei Euro. Äpfel, Tomaten, Zwiebeln.",
+      "endDb": -43.3
+    },
+    {
+      "file": "a0b73ad0ac81.m4a",
+      "text": "Und einen Apfel bringt sie zurück! Sie sagt nichts. Sie schreibt: Zu klein!",
+      "voice": "Sandy",
+      "seed": 20490367,
+      "heard": "Und einen Apfel bringt sie zurück. Sie sagt nichts. Sie schreibt zu klein.",
+      "endDb": -48.5
+    },
+    {
+      "file": "bef5641d440a.m4a",
+      "text": "Und Nils! Nils hat eine Packung. Eine große Packung! Was ist in der Packung? Das Schild?",
+      "voice": "Sandy",
+      "seed": 21189303,
+      "heard": "Und Nils? Nils hat eine Packung, eine große Packung. Was ist in der Packung? Das Schild?",
+      "endDb": -41.8
+    },
+    {
+      "file": "9af4893ad4ed.m4a",
+      "text": "Wir rufen Frau Kruse an! Herr Jensen sagt Moin – und Frau Kruse sagt: Das ist er!",
+      "voice": "Anna",
+      "seed": 20316698,
+      "heard": "Wir rufen Frau Kruse an. Herr Jensen sagt Moin, und Frau Kruse sagt, das ist er.",
+      "endDb": -53.0
+    },
+    {
+      "file": "b7341141916b.m4a",
+      "text": "Frau Kruse, hier ist Dana. Ist das der Mann?",
+      "voice": "Anna",
+      "seed": 20976920,
+      "heard": "Frau Kruse, hier ist Dana. Ist das der Mann?",
+      "endDb": -43.5
     }
   ]
 }

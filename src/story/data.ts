@@ -363,8 +363,27 @@ export const phrases: Record<string, Phrase> = {
   },
   zucker: {
     ru: "сахар",
-    de: "Zucker",
-    note: "Без артикля, как Wasser или Brot: сахара сколько угодно. С артиклем — der Zucker.",
+    de: "der Zucker",
+    pl: "-",
+    note: "Сахар считают пачками и ложками: eine Packung Zucker, fünf Packungen Zucker.",
+  },
+  geschenk: {
+    ru: "подарок",
+    de: "das Geschenk",
+    pl: "Geschenke",
+    note: "От schenken — дарить. Матео готовит его команде к Kieler Woche.",
+  },
+  stimme: {
+    ru: "голос",
+    de: "die Stimme",
+    pl: "Stimmen",
+    note: "Голос в трубке: его узнают даже по одному слову.",
+  },
+  buchstabe: {
+    ru: "буква",
+    de: "der Buchstabe",
+    pl: "Buchstaben",
+    note: "Отсюда buchstabieren — называть по буквам. На табличке MOIN — четыре буквы.",
   },
   regal: {
     ru: "стеллаж, полка",
