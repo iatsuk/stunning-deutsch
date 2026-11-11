@@ -46,7 +46,7 @@ const message: SceneNode[] = [
   hauke("Neun Wörter! Und halb sechs – das ist sechs Uhr dreißig!", "Девять слов! А halb sechs — это шесть тридцать!", ["halb"]),
   {
     t: "reply",
-    task: "Поправьте Хауке.",
+    task: "Йенсен сказал: «Heute Tee um halb sechs». Поправьте Хауке.",
     options: [
       ok("Nein, halb sechs ist fünf Uhr dreißig."),
       no("Ja, halb sechs ist sechs Uhr dreißig.", "После halb называют следующий час: halb sechs — половина шестого, 5:30."),
