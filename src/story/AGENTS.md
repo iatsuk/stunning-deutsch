@@ -1,6 +1,6 @@
 # Игра «Дело о пропавшем Moin»
 
-Область: `src/story/` целиком — главы (`data.ts`, `extra.ts`, `chapters/`), прототип сцен `scenes/` и его движок (`scene.ts`, `SceneView.tsx`, `ScenePreview.tsx`, `world.ts`, `mnemonics.ts`), действия, память слов, правила; а также `scripts/story.test.mjs`, `scripts/scene.test.mjs`, `scripts/memory.test.mjs`, `scripts/story-oracle.mjs`, индекс покрытия `scripts/a1-index.mjs` с тестом `scripts/a1-index.test.mjs`, повторение новой версии `review.ts` и `ReviewView.tsx` с тестом `scripts/review.test.mjs`, картинки `art/refs/` и `public/story-img/`. Общие правила и сквозные случаи — в корневом `AGENTS.md`.
+Область: `src/story/` целиком — главы (`data.ts`, `extra.ts`, `chapters/`), прототип сцен `scenes/` и его движок (`scene.ts`, `SceneView.tsx`, `ScenePreview.tsx`, `world.ts`, `mnemonics.ts`), действия, память слов, правила; а также `scripts/story.test.mjs`, `scripts/scene.test.mjs`, `scripts/memory.test.mjs`, `scripts/story-oracle.mjs`, индекс покрытия `scripts/a1-index.mjs` с тестом `scripts/a1-index.test.mjs`, повторение новой версии `review.ts` и `ReviewView.tsx` с тестом `scripts/review.test.mjs`, прогресс сцен `progress.ts` с тестом `scripts/progress.test.mjs` и сборщиком `scripts/scene-layouts.mjs`, картинки `art/refs/` и `public/story-img/`. Общие правила и сквозные случаи — в корневом `AGENTS.md`.
 
 ## Что это
 
@@ -41,3 +41,5 @@
 ## Прогресс
 
 По просьбе автора от 3 ноября 2026 года новые шаги не должны отнимать пройденное: прогресс хранится по `id` шагов (раздел «Прогресс по шагам» в `A1-STORY.md`). Не переименовывайте `id` шага с прежним содержанием; новый шаг получает новый `id` и появляется пустой ячейкой. Старое сохранение переносится по `src/story/v1-order.ts`, этот список не меняйте. Проверки в браузере — по правилу «Общий браузер» в корневом `AGENTS.md`.
+
+В новой версии прохождение сцены хранится по отпечаткам узлов, а не по номерам (`src/story/progress.ts`, сохранение `sd-moin-neu-v1` с `v: 2`): узел, вставленный в сцену, не сдвигает ответы и приходит пустой ячейкой. Пройденная сцена остаётся пройденной (`passed`); новое в ней отмечено точкой под полоской сцен. Отпечаток — тип узла и его главный текст, поэтому правка текста реплики или задания делает узел новым: ответ на него придётся дать заново. Сохранение до 15 ноября 2026 года хранило номера; оно переносится по раскладкам прежних версий сцен `src/story/scene-layouts.json` (их собирает `scripts/scene-layouts.mjs`), это проверяет `scripts/progress.test.mjs` на слепке такого сохранения.

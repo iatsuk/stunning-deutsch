@@ -712,6 +712,21 @@
   background: transparent;
   box-shadow: inset 0 0 0 1.5px var(--accent);
 }
+/* Пройденная сцена, в которую позже добавили действие: под полоской точка, новое ждёт ответа. */
+.moin-steps button[data-new]::after {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  margin: 3px auto 0;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.moin-new-note {
+  color: var(--accent);
+  font-size: 14px;
+  margin: 0 0 12px;
+}
 .moin-steps button[aria-current="step"]::before {
   height: 10px;
   background: var(--accent);

@@ -7,6 +7,8 @@ import { ChallengeView } from "./ChallengeView";
 import { phrases } from "./data";
 import { mnemonic } from "./mnemonics";
 import { beatPhrases, initialAnswer, isCorrect } from "./logic";
+import { migrate, toIds, toKeys, type Layout } from "./progress";
+import pastLayouts from "./scene-layouts.json";
 import { dayNumber, grade, remember, type Cards } from "./memory";
 import { buildReview, dueUnits, MIN_DUE, reviewSources, SCENE_INTERVALS, sceneUnits, WELCOME_ROUNDS, type Mech } from "./review";
 import { SceneReview, type ReviewReason } from "./ReviewView";
@@ -38,13 +40,17 @@ const firstOf = (chapter: number) =>
 const chapterOf = (at: number) =>
   chapters.findIndex((_, i) => at < firstOf(i + 1));
 /**
- * cards — очередь повторения (A1-PLAN.md, «Повторение»), last — когда был последний раунд,
- * chapters — главы, перед которыми повторение уже прошло, recent — механики прошлого раунда.
- * Старое сохранение без этих полей получает их пустыми.
+ * drafts — ответы сцен по номерам узлов текущей раскладки; в хранилище они лежат по отпечаткам узлов
+ * (src/story/progress.ts), чтобы новый узел не сдвигал пройденное. passed — пройденные сцены: новое
+ * действие в такой сцене приходит пустой ячейкой и не снимает с неё отметку. cards — очередь
+ * повторения (A1-PLAN.md, «Повторение»), last — когда был последний раунд, chapters — главы, перед
+ * которыми повторение уже прошло, recent — механики прошлого раунда. Старое сохранение без этих полей
+ * получает их пустыми.
  */
 type Save = {
   at: number;
   drafts: Record<string, string[]>;
+  passed: string[];
   cards: Cards;
   last: Mark;
   chapters: string[];
@@ -54,17 +60,40 @@ type Save = {
 // Повторение: реплики и замки всех сцен, слова с переводом для игр.
 const sources = reviewSources(scenes);
 const gameWords = allWords();
-const solvedIn = (drafts: Save["drafts"], i: number) =>
-  isCorrect(scenes[i].challenge, drafts[scenes[i].id]);
-const solvedCount = (drafts: Save["drafts"]) =>
-  scenes.filter((_, i) => solvedIn(drafts, i)).length;
+const beatNodes = (beat: (typeof scenes)[number]): SceneNode[] =>
+  beat.challenge.kind === "play" ? beat.challenge.nodes : [];
+const complete = (save: Pick<Save, "drafts">, i: number) =>
+  isCorrect(scenes[i].challenge, save.drafts[scenes[i].id]);
+const solvedIn = (save: Pick<Save, "drafts" | "passed">, i: number) =>
+  save.passed.includes(scenes[i].id) || complete(save, i);
+const solvedCount = (save: Pick<Save, "drafts" | "passed">) =>
+  scenes.filter((_, i) => solvedIn(save, i)).length;
+const LEGACY = pastLayouts as unknown as Record<string, Layout[]>;
+
+/** Ответы из хранилища в номера текущей раскладки. Сохранение до отпечатков переносится по версиям сцен. */
+function readDrafts(raw: { v?: number; drafts: Record<string, string[]> }) {
+  const drafts: Record<string, string[]> = {};
+  const passed: string[] = [];
+  for (const beat of scenes) {
+    const entries = raw.drafts[beat.id];
+    if (!Array.isArray(entries)) continue;
+    if (raw.v === 2) {
+      drafts[beat.id] = toKeys(beatNodes(beat), entries);
+      continue;
+    }
+    const moved = migrate(beatNodes(beat), entries, LEGACY[beat.id] ?? []);
+    drafts[beat.id] = moved.entries;
+    if (moved.passed) passed.push(beat.id);
+  }
+  return { drafts, passed };
+}
 
 /** Пройденные сцены кладут свои слова, реплики и замки в очередь; уже лежащие не трогаем. */
 function remembered(save: Save, day: number): Save {
   let cards = save.cards;
   let step = 0;
   scenes.forEach((beat, i) => {
-    if (!solvedIn(save.drafts, i)) return;
+    if (!solvedIn(save, i)) return;
     step++;
     cards = remember(cards, sceneUnits(beat, wordInfo), step, day);
   });
@@ -72,7 +101,7 @@ function remembered(save: Save, day: number): Save {
 }
 
 function load(): Save {
-  const empty: Save = { at: 0, drafts: {}, cards: {}, last: { step: 0, day: 0 }, chapters: [], recent: [] };
+  const empty: Save = { at: 0, drafts: {}, passed: [], cards: {}, last: { step: 0, day: 0 }, chapters: [], recent: [] };
   try {
     const raw = JSON.parse(localStorage.getItem(KEY) ?? "null");
     if (
@@ -80,11 +109,13 @@ function load(): Save {
       Number.isInteger(raw.at) &&
       raw.drafts &&
       typeof raw.drafts === "object"
-    )
+    ) {
+      const { drafts, passed } = readDrafts(raw);
       return remembered(
         {
           at: Math.min(Math.max(0, raw.at), scenes.length - 1),
-          drafts: raw.drafts,
+          drafts,
+          passed: [...new Set([...(Array.isArray(raw.passed) ? raw.passed : []), ...passed])],
           cards: raw.cards && typeof raw.cards === "object" ? raw.cards : {},
           last: Number.isInteger(raw.last?.step) && Number.isInteger(raw.last?.day) ? raw.last : empty.last,
           chapters: Array.isArray(raw.chapters) ? raw.chapters : [],
@@ -92,6 +123,7 @@ function load(): Save {
         },
         dayNumber(),
       );
+    }
   } catch {
     // Повреждённое или недоступное сохранение: начинаем сначала.
   }
@@ -112,14 +144,19 @@ export function ScenePreview() {
   const beat = scenes[save.at];
   const value: Answer =
     save.drafts[beat.id] ?? (initialAnswer(beat.challenge) as string[]);
-  const solved = (i: number) =>
-    isCorrect(scenes[i].challenge, save.drafts[scenes[i].id]);
+  const solved = (i: number) => solvedIn(save, i);
   // Немецкая единица в рассказе знакома, если звучала в прошлых сценах; слово — если сцены
   // его уже показали: среди новых слов реплик, при осмотре или в инвентаре.
   const known = new Set(scenes.slice(0, save.at).flatMap(beatPhrases));
   useEffect(() => {
     try {
-      localStorage.setItem(KEY, JSON.stringify(save));
+      const drafts = Object.fromEntries(
+        Object.entries(save.drafts).map(([id, entries]) => {
+          const beat = scenes.find((b) => b.id === id);
+          return [id, beat ? toIds(beatNodes(beat), entries) : entries];
+        }),
+      );
+      localStorage.setItem(KEY, JSON.stringify({ ...save, v: 2, drafts }));
     } catch {
       // Без хранилища прототип работает до перезагрузки.
     }
@@ -177,7 +214,7 @@ export function ScenePreview() {
   // Повторение: перед главой — прошлая глава; за новый день — разминка; перед новой сценой —
   // если накопилось. Только перед нетронутой сценой: начатую сцену раунд не прерывает.
   const today = dayNumber();
-  const count = solvedCount(save.drafts);
+  const count = solvedCount(save);
   const fresh = !solved(save.at) && !(save.drafts[beat.id]?.length);
   const frontier = scenes.findIndex((_, i) => !solved(i));
   const due = dueUnits(save.cards, count, today).length;
@@ -213,7 +250,7 @@ export function ScenePreview() {
     setReviewing(null);
     setSave((s) => ({
       ...s,
-      last: { step: solvedCount(s.drafts), day: dayNumber() },
+      last: { step: solvedCount(s), day: dayNumber() },
       chapters: was === "chapter" && !s.chapters.includes(chapter.id) ? [...s.chapters, chapter.id] : s.chapters,
     }));
   }
@@ -221,7 +258,7 @@ export function ScenePreview() {
     setReviewing(reason);
     setSave((s) => ({
       ...s,
-      cards: grade(s.cards, units, missed, solvedCount(s.drafts), dayNumber(), SCENE_INTERVALS),
+      cards: grade(s.cards, units, missed, solvedCount(s), dayNumber(), SCENE_INTERVALS),
       recent: mechs,
     }));
   }
@@ -319,6 +356,8 @@ export function ScenePreview() {
                       aria-label={`Сцена ${k + 1}: ${s.title}`}
                       aria-current={i === save.at ? "step" : undefined}
                       data-done={solved(i) || undefined}
+                      data-new={(save.passed.includes(s.id) && !complete(save, i)) || undefined}
+                      title={save.passed.includes(s.id) && !complete(save, i) ? "В пройденной сцене появилось новое" : undefined}
                       disabled={k > 0 && !solved(i - 1) && i !== save.at}
                       onClick={() => go(i)}
                     />
@@ -328,6 +367,11 @@ export function ScenePreview() {
             </ol>
             <h2>{beat.title}</h2>
             {beat.pov && <p className="moin-pov">Тем временем · {beat.pov}</p>}
+            {save.passed.includes(beat.id) && !complete(save, save.at) && (
+              <p className="moin-new-note" role="status">
+                В пройденную сцену добавлено новое. Пройденное сохранено, новое ждёт ниже.
+              </p>
+            )}
             <p className="moin-preview-lede">{beat.prompt}</p>
             <label className="moin-play-voice moin-preview-quiet">
               <input
@@ -375,7 +419,11 @@ export function ScenePreview() {
                   checked: false,
                   change: (v) =>
                     setSave((s) =>
-                      remembered({ ...s, drafts: { ...s.drafts, [beat.id]: v as string[] } }, dayNumber()),
+                    {
+                      const drafts = { ...s.drafts, [beat.id]: v as string[] };
+                      const done = isCorrect(beat.challenge, v) && !s.passed.includes(beat.id);
+                      return remembered({ ...s, drafts, passed: done ? [...s.passed, beat.id] : s.passed }, dayNumber());
+                    },
                     ),
                   win: () => undefined,
                   miss: () => undefined,
@@ -417,6 +465,7 @@ export function ScenePreview() {
                         ([id]) => !chapter.beats.some((b) => b.id === id),
                       ),
                     ),
+                    passed: s.passed.filter((id) => !chapter.beats.some((b) => b.id === id)),
                   }));
                 }}
               >
