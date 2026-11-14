@@ -1,0 +1,399 @@
+{
+  "date": "2026-11-14",
+  "scope": "Chapter 12 of the Moin scene prototype (src/story/scenes/12.ts): character lines, the bus announcement, Opa Hansen and Herr Jensen's closing speech, replays, lock, oral practice and new story phrases with plurals",
+  "model": "k2-fsa/OmniVoice",
+  "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+  "candidatesPerPhrase": 3,
+  "asr": "openai/whisper-large-v3",
+  "notes": [
+    "Each phrase has three takes; the chosen take has the closest transcript, an end level below -32 dB and no fragment flagged by tails.py. Three takes flagged by tails.py as cut off at the end were not used; tails.py passes on all 48 imported files.",
+    "Whisper writes numbers as digits (zwölf Grad, zehn Minuten, acht Uhr zwanzig, fünfzig Jahre, hundert); these takes say the numbers in words as written.",
+    "Herr Jensen speaks a full sentence for the first time in the game; the chosen take was checked by its transcript and end level, not by ear."
+  ],
+  "files": [
+    {
+      "file": "be9accbc9fc3.m4a",
+      "text": "der Trockenraum, die Trockenräume",
+      "voice": "Anna",
+      "seed": 20415779,
+      "heard": "Der Trockenraum, die Trockenräume",
+      "endDb": -62.5
+    },
+    {
+      "file": "7652013c4a95.m4a",
+      "text": "der Föhn, die Föhne",
+      "voice": "Anna",
+      "seed": 20401171,
+      "heard": "Der Föhn, die Föhne",
+      "endDb": -57.4
+    },
+    {
+      "file": "05e017cc2ceb.m4a",
+      "text": "das Barometer, die Barometer",
+      "voice": "Anna",
+      "seed": 20346857,
+      "heard": "Das Barometer, die Barometer",
+      "endDb": -42.2
+    },
+    {
+      "file": "244c38a90d21.m4a",
+      "text": "der Start, die Starts",
+      "voice": "Anna",
+      "seed": 20978497,
+      "heard": "Der Staat. Die Staats.",
+      "endDb": -54.1
+    },
+    {
+      "file": "c2141aced004.m4a",
+      "text": "Es regnet, es regnet! Und das Schild ist noch nicht trocken!",
+      "voice": "Rocko",
+      "seed": 21172610,
+      "heard": "Es regnet, es regnet und das Schild ist noch nicht trocken.",
+      "endDb": -59.3
+    },
+    {
+      "file": "d263e3d91e7f.m4a",
+      "text": "Der Wetterbericht hat recht: Regen, Wind – und nur zwölf Grad!",
+      "voice": "Anna",
+      "seed": 20521358,
+      "heard": "Der Wetterbericht hat recht. Regen, Wind und nur 12 Grad.",
+      "endDb": -48.5
+    },
+    {
+      "file": "c36339299d85.m4a",
+      "text": "Das Schild ist nass? Es braucht ein Hotel! Ein Zimmer, warm und trocken!",
+      "voice": "Reed",
+      "seed": 20484099,
+      "heard": "Das Schild ist nass, es braucht ein Hotel. Ein Zimmer, warm und trocken.",
+      "endDb": -53.5
+    },
+    {
+      "file": "db03e89a941a.m4a",
+      "text": "Greta schreibt: Hotel am Hafen, neben dem Club! Der Trockenraum ist warm und trocken!",
+      "voice": "Flo",
+      "seed": 21090426,
+      "heard": "Greta schreibt, Hotel am Hafen neben dem Club. Der Trockenraum ist warm und trocken.",
+      "endDb": -45.8
+    },
+    {
+      "file": "be386edb6ba9.m4a",
+      "text": "Ein Trockenraum! Super! Wir fahren mit dem Bus – mit dem Schild!",
+      "voice": "Rocko",
+      "seed": 20588664,
+      "heard": "Ein Trockenraum. Super. Wir fahren mit dem Bus mit dem Schild.",
+      "endDb": -60.8
+    },
+    {
+      "file": "df149c3f7c29.m4a",
+      "text": "Meine Winterjacke? Im Juni? Danke, Nils! Heute – perfekt!",
+      "voice": "Rocko",
+      "seed": 21007241,
+      "heard": "Meine Winterjacke im Juni? Danke Nils, heute perfekt.",
+      "endDb": -56.6
+    },
+    {
+      "file": "d5ce95f93be7.m4a",
+      "text": "Der Karton passt! Herr Jensen hat alles geplant!",
+      "voice": "Flo",
+      "seed": 20379271,
+      "heard": "Der Karton passt. Herr Jensen hat alles geplant.",
+      "endDb": -57.7
+    },
+    {
+      "file": "e05c30828b3d.m4a",
+      "text": "Achtung: Der Bus hat zehn Minuten Verspätung. Er kommt um acht Uhr zwanzig.",
+      "voice": "Shelley",
+      "seed": 20751611,
+      "heard": "Achtung, der Bus hat 10 Minuten Verspätung. Er kommt um 8.20 Uhr.",
+      "endDb": -52.9
+    },
+    {
+      "file": "bc23d7d9d682.m4a",
+      "text": "Und die Möwe? Die Möwe ist weg! Wo ist sie?",
+      "voice": "Flo",
+      "seed": 20515938,
+      "heard": "Und die Möwe? Die Möwe ist weg. Wo ist sie?",
+      "endDb": -42.2
+    },
+    {
+      "file": "7bf81339da74.m4a",
+      "text": "Drei Straßen? Links, rechts … Ich brauche ein Programm!",
+      "voice": "Rocko",
+      "seed": 20941298,
+      "heard": "Drei Straßen, links, rechts, ich brauche ein Programm.",
+      "endDb": -62.9
+    },
+    {
+      "file": "28d86f8cb1ad.m4a",
+      "text": "Wir sind angekommen! Und der Karton ist trocken!",
+      "voice": "Rocko",
+      "seed": 20807420,
+      "heard": "Wir sind angekommen und der Karton ist trocken.",
+      "endDb": -59.6
+    },
+    {
+      "file": "332905247038.m4a",
+      "text": "Gut gemacht, Hauke! Und keine Pfütze!",
+      "voice": "Anna",
+      "seed": 21210840,
+      "heard": "Gut gemacht Hauke und keine Pfütze.",
+      "endDb": -47.7
+    },
+    {
+      "file": "cdae80dd1fff.m4a",
+      "text": "Moin! Ich bin mit dem Zug aus Hamburg gekommen. Der Zug hatte Verspätung – zwanzig Minuten!",
+      "voice": "Eddy",
+      "seed": 21247822,
+      "heard": "Moin, ich bin mit dem Zug aus Hamburg gekommen. Der Zug hatte Verspätung 20 Minuten.",
+      "endDb": -52.5
+    },
+    {
+      "file": "53e215ac3b0c.m4a",
+      "text": "Ich habe es gehört: Opa Hansen kommt! Und ich habe ein Zimmer reserviert – hier!",
+      "voice": "Sandy",
+      "seed": 20600010,
+      "heard": "Ich habe es gehört, Opa Hansen kommt und ich habe ein Zimmer reserviert hier.",
+      "endDb": -61.9
+    },
+    {
+      "file": "69fcc85323dd.m4a",
+      "text": "Der Trockenraum? Für ein Schild? Na gut. Aber nur bis halb elf!",
+      "voice": "Shelley",
+      "seed": 20843803,
+      "heard": "Der Trockenraum? Für ein Schild? Na gut, aber nur bis halb elf.",
+      "endDb": -53.1
+    },
+    {
+      "file": "9e9ab4fc245e.m4a",
+      "text": "Wo ist denn der Club? Ich möchte das Schild sehen! Mein Schild!",
+      "voice": "Eddy",
+      "seed": 20844397,
+      "heard": "Wo ist denn der Club? Ich möchte das Schild sehen. Mein Schild.",
+      "endDb": -53.9
+    },
+    {
+      "file": "19f31818d2ea.m4a",
+      "text": "Mit dem Zug! Zwei Stunden. Und dann bin ich zu Fuß gegangen – im Regen!",
+      "voice": "Eddy",
+      "seed": 20304232,
+      "heard": "Mit dem Zug zwei Stunden und dann bin ich zu Fuß gegangen, im Regen.",
+      "endDb": -54.2
+    },
+    {
+      "file": "c91a035111e3.m4a",
+      "text": "Also: Hansen, ein Einzelzimmer, zwei Nächte. Anreise heute, Abreise am Montag.",
+      "voice": "Shelley",
+      "seed": 21254177,
+      "heard": "Also, Hansen, ein Einzelzimmer, zwei Nächte, Anreise heute, Abreise am Montag.",
+      "endDb": -51.9
+    },
+    {
+      "file": "12d7718eafea.m4a",
+      "text": "Gut gemacht! Opa sieht nichts – und das Schild trocknet.",
+      "voice": "Anna",
+      "seed": 20722024,
+      "heard": "Gut gemacht. Opa sieht nichts und das Schild trocknet.",
+      "endDb": -53.6
+    },
+    {
+      "file": "2900fc0ff064.m4a",
+      "text": "Sturm! Regen! Das ist kein Sommer, das ist Herbst! Die Party ist im Herbst!",
+      "voice": "Sandy",
+      "seed": 20910771,
+      "heard": "Sturm, Regen, das ist kein Sommer, das ist Herbst, die Party ist im Herbst.",
+      "endDb": -53.4
+    },
+    {
+      "file": "b9a8d2a72429.m4a",
+      "text": "Ein Barometer ist kein Wetterbericht! Und es ist kaputt!",
+      "voice": "Flo",
+      "seed": 21074441,
+      "heard": "Ein Barometer ist kein Wetterbericht. Und es ist kaputt.",
+      "endDb": -56.2
+    },
+    {
+      "file": "cbdc90749c1f.m4a",
+      "text": "Im Herbst? Und mein Kuchen? Er ist für heute!",
+      "voice": "Reed",
+      "seed": 21065919,
+      "heard": "Im Herbst und mein Kuchen, er ist für heute.",
+      "endDb": -53.8
+    },
+    {
+      "file": "4386b3c15bf2.m4a",
+      "text": "Herbst? Kein Problem – ich habe meine Winterjacke!",
+      "voice": "Rocko",
+      "seed": 20741249,
+      "heard": "Herbst? Kein Problem, ich habe meine Winterjacke.",
+      "endDb": -61.9
+    },
+    {
+      "file": "ff0c156b7441.m4a",
+      "text": "Der Start ist heute um elf. Wie immer. Auch bei Regen.",
+      "voice": "Shelley",
+      "seed": 20315105,
+      "heard": "Der Start ist heute um elf, wie immer. Auch bei Regen.",
+      "endDb": -36.5
+    },
+    {
+      "file": "804191db2b0f.m4a",
+      "text": "Diagnose: falscher Alarm. Aber wir haben nur noch eine Stunde!",
+      "voice": "Anna",
+      "seed": 20558238,
+      "heard": "Diagnose falscher Alarm. Aber wir haben nur noch eine Stunde.",
+      "endDb": -50.0
+    },
+    {
+      "file": "e03bfb18eb3c.m4a",
+      "text": "Wo ist das Schild?",
+      "voice": "Sandy",
+      "seed": 20675531,
+      "heard": "Wo ist das Schild?",
+      "endDb": -48.9
+    },
+    {
+      "file": "38713666a416.m4a",
+      "text": "Hier! Hier ist es!",
+      "voice": "Rocko",
+      "seed": 20425189,
+      "heard": "Hier, hier ist es.",
+      "endDb": -59.8
+    },
+    {
+      "file": "10189a41ec94.m4a",
+      "text": "Die Sonne! Sogar die Sonne kommt zum Start!",
+      "voice": "Flo",
+      "seed": 20548050,
+      "heard": "Die Sonne. Sogar die Sonne kommt zum Start.",
+      "endDb": -55.4
+    },
+    {
+      "file": "b3a9bf1cd712.m4a",
+      "text": "Mein Schild. Fünfzig Jahre … und es ist wie neu. Greta, das hast du gemacht?",
+      "voice": "Eddy",
+      "seed": 20444274,
+      "heard": "Mein Schild. 50 Jahre und es ist wie neu. Greta, das hast du gemacht?",
+      "endDb": -54.0
+    },
+    {
+      "file": "6f7d7b98c543.m4a",
+      "text": "Vor fünfzig Jahren habe ich die Farbe gehalten. Heute ist das Schild wieder da. Danke, Greta. Danke, Heinrich. Willkommen, Kieler Woche!",
+      "voice": "Grandpa",
+      "seed": 20465699,
+      "heard": "Vor 50 Jahren habe ich die Farbe gehalten. Heute ist das Schild wieder da. Danke, Greta. Danke, Heinrich. Willkommen, Kieler Woche.",
+      "endDb": -59.0
+    },
+    {
+      "file": "294208557521.m4a",
+      "text": "Das Schild ist zurückgekommen.",
+      "voice": "Anna",
+      "seed": 20667568,
+      "heard": "Das Schild ist zurückgekommen.",
+      "endDb": -58.4
+    },
+    {
+      "file": "662bd0fdc818.m4a",
+      "text": "Opa Hansen ist mit dem Zug gekommen.",
+      "voice": "Anna",
+      "seed": 21180664,
+      "heard": "Opa Hansen ist mit dem Zug gekommen.",
+      "endDb": -55.7
+    },
+    {
+      "file": "24701c2cd966.m4a",
+      "text": "Das Schild ist ganz geblieben.",
+      "voice": "Anna",
+      "seed": 20915236,
+      "heard": "Das Schild ist ganz geblieben.",
+      "endDb": -52.3
+    },
+    {
+      "file": "5ff66458a55e.m4a",
+      "text": "Mein Geheimnis! Ein Kuchen für hundert! Für hundert Jahre!",
+      "voice": "Reed",
+      "seed": 20401500,
+      "heard": "Mein Geheimnis. Ein Kuchen für 100. Für 100 Jahre.",
+      "endDb": -61.9
+    },
+    {
+      "file": "98df440f33f2.m4a",
+      "text": "Und wer hat die Teller mitgebracht? Elif! Sehr gut!",
+      "voice": "Sandy",
+      "seed": 21244929,
+      "heard": "Und wer hat die Teller mitgebracht? Elif! Sehr gut!",
+      "endDb": -43.7
+    },
+    {
+      "file": "815a233db1e6.m4a",
+      "text": "Das ist kein Diebstahl. Das ist Natur!",
+      "voice": "Flo",
+      "seed": 20546566,
+      "heard": "Das ist kein Diebstahl, das ist Natur.",
+      "endDb": -44.8
+    },
+    {
+      "file": "8de62b131747.m4a",
+      "text": "Seht ihr? Sie hat nichts gemacht. Eine gute Möwe!",
+      "voice": "Flo",
+      "seed": 20926951,
+      "heard": "Seht ihr? Sie hat nichts gemacht. Eine gute Möwe.",
+      "endDb": -46.4
+    },
+    {
+      "file": "353b919a900a.m4a",
+      "text": "Und jetzt erzähl! Die ganze Geschichte – auf Deutsch!",
+      "voice": "Anna",
+      "seed": 20429354,
+      "heard": "Und jetzt erzähl die ganze Geschichte auf Deutsch.",
+      "endDb": -53.9
+    },
+    {
+      "file": "a1c7c94b0be8.m4a",
+      "text": "Zwölf Tage! Am ersten Tag hast du nur ein Wort gesprochen: Moin. Und heute?",
+      "voice": "Rocko",
+      "seed": 20971447,
+      "heard": "Zwölf Tage. Am ersten Tag hast du nur ein Wort gesprochen. Moin. Und heute?",
+      "endDb": -62.3
+    },
+    {
+      "file": "7432a87e5f1e.m4a",
+      "text": "Herr Jensen hat Greta das Schild gegeben. Greta hat es neu gemalt. Heute ist es zurückgekommen.",
+      "voice": "Anna",
+      "seed": 20309933,
+      "heard": "Herr Jensen hat Greta das Schild gegeben. Greta hat es neu gemalt. Heute ist es zurückgekommen.",
+      "endDb": -46.5
+    },
+    {
+      "file": "2c79943a15ae.m4a",
+      "text": "Was soll ich zur Party mitbringen?",
+      "voice": "Anna",
+      "seed": 20776428,
+      "heard": "Was soll ich zur Party mitbringen?",
+      "endDb": -61.7
+    },
+    {
+      "file": "f4cb5e0bdaee.m4a",
+      "text": "Ich bin vor zwölf Tagen nach Kiel gekommen.",
+      "voice": "Anna",
+      "seed": 20634702,
+      "heard": "Ich bin vor zwölf Tagen nach Kiel gekommen.",
+      "endDb": -60.9
+    },
+    {
+      "file": "d53c5519b205.m4a",
+      "text": "Wann bist du nach Kiel gekommen?",
+      "voice": "Reed",
+      "seed": 20762405,
+      "heard": "Wann bist du nach Kiel gekommen?",
+      "endDb": -57.4
+    },
+    {
+      "file": "de74df8f95a1.m4a",
+      "text": "Ein Stück Kuchen, bitte!",
+      "voice": "Anna",
+      "seed": 20578591,
+      "heard": "Ein Stück Kuchen, bitte.",
+      "endDb": -53.6
+    }
+  ]
+}

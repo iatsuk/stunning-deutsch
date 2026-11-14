@@ -709,6 +709,30 @@ export const phrases: Record<string, Phrase> = {
     de: "trocken",
     note: "Наоборот — nass, мокрый. Краске нужно время, чтобы стать trocken.",
   },
+  trockenraum: {
+    ru: "сушильная",
+    de: "der Trockenraum",
+    pl: "Trockenräume",
+    note: "trocken + der Raum — помещение. В отеле у гавани здесь сушат полотенца — и сегодня табличку.",
+  },
+  foehn: {
+    ru: "фен",
+    de: "der Föhn",
+    pl: "Föhne",
+    note: "Фен для волос. И для краски — если очень надо.",
+  },
+  barometer: {
+    ru: "барометр",
+    de: "das Barometer",
+    pl: "Barometer",
+    note: "Старый барометр клуба: стрелка показывает Sonne, Regen или Sturm.",
+  },
+  start: {
+    ru: "старт",
+    de: "der Start",
+    pl: "Starts",
+    note: "Старт регаты Kieler Woche. Ohne MOIN kein Start — без таблички не стартуют.",
+  },
   neu: {
     ru: "Вы новичок. Вы видите всё.",
     de: "Sie sind neu. Sie sehen alles.",

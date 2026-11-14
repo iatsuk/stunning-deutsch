@@ -5290,5 +5290,371 @@
     "audio": "audio/13deef876db7.m4a"
    }
   ]
+ },
+ "reisen/es-regnet-1": {
+  "point": "*Heute regnet es.* *Gestern hat es geregnet.* — *es* не пропадает",
+  "read": "В русском «идёт дождь» подлежащее — «дождь». Немецкая фраза устроена иначе: *Es regnet*, с формальным *es*. Если первым стоит *heute*, *es* уходит за глагол: *Heute regnet es*. В прошедшем — *Gestern hat es geregnet*, а описание состояния — *Gestern war es kalt*. Для понимания отчёта важно отделить дождь сегодня утром от того, что было вчера вечером.",
+  "rows": [
+   {
+    "slots": [
+     [
+      {
+       "key": "heute",
+       "text": "Heute"
+      }
+     ],
+     [
+      {
+       "key": "regn",
+       "text": "regn+et"
+      }
+     ],
+     [
+      {
+       "key": "es",
+       "text": "es"
+      }
+     ],
+     []
+    ],
+    "punct": ".",
+    "plain": "Heute regnet es.",
+    "ru": "Сегодня идёт дождь.",
+    "audio": "audio/bd3c71f02617.m4a"
+   },
+   {
+    "slots": [
+     [
+      {
+       "key": "gestern",
+       "text": "Gestern"
+      }
+     ],
+     [
+      {
+       "key": "hat",
+       "text": "hat"
+      }
+     ],
+     [
+      {
+       "key": "es",
+       "text": "es"
+      }
+     ],
+     [
+      {
+       "key": "geregnet",
+       "text": "geregnet"
+      }
+     ]
+    ],
+    "punct": ".",
+    "plain": "Gestern hat es geregnet.",
+    "ru": "Вчера шёл дождь.",
+    "audio": "audio/8f82d3586829.m4a"
+   }
+  ]
+ },
+ "reisen/haben-sein-1": {
+  "point": "В наших примерах: *ist gefahren / gegangen / geblieben*, но *hat gekauft / geregnet*",
+  "read": "Для показанных глаголов есть полезная опора: перемещение в другое место — *ist gefahren*, *ist gegangen*, *ist angekommen*; изменение состояния — *ist aufgestanden*. Отдельно запоминаем *ist geblieben*. Остальные глаголы этой таблицы — *hat gemacht*, *hat gekauft*, *hat geregnet*. Это рабочая схема для наших примеров A1, а не правило без исключений обо всех немецких глаголах. В игре нужно восстановить целые события поездки.",
+  "table": {
+   "title": "haben oder sein?",
+   "ru": "С каким глаголом строится Perfekt",
+   "head": [
+    "Infinitiv",
+    "Perfekt",
+    "Почему"
+   ],
+   "rows": [
+    [
+     "fahren",
+     "ist *ge*fahr*en*",
+     "движение: из А в Б"
+    ],
+    [
+     "fliegen",
+     "ist *ge*flog*en*",
+     "движение"
+    ],
+    [
+     "gehen",
+     "ist *ge*gang*en*",
+     "движение"
+    ],
+    [
+     "ankommen",
+     "ist an*ge*komm*en*",
+     "движение"
+    ],
+    [
+     "aufstehen",
+     "ist auf*ge*stand*en*",
+     "смена состояния"
+    ],
+    [
+     "bleiben",
+     "ist *ge*blieb*en*",
+     "исключение — запомнить"
+    ],
+    [
+     "machen",
+     "hat *ge*mach*t*",
+     "нет движения"
+    ],
+    [
+     "kaufen",
+     "hat *ge*kauf*t*",
+     "нет движения"
+    ],
+    [
+     "regnen",
+     "hat *ge*regn*et*",
+     "погода — нет движения"
+    ]
+   ],
+   "ruCols": [
+    2
+   ],
+   "note": "Сами *sein* и *haben* в прошлом обычно звучат как *war* и *hatte*: *Wie war die Reise?*"
+  }
+ },
+ "reisen/check-1": {
+  "point": "*Um acht Uhr ist der Zug angekommen.* — причастие остаётся в конце",
+  "read": "*Um acht Uhr ist der Zug angekommen.* Время встаёт на первую позицию, *ist* остаётся вторым, *der Zug* уходит в середину. А *angekommen* не двигается: конец рамки занят причастием, что бы ни происходило в начале. В этом и смысл Perfekt — две опоры, второе место и конец, а всё остальное переставляется между ними.",
+  "rows": [
+   {
+    "slots": [
+     [
+      {
+       "key": "um",
+       "text": "Um"
+      },
+      {
+       "key": "acht",
+       "text": "acht"
+      },
+      {
+       "key": "uhr",
+       "text": "Uhr"
+      }
+     ],
+     [
+      {
+       "key": "ist",
+       "text": "ist"
+      }
+     ],
+     [
+      {
+       "key": "der",
+       "text": "der"
+      },
+      {
+       "key": "zug",
+       "text": "Zug"
+      }
+     ],
+     [
+      {
+       "key": "an",
+       "text": "an+gekommen"
+      }
+     ]
+    ],
+    "punct": ".",
+    "plain": "Um acht Uhr ist der Zug angekommen.",
+    "ru": "В восемь часов поезд прибыл.",
+    "audio": "audio/ad43babf64aa.m4a"
+   }
+  ]
+ },
+ "reisen/monate-1": {
+  "point": "*um* — время, *am* — день и дата, *im* — месяц и время года",
+  "read": "Месяцы почти все похожи на русские — труднее с буквами: *März* с умлаутом, *Mai* через *ai*. *Juni* и *Juli* легко спутать на слух, поэтому по телефону немцы часто говорят *Juno* и *Julei*. Все месяцы — мужского рода, и с ними тот же предлог, что с временами года: *im Juni*. Теперь у вас есть все три предлога времени: *um acht Uhr*, *am Freitag*, *im Juni*.",
+  "table": {
+   "title": "Die Monate",
+   "ru": "Месяцы по временам года",
+   "head": [
+    "Frühling",
+    "Sommer",
+    "Herbst",
+    "Winter"
+   ],
+   "rows": [
+    [
+     "März",
+     "Juni",
+     "September",
+     "Dezember"
+    ],
+    [
+     "April",
+     "Juli",
+     "Oktober",
+     "Januar"
+    ],
+    [
+     "Mai",
+     "August",
+     "November",
+     "Februar"
+    ]
+   ],
+   "ruCols": [],
+   "note": "Все месяцы — мужского рода: *der Mai*, *im Mai*. Но с датой — *am*: *am ersten Mai*."
+  }
+ },
+ "reisen/perfekt-2": {
+  "point": "Всё новое — внутрь рамки: *Am Freitag sind wir mit dem Zug nach Hamburg gefahren.*",
+  "read": "Поставим на первое место *am Freitag*. *sind* остаётся вторым, *wir* уходит в середину, а *gefahren* по-прежнему замыкает предложение. Всё новое — когда, на чём, куда — встаёт внутрь рамки, между *sind* и *gefahren*. Типичная ошибка — тянуть причастие к вспомогательному глаголу, как в русском: *Wir sind gefahren nach Hamburg.* Так по-немецки не говорят.",
+  "rows": [
+   {
+    "slots": [
+     [
+      {
+       "key": "wir",
+       "text": "Wir"
+      }
+     ],
+     [
+      {
+       "key": "hab",
+       "text": "hab+en"
+      }
+     ],
+     [
+      {
+       "key": "im",
+       "text": "im"
+      },
+      {
+       "key": "hotel",
+       "text": "Hotel"
+      }
+     ],
+     [
+      {
+       "key": "gefrühstückt",
+       "text": "gefrühstückt"
+      }
+     ]
+    ],
+    "punct": ".",
+    "plain": "Wir haben im Hotel gefrühstückt.",
+    "ru": "Мы позавтракали в отеле.",
+    "audio": "audio/cd7af7ca5e13.m4a"
+   },
+   {
+    "slots": [
+     [
+      {
+       "key": "am",
+       "text": "Am"
+      },
+      {
+       "key": "freitag",
+       "text": "Freitag"
+      }
+     ],
+     [
+      {
+       "key": "sind",
+       "text": "sind"
+      }
+     ],
+     [
+      {
+       "key": "wir",
+       "text": "wir"
+      },
+      {
+       "key": "mit",
+       "text": "mit"
+      },
+      {
+       "key": "dem",
+       "text": "dem"
+      },
+      {
+       "key": "zug",
+       "text": "Zug"
+      },
+      {
+       "key": "nach",
+       "text": "nach"
+      },
+      {
+       "key": "hamburg",
+       "text": "Hamburg"
+      }
+     ],
+     [
+      {
+       "key": "gefahren",
+       "text": "gefahren"
+      }
+     ]
+    ],
+    "punct": ".",
+    "plain": "Am Freitag sind wir mit dem Zug nach Hamburg gefahren.",
+    "ru": "В пятницу мы поехали в Гамбург на поезде.",
+    "audio": "audio/b02f27319cd5.m4a"
+   }
+  ],
+  "focus": [
+   1
+  ]
+ },
+ "reisen/check-2": {
+  "point": "*bleiben — ist geblieben*: движения нет, а глагол — *sein*",
+  "read": "*Wir sind zwei Tage in Hamburg geblieben.* Логика подсказывает *haben*: никто никуда не едет. Но *bleiben* — исключение, оно идёт с *sein*, как глаголы движения. Ошибка *Wir haben geblieben* — одна из самых частых, поэтому учите парой: *fahren — ist gefahren*, *bleiben — ist geblieben*. Порядок в середине привычный: сначала «сколько времени», потом «где».",
+  "rows": [
+   {
+    "slots": [
+     [
+      {
+       "key": "wir",
+       "text": "Wir"
+      }
+     ],
+     [
+      {
+       "key": "sind",
+       "text": "sind"
+      }
+     ],
+     [
+      {
+       "key": "zwei",
+       "text": "zwei"
+      },
+      {
+       "key": "tage",
+       "text": "Tage"
+      },
+      {
+       "key": "in",
+       "text": "in"
+      },
+      {
+       "key": "hamburg",
+       "text": "Hamburg"
+      }
+     ],
+     [
+      {
+       "key": "geblieben",
+       "text": "geblieben"
+      }
+     ]
+    ],
+    "punct": ".",
+    "plain": "Wir sind zwei Tage in Hamburg geblieben.",
+    "ru": "Мы остались в Гамбурге на два дня.",
+    "audio": "audio/0066a1528377.m4a"
+   }
+  ]
  }
 }
