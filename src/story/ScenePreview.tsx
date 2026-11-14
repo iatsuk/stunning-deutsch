@@ -2,15 +2,18 @@ import { useEffect, useState } from "react";
 import { Footer, Topbar, useTitle } from "../App";
 import { say, stopAudio } from "../hooks";
 import { PlayButton } from "../markup";
-import { phraseAudio } from "./audio";
+import { allWords, phraseAudio, wordInfo } from "./audio";
 import { ChallengeView } from "./ChallengeView";
 import { phrases } from "./data";
 import { mnemonic } from "./mnemonics";
 import { beatPhrases, initialAnswer, isCorrect } from "./logic";
+import { dayNumber, grade, remember, type Cards } from "./memory";
+import { buildReview, dueUnits, MIN_DUE, reviewSources, SCENE_INTERVALS, sceneUnits, WELCOME_ROUNDS, type Mech } from "./review";
+import { SceneReview, type ReviewReason } from "./ReviewView";
 import { flatNodes, keyOf, nodeAt, sceneRules, shownWords, worldAfter } from "./scene";
 import { RuleCard } from "./RuleCard";
 import { sceneChapters } from "./scenes";
-import type { Answer, SceneNode } from "./types";
+import type { Answer, Mark, SceneNode } from "./types";
 import { TRACKS, type World } from "./world";
 import "./story.css";
 
@@ -34,9 +37,42 @@ const firstOf = (chapter: number) =>
   chapters.slice(0, chapter).reduce((n, c) => n + c.beats.length, 0);
 const chapterOf = (at: number) =>
   chapters.findIndex((_, i) => at < firstOf(i + 1));
-type Save = { at: number; drafts: Record<string, string[]> };
+/**
+ * cards — очередь повторения (A1-PLAN.md, «Повторение»), last — когда был последний раунд,
+ * chapters — главы, перед которыми повторение уже прошло, recent — механики прошлого раунда.
+ * Старое сохранение без этих полей получает их пустыми.
+ */
+type Save = {
+  at: number;
+  drafts: Record<string, string[]>;
+  cards: Cards;
+  last: Mark;
+  chapters: string[];
+  recent: Mech[];
+};
+
+// Повторение: реплики и замки всех сцен, слова с переводом для игр.
+const sources = reviewSources(scenes);
+const gameWords = allWords();
+const solvedIn = (drafts: Save["drafts"], i: number) =>
+  isCorrect(scenes[i].challenge, drafts[scenes[i].id]);
+const solvedCount = (drafts: Save["drafts"]) =>
+  scenes.filter((_, i) => solvedIn(drafts, i)).length;
+
+/** Пройденные сцены кладут свои слова, реплики и замки в очередь; уже лежащие не трогаем. */
+function remembered(save: Save, day: number): Save {
+  let cards = save.cards;
+  let step = 0;
+  scenes.forEach((beat, i) => {
+    if (!solvedIn(save.drafts, i)) return;
+    step++;
+    cards = remember(cards, sceneUnits(beat, wordInfo), step, day);
+  });
+  return cards === save.cards ? save : { ...save, cards };
+}
 
 function load(): Save {
+  const empty: Save = { at: 0, drafts: {}, cards: {}, last: { step: 0, day: 0 }, chapters: [], recent: [] };
   try {
     const raw = JSON.parse(localStorage.getItem(KEY) ?? "null");
     if (
@@ -45,19 +81,28 @@ function load(): Save {
       raw.drafts &&
       typeof raw.drafts === "object"
     )
-      return {
-        at: Math.min(Math.max(0, raw.at), scenes.length - 1),
-        drafts: raw.drafts,
-      };
+      return remembered(
+        {
+          at: Math.min(Math.max(0, raw.at), scenes.length - 1),
+          drafts: raw.drafts,
+          cards: raw.cards && typeof raw.cards === "object" ? raw.cards : {},
+          last: Number.isInteger(raw.last?.step) && Number.isInteger(raw.last?.day) ? raw.last : empty.last,
+          chapters: Array.isArray(raw.chapters) ? raw.chapters : [],
+          recent: Array.isArray(raw.recent) ? raw.recent : [],
+        },
+        dayNumber(),
+      );
   } catch {
     // Повреждённое или недоступное сохранение: начинаем сначала.
   }
-  return { at: 0, drafts: {} };
+  return empty;
 }
 
 export function ScenePreview() {
   useTitle("Главы в сценах · прототип · Stunning Deutsch");
   const [save, setSave] = useState(load);
+  // Открытое повторение держится до закрытия: после оценки очередь короче, но итог раунда виден.
+  const [reviewing, setReviewing] = useState<ReviewReason | null>(null);
   const ci = chapterOf(save.at);
   const chapter = chapters[ci];
   const first = firstOf(ci);
@@ -129,8 +174,61 @@ export function ScenePreview() {
     }),
   );
 
+  // Повторение: перед главой — прошлая глава; за новый день — разминка; перед новой сценой —
+  // если накопилось. Только перед нетронутой сценой: начатую сцену раунд не прерывает.
+  const today = dayNumber();
+  const count = solvedCount(save.drafts);
+  const fresh = !solved(save.at) && !(save.drafts[beat.id]?.length);
+  const frontier = scenes.findIndex((_, i) => !solved(i));
+  const due = dueUnits(save.cards, count, today).length;
+  const auto: ReviewReason | null = !fresh
+    ? null
+    : save.at === first && ci > 0 && !save.chapters.includes(chapter.id)
+      ? "chapter"
+      : save.at !== frontier
+        ? null
+        : save.last.day > 0 && today > save.last.day && due >= MIN_DUE
+          ? "welcome"
+          : count > save.last.step && due >= MIN_DUE
+            ? "scene"
+            : null;
+  const reason = reviewing ?? auto;
+  const review = reason
+    ? buildReview(save.cards, count, today, {
+        lookup: wordInfo,
+        sources,
+        words: gameWords,
+        seed: `${count}-${today}-${Object.keys(save.cards).length}-${save.recent.join(",")}`,
+        recent: save.recent,
+        focus:
+          reason === "chapter" && ci > 0
+            ? chapters[ci - 1].beats.flatMap((b) => sceneUnits(b, wordInfo))
+            : undefined,
+      })
+    : null;
+  const reviewOpen = !!reason && (!!review || !!reviewing);
+  function closeReview() {
+    stopAudio();
+    const was = reason;
+    setReviewing(null);
+    setSave((s) => ({
+      ...s,
+      last: { step: solvedCount(s.drafts), day: dayNumber() },
+      chapters: was === "chapter" && !s.chapters.includes(chapter.id) ? [...s.chapters, chapter.id] : s.chapters,
+    }));
+  }
+  function gradeReview(units: string[], missed: string[], mechs: Mech[]) {
+    setReviewing(reason);
+    setSave((s) => ({
+      ...s,
+      cards: grade(s.cards, units, missed, solvedCount(s.drafts), dayNumber(), SCENE_INTERVALS),
+      recent: mechs,
+    }));
+  }
+
   function go(at: number) {
     stopAudio();
+    setReviewing(null);
     setSave((s) => ({ ...s, at }));
     window.scrollTo({ top: 0 });
   }
@@ -250,6 +348,18 @@ export function ScenePreview() {
               Не могу говорить вслух — отвечаю письменно
             </label>
             <div className="moin-turn">
+              {reviewOpen ? (
+                <SceneReview
+                  key={`${reason}-${save.at}`}
+                  next={review}
+                  reason={reason!}
+                  rounds={reason === "welcome" ? WELCOME_ROUNDS : 1}
+                  sources={sources}
+                  onGrade={gradeReview}
+                  onClose={closeReview}
+                />
+              ) : (
+              <>
               <ChallengeView
                 key={beat.id}
                 c={beat.challenge}
@@ -264,10 +374,9 @@ export function ScenePreview() {
                   disabled: false,
                   checked: false,
                   change: (v) =>
-                    setSave((s) => ({
-                      ...s,
-                      drafts: { ...s.drafts, [beat.id]: v as string[] },
-                    })),
+                    setSave((s) =>
+                      remembered({ ...s, drafts: { ...s.drafts, [beat.id]: v as string[] } }, dayNumber()),
+                    ),
                   win: () => undefined,
                   miss: () => undefined,
                   quiet,
@@ -290,6 +399,8 @@ export function ScenePreview() {
                   )}
                 </div>
               )}
+              </>
+              )}
             </div>
             <div className="moin-preview-tools">
               <button
@@ -299,6 +410,7 @@ export function ScenePreview() {
                   // Сбрасывается только эта глава: пройденные сцены других глав остаются.
                   stopAudio();
                   setSave((s) => ({
+                    ...s,
                     at: first,
                     drafts: Object.fromEntries(
                       Object.entries(s.drafts).filter(
@@ -356,6 +468,15 @@ export function ScenePreview() {
                   <RuleCard key={id} id={id} open={false} />
                 ))}
               </>
+            )}
+            <div className="kicker">Повторение</div>
+            <p className="moin-route-note">
+              В очереди: {Object.keys(save.cards).length}, пора повторить: {due}.
+            </p>
+            {!reviewOpen && Object.keys(save.cards).length > 0 && (
+              <button type="button" className="link-button" onClick={() => setReviewing("manual")}>
+                Повторить
+              </button>
             )}
             <p className="moin-route-note">
               Действий в сценах:{" "}

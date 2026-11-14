@@ -9,7 +9,7 @@ import type { Beat, Challenge, LockRound, Mark, WordCard } from "./types.ts";
 // поэтому грамматика возвращается вместе со словами своей главы.
 
 export type Cards = Record<string, WordCard>;
-export type Dictionary = Record<string, { ru: string; audio?: string }>;
+export type Dictionary = Record<string, { ru: string; audio?: string; pl?: string }>;
 export type Round = {
   words: string[];
   challenge: Challenge;
@@ -18,7 +18,8 @@ export type Round = {
 };
 export type Locks = Record<string, { round: LockRound; rules: string[] }>;
 
-const INTERVALS = [
+export type Interval = { steps: number; days: number };
+const INTERVALS: Interval[] = [
   { steps: 14, days: 1 },
   { steps: 42, days: 2 },
   { steps: 84, days: 4 },
@@ -128,13 +129,14 @@ export function grade(
   missed: string[],
   step: number,
   day: number,
+  intervals: Interval[] = INTERVALS,
 ): Cards {
   const next = { ...cards };
   for (const word of words)
     next[word] = {
       box: missed.includes(word)
         ? 0
-        : Math.min((next[word]?.box ?? 0) + 1, INTERVALS.length - 1),
+        : Math.min((next[word]?.box ?? 0) + 1, intervals.length - 1),
       step,
       day,
     };
@@ -142,8 +144,8 @@ export function grade(
 }
 
 /** Во сколько раз слово пересидело свой срок: от единицы и выше его пора вернуть. */
-function urgency(card: WordCard, step: number, day: number) {
-  const wait = INTERVALS[Math.min(card.box, INTERVALS.length - 1)];
+function urgency(card: WordCard, step: number, day: number, intervals: Interval[]) {
+  const wait = intervals[Math.min(card.box, intervals.length - 1)];
   return Math.max(
     (step - card.step) / wait.steps,
     (day - card.day) / wait.days,
@@ -154,9 +156,9 @@ function urgency(card: WordCard, step: number, day: number) {
  * Сравниваем просрочку с интервалом, а не абсолютное ожидание: иначе прочные слова
  * ходили бы по кругу, а новые не доживали бы до первого повторения.
  */
-export const dueWords = (cards: Cards, step: number, day: number) =>
+export const dueWords = (cards: Cards, step: number, day: number, intervals: Interval[] = INTERVALS) =>
   Object.keys(cards)
-    .map((word) => ({ word, score: urgency(cards[word], step, day) }))
+    .map((word) => ({ word, score: urgency(cards[word], step, day, intervals) }))
     .filter(({ score }) => score >= 1)
     .sort((a, b) => b.score - a.score)
     .map(({ word }) => word);

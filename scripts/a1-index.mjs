@@ -8,6 +8,7 @@ import { parse } from "yaml";
 import { sceneChapters } from "../src/story/scenes/index.ts";
 import { flatNodes } from "../src/story/scene.ts";
 import { episodes, phrases } from "../src/story/data.ts";
+import { sceneUnits as reviewUnits } from "../src/story/review.ts";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
 const rel = (file) => path.relative(root, file);
@@ -300,6 +301,12 @@ export function buildIndex() {
     return { n: i + 1, text, toks, set: new Set(toks) };
   });
 
+  // Очередь повторения новой версии: что пройденные сцены отдают в раунды (A1-PLAN.md, «Повторение»).
+  const dictionary = JSON.parse(readFileSync(path.join(root, "src/generated/a1-words.json"), "utf8"));
+  const byDe = new Map(Object.values(phrases).map((p) => [p.de, p]));
+  const lookup = (de) => dictionary[de] ?? (byDe.has(de) ? { ru: byDe.get(de).ru } : undefined);
+  const pool = new Set(sceneChapters.flatMap((c) => c.beats.flatMap((b) => reviewUnits(b, lookup))));
+
   const words = required(reference).map((w) => {
     const m = matcher(w);
     const hits = units.filter((u) => matches(m, u.toks, u.set, u));
@@ -314,6 +321,7 @@ export function buildIndex() {
       sources: w.sources,
       of: w.of,
       part: partOf(w),
+      review: pool.has(w.de),
       ...count(hits),
       lessons: [...lessons].map(([file, line]) => ({ file, line })),
       checks: checkLines.filter((l) => matches(m, l.toks, l.set, l)).length,
@@ -359,6 +367,8 @@ function summarize(words, grammar) {
     exam: by(words.filter((w) => w.sources.includes("экзамен"))),
     lessons: by(words.filter((w) => w.sources.some((s) => s.startsWith("урок")))),
     grammar: by(grammar),
+    review: words.filter((w) => w.review).length,
+    reviewWeak: words.filter((w) => w.review && w.status !== "закреплено").length,
     parts: Object.fromEntries(PARTS.map((part) => [part, by(words.filter((w) => w.part === part))])),
   };
 }
@@ -426,6 +436,8 @@ export function renderReport(index) {
     row("из них слова уроков", summary.lessons),
     row(`Грамматика (${grammar.length})`, summary.grammar),
     "",
+    `В очереди повторения новой версии ${summary.review} обязательных слов, из них ниже порога ${summary.reviewWeak}. Повторение в порог не входит; в таблицах такие слова помечены ↻.`,
+    "",
     ...(summary.grammar["без объяснения"] ? [`Ещё ${summary.grammar["без объяснения"]} правил встречаются достаточно, но в игре их не объясняет ни один фрагмент правила: статус «без объяснения».`, ""] : []),
     `| Часть речи | ${STATUSES.join(" | ")} |`,
     head,
@@ -446,7 +458,7 @@ export function renderReport(index) {
       if (!inPart.length) continue;
       out.push("", `### ${part} (${inPart.length})`, "", "| Слово | Откуда | Числа | Где в новой версии | Уроки | Классика |", "|---|---|---|---|---|---|");
       for (const w of inPart)
-        out.push(`| ${w.de}${w.of ? ` (от ${w.of})` : ""} | ${origin(w)} | ${numbers(w)} | ${places(w)} | ${w.lessons.map((l) => `[${l.file.match(/(\d\d)-/)?.[1]}](${l.file}#L${l.line})`).join(" ") || "—"} | ${w.classic.length ? `гл. ${w.classic.join(", ")}` : "—"} |`);
+        out.push(`| ${w.de}${w.of ? ` (от ${w.of})` : ""}${w.review ? " ↻" : ""} | ${origin(w)} | ${numbers(w)} | ${places(w)} | ${w.lessons.map((l) => `[${l.file.match(/(\d\d)-/)?.[1]}](${l.file}#L${l.line})`).join(" ") || "—"} | ${w.classic.length ? `гл. ${w.classic.join(", ")}` : "—"} |`);
     }
   }
   const done = words.filter((w) => w.status === "закреплено");

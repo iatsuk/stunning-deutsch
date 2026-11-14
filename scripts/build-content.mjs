@@ -160,7 +160,8 @@ for (const topic of topics.filter((t) => t.level === "a1")) {
   for (const group of Object.values(topic.words)) {
     for (const word of group.items) {
       const key = plain(word.de);
-      a1Words[key] ??= { ru: word.ru, ...(word.audio ? { audio: word.audio } : {}) };
+      // Множественное нужно повторению новой версии: механика «Склад Матео» (src/story/review.ts).
+      a1Words[key] ??= { ru: word.ru, ...(word.audio ? { audio: word.audio } : {}), ...(word.plural && word.plural !== "-" ? { pl: word.plural } : {}) };
     }
   }
 }

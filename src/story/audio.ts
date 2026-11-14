@@ -21,8 +21,11 @@ const phraseByDe = new Map(Object.values(phrases).map((p) => [p.de, p]));
  */
 export const wordInfo = (de: string) => {
   const p = a1Words[de] ? undefined : phraseByDe.get(de);
-  return a1Words[de] ?? (p ? { ru: p.ru, audio: phraseAudio(p) } : undefined);
+  return a1Words[de] ?? (p ? { ru: p.ru, audio: phraseAudio(p), ...(p.pl ? { pl: p.pl } : {}) } : undefined);
 };
+
+/** Все слова с переводом для игр: словарь уроков и выражения истории. */
+export const allWords = (): string[] => [...Object.keys(a1Words), ...[...phraseByDe.keys()].filter((de) => !a1Words[de])];
 
 /** Запись слова: из словаря уроков, иначе — выражения истории с тем же немецким. */
 export const nounAudio = (de: string) => {

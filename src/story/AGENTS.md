@@ -1,6 +1,6 @@
 # Игра «Дело о пропавшем Moin»
 
-Область: `src/story/` целиком — главы (`data.ts`, `extra.ts`, `chapters/`), прототип сцен `scenes/` и его движок (`scene.ts`, `SceneView.tsx`, `ScenePreview.tsx`, `world.ts`, `mnemonics.ts`), действия, память слов, правила; а также `scripts/story.test.mjs`, `scripts/scene.test.mjs`, `scripts/memory.test.mjs`, `scripts/story-oracle.mjs`, индекс покрытия `scripts/a1-index.mjs` с тестом `scripts/a1-index.test.mjs`, картинки `art/refs/` и `public/story-img/`. Общие правила и сквозные случаи — в корневом `AGENTS.md`.
+Область: `src/story/` целиком — главы (`data.ts`, `extra.ts`, `chapters/`), прототип сцен `scenes/` и его движок (`scene.ts`, `SceneView.tsx`, `ScenePreview.tsx`, `world.ts`, `mnemonics.ts`), действия, память слов, правила; а также `scripts/story.test.mjs`, `scripts/scene.test.mjs`, `scripts/memory.test.mjs`, `scripts/story-oracle.mjs`, индекс покрытия `scripts/a1-index.mjs` с тестом `scripts/a1-index.test.mjs`, повторение новой версии `review.ts` и `ReviewView.tsx` с тестом `scripts/review.test.mjs`, картинки `art/refs/` и `public/story-img/`. Общие правила и сквозные случаи — в корневом `AGENTS.md`.
 
 ## Что это
 
@@ -35,6 +35,7 @@
 - Русские сочетания заменяются только целыми проверенными немецкими единицами, а не пословным переводом. Перевод нового выражения показывается сразу, знакомого — по нажатию.
 - Существительное в выражении истории получает `pl` и звучит с множественным, как слово урока: правило — `CONTENT.md`, раздел «Слова — `words`»; для истории — `A1-PLOT.md`, «Немецкие названия и знакомые слова».
 - Новые выражения, реплики `voices` и реплики сцен озвучиваются по правилам `scripts/tts/AGENTS.md`.
+- В новой версии своё повторение (`src/story/review.ts`, `src/story/ReviewView.tsx`; дизайн и решения автора — раздел «Повторение» в `A1-PLAN.md`): раунд из трёх игр разных механик перед каждой главой, разминка дня и раунд перед сценой. Очередь хранится в `sd-moin-neu-v1` (поля `cards`, `last`, `chapters`, `recent`); старое сохранение без них должно открываться. Раунд встаёт только перед нетронутой сценой и всегда пропускается. Новую механику добавляйте в `MECHS` и в тест `scripts/review.test.mjs`: он требует, чтобы за серию раундов встретилась каждая.
 - Поверх истории работает память слов и фраз замков (`src/story/memory.ts`, раунды — `drill.tsx`, правила и симуляция — раздел «Память слов» в `A1-STORY.md`): интервалы меняйте только вместе с симуляцией в `scripts/memory.test.mjs`, раунд не должен закрывать развязку и обязан оставаться пропускаемым.
 
 ## Прогресс
