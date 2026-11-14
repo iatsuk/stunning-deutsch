@@ -168,7 +168,7 @@ const table: SceneNode[] = [
   dana("Einen Kaffee, bitte. Kuchen? Nein, danke. Ich habe keinen Hunger.", "Кофе, пожалуйста. Пирог? Нет, спасибо. Я не голодна.", ["Hunger haben"]),
   {
     t: "game",
-    rule: ["essen/akkusativ-3"],
+    rule: ["essen/akkusativ-3", "moin/fuer-ohne-1"],
     task: "Ваша очередь: Kellner спрашивает вас.",
     hint: "der Tee, der Kuchen — мужского рода: einen Tee, keinen Kuchen.",
     c: {
@@ -404,6 +404,7 @@ const kitchen: SceneNode[] = [
     },
   },
   narr("Стук в заднюю дверь. За ней никого — только бумажная Tüte и записка: «Danke für den Kuchen. G.»"),
+  { t: "gap", rule: ["moin/fuer-ohne-1"], task: "Перепишите записку в блокнот.", text: "Danke für ___ Kuchen.", options: ["den", "der", "dem"], answer: "den", ru: "Спасибо за пирог." },
   {
     t: "look",
     task: "Загляните в пакет.",
@@ -449,6 +450,17 @@ const napkin: SceneNode[] = [
   narr("Грета кивает. Хауке открывает рот для первого вопроса. Грета поднимает ладонь. Перед ней {serviette}, и на ней Грета пишет три слова."),
   { t: "gap", task: "Что написала Грета?", text: "Nicht ___, bitte.", options: ["fragen", "essen", "trinken"], answer: "fragen", ru: "Не спрашивайте, пожалуйста." },
   hauke("Okay. Keine Fragen. Kaffee und Kuchen!", "Ладно. Никаких вопросов. Кофе и пирог!"),
+  kellner("Und Sie? Was hätten Sie gern?", "А вам? Что для вас?"),
+  {
+    t: "reply",
+    rule: ["moin/haette-1"],
+    task: "Закажите чай и кусок пирога — так же вежливо, как спросил официант.",
+    options: [
+      ok("Ich hätte gern einen Tee und ein Stück Kuchen."),
+      no("Ich hätte gern ein Tee und ein Stück Kuchen.", "der Tee — мужского рода: einen Tee."),
+      no("Ich habe gern einen Tee und ein Stück Kuchen.", "Ich habe gern — «я люблю иметь». Вежливая просьба — Ich hätte gern."),
+    ],
+  },
   narr("Für Hauke und Dana — Kaffee, für Sie — Tee, für Hauke und Sie — Kuchen, für Greta — Cola. Hunger у Даны нет."),
   {
     t: "game",

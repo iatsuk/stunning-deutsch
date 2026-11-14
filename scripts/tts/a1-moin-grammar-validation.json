@@ -1,0 +1,126 @@
+{
+  "date": "2026-11-14",
+  "scope": "Grammar of the full A1 course in the Moin scene prototype (chapters 4–11): new lines for hätte gern, dieser, uns, dann, denn, würde gern, wem, unter, ab, man, ins, -ung, wenn and -los",
+  "model": "k2-fsa/OmniVoice",
+  "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+  "candidatesPerPhrase": 3,
+  "asr": "openai/whisper-large-v3",
+  "notes": [
+    "Each phrase has three takes; the chosen take has the closest transcript, an end level below -32 dB and no fragment flagged by tails.py. No take was flagged; tails.py passes on all 14 imported files.",
+    "Whisper writes numbers as digits (vierzehn Uhr); these takes say the numbers in words as written."
+  ],
+  "files": [
+    {
+      "file": "a7f694c5ca4e.m4a",
+      "text": "Und Sie? Was hätten Sie gern?",
+      "voice": "Eddy",
+      "seed": 21052701,
+      "heard": "Und Sie? Was hätten Sie gern?",
+      "endDb": -54.6
+    },
+    {
+      "file": "4896a0eda09e.m4a",
+      "text": "Diese Dose hier?",
+      "voice": "Shelley",
+      "seed": 20498844,
+      "heard": "Diese Dose hier?",
+      "endDb": -67.7
+    },
+    {
+      "file": "732e59444bf9.m4a",
+      "text": "Super! Wir treffen uns um fünf vor dem Club.",
+      "voice": "Rocko",
+      "seed": 20614839,
+      "heard": "Super, wir treffen uns um fünf vor dem Club.",
+      "endDb": -55.7
+    },
+    {
+      "file": "67e1fff4b51b.m4a",
+      "text": "Zuerst kauft er Farbe. Dann trinkt er Tee – um halb sechs, wie immer.",
+      "voice": "Anna",
+      "seed": 20806617,
+      "heard": "Zuerst kauft er Farbe, dann trinkt er Tee um halb sechs, wie immer.",
+      "endDb": -47.6
+    },
+    {
+      "file": "26c6cefaf730.m4a",
+      "text": "Er kann nicht, denn er will segeln!",
+      "voice": "Rocko",
+      "seed": 21194896,
+      "heard": "Er kann nicht, denn er will segeln.",
+      "endDb": -66.7
+    },
+    {
+      "file": "a549aa162866.m4a",
+      "text": "Ich würde gern mitkommen! Aber ich kann nicht segeln.",
+      "voice": "Flo",
+      "seed": 21051364,
+      "heard": "Ich würde gern mitkommen, aber ich kann nicht segeln.",
+      "endDb": -59.5
+    },
+    {
+      "file": "0dca743a9df6.m4a",
+      "text": "Und wem gehört das alles? Moment … Der Strandball gehört mir!",
+      "voice": "Rocko",
+      "seed": 20814486,
+      "heard": "Und wem gehört das alles? Moment, der Strandball gehört mir.",
+      "endDb": -56.1
+    },
+    {
+      "file": "e1754b3bf21b.m4a",
+      "text": "Und der Anhänger liegt unter dem Stuhl!",
+      "voice": "Anna",
+      "seed": 20904059,
+      "heard": "Und der Anhänger liegt unter dem Stuhl.",
+      "endDb": -52.8
+    },
+    {
+      "file": "d0b19dfebb6e.m4a",
+      "text": "Die Fähre fährt wieder ab vierzehn Uhr. Nach dem Sturm!",
+      "voice": "Eddy",
+      "seed": 20766862,
+      "heard": "Die Fähre fährt wieder ab 14 Uhr. Nach dem Sturm!",
+      "endDb": -56.3
+    },
+    {
+      "file": "cf9c99d61e52.m4a",
+      "text": "Vierzehn Uhr? Zu spät! Und wo kauft man hier Fahrkarten?",
+      "voice": "Rocko",
+      "seed": 21071184,
+      "heard": "14 Uhr zu spät. Und wo kauft man hier Fahrkarten?",
+      "endDb": -55.6
+    },
+    {
+      "file": "683d35c6c972.m4a",
+      "text": "Und ich gehe heute früh ins Bett!",
+      "voice": "Rocko",
+      "seed": 20774930,
+      "heard": "Und ich gehe heute früh ins Bett.",
+      "endDb": -64.2
+    },
+    {
+      "file": "c6f4a8d789d2.m4a",
+      "text": "Anmeldung – von anmelden. Wie Wohnung – von wohnen!",
+      "voice": "Flo",
+      "seed": 20278706,
+      "heard": "Anmeldung von Anmelden, wie Wohnung von Wohnen.",
+      "endDb": -45.3
+    },
+    {
+      "file": "7eed5bfd9b6e.m4a",
+      "text": "Wenn es wehtut, nehmen Sie eine Tablette. Wenn nicht – keine!",
+      "voice": "Eddy",
+      "seed": 20957006,
+      "heard": "Wenn es weh tut, nehmen Sie eine Tablette. Wenn nicht, keine.",
+      "endDb": -55.3
+    },
+    {
+      "file": "a5779c8581d4.m4a",
+      "text": "Ich bin nicht arbeitslos – ich bin Student! Aber ohne Arbeit kein Geld.",
+      "voice": "Rocko",
+      "seed": 20955427,
+      "heard": "Ich bin nicht arbeitslos, ich bin Student, aber ohne Arbeit kein Geld.",
+      "endDb": -62.3
+    }
+  ]
+}

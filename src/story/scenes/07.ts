@@ -58,6 +58,14 @@ const invite: SceneNode[] = [
   },
   narr("Sechs Wörter! Хауке записывает их как рекорд недели. Но ins Kino Йенсен не пойдёт."),
   { t: "gap", rule: ["freizeit/ende-2"], task: "Что сказал Йенсен?", text: "Ich kann nicht. Ich will ___.", options: ["segeln", "segle", "Segel"], answer: "segeln", ru: "Я не могу. Я хочу ходить под парусом." },
+  hauke("Er kann nicht, denn er will segeln!", "Он не может, потому что хочет ходить под парусом!"),
+  {
+    t: "game",
+    rule: ["moin/denn-1"],
+    task: "Запишите в блокнот причину одной фразой.",
+    hint: "denn места не занимает: после него обычный порядок, глагол второй.",
+    c: order(["Er", "kann", "nicht,", "denn", "er", "will", "segeln."], ["will", "denn", "Er", "segeln.", "nicht,", "er", "kann"]),
+  },
   narr("Mateo kommt — руки в муке до локтей. Его тоже зовут на Film."),
   mateo("Kino? Nein! Ich will nicht ins Kino. Ich will kochen!", "Кино? Нет! Я не хочу в кино. Я хочу готовить!", ["wollen"]),
   {
@@ -166,16 +174,16 @@ const week: SceneNode[] = [
   },
   {
     t: "game",
-    rule: ["freizeit/verabreden-1"],
+    rule: ["freizeit/verabreden-1", "moin/denn-1"],
     task: "Фрау Петерсен спрашивает о свободном дне. Ответьте.",
-    hint: "Отказ — leider и причина; потом новый день: Aber am … habe ich Zeit.",
+    hint: "Отказ — leider и причина с denn; потом новый день: Am … habe ich Zeit.",
     c: {
       kind: "chat",
       who: "Frau Petersen",
       voice: "Sandy",
       turns: [
         turn("Können Sie am Montag?", "Вы можете в понедельник?", "leider", [
-          ["leider", "Leider nicht. Am Montag arbeite ich.", ""],
+          ["leider", "Leider nicht, denn am Montag arbeite ich.", ""],
           ["kann", "Leider kann ich am Montag.", "Leider — «к сожалению», а дальше согласие? Скажите, что не можете: Leider nicht."],
           ["nicht", "Ich kann nicht am Montag kommen nicht.", "Одного nicht хватит: Am Montag kann ich nicht."],
         ]),
@@ -523,6 +531,17 @@ const beach: SceneNode[] = [
 const water: SceneNode[] = [
   { t: "pic", src: "07-water.jpg", alt: "Залив: «Sprotte» накренилась, мокрый Хауке в жёлтой куртке висит на борту лодки Йенсена, Йенсен в фуражке протягивает ему руку; на берегу ахает весь клуб" },
   hauke("Ich habe eine Idee! Herr Jensen will segeln – also segeln wir zu ihm!", "У меня идея! Господин Йенсен хочет под парусом — значит, мы к нему под парусом!"),
+  elif("Ich würde gern mitkommen! Aber ich kann nicht segeln.", "Я бы с удовольствием с тобой! Но я не умею ходить под парусом."),
+  {
+    t: "reply",
+    rule: ["moin/wuerde-1"],
+    task: "Скажите Хауке так же вежливо: вы бы тоже с удовольствием поплыли.",
+    options: [
+      ok("Ich würde auch gern mitkommen!"),
+      no("Ich würde auch gern mitkomme!", "После würde — инфинитив в конце: mitkommen."),
+      no("Ich werde auch gern mitkommen!", "werde — «буду». Вежливое «я бы» — würde."),
+    ],
+  },
   narr("Хауке толкает «Sprotte» ins Wasser. Die Idee ist super. Но ветер сильнее, чем Idee."),
   {
     t: "game",

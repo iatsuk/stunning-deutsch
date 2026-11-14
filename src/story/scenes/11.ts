@@ -70,6 +70,8 @@ const donnerstag: SceneNode[] = [
       no("Свободный столик в кафе", "Это было бы «Tisch frei». А тут — работа."),
     ],
   },
+  hauke("Ich bin nicht arbeitslos – ich bin Student! Aber ohne Arbeit kein Geld.", "Я не безработный — я студент! Но без работы нет денег."),
+  { t: "gap", rule: ["moin/un-los-1"], task: "Как одним словом сказать «без работы»?", text: "Hauke ist nicht arbeits___.", options: ["los", "bar", "un"], answer: "los", ru: "Хауке не безработный." },
   narr("In der Zeitung: Anzeigen. Хауке читает вслух, Элиф — через плечо."),
   {
     t: "game",

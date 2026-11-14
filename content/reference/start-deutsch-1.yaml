@@ -718,6 +718,7 @@ grammar:
   - id: praesens-stamm
     group: Глагол
     title: "Präsens со сменой корня (e → i, a → ä)"
+    rules: [moin/stamm-1]
     find: ['fährt|fährst|isst|nimmt|nimmst|spricht|sprichst|liest|sieht|siehst|schläft|schläfst|gibt|gibst|hilft|hilfst|trifft|triffst|läuft|läufst|trägt|weiß|weißt|vergisst']
   - id: sein
     group: Глагол
@@ -759,6 +760,7 @@ grammar:
   - id: konj2-haette-wuerde
     group: Глагол
     title: "Ich hätte gern …, Ich würde gern … как готовые выражения"
+    rules: [moin/haette-1, moin/wuerde-1]
     find: ['hätte|hättest|hätten|würde|würdest|würden|würdet']
   - id: koennen
     group: Глагол
@@ -833,18 +835,22 @@ grammar:
   - id: konnektoren
     group: Предложение
     title: "und, oder, aber"
+    rules: [moin/und-1]
     find: ['und|oder|aber']
   - id: denn
     group: Предложение
     title: "denn как союз причины"
+    rules: [moin/denn-1]
     find: [', denn (ich|du|er|sie|es|wir|ihr|Sie|man|der|die|das|mein|meine|dein|deine|sein|seine|ihr|ihre|unser|unsere|heute|morgen|hier|da)']
   - id: dann
     group: Предложение
     title: "dann"
+    rules: [moin/dann-1]
     find: ['dann|Dann']
   - id: wenn
     group: Предложение
     title: "wenn (понимание)"
+    rules: [moin/wenn-1]
     find: ['wenn|Wenn']
   - id: es-gibt
     group: Предложение
@@ -888,6 +894,7 @@ grammar:
   - id: demonstrativ
     group: Существительное и артикль
     title: "dieser, diese, dieses"
+    rules: [moin/dieser-1]
     find: ['dieser|diese|dieses|diesen|diesem']
   - id: possessiv
     group: Существительное и артикль
@@ -907,26 +914,32 @@ grammar:
   - id: pronomen-dat
     group: Местоимения
     title: "Местоимения в дательном (mir, dir, ihm, Ihnen)"
+    rules: [moin/wem-1]
     find: ['mir|dir|ihm|Ihnen']
   - id: dativ-verben
     group: Местоимения
     title: "Глаголы с дательным (gehören, gefallen, helfen, danken, geben)"
+    rules: [moin/wem-1]
     find: ['gehört|gehören|gefällt|gefallen|schmeckt|schmecken|hilft|hilfst|helfe|helfen|danke (Ihnen|dir|euch)|dankt|danken|(Gib|Geben Sie|gibst du|gibt) (mir|uns|ihm|ihr|dir)']
   - id: reflexiv
     group: Местоимения
     title: "sich, uns (Wir sehen uns)"
+    rules: [moin/uns-1]
     find: ['(sehen|treffen) uns|sich|freue mich|freust dich|freut sich|freuen uns']
   - id: wen-wem
     group: Местоимения
     title: "Вопросы wen? и wem?"
+    rules: [moin/wem-1]
     find: ['Wen|wen|Wem|wem']
   - id: man
     group: Местоимения
     title: "man"
+    rules: [moin/man-1]
     find: ['man']
   - id: indefinit
     group: Местоимения
     title: "etwas, nichts, alles, mehr"
+    rules: [moin/nichts-1]
     find: ['etwas|nichts|alles|mehr']
   - id: adjektiv-sein
     group: Прилагательное и числа
@@ -965,14 +978,17 @@ grammar:
   - id: zeit-ab-fuer
     group: Предлоги
     title: "ab и für во времени (ab Montag, für zwei Wochen)"
+    rules: [moin/zeit-1]
     find: ['ab (Montag|Dienstag|Mittwoch|Donnerstag|Freitag|Samstag|Sonntag|morgen|heute|jetzt|sofort|nächste|nächsten|nächster|Januar|Februar|März|April|Mai|Juni|Juli|August|September|Oktober|November|Dezember|[0-9]+)|für (eine|einen|ein|zwei|drei|vier|fünf|sechs|sieben|acht|zehn|vierzehn) (Woche|Wochen|Tag|Tage|Stunde|Stunden|Monat|Monate|Jahr|Jahre|Nacht|Nächte)']
   - id: zeit-nach-vor
     group: Предлоги
     title: "nach и vor во времени (nach dem Essen)"
+    rules: [moin/zeit-1]
     find: ['(nach|vor) (dem|der|einem|einer) (Essen|Frühstück|Mittagessen|Abendessen|Kurs|Unterricht|Arbeit|Training|Konzert|Film|Start|Regatta|Schule|Party|Termin|Urlaub|Reise|Fahrt|Regen|Sturm|Arzt)|vor (zwei|drei|vier|fünf|zehn|zwanzig|fünfzig|hundert) (Minuten|Stunden|Tagen|Wochen|Jahren)']
   - id: zeit-ueber
     group: Предлоги
     title: "über (über zwanzig Minuten)"
+    rules: [moin/zeit-1]
     find: ['über [a-zäöü0-9]+ (Minuten|Stunden|Jahre|Tage|Euro|Grad)']
   - id: hause
     group: Предлоги
@@ -982,26 +998,32 @@ grammar:
   - id: richtung-akk
     group: Предлоги
     title: "in, an, auf + винительный для направления (in die Stadt)"
+    rules: [moin/wohin-1]
     find: ['in die|in den|ins|an den|an die|ans|auf den|auf die|aufs']
   - id: unter
     group: Предлоги
     title: "unter"
+    rules: [moin/unter-1]
     find: ['unter']
   - id: ohne-fuer
     group: Предлоги
     title: "ohne и für (ohne dich, für meinen Freund)"
+    rules: [moin/fuer-ohne-1]
     find: ['ohne|für (dich|mich|Sie|ihn|uns|euch|meinen|meine|deinen|deine|seinen|seine|ihren|den|die|das|einen|eine)']
   - id: wb-ung
     group: Словообразование
     title: "Существительные на -ung"
+    rules: [moin/ung-1]
     find: ['[A-ZÄÖÜ][a-zäöü]+ung|[A-ZÄÖÜ][a-zäöü]+ungen']
   - id: wb-un-los-bar
     group: Словообразование
     title: "Прилагательные с un-, -los, -bar"
+    rules: [moin/un-los-1]
     find: ['unbekannt|ungesund|unglücklich|unmöglich|unfreundlich|unwichtig|unruhig|unpünktlich|[a-zäöü]+los|[a-zäöü]+bar']
   - id: farbe-komposita
     group: Словообразование
     title: "hellblau, dunkelblau"
+    rules: [moin/hell-dunkel-1]
     find: ['hellblau|dunkelblau|hellgrün|dunkelgrün|hellrot|dunkelrot|hellgrau|dunkelgrau|hellbraun|dunkelbraun']
   - id: partizip-adjektiv
     group: Словообразование

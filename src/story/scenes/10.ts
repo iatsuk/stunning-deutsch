@@ -144,6 +144,17 @@ const praxis: SceneNode[] = [
       { icon: "💊", de: "die Tablette", ru: "таблетка", note: "На стойке коробка с таблетками. Не для вас — и не для чайки." },
     ],
   },
+  elif("Anmeldung – von anmelden. Wie Wohnung – von wohnen!", "Анмельдунг — от anmelden. Как Wohnung — от wohnen!"),
+  {
+    t: "pick",
+    rule: ["moin/ung-1"],
+    task: "Элиф любит семьи слов. Какого рода Anmeldung?",
+    options: [
+      ok("die: слова на -ung — женского рода"),
+      no("der: как der Termin", "Termin — без -ung. Все слова на -ung — die: die Anmeldung, die Wohnung."),
+      no("das: как das Wartezimmer", "Род сложного слова — по последней части, а у слова на -ung — всегда die."),
+    ],
+  },
   moeller("Guten Morgen! Haben Sie einen Termin? Und Ihre Versichertenkarte, bitte!", "Доброе утро! У вас есть запись? И вашу страховую карточку, пожалуйста!", ["die Versichertenkarte"]),
   { t: "gap", task: "Что спрашивает фрау Мёллер?", text: "Haben Sie einen ___?", options: ["Termin", "Zahn", "Lift"], answer: "Termin", ru: "У вас есть запись?" },
   elif("Ja! Viertel nach zehn. Ich habe Kopfschmerzen. Hier ist meine Karte.", "Да! Четверть одиннадцатого. У меня болит голова. Вот моя карточка."),
@@ -437,6 +448,17 @@ const sommerS: SceneNode[] = [
       ["t2", "die zweite Tablette", "abend", "💊"],
       ["schlaf", "schlafen", "abend", "🛏️"],
     ]),
+  },
+  sommer("Wenn es wehtut, nehmen Sie eine Tablette. Wenn nicht – keine!", "Если болит — примите таблетку. Если нет — не надо!"),
+  {
+    t: "pick",
+    rule: ["moin/wenn-1"],
+    task: "Когда Йенсену можно принять ещё одну таблетку?",
+    options: [
+      ok("Только если болит"),
+      no("Каждый час", "Wenn es wehtut — только если болит."),
+      no("Никогда", "Можно — wenn es wehtut, если болит."),
+    ],
   },
   narr("Nils schreibt: «Frauke sagt: Herr Jensen kann nie wieder sprechen!!! Nie!!!» Der ganze Hafen weiß es."),
   {

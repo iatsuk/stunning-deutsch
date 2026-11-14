@@ -462,6 +462,36 @@ braun* — вводятся в рассказе сцен 1–3 там, где ц
 сцене 2 и «Я шпион» в конце главы (*Sie ist rot!* — род по местоимению, вещь по цвету). Главы 6–12
 пользуются ими как знакомыми словами; «Я шпион» вернётся в главе 8, «Фоторобот» — в главе 10.
 
+## Грамматика полного A1
+
+**Решение автора от 14 ноября 2026 года** (`A1-PLAN.md`): правило, которое ждёт экзамен A1, должно
+быть в игре и объяснено. Индекс покрытия нашёл 9 правил, которые встречались без объяснения, и 8,
+которых не было совсем. Каждое получило правило `moin/…` в `src/story/scenes/rules.ts` и первое
+действие в главе, где для него есть повод в сюжете. Возвраты в поздних главах — этап 4 плана: пока
+почти все эти правила встречаются в одной-двух главах, а порог закрепления — четыре.
+
+| Правило | Глава | Первое действие |
+|---|---|---|
+| `moin/stamm-1` — *spricht, fährt* | 1 | записи о языках Даны и Нильса |
+| `moin/und-1` — *und, oder, aber* | 3 | подпись к плакату Лотты: *…, aber Krümel ist ihr Bruder!* |
+| `moin/haette-1` — *Ich hätte gern …* | 4 | официант в сцене с Гретой: *Was hätten Sie gern?* |
+| `moin/fuer-ohne-1` — *für, ohne* | 4 | записка *Danke für den Kuchen*; переписка с официантом (*ohne Milch*) |
+| `moin/nichts-1` — *etwas, nichts, alles, mehr* | 5 | переписка с фрау Крузе: *Noch etwas? — Das ist alles.* |
+| `moin/dieser-1` — *dieser* | 5 | интерлюдия глазами фрау Крузе: *Diese Dose hier?* |
+| `moin/hell-dunkel-1` — *dunkelblau* | 5 | *Das Schild ist dunkelblau und weiß.* |
+| `moin/dann-1` — *zuerst, dann* | 6 | доска времени: *Dann trinkt er um halb sechs Tee.* |
+| `moin/uns-1` — *Wir treffen uns* | 6 | встреча перед чаем у Йенсена |
+| `moin/denn-1` — *denn* | 7 | отказ Йенсена; переписка с фрау Петерсен |
+| `moin/wuerde-1` — *Ich würde gern …* | 7 | Элиф и вы перед заплывом Хауке |
+| `moin/wem-1` — *wer, wen, wem; mir, dir, Ihnen* | 8 | тайник чайки: *Der Strandball gehört mir!* |
+| `moin/unter-1` — *unter, neben, hinter, vor* | 8 | тайник чайки: *Der Anhänger liegt unter dem Stuhl.* |
+| `moin/wohin-1` — *im Café — ins Café* | 9 | вечерний автобус: *ins Bett*, сортировка «где? — куда?» |
+| `moin/zeit-1` — *ab, für, über, nach, vor* | 9 | объявление о пароме: *ab vierzehn Uhr* |
+| `moin/man-1` — *man* | 9 | *Wo kauft man hier Fahrkarten?* |
+| `moin/ung-1` — *-ung* | 10 | регистратура: *Anmeldung — von anmelden* |
+| `moin/wenn-1` — *wenn* (понимание) | 10 | доктор Зоммер: *Wenn es wehtut, nehmen Sie eine Tablette.* |
+| `moin/un-los-1` — *un-, -los, -bar* | 11 | Хауке в объявлениях: *Ich bin nicht arbeitslos.* |
+
 ## Немецкий в рассказе
 
 Сейчас доля немецкого почти не растёт. Новая кривая — доля немецких слов в тексте шагов:

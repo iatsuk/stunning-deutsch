@@ -160,8 +160,18 @@ const bahnhof: SceneNode[] = [
     hint: "Gaarden ищите в середине строки. Fähre сегодня не ходит.",
     c: spot("Abfahrt", ["Linie 7|Holtenau|9:35", "Linie 11|Gaarden|9:40", "Fähre|Gaarden|heute nicht"], ["Linie 11", "9:40"]),
   },
+  { t: "say", who: "Lautsprecher", voice: "Eddy", de: "Die Fähre fährt wieder ab vierzehn Uhr. Nach dem Sturm!", ru: "Паром снова ходит с четырнадцати часов. После шторма!" },
+  { t: "gap", rule: ["moin/zeit-1"], task: "Запишите, когда снова пойдёт паром.", text: "Die Fähre fährt wieder ___ vierzehn Uhr.", options: ["ab", "für", "über"], answer: "ab", ru: "Паром снова ходит с четырнадцати часов." },
+  hauke("Vierzehn Uhr? Zu spät! Und wo kauft man hier Fahrkarten?", "В четырнадцать? Слишком поздно! А где тут покупают билеты?"),
   elif("Linie elf, neun Uhr vierzig! Und die Fahrkarte? Da ist ein Automat!", "Одиннадцатый, 9:40! А билет? Вон автомат!", ["die Linie"]),
   narr("Die Fahrkarte nach Gaarden kostet 2,90 €. {automat} ist alt und gelb — и сдачу не даёт."),
+  {
+    t: "type",
+    rule: ["moin/man-1"],
+    task: "Запишите в блокнот вопрос Хауке: «Где тут покупают билеты?»",
+    answers: ["Wo kauft man hier Fahrkarten?", "Wo kauft man Fahrkarten?"],
+    ru: "Где тут покупают билеты?",
+  },
   {
     t: "game",
     rule: ["einkaufen/preise-1"],
@@ -696,9 +706,9 @@ const abend: SceneNode[] = [
   { t: "gap", rule: ["stadt/hause-1"], task: "Куда едет команда?", text: "Wir fahren nach ___.", options: ["Hause", "Haus", "Häuser"], answer: "Hause", ru: "Мы едем домой." },
   {
     t: "game",
-    rule: ["stadt/hause-1", "stadt/check-2"],
+    rule: ["stadt/hause-1", "stadt/check-2", "moin/wohin-1"],
     task: "Элиф раскладывает фразы дня: где? или куда?",
-    hint: "zu Hause, beim Arzt — где; nach Hause, zum Arzt, zur Post — куда.",
+    hint: "zu Hause, beim Arzt, im Bus — где; nach Hause, zum Arzt, ins Bett — куда: in das = ins.",
     c: sort([["wo", "Wo?"], ["wohin", "Wohin?"]], [
       ["zuhause", "zu Hause", "wo", "🏠"],
       ["nachhause", "nach Hause", "wohin", "🚌"],
@@ -706,8 +716,11 @@ const abend: SceneNode[] = [
       ["zumarzt", "zum Arzt", "wohin", "➡️"],
       ["werkstatt", "in der Werkstatt", "wo", "🔧"],
       ["zurpost", "zur Post", "wohin", "✉️"],
+      ["imbus", "im Bus", "wo", "💺"],
+      ["insbett", "ins Bett", "wohin", "🛏️"],
     ]),
   },
+  hauke("Und ich gehe heute früh ins Bett!", "А я сегодня рано иду спать!"),
   narr("Im Bus — eine {nachricht} von Nils: «Greta schreibt: Herr Jensen ist beim Arzt!!! Morgen auch!!! Um zehn!!!»"),
   {
     t: "type",

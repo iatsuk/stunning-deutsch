@@ -171,7 +171,7 @@ const shop: SceneNode[] = [
   },
   {
     t: "game",
-    rule: ["einkaufen/pronomen-3"],
+    rule: ["einkaufen/pronomen-3", "moin/nichts-1"],
     task: "Фрау Крузе спрашивает Дану. Ответьте за неё.",
     hint: "die Hose → sie: Ich finde sie zu groß. Ich nehme sie.",
     c: {
@@ -432,6 +432,14 @@ const counter: SceneNode[] = [
   narr("Он молча кивает на {regal} с банками. Nicht auf Dunkelblau — на соседнюю {dose}."),
   kruse("Welche Farbe? Weiß? Ein Liter?", "Какую краску? Белую? Литр?"),
   { t: "gap", rule: ["einkaufen/welch-1"], task: "Что спрашивает фрау Крузе?", text: "___ Farbe? Weiß?", options: ["Welche", "Welcher", "Welches"], answer: "Welche", ru: "Какую краску? Белую?" },
+  kruse("Diese Dose hier?", "Вот эту банку?"),
+  {
+    t: "type",
+    rule: ["moin/dieser-1"],
+    task: "Фрау Крузе берёт банку с полки. Запишите её вопрос: «Вот эту банку?»",
+    answers: ["Diese Dose hier?", "Diese Dose?", "Diese hier?"],
+    ru: "Вот эту банку?",
+  },
   stranger("Moin.", "Привет."),
   narr("Moin heißt hier «ja». Фрау Крузе ставит банку на прилавок. На крышке: {weiss}."),
   kruse("Vierundzwanzig Euro, bitte.", "Двадцать четыре евро, пожалуйста."),
@@ -596,7 +604,7 @@ const colours: SceneNode[] = [
       no("Кто-то красит «Sprotte»", "Тогда зачем Грете маленькая кисть? Для лодки нужна большая."),
     ],
   },
-  { t: "gap", task: "Что сказала Элиф о табличке?", text: "Das Schild ist ___ und weiß.", options: ["dunkelblau", "rot", "gelb"], answer: "dunkelblau", ru: "Табличка тёмно-синяя с белым." },
+  { t: "gap", rule: ["moin/hell-dunkel-1"], task: "Что сказала Элиф о табличке?", text: "Das Schild ist ___ und weiß.", options: ["dunkelblau", "rot", "gelb"], answer: "dunkelblau", ru: "Табличка тёмно-синяя с белым." },
   {
     t: "game",
     task: "Подпишите улики на доске: соберите длинные слова из частей и выберите род.",

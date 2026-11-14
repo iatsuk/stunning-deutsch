@@ -172,6 +172,8 @@ const lager: SceneNode[] = [
     ],
   },
   elif("Seht ihr? Die Möwe ist kein Dieb. Sie sammelt nur!", "Видите? Чайка не вор. Она просто собирает!"),
+  hauke("Und wem gehört das alles? Moment … Der Strandball gehört mir!", "А чьё это всё? Минутку… Пляжный мяч — мой!"),
+  { t: "gap", rule: ["moin/wem-1"], task: "Чей мяч? Запишите за Хауке.", text: "Der Strandball gehört ___.", options: ["mir", "mich", "ich"], answer: "mir", ru: "Пляжный мяч — мой." },
   hauke("Und das Schild? Ist das Schild auch hier?", "А табличка? Табличка тоже здесь?"),
   elif("Nein! Das Schild ist zu groß und zu schwer. Eine Möwe wiegt ein Kilo!", "Нет! Табличка слишком большая и тяжёлая. Чайка весит килограмм!"),
   {
@@ -201,12 +203,13 @@ const lager: SceneNode[] = [
       no("Nein, das stimmt nicht. Das Schild ist zu schwerer.", "После sein прилагательное без окончания: zu schwer."),
     ],
   },
+  dana("Und der Anhänger liegt unter dem Stuhl!", "А бирка лежит под стулом!"),
   {
     t: "game",
-    rule: ["wohnen/wo-1", "wohnen/wo-2"],
+    rule: ["wohnen/wo-1", "wohnen/wo-2", "moin/unter-1"],
     task: "Запишите в блокнот, где что лежит в тайнике.",
-    hint: "Где? — дательный: der, das → dem; die → der. in + dem = im.",
-    c: gaps("Der Strandball liegt ___ Tisch. Das Foto liegt ___ Schrank. Die Teebeutel liegen ___ Kiste.", ["auf dem", "im", "in der", "in den", "auf den"], ["auf dem", "im", "in der"]),
+    hint: "Где? — дательный: der, das → dem; die → der. in + dem = im, unter + dem — раздельно.",
+    c: gaps("Der Strandball liegt ___ Tisch. Das Foto liegt ___ Schrank. Die Teebeutel liegen ___ Kiste. Der Anhänger liegt ___ Stuhl.", ["auf dem", "im", "in der", "unter dem", "in den", "unter den"], ["auf dem", "im", "in der", "unter dem"]),
   },
   {
     t: "type",

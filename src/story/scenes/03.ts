@@ -568,6 +568,13 @@ const poster: SceneNode[] = [
   },
   dana("Lotte hat keine Geschwister. Aber sie hat Krümel!", "У Лотты нет братьев и сестёр. Зато у неё есть Крюмель!"),
   { t: "gap", rule: ["familie/kein-2"], task: "Что сказала Дана о Лотте?", text: "Lotte hat ___ Geschwister.", options: ["keine", "kein", "nicht"], answer: "keine", ru: "У Лотты нет братьев и сестёр." },
+  {
+    t: "game",
+    rule: ["moin/und-1"],
+    task: "Лотта диктует подпись к плакату: сестры нет, зато Крюмель ей как брат. Соберите фразу.",
+    hint: "aber места не занимает: после него обычный порядок, глагол второй.",
+    c: order(["Lotte", "hat", "keine", "Schwester,", "aber", "Krümel", "ist", "ihr", "Bruder!"], ["ihr", "aber", "Schwester,", "Krümel", "Lotte", "Bruder!", "keine", "ist", "hat"]),
+  },
   narr("Лотта кивает и устраивает вам проверку. Тихо, но строго, как ihre Mutter."),
   {
     t: "game",

@@ -145,6 +145,8 @@ const message: SceneNode[] = [
       no("Ja! Um sechs Uhr dreißig sind wir da.", "Это снова 18:30. Чай — halb sechs, 17:30."),
     ],
   },
+  hauke("Super! Wir treffen uns um fünf vor dem Club.", "Отлично! Встречаемся в пять перед клубом."),
+  { t: "gap", rule: ["moin/uns-1"], task: "Запишите в блокнот, где встреча.", text: "Wir treffen ___ um fünf vor dem Club.", options: ["uns", "sich", "euch"], answer: "uns", ru: "Встречаемся в пять перед клубом." },
   {
     t: "clue",
     title: "Sprachnachricht",
@@ -596,6 +598,14 @@ const timeline: SceneNode[] = [
     task: "Разложите воскресенье по минутам: время и что было.",
     hint: "Загляните в блокнот: чек, голосовое, кассовая книга, журнал.",
     c: pairs([["Samstag, 17:05", "der Kassenbon: Dunkelblau"], ["Sonntag, 17:30", "Tee, alle hinten"], ["Sonntag, 17:35", "Frau mit Tasche, Bus"], ["Sonntag, 18:00", "Herr Jensen macht zu"]]),
+  },
+  dana("Zuerst kauft er Farbe. Dann trinkt er Tee – um halb sechs, wie immer.", "Сначала он покупает краску. Потом пьёт чай — в половине шестого, как всегда."),
+  {
+    t: "game",
+    rule: ["moin/dann-1"],
+    task: "Запишите на доске второй шаг Moin-Mann: соберите фразу.",
+    hint: "dann занимает первое место: глагол идёт сразу за ним, подлежащее — после.",
+    c: order(["Dann", "trinkt", "er", "um", "halb", "sechs", "Tee."], ["er", "Tee.", "halb", "Dann", "sechs", "trinkt", "um"]),
   },
   hauke("Herr Jensen weiß alles. Seit Sonntag!", "Господин Йенсен всё знает. С воскресенья!"),
   { t: "gap", task: "Что говорит Хауке?", text: "Herr Jensen ___ alles.", options: ["weiß", "weißt", "wissen"], answer: "weiß", ru: "Господин Йенсен всё знает." },
