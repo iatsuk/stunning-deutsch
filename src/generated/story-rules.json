@@ -4475,5 +4475,420 @@
     2
    ]
   }
+ },
+ "gesundheit/check-1": {
+  "point": "*Meine Hand tut weh.* Мн. ч.: *Meine Ohren tun weh.*",
+  "read": "*Meine Hand tut weh.* Эта фраза прямо называет место боли. Слова на *-schmerzen* тоже встречаются, но здесь удобно использовать *wehtun*. Следите за числом: *Meine Ohren tun weh*, *Meine Beine tun weh*. Глагол согласуется с тем, что болит, а не с говорящим: *Hand tut*, но *Ohren tun*.",
+  "table": {
+   "title": "Was tut weh?",
+   "ru": "Что болит",
+   "head": [
+    "wehtun",
+    "Ich habe …schmerzen",
+    "По-русски"
+   ],
+   "rows": [
+    [
+     "Mein *Kopf* tut weh.",
+     "Ich habe *Kopf*schmerzen.",
+     "болит голова"
+    ],
+    [
+     "Mein *Hals* tut weh.",
+     "Ich habe *Hals*schmerzen.",
+     "болит горло"
+    ],
+    [
+     "Mein *Bauch* tut weh.",
+     "Ich habe *Bauch*schmerzen.",
+     "болит живот"
+    ],
+    [
+     "Mein *Rücken* tut weh.",
+     "Ich habe *Rücken*schmerzen.",
+     "болит спина"
+    ],
+    [
+     "Mein *Zahn* tut weh.",
+     "Ich habe *Zahn*schmerzen.",
+     "болит зуб"
+    ],
+    [
+     "Meine *Ohren* tun weh.",
+     "Ich habe *Ohren*schmerzen.",
+     "болят уши"
+    ],
+    [
+     "Meine *Hand* tut weh.",
+     "–",
+     "болит рука"
+    ]
+   ],
+   "ruCols": [
+    2
+   ],
+   "note": "Слова на *-schmerzen* — всегда во множественном числе и без артикля."
+  },
+  "focus": [
+   5,
+   6
+  ]
+ },
+ "gesundheit/imperativ-3": {
+  "point": "Умлаут пропадает: *Schlaf!*; *e → i* остаётся: *Nimm!*, *Iss!*",
+  "read": "Если в форме *du* меняется гласная, смотрите, какая. Умлаут пропадает: *du schläfst* → *Schlaf!* А замена *e* на *i* остаётся: *du nimmst* → *Nimm!*, *du isst* → *Iss!* У *ihr* сложностей нет: *Schlaft!*, *Nehmt!*, *Esst!* Отделяемая приставка, как всегда, уходит в конец: *Bring bitte Schokolade mit!* Точно так же, как в вежливой просьбе из практики: *Bringen Sie bitte … mit!*",
+  "table": {
+   "title": "Imperativ",
+   "ru": "Повелительное наклонение",
+   "head": [
+    "Präsens",
+    "du",
+    "ihr",
+    "Sie"
+   ],
+   "rows": [
+    [
+     "du trink+st",
+     "Trink!",
+     "Trink+t!",
+     "Trinken Sie!"
+    ],
+    [
+     "du bleib+st",
+     "Bleib!",
+     "Bleib+t!",
+     "Bleiben Sie!"
+    ],
+    [
+     "du schläf+st",
+     "Schlaf!",
+     "Schlaf+t!",
+     "Schlafen Sie!"
+    ],
+    [
+     "du nimm+st",
+     "Nimm!",
+     "Nehm+t!",
+     "Nehmen Sie!"
+    ],
+    [
+     "du iss+t",
+     "Iss!",
+     "Ess+t!",
+     "Essen Sie!"
+    ],
+    [
+     "du bring+st … mit",
+     "Bring … mit!",
+     "Bring+t … mit!",
+     "Bringen Sie … mit!"
+    ]
+   ],
+   "ruCols": [],
+   "note": "*du*: форма без *du* и без *-st*. *ihr*: форма без *ihr*. *Sie*: как инфинитив, *Sie* — сразу за глаголом."
+  },
+  "focus": [
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "gesundheit/check-2": {
+  "point": "*Darf ich …?* — «можно мне …?»; инфинитив в конце",
+  "read": "*Darf ich morgen zum Kurs gehen?* Разрешение — это *dürfen*. В вопросе без W-слова модальный глагол встаёт первым, *ich* — сразу за ним, а инфинитив *gehen* по-прежнему в конце: рамка никуда не делась. Вопрос *Muss ich morgen zum Kurs gehen?* значил бы «я обязан идти?» — а это совсем другое.",
+  "rows": [
+   {
+    "slots": [
+     [],
+     [
+      {
+       "key": "darf",
+       "text": "Darf"
+      }
+     ],
+     [
+      {
+       "key": "ich",
+       "text": "ich"
+      },
+      {
+       "key": "morgen",
+       "text": "morgen"
+      },
+      {
+       "key": "zum",
+       "text": "zum"
+      },
+      {
+       "key": "kurs",
+       "text": "Kurs"
+      }
+     ],
+     [
+      {
+       "key": "geh",
+       "text": "geh+en"
+      }
+     ]
+    ],
+    "punct": "?",
+    "plain": "Darf ich morgen zum Kurs gehen?",
+    "ru": "Можно мне завтра на курс?",
+    "audio": "audio/ec47f2a0bdda.m4a"
+   }
+  ]
+ },
+ "moin/sollen-1": {
+  "point": "*Ich soll Tee trinken.* — так велел или просит другой; *Ich muss im Bett bleiben.* — так надо",
+  "read": "*sollen* — «должен», когда этого хочет кто-то другой: врач, начальник, друг. Врач говорит Йенсену: *Trinken Sie viel Tee!* — Йенсен пересказывает: *Ich soll viel Tee trinken.* А *müssen* — надо, потому что так сложилось: *Ich bin krank, ich muss im Bett bleiben.* Формы — как у *können*: у *ich* и *er* нет окончания: *ich soll*, *er soll*. На экзамене часто спрашивают *Was soll Elif mitbringen?* — что её попросили принести. Ответ ищите в том, что сказал другой человек.",
+  "table": {
+   "title": "sollen",
+   "ru": "должен (так велели, так просят)",
+   "head": [
+    "Person",
+    "sollen",
+    "Beispiel"
+   ],
+   "rows": [
+    [
+     "ich",
+     "soll",
+     "Ich soll Tee trinken."
+    ],
+    [
+     "du",
+     "soll+st",
+     "Du sollst im Bett bleiben."
+    ],
+    [
+     "er / sie / es",
+     "soll",
+     "Herr Jensen soll nicht sprechen."
+    ],
+    [
+     "wir",
+     "soll+en",
+     "Wir sollen um elf kommen."
+    ],
+    [
+     "ihr",
+     "soll+t",
+     "Ihr sollt Teller mitbringen."
+    ],
+    [
+     "sie / Sie",
+     "soll+en",
+     "Was sollen wir mitbringen?"
+    ]
+   ],
+   "ruCols": [],
+   "note": "Врач: *Trinken Sie viel Tee!* → Йенсен: *Ich soll viel Tee trinken.* — чужой совет или просьба."
+  }
+ },
+ "gesundheit/muessen-3": {
+  "point": "*ich muss, du musst, er muss* · *ich darf, du darfst, er darf*",
+  "read": "Формы *müssen* и *dürfen* устроены как у *können*: у *ich* и *er* окончания нет — *ich muss*, *er muss*, *ich darf*, *sie darf*. В единственном числе пропадает умлаут: *müssen* → *ich muss*, *dürfen* → *du darfst*. Во множественном он возвращается: *wir müssen*, *ihr dürft*. Частая ошибка — *er musst* по образцу *er macht*.",
+  "table": {
+   "title": "müssen und dürfen",
+   "ru": "нужно и можно",
+   "head": [
+    "Person",
+    "müssen",
+    "dürfen"
+   ],
+   "rows": [
+    [
+     "ich",
+     "muss",
+     "darf"
+    ],
+    [
+     "du",
+     "muss+t",
+     "darf+st"
+    ],
+    [
+     "er / sie / es",
+     "muss",
+     "darf"
+    ],
+    [
+     "wir",
+     "müss+en",
+     "dürf+en"
+    ],
+    [
+     "ihr",
+     "müss+t",
+     "dürf+t"
+    ],
+    [
+     "sie / Sie",
+     "müss+en",
+     "dürf+en"
+    ]
+   ],
+   "ruCols": [],
+   "note": "У *ich* и *er* окончания нет. Умлаут — только во множественном числе."
+  }
+ },
+ "gesundheit/imperativ-2": {
+  "point": "*Bleib!* — другу, *Bleibt!* — друзьям, *Bleiben Sie!* — вежливо",
+  "read": "Местоимения исчезли, глагол встал первым, а первая позиция опустела — как в вопросе да/нет. У *du* пропало и окончание *-st*: *Bleib!* У *ihr* форма не изменилась: *Bleibt!* А вежливое *Sie*, как вы помните из девятой темы, остаётся за глаголом: *Bleiben Sie im Bett!* Слово *bitte* делает любую из трёх форм вежливой просьбой.",
+  "rows": [
+   {
+    "slots": [
+     [],
+     [
+      {
+       "key": "bleib",
+       "text": "Bleib"
+      }
+     ],
+     [
+      {
+       "key": "im",
+       "text": "im"
+      },
+      {
+       "key": "bett",
+       "text": "Bett"
+      }
+     ],
+     []
+    ],
+    "punct": "!",
+    "plain": "Bleib im Bett!",
+    "ru": "Лежи в постели!",
+    "audio": "audio/2f19e65ba662.m4a"
+   },
+   {
+    "slots": [
+     [],
+     [
+      {
+       "key": "bleib",
+       "text": "Bleib+t"
+      }
+     ],
+     [
+      {
+       "key": "im",
+       "text": "im"
+      },
+      {
+       "key": "bett",
+       "text": "Bett"
+      }
+     ],
+     []
+    ],
+    "punct": "!",
+    "plain": "Bleibt im Bett!",
+    "ru": "Лежите в постели! (друзьям)",
+    "audio": "audio/95fb06fa59ed.m4a"
+   },
+   {
+    "slots": [
+     [],
+     [
+      {
+       "key": "bleib",
+       "text": "Bleib+en"
+      }
+     ],
+     [
+      {
+       "key": "sie",
+       "text": "Sie"
+      },
+      {
+       "key": "im",
+       "text": "im"
+      },
+      {
+       "key": "bett",
+       "text": "Bett"
+      }
+     ],
+     []
+    ],
+    "punct": "!",
+    "plain": "Bleiben Sie im Bett!",
+    "ru": "Лежите в постели! (вежливо)",
+    "audio": "audio/89b3b10a98b1.m4a"
+   }
+  ]
+ },
+ "moin/modal-1": {
+  "point": "Модальные глаголы: у *ich* и *er* одна форма без окончания, второй глагол — инфинитив в конце",
+  "read": "Семь модальных глаголов A1 устроены одинаково. У *ich* и *er* одна и та же форма без окончания: *ich kann — er kann*, *ich muss — er muss*. В единственном числе у многих другая гласная: *können → kann*, *müssen → muss*, *dürfen → darf*, *mögen → mag*, *wollen → will*; только *sollen* её не меняет. *möchten* — вежливая форма от *mögen*: *ich möchte, er möchte*. Второй глагол стоит в инфинитиве в конце: *Herr Jensen darf heute nicht sprechen.*",
+  "table": {
+   "title": "Modalverben",
+   "ru": "модальные глаголы",
+   "head": [
+    "Infinitiv",
+    "ich / er",
+    "du",
+    "wir / sie / Sie",
+    "Значение"
+   ],
+   "rows": [
+    [
+     "können",
+     "kann",
+     "kann+st",
+     "könn+en",
+     "мочь, уметь"
+    ],
+    [
+     "müssen",
+     "muss",
+     "muss+t",
+     "müss+en",
+     "нужно, надо"
+    ],
+    [
+     "dürfen",
+     "darf",
+     "darf+st",
+     "dürf+en",
+     "можно, разрешено"
+    ],
+    [
+     "wollen",
+     "will",
+     "will+st",
+     "woll+en",
+     "хотеть"
+    ],
+    [
+     "sollen",
+     "soll",
+     "soll+st",
+     "soll+en",
+     "так велели"
+    ],
+    [
+     "mögen",
+     "mag",
+     "mag+st",
+     "mög+en",
+     "любить"
+    ],
+    [
+     "möchten",
+     "möchte",
+     "möchte+st",
+     "möcht+en",
+     "хотел бы"
+    ]
+   ],
+   "ruCols": [
+    4
+   ],
+   "note": "*Herr Jensen darf nicht sprechen. Er soll Tee trinken. Er möchte segeln.* — модальный второй, инфинитив в конце."
+  }
  }
 }

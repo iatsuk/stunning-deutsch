@@ -58,4 +58,57 @@ export const SCENE_RULES: Record<string, SceneRule> = {
       note: "*Ich mag Fisch* — люблю рыбу. *Ich esse gern Fisch* — люблю её есть: *gern* всегда при глаголе.",
     },
   },
+  // sollen ждёт экзамен A1 (вопросы «Was soll … mitbringen?»), а классические уроки дают его только в A2.
+  "moin/sollen-1": {
+    chapter: 10,
+    point: "*Ich soll Tee trinken.* — так велел или просит другой; *Ich muss im Bett bleiben.* — так надо",
+    read:
+      "*sollen* — «должен», когда этого хочет кто-то другой: врач, начальник, друг. Врач говорит Йенсену: " +
+      "*Trinken Sie viel Tee!* — Йенсен пересказывает: *Ich soll viel Tee trinken.* А *müssen* — надо, потому что " +
+      "так сложилось: *Ich bin krank, ich muss im Bett bleiben.* Формы — как у *können*: у *ich* и *er* нет " +
+      "окончания: *ich soll*, *er soll*. На экзамене часто спрашивают *Was soll Elif mitbringen?* — что её " +
+      "попросили принести. Ответ ищите в том, что сказал другой человек.",
+    table: {
+      title: "sollen",
+      ru: "должен (так велели, так просят)",
+      head: ["Person", "sollen", "Beispiel"],
+      rows: [
+        ["ich", "soll", "Ich soll Tee trinken."],
+        ["du", "soll+st", "Du sollst im Bett bleiben."],
+        ["er / sie / es", "soll", "Herr Jensen soll nicht sprechen."],
+        ["wir", "soll+en", "Wir sollen um elf kommen."],
+        ["ihr", "soll+t", "Ihr sollt Teller mitbringen."],
+        ["sie / Sie", "soll+en", "Was sollen wir mitbringen?"],
+      ],
+      ruCols: [],
+      note: "Врач: *Trinken Sie viel Tee!* → Йенсен: *Ich soll viel Tee trinken.* — чужой совет или просьба.",
+    },
+  },
+  // Сводная таблица в конце главы 10: все модальные глаголы A1 рядом, вместе с mögen и sollen сверх уроков.
+  "moin/modal-1": {
+    chapter: 10,
+    point: "Модальные глаголы: у *ich* и *er* одна форма без окончания, второй глагол — инфинитив в конце",
+    read:
+      "Семь модальных глаголов A1 устроены одинаково. У *ich* и *er* одна и та же форма без окончания: " +
+      "*ich kann — er kann*, *ich muss — er muss*. В единственном числе у многих другая гласная: *können → kann*, " +
+      "*müssen → muss*, *dürfen → darf*, *mögen → mag*, *wollen → will*; только *sollen* её не меняет. " +
+      "*möchten* — вежливая форма от *mögen*: *ich möchte, er möchte*. Второй глагол стоит в инфинитиве в " +
+      "конце: *Herr Jensen darf heute nicht sprechen.*",
+    table: {
+      title: "Modalverben",
+      ru: "модальные глаголы",
+      head: ["Infinitiv", "ich / er", "du", "wir / sie / Sie", "Значение"],
+      rows: [
+        ["können", "kann", "kann+st", "könn+en", "мочь, уметь"],
+        ["müssen", "muss", "muss+t", "müss+en", "нужно, надо"],
+        ["dürfen", "darf", "darf+st", "dürf+en", "можно, разрешено"],
+        ["wollen", "will", "will+st", "woll+en", "хотеть"],
+        ["sollen", "soll", "soll+st", "soll+en", "так велели"],
+        ["mögen", "mag", "mag+st", "mög+en", "любить"],
+        ["möchten", "möchte", "möchte+st", "möcht+en", "хотел бы"],
+      ],
+      ruCols: [4],
+      note: "*Herr Jensen darf nicht sprechen. Er soll Tee trinken. Er möchte segeln.* — модальный второй, инфинитив в конце.",
+    },
+  },
 };

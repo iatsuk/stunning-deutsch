@@ -20,14 +20,14 @@ const lessons = readdirSync(dir)
   .filter((l) => l.order <= chapter);
 const words = (s) => (s.replace(/[*+]/g, "").match(/[A-Za-zÄÖÜäöüß]+/g) ?? []).map((w) => w.toLowerCase());
 const NAMES = new Set(
-  "hauke dana jensen greta nils mateo elif frauke petersen lotte kruse wulff derya kiel gaarden holtenau sprotte moin kiellinie kieler woche opa oma hamburg argentinien türkei ostsee hansen hel xl xxl herr herrn frau club team tage tag ok".split(" "),
+  "hauke dana jensen greta nils mateo elif frauke petersen lotte kruse wulff derya kiel gaarden holtenau sprotte moin kiellinie kieler woche opa oma hamburg argentinien türkei ostsee hansen hel xl xxl herr herrn frau club team tage tag ok yilmaz möller sommer dr".split(" "),
 );
 const FUNCTION = `der die das den dem des ein eine einen einem einer eines kein keine keinen keinem keiner ich du er sie es wir ihr
 mich dich ihn uns euch mir dir ihm ihnen sich mein meine meinen dein deine sein seine ihre ihren unser unsere euer bin bist ist sind
 seid habe hast hat haben habt und oder aber nicht ja nein doch auch sehr hier da so zu für mit von aus in im an am auf bei um wie
 was wer wo woher gut danke bitte alle alles man noch nur jetzt heute`.split(/\s+/);
 // Прозрачные для русскоязычного игрока слова и подписи кнопок игры («Richtig / Falsch»).
-const CLEAR = "kiosk journal diagnose test super profi polizei lotto overall party film foto handy richtig falsch".split(" ");
+const CLEAR = "kiosk journal diagnose test super profi polizei lotto overall party film foto handy doktor richtig falsch".split(" ");
 const NUMBER = /^(null|eins|zwei|drei|vier|fünf|sechs|sieben|acht|neun|zehn|elf|zwölf|\p{L}*zehn|\p{L}*zig|\p{L}*ßig|hundert|tausend)$/u;
 
 const known = new Set([...FUNCTION, ...CLEAR]);

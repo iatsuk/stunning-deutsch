@@ -1,0 +1,391 @@
+{
+  "date": "2026-11-14",
+  "scope": "Chapter 10 of the Moin scene prototype (src/story/scenes/10.ts): character lines, replays, the voicemail of Frau Petersen, lock, oral practice and new story phrases with plurals",
+  "model": "k2-fsa/OmniVoice",
+  "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+  "candidatesPerPhrase": 3,
+  "asr": "openai/whisper-large-v3",
+  "notes": [
+    "Each phrase has three takes; the chosen take has the closest transcript, an end level below -32 dB and no fragment flagged by tails.py. Two takes flagged by tails.py were not used; tails.py passes on all 47 imported files.",
+    "The doctor's name is written 'Doktor Sommer' in spoken lines so that the voice does not spell 'Dr.'; Whisper writes it back as 'Dr. Sommer'.",
+    "Whisper hears Gaarden as 'Garten' and Mateo as 'Matteo'; the takes say the names as in the earlier chapters."
+  ],
+  "files": [
+    {
+      "file": "090961a657d4.m4a",
+      "text": "das Ärztehaus, die Ärztehäuser",
+      "voice": "Anna",
+      "seed": 20916003,
+      "heard": "Das Ärztehaus, die Ärztehäuser.",
+      "endDb": -51.1
+    },
+    {
+      "file": "ca136fef7be1.m4a",
+      "text": "der Notizblock, die Notizblöcke",
+      "voice": "Anna",
+      "seed": 20416193,
+      "heard": "Der Notizblock, die Notizblöcke.",
+      "endDb": -49.1
+    },
+    {
+      "file": "bb1f0b1edb66.m4a",
+      "text": "die Zeitschrift, die Zeitschriften",
+      "voice": "Anna",
+      "seed": 21220853,
+      "heard": "Die Zeitschrift, die Zeitschriften",
+      "endDb": -49.4
+    },
+    {
+      "file": "f25d03624630.m4a",
+      "text": "Hatschi! Ich habe eine Erkältung. Mein Kopf tut weh, mein Hals tut weh …",
+      "voice": "Rocko",
+      "seed": 20921407,
+      "heard": "Hachi, ich habe eine Erkältung. Mein Kopf tut weh, mein Hals tut weh.",
+      "endDb": -65.8
+    },
+    {
+      "file": "141bc9861282.m4a",
+      "text": "Diagnose: Gaarden, Regen, Fahrrad. Du hast Fieber. Bleib im Bett!",
+      "voice": "Anna",
+      "seed": 20948433,
+      "heard": "Diagnose. Garten, Regen, Fahrrad. Du hast Fieber. Bleib im Bett.",
+      "endDb": -61.8
+    },
+    {
+      "file": "4850e4d61a75.m4a",
+      "text": "Die Möwe hat das Medikament gegessen? Kein Problem. Möwen werden nicht krank!",
+      "voice": "Flo",
+      "seed": 21081301,
+      "heard": "Die Möwe hat das Medikament gegessen? Kein Problem, Möwen werden nicht krank.",
+      "endDb": -55.2
+    },
+    {
+      "file": "729eac6514db.m4a",
+      "text": "Und hat die Möwe Ohren? Ich sehe keine Ohren!",
+      "voice": "Rocko",
+      "seed": 20973802,
+      "heard": "Und hat die Möwe Ohren? Ich sehe keine Ohren.",
+      "endDb": -58.2
+    },
+    {
+      "file": "a861e7037a90.m4a",
+      "text": "Natürlich! Hinter den Augen. Sie hört alles – auch dein Hatschi!",
+      "voice": "Flo",
+      "seed": 20319984,
+      "heard": "Natürlich hinter den Augen. Sie hört alles, auch dein Hatschi.",
+      "endDb": -45.7
+    },
+    {
+      "file": "8ee045e5ca7a.m4a",
+      "text": "Ich habe auch Kopfschmerzen – vom Sturm. Ich habe einen Termin: heute, Viertel nach zehn, Praxis Doktor Sommer!",
+      "voice": "Flo",
+      "seed": 20774921,
+      "heard": "Ich habe auch Kopfschmerzen vom Sturm. Ich habe einen Termin. Heute, Viertel nach zehn, Praxis Dr. Sommer.",
+      "endDb": -46.9
+    },
+    {
+      "file": "4e80ce87135e.m4a",
+      "text": "Doktor Sommer? Da ist Herr Jensen um zehn! Ich kenne Doktor Sommer. Wir kommen mit!",
+      "voice": "Anna",
+      "seed": 21016092,
+      "heard": "Dr. Sommer? Da ist Herr Jensen um zehn. Ich kenne Dr. Sommer. Wir kommen mit.",
+      "endDb": -48.1
+    },
+    {
+      "file": "c86fab514681.m4a",
+      "text": "Hauke ist krank? Ich koche Suppe! Iss, Hauke!",
+      "voice": "Reed",
+      "seed": 20424400,
+      "heard": "Hauke ist krank, ich koche Suppe, iss Hauke!",
+      "endDb": -43.6
+    },
+    {
+      "file": "8994aa562bb9.m4a",
+      "text": "Dritter Stock! Und bitte langsam – Elif hat Kopfschmerzen.",
+      "voice": "Anna",
+      "seed": 21200153,
+      "heard": "Dritter Stock. Und bitte langsam, Elif hat Kopfschmerzen.",
+      "endDb": -55.5
+    },
+    {
+      "file": "bfa4de7db345.m4a",
+      "text": "Guten Morgen! Haben Sie einen Termin? Und Ihre Versichertenkarte, bitte!",
+      "voice": "Shelley",
+      "seed": 20590548,
+      "heard": "Guten Morgen. Haben Sie einen Termin und Ihre Versichertenkarte bitte.",
+      "endDb": -63.6
+    },
+    {
+      "file": "a93f278f4169.m4a",
+      "text": "Ja! Viertel nach zehn. Ich habe Kopfschmerzen. Hier ist meine Karte.",
+      "voice": "Flo",
+      "seed": 20994633,
+      "heard": "Ja, Viertel nach zehn. Ich habe Kopfschmerzen. Hier ist meine Karte.",
+      "endDb": -44.1
+    },
+    {
+      "file": "48201845da90.m4a",
+      "text": "Und die zwei? Ohne Termin? Nur Patienten im Wartezimmer!",
+      "voice": "Shelley",
+      "seed": 20645488,
+      "heard": "Und die zwei? Ohne Termin? Nur Patienten im Wartezimmer.",
+      "endDb": -48.9
+    },
+    {
+      "file": "332fda70c069.m4a",
+      "text": "Das sind meine Freunde. Ich habe Kopfschmerzen – ich brauche Hilfe!",
+      "voice": "Flo",
+      "seed": 20578727,
+      "heard": "Das sind meine Freunde. Ich habe Kopfschmerzen. Ich brauche Hilfe.",
+      "endDb": -48.4
+    },
+    {
+      "file": "04a0e8b6afe0.m4a",
+      "text": "Na gut. Im Wartezimmer. Aber leise, bitte!",
+      "voice": "Shelley",
+      "seed": 20842014,
+      "heard": "Na gut, im Wartezimmer, aber leise bitte.",
+      "endDb": -55.9
+    },
+    {
+      "file": "c65fbf644346.m4a",
+      "text": "Herr Jensen! Und Greta! Hier sind sie!",
+      "voice": "Flo",
+      "seed": 20488708,
+      "heard": "Herr Jensen und Greta, hier sind Sie.",
+      "endDb": -46.0
+    },
+    {
+      "file": "e1e94f4734e2.m4a",
+      "text": "Noch eine Frage? Er schreibt mehr als er spricht!",
+      "voice": "Flo",
+      "seed": 20973088,
+      "heard": "Noch eine Frage. Er schreibt mehr, als er spricht.",
+      "endDb": -49.1
+    },
+    {
+      "file": "7c826416a0f3.m4a",
+      "text": "Kein Termin? Nehmen Sie meinen! Mein Kopf ist schon besser.",
+      "voice": "Flo",
+      "seed": 21074161,
+      "heard": "Kein Termin? Nehmen Sie meinen, mein Kopf ist schon besser.",
+      "endDb": -48.1
+    },
+    {
+      "file": "26fdc27d3815.m4a",
+      "text": "Psst! Ich sage nichts. Hier bin ich keine Ärztin. Schweigepflicht!",
+      "voice": "Anna",
+      "seed": 20828661,
+      "heard": "Psst, ich sage nichts. Hier bin ich keine Ärztin. Schweigepflicht.",
+      "endDb": -60.9
+    },
+    {
+      "file": "bea4dcbe69af.m4a",
+      "text": "Herr Jensen, bitte! Doktor Sommer wartet.",
+      "voice": "Shelley",
+      "seed": 20641423,
+      "heard": "Herr Jensen, bitte. Dr. Sommer wartet.",
+      "endDb": -56.3
+    },
+    {
+      "file": "76d43e4fe467.m4a",
+      "text": "Das Schild ist schwer – und Greta trägt es. Aber warum?",
+      "voice": "Flo",
+      "seed": 20844389,
+      "heard": "Das Schild ist schwer und Greta trägt es. Aber warum?",
+      "endDb": -33.6
+    },
+    {
+      "file": "785f23235501.m4a",
+      "text": "Herr Jensen ist nicht sehr krank. Aber der Hals! Er darf bis Samstag nicht sprechen.",
+      "voice": "Eddy",
+      "seed": 21021183,
+      "heard": "Herr Jensen ist nicht sehr krank. Aber der Hals, er darf bis Samstag nicht sprechen.",
+      "endDb": -62.0
+    },
+    {
+      "file": "1a89f43d3aaa.m4a",
+      "text": "Und er soll viel Tee trinken und zu Hause bleiben.",
+      "voice": "Eddy",
+      "seed": 20756170,
+      "heard": "Und er soll viel Tee trinken und zu Hause bleiben.",
+      "endDb": -60.9
+    },
+    {
+      "file": "1517f87b8484.m4a",
+      "text": "Bis Samstag? Samstag ist Kieler Woche! Und der Start!",
+      "voice": "Anna",
+      "seed": 20536548,
+      "heard": "Bis Samstag? Samstag ist Kieler Woche und der Start.",
+      "endDb": -52.4
+    },
+    {
+      "file": "c2a14701a8b9.m4a",
+      "text": "Eine ganze Seite! Herr Jensen, Sie schreiben heute wie ein Buch!",
+      "voice": "Flo",
+      "seed": 21091127,
+      "heard": "Eine ganze Seite. Herr Jensen, Sie schreiben heute wie ein Buch.",
+      "endDb": -48.8
+    },
+    {
+      "file": "8ef66735fa68.m4a",
+      "text": "Das Rezept: am Morgen eine Tablette und Tee. Am Mittag Suppe. Am Abend die zweite Tablette – und schlafen!",
+      "voice": "Eddy",
+      "seed": 20950792,
+      "heard": "Das Rezept. Am Morgen eine Tablette und Tee. Am Mittag Suppe. Am Abend die zweite Tablette und schlafen.",
+      "endDb": -57.4
+    },
+    {
+      "file": "baa61072cdc7.m4a",
+      "text": "Fragen Sie Greta? Greta ist jetzt bei Doktor Sommer – mit dem Rücken.",
+      "voice": "Anna",
+      "seed": 20557735,
+      "heard": "Fragen Sie Greta. Greta ist jetzt bei Dr. Sommer. Mit dem Rücken.",
+      "endDb": -41.9
+    },
+    {
+      "file": "dc607d918801.m4a",
+      "text": "Herr Jensen! Ich habe es versprochen: Ihre Versichertenkarte! Von Herrn Wulff!",
+      "voice": "Sandy",
+      "seed": 20929616,
+      "heard": "Herr Jensen, ich habe es versprochen, Ihre Versichertenkarte. Von Herrn Wulff.",
+      "endDb": -61.7
+    },
+    {
+      "file": "e7ff02fa24cd.m4a",
+      "text": "Der ganze Hafen sagt: Er spricht nie wieder! Ist das wahr?",
+      "voice": "Sandy",
+      "seed": 20885613,
+      "heard": "Der ganze Hafen sagt, er spricht nie wieder. Ist das wahr?",
+      "endDb": -40.8
+    },
+    {
+      "file": "46de9d505064.m4a",
+      "text": "Nur bis Samstag? Gut! Das sage ich dem ganzen Hafen!",
+      "voice": "Sandy",
+      "seed": 21239347,
+      "heard": "Nur bis Samstag? Gut, das sage ich dem ganzen Hafen.",
+      "endDb": -43.9
+    },
+    {
+      "file": "d82d7554e515.m4a",
+      "text": "Möwen werden nicht krank. Sie braucht kein Rezept!",
+      "voice": "Flo",
+      "seed": 20894820,
+      "heard": "Möwen werden nicht krank. Sie braucht kein Rezept.",
+      "endDb": -54.4
+    },
+    {
+      "file": "f6852f220b36.m4a",
+      "text": "Morgen um elf in der Werkstatt! Greta erzählt alles. Endlich!",
+      "voice": "Anna",
+      "seed": 21120372,
+      "heard": "Morgen um elf in der Werkstatt. Greta erzählt alles. Endlich.",
+      "endDb": -52.1
+    },
+    {
+      "file": "7e621ef89d10.m4a",
+      "text": "Und Hauke? Er bekommt auch eine Karte – von uns!",
+      "voice": "Flo",
+      "seed": 20781262,
+      "heard": "Und Hauke? Er bekommt auch eine Karte von uns.",
+      "endDb": -49.4
+    },
+    {
+      "file": "442994b647f7.m4a",
+      "text": "Herr Jensen darf nicht sprechen.",
+      "voice": "Anna",
+      "seed": 20598709,
+      "heard": "Herr Jensen darf nicht sprechen.",
+      "endDb": -62.6
+    },
+    {
+      "file": "7a8f8f201f2c.m4a",
+      "text": "Er soll Tee trinken.",
+      "voice": "Anna",
+      "seed": 20427963,
+      "heard": "Er soll Tee trinken.",
+      "endDb": -59.7
+    },
+    {
+      "file": "2c650b67e467.m4a",
+      "text": "Hauke muss im Bett bleiben.",
+      "voice": "Anna",
+      "seed": 20946038,
+      "heard": "Hauke muss im Bett bleiben.",
+      "endDb": -58.6
+    },
+    {
+      "file": "9b27a120f311.m4a",
+      "text": "Iss, Hauke! Und nimm die Tablette! Ich bin heute dein Doktor!",
+      "voice": "Reed",
+      "seed": 20582001,
+      "heard": "Iss Hauke und nimm die Tablette. Ich bin heute dein Doktor.",
+      "endDb": -50.2
+    },
+    {
+      "file": "482514110e8f.m4a",
+      "text": "Hier ist Frau Petersen. Samstag, die Party am Club: Elif soll die Teller mitbringen. Hauke soll im Bett bleiben. Und Mateo soll den Ku… nein, nichts!",
+      "voice": "Sandy",
+      "seed": 20928845,
+      "heard": "Hier ist Frau Petersen. Samstag die Party am Club, Elif soll die Teller mitbringen, Hauke soll im Bett bleiben. Und Matteo soll den Kuh? Nein, nichts!",
+      "endDb": -44.3
+    },
+    {
+      "file": "c02236746dbc.m4a",
+      "text": "Mateo soll den Ku…? Den Kuchen? Mateo, was für ein Kuchen?",
+      "voice": "Flo",
+      "seed": 20297850,
+      "heard": "Matteo soll den Kuh, den Kuchen? Matteo, was für ein Kuchen!",
+      "endDb": -38.7
+    },
+    {
+      "file": "5dd05150b1eb.m4a",
+      "text": "Kuchen? Welcher Kuchen? Suppe! Hier ist nur Suppe!",
+      "voice": "Reed",
+      "seed": 21084683,
+      "heard": "Kuchen. Welcher Kuchen? Suppe! Hier ist nur Suppe.",
+      "endDb": -34.5
+    },
+    {
+      "file": "03f6baeb28e9.m4a",
+      "text": "Hatschi! Und die Möwe? Sie macht auch Hatschi!",
+      "voice": "Rocko",
+      "seed": 21080696,
+      "heard": "Hatschi. Und die Möwe, sie macht auch Hatschi.",
+      "endDb": -63.3
+    },
+    {
+      "file": "bc79e163d987.m4a",
+      "text": "Das ist kein Hatschi. Das ist Möwisch! Möwen werden nicht krank!",
+      "voice": "Flo",
+      "seed": 20750998,
+      "heard": "Das ist kein Hatschi. Das ist Möwisch. Möwen werden nicht krank.",
+      "endDb": -52.1
+    },
+    {
+      "file": "48cd28136d89.m4a",
+      "text": "Gehst du heute zum Arzt?",
+      "voice": "Anna",
+      "seed": 21134279,
+      "heard": "Gehst du heute zum Arzt?",
+      "endDb": -55.9
+    },
+    {
+      "file": "8067958eada0.m4a",
+      "text": "Was hast du?",
+      "voice": "Reed",
+      "seed": 20419422,
+      "heard": "Was hast du?",
+      "endDb": -67.5
+    },
+    {
+      "file": "b6caf82ddfb7.m4a",
+      "text": "Mach bitte das Fenster zu!",
+      "voice": "Anna",
+      "seed": 20666007,
+      "heard": "Mach bitte das Fenster zu.",
+      "endDb": -57.2
+    }
+  ]
+}

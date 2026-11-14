@@ -656,6 +656,30 @@ export const phrases: Record<string, Phrase> = {
     de: "Wir sind beim Arzt. Zurück um drei.",
     note: "beim Arzt — у врача: bei + dem. zurück — обратно.",
   },
+  aerztehaus: {
+    ru: "дом врачей",
+    de: "das Ärztehaus",
+    pl: "Ärztehäuser",
+    note: "der Arzt — врач, die Ärzte — врачи, das Haus — дом: в одном доме несколько практик.",
+  },
+  anmeldung: {
+    ru: "регистратура",
+    de: "die Anmeldung",
+    pl: "Anmeldungen",
+    note: "Стойка у входа в практику: здесь показывают страховую карточку и называют свой Termin.",
+  },
+  notizblock: {
+    ru: "блок для записок",
+    de: "der Notizblock",
+    pl: "Notizblöcke",
+    note: "die Notiz — заметка, der Block — блок. Йенсену нельзя говорить, и он пишет записку за запиской.",
+  },
+  zeitschrift: {
+    ru: "журнал",
+    de: "die Zeitschrift",
+    pl: "Zeitschriften",
+    note: "В приёмной — журналы о здоровье. За одним из них прячется Дана.",
+  },
   neu: {
     ru: "Вы новичок. Вы видите всё.",
     de: "Sie sind neu. Sie sehen alles.",
