@@ -163,7 +163,52 @@ export type Challenge =
       kind: "calendar";
       months: { name: string; days: number }[];
       answer: string;
-    };
+    }
+  // Новые мини-игры новой версии (A1-PLOT.md, «Новые мини-игры»): только для сцен.
+  /** «Похожие звуки»: прозвучало одно из похожих слов — выбрать, какое. say — слово урока или выражение истории с записью. */
+  | { kind: "sounds"; rounds: { say: string; options: string[] }[] }
+  /**
+   * Логическая сетка «Wer war wo?» и её варианты «Кто откуда», «Чьё это?»: по уликам раздать
+   * людям значения столбцов. Решение одно, лишних улик нет — это проверяет решатель.
+   */
+  | {
+      kind: "grid";
+      people: string[];
+      cols: { id: string; label: string; values: string[] }[];
+      clues: GridClue[];
+      /** «человек|столбец» → значение. */
+      answer: Record<string, string>;
+    }
+  /** «Склейка»: собрать сложное слово из частей и выбрать артикль — по последней части. */
+  | { kind: "compound"; rounds: { word: string; parts: string[]; ru: string }[]; extra: string[] }
+  /** «Найди противоречие»: в двух показаниях отметить слова, которые не сходятся. Id слова — «текст:строка:слово». */
+  | { kind: "contra"; texts: { who: string; lines: string[][] }[]; answer: string[] }
+  /**
+   * «Ежедневник»: по сообщениям отметить занятое и поставить встречу туда, где свободны все.
+   * busy — занятые клетки «день|час», only — свободен только там. Засчитывается любая свободная клетка.
+   */
+  | {
+      kind: "planner";
+      days: string[];
+      hours: string[];
+      notes: { who: string; de: string; ru: string; busy?: string[]; only?: string[] }[];
+    }
+  /** «Объявления»: подобрать людям объявления; кому не подходит ни одно — «0». */
+  | {
+      kind: "ads";
+      people: { id: string; text: string }[];
+      ads: { id: string; title: string; text: string }[];
+      answer: Record<string, string>;
+    }
+  /** «Лифт»: по словам жильца нажать этаж. floor: −1 — Keller, 0 — Erdgeschoss. */
+  | { kind: "lift"; top: number; rounds: { who: string; de: string; ru: string; floor: number }[] }
+  /** «Шифр чайки»: номера букв (A = 1) или сдвиг по алфавиту; ответ — расшифровка. */
+  | { kind: "cipher"; code: string; shift?: number; answer: string; ru: string };
+/**
+ * Улика сетки: a и b — в одной строке (или нет, если not). Термин — имя человека или
+ * «столбец:значение»: { a: "Nils", b: "stadt:Kiel", not: true } — «Nils kommt nicht aus Kiel».
+ */
+export type GridClue = { de: string; ru: string; a: string; b: string; not?: true };
 export type Beat = {
   id: string;
   title: string;

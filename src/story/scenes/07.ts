@@ -194,9 +194,18 @@ const week: SceneNode[] = [
   },
   {
     t: "game",
-    task: "Соедините, кто когда свободен.",
-    hint: "Загляните в книгу клуба: у каждого свой день.",
-    c: pairs([["Frau Petersen", "am Dienstag"], ["Mateo", "nie — er kocht"], ["Herr Jensen", "jeden Morgen um acht: segeln"], ["Elif", "heute, am Sonntag"]]),
+    task: "Ежедневник клуба: отметьте занятое ✗ и поставьте пикник ★ туда, где свободны все.",
+    hint: "Прочитайте каждую запись: кто когда не может.",
+    c: {
+      kind: "planner",
+      days: ["Sonntag", "Montag", "Dienstag"],
+      hours: ["am Vormittag", "am Nachmittag"],
+      notes: [
+        { who: "Frau Petersen", de: "Am Montag kann ich nicht.", ru: "В понедельник я не могу.", busy: ["Montag|am Vormittag", "Montag|am Nachmittag"] },
+        { who: "Elif", de: "Am Dienstag habe ich keine Zeit.", ru: "Во вторник у меня нет времени.", busy: ["Dienstag|am Vormittag", "Dienstag|am Nachmittag"] },
+        { who: "Herr Jensen", de: "Am Vormittag segle ich.", ru: "До обеда я хожу под парусом.", busy: ["Sonntag|am Vormittag", "Montag|am Vormittag", "Dienstag|am Vormittag"] },
+      ],
+    },
   },
   {
     t: "game",

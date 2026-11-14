@@ -2503,3 +2503,180 @@
     margin-right: 18px;
   }
 }
+
+/* Новые мини-игры (A1-PLOT.md, «Новые мини-игры»). */
+.moin-notes {
+  margin: 0 0 14px;
+  padding-left: 18px;
+  display: grid;
+  gap: 6px;
+  font-family: var(--serif);
+  font-size: 16px;
+}
+.moin-notes small {
+  font-family: var(--sans);
+  font-size: 13px;
+  color: var(--muted);
+}
+.moin-compound {
+  min-height: 44px;
+  margin: 8px 0;
+  font-family: var(--serif);
+  font-size: 26px;
+  color: var(--accent);
+  overflow-wrap: anywhere;
+}
+.moin-compound-articles {
+  margin-top: 4px;
+}
+.moin-lift {
+  display: grid;
+  grid-template-columns: repeat(2, 64px);
+  gap: 8px;
+  margin: 10px 0 14px;
+}
+.moin-lift button {
+  height: 64px;
+  border: 2px solid var(--line-strong);
+  border-radius: 50%;
+  background: var(--panel-2);
+  font-family: var(--sans);
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.moin-grid {
+  display: grid;
+  gap: 12px;
+}
+.moin-grid-row {
+  display: grid;
+  gap: 6px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+.moin-grid-row > b {
+  font-family: var(--serif);
+  font-size: 18px;
+}
+.moin-grid-row > div,
+.moin-ads-person > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+.moin-grid-row small {
+  flex-basis: 100%;
+  color: var(--muted);
+  font-size: 12px;
+}
+.moin-grid-row button,
+.moin-ads-person button {
+  padding: 7px 11px;
+  border: 1px solid var(--line-strong);
+  border-radius: 4px;
+  background: var(--panel-2);
+  font-family: var(--serif);
+  font-size: 15px;
+  cursor: pointer;
+}
+.moin-grid-row button[aria-pressed="true"],
+.moin-ads-person button[aria-pressed="true"] {
+  border-color: var(--accent-line);
+  color: var(--accent);
+  background: var(--panel);
+}
+.moin-contra {
+  display: grid;
+  gap: 10px;
+}
+.moin-planner {
+  border-collapse: collapse;
+  margin: 4px 0 8px;
+  font-size: 14px;
+}
+.moin-planner th {
+  padding: 4px 6px;
+  font-weight: 500;
+  color: var(--muted);
+  text-align: left;
+}
+.moin-planner td {
+  padding: 2px;
+}
+.moin-planner td button {
+  width: 44px;
+  height: 36px;
+  border: 1px solid var(--line-strong);
+  border-radius: 4px;
+  background: var(--panel-2);
+  font-size: 18px;
+  cursor: pointer;
+}
+.moin-planner [data-mark="busy"] {
+  color: var(--muted);
+}
+.moin-planner [data-mark="star"] {
+  border-color: var(--accent-line);
+  color: var(--accent);
+}
+.moin-planner [data-wrong] {
+  border-color: var(--bad);
+}
+.moin-ads {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.moin-ads-person {
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+}
+.moin-ads-person p {
+  margin: 0 0 6px;
+  font-family: var(--serif);
+  font-size: 16px;
+}
+.moin-cipher-code {
+  font-family: var(--mono, monospace);
+  font-size: 22px;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+}
+.moin-cipher-key {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 8px 0 14px;
+  font-size: 12px;
+}
+.moin-cipher-key span {
+  display: grid;
+  min-width: 26px;
+  padding: 2px;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  text-align: center;
+  color: var(--muted);
+}
+.moin-cipher-key b {
+  color: var(--text);
+}
+.moin-cipher-input {
+  display: grid;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--muted);
+}
+.moin-cipher-input input {
+  padding: 10px 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: 4px;
+  background: var(--panel-2);
+  color: var(--text);
+  font-family: var(--serif);
+  font-size: 18px;
+  text-transform: uppercase;
+}

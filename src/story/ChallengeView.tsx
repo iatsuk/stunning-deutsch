@@ -25,6 +25,7 @@ import {
   Write,
   type GameProps,
 } from "./games";
+import { Ads, Cipher, Compound, Contra, Grid, Lift, Planner, Sounds } from "./minigames";
 import { SceneView } from "./SceneView";
 import type { Answer, Challenge } from "./types";
 import type { World } from "./world";
@@ -59,6 +60,14 @@ export const GAME_NAMES: Record<Challenge["kind"], string> = {
   route: "Прогулка",
   coins: "Касса",
   calendar: "Календарь",
+  sounds: "Похожие звуки",
+  compound: "Склейка",
+  lift: "Лифт",
+  grid: "Кто где",
+  contra: "Найди противоречие",
+  planner: "Ежедневник",
+  ads: "Объявления",
+  cipher: "Шифр чайки",
 };
 /** Эти игры завершаются сами: кнопка проверки там не нужна. */
 export const AUTOMATIC: Challenge["kind"][] = [
@@ -75,6 +84,9 @@ export const AUTOMATIC: Challenge["kind"][] = [
   "lock",
   "letter",
   "oral",
+  "sounds",
+  "compound",
+  "lift",
 ];
 
 export function ChallengeView({
@@ -127,6 +139,14 @@ export function ChallengeView({
       {c.kind === "route" && <Walk c={c} {...game} />}
       {c.kind === "coins" && <Coins c={c} {...game} />}
       {c.kind === "calendar" && <Calendar c={c} {...game} />}
+      {c.kind === "sounds" && <Sounds c={c} {...game} />}
+      {c.kind === "compound" && <Compound c={c} {...game} />}
+      {c.kind === "lift" && <Lift c={c} {...game} />}
+      {c.kind === "grid" && <Grid c={c} {...game} />}
+      {c.kind === "contra" && <Contra c={c} {...game} />}
+      {c.kind === "planner" && <Planner c={c} {...game} />}
+      {c.kind === "ads" && <Ads c={c} {...game} />}
+      {c.kind === "cipher" && <Cipher c={c} {...game} />}
       {c.kind === "choice" && (
         <fieldset className="moin-choices" disabled={disabled}>
           <legend className="moin-sr">Варианты ответа</legend>

@@ -2,7 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { phrases } from "../src/story/data.ts";
-import { initialAnswer, isCorrect, normalizeSave, solution, storyLines, validateStory } from "../src/story/logic.ts";
+import { compoundOf, decipher, gridSolutions, initialAnswer, isCorrect, mistake, normalizeSave, plannerFree, solution, storyLines, validateChallenge, validateStory } from "../src/story/logic.ts";
 import { answerSlots, arrange, flatNodes, flow, keyOf, lookOrder, nodeAt, outcomeOf, requiredKeys, sceneKeys, shownWords, spot, typedRight, worldAfter } from "../src/story/scene.ts";
 import { RACE_STAKES } from "../src/story/build.ts";
 import { MNEMONICS } from "../src/story/mnemonics.ts";
@@ -456,4 +456,63 @@ test("mnemonics belong to lesson words or story phrases", () => {
     assert.match(hook, /[а-яё]/i, de);
   }
   assert.match(MNEMONICS["die Möwe"], /мов/);
+});
+
+test("new mini-games check the answer, and their puzzles have exactly one way out", () => {
+  const valid = (c) => validateChallenge(c, new Set(), phrases);
+  // «Wer war wo?»: решатель находит единственную раскладку, а лишняя улика делает сетку негодной.
+  const grid = {
+    kind: "grid",
+    people: ["Greta", "Herr Wulff", "Herr Jensen"],
+    cols: [{ id: "wo", label: "Wo?", values: ["am Kiosk", "im Erdgeschoss", "im ersten Stock"] }],
+    clues: [
+      { de: "Greta ist nicht im Haus am Hafen.", ru: "", a: "Greta", b: "wo:im Erdgeschoss", not: true },
+      { de: "", ru: "", a: "Greta", b: "wo:im ersten Stock", not: true },
+      { de: "", ru: "", a: "Herr Wulff", b: "wo:im ersten Stock", not: true },
+    ].map((c) => ({ ...c, de: c.de || "x", ru: "x" })),
+    answer: { "Greta|wo": "am Kiosk", "Herr Wulff|wo": "im Erdgeschoss", "Herr Jensen|wo": "im ersten Stock" },
+  };
+  assert.equal(gridSolutions(grid, grid.clues).length, 1);
+  assert.ok(valid(grid));
+  assert.ok(isCorrect(grid, solution(grid)));
+  assert.ok(!isCorrect(grid, { ...grid.answer, "Greta|wo": "im Erdgeschoss", "Herr Wulff|wo": "am Kiosk" }));
+  assert.match(mistake(grid, { "Greta|wo": "im Erdgeschoss", "Herr Wulff|wo": "am Kiosk", "Herr Jensen|wo": "im ersten Stock" }, ""), /Greta ist nicht/);
+  assert.ok(!valid({ ...grid, clues: grid.clues.slice(1) }), "без улики решений больше одного");
+  assert.ok(!valid({ ...grid, clues: [...grid.clues, { de: "x", ru: "x", a: "Herr Jensen", b: "wo:am Kiosk", not: true }] }), "лишняя улика");
+  // «Шифр чайки»: номера букв и сдвиг.
+  assert.equal(decipher({ code: "8-5-12 7-15-12-1-14-4" }), "HEL GOLAND");
+  assert.equal(decipher({ code: "NPJO", shift: 1 }), "MOIN");
+  assert.ok(isCorrect({ kind: "cipher", code: "13-15-9-14", answer: "MOIN", ru: "x" }, " moin "));
+  // «Ежедневник»: засчитывается свободная клетка, занятая — нет.
+  const planner = {
+    kind: "planner",
+    days: ["Montag", "Dienstag"],
+    hours: ["am Vormittag", "am Abend"],
+    notes: [
+      { who: "Elif", de: "x", ru: "x", busy: ["Montag|am Vormittag", "Dienstag|am Vormittag"] },
+      { who: "Hauke", de: "x", ru: "x", only: ["Dienstag|am Abend", "Montag|am Vormittag"] },
+    ],
+  };
+  assert.deepEqual(plannerFree(planner), ["Dienstag|am Abend"]);
+  assert.ok(valid(planner));
+  assert.ok(isCorrect(planner, { "Dienstag|am Abend": "star", "Montag|am Abend": "busy" }));
+  assert.ok(!isCorrect(planner, { "Montag|am Abend": "star" }));
+  assert.match(mistake(planner, { "Montag|am Abend": "star" }, ""), /Hauke/);
+  // «Склейка»: слово — части подряд, артикль — по последней части.
+  assert.equal(compoundOf(["Fisch", "Brötchen"]), "Fischbrötchen");
+  const glue = { kind: "compound", rounds: [{ word: "das Fischbrötchen", parts: ["Fisch", "Brötchen"], ru: "x" }, { word: "das Mittagessen", parts: ["Mittag", "Essen"], ru: "x" }], extra: ["Tee"] };
+  assert.ok(valid(glue));
+  assert.ok(!valid({ ...glue, rounds: [{ word: "der Fischbrötchen", parts: ["Fisch", "Brot"], ru: "x" }, glue.rounds[1]] }));
+  assert.ok(isCorrect(glue, ["das Fischbrötchen", "das Mittagessen"]));
+  // «Лифт», «Похожие звуки», «Найди противоречие», «Объявления».
+  const lift = { kind: "lift", top: 2, rounds: [{ who: "x", de: "x", ru: "x", floor: 1 }, { who: "x", de: "x", ru: "x", floor: -1 }] };
+  assert.ok(valid(lift) && isCorrect(lift, ["1", "-1"]) && !isCorrect(lift, ["1", "0"]));
+  const sounds = { kind: "sounds", rounds: ["a", "b", "c"].map((w) => ({ say: w, options: [w, `${w}x`] })) };
+  assert.ok(valid(sounds) && isCorrect(sounds, ["a", "b", "c"]));
+  const contra = { kind: "contra", texts: [{ who: "A", lines: [["um", "fünf"]] }, { who: "B", lines: [["um", "sechs"]] }], answer: ["0:0:1", "1:0:1"] };
+  assert.ok(valid(contra) && isCorrect(contra, ["1:0:1", "0:0:1"]) && !isCorrect(contra, ["0:0:1"]));
+  assert.ok(!valid({ ...contra, answer: ["0:0:0", "0:0:1"] }), "противоречие — между двумя показаниями");
+  const ads = { kind: "ads", people: [{ id: "a", text: "x" }, { id: "b", text: "x" }], ads: [{ id: "A", title: "x", text: "x" }, { id: "B", title: "x", text: "x" }], answer: { a: "B", b: "0" } };
+  assert.ok(valid(ads) && isCorrect(ads, { a: "B", b: "0" }) && !isCorrect(ads, { a: "A", b: "0" }));
+  for (const c of [grid, planner, glue, lift, sounds, contra, ads]) assert.ok(!isCorrect(c, initialAnswer(c)), c.kind);
 });

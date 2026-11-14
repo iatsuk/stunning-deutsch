@@ -1,4 +1,4 @@
-import { an, ANSWER, ASK, bingo, docks, gruss, gull as race, HEAR, HINT_HEAR, HINT_RACE, letter, letters, lock, odd, oral, order, pairs, RACE, RACE_STAKES, reply as oralReply, say as oralSay, scene, write } from "../build.ts";
+import { an, ANSWER, ASK, bingo, docks, gruss, gull as race, HEAR, HINT_HEAR, HINT_RACE, letter, letters, lock, odd, oral, order, RACE, RACE_STAKES, reply as oralReply, say as oralSay, scene, write } from "../build.ts";
 import type { Episode, SceneNode } from "../types.ts";
 
 // Прототип главы 1 в формате сцен (A1-PLOT.md, «Формат сцен»). Сцена — разговор и осмотр
@@ -329,9 +329,23 @@ const witnesses: SceneNode[] = [
   narr("В блокноте три свидетеля и одна общая деталь: последними у {aufsteller} были гости клуба, брат и сестра aus Hamburg. Их зовут Нильс и Грета."),
   {
     t: "game",
-    task: "Сведите показания: кто где живёт? Если забыли — загляните в блокнот сцены.",
-    c: pairs([["Mateo wohnt in", "Holtenau"], ["Dana wohnt in", "Gaarden"], ["Elif wohnt in", "Kiel"]]),
-    hint: "kommen aus — откуда родом, wohnen in — где живёт сейчас. Элиф родом из Турции, а живёт в Киле.",
+    task: "Сведите показания в таблицу: кто откуда и где живёт. Каждая страна и каждый город — один раз.",
+    c: {
+      kind: "grid",
+      people: ["Mateo", "Dana", "Elif"],
+      cols: [
+        { id: "land", label: "kommt aus", values: ["Argentinien", "Kasachstan", "die Türkei"] },
+        { id: "stadt", label: "wohnt in", values: ["Holtenau", "Gaarden", "Kiel"] },
+      ],
+      clues: [
+        { de: "Elif kommt aus der Türkei.", ru: "Элиф из Турции.", a: "Elif", b: "land:die Türkei" },
+        { de: "Mateo kommt nicht aus Kasachstan.", ru: "Матео не из Казахстана.", a: "Mateo", b: "land:Kasachstan", not: true },
+        { de: "Die Frau aus der Türkei wohnt in Kiel.", ru: "Та, что из Турции, живёт в Киле.", a: "land:die Türkei", b: "stadt:Kiel" },
+        { de: "Mateo wohnt nicht in Gaarden.", ru: "Матео живёт не в Гаардене.", a: "Mateo", b: "stadt:Gaarden", not: true },
+      ],
+      answer: { "Mateo|land": "Argentinien", "Mateo|stadt": "Holtenau", "Dana|land": "Kasachstan", "Dana|stadt": "Gaarden", "Elif|land": "die Türkei", "Elif|stadt": "Kiel" },
+    },
+    hint: "kommen aus — откуда родом, wohnen in — где живёт сейчас. Начните с прямых улик, потом исключайте.",
   },
   {
     t: "pick",

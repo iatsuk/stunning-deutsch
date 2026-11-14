@@ -112,7 +112,20 @@ const message: SceneNode[] = [
     hint: "halb называет следующий час; Viertel vor — без четверти.",
     c: pairs([["17:05", "fünf nach fünf"], ["17:30", "halb sechs"], ["18:00", "sechs Uhr"], ["16:45", "Viertel vor fünf"]]),
   },
-  { t: "game", task: "Подпишите на доске части дня по буквам.", hint: HINT_SPELL, c: letters(["der Vormittag", "der Nachmittag", "der Abend"]) },
+  {
+    t: "game",
+    task: "Хауке подписывает на доске части дня. Соберите слова из частей и выберите артикль.",
+    hint: "Род — по последней части: der Mittag → der Vormittag, der Abend → der Feierabend.",
+    c: {
+      kind: "compound",
+      rounds: [
+        { word: "der Vormittag", parts: ["Vor", "Mittag"], ru: "первая половина дня" },
+        { word: "der Nachmittag", parts: ["Nach", "Mittag"], ru: "вторая половина дня" },
+        { word: "der Feierabend", parts: ["Feier", "Abend"], ru: "конец рабочего дня" },
+      ],
+      extra: ["Tag", "Woche", "Uhr"],
+    },
+  },
   {
     t: "game",
     task: "Элиф проверяет: одно слово в группе лишнее.",
@@ -404,15 +417,19 @@ const witnesses: SceneNode[] = [
   },
   {
     t: "game",
-    task: "Кто где был в воскресенье в 17:30?",
-    hint: "Загляните в блокнот: Элиф, Матео, журнал, кассовая книга.",
-    c: sort([["hinten", "hinten, beim Tee"], ["kueche", "in der Küche"], ["kiosk", "am Kiosk"]], [
-      ["jensen", "Herr Jensen", "hinten", "⚓"],
-      ["petersen", "Frau Petersen", "hinten", "🗂️"],
-      ["elif", "Elif", "hinten", "🔭"],
-      ["mateo", "Mateo", "kueche", "🍳"],
-      ["frauke", "Frauke", "kiosk", "🐟"],
-    ]),
+    task: "Wer war wo? Воскресенье, 17:30: расставьте троих по местам по уликам.",
+    hint: "Исключайте: если Матео не сзади и не у киоска, где он?",
+    c: {
+      kind: "grid",
+      people: ["Herr Jensen", "Mateo", "Frauke"],
+      cols: [{ id: "wo", label: "um 17:30", values: ["hinten, beim Tee", "in der Küche", "am Kiosk"] }],
+      clues: [
+        { de: "Mateo ist nicht hinten.", ru: "Матео не сзади.", a: "Mateo", b: "wo:hinten, beim Tee", not: true },
+        { de: "Mateo ist nicht am Kiosk.", ru: "Матео не у киоска.", a: "Mateo", b: "wo:am Kiosk", not: true },
+        { de: "Frauke ist nicht hinten.", ru: "Фрауке не сзади.", a: "Frauke", b: "wo:hinten, beim Tee", not: true },
+      ],
+      answer: { "Herr Jensen|wo": "hinten, beim Tee", "Mateo|wo": "in der Küche", "Frauke|wo": "am Kiosk" },
+    },
   },
   {
     t: "clue",
@@ -640,12 +657,16 @@ const timeline: SceneNode[] = [
   },
   {
     t: "game",
-    task: "Проверьте доску: что верно?",
-    c: verdict(["Richtig", "Falsch"], [
-      ["Табличка пропала ночью", false, "В 17:35 женщина с сумкой уже шла к автобусу, а в шесть клуб закрыли."],
-      ["В 17:30 весь клуб пил чай сзади", true, "Так говорят Фрауке, Элиф и фрау Петерсен."],
-      ["Клуб в шесть закрыл Йенсен", true, "«18:00 — zu. Moin» — в журнале его почерк."],
-    ]),
+    task: "Найдите противоречие: что не сходится в версии Матео и в кассовой книге?",
+    hint: "Сравните время: когда табличку унесли — ночью или раньше?",
+    c: {
+      kind: "contra",
+      texts: [
+        { who: "Mateo", lines: [["Das", "Schild", "ist", "in", "der", "Nacht", "weg."], ["Ein", "Einbruch!"]] },
+        { who: "Kassenbuch, Sonntag", lines: [["17:35:", "eine", "Frau,", "große", "flache", "Tasche,", "Bus."], ["18:00:", "Club", "zu."]] },
+      ],
+      answer: ["0:0:5", "1:0:0"],
+    },
   },
   mateo("Und ich mache heute keinen Feierabend. Ich koche!", "А я сегодня не заканчиваю. Я готовлю!"),
   { t: "gap", task: "Что говорит Матео?", text: "Ich mache heute keinen ___.", options: ["Feierabend", "Abend", "Mittag"], answer: "Feierabend", ru: "Я сегодня не заканчиваю работу." },

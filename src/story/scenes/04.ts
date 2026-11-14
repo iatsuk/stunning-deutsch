@@ -101,7 +101,20 @@ const stands: SceneNode[] = [
     hint: HINT_PICTURE,
     c: scene([["der Döner", "🥙"], ["das Fischbrötchen", "🐟"], ["die Cola", "🥤"], ["der Salat", "🥗"], ["die Suppe", "🍲"], ["die Wurst", "🌭"], ["der Käse", "🧀"], ["die Tomate", "🍅"]]),
   },
-  { t: "game", task: "Дерья пишет меню мелом. Подскажите по буквам.", hint: HINT_SPELL, c: letters(["der Döner", "der Salat", "die Wurst"]) },
+  {
+    t: "game",
+    task: "Дерья пишет меню мелом: слова длинные, из двух частей. Соберите их и выберите артикль.",
+    hint: "Род — по последней части: das Brötchen → das Fischbrötchen, das Essen → das Mittagessen.",
+    c: {
+      kind: "compound",
+      rounds: [
+        { word: "das Fischbrötchen", parts: ["Fisch", "Brötchen"], ru: "булочка с рыбой" },
+        { word: "das Mittagessen", parts: ["Mittag", "Essen"], ru: "обед" },
+        { word: "das Abendessen", parts: ["Abend", "Essen"], ru: "ужин" },
+      ],
+      extra: ["Tee", "Salat", "Wurst"],
+    },
+  },
   derya("Möchten Sie einen Döner?", "Хотите донер?"),
   {
     t: "reply",
@@ -488,7 +501,19 @@ const napkin: SceneNode[] = [
       no("Это рисунок Нильса", "Почерк тот же, что в «Nicht fragen, bitte». Рисовала Грета."),
     ],
   },
-  { t: "game", task: "Перепишите слова со стола Греты по буквам.", hint: HINT_SPELL, c: letters(["die Farbe", "das Glas", "die Rechnung"]) },
+  {
+    t: "game",
+    task: "В кафе шумно. Kellner убирает со стола Греты и что-то говорит. Какое слово прозвучало?",
+    hint: "Слушайте одну-две буквы: Tasse — Tasche, Kuchen — Küche, Brot — Brötchen.",
+    c: {
+      kind: "sounds",
+      rounds: [
+        { say: "die Tasse", options: ["die Tasse", "die Tasche"] },
+        { say: "der Kuchen", options: ["der Kuchen", "die Küche"] },
+        { say: "das Brötchen", options: ["das Brötchen", "das Brot"] },
+      ],
+    },
+  },
   narr("В углу {serviette} — круглый коричневый {fleck}: след от Tasse mit Tee. А Грета пьёт только Cola."),
   dana("Tee? Greta trinkt Cola. Die Serviette ist von Tisch vier!", "Чай? Грета пьёт колу. Салфетка со столика четыре!"),
   {

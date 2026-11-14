@@ -9,6 +9,7 @@ import type {
   Beat,
   Challenge,
   Episode,
+  GridClue,
   LockRound,
   Move,
   Phrase,
@@ -96,6 +97,7 @@ export function challengeWords(c: Challenge): string[] {
   if (c.kind === "speak") return c.lines;
   if (c.kind === "scene") return c.items.map((i) => i.word);
   if (c.kind === "odd") return c.rounds.flatMap((r) => r.words);
+  if (c.kind === "sounds") return c.rounds.flatMap((r) => r.options);
   return [];
 }
 /** Сборка проверяет, что каждое слово игры есть в словаре уроков. */
@@ -166,6 +168,131 @@ export function walk(route: Route, moves: string[]): Position[] {
 export const canMove = (route: Route, moves: string[], move: Move) =>
   walk(route, [...moves, move]).length === walk(route, moves).length + 1;
 export const placeKey = (at: { x: number; y: number }) => `${at.x},${at.y}`;
+
+// ——— Новые мини-игры (A1-PLOT.md, «Новые мини-игры») ———
+
+type Grid = Extract<Challenge, { kind: "grid" }>;
+type Planner = Extract<Challenge, { kind: "planner" }>;
+type Cipher = Extract<Challenge, { kind: "cipher" }>;
+
+/** Клетка сетки: «человек|столбец». */
+export const gridKey = (person: string, col: string) => `${person}|${col}`;
+
+/** Термин улики: имя строки или «столбец:значение». Ошибка в термине — undefined. */
+function gridTerm(c: Pick<Grid, "people" | "cols">, term: string) {
+  if (c.people.includes(term)) return { person: c.people.indexOf(term) };
+  const at = term.indexOf(":");
+  const col = c.cols.findIndex((x) => x.id === term.slice(0, at));
+  if (at < 0 || col < 0 || !c.cols[col].values.includes(term.slice(at + 1))) return undefined;
+  return { col, value: term.slice(at + 1) };
+}
+export const gridTermValid = (c: Pick<Grid, "people" | "cols">, term: string) => gridTerm(c, term) !== undefined;
+
+function permutations<T>(list: T[]): T[][] {
+  if (list.length <= 1) return [list];
+  return list.flatMap((x, i) => permutations([...list.slice(0, i), ...list.slice(i + 1)]).map((p) => [x, ...p]));
+}
+
+/**
+ * Все раскладки сетки, при которых верны улики: перебор перестановок каждого столбца с
+ * отсечением. Сетки A1 маленькие (3–4 строки, 1–3 столбца), перебор мгновенный.
+ */
+export function gridSolutions(
+  c: Pick<Grid, "people" | "cols">,
+  clues: GridClue[],
+  limit = Infinity,
+): Record<string, string>[] {
+  const terms = clues.map((clue) => [gridTerm(c, clue.a), gridTerm(c, clue.b)] as const);
+  const perms = c.cols.map((col) => permutations(col.values));
+  const chosen: string[][] = [];
+  const out: Record<string, string>[] = [];
+  // Строка термина при уже выбранных столбцах; null — столбец ещё не выбран.
+  const row = (t: ReturnType<typeof gridTerm>) =>
+    !t ? -1 : "person" in t ? t.person : t.col < chosen.length ? chosen[t.col].indexOf(t.value) : null;
+  const holds = () =>
+    terms.every(([a, b], i) => {
+      const ra = row(a),
+        rb = row(b);
+      return ra === null || rb === null || (ra === rb) !== Boolean(clues[i].not);
+    });
+  const step = () => {
+    if (out.length >= limit) return;
+    if (chosen.length === c.cols.length) {
+      out.push(
+        Object.fromEntries(
+          c.people.flatMap((p, r) => c.cols.map((col, k) => [gridKey(p, col.id), chosen[k][r]])),
+        ),
+      );
+      return;
+    }
+    for (const perm of perms[chosen.length]) {
+      chosen.push(perm);
+      if (holds()) step();
+      chosen.pop();
+    }
+  };
+  step();
+  return out;
+}
+
+/** Занятые клетки ежедневника «день|час»: занятое по сообщениям и всё вне «only». */
+export function plannerBusy(c: Pick<Planner, "days" | "hours" | "notes">): Set<string> {
+  const all = c.days.flatMap((d) => c.hours.map((h) => `${d}|${h}`));
+  const busy = new Set<string>();
+  for (const note of c.notes) {
+    note.busy?.forEach((cell) => busy.add(cell));
+    if (note.only) all.filter((cell) => !note.only!.includes(cell)).forEach((cell) => busy.add(cell));
+  }
+  return busy;
+}
+export const plannerFree = (c: Pick<Planner, "days" | "hours" | "notes">) => {
+  const busy = plannerBusy(c);
+  return c.days.flatMap((d) => c.hours.map((h) => `${d}|${h}`)).filter((cell) => !busy.has(cell));
+};
+/** Кто занят в этой клетке: для подсказки после ошибки. */
+export const plannerWho = (c: Planner, cell: string) =>
+  c.notes.filter((n) => n.busy?.includes(cell) || (n.only && !n.only.includes(cell))).map((n) => n.who);
+
+/** Расшифровка: «8-5-12 12-15» — номера букв (A = 1), иначе буквы со сдвигом shift вперёд. */
+export function decipher(c: Pick<Cipher, "code" | "shift">): string {
+  const A = "A".charCodeAt(0);
+  if (c.shift === undefined)
+    return c.code
+      .trim()
+      .split(/\s+/)
+      .map((word) =>
+        word
+          .split("-")
+          .map((n) => (Number(n) >= 1 && Number(n) <= 26 ? String.fromCharCode(A + Number(n) - 1) : "?"))
+          .join(""),
+      )
+      .join(" ");
+  return c.code
+    .toUpperCase()
+    .replace(/[A-Z]/g, (ch) => String.fromCharCode(A + ((((ch.charCodeAt(0) - A - c.shift!) % 26) + 26) % 26)));
+}
+export const cipherNorm = (text: string) => text.trim().toUpperCase().replace(/\s+/g, " ");
+
+/** Первая улика, которая не сходится при заполненной таблице: для подсказки после ошибки. */
+export function gridBroken(c: Grid, value: Record<string, string | number>): GridClue | undefined {
+  const rowOf = (term: string) => {
+    if (c.people.includes(term)) return c.people.indexOf(term);
+    const [col, val] = [term.slice(0, term.indexOf(":")), term.slice(term.indexOf(":") + 1)];
+    return c.people.findIndex((p) => value[gridKey(p, col)] === val);
+  };
+  return c.clues.find((clue) => {
+    const a = rowOf(clue.a),
+      b = rowOf(clue.b);
+    return a >= 0 && b >= 0 && (a === b) === Boolean(clue.not);
+  });
+}
+
+/** Сложное слово из частей: первая часть как есть, остальные со строчной. */
+export const compoundOf = (parts: string[]) =>
+  parts.map((p, i) => (i ? p.toLowerCase() : p)).join("");
+
+/** Этаж на кнопке лифта и по-русски: Keller, Erdgeschoss — наш первый, erster Stock — наш второй. */
+export const floorLabel = (floor: number) => (floor < 0 ? "K" : floor === 0 ? "E" : String(floor));
 
 const isRecord = (value: unknown): value is Record<string, string | number> =>
   Boolean(value) && typeof value === "object" && !Array.isArray(value);
@@ -267,6 +394,22 @@ export function isCorrect(
         Object.keys(value).length === challenge.items.length &&
         challenge.items.every((i) => value[i.id] === (i.answer ? "yes" : "no"))
       );
+    case "sounds":
+      return sameList(value, challenge.rounds.map((r) => r.say));
+    case "compound":
+      return sameList(value, challenge.rounds.map((r) => r.word));
+    case "lift":
+      return sameList(value, challenge.rounds.map((r) => String(r.floor)));
+    case "contra":
+      return sameSet(value, challenge.answer);
+    case "cipher":
+      return typeof value === "string" && cipherNorm(value) === challenge.answer;
+    case "planner": {
+      // Проверка по результату: встреча одна и стоит там, где свободны все.
+      if (!isRecord(value)) return false;
+      const stars = Object.keys(value).filter((cell) => value[cell] === "star");
+      return stars.length === 1 && plannerFree(challenge).includes(stars[0]);
+    }
     default: {
       if (!isRecord(value)) return false;
       const expected = challenge.answer;
@@ -313,6 +456,14 @@ export function solution(challenge: Challenge): Answer {
       return Object.fromEntries(
         challenge.items.map((i) => [i.id, i.answer ? "yes" : "no"]),
       );
+    case "sounds":
+      return challenge.rounds.map((r) => r.say);
+    case "compound":
+      return challenge.rounds.map((r) => r.word);
+    case "lift":
+      return challenge.rounds.map((r) => String(r.floor));
+    case "planner":
+      return { [plannerFree(challenge)[0]]: "star" };
     case "coins": {
       let rest = challenge.answer;
       const coins: Record<string, number> = {};
@@ -345,6 +496,10 @@ export function initialAnswer(challenge: Challenge): Answer {
     case "gull":
     case "lock":
     case "oral":
+    case "sounds":
+    case "compound":
+    case "lift":
+    case "contra":
       return [];
     case "gaps":
       return challenge.answer.map(() => "");
@@ -356,6 +511,9 @@ export function initialAnswer(challenge: Challenge): Answer {
     case "coins":
     case "write":
     case "letter":
+    case "grid":
+    case "ads":
+    case "planner":
       return {};
     case "clock":
       return challenge.start;
@@ -423,9 +581,28 @@ export function mistake(c: Challenge, value: Answer, hint: string): string {
         : `Почти: нужна буква с умлаутом или ß — ${near}.`;
     }
     case "spot":
+    case "contra":
       return list.length === c.answer.length
         ? hint
         : `Нужно выбрать: ${c.answer.length}.`;
+    case "grid": {
+      if (Object.keys(record).length < c.people.length * c.cols.length)
+        return "Заполните всю таблицу: у каждого по одному значению в каждом столбце.";
+      const broken = gridBroken(c, record);
+      return broken ? `Не сходится улика: «${broken.de}»` : hint;
+    }
+    case "ads":
+      return Object.keys(record).length < c.people.length
+        ? "Подберите объявление каждому — или отметьте, что ничего не подходит."
+        : hint;
+    case "planner": {
+      const stars = Object.keys(record).filter((cell) => record[cell] === "star");
+      if (stars.length !== 1) return "Поставьте одну встречу ★ — туда, где свободны все.";
+      const who = plannerWho(c, stars[0]);
+      return who.length ? `В это время не может: ${who.join(", ")}.` : hint;
+    }
+    case "cipher":
+      return typeof value === "string" && value.trim() ? hint : "Впишите расшифровку.";
     default:
       return hint;
   }
@@ -435,6 +612,16 @@ export function mistake(c: Challenge, value: Answer, hint: string): string {
 function restoreDraft(c: Challenge, v: unknown): Answer | undefined {
   const strings = Array.isArray(v) && v.every((t) => typeof t === "string");
   switch (c.kind) {
+    // Новые мини-игры живут только внутри сцен, а сцена не хранит черновиков игр.
+    case "sounds":
+    case "grid":
+    case "compound":
+    case "contra":
+    case "planner":
+    case "ads":
+    case "lift":
+    case "cipher":
+      return undefined;
     case "play": {
       if (!strings) return undefined;
       const keys = new Set(sceneKeys(c.nodes));
@@ -657,7 +844,7 @@ export function normalizeSave(raw: unknown, beats: Beat[]): StorySave {
   };
 }
 
-function validateChallenge(
+export function validateChallenge(
   c: Challenge,
   known: Set<string>,
   phrases: Record<string, unknown>,
@@ -789,6 +976,68 @@ function validateChallenge(
         new Set(c.fields.map((f) => f.id)).size === c.fields.length &&
         c.fields.every((f) => f.answers.length > 0)
       );
+    case "sounds":
+      return (
+        c.rounds.length >= 3 &&
+        c.rounds.every((r) => r.options.length >= 2 && new Set(r.options).size === r.options.length && r.options.includes(r.say))
+      );
+    case "grid": {
+      // Решение одно, оно совпадает с ответом, и каждая улика нужна: без любой из них решений больше.
+      const shape =
+        c.people.length >= 2 &&
+        new Set(c.people).size === c.people.length &&
+        c.cols.length >= 1 &&
+        c.cols.every((col) => col.values.length === c.people.length && new Set(col.values).size === col.values.length) &&
+        c.clues.length > 0 &&
+        c.clues.every((clue) => clue.de && clue.ru && gridTermValid(c, clue.a) && gridTermValid(c, clue.b));
+      if (!shape) return false;
+      const all = gridSolutions(c, c.clues, 2);
+      const same = (a: Record<string, string>, b: Record<string, string>) =>
+        Object.keys(a).length === Object.keys(b).length && Object.entries(a).every(([k, v]) => b[k] === v);
+      return (
+        all.length === 1 &&
+        same(all[0], c.answer) &&
+        c.clues.every((_, i) => gridSolutions(c, c.clues.filter((__, j) => j !== i), 2).length > 1)
+      );
+    }
+    case "compound":
+      return (
+        c.rounds.length >= 2 &&
+        c.rounds.every((r) => r.parts.length >= 2 && r.ru && /^(der|die|das) /.test(r.word) && r.word.slice(4) === compoundOf(r.parts)) &&
+        c.extra.every((p) => !c.rounds.some((r) => r.parts.includes(p)))
+      );
+    case "contra": {
+      const ids = new Set(c.texts.flatMap((t, ti) => t.lines.flatMap((line, li) => line.map((_, wi) => `${ti}:${li}:${wi}`))));
+      return (
+        c.texts.length >= 2 &&
+        c.answer.length >= 2 &&
+        c.answer.every((id) => ids.has(id)) &&
+        new Set(c.answer.map((id) => id.split(":")[0])).size >= 2
+      );
+    }
+    case "planner": {
+      const cells = new Set(c.days.flatMap((d) => c.hours.map((h) => `${d}|${h}`)));
+      const free = plannerFree(c);
+      return (
+        c.notes.length >= 2 &&
+        c.notes.every((n) => n.de && n.ru && n.who && [...(n.busy ?? []), ...(n.only ?? [])].every((cell) => cells.has(cell))) &&
+        free.length >= 1 &&
+        free.length <= 2
+      );
+    }
+    case "ads": {
+      const used = Object.values(c.answer).filter((v) => v !== "0");
+      return (
+        c.people.length >= 2 &&
+        c.ads.length >= 2 &&
+        c.people.every((p) => c.answer[p.id] === "0" || c.ads.some((a) => a.id === c.answer[p.id])) &&
+        new Set(used).size === used.length
+      );
+    }
+    case "lift":
+      return c.rounds.length >= 2 && c.rounds.every((r) => r.floor >= -1 && r.floor <= c.top && r.de && r.ru && r.who);
+    case "cipher":
+      return Boolean(c.answer && c.ru) && cipherNorm(decipher(c)) === cipherNorm(c.answer);
   }
 }
 

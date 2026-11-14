@@ -42,7 +42,7 @@ import type {
 // перетаскиваний нет, ошибка только даёт подсказку. Таймер есть в одной игре,
 // с чайкой: он запускается кнопкой, упущенное слово возвращается, а времени становится больше.
 
-type Game<K extends Challenge["kind"]> = {
+export type Game<K extends Challenge["kind"]> = {
   c: Extract<Challenge, { kind: K }>;
   value: Answer;
   seed: string;

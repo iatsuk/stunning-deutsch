@@ -1,4 +1,4 @@
-import { an, ANSWER, ASK, docks, gaps, gruss, gull as race, HEAR, HINT_DOCK, HINT_HEAR, HINT_LETTER, HINT_LOCK, HINT_ORAL, HINT_PICTURE, HINT_RACE, HINT_SAY, HINT_SPELL, letter, letters, lock, odd, oral, order, pairs, RACE, RACE_STAKES, reply as oralReply, say as oralSay, scene, sort, speak, spot, verdict, write } from "../build.ts";
+import { an, ANSWER, ASK, docks, gaps, gruss, gull as race, HEAR, HINT_DOCK, HINT_HEAR, HINT_LETTER, HINT_LOCK, HINT_ORAL, HINT_PICTURE, HINT_RACE, HINT_SAY, letter, lock, odd, oral, order, pairs, RACE, RACE_STAKES, reply as oralReply, say as oralSay, scene, sort, speak, spot, verdict, write } from "../build.ts";
 import { phrases } from "../data.ts";
 import type { Challenge, Episode, SceneNode } from "../types.ts";
 
@@ -284,7 +284,13 @@ const guestbook: SceneNode[] = [
             options: ["HEL", "AEL", "HIL"],
             answer: "HEL",
           },
-          { t: "type", rule: ["zahlen/alphabet-1"], task: "Элиф диктует: «Ha – E – El. Sieben, drei, null, fünf». Запишите номер кольца в блокнот буквами и цифрами.", answers: ["HEL 7305", "HEL7305", "HEL-7305"] },
+          {
+            t: "game",
+            rule: ["zahlen/alphabet-1"],
+            task: "HEL — первые буквы острова, где кольцуют птиц. Элиф пишет его название числами: A = 1, B = 2… Расшифруйте.",
+            hint: "Каждое число — номер буквы в алфавите: 8 — H, 5 — E, 12 — L.",
+            c: { kind: "cipher", code: "8-5-12-7-15-12-1-14-4", answer: "HELGOLAND", ru: "Гельголанд — остров в Северном море с птичьей станцией." },
+          },
           { t: "gap", rule: ["zahlen/haben-1"], task: "Подпишите находку.", text: "Die Möwe ___ eine Nummer: HEL 7305.", options: ["hat", "habe", "haben"], answer: "hat", ru: "У чайки есть номер: HEL 7305." },
           elif("Die Postleitzahl, bitte! Frau Petersen?", "Индекс, пожалуйста! Фрау Петерсен?", ["die Postleitzahl"]),
           narr("Фрау Петерсен обожает индексы. Она бросает очередь и ищет индекс птичьей станции. Ваш номерок гаснет на табло."),
@@ -317,7 +323,20 @@ const guestbook: SceneNode[] = [
             ],
           },
           narr("Фрау Петерсен проверяет каждую графу по буквам. Графы называются словами, которые вы сегодня уже слышали."),
-          { t: "game", task: "Соберите названия граф по буквам.", hint: HINT_SPELL, c: letters(["die Nummer", "die Hausnummer", "die Adresse"]) },
+          {
+            t: "game",
+            task: "Графы формуляра — длинные слова. Соберите их из частей и выберите артикль.",
+            hint: "Род сложного слова — по последней части: die Nummer → die Hausnummer.",
+            c: {
+              kind: "compound",
+              rounds: [
+                { word: "die Hausnummer", parts: ["Haus", "Nummer"], ru: "номер дома" },
+                { word: "die Telefonnummer", parts: ["Telefon", "Nummer"], ru: "номер телефона" },
+                { word: "die Postleitzahl", parts: ["Post", "Leit", "Zahl"], ru: "почтовый индекс" },
+              ],
+              extra: ["Name", "Jahr", "Land"],
+            },
+          },
           { t: "item", icon: "🗂️", de: "das Formular", ru: "формуляр A38 с печатью фрау Петерсен", set: { petersen: 1 } },
           narr("Это первая печать фрау Петерсен за неделю. Хауке потом скажет, что ему она печатей не ставила никогда."),
         ],

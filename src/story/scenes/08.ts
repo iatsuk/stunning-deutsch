@@ -122,7 +122,20 @@ const morning: SceneNode[] = [
     hint: HINT_DOCK,
     c: docks(["der Keller", "die Küche", "das Bad", "der Flur", "das Treppenhaus", "der Balkon", "das Zimmer", "die Wohnung"]),
   },
-  { t: "game", task: "Фрау Петерсен подписывает новые бирки по буквам. Помогите ей.", hint: HINT_SPELL, c: letters(["das Bad", "die Küche", "das Zimmer"]) },
+  {
+    t: "game",
+    task: "На новых бирках фрау Петерсен длинные слова. Соберите их из частей и выберите артикль.",
+    hint: "Род сложного слова — по последней части: das Haus → das Treppenhaus, der Tisch → der Schreibtisch.",
+    c: {
+      kind: "compound",
+      rounds: [
+        { word: "das Treppenhaus", parts: ["Treppen", "Haus"], ru: "лестничная клетка, подъезд" },
+        { word: "der Kühlschrank", parts: ["Kühl", "Schrank"], ru: "холодильник" },
+        { word: "der Schreibtisch", parts: ["Schreib", "Tisch"], ru: "письменный стол" },
+      ],
+      extra: ["Bad", "Wohn", "Tür"],
+    },
+  },
   narr("Фрау Петерсен поворачивает ключ. Дверь открыта. Kekse für alle — праздник im Treppenhaus длится двадцать секунд."),
   {
     t: "game",
@@ -758,14 +771,20 @@ const evening: SceneNode[] = [
   },
   {
     t: "game",
-    task: "Разложите находки дня: в каком подвале что было?",
-    hint: "Вспомните оба подвала: клубный и подвал Йенсена.",
-    c: sort([["club", "im Keller vom Club"], ["jensen", "im Keller von Herrn Jensen"]], [
-      ["lager", "das Lager der Möwe", "club", "🪶"],
-      ["karton", "der Karton", "jensen", "📦"],
-      ["ball", "der Strandball", "club", "🏐"],
-      ["adresse", "die Adresse", "jensen", "🏷️"],
-    ]),
+    task: "Wer war wo um 8:20? Два подвала, киоск и первый этаж: расставьте четверых по уликам.",
+    hint: "Начните с Греты: где её нет? Потом — кто из двоих в каком подвале.",
+    c: {
+      kind: "grid",
+      people: ["Greta", "Frau Petersen", "Herr Jensen", "Herr Wulff"],
+      cols: [{ id: "wo", label: "um 8:20", values: ["am Kiosk", "im Keller im Club", "im Keller am Hafen", "im Erdgeschoss"] }],
+      clues: [
+        { de: "Greta ist nicht im Keller im Club.", ru: "Греты нет в подвале клуба.", a: "Greta", b: "wo:im Keller im Club", not: true },
+        { de: "Greta ist nicht im Keller am Hafen.", ru: "Греты нет в подвале у гавани.", a: "Greta", b: "wo:im Keller am Hafen", not: true },
+        { de: "Herr Wulff ist im Erdgeschoss.", ru: "Герр Вульф на первом этаже.", a: "Herr Wulff", b: "wo:im Erdgeschoss" },
+        { de: "Herr Jensen ist nicht im Keller im Club.", ru: "Йенсена нет в подвале клуба.", a: "Herr Jensen", b: "wo:im Keller im Club", not: true },
+      ],
+      answer: { "Greta|wo": "am Kiosk", "Frau Petersen|wo": "im Keller im Club", "Herr Jensen|wo": "im Keller am Hafen", "Herr Wulff|wo": "im Erdgeschoss" },
+    },
   },
   { t: "game", task: "Повторите за Даной слова на завтра вслух.", hint: HINT_SAY, c: speak(["die Adresse", "die Wohnung", "das Treppenhaus"]) },
   { t: "game", task: "Хауке засыпает и бормочет комнаты. Послушайте и нажмите на картинку.", hint: HINT_PICTURE, c: scene([["die Küche", "🍳"], ["das Bad", "🛁"], ["das Schlafzimmer", "🛏️"], ["der Balkon", "🌇"], ["das Treppenhaus", "🪜"], ["die Waschmaschine", "🫧"]]) },
