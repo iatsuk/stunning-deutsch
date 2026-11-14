@@ -1,0 +1,383 @@
+{
+  "date": "2026-11-14",
+  "scope": "Chapter 11 of the Moin scene prototype (src/story/scenes/11.ts): character lines, notes read aloud, the radio forecast, replays, lock, oral practice and new story phrases with plurals",
+  "model": "k2-fsa/OmniVoice",
+  "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+  "candidatesPerPhrase": 3,
+  "asr": "openai/whisper-large-v3",
+  "notes": [
+    "Each phrase has three takes; the chosen take has the closest transcript, an end level below -32 dB and no fragment flagged by tails.py. Two takes flagged by tails.py were not used; tails.py passes on all 46 imported files.",
+    "Whisper writes numbers as digits (100 Mitglieder, war 20, um 8); these takes say the numbers in words as written.",
+    "Greta and Herr Jensen do not speak in this chapter: their notes are read aloud by Elif and Dana, so the past tense sentences are heard."
+  ],
+  "files": [
+    {
+      "file": "560271c94dfa.m4a",
+      "text": "das Geheimnis, die Geheimnisse",
+      "voice": "Anna",
+      "seed": 21202458,
+      "heard": "Das Geheimnis, die Geheimnisse",
+      "endDb": -67.5
+    },
+    {
+      "file": "84e15df73773.m4a",
+      "text": "die Überraschung, die Überraschungen",
+      "voice": "Anna",
+      "seed": 21267569,
+      "heard": "Die Überraschung, die Überraschungen",
+      "endDb": -51.7
+    },
+    {
+      "file": "d68b32597f10.m4a",
+      "text": "der Wetterbericht, die Wetterberichte",
+      "voice": "Anna",
+      "seed": 20801102,
+      "heard": "Der Wetterbericht. Die Wetterberichte.",
+      "endDb": -52.4
+    },
+    {
+      "file": "dcc8119d7132.m4a",
+      "text": "die Mütze, die Mützen",
+      "voice": "Anna",
+      "seed": 20369665,
+      "heard": "Die Mütze, die Mützen",
+      "endDb": -59.9
+    },
+    {
+      "file": "61b4a1375aaa.m4a",
+      "text": "trocken",
+      "voice": "Anna",
+      "seed": 21043880,
+      "heard": "Trocken",
+      "endDb": -59.5
+    },
+    {
+      "file": "8ebef15566b1.m4a",
+      "text": "Ich bin wieder gesund! Gestern habe ich nur geschlafen und Suppe gegessen.",
+      "voice": "Rocko",
+      "seed": 21113199,
+      "heard": "Ich bin wieder gesund. Gestern habe ich nur geschlafen und Suppe gegessen.",
+      "endDb": -62.9
+    },
+    {
+      "file": "0e8ae3c51f64.m4a",
+      "text": "Ich bin Student. Und am Wochenende suche ich Arbeit. Hier: Stelle frei! Ein freier Platz?",
+      "voice": "Rocko",
+      "seed": 20899234,
+      "heard": "Ich bin Student und am Wochenende suche ich Arbeit. Hier, stelle frei. Ein freier Platz?",
+      "endDb": -57.5
+    },
+    {
+      "file": "4ed6e1af0d5e.m4a",
+      "text": "Helgoland! Da ist der Ring von unserer Möwe! Ich schreibe heute noch!",
+      "voice": "Flo",
+      "seed": 20574718,
+      "heard": "Helgoland, da ist der Ring von unserer Möwe. Ich schreibe heute noch.",
+      "endDb": -55.6
+    },
+    {
+      "file": "9ecd57e4b697.m4a",
+      "text": "Vorstellungsgespräch! Das Wort ist so lang wie ein Boot!",
+      "voice": "Flo",
+      "seed": 20359974,
+      "heard": "Vorstellungsgespräch. Das Wort ist so lang wie ein Boot.",
+      "endDb": -52.1
+    },
+    {
+      "file": "8adc81dd2958.m4a",
+      "text": "Der Wetterbericht für Kiel: Heute Sonne, morgen Wolken. Und am Samstag – Regen, den ganzen Tag.",
+      "voice": "Eddy",
+      "seed": 20462055,
+      "heard": "Der Wetterbericht für Kiel. Heute Sonne, morgen Wolken. Und am Samstag Regen den ganzen Tag.",
+      "endDb": -58.0
+    },
+    {
+      "file": "9b8925443dd6.m4a",
+      "text": "Samstag Regen? Und der Start? Und das Schild?",
+      "voice": "Anna",
+      "seed": 20330964,
+      "heard": "Samstag Regen und der Start und das Schild?",
+      "endDb": -40.2
+    },
+    {
+      "file": "24c2985a8ca8.m4a",
+      "text": "Das Schild! Es ist so schön! Wie neu!",
+      "voice": "Flo",
+      "seed": 20603302,
+      "heard": "Das Schild, es ist so schön, wie neu.",
+      "endDb": -45.0
+    },
+    {
+      "file": "d29c2a710a97.m4a",
+      "text": "Greta, was haben Sie gemacht?",
+      "voice": "Anna",
+      "seed": 21051430,
+      "heard": "Greta, was haben Sie gemacht?",
+      "endDb": -49.9
+    },
+    {
+      "file": "bee747147c62.m4a",
+      "text": "Greta schreibt: Ich habe die Farbe gekauft. Ich habe das Schild gemalt. Zehn Tage habe ich gearbeitet.",
+      "voice": "Flo",
+      "seed": 20516657,
+      "heard": "Greta schreibt, ich habe die Farbe gekauft, ich habe das Schild gemalt. Zehn Tage habe ich gearbeitet.",
+      "endDb": -69.5
+    },
+    {
+      "file": "3174e894da2f.m4a",
+      "text": "Herr Jensen schreibt: Ich habe Greta das Schild gegeben. Am Sonntag. Um halb sechs. Beim Tee.",
+      "voice": "Anna",
+      "seed": 20313517,
+      "heard": "Herr Jensen schreibt, ich habe Greta das Schild gegeben, am Sonntag, um halb sechs, beim Tee.",
+      "endDb": -57.9
+    },
+    {
+      "file": "9fdbd4e5c83c.m4a",
+      "text": "Um halb sechs! Beim Tee! Wie immer – und wir haben nichts gesehen!",
+      "voice": "Rocko",
+      "seed": 20751947,
+      "heard": "Um halb sechs, beim Tee, wie immer und wir haben nichts gesehen.",
+      "endDb": -60.9
+    },
+    {
+      "file": "12cee075b760.m4a",
+      "text": "Greta hat Herrn Jensen nicht entführt. Sie hat ihn zum Arzt gebracht!",
+      "voice": "Anna",
+      "seed": 20635008,
+      "heard": "Greta hat Herrn Jensen nicht entführt. Sie hat ihn zum Arzt gebracht.",
+      "endDb": -50.3
+    },
+    {
+      "file": "bd41a354631f.m4a",
+      "text": "Opa hat das Schild gemalt – und jetzt seine Enkelin! Das ist schön.",
+      "voice": "Flo",
+      "seed": 21017373,
+      "heard": "Opa hat das Schild gemalt und jetzt seine Enkelin. Das ist schön.",
+      "endDb": -40.2
+    },
+    {
+      "file": "4402b655f42e.m4a",
+      "text": "Der junge Mann auf dem Foto – das waren Sie? Mit der Mütze?",
+      "voice": "Rocko",
+      "seed": 20978685,
+      "heard": "Der junge Mann auf dem Foto, das waren sie. Mit der Mütze?",
+      "endDb": -64.6
+    },
+    {
+      "file": "81132ae0ea00.m4a",
+      "text": "Eine Firma wollte uns ein neues Schild geben – aus Plastik. Ich habe nein gesagt! Der ganze Club hat nein gesagt!",
+      "voice": "Sandy",
+      "seed": 21021630,
+      "heard": "Eine Firma wollte uns ein neues Schild geben aus Plastik. Ich habe Nein gesagt. Der ganze Club hat Nein gesagt.",
+      "endDb": -44.5
+    },
+    {
+      "file": "31236e5956c7.m4a",
+      "text": "Hundert Mitglieder, hundert Mal nein! Unser Schild bleibt!",
+      "voice": "Sandy",
+      "seed": 21226087,
+      "heard": "100 Mitglieder. 100 mal Nein. Unser Schild bleibt.",
+      "endDb": -70.8
+    },
+    {
+      "file": "5f087874d265.m4a",
+      "text": "Für den Rücken, Greta. Von einer Ärztin für eine Mechanikerin!",
+      "voice": "Anna",
+      "seed": 20560069,
+      "heard": "Für den Rücken Greta, von einer Ärztin für eine Mechanikerin.",
+      "endDb": -43.2
+    },
+    {
+      "file": "62adbbf87c3f.m4a",
+      "text": "Herr Jensen schreibt: Greta hat mich zum Arzt gebracht. Keine Entführung!",
+      "voice": "Flo",
+      "seed": 20749407,
+      "heard": "Herr Jensen schreibt, Greta hat mich zum Arzt gebracht. Keine Entführung.",
+      "endDb": -55.3
+    },
+    {
+      "file": "dcc116d8dca8.m4a",
+      "text": "Samstag ist die Party. Wer kocht? Hauke?",
+      "voice": "Sandy",
+      "seed": 20370888,
+      "heard": "Samstag ist die Party. Wer kocht, Hauke?",
+      "endDb": -34.6
+    },
+    {
+      "file": "a6cc42add760.m4a",
+      "text": "Ich? Ich bin kein Koch! Ich bin Student!",
+      "voice": "Rocko",
+      "seed": 20505182,
+      "heard": "Ich, ich bin kein Koch, ich bin Student.",
+      "endDb": -67.5
+    },
+    {
+      "file": "eae5dec67c2d.m4a",
+      "text": "Vor drei Jahren hatte ich hier mein Vorstellungsgespräch. Herr Jensen hat nur Moin gesagt – und ich hatte die Stelle!",
+      "voice": "Reed",
+      "seed": 21237099,
+      "heard": "Vor drei Jahren hatte ich hier mein Vorstellungsgespräch. Herr Jensen hat nur Moin gesagt und ich hatte die Stelle.",
+      "endDb": -60.2
+    },
+    {
+      "file": "d624e5baebd8.m4a",
+      "text": "Und jetzt … ich habe ein Geheimnis. Ich habe einen Kuchen gebacken. Für hundert! Mit MOIN!",
+      "voice": "Reed",
+      "seed": 20668199,
+      "heard": "Und jetzt, ich habe ein Geheimnis, ich habe einen Kuchen gebacken. Für 100 mit Moin!",
+      "endDb": -41.8
+    },
+    {
+      "file": "164a0caf663c.m4a",
+      "text": "Und ich? Ich habe zu viel gesagt. Entführung, Polizei … Entschuldigung, Greta!",
+      "voice": "Sandy",
+      "seed": 20481483,
+      "heard": "Und ich? Ich habe zu viel gesagt. Entführung Polizei, Entschuldigung Greta.",
+      "endDb": -43.4
+    },
+    {
+      "file": "e19af89021d7.m4a",
+      "text": "Und die Möwe? Was hat die Möwe gemacht?",
+      "voice": "Flo",
+      "seed": 20685461,
+      "heard": "Und die Möwe? Was hat die Möwe gemacht?",
+      "endDb": -47.6
+    },
+    {
+      "file": "a8c71c940b92.m4a",
+      "text": "Also: Samstag um acht am Club. Hauke soll das Schild tragen. Elif soll die Möwe beobachten. Und alle sollen nichts sagen!",
+      "voice": "Sandy",
+      "seed": 20683634,
+      "heard": "Also, Samstag um 8 am Club. Hauke soll das Schild tragen. Elif soll die Möwe beobachten. Und alle sollen nichts sagen.",
+      "endDb": -44.9
+    },
+    {
+      "file": "c808eaacd310.m4a",
+      "text": "Ich trage das Schild? Ich? Mit dem Fahrrad von Oma?",
+      "voice": "Rocko",
+      "seed": 20749360,
+      "heard": "Ich trage das Schild, ich mit dem Fahrrad von Oma.",
+      "endDb": -64.6
+    },
+    {
+      "file": "c2f8b52c89f7.m4a",
+      "text": "Nasse Farbe und Regen? Diagnose: ein Problem.",
+      "voice": "Anna",
+      "seed": 20533975,
+      "heard": "Nasse Farbe und Regen? Diagnose, ein Problem.",
+      "endDb": -46.8
+    },
+    {
+      "file": "e497a33583e2.m4a",
+      "text": "Der Karton mit dem Umriss! Das Schild passt genau hinein!",
+      "voice": "Flo",
+      "seed": 20649026,
+      "heard": "Der Karton mit dem Umriss. Das Schild passt genau hinein.",
+      "endDb": -43.5
+    },
+    {
+      "file": "67717481c5fb.m4a",
+      "text": "Und der Kuchen bleibt im Kühlschrank – bis Samstag. Kein Wort!",
+      "voice": "Reed",
+      "seed": 20904121,
+      "heard": "Und der Kuchen bleibt im Kühlschrank bis Samstag. Kein Wort!",
+      "endDb": -52.6
+    },
+    {
+      "file": "8be51a386f8a.m4a",
+      "text": "Und Opa Hansen? Er hat das Schild gemacht. Er muss am Samstag da sein!",
+      "voice": "Flo",
+      "seed": 20938858,
+      "heard": "Und Opa Hansen? Er hat das Schild gemacht. Er muss am Samstag da sein.",
+      "endDb": -44.8
+    },
+    {
+      "file": "5b738d324427.m4a",
+      "text": "Greta hat das Schild gemalt.",
+      "voice": "Anna",
+      "seed": 20509383,
+      "heard": "Greta hat das Schild gemalt.",
+      "endDb": -55.8
+    },
+    {
+      "file": "dd768662c1f5.m4a",
+      "text": "Herr Jensen war zwanzig.",
+      "voice": "Anna",
+      "seed": 20759573,
+      "heard": "Herr Jensen war 20.",
+      "endDb": -54.0
+    },
+    {
+      "file": "51f785df3c38.m4a",
+      "text": "Mateo hat einen Kuchen gebacken.",
+      "voice": "Anna",
+      "seed": 21048502,
+      "heard": "Matteo hat einen Kuchen gebacken.",
+      "endDb": -61.3
+    },
+    {
+      "file": "0cf015d26ae5.m4a",
+      "text": "Die Vogelwarte schreibt: Unsere Möwe ist sieben Jahre alt. Sie hat schon drei Kinder gehabt!",
+      "voice": "Flo",
+      "seed": 21056837,
+      "heard": "Die Vogelwarte schreibt, unsere Möwe ist sieben Jahre alt. Sie hat schon drei Kinder gehabt.",
+      "endDb": -55.8
+    },
+    {
+      "file": "f8b72bce2d7d.m4a",
+      "text": "Sieben Jahre und drei Kinder. Und ich? Ich habe nur das Fahrrad repariert.",
+      "voice": "Rocko",
+      "seed": 20896989,
+      "heard": "Sieben Jahre und drei Kinder. Und ich? Ich habe nur das Fahrrad repariert.",
+      "endDb": -58.6
+    },
+    {
+      "file": "0a56e4b5bd6e.m4a",
+      "text": "Der Kuchen ist im Kühlschrank. Für Samstag. Die Möwe – nein!",
+      "voice": "Reed",
+      "seed": 20857836,
+      "heard": "Der Kuchen ist im Kühlschrank. Für Samstag. Die Möwe? Nein!",
+      "endDb": -45.8
+    },
+    {
+      "file": "510586a40069.m4a",
+      "text": "Mein Brief! Möwe, das ist kein Fischbrötchen! Das bist du!",
+      "voice": "Flo",
+      "seed": 20850232,
+      "heard": "Mein Brief. Möwe, das ist kein Fischbrötchen, das bist du.",
+      "endDb": -60.6
+    },
+    {
+      "file": "ab8216ad99b1.m4a",
+      "text": "Morgen ist der letzte Tag. Und Samstag: Regen, nasse Farbe, Start. Wir brauchen einen Plan.",
+      "voice": "Anna",
+      "seed": 20842944,
+      "heard": "Morgen ist der letzte Tag und Samstag. Regennasse Farbe Start. Wir brauchen einen Plan.",
+      "endDb": -52.8
+    },
+    {
+      "file": "d81b1dd4fa6f.m4a",
+      "text": "Gute Nacht, Möwe. Morgen hast du viel Arbeit – du bist die Wache!",
+      "voice": "Rocko",
+      "seed": 20482558,
+      "heard": "Gute Nacht, Möwe. Morgen hast du viel Arbeit, du bist die Wache.",
+      "endDb": -60.3
+    },
+    {
+      "file": "ee06711c5a38.m4a",
+      "text": "Was hast du gestern gemacht?",
+      "voice": "Reed",
+      "seed": 21159000,
+      "heard": "Was hast du gestern gemacht?",
+      "endDb": -59.4
+    },
+    {
+      "file": "d262e62cddc0.m4a",
+      "text": "Hilf mir bitte beim Malen!",
+      "voice": "Anna",
+      "seed": 20589024,
+      "heard": "Hilf mir bitte beim Malen.",
+      "endDb": -60.1
+    }
+  ]
+}

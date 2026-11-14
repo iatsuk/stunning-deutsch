@@ -4890,5 +4890,405 @@
    ],
    "note": "*Herr Jensen darf nicht sprechen. Er soll Tee trinken. Er möchte segeln.* — модальный второй, инфинитив в конце."
   }
+ },
+ "arbeit/perfekt-3": {
+  "point": "Причастие всегда в конце: *In Buenos Aires habe ich gearbeitet.*",
+  "read": "Рамка держится при любом порядке слов. Поставим *in Buenos Aires* на первое место: *habe* остаётся вторым, *ich* уходит за него, а причастие — по-прежнему в конце. В вопросе да/нет первым встаёт *hast*: *Hast du schon eine Stelle gefunden?* Частая ошибка — поставить причастие сразу за *haben*: *Ich habe gearbeitet in Buenos Aires*. Так нельзя.",
+  "rows": [
+   {
+    "slots": [
+     [
+      {
+       "key": "in",
+       "text": "In"
+      },
+      {
+       "key": "buenos",
+       "text": "Buenos"
+      },
+      {
+       "key": "aires",
+       "text": "Aires"
+      }
+     ],
+     [
+      {
+       "key": "hab",
+       "text": "hab+e"
+      }
+     ],
+     [
+      {
+       "key": "ich",
+       "text": "ich"
+      }
+     ],
+     [
+      {
+       "key": "gearbeit",
+       "text": "*ge*arbeit+et"
+      }
+     ]
+    ],
+    "punct": ".",
+    "plain": "In Buenos Aires habe ich gearbeitet.",
+    "ru": "В Буэнос-Айресе я работал.",
+    "audio": "audio/9e38ecdf45c7.m4a"
+   },
+   {
+    "slots": [
+     [],
+     [
+      {
+       "key": "hast",
+       "text": "Hast"
+      }
+     ],
+     [
+      {
+       "key": "du",
+       "text": "du"
+      },
+      {
+       "key": "schon",
+       "text": "schon"
+      },
+      {
+       "key": "eine",
+       "text": "eine"
+      },
+      {
+       "key": "stelle",
+       "text": "Stelle"
+      }
+     ],
+     [
+      {
+       "key": "gefund",
+       "text": "*ge*fund+en"
+      }
+     ]
+    ],
+    "punct": "?",
+    "plain": "Hast du schon eine Stelle gefunden?",
+    "ru": "Ты уже нашёл работу?",
+    "audio": "audio/fa050a755df3.m4a"
+   }
+  ]
+ },
+ "arbeit/check-2": {
+  "point": "*Was hast du gestern gemacht?* — *Ich habe Deutsch gelernt.*",
+  "read": "*Was hast du gestern gemacht?* W-слово первым, *hast* — вторым, причастие *gemacht* — в конце, а *du gestern* — в середине. Русское «делал» распадается на две части: *hast* показывает лицо, *gemacht* — смысл. Ответ строится так же: *Ich habe Deutsch gelernt.* Оба глагола слабые: *ge-* + основа + *-t*. А *gestern* можно поставить и первым: *Gestern habe ich Deutsch gelernt.*",
+  "rows": [
+   {
+    "slots": [
+     [
+      {
+       "key": "was",
+       "text": "Was"
+      }
+     ],
+     [
+      {
+       "key": "hast",
+       "text": "hast"
+      }
+     ],
+     [
+      {
+       "key": "du",
+       "text": "du"
+      },
+      {
+       "key": "gestern",
+       "text": "gestern"
+      }
+     ],
+     [
+      {
+       "key": "gemach",
+       "text": "*ge*mach+t"
+      }
+     ]
+    ],
+    "punct": "?",
+    "plain": "Was hast du gestern gemacht?",
+    "ru": "Что ты делал вчера?",
+    "audio": "audio/bfcc194b3fe6.m4a"
+   },
+   {
+    "slots": [
+     [
+      {
+       "key": "ich",
+       "text": "Ich"
+      }
+     ],
+     [
+      {
+       "key": "hab",
+       "text": "hab+e"
+      }
+     ],
+     [
+      {
+       "key": "deutsch",
+       "text": "Deutsch"
+      }
+     ],
+     [
+      {
+       "key": "gelern",
+       "text": "*ge*lern+t"
+      }
+     ]
+    ],
+    "punct": ".",
+    "plain": "Ich habe Deutsch gelernt.",
+    "ru": "Я учил немецкий.",
+    "audio": "audio/29f580c4aae0.m4a"
+   }
+  ]
+ },
+ "arbeit/war-hatte-2": {
+  "point": "«Был», «было» — *war*, *hatte*; остальные глаголы — Perfekt",
+  "read": "В этой теме для *sein* и *haben* тренируем частые короткие формы *war* и *hatte*. У них нет рамки с причастием: *Ich war Koch*, *Ich hatte viel Arbeit*. Сравните с *Ich habe gearbeitet*. Это удобная опора для первых рассказов о прошлом, а не запрет на Perfekt этих глаголов: формы *ist gewesen* и *hat gehabt* тоже существуют.",
+  "rows": [
+   {
+    "slots": [
+     [
+      {
+       "key": "ich",
+       "text": "Ich"
+      }
+     ],
+     [
+      {
+       "key": "war",
+       "text": "war"
+      }
+     ],
+     [
+      {
+       "key": "koch",
+       "text": "Koch"
+      },
+      {
+       "key": "in",
+       "text": "in"
+      },
+      {
+       "key": "buenos",
+       "text": "Buenos"
+      },
+      {
+       "key": "aires",
+       "text": "Aires"
+      }
+     ],
+     []
+    ],
+    "punct": ".",
+    "plain": "Ich war Koch in Buenos Aires.",
+    "ru": "Я был поваром в Буэнос-Айресе.",
+    "audio": "audio/ab07cb08c268.m4a"
+   },
+   {
+    "slots": [
+     [
+      {
+       "key": "ich",
+       "text": "Ich"
+      }
+     ],
+     [
+      {
+       "key": "hab",
+       "text": "hab+e"
+      }
+     ],
+     [
+      {
+       "key": "in",
+       "text": "in"
+      },
+      {
+       "key": "buenos",
+       "text": "Buenos"
+      },
+      {
+       "key": "aires",
+       "text": "Aires"
+      }
+     ],
+     [
+      {
+       "key": "gearbeit",
+       "text": "*ge*arbeit+et"
+      }
+     ]
+    ],
+    "punct": ".",
+    "plain": "Ich habe in Buenos Aires gearbeitet.",
+    "ru": "Я работал в Буэнос-Айресе.",
+    "audio": "audio/e26cf52502a5.m4a"
+   }
+  ]
+ },
+ "arbeit/maennlich-weiblich-1": {
+  "point": "Женщина: *+in*, женщины: *+innen*; умлаут — *Ärztin*, *Köchin*",
+  "read": "Правило простое: к мужской форме добавляем *-in*, во множественном — *-innen*. Мужская форма во множественном часто не меняется: *die Lehrer*, *die Verkäufer*. Умлаут в женской форме запоминайте вместе со словом: *Ärztin*, *Köchin*. Если в группе и мужчины, и женщины, в объявлениях и речах обычно называют обе формы: *Lehrerinnen und Lehrer*.",
+  "table": {
+   "title": "Beruf: er und sie",
+   "ru": "Профессии мужчин и женщин",
+   "head": [
+    "Mann",
+    "Frau",
+    "Frauen"
+   ],
+   "rows": [
+    [
+     "der Lehrer",
+     "die Lehrer+in",
+     "die Lehrer+innen"
+    ],
+    [
+     "der Verkäufer",
+     "die Verkäufer+in",
+     "die Verkäufer+innen"
+    ],
+    [
+     "der Kellner",
+     "die Kellner+in",
+     "die Kellner+innen"
+    ],
+    [
+     "der Student",
+     "die Student+in",
+     "die Student+innen"
+    ],
+    [
+     "der Arzt",
+     "die Ärzt+in",
+     "die Ärzt+innen"
+    ],
+    [
+     "der Koch",
+     "die Köch+in",
+     "die Köch+innen"
+    ],
+    [
+     "der Hausmann",
+     "die Haus*frau*",
+     "die Haus*frauen*"
+    ]
+   ],
+   "ruCols": [],
+   "note": "Женская форма — мужская плюс *-in*. Во множественном — *-innen* с двумя *n*."
+  }
+ },
+ "arbeit/perfekt-5": {
+  "point": "Сильные: *ge-* + основа + *-en*, гласная может меняться: *gefunden*",
+  "read": "У сильных глаголов причастие часто оканчивается на *-en*: *gelesen*, *geschrieben*. Может меняться гласная: *finden → gefunden*, *sprechen → gesprochen*. Вместо списка для зубрёжки в игре прочитайте отчёт и решите, что уже сделано. Повторное употребление форм поможет их узнавать; таблица остаётся справочником. Отсутствие *ge-* и другие группы разберём позже.",
+  "table": {
+   "title": "Perfekt mit haben",
+   "ru": "haben + Partizip II",
+   "head": [
+    "Infinitiv",
+    "Partizip II",
+    "Beispiel"
+   ],
+   "rows": [
+    [
+     "machen",
+     "*ge*mach+t",
+     "Was *hast* du *gemacht*?"
+    ],
+    [
+     "kochen",
+     "*ge*koch+t",
+     "Er *hat* Pasta *gekocht*."
+    ],
+    [
+     "lernen",
+     "*ge*lern+t",
+     "Wir *haben* Deutsch *gelernt*."
+    ],
+    [
+     "arbeiten",
+     "*ge*arbeit+et",
+     "Ich *habe* in Buenos Aires *gearbeitet*."
+    ],
+    [
+     "lesen",
+     "*ge*les+en",
+     "Ich *habe* eine Anzeige *gelesen*."
+    ],
+    [
+     "schreiben",
+     "*ge*schrieb+en",
+     "*Hast* du eine E-Mail *geschrieben*?"
+    ],
+    [
+     "finden",
+     "*ge*fund+en",
+     "Er *hat* eine Stelle *gefunden*."
+    ],
+    [
+     "sprechen",
+     "*ge*sproch+en",
+     "Wir *haben* Deutsch *gesprochen*."
+    ]
+   ],
+   "ruCols": [],
+   "note": "Формы нужны для рассказа о сделанных делах. Возвращайтесь к таблице во время чтения отчёта. Здесь показаны частые глаголы с ge-."
+  },
+  "focus": [
+   4,
+   5,
+   6,
+   7
+  ]
+ },
+ "arbeit/check-3": {
+  "point": "*Gestern hatte ich keine Zeit.* — *hatte* + *kein*",
+  "read": "*Gestern hatte ich keine Zeit.* Для «было» берём *hatte* — без рамки и без причастия. *Gestern* на первом месте, поэтому *ich* уходит за глагол. А «не было времени» — это *keine Zeit*: перед существительным отрицание — *kein*, как в четвёртой теме. По-русски «у меня не было», по-немецки — «я не имел»: *ich hatte keine*.",
+  "rows": [
+   {
+    "slots": [
+     [
+      {
+       "key": "gestern",
+       "text": "Gestern"
+      }
+     ],
+     [
+      {
+       "key": "hatt",
+       "text": "hatt+e"
+      }
+     ],
+     [
+      {
+       "key": "ich",
+       "text": "ich"
+      },
+      {
+       "key": "keine",
+       "text": "keine"
+      },
+      {
+       "key": "zeit",
+       "text": "Zeit"
+      }
+     ],
+     []
+    ],
+    "punct": ".",
+    "plain": "Gestern hatte ich keine Zeit.",
+    "ru": "Вчера у меня не было времени.",
+    "audio": "audio/13deef876db7.m4a"
+   }
+  ]
  }
 }

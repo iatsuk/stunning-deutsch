@@ -680,6 +680,35 @@ export const phrases: Record<string, Phrase> = {
     pl: "Zeitschriften",
     note: "В приёмной — журналы о здоровье. За одним из них прячется Дана.",
   },
+  geheimnis: {
+    ru: "тайна, секрет",
+    de: "das Geheimnis",
+    pl: "Geheimnisse",
+    note: "geheim — тайный. Всю неделю у клуба было два секрета: табличка и торт.",
+  },
+  ueberraschung: {
+    ru: "сюрприз",
+    de: "die Überraschung",
+    pl: "Überraschungen",
+    note: "überraschen — удивить. Сюрприз к столетию клуба.",
+  },
+  wetterbericht: {
+    ru: "прогноз погоды",
+    de: "der Wetterbericht",
+    pl: "Wetterberichte",
+    note: "das Wetter + der Bericht — доклад. По радио Дерьи — каждое утро.",
+  },
+  muetze: {
+    ru: "фуражка, шапка",
+    de: "die Mütze",
+    pl: "Mützen",
+    note: "Капитанская фуражка Йенсена — die Kapitänsmütze. На фото 1976 года она уже есть.",
+  },
+  trocken: {
+    ru: "сухой",
+    de: "trocken",
+    note: "Наоборот — nass, мокрый. Краске нужно время, чтобы стать trocken.",
+  },
   neu: {
     ru: "Вы новичок. Вы видите всё.",
     de: "Sie sind neu. Sie sehen alles.",
