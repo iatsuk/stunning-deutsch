@@ -4,7 +4,7 @@ import { PlayButton } from "../markup";
 import { storyAudio, wordInfo } from "./audio";
 import { Bingo, Docks, Gendered, Gull, Letters, Lock, Pairs, Write } from "./games";
 import { initialAnswer, isCorrect, lockKey, wrongAnswers } from "./logic";
-import type { ClozeItem, Game, Mech, MistakeItem, PluralItem, Review, Sources, WhoItem } from "./review";
+import type { ClozeItem, Crossword, Game, Mech, MistakeItem, PluralItem, Review, Sources, VerbItem, WhoItem } from "./review";
 import { RuleCard } from "./RuleCard";
 import type { Answer } from "./types";
 
@@ -24,6 +24,9 @@ const FRAMES: Record<Mech, { title: string; task: string }> = {
   cloze: { title: "Стёртая реплика", task: "Вставьте слово, которое прозвучало в истории." },
   who: { title: "Кто это сказал?", task: "Послушайте реплику и выберите, кто её сказал." },
   mistake: { title: "Записка с ошибкой", task: "Нажмите на часть фразы, где ошибка." },
+  verbs: { title: "Перекличка", task: "Выберите форму глагола для этого лица." },
+  perfekt: { title: "Что было вчера", task: "Выберите Perfekt: haben или sein и причастие." },
+  crossword: { title: "Кроссворд Нильса", task: "Впишите немецкие слова по подсказкам, потом проверьте." },
 };
 
 type Finish = (missed: string[]) => void;
@@ -209,6 +212,106 @@ function MistakeGame({ items, seed, onFinish }: { items: MistakeItem[]; seed: st
   );
 }
 
+function VerbGame({ items, seed, onFinish }: { items: VerbItem[]; seed: string; onFinish: Finish }) {
+  return (
+    <Steps
+      items={items}
+      seed={seed}
+      onFinish={onFinish}
+      render={(item, s) => (
+        <>
+          <p className="moin-play-ask">
+            <span lang="de">{item.verb}</span> — {item.ru}
+          </p>
+          <p className="moin-play-gap" lang="de">
+            {item.prompt.split("___")[0]}
+            <span className="moin-play-blank">{s.solved ? item.answer : "___"}</span>
+            {item.prompt.split("___")[1]}
+          </p>
+          <Choices options={item.options} answer={item.answer} {...s} />
+        </>
+      )}
+    />
+  );
+}
+
+/** Кроссворд: буква в клетке, переход к следующей клетке слова; проверка подсвечивает неверные слова. */
+function CrosswordGame({ grid, onFinish }: { grid: Crossword; onFinish: Finish }) {
+  const [letters, setLetters] = useState<Record<string, string>>({});
+  const [wrong, setWrong] = useState<string[]>([]);
+  const [down, setDown] = useState(false);
+  const missed = useRef(new Set<string>());
+  const inputs = useRef(new Map<string, HTMLInputElement | null>());
+  const cellsOf = (w: Crossword["words"][number]) => [...w.word].map((ch, i) => ({ key: `${w.down ? w.x : w.x + i},${w.down ? w.y + i : w.y}`, ch }));
+  const solution = new Map(grid.words.flatMap((w) => cellsOf(w).map((c) => [c.key, c.ch] as const)));
+  const numbers = new Map(grid.words.map((w) => [`${w.x},${w.y}`, w.n]));
+  const wrongCells = new Set(grid.words.filter((w) => wrong.includes(w.unit)).flatMap((w) => cellsOf(w).map((c) => c.key)));
+  function move(key: string) {
+    const [x, y] = key.split(",").map(Number);
+    const word = grid.words.find((w) => w.down === down && cellsOf(w).some((c) => c.key === key)) ?? grid.words.find((w) => cellsOf(w).some((c) => c.key === key));
+    if (!word) return;
+    const next = word.down ? `${x},${y + 1}` : `${x + 1},${y}`;
+    inputs.current.get(next)?.focus();
+  }
+  function check() {
+    const bad = grid.words.filter((w) => cellsOf(w).some((c) => (letters[c.key] ?? "") !== c.ch)).map((w) => w.unit);
+    bad.forEach((u) => missed.current.add(u));
+    setWrong(bad);
+    if (!bad.length) onFinish([...missed.current]);
+  }
+  return (
+    <>
+      <div className="moin-cross" style={{ gridTemplateColumns: `repeat(${grid.width}, minmax(0, 2.4rem))` }} lang="de">
+        {Array.from({ length: grid.height }, (_, y) =>
+          Array.from({ length: grid.width }, (_, x) => {
+            const key = `${x},${y}`;
+            if (!solution.has(key)) return <span key={key} className="moin-cross-void" />;
+            return (
+              <label key={key} className="moin-cross-cell" data-wrong={wrongCells.has(key) || undefined}>
+                {numbers.has(key) && <small>{numbers.get(key)}</small>}
+                <input
+                  ref={(el) => {
+                    inputs.current.set(key, el);
+                  }}
+                  value={letters[key] ?? ""}
+                  maxLength={1}
+                  autoCapitalize="characters"
+                  autoComplete="off"
+                  aria-label={`Клетка ${x + 1}, ${y + 1}`}
+                  onFocus={() => {
+                    const across = grid.words.some((w) => !w.down && cellsOf(w).some((c) => c.key === key));
+                    const vertical = grid.words.some((w) => w.down && cellsOf(w).some((c) => c.key === key));
+                    if (across !== vertical) setDown(vertical);
+                  }}
+                  onChange={(e) => {
+                    const ch = e.target.value.slice(-1).toUpperCase();
+                    setLetters({ ...letters, [key]: ch });
+                    setWrong([]);
+                    if (ch) move(key);
+                  }}
+                />
+              </label>
+            );
+          }),
+        )}
+      </div>
+      <ol className="moin-cross-clues">
+        {grid.words.map((w) => (
+          <li key={w.unit} data-tone={wrong.includes(w.unit) ? "bad" : undefined}>
+            {w.n} {w.down ? "↓" : "→"} {w.clue} <small>({w.word.length})</small>
+          </li>
+        ))}
+      </ol>
+      {wrong.length > 0 && <p className="moin-chat-reaction">Неверные слова подсвечены. Исправьте и проверьте снова.</p>}
+      <div className="moin-drill-actions">
+        <button type="button" className="primary" onClick={check}>
+          Проверить
+        </button>
+      </div>
+    </>
+  );
+}
+
 /** Игры сцен: те же, что в главах, но слова подбирает память. */
 function ChallengeGame({ game, seed, onFinish }: { game: Extract<Game, { challenge: unknown }>; seed: string; onFinish: Finish }) {
   const c = game.challenge;
@@ -298,9 +401,13 @@ function GameView({ game, seed, onFinish }: { game: Game; seed: string; onFinish
         <ClozeGame items={game.items} seed={seed} onFinish={onFinish} />
       ) : game.mech === "who" ? (
         <WhoGame items={game.items} seed={seed} onFinish={onFinish} />
-      ) : (
+      ) : game.mech === "verbs" || game.mech === "perfekt" ? (
+        <VerbGame items={game.items} seed={seed} onFinish={onFinish} />
+      ) : game.mech === "crossword" ? (
+        <CrosswordGame grid={game.grid} onFinish={onFinish} />
+      ) : game.mech === "mistake" ? (
         <MistakeGame items={game.items} seed={seed} onFinish={onFinish} />
-      )}
+      ) : null}
     </>
   );
 }

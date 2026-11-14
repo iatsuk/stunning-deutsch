@@ -237,6 +237,7 @@ export function ScenePreview() {
         words: gameWords,
         seed: `${count}-${today}-${Object.keys(save.cards).length}-${save.recent.join(",")}`,
         recent: save.recent,
+        chapter: ci + 1,
         focus:
           reason === "chapter" && ci > 0
             ? chapters[ci - 1].beats.flatMap((b) => sceneUnits(b, wordInfo))

@@ -6,6 +6,7 @@ import { lockKey } from "../src/story/logic.ts";
 import { grade } from "../src/story/memory.ts";
 import { buildReview, MECHS, pluralTraps, reviewSources, SCENE_INTERVALS, sceneUnits } from "../src/story/review.ts";
 import { sceneChapters } from "../src/story/scenes/index.ts";
+import { VERBS } from "../src/story/verbs.ts";
 
 // Повторение новой версии (A1-PLAN.md, «Повторение»): раунд из трёх игр разных механик.
 const dictionary = JSON.parse(readFileSync(new URL("../src/generated/a1-words.json", import.meta.url), "utf8"));
@@ -81,5 +82,23 @@ test("new mechanics are built correctly", () => {
     const fixed = item.chunks.map((c, i) => (i === item.wrong ? item.right : c));
     assert.equal(fixed.join(" "), lockKey(sources.locks[item.unit].round));
   }
-  for (const mech of ["plural", "cloze", "who", "mistake"]) assert.ok(of(mech).length, `${mech} ни разу не собралась`);
+  for (const item of [...of("verbs"), ...of("perfekt")]) {
+    assert.equal(item.options.filter((o) => o === item.answer).length, 1, item.verb);
+    assert.equal(new Set(item.options).size, 3, item.verb);
+  }
+  for (const item of of("verbs")) assert.ok(VERBS[item.verb].forms.includes(item.answer), item.verb);
+  for (const item of of("perfekt")) assert.equal(item.answer, VERBS[item.verb].perfekt, item.verb);
+  for (const mech of ["plural", "cloze", "who", "mistake", "verbs", "perfekt"]) assert.ok(of(mech).length, `${mech} ни разу не собралась`);
+  const grids = games.filter((g) => g.mech === "crossword").map((g) => g.grid);
+  assert.ok(grids.length, "кроссворд ни разу не собрался");
+  for (const grid of grids) {
+    const cells = new Map();
+    for (const w of grid.words)
+      [...w.word].forEach((ch, i) => {
+        const key = `${w.down ? w.x : w.x + i},${w.down ? w.y + i : w.y}`;
+        assert.ok(!cells.has(key) || cells.get(key) === ch, `${w.word}: клетка ${key} занята другой буквой`);
+        cells.set(key, ch);
+      });
+    assert.ok([...cells.keys()].every((k) => { const [x, y] = k.split(",").map(Number); return x < grid.width && y < grid.height; }));
+  }
 });

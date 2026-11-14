@@ -3,6 +3,7 @@ import { challengeWords } from "./logic.ts";
 import { dueWords, lockCard, type Cards, type Interval } from "./memory.ts";
 import { flatNodes } from "./scene.ts";
 import type { Beat, Challenge, LockRound, SceneNode } from "./types.ts";
+import { PERSONS, VERBS } from "./verbs.ts";
 
 // Повторение новой версии Moin (A1-PLAN.md, «Повторение»). Очередь — коробки Лейтнера из
 // классической игры, но часы считают сцены, а не шаги: сцена в несколько раз длиннее шага.
@@ -76,25 +77,33 @@ export const dueUnits = (cards: Cards, step: number, day: number) => dueWords(ca
 
 // ——— Механики ———
 
-export type Mech = "bingo" | "gull" | "docks" | "letters" | "write" | "pairs" | "lock" | "plural" | "cloze" | "who" | "mistake";
+export type Mech = "bingo" | "gull" | "docks" | "letters" | "write" | "pairs" | "lock" | "plural" | "cloze" | "who" | "mistake" | "verbs" | "perfekt" | "crossword";
 export type PluralItem = { unit: string; de: string; options: string[]; answer: string };
 export type ClozeItem = { unit: string; line: Line; before: string; after: string; answer: string; options: string[] };
 export type WhoItem = { unit: string; line: Line; options: string[]; answer: string };
 export type MistakeItem = { unit: string; ru: string; chunks: string[]; wrong: number; right: string; rules: string[] };
+/** Форма глагола: лицо, варианты, верный; ru — перевод глагола. */
+export type VerbItem = { unit: string; verb: string; ru: string; prompt: string; options: string[]; answer: string };
+export type CrossWord = { unit: string; word: string; clue: string; x: number; y: number; down: boolean; n: number };
+export type Crossword = { width: number; height: number; words: CrossWord[] };
 export type Game =
   | { mech: "bingo" | "gull" | "docks" | "letters" | "write" | "pairs" | "lock"; units: string[]; challenge: Challenge; rules?: Record<string, string[]> }
   | { mech: "plural"; units: string[]; items: PluralItem[] }
   | { mech: "cloze"; units: string[]; items: ClozeItem[] }
   | { mech: "who"; units: string[]; items: WhoItem[] }
-  | { mech: "mistake"; units: string[]; items: MistakeItem[] };
+  | { mech: "mistake"; units: string[]; items: MistakeItem[] }
+  | { mech: "verbs" | "perfekt"; units: string[]; items: VerbItem[] }
+  | { mech: "crossword"; units: string[]; grid: Crossword };
 export type Review = { games: Game[] };
 
-export const MECHS: Mech[] = ["bingo", "who", "pairs", "docks", "gull", "plural", "cloze", "mistake", "lock", "letters", "write"];
+export const MECHS: Mech[] = ["bingo", "who", "pairs", "docks", "gull", "plural", "verbs", "cloze", "mistake", "perfekt", "lock", "crossword", "letters", "write"];
 /**
  * Узнать и выбрать можно сразу после встречи; собрать по буквам — после первого верного повтора,
  * написать по памяти — после второго. Остальные механики подходят единице любой прочности.
  */
-const MIN_BOX: Partial<Record<Mech, number>> = { letters: 1, write: 2 };
+const MIN_BOX: Partial<Record<Mech, number>> = { letters: 1, write: 2, crossword: 1 };
+/** С какой главы механика уместна: Perfekt вводит урок 11. */
+const MIN_CHAPTER: Partial<Record<Mech, number>> = { perfekt: 11 };
 
 const ARTICLE = /^(der|die|das) /;
 const PLURAL_ONLY = new Set(["die Eltern", "die Geschwister", "die Großeltern", "die Möbel", "die Nebenkosten", "die Ferien", "die USA", "die Leute", "die Pommes frites"]);
@@ -164,12 +173,15 @@ export type Context = {
   recent?: Mech[];
   /** Единицы, которые раунд берёт после просроченных: перед главой — прошлая глава. */
   focus?: string[];
+  /** Глава, перед которой или в которой идёт повторение: открывает механики по урокам. */
+  chapter?: number;
 };
 
 type Built = { game: Game; used: string[] } | null;
 
 function build(mech: Mech, pool: string[], cards: Cards, ctx: Context): Built {
   const { lookup, sources, seed } = ctx;
+  if ((ctx.chapter ?? 12) < (MIN_CHAPTER[mech] ?? 0)) return null;
   const firm = MIN_BOX[mech] ?? 0;
   const words = pool.filter((u) => lookup(u) && (cards[u]?.box ?? 0) >= firm);
   const lines = pool.filter((u) => sources.lines[u]);
@@ -260,6 +272,38 @@ function build(mech: Mech, pool: string[], cards: Cards, ctx: Context): Built {
       });
       return items.length >= 2 && speakers.length >= 3 ? { game: { mech, units: items.map((i) => i.unit), items }, used: items.map((i) => i.unit) } : null;
     }
+    case "verbs": {
+      const take = words.filter((w) => VERBS[w]).slice(0, 4);
+      if (take.length < 3) return null;
+      const label = ["ich", "du", "er / sie", "wir", "ihr", "sie / Sie"];
+      const items = take.map((w, i) => {
+        const forms = VERBS[w].forms;
+        const person = hash(`${seed}-${w}`) % PERSONS.length;
+        const answer = forms[person];
+        const traps = shuffle([...new Set(forms)].filter((f) => f !== answer), `${seed}-t-${w}`).slice(0, 2);
+        return { unit: w, verb: w, ru: lookup(w)!.ru, prompt: `${label[person]} ___`, answer, options: shuffle([answer, ...traps], `${seed}-o-${i}-${w}`) };
+      });
+      return items.every((i) => i.options.length === 3) ? { game: { mech, units: take, items }, used: take } : null;
+    }
+    case "perfekt": {
+      const take = words.filter((w) => VERBS[w]?.perfekt).slice(0, 4);
+      if (take.length < 3) return null;
+      const items = take.map((w, i) => {
+        const answer = VERBS[w].perfekt!;
+        const [aux, pp] = answer.split(" ");
+        const otherAux = aux === "hat" ? "ist" : "hat";
+        const badPp = pp.endsWith("en") ? `${pp.slice(0, -2)}t` : pp.replace(/e?t$/, "en");
+        return { unit: w, verb: w, ru: lookup(w)!.ru, prompt: `Gestern … (${w}): er ___`, answer, options: shuffle([answer, `${otherAux} ${pp}`, `${aux} ${badPp}`], `${seed}-o-${i}-${w}`) };
+      });
+      return { game: { mech, units: take, items }, used: take };
+    }
+    case "crossword": {
+      const grid = crossword(
+        words.filter((w) => isNoun(w) && /^[A-ZÄÖÜ][a-zäöü]{2,7}$/.test(bare(w))).map((w) => ({ unit: w, word: bare(w).toUpperCase(), clue: lookup(w)!.ru })),
+        seed,
+      );
+      return grid && grid.words.length >= 3 ? { game: { mech, units: grid.words.map((w) => w.unit), grid }, used: grid.words.map((w) => w.unit) } : null;
+    }
     case "mistake": {
       const items: MistakeItem[] = [];
       for (const unit of locks) {
@@ -276,6 +320,71 @@ function build(mech: Mech, pool: string[], cards: Cards, ctx: Context): Built {
       return items.length >= 2 ? { game: { mech, units: items.map((i) => i.unit), items }, used: items.map((i) => i.unit) } : null;
     }
   }
+}
+
+/**
+ * Мини-кроссворд: до четырёх слов, каждое следующее пересекает уже стоящее по общей букве. Слова не
+ * касаются друг друга боками, поэтому клетки читаются однозначно.
+ */
+export function crossword(list: { unit: string; word: string; clue: string }[], seed: string): Crossword | null {
+  const cells = new Map<string, string>();
+  const placed: CrossWord[] = [];
+  const at = (x: number, y: number) => cells.get(`${x},${y}`);
+  const fits = (word: string, x: number, y: number, down: boolean) => {
+    const dx = down ? 0 : 1, dy = down ? 1 : 0;
+    if (at(x - dx, y - dy) || at(x + dx * word.length, y + dy * word.length)) return false;
+    let crossings = 0;
+    for (let i = 0; i < word.length; i++) {
+      const cx = x + dx * i, cy = y + dy * i;
+      const here = at(cx, cy);
+      if (here) {
+        if (here !== word[i]) return false;
+        crossings++;
+        continue;
+      }
+      // Пустая клетка не должна прилегать к чужому слову сбоку.
+      if (at(cx + dy, cy + dx) || at(cx - dy, cy - dx)) return false;
+    }
+    return crossings === 1;
+  };
+  const put = (w: { unit: string; word: string; clue: string }, x: number, y: number, down: boolean) => {
+    for (let i = 0; i < w.word.length; i++) cells.set(`${x + (down ? 0 : i)},${y + (down ? i : 0)}`, w.word[i]);
+    placed.push({ ...w, x, y, down, n: 0 });
+  };
+  const pool = shuffle(list, seed).sort((a, b) => b.word.length - a.word.length);
+  for (const w of pool) {
+    if (placed.length === 4) break;
+    if (!placed.length) {
+      put(w, 0, 0, false);
+      continue;
+    }
+    let done = false;
+    for (const p of placed) {
+      for (let i = 0; i < p.word.length && !done; i++)
+        for (let j = 0; j < w.word.length && !done; j++) {
+          if (p.word[i] !== w.word[j]) continue;
+          const down = !p.down;
+          const x = down ? p.x + i : p.x - j;
+          const y = down ? p.y - j : p.y + i;
+          if (fits(w.word, x, y, down)) {
+            put(w, x, y, down);
+            done = true;
+          }
+        }
+      if (done) break;
+    }
+  }
+  if (placed.length < 3) return null;
+  const minX = Math.min(...placed.map((p) => p.x)), minY = Math.min(...placed.map((p) => p.y));
+  const words = placed
+    .map((p) => ({ ...p, x: p.x - minX, y: p.y - minY }))
+    .sort((a, b) => a.y - b.y || a.x - b.x)
+    .map((p, i) => ({ ...p, n: i + 1 }));
+  return {
+    width: Math.max(...words.map((p) => p.x + (p.down ? 1 : p.word.length))),
+    height: Math.max(...words.map((p) => p.y + (p.down ? p.word.length : 1))),
+    words,
+  };
 }
 
 /**
