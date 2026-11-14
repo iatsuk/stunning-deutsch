@@ -1,7 +1,8 @@
 // Раскладки прежних версий сцен для переноса старых сохранений (src/story/progress.ts): до 15 ноября
 // 2026 года прохождение хранилось по номерам узлов, и вставка узла сдвигала номера. Скрипт проходит
-// по версиям сцен в git и пишет src/story/scene-layouts.json: для каждой сцены — раскладки,
-// которые отличаются от текущей. Запускать вручную: node scripts/scene-layouts.mjs.
+// по версиям сцен в git до перехода на отпечатки (LAST) и пишет src/story/scene-layouts.json: для
+// каждой сцены — все раскладки этих версий. Сохранение по номерам могло появиться только в них,
+// поэтому набор не зависит от текущей версии сцен. Запускать вручную: node scripts/scene-layouts.mjs.
 import { execFileSync } from "node:child_process";
 import { mkdtempSync, rmSync, writeFileSync, existsSync } from "node:fs";
 import { tmpdir } from "node:os";
@@ -25,10 +26,9 @@ if (process.argv[2] === "--dump") {
   process.exit(0);
 }
 
-const commits = execFileSync("git", ["log", "--format=%H", "--", "src/story/scenes", "src/story/scenes.ts"], { cwd: root, encoding: "utf8" }).trim().split("\n");
-const { sceneChapters } = await import(path.join(root, "src/story/scenes/index.ts"));
-const { layoutOf } = await import(path.join(root, "src/story/progress.ts"));
-const current = Object.fromEntries(sceneChapters.flatMap((c) => c.beats).filter((b) => b.challenge.kind === "play").map((b) => [b.id, JSON.stringify(layoutOf(b.challenge.nodes))]));
+/** Последняя версия с прохождением по номерам: следующий коммит перевёл сохранение на отпечатки. */
+const LAST = "e8f42a7";
+const commits = execFileSync("git", ["log", "--format=%H", LAST, "--", "src/story/scenes", "src/story/scenes.ts"], { cwd: root, encoding: "utf8" }).trim().split("\n");
 const layouts = {};
 let read = 0;
 for (const sha of commits) {
@@ -39,7 +39,6 @@ for (const sha of commits) {
     read++;
     for (const [id, layout] of Object.entries(dump)) {
       const text = JSON.stringify(layout);
-      if (text === current[id]) continue;
       layouts[id] ??= [];
       if (!layouts[id].some((l) => JSON.stringify(l) === text)) layouts[id].push(layout);
     }
@@ -50,4 +49,4 @@ for (const sha of commits) {
   }
 }
 writeFileSync(OUT, `${JSON.stringify(layouts)}\n`);
-console.log(`версий прочитано ${read} из ${commits.length}; сцен с прежними раскладками ${Object.keys(layouts).length}, раскладок ${Object.values(layouts).flat().length}`);
+console.log(`версий прочитано ${read} из ${commits.length}; сцен ${Object.keys(layouts).length}, раскладок ${Object.values(layouts).flat().length}`);
