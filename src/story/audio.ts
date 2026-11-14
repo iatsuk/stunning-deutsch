@@ -11,11 +11,18 @@ export const a1Words = dictionary as Dictionary;
 export const storyAudio = (text: string, voice?: string) =>
   map[audioKey(text, voice)];
 
-/** Перевод и готовая озвучка слова из словаря уроков A1. */
-export const wordInfo = (de: string) => a1Words[de];
-
 /** Запись выражения истории: у существительного звучит и множественное. */
 export const phraseAudio = (p: { de: string; pl?: string }) => storyAudio(spoken(p));
+
+const phraseByDe = new Map(Object.values(phrases).map((p) => [p.de, p]));
+/**
+ * Перевод и готовая озвучка слова для игр со словами: из словаря уроков A1, иначе — выражения
+ * истории. Так в лото и причалы попадают слова экзамена, которых нет в уроках (A1-PLAN.md).
+ */
+export const wordInfo = (de: string) => {
+  const p = a1Words[de] ? undefined : phraseByDe.get(de);
+  return a1Words[de] ?? (p ? { ru: p.ru, audio: phraseAudio(p) } : undefined);
+};
 
 /** Запись слова: из словаря уроков, иначе — выражения истории с тем же немецким. */
 export const nounAudio = (de: string) => {

@@ -165,8 +165,10 @@ for (const topic of topics.filter((t) => t.level === "a1")) {
   }
 }
 if (!ONLY) {
+  // Слова экзамена вне уроков приходят в игры выражениями истории со своей озвучкой (A1-PLAN.md).
+  const phraseWords = new Set(Object.values(storyPhrases).map((p) => plain(p.de)));
   for (const word of storyWords(storyEpisodes)) {
-    if (!a1Words[word]) fail("story", `слова «${word}» нет в словаре уроков A1`);
+    if (!a1Words[word] && !phraseWords.has(word)) fail("story", `слова «${word}» нет ни в словаре уроков A1, ни в выражениях истории`);
   }
 }
 
