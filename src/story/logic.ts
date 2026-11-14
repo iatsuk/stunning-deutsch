@@ -101,6 +101,7 @@ export function challengeWords(c: Challenge): string[] {
   if (c.kind === "scene") return c.items.map((i) => i.word);
   if (c.kind === "odd") return c.rounds.flatMap((r) => r.words);
   if (c.kind === "sounds") return c.rounds.flatMap((r) => r.options);
+  if (c.kind === "spy") return c.items.map((i) => i.de);
   return [];
 }
 /** Сборка проверяет, что каждое слово игры есть в словаре уроков. */
@@ -316,12 +317,23 @@ export function treeWrong(c: Tree, value: Record<string, string | number>) {
  * Словарь фоторобота: какие варианты бывают у каждой части. По нему игра рисует портрет, а
  * валидация не даёт главе вариант, который не нарисовать. «says» — любая короткая реплика.
  */
+/** Цвета, которые умеют рисовать фоторобот и «Я шпион»: выражения истории из главы 5. */
+export const COLOURS = ["rot", "gelb", "blau", "dunkelblau", "grün", "schwarz", "weiß", "grau", "braun"];
 export const PORTRAIT: Record<Exclude<PortraitPart, "says">, string[]> = {
   size: ["groß", "klein"],
   age: ["alt", "nicht alt"],
   top: ["die Jacke", "der Pullover", "der Mantel", "das Hemd"],
-  colour: ["dunkelblau", "weiß"],
+  colour: COLOURS,
 };
+
+/** Вещи, которые умеет рисовать «Я шпион». */
+export const SPY = ["die Hose", "das T-Shirt", "das Hemd", "die Jacke", "der Pullover", "der Mantel", "das Kleid", "der Schuh"];
+/** Местоимение по артиклю: der — er, die — sie, das — es. */
+export const pronounOf = (de: string) => ({ der: "er", die: "sie", das: "es" })[de.split(" ")[0]] ?? "";
+type Spy = Extract<Challenge, { kind: "spy" }>;
+/** Вещи, которые подходят под загадку: и цвет, и местоимение. */
+export const spyMatches = (c: Spy, round: Spy["rounds"][number]) =>
+  c.items.filter((i) => i.colour === round.colour && pronounOf(i.de) === round.pronoun);
 
 const isRecord = (value: unknown): value is Record<string, string | number> =>
   Boolean(value) && typeof value === "object" && !Array.isArray(value);
@@ -429,6 +441,8 @@ export function isCorrect(
       return sameList(value, challenge.rounds.map((r) => r.word));
     case "lift":
       return sameList(value, challenge.rounds.map((r) => String(r.floor)));
+    case "spy":
+      return sameList(value, challenge.rounds.map((r) => r.answer));
     case "contra":
       return sameSet(value, challenge.answer);
     case "cipher":
@@ -491,6 +505,8 @@ export function solution(challenge: Challenge): Answer {
       return challenge.rounds.map((r) => r.word);
     case "lift":
       return challenge.rounds.map((r) => String(r.floor));
+    case "spy":
+      return challenge.rounds.map((r) => r.answer);
     case "planner":
       return { [plannerFree(challenge)[0]]: "star" };
     case "coins": {
@@ -528,6 +544,7 @@ export function initialAnswer(challenge: Challenge): Answer {
     case "sounds":
     case "compound":
     case "lift":
+    case "spy":
     case "contra":
       return [];
     case "gaps":
@@ -664,6 +681,7 @@ function restoreDraft(c: Challenge, v: unknown): Answer | undefined {
     case "cipher":
     case "tree":
     case "portrait":
+    case "spy":
       return undefined;
     case "play": {
       if (!strings) return undefined;
@@ -1097,6 +1115,23 @@ export function validateChallenge(
         c.text.every((t) => t.de && t.ru)
       );
     }
+    case "spy":
+      // Загадка решается одним способом, и нужны обе подсказки: тот же цвет есть у вещи другого
+      // рода, то же местоимение — у вещи другого цвета.
+      return (
+        c.items.length >= 4 &&
+        new Set(c.items.map((i) => i.de)).size === c.items.length &&
+        c.items.every((i) => SPY.includes(i.de) && COLOURS.includes(i.colour)) &&
+        c.rounds.length >= 2 &&
+        c.rounds.every(
+          (r) =>
+            r.ru &&
+            r.de.toLowerCase().includes(`${r.pronoun} ist ${r.colour}`) &&
+            spyMatches(c, r).map((i) => i.de).join() === r.answer &&
+            c.items.some((i) => i.de !== r.answer && i.colour === r.colour) &&
+            c.items.some((i) => i.de !== r.answer && pronounOf(i.de) === r.pronoun),
+        )
+      );
     case "portrait":
       return (
         c.notes.length >= 2 &&

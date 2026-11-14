@@ -8,7 +8,8 @@
   "notes": [
     "Whisper writes numbers as digits (5,50, 3,20, 19, 24); every such take was compared by hand and says the numbers in words as written.",
     "Each phrase has three takes; the chosen take has the closest transcript, an end level below -32 dB and no fragment flagged by tails.py. tails.py also passes on all 65 imported files.",
-    "After the author's review on 9 November 2026 nine recordings were added with four takes each: the story phrases der Zucker (no plural), das Geschenk, die Stimme and der Buchstabe, and five rewritten lines. Frauke's market cry now ends on \"Zwiebeln\" because the old take clipped the last vowel of \"Euro\". All 36 takes were transcribed correctly except two of the market cry; the chosen ones match the text and end below -32 dB."
+    "After the author's review on 9 November 2026 nine recordings were added with four takes each: the story phrases der Zucker (no plural), das Geschenk, die Stimme and der Buchstabe, and five rewritten lines. Frauke's market cry now ends on \"Zwiebeln\" because the old take clipped the last vowel of \"Euro\". All 36 takes were transcribed correctly except two of the market cry; the chosen ones match the text and end below -32 dB.",
+    "On 14 November 2026 six colour phrases were added for the new version (rot, gelb, grün, schwarz, grau, braun; blau already had a recording). Each had four takes, Whisper ran on the clip padded with half a second of silence. Rejected takes: braun heard as 'Vielen Dank.' with a cut-off end, grau and schwarz with cut-off ends. The chosen takes are heard as the word itself, end below -32 dB, and tails.py passes on the imported files."
   ],
   "files": [
     {
@@ -602,6 +603,54 @@
       "seed": 20976920,
       "heard": "Frau Kruse, hier ist Dana. Ist das der Mann?",
       "endDb": -43.5
+    },
+    {
+      "file": "9dc7f952c4df.m4a",
+      "text": "rot",
+      "voice": "Anna",
+      "seed": 20280733,
+      "heard": "Rot",
+      "endDb": -54.9
+    },
+    {
+      "file": "f93a21613774.m4a",
+      "text": "gelb",
+      "voice": "Anna",
+      "seed": 20699732,
+      "heard": "Gelb",
+      "endDb": -55.5
+    },
+    {
+      "file": "2968e561ab18.m4a",
+      "text": "grün",
+      "voice": "Anna",
+      "seed": 20989799,
+      "heard": "Grün",
+      "endDb": -59.6
+    },
+    {
+      "file": "a1814e38b691.m4a",
+      "text": "schwarz",
+      "voice": "Anna",
+      "seed": 20453745,
+      "heard": "Schwarz",
+      "endDb": -64.3
+    },
+    {
+      "file": "df9a40ec4e76.m4a",
+      "text": "grau",
+      "voice": "Anna",
+      "seed": 20470819,
+      "heard": "Grau",
+      "endDb": -56.5
+    },
+    {
+      "file": "7f855aea6967.m4a",
+      "text": "braun",
+      "voice": "Anna",
+      "seed": 20950791,
+      "heard": "Braun",
+      "endDb": -68.3
     }
   ]
 }

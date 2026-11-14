@@ -51,7 +51,7 @@ const rain: SceneNode[] = [
     ],
   },
   { ...narr("Радио Дерьи обещает: и на Kieler Woche — es regnet. Йенсен смотрит на небо. Молча."), set: { weather: 1 } },
-  narr("Хауке всё равно снимает die Jacke. Под ней Hemd в клетку, Größe XXL: рукава висят, как паруса в штиль."),
+  narr("Хауке всё равно снимает die Jacke, цвет: {gelb}. Под ней Hemd в клетку — {rot} и {schwarz}, Größe XXL: рукава висят, как паруса."),
   elif("Hauke! Das Hemd ist zu groß!", "Хауке! Рубашка слишком большая!", ["das Hemd", "zu"]),
   hauke("Das ist nicht mein Hemd. Das ist von Nils! Mein Hemd hat Nils.", "Это не моя рубашка. Это Нильса! Моя — у Нильса."),
   { t: "gap", rule: ["einkaufen/adjektiv-1"], task: "Что говорит Элиф?", text: "Das Hemd ist zu ___.", options: ["groß", "klein", "teuer"], answer: "groß", ru: "Рубашка слишком большая." },
@@ -159,7 +159,7 @@ const shop: SceneNode[] = [
     ru: "Размер S, пожалуйста.",
   },
   kruse("S? Hm. Ich habe nur eine Hose – Größe XL. Rot wie eine Tomate!", "S? Хм. У меня только одни брюки — размер XL. Красные, как помидор!", ["die Tomate"]),
-  narr("Hose на лямках, Größe XL, красная, как Tomate. Дана тонет в ней по грудь. Хауке плачет от смеха."),
+  narr("Hose на лямках, Größe XL, цвет: {rot}, как Tomate. Дана тонет в ней по грудь. Хауке плачет от смеха."),
   dana("Die Hose ist zu groß und zu lang!", "Брюки слишком большие и слишком длинные!", ["lang"]),
   {
     t: "hear",
@@ -207,7 +207,7 @@ const shop: SceneNode[] = [
       no("Краски у неё нет", "Банки стоят на полке прямо за ней."),
     ],
   },
-  narr("Дана sucht die Farbe сама — и теряется: канаты, якоря, сапоги, снова канаты. {laden} внутри больше, чем снаружи."),
+  narr("Дана sucht die Farbe сама и теряется. Вокруг одни цвета: {braun}, {grau}, {blue} — канаты, сапоги, вёдра. {laden} внутри больше, чем снаружи."),
   {
     t: "look",
     task: "Помогите Дане: осмотрите лавку и найдите краску.",
@@ -261,7 +261,7 @@ const shop: SceneNode[] = [
         { id: "size", label: "Рост", options: ["groß", "klein"] },
         { id: "age", label: "Возраст", options: ["alt", "nicht alt"] },
         { id: "top", label: "Одежда", options: ["die Jacke", "der Pullover", "der Mantel"] },
-        { id: "colour", label: "Цвет", options: ["dunkelblau", "weiß"] },
+        { id: "colour", label: "Цвет", options: ["gelb", "dunkelblau", "grau"] },
         { id: "says", label: "Говорит", options: ["Moin.", "Guten Tag!", "Hallo!"] },
       ],
       answer: { size: "groß", age: "alt", top: "die Jacke", colour: "dunkelblau", says: "Moin." },
@@ -286,7 +286,7 @@ const shop: SceneNode[] = [
 // die Packung · 4 (мелочь, но из неё растёт слух Фрауке — знак главы 5 во фронте «Слухи»).
 const market: SceneNode[] = [
   { t: "pic", src: "05-market.jpg", alt: "Рынок у гавани после дождя: Фрауке в полосатом фартуке за прилавком с ящиками яблок, помидоров и лука, весы; Дана в огромных красных рыбацких брюках, Элиф с биноклем; на заднем плане Матео прячет в рюкзак пакет лука; лужи" },
-  narr("После дождя am Hafen открывается {markt}. У Фрауке heute Fischbrötchen und Äpfel."),
+  narr("После дождя am Hafen открывается {markt}. У Фрауке heute Fischbrötchen und Äpfel: {rot} и {gruen}."),
   frauke("Moin! Ein Kilo Äpfel – zwei Euro! Äpfel, Tomaten, Zwiebeln!", "Привет! Килограмм яблок — два евро! Яблоки, помидоры, лук!", ["ein Kilo", "der Apfel"]),
   {
     t: "reply",
@@ -790,7 +790,30 @@ const evening: SceneNode[] = [
   },
   narr("Хауке достаёт карточки лото: nur Einkaufen. Die Möwe смотрит на карточку с Apfel."),
   { t: "game", task: "Лото на ночь: послушайте слово и закройте его на карточке.", hint: HINT_HEAR, c: bingo(["die Hose", "die Jacke", "das Hemd", "die Tüte", "die Flasche", "der Apfel", "die Zwiebel", "die Tomate", "der Euro"]) },
-  { t: "game", task: "Подпишите вещи дня в блокноте по буквам.", hint: HINT_SPELL, c: letters(["die Hose", "die Tüte", "der Euro"]) },
+  {
+    t: "game",
+    rule: ["einkaufen/pronomen-3"],
+    task: "Хауке не отдаёт карточки и играет дальше: «Ich sehe was, was du nicht siehst!» Найдите вещь, которую он загадал.",
+    hint: "er — der, sie — die, es — das. Сначала род по местоимению, потом цвет.",
+    c: {
+      kind: "spy",
+      items: [
+        { de: "die Hose", colour: "rot" },
+        { de: "das T-Shirt", colour: "rot" },
+        { de: "die Jacke", colour: "gelb" },
+        { de: "der Pullover", colour: "gelb" },
+        { de: "der Schuh", colour: "schwarz" },
+        { de: "das Kleid", colour: "schwarz" },
+        { de: "das Hemd", colour: "blau" },
+        { de: "der Mantel", colour: "braun" },
+      ],
+      rounds: [
+        { de: "Ich sehe was, was du nicht siehst. Sie ist rot!", ru: "Я вижу то, чего не видишь ты. Она красная!", pronoun: "sie", colour: "rot", answer: "die Hose" },
+        { de: "Ich sehe was, was du nicht siehst. Er ist gelb!", ru: "Я вижу то, чего не видишь ты. Он жёлтый!", pronoun: "er", colour: "gelb", answer: "der Pullover" },
+        { de: "Ich sehe was, was du nicht siehst. Es ist schwarz!", ru: "Я вижу то, чего не видишь ты. Оно чёрное!", pronoun: "es", colour: "schwarz", answer: "das Kleid" },
+      ],
+    },
+  },
   narr("Вы закрываете блокнот: «День пятый. Найдено: {kassenbon} — 17:05, Dunkelblau; {zettel} — Weiß; der Moin-Mann». Noch sieben Tage."),
   {
     t: "clue",

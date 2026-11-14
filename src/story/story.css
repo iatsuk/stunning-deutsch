@@ -2799,3 +2799,28 @@
 .moin-portrait .moin-grid-row[data-wrong] {
   border-color: var(--bad);
 }
+/* «Я шпион»: вещи на светлой ткани, чтобы чёрное и белое читалось в обеих темах. */
+.moin-spy {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  margin: 10px 0;
+}
+.moin-spy button {
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+  padding: 8px 4px 6px;
+  border: 1px solid var(--line-strong);
+  border-radius: 6px;
+  background: #e9e3d3;
+  color: #2b2f36;
+  font-family: var(--serif);
+  font-size: 14px;
+  cursor: pointer;
+}
+.moin-spy svg {
+  width: 100%;
+  max-width: 64px;
+  height: auto;
+}

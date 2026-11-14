@@ -218,6 +218,15 @@ export type Challenge =
       notes: { de: string; ru: string }[];
       parts: { id: PortraitPart; label: string; options: string[] }[];
       answer: Partial<Record<PortraitPart, string>>;
+    }
+  /**
+   * «Я шпион» (Ich sehe was, was du nicht siehst): по загадке «Sie ist rot» нажать вещь. Подписи
+   * без артикля: местоимение подсказывает род, цвет — вещь. Вещи и цвета — из словаря SPY в logic.ts.
+   */
+  | {
+      kind: "spy";
+      items: { de: string; colour: string }[];
+      rounds: { de: string; ru: string; pronoun: "er" | "sie" | "es"; colour: string; answer: string }[];
     };
 /** Клетка семейного дерева; partner — супруг рядом, icon — подсказка на пустой клетке. */
 export type TreeSlot = { id: string; icon?: string; given?: string };

@@ -543,5 +543,20 @@ test("new mini-games check the answer, and their puzzles have exactly one way ou
   assert.ok(valid(portrait) && isCorrect(portrait, solution(portrait)));
   assert.match(mistake(portrait, { size: "groß", top: "der Mantel", says: "Moin." }, ""), /одежда/);
   assert.ok(!valid({ ...portrait, parts: [{ id: "size", label: "Рост", options: ["groß", "riesig"] }], answer: { size: "groß" } }), "riesig не нарисовать");
-  for (const c of [grid, planner, glue, lift, sounds, contra, ads, tree, portrait]) assert.ok(!isCorrect(c, initialAnswer(c)), c.kind);
+  // «Я шпион»: загадку решают и местоимение, и цвет; если хватает одного, загадка негодна.
+  const spy = {
+    kind: "spy",
+    items: [
+      { de: "die Hose", colour: "rot" },
+      { de: "das T-Shirt", colour: "rot" },
+      { de: "die Jacke", colour: "gelb" },
+      { de: "der Schuh", colour: "schwarz" },
+      { de: "das Kleid", colour: "schwarz" },
+    ],
+    rounds: [{ de: "Sie ist rot!", ru: "x", pronoun: "sie", colour: "rot", answer: "die Hose" }, { de: "Es ist rot!", ru: "x", pronoun: "es", colour: "rot", answer: "das T-Shirt" }],
+  };
+  assert.ok(valid(spy) && isCorrect(spy, ["die Hose", "das T-Shirt"]) && !isCorrect(spy, ["das T-Shirt", "die Hose"]));
+  assert.ok(!valid({ ...spy, rounds: [{ de: "Sie ist gelb!", ru: "x", pronoun: "sie", colour: "gelb", answer: "die Jacke" }, spy.rounds[0]] }), "gelb один — местоимение не нужно");
+  assert.ok(!valid({ ...spy, items: [...spy.items, { de: "das Hemd", colour: "rot" }] }), "две вещи под одну загадку");
+  for (const c of [grid, planner, glue, lift, sounds, contra, ads, tree, portrait, spy]) assert.ok(!isCorrect(c, initialAnswer(c)), c.kind);
 });

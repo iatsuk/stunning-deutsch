@@ -4,7 +4,7 @@ import { shuffle } from "../lib/shuffle";
 import { PlayButton } from "../markup";
 import { nounAudio, wordInfo } from "./audio";
 import { Gendered, Note, type Game } from "./games";
-import { compoundOf, decipher, floorLabel, gridKey, plannerWho, treeSlots } from "./logic";
+import { compoundOf, decipher, floorLabel, gridKey, plannerWho, pronounOf, treeSlots } from "./logic";
 import type { Answer, PortraitPart, TreeNode, TreeSlot } from "./types";
 
 // Новые мини-игры новой версии (A1-PLOT.md, «Новые мини-игры»). Как и прежние игры, всё
@@ -496,14 +496,24 @@ export function Tree({ c, value, seed, disabled, checked, change }: Game<"tree">
   );
 }
 
-/** Цвета одежды фоторобота: тёмно-синий и белый — цвета таблички MOIN. */
-const CLOTH: Record<string, string> = { dunkelblau: "#22406b", "weiß": "#f3efe4" };
+/** Краски для цветов из словаря COLOURS: ими рисуют фоторобот и «Я шпион». */
+const PAINT: Record<string, string> = {
+  rot: "#c63b2f",
+  gelb: "#e8b630",
+  blau: "#2f6fc0",
+  dunkelblau: "#22406b",
+  "grün": "#3d8c4b",
+  schwarz: "#22252a",
+  "weiß": "#f3efe4",
+  grau: "#8d939b",
+  braun: "#87583a",
+};
 
 /** Портрет фоторобота: несобранная часть видна пунктиром, ростомер слева. */
 function Face({ look }: { look: Partial<Record<PortraitPart, string>> }) {
   const scale = look.size === "klein" ? 0.8 : 1;
   const hair = look.age === "alt" ? "#e6e2d8" : look.age === "nicht alt" ? "#5b3b24" : undefined;
-  const cloth = look.colour ? CLOTH[look.colour] : undefined;
+  const cloth = look.colour ? PAINT[look.colour] : undefined;
   const top = look.top;
   const dash = { fill: "none", stroke: "currentColor", strokeDasharray: "4 3", opacity: 0.5 };
   const body = top ? { fill: cloth ?? "#9aa3ad", stroke: "#2b2f36", strokeWidth: 1.5 } : dash;
@@ -592,6 +602,81 @@ export function Portrait({ c, value, disabled, checked, change }: Game<"portrait
           ))}
         </div>
       </div>
+    </>
+  );
+}
+
+/** Силуэты вещей «Я шпиона» в квадрате 60×60. */
+const SHAPE: Record<string, { body: string; marks?: string }> = {
+  "die Hose": { body: "M17 7 L43 7 L46 54 L33 54 L30 22 L27 54 L14 54 Z" },
+  "das T-Shirt": { body: "M18 9 L26 7 Q30 12 34 7 L42 9 L53 19 L46 26 L42 23 L42 53 L18 53 L18 23 L14 26 L7 19 Z" },
+  "das Hemd": {
+    body: "M18 9 L26 7 L34 7 L42 9 L50 17 L54 46 L47 47 L42 25 L42 53 L18 53 L18 25 L13 47 L6 46 L10 17 Z",
+    marks: "M26 7 L30 15 L34 7 M30 15 L30 53",
+  },
+  "die Jacke": {
+    body: "M18 9 L26 7 Q30 11 34 7 L42 9 L50 17 L54 46 L47 47 L42 25 L42 53 L18 53 L18 25 L13 47 L6 46 L10 17 Z",
+    marks: "M30 10 L30 53 M23 8 L27 15 M37 8 L33 15",
+  },
+  "der Pullover": {
+    body: "M18 9 L26 7 Q30 11 34 7 L42 9 L50 17 L54 46 L47 47 L42 25 L42 53 L18 53 L18 25 L13 47 L6 46 L10 17 Z",
+    marks: "M18 49 L42 49 M26 7 Q30 12 34 7",
+  },
+  "der Mantel": {
+    body: "M19 5 L26 3 Q30 7 34 3 L41 5 L49 13 L53 42 L46 43 L42 22 L45 57 L15 57 L18 22 L14 43 L7 42 L11 13 Z",
+    marks: "M30 6 L30 57",
+  },
+  "das Kleid": { body: "M24 7 L36 7 L35 21 L47 54 L13 54 L25 21 Z", marks: "M25 21 L35 21 M24 7 L22 2 M36 7 L38 2" },
+  "der Schuh": { body: "M8 37 Q9 26 18 26 L26 28 Q30 34 40 36 L52 40 Q55 46 50 48 L10 48 Q7 46 8 37 Z", marks: "M8 43 L53 43" },
+};
+
+function Garment({ de, colour }: { de: string; colour: string }) {
+  const shape = SHAPE[de];
+  return (
+    <svg viewBox="0 0 60 60" aria-hidden="true">
+      <path d={shape.body} fill={PAINT[colour]} stroke="#2b2f36" strokeWidth="1.5" strokeLinejoin="round" />
+      {shape.marks && <path d={shape.marks} fill="none" stroke={colour === "schwarz" ? "#8d939b" : "#2b2f36"} strokeWidth="1.2" />}
+    </svg>
+  );
+}
+
+/** «Я шпион»: Хауке загадывает вещь по местоимению и цвету, игрок нажимает её. */
+export function Spy({ c, value, seed, disabled, change, win, miss }: Game<"spy">) {
+  const done = asList(value);
+  const round = c.rounds[done.length];
+  const [note, setNote] = useState("");
+  const [tone, setTone] = useState<Tone>();
+  const items = useMemo(() => shuffle(c.items, seed), [c.items, seed]);
+  if (!round || disabled) return <Note>Все загадки отгаданы.</Note>;
+  function pick(de: string, colour: string) {
+    if (de !== round.answer) {
+      miss(round.answer);
+      setTone("bad");
+      return setNote(`Это ${de}: ${pronounOf(de)} ist ${colour}. А загадано: ${round.pronoun} ist ${round.colour}.`);
+    }
+    const next = [...done, de];
+    setTone("good");
+    setNote(`${de} — ${round.pronoun} ist ${round.colour}.`);
+    change(next);
+    if (next.length === c.rounds.length) win();
+  }
+  return (
+    <>
+      <p className="moin-count">
+        Загадка {done.length + 1} из {c.rounds.length}
+      </p>
+      <ul className="moin-notes">
+        <Gloss key={round.de} de={round.de} ru={round.ru} />
+      </ul>
+      <div className="moin-spy">
+        {items.map((item) => (
+          <button type="button" key={item.de} lang="de" onClick={() => pick(item.de, item.colour)}>
+            <Garment de={item.de} colour={item.colour} />
+            <span>{item.de.slice(item.de.indexOf(" ") + 1)}</span>
+          </button>
+        ))}
+      </div>
+      {note && <Note tone={tone}>{note}</Note>}
     </>
   );
 }
