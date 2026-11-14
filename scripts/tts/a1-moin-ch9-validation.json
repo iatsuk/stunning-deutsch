@@ -1,0 +1,449 @@
+{
+  "date": "2026-11-14",
+  "scope": "Chapter 9 of the Moin scene prototype (src/story/scenes/09.ts): character lines, replays, the station announcement, lock, oral practice and new story phrases with plurals",
+  "model": "k2-fsa/OmniVoice",
+  "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+  "candidatesPerPhrase": 3,
+  "asr": "openai/whisper-large-v3",
+  "notes": [
+    "Each phrase has three takes; the chosen take has the closest transcript, an end level below -32 dB and no fragment flagged by tails.py. tails.py also passes on all 54 imported files.",
+    "Whisper writes numbers as digits (Linie 11, 9.40 Uhr, 20 Leute, um 10); these takes were compared by hand and say the numbers in words as written.",
+    "Elif's line \"Nils! Links ist hier ...\": the take with the best score was heard without the first word, so the take where Whisper hears \"Nils\" was chosen instead.",
+    "Whisper hears Gaarden as \"Garden\" or \"Gaden\"; the takes say the place name as in the earlier chapters.",
+    "Mateo's directions mix German with Spanish and English on purpose; the chosen take keeps all three languages."
+  ],
+  "files": [
+    {
+      "file": "92e8bb827f94.m4a",
+      "text": "der Stadtplan, die Stadtpläne",
+      "voice": "Anna",
+      "seed": 21228643,
+      "heard": "Der Stadtplan. Die Stadtpläne.",
+      "endDb": -54.9
+    },
+    {
+      "file": "2edc36c25b26.m4a",
+      "text": "die Fähre, die Fähren",
+      "voice": "Anna",
+      "seed": 20650822,
+      "heard": "Die Fähre, die Fähren",
+      "endDb": -60.7
+    },
+    {
+      "file": "dcb796c5058e.m4a",
+      "text": "der Automat, die Automaten",
+      "voice": "Anna",
+      "seed": 20897164,
+      "heard": "Der Automat, die Automaten",
+      "endDb": -58.5
+    },
+    {
+      "file": "7d86bcf6cba4.m4a",
+      "text": "die Briefträgerin, die Briefträgerinnen",
+      "voice": "Anna",
+      "seed": 20641284,
+      "heard": "Die Briefträgerin, die Briefträgerinnen",
+      "endDb": -58.7
+    },
+    {
+      "file": "33687c197d82.m4a",
+      "text": "der Hinterhof, die Hinterhöfe",
+      "voice": "Anna",
+      "seed": 20921698,
+      "heard": "Der Hinterhof, die Hinterhöfe",
+      "endDb": -52.5
+    },
+    {
+      "file": "91809aa49e0b.m4a",
+      "text": "Wir sind beim Arzt. Zurück um drei.",
+      "voice": "Anna",
+      "seed": 20589978,
+      "heard": "Wir sind beim Arzt. Zurück um drei.",
+      "endDb": -51.3
+    },
+    {
+      "file": "f6b150f3f17a.m4a",
+      "text": "Ich arbeite heute im Krankenhaus – bis zwei. Um drei bin ich bei der Post in Gaarden!",
+      "voice": "Anna",
+      "seed": 21085496,
+      "heard": "Ich arbeite heute im Krankenhaus bis zwei. Um drei bin ich bei der Post in Garden.",
+      "endDb": -61.5
+    },
+    {
+      "file": "93a64222eb9b.m4a",
+      "text": "Kein Problem! Ich habe ein Auto! … Also, Frauke hat ein Auto.",
+      "voice": "Rocko",
+      "seed": 20700027,
+      "heard": "Kein Problem, ich habe ein Auto. Also Frauke hat ein Auto.",
+      "endDb": -55.4
+    },
+    {
+      "file": "49b6d7db3934.m4a",
+      "text": "Frauke fährt uns um neun nach Gaarden. Mit dem Auto!",
+      "voice": "Rocko",
+      "seed": 20620850,
+      "heard": "Frauke fährt uns um neun nach Garden, mit dem Auto.",
+      "endDb": -56.9
+    },
+    {
+      "file": "5fb183b29a28.m4a",
+      "text": "Entschuldigung! Ich war bei der Post. Ein Brief nach Helgoland – für die Möwe!",
+      "voice": "Flo",
+      "seed": 20647142,
+      "heard": "Entschuldigung, ich war bei der Post. Ein Brief nach Helgoland für die Möwe.",
+      "endDb": -47.8
+    },
+    {
+      "file": "e24cddb78bb1.m4a",
+      "text": "Eine Straßenbahn? In Kiel gibt es keine Straßenbahn!",
+      "voice": "Flo",
+      "seed": 20462319,
+      "heard": "Eine Straßenbahn? In Kiel gibt es keine Straßenbahn.",
+      "endDb": -51.1
+    },
+    {
+      "file": "0da0040637e3.m4a",
+      "text": "Schon lange nicht mehr! Der Plan ist alt – so alt wie das Schild!",
+      "voice": "Rocko",
+      "seed": 20705859,
+      "heard": "Schon lange nicht mehr. Der Plan ist alt, so alt wie das Schild.",
+      "endDb": -69.3
+    },
+    {
+      "file": "fb21e0be217a.m4a",
+      "text": "Ihr fahrt mit dem Bus. Ich warte auf Frauke und komme mit dem Auto!",
+      "voice": "Rocko",
+      "seed": 20326200,
+      "heard": "Ihr fahrt mit dem Bus. Ich warte auf Frauke und komme mit dem Auto.",
+      "endDb": -63.8
+    },
+    {
+      "file": "a7dfd1906d18.m4a",
+      "text": "Achtung, bitte! Heute fährt keine Fähre. Sturm! Nehmen Sie den Bus!",
+      "voice": "Eddy",
+      "seed": 20717799,
+      "heard": "Achtung bitte! Heute fährt keine Fähre. Sturm, nehmen Sie den Bus!",
+      "endDb": -53.5
+    },
+    {
+      "file": "d8d1eb64b68a.m4a",
+      "text": "Linie elf, neun Uhr vierzig! Und die Fahrkarte? Da ist ein Automat!",
+      "voice": "Flo",
+      "seed": 20271594,
+      "heard": "Linie 11, 9.40 Uhr. Und die Fahrkarte? Da ist ein Automat.",
+      "endDb": -55.2
+    },
+    {
+      "file": "daf407e2c5e6.m4a",
+      "text": "Linie elf nach Gaarden! Steigen Sie ein! Schnell, bitte!",
+      "voice": "Eddy",
+      "seed": 20446645,
+      "heard": "Linie 11 nach Garden. Steigen Sie ein. Schnell bitte.",
+      "endDb": -55.9
+    },
+    {
+      "file": "cd91ab841d56.m4a",
+      "text": "Eine Möwe? Im Bus? Steigen Sie bitte aus, Frau Möwe!",
+      "voice": "Eddy",
+      "seed": 20783141,
+      "heard": "Eine Möwe? Im Bus? Steigen Sie bitte aus, Frau Möwe.",
+      "endDb": -61.2
+    },
+    {
+      "file": "ad63314df072.m4a",
+      "text": "Sie hat Angst vor dem Sturm! Sie fährt mit uns!",
+      "voice": "Flo",
+      "seed": 20827905,
+      "heard": "Sie hat Angst vor dem Sturm. Sie fährt mit uns.",
+      "endDb": -57.7
+    },
+    {
+      "file": "434da08452bb.m4a",
+      "text": "Na gut. Aber nur bis Gaarden! Und sie isst nichts im Bus!",
+      "voice": "Eddy",
+      "seed": 20838218,
+      "heard": "Na gut, aber nur bis Gaden. Und sie isst nichts im Bus.",
+      "endDb": -49.2
+    },
+    {
+      "file": "47acb5f46bdb.m4a",
+      "text": "Entschuldigung, Hauke! Ich war bei der Polizei. Die Entführung! Aber die Polizei lacht nur.",
+      "voice": "Sandy",
+      "seed": 20910442,
+      "heard": "Entschuldigung, Hauke. Ich war bei der Polizei. Die Entführung. Aber die Polizei lacht nur.",
+      "endDb": -46.3
+    },
+    {
+      "file": "7b607dc74733.m4a",
+      "text": "Und das Auto ist voll: Fischbrötchen für die Kieler Woche! Kein Platz für dich.",
+      "voice": "Sandy",
+      "seed": 20549779,
+      "heard": "Und das Auto ist voll Fischbrötchen für die Kieler Woche. Kein Platz für dich.",
+      "endDb": -55.9
+    },
+    {
+      "file": "45647979c9aa.m4a",
+      "text": "Kein Auto? Dann nehme ich das Fahrrad von Oma!",
+      "voice": "Rocko",
+      "seed": 20339705,
+      "heard": "Kein Auto? Dann nehme ich das Fahrrad von Oma.",
+      "endDb": -69.3
+    },
+    {
+      "file": "e83794f31dde.m4a",
+      "text": "Zum Farbenweg? Ganz einfach: Der Farbenweg ist hinter der Post. Gehen Sie durch den Hinterhof!",
+      "voice": "Shelley",
+      "seed": 21075117,
+      "heard": "Zum Farbenweg? Ganz einfach. Der Farbenweg ist hinter der Post. Gehen Sie durch den Hinterhof.",
+      "endDb": -52.9
+    },
+    {
+      "file": "ea1ac7693885.m4a",
+      "text": "Ich bringe jeden Tag Post in den Farbenweg. Ich kenne alle!",
+      "voice": "Shelley",
+      "seed": 20887875,
+      "heard": "Ich bringe jeden Tag Post in den Farbenweg. Ich kenne alle.",
+      "endDb": -44.4
+    },
+    {
+      "file": "a64f8ba21cf7.m4a",
+      "text": "Die Post ist hier. Aber wo ist der Farbenweg? Ich sehe nur Ampeln!",
+      "voice": "Flo",
+      "seed": 20545495,
+      "heard": "Die Post ist hier. Aber wo ist der Farbenweg? Ich sehe nur Ampeln.",
+      "endDb": -43.1
+    },
+    {
+      "file": "ee743be1a614.m4a",
+      "text": "Nils ist sicher. Und Nils weiß immer alles zuerst!",
+      "voice": "Flo",
+      "seed": 20537746,
+      "heard": "Nils ist sicher und Nils weiß immer alles zuerst.",
+      "endDb": -56.8
+    },
+    {
+      "file": "36b3ba4f97b2.m4a",
+      "text": "Die Werkstatt? ¡Claro! Gehen Sie todo recto – straight – geradeaus! An der zweiten Ampel a la derecha – right – rechts!",
+      "voice": "Reed",
+      "seed": 21093185,
+      "heard": "Die Werkstatt? Claro! Gehen Sie todo recto, straight geradeaus, an der zweiten Ampel à la derecha, right rechts.",
+      "endDb": -50.5
+    },
+    {
+      "file": "82fc4810457b.m4a",
+      "text": "Ich habe keine Zeit – ich bin im Krankenhaus! Fragt bei der Post!",
+      "voice": "Anna",
+      "seed": 20664330,
+      "heard": "Ich habe keine Zeit, ich bin im Krankenhaus, fragt bei der Post.",
+      "endDb": -53.3
+    },
+    {
+      "file": "018c7d87df75.m4a",
+      "text": "Fragen bei der Post? Da sind zwanzig Leute!",
+      "voice": "Flo",
+      "seed": 20382643,
+      "heard": "Fragen bei der Post? Da sind 20 Leute.",
+      "endDb": -47.9
+    },
+    {
+      "file": "58aead041546.m4a",
+      "text": "Mateo spricht drei Sprachen – und keine richtig! Nils hat den Text. Wir gehen links!",
+      "voice": "Flo",
+      "seed": 20540774,
+      "heard": "Matteo spricht drei Sprachen und keine richtig. Nils hat den Text. Wir gehen links.",
+      "endDb": -56.0
+    },
+    {
+      "file": "10160d5291eb.m4a",
+      "text": "Das Schild! Und zweimal Moin? Greta macht zwei Schilder!",
+      "voice": "Flo",
+      "seed": 21108986,
+      "heard": "Das Schild. Und zweimal Moin? Greta macht zwei Schilder.",
+      "endDb": -42.4
+    },
+    {
+      "file": "ffc93ec5ffcb.m4a",
+      "text": "Moin, moin! Das Schild? Das ist neu. Aus Plastik. Trinken Sie lieber einen Kaffee!",
+      "voice": "Sandy",
+      "seed": 20949705,
+      "heard": "Moin Moin, das Schild, das ist neu, aus Plastik. Trinken Sie lieber einen Kaffee.",
+      "endDb": -43.6
+    },
+    {
+      "file": "28c60d694d2c.m4a",
+      "text": "Nils! Links ist hier – rechts ist da! Und jetzt? Es ist schon halb eins!",
+      "voice": "Flo",
+      "seed": 20917354,
+      "heard": "Nils, links ist hier, rechts ist da. Und jetzt ist es schon halb eins.",
+      "endDb": -54.3
+    },
+    {
+      "file": "5db650493607.m4a",
+      "text": "Ich habe den Weg! Von der Briefträgerin: Der Farbenweg ist hinter der Post. Durch den Hinterhof!",
+      "voice": "Rocko",
+      "seed": 20675222,
+      "heard": "Ich habe den Weg, von der Briefträgerin, der Farbenweg ist hinter der Post, durch den Hinterhof.",
+      "endDb": -59.8
+    },
+    {
+      "file": "75f7b4ac8f43.m4a",
+      "text": "Gebt mir den Weg – ich fahre!",
+      "voice": "Rocko",
+      "seed": 20848594,
+      "heard": "Gebt mir den Weg, ich fahre.",
+      "endDb": -59.0
+    },
+    {
+      "file": "37c8459e69a1.m4a",
+      "text": "Viel Glück! Und kommen Sie dann zum Kaffee!",
+      "voice": "Sandy",
+      "seed": 21265456,
+      "heard": "Viel Glück und kommen Sie dann zum Kaffee!",
+      "endDb": -57.2
+    },
+    {
+      "file": "ba69234972c0.m4a",
+      "text": "Zurück um drei? Dann warten wir. Hier, im Hinterhof!",
+      "voice": "Rocko",
+      "seed": 20625342,
+      "heard": "Zurück um drei, dann warten wir. Hier im Hinterhof.",
+      "endDb": -60.9
+    },
+    {
+      "file": "3e5e1fa4b4f7.m4a",
+      "text": "Das ist es! Unser Schild! Und es ist ganz – wie neu!",
+      "voice": "Flo",
+      "seed": 20996887,
+      "heard": "Das ist es, unser Schild. Und es ist ganz wie neu.",
+      "endDb": -52.7
+    },
+    {
+      "file": "92d3d7e210ed.m4a",
+      "text": "Moin, Hauke! Suchen Sie die Mechanikerin? Sie ist beim Arzt – mit einem Mann. Er hat einen Schal und sagt nichts. Nicht mal Moin!",
+      "voice": "Shelley",
+      "seed": 20948523,
+      "heard": "Moin, Hauke. Suchen Sie die Mechanikerin? Sie ist beim Arzt mit einem Mann. Er hat einen Schal und sagt nichts. Nicht mal Moin.",
+      "endDb": -49.9
+    },
+    {
+      "file": "1e01a858bdf4.m4a",
+      "text": "Ein Mann mit Schal, und er sagt nichts? Das ist Herr Jensen!",
+      "voice": "Rocko",
+      "seed": 20449684,
+      "heard": "Ein Mann mit Schal und er sagt nichts, das ist Herr Jensen.",
+      "endDb": -63.7
+    },
+    {
+      "file": "5c20d2840cf8.m4a",
+      "text": "Das weiß ich nicht. Ich bringe nur die Post!",
+      "voice": "Shelley",
+      "seed": 20847239,
+      "heard": "Das weiß ich nicht. Ich bringe nur die Post.",
+      "endDb": -55.6
+    },
+    {
+      "file": "7c06b53b6bbf.m4a",
+      "text": "Beim Arzt dauert es immer lange. Glaubt mir – ich bin Ärztin!",
+      "voice": "Anna",
+      "seed": 20487246,
+      "heard": "Beim Arzt dauert es immer lange. Glaubt mir, ich bin Ärztin.",
+      "endDb": -57.7
+    },
+    {
+      "file": "40a868feecf9.m4a",
+      "text": "Greta ist heute beim Arzt.",
+      "voice": "Anna",
+      "seed": 20497527,
+      "heard": "Greta ist heute beim Arzt.",
+      "endDb": -53.3
+    },
+    {
+      "file": "9d2e9f892636.m4a",
+      "text": "Wir gehen zur Post.",
+      "voice": "Anna",
+      "seed": 20898868,
+      "heard": "Wir gehen zur Post.",
+      "endDb": -58.3
+    },
+    {
+      "file": "1451f4a891b5.m4a",
+      "text": "Wir fahren mit dem Bus nach Hause.",
+      "voice": "Anna",
+      "seed": 20871411,
+      "heard": "Wir fahren mit dem Bus nach Hause.",
+      "endDb": -61.0
+    },
+    {
+      "file": "83c90620cfdf.m4a",
+      "text": "Sie schon wieder? Steigen Sie ein, Frau Möwe. Aber bitte mit Fahrkarte!",
+      "voice": "Eddy",
+      "seed": 20739839,
+      "heard": "Sie schon wieder? Steigen Sie ein, Frau Möwe, aber bitte mit Fahrkarte.",
+      "endDb": -62.1
+    },
+    {
+      "file": "54287f822ed0.m4a",
+      "text": "Herr Jensen? Beim Arzt? Morgen um zehn komme ich mit. Ich bin Ärztin!",
+      "voice": "Anna",
+      "seed": 20939982,
+      "heard": "Herr Jensen, beim Arzt. Morgen um 10 komme ich mit. Ich bin Ärztin.",
+      "endDb": -62.4
+    },
+    {
+      "file": "8a6422981544.m4a",
+      "text": "Und das Schild ist ganz. Greta macht es neu!",
+      "voice": "Flo",
+      "seed": 21023891,
+      "heard": "Und das Schild ist ganz. Greta macht es neu.",
+      "endDb": -43.5
+    },
+    {
+      "file": "ca4e65ea66ed.m4a",
+      "text": "Nur eine Frage: Warum sagt Herr Jensen nichts?",
+      "voice": "Rocko",
+      "seed": 20381453,
+      "heard": "Nur eine Frage, warum sagt Herr Jensen nichts?",
+      "endDb": -69.0
+    },
+    {
+      "file": "e101a1896f7b.m4a",
+      "text": "Willkommen zu Hause! Suppe für alle. Für die Möwe – nein!",
+      "voice": "Reed",
+      "seed": 20616667,
+      "heard": "Willkommen zu Hause, Suppe für alle. Für die Möwe nein!",
+      "endDb": -62.7
+    },
+    {
+      "file": "5c976bdbc49a.m4a",
+      "text": "Frauke mit dem Auto, ich mit dem Fahrrad – und die Möwe mit dem Bus. Wie ein Tourist!",
+      "voice": "Rocko",
+      "seed": 20650857,
+      "heard": "Frauke mit dem Auto, ich mit dem Fahrrad und die Möwe mit dem Bus. Wie ein Tourist.",
+      "endDb": -60.9
+    },
+    {
+      "file": "0df65875829f.m4a",
+      "text": "Ich fahre mit dem Bus nach Hause.",
+      "voice": "Anna",
+      "seed": 20481006,
+      "heard": "Ich fahre mit dem Bus nach Hause.",
+      "endDb": -53.1
+    },
+    {
+      "file": "1a140381b473.m4a",
+      "text": "Wie kommst du nach Hause?",
+      "voice": "Reed",
+      "seed": 20761107,
+      "heard": "Wie kommst du nach Hause?",
+      "endDb": -65.4
+    },
+    {
+      "file": "1e1cb0f6f58b.m4a",
+      "text": "Eine Fahrkarte nach Gaarden, bitte!",
+      "voice": "Anna",
+      "seed": 21161242,
+      "heard": "Eine Fahrkarte nach Garden bitte.",
+      "endDb": -51.3
+    }
+  ]
+}

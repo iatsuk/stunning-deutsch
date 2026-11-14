@@ -621,6 +621,41 @@ export const phrases: Record<string, Phrase> = {
     pl: "Fahrkarten",
     note: "fahren + die Karte. На автобусном билете — день, время и маршрут.",
   },
+  stadtplan: {
+    ru: "план города",
+    de: "der Stadtplan",
+    pl: "Stadtpläne",
+    note: "die Stadt + der Plan. На старом плане Греты по Килю ещё ходит трамвай.",
+  },
+  faehre: {
+    ru: "паром",
+    de: "die Fähre",
+    pl: "Fähren",
+    note: "Возит людей через фьорд в Gaarden. В шторм не ходит.",
+  },
+  automat: {
+    ru: "автомат",
+    de: "der Automat",
+    pl: "Automaten",
+    note: "Билетный автомат на вокзале. Сдачи этот не даёт.",
+  },
+  traegerin: {
+    ru: "почтальонша",
+    de: "die Briefträgerin",
+    pl: "Briefträgerinnen",
+    note: "der Brief — письмо, tragen — носить: та, кто разносит письма. Мужчина — der Briefträger.",
+  },
+  hinterhof: {
+    ru: "задний двор",
+    de: "der Hinterhof",
+    pl: "Hinterhöfe",
+    note: "hinter — за, der Hof — двор. В Гаардене мастерские часто прячутся во дворах.",
+  },
+  beimarzt: {
+    ru: "Мы у врача. Вернёмся в три.",
+    de: "Wir sind beim Arzt. Zurück um drei.",
+    note: "beim Arzt — у врача: bei + dem. zurück — обратно.",
+  },
   neu: {
     ru: "Вы новичок. Вы видите всё.",
     de: "Sie sind neu. Sie sehen alles.",

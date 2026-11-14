@@ -41,7 +41,7 @@ export function LevelPage({ level }: { level: Level }) {
               Идите сверху вниз; словарь остаётся справочником в конце каждого урока.
             </p>
           </div>
-          {level.id === "a1" && <div className="moin-entry"><div className="kicker">Отдельная история по всем темам A1</div><h3>Дело о пропавшем Moin</h3><p>12 глав, 192 действия и одна детективная история. Русский рассказ постепенно уступает место немецкому. Можно проходить вместе с уроками или для повторения.</p><div className="moin-links"><a href="#/a1/moin">Открыть сюжетную игру →</a><a href="#/a1/moin-neu">Новая версия в сценах: прототип, главы 1–8 →</a></div></div>}
+          {level.id === "a1" && <div className="moin-entry"><div className="kicker">Отдельная история по всем темам A1</div><h3>Дело о пропавшем Moin</h3><p>12 глав, 192 действия и одна детективная история. Русский рассказ постепенно уступает место немецкому. Можно проходить вместе с уроками или для повторения.</p><div className="moin-links"><a href="#/a1/moin">Открыть сюжетную игру →</a><a href="#/a1/moin-neu">Новая версия в сценах: прототип, главы 1–9 →</a></div></div>}
           <ol className="route-list">
             {level.topics.map((topic) => {
               const solved = progress.solved(topic.id);

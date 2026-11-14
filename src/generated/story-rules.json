@@ -4078,5 +4078,402 @@
     "audio": "audio/d6bc241945d5.m4a"
    }
   ]
+ },
+ "stadt/check-2": {
+  "point": "*bei* — у кого (где?), *zu* — к кому (куда?): *beim Arzt*, *zum Arzt*",
+  "read": "Зависит от вопроса. Дана уже там — значит *bei*: *Ich bin bei Mira* — «я у Миры». Утром она туда ехала — значит *zu*: *Ich fahre zu Mira* — «я еду к Мире». *Ich fahre bei Mira* звучит для немца так же странно, как для нас «я еду у Миры». С врачом то же: *beim Arzt* — у врача, *zum Arzt* — к врачу.",
+  "rows": [
+   {
+    "slots": [
+     [
+      {
+       "key": "ich",
+       "text": "Ich"
+      }
+     ],
+     [
+      {
+       "key": "bin",
+       "text": "bin"
+      }
+     ],
+     [
+      {
+       "key": "bei",
+       "text": "bei"
+      },
+      {
+       "key": "mira",
+       "text": "Mira"
+      }
+     ],
+     []
+    ],
+    "punct": ".",
+    "plain": "Ich bin bei Mira.",
+    "ru": "Я у Миры.",
+    "audio": "audio/e9840a75c738.m4a"
+   },
+   {
+    "slots": [
+     [
+      {
+       "key": "ich",
+       "text": "Ich"
+      }
+     ],
+     [
+      {
+       "key": "fahr",
+       "text": "fahr+e"
+      }
+     ],
+     [
+      {
+       "key": "zu",
+       "text": "zu"
+      },
+      {
+       "key": "mira",
+       "text": "Mira"
+      }
+     ],
+     []
+    ],
+    "punct": ".",
+    "plain": "Ich fahre zu Mira.",
+    "ru": "Я еду к Мире.",
+    "audio": "audio/6e7dc24942bc.m4a"
+   }
+  ]
+ },
+ "stadt/praep-2": {
+  "point": "*nach* — города и страны: *nach Lübeck*; *zu* — места и люди: *zum Bahnhof*",
+  "read": "Как выбрать между *zu* и *nach*, если оба значат «куда»? *nach* — для городов и стран без артикля: *nach Lübeck*, *nach Dänemark*. *zu* — для мест с артиклем и для людей: *zum Bahnhof*, *zu Mira*. Для направления к вокзалу здесь нужно *zum Bahnhof*. А *nach Hause* — «домой» — особый случай, его запомните целиком.",
+  "table": {
+   "title": "Präpositionen mit Dativ",
+   "ru": "Предлоги, после которых всегда дательный",
+   "head": [
+    "Präposition",
+    "По-русски",
+    "Beispiel"
+   ],
+   "rows": [
+    [
+     "mit",
+     "«на» (транспорт), «с» (кем-то)",
+     "mit d+em Bus"
+    ],
+    [
+     "zu",
+     "«к», «в» — куда",
+     "zu d+em Bahnhof → zum Bahnhof"
+    ],
+    [
+     "bei",
+     "«у» — где",
+     "bei d+em Arzt → beim Arzt"
+    ],
+    [
+     "von",
+     "«от», «с» — откуда",
+     "von d+er Haltestelle"
+    ],
+    [
+     "aus",
+     "«из»",
+     "aus d+em Zug"
+    ],
+    [
+     "nach",
+     "«в» — город, страна без артикля",
+     "nach Lübeck"
+    ]
+   ],
+   "ruCols": [
+    1
+   ],
+   "note": "Какой бы ни был вопрос — «где», «куда» или «откуда», — после этих предлогов всегда дательный падеж."
+  },
+  "focus": [
+   1,
+   5
+  ]
+ },
+ "stadt/check-3": {
+  "point": "*Ich fahre mit dem Zug nach Lübeck.* — сначала «на чём», потом «куда»",
+  "read": "*Ich fahre mit dem Zug nach Lübeck.* *der Zug* после *mit* становится *dem Zug*, а *Lübeck* — город без артикля, поэтому *nach*. Обратите внимание на порядок в середине: сначала «на чём», потом «куда». *Ich fahre nach Lübeck mit dem Zug* немцы тоже поймут, но звучит это непривычно — как будто «на поезде» добавили в последний момент.",
+  "rows": [
+   {
+    "slots": [
+     [
+      {
+       "key": "ich",
+       "text": "Ich"
+      }
+     ],
+     [
+      {
+       "key": "fahr",
+       "text": "fahr+e"
+      }
+     ],
+     [
+      {
+       "key": "mit",
+       "text": "mit"
+      },
+      {
+       "key": "dem",
+       "text": "dem"
+      },
+      {
+       "key": "zug",
+       "text": "Zug"
+      },
+      {
+       "key": "nach",
+       "text": "nach"
+      },
+      {
+       "key": "lübeck",
+       "text": "Lübeck"
+      }
+     ],
+     []
+    ],
+    "punct": ".",
+    "plain": "Ich fahre mit dem Zug nach Lübeck.",
+    "ru": "Я еду в Любек на поезде.",
+    "audio": "audio/468850f44194.m4a"
+   }
+  ]
+ },
+ "stadt/imperativ-3": {
+  "point": "*Steigen Sie hier aus!* — приставка в конце; *sein* → *Seien Sie …!*",
+  "read": "С отделяемыми глаголами всё как в обычном предложении: глагол — вперёд, приставка — в конец. *Steigen Sie bitte hier aus!* — «выходите, пожалуйста, здесь!». Рамка из глагола и приставки на месте, просто первая позиция пуста. Единственный неправильный глагол здесь — *sein*: не *Sind Sie pünktlich!*, а *Seien Sie bitte pünktlich!*",
+  "rows": [
+   {
+    "slots": [
+     [],
+     [
+      {
+       "key": "geh",
+       "text": "Geh+en"
+      }
+     ],
+     [
+      {
+       "key": "sie",
+       "text": "Sie"
+      },
+      {
+       "key": "geradeaus",
+       "text": "geradeaus"
+      }
+     ],
+     []
+    ],
+    "punct": "!",
+    "plain": "Gehen Sie geradeaus!",
+    "ru": "Идите прямо!",
+    "audio": "audio/158a3b81daf9.m4a"
+   },
+   {
+    "slots": [
+     [],
+     [
+      {
+       "key": "steig",
+       "text": "Steig+en"
+      }
+     ],
+     [
+      {
+       "key": "sie",
+       "text": "Sie"
+      },
+      {
+       "key": "bitte",
+       "text": "bitte"
+      },
+      {
+       "key": "hier",
+       "text": "hier"
+      }
+     ],
+     [
+      {
+       "key": "aus",
+       "text": "aus"
+      }
+     ]
+    ],
+    "punct": "!",
+    "plain": "Steigen Sie bitte hier aus!",
+    "ru": "Выходите, пожалуйста, здесь!",
+    "audio": "audio/848f718c7d83.m4a"
+   }
+  ]
+ },
+ "stadt/check-1": {
+  "point": "*Steigen Sie in Holtenau aus!* — приставка остаётся в конце",
+  "read": "*Steigen Sie in Holtenau aus!* Глагол *steigen* встаёт в начало, *Sie* — сразу за ним, а приставка *aus* остаётся в конце, как и в обычном предложении. Частая ошибка — *Aussteigen Sie in Holtenau!*: в повелительном наклонении приставка отрывается от глагола так же, как в утверждении *Sie steigen in Holtenau aus*.",
+  "rows": [
+   {
+    "slots": [
+     [],
+     [
+      {
+       "key": "steig",
+       "text": "Steig+en"
+      }
+     ],
+     [
+      {
+       "key": "sie",
+       "text": "Sie"
+      },
+      {
+       "key": "in",
+       "text": "in"
+      },
+      {
+       "key": "holtenau",
+       "text": "Holtenau"
+      }
+     ],
+     [
+      {
+       "key": "aus",
+       "text": "aus"
+      }
+     ]
+    ],
+    "punct": "!",
+    "plain": "Steigen Sie in Holtenau aus!",
+    "ru": "Выходите в Хольтенау!",
+    "audio": "audio/17b789c114cd.m4a"
+   }
+  ]
+ },
+ "stadt/praep-1": {
+  "point": "*aus*, *bei*, *mit*, *nach*, *von*, *zu* — всегда с дательным",
+  "read": "*mit* — не единственный такой предлог. Ещё пять ведут себя точно так же: *zu*, *bei*, *von*, *aus*, *nach*. После них всегда дательный падеж — что бы вы ни спрашивали: «где», «куда» или «откуда». Помните *aus der Schweiz* из первой темы? Вот и объяснение: *aus* требует дательного, и *die Schweiz* становится *der Schweiz*.",
+  "table": {
+   "title": "Präpositionen mit Dativ",
+   "ru": "Предлоги, после которых всегда дательный",
+   "head": [
+    "Präposition",
+    "По-русски",
+    "Beispiel"
+   ],
+   "rows": [
+    [
+     "mit",
+     "«на» (транспорт), «с» (кем-то)",
+     "mit d+em Bus"
+    ],
+    [
+     "zu",
+     "«к», «в» — куда",
+     "zu d+em Bahnhof → zum Bahnhof"
+    ],
+    [
+     "bei",
+     "«у» — где",
+     "bei d+em Arzt → beim Arzt"
+    ],
+    [
+     "von",
+     "«от», «с» — откуда",
+     "von d+er Haltestelle"
+    ],
+    [
+     "aus",
+     "«из»",
+     "aus d+em Zug"
+    ],
+    [
+     "nach",
+     "«в» — город, страна без артикля",
+     "nach Lübeck"
+    ]
+   ],
+   "ruCols": [
+    1
+   ],
+   "note": "Какой бы ни был вопрос — «где», «куда» или «откуда», — после этих предлогов всегда дательный падеж."
+  }
+ },
+ "stadt/ampel-1": {
+  "point": "*die zweite Straße links*; после *zur*, *im* — *-en*: *bis zur zweiten Ampel*",
+  "read": "Порядковые числа вы уже знаете по этажам: *im ersten Stock*. В дороге они звучат постоянно: *Nehmen Sie die zweite Straße links* — «вторая улица налево». После *die* окончание простое, *-e*, как у самого артикля. После слитных *zum*, *zur*, *im*, *am* у числа *-en*: *bis zur zweiten Ampel* — «до второго светофора», как *im zweiten Stock*.",
+  "table": {
+   "title": "Die erste, die zweite …",
+   "ru": "Порядковые числа в дороге",
+   "head": [
+    "Nummer",
+    "Welche Straße?",
+    "Bis wohin?"
+   ],
+   "rows": [
+    [
+     "1.",
+     "die erst+e Straße links",
+     "bis zur erst+en Ampel"
+    ],
+    [
+     "2.",
+     "die zwei+te Straße rechts",
+     "bis zur zwei+ten Ampel"
+    ],
+    [
+     "3.",
+     "die dritt+e Straße links",
+     "bis zur dritt+en Ampel"
+    ],
+    [
+     "4.",
+     "die vier+te Straße rechts",
+     "bis zur vier+ten Ampel"
+    ]
+   ],
+   "ruCols": [],
+   "note": "После *die* — *-e*: *die zweite Straße*. После *zur*, *zum*, *im*, *am* — *-en*: *bis zur zweiten Ampel*, *im zweiten Stock*."
+  }
+ },
+ "stadt/hause-1": {
+  "point": "*Wo?* — *zu Hause*, *Wohin?* — *nach Hause*, *Woher?* — *von zu Hause*",
+  "read": "В этих выражениях *Haus* значит не здание, а «свой дом». *zu Hause* отвечает на вопрос *Wo?*: *Ich bin zu Hause.* *nach Hause* — на вопрос *Wohin?*: *Ich gehe nach Hause.* А на *Woher?* — *von zu Hause*. Это исключения: обычно *zu* отвечает на «куда», а *nach* нужен для городов. Поэтому учите пары целиком.",
+  "table": {
+   "title": "zu Hause / nach Hause",
+   "ru": "Дома и домой",
+   "head": [
+    "Frage",
+    "Antwort",
+    "По-русски"
+   ],
+   "rows": [
+    [
+     "Wo bist du?",
+     "Ich bin zu Hause.",
+     "Я дома."
+    ],
+    [
+     "Wohin gehst du?",
+     "Ich gehe nach Hause.",
+     "Я иду домой."
+    ],
+    [
+     "Woher kommst du?",
+     "Ich komme von zu Hause.",
+     "Я иду из дома."
+    ]
+   ],
+   "ruCols": [
+    2
+   ]
+  }
  }
 }

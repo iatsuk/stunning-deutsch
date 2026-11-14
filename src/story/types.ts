@@ -223,6 +223,21 @@ export type Challenge =
    * «Я шпион» (Ich sehe was, was du nicht siehst): по загадке «Sie ist rot» нажать вещь. Подписи
    * без артикля: местоимение подсказывает род, цвет — вещь. Вещи и цвета — из словаря SPY в logic.ts.
    */
+  /**
+   * «Алгоритм»: собрать из карточек программу (*Gehen Sie geradeaus.*) и нажать «Пуск»: Хауке
+   * проходит её по схеме, как в прогулке. Засчитывается результат — программа доводит до цели;
+   * moves — один верный путь, max — сколько карточек помещается в программу.
+   */
+  | {
+      kind: "algo";
+      width: number;
+      height: number;
+      start: { x: number; y: number; heading: number };
+      places: Record<string, string>;
+      goal: string;
+      moves: Move[];
+      max?: number;
+    }
   | {
       kind: "spy";
       items: { de: string; colour: string }[];

@@ -19,7 +19,7 @@ import type {
   TreeSlot,
 } from "./types.ts";
 
-type Route = Extract<Challenge, { kind: "route" }>;
+type Route = Extract<Challenge, { kind: "route" | "algo" }>;
 type Position = { x: number; y: number; heading: number };
 
 export const STORY_KEY = "sd-moin-story-v1";
@@ -411,7 +411,8 @@ export function isCorrect(
         value,
         challenge.rounds.map((r) => r.odd),
       );
-    case "route": {
+    case "route":
+    case "algo": {
       if (!Array.isArray(value)) return false;
       const path = walk(challenge, value);
       return (
@@ -489,6 +490,7 @@ export function solution(challenge: Challenge): Answer {
     case "odd":
       return challenge.rounds.map((r) => r.odd);
     case "route":
+    case "algo":
       return challenge.moves;
     case "write":
     case "letter":
@@ -545,6 +547,7 @@ export function initialAnswer(challenge: Challenge): Answer {
     case "compound":
     case "lift":
     case "spy":
+    case "algo":
     case "contra":
       return [];
     case "gaps":
@@ -651,6 +654,13 @@ export function mistake(c: Challenge, value: Answer, hint: string): string {
     }
     case "cipher":
       return typeof value === "string" && value.trim() ? hint : "Впишите расшифровку.";
+    case "algo": {
+      if (!list.length) return "Соберите программу из карточек.";
+      const path = walk(c, list);
+      if (path.length < list.length + 1) return `Шаг ${path.length} уводит за край схемы.`;
+      const end = c.places[placeKey(path.at(-1)!)];
+      return `Программа приводит ${end ? `к месту ${end}` : "на пустой перекрёсток"}, а нужно — ${c.places[c.goal]}.`;
+    }
     case "tree": {
       if (Object.keys(record).length < Object.keys(c.answer).length) return "Впишите имя в каждую пустую клетку.";
       const wrong = treeWrong(c, record);
@@ -682,6 +692,7 @@ function restoreDraft(c: Challenge, v: unknown): Answer | undefined {
     case "tree":
     case "portrait":
     case "spy":
+    case "algo":
       return undefined;
     case "play": {
       if (!strings) return undefined;
@@ -981,6 +992,13 @@ export function validateChallenge(
     case "route":
       return (
         c.goal in c.places && placeKey(walk(c, c.moves).at(-1)!) === c.goal
+      );
+    case "algo":
+      return (
+        c.goal in c.places &&
+        walk(c, c.moves).length === c.moves.length + 1 &&
+        placeKey(walk(c, c.moves).at(-1)!) === c.goal &&
+        (c.max === undefined || c.moves.length <= c.max)
       );
     case "coins":
       return coinTotal(solution(c)) === c.answer;

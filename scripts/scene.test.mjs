@@ -558,5 +558,13 @@ test("new mini-games check the answer, and their puzzles have exactly one way ou
   assert.ok(valid(spy) && isCorrect(spy, ["die Hose", "das T-Shirt"]) && !isCorrect(spy, ["das T-Shirt", "die Hose"]));
   assert.ok(!valid({ ...spy, rounds: [{ de: "Sie ist gelb!", ru: "x", pronoun: "sie", colour: "gelb", answer: "die Jacke" }, spy.rounds[0]] }), "gelb один — местоимение не нужно");
   assert.ok(!valid({ ...spy, items: [...spy.items, { de: "das Hemd", colour: "rot" }] }), "две вещи под одну загадку");
-  for (const c of [grid, planner, glue, lift, sounds, contra, ads, tree, portrait, spy]) assert.ok(!isCorrect(c, initialAnswer(c)), c.kind);
+  // «Алгоритм»: засчитывается любая программа, которая доводит до цели в пределах карточек.
+  const algo = { kind: "algo", width: 3, height: 2, start: { x: 0, y: 1, heading: 1 }, places: { "0,1": "Café", "2,0": "die Post" }, goal: "2,0", moves: ["geradeaus", "links", "rechts"], max: 4 };
+  assert.ok(valid(algo));
+  assert.ok(isCorrect(algo, ["geradeaus", "geradeaus", "links"]), "другой путь к той же цели");
+  assert.ok(!isCorrect(algo, ["geradeaus", "links"]));
+  assert.match(mistake(algo, ["geradeaus", "links"], ""), /перекрёсток.*die Post/);
+  assert.match(mistake(algo, ["rechts"], ""), /за край/);
+  assert.ok(!valid({ ...algo, max: 2 }), "решение длиннее, чем помещается карточек");
+  for (const c of [grid, planner, glue, lift, sounds, contra, ads, tree, portrait, spy, algo]) assert.ok(!isCorrect(c, initialAnswer(c)), c.kind);
 });

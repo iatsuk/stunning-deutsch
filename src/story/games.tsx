@@ -649,74 +649,58 @@ const CELL = 110;
 const EDGE = 56;
 const point = (n: number) => EDGE + n * CELL;
 
+type Plan = Extract<Challenge, { kind: "route" | "algo" }>;
+/** Схема квартала: улицы, пройденный путь, места и идущий. reveal — места подписаны сразу. */
+export function RouteMap({ c, path, angle, reveal }: { c: Plan; path: { x: number; y: number }[]; angle: number; reveal?: boolean }) {
+  const at = path[path.length - 1];
+  const visited = new Set(path.map(placeKey));
+  const xs = Array.from({ length: c.width }, (_, x) => x);
+  const ys = Array.from({ length: c.height }, (_, y) => y);
+  const size = (count: number) => (count - 1) * CELL + EDGE * 2;
+  return (
+    <svg viewBox={`0 0 ${size(c.width)} ${size(c.height)}`} role="img" aria-label="Схема квартала с вашим положением">
+      {ys.map((y) => (
+        <line key={`y${y}`} className="moin-street" x1={point(0)} x2={point(c.width - 1)} y1={point(y)} y2={point(y)} />
+      ))}
+      {xs.map((x) => (
+        <line key={`x${x}`} className="moin-street" y1={point(0)} y2={point(c.height - 1)} x1={point(x)} x2={point(x)} />
+      ))}
+      <polyline className="moin-walked" points={path.map((p) => `${point(p.x)},${point(p.y)}`).join(" ")} />
+      {Object.entries(c.places).map(([key, place]) => {
+        const [x, y] = key.split(",").map(Number);
+        return reveal || visited.has(key) ? (
+          <text key={key} x={point(x)} y={point(y) + 34} lang="de" data-goal={(reveal && key === c.goal) || undefined}>
+            {place}
+          </text>
+        ) : (
+          <g key={key} className="moin-unknown">
+            <circle cx={point(x)} cy={point(y)} r="11" />
+            <text x={point(x)} y={point(y) + 5}>
+              ?
+            </text>
+          </g>
+        );
+      })}
+      <path
+        className="moin-walker"
+        d="M0 -14 L11 11 L0 5 L-11 11 Z"
+        style={{ transform: `translate(${point(at.x)}px, ${point(at.y)}px) rotate(${angle}deg)` }}
+      />
+    </svg>
+  );
+}
+/** Угол копится, чтобы стрелка поворачивала коротким путём, а не через весь круг. */
+export const walkAngle = (heading: number, moves: string[]) =>
+  moves.reduce((sum, move) => sum + (move === "links" ? -90 : move === "rechts" ? 90 : 0), heading * 90);
+
 export function Walk({ c, value, disabled, change }: Game<"route">) {
   const moves = asList(value);
   const path = walk(c, moves);
   const at = path[path.length - 1];
   const here = c.places[placeKey(at)];
-  const visited = new Set(path.map(placeKey));
-  // Угол копится, чтобы стрелка поворачивала коротким путём, а не через весь круг.
-  const angle = moves.reduce(
-    (sum, move) => sum + (move === "links" ? -90 : move === "rechts" ? 90 : 0),
-    c.start.heading * 90,
-  );
-  const xs = Array.from({ length: c.width }, (_, x) => x);
-  const ys = Array.from({ length: c.height }, (_, y) => y);
-  const size = (count: number) => (count - 1) * CELL + EDGE * 2;
   return (
     <div className="moin-walk">
-      <svg
-        viewBox={`0 0 ${size(c.width)} ${size(c.height)}`}
-        role="img"
-        aria-label="Схема квартала с вашим положением"
-      >
-        {ys.map((y) => (
-          <line
-            key={`y${y}`}
-            className="moin-street"
-            x1={point(0)}
-            x2={point(c.width - 1)}
-            y1={point(y)}
-            y2={point(y)}
-          />
-        ))}
-        {xs.map((x) => (
-          <line
-            key={`x${x}`}
-            className="moin-street"
-            y1={point(0)}
-            y2={point(c.height - 1)}
-            x1={point(x)}
-            x2={point(x)}
-          />
-        ))}
-        <polyline
-          className="moin-walked"
-          points={path.map((p) => `${point(p.x)},${point(p.y)}`).join(" ")}
-        />
-        {Object.entries(c.places).map(([key, place]) => {
-          const [x, y] = key.split(",").map(Number);
-          return visited.has(key) ? (
-            <text key={key} x={point(x)} y={point(y) + 34} lang="de">
-              {place}
-            </text>
-          ) : (
-            <g key={key} className="moin-unknown">
-              <circle cx={point(x)} cy={point(y)} r="11" />
-              <text x={point(x)} y={point(y) + 5}>
-                ?
-              </text>
-            </g>
-          );
-        })}
-        <path
-          className="moin-walker"
-          d="M0 -14 L11 11 L0 5 L-11 11 Z"
-          style={{
-            transform: `translate(${point(at.x)}px, ${point(at.y)}px) rotate(${angle}deg)`,
-          }}
-        />
-      </svg>
+      <RouteMap c={c} path={path} angle={walkAngle(c.start.heading, moves)} />
       <p className="moin-count" role="status" lang="de">
         {here ? `Hier ist ${here}.` : "Eine Kreuzung."}
       </p>

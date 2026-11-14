@@ -2824,3 +2824,41 @@
   max-width: 64px;
   height: auto;
 }
+/* «Алгоритм»: программа из карточек; цель подписана на схеме, шаг, который идёт сейчас, выделен. */
+.moin-walk text[data-goal] {
+  fill: var(--accent);
+  font-weight: 600;
+}
+.moin-program {
+  display: grid;
+  gap: 4px;
+  margin: 8px 0;
+  padding-left: 26px;
+  font-family: var(--serif);
+  font-size: 16px;
+}
+.moin-program li[data-now] {
+  color: var(--accent);
+}
+.moin-program button {
+  margin-left: 8px;
+}
+.moin-program-run {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+.moin-program-run > button:first-child {
+  padding: 8px 14px;
+  border: 1px solid var(--accent-line);
+  border-radius: 4px;
+  background: var(--panel-2);
+  color: var(--accent);
+  cursor: pointer;
+}
+.moin-program-run span {
+  color: var(--muted);
+  font-size: 13px;
+}

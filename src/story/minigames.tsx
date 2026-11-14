@@ -1,11 +1,11 @@
-import { Fragment, useEffect, useMemo, useState } from "react";
+import { Fragment, useEffect, useMemo, useRef, useState } from "react";
 import { say } from "../hooks";
 import { shuffle } from "../lib/shuffle";
 import { PlayButton } from "../markup";
 import { nounAudio, wordInfo } from "./audio";
-import { Gendered, Note, type Game } from "./games";
-import { compoundOf, decipher, floorLabel, gridKey, plannerWho, pronounOf, treeSlots } from "./logic";
-import type { Answer, PortraitPart, TreeNode, TreeSlot } from "./types";
+import { Gendered, Note, RouteMap, walkAngle, type Game } from "./games";
+import { compoundOf, decipher, floorLabel, gridKey, MOVES, placeKey, plannerWho, pronounOf, treeSlots, walk } from "./logic";
+import type { Answer, Move, PortraitPart, TreeNode, TreeSlot } from "./types";
 
 // Новые мини-игры новой версии (A1-PLOT.md, «Новые мини-игры»). Как и прежние игры, всё
 // управляется нажатием и с клавиатуры, а ошибка только даёт подсказку.
@@ -678,5 +678,89 @@ export function Spy({ c, value, seed, disabled, change, win, miss }: Game<"spy">
       </div>
       {note && <Note tone={tone}>{note}</Note>}
     </>
+  );
+}
+
+/** Карточки «Алгоритма»: повелительное наклонение на Sie, как в объяснении дороги. */
+export const COMMAND: Record<Move, string> = {
+  geradeaus: "Gehen Sie geradeaus.",
+  links: "Gehen Sie links.",
+  rechts: "Gehen Sie rechts.",
+};
+
+/** «Алгоритм»: программа из карточек, «Пуск» — Хауке проходит её шаг за шагом. */
+export function Algo({ c, value, disabled, change }: Game<"algo">) {
+  const program = asList(value) as Move[];
+  const path = walk(c, program);
+  // Сколько шагов уже показано; null — программа ещё не запускалась после правки.
+  const [shown, setShown] = useState<number | null>(null);
+  const timer = useRef<number | undefined>(undefined);
+  useEffect(() => () => window.clearInterval(timer.current), []);
+  const full = c.max !== undefined && program.length >= c.max;
+  function edit(next: Move[]) {
+    window.clearInterval(timer.current);
+    setShown(null);
+    change(next);
+  }
+  function run() {
+    window.clearInterval(timer.current);
+    setShown(0);
+    let k = 0;
+    timer.current = window.setInterval(() => {
+      k += 1;
+      setShown(k);
+      if (k >= path.length - 1) window.clearInterval(timer.current);
+    }, 450);
+  }
+  const steps = shown === null ? 0 : Math.min(shown, path.length - 1);
+  const at = path[steps];
+  const done = shown !== null && steps >= path.length - 1;
+  const place = c.places[placeKey(at)];
+  const status = !done
+    ? shown === null
+      ? `Цель — ${c.places[c.goal]}. Соберите программу и нажмите «Пуск».`
+      : "Хауке идёт…"
+    : path.length < program.length + 1
+      ? `Шаг ${path.length} уводит за край схемы: Хауке остановился.`
+      : placeKey(at) === c.goal
+        ? `Hier ist ${place}. Хауке дошёл!`
+        : `Хауке стоит: ${place ?? "eine Kreuzung"}. Это не цель.`;
+  return (
+    <div className="moin-walk">
+      <RouteMap c={c} path={path.slice(0, steps + 1)} angle={walkAngle(c.start.heading, program.slice(0, steps))} reveal />
+      <p className="moin-count" role="status">
+        {status}
+      </p>
+      <ol className="moin-program" aria-label="Программа">
+        {program.map((move, i) => (
+          <li key={i} lang="de" data-now={(shown !== null && !done && i === steps) || undefined}>
+            {COMMAND[move]}
+            <button type="button" className="link-button" disabled={disabled} aria-label={`Убрать шаг ${i + 1}`} onClick={() => edit(program.filter((_, j) => j !== i))}>
+              ×
+            </button>
+          </li>
+        ))}
+      </ol>
+      <div className="moin-walk-moves" role="group" aria-label="Карточки">
+        {MOVES.map((move) => (
+          <button type="button" key={move} lang="de" disabled={disabled || full} onClick={() => edit([...program, move])}>
+            {COMMAND[move]}
+          </button>
+        ))}
+      </div>
+      <div className="moin-program-run">
+        <button type="button" disabled={disabled || !program.length} onClick={run}>
+          ▶ Пуск
+        </button>
+        <button type="button" className="link-button" disabled={disabled || !program.length} onClick={() => edit([])}>
+          Очистить программу
+        </button>
+        {c.max !== undefined && (
+          <span>
+            Карточек: {program.length} из {c.max}
+          </span>
+        )}
+      </div>
+    </div>
   );
 }
