@@ -264,6 +264,8 @@ for (const topic of topics) writeJson(path.join(generatedDir, "topics", `${topic
 mkdirSync(path.join(generatedDir, "assessments"), { recursive: true });
 for (const file of readdirSync(path.join(generatedDir, "assessments"))) if (!assessments.some(a => `${a.id}.json` === file)) rmSync(path.join(generatedDir, "assessments", file));
 for (const assessment of assessments) writeJson(path.join(generatedDir, "assessments", `${assessment.id}.json`), assessment);
+// Индекс покрытия A1 читает уже записанные темы, поэтому собирается последним (A1-PLAN.md).
+console.log((await import("./a1-index.mjs")).writeIndex());
 if (DRAFT) {
   console.log(`${summary}; ЧЕРНОВИК: ${missingAudio} фраз без записи (кнопки озвучки у них скрыты). Не коммитьте эту сборку.`);
 } else {

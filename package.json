@@ -10,7 +10,7 @@
   "scripts": {
     "content": "node scripts/build-content.mjs",
     "check": "node scripts/build-content.mjs --check",
-    "test": "node --test scripts/agents.test.mjs scripts/scene.test.mjs scripts/adventure.test.mjs scripts/assessment.test.mjs scripts/story.test.mjs scripts/memory.test.mjs scripts/trainer.test.mjs scripts/store.test.mjs",
+    "test": "node --test scripts/agents.test.mjs scripts/a1-index.test.mjs scripts/scene.test.mjs scripts/adventure.test.mjs scripts/assessment.test.mjs scripts/story.test.mjs scripts/memory.test.mjs scripts/trainer.test.mjs scripts/store.test.mjs",
     "draft": "node scripts/build-content.mjs --draft",
     "dev": "vite --host 127.0.0.1 --port 5180 --strictPort",
     "build": "node scripts/build-content.mjs && tsc --noEmit && vite build",
