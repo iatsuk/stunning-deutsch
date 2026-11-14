@@ -1,4 +1,4 @@
-import { an, ANSWER, ASK, bingo, docks, gaps, gruss, gull as race, HINT_DOCK, HINT_HEAR, HINT_LETTER, HINT_LOCK, HINT_ODD, HINT_ORAL, HINT_PICTURE, HINT_RACE, HINT_SAY, HINT_SPELL, letter, letters, lock, odd, oral, order, pairs, RACE, RACE_STAKES, reply as oralReply, say as oralSay, scene, sort, speak, spot, verdict } from "../build.ts";
+import { an, ANSWER, ASK, bingo, docks, gaps, gruss, gull as race, HINT_DOCK, HINT_HEAR, HINT_LETTER, HINT_LOCK, HINT_ODD, HINT_ORAL, HINT_PICTURE, HINT_RACE, HINT_SAY, letter, lock, odd, oral, order, pairs, RACE, RACE_STAKES, reply as oralReply, say as oralSay, scene, sort, speak, spot, verdict } from "../build.ts";
 import { phrases } from "../data.ts";
 import type { Challenge, Episode, SceneNode } from "../types.ts";
 
@@ -111,9 +111,31 @@ const photo: SceneNode[] = [
   },
   {
     t: "game",
-    task: "Подпишите людей на фото.",
-    hint: "Nils und Greta — внуки: der Enkel, во множественном die Enkel.",
-    c: pairs([["Heinrich Hansen", "der Opa"], ["Hilde Hansen", "die Oma"], ["Peter, acht Jahre", "der Junge"], ["Nils und Greta", "die Enkel"]]),
+    rule: ["familie/wessen-1"],
+    task: "Кто есть кто на фото? Разберите подписи Нильса на обороте и заполните таблицу.",
+    hint: "ihr Vater — «их отец»: Нильса и Греты. von Oma — «бабушкин».",
+    c: {
+      kind: "grid",
+      people: ["Heinrich", "Hilde", "Peter"],
+      cols: [
+        { id: "wer", label: "für Nils und Greta", values: ["der Opa", "die Oma", "der Vater"] },
+        { id: "was", label: "auf dem Foto", values: ["der Pinsel", "der Kuchen", "die Farbe"] },
+      ],
+      clues: [
+        { de: "Peter ist ihr Vater.", ru: "Петер — их отец.", a: "Peter", b: "wer:der Vater" },
+        { de: "Heinrich ist unser Opa!", ru: "Хайнрих — наш дедушка!", a: "Heinrich", b: "wer:der Opa" },
+        { de: "Der Kuchen ist von Oma.", ru: "Пирог — бабушкин.", a: "wer:die Oma", b: "was:der Kuchen" },
+        { de: "Der Pinsel ist nicht von Peter.", ru: "Кисть — не Петера.", a: "Peter", b: "was:der Pinsel", not: true },
+      ],
+      answer: {
+        "Heinrich|wer": "der Opa",
+        "Heinrich|was": "der Pinsel",
+        "Hilde|wer": "die Oma",
+        "Hilde|was": "der Kuchen",
+        "Peter|wer": "der Vater",
+        "Peter|was": "die Farbe",
+      },
+    },
   },
   {
     t: "clue",
@@ -302,7 +324,20 @@ const memories: SceneNode[] = [
               no("Das ist keine Brot.", "das Brot — среднего рода: kein, без -e."),
             ],
           },
-          { t: "game", task: "Соберите по буквам, что написано на карточке рецепта.", hint: HINT_SPELL, c: letters(["die Oma", "der Kuchen", "die Familie"]) },
+          {
+            t: "game",
+            task: "На карточке рецепта три длинных слова. Соберите каждое из частей и выберите род.",
+            hint: "Род сложного слова — по последней части: der Kuchen → der Butterkuchen.",
+            c: {
+              kind: "compound",
+              rounds: [
+                { word: "der Butterkuchen", parts: ["Butter", "Kuchen"], ru: "масляный пирог" },
+                { word: "der Geburtstag", parts: ["Geburts", "Tag"], ru: "день рождения" },
+                { word: "die Großeltern", parts: ["Groß", "Eltern"], ru: "бабушка и дедушка" },
+              ],
+              extra: ["Brot", "Mutter", "Jahr"],
+            },
+          },
           { t: "gap", rule: ["familie/mein-2"], task: "Матео хвалит себя. Вставьте слово.", text: "___ Kuchen ist auch super!", options: ["Mein", "Meine", "Meinen"], answer: "Mein", ru: "Мой пирог тоже супер!" },
           { t: "clue", title: "Рецепт Oma Hansen", text: "Матео печёт Butterkuchen по рецепту Oma Hansen и прячет бланк «Kuchen für hundert». Уверяет, что это хлеб." },
         ],
@@ -450,19 +485,45 @@ const poster: SceneNode[] = [
   { t: "gap", rule: ["familie/wessen-1"], task: "Подпишите в блокноте: чья дочь Лотта?", text: "Lotte ist ___ Tochter.", options: ["ihre", "seine", "deine"], answer: "ihre", ru: "Лотта — её дочь (фрау Петерсен)." },
   {
     t: "game",
-    task: "Разведите героев по семьям.",
-    hint: "Загляните в блокнот: фото 1976 года и плакат Лотты.",
-    c: sort([["petersen", "Familie Petersen"], ["hansen", "Familie Hansen"]], [
-      ["lotte", "Lotte, zehn Jahre", "petersen", "👧"],
-      ["kruemel", "Krümel, der Hund", "petersen", "🐕"],
-      ["peter", "Peter, acht Jahre (1976)", "hansen", "👦"],
-      ["hilde", "Oma Hilde und ihr Kuchen", "hansen", "🍰"],
-      ["kerstin", "Kerstin, die Mutter", "petersen", "🗂️"],
-      ["enkel", "Nils und Greta, die Enkel", "hansen", "👫"],
-    ]),
+    rule: ["familie/mein-2"],
+    task: "Под рисунками на плакате нет имён. Прочитайте текст Лотты и впишите имена в дерево.",
+    hint: "Onkel — брат мамы, он рядом с ней. Cousine — его дочь, она под ним.",
+    c: {
+      kind: "tree",
+      text: [
+        { de: "Ich heiße Lotte. Meine Mutter heißt Kerstin.", ru: "Меня зовут Лотта. Мою маму зовут Керстин." },
+        { de: "Ihr Bruder Jan ist mein Onkel.", ru: "Её брат Ян — мой дядя." },
+        { de: "Seine Tochter Mia ist meine Cousine.", ru: "Его дочь Миа — моя двоюродная сестра." },
+        { de: "Meine Oma heißt Inge, mein Opa heißt Klaus.", ru: "Мою бабушку зовут Инге, дедушку — Клаус." },
+        { de: "Und mein Hund heißt Krümel!", ru: "А мою собаку зовут Крюмель!" },
+      ],
+      root: {
+        id: "opa",
+        icon: "👴",
+        partner: { id: "oma", icon: "👵" },
+        children: [
+          { id: "mutter", children: [{ id: "lotte", icon: "👧", given: "Lotte" }] },
+          { id: "onkel", children: [{ id: "cousine" }] },
+        ],
+      },
+      names: ["Kerstin", "Jan", "Mia", "Inge", "Klaus", "Krümel"],
+      answer: { opa: "Klaus", oma: "Inge", mutter: "Kerstin", onkel: "Jan", cousine: "Mia" },
+    },
   },
-  narr("Лотта молча протягивает вам фломастер: на {plakat} не хватает подписей. Она диктует по буквам — шёпотом."),
-  { t: "game", task: "Подпишите плакат по буквам.", hint: HINT_SPELL, c: letters(["die Tochter", "die Mutter", "der Hund"]) },
+  narr("Лотта молча протягивает вам фломастер: на {plakat} не хватает подписей. Она диктует шёпотом, а шёпотом похожие слова не различить."),
+  {
+    t: "game",
+    task: "Лотта шепчет подписи. Какое слово прозвучало?",
+    hint: "Onkel — дядя, Enkel — внук. Cousine — она, Cousin — он. Geschwister — все братья и сёстры.",
+    c: {
+      kind: "sounds",
+      rounds: [
+        { say: "der Onkel", options: ["der Onkel", "der Enkel"] },
+        { say: "die Cousine", options: ["die Cousine", "der Cousin"] },
+        { say: "die Geschwister", options: ["die Geschwister", "die Schwester"] },
+      ],
+    },
+  },
   elif("Kieler Woche: Der Club hat Geburtstag. Meine Freunde und ich sind da. Zwanzig Kinder!", "Kieler Woche: у клуба день рождения. Мои друзья и я будем там. Двадцать детей!"),
   {
     t: "hear",

@@ -25,7 +25,7 @@ import {
   Write,
   type GameProps,
 } from "./games";
-import { Ads, Cipher, Compound, Contra, Grid, Lift, Planner, Sounds } from "./minigames";
+import { Ads, Cipher, Compound, Contra, Grid, Lift, Planner, Portrait, Sounds, Tree } from "./minigames";
 import { SceneView } from "./SceneView";
 import type { Answer, Challenge } from "./types";
 import type { World } from "./world";
@@ -68,6 +68,8 @@ export const GAME_NAMES: Record<Challenge["kind"], string> = {
   planner: "Ежедневник",
   ads: "Объявления",
   cipher: "Шифр чайки",
+  tree: "Семейное дерево",
+  portrait: "Фоторобот",
 };
 /** Эти игры завершаются сами: кнопка проверки там не нужна. */
 export const AUTOMATIC: Challenge["kind"][] = [
@@ -147,6 +149,8 @@ export function ChallengeView({
       {c.kind === "planner" && <Planner c={c} {...game} />}
       {c.kind === "ads" && <Ads c={c} {...game} />}
       {c.kind === "cipher" && <Cipher c={c} {...game} />}
+      {c.kind === "tree" && <Tree c={c} {...game} />}
+      {c.kind === "portrait" && <Portrait c={c} {...game} />}
       {c.kind === "choice" && (
         <fieldset className="moin-choices" disabled={disabled}>
           <legend className="moin-sr">Варианты ответа</legend>

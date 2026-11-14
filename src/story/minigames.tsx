@@ -4,8 +4,8 @@ import { shuffle } from "../lib/shuffle";
 import { PlayButton } from "../markup";
 import { nounAudio, wordInfo } from "./audio";
 import { Gendered, Note, type Game } from "./games";
-import { compoundOf, decipher, floorLabel, gridKey, plannerWho } from "./logic";
-import type { Answer } from "./types";
+import { compoundOf, decipher, floorLabel, gridKey, plannerWho, treeSlots } from "./logic";
+import type { Answer, PortraitPart, TreeNode, TreeSlot } from "./types";
 
 // Новые мини-игры новой версии (A1-PLOT.md, «Новые мини-игры»). Как и прежние игры, всё
 // управляется нажатием и с клавиатуры, а ошибка только даёт подсказку.
@@ -411,6 +411,187 @@ export function Cipher({ c, value, disabled, change }: Game<"cipher">) {
         />
       </label>
       {disabled && <Note tone="good">{decipher(c)}</Note>}
+    </>
+  );
+}
+
+/** «Семейное дерево»: нажать имя, потом клетку. Нажатие по заполненной клетке её очищает. */
+export function Tree({ c, value, seed, disabled, checked, change }: Game<"tree">) {
+  const record = asRecord(value);
+  const [held, setHeld] = useState<string>();
+  const names = useMemo(() => shuffle(c.names, seed), [c.names, seed]);
+  const placed = new Set(Object.values(record).map(String));
+  const open = treeSlots(c.root).filter((s) => !s.given).length;
+  function tap(id: string) {
+    const next: Record<string, string> = Object.fromEntries(Object.entries(record).map(([k, v]) => [k, String(v)]));
+    if (held) {
+      for (const k of Object.keys(next)) if (next[k] === held) delete next[k];
+      next[id] = held;
+      setHeld(undefined);
+    } else if (next[id]) delete next[id];
+    else return;
+    change(next);
+  }
+  const slot = (s: TreeSlot) => {
+    if (s.given)
+      return (
+        <span className="moin-tree-slot" data-given="">
+          {s.icon && <span aria-hidden="true">{s.icon}</span>}
+          <b lang="de">{s.given}</b>
+        </span>
+      );
+    const name = record[s.id] === undefined ? undefined : String(record[s.id]);
+    return (
+      <button
+        type="button"
+        className="moin-tree-slot"
+        disabled={disabled}
+        data-wrong={(checked && name !== undefined && name !== c.answer[s.id]) || undefined}
+        aria-label={name ? `Клетка: ${name}` : "Пустая клетка"}
+        onClick={() => tap(s.id)}
+      >
+        <span aria-hidden="true">{s.icon ?? "?"}</span>
+        <b lang="de">{name ?? "…"}</b>
+      </button>
+    );
+  };
+  const branch = (n: TreeNode) => (
+    <li key={n.id}>
+      <div className="moin-tree-couple">
+        {slot(n)}
+        {n.partner && slot(n.partner)}
+      </div>
+      {n.children && <ul>{n.children.map(branch)}</ul>}
+    </li>
+  );
+  return (
+    <>
+      <ul className="moin-notes">
+        {c.text.map((t) => (
+          <Gloss key={t.de} de={t.de} ru={t.ru} />
+        ))}
+      </ul>
+      <div className="moin-tree">
+        <ul>{branch(c.root)}</ul>
+      </div>
+      <div className="moin-tiles" role="group" aria-label="Имена">
+        {names.map((name) => (
+          <button
+            type="button"
+            key={name}
+            lang="de"
+            disabled={disabled}
+            aria-pressed={held === name}
+            data-used={placed.has(name) || undefined}
+            onClick={() => setHeld(held === name ? undefined : name)}
+          >
+            {name}
+          </button>
+        ))}
+      </div>
+      <p className="moin-count">
+        {held ? `Куда вписать ${held}? Нажмите клетку.` : `Нажмите имя, потом клетку. Вписано: ${Object.keys(record).length} из ${open}.`}
+      </p>
+    </>
+  );
+}
+
+/** Цвета одежды фоторобота: тёмно-синий и белый — цвета таблички MOIN. */
+const CLOTH: Record<string, string> = { dunkelblau: "#22406b", "weiß": "#f3efe4" };
+
+/** Портрет фоторобота: несобранная часть видна пунктиром, ростомер слева. */
+function Face({ look }: { look: Partial<Record<PortraitPart, string>> }) {
+  const scale = look.size === "klein" ? 0.8 : 1;
+  const hair = look.age === "alt" ? "#e6e2d8" : look.age === "nicht alt" ? "#5b3b24" : undefined;
+  const cloth = look.colour ? CLOTH[look.colour] : undefined;
+  const top = look.top;
+  const dash = { fill: "none", stroke: "currentColor", strokeDasharray: "4 3", opacity: 0.5 };
+  const body = top ? { fill: cloth ?? "#9aa3ad", stroke: "#2b2f36", strokeWidth: 1.5 } : dash;
+  // Корпус: у пальто длиннее, у пиджака и пальто — застёжка, у рубашки — воротник.
+  const hem = top === "der Mantel" ? 150 : 118;
+  return (
+    <svg className="moin-face" viewBox="0 0 150 210" role="img" aria-label="Фоторобот">
+      {[40, 80, 120].map((y, i) => (
+        <g key={y} opacity={0.45}>
+          <line x1="0" x2="150" y1={y} y2={y} stroke="currentColor" strokeWidth="0.6" />
+          <text x="2" y={y - 3} fontSize="9" fill="currentColor">
+            {["1,90", "1,70", "1,50"][i]}
+          </text>
+        </g>
+      ))}
+      <g transform={`translate(75 205) scale(${scale}) translate(-75 -205)`}>
+        <rect x="58" y={hem} width="14" height={205 - hem} rx="3" fill="#3a3f47" />
+        <rect x="78" y={hem} width="14" height={205 - hem} rx="3" fill="#3a3f47" />
+        <path d={`M48 66 Q75 58 102 66 L110 ${hem} L40 ${hem} Z`} {...body} />
+        <path d="M48 66 L32 114 L41 117 L53 82" {...body} />
+        <path d="M102 66 L118 114 L109 117 L97 82" {...body} />
+        {(top === "die Jacke" || top === "der Mantel") && <line x1="75" y1="64" x2="75" y2={hem} stroke="#2b2f36" strokeWidth="1.5" />}
+        {top === "der Mantel" && [84, 104, 124].map((y) => <circle key={y} cx="80" cy={y} r="2" fill="#2b2f36" />)}
+        {top === "das Hemd" && <path d="M66 62 L75 74 L84 62" fill="none" stroke="#2b2f36" strokeWidth="1.5" />}
+        {top === "der Pullover" && <path d="M64 62 Q75 70 86 62" fill="none" stroke="#2b2f36" strokeWidth="1.5" />}
+        <circle cx="75" cy="42" r="17" fill="#e9c8a6" stroke="#2b2f36" strokeWidth="1.2" />
+        {hair ? (
+          <path d="M57 48 Q54 25 75 24 Q96 25 93 48 Q91 37 75 35 Q59 37 57 48 Z" fill={hair} stroke="#2b2f36" strokeWidth="1.2" />
+        ) : (
+          <path d="M58 42 A17 17 0 0 1 92 42" {...dash} />
+        )}
+        <circle cx="69" cy="44" r="1.6" fill="#2b2f36" />
+        <circle cx="81" cy="44" r="1.6" fill="#2b2f36" />
+        <path d="M69 51 Q75 54 81 51" fill="none" stroke="#2b2f36" strokeWidth="1.2" />
+      </g>
+      {look.says && (
+        <g>
+          <rect x="96" y="4" width="52" height="24" rx="8" fill="var(--panel)" stroke="currentColor" strokeWidth="1" />
+          <text x="122" y="20" fontSize="11" textAnchor="middle" fill="currentColor" lang="de">
+            {look.says}
+          </text>
+        </g>
+      )}
+    </svg>
+  );
+}
+
+/** «Фоторобот»: по приметам выбрать каждую часть портрета. */
+export function Portrait({ c, value, disabled, checked, change }: Game<"portrait">) {
+  const record = asRecord(value);
+  const look = Object.fromEntries(Object.entries(record).map(([k, v]) => [k, String(v)])) as Partial<Record<PortraitPart, string>>;
+  return (
+    <>
+      <ul className="moin-notes">
+        {c.notes.map((n) => (
+          <Gloss key={n.de} de={n.de} ru={n.ru} />
+        ))}
+      </ul>
+      <div className="moin-portrait">
+        <Face look={look} />
+        <div className="moin-grid">
+          {c.parts.map((part) => (
+            <div
+              key={part.id}
+              className="moin-grid-row"
+              role="group"
+              aria-label={part.label}
+              data-wrong={(checked && look[part.id] !== undefined && look[part.id] !== c.answer[part.id]) || undefined}
+            >
+              <div>
+                <small>{part.label}</small>
+                {part.options.map((o) => (
+                  <button
+                    type="button"
+                    key={o}
+                    lang="de"
+                    disabled={disabled}
+                    aria-pressed={look[part.id] === o}
+                    onClick={() => change({ ...look, [part.id]: o })}
+                  >
+                    {o}
+                  </button>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </>
   );
 }

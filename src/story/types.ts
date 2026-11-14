@@ -203,7 +203,26 @@ export type Challenge =
   /** «Лифт»: по словам жильца нажать этаж. floor: −1 — Keller, 0 — Erdgeschoss. */
   | { kind: "lift"; top: number; rounds: { who: string; de: string; ru: string; floor: number }[] }
   /** «Шифр чайки»: номера букв (A = 1) или сдвиг по алфавиту; ответ — расшифровка. */
-  | { kind: "cipher"; code: string; shift?: number; answer: string; ru: string };
+  | { kind: "cipher"; code: string; shift?: number; answer: string; ru: string }
+  /**
+   * «Семейное дерево»: по рассказу вписать имена в пустые клетки дерева. Клетки с given уже
+   * подписаны; names — имена на выбор, среди них могут быть лишние. answer — клетка → имя.
+   */
+  | { kind: "tree"; text: { de: string; ru: string }[]; root: TreeNode; names: string[]; answer: Record<string, string> }
+  /**
+   * «Фоторобот»: по приметам выбрать каждую часть портрета, рисунок меняется сразу. Части и
+   * их варианты — из словаря PORTRAIT в logic.ts: по нему рисуется портрет.
+   */
+  | {
+      kind: "portrait";
+      notes: { de: string; ru: string }[];
+      parts: { id: PortraitPart; label: string; options: string[] }[];
+      answer: Partial<Record<PortraitPart, string>>;
+    };
+/** Клетка семейного дерева; partner — супруг рядом, icon — подсказка на пустой клетке. */
+export type TreeSlot = { id: string; icon?: string; given?: string };
+export type TreeNode = TreeSlot & { partner?: TreeSlot; children?: TreeNode[] };
+export type PortraitPart = "size" | "age" | "top" | "colour" | "says";
 /**
  * Улика сетки: a и b — в одной строке (или нет, если not). Термин — имя человека или
  * «столбец:значение»: { a: "Nils", b: "stadt:Kiel", not: true } — «Nils kommt nicht aus Kiel».

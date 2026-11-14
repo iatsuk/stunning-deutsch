@@ -13,7 +13,10 @@ import type {
   LockRound,
   Move,
   Phrase,
+  PortraitPart,
   StorySave,
+  TreeNode,
+  TreeSlot,
 } from "./types.ts";
 
 type Route = Extract<Challenge, { kind: "route" }>;
@@ -294,6 +297,32 @@ export const compoundOf = (parts: string[]) =>
 /** Этаж на кнопке лифта и по-русски: Keller, Erdgeschoss — наш первый, erster Stock — наш второй. */
 export const floorLabel = (floor: number) => (floor < 0 ? "K" : floor === 0 ? "E" : String(floor));
 
+/** Все клетки семейного дерева сверху вниз: человек, затем супруг, затем дети. */
+export const treeSlots = (node: TreeNode): TreeSlot[] => [
+  node,
+  ...(node.partner ? [node.partner] : []),
+  ...(node.children ?? []).flatMap(treeSlots),
+];
+type Tree = Extract<Challenge, { kind: "tree" }>;
+/** Первая клетка дерева с чужим именем и строка рассказа, где названо верное. */
+export function treeWrong(c: Tree, value: Record<string, string | number>) {
+  const slot = treeSlots(c.root).find((s) => !s.given && value[s.id] !== c.answer[s.id]);
+  if (!slot) return undefined;
+  const name = c.answer[slot.id];
+  return { slot, line: c.text.find((t) => t.de.includes(name)) };
+}
+
+/**
+ * Словарь фоторобота: какие варианты бывают у каждой части. По нему игра рисует портрет, а
+ * валидация не даёт главе вариант, который не нарисовать. «says» — любая короткая реплика.
+ */
+export const PORTRAIT: Record<Exclude<PortraitPart, "says">, string[]> = {
+  size: ["groß", "klein"],
+  age: ["alt", "nicht alt"],
+  top: ["die Jacke", "der Pullover", "der Mantel", "das Hemd"],
+  colour: ["dunkelblau", "weiß"],
+};
+
 const isRecord = (value: unknown): value is Record<string, string | number> =>
   Boolean(value) && typeof value === "object" && !Array.isArray(value);
 const sameList = (value: Answer | undefined, expected: string[]) =>
@@ -514,6 +543,8 @@ export function initialAnswer(challenge: Challenge): Answer {
     case "grid":
     case "ads":
     case "planner":
+    case "tree":
+    case "portrait":
       return {};
     case "clock":
       return challenge.start;
@@ -603,6 +634,16 @@ export function mistake(c: Challenge, value: Answer, hint: string): string {
     }
     case "cipher":
       return typeof value === "string" && value.trim() ? hint : "Впишите расшифровку.";
+    case "tree": {
+      if (Object.keys(record).length < Object.keys(c.answer).length) return "Впишите имя в каждую пустую клетку.";
+      const wrong = treeWrong(c, record);
+      return wrong?.line ? `${String(record[wrong.slot.id])} — не на своём месте. Перечитайте: «${wrong.line.de}»` : hint;
+    }
+    case "portrait": {
+      const part = c.parts.find((p) => record[p.id] !== c.answer[p.id]);
+      if (Object.keys(record).length < c.parts.length) return "Выберите каждую примету.";
+      return part ? `Не сходится: ${part.label.toLowerCase()}. Перечитайте приметы.` : hint;
+    }
     default:
       return hint;
   }
@@ -621,6 +662,8 @@ function restoreDraft(c: Challenge, v: unknown): Answer | undefined {
     case "ads":
     case "lift":
     case "cipher":
+    case "tree":
+    case "portrait":
       return undefined;
     case "play": {
       if (!strings) return undefined;
@@ -1038,6 +1081,37 @@ export function validateChallenge(
       return c.rounds.length >= 2 && c.rounds.every((r) => r.floor >= -1 && r.floor <= c.top && r.de && r.ru && r.who);
     case "cipher":
       return Boolean(c.answer && c.ru) && cipherNorm(decipher(c)) === cipherNorm(c.answer);
+    case "tree": {
+      // Каждая пустая клетка получает своё имя, имя названо в рассказе, лишние имена допустимы.
+      const open = treeSlots(c.root).filter((s) => !s.given);
+      const ids = treeSlots(c.root).map((s) => s.id);
+      const named = Object.values(c.answer);
+      return (
+        open.length >= 2 &&
+        new Set(ids).size === ids.length &&
+        new Set(c.names).size === c.names.length &&
+        Object.keys(c.answer).length === open.length &&
+        open.every((s) => c.answer[s.id] && c.names.includes(c.answer[s.id])) &&
+        new Set(named).size === named.length &&
+        named.every((name) => c.text.some((t) => t.de.includes(name))) &&
+        c.text.every((t) => t.de && t.ru)
+      );
+    }
+    case "portrait":
+      return (
+        c.notes.length >= 2 &&
+        c.notes.every((n) => n.de && n.ru) &&
+        new Set(c.parts.map((p) => p.id)).size === c.parts.length &&
+        Object.keys(c.answer).length === c.parts.length &&
+        c.parts.every(
+          (p) =>
+            p.label &&
+            p.options.length >= 2 &&
+            new Set(p.options).size === p.options.length &&
+            p.options.includes(c.answer[p.id] ?? "") &&
+            (p.id === "says" || p.options.every((o) => PORTRAIT[p.id as Exclude<PortraitPart, "says">].includes(o))),
+        )
+      );
   }
 }
 

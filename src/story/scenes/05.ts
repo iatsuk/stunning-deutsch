@@ -247,14 +247,25 @@ const shop: SceneNode[] = [
   { t: "game", task: "Отсчитайте сдачу по чеку: всё — 28,50 €, заплачено 30,00 €. Фрау Крузе положит её в конверт.", hint: "30,00 − 28,50 = 1,50: один евро и пятьдесят центов.", c: { kind: "coins", coins: [200, 100, 50, 20, 10], answer: 150 } },
   {
     t: "game",
-    rule: ["einkaufen/welch-1"],
-    task: "Заведите карточку покупателя со слов фрау Крузе.",
-    hint: "Прилагательное после sein не меняется: Er ist groß.",
-    c: write("Der Moin-Mann", [
-      ["Wie ist er?", "groß und alt", "alt und groß", "groß, alt"],
-      ["Was sagt er?", "Moin", "nur Moin", "Moin."],
-      ["Welche Farbe kauft er?", "dunkelblau", "Dunkelblau"],
-    ]),
+    rule: ["einkaufen/adjektiv-1"],
+    task: "Составьте фоторобот покупателя со слов фрау Крузе.",
+    hint: "Каждая строка — одна примета. Прилагательное после sein не меняется: Er ist groß.",
+    c: {
+      kind: "portrait",
+      notes: [
+        { de: "Er ist groß und alt.", ru: "Он высокий и старый." },
+        { de: "Seine Jacke ist dunkelblau.", ru: "Куртка у него тёмно-синяя." },
+        { de: "Er sagt nur ein Wort: Moin.", ru: "Он говорит только одно слово: Moin." },
+      ],
+      parts: [
+        { id: "size", label: "Рост", options: ["groß", "klein"] },
+        { id: "age", label: "Возраст", options: ["alt", "nicht alt"] },
+        { id: "top", label: "Одежда", options: ["die Jacke", "der Pullover", "der Mantel"] },
+        { id: "colour", label: "Цвет", options: ["dunkelblau", "weiß"] },
+        { id: "says", label: "Говорит", options: ["Moin.", "Guten Tag!", "Hallo!"] },
+      ],
+      answer: { size: "groß", age: "alt", top: "die Jacke", colour: "dunkelblau", says: "Moin." },
+    },
   },
   {
     t: "type",
@@ -586,7 +597,20 @@ const colours: SceneNode[] = [
     ],
   },
   { t: "gap", task: "Что сказала Элиф о табличке?", text: "Das Schild ist ___ und weiß.", options: ["dunkelblau", "rot", "gelb"], answer: "dunkelblau", ru: "Табличка тёмно-синяя с белым." },
-  { t: "game", task: "Подпишите улики на доске по буквам.", hint: HINT_SPELL, c: letters(["die Größe", "die Packung", "die Zwiebel"]) },
+  {
+    t: "game",
+    task: "Подпишите улики на доске: соберите длинные слова из частей и выберите род.",
+    hint: "Род сложного слова — по последней части: die Nummer → die Telefonnummer.",
+    c: {
+      kind: "compound",
+      rounds: [
+        { word: "der Kassenbon", parts: ["Kassen", "Bon"], ru: "чек" },
+        { word: "der Einkaufszettel", parts: ["Einkaufs", "Zettel"], ru: "список покупок" },
+        { word: "die Telefonnummer", parts: ["Telefon", "Nummer"], ru: "номер телефона" },
+      ],
+      extra: ["Liter", "Farbe", "Apfel"],
+    },
+  },
   narr("{kassenbon} уже сухой. Крупно: «1 Liter Bootsfarbe, dunkelblau — 24,00 €»."),
   {
     t: "game",
@@ -701,12 +725,16 @@ const evening: SceneNode[] = [
           narr("«Nils hat das Schild in einer Packung!» — шепчет очередь у киоска. Вы показываете Фрауке сообщение Нильса."),
           {
             t: "game",
-            task: "Поставьте штамп: это написано в сообщении Нильса или нет?",
-            c: verdict(["Steht da", "Steht nicht da"], [
-              ["В упаковке — печенье", true, "«Eine Packung Kekse!!!» — так и написал."],
-              ["Пачка для команды", true, "«Für das Team!!!» — печенье для всех."],
-              ["В упаковке табличка", false, "Об этом Нильс не писал. Это слух."],
-            ]),
+            task: "Сверьте слух с сообщением Нильса: отметьте два слова, которые не сходятся.",
+            hint: "Что лежит в упаковке — по слуху и по Нильсу?",
+            c: {
+              kind: "contra",
+              texts: [
+                { who: "Слух у киоска", lines: [["Nils", "hat", "das", "Schild"], ["in", "einer", "Packung!"]] },
+                { who: "Nils, Nachricht", lines: [["Kekse!!!", "Für", "das", "Team!!!"], ["In", "der", "Jacke!!!"]] },
+              ],
+              answer: ["0:0:3", "1:0:0"],
+            },
           },
           { ...narr("Фрауке вздыхает: «Nur Kekse!» Но в журнал киоска записывает честно. Слух сдулся."), set: { rumours: -1 } },
         ],

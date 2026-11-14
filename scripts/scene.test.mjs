@@ -514,5 +514,34 @@ test("new mini-games check the answer, and their puzzles have exactly one way ou
   assert.ok(!valid({ ...contra, answer: ["0:0:0", "0:0:1"] }), "противоречие — между двумя показаниями");
   const ads = { kind: "ads", people: [{ id: "a", text: "x" }, { id: "b", text: "x" }], ads: [{ id: "A", title: "x", text: "x" }, { id: "B", title: "x", text: "x" }], answer: { a: "B", b: "0" } };
   assert.ok(valid(ads) && isCorrect(ads, { a: "B", b: "0" }) && !isCorrect(ads, { a: "A", b: "0" }));
-  for (const c of [grid, planner, glue, lift, sounds, contra, ads]) assert.ok(!isCorrect(c, initialAnswer(c)), c.kind);
+  // «Семейное дерево»: пустые клетки получают имена из рассказа, ошибка называет строку с верным именем.
+  const tree = {
+    kind: "tree",
+    text: [{ de: "Meine Mutter heißt Kerstin.", ru: "x" }, { de: "Ihr Bruder Jan ist mein Onkel.", ru: "x" }],
+    root: { id: "oma", icon: "👵", children: [{ id: "mutter", children: [{ id: "lotte", given: "Lotte" }] }, { id: "onkel" }] },
+    names: ["Kerstin", "Jan", "Inge", "Krümel"],
+    answer: { oma: "Inge", mutter: "Kerstin", onkel: "Jan" },
+  };
+  assert.ok(!valid(tree), "имя Inge в рассказе не названо");
+  tree.text.push({ de: "Meine Oma heißt Inge.", ru: "x" });
+  assert.ok(valid(tree));
+  assert.ok(isCorrect(tree, solution(tree)));
+  assert.ok(!isCorrect(tree, { oma: "Inge", mutter: "Jan", onkel: "Kerstin" }));
+  assert.match(mistake(tree, { oma: "Inge", mutter: "Jan", onkel: "Kerstin" }, ""), /Jan — не на своём месте.*Kerstin/);
+  assert.ok(!valid({ ...tree, answer: { ...tree.answer, onkel: "Kerstin" } }), "одно имя на две клетки");
+  // «Фоторобот»: варианты только из словаря портрета, ошибка называет часть.
+  const portrait = {
+    kind: "portrait",
+    notes: [{ de: "Er ist groß.", ru: "x" }, { de: "Seine Jacke ist dunkelblau.", ru: "x" }],
+    parts: [
+      { id: "size", label: "Рост", options: ["groß", "klein"] },
+      { id: "top", label: "Одежда", options: ["die Jacke", "der Mantel"] },
+      { id: "says", label: "Говорит", options: ["Moin.", "Hallo!"] },
+    ],
+    answer: { size: "groß", top: "die Jacke", says: "Moin." },
+  };
+  assert.ok(valid(portrait) && isCorrect(portrait, solution(portrait)));
+  assert.match(mistake(portrait, { size: "groß", top: "der Mantel", says: "Moin." }, ""), /одежда/);
+  assert.ok(!valid({ ...portrait, parts: [{ id: "size", label: "Рост", options: ["groß", "riesig"] }], answer: { size: "groß" } }), "riesig не нарисовать");
+  for (const c of [grid, planner, glue, lift, sounds, contra, ads, tree, portrait]) assert.ok(!isCorrect(c, initialAnswer(c)), c.kind);
 });
