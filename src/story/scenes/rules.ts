@@ -510,6 +510,71 @@ export const SCENE_RULES: Record<string, SceneRule> = {
       note: "*un-* = не-, *-los* = без, *-bar* = можно: *unbekannt, arbeitslos, erreichbar*.",
     },
   },
+  "moin/es-gibt-1": {
+    chapter: 5,
+    point: "*Die Hose gibt es in Rot.* — *es gibt* + винительный: «есть, имеется»",
+    read:
+      "*es gibt* значит «есть, бывает, имеется» и не зависит от того, о чём речь: *es gibt* стоит и с одним " +
+      "предметом, и с несколькими. То, что есть, стоит в винительном: *Es gibt einen Kiosk am Hafen.* " +
+      "Отрицание — *kein*: *Hier gibt es kein Licht.* В вопросе глагол первый: *Gibt es hier ein Café?*",
+    table: {
+      title: "es gibt",
+      ru: "есть, имеется",
+      head: ["Deutsch", "По-русски"],
+      rows: [
+        ["Es gib+t einen Kiosk am Hafen.", "У гавани есть киоск."],
+        ["Die Hose gib+t es in Rot.", "Брюки бывают красные."],
+        ["Hier gib+t es kein Licht.", "Здесь нет света."],
+        ["Gib+t es hier ein Café?", "Здесь есть кафе?"],
+      ],
+      ruCols: [1],
+      note: "*es gibt* + винительный: *einen Kiosk*; отрицание — *kein*.",
+    },
+  },
+  "moin/geoeffnet-1": {
+    chapter: 6,
+    point: "*Der Kiosk ist geöffnet.* — *geöffnet* и *geschlossen* как прилагательные после *sein*",
+    read:
+      "На табличках и в объявлениях время работы пишут причастиями: *geöffnet* «открыто», *geschlossen* " +
+      "«закрыто». После *sein* они стоят как прилагательные: *Die Werkstatt ist geschlossen.* *Der Kiosk ist " +
+      "von neun bis sechs geöffnet.* В разговоре то же самое говорят короче: *auf* и *zu* — *Der Laden ist zu.*",
+    table: {
+      title: "geöffnet, geschlossen",
+      ru: "открыто, закрыто",
+      head: ["Deutsch", "По-русски"],
+      rows: [
+        ["Der Kiosk ist geöffnet.", "Киоск открыт."],
+        ["Die Werkstatt ist geschlossen.", "Мастерская закрыта."],
+        ["Heute geschlossen.", "Сегодня закрыто."],
+        ["Der Laden ist zu.", "Лавка закрыта (разговорное)."],
+      ],
+      ruCols: [1],
+      note: "*geöffnet — auf*, *geschlossen — zu*: на табличке и в разговоре.",
+    },
+  },
+  "moin/als-1": {
+    chapter: 7,
+    point: "*Das Wohnheim ist billiger als die Wohnung.* — сравнение: *-er als*",
+    read:
+      "Чтобы сравнить, к прилагательному прибавляют *-er*, а с чем сравниваем — после *als*: *billig → billiger als*, " +
+      "*klein → kleiner als*. Короткие слова часто получают умлаут: *groß → größer*, *alt → älter*, *kalt → kälter*. " +
+      "Неправильные надо запомнить: *gut → besser*, *viel → mehr*, *gern → lieber*. Сравнение с тем же самым — " +
+      "*so … wie*: *Das Wohnheim ist so klein wie ein Boot.*",
+    table: {
+      title: "-er als",
+      ru: "сравнение",
+      head: ["Wort", "Vergleich", "Beispiel"],
+      rows: [
+        ["billig", "billig+er als", "Das Wohnheim ist billiger als die Wohnung."],
+        ["groß", "größ+er als", "Der Keller ist größer als die Küche."],
+        ["kalt", "kält+er als", "Heute ist es kälter als gestern."],
+        ["gut", "besser als", "Tee ist besser als Kaffee."],
+        ["gern", "lieber als", "Ich segle lieber als ich schwimme."],
+      ],
+      ruCols: [],
+      note: "*-er als*: *billiger als*; *gut — besser*, *gern — lieber*, *viel — mehr*.",
+    },
+  },
   // Сводная таблица в конце главы 10: все модальные глаголы A1 рядом, вместе с mögen и sollen сверх уроков.
   "moin/modal-1": {
     chapter: 10,

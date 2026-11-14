@@ -83,6 +83,8 @@ const morning: SceneNode[] = [
   hauke("Wo ist Herr Jensen? Im Keller! Kommt, wir gehen runter!", "Где господин Йенсен? В подвале! Пошли вниз!"),
   narr("Im Treppenhaus клуба — дверь вниз. Die Lampe ist kaputt, es ist dunkel. Der Schlüssel… не подходит."),
   dana("Der Schlüssel ist alt. Das Schloss ist neu. Das passt nicht!", "Ключ старый. Замок новый. Не подходит!"),
+  hauke("Und es gibt hier kein Licht! Dana, mach dein Handy an!", "И света здесь нет! Дана, включи телефон!"),
+  { t: "gap", rule: ["moin/es-gibt-1"], task: "Запишите, почему на лестнице темно.", text: "Hier ___ es kein Licht.", options: ["gibt", "ist", "hat"], answer: "gibt", ru: "Здесь нет света." },
   {
     t: "pick",
     task: "Ключ не подходит, а уже 8:20. Что делать?",
@@ -95,6 +97,7 @@ const morning: SceneNode[] = [
   narr("Frau Petersen kommt: großer Schlüssel, eine Packung Kekse — и сияет, как на Geburtstag."),
   petersen("Zwanzig Jahre ist der Keller zu! Heute machen wir ihn auf. Das feiern wir!", "Двадцать лет подвал закрыт! Сегодня мы его открываем. Это надо отпраздновать!", ["der Keller"]),
   petersen("Aber zuerst das Formular. Ohne Formular kein Keller!", "Но сначала формуляр. Без формуляра — никакого подвала!"),
+  petersen("Und möchten Sie einen Keks? Ich mag Kekse!", "А хотите печенье? Я люблю печенье!"),
   {
     t: "game",
     rule: ["wohnen/check-1"],
@@ -391,7 +394,7 @@ const stairs: SceneNode[] = [
             hint: "KM — Kaltmiete, NK — Nebenkosten, WM — Warmmiete: всё вместе.",
             c: spot("Anzeige · 2. Stock", ["2-Zi.-Whg.|Blk.|ruhig", "KM 520 €|NK 130 €|WM 650 €", "frei ab sofort|Tel. Wulff"], ["WM 650 €"]),
           },
-          elif("650 Euro warm? … Nein, danke. Ich bleibe im Wohnheim.", "650 евро с отоплением? … Нет, спасибо. Я остаюсь в общежитии."),
+          elif("650 Euro warm? … Nein, danke. Ich bleibe im Wohnheim. Das ist kleiner, aber billiger als die Wohnung!", "650 евро с отоплением? … Нет, спасибо. Я остаюсь в общежитии. Оно меньше, зато дешевле квартиры!"),
           { t: "gap", rule: ["wohnen/komposita-1"], task: "Что стоит 650 евро?", text: "Die ___ ist 650 Euro: Miete und Nebenkosten.", options: ["Warmmiete", "Kaltmiete", "Nebenkosten"], answer: "Warmmiete", ru: "Тёплая аренда — 650 евро: аренда и коммунальные." },
           narr("Обмен не случился: im Wohnheim у Элиф тоже есть Balkon. Общий, на сорок человек."),
         ],
@@ -541,6 +544,8 @@ const empty: SceneNode[] = [
     c: order(["Bitte", "rufen", "Sie", "morgen", "an."], ["an.", "morgen", "Bitte", "Sie", "rufen"]),
   },
   dana("Die Werkstatt ist zu. Und Herr Jensen ist weg. Das ist kein Zufall.", "Мастерская закрыта. И Йенсена нет. Это не случайность."),
+  elif("Heute geschlossen – das steht an der Tür. Wir müssen morgen wiederkommen.", "«Сегодня закрыто» — написано на двери. Придётся прийти завтра."),
+  { t: "gap", rule: ["moin/geoeffnet-1"], task: "Что написано на двери мастерской?", text: "Heute ___.", options: ["geschlossen", "schließen", "geschließt"], answer: "geschlossen", ru: "Сегодня закрыто." },
   {
     t: "pick",
     task: "Что теперь главное?",
@@ -724,6 +729,17 @@ const evening: SceneNode[] = [
       narr("Хауке краснеет первым и говорит: {entschuldigung} Нильс кивает. Через минуту в его сообщениях снова «!!!»."),
     ],
     else: [narr("Nils kommt mit dem Handy: «Sturm!!! Morgen!!! Alle Boote in den Hafen!!!» Нильс снова всё знает первым.")],
+  },
+  elif("Sie ist hier, denn sie hat Angst. Und Frau Petersens Stuhl ist warm!", "Она здесь, потому что ей страшно. А стул фрау Петерсен тёплый!"),
+  {
+    t: "reply",
+    rule: ["moin/denn-1"],
+    task: "Объясните Хауке, почему чайка в клубе, — как Элиф.",
+    options: [
+      ok("Sie ist hier, denn sie hat Angst vor dem Sturm."),
+      no("Sie ist hier, denn hat sie Angst vor dem Sturm.", "После denn порядок обычный: denn sie hat …"),
+      no("Sie ist hier, dann sie hat Angst vor dem Sturm.", "dann — «потом», и после него глагол сразу. Причину называет denn."),
+    ],
   },
   {
     t: "game",

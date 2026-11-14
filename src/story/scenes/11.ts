@@ -203,6 +203,7 @@ const werkstatt: SceneNode[] = [
     options: ["десять", "два", "сто"],
     answer: "десять",
   },
+  hauke("Über fünfzig Jahre alt – und wie neu!", "Больше пятидесяти лет — и как новая!"),
   {
     t: "game",
     rule: ["arbeit/perfekt-4"],
@@ -210,6 +211,7 @@ const werkstatt: SceneNode[] = [
     hint: "Слабые глаголы: ge- + основа + -t; после -t — -et: gearbeitet.",
     c: gaps("Ich habe die Farbe ___. Ich habe das Schild ___. Zehn Tage habe ich ___.", ["gekauft", "gemalt", "gearbeitet", "gekaufen", "gemalen"], ["gekauft", "gemalt", "gearbeitet"]),
   },
+  elif("Zehn Tage war das Schild unter dem Tuch. Und Greta ist jeden Tag mit dem Bus gekommen!", "Десять дней табличка лежала под тканью. А Грета каждый день приезжала на автобусе!"),
   narr("Dann schreibt sie: «Ich bin Mechaniker.» Смотрит на слово — и дописывает две буквы."),
   {
     t: "reply",
@@ -365,6 +367,7 @@ const warum: SceneNode[] = [
         icon: "🎁",
         optional: true,
         nodes: [
+          dana("Ihr Rücken tut weh? Kein Wunder: zehn Tage Arbeit!", "Спина болит? Неудивительно: десять дней работы!"),
           dana("Für den Rücken, Greta. Von einer Ärztin für eine Mechanikerin!", "Для спины, Грета. От врача — механику!"),
           {
             t: "gap",
@@ -548,6 +551,17 @@ const geheim: SceneNode[] = [
     answer: "нести табличку",
   },
   hauke("Ich trage das Schild? Ich? Mit dem Fahrrad von Oma?", "Я несу табличку? Я? На бабушкином велосипеде?"),
+  elif("Und wenn es regnet? Das Schild ist noch nicht trocken!", "А если пойдёт дождь? Табличка ещё не высохла!"),
+  {
+    t: "pick",
+    rule: ["moin/wenn-1"],
+    task: "Чего боится Элиф?",
+    options: [
+      ok("Если в субботу дождь, табличка не успеет высохнуть"),
+      no("Что в субботу Хауке уронит табличку", "Про Хауке она не сказала ни слова: wenn es regnet — если пойдёт дождь."),
+      no("Что дождь смоет белые буквы", "Буквы уже высохли. Сохнет тёмно-синяя краска."),
+    ],
+  },
   {
     t: "type",
     rule: ["moin/sollen-1"],
@@ -555,6 +569,7 @@ const geheim: SceneNode[] = [
     answers: ["Elif soll die Möwe beobachten.", "Sie soll die Möwe beobachten."],
     ru: "Элиф должна следить за чайкой.",
   },
+  mateo("Und ich will den Kuchen backen. Für alle!", "А я хочу испечь торт. На всех!"),
   {
     t: "hear",
     task: "Когда и где встреча в субботу?",

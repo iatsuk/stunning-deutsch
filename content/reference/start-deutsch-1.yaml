@@ -806,12 +806,12 @@ grammar:
     group: Глагол
     title: "Повелительное наклонение на du"
     rules: [gesundheit/imperativ-2, gesundheit/imperativ-3]
-    find: ['(Komm|Geh|Mach|Nimm|Gib|Sag|Hör|Schau|Warte|Bring|Ruf|Trink|Iss|Lies|Sieh|Hilf|Fahr|Bleib|Schlaf|Zeig|Schreib|Hol|Such|Frag|Pass|Steh|Leg|Sei|Vergiss|Erzähl|Lauf|Probier|Halt|Guck|Lern|Wart|Zieh|Dreh|Kauf)( (mal|bitte|doch|jetzt|schnell|her|hier|mit|nicht))*[,!]']
+    find: ['(Komm|Geh|Mach|Nimm|Gib|Sag|Hör|Schau|Warte|Wart|Bring|Ruf|Trink|Iss|Lies|Sieh|Hilf|Fahr|Bleib|Schlaf|Zeig|Schreib|Hol|Such|Frag|Pass|Steh|Leg|Sei|Vergiss|Erzähl|Lauf|Probier|Halt|Guck|Lern|Zieh|Dreh|Kauf|Setz|Pack|Spring|Schwimm|Hab|Mal|Koch)(?! (ich|du|er|sie|es|wir|ihr|Sie|man)(?![\p{L}]))[^.?\n]*!']
   - id: imperativ-ihr
     group: Глагол
     title: "Повелительное наклонение на ihr"
     rules: [gesundheit/imperativ-2, gesundheit/imperativ-3]
-    find: ['(Kommt|Geht|Macht|Nehmt|Gebt|Sagt|Hört|Schaut|Wartet|Bringt|Ruft|Trinkt|Esst|Lest|Seht|Helft|Fahrt|Bleibt|Schlaft|Zeigt|Schreibt|Holt|Sucht|Fragt|Passt|Seid|Vergesst|Erzählt|Lauft|Probiert|Haltet|Guckt|Lernt)( (mal|bitte|doch|jetzt|schnell|her|hier|mit|nicht))*[,!]']
+    find: ['(Kommt|Geht|Macht|Nehmt|Gebt|Sagt|Hört|Schaut|Wartet|Bringt|Ruft|Trinkt|Esst|Lest|Seht|Helft|Fahrt|Bleibt|Schlaft|Zeigt|Schreibt|Holt|Sucht|Fragt|Passt|Seid|Vergesst|Erzählt|Lauft|Probiert|Haltet|Guckt|Lernt|Zieht|Kauft|Setzt|Packt|Springt|Schwimmt|Habt|Kocht)(?! (ich|du|er|sie|es|wir|ihr|Sie|man)(?![\p{L}]))[^.?\n]*!']
   - id: verb-zweit
     group: Предложение
     title: "Глагол на втором месте, время на первом"
@@ -855,6 +855,7 @@ grammar:
   - id: es-gibt
     group: Предложение
     title: "es gibt"
+    rules: [moin/es-gibt-1]
     find: ['es gibt|Es gibt|gibt es']
   - id: plural
     group: Существительное и артикль
@@ -954,6 +955,7 @@ grammar:
   - id: komparation
     group: Прилагательное и числа
     title: "Сравнение (besser, mehr, als)"
+    rules: [moin/als-1]
     find: ['besser|größer|kleiner|teurer|billiger|älter|jünger|wärmer|kälter|am besten|(lieber|mehr|besser|größer|kleiner|teurer|billiger|älter|jünger) als']
   - id: preise
     group: Прилагательное и числа
@@ -1028,6 +1030,7 @@ grammar:
   - id: partizip-adjektiv
     group: Словообразование
     title: "Причастие как прилагательное (geöffnet, geschlossen)"
+    rules: [moin/geoeffnet-1]
     find: ['geöffnet|geschlossen']
   - id: wetter-es
     group: Словообразование

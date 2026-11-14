@@ -45,8 +45,16 @@ const regen: SceneNode[] = [
     ],
   },
   hauke("Es regnet, es regnet! Und das Schild ist noch nicht trocken!", "Дождь, дождь! А табличка ещё не высохла!", ["das Wetter"]),
+  hauke("Heute ist es kälter als im Herbst!", "Сегодня холоднее, чем осенью!"),
   dana("Der Wetterbericht hat recht: Regen, Wind – und nur zwölf Grad!", "Прогноз не соврал: дождь, ветер — и всего двенадцать градусов!"),
   narr("Грета трогает табличку — палец тёмно-синий. Die Farbe ist nicht {trocken}. Der {start} ist um elf."),
+  {
+    t: "game",
+    rule: ["moin/als-1"],
+    task: "Запишите в блокнот, какая сегодня погода. Соберите фразу Хауке.",
+    hint: "Сравнение: -er als — kälter als im Herbst.",
+    c: order(["Heute", "ist", "es", "kälter", "als", "im", "Herbst!"], ["als", "Herbst!", "es", "Heute", "kälter", "im", "ist"]),
+  },
   {
     t: "hear",
     task: "Что говорит Хауке?",
@@ -167,6 +175,7 @@ const weg: SceneNode[] = [
     answer: "hat",
     ru: "Господин Йенсен всё спланировал.",
   },
+  hauke("Und wenn es regnet, bleibt der Karton zu!", "А если идёт дождь, коробка остаётся закрытой!"),
   narr("An der Haltestelle: Regen, Wind — und eine Durchsage."),
   {
     t: "look",
@@ -273,8 +282,18 @@ const hotel: SceneNode[] = [
     options: ["на поезде из Гамбурга, с опозданием", "на машине с Нильсом", "на пароме"],
     answer: "на поезде из Гамбурга, с опозданием",
   },
+  opa("Ich bleibe für zwei Nächte. Ab Montag bin ich wieder in Hamburg.", "Я остаюсь на две ночи. С понедельника я снова в Гамбурге."),
   petersen("Ich habe es gehört: Opa Hansen kommt! Und ich habe ein Zimmer reserviert – hier!", "Я услышала: Opa Hansen приезжает! И я забронировала номер — здесь!"),
   { t: "gap", rule: ["reisen/perfekt-1"], task: "Что сделала фрау Петерсен?", text: "Ich habe ein Zimmer ___.", options: ["reserviert", "reservieren", "gereserviert"], answer: "reserviert", ru: "Я забронировала номер." },
+  petersen("Und wem gehört der Karton, Hauke?", "А чья это коробка, Хауке?"),
+  {
+    t: "type",
+    rule: ["moin/wem-1"],
+    task: "Хауке прячет коробку за спиной. Ответьте за него: коробка господина Йенсена — и ни слова о табличке.",
+    answers: ["Er gehört Herrn Jensen.", "Der Karton gehört Herrn Jensen.", "Herrn Jensen."],
+    sample: "Er gehört Herrn Jensen.",
+    ru: "Она принадлежит господину Йенсену.",
+  },
   narr("Фрау Петерсен подслушала — und reserviert. Opa Hansen ist hier. Und das Schild? Auch hier, im Trockenraum. Opa darf es nicht sehen!"),
   {
     t: "go",
@@ -294,6 +313,7 @@ const hotel: SceneNode[] = [
             options: ["до 10:30", "до 11:30", "до 10:00"],
             answer: "до 10:30",
           },
+          rezeption("Da ist es über dreißig Grad warm – und bis halb elf geöffnet.", "Там больше тридцати градусов — и открыто до половины одиннадцатого."),
           narr("Im Trockenraum ist es warm. Грета ставит табличку к стене, рядом — {foehn}. Хауке включает его."),
           {
             t: "type",
@@ -418,6 +438,7 @@ const herbst: SceneNode[] = [
   mateo("Im Herbst? Und mein Kuchen? Er ist für heute!", "Осенью? А мой торт? Он на сегодня!"),
   { t: "gap", rule: ["reisen/monate-1"], task: "Что сказала фрау Петерсен?", text: "Die Party ist ___ Herbst.", options: ["im", "am", "um"], answer: "im", ru: "Праздник — осенью." },
   hauke("Herbst? Kein Problem – ich habe meine Winterjacke!", "Осень? Не проблема — у меня зимняя куртка!"),
+  petersen("Gut. Aber vor dem Start machen wir ein Foto – alle!", "Ладно. Но перед стартом фотографируемся — все!"),
   { t: "game", task: "Фрау Петерсен в панике перечисляет времена года. Повторите вслух.", hint: "Запись остаётся только на этой странице и никуда не отправляется.", c: { kind: "speak", lines: ["der Sommer", "der Herbst", "der Winter"] } },
   narr("Звонит телефон. Die Regatta ist am Telefon. Фрау Петерсен слушает — и краснеет."),
   { t: "say", who: "Regatta", voice: "Shelley", de: "Der Start ist heute um elf. Wie immer. Auch bei Regen.", ru: "Старт сегодня в одиннадцать. Как всегда. Даже под дождём." },
@@ -430,6 +451,8 @@ const herbst: SceneNode[] = [
     answer: "старт сегодня в одиннадцать, как всегда",
   },
   dana("Diagnose: falscher Alarm. Aber wir haben nur noch eine Stunde!", "Диагноз: ложная тревога. Но у нас всего час!"),
+  elif("Wir müssen schnell sein, denn der Start ist um elf! Ohne Schild? Unmöglich!", "Надо спешить: старт в одиннадцать! Без таблички? Невозможно!"),
+  { t: "gap", rule: ["moin/un-los-1"], task: "Что сказала Элиф о старте без таблички?", text: "Ein Start ohne Schild ist ___.", options: ["unmöglich", "nichtmöglich", "möglichlos"], answer: "unmöglich", ru: "Старт без таблички невозможен." },
   {
     t: "game",
     task: "Где ложная тревога? Проверьте, что известно.",
@@ -508,6 +531,7 @@ const start: SceneNode[] = [
   narr("Opa Hansen sieht das Schild. Er sagt nichts. Lange. Dann nimmt er seine Mütze ab."),
   opa("Mein Schild. Fünfzig Jahre … und es ist wie neu. Greta, das hast du gemacht?", "Моя табличка. Пятьдесят лет… а она как новая. Грета, это ты сделала?"),
   narr("Грета кивает — и впервые говорит вслух: «Ja, Opa.»"),
+  hauke("Opas Schild – und Gretas Farbe!", "Табличка деда — и краска Греты!"),
   {
     t: "hear",
     task: "Что спрашивает Opa Hansen?",
@@ -592,6 +616,9 @@ const party: SceneNode[] = [
     options: ["Элиф", "Хауке", "Матео"],
     answer: "Элиф",
   },
+  mateo("Opa Hansen, mögen Sie Kuchen?", "Opa Hansen, вы любите торт?"),
+  opa("Ich mag Kuchen! Und ich freue mich: Dieses Schild ist wieder da!", "Люблю! И я рад: эта табличка снова здесь!"),
+  { t: "gap", rule: ["moin/moegen-1"], task: "Что ответил Opa Hansen про торт?", text: "Opa ___ Kuchen.", options: ["mag", "magt", "mögt"], answer: "mag", ru: "Opa любит торт." },
   {
     t: "game",
     task: "Финальная доска улик: соедините улику и то, что она значила.",
@@ -605,6 +632,8 @@ const party: SceneNode[] = [
       ["Wir sind beim Arzt.", "Herr Jensen darf nicht sprechen."],
     ]),
   },
+  elif("Komm, Opa! Hier ist ein Stuhl für dich!", "Иди сюда, Opa! Вот стул для тебя!"),
+  { t: "gap", rule: ["moin/uns-1"], task: "Как Opa Hansen себя чувствует? Запишите.", text: "Opa freut ___.", options: ["sich", "mich", "ihn"], answer: "sich", ru: "Opa радуется." },
   {
     t: "when",
     if: [{ q: "gull", min: 6 }],

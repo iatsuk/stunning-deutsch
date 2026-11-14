@@ -226,6 +226,7 @@ const week: SceneNode[] = [
   },
   narr("Дана ведёт пальцем по странице: heute, Sonntag — почти у всех есть Zeit. Только Йенсен wie immer на воде."),
   dana("Heute haben alle Zeit. Wir machen das Picknick heute! Am Strand.", "Сегодня у всех есть время. Устроим пикник сегодня! На пляже."),
+  mateo("Wunderbar! Wir sehen uns um zwei am Strand!", "Чудесно! Увидимся в два на пляже!"),
   {
     t: "pick",
     task: "Когда пикник?",

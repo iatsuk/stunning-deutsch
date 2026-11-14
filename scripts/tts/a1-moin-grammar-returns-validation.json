@@ -1,0 +1,279 @@
+{
+  "date": "2026-11-15",
+  "scope": "Grammar returns in chapters 7–12 of the Moin scene prototype: denn, wenn, wem, dieser, man, unter, über, ab, für, nach, vor, es gibt, geschlossen, geöffnet, mögen, möchten, müssen, wollen, the comparative and the imperative",
+  "model": "k2-fsa/OmniVoice",
+  "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+  "candidatesPerPhrase": 3,
+  "asr": "openai/whisper-large-v3",
+  "notes": [
+    "Each phrase has three takes; the chosen take has the closest transcript, an end level below -32 dB and no fragment flagged by tails.py. No take was flagged; tails.py passes on all 33 imported files.",
+    "Whisper writes numbers as digits (fünfzig, zwanzig, dreißig, vierzehn, 650); these takes say the numbers in words as written.",
+    "One line was rewritten in an existing node (Elif on the student hostel, chapter 8); its new recording replaces the old one."
+  ],
+  "files": [
+    {
+      "file": "71dc1c694da8.m4a",
+      "text": "Wunderbar! Wir sehen uns um zwei am Strand!",
+      "voice": "Reed",
+      "seed": 20683878,
+      "heard": "Wunderbar! Wir sehen uns um zwei am Strand.",
+      "endDb": -55.1
+    },
+    {
+      "file": "d0067c4aa0ff.m4a",
+      "text": "Und es gibt hier kein Licht! Dana, mach dein Handy an!",
+      "voice": "Rocko",
+      "seed": 20923709,
+      "heard": "Und es gibt hier kein Licht. Dana, mach dein Handy an.",
+      "endDb": -64.4
+    },
+    {
+      "file": "d101e772ec2c.m4a",
+      "text": "Und möchten Sie einen Keks? Ich mag Kekse!",
+      "voice": "Sandy",
+      "seed": 20501964,
+      "heard": "Und möchten Sie einen Keks? Ich mag Kekse.",
+      "endDb": -41.6
+    },
+    {
+      "file": "b04e113591a8.m4a",
+      "text": "650 Euro warm? … Nein, danke. Ich bleibe im Wohnheim. Das ist kleiner, aber billiger als die Wohnung!",
+      "voice": "Flo",
+      "seed": 20929975,
+      "heard": "650 Euro warm? Nein, danke. Ich bleibe im Wohnheim. Das ist kleiner, aber billiger als die Wohnung.",
+      "endDb": -47.2
+    },
+    {
+      "file": "8844690fc745.m4a",
+      "text": "Heute geschlossen – das steht an der Tür. Wir müssen morgen wiederkommen.",
+      "voice": "Flo",
+      "seed": 21056421,
+      "heard": "Heute geschlossen. Das steht an der Tür. Wir müssen morgen wiederkommen.",
+      "endDb": -53.7
+    },
+    {
+      "file": "8007096aa194.m4a",
+      "text": "Sie ist hier, denn sie hat Angst. Und Frau Petersens Stuhl ist warm!",
+      "voice": "Flo",
+      "seed": 20386386,
+      "heard": "Sie ist hier, denn sie hat Angst. Und Frau Petersens Stuhl ist warm.",
+      "endDb": -45.0
+    },
+    {
+      "file": "f4a244570257.m4a",
+      "text": "Wir nehmen den Bus, denn heute fährt keine Fähre.",
+      "voice": "Anna",
+      "seed": 20709077,
+      "heard": "Wir nehmen den Bus, denn heute fährt keine Fähre.",
+      "endDb": -47.4
+    },
+    {
+      "file": "7d11dc1cb8c9.m4a",
+      "text": "Ist das dieser Bus? Linie elf? Kommt, schnell!",
+      "voice": "Rocko",
+      "seed": 21054808,
+      "heard": "Ist das dieser Bus? Linie 11 kommt schnell.",
+      "endDb": -61.9
+    },
+    {
+      "file": "8fd7678ae7bd.m4a",
+      "text": "Im Bus darf man nicht essen. Auch eine Möwe nicht!",
+      "voice": "Eddy",
+      "seed": 21158173,
+      "heard": "Im Bus darf man nicht essen, auch eine Möwe nicht.",
+      "endDb": -61.7
+    },
+    {
+      "file": "d2b5b0d5d7b0.m4a",
+      "text": "Sie hat die Fahrkarte! Und jetzt sitzt sie unter dem Sitz!",
+      "voice": "Rocko",
+      "seed": 20978960,
+      "heard": "Sie hat die Fahrkarte und jetzt sitzt sie unter dem Sitz.",
+      "endDb": -68.8
+    },
+    {
+      "file": "dc16bb0f7672.m4a",
+      "text": "Und wem gehört das Fahrrad? – Haukes Oma!",
+      "voice": "Flo",
+      "seed": 21005010,
+      "heard": "Und wem gehört das Fahrrad? Haukes Oma.",
+      "endDb": -54.5
+    },
+    {
+      "file": "535cc8c14b8e.m4a",
+      "text": "Gut! Wir treffen uns um Viertel vor zehn vor der Praxis.",
+      "voice": "Rocko",
+      "seed": 20484492,
+      "heard": "Gut, wir treffen uns um Viertel vor zehn vor der Praxis.",
+      "endDb": -58.0
+    },
+    {
+      "file": "436f8c5b0ae2.m4a",
+      "text": "Füllen Sie bitte dieses Formular aus. Und hier darf man nicht telefonieren!",
+      "voice": "Shelley",
+      "seed": 20468674,
+      "heard": "Füllen Sie bitte dieses Formular aus. Und hier darf man nicht telefonieren.",
+      "endDb": -65.4
+    },
+    {
+      "file": "fa3c785d5008.m4a",
+      "text": "Die zwei warten schon über zwanzig Minuten. Wen suchen Sie denn?",
+      "voice": "Shelley",
+      "seed": 20631959,
+      "heard": "Die zwei warten schon über 20 Minuten. Wen suchen sie denn?",
+      "endDb": -67.9
+    },
+    {
+      "file": "24395d89d4c0.m4a",
+      "text": "Er darf nicht sprechen, denn sein Hals ist krank.",
+      "voice": "Anna",
+      "seed": 20326654,
+      "heard": "Er darf nicht sprechen, denn sein Hals ist krank.",
+      "endDb": -51.8
+    },
+    {
+      "file": "e5a4b0fd54d4.m4a",
+      "text": "Die Tablette nimmt er nach dem Essen. Und für zwei Tage: kein Segeln!",
+      "voice": "Eddy",
+      "seed": 21050612,
+      "heard": "Die Tablette nimmt er nach dem Essen. Und für zwei Tage. Kein Segeln.",
+      "endDb": -58.8
+    },
+    {
+      "file": "f7d646ab24de.m4a",
+      "text": "Die Apotheke ist bis sieben geöffnet. Gut!",
+      "voice": "Flo",
+      "seed": 20952173,
+      "heard": "Die Apotheke ist bis sieben geöffnet. Gut.",
+      "endDb": -55.9
+    },
+    {
+      "file": "446b8a6dbabe.m4a",
+      "text": "Über fünfzig Jahre alt – und wie neu!",
+      "voice": "Rocko",
+      "seed": 20897502,
+      "heard": "Über 50 Jahre alt und wie neu.",
+      "endDb": -58.7
+    },
+    {
+      "file": "6359e953e53a.m4a",
+      "text": "Zehn Tage war das Schild unter dem Tuch. Und Greta ist jeden Tag mit dem Bus gekommen!",
+      "voice": "Flo",
+      "seed": 21097609,
+      "heard": "Zehn Tage war das Schild unter dem Tuch und Greta ist jeden Tag mit dem Bus gekommen.",
+      "endDb": -44.4
+    },
+    {
+      "file": "173f9819e87c.m4a",
+      "text": "Ihr Rücken tut weh? Kein Wunder: zehn Tage Arbeit!",
+      "voice": "Anna",
+      "seed": 20474268,
+      "heard": "Ihr Rücken tut weh? Kein Wunder. Zehn Tage Arbeit.",
+      "endDb": -53.9
+    },
+    {
+      "file": "9ff2a8cad37b.m4a",
+      "text": "Und wenn es regnet? Das Schild ist noch nicht trocken!",
+      "voice": "Flo",
+      "seed": 21043577,
+      "heard": "Und wenn es regnet? Das Schild ist noch nicht trocken.",
+      "endDb": -41.7
+    },
+    {
+      "file": "9f05da8d464e.m4a",
+      "text": "Und ich will den Kuchen backen. Für alle!",
+      "voice": "Reed",
+      "seed": 20605550,
+      "heard": "Und ich will den Kuchen backen. Für alle.",
+      "endDb": -60.1
+    },
+    {
+      "file": "31a85ac959ed.m4a",
+      "text": "Heute ist es kälter als im Herbst!",
+      "voice": "Rocko",
+      "seed": 20680892,
+      "heard": "Heute ist es kälter als im Herbst.",
+      "endDb": -55.5
+    },
+    {
+      "file": "4faf79067a09.m4a",
+      "text": "Und wenn es regnet, bleibt der Karton zu!",
+      "voice": "Rocko",
+      "seed": 20607640,
+      "heard": "Und wenn es regnet, bleibt der Karton zu.",
+      "endDb": -54.5
+    },
+    {
+      "file": "13ac4ded9732.m4a",
+      "text": "Ich bleibe für zwei Nächte. Ab Montag bin ich wieder in Hamburg.",
+      "voice": "Eddy",
+      "seed": 20980050,
+      "heard": "Ich bleibe für zwei Nächte. Ab Montag bin ich wieder in Hamburg.",
+      "endDb": -56.7
+    },
+    {
+      "file": "8552bbcfb85d.m4a",
+      "text": "Und wem gehört der Karton, Hauke?",
+      "voice": "Sandy",
+      "seed": 21041883,
+      "heard": "Und wem gehört der Karton Hauke?",
+      "endDb": -56.9
+    },
+    {
+      "file": "d82ef3512389.m4a",
+      "text": "Da ist es über dreißig Grad warm – und bis halb elf geöffnet.",
+      "voice": "Shelley",
+      "seed": 20553095,
+      "heard": "Da ist es über 30 Grad warm und bis halb elf geöffnet.",
+      "endDb": -52.1
+    },
+    {
+      "file": "339f015d3950.m4a",
+      "text": "Gut. Aber vor dem Start machen wir ein Foto – alle!",
+      "voice": "Sandy",
+      "seed": 20972319,
+      "heard": "Gut, aber vor dem Start machen wir ein Foto alle.",
+      "endDb": -44.8
+    },
+    {
+      "file": "777b6e20c671.m4a",
+      "text": "Wir müssen schnell sein, denn der Start ist um elf! Ohne Schild? Unmöglich!",
+      "voice": "Flo",
+      "seed": 20593408,
+      "heard": "Wir müssen schnell sein, denn der Start ist um elf. Ohne Schild? Unmöglich.",
+      "endDb": -55.1
+    },
+    {
+      "file": "125bf535a6c3.m4a",
+      "text": "Opas Schild – und Gretas Farbe!",
+      "voice": "Rocko",
+      "seed": 20518947,
+      "heard": "Opas Schild und Gretas Farbe",
+      "endDb": -61.9
+    },
+    {
+      "file": "aaeacdd90a93.m4a",
+      "text": "Opa Hansen, mögen Sie Kuchen?",
+      "voice": "Reed",
+      "seed": 20899345,
+      "heard": "Opa Hansen, mögen Sie Kuchen?",
+      "endDb": -39.3
+    },
+    {
+      "file": "484004f7b8c6.m4a",
+      "text": "Ich mag Kuchen! Und ich freue mich: Dieses Schild ist wieder da!",
+      "voice": "Eddy",
+      "seed": 20711398,
+      "heard": "Ich mag Kuchen und ich freue mich, dieses Schild ist wieder da.",
+      "endDb": -54.9
+    },
+    {
+      "file": "cca32c2abbc5.m4a",
+      "text": "Komm, Opa! Hier ist ein Stuhl für dich!",
+      "voice": "Flo",
+      "seed": 20994661,
+      "heard": "Komm Opa, hier ist ein Stuhl für dich.",
+      "endDb": -55.7
+    }
+  ]
+}

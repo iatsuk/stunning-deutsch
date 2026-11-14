@@ -163,6 +163,7 @@ const bahnhof: SceneNode[] = [
   { t: "say", who: "Lautsprecher", voice: "Eddy", de: "Die Fähre fährt wieder ab vierzehn Uhr. Nach dem Sturm!", ru: "Паром снова ходит с четырнадцати часов. После шторма!" },
   { t: "gap", rule: ["moin/zeit-1"], task: "Запишите, когда снова пойдёт паром.", text: "Die Fähre fährt wieder ___ vierzehn Uhr.", options: ["ab", "für", "über"], answer: "ab", ru: "Паром снова ходит с четырнадцати часов." },
   hauke("Vierzehn Uhr? Zu spät! Und wo kauft man hier Fahrkarten?", "В четырнадцать? Слишком поздно! А где тут покупают билеты?"),
+  dana("Wir nehmen den Bus, denn heute fährt keine Fähre.", "Едем на автобусе: паром сегодня не ходит."),
   elif("Linie elf, neun Uhr vierzig! Und die Fahrkarte? Da ist ein Automat!", "Одиннадцатый, 9:40! А билет? Вон автомат!", ["die Linie"]),
   narr("Die Fahrkarte nach Gaarden kostet 2,90 €. {automat} ist alt und gelb — и сдачу не даёт."),
   {
@@ -179,6 +180,7 @@ const bahnhof: SceneNode[] = [
     hint: "zwei Euro neunzig: 2 € + 50 ct + 20 ct + 20 ct.",
     c: { kind: "coins", coins: [200, 100, 50, 20, 10], answer: 290 },
   },
+  hauke("Ist das dieser Bus? Linie elf? Kommt, schnell!", "Это тот автобус? Одиннадцатый? Быстрее, пошли!"),
   fahrer("Linie elf nach Gaarden! Steigen Sie ein! Schnell, bitte!", "Одиннадцатый до Гаардена! Садитесь! Быстрее, пожалуйста!", ["einsteigen"]),
   { t: "gap", rule: ["stadt/imperativ-3"], task: "Что сказал водитель?", text: "___ Sie ein! Schnell, bitte!", options: ["Steigen", "Steigt", "Steige"], answer: "Steigen", ru: "Садитесь! Быстрее, пожалуйста!" },
   narr("С вами садится ещё один пассажир: HEL 7305. Die Möwe sitzt im Bus, am {fenster}."),
@@ -203,8 +205,18 @@ const bahnhof: SceneNode[] = [
     options: ["только до Гаардена и ничего не есть", "только с билетом", "только на заднем сиденье"],
     answer: "только до Гаардена и ничего не есть",
   },
+  fahrer("Im Bus darf man nicht essen. Auch eine Möwe nicht!", "В автобусе есть нельзя. Чайке тоже!"),
+  {
+    t: "type",
+    rule: ["moin/man-1"],
+    task: "Запишите правило водителя: «В автобусе есть нельзя».",
+    answers: ["Im Bus darf man nicht essen.", "Man darf im Bus nicht essen."],
+    ru: "В автобусе есть нельзя.",
+  },
   narr("Der Bus fährt. Die Möwe sieht die {fahrkarte} — и билет уже у неё в клюве. Контролёр — на следующей остановке!"),
   { t: "game", task: `Отнимите билет у чайки! ${RACE}`, hint: HINT_RACE, outcome: RACE_STAKES, c: race(["der Bus", "die Haltestelle", "die Linie", "einsteigen", "aussteigen", "umsteigen"]) },
+  hauke("Sie hat die Fahrkarte! Und jetzt sitzt sie unter dem Sitz!", "Билет у неё! А теперь она сидит под сиденьем!"),
+  { t: "gap", rule: ["moin/unter-1"], task: "Где теперь чайка?", text: "Die Möwe sitzt ___ dem Sitz.", options: ["unter", "auf", "in"], answer: "unter", ru: "Чайка сидит под сиденьем." },
   narr("Нильс переписал дорогу с сайта мастерской: «Steigen Sie an der Post aus!!! An der zweiten Ampel links!!! Dann geradeaus!!!»"),
   {
     t: "pick",
@@ -702,6 +714,14 @@ const hof: SceneNode[] = [
 const abend: SceneNode[] = [
   { t: "pic", src: "09-abend.jpg", alt: "Вечерний автобус обратно в Киль: Хауке держит мокрый бабушкин велосипед в проходе, Дана дремлет у окна, Элиф смеётся, чайка с кольцом спит на свободном сиденье" },
   narr("Abend. Mit dem Bus nach Hause: Dana, Elif, Hauke, das Fahrrad von Oma — und die Möwe. Sie fährt auch mit."),
+  elif("Und wem gehört das Fahrrad? – Haukes Oma!", "А чей это велосипед? — Бабушки Хауке!"),
+  {
+    t: "type",
+    rule: ["moin/wem-1"],
+    task: "Запишите вопрос Элиф в блокнот: «Чей это велосипед?» — дословно «Кому принадлежит велосипед?»",
+    answers: ["Wem gehört das Fahrrad?"],
+    ru: "Чей это велосипед?",
+  },
   fahrer("Sie schon wieder? Steigen Sie ein, Frau Möwe. Aber bitte mit Fahrkarte!", "Опять вы? Садитесь, госпожа чайка. Но, пожалуйста, с билетом!"),
   { t: "gap", rule: ["stadt/hause-1"], task: "Куда едет команда?", text: "Wir fahren nach ___.", options: ["Hause", "Haus", "Häuser"], answer: "Hause", ru: "Мы едем домой." },
   {
@@ -738,6 +758,7 @@ const abend: SceneNode[] = [
     options: ["завтра в десять пойти к врачу вместе", "позвонить Йенсену вечером", "ждать Грету у мастерской"],
     answer: "завтра в десять пойти к врачу вместе",
   },
+  hauke("Gut! Wir treffen uns um Viertel vor zehn vor der Praxis.", "Хорошо! Встречаемся без четверти десять у практики."),
   elif("Und das Schild ist ganz. Greta macht es neu!", "А табличка цела. Грета её обновляет!"),
   hauke("Nur eine Frage: Warum sagt Herr Jensen nichts?", "Только один вопрос: почему господин Йенсен молчит?"),
   {

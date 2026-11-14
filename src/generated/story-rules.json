@@ -4110,6 +4110,40 @@
    }
   ]
  },
+ "moin/es-gibt-1": {
+  "point": "*Die Hose gibt es in Rot.* — *es gibt* + винительный: «есть, имеется»",
+  "read": "*es gibt* значит «есть, бывает, имеется» и не зависит от того, о чём речь: *es gibt* стоит и с одним предметом, и с несколькими. То, что есть, стоит в винительном: *Es gibt einen Kiosk am Hafen.* Отрицание — *kein*: *Hier gibt es kein Licht.* В вопросе глагол первый: *Gibt es hier ein Café?*",
+  "table": {
+   "title": "es gibt",
+   "ru": "есть, имеется",
+   "head": [
+    "Deutsch",
+    "По-русски"
+   ],
+   "rows": [
+    [
+     "Es gib+t einen Kiosk am Hafen.",
+     "У гавани есть киоск."
+    ],
+    [
+     "Die Hose gib+t es in Rot.",
+     "Брюки бывают красные."
+    ],
+    [
+     "Hier gib+t es kein Licht.",
+     "Здесь нет света."
+    ],
+    [
+     "Gib+t es hier ein Café?",
+     "Здесь есть кафе?"
+    ]
+   ],
+   "ruCols": [
+    1
+   ],
+   "note": "*es gibt* + винительный: *einen Kiosk*; отрицание — *kein*."
+  }
+ },
  "wohnen/check-1": {
   "point": "*Das Bett steht im Schlafzimmer.* — комната всегда с *in*",
   "read": "*Das Bett steht im Schlafzimmer.* *das Schlafzimmer* — средний род, как *das Zimmer*, поэтому *in dem*, а вместе — *im*. Глагол — *steht*: кровать, как и шкаф, «стоит». Две частые ошибки: *in das Schlafzimmer* — артикль не изменился, и *auf dem Schlafzimmer* — в комнате по-немецки всегда *in*. *auf* оставьте для поверхностей: *auf dem Tisch*, *auf dem Balkon*.",
@@ -4523,6 +4557,40 @@
    "ruCols": [
     2
    ]
+  }
+ },
+ "moin/geoeffnet-1": {
+  "point": "*Der Kiosk ist geöffnet.* — *geöffnet* и *geschlossen* как прилагательные после *sein*",
+  "read": "На табличках и в объявлениях время работы пишут причастиями: *geöffnet* «открыто», *geschlossen* «закрыто». После *sein* они стоят как прилагательные: *Die Werkstatt ist geschlossen.* *Der Kiosk ist von neun bis sechs geöffnet.* В разговоре то же самое говорят короче: *auf* и *zu* — *Der Laden ist zu.*",
+  "table": {
+   "title": "geöffnet, geschlossen",
+   "ru": "открыто, закрыто",
+   "head": [
+    "Deutsch",
+    "По-русски"
+   ],
+   "rows": [
+    [
+     "Der Kiosk ist geöffnet.",
+     "Киоск открыт."
+    ],
+    [
+     "Die Werkstatt ist geschlossen.",
+     "Мастерская закрыта."
+    ],
+    [
+     "Heute geschlossen.",
+     "Сегодня закрыто."
+    ],
+    [
+     "Der Laden ist zu.",
+     "Лавка закрыта (разговорное)."
+    ]
+   ],
+   "ruCols": [
+    1
+   ],
+   "note": "*geöffnet — auf*, *geschlossen — zu*: на табличке и в разговоре."
   }
  },
  "wohnen/wo-3": {
@@ -6066,6 +6134,48 @@
     "audio": "audio/13deef876db7.m4a"
    }
   ]
+ },
+ "moin/als-1": {
+  "point": "*Das Wohnheim ist billiger als die Wohnung.* — сравнение: *-er als*",
+  "read": "Чтобы сравнить, к прилагательному прибавляют *-er*, а с чем сравниваем — после *als*: *billig → billiger als*, *klein → kleiner als*. Короткие слова часто получают умлаут: *groß → größer*, *alt → älter*, *kalt → kälter*. Неправильные надо запомнить: *gut → besser*, *viel → mehr*, *gern → lieber*. Сравнение с тем же самым — *so … wie*: *Das Wohnheim ist so klein wie ein Boot.*",
+  "table": {
+   "title": "-er als",
+   "ru": "сравнение",
+   "head": [
+    "Wort",
+    "Vergleich",
+    "Beispiel"
+   ],
+   "rows": [
+    [
+     "billig",
+     "billig+er als",
+     "Das Wohnheim ist billiger als die Wohnung."
+    ],
+    [
+     "groß",
+     "größ+er als",
+     "Der Keller ist größer als die Küche."
+    ],
+    [
+     "kalt",
+     "kält+er als",
+     "Heute ist es kälter als gestern."
+    ],
+    [
+     "gut",
+     "besser als",
+     "Tee ist besser als Kaffee."
+    ],
+    [
+     "gern",
+     "lieber als",
+     "Ich segle lieber als ich schwimme."
+    ]
+   ],
+   "ruCols": [],
+   "note": "*-er als*: *billiger als*; *gut — besser*, *gern — lieber*, *viel — mehr*."
+  }
  },
  "reisen/es-regnet-1": {
   "point": "*Heute regnet es.* *Gestern hat es geregnet.* — *es* не пропадает",

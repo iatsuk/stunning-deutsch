@@ -166,6 +166,7 @@ const praxis: SceneNode[] = [
     options: ["записана на 10:15, болит голова, вот карточка", "записи нет, но болит голова", "пришла за рецептом"],
     answer: "записана на 10:15, болит голова, вот карточка",
   },
+  moeller("Füllen Sie bitte dieses Formular aus. Und hier darf man nicht telefonieren!", "Заполните, пожалуйста, эту анкету. И здесь нельзя говорить по телефону!"),
   {
     t: "game",
     task: "Фрау Мёллер заводит карточку пациентки. Заполните её по разговору.",
@@ -242,6 +243,8 @@ const warten: SceneNode[] = [
   { t: "pic", src: "10-wartezimmer.jpg", alt: "Приёмная врача: Йенсен в шарфе молча пишет в маленьком блоке, рядом Грета в комбинезоне держится за поясницу; Дана спряталась за журналом, Элиф машет Грете" },
   narr("Im Wartezimmer: Herr Jensen. {schal}, eine Tasse Tee, {notizblock} — und kein Wort. Neben ihm: Greta. Она держится за спину."),
   elif("Herr Jensen! Und Greta! Hier sind sie!", "Господин Йенсен! И Грета! Вот они где!"),
+  moeller("Die zwei warten schon über zwanzig Minuten. Wen suchen Sie denn?", "Эти двое ждут уже больше двадцати минут. А вы кого ищете?"),
+  { t: "gap", rule: ["moin/zeit-1"], task: "Сколько уже ждут Йенсен и Грета?", text: "Sie warten schon ___ zwanzig Minuten.", options: ["über", "für", "ab"], answer: "über", ru: "Они ждут уже больше двадцати минут." },
   {
     t: "go",
     task: "С кем поговорить в приёмной?",
@@ -388,6 +391,7 @@ const sommerS: SceneNode[] = [
     options: ["до субботы Йенсену нельзя говорить", "Йенсен тяжело болен", "Йенсену нужно в больницу"],
     answer: "до субботы Йенсену нельзя говорить",
   },
+  dana("Er darf nicht sprechen, denn sein Hals ist krank.", "Ему нельзя говорить: у него больное горло."),
   sommer(SOMMER_TEE, "И пусть пьёт много чая и сидит дома."),
   {
     t: "gap",
@@ -460,6 +464,8 @@ const sommerS: SceneNode[] = [
       no("Никогда", "Можно — wenn es wehtut, если болит."),
     ],
   },
+  sommer("Die Tablette nimmt er nach dem Essen. Und für zwei Tage: kein Segeln!", "Таблетку он принимает после еды. И два дня — никаких парусов!"),
+  { t: "gap", rule: ["moin/zeit-1"], task: "Когда Йенсену принимать таблетку?", text: "Er nimmt die Tablette ___ dem Essen.", options: ["nach", "vor", "für"], answer: "nach", ru: "Он принимает таблетку после еды." },
   narr("Nils schreibt: «Frauke sagt: Herr Jensen kann nie wieder sprechen!!! Nie!!!» Der ganze Hafen weiß es."),
   {
     t: "game",
@@ -516,6 +522,7 @@ const apotheke: SceneNode[] = [
       { icon: "🏪", de: "die Apotheke", ru: "аптека", note: "Маленькая аптека в доме врачей. У кассы очередь." },
     ],
   },
+  elif("Die Apotheke ist bis sieben geöffnet. Gut!", "Аптека открыта до семи. Хорошо!"),
   frauke("Herr Jensen! Ich habe es versprochen: Ihre Versichertenkarte! Von Herrn Wulff!", "Господин Йенсен! Я обещала: ваша страховая карточка! От господина Вульфа!"),
   {
     t: "hear",
