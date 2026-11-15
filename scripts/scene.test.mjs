@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { phrases } from "../src/story/data.ts";
 import { compoundOf, decipher, gridSolutions, initialAnswer, isCorrect, mistake, normalizeSave, plannerFree, solution, storyLines, validateChallenge, validateStory } from "../src/story/logic.ts";
-import { answerSlots, arrange, flatNodes, flow, keyOf, lookOrder, nodeAt, outcomeOf, requiredKeys, sceneKeys, shownWords, spot, typedRight, worldAfter } from "../src/story/scene.ts";
+import { anweisung, answerSlots, arrange, flatNodes, flow, keyOf, lookOrder, nodeAt, outcomeOf, requiredKeys, sceneKeys, shownWords, spot, typedRight, worldAfter } from "../src/story/scene.ts";
 import { RACE_STAKES } from "../src/story/build.ts";
 import { MNEMONICS } from "../src/story/mnemonics.ts";
 import { applyEffects, holds, TRACKS } from "../src/story/world.ts";
@@ -11,6 +11,7 @@ import { sceneChapter1 } from "../src/story/scenes/01.ts";
 import { GERMAN_TARGET, sceneChapters } from "../src/story/scenes/index.ts";
 import { SCENE_RULES } from "../src/story/scenes/rules.ts";
 import { RETURNS, WARMUPS } from "../src/story/scenes/warmups.ts";
+import { found } from "./a1-index.mjs";
 
 const words = JSON.parse(readFileSync(new URL("../src/generated/a1-words.json", import.meta.url)));
 // Общие правила проверяются во всех главах сцен; частные случаи движка — на главе 1.
@@ -299,18 +300,37 @@ test("every new word has a translation and comes back in an action after it is h
     ...(WARMUPS[n] ?? []).flatMap((g) => g.words),
     ...(RETURNS[n] ?? []).flatMap((b) => [...(b.docks ?? []), ...(b.bingo ?? [])]),
   ];
+  // Действие вместе с инструкцией экзамена над ним: «Füllen Sie das Formular aus» возвращает ausfüllen.
+  const actionsOf = (c, n) => c.beats.flatMap((beat) => flatNodes(nodes(beat))).filter((x) => ACTIONS.includes(x.t)).map((x) => [x, n]);
+  const returns = (word, [n, ch]) => text(n).toLowerCase().includes(stem(word)) || found(word, `${text(n)}\n${anweisung(n, ch) ?? ""}`);
   sceneChapters.forEach((chapter, ci) => {
     const all = chapter.beats.flatMap((beat) => flatNodes(nodes(beat)));
     const ahead = new Set(sceneChapters.slice(ci + 1).flatMap((_, k) => planned(ci + 2 + k)));
+    const after = sceneChapters.slice(ci + 1).flatMap((c, k) => actionsOf(c, ci + 2 + k));
     for (const [i, node] of all.entries()) {
       if (node.t !== "say") continue;
       for (const word of node.learn ?? []) {
         assert.ok(words[word] || storyWords.has(word), `нет ни в словаре уроков, ни в выражениях истории: ${word}`);
-        const later = all.slice(i + 1).filter((n) => ACTIONS.includes(n.t));
-        assert.ok(ahead.has(word) || later.some((n) => text(n).toLowerCase().includes(stem(word))), `${chapter.id}: не возвращается: ${word}`);
+        const later = [...all.slice(i + 1).filter((n) => ACTIONS.includes(n.t)).map((n) => [n, ci + 1]), ...after];
+        assert.ok(ahead.has(word) || later.some((x) => returns(word, x)), `${chapter.id}: не возвращается: ${word}`);
       }
     }
   });
+});
+
+test("from chapter 2 tasks carry the German exam instruction", () => {
+  const hear = { t: "hear", task: "x", voice: "Eddy", de: "Hallo!", options: ["a"], answer: "a" };
+  assert.equal(anweisung(hear, 1), undefined, "в главе 1 инструкций нет");
+  assert.equal(anweisung(hear, 2), "Hören Sie und wählen Sie die richtige Antwort.");
+  sceneChapters.forEach((chapter, ci) => {
+    if (ci === 0) return;
+    const acts = chapter.beats.flatMap((b) => flatNodes(nodes(b))).filter((n) => ACTIONS.includes(n.t));
+    const with_ = acts.filter((n) => anweisung(n, ci + 1));
+    assert.ok(with_.length * 2 >= acts.length, `${chapter.id}: инструкция только у ${with_.length} из ${acts.length} действий`);
+  });
+  // Объявление на вокзале слушают как Durchsage, как в экзамене.
+  const announced = sceneChapters.flatMap((c) => c.beats.flatMap((b) => flatNodes(nodes(b)))).filter((n) => n.t === "hear" && n.an);
+  assert.ok(announced.length >= 3 && announced.every((n) => n.an.includes("Durchsage")));
 });
 
 test("branches are played in the player's order and the scene resumes where it stopped", () => {

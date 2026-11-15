@@ -65,12 +65,13 @@ for (const w of index.words) {
   const slots = Math.max(T.hits - w.hits, T.chapters - w.chapters.length, w.actions < T.actions || w.heard < T.heard ? 1 : 0);
   plans.push({ w, unit, met: metAt.get(unit), slots, heard: w.heard >= T.heard, chapters: new Set(w.chapters) });
 }
-// Сначала слова храповика (они уже закреплены и не должны выпасть), затем пробелы A1: слова,
-// которые игрок встречает раньше главы A2_FROM, — их закрепляет только A1, а поздние слова доводит
-// сезон A2. Внутри — те, кому до закрепления нужно меньше всего: так закрепится больше слов.
+// Сначала слова A1 — те, которые игрок встречает раньше главы A2_FROM: их закрепляет только A1, а
+// поздние слова доводит сезон A2. Внутри — слова поздних глав: им осталось меньше глав для
+// возвращений, а слово ранней главы найдёт место и раньше. Затем слова храповика (уже закреплённые
+// не должны выпасть) и те, кому до закрепления нужно меньше всего.
 const kept = new Set(JSON.parse(readFileSync(BASELINE, "utf8")).words);
 const late = (p) => p.met >= A2_FROM;
-plans.sort((a, b) => kept.has(b.w.key) - kept.has(a.w.key) || late(a) - late(b) || a.slots - b.slots || a.met - b.met || a.w.key.localeCompare(b.w.key, "de"));
+plans.sort((a, b) => late(a) - late(b) || b.met - a.met || kept.has(b.w.key) - kept.has(a.w.key) || a.slots - b.slots || a.w.key.localeCompare(b.w.key, "de"));
 
 // В главе: три игры раунда перед ней и четыре блока возвращений в сценах, в каждом причалы и лото.
 // Блоки 0 и 1 стоят в сценах 3 и 6, 2 и 3 — в сценах 2 и 5; заполняются по порядку, поэтому

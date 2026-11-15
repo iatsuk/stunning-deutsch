@@ -212,6 +212,7 @@ const praxis: SceneNode[] = [
       no("Йенсен позвал вас запиской", "Йенсен ещё не знает, что вы здесь."),
     ],
   },
+  moeller("Sie warten etwa zwanzig Minuten.", "Ждать примерно двадцать минут.", ["etwa"]),
   narr("На стене Wartezimmer — плакат: {zigarette}, перечёркнутая. Rauchen verboten!"),
   narr("Фрау Мёллер умеет только запрещать, а {erlauben} не любит."),
   {

@@ -70,6 +70,7 @@ const invite: SceneNode[] = [
   },
   narr("Mateo kommt — руки в муке до локтей. Его тоже зовут на Film."),
   mateo("Kino? Nein! Ich will nicht ins Kino. Ich will kochen!", "Кино? Нет! Я не хочу в кино. Я хочу готовить!", ["wollen"]),
+  hauke("Kieler Woche ist kein Urlaub – das ist Arbeit!", "Кильская неделя — не отпуск, это работа!", ["der Urlaub"]),
   {
     t: "type",
     rule: ["freizeit/modal-2"],
@@ -178,6 +179,7 @@ const week: SceneNode[] = [
     answer: "во вторник",
   },
   hauke("Und ich habe am Mittwoch Zeit!", "А у меня время в среду!", ["der Mittwoch"]),
+  dana("Und ich kann erst am Donnerstag.", "А я могу только в четверг.", ["der Donnerstag", "erst"]),
   {
     t: "game",
     rule: ["freizeit/verabreden-1", "moin/denn-1"],

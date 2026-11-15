@@ -61,7 +61,8 @@ type SceneStep =
   /** Пропуск в немецкой фразе. */
   | { t: "gap"; task: string; text: string; options: string[]; answer: string; ru?: string }
   /** Послушать реплику ещё раз и выбрать, что прозвучало или что она значит. */
-  | { t: "hear"; task: string; voice: string; de: string; options: string[]; answer: string }
+  /** an — своя инструкция экзамена вместо обычной: у объявлений — Hören Sie die Durchsage. */
+  | { t: "hear"; task: string; voice: string; de: string; options: string[]; answer: string; an?: string }
   /** Решение детектива по-русски. */
   | { t: "pick"; task: string; options: Pick[] }
   /** Осмотр места: нажимать на предметы; все отмеченные key нужно найти. */

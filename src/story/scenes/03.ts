@@ -484,6 +484,7 @@ const poster: SceneNode[] = [
       no("Дочь Элиф", "Дочь — die Tochter. А Лотта — подруга по клубу чаек."),
     ],
   },
+  elif("Lotte ist nicht meine Tochter, sondern meine Freundin!", "Лотта мне не дочь, а подруга!", ["sondern"]),
   narr("Лотта стесняется и молчит. Зато разворачивает {plakat} für die {schule}: «Meine Familie». Элиф читает вслух."),
   elif("Das ist meine Mutter. Sie ist im Club. Und das ist mein Hund Krümel.", "Это моя мама. Она в клубе. А это мой пёс Крюмель."),
   {

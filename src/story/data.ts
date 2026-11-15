@@ -1347,6 +1347,10 @@ export const phrases: Record<string, Phrase> = {
   erlauben: { ru: "разрешать", de: "erlauben", note: "Hier ist Rauchen nicht erlaubt. Наоборот — verbieten, verboten." },
   fehlen: { ru: "не хватать, отсутствовать", de: "fehlen", note: "Die Karte fehlt. — Карточки нет. У врача: Was fehlt Ihnen? — Что вас беспокоит?" },
   druecken: { ru: "нажимать", de: "drücken", note: "Drücken Sie hier! На двери: drücken — от себя, ziehen — на себя." },
+  // Слова пробника вне словаря экзамена (A1-PLAN.md, этап 6).
+  erst: { ru: "только (не раньше)", de: "erst", note: "Ich kann erst am Donnerstag. — Я могу только в четверг. Не путайте с erste — первый." },
+  etwa: { ru: "примерно", de: "etwa", note: "Etwa zwanzig Minuten. То же, что circa." },
+  sondern: { ru: "а (после отрицания)", de: "sondern", note: "Nicht A, sondern B: nicht meine Tochter, sondern meine Freundin." },
 };
 
 export const episodes: Episode[] = [

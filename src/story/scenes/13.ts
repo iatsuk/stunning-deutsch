@@ -146,6 +146,7 @@ const hoeren: SceneNode[] = [
   {
     t: "hear",
     task: "Что объявили? Как на экзамене: путь и опоздание.",
+    an: "Hören Sie die Durchsage. Wählen Sie die richtige Antwort.",
     voice: "Eddy",
     de: ANSAGE,
     options: ["путь 4, около 10 минут", "путь 10, около 4 минут", "путь 4, без опоздания"],

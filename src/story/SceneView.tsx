@@ -11,6 +11,7 @@ import {
   answerSlots,
   arrange,
   flow,
+  anweisung,
   isPassive,
   keyOf,
   lookOrder,
@@ -422,6 +423,11 @@ export function SceneView({
               {/* Новое правило открыто перед заданием; остальные лежат под ним свёрнутыми и
                   раскрываются после ошибки, не сдвигая задание. */}
               {firstNew && <RuleCard key={firstNew} id={firstNew} open />}
+              {anweisung(here.node, Number(seed.slice(0, 2))) && (
+                <p className="moin-anweisung" lang="de">
+                  {anweisung(here.node, Number(seed.slice(0, 2)))}
+                </p>
+              )}
               <Task
                 key={here.key}
                 node={here.node}

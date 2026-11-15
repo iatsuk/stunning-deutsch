@@ -4,7 +4,8 @@
 # Грамматика: Prüfungsziele, Testbeschreibung (VS_08_190422), с. 100–106; пункты уроков A1 добавлены.
 #
 # words — запись словаря: строка или { de, of — основная запись для производной, skip — причина
-# пропуска, forms — формы, которые правила не порождают }. groups — тематические группы словаря.
+# пропуска, forms — формы, которые правила не порождают, exact — считать только эти формы, без
+# окончаний }. groups — тематические группы словаря.
 # grammar — { id, group — раздел перечня, title, rules — фрагменты разбора, find — признаки в немецком тексте (регулярные
 # выражения JavaScript, границы слов добавляются сами; @plurals — множественное слов уроков) }. Граница стоит
 # по краям всего совпадения, поэтому соседний знак или слово пишите проверкой вперёд или назад:
@@ -697,6 +698,17 @@ words:
   - zurück
   - zusammen
   - zwischen
+
+# mock — слова авторского пробника 15-a1-mock.yaml, которых нет в словаре экзамена: инструкции заданий
+# и частые служебные слова его текстов (A1-PLAN.md, этап 6). Источник в индексе — «пробник».
+mock:
+  - wählen
+  - nennen
+  - reagieren
+  - formulieren
+  - { de: erst, exact: true }
+  - { de: etwa, exact: true }
+  - { de: sondern, exact: true }
 
 groups:
   Zahlen: ["null", eins, zwei, drei, vier, fünf, sechs, sieben, acht, neun, zehn, elf, zwölf, dreizehn, vierzehn, fünfzehn, sechzehn, siebzehn, achtzehn, neunzehn, zwanzig, dreißig, vierzig, fünfzig, sechzig, siebzig, achtzig, neunzig, hundert, tausend, die Million, die Milliarde]

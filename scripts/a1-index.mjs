@@ -6,7 +6,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { parse } from "yaml";
 import { sceneChapters } from "../src/story/scenes/index.ts";
-import { flatNodes } from "../src/story/scene.ts";
+import { anweisung, flatNodes } from "../src/story/scene.ts";
 import { episodes, phrases } from "../src/story/data.ts";
 import { sceneUnits as reviewUnits } from "../src/story/review.ts";
 import { WARMUPS } from "../src/story/scenes/warmups.ts";
@@ -33,7 +33,7 @@ const LESSONS = ["kennenlernen", "zahlen", "familie", "essen", "einkaufen", "tag
 
 // Служебные поля и русские поля в слова не идут; рассказ со смешанным текстом берём целиком —
 // кириллица отсеивается при разборе на слова.
-const SKIP = new Set(["id", "src", "rule", "voice", "kind", "t", "audio", "icon", "alt", "ru", "who", "learn", "seed", "outcome", "set", "if", "key", "places", "goal", "start", "heading", "colour", "pronoun", "answerRu", "hint", "task", "note", "prompt", "label"]);
+const SKIP = new Set(["an", "id", "src", "rule", "voice", "kind", "t", "audio", "icon", "alt", "ru", "who", "learn", "seed", "outcome", "set", "if", "key", "places", "goal", "start", "heading", "colour", "pronoun", "answerRu", "hint", "task", "note", "prompt", "label"]);
 const expand = (s) => s.replace(/\{([a-z0-9]+)\}/g, (_, k) => phrases[k]?.de ?? "");
 function strings(x, out = [], key = "") {
   if (SKIP.has(key)) return out;
@@ -74,7 +74,8 @@ function sceneUnits(warmups = true) {
         if (node.t === "pic" || node.t === "when") continue;
         // Игры возвращения раздаёт планировщик: без них он видит главы сами по себе.
         if (!warmups && node.t === "game" && node.back) continue;
-        const text = [...strings(node), ...lookNotes(node)].join("\n");
+        // Инструкция экзамена над заданием (src/story/scene.ts, anweisung) — тоже немецкий узла.
+        const text = [...strings(node), ...lookNotes(node), anweisung(node, n) ?? ""].join("\n");
         const toks = tokens(text);
         if (!toks.length && !node.rule) continue;
         units.push({
@@ -219,6 +220,8 @@ function matcher(entry) {
     const stem = key.slice(0, -1);
     return { forms: new Set(["", "e", "en", "er", "es", "em"].map((x) => stem + x)), seps: [], phrases: extra.map(tokens) };
   }
+  // Наречие или союз без окончаний: erst — не ersten Stock.
+  if (entry.exact) return { forms: new Set([key, ...extra]), seps: [], phrases: [] };
   const parts = tokens(key);
   if (parts.length === 1) {
     const { forms, seps, noun } = wordForms(parts[0], Boolean(article) || /^[A-ZÄÖÜ]/.test(entry.de));
@@ -307,13 +310,14 @@ function required(reference) {
       have.group ??= entry.group;
       return;
     }
-    byKey.set(key, { key, de: entry.de, pl: entry.pl, forms: entry.forms, of: entry.of, group: entry.group, sources: [source] });
+    byKey.set(key, { key, de: entry.de, pl: entry.pl, forms: entry.forms, of: entry.of, group: entry.group, exact: entry.exact, sources: [source] });
   };
   for (const w of reference.words) {
     const entry = typeof w === "string" ? { de: w } : w;
     if (!entry.skip) add(entry, "экзамен");
   }
   for (const [group, items] of Object.entries(reference.groups)) for (const de of items) add({ de: String(de), group }, "экзамен");
+  for (const w of reference.mock ?? []) add(typeof w === "string" ? { de: w } : w, "пробник");
   for (const w of lessonWords()) add(w, `урок ${w.lesson}`);
   return [...byKey.values()];
 }
@@ -450,7 +454,7 @@ function places(item, limit = 8) {
 }
 const numbers = (x) => `${x.hits} · ${x.chapters.length} · ${x.actions} · ${x.heard}`;
 /** Откуда слово: номера уроков и «экз.» для словаря экзамена. */
-const origin = (w) => [...w.sources.filter((s) => s.startsWith("урок")).map((s) => s.slice(5)), ...(w.sources.includes("экзамен") ? ["экз."] : [])].join(", ");
+const origin = (w) => [...w.sources.filter((s) => s.startsWith("урок")).map((s) => s.slice(5)), ...(w.sources.includes("экзамен") ? ["экз."] : []), ...(w.sources.includes("пробник") ? ["проб."] : [])].join(", ");
 const alphabetical = (a, b) => a.key.localeCompare(b.key, "de");
 const ANCHORS = { "нет": "слова-нет", "один раз": "слова-один-раз", "слабо": "слова-слабо", "закрепит A2": "слова-закрепит-a2", "закреплено": "слова-закреплено" };
 const GAPS = ["нет", "один раз", "слабо", "закрепит A2"];
@@ -468,7 +472,8 @@ export function renderReport(index) {
     `Слово закреплено: не меньше ${t.words.hits} встреч в новой версии Moin, не меньше чем в ${t.words.chapters} главах, из них ${t.words.actions} в`,
     `действии и ${t.words.heard} на слух. Правило — ${t.grammar.hits} встреч в ${t.grammar.chapters} главах, ${t.grammar.actions} в действии, ${t.grammar.heard} на слух. Числа в`,
     `таблицах: встреч · глав · действий · на слух. Раунд перед главой — часть главы. Столбец «Откуда»: номера уроков A1`,
-    "и «экз.» для словаря экзамена. Внутри разделов слова сгруппированы по частям речи и идут по алфавиту.",
+    "«экз.» для словаря экзамена и «проб.» для слов пробника вне словаря. Внутри разделов слова сгруппированы по частям речи",
+    "и идут по алфавиту.",
     "",
     `Разделы: [Сводка](#сводка) · [Грамматика](#грамматика) · ${[...GAPS, "закреплено"].map((s) => `[Слова: ${s}](#${ANCHORS[s]})`).join(" · ")}`,
     "",

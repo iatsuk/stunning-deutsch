@@ -192,6 +192,7 @@ const weg: SceneNode[] = [
   {
     t: "hear",
     task: "На сколько опаздывает автобус?",
+    an: "Hören Sie die Durchsage. Wählen Sie die richtige Antwort.",
     voice: "Shelley",
     de: "Achtung: Der Bus hat zehn Minuten Verspätung. Er kommt um acht Uhr zwanzig.",
     options: ["на десять минут", "на двадцать минут", "на час"],

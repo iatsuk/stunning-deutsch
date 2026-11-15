@@ -195,6 +195,46 @@ export function flow(nodes: SceneNode[], entries: string[], open?: string, world
   }
 }
 
+// Инструкции экзамена по-немецки (A1-PLAN.md, этап 6): с главы 2 над русским заданием стоит строка,
+// какой её пишет telc A1. К экзамену игрок уже понимает «Wählen Sie die richtige Antwort» и
+// «Ist die Aussage richtig oder falsch?». Индекс считает инструкцию частью узла.
+const BY_NODE: Partial<Record<SceneNode["t"], string>> = {
+  hear: "Hören Sie und wählen Sie die richtige Antwort.",
+  reply: "Reagieren Sie.",
+  pick: "Wählen Sie die richtige Antwort.",
+  gap: "Wählen Sie das richtige Wort.",
+  type: "Schreiben Sie auf Deutsch.",
+};
+const BY_GAME: Record<string, string> = {
+  verdict: "Ist die Aussage richtig oder falsch?",
+  bingo: "Hören Sie und kreuzen Sie an.",
+  docks: "Wählen Sie den Artikel: der, die oder das.",
+  gull: "Wählen Sie schnell das richtige Wort.",
+  scene: "Hören Sie und wählen Sie das richtige Bild.",
+  sounds: "Hören Sie: Welches Wort ist richtig?",
+  letters: "Buchstabieren Sie das Wort.",
+  order: "Bilden Sie einen Satz.",
+  lock: "Bilden Sie einen Satz.",
+  match: "Was passt zusammen?",
+  sort: "Was passt zusammen?",
+  memory: "Was passt zusammen?",
+  odd: "Welches Wort passt nicht?",
+  spot: "Lesen Sie den Text.",
+  ads: "Lesen Sie die Anzeigen.",
+  gaps: "Ergänzen Sie den Text.",
+  write: "Füllen Sie das Formular aus.",
+  letter: "Schreiben Sie eine Nachricht. Vergessen Sie die Anrede und den Gruß nicht.",
+  oral: "Stellen Sie sich vor und nennen Sie Ihren Namen. Stellen Sie Fragen und formulieren Sie Bitten.",
+  chat: "Reagieren Sie.",
+  speak: "Hören Sie und sprechen Sie nach.",
+};
+/** Немецкая инструкция задания или ничего: в главе 1 игрок ещё не читает по-немецки. */
+export function anweisung(node: SceneNode, chapter: number): string | undefined {
+  if (!(chapter >= 2)) return undefined;
+  if (node.t === "hear" && node.an) return node.an;
+  return node.t === "game" ? BY_GAME[node.c.kind] : BY_NODE[node.t];
+}
+
 /** Слова, которые узлы уже показали игроку: новые слова реплик, осмотр и предметы. */
 export const shownWords = (nodes: SceneNode[]): string[] =>
   nodes.flatMap((n) =>

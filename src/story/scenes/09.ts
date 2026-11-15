@@ -142,6 +142,7 @@ const bahnhof: SceneNode[] = [
   {
     t: "hear",
     task: "Что объявили на вокзале?",
+    an: "Hören Sie die Durchsage. Wählen Sie die richtige Antwort.",
     voice: "Eddy",
     de: ANSAGE,
     options: ["паром сегодня не ходит — садитесь на автобус", "автобусы сегодня не ходят", "паром опаздывает на час"],
@@ -168,6 +169,7 @@ const bahnhof: SceneNode[] = [
     hint: "Gaarden ищите в середине строки. Fähre сегодня не ходит.",
     c: spot("Abfahrt", ["Linie 7|Holtenau|9:35", "Linie 11|Gaarden|9:40", "Fähre|Gaarden|heute nicht"], ["Linie 11", "9:40"]),
   },
+  elif("Ein Flugzeug! Aber von Kiel kann man nicht abfliegen – nur von Hamburg.", "Самолёт! Но из Киля не улетишь — только из Гамбурга.", ["das Flugzeug", "abfliegen"]),
   narr("На табло два столбца: {abfahrt} и {ankunft}. Поездам нужен {bahnsteig}, автобусам — просто улица."),
   { t: "say", who: "Lautsprecher", voice: "Eddy", de: "Die Fähre fährt wieder ab vierzehn Uhr. Nach dem Sturm!", ru: "Паром снова ходит с четырнадцати часов. После шторма!" },
   { t: "gap", rule: ["moin/zeit-1"], task: "Запишите, когда снова пойдёт паром.", text: "Die Fähre fährt wieder ___ vierzehn Uhr.", options: ["ab", "für", "über"], answer: "ab", ru: "Паром снова ходит с четырнадцати часов." },
@@ -196,6 +198,7 @@ const bahnhof: SceneNode[] = [
   narr("С вами садится ещё один пассажир: HEL 7305. Die Möwe sitzt im Bus, am {fenster}."),
   fahrer("Eine Möwe? Im Bus? Steigen Sie bitte aus, Frau Möwe!", "Чайка? В автобусе? Выходите, пожалуйста, госпожа чайка!", ["aussteigen"]),
   elif("Sie hat Angst vor dem Sturm! Sie fährt mit uns!", "Она боится шторма! Она едет с нами!"),
+  hauke("Angst? Sie kann doch fliegen!", "Боится? Она же умеет летать!", ["fliegen"]),
   {
     t: "reply",
     rule: ["freizeit/modal-1"],

@@ -2219,6 +2219,13 @@
   font-size: 15px;
   font-weight: 600;
 }
+/* Инструкция экзамена по-немецки над русским заданием: тише задания, но читается. */
+.moin-anweisung {
+  margin: 0 0 4px;
+  font-size: 13px;
+  color: var(--muted);
+  font-style: italic;
+}
 .moin-play-ru {
   color: var(--muted);
   font-size: 13px;

@@ -1,0 +1,86 @@
+{
+ "date": "2026-11-15",
+ "scope": "Words of the A1 mock that the Moin scene version lacked: three story expressions (erst, etwa, sondern) and six voice lines in chapters 3, 7, 9 and 10 that introduce them together with der Donnerstag, der Urlaub, fliegen, abfliegen and das Flugzeug",
+ "model": "k2-fsa/OmniVoice",
+ "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+ "candidatesPerPhrase": 3,
+ "asr": "openai/whisper-large-v3",
+ "notes": [
+  "Each phrase has three takes; the chosen take has the closest transcript, an end level below -32 dB and no fragment flagged by tails.py. tails.py passes on all 9 imported files.",
+  "Whisper writes «zwanzig» as 20. One take of «etwa» was heard as «Vielen Dank»; the chosen take is heard as «Etwa»."
+ ],
+ "files": [
+  {
+   "file": "de8ec84f41f4.m4a",
+   "text": "erst",
+   "voice": "Anna",
+   "seed": 20628675,
+   "heard": "Erst",
+   "endDb": -55.6
+  },
+  {
+   "file": "dfc80bd1f09d.m4a",
+   "text": "etwa",
+   "voice": "Anna",
+   "seed": 21022269,
+   "heard": "Etwa.",
+   "endDb": -66.2
+  },
+  {
+   "file": "45404a894c67.m4a",
+   "text": "sondern",
+   "voice": "Anna",
+   "seed": 21004406,
+   "heard": "sondern",
+   "endDb": -69.0
+  },
+  {
+   "file": "73f0359234a9.m4a",
+   "text": "Lotte ist nicht meine Tochter, sondern meine Freundin!",
+   "voice": "Flo",
+   "seed": 20380489,
+   "heard": "Lotte ist nicht meine Tochter, sondern meine Freundin.",
+   "endDb": -57.4
+  },
+  {
+   "file": "d4e928b0647b.m4a",
+   "text": "Kieler Woche ist kein Urlaub – das ist Arbeit!",
+   "voice": "Rocko",
+   "seed": 20386122,
+   "heard": "Kieler Woche ist kein Urlaub, das ist Arbeit.",
+   "endDb": -66.8
+  },
+  {
+   "file": "1906848bb994.m4a",
+   "text": "Und ich kann erst am Donnerstag.",
+   "voice": "Anna",
+   "seed": 20524562,
+   "heard": "Und ich kann erst am Donnerstag.",
+   "endDb": -52.9
+  },
+  {
+   "file": "64c5b1348f23.m4a",
+   "text": "Ein Flugzeug! Aber von Kiel kann man nicht abfliegen – nur von Hamburg.",
+   "voice": "Flo",
+   "seed": 20607683,
+   "heard": "Ein Flugzeug. Aber von Kiel kann man nicht abfliegen, nur von Hamburg.",
+   "endDb": -57.5
+  },
+  {
+   "file": "34b4d020b5f6.m4a",
+   "text": "Angst? Sie kann doch fliegen!",
+   "voice": "Rocko",
+   "seed": 20839156,
+   "heard": "Angst? Sie kann doch fliegen.",
+   "endDb": -63.5
+  },
+  {
+   "file": "763d8180f234.m4a",
+   "text": "Sie warten etwa zwanzig Minuten.",
+   "voice": "Shelley",
+   "seed": 21055124,
+   "heard": "Sie warten etwa 20 Minuten.",
+   "endDb": -66.8
+  }
+ ]
+}
