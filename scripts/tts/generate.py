@@ -23,7 +23,7 @@ if config['model'] != 'k2-fsa/OmniVoice':
 items = json.loads(Path(args.manifest).read_text())[args.shard::args.shards]
 for item in items:
     if item.get('model') != config['model'] or item.get('revision') != config['revision']:
-        p.error('Manifest must target the current OmniVoice revision. Export with --missing; legacy course audio is preserved.')
+        p.error('Manifest must target the current OmniVoice revision. Export it with --missing.')
     if Path(item['file']).name != item['file'] or not re.fullmatch(r'[a-f0-9]{12}\.m4a', item['file']):
         p.error('Invalid output filename in manifest.')
 if not items:

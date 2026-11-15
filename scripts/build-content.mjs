@@ -38,13 +38,7 @@ let missingAudio = 0;
 
 /** Логические голоса из YAML; модель и образцы зафиксированы в конфигурации. */
 const audioConfig = JSON.parse(readFileSync(path.join(root, "scripts/tts/config.json"), "utf8"));
-const legacyAudioConfig = JSON.parse(readFileSync(path.join(root, "scripts/tts/legacy-qwen-config.json"), "utf8"));
-const LEGACY_AUDIO_VERSION = createHash("sha256").update(JSON.stringify(legacyAudioConfig)).digest("hex");
 const AUDIO_VERSION = createHash("sha256").update(JSON.stringify(audioConfig)).digest("hex");
-// Старые записи, которые нужно перезаписать OmniVoice: например, Qwen обрывал конечные шипящие.
-const revoice = new Set(
-  JSON.parse(readFileSync(path.join(root, "scripts/tts/revoice.json"), "utf8")).map((r) => `${r.voice}|${r.text}`),
-);
 // Медленная речь для диктовки: скорость входит в адрес только этих записей, остальные не меняются.
 const slow = new Map(
   JSON.parse(readFileSync(path.join(root, "scripts/tts/slow.json"), "utf8")).map((r) => [`${r.voice}|${r.text}`, r.speed]),
@@ -212,14 +206,6 @@ if (!ONLY) {
       if (beat.challenge.kind === "play")
         for (const ref of sceneRules(beat.challenge.nodes)) addRule(beat.id, ref, i + 1);
   });
-}
-
-if (!ONLY) {
-  // Игра — курс A1, и её записи только OmniVoice (A1-PLAN.md). Старую запись урока, которую игра
-  // начала использовать, перезаписывают через scripts/tts/revoice.json.
-  const used = JSON.stringify([storyAudio, a1Words, storyRules]).match(/audio\/[0-9a-f]{12}\.m4a/g) ?? [];
-  for (const line of new Set(used.map((src) => audio.get(src.slice("audio/".length))).filter((e) => e.model !== audioConfig.model).map((e) => `${e.voice}: ${e.text}`)))
-    fail("story", `запись «${line}» не OmniVoice: добавьте фразу в scripts/tts/revoice.json`);
 }
 
 // Скрытый уровень (status: soon) без озвучки: его записи были Qwen, а уровень переозвучат, когда
@@ -1073,22 +1059,13 @@ function speak(text, voice = DEFAULT_VOICE) {
     .update(`${AUDIO_VERSION}|${voice}|${clean}${speed ? `|speed:${speed}` : ""}`)
     .digest("hex")
     .slice(0, 12);
-  const currentFile = `${hash}.m4a`;
-  const legacyHash = createHash("sha1").update(`${LEGACY_AUDIO_VERSION}|${voice}|${clean}`).digest("hex").slice(0, 12);
-  const legacyFile = `${legacyHash}.m4a`;
-  // Existing course audio stays intact; a missing or new phrase is always OmniVoice.
-  const useLegacy =
-    !revoice.has(`${voice}|${clean}`) &&
-    !existsSync(path.join(audioDir, currentFile)) &&
-    existsSync(path.join(audioDir, legacyFile));
-  const file = useLegacy ? legacyFile : currentFile;
-  const selectedConfig = useLegacy ? legacyAudioConfig : audioConfig;
+  const file = `${hash}.m4a`;
   audio.set(file, {
     text: clean,
     voice,
-    model: selectedConfig.model,
-    revision: selectedConfig.revision,
-    ...(speed && !useLegacy ? { speed } : {}),
+    model: audioConfig.model,
+    revision: audioConfig.revision,
+    ...(speed ? { speed } : {}),
   });
   if (DRAFT && !existsSync(path.join(audioDir, file))) {
     missingAudio += 1;

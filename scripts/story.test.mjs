@@ -1,6 +1,8 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { tmpdir } from "node:os";
+import path from "node:path";
 import { spawnSync } from "node:child_process";
 import { plain, preis } from "../src/lib/german.ts";
 import { phrases } from "../src/story/data.ts";
@@ -468,19 +470,16 @@ test("the active generator refuses Qwen before loading models", () => {
   assert.equal(config.model, "k2-fsa/OmniVoice");
   assert.equal(config.encoding.trimEnd, false);
   assert.equal(config.encoding.paddingEndMs, 300);
+  // Конфигурация другой модели: генератор должен отказаться до загрузки чего-либо.
+  const dir = mkdtempSync(path.join(tmpdir(), "tts-"));
+  const other = path.join(dir, "config.json");
+  writeFileSync(other, JSON.stringify({ ...config, model: "Qwen/Qwen3-TTS-12Hz-1.7B-Base" }));
   const rejected = spawnSync(
     "python3",
-    [
-      "scripts/tts/generate.py",
-      "--manifest",
-      "unused.json",
-      "--out",
-      "unused",
-      "--config",
-      "scripts/tts/legacy-qwen-config.json",
-    ],
+    ["scripts/tts/generate.py", "--manifest", "unused.json", "--out", "unused", "--config", other],
     { encoding: "utf8", cwd: new URL("../", import.meta.url) },
   );
+  rmSync(dir, { recursive: true });
   assert.notEqual(rejected.status, 0);
   assert.match(rejected.stderr, /Only OmniVoice/);
 });
