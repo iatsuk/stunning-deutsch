@@ -10,12 +10,6 @@ export type ChatTurn = {
   answer: string;
 };
 export type Move = "links" | "geradeaus" | "rechts";
-export type VoiceLine = {
-  who: string;
-  voice: string;
-  text: string;
-  ru: string;
-};
 /** Фраза на дисках кодового замка: один диск — одна часть предложения. */
 export type LockRound = { ru: string; reels: string[][]; answer: string[] };
 /** Шаг устной практики: сказать вслух по карточке или в ответ партнёру, затем сверить с образцом. */
@@ -43,8 +37,8 @@ export type Branch = { label: string; icon: string; nodes: SceneNode[]; optional
 export type SceneNode = SceneStep & {
   set?: Effects;
   /**
-   * Правила к действию — фрагменты разбора уроков «тема/фрагмент», как у шагов основной игры
-   * (`src/story/rules.ts`): карточка стоит рядом с заданием, новая открыта, знакомая — свёрнута.
+   * Правила к действию — фрагменты разбора уроков «тема/фрагмент» или правила сцен «moin/фрагмент».
+   * Карточка стоит рядом с заданием, новая открыта, знакомая — свёрнута.
    */
   rule?: string[];
 };
@@ -98,7 +92,6 @@ type SceneStep =
 export type Outcome = { clean?: Effects; sloppy?: Effects };
 export type Challenge =
   | { kind: "play"; nodes: SceneNode[] }
-  | { kind: "choice"; options: Option[]; answer: string }
   | { kind: "order"; tiles: string[]; answer: string[]; also?: string[][] }
   | {
       kind: "match";
@@ -134,15 +127,6 @@ export type Challenge =
       step: number;
       answer: string;
       traps: Record<string, string>;
-    }
-  | {
-      kind: "route";
-      width: number;
-      height: number;
-      start: { x: number; y: number; heading: number };
-      places: Record<string, string>;
-      goal: string;
-      moves: Move[];
     }
   | { kind: "coins"; coins: number[]; answer: number }
   | { kind: "bingo"; words: string[] }
@@ -288,19 +272,12 @@ export type Beat = {
   id: string;
   title: string;
   story: string[];
-  source?: { title: string; lines: string[] };
-  audio?: { file: string; text: string; ru: string };
-  /** Реплики голосом: текст открывается по кнопке. */
-  voices?: VoiceLine[];
   /** Интерлюдия: сцена глазами другого героя («Тем временем · глазами чайки»). */
   pov?: string;
-  /** Выражения, которые возвращаются в конце главы после ошибки на этом шаге. */
-  practice?: string[];
   prompt: string;
   hint: string;
   challenge: Challenge;
   success: string;
-  clue?: { title: string; text: string };
 };
 export type Episode = {
   id: string;
@@ -310,30 +287,9 @@ export type Episode = {
   place: string;
   topic: string;
   grammar: string;
-  /** Выражения главы для записи на слух в конце главы. */
-  review?: string[];
   beats: Beat[];
 };
 export type Answer = string | string[] | Record<string, string | number>;
 /** Когда слово встречали в последний раз: шаг истории и календарный день. */
 export type Mark = { step: number; day: number };
 export type WordCard = Mark & { box: number };
-export type StorySave = {
-  version: 2;
-  /** Открытый шаг. */
-  cursor: string;
-  /** Пройденные шаги. Отметка по id: новый шаг в пройденной главе остаётся пустой ячейкой. */
-  done: string[];
-  /** Отложенные шаги: следующий за ними открыт, сами они ждут, как пустые ячейки. */
-  skipped: string[];
-  drafts: Record<string, Answer>;
-  support: boolean;
-  /** Отвечать письменно на шагах, где нужно говорить вслух. */
-  quiet: boolean;
-  /** Сколько раз ошибались в выражении; запись на слух убирает его из списка. */
-  weak: Record<string, number>;
-  /** Память слов словаря: когда какое слово вернуть. */
-  cards: Record<string, WordCard>;
-  /** Когда закончился последний раунд повторения. */
-  last: Mark;
-};

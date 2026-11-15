@@ -1,5 +1,4 @@
 import type { ReactNode } from "react";
-import { shuffle } from "../lib/shuffle";
 import {
   Bingo,
   Calendar,
@@ -21,7 +20,6 @@ import {
   Speak,
   Spot,
   Verdict,
-  Walk,
   Write,
   type GameProps,
 } from "./games";
@@ -29,52 +27,6 @@ import { Ads, Algo, Cipher, Compound, Contra, Grid, Lift, Planner, Portrait, Sou
 import { SceneView } from "./SceneView";
 import type { Answer, Challenge } from "./types";
 import type { World } from "./world";
-
-// Отрисовка любого действия по его виду. Нужна и шагу истории, и сцене, куда игра встроена.
-
-export const GAME_NAMES: Record<Challenge["kind"], string> = {
-  play: "Сцена",
-  choice: "Вывод",
-  order: "Сборка фразы",
-  match: "Пары",
-  quantity: "Заказ",
-  code: "Набор номера",
-  write: "Запись",
-  bingo: "Лото",
-  scene: "Найди на картинке",
-  odd: "Лишнее слово",
-  letters: "Буквы",
-  speak: "Вслух",
-  docks: "Три причала",
-  gull: "Наперегонки с чайкой",
-  lock: "Кодовый замок",
-  letter: "Письмо по образцу",
-  oral: "Вслух, как на экзамене",
-  chat: "Разговор",
-  verdict: "Штамп",
-  gaps: "Записка с пропусками",
-  sort: "Раскладка",
-  spot: "Улика в тексте",
-  memory: "Карточки",
-  clock: "Часы",
-  route: "Прогулка",
-  coins: "Касса",
-  calendar: "Календарь",
-  sounds: "Похожие звуки",
-  compound: "Склейка",
-  lift: "Лифт",
-  grid: "Кто где",
-  contra: "Найди противоречие",
-  planner: "Ежедневник",
-  ads: "Объявления",
-  cipher: "Шифр чайки",
-  tree: "Семейное дерево",
-  portrait: "Фоторобот",
-  spy: "Я шпион",
-  twenty: "20 вопросов",
-  weather: "Карта погоды",
-  algo: "Алгоритм",
-};
 /** Эти игры завершаются сами: кнопка проверки там не нужна. */
 export const AUTOMATIC: Challenge["kind"][] = [
   "play",
@@ -101,7 +53,6 @@ export const AUTOMATIC: Challenge["kind"][] = [
 export function ChallengeView({
   c,
   game,
-  beatId,
   rich,
   world,
   known,
@@ -109,7 +60,6 @@ export function ChallengeView({
 }: {
   c: Challenge;
   game: GameProps;
-  beatId: string;
   rich: (s: string, known?: Set<string>) => ReactNode;
   /** Состояние мира до сцены: часы и отношения из прошлых сцен. */
   world?: World;
@@ -145,7 +95,6 @@ export function ChallengeView({
       {c.kind === "spot" && <Spot c={c} {...game} />}
       {c.kind === "memory" && <Memory c={c} {...game} />}
       {c.kind === "clock" && <ClockGame c={c} {...game} />}
-      {c.kind === "route" && <Walk c={c} {...game} />}
       {c.kind === "coins" && <Coins c={c} {...game} />}
       {c.kind === "calendar" && <Calendar c={c} {...game} />}
       {c.kind === "sounds" && <Sounds c={c} {...game} />}
@@ -162,26 +111,6 @@ export function ChallengeView({
       {c.kind === "twenty" && <Twenty c={c} {...game} />}
       {c.kind === "weather" && <Weather c={c} {...game} />}
       {c.kind === "algo" && <Algo c={c} {...game} />}
-      {c.kind === "choice" && (
-        <fieldset className="moin-choices" disabled={disabled}>
-          <legend className="moin-sr">Варианты ответа</legend>
-          {shuffle(c.options, beatId).map((o, i) => (
-            <label key={o.id} className={shown === o.id ? "is-selected" : ""}>
-              <input
-                type="radio"
-                name={beatId}
-                value={o.id}
-                checked={shown === o.id}
-                onChange={() => change(o.id)}
-              />
-              <span className="moin-option-n">
-                {String.fromCharCode(65 + i)}
-              </span>
-              <span>{o.text}</span>
-            </label>
-          ))}
-        </fieldset>
-      )}
       {c.kind === "order" && (
         <div className="moin-order">
           <div

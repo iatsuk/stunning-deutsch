@@ -1033,7 +1033,7 @@ function Embedded({
           {sloppy && <>Две ошибки и больше: {effectText(sloppy)}.</>}
         </p>
       )}
-      <ChallengeView c={c} game={game} beatId={seed} rich={rich} />
+      <ChallengeView c={c} game={game} rich={rich} />
       {/* Одна кнопка: проверяет ответ и при верном сразу ведёт дальше, при ошибке остаётся. */}
       {!won && !AUTOMATIC.includes(c.kind) && (
         <button

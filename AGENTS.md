@@ -20,7 +20,7 @@
 
 ## Общий браузер: сохранения автора
 
-Встроенный браузер общий с автором: в его хранилище лежат настоящие сохранения (`sd-moin-story-v1`, `sd-moin-neu-v1`, `sd-progress-v1`, `sd-assessment-v1:*` и настройки `sd-moin-*`). Тесты, которые меняют хранилище, начинайте с копии всех ключей `sd-*` и заканчивайте восстановлением ровно этого набора; тестовые сохранения поверх и `removeItem` без копии недопустимы. 1–3 ноября 2026 года тесты так стёрли прогресс основной игры.
+Встроенный браузер общий с автором: в его хранилище лежат настоящие сохранения (`sd-moin-story-v1`, `sd-moin-neu-v1`, `sd-progress-v1`, `sd-assessment-v1:*` и настройки `sd-moin-*`). Ключ `sd-moin-story-v1` — сохранение удалённой классической игры: код его не читает, но и он входит в копию. Тесты, которые меняют хранилище, начинайте с копии всех ключей `sd-*` и заканчивайте восстановлением ровно этого набора; тестовые сохранения поверх и `removeItem` без копии недопустимы. 1–3 ноября 2026 года тесты так стёрли прогресс основной игры.
 
 ## Секреты и инфраструктура
 
@@ -32,8 +32,8 @@
 |---|---|
 | Уроки `content/a1/`, `content/a2/`, `content/b1/`, `content/levels.yaml`; страницы `src/pages/Topic.tsx`, `src/pages/Level.tsx`; игры тем `src/adventure/`, сцену `src/stage/`, тренажёр `src/trainer/`, дело `src/case/`; документы `CONTENT.md`, `METHOD.md`, `WORLD.md`, `GAMEPLAY.md`, `A2-PLAN.md`, `A2-PROGRESS.md`, `B1-PLAN.md`, `B1-PROGRESS.md` | `content/AGENTS.md` |
 | Входные работы, проверки, пробники: `content/assessments/`, `src/assessment/`, `src/pages/Assessment.tsx` | `content/AGENTS.md` и `content/assessments/AGENTS.md` |
-| Озвучку: `scripts/tts/`, `public/audio/`, `public/story-audio/`, экспорт манифеста в `scripts/build-content.mjs` | `scripts/tts/AGENTS.md` |
-| Игру «Дело о пропавшем Moin»: `src/story/` целиком — главы, прототип сцен `src/story/scenes/` и его движок (`src/story/scene.ts`, `src/story/SceneView.tsx`); `scripts/story.test.mjs`, `scripts/scene.test.mjs`, `scripts/memory.test.mjs`, `scripts/story-oracle.mjs`; картинки `art/refs/`, `public/story-img/`; документы `A1-STORY.md`, `A1-PLOT.md`, `A1-STORYCRAFT.md`, `A1-ART.md` | `src/story/AGENTS.md` |
+| Озвучку: `scripts/tts/`, `public/audio/`, экспорт манифеста в `scripts/build-content.mjs` | `scripts/tts/AGENTS.md` |
+| Игру «Дело о пропавшем Moin»: `src/story/` целиком — курс A1 в сценах `src/story/scenes/` и его движок (`src/story/scene.ts`, `src/story/SceneView.tsx`); `scripts/story.test.mjs`, `scripts/scene.test.mjs`, `scripts/memory.test.mjs`, `scripts/story-oracle.mjs`; картинки `art/refs/`, `public/story-img/`; документы `A1-STORY.md`, `A1-PLOT.md`, `A1-STORYCRAFT.md`, `A1-ART.md` | `src/story/AGENTS.md` |
 | Полноту курса A1: план `A1-PLAN.md`, индекс покрытия `A1-INDEX.md` и его генератор `scripts/a1-index.mjs`, эталон `content/reference/start-deutsch-1.yaml`, раунды перед главой `src/story/scenes/warmups.ts`, игры возвращения `src/story/scenes/back.ts` и их планировщик `scripts/a1-returns.mjs` | `src/story/AGENTS.md` |
 | **Сквозное:** новая или изменённая немецкая фраза где угодно — реплика, слово, образец, задание контроля, выражение или реплика игры, узел сцены | `scripts/tts/AGENTS.md` |
 | **Сквозное:** новое существительное — в уроке, контроле или выражении игры | `CONTENT.md`, раздел «Слова — `words`»: `pl` и озвучка множественного |

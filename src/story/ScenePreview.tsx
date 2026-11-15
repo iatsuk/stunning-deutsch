@@ -412,7 +412,6 @@ export function ScenePreview() {
               <ChallengeView
                 key={beat.id}
                 c={beat.challenge}
-                beatId={beat.id}
                 rich={rich}
                 world={before}
                 known={words}

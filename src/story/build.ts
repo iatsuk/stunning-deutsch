@@ -1,13 +1,7 @@
-import type { Beat, Challenge, ChatTurn, OralRound, Outcome, VoiceLine } from "./types.ts";
+import type { Challenge, ChatTurn, OralRound, Outcome } from "./types.ts";
 
-// Сборка шагов истории. Главы нового сюжета (A1-PLOT.md) лежат в chapters/ и пишутся целиком,
-// по порядку шагов; эти помощники общие для них и для словесных шагов extra.ts.
+// Сборка заданий и реплик для сцен и повторения.
 
-export const choice = (answer: string, options: [string, string, string][]): Challenge => ({
-  kind: "choice",
-  answer,
-  options: options.map(([id, text, why]) => ({ id, text, why })),
-});
 export const order = (answer: string[], tiles: string[], also?: string[][]): Challenge => ({
   kind: "order",
   answer,
@@ -26,7 +20,6 @@ export const turn = (say: string, ru: string, answer: string, options: [string, 
   options: options.map(([id, text, why]) => ({ id, text, why })),
 });
 export const chat = (who: string, voice: string, turns: ChatTurn[]): Challenge => ({ kind: "chat", who, voice, turns });
-export const line = (who: string, voice: string, text: string, ru: string): VoiceLine => ({ who, voice, text, ru });
 
 /** Пары: левая колонка и правая по порядку соответствуют друг другу, при показе перемешиваются. */
 export const pairs = (rows: [string, string][]): Challenge => ({
@@ -103,33 +96,11 @@ export const gaps = (text: string, bank: string[], answer: string[]): Challenge 
   bank,
   answer,
 });
-
-/** Шаг словесной игры с одной строкой рассказа. */
-export const step = (
-  id: string,
-  title: string,
-  story: string,
-  prompt: string,
-  hint: string,
-  success: string,
-  challenge: Challenge,
-): Beat => ({ id, title, story: [story], prompt, hint, success, challenge });
-
-export const DOCK = "Слово без артикля. К какому причалу оно подходит: der, die или das?";
 export const RACE = "Прочитайте перевод и нажмите немецкое слово, пока чайка не долетела.";
-export const LOCK = "Поверните диски, чтобы получилась фраза, и откройте замок.";
-export const LETTER = "Напишите письмо по образцу. Пункты подсказывают, что сказать; меняются только данные.";
-export const ORAL = "Сначала скажите вслух сами, потом сверьтесь с образцом.";
 export const ASK = "Задайте партнёру вопрос по карточке.";
 export const ANSWER = "Партнёр спрашивает вас. Ответьте вслух.";
 export const REQUEST = "Попросите о том, что на картинке.";
-export const REACT = "Партнёр обращается к вам. Отреагируйте вслух.";
 export const HEAR = "Нажмите кнопку, послушайте слово и закройте его на карточке.";
-export const PICTURE = "Послушайте слово и нажмите на подходящую картинку.";
-export const ODD = "Одно слово в группе лишнее. Найдите его.";
-export const SPELL = "Соберите слово по буквам.";
-export const SAY = "Послушайте и повторите вслух. Можно записать себя и сравнить.";
-export const WRITE = "Напишите по-немецки. У существительных нужен артикль.";
 export const HINT_DOCK = "Артикль запоминают вместе со словом. После ошибки слово вернётся в конце очереди.";
 /** Гонка, в которой чайка унесла два слова и больше, прибавляет ей наглости: часы двигает игра. */
 export const RACE_STAKES: Outcome = { sloppy: { gull: 1 } };
@@ -142,4 +113,3 @@ export const HINT_PICTURE = "Неверное нажатие подскажет,
 export const HINT_ODD = "Ищите общую тему трёх слов. Перевод открывается после нажатия.";
 export const HINT_SPELL = "Лишние буквы тоже лежат в наборе. Кнопка рядом с переводом озвучивает слово.";
 export const HINT_SAY = "Запись остаётся только на этой странице и никуда не отправляется.";
-export const HINT_WRITE = "Существительные пишутся с большой буквы, глаголы — с маленькой.";

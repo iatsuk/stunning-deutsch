@@ -1,15 +1,5 @@
 [
  {
-  "voice": "Anna",
-  "text": "Meine Telefonnummer ist: null, eins, sieben, sechs. Zwei, drei, vier, fünf.",
-  "speed": 0.7
- },
- {
-  "voice": "Sandy",
-  "text": "Null, eins, sieben, sechs. Zwei, drei. Vier, fünf. Acht, eins.",
-  "speed": 0.6
- },
- {
   "voice": "Flo",
   "text": "Null, eins, sieben, zwei. Acht, drei. Fünf, neun. Vier, sechs.",
   "speed": 0.6

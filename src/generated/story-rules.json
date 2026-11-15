@@ -1,40 +1,57 @@
 {
- "kennenlernen/wortstellung-1": {
-  "point": "Спрягаемый глагол — всегда вторая позиция",
-  "read": "Главное правило немецкого предложения: спрягаемый глагол стоит на второй позиции. Позицию занимает не одно слово, а целая группа: *in Kiel* — одна позиция. На схеме четыре поля: позиция 1, глагол, середина и конец. Конец пока пуст, он понадобится позже.",
-  "rows": [
-   {
-    "slots": [
-     [
-      {
-       "key": "ich",
-       "text": "Ich"
-      }
-     ],
-     [
-      {
-       "key": "wohn",
-       "text": "wohn+e"
-      }
-     ],
-     [
-      {
-       "key": "in",
-       "text": "in"
-      },
-      {
-       "key": "kiel",
-       "text": "Kiel"
-      }
-     ],
-     []
+ "kennenlernen/endungen-1": {
+  "point": "Единственное число: ich *-e*, du *-st*, er/sie/es *-t*",
+  "read": "Немецкий глагол меняет окончание по лицам, как русский. Берём инфинитив *wohnen*, отрезаем *-en* — остаётся основа *wohn-*. Дальше добавляем окончание: *ich wohn+e*, *du wohn+st*, *er wohn+t*. В единственном числе всего три окончания: *-e*, *-st*, *-t*.",
+  "table": {
+   "title": "Präsens: regelmäßige Verben",
+   "ru": "Настоящее время, правильные глаголы",
+   "head": [
+    "Person",
+    "wohnen",
+    "kommen",
+    "heißen"
+   ],
+   "rows": [
+    [
+     "ich",
+     "wohn+e",
+     "komm+e",
+     "heiß+e"
     ],
-    "punct": ".",
-    "plain": "Ich wohne in Kiel.",
-    "ru": "Я живу в Киле.",
-    "audio": "audio/a09eaf8bc832.m4a"
-   }
-  ]
+    [
+     "du",
+     "wohn+st",
+     "komm+st",
+     "heiß+t"
+    ],
+    [
+     "er / sie / es",
+     "wohn+t",
+     "komm+t",
+     "heiß+t"
+    ],
+    [
+     "wir",
+     "wohn+en",
+     "komm+en",
+     "heiß+en"
+    ],
+    [
+     "ihr",
+     "wohn+t",
+     "komm+t",
+     "heiß+t"
+    ],
+    [
+     "sie / Sie",
+     "wohn+en",
+     "komm+en",
+     "heiß+en"
+    ]
+   ],
+   "ruCols": [],
+   "note": "Основа — инфинитив без -en. К ней добавляется окончание лица."
+  }
  },
  "kennenlernen/wortstellung-3": {
   "point": "W-вопрос: *Wo wohnst du?* Вопрос да/нет: *Wohnst du …?*",
@@ -99,1722 +116,6 @@
    }
   ]
  },
- "kennenlernen/endungen-1": {
-  "point": "Единственное число: ich *-e*, du *-st*, er/sie/es *-t*",
-  "read": "Немецкий глагол меняет окончание по лицам, как русский. Берём инфинитив *wohnen*, отрезаем *-en* — остаётся основа *wohn-*. Дальше добавляем окончание: *ich wohn+e*, *du wohn+st*, *er wohn+t*. В единственном числе всего три окончания: *-e*, *-st*, *-t*.",
-  "table": {
-   "title": "Präsens: regelmäßige Verben",
-   "ru": "Настоящее время, правильные глаголы",
-   "head": [
-    "Person",
-    "wohnen",
-    "kommen",
-    "heißen"
-   ],
-   "rows": [
-    [
-     "ich",
-     "wohn+e",
-     "komm+e",
-     "heiß+e"
-    ],
-    [
-     "du",
-     "wohn+st",
-     "komm+st",
-     "heiß+t"
-    ],
-    [
-     "er / sie / es",
-     "wohn+t",
-     "komm+t",
-     "heiß+t"
-    ],
-    [
-     "wir",
-     "wohn+en",
-     "komm+en",
-     "heiß+en"
-    ],
-    [
-     "ihr",
-     "wohn+t",
-     "komm+t",
-     "heiß+t"
-    ],
-    [
-     "sie / Sie",
-     "wohn+en",
-     "komm+en",
-     "heiß+en"
-    ]
-   ],
-   "ruCols": [],
-   "note": "Основа — инфинитив без -en. К ней добавляется окончание лица."
-  }
- },
- "kennenlernen/endungen-3": {
-  "point": "*ich bin, du bist, er ist, wir sind, ihr seid, sie sind*",
-  "read": "*sein* — «быть» — живёт по своим правилам, его формы надо выучить: *ich bin*, *du bist*, *er ist*, *wir sind*, *ihr seid*, *sie sind*. В отличие от русского, связку «быть» в настоящем времени не пропускают: «я Дана» — *Ich bin Dana*.",
-  "table": {
-   "title": "sein",
-   "ru": "быть",
-   "head": [
-    "Person",
-    "sein",
-    "Beispiel"
-   ],
-   "rows": [
-    [
-     "ich",
-     "bin",
-     "Ich bin Dana."
-    ],
-    [
-     "du",
-     "bist",
-     "Bist du Mateo?"
-    ],
-    [
-     "er / sie / es",
-     "ist",
-     "Das ist Frau Petersen."
-    ],
-    [
-     "wir",
-     "sind",
-     "Wir sind im Kurs."
-    ],
-    [
-     "ihr",
-     "seid",
-     "Seid ihr aus Argentinien?"
-    ],
-    [
-     "sie / Sie",
-     "sind",
-     "Sind Sie Frau Yıldız?"
-    ]
-   ],
-   "ruCols": [],
-   "note": "Неправильный глагол — формы надо просто запомнить."
-  }
- },
- "zahlen/check-3": {
-  "point": "*Hast du Zeit?* — *Ja, ich habe Zeit.*",
-  "read": "*Hast du Zeit?* Это вопрос да/нет, поэтому глагол — на первом месте, а *du* — сразу за ним. Форма *hast* — без *b*, артикль перед *Zeit* не нужен. Матео ответит *Ja, ich habe Zeit* или коротко *Ja, klar!* Так же спрашивают о чём угодно: *Hast du Fragen?*, *Hast du WhatsApp?*",
-  "rows": [
-   {
-    "slots": [
-     [],
-     [
-      {
-       "key": "ha",
-       "text": "Ha+st"
-      }
-     ],
-     [
-      {
-       "key": "du",
-       "text": "du"
-      },
-      {
-       "key": "zeit",
-       "text": "Zeit"
-      }
-     ],
-     []
-    ],
-    "punct": "?",
-    "plain": "Hast du Zeit?",
-    "ru": "У тебя есть время?",
-    "audio": "audio/2500a95e9211.m4a"
-   },
-   {
-    "slots": [
-     [
-      {
-       "key": "ich",
-       "text": "Ich"
-      }
-     ],
-     [
-      {
-       "key": "hab",
-       "text": "hab+e"
-      }
-     ],
-     [
-      {
-       "key": "zeit",
-       "text": "Zeit"
-      }
-     ],
-     []
-    ],
-    "punct": ".",
-    "plain": "Ich habe Zeit.",
-    "ru": "Да, у меня есть время.",
-    "audio": "audio/5b4db2b2ac37.m4a"
-   }
-  ]
- },
- "zahlen/haben-1": {
-  "point": "*ich habe*, но *du hast*, *er hat* — без *b*",
-  "read": "*haben* — «иметь» — второй после *sein* глагол, без которого не обходится ни один разговор. Он почти правильный, но во втором и третьем лице теряет *b*: *ich habe*, но *du hast* и *er hat*. Не *du habst* и не *er habt*. Окончания при этом обычные: *-e*, *-st*, *-t* — те же, что у *wohnen*.",
-  "table": {
-   "title": "haben",
-   "ru": "иметь",
-   "head": [
-    "Person",
-    "haben",
-    "Beispiel"
-   ],
-   "rows": [
-    [
-     "ich",
-     "hab+e",
-     "Ich habe Kuchen."
-    ],
-    [
-     "du",
-     "ha+st",
-     "Hast du Zeit?"
-    ],
-    [
-     "er / sie / es",
-     "ha+t",
-     "Mateo hat Geburtstag."
-    ],
-    [
-     "wir",
-     "hab+en",
-     "Wir haben Pause."
-    ],
-    [
-     "ihr",
-     "hab+t",
-     "Habt ihr Zeit?"
-    ],
-    [
-     "sie / Sie",
-     "hab+en",
-     "Haben Sie Fragen?"
-    ]
-   ],
-   "ruCols": [],
-   "note": "В *du hast* и *er hat* буква *b* выпадает. Остальные формы — как у правильного глагола."
-  }
- },
- "familie/wessen-1": {
-  "point": "Корень — по владельцу (*sein* / *ihr*), окончание — по слову после него",
-  "read": "У каждого личного местоимения есть своё притяжательное слово: *ich* — *mein*, *du* — *dein*. В третьем лице всё решает владелец, как в русском «его» и «её»: Арман и *sein Sohn*, Лусия и *ihr Mann*. С глаголом *sein* — «быть» — это слово просто совпадает. А в отличие от русского, у «его» и «её» есть окончание — по слову после них: *seine Frau*, *ihre Tochter*.",
-  "table": {
-   "title": "Possessivartikel",
-   "ru": "Чей? — притяжательные слова",
-   "head": [
-    "Person",
-    "der · das",
-    "die · Plural",
-    "По-русски"
-   ],
-   "rows": [
-    [
-     "ich",
-     "mein",
-     "mein+e",
-     "мой, моя, мои"
-    ],
-    [
-     "du",
-     "dein",
-     "dein+e",
-     "твой"
-    ],
-    [
-     "er / es",
-     "sein",
-     "sein+e",
-     "его"
-    ],
-    [
-     "sie",
-     "ihr",
-     "ihr+e",
-     "её"
-    ],
-    [
-     "wir",
-     "unser",
-     "unser+e",
-     "наш"
-    ],
-    [
-     "ihr",
-     "euer",
-     "eur+e",
-     "ваш — друзьям"
-    ],
-    [
-     "sie",
-     "ihr",
-     "ihr+e",
-     "их"
-    ],
-    [
-     "Sie",
-     "Ihr",
-     "Ihr+e",
-     "Ваш — вежливо"
-    ]
-   ],
-   "ruCols": [
-    3
-   ],
-   "note": "Корень — по владельцу, окончание — по слову после него: *sein Sohn*, *seine Tochter*."
-  },
-  "focus": [
-   2,
-   3
-  ]
- },
- "familie/kein-2": {
-  "point": "*kein* / *keine* — «нет» перед словом: *Ich habe keine Kinder.*",
-  "read": "Отрицание существительного — *kein*: *Ich habe keine Schwester*, *Mateo hat keine Kinder*. Не путайте его с *nein*: *nein* — ответ на вопрос, а *kein* стоит прямо перед словом, на месте артикля. Окончания — как у *mein*, включая множественное: *keine Kinder*. Осторожно с мужским родом после *haben*: «у меня есть брат» — *Ich habe einen Bruder*. Почему *einen*, узнаем в следующей теме.",
-  "table": {
-   "title": "ein, kein, mein",
-   "ru": "Артикли и отрицание",
-   "head": [
-    "Артикль",
-    "der Bruder",
-    "die Schwester",
-    "das Kind",
-    "die Kinder"
-   ],
-   "rows": [
-    [
-     "определённый",
-     "der",
-     "die",
-     "das",
-     "die"
-    ],
-    [
-     "неопределённый",
-     "ein",
-     "ein+e",
-     "ein",
-     "–"
-    ],
-    [
-     "отрицание",
-     "kein",
-     "kein+e",
-     "kein",
-     "kein+e"
-    ],
-    [
-     "притяжательный",
-     "mein",
-     "mein+e",
-     "mein",
-     "mein+e"
-    ]
-   ],
-   "ruCols": [
-    0
-   ],
-   "note": "*kein* и *mein* изменяются как *ein*, но у них есть множественное число: *keine Kinder*, *meine Kinder*."
-  },
-  "focus": [
-   2,
-   3
-  ]
- },
- "essen/akkusativ-3": {
-  "point": "Меняется только мужской род: *den*, *einen*, *keinen*",
-  "read": "Хорошая новость: винительный падеж меняет только мужской род. *der* → *den*, *ein* → *einen*, *kein* → *keinen* — у всех трёх появляется *-en*. Женский, средний род и множественное число выглядят так же, как в именительном: *Ich nehme die Suppe*, *Ich möchte ein Ei*. Так что вопрос «какое окончание?» сводится к вопросу «какого рода слово?» — ещё одна причина учить слова с артиклем.",
-  "table": {
-   "title": "Nominativ und Akkusativ",
-   "ru": "Именительный и винительный падеж",
-   "head": [
-    "Род",
-    "Nominativ",
-    "Akkusativ"
-   ],
-   "rows": [
-    [
-     "мужской",
-     "d+er / ein / kein Kaffee",
-     "d+en / ein+en / kein+en Kaffee"
-    ],
-    [
-     "женский",
-     "die / eine / keine Suppe",
-     "die / eine / keine Suppe"
-    ],
-    [
-     "средний",
-     "das / ein / kein Ei",
-     "das / ein / kein Ei"
-    ],
-    [
-     "мн. ч.",
-     "die / – / keine Eier",
-     "die / – / keine Eier"
-    ]
-   ],
-   "ruCols": [
-    0
-   ],
-   "note": "Меняется только мужской род: *der* → *den*, *ein* → *einen*, *kein* → *keinen*."
-  },
-  "focus": [
-   0
-  ]
- },
- "essen/negation-2": {
-  "point": "*ein* или нет артикля → *kein*; всё остальное → *nicht*",
-  "read": "Как выбрать? Мысленно уберите отрицание. Если перед существительным стоит *ein* или артикля нет совсем — нужен *kein*: *Ich esse Fleisch* → *Ich esse kein Fleisch*. Во всех остальных случаях — *nicht*: с глаголом, с *gern*, с прилагательным и с существительным, у которого есть *der*, *die* или *das*: *Ich esse den Kuchen nicht* — «этот пирог я не ем».",
-  "table": {
-   "title": "nicht oder kein?",
-   "ru": "Отрицание",
-   "head": [
-    "Что отрицаем",
-    "Negation",
-    "Beispiel"
-   ],
-   "rows": [
-    [
-     "существительное с неопределённым артиклем",
-     "kein",
-     "Ich möchte kein+en Kaffee."
-    ],
-    [
-     "существительное без артикля",
-     "kein",
-     "Ich esse kein Fleisch."
-    ],
-    [
-     "глагол или наречие",
-     "nicht",
-     "Ich koche nicht gern."
-    ],
-    [
-     "прилагательное",
-     "nicht",
-     "Die Suppe ist nicht warm."
-    ],
-    [
-     "существительное с определённым артиклем",
-     "nicht",
-     "Ich esse den Kuchen nicht."
-    ]
-   ],
-   "ruCols": [
-    0
-   ],
-   "note": "*kein* склоняется как *ein*: *keinen Kaffee*, *keine Suppe*, *kein Fleisch*."
-  }
- },
- "einkaufen/preise-1": {
-  "point": "*2,50 €* — *zwei Euro fünfzig*; *0,99 €* — *neunundneunzig Cent*",
-  "read": "Цены пишут через запятую — *2,50 €*, — а читают так: сначала евро, потом центы, причём слово *Cent* обычно проглатывают: *zwei Euro fünfzig*. Если евро нет, говорят *neunundneunzig Cent*. И помните из второй темы: единицы идут перед десятками — *neunundzwanzig*, «девять-и-двадцать». С ценами это главная ловушка на слух: *29,90* легко принять за 92.",
-  "table": {
-   "title": "Preise",
-   "ru": "Цены",
-   "head": [
-    "Preis",
-    "So sagt man"
-   ],
-   "rows": [
-    [
-     "0,99 €",
-     "neunundneunzig Cent"
-    ],
-    [
-     "1,50 €",
-     "ein Euro fünfzig"
-    ],
-    [
-     "2,50 €",
-     "zwei Euro fünfzig"
-    ],
-    [
-     "6,80 €",
-     "sechs Euro achtzig"
-    ],
-    [
-     "29,90 €",
-     "neunundzwanzig Euro neunzig"
-    ],
-    [
-     "120,00 €",
-     "hundertzwanzig Euro"
-    ]
-   ],
-   "ruCols": [],
-   "note": "Слово *Cent* обычно опускают: *zwei Euro fünfzig*. После числа *Euro* не получает *-s*."
-  }
- },
- "einkaufen/pronomen-3": {
-  "point": "*die Jacke* → *sie*, *das Hemd* → *es*, *die Schuhe* → *sie*",
-  "read": "Женский, средний род и множественное число не меняются: *die Jacke* → *sie*, *das T-Shirt* → *es*, *die Schuhe* → *sie*. Заменяйте по немецкому роду, а не по русскому: *das Hemd* — «рубашка», но местоимение *es*: *Ich nehme es*. А *sie* бывает и «она», и «они» — различить помогает глагол: *sie ist*, но *sie sind*.",
-  "table": {
-   "title": "Akkusativ: ihn, sie, es",
-   "ru": "Местоимения в винительном падеже",
-   "head": [
-    "Wort",
-    "Nominativ",
-    "Akkusativ",
-    "Beispiel"
-   ],
-   "rows": [
-    [
-     "der Pullover",
-     "er",
-     "*ihn*",
-     "Ich finde *ihn* zu groß."
-    ],
-    [
-     "die Jacke",
-     "sie",
-     "sie",
-     "Ich finde sie schön."
-    ],
-    [
-     "das T-Shirt",
-     "es",
-     "es",
-     "Ich nehme es."
-    ],
-    [
-     "die Schuhe",
-     "sie",
-     "sie",
-     "Ich kaufe sie."
-    ]
-   ],
-   "ruCols": [],
-   "note": "Меняется только мужской род: *er* → *ihn*, как *der* → *den*."
-  },
-  "focus": [
-   1,
-   2,
-   3
-  ]
- },
- "einkaufen/adjektiv-1": {
-  "point": "*Der Pullover / Die Jacke ist zu groß.* — прилагательное не меняется; *zu* — «слишком»",
-  "read": "После *sein* прилагательное никогда не меняется: свитер, куртка, рубашка и ботинки — у всех *groß*. В русском «велик, велика, велики» подстраиваются под слово, в немецком — нет. *zu* значит «слишком», и это всегда минус: *zu groß* — «велик», *zu teuer* — «дорого для меня». Если хотите похвалить, говорите *sehr*: *Die Jacke ist sehr schön*.",
-  "rows": [
-   {
-    "slots": [
-     [
-      {
-       "key": "der",
-       "text": "Der"
-      },
-      {
-       "key": "pullover",
-       "text": "Pullover"
-      }
-     ],
-     [
-      {
-       "key": "ist",
-       "text": "ist"
-      }
-     ],
-     [
-      {
-       "key": "zu",
-       "text": "zu"
-      },
-      {
-       "key": "groß",
-       "text": "groß"
-      }
-     ],
-     []
-    ],
-    "punct": ".",
-    "plain": "Der Pullover ist zu groß.",
-    "ru": "Свитер велик.",
-    "audio": "audio/88ad1a6cf284.m4a"
-   },
-   {
-    "slots": [
-     [
-      {
-       "key": "die",
-       "text": "Die"
-      },
-      {
-       "key": "jacke",
-       "text": "Jacke"
-      }
-     ],
-     [
-      {
-       "key": "ist",
-       "text": "ist"
-      }
-     ],
-     [
-      {
-       "key": "zu",
-       "text": "zu"
-      },
-      {
-       "key": "groß",
-       "text": "groß"
-      }
-     ],
-     []
-    ],
-    "punct": ".",
-    "plain": "Die Jacke ist zu groß.",
-    "ru": "Куртка велика.",
-    "audio": "audio/92135d80adc1.m4a"
-   },
-   {
-    "slots": [
-     [
-      {
-       "key": "das",
-       "text": "Das"
-      },
-      {
-       "key": "hemd",
-       "text": "Hemd"
-      }
-     ],
-     [
-      {
-       "key": "ist",
-       "text": "ist"
-      }
-     ],
-     [
-      {
-       "key": "zu",
-       "text": "zu"
-      },
-      {
-       "key": "groß",
-       "text": "groß"
-      }
-     ],
-     []
-    ],
-    "punct": ".",
-    "plain": "Das Hemd ist zu groß.",
-    "ru": "Рубашка велика.",
-    "audio": "audio/f888eb50f6b1.m4a"
-   },
-   {
-    "slots": [
-     [
-      {
-       "key": "die",
-       "text": "Die"
-      },
-      {
-       "key": "schuhe",
-       "text": "Schuhe"
-      }
-     ],
-     [
-      {
-       "key": "sind",
-       "text": "sind"
-      }
-     ],
-     [
-      {
-       "key": "zu",
-       "text": "zu"
-      },
-      {
-       "key": "groß",
-       "text": "groß"
-      }
-     ],
-     []
-    ],
-    "punct": ".",
-    "plain": "Die Schuhe sind zu groß.",
-    "ru": "Ботинки велики.",
-    "audio": "audio/852785ccb4dd.m4a"
-   }
-  ]
- },
- "tagesablauf/klammer-2": {
-  "point": "Рамка: *Ich stehe … auf.* — середина зажата между корнем и приставкой",
-  "read": "Вот как это выглядит на схеме. *Ich stehe um sieben Uhr auf.* Корень *stehe* — во второй колонке, приставка *auf* — в последней, в поле «конец». Между ними — середина: время, место, дополнения. Глагол обнимает середину с двух сторон, и эту конструкцию называют рамкой предложения — *Satzklammer*. У *frühstücken* приставки нет, и поле «конец» остаётся пустым.",
-  "rows": [
-   {
-    "slots": [
-     [
-      {
-       "key": "ich",
-       "text": "Ich"
-      }
-     ],
-     [
-      {
-       "key": "steh",
-       "text": "steh+e"
-      }
-     ],
-     [
-      {
-       "key": "um",
-       "text": "um"
-      },
-      {
-       "key": "sieben",
-       "text": "sieben"
-      },
-      {
-       "key": "uhr",
-       "text": "Uhr"
-      }
-     ],
-     [
-      {
-       "key": "auf",
-       "text": "auf"
-      }
-     ]
-    ],
-    "punct": ".",
-    "plain": "Ich stehe um sieben Uhr auf.",
-    "ru": "Я встаю в семь часов.",
-    "audio": "audio/1ac7c5589876.m4a"
-   }
-  ]
- },
- "tagesablauf/klammer-1": {
-  "point": "Корень — на втором месте, приставка — в конце: *Der Kurs fängt um neun an.*",
-  "read": "У *aufstehen*, *anfangen*, *einkaufen* есть приставка, которая в предложении отрывается от глагола. Корень спрягается как обычно и стоит на втором месте, а приставка уходит в конец. Если корень меняет гласную, он меняет её и здесь: *du fängst an*, *er sieht fern*. В словарях такие глаголы часто пишут с чертой: *auf|stehen*.",
-  "table": {
-   "title": "Trennbare Verben",
-   "ru": "Глаголы с отделяемой приставкой",
-   "head": [
-    "Infinitiv",
-    "Beispiel",
-    "По-русски"
-   ],
-   "rows": [
-    [
-     "*auf*stehen",
-     "Ich stehe um sechs Uhr *auf*.",
-     "Я встаю в шесть часов."
-    ],
-    [
-     "*an*fangen",
-     "Der Kurs fängt um neun *an*.",
-     "Курс начинается в девять."
-    ],
-    [
-     "*auf*hören",
-     "Der Kurs hört um halb eins *auf*.",
-     "Курс заканчивается в половине первого."
-    ],
-    [
-     "*ein*kaufen",
-     "Am Mittag kaufe ich *ein*.",
-     "В обед я хожу за покупками."
-    ],
-    [
-     "*auf*räumen",
-     "Am Samstag räume ich *auf*.",
-     "В субботу я убираюсь."
-    ],
-    [
-     "*fern*sehen",
-     "Am Abend sieht Mateo *fern*.",
-     "Вечером Матео смотрит телевизор."
-    ],
-    [
-     "*an*rufen",
-     "Ich rufe dich morgen *an*.",
-     "Я позвоню тебе завтра."
-    ]
-   ],
-   "ruCols": [
-    2
-   ],
-   "note": "*anfangen* и *fernsehen* меняют гласную корня: *du fängst an*, *er sieht fern*."
-  }
- },
- "tagesablauf/wann-1": {
-  "point": "*um* + часы, *am* + день или часть дня, *von … bis* — отрезок",
-  "read": "Русское «в» — «в шесть», «в понедельник», «в обед» — по-немецки распадается на два предлога. С часами — *um*: *um sechs Uhr*. С днями и частями дня — *am*: *am Montag*, *am Abend*, *am Wochenende*. Отрезок времени — *von … bis*: *von neun bis zwölf*. Исключение — *in der Nacht*. А *heute*, *morgen* и *jetzt* обходятся вообще без предлога: *Heute habe ich Kurs.*",
-  "table": {
-   "title": "Wann?",
-   "ru": "Когда: um, am, von … bis",
-   "head": [
-    "Что называем",
-    "Wort",
-    "Beispiel"
-   ],
-   "rows": [
-    [
-     "время по часам",
-     "um",
-     "um sechs Uhr / um halb acht"
-    ],
-    [
-     "день недели",
-     "am",
-     "am Montag / am Wochenende"
-    ],
-    [
-     "часть дня",
-     "am",
-     "am Morgen / am Abend"
-    ],
-    [
-     "ночь — исключение",
-     "in der",
-     "in der Nacht"
-    ],
-    [
-     "отрезок времени",
-     "von … bis",
-     "von neun bis zwölf Uhr"
-    ],
-    [
-     "без предлога",
-     "–",
-     "heute / morgen / jetzt"
-    ]
-   ],
-   "ruCols": [
-    0
-   ],
-   "note": "*am* — это слияние *an* и *dem*. Почему так, разберём в теме о жилье."
-  }
- },
- "freizeit/ende-2": {
-  "point": "*Ich kann Tennis spielen.* — модальный глагол второй, инфинитив в конце",
-  "read": "*Ich kann Tennis spielen.* На второе место встаёт модальный глагол *kann* — он и спрягается. А *spielen* уезжает в самый конец и теряет личное окончание: было *spiel+e*, стало *spiel+en*. Получается такая же рамка, как с отделяемой приставкой: *Ich stehe um sieben auf* — *Ich kann Tennis spielen*. Типичная ошибка — *Ich kann spielen Tennis*, по-русски или по-английски.",
-  "rows": [
-   {
-    "slots": [
-     [
-      {
-       "key": "ich",
-       "text": "Ich"
-      }
-     ],
-     [
-      {
-       "key": "kann",
-       "text": "kann"
-      }
-     ],
-     [
-      {
-       "key": "tennis",
-       "text": "Tennis"
-      }
-     ],
-     [
-      {
-       "key": "spiel",
-       "text": "spiel+en"
-      }
-     ]
-    ],
-    "punct": ".",
-    "plain": "Ich kann Tennis spielen.",
-    "ru": "Я умею играть в теннис.",
-    "audio": "audio/91aa530c6bfa.m4a"
-   }
-  ]
- },
- "freizeit/check-2": {
-  "point": "*Am liebsten lese ich.* — на первом месте, глагол всё равно второй",
-  "read": "*Am liebsten lese ich.* «Люблю» снова передаёт наречие, а не глагол. Для выразительности немцы охотно ставят *am liebsten* на первое место, и тогда глагол, как всегда, второй, а *ich* уходит за него. Можно сказать и спокойнее: *Ich lese am liebsten.* А вот *Am liebsten ich lese* — ошибка: между первой позицией и глаголом ничего не помещается.",
-  "rows": [
-   {
-    "slots": [
-     [
-      {
-       "key": "am",
-       "text": "Am"
-      },
-      {
-       "key": "liebsten",
-       "text": "liebsten"
-      }
-     ],
-     [
-      {
-       "key": "les",
-       "text": "les+e"
-      }
-     ],
-     [
-      {
-       "key": "ich",
-       "text": "ich"
-      }
-     ],
-     []
-    ],
-    "punct": ".",
-    "plain": "Am liebsten lese ich.",
-    "ru": "Больше всего я люблю читать.",
-    "audio": "audio/0989e77211f0.m4a"
-   }
-  ]
- },
- "wohnen/wo-2": {
-  "point": "Женский род: *die* → *der*: *in der Küche*, *in der Holtenauer Straße*",
-  "read": "Самая коварная строка — женский род: *die Küche* → *in der Küche*. Да, *der* — тот же артикль, что у мужского рода в именительном падеже. Не пугайтесь: *der Tisch* — «стол», а *in der Küche* — «на кухне», после предлога путаницы не бывает. Главное — не говорить *in die Küche* на вопрос «где?»: это значит «на кухню», куда.",
-  "table": {
-   "title": "in / auf + Dativ",
-   "ru": "Где? — дательный падеж",
-   "head": [
-    "Род",
-    "Wer? Was?",
-    "Wo?"
-   ],
-   "rows": [
-    [
-     "мужской",
-     "der Balkon",
-     "auf d+em Balkon"
-    ],
-    [
-     "средний",
-     "das Haus",
-     "in d+em Haus"
-    ],
-    [
-     "женский",
-     "die Küche",
-     "in d+er Küche"
-    ],
-    [
-     "мужской",
-     "ein Balkon",
-     "auf ein+em Balkon"
-    ],
-    [
-     "средний",
-     "ein Haus",
-     "in ein+em Haus"
-    ],
-    [
-     "женский",
-     "eine Küche",
-     "in ein+er Küche"
-    ]
-   ],
-   "ruCols": [
-    0
-   ],
-   "note": "Во множественном числе — *den*, а к слову добавляется *-n*: *in den Zimmern*."
-  },
-  "focus": [
-   2
-  ]
- },
- "wohnen/wo-1": {
-  "point": "*Wo?* + *in* / *auf* → дательный: *der*, *das* → *dem*",
-  "read": "На вопрос *Wo?* — «где?» — после *in* и *auf* артикль меняет форму. Это дательный падеж, *der Dativ*. Мужской и средний род получают *dem*: *der Balkon* → *auf dem Balkon*, *das Haus* → *in dem Haus*. Русский тоже меняет окончание — «на балконе», «в доме». Разница в том, что немецкий меняет не само слово, а артикль перед ним.",
-  "table": {
-   "title": "in / auf + Dativ",
-   "ru": "Где? — дательный падеж",
-   "head": [
-    "Род",
-    "Wer? Was?",
-    "Wo?"
-   ],
-   "rows": [
-    [
-     "мужской",
-     "der Balkon",
-     "auf d+em Balkon"
-    ],
-    [
-     "средний",
-     "das Haus",
-     "in d+em Haus"
-    ],
-    [
-     "женский",
-     "die Küche",
-     "in d+er Küche"
-    ],
-    [
-     "мужской",
-     "ein Balkon",
-     "auf ein+em Balkon"
-    ],
-    [
-     "средний",
-     "ein Haus",
-     "in ein+em Haus"
-    ],
-    [
-     "женский",
-     "eine Küche",
-     "in ein+er Küche"
-    ]
-   ],
-   "ruCols": [
-    0
-   ],
-   "note": "Во множественном числе — *den*, а к слову добавляется *-n*: *in den Zimmern*."
-  },
-  "focus": [
-   0,
-   1
-  ]
- },
- "wohnen/komposita-1": {
-  "point": "Род и мн. ч. — по последней части: *die Haustür*, *das Treppenhaus*",
-  "read": "В сложном слове главная — последняя часть. Она называет предмет и даёт ему род: *das Haus* + *die Tür* = *die Haustür*, ведь это дверь, а не дом. И наоборот: *die Treppe* + *das Haus* = *das Treppenhaus*, лестничная клетка. Множественное число — тоже по последней части: *die Kühlschränke*, как *die Schränke*. А ударение падает на первую: *KÜHLschrank*.",
-  "table": {
-   "title": "Zusammengesetzte Wörter",
-   "ru": "Сложные слова",
-   "head": [
-    "Wort 1",
-    "Wort 2",
-    "Kompositum",
-    "По-русски"
-   ],
-   "rows": [
-    [
-     "schlafen",
-     "das Zimmer",
-     "das Schlaf*zimmer*",
-     "спальня"
-    ],
-    [
-     "wohnen",
-     "das Zimmer",
-     "das Wohn*zimmer*",
-     "гостиная"
-    ],
-    [
-     "kühl",
-     "der Schrank",
-     "der Kühl*schrank*",
-     "холодильник"
-    ],
-    [
-     "die Kleider",
-     "der Schrank",
-     "der Kleider*schrank*",
-     "платяной шкаф"
-    ],
-    [
-     "waschen",
-     "die Maschine",
-     "die Wasch*maschine*",
-     "стиральная машина"
-    ],
-    [
-     "das Haus",
-     "die Tür",
-     "die Haus*tür*",
-     "входная дверь"
-    ],
-    [
-     "die Treppe",
-     "das Haus",
-     "das Treppen*haus*",
-     "лестничная клетка"
-    ]
-   ],
-   "ruCols": [
-    3
-   ],
-   "note": "Род и множественное число — по последней части. Ударение — на первой."
-  },
-  "focus": [
-   2,
-   5,
-   6
-  ]
- },
- "wohnen/im-1": {
-  "point": "*in dem* → *im*, *an dem* → *am*; *auf dem* и *in der* не сливаются",
-  "read": "*in dem* немцы почти всегда сливают в одно слово: *im Keller*, *im Bad*, *im Wohnzimmer*. Полную форму вы услышите редко. С *auf* такого слияния нет — *auf dem Balkon*, и с женским родом тоже — *in der Küche*. А *am* вы уже знаете по *am Montag*: это тоже слияние, *an dem*. Тот же механизм, только с другим предлогом.",
-  "table": {
-   "title": "im = in dem",
-   "ru": "Предлог и артикль сливаются",
-   "head": [
-    "Präposition + Artikel",
-    "Form",
-    "Beispiel"
-   ],
-   "rows": [
-    [
-     "in + d+em",
-     "im",
-     "Die Waschmaschine steht im Keller."
-    ],
-    [
-     "an + d+em",
-     "am",
-     "Am Montag besichtigt Mateo die Wohnung."
-    ],
-    [
-     "auf + d+em",
-     "auf dem",
-     "Wir sitzen auf dem Balkon."
-    ],
-    [
-     "in + d+er",
-     "in der",
-     "Der Herd ist in der Küche."
-    ]
-   ],
-   "ruCols": [],
-   "note": "*in* и *an* сливаются с *dem*. *auf dem* и *in der* остаются как есть."
-  }
- },
- "stadt/mit-1": {
-  "point": "*mit* + дательный: *mit dem Bus*, *mit dem Fahrrad*, *mit der Straßenbahn*",
-  "read": "После *mit* всегда дательный падеж — тот же, что после *in* и *auf* в прошлой теме. *der Bus* → *mit dem Bus*, *das Fahrrad* → *mit dem Fahrrad*, *die Straßenbahn* → *mit der Straßenbahn*. Мужской и средний род — *dem*, женский — *der*. Типичная ошибка — *mit die Straßenbahn*: за предлогом легко забыть, что артикль меняется.",
-  "table": {
-   "title": "mit + Dativ",
-   "ru": "На чём вы едете?",
-   "head": [
-    "Род",
-    "Nominativ",
-    "Dativ"
-   ],
-   "rows": [
-    [
-     "мужской",
-     "der Bus",
-     "mit d+em Bus"
-    ],
-    [
-     "средний",
-     "das Fahrrad",
-     "mit d+em Fahrrad"
-    ],
-    [
-     "женский",
-     "die Straßenbahn",
-     "mit d+er Straßenbahn"
-    ],
-    [
-     "мн. ч.",
-     "die Freunde",
-     "mit d+en Freunde+n"
-    ]
-   ],
-   "ruCols": [
-    0
-   ],
-   "note": "Пешком — без предлога *mit* и без артикля: *zu Fuß*."
-  }
- },
- "stadt/kurz-1": {
-  "point": "*zum* — для *der* и *das*, *zur* — для *die*: *zum Bahnhof*, *zur Post*",
-  "read": "Как *in dem* стало *im*, так и здесь предлог сливается с артиклем: *zu dem* → *zum*, *zu der* → *zur*, *bei dem* → *beim*, *von dem* → *vom*. В разговоре полные формы почти не звучат. Следите за родом: *zum Bahnhof*, но *zur Post*. Перепутав *zum* и *zur*, вы ошибаетесь не в предлоге, а в артикле.",
-  "table": {
-   "title": "zum, zur, beim, vom",
-   "ru": "Предлог и артикль сливаются",
-   "head": [
-    "Präposition + Artikel",
-    "Kurzform",
-    "Beispiel"
-   ],
-   "rows": [
-    [
-     "zu + d+em",
-     "zum",
-     "Wie komme ich zum Bahnhof?"
-    ],
-    [
-     "zu + d+er",
-     "zur",
-     "Ich gehe zur Post."
-    ],
-    [
-     "bei + d+em",
-     "beim",
-     "Mateo ist beim Arzt."
-    ],
-    [
-     "von + d+em",
-     "vom",
-     "Der Bus fährt vom Bahnhof."
-    ],
-    [
-     "in + d+em",
-     "im",
-     "Dana sitzt im Zug."
-    ]
-   ],
-   "ruCols": [],
-   "note": "*zur* — единственное слияние с женским *der*. *von der*, *bei der*, *mit dem* не сливаются."
-  }
- },
- "stadt/imperativ-2": {
-  "point": "*Gehen Sie geradeaus!* — глагол первым, позиция 1 пуста, *Sie* обязательно",
-  "read": "Глагол переехал в начало, а первая позиция опустела — как в вопросе да/нет: *Gehen Sie geradeaus!* Просьбу от вопроса отличают интонация и восклицательный знак. Чтобы звучало мягче, добавьте *bitte*: *Gehen Sie bitte geradeaus.* А вот *Sie* выбросить нельзя, хотя по-русски мы говорим просто «идите»: *Gehen geradeaus!* — ошибка.",
-  "rows": [
-   {
-    "slots": [
-     [],
-     [
-      {
-       "key": "geh",
-       "text": "Geh+en"
-      }
-     ],
-     [
-      {
-       "key": "sie",
-       "text": "Sie"
-      },
-      {
-       "key": "geradeaus",
-       "text": "geradeaus"
-      }
-     ],
-     []
-    ],
-    "punct": "!",
-    "plain": "Gehen Sie geradeaus!",
-    "ru": "Идите прямо!",
-    "audio": "audio/158a3b81daf9.m4a"
-   }
-  ]
- },
- "gesundheit/muessen-4": {
-  "point": "«Нельзя» — *nicht dürfen*, «не нужно» — *nicht müssen*",
-  "read": "*dürfen* — «можно, разрешено». Чаще всего его слышат с отрицанием: *Du darfst nicht rauchen* — «тебе нельзя курить». Главная ловушка этой темы: Запрет здесь выражает *nicht dürfen*. *Du musst nicht kommen* значит совсем другое — «тебе не нужно приходить», хочешь — приходи. Английское must not тоже подведёт: по смыслу оно ближе к *darf nicht*.",
-  "rows": [
-   {
-    "slots": [
-     [
-      {
-       "key": "du",
-       "text": "Du"
-      }
-     ],
-     [
-      {
-       "key": "darf",
-       "text": "darf+st"
-      }
-     ],
-     [
-      {
-       "key": "nicht",
-       "text": "nicht"
-      }
-     ],
-     [
-      {
-       "key": "rauch",
-       "text": "rauch+en"
-      }
-     ]
-    ],
-    "punct": ".",
-    "plain": "Du darfst nicht rauchen.",
-    "ru": "Тебе нельзя курить.",
-    "audio": "audio/783485b2a3d1.m4a"
-   },
-   {
-    "slots": [
-     [
-      {
-       "key": "du",
-       "text": "Du"
-      }
-     ],
-     [
-      {
-       "key": "muss",
-       "text": "muss+t"
-      }
-     ],
-     [
-      {
-       "key": "nicht",
-       "text": "nicht"
-      }
-     ],
-     [
-      {
-       "key": "komm",
-       "text": "komm+en"
-      }
-     ]
-    ],
-    "punct": ".",
-    "plain": "Du musst nicht kommen.",
-    "ru": "Тебе не нужно приходить.",
-    "audio": "audio/33821d243616.m4a"
-   }
-  ]
- },
- "gesundheit/muessen-2": {
-  "point": "*Ich muss im Bett bleiben.* — модальный глагол второй, инфинитив в конце",
-  "read": "*Muss* встаёт на второе место, а *bleibe* уезжает в самый конец и превращается в инфинитив *bleiben*. Между ними образуется рамка, и всё остальное помещается внутри. По-русски «мне нужно» — с дательным падежом, а по-немецки подлежащее самое обычное: *ich muss*, буквально «я должен». Сказать *Mir muss* нельзя.",
-  "rows": [
-   {
-    "slots": [
-     [
-      {
-       "key": "ich",
-       "text": "Ich"
-      }
-     ],
-     [
-      {
-       "key": "muss",
-       "text": "muss"
-      }
-     ],
-     [
-      {
-       "key": "im",
-       "text": "im"
-      },
-      {
-       "key": "bett",
-       "text": "Bett"
-      }
-     ],
-     [
-      {
-       "key": "bleib",
-       "text": "bleib+en"
-      }
-     ]
-    ],
-    "punct": ".",
-    "plain": "Ich muss im Bett bleiben.",
-    "ru": "Мне нужно лежать в постели.",
-    "audio": "audio/b27cee309138.m4a"
-   }
-  ]
- },
- "gesundheit/schmerzen-1": {
-  "point": "*Ich habe Kopfschmerzen.* = *Mein Kopf tut weh.*",
-  "read": "Сказать о боли можно двумя способами. Первый — через *haben*: часть тела плюс *-schmerzen*, одним словом: *Kopfschmerzen*, *Bauchschmerzen*, *Zahnschmerzen*. Такое слово всегда во множественном числе и без артикля. Второй способ — через *wehtun*: *Mein Kopf tut weh*. Здесь подлежащее — часть тела, а *weh* уходит в конец предложения, как отделяемая приставка.",
-  "table": {
-   "title": "Was tut weh?",
-   "ru": "Что болит",
-   "head": [
-    "wehtun",
-    "Ich habe …schmerzen",
-    "По-русски"
-   ],
-   "rows": [
-    [
-     "Mein *Kopf* tut weh.",
-     "Ich habe *Kopf*schmerzen.",
-     "болит голова"
-    ],
-    [
-     "Mein *Hals* tut weh.",
-     "Ich habe *Hals*schmerzen.",
-     "болит горло"
-    ],
-    [
-     "Mein *Bauch* tut weh.",
-     "Ich habe *Bauch*schmerzen.",
-     "болит живот"
-    ],
-    [
-     "Mein *Rücken* tut weh.",
-     "Ich habe *Rücken*schmerzen.",
-     "болит спина"
-    ],
-    [
-     "Mein *Zahn* tut weh.",
-     "Ich habe *Zahn*schmerzen.",
-     "болит зуб"
-    ],
-    [
-     "Meine *Ohren* tun weh.",
-     "Ich habe *Ohren*schmerzen.",
-     "болят уши"
-    ],
-    [
-     "Meine *Hand* tut weh.",
-     "–",
-     "болит рука"
-    ]
-   ],
-   "ruCols": [
-    2
-   ],
-   "note": "Слова на *-schmerzen* — всегда во множественном числе и без артикля."
-  },
-  "focus": [
-   0,
-   1,
-   2,
-   3,
-   4
-  ]
- },
- "arbeit/perfekt-2": {
-  "point": "*Ich habe in Buenos Aires gearbeitet.* — *haben* второй, причастие в конце",
-  "read": "На второе место встаёт *habe* — обычная форма *haben*. А смысловой глагол уходит в конец и превращается в причастие, Partizip II: *gearbeitet*. Получается та же рамка, что с *muss … bleiben*. По-русски всё сказано одним словом «работал», а по-немецки работа разделена: лицо показывает *habe*, а смысл — *gearbeitet*.",
-  "rows": [
-   {
-    "slots": [
-     [
-      {
-       "key": "ich",
-       "text": "Ich"
-      }
-     ],
-     [
-      {
-       "key": "hab",
-       "text": "hab+e"
-      }
-     ],
-     [
-      {
-       "key": "in",
-       "text": "in"
-      },
-      {
-       "key": "buenos",
-       "text": "Buenos"
-      },
-      {
-       "key": "aires",
-       "text": "Aires"
-      }
-     ],
-     [
-      {
-       "key": "gearbeit",
-       "text": "*ge*arbeit+et"
-      }
-     ]
-    ],
-    "punct": ".",
-    "plain": "Ich habe in Buenos Aires gearbeitet.",
-    "ru": "Я работал в Буэнос-Айресе.",
-    "audio": "audio/e26cf52502a5.m4a"
-   }
-  ]
- },
- "arbeit/perfekt-4": {
-  "point": "Слабые: *ge-* + основа + *-t*: *gemacht*; после *-t* — *-et*: *gearbeitet*",
-  "read": "Как получить причастие? У большинства глаголов — по формуле *ge-* + основа + *-t*: *machen → gemacht*, *kochen → gekocht*, *lernen → gelernt*. Если основа кончается на *-t* или *-d*, перед окончанием появляется *e*: *arbeiten → gearbeitet*. Иначе не выговорить. Такие глаголы называют слабыми, и их большинство. По той же формуле: *wohnen → gewohnt*, *spielen → gespielt*, *kaufen → gekauft*.",
-  "table": {
-   "title": "Perfekt mit haben",
-   "ru": "haben + Partizip II",
-   "head": [
-    "Infinitiv",
-    "Partizip II",
-    "Beispiel"
-   ],
-   "rows": [
-    [
-     "machen",
-     "*ge*mach+t",
-     "Was *hast* du *gemacht*?"
-    ],
-    [
-     "kochen",
-     "*ge*koch+t",
-     "Er *hat* Pasta *gekocht*."
-    ],
-    [
-     "lernen",
-     "*ge*lern+t",
-     "Wir *haben* Deutsch *gelernt*."
-    ],
-    [
-     "arbeiten",
-     "*ge*arbeit+et",
-     "Ich *habe* in Buenos Aires *gearbeitet*."
-    ],
-    [
-     "lesen",
-     "*ge*les+en",
-     "Ich *habe* eine Anzeige *gelesen*."
-    ],
-    [
-     "schreiben",
-     "*ge*schrieb+en",
-     "*Hast* du eine E-Mail *geschrieben*?"
-    ],
-    [
-     "finden",
-     "*ge*fund+en",
-     "Er *hat* eine Stelle *gefunden*."
-    ],
-    [
-     "sprechen",
-     "*ge*sproch+en",
-     "Wir *haben* Deutsch *gesprochen*."
-    ]
-   ],
-   "ruCols": [],
-   "note": "Формы нужны для рассказа о сделанных делах. Возвращайтесь к таблице во время чтения отчёта. Здесь показаны частые глаголы с ge-."
-  }
- },
- "arbeit/war-hatte-1": {
-  "point": "*ich war, du warst, er war* · *ich hatte, du hattest, er hatte*",
-  "read": "Для *sein* и *haben* о прошлом говорят иначе — короткой формой, Präteritum. *Ich war Koch* — «я был поваром», *Ich hatte viel Stress* — «у меня было много стресса». Формы *ich* и *er* совпадают: *ich war*, *er war*, *ich hatte*, *sie hatte*, — как у *ich möchte* — *er möchte* и *ich kann* — *er kann*. Остальные окончания вам знакомы: *du warst*, *wir waren*, *ihr hattet*.",
-  "table": {
-   "title": "Präteritum: war und hatte",
-   "ru": "Прошедшее время sein и haben",
-   "head": [
-    "Person",
-    "sein",
-    "haben"
-   ],
-   "rows": [
-    [
-     "ich",
-     "war",
-     "hatt+e"
-    ],
-    [
-     "du",
-     "war+st",
-     "hatt+est"
-    ],
-    [
-     "er / sie / es",
-     "war",
-     "hatt+e"
-    ],
-    [
-     "wir",
-     "war+en",
-     "hatt+en"
-    ],
-    [
-     "ihr",
-     "war+t",
-     "hatt+et"
-    ],
-    [
-     "sie / Sie",
-     "war+en",
-     "hatt+en"
-    ]
-   ],
-   "ruCols": [],
-   "note": "У *ich* и *er / sie / es* — одна и та же форма."
-  }
- },
- "reisen/angekommen-2": {
-  "point": "*ankommen — ist angekommen*: *ge* — между приставкой и корнем",
-  "read": "Приставка остаётся на месте, а причастие вырастает из неё: *an* + *ge* + *kommen* — *angekommen*, одним словом. Место глагола занимает *ist*: прибытие — тоже движение. Так же *abfahren — ist abgefahren*, *aufstehen — ist aufgestanden*. Частые ошибки — *geankommen* и *angekommt*: *ge* никогда не встаёт перед отделяемой приставкой, а причастие от *kommen* кончается на *-en*.",
-  "rows": [
-   {
-    "slots": [
-     [
-      {
-       "key": "der",
-       "text": "Der"
-      },
-      {
-       "key": "zug",
-       "text": "Zug"
-      }
-     ],
-     [
-      {
-       "key": "ist",
-       "text": "ist"
-      }
-     ],
-     [
-      {
-       "key": "um",
-       "text": "um"
-      },
-      {
-       "key": "acht",
-       "text": "acht"
-      },
-      {
-       "key": "uhr",
-       "text": "Uhr"
-      }
-     ],
-     [
-      {
-       "key": "an",
-       "text": "an+gekommen"
-      }
-     ]
-    ],
-    "punct": ".",
-    "plain": "Der Zug ist um acht Uhr angekommen.",
-    "ru": "Поезд прибыл в восемь часов.",
-    "audio": "audio/7a8fbb74d3aa.m4a"
-   }
-  ]
- },
- "reisen/perfekt-1": {
-  "point": "Perfekt: *haben* или *sein* на 2-м месте + причастие в конце",
-  "read": "Perfekt с *haben* вы уже знаете: *Wir haben im Hotel gefrühstückt.* Но о поездке Дана говорит *Wir sind nach Hamburg gefahren.* Рамка та же: вспомогательный глагол на втором месте, причастие в самом конце. Меняется только вспомогательный глагол — с глаголами движения это *sein*. По-русски «мы поехали» — одно слово, а по-немецки — два, и между ними помещается вся середина предложения.",
-  "rows": [
-   {
-    "slots": [
-     [
-      {
-       "key": "wir",
-       "text": "Wir"
-      }
-     ],
-     [
-      {
-       "key": "hab",
-       "text": "hab+en"
-      }
-     ],
-     [
-      {
-       "key": "im",
-       "text": "im"
-      },
-      {
-       "key": "hotel",
-       "text": "Hotel"
-      }
-     ],
-     [
-      {
-       "key": "gefrühstückt",
-       "text": "gefrühstückt"
-      }
-     ]
-    ],
-    "punct": ".",
-    "plain": "Wir haben im Hotel gefrühstückt.",
-    "ru": "Мы позавтракали в отеле.",
-    "audio": "audio/cd7af7ca5e13.m4a"
-   },
-   {
-    "slots": [
-     [
-      {
-       "key": "wir",
-       "text": "Wir"
-      }
-     ],
-     [
-      {
-       "key": "sind",
-       "text": "sind"
-      }
-     ],
-     [
-      {
-       "key": "nach",
-       "text": "nach"
-      },
-      {
-       "key": "hamburg",
-       "text": "Hamburg"
-      }
-     ],
-     [
-      {
-       "key": "gefahren",
-       "text": "gefahren"
-      }
-     ]
-    ],
-    "punct": ".",
-    "plain": "Wir sind nach Hamburg gefahren.",
-    "ru": "Мы поехали в Гамбург.",
-    "audio": "audio/4090cfa66d69.m4a"
-   }
-  ]
- },
- "reisen/datum-2": {
-  "point": "С 20 — *-ste*; «когда?» — *am …-en*: *am ersten Mai*, *am zwanzigsten Mai*",
-  "read": "С 20 — *-ste*, как в теме 8: *der zwanzigste*, *der einunddreißigste*. Новое здесь одно — «когда?». По-русски «первого мая» — родительный падеж, а по-немецки *am* и окончание *-en*: *am ersten Mai*. После *vom* и *bis zum* — тоже *-en*, поэтому Матео и сказал *vom zweiten bis zum vierten Juni*. Спросить дату можно так: *Welches Datum ist heute?*",
-  "table": {
-   "title": "Ordinalzahlen und Datum",
-   "ru": "Порядковые числа и дата",
-   "head": [
-    "Datum",
-    "Heute ist …",
-    "Wann?"
-   ],
-   "rows": [
-    [
-     "1. Mai",
-     "der erst+e Mai",
-     "am erst+en Mai"
-    ],
-    [
-     "2. Mai",
-     "der zwei+te Mai",
-     "am zwei+ten Mai"
-    ],
-    [
-     "3. Mai",
-     "der dritt+e Mai",
-     "am dritt+en Mai"
-    ],
-    [
-     "4. Mai",
-     "der vier+te Mai",
-     "am vier+ten Mai"
-    ],
-    [
-     "7. Mai",
-     "der sieb+te Mai",
-     "am sieb+ten Mai"
-    ],
-    [
-     "8. Mai",
-     "der acht+e Mai",
-     "am acht+en Mai"
-    ],
-    [
-     "19. Mai",
-     "der neunzehn+te Mai",
-     "am neunzehn+ten Mai"
-    ],
-    [
-     "20. Mai",
-     "der zwanzig+ste Mai",
-     "am zwanzig+sten Mai"
-    ],
-    [
-     "31. Mai",
-     "der einunddreißig+ste Mai",
-     "am einunddreißig+sten Mai"
-    ]
-   ],
-   "ruCols": [],
-   "note": "Порядковые числа — по правилу темы 8: до 19 *-te*, с 20 *-ste*. Новое — *am*, *vom*, *bis zum* и окончание *-en*."
-  },
-  "focus": [
-   0,
-   6,
-   7,
-   8
-  ]
- },
  "kennenlernen/endungen-2": {
   "point": "*wir*, *sie*, *Sie* — как инфинитив; *ihr* — *-t*",
   "read": "Во множественном — ещё проще. *wir* и *sie / Sie* совпадают с инфинитивом: *wir wohnen*, *Sie wohnen*. *ihr* получает *-t*, как *er*. Поэтому вежливое *Wie heißen Sie?* звучит так же, как «как их зовут?» — разница только в заглавной букве.",
@@ -1873,6 +174,53 @@
    5
   ]
  },
+ "kennenlernen/endungen-3": {
+  "point": "*ich bin, du bist, er ist, wir sind, ihr seid, sie sind*",
+  "read": "*sein* — «быть» — живёт по своим правилам, его формы надо выучить: *ich bin*, *du bist*, *er ist*, *wir sind*, *ihr seid*, *sie sind*. В отличие от русского, связку «быть» в настоящем времени не пропускают: «я Дана» — *Ich bin Dana*.",
+  "table": {
+   "title": "sein",
+   "ru": "быть",
+   "head": [
+    "Person",
+    "sein",
+    "Beispiel"
+   ],
+   "rows": [
+    [
+     "ich",
+     "bin",
+     "Ich bin Dana."
+    ],
+    [
+     "du",
+     "bist",
+     "Bist du Mateo?"
+    ],
+    [
+     "er / sie / es",
+     "ist",
+     "Das ist Frau Petersen."
+    ],
+    [
+     "wir",
+     "sind",
+     "Wir sind im Kurs."
+    ],
+    [
+     "ihr",
+     "seid",
+     "Seid ihr aus Argentinien?"
+    ],
+    [
+     "sie / Sie",
+     "sind",
+     "Sind Sie Frau Yıldız?"
+    ]
+   ],
+   "ruCols": [],
+   "note": "Неправильный глагол — формы надо просто запомнить."
+  }
+ },
  "moin/stamm-1": {
   "point": "*Elif spricht Türkisch.* — у части глаголов у *du* и *er* меняется гласная: *e → i*, *a → ä*",
   "read": "Окончания у всех глаголов одни и те же, но у части сильных глаголов в формах *du* и *er / sie / es* меняется корень: *sprechen → du sprichst, er spricht*. У *ich*, *wir*, *ihr*, *sie / Sie* корень прежний: *ich spreche, wir sprechen*. Так же устроены *essen → er isst*, *nehmen → er nimmt*, *sehen → er sieht*, *lesen → er liest*, *fahren → er fährt*, *schlafen → er schläft*. В словаре у таких глаголов рядом стоят формы *du* и *er*.",
@@ -1919,6 +267,90 @@
    "ruCols": [],
    "note": "*Elif spricht Türkisch. Fährst du nach Kiel?* — гласная меняется только у *du* и *er / sie / es*."
   }
+ },
+ "zahlen/haben-1": {
+  "point": "*ich habe*, но *du hast*, *er hat* — без *b*",
+  "read": "*haben* — «иметь» — второй после *sein* глагол, без которого не обходится ни один разговор. Он почти правильный, но во втором и третьем лице теряет *b*: *ich habe*, но *du hast* и *er hat*. Не *du habst* и не *er habt*. Окончания при этом обычные: *-e*, *-st*, *-t* — те же, что у *wohnen*.",
+  "table": {
+   "title": "haben",
+   "ru": "иметь",
+   "head": [
+    "Person",
+    "haben",
+    "Beispiel"
+   ],
+   "rows": [
+    [
+     "ich",
+     "hab+e",
+     "Ich habe Kuchen."
+    ],
+    [
+     "du",
+     "ha+st",
+     "Hast du Zeit?"
+    ],
+    [
+     "er / sie / es",
+     "ha+t",
+     "Mateo hat Geburtstag."
+    ],
+    [
+     "wir",
+     "hab+en",
+     "Wir haben Pause."
+    ],
+    [
+     "ihr",
+     "hab+t",
+     "Habt ihr Zeit?"
+    ],
+    [
+     "sie / Sie",
+     "hab+en",
+     "Haben Sie Fragen?"
+    ]
+   ],
+   "ruCols": [],
+   "note": "В *du hast* и *er hat* буква *b* выпадает. Остальные формы — как у правильного глагола."
+  }
+ },
+ "kennenlernen/wortstellung-1": {
+  "point": "Спрягаемый глагол — всегда вторая позиция",
+  "read": "Главное правило немецкого предложения: спрягаемый глагол стоит на второй позиции. Позицию занимает не одно слово, а целая группа: *in Kiel* — одна позиция. На схеме четыре поля: позиция 1, глагол, середина и конец. Конец пока пуст, он понадобится позже.",
+  "rows": [
+   {
+    "slots": [
+     [
+      {
+       "key": "ich",
+       "text": "Ich"
+      }
+     ],
+     [
+      {
+       "key": "wohn",
+       "text": "wohn+e"
+      }
+     ],
+     [
+      {
+       "key": "in",
+       "text": "in"
+      },
+      {
+       "key": "kiel",
+       "text": "Kiel"
+      }
+     ],
+     []
+    ],
+    "punct": ".",
+    "plain": "Ich wohne in Kiel.",
+    "ru": "Я живу в Киле.",
+    "audio": "audio/a09eaf8bc832.m4a"
+   }
+  ]
  },
  "zahlen/alphabet-1": {
   "point": "*E* — «э», *I* — «и», *C* — «цэ», *H* — «ха»",
@@ -2072,6 +504,65 @@
    }
   ]
  },
+ "zahlen/check-3": {
+  "point": "*Hast du Zeit?* — *Ja, ich habe Zeit.*",
+  "read": "*Hast du Zeit?* Это вопрос да/нет, поэтому глагол — на первом месте, а *du* — сразу за ним. Форма *hast* — без *b*, артикль перед *Zeit* не нужен. Матео ответит *Ja, ich habe Zeit* или коротко *Ja, klar!* Так же спрашивают о чём угодно: *Hast du Fragen?*, *Hast du WhatsApp?*",
+  "rows": [
+   {
+    "slots": [
+     [],
+     [
+      {
+       "key": "ha",
+       "text": "Ha+st"
+      }
+     ],
+     [
+      {
+       "key": "du",
+       "text": "du"
+      },
+      {
+       "key": "zeit",
+       "text": "Zeit"
+      }
+     ],
+     []
+    ],
+    "punct": "?",
+    "plain": "Hast du Zeit?",
+    "ru": "У тебя есть время?",
+    "audio": "audio/2500a95e9211.m4a"
+   },
+   {
+    "slots": [
+     [
+      {
+       "key": "ich",
+       "text": "Ich"
+      }
+     ],
+     [
+      {
+       "key": "hab",
+       "text": "hab+e"
+      }
+     ],
+     [
+      {
+       "key": "zeit",
+       "text": "Zeit"
+      }
+     ],
+     []
+    ],
+    "punct": ".",
+    "plain": "Ich habe Zeit.",
+    "ru": "Да, у меня есть время.",
+    "audio": "audio/5b4db2b2ac37.m4a"
+   }
+  ]
+ },
  "familie/mein-2": {
   "point": "*der* / *das* → *mein*, *die* → *mein+e*",
   "read": "Теперь мама: *Das ist meine Mutter.* У *mein* появилось окончание *-e*, потому что *die Mutter* женского рода. Правило простое: перед словом с *der* и *das* — просто *mein*, перед словом с *die* — *meine*. Как в русском «мой отец» и «моя мать», только мужской и средний род в немецком совпадают: *mein Vater*, *mein Kind*.",
@@ -2107,6 +598,78 @@
     "ru": "Это моя мать.",
     "audio": "audio/cbe6d45dbae5.m4a"
    }
+  ]
+ },
+ "familie/wessen-1": {
+  "point": "Корень — по владельцу (*sein* / *ihr*), окончание — по слову после него",
+  "read": "У каждого личного местоимения есть своё притяжательное слово: *ich* — *mein*, *du* — *dein*. В третьем лице всё решает владелец, как в русском «его» и «её»: Арман и *sein Sohn*, Лусия и *ihr Mann*. С глаголом *sein* — «быть» — это слово просто совпадает. А в отличие от русского, у «его» и «её» есть окончание — по слову после них: *seine Frau*, *ihre Tochter*.",
+  "table": {
+   "title": "Possessivartikel",
+   "ru": "Чей? — притяжательные слова",
+   "head": [
+    "Person",
+    "der · das",
+    "die · Plural",
+    "По-русски"
+   ],
+   "rows": [
+    [
+     "ich",
+     "mein",
+     "mein+e",
+     "мой, моя, мои"
+    ],
+    [
+     "du",
+     "dein",
+     "dein+e",
+     "твой"
+    ],
+    [
+     "er / es",
+     "sein",
+     "sein+e",
+     "его"
+    ],
+    [
+     "sie",
+     "ihr",
+     "ihr+e",
+     "её"
+    ],
+    [
+     "wir",
+     "unser",
+     "unser+e",
+     "наш"
+    ],
+    [
+     "ihr",
+     "euer",
+     "eur+e",
+     "ваш — друзьям"
+    ],
+    [
+     "sie",
+     "ihr",
+     "ihr+e",
+     "их"
+    ],
+    [
+     "Sie",
+     "Ihr",
+     "Ihr+e",
+     "Ваш — вежливо"
+    ]
+   ],
+   "ruCols": [
+    3
+   ],
+   "note": "Корень — по владельцу, окончание — по слову после него: *sein Sohn*, *seine Tochter*."
+  },
+  "focus": [
+   2,
+   3
   ]
  },
  "familie/wessen-2": {
@@ -2246,6 +809,59 @@
    ],
    "note": "Во множественном числе артикль всегда *die*. Сверяйте форму в карточке и используйте её, подписывая фото и возвращая вещи владельцам."
   }
+ },
+ "familie/kein-2": {
+  "point": "*kein* / *keine* — «нет» перед словом: *Ich habe keine Kinder.*",
+  "read": "Отрицание существительного — *kein*: *Ich habe keine Schwester*, *Mateo hat keine Kinder*. Не путайте его с *nein*: *nein* — ответ на вопрос, а *kein* стоит прямо перед словом, на месте артикля. Окончания — как у *mein*, включая множественное: *keine Kinder*. Осторожно с мужским родом после *haben*: «у меня есть брат» — *Ich habe einen Bruder*. Почему *einen*, узнаем в следующей теме.",
+  "table": {
+   "title": "ein, kein, mein",
+   "ru": "Артикли и отрицание",
+   "head": [
+    "Артикль",
+    "der Bruder",
+    "die Schwester",
+    "das Kind",
+    "die Kinder"
+   ],
+   "rows": [
+    [
+     "определённый",
+     "der",
+     "die",
+     "das",
+     "die"
+    ],
+    [
+     "неопределённый",
+     "ein",
+     "ein+e",
+     "ein",
+     "–"
+    ],
+    [
+     "отрицание",
+     "kein",
+     "kein+e",
+     "kein",
+     "kein+e"
+    ],
+    [
+     "притяжательный",
+     "mein",
+     "mein+e",
+     "mein",
+     "mein+e"
+    ]
+   ],
+   "ruCols": [
+    0
+   ],
+   "note": "*kein* и *mein* изменяются как *ein*, но у них есть множественное число: *keine Kinder*, *meine Kinder*."
+  },
+  "focus": [
+   2,
+   3
+  ]
  },
  "familie/check-3": {
   "point": "*Hast du Kinder?* — *Nein, ich habe keine Kinder.*",
@@ -2462,6 +1078,48 @@
    7
   ]
  },
+ "essen/akkusativ-3": {
+  "point": "Меняется только мужской род: *den*, *einen*, *keinen*",
+  "read": "Хорошая новость: винительный падеж меняет только мужской род. *der* → *den*, *ein* → *einen*, *kein* → *keinen* — у всех трёх появляется *-en*. Женский, средний род и множественное число выглядят так же, как в именительном: *Ich nehme die Suppe*, *Ich möchte ein Ei*. Так что вопрос «какое окончание?» сводится к вопросу «какого рода слово?» — ещё одна причина учить слова с артиклем.",
+  "table": {
+   "title": "Nominativ und Akkusativ",
+   "ru": "Именительный и винительный падеж",
+   "head": [
+    "Род",
+    "Nominativ",
+    "Akkusativ"
+   ],
+   "rows": [
+    [
+     "мужской",
+     "d+er / ein / kein Kaffee",
+     "d+en / ein+en / kein+en Kaffee"
+    ],
+    [
+     "женский",
+     "die / eine / keine Suppe",
+     "die / eine / keine Suppe"
+    ],
+    [
+     "средний",
+     "das / ein / kein Ei",
+     "das / ein / kein Ei"
+    ],
+    [
+     "мн. ч.",
+     "die / – / keine Eier",
+     "die / – / keine Eier"
+    ]
+   ],
+   "ruCols": [
+    0
+   ],
+   "note": "Меняется только мужской род: *der* → *den*, *ein* → *einen*, *kein* → *keinen*."
+  },
+  "focus": [
+   0
+  ]
+ },
  "essen/moechten-1": {
   "point": "*ich möchte* = *er möchte*, без *-t*; *du möchtest*, *ihr möchtet*",
   "read": "Русское «я хочу кофе» так и тянет перевести как *Ich will Kaffee*, но в кафе это звучит как требование. Вежливо — *Ich möchte*, «я хотел бы». Формы почти правильные, с одной особенностью: у *ich* и *er / sie / es* они совпадают, и у *er* нет *-t*: *Mateo möchte ein Stück Kuchen*. У *du* и *ihr* появляется *e*: *du möchtest*, *ihr möchtet*.",
@@ -2514,6 +1172,50 @@
    2,
    4
   ]
+ },
+ "essen/negation-2": {
+  "point": "*ein* или нет артикля → *kein*; всё остальное → *nicht*",
+  "read": "Как выбрать? Мысленно уберите отрицание. Если перед существительным стоит *ein* или артикля нет совсем — нужен *kein*: *Ich esse Fleisch* → *Ich esse kein Fleisch*. Во всех остальных случаях — *nicht*: с глаголом, с *gern*, с прилагательным и с существительным, у которого есть *der*, *die* или *das*: *Ich esse den Kuchen nicht* — «этот пирог я не ем».",
+  "table": {
+   "title": "nicht oder kein?",
+   "ru": "Отрицание",
+   "head": [
+    "Что отрицаем",
+    "Negation",
+    "Beispiel"
+   ],
+   "rows": [
+    [
+     "существительное с неопределённым артиклем",
+     "kein",
+     "Ich möchte kein+en Kaffee."
+    ],
+    [
+     "существительное без артикля",
+     "kein",
+     "Ich esse kein Fleisch."
+    ],
+    [
+     "глагол или наречие",
+     "nicht",
+     "Ich koche nicht gern."
+    ],
+    [
+     "прилагательное",
+     "nicht",
+     "Die Suppe ist nicht warm."
+    ],
+    [
+     "существительное с определённым артиклем",
+     "nicht",
+     "Ich esse den Kuchen nicht."
+    ]
+   ],
+   "ruCols": [
+    0
+   ],
+   "note": "*kein* склоняется как *ein*: *keinen Kaffee*, *keine Suppe*, *kein Fleisch*."
+  }
  },
  "moin/fuer-ohne-1": {
   "point": "*für* и *ohne* — всегда с винительным: *für den Club*, *Kaffee ohne Milch*",
@@ -2886,6 +1588,152 @@
    }
   ]
  },
+ "einkaufen/adjektiv-1": {
+  "point": "*Der Pullover / Die Jacke ist zu groß.* — прилагательное не меняется; *zu* — «слишком»",
+  "read": "После *sein* прилагательное никогда не меняется: свитер, куртка, рубашка и ботинки — у всех *groß*. В русском «велик, велика, велики» подстраиваются под слово, в немецком — нет. *zu* значит «слишком», и это всегда минус: *zu groß* — «велик», *zu teuer* — «дорого для меня». Если хотите похвалить, говорите *sehr*: *Die Jacke ist sehr schön*.",
+  "rows": [
+   {
+    "slots": [
+     [
+      {
+       "key": "der",
+       "text": "Der"
+      },
+      {
+       "key": "pullover",
+       "text": "Pullover"
+      }
+     ],
+     [
+      {
+       "key": "ist",
+       "text": "ist"
+      }
+     ],
+     [
+      {
+       "key": "zu",
+       "text": "zu"
+      },
+      {
+       "key": "groß",
+       "text": "groß"
+      }
+     ],
+     []
+    ],
+    "punct": ".",
+    "plain": "Der Pullover ist zu groß.",
+    "ru": "Свитер велик.",
+    "audio": "audio/88ad1a6cf284.m4a"
+   },
+   {
+    "slots": [
+     [
+      {
+       "key": "die",
+       "text": "Die"
+      },
+      {
+       "key": "jacke",
+       "text": "Jacke"
+      }
+     ],
+     [
+      {
+       "key": "ist",
+       "text": "ist"
+      }
+     ],
+     [
+      {
+       "key": "zu",
+       "text": "zu"
+      },
+      {
+       "key": "groß",
+       "text": "groß"
+      }
+     ],
+     []
+    ],
+    "punct": ".",
+    "plain": "Die Jacke ist zu groß.",
+    "ru": "Куртка велика.",
+    "audio": "audio/92135d80adc1.m4a"
+   },
+   {
+    "slots": [
+     [
+      {
+       "key": "das",
+       "text": "Das"
+      },
+      {
+       "key": "hemd",
+       "text": "Hemd"
+      }
+     ],
+     [
+      {
+       "key": "ist",
+       "text": "ist"
+      }
+     ],
+     [
+      {
+       "key": "zu",
+       "text": "zu"
+      },
+      {
+       "key": "groß",
+       "text": "groß"
+      }
+     ],
+     []
+    ],
+    "punct": ".",
+    "plain": "Das Hemd ist zu groß.",
+    "ru": "Рубашка велика.",
+    "audio": "audio/f888eb50f6b1.m4a"
+   },
+   {
+    "slots": [
+     [
+      {
+       "key": "die",
+       "text": "Die"
+      },
+      {
+       "key": "schuhe",
+       "text": "Schuhe"
+      }
+     ],
+     [
+      {
+       "key": "sind",
+       "text": "sind"
+      }
+     ],
+     [
+      {
+       "key": "zu",
+       "text": "zu"
+      },
+      {
+       "key": "groß",
+       "text": "groß"
+      }
+     ],
+     []
+    ],
+    "punct": ".",
+    "plain": "Die Schuhe sind zu groß.",
+    "ru": "Ботинки велики.",
+    "audio": "audio/852785ccb4dd.m4a"
+   }
+  ]
+ },
  "einkaufen/mengen-grammatik-1": {
   "point": "*eine Flasche Milch* — без падежа; *zwei Kilo*, но *zwei Flaschen*",
   "read": "В русском после меры нужен родительный падеж: «кило яблок», «бутылка молока». В немецком второе слово остаётся как есть: *ein Kilo Äpfel*, *eine Flasche Milch* — без предлога и без падежа. Ещё одна разница: меры веса и деньги после числа не получают множественного — *zwei Kilo*, *200 Gramm*, *drei Euro*. А *Flasche* — получает: *zwei Flaschen Wasser*.",
@@ -2931,6 +1779,53 @@
    3,
    4,
    5
+  ]
+ },
+ "einkaufen/pronomen-3": {
+  "point": "*die Jacke* → *sie*, *das Hemd* → *es*, *die Schuhe* → *sie*",
+  "read": "Женский, средний род и множественное число не меняются: *die Jacke* → *sie*, *das T-Shirt* → *es*, *die Schuhe* → *sie*. Заменяйте по немецкому роду, а не по русскому: *das Hemd* — «рубашка», но местоимение *es*: *Ich nehme es*. А *sie* бывает и «она», и «они» — различить помогает глагол: *sie ist*, но *sie sind*.",
+  "table": {
+   "title": "Akkusativ: ihn, sie, es",
+   "ru": "Местоимения в винительном падеже",
+   "head": [
+    "Wort",
+    "Nominativ",
+    "Akkusativ",
+    "Beispiel"
+   ],
+   "rows": [
+    [
+     "der Pullover",
+     "er",
+     "*ihn*",
+     "Ich finde *ihn* zu groß."
+    ],
+    [
+     "die Jacke",
+     "sie",
+     "sie",
+     "Ich finde sie schön."
+    ],
+    [
+     "das T-Shirt",
+     "es",
+     "es",
+     "Ich nehme es."
+    ],
+    [
+     "die Schuhe",
+     "sie",
+     "sie",
+     "Ich kaufe sie."
+    ]
+   ],
+   "ruCols": [],
+   "note": "Меняется только мужской род: *er* → *ihn*, как *der* → *den*."
+  },
+  "focus": [
+   1,
+   2,
+   3
   ]
  },
  "moin/nichts-1": {
@@ -3189,6 +2084,95 @@
    "note": "*Das Schild ist dunkelblau und weiß.* — оттенок и цвет пишутся слитно."
   }
  },
+ "einkaufen/preise-1": {
+  "point": "*2,50 €* — *zwei Euro fünfzig*; *0,99 €* — *neunundneunzig Cent*",
+  "read": "Цены пишут через запятую — *2,50 €*, — а читают так: сначала евро, потом центы, причём слово *Cent* обычно проглатывают: *zwei Euro fünfzig*. Если евро нет, говорят *neunundneunzig Cent*. И помните из второй темы: единицы идут перед десятками — *neunundzwanzig*, «девять-и-двадцать». С ценами это главная ловушка на слух: *29,90* легко принять за 92.",
+  "table": {
+   "title": "Preise",
+   "ru": "Цены",
+   "head": [
+    "Preis",
+    "So sagt man"
+   ],
+   "rows": [
+    [
+     "0,99 €",
+     "neunundneunzig Cent"
+    ],
+    [
+     "1,50 €",
+     "ein Euro fünfzig"
+    ],
+    [
+     "2,50 €",
+     "zwei Euro fünfzig"
+    ],
+    [
+     "6,80 €",
+     "sechs Euro achtzig"
+    ],
+    [
+     "29,90 €",
+     "neunundzwanzig Euro neunzig"
+    ],
+    [
+     "120,00 €",
+     "hundertzwanzig Euro"
+    ]
+   ],
+   "ruCols": [],
+   "note": "Слово *Cent* обычно опускают: *zwei Euro fünfzig*. После числа *Euro* не получает *-s*."
+  }
+ },
+ "tagesablauf/wann-1": {
+  "point": "*um* + часы, *am* + день или часть дня, *von … bis* — отрезок",
+  "read": "Русское «в» — «в шесть», «в понедельник», «в обед» — по-немецки распадается на два предлога. С часами — *um*: *um sechs Uhr*. С днями и частями дня — *am*: *am Montag*, *am Abend*, *am Wochenende*. Отрезок времени — *von … bis*: *von neun bis zwölf*. Исключение — *in der Nacht*. А *heute*, *morgen* и *jetzt* обходятся вообще без предлога: *Heute habe ich Kurs.*",
+  "table": {
+   "title": "Wann?",
+   "ru": "Когда: um, am, von … bis",
+   "head": [
+    "Что называем",
+    "Wort",
+    "Beispiel"
+   ],
+   "rows": [
+    [
+     "время по часам",
+     "um",
+     "um sechs Uhr / um halb acht"
+    ],
+    [
+     "день недели",
+     "am",
+     "am Montag / am Wochenende"
+    ],
+    [
+     "часть дня",
+     "am",
+     "am Morgen / am Abend"
+    ],
+    [
+     "ночь — исключение",
+     "in der",
+     "in der Nacht"
+    ],
+    [
+     "отрезок времени",
+     "von … bis",
+     "von neun bis zwölf Uhr"
+    ],
+    [
+     "без предлога",
+     "–",
+     "heute / morgen / jetzt"
+    ]
+   ],
+   "ruCols": [
+    0
+   ],
+   "note": "*am* — это слияние *an* и *dem*. Почему так, разберём в теме о жилье."
+  }
+ },
  "moin/uns-1": {
   "point": "*Wir treffen uns um acht.* — *uns*, *euch*, *sich*: «друг друга, себя»",
   "read": "*Wir treffen uns* — «мы встречаемся», *Wir sehen uns morgen* — «увидимся завтра». *uns* здесь — «друг друга». Для других лиц: *ihr trefft euch*, *sie treffen sich*. Так же устроено *sich freuen* «радоваться»: *Ich freue mich*, *Freust du dich?* По-русски на этом месте часто стоит «-ся»: встречаемся, радуюсь.",
@@ -3234,6 +2218,60 @@
    ],
    "ruCols": [],
    "note": "*Wir sehen uns!* — «увидимся!». *mich, dich, sich, uns, euch* — «себя, друг друга»."
+  }
+ },
+ "tagesablauf/klammer-1": {
+  "point": "Корень — на втором месте, приставка — в конце: *Der Kurs fängt um neun an.*",
+  "read": "У *aufstehen*, *anfangen*, *einkaufen* есть приставка, которая в предложении отрывается от глагола. Корень спрягается как обычно и стоит на втором месте, а приставка уходит в конец. Если корень меняет гласную, он меняет её и здесь: *du fängst an*, *er sieht fern*. В словарях такие глаголы часто пишут с чертой: *auf|stehen*.",
+  "table": {
+   "title": "Trennbare Verben",
+   "ru": "Глаголы с отделяемой приставкой",
+   "head": [
+    "Infinitiv",
+    "Beispiel",
+    "По-русски"
+   ],
+   "rows": [
+    [
+     "*auf*stehen",
+     "Ich stehe um sechs Uhr *auf*.",
+     "Я встаю в шесть часов."
+    ],
+    [
+     "*an*fangen",
+     "Der Kurs fängt um neun *an*.",
+     "Курс начинается в девять."
+    ],
+    [
+     "*auf*hören",
+     "Der Kurs hört um halb eins *auf*.",
+     "Курс заканчивается в половине первого."
+    ],
+    [
+     "*ein*kaufen",
+     "Am Mittag kaufe ich *ein*.",
+     "В обед я хожу за покупками."
+    ],
+    [
+     "*auf*räumen",
+     "Am Samstag räume ich *auf*.",
+     "В субботу я убираюсь."
+    ],
+    [
+     "*fern*sehen",
+     "Am Abend sieht Mateo *fern*.",
+     "Вечером Матео смотрит телевизор."
+    ],
+    [
+     "*an*rufen",
+     "Ich rufe dich morgen *an*.",
+     "Я позвоню тебе завтра."
+    ]
+   ],
+   "ruCols": [
+    2
+   ],
+   "note": "*anfangen* и *fernsehen* меняют гласную корня: *du fängst an*, *er sieht fern*."
   }
  },
  "tagesablauf/klammer-4": {
@@ -3423,6 +2461,52 @@
    "note": "*Dann gehe ich* — *dann* на первом месте, глагол второй. *und ich gehe* — *und* места не занимает."
   }
  },
+ "tagesablauf/klammer-2": {
+  "point": "Рамка: *Ich stehe … auf.* — середина зажата между корнем и приставкой",
+  "read": "Вот как это выглядит на схеме. *Ich stehe um sieben Uhr auf.* Корень *stehe* — во второй колонке, приставка *auf* — в последней, в поле «конец». Между ними — середина: время, место, дополнения. Глагол обнимает середину с двух сторон, и эту конструкцию называют рамкой предложения — *Satzklammer*. У *frühstücken* приставки нет, и поле «конец» остаётся пустым.",
+  "rows": [
+   {
+    "slots": [
+     [
+      {
+       "key": "ich",
+       "text": "Ich"
+      }
+     ],
+     [
+      {
+       "key": "steh",
+       "text": "steh+e"
+      }
+     ],
+     [
+      {
+       "key": "um",
+       "text": "um"
+      },
+      {
+       "key": "sieben",
+       "text": "sieben"
+      },
+      {
+       "key": "uhr",
+       "text": "Uhr"
+      }
+     ],
+     [
+      {
+       "key": "auf",
+       "text": "auf"
+      }
+     ]
+    ],
+    "punct": ".",
+    "plain": "Ich stehe um sieben Uhr auf.",
+    "ru": "Я встаю в семь часов.",
+    "audio": "audio/1ac7c5589876.m4a"
+   }
+  ]
+ },
  "freizeit/check-3": {
   "point": "«Давай …?» — *Wollen wir am Sonntag Tennis spielen?*",
   "read": "*Wollen wir am Sonntag Tennis spielen?* Русское «давай…» по-немецки — вопрос с *wollen*: модальный глагол первым, потом *wir*, инфинитив в конце. Это не «хотим ли мы?», а приглашение, и отвечают на него *Ja, gern!* или *Gute Idee!* Сравните с утверждением: *Wir wollen am Sonntag Tennis spielen* — «мы хотим в воскресенье поиграть в теннис».",
@@ -3465,6 +2549,44 @@
     "plain": "Wollen wir am Sonntag Tennis spielen?",
     "ru": "Давай в воскресенье поиграем в теннис?",
     "audio": "audio/a7afaf2e6aec.m4a"
+   }
+  ]
+ },
+ "freizeit/ende-2": {
+  "point": "*Ich kann Tennis spielen.* — модальный глагол второй, инфинитив в конце",
+  "read": "*Ich kann Tennis spielen.* На второе место встаёт модальный глагол *kann* — он и спрягается. А *spielen* уезжает в самый конец и теряет личное окончание: было *spiel+e*, стало *spiel+en*. Получается такая же рамка, как с отделяемой приставкой: *Ich stehe um sieben auf* — *Ich kann Tennis spielen*. Типичная ошибка — *Ich kann spielen Tennis*, по-русски или по-английски.",
+  "rows": [
+   {
+    "slots": [
+     [
+      {
+       "key": "ich",
+       "text": "Ich"
+      }
+     ],
+     [
+      {
+       "key": "kann",
+       "text": "kann"
+      }
+     ],
+     [
+      {
+       "key": "tennis",
+       "text": "Tennis"
+      }
+     ],
+     [
+      {
+       "key": "spiel",
+       "text": "spiel+en"
+      }
+     ]
+    ],
+    "punct": ".",
+    "plain": "Ich kann Tennis spielen.",
+    "ru": "Я умею играть в теннис.",
+    "audio": "audio/91aa530c6bfa.m4a"
    }
   ]
  },
@@ -3903,6 +3025,43 @@
    "note": "*Ich würde gern segeln* — мягче, чем *Ich will segeln*; инфинитив в конце."
   }
  },
+ "freizeit/check-2": {
+  "point": "*Am liebsten lese ich.* — на первом месте, глагол всё равно второй",
+  "read": "*Am liebsten lese ich.* «Люблю» снова передаёт наречие, а не глагол. Для выразительности немцы охотно ставят *am liebsten* на первое место, и тогда глагол, как всегда, второй, а *ich* уходит за него. Можно сказать и спокойнее: *Ich lese am liebsten.* А вот *Am liebsten ich lese* — ошибка: между первой позицией и глаголом ничего не помещается.",
+  "rows": [
+   {
+    "slots": [
+     [
+      {
+       "key": "am",
+       "text": "Am"
+      },
+      {
+       "key": "liebsten",
+       "text": "liebsten"
+      }
+     ],
+     [
+      {
+       "key": "les",
+       "text": "les+e"
+      }
+     ],
+     [
+      {
+       "key": "ich",
+       "text": "ich"
+      }
+     ],
+     []
+    ],
+    "punct": ".",
+    "plain": "Am liebsten lese ich.",
+    "ru": "Больше всего я люблю читать.",
+    "audio": "audio/0989e77211f0.m4a"
+   }
+  ]
+ },
  "freizeit/ende-3": {
   "point": "*Kannst du Tennis spielen?* — *Was willst du am Sonntag machen?*",
   "read": "В вопросах рамка сохраняется. Вопрос да/нет начинается с модального глагола: *Kannst du Tennis spielen?* — «ты умеешь играть в теннис?». В W-вопросе первым идёт вопросительное слово: *Was willst du am Sonntag machen?* — «что ты хочешь делать в воскресенье?». Всё, что между двумя глаголами, — середина: подлежащее, время, дополнение. Инфинитив всегда замыкает предложение.",
@@ -3978,6 +3137,58 @@
     "ru": "Что ты хочешь делать в воскресенье?",
     "audio": "audio/f14f82477492.m4a"
    }
+  ]
+ },
+ "wohnen/wo-2": {
+  "point": "Женский род: *die* → *der*: *in der Küche*, *in der Holtenauer Straße*",
+  "read": "Самая коварная строка — женский род: *die Küche* → *in der Küche*. Да, *der* — тот же артикль, что у мужского рода в именительном падеже. Не пугайтесь: *der Tisch* — «стол», а *in der Küche* — «на кухне», после предлога путаницы не бывает. Главное — не говорить *in die Küche* на вопрос «где?»: это значит «на кухню», куда.",
+  "table": {
+   "title": "in / auf + Dativ",
+   "ru": "Где? — дательный падеж",
+   "head": [
+    "Род",
+    "Wer? Was?",
+    "Wo?"
+   ],
+   "rows": [
+    [
+     "мужской",
+     "der Balkon",
+     "auf d+em Balkon"
+    ],
+    [
+     "средний",
+     "das Haus",
+     "in d+em Haus"
+    ],
+    [
+     "женский",
+     "die Küche",
+     "in d+er Küche"
+    ],
+    [
+     "мужской",
+     "ein Balkon",
+     "auf ein+em Balkon"
+    ],
+    [
+     "средний",
+     "ein Haus",
+     "in ein+em Haus"
+    ],
+    [
+     "женский",
+     "eine Küche",
+     "in ein+er Küche"
+    ]
+   ],
+   "ruCols": [
+    0
+   ],
+   "note": "Во множественном числе — *den*, а к слову добавляется *-n*: *in den Zimmern*."
+  },
+  "focus": [
+   2
   ]
  },
  "wohnen/adjektiv-1": {
@@ -4273,6 +3484,59 @@
    "note": "*Wem gehört der Schlüssel? — Mir.* *Kannst du mir helfen?* *Wie geht es Ihnen?*"
   }
  },
+ "wohnen/wo-1": {
+  "point": "*Wo?* + *in* / *auf* → дательный: *der*, *das* → *dem*",
+  "read": "На вопрос *Wo?* — «где?» — после *in* и *auf* артикль меняет форму. Это дательный падеж, *der Dativ*. Мужской и средний род получают *dem*: *der Balkon* → *auf dem Balkon*, *das Haus* → *in dem Haus*. Русский тоже меняет окончание — «на балконе», «в доме». Разница в том, что немецкий меняет не само слово, а артикль перед ним.",
+  "table": {
+   "title": "in / auf + Dativ",
+   "ru": "Где? — дательный падеж",
+   "head": [
+    "Род",
+    "Wer? Was?",
+    "Wo?"
+   ],
+   "rows": [
+    [
+     "мужской",
+     "der Balkon",
+     "auf d+em Balkon"
+    ],
+    [
+     "средний",
+     "das Haus",
+     "in d+em Haus"
+    ],
+    [
+     "женский",
+     "die Küche",
+     "in d+er Küche"
+    ],
+    [
+     "мужской",
+     "ein Balkon",
+     "auf ein+em Balkon"
+    ],
+    [
+     "средний",
+     "ein Haus",
+     "in ein+em Haus"
+    ],
+    [
+     "женский",
+     "eine Küche",
+     "in ein+er Küche"
+    ]
+   ],
+   "ruCols": [
+    0
+   ],
+   "note": "Во множественном числе — *den*, а к слову добавляется *-n*: *in den Zimmern*."
+  },
+  "focus": [
+   0,
+   1
+  ]
+ },
  "moin/unter-1": {
   "point": "*Der Schlüssel liegt unter dem Tisch.* — unter, neben, hinter, vor, zwischen + дательный",
   "read": "Кроме *in* и *auf* на вопрос *Wo?* отвечают ещё пять предлогов: *unter* «под», *neben* «рядом с», *hinter* «за», *vor* «перед», *zwischen* «между». После них, как после *in* и *auf*, дательный: *der Tisch → unter dem Tisch*, *die Tür → hinter der Tür*, *das Haus → vor dem Haus*. Коротко: *dem* вместо *der* и *das*, *der* вместо *die*.",
@@ -4486,6 +3750,43 @@
    "note": "Порядковое число — число + *-te*: *zwei+te*, *vier+te*; исключения — *erste* и *dritte*. После *im* окончание *-en*: *im zweiten Stock*."
   }
  },
+ "wohnen/im-1": {
+  "point": "*in dem* → *im*, *an dem* → *am*; *auf dem* и *in der* не сливаются",
+  "read": "*in dem* немцы почти всегда сливают в одно слово: *im Keller*, *im Bad*, *im Wohnzimmer*. Полную форму вы услышите редко. С *auf* такого слияния нет — *auf dem Balkon*, и с женским родом тоже — *in der Küche*. А *am* вы уже знаете по *am Montag*: это тоже слияние, *an dem*. Тот же механизм, только с другим предлогом.",
+  "table": {
+   "title": "im = in dem",
+   "ru": "Предлог и артикль сливаются",
+   "head": [
+    "Präposition + Artikel",
+    "Form",
+    "Beispiel"
+   ],
+   "rows": [
+    [
+     "in + d+em",
+     "im",
+     "Die Waschmaschine steht im Keller."
+    ],
+    [
+     "an + d+em",
+     "am",
+     "Am Montag besichtigt Mateo die Wohnung."
+    ],
+    [
+     "auf + d+em",
+     "auf dem",
+     "Wir sitzen auf dem Balkon."
+    ],
+    [
+     "in + d+er",
+     "in der",
+     "Der Herd ist in der Küche."
+    ]
+   ],
+   "ruCols": [],
+   "note": "*in* и *an* сливаются с *dem*. *auf dem* и *in der* остаются как есть."
+  }
+ },
  "wohnen/lesen2-1": {
   "point": "*Zi.* — комната, *Whg.* — квартира, *Blk.* — балкон, *KM* / *NK* / *WM* — аренда",
   "read": "Объявления экономят место: *2-Zi.-Whg., 55 m², Blk., KM 520 €*. Сокращения повторяются, поэтому таблица — справочник для действия. Найдите число комнат, наличие балкона и способ указания цены. Не нужно заучивать всё до чтения: в игре вы вернётесь к нужным сокращениям, чтобы выбрать подходящее объявление.",
@@ -4558,6 +3859,73 @@
     2
    ]
   }
+ },
+ "wohnen/komposita-1": {
+  "point": "Род и мн. ч. — по последней части: *die Haustür*, *das Treppenhaus*",
+  "read": "В сложном слове главная — последняя часть. Она называет предмет и даёт ему род: *das Haus* + *die Tür* = *die Haustür*, ведь это дверь, а не дом. И наоборот: *die Treppe* + *das Haus* = *das Treppenhaus*, лестничная клетка. Множественное число — тоже по последней части: *die Kühlschränke*, как *die Schränke*. А ударение падает на первую: *KÜHLschrank*.",
+  "table": {
+   "title": "Zusammengesetzte Wörter",
+   "ru": "Сложные слова",
+   "head": [
+    "Wort 1",
+    "Wort 2",
+    "Kompositum",
+    "По-русски"
+   ],
+   "rows": [
+    [
+     "schlafen",
+     "das Zimmer",
+     "das Schlaf*zimmer*",
+     "спальня"
+    ],
+    [
+     "wohnen",
+     "das Zimmer",
+     "das Wohn*zimmer*",
+     "гостиная"
+    ],
+    [
+     "kühl",
+     "der Schrank",
+     "der Kühl*schrank*",
+     "холодильник"
+    ],
+    [
+     "die Kleider",
+     "der Schrank",
+     "der Kleider*schrank*",
+     "платяной шкаф"
+    ],
+    [
+     "waschen",
+     "die Maschine",
+     "die Wasch*maschine*",
+     "стиральная машина"
+    ],
+    [
+     "das Haus",
+     "die Tür",
+     "die Haus*tür*",
+     "входная дверь"
+    ],
+    [
+     "die Treppe",
+     "das Haus",
+     "das Treppen*haus*",
+     "лестничная клетка"
+    ]
+   ],
+   "ruCols": [
+    3
+   ],
+   "note": "Род и множественное число — по последней части. Ударение — на первой."
+  },
+  "focus": [
+   2,
+   5,
+   6
+  ]
  },
  "moin/geoeffnet-1": {
   "point": "*Der Kiosk ist geöffnet.* — *geöffnet* и *geschlossen* как прилагательные после *sein*",
@@ -4750,6 +4118,45 @@
     "audio": "audio/6e7dc24942bc.m4a"
    }
   ]
+ },
+ "stadt/mit-1": {
+  "point": "*mit* + дательный: *mit dem Bus*, *mit dem Fahrrad*, *mit der Straßenbahn*",
+  "read": "После *mit* всегда дательный падеж — тот же, что после *in* и *auf* в прошлой теме. *der Bus* → *mit dem Bus*, *das Fahrrad* → *mit dem Fahrrad*, *die Straßenbahn* → *mit der Straßenbahn*. Мужской и средний род — *dem*, женский — *der*. Типичная ошибка — *mit die Straßenbahn*: за предлогом легко забыть, что артикль меняется.",
+  "table": {
+   "title": "mit + Dativ",
+   "ru": "На чём вы едете?",
+   "head": [
+    "Род",
+    "Nominativ",
+    "Dativ"
+   ],
+   "rows": [
+    [
+     "мужской",
+     "der Bus",
+     "mit d+em Bus"
+    ],
+    [
+     "средний",
+     "das Fahrrad",
+     "mit d+em Fahrrad"
+    ],
+    [
+     "женский",
+     "die Straßenbahn",
+     "mit d+er Straßenbahn"
+    ],
+    [
+     "мн. ч.",
+     "die Freunde",
+     "mit d+en Freunde+n"
+    ]
+   ],
+   "ruCols": [
+    0
+   ],
+   "note": "Пешком — без предлога *mit* и без артикля: *zu Fuß*."
+  }
  },
  "stadt/praep-2": {
   "point": "*nach* — города и страны: *nach Lübeck*; *zu* — места и люди: *zum Bahnhof*",
@@ -5044,6 +4451,48 @@
    }
   ]
  },
+ "stadt/kurz-1": {
+  "point": "*zum* — для *der* и *das*, *zur* — для *die*: *zum Bahnhof*, *zur Post*",
+  "read": "Как *in dem* стало *im*, так и здесь предлог сливается с артиклем: *zu dem* → *zum*, *zu der* → *zur*, *bei dem* → *beim*, *von dem* → *vom*. В разговоре полные формы почти не звучат. Следите за родом: *zum Bahnhof*, но *zur Post*. Перепутав *zum* и *zur*, вы ошибаетесь не в предлоге, а в артикле.",
+  "table": {
+   "title": "zum, zur, beim, vom",
+   "ru": "Предлог и артикль сливаются",
+   "head": [
+    "Präposition + Artikel",
+    "Kurzform",
+    "Beispiel"
+   ],
+   "rows": [
+    [
+     "zu + d+em",
+     "zum",
+     "Wie komme ich zum Bahnhof?"
+    ],
+    [
+     "zu + d+er",
+     "zur",
+     "Ich gehe zur Post."
+    ],
+    [
+     "bei + d+em",
+     "beim",
+     "Mateo ist beim Arzt."
+    ],
+    [
+     "von + d+em",
+     "vom",
+     "Der Bus fährt vom Bahnhof."
+    ],
+    [
+     "in + d+em",
+     "im",
+     "Dana sitzt im Zug."
+    ]
+   ],
+   "ruCols": [],
+   "note": "*zur* — единственное слияние с женским *der*. *von der*, *bei der*, *mit dem* не сливаются."
+  }
+ },
  "stadt/praep-1": {
   "point": "*aus*, *bei*, *mit*, *nach*, *von*, *zu* — всегда с дательным",
   "read": "*mit* — не единственный такой предлог. Ещё пять ведут себя точно так же: *zu*, *bei*, *von*, *aus*, *nach*. После них всегда дательный падеж — что бы вы ни спрашивали: «где», «куда» или «откуда». Помните *aus der Schweiz* из первой темы? Вот и объяснение: *aus* требует дательного, и *die Schweiz* становится *der Schweiz*.",
@@ -5129,6 +4578,38 @@
    "ruCols": [],
    "note": "После *die* — *-e*: *die zweite Straße*. После *zur*, *zum*, *im*, *am* — *-en*: *bis zur zweiten Ampel*, *im zweiten Stock*."
   }
+ },
+ "stadt/imperativ-2": {
+  "point": "*Gehen Sie geradeaus!* — глагол первым, позиция 1 пуста, *Sie* обязательно",
+  "read": "Глагол переехал в начало, а первая позиция опустела — как в вопросе да/нет: *Gehen Sie geradeaus!* Просьбу от вопроса отличают интонация и восклицательный знак. Чтобы звучало мягче, добавьте *bitte*: *Gehen Sie bitte geradeaus.* А вот *Sie* выбросить нельзя, хотя по-русски мы говорим просто «идите»: *Gehen geradeaus!* — ошибка.",
+  "rows": [
+   {
+    "slots": [
+     [],
+     [
+      {
+       "key": "geh",
+       "text": "Geh+en"
+      }
+     ],
+     [
+      {
+       "key": "sie",
+       "text": "Sie"
+      },
+      {
+       "key": "geradeaus",
+       "text": "geradeaus"
+      }
+     ],
+     []
+    ],
+    "punct": "!",
+    "plain": "Gehen Sie geradeaus!",
+    "ru": "Идите прямо!",
+    "audio": "audio/158a3b81daf9.m4a"
+   }
+  ]
  },
  "stadt/hause-1": {
   "point": "*Wo?* — *zu Hause*, *Wohin?* — *nach Hause*, *Woher?* — *von zu Hause*",
@@ -5256,6 +4737,48 @@
   "focus": [
    5,
    6
+  ]
+ },
+ "gesundheit/muessen-2": {
+  "point": "*Ich muss im Bett bleiben.* — модальный глагол второй, инфинитив в конце",
+  "read": "*Muss* встаёт на второе место, а *bleibe* уезжает в самый конец и превращается в инфинитив *bleiben*. Между ними образуется рамка, и всё остальное помещается внутри. По-русски «мне нужно» — с дательным падежом, а по-немецки подлежащее самое обычное: *ich muss*, буквально «я должен». Сказать *Mir muss* нельзя.",
+  "rows": [
+   {
+    "slots": [
+     [
+      {
+       "key": "ich",
+       "text": "Ich"
+      }
+     ],
+     [
+      {
+       "key": "muss",
+       "text": "muss"
+      }
+     ],
+     [
+      {
+       "key": "im",
+       "text": "im"
+      },
+      {
+       "key": "bett",
+       "text": "Bett"
+      }
+     ],
+     [
+      {
+       "key": "bleib",
+       "text": "bleib+en"
+      }
+     ]
+    ],
+    "punct": ".",
+    "plain": "Ich muss im Bett bleiben.",
+    "ru": "Мне нужно лежать в постели.",
+    "audio": "audio/b27cee309138.m4a"
+   }
   ]
  },
  "gesundheit/imperativ-3": {
@@ -5404,6 +4927,137 @@
     "plain": "Darf ich morgen zum Kurs gehen?",
     "ru": "Можно мне завтра на курс?",
     "audio": "audio/ec47f2a0bdda.m4a"
+   }
+  ]
+ },
+ "gesundheit/schmerzen-1": {
+  "point": "*Ich habe Kopfschmerzen.* = *Mein Kopf tut weh.*",
+  "read": "Сказать о боли можно двумя способами. Первый — через *haben*: часть тела плюс *-schmerzen*, одним словом: *Kopfschmerzen*, *Bauchschmerzen*, *Zahnschmerzen*. Такое слово всегда во множественном числе и без артикля. Второй способ — через *wehtun*: *Mein Kopf tut weh*. Здесь подлежащее — часть тела, а *weh* уходит в конец предложения, как отделяемая приставка.",
+  "table": {
+   "title": "Was tut weh?",
+   "ru": "Что болит",
+   "head": [
+    "wehtun",
+    "Ich habe …schmerzen",
+    "По-русски"
+   ],
+   "rows": [
+    [
+     "Mein *Kopf* tut weh.",
+     "Ich habe *Kopf*schmerzen.",
+     "болит голова"
+    ],
+    [
+     "Mein *Hals* tut weh.",
+     "Ich habe *Hals*schmerzen.",
+     "болит горло"
+    ],
+    [
+     "Mein *Bauch* tut weh.",
+     "Ich habe *Bauch*schmerzen.",
+     "болит живот"
+    ],
+    [
+     "Mein *Rücken* tut weh.",
+     "Ich habe *Rücken*schmerzen.",
+     "болит спина"
+    ],
+    [
+     "Mein *Zahn* tut weh.",
+     "Ich habe *Zahn*schmerzen.",
+     "болит зуб"
+    ],
+    [
+     "Meine *Ohren* tun weh.",
+     "Ich habe *Ohren*schmerzen.",
+     "болят уши"
+    ],
+    [
+     "Meine *Hand* tut weh.",
+     "–",
+     "болит рука"
+    ]
+   ],
+   "ruCols": [
+    2
+   ],
+   "note": "Слова на *-schmerzen* — всегда во множественном числе и без артикля."
+  },
+  "focus": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ]
+ },
+ "gesundheit/muessen-4": {
+  "point": "«Нельзя» — *nicht dürfen*, «не нужно» — *nicht müssen*",
+  "read": "*dürfen* — «можно, разрешено». Чаще всего его слышат с отрицанием: *Du darfst nicht rauchen* — «тебе нельзя курить». Главная ловушка этой темы: Запрет здесь выражает *nicht dürfen*. *Du musst nicht kommen* значит совсем другое — «тебе не нужно приходить», хочешь — приходи. Английское must not тоже подведёт: по смыслу оно ближе к *darf nicht*.",
+  "rows": [
+   {
+    "slots": [
+     [
+      {
+       "key": "du",
+       "text": "Du"
+      }
+     ],
+     [
+      {
+       "key": "darf",
+       "text": "darf+st"
+      }
+     ],
+     [
+      {
+       "key": "nicht",
+       "text": "nicht"
+      }
+     ],
+     [
+      {
+       "key": "rauch",
+       "text": "rauch+en"
+      }
+     ]
+    ],
+    "punct": ".",
+    "plain": "Du darfst nicht rauchen.",
+    "ru": "Тебе нельзя курить.",
+    "audio": "audio/783485b2a3d1.m4a"
+   },
+   {
+    "slots": [
+     [
+      {
+       "key": "du",
+       "text": "Du"
+      }
+     ],
+     [
+      {
+       "key": "muss",
+       "text": "muss+t"
+      }
+     ],
+     [
+      {
+       "key": "nicht",
+       "text": "nicht"
+      }
+     ],
+     [
+      {
+       "key": "komm",
+       "text": "komm+en"
+      }
+     ]
+    ],
+    "punct": ".",
+    "plain": "Du musst nicht kommen.",
+    "ru": "Тебе не нужно приходить.",
+    "audio": "audio/33821d243616.m4a"
    }
   ]
  },
@@ -5894,6 +5548,99 @@
    "note": "*un-* = не-, *-los* = без, *-bar* = можно: *unbekannt, arbeitslos, erreichbar*."
   }
  },
+ "arbeit/perfekt-2": {
+  "point": "*Ich habe in Buenos Aires gearbeitet.* — *haben* второй, причастие в конце",
+  "read": "На второе место встаёт *habe* — обычная форма *haben*. А смысловой глагол уходит в конец и превращается в причастие, Partizip II: *gearbeitet*. Получается та же рамка, что с *muss … bleiben*. По-русски всё сказано одним словом «работал», а по-немецки работа разделена: лицо показывает *habe*, а смысл — *gearbeitet*.",
+  "rows": [
+   {
+    "slots": [
+     [
+      {
+       "key": "ich",
+       "text": "Ich"
+      }
+     ],
+     [
+      {
+       "key": "hab",
+       "text": "hab+e"
+      }
+     ],
+     [
+      {
+       "key": "in",
+       "text": "in"
+      },
+      {
+       "key": "buenos",
+       "text": "Buenos"
+      },
+      {
+       "key": "aires",
+       "text": "Aires"
+      }
+     ],
+     [
+      {
+       "key": "gearbeit",
+       "text": "*ge*arbeit+et"
+      }
+     ]
+    ],
+    "punct": ".",
+    "plain": "Ich habe in Buenos Aires gearbeitet.",
+    "ru": "Я работал в Буэнос-Айресе.",
+    "audio": "audio/e26cf52502a5.m4a"
+   }
+  ]
+ },
+ "arbeit/war-hatte-1": {
+  "point": "*ich war, du warst, er war* · *ich hatte, du hattest, er hatte*",
+  "read": "Для *sein* и *haben* о прошлом говорят иначе — короткой формой, Präteritum. *Ich war Koch* — «я был поваром», *Ich hatte viel Stress* — «у меня было много стресса». Формы *ich* и *er* совпадают: *ich war*, *er war*, *ich hatte*, *sie hatte*, — как у *ich möchte* — *er möchte* и *ich kann* — *er kann*. Остальные окончания вам знакомы: *du warst*, *wir waren*, *ihr hattet*.",
+  "table": {
+   "title": "Präteritum: war und hatte",
+   "ru": "Прошедшее время sein и haben",
+   "head": [
+    "Person",
+    "sein",
+    "haben"
+   ],
+   "rows": [
+    [
+     "ich",
+     "war",
+     "hatt+e"
+    ],
+    [
+     "du",
+     "war+st",
+     "hatt+est"
+    ],
+    [
+     "er / sie / es",
+     "war",
+     "hatt+e"
+    ],
+    [
+     "wir",
+     "war+en",
+     "hatt+en"
+    ],
+    [
+     "ihr",
+     "war+t",
+     "hatt+et"
+    ],
+    [
+     "sie / Sie",
+     "war+en",
+     "hatt+en"
+    ]
+   ],
+   "ruCols": [],
+   "note": "У *ich* и *er / sie / es* — одна и та же форма."
+  }
+ },
  "arbeit/war-hatte-2": {
   "point": "«Был», «было» — *war*, *hatte*; остальные глаголы — Perfekt",
   "read": "В этой теме для *sein* и *haben* тренируем частые короткие формы *war* и *hatte*. У них нет рамки с причастием: *Ich war Koch*, *Ich hatte viel Arbeit*. Сравните с *Ich habe gearbeitet*. Это удобная опора для первых рассказов о прошлом, а не запрет на Perfekt этих глаголов: формы *ist gewesen* и *hat gehabt* тоже существуют.",
@@ -5978,6 +5725,63 @@
     "audio": "audio/e26cf52502a5.m4a"
    }
   ]
+ },
+ "arbeit/perfekt-4": {
+  "point": "Слабые: *ge-* + основа + *-t*: *gemacht*; после *-t* — *-et*: *gearbeitet*",
+  "read": "Как получить причастие? У большинства глаголов — по формуле *ge-* + основа + *-t*: *machen → gemacht*, *kochen → gekocht*, *lernen → gelernt*. Если основа кончается на *-t* или *-d*, перед окончанием появляется *e*: *arbeiten → gearbeitet*. Иначе не выговорить. Такие глаголы называют слабыми, и их большинство. По той же формуле: *wohnen → gewohnt*, *spielen → gespielt*, *kaufen → gekauft*.",
+  "table": {
+   "title": "Perfekt mit haben",
+   "ru": "haben + Partizip II",
+   "head": [
+    "Infinitiv",
+    "Partizip II",
+    "Beispiel"
+   ],
+   "rows": [
+    [
+     "machen",
+     "*ge*mach+t",
+     "Was *hast* du *gemacht*?"
+    ],
+    [
+     "kochen",
+     "*ge*koch+t",
+     "Er *hat* Pasta *gekocht*."
+    ],
+    [
+     "lernen",
+     "*ge*lern+t",
+     "Wir *haben* Deutsch *gelernt*."
+    ],
+    [
+     "arbeiten",
+     "*ge*arbeit+et",
+     "Ich *habe* in Buenos Aires *gearbeitet*."
+    ],
+    [
+     "lesen",
+     "*ge*les+en",
+     "Ich *habe* eine Anzeige *gelesen*."
+    ],
+    [
+     "schreiben",
+     "*ge*schrieb+en",
+     "*Hast* du eine E-Mail *geschrieben*?"
+    ],
+    [
+     "finden",
+     "*ge*fund+en",
+     "Er *hat* eine Stelle *gefunden*."
+    ],
+    [
+     "sprechen",
+     "*ge*sproch+en",
+     "Wir *haben* Deutsch *gesprochen*."
+    ]
+   ],
+   "ruCols": [],
+   "note": "Формы нужны для рассказа о сделанных делах. Возвращайтесь к таблице во время чтения отчёта. Здесь показаны частые глаголы с ge-."
+  }
  },
  "arbeit/maennlich-weiblich-1": {
   "point": "Женщина: *+in*, женщины: *+innen*; умлаут — *Ärztin*, *Köchin*",
@@ -6242,6 +6046,84 @@
    }
   ]
  },
+ "reisen/perfekt-1": {
+  "point": "Perfekt: *haben* или *sein* на 2-м месте + причастие в конце",
+  "read": "Perfekt с *haben* вы уже знаете: *Wir haben im Hotel gefrühstückt.* Но о поездке Дана говорит *Wir sind nach Hamburg gefahren.* Рамка та же: вспомогательный глагол на втором месте, причастие в самом конце. Меняется только вспомогательный глагол — с глаголами движения это *sein*. По-русски «мы поехали» — одно слово, а по-немецки — два, и между ними помещается вся середина предложения.",
+  "rows": [
+   {
+    "slots": [
+     [
+      {
+       "key": "wir",
+       "text": "Wir"
+      }
+     ],
+     [
+      {
+       "key": "hab",
+       "text": "hab+en"
+      }
+     ],
+     [
+      {
+       "key": "im",
+       "text": "im"
+      },
+      {
+       "key": "hotel",
+       "text": "Hotel"
+      }
+     ],
+     [
+      {
+       "key": "gefrühstückt",
+       "text": "gefrühstückt"
+      }
+     ]
+    ],
+    "punct": ".",
+    "plain": "Wir haben im Hotel gefrühstückt.",
+    "ru": "Мы позавтракали в отеле.",
+    "audio": "audio/cd7af7ca5e13.m4a"
+   },
+   {
+    "slots": [
+     [
+      {
+       "key": "wir",
+       "text": "Wir"
+      }
+     ],
+     [
+      {
+       "key": "sind",
+       "text": "sind"
+      }
+     ],
+     [
+      {
+       "key": "nach",
+       "text": "nach"
+      },
+      {
+       "key": "hamburg",
+       "text": "Hamburg"
+      }
+     ],
+     [
+      {
+       "key": "gefahren",
+       "text": "gefahren"
+      }
+     ]
+    ],
+    "punct": ".",
+    "plain": "Wir sind nach Hamburg gefahren.",
+    "ru": "Мы поехали в Гамбург.",
+    "audio": "audio/4090cfa66d69.m4a"
+   }
+  ]
+ },
  "reisen/haben-sein-1": {
   "point": "В наших примерах: *ist gefahren / gegangen / geblieben*, но *hat gekauft / geregnet*",
   "read": "Для показанных глаголов есть полезная опора: перемещение в другое место — *ist gefahren*, *ist gegangen*, *ist angekommen*; изменение состояния — *ist aufgestanden*. Отдельно запоминаем *ist geblieben*. Остальные глаголы этой таблицы — *hat gemacht*, *hat gekauft*, *hat geregnet*. Это рабочая схема для наших примеров A1, а не правило без исключений обо всех немецких глаголах. В игре нужно восстановить целые события поездки.",
@@ -6305,6 +6187,56 @@
    ],
    "note": "Сами *sein* и *haben* в прошлом обычно звучат как *war* и *hatte*: *Wie war die Reise?*"
   }
+ },
+ "reisen/angekommen-2": {
+  "point": "*ankommen — ist angekommen*: *ge* — между приставкой и корнем",
+  "read": "Приставка остаётся на месте, а причастие вырастает из неё: *an* + *ge* + *kommen* — *angekommen*, одним словом. Место глагола занимает *ist*: прибытие — тоже движение. Так же *abfahren — ist abgefahren*, *aufstehen — ist aufgestanden*. Частые ошибки — *geankommen* и *angekommt*: *ge* никогда не встаёт перед отделяемой приставкой, а причастие от *kommen* кончается на *-en*.",
+  "rows": [
+   {
+    "slots": [
+     [
+      {
+       "key": "der",
+       "text": "Der"
+      },
+      {
+       "key": "zug",
+       "text": "Zug"
+      }
+     ],
+     [
+      {
+       "key": "ist",
+       "text": "ist"
+      }
+     ],
+     [
+      {
+       "key": "um",
+       "text": "um"
+      },
+      {
+       "key": "acht",
+       "text": "acht"
+      },
+      {
+       "key": "uhr",
+       "text": "Uhr"
+      }
+     ],
+     [
+      {
+       "key": "an",
+       "text": "an+gekommen"
+      }
+     ]
+    ],
+    "punct": ".",
+    "plain": "Der Zug ist um acht Uhr angekommen.",
+    "ru": "Поезд прибыл в восемь часов.",
+    "audio": "audio/7a8fbb74d3aa.m4a"
+   }
+  ]
  },
  "reisen/check-1": {
   "point": "*Um acht Uhr ist der Zug angekommen.* — причастие остаётся в конце",
@@ -6391,6 +6323,74 @@
    "ruCols": [],
    "note": "Все месяцы — мужского рода: *der Mai*, *im Mai*. Но с датой — *am*: *am ersten Mai*."
   }
+ },
+ "reisen/datum-2": {
+  "point": "С 20 — *-ste*; «когда?» — *am …-en*: *am ersten Mai*, *am zwanzigsten Mai*",
+  "read": "С 20 — *-ste*, как в теме 8: *der zwanzigste*, *der einunddreißigste*. Новое здесь одно — «когда?». По-русски «первого мая» — родительный падеж, а по-немецки *am* и окончание *-en*: *am ersten Mai*. После *vom* и *bis zum* — тоже *-en*, поэтому Матео и сказал *vom zweiten bis zum vierten Juni*. Спросить дату можно так: *Welches Datum ist heute?*",
+  "table": {
+   "title": "Ordinalzahlen und Datum",
+   "ru": "Порядковые числа и дата",
+   "head": [
+    "Datum",
+    "Heute ist …",
+    "Wann?"
+   ],
+   "rows": [
+    [
+     "1. Mai",
+     "der erst+e Mai",
+     "am erst+en Mai"
+    ],
+    [
+     "2. Mai",
+     "der zwei+te Mai",
+     "am zwei+ten Mai"
+    ],
+    [
+     "3. Mai",
+     "der dritt+e Mai",
+     "am dritt+en Mai"
+    ],
+    [
+     "4. Mai",
+     "der vier+te Mai",
+     "am vier+ten Mai"
+    ],
+    [
+     "7. Mai",
+     "der sieb+te Mai",
+     "am sieb+ten Mai"
+    ],
+    [
+     "8. Mai",
+     "der acht+e Mai",
+     "am acht+en Mai"
+    ],
+    [
+     "19. Mai",
+     "der neunzehn+te Mai",
+     "am neunzehn+ten Mai"
+    ],
+    [
+     "20. Mai",
+     "der zwanzig+ste Mai",
+     "am zwanzig+sten Mai"
+    ],
+    [
+     "31. Mai",
+     "der einunddreißig+ste Mai",
+     "am einunddreißig+sten Mai"
+    ]
+   ],
+   "ruCols": [],
+   "note": "Порядковые числа — по правилу темы 8: до 19 *-te*, с 20 *-ste*. Новое — *am*, *vom*, *bis zum* и окончание *-en*."
+  },
+  "focus": [
+   0,
+   6,
+   7,
+   8
+  ]
  },
  "reisen/perfekt-2": {
   "point": "Всё новое — внутрь рамки: *Am Freitag sind wir mit dem Zug nach Hamburg gefahren.*",

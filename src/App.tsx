@@ -97,7 +97,7 @@ export function Footer({ children }: { children?: ReactNode }) {
       {children}
       <p>
         Озвучка курса — <a href="https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base">Qwen3-TTS 1.7B</a> (Apache 2.0).
-        {" "}Новая озвучка и сообщения игры Moin — <a href="https://huggingface.co/k2-fsa/OmniVoice">OmniVoice</a> (модель CC-BY-NC).
+        {" "}Новая озвучка и реплики игры Moin — <a href="https://huggingface.co/k2-fsa/OmniVoice">OmniVoice</a> (модель CC-BY-NC).
         {" "}Задания и записи авторские. Экзаменационная практика ориентирована на Start Deutsch 1 (A1),
         {" "}<a href="https://www.telc.net/sprachpruefungen/deutsch/start-deutsch-2-telc-deutsch-a2/">Start Deutsch 2 (A2)</a>
         {" "}и <a href="https://www.telc.net/sprachpruefungen/deutsch/zertifikat-deutsch-telc-deutsch-b1/">Zertifikat Deutsch / telc Deutsch B1</a>.

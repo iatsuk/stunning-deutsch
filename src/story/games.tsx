@@ -18,14 +18,11 @@ import { phraseAudio, storyAudio, wordInfo } from "./audio";
 import { phrases } from "./data";
 import { wordCount } from "../assessment/logic";
 import {
-  canMove,
   coinTotal,
   lockKey,
   lockStart,
-  MOVES,
   PARTNER,
   placeKey,
-  walk,
 } from "./logic";
 import { lockCard, PLURALS } from "./memory";
 import type {
@@ -33,9 +30,7 @@ import type {
   ChatTurn,
   Challenge,
   LockRound,
-  Move,
   OralRound,
-  VoiceLine,
 } from "./types";
 
 // Игровые действия истории. Всё управляется нажатием и с клавиатуры:
@@ -62,7 +57,7 @@ export type Game<K extends Challenge["kind"]> = {
   miss: (word?: string) => void;
 };
 
-/** Общие свойства игры без самого задания: так её встраивает и шаг, и сцена. */
+/** Общие свойства игры без самого задания для встраивания в сцену. */
 export type GameProps = Omit<Game<Challenge["kind"]>, "c">;
 
 const asList = (value: Answer) => (Array.isArray(value) ? value : []);
@@ -639,17 +634,11 @@ export function ClockGame({ c, value, disabled, change }: Game<"clock">) {
     </div>
   );
 }
-
-const ARROWS: Record<Move, string> = {
-  links: "↰",
-  geradeaus: "↑",
-  rechts: "↱",
-};
 const CELL = 110;
 const EDGE = 56;
 const point = (n: number) => EDGE + n * CELL;
 
-type Plan = Extract<Challenge, { kind: "route" | "algo" }>;
+type Plan = Extract<Challenge, { kind: "algo" }>;
 /** Схема квартала: улицы, пройденный путь, места и идущий. reveal — места подписаны сразу. */
 export function RouteMap({ c, path, angle, reveal }: { c: Plan; path: { x: number; y: number }[]; angle: number; reveal?: boolean }) {
   const at = path[path.length - 1];
@@ -692,42 +681,6 @@ export function RouteMap({ c, path, angle, reveal }: { c: Plan; path: { x: numbe
 /** Угол копится, чтобы стрелка поворачивала коротким путём, а не через весь круг. */
 export const walkAngle = (heading: number, moves: string[]) =>
   moves.reduce((sum, move) => sum + (move === "links" ? -90 : move === "rechts" ? 90 : 0), heading * 90);
-
-export function Walk({ c, value, disabled, change }: Game<"route">) {
-  const moves = asList(value);
-  const path = walk(c, moves);
-  const at = path[path.length - 1];
-  const here = c.places[placeKey(at)];
-  return (
-    <div className="moin-walk">
-      <RouteMap c={c} path={path} angle={walkAngle(c.start.heading, moves)} />
-      <p className="moin-count" role="status" lang="de">
-        {here ? `Hier ist ${here}.` : "Eine Kreuzung."}
-      </p>
-      <div className="moin-walk-moves">
-        {MOVES.map((move) => (
-          <button
-            type="button"
-            key={move}
-            lang="de"
-            disabled={disabled || !canMove(c, moves, move)}
-            onClick={() => change([...moves, move])}
-          >
-            <span aria-hidden="true">{ARROWS[move]}</span> {move}
-          </button>
-        ))}
-      </div>
-      <button
-        type="button"
-        className="link-button"
-        disabled={disabled || !moves.length}
-        onClick={() => change([])}
-      >
-        Вернуться к остановке
-      </button>
-    </div>
-  );
-}
 
 const coinLabel = (coin: number) =>
   coin >= 100 ? `${coin / 100} €` : `${coin} ct`;
@@ -826,38 +779,6 @@ export function Calendar({
   );
 }
 
-export function VoiceLines({ lines }: { lines: VoiceLine[] }) {
-  const [open, setOpen] = useState(false);
-  return (
-    <div className="moin-voices">
-      <div className="kicker">Послушайте</div>
-      {lines.map((line) => (
-        <div key={line.text}>
-          <PlayButton
-            src={storyAudio(line.text, line.voice)}
-            size="md"
-            label={`Послушать: ${line.who}`}
-          />
-          <span>{line.who}</span>
-          {open && (
-            <p>
-              <span lang="de">{line.text}</span> <small>{line.ru}</small>
-            </p>
-          )}
-        </div>
-      ))}
-      <button
-        type="button"
-        className="link-button"
-        aria-expanded={open}
-        onClick={() => setOpen(!open)}
-      >
-        {open ? "Скрыть текст" : "Показать текст"}
-      </button>
-    </div>
-  );
-}
-
 /** Вставка букв с умлаутом в поле, где стоит курсор. */
 export function UmlautKeys({
   field,
@@ -902,7 +823,6 @@ export const textInput = {
   spellCheck: false,
 } as const;
 
-/** После второй неудачной проверки открываем ответ: незнакомое слово иначе не вспомнить. */
 export function Write({
   c,
   value,
@@ -951,24 +871,6 @@ export function Write({
         />
       )}
     </div>
-  );
-}
-
-function ReviewItem({
-  id,
-  onRight,
-}: {
-  id: string;
-  onRight: (id: string) => void;
-}) {
-  const phrase = phrases[id];
-  return (
-    <Dictation
-      de={phrase.de}
-      ru={phrase.ru}
-      audio={storyAudio(phrase.de)}
-      onRight={() => onRight(id)}
-    />
   );
 }
 
@@ -1046,30 +948,6 @@ function Dictation({
         </p>
       )}
     </form>
-  );
-}
-
-/** Выражения главы и прошлые ошибки: запись на слух, можно пропустить и вернуться позже. */
-export function ChapterReview({
-  items,
-  onRight,
-}: {
-  items: string[];
-  onRight: (id: string) => void;
-}) {
-  const [shown] = useState(items);
-  return (
-    <section className="moin-review">
-      <div className="kicker">Закрепление</div>
-      <h3>Запишите на слух</h3>
-      <p>
-        Послушайте и напишите фразу по памяти. Это необязательно: то, в чём вы
-        ошиблись, вернётся в конце следующей главы.
-      </p>
-      {shown.map((id) => (
-        <ReviewItem key={id} id={id} onRight={onRight} />
-      ))}
-    </section>
   );
 }
 

@@ -17,10 +17,9 @@ import { copyFileSync, existsSync, mkdirSync, readdirSync, readFileSync, rmSync,
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { parse } from "yaml";
-import { episodes as gameEpisodes, phrases as storyPhrases } from "../src/story/data.ts";
+import { phrases as storyPhrases } from "../src/story/data.ts";
 import { sceneChapters } from "../src/story/scenes/index.ts";
 import { audioKey, storyLines, storyWords, validateStory } from "../src/story/logic.ts";
-import { stepRules } from "../src/story/rules.ts";
 import { sceneRules } from "../src/story/scene.ts";
 import { SCENE_RULES } from "../src/story/scenes/rules.ts";
 import { uhrzeit } from "../src/lib/german.ts";
@@ -61,8 +60,8 @@ const EXERCISE_TYPES = ["choice", "gap", "order"];
 const PRONOUNS = new Set(["ich", "du", "er", "sie", "es", "wir", "ihr"]);
 const WRONG_ENDING = { e: "en", st: "t", t: "st", en: "st" };
 
-// Прототип сцен (#/a1/moin-neu) проверяется и озвучивается вместе с игрой.
-const storyEpisodes = [...gameEpisodes, ...sceneChapters];
+// Сцены курса A1 проверяются и озвучиваются при сборке контента.
+const storyEpisodes = sceneChapters;
 const errors = validateStory(storyEpisodes, storyPhrases);
 const warnings = [];
 const fail = (where, message) => errors.push(`${where}: ${message}`);
@@ -176,13 +175,12 @@ if (!ONLY) {
 // Правила игры — фрагменты разбора уроков A1: текст и схема берутся отсюда, а не копируются руками.
 const storyRules = {};
 /** Копирует фрагмент разбора урока в правила игры; lessons — до какого урока A1 он может быть. */
-function addRule(where, ref, lessons = Infinity) {
+function addRule(where, ref, lessons) {
   const [topicId, beatId] = ref.split("/");
   // Правила новой версии Moin (src/story/scenes/rules.ts) — только для сцен и не раньше своей главы.
   if (topicId === "moin") {
     const own = SCENE_RULES[ref];
     if (!own) return fail(where, `правило ${ref}: нет в src/story/scenes/rules.ts`);
-    if (lessons === Infinity) return fail(where, `правило ${ref}: правила новой версии — только для сцен`);
     if (own.chapter > lessons) fail(where, `правило ${ref}: оно с главы ${own.chapter}`);
     storyRules[ref] ??= {
       point: own.point,
@@ -208,11 +206,6 @@ function addRule(where, ref, lessons = Infinity) {
   };
 }
 if (!ONLY) {
-  const storyBeats = storyEpisodes.flatMap((episode) => episode.beats);
-  for (const [step, refs] of Object.entries(stepRules)) {
-    if (!storyBeats.some((beat) => beat.id === step)) fail("story", `правило для неизвестного шага ${step}`);
-    for (const ref of refs) addRule(step, ref);
-  }
   // Глава сцен N опирается на уроки 1–N: «Nils kommt aus Hamburg» во второй главе — окончания из первой.
   sceneChapters.forEach((chapter, i) => {
     for (const beat of chapter.beats)

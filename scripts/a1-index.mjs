@@ -7,7 +7,7 @@ import { fileURLToPath } from "node:url";
 import { parse } from "yaml";
 import { sceneChapters } from "../src/story/scenes/index.ts";
 import { anweisung, flatNodes } from "../src/story/scene.ts";
-import { episodes, phrases } from "../src/story/data.ts";
+import { phrases } from "../src/story/data.ts";
 import { sceneUnits as reviewUnits } from "../src/story/review.ts";
 import { WARMUPS } from "../src/story/scenes/warmups.ts";
 
@@ -322,7 +322,7 @@ function required(reference) {
   return [...byKey.values()];
 }
 
-// ——— Справочные источники: уроки, проверки, классическая игра ———
+// ——— Справочные источники: уроки и проверки ———
 
 function lineUnits(files) {
   return files.flatMap((file) =>
@@ -342,11 +342,6 @@ export function buildIndex({ warmups = true } = {}) {
   const lessonFiles = readdirSync(path.join(root, "content/a1")).filter((f) => f.endsWith(".yaml")).sort().map((f) => path.join(root, "content/a1", f));
   const lessonLines = lineUnits(lessonFiles);
   const checkLines = lineUnits(readdirSync(path.join(root, "content/assessments")).filter((f) => /^1[2-5]-a1/.test(f)).map((f) => path.join(root, "content/assessments", f)));
-  const classic = episodes.map((e, i) => {
-    const text = strings(e.beats).join("\n");
-    const toks = tokens(text);
-    return { n: i + 1, text, toks, set: new Set(toks) };
-  });
 
   // Очередь повторения новой версии: что пройденные сцены отдают в раунды (A1-PLAN.md, «Повторение»).
   const dictionary = JSON.parse(readFileSync(path.join(root, "src/generated/a1-words.json"), "utf8"));
@@ -372,7 +367,6 @@ export function buildIndex({ warmups = true } = {}) {
       ...count(hits, THRESHOLD.words),
       lessons: [...lessons].map(([file, line]) => ({ file, line })),
       checks: checkLines.filter((l) => matches(m, l.toks, l.set, l)).length,
-      classic: classic.filter((e) => matches(m, e.toks, e.set, e)).map((e) => e.n),
     };
   });
 
@@ -508,9 +502,9 @@ export function renderReport(index) {
     for (const part of PARTS) {
       const inPart = list.filter((w) => w.part === part).sort(alphabetical);
       if (!inPart.length) continue;
-      out.push("", `### ${part} (${inPart.length})`, "", "| Слово | Откуда | Числа | Где в новой версии | Уроки | Классика |", "|---|---|---|---|---|---|");
+      out.push("", `### ${part} (${inPart.length})`, "", "| Слово | Откуда | Числа | Где в новой версии | Уроки |", "|---|---|---|---|---|");
       for (const w of inPart)
-        out.push(`| ${w.de}${w.of ? ` (от ${w.of})` : ""}${w.review ? " ↻" : ""} | ${origin(w)} | ${numbers(w)} | ${places(w)} | ${w.lessons.map((l) => `[${l.file.match(/(\d\d)-/)?.[1]}](${l.file}#L${l.line})`).join(" ") || "—"} | ${w.classic.length ? `гл. ${w.classic.join(", ")}` : "—"} |`);
+        out.push(`| ${w.de}${w.of ? ` (от ${w.of})` : ""}${w.review ? " ↻" : ""} | ${origin(w)} | ${numbers(w)} | ${places(w)} | ${w.lessons.map((l) => `[${l.file.match(/(\d\d)-/)?.[1]}](${l.file}#L${l.line})`).join(" ") || "—"} |`);
     }
   }
   const done = words.filter((w) => w.status === "закреплено");

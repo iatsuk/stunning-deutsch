@@ -6,8 +6,6 @@ import { judge, nearMisses, orderAccepted } from "../src/trainer/logic.ts";
 import { sceneChapters } from "../src/story/scenes/index.ts";
 import { answerSlots, arrange, nodeAt, sceneKeys } from "../src/story/scene.ts";
 
-// Только классическая версия: позиции вариантов в её шагах.
-import { beats } from "../src/story/data.ts";
 
 const read = (path) =>
   JSON.parse(
@@ -73,18 +71,6 @@ test("верный вариант нельзя угадать по позици�
     }
   }
   assertEven(positions, "Moin в сценах");
-});
-
-test("classic: верный вариант Moin нельзя угадать по позиции на экране", () => {
-  const story = beats.filter((beat) => beat.challenge.kind === "choice");
-  assertEven(
-    story.map((beat) =>
-      shuffle(beat.challenge.options, beat.id).findIndex(
-        (o) => o.id === beat.challenge.answer,
-      ),
-    ),
-    "Moin",
-  );
 });
 
 test("перемешивание стабильно, а плитки никогда не лежат готовым ответом", () => {

@@ -1,7 +1,6 @@
 import { shuffle } from "../lib/shuffle.ts";
 import { judge, nearMisses } from "../trainer/logic.ts";
-import { V1_ORDER } from "./v1-order.ts";
-import { flatNodes, keyOf, requiredKeys, sceneKeys, sceneVoices, sceneWords, solutionEntries, typedRight } from "./scene.ts";
+import { flatNodes, keyOf, requiredKeys, sceneVoices, sceneWords, solutionEntries, typedRight } from "./scene.ts";
 import { answerOf, excludes, reviewTwentyLines } from "./twenty.ts";
 import { TRACKS, type Cond, type Effects } from "./world.ts";
 import type {
@@ -15,15 +14,13 @@ import type {
   Move,
   Phrase,
   PortraitPart,
-  StorySave,
   TreeNode,
   TreeSlot,
 } from "./types.ts";
 
-type Route = Extract<Challenge, { kind: "route" | "algo" }>;
+type Route = Extract<Challenge, { kind: "algo" }>;
 type Position = { x: number; y: number; heading: number };
 
-export const STORY_KEY = "sd-moin-story-v1";
 /** Что звучит в записи выражения: существительное — с множественным, как в словаре уроков. */
 export const spoken = (p: { de: string; pl?: string }) =>
   p.pl && p.pl !== "-" ? `${p.de}, die ${p.pl}` : p.de;
@@ -34,16 +31,12 @@ export const beatPhrases = (beat: Beat) => [
   ...new Set(
     [
       ...beat.story,
-      ...(beat.source?.lines ?? []),
       ...(beat.challenge.kind === "play"
         ? flatNodes(beat.challenge.nodes).flatMap((n) => (n.t === "narr" ? [n.text] : []))
         : []),
     ].flatMap(phraseIds),
   ),
 ];
-export function knownBefore(beats: Beat[], cursor: number): Set<string> {
-  return new Set(beats.slice(0, cursor).flatMap(beatPhrases));
-}
 
 /** Голос выражений рассказа; реплики героев задают свой голос. */
 export const NARRATOR = "Anna";
@@ -57,13 +50,8 @@ export function storyLines(
 ): { text: string; voice: string }[] {
   return [
     ...Object.values(phrases).map((p) => ({ text: spoken(p), voice: NARRATOR })),
-    // Диктовка в конце главы произносит ровно то, что нужно записать: без множественного.
-    ...episodes.flatMap((e) => (e.review ?? []).map((id) => ({ text: phrases[id].de, voice: NARRATOR }))),
     ...episodes.flatMap((e) =>
-      e.beats.flatMap((b) => [
-        ...(b.voices ?? []).map(({ text, voice }) => ({ text, voice })),
-        ...challengeLines(b.challenge),
-      ]),
+      e.beats.flatMap((b) => challengeLines(b.challenge)),
     ),
     // Вопросы «20 вопросов» звучат и в раундах повторения, где колода не стоит ни в одной сцене.
     ...reviewTwentyLines(NARRATOR),
@@ -148,12 +136,6 @@ export function lockStart(reels: string[][], answer: string[], seed: string) {
   });
 }
 
-/** Старые ошибки возвращаются, пока их не исправят, но не вытесняют выражения текущей главы. */
-export const reviewItems = (episode: Episode, weak: Record<string, number>) =>
-  [
-    ...new Set([...Object.keys(weak).slice(0, 3), ...(episode.review ?? [])]),
-  ].slice(0, 6);
-
 export const MOVES: Move[] = ["links", "geradeaus", "rechts"];
 /** Север, восток, юг, запад: y растёт вниз, как на схеме. */
 const STEPS = [
@@ -185,8 +167,6 @@ export function walk(route: Route, moves: string[]): Position[] {
   }
   return path;
 }
-export const canMove = (route: Route, moves: string[], move: Move) =>
-  walk(route, [...moves, move]).length === walk(route, moves).length + 1;
 export const placeKey = (at: { x: number; y: number }) => `${at.x},${at.y}`;
 
 // ——— Новые мини-игры (A1-PLOT.md, «Новые мини-игры») ———
@@ -424,7 +404,6 @@ export function isCorrect(
       const done = new Set(value.map(keyOf));
       return requiredKeys(challenge.nodes, value).every((k) => done.has(k));
     }
-    case "choice":
     case "code":
     case "clock":
     case "calendar":
@@ -471,7 +450,6 @@ export function isCorrect(
         value,
         challenge.rounds.map((r) => r.odd),
       );
-    case "route":
     case "algo": {
       if (!Array.isArray(value)) return false;
       const path = walk(challenge, value);
@@ -555,7 +533,6 @@ export function solution(challenge: Challenge): Answer {
       return challenge.items.map((i) => i.word);
     case "odd":
       return challenge.rounds.map((r) => r.odd);
-    case "route":
     case "algo":
       return challenge.moves;
     case "write":
@@ -603,7 +580,6 @@ export function initialAnswer(challenge: Challenge): Answer {
     case "chat":
     case "spot":
     case "memory":
-    case "route":
     case "bingo":
     case "scene":
     case "odd":
@@ -662,11 +638,6 @@ export function mistake(c: Challenge, value: Answer, hint: string): string {
   const record = isRecord(value) ? value : {};
   const list = Array.isArray(value) ? value : [];
   switch (c.kind) {
-    case "choice":
-      return (
-        c.options.find((o) => o.id === value)?.why ??
-        "Выберите действие по сообщению."
-      );
     case "clock":
       return c.traps[String(value)] ?? hint;
     case "verdict":
@@ -748,248 +719,6 @@ export function mistake(c: Challenge, value: Answer, hint: string): string {
   }
 }
 
-/** Черновик другого вида игры не применяется: старые сохранения просто теряют его. */
-function restoreDraft(c: Challenge, v: unknown): Answer | undefined {
-  const strings = Array.isArray(v) && v.every((t) => typeof t === "string");
-  switch (c.kind) {
-    // Новые мини-игры живут только внутри сцен, а сцена не хранит черновиков игр.
-    case "sounds":
-    case "grid":
-    case "compound":
-    case "contra":
-    case "planner":
-    case "ads":
-    case "lift":
-    case "cipher":
-    case "tree":
-    case "portrait":
-    case "spy":
-    case "twenty":
-    case "weather":
-    case "algo":
-      return undefined;
-    case "play": {
-      if (!strings) return undefined;
-      const keys = new Set(sceneKeys(c.nodes));
-      const seen = new Set<string>();
-      return (v as string[]).filter((entry) => {
-        const key = keyOf(entry);
-        if (!keys.has(key) || seen.has(key)) return false;
-        seen.add(key);
-        return true;
-      });
-    }
-    case "choice":
-    case "code":
-      return typeof v === "string" ? v : undefined;
-    case "order": {
-      if (!strings) return undefined;
-      const remaining = [...c.tiles];
-      return (v as string[]).filter((t) => {
-        const i = remaining.indexOf(t);
-        if (i < 0) return false;
-        remaining.splice(i, 1);
-        return true;
-      });
-    }
-    case "chat": {
-      if (!strings) return undefined;
-      const said = v as string[];
-      const correct = c.turns.findIndex((t, i) => said[i] !== t.answer);
-      return said.slice(0, correct < 0 ? c.turns.length : correct);
-    }
-    case "gaps": {
-      if (!strings || (v as string[]).length !== c.answer.length)
-        return undefined;
-      return (v as string[]).map((t) => (c.bank.includes(t) ? t : ""));
-    }
-    case "spot": {
-      if (!strings) return undefined;
-      return [...new Set(v as string[])].filter((id) => {
-        const [line, token] = id.split(":").map(Number);
-        return c.lines[line]?.[token] !== undefined;
-      });
-    }
-    case "memory":
-      return strings
-        ? [...new Set(v as string[])].filter((id) =>
-            c.pairs.some((p) => p.id === id),
-          )
-        : undefined;
-    case "bingo":
-    case "letters":
-    case "speak":
-    case "docks":
-    case "gull":
-    case "oral":
-    case "scene": {
-      if (!strings) return undefined;
-      const known =
-        c.kind === "scene"
-          ? c.items.map((i) => i.word)
-          : c.kind === "speak"
-            ? c.lines
-            : c.kind === "oral"
-              ? c.rounds.map((r) => r.model)
-              : c.words;
-      return [...new Set(v as string[])].filter((id) => known.includes(id));
-    }
-    case "odd":
-    case "lock": {
-      if (!strings) return undefined;
-      const solved = v as string[];
-      const keys =
-        c.kind === "odd" ? c.rounds.map((r) => r.odd) : c.rounds.map(lockKey);
-      const wrong = keys.findIndex((key, i) => solved[i] !== key);
-      return solved.slice(0, wrong < 0 ? keys.length : wrong);
-    }
-    case "route":
-      return strings
-        ? (v as string[]).slice(0, walk(c, v as string[]).length - 1)
-        : undefined;
-    case "clock":
-      return typeof v === "string" &&
-        /^([01]\d|2[0-3]):[0-5]\d$/.test(v) &&
-        Number(v.slice(3)) % c.step === 0
-        ? v
-        : undefined;
-    case "calendar": {
-      if (typeof v !== "string") return undefined;
-      const [name, day] = v.split(":");
-      const month = c.months.find((m) => m.name === name);
-      return month && Number(day) >= 1 && Number(day) <= month.days
-        ? v
-        : undefined;
-    }
-    default: {
-      if (!isRecord(v)) return undefined;
-      return Object.fromEntries(
-        Object.entries(v).filter(([id, x]) => {
-          if (c.kind === "match")
-            return (
-              c.left.some((i) => i.id === id) && c.right.some((i) => i.id === x)
-            );
-          if (c.kind === "sort")
-            return (
-              c.cards.some((i) => i.id === id) && c.bins.some((i) => i.id === x)
-            );
-          if (c.kind === "verdict")
-            return (
-              c.items.some((i) => i.id === id) && (x === "yes" || x === "no")
-            );
-          if (c.kind === "coins")
-            return (
-              c.coins.includes(Number(id)) &&
-              Number.isInteger(x) &&
-              Number(x) >= 0
-            );
-          if (c.kind === "write" || c.kind === "letter")
-            return c.fields.some((f) => f.id === id) && typeof x === "string";
-          return c.items.some(
-            (i) =>
-              i.id === id &&
-              Number.isInteger(x) &&
-              Number(x) >= 0 &&
-              Number(x) <= i.max,
-          );
-        }),
-      );
-    }
-  }
-}
-
-const isCount = (value: unknown) =>
-  Number.isInteger(value) && Number(value) >= 0;
-
-/** Сохранение версии 1 хранило число пройденных шагов и номер открытого. */
-type SaveV1 = { completed?: unknown; cursor?: unknown };
-
-const ids = (value: unknown, beats: Beat[]) =>
-  Array.isArray(value)
-    ? beats.map((b) => b.id).filter((id) => value.includes(id))
-    : [];
-
-/**
- * До какого шага открыта история: следующий за самым дальним пройденным или отложенным.
- * Непройденные шаги до него — пустые ячейки, на них можно вернуться.
- */
-export function reachOf(save: Pick<StorySave, "done" | "skipped">, beats: Beat[]) {
-  const marked = new Set([...save.done, ...save.skipped]);
-  let last = -1;
-  beats.forEach((b, i) => marked.has(b.id) && (last = i));
-  return Math.min(last + 1, beats.length - 1);
-}
-
-/** Шаги до открытой границы, которые ещё не пройдены: пропущенные или добавленные позже. */
-export function missedBefore(save: StorySave, beats: Beat[]) {
-  const reach = reachOf(save, beats),
-    done = new Set(save.done);
-  return beats.filter((b, i) => i < reach && !done.has(b.id));
-}
-
-export function normalizeSave(raw: unknown, beats: Beat[]): StorySave {
-  const data =
-    raw && typeof raw === "object"
-      ? (raw as Partial<Omit<StorySave, "version">> & SaveV1 & { version?: unknown })
-      : {};
-  let done: string[], skipped: string[], cursor: unknown;
-  if (data.version === 2) {
-    done = ids(data.done, beats);
-    skipped = ids(data.skipped, beats).filter((id) => !done.includes(id));
-    cursor = data.cursor;
-  } else {
-    // Версия 1 считала шаги по порядку, поэтому переносим по замороженному списку.
-    const completed = Number.isInteger(data.completed)
-      ? Math.max(0, Number(data.completed))
-      : 0;
-    done = ids(V1_ORDER.slice(0, completed), beats);
-    skipped = [];
-    cursor = Number.isInteger(data.cursor)
-      ? V1_ORDER[Math.min(Number(data.cursor), completed)]
-      : undefined;
-  }
-  const reach = reachOf({ done, skipped }, beats);
-  const at = beats.findIndex((b) => b.id === cursor);
-  const drafts: Record<string, Answer> = {};
-  if (data.drafts && typeof data.drafts === "object")
-    for (const beat of beats) {
-      const draft = restoreDraft(beat.challenge, data.drafts[beat.id]);
-      if (draft !== undefined) drafts[beat.id] = draft;
-    }
-  const weak =
-    data.weak && typeof data.weak === "object"
-      ? Object.fromEntries(
-          Object.entries(data.weak).filter(
-            ([, count]) => Number.isInteger(count) && count > 0,
-          ),
-        )
-      : {};
-  const cards =
-    data.cards && typeof data.cards === "object"
-      ? Object.fromEntries(
-          Object.entries(data.cards).filter(
-            ([, card]) =>
-              isCount(card?.box) && isCount(card?.step) && isCount(card?.day),
-          ),
-        )
-      : {};
-  return {
-    version: 2,
-    cursor: beats[at >= 0 && at <= reach ? at : reach].id,
-    done,
-    skipped,
-    drafts,
-    support: data.support === true,
-    quiet: data.quiet === true,
-    weak,
-    cards,
-    last:
-      isCount(data.last?.step) && isCount(data.last?.day)
-        ? data.last!
-        : { step: 0, day: 0 },
-  };
-}
-
 export function validateChallenge(
   c: Challenge,
   known: Set<string>,
@@ -998,8 +727,6 @@ export function validateChallenge(
   switch (c.kind) {
     case "play":
       return validateScene(c.nodes, known, phrases);
-    case "choice":
-      return c.options.some((o) => o.id === c.answer);
     case "order":
       return [c.answer, ...(c.also ?? [])].every(
         (a) =>
@@ -1063,10 +790,6 @@ export function validateChallenge(
         Number(c.start.slice(3)) % c.step === 0 &&
         c.answer !== c.start
       );
-    case "route":
-      return (
-        c.goal in c.places && placeKey(walk(c, c.moves).at(-1)!) === c.goal
-      );
     case "algo":
       return (
         c.goal in c.places &&
@@ -1076,8 +799,11 @@ export function validateChallenge(
       );
     case "coins":
       return coinTotal(solution(c)) === c.answer;
-    case "calendar":
-      return restoreDraft(c, c.answer) === c.answer;
+    case "calendar": {
+      const [name, day] = c.answer.split(":");
+      const month = c.months.find((m) => m.name === name);
+      return Boolean(month && Number(day) >= 1 && Number(day) <= month.days);
+    }
     case "bingo":
       return c.words.length === 9 && new Set(c.words).size === 9;
     case "scene":
@@ -1375,12 +1101,7 @@ export function validateStory(
         errors.push(`Unreachable solution: ${beat.id}`);
       if (!validateChallenge(c, known, phrases))
         errors.push(`Wrong ${c.kind}: ${beat.id}`);
-      for (const id of beat.practice ?? [])
-        if (!phrases[id]) errors.push(`Unknown practice: ${beat.id}: ${id}`);
     }
-    // В конце главы диктуем только то, что рассказ уже показал.
-    for (const id of episode.review ?? [])
-      if (!known.has(id)) errors.push(`Unknown review: ${episode.id}: ${id}`);
   }
   return errors;
 }

@@ -154,108 +154,108 @@
 
 ### Существительные (39)
 
-| Слово | Откуда | Числа | Где в новой версии | Уроки | Классика |
-|---|---|---|---|---|---|
-| der Abflug (от fliegen) ↻ | экз. | 2 · 2 · 1 · 1 | [12-s2](src/story/scenes/12.ts#L211) [13-s2](src/story/scenes/13.ts#L661) | — | — |
-| die Abreise | 12 | 2 · 1 · 1 · 1 | [12-s3](src/story/scenes/12.ts#L304) | [12](content/a1/12-reisen.yaml#L112) | гл. 12 |
-| die Anreise ↻ | 12 | 4 · 2 · 3 · 3 | [12-s3](src/story/scenes/12.ts#L304) [12-s6](src/story/scenes/12.ts#L731) [13-s6](src/story/scenes/13.ts#L707) | [12](content/a1/12-reisen.yaml#L111) | гл. 12 |
-| der Anschluss ↻ | экз. | 3 · 2 · 2 · 1 | [12-s3](src/story/scenes/12.ts#L304) [13-s6](src/story/scenes/13.ts#L707) | — | — |
-| der Arbeitsplatz ↻ | экз. | 3 · 3 · 2 · 2 | [11-s1](src/story/scenes/11.ts#L131) [12-s2](src/story/scenes/12.ts#L789) [13-s2](src/story/scenes/13.ts#L661) | — | — |
-| der Bogen ↻ | экз. | 3 · 3 · 2 · 2 | [11-s5](src/story/scenes/11.ts#L574) [12-s2](src/story/scenes/12.ts#L789) [13-s5](src/story/scenes/13.ts#L698) | — | гл. 2 |
-| der Chef ↻ | экз. | 3 · 3 · 2 · 2 | [11-s1](src/story/scenes/11.ts#L131) [12-s2](src/story/scenes/12.ts#L789) [13-s5](src/story/scenes/13.ts#L698) | — | — |
-| das Datum ↻ | 12, экз. | 3 · 2 · 3 · 1 | [12-s3](src/story/scenes/12.ts#L304) [13-s6](src/story/scenes/13.ts#L707) | [12](content/a1/12-reisen.yaml#L130) | гл. 12 |
-| das Doppelzimmer ↻ | 12, экз. | 3 · 2 · 3 · 1 | [12-s3](src/story/scenes/12.ts#L304) [13-s6](src/story/scenes/13.ts#L707) | [12](content/a1/12-reisen.yaml#L106) | гл. 12 |
-| der Drucker (от drucken) ↻ | экз. | 3 · 3 · 2 · 2 | [11-s5](src/story/scenes/11.ts#L637) [12-s2](src/story/scenes/12.ts#L789) [13-s5](src/story/scenes/13.ts#L698) | — | — |
-| das Einzelzimmer ↻ | 12, экз. | 10 · 2 · 7 · 4 | [12-s1](src/story/scenes/12.ts#L136) [12-s3](src/story/scenes/12.ts#L304) [13-s3](src/story/scenes/13.ts#L291) [13-s4](src/story/scenes/13.ts#L410) | [12](content/a1/12-reisen.yaml#L36) | гл. 12 |
-| der Fehler ↻ | экз. | 3 · 3 · 2 · 2 | [11-s2](src/story/scenes/11.ts#L211) [12-s2](src/story/scenes/12.ts#L789) [13-s5](src/story/scenes/13.ts#L698) | — | — |
-| die Ferien ↻ | 12 | 2 · 2 · 2 · 2 | [12-s6](src/story/scenes/12.ts#L732) [13-s3](src/story/scenes/13.ts#L670) | [12](content/a1/12-reisen.yaml#L148) | гл. 12 |
-| der Flughafen ↻ | 12, экз. | 3 · 2 · 3 · 3 | [12-s1](src/story/scenes/12.ts#L136) [12-s2](src/story/scenes/12.ts#L265) [13-s6](src/story/scenes/13.ts#L707) | [12](content/a1/12-reisen.yaml#L94) | гл. 12 |
-| der Friseur ↻ | 11 | 3 · 3 · 3 · 3 | [11-s1](src/story/scenes/11.ts#L134) [12-s5](src/story/scenes/12.ts#L816) [13-s5](src/story/scenes/13.ts#L698) | [11](content/a1/11-arbeit.yaml#L101) | гл. 11 |
-| das Gepäck ↻ | экз. | 3 · 2 · 2 · 1 | [12-s3](src/story/scenes/12.ts#L304) [13-s6](src/story/scenes/13.ts#L707) | — | — |
-| die Halbpension ↻ | экз. | 3 · 2 · 2 · 1 | [12-s3](src/story/scenes/12.ts#L304) [13-s6](src/story/scenes/13.ts#L707) | — | — |
-| das Hotel ↻ | 12, экз. | 21 · 2 · 12 · 6 | [12-s1](src/story/scenes/12.ts#L27) [12-s2](src/story/scenes/12.ts#L228) [12-s3](src/story/scenes/12.ts#L279) [12-s5](src/story/scenes/12.ts#L540) | [12](content/a1/12-reisen.yaml#L26) | гл. 12 |
-| der Informatiker ↻ | 11 | 3 · 3 · 3 · 3 | [11-s1](src/story/scenes/11.ts#L134) [12-s5](src/story/scenes/12.ts#L816) [13-s5](src/story/scenes/13.ts#L698) | [11](content/a1/11-arbeit.yaml#L103) | гл. 11 |
-| der Ingenieur ↻ | 11 | 3 · 3 · 3 · 3 | [11-s1](src/story/scenes/11.ts#L134) [12-s5](src/story/scenes/12.ts#L816) [13-s5](src/story/scenes/13.ts#L698) | [11](content/a1/11-arbeit.yaml#L100) | гл. 11 |
-| die Jahreszeit ↻ | 12 | 2 · 2 · 2 · 2 | [12-s2](src/story/scenes/12.ts#L265) [13-s2](src/story/scenes/13.ts#L661) | [12](content/a1/12-reisen.yaml#L130) | гл. 12 |
-| der Job ↻ | экз. | 2 · 2 · 1 · 1 | [11-s1](src/story/scenes/11.ts#L76) [12-s5](src/story/scenes/12.ts#L816) | — | — |
-| der Koffer ↻ | 12, экз. | 8 · 2 · 6 · 5 | [12-s1](src/story/scenes/12.ts#L78) [12-s2](src/story/scenes/12.ts#L265) [12-s3](src/story/scenes/12.ts#L279) [12-s6](src/story/scenes/12.ts#L731) [13-s2](src/story/scenes/13.ts#L661) | [12](content/a1/12-reisen.yaml#L99) | гл. 12 |
-| der Kugelschreiber ↻ | экз. | 2 · 2 · 1 · 1 | [11-s5](src/story/scenes/11.ts#L637) [12-s5](src/story/scenes/12.ts#L816) | — | — |
-| das Lied | экз. | 11 · 2 · 5 · 4 | [11-s3](src/story/scenes/11.ts#L301) [11-s5](src/story/scenes/11.ts#L623) [13-s1](src/story/scenes/13.ts#L38) [13-s6](src/story/scenes/13.ts#L595) | — | — |
-| die Papiere ↻ | экз. | 3 · 3 · 2 · 2 | [11-s5](src/story/scenes/11.ts#L575) [12-s6](src/story/scenes/12.ts#L825) [13-s6](src/story/scenes/13.ts#L707) | — | — |
-| das Praktikum ↻ | экз. | 2 · 2 · 1 · 1 | [11-s1](src/story/scenes/11.ts#L76) [12-s5](src/story/scenes/12.ts#L816) | — | — |
-| der Regenschirm ↻ | 12 | 5 · 2 · 5 · 3 | [12-s1](src/story/scenes/12.ts#L41) [12-s6](src/story/scenes/12.ts#L731) [13-s2](src/story/scenes/13.ts#L661) | [12](content/a1/12-reisen.yaml#L70) | гл. 12 |
-| die Reise (от reisen) ↻ | 12, экз. | 7 · 2 · 4 · 5 | [12-s2](src/story/scenes/12.ts#L265) [12-s6](src/story/scenes/12.ts#L731) [13-s6](src/story/scenes/13.ts#L608) | [12](content/a1/12-reisen.yaml#L1) | гл. 12 |
-| das Reisebüro (от reisen) ↻ | экз. | 2 · 2 · 1 · 1 | [12-s2](src/story/scenes/12.ts#L190) [13-s5](src/story/scenes/13.ts#L698) | — | — |
-| der Reiseführer (от reisen) ↻ | экз. | 2 · 2 · 1 · 1 | [12-s2](src/story/scenes/12.ts#L190) [13-s5](src/story/scenes/13.ts#L698) | — | — |
-| die Rezeption | экз. | 1 · 1 · 0 · 0 | [12-s3](src/story/scenes/12.ts#L279) | — | — |
-| das Studium ↻ | экз. | 1 · 1 · 0 · 0 | [11-s1](src/story/scenes/11.ts#L76) | — | — |
-| die Verspätung ↻ | 12 | 12 · 2 · 6 · 7 | [12-s2](src/story/scenes/12.ts#L191) [12-s3](src/story/scenes/12.ts#L28) [12-s6](src/story/scenes/12.ts#L731) [13-s2](src/story/scenes/13.ts#L27) | [09](content/a1/09-stadt.yaml#L215) [12](content/a1/12-reisen.yaml#L48) | гл. 12 |
-| die Welt ↻ | экз. | 2 · 2 · 1 · 1 | [12-s2](src/story/scenes/12.ts#L190) [13-s5](src/story/scenes/13.ts#L698) | — | — |
-| das Wetter ↻ | 12, экз. | 6 · 2 · 5 · 5 | [12-s1](src/story/scenes/12.ts#L38) [12-s4](src/story/scenes/12.ts#L477) [12-s6](src/story/scenes/12.ts#L731) [13-s2](src/story/scenes/13.ts#L661) | [12](content/a1/12-reisen.yaml#L66) | гл. 12 |
-| der Wind | экз. | 3 · 1 · 1 · 2 | [12-s1](src/story/scenes/12.ts#L50) [12-s2](src/story/scenes/12.ts#L180) | [12](content/a1/12-reisen.yaml#L338) | гл. 12 |
-| die Zeitung | экз. | 1 · 1 · 0 · 0 | [11-s1](src/story/scenes/11.ts#L77) | — | — |
-| der Zoll ↻ | экз. | 2 · 2 · 1 · 1 | [12-s6](src/story/scenes/12.ts#L711) [13-s2](src/story/scenes/13.ts#L167) | — | — |
+| Слово | Откуда | Числа | Где в новой версии | Уроки |
+|---|---|---|---|---|
+| der Abflug (от fliegen) ↻ | экз. | 2 · 2 · 1 · 1 | [12-s2](src/story/scenes/12.ts#L211) [13-s2](src/story/scenes/13.ts#L661) | — |
+| die Abreise | 12 | 2 · 1 · 1 · 1 | [12-s3](src/story/scenes/12.ts#L304) | [12](content/a1/12-reisen.yaml#L112) |
+| die Anreise ↻ | 12 | 4 · 2 · 3 · 3 | [12-s3](src/story/scenes/12.ts#L304) [12-s6](src/story/scenes/12.ts#L731) [13-s6](src/story/scenes/13.ts#L707) | [12](content/a1/12-reisen.yaml#L111) |
+| der Anschluss ↻ | экз. | 3 · 2 · 2 · 1 | [12-s3](src/story/scenes/12.ts#L304) [13-s6](src/story/scenes/13.ts#L707) | — |
+| der Arbeitsplatz ↻ | экз. | 3 · 3 · 2 · 2 | [11-s1](src/story/scenes/11.ts#L131) [12-s2](src/story/scenes/12.ts#L789) [13-s2](src/story/scenes/13.ts#L661) | — |
+| der Bogen ↻ | экз. | 3 · 3 · 2 · 2 | [11-s5](src/story/scenes/11.ts#L574) [12-s2](src/story/scenes/12.ts#L789) [13-s5](src/story/scenes/13.ts#L698) | — |
+| der Chef ↻ | экз. | 3 · 3 · 2 · 2 | [11-s1](src/story/scenes/11.ts#L131) [12-s2](src/story/scenes/12.ts#L789) [13-s5](src/story/scenes/13.ts#L698) | — |
+| das Datum ↻ | 12, экз. | 3 · 2 · 3 · 1 | [12-s3](src/story/scenes/12.ts#L304) [13-s6](src/story/scenes/13.ts#L707) | [12](content/a1/12-reisen.yaml#L130) |
+| das Doppelzimmer ↻ | 12, экз. | 3 · 2 · 3 · 1 | [12-s3](src/story/scenes/12.ts#L304) [13-s6](src/story/scenes/13.ts#L707) | [12](content/a1/12-reisen.yaml#L106) |
+| der Drucker (от drucken) ↻ | экз. | 3 · 3 · 2 · 2 | [11-s5](src/story/scenes/11.ts#L637) [12-s2](src/story/scenes/12.ts#L789) [13-s5](src/story/scenes/13.ts#L698) | — |
+| das Einzelzimmer ↻ | 12, экз. | 10 · 2 · 7 · 4 | [12-s1](src/story/scenes/12.ts#L136) [12-s3](src/story/scenes/12.ts#L304) [13-s3](src/story/scenes/13.ts#L291) [13-s4](src/story/scenes/13.ts#L410) | [12](content/a1/12-reisen.yaml#L36) |
+| der Fehler ↻ | экз. | 3 · 3 · 2 · 2 | [11-s2](src/story/scenes/11.ts#L211) [12-s2](src/story/scenes/12.ts#L789) [13-s5](src/story/scenes/13.ts#L698) | — |
+| die Ferien ↻ | 12 | 2 · 2 · 2 · 2 | [12-s6](src/story/scenes/12.ts#L732) [13-s3](src/story/scenes/13.ts#L670) | [12](content/a1/12-reisen.yaml#L148) |
+| der Flughafen ↻ | 12, экз. | 3 · 2 · 3 · 3 | [12-s1](src/story/scenes/12.ts#L136) [12-s2](src/story/scenes/12.ts#L265) [13-s6](src/story/scenes/13.ts#L707) | [12](content/a1/12-reisen.yaml#L94) |
+| der Friseur ↻ | 11 | 3 · 3 · 3 · 3 | [11-s1](src/story/scenes/11.ts#L134) [12-s5](src/story/scenes/12.ts#L816) [13-s5](src/story/scenes/13.ts#L698) | [11](content/a1/11-arbeit.yaml#L101) |
+| das Gepäck ↻ | экз. | 3 · 2 · 2 · 1 | [12-s3](src/story/scenes/12.ts#L304) [13-s6](src/story/scenes/13.ts#L707) | — |
+| die Halbpension ↻ | экз. | 3 · 2 · 2 · 1 | [12-s3](src/story/scenes/12.ts#L304) [13-s6](src/story/scenes/13.ts#L707) | — |
+| das Hotel ↻ | 12, экз. | 21 · 2 · 12 · 6 | [12-s1](src/story/scenes/12.ts#L27) [12-s2](src/story/scenes/12.ts#L228) [12-s3](src/story/scenes/12.ts#L279) [12-s5](src/story/scenes/12.ts#L540) | [12](content/a1/12-reisen.yaml#L26) |
+| der Informatiker ↻ | 11 | 3 · 3 · 3 · 3 | [11-s1](src/story/scenes/11.ts#L134) [12-s5](src/story/scenes/12.ts#L816) [13-s5](src/story/scenes/13.ts#L698) | [11](content/a1/11-arbeit.yaml#L103) |
+| der Ingenieur ↻ | 11 | 3 · 3 · 3 · 3 | [11-s1](src/story/scenes/11.ts#L134) [12-s5](src/story/scenes/12.ts#L816) [13-s5](src/story/scenes/13.ts#L698) | [11](content/a1/11-arbeit.yaml#L100) |
+| die Jahreszeit ↻ | 12 | 2 · 2 · 2 · 2 | [12-s2](src/story/scenes/12.ts#L265) [13-s2](src/story/scenes/13.ts#L661) | [12](content/a1/12-reisen.yaml#L130) |
+| der Job ↻ | экз. | 2 · 2 · 1 · 1 | [11-s1](src/story/scenes/11.ts#L76) [12-s5](src/story/scenes/12.ts#L816) | — |
+| der Koffer ↻ | 12, экз. | 8 · 2 · 6 · 5 | [12-s1](src/story/scenes/12.ts#L78) [12-s2](src/story/scenes/12.ts#L265) [12-s3](src/story/scenes/12.ts#L279) [12-s6](src/story/scenes/12.ts#L731) [13-s2](src/story/scenes/13.ts#L661) | [12](content/a1/12-reisen.yaml#L99) |
+| der Kugelschreiber ↻ | экз. | 2 · 2 · 1 · 1 | [11-s5](src/story/scenes/11.ts#L637) [12-s5](src/story/scenes/12.ts#L816) | — |
+| das Lied | экз. | 11 · 2 · 5 · 4 | [11-s3](src/story/scenes/11.ts#L301) [11-s5](src/story/scenes/11.ts#L623) [13-s1](src/story/scenes/13.ts#L38) [13-s6](src/story/scenes/13.ts#L595) | — |
+| die Papiere ↻ | экз. | 3 · 3 · 2 · 2 | [11-s5](src/story/scenes/11.ts#L575) [12-s6](src/story/scenes/12.ts#L825) [13-s6](src/story/scenes/13.ts#L707) | — |
+| das Praktikum ↻ | экз. | 2 · 2 · 1 · 1 | [11-s1](src/story/scenes/11.ts#L76) [12-s5](src/story/scenes/12.ts#L816) | — |
+| der Regenschirm ↻ | 12 | 5 · 2 · 5 · 3 | [12-s1](src/story/scenes/12.ts#L41) [12-s6](src/story/scenes/12.ts#L731) [13-s2](src/story/scenes/13.ts#L661) | [12](content/a1/12-reisen.yaml#L70) |
+| die Reise (от reisen) ↻ | 12, экз. | 7 · 2 · 4 · 5 | [12-s2](src/story/scenes/12.ts#L265) [12-s6](src/story/scenes/12.ts#L731) [13-s6](src/story/scenes/13.ts#L608) | [12](content/a1/12-reisen.yaml#L1) |
+| das Reisebüro (от reisen) ↻ | экз. | 2 · 2 · 1 · 1 | [12-s2](src/story/scenes/12.ts#L190) [13-s5](src/story/scenes/13.ts#L698) | — |
+| der Reiseführer (от reisen) ↻ | экз. | 2 · 2 · 1 · 1 | [12-s2](src/story/scenes/12.ts#L190) [13-s5](src/story/scenes/13.ts#L698) | — |
+| die Rezeption | экз. | 1 · 1 · 0 · 0 | [12-s3](src/story/scenes/12.ts#L279) | — |
+| das Studium ↻ | экз. | 1 · 1 · 0 · 0 | [11-s1](src/story/scenes/11.ts#L76) | — |
+| die Verspätung ↻ | 12 | 12 · 2 · 6 · 7 | [12-s2](src/story/scenes/12.ts#L191) [12-s3](src/story/scenes/12.ts#L28) [12-s6](src/story/scenes/12.ts#L731) [13-s2](src/story/scenes/13.ts#L27) | [09](content/a1/09-stadt.yaml#L215) [12](content/a1/12-reisen.yaml#L48) |
+| die Welt ↻ | экз. | 2 · 2 · 1 · 1 | [12-s2](src/story/scenes/12.ts#L190) [13-s5](src/story/scenes/13.ts#L698) | — |
+| das Wetter ↻ | 12, экз. | 6 · 2 · 5 · 5 | [12-s1](src/story/scenes/12.ts#L38) [12-s4](src/story/scenes/12.ts#L477) [12-s6](src/story/scenes/12.ts#L731) [13-s2](src/story/scenes/13.ts#L661) | [12](content/a1/12-reisen.yaml#L66) |
+| der Wind | экз. | 3 · 1 · 1 · 2 | [12-s1](src/story/scenes/12.ts#L50) [12-s2](src/story/scenes/12.ts#L180) | [12](content/a1/12-reisen.yaml#L338) |
+| die Zeitung | экз. | 1 · 1 · 0 · 0 | [11-s1](src/story/scenes/11.ts#L77) | — |
+| der Zoll ↻ | экз. | 2 · 2 · 1 · 1 | [12-s6](src/story/scenes/12.ts#L711) [13-s2](src/story/scenes/13.ts#L167) | — |
 
 ### Глаголы (13)
 
-| Слово | Откуда | Числа | Где в новой версии | Уроки | Классика |
-|---|---|---|---|---|---|
-| abgeben ↻ | экз. | 3 · 3 · 2 · 2 | [11-s5](src/story/scenes/11.ts#L575) [12-s6](src/story/scenes/12.ts#L825) [13-s2](src/story/scenes/13.ts#L661) | — | — |
-| anklicken ↻ | экз. | 3 · 3 · 2 · 2 | [11-s5](src/story/scenes/11.ts#L637) [12-s2](src/story/scenes/12.ts#L789) [13-s2](src/story/scenes/13.ts#L661) | — | — |
-| ankommen | экз. | 3 · 1 · 2 · 1 | [12-s2](src/story/scenes/12.ts#L246) | [12](content/a1/12-reisen.yaml#L48) | гл. 12 |
-| bedeuten ↻ | экз. | 3 · 3 · 2 · 2 | [11-s5](src/story/scenes/11.ts#L639) [12-s2](src/story/scenes/12.ts#L789) [13-s2](src/story/scenes/13.ts#L661) | [08](content/a1/08-wohnen.yaml#L42) | — |
-| benutzen ↻ | экз. | 3 · 3 · 2 · 2 | [11-s2](src/story/scenes/11.ts#L211) [12-s2](src/story/scenes/12.ts#L789) [13-s2](src/story/scenes/13.ts#L661) | [09](content/a1/09-stadt.yaml#L236) | — |
-| besuchen | экз. | 1 · 1 · 1 · 0 | [11-s2](src/story/scenes/11.ts#L246) | [07](content/a1/07-freizeit.yaml#L64) | — |
-| drucken ↻ | экз. | 3 · 3 · 2 · 2 | [11-s5](src/story/scenes/11.ts#L637) [12-s2](src/story/scenes/12.ts#L789) [13-s5](src/story/scenes/13.ts#L698) | — | — |
-| freuen | экз. | 2 · 1 · 1 · 1 | [12-s6](src/story/scenes/12.ts#L662) | — | — |
-| reisen | экз. | 7 · 2 · 4 · 5 | [12-s2](src/story/scenes/12.ts#L265) [12-s6](src/story/scenes/12.ts#L731) [13-s6](src/story/scenes/13.ts#L608) | [12](content/a1/12-reisen.yaml#L1) | гл. 12 |
-| reservieren | 12 | 5 · 1 · 2 · 1 | [12-s3](src/story/scenes/12.ts#L290) | [02](content/a1/02-zahlen.yaml#L914) [12](content/a1/12-reisen.yaml#L113) | гл. 12 |
-| scheinen | экз. | 4 · 2 · 1 · 0 | [12-s5](src/story/scenes/12.ts#L552) [13-s1](src/story/scenes/13.ts#L37) | [12](content/a1/12-reisen.yaml#L68) | гл. 12 |
-| übernachten ↻ | экз. | 3 · 2 · 2 · 1 | [12-s3](src/story/scenes/12.ts#L304) [13-s3](src/story/scenes/13.ts#L670) | — | — |
-| verdienen ↻ | экз. | 1 · 1 · 0 · 0 | [11-s1](src/story/scenes/11.ts#L76) | — | — |
+| Слово | Откуда | Числа | Где в новой версии | Уроки |
+|---|---|---|---|---|
+| abgeben ↻ | экз. | 3 · 3 · 2 · 2 | [11-s5](src/story/scenes/11.ts#L575) [12-s6](src/story/scenes/12.ts#L825) [13-s2](src/story/scenes/13.ts#L661) | — |
+| anklicken ↻ | экз. | 3 · 3 · 2 · 2 | [11-s5](src/story/scenes/11.ts#L637) [12-s2](src/story/scenes/12.ts#L789) [13-s2](src/story/scenes/13.ts#L661) | — |
+| ankommen | экз. | 3 · 1 · 2 · 1 | [12-s2](src/story/scenes/12.ts#L246) | [12](content/a1/12-reisen.yaml#L48) |
+| bedeuten ↻ | экз. | 3 · 3 · 2 · 2 | [11-s5](src/story/scenes/11.ts#L639) [12-s2](src/story/scenes/12.ts#L789) [13-s2](src/story/scenes/13.ts#L661) | [08](content/a1/08-wohnen.yaml#L42) |
+| benutzen ↻ | экз. | 3 · 3 · 2 · 2 | [11-s2](src/story/scenes/11.ts#L211) [12-s2](src/story/scenes/12.ts#L789) [13-s2](src/story/scenes/13.ts#L661) | [09](content/a1/09-stadt.yaml#L236) |
+| besuchen | экз. | 1 · 1 · 1 · 0 | [11-s2](src/story/scenes/11.ts#L246) | [07](content/a1/07-freizeit.yaml#L64) |
+| drucken ↻ | экз. | 3 · 3 · 2 · 2 | [11-s5](src/story/scenes/11.ts#L637) [12-s2](src/story/scenes/12.ts#L789) [13-s5](src/story/scenes/13.ts#L698) | — |
+| freuen | экз. | 2 · 1 · 1 · 1 | [12-s6](src/story/scenes/12.ts#L662) | — |
+| reisen | экз. | 7 · 2 · 4 · 5 | [12-s2](src/story/scenes/12.ts#L265) [12-s6](src/story/scenes/12.ts#L731) [13-s6](src/story/scenes/13.ts#L608) | [12](content/a1/12-reisen.yaml#L1) |
+| reservieren | 12 | 5 · 1 · 2 · 1 | [12-s3](src/story/scenes/12.ts#L290) | [02](content/a1/02-zahlen.yaml#L914) [12](content/a1/12-reisen.yaml#L113) |
+| scheinen | экз. | 4 · 2 · 1 · 0 | [12-s5](src/story/scenes/12.ts#L552) [13-s1](src/story/scenes/13.ts#L37) | [12](content/a1/12-reisen.yaml#L68) |
+| übernachten ↻ | экз. | 3 · 2 · 2 · 1 | [12-s3](src/story/scenes/12.ts#L304) [13-s3](src/story/scenes/13.ts#L670) | — |
+| verdienen ↻ | экз. | 1 · 1 · 0 · 0 | [11-s1](src/story/scenes/11.ts#L76) | — |
 
 ### Прилагательные и наречия (11)
 
-| Слово | Откуда | Числа | Где в новой версии | Уроки | Классика |
-|---|---|---|---|---|---|
-| arbeitslos | экз. | 1 · 1 · 0 · 1 | [11-s1](src/story/scenes/11.ts#L74) | — | — |
-| ausländisch (от das Ausland) ↻ | экз. | 2 · 2 · 1 · 1 | [12-s6](src/story/scenes/12.ts#L677) [13-s3](src/story/scenes/13.ts#L670) | — | — |
-| bewölkt ↻ | 12 | 3 · 2 · 3 · 3 | [12-s4](src/story/scenes/12.ts#L477) [12-s6](src/story/scenes/12.ts#L732) [13-разминка](src/story/scenes/warmups.ts#L85) | [12](content/a1/12-reisen.yaml#L123) | гл. 12 |
-| fremd ↻ | экз. | 2 · 2 · 1 · 1 | [12-s5](src/story/scenes/12.ts#L619) [13-s6](src/story/scenes/13.ts#L707) | — | — |
-| kalt ↻ | 12 | 4 · 2 · 3 · 3 | [12-s1](src/story/scenes/12.ts#L38) [12-s4](src/story/scenes/12.ts#L477) [13-s3](src/story/scenes/13.ts#L670) | [08](content/a1/08-wohnen.yaml#L40) [12](content/a1/12-reisen.yaml#L66) | гл. 12 |
-| kulturell ↻ | экз. | 2 · 2 · 1 · 1 | [12-s6](src/story/scenes/12.ts#L677) [13-s6](src/story/scenes/13.ts#L707) | — | — |
-| männlich (от der Mann) ↻ | экз. | 2 · 2 · 1 · 1 | [11-s5](src/story/scenes/11.ts#L574) [12-s5](src/story/scenes/12.ts#L816) | — | — |
-| selbstständig ↻ | экз. | 1 · 1 · 0 · 0 | [11-s1](src/story/scenes/11.ts#L131) | — | — |
-| sonnig ↻ | 12 | 3 · 2 · 3 · 3 | [12-s4](src/story/scenes/12.ts#L477) [12-s6](src/story/scenes/12.ts#L732) [13-s3](src/story/scenes/13.ts#L670) | [12](content/a1/12-reisen.yaml#L122) | гл. 12 |
-| weiblich ↻ | экз. | 1 · 1 · 0 · 0 | [11-s5](src/story/scenes/11.ts#L574) | [11](content/a1/11-arbeit.yaml#L345) | — |
-| windig ↻ | 12 | 4 · 2 · 3 · 3 | [12-s1](src/story/scenes/12.ts#L38) [12-s4](src/story/scenes/12.ts#L477) [12-s6](src/story/scenes/12.ts#L732) [13-s3](src/story/scenes/13.ts#L670) | [12](content/a1/12-reisen.yaml#L66) | гл. 12 |
+| Слово | Откуда | Числа | Где в новой версии | Уроки |
+|---|---|---|---|---|
+| arbeitslos | экз. | 1 · 1 · 0 · 1 | [11-s1](src/story/scenes/11.ts#L74) | — |
+| ausländisch (от das Ausland) ↻ | экз. | 2 · 2 · 1 · 1 | [12-s6](src/story/scenes/12.ts#L677) [13-s3](src/story/scenes/13.ts#L670) | — |
+| bewölkt ↻ | 12 | 3 · 2 · 3 · 3 | [12-s4](src/story/scenes/12.ts#L477) [12-s6](src/story/scenes/12.ts#L732) [13-разминка](src/story/scenes/warmups.ts#L85) | [12](content/a1/12-reisen.yaml#L123) |
+| fremd ↻ | экз. | 2 · 2 · 1 · 1 | [12-s5](src/story/scenes/12.ts#L619) [13-s6](src/story/scenes/13.ts#L707) | — |
+| kalt ↻ | 12 | 4 · 2 · 3 · 3 | [12-s1](src/story/scenes/12.ts#L38) [12-s4](src/story/scenes/12.ts#L477) [13-s3](src/story/scenes/13.ts#L670) | [08](content/a1/08-wohnen.yaml#L40) [12](content/a1/12-reisen.yaml#L66) |
+| kulturell ↻ | экз. | 2 · 2 · 1 · 1 | [12-s6](src/story/scenes/12.ts#L677) [13-s6](src/story/scenes/13.ts#L707) | — |
+| männlich (от der Mann) ↻ | экз. | 2 · 2 · 1 · 1 | [11-s5](src/story/scenes/11.ts#L574) [12-s5](src/story/scenes/12.ts#L816) | — |
+| selbstständig ↻ | экз. | 1 · 1 · 0 · 0 | [11-s1](src/story/scenes/11.ts#L131) | — |
+| sonnig ↻ | 12 | 3 · 2 · 3 · 3 | [12-s4](src/story/scenes/12.ts#L477) [12-s6](src/story/scenes/12.ts#L732) [13-s3](src/story/scenes/13.ts#L670) | [12](content/a1/12-reisen.yaml#L122) |
+| weiblich ↻ | экз. | 1 · 1 · 0 · 0 | [11-s5](src/story/scenes/11.ts#L574) | [11](content/a1/11-arbeit.yaml#L345) |
+| windig ↻ | 12 | 4 · 2 · 3 · 3 | [12-s1](src/story/scenes/12.ts#L38) [12-s4](src/story/scenes/12.ts#L477) [12-s6](src/story/scenes/12.ts#L732) [13-s3](src/story/scenes/13.ts#L670) | [12](content/a1/12-reisen.yaml#L66) |
 
 ### Выражения (7)
 
-| Слово | Откуда | Числа | Где в новой версии | Уроки | Классика |
-|---|---|---|---|---|---|
-| arbeiten als | 11 | 1 · 1 · 1 · 0 | [11-s6](src/story/scenes/11.ts#L691) | [11](content/a1/11-arbeit.yaml#L129) | гл. 11 |
-| Die Sonne scheint. | 12 | 3 · 2 · 0 · 0 | [12-s5](src/story/scenes/12.ts#L552) [13-s1](src/story/scenes/13.ts#L37) | [12](content/a1/12-reisen.yaml#L68) | гл. 12 |
-| Es schneit. ↻ | 12 | 2 · 2 · 2 · 2 | [12-s6](src/story/scenes/12.ts#L732) [13-s3](src/story/scenes/13.ts#L670) | [12](content/a1/12-reisen.yaml#L121) | гл. 12 |
-| Es sind 20 Grad. ↻ | 12 | 2 · 2 · 2 · 2 | [12-s6](src/story/scenes/12.ts#L732) [13-s3](src/story/scenes/13.ts#L670) | [12](content/a1/12-reisen.yaml#L127) | гл. 12 |
-| gestern Abend ↻ | 11 | 3 · 3 · 3 · 3 | [11-s6](src/story/scenes/11.ts#L709) [12-s5](src/story/scenes/12.ts#L816) [13-s5](src/story/scenes/13.ts#L698) | [11](content/a1/11-arbeit.yaml#L48) | гл. 11 |
-| letztes Jahr ↻ | 11 | 2 · 2 · 2 · 2 | [11-s6](src/story/scenes/11.ts#L709) [12-s5](src/story/scenes/12.ts#L816) | [11](content/a1/11-arbeit.yaml#L139) | гл. 11 |
-| noch nicht | 11 | 5 · 2 · 1 · 3 | [11-s5](src/story/scenes/11.ts#L563) [12-s1](src/story/scenes/12.ts#L48) | [09](content/a1/09-stadt.yaml#L825) [11](content/a1/11-arbeit.yaml#L44) | гл. 11 |
+| Слово | Откуда | Числа | Где в новой версии | Уроки |
+|---|---|---|---|---|
+| arbeiten als | 11 | 1 · 1 · 1 · 0 | [11-s6](src/story/scenes/11.ts#L691) | [11](content/a1/11-arbeit.yaml#L129) |
+| Die Sonne scheint. | 12 | 3 · 2 · 0 · 0 | [12-s5](src/story/scenes/12.ts#L552) [13-s1](src/story/scenes/13.ts#L37) | [12](content/a1/12-reisen.yaml#L68) |
+| Es schneit. ↻ | 12 | 2 · 2 · 2 · 2 | [12-s6](src/story/scenes/12.ts#L732) [13-s3](src/story/scenes/13.ts#L670) | [12](content/a1/12-reisen.yaml#L121) |
+| Es sind 20 Grad. ↻ | 12 | 2 · 2 · 2 · 2 | [12-s6](src/story/scenes/12.ts#L732) [13-s3](src/story/scenes/13.ts#L670) | [12](content/a1/12-reisen.yaml#L127) |
+| gestern Abend ↻ | 11 | 3 · 3 · 3 · 3 | [11-s6](src/story/scenes/11.ts#L709) [12-s5](src/story/scenes/12.ts#L816) [13-s5](src/story/scenes/13.ts#L698) | [11](content/a1/11-arbeit.yaml#L48) |
+| letztes Jahr ↻ | 11 | 2 · 2 · 2 · 2 | [11-s6](src/story/scenes/11.ts#L709) [12-s5](src/story/scenes/12.ts#L816) | [11](content/a1/11-arbeit.yaml#L139) |
+| noch nicht | 11 | 5 · 2 · 1 · 3 | [11-s5](src/story/scenes/11.ts#L563) [12-s1](src/story/scenes/12.ts#L48) | [09](content/a1/09-stadt.yaml#L825) [11](content/a1/11-arbeit.yaml#L44) |
 
 ### Числа, время, цвета и другие группы (10)
 
-| Слово | Откуда | Числа | Где в новой версии | Уроки | Классика |
-|---|---|---|---|---|---|
-| der Deutsche ↻ | экз. | 2 · 2 · 1 · 1 | [12-s5](src/story/scenes/12.ts#L619) [13-s2](src/story/scenes/13.ts#L661) | — | — |
-| der Europäer ↻ | экз. | 2 · 2 · 1 · 1 | [12-s5](src/story/scenes/12.ts#L619) [13-s2](src/story/scenes/13.ts#L661) | — | — |
-| europäisch ↻ | экз. | 2 · 2 · 1 · 1 | [12-s6](src/story/scenes/12.ts#L677) [13-s3](src/story/scenes/13.ts#L670) | — | — |
-| der Frühling ↻ | 12, экз. | 2 · 2 · 2 · 2 | [12-s2](src/story/scenes/12.ts#L265) [13-s2](src/story/scenes/13.ts#L661) | [12](content/a1/12-reisen.yaml#L135) | гл. 12 |
-| das Grad | экз. | 6 · 2 · 4 · 5 | [12-s1](src/story/scenes/12.ts#L50) [12-s3](src/story/scenes/12.ts#L304) [12-s4](src/story/scenes/12.ts#L477) [12-s6](src/story/scenes/12.ts#L732) [13-s3](src/story/scenes/13.ts#L670) | [12](content/a1/12-reisen.yaml#L68) | гл. 12 |
-| der Herbst ↻ | 12, экз. | 12 · 2 · 6 · 7 | [12-s1](src/story/scenes/12.ts#L38) [12-s4](src/story/scenes/12.ts#L457) [12-s6](src/story/scenes/12.ts#L731) [13-s2](src/story/scenes/13.ts#L661) | [12](content/a1/12-reisen.yaml#L137) | гл. 12 |
-| die Milliarde ↻ | экз. | 2 · 2 · 1 · 1 | [12-s6](src/story/scenes/12.ts#L730) [13-s2](src/story/scenes/13.ts#L661) | — | — |
-| der Monat ↻ | 12, экз. | 2 · 2 · 2 · 2 | [12-s2](src/story/scenes/12.ts#L265) [13-s2](src/story/scenes/13.ts#L661) | [03](content/a1/03-familie.yaml#L229) [12](content/a1/12-reisen.yaml#L139) | гл. 12 |
-| der Winter ↻ | 12, экз. | 4 · 2 · 4 · 3 | [12-s1](src/story/scenes/12.ts#L78) [12-s4](src/story/scenes/12.ts#L483) [12-s6](src/story/scenes/12.ts#L732) [13-s2](src/story/scenes/13.ts#L661) | [05](content/a1/05-einkaufen.yaml#L224) [12](content/a1/12-reisen.yaml#L138) | гл. 12 |
-| der Zentimeter ↻ | экз. | 1 · 1 · 0 · 0 | [11-s2](src/story/scenes/11.ts#L188) | — | — |
+| Слово | Откуда | Числа | Где в новой версии | Уроки |
+|---|---|---|---|---|
+| der Deutsche ↻ | экз. | 2 · 2 · 1 · 1 | [12-s5](src/story/scenes/12.ts#L619) [13-s2](src/story/scenes/13.ts#L661) | — |
+| der Europäer ↻ | экз. | 2 · 2 · 1 · 1 | [12-s5](src/story/scenes/12.ts#L619) [13-s2](src/story/scenes/13.ts#L661) | — |
+| europäisch ↻ | экз. | 2 · 2 · 1 · 1 | [12-s6](src/story/scenes/12.ts#L677) [13-s3](src/story/scenes/13.ts#L670) | — |
+| der Frühling ↻ | 12, экз. | 2 · 2 · 2 · 2 | [12-s2](src/story/scenes/12.ts#L265) [13-s2](src/story/scenes/13.ts#L661) | [12](content/a1/12-reisen.yaml#L135) |
+| das Grad | экз. | 6 · 2 · 4 · 5 | [12-s1](src/story/scenes/12.ts#L50) [12-s3](src/story/scenes/12.ts#L304) [12-s4](src/story/scenes/12.ts#L477) [12-s6](src/story/scenes/12.ts#L732) [13-s3](src/story/scenes/13.ts#L670) | [12](content/a1/12-reisen.yaml#L68) |
+| der Herbst ↻ | 12, экз. | 12 · 2 · 6 · 7 | [12-s1](src/story/scenes/12.ts#L38) [12-s4](src/story/scenes/12.ts#L457) [12-s6](src/story/scenes/12.ts#L731) [13-s2](src/story/scenes/13.ts#L661) | [12](content/a1/12-reisen.yaml#L137) |
+| die Milliarde ↻ | экз. | 2 · 2 · 1 · 1 | [12-s6](src/story/scenes/12.ts#L730) [13-s2](src/story/scenes/13.ts#L661) | — |
+| der Monat ↻ | 12, экз. | 2 · 2 · 2 · 2 | [12-s2](src/story/scenes/12.ts#L265) [13-s2](src/story/scenes/13.ts#L661) | [03](content/a1/03-familie.yaml#L229) [12](content/a1/12-reisen.yaml#L139) |
+| der Winter ↻ | 12, экз. | 4 · 2 · 4 · 3 | [12-s1](src/story/scenes/12.ts#L78) [12-s4](src/story/scenes/12.ts#L483) [12-s6](src/story/scenes/12.ts#L732) [13-s2](src/story/scenes/13.ts#L661) | [05](content/a1/05-einkaufen.yaml#L224) [12](content/a1/12-reisen.yaml#L138) |
+| der Zentimeter ↻ | экз. | 1 · 1 · 0 · 0 | [11-s2](src/story/scenes/11.ts#L188) | — |
 
 ## Слова: закреплено
 
