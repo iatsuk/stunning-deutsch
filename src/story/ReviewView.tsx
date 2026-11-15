@@ -3,6 +3,7 @@ import { say } from "../hooks";
 import { PlayButton } from "../markup";
 import { storyAudio, wordInfo } from "./audio";
 import { Bingo, Docks, Gendered, Gull, Letters, Lock, Pairs, Write } from "./games";
+import { Twenty } from "./minigames";
 import { initialAnswer, isCorrect, lockKey, wrongAnswers } from "./logic";
 import type { ClozeItem, Crossword, Game, Mech, MistakeItem, PluralItem, Review, Sources, VerbItem, WhoItem } from "./review";
 import { RuleCard } from "./RuleCard";
@@ -27,6 +28,7 @@ const FRAMES: Record<Mech, { title: string; task: string }> = {
   verbs: { title: "Перекличка", task: "Выберите форму глагола для этого лица." },
   perfekt: { title: "Что было вчера", task: "Выберите Perfekt: haben или sein и причастие." },
   crossword: { title: "Кроссворд Нильса", task: "Впишите немецкие слова по подсказкам, потом проверьте." },
+  twenty: { title: "Двадцать вопросов Элиф", task: "Элиф загадала слово. Спрашивайте и вычёркивайте то, что не подходит." },
 };
 
 type Finish = (missed: string[]) => void;
@@ -356,6 +358,7 @@ function ChallengeGame({ game, seed, onFinish }: { game: Extract<Game, { challen
   return (
     <>
       {c.kind === "bingo" && <Bingo c={c} {...props} />}
+      {c.kind === "twenty" && <Twenty c={c} {...props} />}
       {c.kind === "gull" && <Gull c={c} {...props} />}
       {c.kind === "docks" && <Docks c={c} {...props} />}
       {c.kind === "letters" && <Letters c={c} {...props} />}

@@ -1,6 +1,7 @@
 import { an, ANSWER, ASK, bingo, docks, gaps, gruss, gull as race, HINT_DOCK, HINT_HEAR, HINT_LETTER, HINT_LOCK, HINT_ODD, HINT_ORAL, HINT_PICTURE, HINT_RACE, HINT_SAY, letter, lock, odd, oral, order, pairs, RACE, RACE_STAKES, reply as oralReply, say as oralSay, scene, sort, speak, spot, verdict } from "../build.ts";
 import { phrases } from "../data.ts";
 import type { Challenge, Episode, SceneNode } from "../types.ts";
+import { twenty } from "../twenty.ts";
 import { back } from "./back.ts";
 
 // Глава 3 в формате сцен (A1-PLOT.md, «Формат сцен»): семья, mein / dein / sein / ihr / unser,
@@ -526,6 +527,14 @@ const poster: SceneNode[] = [
     },
   },
   narr("Кузине Мие пять. Noch keine {schule}: она ходит in den {kindergarten}."),
+  elif("Lotte sagt: Ich bin eine Person vom Plakat. Wer bin ich?", "Лотта говорит: я — кто-то с плаката. Кто я?"),
+  {
+    t: "game",
+    rule: ["kennenlernen/wortstellung-3"],
+    task: "Лотта загадала кого-то с плаката, Элиф отвечает за неё. Спрашивайте и вычёркивайте лишних.",
+    hint: "Вопрос «да или нет» начинается с глагола: Hast du …? Bist du …?",
+    c: twenty("poster", ["kerstin", "jan", "mia", "inge", "klaus", "kruemel"], "jan", "Elif", "Flo"),
+  },
   narr("Лотта молча протягивает вам фломастер: на {plakat} не хватает подписей. Она диктует шёпотом, а шёпотом похожие слова не различить."),
   {
     t: "game",

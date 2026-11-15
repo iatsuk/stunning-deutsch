@@ -247,6 +247,18 @@ export type Challenge =
       moves: Move[];
       max?: number;
     }
+  /**
+   * «20 вопросов»: who загадал карточку answer; вопросы «да/нет» с глаголом первым, у каждого —
+   * карточки с ответом «да» и «нет», остальные неизвестны. Колоды признаков — src/story/twenty.ts.
+   */
+  | {
+      kind: "twenty";
+      who: string;
+      voice: string;
+      cards: { id: string; de: string; icon: string; unit?: string }[];
+      questions: { de: string; ru: string; yes: string[]; no: string[] }[];
+      answer: string;
+    }
   | {
       kind: "spy";
       items: { de: string; colour: string }[];

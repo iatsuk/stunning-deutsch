@@ -2,6 +2,7 @@ import { shuffle } from "../lib/shuffle.ts";
 import { judge, nearMisses } from "../trainer/logic.ts";
 import { V1_ORDER } from "./v1-order.ts";
 import { flatNodes, keyOf, requiredKeys, sceneKeys, sceneVoices, sceneWords, solutionEntries, typedRight } from "./scene.ts";
+import { answerOf, excludes, reviewTwentyLines } from "./twenty.ts";
 import { TRACKS, type Cond, type Effects } from "./world.ts";
 import type {
   SceneNode,
@@ -64,6 +65,8 @@ export function storyLines(
         ...challengeLines(b.challenge),
       ]),
     ),
+    // Вопросы «20 вопросов» звучат и в раундах повторения, где колода не стоит ни в одной сцене.
+    ...reviewTwentyLines(NARRATOR),
   ];
 }
 /** Реплики самого действия; сцена отдаёт свои реплики и реплики встроенных игр. */
@@ -83,6 +86,12 @@ function challengeLines(c: Challenge): { text: string; voice: string }[] {
       return c.rounds.map((r) => ({ text: lockKey(r), voice: NARRATOR }));
     case "chat":
       return c.turns.map((t) => ({ text: t.say, voice: c.voice }));
+    case "twenty":
+      return [
+        ...c.questions.map((q) => ({ text: q.de, voice: NARRATOR })),
+        { text: "Ja.", voice: c.voice },
+        { text: "Nein.", voice: c.voice },
+      ];
     default:
       return [];
   }
@@ -104,6 +113,7 @@ export function challengeWords(c: Challenge): string[] {
   if (c.kind === "odd") return c.rounds.flatMap((r) => r.words);
   if (c.kind === "sounds") return c.rounds.flatMap((r) => r.options);
   if (c.kind === "spy") return c.items.map((i) => i.de);
+  if (c.kind === "twenty") return c.cards.flatMap((card) => (card.unit ? [card.unit] : []));
   return [];
 }
 /** Сборка проверяет, что каждое слово игры есть в словаре уроков. */
@@ -337,6 +347,48 @@ type Spy = Extract<Challenge, { kind: "spy" }>;
 export const spyMatches = (c: Spy, round: Spy["rounds"][number]) =>
   c.items.filter((i) => i.colour === round.colour && pronounOf(i.de) === round.pronoun);
 
+type TwentyGame = Extract<Challenge, { kind: "twenty" }>;
+/**
+ * Партия «20 вопросов» по записям ответа: «?номер» — заданный вопрос, «x:id» — вычеркнутая карточка.
+ * Вычеркнуть честно можно только карточку, которую уже исключил полученный ответ.
+ */
+export function twentyState(c: TwentyGame, value: Answer | undefined) {
+  const asked: number[] = [];
+  const crossed: string[] = [];
+  let fair = true;
+  for (const entry of Array.isArray(value) ? value : []) {
+    if (entry.startsWith("?")) asked.push(Number(entry.slice(1)));
+    else if (entry.startsWith("x:")) {
+      const id = entry.slice(2);
+      if (!asked.some((q) => excludes(c, q, id))) fair = false;
+      crossed.push(id);
+    }
+  }
+  return { asked, crossed, fair };
+}
+/** Короткая партия: каждый раз вопрос, который исключает больше всего оставшихся карточек. */
+function twentySolution(c: TwentyGame): string[] {
+  const left = new Set(c.cards.map((card) => card.id).filter((id) => id !== c.answer));
+  const entries: string[] = [];
+  while (left.size) {
+    let best = -1;
+    let gain = 0;
+    c.questions.forEach((_, i) => {
+      const g = [...left].filter((id) => excludes(c, i, id)).length;
+      if (g > gain) [best, gain] = [i, g];
+    });
+    if (best < 0) break;
+    entries.push(`?${best}`);
+    for (const id of [...left])
+      if (excludes(c, best, id)) {
+        entries.push(`x:${id}`);
+        left.delete(id);
+      }
+  }
+  return entries;
+}
+const W_QUESTION = /^(Wer|Was|Wo|Wie|Wann|Woher|Wohin|Warum|Welche[rsnm]?)\b/;
+
 const isRecord = (value: unknown): value is Record<string, string | number> =>
   Boolean(value) && typeof value === "object" && !Array.isArray(value);
 const sameList = (value: Answer | undefined, expected: string[]) =>
@@ -446,6 +498,10 @@ export function isCorrect(
       return sameList(value, challenge.rounds.map((r) => String(r.floor)));
     case "spy":
       return sameList(value, challenge.rounds.map((r) => r.answer));
+    case "twenty": {
+      const { crossed, fair } = twentyState(challenge, value);
+      return fair && sameSet(crossed, challenge.cards.map((card) => card.id).filter((id) => id !== challenge.answer));
+    }
     case "contra":
       return sameSet(value, challenge.answer);
     case "cipher":
@@ -511,6 +567,8 @@ export function solution(challenge: Challenge): Answer {
       return challenge.rounds.map((r) => String(r.floor));
     case "spy":
       return challenge.rounds.map((r) => r.answer);
+    case "twenty":
+      return twentySolution(challenge);
     case "planner":
       return { [plannerFree(challenge)[0]]: "star" };
     case "coins": {
@@ -549,6 +607,7 @@ export function initialAnswer(challenge: Challenge): Answer {
     case "compound":
     case "lift":
     case "spy":
+    case "twenty":
     case "algo":
     case "contra":
       return [];
@@ -694,6 +753,7 @@ function restoreDraft(c: Challenge, v: unknown): Answer | undefined {
     case "tree":
     case "portrait":
     case "spy":
+    case "twenty":
     case "algo":
       return undefined;
     case "play": {
@@ -1152,6 +1212,22 @@ export function validateChallenge(
             c.items.some((i) => i.de !== r.answer && pronounOf(i.de) === r.pronoun),
         )
       );
+    case "twenty": {
+      // Загаданную можно найти честно: её ответ на каждый вопрос известен, а каждую другую карточку
+      // исключает хотя бы один вопрос. Вопрос — «да/нет», глагол первым.
+      const ids = c.cards.map((card) => card.id);
+      return (
+        Boolean(c.who && c.voice) &&
+        ids.length >= 4 &&
+        new Set(ids).size === ids.length &&
+        ids.includes(c.answer) &&
+        c.questions.length >= 3 &&
+        c.questions.every(
+          (q) => q.ru && q.de.endsWith("?") && !W_QUESTION.test(q.de) && !q.yes.some((id) => q.no.includes(id)) && answerOf(q, c.answer) !== undefined,
+        ) &&
+        ids.every((id) => id === c.answer || c.questions.some((_, i) => excludes(c, i, id)))
+      );
+    }
     case "portrait":
       return (
         c.notes.length >= 2 &&

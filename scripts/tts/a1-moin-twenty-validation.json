@@ -1,0 +1,350 @@
+{
+ "date": "2026-11-15",
+ "scope": "The «20 questions» game: yes/no questions of the four decks in the narrator voice, the answers Ja and Nein in the voices of Hauke and Elif, and three lead-in lines in chapters 1, 3 and 7",
+ "model": "k2-fsa/OmniVoice",
+ "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+ "candidatesPerPhrase": 3,
+ "asr": "openai/whisper-large-v3",
+ "notes": [
+  "Each phrase has three takes; the chosen take has the closest transcript, an end level below -32 dB and no fragment flagged by tails.py. tails.py passes on all 42 imported files.",
+  "Whisper writes «Gaarden» as «Garden» and «Isst man an ihm?» as its homophone «Ist man an ihm?»; the takes say the words as written."
+ ],
+ "files": [
+  {
+   "file": "973b681e41f8.m4a",
+   "text": "Und jetzt ein Spiel! Ich bin eine Person von heute. Wer bin ich?",
+   "voice": "Rocko",
+   "seed": 20939096,
+   "heard": "Und jetzt ein Spiel. Ich bin eine Person von heute. Wer bin ich?",
+   "endDb": -61.4
+  },
+  {
+   "file": "87cb3bd8fd86.m4a",
+   "text": "Bist du ein Mann?",
+   "voice": "Anna",
+   "seed": 20464132,
+   "heard": "Bist du ein Mann?",
+   "endDb": -61.3
+  },
+  {
+   "file": "872262d2253b.m4a",
+   "text": "Kommst du aus Hamburg?",
+   "voice": "Anna",
+   "seed": 20853945,
+   "heard": "Kommst du aus Hamburg?",
+   "endDb": -60.6
+  },
+  {
+   "file": "815c63eacf34.m4a",
+   "text": "Kommst du aus Argentinien?",
+   "voice": "Anna",
+   "seed": 20576131,
+   "heard": "Kommst du aus Argentinien?",
+   "endDb": -62.0
+  },
+  {
+   "file": "da29a7f36f30.m4a",
+   "text": "Wohnst du in Gaarden?",
+   "voice": "Anna",
+   "seed": 20539950,
+   "heard": "Wohnst du in Garden?",
+   "endDb": -64.1
+  },
+  {
+   "file": "47a51e7ea6eb.m4a",
+   "text": "Sagst du nur Moin?",
+   "voice": "Anna",
+   "seed": 21061626,
+   "heard": "Sagst du nur Moin?",
+   "endDb": -65.3
+  },
+  {
+   "file": "cb0c4b53a8ed.m4a",
+   "text": "Arbeitest du am Kiosk?",
+   "voice": "Anna",
+   "seed": 21081037,
+   "heard": "Arbeitest du am Kiosk?",
+   "endDb": -43.2
+  },
+  {
+   "file": "0f43adf42ade.m4a",
+   "text": "Ja.",
+   "voice": "Rocko",
+   "seed": 20962460,
+   "heard": "Ja.",
+   "endDb": -68.5
+  },
+  {
+   "file": "be8ceef4de0f.m4a",
+   "text": "Nein.",
+   "voice": "Rocko",
+   "seed": 20992862,
+   "heard": "Nein.",
+   "endDb": -68.1
+  },
+  {
+   "file": "86e032363294.m4a",
+   "text": "Lotte sagt: Ich bin eine Person vom Plakat. Wer bin ich?",
+   "voice": "Flo",
+   "seed": 20470004,
+   "heard": "Lotte sagt, ich bin eine Person vom Plakat, wer bin ich?",
+   "endDb": -55.1
+  },
+  {
+   "file": "0abbdd99acde.m4a",
+   "text": "Bist du ein Kind?",
+   "voice": "Anna",
+   "seed": 21267053,
+   "heard": "Bist du ein Kind?",
+   "endDb": -61.5
+  },
+  {
+   "file": "4450357c1268.m4a",
+   "text": "Hast du Enkel?",
+   "voice": "Anna",
+   "seed": 20665015,
+   "heard": "Hast du Enkel?",
+   "endDb": -60.4
+  },
+  {
+   "file": "3829db22e431.m4a",
+   "text": "Bist du ein Hund?",
+   "voice": "Anna",
+   "seed": 20572561,
+   "heard": "Bist du ein Hund?",
+   "endDb": -53.1
+  },
+  {
+   "file": "20dabfe58d92.m4a",
+   "text": "Ja.",
+   "voice": "Flo",
+   "seed": 20720545,
+   "heard": "Ja.",
+   "endDb": -61.2
+  },
+  {
+   "file": "58d92953ecb5.m4a",
+   "text": "Nein.",
+   "voice": "Flo",
+   "seed": 20782404,
+   "heard": "Nein.",
+   "endDb": -61.7
+  },
+  {
+   "file": "84e25760eef8.m4a",
+   "text": "Und Danas Hobby? Das ist ein Geheimnis. Fragt mich!",
+   "voice": "Rocko",
+   "seed": 20706776,
+   "heard": "Und Danas Hobby? Das ist ein Geheimnis. Fragt mich!",
+   "endDb": -63.0
+  },
+  {
+   "file": "d281aa02d4b0.m4a",
+   "text": "Spielt man das mit einem Ball?",
+   "voice": "Anna",
+   "seed": 21195327,
+   "heard": "Spielt man das mit einem Ball?",
+   "endDb": -52.5
+  },
+  {
+   "file": "b76e934e3684.m4a",
+   "text": "Macht man das im Wasser?",
+   "voice": "Anna",
+   "seed": 20923108,
+   "heard": "Macht man das im Wasser?",
+   "endDb": -56.5
+  },
+  {
+   "file": "e9e64e3dc64c.m4a",
+   "text": "Braucht man ein Boot?",
+   "voice": "Anna",
+   "seed": 20690139,
+   "heard": "Braucht man ein Boot?",
+   "endDb": -53.1
+  },
+  {
+   "file": "1cd7cda0811e.m4a",
+   "text": "Macht man das in der Küche?",
+   "voice": "Anna",
+   "seed": 20671324,
+   "heard": "Macht man das in der Küche?",
+   "endDb": -54.7
+  },
+  {
+   "file": "ee3660f20c76.m4a",
+   "text": "Braucht man ein Buch?",
+   "voice": "Anna",
+   "seed": 20381334,
+   "heard": "Braucht man ein Buch?",
+   "endDb": -51.4
+  },
+  {
+   "file": "6134aef07215.m4a",
+   "text": "Braucht man Musik?",
+   "voice": "Anna",
+   "seed": 20463955,
+   "heard": "Braucht man Musik?",
+   "endDb": -54.8
+  },
+  {
+   "file": "8d0948e3e873.m4a",
+   "text": "Spielt man das mit den Füßen?",
+   "voice": "Anna",
+   "seed": 20378835,
+   "heard": "Spielt man das mit den Füßen?",
+   "endDb": -40.4
+  },
+  {
+   "file": "a8e7b4e74f17.m4a",
+   "text": "Sieht man einen Film?",
+   "voice": "Anna",
+   "seed": 21230711,
+   "heard": "Sieht man einen Film?",
+   "endDb": -59.2
+  },
+  {
+   "file": "ded887ba2ef0.m4a",
+   "text": "Macht man Fotos?",
+   "voice": "Anna",
+   "seed": 20689104,
+   "heard": "Macht man Fotos?",
+   "endDb": -48.4
+  },
+  {
+   "file": "be6b59e62e42.m4a",
+   "text": "Ist es ein Tier?",
+   "voice": "Anna",
+   "seed": 20304401,
+   "heard": "Ist es ein Tier?",
+   "endDb": -68.2
+  },
+  {
+   "file": "3c4ea49e5555.m4a",
+   "text": "Geht man mit ihm spazieren?",
+   "voice": "Anna",
+   "seed": 21232467,
+   "heard": "Geht man mit ihm spazieren?",
+   "endDb": -65.1
+  },
+  {
+   "file": "c72d4242655d.m4a",
+   "text": "Kann man es essen?",
+   "voice": "Anna",
+   "seed": 20364349,
+   "heard": "Kann man es essen?",
+   "endDb": -63.6
+  },
+  {
+   "file": "86760a13050d.m4a",
+   "text": "Ist es Obst?",
+   "voice": "Anna",
+   "seed": 20550492,
+   "heard": "Ist es Obst?",
+   "endDb": -50.2
+  },
+  {
+   "file": "2a0224ef594d.m4a",
+   "text": "Kann man es anziehen?",
+   "voice": "Anna",
+   "seed": 21227949,
+   "heard": "Kann man es anziehen?",
+   "endDb": -62.6
+  },
+  {
+   "file": "6831988f737f.m4a",
+   "text": "Trägt man es an den Füßen?",
+   "voice": "Anna",
+   "seed": 20485279,
+   "heard": "Trägt man es an den Füßen?",
+   "endDb": -59.7
+  },
+  {
+   "file": "50d87b0d6844.m4a",
+   "text": "Trägt man es an den Beinen?",
+   "voice": "Anna",
+   "seed": 20911106,
+   "heard": "Trägt man es an den Beinen?",
+   "endDb": -65.3
+  },
+  {
+   "file": "864eebdbd833.m4a",
+   "text": "Kann man mit ihm fahren?",
+   "voice": "Anna",
+   "seed": 20901425,
+   "heard": "Kann man mit ihm fahren?",
+   "endDb": -65.1
+  },
+  {
+   "file": "7880178bd280.m4a",
+   "text": "Fährt es auf dem Wasser?",
+   "voice": "Anna",
+   "seed": 20447392,
+   "heard": "Fährt es auf dem Wasser?",
+   "endDb": -64.7
+  },
+  {
+   "file": "4a6305b20e43.m4a",
+   "text": "Fährt es auf der Straße?",
+   "voice": "Anna",
+   "seed": 21049729,
+   "heard": "Fährt es auf der Straße?",
+   "endDb": -66.3
+  },
+  {
+   "file": "fe12e69ce76e.m4a",
+   "text": "Braucht man eine Fahrkarte?",
+   "voice": "Anna",
+   "seed": 21177917,
+   "heard": "Braucht man eine Fahrkarte?",
+   "endDb": -59.3
+  },
+  {
+   "file": "0c2d087a770f.m4a",
+   "text": "Gehört es zu den Möbeln?",
+   "voice": "Anna",
+   "seed": 20574174,
+   "heard": "Gehört es zu den Möbeln?",
+   "endDb": -60.1
+  },
+  {
+   "file": "b613c2db08a4.m4a",
+   "text": "Sitzt man auf ihm?",
+   "voice": "Anna",
+   "seed": 21029380,
+   "heard": "Sitzt man auf ihm?",
+   "endDb": -67.6
+  },
+  {
+   "file": "14f142e4a77c.m4a",
+   "text": "Isst man an ihm?",
+   "voice": "Anna",
+   "seed": 21224139,
+   "heard": "Ist man an ihm?",
+   "endDb": -60.5
+  },
+  {
+   "file": "04c5fdedec7b.m4a",
+   "text": "Kann man mit ihm telefonieren?",
+   "voice": "Anna",
+   "seed": 20565578,
+   "heard": "Kann man mit ihm telefonieren?",
+   "endDb": -60.8
+  },
+  {
+   "file": "3a89f9e38776.m4a",
+   "text": "Ist es aus Papier?",
+   "voice": "Anna",
+   "seed": 20637637,
+   "heard": "Ist es aus Papier?",
+   "endDb": -67.5
+  },
+  {
+   "file": "d3e08a5cbc98.m4a",
+   "text": "Braucht man es für die Tür?",
+   "voice": "Anna",
+   "seed": 20737383,
+   "heard": "Braucht man es für die Tür?",
+   "endDb": -53.6
+  }
+ ]
+}

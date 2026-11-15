@@ -1,6 +1,7 @@
 import { an, ANSWER, ASK, bingo, docks, gaps, gruss, gull as race, HINT_DOCK, HINT_HEAR, HINT_LETTER, HINT_LOCK, HINT_ODD, HINT_ORAL, HINT_PICTURE, HINT_RACE, HINT_SAY, HINT_SPELL, letter, letters, lock, odd, oral, order, pairs, RACE, RACE_STAKES, reply as oralReply, REQUEST, say as oralSay, scene, sort, speak, verdict, write } from "../build.ts";
 import { phrases } from "../data.ts";
 import type { Challenge, ChatTurn, Episode, SceneNode } from "../types.ts";
+import { twenty } from "../twenty.ts";
 import { back } from "./back.ts";
 
 // Глава 7 в формате сцен (A1-PLOT.md, «Формат сцен»): досуг и встречи, können и wollen, инфинитив
@@ -91,6 +92,14 @@ const invite: SceneNode[] = [
   narr("На карточках ещё {wandern}, {radfahren}, {laufen} и {baden}. Хауке пишет крупно: Was macht Herr Jensen gern?"),
   narr("Если дождь — Tennis in der {halle}. Но Йенсен выходит в море и в дождь."),
   { t: "game", task: "Послушайте занятие и нажмите на картинку.", hint: HINT_PICTURE, c: scene([["schwimmen", "🏊"], ["tanzen", "💃"], ["lesen", "📖"], ["kochen", "🍳"], ["Fahrrad fahren", "🚲"], ["segeln", "⛵"], ["Tennis spielen", "🎾"], ["Gitarre spielen", "🎸"], ["grillen", "🍖"]]) },
+  hauke("Und Danas Hobby? Das ist ein Geheimnis. Fragt mich!", "А хобби Даны? Это тайна. Спрашивайте меня!"),
+  {
+    t: "game",
+    rule: ["kennenlernen/wortstellung-3"],
+    task: "Хауке знает хобби Даны. Спрашивайте и вычёркивайте занятия, которые не подходят.",
+    hint: "Вопрос «да или нет» начинается с глагола: Braucht man …? Macht man …?",
+    c: twenty("hobbies", ["tennis", "schwimmen", "segeln", "kochen", "lesen", "tanzen"], "schwimmen", "Hauke", "Rocko"),
+  },
   elif("Herr Jensen segelt jeden Morgen um acht. Immer allein!", "Господин Йенсен ходит под парусом каждое утро в восемь. Всегда один!"),
   { t: "gap", task: "Когда Йенсен выходит в море?", text: "Jeden Morgen um ___ segelt Herr Jensen.", options: ["acht", "halb acht", "sechs"], answer: "acht", ru: "Каждое утро в восемь господин Йенсен выходит под парусом." },
   {

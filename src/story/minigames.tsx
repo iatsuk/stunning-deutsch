@@ -1,10 +1,11 @@
 import { Fragment, useEffect, useMemo, useRef, useState } from "react";
-import { say } from "../hooks";
+import { playAll, say } from "../hooks";
 import { shuffle } from "../lib/shuffle";
 import { PlayButton } from "../markup";
-import { nounAudio, wordInfo } from "./audio";
+import { nounAudio, storyAudio, wordInfo } from "./audio";
 import { Gendered, Note, RouteMap, walkAngle, type Game } from "./games";
-import { compoundOf, decipher, floorLabel, gridKey, MOVES, placeKey, plannerWho, pronounOf, treeSlots, walk } from "./logic";
+import { compoundOf, decipher, floorLabel, gridKey, MOVES, NARRATOR, placeKey, plannerWho, pronounOf, treeSlots, twentyState, walk } from "./logic";
+import { answerOf, excludes } from "./twenty";
 import type { Answer, Move, PortraitPart, TreeNode, TreeSlot } from "./types";
 
 // Новые мини-игры новой версии (A1-PLOT.md, «Новые мини-игры»). Как и прежние игры, всё
@@ -676,6 +677,93 @@ export function Spy({ c, value, seed, disabled, change, win, miss }: Game<"spy">
           </button>
         ))}
       </div>
+      {note && <Note tone={tone}>{note}</Note>}
+    </>
+  );
+}
+
+/**
+ * «20 вопросов»: загадывающий задумал одну карточку. Игрок задаёт вопросы «да/нет», слышит ответ и
+ * сам вычёркивает тех, кого ответ исключил. Вычеркнуть того, кого ни один ответ не исключает, нельзя:
+ * так угадать перебором не выйдет, а ошибка только подсказывает.
+ */
+export function Twenty({ c, value, seed, disabled, change, win, miss }: Game<"twenty">) {
+  const entries = asList(value);
+  const { asked, crossed } = twentyState(c, entries);
+  const [note, setNote] = useState("");
+  const [tone, setTone] = useState<Tone>();
+  // Перевод вопроса открывается по нажатию, как у реплик: сначала игрок читает немецкий сам.
+  const [glossed, setGlossed] = useState<number[]>([]);
+  const cards = useMemo(() => shuffle(c.cards, seed), [c.cards, seed]);
+  const questions = useMemo(() => shuffle(c.questions.map((q, i) => ({ q, i })), `${seed}-q`), [c.questions, seed]);
+  const target = c.cards.find((card) => card.id === c.answer)!;
+  if (disabled) return <Note>Загадка отгадана: {target.de}.</Note>;
+  const reply = (i: number) => (answerOf(c.questions[i], c.answer) ? "Ja." : "Nein.");
+  function ask(i: number) {
+    if (asked.includes(i)) return say(storyAudio(reply(i), c.voice));
+    playAll([storyAudio(c.questions[i].de, NARRATOR), storyAudio(reply(i), c.voice)]);
+    setNote("");
+    change([...entries, `?${i}`]);
+  }
+  function cross(id: string) {
+    const card = c.cards.find((x) => x.id === id)!;
+    if (crossed.includes(id)) return;
+    if (!asked.some((q) => excludes(c, q, id))) {
+      miss(card.unit);
+      setTone("bad");
+      return setNote(`Пока ни один ответ не исключает: ${card.de}. Спросите ещё.`);
+    }
+    const next = [...entries, `x:${id}`];
+    change(next);
+    if (crossed.length + 1 === c.cards.length - 1) {
+      setTone("good");
+      setNote(`Остался один ответ: ${target.de}!`);
+      win();
+    } else {
+      setTone(undefined);
+      setNote("");
+    }
+  }
+  return (
+    <>
+      <p className="moin-count">
+        Отвечает {c.who} · вопросов: {asked.length}
+      </p>
+      <div className="moin-twenty-cards">
+        {cards.map((card) => (
+          <button
+            type="button"
+            key={card.id}
+            lang="de"
+            aria-pressed={crossed.includes(card.id)}
+            disabled={crossed.includes(card.id)}
+            onClick={() => cross(card.id)}
+          >
+            <span aria-hidden="true">{card.icon}</span>
+            <span>{card.de}</span>
+          </button>
+        ))}
+      </div>
+      <ul className="moin-twenty-questions">
+        {questions.map(({ q, i }) => (
+          <li key={q.de}>
+            <button type="button" lang="de" onClick={() => ask(i)}>
+              {q.de}
+            </button>
+            {asked.includes(i) ? (
+              <small>
+                <b lang="de">{reply(i)}</b> {q.ru}
+              </small>
+            ) : glossed.includes(i) ? (
+              <small>{q.ru}</small>
+            ) : (
+              <button type="button" className="link-button" onClick={() => setGlossed([...glossed, i])}>
+                Перевод
+              </button>
+            )}
+          </li>
+        ))}
+      </ul>
       {note && <Note tone={tone}>{note}</Note>}
     </>
   );

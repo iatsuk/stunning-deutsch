@@ -1,5 +1,6 @@
 import { pairs } from "./build.ts";
 import { phrases } from "./data.ts";
+import { reviewTwenty } from "./twenty.ts";
 import { challengeWords } from "./logic.ts";
 import { dueWords, lockCard, type Cards, type Interval } from "./memory.ts";
 import { flatNodes } from "./scene.ts";
@@ -79,7 +80,7 @@ export const dueUnits = (cards: Cards, step: number, day: number) => dueWords(ca
 
 // ——— Механики ———
 
-export type Mech = "bingo" | "gull" | "docks" | "letters" | "write" | "pairs" | "lock" | "plural" | "cloze" | "who" | "mistake" | "verbs" | "perfekt" | "crossword";
+export type Mech = "bingo" | "gull" | "docks" | "letters" | "write" | "pairs" | "lock" | "plural" | "cloze" | "who" | "mistake" | "verbs" | "perfekt" | "crossword" | "twenty";
 export type PluralItem = { unit: string; de: string; options: string[]; answer: string };
 export type ClozeItem = { unit: string; line: Line; before: string; after: string; answer: string; options: string[] };
 export type WhoItem = { unit: string; line: Line; options: string[]; answer: string };
@@ -89,7 +90,7 @@ export type VerbItem = { unit: string; verb: string; ru: string; prompt: string;
 export type CrossWord = { unit: string; word: string; clue: string; x: number; y: number; down: boolean; n: number };
 export type Crossword = { width: number; height: number; words: CrossWord[] };
 export type Game =
-  | { mech: "bingo" | "gull" | "docks" | "letters" | "write" | "pairs" | "lock"; units: string[]; challenge: Challenge; rules?: Record<string, string[]> }
+  | { mech: "bingo" | "gull" | "docks" | "letters" | "write" | "pairs" | "lock" | "twenty"; units: string[]; challenge: Challenge; rules?: Record<string, string[]> }
   | { mech: "plural"; units: string[]; items: PluralItem[] }
   | { mech: "cloze"; units: string[]; items: ClozeItem[] }
   | { mech: "who"; units: string[]; items: WhoItem[] }
@@ -98,14 +99,14 @@ export type Game =
   | { mech: "crossword"; units: string[]; grid: Crossword };
 export type Review = { games: Game[] };
 
-export const MECHS: Mech[] = ["bingo", "who", "pairs", "docks", "gull", "plural", "verbs", "cloze", "mistake", "perfekt", "lock", "crossword", "letters", "write"];
+export const MECHS: Mech[] = ["bingo", "who", "pairs", "docks", "gull", "plural", "verbs", "cloze", "mistake", "perfekt", "lock", "crossword", "letters", "write", "twenty"];
 /**
  * Узнать и выбрать можно сразу после встречи; собрать по буквам — после первого верного повтора,
  * написать по памяти — после второго. Остальные механики подходят единице любой прочности.
  */
 const MIN_BOX: Partial<Record<Mech, number>> = { letters: 1, write: 2, crossword: 1 };
-/** С какой главы механика уместна: Perfekt вводит урок 11. */
-const MIN_CHAPTER: Partial<Record<Mech, number>> = { perfekt: 11 };
+/** С какой главы механика уместна: Perfekt вводит урок 11; вопросы «20 вопросов» — о досуге, одежде и доме. */
+const MIN_CHAPTER: Partial<Record<Mech, number>> = { perfekt: 11, twenty: 8 };
 
 const ARTICLE = /^(der|die|das) /;
 const PLURAL_ONLY = new Set(["die Eltern", "die Geschwister", "die Großeltern", "die Möbel", "die Nebenkosten", "die Ferien", "die USA", "die Leute", "die Pommes frites"]);
@@ -305,6 +306,13 @@ function build(mech: Mech, pool: string[], cards: Cards, ctx: Context): Built {
         seed,
       );
       return grid && grid.words.length >= 3 ? { game: { mech, units: grid.words.map((w) => w.unit), grid }, used: grid.words.map((w) => w.unit) } : null;
+    }
+    case "twenty": {
+      // Элиф на скамейке загадывает слово из очереди: хобби или вещь, у которых описаны признаки.
+      const challenge = reviewTwenty(pool, (u) => Boolean(cards[u]));
+      if (!challenge) return null;
+      const used = challenge.cards.flatMap((card) => (card.unit && pool.includes(card.unit) ? [card.unit] : []));
+      return { game: { mech, units: used, challenge }, used };
     }
     case "mistake": {
       const items: MistakeItem[] = [];

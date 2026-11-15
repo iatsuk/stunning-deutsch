@@ -2848,6 +2848,60 @@
   max-width: 64px;
   height: auto;
 }
+/* «20 вопросов»: карточки на столе вычёркиваются, у заданного вопроса остаётся ответ. */
+.moin-twenty-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin: 10px 0;
+}
+.moin-twenty-cards button {
+  display: grid;
+  justify-items: center;
+  gap: 2px;
+  padding: 8px 4px;
+  border: 1px solid var(--line-strong);
+  border-radius: 6px;
+  background: var(--panel);
+  color: inherit;
+  font-family: var(--serif);
+  font-size: 14px;
+  cursor: pointer;
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
+.moin-twenty-cards button span:first-child {
+  font-size: 24px;
+}
+.moin-twenty-cards button[aria-pressed="true"] {
+  opacity: 0.35;
+  text-decoration: line-through;
+  cursor: default;
+}
+.moin-twenty-questions {
+  display: grid;
+  gap: 6px;
+  margin: 10px 0;
+  padding: 0;
+  list-style: none;
+}
+.moin-twenty-questions button {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid var(--line-strong);
+  border-radius: 6px;
+  background: transparent;
+  color: inherit;
+  font-family: var(--serif);
+  font-size: 15px;
+  text-align: left;
+  cursor: pointer;
+}
+.moin-twenty-questions small {
+  display: block;
+  margin: 2px 0 0 10px;
+  color: var(--muted);
+}
 /* «Алгоритм»: программа из карточек; цель подписана на схеме, шаг, который идёт сейчас, выделен. */
 .moin-walk text[data-goal] {
   fill: var(--accent);

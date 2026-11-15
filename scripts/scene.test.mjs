@@ -11,6 +11,7 @@ import { sceneChapter1 } from "../src/story/scenes/01.ts";
 import { GERMAN_TARGET, sceneChapters } from "../src/story/scenes/index.ts";
 import { SCENE_RULES } from "../src/story/scenes/rules.ts";
 import { RETURNS, WARMUPS } from "../src/story/scenes/warmups.ts";
+import { reviewTwenty, twenty } from "../src/story/twenty.ts";
 import { found } from "./a1-index.mjs";
 
 const words = JSON.parse(readFileSync(new URL("../src/generated/a1-words.json", import.meta.url)));
@@ -331,6 +332,21 @@ test("from chapter 2 tasks carry the German exam instruction", () => {
   // Объявление на вокзале слушают как Durchsage, как в экзамене.
   const announced = sceneChapters.flatMap((c) => c.beats.flatMap((b) => flatNodes(nodes(b)))).filter((n) => n.t === "hear" && n.an);
   assert.ok(announced.length >= 3 && announced.every((n) => n.an.includes("Durchsage")));
+});
+
+test("twenty questions is won only by crossing out what an answer excluded", () => {
+  const c = twenty("club", ["elif", "dana", "mateo", "nils", "jensen", "frauke"], "mateo", "Hauke", "Rocko");
+  assert.ok(validateChallenge(c, new Set(), phrases));
+  assert.ok(isCorrect(c, solution(c)));
+  // Вычеркнуть всех без вопросов — не победа, даже если загадка верна.
+  assert.equal(isCorrect(c, ["x:elif", "x:dana", "x:nils", "x:jensen", "x:frauke"]), false);
+  // Карточку, которую ни один вопрос не отличает от загаданной, проверка вида не пропускает.
+  assert.equal(validateChallenge({ ...c, questions: c.questions.filter((q) => !q.yes.includes("frauke") && !q.no.includes("frauke")) }, new Set(), phrases), false);
+  // В раунде повторения Элиф загадывает слово из очереди среди уже встреченных.
+  const hobbies = ["Tennis spielen", "schwimmen", "segeln", "kochen", "lesen", "tanzen"];
+  const round = reviewTwenty(["kochen"], (u) => hobbies.includes(u));
+  assert.ok(round && round.cards.find((card) => card.id === round.answer).unit === "kochen");
+  assert.ok(validateChallenge(round, new Set(), phrases) && isCorrect(round, solution(round)));
 });
 
 test("branches are played in the player's order and the scene resumes where it stopped", () => {

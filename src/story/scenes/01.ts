@@ -1,4 +1,5 @@
 import { an, ANSWER, ASK, bingo, docks, gruss, gull as race, HEAR, HINT_HEAR, HINT_RACE, letter, letters, lock, odd, oral, order, RACE, RACE_STAKES, reply as oralReply, say as oralSay, scene, write } from "../build.ts";
+import { twenty } from "../twenty.ts";
 import type { Episode, SceneNode } from "../types.ts";
 
 // Прототип главы 1 в формате сцен (A1-PLOT.md, «Формат сцен»). Сцена — разговор и осмотр
@@ -644,6 +645,14 @@ const evening: SceneNode[] = [
       no("Только страна", "aus Kiel — тоже правильный ответ: город годится."),
       no("Только город", "aus Deutschland — тоже правильный ответ: страна годится."),
     ],
+  },
+  hauke("Und jetzt ein Spiel! Ich bin eine Person von heute. Wer bin ich?", "А теперь игра! Я — человек, которого ты сегодня встретил. Кто я?"),
+  {
+    t: "game",
+    rule: ["kennenlernen/wortstellung-3"],
+    task: "Хауке загадал человека. Спрашивайте и вычёркивайте тех, кого ответ исключил.",
+    hint: "Вопрос «да или нет» начинается с глагола: Kommst du …? Bist du …?",
+    c: twenty("club", ["elif", "dana", "mateo", "nils", "jensen", "frauke"], "mateo", "Hauke", "Rocko"),
   },
   narr("Чтобы всех помирить, Элиф поворачивается к {fenster}: там сидит чайка."),
   elif("Und du, Möwe? Woher kommst du?", "А ты, чайка? Откуда ты?"),

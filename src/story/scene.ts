@@ -227,6 +227,7 @@ const BY_GAME: Record<string, string> = {
   oral: "Stellen Sie sich vor und nennen Sie Ihren Namen. Stellen Sie Fragen und formulieren Sie Bitten.",
   chat: "Reagieren Sie.",
   speak: "Hören Sie und sprechen Sie nach.",
+  twenty: "Stellen Sie Fragen. Die Antwort ist Ja oder Nein.",
 };
 /** Немецкая инструкция задания или ничего: в главе 1 игрок ещё не читает по-немецки. */
 export function anweisung(node: SceneNode, chapter: number): string | undefined {
