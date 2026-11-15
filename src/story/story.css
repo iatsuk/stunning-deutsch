@@ -1180,9 +1180,12 @@
   font-family: var(--serif);
   font-size: 22px;
 }
+/* Диски стоят в один ряд, как слова во фразе. Диск не уже самого длинного слова своих вариантов:
+   слово не рвётся посередине. */
 .moin-reels {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(112px, 1fr));
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(min-content, 1fr);
   gap: 6px;
   margin-bottom: 8px;
 }
@@ -1206,14 +1209,41 @@
 .moin-reels button:disabled {
   visibility: hidden;
 }
-.moin-reels output {
+.moin-reels output,
+.moin-reel-width {
   padding: 8px 6px;
-  border-block: 1px solid var(--line);
   font-family: var(--serif);
   font-size: 17px;
   line-height: 1.2;
+  /* Не anywhere: тот разрешает разрыв внутри слова и обнуляет наименьшую ширину диска. */
+  overflow-wrap: break-word;
+}
+.moin-reels output {
+  border-block: 1px solid var(--line);
   text-align: center;
-  overflow-wrap: anywhere;
+}
+.moin-reel-width {
+  display: grid;
+  height: 0;
+  padding-block: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+/* На телефоне три диска с длинными словами помещаются в ряд только меньшим кеглем. */
+@media (max-width: 480px) {
+  .moin-reels output,
+  .moin-reel-width {
+    font-size: 15px;
+  }
+}
+/* На самых узких экранах длинные слова в ряд не помещаются: диски равные, слово переносится. */
+@media (max-width: 350px) {
+  .moin-reels {
+    grid-auto-columns: minmax(0, 1fr);
+  }
+  .moin-reels output {
+    overflow-wrap: anywhere;
+  }
 }
 .moin-letter .moin-source {
   margin: 0 0 16px;

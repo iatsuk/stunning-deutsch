@@ -1692,6 +1692,12 @@ function LockBox({
             <output lang="de" aria-label={`Диск ${i + 1}`}>
               {options[at[i]]}
             </output>
+            {/* Невидимый столбик всех вариантов держит ширину диска: при повороте она не меняется. */}
+            <span className="moin-reel-width" lang="de" aria-hidden="true">
+              {options.map((o, k) => (
+                <span key={k}>{o}</span>
+              ))}
+            </span>
             <button
               type="button"
               aria-label={`Диск ${i + 1}: следующий вариант`}
