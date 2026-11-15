@@ -8,6 +8,7 @@ import { parse } from "yaml";
 import { sceneChapters } from "../src/story/scenes/index.ts";
 import { anweisung, flatNodes } from "../src/story/scene.ts";
 import { phrases } from "../src/story/data.ts";
+import { audioKey, NARRATOR, spoken } from "../src/story/logic.ts";
 import { sceneUnits as reviewUnits } from "../src/story/review.ts";
 import { WARMUPS } from "../src/story/scenes/warmups.ts";
 
@@ -27,6 +28,7 @@ export const A2_FROM = 11;
 export const BASELINE = path.join(root, "scripts/a1-index-baseline.json");
 const REPORT = path.join(root, "A1-INDEX.md");
 const JSON_OUT = path.join(root, "src/generated/a1-index.json");
+const REFERENCE_OUT = path.join(root, "src/generated/a1-reference.json");
 const LESSONS = ["kennenlernen", "zahlen", "familie", "essen", "einkaufen", "tagesablauf", "freizeit", "wohnen", "stadt", "gesundheit", "arbeit", "reisen"];
 
 // ——— Текст узлов ———
@@ -516,9 +518,63 @@ export function renderReport(index) {
   return `${out.join("\n").replace(/\n{3,}/g, "\n\n")}\n`;
 }
 
+/** Слово в форме карточки урока: род по артиклю, множественное — как у слов урока. */
+function asWord(de, ru, pl, audio) {
+  const article = /^(der|die|das) /.exec(de)?.[1];
+  return {
+    de,
+    ru,
+    gender: pl === "pl" ? "pl" : article ? { der: "m", die: "f", das: "n" }[article] : null,
+    plural: pl && pl !== "-" && pl !== "pl" ? pl : null,
+    ...(audio ? { audio } : {}),
+  };
+}
+
+/**
+ * Данные справочника A1 (#/a1/reference): пункты грамматики и все обязательные слова в форме карточки
+ * урока с главой, где слово впервые встречается в истории. Перевод и запись берутся из словаря уроков,
+ * выражений истории или словаря справочника (content/reference/a1-dictionary.yaml); слово без
+ * перевода останавливает сборку, чтобы справочник не отставал от курса.
+ */
+export function referenceOf(index) {
+  const generated = (file) => JSON.parse(readFileSync(path.join(root, "src/generated", file), "utf8"));
+  const recordings = generated("story-audio.json");
+  const cards = generated("story-rules.json");
+  const known = new Map();
+  const add = (word) => {
+    const { key } = parseEntry(word.de);
+    if (key && !known.has(key)) known.set(key, word);
+  };
+  for (const id of LESSONS)
+    for (const group of Object.values(generated(`topics/${id}.json`).words))
+      for (const w of group.items) add({ de: w.de, ru: w.ru, gender: w.gender, plural: w.plural, ...(w.audio ? { audio: w.audio } : {}) });
+  for (const p of Object.values(phrases)) add(asWord(p.de, p.ru, p.pl, recordings[audioKey(spoken(p), NARRATOR)]));
+  // Словарь справочника хранится по ключу эталона: показанная форма может быть другой («jed-» → «jeder, jede, jedes»).
+  for (const [entry, w] of Object.entries(generated("a1-dictionary.json"))) {
+    const { key } = parseEntry(entry);
+    if (key && !known.has(key)) known.set(key, { de: w.de, ru: w.ru, gender: w.gender, plural: w.plural, ...(w.audio ? { audio: w.audio } : {}) });
+  }
+  const missing = index.words.filter((w) => !known.has(w.key)).map((w) => w.de);
+  if (missing.length) throw new Error(`Справочник A1: нет перевода у слов ${missing.join(", ")}. Допишите их в content/reference/a1-dictionary.yaml.`);
+  return {
+    chapters: sceneChapters.map((c, i) => ({ n: i + 1, title: c.title, topic: c.topic })),
+    // about — текст карточек правила: по нему поиск находит «Dativ», хотя в названии пункта его нет.
+    grammar: index.grammar.map((g) => ({
+      id: g.id,
+      group: g.group,
+      title: g.title,
+      about: g.rules.map((id) => `${cards[id]?.point ?? ""} ${cards[id]?.read ?? ""}`).join(" ").replace(/[*+]/g, ""),
+      rules: g.rules,
+      chapters: g.chapters,
+    })),
+    words: index.words.map((w) => ({ ...known.get(w.key), part: w.part, chapter: w.chapters.length ? Math.min(...w.chapters) : null })),
+  };
+}
+
 export function writeIndex({ baseline = false } = {}) {
   const index = buildIndex();
   writeFileSync(JSON_OUT, compact(index));
+  writeFileSync(REFERENCE_OUT, `${JSON.stringify(referenceOf(index))}\n`);
   writeFileSync(REPORT, renderReport(index));
   if (baseline) writeFileSync(BASELINE, `${JSON.stringify(baselineOf(index), null, 1)}\n`);
   const s = index.summary;

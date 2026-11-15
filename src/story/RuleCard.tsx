@@ -3,6 +3,7 @@ import rules from "../generated/story-rules.json";
 import { Text } from "../markup";
 import { SentenceView } from "../stage/Sentence";
 import { TableView } from "../stage/Table";
+import "./rule-card.css";
 
 type Rule = {
   point: string;

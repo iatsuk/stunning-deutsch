@@ -28,6 +28,7 @@ GitHub Pages — их меняют только вместе с переносо
 | `src/generated/` | сгенерировано, руками не правится |
 | `src/pages/`, `src/adventure/`, `src/stage/`, `src/trainer/`, `src/case/`, `src/assessment/` | страницы уроков и контролей |
 | `src/story/` | курс A1 «Дело о пропавшем Moin»: выражения (`data.ts`) и сцены (`scenes/`) |
+| `src/reference/`, `src/pages/Reference.tsx` | справочник A1: данные — `src/generated/a1-reference.json` из `scripts/a1-index.mjs` |
 | `src/story/logic.ts`, `scene.ts`, `review.ts`, `progress.ts` | логика игры без React — её и проверяют тесты |
 | `scripts/tts/` | озвучка: конфигурация модели, генерация, проверка концов записей |
 | `public/audio/`, `public/story-img/`, `public/home/` | записи, картинки истории и снимки игры для главной |

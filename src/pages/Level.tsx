@@ -1,7 +1,7 @@
 import { Footer, Topbar, useTitle } from "../App";
 import { assessmentCatalog, type Level } from "../content";
 import { useProgress } from "../hooks";
-import { De, Text, plural } from "../markup";
+import { De, Text } from "../markup";
 
 export function LevelPage({ level }: { level: Level }) {
   useTitle(`${level.code} — ${level.name} · Stunning Deutsch`);
@@ -44,11 +44,14 @@ export function LevelPage({ level }: { level: Level }) {
         <section className="route" id="route">
           <div className="section-head">
             <div className="kicker">Справочник</div>
-            <h2>{plural(level.topics.length, ["тема", "темы", "тем"])} уровня</h2>
+            <h2>Грамматика и слова A1</h2>
             <p>
-              Разборы правил, шпаргалки и словари по темам. Справочник собран из прежних уроков и пока
-              отстаёт от истории: части слов и правил экзамена в нём нет.
+              Все правила и слова экзамена, которые даёт история, на одной странице: с поиском, озвучкой и
+              главой, где они встречаются.
             </p>
+            {level.id === "a1" && <a className="cta" href="#/a1/reference">Открыть справочник</a>}
+            <h3 className="route-subhead">Разборы по темам</h3>
+            <p>Подробные объяснения, шпаргалки, тренажёр и словари по темам уроков.</p>
           </div>
           <ol className="route-list">
             {level.topics.map((topic) => {

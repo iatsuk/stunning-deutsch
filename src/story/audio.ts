@@ -21,7 +21,7 @@ const phraseByDe = new Map(Object.values(phrases).map((p) => [p.de, p]));
  */
 export const wordInfo = (de: string) => {
   const p = a1Words[de] ? undefined : phraseByDe.get(de);
-  return a1Words[de] ?? (p ? { ru: p.ru, audio: phraseAudio(p), ...(p.pl ? { pl: p.pl } : {}) } : undefined);
+  return a1Words[de] ?? (p ? { ru: p.ru, audio: phraseAudio(p), ...(p.pl && p.pl !== "pl" ? { pl: p.pl } : {}) } : undefined);
 };
 
 /** Все слова с переводом для игр: словарь уроков и выражения истории. */

@@ -1,0 +1,1324 @@
+{
+ "date": "2026-11-15",
+ "scope": "A1 reference dictionary (content/reference/a1-dictionary.yaml): exam words with no lesson or story recording, voiced like lesson words; stems with a hyphen are voiced as full forms (jeder, jede, jedes)",
+ "model": "k2-fsa/OmniVoice",
+ "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+ "candidatesPerPhrase": 3,
+ "asr": "openai/whisper-large-v3",
+ "notes": [
+  "The chosen take was encoded (8 of 567 takes came out silent and were skipped), has no fragment or cut ending flagged by tails.py and the closest transcript; the default seed wins ties.",
+  "Expected differences: bei → «Bye», es → «S», man → «Mann», das Grad → «Grat» are the correct pronunciation written differently; numbers come out as digits.",
+  "To listen: er (heard «Eher»), dieser, diese, dieses (Whisper does not tell diese from dieser). Automated checks do not replace listening."
+ ],
+ "files": [
+  {
+   "file": "2488d487a056.m4a",
+   "text": "warum",
+   "voice": "Anna",
+   "seed": 21071414,
+   "heard": "Warum?"
+  },
+  {
+   "file": "4bfcfdaac7d9.m4a",
+   "text": "helfen",
+   "voice": "Anna",
+   "seed": 20930745,
+   "heard": "Helfen"
+  },
+  {
+   "file": "97af4038676e.m4a",
+   "text": "geben",
+   "voice": "Anna",
+   "seed": 20770318,
+   "heard": "geben"
+  },
+  {
+   "file": "b49f170efb93.m4a",
+   "text": "bringen",
+   "voice": "Anna",
+   "seed": 20918643,
+   "heard": "bringen"
+  },
+  {
+   "file": "879ed0516a1d.m4a",
+   "text": "stellen",
+   "voice": "Anna",
+   "seed": 20840061,
+   "heard": "stellen"
+  },
+  {
+   "file": "a1b36c2d1d63.m4a",
+   "text": "stehen",
+   "voice": "Anna",
+   "seed": 20374915,
+   "heard": "stehen"
+  },
+  {
+   "file": "2abd427ab182.m4a",
+   "text": "liegen",
+   "voice": "Anna",
+   "seed": 20783650,
+   "heard": "Liegen"
+  },
+  {
+   "file": "76655fd2a135.m4a",
+   "text": "unter",
+   "voice": "Anna",
+   "seed": 20674837,
+   "heard": "Unter"
+  },
+  {
+   "file": "9ec8e9500e0f.m4a",
+   "text": "über",
+   "voice": "Anna",
+   "seed": 21246639,
+   "heard": "Über"
+  },
+  {
+   "file": "b66ba1089017.m4a",
+   "text": "günstig",
+   "voice": "Anna",
+   "seed": 20709879,
+   "heard": "günstig"
+  },
+  {
+   "file": "79d968807b84.m4a",
+   "text": "ab",
+   "voice": "Anna",
+   "seed": 20383763,
+   "heard": "Ab"
+  },
+  {
+   "file": "3cc3ecb5632c.m4a",
+   "text": "bis",
+   "voice": "Anna",
+   "seed": 20860684,
+   "heard": "Bis."
+  },
+  {
+   "file": "6e23039bb96e.m4a",
+   "text": "nennen",
+   "voice": "Anna",
+   "seed": 20708942,
+   "heard": "Nennen"
+  },
+  {
+   "file": "0cf08ec0c77b.m4a",
+   "text": "hell",
+   "voice": "Anna",
+   "seed": 20959865,
+   "heard": "hell"
+  },
+  {
+   "file": "2cf233a706a4.m4a",
+   "text": "dunkel",
+   "voice": "Anna",
+   "seed": 20560947,
+   "heard": "Dunkel"
+  },
+  {
+   "file": "119b55a3c979.m4a",
+   "text": "sagen",
+   "voice": "Anna",
+   "seed": 20661401,
+   "heard": "Sagen"
+  },
+  {
+   "file": "40baaefdc3cc.m4a",
+   "text": "später",
+   "voice": "Anna",
+   "seed": 21222060,
+   "heard": "Später"
+  },
+  {
+   "file": "bdd4c89a9e60.m4a",
+   "text": "das Beispiel, die Beispiele",
+   "voice": "Anna",
+   "seed": 20553728,
+   "heard": "Das Beispiel die Beispiele"
+  },
+  {
+   "file": "5f806085cd00.m4a",
+   "text": "ankommen",
+   "voice": "Anna",
+   "seed": 21095136,
+   "heard": "Ankommen"
+  },
+  {
+   "file": "0db81259bf76.m4a",
+   "text": "der Wind, die Winde",
+   "voice": "Anna",
+   "seed": 20276182,
+   "heard": "Der Wind, die Winde"
+  },
+  {
+   "file": "3c0ee24be7d8.m4a",
+   "text": "aber",
+   "voice": "Anna",
+   "seed": 21095096,
+   "heard": "Aber"
+  },
+  {
+   "file": "2f172e93123d.m4a",
+   "text": "also",
+   "voice": "Anna",
+   "seed": 20404701,
+   "heard": "Also."
+  },
+  {
+   "file": "c60d602e718c.m4a",
+   "text": "an",
+   "voice": "Anna",
+   "seed": 20791980,
+   "heard": "an"
+  },
+  {
+   "file": "e3507625f43b.m4a",
+   "text": "auch",
+   "voice": "Anna",
+   "seed": 20348699,
+   "heard": "Auch."
+  },
+  {
+   "file": "4b8278d7b499.m4a",
+   "text": "auf",
+   "voice": "Anna",
+   "seed": 20495097,
+   "heard": "Auf!"
+  },
+  {
+   "file": "60b7f533a3ed.m4a",
+   "text": "aus",
+   "voice": "Anna",
+   "seed": 20344909,
+   "heard": "Aus."
+  },
+  {
+   "file": "9819bf0a22da.m4a",
+   "text": "bei",
+   "voice": "Anna",
+   "seed": 20977914,
+   "heard": "Bye."
+  },
+  {
+   "file": "1a639274fa28.m4a",
+   "text": "da",
+   "voice": "Anna",
+   "seed": 20485256,
+   "heard": "Da."
+  },
+  {
+   "file": "24c9a1ecefaa.m4a",
+   "text": "dann",
+   "voice": "Anna",
+   "seed": 20947082,
+   "heard": "Dann..."
+  },
+  {
+   "file": "1859c30cb503.m4a",
+   "text": "denn",
+   "voice": "Anna",
+   "seed": 20806883,
+   "heard": "Denn"
+  },
+  {
+   "file": "84f2344fc55a.m4a",
+   "text": "dich",
+   "voice": "Anna",
+   "seed": 20856186,
+   "heard": "Dich."
+  },
+  {
+   "file": "81f9cf835fee.m4a",
+   "text": "er",
+   "voice": "Anna",
+   "seed": 20594318,
+   "heard": "Eher."
+  },
+  {
+   "file": "2aa831a7e5b5.m4a",
+   "text": "es",
+   "voice": "Anna",
+   "seed": 21220245,
+   "heard": "S"
+  },
+  {
+   "file": "d0488291de64.m4a",
+   "text": "für",
+   "voice": "Anna",
+   "seed": 21081476,
+   "heard": "für"
+  },
+  {
+   "file": "3ad9f23cb1b9.m4a",
+   "text": "hier",
+   "voice": "Anna",
+   "seed": 20639193,
+   "heard": "Hier."
+  },
+  {
+   "file": "91fb87b047d1.m4a",
+   "text": "ich",
+   "voice": "Anna",
+   "seed": 20572559,
+   "heard": "Ich"
+  },
+  {
+   "file": "b64c14a3a97d.m4a",
+   "text": "ihn",
+   "voice": "Anna",
+   "seed": 20308748,
+   "heard": "ihn."
+  },
+  {
+   "file": "cf3fee7db3e6.m4a",
+   "text": "in",
+   "voice": "Anna",
+   "seed": 20373685,
+   "heard": "In"
+  },
+  {
+   "file": "519a81aadff0.m4a",
+   "text": "ja",
+   "voice": "Anna",
+   "seed": 20541695,
+   "heard": "Ja."
+  },
+  {
+   "file": "9f9ee1fa9874.m4a",
+   "text": "kein",
+   "voice": "Anna",
+   "seed": 21206804,
+   "heard": "Kein."
+  },
+  {
+   "file": "81503154b4d7.m4a",
+   "text": "man",
+   "voice": "Anna",
+   "seed": 20262711,
+   "heard": "Mann."
+  },
+  {
+   "file": "bd567c0c23b9.m4a",
+   "text": "mehr",
+   "voice": "Anna",
+   "seed": 20276424,
+   "heard": "Mehr"
+  },
+  {
+   "file": "15c769f15f55.m4a",
+   "text": "mein",
+   "voice": "Anna",
+   "seed": 20362485,
+   "heard": "Mein"
+  },
+  {
+   "file": "99284589635f.m4a",
+   "text": "mit",
+   "voice": "Anna",
+   "seed": 20634367,
+   "heard": "Mit"
+  },
+  {
+   "file": "4f060bbc4220.m4a",
+   "text": "nein",
+   "voice": "Anna",
+   "seed": 20546176,
+   "heard": "Nein."
+  },
+  {
+   "file": "0fab2946870e.m4a",
+   "text": "nicht",
+   "voice": "Anna",
+   "seed": 20573230,
+   "heard": "Nicht."
+  },
+  {
+   "file": "8276cd28c3d8.m4a",
+   "text": "nichts",
+   "voice": "Anna",
+   "seed": 21013688,
+   "heard": "Nichts."
+  },
+  {
+   "file": "0081dd977999.m4a",
+   "text": "noch",
+   "voice": "Anna",
+   "seed": 20741928,
+   "heard": "Noch."
+  },
+  {
+   "file": "513aee6f70f0.m4a",
+   "text": "nur",
+   "voice": "Anna",
+   "seed": 20502783,
+   "heard": "Nur."
+  },
+  {
+   "file": "a4160ab94ca3.m4a",
+   "text": "oder",
+   "voice": "Anna",
+   "seed": 20412739,
+   "heard": "Oder..."
+  },
+  {
+   "file": "b15552d629c9.m4a",
+   "text": "ohne",
+   "voice": "Anna",
+   "seed": 20364649,
+   "heard": "Ohne."
+  },
+  {
+   "file": "4c913fe09b28.m4a",
+   "text": "sehr",
+   "voice": "Anna",
+   "seed": 20914312,
+   "heard": "Sehr."
+  },
+  {
+   "file": "6fab41203cb8.m4a",
+   "text": "sich",
+   "voice": "Anna",
+   "seed": 20991431,
+   "heard": "Sich"
+  },
+  {
+   "file": "378679f77cfa.m4a",
+   "text": "sie",
+   "voice": "Anna",
+   "seed": 20676809,
+   "heard": "Sie"
+  },
+  {
+   "file": "56c226723ae8.m4a",
+   "text": "um",
+   "voice": "Anna",
+   "seed": 20925576,
+   "heard": "um"
+  },
+  {
+   "file": "583ba0c590b7.m4a",
+   "text": "und",
+   "voice": "Anna",
+   "seed": 20877975,
+   "heard": "Und?"
+  },
+  {
+   "file": "1d8005bb6b62.m4a",
+   "text": "viel",
+   "voice": "Anna",
+   "seed": 20449218,
+   "heard": "Viel."
+  },
+  {
+   "file": "b716c669b9de.m4a",
+   "text": "von",
+   "voice": "Anna",
+   "seed": 21258012,
+   "heard": "Von"
+  },
+  {
+   "file": "b4f46963c44f.m4a",
+   "text": "wann",
+   "voice": "Anna",
+   "seed": 20434846,
+   "heard": "Wann?"
+  },
+  {
+   "file": "257d3b2c982d.m4a",
+   "text": "was",
+   "voice": "Anna",
+   "seed": 21179021,
+   "heard": "Was?"
+  },
+  {
+   "file": "333296563fbf.m4a",
+   "text": "wer",
+   "voice": "Anna",
+   "seed": 20885134,
+   "heard": "Wer?"
+  },
+  {
+   "file": "116863ad4bef.m4a",
+   "text": "wie",
+   "voice": "Anna",
+   "seed": 20833551,
+   "heard": "Wie?"
+  },
+  {
+   "file": "dfea32c7a946.m4a",
+   "text": "wir",
+   "voice": "Anna",
+   "seed": 20548134,
+   "heard": "Wir."
+  },
+  {
+   "file": "f3dff3a10afa.m4a",
+   "text": "wo",
+   "voice": "Anna",
+   "seed": 20935194,
+   "heard": "Wo?"
+  },
+  {
+   "file": "c841c79c6705.m4a",
+   "text": "woher",
+   "voice": "Anna",
+   "seed": 20606437,
+   "heard": "Woher?"
+  },
+  {
+   "file": "875083c276f8.m4a",
+   "text": "wohin",
+   "voice": "Anna",
+   "seed": 20954200,
+   "heard": "Wohin?"
+  },
+  {
+   "file": "1ff1abc7c396.m4a",
+   "text": "abfahren",
+   "voice": "Anna",
+   "seed": 20844005,
+   "heard": "Abfahren"
+  },
+  {
+   "file": "1a97378b1d94.m4a",
+   "text": "besuchen",
+   "voice": "Anna",
+   "seed": 20508852,
+   "heard": "Besuchen"
+  },
+  {
+   "file": "b0e594dfad59.m4a",
+   "text": "bitten",
+   "voice": "Anna",
+   "seed": 20947257,
+   "heard": "bitten"
+  },
+  {
+   "file": "928f2685477a.m4a",
+   "text": "danken",
+   "voice": "Anna",
+   "seed": 20516361,
+   "heard": "danken."
+  },
+  {
+   "file": "7de2f9fd997f.m4a",
+   "text": "fahren",
+   "voice": "Anna",
+   "seed": 20488607,
+   "heard": "Fahren"
+  },
+  {
+   "file": "5e62dc2dcff5.m4a",
+   "text": "fragen",
+   "voice": "Anna",
+   "seed": 21056853,
+   "heard": "Fragen"
+  },
+  {
+   "file": "fd74701c0d08.m4a",
+   "text": "freuen",
+   "voice": "Anna",
+   "seed": 21181224,
+   "heard": "freuen"
+  },
+  {
+   "file": "8f33fd57f181.m4a",
+   "text": "gehören",
+   "voice": "Anna",
+   "seed": 20764193,
+   "heard": "Gehören"
+  },
+  {
+   "file": "a2e1b577eff2.m4a",
+   "text": "halten",
+   "voice": "Anna",
+   "seed": 21138642,
+   "heard": "HALTEN"
+  },
+  {
+   "file": "1b56418ceec1.m4a",
+   "text": "hören",
+   "voice": "Anna",
+   "seed": 21169471,
+   "heard": "Hören"
+  },
+  {
+   "file": "d0adfd3ec80d.m4a",
+   "text": "kommen",
+   "voice": "Anna",
+   "seed": 20930733,
+   "heard": "kommen"
+  },
+  {
+   "file": "a5b513efe0b0.m4a",
+   "text": "lernen",
+   "voice": "Anna",
+   "seed": 20412368,
+   "heard": "lernen"
+  },
+  {
+   "file": "904fa0774e1f.m4a",
+   "text": "machen",
+   "voice": "Anna",
+   "seed": 21250495,
+   "heard": "Machen"
+  },
+  {
+   "file": "5616490c35a5.m4a",
+   "text": "mitbringen",
+   "voice": "Anna",
+   "seed": 21075124,
+   "heard": "Mitbringen"
+  },
+  {
+   "file": "3b3bb5a814fe.m4a",
+   "text": "mögen",
+   "voice": "Anna",
+   "seed": 21061790,
+   "heard": "mögen."
+  },
+  {
+   "file": "c8e13ad457f3.m4a",
+   "text": "öffnen",
+   "voice": "Anna",
+   "seed": 20452499,
+   "heard": "Öffnen"
+  },
+  {
+   "file": "6b763b5af622.m4a",
+   "text": "regnen",
+   "voice": "Anna",
+   "seed": 20390978,
+   "heard": "regnen"
+  },
+  {
+   "file": "17d1ce24c7d1.m4a",
+   "text": "reisen",
+   "voice": "Anna",
+   "seed": 20389600,
+   "heard": "reisen"
+  },
+  {
+   "file": "d9939be3e32b.m4a",
+   "text": "scheinen",
+   "voice": "Anna",
+   "seed": 21092154,
+   "heard": "Scheinen"
+  },
+  {
+   "file": "697d863d1c3b.m4a",
+   "text": "schließen",
+   "voice": "Anna",
+   "seed": 21249290,
+   "heard": "Schließen"
+  },
+  {
+   "file": "4ef5de61afe6.m4a",
+   "text": "schreiben",
+   "voice": "Anna",
+   "seed": 21159046,
+   "heard": "Schreiben"
+  },
+  {
+   "file": "479247e612c5.m4a",
+   "text": "sehen",
+   "voice": "Anna",
+   "seed": 20318757,
+   "heard": "Sehen"
+  },
+  {
+   "file": "74e3fdefbca4.m4a",
+   "text": "sein",
+   "voice": "Anna",
+   "seed": 21006276,
+   "heard": "Sein"
+  },
+  {
+   "file": "35ab2562215a.m4a",
+   "text": "sitzen",
+   "voice": "Anna",
+   "seed": 21128826,
+   "heard": "sitzen"
+  },
+  {
+   "file": "aa1b645fdb62.m4a",
+   "text": "sollen",
+   "voice": "Anna",
+   "seed": 21103618,
+   "heard": "sollen"
+  },
+  {
+   "file": "9ebd69ba6c7a.m4a",
+   "text": "spielen",
+   "voice": "Anna",
+   "seed": 21093722,
+   "heard": "Spielen"
+  },
+  {
+   "file": "62f7a50ac12c.m4a",
+   "text": "treffen",
+   "voice": "Anna",
+   "seed": 20650636,
+   "heard": "Treffen"
+  },
+  {
+   "file": "b3785ccb16bd.m4a",
+   "text": "vorstellen",
+   "voice": "Anna",
+   "seed": 20521949,
+   "heard": "Vorstellen"
+  },
+  {
+   "file": "25a7c7912d4f.m4a",
+   "text": "warten",
+   "voice": "Anna",
+   "seed": 21207471,
+   "heard": "Warten"
+  },
+  {
+   "file": "ecb709d04ec2.m4a",
+   "text": "werden",
+   "voice": "Anna",
+   "seed": 21085841,
+   "heard": "werden"
+  },
+  {
+   "file": "eee0f3424b55.m4a",
+   "text": "wissen",
+   "voice": "Anna",
+   "seed": 20554165,
+   "heard": "Wissen"
+  },
+  {
+   "file": "726372480d4a.m4a",
+   "text": "wohnen",
+   "voice": "Anna",
+   "seed": 20914410,
+   "heard": "Wohnen"
+  },
+  {
+   "file": "1bd1fe2d3321.m4a",
+   "text": "wählen",
+   "voice": "Anna",
+   "seed": 20750913,
+   "heard": "Wählen"
+  },
+  {
+   "file": "a27d88be878a.m4a",
+   "text": "reagieren",
+   "voice": "Anna",
+   "seed": 21060650,
+   "heard": "Reagieren"
+  },
+  {
+   "file": "438c1416e9be.m4a",
+   "text": "formulieren",
+   "voice": "Anna",
+   "seed": 20789406,
+   "heard": "formulieren"
+  },
+  {
+   "file": "15ca3a41ada1.m4a",
+   "text": "allein",
+   "voice": "Anna",
+   "seed": 21220929,
+   "heard": "Allein."
+  },
+  {
+   "file": "97137355c172.m4a",
+   "text": "arbeitslos",
+   "voice": "Anna",
+   "seed": 20433746,
+   "heard": "Arbeitslos"
+  },
+  {
+   "file": "1735c352a5a2.m4a",
+   "text": "bisschen",
+   "voice": "Anna",
+   "seed": 20940034,
+   "heard": "Bisschen."
+  },
+  {
+   "file": "cffbc144a959.m4a",
+   "text": "einmal",
+   "voice": "Anna",
+   "seed": 20512360,
+   "heard": "Einmal."
+  },
+  {
+   "file": "e05c450f17b1.m4a",
+   "text": "falsch",
+   "voice": "Anna",
+   "seed": 20491089,
+   "heard": "Falsch!"
+  },
+  {
+   "file": "a3b550bd196c.m4a",
+   "text": "gut",
+   "voice": "Anna",
+   "seed": 21239180,
+   "heard": "Gut."
+  },
+  {
+   "file": "0ce00fe9d9a1.m4a",
+   "text": "herzlich",
+   "voice": "Anna",
+   "seed": 20452481,
+   "heard": "Herzlich."
+  },
+  {
+   "file": "d4b9a55dc468.m4a",
+   "text": "jung",
+   "voice": "Anna",
+   "seed": 20685064,
+   "heard": "Jung"
+  },
+  {
+   "file": "aea111ef0bc5.m4a",
+   "text": "klar",
+   "voice": "Anna",
+   "seed": 21107493,
+   "heard": "Klar."
+  },
+  {
+   "file": "b896fa435250.m4a",
+   "text": "lange",
+   "voice": "Anna",
+   "seed": 20582192,
+   "heard": "Lange"
+  },
+  {
+   "file": "03ff312b469a.m4a",
+   "text": "langsam",
+   "voice": "Anna",
+   "seed": 20724538,
+   "heard": "Langsam"
+  },
+  {
+   "file": "2e418f3b801c.m4a",
+   "text": "laut",
+   "voice": "Anna",
+   "seed": 21054268,
+   "heard": "laut"
+  },
+  {
+   "file": "d048d442f741.m4a",
+   "text": "neu",
+   "voice": "Anna",
+   "seed": 20650128,
+   "heard": "Neu."
+  },
+  {
+   "file": "9b293e4a31af.m4a",
+   "text": "richtig",
+   "voice": "Anna",
+   "seed": 20275215,
+   "heard": "Richtig."
+  },
+  {
+   "file": "f654a8df5ecb.m4a",
+   "text": "ruhig",
+   "voice": "Anna",
+   "seed": 21165786,
+   "heard": "Ruhig."
+  },
+  {
+   "file": "8e56443745f3.m4a",
+   "text": "schnell",
+   "voice": "Anna",
+   "seed": 21065747,
+   "heard": "schnell"
+  },
+  {
+   "file": "e59168401cb5.m4a",
+   "text": "schwer",
+   "voice": "Anna",
+   "seed": 20311765,
+   "heard": "schwer"
+  },
+  {
+   "file": "3901dc760a0d.m4a",
+   "text": "vielleicht",
+   "voice": "Anna",
+   "seed": 20734893,
+   "heard": "Vielleicht."
+  },
+  {
+   "file": "da2ced73d4c4.m4a",
+   "text": "zurück",
+   "voice": "Anna",
+   "seed": 20468516,
+   "heard": "Zurück."
+  },
+  {
+   "file": "0cfd7f8f803b.m4a",
+   "text": "der Appetit",
+   "voice": "Anna",
+   "seed": 20631131,
+   "heard": "Der Appetit"
+  },
+  {
+   "file": "8aa8e3d940e0.m4a",
+   "text": "die Bahn, die Bahnen",
+   "voice": "Anna",
+   "seed": 21065792,
+   "heard": "Die Bahn, die Bahnen"
+  },
+  {
+   "file": "c474b9de4863.m4a",
+   "text": "der Brief, die Briefe",
+   "voice": "Anna",
+   "seed": 20863939,
+   "heard": "Der Brief. Die Briefe."
+  },
+  {
+   "file": "c1290d1bc80f.m4a",
+   "text": "der Dank",
+   "voice": "Anna",
+   "seed": 21005423,
+   "heard": "Der Dank"
+  },
+  {
+   "file": "ffc3f77d7e00.m4a",
+   "text": "der Durst",
+   "voice": "Anna",
+   "seed": 21163232,
+   "heard": "Der Durst"
+  },
+  {
+   "file": "7ee9fbc46d61.m4a",
+   "text": "die Ecke, die Ecken",
+   "voice": "Anna",
+   "seed": 20695041,
+   "heard": "Die Ecke, die Ecken"
+  },
+  {
+   "file": "aa0714867273.m4a",
+   "text": "das Ende, die Enden",
+   "voice": "Anna",
+   "seed": 21109459,
+   "heard": "Das Ende, die Enden"
+  },
+  {
+   "file": "27215de5f20b.m4a",
+   "text": "die Entschuldigung, die Entschuldigungen",
+   "voice": "Anna",
+   "seed": 21015851,
+   "heard": "Die Entschuldigung, die Entschuldigungen"
+  },
+  {
+   "file": "0be583915003.m4a",
+   "text": "der Fußball, die Fußbälle",
+   "voice": "Anna",
+   "seed": 21015843,
+   "heard": "Der Fußball. Die Fußbälle."
+  },
+  {
+   "file": "8e6502b04345.m4a",
+   "text": "das Gespräch, die Gespräche",
+   "voice": "Anna",
+   "seed": 21208101,
+   "heard": "Das Gespräch. Die Gespräche."
+  },
+  {
+   "file": "8f230f493d86.m4a",
+   "text": "der Gruß, die Grüße",
+   "voice": "Anna",
+   "seed": 20354389,
+   "heard": "Der Gruß die Grüße"
+  },
+  {
+   "file": "475dda83e11b.m4a",
+   "text": "der Herr, die Herren",
+   "voice": "Anna",
+   "seed": 20867579,
+   "heard": "Der Herr, die Herren"
+  },
+  {
+   "file": "32ebe7795b14.m4a",
+   "text": "die Hilfe",
+   "voice": "Anna",
+   "seed": 20454452,
+   "heard": "Die Hilfe"
+  },
+  {
+   "file": "00481a4b9927.m4a",
+   "text": "der Hunger",
+   "voice": "Anna",
+   "seed": 21068359,
+   "heard": "Der Hunger"
+  },
+  {
+   "file": "1eccaf6f53fb.m4a",
+   "text": "die Leute",
+   "voice": "Anna",
+   "seed": 20731483,
+   "heard": "Die Leute"
+  },
+  {
+   "file": "8687cee8c5b4.m4a",
+   "text": "das Licht, die Lichter",
+   "voice": "Anna",
+   "seed": 20329428,
+   "heard": "Das Licht. Die Lichter."
+  },
+  {
+   "file": "0eb1b514be1b.m4a",
+   "text": "das Lied, die Lieder",
+   "voice": "Anna",
+   "seed": 20296763,
+   "heard": "Das Lied, die Lieder"
+  },
+  {
+   "file": "7d7964bd0e9b.m4a",
+   "text": "die Maschine, die Maschinen",
+   "voice": "Anna",
+   "seed": 20887483,
+   "heard": "Die Maschine, die Maschinen."
+  },
+  {
+   "file": "1876f2522536.m4a",
+   "text": "das Papier, die Papiere",
+   "voice": "Anna",
+   "seed": 20938326,
+   "heard": "Das Papier, die Papiere"
+  },
+  {
+   "file": "87a41aea292f.m4a",
+   "text": "der Plan, die Pläne",
+   "voice": "Anna",
+   "seed": 21200911,
+   "heard": "Der Plan. Die Pläne."
+  },
+  {
+   "file": "9cd0990da467.m4a",
+   "text": "die Polizei",
+   "voice": "Anna",
+   "seed": 21199751,
+   "heard": "Die Polizei"
+  },
+  {
+   "file": "d768409f5584.m4a",
+   "text": "das Problem, die Probleme",
+   "voice": "Anna",
+   "seed": 21015588,
+   "heard": "Das Problem die Probleme"
+  },
+  {
+   "file": "76b12da86758.m4a",
+   "text": "der Regen",
+   "voice": "Anna",
+   "seed": 20561208,
+   "heard": "Der Regen"
+  },
+  {
+   "file": "f94fe1724f01.m4a",
+   "text": "die Rezeption, die Rezeptionen",
+   "voice": "Anna",
+   "seed": 20358561,
+   "heard": "Die Rezeption, die Rezeptionen"
+  },
+  {
+   "file": "c9ccd208f002.m4a",
+   "text": "Satz",
+   "voice": "Anna",
+   "seed": 20573474,
+   "heard": "Satz"
+  },
+  {
+   "file": "3eeebe8a1d6c.m4a",
+   "text": "die Sonne",
+   "voice": "Anna",
+   "seed": 21122124,
+   "heard": "Die Sonne"
+  },
+  {
+   "file": "0157b1961fa1.m4a",
+   "text": "das Telefon, die Telefone",
+   "voice": "Anna",
+   "seed": 20449281,
+   "heard": "Das Telefon, die Telefone"
+  },
+  {
+   "file": "6daad8164112.m4a",
+   "text": "der Test, die Tests",
+   "voice": "Anna",
+   "seed": 20466034,
+   "heard": "Der Test. Die Tests."
+  },
+  {
+   "file": "44579cde776f.m4a",
+   "text": "das Thema, die Themen",
+   "voice": "Anna",
+   "seed": 20929807,
+   "heard": "Das Thema – Die Themen"
+  },
+  {
+   "file": "3920be97351e.m4a",
+   "text": "das Wiederhören",
+   "voice": "Anna",
+   "seed": 20578302,
+   "heard": "Das Wiederhören"
+  },
+  {
+   "file": "29ac825da3ee.m4a",
+   "text": "das Wiedersehen",
+   "voice": "Anna",
+   "seed": 20549646,
+   "heard": "Das Wiedersehen"
+  },
+  {
+   "file": "b1a0002ee7d5.m4a",
+   "text": "auf sein",
+   "voice": "Anna",
+   "seed": 21218741,
+   "heard": "Auf sein!"
+  },
+  {
+   "file": "09bd1b521bd6.m4a",
+   "text": "aus sein",
+   "voice": "Anna",
+   "seed": 21111700,
+   "heard": "Aussein"
+  },
+  {
+   "file": "4ee7c5e056b5.m4a",
+   "text": "hallo",
+   "voice": "Anna",
+   "seed": 20486741,
+   "heard": "Hallo."
+  },
+  {
+   "file": "9fccc28b1c57.m4a",
+   "text": "weg sein",
+   "voice": "Anna",
+   "seed": 20302455,
+   "heard": "Weg sein."
+  },
+  {
+   "file": "f25c113b6b4c.m4a",
+   "text": "zu sein",
+   "voice": "Anna",
+   "seed": 20296650,
+   "heard": "zu sein."
+  },
+  {
+   "file": "b735010b39ca.m4a",
+   "text": "tschüss",
+   "voice": "Anna",
+   "seed": 20931545,
+   "heard": "Tschüss!"
+  },
+  {
+   "file": "b7807206af11.m4a",
+   "text": "wie viel",
+   "voice": "Anna",
+   "seed": 20998577,
+   "heard": "Wie viel?"
+  },
+  {
+   "file": "6dad86ba880c.m4a",
+   "text": "das Grad",
+   "voice": "Anna",
+   "seed": 20402284,
+   "heard": "Das Grat"
+  },
+  {
+   "file": "474d4a7f484b.m4a",
+   "text": "neunzehn",
+   "voice": "Anna",
+   "seed": 21170475,
+   "heard": "19."
+  },
+  {
+   "file": "214f433376e8.m4a",
+   "text": "zwanzig",
+   "voice": "Anna",
+   "seed": 20840264,
+   "heard": "20"
+  },
+  {
+   "file": "377f10398de1.m4a",
+   "text": "dreißig",
+   "voice": "Anna",
+   "seed": 20842625,
+   "heard": "30"
+  },
+  {
+   "file": "345557874085.m4a",
+   "text": "fünfzig",
+   "voice": "Anna",
+   "seed": 20607205,
+   "heard": "50"
+  },
+  {
+   "file": "f497acb5dc5b.m4a",
+   "text": "hundert",
+   "voice": "Anna",
+   "seed": 21099643,
+   "heard": "100"
+  },
+  {
+   "file": "0148a5672ca0.m4a",
+   "text": "erste",
+   "voice": "Anna",
+   "seed": 20536384,
+   "heard": "Erste"
+  },
+  {
+   "file": "12bfd825f72b.m4a",
+   "text": "zweite",
+   "voice": "Anna",
+   "seed": 20681291,
+   "heard": "Zweite"
+  },
+  {
+   "file": "40531f85c7ee.m4a",
+   "text": "dritte",
+   "voice": "Anna",
+   "seed": 20585422,
+   "heard": "Dritte"
+  },
+  {
+   "file": "83e6206408c2.m4a",
+   "text": "der Tag, die Tage",
+   "voice": "Anna",
+   "seed": 20404514,
+   "heard": "Der Tag, die Tage."
+  },
+  {
+   "file": "43fe720bdaa0.m4a",
+   "text": "der Meter, die Meter",
+   "voice": "Anna",
+   "seed": 20394688,
+   "heard": "Der Meter. Die Meter."
+  },
+  {
+   "file": "c1f0d1aaeb18.m4a",
+   "text": "der Liter, die Liter",
+   "voice": "Anna",
+   "seed": 21212280,
+   "heard": "Der Liter. Die Liter."
+  },
+  {
+   "file": "2c2d9bd3119f.m4a",
+   "text": "das Pfund, die Pfunde",
+   "voice": "Anna",
+   "seed": 20712575,
+   "heard": "Das Pfund, die Pfunde"
+  },
+  {
+   "file": "f883cf03ebc5.m4a",
+   "text": "das Kilo, die Kilos",
+   "voice": "Anna",
+   "seed": 20805925,
+   "heard": "Das Kilo, die Kilos"
+  },
+  {
+   "file": "05b375f844b3.m4a",
+   "text": "deutsch",
+   "voice": "Anna",
+   "seed": 20750675,
+   "heard": "Deutsch"
+  },
+  {
+   "file": "fff78f803081.m4a",
+   "text": "alle, alles",
+   "voice": "Anna",
+   "seed": 20808929,
+   "heard": "Alle. Alles."
+  },
+  {
+   "file": "6e41f929dfc5.m4a",
+   "text": "beste, am besten",
+   "voice": "Anna",
+   "seed": 20461669,
+   "heard": "Beste am besten."
+  },
+  {
+   "file": "b29a73ad230c.m4a",
+   "text": "dein, deine",
+   "voice": "Anna",
+   "seed": 20695276,
+   "heard": "Dein Deine"
+  },
+  {
+   "file": "cd37bf05e478.m4a",
+   "text": "der, die, das",
+   "voice": "Anna",
+   "seed": 20990808,
+   "heard": "Der, die, das."
+  },
+  {
+   "file": "2f69537fd1ff.m4a",
+   "text": "dieser, diese, dieses",
+   "voice": "Anna",
+   "seed": 21218335,
+   "heard": "Dieser, dieser, dieses..."
+  },
+  {
+   "file": "f19632403ce2.m4a",
+   "text": "ein, eine",
+   "voice": "Anna",
+   "seed": 20720130,
+   "heard": "Ein, eine."
+  },
+  {
+   "file": "dc2aabb6c9fb.m4a",
+   "text": "euer, eure",
+   "voice": "Anna",
+   "seed": 20881371,
+   "heard": "Euer, eure"
+  },
+  {
+   "file": "0a8036cf67fc.m4a",
+   "text": "jeder, jede, jedes",
+   "voice": "Anna",
+   "seed": 20914908,
+   "heard": "Jeder, jede, jedes."
+  },
+  {
+   "file": "c5bc0314f28a.m4a",
+   "text": "letzte",
+   "voice": "Anna",
+   "seed": 20489002,
+   "heard": "Letzte"
+  },
+  {
+   "file": "b13887d95a66.m4a",
+   "text": "lieb, liebe",
+   "voice": "Anna",
+   "seed": 20722485,
+   "heard": "Lieb, Liebe"
+  },
+  {
+   "file": "c6de4f8c2cdf.m4a",
+   "text": "am meisten, die meisten",
+   "voice": "Anna",
+   "seed": 20886975,
+   "heard": "Am meisten. Die meisten."
+  },
+  {
+   "file": "33a18e9baa19.m4a",
+   "text": "unser, unsere",
+   "voice": "Anna",
+   "seed": 20578553,
+   "heard": "Unser. Unsere."
+  },
+  {
+   "file": "7cf971db5c58.m4a",
+   "text": "welcher, welche, welches",
+   "voice": "Anna",
+   "seed": 21163384,
+   "heard": "Welcher, welche welches?"
+  },
+  {
+   "file": "54854d9327b2.m4a",
+   "text": "Lieblings-: der Lieblingsfilm",
+   "voice": "Anna",
+   "seed": 21134162,
+   "heard": "Lieblings, der Lieblingsfilm"
+  }
+ ]
+}

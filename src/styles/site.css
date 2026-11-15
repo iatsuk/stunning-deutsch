@@ -630,6 +630,57 @@ html:has(.topbar-lesson) {
   grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)) !important;
 }
 
+/* Справочник A1 */
+
+.reference-search {
+  display: block;
+  width: min(100%, 520px);
+  margin-top: 32px;
+  padding: 12px 16px;
+  border: 1px solid var(--line-strong);
+  border-radius: 12px;
+  background: var(--panel);
+  color: var(--text);
+  font: inherit;
+}
+
+.reference-search:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.reference-point {
+  border-top: 1px solid var(--line);
+}
+
+.reference-point > summary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4px 16px;
+  padding: 12px 0;
+  cursor: pointer;
+}
+
+.reference-point[open] > summary {
+  color: var(--accent);
+}
+
+.reference-chapters {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--faint);
+}
+
+.route-subhead {
+  margin: 48px 0 0;
+  font-size: 24px;
+}
+
+.reference-empty {
+  color: var(--muted);
+}
+
 /* Соседние темы */
 
 .topic-nav {

@@ -23,6 +23,7 @@ import { audioKey, storyLines, storyWords, validateStory } from "../src/story/lo
 import { sceneRules } from "../src/story/scene.ts";
 import { SCENE_RULES } from "../src/story/scenes/rules.ts";
 import { uhrzeit } from "../src/lib/german.ts";
+import { parseEntry } from "./a1-index.mjs";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
 const contentDir = path.join(root, "content");
@@ -165,6 +166,24 @@ if (!ONLY) {
   }
 }
 
+// Словарь справочника A1: слова экзамена, которых нет ни в уроках, ни в выражениях истории. Строится и
+// озвучивается как слова урока, но в игры и повторение не идёт: a1Words его не включает.
+const a1Dictionary = {};
+const dictionaryWhere = "reference/a1-dictionary.yaml";
+const dictionarySource = load(path.join(contentDir, dictionaryWhere), dictionaryWhere);
+if (dictionarySource) {
+  // Ключ — слово эталона; de — форма для показа и записи, если ключ — основа с дефисом.
+  const entries = Object.entries(dictionarySource.words ?? {});
+  const items = entries.map(([key, { de, ...word }]) => ({ de: de ?? key, ...word }));
+  // Дубль ищется так же, как индекс узнаёт слово: «was» и «Was?» — одно слово.
+  const known = new Set([...Object.keys(a1Words), ...Object.values(storyPhrases).map((p) => plain(p.de))].map((de) => parseEntry(de).key));
+  buildWords({ title: "Словарь справочника", items }, dictionaryWhere).items.forEach((word, i) => {
+    const key = entries[i][0];
+    if (known.has(parseEntry(key).key)) fail(dictionaryWhere, `«${key}» уже есть в словаре уроков или в выражениях истории`);
+    a1Dictionary[key] = word;
+  });
+}
+
 // Правила игры — фрагменты разбора уроков A1: текст и схема берутся отсюда, а не копируются руками.
 const storyRules = {};
 /** Копирует фрагмент разбора урока в правила игры; lessons — до какого урока A1 он может быть. */
@@ -210,7 +229,7 @@ if (!ONLY) {
 // Скрытый уровень (status: soon) без озвучки: его записи были Qwen, а уровень переозвучат, когда
 // переработают в формат истории. В учёт, манифест и импорт идут только записи открытых страниц и игры.
 const AUDIO_SRC = /^audio\/[0-9a-f]{12}\.m4a$/;
-const pages = [topics, assessments, storyAudio, a1Words, storyRules];
+const pages = [topics, assessments, storyAudio, a1Words, a1Dictionary, storyRules];
 const hiddenLevels = new Set(catalog.levels.filter((level) => level.status !== "open").map((level) => level.id));
 dropAudio(
   [...topics, ...assessments].filter((item) => hiddenLevels.has(item.level)),
@@ -260,6 +279,7 @@ mkdirSync(path.join(generatedDir, "topics"), { recursive: true });
 writeJson(path.join(generatedDir, "catalog.json"), catalog);
 writeJson(path.join(generatedDir, "story-audio.json"), storyAudio);
 writeJson(path.join(generatedDir, "a1-words.json"), a1Words);
+writeJson(path.join(generatedDir, "a1-dictionary.json"), a1Dictionary);
 if (!ONLY) writeJson(path.join(generatedDir, "story-rules.json"), storyRules);
 for (const file of readdirSync(path.join(generatedDir, "topics"))) {
   if (!ids.includes(file.replace(/\.json$/, ""))) rmSync(path.join(generatedDir, "topics", file));

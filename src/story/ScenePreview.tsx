@@ -589,7 +589,7 @@ function Word({ id, fresh, german = false }: { id: string; fresh: boolean; germa
       {open && (
         <span className="moin-word-info" role="status">
           {p.ru}
-          {p.pl && p.pl !== "-" && (
+          {p.pl && p.pl !== "-" && p.pl !== "pl" && (
             <>
               {" "}· мн. ч. <span lang="de">die {p.pl}</span>
             </>

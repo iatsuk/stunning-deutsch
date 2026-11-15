@@ -9,6 +9,7 @@ import { LevelPage } from "./pages/Level";
 import { TopicPage } from "./pages/Topic";
 
 const ScenePreview = lazy(() => import("./story/ScenePreview").then(m => ({ default: m.ScenePreview })));
+const ReferencePage = lazy(() => import("./pages/Reference").then(m => ({ default: m.ReferencePage })));
 
 export function App() {
   const route = useRoute();
@@ -29,6 +30,7 @@ function Page({ route }: { route: string[] }) {
   const [levelId, topicId] = route;
   // moin-neu — второй адрес той же страницы: на него ведут сохранённые закладки.
   if (levelId === "a1" && (topicId === "moin" || topicId === "moin-neu")) return <Suspense fallback={<p className="hero">Открываем дело…</p>}><ScenePreview /></Suspense>;
+  if (levelId === "a1" && topicId === "reference") return <Suspense fallback={<p className="hero">Открываем справочник…</p>}><ReferencePage /></Suspense>;
   if (levelId === "impressum") return <ImpressumPage />;
   if (levelId === "datenschutz") return <DatenschutzPage />;
   // У скрытого уровня нет доступных страниц: ни уроков, ни проверок.

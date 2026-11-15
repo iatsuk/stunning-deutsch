@@ -1,6 +1,9 @@
 import type { Cond, Effects } from "./world.ts";
 
-/** pl — множественное число существительного без артикля, как в словаре уроков: оно звучит в записи. */
+/**
+ * pl — множественное число существительного без артикля, как в словаре уроков: оно звучит в записи.
+ * «-» — множественного нет, «pl» — слово только во множественном числе.
+ */
 export type Phrase = { ru: string; de: string; note: string; pl?: string };
 export type Option = { id: string; text: string; why: string };
 export type ChatTurn = {

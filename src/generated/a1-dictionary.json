@@ -1,0 +1,1266 @@
+{
+ "ab": {
+  "de": "ab",
+  "ru": "с (о времени: ab Montag); от",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/79d968807b84.m4a"
+ },
+ "aber": {
+  "de": "aber",
+  "ru": "но",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/3c0ee24be7d8.m4a"
+ },
+ "all-": {
+  "de": "alle, alles",
+  "ru": "все, всё (alle Gäste)",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/fff78f803081.m4a"
+ },
+ "also": {
+  "de": "also",
+  "ru": "итак, значит",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/2f172e93123d.m4a"
+ },
+ "an": {
+  "de": "an",
+  "ru": "у, на (am Fenster); в (am Montag)",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/c60d602e718c.m4a"
+ },
+ "ander-": {
+  "de": "andere",
+  "ru": "другой",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/75ca599faa9c.m4a"
+ },
+ "auch": {
+  "de": "auch",
+  "ru": "тоже, также",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/e3507625f43b.m4a"
+ },
+ "auf": {
+  "de": "auf",
+  "ru": "на",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/4b8278d7b499.m4a"
+ },
+ "aus": {
+  "de": "aus",
+  "ru": "из",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/60b7f533a3ed.m4a"
+ },
+ "bei": {
+  "de": "bei",
+  "ru": "у, при (bei Mateo — у Матео)",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/9819bf0a22da.m4a"
+ },
+ "best-": {
+  "de": "beste, am besten",
+  "ru": "лучший; лучше всего",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/6e41f929dfc5.m4a"
+ },
+ "bis": {
+  "de": "bis",
+  "ru": "до",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/3cc3ecb5632c.m4a"
+ },
+ "da": {
+  "de": "da",
+  "ru": "там, тут; вот",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/1a639274fa28.m4a"
+ },
+ "dann": {
+  "de": "dann",
+  "ru": "потом, тогда",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/24c9a1ecefaa.m4a"
+ },
+ "dein-": {
+  "de": "dein, deine",
+  "ru": "твой",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/b29a73ad230c.m4a"
+ },
+ "denn": {
+  "de": "denn",
+  "ru": "ведь, потому что",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/1859c30cb503.m4a"
+ },
+ "der": {
+  "de": "der, die, das",
+  "ru": "определённый артикль",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/cd37bf05e478.m4a"
+ },
+ "dich": {
+  "de": "dich",
+  "ru": "тебя",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/84f2344fc55a.m4a"
+ },
+ "dies-": {
+  "de": "dieser, diese, dieses",
+  "ru": "этот",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/2f69537fd1ff.m4a"
+ },
+ "ein-": {
+  "de": "ein, eine",
+  "ru": "неопределённый артикль; один",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/f19632403ce2.m4a"
+ },
+ "er": {
+  "de": "er",
+  "ru": "он",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/81f9cf835fee.m4a"
+ },
+ "es": {
+  "de": "es",
+  "ru": "оно; это (es regnet — идёт дождь)",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/2aa831a7e5b5.m4a"
+ },
+ "euer": {
+  "de": "euer, eure",
+  "ru": "ваш (на «ты» с несколькими)",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/dc2aabb6c9fb.m4a"
+ },
+ "für": {
+  "de": "für",
+  "ru": "для; за",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/d0488291de64.m4a"
+ },
+ "hier": {
+  "de": "hier",
+  "ru": "здесь",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/3ad9f23cb1b9.m4a"
+ },
+ "ich": {
+  "de": "ich",
+  "ru": "я",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/91fb87b047d1.m4a"
+ },
+ "ihn": {
+  "de": "ihn",
+  "ru": "его (кого? — ihn)",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/b64c14a3a97d.m4a"
+ },
+ "in": {
+  "de": "in",
+  "ru": "в",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/cf3fee7db3e6.m4a"
+ },
+ "ja": {
+  "de": "ja",
+  "ru": "да",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/519a81aadff0.m4a"
+ },
+ "jed-": {
+  "de": "jeder, jede, jedes",
+  "ru": "каждый",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/0a8036cf67fc.m4a"
+ },
+ "kein": {
+  "de": "kein",
+  "ru": "никакой, не (kein Kaffee — никакого кофе)",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/9f9ee1fa9874.m4a"
+ },
+ "letzt-": {
+  "de": "letzte",
+  "ru": "последний, прошлый (letzte Woche)",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/c5bc0314f28a.m4a"
+ },
+ "lieb-": {
+  "de": "lieb, liebe",
+  "ru": "милый, дорогой (Liebe Greta)",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/b13887d95a66.m4a"
+ },
+ "man": {
+  "de": "man",
+  "ru": "безличное: man sagt — говорят",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/81503154b4d7.m4a"
+ },
+ "mehr": {
+  "de": "mehr",
+  "ru": "больше",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/bd567c0c23b9.m4a"
+ },
+ "mein": {
+  "de": "mein",
+  "ru": "мой",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/15c769f15f55.m4a"
+ },
+ "meist-": {
+  "de": "am meisten, die meisten",
+  "ru": "больше всего; большинство",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/c6de4f8c2cdf.m4a"
+ },
+ "mit": {
+  "de": "mit",
+  "ru": "с",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/99284589635f.m4a"
+ },
+ "nächst-": {
+  "de": "nächste",
+  "ru": "следующий",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/2e3e91403245.m4a"
+ },
+ "nein": {
+  "de": "nein",
+  "ru": "нет",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/4f060bbc4220.m4a"
+ },
+ "nicht": {
+  "de": "nicht",
+  "ru": "не",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/0fab2946870e.m4a"
+ },
+ "nichts": {
+  "de": "nichts",
+  "ru": "ничего",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/8276cd28c3d8.m4a"
+ },
+ "noch": {
+  "de": "noch",
+  "ru": "ещё",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/0081dd977999.m4a"
+ },
+ "nur": {
+  "de": "nur",
+  "ru": "только",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/513aee6f70f0.m4a"
+ },
+ "oder": {
+  "de": "oder",
+  "ru": "или",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/a4160ab94ca3.m4a"
+ },
+ "ohne": {
+  "de": "ohne",
+  "ru": "без",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/b15552d629c9.m4a"
+ },
+ "sehr": {
+  "de": "sehr",
+  "ru": "очень",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/4c913fe09b28.m4a"
+ },
+ "sich": {
+  "de": "sich",
+  "ru": "себя, -ся (sich freuen — радоваться)",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/6fab41203cb8.m4a"
+ },
+ "sie": {
+  "de": "sie",
+  "ru": "она; они; Sie — вы",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/378679f77cfa.m4a"
+ },
+ "über": {
+  "de": "über",
+  "ru": "над; о, про; больше (über zwanzig)",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/9ec8e9500e0f.m4a"
+ },
+ "um": {
+  "de": "um",
+  "ru": "в (о времени: um acht); вокруг",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/56c226723ae8.m4a"
+ },
+ "und": {
+  "de": "und",
+  "ru": "и",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/583ba0c590b7.m4a"
+ },
+ "unser-": {
+  "de": "unser, unsere",
+  "ru": "наш",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/33a18e9baa19.m4a"
+ },
+ "unter": {
+  "de": "unter",
+  "ru": "под",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/76655fd2a135.m4a"
+ },
+ "viel": {
+  "de": "viel",
+  "ru": "много",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/1d8005bb6b62.m4a"
+ },
+ "von": {
+  "de": "von",
+  "ru": "от, из; чей (das Handy von Elif — телефон Элиф)",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/b716c669b9de.m4a"
+ },
+ "wann": {
+  "de": "wann",
+  "ru": "когда",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/b4f46963c44f.m4a"
+ },
+ "warum": {
+  "de": "warum",
+  "ru": "почему",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/2488d487a056.m4a"
+ },
+ "welch-": {
+  "de": "welcher, welche, welches",
+  "ru": "какой, который",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/7cf971db5c58.m4a"
+ },
+ "wir": {
+  "de": "wir",
+  "ru": "мы",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/dfea32c7a946.m4a"
+ },
+ "abfahren": {
+  "de": "abfahren",
+  "ru": "отправляться, отъезжать",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/1ff1abc7c396.m4a"
+ },
+ "ankommen": {
+  "de": "ankommen",
+  "ru": "прибывать, приезжать",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/5f806085cd00.m4a"
+ },
+ "besuchen": {
+  "de": "besuchen",
+  "ru": "навещать, посещать",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/1a97378b1d94.m4a"
+ },
+ "bitten": {
+  "de": "bitten",
+  "ru": "просить",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/b0e594dfad59.m4a"
+ },
+ "bringen": {
+  "de": "bringen",
+  "ru": "приносить",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/b49f170efb93.m4a"
+ },
+ "danken": {
+  "de": "danken",
+  "ru": "благодарить",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/928f2685477a.m4a"
+ },
+ "fahren": {
+  "de": "fahren",
+  "ru": "ехать",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/7de2f9fd997f.m4a"
+ },
+ "fragen": {
+  "de": "fragen",
+  "ru": "спрашивать",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/5e62dc2dcff5.m4a"
+ },
+ "freuen": {
+  "de": "freuen",
+  "ru": "радовать; sich freuen — радоваться",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/fd74701c0d08.m4a"
+ },
+ "geben": {
+  "de": "geben",
+  "ru": "давать",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/97af4038676e.m4a"
+ },
+ "gehören": {
+  "de": "gehören",
+  "ru": "принадлежать",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/8f33fd57f181.m4a"
+ },
+ "halten": {
+  "de": "halten",
+  "ru": "держать; останавливаться",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/a2e1b577eff2.m4a"
+ },
+ "helfen": {
+  "de": "helfen",
+  "ru": "помогать",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/4bfcfdaac7d9.m4a"
+ },
+ "hören": {
+  "de": "hören",
+  "ru": "слышать, слушать",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/1b56418ceec1.m4a"
+ },
+ "kommen": {
+  "de": "kommen",
+  "ru": "приходить, приезжать",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/d0adfd3ec80d.m4a"
+ },
+ "lernen": {
+  "de": "lernen",
+  "ru": "учить, учиться",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/a5b513efe0b0.m4a"
+ },
+ "liegen": {
+  "de": "liegen",
+  "ru": "лежать",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/2abd427ab182.m4a"
+ },
+ "machen": {
+  "de": "machen",
+  "ru": "делать",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/904fa0774e1f.m4a"
+ },
+ "mitbringen": {
+  "de": "mitbringen",
+  "ru": "приносить с собой",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/5616490c35a5.m4a"
+ },
+ "mögen": {
+  "de": "mögen",
+  "ru": "любить, нравиться (Ich mag Tee.)",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/3b3bb5a814fe.m4a"
+ },
+ "öffnen": {
+  "de": "öffnen",
+  "ru": "открывать",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/c8e13ad457f3.m4a"
+ },
+ "regnen": {
+  "de": "regnen",
+  "ru": "идти (о дожде): es regnet",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/6b763b5af622.m4a"
+ },
+ "reisen": {
+  "de": "reisen",
+  "ru": "путешествовать",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/17d1ce24c7d1.m4a"
+ },
+ "sagen": {
+  "de": "sagen",
+  "ru": "сказать, говорить",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/119b55a3c979.m4a"
+ },
+ "scheinen": {
+  "de": "scheinen",
+  "ru": "светить (die Sonne scheint)",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/d9939be3e32b.m4a"
+ },
+ "schließen": {
+  "de": "schließen",
+  "ru": "закрывать",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/697d863d1c3b.m4a"
+ },
+ "schreiben": {
+  "de": "schreiben",
+  "ru": "писать",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/4ef5de61afe6.m4a"
+ },
+ "sehen": {
+  "de": "sehen",
+  "ru": "видеть",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/479247e612c5.m4a"
+ },
+ "sein": {
+  "de": "sein",
+  "ru": "быть",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/74e3fdefbca4.m4a"
+ },
+ "sitzen": {
+  "de": "sitzen",
+  "ru": "сидеть",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/35ab2562215a.m4a"
+ },
+ "sollen": {
+  "de": "sollen",
+  "ru": "быть должным (по чужому слову)",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/aa1b645fdb62.m4a"
+ },
+ "spielen": {
+  "de": "spielen",
+  "ru": "играть",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/9ebd69ba6c7a.m4a"
+ },
+ "stehen": {
+  "de": "stehen",
+  "ru": "стоять",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/a1b36c2d1d63.m4a"
+ },
+ "stellen": {
+  "de": "stellen",
+  "ru": "ставить",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/879ed0516a1d.m4a"
+ },
+ "treffen": {
+  "de": "treffen",
+  "ru": "встречать",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/62f7a50ac12c.m4a"
+ },
+ "vorstellen": {
+  "de": "vorstellen",
+  "ru": "представлять; sich vorstellen — представиться",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/b3785ccb16bd.m4a"
+ },
+ "warten": {
+  "de": "warten",
+  "ru": "ждать",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/25a7c7912d4f.m4a"
+ },
+ "werden": {
+  "de": "werden",
+  "ru": "становиться",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/ecb709d04ec2.m4a"
+ },
+ "wissen": {
+  "de": "wissen",
+  "ru": "знать",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/eee0f3424b55.m4a"
+ },
+ "wohnen": {
+  "de": "wohnen",
+  "ru": "жить (где-то)",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/726372480d4a.m4a"
+ },
+ "wählen": {
+  "de": "wählen",
+  "ru": "выбирать; набирать (номер)",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/1bd1fe2d3321.m4a"
+ },
+ "nennen": {
+  "de": "nennen",
+  "ru": "называть",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/6e23039bb96e.m4a"
+ },
+ "reagieren": {
+  "de": "reagieren",
+  "ru": "реагировать",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/a27d88be878a.m4a"
+ },
+ "formulieren": {
+  "de": "formulieren",
+  "ru": "формулировать",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/438c1416e9be.m4a"
+ },
+ "allein": {
+  "de": "allein",
+  "ru": "один, одна (без других)",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/15ca3a41ada1.m4a"
+ },
+ "arbeitslos": {
+  "de": "arbeitslos",
+  "ru": "безработный",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/97137355c172.m4a"
+ },
+ "bisschen": {
+  "de": "bisschen",
+  "ru": "немного (ein bisschen)",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/1735c352a5a2.m4a"
+ },
+ "einmal": {
+  "de": "einmal",
+  "ru": "один раз; однажды",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/cffbc144a959.m4a"
+ },
+ "falsch": {
+  "de": "falsch",
+  "ru": "неправильный, неверно",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/e05c450f17b1.m4a"
+ },
+ "günstig": {
+  "de": "günstig",
+  "ru": "выгодный, недорогой",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/b66ba1089017.m4a"
+ },
+ "gut": {
+  "de": "gut",
+  "ru": "хороший, хорошо",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/a3b550bd196c.m4a"
+ },
+ "hell": {
+  "de": "hell",
+  "ru": "светлый",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/0cf08ec0c77b.m4a"
+ },
+ "herzlich": {
+  "de": "herzlich",
+  "ru": "сердечный (Herzlich willkommen!)",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/0ce00fe9d9a1.m4a"
+ },
+ "jung": {
+  "de": "jung",
+  "ru": "молодой",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/d4b9a55dc468.m4a"
+ },
+ "klar": {
+  "de": "klar",
+  "ru": "ясный; конечно (Klar!)",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/aea111ef0bc5.m4a"
+ },
+ "lange": {
+  "de": "lange",
+  "ru": "долго",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/b896fa435250.m4a"
+ },
+ "langsam": {
+  "de": "langsam",
+  "ru": "медленный, медленно",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/03ff312b469a.m4a"
+ },
+ "laut": {
+  "de": "laut",
+  "ru": "громкий, громко",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/2e418f3b801c.m4a"
+ },
+ "neu": {
+  "de": "neu",
+  "ru": "новый",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/d048d442f741.m4a"
+ },
+ "richtig": {
+  "de": "richtig",
+  "ru": "правильный, верно",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/9b293e4a31af.m4a"
+ },
+ "ruhig": {
+  "de": "ruhig",
+  "ru": "спокойный, тихий",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/f654a8df5ecb.m4a"
+ },
+ "schnell": {
+  "de": "schnell",
+  "ru": "быстрый, быстро",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/8e56443745f3.m4a"
+ },
+ "schwer": {
+  "de": "schwer",
+  "ru": "тяжёлый; трудный",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/e59168401cb5.m4a"
+ },
+ "später": {
+  "de": "später",
+  "ru": "позже",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/40baaefdc3cc.m4a"
+ },
+ "vielleicht": {
+  "de": "vielleicht",
+  "ru": "может быть",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/3901dc760a0d.m4a"
+ },
+ "zurück": {
+  "de": "zurück",
+  "ru": "назад, обратно",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/da2ced73d4c4.m4a"
+ },
+ "dunkel": {
+  "de": "dunkel",
+  "ru": "тёмный",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/2cf233a706a4.m4a"
+ },
+ "der Appetit": {
+  "de": "der Appetit",
+  "ru": "аппетит (Guten Appetit!)",
+  "gender": "m",
+  "plural": null,
+  "noPlural": true,
+  "audio": "audio/0cfd7f8f803b.m4a"
+ },
+ "die Bahn": {
+  "de": "die Bahn",
+  "ru": "железная дорога; поезд",
+  "gender": "f",
+  "plural": "Bahnen",
+  "audio": "audio/8aa8e3d940e0.m4a"
+ },
+ "das Beispiel": {
+  "de": "das Beispiel",
+  "ru": "пример (zum Beispiel)",
+  "gender": "n",
+  "plural": "Beispiele",
+  "audio": "audio/bdd4c89a9e60.m4a"
+ },
+ "der Brief": {
+  "de": "der Brief",
+  "ru": "письмо",
+  "gender": "m",
+  "plural": "Briefe",
+  "audio": "audio/c474b9de4863.m4a"
+ },
+ "der Dank": {
+  "de": "der Dank",
+  "ru": "благодарность (Vielen Dank!)",
+  "gender": "m",
+  "plural": null,
+  "noPlural": true,
+  "audio": "audio/c1290d1bc80f.m4a"
+ },
+ "der Durst": {
+  "de": "der Durst",
+  "ru": "жажда",
+  "gender": "m",
+  "plural": null,
+  "noPlural": true,
+  "audio": "audio/ffc3f77d7e00.m4a"
+ },
+ "die Ecke": {
+  "de": "die Ecke",
+  "ru": "угол",
+  "gender": "f",
+  "plural": "Ecken",
+  "audio": "audio/7ee9fbc46d61.m4a"
+ },
+ "das Ende": {
+  "de": "das Ende",
+  "ru": "конец",
+  "gender": "n",
+  "plural": "Enden",
+  "audio": "audio/aa0714867273.m4a"
+ },
+ "der Fußball": {
+  "de": "der Fußball",
+  "ru": "футбол; футбольный мяч",
+  "gender": "m",
+  "plural": "Fußbälle",
+  "audio": "audio/0be583915003.m4a"
+ },
+ "das Gespräch": {
+  "de": "das Gespräch",
+  "ru": "разговор",
+  "gender": "n",
+  "plural": "Gespräche",
+  "audio": "audio/8e6502b04345.m4a"
+ },
+ "der Gruß": {
+  "de": "der Gruß",
+  "ru": "привет (Viele Grüße)",
+  "gender": "m",
+  "plural": "Grüße",
+  "audio": "audio/8f230f493d86.m4a"
+ },
+ "der Herr": {
+  "de": "der Herr",
+  "ru": "господин (Herr Jensen)",
+  "gender": "m",
+  "plural": "Herren",
+  "audio": "audio/475dda83e11b.m4a"
+ },
+ "die Hilfe": {
+  "de": "die Hilfe",
+  "ru": "помощь",
+  "gender": "f",
+  "plural": null,
+  "noPlural": true,
+  "audio": "audio/32ebe7795b14.m4a"
+ },
+ "der Hunger": {
+  "de": "der Hunger",
+  "ru": "голод",
+  "gender": "m",
+  "plural": null,
+  "noPlural": true,
+  "audio": "audio/00481a4b9927.m4a"
+ },
+ "die Leute": {
+  "de": "die Leute",
+  "ru": "люди",
+  "gender": "pl",
+  "plural": null,
+  "audio": "audio/1eccaf6f53fb.m4a"
+ },
+ "das Licht": {
+  "de": "das Licht",
+  "ru": "свет",
+  "gender": "n",
+  "plural": "Lichter",
+  "audio": "audio/8687cee8c5b4.m4a"
+ },
+ "Lieblings-": {
+  "de": "Lieblings-: der Lieblingsfilm",
+  "ru": "любимый: любимый фильм",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/54854d9327b2.m4a"
+ },
+ "das Lied": {
+  "de": "das Lied",
+  "ru": "песня",
+  "gender": "n",
+  "plural": "Lieder",
+  "audio": "audio/0eb1b514be1b.m4a"
+ },
+ "die Maschine": {
+  "de": "die Maschine",
+  "ru": "машина, аппарат; самолёт",
+  "gender": "f",
+  "plural": "Maschinen",
+  "audio": "audio/7d7964bd0e9b.m4a"
+ },
+ "das Papier": {
+  "de": "das Papier",
+  "ru": "бумага; документ",
+  "gender": "n",
+  "plural": "Papiere",
+  "audio": "audio/1876f2522536.m4a"
+ },
+ "der Plan": {
+  "de": "der Plan",
+  "ru": "план",
+  "gender": "m",
+  "plural": "Pläne",
+  "audio": "audio/87a41aea292f.m4a"
+ },
+ "die Polizei": {
+  "de": "die Polizei",
+  "ru": "полиция",
+  "gender": "f",
+  "plural": null,
+  "noPlural": true,
+  "audio": "audio/9cd0990da467.m4a"
+ },
+ "das Problem": {
+  "de": "das Problem",
+  "ru": "проблема",
+  "gender": "n",
+  "plural": "Probleme",
+  "audio": "audio/d768409f5584.m4a"
+ },
+ "der Regen": {
+  "de": "der Regen",
+  "ru": "дождь",
+  "gender": "m",
+  "plural": null,
+  "noPlural": true,
+  "audio": "audio/76b12da86758.m4a"
+ },
+ "die Rezeption": {
+  "de": "die Rezeption",
+  "ru": "стойка регистрации",
+  "gender": "f",
+  "plural": "Rezeptionen",
+  "audio": "audio/f94fe1724f01.m4a"
+ },
+ "die Sonne": {
+  "de": "die Sonne",
+  "ru": "солнце",
+  "gender": "f",
+  "plural": null,
+  "noPlural": true,
+  "audio": "audio/3eeebe8a1d6c.m4a"
+ },
+ "das Telefon": {
+  "de": "das Telefon",
+  "ru": "телефон",
+  "gender": "n",
+  "plural": "Telefone",
+  "audio": "audio/0157b1961fa1.m4a"
+ },
+ "der Test": {
+  "de": "der Test",
+  "ru": "тест",
+  "gender": "m",
+  "plural": "Tests",
+  "audio": "audio/6daad8164112.m4a"
+ },
+ "das Thema": {
+  "de": "das Thema",
+  "ru": "тема",
+  "gender": "n",
+  "plural": "Themen",
+  "audio": "audio/44579cde776f.m4a"
+ },
+ "das Wiederhören": {
+  "de": "das Wiederhören",
+  "ru": "Auf Wiederhören! — до свидания (по телефону)",
+  "gender": "n",
+  "plural": null,
+  "noPlural": true,
+  "audio": "audio/3920be97351e.m4a"
+ },
+ "das Wiedersehen": {
+  "de": "das Wiedersehen",
+  "ru": "Auf Wiedersehen! — до свидания",
+  "gender": "n",
+  "plural": null,
+  "noPlural": true,
+  "audio": "audio/29ac825da3ee.m4a"
+ },
+ "der Wind": {
+  "de": "der Wind",
+  "ru": "ветер",
+  "gender": "m",
+  "plural": "Winde",
+  "audio": "audio/0db81259bf76.m4a"
+ },
+ "auf sein": {
+  "de": "auf sein",
+  "ru": "быть открытым (Die Tür ist auf.)",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/b1a0002ee7d5.m4a"
+ },
+ "aus sein": {
+  "de": "aus sein",
+  "ru": "кончиться; быть выключенным",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/09bd1b521bd6.m4a"
+ },
+ "weg sein": {
+  "de": "weg sein",
+  "ru": "пропасть, уйти (Das Schild ist weg.)",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/9fccc28b1c57.m4a"
+ },
+ "zu sein": {
+  "de": "zu sein",
+  "ru": "быть закрытым",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/f25c113b6b4c.m4a"
+ },
+ "wie viel": {
+  "de": "wie viel",
+  "ru": "сколько",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/b7807206af11.m4a"
+ },
+ "das Grad": {
+  "de": "das Grad",
+  "ru": "градус (zwanzig Grad)",
+  "gender": "n",
+  "plural": null,
+  "noPlural": true,
+  "audio": "audio/6dad86ba880c.m4a"
+ },
+ "neunzehn": {
+  "de": "neunzehn",
+  "ru": "девятнадцать",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/474d4a7f484b.m4a"
+ },
+ "zwanzig": {
+  "de": "zwanzig",
+  "ru": "двадцать",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/214f433376e8.m4a"
+ },
+ "dreißig": {
+  "de": "dreißig",
+  "ru": "тридцать",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/377f10398de1.m4a"
+ },
+ "fünfzig": {
+  "de": "fünfzig",
+  "ru": "пятьдесят",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/345557874085.m4a"
+ },
+ "hundert": {
+  "de": "hundert",
+  "ru": "сто",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/f497acb5dc5b.m4a"
+ },
+ "erste": {
+  "de": "erste",
+  "ru": "первый",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/0148a5672ca0.m4a"
+ },
+ "zweite": {
+  "de": "zweite",
+  "ru": "второй",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/12bfd825f72b.m4a"
+ },
+ "dritte": {
+  "de": "dritte",
+  "ru": "третий",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/40531f85c7ee.m4a"
+ },
+ "der Tag": {
+  "de": "der Tag",
+  "ru": "день",
+  "gender": "m",
+  "plural": "Tage",
+  "audio": "audio/83e6206408c2.m4a"
+ },
+ "der Meter": {
+  "de": "der Meter",
+  "ru": "метр",
+  "gender": "m",
+  "plural": "Meter",
+  "audio": "audio/43fe720bdaa0.m4a"
+ },
+ "der Liter": {
+  "de": "der Liter",
+  "ru": "литр",
+  "gender": "m",
+  "plural": "Liter",
+  "audio": "audio/c1f0d1aaeb18.m4a"
+ },
+ "das Pfund": {
+  "de": "das Pfund",
+  "ru": "фунт, полкило",
+  "gender": "n",
+  "plural": "Pfunde",
+  "audio": "audio/2c2d9bd3119f.m4a"
+ },
+ "das Kilo": {
+  "de": "das Kilo",
+  "ru": "килограмм",
+  "gender": "n",
+  "plural": "Kilos",
+  "audio": "audio/f883cf03ebc5.m4a"
+ },
+ "deutsch": {
+  "de": "deutsch",
+  "ru": "немецкий",
+  "gender": null,
+  "plural": null,
+  "audio": "audio/05b375f844b3.m4a"
+ }
+}

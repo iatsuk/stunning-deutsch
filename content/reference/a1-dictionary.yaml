@@ -1,0 +1,192 @@
+# Переводы слов экзамена A1, которых нет ни в словаре уроков A1, ни в выражениях истории
+# (src/story/data.ts). Справочник A1 (#/a1/reference) показывает их вместе с остальными словами.
+# Ключ — слово так, как оно записано в эталоне start-deutsch-1.yaml; de — как его показать и озвучить,
+# если ключ — основа с дефисом или одна форма из нескольких («jed-» → «jeder, jede, jedes»). pl — как у слов урока:
+# множественное число существительного без артикля, «-» — его нет, «pl» — слово только во мн. ч.
+# Слова строятся и озвучиваются как слова урока, но в игры и повторение не идут.
+words:
+  # Служебные слова
+  ab: { ru: "с (о времени: ab Montag); от" }
+  aber: { ru: "но" }
+  all-: { de: "alle, alles", ru: "все, всё (alle Gäste)" }
+  also: { ru: "итак, значит" }
+  an: { ru: "у, на (am Fenster); в (am Montag)" }
+  ander-: { de: "andere", ru: "другой" }
+  auch: { ru: "тоже, также" }
+  auf: { ru: "на" }
+  aus: { ru: "из" }
+  bei: { ru: "у, при (bei Mateo — у Матео)" }
+  best-: { de: "beste, am besten", ru: "лучший; лучше всего" }
+  bis: { ru: "до" }
+  da: { ru: "там, тут; вот" }
+  dann: { ru: "потом, тогда" }
+  dein-: { de: "dein, deine", ru: "твой" }
+  denn: { ru: "ведь, потому что" }
+  der: { de: "der, die, das", ru: "определённый артикль" }
+  dich: { ru: "тебя" }
+  dies-: { de: "dieser, diese, dieses", ru: "этот" }
+  ein-: { de: "ein, eine", ru: "неопределённый артикль; один" }
+  er: { ru: "он" }
+  es: { ru: "оно; это (es regnet — идёт дождь)" }
+  euer: { de: "euer, eure", ru: "ваш (на «ты» с несколькими)" }
+  für: { ru: "для; за" }
+  hier: { ru: "здесь" }
+  ich: { ru: "я" }
+  ihn: { ru: "его (кого? — ihn)" }
+  in: { ru: "в" }
+  ja: { ru: "да" }
+  jed-: { de: "jeder, jede, jedes", ru: "каждый" }
+  kein: { ru: "никакой, не (kein Kaffee — никакого кофе)" }
+  letzt-: { de: "letzte", ru: "последний, прошлый (letzte Woche)" }
+  lieb-: { de: "lieb, liebe", ru: "милый, дорогой (Liebe Greta)" }
+  man: { ru: "безличное: man sagt — говорят" }
+  mehr: { ru: "больше" }
+  mein: { ru: "мой" }
+  meist-: { de: "am meisten, die meisten", ru: "больше всего; большинство" }
+  mit: { ru: "с" }
+  nächst-: { de: "nächste", ru: "следующий" }
+  nein: { ru: "нет" }
+  nicht: { ru: "не" }
+  nichts: { ru: "ничего" }
+  noch: { ru: "ещё" }
+  nur: { ru: "только" }
+  oder: { ru: "или" }
+  ohne: { ru: "без" }
+  sehr: { ru: "очень" }
+  sich: { ru: "себя, -ся (sich freuen — радоваться)" }
+  sie: { ru: "она; они; Sie — вы" }
+  über: { ru: "над; о, про; больше (über zwanzig)" }
+  um: { ru: "в (о времени: um acht); вокруг" }
+  und: { ru: "и" }
+  unser-: { de: "unser, unsere", ru: "наш" }
+  unter: { ru: "под" }
+  viel: { ru: "много" }
+  von: { ru: "от, из; чей (das Handy von Elif — телефон Элиф)" }
+  wann: { ru: "когда" }
+  warum: { ru: "почему" }
+  welch-: { de: "welcher, welche, welches", ru: "какой, который" }
+  wir: { ru: "мы" }
+  # Глаголы
+  abfahren: { ru: "отправляться, отъезжать" }
+  ankommen: { ru: "прибывать, приезжать" }
+  besuchen: { ru: "навещать, посещать" }
+  bitten: { ru: "просить" }
+  bringen: { ru: "приносить" }
+  danken: { ru: "благодарить" }
+  fahren: { ru: "ехать" }
+  fragen: { ru: "спрашивать" }
+  freuen: { ru: "радовать; sich freuen — радоваться" }
+  geben: { ru: "давать" }
+  gehören: { ru: "принадлежать" }
+  halten: { ru: "держать; останавливаться" }
+  helfen: { ru: "помогать" }
+  hören: { ru: "слышать, слушать" }
+  kommen: { ru: "приходить, приезжать" }
+  lernen: { ru: "учить, учиться" }
+  liegen: { ru: "лежать" }
+  machen: { ru: "делать" }
+  mitbringen: { ru: "приносить с собой" }
+  mögen: { ru: "любить, нравиться (Ich mag Tee.)" }
+  öffnen: { ru: "открывать" }
+  regnen: { ru: "идти (о дожде): es regnet" }
+  reisen: { ru: "путешествовать" }
+  sagen: { ru: "сказать, говорить" }
+  scheinen: { ru: "светить (die Sonne scheint)" }
+  schließen: { ru: "закрывать" }
+  schreiben: { ru: "писать" }
+  sehen: { ru: "видеть" }
+  sein: { ru: "быть" }
+  sitzen: { ru: "сидеть" }
+  sollen: { ru: "быть должным (по чужому слову)" }
+  spielen: { ru: "играть" }
+  stehen: { ru: "стоять" }
+  stellen: { ru: "ставить" }
+  treffen: { ru: "встречать" }
+  vorstellen: { ru: "представлять; sich vorstellen — представиться" }
+  warten: { ru: "ждать" }
+  werden: { ru: "становиться" }
+  wissen: { ru: "знать" }
+  wohnen: { ru: "жить (где-то)" }
+  wählen: { ru: "выбирать; набирать (номер)" }
+  nennen: { ru: "называть" }
+  reagieren: { ru: "реагировать" }
+  formulieren: { ru: "формулировать" }
+  # Прилагательные и наречия
+  allein: { ru: "один, одна (без других)" }
+  arbeitslos: { ru: "безработный" }
+  bisschen: { ru: "немного (ein bisschen)" }
+  einmal: { ru: "один раз; однажды" }
+  falsch: { ru: "неправильный, неверно" }
+  günstig: { ru: "выгодный, недорогой" }
+  gut: { ru: "хороший, хорошо" }
+  hell: { ru: "светлый" }
+  herzlich: { ru: "сердечный (Herzlich willkommen!)" }
+  jung: { ru: "молодой" }
+  klar: { ru: "ясный; конечно (Klar!)" }
+  lange: { ru: "долго" }
+  langsam: { ru: "медленный, медленно" }
+  laut: { ru: "громкий, громко" }
+  neu: { ru: "новый" }
+  richtig: { ru: "правильный, верно" }
+  ruhig: { ru: "спокойный, тихий" }
+  schnell: { ru: "быстрый, быстро" }
+  schwer: { ru: "тяжёлый; трудный" }
+  später: { ru: "позже" }
+  vielleicht: { ru: "может быть" }
+  zurück: { ru: "назад, обратно" }
+  dunkel: { ru: "тёмный" }
+  # Существительные
+  der Appetit: { ru: "аппетит (Guten Appetit!)", pl: "-" }
+  die Bahn: { ru: "железная дорога; поезд", pl: "Bahnen" }
+  das Beispiel: { ru: "пример (zum Beispiel)", pl: "Beispiele" }
+  der Brief: { ru: "письмо", pl: "Briefe" }
+  der Dank: { ru: "благодарность (Vielen Dank!)", pl: "-" }
+  der Durst: { ru: "жажда", pl: "-" }
+  die Ecke: { ru: "угол", pl: "Ecken" }
+  das Ende: { ru: "конец", pl: "Enden" }
+  der Fußball: { ru: "футбол; футбольный мяч", pl: "Fußbälle" }
+  das Gespräch: { ru: "разговор", pl: "Gespräche" }
+  der Gruß: { ru: "привет (Viele Grüße)", pl: "Grüße" }
+  der Herr: { ru: "господин (Herr Jensen)", pl: "Herren" }
+  die Hilfe: { ru: "помощь", pl: "-" }
+  der Hunger: { ru: "голод", pl: "-" }
+  die Leute: { ru: "люди", pl: "pl" }
+  das Licht: { ru: "свет", pl: "Lichter" }
+  Lieblings-: { de: "Lieblings-: der Lieblingsfilm", ru: "любимый: любимый фильм" }
+  das Lied: { ru: "песня", pl: "Lieder" }
+  die Maschine: { ru: "машина, аппарат; самолёт", pl: "Maschinen" }
+  das Papier: { ru: "бумага; документ", pl: "Papiere" }
+  der Plan: { ru: "план", pl: "Pläne" }
+  die Polizei: { ru: "полиция", pl: "-" }
+  das Problem: { ru: "проблема", pl: "Probleme" }
+  der Regen: { ru: "дождь", pl: "-" }
+  die Rezeption: { ru: "стойка регистрации", pl: "Rezeptionen" }
+  die Sonne: { ru: "солнце", pl: "-" }
+  das Telefon: { ru: "телефон", pl: "Telefone" }
+  der Test: { ru: "тест", pl: "Tests" }
+  das Thema: { ru: "тема", pl: "Themen" }
+  das Wiederhören: { ru: "Auf Wiederhören! — до свидания (по телефону)", pl: "-" }
+  das Wiedersehen: { ru: "Auf Wiedersehen! — до свидания", pl: "-" }
+  der Wind: { ru: "ветер", pl: "Winde" }
+  # Выражения
+  auf sein: { ru: "быть открытым (Die Tür ist auf.)" }
+  aus sein: { ru: "кончиться; быть выключенным" }
+  weg sein: { ru: "пропасть, уйти (Das Schild ist weg.)" }
+  zu sein: { ru: "быть закрытым" }
+  wie viel: { ru: "сколько" }
+  # Числа, время и меры
+  das Grad: { ru: "градус (zwanzig Grad)", pl: "-" }
+  neunzehn: { ru: "девятнадцать" }
+  zwanzig: { ru: "двадцать" }
+  dreißig: { ru: "тридцать" }
+  fünfzig: { ru: "пятьдесят" }
+  hundert: { ru: "сто" }
+  erste: { ru: "первый" }
+  zweite: { ru: "второй" }
+  dritte: { ru: "третий" }
+  der Tag: { ru: "день", pl: "Tage" }
+  der Meter: { ru: "метр", pl: "Meter" }
+  der Liter: { ru: "литр", pl: "Liter" }
+  das Pfund: { ru: "фунт, полкило", pl: "Pfunde" }
+  das Kilo: { ru: "килограмм", pl: "Kilos" }
+  deutsch: { ru: "немецкий" }
