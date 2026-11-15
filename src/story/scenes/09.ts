@@ -84,6 +84,7 @@ const sturm: SceneNode[] = [
   elif("Eine Straßenbahn? In Kiel gibt es keine Straßenbahn!", "Трамвай? В Киле нет трамвая!", ["die Straßenbahn"]),
   hauke("Schon lange nicht mehr! Der Plan ist alt – so alt wie das Schild!", "Давно уже нет! План старый — старый, как табличка!"),
   { t: "gap", task: "Какого года план Греты?", text: "Der Stadtplan ist von ___.", options: ["1976", "1985", "2026"], answer: "1976", ru: "План города — 1976 года." },
+  narr("На плане стрелка: {norden} вверху, {sueden} внизу. Kiellinie — западный берег, это {westen} города."),
   {
     t: "game",
     task: "На плане длинные слова. Соберите каждое из частей и выберите род.",
@@ -112,7 +113,7 @@ const sturm: SceneNode[] = [
     hint: HINT_PICTURE,
     c: scene([["der Bus", "🚌"], ["die Straßenbahn", "🚋"], ["das Fahrrad", "🚲"], ["das Auto", "🚗"], ["das Taxi", "🚕"], ["der Zug", "🚆"], ["die U-Bahn", "🚇"], ["die S-Bahn", "🚈"]]),
   },
-  { t: "game", task: "Слова дня — по ящикам Йенсена: der, die, das.", hint: HINT_DOCK, c: docks(["der Bus", "die Bank", "das Taxi", "der Zug", "die Apotheke", "das Rathaus", "der Platz", "die Ampel"]) },
+  { t: "game", task: "Слова дня — по ящикам Йенсена: der, die, das.", hint: HINT_DOCK, c: docks(["der Bus", "die Bank", "das Taxi", "der Zug", "die Apotheke", "das Rathaus", "der Platz", "die Ampel", "der Supermarkt", "das Bürgeramt"]) },
   {
     t: "pick",
     task: "Что из сегодняшнего пригодится в деле?",
@@ -144,6 +145,7 @@ const bahnhof: SceneNode[] = [
     options: ["паром сегодня не ходит — садитесь на автобус", "автобусы сегодня не ходят", "паром опаздывает на час"],
     answer: "паром сегодня не ходит — садитесь на автобус",
   },
+  narr("Это была {ansage}. На вокзале их каждые пять минут, и все строгие."),
   { ...narr("Keine {faehre} heute. Der {sturm} kommt: мачты в гавани гнутся, автобусы — битком."), set: { weather: 1 } },
   {
     t: "look",
@@ -154,12 +156,14 @@ const bahnhof: SceneNode[] = [
       { icon: "🚕", de: "das Taxi", ru: "такси", note: "Такси до Gaarden — дорого. Хауке бы взял. Но Хауке ждёт машину." },
     ],
   },
+  narr("Над залом таблички: {eingang}, {ausgang} и {auskunft}. Билеты продаёт {schalter}, но там очередь до дверей."),
   {
     t: "game",
     task: "Найдите на табло автобус в Gaarden и время, когда он отходит.",
     hint: "Gaarden ищите в середине строки. Fähre сегодня не ходит.",
     c: spot("Abfahrt", ["Linie 7|Holtenau|9:35", "Linie 11|Gaarden|9:40", "Fähre|Gaarden|heute nicht"], ["Linie 11", "9:40"]),
   },
+  narr("На табло два столбца: {abfahrt} и {ankunft}. Поездам нужен {bahnsteig}, автобусам — просто улица."),
   { t: "say", who: "Lautsprecher", voice: "Eddy", de: "Die Fähre fährt wieder ab vierzehn Uhr. Nach dem Sturm!", ru: "Паром снова ходит с четырнадцати часов. После шторма!" },
   { t: "gap", rule: ["moin/zeit-1"], task: "Запишите, когда снова пойдёт паром.", text: "Die Fähre fährt wieder ___ vierzehn Uhr.", options: ["ab", "für", "über"], answer: "ab", ru: "Паром снова ходит с четырнадцати часов." },
   hauke("Vierzehn Uhr? Zu spät! Und wo kauft man hier Fahrkarten?", "В четырнадцать? Слишком поздно! А где тут покупают билеты?"),
@@ -173,6 +177,7 @@ const bahnhof: SceneNode[] = [
     answers: ["Wo kauft man hier Fahrkarten?", "Wo kauft man Fahrkarten?"],
     ru: "Где тут покупают билеты?",
   },
+  narr("На автомате — {ticket} и мелко: {gueltig} 90 минут."),
   {
     t: "game",
     rule: ["einkaufen/preise-1"],
@@ -196,6 +201,7 @@ const bahnhof: SceneNode[] = [
       no("Entschuldigung, die Möwe kann mitfahren?", "Вопрос «да или нет»: глагол первым — Kann die Möwe …?"),
     ],
   },
+  narr("Наш {fahrer} усат и строг. Но чаек, кажется, любит."),
   fahrer("Na gut. Aber nur bis Gaarden! Und sie isst nichts im Bus!", "Ладно. Но только до Гаардена! И в автобусе она ничего не ест!"),
   {
     t: "hear",
@@ -213,8 +219,9 @@ const bahnhof: SceneNode[] = [
     answers: ["Im Bus darf man nicht essen.", "Man darf im Bus nicht essen."],
     ru: "В автобусе есть нельзя.",
   },
+  narr("Над дверью табличка: Essen {verboten}. И ещё одна: {vorsicht}, двери!"),
   narr("Der Bus fährt. Die Möwe sieht die {fahrkarte} — и билет уже у неё в клюве. Контролёр — на следующей остановке!"),
-  { t: "game", task: `Отнимите билет у чайки! ${RACE}`, hint: HINT_RACE, outcome: RACE_STAKES, c: race(["der Bus", "die Haltestelle", "die Linie", "einsteigen", "aussteigen", "umsteigen"]) },
+  { t: "game", task: `Отнимите билет у чайки! ${RACE}`, hint: HINT_RACE, outcome: RACE_STAKES, c: race(["der Bus", "die Haltestelle", "die Linie", "einsteigen", "aussteigen", "umsteigen", "weit", "in der Nähe"]) },
   hauke("Sie hat die Fahrkarte! Und jetzt sitzt sie unter dem Sitz!", "Билет у неё! А теперь она сидит под сиденьем!"),
   { t: "gap", rule: ["moin/unter-1"], task: "Где теперь чайка?", text: "Die Möwe sitzt ___ dem Sitz.", options: ["unter", "auf", "in"], answer: "unter", ru: "Чайка сидит под сиденьем." },
   narr("Нильс переписал дорогу с сайта мастерской: «Steigen Sie an der Post aus!!! An der zweiten Ampel links!!! Dann geradeaus!!!»"),
@@ -241,6 +248,7 @@ const bahnhof: SceneNode[] = [
     hint: "Глагол первым, Sie — вторым, приставка aus — в самом конце.",
     c: order(["Steigen", "Sie", "hier", "aus!"], ["aus!", "hier", "Steigen", "Sie"]),
   },
+  { t: "game", task: "Нильс просит подписать для блокнота таблички вокзала: der, die, das.", hint: HINT_DOCK, c: docks(["der Eingang", "der Ausgang", "die Auskunft", "der Schalter", "das Ticket", "der Bahnsteig", "die Ankunft", "die Abfahrt"]) },
   {
     t: "clue",
     title: "Linie 11",
@@ -268,6 +276,7 @@ const fahrrad: SceneNode[] = [
     answer: "машина забита булочками",
   },
   hauke("Kein Auto? Dann nehme ich das Fahrrad von Oma!", "Машины нет? Тогда возьму бабушкин велосипед!", ["das Fahrrad"]),
+  narr("Велосипеду нельзя на {autobahn}: там только Auto и {lkw}. Каждый {kilometer} под дождём — как два."),
   { t: "gap", rule: ["stadt/mit-1"], task: "На чём Хауке едет в Гаарден?", text: "Hauke fährt mit ___ Fahrrad nach Gaarden.", options: ["dem", "der", "das"], answer: "dem", ru: "Хауке едет в Гаарден на велосипеде." },
   narr("Das Fahrrad von Oma ist alt und {rot}. Es regnet. In Gaarden Хауке крутит головой: где этот Farbenweg?"),
   narr("Vor der Post steht eine Frau mit einem gelben Fahrrad und einer großen Tasche: {traegerin}."),
@@ -309,6 +318,7 @@ const fahrrad: SceneNode[] = [
 const ampel: SceneNode[] = [
   { t: "pic", src: "09-ampel.jpg", alt: "Перекрёсток в Гаардене под дождём: Элиф с телефоном в руке показывает налево, на светофоре сидит чайка; рядом почта с жёлтой вывеской" },
   narr("Gaarden, Haltestelle Post. Sie steigen aus — die Möwe auch. Es regnet. Vor Ihnen: Straßen, Ampeln, keine Werkstatt."),
+  narr("На почте окошко, весы и {briefmarke} за 95 центов. На конверте два адреса: {absender} и {empfaenger}."),
   {
     t: "look",
     task: "Осмотрите перекрёсток у почты.",
@@ -318,6 +328,7 @@ const ampel: SceneNode[] = [
       { icon: "💊", de: "die Apotheke", ru: "аптека", note: "Аптека на углу. Дане бы понравилось." },
     ],
   },
+  narr("Рядом банк: {konto}, {ueberweisen} — слова не для детективов, но Нильс бы оценил."),
   elif("Die Post ist hier. Aber wo ist der Farbenweg? Ich sehe nur Ampeln!", "Почта здесь. Но где Фарбенвег? Я вижу одни светофоры!", ["die Ampel"]),
   {
     t: "go",
@@ -478,6 +489,8 @@ const cafe: SceneNode[] = [
     options: ["она новая и пластиковая", "она старая, из клуба", "её нашли на улице"],
     answer: "она новая и пластиковая",
   },
+  narr("На столике кафе — {prospekt} для туристов. Главная {sehenswuerdigkeit} Gaarden, по нему, — рынок."),
+  narr("Город можно {besichtigen} самому, а можно с гидом: {fuehrung} — по субботам."),
   {
     t: "look",
     task: "Рассмотрите вывеску в окне кафе.",
@@ -587,6 +600,7 @@ const cafe: SceneNode[] = [
 const hof: SceneNode[] = [
   { t: "pic", src: "09-hinterhof.jpg", alt: "Задний двор за почтой: кирпичная мастерская с большим окном, на двери листок; в окне под тканью виден угол старой тёмно-синей таблички с белой буквой M и кантом-канатом; Элиф и Хауке с бабушкиным велосипедом прильнули к окну; во двор въезжает почтальонша на жёлтом велосипеде" },
   narr("Hinter der Post: {hinterhof}, ganz hinten — die Werkstatt. Farbenweg 7. Die Tür ist zu. An der Tür: {beimarzt}"),
+  narr("Для Хауке Gaarden — почти {dorf}: каждый знает каждого. Но это Kiel, а не другой {ort}."),
   {
     t: "gap",
     rule: ["stadt/check-2"],

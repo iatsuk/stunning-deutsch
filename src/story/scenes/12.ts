@@ -186,6 +186,7 @@ const weg: SceneNode[] = [
       { icon: "🚕", de: "das Taxi", ru: "такси", note: "Единственное такси занято: в нём Opa из чужой семьи." },
     ],
   },
+  narr("Neben der Haltestelle ist {reisebuero}. Im Fenster: {reisefuehrer}, {meer} und Sonne — die ganze {welt} in einer Woche!"),
   { t: "say", who: "Durchsage", voice: "Shelley", de: "Achtung: Der Bus hat zehn Minuten Verspätung. Er kommt um acht Uhr zwanzig.", ru: "Внимание: автобус опаздывает на десять минут. Он придёт в восемь двадцать." },
   {
     t: "hear",
@@ -205,6 +206,7 @@ const weg: SceneNode[] = [
       "07:20": "Утро уже в восемь. Acht Uhr zwanzig — 8:20.",
     }),
   },
+  narr("Über der Haltestelle: ein Flugzeug, {abflug} in Hamburg. Die Möwe braucht kein Flugzeug. Sie kann {fliegen}!"),
   elif("Und die Möwe? Die Möwe ist weg! Wo ist sie?", "А чайка? Чайки нет! Где она?", ["die Verspätung"]),
   {
     t: "pick",
@@ -258,7 +260,7 @@ const weg: SceneNode[] = [
     hint: "Время первым, sein — вторым, angekommen — в самом конце.",
     c: order(["Um", "halb", "neun", "sind", "wir", "angekommen."], ["angekommen.", "wir", "Um", "sind", "neun", "halb"]),
   },
-  { t: "game", task: "Слова поездки — по ящикам Йенсена: der, die, das.", hint: "Артикль запоминают вместе со словом. После ошибки слово вернётся в конце очереди.", c: { kind: "docks", words: ["der Koffer", "die Reise", "das Hotel", "der Zug", "das Flugzeug", "die Fahrkarte", "der Urlaub", "die Nacht"] } },
+  { t: "game", task: "Слова поездки — по ящикам Йенсена: der, die, das.", hint: "Артикль запоминают вместе со словом. После ошибки слово вернётся в конце очереди.", c: { kind: "docks", words: ["der Koffer", "die Reise", "das Hotel", "der Zug", "das Flugzeug", "die Fahrkarte", "der Urlaub", "die Nacht", "der Flughafen", "die Durchsage", "der Monat", "die Jahreszeit", "der Frühling"] } },
   {
     t: "clue",
     title: "Der Karton",
@@ -347,6 +349,7 @@ const hotel: SceneNode[] = [
             options: ["пешком под дождём", "на такси", "на автобусе"],
             answer: "пешком под дождём",
           },
+          narr("In Hamburg war {anschluss} weg. Und {gepaeck} — Koffer und Tasche — hat Opa allein."),
           narr("Opa рассказывает и рассказывает, Элиф кивает. Das Schild bleibt ein {geheimnis}."),
         ],
       },
@@ -367,6 +370,16 @@ const hotel: SceneNode[] = [
             ]),
           },
           { t: "gap", task: "Сколько ночей пробудет Opa?", text: "Opa bleibt zwei ___.", options: ["Nächte", "Nacht", "Nachten"], answer: "Nächte", ru: "Opa пробудет две ночи." },
+          {
+            t: "look",
+            task: "На стойке — прейскурант отеля. Рассмотрите его.",
+            items: [
+              { icon: "🛏️", de: "das Doppelzimmer", ru: "двухместный номер", note: "«DZ · 2 Personen» — для двоих. У Opa — одноместный.", key: true },
+              { icon: "👤", de: "die Person", ru: "человек", note: "Цена «pro Person» — за одного." },
+              { icon: "📅", de: "das Datum", ru: "дата", note: "В брони: Datum — 20.06., Anreise." },
+            ],
+          },
+          narr("Und klein: {halbpension} — Frühstück und Abendessen. Nur {uebernachten} ist billiger, aber Opa mag Frühstück."),
         ],
       },
     ],
@@ -575,6 +588,7 @@ const start: SceneNode[] = [
     hint: "Время первым, глагол вторым, «wieder da» — в конце.",
     c: order(["Heute", "ist", "das", "Schild", "wieder", "da."], ["wieder", "Schild", "da.", "Heute", "das", "ist"]),
   },
+  narr("Heute ist in Kiel niemand {fremd}: kein {deutsche}, kein {europaeer} aus Dänemark, kein Gast aus den USA."),
   narr("Lotte und zwanzig Kinder — её класс — касаются таблички. Потом команды. Без MOIN нет старта, а с MOIN — {start}!"),
   {
     t: "game",
@@ -632,6 +646,7 @@ const party: SceneNode[] = [
       ["Wir sind beim Arzt.", "Herr Jensen darf nicht sprechen."],
     ]),
   },
+  narr("Die Kieler Woche ist {europaeisch} und {kulturell}: Musik, Essen, Tanz — und viele {auslaendisch} Boote."),
   elif("Komm, Opa! Hier ist ein Stuhl für dich!", "Иди сюда, Opa! Вот стул для тебя!"),
   { t: "gap", rule: ["moin/uns-1"], task: "Как Opa Hansen себя чувствует? Запишите.", text: "Opa freut ___.", options: ["sich", "mich", "ihn"], answer: "sich", ru: "Opa радуется." },
   {
@@ -665,6 +680,7 @@ const party: SceneNode[] = [
     ]),
   },
   narr("Elif schreibt noch eine Karte — на Гельголанд, орнитологам. Образец — их письмо."),
+  narr("Nach Helgoland muss man nicht {abfliegen}: Die Fähre fährt. Und {zoll}? Den gibt es auf Helgoland auch!"),
   {
     t: "game",
     rule: ["reisen/haben-sein-1"],
@@ -683,8 +699,9 @@ const party: SceneNode[] = [
     ),
   },
   { t: "game", task: "Слова дня перемешались. Откройте пары: немецкое слово и перевод.", c: memory(["trockenraum", "foehn", "barometer", "start", "karton", "schild"]) },
+  narr("Nils macht Fotos, Fotos, Fotos. Wie viele? Eine {milliarde}, sagt er."),
   { t: "game", task: "Лото на празднике: послушайте слово и закройте его на карточке.", hint: HINT_HEAR, c: bingo(["das Wetter", "der Regenschirm", "das Hotel", "die Reise", "der Koffer", "der Sommer", "der Herbst", "die Verspätung", "die Anreise"]) },
-  { t: "game", task: `Последняя гонка: чайка тянет салфетку со словами дня! ${RACE}`, hint: HINT_RACE, outcome: RACE_STAKES, c: race(["das Wetter", "der Winter", "der Sommer", "die Reise", "das Hotel", "der Koffer"]) },
+  { t: "game", task: `Последняя гонка: чайка тянет салфетку со словами дня! ${RACE}`, hint: HINT_RACE, outcome: RACE_STAKES, c: race(["das Wetter", "der Winter", "der Sommer", "die Reise", "das Hotel", "der Koffer", "sonnig", "bewölkt", "windig", "Es schneit.", "Es sind 20 Grad.", "die Ferien"]) },
   hauke("Zwölf Tage! Am ersten Tag hast du nur ein Wort gesprochen: Moin. Und heute?", "Двенадцать дней! В первый день ты сказал всего одно слово: Moin. А сегодня?"),
   {
     t: "reply",

@@ -85,7 +85,8 @@ const invite: SceneNode[] = [
     ],
   },
   narr("Хауке раскладывает карточки: wer macht was gern? Вдруг найдётся Hobby, от которого Йенсен не откажется."),
-  { t: "game", task: "Послушайте занятие и нажмите на картинку.", hint: HINT_PICTURE, c: scene([["schwimmen", "🏊"], ["tanzen", "💃"], ["lesen", "📖"], ["kochen", "🍳"], ["Fahrrad fahren", "🚲"], ["segeln", "⛵"]]) },
+  narr("На карточках ещё {wandern}, {radfahren}, {laufen} и {baden}. Хауке пишет крупно: Was macht Herr Jensen gern?"),
+  { t: "game", task: "Послушайте занятие и нажмите на картинку.", hint: HINT_PICTURE, c: scene([["schwimmen", "🏊"], ["tanzen", "💃"], ["lesen", "📖"], ["kochen", "🍳"], ["Fahrrad fahren", "🚲"], ["segeln", "⛵"], ["Tennis spielen", "🎾"], ["Gitarre spielen", "🎸"], ["grillen", "🍖"]]) },
   elif("Herr Jensen segelt jeden Morgen um acht. Immer allein!", "Господин Йенсен ходит под парусом каждое утро в восемь. Всегда один!"),
   { t: "gap", task: "Когда Йенсен выходит в море?", text: "Jeden Morgen um ___ segelt Herr Jensen.", options: ["acht", "halb acht", "sechs"], answer: "acht", ru: "Каждое утро в восемь господин Йенсен выходит под парусом." },
   {
@@ -113,6 +114,7 @@ const invite: SceneNode[] = [
       ["Матео хочет готовить", true, "«Ich will kochen!»"],
     ]),
   },
+  narr("Новая идея — {ausflug} на пляж. Пусть придёт весь {verein}: {eintritt} бесплатный, Wasser — тоже."),
   hauke("Gut. Kein Kino. Aber wir haben noch eine Idee!", "Ладно. Без кино. Но у нас есть ещё идея!"),
   {
     t: "reply",
@@ -404,13 +406,17 @@ const party: SceneNode[] = [
       no("Ich gern Kaffee.", "gern не заменяет глагол: Ich mag Kaffee или Ich trinke gern Kaffee."),
     ],
   },
+  narr("В последней графе — {lieblingsfilm} и вопрос с глаголом {gefallen}. Нравится то, что стоит в начале фразы."),
+  hauke("Mir gefällt die Idee! Und dir?", "Мне нравится идея! А тебе?"),
   {
     t: "type",
     task: "Запишите в блокнот, где и когда вечеринка.",
     answers: ["Heute ist eine Party am Strand.", "Die Party ist heute am Strand.", "Heute Party am Strand."],
     ru: "Сегодня вечеринка на пляже.",
   },
-  { t: "game", task: "Нильс раскладывает приглашения по ящикам: der, die, das.", hint: HINT_DOCK, c: docks(["die Freizeit", "das Hobby", "der Sport", "die Idee", "der Park", "das Schwimmbad"]) },
+  narr("На пляже будет {feuer}, {disco} из колонки Нильса и большая {gruppe} гостей."),
+  narr("А ещё — {lustig} конкурс. Главное — {mitmachen}, а не {gewinnen}."),
+  { t: "game", task: "Нильс раскладывает приглашения по ящикам: der, die, das.", hint: HINT_DOCK, c: docks(["die Freizeit", "das Hobby", "der Sport", "die Idee", "der Park", "das Schwimmbad", "der Ausflug", "die Gruppe", "die Disco", "das Feuer"]) },
   {
     t: "clue",
     title: "Club-Party am Strand",
@@ -435,6 +441,7 @@ const beach: SceneNode[] = [
       { icon: "⛵", de: "segeln", ru: "ходить под парусом", note: "Далеко в заливе — маленький парус. Йенсен." },
     ],
   },
+  narr("За пляжем — {garten} клуба. Там растёт {baum}, а у забора — {blume} в банке из-под краски."),
   {
     t: "game",
     task: "Кто что принёс на пикник?",
@@ -443,7 +450,7 @@ const beach: SceneNode[] = [
   },
   elif("Die Möwe! Sie hat den Ball!", "Чайка! У неё мяч!"),
   narr("{moewe} nimmt {strandball} — лёгкий, как обещание Хауке, — и летит над Wasser."),
-  { t: "game", task: `Отбейте мяч! ${RACE}`, hint: HINT_RACE, outcome: RACE_STAKES, c: race(["schwimmen", "tanzen", "zusammen", "die Party", "die Idee", "leider"]) },
+  { t: "game", task: `Отбейте мяч! ${RACE}`, hint: HINT_RACE, outcome: RACE_STAKES, c: race(["schwimmen", "tanzen", "zusammen", "die Party", "die Idee", "leider", "oft", "manchmal", "nicht gern"]) },
   hauke("Ich hole den Ball. Ich komme wieder!", "Я принесу мяч. Я вернусь!"),
   narr("Как в старом фильме про робота: «I'll be back». Хауке возвращается через vierzig Minuten — без мяча, зато с мороженым."),
   {
@@ -454,6 +461,7 @@ const beach: SceneNode[] = [
     options: ["принести мяч и вернуться", "уйти домой", "купить мороженое"],
     answer: "принести мяч и вернуться",
   },
+  narr("Для Нильса каждое фото — {bild}, как в музее. Сегодня у него целая выставка."),
   narr("Нильс показывает Fotos дня: vierzig Stück. На фото neununddreißig, у самого края, — Грета. И крупно — {hand}."),
   dana("Seht mal! Greta! Ihre Hände – dunkelblau!", "Посмотрите! Грета! Её руки — тёмно-синие!"),
   {
@@ -520,6 +528,7 @@ const beach: SceneNode[] = [
       [["schwimmen", "segeln", "fotografieren", "der Park"], "der Park", "Парк — место, остальное — что делают."],
     ]),
   },
+  narr("Хауке путает: {see} — это озеро. А Ostsee — море, и у моря артикль die."),
   {
     t: "clue",
     title: "Foto 39",
@@ -745,11 +754,11 @@ const evening: SceneNode[] = [
     c: order(["Können", "wir", "morgen", "alles", "verstehen?"], ["verstehen?", "alles", "Können", "morgen", "wir"]),
   },
   narr("Der Schlüssel liegt auf dem Tisch: alt, schwer, с биркой: «{keller}». Рядом будильник: «7:00!»"),
-  { t: "game", task: "Хауке раскладывает вещи из корзин по ящикам: der, die, das.", hint: HINT_DOCK, c: docks(["der Film", "das Kino", "das Konzert", "die Party", "der Park", "das Schwimmbad", "das Buch", "die Einladung"]) },
+  { t: "game", task: "Хауке раскладывает вещи из корзин по ящикам: der, die, das.", hint: HINT_DOCK, c: docks(["der Film", "das Kino", "das Konzert", "die Party", "der Park", "das Schwimmbad", "das Buch", "die Einladung", "der Garten", "der Baum", "die Blume", "das Bild"]) },
   mateo("Brot? Für morgen? Nein. Für … später. Gute Nacht!", "Хлеб? На завтра? Нет. На… потом. Спокойной ночи!"),
   { t: "gap", task: "Для чего хлеб Матео?", text: "Das Brot ist für ___.", options: ["später", "heute", "Hauke"], answer: "später", ru: "Хлеб — на потом." },
   { t: "game", task: "Лото на ночь: послушайте слово и закройте его на карточке.", hint: HINT_HEAR, c: bingo(["schwimmen", "tanzen", "lesen", "segeln", "das Kino", "der Film", "die Party", "leider", "Fußball spielen"]) },
-  { t: "game", task: "Подпишите в блокноте слова дня по буквам.", hint: HINT_SPELL, c: letters(["die Einladung", "mitkommen", "das Konzert"]) },
+  { t: "game", task: "Подпишите в блокноте слова дня по буквам.", hint: HINT_SPELL, c: letters(["die Einladung", "mitkommen", "das Konzert", "wandern"]) },
   hauke("Der Wecker ist da. Um sieben stehe ich auf!", "Будильник на месте. В семь я встаю!"),
   {
     t: "type",
@@ -757,7 +766,7 @@ const evening: SceneNode[] = [
     answers: ["Morgen um acht im Keller.", "Morgen um acht sind wir im Keller.", "Wir gehen morgen um acht in den Keller."],
     ru: "Завтра в восемь в подвале.",
   },
-  { t: "game", task: "Хауке засыпает и бормочет хобби. Послушайте и нажмите на картинку.", hint: HINT_PICTURE, c: scene([["segeln", "⛵"], ["schwimmen", "🏊"], ["lesen", "📖"], ["Fußball spielen", "⚽"], ["Musik hören", "🎧"], ["tanzen", "💃"]]) },
+  { t: "game", task: "Хауке засыпает и бормочет хобби. Послушайте и нажмите на картинку.", hint: HINT_PICTURE, c: scene([["segeln", "⛵"], ["schwimmen", "🏊"], ["lesen", "📖"], ["Fußball spielen", "⚽"], ["Musik hören", "🎧"], ["tanzen", "💃"], ["Freunde treffen", "🧑‍🤝‍🧑"], ["wandern", "🥾"], ["laufen", "🏃"]]) },
   narr("Вы закрываете блокнот: «День седьмой. Herr Jensen: Morgen um acht. Im Keller. Allein. Greta: Hände dunkelblau». Noch fünf Tage."),
   {
     t: "clue",

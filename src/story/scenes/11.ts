@@ -72,6 +72,7 @@ const donnerstag: SceneNode[] = [
   },
   hauke("Ich bin nicht arbeitslos – ich bin Student! Aber ohne Arbeit kein Geld.", "Я не безработный — я студент! Но без работы нет денег."),
   { t: "gap", rule: ["moin/un-los-1"], task: "Как одним словом сказать «без работы»?", text: "Hauke ist nicht arbeits___.", options: ["los", "bar", "un"], answer: "los", ru: "Хауке не безработный." },
+  narr("Hauke sucht {job}: kein {praktikum}, kein {studium}. Er will Geld {verdienen}."),
   narr("In der Zeitung: Anzeigen. Хауке читает вслух, Элиф — через плечо."),
   {
     t: "game",
@@ -126,11 +127,12 @@ const donnerstag: SceneNode[] = [
     answers: ["Wir haben auf Herrn Jensen gewartet.", "Gestern haben wir auf Herrn Jensen gewartet."],
     ru: "Мы ждали господина Йенсена.",
   },
+  narr("Der {arbeitsplatz} von Mateo ist die Küche. Und Hauke? Er will {selbststaendig} sein — ohne {chef}."),
   {
     t: "game",
     task: "Профессии дня — по ящикам Йенсена: der, die, das.",
     hint: HINT_DOCK,
-    c: docks(["der Lehrer", "die Ärztin", "der Koch", "die Köchin", "der Student", "die Kellnerin", "der Mechaniker", "die Verkäuferin"]),
+    c: docks(["der Lehrer", "die Ärztin", "der Koch", "die Köchin", "der Student", "die Kellnerin", "der Mechaniker", "die Verkäuferin", "die Lehrerin", "der Ingenieur", "der Friseur", "der Informatiker", "der Krankenpfleger"]),
   },
   { t: "gap", task: "Что обещает прогноз на субботу?", text: "Am Samstag ___ es.", options: ["regnet", "regnen", "geregnet"], answer: "regnet", ru: "В субботу дождь." },
   {
@@ -182,6 +184,7 @@ const jensen: SceneNode[] = [
 const werkstatt: SceneNode[] = [
   { t: "pic", src: "11-werkstatt.jpg", alt: "Мастерская Греты: на верстаке под лампой табличка MOIN — свежая тёмно-синяя краска, белые буквы, кант-канат; Грета в комбинезоне пишет записку, Йенсен в шарфе с блоком, Элиф, Дана и Хауке смотрят на табличку" },
   narr("11:00, Farbenweg 7. Die Tür ist auf. Auf dem Tisch — das Schild. Dunkelblau, weiße Buchstaben, по краю — {seil}. Wie neu."),
+  narr("На верстаке — {bleistift}, линейка и отдельная {teil} таблички — рамка. Каждый {zentimeter} Грета мерила дважды."),
   {
     t: "look",
     task: "Рассмотрите табличку на верстаке.",
@@ -204,6 +207,7 @@ const werkstatt: SceneNode[] = [
     answer: "десять",
   },
   hauke("Über fünfzig Jahre alt – und wie neu!", "Больше пятидесяти лет — и как новая!"),
+  narr("Где у Греты {fehler}? Нигде. Свои кисти она не даёт: {benutzen} их может только она."),
   {
     t: "game",
     rule: ["arbeit/perfekt-4"],
@@ -398,6 +402,7 @@ const warum: SceneNode[] = [
       answer: ["0:0:4", "1:0:5"],
     },
   },
+  narr("А {aussage} Фрауке про похищение — просто слух. Записка Йенсена говорит другое."),
   { t: "gap", rule: ["arbeit/perfekt-5"], task: "Что Грета сделала на самом деле?", text: "Greta hat Herrn Jensen zum Arzt ___.", options: ["gebracht", "gebringt", "bringen"], answer: "gebracht", ru: "Грета отвела господина Йенсена к врачу." },
   {
     t: "game",
@@ -429,6 +434,7 @@ const warum: SceneNode[] = [
 const tisch: SceneNode[] = [
   { t: "pic", src: "11-tisch.jpg", alt: "Вечер в клубе, все за одним длинным столом: Петерсен, Фрауке, Хауке, Элиф, Дана, Грета и Йенсен с блоком; Матео стоит с огромным круглым тортом с белыми буквами MOIN; чайка на спинке стула" },
   narr("Abend im Club. Alle sitzen an einem Tisch: Frau Petersen, Frauke, Nils, Hauke, Elif, Dana — Greta und Herr Jensen. Как в детективе."),
+  narr("Lotte macht {hausaufgabe} am Tisch: {aufgabe} drei, {loesung} mit Bleistift."),
   {
     t: "look",
     task: "Осмотрите стол.",
@@ -441,6 +447,7 @@ const tisch: SceneNode[] = [
   petersen("Samstag ist die Party. Wer kocht? Hauke?", "В субботу праздник. Кто готовит? Хауке?"),
   hauke("Ich? Ich bin kein Koch! Ich bin Student!", "Я? Я не повар! Я студент!", ["der Koch"]),
   { t: "gap", rule: ["arbeit/maennlich-weiblich-1"], task: "Что ответил Хауке?", text: "Ich bin kein ___!", options: ["Koch", "Köchin", "Kuchen"], answer: "Koch", ru: "Я не повар!" },
+  narr("Morgen um acht ist {unterricht}. Lotte ist in {klasse} drei: zwanzig {schueler}, eine Lehrerin. Und {ergebnis}? Eine Eins!"),
   {
     t: "game",
     task: "Матео слышит не то, что сказано. Какое слово прозвучало?",
@@ -528,6 +535,7 @@ const tisch: SceneNode[] = [
       no("Йенсен запретил всем говорить", "Говорить запретили только Йенсену — врач."),
     ],
   },
+  { t: "game", task: "Лотта собирает портфель. Разложите вещи по ящикам: der, die, das.", hint: HINT_DOCK, c: docks(["die Hausaufgabe", "die Aufgabe", "die Lösung", "das Ergebnis", "der Unterricht", "die Klasse", "der Schüler", "der Bleistift"]) },
   {
     t: "clue",
     title: "Alle an einem Tisch",
@@ -562,6 +570,8 @@ const geheim: SceneNode[] = [
       no("Что дождь смоет белые буквы", "Буквы уже высохли. Сохнет тёмно-синяя краска."),
     ],
   },
+  narr("Фрау Петерсен раздаёт {bogen} для гостей: {anrede} — Herr или Frau, пол — {maennlich} или {weiblich}."),
+  narr("Bitte {ankreuzen} und bis Freitag {abgeben}. Ihre {papiere} sind immer in Ordnung."),
   {
     t: "type",
     rule: ["moin/sollen-1"],
@@ -623,7 +633,9 @@ const geheim: SceneNode[] = [
       ],
     ),
   },
+  narr("Nils will die Einladung {drucken}, aber {drucker} ist kaputt. На сайте можно только {anklicken}. Er nimmt {kugelschreiber}."),
   { t: "game", task: "Хауке повторяет слова на субботу вслух. Повторите за ним.", hint: HINT_SAY, c: speak(["die Arbeit", "der Beruf", "die Firma"]) },
+  narr("Элиф учит глагол {bedeuten}: каждое {satz} письма она разбирает по словам."),
   {
     t: "pick",
     task: "Что теперь главное до субботы?",
@@ -693,7 +705,7 @@ const nacht: SceneNode[] = [
   },
   { t: "game", task: "Слова дня перемешались. Откройте пары: немецкое слово и перевод.", c: memory(["geheimnis", "ueberraschung", "wetterbericht", "muetze", "trocken", "notizblock"]) },
   narr("Und die Möwe? Sie hat nichts gemacht — bis jetzt. Der Brief aus Helgoland — уже у неё в клюве."),
-  { t: "game", task: `Отнимите письмо у чайки! ${RACE}`, hint: HINT_RACE, outcome: RACE_STAKES, c: race(["der Beruf", "die Arbeit", "die Stelle", "die Firma", "gestern", "früher"]) },
+  { t: "game", task: `Отнимите письмо у чайки! ${RACE}`, hint: HINT_RACE, outcome: RACE_STAKES, c: race(["der Beruf", "die Arbeit", "die Stelle", "die Firma", "gestern", "früher", "gestern Abend", "letztes Jahr", "der Kollege", "der Hausmann"]) },
   elif("Mein Brief! Möwe, das ist kein Fischbrötchen! Das bist du!", "Моё письмо! Чайка, это не рыбная булочка! Это же про тебя!"),
   dana("Morgen ist der letzte Tag. Und Samstag: Regen, nasse Farbe, Start. Wir brauchen einen Plan.", "Завтра последний день. А в субботу: дождь, мокрая краска, старт. Нам нужен план."),
   {

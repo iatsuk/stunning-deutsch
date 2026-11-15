@@ -51,6 +51,7 @@ const morning: SceneNode[] = [
     answers: ["Herr Jensen ist nicht da.", "Herr Jensen ist nicht hier.", "Er ist nicht da."],
     ru: "Господина Йенсена нет.",
   },
+  narr("На улице, {draussen}, — ветер. На причале ни одной чайки."),
   elif("Keine Möwe! Die Möwen sind in der Stadt. Ein Sturm kommt!", "Ни одной чайки! Чайки в городе. Идёт шторм!"),
   {
     t: "hear",
@@ -85,6 +86,7 @@ const morning: SceneNode[] = [
   dana("Der Schlüssel ist alt. Das Schloss ist neu. Das passt nicht!", "Ключ старый. Замок новый. Не подходит!"),
   hauke("Und es gibt hier kein Licht! Dana, mach dein Handy an!", "И света здесь нет! Дана, включи телефон!"),
   { t: "gap", rule: ["moin/es-gibt-1"], task: "Запишите, почему на лестнице темно.", text: "Hier ___ es kein Licht.", options: ["gibt", "ist", "hat"], answer: "gibt", ru: "Здесь нет света." },
+  narr("Фрау Петерсен мечтает: {aufzug}! Пока есть только {treppe}: {oben} — офис, {unten} — Keller."),
   {
     t: "pick",
     task: "Ключ не подходит, а уже 8:20. Что делать?",
@@ -123,7 +125,7 @@ const morning: SceneNode[] = [
     t: "game",
     task: "На доске фрау Петерсен ключи висят на трёх крючках: der, die, das. Повесьте бирки.",
     hint: HINT_DOCK,
-    c: docks(["der Keller", "die Küche", "das Bad", "der Flur", "das Treppenhaus", "der Balkon", "das Zimmer", "die Wohnung"]),
+    c: docks(["der Keller", "die Küche", "das Bad", "der Flur", "das Treppenhaus", "der Balkon", "das Zimmer", "die Wohnung", "das Wohnzimmer", "das Schlafzimmer"]),
   },
   {
     t: "game",
@@ -161,7 +163,8 @@ const lager: SceneNode[] = [
   { t: "pic", src: "08-cellar.jpg", alt: "Подвал клуба при свете телефона: старые стулья, стол, шкаф, свёрнутые паруса; у окошка с разбитым стеклом — тайник чайки: угол бирки, чек, чайные пакетики, край старого фото и пляжный мяч" },
   narr("Im Keller клуба ist es dunkel. Dana macht das Handy an: старые стулья, ein Tisch, ein Schrank, паруса."),
   hauke("Herr Jensen? Hallo? … Niemand da.", "Господин Йенсен? Алло? … Никого."),
-  { t: "game", task: "Дана светит телефоном по углам. Послушайте слово и нажмите на картинку.", hint: HINT_PICTURE, c: scene([["der Stuhl", "🪑"], ["das Sofa", "🛋️"], ["das Bett", "🛏️"], ["die Lampe", "💡"], ["der Kühlschrank", "🧊"], ["der Herd", "🍳"]]) },
+  { t: "game", task: "Дана светит телефоном по углам. Послушайте слово и нажмите на картинку.", hint: HINT_PICTURE, c: scene([["der Stuhl", "🪑"], ["das Sofa", "🛋️"], ["das Bett", "🛏️"], ["die Lampe", "💡"], ["der Kühlschrank", "🧊"], ["der Herd", "🍳"], ["der Kleiderschrank", "🚪"], ["der Schreibtisch", "🖥️"]]) },
+  narr("Стол стоит ровно посередине — это {mitte} подвала. Шкаф — {daneben}: {hoch}, почти до потолка, и {breit}, как ворота."),
   narr("Am Fenster, в стекле дыра. И тут — {lager}: на столе, в шкафу, в ящике. Всё, что die Möwe унесла за неделю."),
   {
     t: "look",
@@ -221,6 +224,7 @@ const lager: SceneNode[] = [
     answers: ["Das Lager ist im Keller.", "Das Lager der Möwe ist im Keller.", "Im Keller ist das Lager."],
     ru: "Тайник — в подвале.",
   },
+  narr("Элиф наводит {ordnung}: каждую находку надо {legen} на своё место. Мяч сначала надо {waschen}."),
   {
     t: "game",
     rule: ["wohnen/stock-3"],
@@ -355,6 +359,7 @@ const stairs: SceneNode[] = [
     options: ["квартиру на третьем этаже", "ключ от подвала", "комнату в общежитии"],
     answer: "квартиру на третьем этаже",
   },
+  narr("Господин Вульф умеет одно: {vermieten}. В доме у гавани пять квартир, и жильцы вечно хотят {umziehen}."),
   {
     t: "game",
     task: "Поговорите с хозяином дома. Выберите ответ.",
@@ -396,6 +401,18 @@ const stairs: SceneNode[] = [
           },
           elif("650 Euro warm? … Nein, danke. Ich bleibe im Wohnheim. Das ist kleiner, aber billiger als die Wohnung!", "650 евро с отоплением? … Нет, спасибо. Я остаюсь в общежитии. Оно меньше, зато дешевле квартиры!"),
           { t: "gap", rule: ["wohnen/komposita-1"], task: "Что стоит 650 евро?", text: "Die ___ ist 650 Euro: Miete und Nebenkosten.", options: ["Warmmiete", "Kaltmiete", "Nebenkosten"], answer: "Warmmiete", ru: "Тёплая аренда — 650 евро: аренда и коммунальные." },
+          {
+            t: "look",
+            task: "Дочитайте объявление до конца.",
+            items: [
+              { icon: "🛋️", de: "das Wohnzimmer", ru: "гостиная", note: "«Wohnzi. 20 m²» — самая большая комната.", key: true },
+              { icon: "📐", de: "der Quadratmeter", ru: "квадратный метр", note: "«55 m²» на всю квартиру. Пишут m², читают Quadratmeter." },
+              { icon: "🪑", de: "möbliert", ru: "с мебелью", note: "«möbl.» — кровать, стол и шкаф уже стоят." },
+              { icon: "✨", de: "modern", ru: "современный", note: "«mod. Küche» — кухня новая, остальное старое." },
+              { icon: "🔥", de: "die Heizung", ru: "отопление", note: "«Hzg. inkl.» — отопление уже в Warmmiete." },
+            ],
+          },
+          narr("Сам Вульф называет квартиру иначе: {apartment}. Так звучит дороже."),
           narr("Обмен не случился: im Wohnheim у Элиф тоже есть Balkon. Общий, на сорок человек."),
         ],
       },
@@ -464,7 +481,7 @@ const stairs: SceneNode[] = [
     hint: "im ersten Stock: in + dem = im, порядковое с окончанием -en.",
     c: order(["Herr", "Jensen", "wohnt", "im", "ersten", "Stock."], ["Stock.", "im", "wohnt", "ersten", "Herr", "Jensen"]),
   },
-  { t: "game", task: "Элиф подписывает в блокноте слова подъезда по буквам.", hint: HINT_SPELL, c: letters(["das Erdgeschoss", "der Vermieter", "die Anzeige"]) },
+  { t: "game", task: "Элиф подписывает в блокноте слова подъезда по буквам.", hint: HINT_SPELL, c: letters(["das Erdgeschoss", "der Vermieter", "die Anzeige", "die Treppe", "der Aufzug"]) },
   {
     t: "clue",
     title: "Heute nicht",
@@ -562,6 +579,7 @@ const empty: SceneNode[] = [
     c: odd([
       [["der Keller", "das Erdgeschoss", "der Stock", "der Herd"], "der Herd", "Плита — техника, остальное — этажи дома."],
       [["der Schrank", "das Bett", "der Tisch", "die Miete"], "die Miete", "Аренда — деньги, остальное — мебель."],
+      [["hell – dunkel", "ruhig – laut", "teuer – günstig", "die Möbel"], "die Möbel", "Мебель — вещи, остальное — пары противоположностей."],
     ]),
   },
   {
@@ -751,6 +769,7 @@ const evening: SceneNode[] = [
       oralSay(3, REQUEST, "🪑", "Ist der Stuhl frei?", "Этот стул свободен?"),
     ]),
   },
+  narr("В клубе один {toilette}, и весь вечер на двери табличка: {besetzt}. Стулья тоже заняты."),
   petersen("Der Stuhl ist nicht frei. Die Möwe sitzt da!", "Стул не свободен. На нём сидит чайка!"),
   {
     t: "reply",

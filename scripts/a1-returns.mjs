@@ -9,7 +9,7 @@ import { fileURLToPath } from "node:url";
 import { phrases } from "../src/story/data.ts";
 import { sceneUnits } from "../src/story/review.ts";
 import { sceneChapters } from "../src/story/scenes/index.ts";
-import { buildIndex, found, THRESHOLD } from "./a1-index.mjs";
+import { BASELINE, buildIndex, found, THRESHOLD } from "./a1-index.mjs";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
 const OUT = path.join(root, "src/story/scenes/warmups.ts");
@@ -32,7 +32,8 @@ const ROUNDS = {
   12: ["docks", "bingo", "gull"],
   13: ["bingo", "gull", "docks"],
 };
-const SIZE = { bingo: [4, 9], gull: [4, 8], docks: [4, 8], letters: [3, 4], pairs: [4, 5] };
+// Раунд перед главой длиннее обычного: он один на главу и несёт возвращения всей главы.
+const SIZE = { bingo: [4, 12], gull: [4, 10], docks: [4, 12], letters: [3, 5], pairs: [4, 6] };
 const HEARD = new Set(["bingo", "gull", "docks", "letters"]);
 // Как в src/story/review.ts: существительное для причалов, слово для букв, смысл для пар и чайки.
 const ARTICLE = /^(der|die|das) /;
@@ -63,8 +64,10 @@ for (const w of index.words) {
   const slots = Math.max(T.hits - w.hits, T.chapters - w.chapters.length, w.actions < T.actions || w.heard < T.heard ? 1 : 0);
   plans.push({ w, unit, met: metAt.get(unit), slots, heard: w.heard >= T.heard, chapters: new Set(w.chapters) });
 }
-// Сначала те, кому до закрепления нужно меньше всего, — так закрепится больше слов.
-plans.sort((a, b) => a.slots - b.slots || a.met - b.met || a.w.key.localeCompare(b.w.key, "de"));
+// Сначала слова храповика (они уже закреплены и не должны выпасть), затем те, кому до закрепления
+// нужно меньше всего, — так закрепится больше слов.
+const kept = new Set(JSON.parse(readFileSync(BASELINE, "utf8")).words);
+plans.sort((a, b) => kept.has(b.w.key) - kept.has(a.w.key) || a.slots - b.slots || a.met - b.met || a.w.key.localeCompare(b.w.key, "de"));
 
 const games = Object.fromEntries(
   Object.entries(ROUNDS)

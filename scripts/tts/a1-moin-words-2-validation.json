@@ -1,0 +1,982 @@
+{
+  "date": "2026-11-15",
+  "scope": "Exam vocabulary of chapters 7–12 of the Moin scene prototype: 120 story expressions (leisure, home, station and post office, health, work and school, forms, travel) and one new line",
+  "model": "k2-fsa/OmniVoice",
+  "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+  "candidatesPerPhrase": 3,
+  "asr": "openai/whisper-large-v3",
+  "notes": [
+    "Each phrase has three takes; the chosen take has the closest transcript, an end level below -32 dB and no fragment flagged by tails.py. tails.py flagged 6 of 363 takes, none of them chosen; it passes on all 121 imported files.",
+    "Every chosen transcript matches the text; the only difference is spacing: «Rad fahren» is written by Whisper as «Radfahren»."
+  ],
+  "files": [
+    {
+      "file": "000d03c483eb.m4a",
+      "text": "lustig",
+      "voice": "Anna",
+      "seed": 21062185,
+      "heard": "Lustig.",
+      "endDb": -65.3
+    },
+    {
+      "file": "072fc5279ba8.m4a",
+      "text": "der Westen",
+      "voice": "Anna",
+      "seed": 20841510,
+      "heard": "Der Westen",
+      "endDb": -71.0
+    },
+    {
+      "file": "0e8a07b86640.m4a",
+      "text": "der Satz, die Sätze",
+      "voice": "Anna",
+      "seed": 21069967,
+      "heard": "Der Satz, die Sätze",
+      "endDb": -57.2
+    },
+    {
+      "file": "0ee58f2bba07.m4a",
+      "text": "besetzt",
+      "voice": "Anna",
+      "seed": 20568231,
+      "heard": "Besetzt",
+      "endDb": -65.6
+    },
+    {
+      "file": "10d1c4bbfcd6.m4a",
+      "text": "besichtigen",
+      "voice": "Anna",
+      "seed": 21140436,
+      "heard": "Besichtigen",
+      "endDb": -66.3
+    },
+    {
+      "file": "11249b11b1c9.m4a",
+      "text": "das Studium, die Studien",
+      "voice": "Anna",
+      "seed": 20399815,
+      "heard": "Das Studium. Die Studien.",
+      "endDb": -43.4
+    },
+    {
+      "file": "14c4ce2f0809.m4a",
+      "text": "anklicken",
+      "voice": "Anna",
+      "seed": 20611143,
+      "heard": "Anklicken",
+      "endDb": -66.4
+    },
+    {
+      "file": "163d86ed552a.m4a",
+      "text": "die Klasse, die Klassen",
+      "voice": "Anna",
+      "seed": 20793768,
+      "heard": "Die Klasse, die Klassen",
+      "endDb": -53.2
+    },
+    {
+      "file": "19c0553aa337.m4a",
+      "text": "der Garten, die Gärten",
+      "voice": "Anna",
+      "seed": 20598325,
+      "heard": "Der Garten, die Gärten",
+      "endDb": -66.0
+    },
+    {
+      "file": "19dce52aacca.m4a",
+      "text": "der Deutsche, die Deutschen",
+      "voice": "Anna",
+      "seed": 20539754,
+      "heard": "Der Deutsche. Die Deutschen.",
+      "endDb": -62.5
+    },
+    {
+      "file": "1b51d354a5ec.m4a",
+      "text": "verdienen",
+      "voice": "Anna",
+      "seed": 21109947,
+      "heard": "Verdienen",
+      "endDb": -68.5
+    },
+    {
+      "file": "1e53b0244e4e.m4a",
+      "text": "draußen",
+      "voice": "Anna",
+      "seed": 20557149,
+      "heard": "Draußen",
+      "endDb": -62.5
+    },
+    {
+      "file": "1f3a10bb0407.m4a",
+      "text": "das Apartment, die Apartments",
+      "voice": "Anna",
+      "seed": 20532805,
+      "heard": "Das Apartment. Die Apartments.",
+      "endDb": -54.6
+    },
+    {
+      "file": "20666c450cab.m4a",
+      "text": "der Drucker, die Drucker",
+      "voice": "Anna",
+      "seed": 20478603,
+      "heard": "Der Drucker. Die Drucker.",
+      "endDb": -58.6
+    },
+    {
+      "file": "20850ac860fb.m4a",
+      "text": "überweisen",
+      "voice": "Anna",
+      "seed": 20920249,
+      "heard": "Überweisen",
+      "endDb": -59.4
+    },
+    {
+      "file": "21d4d20ee134.m4a",
+      "text": "die Milliarde, die Milliarden",
+      "voice": "Anna",
+      "seed": 21242819,
+      "heard": "Die Milliarde. Die Milliarden.",
+      "endDb": -45.7
+    },
+    {
+      "file": "271ee4fae337.m4a",
+      "text": "die Briefmarke, die Briefmarken",
+      "voice": "Anna",
+      "seed": 20426421,
+      "heard": "Die Briefmarke. Die Briefmarken.",
+      "endDb": -50.4
+    },
+    {
+      "file": "27c90c8e4fa5.m4a",
+      "text": "der Fahrer, die Fahrer",
+      "voice": "Anna",
+      "seed": 20831796,
+      "heard": "Der Fahrer, die Fahrer",
+      "endDb": -56.1
+    },
+    {
+      "file": "27d650b3c81f.m4a",
+      "text": "das Glück",
+      "voice": "Anna",
+      "seed": 20713006,
+      "heard": "Das Glück",
+      "endDb": -67.1
+    },
+    {
+      "file": "2dcf53bbecfa.m4a",
+      "text": "der Bleistift, die Bleistifte",
+      "voice": "Anna",
+      "seed": 20581880,
+      "heard": "Der Bleistift. Die Bleistifte.",
+      "endDb": -52.2
+    },
+    {
+      "file": "2e6fa918d111.m4a",
+      "text": "die Halbpension",
+      "voice": "Anna",
+      "seed": 20492384,
+      "heard": "Die Halbpension",
+      "endDb": -46.8
+    },
+    {
+      "file": "2ee7ab9630d1.m4a",
+      "text": "das Haar, die Haare",
+      "voice": "Anna",
+      "seed": 20330929,
+      "heard": "Das Haar, die Haare.",
+      "endDb": -63.1
+    },
+    {
+      "file": "3179b3912fc9.m4a",
+      "text": "fliegen",
+      "voice": "Anna",
+      "seed": 20701481,
+      "heard": "Fliegen",
+      "endDb": -71.3
+    },
+    {
+      "file": "3234481f3f4a.m4a",
+      "text": "der Norden",
+      "voice": "Anna",
+      "seed": 20956586,
+      "heard": "Der Norden",
+      "endDb": -62.8
+    },
+    {
+      "file": "334bfa0a917f.m4a",
+      "text": "der Kugelschreiber, die Kugelschreiber",
+      "voice": "Anna",
+      "seed": 20837245,
+      "heard": "Der Kugelschreiber, die Kugelschreiber.",
+      "endDb": -67.3
+    },
+    {
+      "file": "33a8d0f43a25.m4a",
+      "text": "mitmachen",
+      "voice": "Anna",
+      "seed": 20465763,
+      "heard": "Mitmachen",
+      "endDb": -61.7
+    },
+    {
+      "file": "37c46da665d6.m4a",
+      "text": "benutzen",
+      "voice": "Anna",
+      "seed": 21008229,
+      "heard": "benutzen",
+      "endDb": -67.8
+    },
+    {
+      "file": "398efd4d482a.m4a",
+      "text": "unten",
+      "voice": "Anna",
+      "seed": 21100682,
+      "heard": "Unten",
+      "endDb": -60.4
+    },
+    {
+      "file": "3a0b633cbfea.m4a",
+      "text": "der Fehler, die Fehler",
+      "voice": "Anna",
+      "seed": 21237962,
+      "heard": "Der Fehler. Die Fehler.",
+      "endDb": -58.8
+    },
+    {
+      "file": "3b1600109a12.m4a",
+      "text": "der Kilometer, die Kilometer",
+      "voice": "Anna",
+      "seed": 20676257,
+      "heard": "Der Kilometer. Die Kilometer.",
+      "endDb": -43.6
+    },
+    {
+      "file": "3c85b76da21c.m4a",
+      "text": "der Bogen, die Bögen",
+      "voice": "Anna",
+      "seed": 21001323,
+      "heard": "Der Bogen, die Bögen",
+      "endDb": -64.7
+    },
+    {
+      "file": "3e2e47e3ad4c.m4a",
+      "text": "die Vorsicht",
+      "voice": "Anna",
+      "seed": 20782124,
+      "heard": "Die Vorsicht",
+      "endDb": -71.1
+    },
+    {
+      "file": "3f89f8689af9.m4a",
+      "text": "ankreuzen",
+      "voice": "Anna",
+      "seed": 20943368,
+      "heard": "Ankreuzen",
+      "endDb": -66.8
+    },
+    {
+      "file": "416bd3e01aa1.m4a",
+      "text": "der Schalter, die Schalter",
+      "voice": "Anna",
+      "seed": 21246593,
+      "heard": "Der Schalter, die Schalter.",
+      "endDb": -60.4
+    },
+    {
+      "file": "430f777f1937.m4a",
+      "text": "die Auskunft, die Auskünfte",
+      "voice": "Anna",
+      "seed": 20665525,
+      "heard": "Die Auskunft, die Auskünfte",
+      "endDb": -52.2
+    },
+    {
+      "file": "46ac72d1445b.m4a",
+      "text": "die Gruppe, die Gruppen",
+      "voice": "Anna",
+      "seed": 20897403,
+      "heard": "Die Gruppe, die Gruppen",
+      "endDb": -60.3
+    },
+    {
+      "file": "46ec4162e701.m4a",
+      "text": "die Welt, die Welten",
+      "voice": "Anna",
+      "seed": 20495824,
+      "heard": "Die Welt, die Welten",
+      "endDb": -62.2
+    },
+    {
+      "file": "48f632935d93.m4a",
+      "text": "bedeuten",
+      "voice": "Anna",
+      "seed": 20950097,
+      "heard": "bedeuten.",
+      "endDb": -62.9
+    },
+    {
+      "file": "4bcb1c164e7d.m4a",
+      "text": "die Ordnung",
+      "voice": "Anna",
+      "seed": 20945083,
+      "heard": "Die Ordnung",
+      "endDb": -60.1
+    },
+    {
+      "file": "4bfee0e2b6cc.m4a",
+      "text": "der Ort, die Orte",
+      "voice": "Anna",
+      "seed": 20991724,
+      "heard": "Der Ort. Die Orte.",
+      "endDb": -60.1
+    },
+    {
+      "file": "4d50f7dae09e.m4a",
+      "text": "der Ausgang, die Ausgänge",
+      "voice": "Anna",
+      "seed": 20308077,
+      "heard": "Der Ausgang. Die Ausgänge.",
+      "endDb": -55.4
+    },
+    {
+      "file": "4fe84918d8b6.m4a",
+      "text": "oben",
+      "voice": "Anna",
+      "seed": 20648948,
+      "heard": "Oben",
+      "endDb": -59.0
+    },
+    {
+      "file": "51a999816973.m4a",
+      "text": "die Blume, die Blumen",
+      "voice": "Anna",
+      "seed": 20987010,
+      "heard": "Die Blume, die Blumen",
+      "endDb": -60.1
+    },
+    {
+      "file": "521f1e7b5935.m4a",
+      "text": "die Mitte",
+      "voice": "Anna",
+      "seed": 21132996,
+      "heard": "Die Mitte",
+      "endDb": -57.2
+    },
+    {
+      "file": "53fa653eed06.m4a",
+      "text": "der Süden",
+      "voice": "Anna",
+      "seed": 20821077,
+      "heard": "Der Süden",
+      "endDb": -55.5
+    },
+    {
+      "file": "540338cf09a5.m4a",
+      "text": "die Sehenswürdigkeit, die Sehenswürdigkeiten",
+      "voice": "Anna",
+      "seed": 21004451,
+      "heard": "Die Sehenswürdigkeit, die Sehenswürdigkeiten",
+      "endDb": -39.3
+    },
+    {
+      "file": "5475d4c1af4d.m4a",
+      "text": "das Bild, die Bilder",
+      "voice": "Anna",
+      "seed": 20638876,
+      "heard": "Das Bild. Die Bilder.",
+      "endDb": -56.3
+    },
+    {
+      "file": "548bd06ad579.m4a",
+      "text": "gefallen",
+      "voice": "Anna",
+      "seed": 21126583,
+      "heard": "Gefallen",
+      "endDb": -69.9
+    },
+    {
+      "file": "56b6e1613576.m4a",
+      "text": "die Hausaufgabe, die Hausaufgaben",
+      "voice": "Anna",
+      "seed": 20557748,
+      "heard": "Die Hausaufgabe. Die Hausaufgaben.",
+      "endDb": -58.3
+    },
+    {
+      "file": "588f6417f31d.m4a",
+      "text": "der Zoll, die Zölle",
+      "voice": "Anna",
+      "seed": 21127724,
+      "heard": "Der Zoll. Die Zölle.",
+      "endDb": -54.8
+    },
+    {
+      "file": "597823159fe7.m4a",
+      "text": "daneben",
+      "voice": "Anna",
+      "seed": 20844197,
+      "heard": "Daneben.",
+      "endDb": -53.1
+    },
+    {
+      "file": "59b3f417a84e.m4a",
+      "text": "die Abfahrt, die Abfahrten",
+      "voice": "Anna",
+      "seed": 20478109,
+      "heard": "Die Abfahrt, die Abfahrten",
+      "endDb": -56.7
+    },
+    {
+      "file": "5c11061293d4.m4a",
+      "text": "der Aufzug, die Aufzüge",
+      "voice": "Anna",
+      "seed": 20357074,
+      "heard": "Der Aufzug, die Aufzüge",
+      "endDb": -55.2
+    },
+    {
+      "file": "5c5a0feb6c64.m4a",
+      "text": "der Lkw, die Lkws",
+      "voice": "Anna",
+      "seed": 21160004,
+      "heard": "Der LKW, die LKWs",
+      "endDb": -55.7
+    },
+    {
+      "file": "5d86e581f131.m4a",
+      "text": "die Aussage, die Aussagen",
+      "voice": "Anna",
+      "seed": 20768128,
+      "heard": "Die Aussage, die Aussagen",
+      "endDb": -62.1
+    },
+    {
+      "file": "616f199cbda8.m4a",
+      "text": "die Lösung, die Lösungen",
+      "voice": "Anna",
+      "seed": 21235639,
+      "heard": "Die Lösung. Die Lösungen.",
+      "endDb": -60.7
+    },
+    {
+      "file": "61eea11aad92.m4a",
+      "text": "die Aufgabe, die Aufgaben",
+      "voice": "Anna",
+      "seed": 21259809,
+      "heard": "Die Aufgabe. Die Aufgaben.",
+      "endDb": -56.8
+    },
+    {
+      "file": "622ce2239c2e.m4a",
+      "text": "der Europäer, die Europäer",
+      "voice": "Anna",
+      "seed": 20344492,
+      "heard": "Der Europäer, die Europäer",
+      "endDb": -50.5
+    },
+    {
+      "file": "657f173e76d2.m4a",
+      "text": "baden",
+      "voice": "Anna",
+      "seed": 20498448,
+      "heard": "Baden",
+      "endDb": -59.6
+    },
+    {
+      "file": "68b8467da01b.m4a",
+      "text": "vermieten",
+      "voice": "Anna",
+      "seed": 21186137,
+      "heard": "Vermieten",
+      "endDb": -55.9
+    },
+    {
+      "file": "69416c305407.m4a",
+      "text": "der Teil, die Teile",
+      "voice": "Anna",
+      "seed": 21174149,
+      "heard": "Der Teil, die Teile",
+      "endDb": -63.2
+    },
+    {
+      "file": "69f9fdd6c197.m4a",
+      "text": "wandern",
+      "voice": "Anna",
+      "seed": 20744119,
+      "heard": "Wandern",
+      "endDb": -67.2
+    },
+    {
+      "file": "7089540d87ae.m4a",
+      "text": "der Chef, die Chefs",
+      "voice": "Anna",
+      "seed": 20264334,
+      "heard": "Der Chef. Die Chefs.",
+      "endDb": -52.7
+    },
+    {
+      "file": "72eb542697b4.m4a",
+      "text": "der Mund, die Münder",
+      "voice": "Anna",
+      "seed": 20973234,
+      "heard": "Der Mund, die Münder",
+      "endDb": -57.4
+    },
+    {
+      "file": "75a866e803ca.m4a",
+      "text": "die Toilette, die Toiletten",
+      "voice": "Anna",
+      "seed": 20713736,
+      "heard": "Die Toilette. Die Toiletten.",
+      "endDb": -57.9
+    },
+    {
+      "file": "75b938617a95.m4a",
+      "text": "der Abflug, die Abflüge",
+      "voice": "Anna",
+      "seed": 20573045,
+      "heard": "Der Abflug. Die Abflüge.",
+      "endDb": -53.4
+    },
+    {
+      "file": "7ee5b507f9db.m4a",
+      "text": "die Zigarette, die Zigaretten",
+      "voice": "Anna",
+      "seed": 21070395,
+      "heard": "Die Zigarette, die Zigaretten.",
+      "endDb": -54.1
+    },
+    {
+      "file": "802904bd4d6c.m4a",
+      "text": "ausländisch",
+      "voice": "Anna",
+      "seed": 20790476,
+      "heard": "Ausländisch",
+      "endDb": -65.7
+    },
+    {
+      "file": "81225cf6dacb.m4a",
+      "text": "die Papiere",
+      "voice": "Anna",
+      "seed": 20813931,
+      "heard": "Die Papiere",
+      "endDb": -61.8
+    },
+    {
+      "file": "819767fabb6b.m4a",
+      "text": "Mir gefällt die Idee! Und dir?",
+      "voice": "Rocko",
+      "seed": 20806889,
+      "heard": "Mir gefällt die Idee, und dir?",
+      "endDb": -67.5
+    },
+    {
+      "file": "82fe4e1d6562.m4a",
+      "text": "böse",
+      "voice": "Anna",
+      "seed": 21130272,
+      "heard": "Böse",
+      "endDb": -53.4
+    },
+    {
+      "file": "85dbfa1e8376.m4a",
+      "text": "der Baum, die Bäume",
+      "voice": "Anna",
+      "seed": 20912628,
+      "heard": "Der Baum, die Bäume",
+      "endDb": -57.1
+    },
+    {
+      "file": "88abcd26bb6c.m4a",
+      "text": "Rad fahren",
+      "voice": "Anna",
+      "seed": 20929642,
+      "heard": "Radfahren",
+      "endDb": -64.6
+    },
+    {
+      "file": "9042daec4160.m4a",
+      "text": "abgeben",
+      "voice": "Anna",
+      "seed": 20418624,
+      "heard": "Abgeben",
+      "endDb": -65.2
+    },
+    {
+      "file": "972667118b84.m4a",
+      "text": "abfliegen",
+      "voice": "Anna",
+      "seed": 21015524,
+      "heard": "Abfliegen",
+      "endDb": -54.3
+    },
+    {
+      "file": "975f9048c683.m4a",
+      "text": "der Prospekt, die Prospekte",
+      "voice": "Anna",
+      "seed": 20636835,
+      "heard": "Der Prospekt. Die Prospekte.",
+      "endDb": -48.7
+    },
+    {
+      "file": "97c0c410e15a.m4a",
+      "text": "der Job, die Jobs",
+      "voice": "Anna",
+      "seed": 21224553,
+      "heard": "Der Job, die Jobs.",
+      "endDb": -65.4
+    },
+    {
+      "file": "97ed7138cbe1.m4a",
+      "text": "verboten",
+      "voice": "Anna",
+      "seed": 20851969,
+      "heard": "Verboten",
+      "endDb": -69.9
+    },
+    {
+      "file": "99edaafaed16.m4a",
+      "text": "schlecht",
+      "voice": "Anna",
+      "seed": 21131318,
+      "heard": "schlecht",
+      "endDb": -69.5
+    },
+    {
+      "file": "9ca4a0b230e6.m4a",
+      "text": "der Verein, die Vereine",
+      "voice": "Anna",
+      "seed": 20871029,
+      "heard": "Der Verein. Die Vereine.",
+      "endDb": -56.4
+    },
+    {
+      "file": "9e594e9d0fb0.m4a",
+      "text": "breit",
+      "voice": "Anna",
+      "seed": 20470830,
+      "heard": "Breit",
+      "endDb": -69.9
+    },
+    {
+      "file": "9ff72a85d9fa.m4a",
+      "text": "das Konto, die Konten",
+      "voice": "Anna",
+      "seed": 20430520,
+      "heard": "Das Konto, die Konten.",
+      "endDb": -61.5
+    },
+    {
+      "file": "a27ecf966c78.m4a",
+      "text": "europäisch",
+      "voice": "Anna",
+      "seed": 20589831,
+      "heard": "europäisch",
+      "endDb": -45.7
+    },
+    {
+      "file": "a3a4e8fb34d3.m4a",
+      "text": "die Disco, die Discos",
+      "voice": "Anna",
+      "seed": 21010146,
+      "heard": "Die Disco. Die Discos.",
+      "endDb": -49.3
+    },
+    {
+      "file": "a43f5599ca80.m4a",
+      "text": "empfehlen",
+      "voice": "Anna",
+      "seed": 20298144,
+      "heard": "Empfehlen",
+      "endDb": -60.4
+    },
+    {
+      "file": "a7389d758d26.m4a",
+      "text": "selbstständig",
+      "voice": "Anna",
+      "seed": 21010788,
+      "heard": "Selbstständig.",
+      "endDb": -68.2
+    },
+    {
+      "file": "aa94584fac7b.m4a",
+      "text": "das Meer, die Meere",
+      "voice": "Anna",
+      "seed": 20759259,
+      "heard": "Das Meer, die Meere",
+      "endDb": -58.2
+    },
+    {
+      "file": "ab3ea0240085.m4a",
+      "text": "die Anrede, die Anreden",
+      "voice": "Anna",
+      "seed": 20312899,
+      "heard": "Die Anrede, die Anreden",
+      "endDb": -58.3
+    },
+    {
+      "file": "abaaa97c4c59.m4a",
+      "text": "die Führung, die Führungen",
+      "voice": "Anna",
+      "seed": 20562391,
+      "heard": "Die Führung, die Führungen",
+      "endDb": -60.5
+    },
+    {
+      "file": "b1e6ecf6b98d.m4a",
+      "text": "gewinnen",
+      "voice": "Anna",
+      "seed": 20455708,
+      "heard": "Gewinnen",
+      "endDb": -68.3
+    },
+    {
+      "file": "b21131eae487.m4a",
+      "text": "glücklich",
+      "voice": "Anna",
+      "seed": 20926695,
+      "heard": "Glücklich!",
+      "endDb": -53.3
+    },
+    {
+      "file": "b86197e1ec7a.m4a",
+      "text": "kulturell",
+      "voice": "Anna",
+      "seed": 20773193,
+      "heard": "Kulturell",
+      "endDb": -63.4
+    },
+    {
+      "file": "b8de986b4c89.m4a",
+      "text": "der Arbeitsplatz, die Arbeitsplätze",
+      "voice": "Anna",
+      "seed": 20688216,
+      "heard": "Der Arbeitsplatz, die Arbeitsplätze.",
+      "endDb": -64.7
+    },
+    {
+      "file": "b8dff77dcd40.m4a",
+      "text": "drucken",
+      "voice": "Anna",
+      "seed": 20711550,
+      "heard": "Drucken",
+      "endDb": -59.5
+    },
+    {
+      "file": "bb8ad2ad4386.m4a",
+      "text": "der Eingang, die Eingänge",
+      "voice": "Anna",
+      "seed": 20728196,
+      "heard": "Der Eingang, die Eingänge",
+      "endDb": -55.4
+    },
+    {
+      "file": "bcc5961f608a.m4a",
+      "text": "das Reisebüro, die Reisebüros",
+      "voice": "Anna",
+      "seed": 20478954,
+      "heard": "Das Reisebüro, die Reisebüros",
+      "endDb": -49.0
+    },
+    {
+      "file": "c1fc15cf9dd1.m4a",
+      "text": "der Schüler, die Schüler",
+      "voice": "Anna",
+      "seed": 21108273,
+      "heard": "Der Schüler. Die Schüler.",
+      "endDb": -65.2
+    },
+    {
+      "file": "c35563b7faaa.m4a",
+      "text": "der Lieblingsfilm, die Lieblingsfilme",
+      "voice": "Anna",
+      "seed": 20914984,
+      "heard": "Der Lieblingsfilm Die Lieblingsfilme",
+      "endDb": -40.8
+    },
+    {
+      "file": "c44848b0898f.m4a",
+      "text": "übernachten",
+      "voice": "Anna",
+      "seed": 20495373,
+      "heard": "Übernachten",
+      "endDb": -62.4
+    },
+    {
+      "file": "c49900eb1b7d.m4a",
+      "text": "männlich",
+      "voice": "Anna",
+      "seed": 20717324,
+      "heard": "Männlich",
+      "endDb": -54.0
+    },
+    {
+      "file": "c8eb6af57caa.m4a",
+      "text": "das Dorf, die Dörfer",
+      "voice": "Anna",
+      "seed": 20619752,
+      "heard": "Das Dorf. Die Dörfer.",
+      "endDb": -54.9
+    },
+    {
+      "file": "c9d3f29bfac1.m4a",
+      "text": "das Feuer, die Feuer",
+      "voice": "Anna",
+      "seed": 20867839,
+      "heard": "Das Feuer, die Feuer.",
+      "endDb": -53.1
+    },
+    {
+      "file": "ccaef97c4a1b.m4a",
+      "text": "weiblich",
+      "voice": "Anna",
+      "seed": 20309051,
+      "heard": "Weiblich",
+      "endDb": -59.5
+    },
+    {
+      "file": "cebe9ab8dcd0.m4a",
+      "text": "normal",
+      "voice": "Anna",
+      "seed": 21175536,
+      "heard": "Normal",
+      "endDb": -56.1
+    },
+    {
+      "file": "cf15a0db1e77.m4a",
+      "text": "der Bahnsteig, die Bahnsteige",
+      "voice": "Anna",
+      "seed": 21238615,
+      "heard": "Der Bahnsteig. Die Bahnsteige.",
+      "endDb": -55.7
+    },
+    {
+      "file": "cf2809fe67aa.m4a",
+      "text": "umziehen",
+      "voice": "Anna",
+      "seed": 20570122,
+      "heard": "Umziehen",
+      "endDb": -63.5
+    },
+    {
+      "file": "d00c34628d97.m4a",
+      "text": "der Reiseführer, die Reiseführer",
+      "voice": "Anna",
+      "seed": 20327910,
+      "heard": "Der Reiseführer. Die Reiseführer.",
+      "endDb": -52.1
+    },
+    {
+      "file": "d876550645c5.m4a",
+      "text": "die Autobahn, die Autobahnen",
+      "voice": "Anna",
+      "seed": 20476005,
+      "heard": "Die Autobahn, die Autobahnen",
+      "endDb": -59.0
+    },
+    {
+      "file": "d8ebf85b3f09.m4a",
+      "text": "die Ansage, die Ansagen",
+      "voice": "Anna",
+      "seed": 20912600,
+      "heard": "Die Ansage, die Ansagen",
+      "endDb": -54.5
+    },
+    {
+      "file": "d93ab7c69aa7.m4a",
+      "text": "waschen",
+      "voice": "Anna",
+      "seed": 20853669,
+      "heard": "Waschen",
+      "endDb": -58.4
+    },
+    {
+      "file": "db901292c404.m4a",
+      "text": "der Zentimeter, die Zentimeter",
+      "voice": "Anna",
+      "seed": 20650835,
+      "heard": "Der Zentimeter die Zentimeter.",
+      "endDb": -52.8
+    },
+    {
+      "file": "e5c357cf5e6f.m4a",
+      "text": "die Treppe, die Treppen",
+      "voice": "Anna",
+      "seed": 20868205,
+      "heard": "Die Treppe, die Treppen",
+      "endDb": -61.5
+    },
+    {
+      "file": "e94bafa49e37.m4a",
+      "text": "laufen",
+      "voice": "Anna",
+      "seed": 20897077,
+      "heard": "laufen",
+      "endDb": -41.5
+    },
+    {
+      "file": "f098a82f080d.m4a",
+      "text": "die Ankunft, die Ankünfte",
+      "voice": "Anna",
+      "seed": 20626635,
+      "heard": "Die Ankunft, die Ankünfte",
+      "endDb": -53.1
+    },
+    {
+      "file": "f0d8a90ad673.m4a",
+      "text": "hoch",
+      "voice": "Anna",
+      "seed": 20930882,
+      "heard": "Hoch!",
+      "endDb": -51.1
+    },
+    {
+      "file": "f400aa686dc2.m4a",
+      "text": "das Praktikum, die Praktika",
+      "voice": "Anna",
+      "seed": 20416849,
+      "heard": "Das Praktikum. Die Praktika.",
+      "endDb": -52.7
+    },
+    {
+      "file": "f45989d4bfbb.m4a",
+      "text": "fremd",
+      "voice": "Anna",
+      "seed": 20964857,
+      "heard": "Fremd",
+      "endDb": -68.7
+    },
+    {
+      "file": "f7aed0cb7e3f.m4a",
+      "text": "der Anschluss, die Anschlüsse",
+      "voice": "Anna",
+      "seed": 20644093,
+      "heard": "Der Anschluss, die Anschlüsse.",
+      "endDb": -66.0
+    },
+    {
+      "file": "f9821fbfcd70.m4a",
+      "text": "der Eintritt, die Eintritte",
+      "voice": "Anna",
+      "seed": 20997311,
+      "heard": "Der Eintritt, die Eintritte",
+      "endDb": -61.7
+    },
+    {
+      "file": "fb7c1f01cdc6.m4a",
+      "text": "wichtig",
+      "voice": "Anna",
+      "seed": 21005252,
+      "heard": "Wichtig!",
+      "endDb": -54.0
+    },
+    {
+      "file": "fe795dd0a08d.m4a",
+      "text": "aussehen",
+      "voice": "Anna",
+      "seed": 20712621,
+      "heard": "Aussehen",
+      "endDb": -52.6
+    }
+  ]
+}

@@ -75,6 +75,7 @@ const hatschi: SceneNode[] = [
       no("Gute Nacht, Hauke!", "Сейчас утро. Больному — Gute Besserung."),
     ],
   },
+  narr("Хауке пытается {aussehen} бодрым, но выглядит {schlecht}. Тут и {glueck} не поможет — Дана уже несёт градусник."),
   {
     t: "type",
     rule: ["gesundheit/muessen-2"],
@@ -101,7 +102,8 @@ const hatschi: SceneNode[] = [
       no("Хауке поедет к врачу вместе со всеми", "Хауке велено лежать в постели."),
     ],
   },
-  { t: "game", task: "Хауке диктует из-под пледа, что у него болит. Разложите слова по ящикам Йенсена.", hint: HINT_DOCK, c: docks(["der Kopf", "das Auge", "das Ohr", "die Nase", "der Zahn", "der Hals", "der Arm", "die Hand"]) },
+  narr("Хауке болеет громко. Болит всё: голова, горло, {mund}. Только {haar}, говорит, в порядке."),
+  { t: "game", task: "Хауке диктует из-под пледа, что у него болит. Разложите слова по ящикам Йенсена.", hint: HINT_DOCK, c: docks(["der Kopf", "das Auge", "das Ohr", "die Nase", "der Zahn", "der Hals", "der Arm", "die Hand", "der Bauch", "der Mund", "das Haar"]) },
   mateo("Hauke ist krank? Ich koche Suppe! Iss, Hauke!", "Хауке болеет? Я варю суп! Ешь, Хауке!"),
   { t: "gap", rule: ["gesundheit/imperativ-3"], task: "Что говорит Матео?", text: "___ die Suppe, Hauke!", options: ["Iss", "Isst", "Esse"], answer: "Iss", ru: "Ешь суп, Хауке!" },
   {
@@ -207,6 +209,7 @@ const praxis: SceneNode[] = [
       no("Йенсен позвал вас запиской", "Йенсен ещё не знает, что вы здесь."),
     ],
   },
+  narr("На стене Wartezimmer — плакат: {zigarette}, перечёркнутая. Rauchen verboten!"),
   {
     t: "game",
     task: "На дверях практики длинные слова. Соберите каждое из частей и выберите род.",
@@ -402,6 +405,7 @@ const sommerS: SceneNode[] = [
     answer: "soll",
     ru: "Господину Йенсену велено пить много чая.",
   },
+  narr("У Йенсена всё {normal}: температура 36,6. Он почти {gluecklich}: молчать он умеет лучше всех."),
   {
     t: "game",
     rule: ["moin/sollen-1"],
@@ -420,6 +424,7 @@ const sommerS: SceneNode[] = [
       { icon: "🍵", de: "der Tee", ru: "чай", note: "Третья кружка за утро. Наконец-то по рецепту." },
     ],
   },
+  narr("Доктор Зоммер не {boese}, просто строгий. Его любимый глагол — {empfehlen}: чай, сон, тишина."),
   elif("Eine ganze Seite! Herr Jensen, Sie schreiben heute wie ein Buch!", "Целая страница! Господин Йенсен, вы сегодня пишете, как книга!"),
   {
     t: "reply",
@@ -499,6 +504,7 @@ const sommerS: SceneNode[] = [
     answers: ["Er soll viel Tee trinken.", "Herr Jensen soll viel Tee trinken.", "Er soll zu Hause bleiben.", "Herr Jensen soll zu Hause bleiben."],
     ru: "Ему велено пить много чая.",
   },
+  narr("Врачу {wichtig} одно: молчать. Говорить пока не {moeglich} — до субботы."),
   {
     t: "clue",
     title: "Bis Samstag",
@@ -545,7 +551,7 @@ const apotheke: SceneNode[] = [
   },
   frauke("Nur bis Samstag? Gut! Das sage ich dem ganzen Hafen!", "Только до субботы? Хорошо! Это я скажу всей гавани!"),
   narr("An der Tür: die Möwe. Sie sieht das Rezept in Danas Hand — und weg ist es!"),
-  { t: "game", task: `Отнимите рецепт у чайки! ${RACE}`, hint: HINT_RACE, outcome: RACE_STAKES, c: race(["die Tablette", "das Medikament", "der Arzt", "die Praxis", "der Termin", "krank"]) },
+  { t: "game", task: `Отнимите рецепт у чайки! ${RACE}`, hint: HINT_RACE, outcome: RACE_STAKES, c: race(["die Tablette", "das Medikament", "der Arzt", "die Praxis", "der Termin", "krank", "rauchen", "wehtun", "der Husten", "der Schnupfen"]) },
   elif("Möwen werden nicht krank. Sie braucht kein Rezept!", "Чайки не болеют. Рецепт ей не нужен!"),
   { t: "gap", task: "Что говорит Элиф о чайке?", text: "Die Möwe braucht kein ___.", options: ["Rezept", "Bett", "Termin"], answer: "Rezept", ru: "Чайке не нужен рецепт." },
   narr("Грета выходит из лифта: der Rücken ist besser. Она протягивает Элиф записку — впервые длинную."),
