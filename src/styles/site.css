@@ -217,8 +217,7 @@ html:has(.topbar-lesson) {
   margin-top: 0;
 }
 
-.home-actions a:not(.cta),
-.home-practice a {
+.home-actions a:not(.cta) {
   text-underline-offset: 5px;
 }
 
@@ -762,14 +761,8 @@ html:has(.topbar-lesson) {
   background: var(--panel);
 }
 
-.how-grid span {
-  font-family: var(--mono);
-  font-size: 11px;
-  color: var(--accent);
-}
-
 .how-grid h3 {
-  margin: 8px 0 8px;
+  margin: 0 0 8px;
   font-size: 18px;
 }
 
@@ -780,20 +773,68 @@ html:has(.topbar-lesson) {
   color: var(--muted);
 }
 
-.home-practice {
-  max-width: 760px;
-  margin-top: 40px;
+/* Главная: чем курс помогает — снимок из игры и текст, стороны чередуются. */
+.method-list {
+  display: grid;
+  gap: clamp(56px, 10vh, 104px);
+  margin: clamp(48px, 8vh, 80px) 0;
+  padding: 0;
+  list-style: none;
 }
 
-.home-practice h3 {
-  margin: 0 0 12px;
-  font-size: 22px;
+.method-list li {
+  display: grid;
+  grid-template-columns: 300px minmax(0, 520px);
+  justify-content: center;
+  align-items: center;
+  gap: 24px clamp(32px, 6vw, 88px);
 }
 
-.home-practice p {
+.method-list li:nth-child(even) {
+  grid-template-columns: minmax(0, 520px) 300px;
+}
+
+.method-list li:nth-child(even) img {
+  grid-area: 1 / 2;
+}
+
+.method-list li:nth-child(even) div {
+  grid-area: 1 / 1;
+}
+
+.method-list img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line-strong);
+  border-radius: 20px;
+}
+
+.method-list span {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--accent);
+}
+
+.method-list h3 {
+  margin: 10px 0 14px;
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 650;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.method-list p {
   margin: 0;
-  line-height: 1.6;
+  font-size: 18px;
   color: var(--muted);
+}
+
+.method-list .method-note {
+  margin-top: 14px;
+  padding-left: 14px;
+  border-left: 2px solid var(--accent-line);
+  font-size: 15.5px;
+  color: var(--text);
 }
 
 /* Уровень: маршрут тем */
@@ -1084,6 +1125,21 @@ li[data-done] .stop-dot {
   .home-hero,
   .ladder {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .method-list li,
+  .method-list li:nth-child(even) {
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: start;
+  }
+
+  .method-list li:nth-child(even) img,
+  .method-list li:nth-child(even) div {
+    grid-area: auto;
+  }
+
+  .method-list img {
+    max-width: 320px;
   }
 
   .ladder li {
