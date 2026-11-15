@@ -1,6 +1,7 @@
 import { an, ANSWER, ASK, bingo, docks, gaps, gruss, gull as race, HEAR, HINT_DOCK, HINT_HEAR, HINT_LETTER, HINT_LOCK, HINT_ORAL, HINT_PICTURE, HINT_RACE, HINT_SAY, letter, lock, odd, oral, order, pairs, RACE, RACE_STAKES, reply as oralReply, say as oralSay, scene, sort, speak, spot, verdict, write } from "../build.ts";
 import { phrases } from "../data.ts";
 import type { Challenge, Episode, SceneNode } from "../types.ts";
+import { back } from "./back.ts";
 
 // Глава 2 в формате сцен (A1-PLOT.md, «Формат сцен»): числа, алфавит, haben. Вопрос главы —
 // чья бирка. Вход — бирка с оторванным углом, выход — комната 12, телефон Нильса, фото
@@ -810,7 +811,7 @@ export const sceneChapter2: Episode = {
       prompt: "Гостевая книга, чайка с номером и автоответчик Нильса.",
       hint: "По буквам: E — «э», I — «и», Z — «цэт».",
       success: "У вас номер Нильса, у чайки — свой номер, а у Нильса — перерыв.",
-      challenge: play(guestbook),
+      challenge: play(back(guestbook, 2, 0)),
     },
     {
       id: "02-i1",
@@ -847,7 +848,7 @@ export const sceneChapter2: Episode = {
       prompt: "Регистрация экипажа и слово на банке.",
       hint: "fest — «крепкий»: wasserfest — не боится воды.",
       success: "День второй закончен. Завтра — фото Opa. Noch zehn Tage.",
-      challenge: play(evening),
+      challenge: play(back(evening, 2, 1)),
     },
   ],
 };

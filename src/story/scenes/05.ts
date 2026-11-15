@@ -1,6 +1,7 @@
 import { an, ANSWER, ASK, bingo, docks, gaps, gruss, gull as race, HINT_DOCK, HINT_HEAR, HINT_LETTER, HINT_LOCK, HINT_ODD, HINT_ORAL, HINT_PICTURE, HINT_RACE, HINT_SAY, HINT_SPELL, letter, letters, lock, odd, oral, order, pairs, RACE, RACE_STAKES, reply as oralReply, REQUEST, say as oralSay, scene, sort, speak, verdict, write } from "../build.ts";
 import { phrases } from "../data.ts";
 import type { ChatTurn, Challenge, Episode, SceneNode } from "../types.ts";
+import { back } from "./back.ts";
 
 // Глава 5 в формате сцен (A1-PLOT.md, «Формат сцен»): покупки и одежда, цены и количества, ihn/sie/es,
 // welcher, zu groß. Вопрос главы — кто купил краску. Вход — салфетка «Farbe?» и записка Нильса
@@ -876,7 +877,7 @@ export const sceneChapter5: Episode = {
       prompt: "Рынок: яблоко Греты, лук Матео и упаковка Нильса.",
       hint: "zwei Kilo Zwiebeln, ein Pfund Tomaten: мера стоит прямо перед словом.",
       success: "Грета вернула яблоко с отпечатком краски. Матео купил лук и молчит зачем.",
-      challenge: play(market),
+      challenge: play(back(market, 5, 0)),
     },
     {
       id: "05-i1",
@@ -913,7 +914,7 @@ export const sceneChapter5: Episode = {
       prompt: "Вечер у киоска, слух о Нильсе и голосовое Йенсена.",
       hint: "Ich finde sie zu lang: die Hose → sie.",
       success: "День пятый закончен. Завтра — голосовое Йенсена и время на чеке. Noch sieben Tage.",
-      challenge: play(evening),
+      challenge: play(back(evening, 5, 1)),
     },
   ],
 };

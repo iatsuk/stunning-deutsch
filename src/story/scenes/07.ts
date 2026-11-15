@@ -1,6 +1,7 @@
 import { an, ANSWER, ASK, bingo, docks, gaps, gruss, gull as race, HINT_DOCK, HINT_HEAR, HINT_LETTER, HINT_LOCK, HINT_ODD, HINT_ORAL, HINT_PICTURE, HINT_RACE, HINT_SAY, HINT_SPELL, letter, letters, lock, odd, oral, order, pairs, RACE, RACE_STAKES, reply as oralReply, REQUEST, say as oralSay, scene, sort, speak, verdict, write } from "../build.ts";
 import { phrases } from "../data.ts";
 import type { Challenge, ChatTurn, Episode, SceneNode } from "../types.ts";
+import { back } from "./back.ts";
 
 // Глава 7 в формате сцен (A1-PLOT.md, «Формат сцен»): досуг и встречи, können и wollen, инфинитив
 // в конце, gern, lieber, am liebsten, пригласить и отказаться. Вопрос главы — как поговорить с
@@ -811,7 +812,7 @@ export const sceneChapter7: Episode = {
       prompt: "Нильс зовёт весь клуб, фрау Петерсен — с формуляром, Фрауке — со слухом.",
       hint: "Wer kann mitkommen? — с модальным глаголом приставка не отрывается.",
       success: "Разговор с Йенсеном превратился в праздник всего клуба.",
-      challenge: play(party),
+      challenge: play(back(party, 7, 0)),
     },
     {
       id: "07-s4",
@@ -848,7 +849,7 @@ export const sceneChapter7: Episode = {
       prompt: "Вечер в клубе, речь как на экзамене и ключ от подвала.",
       hint: "Kannst du schwimmen? — модальный глагол первый, инфинитив в конце.",
       success: "День седьмой закончен. Завтра в восемь — подвал. Noch fünf Tage.",
-      challenge: play(evening),
+      challenge: play(back(evening, 7, 1)),
     },
   ],
 };

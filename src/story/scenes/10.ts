@@ -1,6 +1,7 @@
 import { an, ANSWER, ASK, bingo, docks, gaps, gruss, gull as race, HINT_DOCK, HINT_HEAR, HINT_LETTER, HINT_LOCK, HINT_ODD, HINT_ORAL, HINT_PICTURE, HINT_RACE, HINT_SAY, letter, lock, odd, oral, order, RACE, RACE_STAKES, reply as oralReply, REQUEST, say as oralSay, scene, sort, speak, verdict, write } from "../build.ts";
 import { phrases } from "../data.ts";
 import type { Challenge, Episode, SceneNode } from "../types.ts";
+import { back } from "./back.ts";
 
 // Глава 10 в формате сцен (A1-PLOT.md, «Формат сцен»): здоровье и врач, части тела, «у меня болит»,
 // müssen и dürfen, повелительное на du и ihr, а сверх уроков — sollen и сводная таблица модальных
@@ -752,7 +753,7 @@ export const sceneChapter10: Episode = {
       prompt: "Йенсен пишет, Грета держится за спину, Дана прячется за журналом.",
       hint: "Er darf nicht sprechen. — нельзя: nicht dürfen.",
       success: "Йенсену нельзя говорить, у Греты болит спина: табличка тяжёлая.",
-      challenge: play(warten),
+      challenge: play(back(warten, 10, 0)),
     },
     {
       id: "10-s4",
@@ -779,7 +780,7 @@ export const sceneChapter10: Episode = {
       prompt: "Вечер в клубе: суп Матео, голосовое фрау Петерсен и все модальные глаголы.",
       hint: "Was soll Elif mitbringen? — ответ в том, что сказала фрау Петерсен.",
       success: "День десятый закончен. Завтра в одиннадцать — мастерская. Noch zwei Tage.",
-      challenge: play(abend),
+      challenge: play(back(abend, 10, 1)),
     },
   ],
 };

@@ -1,6 +1,7 @@
 import { an, ANSWER, ASK, bingo, docks, gaps, gruss, gull as race, HINT_DOCK, HINT_HEAR, HINT_LETTER, HINT_LOCK, HINT_ODD, HINT_ORAL, HINT_RACE, HINT_SAY, HINT_SPELL, letter, letters, lock, odd, oral, order, pairs, RACE, RACE_STAKES, reply as oralReply, REQUEST, say as oralSay, sort, speak, spot, verdict, write } from "../build.ts";
 import { phrases } from "../data.ts";
 import type { Challenge, Episode, SceneNode } from "../types.ts";
+import { back } from "./back.ts";
 
 // Глава 6 в формате сцен (A1-PLOT.md, «Формат сцен»): время и распорядок дня, halb sechs, um, am,
 // von … bis, отделяемые приставки. Вопрос главы — когда исчезла табличка. Вход — чек (17:05) и
@@ -867,7 +868,7 @@ export const sceneChapter6: Episode = {
       prompt: "Элиф, Матео и фрау Петерсен: кто где был в 17:30.",
       hint: "aufhören, zumachen: корень на втором месте, приставка — в конце.",
       success: "Йенсен сам позвал весь клуб на чай, а в шесть закрыл клуб.",
-      challenge: play(witnesses),
+      challenge: play(back(witnesses, 6, 0)),
     },
     {
       id: "06-i1",
@@ -904,7 +905,7 @@ export const sceneChapter6: Episode = {
       prompt: "Ливень в конце рабочего дня, часы Нильса и закрытая дверь Йенсена.",
       hint: "Wann stehst du auf? — корень второй, приставка в конце.",
       success: "День шестой закончен. Йенсен избегает разговора. Noch sechs Tage.",
-      challenge: play(evening),
+      challenge: play(back(evening, 6, 1)),
     },
   ],
 };

@@ -1,6 +1,7 @@
 import { an, ANSWER, ASK, bingo, gruss, gull as race, HINT_HEAR, HINT_LETTER, HINT_LOCK, HINT_ORAL, HINT_RACE, letter, lock, oral, order, pairs, RACE, RACE_STAKES, reply as oralReply, REQUEST, say as oralSay, sort, verdict, write } from "../build.ts";
 import { phrases } from "../data.ts";
 import type { Challenge, Episode, SceneNode } from "../types.ts";
+import { back } from "./back.ts";
 
 // Глава 12 в формате сцен (A1-PLOT.md, «Формат сцен»): поездки, погода, даты, Perfekt с sein. Вопрос
 // главы — успеем ли к старту. Вход — мокрая краска, дождь и тайна; выход — табличка на месте, вы
@@ -773,7 +774,7 @@ export const sceneChapter12: Episode = {
       prompt: "В отеле — сушильная и Opa Hansen, который хочет увидеть табличку.",
       hint: "Wie sind Sie gefahren? — fahren: sein.",
       success: "Opa ничего не видел, а табличка сохнет.",
-      challenge: play(hotel),
+      challenge: play(back(hotel, 12, 0)),
     },
     {
       id: "12-s4",
@@ -800,7 +801,7 @@ export const sceneChapter12: Episode = {
       prompt: "Праздник столетия, торт MOIN и вся история по-немецки.",
       hint: "Ich habe Deutsch gelernt. Ich bin nach Kiel gekommen.",
       success: "Дело о пропавшем Moin закрыто. Moin.",
-      challenge: play(party),
+      challenge: play(back(party, 12, 1)),
     },
   ],
 };

@@ -1,6 +1,7 @@
 import { an, ANSWER, ASK, bingo, docks, gaps, gruss, gull as race, HINT_DOCK, HINT_HEAR, HINT_LETTER, HINT_LOCK, HINT_ODD, HINT_ORAL, HINT_PICTURE, HINT_RACE, HINT_SAY, HINT_SPELL, letter, letters, lock, odd, oral, order, pairs, RACE, RACE_STAKES, reply as oralReply, REQUEST, say as oralSay, scene, sort, speak, spot, verdict, write } from "../build.ts";
 import { phrases } from "../data.ts";
 import type { ChatTurn, Challenge, Episode, SceneNode } from "../types.ts";
+import { back } from "./back.ts";
 
 // Глава 4 в формате сцен (A1-PLOT.md, «Формат сцен»): еда и напитки, möchten, винительный падеж
 // (einen, keinen), nicht или kein. Вопрос главы — с кем встречалась Грета. Вход — «Greta ist morgen
@@ -835,7 +836,7 @@ export const sceneChapter4: Episode = {
       prompt: "Сообщение Нильса, рассказ Фрауке и её касса.",
       hint: "kein — перед существительным: keinen Tee. nicht — перед остальным: nicht gern.",
       success: "Ни Матео, ни Нильс. Собеседник Греты высокий, молчит и пьёт чай.",
-      challenge: play(witnesses),
+      challenge: play(back(witnesses, 4, 0)),
     },
     {
       id: "04-i1",
@@ -872,7 +873,7 @@ export const sceneChapter4: Episode = {
       prompt: "Ужин у фургона Дерьи, слух о Нильсе и вопрос о краске.",
       hint: "Ich esse kein Fleisch: без артикля — kein.",
       success: "День четвёртый закончен. Завтра — магазин. Noch acht Tage.",
-      challenge: play(evening),
+      challenge: play(back(evening, 4, 1)),
     },
   ],
 };

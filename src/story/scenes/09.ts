@@ -1,6 +1,7 @@
 import { an, ANSWER, ASK, bingo, docks, gaps, gruss, gull as race, HINT_DOCK, HINT_HEAR, HINT_LETTER, HINT_LOCK, HINT_ODD, HINT_ORAL, HINT_PICTURE, HINT_RACE, HINT_SAY, letter, lock, odd, oral, order, RACE, RACE_STAKES, reply as oralReply, REQUEST, say as oralSay, scene, sort, spot, verdict } from "../build.ts";
 import { phrases } from "../data.ts";
 import type { Challenge, Episode, SceneNode } from "../types.ts";
+import { back } from "./back.ts";
 
 // Глава 9 в формате сцен (A1-PLOT.md, «Формат сцен»): город и транспорт, mit/zu/bei/nach с
 // дательным, zum/zur, повелительное наклонение на Sie, zu Hause / nach Hause. Вопрос главы — как
@@ -897,7 +898,7 @@ export const sceneChapter9: Episode = {
       prompt: "Gaarden: Нильс пишет «налево», Матео говорит «направо».",
       hint: "an der zweiten Ampel — где? an + дательный.",
       success: "Команда пошла налево — по тексту Нильса.",
-      challenge: play(ampel),
+      challenge: play(back(ampel, 9, 0)),
     },
     {
       id: "09-s4",
@@ -924,7 +925,7 @@ export const sceneChapter9: Episode = {
       prompt: "Автобус домой, чайка, речь как на экзамене и новость от Греты.",
       hint: "Wo? — zu Hause, wohin? — nach Hause.",
       success: "День девятый закончен. Завтра в десять — у врача. Noch drei Tage.",
-      challenge: play(abend),
+      challenge: play(back(abend, 9, 1)),
     },
   ],
 };

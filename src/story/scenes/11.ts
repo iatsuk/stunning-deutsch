@@ -1,6 +1,7 @@
 import { an, ANSWER, ASK, bingo, docks, gaps, gruss, gull as race, HINT_DOCK, HINT_HEAR, HINT_LETTER, HINT_LOCK, HINT_ODD, HINT_ORAL, HINT_RACE, HINT_SAY, letter, lock, odd, oral, order, RACE, RACE_STAKES, reply as oralReply, REQUEST, say as oralSay, sort, speak, verdict } from "../build.ts";
 import { phrases } from "../data.ts";
 import type { Challenge, Episode, SceneNode } from "../types.ts";
+import { back } from "./back.ts";
 
 // Глава 11 в формате сцен (A1-PLOT.md, «Формат сцен»): работа и профессии, женские формы на -in,
 // Perfekt с haben, war и hatte. Вопрос главы — что произошло за неделю. Вход — встреча с Гретой и
@@ -779,7 +780,7 @@ export const sceneChapter11: Episode = {
       prompt: "Зачем был нужен секрет: Opa, фирма и фото 1976 года.",
       hint: "Waren Sie 1976 auch da? — «были» — war.",
       success: "Столетие клуба, отказ фирме и сюрприз для Opa Hansen.",
-      challenge: play(warum),
+      challenge: play(back(warum, 11, 0)),
     },
     {
       id: "11-s4",
@@ -806,7 +807,7 @@ export const sceneChapter11: Episode = {
       prompt: "Ночь перед последним днём: письмо с Гельголанда и речь как на экзамене.",
       hint: "Gestern hatte ich keine Zeit. — hatte + kein.",
       success: "День одиннадцатый закончен. Noch ein Tag.",
-      challenge: play(nacht),
+      challenge: play(back(nacht, 11, 1)),
     },
   ],
 };

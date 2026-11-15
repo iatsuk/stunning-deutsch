@@ -1,6 +1,7 @@
 import { an, ANSWER, ASK, bingo, chat, docks, gaps, gruss, HINT_DOCK, HINT_HEAR, HINT_LETTER, HINT_LOCK, HINT_ODD, HINT_ORAL, HINT_PICTURE, HINT_SAY, HINT_SPELL, letter, letters, lock, odd, oral, order, pairs, reply as oralReply, REQUEST, say as oralSay, scene, sort, speak, spot, turn, verdict, write } from "../build.ts";
 import { phrases } from "../data.ts";
 import type { Challenge, Episode, SceneNode } from "../types.ts";
+import { back } from "./back.ts";
 
 // Глава 8 в формате сцен (A1-PLOT.md, «Формат сцен»): жильё, дательный на вопрос «где?» (im, in der,
 // auf dem), этажи и порядковые числа, сложные слова, прилагательное после sein. Вопрос главы — где
@@ -880,7 +881,7 @@ export const sceneChapter8: Episode = {
       prompt: "Дом у гавани: почтовые ящики, хозяин дома и записка на двери подвала.",
       hint: "Wir sind im Treppenhaus. — in + dem = im.",
       success: "Йенсен ждал в своём подвале, а вы — в клубном. «Heute nicht. Leider. Moin.»",
-      challenge: play(stairs),
+      challenge: play(back(stairs, 8, 0)),
     },
     {
       id: "08-s4",
@@ -907,7 +908,7 @@ export const sceneChapter8: Episode = {
       prompt: "Вечер в клубе: чайка на чужом стуле, речь как на экзамене и план на завтра.",
       hint: "Ist die Werkstatt morgen offen? — глагол первым.",
       success: "День восьмой закончен. Завтра — Gaarden. Noch vier Tage.",
-      challenge: play(evening),
+      challenge: play(back(evening, 8, 1)),
     },
   ],
 };

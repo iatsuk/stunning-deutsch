@@ -1,6 +1,7 @@
 import { an, ANSWER, ASK, bingo, docks, gaps, gruss, gull as race, HINT_DOCK, HINT_HEAR, HINT_LETTER, HINT_LOCK, HINT_ODD, HINT_ORAL, HINT_PICTURE, HINT_RACE, HINT_SAY, letter, lock, odd, oral, order, pairs, RACE, RACE_STAKES, reply as oralReply, say as oralSay, scene, sort, speak, spot, verdict } from "../build.ts";
 import { phrases } from "../data.ts";
 import type { Challenge, Episode, SceneNode } from "../types.ts";
+import { back } from "./back.ts";
 
 // Глава 3 в формате сцен (A1-PLOT.md, «Формат сцен»): семья, mein / dein / sein / ihr / unser,
 // kein, множественное число. Вопрос главы — кто связан с табличкой. Вход — обещанное фото Opa,
@@ -874,7 +875,7 @@ export const sceneChapter3: Episode = {
       prompt: "Йенсен, папка «1976» и кухня Матео.",
       hint: "sein — его, ihr — её: seine Frau, ihr Kuchen.",
       success: "Карточку друга кто-то вынул, Матео прячет заказ, а Йенсен ответил одним словом.",
-      challenge: play(memories),
+      challenge: play(back(memories, 3, 0)),
     },
     {
       id: "03-i1",
@@ -911,7 +912,7 @@ export const sceneChapter3: Episode = {
       prompt: "День рождения Opa, открытка из Киля и вопрос, на который нельзя ответить.",
       hint: "Ihr Freund — вежливо, dein Freund — на «ты».",
       success: "День третий закончен. Завтра — кафе. Noch neun Tage.",
-      challenge: play(ninety),
+      challenge: play(back(ninety, 3, 1)),
     },
   ],
 };

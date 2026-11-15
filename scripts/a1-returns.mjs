@@ -1,6 +1,7 @@
 // Планировщик возвращений (A1-PLAN.md, этап 3): раскладывает слова прошлых глав, которым не хватает
-// встреч, по раундам перед главой. Раунд одинаков для всех игроков и считается частью главы, поэтому
-// каждое место в нём даёт слову встречу, действие, а часто и новую главу и прослушивание.
+// встреч, по раундам перед главой и по играм возвращения в сценах 3 и 6 каждой главы
+// (src/story/scenes/back.ts): причалы до 12 существительных и лото ровно на 9 слов. И то и другое одинаково у всех игроков и считается частью главы, поэтому
+// каждое место даёт слову встречу, действие, а часто и новую главу и прослушивание.
 //   node scripts/a1-returns.mjs          — показать план и прогноз
 //   node scripts/a1-returns.mjs --write  — записать его в src/story/scenes/warmups.ts
 import { readFileSync, writeFileSync } from "node:fs";
@@ -69,63 +70,108 @@ for (const w of index.words) {
 const kept = new Set(JSON.parse(readFileSync(BASELINE, "utf8")).words);
 plans.sort((a, b) => kept.has(b.w.key) - kept.has(a.w.key) || a.slots - b.slots || a.met - b.met || a.w.key.localeCompare(b.w.key, "de"));
 
+// В главе: три игры раунда перед ней и два блока возвращений в сценах — причалы и гонка чайки.
+const BLOCKS = 2;
 const games = Object.fromEntries(
   Object.entries(ROUNDS)
     .filter(([n]) => Number(n) <= last)
-    .map(([n, mechs]) => [n, mechs.map((mech) => ({ mech, words: [] }))]),
+    .map(([n, mechs]) => [
+      n,
+      [
+        ...mechs.map((mech) => ({ mech, words: [], where: "w", min: SIZE[mech][0], max: SIZE[mech][1] })),
+        ...Array.from({ length: BLOCKS }, (_, b) => [
+          { mech: "docks", words: [], where: b, min: 4, max: 12 },
+          // Лото в сцене — ровно 3 × 3.
+          { mech: "bingo", words: [], where: b, min: 9, max: 9 },
+        ]).flat(),
+      ],
+    ]),
 );
-const taken = new Set();
 const room = (g, unit) =>
-  g.words.length < SIZE[g.mech][1] &&
+  !g.closed &&
+  g.words.length < g.max &&
   fits(g.mech, unit) &&
+  !g.words.includes(unit) &&
   !((g.mech === "gull" || g.mech === "pairs") && g.words.some((x) => meaning(lookup(x).ru) === meaning(lookup(unit).ru)));
 // Причалы — для существительных, буквы — для коротких слов, пары — только тем, кто уже звучал.
 const PREFER = ["docks", "letters", "gull", "bingo", "pairs"];
+// Интервалы растут: следующая глава, через две, через пять.
+const STEPS = [1, 3, 6, 2, 4, 5, 7, 8, 9, 10, 11];
 
-for (const p of plans) {
-  if (taken.has(p.unit)) continue;
-  taken.add(p.unit);
-  let need = p.slots;
-  let heard = p.heard;
-  const used = new Set();
-  // Интервалы растут: следующая глава, через две, через пять.
-  for (const step of [1, 3, 6, 2, 4, 5, 7, 8, 9, 10, 11]) {
-    if (need <= 0) break;
+/** Ставит слово в игры, пока ему не хватает мест; каждая глава — не больше одного раза. */
+function place(p) {
+  for (const step of STEPS) {
+    if (p.need <= 0) return;
     const n = p.met + step;
-    if (!games[n] || used.has(n)) continue;
-    const newChapter = !p.chapters.has(n);
-    const chaptersShort = T.chapters - p.chapters.size > 0;
-    if (!newChapter && chaptersShort) continue;
-    const order = PREFER.filter((m) => heard || HEARD.has(m));
-    const game = order.map((m) => games[n].find((g) => g.mech === m)).find((g) => g && room(g, p.unit));
+    if (!games[n] || p.used.has(n)) continue;
+    if (p.chapters.has(n) && T.chapters - p.chapters.size > 0) continue;
+    const order = PREFER.filter((m) => p.heard || HEARD.has(m));
+    const game = order.flatMap((m) => games[n].filter((g) => g.mech === m)).find((g) => room(g, p.unit));
     if (!game) continue;
     game.words.push(p.unit);
-    used.add(n);
+    p.used.add(n);
     p.chapters.add(n);
-    heard ||= HEARD.has(game.mech);
-    need--;
+    p.heard ||= HEARD.has(game.mech);
+    p.need--;
   }
 }
 
-// Игра меньше своего минимума не собирается: её слова переходят в соседнюю игру раунда, если влезут.
-for (const list of Object.values(games))
-  for (const g of list) {
-    if (g.words.length >= SIZE[g.mech][0]) continue;
-    for (const w of g.words.splice(0)) list.find((o) => o !== g && o.words.length >= SIZE[o.mech][0] && room(o, w))?.words.push(w);
-  }
+const unique = plans.filter((p, i) => plans.findIndex((q) => q.unit === p.unit) === i);
+for (const p of unique) Object.assign(p, { need: p.slots, used: new Set(), base: new Set(p.chapters), baseHeard: p.heard });
+for (const p of unique) place(p);
 
+// Игра меньше своего минимума не собирается: она закрывается, а её слова ищут место заново — в
+// другой игре той же главы или в другой главе. Повторяем, пока все игры не наберут минимум.
+const byUnit = new Map(unique.map((p) => [p.unit, p]));
+for (let round = 0; round < 20; round++) {
+  const small = Object.values(games).flat().filter((g) => !g.closed && g.words.length && g.words.length < g.min);
+  if (!small.length) break;
+  const moved = [];
+  for (const g of small) {
+    g.closed = true;
+    moved.push(...g.words.splice(0).map((w) => [w, g]));
+  }
+  for (const [w, g] of moved) {
+    const p = byUnit.get(w);
+    const n = Number(Object.entries(games).find(([, all]) => all.includes(g))[0]);
+    p.used.delete(n);
+    // Пересчёт: главы и слух — из исходного индекса и оставшихся мест.
+    const placed = Object.entries(games).filter(([, all]) => all.some((o) => !o.closed && o.words.includes(w)));
+    p.chapters = new Set([...p.base, ...placed.map(([k]) => Number(k))]);
+    p.heard = p.baseHeard || placed.some(([, all]) => all.some((o) => !o.closed && o.words.includes(w) && HEARD.has(o.mech)));
+    p.need++;
+    place(p);
+  }
+}
+
+const list = (words) => `[${words.map((w) => JSON.stringify(w)).join(", ")}]`;
 const body = Object.entries(games)
-  .map(([n, list]) => {
-    const rows = list.filter((g) => g.words.length).map((g) => `    { mech: "${g.mech}", words: [${g.words.map((w) => JSON.stringify(w)).join(", ")}] },`);
+  .map(([n, all]) => {
+    const rows = all.filter((g) => g.where === "w" && g.words.length).map((g) => `    { mech: "${g.mech}", words: ${list(g.words)} },`);
     return rows.length ? `  ${n}: [\n${rows.join("\n")}\n  ],` : "";
   })
   .filter(Boolean)
+  .join("\n");
+const backs = Object.entries(games)
+  .map(([n, all]) => {
+    const rows = Array.from({ length: BLOCKS }, (_, b) => {
+      const of = (mech) => all.find((g) => g.where === b && g.mech === mech).words;
+      return `    { docks: ${list(of("docks"))}, bingo: ${list(of("bingo"))} },`;
+    });
+    return `  ${n}: [\n${rows.join("\n")}\n  ],`;
+  })
   .join("\n");
 const file = `import type { Warmup } from "../review.ts";
 
 // Раунд перед главой новой версии (A1-PLAN.md, «Повторение»): одинаковый для всех игроков, поэтому
 // индекс полноты засчитывает его игры как часть главы. Слова — из прошлых глав, которым не хватает
 // возвращений. Список собирает scripts/a1-returns.mjs --write; собранное можно править руками.
+
+/** Возвращения в сценах главы: два блока (середина и конец главы), в каждом причалы и лото. */
+export const RETURNS: Record<number, { docks: string[]; bingo: string[] }[]> = {
+${backs}
+};
+
 export const WARMUPS: Record<number, Warmup[]> = {
 ${body}
 };
@@ -133,7 +179,7 @@ ${body}
 
 const placed = Object.values(games).flatMap((l) => l.flatMap((g) => g.words)).length;
 console.log(`Ниже порога и можно вернуть: ${plans.length} слов. Мест в раундах занято: ${placed}.`);
-for (const [n, list] of Object.entries(games)) console.log(`  глава ${n}: ${list.map((g) => `${g.mech} ${g.words.length}`).join(", ")}`);
+for (const [n, all] of Object.entries(games)) console.log(`  глава ${n}: ${all.map((g) => `${g.where === "w" ? "" : `↩${g.where} `}${g.mech} ${g.words.length}`).join(", ")}`);
 if (process.argv.includes("--write")) {
   writeFileSync(OUT, file);
   console.log(`Записано: ${path.relative(root, OUT)}. Пересоберите индекс: pnpm content.`);

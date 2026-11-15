@@ -84,7 +84,15 @@ type SceneStep =
    * clean — без единой ошибки, sloppy — от двух ошибок (в гонке с чайкой — от двух упущенных
    * слов); одна ошибка мир не меняет. Так мир двигает то, как игрок сыграл, а не сценарий.
    */
-  | { t: "game"; task: string; c: Challenge; hint?: string; outcome?: Outcome };
+  | {
+      t: "game";
+      task: string;
+      c: Challenge;
+      hint?: string;
+      outcome?: Outcome;
+      /** Игра возвращения: её слова раздаёт планировщик (`src/story/scenes/back.ts`, A1-PLAN.md). */
+      back?: boolean;
+    };
 /** Последствия игры по её итогу. */
 export type Outcome = { clean?: Effects; sloppy?: Effects };
 export type Challenge =

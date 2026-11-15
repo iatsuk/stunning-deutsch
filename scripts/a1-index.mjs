@@ -66,6 +66,8 @@ function sceneUnits(warmups = true) {
     for (const beat of chapter.beats)
       for (const node of flatNodes(beat.challenge.nodes ?? [])) {
         if (node.t === "pic" || node.t === "when") continue;
+        // Игры возвращения раздаёт планировщик: без них он видит главы сами по себе.
+        if (!warmups && node.t === "game" && node.back) continue;
         const text = [...strings(node), ...lookNotes(node)].join("\n");
         const toks = tokens(text);
         if (!toks.length && !node.rule) continue;
@@ -323,7 +325,7 @@ function lineUnits(files) {
 
 // ——— Сборка ———
 
-/** warmups: false — без раундов перед главой: так планировщик возвращений (scripts/a1-returns.mjs) видит главы сами по себе. */
+/** warmups: false — без раундов перед главой и игр возвращения: так планировщик (scripts/a1-returns.mjs) видит главы сами по себе. */
 export function buildIndex({ warmups = true } = {}) {
   const reference = parse(readFileSync(path.join(root, "content/reference/start-deutsch-1.yaml"), "utf8"));
   const units = sceneUnits(warmups).map((u) => ({ ...u, set: new Set(u.toks) }));

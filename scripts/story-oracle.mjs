@@ -69,9 +69,16 @@ const power = (n) =>
           ? `${n} — сильнее, чем ожидали`
           : "20 — гипербола: в деле весь клуб";
 
-/** Существительные урока главы: предмет поворота. */
+/**
+ * Существительные урока главы: предмет поворота. У главы 13 «A1+» своего урока нет: предмет берётся из
+ * существительных, которые индекс полноты ещё не считает закреплёнными, — поворот сам их возвращает.
+ */
 function lessonNouns(n) {
   const file = readdirSync(path.join(root, "content/a1")).find((f) => f.startsWith(String(n).padStart(2, "0")));
+  if (!file) {
+    const index = JSON.parse(readFileSync(path.join(root, "src/generated/a1-index.json"), "utf8"));
+    return index.words.filter((w) => w.status !== "закреплено" && w.hits > 0 && /^(der|die|das) /.test(w.de)).map((w) => w.de);
+  }
   const topic = parse(readFileSync(path.join(root, "content/a1", file), "utf8"));
   return Object.values(topic.words)
     .flatMap((group) => group.items.map((w) => w.de))

@@ -6,7 +6,7 @@ import { lockKey } from "../src/story/logic.ts";
 import { grade } from "../src/story/memory.ts";
 import { buildReview, MECHS, pluralTraps, reviewSources, SCENE_INTERVALS, sceneUnits, warmupReview } from "../src/story/review.ts";
 import { sceneChapters } from "../src/story/scenes/index.ts";
-import { WARMUPS } from "../src/story/scenes/warmups.ts";
+import { RETURNS, WARMUPS } from "../src/story/scenes/warmups.ts";
 import { VERBS } from "../src/story/verbs.ts";
 
 // Повторение новой версии (A1-PLAN.md, «Повторение»): раунд из трёх игр разных механик.
@@ -129,4 +129,14 @@ test("the round before a chapter is fixed, playable and returns only words the p
     }
     assert.equal(warmupReview(games, lookup)?.games.length, games.length, `глава ${n}: раунд не собрался`);
   }
+  // Возвращения в сценах (src/story/scenes/back.ts) — тоже только встреченные раньше слова.
+  for (const [n, blocks] of Object.entries(RETURNS))
+    for (const { docks, bingo } of blocks) {
+      for (const w of [...docks, ...bingo]) {
+        assert.ok(lookup(w) && (dictionary[w]?.audio || byDe.has(w)), `глава ${n}: ${w} — нет перевода или записи`);
+        assert.ok(metAt.get(w) < Number(n), `глава ${n}: ${w} — игрок его ещё не встречал`);
+      }
+      for (const w of docks) assert.match(w, /^(der|die|das) /, `глава ${n}: ${w} — не существительное`);
+      assert.ok(bingo.length === 0 || bingo.length === 9, `глава ${n}: лото на ${bingo.length}`);
+    }
 });
