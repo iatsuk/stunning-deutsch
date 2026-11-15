@@ -186,6 +186,25 @@ html:has(.topbar-lesson) {
   filter: brightness(1.08);
 }
 
+/* Главная: текст слева, первая иллюстрация истории справа; на планшете и телефоне — под текстом. */
+.home-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 32px 48px;
+}
+
+.home-hero h1 {
+  font-size: clamp(36px, 4.6vw, 62px);
+}
+
+.home-hero img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+
 .home-actions {
   display: flex;
   flex-wrap: wrap;
@@ -198,15 +217,9 @@ html:has(.topbar-lesson) {
   margin-top: 0;
 }
 
-.home-actions button {
-  padding: 12px 0;
-  border: 0;
-  background: none;
-  color: var(--text);
-  font: inherit;
-  text-decoration: underline;
+.home-actions a:not(.cta),
+.home-practice a {
   text-underline-offset: 5px;
-  cursor: pointer;
 }
 
 .topic-facts {
@@ -1068,6 +1081,7 @@ li[data-done] .stop-dot {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .home-hero,
   .ladder {
     grid-template-columns: minmax(0, 1fr);
   }
@@ -1178,4 +1192,3 @@ li[data-done] .stop-dot {
   }
 }
 
-.moin-entry{margin:24px 0 32px;padding:22px 0;border-block:1px solid var(--line);max-width:680px}.moin-entry .kicker{font-size:10px}.moin-entry h3{margin:8px 0;font-family:var(--serif);font-size:25px;font-weight:500}.moin-entry p{font-size:15px;color:var(--muted);margin:8px 0}.moin-entry a{display:inline-block;margin-top:8px;color:var(--accent);font-size:15px;text-underline-offset:4px}.moin-entry .moin-links{display:flex;flex-wrap:wrap;gap:4px 24px}

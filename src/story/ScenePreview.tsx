@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Footer, Topbar, useTitle } from "../App";
 import { say, stopAudio } from "../hooks";
-import { PlayButton } from "../markup";
+import { PlayButton, plural } from "../markup";
 import { allWords, phraseAudio, wordInfo } from "./audio";
 import { ChallengeView } from "./ChallengeView";
 import { phrases } from "./data";
@@ -20,8 +20,7 @@ import type { Answer, Mark, SceneNode } from "./types";
 import { TRACKS, type World } from "./world";
 import "./story.css";
 
-// Прототип глав в формате сцен — отдельно от игры, чтобы автор мог сравнить форматы,
-// не трогая прогресс основной истории. Своё сохранение: sd-moin-neu-v1. Сцены всех глав идут
+// Курс A1: главы истории в формате сцен. Сохранение: sd-moin-neu-v1. Сцены всех глав идут
 // одним списком: новая глава добавляется в конец, и номера сохранённых сцен не сдвигаются.
 
 const KEY = "sd-moin-neu-v1";
@@ -132,7 +131,7 @@ function load(): Save {
 }
 
 export function ScenePreview() {
-  useTitle("Главы в сценах · прототип · Stunning Deutsch");
+  useTitle("Дело о пропавшем Moin · Курс A1 · Stunning Deutsch");
   const [save, setSave] = useState(load);
   // Открытое повторение держится до закрытия: после оценки очередь короче, но итог раунда виден.
   const [reviewing, setReviewing] = useState<ReviewReason | null>(null);
@@ -159,7 +158,7 @@ export function ScenePreview() {
       );
       localStorage.setItem(KEY, JSON.stringify({ ...save, v: 2, drafts }));
     } catch {
-      // Без хранилища прототип работает до перезагрузки.
+      // Без хранилища игра работает до перезагрузки.
     }
   }, [save]);
   useEffect(() => () => stopAudio(), []);
@@ -293,15 +292,14 @@ export function ScenePreview() {
       <Topbar
         crumbs={[
           { label: "A1", href: "#/a1" },
-          { label: "Moin", href: "#/a1/moin" },
-          { label: "Сцены" },
+          { label: "Moin" },
         ]}
       />
       <main className="moin-page">
         <header className="moin-game-heading">
           <div>
             <div className="kicker">
-              Прототип нового формата · главы 1–{chapters.length} в сценах
+              Курс A1 · {plural(chapters.length, ["глава", "главы", "глав"])}
             </div>
             <h1>Дело о пропавшем Moin</h1>
           </div>
@@ -450,7 +448,7 @@ export function ScenePreview() {
                       {save.at === last ? `Глава ${ci + 2} →` : "Следующая сцена →"}
                     </button>
                   ) : (
-                    <p>Это все сцены прототипа.</p>
+                    <p>Это все сцены истории.</p>
                   )}
                 </div>
               )}

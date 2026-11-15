@@ -10,7 +10,7 @@ export function LevelPage({ level }: { level: Level }) {
   const assessments = assessmentCatalog.filter(a => a.level === level.id);
   return (
     <>
-      <Topbar crumbs={[{ label: level.code }]} nav={[["route", "Темы"], ...(assessments.length ? [["checks", "Проверки"] as [string,string]] : []), ["exam", "Экзамен"]]} />
+      <Topbar crumbs={[{ label: level.code }]} nav={[["route", "Справочник"], ...(assessments.length ? [["checks", "Проверки"] as [string,string]] : []), ["exam", "Экзамен"]]} />
       <main>
         <section className="hero level-hero">
           <div className="kicker">Уровень {level.code} · {level.exam}</div>
@@ -18,6 +18,15 @@ export function LevelPage({ level }: { level: Level }) {
             {level.code} — {level.name}
           </h1>
           <p className="lede">{level.summary}</p>
+          {level.id === "a1" && (
+            <>
+              <p className="lede">
+                Курс уровня — история «Дело о пропавшем Moin»: 13 глав, в которых слова и правила A1 нужны,
+                чтобы вести расследование.
+              </p>
+              <a className="cta" href="#/a1/moin">Открыть дело</a>
+            </>
+          )}
           {level.can && (
             <div className="can">
               <h2>После этого уровня вы сможете</h2>
@@ -34,14 +43,13 @@ export function LevelPage({ level }: { level: Level }) {
 
         <section className="route" id="route">
           <div className="section-head">
-            <div className="kicker">Маршрут</div>
-            <h2>{plural(level.topics.length, ["тема", "темы", "тем"])} по порядку</h2>
+            <div className="kicker">Справочник</div>
+            <h2>{plural(level.topics.length, ["тема", "темы", "тем"])} уровня</h2>
             <p>
-              Каждая тема опирается на предыдущие: знакомое правило возвращается в новой бытовой задаче.
-              Идите сверху вниз; словарь остаётся справочником в конце каждого урока.
+              Разборы правил, шпаргалки и словари по темам. Справочник собран из прежних уроков и пока
+              отстаёт от истории: части слов и правил экзамена в нём нет.
             </p>
           </div>
-          {level.id === "a1" && <div className="moin-entry"><div className="kicker">Отдельная история по всем темам A1</div><h3>Дело о пропавшем Moin</h3><p>12 глав, 192 действия и одна детективная история. Русский рассказ постепенно уступает место немецкому. Можно проходить вместе с уроками или для повторения.</p><div className="moin-links"><a href="#/a1/moin">Открыть сюжетную игру →</a><a href="#/a1/moin-neu">Новая версия в сценах: прототип, все 12 глав →</a></div></div>}
           <ol className="route-list">
             {level.topics.map((topic) => {
               const solved = progress.solved(topic.id);

@@ -8,7 +8,6 @@ import { DatenschutzPage, ImpressumPage } from "./pages/Legal";
 import { LevelPage } from "./pages/Level";
 import { TopicPage } from "./pages/Topic";
 
-const StoryPage = lazy(() => import("./story/StoryPage").then(m => ({ default: m.StoryPage })));
 const ScenePreview = lazy(() => import("./story/ScenePreview").then(m => ({ default: m.ScenePreview })));
 
 export function App() {
@@ -28,15 +27,16 @@ export function App() {
 
 function Page({ route }: { route: string[] }) {
   const [levelId, topicId] = route;
-  if (levelId === "a1" && topicId === "moin-neu") return <Suspense fallback={<p className="hero">Открываем дело…</p>}><ScenePreview /></Suspense>;
-  if (levelId === "a1" && topicId === "moin") return <Suspense fallback={<p className="hero">Открываем дело…</p>}><StoryPage /></Suspense>;
+  // moin-neu — второй адрес той же страницы: на него ведут сохранённые закладки.
+  if (levelId === "a1" && (topicId === "moin" || topicId === "moin-neu")) return <Suspense fallback={<p className="hero">Открываем дело…</p>}><ScenePreview /></Suspense>;
   if (levelId === "impressum") return <ImpressumPage />;
   if (levelId === "datenschutz") return <DatenschutzPage />;
+  // У скрытого уровня нет доступных страниц: ни уроков, ни проверок.
   const level = levelId ? levelById(levelId) : undefined;
-  if (level && topicId && assessmentCatalog.some(a => a.id === topicId && a.level === level.id)) return <AssessmentPage key={topicId} level={level} id={topicId} />;
-  if (level && level.status === "open" && topicId) return <TopicPage key={topicId} level={level} topicId={topicId} />;
-  if (level && level.status === "open") return <LevelPage level={level} />;
-  return <Home />;
+  if (level?.status !== "open") return <Home />;
+  if (topicId && assessmentCatalog.some(a => a.id === topicId && a.level === level.id)) return <AssessmentPage key={topicId} level={level} id={topicId} />;
+  if (topicId) return <TopicPage key={topicId} level={level} topicId={topicId} />;
+  return <LevelPage level={level} />;
 }
 
 export type Crumb = { label: string; href?: string };
