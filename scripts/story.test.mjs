@@ -307,7 +307,7 @@ test("rounds of odd and lock go in order, a draft keeps only the solved start", 
 
 test("the three docks take singular nouns, a plural article would teach nothing", () => {
   const docks = sceneGames.filter((b) => b.challenge.kind === "docks");
-  assert.equal(docks.length, 58);
+  assert.equal(docks.length, 59);
   const plurals = [
     "die Eltern",
     "die Geschwister",
@@ -336,7 +336,7 @@ test("the gull race never asks for one of two words with the same translation", 
 
 test("a lock has a Russian task, real alternatives and one stored answer per reel", () => {
   const locks = sceneGames.filter((b) => b.challenge.kind === "lock");
-  assert.equal(locks.length, 13);
+  assert.equal(locks.length, 14);
   for (const b of locks)
     for (const round of b.challenge.rounds) {
       assert.match(round.ru, /[а-яё]/i, b.id);
@@ -402,7 +402,7 @@ test("a letter needs every sentence right, adapted from the model and not copied
 
 test("oral practice follows the exam parts and always has a model to compare with", () => {
   const steps = sceneGames.filter((b) => b.challenge.kind === "oral");
-  assert.equal(steps.length, 13);
+  assert.equal(steps.length, 15);
   const parts = new Set();
   for (const b of steps)
     for (const r of b.challenge.rounds) {

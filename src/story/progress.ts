@@ -114,6 +114,20 @@ function fits(node: SceneNode, entry: string): boolean {
 }
 
 /**
+ * Сцены, вставленные в курс, когда сохранение помнило только номер текущей сцены. Номер такого
+ * сохранения считается по списку без них: так он указывает на ту же сцену, что и раньше.
+ */
+const INSERTED = ["04-c1", "08-c1"];
+
+/** Номер текущей сцены в списке ids: по её id (scene), а у сохранения без id — по прежнему номеру. */
+export function sceneAt(ids: string[], raw: { at: number; scene?: unknown }): number {
+  const byId = ids.indexOf(raw.scene as string);
+  if (byId >= 0) return byId;
+  const before = ids.filter((id) => !INSERTED.includes(id));
+  return ids.indexOf(before[Math.min(Math.max(0, raw.at), before.length - 1)]);
+}
+
+/**
  * Старое сохранение по номерам узлов: выбираем версию сцены, под которую ответы подходят лучше всего
  * (текущая — при равенстве), и переводим ответы через отпечатки на текущие номера. Сцена считается
  * пройденной, если в той версии игрок дошёл до её последнего узла.

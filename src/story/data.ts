@@ -1050,6 +1050,7 @@ export const phrases: Record<string, Phrase> = {
   wenig: { ru: "мало", de: "wenig", note: "Наоборот — viel. Ein wenig — немного, как ein bisschen." },
   anbieten: { ru: "предлагать", de: "anbieten", note: "Darf ich Ihnen Tee anbieten? Приставка an уходит в конец." },
   meisten: { ru: "больше всего", de: "am meisten", note: "viel — mehr — am meisten. Die meisten Gäste — большинство гостей." },
+  zeitung: { ru: "газета", de: "die Zeitung", pl: "Zeitungen", note: "От Zeit — время: новости своего дня. Ich lese die Zeitung. — Я читаю газету." },
   kriegen: { ru: "получать (разг.)", de: "kriegen", note: "Разговорное bekommen. В лавке: Was kriegen Sie? — Что вам?" },
   zufrieden: { ru: "довольный", de: "zufrieden", note: "Ich bin zufrieden. Mit etwas zufrieden sein — быть довольным чем-то." },
   tot: { ru: "мёртвый", de: "tot", note: "Ist sie tot? — Она умерла? Глагол — sterben, Perfekt: ist gestorben." },

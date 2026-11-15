@@ -840,6 +840,145 @@ const evening: SceneNode[] = [
   },
 ];
 
+// Проверка после глав 1–8 (A1-PLOT.md, «Проверки в игре»): ночью формуляр о пропаже заставляет
+// свести всё, что команда нашла за восемь дней. Броски (seed 1794766322): за кадром у фрау Петерсен
+// сломалась кровать, и она ночует в клубе — а в клубе без формуляра никуда; два ложных следа
+// почти ничего не дают: Фрауке забыла, что видела на кухне Матео, Хауке путает графу с
+// квадратными метрами из объявления Элиф.
+const formular: SceneNode[] = [
+  { t: "pic", src: "08-formular.jpg", alt: "Ночь в офисе клуба: фрау Петерсен с подушкой под мышкой держит бланк и штамп; Хауке пишет за столом; в окно стучит Фрауке; чайка спит на стуле" },
+  narr("Es ist spät, aber im {buero} ist Licht. Da ist Frau Petersen — с подушкой под мышкой и в тапочках."),
+  petersen("Mein Bett ist kaputt! Heute schlafe ich im Club.", "Моя кровать сломалась! Сегодня я сплю в клубе."),
+  {
+    t: "reply",
+    rule: ["kennenlernen/pronomen-1"],
+    task: "Поздоровайтесь с фрау Петерсен.",
+    options: [
+      ok("Guten Abend, Frau Petersen! Alles gut?"),
+      no("Gute Nacht, Frau Petersen!", "Gute Nacht говорят, когда уходят спать. А фрау Петерсен только пришла."),
+      no("Hallo, Frauke! Alles gut?", "Это фрау Петерсен: седое каре и очки на цепочке. Фрауке — в фартуке."),
+    ],
+  },
+  petersen("Und in der Zeitung steht: Der Club hat kein Schild. Jetzt ist es offiziell!", "А в газете написано: у клуба нет таблички. Теперь это официально!"),
+  petersen("Acht Tage ist das Schild weg. Dann brauchen wir ein Formular. Ohne Formular kein Start!", "Восемь дней нет таблички. Значит, нужен формуляр. Без формуляра — никакого старта!"),
+  {
+    t: "hear",
+    task: "Что нужно фрау Петерсен?",
+    voice: "Sandy",
+    de: "Acht Tage ist das Schild weg. Dann brauchen wir ein Formular. Ohne Formular kein Start!",
+    options: ["Формуляр о пропаже: без него нет старта", "Новая кровать до старта", "Ключ от подвала клуба"],
+    answer: "Формуляр о пропаже: без него нет старта",
+  },
+  narr("Das ist Formular A39. Es ist lang. Frau Petersen liest vor, а вы сверяете каждую строчку с блокнотом."),
+  {
+    t: "clue",
+    title: "Das Notizbuch",
+    text: "Samstag, 17:05: Kassenbon, Dunkelblau. Sonntag, 17:30: Tee, der ganze Club ist hinten. 17:35: eine Frau, eine Tasche, Bus. 17:45: Fahrkarte nach Gaarden. 18:00: Herr Jensen macht zu. Lager der Möwe: kein Schild. Karton im Keller: leer.",
+  },
+  {
+    t: "game",
+    task: "Показания за восемь дней. Сверьте с блокнотом: так или нет?",
+    hint: "Всё нужное — на странице «Das Notizbuch» в блокноте.",
+    c: verdict(["Richtig", "Falsch"], [
+      ["Am Sonntag um halb sechs ist der ganze Club hinten.", true, "Tee um halb sechs: все на террасе, впереди никого."],
+      ["Um sechs macht Herr Jensen den Club zu.", true, "Так в кассовой книге и у самого Йенсена."],
+      ["Der Mann im Laden kauft Dunkelblau.", true, "Kassenbon: один литр, dunkelblau. Покупатель говорит только Moin."],
+      ["Das Schild ist im Lager der Möwe.", false, "В тайнике чайки — бирка, чек, чайные пакетики и мяч. Таблички нет."],
+      ["Der Karton im Keller ist voll.", false, "Коробка в подвале у гавани пустая: только контур MOIN."],
+      ["Herr Jensen ist jetzt im Keller.", false, "Утром он был в подвале у гавани, а потом уехал с женщиной на автобусе."],
+    ]),
+  },
+  narr("Da ist Frauke am {fenster} — mit einem Fischbrötchen und einer Nachricht: «Das Schild ist in der Küche! Bei Mateo!»"),
+  narr("Потом морщит лоб и рисует руками круг: «Groß … mit M … Ist das ein Schild?»"),
+  {
+    t: "pick",
+    task: "Что на самом деле видела Фрауке?",
+    options: [
+      ok("Круглый торт Матео с буквой M — не табличку"),
+      no("Табличку MOIN на кухне у Матео", "Табличка прямоугольная. А Матео печёт — это диагноз Даны."),
+      no("Подставку для таблички", "Подставка стоит у клуба, и она не круглая."),
+    ],
+  },
+  narr("Hauke sitzt am Tisch mit dem Formular. Aber er liest den falschen Zettel: die Anzeige von Elif für die Wohnung."),
+  hauke("Was ist weg? Hier: fünfundfünfzig Quadratmeter!", "Что пропало? Вот: пятьдесят пять квадратных метров!"),
+  {
+    t: "gap",
+    task: "Исправьте графу Хауке.",
+    text: "Was ist weg? ___",
+    options: ["das Schild MOIN", "55 Quadratmeter", "die Wohnung"],
+    answer: "das Schild MOIN",
+    ru: "Что пропало? Табличка MOIN.",
+  },
+  {
+    t: "game",
+    rule: ["wohnen/wo-1"],
+    task: "Заполните Formular A39 фрау Петерсен.",
+    hint: "Где? — in + dem = im, an + dem = am. Время — как в кассовой книге.",
+    c: write("Formular A39 · Schild weg", [
+      ["Was ist weg?", "das Schild MOIN", "das Schild", "Schild", "Schild MOIN"],
+      ["Wann?", "Sonntag, 17:30", "am Sonntag um halb sechs", "Sonntag um halb sechs", "am Sonntag um 17:30", "Sonntag 17:30"],
+      ["Wo?", "am Aufsteller", "vor dem Club", "am Club", "Aufsteller"],
+      ["Adresse der Werkstatt?", "Farbenweg 7", "Farbenweg 7, Gaarden", "Werkstatt, Farbenweg 7"],
+    ]),
+  },
+  petersen("Gut. Und die Zeit? Was ist am Samstag, was ist am Sonntag?", "Хорошо. А время? Что было в субботу, а что в воскресенье?"),
+  {
+    t: "game",
+    task: "Разложите по дням: что было в субботу, а что в воскресенье?",
+    hint: "Страница «Das Notizbuch»: там у каждого времени есть день.",
+    c: sort([["samstag", "Samstag"], ["sonntag", "Sonntag"]], [
+      ["bon", "17:05 · Kassenbon: Dunkelblau", "samstag", "🧾"],
+      ["tee", "17:30 · Tee, alle hinten", "sonntag", "🫖"],
+      ["frau", "17:35 · eine Frau, eine Tasche, Bus", "sonntag", "👜"],
+      ["karte", "17:45 · Fahrkarte nach Gaarden", "sonntag", "🎫"],
+    ]),
+  },
+  petersen("Jetzt die Fragen. Ich frage, Sie antworten. Laut, bitte!", "Теперь вопросы. Я спрашиваю, вы отвечаете. Вслух, пожалуйста!"),
+  {
+    t: "game",
+    task: "Вопросы к формуляру. Сначала ответьте вслух сами, потом сверьтесь с образцом.",
+    hint: HINT_ORAL,
+    c: oral([
+      oralReply(2, ANSWER, "Wann ist das Schild weg?", "Am Sonntag um halb sechs. Alle sind hinten.", "В воскресенье в половине шестого. Все сзади."),
+      oralReply(2, ANSWER, "Wo ist Herr Jensen?", "Er ist nicht da. Er ist mit Greta weg.", "Его нет. Он уехал с Гретой."),
+      oralSay(3, REQUEST, "🛏️", "Ein Bett für Frau Petersen, bitte!", "Кровать для фрау Петерсен, пожалуйста!"),
+    ]),
+  },
+  narr("Die Möwe schläft auf dem Stuhl von Frau Petersen. Frau Petersen sieht das und sagt nichts: heute ja. Но сначала — фразы для протокола."),
+  {
+    t: "game",
+    rule: ["wohnen/wo-1"],
+    task: "Протокол закрыт на фразы ночи. Поверните диски.",
+    hint: HINT_LOCK,
+    c: lock([
+      ["Коробка стоит в подвале.", [["Der Karton", "Den Karton", "Dem Karton"], ["steht", "stehen", "stellt"], ["im Keller.", "in den Keller.", "in der Keller."]]],
+      ["Чайка спит на стуле.", [["Die Möwe", "Der Möwe", "Den Möwe"], ["schläft", "schlafen", "schlafe"], ["auf dem Stuhl.", "auf den Stuhl.", "auf der Stuhl."]]],
+    ]),
+  },
+  {
+    t: "game",
+    task: "Петерсен проверяет ваш словарь. Одно слово в группе лишнее.",
+    hint: HINT_ODD,
+    c: odd([
+      [["der Keller", "der Flur", "das Treppenhaus", "der Kassenbon"], "der Kassenbon", "Чек — из лавки. Остальное — части дома."],
+      [["die Fahrkarte", "der Bus", "die Haltestelle", "das Bett"], "das Bett", "Кровать — из квартиры. Остальное — дорога."],
+      [["dunkelblau", "weiß", "groß", "rot"], "groß", "Groß — размер. Остальное — цвета таблички и не только."],
+    ]),
+  },
+  petersen("Gestempelt! Und jetzt: Gute Nacht. Morgen kaufe ich ein Bett.", "Проштамповано! А теперь — спокойной ночи. Завтра я куплю кровать."),
+  {
+    t: "type",
+    task: "Запишите в блокнот, куда команда едет завтра.",
+    answers: ["Morgen fahren wir nach Gaarden.", "Wir fahren morgen nach Gaarden.", "Wir fahren nach Gaarden."],
+    ru: "Завтра мы едем в Гаарден.",
+  },
+  {
+    t: "clue",
+    title: "Acht Tage",
+    text: "Sonntag, 17:30: der ganze Club ist hinten, vorne ist niemand. 17:35: eine Frau, eine Tasche, Bus. 17:45: Fahrkarte nach Gaarden. Der Karton im Keller ist leer. Werkstatt: Farbenweg 7. Formular A39: gestempelt.",
+  },
+];
+
 const play = (nodes: SceneNode[]) => ({ kind: "play" as const, nodes });
 const HINT = "Ошибка ничего не стоит: собеседник отреагирует, и можно выбрать снова.";
 
@@ -912,8 +1051,17 @@ export const sceneChapter8: Episode = {
       story: [],
       prompt: "Вечер в клубе: чайка на чужом стуле, речь как на экзамене и план на завтра.",
       hint: "Ist die Werkstatt morgen offen? — глагол первым.",
-      success: "День восьмой закончен. Завтра — Gaarden. Noch vier Tage.",
+      success: "День восьмой почти закончен. Завтра — Gaarden. Noch vier Tage.",
       challenge: play(back(evening, 8, 1)),
+    },
+    {
+      id: "08-c1",
+      title: "Formular A39",
+      story: [],
+      prompt: "Проверка глав 1–8: ночной формуляр о пропаже и всё, что команда нашла за восемь дней.",
+      hint: "Сверяйтесь с блокнотом: кассовая книга, подвалы, билет.",
+      success: "Formular A39 проштампован: восемь дней сведены на одном листе. Завтра — Gaarden. Noch vier Tage.",
+      challenge: play(formular),
     },
   ],
 };

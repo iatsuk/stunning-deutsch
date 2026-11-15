@@ -7,7 +7,7 @@ import { ChallengeView } from "./ChallengeView";
 import { phrases } from "./data";
 import { mnemonic } from "./mnemonics";
 import { beatPhrases, initialAnswer, isCorrect } from "./logic";
-import { migrate, toIds, toKeys, type Layout } from "./progress";
+import { migrate, sceneAt, toIds, toKeys, type Layout } from "./progress";
 import pastLayouts from "./scene-layouts.json";
 import { dayNumber, grade, remember, type Cards } from "./memory";
 import { buildReview, dueUnits, MIN_DUE, reviewSources, SCENE_INTERVALS, sceneUnits, warmupReview, WELCOME_ROUNDS, type Mech } from "./review";
@@ -21,7 +21,7 @@ import { TRACKS, type World } from "./world";
 import "./story.css";
 
 // Курс A1: главы истории в формате сцен. Сохранение: sd-moin-neu-v1. Сцены всех глав идут
-// одним списком: новая глава добавляется в конец, и номера сохранённых сцен не сдвигаются.
+// одним списком; место игрока хранится по id сцены, поэтому новая сцена в любой главе его не сдвигает.
 
 const KEY = "sd-moin-neu-v1";
 const QUIET = "sd-moin-quiet";
@@ -34,12 +34,14 @@ const readQuiet = () => {
 };
 const chapters = sceneChapters;
 const scenes = chapters.flatMap((c) => c.beats);
+const sceneIds = scenes.map((b) => b.id);
 /** Первая сцена главы в общем списке. */
 const firstOf = (chapter: number) =>
   chapters.slice(0, chapter).reduce((n, c) => n + c.beats.length, 0);
 const chapterOf = (at: number) =>
   chapters.findIndex((_, i) => at < firstOf(i + 1));
 /**
+ * at — номер текущей сцены в общем списке; в хранилище рядом лежит её id (scene).
  * drafts — ответы сцен по номерам узлов текущей раскладки; в хранилище они лежат по отпечаткам узлов
  * (src/story/progress.ts), чтобы новый узел не сдвигал пройденное. passed — пройденные сцены: новое
  * действие в такой сцене приходит пустой ячейкой и не снимает с неё отметку. cards — очередь
@@ -113,7 +115,7 @@ function load(): Save {
       const { drafts, passed } = readDrafts(raw);
       return remembered(
         {
-          at: Math.min(Math.max(0, raw.at), scenes.length - 1),
+          at: sceneAt(sceneIds, raw),
           drafts,
           passed: [...new Set([...(Array.isArray(raw.passed) ? raw.passed : []), ...passed])],
           cards: raw.cards && typeof raw.cards === "object" ? raw.cards : {},
@@ -156,7 +158,7 @@ export function ScenePreview() {
           return [id, beat ? toIds(beatNodes(beat), entries) : entries];
         }),
       );
-      localStorage.setItem(KEY, JSON.stringify({ ...save, v: 2, drafts }));
+      localStorage.setItem(KEY, JSON.stringify({ ...save, v: 2, drafts, scene: scenes[save.at].id }));
     } catch {
       // Без хранилища игра работает до перезагрузки.
     }

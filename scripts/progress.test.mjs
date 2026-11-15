@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
 import { isCorrect } from "../src/story/logic.ts";
-import { migrate, nodeIds, toIds, toKeys } from "../src/story/progress.ts";
+import { migrate, nodeIds, sceneAt, toIds, toKeys } from "../src/story/progress.ts";
 import { nodeAt, solutionEntries } from "../src/story/scene.ts";
 import { sceneChapters } from "../src/story/scenes/index.ts";
 
@@ -70,4 +70,14 @@ test("an old save by node numbers moves onto the current scenes", () => {
   check("04-s4", "Закажите чай и кусок пирога");
   check("03-s4", "Лотта диктует подпись");
   check("08-s2", "Чей мяч?");
+});
+
+test("the current scene is kept by id, and an old save by number keeps its scene", () => {
+  const ids = scenes.map((b) => b.id);
+  const before = ids.filter((id) => id !== "04-c1" && id !== "08-c1");
+  // Сохранение до проверок помнило номер сцены в списке без них.
+  for (const id of ["04-s6", "05-s1", "08-s6", "09-s1", "13-s6"]) assert.equal(ids[sceneAt(ids, { at: before.indexOf(id) })], id);
+  // id сильнее устаревшего номера.
+  assert.equal(ids[sceneAt(ids, { at: 0, scene: "08-c1" })], "08-c1");
+  assert.equal(ids[sceneAt(ids, { at: 9999, scene: "missing" })], before.at(-1));
 });

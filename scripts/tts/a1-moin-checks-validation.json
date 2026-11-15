@@ -1,0 +1,219 @@
+{
+ "date": "2026-11-15",
+ "scope": "In-game checks after chapters 4 and 8 of the Moin scene course (04-c1 «Die Zeitung», 08-c1 «Formular A39»): 28 voice lines and the story phrase die Zeitung",
+ "model": "k2-fsa/OmniVoice",
+ "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+ "candidatesPerPhrase": 3,
+ "asr": "openai/whisper-large-v3",
+ "notes": [
+  "The chosen take has no fragment or cut ending flagged by tails.py and the closest transcript; the default seed wins ties.",
+  "The reporter line was heard as «kein Staat» in 8 of 9 takes; the take with seed 21289668 is heard as «kein Start».",
+  "Mateo first had «Ein Stück … nein! Brot. Nur Brot!»; the model kept dropping one «Brot», so the line became «Ein Stück … nein! Nur Brot!», all six takes heard correctly.",
+  "Whisper writes 55 as digits; the take says fünfundfünfzig. Automated checks do not replace listening."
+ ],
+ "files": [
+  {
+   "file": "7e0552a3004b.m4a",
+   "text": "die Zeitung, die Zeitungen",
+   "voice": "Anna",
+   "seed": 20611435,
+   "heard": "Die Zeitung, die Zeitungen"
+  },
+  {
+   "file": "26358285d4a4.m4a",
+   "text": "Psst! Der Mann ist von der Zeitung!",
+   "voice": "Flo",
+   "seed": 21192004,
+   "heard": "Psst, der Mann ist von der Zeitung."
+  },
+  {
+   "file": "ba69730c18a7.m4a",
+   "text": "Morgen in der Zeitung: Kein Schild, kein Start! Und ein Mann aus Hamburg versteckt etwas!",
+   "voice": "Eddy",
+   "seed": 21289668,
+   "heard": "Morgen in der Zeitung. Kein Schild, kein Start. Und ein Mann aus Hamburg versteckt etwas."
+  },
+  {
+   "file": "c25e927dad14.m4a",
+   "text": "Gut! Hier ist mein Text. Richtig oder falsch?",
+   "voice": "Eddy",
+   "seed": 20685236,
+   "heard": "Gut, hier ist mein Text. Richtig oder falsch?"
+  },
+  {
+   "file": "9e2906353dcf.m4a",
+   "text": "Und Sie? Was kochen Sie für die Kieler Woche?",
+   "voice": "Eddy",
+   "seed": 20261295,
+   "heard": "Und Sie, was kochen Sie für die Kieler Woche?"
+  },
+  {
+   "file": "bda89567d175.m4a",
+   "text": "Und Sie, junge Frau? Ein Foto, bitte!",
+   "voice": "Eddy",
+   "seed": 21025429,
+   "heard": "Und Sie, junge Frau, ein Foto bitte."
+  },
+  {
+   "file": "6aa414379776.m4a",
+   "text": "Schade. Jetzt Sie! Wer sind Sie? Und was ist richtig?",
+   "voice": "Eddy",
+   "seed": 20637317,
+   "heard": "Schade. Jetzt Sie. Wer sind Sie? Und was ist richtig?"
+  },
+  {
+   "file": "6d66c4e9d6df.m4a",
+   "text": "Gut! Und jetzt bitte hier, im Notizbuch. Schnell!",
+   "voice": "Eddy",
+   "seed": 21012031,
+   "heard": "Gut. Und jetzt bitte hier im Notizbuch. Schnell."
+  },
+  {
+   "file": "838a6659ebd8.m4a",
+   "text": "Danke! Morgen in der Zeitung: Der Club hat kein Schild. Und Nils? Nils hat ein Fischbrötchen!",
+   "voice": "Eddy",
+   "seed": 21155640,
+   "heard": "Danke. Morgen in der Zeitung, der Club hat kein Schild. Und Nils? Nils hat ein Fischbrötchen."
+  },
+  {
+   "file": "27cb442e46aa.m4a",
+   "text": "Ich heiße Hauke. Ich komme aus Kiel.",
+   "voice": "Anna",
+   "seed": 20988810,
+   "heard": "Ich heiße Hauke. Ich komme aus Kiel."
+  },
+  {
+   "file": "dbf5eeb2e2d4.m4a",
+   "text": "Er trinkt Tee. Er möchte keinen Kaffee.",
+   "voice": "Anna",
+   "seed": 20432372,
+   "heard": "Er trinkt Tee. Er möchte keinen Kaffee."
+  },
+  {
+   "file": "942498d8695c.m4a",
+   "text": "Was trinkt der Mann an Tisch vier?",
+   "voice": "Reed",
+   "seed": 20329946,
+   "heard": "Was trinkt der Mann an Tisch vier?"
+  },
+  {
+   "file": "8b8b8d804ce0.m4a",
+   "text": "Ein Fischbrötchen. Nils versteckt kein Schild.",
+   "voice": "Anna",
+   "seed": 20971776,
+   "heard": "Ein Fischbrötchen. Nils versteckt kein Schild."
+  },
+  {
+   "file": "0850c7095674.m4a",
+   "text": "Und was hat Nils unter der Jacke?",
+   "voice": "Reed",
+   "seed": 20944852,
+   "heard": "Und was hat Nils unter der Jacke?"
+  },
+  {
+   "file": "deb6f3e8a407.m4a",
+   "text": "Mein Bett ist kaputt! Heute schlafe ich im Club.",
+   "voice": "Sandy",
+   "seed": 20784999,
+   "heard": "Mein Bett ist kaputt. Heute schlafe ich im Club."
+  },
+  {
+   "file": "13995112e373.m4a",
+   "text": "Und in der Zeitung steht: Der Club hat kein Schild. Jetzt ist es offiziell!",
+   "voice": "Sandy",
+   "seed": 20377427,
+   "heard": "Und in der Zeitung steht, der Club hat kein Schild. Jetzt ist es offiziell."
+  },
+  {
+   "file": "2d9db10f5575.m4a",
+   "text": "Acht Tage ist das Schild weg. Dann brauchen wir ein Formular. Ohne Formular kein Start!",
+   "voice": "Sandy",
+   "seed": 20948565,
+   "heard": "Acht Tage ist das Schild weg. Dann brauchen wir ein Formular. Ohne Formular kein Start!"
+  },
+  {
+   "file": "b723ceee6fb6.m4a",
+   "text": "Was ist weg? Hier: fünfundfünfzig Quadratmeter!",
+   "voice": "Rocko",
+   "seed": 20732054,
+   "heard": "Was ist weg? Hier 55 Quadratmeter."
+  },
+  {
+   "file": "735611c45efe.m4a",
+   "text": "Gut. Und die Zeit? Was ist am Samstag, was ist am Sonntag?",
+   "voice": "Sandy",
+   "seed": 20724766,
+   "heard": "Gut, und die Zeit? Was ist am Samstag, was ist am Sonntag?"
+  },
+  {
+   "file": "f00d59ed672e.m4a",
+   "text": "Jetzt die Fragen. Ich frage, Sie antworten. Laut, bitte!",
+   "voice": "Sandy",
+   "seed": 21240701,
+   "heard": "Jetzt die Fragen. Ich frage Sie Antworten. Laut bitte!"
+  },
+  {
+   "file": "27b7bc26a7ec.m4a",
+   "text": "Gestempelt! Und jetzt: Gute Nacht. Morgen kaufe ich ein Bett.",
+   "voice": "Sandy",
+   "seed": 20409420,
+   "heard": "Gestempelt. Und jetzt? Gute Nacht. Morgen kaufe ich ein Bett."
+  },
+  {
+   "file": "3cbc00f5e050.m4a",
+   "text": "Am Sonntag um halb sechs. Alle sind hinten.",
+   "voice": "Anna",
+   "seed": 20892976,
+   "heard": "Am Sonntag um halb sechs. Alle sind hinten."
+  },
+  {
+   "file": "cbd3b775c49b.m4a",
+   "text": "Wann ist das Schild weg?",
+   "voice": "Reed",
+   "seed": 20747579,
+   "heard": "Wann ist das Schild weg?"
+  },
+  {
+   "file": "d983bb17f40f.m4a",
+   "text": "Er ist nicht da. Er ist mit Greta weg.",
+   "voice": "Anna",
+   "seed": 21113391,
+   "heard": "Er ist nicht da. Er ist mit Greta weg."
+  },
+  {
+   "file": "ef4a0850f322.m4a",
+   "text": "Wo ist Herr Jensen?",
+   "voice": "Reed",
+   "seed": 20402242,
+   "heard": "Wo ist Herr Jensen?"
+  },
+  {
+   "file": "7dd8de66ad4d.m4a",
+   "text": "Ein Bett für Frau Petersen, bitte!",
+   "voice": "Anna",
+   "seed": 20939949,
+   "heard": "Ein Bett für Frau Petersen bitte."
+  },
+  {
+   "file": "36e26123939f.m4a",
+   "text": "Der Karton steht im Keller.",
+   "voice": "Anna",
+   "seed": 20491327,
+   "heard": "Der Karton steht im Keller."
+  },
+  {
+   "file": "29a049af729f.m4a",
+   "text": "Die Möwe schläft auf dem Stuhl.",
+   "voice": "Anna",
+   "seed": 21002111,
+   "heard": "Die Möwe schläft auf dem Stuhl."
+  },
+  {
+   "file": "e5d04ab6aa24.m4a",
+   "text": "Ein Stück … nein! Nur Brot!",
+   "voice": "Reed",
+   "seed": 20809117,
+   "heard": "Ein Stück? Nein, nur Brot."
+  }
+ ]
+}

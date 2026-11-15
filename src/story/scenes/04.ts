@@ -19,6 +19,7 @@ const mateo = (de: string, ru: string, words?: string[]): SceneNode => ({ t: "sa
 const frauke = (de: string, ru: string, words?: string[]): SceneNode => ({ t: "say", who: "Frauke", voice: "Sandy", de, ru, ...learn(words) });
 const kellner = (de: string, ru: string, words?: string[]): SceneNode => ({ t: "say", who: "Kellner", voice: "Eddy", de, ru, ...learn(words) });
 const derya = (de: string, ru: string, words?: string[]): SceneNode => ({ t: "say", who: "Derya", voice: "Shelley", de, ru, ...learn(words) });
+const reporter = (de: string, ru: string): SceneNode => ({ t: "say", who: "Reporter", voice: "Eddy", de, ru });
 /** Пары памяти — из выражений истории, которые глава уже показала. */
 const memory = (ids: string[]): Challenge => ({ kind: "memory", pairs: ids.map((id) => ({ id, de: phrases[id].de, ru: phrases[id].ru })) });
 const turn = (say: string, ru: string, answer: string, options: [string, string, string][]): ChatTurn => ({
@@ -806,6 +807,142 @@ const evening: SceneNode[] = [
   },
 ];
 
+// Проверка после глав 1–4 (A1-PLOT.md, «Проверки в игре»): неожиданное событие заставляет свести
+// найденное за четыре дня — на слух, в чтении, в записи и вслух, только знакомым языком. Броски
+// (seed 1794766319): Элиф подслушивает у супа, и часы тикают сильнее: газета уходит в печать в десять;
+// Грета по своей черте ломает донер — и уходит от фото; Матео забывает «ein Stück», и тайна торта
+// остаётся тайной (обратный эффект).
+const newspaper: SceneNode[] = [
+  { t: "pic", src: "04-zeitung.jpg", alt: "Поздний вечер у жёлтого фургона Дерьи: Элиф с тарелкой супа оборачивается к соседнему столику, где репортёр с блокнотом говорит по телефону; Грета с донером, у её ног чайка" },
+  narr("Уже темно, но у фургона Дерьи светло. Элиф ест Suppe — и вдруг замирает с ложкой: за соседним столиком говорит по телефону мужчина с блокнотом."),
+  {
+    t: "clue",
+    title: "Das Notizbuch",
+    text: "Tag 1: Das Schild MOIN ist weg, der Aufsteller ist da. Tag 4: Tisch vier — eine Cola, ein Tee, kein Kaffee. Greta trinkt Cola. Herr Jensen: Tee. Nils: kein Schild, ein Fischbrötchen.",
+  },
+  elif("Psst! Der Mann ist von der Zeitung!", "Тсс! Этот мужчина из газеты!", ["die Zeitung"]),
+  reporter("Morgen in der Zeitung: Kein Schild, kein Start! Und ein Mann aus Hamburg versteckt etwas!", "Завтра в газете: нет таблички — нет старта! И мужчина из Гамбурга что-то прячет!"),
+  {
+    t: "hear",
+    task: "Что завтра напишет газета?",
+    voice: "Eddy",
+    de: "Morgen in der Zeitung: Kein Schild, kein Start! Und ein Mann aus Hamburg versteckt etwas!",
+    options: ["Нет таблички — нет старта, и мужчина из Гамбурга что-то прячет", "Табличку нашли, старт будет", "Клуб ищет мужчину из Гамбурга"],
+    answer: "Нет таблички — нет старта, и мужчина из Гамбурга что-то прячет",
+  },
+  narr("Ein Mann aus Hamburg — это Нильс, а «прячет» — слух Фрауке. Репортёр смотрит на часы: um zehn газета уходит в печать. Сейчас neun."),
+  {
+    t: "pick",
+    task: "У вас час. Что делать?",
+    options: [
+      ok("Подойти и рассказать факты из блокнота, пока газета не ушла в печать"),
+      no("Ничего: завтра все и так узнают правду", "Завтра все прочитают слух о Нильсе. Правду знает только ваш блокнот."),
+      no("Позвонить Нильсу, пусть сам объясняет", "Нильс ответит семью «!!!» — и газета уйдёт в печать."),
+    ],
+  },
+  {
+    t: "reply",
+    rule: ["kennenlernen/pronomen-1"],
+    task: "Подойдите к репортёру. Он незнакомый взрослый.",
+    options: [
+      ok("Guten Abend! Wir sind vom Club. Haben Sie Zeit?"),
+      no("Hallo! Hast du Zeit?", "С незнакомым взрослым — на «вы»: Haben Sie."),
+      no("Moin! Kein Foto, bitte!", "Фото он ещё не просил. Сначала поздоровайтесь и предложите факты."),
+    ],
+  },
+  reporter("Gut! Hier ist mein Text. Richtig oder falsch?", "Хорошо! Вот мой текст. Правильно или нет?"),
+  {
+    t: "game",
+    task: "Репортёр читает черновик заметки. Сверьте с блокнотом: так или нет?",
+    hint: "Всё нужное — на странице «Das Notizbuch» в блокноте.",
+    outcome: { clean: { rumours: -1 }, sloppy: { rumours: 1 } },
+    c: verdict(["Richtig", "Falsch"], [
+      ["Das Schild MOIN ist weg.", true, "Так и есть: с первого утра подставка пустая."],
+      ["Der Aufsteller ist weg.", false, "Подставка на месте: пропала только табличка."],
+      ["Nils versteckt das Schild.", false, "Под курткой у Нильса была рыбная булочка, а не табличка."],
+      ["Der Mann an Tisch vier trinkt Tee.", true, "Tisch vier: eine Cola, ein Tee — и ни одного кофе."],
+      ["Greta trinkt Kaffee.", false, "Грета пьёт колу. Kaffee пьют Матео и Нильс."],
+      ["Herr Jensen sagt heute: Tee.", true, "Сегодня Йенсен впервые сказал не Moin, а Tee."],
+    ]),
+  },
+  narr("Тут подходит Матео с кастрюлей Suppe. На любой вопрос у него есть ответ — и иногда это не тот ответ."),
+  reporter("Und Sie? Was kochen Sie für die Kieler Woche?", "А вы? Что вы готовите к Кильской неделе?"),
+  mateo("Ein Stück … nein! Nur Brot!", "Кусок… нет! Только хлеб!"),
+  {
+    t: "gap",
+    rule: ["essen/akkusativ-3"],
+    task: "Что записал репортёр?",
+    text: "Mateo hat ___ Brot.",
+    options: ["ein", "einen", "eine"],
+    answer: "ein",
+    ru: "У Матео хлеб.",
+  },
+  narr("За соседним столиком Грета доедает Döner. Репортёр замечает её комбинезон в краске и поднимает фотоаппарат."),
+  reporter("Und Sie, junge Frau? Ein Foto, bitte!", "А вы, девушка? Фото, пожалуйста!"),
+  narr("Грета молча ломает Döner пополам. Половину — чайке. Чайка бросается за ней прямо через фотоаппарат, а Греты уже нет."),
+  {
+    t: "pick",
+    task: "Почему Грета ушла?",
+    options: [
+      ok("Она не хочет в газету — как не хотела и на фото Нильса"),
+      no("Ей не понравился донер", "Донер она ела с удовольствием — до фотоаппарата."),
+      no("Она испугалась чайки", "Чайку она позвала сама: половиной донера."),
+    ],
+  },
+  reporter("Schade. Jetzt Sie! Wer sind Sie? Und was ist richtig?", "Жаль. Теперь вы! Кто вы? И как всё было на самом деле?"),
+  {
+    t: "game",
+    task: "Интервью для газеты. Сначала ответьте вслух сами, потом сверьтесь с образцом.",
+    hint: HINT_ORAL,
+    c: oral([
+      oralSay(1, "Представьтесь репортёру: имя и откуда вы.", "Name · Land", "Ich heiße Hauke. Ich komme aus Kiel.", "Меня зовут Хауке. Я из Киля."),
+      oralReply(2, ANSWER, "Was trinkt der Mann an Tisch vier?", "Er trinkt Tee. Er möchte keinen Kaffee.", "Он пьёт чай. Кофе он не хочет."),
+      oralReply(2, ANSWER, "Und was hat Nils unter der Jacke?", "Ein Fischbrötchen. Nils versteckt kein Schild.", "Рыбную булочку. Нильс не прячет табличку."),
+    ]),
+  },
+  reporter("Gut! Und jetzt bitte hier, im Notizbuch. Schnell!", "Хорошо! А теперь, пожалуйста, вот сюда, в блокнот. Быстро!"),
+  {
+    t: "game",
+    rule: ["essen/akkusativ-4"],
+    task: "Заполните для репортёра карточку фактов.",
+    hint: "Что у кого — в винительном: einen Tee, ein Fischbrötchen.",
+    c: write("Fakten für die Zeitung", [
+      ["Was ist weg?", "das Schild", "das Schild MOIN", "Schild", "Schild MOIN"],
+      ["Nils hat …", "ein Fischbrötchen", "Fischbrötchen"],
+      ["Der Mann an Tisch 4 trinkt …", "einen Tee", "Tee", "Tee, keinen Kaffee"],
+      ["Auf der Serviette: …", "Farbe?", "Farbe", "eine Skizze", "Nicht fragen, bitte", "Nicht fragen, bitte."],
+    ]),
+  },
+  narr("Пока репортёр переписывает карточку, Хауке раскладывает на столе всё, что нашёл день: {aufsteller}, {serviette}, {skizze}, Rechnung."),
+  {
+    t: "game",
+    task: "Слова четырёх дней перемешались. К какому причалу каждое: der, die или das?",
+    hint: HINT_DOCK,
+    c: docks(["der Aufsteller", "die Serviette", "das Schild", "die Skizze", "der Stand", "die Rechnung", "das Tablett", "der Fleck"]),
+  },
+  narr("Репортёру нужен ещё заголовок — одно предложение, коротко. Хауке уже знает какое."),
+  {
+    t: "game",
+    rule: ["kennenlernen/wortstellung-3"],
+    task: "Соберите заголовок для завтрашней газеты.",
+    hint: "Глагол — на втором месте, kein — перед существительным.",
+    c: order(["Der", "Club", "hat", "kein", "Schild."], ["kein", "hat", "Schild.", "Club", "Der"]),
+  },
+  reporter("Danke! Morgen in der Zeitung: Der Club hat kein Schild. Und Nils? Nils hat ein Fischbrötchen!", "Спасибо! Завтра в газете: у клуба нет таблички. А Нильс? У Нильса рыбная булочка!"),
+  {
+    t: "type",
+    rule: ["kennenlernen/wortstellung-3"],
+    task: "Запишите в блокнот, что завтра будет в газете.",
+    answers: ["Der Club hat kein Schild.", "Der Club hat kein Schild MOIN.", "Wir haben kein Schild."],
+    ru: "У клуба нет таблички.",
+  },
+  {
+    t: "clue",
+    title: "Vier Tage",
+    text: "Morgen in der Zeitung: Der Club hat kein Schild. Nils: ein Fischbrötchen, kein Schild. Greta: kein Foto. Mateo: nur Brot?",
+  },
+];
+
 const play = (nodes: SceneNode[]) => ({ kind: "play" as const, nodes });
 const HINT = "Ошибка ничего не стоит: собеседник отреагирует, и можно выбрать снова.";
 
@@ -878,8 +1015,17 @@ export const sceneChapter4: Episode = {
       story: [],
       prompt: "Ужин у фургона Дерьи, слух о Нильсе и вопрос о краске.",
       hint: "Ich esse kein Fleisch: без артикля — kein.",
-      success: "День четвёртый закончен. Завтра — магазин. Noch acht Tage.",
+      success: "День четвёртый почти закончен. Завтра — магазин. Noch acht Tage.",
       challenge: play(back(evening, 4, 1)),
+    },
+    {
+      id: "04-c1",
+      title: "Die Zeitung",
+      story: [],
+      prompt: "Проверка глав 1–4: репортёр, газета в печать к десяти и факты четырёх дней.",
+      hint: "Сверяйтесь с блокнотом: всё нужное вы уже нашли.",
+      success: "Факты четырёх дней сведены. Завтра в газете — правда, а не слух. Noch acht Tage.",
+      challenge: play(newspaper),
     },
   ],
 };
