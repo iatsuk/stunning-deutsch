@@ -18,6 +18,12 @@ export const THRESHOLD = {
   words: { hits: 4, chapters: 3, actions: 1, heard: 1 },
   grammar: { hits: 6, chapters: 4, actions: 2, heard: 2 },
 };
+/**
+ * Слово, которое игрок впервые встречает в главе 11 или позже, до порога в A1 не дойдёт: за ним
+ * идут одна-две главы. Такие слова закрепляет сезон A2 (решение автора, A1-PLAN.md), а индекс
+ * показывает их отдельно, чтобы пробелы A1 были видны.
+ */
+export const A2_FROM = 11;
 export const BASELINE = path.join(root, "scripts/a1-index-baseline.json");
 const REPORT = path.join(root, "A1-INDEX.md");
 const JSON_OUT = path.join(root, "src/generated/a1-index.json");
@@ -377,6 +383,7 @@ export function buildIndex({ warmups = true } = {}) {
     return { id: g.id, group: g.group, title: g.title, rules, explained: rules.some((r) => usedRules.has(r)), ...count(hits, THRESHOLD.grammar) };
   });
   for (const g of grammar) if (!g.explained && g.status === "закреплено") g.status = "без объяснения";
+  for (const w of words) if (w.status !== "закреплено" && w.chapters[0] >= A2_FROM) w.status = "закрепит A2";
   return { threshold: THRESHOLD, words, grammar, summary: summarize(words, grammar) };
 }
 
@@ -395,7 +402,7 @@ function count(hits, t) {
   };
 }
 
-const STATUSES = ["закреплено", "слабо", "один раз", "нет"];
+const STATUSES = ["закреплено", "закрепит A2", "слабо", "один раз", "нет"];
 function summarize(words, grammar) {
   const by = (list) => Object.fromEntries([...STATUSES, "без объяснения"].map((s) => [s, list.filter((x) => x.status === s).length]).filter(([k, n]) => n || STATUSES.includes(k)));
   return {
@@ -445,7 +452,8 @@ const numbers = (x) => `${x.hits} · ${x.chapters.length} · ${x.actions} · ${x
 /** Откуда слово: номера уроков и «экз.» для словаря экзамена. */
 const origin = (w) => [...w.sources.filter((s) => s.startsWith("урок")).map((s) => s.slice(5)), ...(w.sources.includes("экзамен") ? ["экз."] : [])].join(", ");
 const alphabetical = (a, b) => a.key.localeCompare(b.key, "de");
-const ANCHORS = { "нет": "слова-нет", "один раз": "слова-один-раз", "слабо": "слова-слабо", "закреплено": "слова-закреплено" };
+const ANCHORS = { "нет": "слова-нет", "один раз": "слова-один-раз", "слабо": "слова-слабо", "закрепит A2": "слова-закрепит-a2", "закреплено": "слова-закреплено" };
+const GAPS = ["нет", "один раз", "слабо", "закрепит A2"];
 
 export function renderReport(index) {
   const { words, grammar, summary, threshold: t } = index;
@@ -462,7 +470,7 @@ export function renderReport(index) {
     `таблицах: встреч · глав · действий · на слух. Раунд перед главой — часть главы. Столбец «Откуда»: номера уроков A1`,
     "и «экз.» для словаря экзамена. Внутри разделов слова сгруппированы по частям речи и идут по алфавиту.",
     "",
-    `Разделы: [Сводка](#сводка) · [Грамматика](#грамматика) · ${["нет", "один раз", "слабо", "закреплено"].map((s) => `[Слова: ${s}](#${ANCHORS[s]})`).join(" · ")}`,
+    `Разделы: [Сводка](#сводка) · [Грамматика](#грамматика) · ${[...GAPS, "закреплено"].map((s) => `[Слова: ${s}](#${ANCHORS[s]})`).join(" · ")}`,
     "",
     "## Сводка",
     "",
@@ -472,6 +480,8 @@ export function renderReport(index) {
     row("из них словарь экзамена", summary.exam),
     row("из них слова уроков", summary.lessons),
     row(`Грамматика (${grammar.length})`, summary.grammar),
+    "",
+    `«Закрепит A2» — слова, которые игрок впервые встречает в главе ${A2_FROM} или позже: в A1 за ними идут одна-две главы, и до порога их доводит сезон A2.`,
     "",
     `В очереди повторения новой версии ${summary.review} обязательных слов, из них ниже порога ${summary.reviewWeak}. Повторение в порог не входит; в таблицах такие слова помечены ↻.`,
     "",
@@ -487,7 +497,7 @@ export function renderReport(index) {
     for (const g of grammar.filter((x) => x.group === group))
       out.push(`| ${g.title} | ${g.status} | ${numbers(g)} | ${g.rules.length ? (g.explained ? "есть" : "не связано с действием") : "нет"} | ${places(g, 6)} |`);
   }
-  for (const status of ["нет", "один раз", "слабо"]) {
+  for (const status of GAPS) {
     const list = words.filter((w) => w.status === status);
     out.push("", `## Слова: ${status}`, "", `${list.length} слов.`);
     for (const part of PARTS) {

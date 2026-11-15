@@ -803,7 +803,7 @@ export const sceneChapter7: Episode = {
       prompt: "Книга клуба, опоздавшая фрау Петерсен и общий день.",
       hint: "Am Montag kann ich nicht. Aber am Dienstag habe ich Zeit.",
       success: "Сегодня у всех есть время. Пикник — на пляже. Йенсен выходит в море каждое утро в восемь.",
-      challenge: play(week),
+      challenge: play(back(week, 7, 2)),
     },
     {
       id: "07-s3",
@@ -830,7 +830,7 @@ export const sceneChapter7: Episode = {
       prompt: "Идея Хауке, «Шпротта» в заливе и записка Йенсена.",
       hint: "Wir können morgen um acht kommen.",
       success: "Йенсен вытащил Хауке из воды и назначил встречу: завтра в восемь, в подвале.",
-      challenge: play(water),
+      challenge: play(back(water, 7, 3)),
     },
     {
       id: "07-i1",

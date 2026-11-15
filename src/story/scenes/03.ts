@@ -866,7 +866,7 @@ export const sceneChapter3: Episode = {
       prompt: "Гнездо на крыше, лестница фрау Петерсен и край фото.",
       hint: "der / das → mein, die → meine: mein Hund, meine Familie.",
       success: "На краю — «ein Freund» в фуражке. Табличку писали к пятидесятилетию клуба.",
-      challenge: play(roof),
+      challenge: play(back(roof, 3, 2)),
     },
     {
       id: "03-s3",
@@ -903,7 +903,7 @@ export const sceneChapter3: Episode = {
       prompt: "Пирог для внучки, салфетка Греты и дорожка из крошек.",
       hint: "unser Opa, unsere Oma, unser Schild: -e только перед словом с die.",
       success: "Грета пишет: «Das ist unser Schild». Подозрение растёт.",
-      challenge: play(cake),
+      challenge: play(back(cake, 3, 3)),
     },
     {
       id: "03-s6",

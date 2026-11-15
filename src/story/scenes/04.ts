@@ -827,7 +827,7 @@ export const sceneChapter4: Episode = {
       prompt: "Кафе у воды, заказ Матео и пустой столик четыре.",
       hint: "der Kaffee → einen Kaffee, keinen Kaffee. Меняется только мужской род.",
       success: "За столиком четыре пили колу и чай. Кофе никто не пил.",
-      challenge: play(table),
+      challenge: play(back(table, 4, 2)),
     },
     {
       id: "04-s3",
@@ -864,7 +864,7 @@ export const sceneChapter4: Episode = {
       prompt: "Доска дня, вопрос Йенсену и записка Грете.",
       hint: "Er möchte keinen Kaffee: möchte без -t, keinen — мужской род.",
       success: "Собеседник Греты пьёт чай, как Йенсен. А Йенсен сказал не Moin.",
-      challenge: play(tea),
+      challenge: play(back(tea, 4, 3)),
     },
     {
       id: "04-s6",

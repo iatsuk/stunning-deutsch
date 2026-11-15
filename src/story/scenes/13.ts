@@ -657,7 +657,7 @@ export const sceneChapter13: Episode = {
       prompt: "Вокзал: объявления, автоответчик и гостья с Гельголанда.",
       hint: "Er hat circa zehn Minuten Verspätung. — главное: число и единица.",
       success: "Hören — bestanden. Фрау Брандт приехала к чайке.",
-      challenge: play(hoeren),
+      challenge: play(back(hoeren, 13, 2)),
     },
     {
       id: "13-s3",
@@ -694,7 +694,7 @@ export const sceneChapter13: Episode = {
       prompt: "Новичок знает одно слово — Moin. Теперь объясняете вы.",
       hint: "Ich heiße … Ich komme aus … Ich wohne in …",
       success: "Sprechen — bestanden. У Луки — блокнот и первое слово.",
-      challenge: play(sprechen),
+      challenge: play(back(sprechen, 13, 3)),
     },
     {
       id: "13-s6",

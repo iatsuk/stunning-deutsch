@@ -10,6 +10,7 @@ import { applyEffects, holds, TRACKS } from "../src/story/world.ts";
 import { sceneChapter1 } from "../src/story/scenes/01.ts";
 import { GERMAN_TARGET, sceneChapters } from "../src/story/scenes/index.ts";
 import { SCENE_RULES } from "../src/story/scenes/rules.ts";
+import { RETURNS, WARMUPS } from "../src/story/scenes/warmups.ts";
 
 const words = JSON.parse(readFileSync(new URL("../src/generated/a1-words.json", import.meta.url)));
 // Общие правила проверяются во всех главах сцен; частные случаи движка — на главе 1.
@@ -275,7 +276,7 @@ test("a new phrase in narration stands where Russian needs the nominative", () =
       }
 });
 
-test("every new word is a lesson word and comes back in an action after it is heard", () => {
+test("every new word has a translation and comes back in an action after it is heard", () => {
   // Основа слова без артикля и знаков: Hafen → hafe, kommen aus → komm.
   const stem = (word) => word.replace(/^(der|die|das) /, "").replace(/[?!.,]/g, "").toLowerCase().slice(0, 4);
   const text = (n) =>
@@ -292,17 +293,24 @@ test("every new word is a lesson word and comes back in an action after it is he
               : n.t === "game"
                 ? JSON.stringify(n.c)
                 : "";
-  for (const chapter of sceneChapters) {
-  const all = chapter.beats.flatMap((beat) => flatNodes(nodes(beat)));
-  for (const [i, node] of all.entries()) {
-    if (node.t !== "say") continue;
-    for (const word of node.learn ?? []) {
-      assert.ok(words[word], `не слово урока: ${word}`);
-      const later = all.slice(i + 1).filter((n) => ACTIONS.includes(n.t));
-      assert.ok(later.some((n) => text(n).toLowerCase().includes(stem(word))), `${chapter.id}: не возвращается: ${word}`);
+  // Слово урока или выражение истории; вернуть его может и планировщик — играми следующих глав.
+  const storyWords = new Set(Object.values(phrases).map((p) => p.de));
+  const planned = (n) => [
+    ...(WARMUPS[n] ?? []).flatMap((g) => g.words),
+    ...(RETURNS[n] ?? []).flatMap((b) => [...(b.docks ?? []), ...(b.bingo ?? [])]),
+  ];
+  sceneChapters.forEach((chapter, ci) => {
+    const all = chapter.beats.flatMap((beat) => flatNodes(nodes(beat)));
+    const ahead = new Set(sceneChapters.slice(ci + 1).flatMap((_, k) => planned(ci + 2 + k)));
+    for (const [i, node] of all.entries()) {
+      if (node.t !== "say") continue;
+      for (const word of node.learn ?? []) {
+        assert.ok(words[word] || storyWords.has(word), `нет ни в словаре уроков, ни в выражениях истории: ${word}`);
+        const later = all.slice(i + 1).filter((n) => ACTIONS.includes(n.t));
+        assert.ok(ahead.has(word) || later.some((n) => text(n).toLowerCase().includes(stem(word))), `${chapter.id}: не возвращается: ${word}`);
+      }
     }
-  }
-  }
+  });
 });
 
 test("branches are played in the player's order and the scene resumes where it stopped", () => {

@@ -862,7 +862,7 @@ export const sceneChapter8: Episode = {
       prompt: "Подвал клуба: тайник чайки и чужой ключ.",
       hint: "Wo? — in/auf + дательный: im Schrank, auf dem Tisch, in der Kiste.",
       success: "Это не тот подвал: ключ Йенсена — от дома у гавани.",
-      challenge: play(lager),
+      challenge: play(back(lager, 8, 2)),
     },
     {
       id: "08-i1",
@@ -899,7 +899,7 @@ export const sceneChapter8: Episode = {
       prompt: "Билет в коридоре, диагноз Даны и записка Йенсену.",
       hint: "in einer Werkstatt — ein+er для женского рода.",
       success: "Воскресенье, 17:45, гавань — Гаарден. След ведёт в мастерскую.",
-      challenge: play(ticket),
+      challenge: play(back(ticket, 8, 3)),
     },
     {
       id: "08-s6",

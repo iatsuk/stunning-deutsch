@@ -859,7 +859,7 @@ export const sceneChapter6: Episode = {
       prompt: "Киоск Фрауке, её кассовая книга и обещание присмотреть за клубом.",
       hint: "am Sonntag, um halb sechs: am — с днём, um — с часами.",
       success: "В 17:35 женщина с большой плоской сумкой ушла к автобусу. Ночью в книге — ничего.",
-      challenge: play(book),
+      challenge: play(back(book, 6, 2)),
     },
     {
       id: "06-s3",
@@ -896,7 +896,7 @@ export const sceneChapter6: Episode = {
       prompt: "Линия времени, замок и записка Йенсену.",
       hint: "anrufen: Wir rufen Sie morgen um acht an.",
       success: "Ответ Йенсена — одно слово: Moin.",
-      challenge: play(timeline),
+      challenge: play(back(timeline, 6, 3)),
     },
     {
       id: "06-s6",

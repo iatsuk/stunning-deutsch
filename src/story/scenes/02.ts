@@ -802,7 +802,7 @@ export const sceneChapter2: Episode = {
       prompt: "Очередь в офисе, хлеб Даны и шёпот фрау Петерсен.",
       hint: "В немецком числе сначала единицы: dreiundzwanzig — 23.",
       success: "Комната 12 найдена, номерок обменян, а у клуба, оказывается, день рождения.",
-      challenge: play(queue),
+      challenge: play(back(queue, 2, 2)),
     },
     {
       id: "02-s3",
@@ -839,7 +839,7 @@ export const sceneChapter2: Episode = {
       prompt: "Подарок фрау Петерсен, замок со шкафчиком и письмо Грете.",
       hint: "Возраст — с sein: Ich bin dreiunddreißig. С haben так не говорят.",
       success: "Грета отказалась от лучшей комнаты и попросила не спрашивать. Подозрение растёт.",
-      challenge: play(refusal),
+      challenge: play(back(refusal, 2, 3)),
     },
     {
       id: "02-s6",

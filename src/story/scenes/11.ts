@@ -771,7 +771,7 @@ export const sceneChapter11: Episode = {
       prompt: "Одиннадцать часов: Грета и Йенсен отвечают записками.",
       hint: "Ich habe gearbeitet. — haben второй, причастие в конце.",
       success: "Табличку отдали в воскресенье в половине шестого, за чаем. Грета её покрасила.",
-      challenge: play(werkstatt),
+      challenge: play(back(werkstatt, 11, 2)),
     },
     {
       id: "11-s3",
@@ -798,7 +798,7 @@ export const sceneChapter11: Episode = {
       prompt: "Заговор до субботы, приглашение для Opa Hansen и мокрая краска.",
       hint: "Hauke soll das Schild tragen. — так просит фрау Петерсен: sollen.",
       success: "Все молчат до субботы. Но краска не высохла, а в субботу дождь.",
-      challenge: play(geheim),
+      challenge: play(back(geheim, 11, 3)),
     },
     {
       id: "11-s6",

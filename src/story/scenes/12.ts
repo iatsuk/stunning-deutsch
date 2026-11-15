@@ -765,7 +765,7 @@ export const sceneChapter12: Episode = {
       prompt: "Табличка в коробке Йенсена, автобус опаздывает, чайки нет.",
       hint: "Wir sind angekommen. — движение: sein.",
       success: "Табличка доехала сухой. Отель у гавани.",
-      challenge: play(weg),
+      challenge: play(back(weg, 12, 2)),
     },
     {
       id: "12-s3",
@@ -792,7 +792,7 @@ export const sceneChapter12: Episode = {
       prompt: "Старт: табличка возвращается, а Йенсен говорит целую фразу.",
       hint: "Das Schild ist zurückgekommen. — движение: sein.",
       success: "Ohne MOIN kein Start — и с MOIN: старт!",
-      challenge: play(start),
+      challenge: play(back(start, 12, 3)),
     },
     {
       id: "12-s6",

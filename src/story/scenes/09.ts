@@ -879,7 +879,7 @@ export const sceneChapter9: Episode = {
       prompt: "Вокзал: табло, автомат и чайка в автобусе.",
       hint: "Steigen Sie ein! — глагол первым, приставка в конце.",
       success: "Чайка едет с вами, Нильс прислал дорогу. Выходите у почты.",
-      challenge: play(bahnhof),
+      challenge: play(back(bahnhof, 9, 2)),
     },
     {
       id: "09-i1",
@@ -916,7 +916,7 @@ export const sceneChapter9: Episode = {
       prompt: "Двор за почтой: закрытая мастерская и табличка в окне.",
       hint: "beim Arzt — у врача, zum Arzt — к врачу.",
       success: "Табличка цела. Грета у врача с молчаливым мужчиной в шарфе.",
-      challenge: play(hof),
+      challenge: play(back(hof, 9, 3)),
     },
     {
       id: "09-s6",

@@ -744,7 +744,7 @@ export const sceneChapter10: Episode = {
       prompt: "Дом врачей: лифт, регистратура и строгая фрау Мёллер.",
       hint: "Darf ich hier warten? — dürfen первым, инфинитив в конце.",
       success: "Элиф записана, команда ждёт в приёмной.",
-      challenge: play(praxis),
+      challenge: play(back(praxis, 10, 2)),
     },
     {
       id: "10-s3",
@@ -771,7 +771,7 @@ export const sceneChapter10: Episode = {
       prompt: "Аптека, открытка от всей гавани и записка Греты.",
       hint: "Du musst im Bett bleiben. Trink viel Tee! — с другом на «ты».",
       success: "Завтра в одиннадцать в мастерской Грета и Йенсен расскажут всё.",
-      challenge: play(apotheke),
+      challenge: play(back(apotheke, 10, 3)),
     },
     {
       id: "10-s6",

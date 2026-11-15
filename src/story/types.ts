@@ -51,7 +51,7 @@ export type SceneNode = SceneStep & {
 type SceneStep =
   /** Рассказчик по-русски; немецкие единицы — {id}, как в рассказе шагов. */
   | { t: "narr"; text: string }
-  /** Реплика героя голосом; learn — новые слова уроков, которые она вводит. */
+  /** Реплика героя голосом; learn — новые слова, которые она вводит: слова уроков и выражения истории. */
   | { t: "say"; who: string; voice: string; de: string; ru: string; learn?: string[] }
   /** Ответ игрока герою по-немецки: верных может быть несколько. */
   | { t: "reply"; task?: string; options: Pick[] }

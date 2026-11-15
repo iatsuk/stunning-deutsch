@@ -868,7 +868,7 @@ export const sceneChapter5: Episode = {
       prompt: "Лавка фрау Крузе: брюки на вырост, Farbe и забытый чек.",
       hint: "die Hose → sie: Ich nehme sie. der Pullover → ihn, das Hemd → es.",
       success: "Тёмно-синюю краску берёт высокий старик, который говорит только Moin. Чек спасён от чайки.",
-      challenge: play(shop),
+      challenge: play(back(shop, 5, 2)),
     },
     {
       id: "05-s3",
@@ -905,7 +905,7 @@ export const sceneChapter5: Episode = {
       prompt: "Доска дня, замок и записка Нильсу.",
       hint: "Welche Farbe? — welche, потому что die Farbe.",
       success: "Тёмно-синий и белый — цвета таблички MOIN. Белая — для букв.",
-      challenge: play(colours),
+      challenge: play(back(colours, 5, 3)),
     },
     {
       id: "05-s6",
