@@ -20,7 +20,7 @@ const lessons = readdirSync(dir)
   .filter((l) => l.order <= chapter);
 const words = (s) => (s.replace(/[*+]/g, "").match(/[A-Za-zÄÖÜäöüß]+/g) ?? []).map((w) => w.toLowerCase());
 const NAMES = new Set(
-  "hauke dana jensen greta nils mateo elif frauke petersen lotte kruse wulff derya kiel gaarden holtenau sprotte moin kiellinie kieler woche opa oma hamburg argentinien türkei ostsee hansen hel xl xxl herr herrn frau club team tage tag ok yilmaz möller sommer dr helgoland".split(" "),
+  "hauke dana jensen heinrich hilde greta nils mateo elif frauke petersen lotte kruse wulff derya kiel gaarden holtenau sprotte moin kiellinie kieler woche opa oma hamburg argentinien türkei ostsee hansen hel xl xxl herr herrn frau club team tage tag ok yilmaz möller sommer dr helgoland".split(" "),
 );
 const FUNCTION = `der die das den dem des ein eine einen einem einer eines kein keine keinen keinem keiner ich du er sie es wir ihr
 mich dich ihn uns euch mir dir ihm ihnen sich mein meine meinen dein deine sein seine ihre ihren unser unsere euer bin bist ist sind

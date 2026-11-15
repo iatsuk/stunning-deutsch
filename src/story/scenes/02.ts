@@ -1,4 +1,4 @@
-import { an, ANSWER, ASK, docks, gaps, gruss, gull as race, HEAR, HINT_DOCK, HINT_HEAR, HINT_LETTER, HINT_LOCK, HINT_ORAL, HINT_PICTURE, HINT_RACE, HINT_SAY, letter, lock, odd, oral, order, pairs, RACE, RACE_STAKES, reply as oralReply, say as oralSay, scene, sort, speak, spot, verdict, write } from "../build.ts";
+import { an, ANSWER, ASK, bingo, docks, gaps, gruss, gull as race, HEAR, HINT_DOCK, HINT_HEAR, HINT_LETTER, HINT_LOCK, HINT_ORAL, HINT_PICTURE, HINT_RACE, HINT_SAY, letter, lock, odd, oral, order, pairs, RACE, RACE_STAKES, reply as oralReply, say as oralSay, scene, sort, speak, spot, verdict, write } from "../build.ts";
 import { phrases } from "../data.ts";
 import type { Challenge, Episode, SceneNode } from "../types.ts";
 
@@ -35,6 +35,15 @@ const countdown: SceneNode[] = [
   },
   narr("Две единицы, elf, Хауке поймал. Остальные карточки держит в клюве {moewe}, усевшись прямо на доску. Элиф сказала бы: это интерес к числам."),
   { t: "game", task: `Отнимите карточки у чайки! ${RACE}`, hint: HINT_RACE, outcome: RACE_STAKES, c: race(["elf", "zwölf", "zehn", "acht", "sechs", "drei"]) },
+  narr("Самые трудные карточки чайка уронила в воду: {dreizehn}, {vierzehn}, {fuenfzehn}, {sechzehn}, {siebzehn}, {achtzehn}."),
+  narr("Хауке вылавливает их сачком и раскладывает десятки: {vierzig}, {sechzig}, {siebzig}, {achtzig}, {neunzig}."),
+  narr("А на обороте доски — рекорды клуба: {tausend} лодок за сто лет и {million} рыбных булочек Фрауке."),
+  {
+    t: "game",
+    task: "Мокрые карточки сохнут на причале. Послушайте число и закройте его на карточке.",
+    hint: HINT_HEAR,
+    c: bingo(["dreizehn", "vierzehn", "fünfzehn", "sechzehn", "siebzehn", "achtzehn", "sechzig", "siebzig", "tausend"]),
+  },
   { t: "gap", task: "Поставьте на доску сегодняшнее число.", text: "Noch ___ Tage!", options: ["elf", "zwölf", "zehn"], answer: "elf", ru: "Ещё одиннадцать дней!" },
   jensen("Moin moin.", "Привет-привет."),
   narr("Мимо проходит Йенсен с кружкой чая. Хауке чуть снова не роняет карточки: — Moin moin? Сегодня он разговорчив. Это к переменам."),
@@ -322,6 +331,7 @@ const guestbook: SceneNode[] = [
               no("Zett – Pe – Er – O – Te – Te – E", "Zett — это Z, а «Sprotte» начинается с S, «эс»."),
             ],
           },
+          narr("Если графа непонятна, фрау Петерсен готова {wiederholen} и {erklaeren}: {zumbeispiel}, Hausnummer — номер дома."),
           narr("Фрау Петерсен проверяет каждую графу по буквам. Графы называются словами, которые вы сегодня уже слышали."),
           {
             t: "game",
@@ -361,7 +371,7 @@ const guestbook: SceneNode[] = [
     hint: "zweiunddreißig — 32, vierundfünfzig — 54: сначала единицы, потом десятки.",
     c: { kind: "code", length: 10, answer: "0151325419" },
   },
-  narr("Гудки. Щелчок — и {nachricht} автоответчика. Говорит Нильс. Много."),
+  narr("0151 — это {vorwahl} мобильного. Гудки. Щелчок — и {nachricht} автоответчика. Говорит Нильс. Много."),
   {
     t: "say",
     who: "Nils",
@@ -369,6 +379,7 @@ const guestbook: SceneNode[] = [
     de: "Hallo! Hier ist Nils, Nils Hansen aus Hamburg! Ich habe jetzt Pause. Bitte Ihre Nummer und Ihre Frage! Tschüss! Nein: Auf Wiederhören!",
     ru: "Привет! Это Нильс, Нильс Хансен из Гамбурга! У меня сейчас перерыв. Пожалуйста, ваш номер и ваш вопрос! Пока! Нет: до свидания!",
   },
+  narr("Это не Нильс, а {anrufbeantworter}. Настоящий {anruf} будет потом: Нильс любит {telefonieren}, но только после перерыва."),
   {
     t: "game",
     task: "Верно или нет? Переслушайте автоответчик, если нужно.",
@@ -435,6 +446,7 @@ const gift: SceneNode[] = [
     ],
   },
   narr("Тишина. Шаги. Из-под {tuer} выезжает конверт — и снова тишина. Гости и правда отвечают только письменно."),
+  narr("На любой вопрос здесь одна {antwort} — записка. А {antworten} голосом гости, похоже, не умеют."),
   narr("В конверте старый мобильный и записка — конечно, с восклицательными знаками."),
   {
     t: "game",
@@ -456,6 +468,7 @@ const gift: SceneNode[] = [
   },
   { t: "item", icon: "📱", de: "das Handy", ru: "старый мобильный Нильса — подарок детективу" },
   dana("Nils hat zwei Handys? Diagnose: Er spricht viel!", "У Нильса два мобильных? Диагноз: болтун!"),
+  narr("Старому мобильному незнакомы {internet} и {email}: он умеет звонить и фотографировать. А {computer} Нильса остался в Гамбурге."),
   narr("На экране одна папка — Fotos. Вчерашний вечер."),
   { t: "pic", src: "02-selfie.jpg", alt: "Селфи Нильса вчера вечером у подставки с табличкой MOIN; позади Грета меряет табличку складным метром, у её ног банка краски; в углу кадра чайка" },
   {

@@ -9,10 +9,15 @@ import { sceneChapters } from "../src/story/scenes/index.ts";
 import { flatNodes } from "../src/story/scene.ts";
 import { episodes, phrases } from "../src/story/data.ts";
 import { sceneUnits as reviewUnits } from "../src/story/review.ts";
+import { WARMUPS } from "../src/story/scenes/warmups.ts";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
 const rel = (file) => path.relative(root, file);
-export const THRESHOLD = { hits: 6, chapters: 4, actions: 2, heard: 2 };
+/** Пороги закрепления (A1-PLAN.md): правило — строже, слово — мягче, по решению автора от 15 ноября 2026 года. */
+export const THRESHOLD = {
+  words: { hits: 4, chapters: 3, actions: 1, heard: 1 },
+  grammar: { hits: 6, chapters: 4, actions: 2, heard: 2 },
+};
 export const BASELINE = path.join(root, "scripts/a1-index-baseline.json");
 const REPORT = path.join(root, "A1-INDEX.md");
 const JSON_OUT = path.join(root, "src/generated/a1-index.json");
@@ -52,7 +57,7 @@ function heads(set) {
 const HEARD_GAMES = new Set(["sounds", "compound", "chat", "bingo", "scene", "letters", "docks", "gull", "lock", "oral"]);
 const READING = new Set(["narr", "say", "pic", "clue", "item", "when"]);
 
-function sceneUnits() {
+function sceneUnits(warmups = true) {
   const units = [];
   sceneChapters.forEach((chapter, ci) => {
     const n = ci + 1;
@@ -78,6 +83,35 @@ function sceneUnits() {
         });
       }
   });
+  if (warmups) units.push(...warmupUnits());
+  return units;
+}
+
+/** Игры раунда перед главой (src/story/scenes/warmups.ts): одинаковы у всех игроков, считаются узлами главы. */
+function warmupUnits() {
+  const file = path.join(root, "src/story/scenes/warmups.ts");
+  const lines = readFileSync(file, "utf8").split("\n");
+  const units = [];
+  for (const [chapter, games] of Object.entries(WARMUPS)) {
+    const n = Number(chapter);
+    let at = lines.findIndex((l) => l.trim().startsWith(`${n}: [`));
+    for (const game of games) {
+      at = lines.findIndex((l, i) => i > at && l.includes(`mech: "${game.mech}"`));
+      const text = game.words.join("\n");
+      units.push({
+        chapter: n,
+        scene: `${String(n).padStart(2, "0")}-разминка`,
+        kind: game.mech,
+        action: true,
+        heard: HEARD_GAMES.has(game.mech),
+        text,
+        toks: tokens(text),
+        rules: [],
+        file: rel(file),
+        line: at + 1,
+      });
+    }
+  }
   return units;
 }
 
@@ -289,9 +323,10 @@ function lineUnits(files) {
 
 // ——— Сборка ———
 
-export function buildIndex() {
+/** warmups: false — без раундов перед главой: так планировщик возвращений (scripts/a1-returns.mjs) видит главы сами по себе. */
+export function buildIndex({ warmups = true } = {}) {
   const reference = parse(readFileSync(path.join(root, "content/reference/start-deutsch-1.yaml"), "utf8"));
-  const units = sceneUnits().map((u) => ({ ...u, set: new Set(u.toks) }));
+  const units = sceneUnits(warmups).map((u) => ({ ...u, set: new Set(u.toks) }));
   const lessonFiles = readdirSync(path.join(root, "content/a1")).filter((f) => f.endsWith(".yaml")).sort().map((f) => path.join(root, "content/a1", f));
   const lessonLines = lineUnits(lessonFiles);
   const checkLines = lineUnits(readdirSync(path.join(root, "content/assessments")).filter((f) => /^1[2-5]-a1/.test(f)).map((f) => path.join(root, "content/assessments", f)));
@@ -322,7 +357,7 @@ export function buildIndex() {
       of: w.of,
       part: partOf(w),
       review: pool.has(w.de),
-      ...count(hits),
+      ...count(hits, THRESHOLD.words),
       lessons: [...lessons].map(([file, line]) => ({ file, line })),
       checks: checkLines.filter((l) => matches(m, l.toks, l.set, l)).length,
       classic: classic.filter((e) => matches(m, e.toks, e.set, e)).map((e) => e.n),
@@ -337,17 +372,16 @@ export function buildIndex() {
     const tests = (g.find ?? []).map((p) => (p === "@plurals" ? (u) => u.toks.some((t) => plurals.has(t)) : ((rx) => (u) => rx.test(u.text))(new RegExp(`(?<![\\p{L}])(?:${p})(?![\\p{L}])`, "u"))));
     const rules = g.rules ?? [];
     const hits = units.filter((u) => u.rules.some((r) => rules.includes(r)) || tests.some((t) => t(u)));
-    return { id: g.id, group: g.group, title: g.title, rules, explained: rules.some((r) => usedRules.has(r)), ...count(hits) };
+    return { id: g.id, group: g.group, title: g.title, rules, explained: rules.some((r) => usedRules.has(r)), ...count(hits, THRESHOLD.grammar) };
   });
   for (const g of grammar) if (!g.explained && g.status === "закреплено") g.status = "без объяснения";
   return { threshold: THRESHOLD, words, grammar, summary: summarize(words, grammar) };
 }
 
-function count(hits) {
+function count(hits, t) {
   const chapters = [...new Set(hits.map((u) => u.chapter))].sort((a, b) => a - b);
   const actions = hits.filter((u) => u.action).length;
   const heard = hits.filter((u) => u.heard).length;
-  const t = THRESHOLD;
   const status = !hits.length ? "нет" : hits.length === 1 ? "один раз" : hits.length >= t.hits && chapters.length >= t.chapters && actions >= t.actions && heard >= t.heard ? "закреплено" : "слабо";
   return {
     status,
@@ -355,7 +389,7 @@ function count(hits) {
     chapters,
     actions,
     heard,
-    where: hits.slice(0, 16).map((u) => ({ scene: u.scene, line: u.line, kind: u.kind })),
+    where: hits.slice(0, 16).map((u) => ({ scene: u.scene, line: u.line, kind: u.kind, ...(u.scene.endsWith("-разминка") ? { file: u.file } : {}) })),
   };
 }
 
@@ -393,7 +427,7 @@ function partOf(w) {
 }
 
 const sceneFile = (scene) => `src/story/scenes/${scene.slice(0, 2)}.ts`;
-const link = (w) => `[${w.scene}](${sceneFile(w.scene)}#L${w.line})`;
+const link = (w) => `[${w.scene}](${w.file ?? sceneFile(w.scene)}#L${w.line})`;
 function places(item, limit = 8) {
   const seen = new Set();
   const out = [];
@@ -421,8 +455,9 @@ export function renderReport(index) {
     "Сгенерирован `scripts/a1-index.mjs` при `pnpm content`; не редактируйте вручную. Правила подсчёта и",
     "решения автора — `A1-PLAN.md`, эталон — `content/reference/start-deutsch-1.yaml`.",
     "",
-    `Закреплено: не меньше ${t.hits} встреч в новой версии Moin, не меньше чем в ${t.chapters} главах, из них ${t.actions} в действии`,
-    `и ${t.heard} на слух. Числа в таблицах: встреч · глав · действий · на слух. Столбец «Откуда»: номера уроков A1`,
+    `Слово закреплено: не меньше ${t.words.hits} встреч в новой версии Moin, не меньше чем в ${t.words.chapters} главах, из них ${t.words.actions} в`,
+    `действии и ${t.words.heard} на слух. Правило — ${t.grammar.hits} встреч в ${t.grammar.chapters} главах, ${t.grammar.actions} в действии, ${t.grammar.heard} на слух. Числа в`,
+    `таблицах: встреч · глав · действий · на слух. Раунд перед главой — часть главы. Столбец «Откуда»: номера уроков A1`,
     "и «экз.» для словаря экзамена. Внутри разделов слова сгруппированы по частям речи и идут по алфавиту.",
     "",
     `Разделы: [Сводка](#сводка) · [Грамматика](#грамматика) · ${["нет", "один раз", "слабо", "закреплено"].map((s) => `[Слова: ${s}](#${ANCHORS[s]})`).join(" · ")}`,

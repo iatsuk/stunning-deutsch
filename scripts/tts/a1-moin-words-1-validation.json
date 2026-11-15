@@ -1,0 +1,975 @@
+{
+  "date": "2026-11-15",
+  "scope": "Exam vocabulary of chapters 1–6 of the Moin scene prototype: 113 story expressions (form fields, numbers 13–90 and 1000, phone and mail, family, food, shop and money, months, time and routine) and 7 new lines",
+  "model": "k2-fsa/OmniVoice",
+  "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+  "candidatesPerPhrase": 3,
+  "asr": "openai/whisper-large-v3",
+  "notes": [
+    "Each phrase has three takes; the chosen take has the closest transcript, an end level below -32 dB and no fragment flagged by tails.py. tails.py flagged 9 of 360 takes, none of them chosen; it passes on all 120 imported files.",
+    "Whisper writes numbers as digits (13–18, 40, 60–90, 1000); these takes say the numbers in words as written.",
+    "Two single words form minimal pairs with more frequent words, and free transcription returns the frequent one for every take: bitter → «Bitte», enden → «Enten». For these takes Whisper scored both spellings on the same audio; the chosen takes are more likely as written: bitter −9.35 against bitte −13.76, enden −7.01 against Enten −9.63 (log-probability)."
+  ],
+  "files": [
+    {
+      "file": "01ea21f73f3b.m4a",
+      "text": "der Reis",
+      "voice": "Anna",
+      "seed": 21095690,
+      "heard": "Der Reis",
+      "endDb": -51.1
+    },
+    {
+      "file": "04d05fa4ae60.m4a",
+      "text": "beginnen",
+      "voice": "Anna",
+      "seed": 20605679,
+      "heard": "Beginnen",
+      "endDb": -59.3
+    },
+    {
+      "file": "05d2e6e4f206.m4a",
+      "text": "neunzig",
+      "voice": "Anna",
+      "seed": 20295910,
+      "heard": "90",
+      "endDb": -61.9
+    },
+    {
+      "file": "07b47402220f.m4a",
+      "text": "der September",
+      "voice": "Anna",
+      "seed": 21065583,
+      "heard": "Der September",
+      "endDb": -55.2
+    },
+    {
+      "file": "0a6a101f64b1.m4a",
+      "text": "das Hähnchen, die Hähnchen",
+      "voice": "Anna",
+      "seed": 20580847,
+      "heard": "Das Hähnchen, die Hähnchen",
+      "endDb": -59.4
+    },
+    {
+      "file": "0b35403dbb43.m4a",
+      "text": "gleich",
+      "voice": "Anna",
+      "seed": 21228626,
+      "heard": "Gleich.",
+      "endDb": -65.7
+    },
+    {
+      "file": "0c43e767fc9c.m4a",
+      "text": "das Geburtsjahr, die Geburtsjahre",
+      "voice": "Anna",
+      "seed": 20954940,
+      "heard": "Das Geburtsjahr, die Geburtsjahre",
+      "endDb": -57.4
+    },
+    {
+      "file": "0e2328f9531f.m4a",
+      "text": "lieben",
+      "voice": "Anna",
+      "seed": 20341550,
+      "heard": "Lieben",
+      "endDb": -67.4
+    },
+    {
+      "file": "13b9847aa4e4.m4a",
+      "text": "die Heimat",
+      "voice": "Anna",
+      "seed": 20776563,
+      "heard": "Die Heimat",
+      "endDb": -64.9
+    },
+    {
+      "file": "162a8b0df6a8.m4a",
+      "text": "der Geburtsort, die Geburtsorte",
+      "voice": "Anna",
+      "seed": 20662502,
+      "heard": "Der Geburtsort. Die Geburtsorte.",
+      "endDb": -51.0
+    },
+    {
+      "file": "17c6330f3ab4.m4a",
+      "text": "telefonieren",
+      "voice": "Anna",
+      "seed": 20860564,
+      "heard": "Telefonieren",
+      "endDb": -61.1
+    },
+    {
+      "file": "19b394726008.m4a",
+      "text": "die Dusche, die Duschen",
+      "voice": "Anna",
+      "seed": 20640902,
+      "heard": "Die Dusche, die Duschen",
+      "endDb": -57.8
+    },
+    {
+      "file": "1a06fa967534.m4a",
+      "text": "bitter",
+      "voice": "Anna",
+      "seed": 20559299,
+      "heard": "Bitte.",
+      "endDb": -58.0
+    },
+    {
+      "file": "1da20a238694.m4a",
+      "text": "der Erwachsene, die Erwachsenen",
+      "voice": "Anna",
+      "seed": 20276771,
+      "heard": "Der Erwachsene, die Erwachsenen",
+      "endDb": -62.7
+    },
+    {
+      "file": "1e6cbac7266b.m4a",
+      "text": "Wann frühstückst du?",
+      "voice": "Reed",
+      "seed": 21175947,
+      "heard": "Wann frühstückst du?",
+      "endDb": -66.0
+    },
+    {
+      "file": "1efc0249aedc.m4a",
+      "text": "gerade",
+      "voice": "Anna",
+      "seed": 21252058,
+      "heard": "Gerade.",
+      "endDb": -59.4
+    },
+    {
+      "file": "1f41af347f4d.m4a",
+      "text": "der Ausländer, die Ausländer",
+      "voice": "Anna",
+      "seed": 21049581,
+      "heard": "Der Ausländer, die Ausländer",
+      "endDb": -53.6
+    },
+    {
+      "file": "21bcf5239b01.m4a",
+      "text": "das Getränk, die Getränke",
+      "voice": "Anna",
+      "seed": 20580641,
+      "heard": "Das Getränk. Die Getränke.",
+      "endDb": -55.5
+    },
+    {
+      "file": "21df4047fe0a.m4a",
+      "text": "die Bäckerei, die Bäckereien",
+      "voice": "Anna",
+      "seed": 21160392,
+      "heard": "Die Bäckerei. Die Bäckereien.",
+      "endDb": -62.6
+    },
+    {
+      "file": "25a7997b209d.m4a",
+      "text": "der Preis, die Preise",
+      "voice": "Anna",
+      "seed": 21018412,
+      "heard": "Der Preis, die Preise",
+      "endDb": -59.8
+    },
+    {
+      "file": "270501ffba7a.m4a",
+      "text": "bald",
+      "voice": "Anna",
+      "seed": 21117402,
+      "heard": "Bald.",
+      "endDb": -63.0
+    },
+    {
+      "file": "27ada6ba54b5.m4a",
+      "text": "das Lokal, die Lokale",
+      "voice": "Anna",
+      "seed": 20331571,
+      "heard": "Das Lokal, die Lokale",
+      "endDb": -57.5
+    },
+    {
+      "file": "29a151d785ac.m4a",
+      "text": "siebzig",
+      "voice": "Anna",
+      "seed": 20821371,
+      "heard": "70",
+      "endDb": -64.7
+    },
+    {
+      "file": "2a5d9b080401.m4a",
+      "text": "der Pass, die Pässe",
+      "voice": "Anna",
+      "seed": 20587856,
+      "heard": "Der Pass. Die Pässe.",
+      "endDb": -49.5
+    },
+    {
+      "file": "2bc08c3662f6.m4a",
+      "text": "die Ehefrau, die Ehefrauen",
+      "voice": "Anna",
+      "seed": 20350742,
+      "heard": "Die Ehefrau, die Ehefrauen",
+      "endDb": -56.9
+    },
+    {
+      "file": "2e8526dda170.m4a",
+      "text": "gratulieren",
+      "voice": "Anna",
+      "seed": 20863918,
+      "heard": "Gratulieren",
+      "endDb": -53.6
+    },
+    {
+      "file": "30678dfbd6c8.m4a",
+      "text": "der Wochentag, die Wochentage",
+      "voice": "Anna",
+      "seed": 21117736,
+      "heard": "Der Wochentag, die Wochentage",
+      "endDb": -54.2
+    },
+    {
+      "file": "331c0d53958b.m4a",
+      "text": "unterschreiben",
+      "voice": "Anna",
+      "seed": 20943467,
+      "heard": "Unterschreiben",
+      "endDb": -61.0
+    },
+    {
+      "file": "331d53f6ae45.m4a",
+      "text": "kennenlernen",
+      "voice": "Anna",
+      "seed": 21020419,
+      "heard": "Kennenlernen",
+      "endDb": -60.0
+    },
+    {
+      "file": "3490ff268ef8.m4a",
+      "text": "die Unterschrift, die Unterschriften",
+      "voice": "Anna",
+      "seed": 20920967,
+      "heard": "Die Unterschrift. Die Unterschriften.",
+      "endDb": -57.2
+    },
+    {
+      "file": "39609ec88c31.m4a",
+      "text": "der Feiertag, die Feiertage",
+      "voice": "Anna",
+      "seed": 20855808,
+      "heard": "Der Feiertag, die Feiertage",
+      "endDb": -49.9
+    },
+    {
+      "file": "3af5d234d035.m4a",
+      "text": "müde",
+      "voice": "Anna",
+      "seed": 20336085,
+      "heard": "Müde",
+      "endDb": -54.0
+    },
+    {
+      "file": "3bff47c06095.m4a",
+      "text": "sechzig",
+      "voice": "Anna",
+      "seed": 20766099,
+      "heard": "60",
+      "endDb": -70.4
+    },
+    {
+      "file": "3dbd5277944b.m4a",
+      "text": "der November",
+      "voice": "Anna",
+      "seed": 20942763,
+      "heard": "Der November",
+      "endDb": -55.5
+    },
+    {
+      "file": "3e2857c783e2.m4a",
+      "text": "Duschst du am Morgen?",
+      "voice": "Anna",
+      "seed": 20576113,
+      "heard": "Duschst du am Morgen?",
+      "endDb": -66.2
+    },
+    {
+      "file": "3e659229bd68.m4a",
+      "text": "der Schluss, die Schlüsse",
+      "voice": "Anna",
+      "seed": 21104870,
+      "heard": "Der Schluss. Die Schlüsse.",
+      "endDb": -59.7
+    },
+    {
+      "file": "422c01895aee.m4a",
+      "text": "vierzig",
+      "voice": "Anna",
+      "seed": 21034190,
+      "heard": "40",
+      "endDb": -54.5
+    },
+    {
+      "file": "4239e0274ec0.m4a",
+      "text": "eilig",
+      "voice": "Anna",
+      "seed": 20510479,
+      "heard": "Eilig",
+      "endDb": -55.0
+    },
+    {
+      "file": "438cf429af72.m4a",
+      "text": "dreizehn",
+      "voice": "Anna",
+      "seed": 21116050,
+      "heard": "13",
+      "endDb": -69.0
+    },
+    {
+      "file": "43d66fb93187.m4a",
+      "text": "die Kleidung",
+      "voice": "Anna",
+      "seed": 20731175,
+      "heard": "Die Kleidung",
+      "endDb": -58.8
+    },
+    {
+      "file": "451303f7f5ae.m4a",
+      "text": "das Obst",
+      "voice": "Anna",
+      "seed": 20553964,
+      "heard": "Das Obst",
+      "endDb": -53.8
+    },
+    {
+      "file": "469c1d212522.m4a",
+      "text": "die Kreditkarte, die Kreditkarten",
+      "voice": "Anna",
+      "seed": 20830816,
+      "heard": "Die Kreditkarte. Die Kreditkarten.",
+      "endDb": -58.6
+    },
+    {
+      "file": "476a10210520.m4a",
+      "text": "international",
+      "voice": "Anna",
+      "seed": 20965952,
+      "heard": "International",
+      "endDb": -62.7
+    },
+    {
+      "file": "4813681d95a8.m4a",
+      "text": "die Antwort, die Antworten",
+      "voice": "Anna",
+      "seed": 20608840,
+      "heard": "Die Antwort, die Antworten.",
+      "endDb": -57.9
+    },
+    {
+      "file": "481e33170cb4.m4a",
+      "text": "die Birne, die Birnen",
+      "voice": "Anna",
+      "seed": 20636291,
+      "heard": "Die Birne, die Birnen",
+      "endDb": -49.6
+    },
+    {
+      "file": "4a22b36fc1f0.m4a",
+      "text": "tausend",
+      "voice": "Anna",
+      "seed": 21050320,
+      "heard": "Tausend",
+      "endDb": -55.3
+    },
+    {
+      "file": "4cc847d39ac7.m4a",
+      "text": "der Ehemann, die Ehemänner",
+      "voice": "Anna",
+      "seed": 20481255,
+      "heard": "Der Ehemann, die Ehemänner",
+      "endDb": -56.1
+    },
+    {
+      "file": "51b27bbdb16f.m4a",
+      "text": "vierzehn",
+      "voice": "Anna",
+      "seed": 20334701,
+      "heard": "14",
+      "endDb": -65.6
+    },
+    {
+      "file": "55407bf5706a.m4a",
+      "text": "der März",
+      "voice": "Anna",
+      "seed": 21227432,
+      "heard": "Der März",
+      "endDb": -70.6
+    },
+    {
+      "file": "56fabd82c099.m4a",
+      "text": "der Januar",
+      "voice": "Anna",
+      "seed": 20552407,
+      "heard": "Der Januar",
+      "endDb": -55.7
+    },
+    {
+      "file": "5712f03a4324.m4a",
+      "text": "fünfzehn",
+      "voice": "Anna",
+      "seed": 20646899,
+      "heard": "15",
+      "endDb": -59.3
+    },
+    {
+      "file": "5970f6d269be.m4a",
+      "text": "bar",
+      "voice": "Anna",
+      "seed": 20455006,
+      "heard": "Bar",
+      "endDb": -54.6
+    },
+    {
+      "file": "59aaa88a2623.m4a",
+      "text": "das Ausland",
+      "voice": "Anna",
+      "seed": 21207346,
+      "heard": "Das Ausland",
+      "endDb": -55.8
+    },
+    {
+      "file": "5b6b758d8f01.m4a",
+      "text": "das Gewicht, die Gewichte",
+      "voice": "Anna",
+      "seed": 21100769,
+      "heard": "Das Gewicht, die Gewichte.",
+      "endDb": -60.5
+    },
+    {
+      "file": "5cb9edf459c6.m4a",
+      "text": "schmecken",
+      "voice": "Anna",
+      "seed": 21188053,
+      "heard": "schmecken",
+      "endDb": -61.2
+    },
+    {
+      "file": "609acd87d900.m4a",
+      "text": "der Großvater, die Großväter",
+      "voice": "Anna",
+      "seed": 20723296,
+      "heard": "Der Großvater, die Großväter",
+      "endDb": -68.9
+    },
+    {
+      "file": "6552d7477efa.m4a",
+      "text": "der Cent, die Cent",
+      "voice": "Anna",
+      "seed": 20771674,
+      "heard": "Der Cent. Die Cent.",
+      "endDb": -52.0
+    },
+    {
+      "file": "6788c566d584.m4a",
+      "text": "Ich frühstücke um acht.",
+      "voice": "Anna",
+      "seed": 20340930,
+      "heard": "Ich frühstücke um acht.",
+      "endDb": -58.6
+    },
+    {
+      "file": "6cd65610db09.m4a",
+      "text": "der Februar",
+      "voice": "Anna",
+      "seed": 21007401,
+      "heard": "Der Februar",
+      "endDb": -66.4
+    },
+    {
+      "file": "7063ae85de3f.m4a",
+      "text": "der Ausweis, die Ausweise",
+      "voice": "Anna",
+      "seed": 20358845,
+      "heard": "Der Ausweis, die Ausweise.",
+      "endDb": -56.2
+    },
+    {
+      "file": "724d6c1e06bb.m4a",
+      "text": "das Restaurant, die Restaurants",
+      "voice": "Anna",
+      "seed": 21232249,
+      "heard": "Das Restaurant. Die Restaurants.",
+      "endDb": -51.3
+    },
+    {
+      "file": "73ca6fa4224f.m4a",
+      "text": "der Familienstand",
+      "voice": "Anna",
+      "seed": 20876719,
+      "heard": "Der Familienstand",
+      "endDb": -47.3
+    },
+    {
+      "file": "7925231f9c8d.m4a",
+      "text": "das Gramm, die Gramm",
+      "voice": "Anna",
+      "seed": 20286125,
+      "heard": "Das Gramm. Die Gramm.",
+      "endDb": -66.6
+    },
+    {
+      "file": "7c56f0507eb0.m4a",
+      "text": "das Prozent, die Prozente",
+      "voice": "Anna",
+      "seed": 21115694,
+      "heard": "Das Prozent, die Prozente.",
+      "endDb": -55.0
+    },
+    {
+      "file": "81b4cd5267b7.m4a",
+      "text": "das Alter",
+      "voice": "Anna",
+      "seed": 21087191,
+      "heard": "Das Alter",
+      "endDb": -64.3
+    },
+    {
+      "file": "845c58d20001.m4a",
+      "text": "anziehen",
+      "voice": "Anna",
+      "seed": 20292095,
+      "heard": "Anziehen",
+      "endDb": -63.6
+    },
+    {
+      "file": "847111309231.m4a",
+      "text": "die Hochzeit, die Hochzeiten",
+      "voice": "Anna",
+      "seed": 20843567,
+      "heard": "Die Hochzeit, die Hochzeiten",
+      "endDb": -58.3
+    },
+    {
+      "file": "84958f2b654a.m4a",
+      "text": "sofort",
+      "voice": "Anna",
+      "seed": 21248345,
+      "heard": "Sofort.",
+      "endDb": -68.5
+    },
+    {
+      "file": "87c6b6116748.m4a",
+      "text": "der Computer, die Computer",
+      "voice": "Anna",
+      "seed": 21145094,
+      "heard": "Der Computer, die Computer.",
+      "endDb": -57.7
+    },
+    {
+      "file": "884f2cf7f4e8.m4a",
+      "text": "Möchten Sie noch etwas bestellen? Ein Getränk? Ein Fischbrötchen?",
+      "voice": "Eddy",
+      "seed": 20502536,
+      "heard": "Möchten Sie noch etwas bestellen? Ein Getränk? Ein Fischbrötchen?",
+      "endDb": -43.4
+    },
+    {
+      "file": "8d5e5e1cd62b.m4a",
+      "text": "der April",
+      "voice": "Anna",
+      "seed": 20667241,
+      "heard": "Der April",
+      "endDb": -56.5
+    },
+    {
+      "file": "91755a6f31ea.m4a",
+      "text": "der Juli",
+      "voice": "Anna",
+      "seed": 20698890,
+      "heard": "Der Juli",
+      "endDb": -59.4
+    },
+    {
+      "file": "919e84c68a41.m4a",
+      "text": "der Moment, die Momente",
+      "voice": "Anna",
+      "seed": 20733264,
+      "heard": "Der Moment, die Momente.",
+      "endDb": -66.4
+    },
+    {
+      "file": "91a8d65a629e.m4a",
+      "text": "Ich bin müde. Morgen stehe ich um sieben auf, ich dusche, ich frühstücke – und dann Kaffee!",
+      "voice": "Rocko",
+      "seed": 21057820,
+      "heard": "Ich bin müde. Morgen stehe ich um sieben auf, ich dusche, ich frühstücke und dann Kaffee.",
+      "endDb": -60.9
+    },
+    {
+      "file": "95ee4d20e36e.m4a",
+      "text": "sechzehn",
+      "voice": "Anna",
+      "seed": 21025021,
+      "heard": "16",
+      "endDb": -70.1
+    },
+    {
+      "file": "96ac0fe8c6da.m4a",
+      "text": "die Lebensmittel",
+      "voice": "Anna",
+      "seed": 20731672,
+      "heard": "Die Lebensmittel",
+      "endDb": -52.4
+    },
+    {
+      "file": "9caf9d454178.m4a",
+      "text": "der Anruf, die Anrufe",
+      "voice": "Anna",
+      "seed": 21040455,
+      "heard": "Der Anruf, die Anrufe.",
+      "endDb": -59.0
+    },
+    {
+      "file": "9ebcb28da9c4.m4a",
+      "text": "geboren",
+      "voice": "Anna",
+      "seed": 20937683,
+      "heard": "Geboren",
+      "endDb": -70.9
+    },
+    {
+      "file": "9f9b1d43303c.m4a",
+      "text": "der Schinken, die Schinken",
+      "voice": "Anna",
+      "seed": 20950812,
+      "heard": "Der Schinken. Die Schinken.",
+      "endDb": -60.9
+    },
+    {
+      "file": "a4b86020bf9b.m4a",
+      "text": "anmachen",
+      "voice": "Anna",
+      "seed": 20965610,
+      "heard": "Anmachen",
+      "endDb": -48.8
+    },
+    {
+      "file": "a90af26e5673.m4a",
+      "text": "Hm! Das riecht gut. Und es schmeckt! Nicht zu bitter?",
+      "voice": "Reed",
+      "seed": 20345491,
+      "heard": "Hm, das riecht gut. Und es schmeckt. Nicht zu bitter?",
+      "endDb": -32.9
+    },
+    {
+      "file": "a9105fd5ce3f.m4a",
+      "text": "zurzeit",
+      "voice": "Anna",
+      "seed": 20695229,
+      "heard": "Zurzeit.",
+      "endDb": -69.2
+    },
+    {
+      "file": "ab471c45a1cb.m4a",
+      "text": "siebzehn",
+      "voice": "Anna",
+      "seed": 20622106,
+      "heard": "17",
+      "endDb": -56.9
+    },
+    {
+      "file": "b022d7c0af06.m4a",
+      "text": "der Juni",
+      "voice": "Anna",
+      "seed": 20374741,
+      "heard": "Der Juni",
+      "endDb": -56.4
+    },
+    {
+      "file": "b2427d41d765.m4a",
+      "text": "der Glückwunsch, die Glückwünsche",
+      "voice": "Anna",
+      "seed": 20313669,
+      "heard": "Der Glückwunsch. Die Glückwünsche.",
+      "endDb": -56.5
+    },
+    {
+      "file": "b44f287b6258.m4a",
+      "text": "der Mensch, die Menschen",
+      "voice": "Anna",
+      "seed": 20867670,
+      "heard": "Der Mensch, die Menschen",
+      "endDb": -59.0
+    },
+    {
+      "file": "b969cf7078e9.m4a",
+      "text": "das Salz",
+      "voice": "Anna",
+      "seed": 21236199,
+      "heard": "Das Salz",
+      "endDb": -61.7
+    },
+    {
+      "file": "bdebd3d8174c.m4a",
+      "text": "ausmachen",
+      "voice": "Anna",
+      "seed": 20379564,
+      "heard": "Ausmachen",
+      "endDb": -59.5
+    },
+    {
+      "file": "c0e46f21c5ef.m4a",
+      "text": "zum Beispiel",
+      "voice": "Anna",
+      "seed": 20821839,
+      "heard": "Zum Beispiel.",
+      "endDb": -52.9
+    },
+    {
+      "file": "c347164153cb.m4a",
+      "text": "die Vorwahl, die Vorwahlen",
+      "voice": "Anna",
+      "seed": 20743322,
+      "heard": "Die Vorwahl, die Vorwahlen",
+      "endDb": -62.8
+    },
+    {
+      "file": "c4341e62c1ce.m4a",
+      "text": "Ich habe einen Rock, aber ich brauche eine Hose!",
+      "voice": "Anna",
+      "seed": 20408972,
+      "heard": "Ich habe einen Rock, aber ich brauche eine Hose.",
+      "endDb": -57.1
+    },
+    {
+      "file": "c48d3f8ed61c.m4a",
+      "text": "wiederholen",
+      "voice": "Anna",
+      "seed": 21027307,
+      "heard": "Wiederholen",
+      "endDb": -70.5
+    },
+    {
+      "file": "c57c4f6ec69d.m4a",
+      "text": "der Dezember",
+      "voice": "Anna",
+      "seed": 20553307,
+      "heard": "Der Dezember",
+      "endDb": -58.2
+    },
+    {
+      "file": "c6191086ac56.m4a",
+      "text": "die Million, die Millionen",
+      "voice": "Anna",
+      "seed": 21004470,
+      "heard": "Die Million. Die Millionen.",
+      "endDb": -54.1
+    },
+    {
+      "file": "cde261a0aa22.m4a",
+      "text": "das Internet",
+      "voice": "Anna",
+      "seed": 20491185,
+      "heard": "Das Internet.",
+      "endDb": -65.2
+    },
+    {
+      "file": "cf59fb25b150.m4a",
+      "text": "die Großmutter, die Großmütter",
+      "voice": "Anna",
+      "seed": 20859359,
+      "heard": "Die Großmutter, die Großmütter",
+      "endDb": -61.4
+    },
+    {
+      "file": "cfb7f1cd7ca6.m4a",
+      "text": "die Butter",
+      "voice": "Anna",
+      "seed": 21017508,
+      "heard": "Die Butter",
+      "endDb": -65.8
+    },
+    {
+      "file": "d0abd6cbcfae.m4a",
+      "text": "das Geschäft, die Geschäfte",
+      "voice": "Anna",
+      "seed": 20927246,
+      "heard": "Das Geschäft. Die Geschäfte.",
+      "endDb": -52.8
+    },
+    {
+      "file": "d1a572349af3.m4a",
+      "text": "das Geld",
+      "voice": "Anna",
+      "seed": 21128130,
+      "heard": "Das Geld",
+      "endDb": -69.2
+    },
+    {
+      "file": "d29566f4b18d.m4a",
+      "text": "der August",
+      "voice": "Anna",
+      "seed": 20533357,
+      "heard": "Der August",
+      "endDb": -67.5
+    },
+    {
+      "file": "d51d65cd7872.m4a",
+      "text": "ausziehen",
+      "voice": "Anna",
+      "seed": 21001345,
+      "heard": "Ausziehen",
+      "endDb": -54.9
+    },
+    {
+      "file": "da77d45c34e7.m4a",
+      "text": "der Jugendliche, die Jugendlichen",
+      "voice": "Anna",
+      "seed": 21052901,
+      "heard": "Der Jugendliche. Die Jugendlichen.",
+      "endDb": -65.1
+    },
+    {
+      "file": "dab2347c9e5a.m4a",
+      "text": "der Anrufbeantworter, die Anrufbeantworter",
+      "voice": "Anna",
+      "seed": 20885033,
+      "heard": "Der Anrufbeantworter. Die Anrufbeantworter.",
+      "endDb": -51.9
+    },
+    {
+      "file": "dbeb1cda96ca.m4a",
+      "text": "die E-Mail, die E-Mails",
+      "voice": "Anna",
+      "seed": 21153945,
+      "heard": "Die E-Mail. Die E-Mails.",
+      "endDb": -53.0
+    },
+    {
+      "file": "dddee9175c40.m4a",
+      "text": "heiraten",
+      "voice": "Anna",
+      "seed": 20377342,
+      "heard": "heiraten",
+      "endDb": -64.8
+    },
+    {
+      "file": "e1df8bddf919.m4a",
+      "text": "leben",
+      "voice": "Anna",
+      "seed": 20805800,
+      "heard": "Leben",
+      "endDb": -60.2
+    },
+    {
+      "file": "e51ca3bac83d.m4a",
+      "text": "sich vorstellen",
+      "voice": "Anna",
+      "seed": 21041100,
+      "heard": "sich vorstellen.",
+      "endDb": -66.3
+    },
+    {
+      "file": "e563cba77fc6.m4a",
+      "text": "riechen",
+      "voice": "Anna",
+      "seed": 20536102,
+      "heard": "Riechen",
+      "endDb": -68.6
+    },
+    {
+      "file": "e8c1f68d0bb5.m4a",
+      "text": "achtzig",
+      "voice": "Anna",
+      "seed": 21031893,
+      "heard": "80",
+      "endDb": -59.6
+    },
+    {
+      "file": "e91fe5489006.m4a",
+      "text": "das Öl",
+      "voice": "Anna",
+      "seed": 21272772,
+      "heard": "Das Öl",
+      "endDb": -54.1
+    },
+    {
+      "file": "e96ec0773251.m4a",
+      "text": "enden",
+      "voice": "Anna",
+      "seed": 20988367,
+      "heard": "Enten",
+      "endDb": -66.8
+    },
+    {
+      "file": "ec974553a4d3.m4a",
+      "text": "der Mai",
+      "voice": "Anna",
+      "seed": 20587443,
+      "heard": "Der Mai",
+      "endDb": -68.1
+    },
+    {
+      "file": "ee94dd24c88e.m4a",
+      "text": "die Sekunde, die Sekunden",
+      "voice": "Anna",
+      "seed": 21006894,
+      "heard": "Die Sekunde. Die Sekunden.",
+      "endDb": -55.1
+    },
+    {
+      "file": "eff42aca77fa.m4a",
+      "text": "die Kasse, die Kassen",
+      "voice": "Anna",
+      "seed": 21239689,
+      "heard": "Die Kasse. Die Kassen.",
+      "endDb": -56.9
+    },
+    {
+      "file": "f0cbcfd163f4.m4a",
+      "text": "achtzehn",
+      "voice": "Anna",
+      "seed": 20910514,
+      "heard": "18",
+      "endDb": -54.7
+    },
+    {
+      "file": "f9aaeef08cca.m4a",
+      "text": "der Anfang, die Anfänge",
+      "voice": "Anna",
+      "seed": 20759658,
+      "heard": "Der Anfang, die Anfänge",
+      "endDb": -54.8
+    },
+    {
+      "file": "fa5bab265255.m4a",
+      "text": "der Oktober",
+      "voice": "Anna",
+      "seed": 20652260,
+      "heard": "Der Oktober",
+      "endDb": -57.6
+    },
+    {
+      "file": "fa7a2928a01c.m4a",
+      "text": "antworten",
+      "voice": "Anna",
+      "seed": 20743420,
+      "heard": "Antworten",
+      "endDb": -69.8
+    },
+    {
+      "file": "fbf7f4dc3716.m4a",
+      "text": "Europa",
+      "voice": "Anna",
+      "seed": 20827638,
+      "heard": "Europa",
+      "endDb": -51.5
+    },
+    {
+      "file": "fc72b5c3ea06.m4a",
+      "text": "verkaufen",
+      "voice": "Anna",
+      "seed": 21263684,
+      "heard": "Verkaufen",
+      "endDb": -67.5
+    }
+  ]
+}

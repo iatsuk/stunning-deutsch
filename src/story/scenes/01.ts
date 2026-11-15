@@ -53,6 +53,7 @@ const arrival: SceneNode[] = [
     answers: ["Ja, ich wohne in Kiel.", "Ich wohne in Kiel.", "Ja, ich wohne jetzt in Kiel.", "Ich wohne jetzt in Kiel.", "Ja, ich wohne hier in Kiel."],
     ru: "Да, я живу в Киле.",
   },
+  narr("Вы показываете Хауке {pass}. Для вас Киль — {ausland}, вы здесь — {auslaender}. Хауке смеётся: на Kieler Woche так полгорода."),
   { t: "pic", src: "01-promenade.jpg", alt: "Набережная Kiellinie утром: Хауке с чемоданом, бегун, велосипедистка, рыбак и продавщица в киоске машут руками" },
   narr("Хауке подхватывает ваш чемодан, как пакет с булочками. По дороге к воде с вами здоровается половина Киля. Первым пробегает Ларс из парусной команды."),
   { t: "say", who: "Lars", voice: "Eddy", de: "Guten Morgen!", ru: "Доброе утро!", learn: ["Guten Morgen!"] },
@@ -458,6 +459,25 @@ const guests: SceneNode[] = [
   jensen("Moin.", "Привет."),
   narr("Мимо проходит Йенсен. Смотрит на свежую строку на {ehrentafel}, говорит «Moin» и уходит быстрее обычного. Для Йенсена это почти бегство."),
   { t: "game", task: "Заголовки доски гостей поклевала чайка. Восстановите их.", c: letters(["der Vorname", "der Familienname", "die Stadt", "die Sprache", "das Boot"]) },
+  narr("На двери гостевой — анкета Нильса для клуба. Графы: {geboren}, {geburtsort}, {geburtsjahr}, внизу — {unterschrift}."),
+  narr("Нильс умеет {unterschreiben} даже с тремя «!». А {ausweis} он вписал по памяти — без единой ошибки."),
+  {
+    t: "look",
+    task: "Прочитайте анкету Нильса.",
+    items: [
+      { icon: "🎂", de: "geboren", ru: "родился", note: "«geboren: 1996» — Нильс родился в 1996 году.", key: true },
+      { icon: "🏙️", de: "der Geburtsort", ru: "место рождения", note: "Geburtsort: Hamburg — там же, где он живёт.", key: true },
+      { icon: "📅", de: "das Geburtsjahr", ru: "год рождения", note: "Geburtsjahr: 1996. Нильсу тридцать: в 1976 году на доске почёта не он.", key: true },
+      { icon: "✍️", de: "die Unterschrift", ru: "подпись", note: "Unterschrift: «N. Hansen!!!» — даже подпись с восклицательными знаками." },
+      { icon: "🪪", de: "der Ausweis", ru: "удостоверение личности", note: "Номер удостоверения. Немцы показывают Ausweis, гости из-за границы — Pass." },
+    ],
+  },
+  {
+    t: "game",
+    task: "Перепишите данные Нильса в карточку гостя клуба.",
+    hint: "Familienname — фамилия, Geburtsort — место рождения, Geburtsjahr — год рождения.",
+    c: write("Gastkarte · Club Kiellinie", [["Familienname", "Hansen"], ["Geburtsort", "Hamburg"], ["Geburtsjahr", "1996"]]),
+  },
   {
     t: "clue",
     title: "Свежая краска",
@@ -584,6 +604,8 @@ const evening: SceneNode[] = [
       oralReply(2, ANSWER, "Woher kommen Sie?", "Ich komme aus Deutschland.", "Я из Германии."),
     ]),
   },
+  narr("Здесь каждый — {mensch} из своей страны, и у каждого своя {heimat}. А вечер один: Kieler Woche — {international}."),
+  narr("{europa}, Азия, Америка — и одно правило: новенькому надо {vorstellen}. Так в клубе принято {kennenlernen}."),
   mateo("Super! Bravo!", "Отлично! Браво!"),
   jensen("Moin.", "Привет."),
   {

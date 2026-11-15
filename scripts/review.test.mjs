@@ -4,8 +4,9 @@ import test from "node:test";
 import { phrases } from "../src/story/data.ts";
 import { lockKey } from "../src/story/logic.ts";
 import { grade } from "../src/story/memory.ts";
-import { buildReview, MECHS, pluralTraps, reviewSources, SCENE_INTERVALS, sceneUnits } from "../src/story/review.ts";
+import { buildReview, MECHS, pluralTraps, reviewSources, SCENE_INTERVALS, sceneUnits, warmupReview } from "../src/story/review.ts";
 import { sceneChapters } from "../src/story/scenes/index.ts";
+import { WARMUPS } from "../src/story/scenes/warmups.ts";
 import { VERBS } from "../src/story/verbs.ts";
 
 // Повторение новой версии (A1-PLAN.md, «Повторение»): раунд из трёх игр разных механик.
@@ -100,5 +101,32 @@ test("new mechanics are built correctly", () => {
         cells.set(key, ch);
       });
     assert.ok([...cells.keys()].every((k) => { const [x, y] = k.split(",").map(Number); return x < grid.width && y < grid.height; }));
+  }
+});
+
+test("the round before a chapter is fixed, playable and returns only words the player has met", () => {
+  // Глава, где игрок впервые встречает единицу: её сцены кладут единицу в повторение.
+  const metAt = new Map();
+  sceneChapters.forEach((c, ci) => c.beats.forEach((b) => sceneUnits(b, lookup).forEach((u) => !metAt.has(u) && metAt.set(u, ci + 1))));
+  const meaning = (ru) => ru.split(/[;,/!?(]/)[0].trim().toLowerCase();
+  const chapters = Object.keys(WARMUPS).map(Number);
+  assert.ok(chapters.length >= sceneChapters.length - 1, "не у каждой главы есть раунд перед ней");
+  for (const n of chapters) {
+    const games = WARMUPS[n];
+    assert.ok(n >= 2 && n <= sceneChapters.length, `раунд перед главой ${n}: такой главы нет`);
+    assert.ok(games.length >= 2 && games.length <= 3, `глава ${n}: ${games.length} игр`);
+    assert.equal(new Set(games.map((g) => g.mech)).size, games.length, `глава ${n}: механики повторяются`);
+    for (const g of games) {
+      assert.equal(new Set(g.words).size, g.words.length, `глава ${n}: ${g.mech} — слово дважды`);
+      for (const w of g.words) {
+        assert.ok(lookup(w), `глава ${n}: ${w} — нет перевода`);
+        assert.ok(dictionary[w]?.audio || byDe.has(w), `глава ${n}: ${w} — нет записи`);
+        assert.ok(metAt.get(w) < n, `глава ${n}: ${w} — игрок его ещё не встречал`);
+      }
+      if (g.mech === "docks") for (const w of g.words) assert.match(w, /^(der|die|das) /, `глава ${n}: ${w} — не существительное`);
+      if (g.mech === "gull" || g.mech === "pairs")
+        assert.equal(new Set(g.words.map((w) => meaning(lookup(w).ru))).size, g.words.length, `глава ${n}: ${g.mech} — два слова с одним смыслом`);
+    }
+    assert.equal(warmupReview(games, lookup)?.games.length, games.length, `глава ${n}: раунд не собрался`);
   }
 });

@@ -1327,6 +1327,8 @@
   font-family: var(--serif);
   font-size: 15px;
   line-height: 1.2;
+  /* Длинное немецкое слово переносится по слогам; разрыв в любом месте — запасной случай. */
+  hyphens: auto;
   overflow-wrap: anywhere;
   cursor: pointer;
 }

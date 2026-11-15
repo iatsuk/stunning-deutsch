@@ -423,7 +423,7 @@ function missedLine(unit: string, sources: Sources) {
 
 export type ReviewReason = "chapter" | "welcome" | "scene" | "manual";
 const HEADINGS: Record<ReviewReason, { kicker: string; title: string }> = {
-  chapter: { kicker: "Повторение перед главой", title: "Сначала вспомним прошлую главу" },
+  chapter: { kicker: "Повторение перед главой", title: "Сначала вспомним пройденное" },
   welcome: { kicker: "Разминка дня", title: "С возвращением в Киль" },
   scene: { kicker: "Повторение перед сценой", title: "Чайка проверяет память" },
   manual: { kicker: "Повторение", title: "Чайка проверяет память" },

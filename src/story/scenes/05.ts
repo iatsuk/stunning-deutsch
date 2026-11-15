@@ -97,6 +97,8 @@ const rain: SceneNode[] = [
   },
   narr("Es regnet? Уже нет. Хауке вытряхивает мокрый Rucksack: Hose, Hemd, T-Shirt, Schuh — всё на «пять минут» к воде."),
   { t: "game", task: "Послушайте слово и нажмите на подходящую вещь.", hint: HINT_PICTURE, c: scene([["die Hose", "👖"], ["das Hemd", "👔"], ["das T-Shirt", "👕"], ["das Kleid", "👗"], ["der Schuh", "👟"], ["die Jacke", "🧥"]]) },
+  narr("В Киле в июне два главных глагола: {anziehen} и {ausziehen}. Вся {kleidung} — то на тебе, то в руках, каждые fünf минут."),
+  dana("Ich habe einen Rock, aber ich brauche eine Hose!", "У меня есть юбка, но мне нужны брюки!", ["der Rock"]),
   elif("Und die Möwe? Sie ist nass, aber sie braucht keine Hose!", "А чайка? Она мокрая, но брюки ей не нужны!"),
   { t: "gap", rule: ["essen/negation-2"], task: "Что говорит Элиф о чайке?", text: "Sie braucht ___ Hose!", options: ["keine", "kein", "nicht"], answer: "keine", ru: "Брюки ей не нужны!" },
   {
@@ -107,6 +109,8 @@ const rain: SceneNode[] = [
       [["die Hose", "das Hemd", "die Jacke", "die Zwiebel"], "die Zwiebel", "Лук не надевают."],
       [["ein Kilo", "ein Liter", "ein Pfund", "der Apfel"], "der Apfel", "Яблоко — товар, остальное — мера."],
       [["teuer", "billig", "groß", "die Farbe"], "die Farbe", "Farbe — предмет, остальные — какой он."],
+      [["lang", "kurz", "groß", "die Hose"], "die Hose", "Hose — вещь, остальные — какая она."],
+      [["100 Gramm", "ein Kilo", "ein Liter", "die Zwiebel"], "die Zwiebel", "Лук — товар, остальное — мера."],
     ]),
   },
   {
@@ -140,6 +144,7 @@ const rain: SceneNode[] = [
 const shop: SceneNode[] = [
   { t: "pic", src: "05-shop.jpg", alt: "Лодочная лавка: стеллажи с канатами и банками краски, вешалка с жёлтыми и томатно-красными рыбацкими брюками; фрау Крузе за старой кассой, Дана тонет в огромных красных брюках на лямках, Хауке смеётся; у двери чайка" },
   narr("{laden} фрау Крузе: alt, klein, am Hafen. Колокольчик над дверью, внутри пахнет канатом и Farbe."),
+  narr("Это {geschaeft} с 1985 года. Глагол фрау Крузе — {verkaufen}: продать она может что угодно, даже брюки Größe XL."),
   kruse("Moin! Was suchen Sie?", "Привет! Что вы ищете?", ["suchen"]),
   {
     t: "reply",
@@ -220,6 +225,7 @@ const shop: SceneNode[] = [
   },
   kruse("Ach, Bootsfarbe! Ein Liter kostet vierundzwanzig Euro.", "А, лодочная краска! Литр стоит двадцать четыре евро.", ["ein Liter", "kosten"]),
   { t: "gap", rule: ["moin/kosten-1"], task: "Сколько стоит литр?", text: "Ein Liter ___ vierundzwanzig Euro.", options: ["kostet", "kosten", "kauft"], answer: "kostet", ru: "Литр стоит двадцать четыре евро." },
+  narr("На банке ценник: {preis} — 24,00 €. Рядом табличка: {angebot}! За zwei Dosen — «−10 %». Знак % — это {prozent}."),
   {
     t: "reply",
     rule: ["kennenlernen/endungen-1"],
@@ -243,8 +249,10 @@ const shop: SceneNode[] = [
   narr("Фрау Крузе снимает с гвоздя забытый {kassenbon}. Но дверь открыта — и на пороге {moewe}!"),
   narr("HEL 7305 хватает Kassenbon прямо из пальцев — и прочь! Над {seil} у двери, низко над Wasser."),
   { t: "game", task: `Догоните чек! ${RACE}`, hint: HINT_RACE, outcome: RACE_STAKES, c: race(["die Hose", "die Größe", "die Farbe", "ein Liter", "kosten", "suchen"]) },
+  narr("Старая {kasse} фрау Крузе звенит громче колокольчика. Каждый {cent} она считает дважды: ведь {geld} — дело серьёзное."),
   narr("Der Kassenbon мокрый, aber gut. Сдачу покупатель тогда не взял — фрау Крузе хранит её für «Herrn Moin»."),
   { t: "game", task: "Отсчитайте сдачу по чеку: всё — 28,50 €, заплачено 30,00 €. Фрау Крузе положит её в конверт.", hint: "30,00 − 28,50 = 1,50: один евро и пятьдесят центов.", c: { kind: "coins", coins: [200, 100, 50, 20, 10], answer: 150 } },
+  narr("Каждый {kunde} для фрау Крузе — его покупка: «Herr Moin» — это Dunkelblau и сдача, которую он не берёт."),
   {
     t: "game",
     rule: ["einkaufen/adjektiv-1"],
@@ -287,6 +295,7 @@ const shop: SceneNode[] = [
 const market: SceneNode[] = [
   { t: "pic", src: "05-market.jpg", alt: "Рынок у гавани после дождя: Фрауке в полосатом фартуке за прилавком с ящиками яблок, помидоров и лука, весы; Дана в огромных красных рыбацких брюках, Элиф с биноклем; на заднем плане Матео прячет в рюкзак пакет лука; лужи" },
   narr("После дождя am Hafen открывается {markt}. У Фрауке heute Fischbrötchen und Äpfel: {rot} и {gruen}."),
+  narr("На прилавках — {lebensmittel}: Obst, Gemüse, Fisch. Весы у Фрауке старые, но {gewicht} она угадывает на глаз. Ошибка — не больше, чем {gramm}."),
   frauke("Moin! Ein Kilo Äpfel – zwei Euro! Äpfel, Tomaten, Zwiebeln!", "Привет! Килограмм яблок — два евро! Яблоки, помидоры, лук!", ["ein Kilo", "der Apfel"]),
   {
     t: "reply",
@@ -445,6 +454,7 @@ const counter: SceneNode[] = [
   kruse("Vierundzwanzig Euro, bitte.", "Двадцать четыре евро, пожалуйста."),
   narr("Er bezahlt fünfundzwanzig Euro und geht. Сдачу этот покупатель, кажется, не берёт никогда."),
   { t: "game", task: "Успейте отдать сдачу, пока звенит колокольчик.", hint: "25 − 24 = 1: один евро.", c: { kind: "coins", coins: [200, 100, 50, 20, 10], answer: 100 } },
+  narr("Платит он {bar}, как всегда: {kreditkarte} у этого покупателя, кажется, нет вовсе."),
   narr("На прилавке — бумажка. Kein Kassenbon: ярлычок от Tee. Фрау Крузе выбрасывает его, не глядя."),
   {
     t: "pick",
@@ -550,7 +560,7 @@ const voice: SceneNode[] = [
     c: order(["Herr Jensen,", "kaufen", "Sie", "Farbe?"], ["Farbe?", "Sie", "Herr Jensen,", "kaufen"]),
   },
   narr("Матео меняет тему: вот настоящие T-Shirts, а ещё Hose, Hemd, Jacke из бюро находок. В ящики Йенсена: der, die, das."),
-  { t: "game", task: "Разложите вещи по ящикам Йенсена.", hint: HINT_DOCK, c: docks(["der Pullover", "die Hose", "das Hemd", "die Jacke", "das T-Shirt", "der Schuh", "das Kleid", "der Mantel"]) },
+  { t: "game", task: "Разложите вещи по ящикам Йенсена.", hint: HINT_DOCK, c: docks(["der Pullover", "die Hose", "das Hemd", "die Jacke", "das T-Shirt", "der Schuh", "das Kleid", "der Mantel", "der Rock"]) },
   mateo("Hier! Dein T-Shirt. Wie findest du es?", "Вот! Твоя футболка. Как она тебе?"),
   {
     t: "hear",
@@ -797,7 +807,7 @@ const evening: SceneNode[] = [
     c: order(["Wer", "kauft", "die", "Farbe?"], ["Farbe?", "kauft", "die", "Wer"]),
   },
   narr("Хауке достаёт карточки лото: nur Einkaufen. Die Möwe смотрит на карточку с Apfel."),
-  { t: "game", task: "Лото на ночь: послушайте слово и закройте его на карточке.", hint: HINT_HEAR, c: bingo(["die Hose", "die Jacke", "das Hemd", "die Tüte", "die Flasche", "der Apfel", "die Zwiebel", "die Tomate", "der Euro"]) },
+  { t: "game", task: "Лото на ночь: послушайте слово и закройте его на карточке.", hint: HINT_HEAR, c: bingo(["die Hose", "der Preis", "das Hemd", "die Tüte", "die Flasche", "der Apfel", "die Zwiebel", "die Kasse", "das Geld"]) },
   {
     t: "game",
     rule: ["einkaufen/pronomen-3"],

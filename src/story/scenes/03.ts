@@ -41,6 +41,7 @@ const photo: SceneNode[] = [
   },
   narr("На обороте — подписи. Нильс не жалеет восклицательных знаков: «Opa!!! Oma!!! Vater!!!» Хауке читает вслух."),
   hauke("Das ist unser Opa! Und das ist unsere Oma!", "Это наш дедушка! А это наша бабушка!", ["der Opa", "die Oma"]),
+  narr("Opa — это {grossvater}, Oma — {grossmutter}: так их пишут в анкете. Дома говорят коротко, как Нильс."),
   {
     t: "game",
     rule: ["familie/mein-2"],
@@ -290,9 +291,19 @@ const memories: SceneNode[] = [
             hint: "Frau — жена, Sohn — сын.",
             c: spot("Karte: Heinrich Hansen", ["Name: Heinrich Hansen|Familienstand: verheiratet", "Frau: Hilde Hansen|Sohn: Peter, acht Jahre", "Hobby: Segeln|Schild MOIN: Farbe und Pinsel"], ["Frau: Hilde Hansen", "Sohn: Peter, acht Jahre"]),
           },
+          narr("Графа {familienstand}: verheiratet. Ниже: {hochzeit} — в 1960-м, {ehemann} — Heinrich, {ehefrau} — Hilde."),
           { t: "gap", rule: ["familie/wessen-1"], task: "Подпишите в блокноте: кто Хильде для Opa?", text: "Hilde ist ___ Frau.", options: ["seine", "sein", "ihre"], answer: "seine", ru: "Хильде — его жена." },
           narr("Следующий кармашек в папке пуст: карточку кто-то вынул. На пластике круглый коричневый след — как от кружки с чаем."),
           { t: "type", task: "Запишите: Opa женат.", answers: ["Opa ist verheiratet.", "Heinrich Hansen ist verheiratet.", "Er ist verheiratet."], ru: "Дедушка женат." },
+          {
+            t: "look",
+            task: "На пустом бланке клуба в графе Familienstand три клетки. Рассмотрите их.",
+            items: [
+              { icon: "🙋", de: "ledig", ru: "не женат, не замужем", note: "Ни мужа, ни жены. В клубе таких половина." },
+              { icon: "💍", de: "verheiratet", ru: "женат, замужем", note: "Opa Heinrich и Hilde — с 1960 года.", key: true },
+              { icon: "📄", de: "geschieden", ru: "разведён, разведена", note: "Брак окончен — официально, по бумагам." },
+            ],
+          },
           petersen("Ich habe auch ein Foto. Das ist meine Tochter!", "У меня тоже есть фото. Это моя дочь!", ["die Tochter"]),
           { t: "gap", rule: ["familie/mein-2"], task: "Что говорит фрау Петерсен о своём фото?", text: "Das ist ___ Tochter!", options: ["meine", "mein", "ihre"], answer: "meine", ru: "Это моя дочь!" },
           { t: "clue", title: "Папка «1976»", text: "Heinrich Hansen: verheiratet, жена Hilde, сын Peter. Карточку следующего члена клуба кто-то вынул; на кармашке круглый след от кружки." },
@@ -395,7 +406,7 @@ const memories: SceneNode[] = [
     ],
   },
   narr("Двое помнят 1976 год, но ничего не объясняют. Дана раскладывает слова дня по ящикам Йенсена: der, die, das."),
-  { t: "game", task: "Разложите слова по ящикам der, die и das.", hint: HINT_DOCK, c: docks(["der Opa", "die Oma", "der Sohn", "die Tochter", "das Kind", "das Mädchen", "der Hund", "die Familie"]) },
+  { t: "game", task: "Разложите слова по ящикам der, die и das.", hint: HINT_DOCK, c: docks(["der Opa", "die Oma", "der Sohn", "die Tochter", "das Kind", "das Mädchen", "der Hund", "die Familie", "der Großvater", "die Großmutter", "der Partner", "die Partnerin"]) },
   dana("Opa, Oma, ein Sohn, ein Freund … und das Schild.", "Дедушка, бабушка, сын, друг… и табличка."),
   {
     t: "pick",
@@ -575,6 +586,7 @@ const poster: SceneNode[] = [
     hint: "aber места не занимает: после него обычный порядок, глагол второй.",
     c: order(["Lotte", "hat", "keine", "Schwester,", "aber", "Krümel", "ist", "ihr", "Bruder!"], ["ihr", "aber", "Schwester,", "Krümel", "Lotte", "Bruder!", "keine", "ist", "hat"]),
   },
+  narr("Лотта — ещё не {jugendliche}, ей десять. А на Möwen-Kurs у Элиф ходит и один {erwachsene}: Хауке, по средам."),
   narr("Лотта кивает и устраивает вам проверку. Тихо, но строго, как ihre Mutter."),
   {
     t: "game",
@@ -723,6 +735,14 @@ const ninety: SceneNode[] = [
   narr("К сообщению фото: Opa Hansen, седой и весёлый, держит открытку из Киля."),
   { t: "gap", rule: ["zahlen/zehner-1"], task: "Сколько лет Opa?", text: "Opa ist heute ___ Jahre alt.", options: ["neunzig", "neunzehn", "neun"], answer: "neunzig", ru: "Дедушке сегодня девяносто лет." },
   hauke("Neunzig! Alles Gute, Opa Hansen!", "Девяносто! С днём рождения, дедушка Хансен!"),
+  narr("Девяносто — солидный {alter}. Девиз Opa на открытках: {leben}, {lieben} и {heiraten} — один раз и навсегда."),
+  narr("Хауке хочет {gratulieren} сразу. А {glueckwunsch} по-немецки — одно длинное слово, его пишут на открытке."),
+  {
+    t: "type",
+    task: "Напишите Opa поздравление: «Сердечно поздравляю!»",
+    answers: ["Herzlichen Glückwunsch!", "Herzlichen Glückwunsch, Opa!", "Herzlichen Glückwunsch zum Geburtstag!"],
+    ru: "Сердечно поздравляю!",
+  },
   narr("Хауке увеличивает Foto. {karte} знакомая: одно слово, крупно — MOIN. И подписи: Namen, Namen, Namen."),
   {
     t: "look",

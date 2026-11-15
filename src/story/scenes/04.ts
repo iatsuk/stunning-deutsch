@@ -44,6 +44,7 @@ const stands: SceneNode[] = [
     ],
   },
   narr("Вдоль воды идёт Матео с термосом и fünf Tassen. Kaffee он наливает, не спрашивая, — как дон из старого фильма про семью."),
+  narr("Под мышкой у него пакет с Brötchen: {baeckerei} на Kiellinie открывается в шесть, и Матео там первый."),
   mateo("Moin! Kaffee für alle!", "Привет! Кофе всем!", ["der Kaffee"]),
   {
     t: "reply",
@@ -57,6 +58,7 @@ const stands: SceneNode[] = [
   },
   mateo("Tee? Nein. Kaffee? Ja.", "Чай? Нет. Кофе? Да.", ["der Tee"]),
   narr("Это не вопрос. Это предложение, от которого нельзя отказаться. Хауке пьёт уже zwei Tassen Kaffee и подмигивает."),
+  narr("Kaffee у Матео чёрный и {bitter}, как его шутки про чаек."),
   {
     t: "game",
     rule: ["essen/akkusativ-3"],
@@ -95,11 +97,12 @@ const stands: SceneNode[] = [
     answer: "Табличка — здесь, донер — там",
   },
   narr("Дерья не спорит: у фонаря есть розетка. Через пять минут на фургоне висит Speisekarte: Döner, Fischbrötchen, Cola, Salat."),
+  narr("Ниже мелко: {haehnchen}, {reis}, {schinken}. И отдельная графа — {getraenk}: Cola, Wasser, Tee."),
   {
     t: "game",
     task: "Послушайте слово из меню Дерьи и нажмите на картинку.",
     hint: HINT_PICTURE,
-    c: scene([["der Döner", "🥙"], ["das Fischbrötchen", "🐟"], ["die Cola", "🥤"], ["der Salat", "🥗"], ["die Suppe", "🍲"], ["die Wurst", "🌭"], ["der Käse", "🧀"], ["die Tomate", "🍅"]]),
+    c: scene([["der Döner", "🥙"], ["das Fischbrötchen", "🐟"], ["die Cola", "🥤"], ["der Salat", "🥗"], ["die Suppe", "🍲"], ["die Wurst", "🌭"], ["der Käse", "🧀"], ["die Tomate", "🍅"], ["das Hähnchen", "🍗"], ["der Reis", "🍚"], ["die Pasta", "🍝"]]),
   },
   {
     t: "game",
@@ -115,6 +118,7 @@ const stands: SceneNode[] = [
       extra: ["Tee", "Salat", "Wurst"],
     },
   },
+  narr("Дерья смеётся: у неё не {restaurant} и не {lokal}, а фургон. Зато {salz} и {oel} — свои, из Измира."),
   derya("Möchten Sie einen Döner?", "Хотите донер?"),
   {
     t: "reply",
@@ -210,6 +214,7 @@ const table: SceneNode[] = [
     },
   },
   narr("Kellner несёт {tablett}: drei Kaffee, ein Tee, zwei Stück Kuchen — и zwei Fischbrötchen к соседнему столику."),
+  kellner("Möchten Sie noch etwas bestellen? Ein Getränk? Ein Fischbrötchen?", "Хотите заказать что-нибудь ещё? Напиток? Булочку с рыбой?", ["bestellen"]),
   {
     t: "game",
     task: "Kellner расставляет заказ. Что в чём подают?",
@@ -403,6 +408,8 @@ const kitchen: SceneNode[] = [
       answer: { ei: 3, milch: 2 },
     },
   },
+  narr("У Матео два любимых глагола: {riechen} и {schmecken}. Сначала нос, потом язык. Тесто пахнет как {butter}."),
+  mateo("Hm! Das riecht gut. Und es schmeckt! Nicht zu bitter?", "М-м! Пахнет хорошо. И вкусно! Не слишком горько?"),
   narr("Стук в заднюю дверь. За ней никого — только бумажная Tüte и записка: «Danke für den Kuchen. G.»"),
   { t: "gap", rule: ["moin/fuer-ohne-1"], task: "Перепишите записку в блокнот.", text: "Danke für ___ Kuchen.", options: ["den", "der", "dem"], answer: "den", ru: "Спасибо за пирог." },
   {
@@ -414,7 +421,8 @@ const kitchen: SceneNode[] = [
       { icon: "🍅", de: "die Tomate", ru: "помидор", note: "Одна помидорина треснула. Матео съедает её на месте: проба." },
     ],
   },
-  { t: "game", task: "Матео подписывает банки для пробы. Подскажите по буквам.", hint: HINT_SPELL, c: letters(["das Gemüse", "die Tomate", "die Tüte"]) },
+  narr("Под овощами — ещё {obst}: одна {birne}, твёрдая как камень. Матео откладывает её на потом."),
+  { t: "game", task: "Матео подписывает банки для пробы. Подскажите по буквам.", hint: HINT_SPELL, c: letters(["das Gemüse", "die Tomate", "die Tüte", "die Birne"]) },
   mateo("Gemüse von Greta! Tomaten, Karotten … aber keine Zwiebeln?", "Овощи от Греты! Помидоры, морковь… а лука нет?", ["das Gemüse"]),
   { t: "gap", rule: ["essen/akkusativ-3"], task: "Чего нет в пакете?", text: "Das ist Gemüse, aber ___ Zwiebeln.", options: ["keine", "kein", "nicht"], answer: "keine", ru: "Это овощи, но без лука." },
   narr("Под пакетом лежит бланк заказа «Kuchen für hundert». Внизу вместо подписи — круглый коричневый {fleck}, как от кружки с чаем."),
@@ -468,6 +476,7 @@ const napkin: SceneNode[] = [
     hint: "Kuchen — у Хауке и у вас. Дана пьёт только кофе.",
     c: pairs([["Hauke", "einen Kaffee und ein Stück Kuchen"], ["Dana", "einen Kaffee"], ["Sie", "einen Tee und ein Stück Kuchen"], ["Greta", "eine Cola"]]),
   },
+  { t: "type", task: "Запишите в блокнот, что заказала Грета.", answers: ["Greta bestellt eine Cola.", "Sie bestellt eine Cola.", "Greta bestellt Cola."], ru: "Грета заказывает колу." },
   kellner("Zusammen oder getrennt?", "Вместе или раздельно?", ["Zusammen oder getrennt?"]),
   {
     t: "reply",

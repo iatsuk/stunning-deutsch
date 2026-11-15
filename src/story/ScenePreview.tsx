@@ -10,11 +10,12 @@ import { beatPhrases, initialAnswer, isCorrect } from "./logic";
 import { migrate, toIds, toKeys, type Layout } from "./progress";
 import pastLayouts from "./scene-layouts.json";
 import { dayNumber, grade, remember, type Cards } from "./memory";
-import { buildReview, dueUnits, MIN_DUE, reviewSources, SCENE_INTERVALS, sceneUnits, WELCOME_ROUNDS, type Mech } from "./review";
+import { buildReview, dueUnits, MIN_DUE, reviewSources, SCENE_INTERVALS, sceneUnits, warmupReview, WELCOME_ROUNDS, type Mech } from "./review";
 import { SceneReview, type ReviewReason } from "./ReviewView";
 import { flatNodes, keyOf, nodeAt, sceneRules, shownWords, worldAfter } from "./scene";
 import { RuleCard } from "./RuleCard";
 import { sceneChapters } from "./scenes";
+import { WARMUPS } from "./scenes/warmups";
 import type { Answer, Mark, SceneNode } from "./types";
 import { TRACKS, type World } from "./world";
 import "./story.css";
@@ -230,7 +231,11 @@ export function ScenePreview() {
             ? "scene"
             : null;
   const reason = reviewing ?? auto;
-  const review = reason
+  // Перед главой — постоянный раунд, одинаковый для всех; если его нет, раунд из прошлой главы.
+  const warmup = reason === "chapter" && WARMUPS[ci + 1] ? warmupReview(WARMUPS[ci + 1], wordInfo) : null;
+  const review = warmup
+    ? warmup
+    : reason
     ? buildReview(save.cards, count, today, {
         lookup: wordInfo,
         sources,

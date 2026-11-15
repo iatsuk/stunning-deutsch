@@ -1,4 +1,5 @@
 import { pairs } from "./build.ts";
+import { phrases } from "./data.ts";
 import { challengeWords } from "./logic.ts";
 import { dueWords, lockCard, type Cards, type Interval } from "./memory.ts";
 import { flatNodes } from "./scene.ts";
@@ -51,14 +52,15 @@ export function reviewSources(beats: Beat[]): Sources {
 }
 
 /**
- * Что пройденная сцена отдаёт в повторение: слова, которые она вводит репликами, показывает при
- * осмотре и тренирует в играх (только с переводом и записью), реплики, которые их вводят, и фразы
- * замков вместе с правилом.
+ * Что пройденная сцена отдаёт в повторение: слова, которые она вводит репликами, называет в рассказе,
+ * показывает при осмотре и тренирует в играх (только с переводом и записью), реплики, которые их
+ * вводят, и фразы замков вместе с правилом.
  */
 export function sceneUnits(beat: Beat, lookup: Lookup): string[] {
   const units: string[] = [];
   const word = (w: string) => lookup(w) && units.push(w);
   for (const n of nodesOf(beat)) {
+    if (n.t === "narr") for (const [, id] of n.text.matchAll(/\{([\w-]+)\}/g)) if (phrases[id]) word(phrases[id].de);
     if (n.t === "say" && n.learn?.length) {
       n.learn.forEach(word);
       units.push(lineCard(n.voice, n.de));
@@ -385,6 +387,27 @@ export function crossword(list: { unit: string; word: string; clue: string }[], 
     height: Math.max(...words.map((p) => p.y + (p.down ? p.word.length : 1))),
     words,
   };
+}
+
+/** Игра раунда перед главой: механика и её слова (src/story/scenes/warmups.ts). */
+export type Warmup = { mech: "bingo" | "gull" | "docks" | "letters" | "pairs"; words: string[] };
+
+/**
+ * Раунд перед главой одинаков для всех игроков: его слова выбраны заранее, чтобы вернуть слова прошлых
+ * глав, и индекс полноты считает эти игры частью главы. Слово без перевода и записи пропускается.
+ */
+export function warmupReview(warmups: Warmup[], lookup: Lookup): Review | null {
+  const games: Game[] = [];
+  for (const { mech, words } of warmups) {
+    const take = words.filter((w) => lookup(w));
+    if (!take.length) continue;
+    games.push(
+      mech === "pairs"
+        ? { mech, units: take, challenge: pairs(take.map((w) => [w, lookup(w)!.ru])) }
+        : { mech, units: take, challenge: { kind: mech, words: take } },
+    );
+  }
+  return games.length ? { games } : null;
 }
 
 /**
