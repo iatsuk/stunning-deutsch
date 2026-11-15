@@ -1,0 +1,54 @@
+{
+ "date": "2026-11-15",
+ "scope": "The weather map in chapter 12: five radio forecast lines for Saturday to Wednesday of Kieler Woche",
+ "model": "k2-fsa/OmniVoice",
+ "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+ "candidatesPerPhrase": 3,
+ "asr": "openai/whisper-large-v3",
+ "notes": [
+  "Each phrase has three takes; the chosen take has the closest transcript, an end level below -32 dB and no fragment flagged by tails.py. tails.py passes on all 5 imported files.",
+  "Whisper writes «zwölf» as 12; the take says the number in words."
+ ],
+ "files": [
+  {
+   "file": "6057a6a0cc8f.m4a",
+   "text": "Heute, am Samstag, regnet es. Es ist kalt, nur zwölf Grad.",
+   "voice": "Eddy",
+   "seed": 21246174,
+   "heard": "Heute am Samstag regnet es. Es ist kalt, nur 12 Grad.",
+   "endDb": -66.2
+  },
+  {
+   "file": "c7f97f44204c.m4a",
+   "text": "Am Sonntag ist es bewölkt.",
+   "voice": "Eddy",
+   "seed": 21216300,
+   "heard": "Am Sonntag ist es bewölkt.",
+   "endDb": -71.2
+  },
+  {
+   "file": "ef9a97357b41.m4a",
+   "text": "Am Montag ist es windig.",
+   "voice": "Eddy",
+   "seed": 21135568,
+   "heard": "Am Montag ist es windig.",
+   "endDb": -58.0
+  },
+  {
+   "file": "5f12099e821a.m4a",
+   "text": "Am Dienstag ist es sonnig und warm.",
+   "voice": "Eddy",
+   "seed": 20694010,
+   "heard": "Am Dienstag ist es sonnig und warm.",
+   "endDb": -56.6
+  },
+  {
+   "file": "24aac20aed46.m4a",
+   "text": "Am Mittwoch ist es wieder bewölkt.",
+   "voice": "Eddy",
+   "seed": 20805205,
+   "heard": "Am Mittwoch ist es wieder bewölkt.",
+   "endDb": -60.2
+  }
+ ]
+}

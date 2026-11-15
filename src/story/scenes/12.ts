@@ -421,6 +421,27 @@ const hotel: SceneNode[] = [
 // Сцена 4 · поворот и кризис: клуб в десять. Бросок: ложный след · Петерсен · сломать · der Herbst · 10 —
 // Петерсен разбивает старый барометр клуба: стрелка на «Sturm», и она объявляет праздник «осенью».
 // Регата отвечает: старт, как всегда, в одиннадцать. Ложная тревога — но время уходит.
+/** Прогноз по радио на неделю Kieler Woche: дождь только сегодня, дальше облака, ветер и солнце. */
+const WETTER: Challenge = {
+  kind: "weather",
+  voice: "Eddy",
+  days: ["Samstag", "Sonntag", "Montag", "Dienstag", "Mittwoch"],
+  skies: [
+    { id: "a", de: "sonnig", ru: "солнечно", icon: "☀️" },
+    { id: "b", de: "bewölkt", ru: "облачно", icon: "☁️" },
+    { id: "c", de: "windig", ru: "ветрено", icon: "💨" },
+    { id: "d", de: "Es regnet.", ru: "дождь", icon: "🌧️" },
+    { id: "e", de: "Es schneit.", ru: "снег", icon: "❄️" },
+  ],
+  forecast: [
+    { de: "Heute, am Samstag, regnet es. Es ist kalt, nur zwölf Grad.", ru: "Сегодня, в субботу, дождь. Холодно, всего двенадцать градусов.", day: "Samstag", sky: "d" },
+    { de: "Am Sonntag ist es bewölkt.", ru: "В воскресенье облачно.", day: "Sonntag", sky: "b" },
+    { de: "Am Montag ist es windig.", ru: "В понедельник ветрено.", day: "Montag", sky: "c" },
+    { de: "Am Dienstag ist es sonnig und warm.", ru: "Во вторник солнечно и тепло.", day: "Dienstag", sky: "a" },
+    { de: "Am Mittwoch ist es wieder bewölkt.", ru: "В среду снова облачно.", day: "Mittwoch", sky: "b" },
+  ],
+};
+
 const herbst: SceneNode[] = [
   { t: "pic", src: "12-barometer.jpg", alt: "Клуб в десять утра: фрау Петерсен в ужасе держит разбитый старый барометр, стрелка на буре; Матео прижимает к себе торт под полотенцем, Дана смотрит на часы, за окном ливень и мачты" },
   narr("Zehn Uhr im Club. Фрау Петерсен снимает со стены {barometer} — и крак! Kaputt. Стрелка — на Sturm."),
@@ -452,6 +473,9 @@ const herbst: SceneNode[] = [
       no("Frau Petersen, das Barometer sind kaputt!", "Один барометр: ist."),
     ],
   },
+  narr("Elif macht das Radio an. Da ist der {wetterbericht} für Kiel — für die ganze Woche."),
+  { t: "game", rule: ["reisen/es-regnet-1"], task: "Послушайте прогноз по радио и поставьте значок погоды на каждый день.", hint: "Значок — картинка: слово погоды нужно услышать. Прогноз можно слушать сколько угодно.", c: WETTER },
+  narr("Nur heute regnet es, dann kommt die Sonne. Aber Frau Petersen hört nur das Barometer."),
   mateo("Im Herbst? Und mein Kuchen? Er ist für heute!", "Осенью? А мой торт? Он на сегодня!"),
   { t: "gap", rule: ["reisen/monate-1"], task: "Что сказала фрау Петерсен?", text: "Die Party ist ___ Herbst.", options: ["im", "am", "um"], answer: "im", ru: "Праздник — осенью." },
   hauke("Herbst? Kein Problem – ich habe meine Winterjacke!", "Осень? Не проблема — у меня зимняя куртка!"),

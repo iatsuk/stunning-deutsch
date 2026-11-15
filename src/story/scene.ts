@@ -228,6 +228,7 @@ const BY_GAME: Record<string, string> = {
   chat: "Reagieren Sie.",
   speak: "Hören Sie und sprechen Sie nach.",
   twenty: "Stellen Sie Fragen. Die Antwort ist Ja oder Nein.",
+  weather: "Hören Sie den Wetterbericht. Wie ist das Wetter?",
 };
 /** Немецкая инструкция задания или ничего: в главе 1 игрок ещё не читает по-немецки. */
 export function anweisung(node: SceneNode, chapter: number): string | undefined {

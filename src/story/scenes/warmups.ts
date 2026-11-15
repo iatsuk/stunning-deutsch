@@ -43,10 +43,10 @@ export const RETURNS: Record<number, { docks: string[]; bingo: string[] }[]> = {
     { docks: ["die Pasta", "das Restaurant", "das Salz", "der Schinken", "der Wein", "das Ausland", "der Ausländer", "die Heimat", "die Schweiz"], bingo: [] },
   ],
   8: [
-    { docks: ["die Gruppe", "die Idee", "das Kino", "das Konzert", "der Mittwoch", "das Schwimmbad", "der Sport", "der Urlaub", "der Eintritt", "die Halle", "der Lieblingsfilm", "der See"], bingo: ["verstehen", "wandern", "baden", "erst", "Freunde treffen", "gewinnen", "Gitarre spielen", "grillen", "lustig"] },
-    { docks: ["der Verein", "der Apfel", "das Geschenk", "das Gramm", "die Größe", "die Gurke", "das Hemd", "die Hose", "die Kasse", "das Kleid", "der Kunde", "der Mantel"], bingo: ["mitmachen", "Musik hören", "Rad fahren", "wunderbar", "pünktlich", "Wie viel Uhr ist es?", "zurzeit", "bar", "ein Pfund"] },
-    { docks: ["der Preis", "der Pullover", "der Rock", "der Schuh", "das Angebot", "die Banane", "der Cent", "die Erdbeere", "die Flasche", "das Geschäft", "das Gewicht", "die Kartoffel"], bingo: ["kurz", "schicken", "schwarz", "tot", "100 Gramm", "anziehen", "ausziehen", "braun", "grün"] },
-    { docks: ["die Kleidung", "die Kreditkarte", "die Lebensmittel", "die Orange", "das Prozent", "der Computer", "die E-Mail", "das Internet", "die Million", "die Vorwahl"], bingo: ["kriegen", "sich kümmern", "verkaufen", "zufrieden", "achtzig", "andere", "leicht", "leider", "tanzen"] },
+    { docks: ["die Gruppe", "die Idee", "das Kino", "das Konzert", "das Schwimmbad", "der Sport", "der Urlaub", "der Eintritt", "die Halle", "der Lieblingsfilm", "der See", "der Verein"], bingo: ["verstehen", "wandern", "baden", "erst", "Freunde treffen", "gewinnen", "Gitarre spielen", "grillen", "lustig"] },
+    { docks: ["der Apfel", "das Geschenk", "das Gramm", "die Größe", "die Gurke", "das Hemd", "die Hose", "die Kasse", "das Kleid", "der Kunde", "der Mantel", "der Preis"], bingo: ["mitmachen", "Musik hören", "Rad fahren", "wunderbar", "pünktlich", "Wie viel Uhr ist es?", "zurzeit", "bar", "ein Pfund"] },
+    { docks: ["der Pullover", "der Rock", "der Schuh", "das Angebot", "die Banane", "der Cent", "die Erdbeere", "die Flasche", "das Geschäft", "das Gewicht", "die Kartoffel", "die Kleidung"], bingo: ["kurz", "schicken", "schwarz", "tot", "100 Gramm", "anziehen", "ausziehen", "braun", "grün"] },
+    { docks: ["die Kreditkarte", "die Lebensmittel", "die Orange", "das Prozent", "der Computer", "die E-Mail", "das Internet", "die Million", "die Vorwahl"], bingo: ["kriegen", "sich kümmern", "verkaufen", "zufrieden", "achtzig", "andere", "leicht", "leider", "tanzen"] },
   ],
   9: [
     { docks: ["der Herd", "die Kaltmiete", "die Miete", "die Ordnung", "der Osten", "der Quadratmeter", "das Schlafzimmer", "der Schreibtisch", "die Treppe", "das Treppenhaus", "der Vermieter", "die Warmmiete"], bingo: ["modern", "die Nebenkosten", "an sein", "besetzt", "breit", "draußen", "feiern", "teuer – günstig", "hoch"] },
@@ -58,7 +58,7 @@ export const RETURNS: Record<number, { docks: string[]; bingo: string[] }[]> = {
     { docks: ["die Straßenbahn", "das Taxi", "die U-Bahn", "die Abfahrt", "die Ankunft", "der Ausgang", "die Auskunft", "das Auto", "der Automat", "der Bahnsteig", "der Eingang", "die Führung"], bingo: ["umsteigen", "weiter", "Wie komme ich zum …?", "besichtigen", "gültig", "überweisen", "an sein", "besetzt", "breit"] },
     { docks: ["der Prospekt", "der Schalter", "das Ticket", "die Vorsicht", "der Absender", "die Ansage", "die Autobahn", "die Bank", "die Briefmarke", "das Bürgeramt", "das Dorf", "der Empfänger"], bingo: ["draußen", "feiern", "teuer – günstig", "hoch", "oben", "umziehen", "vermieten", "waschen", "zwischen"] },
     { docks: ["der Kilometer", "das Konto", "der Norden", "der Ort", "das Rathaus", "die S-Bahn", "die Sehenswürdigkeit", "der Süden", "der Supermarkt", "der Westen", "die Waschmaschine", "die Mitte"], bingo: ["leider", "tanzen", "am liebsten", "einladen", "Fahrrad fahren", "fertig", "fotografieren", "Fußball spielen", "gefallen"] },
-    { docks: ["die Toilette", "der Baum", "die Blume", "die Disco", "das Feuer", "die Gruppe", "die Idee", "das Kino", "das Konzert", "der Mittwoch", "das Schwimmbad", "der Sport"], bingo: ["ins Kino gehen", "laufen", "manchmal", "nicht gern", "oft", "Schade!", "schwimmen", "der Urlaub", "verstehen"] },
+    { docks: ["die Toilette", "der Baum", "die Blume", "die Disco", "das Feuer", "die Gruppe", "die Idee", "das Kino", "das Konzert", "das Schwimmbad", "der Sport", "der Urlaub"], bingo: ["ins Kino gehen", "laufen", "manchmal", "nicht gern", "oft", "Schade!", "schwimmen", "verstehen", "wandern"] },
   ],
   11: [
     { docks: ["das Haar", "der Hals", "der Husten", "das Medikament", "der Mund", "die Nase", "das Ohr", "der Schmerz", "der Schnupfen", "die Tablette", "das Wartezimmer", "der Zahn"], bingo: ["wichtig", "aussehen", "besser", "erlauben", "erzählen", "leise", "böse", "empfehlen", "etwa"] },
@@ -73,10 +73,10 @@ export const RETURNS: Record<number, { docks: string[]; bingo: string[] }[]> = {
     { docks: ["der Beruf", "der Bleistift", "das Ergebnis", "das Vorstellungsgespräch", "die Hausaufgabe", "der Hausmann", "die Kellnerin", "die Klasse", "die Köchin", "der Kollege", "der Krankenpfleger", "der Lehrer"], bingo: ["der Friseur", "gestern Abend", "der Informatiker", "der Ingenieur", "der Job", "der Kugelschreiber", "letztes Jahr", "männlich", "das Praktikum"] },
   ],
   13: [
-    { docks: ["das Medikament", "der Mund", "die Nase", "das Ohr", "der Schmerz", "der Schnupfen", "die Tablette", "das Wartezimmer", "der Zahn", "der Bauch", "der Eintritt", "die Halle"], bingo: ["kalt", "übernachten", "windig", "ausländisch", "bewölkt", "Es schneit.", "Es sind 20 Grad.", "europäisch", "die Ferien"] },
-    { docks: ["der Lieblingsfilm", "der See", "der Verein", "das Meer", "der Sommer", "die Anreise", "der Anschluss", "das Datum", "das Doppelzimmer", "der Flughafen", "das Gepäck", "die Halbpension"], bingo: ["fremd", "kulturell", "sonnig", "die Köchin", "der Kollege", "der Krankenpfleger", "der Lehrer", "die Lehrerin", "die Lösung"] },
-    { docks: ["der Herbst", "der Koffer", "der Regenschirm", "das Wetter", "der Winter", "der Abflug", "der Deutsche", "der Europäer", "der Frühling", "die Jahreszeit", "die Milliarde", "der Monat"], bingo: ["die Papiere", "der Schüler", "der Student", "der Unterricht", "die Verkäuferin", "abgeben", "anklicken", "der Arbeitsplatz", "bedeuten"] },
-    { docks: ["das Reisebüro", "der Reiseführer", "die Welt", "die Aufgabe", "der Beruf", "der Bleistift", "das Ergebnis", "das Vorstellungsgespräch", "die Hausaufgabe", "der Hausmann", "die Kellnerin", "die Klasse"], bingo: ["benutzen", "der Bogen", "der Chef", "drucken", "der Drucker", "der Fehler", "der Friseur", "gestern Abend", "der Informatiker"] },
+    { docks: ["das Medikament", "der Mund", "die Nase", "das Ohr", "der Schmerz", "der Schnupfen", "die Tablette", "das Wartezimmer", "der Zahn", "der Bauch", "der Eintritt", "die Halle"], bingo: ["kalt", "sonnig", "übernachten", "windig", "ausländisch", "Es schneit.", "Es sind 20 Grad.", "europäisch", "die Ferien"] },
+    { docks: ["der Lieblingsfilm", "der See", "der Verein", "das Meer", "der Sommer", "die Anreise", "der Anschluss", "das Datum", "das Doppelzimmer", "der Flughafen", "das Gepäck", "die Halbpension"], bingo: ["fremd", "kulturell", "die Köchin", "der Kollege", "der Krankenpfleger", "der Lehrer", "die Lehrerin", "die Lösung", "die Papiere"] },
+    { docks: ["der Herbst", "der Koffer", "der Regenschirm", "das Wetter", "der Winter", "der Abflug", "der Deutsche", "der Europäer", "der Frühling", "die Jahreszeit", "die Milliarde", "der Monat"], bingo: ["der Schüler", "der Student", "der Unterricht", "die Verkäuferin", "abgeben", "anklicken", "der Arbeitsplatz", "bedeuten", "benutzen"] },
+    { docks: ["das Reisebüro", "der Reiseführer", "die Welt", "die Aufgabe", "der Beruf", "der Bleistift", "das Ergebnis", "das Vorstellungsgespräch", "die Hausaufgabe", "der Hausmann", "die Kellnerin", "die Klasse"], bingo: ["der Bogen", "der Chef", "drucken", "der Drucker", "der Fehler", "der Friseur", "gestern Abend", "der Informatiker", "der Ingenieur"] },
   ],
 };
 
@@ -111,7 +111,7 @@ export const WARMUPS: Record<number, Warmup[]> = {
     { mech: "docks", words: ["der Kiosk", "der Mai", "der Moment", "der Anfang", "der April", "der Dezember", "die Dusche", "der Februar", "der Feierabend", "der Januar", "der März", "die Sekunde"] },
   ],
   8: [
-    { mech: "docks", words: ["der Ausflug", "der Dienstag", "der Donnerstag", "die Einladung", "der Film", "die Freizeit", "der Garten", "der Park", "der Baum", "die Blume", "die Disco", "das Feuer"] },
+    { mech: "docks", words: ["der Ausflug", "der Donnerstag", "die Einladung", "der Film", "die Freizeit", "der Garten", "der Mittwoch", "der Park", "der Baum", "die Blume", "die Disco", "das Feuer"] },
     { mech: "letters", words: ["dir", "so", "einladen", "fertig", "gefallen"] },
     { mech: "bingo", words: ["Tennis spielen", "am liebsten", "Fahrrad fahren", "fotografieren", "Fußball spielen", "ins Kino gehen", "laufen", "manchmal", "nicht gern", "oft", "Schade!", "schwimmen"] },
   ],
@@ -136,8 +136,8 @@ export const WARMUPS: Record<number, Warmup[]> = {
     { mech: "gull", words: ["böse", "empfehlen", "etwa", "abfliegen", "abholen", "aussteigen", "automatisch", "dort", "durch", "einfach"] },
   ],
   13: [
-    { mech: "bingo", words: ["baden", "erst", "Freunde treffen", "gewinnen", "Gitarre spielen", "grillen", "lustig", "mitmachen", "Musik hören", "Rad fahren", "wunderbar", "zu Fuß"] },
-    { mech: "gull", words: ["Gute Besserung!", "aussehen", "besser", "erlauben", "erzählen", "leise", "böse", "empfehlen", "etwa", "wandern"] },
+    { mech: "bingo", words: ["erst", "Freunde treffen", "gewinnen", "Gitarre spielen", "grillen", "lustig", "mitmachen", "Musik hören", "Rad fahren", "wunderbar", "zu Fuß", "bewölkt"] },
+    { mech: "gull", words: ["Gute Besserung!", "aussehen", "besser", "erlauben", "erzählen", "leise", "böse", "empfehlen", "etwa", "baden"] },
     { mech: "docks", words: ["der Rücken", "die Versichertenkarte", "die Anmeldung", "der Arm", "das Bein", "der Doktor", "die Erkältung", "das Fieber", "das Glück", "das Haar", "der Hals", "der Husten"] },
   ],
 };

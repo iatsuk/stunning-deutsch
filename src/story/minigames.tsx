@@ -769,6 +769,83 @@ export function Twenty({ c, value, seed, disabled, change, win, miss }: Game<"tw
   );
 }
 
+/**
+ * «Карта погоды»: прогноз звучит по радио, игрок ставит значок погоды на каждый день и сам проверяет.
+ * На значках только картинки: слово погоды нужно услышать. Ошибка называет, сколько дней не сходится,
+ * но не какие; после второй неудачной проверки открывается текст прогноза, как у письма по образцу.
+ */
+export function Weather({ c, value, disabled, change, win, miss }: Game<"weather">) {
+  const record = asRecord(value);
+  const [note, setNote] = useState("");
+  const [tone, setTone] = useState<Tone>();
+  const [failed, setFailed] = useState(0);
+  const lines = c.forecast.map((f) => storyAudio(f.de, c.voice));
+  if (disabled) return <Note>Прогноз разобран.</Note>;
+  function check() {
+    if (c.days.some((day) => !record[day])) {
+      setTone("bad");
+      return setNote("Выберите значок для каждого дня.");
+    }
+    const wrong = c.forecast.filter((f) => record[f.day] !== f.sky);
+    if (wrong.length) {
+      wrong.forEach((f) => miss(c.skies.find((s) => s.id === f.sky)!.de));
+      setFailed(failed + 1);
+      setTone("bad");
+      return setNote(`Не сходится дней: ${wrong.length}. Послушайте прогноз ещё раз.`);
+    }
+    setTone("good");
+    setNote("Всё сходится с прогнозом.");
+    win();
+  }
+  return (
+    <>
+      <div className="moin-program-run moin-weather-play">
+        <button type="button" onClick={() => playAll(lines)}>
+          ▶ Слушать прогноз
+        </button>
+        {lines.map((src, i) => (
+          <PlayButton key={c.forecast[i].de} src={src} label={`Фраза ${i + 1}`} />
+        ))}
+      </div>
+      {c.days.map((day) => (
+        <div key={day} className="moin-ads-person moin-weather-day">
+          <p lang="de">{day}</p>
+          <div role="group" aria-label={day}>
+            {c.skies.map((sky) => (
+              <button
+                type="button"
+                key={sky.id}
+                aria-pressed={record[day] === sky.id}
+                aria-label={sky.ru}
+                title={sky.ru}
+                onClick={() => {
+                  setNote("");
+                  change({ ...record, [day]: sky.id });
+                }}
+              >
+                <span aria-hidden="true">{sky.icon}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+      ))}
+      <div className="moin-program-run">
+        <button type="button" onClick={check}>
+          Проверить
+        </button>
+      </div>
+      {note && <Note tone={tone}>{note}</Note>}
+      {failed >= 2 && (
+        <ul className="moin-notes" aria-label="Текст прогноза">
+          {c.forecast.map((f) => (
+            <Gloss key={f.de} de={f.de} ru={f.ru} />
+          ))}
+        </ul>
+      )}
+    </>
+  );
+}
+
 /** Карточки «Алгоритма»: повелительное наклонение на Sie, как в объяснении дороги. */
 export const COMMAND: Record<Move, string> = {
   geradeaus: "Gehen Sie geradeaus.",

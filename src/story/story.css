@@ -2848,6 +2848,19 @@
   max-width: 64px;
   height: auto;
 }
+/* «Карта погоды»: прогноз — одной кнопкой и по фразам; у дня ряд значков-картинок. */
+.moin-weather-play {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0;
+}
+.moin-weather-day button {
+  min-width: 44px;
+  font-size: 22px;
+  line-height: 1;
+}
 /* «20 вопросов»: карточки на столе вычёркиваются, у заданного вопроса остаётся ответ. */
 .moin-twenty-cards {
   display: grid;

@@ -39,13 +39,13 @@
 
 | Правило | Статус | Числа | Объяснение | Где |
 |---|---|---|---|---|
-| Präsens, окончания по лицам | закреплено | 585 · 13 · 436 · 313 | есть | [01-s1](src/story/scenes/01.ts#L54) [01-s2](src/story/scenes/01.ts#L168) [01-s3](src/story/scenes/01.ts#L223) [01-i1](src/story/scenes/01.ts#L387) [01-s4](src/story/scenes/01.ts#L424) [01-s5](src/story/scenes/01.ts#L509) |
+| Präsens, окончания по лицам | закреплено | 586 · 13 · 437 · 314 | есть | [01-s1](src/story/scenes/01.ts#L54) [01-s2](src/story/scenes/01.ts#L168) [01-s3](src/story/scenes/01.ts#L223) [01-i1](src/story/scenes/01.ts#L387) [01-s4](src/story/scenes/01.ts#L424) [01-s5](src/story/scenes/01.ts#L509) |
 | Präsens со сменой корня (e → i, a → ä) | закреплено | 122 · 12 · 45 · 56 | есть | [01-s3](src/story/scenes/01.ts#L223) [01-s4](src/story/scenes/01.ts#L425) [01-s5](src/story/scenes/01.ts#L505) [02-s4](src/story/scenes/02.ts#L474) [04-s2](src/story/scenes/04.ts#L242) [04-s3](src/story/scenes/04.ts#L393) |
-| sein | закреплено | 652 · 13 · 281 · 336 | есть | [01-s1](src/story/scenes/01.ts#L35) [01-s2](src/story/scenes/01.ts#L156) |
+| sein | закреплено | 654 · 13 · 282 · 337 | есть | [01-s1](src/story/scenes/01.ts#L35) [01-s2](src/story/scenes/01.ts#L156) |
 | haben | закреплено | 259 · 12 · 125 · 140 | есть | [02-s1](src/story/scenes/02.ts#L56) [02-s2](src/story/scenes/02.ts#L151) [02-s3](src/story/scenes/02.ts#L236) [02-i1](src/story/scenes/02.ts#L405) |
-| Отделяемые приставки и рамка предложения | закреплено | 65 · 10 · 36 · 30 | есть | [01-s3](src/story/scenes/01.ts#L223) [05-s3](src/story/scenes/05.ts#L314) [05-s4](src/story/scenes/05.ts#L498) [06-s2](src/story/scenes/06.ts#L225) [06-s3](src/story/scenes/06.ts#L298) |
+| Отделяемые приставки и рамка предложения | закреплено | 66 · 10 · 36 · 30 | есть | [01-s3](src/story/scenes/01.ts#L223) [05-s3](src/story/scenes/05.ts#L314) [05-s4](src/story/scenes/05.ts#L498) [06-s2](src/story/scenes/06.ts#L225) [06-s3](src/story/scenes/06.ts#L298) |
 | Perfekt с haben | закреплено | 77 · 5 · 44 · 38 | есть | [10-s1](src/story/scenes/10.ts#L59) [11-s1](src/story/scenes/11.ts#L38) [11-i1](src/story/scenes/11.ts#L162) [11-s2](src/story/scenes/11.ts#L199) |
-| Perfekt с sein | закреплено | 23 · 4 · 17 · 9 | есть | [09-s4](src/story/scenes/09.ts#L505) [11-s2](src/story/scenes/11.ts#L219) [12-s1](src/story/scenes/12.ts#L151) [12-s2](src/story/scenes/12.ts#L174) [12-s3](src/story/scenes/12.ts#L28) [12-s5](src/story/scenes/12.ts#L563) |
+| Perfekt с sein | закреплено | 23 · 4 · 17 · 9 | есть | [09-s4](src/story/scenes/09.ts#L505) [11-s2](src/story/scenes/11.ts#L219) [12-s1](src/story/scenes/12.ts#L151) [12-s2](src/story/scenes/12.ts#L174) [12-s3](src/story/scenes/12.ts#L28) [12-s5](src/story/scenes/12.ts#L587) |
 | Präteritum war и hatte | закреплено | 30 · 5 · 15 · 10 | есть | [09-s1](src/story/scenes/09.ts#L64) [09-i1](src/story/scenes/09.ts#L277) [10-s1](src/story/scenes/10.ts#L58) [11-i1](src/story/scenes/11.ts#L162) [11-s2](src/story/scenes/11.ts#L219) [11-s3](src/story/scenes/11.ts#L301) |
 | möchten | закреплено | 18 · 5 · 11 · 11 | есть | [04-s1](src/story/scenes/04.ts#L53) [04-s2](src/story/scenes/04.ts#L169) [04-s5](src/story/scenes/04.ts#L573) [04-s6](src/story/scenes/04.ts#L698) [08-s1](src/story/scenes/08.ts#L103) [10-s6](src/story/scenes/10.ts#L674) |
 | Ich hätte gern …, Ich würde gern … как готовые выражения | закреплено | 7 · 4 · 4 · 3 | есть | [04-s4](src/story/scenes/04.ts#L465) [07-s5](src/story/scenes/07.ts#L559) [12-s3](src/story/scenes/12.ts#L304) [13-s4](src/story/scenes/13.ts#L426) |
@@ -54,9 +54,9 @@
 | müssen | закреплено | 17 · 5 · 8 · 4 | есть | [08-s4](src/story/scenes/08.ts#L570) [10-s1](src/story/scenes/10.ts#L84) [10-s3](src/story/scenes/10.ts#L278) [10-s4](src/story/scenes/10.ts#L456) [10-s5](src/story/scenes/10.ts#L552) [10-s6](src/story/scenes/10.ts#L674) |
 | dürfen | закреплено | 29 · 5 · 16 · 6 | есть | [09-s2](src/story/scenes/09.ts#L223) [10-s1](src/story/scenes/10.ts#L84) [10-s2](src/story/scenes/10.ts#L174) [10-s3](src/story/scenes/10.ts#L258) [10-s4](src/story/scenes/10.ts#L29) |
 | sollen | закреплено | 19 · 4 · 13 · 11 | есть | [10-s4](src/story/scenes/10.ts#L30) [10-s5](src/story/scenes/10.ts#L587) [10-s6](src/story/scenes/10.ts#L31) [11-s5](src/story/scenes/11.ts#L29) |
-| mögen | закреплено | 12 · 4 · 4 · 5 | есть | [07-s3](src/story/scenes/07.ts#L411) [07-s4](src/story/scenes/07.ts#L501) [08-s1](src/story/scenes/08.ts#L103) [12-s3](src/story/scenes/12.ts#L304) [12-s6](src/story/scenes/12.ts#L637) [13-s5](src/story/scenes/13.ts#L490) |
+| mögen | закреплено | 12 · 4 · 4 · 5 | есть | [07-s3](src/story/scenes/07.ts#L411) [07-s4](src/story/scenes/07.ts#L501) [08-s1](src/story/scenes/08.ts#L103) [12-s3](src/story/scenes/12.ts#L304) [12-s6](src/story/scenes/12.ts#L661) [13-s5](src/story/scenes/13.ts#L490) |
 | Модальный глагол и инфинитив в конце | закреплено | 74 · 8 · 40 · 29 | есть | [04-s6](src/story/scenes/04.ts#L698) [07-s1](src/story/scenes/07.ts#L45) [07-s2](src/story/scenes/07.ts#L195) [07-s3](src/story/scenes/07.ts#L300) [07-s4](src/story/scenes/07.ts#L515) [07-s5](src/story/scenes/07.ts#L559) |
-| Повелительное наклонение на Sie | закреплено | 367 · 12 · 354 · 198 | есть | [02-s1](src/story/scenes/02.ts#L33) [02-s2](src/story/scenes/02.ts#L147) [02-s3](src/story/scenes/02.ts#L247) |
+| Повелительное наклонение на Sie | закреплено | 368 · 12 · 355 · 199 | есть | [02-s1](src/story/scenes/02.ts#L33) [02-s2](src/story/scenes/02.ts#L147) [02-s3](src/story/scenes/02.ts#L247) |
 | Повелительное наклонение на du | закреплено | 67 · 11 · 27 · 43 | есть | [02-s3](src/story/scenes/02.ts#L382) [02-s4](src/story/scenes/02.ts#L501) [03-s6](src/story/scenes/03.ts#L790) [05-s1](src/story/scenes/05.ts#L90) [05-s3](src/story/scenes/05.ts#L314) [05-s6](src/story/scenes/05.ts#L738) |
 | Повелительное наклонение на ihr | закреплено | 16 · 6 · 8 · 8 | есть | [06-s1](src/story/scenes/06.ts#L35) [07-s1](src/story/scenes/07.ts#L95) [07-s4](src/story/scenes/07.ts#L481) [08-s1](src/story/scenes/08.ts#L85) [09-s2](src/story/scenes/09.ts#L195) [09-s3](src/story/scenes/09.ts#L346) |
 
@@ -64,22 +64,22 @@
 
 | Правило | Статус | Числа | Объяснение | Где |
 |---|---|---|---|---|
-| Глагол на втором месте, время на первом | закреплено | 88 · 13 · 44 · 42 | есть | [01-s1](src/story/scenes/01.ts#L127) [01-s3](src/story/scenes/01.ts#L240) [01-s6](src/story/scenes/01.ts#L653) [02-s2](src/story/scenes/02.ts#L204) [02-s3](src/story/scenes/02.ts#L236) [03-s3](src/story/scenes/03.ts#L281) |
-| Вопрос с W-словом | закреплено | 226 · 13 · 155 · 94 | есть | [01-s1](src/story/scenes/01.ts#L45) [01-s2](src/story/scenes/01.ts#L156) [01-s3](src/story/scenes/01.ts#L223) |
+| Глагол на втором месте, время на первом | закреплено | 89 · 13 · 45 · 43 | есть | [01-s1](src/story/scenes/01.ts#L127) [01-s3](src/story/scenes/01.ts#L240) [01-s6](src/story/scenes/01.ts#L653) [02-s2](src/story/scenes/02.ts#L204) [02-s3](src/story/scenes/02.ts#L236) [03-s3](src/story/scenes/03.ts#L281) |
+| Вопрос с W-словом | закреплено | 227 · 13 · 156 · 95 | есть | [01-s1](src/story/scenes/01.ts#L45) [01-s2](src/story/scenes/01.ts#L156) [01-s3](src/story/scenes/01.ts#L223) |
 | Вопрос да/нет и ответ ja / nein / doch | закреплено | 81 · 13 · 62 · 26 | есть | [01-s6](src/story/scenes/01.ts#L653) [02-s1](src/story/scenes/02.ts#L52) [02-s3](src/story/scenes/02.ts#L232) [02-i1](src/story/scenes/02.ts#L421) [02-s4](src/story/scenes/02.ts#L441) [02-s5](src/story/scenes/02.ts#L599) |
 | nicht и kein | закреплено | 295 · 13 · 134 · 125 | есть | [01-s1](src/story/scenes/01.ts#L148) [01-s3](src/story/scenes/01.ts#L223) [01-s5](src/story/scenes/01.ts#L542) [02-s2](src/story/scenes/02.ts#L208) [02-s4](src/story/scenes/02.ts#L527) [02-s5](src/story/scenes/02.ts#L599) |
-| und, oder, aber | закреплено | 490 · 13 · 340 · 317 | есть | [01-s3](src/story/scenes/01.ts#L223) [01-i1](src/story/scenes/01.ts#L391) [01-s4](src/story/scenes/01.ts#L418) [01-s6](src/story/scenes/01.ts#L603) [02-s1](src/story/scenes/02.ts#L33) [02-s2](src/story/scenes/02.ts#L147) |
-| denn как союз причины | закреплено | 9 · 6 · 3 · 7 | есть | [07-s1](src/story/scenes/07.ts#L64) [07-s2](src/story/scenes/07.ts#L195) [08-s6](src/story/scenes/08.ts#L757) [09-s2](src/story/scenes/09.ts#L177) [10-s4](src/story/scenes/10.ts#L402) [12-s4](src/story/scenes/12.ts#L471) |
-| dann | закреплено | 27 · 8 · 7 · 12 | есть | [06-s5](src/story/scenes/06.ts#L616) [06-s6](src/story/scenes/06.ts#L771) [07-s2](src/story/scenes/07.ts#L275) [08-s6](src/story/scenes/08.ts#L761) [09-s1](src/story/scenes/09.ts#L59) [09-s2](src/story/scenes/09.ts#L237) |
+| und, oder, aber | закреплено | 491 · 13 · 341 · 318 | есть | [01-s3](src/story/scenes/01.ts#L223) [01-i1](src/story/scenes/01.ts#L391) [01-s4](src/story/scenes/01.ts#L418) [01-s6](src/story/scenes/01.ts#L603) [02-s1](src/story/scenes/02.ts#L33) [02-s2](src/story/scenes/02.ts#L147) |
+| denn как союз причины | закреплено | 9 · 6 · 3 · 7 | есть | [07-s1](src/story/scenes/07.ts#L64) [07-s2](src/story/scenes/07.ts#L195) [08-s6](src/story/scenes/08.ts#L757) [09-s2](src/story/scenes/09.ts#L177) [10-s4](src/story/scenes/10.ts#L402) [12-s4](src/story/scenes/12.ts#L495) |
+| dann | закреплено | 28 · 8 · 7 · 12 | есть | [06-s5](src/story/scenes/06.ts#L616) [06-s6](src/story/scenes/06.ts#L771) [07-s2](src/story/scenes/07.ts#L275) [08-s6](src/story/scenes/08.ts#L761) [09-s1](src/story/scenes/09.ts#L59) [09-s2](src/story/scenes/09.ts#L237) |
 | wenn (понимание) | закреплено | 6 · 4 · 2 · 4 | есть | [10-s4](src/story/scenes/10.ts#L466) [11-s5](src/story/scenes/11.ts#L563) [12-s2](src/story/scenes/12.ts#L179) [13-s6](src/story/scenes/13.ts#L626) |
-| es gibt | закреплено | 12 · 6 · 3 · 7 | есть | [05-s2](src/story/scenes/05.ts#L206) [07-s1](src/story/scenes/07.ts#L39) [07-s3](src/story/scenes/07.ts#L312) [08-s1](src/story/scenes/08.ts#L88) [09-s1](src/story/scenes/09.ts#L86) [12-s6](src/story/scenes/12.ts#L687) |
+| es gibt | закреплено | 12 · 6 · 3 · 7 | есть | [05-s2](src/story/scenes/05.ts#L206) [07-s1](src/story/scenes/07.ts#L39) [07-s3](src/story/scenes/07.ts#L312) [08-s1](src/story/scenes/08.ts#L88) [09-s1](src/story/scenes/09.ts#L86) [12-s6](src/story/scenes/12.ts#L711) |
 
 ### Существительное и артикль
 
 | Правило | Статус | Числа | Объяснение | Где |
 |---|---|---|---|---|
 | Множественное число | закреплено | 234 · 13 · 90 · 106 | есть | [01-s3](src/story/scenes/01.ts#L223) [01-s6](src/story/scenes/01.ts#L603) [02-s1](src/story/scenes/02.ts#L120) [02-s2](src/story/scenes/02.ts#L209) [02-s3](src/story/scenes/02.ts#L232) [02-i1](src/story/scenes/02.ts#L416) |
-| Винительный падеж | закреплено | 283 · 12 · 213 · 130 | есть | [02-s1](src/story/scenes/02.ts#L66) [02-s2](src/story/scenes/02.ts#L204) [02-s3](src/story/scenes/02.ts#L256) [02-s4](src/story/scenes/02.ts#L458) [02-s5](src/story/scenes/02.ts#L585) [03-s1](src/story/scenes/03.ts#L50) |
+| Винительный падеж | закреплено | 284 · 12 · 214 · 131 | есть | [02-s1](src/story/scenes/02.ts#L66) [02-s2](src/story/scenes/02.ts#L204) [02-s3](src/story/scenes/02.ts#L256) [02-s4](src/story/scenes/02.ts#L458) [02-s5](src/story/scenes/02.ts#L585) [03-s1](src/story/scenes/03.ts#L50) |
 | Дательный на вопрос «где?» (in, auf, an) | закреплено | 237 · 12 · 86 · 71 | есть | [01-s6](src/story/scenes/01.ts#L653) [03-s4](src/story/scenes/03.ts#L490) [03-s5](src/story/scenes/03.ts#L654) [03-s6](src/story/scenes/03.ts#L839) [04-s1](src/story/scenes/04.ts#L135) [04-s2](src/story/scenes/04.ts#L168) |
 | Предлоги с дательным (mit, zu, bei, von, aus, nach) | закреплено | 143 · 12 · 69 · 55 | есть | [01-s1](src/story/scenes/01.ts#L20) [01-s3](src/story/scenes/01.ts#L223) [01-s5](src/story/scenes/01.ts#L571) [01-s6](src/story/scenes/01.ts#L635) [02-s3](src/story/scenes/02.ts#L247) [03-s2](src/story/scenes/03.ts#L223) |
 | Чей? Имя + s (Annas Bruder) | закреплено | 25 · 10 · 14 · 10 | есть | [01-s2](src/story/scenes/01.ts#L189) [01-s5](src/story/scenes/01.ts#L504) [02-s1](src/story/scenes/02.ts#L120) [03-s1](src/story/scenes/03.ts#L66) [03-s3](src/story/scenes/03.ts#L299) [03-s4](src/story/scenes/03.ts#L501) |
@@ -98,14 +98,14 @@
 | Глаголы с дательным (gehören, gefallen, helfen, danken, geben) | закреплено | 20 · 9 · 10 · 11 | есть | [04-i1](src/story/scenes/04.ts#L415) [06-s6](src/story/scenes/06.ts#L748) [07-s3](src/story/scenes/07.ts#L424) [07-s5](src/story/scenes/07.ts#L589) [07-s6](src/story/scenes/07.ts#L860) [08-s2](src/story/scenes/08.ts#L183) |
 | sich, uns (Wir sehen uns) | закреплено | 26 · 13 · 20 · 22 | есть | [01-s6](src/story/scenes/01.ts#L612) [02-s6](src/story/scenes/02.ts#L681) [03-s6](src/story/scenes/03.ts#L821) [04-s6](src/story/scenes/04.ts#L772) [05-s6](src/story/scenes/05.ts#L783) [06-s1](src/story/scenes/06.ts#L151) |
 | Вопросы wen? и wem? | закреплено | 8 · 5 · 3 · 5 | есть | [08-s2](src/story/scenes/08.ts#L183) [09-s6](src/story/scenes/09.ts#L743) [10-s3](src/story/scenes/10.ts#L254) [12-s3](src/story/scenes/12.ts#L292) [13-s6](src/story/scenes/13.ts#L608) |
-| man | закреплено | 14 · 5 · 4 · 5 | есть | [07-s1](src/story/scenes/07.ts#L40) [09-s2](src/story/scenes/09.ts#L172) [10-s2](src/story/scenes/10.ts#L174) [12-s2](src/story/scenes/12.ts#L180) [12-s3](src/story/scenes/12.ts#L279) [12-s6](src/story/scenes/12.ts#L687) |
+| man | закреплено | 14 · 5 · 4 · 5 | есть | [07-s1](src/story/scenes/07.ts#L40) [09-s2](src/story/scenes/09.ts#L172) [10-s2](src/story/scenes/10.ts#L174) [12-s2](src/story/scenes/12.ts#L180) [12-s3](src/story/scenes/12.ts#L279) [12-s6](src/story/scenes/12.ts#L711) |
 | etwas, nichts, alles, mehr | закреплено | 91 · 12 · 31 · 45 | есть | [01-s2](src/story/scenes/01.ts#L168) [03-s3](src/story/scenes/03.ts#L281) [04-s2](src/story/scenes/04.ts#L219) [04-s3](src/story/scenes/04.ts#L301) [04-s4](src/story/scenes/04.ts#L508) [04-s5](src/story/scenes/04.ts#L577) |
 
 ### Прилагательное и числа
 
 | Правило | Статус | Числа | Объяснение | Где |
 |---|---|---|---|---|
-| Прилагательное после sein (zu groß) | закреплено | 107 · 13 · 40 · 58 | есть | [01-s2](src/story/scenes/01.ts#L168) [01-s4](src/story/scenes/01.ts#L439) [02-s5](src/story/scenes/02.ts#L561) [03-s2](src/story/scenes/03.ts#L247) [03-s4](src/story/scenes/03.ts#L541) [04-s2](src/story/scenes/04.ts#L231) |
+| Прилагательное после sein (zu groß) | закреплено | 108 · 13 · 41 · 59 | есть | [01-s2](src/story/scenes/01.ts#L168) [01-s4](src/story/scenes/01.ts#L439) [02-s5](src/story/scenes/02.ts#L561) [03-s2](src/story/scenes/03.ts#L247) [03-s4](src/story/scenes/03.ts#L541) [04-s2](src/story/scenes/04.ts#L231) |
 | gern, lieber, am liebsten | закреплено | 28 · 8 · 18 · 14 | есть | [04-s3](src/story/scenes/04.ts#L301) [04-s4](src/story/scenes/04.ts#L465) [04-s6](src/story/scenes/04.ts#L772) [07-s1](src/story/scenes/07.ts#L91) [07-s3](src/story/scenes/07.ts#L407) [07-s4](src/story/scenes/07.ts#L468) |
 | Сравнение (besser, mehr, als) | закреплено | 19 · 9 · 12 · 10 | есть | [04-s1](src/story/scenes/04.ts#L63) [06-s6](src/story/scenes/06.ts#L908) [07-s2](src/story/scenes/07.ts#L814) [07-s3](src/story/scenes/07.ts#L312) [08-s3](src/story/scenes/08.ts#L388) [10-s3](src/story/scenes/10.ts#L258) |
 | Цены и количества | закреплено | 92 · 11 · 50 · 35 | есть | [02-s6](src/story/scenes/02.ts#L714) [03-s2](src/story/scenes/03.ts#L227) [03-i1](src/story/scenes/03.ts#L227) [03-s6](src/story/scenes/03.ts#L751) [04-s3](src/story/scenes/04.ts#L301) [04-s4](src/story/scenes/04.ts#L495) |
@@ -116,24 +116,24 @@
 
 | Правило | Статус | Числа | Объяснение | Где |
 |---|---|---|---|---|
-| um, am, im, von … bis во времени | закреплено | 150 · 9 · 74 · 62 | есть | [05-s6](src/story/scenes/05.ts#L813) [06-s1](src/story/scenes/06.ts#L36) [06-s2](src/story/scenes/06.ts#L179) |
+| um, am, im, von … bis во времени | закреплено | 151 · 9 · 75 · 63 | есть | [05-s6](src/story/scenes/05.ts#L813) [06-s1](src/story/scenes/06.ts#L36) [06-s2](src/story/scenes/06.ts#L179) |
 | ab и für во времени (ab Montag, für zwei Wochen) | закреплено | 13 · 6 · 7 · 2 | есть | [08-s3](src/story/scenes/08.ts#L388) [09-s2](src/story/scenes/09.ts#L175) [10-s3](src/story/scenes/10.ts#L255) [10-s4](src/story/scenes/10.ts#L477) [11-s5](src/story/scenes/11.ts#L552) [12-s3](src/story/scenes/12.ts#L289) |
-| nach и vor во времени (nach dem Essen) | закреплено | 10 · 5 · 5 · 5 | есть | [08-s6](src/story/scenes/08.ts#L737) [09-s2](src/story/scenes/09.ts#L175) [10-s3](src/story/scenes/10.ts#L255) [10-s4](src/story/scenes/10.ts#L477) [12-s4](src/story/scenes/12.ts#L458) [13-s5](src/story/scenes/13.ts#L480) |
+| nach и vor во времени (nach dem Essen) | закреплено | 10 · 5 · 5 · 5 | есть | [08-s6](src/story/scenes/08.ts#L737) [09-s2](src/story/scenes/09.ts#L175) [10-s3](src/story/scenes/10.ts#L255) [10-s4](src/story/scenes/10.ts#L477) [12-s4](src/story/scenes/12.ts#L482) [13-s5](src/story/scenes/13.ts#L480) |
 | über (über zwanzig Minuten) | закреплено | 7 · 4 · 4 · 3 | есть | [09-s2](src/story/scenes/09.ts#L175) [10-s3](src/story/scenes/10.ts#L254) [10-s4](src/story/scenes/10.ts#L478) [12-s3](src/story/scenes/12.ts#L304) [13-s2](src/story/scenes/13.ts#L210) |
 | nach Hause / zu Hause | закреплено | 19 · 5 · 11 · 6 | есть | [07-s2](src/story/scenes/07.ts#L159) [09-s5](src/story/scenes/09.ts#L687) [09-s6](src/story/scenes/09.ts#L742) [10-s4](src/story/scenes/10.ts#L30) [12-s1](src/story/scenes/12.ts#L122) |
 | in, an, auf + винительный для направления (in die Stadt) | закреплено | 49 · 10 · 23 · 17 | есть | [03-s4](src/story/scenes/03.ts#L529) [04-s2](src/story/scenes/04.ts#L251) [04-s5](src/story/scenes/04.ts#L587) [06-s2](src/story/scenes/06.ts#L221) [06-s5](src/story/scenes/06.ts#L639) [06-s6](src/story/scenes/06.ts#L793) |
 | unter | закреплено | 10 · 5 · 4 · 5 | есть | [04-s3](src/story/scenes/04.ts#L301) [04-s6](src/story/scenes/04.ts#L743) [08-s2](src/story/scenes/08.ts#L214) [09-s2](src/story/scenes/09.ts#L235) [11-s2](src/story/scenes/11.ts#L219) [13-s6](src/story/scenes/13.ts#L586) |
-| ohne и für (ohne dich, für meinen Freund) | закреплено | 55 · 13 · 26 · 15 | есть | [01-s1](src/story/scenes/01.ts#L148) [02-s2](src/story/scenes/02.ts#L208) [02-s4](src/story/scenes/02.ts#L458) [03-s4](src/story/scenes/03.ts#L489) [03-s5](src/story/scenes/03.ts#L706) [04-s1](src/story/scenes/04.ts#L160) |
+| ohne и für (ohne dich, für meinen Freund) | закреплено | 56 · 13 · 26 · 15 | есть | [01-s1](src/story/scenes/01.ts#L148) [02-s2](src/story/scenes/02.ts#L208) [02-s4](src/story/scenes/02.ts#L458) [03-s4](src/story/scenes/03.ts#L489) [03-s5](src/story/scenes/03.ts#L706) [04-s1](src/story/scenes/04.ts#L160) |
 
 ### Словообразование
 
 | Правило | Статус | Числа | Объяснение | Где |
 |---|---|---|---|---|
 | Существительные на -ung | закреплено | 141 · 12 · 78 · 64 | есть | [02-s2](src/story/scenes/02.ts#L137) [02-s3](src/story/scenes/02.ts#L247) [02-s5](src/story/scenes/02.ts#L663) [04-s2](src/story/scenes/04.ts#L235) [04-s3](src/story/scenes/04.ts#L301) [04-s4](src/story/scenes/04.ts#L511) |
-| Прилагательные с un-, -los, -bar | закреплено | 8 · 5 · 5 · 6 | есть | [08-s6](src/story/scenes/08.ts#L910) [09-s2](src/story/scenes/09.ts#L887) [09-s4](src/story/scenes/09.ts#L505) [11-s1](src/story/scenes/11.ts#L74) [12-s4](src/story/scenes/12.ts#L472) [13-s6](src/story/scenes/13.ts#L586) |
+| Прилагательные с un-, -los, -bar | закреплено | 8 · 5 · 5 · 6 | есть | [08-s6](src/story/scenes/08.ts#L910) [09-s2](src/story/scenes/09.ts#L887) [09-s4](src/story/scenes/09.ts#L505) [11-s1](src/story/scenes/11.ts#L74) [12-s4](src/story/scenes/12.ts#L496) [13-s6](src/story/scenes/13.ts#L586) |
 | hellblau, dunkelblau | закреплено | 28 · 6 · 11 · 3 | есть | [05-s2](src/story/scenes/05.ts#L262) [05-s3](src/story/scenes/05.ts#L314) [05-s5](src/story/scenes/05.ts#L610) [05-s6](src/story/scenes/05.ts#L732) [06-s2](src/story/scenes/06.ts#L209) [06-i1](src/story/scenes/06.ts#L468) |
 | Причастие как прилагательное (geöffnet, geschlossen) | закреплено | 9 · 6 · 6 · 5 | есть | [06-s3](src/story/scenes/06.ts#L298) [08-s4](src/story/scenes/08.ts#L570) [10-s5](src/story/scenes/10.ts#L538) [12-s3](src/story/scenes/12.ts#L304) [09-разминка](src/story/scenes/warmups.ts#L109) [11-разминка](src/story/scenes/warmups.ts#L87) |
-| Погода с es (Es regnet) | закреплено | 29 · 6 · 7 · 7 | есть | [05-s1](src/story/scenes/05.ts#L40) [06-s6](src/story/scenes/06.ts#L736) [09-s1](src/story/scenes/09.ts#L41) [09-i1](src/story/scenes/09.ts#L291) [09-s3](src/story/scenes/09.ts#L331) [11-s1](src/story/scenes/11.ts#L142) |
+| Погода с es (Es regnet) | закреплено | 30 · 6 · 8 · 8 | есть | [05-s1](src/story/scenes/05.ts#L40) [06-s6](src/story/scenes/06.ts#L736) [09-s1](src/story/scenes/09.ts#L41) [09-i1](src/story/scenes/09.ts#L291) [09-s3](src/story/scenes/09.ts#L331) [11-s1](src/story/scenes/11.ts#L142) |
 | Ich habe …schmerzen, … tut weh | закреплено | 16 · 4 · 8 · 11 | есть | [10-s1](src/story/scenes/10.ts#L40) [10-s2](src/story/scenes/10.ts#L124) [10-s6](src/story/scenes/10.ts#L680) [11-s3](src/story/scenes/11.ts#L301) [12-s3](src/story/scenes/12.ts#L304) [13-s2](src/story/scenes/13.ts#L210) |
 
 ## Слова: нет
@@ -158,59 +158,59 @@
 |---|---|---|---|---|---|
 | der Abflug (от fliegen) ↻ | экз. | 2 · 2 · 1 · 1 | [12-s2](src/story/scenes/12.ts#L211) [13-s2](src/story/scenes/13.ts#L661) | — | — |
 | die Abreise | 12 | 2 · 1 · 1 · 1 | [12-s3](src/story/scenes/12.ts#L304) | [12](content/a1/12-reisen.yaml#L112) | гл. 12 |
-| die Anreise ↻ | 12 | 4 · 2 · 3 · 3 | [12-s3](src/story/scenes/12.ts#L304) [12-s6](src/story/scenes/12.ts#L707) [13-s6](src/story/scenes/13.ts#L707) | [12](content/a1/12-reisen.yaml#L111) | гл. 12 |
+| die Anreise ↻ | 12 | 4 · 2 · 3 · 3 | [12-s3](src/story/scenes/12.ts#L304) [12-s6](src/story/scenes/12.ts#L731) [13-s6](src/story/scenes/13.ts#L707) | [12](content/a1/12-reisen.yaml#L111) | гл. 12 |
 | der Anschluss ↻ | экз. | 3 · 2 · 2 · 1 | [12-s3](src/story/scenes/12.ts#L304) [13-s6](src/story/scenes/13.ts#L707) | — | — |
-| der Arbeitsplatz ↻ | экз. | 3 · 3 · 2 · 2 | [11-s1](src/story/scenes/11.ts#L131) [12-s2](src/story/scenes/12.ts#L765) [13-s2](src/story/scenes/13.ts#L661) | — | — |
-| der Bogen ↻ | экз. | 3 · 3 · 2 · 2 | [11-s5](src/story/scenes/11.ts#L574) [12-s2](src/story/scenes/12.ts#L765) [13-s5](src/story/scenes/13.ts#L698) | — | гл. 2 |
-| der Chef ↻ | экз. | 3 · 3 · 2 · 2 | [11-s1](src/story/scenes/11.ts#L131) [12-s2](src/story/scenes/12.ts#L765) [13-s5](src/story/scenes/13.ts#L698) | — | — |
+| der Arbeitsplatz ↻ | экз. | 3 · 3 · 2 · 2 | [11-s1](src/story/scenes/11.ts#L131) [12-s2](src/story/scenes/12.ts#L789) [13-s2](src/story/scenes/13.ts#L661) | — | — |
+| der Bogen ↻ | экз. | 3 · 3 · 2 · 2 | [11-s5](src/story/scenes/11.ts#L574) [12-s2](src/story/scenes/12.ts#L789) [13-s5](src/story/scenes/13.ts#L698) | — | гл. 2 |
+| der Chef ↻ | экз. | 3 · 3 · 2 · 2 | [11-s1](src/story/scenes/11.ts#L131) [12-s2](src/story/scenes/12.ts#L789) [13-s5](src/story/scenes/13.ts#L698) | — | — |
 | das Datum ↻ | 12, экз. | 3 · 2 · 3 · 1 | [12-s3](src/story/scenes/12.ts#L304) [13-s6](src/story/scenes/13.ts#L707) | [12](content/a1/12-reisen.yaml#L130) | гл. 12 |
 | das Doppelzimmer ↻ | 12, экз. | 3 · 2 · 3 · 1 | [12-s3](src/story/scenes/12.ts#L304) [13-s6](src/story/scenes/13.ts#L707) | [12](content/a1/12-reisen.yaml#L106) | гл. 12 |
-| der Drucker (от drucken) ↻ | экз. | 3 · 3 · 2 · 2 | [11-s5](src/story/scenes/11.ts#L637) [12-s2](src/story/scenes/12.ts#L765) [13-s5](src/story/scenes/13.ts#L698) | — | — |
+| der Drucker (от drucken) ↻ | экз. | 3 · 3 · 2 · 2 | [11-s5](src/story/scenes/11.ts#L637) [12-s2](src/story/scenes/12.ts#L789) [13-s5](src/story/scenes/13.ts#L698) | — | — |
 | das Einzelzimmer ↻ | 12, экз. | 10 · 2 · 7 · 4 | [12-s1](src/story/scenes/12.ts#L136) [12-s3](src/story/scenes/12.ts#L304) [13-s3](src/story/scenes/13.ts#L291) [13-s4](src/story/scenes/13.ts#L410) | [12](content/a1/12-reisen.yaml#L36) | гл. 12 |
-| der Fehler ↻ | экз. | 3 · 3 · 2 · 2 | [11-s2](src/story/scenes/11.ts#L211) [12-s2](src/story/scenes/12.ts#L765) [13-s5](src/story/scenes/13.ts#L698) | — | — |
-| die Ferien ↻ | 12 | 2 · 2 · 2 · 2 | [12-s6](src/story/scenes/12.ts#L708) [13-s3](src/story/scenes/13.ts#L670) | [12](content/a1/12-reisen.yaml#L148) | гл. 12 |
+| der Fehler ↻ | экз. | 3 · 3 · 2 · 2 | [11-s2](src/story/scenes/11.ts#L211) [12-s2](src/story/scenes/12.ts#L789) [13-s5](src/story/scenes/13.ts#L698) | — | — |
+| die Ferien ↻ | 12 | 2 · 2 · 2 · 2 | [12-s6](src/story/scenes/12.ts#L732) [13-s3](src/story/scenes/13.ts#L670) | [12](content/a1/12-reisen.yaml#L148) | гл. 12 |
 | der Flughafen ↻ | 12, экз. | 3 · 2 · 3 · 3 | [12-s1](src/story/scenes/12.ts#L136) [12-s2](src/story/scenes/12.ts#L265) [13-s6](src/story/scenes/13.ts#L707) | [12](content/a1/12-reisen.yaml#L94) | гл. 12 |
-| der Friseur ↻ | 11 | 3 · 3 · 3 · 3 | [11-s1](src/story/scenes/11.ts#L134) [12-s5](src/story/scenes/12.ts#L792) [13-s5](src/story/scenes/13.ts#L698) | [11](content/a1/11-arbeit.yaml#L101) | гл. 11 |
+| der Friseur ↻ | 11 | 3 · 3 · 3 · 3 | [11-s1](src/story/scenes/11.ts#L134) [12-s5](src/story/scenes/12.ts#L816) [13-s5](src/story/scenes/13.ts#L698) | [11](content/a1/11-arbeit.yaml#L101) | гл. 11 |
 | das Gepäck ↻ | экз. | 3 · 2 · 2 · 1 | [12-s3](src/story/scenes/12.ts#L304) [13-s6](src/story/scenes/13.ts#L707) | — | — |
 | die Halbpension ↻ | экз. | 3 · 2 · 2 · 1 | [12-s3](src/story/scenes/12.ts#L304) [13-s6](src/story/scenes/13.ts#L707) | — | — |
-| das Hotel ↻ | 12, экз. | 21 · 2 · 12 · 6 | [12-s1](src/story/scenes/12.ts#L27) [12-s2](src/story/scenes/12.ts#L228) [12-s3](src/story/scenes/12.ts#L279) [12-s5](src/story/scenes/12.ts#L516) | [12](content/a1/12-reisen.yaml#L26) | гл. 12 |
-| der Informatiker ↻ | 11 | 3 · 3 · 3 · 3 | [11-s1](src/story/scenes/11.ts#L134) [12-s5](src/story/scenes/12.ts#L792) [13-s5](src/story/scenes/13.ts#L698) | [11](content/a1/11-arbeit.yaml#L103) | гл. 11 |
-| der Ingenieur ↻ | 11 | 2 · 2 · 2 · 2 | [11-s1](src/story/scenes/11.ts#L134) [12-s5](src/story/scenes/12.ts#L792) | [11](content/a1/11-arbeit.yaml#L100) | гл. 11 |
+| das Hotel ↻ | 12, экз. | 21 · 2 · 12 · 6 | [12-s1](src/story/scenes/12.ts#L27) [12-s2](src/story/scenes/12.ts#L228) [12-s3](src/story/scenes/12.ts#L279) [12-s5](src/story/scenes/12.ts#L540) | [12](content/a1/12-reisen.yaml#L26) | гл. 12 |
+| der Informatiker ↻ | 11 | 3 · 3 · 3 · 3 | [11-s1](src/story/scenes/11.ts#L134) [12-s5](src/story/scenes/12.ts#L816) [13-s5](src/story/scenes/13.ts#L698) | [11](content/a1/11-arbeit.yaml#L103) | гл. 11 |
+| der Ingenieur ↻ | 11 | 3 · 3 · 3 · 3 | [11-s1](src/story/scenes/11.ts#L134) [12-s5](src/story/scenes/12.ts#L816) [13-s5](src/story/scenes/13.ts#L698) | [11](content/a1/11-arbeit.yaml#L100) | гл. 11 |
 | die Jahreszeit ↻ | 12 | 2 · 2 · 2 · 2 | [12-s2](src/story/scenes/12.ts#L265) [13-s2](src/story/scenes/13.ts#L661) | [12](content/a1/12-reisen.yaml#L130) | гл. 12 |
-| der Job ↻ | экз. | 2 · 2 · 1 · 1 | [11-s1](src/story/scenes/11.ts#L76) [12-s5](src/story/scenes/12.ts#L792) | — | — |
-| der Koffer ↻ | 12, экз. | 8 · 2 · 6 · 5 | [12-s1](src/story/scenes/12.ts#L78) [12-s2](src/story/scenes/12.ts#L265) [12-s3](src/story/scenes/12.ts#L279) [12-s6](src/story/scenes/12.ts#L707) [13-s2](src/story/scenes/13.ts#L661) | [12](content/a1/12-reisen.yaml#L99) | гл. 12 |
-| der Kugelschreiber ↻ | экз. | 2 · 2 · 1 · 1 | [11-s5](src/story/scenes/11.ts#L637) [12-s5](src/story/scenes/12.ts#L792) | — | — |
+| der Job ↻ | экз. | 2 · 2 · 1 · 1 | [11-s1](src/story/scenes/11.ts#L76) [12-s5](src/story/scenes/12.ts#L816) | — | — |
+| der Koffer ↻ | 12, экз. | 8 · 2 · 6 · 5 | [12-s1](src/story/scenes/12.ts#L78) [12-s2](src/story/scenes/12.ts#L265) [12-s3](src/story/scenes/12.ts#L279) [12-s6](src/story/scenes/12.ts#L731) [13-s2](src/story/scenes/13.ts#L661) | [12](content/a1/12-reisen.yaml#L99) | гл. 12 |
+| der Kugelschreiber ↻ | экз. | 2 · 2 · 1 · 1 | [11-s5](src/story/scenes/11.ts#L637) [12-s5](src/story/scenes/12.ts#L816) | — | — |
 | das Lied | экз. | 11 · 2 · 5 · 4 | [11-s3](src/story/scenes/11.ts#L301) [11-s5](src/story/scenes/11.ts#L623) [13-s1](src/story/scenes/13.ts#L38) [13-s6](src/story/scenes/13.ts#L595) | — | — |
-| die Papiere ↻ | экз. | 3 · 3 · 2 · 2 | [11-s5](src/story/scenes/11.ts#L575) [12-s6](src/story/scenes/12.ts#L801) [13-s2](src/story/scenes/13.ts#L661) | — | — |
-| das Praktikum ↻ | экз. | 2 · 2 · 1 · 1 | [11-s1](src/story/scenes/11.ts#L76) [12-s5](src/story/scenes/12.ts#L792) | — | — |
-| der Regenschirm ↻ | 12 | 5 · 2 · 5 · 3 | [12-s1](src/story/scenes/12.ts#L41) [12-s6](src/story/scenes/12.ts#L707) [13-s2](src/story/scenes/13.ts#L661) | [12](content/a1/12-reisen.yaml#L70) | гл. 12 |
-| die Reise (от reisen) ↻ | 12, экз. | 7 · 2 · 4 · 5 | [12-s2](src/story/scenes/12.ts#L265) [12-s6](src/story/scenes/12.ts#L707) [13-s6](src/story/scenes/13.ts#L608) | [12](content/a1/12-reisen.yaml#L1) | гл. 12 |
+| die Papiere ↻ | экз. | 3 · 3 · 2 · 2 | [11-s5](src/story/scenes/11.ts#L575) [12-s6](src/story/scenes/12.ts#L825) [13-s6](src/story/scenes/13.ts#L707) | — | — |
+| das Praktikum ↻ | экз. | 2 · 2 · 1 · 1 | [11-s1](src/story/scenes/11.ts#L76) [12-s5](src/story/scenes/12.ts#L816) | — | — |
+| der Regenschirm ↻ | 12 | 5 · 2 · 5 · 3 | [12-s1](src/story/scenes/12.ts#L41) [12-s6](src/story/scenes/12.ts#L731) [13-s2](src/story/scenes/13.ts#L661) | [12](content/a1/12-reisen.yaml#L70) | гл. 12 |
+| die Reise (от reisen) ↻ | 12, экз. | 7 · 2 · 4 · 5 | [12-s2](src/story/scenes/12.ts#L265) [12-s6](src/story/scenes/12.ts#L731) [13-s6](src/story/scenes/13.ts#L608) | [12](content/a1/12-reisen.yaml#L1) | гл. 12 |
 | das Reisebüro (от reisen) ↻ | экз. | 2 · 2 · 1 · 1 | [12-s2](src/story/scenes/12.ts#L190) [13-s5](src/story/scenes/13.ts#L698) | — | — |
 | der Reiseführer (от reisen) ↻ | экз. | 2 · 2 · 1 · 1 | [12-s2](src/story/scenes/12.ts#L190) [13-s5](src/story/scenes/13.ts#L698) | — | — |
 | die Rezeption | экз. | 1 · 1 · 0 · 0 | [12-s3](src/story/scenes/12.ts#L279) | — | — |
 | das Studium ↻ | экз. | 1 · 1 · 0 · 0 | [11-s1](src/story/scenes/11.ts#L76) | — | — |
-| die Verspätung ↻ | 12 | 12 · 2 · 6 · 7 | [12-s2](src/story/scenes/12.ts#L191) [12-s3](src/story/scenes/12.ts#L28) [12-s6](src/story/scenes/12.ts#L707) [13-s2](src/story/scenes/13.ts#L27) | [09](content/a1/09-stadt.yaml#L215) [12](content/a1/12-reisen.yaml#L48) | гл. 12 |
+| die Verspätung ↻ | 12 | 12 · 2 · 6 · 7 | [12-s2](src/story/scenes/12.ts#L191) [12-s3](src/story/scenes/12.ts#L28) [12-s6](src/story/scenes/12.ts#L731) [13-s2](src/story/scenes/13.ts#L27) | [09](content/a1/09-stadt.yaml#L215) [12](content/a1/12-reisen.yaml#L48) | гл. 12 |
 | die Welt ↻ | экз. | 2 · 2 · 1 · 1 | [12-s2](src/story/scenes/12.ts#L190) [13-s5](src/story/scenes/13.ts#L698) | — | — |
-| das Wetter ↻ | 12, экз. | 5 · 2 · 4 · 4 | [12-s1](src/story/scenes/12.ts#L38) [12-s6](src/story/scenes/12.ts#L707) [13-s2](src/story/scenes/13.ts#L661) | [12](content/a1/12-reisen.yaml#L66) | гл. 12 |
+| das Wetter ↻ | 12, экз. | 6 · 2 · 5 · 5 | [12-s1](src/story/scenes/12.ts#L38) [12-s4](src/story/scenes/12.ts#L477) [12-s6](src/story/scenes/12.ts#L731) [13-s2](src/story/scenes/13.ts#L661) | [12](content/a1/12-reisen.yaml#L66) | гл. 12 |
 | der Wind | экз. | 3 · 1 · 1 · 2 | [12-s1](src/story/scenes/12.ts#L50) [12-s2](src/story/scenes/12.ts#L180) | [12](content/a1/12-reisen.yaml#L338) | гл. 12 |
 | die Zeitung | экз. | 1 · 1 · 0 · 0 | [11-s1](src/story/scenes/11.ts#L77) | — | — |
-| der Zoll ↻ | экз. | 2 · 2 · 1 · 1 | [12-s6](src/story/scenes/12.ts#L687) [13-s2](src/story/scenes/13.ts#L167) | — | — |
+| der Zoll ↻ | экз. | 2 · 2 · 1 · 1 | [12-s6](src/story/scenes/12.ts#L711) [13-s2](src/story/scenes/13.ts#L167) | — | — |
 
 ### Глаголы (13)
 
 | Слово | Откуда | Числа | Где в новой версии | Уроки | Классика |
 |---|---|---|---|---|---|
-| abgeben ↻ | экз. | 3 · 3 · 2 · 2 | [11-s5](src/story/scenes/11.ts#L575) [12-s6](src/story/scenes/12.ts#L801) [13-s2](src/story/scenes/13.ts#L661) | — | — |
-| anklicken ↻ | экз. | 3 · 3 · 2 · 2 | [11-s5](src/story/scenes/11.ts#L637) [12-s2](src/story/scenes/12.ts#L765) [13-s2](src/story/scenes/13.ts#L661) | — | — |
+| abgeben ↻ | экз. | 3 · 3 · 2 · 2 | [11-s5](src/story/scenes/11.ts#L575) [12-s6](src/story/scenes/12.ts#L825) [13-s2](src/story/scenes/13.ts#L661) | — | — |
+| anklicken ↻ | экз. | 3 · 3 · 2 · 2 | [11-s5](src/story/scenes/11.ts#L637) [12-s2](src/story/scenes/12.ts#L789) [13-s2](src/story/scenes/13.ts#L661) | — | — |
 | ankommen | экз. | 3 · 1 · 2 · 1 | [12-s2](src/story/scenes/12.ts#L246) | [12](content/a1/12-reisen.yaml#L48) | гл. 12 |
-| bedeuten ↻ | экз. | 3 · 3 · 2 · 2 | [11-s5](src/story/scenes/11.ts#L639) [12-s2](src/story/scenes/12.ts#L765) [13-s2](src/story/scenes/13.ts#L661) | [08](content/a1/08-wohnen.yaml#L42) | — |
-| benutzen ↻ | экз. | 3 · 3 · 2 · 2 | [11-s2](src/story/scenes/11.ts#L211) [12-s2](src/story/scenes/12.ts#L765) [13-s5](src/story/scenes/13.ts#L698) | [09](content/a1/09-stadt.yaml#L236) | — |
+| bedeuten ↻ | экз. | 3 · 3 · 2 · 2 | [11-s5](src/story/scenes/11.ts#L639) [12-s2](src/story/scenes/12.ts#L789) [13-s2](src/story/scenes/13.ts#L661) | [08](content/a1/08-wohnen.yaml#L42) | — |
+| benutzen ↻ | экз. | 3 · 3 · 2 · 2 | [11-s2](src/story/scenes/11.ts#L211) [12-s2](src/story/scenes/12.ts#L789) [13-s2](src/story/scenes/13.ts#L661) | [09](content/a1/09-stadt.yaml#L236) | — |
 | besuchen | экз. | 1 · 1 · 1 · 0 | [11-s2](src/story/scenes/11.ts#L246) | [07](content/a1/07-freizeit.yaml#L64) | — |
-| drucken ↻ | экз. | 3 · 3 · 2 · 2 | [11-s5](src/story/scenes/11.ts#L637) [12-s2](src/story/scenes/12.ts#L765) [13-s5](src/story/scenes/13.ts#L698) | — | — |
-| freuen | экз. | 2 · 1 · 1 · 1 | [12-s6](src/story/scenes/12.ts#L638) | — | — |
-| reisen | экз. | 7 · 2 · 4 · 5 | [12-s2](src/story/scenes/12.ts#L265) [12-s6](src/story/scenes/12.ts#L707) [13-s6](src/story/scenes/13.ts#L608) | [12](content/a1/12-reisen.yaml#L1) | гл. 12 |
+| drucken ↻ | экз. | 3 · 3 · 2 · 2 | [11-s5](src/story/scenes/11.ts#L637) [12-s2](src/story/scenes/12.ts#L789) [13-s5](src/story/scenes/13.ts#L698) | — | — |
+| freuen | экз. | 2 · 1 · 1 · 1 | [12-s6](src/story/scenes/12.ts#L662) | — | — |
+| reisen | экз. | 7 · 2 · 4 · 5 | [12-s2](src/story/scenes/12.ts#L265) [12-s6](src/story/scenes/12.ts#L731) [13-s6](src/story/scenes/13.ts#L608) | [12](content/a1/12-reisen.yaml#L1) | гл. 12 |
 | reservieren | 12 | 5 · 1 · 2 · 1 | [12-s3](src/story/scenes/12.ts#L290) | [02](content/a1/02-zahlen.yaml#L914) [12](content/a1/12-reisen.yaml#L113) | гл. 12 |
-| scheinen | экз. | 4 · 2 · 1 · 0 | [12-s5](src/story/scenes/12.ts#L528) [13-s1](src/story/scenes/13.ts#L37) | [12](content/a1/12-reisen.yaml#L68) | гл. 12 |
+| scheinen | экз. | 4 · 2 · 1 · 0 | [12-s5](src/story/scenes/12.ts#L552) [13-s1](src/story/scenes/13.ts#L37) | [12](content/a1/12-reisen.yaml#L68) | гл. 12 |
 | übernachten ↻ | экз. | 3 · 2 · 2 · 1 | [12-s3](src/story/scenes/12.ts#L304) [13-s3](src/story/scenes/13.ts#L670) | — | — |
 | verdienen ↻ | экз. | 1 · 1 · 0 · 0 | [11-s1](src/story/scenes/11.ts#L76) | — | — |
 
@@ -219,42 +219,42 @@
 | Слово | Откуда | Числа | Где в новой версии | Уроки | Классика |
 |---|---|---|---|---|---|
 | arbeitslos | экз. | 1 · 1 · 0 · 1 | [11-s1](src/story/scenes/11.ts#L74) | — | — |
-| ausländisch (от das Ausland) ↻ | экз. | 2 · 2 · 1 · 1 | [12-s6](src/story/scenes/12.ts#L653) [13-s3](src/story/scenes/13.ts#L670) | — | — |
-| bewölkt ↻ | 12 | 2 · 2 · 2 · 2 | [12-s6](src/story/scenes/12.ts#L708) [13-s3](src/story/scenes/13.ts#L670) | [12](content/a1/12-reisen.yaml#L123) | гл. 12 |
-| fremd ↻ | экз. | 2 · 2 · 1 · 1 | [12-s5](src/story/scenes/12.ts#L595) [13-s6](src/story/scenes/13.ts#L707) | — | — |
-| kalt ↻ | 12 | 3 · 2 · 2 · 2 | [12-s1](src/story/scenes/12.ts#L38) [13-s3](src/story/scenes/13.ts#L670) | [08](content/a1/08-wohnen.yaml#L40) [12](content/a1/12-reisen.yaml#L66) | гл. 12 |
-| kulturell ↻ | экз. | 2 · 2 · 1 · 1 | [12-s6](src/story/scenes/12.ts#L653) [13-s6](src/story/scenes/13.ts#L707) | — | — |
-| männlich (от der Mann) ↻ | экз. | 2 · 2 · 1 · 1 | [11-s5](src/story/scenes/11.ts#L574) [12-s5](src/story/scenes/12.ts#L792) | — | — |
+| ausländisch (от das Ausland) ↻ | экз. | 2 · 2 · 1 · 1 | [12-s6](src/story/scenes/12.ts#L677) [13-s3](src/story/scenes/13.ts#L670) | — | — |
+| bewölkt ↻ | 12 | 3 · 2 · 3 · 3 | [12-s4](src/story/scenes/12.ts#L477) [12-s6](src/story/scenes/12.ts#L732) [13-разминка](src/story/scenes/warmups.ts#L85) | [12](content/a1/12-reisen.yaml#L123) | гл. 12 |
+| fremd ↻ | экз. | 2 · 2 · 1 · 1 | [12-s5](src/story/scenes/12.ts#L619) [13-s6](src/story/scenes/13.ts#L707) | — | — |
+| kalt ↻ | 12 | 4 · 2 · 3 · 3 | [12-s1](src/story/scenes/12.ts#L38) [12-s4](src/story/scenes/12.ts#L477) [13-s3](src/story/scenes/13.ts#L670) | [08](content/a1/08-wohnen.yaml#L40) [12](content/a1/12-reisen.yaml#L66) | гл. 12 |
+| kulturell ↻ | экз. | 2 · 2 · 1 · 1 | [12-s6](src/story/scenes/12.ts#L677) [13-s6](src/story/scenes/13.ts#L707) | — | — |
+| männlich (от der Mann) ↻ | экз. | 2 · 2 · 1 · 1 | [11-s5](src/story/scenes/11.ts#L574) [12-s5](src/story/scenes/12.ts#L816) | — | — |
 | selbstständig ↻ | экз. | 1 · 1 · 0 · 0 | [11-s1](src/story/scenes/11.ts#L131) | — | — |
-| sonnig ↻ | 12 | 2 · 2 · 2 · 2 | [12-s6](src/story/scenes/12.ts#L708) [13-s6](src/story/scenes/13.ts#L707) | [12](content/a1/12-reisen.yaml#L122) | гл. 12 |
+| sonnig ↻ | 12 | 3 · 2 · 3 · 3 | [12-s4](src/story/scenes/12.ts#L477) [12-s6](src/story/scenes/12.ts#L732) [13-s3](src/story/scenes/13.ts#L670) | [12](content/a1/12-reisen.yaml#L122) | гл. 12 |
 | weiblich ↻ | экз. | 1 · 1 · 0 · 0 | [11-s5](src/story/scenes/11.ts#L574) | [11](content/a1/11-arbeit.yaml#L345) | — |
-| windig ↻ | 12 | 3 · 2 · 2 · 2 | [12-s1](src/story/scenes/12.ts#L38) [12-s6](src/story/scenes/12.ts#L708) [13-s3](src/story/scenes/13.ts#L670) | [12](content/a1/12-reisen.yaml#L66) | гл. 12 |
+| windig ↻ | 12 | 4 · 2 · 3 · 3 | [12-s1](src/story/scenes/12.ts#L38) [12-s4](src/story/scenes/12.ts#L477) [12-s6](src/story/scenes/12.ts#L732) [13-s3](src/story/scenes/13.ts#L670) | [12](content/a1/12-reisen.yaml#L66) | гл. 12 |
 
 ### Выражения (7)
 
 | Слово | Откуда | Числа | Где в новой версии | Уроки | Классика |
 |---|---|---|---|---|---|
 | arbeiten als | 11 | 1 · 1 · 1 · 0 | [11-s6](src/story/scenes/11.ts#L691) | [11](content/a1/11-arbeit.yaml#L129) | гл. 11 |
-| Die Sonne scheint. | 12 | 3 · 2 · 0 · 0 | [12-s5](src/story/scenes/12.ts#L528) [13-s1](src/story/scenes/13.ts#L37) | [12](content/a1/12-reisen.yaml#L68) | гл. 12 |
-| Es schneit. ↻ | 12 | 2 · 2 · 2 · 2 | [12-s6](src/story/scenes/12.ts#L708) [13-s3](src/story/scenes/13.ts#L670) | [12](content/a1/12-reisen.yaml#L121) | гл. 12 |
-| Es sind 20 Grad. ↻ | 12 | 2 · 2 · 2 · 2 | [12-s6](src/story/scenes/12.ts#L708) [13-s3](src/story/scenes/13.ts#L670) | [12](content/a1/12-reisen.yaml#L127) | гл. 12 |
-| gestern Abend ↻ | 11 | 3 · 3 · 3 · 3 | [11-s6](src/story/scenes/11.ts#L709) [12-s5](src/story/scenes/12.ts#L792) [13-s5](src/story/scenes/13.ts#L698) | [11](content/a1/11-arbeit.yaml#L48) | гл. 11 |
-| letztes Jahr ↻ | 11 | 2 · 2 · 2 · 2 | [11-s6](src/story/scenes/11.ts#L709) [12-s5](src/story/scenes/12.ts#L792) | [11](content/a1/11-arbeit.yaml#L139) | гл. 11 |
+| Die Sonne scheint. | 12 | 3 · 2 · 0 · 0 | [12-s5](src/story/scenes/12.ts#L552) [13-s1](src/story/scenes/13.ts#L37) | [12](content/a1/12-reisen.yaml#L68) | гл. 12 |
+| Es schneit. ↻ | 12 | 2 · 2 · 2 · 2 | [12-s6](src/story/scenes/12.ts#L732) [13-s3](src/story/scenes/13.ts#L670) | [12](content/a1/12-reisen.yaml#L121) | гл. 12 |
+| Es sind 20 Grad. ↻ | 12 | 2 · 2 · 2 · 2 | [12-s6](src/story/scenes/12.ts#L732) [13-s3](src/story/scenes/13.ts#L670) | [12](content/a1/12-reisen.yaml#L127) | гл. 12 |
+| gestern Abend ↻ | 11 | 3 · 3 · 3 · 3 | [11-s6](src/story/scenes/11.ts#L709) [12-s5](src/story/scenes/12.ts#L816) [13-s5](src/story/scenes/13.ts#L698) | [11](content/a1/11-arbeit.yaml#L48) | гл. 11 |
+| letztes Jahr ↻ | 11 | 2 · 2 · 2 · 2 | [11-s6](src/story/scenes/11.ts#L709) [12-s5](src/story/scenes/12.ts#L816) | [11](content/a1/11-arbeit.yaml#L139) | гл. 11 |
 | noch nicht | 11 | 5 · 2 · 1 · 3 | [11-s5](src/story/scenes/11.ts#L563) [12-s1](src/story/scenes/12.ts#L48) | [09](content/a1/09-stadt.yaml#L825) [11](content/a1/11-arbeit.yaml#L44) | гл. 11 |
 
 ### Числа, время, цвета и другие группы (10)
 
 | Слово | Откуда | Числа | Где в новой версии | Уроки | Классика |
 |---|---|---|---|---|---|
-| der Deutsche ↻ | экз. | 2 · 2 · 1 · 1 | [12-s5](src/story/scenes/12.ts#L595) [13-s2](src/story/scenes/13.ts#L661) | — | — |
-| der Europäer ↻ | экз. | 2 · 2 · 1 · 1 | [12-s5](src/story/scenes/12.ts#L595) [13-s2](src/story/scenes/13.ts#L661) | — | — |
-| europäisch ↻ | экз. | 2 · 2 · 1 · 1 | [12-s6](src/story/scenes/12.ts#L653) [13-s3](src/story/scenes/13.ts#L670) | — | — |
+| der Deutsche ↻ | экз. | 2 · 2 · 1 · 1 | [12-s5](src/story/scenes/12.ts#L619) [13-s2](src/story/scenes/13.ts#L661) | — | — |
+| der Europäer ↻ | экз. | 2 · 2 · 1 · 1 | [12-s5](src/story/scenes/12.ts#L619) [13-s2](src/story/scenes/13.ts#L661) | — | — |
+| europäisch ↻ | экз. | 2 · 2 · 1 · 1 | [12-s6](src/story/scenes/12.ts#L677) [13-s3](src/story/scenes/13.ts#L670) | — | — |
 | der Frühling ↻ | 12, экз. | 2 · 2 · 2 · 2 | [12-s2](src/story/scenes/12.ts#L265) [13-s2](src/story/scenes/13.ts#L661) | [12](content/a1/12-reisen.yaml#L135) | гл. 12 |
-| das Grad | экз. | 5 · 2 · 3 · 4 | [12-s1](src/story/scenes/12.ts#L50) [12-s3](src/story/scenes/12.ts#L304) [12-s6](src/story/scenes/12.ts#L708) [13-s3](src/story/scenes/13.ts#L670) | [12](content/a1/12-reisen.yaml#L68) | гл. 12 |
-| der Herbst ↻ | 12, экз. | 12 · 2 · 6 · 7 | [12-s1](src/story/scenes/12.ts#L38) [12-s4](src/story/scenes/12.ts#L436) [12-s6](src/story/scenes/12.ts#L707) [13-s2](src/story/scenes/13.ts#L661) | [12](content/a1/12-reisen.yaml#L137) | гл. 12 |
-| die Milliarde ↻ | экз. | 2 · 2 · 1 · 1 | [12-s6](src/story/scenes/12.ts#L706) [13-s2](src/story/scenes/13.ts#L661) | — | — |
+| das Grad | экз. | 6 · 2 · 4 · 5 | [12-s1](src/story/scenes/12.ts#L50) [12-s3](src/story/scenes/12.ts#L304) [12-s4](src/story/scenes/12.ts#L477) [12-s6](src/story/scenes/12.ts#L732) [13-s3](src/story/scenes/13.ts#L670) | [12](content/a1/12-reisen.yaml#L68) | гл. 12 |
+| der Herbst ↻ | 12, экз. | 12 · 2 · 6 · 7 | [12-s1](src/story/scenes/12.ts#L38) [12-s4](src/story/scenes/12.ts#L457) [12-s6](src/story/scenes/12.ts#L731) [13-s2](src/story/scenes/13.ts#L661) | [12](content/a1/12-reisen.yaml#L137) | гл. 12 |
+| die Milliarde ↻ | экз. | 2 · 2 · 1 · 1 | [12-s6](src/story/scenes/12.ts#L730) [13-s2](src/story/scenes/13.ts#L661) | — | — |
 | der Monat ↻ | 12, экз. | 2 · 2 · 2 · 2 | [12-s2](src/story/scenes/12.ts#L265) [13-s2](src/story/scenes/13.ts#L661) | [03](content/a1/03-familie.yaml#L229) [12](content/a1/12-reisen.yaml#L139) | гл. 12 |
-| der Winter ↻ | 12, экз. | 4 · 2 · 4 · 3 | [12-s1](src/story/scenes/12.ts#L78) [12-s4](src/story/scenes/12.ts#L459) [12-s6](src/story/scenes/12.ts#L708) [13-s2](src/story/scenes/13.ts#L661) | [05](content/a1/05-einkaufen.yaml#L224) [12](content/a1/12-reisen.yaml#L138) | гл. 12 |
+| der Winter ↻ | 12, экз. | 4 · 2 · 4 · 3 | [12-s1](src/story/scenes/12.ts#L78) [12-s4](src/story/scenes/12.ts#L483) [12-s6](src/story/scenes/12.ts#L732) [13-s2](src/story/scenes/13.ts#L661) | [05](content/a1/05-einkaufen.yaml#L224) [12](content/a1/12-reisen.yaml#L138) | гл. 12 |
 | der Zentimeter ↻ | экз. | 1 · 1 · 0 · 0 | [11-s2](src/story/scenes/11.ts#L188) | — | — |
 
 ## Слова: закреплено

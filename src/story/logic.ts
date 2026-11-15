@@ -86,6 +86,8 @@ function challengeLines(c: Challenge): { text: string; voice: string }[] {
       return c.rounds.map((r) => ({ text: lockKey(r), voice: NARRATOR }));
     case "chat":
       return c.turns.map((t) => ({ text: t.say, voice: c.voice }));
+    case "weather":
+      return c.forecast.map((f) => ({ text: f.de, voice: c.voice }));
     case "twenty":
       return [
         ...c.questions.map((q) => ({ text: q.de, voice: NARRATOR })),
@@ -114,6 +116,8 @@ export function challengeWords(c: Challenge): string[] {
   if (c.kind === "sounds") return c.rounds.flatMap((r) => r.options);
   if (c.kind === "spy") return c.items.map((i) => i.de);
   if (c.kind === "twenty") return c.cards.flatMap((card) => (card.unit ? [card.unit] : []));
+  // Слова погоды тренирует прогноз; приманка не звучит и словом игры не считается.
+  if (c.kind === "weather") return c.skies.filter((s) => c.forecast.some((f) => f.sky === s.id)).map((s) => s.de);
   return [];
 }
 /** Сборка проверяет, что каждое слово игры есть в словаре уроков. */
@@ -388,6 +392,8 @@ function twentySolution(c: TwentyGame): string[] {
   return entries;
 }
 const W_QUESTION = /^(Wer|Was|Wo|Wie|Wann|Woher|Wohin|Warum|Welche[rsnm]?)\b/;
+/** Основа слова погоды, которая звучит во фразе прогноза: Es regnet. — regnet. */
+export const skyStem = (de: string) => de.replace(/^Es /, "").replace(/[.!?]$/, "").toLowerCase();
 
 const isRecord = (value: unknown): value is Record<string, string | number> =>
   Boolean(value) && typeof value === "object" && !Array.isArray(value);
@@ -498,6 +504,8 @@ export function isCorrect(
       return sameList(value, challenge.rounds.map((r) => String(r.floor)));
     case "spy":
       return sameList(value, challenge.rounds.map((r) => r.answer));
+    case "weather":
+      return isRecord(value) && Object.keys(value).length === challenge.days.length && challenge.forecast.every((f) => value[f.day] === f.sky);
     case "twenty": {
       const { crossed, fair } = twentyState(challenge, value);
       return fair && sameSet(crossed, challenge.cards.map((card) => card.id).filter((id) => id !== challenge.answer));
@@ -569,6 +577,8 @@ export function solution(challenge: Challenge): Answer {
       return challenge.rounds.map((r) => r.answer);
     case "twenty":
       return twentySolution(challenge);
+    case "weather":
+      return Object.fromEntries(challenge.forecast.map((f) => [f.day, f.sky]));
     case "planner":
       return { [plannerFree(challenge)[0]]: "star" };
     case "coins": {
@@ -626,6 +636,7 @@ export function initialAnswer(challenge: Challenge): Answer {
     case "planner":
     case "tree":
     case "portrait":
+    case "weather":
       return {};
     case "clock":
       return challenge.start;
@@ -754,6 +765,7 @@ function restoreDraft(c: Challenge, v: unknown): Answer | undefined {
     case "portrait":
     case "spy":
     case "twenty":
+    case "weather":
     case "algo":
       return undefined;
     case "play": {
@@ -1212,6 +1224,34 @@ export function validateChallenge(
             c.items.some((i) => i.de !== r.answer && pronounOf(i.de) === r.pronoun),
         )
       );
+    case "weather": {
+      // У каждого дня одна фраза: в ней звучат свой день и слово своего значка, без чужих и без
+      // отрицания. Хотя бы один значок — приманка: его нет в прогнозе.
+      const ids = c.skies.map((s) => s.id);
+      const days = c.forecast.map((f) => f.day);
+      return (
+        Boolean(c.voice) &&
+        c.days.length >= 3 &&
+        new Set(c.days).size === c.days.length &&
+        ids.length >= 3 &&
+        new Set(ids).size === ids.length &&
+        days.length === c.days.length &&
+        c.days.every((d) => days.includes(d)) &&
+        new Set(c.forecast.map((f) => f.sky)).size >= 3 &&
+        c.skies.every((s) => s.ru && s.icon) &&
+        c.skies.some((s) => !c.forecast.some((f) => f.sky === s.id)) &&
+        c.forecast.every((f) => {
+          const heard = c.skies.filter((s) => f.de.toLowerCase().includes(skyStem(s.de))).map((s) => s.id);
+          return (
+            f.ru &&
+            c.days.filter((d) => f.de.includes(d)).join() === f.day &&
+            !/(?<![\p{L}])(nicht|kein|keine)(?![\p{L}])/iu.test(f.de) &&
+            heard.length === 1 &&
+            heard[0] === f.sky
+          );
+        })
+      );
+    }
     case "twenty": {
       // Загаданную можно найти честно: её ответ на каждый вопрос известен, а каждую другую карточку
       // исключает хотя бы один вопрос. Вопрос — «да/нет», глагол первым.

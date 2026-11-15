@@ -25,7 +25,7 @@ import {
   Write,
   type GameProps,
 } from "./games";
-import { Ads, Algo, Cipher, Compound, Contra, Grid, Lift, Planner, Portrait, Sounds, Spy, Tree, Twenty } from "./minigames";
+import { Ads, Algo, Cipher, Compound, Contra, Grid, Lift, Planner, Portrait, Sounds, Spy, Tree, Twenty, Weather } from "./minigames";
 import { SceneView } from "./SceneView";
 import type { Answer, Challenge } from "./types";
 import type { World } from "./world";
@@ -72,6 +72,7 @@ export const GAME_NAMES: Record<Challenge["kind"], string> = {
   portrait: "Фоторобот",
   spy: "Я шпион",
   twenty: "20 вопросов",
+  weather: "Карта погоды",
   algo: "Алгоритм",
 };
 /** Эти игры завершаются сами: кнопка проверки там не нужна. */
@@ -94,6 +95,7 @@ export const AUTOMATIC: Challenge["kind"][] = [
   "lift",
   "spy",
   "twenty",
+  "weather",
 ];
 
 export function ChallengeView({
@@ -158,6 +160,7 @@ export function ChallengeView({
       {c.kind === "portrait" && <Portrait c={c} {...game} />}
       {c.kind === "spy" && <Spy c={c} {...game} />}
       {c.kind === "twenty" && <Twenty c={c} {...game} />}
+      {c.kind === "weather" && <Weather c={c} {...game} />}
       {c.kind === "algo" && <Algo c={c} {...game} />}
       {c.kind === "choice" && (
         <fieldset className="moin-choices" disabled={disabled}>

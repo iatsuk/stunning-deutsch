@@ -349,6 +349,22 @@ test("twenty questions is won only by crossing out what an answer excluded", () 
   assert.ok(validateChallenge(round, new Set(), phrases) && isCorrect(round, solution(round)));
 });
 
+test("the weather map is solved by the forecast, day by day", () => {
+  const map = sceneChapters.flatMap((c) => c.beats.flatMap((b) => flatNodes(nodes(b)))).find((n) => n.t === "game" && n.c.kind === "weather").c;
+  assert.ok(validateChallenge(map, new Set(), phrases));
+  const right = solution(map);
+  assert.ok(isCorrect(map, right));
+  // Неверный значок или пустой день — не решение; приманка в прогнозе не звучит.
+  assert.equal(isCorrect(map, { ...right, [map.days[0]]: "e" }), false);
+  assert.equal(isCorrect(map, Object.fromEntries(Object.entries(right).slice(1))), false);
+  // Фраза без слова своего значка не проходит проверку вида.
+  const silent = { ...map, forecast: map.forecast.map((f, i) => (i ? f : { ...f, de: `Am ${f.day} ist es schön.` })) };
+  assert.equal(validateChallenge(silent, new Set(), phrases), false);
+  // Отрицание путает слух: «regnet es nicht» звучит как дождь.
+  const negated = { ...map, forecast: map.forecast.map((f, i) => (i ? f : { ...f, de: `${f.de} Aber nicht lange.` })) };
+  assert.equal(validateChallenge(negated, new Set(), phrases), false);
+});
+
 test("branches are played in the player's order and the scene resumes where it stopped", () => {
   const hub = nodes(scenes[2]);
   const go = hub.findIndex((n) => n.t === "go");

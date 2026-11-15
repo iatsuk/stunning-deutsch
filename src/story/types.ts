@@ -248,6 +248,17 @@ export type Challenge =
       max?: number;
     }
   /**
+   * «Карта погоды»: прогноз звучит голосом voice, игрок ставит значок погоды на каждый день. Значки —
+   * только картинки: слово погоды игрок слышит, а не читает. Значок без фразы прогноза — приманка.
+   */
+  | {
+      kind: "weather";
+      voice: string;
+      days: string[];
+      skies: { id: string; de: string; ru: string; icon: string }[];
+      forecast: { de: string; ru: string; day: string; sky: string }[];
+    }
+  /**
    * «20 вопросов»: who загадал карточку answer; вопросы «да/нет» с глаголом первым, у каждого —
    * карточки с ответом «да» и «нет», остальные неизвестны. Колоды признаков — src/story/twenty.ts.
    */
