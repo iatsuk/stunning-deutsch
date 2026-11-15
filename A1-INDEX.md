@@ -208,7 +208,7 @@
 | drucken ↻ | экз. | 3 · 3 · 2 · 2 | [11-s5](src/story/scenes/11.ts#L637) [12-s2](src/story/scenes/12.ts#L789) [13-s5](src/story/scenes/13.ts#L698) | — |
 | freuen | экз. | 2 · 1 · 1 · 1 | [12-s6](src/story/scenes/12.ts#L662) | — |
 | reisen | экз. | 7 · 2 · 4 · 5 | [12-s2](src/story/scenes/12.ts#L265) [12-s6](src/story/scenes/12.ts#L731) [13-s6](src/story/scenes/13.ts#L608) | [12](content/a1/12-reisen.yaml#L1) |
-| reservieren | 12 | 5 · 1 · 2 · 1 | [12-s3](src/story/scenes/12.ts#L290) | [02](content/a1/02-zahlen.yaml#L914) [12](content/a1/12-reisen.yaml#L113) |
+| reservieren | 12 | 5 · 1 · 2 · 1 | [12-s3](src/story/scenes/12.ts#L290) | [02](content/a1/02-zahlen.yaml#L770) [12](content/a1/12-reisen.yaml#L113) |
 | scheinen | экз. | 4 · 2 · 1 · 0 | [12-s5](src/story/scenes/12.ts#L552) [13-s1](src/story/scenes/13.ts#L37) | [12](content/a1/12-reisen.yaml#L68) |
 | übernachten ↻ | экз. | 3 · 2 · 2 · 1 | [12-s3](src/story/scenes/12.ts#L304) [13-s3](src/story/scenes/13.ts#L670) | — |
 | verdienen ↻ | экз. | 1 · 1 · 0 · 0 | [11-s1](src/story/scenes/11.ts#L76) | — |
@@ -239,7 +239,7 @@
 | Es sind 20 Grad. ↻ | 12 | 2 · 2 · 2 · 2 | [12-s6](src/story/scenes/12.ts#L732) [13-s3](src/story/scenes/13.ts#L670) | [12](content/a1/12-reisen.yaml#L127) |
 | gestern Abend ↻ | 11 | 3 · 3 · 3 · 3 | [11-s6](src/story/scenes/11.ts#L709) [12-s5](src/story/scenes/12.ts#L816) [13-s5](src/story/scenes/13.ts#L698) | [11](content/a1/11-arbeit.yaml#L48) |
 | letztes Jahr ↻ | 11 | 2 · 2 · 2 · 2 | [11-s6](src/story/scenes/11.ts#L709) [12-s5](src/story/scenes/12.ts#L816) | [11](content/a1/11-arbeit.yaml#L139) |
-| noch nicht | 11 | 5 · 2 · 1 · 3 | [11-s5](src/story/scenes/11.ts#L563) [12-s1](src/story/scenes/12.ts#L48) | [09](content/a1/09-stadt.yaml#L825) [11](content/a1/11-arbeit.yaml#L44) |
+| noch nicht | 11 | 5 · 2 · 1 · 3 | [11-s5](src/story/scenes/11.ts#L563) [12-s1](src/story/scenes/12.ts#L48) | [11](content/a1/11-arbeit.yaml#L44) |
 
 ### Числа, время, цвета и другие группы (10)
 

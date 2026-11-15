@@ -5,14 +5,14 @@ import { parse } from "yaml";
 import { challengeSolved, challengeVariant, shuffled } from "../src/adventure/logic.ts";
 
 const topic = (name) => parse(readFileSync(new URL(`../content/a1/${name}.yaml`, import.meta.url), "utf8"));
-const crew = topic("01-kennenlernen").adventure;
-const harbor = topic("02-zahlen").adventure;
-const family = topic("03-familie").adventure;
-const shopping = topic("05-einkaufen").adventure;
-const daily = topic("06-tagesablauf").adventure;
+
+// У уроков A1 игр больше нет (курс A1 — история), а логика игр служит A2 и B1. Её проверяют
+// небольшие задания того же вида, что были в уроках A1.
+const order = (tokens) => ({ kind: "order", tokens });
+const pack = (answer) => ({ kind: "pack", answer });
 
 test("вежливый вопрос требует правильного порядка всех фрагментов", () => {
-  const challenge = crew.challenges.find((step) => step.kind === "order");
+  const challenge = order(["Woher", "kommen", "Sie?"]);
   assert.equal(challengeSolved(challenge, ["0", "1", "2"]), true);
   assert.equal(challengeSolved(challenge, ["1", "0", "2"]), false);
   assert.equal(challengeSolved(challenge, ["0", "1"]), false);
@@ -20,74 +20,62 @@ test("вежливый вопрос требует правильного пор
 });
 
 test("две T в названии SPROTTE взаимозаменяемы", () => {
-  const challenge = harbor.challenges.find((step) => step.kind === "order");
+  const challenge = order(["S", "P", "R", "O", "T", "T", "E"]);
   assert.equal(challengeSolved(challenge, ["0", "1", "2", "3", "5", "4", "6"]), true);
   assert.equal(challengeSolved(challenge, ["0", "1", "2", "3", "4", "4", "6"]), false);
   assert.equal(challengeSolved(challenge, ["0", "1", "2", "3", "4", "5", "99"]), false);
 });
 
 test("провизия: порядок выбора не важен, лишние и недостающие предметы не проходят", () => {
-  const challenge = harbor.challenges.find((step) => step.kind === "pack");
+  const challenge = pack(["wasser", "brot"]);
   assert.equal(challengeSolved(challenge, ["brot", "wasser"]), true);
   assert.equal(challengeSolved(challenge, ["wasser"]), false);
   assert.equal(challengeSolved(challenge, ["brot", "wasser", "kuchen"]), false);
   assert.equal(challengeSolved(challenge, ["wasser", "wasser"]), false);
 });
 
-test("бейджи включают немецкий, которым Дана владеет немного", () => {
-  const challenge = crew.challenges.find((step) => step.kind === "pack");
-  assert.equal(challengeSolved(challenge, ["russisch", "deutsch", "kasachisch", "englisch"]), true);
-  assert.equal(challengeSolved(challenge, ["russisch", "kasachisch", "englisch"]), false);
-});
-
 test("порядок вариантов воспроизводится после перезагрузки и не теряет одинаковые буквы", () => {
-  const tokens = harbor.challenges.find((step) => step.kind === "order").tokens;
+  const tokens = ["S", "P", "R", "O", "T", "T", "E"];
   assert.deepEqual(shuffled(tokens, 44), shuffled(tokens, 44));
   assert.deepEqual(shuffled(tokens, 44).toSorted(), tokens.toSorted());
 });
 
-test("семейная карточка отличает отсутствие сестры от подруги", () => {
-  const challenge = family.challenges.find((step) => step.id === "dana-family");
+test("карточка требует свою подпись в каждом поле, одна подпись подходит нескольким полям", () => {
+  const challenge = {
+    kind: "match",
+    slots: [{ answer: "aigul" }, { answer: "marat" }, { answer: "brothers" }, { answer: "none" }],
+  };
   assert.equal(challengeSolved(challenge, ["aigul", "marat", "brothers", "none"]), true);
   assert.equal(challengeSolved(challenge, ["aigul", "marat", "brothers", "elif"]), false);
   assert.equal(challengeSolved(challenge, ["marat", "aigul", "brothers", "none"]), false);
-});
-
-test("Матео — дядя Софии, а не её отец", () => {
-  const challenge = family.challenges.find((step) => step.id === "sofia-family");
-  assert.equal(challengeSolved(challenge, ["lucia", "diego", "mateo"]), true);
-  assert.equal(challengeSolved(challenge, ["lucia", "mateo", "diego"]), false);
-});
-
-test("два предмета могут принадлежать Дане, общие фото — двум людям", () => {
-  const challenge = family.challenges.find((step) => step.id === "return-belongings");
-  assert.equal(challengeSolved(challenge, ["dana", "dana", "lucia", "diego", "both"]), true);
-  assert.equal(challengeSolved(challenge, ["dana", "diego", "lucia", "diego", "both"]), false);
-  assert.equal(challengeSolved(challenge, ["dana", "dana", "lucia", "diego", "dana"]), false);
-  assert.equal(challengeSolved(challenge, ["dana", "dana", "lucia", "diego"]), false);
-});
-
-test("список гостей включает ребёнка и исключает организаторов", () => {
-  const challenge = family.challenges.find((step) => step.id === "guest-list");
-  assert.equal(challengeSolved(challenge, ["sofia", "diego", "lucia"]), true);
-  assert.equal(challengeSolved(challenge, ["lucia", "diego"]), false);
-  assert.equal(challengeSolved(challenge, ["lucia", "diego", "sofia", "mateo"]), false);
+  const shared = { kind: "match", slots: [{ answer: "dana" }, { answer: "dana" }, { answer: "lucia" }] };
+  assert.equal(challengeSolved(shared, ["dana", "dana", "lucia"]), true);
+  assert.equal(challengeSolved(shared, ["dana", "lucia", "lucia"]), false);
+  assert.equal(challengeSolved(shared, ["dana", "dana"]), false);
 });
 
 test("корзина различает полкило, килограммы и число бутылок", () => {
-  const challenge = shopping.challenges.find((step) => step.kind === "quantity");
+  const challenge = { kind: "quantity", items: [{ answer: 2 }, { answer: 500 }, { answer: 3 }, { answer: 200 }] };
   assert.equal(challengeSolved(challenge, ["2", "500", "3", "200"]), true);
   assert.equal(challengeSolved(challenge, ["2", "1000", "3", "200"]), false);
   assert.equal(challengeSolved(challenge, ["2", "500", "1", "200"]), false);
   assert.equal(challengeSolved(challenge, ["2", "500", "3"]), false);
 });
 
-test("новое начало курса не путается со старым временем и окончанием", () => {
-  const challenge = daily.challenges.find((step) => step.id === "friday-course");
+test("часы принимают только точное время", () => {
+  const challenge = { kind: "clock", answer: "10:30" };
   assert.equal(challengeSolved(challenge, ["10:30"]), true);
   assert.equal(challengeSolved(challenge, ["09:00"]), false);
   assert.equal(challengeSolved(challenge, ["13:00"]), false);
   assert.equal(challengeSolved(challenge, ["22:30"]), false);
+});
+
+test("в уроках A1 нет игр темы и дел: курс A1 — история", () => {
+  for (const name of ["01-kennenlernen", "04-essen", "12-reisen"]) {
+    const t = topic(name);
+    assert.equal(t.adventure, undefined, name);
+    assert.equal(t.case, undefined, name);
+  }
 });
 
 const restart=topic('../a2/01-neustart').adventure;

@@ -51,12 +51,14 @@ test("верный вариант нельзя угадать по позици�
         topic.case?.steps.map((step, i) => [step, `${topic.id}-case-${i}`]) ??
         [],
     );
-    assertEven(
-      steps.map(([step, seed]) =>
-        shuffle(indices(step.options), seed).indexOf(step.answer),
-      ),
-      `${level} дела`,
-    );
+    // У уровня без дел (A1: курс — история) проверять нечего.
+    if (steps.length)
+      assertEven(
+        steps.map(([step, seed]) =>
+          shuffle(indices(step.options), seed).indexOf(step.answer),
+        ),
+        `${level} дела`,
+      );
   }
   const positions = [];
   for (const beat of sceneChapters.flatMap((c) => c.beats)) {
