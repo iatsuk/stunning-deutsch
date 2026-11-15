@@ -2,7 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { phrases } from "../src/story/data.ts";
-import { compoundOf, decipher, gridSolutions, initialAnswer, isCorrect, mistake, normalizeSave, plannerFree, solution, storyLines, validateChallenge, validateStory } from "../src/story/logic.ts";
+import { compoundOf, decipher, gridSolutions, initialAnswer, isCorrect, mistake, plannerFree, solution, storyLines, validateChallenge, validateStory } from "../src/story/logic.ts";
 import { anweisung, answerSlots, arrange, flatNodes, flow, keyOf, lookOrder, nodeAt, outcomeOf, requiredKeys, sceneKeys, shownWords, spot, typedRight, worldAfter } from "../src/story/scene.ts";
 import { RACE_STAKES } from "../src/story/build.ts";
 import { MNEMONICS } from "../src/story/mnemonics.ts";
@@ -13,6 +13,9 @@ import { SCENE_RULES } from "../src/story/scenes/rules.ts";
 import { RETURNS, WARMUPS } from "../src/story/scenes/warmups.ts";
 import { reviewTwenty, twenty } from "../src/story/twenty.ts";
 import { found } from "./a1-index.mjs";
+
+// Только классический формат сохранения; движок сцен хранит прогресс отдельно.
+import { normalizeSave } from "../src/story/logic.ts";
 
 const words = JSON.parse(readFileSync(new URL("../src/generated/a1-words.json", import.meta.url)));
 // Общие правила проверяются во всех главах сцен; частные случаи движка — на главе 1.
@@ -378,6 +381,11 @@ test("branches are played in the player's order and the scene resumes where it s
   assert.equal(spot(hub, done).at, "menu");
   const all = solution(scenes[2].challenge);
   assert.equal(spot(hub, all).at, "end");
+});
+
+test("classic: a scene draft keeps order and typed replies and drops garbage", () => {
+  const hub = nodes(scenes[2]);
+  const go = hub.findIndex((n) => n.t === "go");
   // Черновик хранит порядок и набранные реплики, мусор выпадает.
   const first = sceneKeys(hub)[0];
   const draft = [first, `${go}.2.1|Ich bin Anna.`, "bogus", first];

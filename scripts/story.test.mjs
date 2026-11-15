@@ -3,35 +3,47 @@ import assert from "node:assert/strict";
 import { existsSync, readFileSync } from "node:fs";
 import { spawnSync } from "node:child_process";
 import { plain, preis } from "../src/lib/german.ts";
-import { episodes, beats, phrases } from "../src/story/data.ts";
-import { rulesBefore, stepRules } from "../src/story/rules.ts";
-import { V1_ORDER } from "../src/story/v1-order.ts";
-import { sceneChapters } from "../src/story/scenes/index.ts";
-import { flatNodes } from "../src/story/scene.ts";
+import { phrases } from "../src/story/data.ts";
+import { chat, gaps, order, pairs, sort, spot, turn, verdict, write } from "../src/story/build.ts";
+import { GERMAN_TARGET, sceneChapters } from "../src/story/scenes/index.ts";
+import { flatNodes, sceneVoices, shownWords } from "../src/story/scene.ts";
+import { found } from "./a1-index.mjs";
 import {
   beatPhrases,
   audioKey,
   canMove,
+  challengeWords,
   initialAnswer,
   isCorrect,
-  knownBefore,
   lockStart,
-  missedBefore,
   mistake,
-  normalizeSave,
-  reachOf,
   placeKey,
-  reviewItems,
   solution,
-  STORY_KEY,
   storyLines,
-  storyWords,
   validateStory,
   walk,
 } from "../src/story/logic.ts";
+
+// Только классическая версия: данные шагов, их порядок, сохранение, повторение и карта правил.
+import { episodes, beats } from "../src/story/data.ts";
+import { rulesBefore, stepRules } from "../src/story/rules.ts";
+import { V1_ORDER } from "../src/story/v1-order.ts";
+import {
+  knownBefore,
+  missedBefore,
+  normalizeSave,
+  reachOf,
+  reviewItems,
+  STORY_KEY,
+  storyWords,
+} from "../src/story/logic.ts";
 const byId = (id) => beats.find((b) => b.id === id);
 
-test("12 sequential chapters cover the A1 route, with reachable, unique actions", () => {
+const sceneBeats = sceneChapters.flatMap((c) => c.beats);
+const sceneGames = sceneBeats.flatMap((b) => flatNodes(b.challenge.nodes)
+  .flatMap((n, i) => n.t === "game" ? [{ id: `${b.id}-${i}`, challenge: n.c, hint: n.hint ?? b.hint }] : []));
+
+test("classic: 12 sequential chapters cover the A1 route, with reachable, unique actions", () => {
   assert.equal(episodes.length, 12);
   assert.equal(beats.length, 192);
   assert.equal(new Set(episodes.map((e) => e.id)).size, 12);
@@ -40,7 +52,8 @@ test("12 sequential chapters cover the A1 route, with reachable, unique actions"
   assert.equal(new Set(beats.map((b) => b.challenge.kind)).size, 26);
   assert.equal(beats.at(-1).id, "12-finale");
 });
-test("detective answers require evidence; photos do not prove theft or intent", () => {
+
+test("classic: detective answers require evidence; photos do not prove theft or intent", () => {
   for (const [id, accepted, rejected] of [
     ["01-lead", "contact", "thief"],
     ["05-bag", "two", "guilty"],
@@ -51,24 +64,42 @@ test("detective answers require evidence; photos do not prove theft or intent", 
     assert.equal(isCorrect(byId(id).challenge, rejected), false);
   }
 });
+
 test("numbers, offered times and amounts preserve meaningful distinctions", () => {
-  assert.ok(isCorrect(byId("02-number").challenge, "0176234581"));
-  assert.ok(!isCorrect(byId("02-number").challenge, "176234581"));
-  assert.ok(isCorrect(byId("02-pin").challenge, "32"));
-  assert.ok(!isCorrect(byId("02-pin").challenge, "23"));
-  assert.ok(isCorrect(byId("06-time").challenge, "17:30"));
-  assert.ok(!isCorrect(byId("06-time").challenge, "18:30"));
-  assert.ok(!isCorrect(byId("06-time").challenge, "05:30"));
-  assert.ok(isCorrect(byId("10-reception").challenge, "11:15"));
-  assert.ok(!isCorrect(byId("10-reception").challenge, "11:45"));
-  const c = byId("04-basket").challenge;
+  const number = { kind: "code", length: 10, answer: "0176234581" };
+  const pin = { kind: "code", length: 2, answer: "32" };
+  const time = { kind: "clock", start: "12:00", step: 15, answer: "17:30" };
+  const reception = { kind: "clock", start: "12:00", step: 15, answer: "11:15" };
+  assert.ok(isCorrect(number, "0176234581"));
+  assert.ok(!isCorrect(number, "176234581"));
+  assert.ok(isCorrect(pin, "32"));
+  assert.ok(!isCorrect(pin, "23"));
+  assert.ok(isCorrect(time, "17:30"));
+  assert.ok(!isCorrect(time, "18:30"));
+  assert.ok(!isCorrect(time, "05:30"));
+  assert.ok(isCorrect(reception, "11:15"));
+  assert.ok(!isCorrect(reception, "11:45"));
+  const c = {
+    kind: "quantity",
+    items: [
+      { id: "w", text: "Flaschen Wasser", max: 5 },
+      { id: "b", text: "Brote", max: 5 },
+      { id: "c", text: "Kaffee", max: 5 },
+    ],
+    answer: { w: 2, b: 3, c: 0 },
+  };
   assert.ok(isCorrect(c, { w: 2, b: 3, c: 0 }));
   assert.ok(!isCorrect(c, { w: 3, b: 2, c: 0 })); // Same total is not the same order.
   assert.ok(!isCorrect(c, { w: 2, b: 3, c: 1 }));
 });
+
 test("German order, articles and sentence frames cannot be replaced by bag-of-words answers", () => {
+  const frame = order(["Das Treffen", "fängt", "um 17:30 Uhr", "an."], ["an.", "um 17:30 Uhr", "Das Treffen", "fängt"]);
+  const dativ = order(["Wir", "fahren", "mit dem Bus", "zum Café."], ["zum Café.", "Wir", "mit dem Bus", "fahren"]);
+  const perfect = order(["Ich", "habe", "gestern", "gearbeitet."], ["gearbeitet.", "gestern", "habe", "Ich"]);
+  const arrived = order(["Die Tasche", "ist", "angekommen."], ["angekommen.", "Die Tasche", "ist"]);
   assert.ok(
-    isCorrect(byId("06-frame").challenge, [
+    isCorrect(frame, [
       "Das Treffen",
       "fängt",
       "um 17:30 Uhr",
@@ -76,7 +107,7 @@ test("German order, articles and sentence frames cannot be replaced by bag-of-wo
     ]),
   );
   assert.ok(
-    !isCorrect(byId("06-frame").challenge, [
+    !isCorrect(frame, [
       "Das Treffen",
       "fängt",
       "an.",
@@ -84,7 +115,7 @@ test("German order, articles and sentence frames cannot be replaced by bag-of-wo
     ]),
   );
   assert.ok(
-    isCorrect(byId("09-dativ").challenge, [
+    isCorrect(dativ, [
       "Wir",
       "fahren",
       "mit dem Bus",
@@ -92,7 +123,7 @@ test("German order, articles and sentence frames cannot be replaced by bag-of-wo
     ]),
   );
   assert.ok(
-    isCorrect(byId("11-perfect").challenge, [
+    isCorrect(perfect, [
       "Ich",
       "habe",
       "gestern",
@@ -100,7 +131,7 @@ test("German order, articles and sentence frames cannot be replaced by bag-of-wo
     ]),
   );
   assert.ok(
-    isCorrect(byId("12-perfect").challenge, [
+    isCorrect(arrived, [
       "Die Tasche",
       "ist",
       "angekommen.",
@@ -111,7 +142,22 @@ test("German order, articles and sentence frames cannot be replaced by bag-of-wo
   assert.equal(phrases.bus.de, "mit dem Bus");
   assert.equal(phrases.him.de, "Ich nehme ihn.");
 });
+
 test("phrases are introduced before becoming German-only; callbacks repeat in new scenes", () => {
+  assert.equal(new Set(sceneBeats.slice(0, 0).flatMap(beatPhrases)).has("moin"), false);
+  assert.equal(new Set(sceneBeats.slice(0, 1).flatMap(beatPhrases)).has("moin"), true);
+  assert.equal(new Set(sceneBeats.slice(0, 1).flatMap(beatPhrases)).has("inbag"), false);
+  for (const [id, p] of Object.entries(phrases)) {
+    assert.ok(p.ru && p.de && p.note);
+    assert.ok(!/[а-яё]/i.test(p.de), `Cyrillic in German: ${id}`);
+  }
+  const repeated = Object.keys(phrases).filter(
+    (id) => sceneBeats.filter((b) => beatPhrases(b).includes(id)).length > 1,
+  );
+  assert.ok(repeated.length >= 45, `${repeated.length} repeated units`);
+});
+
+test("classic: phrases are introduced and used across both versions", () => {
   assert.equal(knownBefore(beats, 0).has("moin"), false);
   assert.equal(knownBefore(beats, 1).has("moin"), true);
   assert.equal(knownBefore(beats, 1).has("inbag"), false);
@@ -137,7 +183,8 @@ test("phrases are introduced before becoming German-only; callbacks repeat in ne
   );
   assert.ok(repeated.length >= 45, `${repeated.length} repeated units`);
 });
-test("saved progress survives reload, clamps malformed data, and retains unfinished drafts", () => {
+
+test("classic: saved progress survives reload, clamps malformed data, and retains unfinished drafts", () => {
   assert.notEqual(STORY_KEY, "sd-adventure-v1");
   const draft = {
     version: 2,
@@ -175,7 +222,8 @@ test("saved progress survives reload, clamps malformed data, and retains unfinis
   );
   assert.deepEqual([v2.done, v2.skipped, v2.cursor], [[beats[0].id], [], beats[1].id]);
 });
-test("progress is kept by step: an old save moves over, a new step waits as an empty cell", () => {
+
+test("classic: progress is kept by step: an old save moves over, a new step waits as an empty cell", () => {
   // Сохранение версии 1: пройдено шесть глав, открыт первый шаг седьмой.
   const old = normalizeSave({ version: 1, completed: 96, cursor: 96 }, beats);
   // Отметки идут в нынешнем порядке шагов; удалённый шаг выпадает, переставленные остаются.
@@ -201,19 +249,21 @@ test("progress is kept by step: an old save moves over, a new step waits as an e
   const solved = normalizeSave({ ...skipped, done: [...skipped.done, beats[3].id] }, beats);
   assert.deepEqual(solved.skipped, []);
 });
+
 test("no initial draft earns a success; missing pairs cannot pass", () => {
-  for (const b of beats)
+  for (const b of [...sceneBeats, ...sceneGames])
     assert.equal(
       isCorrect(b.challenge, initialAnswer(b.challenge)),
       false,
       b.id,
     );
   assert.equal(
-    isCorrect(byId("03-family").challenge, { g: "sister", n: "brother" }),
+    isCorrect(pairs([["Greta", "сестра"], ["Nils", "брат"], ["Jensen", "отец"]]), { l0: "r0", l1: "r1" }),
     false,
   );
 });
-test("games vary: choice no longer dominates and the same game never repeats in a row", () => {
+
+test("classic: games vary: choice no longer dominates and the same game never repeats in a row", () => {
   const kinds = beats.map((b) => b.challenge.kind);
   assert.ok(kinds.filter((k) => k === "choice").length <= 12);
   kinds.forEach((kind, i) =>
@@ -225,11 +275,15 @@ test("games vary: choice no longer dominates and the same game never repeats in 
       episode.id,
     );
 });
+
 test("every step shows a working answer, also for saves from another game kind", () => {
-  for (const b of beats) {
+  for (const b of [...sceneBeats, ...sceneGames]) {
     assert.ok(isCorrect(b.challenge, solution(b.challenge)), b.id);
     assert.ok(mistake(b.challenge, initialAnswer(b.challenge), b.hint), b.id);
   }
+});
+
+test("classic: saves from another game kind retain only valid drafts", () => {
   const old = normalizeSave(
     {
       cursor: 7,
@@ -253,19 +307,38 @@ test("every step shows a working answer, also for saves from another game kind",
   assert.deepEqual(old.drafts["04-request"], []);
   assert.deepEqual(old.drafts["08-where"], { k: "table", t: "kitchen" });
 });
+
 test("chat needs every reply in order and remembers only correct ones", () => {
-  const c = byId("04-order").challenge;
+  const c = chat("Kellner", "Eddy", [
+    turn("Moin! Was möchte Greta?", "Что хочет Грета?", "tea", [
+      ["tea", "Einen Tee, bitte.", ""], ["coffee", "Einen Kaffee, bitte.", "Keinen Kaffee!"],
+    ]),
+    turn("Und einen Kaffee?", "А кофе?", "no", [
+      ["no", "Nein, keinen Kaffee, danke.", ""], ["yes", "Ja, einen Kaffee, bitte.", "Keinen Kaffee!"],
+    ]),
+    turn("Noch etwas?", "Что-нибудь ещё?", "thanks", [
+      ["thanks", "Nein, danke.", ""], ["kiel", "Ich wohne in Kiel.", "Это адрес."],
+    ]),
+  ]);
   assert.ok(isCorrect(c, ["tea", "no", "thanks"]));
   assert.ok(!isCorrect(c, ["tea", "no"]));
   assert.ok(!isCorrect(c, ["coffee", "no", "thanks"]));
+});
+
+test("classic: chat drafts remember only correct replies", () => {
   const saved = normalizeSave(
     { drafts: { "04-order": ["tea", "yes", "thanks"] } },
     beats,
   );
   assert.deepEqual(saved.drafts["04-order"], ["tea"]);
 });
+
 test("stamps, gaps, sorting and text spotting require the exact evidence", () => {
-  const stamps = byId("03-no").challenge;
+  const stamps = verdict(["Верно", "Неверно"], [
+    ["Эта сумка не его.", true, "Das ist nicht meine Tasche."],
+    ["У него вообще нет сумки.", false, "nicht meine отрицает именно принадлежность."],
+    ["Его сумка пустая.", false, "О содержимом ответа нет."],
+  ]);
   assert.ok(isCorrect(stamps, { 0: "yes", 1: "no", 2: "no" }));
   assert.ok(!isCorrect(stamps, { 0: "yes", 1: "no" }));
   assert.ok(!isCorrect(stamps, { 0: "yes", 1: "yes", 2: "no" }));
@@ -273,31 +346,51 @@ test("stamps, gaps, sorting and text spotting require the exact evidence", () =>
     mistake(stamps, { 0: "yes", 1: "yes", 2: "no" }, ""),
     /принадлежность/,
   );
-  const cases = byId("08-case").challenge;
+  const cases = gaps("Das Brot ist ___ Tasche. Der Schlüssel liegt ___ Tisch.",
+    ["in der", "in die", "in dem", "auf dem", "auf den"], ["in der", "auf dem"]);
   assert.ok(isCorrect(cases, ["in der", "auf dem"]));
   assert.ok(!isCorrect(cases, ["in die", "auf dem"]));
   assert.ok(!isCorrect(cases, ["auf dem", "in der"]));
-  const pronouns = byId("05-pronoun").challenge;
+  const pronouns = {
+    kind: "write", title: "Antworten von Greta",
+    fields: [
+      { id: "p", label: "Der Pullover? Ich nehme …", answers: ["ihn"] },
+      { id: "j", label: "Die Jacke? Ich nehme … nicht.", answers: ["sie"] },
+      { id: "t", label: "Das T-Shirt? Ich nehme … auch nicht.", answers: ["es"] },
+    ],
+  };
   assert.ok(isCorrect(pronouns, { p: "ihn", j: "sie", t: "es" }));
   assert.ok(!isCorrect(pronouns, { p: "sie", j: "ihn", t: "es" }));
-  const genders = byId("08-compound").challenge;
+  const genders = sort([["der", "der"], ["die", "die"], ["das", "das"]], [
+    ["schrank", "Küchenschrank", "der"], ["haustuer", "Haustür", "die"], ["wohnzimmer", "Wohnzimmer", "das"],
+  ]);
   assert.equal(genders.answer.schrank, "der");
   assert.equal(genders.answer.haustuer, "die");
   assert.equal(genders.answer.wohnzimmer, "das");
-  const note = byId("08-note").challenge;
+  const note = spot("Jensen", [
+    "Die Tasche mit Brot|bleibt|hier.", "Die andere Tasche|ist|im Bus.", "Ich|bin|zu Hause.",
+  ], ["im Bus."]);
   assert.deepEqual(note.answer, ["1:2"]);
   assert.equal(note.lines[1][2], "im Bus.");
   assert.ok(!isCorrect(note, ["2:2"]));
-  const log = byId("06-log").challenge;
+  const log = spot("Журнал клуба", [
+    "17:30 Nils kommt mit einer roten Tasche.",
+    "17:35 Jensen kommt mit einer roten Tasche.",
+    "17:45 Jensen geht. Nils trinkt Tee.",
+  ], ["17:35 Jensen kommt mit einer roten Tasche.", "17:45 Jensen geht. Nils trinkt Tee."]);
   assert.ok(isCorrect(log, [...log.answer].reverse()));
   assert.ok(!isCorrect(log, [log.answer[0]]));
+});
+
+test("classic: text spotting drafts keep each known token once", () => {
   assert.deepEqual(
     normalizeSave({ drafts: { "06-log": ["1:0", "1:0", "9:9"] } }, beats)
       .drafts["06-log"],
     ["1:0"],
   );
 });
-test("memory repeats only phrases the story has already shown", () => {
+
+test("classic: memory repeats only phrases the story has already shown", () => {
   const memories = beats.filter((b) => b.challenge.kind === "memory");
   assert.equal(memories.length, 3);
   for (const b of memories) {
@@ -315,8 +408,14 @@ test("memory repeats only phrases the story has already shown", () => {
     );
   }
 });
+
 test("the walk follows the driver's words and stays on the map", () => {
-  const c = byId("09-directions").challenge;
+  const c = {
+    kind: "algo", width: 3, height: 3, max: 4,
+    start: { x: 1, y: 2, heading: 0 },
+    places: { "1,2": "die Haltestelle", "0,0": "das Café Nordlicht", "1,0": "der Bahnhof" },
+    goal: "0,0", moves: ["geradeaus", "links", "rechts"],
+  };
   assert.ok(isCorrect(c, ["geradeaus", "links", "rechts"]));
   assert.equal(
     c.places[placeKey(walk(c, c.moves).at(-1))],
@@ -330,6 +429,9 @@ test("the walk follows the driver's words and stays on the map", () => {
   );
   assert.equal(canMove(c, ["geradeaus", "geradeaus"], "geradeaus"), false);
   assert.equal(canMove(c, ["geradeaus"], "links"), true);
+});
+
+test("classic: walk drafts stop at the edge of the map", () => {
   assert.deepEqual(
     normalizeSave(
       { drafts: { "09-directions": ["geradeaus", "geradeaus", "geradeaus"] } },
@@ -338,8 +440,9 @@ test("the walk follows the driver's words and stays on the map", () => {
     ["geradeaus", "geradeaus"],
   );
 });
+
 test("change can be paid in any coins, the amount is what counts", () => {
-  const c = byId("05-change").challenge;
+  const c = { kind: "coins", coins: [200, 100, 50, 20, 10], answer: 150 };
   assert.ok(isCorrect(c, { 100: 1, 50: 1 }));
   assert.ok(isCorrect(c, { 50: 3 }));
   assert.ok(!isCorrect(c, { 200: 1 }));
@@ -348,19 +451,27 @@ test("change can be paid in any coins, the amount is what counts", () => {
   assert.equal(preis(200), "zwei Euro");
   assert.equal(preis(70), "siebzig Cent");
 });
+
 test("calendar and clock keep similar dates and times apart", () => {
-  const date = byId("12-date").challenge;
+  const date = {
+    kind: "calendar",
+    months: [{ name: "Mai", days: 31 }, { name: "Juni", days: 30 }, { name: "Juli", days: 31 }],
+    answer: "Juni:1",
+  };
   assert.ok(isCorrect(date, "Juni:1"));
   assert.ok(!isCorrect(date, "Juli:1"));
   assert.ok(!isCorrect(date, "Juni:7"));
+  const time = sceneGames.find((b) => b.challenge.kind === "clock").challenge;
+  assert.match(mistake(time, "18:30", "hint"), /halb sieben/);
+});
+
+test("classic: calendar and clock drafts keep only offered dates and times", () => {
   assert.equal(
     normalizeSave({ drafts: { "12-date": "Juni:31" } }, beats).drafts[
       "12-date"
     ],
     undefined,
   );
-  const time = byId("06-time").challenge;
-  assert.match(mistake(time, "18:30", byId("06-time").hint), /halb sieben/);
   assert.equal(
     normalizeSave({ drafts: { "06-time": "17:37" } }, beats).drafts["06-time"],
     undefined,
@@ -370,7 +481,8 @@ test("calendar and clock keep similar dates and times apart", () => {
     "17:45",
   );
 });
-test("every chapter teaches through listening, exact writing and returning mistakes", () => {
+
+test("classic: every chapter teaches through listening, exact writing and returning mistakes", () => {
   for (const episode of episodes) {
     assert.ok(
       episode.beats.some(
@@ -390,8 +502,12 @@ test("every chapter teaches through listening, exact writing and returning mista
   }
   assert.equal(beats.filter((b) => b.challenge.kind === "write").length, 23);
 });
+
 test("write checks the exact German form and explains near misses", () => {
-  const c = byId("01-card").challenge;
+  const c = write("Karten für den Club", [
+    ["Dana · Wohnort", "Gaarden"], ["Mateo · Land", "Argentinien"],
+    ["Greta · Wohnort", "Kiel"], ["Nils · kommt aus", "Hamburg"],
+  ]);
   // Дана · Wohnort, Матео · Land, Грета · Wohnort, Нильс · kommt aus.
   const good = { f0: "Gaarden", f1: "Argentinien", f2: "Kiel", f3: "Hamburg" };
   assert.ok(isCorrect(c, good));
@@ -416,7 +532,8 @@ test("write checks the exact German form and explains near misses", () => {
   assert.match(mistake(umlaut, { a: "Kueche" }, "hint"), /умлаутом/);
   assert.ok(!isCorrect(umlaut, { a: "Kueche" }));
 });
-test("errors stay until written correctly and return in later chapters", () => {
+
+test("classic: errors stay until written correctly and return in later chapters", () => {
   const [first, second] = episodes;
   assert.deepEqual(reviewItems(first, {}), first.review);
   assert.deepEqual(reviewItems(second, {}), second.review);
@@ -441,7 +558,18 @@ test("errors stay until written correctly and return in later chapters", () => {
   for (const b of beats)
     for (const id of b.practice ?? []) assert.ok(phrases[id], `${b.id}: ${id}`);
 });
+
 test("word games need every word once, and a draft keeps only known words", () => {
+  for (const kind of ["bingo", "scene", "letters", "speak", "docks", "gull"]) {
+    const c = sceneGames.find((b) => b.challenge.kind === kind).challenge;
+    const all = solution(c);
+    assert.ok(isCorrect(c, [...all].reverse()), kind);
+    assert.ok(!isCorrect(c, all.slice(1)), kind);
+    assert.ok(!isCorrect(c, [...all.slice(1), all[1]]), kind);
+  }
+});
+
+test("classic: word game drafts keep only known words once", () => {
   for (const id of [
     "01-x-hello",
     "01-x-flags",
@@ -452,9 +580,6 @@ test("word games need every word once, and a draft keeps only known words", () =
   ]) {
     const c = byId(id).challenge;
     const all = solution(c);
-    assert.ok(isCorrect(c, [...all].reverse()), id);
-    assert.ok(!isCorrect(c, all.slice(1)), id);
-    assert.ok(!isCorrect(c, [...all.slice(1), all[1]]), id);
     assert.deepEqual(
       normalizeSave({ drafts: { [id]: [all[0], all[0], "bogus"] } }, beats)
         .drafts[id],
@@ -463,12 +588,20 @@ test("word games need every word once, and a draft keeps only known words", () =
     );
   }
 });
+
 test("rounds of odd and lock go in order, a draft keeps only the solved start", () => {
+  for (const kind of ["odd", "lock"]) {
+    const c = sceneGames.find((b) => b.challenge.kind === kind).challenge;
+    const [first, second, third] = solution(c);
+    assert.ok(isCorrect(c, [first, second, third]), kind);
+    assert.ok(!isCorrect(c, [second, first, third]), kind);
+  }
+});
+
+test("classic: odd and lock drafts keep only the solved start", () => {
   for (const id of ["01-x-odd", "01-x-lock"]) {
     const c = byId(id).challenge;
     const [first, second, third] = solution(c);
-    assert.ok(isCorrect(c, [first, second, third]), id);
-    assert.ok(!isCorrect(c, [second, first, third]), id);
     assert.deepEqual(
       normalizeSave({ drafts: { [id]: [first, "bogus", third] } }, beats)
         .drafts[id],
@@ -477,9 +610,10 @@ test("rounds of odd and lock go in order, a draft keeps only the solved start", 
     );
   }
 });
+
 test("the three docks take singular nouns, a plural article would teach nothing", () => {
-  const docks = beats.filter((b) => b.challenge.kind === "docks");
-  assert.equal(docks.length, 12);
+  const docks = sceneGames.filter((b) => b.challenge.kind === "docks");
+  assert.equal(docks.length, 58);
   const plurals = [
     "die Eltern",
     "die Geschwister",
@@ -493,20 +627,22 @@ test("the three docks take singular nouns, a plural article would teach nothing"
     for (const word of b.challenge.words)
       assert.ok(!plurals.includes(word), `${b.id}: ${word}`);
 });
+
 test("the gull race never asks for one of two words with the same translation", () => {
   const words = JSON.parse(
     readFileSync(new URL("../src/generated/a1-words.json", import.meta.url)),
   );
-  const races = beats.filter((b) => b.challenge.kind === "gull");
-  assert.equal(races.length, 12);
+  const races = sceneGames.filter((b) => b.challenge.kind === "gull");
+  assert.equal(races.length, 14);
   for (const b of races) {
     const meanings = b.challenge.words.map((w) => words[w].ru);
     assert.equal(new Set(meanings).size, meanings.length, b.id);
   }
 });
+
 test("a lock has a Russian task, real alternatives and one stored answer per reel", () => {
-  const locks = beats.filter((b) => b.challenge.kind === "lock");
-  assert.equal(locks.length, 12);
+  const locks = sceneGames.filter((b) => b.challenge.kind === "lock");
+  assert.equal(locks.length, 13);
   for (const b of locks)
     for (const round of b.challenge.rounds) {
       assert.match(round.ru, /[а-яё]/i, b.id);
@@ -518,9 +654,10 @@ test("a lock has a Russian task, real alternatives and one stored answer per ree
       assert.match(round.answer.at(-1), /[.?!]$/, b.id);
     }
 });
+
 test("a lock starts with no right reel, sometimes with one", () => {
   const right = [0, 0, 0];
-  for (const b of beats.filter((b) => b.challenge.kind === "lock"))
+  for (const b of sceneGames.filter((b) => b.challenge.kind === "lock"))
     for (const round of b.challenge.rounds)
       for (let n = 0; n < 50; n++) {
         const at = lockStart(round.reels, round.answer, `${b.id}-${n}`);
@@ -529,7 +666,8 @@ test("a lock starts with no right reel, sometimes with one", () => {
   assert.equal(right[2], 0);
   assert.ok(right[0] > right[1] * 2 && right[1] > 0, right.join("/"));
 });
-test("the game uses every word of the A1 lessons", () => {
+
+test("classic: the game uses every word of the A1 lessons", () => {
   const words = JSON.parse(
     readFileSync(new URL("../src/generated/a1-words.json", import.meta.url)),
   );
@@ -545,7 +683,47 @@ test("the game uses every word of the A1 lessons", () => {
     [],
   );
 });
+
+test("the scene version meets every word of the A1 lessons", () => {
+  const words = JSON.parse(readFileSync(new URL("../src/generated/a1-words.json", import.meta.url)));
+  const nodes = sceneBeats.flatMap((b) => flatNodes(b.challenge.nodes));
+  // Считаем только встреченные выражения, реплики и ответы сцен, а не весь общий словарь phrases.
+  const texts = [
+    ...shownWords(nodes),
+    ...sceneVoices(nodes).map((l) => l.text),
+    ...nodes.flatMap((n) =>
+      n.t === "narr" ? [n.text.replace(/\{([\w-]+)\}/g, (_, id) => phrases[id].de)] :
+      n.t === "type" ? n.answers :
+      n.t === "game" ? [
+        ...challengeWords(n.c),
+        ...(["write", "letter"].includes(n.c.kind) ? n.c.fields.flatMap((f) => f.answers) : []),
+      ] : [],
+    ),
+  ];
+  assert.ok(Object.keys(words).length > 400);
+  // Словарные пары вроде «groß – klein» дают две единицы, как в индексе A1.
+  assert.deepEqual(Object.keys(words).filter((w) =>
+    w.split(/\s+[–/]\s+/).some((part) => !texts.some((text) => found(part, text))),
+  ), []);
+});
+
 test("a letter needs every sentence right, adapted from the model and not copied", () => {
+  const letters = sceneGames.filter((b) => b.challenge.kind === "letter");
+  assert.equal(letters.length, 13);
+  for (const b of letters) {
+    const c = b.challenge;
+    assert.ok(isCorrect(c, solution(c)), b.id);
+    assert.ok(!isCorrect(c, { ...solution(c), f1: "falsch" }), b.id);
+  }
+  const first = letters[0].challenge;
+  assert.ok(isCorrect(first, { ...solution(first), f0: "Hallo Greta," }));
+  assert.ok(isCorrect(first, { ...solution(first), f4: "Liebe Grüße Elif" }));
+  assert.ok(
+    !isCorrect(first, { ...solution(first), f2: "ich komme aus russland." }),
+  );
+});
+
+test("classic: letters have five adapted fields and drafts keep only known text", () => {
   const letters = beats.filter((b) => b.challenge.kind === "letter");
   assert.equal(letters.length, 12);
   for (const b of letters) {
@@ -554,15 +732,7 @@ test("a letter needs every sentence right, adapted from the model and not copied
     const body = c.fields.flatMap((f) => f.answers[0]);
     for (const sentence of body)
       assert.ok(!c.model.includes(sentence), `${b.id}: ${sentence}`);
-    assert.ok(isCorrect(c, solution(c)), b.id);
-    assert.ok(!isCorrect(c, { ...solution(c), f1: "falsch" }), b.id);
   }
-  const first = byId("01-x-letter").challenge;
-  assert.ok(isCorrect(first, { ...solution(first), f0: "Hallo Greta," }));
-  assert.ok(isCorrect(first, { ...solution(first), f4: "Liebe Grüße Elif" }));
-  assert.ok(
-    !isCorrect(first, { ...solution(first), f2: "ich komme aus russland." }),
-  );
   const words = (b) =>
     b.challenge.fields
       .map((f) => f.answers[0])
@@ -578,9 +748,10 @@ test("a letter needs every sentence right, adapted from the model and not copied
     { f1: "Ich" },
   );
 });
+
 test("oral practice follows the exam parts and always has a model to compare with", () => {
-  const steps = beats.filter((b) => b.challenge.kind === "oral");
-  assert.equal(steps.length, 12);
+  const steps = sceneGames.filter((b) => b.challenge.kind === "oral");
+  assert.equal(steps.length, 13);
   const parts = new Set();
   for (const b of steps)
     for (const r of b.challenge.rounds) {
@@ -590,21 +761,43 @@ test("oral practice follows the exam parts and always has a model to compare wit
       assert.match(r.ru, /[а-яё]/i, b.id);
     }
   assert.deepEqual([...parts].sort(), [1, 2, 3]);
-  const c = byId("04-x-oral").challenge;
+  const c = steps.find((b) => b.id.startsWith("04-")).challenge;
   assert.ok(isCorrect(c, [...solution(c)].reverse()));
   assert.ok(!isCorrect(c, solution(c).slice(1)));
-  assert.deepEqual(
-    normalizeSave({ drafts: { "04-x-oral": ["Ja, gern.", "bogus"] } }, beats)
-      .drafts["04-x-oral"],
-    ["Ja, gern."],
+  const lines = storyLines(sceneChapters, phrases);
+  assert.ok(
+    lines.some((l) => l.text === "Trinkst du gern Kaffee?" && l.voice === "Reed"),
   );
+  assert.ok(lines.some((l) => l.text === "Nein, ich trinke keinen Kaffee. Ich trinke gern Tee." && l.voice === "Anna"));
+});
+
+test("classic: oral drafts keep only known model lines", () => {
   const lines = storyLines(episodes, phrases);
   assert.ok(
     lines.some((l) => l.text === "Möchten Sie Milch?" && l.voice === "Reed"),
   );
   assert.ok(lines.some((l) => l.text === "Ja, gern." && l.voice === "Anna"));
+  assert.deepEqual(
+    normalizeSave({ drafts: { "04-x-oral": ["Ja, gern.", "bogus"] } }, beats)
+      .drafts["04-x-oral"],
+    ["Ja, gern."],
+  );
 });
+
 test("the dictated phone number is slowed down for A1", () => {
+  const slow = JSON.parse(
+    readFileSync(new URL("../scripts/tts/slow.json", import.meta.url)),
+  );
+  const lines = storyLines(sceneChapters, phrases);
+  const text = "Null, eins, sieben, zwei. Acht, drei. Fünf, neun. Vier, sechs.";
+  assert.ok(lines.some((l) => l.text === text && l.voice === "Flo"), text);
+  const phone = slow.find((l) => l.text === text && l.voice === "Flo");
+  assert.ok(phone, text);
+  assert.ok(phone.speed > 0.5 && phone.speed < 1, text);
+  for (const { text, speed } of slow) assert.ok(speed > 0.5 && speed < 1, text);
+});
+
+test("classic: every slowed line belongs to one of the two versions", () => {
   const slow = JSON.parse(
     readFileSync(new URL("../scripts/tts/slow.json", import.meta.url)),
   );
@@ -618,9 +811,10 @@ test("the dictated phone number is slowed down for A1", () => {
     );
   }
 });
+
 test("every lock phrase is voiced in the narrator's voice", () => {
-  const lines = storyLines(episodes, phrases);
-  for (const b of beats.filter((b) => b.challenge.kind === "lock"))
+  const lines = storyLines(sceneChapters, phrases);
+  for (const b of sceneGames.filter((b) => b.challenge.kind === "lock"))
     for (const round of b.challenge.rounds)
       assert.ok(
         lines.some(
@@ -629,7 +823,8 @@ test("every lock phrase is voiced in the narrator's voice", () => {
         round.answer.join(" "),
       );
 });
-test("every chapter and every lock explain the grammar they ask for", () => {
+
+test("classic: every chapter and every lock explain the grammar they ask for", () => {
   for (const episode of episodes)
     assert.ok(
       episode.beats.some((b) => stepRules[b.id]?.length),
@@ -639,7 +834,8 @@ test("every chapter and every lock explain the grammar they ask for", () => {
     assert.ok(stepRules[b.id]?.length, b.id);
   for (const id of Object.keys(stepRules)) assert.ok(byId(id), id);
 });
-test("rules come from the lesson of their chapter, with text and a schema", () => {
+
+test("classic: rules come from the lesson of their chapter, with text and a schema", () => {
   const rules = JSON.parse(
     readFileSync(new URL("../src/generated/story-rules.json", import.meta.url)),
   );
@@ -669,7 +865,8 @@ test("rules come from the lesson of their chapter, with text and a schema", () =
       assert.equal(ref.split("/")[0], lessons[chapter], `${step}: ${ref}`);
     }
 });
-test("rules already seen are listed once, in the order of the story", () => {
+
+test("classic: rules already seen are listed once, in the order of the story", () => {
   assert.deepEqual(rulesBefore(beats, 0), []);
   const all = rulesBefore(beats, beats.length);
   assert.equal(new Set(all).size, all.length);
@@ -678,11 +875,12 @@ test("rules already seen are listed once, in the order of the story", () => {
   assert.ok(rulesBefore(beats, before).includes("familie/wessen-1"));
   assert.ok(!rulesBefore(beats, before).includes("familie/kein-2"));
 });
+
 test("every phrase and voice line resolves to a recording that exists", () => {
   const map = JSON.parse(
     readFileSync(new URL("../src/generated/story-audio.json", import.meta.url)),
   );
-  const lines = storyLines(episodes, phrases);
+  const lines = storyLines(sceneChapters, phrases);
   assert.ok(lines.length > Object.keys(phrases).length + 20);
   for (const { text, voice } of lines) {
     const src = map[audioKey(text, voice)];
@@ -690,14 +888,8 @@ test("every phrase and voice line resolves to a recording that exists", () => {
     assert.ok(existsSync(new URL(`../public/${src}`, import.meta.url)), src);
   }
 });
+
 test("all three story recordings exist and the active generator refuses Qwen before loading models", () => {
-  assert.equal(beats.filter((b) => b.audio).length, 3);
-  for (const b of beats.filter((b) => b.audio))
-    assert.ok(
-      existsSync(
-        new URL(`../public/story-audio/${b.audio.file}.m4a`, import.meta.url),
-      ),
-    );
   const config = JSON.parse(
     readFileSync(new URL("../scripts/tts/config.json", import.meta.url)),
   );
@@ -720,7 +912,47 @@ test("all three story recordings exist and the active generator refuses Qwen bef
   assert.notEqual(rejected.status, 0);
   assert.match(rejected.stderr, /Only OmniVoice/);
 });
+
+test("classic: all three story recordings exist", () => {
+  assert.equal(beats.filter((b) => b.audio).length, 3);
+  for (const b of beats.filter((b) => b.audio))
+    assert.ok(
+      existsSync(
+        new URL(`../public/story-audio/${b.audio.file}.m4a`, import.meta.url),
+      ),
+    );
+});
+
 test("rewritten chapters follow the plot plan: real scenes and a growing share of German", () => {
+  const known = new Set();
+  const rewritten = [];
+  for (const e of sceneChapters) {
+    let de = 0;
+    let ru = 0;
+    for (const n of e.beats.flatMap((b) => flatNodes(b.challenge.nodes))) {
+      if (n.t === "narr") {
+        const text = n.text.replace(/\{([\w-]+)\}/g, (_, id) => {
+          const p = phrases[id];
+          const shown = known.has(id) || known.has(p.de) ? p.de : `${p.ru} ${p.de}`;
+          known.add(id);
+          return ` ${shown} `;
+        });
+        for (const w of text.split(/[\s«»„“"(),.!?:;—–…-]+/).filter(Boolean))
+          if (/[а-яё]/i.test(w)) ru++;
+          else if (/^\p{L}+$/u.test(w)) de++;
+      }
+      for (const w of shownWords([n])) known.add(w);
+    }
+    rewritten.push(e.id);
+    const share = (100 * de) / (de + ru);
+    assert.ok(share >= GERMAN_TARGET[e.id], `${e.id}: ${share.toFixed(1)}% вместо ${GERMAN_TARGET[e.id]}%`);
+    assert.ok((de + ru) / e.beats.length >= 40, `${e.id}: ${((de + ru) / e.beats.length).toFixed(0)} слов на сцену`);
+  }
+  assert.deepEqual(rewritten, sceneChapters.map((e) => e.id));
+  assert.ok(rewritten.includes("moin-neu"));
+});
+
+test("classic: rewritten step chapters stay within the plot plan curve", () => {
   // Кривая из A1-PLOT.md: доля немецких слов в рассказе и сообщениях об успехе, по главам.
   const plan = [10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65];
   const known = new Set();

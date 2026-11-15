@@ -1,17 +1,18 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
+import { isCorrect, solution } from "../src/story/logic.ts";
+import { dayNumber, dueWords, grade, remember } from "../src/story/memory.ts";
+import { SCENE_INTERVALS } from "../src/story/review.ts";
+
+// Только классическая версия: раунды слов, фразы её замков и нормализация сохранения.
 import { beats, phrases } from "../src/story/data.ts";
-import { isCorrect, normalizeSave, solution } from "../src/story/logic.ts";
+import { normalizeSave } from "../src/story/logic.ts";
 import {
   buildRound,
-  dayNumber,
-  dueWords,
-  grade,
   lockCard,
   lockCards,
   memoryStats,
-  remember,
   slip,
   stepWords,
   timeForRound,
@@ -31,9 +32,9 @@ const shelf = (box) =>
 
 test("a new word waits, then returns after enough steps or on the next day", () => {
   const cards = remember({}, ["der Hafen"], 10, 100);
-  assert.deepEqual(dueWords(cards, 13, 100), []);
-  assert.deepEqual(dueWords(cards, 24, 100), ["der Hafen"]);
-  assert.deepEqual(dueWords(cards, 11, 101), ["der Hafen"]);
+  assert.deepEqual(dueWords(cards, 11, 100, SCENE_INTERVALS), []);
+  assert.deepEqual(dueWords(cards, 12, 100, SCENE_INTERVALS), ["der Hafen"]);
+  assert.deepEqual(dueWords(cards, 11, 101, SCENE_INTERVALS), ["der Hafen"]);
 });
 test("a known word is not reset by meeting it again, a mistake resets it", () => {
   const start = grade(
@@ -42,19 +43,23 @@ test("a known word is not reset by meeting it again, a mistake resets it", () =>
     [],
     2,
     2,
+    SCENE_INTERVALS,
   );
   assert.equal(start["der Hafen"].box, 1);
   assert.equal(remember(start, ["der Hafen"], 3, 3)["der Hafen"].box, 1);
+});
+test("classic: a slip resets a known word", () => {
+  const start = grade(remember({}, ["der Hafen"], 1, 1), ["der Hafen"], [], 2, 2);
   assert.equal(slip(start, "der Hafen", 3, 3)["der Hafen"].box, 0);
 });
 test("a right answer moves a word up, a mistake sends it back, the top box holds", () => {
   let cards = remember({}, ["a", "b"], 0, 0);
-  cards = grade(cards, ["a", "b"], ["b"], 1, 1);
+  cards = grade(cards, ["a", "b"], ["b"], 1, 1, SCENE_INTERVALS);
   assert.equal(cards.a.box, 1);
   assert.equal(cards.b.box, 0);
-  for (let i = 0; i < 20; i++) cards = grade(cards, ["a"], [], i, i);
+  for (let i = 0; i < 20; i++) cards = grade(cards, ["a"], [], i, i, SCENE_INTERVALS);
   assert.equal(cards.a.box, 5);
-  assert.deepEqual(Object.keys(grade(cards, ["a"], [], 1, 1)).sort(), [
+  assert.deepEqual(Object.keys(grade(cards, ["a"], [], 1, 1, SCENE_INTERVALS)).sort(), [
     "a",
     "b",
   ]);
@@ -64,11 +69,11 @@ test("strong words wait longer, and the most overdue word comes first", () => {
     fresh: { box: 0, step: 0, day: 0 },
     strong: { box: 3, step: 0, day: 0 },
   };
-  assert.deepEqual(dueWords(cards, 500, 0), ["fresh"]);
-  assert.deepEqual(dueWords(cards, 0, 7), ["fresh"]);
-  assert.deepEqual(dueWords(cards, 0, 8), ["fresh", "strong"]);
+  assert.deepEqual(dueWords(cards, 500, 0, SCENE_INTERVALS), ["fresh"]);
+  assert.deepEqual(dueWords(cards, 0, 7, SCENE_INTERVALS), ["fresh"]);
+  assert.deepEqual(dueWords(cards, 0, 8, SCENE_INTERVALS), ["fresh", "strong"]);
 });
-test("every round is a playable game whatever the words", () => {
+test("classic: every round is a playable game whatever the words", () => {
   for (const box of [0, 1, 2, 3, 4, 5])
     for (let extra = 0; extra < 40; extra++) {
       const cards = shelf(box);
@@ -94,7 +99,7 @@ test("every round is a playable game whatever the words", () => {
           assert.ok(!/[–…]/.test(f.answers[0]), f.label);
     }
 });
-test("a round stops short of four words, and difficulty rises with the box", () => {
+test("classic: a round stops short of four words, and difficulty rises with the box", () => {
   const few = Object.fromEntries(
     all.slice(0, 3).map((word) => [word, { box: 0, step: 0, day: 0 }]),
   );
@@ -112,7 +117,7 @@ test("a round stops short of four words, and difficulty rises with the box", () 
   assert.ok(seen(3).has("write"));
   assert.ok(!seen(3).has("bingo"));
 });
-test("a typed round accepts a synonym, because the Russian label cannot tell them apart", () => {
+test("classic: a typed round accepts a synonym, because the Russian label cannot tell them apart", () => {
   const cards = Object.fromEntries(
     ["Hallo!", "die Küche", "der Tisch", "gestern", "heute", "der Bus"].map(
       (word) => [word, { box: 3, step: 0, day: 0 }],
@@ -123,7 +128,7 @@ test("a typed round accepts a synonym, because the Russian label cannot tell the
   const field = c.fields.find((f) => f.answers[0] === "Hallo!");
   assert.ok(field.answers.includes("Moin!"));
 });
-test("rounds arrive every few steps and on a new day, not on every step", () => {
+test("classic: rounds arrive every few steps and on a new day, not on every step", () => {
   const last = { step: 10, day: 5 };
   assert.equal(timeForRound(last, 13, 5), false);
   assert.equal(timeForRound(last, 14, 5), true);
@@ -136,7 +141,7 @@ test("a local day changes at midnight", () => {
   assert.equal(dayNumber(night), dayNumber(evening) + 1);
   assert.equal(dayNumber(morning), dayNumber(night));
 });
-test("malformed memory in a save is dropped, good cards stay", () => {
+test("classic: malformed memory in a save is dropped, good cards stay", () => {
   const good = { box: 2, step: 5, day: 7 };
   const save = normalizeSave(
     {
@@ -150,7 +155,7 @@ test("malformed memory in a save is dropped, good cards stay", () => {
   assert.deepEqual(normalizeSave({ last: good }, beats).last, good);
   assert.deepEqual(normalizeSave(null, beats).cards, {});
 });
-test("the stats tell met, returned and firm words apart", () => {
+test("classic: the stats tell met, returned and firm words apart", () => {
   assert.deepEqual(
     memoryStats({
       a: { box: 0, step: 0, day: 0 },
@@ -168,7 +173,7 @@ test("the stats tell met, returned and firm words apart", () => {
     { met: 1, returned: 1, firm: 0, phrases: 1 },
   );
 });
-test("lock phrases keep their rule and never collide with dictionary words", () => {
+test("classic: lock phrases keep their rule and never collide with dictionary words", () => {
   assert.equal(Object.keys(locks).length, 36);
   for (const [card, { round, rules }] of Object.entries(locks)) {
     assert.equal(card, lockCard(round));
@@ -181,7 +186,7 @@ test("lock phrases keep their rule and never collide with dictionary words", () 
     step.challenge.rounds.map(lockCard),
   );
 });
-test("phrases join a round when their turn comes, words are not pushed out", () => {
+test("classic: phrases join a round when their turn comes, words are not pushed out", () => {
   const phrase = (card, step) => [card, { box: 0, step, day: 0 }];
   const keys = Object.keys(locks);
   const old = Object.fromEntries(keys.slice(0, 3).map((k) => phrase(k, 0)));
@@ -259,10 +264,10 @@ function playthrough({ pace, slipRate, days = 0 }) {
     reviewed: all.filter((word) => returns[word]).length,
   };
 }
-test("every lesson word enters the memory", () => {
+test("classic: every lesson word enters the memory", () => {
   assert.equal(playthrough({ pace: 20, slipRate: 0 }).entered, all.length);
 });
-test("most words come back in a later chapter, whatever the pace", () => {
+test("classic: most words come back in a later chapter, whatever the pace", () => {
   for (const pace of [20, 40, 168]) {
     const { later, storyRounds } = playthrough({ pace, slipRate: 0.15 });
     assert.ok(later >= all.length * 0.7, `${pace}: ${later} of ${all.length}`);
@@ -272,7 +277,7 @@ test("most words come back in a later chapter, whatever the pace", () => {
   assert.ok(usual.later >= all.length * 0.75, `${usual.later}`);
   assert.ok(usual.phrasesInStory >= 20, `${usual.phrasesInStory}`);
 });
-test("two weeks of warm-ups after the finale reach every word", () => {
+test("classic: two weeks of warm-ups after the finale reach every word", () => {
   const { reviewed, phrases: back } = playthrough({
     pace: 20,
     slipRate: 0.15,

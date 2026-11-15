@@ -2,8 +2,12 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
 import { scramble, shuffle } from "../src/lib/shuffle.ts";
-import { beats } from "../src/story/data.ts";
 import { judge, nearMisses, orderAccepted } from "../src/trainer/logic.ts";
+import { sceneChapters } from "../src/story/scenes/index.ts";
+import { answerSlots, arrange, nodeAt, sceneKeys } from "../src/story/scene.ts";
+
+// Только классическая версия: позиции вариантов в её шагах.
+import { beats } from "../src/story/data.ts";
 
 const read = (path) =>
   JSON.parse(
@@ -56,6 +60,22 @@ test("верный вариант нельзя угадать по позици�
       `${level} дела`,
     );
   }
+  const positions = [];
+  for (const beat of sceneChapters.flatMap((c) => c.beats)) {
+    const nodes = beat.challenge.nodes;
+    const slots = answerSlots(nodes, beat.id);
+    for (const key of sceneKeys(nodes)) {
+      const n = nodeAt(nodes, key);
+      if (!["reply", "pick", "gap", "hear"].includes(n.t)) continue;
+      const options = n.t === "gap" || n.t === "hear" ? n.options.map((text) => ({ text, ok: text === n.answer })) : n.options;
+      if (options.length !== 3 || options.filter((o) => o.ok).length !== 1) continue;
+      positions.push(arrange(options, `${beat.id}-${key}`, slots.get(key)).findIndex((o) => o.ok));
+    }
+  }
+  assertEven(positions, "Moin в сценах");
+});
+
+test("classic: верный вариант Moin нельзя угадать по позиции на экране", () => {
   const story = beats.filter((beat) => beat.challenge.kind === "choice");
   assertEven(
     story.map((beat) =>
