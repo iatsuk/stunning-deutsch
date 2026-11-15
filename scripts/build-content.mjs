@@ -34,7 +34,6 @@ const ONLY = onlyIndex > 0 ? process.argv[onlyIndex + 1] : null;
 if (ONLY && !CHECK) throw new Error("--only работает только вместе с --check");
 const DRAFT = process.argv.includes("--draft");
 /** Фразы без готовой записи в черновой сборке. */
-let missingAudio = 0;
 
 /** Логические голоса из YAML; модель и образцы зафиксированы в конфигурации. */
 const audioConfig = JSON.parse(readFileSync(path.join(root, "scripts/tts/config.json"), "utf8"));
@@ -210,19 +209,18 @@ if (!ONLY) {
 
 // Скрытый уровень (status: soon) без озвучки: его записи были Qwen, а уровень переозвучат, когда
 // переработают в формат истории. В учёт, манифест и импорт идут только записи открытых страниц и игры.
+const AUDIO_SRC = /^audio\/[0-9a-f]{12}\.m4a$/;
+const pages = [topics, assessments, storyAudio, a1Words, storyRules];
 const hiddenLevels = new Set(catalog.levels.filter((level) => level.status !== "open").map((level) => level.id));
-const unvoice = (node) => {
-  if (Array.isArray(node)) node.forEach(unvoice);
-  else if (node && typeof node === "object") {
-    delete node.audio;
-    Object.values(node).forEach(unvoice);
-  }
-};
-for (const item of [...topics, ...assessments]) if (hiddenLevels.has(item.level)) unvoice(item);
-const voiced = new Set(
-  (JSON.stringify([topics, assessments, storyAudio, a1Words, storyRules]).match(/audio\/[0-9a-f]{12}\.m4a/g) ?? []).map((src) => src.slice("audio/".length)),
+dropAudio(
+  [...topics, ...assessments].filter((item) => hiddenLevels.has(item.level)),
+  (src) => AUDIO_SRC.test(src),
 );
+const voiced = new Set((JSON.stringify(pages).match(/audio\/[0-9a-f]{12}\.m4a/g) ?? []).map((src) => src.slice("audio/".length)));
 for (const file of [...audio.keys()]) if (!voiced.has(file)) audio.delete(file);
+// Черновик: у фраз без записи нет кнопки озвучки, а записи остаются в учёте и манифесте.
+const draftMissing = DRAFT ? new Set([...audio.keys()].filter((file) => !existsSync(path.join(audioDir, file)))) : new Set();
+dropAudio(pages, (src) => draftMissing.has(src.slice("audio/".length)));
 
 for (const message of warnings) console.warn(`  ! ${message}`);
 if (errors.length) {
@@ -273,7 +271,7 @@ for (const assessment of assessments) writeJson(path.join(generatedDir, "assessm
 // Индекс покрытия A1 читает уже записанные темы, поэтому собирается последним (A1-PLAN.md).
 console.log((await import("./a1-index.mjs")).writeIndex());
 if (DRAFT) {
-  console.log(`${summary}; ЧЕРНОВИК: ${missingAudio} фраз без записи (кнопки озвучки у них скрыты). Не коммитьте эту сборку.`);
+  console.log(`${summary}; ЧЕРНОВИК: ${draftMissing.size} фраз без записи (кнопки озвучки у них скрыты). Не коммитьте эту сборку.`);
 } else {
   pruneAudio();
   console.log(`${summary}; фраз в озвучке — ${audio.size}, новых — ${synthesized} → public/audio`);
@@ -1047,6 +1045,18 @@ function german(text, where) {
   if (match) fail(where, `кириллица «${match[0]}» в немецком тексте «${text.slice(0, 50)}»`);
 }
 
+/** Убирает из данных страниц ссылки на записи, для которых drop(src) истинно; в списке остаётся пустое место. */
+function dropAudio(node, drop) {
+  if (Array.isArray(node)) {
+    node.forEach((item, i) => (typeof item === "string" && drop(item) ? (node[i] = undefined) : dropAudio(item, drop)));
+  } else if (node && typeof node === "object") {
+    for (const [key, value] of Object.entries(node)) {
+      if (typeof value === "string" && drop(value)) delete node[key];
+      else dropAudio(value, drop);
+    }
+  }
+}
+
 function plain(text) {
   return String(text).replace(/[*+]/g, "").replace(/\s+/g, " ").trim();
 }
@@ -1067,10 +1077,6 @@ function speak(text, voice = DEFAULT_VOICE) {
     revision: audioConfig.revision,
     ...(speed ? { speed } : {}),
   });
-  if (DRAFT && !existsSync(path.join(audioDir, file))) {
-    missingAudio += 1;
-    return undefined;
-  }
   return `audio/${file}`;
 }
 
