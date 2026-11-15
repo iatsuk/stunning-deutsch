@@ -33,7 +33,7 @@ const no = (text: string, react: string) => ({ text, react });
 // Сцена 1 · пролог и завязка. Бросок: глобальное событие сдвигается · Йенсен · найти · der Döner · 6.
 const stands: SceneNode[] = [
   { t: "pic", src: "04-stands.jpg", alt: "Утро на Kiellinie: рабочие ставят первые палатки Kieler Woche, жёлтый фургон с донерами у пустой подставки; Йенсен с кружкой показывает рукой вдоль набережной, Матео разливает кофе из термоса" },
-  narr("Четвёртый день, noch neun Tage. За ночь Kiellinie не узнать: у воды встал первый {stand} Kieler Woche, за ним ещё пять."),
+  narr("Der {vierte} Tag, noch neun Tage. За ночь Kiellinie не узнать: у воды встал первый {stand} Kieler Woche, за ним ещё пять."),
   hauke("Noch neun Tage! Und hier ist schon Kieler Woche!", "Ещё девять дней! А здесь уже Kieler Woche!"),
   {
     t: "look",
@@ -60,6 +60,7 @@ const stands: SceneNode[] = [
   mateo("Tee? Nein. Kaffee? Ja.", "Чай? Нет. Кофе? Да.", ["der Tee"]),
   narr("Это не вопрос. Это предложение, от которого нельзя отказаться. Хауке пьёт уже zwei Tassen Kaffee и подмигивает."),
   narr("Kaffee у Матео чёрный и {bitter}, как его шутки про чаек."),
+  narr("Матео уверен: {besten} Kaffee в Киле варит он."),
   {
     t: "game",
     rule: ["essen/akkusativ-3"],
@@ -98,7 +99,7 @@ const stands: SceneNode[] = [
     answer: "Табличка — здесь, донер — там",
   },
   narr("Дерья не спорит: у фонаря есть розетка. Через пять минут на фургоне висит Speisekarte: Döner, Fischbrötchen, Cola, Salat."),
-  narr("Ниже мелко: {haehnchen}, {reis}, {schinken}. И отдельная графа — {getraenk}: Cola, Wasser, Tee."),
+  narr("Ниже мелко: {haehnchen}, {reis}, {schinken}, {pommes}. И отдельная графа — {getraenk}: Cola, Wasser, Tee."),
   {
     t: "game",
     task: "Послушайте слово из меню Дерьи и нажмите на картинку.",
@@ -216,6 +217,7 @@ const table: SceneNode[] = [
   },
   narr("Kellner несёт {tablett}: drei Kaffee, ein Tee, zwei Stück Kuchen — и zwei Fischbrötchen к соседнему столику."),
   kellner("Möchten Sie noch etwas bestellen? Ein Getränk? Ein Fischbrötchen?", "Хотите заказать что-нибудь ещё? Напиток? Булочку с рыбой?", ["bestellen"]),
+  narr("Kellner обожает {anbieten}: ещё Kaffee, ещё Kuchen, ещё Fischbrötchen."),
   {
     t: "game",
     task: "Kellner расставляет заказ. Что в чём подают?",
@@ -382,7 +384,7 @@ const witnesses: SceneNode[] = [
       no("Нильса", "Нильс пьёт кофе и пишет семью восклицательными знаками."),
     ],
   },
-  hauke("Tee und kein Wort … Das kenne ich. Aber woher?", "Чай и ни слова… Знакомо. Но откуда?"),
+  hauke("Tee und kein Wort … Das kenne ich. Aber woher?", "Чай и ни слова… Знакомо. Но откуда?", ["kennen"]),
   { t: "type", task: "Запишите приметы мужчины со столика четыре.", answers: ["Er ist groß. Er trinkt Tee.", "Der Mann ist groß und trinkt Tee.", "Er ist groß und trinkt Tee.", "Der Mann ist groß. Er trinkt Tee."], ru: "Он высокий. Он пьёт чай." },
   { t: "game", task: "Разложите напитки дня по ящикам Йенсена: der, die, das.", hint: HINT_DOCK, c: docks(["der Kaffee", "der Tee", "die Cola", "die Milch", "das Wasser", "das Bier", "der Saft", "der Wein"]) },
   {
@@ -396,6 +398,7 @@ const witnesses: SceneNode[] = [
 const kitchen: SceneNode[] = [
   { t: "pic", src: "04-kitchen.jpg", alt: "Кухня клуба: Матео в белом фартуке над огромной миской, на столе бланк заказа с круглым коричневым следом, у задней двери бумажный пакет с овощами" },
   narr("Тем временем in der Küche. Матео печёт пробный Kuchen: заказ «für hundert» без пробы — не заказ, а авантюра."),
+  narr("Рецепт Oma Hansen строгий: Butter — много, Zucker — {wenig}."),
   mateo("Drei Eier, zwei Tassen Milch … und Butter. Viel Butter!", "Три яйца, две чашки молока… и масло. Много масла!", ["das Ei", "die Tasse"]),
   {
     t: "game",
@@ -478,6 +481,7 @@ const napkin: SceneNode[] = [
     c: pairs([["Hauke", "einen Kaffee und ein Stück Kuchen"], ["Dana", "einen Kaffee"], ["Sie", "einen Tee und ein Stück Kuchen"], ["Greta", "eine Cola"]]),
   },
   { t: "type", task: "Запишите в блокнот, что заказала Грета.", answers: ["Greta bestellt eine Cola.", "Sie bestellt eine Cola.", "Greta bestellt Cola."], ru: "Грета заказывает колу." },
+  hauke("Zahlen, bitte!", "Счёт, пожалуйста!", ["zahlen"]),
   kellner("Zusammen oder getrennt?", "Вместе или раздельно?", ["Zusammen oder getrennt?"]),
   {
     t: "reply",
@@ -579,6 +583,7 @@ const tea: SceneNode[] = [
     ]),
   },
   narr("Wer trinkt im Club immer Tee? Ответ записан в блокноте с первого дня. Хауке его видит — и не хочет видеть."),
+  narr("Kaffee в клубе пьёт Хауке — {meisten}. А Tee — только один человек."),
   hauke("Herr Jensen trinkt nur Tee. Aber Herr Jensen geht nie ins Café. Nie!", "Господин Йенсен пьёт только чай. Но господин Йенсен никогда не ходит в кафе. Никогда!"),
   {
     t: "pick",
@@ -691,9 +696,10 @@ const evening: SceneNode[] = [
   { t: "pic", src: "04-evening.jpg", alt: "Вечер у ларька с донерами: Хауке, Дана и Элиф ужинают за высоким столиком, на крыше фургона сидит чайка с кольцом; вдали у пустой подставки стоит Йенсен с кружкой" },
   narr("Abendessen сегодня у фургона Дерьи: она открылась первой на всей Kiellinie. Хауке заказывает für alle — это опаснее, чем Матео."),
   derya("Moin! Was möchtet ihr essen und trinken?", "Привет! Что вы хотели бы поесть и попить?"),
-  hauke("Drei Döner und drei Cola!", "Три донера и три колы!"),
+    hauke("Drei Döner und drei Cola!", "Три донера и три колы!"),
   dana("Hauke! Ich esse kein Fleisch.", "Хауке! Я не ем мяса.", ["das Fleisch"]),
   { t: "gap", rule: ["essen/negation-2"], task: "Что говорит Дана?", text: "Ich esse ___ Fleisch.", options: ["kein", "keinen", "nicht"], answer: "kein", ru: "Я не ем мяса." },
+  hauke("Ich habe Durst! Noch eine Cola, bitte!", "Я хочу пить! Ещё одну колу, пожалуйста!", ["Durst haben"]),
   elif("Und ich trinke keine Cola. Einen Saft, bitte!", "А я не пью колу. Сок, пожалуйста!"),
   {
     t: "hear",

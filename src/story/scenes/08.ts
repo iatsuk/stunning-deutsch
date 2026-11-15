@@ -98,7 +98,7 @@ const morning: SceneNode[] = [
     ],
   },
   narr("Frau Petersen kommt: großer Schlüssel, eine Packung Kekse — и сияет, как на Geburtstag."),
-  petersen("Zwanzig Jahre ist der Keller zu! Heute machen wir ihn auf. Das feiern wir!", "Двадцать лет подвал закрыт! Сегодня мы его открываем. Это надо отпраздновать!", ["der Keller"]),
+  petersen("Zwanzig Jahre ist der Keller zu! Heute machen wir ihn auf. Das feiern wir!", "Двадцать лет подвал закрыт! Сегодня мы его открываем. Это надо отпраздновать!", ["der Keller", "feiern"]),
   petersen("Aber zuerst das Formular. Ohne Formular kein Keller!", "Но сначала формуляр. Без формуляра — никакого подвала!"),
   petersen("Und möchten Sie einen Keks? Ich mag Kekse!", "А хотите печенье? Я люблю печенье!"),
   {
@@ -166,6 +166,7 @@ const lager: SceneNode[] = [
   hauke("Herr Jensen? Hallo? … Niemand da.", "Господин Йенсен? Алло? … Никого."),
   { t: "game", task: "Дана светит телефоном по углам. Послушайте слово и нажмите на картинку.", hint: HINT_PICTURE, c: scene([["der Stuhl", "🪑"], ["das Sofa", "🛋️"], ["das Bett", "🛏️"], ["die Lampe", "💡"], ["der Kühlschrank", "🧊"], ["der Herd", "🍳"], ["der Kleiderschrank", "🚪"], ["der Schreibtisch", "🖥️"]]) },
   narr("Стол стоит ровно посередине — это {mitte} подвала. Шкаф — {daneben}: {hoch}, почти до потолка, и {breit}, как ворота."),
+  narr("А {zwischen} Tisch und Schrank — Segel, свёрнутые, как спальные мешки."),
   narr("Am Fenster, в стекле дыра. И тут — {lager}: на столе, в шкафу, в ящике. Всё, что die Möwe унесла за неделю."),
   {
     t: "look",
@@ -294,7 +295,7 @@ const kiosk: SceneNode[] = [
   },
   narr("8:30. Greta kommt aus dem Haus — mit Herrn Jensen. На шее у него — {schal}, хотя на дворе июнь."),
   narr("Йенсен открывает рот — и ничего. Nicht einmal «Moin». Greta und Herr Jensen — {bus}. Weg."),
-  frauke(ENTFUEHRUNG, "Господин Йенсен даже «Moin» не сказал! А Грета его уводит! Это похищение!"),
+  frauke(ENTFUEHRUNG, "Господин Йенсен даже «Moin» не сказал! А Грета его уводит! Это похищение!", ["mitnehmen"]),
   {
     t: "hear",
     task: "Что думает Фрауке?",
@@ -400,7 +401,8 @@ const stairs: SceneNode[] = [
             hint: "KM — Kaltmiete, NK — Nebenkosten, WM — Warmmiete: всё вместе.",
             c: spot("Anzeige · 2. Stock", ["2-Zi.-Whg.|Blk.|ruhig", "KM 520 €|NK 130 €|WM 650 €", "frei ab sofort|Tel. Wulff"], ["WM 650 €"]),
           },
-          elif("650 Euro warm? … Nein, danke. Ich bleibe im Wohnheim. Das ist kleiner, aber billiger als die Wohnung!", "650 евро с отоплением? … Нет, спасибо. Я остаюсь в общежитии. Оно меньше, зато дешевле квартиры!"),
+          elif("Und hier: Nebenkosten, hundertdreißig Euro!", "А вот: коммунальные расходы, сто тридцать евро!", ["die Nebenkosten"]),
+          elif("650 Euro warm? … Nein, danke. Ich bleibe im Wohnheim. Das ist kleiner, aber billiger als die Wohnung!", "650 евро с отоплением? … Нет, спасибо. Я остаюсь в общежитии. Оно меньше, зато дешевле квартиры!", ["warm"]),
           { t: "gap", rule: ["wohnen/komposita-1"], task: "Что стоит 650 евро?", text: "Die ___ ist 650 Euro: Miete und Nebenkosten.", options: ["Warmmiete", "Kaltmiete", "Nebenkosten"], answer: "Warmmiete", ru: "Тёплая аренда — 650 евро: аренда и коммунальные." },
           {
             t: "look",
@@ -411,6 +413,8 @@ const stairs: SceneNode[] = [
               { icon: "🪑", de: "möbliert", ru: "с мебелью", note: "«möbl.» — кровать, стол и шкаф уже стоят." },
               { icon: "✨", de: "modern", ru: "современный", note: "«mod. Küche» — кухня новая, остальное старое." },
               { icon: "🔥", de: "die Heizung", ru: "отопление", note: "«Hzg. inkl.» — отопление уже в Warmmiete." },
+              { icon: "🧭", de: "der Osten", ru: "восток", note: "«Blk. Ost» — балкон на восток: солнце по утрам." },
+              { icon: "🌊", de: "der Blick", ru: "вид из окна", note: "«Blick auf den Hafen» — окна на гавань. За этот вид Вульф и берёт 650." },
             ],
           },
           narr("Сам Вульф называет квартиру иначе: {apartment}. Так звучит дороже."),
@@ -495,6 +499,7 @@ const stairs: SceneNode[] = [
 const empty: SceneNode[] = [
   { t: "pic", src: "08-karton.jpg", alt: "Подвал Йенсена: на старом столе большая плоская коробка, в поролоне вырезан контур букв MOIN — пусто; Хауке схватился за голову, Дана светит фонариком, Элиф держит карточку с адресом" },
   narr("Der Schlüssel passt. Im Keller von Herrn Jensen ist es hell — и очень аккуратно: ein Tisch, ein Stuhl, ein Schrank, Segel im Regal."),
+  elif("Das Licht ist an! Herr Jensen ist nicht weit.", "Свет горит! Господин Йенсен где-то рядом.", ["an sein"]),
   narr("Auf dem Tisch — {karton}, groß und flach. Внутри поролон, а в поролоне — {umriss}: M, O, I, N."),
   narr("Больше в нём ничего нет. {leer}"),
   {
@@ -562,7 +567,7 @@ const empty: SceneNode[] = [
     c: order(["Bitte", "rufen", "Sie", "morgen", "an."], ["an.", "morgen", "Bitte", "Sie", "rufen"]),
   },
   dana("Die Werkstatt ist zu. Und Herr Jensen ist weg. Das ist kein Zufall.", "Мастерская закрыта. И Йенсена нет. Это не случайность."),
-  elif("Heute geschlossen – das steht an der Tür. Wir müssen morgen wiederkommen.", "«Сегодня закрыто» — написано на двери. Придётся прийти завтра."),
+  elif("Heute geschlossen – das steht an der Tür. Wir müssen morgen wiederkommen.", "«Сегодня закрыто» — написано на двери. Придётся прийти завтра.", ["geschlossen"]),
   { t: "gap", rule: ["moin/geoeffnet-1"], task: "Что написано на двери мастерской?", text: "Heute ___.", options: ["geschlossen", "schließen", "geschließt"], answer: "geschlossen", ru: "Сегодня закрыто." },
   {
     t: "pick",

@@ -161,8 +161,8 @@ const message: SceneNode[] = [
 // der Vormittag · 9 — Фрауке обещает присматривать за клубом до обеда и даёт кассовую книгу.
 const book: SceneNode[] = [
   { t: "pic", src: "06-kiosk.jpg", alt: "Утро у киоска Фрауке: Фрауке протягивает толстую кассовую книгу, Дана и Хауке листают её; на столике кружки, рядом на столбе часы" },
-  narr("Vormittag am Kiosk. Фрауке уже всё знает: в Киле новости летают быстрее, чем Möwen."),
-  frauke("Neun Wörter? Von Herrn Jensen? Das glaube ich nicht!", "Девять слов? От господина Йенсена? Не верю!"),
+  narr("Vormittag am {kiosk}. Фрауке уже всё знает: в Киле новости летают быстрее, чем Möwen."),
+  frauke("Neun Wörter? Von Herrn Jensen? Das glaube ich nicht!", "Девять слов? От господина Йенсена? Не верю!", ["glauben"]),
   frauke("Hier, mein Kassenbuch. Jeden Tag, jede Stunde!", "Вот моя кассовая книга. Каждый день, каждый час!", ["die Stunde"]),
   {
     t: "hear",
@@ -172,6 +172,7 @@ const book: SceneNode[] = [
     options: ["каждый день, каждый час", "только воскресенья", "только ночи"],
     answer: "каждый день, каждый час",
   },
+  narr("Для Фрауке каждый в Киле — {bekannte}. А самый {bekannt} человек гавани — Йенсен: молчит громче всех."),
   {
     t: "reply",
     rule: ["tagesablauf/wann-1"],
@@ -209,6 +210,7 @@ const book: SceneNode[] = [
     else: [narr("Минуты в {kassenbuch} смазаны: «17:3… Frau … Tasche … Bus». Фрауке писала второпях. Но около 17:35 — точно.")],
   },
   narr("Сумка большая и {flach} — как раз по размеру таблички."),
+  narr("Время в книге — {gegen} halb sechs. Как раз Tee у Йенсена."),
   {
     t: "type",
     rule: ["tagesablauf/wann-1"],
@@ -258,6 +260,7 @@ const book: SceneNode[] = [
   narr("Дальше — {juli}, {august}, {september}, {oktober}, {november}, {dezember}. Фрауке пишет каждый день, даже зимой."),
   { t: "game", task: "Фрауке называет месяц — найдите закладку и закройте её на карточке.", hint: HINT_HEAR, c: bingo(["der Januar", "der Februar", "der März", "der April", "der Mai", "der Juni", "der Juli", "der September", "der Dezember"]) },
   narr("На каждой странице сверху — {wochentag}. Красным — {feiertag}: тогда киоск закрыт."),
+  frauke("Am Freitag habe ich hier immer viel Arbeit!", "По пятницам у меня тут всегда много работы!", ["der Freitag"]),
   { t: "game", task: "Фрауке раскладывает части дня по ящикам: der, die, das.", hint: HINT_DOCK, c: docks(["der Morgen", "der Mittag", "der Abend", "die Nacht", "die Woche", "das Wochenende", "die Stunde", "das Viertel"]) },
   {
     t: "game",
@@ -544,6 +547,7 @@ const tea: SceneNode[] = [
   },
   jensen("Halb sechs. Wie immer.", "В половине шестого. Как всегда."),
   { t: "gap", rule: ["tagesablauf/klammer-1"], task: "Что ответил Йенсен? Допишите фразу полностью.", text: "Der Tee fängt um halb sechs ___.", options: ["an", "auf", "zu"], answer: "an", ru: "Чай начинается в половине шестого." },
+  hauke("Der Tee fängt um halb sechs an. Wie immer!", "Чай начинается в половине шестого. Как всегда!", ["anfangen"]),
   narr("Чай у Йенсена — как служба: {anfang} в 17:30, {schluss} в 18:00. Для этого есть два глагола: {beginnen} и {enden}."),
   narr("Wie immer. Но в воскресенье Йенсен зовёт ВСЕХ — сам, тремя словами. Und der Aufsteller ist allein."),
   dana("Er ruft alle zum Tee. Und vorne ist niemand. Er weiß das!", "Он зовёт всех на чай. А впереди никого. Он это знает!"),
@@ -590,6 +594,7 @@ const tea: SceneNode[] = [
 const timeline: SceneNode[] = [
   { t: "pic", src: "06-board.jpg", alt: "Вечер в клубе: на доске линия времени с карточками 17:05, 17:30, 17:35, 18:00; Дана пишет мелом, Хауке показывает на часы клуба, Элиф с блокнотом" },
   narr("Abend im Club. Дана чертит на доске линию: Samstag und Sonntag, von fünf bis sechs. По воскресеньям лавки закрыты — значит, чек субботний."),
+  narr("До Kieler Woche — одна неделя: {naechste} Samstag."),
   dana("Am Samstag um fünf nach fünf kauft der Moin-Mann Farbe. Am Sonntag ist der Laden zu.", "В субботу в пять минут шестого Moin-Mann покупает краску. В воскресенье лавка закрыта."),
   {
     t: "game",
@@ -616,7 +621,7 @@ const timeline: SceneNode[] = [
     hint: "dann занимает первое место: глагол идёт сразу за ним, подлежащее — после.",
     c: order(["Dann", "trinkt", "er", "um", "halb", "sechs", "Tee."], ["er", "Tee.", "halb", "Dann", "sechs", "trinkt", "um"]),
   },
-  hauke("Herr Jensen weiß alles. Seit Sonntag!", "Господин Йенсен всё знает. С воскресенья!"),
+  hauke("Herr Jensen weiß alles. Seit Sonntag!", "Господин Йенсен всё знает. С воскресенья!", ["seit"]),
   { t: "gap", task: "Что говорит Хауке?", text: "Herr Jensen ___ alles.", options: ["weiß", "weißt", "wissen"], answer: "weiß", ru: "Господин Йенсен всё знает." },
   {
     t: "pick",
@@ -627,7 +632,7 @@ const timeline: SceneNode[] = [
       no("Он не знает немецкого", "Девять слов в голосовом — знает. Просто бережёт."),
     ],
   },
-  elif("Wir schreiben ihm! Ein Brief – keine Fragen auf der Terrasse.", "Напишем ему! Письмо — без вопросов на террасе."),
+  elif("Wir schreiben ihm! Ein Brief – keine Fragen auf der Terrasse.", "Напишем ему! Письмо — без вопросов на террасе.", ["ihm"]),
   {
     t: "game",
     rule: ["tagesablauf/klammer-2"],
@@ -749,6 +754,7 @@ const evening: SceneNode[] = [
   },
   narr("Над дверью, на стремянке — Нильс. Он чинит die Uhr. И пишет об этом alle zwei Minuten."),
   narr("«Eins!!! Zwei!!! Die Uhr geht!!! Es ist acht Uhr!!! Acht!!!»"),
+  narr("Для Нильса {reparatur} — лучший отдых. Для часов — испытание."),
   {
     t: "game",
     task: "Поставьте часы так, как их выставил Нильс.",
@@ -759,7 +765,7 @@ const evening: SceneNode[] = [
       "20:30": "Это halb neun.",
     }),
   },
-  hauke("Nils repariert die Uhr am Abend. Und morgen früh ist sie wieder kaputt!", "Нильс чинит часы вечером. А завтра утром они опять сломаются!", ["der Abend", "früh"]),
+  hauke("Nils repariert die Uhr am Abend. Und morgen früh ist sie wieder kaputt!", "Нильс чинит часы вечером. А завтра утром они опять сломаются!", ["der Abend", "früh", "reparieren"]),
   elif("Zwölf Nachrichten für eine Uhr! Das ist Nils.", "Двенадцать сообщений про одни часы! Это Нильс."),
   narr("Хауке промок до нитки. Ему нужны три вещи: {dusche}, сухие носки и сон. Он {muede}."),
   hauke("Ich bin müde. Morgen stehe ich um sieben auf, ich dusche, ich frühstücke – und dann Kaffee!", "Я устал. Завтра встаю в семь, принимаю душ, завтракаю — а потом кофе!", ["duschen", "frühstücken"]),

@@ -150,6 +150,7 @@ const queue: SceneNode[] = [
   },
   dana("Moin! Ich habe Brot. Und ich habe die Nummer dreiundzwanzig.", "Привет! У меня хлеб. И у меня номерок двадцать три.", ["das Brot"]),
   narr("Дана шла в пекарню, а пришла сюда: в Киле все домики белые. Автомат дал номерок, и она взяла. Врачи с автоматами не спорят."),
+  narr("Пекарня — {andere} белый домик, через два причала. Дана решает: потом."),
   { t: "gap", rule: ["zahlen/haben-1"], task: "Что есть у Даны?", text: "Dana ___ Brot und die Nummer dreiundzwanzig.", options: ["hat", "habe", "hast"], answer: "hat", ru: "У Даны есть хлеб и номерок двадцать три." },
   narr("По дороге Дана заблудилась в коридоре, где {gaestezimmer}. За одной дверью кто-то храпел, на ручке висела красная куртка."),
   dana("Da ist ein Schild: Wir haben Pause! Und die Nummer … zwölf? Oder zwanzig?", "Там табличка: «У нас перерыв!» А номер… двенадцать? Или двадцать?"),
@@ -175,6 +176,7 @@ const queue: SceneNode[] = [
     answer: "Дану: у неё 23",
   },
   narr("В немецком сначала звучат единицы: drei-und-zwanzig — «три-и-двадцать». Ваш номер — zweiunddreißig."),
+  narr("Хауке уверяет: это {leicht}. И тут же сам читает 32 как dreiundzwanzig."),
   narr("Дане в офисе делать нечего: ей нужна пекарня. Она протягивает вам свой номерок и забирает ваш."),
   dana("Bitte! Ich habe Zeit.", "Пожалуйста! У меня есть время."),
   {
@@ -379,6 +381,7 @@ const guestbook: SceneNode[] = [
     voice: "Eddy",
     de: "Hallo! Hier ist Nils, Nils Hansen aus Hamburg! Ich habe jetzt Pause. Bitte Ihre Nummer und Ihre Frage! Tschüss! Nein: Auf Wiederhören!",
     ru: "Привет! Это Нильс, Нильс Хансен из Гамбурга! У меня сейчас перерыв. Пожалуйста, ваш номер и ваш вопрос! Пока! Нет: до свидания!",
+    learn: ["Auf Wiederhören!"],
   },
   narr("Это не Нильс, а {anrufbeantworter}. Настоящий {anruf} будет потом: Нильс любит {telefonieren}, но только после перерыва."),
   {

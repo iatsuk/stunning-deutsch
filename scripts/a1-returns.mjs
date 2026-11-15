@@ -10,7 +10,7 @@ import { fileURLToPath } from "node:url";
 import { phrases } from "../src/story/data.ts";
 import { sceneUnits } from "../src/story/review.ts";
 import { sceneChapters } from "../src/story/scenes/index.ts";
-import { BASELINE, buildIndex, found, THRESHOLD } from "./a1-index.mjs";
+import { A2_FROM, BASELINE, buildIndex, found, THRESHOLD } from "./a1-index.mjs";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
 const OUT = path.join(root, "src/story/scenes/warmups.ts");
@@ -65,10 +65,12 @@ for (const w of index.words) {
   const slots = Math.max(T.hits - w.hits, T.chapters - w.chapters.length, w.actions < T.actions || w.heard < T.heard ? 1 : 0);
   plans.push({ w, unit, met: metAt.get(unit), slots, heard: w.heard >= T.heard, chapters: new Set(w.chapters) });
 }
-// Сначала слова храповика (они уже закреплены и не должны выпасть), затем те, кому до закрепления
-// нужно меньше всего, — так закрепится больше слов.
+// Сначала слова храповика (они уже закреплены и не должны выпасть), затем пробелы A1: слова,
+// которые игрок встречает раньше главы A2_FROM, — их закрепляет только A1, а поздние слова доводит
+// сезон A2. Внутри — те, кому до закрепления нужно меньше всего: так закрепится больше слов.
 const kept = new Set(JSON.parse(readFileSync(BASELINE, "utf8")).words);
-plans.sort((a, b) => kept.has(b.w.key) - kept.has(a.w.key) || a.slots - b.slots || a.met - b.met || a.w.key.localeCompare(b.w.key, "de"));
+const late = (p) => p.met >= A2_FROM;
+plans.sort((a, b) => kept.has(b.w.key) - kept.has(a.w.key) || late(a) - late(b) || a.slots - b.slots || a.met - b.met || a.w.key.localeCompare(b.w.key, "de"));
 
 // В главе: три игры раунда перед ней и четыре блока возвращений в сценах, в каждом причалы и лото.
 // Блоки 0 и 1 стоят в сценах 3 и 6, 2 и 3 — в сценах 2 и 5; заполняются по порядку, поэтому
@@ -121,12 +123,34 @@ function place(p) {
 const unique = plans.filter((p, i) => plans.findIndex((q) => q.unit === p.unit) === i);
 const fresh = unique.map((p) => ({ chapters: new Set(p.chapters), heard: p.heard }));
 
-// Игра меньше своего минимума не собирается. Такие игры закрываем и раскладываем всё заново с начала
-// очереди, пока закрывать нечего: так слова храповика первыми занимают оставшиеся места.
+/**
+ * Недобранную игру (лото в сцене — ровно девять слов) добирают словами, которым места ещё нужны,
+ * затем остальными словами ниже порога и, наконец, любыми встреченными: лишняя встреча не вредит, а
+ * закрытая игра забирает места у всех.
+ */
+function fill(g, n) {
+  for (const p of [...unique.filter((q) => q.need > 0), ...unique.filter((q) => q.need <= 0)]) {
+    if (g.words.length >= g.min) return;
+    if (p.met >= n || p.used.has(n) || !room(g, p.unit) || !(p.heard || HEARD.has(g.mech))) continue;
+    g.words.push(p.unit);
+    p.used.add(n);
+    p.chapters.add(n);
+    p.heard ||= HEARD.has(g.mech);
+    p.need--;
+  }
+  for (const u of playable) {
+    if (g.words.length >= g.min) return;
+    if (metAt.get(u) < n && lookup(u) && room(g, u)) g.words.push(u);
+  }
+}
+
+// Игра, которую не добрать до минимума, не собирается. Такие игры закрываем и раскладываем всё заново
+// с начала очереди, пока закрывать нечего: так слова храповика первыми занимают оставшиеся места.
 for (let round = 0; round < 20; round++) {
   for (const g of Object.values(games).flat()) g.words = [];
   unique.forEach((p, i) => Object.assign(p, { need: p.slots, used: new Set(), chapters: new Set(fresh[i].chapters), heard: fresh[i].heard }));
   for (const p of unique) place(p);
+  for (const [n, list] of Object.entries(games)) for (const g of list) if (g.words.length && g.words.length < g.min) fill(g, Number(n));
   const small = Object.values(games).flat().filter((g) => !g.closed && g.words.length && g.words.length < g.min);
   if (!small.length) break;
   for (const g of small) g.closed = true;

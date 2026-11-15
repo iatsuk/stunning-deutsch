@@ -98,6 +98,8 @@ export function challengeWords(c: Challenge): string[] {
   )
     return c.words;
   if (c.kind === "speak") return c.lines;
+  // Склейка тренирует целое слово: игрок собирает его, выбирает артикль и слышит.
+  if (c.kind === "compound") return c.rounds.map((r) => r.word);
   if (c.kind === "scene") return c.items.map((i) => i.word);
   if (c.kind === "odd") return c.rounds.flatMap((r) => r.words);
   if (c.kind === "sounds") return c.rounds.flatMap((r) => r.options);

@@ -76,6 +76,7 @@ const hatschi: SceneNode[] = [
       no("Gute Nacht, Hauke!", "Сейчас утро. Больному — Gute Besserung."),
     ],
   },
+  dana("Gute Besserung, Hauke! Und viel Tee!", "Выздоравливай, Хауке! И побольше чая!", ["Gute Besserung!"]),
   narr("Хауке пытается {aussehen} бодрым, но выглядит {schlecht}. Тут и {glueck} не поможет — Дана уже несёт градусник."),
   {
     t: "type",
@@ -84,7 +85,7 @@ const hatschi: SceneNode[] = [
     answers: ["Hauke muss im Bett bleiben.", "Er muss im Bett bleiben."],
     ru: "Хауке должен лежать в постели.",
   },
-  elif("Ich habe auch Kopfschmerzen – vom Sturm. Ich habe einen Termin: heute, Viertel nach zehn, Praxis Doktor Sommer!", "У меня тоже болит голова — от шторма. У меня запись: сегодня, в четверть одиннадцатого, практика доктора Зоммера!", ["der Termin"]),
+  elif("Ich habe auch Kopfschmerzen – vom Sturm. Ich habe einen Termin: heute, Viertel nach zehn, Praxis Doktor Sommer!", "У меня тоже болит голова — от шторма. У меня запись: сегодня, в четверть одиннадцатого, практика доктора Зоммера!", ["der Termin", "der Doktor", "der Schmerz"]),
   {
     t: "hear",
     task: "На сколько записана Элиф?",
@@ -121,6 +122,7 @@ const praxis: SceneNode[] = [
   { t: "pic", src: "10-aerztehaus.jpg", alt: "Холл дома врачей: за окном гавань и краны; Дана и Элиф входят в лифт, позади на стульях двое пациентов — мужчина держится за щёку, пожилая женщина с рецептом" },
   narr("Das {aerztehaus} am Hafen: im Erdgeschoss die Apotheke, im dritten Stock — Doktor Sommer. В лифте тесно."),
   dana("Dritter Stock! Und bitte langsam – Elif hat Kopfschmerzen.", "Третий этаж! И, пожалуйста, медленно — у Элиф болит голова."),
+  narr("Кнопки в лифте старые: {druecken} приходится двумя пальцами."),
   {
     t: "game",
     rule: ["wohnen/stock-1"],
@@ -147,7 +149,7 @@ const praxis: SceneNode[] = [
       { icon: "💊", de: "die Tablette", ru: "таблетка", note: "На стойке коробка с таблетками. Не для вас — и не для чайки." },
     ],
   },
-  elif("Anmeldung – von anmelden. Wie Wohnung – von wohnen!", "Анмельдунг — от anmelden. Как Wohnung — от wohnen!"),
+  elif("Anmeldung – von anmelden. Wie Wohnung – von wohnen!", "Анмельдунг — от anmelden. Как Wohnung — от wohnen!", ["anmelden"]),
   {
     t: "pick",
     rule: ["moin/ung-1"],
@@ -169,7 +171,7 @@ const praxis: SceneNode[] = [
     options: ["записана на 10:15, болит голова, вот карточка", "записи нет, но болит голова", "пришла за рецептом"],
     answer: "записана на 10:15, болит голова, вот карточка",
   },
-  moeller("Füllen Sie bitte dieses Formular aus. Und hier darf man nicht telefonieren!", "Заполните, пожалуйста, эту анкету. И здесь нельзя говорить по телефону!"),
+  moeller("Füllen Sie bitte dieses Formular aus. Und hier darf man nicht telefonieren!", "Заполните, пожалуйста, эту анкету. И здесь нельзя говорить по телефону!", ["ausfüllen"]),
   {
     t: "game",
     task: "Фрау Мёллер заводит карточку пациентки. Заполните её по разговору.",
@@ -192,7 +194,7 @@ const praxis: SceneNode[] = [
       no("Ich darf hier warten?", "Вопрос «да или нет»: глагол первым — Darf ich …?"),
     ],
   },
-  moeller("Na gut. Im Wartezimmer. Aber leise, bitte!", "Ну ладно. В приёмной. Но тихо, пожалуйста!"),
+  moeller("Na gut. Im Wartezimmer. Aber leise, bitte!", "Ну ладно. В приёмной. Но тихо, пожалуйста!", ["leise"]),
   {
     t: "hear",
     task: "Что разрешила фрау Мёллер?",
@@ -211,6 +213,7 @@ const praxis: SceneNode[] = [
     ],
   },
   narr("На стене Wartezimmer — плакат: {zigarette}, перечёркнутая. Rauchen verboten!"),
+  narr("Фрау Мёллер умеет только запрещать, а {erlauben} не любит."),
   {
     t: "game",
     task: "На дверях практики длинные слова. Соберите каждое из частей и выберите род.",
@@ -302,7 +305,7 @@ const warten: SceneNode[] = [
               { icon: "🥾", de: "der Fuß", ru: "нога, ступня", note: "Рабочие ботинки в белых каплях краски." },
             ],
           },
-          elif("Kein Termin? Nehmen Sie meinen! Mein Kopf ist schon besser.", "Нет записи? Возьмите мою! Голова у меня уже лучше."),
+          elif("Kein Termin? Nehmen Sie meinen! Mein Kopf ist schon besser.", "Нет записи? Возьмите мою! Голова у меня уже лучше.", ["besser"]),
           {
             t: "hear",
             task: "Что предлагает Элиф?",
@@ -529,7 +532,9 @@ const apotheke: SceneNode[] = [
       { icon: "🏪", de: "die Apotheke", ru: "аптека", note: "Маленькая аптека в доме врачей. У кассы очередь." },
     ],
   },
-  elif("Die Apotheke ist bis sieben geöffnet. Gut!", "Аптека открыта до семи. Хорошо!"),
+  { t: "say", who: "Apothekerin", voice: "Shelley", de: "Guten Tag! Was kann ich für Sie tun?", ru: "Добрый день! Чем могу помочь?", learn: ["tun"] },
+  { t: "say", who: "Apothekerin", voice: "Shelley", de: "Das Rezept ist da. Aber die Versichertenkarte fehlt!", ru: "Рецепт есть. А страховой карточки нет!", learn: ["fehlen"] },
+  elif("Die Apotheke ist bis sieben geöffnet. Gut!", "Аптека открыта до семи. Хорошо!", ["geöffnet"]),
   frauke("Herr Jensen! Ich habe es versprochen: Ihre Versichertenkarte! Von Herrn Wulff!", "Господин Йенсен! Я обещала: ваша страховая карточка! От господина Вульфа!"),
   {
     t: "hear",
@@ -566,7 +571,7 @@ const apotheke: SceneNode[] = [
       no("Йенсен заговорил", "Ему нельзя говорить до субботы. Пишет Грета."),
     ],
   },
-  dana("Morgen um elf in der Werkstatt! Greta erzählt alles. Endlich!", "Завтра в одиннадцать в мастерской! Грета всё расскажет. Наконец-то!"),
+  dana("Morgen um elf in der Werkstatt! Greta erzählt alles. Endlich!", "Завтра в одиннадцать в мастерской! Грета всё расскажет. Наконец-то!", ["erzählen"]),
   {
     t: "hear",
     task: "Что говорит Дана о записке Греты?",
@@ -586,7 +591,7 @@ const apotheke: SceneNode[] = [
       ["Хауке должен лежать в постели.", [["Hauke", "Haukes", "Hauken"], ["muss", "musst", "müssen"], ["im Bett bleiben.", "im Bett bleibt.", "in Bett bleiben."]]],
     ]),
   },
-  elif("Und Hauke? Er bekommt auch eine Karte – von uns!", "А Хауке? Ему тоже открытка — от нас!"),
+  elif("Und Hauke? Er bekommt auch eine Karte – von uns!", "А Хауке? Ему тоже открытка — от нас!", ["bekommen"]),
   narr("Für Hauke schreibt der Club auch eine Karte — по образцу открытки гавани для Йенсена."),
   {
     t: "game",
@@ -660,7 +665,7 @@ const abend: SceneNode[] = [
     options: ["лежать в постели", "принести тарелки", "печь торт"],
     answer: "лежать в постели",
   },
-  elif("Mateo soll den Ku…? Den Kuchen? Mateo, was für ein Kuchen?", "Матео пусть торт…? Торт? Матео, что за торт?"),
+  elif("Mateo soll den Ku…? Den Kuchen? Mateo, was für ein Kuchen?", "Матео пусть торт…? Торт? Матео, что за торт?", ["was für ein"]),
   mateo("Kuchen? Welcher Kuchen? Suppe! Hier ist nur Suppe!", "Торт? Какой торт? Суп! Здесь только суп!"),
   {
     t: "game",

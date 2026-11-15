@@ -7,6 +7,7 @@ import { episodes, beats, phrases } from "../src/story/data.ts";
 import { rulesBefore, stepRules } from "../src/story/rules.ts";
 import { V1_ORDER } from "../src/story/v1-order.ts";
 import { sceneChapters } from "../src/story/scenes/index.ts";
+import { flatNodes } from "../src/story/scene.ts";
 import {
   beatPhrases,
   audioKey,
@@ -117,9 +118,15 @@ test("phrases are introduced before becoming German-only; callbacks repeat in ne
   assert.ok(knownBefore(beats, beats.length - 1).has("inbag"));
   // Выражения прототипа сцен тоже считаются: у него общий словарь выражений с игрой.
   const all = [...beats, ...sceneChapters.flatMap((c) => c.beats)];
+  // Слово экзамена может ввести и реплика (learn), и осмотр: игрок видит его с переводом и записью.
+  const shown = new Set(
+    sceneChapters.flatMap((c) =>
+      c.beats.flatMap((b) => flatNodes(b.challenge.nodes ?? []).flatMap((n) => (n.t === "say" ? (n.learn ?? []) : n.t === "look" ? n.items.map((i) => i.de) : []))),
+    ),
+  );
   for (const [id, p] of Object.entries(phrases)) {
     assert.ok(
-      all.some((b) => beatPhrases(b).includes(id)),
+      all.some((b) => beatPhrases(b).includes(id)) || shown.has(p.de),
       `Unused phrase: ${id}`,
     );
     assert.ok(p.ru && p.de && p.note);

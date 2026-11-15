@@ -139,7 +139,7 @@ const morning: SceneNode[] = [
 // · 12 (Фрауке час ждала трамвай, которого в Киле нет с 1985 года).
 const hoeren: SceneNode[] = [
   { t: "pic", src: "13-bahnhof.jpg", alt: "Вокзал Киля: подошёл поезд, Элиф машет обеими руками женщине с биноклем и рюкзаком; у ног Элиф — опрокинутая жёлтая табличка с восклицательным знаком" },
-  narr("Teil eins: Hören. Der Bahnhof ist laut. Frau Petersen sagt: «Hier hören Sie viel Deutsch!»"),
+  narr("Teil eins: Hören. Der Bahnhof ist laut. Frau Petersen sagt: «Hier hören Sie viel Deutsch!» Die Tür geht {automatisch} auf — man muss nicht {druecken}."),
   elif("Heute kommt Frau Brandt! Von der Vogelwarte auf Helgoland! Sie will unsere Möwe sehen!", "Сегодня приезжает фрау Брандт! С орнитологической станции на Гельголанде! Она хочет увидеть нашу чайку!"),
   narr("Elif hat der {vogelwarte} geschrieben. Jetzt kommt eine Frau von der Vogelwarte — mit dem Zug aus Hamburg."),
   durchsage(ANSAGE, "Дамы и господа, информация: поезд из Гамбурга сегодня прибывает на путь четыре. Он опаздывает примерно на десять минут."),
@@ -206,6 +206,7 @@ const hoeren: SceneNode[] = [
   frauke("Entschuldigung! Ich habe auf die Straßenbahn gewartet. Eine Stunde lang!", "Простите! Я ждала трамвай. Целый час!"),
   hauke("Frauke! In Kiel gibt es seit 1985 keine Straßenbahn!", "Фрауке! В Киле с 1985 года нет трамвая!"),
   { t: "gap", rule: ["arbeit/perfekt-2"], task: "Почему Фрауке опоздала? Запишите за ней.", text: "Ich habe auf die Straßenbahn ___.", options: ["gewartet", "gewarten", "wartet"], answer: "gewartet", ru: "Я ждала трамвай." },
+  frauke("Ich habe über sechzig Minuten gewartet! Mein Kopf tut weh.", "Я ждала больше шестидесяти минут! У меня голова болит."),
   narr("Auf Danas Handy: {anrufbeantworter}. Eine Nachricht von Mateo."),
   mateo(MATEO_AB, "Привет, это Матео. Я ещё на кухне. Приду в клуб в двенадцать. Принесите, пожалуйста, булочки! Пока!"),
   {
@@ -224,7 +225,7 @@ const hoeren: SceneNode[] = [
     answers: ["Bringt bitte Brötchen mit!", "Bringt bitte Brötchen mit.", "Bitte Brötchen mitbringen!"],
     ru: "Принесите, пожалуйста, булочки!",
   },
-  narr("Dana hat den {stempel} von Frau Petersen. Hören — {bestanden}!"),
+  narr("Dana hat den {stempel} von Frau Petersen. Hören — {bestanden}! Alle {lachen}: In Kiel ist die Straßenbahn 1985 {gestorben}."),
   {
     t: "pick",
     task: "Что принёс сегодняшний вокзал делу?",
@@ -241,7 +242,7 @@ const hoeren: SceneNode[] = [
 // грузовика со стульями для праздника заблудился, и дорогу ему показывает весь клуб — в четыре стороны).
 const lesen: SceneNode[] = [
   { t: "pic", src: "13-lkw.jpg", alt: "Перекрёсток в Киле: большой грузовик со стульями, водитель с бумагой в руке; Хауке показывает налево, Элиф направо, Матео прямо, а фрау Брандт — на чаек" },
-  narr("Teil zwei: Lesen. Auf dem Weg zum Club steht ein großer {lkw} an der Ampel. Der {fahrer} hat eine Karte — und viele Fragen."),
+  narr("Teil zwei: Lesen. Auf dem Weg zum Club steht ein großer {lkw} an der Ampel. Der {fahrer} hat eine Karte — und viele Fragen. Ist der Fahrer {beamte}? Nein."),
   fahrer("Entschuldigen Sie! Wo ist die Kiellinie? Ich bringe hundert Stühle für die Party am Club!", "Извините! Где Kiellinie? Я везу сто стульев для праздника у клуба!"),
   {
     t: "hear",
@@ -251,7 +252,7 @@ const lesen: SceneNode[] = [
     options: ["сто стульев для праздника у клуба", "сто булочек для кафе", "табличку для клуба"],
     answer: "сто стульев для праздника у клуба",
   },
-  narr("Все знают дорогу: Hauke — links, Elif — rechts, Mateo — geradeaus, а Frau Brandt — к чайкам."),
+  narr("Все знают дорогу: Hauke — links, Elif — rechts, Mateo — geradeaus, а Frau Brandt — к чайкам. Und dann? Immer {weiter}!"),
   fahrer("Links? Rechts? Geradeaus? Ich lese lieber!", "Налево? Направо? Прямо? Я лучше почитаю!"),
   {
     t: "pick",
@@ -270,7 +271,7 @@ const lesen: SceneNode[] = [
   },
   dana("Kiellinie – nach rechts! Aber da: Lkw verboten!", "Kiellinie — направо! Но там: грузовикам нельзя!"),
   { t: "gap", rule: ["stadt/imperativ-3"], task: "Подскажите водителю вежливо, на «Sie».", text: "___ Sie bitte nach rechts!", options: ["Fahren", "Fahrt", "Fahr"], answer: "Fahren", ru: "Поезжайте, пожалуйста, направо!" },
-  narr("Der Fahrer hat {lieferschein}: kleine Buchstaben, viele Zahlen — wie in der Prüfung."),
+  narr("Der Fahrer hat {lieferschein}: kleine Buchstaben, viele Zahlen — wie in der Prüfung. Lesen Sie den {text}: Es ist ganz {einfach}."),
   { t: "clue", title: "Der Lieferschein", text: LIEFERSCHEIN },
   {
     t: "game",
@@ -283,7 +284,7 @@ const lesen: SceneNode[] = [
     ]),
   },
   fahrer("Und wo kann ich parken? Nur eine Stunde!", "А где мне припарковаться? Всего на час!"),
-  narr("Frau Brandt sucht auch etwas: ein Zimmer für eine Nacht. Und Frauke will nach Hause — mit der Straßenbahn."),
+  narr("Frau Brandt sucht auch etwas: ein Zimmer für eine Nacht. Und Frauke will nach Hause — mit der Straßenbahn. Nein: Kiel hat keine U-Bahn und keine Straßenbahn!"),
   {
     t: "game",
     task: "Объявления, как на экзамене: найдите каждому подходящее. Кому-то не подойдёт ни одно.",
@@ -320,7 +321,7 @@ const lesen: SceneNode[] = [
     },
   },
   fahrer("Danke! Ohne Sie – keine Stühle, keine Party!", "Спасибо! Без вас — ни стульев, ни праздника!"),
-  narr("Ohne MOIN kein Start, ohne Möbel keine Party. Dana stempelt: Lesen — {bestanden}!"),
+  narr("Ohne MOIN kein Start, ohne Möbel keine Party. Dana stempelt: Lesen — {bestanden}! Alles ist {moeglich}."),
   {
     t: "type",
     rule: ["moin/es-gibt-1"],
@@ -335,7 +336,7 @@ const lesen: SceneNode[] = [
 const greta: SceneNode[] = [
   { t: "pic", src: "13-greta.jpg", alt: "Мастерская в Гаардене: Грета в комбинезоне в пятнах краски тонкой кистью выводит новую пустую строку внизу старой доски почёта клуба" },
   narr("Тем временем in der Werkstatt in Gaarden. Auf dem Tisch liegt die alte {ehrentafel} vom Club."),
-  narr("Viele Namen, viele Jahre: 1926, 1976 — H. Hansen. Unten ist ein Platz frei."),
+  narr("Viele Namen, viele Jahre: 1926, 1976 — H. Hansen. Unten ist ein Platz frei. Kein Name darf {fehlen}."),
   {
     t: "pick",
     task: "Для кого Грета готовит пустую строку?",
@@ -349,14 +350,14 @@ const greta: SceneNode[] = [
   { t: "game", task: "Грета подписывает банки с краской по буквам.", hint: HINT_SPELL, c: letters(["der Mensch", "die Farbe", "der Name"]) },
   narr("Greta macht eine weiße Linie. Dann schreibt sie auf einen Zettel: Sie spricht nicht gern."),
   { t: "gap", rule: ["moin/man-1"], task: "Что написала Грета на записке?", text: "Den Namen schreibt ___ allein.", options: ["man", "Mann", "mann"], answer: "man", ru: "Имя пишут сами." },
-  narr("Der Pinsel liegt auf dem Tisch. Die Farbe ist schnell trocken."),
+  narr("Der Pinsel liegt auf dem Tisch. Die Farbe ist schnell trocken. Das ist nicht {schlecht}."),
 ];
 
 // Сцена 4 · часть «Schreiben»: офис и подвал. Бросок: новый человек · чайка · потерять · der
 // Kleiderschrank · 10 — у чайки пропало кольцо; оно в старом шкафу в подвале, в её тайнике из главы 8.
 const schreiben: SceneNode[] = [
   { t: "pic", src: "13-buero.jpg", alt: "Подвал клуба: Элиф открывает старый платяной шкаф, на полке среди находок чайки — кольцо; рядом фрау Брандт бережно держит чайку" },
-  narr("Teil drei: Schreiben. Im {buero} wartet Frau Petersen mit Formularen. Aber zuerst: die Möwe."),
+  narr("Teil drei: Schreiben. Im {buero} wartet Frau Petersen mit Formularen: {anmelden}, {ausfuellen}. Aber zuerst: die Möwe."),
   brandt("Das ist unsere Möwe – aber wo ist ihr Ring? Ohne Ring ist sie nur eine Möwe!", "Это наша чайка — но где её кольцо? Без кольца она просто чайка!"),
   elif("Im Keller! Im alten Kleiderschrank! Da ist ihr Lager!", "В подвале! В старом платяном шкафу! Там её склад!", ["der Kleiderschrank"]),
   {
@@ -404,7 +405,7 @@ const schreiben: SceneNode[] = [
     answers: ["Der Ring war im Keller.", "Der Ring war im Kleiderschrank.", "Der Ring war im Keller, im Kleiderschrank."],
     ru: "Кольцо было в подвале.",
   },
-  narr("Frau Brandt macht den Ring wieder an. HEL 7305 sieht sehr {wichtig} aus."),
+  narr("Frau Brandt macht den Ring wieder an. HEL 7305 sieht sehr {wichtig} aus. Und die Möwe? Sie will einen Fisch {bekommen}."),
   brandt("Und ich brauche ein Zimmer: Einzelzimmer, eine Nacht. Mein Name ist Jule Brandt, ich wohne auf Helgoland.", "А мне нужна комната: одноместный номер, одна ночь. Меня зовут Юле Брандт, я живу на Гельголанде."),
   {
     t: "game",
@@ -429,7 +430,7 @@ const schreiben: SceneNode[] = [
     ],
   },
   dana("Und jetzt Schreiben, Teil zwei: eine kurze Nachricht. Mateo braucht Hilfe!", "А теперь письмо, часть вторая: короткое сообщение. Матео нужна помощь!"),
-  narr("Mateo ist noch in der Küche. Die Party beginnt um sechs, und er hat keine Möbel, kein Wasser — nur Kuchen."),
+  narr("Mateo ist noch in der Küche. Die Party beginnt um sechs, und er hat keine Möbel, kein Wasser — nur Kuchen. Rauchen? Keine {zigarette} in der Küche!"),
   {
     t: "game",
     rule: ["gesundheit/imperativ-2", "tagesablauf/wann-1"],
@@ -485,7 +486,9 @@ const sprechen: SceneNode[] = [
     options: ["вы новенький, вы видите всё", "вы опоздали, всё закончилось", "вы здесь чужой"],
     answer: "вы новенький, вы видите всё",
   },
-  narr("Der Weg vom Bahnhof war lang. Der junge Mann hat Durst — das sieht man."),
+  luca("Ist dieses Notizbuch für mich? Danke! Ich mag Notizbücher.", "Этот блокнот — для меня? Спасибо! Я люблю блокноты."),
+  { t: "type", rule: ["moin/dieser-1"], task: "Запишите вопрос Луки в блокнот: «Этот блокнот — для меня?»", answers: ["Ist dieses Notizbuch für mich?", "Dieses Notizbuch ist für mich?"], ru: "Этот блокнот — для меня?" },
+  narr("Der Weg vom Bahnhof war lang. Der junge Mann hat Durst — das sieht man. Hier muss man Gäste {abholen}!"),
   {
     t: "reply",
     rule: ["essen/akkusativ-3"],
@@ -547,7 +550,7 @@ const sprechen: SceneNode[] = [
   },
   mateo("Und wer hat Hunger? Ich habe Brötchen – für alle, auch für Luca!", "А кто голоден? У меня булочки — на всех, и для Луки тоже!"),
   { t: "gap", rule: ["essen/akkusativ-2"], task: "Что предлагает Матео?", text: "Ich habe Brötchen – für ___!", options: ["alle", "allen", "aller"], answer: "alle", ru: "У меня булочки — на всех!" },
-  narr("Luca schreibt das erste Wort in sein {notizbuch}: Moin. Dana stempelt: Sprechen — {bestanden}!"),
+  narr("Luca schreibt das erste Wort in sein {notizbuch}: Moin. Dana stempelt: Sprechen — {bestanden}! Sein Hobby: Tennis spielen."),
   {
     t: "pick",
     task: "Почему это сцена вашего экзамена, а не Луки?",
@@ -563,7 +566,7 @@ const sprechen: SceneNode[] = [
 // Сцена 6 · эпилог: фейерверк, доска почёта и Küstenlogbuch — мост к сезону A2.
 const abend: SceneNode[] = [
   { t: "pic", src: "13-feuerwerk.jpg", alt: "Вечер у клуба: над водой фейерверк, команда у доски почёта с новой белой строкой внизу, Йенсен с кружкой чая, чайка сидит у окна над табличкой MOIN" },
-  narr("Abend am Club. Über dem Wasser: {feuerwerk}. Die Kieler Woche ist zu Ende."),
+  narr("Abend am Club. Über dem Wasser: {feuerwerk}. Die Kieler Woche ist zu Ende. Alles ist wieder {normal}. Und {wasfuer} Tag!"),
   {
     t: "game",
     task: "Последний вечер: послушайте слово и нажмите на картинку.",
@@ -579,7 +582,8 @@ const abend: SceneNode[] = [
     options: ["десять", "две", "двенадцать"],
     answer: "десять",
   },
-  narr("Greta bringt die {ehrentafel}. Unten ist ein Platz frei — weiß und neu. Daneben liegt ein Pinsel."),
+  mateo("Wo ist der Kuchen? … Unter dem Tisch! Und die Möwe isst ihn. Das ist unmöglich!", "Где пирог? … Под столом! И чайка его ест. Это невозможно!"),
+  narr("Greta bringt die {ehrentafel}. Unten ist ein Platz frei — weiß und neu. Daneben liegt ein Pinsel. Alle sind {gluecklich}."),
   {
     t: "type",
     task: "Напишите своё имя на доске почёта.",
@@ -601,7 +605,7 @@ const abend: SceneNode[] = [
   brandt("Und morgen fährt die Möwe nach Helgoland. Kommen Sie alle mit – Helgoland ist schön!", "А завтра чайка едет на Гельголанд. Поезжайте все вместе — на Гельголанде красиво!"),
   elif("Ein Ausflug nach Helgoland! Mit der Möwe! Ich packe sofort!", "Поездка на Гельголанд! С чайкой! Собираюсь немедленно!"),
   hauke("Dann brauchen wir ein Logbuch – für alle Reisen! Wohin, wann, mit wem.", "Тогда нам нужен журнал — для всех поездок! Куда, когда, с кем."),
-  narr("So beginnt das {kuestenlogbuch}: ein Buch für alle Reisen am Meer. Es ist noch leer."),
+  narr("So beginnt das {kuestenlogbuch}: ein Buch für alle Reisen am Meer. Es ist noch leer. Bald steht {dort} alles. Auch: Tennis spielen mit Luca."),
   {
     t: "game",
     rule: ["tagesablauf/vorfeld-1"],
@@ -617,6 +621,8 @@ const abend: SceneNode[] = [
   },
   mateo("Und ich koche auf jeder Reise! Fischbrötchen für alle!", "А я готовлю в каждой поездке! Булочки с рыбой всем!"),
   { t: "gap", rule: ["kennenlernen/endungen-1"], task: "Что обещает Матео?", text: "Ich ___ auf jeder Reise!", options: ["koche", "kocht", "kochen"], answer: "koche", ru: "Я готовлю в каждой поездке!" },
+  elif("Und was soll ich in das Logbuch schreiben?", "А что мне писать в журнал?"),
+  hauke("Wenn du nichts weißt – schreib Moin! Opas Schild ist wieder da, denn wir haben es zusammen gefunden.", "Если не знаешь — пиши Moin! Табличка дедушки снова на месте: мы нашли её вместе."),
   narr("Die Möwe HEL 7305 sitzt auf dem Schild MOIN. Der Ring ist wieder da. Sie sagt nichts — wie Herr Jensen."),
   jensen("Moin.", "Привет."),
   {

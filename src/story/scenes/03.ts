@@ -100,6 +100,7 @@ const photo: SceneNode[] = [
     ],
   },
   narr("Ответ приходит через секунду: «Ja!!! Unser Opa!!! Heinrich Hansen!!! Das Schild ist von Opa!!!»"),
+  narr("Значит, Нильс — {verwandte} того, кто писал MOIN. Грета тоже: внуки Хансена — они {beide}."),
   { t: "type", rule: ["familie/wessen-1"], task: "Запишите в блокнот: «Это их дедушка».", answers: ["Das ist ihr Opa.", "Das ist ihr Opa!"], ru: "Это их дедушка." },
   narr("1976… Эти цифры вы уже видели: у {gaestezimmer}, на {ehrentafel}, совсем свежей белой краской."),
   {
@@ -293,6 +294,7 @@ const memories: SceneNode[] = [
             c: spot("Karte: Heinrich Hansen", ["Name: Heinrich Hansen|Familienstand: verheiratet", "Frau: Hilde Hansen|Sohn: Peter, acht Jahre", "Hobby: Segeln|Schild MOIN: Farbe und Pinsel"], ["Frau: Hilde Hansen", "Sohn: Peter, acht Jahre"]),
           },
           narr("Графа {familienstand}: verheiratet. Ниже: {hochzeit} — в 1960-м, {ehemann} — Heinrich, {ehefrau} — Hilde."),
+          narr("В графе профессии у Хильды: {hausfrau}. У Хайнриха — прочерк и рисунок лодки."),
           { t: "gap", rule: ["familie/wessen-1"], task: "Подпишите в блокноте: кто Хильде для Opa?", text: "Hilde ist ___ Frau.", options: ["seine", "sein", "ihre"], answer: "seine", ru: "Хильде — его жена." },
           narr("Следующий кармашек в папке пуст: карточку кто-то вынул. На пластике круглый коричневый след — как от кружки с чаем."),
           { t: "type", task: "Запишите: Opa женат.", answers: ["Opa ist verheiratet.", "Heinrich Hansen ist verheiratet.", "Er ist verheiratet."], ru: "Дедушка женат." },
@@ -472,7 +474,7 @@ const poster: SceneNode[] = [
   narr("После обеда Элиф приводит в клуб ein Mädchen, zehn Jahre alt, с рулоном бумаги и биноклем, как у самой Элиф."),
   elif("Das ist Lotte. Sie ist meine Freundin!", "Это Лотта. Она моя подруга!", ["die Freundin"]),
   hauke("Freundin? Elif hat eine Freundin?", "Подруга? У Элиф есть девушка?"),
-  narr("Freundin — и подруга, и девушка. Элиф краснеет: она ведёт для школьников Möwen-Kurs, и Lotte — её лучшая ученица."),
+  narr("Freundin — и подруга, и девушка. Элиф краснеет: она ведёт {kurs} для школьников, Möwen-Kurs, и Lotte — её лучшая ученица."),
   {
     t: "pick",
     task: "Кто Лотта для Элиф?",
@@ -482,7 +484,7 @@ const poster: SceneNode[] = [
       no("Дочь Элиф", "Дочь — die Tochter. А Лотта — подруга по клубу чаек."),
     ],
   },
-  narr("Лотта стесняется и молчит. Зато разворачивает школьный {plakat} «Meine Familie». Элиф читает вслух."),
+  narr("Лотта стесняется и молчит. Зато разворачивает {plakat} für die {schule}: «Meine Familie». Элиф читает вслух."),
   elif("Das ist meine Mutter. Sie ist im Club. Und das ist mein Hund Krümel.", "Это моя мама. Она в клубе. А это мой пёс Крюмель."),
   {
     t: "look",
@@ -522,6 +524,7 @@ const poster: SceneNode[] = [
       answer: { opa: "Klaus", oma: "Inge", mutter: "Kerstin", onkel: "Jan", cousine: "Mia" },
     },
   },
+  narr("Кузине Мие пять. Noch keine {schule}: она ходит in den {kindergarten}."),
   narr("Лотта молча протягивает вам фломастер: на {plakat} не хватает подписей. Она диктует шёпотом, а шёпотом похожие слова не различить."),
   {
     t: "game",
@@ -566,6 +569,7 @@ const poster: SceneNode[] = [
       no("Лотта знает, где табличка", "Лотта рисует табличку на плакате, потому что ждёт её, а не прячет."),
     ],
   },
+  hauke("Lotte, Krümel – ist das euer Plakat? Toll!", "Лотта, Крюмель, это ваш плакат? Классно!", ["euer Plakat"]),
   elif("Lotte fragt: Hast du Geschwister?", "Лотта спрашивает: у тебя есть братья или сёстры?"),
   {
     t: "type",

@@ -59,6 +59,7 @@ const invite: SceneNode[] = [
   },
   narr("Sechs Wörter! Хауке записывает их как рекорд недели. Но ins Kino Йенсен не пойдёт."),
   { t: "gap", rule: ["freizeit/ende-2"], task: "Что сказал Йенсен?", text: "Ich kann nicht. Ich will ___.", options: ["segeln", "segle", "Segel"], answer: "segeln", ru: "Я не могу. Я хочу ходить под парусом." },
+  dana("Ins Kino gehen? Nein – segeln! Das verstehe ich nicht.", "Пойти в кино? Нет — под парусом! Этого я не понимаю.", ["ins Kino gehen", "verstehen"]),
   hauke("Er kann nicht, denn er will segeln!", "Он не может, потому что хочет ходить под парусом!"),
   {
     t: "game",
@@ -87,6 +88,7 @@ const invite: SceneNode[] = [
   },
   narr("Хауке раскладывает карточки: wer macht was gern? Вдруг найдётся Hobby, от которого Йенсен не откажется."),
   narr("На карточках ещё {wandern}, {radfahren}, {laufen} и {baden}. Хауке пишет крупно: Was macht Herr Jensen gern?"),
+  narr("Если дождь — Tennis in der {halle}. Но Йенсен выходит в море и в дождь."),
   { t: "game", task: "Послушайте занятие и нажмите на картинку.", hint: HINT_PICTURE, c: scene([["schwimmen", "🏊"], ["tanzen", "💃"], ["lesen", "📖"], ["kochen", "🍳"], ["Fahrrad fahren", "🚲"], ["segeln", "⛵"], ["Tennis spielen", "🎾"], ["Gitarre spielen", "🎸"], ["grillen", "🍖"]]) },
   elif("Herr Jensen segelt jeden Morgen um acht. Immer allein!", "Господин Йенсен ходит под парусом каждое утро в восемь. Всегда один!"),
   { t: "gap", task: "Когда Йенсен выходит в море?", text: "Jeden Morgen um ___ segelt Herr Jensen.", options: ["acht", "halb acht", "sechs"], answer: "acht", ru: "Каждое утро в восемь господин Йенсен выходит под парусом." },
@@ -147,7 +149,7 @@ const week: SceneNode[] = [
   narr("Für ein Picknick нужен день, когда у всех есть Zeit. Всё записано im Buch фрау Петерсен. А книга сегодня — zu Hause."),
   hauke("Wo ist Frau Petersen? Und wo ist das Buch?", "Где фрау Петерсен? И где книга?", ["das Buch"]),
   narr("Frau Petersen kommt zehn Minuten zu spät — впервые за двадцать лет. Запыхавшись, das Buch под мышкой."),
-  petersen("Entschuldigung, ich komme zu spät! Ich hole das Buch von zu Hause – hier ist es!", "Извините, я опоздала! Я ходила домой за книгой — вот она!"),
+  petersen("Entschuldigung, ich komme zu spät! Ich hole das Buch von zu Hause – hier ist es!", "Извините, я опоздала! Я ходила домой за книгой — вот она!", ["holen"]),
   {
     t: "hear",
     task: "Почему опаздывает фрау Петерсен?",
@@ -166,7 +168,7 @@ const week: SceneNode[] = [
     ],
   },
   narr("В книге — вся Woche клуба. Wer hat wann Zeit — и когда свободен Йенсен?"),
-  petersen("Am Montag kann ich nicht. Am Dienstag habe ich Zeit. Und Sie?", "В понедельник я не могу. Во вторник у меня есть время. А у вас?", ["Zeit haben", "können"]),
+  petersen("Am Montag kann ich nicht. Am Dienstag habe ich Zeit. Und Sie?", "В понедельник я не могу. Во вторник у меня есть время. А у вас?", ["Zeit haben", "können", "der Dienstag"]),
   {
     t: "hear",
     task: "Когда у фрау Петерсен есть время?",
@@ -175,6 +177,7 @@ const week: SceneNode[] = [
     options: ["во вторник", "в понедельник", "сегодня"],
     answer: "во вторник",
   },
+  hauke("Und ich habe am Mittwoch Zeit!", "А у меня время в среду!", ["der Mittwoch"]),
   {
     t: "game",
     rule: ["freizeit/verabreden-1", "moin/denn-1"],
@@ -229,7 +232,7 @@ const week: SceneNode[] = [
   },
   narr("Дана ведёт пальцем по странице: heute, Sonntag — почти у всех есть Zeit. Только Йенсен wie immer на воде."),
   dana("Heute haben alle Zeit. Wir machen das Picknick heute! Am Strand.", "Сегодня у всех есть время. Устроим пикник сегодня! На пляже."),
-  mateo("Wunderbar! Wir sehen uns um zwei am Strand!", "Чудесно! Увидимся в два на пляже!"),
+  mateo("Wunderbar! Wir sehen uns um zwei am Strand!", "Чудесно! Увидимся в два на пляже!", ["wunderbar"]),
   {
     t: "pick",
     task: "Когда пикник?",
@@ -249,7 +252,7 @@ const week: SceneNode[] = [
       "07:00": "Это sieben Uhr.",
     }),
   },
-  hauke("Um acht? So früh? Um acht schlafe ich!", "В восемь? Так рано? В восемь я сплю!"),
+  hauke("Um acht? So früh? Um acht schlafe ich!", "В восемь? Так рано? В восемь я сплю!", ["so"]),
   { t: "gap", rule: ["freizeit/ende-4"], task: "Что сказала фрау Петерсен о понедельнике?", text: "Am Montag ___ ich nicht.", options: ["kann", "kannst", "können"], answer: "kann", ru: "В понедельник я не могу." },
   {
     t: "type",
@@ -317,7 +320,7 @@ const party: SceneNode[] = [
               ["Was bringen Sie mit?", "Brot", "Wasser", "Kuchen", "Saft", "Obst"],
             ]),
           },
-          petersen("Gut. Das Formular ist fertig. Jetzt ist es eine Party!", "Хорошо. Формуляр готов. Теперь это вечеринка!"),
+          petersen("Gut. Das Formular ist fertig. Jetzt ist es eine Party!", "Хорошо. Формуляр готов. Теперь это вечеринка!", ["fertig"]),
           {
             t: "pick",
             task: "Что изменилось?",
@@ -408,7 +411,7 @@ const party: SceneNode[] = [
     ],
   },
   narr("В последней графе — {lieblingsfilm} и вопрос с глаголом {gefallen}. Нравится то, что стоит в начале фразы."),
-  hauke("Mir gefällt die Idee! Und dir?", "Мне нравится идея! А тебе?"),
+  hauke("Mir gefällt die Idee! Und dir?", "Мне нравится идея! А тебе?", ["dir"]),
   {
     t: "type",
     task: "Запишите в блокнот, где и когда вечеринка.",

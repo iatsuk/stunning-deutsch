@@ -6,7 +6,9 @@
 # words — запись словаря: строка или { de, of — основная запись для производной, skip — причина
 # пропуска, forms — формы, которые правила не порождают }. groups — тематические группы словаря.
 # grammar — { id, group — раздел перечня, title, rules — фрагменты разбора, find — признаки в немецком тексте (регулярные
-# выражения JavaScript, границы слов добавляются сами; @plurals — множественное слов уроков) }.
+# выражения JavaScript, границы слов добавляются сами; @plurals — множественное слов уроков) }. Граница стоит
+# по краям всего совпадения, поэтому соседний знак или слово пишите проверкой вперёд или назад:
+# (?<=, )denn, Omas(?= [A-ZÄÖÜ]); иначе признак не найдёт ничего.
 
 words:
   - ab
@@ -390,7 +392,7 @@ words:
   - der Kugelschreiber
   - der Kühlschrank
   - kulturell
-  - sich kümmern
+  - { de: sich kümmern, forms: [kümmere mich, kümmert sich, kümmern sich, kümmerst dich, kümmern uns] }
   - der Kunde
   - der Kurs
   - kurz
@@ -841,7 +843,7 @@ grammar:
     group: Предложение
     title: "denn как союз причины"
     rules: [moin/denn-1]
-    find: [', denn (ich|du|er|sie|es|wir|ihr|Sie|man|der|die|das|mein|meine|dein|deine|sein|seine|ihr|ihre|unser|unsere|heute|morgen|hier|da)']
+    find: ['(?<=, )denn (ich|du|er|sie|es|wir|ihr|Sie|man|der|die|das|mein|meine|dein|deine|sein|seine|ihr|ihre|unser|unsere|heute|morgen|hier|da)']
   - id: dann
     group: Предложение
     title: "dann"
@@ -871,7 +873,7 @@ grammar:
     group: Существительное и артикль
     title: "Дательный на вопрос «где?» (in, auf, an)"
     rules: [wohnen/wo-1, wohnen/wo-2, wohnen/wo-3, wohnen/im-1]
-    find: ['im [A-ZÄÖÜ]|in der [A-ZÄÖÜ]|auf dem [A-ZÄÖÜ]|auf der [A-ZÄÖÜ]|an der [A-ZÄÖÜ]|am (Hafen|Strand|Meer|See|Bahnhof|Tisch|Fenster|Kiosk|Steg|Wasser|Automaten|Schalter)|neben dem|neben der|hinter dem|hinter der']
+    find: ['im(?= [A-ZÄÖÜ])|in der(?= [A-ZÄÖÜ])|auf dem(?= [A-ZÄÖÜ])|auf der(?= [A-ZÄÖÜ])|an der(?= [A-ZÄÖÜ])|am (Hafen|Strand|Meer|See|Bahnhof|Tisch|Fenster|Kiosk|Steg|Wasser|Automaten|Schalter)|neben dem|neben der|hinter dem|hinter der']
   - id: dativ-praep
     group: Существительное и артикль
     title: "Предлоги с дательным (mit, zu, bei, von, aus, nach)"
@@ -881,7 +883,7 @@ grammar:
     group: Существительное и артикль
     title: "Чей? Имя + s (Annas Bruder)"
     rules: [familie/wessen-1, familie/wessen-2]
-    find: ['(Elif|Hauke|Greta|Dana|Mateo|Jensen|Petersen|Lotte|Frauke|Kerstin|Heinrich|Anna|Peter|Oma|Opa|Mama|Papa|Eddy|Rocko)s [A-ZÄÖÜ]|Nils'' [A-ZÄÖÜ]']
+    find: ['(Elif|Hauke|Greta|Dana|Mateo|Jensen|Petersen|Lotte|Frauke|Kerstin|Heinrich|Anna|Peter|Oma|Opa|Mama|Papa|Eddy|Rocko)s(?= [A-ZÄÖÜ])|Nils''(?= [A-ZÄÖÜ])']
   - id: komposita
     group: Существительное и артикль
     title: "Сложные слова: род по последней части"
@@ -1006,7 +1008,7 @@ grammar:
     group: Предлоги
     title: "unter"
     rules: [moin/unter-1]
-    find: ['unter']
+    find: ['[Uu]nter']
   - id: ohne-fuer
     group: Предлоги
     title: "ohne и für (ohne dich, für meinen Freund)"
@@ -1041,4 +1043,4 @@ grammar:
     group: Словообразование
     title: "Ich habe …schmerzen, … tut weh"
     rules: [gesundheit/schmerzen-1]
-    find: ['[A-ZÄÖÜ][a-zäöü]*schmerzen|tut weh|tun weh|tut (mir|dir|ihm|ihr) weh']
+    find: ['[A-ZÄÖÜ][a-zäöü]*schmerzen|tut weh|tun weh|tut (mir|dir|ihm|ihr) weh|tut (mein|meine|dein|deine|sein|seine|ihr|ihre|der|die|das) [A-ZÄÖÜ][a-zäöüß]+ weh']

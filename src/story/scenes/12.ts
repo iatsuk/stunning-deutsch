@@ -35,7 +35,7 @@ const JENSEN = "Vor fünfzig Jahren habe ich die Farbe gehalten. Heute ist das S
 // возвращает Хауке зимнюю куртку. В июне.
 const regen: SceneNode[] = [
   { t: "pic", src: "12-regen.jpg", alt: "Субботнее утро в мастерской Греты, за окном ливень: табличка MOIN на верстаке блестит — краска ещё мокрая; Грета трогает её пальцем, Матео с термосом и Хауке в жёлтом дождевике смотрят на дождь" },
-  narr("Samstag, der zwanzigste Juni. Kieler Woche! Und das Wetter? Es regnet. Es ist windig und kalt — wie im Herbst."),
+  narr("Samstag, der zwanzigste Juni. Kieler Woche! Und das Wetter? Es regnet. Es ist windig und kalt — wie im Herbst. Das Wetter ist {schlecht}."),
   {
     t: "look",
     task: "Осмотритесь в мастерской.",
@@ -165,7 +165,7 @@ const regen: SceneNode[] = [
 // дождём: от остановки к отелю.
 const weg: SceneNode[] = [
   { t: "pic", src: "12-karton.jpg", alt: "Остановка автобуса под дождём: Хауке в зимней куртке поверх жёлтого дождевика держит над головой плоскую коробку, Элиф и Нильс держат над ней зонты; табло на остановке без надписей" },
-  narr("Das Schild kommt in den {karton} von Herrn Jensen. Der {umriss} passt: M, O, I, N. Хауке несёт коробку, как младенца."),
+  narr("Das Schild kommt in den {karton} von Herrn Jensen. Der {umriss} passt: M, O, I, N. Хауке несёт коробку, как младенца. Kein Buchstabe darf {fehlen}."),
   elif("Der Karton passt! Herr Jensen hat alles geplant!", "Коробка подходит! Господин Йенсен всё продумал!"),
   {
     t: "gap",
@@ -177,7 +177,7 @@ const weg: SceneNode[] = [
     ru: "Господин Йенсен всё спланировал.",
   },
   hauke("Und wenn es regnet, bleibt der Karton zu!", "А если идёт дождь, коробка остаётся закрытой!"),
-  narr("An der Haltestelle: Regen, Wind — und eine Durchsage."),
+  narr("An der Haltestelle: Regen, Wind — und eine Durchsage. Im Bus muss man {druecken}, nicht rufen."),
   {
     t: "look",
     task: "Осмотритесь на остановке.",
@@ -224,7 +224,7 @@ const weg: SceneNode[] = [
     answers: ["Der Bus hat Verspätung.", "Der Bus hat zehn Minuten Verspätung."],
     ru: "Автобус опаздывает.",
   },
-  narr("Der Bus kommt — und fährt. Kiellinie, Haltestelle. Bis zum Hotel: nur drei Straßen. Но дороги Хауке не знает."),
+  narr("Der Bus kommt — und fährt. Kiellinie, Haltestelle. Bis zum Hotel: nur drei Straßen. Но дороги Хауке не знает. Eine U-Bahn hat Kiel nicht."),
   hauke("Drei Straßen? Links, rechts … Ich brauche ein Programm!", "Три улицы? Налево, направо… Мне нужна программа!"),
   {
     t: "game",
@@ -275,7 +275,7 @@ const weg: SceneNode[] = [
 // сохнет за стенкой. Форма брони на слух.
 const hotel: SceneNode[] = [
   { t: "pic", src: "12-hotel.jpg", alt: "Холл небольшого отеля у гавани: за стойкой регистратор, у стойки бодрый девяностолетний Opa Hansen с тростью и старым чемоданом; Хауке прячет за спиной плоскую коробку, Элиф машет руками, отвлекая его; за приоткрытой дверью сушильной висят полотенца" },
-  narr("Im Hotel am Hafen: eine Rezeption — а у стойки старик: {muetze}, Koffer. Opa Hansen!"),
+  narr("Im Hotel am Hafen: eine Rezeption — а у стойки старик: {muetze}, Koffer. Opa Hansen! Hier muss man sich {anmelden} und ein Formular {ausfuellen}."),
   opa(OPA, "Привет! Я приехал на поезде из Гамбурга. Поезд опоздал — на двадцать минут!", ["die Anreise"]),
   {
     t: "hear",
@@ -341,7 +341,7 @@ const hotel: SceneNode[] = [
               no("Wie sind Sie gefährt, Herr Hansen?", "fahren — сильный: gefahren."),
             ],
           },
-          opa("Mit dem Zug! Zwei Stunden. Und dann bin ich zu Fuß gegangen – im Regen!", "На поезде! Два часа. А потом пошёл пешком — под дождём!"),
+          opa("Mit dem Zug! Zwei Stunden. Und dann bin ich zu Fuß gegangen – im Regen!", "На поезде! Два часа. А потом пошёл пешком — под дождём!", ["zu Fuß"]),
           {
             t: "hear",
             task: "Как Opa шёл от вокзала?",
@@ -350,6 +350,7 @@ const hotel: SceneNode[] = [
             options: ["пешком под дождём", "на такси", "на автобусе"],
             answer: "пешком под дождём",
           },
+          opa("Zu Fuß – über zwanzig Minuten! Und jetzt tut mein Fuß weh.", "Пешком — больше двадцати минут! А теперь у меня болит нога."),
           narr("In Hamburg war {anschluss} weg. Und {gepaeck} — Koffer und Tasche — hat Opa allein."),
           narr("Opa рассказывает и рассказывает, Элиф кивает. Das Schild bleibt ein {geheimnis}."),
         ],
@@ -371,6 +372,7 @@ const hotel: SceneNode[] = [
             ]),
           },
           { t: "gap", task: "Сколько ночей пробудет Opa?", text: "Opa bleibt zwei ___.", options: ["Nächte", "Nacht", "Nachten"], answer: "Nächte", ru: "Opa пробудет две ночи." },
+          opa("Und ich hätte gern ein Frühstück, bitte!", "А ещё мне бы завтрак, пожалуйста!"),
           {
             t: "look",
             task: "На стойке — прейскурант отеля. Рассмотрите его.",
@@ -510,7 +512,7 @@ const herbst: SceneNode[] = [
 // «Hier.», класс Лотты касается таблички, Йенсену снова можно говорить — целая фраза, тишина, «Moin».
 const start: SceneNode[] = [
   { t: "pic", src: "12-start.jpg", alt: "Старт у клуба: дождь кончается, сквозь тучи пробивается солнце; на подставке снова табличка MOIN, свежая и тёмно-синяя; Йенсен в фуражке говорит, рядом Грета, Opa Hansen с тростью, Лотта тянет руки к табличке, Хауке и Элиф ликуют, чайка на крыше" },
-  narr("10:45. Das Schild kommt aus dem Hotel — trocken, im Karton. Хауке несёт, Элиф держит зонт. Der ganze Club wartet."),
+  narr("10:45. Das Schild kommt aus dem Hotel — trocken, im Karton. Хауке несёт, Элиф держит зонт. Der ganze Club wartet. Jetzt will er es zurück {bekommen}."),
   petersen("Wo ist das Schild?", "Где табличка?"),
   {
     t: "reply",
@@ -542,9 +544,9 @@ const start: SceneNode[] = [
     answer: "scheint",
     ru: "Светит солнце.",
   },
-  narr("Opa Hansen sieht das Schild. Er sagt nichts. Lange. Dann nimmt er seine Mütze ab."),
+  narr("Opa Hansen sieht das Schild. Er sagt nichts. Lange. Dann nimmt er seine Mütze ab. Und {wasfuer} Tag für ihn!"),
   opa("Mein Schild. Fünfzig Jahre … und es ist wie neu. Greta, das hast du gemacht?", "Моя табличка. Пятьдесят лет… а она как новая. Грета, это ты сделала?"),
-  narr("Грета кивает — и впервые говорит вслух: «Ja, Opa.»"),
+  narr("Грета кивает — и впервые говорит вслух: «Ja, Opa.» Opa ist {gluecklich}."),
   hauke("Opas Schild – und Gretas Farbe!", "Табличка деда — и краска Греты!"),
   {
     t: "hear",
@@ -561,7 +563,7 @@ const start: SceneNode[] = [
     answers: ["Greta, das hast du gemacht?", "Hast du das gemacht?", "Greta, hast du das gemacht?"],
     ru: "Грета, это ты сделала?",
   },
-  narr("Herr Jensen steht auf. Ab heute darf er wieder sprechen. Все замолкают."),
+  narr("Herr Jensen steht auf. Ab heute darf er wieder sprechen. Все замолкают. Ist das {moeglich}?"),
   jensen(JENSEN, "Пятьдесят лет назад я держал краску. Сегодня табличка снова здесь. Спасибо, Грета. Спасибо, Хайнрих. Добро пожаловать, Kieler Woche!"),
   {
     t: "hear",
@@ -620,7 +622,7 @@ const start: SceneNode[] = [
 // о деле по-немецки. Отсылки: «Птицы» — над клубом собираются чайки; «Касабланка» — последняя строка.
 const party: SceneNode[] = [
   { t: "pic", src: "12-party.jpg", alt: "Праздник столетия клуба: на столе огромный торт с белыми буквами MOIN, Матео режет его, вся команда, Грета, Йенсен и Opa Hansen с бокалами, Лотта с биноклем; над клубом кружат десятки чаек, одна с кольцом ближе всех" },
-  narr("Party am Club. Hundert Jahre! Mateo bringt den Kuchen: dunkelblau, а сверху белым — MOIN."),
+  narr("Party am Club. Hundert Jahre! Mateo bringt den Kuchen: dunkelblau, а сверху белым — MOIN. Rauchen verboten: keine {zigarette} am Club."),
   mateo("Mein Geheimnis! Ein Kuchen für hundert! Für hundert Jahre!", "Мой секрет! Торт на сто человек! На сто лет!"),
   petersen("Und wer hat die Teller mitgebracht? Elif! Sehr gut!", "А кто принёс тарелки? Элиф! Очень хорошо!"),
   {
@@ -647,7 +649,7 @@ const party: SceneNode[] = [
       ["Wir sind beim Arzt.", "Herr Jensen darf nicht sprechen."],
     ]),
   },
-  narr("Die Kieler Woche ist {europaeisch} und {kulturell}: Musik, Essen, Tanz — und viele {auslaendisch} Boote."),
+  narr("Die Kieler Woche ist {europaeisch} und {kulturell}: Musik, Essen, Tanz — und viele {auslaendisch} Boote. Das ist hier {normal}."),
   elif("Komm, Opa! Hier ist ein Stuhl für dich!", "Иди сюда, Opa! Вот стул для тебя!"),
   { t: "gap", rule: ["moin/uns-1"], task: "Как Opa Hansen себя чувствует? Запишите.", text: "Opa freut ___.", options: ["sich", "mich", "ihn"], answer: "sich", ru: "Opa радуется." },
   {
@@ -681,7 +683,7 @@ const party: SceneNode[] = [
     ]),
   },
   narr("Elif schreibt noch eine Karte — на Гельголанд, орнитологам. Образец — их письмо."),
-  narr("Nach Helgoland muss man nicht {abfliegen}: Die Fähre fährt. Und {zoll}? Den gibt es auf Helgoland auch!"),
+  narr("Nach Helgoland muss man nicht {abfliegen}: Die Fähre fährt. Und {zoll}? Den gibt es auf Helgoland auch! Am Zoll sitzt {beamte}."),
   {
     t: "game",
     rule: ["reisen/haben-sein-1"],
@@ -700,7 +702,7 @@ const party: SceneNode[] = [
     ),
   },
   { t: "game", task: "Слова дня перемешались. Откройте пары: немецкое слово и перевод.", c: memory(["trockenraum", "foehn", "barometer", "start", "karton", "schild"]) },
-  narr("Nils macht Fotos, Fotos, Fotos. Wie viele? Eine {milliarde}, sagt er."),
+  narr("Nils macht Fotos, Fotos, Fotos. Wie viele? Eine {milliarde}, sagt er. Frau Petersen will das nicht {erlauben}."),
   { t: "game", task: "Лото на празднике: послушайте слово и закройте его на карточке.", hint: HINT_HEAR, c: bingo(["das Wetter", "der Regenschirm", "das Hotel", "die Reise", "der Koffer", "der Sommer", "der Herbst", "die Verspätung", "die Anreise"]) },
   { t: "game", task: `Последняя гонка: чайка тянет салфетку со словами дня! ${RACE}`, hint: HINT_RACE, outcome: RACE_STAKES, c: race(["das Wetter", "der Winter", "der Sommer", "die Reise", "das Hotel", "der Koffer", "sonnig", "bewölkt", "windig", "Es schneit.", "Es sind 20 Grad.", "die Ferien"]) },
   hauke("Zwölf Tage! Am ersten Tag hast du nur ein Wort gesprochen: Moin. Und heute?", "Двенадцать дней! В первый день ты сказал всего одно слово: Moin. А сегодня?"),

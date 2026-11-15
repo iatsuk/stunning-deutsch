@@ -3,6 +3,8 @@ import { readFileSync } from "node:fs";
 import test from "node:test";
 import { parse } from "yaml";
 import { BASELINE, baselineOf, buildIndex, found, renderReport } from "./a1-index.mjs";
+import { flatNodes } from "../src/story/scene.ts";
+import { sceneChapters } from "../src/story/scenes/index.ts";
 
 // Индекс покрытия A1 (A1-PLAN.md): закреплённое не теряется, отчёт актуален, подсчёт находит формы.
 const index = buildIndex();
@@ -28,6 +30,19 @@ test("grammar rules of the reference exist", () => {
     for (const rule of g.rules ?? []) assert.ok(rule in rules, `${g.id}: нет фрагмента ${rule}`);
     for (const p of g.find ?? []) if (p !== "@plurals") assert.doesNotThrow(() => new RegExp(p, "u"), `${g.id}: ${p}`);
   }
+});
+
+test("every grammar sign finds the new version by its text", () => {
+  // Граница слова оборачивает весь признак: запятая в начале или заглавная буква следующего слова в
+  // конце делают его немым, и правило держится только на ссылках действий.
+  const reference = parse(readFileSync(new URL("../content/reference/start-deutsch-1.yaml", import.meta.url), "utf8"));
+  const texts = sceneChapters.flatMap((c) => c.beats.flatMap((b) => flatNodes(b.challenge.nodes ?? []).map((n) => JSON.stringify(n))));
+  for (const g of reference.grammar)
+    for (const p of g.find ?? []) {
+      if (p === "@plurals") continue;
+      const rx = new RegExp(`(?<![\\p{L}])(?:${p})(?![\\p{L}])`, "u");
+      assert.ok(texts.some((t) => rx.test(t)), `${g.id}: признак не находит ни одного узла — ${p.slice(0, 60)}`);
+    }
 });
 
 test("the index counts word forms, not substrings", () => {

@@ -35,7 +35,7 @@ const PLAN = "Also: Samstag um acht am Club. Hauke soll das Schild tragen. Elif 
 const donnerstag: SceneNode[] = [
   { t: "pic", src: "11-donnerstag.jpg", alt: "Утро четверга у клуба, солнце: выздоровевший Хауке чинит цепь бабушкиного красного велосипеда, рядом газета с объявлениями; Элиф с конвертом, Дана с кофе; на подоконнике радио" },
   narr("Tag elf, Donnerstag, noch zwei Tage. Hauke ist wieder gesund. Er sitzt vor dem Club — и чинит бабушкин велосипед."),
-  hauke("Ich bin wieder gesund! Gestern habe ich nur geschlafen und Suppe gegessen.", "Я снова здоров! Вчера я только спал и ел суп.", ["gestern"]),
+  hauke("Ich bin wieder gesund! Gestern habe ich nur geschlafen und Suppe gegessen.", "Я снова здоров! Вчера я только спал и ел суп.", ["gestern", "gesund"]),
   {
     t: "hear",
     task: "Что Хауке делал вчера?",

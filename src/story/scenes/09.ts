@@ -56,6 +56,7 @@ const sturm: SceneNode[] = [
     answers: ["Dana ist bis zwei im Krankenhaus.", "Bis zwei ist Dana im Krankenhaus.", "Dana arbeitet bis zwei im Krankenhaus."],
     ru: "Дана до двух в больнице.",
   },
+  dana("Um drei hole ich euch an der Post ab. Dann fahren wir zusammen!", "В три я заберу вас у почты. Потом поедем вместе!", ["abholen"]),
   hauke("Kein Problem! Ich habe ein Auto! … Also, Frauke hat ein Auto.", "Без проблем! У меня есть машина! … Ну, у Фрауке есть машина.", ["das Auto"]),
   hauke("Frauke fährt uns um neun nach Gaarden. Mit dem Auto!", "Фрауке в девять везёт нас в Гаарден. На машине!"),
   { t: "gap", rule: ["stadt/mit-1"], task: "На чём вы поедете по плану Хауке?", text: "Wir fahren mit ___ Auto nach Gaarden.", options: ["dem", "der", "den"], answer: "dem", ru: "Мы едем в Гаарден на машине." },
@@ -137,7 +138,7 @@ const sturm: SceneNode[] = [
 const bahnhof: SceneNode[] = [
   { t: "pic", src: "09-bahnhof.jpg", alt: "Автобусный вокзал в шторм: табло отправлений, старый жёлтый билетный автомат, усатый водитель машет из кабины; чайка с кольцом стоит на ступеньке автобуса; Элиф под зонтом смеётся" },
   narr("Der Bahnhof: der Bus, das Taxi, der Zug — и толпа. Из громкоговорителя — голос, строгий, как фрау Петерсен."),
-  { t: "say", who: "Lautsprecher", voice: "Eddy", de: ANSAGE, ru: "Внимание! Сегодня паром не ходит. Шторм! Садитесь на автобус!" },
+  { t: "say", who: "Lautsprecher", voice: "Eddy", de: ANSAGE, ru: "Внимание! Сегодня паром не ходит. Шторм! Садитесь на автобус!", learn: ["Achtung"] },
   {
     t: "hear",
     task: "Что объявили на вокзале?",
@@ -157,7 +158,10 @@ const bahnhof: SceneNode[] = [
       { icon: "🚕", de: "das Taxi", ru: "такси", note: "Такси до Gaarden — дорого. Хауке бы взял. Но Хауке ждёт машину." },
     ],
   },
+  { t: "say", who: "Tourist", voice: "Reed", de: "Entschuldigen Sie! Wie komme ich zum Hafen?", ru: "Извините! Как мне пройти к гавани?", learn: ["entschuldigen", "Wie komme ich zum …?"] },
+  narr("Гавань вы знаете: она {dort}, за мостом. Турист идёт {weiter} — под дождём, но довольный."),
   narr("Над залом таблички: {eingang}, {ausgang} и {auskunft}. Билеты продаёт {schalter}, но там очередь до дверей."),
+  narr("Справочная подписана дважды: {auskunft} и {information}. Слова два, а окошко одно."),
   {
     t: "game",
     task: "Найдите на табло автобус в Gaarden и время, когда он отходит.",
@@ -204,6 +208,7 @@ const bahnhof: SceneNode[] = [
   },
   narr("Наш {fahrer} усат и строг. Но чаек, кажется, любит."),
   fahrer("Na gut. Aber nur bis Gaarden! Und sie isst nichts im Bus!", "Ладно. Но только до Гаардена! И в автобусе она ничего не ест!"),
+  narr("До Gaarden — {circa} fünfzehn Minuten. Если чайка ничего не съест."),
   {
     t: "hear",
     task: "На каком условии водитель берёт чайку?",
@@ -221,6 +226,7 @@ const bahnhof: SceneNode[] = [
     ru: "В автобусе есть нельзя.",
   },
   narr("Над дверью табличка: Essen {verboten}. И ещё одна: {vorsicht}, двери!"),
+  narr("Двери здесь {automatisch}: закрываются сами, даже перед чайкой."),
   narr("Der Bus fährt. Die Möwe sieht die {fahrkarte} — и билет уже у неё в клюве. Контролёр — на следующей остановке!"),
   { t: "game", task: `Отнимите билет у чайки! ${RACE}`, hint: HINT_RACE, outcome: RACE_STAKES, c: race(["der Bus", "die Haltestelle", "die Linie", "einsteigen", "aussteigen", "umsteigen", "weit", "in der Nähe"]) },
   hauke("Sie hat die Fahrkarte! Und jetzt sitzt sie unter dem Sitz!", "Билет у неё! А теперь она сидит под сиденьем!"),
@@ -265,8 +271,8 @@ const bahnhof: SceneNode[] = [
 const fahrrad: SceneNode[] = [
   { t: "pic", src: "09-fahrrad.jpg", alt: "Хауке в жёлтой куртке на старом красном бабушкином велосипеде с корзинкой под дождём; у почты его останавливает почтальонша с жёлтым велосипедом и сумкой писем" },
   narr("Тем временем у киоска. Um neun — kein Auto. Um zehn — kein Auto. 10:15: Da kommt Frauke. Zu spät."),
-  frauke("Entschuldigung, Hauke! Ich war bei der Polizei. Die Entführung! Aber die Polizei lacht nur.", "Прости, Хауке! Я была в полиции. Похищение! А полиция только смеётся."),
-  { ...narr("Слух съездил в полицию и вернулся. Но Фрауке рассказывает его снова — уже Хауке."), set: { rumours: 1 } },
+  frauke("Entschuldigung, Hauke! Ich war bei der Polizei. Die Entführung! Aber die Polizei lacht nur.", "Прости, Хауке! Я была в полиции. Похищение! А полиция только смеётся.", ["lachen"]),
+  { ...narr("Слух съездил в полицию: {beamte} в окошке только посмеялся. Но Фрауке рассказывает его снова — уже Хауке."), set: { rumours: 1 } },
   frauke(VOLL, "А машина забита: рыбные булочки к Kieler Woche! Места для тебя нет."),
   {
     t: "hear",
@@ -280,6 +286,7 @@ const fahrrad: SceneNode[] = [
   narr("Велосипеду нельзя на {autobahn}: там только Auto и {lkw}. Каждый {kilometer} под дождём — как два."),
   { t: "gap", rule: ["stadt/mit-1"], task: "На чём Хауке едет в Гаарден?", text: "Hauke fährt mit ___ Fahrrad nach Gaarden.", options: ["dem", "der", "das"], answer: "dem", ru: "Хауке едет в Гаарден на велосипеде." },
   narr("Das Fahrrad von Oma ist alt und {rot}. Es regnet. In Gaarden Хауке крутит головой: где этот Farbenweg?"),
+  hauke("Das ist Omas Fahrrad. Alt, aber schnell!", "Это бабушкин велосипед. Старый, зато быстрый!"),
   narr("Vor der Post steht eine Frau mit einem gelben Fahrrad und einer großen Tasche: {traegerin}."),
   {
     t: "reply",
@@ -291,7 +298,7 @@ const fahrrad: SceneNode[] = [
       no("Entschuldigung! Wie komme ich nach Farbenweg?", "nach — для городов и стран. К улице — zum."),
     ],
   },
-  yilmaz("Zum Farbenweg? Ganz einfach: Der Farbenweg ist hinter der Post. Gehen Sie durch den Hinterhof!", "К Фарбенвегу? Проще простого: Фарбенвег — за почтой. Идите через задний двор!"),
+  yilmaz("Zum Farbenweg? Ganz einfach: Der Farbenweg ist hinter der Post. Gehen Sie durch den Hinterhof!", "К Фарбенвегу? Проще простого: Фарбенвег — за почтой. Идите через задний двор!", ["einfach", "durch"]),
   yilmaz("Ich bringe jeden Tag Post in den Farbenweg. Ich kenne alle!", "Я каждый день ношу почту на Фарбенвег. Я всех знаю!"),
   {
     t: "type",
@@ -442,7 +449,7 @@ const ampel: SceneNode[] = [
       answer: ["0:1:4", "1:1:4"],
     },
   },
-  elif("Mateo spricht drei Sprachen – und keine richtig! Nils hat den Text. Wir gehen links!", "Матео говорит на трёх языках — и ни на одном толком! У Нильса текст. Идём налево!"),
+  elif("Mateo spricht drei Sprachen – und keine richtig! Nils hat den Text. Wir gehen links!", "Матео говорит на трёх языках — и ни на одном толком! У Нильса текст. Идём налево!", ["der Text"]),
   {
     t: "pick",
     task: "Почему Элиф выбирает «links»?",
@@ -492,6 +499,7 @@ const cafe: SceneNode[] = [
   },
   narr("На столике кафе — {prospekt} для туристов. Главная {sehenswuerdigkeit} Gaarden, по нему, — рынок."),
   narr("Город можно {besichtigen} самому, а можно с гидом: {fuehrung} — по субботам."),
+  elif("Der Mann im Prospekt ist 1901 gestorben. Aber die Führung ist kostenlos!", "Человек из проспекта умер в 1901 году. Зато экскурсия бесплатная!", ["gestorben"]),
   {
     t: "look",
     task: "Рассмотрите вывеску в окне кафе.",
@@ -700,7 +708,7 @@ const hof: SceneNode[] = [
     ),
   },
   narr("15:00. An der Post — Dana, минута в минуту. Und die Werkstatt? Die Tür ist immer noch zu."),
-  dana("Beim Arzt dauert es immer lange. Glaubt mir – ich bin Ärztin!", "У врача всегда всё долго. Поверьте мне — я врач!"),
+  dana("Beim Arzt dauert es immer lange. Glaubt mir – ich bin Ärztin!", "У врача всегда всё долго. Поверьте мне — я врач!", ["dauern"]),
   {
     t: "hear",
     task: "Что Дана говорит о врачах?",
@@ -795,7 +803,7 @@ const abend: SceneNode[] = [
       oralSay(3, REQUEST, "🎫", "Eine Fahrkarte nach Gaarden, bitte!", "Билет до Гаардена, пожалуйста!"),
     ]),
   },
-  mateo("Willkommen zu Hause! Suppe für alle. Für die Möwe – nein!", "С возвращением! Суп для всех. Для чайки — нет!"),
+  mateo("Willkommen zu Hause! Suppe für alle. Für die Möwe – nein!", "С возвращением! Суп для всех. Для чайки — нет!", ["willkommen"]),
   {
     t: "game",
     rule: ["stadt/mit-1"],

@@ -1,0 +1,807 @@
+{
+ "date": "2026-11-15",
+ "scope": "Completion of A1 in the Moin scene prototype: 71 story expressions for exam words that were missing or heard without a card in chapters 1–10, and 28 voice lines that introduce them or bring back grammar rules in chapters 1–13",
+ "model": "k2-fsa/OmniVoice",
+ "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+ "candidatesPerPhrase": 3,
+ "asr": "openai/whisper-large-v3",
+ "notes": [
+  "Each phrase has three takes; the chosen take has the closest transcript, an end level below -32 dB and no fragment flagged by tails.py. tails.py passes on all 99 imported files.",
+  "Whisper writes numbers as digits (1,50, 130, 1901); these takes say the numbers in words. «tot» is transcribed as its homophone «Tod». «Herr Moin» is written as «Hermoin».",
+  "The single word «euer» was heard as «Oh ja» in nine takes, while the same word inside «ist das euer Plakat?» was transcribed correctly. The expression became «euer Plakat»; all three of its takes are transcribed correctly."
+ ],
+ "files": [
+  {
+   "file": "36d4ad0ca47f.m4a",
+   "text": "Achtung",
+   "voice": "Anna",
+   "seed": 20522510,
+   "heard": "Achtung!",
+   "endDb": -61.7
+  },
+  {
+   "file": "e1d235488440.m4a",
+   "text": "anmelden",
+   "voice": "Anna",
+   "seed": 20587680,
+   "heard": "Anmelden",
+   "endDb": -62.7
+  },
+  {
+   "file": "57f85d344325.m4a",
+   "text": "ausfüllen",
+   "voice": "Anna",
+   "seed": 20488931,
+   "heard": "Ausfüllen",
+   "endDb": -66.9
+  },
+  {
+   "file": "5cbce1055922.m4a",
+   "text": "besser",
+   "voice": "Anna",
+   "seed": 21100081,
+   "heard": "Besser.",
+   "endDb": -65.5
+  },
+  {
+   "file": "b81e32dff143.m4a",
+   "text": "ein bisschen",
+   "voice": "Anna",
+   "seed": 20343617,
+   "heard": "Ein bisschen.",
+   "endDb": -68.0
+  },
+  {
+   "file": "205cd0e9db49.m4a",
+   "text": "der Doktor, die Doktoren",
+   "voice": "Anna",
+   "seed": 20328041,
+   "heard": "Der Doktor, die Doktoren",
+   "endDb": -43.7
+  },
+  {
+   "file": "3676e1c1ffa2.m4a",
+   "text": "dir",
+   "voice": "Anna",
+   "seed": 20905184,
+   "heard": "Dir.",
+   "endDb": -67.1
+  },
+  {
+   "file": "36291a365409.m4a",
+   "text": "durch",
+   "voice": "Anna",
+   "seed": 20596056,
+   "heard": "Durch.",
+   "endDb": -56.2
+  },
+  {
+   "file": "d628262901fa.m4a",
+   "text": "einfach",
+   "voice": "Anna",
+   "seed": 20534456,
+   "heard": "Einfach.",
+   "endDb": -57.4
+  },
+  {
+   "file": "70ca0735cfe3.m4a",
+   "text": "feiern",
+   "voice": "Anna",
+   "seed": 20932867,
+   "heard": "Feiern",
+   "endDb": -69.3
+  },
+  {
+   "file": "1917aa268d5e.m4a",
+   "text": "fertig",
+   "voice": "Anna",
+   "seed": 20856510,
+   "heard": "Fertig.",
+   "endDb": -68.2
+  },
+  {
+   "file": "f757bb0083a0.m4a",
+   "text": "glauben",
+   "voice": "Anna",
+   "seed": 20857455,
+   "heard": "Glauben",
+   "endDb": -55.0
+  },
+  {
+   "file": "91a69985defe.m4a",
+   "text": "Herzliche Grüße",
+   "voice": "Anna",
+   "seed": 20547102,
+   "heard": "Herzliche Grüße!",
+   "endDb": -58.9
+  },
+  {
+   "file": "6e4fc09c853d.m4a",
+   "text": "holen",
+   "voice": "Anna",
+   "seed": 21223884,
+   "heard": "holen",
+   "endDb": -58.2
+  },
+  {
+   "file": "0fff591e18c7.m4a",
+   "text": "ihm",
+   "voice": "Anna",
+   "seed": 20498629,
+   "heard": "ihm",
+   "endDb": -61.6
+  },
+  {
+   "file": "942fb048fbe5.m4a",
+   "text": "kennen",
+   "voice": "Anna",
+   "seed": 21215796,
+   "heard": "Kennen",
+   "endDb": -61.0
+  },
+  {
+   "file": "7fbb5917fd07.m4a",
+   "text": "der Kiosk, die Kioske",
+   "voice": "Anna",
+   "seed": 20617255,
+   "heard": "Der Kiosk. Die Kioske.",
+   "endDb": -52.3
+  },
+  {
+   "file": "527a0741b73f.m4a",
+   "text": "der Kurs, die Kurse",
+   "voice": "Anna",
+   "seed": 20496031,
+   "heard": "Der Kurs. Die Kurse.",
+   "endDb": -54.2
+  },
+  {
+   "file": "c5cc6b40d0fa.m4a",
+   "text": "lachen",
+   "voice": "Anna",
+   "seed": 20679113,
+   "heard": "lachen",
+   "endDb": -58.3
+  },
+  {
+   "file": "5e0137c01151.m4a",
+   "text": "leise",
+   "voice": "Anna",
+   "seed": 20573489,
+   "heard": "Leise.",
+   "endDb": -58.2
+  },
+  {
+   "file": "d93ed43a169f.m4a",
+   "text": "geöffnet",
+   "voice": "Anna",
+   "seed": 21037439,
+   "heard": "Geöffnet.",
+   "endDb": -71.4
+  },
+  {
+   "file": "8ba742dc88ba.m4a",
+   "text": "reparieren",
+   "voice": "Anna",
+   "seed": 20825336,
+   "heard": "reparieren",
+   "endDb": -67.5
+  },
+  {
+   "file": "3ba279f14396.m4a",
+   "text": "schicken",
+   "voice": "Anna",
+   "seed": 20864293,
+   "heard": "Schicken",
+   "endDb": -59.3
+  },
+  {
+   "file": "ac943dadd605.m4a",
+   "text": "geschlossen",
+   "voice": "Anna",
+   "seed": 21200997,
+   "heard": "Geschlossen.",
+   "endDb": -70.2
+  },
+  {
+   "file": "6341d8e82637.m4a",
+   "text": "seit",
+   "voice": "Anna",
+   "seed": 20385798,
+   "heard": "Seit",
+   "endDb": -35.3
+  },
+  {
+   "file": "b0084ae535d4.m4a",
+   "text": "so",
+   "voice": "Anna",
+   "seed": 21031395,
+   "heard": "So.",
+   "endDb": -61.4
+  },
+  {
+   "file": "0f9b958618a0.m4a",
+   "text": "der Text, die Texte",
+   "voice": "Anna",
+   "seed": 21209775,
+   "heard": "Der Text, die Texte",
+   "endDb": -49.6
+  },
+  {
+   "file": "5fbd56f3b9aa.m4a",
+   "text": "tun",
+   "voice": "Anna",
+   "seed": 20547880,
+   "heard": "tun",
+   "endDb": -69.5
+  },
+  {
+   "file": "6f58f4fac3fc.m4a",
+   "text": "verstehen",
+   "voice": "Anna",
+   "seed": 21149003,
+   "heard": "Verstehen",
+   "endDb": -63.2
+  },
+  {
+   "file": "240997181a4b.m4a",
+   "text": "was für ein",
+   "voice": "Anna",
+   "seed": 20521673,
+   "heard": "Was für ein",
+   "endDb": -58.2
+  },
+  {
+   "file": "f2148b6b8ab8.m4a",
+   "text": "willkommen",
+   "voice": "Anna",
+   "seed": 20617543,
+   "heard": "Willkommen!",
+   "endDb": -66.9
+  },
+  {
+   "file": "d7842d2d86f6.m4a",
+   "text": "wunderbar",
+   "voice": "Anna",
+   "seed": 20890164,
+   "heard": "Wunderbar.",
+   "endDb": -57.4
+  },
+  {
+   "file": "8d594faa1ba5.m4a",
+   "text": "zahlen",
+   "voice": "Anna",
+   "seed": 20430883,
+   "heard": "Zahlen",
+   "endDb": -66.4
+  },
+  {
+   "file": "b734709c9c72.m4a",
+   "text": "der Osten",
+   "voice": "Anna",
+   "seed": 20755282,
+   "heard": "Der Osten",
+   "endDb": -66.8
+  },
+  {
+   "file": "e977e212966b.m4a",
+   "text": "die Dame, die Damen",
+   "voice": "Anna",
+   "seed": 20517946,
+   "heard": "Die Dame. Die Damen.",
+   "endDb": -59.6
+  },
+  {
+   "file": "0d9e88c6d069.m4a",
+   "text": "studieren",
+   "voice": "Anna",
+   "seed": 20993656,
+   "heard": "Studieren",
+   "endDb": -70.1
+  },
+  {
+   "file": "8c6b337e31c4.m4a",
+   "text": "leicht",
+   "voice": "Anna",
+   "seed": 20558628,
+   "heard": "leicht",
+   "endDb": -52.2
+  },
+  {
+   "file": "75ca599faa9c.m4a",
+   "text": "andere",
+   "voice": "Anna",
+   "seed": 20740732,
+   "heard": "Andere",
+   "endDb": -56.7
+  },
+  {
+   "file": "e91ec0b571cd.m4a",
+   "text": "die Schule, die Schulen",
+   "voice": "Anna",
+   "seed": 20668333,
+   "heard": "Die Schule, die Schulen",
+   "endDb": -64.3
+  },
+  {
+   "file": "671294ab484e.m4a",
+   "text": "der Kindergarten, die Kindergärten",
+   "voice": "Anna",
+   "seed": 20594333,
+   "heard": "Der Kindergarten, die Kindergärten",
+   "endDb": -60.9
+  },
+  {
+   "file": "c40f723ea957.m4a",
+   "text": "die Hausfrau, die Hausfrauen",
+   "voice": "Anna",
+   "seed": 20531686,
+   "heard": "Die Hausfrau, die Hausfrauen",
+   "endDb": -58.2
+  },
+  {
+   "file": "98a354df1e5e.m4a",
+   "text": "der Verwandte, die Verwandten",
+   "voice": "Anna",
+   "seed": 21276508,
+   "heard": "Der Verwandte, die Verwandten",
+   "endDb": -52.9
+  },
+  {
+   "file": "0fbe2cbb6853.m4a",
+   "text": "beide",
+   "voice": "Anna",
+   "seed": 20951266,
+   "heard": "Beide.",
+   "endDb": -57.2
+  },
+  {
+   "file": "a97270d43541.m4a",
+   "text": "die Pommes frites",
+   "voice": "Anna",
+   "seed": 20598207,
+   "heard": "Die Pommes frites",
+   "endDb": -61.5
+  },
+  {
+   "file": "1bf99b99d375.m4a",
+   "text": "am besten",
+   "voice": "Anna",
+   "seed": 20625220,
+   "heard": "Am besten.",
+   "endDb": -67.1
+  },
+  {
+   "file": "c11bcabedbc1.m4a",
+   "text": "wenig",
+   "voice": "Anna",
+   "seed": 21052432,
+   "heard": "Wenig.",
+   "endDb": -65.7
+  },
+  {
+   "file": "90c7065624e9.m4a",
+   "text": "anbieten",
+   "voice": "Anna",
+   "seed": 20477351,
+   "heard": "Anbieten",
+   "endDb": -59.7
+  },
+  {
+   "file": "12bc64348a05.m4a",
+   "text": "am meisten",
+   "voice": "Anna",
+   "seed": 20577445,
+   "heard": "Am meisten.",
+   "endDb": -56.9
+  },
+  {
+   "file": "01b6ea54f571.m4a",
+   "text": "kriegen",
+   "voice": "Anna",
+   "seed": 20388911,
+   "heard": "Kriegen",
+   "endDb": -63.1
+  },
+  {
+   "file": "5e98e79e0da0.m4a",
+   "text": "zufrieden",
+   "voice": "Anna",
+   "seed": 21196032,
+   "heard": "Zufrieden",
+   "endDb": -68.0
+  },
+  {
+   "file": "7c1dde28aa39.m4a",
+   "text": "tot",
+   "voice": "Anna",
+   "seed": 20371720,
+   "heard": "Tod",
+   "endDb": -66.9
+  },
+  {
+   "file": "2e3e91403245.m4a",
+   "text": "nächste",
+   "voice": "Anna",
+   "seed": 21014565,
+   "heard": "Nächste",
+   "endDb": -66.3
+  },
+  {
+   "file": "d55e5c2c1f12.m4a",
+   "text": "gegen",
+   "voice": "Anna",
+   "seed": 20298546,
+   "heard": "Gegen",
+   "endDb": -65.9
+  },
+  {
+   "file": "9f35f2122f9f.m4a",
+   "text": "der Bekannte, die Bekannten",
+   "voice": "Anna",
+   "seed": 20630126,
+   "heard": "Der Bekannte, die Bekannten",
+   "endDb": -56.7
+  },
+  {
+   "file": "9bce3b4228ff.m4a",
+   "text": "bekannt",
+   "voice": "Anna",
+   "seed": 21036733,
+   "heard": "Bekannt",
+   "endDb": -66.2
+  },
+  {
+   "file": "8d91a1a7e0a1.m4a",
+   "text": "die Halle, die Hallen",
+   "voice": "Anna",
+   "seed": 21177072,
+   "heard": "Die Halle, die Hallen",
+   "endDb": -65.5
+  },
+  {
+   "file": "b116a6c39db7.m4a",
+   "text": "der Blick, die Blicke",
+   "voice": "Anna",
+   "seed": 20511477,
+   "heard": "Der Blick. Die Blicke.",
+   "endDb": -62.6
+  },
+  {
+   "file": "13e7a242b2f1.m4a",
+   "text": "an sein",
+   "voice": "Anna",
+   "seed": 20930159,
+   "heard": "Ansein",
+   "endDb": -70.0
+  },
+  {
+   "file": "e3f8ce75ea7c.m4a",
+   "text": "vierte",
+   "voice": "Anna",
+   "seed": 20505658,
+   "heard": "Vierte",
+   "endDb": -56.2
+  },
+  {
+   "file": "c93941dde8eb.m4a",
+   "text": "abholen",
+   "voice": "Anna",
+   "seed": 20657833,
+   "heard": "Abholen",
+   "endDb": -46.8
+  },
+  {
+   "file": "b5967bb04643.m4a",
+   "text": "der Beamte, die Beamten",
+   "voice": "Anna",
+   "seed": 21148609,
+   "heard": "Der Beamte, die Beamten",
+   "endDb": -59.1
+  },
+  {
+   "file": "bb0a97b05205.m4a",
+   "text": "automatisch",
+   "voice": "Anna",
+   "seed": 21243045,
+   "heard": "Automatisch.",
+   "endDb": -50.8
+  },
+  {
+   "file": "2578a248daf1.m4a",
+   "text": "die Information, die Informationen",
+   "voice": "Anna",
+   "seed": 21255808,
+   "heard": "Die Information. Die Informationen.",
+   "endDb": -57.8
+  },
+  {
+   "file": "d8b3ae9bcb9c.m4a",
+   "text": "entschuldigen",
+   "voice": "Anna",
+   "seed": 20468250,
+   "heard": "Entschuldigen",
+   "endDb": -63.0
+  },
+  {
+   "file": "6699e7615ec6.m4a",
+   "text": "dort",
+   "voice": "Anna",
+   "seed": 21224452,
+   "heard": "Dort.",
+   "endDb": -65.8
+  },
+  {
+   "file": "63090aed3052.m4a",
+   "text": "weiter",
+   "voice": "Anna",
+   "seed": 20440993,
+   "heard": "Weiter",
+   "endDb": -63.4
+  },
+  {
+   "file": "167d91d06aa3.m4a",
+   "text": "circa",
+   "voice": "Anna",
+   "seed": 20339203,
+   "heard": "circa",
+   "endDb": -67.2
+  },
+  {
+   "file": "243878500e1c.m4a",
+   "text": "gestorben",
+   "voice": "Anna",
+   "seed": 20557786,
+   "heard": "Gestorben",
+   "endDb": -60.6
+  },
+  {
+   "file": "7dd4dab798ae.m4a",
+   "text": "erlauben",
+   "voice": "Anna",
+   "seed": 20280876,
+   "heard": "Erlauben",
+   "endDb": -67.1
+  },
+  {
+   "file": "ee3f33079180.m4a",
+   "text": "drücken",
+   "voice": "Anna",
+   "seed": 20753295,
+   "heard": "Drücken",
+   "endDb": -48.1
+  },
+  {
+   "file": "a5bfc6f55881.m4a",
+   "text": "Ich studiere hier in Kiel.",
+   "voice": "Rocko",
+   "seed": 20565345,
+   "heard": "Ich studiere hier in Kiel.",
+   "endDb": -63.1
+  },
+  {
+   "file": "13c19454b0c4.m4a",
+   "text": "Auf Wiedersehen, Hauke! Tschüss!",
+   "voice": "Sandy",
+   "seed": 20470978,
+   "heard": "Auf Wiedersehen, Hauke. Tschüss!",
+   "endDb": -51.0
+  },
+  {
+   "file": "10bde89982c2.m4a",
+   "text": "Lotte, Krümel – ist das euer Plakat? Toll!",
+   "voice": "Rocko",
+   "seed": 20498978,
+   "heard": "Lotte Krümel, ist das euer Plakat? Toll!",
+   "endDb": -59.1
+  },
+  {
+   "file": "141b8cf567df.m4a",
+   "text": "Zahlen, bitte!",
+   "voice": "Rocko",
+   "seed": 20826687,
+   "heard": "Zahlen bitte!",
+   "endDb": -63.2
+  },
+  {
+   "file": "55e2ef226735.m4a",
+   "text": "Ich habe Durst! Noch eine Cola, bitte!",
+   "voice": "Rocko",
+   "seed": 21240149,
+   "heard": "Ich habe Durst. Noch eine Cola, bitte.",
+   "endDb": -66.3
+  },
+  {
+   "file": "e9c8d20d4dc4.m4a",
+   "text": "Herr Moin kriegt noch einen Euro fünfzig!",
+   "voice": "Shelley",
+   "seed": 21095106,
+   "heard": "Hermoin kriegt noch einen Euro 50.",
+   "endDb": -63.4
+  },
+  {
+   "file": "efc13b9cd481.m4a",
+   "text": "Die Möwe liegt da und sagt nichts … Ist sie tot?",
+   "voice": "Rocko",
+   "seed": 21137215,
+   "heard": "Die Möwe liegt da und sagt nichts. Ist sie tot?",
+   "endDb": -65.6
+  },
+  {
+   "file": "bf8f306ceb4c.m4a",
+   "text": "Tot? Nein! Sie schläft. Ich kümmere mich um sie.",
+   "voice": "Flo",
+   "seed": 20941979,
+   "heard": "Tot? Nein, sie schläft. Ich kümmere mich um sie.",
+   "endDb": -56.3
+  },
+  {
+   "file": "7d7d1f19b55a.m4a",
+   "text": "Am Freitag habe ich hier immer viel Arbeit!",
+   "voice": "Sandy",
+   "seed": 20439384,
+   "heard": "Am Freitag habe ich hier immer viel Arbeit.",
+   "endDb": -56.7
+  },
+  {
+   "file": "8666ea7813f0.m4a",
+   "text": "Der Tee fängt um halb sechs an. Wie immer!",
+   "voice": "Rocko",
+   "seed": 20793087,
+   "heard": "Der Tee fängt um halb sechs an, wie immer.",
+   "endDb": -66.6
+  },
+  {
+   "file": "a5d5e61ddcaa.m4a",
+   "text": "Ins Kino gehen? Nein – segeln! Das verstehe ich nicht.",
+   "voice": "Anna",
+   "seed": 20594826,
+   "heard": "Ins Kino gehen? Nein, segeln, das verstehe ich nicht.",
+   "endDb": -66.9
+  },
+  {
+   "file": "8943ce8e73c2.m4a",
+   "text": "Und ich habe am Mittwoch Zeit!",
+   "voice": "Rocko",
+   "seed": 20517410,
+   "heard": "Und ich habe am Mittwoch Zeit.",
+   "endDb": -63.4
+  },
+  {
+   "file": "2e1a46dff33e.m4a",
+   "text": "Und hier: Nebenkosten, hundertdreißig Euro!",
+   "voice": "Flo",
+   "seed": 20386172,
+   "heard": "Und hier, Nebenkosten 130 Euro.",
+   "endDb": -38.9
+  },
+  {
+   "file": "227888333743.m4a",
+   "text": "Das Licht ist an! Herr Jensen ist nicht weit.",
+   "voice": "Flo",
+   "seed": 20754625,
+   "heard": "Das Licht ist an. Herr Jensen ist nicht weit.",
+   "endDb": -44.4
+  },
+  {
+   "file": "c6cdbc9a7c71.m4a",
+   "text": "Um drei hole ich euch an der Post ab. Dann fahren wir zusammen!",
+   "voice": "Anna",
+   "seed": 21113199,
+   "heard": "Um drei hole ich euch an der Post ab. Dann fahren wir zusammen.",
+   "endDb": -48.6
+  },
+  {
+   "file": "319d3c7fb6e2.m4a",
+   "text": "Entschuldigen Sie! Wie komme ich zum Hafen?",
+   "voice": "Reed",
+   "seed": 20906208,
+   "heard": "Entschuldigen Sie, wie komme ich zum Hafen?",
+   "endDb": -43.5
+  },
+  {
+   "file": "4827273c47e3.m4a",
+   "text": "Das ist Omas Fahrrad. Alt, aber schnell!",
+   "voice": "Rocko",
+   "seed": 20455346,
+   "heard": "Das ist Omas Fahrrad. Alt, aber schnell.",
+   "endDb": -57.3
+  },
+  {
+   "file": "fcb8322769e4.m4a",
+   "text": "Der Mann im Prospekt ist 1901 gestorben. Aber die Führung ist kostenlos!",
+   "voice": "Flo",
+   "seed": 20894771,
+   "heard": "Der Mann im Prospekt ist 1901 gestorben, aber die Führung ist kostenlos.",
+   "endDb": -47.8
+  },
+  {
+   "file": "ee666415a127.m4a",
+   "text": "Gute Besserung, Hauke! Und viel Tee!",
+   "voice": "Anna",
+   "seed": 20490853,
+   "heard": "Gute Besserung Hauke und viel Tee!",
+   "endDb": -54.5
+  },
+  {
+   "file": "afc74f5dbf59.m4a",
+   "text": "Guten Tag! Was kann ich für Sie tun?",
+   "voice": "Shelley",
+   "seed": 21173463,
+   "heard": "Guten Tag, was kann ich für Sie tun?",
+   "endDb": -36.4
+  },
+  {
+   "file": "7cd6b68ed8b5.m4a",
+   "text": "Das Rezept ist da. Aber die Versichertenkarte fehlt!",
+   "voice": "Shelley",
+   "seed": 20929412,
+   "heard": "Das Rezept ist da, aber die Versichertenkarte fehlt.",
+   "endDb": -63.8
+  },
+  {
+   "file": "ff275c7a2fe9.m4a",
+   "text": "Zu Fuß – über zwanzig Minuten! Und jetzt tut mein Fuß weh.",
+   "voice": "Eddy",
+   "seed": 20579977,
+   "heard": "Zu Fuß über 20 Minuten. Und jetzt tut mein Fuß weh.",
+   "endDb": -56.8
+  },
+  {
+   "file": "b420840646f9.m4a",
+   "text": "Und ich hätte gern ein Frühstück, bitte!",
+   "voice": "Eddy",
+   "seed": 21218073,
+   "heard": "Und ich hätte gern ein Frühstück, bitte.",
+   "endDb": -61.7
+  },
+  {
+   "file": "969a32adf28c.m4a",
+   "text": "Ich habe über sechzig Minuten gewartet! Mein Kopf tut weh.",
+   "voice": "Sandy",
+   "seed": 20659547,
+   "heard": "Ich habe über 60 Minuten gewartet. Mein Kopf tut weh.",
+   "endDb": -53.7
+  },
+  {
+   "file": "6150fb7a4ec6.m4a",
+   "text": "Ist dieses Notizbuch für mich? Danke! Ich mag Notizbücher.",
+   "voice": "Eddy",
+   "seed": 20643669,
+   "heard": "Ist dieses Notizbuch für mich? Danke, ich mag Notizbücher.",
+   "endDb": -58.5
+  },
+  {
+   "file": "c365f7a0ad2f.m4a",
+   "text": "Wo ist der Kuchen? … Unter dem Tisch! Und die Möwe isst ihn. Das ist unmöglich!",
+   "voice": "Reed",
+   "seed": 20876687,
+   "heard": "Wo ist der Kuchen? Unter dem Tisch. Und die Möwe isst ihn. Das ist unmöglich.",
+   "endDb": -58.6
+  },
+  {
+   "file": "733369ba87c6.m4a",
+   "text": "Und was soll ich in das Logbuch schreiben?",
+   "voice": "Flo",
+   "seed": 20619494,
+   "heard": "Und was soll ich in das Logbuch schreiben?",
+   "endDb": -46.8
+  },
+  {
+   "file": "9eb23d5ce426.m4a",
+   "text": "Wenn du nichts weißt – schreib Moin! Opas Schild ist wieder da, denn wir haben es zusammen gefunden.",
+   "voice": "Rocko",
+   "seed": 21126214,
+   "heard": "Wenn du nichts weißt, schreib Moin. Opas Schild ist wieder da, denn wir haben es zusammengefunden.",
+   "endDb": -60.3
+  },
+  {
+   "file": "52b3beda8e9a.m4a",
+   "text": "euer Plakat",
+   "voice": "Anna",
+   "seed": 20886953,
+   "heard": "Euer Plakat",
+   "endDb": -52.0
+  }
+ ]
+}
