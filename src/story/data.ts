@@ -1012,7 +1012,7 @@ export const phrases: Record<string, Phrase> = {
   heimat: { ru: "родина", de: "die Heimat", pl: "-", note: "Meine Heimat ist Kasachstan. Место, откуда человек родом." },
   europa: { ru: "Европа", de: "Europa", note: "Без артикля, как Deutschland: in Europa, aus Europa." },
   international: { ru: "международный", de: "international", note: "Kieler Woche ist international: команды из многих стран." },
-  vorstellen: { ru: "представлять(ся)", de: "sich vorstellen", note: "Ich stelle mich vor: Ich heiße … — Представлюсь: меня зовут …" },
+  vorstellen: { ru: "представиться", de: "sich vorstellen", note: "Ich stelle mich vor: Ich heiße … — Представлюсь: меня зовут …" },
   kennenlernen: { ru: "знакомиться", de: "kennenlernen", note: "Wir möchten Sie kennenlernen. — Мы хотим с вами познакомиться." },
   // Глава 2 — числа, телефон, вопросы и ответы.
   dreizehn: { ru: "тринадцать", de: "dreizehn", note: "drei + zehn: от 13 до 19 единицы звучат первыми." },
@@ -1028,7 +1028,7 @@ export const phrases: Record<string, Phrase> = {
   neunzig: { ru: "девяносто", de: "neunzig", note: "neun + zig." },
   tausend: { ru: "тысяча", de: "tausend", note: "(ein)tausend; 2000 — zweitausend." },
   million: { ru: "миллион", de: "die Million", pl: "Millionen", note: "Eine Million Euro — миллион евро. Пишется с большой буквы, как существительное." },
-  vorwahl: { ru: "код (номера)", de: "die Vorwahl", pl: "Vorwahlen", note: "Vorwahl von Kiel: 0431. У мобильных — 015…, 016…, 017…" },
+  vorwahl: { ru: "телефонный код", de: "die Vorwahl", pl: "Vorwahlen", note: "Vorwahl von Kiel: 0431. У мобильных — 015…, 016…, 017…" },
   anruf: { ru: "звонок", de: "der Anruf", pl: "Anrufe", note: "От anrufen — позвонить." },
   anrufbeantworter: { ru: "автоответчик", de: "der Anrufbeantworter", pl: "Anrufbeantworter", note: "der Anruf + beantworten — отвечать на звонки." },
   telefonieren: { ru: "звонить, говорить по телефону", de: "telefonieren", note: "Ich telefoniere mit Nils. Ударение: te·le·fo·NIE·ren." },
@@ -1074,7 +1074,7 @@ export const phrases: Record<string, Phrase> = {
   // Глава 5 — одежда, магазин, деньги.
   kleidung: { ru: "одежда", de: "die Kleidung", pl: "-", note: "Всё, что носят: Hose, Hemd, Jacke." },
   anziehen: { ru: "надевать", de: "anziehen", note: "Ich ziehe die Jacke an. Приставка an уходит в конец." },
-  ausziehen: { ru: "снимать (одежду)", de: "ausziehen", note: "Er zieht die Jacke aus. Ещё значит «съезжать с квартиры»." },
+  ausziehen: { ru: "снимать", de: "ausziehen", note: "Er zieht die Jacke aus. Ещё значит «съезжать с квартиры»." },
   geschaeft: { ru: "магазин", de: "das Geschäft", pl: "Geschäfte", note: "Магазин, а ещё — дело, бизнес: Das Geschäft läuft gut." },
   verkaufen: { ru: "продавать", de: "verkaufen", note: "kaufen — покупать, verkaufen — продавать. Приставка ver- не отделяется." },
   preis: { ru: "цена", de: "der Preis", pl: "Preise", note: "Was kostet das? — спрашивают о цене. Ещё Preis — это приз." },
