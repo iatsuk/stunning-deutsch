@@ -214,6 +214,30 @@ if (!ONLY) {
   });
 }
 
+if (!ONLY) {
+  // Игра — курс A1, и её записи только OmniVoice (A1-PLAN.md). Старую запись урока, которую игра
+  // начала использовать, перезаписывают через scripts/tts/revoice.json.
+  const used = JSON.stringify([storyAudio, a1Words, storyRules]).match(/audio\/[0-9a-f]{12}\.m4a/g) ?? [];
+  for (const line of new Set(used.map((src) => audio.get(src.slice("audio/".length))).filter((e) => e.model !== audioConfig.model).map((e) => `${e.voice}: ${e.text}`)))
+    fail("story", `запись «${line}» не OmniVoice: добавьте фразу в scripts/tts/revoice.json`);
+}
+
+// Скрытый уровень (status: soon) без озвучки: его записи были Qwen, а уровень переозвучат, когда
+// переработают в формат истории. В учёт, манифест и импорт идут только записи открытых страниц и игры.
+const hiddenLevels = new Set(catalog.levels.filter((level) => level.status !== "open").map((level) => level.id));
+const unvoice = (node) => {
+  if (Array.isArray(node)) node.forEach(unvoice);
+  else if (node && typeof node === "object") {
+    delete node.audio;
+    Object.values(node).forEach(unvoice);
+  }
+};
+for (const item of [...topics, ...assessments]) if (hiddenLevels.has(item.level)) unvoice(item);
+const voiced = new Set(
+  (JSON.stringify([topics, assessments, storyAudio, a1Words, storyRules]).match(/audio\/[0-9a-f]{12}\.m4a/g) ?? []).map((src) => src.slice("audio/".length)),
+);
+for (const file of [...audio.keys()]) if (!voiced.has(file)) audio.delete(file);
+
 for (const message of warnings) console.warn(`  ! ${message}`);
 if (errors.length) {
   console.error(`\n${errors.length} ошибок в контенте:\n`);

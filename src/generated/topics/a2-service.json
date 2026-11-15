@@ -72,50 +72,42 @@
     {
      "who": "M",
      "de": "Guten Tag. Ich habe eine blaue Jacke in Größe M bestellt.",
-     "ru": "Добрый день. Я заказал синюю куртку размера M.",
-     "audio": "audio/fae36e56c3b3.m4a"
+     "ru": "Добрый день. Я заказал синюю куртку размера M."
     },
     {
      "who": "K",
      "de": "Welche Jacke haben Sie bekommen?",
-     "ru": "Какую куртку вы получили?",
-     "audio": "audio/d8a24994ce01.m4a"
+     "ru": "Какую куртку вы получили?"
     },
     {
      "who": "M",
      "de": "Diese hier ist Größe S. Sie ist mir zu klein.",
-     "ru": "Вот эта размера S. Она мне слишком мала.",
-     "audio": "audio/4d43010496a6.m4a"
+     "ru": "Вот эта размера S. Она мне слишком мала."
     },
     {
      "who": "K",
      "de": "Haben Sie die Bestätigung dabei?",
-     "ru": "У вас с собой есть подтверждение?",
-     "audio": "audio/521aee7a02ed.m4a"
+     "ru": "У вас с собой есть подтверждение?"
     },
     {
      "who": "M",
      "de": "Ja. Könnten Sie die Bestellung bitte prüfen?",
-     "ru": "Да. Не могли бы вы проверить заказ?",
-     "audio": "audio/cddcdd1a8457.m4a"
+     "ru": "Да. Не могли бы вы проверить заказ?"
     },
     {
      "who": "K",
      "de": "Gern. Welche Größe brauchen Sie?",
-     "ru": "Охотно. Какой размер вам нужен?",
-     "audio": "audio/e89debda185d.m4a"
+     "ru": "Охотно. Какой размер вам нужен?"
     },
     {
      "who": "M",
      "de": "Größe M. Die Jacke soll groß genug und nicht zu teuer sein.",
-     "ru": "Размер M. Куртка должна быть достаточно большой и не слишком дорогой.",
-     "audio": "audio/a37c207415df.m4a"
+     "ru": "Размер M. Куртка должна быть достаточно большой и не слишком дорогой."
     },
     {
      "who": "K",
      "de": "Wir haben zwei Modelle in M. Möchten Sie sie anprobieren?",
-     "ru": "У нас есть две модели M. Хотите их примерить?",
-     "audio": "audio/b7b2e99c7f0a.m4a"
+     "ru": "У нас есть две модели M. Хотите их примерить?"
     }
    ]
   }
@@ -129,85 +121,73 @@
      "de": "bestellen",
      "ru": "заказывать",
      "gender": null,
-     "plural": null,
-     "audio": "audio/768f5441d0fd.m4a"
+     "plural": null
     },
     {
      "de": "bekommen",
      "ru": "получать",
      "gender": null,
-     "plural": null,
-     "audio": "audio/a196e2019f65.m4a"
+     "plural": null
     },
     {
      "de": "prüfen",
      "ru": "проверять",
      "gender": null,
-     "plural": null,
-     "audio": "audio/1619ac4f6c63.m4a"
+     "plural": null
     },
     {
      "de": "anprobieren",
      "ru": "примерять",
      "gender": null,
-     "plural": null,
-     "audio": "audio/bf23350d4b58.m4a"
+     "plural": null
     },
     {
      "de": "die Bestellung",
      "ru": "заказ",
      "gender": "f",
-     "plural": "Bestellungen",
-     "audio": "audio/87018f571e3e.m4a"
+     "plural": "Bestellungen"
     },
     {
      "de": "die Bestätigung",
      "ru": "подтверждение",
      "gender": "f",
-     "plural": "Bestätigungen",
-     "audio": "audio/da1596cb22b8.m4a"
+     "plural": "Bestätigungen"
     },
     {
      "de": "die Größe",
      "ru": "размер",
      "gender": "f",
-     "plural": "Größen",
-     "audio": "audio/01379909260f.m4a"
+     "plural": "Größen"
     },
     {
      "de": "die Farbe",
      "ru": "цвет",
      "gender": "f",
-     "plural": "Farben",
-     "audio": "audio/f452656b0e73.m4a"
+     "plural": "Farben"
     },
     {
      "de": "das Modell",
      "ru": "модель",
      "gender": "n",
-     "plural": "Modelle",
-     "audio": "audio/ef4e983d1987.m4a"
+     "plural": "Modelle"
     },
     {
      "de": "der Beleg",
      "ru": "чек, подтверждающий документ",
      "gender": "m",
-     "plural": "Belege",
-     "audio": "audio/4591c810d54f.m4a"
+     "plural": "Belege"
     },
     {
      "de": "groß genug",
      "ru": "достаточно большой",
      "gender": null,
-     "plural": null,
-     "audio": "audio/a19593d5705d.m4a"
+     "plural": null
     },
     {
      "de": "zu klein",
      "ru": "слишком маленький",
      "gender": null,
-     "plural": null,
-     "audio": "audio/950cb69a387c.m4a"
+     "plural": null
     }
    ]
   }
@@ -331,16 +311,13 @@
    "word": "Bestellt – bekommen – Wunsch",
    "sample": [
     {
-     "de": "Ich habe Größe M bestellt, aber Größe S bekommen.",
-     "audio": "audio/79b82a4a17ab.m4a"
+     "de": "Ich habe Größe M bestellt, aber Größe S bekommen."
     },
     {
-     "de": "Diese Jacke ist mir zu klein.",
-     "audio": "audio/40d4f4446b69.m4a"
+     "de": "Diese Jacke ist mir zu klein."
     },
     {
-     "de": "Könnten Sie die Bestellung bitte prüfen?",
-     "audio": "audio/2ba5d4c05cad.m4a"
+     "de": "Könnten Sie die Bestellung bitte prüfen?"
     }
    ]
   }
@@ -534,8 +511,7 @@
       ],
       "punct": "?",
       "plain": "Könnten Sie die Bestellung bitte prüfen?",
-      "ru": "Не могли бы вы проверить заказ?",
-      "audio": "audio/2ba5d4c05cad.m4a"
+      "ru": "Не могли бы вы проверить заказ?"
      }
     ]
    }
@@ -591,8 +567,7 @@
       ],
       "punct": "?",
       "plain": "Könnten Sie die Bestellung bitte prüfen?",
-      "ru": "Не могли бы вы проверить заказ?",
-      "audio": "audio/2ba5d4c05cad.m4a"
+      "ru": "Не могли бы вы проверить заказ?"
      }
     ]
    }
@@ -648,8 +623,7 @@
       ],
       "punct": "?",
       "plain": "Könnten Sie die Bestellung bitte prüfen?",
-      "ru": "Не могли бы вы проверить заказ?",
-      "audio": "audio/2ba5d4c05cad.m4a"
+      "ru": "Не могли бы вы проверить заказ?"
      }
     ]
    }
@@ -704,8 +678,7 @@
       ],
       "punct": "?",
       "plain": "Könnten Sie die Bestellung bitte prüfen?",
-      "ru": "Не могли бы вы проверить заказ?",
-      "audio": "audio/2ba5d4c05cad.m4a"
+      "ru": "Не могли бы вы проверить заказ?"
      }
     ],
     "task": "order"
@@ -762,8 +735,7 @@
       ],
       "punct": "?",
       "plain": "Könnten Sie die Bestellung bitte prüfen?",
-      "ru": "Не могли бы вы проверить заказ?",
-      "audio": "audio/2ba5d4c05cad.m4a"
+      "ru": "Не могли бы вы проверить заказ?"
      }
     ],
     "task": "order"
@@ -810,8 +782,7 @@
       ],
       "punct": "?",
       "plain": "Könnten Sie die Bestellung bitte prüfen?",
-      "ru": "Не могли бы вы проверить заказ?",
-      "audio": "audio/2ba5d4c05cad.m4a"
+      "ru": "Не могли бы вы проверить заказ?"
      }
     ],
     "task": "order",
@@ -868,8 +839,7 @@
       ],
       "punct": "?",
       "plain": "Könnten Sie die Bestellung bitte prüfen?",
-      "ru": "Не могли бы вы проверить заказ?",
-      "audio": "audio/2ba5d4c05cad.m4a"
+      "ru": "Не могли бы вы проверить заказ?"
      }
     ],
     "task": "ads"
@@ -926,8 +896,7 @@
       ],
       "punct": "?",
       "plain": "Könnten Sie die Bestellung bitte prüfen?",
-      "ru": "Не могли бы вы проверить заказ?",
-      "audio": "audio/2ba5d4c05cad.m4a"
+      "ru": "Не могли бы вы проверить заказ?"
      }
     ],
     "task": "ads"
@@ -974,8 +943,7 @@
       ],
       "punct": "?",
       "plain": "Könnten Sie die Bestellung bitte prüfen?",
-      "ru": "Не могли бы вы проверить заказ?",
-      "audio": "audio/2ba5d4c05cad.m4a"
+      "ru": "Не могли бы вы проверить заказ?"
      }
     ],
     "task": "ads",
@@ -1032,8 +1000,7 @@
       ],
       "punct": "?",
       "plain": "Könnten Sie die Bestellung bitte prüfen?",
-      "ru": "Не могли бы вы проверить заказ?",
-      "audio": "audio/2ba5d4c05cad.m4a"
+      "ru": "Не могли бы вы проверить заказ?"
      }
     ],
     "task": "talk",
@@ -1091,8 +1058,7 @@
       ],
       "punct": "?",
       "plain": "Könnten Sie die Bestellung bitte prüfen?",
-      "ru": "Не могли бы вы проверить заказ?",
-      "audio": "audio/2ba5d4c05cad.m4a"
+      "ru": "Не могли бы вы проверить заказ?"
      }
     ],
     "task": "talk",
@@ -1140,8 +1106,7 @@
       ],
       "punct": "?",
       "plain": "Könnten Sie die Bestellung bitte prüfen?",
-      "ru": "Не могли бы вы проверить заказ?",
-      "audio": "audio/2ba5d4c05cad.m4a"
+      "ru": "Не могли бы вы проверить заказ?"
      }
     ],
     "task": "talk",
@@ -1161,8 +1126,7 @@
     "Welches"
    ],
    "answer": 0,
-   "why": "Akkusativ мужского рода.",
-   "audio": "audio/3cb9e7500d83.m4a"
+   "why": "Akkusativ мужского рода."
   },
   {
    "id": "a2-service-2",
@@ -1174,8 +1138,7 @@
     "Welches"
    ],
    "answer": 0,
-   "why": "Женский род.",
-   "audio": "audio/c49771904c62.m4a"
+   "why": "Женский род."
   },
   {
    "id": "a2-service-3",
@@ -1187,8 +1150,7 @@
     "Welche"
    ],
    "answer": 0,
-   "why": "Средний род.",
-   "audio": "audio/908307af9b99.m4a"
+   "why": "Средний род."
   },
   {
    "id": "a2-service-4",
@@ -1200,8 +1162,7 @@
     "mehr"
    ],
    "answer": 0,
-   "why": "Слишком маленькая.",
-   "audio": "audio/d0a57f1f4c18.m4a"
+   "why": "Слишком маленькая."
   },
   {
    "id": "a2-service-5",
@@ -1213,8 +1174,7 @@
     "viel"
    ],
    "answer": 0,
-   "why": "Genug после прилагательного.",
-   "audio": "audio/b05eeed33f1b.m4a"
+   "why": "Genug после прилагательного."
   },
   {
    "id": "a2-service-6",
@@ -1227,15 +1187,13 @@
     "keine"
    ],
    "answer": 0,
-   "why": "Genug перед существительным.",
-   "audio": "audio/38d52c1a4501.m4a"
+   "why": "Genug перед существительным."
   },
   {
    "id": "a2-service-7",
    "type": "order",
    "ru": "Какой размер вам нужен?",
-   "de": "Welche Größe brauchen Sie?",
-   "audio": "audio/53fbd439dfbe.m4a"
+   "de": "Welche Größe brauchen Sie?"
   },
   {
    "id": "a2-service-8",
@@ -1245,8 +1203,7 @@
     "Mir ist diese Jacke zu klein.",
     "Zu klein ist mir diese Jacke."
    ],
-   "de": "Diese Jacke ist mir zu klein.",
-   "audio": "audio/40d4f4446b69.m4a"
+   "de": "Diese Jacke ist mir zu klein."
   },
   {
    "id": "a2-service-9",
@@ -1255,8 +1212,7 @@
    "also": [
     "Groß genug ist die Jacke."
    ],
-   "de": "Die Jacke ist groß genug.",
-   "audio": "audio/b05eeed33f1b.m4a"
+   "de": "Die Jacke ist groß genug."
   },
   {
    "id": "a2-service-10",
@@ -1266,8 +1222,7 @@
     "Genug Zeit haben wir.",
     "Zeit haben wir genug."
    ],
-   "de": "Wir haben genug Zeit.",
-   "audio": "audio/38d52c1a4501.m4a"
+   "de": "Wir haben genug Zeit."
   },
   {
    "id": "a2-service-11",
@@ -1276,8 +1231,7 @@
    "also": [
     "Größe M habe ich bestellt."
    ],
-   "de": "Ich habe Größe M bestellt.",
-   "audio": "audio/6a738d40b704.m4a"
+   "de": "Ich habe Größe M bestellt."
   },
   {
    "id": "a2-service-12",
@@ -1286,8 +1240,7 @@
    "also": [
     "Könnten Sie bitte die Bestellung prüfen?"
    ],
-   "de": "Könnten Sie die Bestellung bitte prüfen?",
-   "audio": "audio/2ba5d4c05cad.m4a"
+   "de": "Könnten Sie die Bestellung bitte prüfen?"
   }
  ],
  "case": {

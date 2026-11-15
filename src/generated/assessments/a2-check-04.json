@@ -39,12 +39,10 @@
    ],
    "recordings": [
     {
-     "text": "Hallo, hier ist Jonas. Der Bücherabend ist nicht am Mittwoch, sondern am Donnerstag. Am Mittwoch muss ich arbeiten. Bitte sag Nora Bescheid.",
-     "audio": "audio/8854dc10a356.m4a"
+     "text": "Hallo, hier ist Jonas. Der Bücherabend ist nicht am Mittwoch, sondern am Donnerstag. Am Mittwoch muss ich arbeiten. Bitte sag Nora Bescheid."
     },
     {
-     "text": "Hier ist Nora. Bitte gib mir die kleine Kiste mit den Büchern. Die große Tasche ist für Jonas. Danke!",
-     "audio": "audio/36fde35cc060.m4a"
+     "text": "Hier ist Nora. Bitte gib mir die kleine Kiste mit den Büchern. Die große Tasche ist für Jonas. Danke!"
     }
    ],
    "sample": []

@@ -65,13 +65,13 @@
      "who": "P",
      "de": "Praxis Dr. Hoffmann, guten Morgen!",
      "ru": "Практика доктора Хофман, доброе утро!",
-     "audio": "audio/686a710a93d3.m4a"
+     "audio": "audio/ca698d5f75d0.m4a"
     },
     {
      "who": "M",
      "de": "Guten Morgen, hier ist Mateo Fernández. Ich brauche einen Termin, bitte.",
      "ru": "Доброе утро, это Матео Фернандес. Мне нужно записаться на приём.",
-     "audio": "audio/03a8225a386e.m4a"
+     "audio": "audio/1d92d3443b77.m4a"
     },
     {
      "who": "P",
@@ -83,19 +83,19 @@
      "who": "M",
      "de": "Ich habe Halsschmerzen und Kopfschmerzen. Und ich habe Fieber.",
      "ru": "У меня болит горло и голова. И у меня температура.",
-     "audio": "audio/ffc951b18c3f.m4a"
+     "audio": "audio/9988d733131a.m4a"
     },
     {
      "who": "P",
      "de": "Können Sie heute um Viertel nach elf kommen?",
      "ru": "Можете прийти сегодня в четверть двенадцатого?",
-     "audio": "audio/8b22be109482.m4a"
+     "audio": "audio/748013eff807.m4a"
     },
     {
      "who": "M",
      "de": "Ja, das geht. Muss ich etwas mitbringen?",
      "ru": "Да, могу. Мне нужно что-то взять с собой?",
-     "audio": "audio/b109d9704589.m4a"
+     "audio": "audio/44d094145828.m4a"
     },
     {
      "who": "P",
@@ -113,7 +113,7 @@
      "who": "P",
      "de": "Gute Besserung, Herr Fernández. Bis später!",
      "ru": "Выздоравливайте, господин Фернандес. До встречи!",
-     "audio": "audio/abc27020283e.m4a"
+     "audio": "audio/1751ea539341.m4a"
     }
    ]
   },
@@ -142,7 +142,7 @@
      "who": "M",
      "de": "Ja, leider. Ich habe Fieber, und mein Hals tut weh.",
      "ru": "Да, к сожалению. У меня температура, и болит горло.",
-     "audio": "audio/7f17498bcebd.m4a"
+     "audio": "audio/9b94fd8320e2.m4a"
     },
     {
      "who": "A",
@@ -154,7 +154,7 @@
      "who": "M",
      "de": "Ich muss drei Tage im Bett bleiben. Und ich darf keinen Sport machen.",
      "ru": "Мне нужно три дня лежать в постели. И спортом заниматься нельзя.",
-     "audio": "audio/9db8294d09c6.m4a"
+     "audio": "audio/e7e7a83df6b5.m4a"
     },
     {
      "who": "A",
@@ -166,7 +166,7 @@
      "who": "M",
      "de": "Ja, danke für deine Hilfe!",
      "ru": "Да, спасибо за помощь!",
-     "audio": "audio/6185236e2b6d.m4a"
+     "audio": "audio/667582285154.m4a"
     },
     {
      "who": "A",
@@ -184,7 +184,7 @@
      "who": "A",
      "de": "Brot, alles klar. Gute Besserung, Mateo!",
      "ru": "Хлеб, понятно. Выздоравливай, Матео!",
-     "audio": "audio/3987285d40fe.m4a"
+     "audio": "audio/650a0d9a0059.m4a"
     }
    ]
   }
@@ -199,63 +199,63 @@
      "ru": "голова",
      "gender": "m",
      "plural": "Köpfe",
-     "audio": "audio/0a9af49274da.m4a"
+     "audio": "audio/1a9d1024e064.m4a"
     },
     {
      "de": "das Auge",
      "ru": "глаз",
      "gender": "n",
      "plural": "Augen",
-     "audio": "audio/ac9a0d54bd5f.m4a"
+     "audio": "audio/872222af082c.m4a"
     },
     {
      "de": "das Ohr",
      "ru": "ухо",
      "gender": "n",
      "plural": "Ohren",
-     "audio": "audio/a2f15fb2ebc9.m4a"
+     "audio": "audio/8c49acb8195d.m4a"
     },
     {
      "de": "die Nase",
      "ru": "нос",
      "gender": "f",
      "plural": "Nasen",
-     "audio": "audio/e4b7c4c2526f.m4a"
+     "audio": "audio/16743b5d9072.m4a"
     },
     {
      "de": "der Zahn",
      "ru": "зуб",
      "gender": "m",
      "plural": "Zähne",
-     "audio": "audio/8c6502a6c336.m4a"
+     "audio": "audio/39e0b5549c5e.m4a"
     },
     {
      "de": "der Hals",
      "ru": "горло, шея",
      "gender": "m",
      "plural": "Hälse",
-     "audio": "audio/9793e8c1a4d0.m4a"
+     "audio": "audio/29839384f795.m4a"
     },
     {
      "de": "der Arm",
      "ru": "рука (от плеча)",
      "gender": "m",
      "plural": "Arme",
-     "audio": "audio/ba5642d502e2.m4a"
+     "audio": "audio/97d19772d96d.m4a"
     },
     {
      "de": "die Hand",
      "ru": "кисть руки",
      "gender": "f",
      "plural": "Hände",
-     "audio": "audio/2958431260fc.m4a"
+     "audio": "audio/7a285a157335.m4a"
     },
     {
      "de": "der Bauch",
      "ru": "живот",
      "gender": "m",
      "plural": "Bäuche",
-     "audio": "audio/3f82ba556272.m4a"
+     "audio": "audio/21c168af1a58.m4a"
     },
     {
      "de": "der Rücken",
@@ -263,21 +263,21 @@
      "gender": "m",
      "plural": "Rücken",
      "note": "мн. ч. не меняется",
-     "audio": "audio/ae863dec357a.m4a"
+     "audio": "audio/af9ba5cfd982.m4a"
     },
     {
      "de": "das Bein",
      "ru": "нога",
      "gender": "n",
      "plural": "Beine",
-     "audio": "audio/81d020f9482c.m4a"
+     "audio": "audio/e19525f25966.m4a"
     },
     {
      "de": "der Fuß",
      "ru": "ступня",
      "gender": "m",
      "plural": "Füße",
-     "audio": "audio/f73efc050ee2.m4a"
+     "audio": "audio/2f90590722bf.m4a"
     }
    ]
   },
@@ -305,7 +305,7 @@
      "ru": "простуда",
      "gender": "f",
      "plural": "Erkältungen",
-     "audio": "audio/d66c8ef675bb.m4a"
+     "audio": "audio/65a5be930395.m4a"
     },
     {
      "de": "das Fieber",
@@ -314,7 +314,7 @@
      "plural": null,
      "noPlural": true,
      "note": "Ich habe Fieber.",
-     "audio": "audio/55dc4cc205ec.m4a"
+     "audio": "audio/da9641c8e28b.m4a"
     },
     {
      "de": "der Husten",
@@ -323,7 +323,7 @@
      "plural": null,
      "noPlural": true,
      "note": "Ich habe Husten.",
-     "audio": "audio/b4494ce3783e.m4a"
+     "audio": "audio/4a637866bba1.m4a"
     },
     {
      "de": "der Schnupfen",
@@ -332,7 +332,7 @@
      "plural": null,
      "noPlural": true,
      "note": "Ich habe Schnupfen.",
-     "audio": "audio/0a80b6a6de54.m4a"
+     "audio": "audio/a63850605372.m4a"
     },
     {
      "de": "der Schmerz",
@@ -340,7 +340,7 @@
      "gender": "m",
      "plural": "Schmerzen",
      "note": "обычно во мн. ч.",
-     "audio": "audio/d5ded5e1da0a.m4a"
+     "audio": "audio/0f06630d0fd3.m4a"
     },
     {
      "de": "wehtun",
@@ -348,7 +348,7 @@
      "gender": null,
      "plural": null,
      "note": "Mein Kopf tut weh.",
-     "audio": "audio/1f6f5c66b1f6.m4a"
+     "audio": "audio/0ea529a677a0.m4a"
     },
     {
      "de": "Gute Besserung!",
@@ -369,21 +369,21 @@
      "gender": "m",
      "plural": "Ärzte",
      "note": "женщина — die Ärztin",
-     "audio": "audio/df79b4cec3b2.m4a"
+     "audio": "audio/0e8ad8f67d0e.m4a"
     },
     {
      "de": "die Praxis",
      "ru": "кабинет врача",
      "gender": "f",
      "plural": "Praxen",
-     "audio": "audio/843941125ca1.m4a"
+     "audio": "audio/982822719f91.m4a"
     },
     {
      "de": "das Wartezimmer",
      "ru": "приёмная",
      "gender": "n",
      "plural": "Wartezimmer",
-     "audio": "audio/1a75f582a2a4.m4a"
+     "audio": "audio/3c7a9cae27ad.m4a"
     },
     {
      "de": "der Termin",
@@ -391,42 +391,42 @@
      "gender": "m",
      "plural": "Termine",
      "note": "einen Termin machen",
-     "audio": "audio/6608b0bc6e50.m4a"
+     "audio": "audio/437dc48b0583.m4a"
     },
     {
      "de": "die Versichertenkarte",
      "ru": "карта медицинской страховки",
      "gender": "f",
      "plural": "Versichertenkarten",
-     "audio": "audio/381258c4b4e4.m4a"
+     "audio": "audio/b9ebec55612b.m4a"
     },
     {
      "de": "das Rezept",
      "ru": "рецепт",
      "gender": "n",
      "plural": "Rezepte",
-     "audio": "audio/efc00f536838.m4a"
+     "audio": "audio/8b64e318459a.m4a"
     },
     {
      "de": "die Apotheke",
      "ru": "аптека",
      "gender": "f",
      "plural": "Apotheken",
-     "audio": "audio/65b50c1a94a8.m4a"
+     "audio": "audio/3674fdf757a8.m4a"
     },
     {
      "de": "die Tablette",
      "ru": "таблетка",
      "gender": "f",
      "plural": "Tabletten",
-     "audio": "audio/dd1be24374ad.m4a"
+     "audio": "audio/e8c858b0aff1.m4a"
     },
     {
      "de": "das Medikament",
      "ru": "лекарство",
      "gender": "n",
      "plural": "Medikamente",
-     "audio": "audio/07e107e9a1a1.m4a"
+     "audio": "audio/eb413b4ee5a1.m4a"
     }
    ]
   },
@@ -440,7 +440,7 @@
      "gender": null,
      "plural": null,
      "note": "Trink viel Tee!",
-     "audio": "audio/bd60f3a0a073.m4a"
+     "audio": "audio/962f466e135e.m4a"
     },
     {
      "de": "schlafen",
@@ -448,7 +448,7 @@
      "gender": null,
      "plural": null,
      "note": "du schläfst → Schlaf!",
-     "audio": "audio/5583767a3b94.m4a"
+     "audio": "audio/694c18f32e34.m4a"
     },
     {
      "de": "nehmen",
@@ -456,7 +456,7 @@
      "gender": null,
      "plural": null,
      "note": "du nimmst → Nimm!",
-     "audio": "audio/eceab039b81a.m4a"
+     "audio": "audio/42024b18d5b2.m4a"
     },
     {
      "de": "essen",
@@ -464,7 +464,7 @@
      "gender": null,
      "plural": null,
      "note": "du isst → Iss!",
-     "audio": "audio/352ea3276466.m4a"
+     "audio": "audio/f19fa73ac799.m4a"
     },
     {
      "de": "bleiben",
@@ -472,7 +472,7 @@
      "gender": null,
      "plural": null,
      "note": "im Bett bleiben",
-     "audio": "audio/d2b6d50e6684.m4a"
+     "audio": "audio/42ac84744166.m4a"
     },
     {
      "de": "gehen",
@@ -480,7 +480,7 @@
      "gender": null,
      "plural": null,
      "note": "zum Arzt gehen",
-     "audio": "audio/dfc8038b8ca5.m4a"
+     "audio": "audio/3653f3b0c978.m4a"
     },
     {
      "de": "rauchen",
@@ -488,7 +488,7 @@
      "gender": null,
      "plural": null,
      "note": "Rauch nicht!",
-     "audio": "audio/1d3c0cd7892e.m4a"
+     "audio": "audio/db58fa14f297.m4a"
     },
     {
      "de": "müssen",
@@ -496,7 +496,7 @@
      "gender": null,
      "plural": null,
      "note": "ich muss, du musst",
-     "audio": "audio/c4f51001283f.m4a"
+     "audio": "audio/020a8171d4c2.m4a"
     },
     {
      "de": "dürfen",
@@ -504,7 +504,7 @@
      "gender": null,
      "plural": null,
      "note": "ich darf, du darfst",
-     "audio": "audio/c709bfdc1ec1.m4a"
+     "audio": "audio/ad3cba9feedc.m4a"
     }
    ]
   }
@@ -669,7 +669,7 @@
     "Am Montag um 10 Uhr."
    ],
    "answer": 1,
-   "audio": "audio/58d038d9b536.m4a",
+   "audio": "audio/cd5fd5ba750e.m4a",
    "sample": []
   },
   "absage": {
@@ -688,31 +688,31 @@
    "sample": [
     {
      "de": "Liebe Frau Thomsen,",
-     "audio": "audio/67446b1c8657.m4a"
+     "audio": "audio/c29eefc30950.m4a"
     },
     {
      "de": "ich bin krank und kann morgen leider nicht zum Kurs kommen.",
-     "audio": "audio/d6f5f6849ec3.m4a"
+     "audio": "audio/566c59bbcb1c.m4a"
     },
     {
      "de": "Ich habe Fieber und Halsschmerzen. Ich muss drei Tage im Bett bleiben.",
-     "audio": "audio/95851fe3f91a.m4a"
+     "audio": "audio/2cd316b06d27.m4a"
     },
     {
      "de": "Am Donnerstag komme ich wieder.",
-     "audio": "audio/1df4b8a86148.m4a"
+     "audio": "audio/2447d8272c31.m4a"
     },
     {
      "de": "Welche Hausaufgaben haben wir?",
-     "audio": "audio/0d8f7b06ff60.m4a"
+     "audio": "audio/575cf482cd01.m4a"
     },
     {
      "de": "Viele Grüße",
-     "audio": "audio/faf8fee74cb4.m4a"
+     "audio": "audio/aa0fae906361.m4a"
     },
     {
      "de": "Mateo",
-     "audio": "audio/241987688e33.m4a"
+     "audio": "audio/1eef506a114c.m4a"
     }
    ]
   },
@@ -1036,7 +1036,7 @@
       "punct": ".",
       "plain": "Ich muss im Bett bleiben.",
       "ru": "Мне нужно лежать в постели.",
-      "audio": "audio/b27cee309138.m4a"
+      "audio": "audio/eed5ebbfa67e.m4a"
      }
     ]
    }
@@ -1089,7 +1089,7 @@
       "punct": ".",
       "plain": "Ich muss im Bett bleiben.",
       "ru": "Мне нужно лежать в постели.",
-      "audio": "audio/b27cee309138.m4a"
+      "audio": "audio/eed5ebbfa67e.m4a"
      }
     ]
    }
@@ -1138,7 +1138,7 @@
       "punct": ".",
       "plain": "Du darfst nicht rauchen.",
       "ru": "Тебе нельзя курить.",
-      "audio": "audio/783485b2a3d1.m4a"
+      "audio": "audio/15da6c4ba744.m4a"
      },
      {
       "slots": [
@@ -1170,7 +1170,7 @@
       "punct": ".",
       "plain": "Du musst nicht kommen.",
       "ru": "Тебе не нужно приходить.",
-      "audio": "audio/33821d243616.m4a"
+      "audio": "audio/0567079693d0.m4a"
      }
     ]
    }
@@ -1617,7 +1617,7 @@
       "punct": "?",
       "plain": "Darf ich morgen zum Kurs gehen?",
       "ru": "Можно мне завтра на курс?",
-      "audio": "audio/ec47f2a0bdda.m4a"
+      "audio": "audio/78b04cb68dc4.m4a"
      }
     ]
    }
@@ -2084,7 +2084,7 @@
    ],
    "answer": 0,
    "why": "Часть тела + *schmerzen* — одно слово во мн. ч.: *Kopfschmerzen*.",
-   "audio": "audio/739191262e36.m4a"
+   "audio": "audio/131a965cb55e.m4a"
   },
   {
    "id": "gesundheit-2",
@@ -2097,7 +2097,7 @@
    ],
    "answer": 1,
    "why": "*Ohren* — множественное число, поэтому *tun*.",
-   "audio": "audio/5ab8d6f7396d.m4a"
+   "audio": "audio/30c67cf3e913.m4a"
   },
   {
    "id": "gesundheit-3",
@@ -2120,7 +2120,7 @@
    ],
    "hint": "müssen",
    "ru": "Мне сегодня нужно лежать в постели.",
-   "audio": "audio/e9bfec8c3c06.m4a"
+   "audio": "audio/e128b7c09668.m4a"
   },
   {
    "id": "gesundheit-5",
@@ -2131,7 +2131,7 @@
    ],
    "hint": "dürfen",
    "why": "«Нельзя» — *nicht dürfen*: *du darf+st*.",
-   "audio": "audio/0d9283bf102a.m4a"
+   "audio": "audio/ed9ed077d5c0.m4a"
   },
   {
    "id": "gesundheit-6",
@@ -2165,7 +2165,7 @@
    ],
    "hint": "müssen",
    "why": "*ihr müsst* — во множественном числе умлаут возвращается.",
-   "audio": "audio/1d4247bc2516.m4a"
+   "audio": "audio/971165b69209.m4a"
   },
   {
    "id": "gesundheit-9",
@@ -2178,7 +2178,7 @@
    ],
    "answer": 1,
    "why": "Совет на «ты»: без *du* и без *-st* — *Trink!*",
-   "audio": "audio/6647ce574069.m4a"
+   "audio": "audio/81575e0037e2.m4a"
   },
   {
    "id": "gesundheit-10",
@@ -2189,7 +2189,7 @@
    ],
    "hint": "schlafen",
    "why": "*du schläfst*, но *Schlaf!* — умлаут пропадает.",
-   "audio": "audio/1c7e2fd2a5ff.m4a"
+   "audio": "audio/838c569ee109.m4a"
   },
   {
    "id": "gesundheit-11",
@@ -2200,7 +2200,7 @@
    ],
    "hint": "mitnehmen",
    "why": "*du nimmst* → *Nimm!*: замена *e → i* остаётся.",
-   "audio": "audio/9d43642c7322.m4a"
+   "audio": "audio/96dffa72453e.m4a"
   },
   {
    "id": "gesundheit-12",
@@ -2213,7 +2213,7 @@
    ],
    "answer": 1,
    "why": "Двум друзьям — форма *ihr* без *ihr*: *Kommt!*",
-   "audio": "audio/c9c01d545615.m4a"
+   "audio": "audio/add0ce28c7e7.m4a"
   },
   {
    "id": "gesundheit-13",
@@ -2236,14 +2236,14 @@
    ],
    "de": "Ich muss im Bett bleiben.",
    "why": "*muss* — на втором месте, *bleiben* — в конце.",
-   "audio": "audio/b27cee309138.m4a"
+   "audio": "audio/eed5ebbfa67e.m4a"
   },
   {
    "id": "gesundheit-15",
    "type": "order",
    "ru": "Можно мне завтра прийти на курс?",
    "de": "Darf ich morgen zum Kurs kommen?",
-   "audio": "audio/7047aaeae292.m4a"
+   "audio": "audio/23505adc69a4.m4a"
   },
   {
    "id": "gesundheit-16",
@@ -2298,7 +2298,7 @@
       "who": "P",
       "de": "Am Freitag geht es nicht. Können Sie am Montag um halb neun kommen? Bitte rufen Sie uns an.",
       "ru": "В пятницу не получается. Можете прийти в понедельник в 8:30? Пожалуйста, позвоните нам.",
-      "audio": "audio/fceebe0b1c20.m4a"
+      "audio": "audio/36d714fd7a6c.m4a"
      }
     ],
     "question": "Какое время предлагают и что просят сделать?",
@@ -2380,7 +2380,7 @@
     "quotes": [
      {
       "de": "Ich habe Halsschmerzen und Kopfschmerzen. Und ich habe Fieber.",
-      "audio": "audio/ffc951b18c3f.m4a",
+      "audio": "audio/9988d733131a.m4a",
       "name": "Mateo"
      }
     ],
@@ -2430,7 +2430,7 @@
     "quotes": [
      {
       "de": "Guten Tag, Herr Fernández, hier ist die Praxis Dr. Hoffmann. Sie haben am Freitag um zehn Uhr einen Termin. Das geht leider nicht: Frau Dr. Hoffmann ist am Freitag nicht da. Können Sie am Montag um halb neun kommen? Bitte rufen Sie uns kurz an. Vielen Dank und auf Wiederhören!",
-      "audio": "audio/58d038d9b536.m4a",
+      "audio": "audio/cd5fd5ba750e.m4a",
       "name": "Hören, Teil 3"
      }
     ],

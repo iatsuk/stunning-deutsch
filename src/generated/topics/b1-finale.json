@@ -72,50 +72,42 @@
     {
      "who": "H",
      "de": "Mein Zug war pünktlich. Ich habe den Schlüssel um halb drei abgeholt.",
-     "ru": "Мой поезд пришёл вовремя. Я получил ключ в половине третьего.",
-     "audio": "audio/15d20e4f70bc.m4a"
+     "ru": "Мой поезд пришёл вовремя. Я получил ключ в половине третьего."
     },
     {
      "who": "D",
      "de": "Am Nachmittag regnete es. Deshalb haben wir die Materialien mit dem Bus gebracht.",
-     "ru": "Днём шёл дождь. Поэтому материалы привезли автобусом.",
-     "audio": "audio/ce38a3313174.m4a"
+     "ru": "Днём шёл дождь. Поэтому материалы привезли автобусом."
     },
     {
      "who": "E",
      "de": "Sowohl die Fotomappe als auch die Mehrwegbecher waren rechtzeitig in Raum C.",
-     "ru": "И папка, и многоразовые стаканы были вовремя в помещенииC.",
-     "audio": "audio/33124286baea.m4a"
+     "ru": "И папка, и многоразовые стаканы были вовремя в помещенииC."
     },
     {
      "who": "M",
      "de": "Für Essen und Getränke haben wir zusammen dreißig Euro bezahlt.",
-     "ru": "За еду и напитки вместе мы заплатили тридцать евро.",
-     "audio": "audio/eb98dd9a477b.m4a"
+     "ru": "За еду и напитки вместе мы заплатили тридцать евро."
     },
     {
      "who": "G",
      "de": "Am Anfang verstand ich eine Bildunterschrift nicht. Danach konnte ich selbst eine Frage zur Reise stellen.",
-     "ru": "Сначала я не поняла одну подпись. Потом смогла сама задать вопрос о поездке.",
-     "audio": "audio/9fe91ad480ee.m4a"
+     "ru": "Сначала я не поняла одну подпись. Потом смогла сама задать вопрос о поездке."
     },
     {
      "who": "D",
      "de": "Die Hafenfotos kamen aus Flensburg. Die Bilder der Stadt zeigten Lübeck. Darüber haben wir gesprochen.",
-     "ru": "Фотографии гавани были из Фленсбурга, снимки города — из Любека. Об этом мы говорили.",
-     "audio": "audio/b268dd0cbb4e.m4a"
+     "ru": "Фотографии гавани были из Фленсбурга, снимки города — из Любека. Об этом мы говорили."
     },
     {
      "who": "H",
      "de": "Wir haben den Raum um sechs verlassen und den Schlüssel um zehn nach sechs zurückgegeben.",
-     "ru": "Мы вышли из помещения в шесть и вернули ключ в десять минут седьмого.",
-     "audio": "audio/ec1e1ec0d264.m4a"
+     "ru": "Мы вышли из помещения в шесть и вернули ключ в десять минут седьмого."
     },
     {
      "who": "E",
      "de": "Gut. Jetzt schreiben wir einen kurzen Rückblick und fragen, was wir beim nächsten Mal besser machen können.",
-     "ru": "Хорошо. Теперь напишем короткий итог и спросим, что можно улучшить в следующий раз.",
-     "audio": "audio/10079413c285.m4a"
+     "ru": "Хорошо. Теперь напишем короткий итог и спросим, что можно улучшить в следующий раз."
     }
    ]
   }
@@ -129,106 +121,91 @@
      "de": "der Rückblick",
      "ru": "краткий итог, взгляд назад",
      "gender": "m",
-     "plural": "Rückblicke",
-     "audio": "audio/fb2678296268.m4a"
+     "plural": "Rückblicke"
     },
     {
      "de": "das Ergebnis",
      "ru": "результат",
      "gender": "n",
-     "plural": "Ergebnisse",
-     "audio": "audio/d44d9b632df6.m4a"
+     "plural": "Ergebnisse"
     },
     {
      "de": "die Durchführung",
      "ru": "проведение",
      "gender": "f",
-     "plural": "Durchführungen",
-     "audio": "audio/6010b0d5975b.m4a"
+     "plural": "Durchführungen"
     },
     {
      "de": "die Abrechnung",
      "ru": "расчёт расходов",
      "gender": "f",
-     "plural": "Abrechnungen",
-     "audio": "audio/7eb009fad78f.m4a"
+     "plural": "Abrechnungen"
     },
     {
      "de": "der Beleg",
      "ru": "подтверждающий документ, чек",
      "gender": "m",
-     "plural": "Belege",
-     "audio": "audio/4591c810d54f.m4a"
+     "plural": "Belege"
     },
     {
      "de": "die Rückmeldung",
      "ru": "обратная связь",
      "gender": "f",
-     "plural": "Rückmeldungen",
-     "audio": "audio/55105235e9c2.m4a"
+     "plural": "Rückmeldungen"
     },
     {
      "de": "die Fortsetzung",
      "ru": "продолжение",
      "gender": "f",
-     "plural": "Fortsetzungen",
-     "audio": "audio/680a29c57c0d.m4a"
+     "plural": "Fortsetzungen"
     },
     {
      "de": "die Leihgabe",
      "ru": "вещь во временном пользовании",
      "gender": "f",
-     "plural": "Leihgaben",
-     "audio": "audio/18ba81a07f70.m4a"
+     "plural": "Leihgaben"
     },
     {
      "de": "tatsächlich erledigt",
      "ru": "действительно выполнено",
      "gender": null,
-     "plural": null,
-     "audio": "audio/16a22b8a1360.m4a"
+     "plural": null
     },
     {
      "de": "gemeinsam entscheiden",
      "ru": "решить вместе",
      "gender": null,
-     "plural": null,
-     "audio": "audio/fe29c42e3a7d.m4a"
+     "plural": null
     },
     {
      "de": "verständlich zusammenfassen",
      "ru": "понятно подвести итог",
      "gender": null,
-     "plural": null,
-     "audio": "audio/4df8f2d14dd7.m4a"
+     "plural": null
     },
     {
      "de": "aus eigener Erfahrung",
      "ru": "из собственного опыта",
      "gender": null,
-     "plural": null,
-     "audio": "audio/5c92005f6832.m4a"
+     "plural": null
     },
     {
      "de": "eine Änderung erklären",
      "ru": "объяснить изменение",
      "gender": null,
-     "plural": null,
-     "audio": "audio/4dba4db3d128.m4a"
+     "plural": null
     },
     {
      "de": "eine Rückfrage stellen",
      "ru": "задать уточняющий вопрос",
      "gender": null,
-     "plural": null,
-     "audio": "audio/c239b9593cec.m4a"
+     "plural": null
     },
     {
      "de": "für das nächste Mal",
      "ru": "для следующего раза",
      "gender": null,
-     "plural": null,
-     "audio": "audio/809de707aaf7.m4a"
+     "plural": null
     }
    ]
   }
@@ -295,8 +272,7 @@
    ],
    "sample": [
     {
-     "de": "Lieber Jonas, unser FördeTreff hat in Raum C im Nachbarschaftshaus stattgefunden. Die kleine Küche war dabei sehr hilfreich. Am Nachmittag regnete es, deshalb brachten wir die Fotos und Becher mit dem Bus. Haukes Zug war pünktlich, und er konnte den Schlüssel wie geplant abholen. Besonders schön fand ich das Gespräch mit Lina über die Bilder. Zuerst war eine Bildunterschrift unklar, danach erzählte sie von ihrer eigenen Reise. Insgesamt haben wir 78 Euro ausgegeben und den Schlüssel rechtzeitig zurückgegeben. Beim nächsten Mal könnten wir mehr Zeit für solche Gespräche einplanen. Was meinst du? Hättest du Lust, dann mitzukommen? Viele Grüße Dana",
-     "audio": "audio/3db3cfa633c8.m4a"
+     "de": "Lieber Jonas, unser FördeTreff hat in Raum C im Nachbarschaftshaus stattgefunden. Die kleine Küche war dabei sehr hilfreich. Am Nachmittag regnete es, deshalb brachten wir die Fotos und Becher mit dem Bus. Haukes Zug war pünktlich, und er konnte den Schlüssel wie geplant abholen. Besonders schön fand ich das Gespräch mit Lina über die Bilder. Zuerst war eine Bildunterschrift unklar, danach erzählte sie von ihrer eigenen Reise. Insgesamt haben wir 78 Euro ausgegeben und den Schlüssel rechtzeitig zurückgegeben. Beim nächsten Mal könnten wir mehr Zeit für solche Gespräche einplanen. Was meinst du? Hättest du Lust, dann mitzukommen? Viele Grüße Dana"
     }
    ]
   },
@@ -525,8 +501,7 @@
       ],
       "punct": ".",
       "plain": "Deshalb haben wir die Materialien mit dem Bus gebracht.",
-      "ru": "Поэтому мы привезли материалы автобусом.",
-      "audio": "audio/069f28525a6d.m4a"
+      "ru": "Поэтому мы привезли материалы автобусом."
      }
     ]
    }
@@ -595,8 +570,7 @@
       ],
       "punct": ".",
       "plain": "Deshalb haben wir die Materialien mit dem Bus gebracht.",
-      "ru": "Поэтому мы привезли материалы автобусом.",
-      "audio": "audio/069f28525a6d.m4a"
+      "ru": "Поэтому мы привезли материалы автобусом."
      }
     ]
    }
@@ -665,8 +639,7 @@
       ],
       "punct": ".",
       "plain": "Deshalb haben wir die Materialien mit dem Bus gebracht.",
-      "ru": "Поэтому мы привезли материалы автобусом.",
-      "audio": "audio/069f28525a6d.m4a"
+      "ru": "Поэтому мы привезли материалы автобусом."
      }
     ]
    }
@@ -734,8 +707,7 @@
       ],
       "punct": ".",
       "plain": "Deshalb haben wir die Materialien mit dem Bus gebracht.",
-      "ru": "Поэтому мы привезли материалы автобусом.",
-      "audio": "audio/069f28525a6d.m4a"
+      "ru": "Поэтому мы привезли материалы автобусом."
      }
     ],
     "task": "plan"
@@ -805,8 +777,7 @@
       ],
       "punct": ".",
       "plain": "Deshalb haben wir die Materialien mit dem Bus gebracht.",
-      "ru": "Поэтому мы привезли материалы автобусом.",
-      "audio": "audio/069f28525a6d.m4a"
+      "ru": "Поэтому мы привезли материалы автобусом."
      }
     ],
     "task": "plan"
@@ -866,8 +837,7 @@
       ],
       "punct": ".",
       "plain": "Deshalb haben wir die Materialien mit dem Bus gebracht.",
-      "ru": "Поэтому мы привезли материалы автобусом.",
-      "audio": "audio/069f28525a6d.m4a"
+      "ru": "Поэтому мы привезли материалы автобусом."
      }
     ],
     "task": "plan",
@@ -937,8 +907,7 @@
       ],
       "punct": ".",
       "plain": "Deshalb haben wir die Materialien mit dem Bus gebracht.",
-      "ru": "Поэтому мы привезли материалы автобусом.",
-      "audio": "audio/069f28525a6d.m4a"
+      "ru": "Поэтому мы привезли материалы автобусом."
      }
     ],
     "task": "album"
@@ -1008,8 +977,7 @@
       ],
       "punct": ".",
       "plain": "Deshalb haben wir die Materialien mit dem Bus gebracht.",
-      "ru": "Поэтому мы привезли материалы автобусом.",
-      "audio": "audio/069f28525a6d.m4a"
+      "ru": "Поэтому мы привезли материалы автобусом."
      }
     ],
     "task": "album"
@@ -1069,8 +1037,7 @@
       ],
       "punct": ".",
       "plain": "Deshalb haben wir die Materialien mit dem Bus gebracht.",
-      "ru": "Поэтому мы привезли материалы автобусом.",
-      "audio": "audio/069f28525a6d.m4a"
+      "ru": "Поэтому мы привезли материалы автобусом."
      }
     ],
     "task": "album",
@@ -1140,8 +1107,7 @@
       ],
       "punct": ".",
       "plain": "Deshalb haben wir die Materialien mit dem Bus gebracht.",
-      "ru": "Поэтому мы привезли материалы автобусом.",
-      "audio": "audio/069f28525a6d.m4a"
+      "ru": "Поэтому мы привезли материалы автобусом."
      }
     ],
     "task": "result"
@@ -1211,8 +1177,7 @@
       ],
       "punct": ".",
       "plain": "Deshalb haben wir die Materialien mit dem Bus gebracht.",
-      "ru": "Поэтому мы привезли материалы автобусом.",
-      "audio": "audio/069f28525a6d.m4a"
+      "ru": "Поэтому мы привезли материалы автобусом."
      }
     ],
     "task": "result"
@@ -1272,8 +1237,7 @@
       ],
       "punct": ".",
       "plain": "Deshalb haben wir die Materialien mit dem Bus gebracht.",
-      "ru": "Поэтому мы привезли материалы автобусом.",
-      "audio": "audio/069f28525a6d.m4a"
+      "ru": "Поэтому мы привезли материалы автобусом."
      }
     ],
     "task": "result",
@@ -1343,8 +1307,7 @@
       ],
       "punct": ".",
       "plain": "Deshalb haben wir die Materialien mit dem Bus gebracht.",
-      "ru": "Поэтому мы привезли материалы автобусом.",
-      "audio": "audio/069f28525a6d.m4a"
+      "ru": "Поэтому мы привезли материалы автобусом."
      }
     ],
     "task": "write",
@@ -1415,8 +1378,7 @@
       ],
       "punct": ".",
       "plain": "Deshalb haben wir die Materialien mit dem Bus gebracht.",
-      "ru": "Поэтому мы привезли материалы автобусом.",
-      "audio": "audio/069f28525a6d.m4a"
+      "ru": "Поэтому мы привезли материалы автобусом."
      }
     ],
     "task": "write",
@@ -1477,8 +1439,7 @@
       ],
       "punct": ".",
       "plain": "Deshalb haben wir die Materialien mit dem Bus gebracht.",
-      "ru": "Поэтому мы привезли материалы автобусом.",
-      "audio": "audio/069f28525a6d.m4a"
+      "ru": "Поэтому мы привезли материалы автобусом."
      }
     ],
     "task": "write",
@@ -1549,8 +1510,7 @@
       ],
       "punct": ".",
       "plain": "Deshalb haben wir die Materialien mit dem Bus gebracht.",
-      "ru": "Поэтому мы привезли материалы автобусом.",
-      "audio": "audio/069f28525a6d.m4a"
+      "ru": "Поэтому мы привезли материалы автобусом."
      }
     ],
     "task": "talk"
@@ -1620,8 +1580,7 @@
       ],
       "punct": ".",
       "plain": "Deshalb haben wir die Materialien mit dem Bus gebracht.",
-      "ru": "Поэтому мы привезли материалы автобусом.",
-      "audio": "audio/069f28525a6d.m4a"
+      "ru": "Поэтому мы привезли материалы автобусом."
      }
     ],
     "task": "talk"
@@ -1681,8 +1640,7 @@
       ],
       "punct": ".",
       "plain": "Deshalb haben wir die Materialien mit dem Bus gebracht.",
-      "ru": "Поэтому мы привезли материалы автобусом.",
-      "audio": "audio/069f28525a6d.m4a"
+      "ru": "Поэтому мы привезли материалы автобусом."
      }
     ],
     "task": "talk",
@@ -1701,8 +1659,7 @@
     "Obwohl"
    ],
    "answer": 1,
-   "why": "Следствие в главной части.",
-   "audio": "audio/903da2b9b700.m4a"
+   "why": "Следствие в главной части."
   },
   {
    "id": "b1-finale-2",
@@ -1714,8 +1671,7 @@
     "wurde"
    ],
    "answer": 1,
-   "why": "Прошлое Passiv, множественное.",
-   "audio": "audio/51d1cd09eb5d.m4a"
+   "why": "Прошлое Passiv, множественное."
   },
   {
    "id": "b1-finale-3",
@@ -1727,8 +1683,7 @@
     "denen"
    ],
    "answer": 2,
-   "why": "Mit Dativ множественного.",
-   "audio": "audio/c6556f7e0dbf.m4a"
+   "why": "Mit Dativ множественного."
   },
   {
    "id": "b1-finale-4",
@@ -1740,8 +1695,7 @@
     "sprechen"
    ],
    "answer": 1,
-   "why": "Цель с umzu.",
-   "audio": "audio/b3419b854927.m4a"
+   "why": "Цель с umzu."
   },
   {
    "id": "b1-finale-5",
@@ -1753,8 +1707,7 @@
     "nachgefragt"
    ],
    "answer": 1,
-   "why": "Futur I.",
-   "audio": "audio/439529d3c78c.m4a"
+   "why": "Futur I."
   },
   {
    "id": "b1-finale-6",
@@ -1778,8 +1731,7 @@
     "Wir haben die Materialien deshalb mit dem Bus gebracht.",
     "Die Materialien haben wir deshalb mit dem Bus gebracht.",
     "Mit dem Bus haben wir deshalb die Materialien gebracht."
-   ],
-   "audio": "audio/069f28525a6d.m4a"
+   ]
   },
   {
    "id": "b1-finale-8",
@@ -1790,8 +1742,7 @@
     "Den Schlüssel haben wir rechtzeitig zurückgegeben.",
     "Rechtzeitig haben wir den Schlüssel zurückgegeben.",
     "Wir haben rechtzeitig den Schlüssel zurückgegeben."
-   ],
-   "audio": "audio/eda535bc5a18.m4a"
+   ]
   },
   {
    "id": "b1-finale-9",
@@ -1800,8 +1751,7 @@
    "ru": "Фотографии гавани из Фленсбурга.",
    "also": [
     "Aus Flensburg stammen die Hafenfotos."
-   ],
-   "audio": "audio/6b537f766055.m4a"
+   ]
   },
   {
    "id": "b1-finale-10",
@@ -1811,8 +1761,7 @@
    "also": [
     "So habe ich das verstanden. Stimmt das?",
     "Das habe ich so verstanden. Stimmt das?"
-   ],
-   "audio": "audio/6667b23a0cd0.m4a"
+   ]
   },
   {
    "id": "b1-finale-11",
@@ -1822,15 +1771,13 @@
    "also": [
     "Mehr Zeit für Gespräche könnten wir einplanen.",
     "Für Gespräche könnten wir mehr Zeit einplanen."
-   ],
-   "audio": "audio/e566fbeb07f0.m4a"
+   ]
   },
   {
    "id": "b1-finale-12",
    "type": "order",
    "de": "Was würdest du beim nächsten Mal ändern?",
-   "ru": "Что ты изменил бы в следующий раз?",
-   "audio": "audio/4b357ec5713b.m4a"
+   "ru": "Что ты изменил бы в следующий раз?"
   }
  ],
  "case": {

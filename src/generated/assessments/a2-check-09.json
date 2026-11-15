@@ -49,16 +49,13 @@
    ],
    "recordings": [
     {
-     "text": "Guten Tag, hier ist Frau Berg vom Lernhaus. Am Donnerstag können Sie ab sechzehn Uhr anreisen. Bitte melden Sie sich am Empfang.",
-     "audio": "audio/ceaf16ec337a.m4a"
+     "text": "Guten Tag, hier ist Frau Berg vom Lernhaus. Am Donnerstag können Sie ab sechzehn Uhr anreisen. Bitte melden Sie sich am Empfang."
     },
     {
-     "text": "Hier noch der Preis: Das Einzelzimmer kostet achtundvierzig Euro pro Nacht. Das Frühstück ist nicht dabei. Auf Wiederhören.",
-     "audio": "audio/fd4279c62fba.m4a"
+     "text": "Hier noch der Preis: Das Einzelzimmer kostet achtundvierzig Euro pro Nacht. Das Frühstück ist nicht dabei. Auf Wiederhören."
     },
     {
-     "text": "Hallo, hier ist Jonas. Ich musste gestern länger arbeiten. Können wir unsere Liste am Freitag besprechen? Am Donnerstag habe ich keine Zeit.",
-     "audio": "audio/6bca99559d39.m4a"
+     "text": "Hallo, hier ist Jonas. Ich musste gestern länger arbeiten. Können wir unsere Liste am Freitag besprechen? Am Donnerstag habe ich keine Zeit."
     }
    ],
    "sample": []

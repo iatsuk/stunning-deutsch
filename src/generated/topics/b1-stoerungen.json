@@ -69,50 +69,42 @@
     {
      "who": "H",
      "de": "Die Bootsfahrt wurde wegen des starken Windes abgesagt.",
-     "ru": "Прогулку на катере отменили из-за сильного ветра.",
-     "audio": "audio/c9355bfb4a38.m4a"
+     "ru": "Прогулку на катере отменили из-за сильного ветра."
     },
     {
      "who": "D",
      "de": "Wurden die anderen Fahrten auch abgesagt?",
-     "ru": "Другие поездки тоже отменили?",
-     "audio": "audio/b05f324d3e1e.m4a"
+     "ru": "Другие поездки тоже отменили?"
     },
     {
      "who": "H",
      "de": "Die Nachricht betrifft nur unsere Fahrt um elf. Über andere Fahrten steht dort nichts.",
-     "ru": "Сообщение касается только нашей прогулки в одиннадцать. О других ничего не сказано.",
-     "audio": "audio/c2f8c161c943.m4a"
+     "ru": "Сообщение касается только нашей прогулки в одиннадцать. О других ничего не сказано."
     },
     {
      "who": "E",
      "de": "Die Tickets wurden bereits erstattet. Wir könnten stattdessen ins Museum gehen.",
-     "ru": "Деньги за билеты уже вернули. Вместо этого мы могли бы пойти в музей.",
-     "audio": "audio/dbe542174014.m4a"
+     "ru": "Деньги за билеты уже вернули. Вместо этого мы могли бы пойти в музей."
     },
     {
      "who": "M",
      "de": "Ich brauche vorher eine warme Pause. Danach komme ich gern mit.",
-     "ru": "Сначала мне нужен тёплый перерыв. Потом с удовольствием пойду.",
-     "audio": "audio/080fa531adfa.m4a"
+     "ru": "Сначала мне нужен тёплый перерыв. Потом с удовольствием пойду."
     },
     {
      "who": "D",
      "de": "Der Rückfahrtbus wurde auf fünfzehn Uhr vierzig verschoben.",
-     "ru": "Обратный автобус перенесли на пятнадцать сорок.",
-     "audio": "audio/3c2fc504df0c.m4a"
+     "ru": "Обратный автобус перенесли на пятнадцать сорок."
     },
     {
      "who": "H",
      "de": "Dann sollten wir um fünfzehn Uhr fünfundzwanzig an der neuen Haltestelle sein.",
-     "ru": "Тогда нам стоит быть на новой остановке в пятнадцать двадцать пять.",
-     "audio": "audio/af9979fb5d42.m4a"
+     "ru": "Тогда нам стоит быть на новой остановке в пятнадцать двадцать пять."
     },
     {
      "who": "E",
      "de": "Gut. Wir informieren die Gruppe über die Änderung, bevor jemand zum alten Halt geht.",
-     "ru": "Хорошо. Сообщим группе об изменении, прежде чем кто-то пойдёт на старую остановку.",
-     "audio": "audio/01febe0952c5.m4a"
+     "ru": "Хорошо. Сообщим группе об изменении, прежде чем кто-то пойдёт на старую остановку."
     }
    ]
   }
@@ -126,106 +118,91 @@
      "de": "die Absage",
      "ru": "отмена",
      "gender": "f",
-     "plural": "Absagen",
-     "audio": "audio/9ae10f9d05c3.m4a"
+     "plural": "Absagen"
     },
     {
      "de": "bei einer Verschiebung",
      "ru": "при переносе",
      "gender": null,
-     "plural": null,
-     "audio": "audio/d924c39e7e57.m4a"
+     "plural": null
     },
     {
      "de": "die Erstattung",
      "ru": "возврат оплаты",
      "gender": "f",
-     "plural": "Erstattungen",
-     "audio": "audio/db4f3049d0d9.m4a"
+     "plural": "Erstattungen"
     },
     {
      "de": "die Bootsfahrt",
      "ru": "прогулка на катере",
      "gender": "f",
-     "plural": "Bootsfahrten",
-     "audio": "audio/f38618985df6.m4a"
+     "plural": "Bootsfahrten"
     },
     {
      "de": "die Anlegestelle",
      "ru": "место причаливания",
      "gender": "f",
-     "plural": "Anlegestellen",
-     "audio": "audio/2fa096465cb3.m4a"
+     "plural": "Anlegestellen"
     },
     {
      "de": "die Ersatzhaltestelle",
      "ru": "временная остановка",
      "gender": "f",
-     "plural": "Ersatzhaltestellen",
-     "audio": "audio/463636cf0a70.m4a"
+     "plural": "Ersatzhaltestellen"
     },
     {
      "de": "der Wind",
      "ru": "ветер",
      "gender": "m",
-     "plural": "Winde",
-     "audio": "audio/4d337c442d37.m4a"
+     "plural": "Winde"
     },
     {
      "de": "die Rückmeldung",
      "ru": "ответ, обратная связь",
      "gender": "f",
-     "plural": "Rückmeldungen",
-     "audio": "audio/55105235e9c2.m4a"
+     "plural": "Rückmeldungen"
     },
     {
      "de": "abgesagt werden",
      "ru": "быть отменённым",
      "gender": null,
-     "plural": null,
-     "audio": "audio/6738664c7717.m4a"
+     "plural": null
     },
     {
      "de": "verschoben werden",
      "ru": "быть перенесённым",
      "gender": null,
-     "plural": null,
-     "audio": "audio/270d082cb8b9.m4a"
+     "plural": null
     },
     {
      "de": "verlegt werden",
      "ru": "быть перемещённым",
      "gender": null,
-     "plural": null,
-     "audio": "audio/0fda8121ef86.m4a"
+     "plural": null
     },
     {
      "de": "stattdessen",
      "ru": "вместо этого",
      "gender": null,
-     "plural": null,
-     "audio": "audio/adff8a5411c1.m4a"
+     "plural": null
     },
     {
      "de": "bereits erstattet",
      "ru": "уже возвращено",
      "gender": null,
-     "plural": null,
-     "audio": "audio/e66eefda7dcb.m4a"
+     "plural": null
     },
     {
      "de": "betreffen",
      "ru": "касаться чего-либо",
      "gender": null,
-     "plural": null,
-     "audio": "audio/1f1c30029926.m4a"
+     "plural": null
     },
     {
      "de": "rechtzeitig Bescheid sagen",
      "ru": "заранее сообщить",
      "gender": null,
-     "plural": null,
-     "audio": "audio/f150c4a75822.m4a"
+     "plural": null
     }
    ]
   }
@@ -392,24 +369,19 @@
    "title": "Fünf Mitteilungen aus Büsum",
    "recordings": [
     {
-     "text": "Die Bootsfahrt um elf Uhr wurde wegen des starken Windes abgesagt. Diese Meldung betrifft nur die genannte Fahrt. Bitte prüfen Sie andere Angebote jeweils am Informationsschalter.",
-     "audio": "audio/6d9744ea593d.m4a"
+     "text": "Die Bootsfahrt um elf Uhr wurde wegen des starken Windes abgesagt. Diese Meldung betrifft nur die genannte Fahrt. Bitte prüfen Sie andere Angebote jeweils am Informationsschalter."
     },
     {
-     "text": "Die Tickets für die abgesagte Fahrt wurden bereits auf dem ursprünglichen Zahlungsweg erstattet. Sie müssen dafür heute nicht noch einmal zum Schalter kommen. Bei Fragen nennen Sie bitte Ihre Buchungsnummer.",
-     "audio": "audio/4307a26438e6.m4a"
+     "text": "Die Tickets für die abgesagte Fahrt wurden bereits auf dem ursprünglichen Zahlungsweg erstattet. Sie müssen dafür heute nicht noch einmal zum Schalter kommen. Bei Fragen nennen Sie bitte Ihre Buchungsnummer."
     },
     {
-     "text": "Unser kleines Museum öffnet heute um zwölf Uhr. Die Ausstellung ist bis sechzehn Uhr zugänglich. Eine gebuchte Führung um dreizehn Uhr wurde verschoben; der normale Besuch ab zwölf bleibt möglich.",
-     "audio": "audio/afb0f3680162.m4a"
+     "text": "Unser kleines Museum öffnet heute um zwölf Uhr. Die Ausstellung ist bis sechzehn Uhr zugänglich. Eine gebuchte Führung um dreizehn Uhr wurde verschoben; der normale Besuch ab zwölf bleibt möglich."
     },
     {
-     "text": "Im Café wurde für Ihre Gruppe ein Tisch ab elf Uhr reserviert. Die warme Pause kostet in dieser Lernaufgabe acht Euro pro Person. Weitere Speisen bestellen Sie bitte nur nach Absprache.",
-     "audio": "audio/ae1ebfa48c7d.m4a"
+     "text": "Im Café wurde für Ihre Gruppe ein Tisch ab elf Uhr reserviert. Die warme Pause kostet in dieser Lernaufgabe acht Euro pro Person. Weitere Speisen bestellen Sie bitte nur nach Absprache."
     },
     {
-     "text": "Der Bus nach Kiel wurde von fünfzehn Uhr zehn auf fünfzehn Uhr vierzig verschoben. Auch die Haltestelle wurde verlegt. Bitte warten Sie in der Hafenstraße, nicht mehr am Markt.",
-     "audio": "audio/ff83c82fc3df.m4a"
+     "text": "Der Bus nach Kiel wurde von fünfzehn Uhr zehn auf fünfzehn Uhr vierzig verschoben. Auch die Haltestelle wurde verlegt. Bitte warten Sie in der Hafenstraße, nicht mehr am Markt."
     }
    ],
    "questions": [
@@ -687,8 +659,7 @@
       ],
       "punct": ".",
       "plain": "Der Bus wurde auf fünfzehn Uhr vierzig verschoben.",
-      "ru": "Автобус перенесли на 15:40.",
-      "audio": "audio/58fb0fc551a8.m4a"
+      "ru": "Автобус перенесли на 15:40."
      }
     ]
    }
@@ -753,8 +724,7 @@
       ],
       "punct": ".",
       "plain": "Der Bus wurde auf fünfzehn Uhr vierzig verschoben.",
-      "ru": "Автобус перенесли на 15:40.",
-      "audio": "audio/58fb0fc551a8.m4a"
+      "ru": "Автобус перенесли на 15:40."
      }
     ]
    }
@@ -819,8 +789,7 @@
       ],
       "punct": ".",
       "plain": "Der Bus wurde auf fünfzehn Uhr vierzig verschoben.",
-      "ru": "Автобус перенесли на 15:40.",
-      "audio": "audio/58fb0fc551a8.m4a"
+      "ru": "Автобус перенесли на 15:40."
      }
     ]
    }
@@ -884,8 +853,7 @@
       ],
       "punct": ".",
       "plain": "Der Bus wurde auf fünfzehn Uhr vierzig verschoben.",
-      "ru": "Автобус перенесли на 15:40.",
-      "audio": "audio/58fb0fc551a8.m4a"
+      "ru": "Автобус перенесли на 15:40."
      }
     ],
     "task": "update"
@@ -951,8 +919,7 @@
       ],
       "punct": ".",
       "plain": "Der Bus wurde auf fünfzehn Uhr vierzig verschoben.",
-      "ru": "Автобус перенесли на 15:40.",
-      "audio": "audio/58fb0fc551a8.m4a"
+      "ru": "Автобус перенесли на 15:40."
      }
     ],
     "task": "update"
@@ -1008,8 +975,7 @@
       ],
       "punct": ".",
       "plain": "Der Bus wurde auf fünfzehn Uhr vierzig verschoben.",
-      "ru": "Автобус перенесли на 15:40.",
-      "audio": "audio/58fb0fc551a8.m4a"
+      "ru": "Автобус перенесли на 15:40."
      }
     ],
     "task": "update",
@@ -1075,8 +1041,7 @@
       ],
       "punct": ".",
       "plain": "Der Bus wurde auf fünfzehn Uhr vierzig verschoben.",
-      "ru": "Автобус перенесли на 15:40.",
-      "audio": "audio/58fb0fc551a8.m4a"
+      "ru": "Автобус перенесли на 15:40."
      }
     ],
     "task": "gaps"
@@ -1142,8 +1107,7 @@
       ],
       "punct": ".",
       "plain": "Der Bus wurde auf fünfzehn Uhr vierzig verschoben.",
-      "ru": "Автобус перенесли на 15:40.",
-      "audio": "audio/58fb0fc551a8.m4a"
+      "ru": "Автобус перенесли на 15:40."
      }
     ],
     "task": "gaps"
@@ -1199,8 +1163,7 @@
       ],
       "punct": ".",
       "plain": "Der Bus wurde auf fünfzehn Uhr vierzig verschoben.",
-      "ru": "Автобус перенесли на 15:40.",
-      "audio": "audio/58fb0fc551a8.m4a"
+      "ru": "Автобус перенесли на 15:40."
      }
     ],
     "task": "gaps",
@@ -1266,8 +1229,7 @@
       ],
       "punct": ".",
       "plain": "Der Bus wurde auf fünfzehn Uhr vierzig verschoben.",
-      "ru": "Автобус перенесли на 15:40.",
-      "audio": "audio/58fb0fc551a8.m4a"
+      "ru": "Автобус перенесли на 15:40."
      }
     ],
     "task": "notices"
@@ -1333,8 +1295,7 @@
       ],
       "punct": ".",
       "plain": "Der Bus wurde auf fünfzehn Uhr vierzig verschoben.",
-      "ru": "Автобус перенесли на 15:40.",
-      "audio": "audio/58fb0fc551a8.m4a"
+      "ru": "Автобус перенесли на 15:40."
      }
     ],
     "task": "notices"
@@ -1390,8 +1351,7 @@
       ],
       "punct": ".",
       "plain": "Der Bus wurde auf fünfzehn Uhr vierzig verschoben.",
-      "ru": "Автобус перенесли на 15:40.",
-      "audio": "audio/58fb0fc551a8.m4a"
+      "ru": "Автобус перенесли на 15:40."
      }
     ],
     "task": "notices",
@@ -1457,8 +1417,7 @@
       ],
       "punct": ".",
       "plain": "Der Bus wurde auf fünfzehn Uhr vierzig verschoben.",
-      "ru": "Автобус перенесли на 15:40.",
-      "audio": "audio/58fb0fc551a8.m4a"
+      "ru": "Автобус перенесли на 15:40."
      }
     ],
     "task": "talk"
@@ -1524,8 +1483,7 @@
       ],
       "punct": ".",
       "plain": "Der Bus wurde auf fünfzehn Uhr vierzig verschoben.",
-      "ru": "Автобус перенесли на 15:40.",
-      "audio": "audio/58fb0fc551a8.m4a"
+      "ru": "Автобус перенесли на 15:40."
      }
     ],
     "task": "talk"
@@ -1581,8 +1539,7 @@
       ],
       "punct": ".",
       "plain": "Der Bus wurde auf fünfzehn Uhr vierzig verschoben.",
-      "ru": "Автобус перенесли на 15:40.",
-      "audio": "audio/58fb0fc551a8.m4a"
+      "ru": "Автобус перенесли на 15:40."
      }
     ],
     "task": "talk",
@@ -1601,8 +1558,7 @@
     "wird"
    ],
    "answer": 1,
-   "why": "Прошлое Passiv.",
-   "audio": "audio/fc49a5cc7f8b.m4a"
+   "why": "Прошлое Passiv."
   },
   {
    "id": "b1-stoerungen-2",
@@ -1614,8 +1570,7 @@
     "wurde"
    ],
    "answer": 1,
-   "why": "Множественное число.",
-   "audio": "audio/0f1225734596.m4a"
+   "why": "Множественное число."
   },
   {
    "id": "b1-stoerungen-3",
@@ -1639,8 +1594,7 @@
     "verlegen"
    ],
    "answer": 1,
-   "why": "Partizip II.",
-   "audio": "audio/7f0231b97326.m4a"
+   "why": "Partizip II."
   },
   {
    "id": "b1-stoerungen-5",
@@ -1673,8 +1627,7 @@
    "ru": "Прогулку на катере отменили из-за ветра.",
    "also": [
     "Wegen des Windes wurde die Bootsfahrt abgesagt."
-   ],
-   "audio": "audio/eccb08df8cc9.m4a"
+   ]
   },
   {
    "id": "b1-stoerungen-8",
@@ -1684,8 +1637,7 @@
    "also": [
     "Bereits wurden die Tickets erstattet.",
     "Erstattet wurden die Tickets bereits."
-   ],
-   "audio": "audio/bdd7bb16a20c.m4a"
+   ]
   },
   {
    "id": "b1-stoerungen-9",
@@ -1694,8 +1646,7 @@
    "ru": "Остановку перенесли.",
    "also": [
     "Verlegt wurde die Haltestelle."
-   ],
-   "audio": "audio/7f0231b97326.m4a"
+   ]
   },
   {
    "id": "b1-stoerungen-10",
@@ -1704,8 +1655,7 @@
    "ru": "Автобус перенесли на 15:40.",
    "also": [
     "Auf fünfzehn Uhr vierzig wurde der Bus verschoben."
-   ],
-   "audio": "audio/58fb0fc551a8.m4a"
+   ]
   },
   {
    "id": "b1-stoerungen-11",
@@ -1716,8 +1666,7 @@
     "Die Gruppe sollten wir rechtzeitig informieren.",
     "Rechtzeitig sollten wir die Gruppe informieren.",
     "Wir sollten rechtzeitig die Gruppe informieren."
-   ],
-   "audio": "audio/c4c35dd5d65e.m4a"
+   ]
   },
   {
    "id": "b1-stoerungen-12",
@@ -1727,8 +1676,7 @@
    "also": [
     "Wir können danach ins Museum gehen.",
     "Ins Museum können wir danach gehen."
-   ],
-   "audio": "audio/1258ea972bb7.m4a"
+   ]
   }
  ],
  "case": {

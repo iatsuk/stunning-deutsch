@@ -69,50 +69,42 @@
     {
      "who": "H",
      "de": "Wir haben vor, im Oktober ein Treffen zu organisieren.",
-     "ru": "Мы намерены организовать встречу в октябре.",
-     "audio": "audio/6638d752fc9c.m4a"
+     "ru": "Мы намерены организовать встречу в октябре."
     },
     {
      "who": "E",
      "de": "Ich habe Zeit, das Programm vorzubereiten.",
-     "ru": "У меня есть время подготовить программу.",
-     "audio": "audio/16ea8c680520.m4a"
+     "ru": "У меня есть время подготовить программу."
     },
     {
      "who": "D",
      "de": "Wir müssen zuerst nach einem Raum fragen.",
-     "ru": "Сначала нам нужно спросить о помещении.",
-     "audio": "audio/2c29406b4f94.m4a"
+     "ru": "Сначала нам нужно спросить о помещении."
     },
     {
      "who": "H",
      "de": "Ich versuche, heute eine klare Anfrage zu schreiben.",
-     "ru": "Я попробую сегодня написать понятный запрос.",
-     "audio": "audio/7aed3b572f5f.m4a"
+     "ru": "Я попробую сегодня написать понятный запрос."
     },
     {
      "who": "M",
      "de": "Denk bitte an die Kosten und die kleine Küche.",
-     "ru": "Подумай, пожалуйста, о стоимости и маленькой кухне.",
-     "audio": "audio/0ce275e19d00.m4a"
+     "ru": "Подумай, пожалуйста, о стоимости и маленькой кухне."
     },
     {
      "who": "E",
      "de": "Es ist wichtig, die Zahl der Gäste zu nennen.",
-     "ru": "Важно назвать число гостей.",
-     "audio": "audio/efb2908a7c69.m4a"
+     "ru": "Важно назвать число гостей."
     },
     {
      "who": "D",
      "de": "Vergiss nicht, um eine Bestätigung zu bitten.",
-     "ru": "Не забудь попросить подтверждение.",
-     "audio": "audio/1f1445e27789.m4a"
+     "ru": "Не забудь попросить подтверждение."
     },
     {
      "who": "H",
      "de": "Gut. Ich schicke die Anfrage ab. Eine Zusage haben wir noch nicht.",
-     "ru": "Хорошо. Отправлю запрос. Согласия у нас пока нет.",
-     "audio": "audio/3ef3a3cdc020.m4a"
+     "ru": "Хорошо. Отправлю запрос. Согласия у нас пока нет."
     }
    ]
   }
@@ -126,107 +118,92 @@
      "de": "die Anfrage",
      "ru": "запрос",
      "gender": "f",
-     "plural": "Anfragen",
-     "audio": "audio/d34ba9fec90b.m4a"
+     "plural": "Anfragen"
     },
     {
      "de": "die Zusage",
      "ru": "согласие",
      "gender": "f",
-     "plural": "Zusagen",
-     "audio": "audio/0cc33e541221.m4a"
+     "plural": "Zusagen"
     },
     {
      "de": "die Ausstattung",
      "ru": "оснащение",
      "gender": "f",
      "plural": null,
-     "noPlural": true,
-     "audio": "audio/b1a503ff41ae.m4a"
+     "noPlural": true
     },
     {
      "de": "die Veranstaltung",
      "ru": "мероприятие",
      "gender": "f",
-     "plural": "Veranstaltungen",
-     "audio": "audio/be26a22da82a.m4a"
+     "plural": "Veranstaltungen"
     },
     {
      "de": "die Bestätigung",
      "ru": "подтверждение",
      "gender": "f",
-     "plural": "Bestätigungen",
-     "audio": "audio/da1596cb22b8.m4a"
+     "plural": "Bestätigungen"
     },
     {
      "de": "die Küche",
      "ru": "кухня",
      "gender": "f",
-     "plural": "Küchen",
-     "audio": "audio/55c93c8a5fd2.m4a"
+     "plural": "Küchen"
     },
     {
      "de": "die Miete",
      "ru": "арендная плата",
      "gender": "f",
-     "plural": "Mieten",
-     "audio": "audio/5991f37737ac.m4a"
+     "plural": "Mieten"
     },
     {
      "de": "der Kontakt",
      "ru": "контакт",
      "gender": "m",
-     "plural": "Kontakte",
-     "audio": "audio/697a9eced3c1.m4a"
+     "plural": "Kontakte"
     },
     {
      "de": "der Gast",
      "ru": "гость",
      "gender": "m",
-     "plural": "Gäste",
-     "audio": "audio/78ce0f055058.m4a"
+     "plural": "Gäste"
     },
     {
      "de": "vorhaben",
      "ru": "намереваться",
      "gender": null,
-     "plural": null,
-     "audio": "audio/329f19ac8a6e.m4a"
+     "plural": null
     },
     {
      "de": "versuchen",
      "ru": "пытаться",
      "gender": null,
-     "plural": null,
-     "audio": "audio/3fc377af22b7.m4a"
+     "plural": null
     },
     {
      "de": "vorbereiten",
      "ru": "подготавливать",
      "gender": null,
-     "plural": null,
-     "audio": "audio/c5712238e047.m4a"
+     "plural": null
     },
     {
      "de": "abschicken",
      "ru": "отправлять",
      "gender": null,
-     "plural": null,
-     "audio": "audio/de9cea8743bf.m4a"
+     "plural": null
     },
     {
      "de": "um eine Antwort bitten",
      "ru": "просить об ответе",
      "gender": null,
-     "plural": null,
-     "audio": "audio/7d200af2a7b6.m4a"
+     "plural": null
     },
     {
      "de": "Zahl nennen",
      "ru": "назвать количество",
      "gender": null,
-     "plural": null,
-     "audio": "audio/ca9143659c86.m4a"
+     "plural": null
     }
    ]
   }
@@ -273,8 +250,7 @@
    "situation": "Behandeln Sie alle vier Punkte. Schreiben Sie einen zusammenhängenden Brief mit Anrede und Gruß. Etwa 100–120 Wörter sind hier ein Übungsziel, keine feste telc-Mindestwortzahl.",
    "sample": [
     {
-     "de": "Sehr geehrte Frau Petersen, wir haben vor, einen kleinen Nachbarschaftstreff zu organisieren. Dabei möchten wir Fotos aus der Region zeigen und miteinander Deutsch sprechen. Wir suchen einen Raum für Sonntag, den 18. Oktober, von 15 bis 18 Uhr. Insgesamt erwarten wir 18 Gäste. Ist der Raum an diesem Tag frei? Gibt es dort eine kleine Küche? Außerdem möchten wir wissen, wie hoch die Miete ist. Wir versuchen, die Kosten für alle niedrig zu halten. Bitte bestätigen Sie uns den Termin und die Bedingungen schriftlich. Sie erreichen mich per E-Mail. Vielen Dank für Ihre Hilfe. Mit freundlichen Grüßen Hauke",
-     "audio": "audio/e2b3bb6baecf.m4a"
+     "de": "Sehr geehrte Frau Petersen, wir haben vor, einen kleinen Nachbarschaftstreff zu organisieren. Dabei möchten wir Fotos aus der Region zeigen und miteinander Deutsch sprechen. Wir suchen einen Raum für Sonntag, den 18. Oktober, von 15 bis 18 Uhr. Insgesamt erwarten wir 18 Gäste. Ist der Raum an diesem Tag frei? Gibt es dort eine kleine Küche? Außerdem möchten wir wissen, wie hoch die Miete ist. Wir versuchen, die Kosten für alle niedrig zu halten. Bitte bestätigen Sie uns den Termin und die Bedingungen schriftlich. Sie erreichen mich per E-Mail. Vielen Dank für Ihre Hilfe. Mit freundlichen Grüßen Hauke"
     }
    ]
   },
@@ -535,12 +511,10 @@
    "situation": "Planen Sie gemeinsam die Anfrage. Machen Sie Vorschläge, reagieren Sie und einigen Sie sich auf die Zuständigkeit. Der Raum ist noch nicht bestätigt.",
    "sample": [
     {
-     "de": "Ich schlage vor, zuerst den Termin und die Zahl der Gäste zu nennen.",
-     "audio": "audio/3cc7950c5e9f.m4a"
+     "de": "Ich schlage vor, zuerst den Termin und die Zahl der Gäste zu nennen."
     },
     {
-     "de": "Einverstanden. Ich übernehme die Fragen zur Küche. Kannst du nach den Kosten fragen?",
-     "audio": "audio/3c36a34fd2ba.m4a"
+     "de": "Einverstanden. Ich übernehme die Fragen zur Küche. Kannst du nach den Kosten fragen?"
     }
    ]
   }
@@ -742,8 +716,7 @@
       ],
       "punct": ".",
       "plain": "Wir haben vor, ein Treffen zu organisieren.",
-      "ru": "Мы намерены организовать встречу.",
-      "audio": "audio/6b70486a49e9.m4a"
+      "ru": "Мы намерены организовать встречу."
      }
     ]
    }
@@ -804,8 +777,7 @@
       ],
       "punct": ".",
       "plain": "Wir haben vor, ein Treffen zu organisieren.",
-      "ru": "Мы намерены организовать встречу.",
-      "audio": "audio/6b70486a49e9.m4a"
+      "ru": "Мы намерены организовать встречу."
      }
     ]
    }
@@ -866,8 +838,7 @@
       ],
       "punct": ".",
       "plain": "Wir haben vor, ein Treffen zu organisieren.",
-      "ru": "Мы намерены организовать встречу.",
-      "audio": "audio/6b70486a49e9.m4a"
+      "ru": "Мы намерены организовать встречу."
      }
     ]
    }
@@ -927,8 +898,7 @@
       ],
       "punct": ".",
       "plain": "Wir haben vor, ein Treffen zu organisieren.",
-      "ru": "Мы намерены организовать встречу.",
-      "audio": "audio/6b70486a49e9.m4a"
+      "ru": "Мы намерены организовать встречу."
      }
     ],
     "task": "request",
@@ -991,8 +961,7 @@
       ],
       "punct": ".",
       "plain": "Wir haben vor, ein Treffen zu organisieren.",
-      "ru": "Мы намерены организовать встречу.",
-      "audio": "audio/6b70486a49e9.m4a"
+      "ru": "Мы намерены организовать встречу."
      }
     ],
     "task": "request",
@@ -1045,8 +1014,7 @@
       ],
       "punct": ".",
       "plain": "Wir haben vor, ein Treffen zu organisieren.",
-      "ru": "Мы намерены организовать встречу.",
-      "audio": "audio/6b70486a49e9.m4a"
+      "ru": "Мы намерены организовать встречу."
      }
     ],
     "task": "request",
@@ -1109,8 +1077,7 @@
       ],
       "punct": ".",
       "plain": "Wir haben vor, ein Treffen zu organisieren.",
-      "ru": "Мы намерены организовать встречу.",
-      "audio": "audio/6b70486a49e9.m4a"
+      "ru": "Мы намерены организовать встречу."
      }
     ],
     "task": "reply"
@@ -1172,8 +1139,7 @@
       ],
       "punct": ".",
       "plain": "Wir haben vor, ein Treffen zu organisieren.",
-      "ru": "Мы намерены организовать встречу.",
-      "audio": "audio/6b70486a49e9.m4a"
+      "ru": "Мы намерены организовать встречу."
      }
     ],
     "task": "reply"
@@ -1225,8 +1191,7 @@
       ],
       "punct": ".",
       "plain": "Wir haben vor, ein Treffen zu organisieren.",
-      "ru": "Мы намерены организовать встречу.",
-      "audio": "audio/6b70486a49e9.m4a"
+      "ru": "Мы намерены организовать встречу."
      }
     ],
     "task": "reply",
@@ -1288,8 +1253,7 @@
       ],
       "punct": ".",
       "plain": "Wir haben vor, ein Treffen zu organisieren.",
-      "ru": "Мы намерены организовать встречу.",
-      "audio": "audio/6b70486a49e9.m4a"
+      "ru": "Мы намерены организовать встречу."
      }
     ],
     "task": "gaps"
@@ -1351,8 +1315,7 @@
       ],
       "punct": ".",
       "plain": "Wir haben vor, ein Treffen zu organisieren.",
-      "ru": "Мы намерены организовать встречу.",
-      "audio": "audio/6b70486a49e9.m4a"
+      "ru": "Мы намерены организовать встречу."
      }
     ],
     "task": "gaps"
@@ -1404,8 +1367,7 @@
       ],
       "punct": ".",
       "plain": "Wir haben vor, ein Treffen zu organisieren.",
-      "ru": "Мы намерены организовать встречу.",
-      "audio": "audio/6b70486a49e9.m4a"
+      "ru": "Мы намерены организовать встречу."
      }
     ],
     "task": "gaps",
@@ -1467,8 +1429,7 @@
       ],
       "punct": ".",
       "plain": "Wir haben vor, ein Treffen zu organisieren.",
-      "ru": "Мы намерены организовать встречу.",
-      "audio": "audio/6b70486a49e9.m4a"
+      "ru": "Мы намерены организовать встречу."
      }
     ],
     "task": "planning",
@@ -1531,8 +1492,7 @@
       ],
       "punct": ".",
       "plain": "Wir haben vor, ein Treffen zu organisieren.",
-      "ru": "Мы намерены организовать встречу.",
-      "audio": "audio/6b70486a49e9.m4a"
+      "ru": "Мы намерены организовать встречу."
      }
     ],
     "task": "planning",
@@ -1585,8 +1545,7 @@
       ],
       "punct": ".",
       "plain": "Wir haben vor, ein Treffen zu organisieren.",
-      "ru": "Мы намерены организовать встречу.",
-      "audio": "audio/6b70486a49e9.m4a"
+      "ru": "Мы намерены организовать встречу."
      }
     ],
     "task": "planning",
@@ -1606,8 +1565,7 @@
     "zu"
    ],
    "answer": 2,
-   "why": "Versuchen + zu.",
-   "audio": "audio/6cf54eceb986.m4a"
+   "why": "Versuchen + zu."
   },
   {
    "id": "b1-anfragen-2",
@@ -1619,8 +1577,7 @@
     "suchen"
    ],
    "answer": 2,
-   "why": "Модальный глагол без zu.",
-   "audio": "audio/b9ff65307822.m4a"
+   "why": "Модальный глагол без zu."
   },
   {
    "id": "b1-anfragen-3",
@@ -1632,8 +1589,7 @@
     "vorbereite"
    ],
    "answer": 0,
-   "why": "Zu внутри отделяемого глагола.",
-   "audio": "audio/d86cf676084e.m4a"
+   "why": "Zu внутри отделяемого глагола."
   },
   {
    "id": "b1-anfragen-4",
@@ -1645,8 +1601,7 @@
     "zu"
    ],
    "answer": 2,
-   "why": "Es ist wichtig, ... zu.",
-   "audio": "audio/bf6f738060b8.m4a"
+   "why": "Es ist wichtig, ... zu."
   },
   {
    "id": "b1-anfragen-5",
@@ -1658,8 +1613,7 @@
     "abzuschicken"
    ],
    "answer": 2,
-   "why": "ab + zu + schicken.",
-   "audio": "audio/840c7fa61b8f.m4a"
+   "why": "ab + zu + schicken."
   },
   {
    "id": "b1-anfragen-6",
@@ -1680,8 +1634,7 @@
    "ru": "Мы намерены организовать встречу.",
    "also": [
     "Ein Treffen zu organisieren, haben wir vor."
-   ],
-   "audio": "audio/6b70486a49e9.m4a"
+   ]
   },
   {
    "id": "b1-anfragen-8",
@@ -1690,8 +1643,7 @@
    "ru": "Я попробую написать понятный запрос.",
    "also": [
     "Eine klare Anfrage zu schreiben, versuche ich."
-   ],
-   "audio": "audio/97c882bb33dd.m4a"
+   ]
   },
   {
    "id": "b1-anfragen-9",
@@ -1700,8 +1652,7 @@
    "ru": "Важно назвать число гостей.",
    "also": [
     "Wichtig ist es, die Zahl der Gäste zu nennen."
-   ],
-   "audio": "audio/f08dac2268ec.m4a"
+   ]
   },
   {
    "id": "b1-anfragen-10",
@@ -1711,8 +1662,7 @@
    "also": [
     "Zuerst müssen wir nach einem Raum fragen.",
     "Nach einem Raum müssen wir zuerst fragen."
-   ],
-   "audio": "audio/2c29406b4f94.m4a"
+   ]
   },
   {
    "id": "b1-anfragen-11",
@@ -1721,8 +1671,7 @@
    "ru": "У меня есть время подготовить программу.",
    "also": [
     "Zeit, das Programm vorzubereiten, habe ich."
-   ],
-   "audio": "audio/0b081c00322c.m4a"
+   ]
   },
   {
    "id": "b1-anfragen-12",
@@ -1731,8 +1680,7 @@
    "ru": "Обязательный ответ последует на следующей неделе.",
    "also": [
     "Nächste Woche folgt eine verbindliche Antwort."
-   ],
-   "audio": "audio/94e814e11a6c.m4a"
+   ]
   }
  ],
  "case": {

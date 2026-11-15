@@ -73,50 +73,42 @@
     {
      "who": "D",
      "de": "Ich hätte gern einen Raum mit einer kleinen Küche.",
-     "ru": "Я хотела бы помещение с маленькой кухней.",
-     "audio": "audio/ac2c1f2a4eef.m4a"
+     "ru": "Я хотела бы помещение с маленькой кухней."
     },
     {
      "who": "M",
      "de": "Wir könnten einen kleineren Raum nehmen. Achtzehn Plätze reichen uns.",
-     "ru": "Мы могли бы взять помещение поменьше. Нам хватит восемнадцати мест.",
-     "audio": "audio/2d83e20dab92.m4a"
+     "ru": "Мы могли бы взять помещение поменьше. Нам хватит восемнадцати мест."
     },
     {
      "who": "H",
      "de": "Ich würde beide Angebote noch einmal vergleichen.",
-     "ru": "Я бы ещё раз сравнил оба предложения.",
-     "audio": "audio/4acc77cf7137.m4a"
+     "ru": "Я бы ещё раз сравнил оба предложения."
     },
     {
      "who": "P",
      "de": "Raum B hat achtzehn Plätze. Die kleine Küche ist im Preis von vierzig Euro enthalten.",
-     "ru": "В помещенииB восемнадцать мест. Маленькая кухня включена в цену сорок евро.",
-     "audio": "audio/c8596458fe4b.m4a"
+     "ru": "В помещенииB восемнадцать мест. Маленькая кухня включена в цену сорок евро."
     },
     {
      "who": "E",
      "de": "Das wäre günstiger. Mit dreißig Euro für Essen wären es insgesamt siebzig Euro.",
-     "ru": "Это было бы дешевле. С тридцатью евро на еду получится всего семьдесят.",
-     "audio": "audio/be4da515b9ee.m4a"
+     "ru": "Это было бы дешевле. С тридцатью евро на еду получится всего семьдесят."
     },
     {
      "who": "D",
      "de": "Wir sollten den Termin und die Küche schriftlich bestätigen lassen.",
-     "ru": "Нам стоит получить письменное подтверждение срока и кухни.",
-     "audio": "audio/c9d56c667325.m4a"
+     "ru": "Нам стоит получить письменное подтверждение срока и кухни."
     },
     {
      "who": "H",
      "de": "Dann nehmen wir Raum B am achtzehnten Oktober von fünfzehn bis achtzehn Uhr.",
-     "ru": "Тогда берём помещение B восемнадцатого октября с пятнадцати до восемнадцати.",
-     "audio": "audio/b3d59e3f3451.m4a"
+     "ru": "Тогда берём помещение B восемнадцатого октября с пятнадцати до восемнадцати."
     },
     {
      "who": "P",
      "de": "Ich bestätige Raum B mit Küche für diesen Termin. Die Miete beträgt vierzig Euro.",
-     "ru": "Подтверждаю помещение B с кухней на этот срок. Аренда составляет сорок евро.",
-     "audio": "audio/a142366c37b0.m4a"
+     "ru": "Подтверждаю помещение B с кухней на этот срок. Аренда составляет сорок евро."
     }
    ]
   }
@@ -130,106 +122,91 @@
      "de": "der Vorschlag",
      "ru": "предложение действия",
      "gender": "m",
-     "plural": "Vorschläge",
-     "audio": "audio/1ce35d0e8c75.m4a"
+     "plural": "Vorschläge"
     },
     {
      "de": "der Kompromiss",
      "ru": "компромисс",
      "gender": "m",
-     "plural": "Kompromisse",
-     "audio": "audio/75a6a7ca205d.m4a"
+     "plural": "Kompromisse"
     },
     {
      "de": "die Alternative",
      "ru": "альтернатива",
      "gender": "f",
-     "plural": "Alternativen",
-     "audio": "audio/2af773d17c98.m4a"
+     "plural": "Alternativen"
     },
     {
      "de": "die Gesamtkosten",
      "ru": "общая стоимость",
      "gender": "pl",
-     "plural": null,
-     "audio": "audio/f5680db680b4.m4a"
+     "plural": null
     },
     {
      "de": "die Raummiete",
      "ru": "аренда помещения",
      "gender": "f",
-     "plural": "Raummieten",
-     "audio": "audio/d35b8faf6be8.m4a"
+     "plural": "Raummieten"
     },
     {
      "de": "der Platz",
      "ru": "место",
      "gender": "m",
-     "plural": "Plätze",
-     "audio": "audio/0e0e5149d6fb.m4a"
+     "plural": "Plätze"
     },
     {
      "de": "die Vereinbarung",
      "ru": "договорённость",
      "gender": "f",
-     "plural": "Vereinbarungen",
-     "audio": "audio/96263e26f11d.m4a"
+     "plural": "Vereinbarungen"
     },
     {
      "de": "die Bestätigung",
      "ru": "подтверждение",
      "gender": "f",
-     "plural": "Bestätigungen",
-     "audio": "audio/da1596cb22b8.m4a"
+     "plural": "Bestätigungen"
     },
     {
      "de": "enthalten",
      "ru": "включённый",
      "gender": null,
-     "plural": null,
-     "audio": "audio/21c9f094bc42.m4a"
+     "plural": null
     },
     {
      "de": "schriftlich bestätigen",
      "ru": "письменно подтвердить",
      "gender": null,
-     "plural": null,
-     "audio": "audio/0b6ba866b309.m4a"
+     "plural": null
     },
     {
      "de": "ausreichen",
      "ru": "быть достаточным",
      "gender": null,
-     "plural": null,
-     "audio": "audio/975de9e275da.m4a"
+     "plural": null
     },
     {
      "de": "betragen",
      "ru": "составлять",
      "gender": null,
-     "plural": null,
-     "audio": "audio/493f6690de0c.m4a"
+     "plural": null
     },
     {
      "de": "ich hätte gern",
      "ru": "я хотел бы иметь",
      "gender": null,
-     "plural": null,
-     "audio": "audio/cfb7e93cdb37.m4a"
+     "plural": null
     },
     {
      "de": "wir könnten",
      "ru": "мы могли бы",
      "gender": null,
-     "plural": null,
-     "audio": "audio/6eca43b70a8b.m4a"
+     "plural": null
     },
     {
      "de": "wäre möglich",
      "ru": "это было бы возможно",
      "gender": null,
-     "plural": null,
-     "audio": "audio/246a7222b5d2.m4a"
+     "plural": null
     }
    ]
   }
@@ -530,8 +507,7 @@
    ],
    "sample": [
     {
-     "de": "Sehr geehrte Frau Petersen, vielen Dank für Ihre beiden Angebote. Wir möchten gern Raum B nehmen. Achtzehn Plätze reichen für unsere Gruppe, und die kleine Küche ist für uns wichtig. Mit der Miete von 40 Euro und 30 Euro für Essen bleiben wir unter unserem Budget. Bitte bestätigen Sie Raum B für Sonntag, den 18. Oktober, von 15 bis 18 Uhr. Ist die Nutzung der Küche wirklich im Preis enthalten? Außerdem würden wir gern wissen, wann wir den Schlüssel bekommen und wie wir ihn zurückgeben sollen. Vielen Dank für Ihre Hilfe. Mit freundlichen Grüßen Hauke",
-     "audio": "audio/1ba2da9b7522.m4a"
+     "de": "Sehr geehrte Frau Petersen, vielen Dank für Ihre beiden Angebote. Wir möchten gern Raum B nehmen. Achtzehn Plätze reichen für unsere Gruppe, und die kleine Küche ist für uns wichtig. Mit der Miete von 40 Euro und 30 Euro für Essen bleiben wir unter unserem Budget. Bitte bestätigen Sie Raum B für Sonntag, den 18. Oktober, von 15 bis 18 Uhr. Ist die Nutzung der Küche wirklich im Preis enthalten? Außerdem würden wir gern wissen, wann wir den Schlüssel bekommen und wie wir ihn zurückgeben sollen. Vielen Dank für Ihre Hilfe. Mit freundlichen Grüßen Hauke"
     }
    ]
   },
@@ -748,8 +724,7 @@
       ],
       "punct": ".",
       "plain": "Wir könnten einen kleineren Raum nehmen.",
-      "ru": "Мы могли бы взять помещение поменьше.",
-      "audio": "audio/6266f185defd.m4a"
+      "ru": "Мы могли бы взять помещение поменьше."
      }
     ]
    }
@@ -806,8 +781,7 @@
       ],
       "punct": ".",
       "plain": "Wir könnten einen kleineren Raum nehmen.",
-      "ru": "Мы могли бы взять помещение поменьше.",
-      "audio": "audio/6266f185defd.m4a"
+      "ru": "Мы могли бы взять помещение поменьше."
      }
     ]
    }
@@ -864,8 +838,7 @@
       ],
       "punct": ".",
       "plain": "Wir könnten einen kleineren Raum nehmen.",
-      "ru": "Мы могли бы взять помещение поменьше.",
-      "audio": "audio/6266f185defd.m4a"
+      "ru": "Мы могли бы взять помещение поменьше."
      }
     ]
    }
@@ -921,8 +894,7 @@
       ],
       "punct": ".",
       "plain": "Wir könnten einen kleineren Raum nehmen.",
-      "ru": "Мы могли бы взять помещение поменьше.",
-      "audio": "audio/6266f185defd.m4a"
+      "ru": "Мы могли бы взять помещение поменьше."
      }
     ],
     "task": "offers"
@@ -980,8 +952,7 @@
       ],
       "punct": ".",
       "plain": "Wir könnten einen kleineren Raum nehmen.",
-      "ru": "Мы могли бы взять помещение поменьше.",
-      "audio": "audio/6266f185defd.m4a"
+      "ru": "Мы могли бы взять помещение поменьше."
      }
     ],
     "task": "offers"
@@ -1029,8 +1000,7 @@
       ],
       "punct": ".",
       "plain": "Wir könnten einen kleineren Raum nehmen.",
-      "ru": "Мы могли бы взять помещение поменьше.",
-      "audio": "audio/6266f185defd.m4a"
+      "ru": "Мы могли бы взять помещение поменьше."
      }
     ],
     "task": "offers",
@@ -1088,8 +1058,7 @@
       ],
       "punct": ".",
       "plain": "Wir könnten einen kleineren Raum nehmen.",
-      "ru": "Мы могли бы взять помещение поменьше.",
-      "audio": "audio/6266f185defd.m4a"
+      "ru": "Мы могли бы взять помещение поменьше."
      }
     ],
     "task": "confirmed"
@@ -1147,8 +1116,7 @@
       ],
       "punct": ".",
       "plain": "Wir könnten einen kleineren Raum nehmen.",
-      "ru": "Мы могли бы взять помещение поменьше.",
-      "audio": "audio/6266f185defd.m4a"
+      "ru": "Мы могли бы взять помещение поменьше."
      }
     ],
     "task": "confirmed"
@@ -1196,8 +1164,7 @@
       ],
       "punct": ".",
       "plain": "Wir könnten einen kleineren Raum nehmen.",
-      "ru": "Мы могли бы взять помещение поменьше.",
-      "audio": "audio/6266f185defd.m4a"
+      "ru": "Мы могли бы взять помещение поменьше."
      }
     ],
     "task": "confirmed",
@@ -1255,8 +1222,7 @@
       ],
       "punct": ".",
       "plain": "Wir könnten einen kleineren Raum nehmen.",
-      "ru": "Мы могли бы взять помещение поменьше.",
-      "audio": "audio/6266f185defd.m4a"
+      "ru": "Мы могли бы взять помещение поменьше."
      }
     ],
     "task": "gaps"
@@ -1314,8 +1280,7 @@
       ],
       "punct": ".",
       "plain": "Wir könnten einen kleineren Raum nehmen.",
-      "ru": "Мы могли бы взять помещение поменьше.",
-      "audio": "audio/6266f185defd.m4a"
+      "ru": "Мы могли бы взять помещение поменьше."
      }
     ],
     "task": "gaps"
@@ -1363,8 +1328,7 @@
       ],
       "punct": ".",
       "plain": "Wir könnten einen kleineren Raum nehmen.",
-      "ru": "Мы могли бы взять помещение поменьше.",
-      "audio": "audio/6266f185defd.m4a"
+      "ru": "Мы могли бы взять помещение поменьше."
      }
     ],
     "task": "gaps",
@@ -1422,8 +1386,7 @@
       ],
       "punct": ".",
       "plain": "Wir könnten einen kleineren Raum nehmen.",
-      "ru": "Мы могли бы взять помещение поменьше.",
-      "audio": "audio/6266f185defd.m4a"
+      "ru": "Мы могли бы взять помещение поменьше."
      }
     ],
     "task": "write",
@@ -1482,8 +1445,7 @@
       ],
       "punct": ".",
       "plain": "Wir könnten einen kleineren Raum nehmen.",
-      "ru": "Мы могли бы взять помещение поменьше.",
-      "audio": "audio/6266f185defd.m4a"
+      "ru": "Мы могли бы взять помещение поменьше."
      }
     ],
     "task": "write",
@@ -1532,8 +1494,7 @@
       ],
       "punct": ".",
       "plain": "Wir könnten einen kleineren Raum nehmen.",
-      "ru": "Мы могли бы взять помещение поменьше.",
-      "audio": "audio/6266f185defd.m4a"
+      "ru": "Мы могли бы взять помещение поменьше."
      }
     ],
     "task": "write",
@@ -1592,8 +1553,7 @@
       ],
       "punct": ".",
       "plain": "Wir könnten einen kleineren Raum nehmen.",
-      "ru": "Мы могли бы взять помещение поменьше.",
-      "audio": "audio/6266f185defd.m4a"
+      "ru": "Мы могли бы взять помещение поменьше."
      }
     ],
     "task": "talk"
@@ -1651,8 +1611,7 @@
       ],
       "punct": ".",
       "plain": "Wir könnten einen kleineren Raum nehmen.",
-      "ru": "Мы могли бы взять помещение поменьше.",
-      "audio": "audio/6266f185defd.m4a"
+      "ru": "Мы могли бы взять помещение поменьше."
      }
     ],
     "task": "talk"
@@ -1700,8 +1659,7 @@
       ],
       "punct": ".",
       "plain": "Wir könnten einen kleineren Raum nehmen.",
-      "ru": "Мы могли бы взять помещение поменьше.",
-      "audio": "audio/6266f185defd.m4a"
+      "ru": "Мы могли бы взять помещение поменьше."
      }
     ],
     "task": "talk",
@@ -1720,8 +1678,7 @@
     "würde"
    ],
    "answer": 0,
-   "why": "Короткая форма sein.",
-   "audio": "audio/4af839d4edaf.m4a"
+   "why": "Короткая форма sein."
   },
   {
    "id": "b1-vorschlaege-2",
@@ -1733,8 +1690,7 @@
     "würde"
    ],
    "answer": 0,
-   "why": "Желание с haben.",
-   "audio": "audio/47ba5f1adb71.m4a"
+   "why": "Желание с haben."
   },
   {
    "id": "b1-vorschlaege-3",
@@ -1746,8 +1702,7 @@
     "zu nehmen"
    ],
    "answer": 1,
-   "why": "Модальная рамка безzu.",
-   "audio": "audio/8d0a43f00764.m4a"
+   "why": "Модальная рамка безzu."
   },
   {
    "id": "b1-vorschlaege-4",
@@ -1759,8 +1714,7 @@
     "verglichen"
    ],
    "answer": 0,
-   "why": "Würde + Infinitiv.",
-   "audio": "audio/7dcd6a7ff007.m4a"
+   "why": "Würde + Infinitiv."
   },
   {
    "id": "b1-vorschlaege-5",
@@ -1772,8 +1726,7 @@
     "solltet"
    ],
    "answer": 0,
-   "why": "Du — solltest.",
-   "audio": "audio/8a6550ff7612.m4a"
+   "why": "Du — solltest."
   },
   {
    "id": "b1-vorschlaege-6",
@@ -1795,8 +1748,7 @@
    "also": [
     "Auch ein kleinerer Raum wäre möglich.",
     "Möglich wäre auch ein kleinerer Raum."
-   ],
-   "audio": "audio/75104d83e4e0.m4a"
+   ]
   },
   {
    "id": "b1-vorschlaege-8",
@@ -1806,8 +1758,7 @@
    "also": [
     "Eine kleine Küche hätte ich gern.",
     "Gern hätte ich eine kleine Küche."
-   ],
-   "audio": "audio/a33b059ca014.m4a"
+   ]
   },
   {
    "id": "b1-vorschlaege-9",
@@ -1816,8 +1767,7 @@
    "ru": "Мы могли бы взять помещение B.",
    "also": [
     "Raum B könnten wir nehmen."
-   ],
-   "audio": "audio/8d0a43f00764.m4a"
+   ]
   },
   {
    "id": "b1-vorschlaege-10",
@@ -1826,8 +1776,7 @@
    "ru": "Я бы сравнил оба предложения.",
    "also": [
     "Beide Angebote würde ich vergleichen."
-   ],
-   "audio": "audio/8e9ddd65b4f9.m4a"
+   ]
   },
   {
    "id": "b1-vorschlaege-11",
@@ -1836,8 +1785,7 @@
    "ru": "Нам стоит письменно уточнить.",
    "also": [
     "Schriftlich sollten wir nachfragen."
-   ],
-   "audio": "audio/9d20fcfc0b41.m4a"
+   ]
   },
   {
    "id": "b1-vorschlaege-12",
@@ -1846,8 +1794,7 @@
    "ru": "ПомещениеB подтверждено на этот срок.",
    "also": [
     "Für diesen Termin ist Raum B bestätigt."
-   ],
-   "audio": "audio/9b38ba5cb021.m4a"
+   ]
   }
  ],
  "case": {

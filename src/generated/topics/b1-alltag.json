@@ -70,50 +70,42 @@
     {
      "who": "M",
      "de": "Ich muss am Freitag auch noch die Becher kaufen.",
-     "ru": "Мне ещё нужно в пятницу купить стаканы.",
-     "audio": "audio/2481944f5fd5.m4a"
+     "ru": "Мне ещё нужно в пятницу купить стаканы."
     },
     {
      "who": "E",
      "de": "Du brauchst die Becher nicht zu kaufen. Ich leihe Mehrwegbecher aus.",
-     "ru": "Тебе не нужно покупать стаканы. Я возьму многоразовые напрокат.",
-     "audio": "audio/7e363cac7bad.m4a"
+     "ru": "Тебе не нужно покупать стаканы. Я возьму многоразовые напрокат."
     },
     {
      "who": "D",
      "de": "Du brauchst nicht alles allein zu machen. Du kümmerst dich um das Essen.",
-     "ru": "Не нужно делать всё одному. Ты занимаешься едой.",
-     "audio": "audio/a3517d3fd2ea.m4a"
+     "ru": "Не нужно делать всё одному. Ты занимаешься едой."
     },
     {
      "who": "H",
      "de": "Ich hole den Schlüssel um halb drei ab. Du brauchst dafür nicht extra zu kommen.",
-     "ru": "Я заберу ключ в половине третьего. Тебе не нужно ради этого специально приходить.",
-     "audio": "audio/831ad22635e5.m4a"
+     "ru": "Я заберу ключ в половине третьего. Тебе не нужно ради этого специально приходить."
     },
     {
      "who": "M",
      "de": "Dann brauche ich nur die Zutatenliste zu prüfen.",
-     "ru": "Тогда мне нужно только проверить список ингредиентов.",
-     "audio": "audio/7494d0b00376.m4a"
+     "ru": "Тогда мне нужно только проверить список ингредиентов."
     },
     {
      "who": "E",
      "de": "Genau. Am Freitag arbeitest du ab fünf. Wir stimmen die Abholung ohne dich ab.",
-     "ru": "Верно. В пятницу ты работаешь с пяти. Самовывоз согласуем без тебя.",
-     "audio": "audio/ea917d27874d.m4a"
+     "ru": "Верно. В пятницу ты работаешь с пяти. Самовывоз согласуем без тебя."
     },
     {
      "who": "D",
      "de": "Wir sollten auch kurze Pausen einplanen und die Aufgaben wechseln.",
-     "ru": "Нам стоит предусмотреть и короткие перерывы и меняться задачами.",
-     "audio": "audio/02e9cabf421f.m4a"
+     "ru": "Нам стоит предусмотреть и короткие перерывы и меняться задачами."
     },
     {
      "who": "H",
      "de": "Um zwanzig vor sechs räumen wir gemeinsam auf. Den Schlüssel gebe ich bis Viertel nach sechs zurück.",
-     "ru": "В без двадцати шесть начнём убирать вместе. Ключ я верну до четверти седьмого.",
-     "audio": "audio/5d78628287a5.m4a"
+     "ru": "В без двадцати шесть начнём убирать вместе. Ключ я верну до четверти седьмого."
     }
    ]
   }
@@ -127,106 +119,91 @@
      "de": "die Belastung",
      "ru": "нагрузка",
      "gender": "f",
-     "plural": "Belastungen",
-     "audio": "audio/9918a6bb8946.m4a"
+     "plural": "Belastungen"
     },
     {
      "de": "die Entlastung",
      "ru": "снижение нагрузки",
      "gender": "f",
-     "plural": "Entlastungen",
-     "audio": "audio/3ad46718489c.m4a"
+     "plural": "Entlastungen"
     },
     {
      "de": "die Zutatenliste",
      "ru": "список ингредиентов",
      "gender": "f",
-     "plural": "Zutatenlisten",
-     "audio": "audio/ff1696bffd9a.m4a"
+     "plural": "Zutatenlisten"
     },
     {
      "de": "die Aufgabenverteilung",
      "ru": "распределение задач",
      "gender": "f",
-     "plural": "Aufgabenverteilungen",
-     "audio": "audio/ae26d8ef8078.m4a"
+     "plural": "Aufgabenverteilungen"
     },
     {
      "de": "die Schlüsselbox",
      "ru": "ящик для ключа",
      "gender": "f",
-     "plural": "Schlüsselboxen",
-     "audio": "audio/89c38080ed86.m4a"
+     "plural": "Schlüsselboxen"
     },
     {
      "de": "die Spätschicht",
      "ru": "вечерняя смена",
      "gender": "f",
-     "plural": "Spätschichten",
-     "audio": "audio/a85c7ba61ba8.m4a"
+     "plural": "Spätschichten"
     },
     {
      "de": "die Leihgabe",
      "ru": "вещь, данная во временное пользование",
      "gender": "f",
-     "plural": "Leihgaben",
-     "audio": "audio/18ba81a07f70.m4a"
+     "plural": "Leihgaben"
     },
     {
      "de": "der Wechsel",
      "ru": "смена, замена",
      "gender": "m",
-     "plural": "Wechsel",
-     "audio": "audio/1e172b2e2759.m4a"
+     "plural": "Wechsel"
     },
     {
      "de": "nicht nötig",
      "ru": "не требуется",
      "gender": null,
-     "plural": null,
-     "audio": "audio/50cb2afdd0c0.m4a"
+     "plural": null
     },
     {
      "de": "nur noch",
      "ru": "ещё только",
      "gender": null,
-     "plural": null,
-     "audio": "audio/0faccba151d5.m4a"
+     "plural": null
     },
     {
      "de": "überlastet",
      "ru": "перегруженный",
      "gender": null,
-     "plural": null,
-     "audio": "audio/549be828efe8.m4a"
+     "plural": null
     },
     {
      "de": "eine Pause einplanen",
      "ru": "предусмотреть перерыв",
      "gender": null,
-     "plural": null,
-     "audio": "audio/ac18a74ae6c9.m4a"
+     "plural": null
     },
     {
      "de": "gegenseitig helfen",
      "ru": "помогать друг другу",
      "gender": null,
-     "plural": null,
-     "audio": "audio/eceef44950cb.m4a"
+     "plural": null
     },
     {
      "de": "abstimmen",
      "ru": "согласовать",
      "gender": null,
-     "plural": null,
-     "audio": "audio/10115048bddf.m4a"
+     "plural": null
     },
     {
      "de": "allein übernehmen",
      "ru": "взять на себя одному",
      "gender": null,
-     "plural": null,
-     "audio": "audio/19cb69698852.m4a"
+     "plural": null
     }
    ]
   }
@@ -393,24 +370,19 @@
    "title": "Fünf Hinweise für die Vorbereitung",
    "recordings": [
     {
-     "text": "Sie brauchen keine eigenen Teller mitzubringen. Achtzehn Teller werden in der Küche bereitgestellt. Lebensmittel und Getränke organisieren Sie weiterhin selbst.",
-     "audio": "audio/7a04b0f44a51.m4a"
+     "text": "Sie brauchen keine eigenen Teller mitzubringen. Achtzehn Teller werden in der Küche bereitgestellt. Lebensmittel und Getränke organisieren Sie weiterhin selbst."
     },
     {
-     "text": "Hier ist Elif. Die Becher hole ich am Freitag ab. Mateo braucht dafür nicht vor seiner Arbeit durch die Stadt zu fahren. Ich melde mich nach der Abholung noch einmal.",
-     "audio": "audio/a5c2bce17201.m4a"
+     "text": "Hier ist Elif. Die Becher hole ich am Freitag ab. Mateo braucht dafür nicht vor seiner Arbeit durch die Stadt zu fahren. Ich melde mich nach der Abholung noch einmal."
     },
     {
-     "text": "Die Schlüsselbox wird am Sonntag bis Viertel nach sechs kontrolliert. Bitte geben Sie Ihren Schlüssel spätestens dann zurück. Bitte verlassen Sie den Raum schon um sechs.",
-     "audio": "audio/d3734850f39b.m4a"
+     "text": "Die Schlüsselbox wird am Sonntag bis Viertel nach sechs kontrolliert. Bitte geben Sie Ihren Schlüssel spätestens dann zurück. Bitte verlassen Sie den Raum schon um sechs."
     },
     {
-     "text": "Sie brauchen den Raum nicht allein aufzuräumen. Die Gruppe hat gemeinsame Hilfe ab zwanzig vor sechs eingeplant. Bitte räumen Sie eigene Sachen trotzdem selbst weg.",
-     "audio": "audio/fef3a8bcc040.m4a"
+     "text": "Sie brauchen den Raum nicht allein aufzuräumen. Die Gruppe hat gemeinsame Hilfe ab zwanzig vor sechs eingeplant. Bitte räumen Sie eigene Sachen trotzdem selbst weg."
     },
     {
-     "text": "Bitte beachten Sie: Sie dürfen keine Sachen vor dem Seiteneingang abstellen. Das ist keine freiwillige Empfehlung. Der Zugang soll frei bleiben.",
-     "audio": "audio/c5ee61b2ddbe.m4a"
+     "text": "Bitte beachten Sie: Sie dürfen keine Sachen vor dem Seiteneingang abstellen. Das ist keine freiwillige Empfehlung. Der Zugang soll frei bleiben."
     }
    ],
    "questions": [
@@ -480,8 +452,7 @@
    ],
    "sample": [
     {
-     "de": "Hallo Mateo, du arbeitest diese Woche viel und brauchst nicht alles allein zu machen. Elif holt am Freitag die Mehrwegbecher ab. Du brauchst also keine neuen Becher zu kaufen. Auch den Schlüssel musst du nicht selbst holen: Das übernimmt Hauke am Sonntag um 14:30. Bis Donnerstag brauchst du nur die Zutatenliste zu prüfen. Am Sonntag organisierst du das Essen. Wenn du dabei Hilfe brauchst, sag bitte Bescheid. Beim Aufräumen helfen wir ab 17:40 alle zusammen. Könntest du uns bis Donnerstag sagen, ob die Zutatenliste vollständig ist? Passt das für dich? Viele Grüße Dana",
-     "audio": "audio/c4e2191b18cd.m4a"
+     "de": "Hallo Mateo, du arbeitest diese Woche viel und brauchst nicht alles allein zu machen. Elif holt am Freitag die Mehrwegbecher ab. Du brauchst also keine neuen Becher zu kaufen. Auch den Schlüssel musst du nicht selbst holen: Das übernimmt Hauke am Sonntag um 14:30. Bis Donnerstag brauchst du nur die Zutatenliste zu prüfen. Am Sonntag organisierst du das Essen. Wenn du dabei Hilfe brauchst, sag bitte Bescheid. Beim Aufräumen helfen wir ab 17:40 alle zusammen. Könntest du uns bis Donnerstag sagen, ob die Zutatenliste vollständig ist? Passt das für dich? Viele Grüße Dana"
     }
    ]
   },
@@ -702,8 +673,7 @@
       ],
       "punct": ".",
       "plain": "Du brauchst nicht alles allein zu machen.",
-      "ru": "Тебе не нужно делать всё одному.",
-      "audio": "audio/6dcece2cb4b5.m4a"
+      "ru": "Тебе не нужно делать всё одному."
      }
     ]
    }
@@ -764,8 +734,7 @@
       ],
       "punct": ".",
       "plain": "Du brauchst nicht alles allein zu machen.",
-      "ru": "Тебе не нужно делать всё одному.",
-      "audio": "audio/6dcece2cb4b5.m4a"
+      "ru": "Тебе не нужно делать всё одному."
      }
     ]
    }
@@ -826,8 +795,7 @@
       ],
       "punct": ".",
       "plain": "Du brauchst nicht alles allein zu machen.",
-      "ru": "Тебе не нужно делать всё одному.",
-      "audio": "audio/6dcece2cb4b5.m4a"
+      "ru": "Тебе не нужно делать всё одному."
      }
     ]
    }
@@ -887,8 +855,7 @@
       ],
       "punct": ".",
       "plain": "Du brauchst nicht alles allein zu machen.",
-      "ru": "Тебе не нужно делать всё одному.",
-      "audio": "audio/6dcece2cb4b5.m4a"
+      "ru": "Тебе не нужно делать всё одному."
      }
     ],
     "task": "plan"
@@ -950,8 +917,7 @@
       ],
       "punct": ".",
       "plain": "Du brauchst nicht alles allein zu machen.",
-      "ru": "Тебе не нужно делать всё одному.",
-      "audio": "audio/6dcece2cb4b5.m4a"
+      "ru": "Тебе не нужно делать всё одному."
      }
     ],
     "task": "plan"
@@ -1003,8 +969,7 @@
       ],
       "punct": ".",
       "plain": "Du brauchst nicht alles allein zu machen.",
-      "ru": "Тебе не нужно делать всё одному.",
-      "audio": "audio/6dcece2cb4b5.m4a"
+      "ru": "Тебе не нужно делать всё одному."
      }
     ],
     "task": "plan",
@@ -1066,8 +1031,7 @@
       ],
       "punct": ".",
       "plain": "Du brauchst nicht alles allein zu machen.",
-      "ru": "Тебе не нужно делать всё одному.",
-      "audio": "audio/6dcece2cb4b5.m4a"
+      "ru": "Тебе не нужно делать всё одному."
      }
     ],
     "task": "gaps"
@@ -1129,8 +1093,7 @@
       ],
       "punct": ".",
       "plain": "Du brauchst nicht alles allein zu machen.",
-      "ru": "Тебе не нужно делать всё одному.",
-      "audio": "audio/6dcece2cb4b5.m4a"
+      "ru": "Тебе не нужно делать всё одному."
      }
     ],
     "task": "gaps"
@@ -1182,8 +1145,7 @@
       ],
       "punct": ".",
       "plain": "Du brauchst nicht alles allein zu machen.",
-      "ru": "Тебе не нужно делать всё одному.",
-      "audio": "audio/6dcece2cb4b5.m4a"
+      "ru": "Тебе не нужно делать всё одному."
      }
     ],
     "task": "gaps",
@@ -1245,8 +1207,7 @@
       ],
       "punct": ".",
       "plain": "Du brauchst nicht alles allein zu machen.",
-      "ru": "Тебе не нужно делать всё одному.",
-      "audio": "audio/6dcece2cb4b5.m4a"
+      "ru": "Тебе не нужно делать всё одному."
      }
     ],
     "task": "notices"
@@ -1308,8 +1269,7 @@
       ],
       "punct": ".",
       "plain": "Du brauchst nicht alles allein zu machen.",
-      "ru": "Тебе не нужно делать всё одному.",
-      "audio": "audio/6dcece2cb4b5.m4a"
+      "ru": "Тебе не нужно делать всё одному."
      }
     ],
     "task": "notices"
@@ -1361,8 +1321,7 @@
       ],
       "punct": ".",
       "plain": "Du brauchst nicht alles allein zu machen.",
-      "ru": "Тебе не нужно делать всё одному.",
-      "audio": "audio/6dcece2cb4b5.m4a"
+      "ru": "Тебе не нужно делать всё одному."
      }
     ],
     "task": "notices",
@@ -1424,8 +1383,7 @@
       ],
       "punct": ".",
       "plain": "Du brauchst nicht alles allein zu machen.",
-      "ru": "Тебе не нужно делать всё одному.",
-      "audio": "audio/6dcece2cb4b5.m4a"
+      "ru": "Тебе не нужно делать всё одному."
      }
     ],
     "task": "write",
@@ -1488,8 +1446,7 @@
       ],
       "punct": ".",
       "plain": "Du brauchst nicht alles allein zu machen.",
-      "ru": "Тебе не нужно делать всё одному.",
-      "audio": "audio/6dcece2cb4b5.m4a"
+      "ru": "Тебе не нужно делать всё одному."
      }
     ],
     "task": "write",
@@ -1542,8 +1499,7 @@
       ],
       "punct": ".",
       "plain": "Du brauchst nicht alles allein zu machen.",
-      "ru": "Тебе не нужно делать всё одному.",
-      "audio": "audio/6dcece2cb4b5.m4a"
+      "ru": "Тебе не нужно делать всё одному."
      }
     ],
     "task": "write",
@@ -1606,8 +1562,7 @@
       ],
       "punct": ".",
       "plain": "Du brauchst nicht alles allein zu machen.",
-      "ru": "Тебе не нужно делать всё одному.",
-      "audio": "audio/6dcece2cb4b5.m4a"
+      "ru": "Тебе не нужно делать всё одному."
      }
     ],
     "task": "talk"
@@ -1669,8 +1624,7 @@
       ],
       "punct": ".",
       "plain": "Du brauchst nicht alles allein zu machen.",
-      "ru": "Тебе не нужно делать всё одному.",
-      "audio": "audio/6dcece2cb4b5.m4a"
+      "ru": "Тебе не нужно делать всё одному."
      }
     ],
     "task": "talk"
@@ -1722,8 +1676,7 @@
       ],
       "punct": ".",
       "plain": "Du brauchst nicht alles allein zu machen.",
-      "ru": "Тебе не нужно делать всё одному.",
-      "audio": "audio/6dcece2cb4b5.m4a"
+      "ru": "Тебе не нужно делать всё одному."
      }
     ],
     "task": "talk",
@@ -1743,8 +1696,7 @@
     "brauchst"
    ],
    "answer": 2,
-   "why": "Отсутствие необходимости.",
-   "audio": "audio/e7f052593683.m4a"
+   "why": "Отсутствие необходимости."
   },
   {
    "id": "b1-alltag-2",
@@ -1780,8 +1732,7 @@
     "zu"
    ],
    "answer": 2,
-   "why": "Письменная рамка brauchenzu.",
-   "audio": "audio/35464aace62b.m4a"
+   "why": "Письменная рамка brauchenzu."
   },
   {
    "id": "b1-alltag-5",
@@ -1793,8 +1744,7 @@
     "abzuholen"
    ],
    "answer": 2,
-   "why": "Zu внутри отделяемого глагола.",
-   "audio": "audio/ca21a463d7ed.m4a"
+   "why": "Zu внутри отделяемого глагола."
   },
   {
    "id": "b1-alltag-6",
@@ -1815,8 +1765,7 @@
    "ru": "Не нужно делать всё одному.",
    "also": [
     "Allein brauchst du nicht alles zu machen."
-   ],
-   "audio": "audio/6dcece2cb4b5.m4a"
+   ]
   },
   {
    "id": "b1-alltag-8",
@@ -1825,8 +1774,7 @@
    "ru": "Не нужно покупать стаканы.",
    "also": [
     "Die Becher brauchst du nicht zu kaufen."
-   ],
-   "audio": "audio/e7f052593683.m4a"
+   ]
   },
   {
    "id": "b1-alltag-9",
@@ -1836,8 +1784,7 @@
    "also": [
     "Nur die Liste brauche ich zu prüfen.",
     "Die Liste brauche ich nur zu prüfen."
-   ],
-   "audio": "audio/d98e700379c1.m4a"
+   ]
   },
   {
    "id": "b1-alltag-10",
@@ -1846,8 +1793,7 @@
    "ru": "Нам стоит предусмотреть короткие перерывы.",
    "also": [
     "Kurze Pausen sollten wir einplanen."
-   ],
-   "audio": "audio/0d86b15e7e73.m4a"
+   ]
   },
   {
    "id": "b1-alltag-11",
@@ -1856,8 +1802,7 @@
    "ru": "Хауке берёт на себя передачу ключа.",
    "also": [
     "Die Schlüsselübergabe übernimmt Hauke."
-   ],
-   "audio": "audio/c09eaf95d68a.m4a"
+   ]
   },
   {
    "id": "b1-alltag-12",
@@ -1866,8 +1811,7 @@
    "ru": "Элиф сообщит после самовывоза.",
    "also": [
     "Nach der Abholung meldet sich Elif."
-   ],
-   "audio": "audio/bfee9da18fc0.m4a"
+   ]
   }
  ],
  "case": {

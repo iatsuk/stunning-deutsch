@@ -68,50 +68,42 @@
     {
      "who": "E",
      "de": "Dana, kannst du mir bitte helfen?",
-     "ru": "Дана, можешь мне помочь?",
-     "audio": "audio/86ffb56607a5.m4a"
+     "ru": "Дана, можешь мне помочь?"
     },
     {
      "who": "D",
      "de": "Ja, gern. Was brauchst du?",
-     "ru": "Да, охотно. Что тебе нужно?",
-     "audio": "audio/f9a91f30cf38.m4a"
+     "ru": "Да, охотно. Что тебе нужно?"
     },
     {
      "who": "E",
      "de": "Gib mir bitte die Liste. Mateo braucht sein Ticket.",
-     "ru": "Дай мне список. Матео нужен его билет.",
-     "audio": "audio/bc81d53ece53.m4a"
+     "ru": "Дай мне список. Матео нужен его билет."
     },
     {
      "who": "D",
      "de": "Ich gebe ihm das Ticket. Und wer bekommt die Kamera?",
-     "ru": "Я дам ему билет. А кто получит камеру?",
-     "audio": "audio/01b8b89e8d65.m4a"
+     "ru": "Я дам ему билет. А кто получит камеру?"
     },
     {
      "who": "M",
      "de": "Die Kamera ist für Elif. Bring ihr bitte auch die Tasche.",
-     "ru": "Камера для Элиф. Принеси ей ещё и сумку.",
-     "audio": "audio/fe80c9ad6071.m4a"
+     "ru": "Камера для Элиф. Принеси ей ещё и сумку."
     },
     {
      "who": "H",
      "de": "Die Gäste brauchen Wasser. Können wir ihnen helfen?",
-     "ru": "Гостям нужна вода. Можем им помочь?",
-     "audio": "audio/4275a5ade7f8.m4a"
+     "ru": "Гостям нужна вода. Можем им помочь?"
     },
     {
      "who": "M",
      "de": "Ja. Ich bringe ihnen zwei Flaschen.",
-     "ru": "Да. Я принесу им две бутылки.",
-     "audio": "audio/82c395ec4338.m4a"
+     "ru": "Да. Я принесу им две бутылки."
     },
     {
      "who": "D",
      "de": "Danke! Dann fehlt uns nur noch der Schlüssel.",
-     "ru": "Спасибо! Тогда нам не хватает только ключа.",
-     "audio": "audio/fbe8b7119133.m4a"
+     "ru": "Спасибо! Тогда нам не хватает только ключа."
     }
    ]
   },
@@ -132,32 +124,27 @@
     {
      "who": "D",
      "de": "Mateo, wer bekommt die Liste und die Kamera?",
-     "ru": "Матео, кто получает список и камеру?",
-     "audio": "audio/5b5e127cca59.m4a"
+     "ru": "Матео, кто получает список и камеру?"
     },
     {
      "who": "M",
      "de": "Elif bekommt beides. Ich brauche nur mein Ticket.",
-     "ru": "Элиф получает и то и другое. Мне нужен только мой билет.",
-     "audio": "audio/f9bd8fe8b6de.m4a"
+     "ru": "Элиф получает и то и другое. Мне нужен только мой билет."
     },
     {
      "who": "D",
      "de": "Und was bekommen die Gäste?",
-     "ru": "А что получают гости?",
-     "audio": "audio/e008cc765146.m4a"
+     "ru": "А что получают гости?"
     },
     {
      "who": "M",
      "de": "Sie bekommen Wasser. Hauke hat den Schlüssel schon.",
-     "ru": "Они получают воду. Ключ у Хауке уже есть.",
-     "audio": "audio/68a64069d866.m4a"
+     "ru": "Они получают воду. Ключ у Хауке уже есть."
     },
     {
      "who": "D",
      "de": "Gut. Dann nehme ich das Fotoalbum.",
-     "ru": "Хорошо. Тогда я возьму фотоальбом.",
-     "audio": "audio/1cf8884a8bbf.m4a"
+     "ru": "Хорошо. Тогда я возьму фотоальбом."
     }
    ]
   }
@@ -171,85 +158,73 @@
      "de": "helfen",
      "ru": "помогать",
      "gender": null,
-     "plural": null,
-     "audio": "audio/a1e8f07b2bc9.m4a"
+     "plural": null
     },
     {
      "de": "geben",
      "ru": "давать",
      "gender": null,
-     "plural": null,
-     "audio": "audio/eccf30cb42bd.m4a"
+     "plural": null
     },
     {
      "de": "bringen",
      "ru": "приносить",
      "gender": null,
-     "plural": null,
-     "audio": "audio/158a94df8bc9.m4a"
+     "plural": null
     },
     {
      "de": "bekommen",
      "ru": "получать",
      "gender": null,
-     "plural": null,
-     "audio": "audio/a196e2019f65.m4a"
+     "plural": null
     },
     {
      "de": "fehlen",
      "ru": "не хватать",
      "gender": null,
-     "plural": null,
-     "audio": "audio/48a95c203780.m4a"
+     "plural": null
     },
     {
      "de": "der Empfänger",
      "ru": "получатель",
      "gender": "m",
-     "plural": "Empfänger",
-     "audio": "audio/013e2fb19e2f.m4a"
+     "plural": "Empfänger"
     },
     {
      "de": "die Liste",
      "ru": "список",
      "gender": "f",
-     "plural": "Listen",
-     "audio": "audio/fbe544c11b71.m4a"
+     "plural": "Listen"
     },
     {
      "de": "die Kamera",
      "ru": "камера",
      "gender": "f",
-     "plural": "Kameras",
-     "audio": "audio/c28600beba12.m4a"
+     "plural": "Kameras"
     },
     {
      "de": "das Ticket",
      "ru": "билет",
      "gender": "n",
-     "plural": "Tickets",
-     "audio": "audio/b828fc8c99e3.m4a"
+     "plural": "Tickets"
     },
     {
      "de": "der Schlüssel",
      "ru": "ключ",
      "gender": "m",
-     "plural": "Schlüssel",
-     "audio": "audio/df9315794234.m4a"
+     "plural": "Schlüssel"
     },
     {
      "de": "zurückgeben",
      "ru": "возвращать",
      "gender": null,
-     "plural": null,
-     "audio": "audio/c49db6ae72b5.m4a"
+     "plural": null
     },
     {
      "de": "brauchen",
      "ru": "нуждаться",
      "gender": null,
-     "plural": null,
-     "audio": "audio/75496eacd3f2.m4a"
+     "plural": null
     }
    ]
   }
@@ -358,28 +333,23 @@
    "script": [
     {
      "who": "Dana",
-     "de": "Mateo, wer bekommt die Liste und die Kamera?",
-     "audio": "audio/5b5e127cca59.m4a"
+     "de": "Mateo, wer bekommt die Liste und die Kamera?"
     },
     {
      "who": "Mateo",
-     "de": "Elif bekommt beides. Ich brauche nur mein Ticket.",
-     "audio": "audio/f9bd8fe8b6de.m4a"
+     "de": "Elif bekommt beides. Ich brauche nur mein Ticket."
     },
     {
      "who": "Dana",
-     "de": "Und was bekommen die Gäste?",
-     "audio": "audio/e008cc765146.m4a"
+     "de": "Und was bekommen die Gäste?"
     },
     {
      "who": "Mateo",
-     "de": "Sie bekommen Wasser. Hauke hat den Schlüssel schon.",
-     "audio": "audio/68a64069d866.m4a"
+     "de": "Sie bekommen Wasser. Hauke hat den Schlüssel schon."
     },
     {
      "who": "Dana",
-     "de": "Gut. Dann nehme ich das Fotoalbum.",
-     "audio": "audio/1cf8884a8bbf.m4a"
+     "de": "Gut. Dann nehme ich das Fotoalbum."
     }
    ],
    "sample": []
@@ -392,16 +362,13 @@
    "word": "Wem? Was?",
    "sample": [
     {
-     "de": "Kannst du mir bitte helfen?",
-     "audio": "audio/b73e2eb9b3b8.m4a"
+     "de": "Kannst du mir bitte helfen?"
     },
     {
-     "de": "Ja, gern. Was brauchst du?",
-     "audio": "audio/f9a91f30cf38.m4a"
+     "de": "Ja, gern. Was brauchst du?"
     },
     {
-     "de": "Bring mir bitte die Tasche.",
-     "audio": "audio/d2fba4aeb83c.m4a"
+     "de": "Bring mir bitte die Tasche."
     }
    ]
   },
@@ -595,8 +562,7 @@
       ],
       "punct": "?",
       "plain": "Kannst du mir helfen?",
-      "ru": "Можешь мне помочь?",
-      "audio": "audio/84ade3b07472.m4a"
+      "ru": "Можешь мне помочь?"
      }
     ]
    }
@@ -644,8 +610,7 @@
       ],
       "punct": "?",
       "plain": "Kannst du mir helfen?",
-      "ru": "Можешь мне помочь?",
-      "audio": "audio/84ade3b07472.m4a"
+      "ru": "Можешь мне помочь?"
      }
     ]
    }
@@ -693,8 +658,7 @@
       ],
       "punct": "?",
       "plain": "Kannst du mir helfen?",
-      "ru": "Можешь мне помочь?",
-      "audio": "audio/84ade3b07472.m4a"
+      "ru": "Можешь мне помочь?"
      }
     ]
    }
@@ -741,8 +705,7 @@
       ],
       "punct": "?",
       "plain": "Kannst du mir helfen?",
-      "ru": "Можешь мне помочь?",
-      "audio": "audio/84ade3b07472.m4a"
+      "ru": "Можешь мне помочь?"
      }
     ],
     "task": "matching"
@@ -791,8 +754,7 @@
       ],
       "punct": "?",
       "plain": "Kannst du mir helfen?",
-      "ru": "Можешь мне помочь?",
-      "audio": "audio/84ade3b07472.m4a"
+      "ru": "Можешь мне помочь?"
      }
     ],
     "task": "matching"
@@ -831,8 +793,7 @@
       ],
       "punct": "?",
       "plain": "Kannst du mir helfen?",
-      "ru": "Можешь мне помочь?",
-      "audio": "audio/84ade3b07472.m4a"
+      "ru": "Можешь мне помочь?"
      }
     ],
     "task": "matching",
@@ -881,8 +842,7 @@
       ],
       "punct": "?",
       "plain": "Kannst du mir helfen?",
-      "ru": "Можешь мне помочь?",
-      "audio": "audio/84ade3b07472.m4a"
+      "ru": "Можешь мне помочь?"
      }
     ],
     "task": "talk",
@@ -932,8 +892,7 @@
       ],
       "punct": "?",
       "plain": "Kannst du mir helfen?",
-      "ru": "Можешь мне помочь?",
-      "audio": "audio/84ade3b07472.m4a"
+      "ru": "Можешь мне помочь?"
      }
     ],
     "task": "talk",
@@ -973,8 +932,7 @@
       ],
       "punct": "?",
       "plain": "Kannst du mir helfen?",
-      "ru": "Можешь мне помочь?",
-      "audio": "audio/84ade3b07472.m4a"
+      "ru": "Можешь мне помочь?"
      }
     ],
     "task": "talk",
@@ -1024,8 +982,7 @@
       ],
       "punct": "?",
       "plain": "Kannst du mir helfen?",
-      "ru": "Можешь мне помочь?",
-      "audio": "audio/84ade3b07472.m4a"
+      "ru": "Можешь мне помочь?"
      }
     ],
     "task": "note"
@@ -1074,8 +1031,7 @@
       ],
       "punct": "?",
       "plain": "Kannst du mir helfen?",
-      "ru": "Можешь мне помочь?",
-      "audio": "audio/84ade3b07472.m4a"
+      "ru": "Можешь мне помочь?"
      }
     ],
     "task": "note"
@@ -1114,8 +1070,7 @@
       ],
       "punct": "?",
       "plain": "Kannst du mir helfen?",
-      "ru": "Можешь мне помочь?",
-      "audio": "audio/84ade3b07472.m4a"
+      "ru": "Можешь мне помочь?"
      }
     ],
     "task": "note",
@@ -1134,8 +1089,7 @@
     "mein"
    ],
    "answer": 0,
-   "why": "*helfen* + Dativ.",
-   "audio": "audio/84ade3b07472.m4a"
+   "why": "*helfen* + Dativ."
   },
   {
    "id": "a2-helfen-2",
@@ -1147,8 +1101,7 @@
     "ihnen"
    ],
    "answer": 0,
-   "why": "Матео → *ihm*.",
-   "audio": "audio/4bd049802733.m4a"
+   "why": "Матео → *ihm*."
   },
   {
    "id": "a2-helfen-3",
@@ -1160,8 +1113,7 @@
     "uns"
    ],
    "answer": 0,
-   "why": "Элиф → *ihr*.",
-   "audio": "audio/4d874949baca.m4a"
+   "why": "Элиф → *ihr*."
   },
   {
    "id": "a2-helfen-4",
@@ -1173,8 +1125,7 @@
     "ihr"
    ],
    "answer": 0,
-   "why": "Множественное число → *ihnen*.",
-   "audio": "audio/612e10aa13d0.m4a"
+   "why": "Множественное число → *ihnen*."
   },
   {
    "id": "a2-helfen-5",
@@ -1187,8 +1138,7 @@
     "ihn"
    ],
    "answer": 0,
-   "why": "Нам — *uns*.",
-   "audio": "audio/4ea294f75dc0.m4a"
+   "why": "Нам — *uns*."
   },
   {
    "id": "a2-helfen-6",
@@ -1201,15 +1151,13 @@
     "mein"
    ],
    "answer": 0,
-   "why": "Получатель — *mir*.",
-   "audio": "audio/b57991f443e6.m4a"
+   "why": "Получатель — *mir*."
   },
   {
    "id": "a2-helfen-7",
    "type": "order",
    "ru": "Можешь мне помочь?",
-   "de": "Kannst du mir helfen?",
-   "audio": "audio/84ade3b07472.m4a"
+   "de": "Kannst du mir helfen?"
   },
   {
    "id": "a2-helfen-8",
@@ -1219,8 +1167,7 @@
     "Das Ticket gebe ich ihm.",
     "Ihm gebe ich das Ticket."
    ],
-   "de": "Ich gebe ihm das Ticket.",
-   "audio": "audio/728583634449.m4a"
+   "de": "Ich gebe ihm das Ticket."
   },
   {
    "id": "a2-helfen-9",
@@ -1230,8 +1177,7 @@
     "Bring ihr die Tasche bitte.",
     "Bitte bring ihr die Tasche."
    ],
-   "de": "Bring ihr bitte die Tasche.",
-   "audio": "audio/607a4f04a22f.m4a"
+   "de": "Bring ihr bitte die Tasche."
   },
   {
    "id": "a2-helfen-10",
@@ -1240,15 +1186,13 @@
    "also": [
     "Ihnen helfen wir."
    ],
-   "de": "Wir helfen ihnen.",
-   "audio": "audio/973992d79b07.m4a"
+   "de": "Wir helfen ihnen."
   },
   {
    "id": "a2-helfen-11",
    "type": "order",
    "ru": "Спасибо за твою помощь!",
-   "de": "Danke für deine Hilfe!",
-   "audio": "audio/eb0a3a7ebd1f.m4a"
+   "de": "Danke für deine Hilfe!"
   },
   {
    "id": "a2-helfen-12",
@@ -1257,8 +1201,7 @@
    "also": [
     "Uns fehlt der Schlüssel."
    ],
-   "de": "Der Schlüssel fehlt uns.",
-   "audio": "audio/3727205ba711.m4a"
+   "de": "Der Schlüssel fehlt uns."
   }
  ],
  "case": {

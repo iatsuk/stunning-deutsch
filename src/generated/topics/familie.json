@@ -63,37 +63,37 @@
      "who": "M",
      "de": "Dana, ist das ein Foto aus Kasachstan?",
      "ru": "Дана, это фото из Казахстана?",
-     "audio": "audio/cc4d113ac0a7.m4a"
+     "audio": "audio/31d72d3464b5.m4a"
     },
     {
      "who": "A",
      "de": "Ja, das ist meine Familie. Das ist meine Mutter Aigul, und das ist mein Vater Marat. Das sind meine Eltern.",
      "ru": "Да, это моя семья. Это моя мама Айгуль, а это мой папа Марат. Это мои родители.",
-     "audio": "audio/326e1f471c3e.m4a"
+     "audio": "audio/973b76cb4bc7.m4a"
     },
     {
      "who": "M",
      "de": "Und wer ist das? Dein Bruder?",
      "ru": "А это кто? Твой брат?",
-     "audio": "audio/f30ef61b9d63.m4a"
+     "audio": "audio/c49ef8962de7.m4a"
     },
     {
      "who": "A",
      "de": "Ja, das ist mein Bruder Arman. Und das ist Nurlan. Ich habe zwei Brüder.",
      "ru": "Да, это мой брат Арман. А это Нурлан. У меня два брата.",
-     "audio": "audio/2104aad007b4.m4a"
+     "audio": "audio/db5ac3eb2a91.m4a"
     },
     {
      "who": "M",
      "de": "Und hast du auch eine Schwester?",
      "ru": "А сестра у тебя тоже есть?",
-     "audio": "audio/58ecef44e063.m4a"
+     "audio": "audio/132073fefedb.m4a"
     },
     {
      "who": "A",
      "de": "Nein, ich habe keine Schwester.",
      "ru": "Нет, сестры у меня нет.",
-     "audio": "audio/3fb518289b56.m4a"
+     "audio": "audio/364b66d3c95a.m4a"
     },
     {
      "who": "M",
@@ -128,7 +128,7 @@
      "who": "A",
      "de": "Und du, Mateo? Hast du Geschwister?",
      "ru": "А ты, Матео? У тебя есть братья и сёстры?",
-     "audio": "audio/6016b9e0c70a.m4a"
+     "audio": "audio/1bfc2e5e0bbf.m4a"
     },
     {
      "who": "M",
@@ -140,25 +140,25 @@
      "who": "A",
      "de": "Und wer ist das? Ist das ihr Mann?",
      "ru": "А это кто? Это её муж?",
-     "audio": "audio/59de48176263.m4a"
+     "audio": "audio/af384ba377c6.m4a"
     },
     {
      "who": "M",
      "de": "Ja, das ist Diego, ihr Mann. Und das ist ihr Baby.",
      "ru": "Да, это Диего, её муж. А это её малыш.",
-     "audio": "audio/96db4726d618.m4a"
+     "audio": "audio/fad9c87f8e80.m4a"
     },
     {
      "who": "A",
      "de": "Ein Baby! Ist das ein Junge oder ein Mädchen?",
      "ru": "Малыш! Это мальчик или девочка?",
-     "audio": "audio/38edd82fa3d7.m4a"
+     "audio": "audio/ca9f21b3cbf1.m4a"
     },
     {
      "who": "M",
      "de": "Ein Mädchen – Sofia. Ich bin jetzt Onkel!",
      "ru": "Девочка — София. Я теперь дядя!",
-     "audio": "audio/77f43781d9b0.m4a"
+     "audio": "audio/4473a9462569.m4a"
     },
     {
      "who": "A",
@@ -170,7 +170,7 @@
      "who": "M",
      "de": "Ja, unsere Familie ist in Buenos Aires. Ich wohne jetzt hier in Kiel.",
      "ru": "Да, наша семья в Буэнос-Айресе. Я сейчас живу здесь, в Киле.",
-     "audio": "audio/59f498e51d7c.m4a"
+     "audio": "audio/6a19e4dea98f.m4a"
     }
    ]
   },
@@ -193,13 +193,13 @@
      "who": "D",
      "de": "Das ist mein Rucksack. Und das sind meine Schlüssel.",
      "ru": "Это мой рюкзак. А это мои ключи.",
-     "audio": "audio/b0e9498781fd.m4a"
+     "audio": "audio/4264c252e31f.m4a"
     },
     {
      "who": "M",
      "de": "Das ist Lucía. Das ist ihr Handy. Und das ist Diego. Das ist seine Tasche.",
      "ru": "Это Лусия. Это её телефон. А это Диего. Это его сумка.",
-     "audio": "audio/e68954124b5b.m4a"
+     "audio": "audio/230c738de14f.m4a"
     },
     {
      "who": "M",
@@ -226,14 +226,14 @@
      "ru": "семья",
      "gender": "f",
      "plural": "Familien",
-     "audio": "audio/5a28fd21c3b7.m4a"
+     "audio": "audio/61253165b9e7.m4a"
     },
     {
      "de": "die Eltern",
      "ru": "родители",
      "gender": "pl",
      "plural": null,
-     "audio": "audio/1f029a2302e0.m4a"
+     "audio": "audio/df724411a39b.m4a"
     },
     {
      "de": "der Vater",
@@ -241,7 +241,7 @@
      "gender": "m",
      "plural": "Väter",
      "note": "по-домашнему — Papa",
-     "audio": "audio/1098dbda494a.m4a"
+     "audio": "audio/5eabffa358c8.m4a"
     },
     {
      "de": "die Mutter",
@@ -249,28 +249,28 @@
      "gender": "f",
      "plural": "Mütter",
      "note": "по-домашнему — Mama",
-     "audio": "audio/d71f0becc16a.m4a"
+     "audio": "audio/fdd0eab8738c.m4a"
     },
     {
      "de": "das Kind",
      "ru": "ребёнок",
      "gender": "n",
      "plural": "Kinder",
-     "audio": "audio/681a7733b607.m4a"
+     "audio": "audio/f96066a68b3f.m4a"
     },
     {
      "de": "der Sohn",
      "ru": "сын",
      "gender": "m",
      "plural": "Söhne",
-     "audio": "audio/dc2f375fef6c.m4a"
+     "audio": "audio/fb0731c8b184.m4a"
     },
     {
      "de": "die Tochter",
      "ru": "дочь",
      "gender": "f",
      "plural": "Töchter",
-     "audio": "audio/7e63a3094c5a.m4a"
+     "audio": "audio/353447b70e11.m4a"
     },
     {
      "de": "die Geschwister",
@@ -278,21 +278,21 @@
      "gender": "pl",
      "plural": null,
      "note": "одно слово на всех",
-     "audio": "audio/74098c7c0fd9.m4a"
+     "audio": "audio/2887447300d0.m4a"
     },
     {
      "de": "der Bruder",
      "ru": "брат",
      "gender": "m",
      "plural": "Brüder",
-     "audio": "audio/9f7e8bf039a7.m4a"
+     "audio": "audio/55c40573c9a3.m4a"
     },
     {
      "de": "die Schwester",
      "ru": "сестра",
      "gender": "f",
      "plural": "Schwestern",
-     "audio": "audio/b9c8cb555d29.m4a"
+     "audio": "audio/00708cc1b436.m4a"
     }
    ]
   },
@@ -305,7 +305,7 @@
      "ru": "бабушка и дедушка",
      "gender": "pl",
      "plural": null,
-     "audio": "audio/39c75127a6ba.m4a"
+     "audio": "audio/0cfddc87160a.m4a"
     },
     {
      "de": "der Opa",
@@ -328,14 +328,14 @@
      "ru": "дядя",
      "gender": "m",
      "plural": "Onkel",
-     "audio": "audio/bde44390eead.m4a"
+     "audio": "audio/5b9394dedbf3.m4a"
     },
     {
      "de": "die Tante",
      "ru": "тётя",
      "gender": "f",
      "plural": "Tanten",
-     "audio": "audio/e09cbeedacee.m4a"
+     "audio": "audio/b7766c081042.m4a"
     },
     {
      "de": "der Cousin",
@@ -351,21 +351,21 @@
      "gender": "f",
      "plural": "Cousinen",
      "note": "[кузи́не]",
-     "audio": "audio/54548b74882a.m4a"
+     "audio": "audio/35013c268f3c.m4a"
     },
     {
      "de": "der Enkel",
      "ru": "внук",
      "gender": "m",
      "plural": "Enkel",
-     "audio": "audio/ba13b18b7108.m4a"
+     "audio": "audio/f56eae048ace.m4a"
     },
     {
      "de": "die Enkelin",
      "ru": "внучка",
      "gender": "f",
      "plural": "Enkelinnen",
-     "audio": "audio/5727c2216f9d.m4a"
+     "audio": "audio/839adc0422d7.m4a"
     }
    ]
   },
@@ -378,7 +378,7 @@
      "ru": "мужчина; муж",
      "gender": "m",
      "plural": "Männer",
-     "audio": "audio/027ae5757b29.m4a"
+     "audio": "audio/e985db014179.m4a"
     },
     {
      "de": "die Frau",
@@ -386,14 +386,14 @@
      "gender": "f",
      "plural": "Frauen",
      "note": "и обращение — Frau Weber",
-     "audio": "audio/d1c9c8d599cf.m4a"
+     "audio": "audio/6f4241a8ce63.m4a"
     },
     {
      "de": "der Junge",
      "ru": "мальчик",
      "gender": "m",
      "plural": "Jungen",
-     "audio": "audio/ce41cc2992e7.m4a"
+     "audio": "audio/1979c58d4071.m4a"
     },
     {
      "de": "das Mädchen",
@@ -401,7 +401,7 @@
      "gender": "n",
      "plural": "Mädchen",
      "note": "средний род, как das Kind",
-     "audio": "audio/d8e10dced8d1.m4a"
+     "audio": "audio/18bdeeda95a4.m4a"
     },
     {
      "de": "das Baby",
@@ -415,14 +415,14 @@
      "ru": "друг; парень",
      "gender": "m",
      "plural": "Freunde",
-     "audio": "audio/5e139a9885c2.m4a"
+     "audio": "audio/4214cf59bf49.m4a"
     },
     {
      "de": "die Freundin",
      "ru": "подруга; девушка",
      "gender": "f",
      "plural": "Freundinnen",
-     "audio": "audio/1a5a2a1e5291.m4a"
+     "audio": "audio/9b548f8ec374.m4a"
     },
     {
      "de": "der Hund",
@@ -430,14 +430,14 @@
      "gender": "m",
      "plural": "Hunde",
      "note": "мужской род: der Hund — er",
-     "audio": "audio/69e3026f4074.m4a"
+     "audio": "audio/78d4d74401ac.m4a"
     },
     {
      "de": "die Katze",
      "ru": "кошка",
      "gender": "f",
      "plural": "Katzen",
-     "audio": "audio/00cd01ce47ae.m4a"
+     "audio": "audio/74e419b8bcf1.m4a"
     }
    ]
   },
@@ -466,21 +466,21 @@
      "ru": "разведён / разведена",
      "gender": null,
      "plural": null,
-     "audio": "audio/67b002fb0a9d.m4a"
+     "audio": "audio/7fcbbbfea181.m4a"
     },
     {
      "de": "der Partner",
      "ru": "партнёр",
      "gender": "m",
      "plural": "Partner",
-     "audio": "audio/467a5899f26d.m4a"
+     "audio": "audio/1e76760181a4.m4a"
     },
     {
      "de": "die Partnerin",
      "ru": "партнёрша",
      "gender": "f",
      "plural": "Partnerinnen",
-     "audio": "audio/e166b920847a.m4a"
+     "audio": "audio/fc85632a8ce0.m4a"
     }
    ]
   },
@@ -493,21 +493,21 @@
      "ru": "гость",
      "gender": "m",
      "plural": "Gäste",
-     "audio": "audio/78ce0f055058.m4a"
+     "audio": "audio/4ab4c44ac9c1.m4a"
     },
     {
      "de": "die Tasche",
      "ru": "сумка",
      "gender": "f",
      "plural": "Taschen",
-     "audio": "audio/8d7ec2dd610d.m4a"
+     "audio": "audio/75a9b8eba7bb.m4a"
     },
     {
      "de": "der Rucksack",
      "ru": "рюкзак",
      "gender": "m",
      "plural": "Rucksäcke",
-     "audio": "audio/71c1c1309faf.m4a"
+     "audio": "audio/cf239ae58599.m4a"
     },
     {
      "de": "der Schlüssel",
@@ -515,7 +515,7 @@
      "gender": "m",
      "plural": "Schlüssel",
      "note": "Один и несколько выглядят одинаково: der Schlüssel — die Schlüssel.",
-     "audio": "audio/df9315794234.m4a"
+     "audio": "audio/9e60ae780ed2.m4a"
     },
     {
      "de": "das Foto",
@@ -709,11 +709,11 @@
    "sample": [
     {
      "de": "Hast du Kinder?",
-     "audio": "audio/508aed099108.m4a"
+     "audio": "audio/2960e3079557.m4a"
     },
     {
      "de": "Nein, ich habe keine Kinder. Aber meine Schwester hat ein Baby.",
-     "audio": "audio/7d2baf729de7.m4a"
+     "audio": "audio/029961a1d09e.m4a"
     }
    ]
   },
@@ -1002,7 +1002,7 @@
       "punct": ".",
       "plain": "Das ist mein Vater.",
       "ru": "Это мой отец.",
-      "audio": "audio/0ad54b720968.m4a"
+      "audio": "audio/103e3accceb4.m4a"
      }
     ]
    }
@@ -1049,7 +1049,7 @@
       "punct": ".",
       "plain": "Das ist meine Mutter.",
       "ru": "Это моя мать.",
-      "audio": "audio/cbe6d45dbae5.m4a"
+      "audio": "audio/4f8e3044e534.m4a"
      }
     ]
    }
@@ -1096,7 +1096,7 @@
       "punct": ".",
       "plain": "Das sind meine Eltern.",
       "ru": "Это мои родители.",
-      "audio": "audio/7152d81b3677.m4a"
+      "audio": "audio/6b5331a75f3d.m4a"
      }
     ]
    }
@@ -1143,7 +1143,7 @@
       "punct": ".",
       "plain": "Das sind meine Eltern.",
       "ru": "Это мои родители.",
-      "audio": "audio/7152d81b3677.m4a"
+      "audio": "audio/6b5331a75f3d.m4a"
      }
     ],
     "table": "possessiv",
@@ -1196,7 +1196,7 @@
       "punct": ".",
       "plain": "Das sind meine Eltern.",
       "ru": "Это мои родители.",
-      "audio": "audio/7152d81b3677.m4a"
+      "audio": "audio/6b5331a75f3d.m4a"
      }
     ],
     "table": "possessiv",
@@ -1257,7 +1257,7 @@
       "punct": ".",
       "plain": "Das sind meine Eltern.",
       "ru": "Это мои родители.",
-      "audio": "audio/7152d81b3677.m4a"
+      "audio": "audio/6b5331a75f3d.m4a"
      }
     ],
     "table": "einkein",
@@ -1306,7 +1306,7 @@
       "punct": ".",
       "plain": "Das sind meine Eltern.",
       "ru": "Это мои родители.",
-      "audio": "audio/7152d81b3677.m4a"
+      "audio": "audio/6b5331a75f3d.m4a"
      }
     ],
     "table": "einkein",
@@ -1363,7 +1363,7 @@
       "punct": ".",
       "plain": "Das sind meine Eltern.",
       "ru": "Это мои родители.",
-      "audio": "audio/7152d81b3677.m4a"
+      "audio": "audio/6b5331a75f3d.m4a"
      }
     ],
     "table": "plural",
@@ -1412,7 +1412,7 @@
       "punct": ".",
       "plain": "Das sind meine Eltern.",
       "ru": "Это мои родители.",
-      "audio": "audio/7152d81b3677.m4a"
+      "audio": "audio/6b5331a75f3d.m4a"
      }
     ],
     "table": "plural",
@@ -1479,7 +1479,7 @@
       "punct": ".",
       "plain": "Mein Bruder wohnt in Almaty.",
       "ru": "Мой брат живёт в Алматы.",
-      "audio": "audio/3ddb1ec5932e.m4a"
+      "audio": "audio/c010acea62f2.m4a"
      },
      {
       "slots": [
@@ -1514,7 +1514,7 @@
       "punct": ".",
       "plain": "Meine Brüder wohnen in Almaty.",
       "ru": "Мои братья живут в Алматы.",
-      "audio": "audio/7c5c68b44091.m4a"
+      "audio": "audio/d6deda4ee39d.m4a"
      }
     ],
     "table": "plural"
@@ -1563,7 +1563,7 @@
       "punct": ".",
       "plain": "Das sind unsere Kinder.",
       "ru": "Это наши дети.",
-      "audio": "audio/5095d1430f09.m4a"
+      "audio": "audio/8a02b7911514.m4a"
      }
     ],
     "table": "plural"
@@ -1612,7 +1612,7 @@
       "punct": ".",
       "plain": "Das sind unsere Kinder.",
       "ru": "Это наши дети.",
-      "audio": "audio/5095d1430f09.m4a"
+      "audio": "audio/8a02b7911514.m4a"
      }
     ],
     "table": "possessiv",
@@ -1660,7 +1660,7 @@
       "punct": "?",
       "plain": "Hast du Kinder?",
       "ru": "У тебя есть дети?",
-      "audio": "audio/508aed099108.m4a"
+      "audio": "audio/2960e3079557.m4a"
      }
     ],
     "table": "possessiv"
@@ -1694,7 +1694,7 @@
       "punct": "?",
       "plain": "Hast du Kinder?",
       "ru": "У тебя есть дети?",
-      "audio": "audio/508aed099108.m4a"
+      "audio": "audio/2960e3079557.m4a"
      },
      {
       "slots": [
@@ -1725,7 +1725,7 @@
       "punct": ".",
       "plain": "Ich habe keine Kinder.",
       "ru": "Нет, у меня нет детей.",
-      "audio": "audio/d7ef53a304f7.m4a"
+      "audio": "audio/9b4096fbed42.m4a"
      }
     ],
     "table": "possessiv",
@@ -1771,7 +1771,7 @@
       "punct": "?",
       "plain": "Hast du Kinder?",
       "ru": "У тебя есть дети?",
-      "audio": "audio/508aed099108.m4a"
+      "audio": "audio/2960e3079557.m4a"
      },
      {
       "slots": [
@@ -1802,7 +1802,7 @@
       "punct": ".",
       "plain": "Ich habe keine Kinder.",
       "ru": "Нет, у меня нет детей.",
-      "audio": "audio/d7ef53a304f7.m4a"
+      "audio": "audio/9b4096fbed42.m4a"
      }
     ],
     "table": "possessiv",
@@ -1848,7 +1848,7 @@
       "punct": "?",
       "plain": "Hast du Kinder?",
       "ru": "У тебя есть дети?",
-      "audio": "audio/508aed099108.m4a"
+      "audio": "audio/2960e3079557.m4a"
      },
      {
       "slots": [
@@ -1879,7 +1879,7 @@
       "punct": ".",
       "plain": "Ich habe keine Kinder.",
       "ru": "Нет, у меня нет детей.",
-      "audio": "audio/d7ef53a304f7.m4a"
+      "audio": "audio/9b4096fbed42.m4a"
      }
     ],
     "table": "possessiv",
@@ -1924,7 +1924,7 @@
       "punct": "?",
       "plain": "Hast du Kinder?",
       "ru": "У тебя есть дети?",
-      "audio": "audio/508aed099108.m4a"
+      "audio": "audio/2960e3079557.m4a"
      },
      {
       "slots": [
@@ -1955,7 +1955,7 @@
       "punct": ".",
       "plain": "Ich habe keine Kinder.",
       "ru": "Нет, у меня нет детей.",
-      "audio": "audio/d7ef53a304f7.m4a"
+      "audio": "audio/9b4096fbed42.m4a"
      }
     ],
     "table": "possessiv",
@@ -2000,7 +2000,7 @@
       "punct": "?",
       "plain": "Hast du Kinder?",
       "ru": "У тебя есть дети?",
-      "audio": "audio/508aed099108.m4a"
+      "audio": "audio/2960e3079557.m4a"
      },
      {
       "slots": [
@@ -2031,7 +2031,7 @@
       "punct": ".",
       "plain": "Ich habe keine Kinder.",
       "ru": "Нет, у меня нет детей.",
-      "audio": "audio/d7ef53a304f7.m4a"
+      "audio": "audio/9b4096fbed42.m4a"
      }
     ],
     "table": "possessiv",
@@ -2052,7 +2052,7 @@
    ],
    "answer": 1,
    "why": "Говорит Дана — значит, *mein*; *die Mutter* — окончание *-e*: *meine*.",
-   "audio": "audio/5cb71f8c2f0f.m4a"
+   "audio": "audio/455458185e0e.m4a"
   },
   {
    "id": "familie-2",
@@ -2065,7 +2065,7 @@
    ],
    "answer": 1,
    "why": "Владелица — Лусия: *ihr*. *der Mann* — без окончания.",
-   "audio": "audio/f10d59d84d89.m4a"
+   "audio": "audio/e408da4f79a2.m4a"
   },
   {
    "id": "familie-3",
@@ -2078,7 +2078,7 @@
    ],
    "answer": 0,
    "why": "Владелец — Арман: *sein*. *die Frau* — с *-e*: *seine*.",
-   "audio": "audio/e1936d014010.m4a"
+   "audio": "audio/a3aca74e2682.m4a"
   },
   {
    "id": "familie-4",
@@ -2089,7 +2089,7 @@
    ],
    "hint": "sein",
    "why": "Родителей двое — *das sind*. В русском глагола тут нет, в немецком он обязателен.",
-   "audio": "audio/7152d81b3677.m4a"
+   "audio": "audio/6b5331a75f3d.m4a"
   },
   {
    "id": "familie-5",
@@ -2100,7 +2100,7 @@
    ],
    "hint": "du",
    "why": "*du* → *dein*; *die Schwester* → *deine*.",
-   "audio": "audio/959905a8e535.m4a"
+   "audio": "audio/99ca2e13078c.m4a"
   },
   {
    "id": "familie-6",
@@ -2122,7 +2122,7 @@
    ],
    "hint": "Sie",
    "why": "Вежливо — *Ihr* с большой буквы; *Kinder* — мн. ч., поэтому *-e*.",
-   "audio": "audio/826468d87c2d.m4a"
+   "audio": "audio/cec8a2a0243d.m4a"
   },
   {
    "id": "familie-8",
@@ -2134,7 +2134,7 @@
    ],
    "answer": 0,
    "why": "*das Mädchen* — средний род: *ein Mädchen*.",
-   "audio": "audio/7d3f1143a988.m4a"
+   "audio": "audio/997988757f9c.m4a"
   },
   {
    "id": "familie-9",
@@ -2145,7 +2145,7 @@
    ],
    "hint": "kein",
    "ru": "У меня нет сестры.",
-   "audio": "audio/a6422f1d5a8e.m4a"
+   "audio": "audio/a39b576ca9b6.m4a"
   },
   {
    "id": "familie-10",
@@ -2157,7 +2157,7 @@
    "hint": "kein",
    "ru": "У Матео нет детей.",
    "why": "Мн. ч. — *keine*, как *meine*.",
-   "audio": "audio/2ad9618c8688.m4a"
+   "audio": "audio/cd79715c8e37.m4a"
   },
   {
    "id": "familie-11",
@@ -2170,7 +2170,7 @@
    ],
    "answer": 1,
    "why": "Только умлаут: *die Brüder*.",
-   "audio": "audio/b2e083de2f3d.m4a"
+   "audio": "audio/70383c2a8438.m4a"
   },
   {
    "id": "familie-12",
@@ -2183,7 +2183,7 @@
    ],
    "answer": 0,
    "why": "Слова с *die* почти всегда получают *-(e)n*.",
-   "audio": "audio/d22e59b11d2e.m4a"
+   "audio": "audio/4e2f1644cca1.m4a"
   },
   {
    "id": "familie-13",
@@ -2193,7 +2193,7 @@
     "Kinder"
    ],
    "why": "*das*-слова часто получают *-er*: *die Kinder*.",
-   "audio": "audio/31ed5481acf7.m4a"
+   "audio": "audio/48035dd2faee.m4a"
   },
   {
    "id": "familie-14",
@@ -2203,7 +2203,7 @@
     "Meine Eltern sind das."
    ],
    "de": "Das sind meine Eltern.",
-   "audio": "audio/7152d81b3677.m4a"
+   "audio": "audio/6b5331a75f3d.m4a"
   },
   {
    "id": "familie-15",
@@ -2211,14 +2211,14 @@
    "ru": "Это твой брат?",
    "de": "Ist das dein Bruder?",
    "why": "Вопрос да/нет: глагол первый, *das* — сразу за ним.",
-   "audio": "audio/69fca33aa182.m4a"
+   "audio": "audio/b55e5ccd53ca.m4a"
   },
   {
    "id": "familie-16",
    "type": "order",
    "ru": "У тебя есть братья и сёстры?",
    "de": "Hast du Geschwister?",
-   "audio": "audio/316f66308d35.m4a"
+   "audio": "audio/858993441223.m4a"
   },
   {
    "id": "familie-17",
@@ -2242,7 +2242,7 @@
    ],
    "answer": 0,
    "why": "Владелица — Дана: *ihr*. Перед *Brüder* во множественном числе — *ihre*.",
-   "audio": "audio/c35292f517e6.m4a"
+   "audio": "audio/2d0aa17f730a.m4a"
   },
   {
    "id": "familie-19",
@@ -2255,7 +2255,7 @@
    ],
    "answer": 1,
    "why": "*die Schlüssel* — несколько ключей. Нужна форма *sind*, хотя само слово выглядит как в единственном числе.",
-   "audio": "audio/de9b985eda9b.m4a"
+   "audio": "audio/9075da2e24c8.m4a"
   },
   {
    "id": "familie-20",
@@ -2267,7 +2267,7 @@
    "hint": "kein",
    "ru": "У Диего нет братьев и сестёр.",
    "why": "*Geschwister* — множественное число, отрицание — *keine*.",
-   "audio": "audio/8ad21c9d1d2e.m4a"
+   "audio": "audio/0b355d1b0051.m4a"
   }
  ],
  "case": {
@@ -2323,7 +2323,7 @@
       "who": "L",
       "de": "Das ist mein Mann Diego. Das ist sein Rucksack. Meine Tasche ist hier.",
       "ru": "Это мой муж Диего. Это его рюкзак. Моя сумка здесь.",
-      "audio": "audio/9e67089f341f.m4a"
+      "audio": "audio/40ea7bcb4e08.m4a"
      }
     ],
     "question": "Для кого Йенсен должен пока отложить рюкзак?",
@@ -2355,7 +2355,7 @@
       "who": "L",
       "de": "Diego hat keine Geschwister. Wir haben eine Tochter, Sofia.",
       "ru": "У Диего нет братьев и сестёр. У нас одна дочь, София.",
-      "audio": "audio/05ff7ea55bd2.m4a"
+      "audio": "audio/7492e4841213.m4a"
      }
     ],
     "question": "Какое противоречие нужно проверить?",
@@ -2415,17 +2415,17 @@
     "quotes": [
      {
       "de": "Ja, das ist meine Familie. Das ist meine Mutter Aigul, und das ist mein Vater Marat. Das sind meine Eltern.",
-      "audio": "audio/326e1f471c3e.m4a",
+      "audio": "audio/973b76cb4bc7.m4a",
       "name": "Dana"
      },
      {
       "de": "Ja, das ist mein Bruder Arman. Und das ist Nurlan. Ich habe zwei Brüder.",
-      "audio": "audio/2104aad007b4.m4a",
+      "audio": "audio/db5ac3eb2a91.m4a",
       "name": "Dana"
      },
      {
       "de": "Nein, ich habe keine Schwester.",
-      "audio": "audio/3fb518289b56.m4a",
+      "audio": "audio/364b66d3c95a.m4a",
       "name": "Dana"
      }
     ],
@@ -2490,12 +2490,12 @@
      },
      {
       "de": "Ja, das ist Diego, ihr Mann. Und das ist ihr Baby.",
-      "audio": "audio/96db4726d618.m4a",
+      "audio": "audio/fad9c87f8e80.m4a",
       "name": "Mateo"
      },
      {
       "de": "Ein Mädchen – Sofia. Ich bin jetzt Onkel!",
-      "audio": "audio/77f43781d9b0.m4a",
+      "audio": "audio/4473a9462569.m4a",
       "name": "Mateo"
      }
     ],
@@ -2547,12 +2547,12 @@
     "quotes": [
      {
       "de": "Das ist mein Rucksack. Und das sind meine Schlüssel.",
-      "audio": "audio/b0e9498781fd.m4a",
+      "audio": "audio/4264c252e31f.m4a",
       "name": "Dana"
      },
      {
       "de": "Das ist Lucía. Das ist ihr Handy. Und das ist Diego. Das ist seine Tasche.",
-      "audio": "audio/e68954124b5b.m4a",
+      "audio": "audio/230c738de14f.m4a",
       "name": "Mateo"
      },
      {

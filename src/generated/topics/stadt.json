@@ -77,7 +77,7 @@
      "who": "A",
      "de": "Geradeaus – und dann?",
      "ru": "Прямо — а потом?",
-     "audio": "audio/22771911761c.m4a"
+     "audio": "audio/94aa7ab93b2a.m4a"
     },
     {
      "who": "P",
@@ -89,13 +89,13 @@
      "who": "A",
      "de": "Kann ich auch mit dem Bus fahren?",
      "ru": "А можно поехать на автобусе?",
-     "audio": "audio/9449b964883c.m4a"
+     "audio": "audio/9efc2e212be7.m4a"
     },
     {
      "who": "P",
      "de": "Mit dem Bus geht es auch. Aber zu Fuß sind es nur zehn Minuten.",
      "ru": "На автобусе тоже можно. Но пешком всего десять минут.",
-     "audio": "audio/e09582983abb.m4a"
+     "audio": "audio/dcb1dff18568.m4a"
     },
     {
      "who": "A",
@@ -107,7 +107,7 @@
      "who": "P",
      "de": "Gern geschehen!",
      "ru": "Не за что!",
-     "audio": "audio/b605b74164a2.m4a"
+     "audio": "audio/693d2f800f5a.m4a"
     }
    ]
   },
@@ -130,25 +130,25 @@
      "who": "M",
      "de": "Hallo, Dana! Bist du schon zu Hause?",
      "ru": "Привет, Дана! Ты уже дома?",
-     "audio": "audio/00cf3544e367.m4a"
+     "audio": "audio/841cf148eb58.m4a"
     },
     {
      "who": "A",
      "de": "Nein, ich bin noch in Lübeck, bei Mira.",
      "ru": "Нет, я ещё в Любеке, у Миры.",
-     "audio": "audio/af6c9c082058.m4a"
+     "audio": "audio/7685e229541f.m4a"
     },
     {
      "who": "M",
      "de": "Wann fährst du nach Hause?",
      "ru": "Когда ты поедешь домой?",
-     "audio": "audio/e8ac2ddbed31.m4a"
+     "audio": "audio/6f5be0602d8f.m4a"
     },
     {
      "who": "A",
      "de": "Mein Zug fährt um acht. Um zehn bin ich zu Hause.",
      "ru": "Мой поезд в восемь. В десять я буду дома.",
-     "audio": "audio/9b5fc6c649ee.m4a"
+     "audio": "audio/37a900a7b693.m4a"
     },
     {
      "who": "M",
@@ -160,25 +160,25 @@
      "who": "A",
      "de": "Ja, gern! Wie komme ich zu dir?",
      "ru": "Да, с удовольствием! Как мне добраться к тебе?",
-     "audio": "audio/6ce0b1516544.m4a"
+     "audio": "audio/c8b7cf599f42.m4a"
     },
     {
      "who": "M",
      "de": "Du fährst mit dem Bus nach Holtenau. Von der Haltestelle sind es nur zwei Minuten.",
      "ru": "Едешь на автобусе в Holtenau. От остановки всего две минуты.",
-     "audio": "audio/254e9d4057d2.m4a"
+     "audio": "audio/cee9607217e8.m4a"
     },
     {
      "who": "A",
      "de": "Super! Dann bis morgen!",
      "ru": "Супер! Тогда до завтра!",
-     "audio": "audio/3f9404b672dc.m4a"
+     "audio": "audio/5544f5efa08b.m4a"
     },
     {
      "who": "M",
      "de": "Bis morgen! Gute Fahrt nach Hause!",
      "ru": "До завтра! Хорошей дороги домой!",
-     "audio": "audio/f209e4ba9728.m4a"
+     "audio": "audio/b5364c1deb51.m4a"
     }
    ]
   },
@@ -206,25 +206,25 @@
      "who": "T",
      "de": "Am Bahnhof ist es so voll. Lieber vor dem Kino.",
      "ru": "На вокзале так людно. Лучше перед кинотеатром.",
-     "audio": "audio/fa85a7ab9cf0.m4a"
+     "audio": "audio/b29dc6794d50.m4a"
     },
     {
      "who": "L",
      "de": "Vor dem Kino? Gut. Und wann?",
      "ru": "Перед кинотеатром? Хорошо. А когда?",
-     "audio": "audio/8fe63a6c772e.m4a"
+     "audio": "audio/0bb3307aa6ea.m4a"
     },
     {
      "who": "T",
      "de": "Um halb sieben. Der Film fängt um sieben an.",
      "ru": "В половине седьмого. Фильм начинается в семь.",
-     "audio": "audio/1e5423ca3e9c.m4a"
+     "audio": "audio/16779bf695b1.m4a"
     },
     {
      "who": "L",
      "de": "Super. Ich komme mit dem Fahrrad. Bis morgen!",
      "ru": "Супер. Я приеду на велосипеде. До завтра!",
-     "audio": "audio/0b393fec543b.m4a"
+     "audio": "audio/9eb5f9153ec3.m4a"
     }
    ]
   }
@@ -240,14 +240,14 @@
      "gender": "m",
      "plural": "Bahnhöfe",
      "note": "der Hauptbahnhof (Hbf) — главный вокзал",
-     "audio": "audio/b9e1a0624846.m4a"
+     "audio": "audio/bd4ddb46390e.m4a"
     },
     {
      "de": "die Haltestelle",
      "ru": "остановка",
      "gender": "f",
      "plural": "Haltestellen",
-     "audio": "audio/05f685b1a1ab.m4a"
+     "audio": "audio/55d2fd2c5bf1.m4a"
     },
     {
      "de": "der Platz",
@@ -255,7 +255,7 @@
      "gender": "m",
      "plural": "Plätze",
      "note": "der Rathausplatz",
-     "audio": "audio/0e0e5149d6fb.m4a"
+     "audio": "audio/b0cfc415a361.m4a"
     },
     {
      "de": "die Straße",
@@ -263,7 +263,7 @@
      "gender": "f",
      "plural": "Straßen",
      "note": "in der Straße — на улице",
-     "audio": "audio/77fea95e1ac2.m4a"
+     "audio": "audio/ab9329624d7d.m4a"
     },
     {
      "de": "die Post",
@@ -280,21 +280,21 @@
      "gender": "f",
      "plural": "Banken",
      "note": "die Bänke — скамейки",
-     "audio": "audio/c57c5676a342.m4a"
+     "audio": "audio/8b53d6ce1fba.m4a"
     },
     {
      "de": "die Apotheke",
      "ru": "аптека",
      "gender": "f",
      "plural": "Apotheken",
-     "audio": "audio/65b50c1a94a8.m4a"
+     "audio": "audio/3674fdf757a8.m4a"
     },
     {
      "de": "der Supermarkt",
      "ru": "супермаркет",
      "gender": "m",
      "plural": "Supermärkte",
-     "audio": "audio/09d7abfc3ad1.m4a"
+     "audio": "audio/4c4f77d9f8a2.m4a"
     },
     {
      "de": "das Rathaus",
@@ -302,7 +302,7 @@
      "gender": "n",
      "plural": "Rathäuser",
      "note": "der Rat + das Haus",
-     "audio": "audio/68006ae07fe5.m4a"
+     "audio": "audio/ac0f5b91a129.m4a"
     },
     {
      "de": "das Bürgeramt",
@@ -310,7 +310,7 @@
      "gender": "n",
      "plural": "Bürgerämter",
      "note": "здесь регистрируют адрес",
-     "audio": "audio/106c21b901c3.m4a"
+     "audio": "audio/f634e94d9dd8.m4a"
     },
     {
      "de": "das Krankenhaus",
@@ -318,7 +318,7 @@
      "gender": "n",
      "plural": "Krankenhäuser",
      "note": "krank + das Haus",
-     "audio": "audio/6e4005ad510a.m4a"
+     "audio": "audio/8730f5c855e7.m4a"
     },
     {
      "de": "der Arzt",
@@ -326,7 +326,7 @@
      "gender": "m",
      "plural": "Ärzte",
      "note": "beim Arzt — у врача",
-     "audio": "audio/df79b4cec3b2.m4a"
+     "audio": "audio/0e8ad8f67d0e.m4a"
     }
    ]
   },
@@ -340,7 +340,7 @@
      "gender": "m",
      "plural": "Busse",
      "note": "mit dem Bus",
-     "audio": "audio/5c26d1e4c622.m4a"
+     "audio": "audio/270bcd22f382.m4a"
     },
     {
      "de": "die Straßenbahn",
@@ -348,14 +348,14 @@
      "gender": "f",
      "plural": "Straßenbahnen",
      "note": "mit der Straßenbahn",
-     "audio": "audio/eb05aeb0ca77.m4a"
+     "audio": "audio/883c26d31305.m4a"
     },
     {
      "de": "die S-Bahn",
      "ru": "городская электричка",
      "gender": "f",
      "plural": "S-Bahnen",
-     "audio": "audio/ccd7e23959d1.m4a"
+     "audio": "audio/5b013ac034ce.m4a"
     },
     {
      "de": "die U-Bahn",
@@ -363,7 +363,7 @@
      "gender": "f",
      "plural": "U-Bahnen",
      "note": "для поездок, например в Hamburg",
-     "audio": "audio/92b6769811e0.m4a"
+     "audio": "audio/e590180170b4.m4a"
     },
     {
      "de": "der Zug",
@@ -371,7 +371,7 @@
      "gender": "m",
      "plural": "Züge",
      "note": "mit dem Zug",
-     "audio": "audio/fbaed702927d.m4a"
+     "audio": "audio/4d0a89bc3f91.m4a"
     },
     {
      "de": "das Auto",
@@ -386,7 +386,7 @@
      "gender": "n",
      "plural": "Fahrräder",
      "note": "mit dem Fahrrad",
-     "audio": "audio/94aad7c9fb24.m4a"
+     "audio": "audio/206798d14d8b.m4a"
     },
     {
      "de": "das Taxi",
@@ -408,7 +408,7 @@
      "ru": "билет",
      "gender": "f",
      "plural": "Fahrkarten",
-     "audio": "audio/298d90a0d52c.m4a"
+     "audio": "audio/2de3bedb9f6e.m4a"
     },
     {
      "de": "das Gleis",
@@ -416,7 +416,7 @@
      "gender": "n",
      "plural": "Gleise",
      "note": "von Gleis 5",
-     "audio": "audio/cb93bec4ea43.m4a"
+     "audio": "audio/4977478fdb73.m4a"
     },
     {
      "de": "die Linie",
@@ -424,7 +424,7 @@
      "gender": "f",
      "plural": "Linien",
      "note": "die Linie 16",
-     "audio": "audio/d0d986b156ce.m4a"
+     "audio": "audio/8c5dd371d02f.m4a"
     }
    ]
   },
@@ -445,7 +445,7 @@
      "gender": null,
      "plural": null,
      "note": "zum Bahnhof, zur Post",
-     "audio": "audio/d15ba7790b45.m4a"
+     "audio": "audio/c72175a05710.m4a"
     },
     {
      "de": "Wohin?",
@@ -453,7 +453,7 @@
      "gender": null,
      "plural": null,
      "note": "Wohin fährst du?",
-     "audio": "audio/0713a8a93dfb.m4a"
+     "audio": "audio/e1b7141ec971.m4a"
     },
     {
      "de": "geradeaus",
@@ -482,7 +482,7 @@
      "gender": "f",
      "plural": "Ampeln",
      "note": "an der Ampel — у светофора",
-     "audio": "audio/f387bf8734f6.m4a"
+     "audio": "audio/a1240515ecbb.m4a"
     },
     {
      "de": "weit",
@@ -498,7 +498,7 @@
      "gender": null,
      "plural": null,
      "note": "Gibt es hier in der Nähe eine Apotheke?",
-     "audio": "audio/c846a4998d73.m4a"
+     "audio": "audio/a1a654d81a4c.m4a"
     },
     {
      "de": "einsteigen",
@@ -506,7 +506,7 @@
      "gender": null,
      "plural": null,
      "note": "Ich steige hier ein.",
-     "audio": "audio/36dd7a80c618.m4a"
+     "audio": "audio/153e9953fe89.m4a"
     },
     {
      "de": "aussteigen",
@@ -514,7 +514,7 @@
      "gender": null,
      "plural": null,
      "note": "Ich steige am Bahnhof aus.",
-     "audio": "audio/bf50ab118d55.m4a"
+     "audio": "audio/a1e4134da8de.m4a"
     },
     {
      "de": "umsteigen",
@@ -522,7 +522,7 @@
      "gender": null,
      "plural": null,
      "note": "Wo steige ich um?",
-     "audio": "audio/581464bf6ae5.m4a"
+     "audio": "audio/d992b7721b2d.m4a"
     }
    ]
   }
@@ -744,22 +744,22 @@
     {
      "who": "Hauke",
      "de": "Am Bahnhof ist es so voll. Lieber vor dem Kino.",
-     "audio": "audio/fa85a7ab9cf0.m4a"
+     "audio": "audio/b29dc6794d50.m4a"
     },
     {
      "who": "Elif",
      "de": "Vor dem Kino? Gut. Und wann?",
-     "audio": "audio/8fe63a6c772e.m4a"
+     "audio": "audio/0bb3307aa6ea.m4a"
     },
     {
      "who": "Hauke",
      "de": "Um halb sieben. Der Film fängt um sieben an.",
-     "audio": "audio/1e5423ca3e9c.m4a"
+     "audio": "audio/16779bf695b1.m4a"
     },
     {
      "who": "Elif",
      "de": "Super. Ich komme mit dem Fahrrad. Bis morgen!",
-     "audio": "audio/0b393fec543b.m4a"
+     "audio": "audio/9eb5f9153ec3.m4a"
     }
    ],
    "sample": []
@@ -1457,7 +1457,7 @@
       "punct": ".",
       "plain": "Ich bin bei Mira.",
       "ru": "Я у Миры.",
-      "audio": "audio/e9840a75c738.m4a"
+      "audio": "audio/8253dd705fb2.m4a"
      },
      {
       "slots": [
@@ -1488,7 +1488,7 @@
       "punct": ".",
       "plain": "Ich fahre zu Mira.",
       "ru": "Я еду к Мире.",
-      "audio": "audio/6e7dc24942bc.m4a"
+      "audio": "audio/33e918a404dd.m4a"
      }
     ],
     "fresh": [
@@ -2022,7 +2022,7 @@
    ],
    "answer": 1,
    "why": "*die Straßenbahn* → *mit der Straßenbahn*. *mit die* — частая ошибка.",
-   "audio": "audio/e9b76e4463ff.m4a"
+   "audio": "audio/9e0ba84f4cdb.m4a"
   },
   {
    "id": "stadt-3",
@@ -2080,7 +2080,7 @@
     "zu"
    ],
    "why": "Где? — *zu Hause*.",
-   "audio": "audio/e866ec2d5fc8.m4a"
+   "audio": "audio/03ccb9965786.m4a"
   },
   {
    "id": "stadt-8",
@@ -2090,7 +2090,7 @@
     "nach"
    ],
    "why": "Куда? — *nach Hause*.",
-   "audio": "audio/2e990605ebdb.m4a"
+   "audio": "audio/9c7464ce37da.m4a"
   },
   {
    "id": "stadt-9",
@@ -2103,7 +2103,7 @@
    ],
    "answer": 0,
    "why": "*die Haltestelle* → *von der*. *vom* — только для *der* и *das*.",
-   "audio": "audio/7b8f34dee7ec.m4a"
+   "audio": "audio/ba4dd1f63b84.m4a"
   },
   {
    "id": "stadt-10",
@@ -2116,7 +2116,7 @@
    ],
    "answer": 0,
    "why": "Откуда родом — *aus*: *aus der Ukraine*, *aus der Schweiz*.",
-   "audio": "audio/4fa5e95bc817.m4a"
+   "audio": "audio/32a7a7776d3b.m4a"
   },
   {
    "id": "stadt-11",
@@ -2146,7 +2146,7 @@
    "type": "order",
    "ru": "Садитесь на 16-й!",
    "de": "Nehmen Sie die Linie 16!",
-   "audio": "audio/60ff7ed4df00.m4a"
+   "audio": "audio/58888329cf2b.m4a"
   },
   {
    "id": "stadt-14",
@@ -2294,7 +2294,7 @@
       "who": "H",
       "de": "Dana fährt nach Hause. Sie ist noch nicht zu Hause.",
       "ru": "Дана едет домой. Она ещё не дома.",
-      "audio": "audio/d0f3cfbc1a56.m4a"
+      "audio": "audio/69b4e5b1273a.m4a"
      }
     ],
     "question": "Что известно о Дане?",
@@ -2330,12 +2330,12 @@
     "quotes": [
      {
       "de": "Kann ich auch mit dem Bus fahren?",
-      "audio": "audio/9449b964883c.m4a",
+      "audio": "audio/9efc2e212be7.m4a",
       "name": "Dana"
      },
      {
       "de": "Mit dem Bus geht es auch. Aber zu Fuß sind es nur zehn Minuten.",
-      "audio": "audio/e09582983abb.m4a",
+      "audio": "audio/dcb1dff18568.m4a",
       "name": "Kieler Passant"
      },
      {
@@ -2478,22 +2478,22 @@
      },
      {
       "de": "Am Bahnhof ist es so voll. Lieber vor dem Kino.",
-      "audio": "audio/fa85a7ab9cf0.m4a",
+      "audio": "audio/b29dc6794d50.m4a",
       "name": "Hauke"
      },
      {
       "de": "Vor dem Kino? Gut. Und wann?",
-      "audio": "audio/8fe63a6c772e.m4a",
+      "audio": "audio/0bb3307aa6ea.m4a",
       "name": "Elif"
      },
      {
       "de": "Um halb sieben. Der Film fängt um sieben an.",
-      "audio": "audio/1e5423ca3e9c.m4a",
+      "audio": "audio/16779bf695b1.m4a",
       "name": "Hauke"
      },
      {
       "de": "Super. Ich komme mit dem Fahrrad. Bis morgen!",
-      "audio": "audio/0b393fec543b.m4a",
+      "audio": "audio/9eb5f9153ec3.m4a",
       "name": "Elif"
      }
     ],

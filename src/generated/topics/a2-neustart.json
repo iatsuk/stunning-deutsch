@@ -69,50 +69,42 @@
     {
      "who": "H",
      "de": "Die Kieler Woche ist zu Ende. Was haben wir gestern gemacht?",
-     "ru": "Кильская неделя закончилась. Что мы делали вчера?",
-     "audio": "audio/fe0bb79db87b.m4a"
+     "ru": "Кильская неделя закончилась. Что мы делали вчера?"
     },
     {
      "who": "D",
      "de": "Zuerst haben wir im Club aufgeräumt.",
-     "ru": "Сначала мы прибрались в клубе.",
-     "audio": "audio/d39a927455ae.m4a"
+     "ru": "Сначала мы прибрались в клубе."
     },
     {
      "who": "M",
      "de": "Dann habe ich Brot und Wasser eingekauft.",
-     "ru": "Потом я купил хлеб и воду.",
-     "audio": "audio/4bfd6485b69c.m4a"
+     "ru": "Потом я купил хлеб и воду."
     },
     {
      "who": "E",
      "de": "Ich habe die Fotos sortiert. Die Tickets habe ich noch nicht reserviert.",
-     "ru": "Я рассортировала фотографии. Билеты я ещё не забронировала.",
-     "audio": "audio/16e6232cffc5.m4a"
+     "ru": "Я рассортировала фотографии. Билеты я ещё не забронировала."
     },
     {
      "who": "H",
      "de": "Habt ihr die Gäste angerufen?",
-     "ru": "Вы позвонили гостям?",
-     "audio": "audio/f685d23d0b13.m4a"
+     "ru": "Вы позвонили гостям?"
     },
     {
      "who": "D",
      "de": "Ja. Lucía und Diego sind gut nach Hause gekommen.",
-     "ru": "Да. Лусия и Диего хорошо добрались домой.",
-     "audio": "audio/8a0805fcd10b.m4a"
+     "ru": "Да. Лусия и Диего хорошо добрались домой."
     },
     {
      "who": "M",
      "de": "Und wer hat die neue Fahrt organisiert?",
-     "ru": "А кто организовал новую поездку?",
-     "audio": "audio/b78254d52b0e.m4a"
+     "ru": "А кто организовал новую поездку?"
     },
     {
      "who": "E",
      "de": "Noch niemand. Wir können am Sonntag zusammen planen.",
-     "ru": "Пока никто. Можем вместе спланировать в воскресенье.",
-     "audio": "audio/3bf97b37970a.m4a"
+     "ru": "Пока никто. Можем вместе спланировать в воскресенье."
     }
    ]
   }
@@ -126,85 +118,73 @@
      "de": "aufräumen",
      "ru": "прибираться",
      "gender": null,
-     "plural": null,
-     "audio": "audio/243d905c12a6.m4a"
+     "plural": null
     },
     {
      "de": "einkaufen",
      "ru": "покупать продукты",
      "gender": null,
-     "plural": null,
-     "audio": "audio/1ef7fa29aedf.m4a"
+     "plural": null
     },
     {
      "de": "anrufen",
      "ru": "звонить",
      "gender": null,
-     "plural": null,
-     "audio": "audio/20e4b3322465.m4a"
+     "plural": null
     },
     {
      "de": "sortieren",
      "ru": "сортировать",
      "gender": null,
-     "plural": null,
-     "audio": "audio/9524757213b8.m4a"
+     "plural": null
     },
     {
      "de": "organisieren",
      "ru": "организовывать",
      "gender": null,
-     "plural": null,
-     "audio": "audio/527572968938.m4a"
+     "plural": null
     },
     {
      "de": "reservieren",
      "ru": "бронировать",
      "gender": null,
-     "plural": null,
-     "audio": "audio/3b0003a26f77.m4a"
+     "plural": null
     },
     {
      "de": "zuerst",
      "ru": "сначала",
      "gender": null,
-     "plural": null,
-     "audio": "audio/78063bbc9d8b.m4a"
+     "plural": null
     },
     {
      "de": "danach",
      "ru": "после этого",
      "gender": null,
-     "plural": null,
-     "audio": "audio/ad89dc0448d2.m4a"
+     "plural": null
     },
     {
      "de": "zum Schluss",
      "ru": "в конце",
      "gender": null,
-     "plural": null,
-     "audio": "audio/8ac15b6d1b91.m4a"
+     "plural": null
     },
     {
      "de": "der Eintrag",
      "ru": "запись",
      "gender": "m",
-     "plural": "Einträge",
-     "audio": "audio/c08f071b3c60.m4a"
+     "plural": "Einträge"
     },
     {
      "de": "die Notiz",
      "ru": "заметка",
      "gender": "f",
-     "plural": "Notizen",
-     "audio": "audio/709925f39274.m4a"
+     "plural": "Notizen"
     },
     {
      "de": "bestätigen",
      "ru": "подтверждать",
      "gender": null,
-     "plural": null,
-     "audio": "audio/1f0598fc0422.m4a"
+     "plural": null
     }
    ]
   }
@@ -286,7 +266,6 @@
      ]
     }
    ],
-   "audio": "audio/874f62f93053.m4a",
    "sample": []
   },
   "article": {
@@ -364,16 +343,13 @@
    ],
    "sample": [
     {
-     "de": "Ich heiße Dana und wohne in Kiel.",
-     "audio": "audio/efda5d8684e4.m4a"
+     "de": "Ich heiße Dana und wohne in Kiel."
     },
     {
-     "de": "Ich bin Ärztin und lerne Deutsch.",
-     "audio": "audio/92b3ba70144f.m4a"
+     "de": "Ich bin Ärztin und lerne Deutsch."
     },
     {
-     "de": "Gestern habe ich Fotos sortiert.",
-     "audio": "audio/87156d755edc.m4a"
+     "de": "Gestern habe ich Fotos sortiert."
     }
    ]
   },
@@ -619,8 +595,7 @@
       ],
       "punct": ".",
       "plain": "Danach haben wir die Fahrt organisiert.",
-      "ru": "После этого мы организовали поездку.",
-      "audio": "audio/0109cb5045a8.m4a"
+      "ru": "После этого мы организовали поездку."
      }
     ]
    }
@@ -677,8 +652,7 @@
       ],
       "punct": ".",
       "plain": "Danach haben wir die Fahrt organisiert.",
-      "ru": "После этого мы организовали поездку.",
-      "audio": "audio/0109cb5045a8.m4a"
+      "ru": "После этого мы организовали поездку."
      }
     ]
    }
@@ -735,8 +709,7 @@
       ],
       "punct": ".",
       "plain": "Danach haben wir die Fahrt organisiert.",
-      "ru": "После этого мы организовали поездку.",
-      "audio": "audio/0109cb5045a8.m4a"
+      "ru": "После этого мы организовали поездку."
      }
     ]
    }
@@ -792,8 +765,7 @@
       ],
       "punct": ".",
       "plain": "Danach haben wir die Fahrt organisiert.",
-      "ru": "После этого мы организовали поездку.",
-      "audio": "audio/0109cb5045a8.m4a"
+      "ru": "После этого мы организовали поездку."
      }
     ],
     "task": "note"
@@ -851,8 +823,7 @@
       ],
       "punct": ".",
       "plain": "Danach haben wir die Fahrt organisiert.",
-      "ru": "После этого мы организовали поездку.",
-      "audio": "audio/0109cb5045a8.m4a"
+      "ru": "После этого мы организовали поездку."
      }
     ],
     "task": "note"
@@ -900,8 +871,7 @@
       ],
       "punct": ".",
       "plain": "Danach haben wir die Fahrt organisiert.",
-      "ru": "После этого мы организовали поездку.",
-      "audio": "audio/0109cb5045a8.m4a"
+      "ru": "После этого мы организовали поездку."
      }
     ],
     "task": "note",
@@ -959,8 +929,7 @@
       ],
       "punct": ".",
       "plain": "Danach haben wir die Fahrt organisiert.",
-      "ru": "После этого мы организовали поездку.",
-      "audio": "audio/0109cb5045a8.m4a"
+      "ru": "После этого мы организовали поездку."
      }
     ],
     "task": "article"
@@ -1018,8 +987,7 @@
       ],
       "punct": ".",
       "plain": "Danach haben wir die Fahrt organisiert.",
-      "ru": "После этого мы организовали поездку.",
-      "audio": "audio/0109cb5045a8.m4a"
+      "ru": "После этого мы организовали поездку."
      }
     ],
     "task": "article"
@@ -1067,8 +1035,7 @@
       ],
       "punct": ".",
       "plain": "Danach haben wir die Fahrt organisiert.",
-      "ru": "После этого мы организовали поездку.",
-      "audio": "audio/0109cb5045a8.m4a"
+      "ru": "После этого мы организовали поездку."
      }
     ],
     "task": "article",
@@ -1126,8 +1093,7 @@
       ],
       "punct": ".",
       "plain": "Danach haben wir die Fahrt organisiert.",
-      "ru": "После этого мы организовали поездку.",
-      "audio": "audio/0109cb5045a8.m4a"
+      "ru": "После этого мы организовали поездку."
      }
     ],
     "task": "self",
@@ -1186,8 +1152,7 @@
       ],
       "punct": ".",
       "plain": "Danach haben wir die Fahrt organisiert.",
-      "ru": "После этого мы организовали поездку.",
-      "audio": "audio/0109cb5045a8.m4a"
+      "ru": "После этого мы организовали поездку."
      }
     ],
     "task": "self",
@@ -1236,8 +1201,7 @@
       ],
       "punct": ".",
       "plain": "Danach haben wir die Fahrt organisiert.",
-      "ru": "После этого мы организовали поездку.",
-      "audio": "audio/0109cb5045a8.m4a"
+      "ru": "После этого мы организовали поездку."
      }
     ],
     "task": "self",
@@ -1296,8 +1260,7 @@
       ],
       "punct": ".",
       "plain": "Danach haben wir die Fahrt organisiert.",
-      "ru": "После этого мы организовали поездку.",
-      "audio": "audio/0109cb5045a8.m4a"
+      "ru": "После этого мы организовали поездку."
      }
     ],
     "task": "form",
@@ -1356,8 +1319,7 @@
       ],
       "punct": ".",
       "plain": "Danach haben wir die Fahrt organisiert.",
-      "ru": "После этого мы организовали поездку.",
-      "audio": "audio/0109cb5045a8.m4a"
+      "ru": "После этого мы организовали поездку."
      }
     ],
     "task": "form",
@@ -1406,8 +1368,7 @@
       ],
       "punct": ".",
       "plain": "Danach haben wir die Fahrt organisiert.",
-      "ru": "После этого мы организовали поездку.",
-      "audio": "audio/0109cb5045a8.m4a"
+      "ru": "После этого мы организовали поездку."
      }
     ],
     "task": "form",
@@ -1427,8 +1388,7 @@
     "sortieren"
    ],
    "answer": 0,
-   "why": "У -ieren нет ge-.",
-   "audio": "audio/737d4f848d18.m4a"
+   "why": "У -ieren нет ge-."
   },
   {
    "id": "a2-neustart-2",
@@ -1440,8 +1400,7 @@
     "einkaufen"
    ],
    "answer": 0,
-   "why": "Приставка стоит перед ge-.",
-   "audio": "audio/d7877e4f3a0a.m4a"
+   "why": "Приставка стоит перед ge-."
   },
   {
    "id": "a2-neustart-3",
@@ -1453,8 +1412,7 @@
     "hat"
    ],
    "answer": 0,
-   "why": "*Wir haben aufgeräumt*.",
-   "audio": "audio/1c2bed0afb69.m4a"
+   "why": "*Wir haben aufgeräumt*."
   },
   {
    "id": "a2-neustart-4",
@@ -1467,8 +1425,7 @@
     "niemand"
    ],
    "answer": 0,
-   "why": "Ещё не: *noch nicht*.",
-   "audio": "audio/1f60e47aaa5e.m4a"
+   "why": "Ещё не: *noch nicht*."
   },
   {
    "id": "a2-neustart-5",
@@ -1480,8 +1437,7 @@
     "hat"
    ],
    "answer": 0,
-   "why": "Перемещение: *sind gefahren*.",
-   "audio": "audio/7ffca8998a55.m4a"
+   "why": "Перемещение: *sind gefahren*."
   },
   {
    "id": "a2-neustart-6",
@@ -1493,8 +1449,7 @@
     "bestätigen"
    ],
    "answer": 0,
-   "why": "Неотделяемая be-: без ge-.",
-   "audio": "audio/6a946fa9ea21.m4a"
+   "why": "Неотделяемая be-: без ge-."
   },
   {
    "id": "a2-neustart-7",
@@ -1503,8 +1458,7 @@
    "also": [
     "Die Fotos haben wir sortiert."
    ],
-   "de": "Wir haben die Fotos sortiert.",
-   "audio": "audio/737d4f848d18.m4a"
+   "de": "Wir haben die Fotos sortiert."
   },
   {
    "id": "a2-neustart-8",
@@ -1513,8 +1467,7 @@
    "also": [
     "Wir haben dann aufgeräumt."
    ],
-   "de": "Dann haben wir aufgeräumt.",
-   "audio": "audio/584e4c893779.m4a"
+   "de": "Dann haben wir aufgeräumt."
   },
   {
    "id": "a2-neustart-9",
@@ -1523,15 +1476,13 @@
    "also": [
     "Brot habe ich eingekauft."
    ],
-   "de": "Ich habe Brot eingekauft.",
-   "audio": "audio/746a09a47c52.m4a"
+   "de": "Ich habe Brot eingekauft."
   },
   {
    "id": "a2-neustart-10",
    "type": "order",
    "ru": "Ты позвонил гостям?",
-   "de": "Hast du die Gäste angerufen?",
-   "audio": "audio/eb6d8c7d2ecb.m4a"
+   "de": "Hast du die Gäste angerufen?"
   },
   {
    "id": "a2-neustart-11",
@@ -1540,8 +1491,7 @@
    "also": [
     "Die Fahrt haben wir organisiert."
    ],
-   "de": "Wir haben die Fahrt organisiert.",
-   "audio": "audio/54f8d7c5bd55.m4a"
+   "de": "Wir haben die Fahrt organisiert."
   },
   {
    "id": "a2-neustart-12",
@@ -1550,8 +1500,7 @@
    "also": [
     "Nach Hause sind die Gäste gekommen."
    ],
-   "de": "Die Gäste sind nach Hause gekommen.",
-   "audio": "audio/aef8e2410c0e.m4a"
+   "de": "Die Gäste sind nach Hause gekommen."
   }
  ],
  "case": {
@@ -1648,7 +1597,6 @@
     "quotes": [
      {
       "de": "Hallo Dana, hier ist Hauke. Wir treffen uns am Sonntag um zehn Uhr im Club. Bitte bring das Fotoalbum mit. Ruf mich am Samstag an. Bis bald!",
-      "audio": "audio/874f62f93053.m4a",
       "name": "Telefonnotiz für Dana"
      }
     ],

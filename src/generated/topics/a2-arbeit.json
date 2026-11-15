@@ -69,50 +69,42 @@
     {
      "who": "D",
      "de": "Mateo, kannst du am Sonntag zum Club kommen?",
-     "ru": "Матео, сможешь в воскресенье прийти в клуб?",
-     "audio": "audio/a9ad17491766.m4a"
+     "ru": "Матео, сможешь в воскресенье прийти в клуб?"
     },
     {
      "who": "M",
      "de": "Ja. Herr Wagner sagt, dass ich am Sonntag frei habe.",
-     "ru": "Да. Господин Вагнер говорит, что в воскресенье у меня выходной.",
-     "audio": "audio/46d67273101f.m4a"
+     "ru": "Да. Господин Вагнер говорит, что в воскресенье у меня выходной."
     },
     {
      "who": "D",
      "de": "Und warum warst du gestern nicht da?",
-     "ru": "А почему тебя вчера не было?",
-     "audio": "audio/858751abf637.m4a"
+     "ru": "А почему тебя вчера не было?"
     },
     {
      "who": "M",
      "de": "Ich wollte kommen, aber ich musste arbeiten.",
-     "ru": "Я хотел прийти, но должен был работать.",
-     "audio": "audio/724b55fa445c.m4a"
+     "ru": "Я хотел прийти, но должен был работать."
     },
     {
      "who": "D",
      "de": "Konntest du die Liste trotzdem lesen?",
-     "ru": "Ты всё же смог прочитать список?",
-     "audio": "audio/74b40120b01c.m4a"
+     "ru": "Ты всё же смог прочитать список?"
     },
     {
      "who": "M",
      "de": "Ja. Ich habe gelesen, dass wir um sechzehn Uhr im Club sein sollen.",
-     "ru": "Да. Я прочитал, что мы должны быть в клубе в шестнадцать.",
-     "audio": "audio/9a6eb0f7c761.m4a"
+     "ru": "Да. Я прочитал, что мы должны быть в клубе в шестнадцать."
     },
     {
      "who": "D",
      "de": "Für Sonntag stimmt das. Am Freitag hast du aber ein Treffen im Restaurant.",
-     "ru": "Для воскресенья верно. Но в пятницу у тебя встреча в ресторане.",
-     "audio": "audio/39001578eb26.m4a"
+     "ru": "Для воскресенья верно. Но в пятницу у тебя встреча в ресторане."
     },
     {
      "who": "M",
      "de": "Genau. Herr Wagner schreibt, dass ich am Freitag schon um sechzehn Uhr kommen soll.",
-     "ru": "Именно. Господин Вагнер пишет, чтобы я в пятницу пришёл уже в шестнадцать.",
-     "audio": "audio/002c8e7fad93.m4a"
+     "ru": "Именно. Господин Вагнер пишет, чтобы я в пятницу пришёл уже в шестнадцать."
     }
    ]
   }
@@ -126,85 +118,73 @@
      "de": "sagen",
      "ru": "говорить",
      "gender": null,
-     "plural": null,
-     "audio": "audio/b22e2ea8184a.m4a"
+     "plural": null
     },
     {
      "de": "mitteilen",
      "ru": "сообщать",
      "gender": null,
-     "plural": null,
-     "audio": "audio/4cdf885718f4.m4a"
+     "plural": null
     },
     {
      "de": "die Mitteilung",
      "ru": "сообщение",
      "gender": "f",
-     "plural": "Mitteilungen",
-     "audio": "audio/da6a5ded8aa1.m4a"
+     "plural": "Mitteilungen"
     },
     {
      "de": "die Schicht",
      "ru": "смена",
      "gender": "f",
-     "plural": "Schichten",
-     "audio": "audio/960426b984c3.m4a"
+     "plural": "Schichten"
     },
     {
      "de": "der Dienstplan",
      "ru": "рабочее расписание",
      "gender": "m",
-     "plural": "Dienstpläne",
-     "audio": "audio/9caa9cc968be.m4a"
+     "plural": "Dienstpläne"
     },
     {
      "de": "die Besprechung",
      "ru": "рабочее обсуждение",
      "gender": "f",
-     "plural": "Besprechungen",
-     "audio": "audio/6594c7fbb7e3.m4a"
+     "plural": "Besprechungen"
     },
     {
      "de": "der Leiter",
      "ru": "руководитель",
      "gender": "m",
-     "plural": "Leiter",
-     "audio": "audio/7ea21db8674e.m4a"
+     "plural": "Leiter"
     },
     {
      "de": "der Mitarbeiter",
      "ru": "сотрудник",
      "gender": "m",
-     "plural": "Mitarbeiter",
-     "audio": "audio/c3e223e571b9.m4a"
+     "plural": "Mitarbeiter"
     },
     {
      "de": "trotzdem",
      "ru": "всё же",
      "gender": null,
-     "plural": null,
-     "audio": "audio/782365ae175a.m4a"
+     "plural": null
     },
     {
      "de": "schon",
      "ru": "уже, раньше ожидаемого",
      "gender": null,
-     "plural": null,
-     "audio": "audio/b147d2d30d9f.m4a"
+     "plural": null
     },
     {
      "de": "konnte",
      "ru": "мог",
      "gender": null,
-     "plural": null,
-     "audio": "audio/d27cc93e6bd6.m4a"
+     "plural": null
     },
     {
      "de": "musste",
      "ru": "должен был",
      "gender": null,
-     "plural": null,
-     "audio": "audio/4b4a85310d2d.m4a"
+     "plural": null
     }
    ]
   }
@@ -297,7 +277,6 @@
      ]
     }
    ],
-   "audio": "audio/fd15c72515a6.m4a",
    "sample": []
   },
   "form": {
@@ -357,20 +336,16 @@
    ],
    "sample": [
     {
-     "de": "Ich bin Koch und arbeite in Kiel.",
-     "audio": "audio/ef81728eea9a.m4a"
+     "de": "Ich bin Koch und arbeite in Kiel."
     },
     {
-     "de": "Früher habe ich in Buenos Aires gearbeitet.",
-     "audio": "audio/752cee2512c3.m4a"
+     "de": "Früher habe ich in Buenos Aires gearbeitet."
     },
     {
-     "de": "Gestern musste ich arbeiten.",
-     "audio": "audio/3bdb258da4f7.m4a"
+     "de": "Gestern musste ich arbeiten."
     },
     {
-     "de": "Am Sonntag habe ich frei.",
-     "audio": "audio/f9d7ae4d9680.m4a"
+     "de": "Am Sonntag habe ich frei."
     }
    ]
   }
@@ -596,8 +571,7 @@
       ],
       "punct": ".",
       "plain": "Mateo sagt, dass er am Sonntag frei hat.",
-      "ru": "Матео говорит, что в воскресенье у него выходной.",
-      "audio": "audio/6c8a45484698.m4a"
+      "ru": "Матео говорит, что в воскресенье у него выходной."
      }
     ]
    }
@@ -661,8 +635,7 @@
       ],
       "punct": ".",
       "plain": "Mateo sagt, dass er am Sonntag frei hat.",
-      "ru": "Матео говорит, что в воскресенье у него выходной.",
-      "audio": "audio/6c8a45484698.m4a"
+      "ru": "Матео говорит, что в воскресенье у него выходной."
      }
     ]
    }
@@ -726,8 +699,7 @@
       ],
       "punct": ".",
       "plain": "Mateo sagt, dass er am Sonntag frei hat.",
-      "ru": "Матео говорит, что в воскресенье у него выходной.",
-      "audio": "audio/6c8a45484698.m4a"
+      "ru": "Матео говорит, что в воскресенье у него выходной."
      }
     ]
    }
@@ -790,8 +762,7 @@
       ],
       "punct": ".",
       "plain": "Mateo sagt, dass er am Sonntag frei hat.",
-      "ru": "Матео говорит, что в воскресенье у него выходной.",
-      "audio": "audio/6c8a45484698.m4a"
+      "ru": "Матео говорит, что в воскресенье у него выходной."
      }
     ],
     "task": "work"
@@ -856,8 +827,7 @@
       ],
       "punct": ".",
       "plain": "Mateo sagt, dass er am Sonntag frei hat.",
-      "ru": "Матео говорит, что в воскресенье у него выходной.",
-      "audio": "audio/6c8a45484698.m4a"
+      "ru": "Матео говорит, что в воскресенье у него выходной."
      }
     ],
     "task": "work"
@@ -912,8 +882,7 @@
       ],
       "punct": ".",
       "plain": "Mateo sagt, dass er am Sonntag frei hat.",
-      "ru": "Матео говорит, что в воскресенье у него выходной.",
-      "audio": "audio/6c8a45484698.m4a"
+      "ru": "Матео говорит, что в воскресенье у него выходной."
      }
     ],
     "task": "work",
@@ -978,8 +947,7 @@
       ],
       "punct": ".",
       "plain": "Mateo sagt, dass er am Sonntag frei hat.",
-      "ru": "Матео говорит, что в воскресенье у него выходной.",
-      "audio": "audio/6c8a45484698.m4a"
+      "ru": "Матео говорит, что в воскресенье у него выходной."
      }
     ],
     "task": "phone"
@@ -1044,8 +1012,7 @@
       ],
       "punct": ".",
       "plain": "Mateo sagt, dass er am Sonntag frei hat.",
-      "ru": "Матео говорит, что в воскресенье у него выходной.",
-      "audio": "audio/6c8a45484698.m4a"
+      "ru": "Матео говорит, что в воскресенье у него выходной."
      }
     ],
     "task": "phone"
@@ -1100,8 +1067,7 @@
       ],
       "punct": ".",
       "plain": "Mateo sagt, dass er am Sonntag frei hat.",
-      "ru": "Матео говорит, что в воскресенье у него выходной.",
-      "audio": "audio/6c8a45484698.m4a"
+      "ru": "Матео говорит, что в воскресенье у него выходной."
      }
     ],
     "task": "phone",
@@ -1166,8 +1132,7 @@
       ],
       "punct": ".",
       "plain": "Mateo sagt, dass er am Sonntag frei hat.",
-      "ru": "Матео говорит, что в воскресенье у него выходной.",
-      "audio": "audio/6c8a45484698.m4a"
+      "ru": "Матео говорит, что в воскресенье у него выходной."
      }
     ],
     "task": "form",
@@ -1233,8 +1198,7 @@
       ],
       "punct": ".",
       "plain": "Mateo sagt, dass er am Sonntag frei hat.",
-      "ru": "Матео говорит, что в воскресенье у него выходной.",
-      "audio": "audio/6c8a45484698.m4a"
+      "ru": "Матео говорит, что в воскресенье у него выходной."
      }
     ],
     "task": "form",
@@ -1290,8 +1254,7 @@
       ],
       "punct": ".",
       "plain": "Mateo sagt, dass er am Sonntag frei hat.",
-      "ru": "Матео говорит, что в воскресенье у него выходной.",
-      "audio": "audio/6c8a45484698.m4a"
+      "ru": "Матео говорит, что в воскресенье у него выходной."
      }
     ],
     "task": "form",
@@ -1357,8 +1320,7 @@
       ],
       "punct": ".",
       "plain": "Mateo sagt, dass er am Sonntag frei hat.",
-      "ru": "Матео говорит, что в воскресенье у него выходной.",
-      "audio": "audio/6c8a45484698.m4a"
+      "ru": "Матео говорит, что в воскресенье у него выходной."
      }
     ],
     "task": "self",
@@ -1424,8 +1386,7 @@
       ],
       "punct": ".",
       "plain": "Mateo sagt, dass er am Sonntag frei hat.",
-      "ru": "Матео говорит, что в воскресенье у него выходной.",
-      "audio": "audio/6c8a45484698.m4a"
+      "ru": "Матео говорит, что в воскресенье у него выходной."
      }
     ],
     "task": "self",
@@ -1481,8 +1442,7 @@
       ],
       "punct": ".",
       "plain": "Mateo sagt, dass er am Sonntag frei hat.",
-      "ru": "Матео говорит, что в воскресенье у него выходной.",
-      "audio": "audio/6c8a45484698.m4a"
+      "ru": "Матео говорит, что в воскресенье у него выходной."
      }
     ],
     "task": "self",
@@ -1502,8 +1462,7 @@
     "wenn"
    ],
    "answer": 0,
-   "why": "Содержание сообщения.",
-   "audio": "audio/b6336764b418.m4a"
+   "why": "Содержание сообщения."
   },
   {
    "id": "a2-arbeit-2",
@@ -1515,8 +1474,7 @@
     "habe"
    ],
    "answer": 0,
-   "why": "Личная форма в конце.",
-   "audio": "audio/984407b31abf.m4a"
+   "why": "Личная форма в конце."
   },
   {
    "id": "a2-arbeit-3",
@@ -1528,8 +1486,7 @@
     "muss"
    ],
    "answer": 0,
-   "why": "Прошлая необходимость.",
-   "audio": "audio/3bdb258da4f7.m4a"
+   "why": "Прошлая необходимость."
   },
   {
    "id": "a2-arbeit-4",
@@ -1541,8 +1498,7 @@
     "willst"
    ],
    "answer": 0,
-   "why": "Прошлое желание.",
-   "audio": "audio/c7a2610373d0.m4a"
+   "why": "Прошлое желание."
   },
   {
    "id": "a2-arbeit-5",
@@ -1554,8 +1510,7 @@
     "Konnten"
    ],
    "answer": 0,
-   "why": "Вопрос к du.",
-   "audio": "audio/10eaa7c31118.m4a"
+   "why": "Вопрос к du."
   },
   {
    "id": "a2-arbeit-6",
@@ -1576,8 +1531,7 @@
    "also": [
     "Dass er am Sonntag frei hat, sagt er."
    ],
-   "de": "Er sagt, dass er am Sonntag frei hat.",
-   "audio": "audio/83e4eb1f66ba.m4a"
+   "de": "Er sagt, dass er am Sonntag frei hat."
   },
   {
    "id": "a2-arbeit-8",
@@ -1586,15 +1540,13 @@
    "also": [
     "Kommen wollte ich, aber ich musste arbeiten."
    ],
-   "de": "Ich wollte kommen, aber ich musste arbeiten.",
-   "audio": "audio/23bcc9644cf9.m4a"
+   "de": "Ich wollte kommen, aber ich musste arbeiten."
   },
   {
    "id": "a2-arbeit-9",
    "type": "order",
    "ru": "Ты смог прочитать список?",
-   "de": "Konntest du die Liste lesen?",
-   "audio": "audio/10eaa7c31118.m4a"
+   "de": "Konntest du die Liste lesen?"
   },
   {
    "id": "a2-arbeit-10",
@@ -1603,8 +1555,7 @@
    "also": [
     "Um sechzehn Uhr beginnt die Besprechung."
    ],
-   "de": "Die Besprechung beginnt um sechzehn Uhr.",
-   "audio": "audio/a3932ea5aa22.m4a"
+   "de": "Die Besprechung beginnt um sechzehn Uhr."
   },
   {
    "id": "a2-arbeit-11",
@@ -1613,8 +1564,7 @@
    "also": [
     "Um siebzehn Uhr beginnt meine Schicht."
    ],
-   "de": "Meine Schicht beginnt um siebzehn Uhr.",
-   "audio": "audio/6648509909ce.m4a"
+   "de": "Meine Schicht beginnt um siebzehn Uhr."
   },
   {
    "id": "a2-arbeit-12",
@@ -1623,8 +1573,7 @@
    "also": [
     "Dass die Liste fertig ist, glaube ich."
    ],
-   "de": "Ich glaube, dass die Liste fertig ist.",
-   "audio": "audio/cd7ab36e35ee.m4a"
+   "de": "Ich glaube, dass die Liste fertig ist."
   }
  ],
  "case": {
@@ -1753,7 +1702,6 @@
     "quotes": [
      {
       "de": "Guten Tag, Herr Fernández. Hier ist Wagner vom Restaurant Fördeblick. Unsere Besprechung ist am Freitag um sechzehn Uhr im Restaurant. Ihre Schicht beginnt um siebzehn Uhr. Bringen Sie bitte die Liste mit. Am Sonntag haben Sie frei.",
-      "audio": "audio/fd15c72515a6.m4a",
       "name": "Telefonnotiz aus dem Restaurant"
      }
     ],

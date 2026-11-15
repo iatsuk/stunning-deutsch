@@ -77,13 +77,13 @@
      "who": "M",
      "de": "Ach so! Dann bist du ja wirklich „Frau Doktor“!",
      "ru": "Вот как! Значит, ты и правда «фрау доктор»!",
-     "audio": "audio/e35526878efb.m4a"
+     "audio": "audio/cda69b0046e4.m4a"
     },
     {
      "who": "A",
      "de": "Genau. Aber ich hatte immer viel Stress. Und du? Du warst Koch, oder?",
      "ru": "Точно. Но у меня всегда было много стресса. А ты? Ты ведь был поваром?",
-     "audio": "audio/e8e657939967.m4a"
+     "audio": "audio/1d2a5287601b.m4a"
     },
     {
      "who": "M",
@@ -95,7 +95,7 @@
      "who": "A",
      "de": "Und hier? Hast du schon eine Stelle als Koch gefunden?",
      "ru": "А здесь? Ты уже нашёл работу поваром?",
-     "audio": "audio/6d86dc9a4faf.m4a"
+     "audio": "audio/87e7105ed1f0.m4a"
     },
     {
      "who": "M",
@@ -107,7 +107,7 @@
      "who": "A",
      "de": "Super! Hast du schon eine E-Mail geschrieben?",
      "ru": "Здорово! Ты уже написал письмо?",
-     "audio": "audio/1c49c7aa345f.m4a"
+     "audio": "audio/350683eda085.m4a"
     },
     {
      "who": "M",
@@ -148,7 +148,7 @@
      "who": "M",
      "de": "Guten Tag, Herr Wagner. Danke.",
      "ru": "Добрый день, господин Вагнер. Спасибо.",
-     "audio": "audio/b4b0d56688ae.m4a"
+     "audio": "audio/f8bfeaea66ce.m4a"
     },
     {
      "who": "S",
@@ -190,7 +190,7 @@
      "who": "S",
      "de": "Kein Problem, die Arbeit ist am Abend. Können Sie am Samstag einen Probetag machen?",
      "ru": "Не страшно, работа вечером. Можете в субботу выйти на пробный день?",
-     "audio": "audio/09847614cba6.m4a"
+     "audio": "audio/c6fbc9f1323d.m4a"
     },
     {
      "who": "M",
@@ -211,70 +211,70 @@
      "ru": "учитель",
      "gender": "m",
      "plural": "Lehrer",
-     "audio": "audio/782f1d0e35b3.m4a"
+     "audio": "audio/e19536e5a4d1.m4a"
     },
     {
      "de": "die Lehrerin",
      "ru": "учительница",
      "gender": "f",
      "plural": "Lehrerinnen",
-     "audio": "audio/df52c915745f.m4a"
+     "audio": "audio/bb8042a40e98.m4a"
     },
     {
      "de": "der Arzt",
      "ru": "врач",
      "gender": "m",
      "plural": "Ärzte",
-     "audio": "audio/df79b4cec3b2.m4a"
+     "audio": "audio/0e8ad8f67d0e.m4a"
     },
     {
      "de": "die Ärztin",
      "ru": "врач (женщина)",
      "gender": "f",
      "plural": "Ärztinnen",
-     "audio": "audio/f65c0a7e3cc6.m4a"
+     "audio": "audio/90cc4e03aebc.m4a"
     },
     {
      "de": "der Koch",
      "ru": "повар",
      "gender": "m",
      "plural": "Köche",
-     "audio": "audio/4efc415aecc9.m4a"
+     "audio": "audio/e7b9dbd5e2e1.m4a"
     },
     {
      "de": "die Köchin",
      "ru": "повар (женщина)",
      "gender": "f",
      "plural": "Köchinnen",
-     "audio": "audio/f8eeb021fde6.m4a"
+     "audio": "audio/fcc6c5bb58fb.m4a"
     },
     {
      "de": "der Verkäufer",
      "ru": "продавец",
      "gender": "m",
      "plural": "Verkäufer",
-     "audio": "audio/8fe32eafa7d1.m4a"
+     "audio": "audio/48e4e9bd8549.m4a"
     },
     {
      "de": "die Verkäuferin",
      "ru": "продавщица",
      "gender": "f",
      "plural": "Verkäuferinnen",
-     "audio": "audio/a777750d1949.m4a"
+     "audio": "audio/e1a3741276d1.m4a"
     },
     {
      "de": "der Kellner",
      "ru": "официант",
      "gender": "m",
      "plural": "Kellner",
-     "audio": "audio/fc742a79754e.m4a"
+     "audio": "audio/c9dc47f0a519.m4a"
     },
     {
      "de": "die Kellnerin",
      "ru": "официантка",
      "gender": "f",
      "plural": "Kellnerinnen",
-     "audio": "audio/0fd02909e634.m4a"
+     "audio": "audio/a9ff58aac23b.m4a"
     }
    ]
   },
@@ -288,7 +288,7 @@
      "gender": "m",
      "plural": "Ingenieure",
      "note": "die Ingenieurin",
-     "audio": "audio/cbea907fbe16.m4a"
+     "audio": "audio/a0d01f5b69a4.m4a"
     },
     {
      "de": "der Friseur",
@@ -296,7 +296,7 @@
      "gender": "m",
      "plural": "Friseure",
      "note": "die Friseurin",
-     "audio": "audio/dbaf61145ee6.m4a"
+     "audio": "audio/8432b535a23e.m4a"
     },
     {
      "de": "der Informatiker",
@@ -304,7 +304,7 @@
      "gender": "m",
      "plural": "Informatiker",
      "note": "die Informatikerin",
-     "audio": "audio/38df6f54dcc9.m4a"
+     "audio": "audio/8ff01806c962.m4a"
     },
     {
      "de": "der Mechaniker",
@@ -312,7 +312,7 @@
      "gender": "m",
      "plural": "Mechaniker",
      "note": "die Mechanikerin",
-     "audio": "audio/4a034c21dd3a.m4a"
+     "audio": "audio/603b4881fed5.m4a"
     },
     {
      "de": "der Student",
@@ -320,7 +320,7 @@
      "gender": "m",
      "plural": "Studenten",
      "note": "die Studentin",
-     "audio": "audio/0c84e8ecf859.m4a"
+     "audio": "audio/4be3fe7e39b8.m4a"
     },
     {
      "de": "der Krankenpfleger",
@@ -328,7 +328,7 @@
      "gender": "m",
      "plural": "Krankenpfleger",
      "note": "die Krankenpflegerin — медсестра",
-     "audio": "audio/eecf4f49a76e.m4a"
+     "audio": "audio/affa6712c076.m4a"
     },
     {
      "de": "der Hausmann",
@@ -336,7 +336,7 @@
      "gender": "m",
      "plural": "Hausmänner",
      "note": "die Hausfrau, die Hausfrauen",
-     "audio": "audio/e695d0b45525.m4a"
+     "audio": "audio/390729aace35.m4a"
     }
    ]
   },
@@ -350,7 +350,7 @@
      "gender": "f",
      "plural": "Arbeiten",
      "note": "Ich habe viel Arbeit.",
-     "audio": "audio/3f174a50011d.m4a"
+     "audio": "audio/8bd3a8b6c99f.m4a"
     },
     {
      "de": "der Beruf",
@@ -358,28 +358,28 @@
      "gender": "m",
      "plural": "Berufe",
      "note": "Was sind Sie von Beruf?",
-     "audio": "audio/2425838153ef.m4a"
+     "audio": "audio/63d2835c3775.m4a"
     },
     {
      "de": "die Stelle",
      "ru": "место работы, вакансия",
      "gender": "f",
      "plural": "Stellen",
-     "audio": "audio/03832bf19986.m4a"
+     "audio": "audio/8b0e753d6d84.m4a"
     },
     {
      "de": "die Firma",
      "ru": "фирма",
      "gender": "f",
      "plural": "Firmen",
-     "audio": "audio/d23320685c7c.m4a"
+     "audio": "audio/946880fb72f7.m4a"
     },
     {
      "de": "das Krankenhaus",
      "ru": "больница",
      "gender": "n",
      "plural": "Krankenhäuser",
-     "audio": "audio/6e4005ad510a.m4a"
+     "audio": "audio/8730f5c855e7.m4a"
     },
     {
      "de": "der Kollege",
@@ -387,21 +387,21 @@
      "gender": "m",
      "plural": "Kollegen",
      "note": "die Kollegin",
-     "audio": "audio/b6a798a9a336.m4a"
+     "audio": "audio/f97bbffe0307.m4a"
     },
     {
      "de": "die Anzeige",
      "ru": "объявление",
      "gender": "f",
      "plural": "Anzeigen",
-     "audio": "audio/f99595a42112.m4a"
+     "audio": "audio/48ffa33a6e01.m4a"
     },
     {
      "de": "das Vorstellungsgespräch",
      "ru": "собеседование",
      "gender": "n",
      "plural": "Vorstellungsgespräche",
-     "audio": "audio/8ffda742e1a3.m4a"
+     "audio": "audio/0fba5b0cf866.m4a"
     },
     {
      "de": "arbeiten als",
@@ -417,7 +417,7 @@
      "gender": null,
      "plural": null,
      "note": "Wir suchen einen Koch.",
-     "audio": "audio/2b8648906d96.m4a"
+     "audio": "audio/284a8c89a89e.m4a"
     }
    ]
   },
@@ -430,7 +430,7 @@
      "ru": "вчера",
      "gender": null,
      "plural": null,
-     "audio": "audio/4d3cb7ffdf55.m4a"
+     "audio": "audio/b27195f70195.m4a"
     },
     {
      "de": "gestern Abend",
@@ -444,7 +444,7 @@
      "ru": "раньше",
      "gender": null,
      "plural": null,
-     "audio": "audio/25911b3a0802.m4a"
+     "audio": "audio/ca3ec8a831a6.m4a"
     },
     {
      "de": "letzte Woche",
@@ -452,7 +452,7 @@
      "gender": null,
      "plural": null,
      "note": "готовое выражение",
-     "audio": "audio/b76e067c66b7.m4a"
+     "audio": "audio/f9b50b615317.m4a"
     },
     {
      "de": "letztes Jahr",
@@ -460,7 +460,7 @@
      "gender": null,
      "plural": null,
      "note": "готовое выражение",
-     "audio": "audio/9a7b89a27bcc.m4a"
+     "audio": "audio/70b2cbb0e7d6.m4a"
     },
     {
      "de": "schon",
@@ -468,7 +468,7 @@
      "gender": null,
      "plural": null,
      "note": "Hast du schon …?",
-     "audio": "audio/b147d2d30d9f.m4a"
+     "audio": "audio/e3e7bd271e61.m4a"
     },
     {
      "de": "noch nicht",
@@ -672,7 +672,7 @@
     },
     {
      "de": "Ich komme aus Argentinien und wohne jetzt in Kiel.",
-     "audio": "audio/61d29c374f54.m4a"
+     "audio": "audio/e9c858bf0efc.m4a"
     },
     {
      "de": "Ich spreche Spanisch, Englisch und ein bisschen Deutsch.",
@@ -692,7 +692,7 @@
     },
     {
      "de": "Mein Hobby ist Segeln.",
-     "audio": "audio/44910f158065.m4a"
+     "audio": "audio/ab3a067c7ebb.m4a"
     }
    ]
   },
@@ -1155,7 +1155,7 @@
       "punct": "?",
       "plain": "Hast du schon eine Stelle gefunden?",
       "ru": "Ты уже нашёл работу?",
-      "audio": "audio/fa050a755df3.m4a"
+      "audio": "audio/fcd746b36aec.m4a"
      }
     ],
     "fresh": [
@@ -1254,7 +1254,7 @@
       "punct": "?",
       "plain": "Hast du schon eine Stelle gefunden?",
       "ru": "Ты уже нашёл работу?",
-      "audio": "audio/fa050a755df3.m4a"
+      "audio": "audio/fcd746b36aec.m4a"
      }
     ],
     "reveal": 4
@@ -1351,7 +1351,7 @@
       "punct": "?",
       "plain": "Hast du schon eine Stelle gefunden?",
       "ru": "Ты уже нашёл работу?",
-      "audio": "audio/fa050a755df3.m4a"
+      "audio": "audio/fcd746b36aec.m4a"
      }
     ],
     "reveal": 8,
@@ -1460,7 +1460,7 @@
       "punct": "?",
       "plain": "Hast du schon eine Stelle gefunden?",
       "ru": "Ты уже нашёл работу?",
-      "audio": "audio/fa050a755df3.m4a"
+      "audio": "audio/fcd746b36aec.m4a"
      }
     ]
    }
@@ -2196,7 +2196,7 @@
    "hint": "Koch",
    "ru": "Матео повар, и Мария тоже.",
    "why": "*Koch → Köchin*: окончание *-in* и умлаут.",
-   "audio": "audio/518645bb0f46.m4a"
+   "audio": "audio/425a2992f200.m4a"
   },
   {
    "id": "arbeit-3",
@@ -2209,7 +2209,7 @@
    ],
    "answer": 1,
    "why": "Женщины во множественном числе — *-innen* с двумя *n*.",
-   "audio": "audio/c03226efff2e.m4a"
+   "audio": "audio/1a1485f4f145.m4a"
   },
   {
    "id": "arbeit-4",
@@ -2265,7 +2265,7 @@
    ],
    "hint": "lesen",
    "why": "*lesen* — сильный глагол: *ge-…-en*.",
-   "audio": "audio/ea267a632499.m4a"
+   "audio": "audio/108650c89aa0.m4a"
   },
   {
    "id": "arbeit-9",
@@ -2277,7 +2277,7 @@
    ],
    "hint": "schreiben",
    "why": "Вопрос да/нет: *hast* первым, причастие *geschrieben* — в конце.",
-   "audio": "audio/dd1a28ec6ce2.m4a"
+   "audio": "audio/71b5342a8108.m4a"
   },
   {
    "id": "arbeit-10",
@@ -2290,7 +2290,7 @@
    ],
    "answer": 1,
    "why": "*finden → gefunden*: окончание *-en* и другая гласная.",
-   "audio": "audio/b54b086669d5.m4a"
+   "audio": "audio/8615fa3cf1d0.m4a"
   },
   {
    "id": "arbeit-11",
@@ -2377,7 +2377,7 @@
       "who": "M",
       "de": "Ich habe sechs Jahre in Buenos Aires gearbeitet. Jetzt arbeite ich in Kiel.",
       "ru": "Я работал в Буэнос-Айресе шесть лет. Сейчас я работаю в Киле.",
-      "audio": "audio/3975a32a7abc.m4a"
+      "audio": "audio/51417ec4bcf4.m4a"
      }
     ],
     "question": "Где Матео работает сейчас?",
@@ -2492,12 +2492,12 @@
      },
      {
       "de": "Ach so! Dann bist du ja wirklich „Frau Doktor“!",
-      "audio": "audio/e35526878efb.m4a",
+      "audio": "audio/cda69b0046e4.m4a",
       "name": "Mateo"
      },
      {
       "de": "Genau. Aber ich hatte immer viel Stress. Und du? Du warst Koch, oder?",
-      "audio": "audio/e8e657939967.m4a",
+      "audio": "audio/1d2a5287601b.m4a",
       "name": "Dana"
      },
      {

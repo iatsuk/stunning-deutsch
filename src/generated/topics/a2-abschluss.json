@@ -69,50 +69,42 @@
     {
      "who": "D",
      "de": "Wir planen seit Montag unsere letzte Fahrt im August.",
-     "ru": "Мы с понедельника планируем последнюю поездку в августе.",
-     "audio": "audio/49d94b91bc9d.m4a"
+     "ru": "Мы с понедельника планируем последнюю поездку в августе."
     },
     {
      "who": "M",
      "de": "Am Sonntag habe ich frei. Am Samstag muss ich arbeiten.",
-     "ru": "В воскресенье я свободен. В субботу мне нужно работать.",
-     "audio": "audio/a853e5dfd9b8.m4a"
+     "ru": "В воскресенье я свободен. В субботу мне нужно работать."
     },
     {
      "who": "E",
      "de": "Ich möchte wandern, aber nicht länger als zwei Stunden.",
-     "ru": "Я хочу погулять пешком, но не дольше двух часов.",
-     "audio": "audio/1e5be3f98094.m4a"
+     "ru": "Я хочу погулять пешком, но не дольше двух часов."
     },
     {
      "who": "H",
      "de": "Ich kann am Sonntag ab elf Uhr. Wo treffen wir uns?",
-     "ru": "В воскресенье я могу с одиннадцати. Где встречаемся?",
-     "audio": "audio/8d93b4106302.m4a"
+     "ru": "В воскресенье я могу с одиннадцати. Где встречаемся?"
     },
     {
      "who": "D",
      "de": "Unser Lernplan A beginnt um elf Uhr. Er kostet achtzehn Euro pro Person.",
-     "ru": "Наш учебный план A начинается в одиннадцать. Он стоит восемнадцать евро с человека.",
-     "audio": "audio/4c758971dc36.m4a"
+     "ru": "Наш учебный план A начинается в одиннадцать. Он стоит восемнадцать евро с человека."
     },
     {
      "who": "E",
      "de": "Das passt. Wenn es regnet, gehen wir ins Lernmuseum.",
-     "ru": "Подходит. Если будет дождь, пойдём в учебный музей.",
-     "audio": "audio/a9224bc62530.m4a"
+     "ru": "Подходит. Если будет дождь, пойдём в учебный музей."
     },
     {
      "who": "M",
      "de": "Können wir dort auch etwas essen?",
-     "ru": "Мы можем там и поесть?",
-     "audio": "audio/8925aa799838.m4a"
+     "ru": "Мы можем там и поесть?"
     },
     {
      "who": "D",
      "de": "Ja. Ich frage noch, ob im Café Plätze frei sind.",
-     "ru": "Да. Я ещё спрошу, есть ли свободные места в кафе.",
-     "audio": "audio/b348adb1c5bd.m4a"
+     "ru": "Да. Я ещё спрошу, есть ли свободные места в кафе."
     }
    ]
   }
@@ -126,85 +118,73 @@
      "de": "gemeinsam entscheiden",
      "ru": "решать вместе",
      "gender": null,
-     "plural": null,
-     "audio": "audio/fe29c42e3a7d.m4a"
+     "plural": null
     },
     {
      "de": "der Vorschlag",
      "ru": "предложение",
      "gender": "m",
-     "plural": "Vorschläge",
-     "audio": "audio/1ce35d0e8c75.m4a"
+     "plural": "Vorschläge"
     },
     {
      "de": "die Entscheidung",
      "ru": "решение",
      "gender": "f",
-     "plural": "Entscheidungen",
-     "audio": "audio/3eac14b75b7b.m4a"
+     "plural": "Entscheidungen"
     },
     {
      "de": "bestätigen",
      "ru": "подтверждать",
      "gender": null,
-     "plural": null,
-     "audio": "audio/1f0598fc0422.m4a"
+     "plural": null
     },
     {
      "de": "noch offen",
      "ru": "пока не решено",
      "gender": null,
-     "plural": null,
-     "audio": "audio/48db9a3e922a.m4a"
+     "plural": null
     },
     {
      "de": "die Wanderung",
      "ru": "пешая прогулка",
      "gender": "f",
-     "plural": "Wanderungen",
-     "audio": "audio/d3ac0a889d83.m4a"
+     "plural": "Wanderungen"
     },
     {
      "de": "die Rückfahrt",
      "ru": "обратная поездка",
      "gender": "f",
-     "plural": "Rückfahrten",
-     "audio": "audio/7a1c4ea9325c.m4a"
+     "plural": "Rückfahrten"
     },
     {
      "de": "der Treffpunkt",
      "ru": "место встречи",
      "gender": "m",
-     "plural": "Treffpunkte",
-     "audio": "audio/c034855451dc.m4a"
+     "plural": "Treffpunkte"
     },
     {
      "de": "das Budget",
      "ru": "бюджет",
      "gender": "n",
-     "plural": "Budgets",
-     "audio": "audio/8316ef905853.m4a"
+     "plural": "Budgets"
     },
     {
      "de": "pro Person",
      "ru": "с человека",
      "gender": null,
-     "plural": null,
-     "audio": "audio/e5a7a56b87a5.m4a"
+     "plural": null
     },
     {
      "de": "höchstens",
      "ru": "не больше, максимум",
      "gender": null,
-     "plural": null,
-     "audio": "audio/4368cbeda00c.m4a"
+     "plural": null
     },
     {
      "de": "der Abschluss",
      "ru": "завершение",
      "gender": "m",
-     "plural": "Abschlüsse",
-     "audio": "audio/4f76426b53c5.m4a"
+     "plural": "Abschlüsse"
     }
    ]
   }
@@ -251,24 +231,19 @@
    "title": "Fünf Nachrichten zum Tagesplan",
    "recordings": [
     {
-     "text": "Am Sonntag regnet es in unserem Lerngebiet. Am Nachmittag bleibt es auch nass.",
-     "audio": "audio/c652bc29126a.m4a"
+     "text": "Am Sonntag regnet es in unserem Lerngebiet. Am Nachmittag bleibt es auch nass."
     },
     {
-     "text": "Der Bus zum Treffpunkt fährt heute von Platz B, nicht von Platz A.",
-     "audio": "audio/56cc11de5098.m4a"
+     "text": "Der Bus zum Treffpunkt fährt heute von Platz B, nicht von Platz A."
     },
     {
-     "text": "Das Lernmuseum öffnet am Sonntag um elf Uhr. Die Cafeteria öffnet erst um zwölf.",
-     "audio": "audio/bdedfef06cae.m4a"
+     "text": "Das Lernmuseum öffnet am Sonntag um elf Uhr. Die Cafeteria öffnet erst um zwölf."
     },
     {
-     "text": "Im Lerncafé sind heute nur draußen Plätze frei. Drinnen ist alles besetzt.",
-     "audio": "audio/f7b99b5a385a.m4a"
+     "text": "Im Lerncafé sind heute nur draußen Plätze frei. Drinnen ist alles besetzt."
     },
     {
-     "text": "Die Rückfahrt der Lerngruppe ist um siebzehn Uhr. Bitte seien Sie fünf Minuten früher am Bus.",
-     "audio": "audio/599598114651.m4a"
+     "text": "Die Rückfahrt der Lerngruppe ist um siebzehn Uhr. Bitte seien Sie fünf Minuten früher am Bus."
     }
    ],
    "questions": [
@@ -405,8 +380,7 @@
    ],
    "sample": [
     {
-     "de": "Liebe Mia, wir fahren am Sonntag in die Lüneburger Heide. Wir treffen uns um elf Uhr. Ich freue mich auf den Ausflug, weil wir zusammen Zeit haben. Wenn es regnet, besuchen wir ein Museum. Kommst du mit? Viele Grüße, Dana",
-     "audio": "audio/07a3ca08a48b.m4a"
+     "de": "Liebe Mia, wir fahren am Sonntag in die Lüneburger Heide. Wir treffen uns um elf Uhr. Ich freue mich auf den Ausflug, weil wir zusammen Zeit haben. Wenn es regnet, besuchen wir ein Museum. Kommst du mit? Viele Grüße, Dana"
     }
    ]
   },
@@ -419,20 +393,16 @@
    "situation": "Person A: Sonntag ab 11 Uhr, Budget 20 Euro. Person B: höchstens zwei Stunden wandern, bei Regen lieber Museum. Machen Sie Vorschläge, fragen Sie nach und bestätigen Sie einen gemeinsamen Plan.",
    "sample": [
     {
-     "de": "Passt Sonntag um elf Uhr für dich?",
-     "audio": "audio/f29f14fcd341.m4a"
+     "de": "Passt Sonntag um elf Uhr für dich?"
     },
     {
-     "de": "Ja, aber ich möchte höchstens zwei Stunden wandern.",
-     "audio": "audio/df5ee1a6de1c.m4a"
+     "de": "Ja, aber ich möchte höchstens zwei Stunden wandern."
     },
     {
-     "de": "Wenn es regnet, gehen wir ins Museum.",
-     "audio": "audio/07a6d2d105ef.m4a"
+     "de": "Wenn es regnet, gehen wir ins Museum."
     },
     {
-     "de": "Abgemacht. Wir treffen uns um elf Uhr.",
-     "audio": "audio/f35b67cbd92c.m4a"
+     "de": "Abgemacht. Wir treffen uns um elf Uhr."
     }
    ]
   }
@@ -630,8 +600,7 @@
       ],
       "punct": ".",
       "plain": "Wenn es regnet, gehen wir ins Museum.",
-      "ru": "Если будет дождь, мы пойдём в музей.",
-      "audio": "audio/07a6d2d105ef.m4a"
+      "ru": "Если будет дождь, мы пойдём в музей."
      }
     ]
    }
@@ -691,8 +660,7 @@
       ],
       "punct": ".",
       "plain": "Wenn es regnet, gehen wir ins Museum.",
-      "ru": "Если будет дождь, мы пойдём в музей.",
-      "audio": "audio/07a6d2d105ef.m4a"
+      "ru": "Если будет дождь, мы пойдём в музей."
      }
     ]
    }
@@ -752,8 +720,7 @@
       ],
       "punct": ".",
       "plain": "Wenn es regnet, gehen wir ins Museum.",
-      "ru": "Если будет дождь, мы пойдём в музей.",
-      "audio": "audio/07a6d2d105ef.m4a"
+      "ru": "Если будет дождь, мы пойдём в музей."
      }
     ]
    }
@@ -812,8 +779,7 @@
       ],
       "punct": ".",
       "plain": "Wenn es regnet, gehen wir ins Museum.",
-      "ru": "Если будет дождь, мы пойдём в музей.",
-      "audio": "audio/07a6d2d105ef.m4a"
+      "ru": "Если будет дождь, мы пойдём в музей."
      }
     ],
     "task": "plans"
@@ -874,8 +840,7 @@
       ],
       "punct": ".",
       "plain": "Wenn es regnet, gehen wir ins Museum.",
-      "ru": "Если будет дождь, мы пойдём в музей.",
-      "audio": "audio/07a6d2d105ef.m4a"
+      "ru": "Если будет дождь, мы пойдём в музей."
      }
     ],
     "task": "plans"
@@ -926,8 +891,7 @@
       ],
       "punct": ".",
       "plain": "Wenn es regnet, gehen wir ins Museum.",
-      "ru": "Если будет дождь, мы пойдём в музей.",
-      "audio": "audio/07a6d2d105ef.m4a"
+      "ru": "Если будет дождь, мы пойдём в музей."
      }
     ],
     "task": "plans",
@@ -988,8 +952,7 @@
       ],
       "punct": ".",
       "plain": "Wenn es regnet, gehen wir ins Museum.",
-      "ru": "Если будет дождь, мы пойдём в музей.",
-      "audio": "audio/07a6d2d105ef.m4a"
+      "ru": "Если будет дождь, мы пойдём в музей."
      }
     ],
     "task": "radio"
@@ -1050,8 +1013,7 @@
       ],
       "punct": ".",
       "plain": "Wenn es regnet, gehen wir ins Museum.",
-      "ru": "Если будет дождь, мы пойдём в музей.",
-      "audio": "audio/07a6d2d105ef.m4a"
+      "ru": "Если будет дождь, мы пойдём в музей."
      }
     ],
     "task": "radio"
@@ -1102,8 +1064,7 @@
       ],
       "punct": ".",
       "plain": "Wenn es regnet, gehen wir ins Museum.",
-      "ru": "Если будет дождь, мы пойдём в музей.",
-      "audio": "audio/07a6d2d105ef.m4a"
+      "ru": "Если будет дождь, мы пойдём в музей."
      }
     ],
     "task": "radio",
@@ -1164,8 +1125,7 @@
       ],
       "punct": ".",
       "plain": "Wenn es regnet, gehen wir ins Museum.",
-      "ru": "Если будет дождь, мы пойдём в музей.",
-      "audio": "audio/07a6d2d105ef.m4a"
+      "ru": "Если будет дождь, мы пойдём в музей."
      }
     ],
     "task": "article"
@@ -1226,8 +1186,7 @@
       ],
       "punct": ".",
       "plain": "Wenn es regnet, gehen wir ins Museum.",
-      "ru": "Если будет дождь, мы пойдём в музей.",
-      "audio": "audio/07a6d2d105ef.m4a"
+      "ru": "Если будет дождь, мы пойдём в музей."
      }
     ],
     "task": "article"
@@ -1278,8 +1237,7 @@
       ],
       "punct": ".",
       "plain": "Wenn es regnet, gehen wir ins Museum.",
-      "ru": "Если будет дождь, мы пойдём в музей.",
-      "audio": "audio/07a6d2d105ef.m4a"
+      "ru": "Если будет дождь, мы пойдём в музей."
      }
     ],
     "task": "article",
@@ -1340,8 +1298,7 @@
       ],
       "punct": ".",
       "plain": "Wenn es regnet, gehen wir ins Museum.",
-      "ru": "Если будет дождь, мы пойдём в музей.",
-      "audio": "audio/07a6d2d105ef.m4a"
+      "ru": "Если будет дождь, мы пойдём в музей."
      }
     ],
     "task": "letter",
@@ -1403,8 +1360,7 @@
       ],
       "punct": ".",
       "plain": "Wenn es regnet, gehen wir ins Museum.",
-      "ru": "Если будет дождь, мы пойдём в музей.",
-      "audio": "audio/07a6d2d105ef.m4a"
+      "ru": "Если будет дождь, мы пойдём в музей."
      }
     ],
     "task": "letter",
@@ -1456,8 +1412,7 @@
       ],
       "punct": ".",
       "plain": "Wenn es regnet, gehen wir ins Museum.",
-      "ru": "Если будет дождь, мы пойдём в музей.",
-      "audio": "audio/07a6d2d105ef.m4a"
+      "ru": "Если будет дождь, мы пойдём в музей."
      }
     ],
     "task": "letter",
@@ -1519,8 +1474,7 @@
       ],
       "punct": ".",
       "plain": "Wenn es regnet, gehen wir ins Museum.",
-      "ru": "Если будет дождь, мы пойдём в музей.",
-      "audio": "audio/07a6d2d105ef.m4a"
+      "ru": "Если будет дождь, мы пойдём в музей."
      }
     ],
     "task": "pair",
@@ -1582,8 +1536,7 @@
       ],
       "punct": ".",
       "plain": "Wenn es regnet, gehen wir ins Museum.",
-      "ru": "Если будет дождь, мы пойдём в музей.",
-      "audio": "audio/07a6d2d105ef.m4a"
+      "ru": "Если будет дождь, мы пойдём в музей."
      }
     ],
     "task": "pair",
@@ -1635,8 +1588,7 @@
       ],
       "punct": ".",
       "plain": "Wenn es regnet, gehen wir ins Museum.",
-      "ru": "Если будет дождь, мы пойдём в музей.",
-      "audio": "audio/07a6d2d105ef.m4a"
+      "ru": "Если будет дождь, мы пойдём в музей."
      }
     ],
     "task": "pair",
@@ -1656,8 +1608,7 @@
     "hast"
    ],
    "answer": 0,
-   "why": "Глагол в конце придаточного.",
-   "audio": "audio/71990a0de01d.m4a"
+   "why": "Глагол в конце придаточного."
   },
   {
    "id": "a2-abschluss-2",
@@ -1669,8 +1620,7 @@
     "geht"
    ],
    "answer": 0,
-   "why": "Главная начинается с глагола.",
-   "audio": "audio/07a6d2d105ef.m4a"
+   "why": "Главная начинается с глагола."
   },
   {
    "id": "a2-abschluss-3",
@@ -1682,8 +1632,7 @@
     "als"
    ],
    "answer": 0,
-   "why": "Косвенный вопрос да/нет.",
-   "audio": "audio/293b7e6a85a9.m4a"
+   "why": "Косвенный вопрос да/нет."
   },
   {
    "id": "a2-abschluss-4",
@@ -1696,8 +1645,7 @@
     "um"
    ],
    "answer": 0,
-   "why": "Начало продолжающегося действия.",
-   "audio": "audio/fdfb9d5902ad.m4a"
+   "why": "Начало продолжающегося действия."
   },
   {
    "id": "a2-abschluss-5",
@@ -1709,8 +1657,7 @@
     "ob"
    ],
    "answer": 0,
-   "why": "Сравнение с als.",
-   "audio": "audio/95cf9ba5f1b5.m4a"
+   "why": "Сравнение с als."
   },
   {
    "id": "a2-abschluss-6",
@@ -1722,8 +1669,7 @@
     "ob"
    ],
    "answer": 0,
-   "why": "Genug перед существительным.",
-   "audio": "audio/6f74d530f50b.m4a"
+   "why": "Genug перед существительным."
   },
   {
    "id": "a2-abschluss-7",
@@ -1733,8 +1679,7 @@
     "Am Sonntag fahren wir, weil Mateo frei hat.",
     "Weil Mateo frei hat, fahren wir am Sonntag."
    ],
-   "de": "Wir fahren am Sonntag, weil Mateo frei hat.",
-   "audio": "audio/145920b93b87.m4a"
+   "de": "Wir fahren am Sonntag, weil Mateo frei hat."
   },
   {
    "id": "a2-abschluss-8",
@@ -1744,8 +1689,7 @@
     "Wir gehen ins Museum, wenn es regnet.",
     "Ins Museum gehen wir, wenn es regnet."
    ],
-   "de": "Wenn es regnet, gehen wir ins Museum.",
-   "audio": "audio/07a6d2d105ef.m4a"
+   "de": "Wenn es regnet, gehen wir ins Museum."
   },
   {
    "id": "a2-abschluss-9",
@@ -1754,8 +1698,7 @@
    "also": [
     "Ob Plätze frei sind, frage ich."
    ],
-   "de": "Ich frage, ob Plätze frei sind.",
-   "audio": "audio/293b7e6a85a9.m4a"
+   "de": "Ich frage, ob Plätze frei sind."
   },
   {
    "id": "a2-abschluss-10",
@@ -1765,8 +1708,7 @@
     "Seit Montag planen wir die Fahrt.",
     "Die Fahrt planen wir seit Montag."
    ],
-   "de": "Wir planen seit Montag die Fahrt.",
-   "audio": "audio/b1e50e8740b9.m4a"
+   "de": "Wir planen seit Montag die Fahrt."
   },
   {
    "id": "a2-abschluss-11",
@@ -1775,8 +1717,7 @@
    "also": [
     "Billiger als Plan B ist Plan A."
    ],
-   "de": "Plan A ist billiger als Plan B.",
-   "audio": "audio/95cf9ba5f1b5.m4a"
+   "de": "Plan A ist billiger als Plan B."
   },
   {
    "id": "a2-abschluss-12",
@@ -1785,8 +1726,7 @@
    "also": [
     "Um elf Uhr treffen wir uns."
    ],
-   "de": "Wir treffen uns um elf Uhr.",
-   "audio": "audio/3bcf292c50e3.m4a"
+   "de": "Wir treffen uns um elf Uhr."
   }
  ],
  "case": {

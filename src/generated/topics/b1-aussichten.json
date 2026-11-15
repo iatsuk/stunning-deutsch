@@ -69,50 +69,42 @@
     {
      "who": "H",
      "de": "Laut Vorhersage wird es morgen wahrscheinlich regnen.",
-     "ru": "По прогнозу завтра, вероятно, будет дождь.",
-     "audio": "audio/d829e890d06f.m4a"
+     "ru": "По прогнозу завтра, вероятно, будет дождь."
     },
     {
      "who": "D",
      "de": "Der Raum ist bestätigt. Der Treff beginnt um fünfzehn Uhr.",
-     "ru": "Помещение подтверждено. Встреча начинается в пятнадцать.",
-     "audio": "audio/68143bdbb0aa.m4a"
+     "ru": "Помещение подтверждено. Встреча начинается в пятнадцать."
     },
     {
      "who": "E",
      "de": "Wenn es regnet, bringen wir die Materialien mit dem Bus.",
-     "ru": "Если пойдёт дождь, повезём материалы автобусом.",
-     "audio": "audio/75dd8c920d04.m4a"
+     "ru": "Если пойдёт дождь, повезём материалы автобусом."
     },
     {
      "who": "M",
      "de": "Und bei trockenem Wetter bleiben beide Transportmöglichkeiten offen.",
-     "ru": "А в сухую погоду оба способа доставки остаются доступными.",
-     "audio": "audio/a45a9977e52e.m4a"
+     "ru": "А в сухую погоду оба способа доставки остаются доступными."
     },
     {
      "who": "H",
      "de": "Ich werde am Vormittag noch einmal die Zugverbindung prüfen.",
-     "ru": "Утром я ещё раз проверю поезд.",
-     "audio": "audio/038190cb4ffa.m4a"
+     "ru": "Утром я ещё раз проверю поезд."
     },
     {
      "who": "D",
      "de": "Wenn dein Zug verspätet ist, hole ich den Schlüssel ab. Sag mir rechtzeitig Bescheid.",
-     "ru": "Если твой поезд опоздает, я заберу ключ. Сообщи мне заранее.",
-     "audio": "audio/f38fc8943022.m4a"
+     "ru": "Если твой поезд опоздает, я заберу ключ. Сообщи мне заранее."
     },
     {
      "who": "E",
      "de": "Die Fotos werden heute geprüft. Ich melde mich danach bei der Gruppe.",
-     "ru": "Фотографии сегодня проверяют. После этого я сообщу группе.",
-     "audio": "audio/89707ff35adc.m4a"
+     "ru": "Фотографии сегодня проверяют. После этого я сообщу группе."
     },
     {
      "who": "H",
      "de": "Genau. Ich werde die Gruppe informieren, wenn ich neue Angaben habe.",
-     "ru": "Верно. Я сообщу группе, когда у меня будут новые сведения.",
-     "audio": "audio/db20aa8a9f9c.m4a"
+     "ru": "Верно. Я сообщу группе, когда у меня будут новые сведения."
     }
    ]
   }
@@ -126,106 +118,91 @@
      "de": "die Aussicht",
      "ru": "перспектива, ожидание",
      "gender": "f",
-     "plural": "Aussichten",
-     "audio": "audio/d806a2519330.m4a"
+     "plural": "Aussichten"
     },
     {
      "de": "die Vorhersage",
      "ru": "прогноз",
      "gender": "f",
-     "plural": "Vorhersagen",
-     "audio": "audio/1bb0cd0c6404.m4a"
+     "plural": "Vorhersagen"
     },
     {
      "de": "die Wahrscheinlichkeit",
      "ru": "вероятность",
      "gender": "f",
-     "plural": "Wahrscheinlichkeiten",
-     "audio": "audio/65d977b91588.m4a"
+     "plural": "Wahrscheinlichkeiten"
     },
     {
      "de": "die Zugverbindung",
      "ru": "железнодорожное сообщение",
      "gender": "f",
-     "plural": "Zugverbindungen",
-     "audio": "audio/c8afac17ec9b.m4a"
+     "plural": "Zugverbindungen"
     },
     {
      "de": "die Verspätung",
      "ru": "опоздание",
      "gender": "f",
-     "plural": "Verspätungen",
-     "audio": "audio/80ca79f40061.m4a"
+     "plural": "Verspätungen"
     },
     {
      "de": "der Ersatzplan",
      "ru": "запасной план",
      "gender": "m",
-     "plural": "Ersatzpläne",
-     "audio": "audio/7d26d35dc017.m4a"
+     "plural": "Ersatzpläne"
     },
     {
      "de": "die Zusicherung",
      "ru": "заверение",
      "gender": "f",
-     "plural": "Zusicherungen",
-     "audio": "audio/853e32f60c4e.m4a"
+     "plural": "Zusicherungen"
     },
     {
      "de": "der Stand",
      "ru": "текущее состояние",
      "gender": "m",
-     "plural": "Stände",
-     "audio": "audio/219ff043d82e.m4a"
+     "plural": "Stände"
     },
     {
      "de": "wahrscheinlich morgen",
      "ru": "вероятно завтра",
      "gender": null,
-     "plural": null,
-     "audio": "audio/71082c8c5233.m4a"
+     "plural": null
     },
     {
      "de": "vielleicht später",
      "ru": "возможно позже",
      "gender": null,
-     "plural": null,
-     "audio": "audio/77df568e294c.m4a"
+     "plural": null
     },
     {
      "de": "voraussichtlich",
      "ru": "предположительно, по ожиданию",
      "gender": null,
-     "plural": null,
-     "audio": "audio/0a8f1df53856.m4a"
+     "plural": null
     },
     {
      "de": "noch einmal prüfen",
      "ru": "проверить ещё раз",
      "gender": null,
-     "plural": null,
-     "audio": "audio/d9d928e4ca0b.m4a"
+     "plural": null
     },
     {
      "de": "bei trockenem Wetter",
      "ru": "в сухую погоду",
      "gender": null,
-     "plural": null,
-     "audio": "audio/37cb4204e303.m4a"
+     "plural": null
     },
     {
      "de": "rechtzeitig informieren",
      "ru": "заранее сообщить",
      "gender": null,
-     "plural": null,
-     "audio": "audio/0762fe2c4884.m4a"
+     "plural": null
     },
     {
      "de": "auf dem aktuellen Stand sein",
      "ru": "владеть актуальными сведениями",
      "gender": null,
-     "plural": null,
-     "audio": "audio/ed02475a3b6f.m4a"
+     "plural": null
     }
    ]
   }
@@ -513,24 +490,19 @@
    "title": "Fünf Informationen vor dem Treff",
    "recordings": [
     {
-     "text": "Laut Vorhersage sind morgen Schauer wahrscheinlich. Am Vormittag kann es auch trocken bleiben. Prüfen Sie den Stand noch einmal am Morgen. Die Aussage ist eine Erwartung, keine Beobachtung des nächsten Tages.",
-     "audio": "audio/c6e23a9d4a78.m4a"
+     "text": "Laut Vorhersage sind morgen Schauer wahrscheinlich. Am Vormittag kann es auch trocken bleiben. Prüfen Sie den Stand noch einmal am Morgen. Die Aussage ist eine Erwartung, keine Beobachtung des nächsten Tages."
     },
     {
-     "text": "Nach dem aktuellen Fahrplan kommt der Zug um dreizehn Uhr fünfzig in Kiel an. Bisher liegt keine Verspätungsmeldung vor. Hauke wird die Verbindung vor der Abfahrt erneut prüfen.",
-     "audio": "audio/7179fd3d9a73.m4a"
+     "text": "Nach dem aktuellen Fahrplan kommt der Zug um dreizehn Uhr fünfzig in Kiel an. Bisher liegt keine Verspätungsmeldung vor. Hauke wird die Verbindung vor der Abfahrt erneut prüfen."
     },
     {
-     "text": "Ihre Buchung von Raum C bleibt bestätigt. Die Veranstaltung findet von fünfzehn bis achtzehn Uhr statt. Den Schlüssel können Sie ab halb drei im Seitenbüro abholen. Der Wetterbericht ändert diese Buchung nicht.",
-     "audio": "audio/9bcb9c21ea6a.m4a"
+     "text": "Ihre Buchung von Raum C bleibt bestätigt. Die Veranstaltung findet von fünfzehn bis achtzehn Uhr statt. Den Schlüssel können Sie ab halb drei im Seitenbüro abholen. Der Wetterbericht ändert diese Buchung nicht."
     },
     {
-     "text": "Ich werde die letzten Bildunterschriften heute noch prüfen. Danach melde ich mich bei der Gruppe. Bitte markiert die Prüfung noch nicht als fertig, bevor meine Rückmeldung da ist.",
-     "audio": "audio/7b02d3103189.m4a"
+     "text": "Ich werde die letzten Bildunterschriften heute noch prüfen. Danach melde ich mich bei der Gruppe. Bitte markiert die Prüfung noch nicht als fertig, bevor meine Rückmeldung da ist."
     },
     {
-     "text": "Wenn Haukes Zug verspätet ist, werde ich den Schlüssel holen. Wir haben diese Alternative vereinbart. Im Moment gibt es aber noch keine Nachricht über eine tatsächliche Verspätung.",
-     "audio": "audio/0827cf10c624.m4a"
+     "text": "Wenn Haukes Zug verspätet ist, werde ich den Schlüssel holen. Wir haben diese Alternative vereinbart. Im Moment gibt es aber noch keine Nachricht über eine tatsächliche Verspätung."
     }
    ],
    "questions": [
@@ -600,8 +572,7 @@
    ],
    "sample": [
     {
-     "de": "Hallo zusammen, Raum C mit Küche bleibt für morgen von 15 bis 18 Uhr bestätigt. Die Miete beträgt 40 Euro, den Schlüssel bekommen wir ab 14:30. Laut Vorhersage wird es wahrscheinlich regnen. Deshalb halten wir den Bus für den Materialtransport bereit. Bei trockenem Wetter bleibt auch das Fahrrad möglich. Haukes Zug soll planmäßig um 13:50 in Kiel ankommen. Wenn der Zug verspätet ist, holt unsere Freundin Dana den Schlüssel. Bisher ist keine Verspätung gemeldet. Hauke wird am Vormittag noch einmal prüfen und rechtzeitig Bescheid sagen. Bitte schreibt bis 13 Uhr, ob sich bei euch etwas ändert. Viele Grüße Elif",
-     "audio": "audio/03eb77474e2a.m4a"
+     "de": "Hallo zusammen, Raum C mit Küche bleibt für morgen von 15 bis 18 Uhr bestätigt. Die Miete beträgt 40 Euro, den Schlüssel bekommen wir ab 14:30. Laut Vorhersage wird es wahrscheinlich regnen. Deshalb halten wir den Bus für den Materialtransport bereit. Bei trockenem Wetter bleibt auch das Fahrrad möglich. Haukes Zug soll planmäßig um 13:50 in Kiel ankommen. Wenn der Zug verspätet ist, holt unsere Freundin Dana den Schlüssel. Bisher ist keine Verspätung gemeldet. Hauke wird am Vormittag noch einmal prüfen und rechtzeitig Bescheid sagen. Bitte schreibt bis 13 Uhr, ob sich bei euch etwas ändert. Viele Grüße Elif"
     }
    ]
   }
@@ -799,8 +770,7 @@
       ],
       "punct": ".",
       "plain": "Ich werde die Gruppe rechtzeitig informieren.",
-      "ru": "Я своевременно сообщу группе.",
-      "audio": "audio/6c8f64abae78.m4a"
+      "ru": "Я своевременно сообщу группе."
      }
     ]
    }
@@ -857,8 +827,7 @@
       ],
       "punct": ".",
       "plain": "Ich werde die Gruppe rechtzeitig informieren.",
-      "ru": "Я своевременно сообщу группе.",
-      "audio": "audio/6c8f64abae78.m4a"
+      "ru": "Я своевременно сообщу группе."
      }
     ]
    }
@@ -915,8 +884,7 @@
       ],
       "punct": ".",
       "plain": "Ich werde die Gruppe rechtzeitig informieren.",
-      "ru": "Я своевременно сообщу группе.",
-      "audio": "audio/6c8f64abae78.m4a"
+      "ru": "Я своевременно сообщу группе."
      }
     ]
    }
@@ -972,8 +940,7 @@
       ],
       "punct": ".",
       "plain": "Ich werde die Gruppe rechtzeitig informieren.",
-      "ru": "Я своевременно сообщу группе.",
-      "audio": "audio/6c8f64abae78.m4a"
+      "ru": "Я своевременно сообщу группе."
      }
     ],
     "task": "status"
@@ -1031,8 +998,7 @@
       ],
       "punct": ".",
       "plain": "Ich werde die Gruppe rechtzeitig informieren.",
-      "ru": "Я своевременно сообщу группе.",
-      "audio": "audio/6c8f64abae78.m4a"
+      "ru": "Я своевременно сообщу группе."
      }
     ],
     "task": "status"
@@ -1080,8 +1046,7 @@
       ],
       "punct": ".",
       "plain": "Ich werde die Gruppe rechtzeitig informieren.",
-      "ru": "Я своевременно сообщу группе.",
-      "audio": "audio/6c8f64abae78.m4a"
+      "ru": "Я своевременно сообщу группе."
      }
     ],
     "task": "status",
@@ -1139,8 +1104,7 @@
       ],
       "punct": ".",
       "plain": "Ich werde die Gruppe rechtzeitig informieren.",
-      "ru": "Я своевременно сообщу группе.",
-      "audio": "audio/6c8f64abae78.m4a"
+      "ru": "Я своевременно сообщу группе."
      }
     ],
     "task": "gaps"
@@ -1198,8 +1162,7 @@
       ],
       "punct": ".",
       "plain": "Ich werde die Gruppe rechtzeitig informieren.",
-      "ru": "Я своевременно сообщу группе.",
-      "audio": "audio/6c8f64abae78.m4a"
+      "ru": "Я своевременно сообщу группе."
      }
     ],
     "task": "gaps"
@@ -1247,8 +1210,7 @@
       ],
       "punct": ".",
       "plain": "Ich werde die Gruppe rechtzeitig informieren.",
-      "ru": "Я своевременно сообщу группе.",
-      "audio": "audio/6c8f64abae78.m4a"
+      "ru": "Я своевременно сообщу группе."
      }
     ],
     "task": "gaps",
@@ -1306,8 +1268,7 @@
       ],
       "punct": ".",
       "plain": "Ich werde die Gruppe rechtzeitig informieren.",
-      "ru": "Я своевременно сообщу группе.",
-      "audio": "audio/6c8f64abae78.m4a"
+      "ru": "Я своевременно сообщу группе."
      }
     ],
     "task": "notices"
@@ -1365,8 +1326,7 @@
       ],
       "punct": ".",
       "plain": "Ich werde die Gruppe rechtzeitig informieren.",
-      "ru": "Я своевременно сообщу группе.",
-      "audio": "audio/6c8f64abae78.m4a"
+      "ru": "Я своевременно сообщу группе."
      }
     ],
     "task": "notices"
@@ -1414,8 +1374,7 @@
       ],
       "punct": ".",
       "plain": "Ich werde die Gruppe rechtzeitig informieren.",
-      "ru": "Я своевременно сообщу группе.",
-      "audio": "audio/6c8f64abae78.m4a"
+      "ru": "Я своевременно сообщу группе."
      }
     ],
     "task": "notices",
@@ -1473,8 +1432,7 @@
       ],
       "punct": ".",
       "plain": "Ich werde die Gruppe rechtzeitig informieren.",
-      "ru": "Я своевременно сообщу группе.",
-      "audio": "audio/6c8f64abae78.m4a"
+      "ru": "Я своевременно сообщу группе."
      }
     ],
     "task": "write",
@@ -1533,8 +1491,7 @@
       ],
       "punct": ".",
       "plain": "Ich werde die Gruppe rechtzeitig informieren.",
-      "ru": "Я своевременно сообщу группе.",
-      "audio": "audio/6c8f64abae78.m4a"
+      "ru": "Я своевременно сообщу группе."
      }
     ],
     "task": "write",
@@ -1583,8 +1540,7 @@
       ],
       "punct": ".",
       "plain": "Ich werde die Gruppe rechtzeitig informieren.",
-      "ru": "Я своевременно сообщу группе.",
-      "audio": "audio/6c8f64abae78.m4a"
+      "ru": "Я своевременно сообщу группе."
      }
     ],
     "task": "write",
@@ -1604,8 +1560,7 @@
     "prüfte"
    ],
    "answer": 0,
-   "why": "Futur I с инфинитивом.",
-   "audio": "audio/f6c9501f2dbb.m4a"
+   "why": "Futur I с инфинитивом."
   },
   {
    "id": "b1-aussichten-2",
@@ -1617,8 +1572,7 @@
     "prüfte"
    ],
    "answer": 0,
-   "why": "Passiv с причастием.",
-   "audio": "audio/554b72923ac1.m4a"
+   "why": "Passiv с причастием."
   },
   {
    "id": "b1-aussichten-3",
@@ -1630,8 +1584,7 @@
     "wird"
    ],
    "answer": 1,
-   "why": "Wir werden.",
-   "audio": "audio/3a36e8887c4d.m4a"
+   "why": "Wir werden."
   },
   {
    "id": "b1-aussichten-4",
@@ -1643,8 +1596,7 @@
     "einen"
    ],
    "answer": 0,
-   "why": "Маркер вероятности.",
-   "audio": "audio/53ba8c548210.m4a"
+   "why": "Маркер вероятности."
   },
   {
    "id": "b1-aussichten-5",
@@ -1679,8 +1631,7 @@
     "Die Gruppe werde ich rechtzeitig informieren.",
     "Rechtzeitig werde ich die Gruppe informieren.",
     "Ich werde rechtzeitig die Gruppe informieren."
-   ],
-   "audio": "audio/6c8f64abae78.m4a"
+   ]
   },
   {
    "id": "b1-aussichten-8",
@@ -1689,8 +1640,7 @@
    "ru": "Вероятно, будет дождь.",
    "also": [
     "Wahrscheinlich wird es regnen."
-   ],
-   "audio": "audio/53ba8c548210.m4a"
+   ]
   },
   {
    "id": "b1-aussichten-9",
@@ -1701,8 +1651,7 @@
     "Die Verbindung werden wir noch einmal prüfen.",
     "Noch einmal werden wir die Verbindung prüfen.",
     "Wir werden noch einmal die Verbindung prüfen."
-   ],
-   "audio": "audio/3109a14ff75c.m4a"
+   ]
   },
   {
    "id": "b1-aussichten-10",
@@ -1711,8 +1660,7 @@
    "ru": "Фотографии сегодня проверяют.",
    "also": [
     "Heute werden die Fotos geprüft."
-   ],
-   "audio": "audio/6ea04f6a5913.m4a"
+   ]
   },
   {
    "id": "b1-aussichten-11",
@@ -1721,8 +1669,7 @@
    "ru": "Если поезд опоздает, ключ получит Дана.",
    "also": [
     "Dana holt den Schlüssel, wenn der Zug verspätet ist."
-   ],
-   "audio": "audio/bce8826a5fe7.m4a"
+   ]
   },
   {
    "id": "b1-aussichten-12",
@@ -1732,8 +1679,7 @@
    "also": [
     "Morgen beginnt der Treff um fünfzehn Uhr.",
     "Um fünfzehn Uhr beginnt der Treff morgen."
-   ],
-   "audio": "audio/eab4e4ebe3f2.m4a"
+   ]
   }
  ],
  "case": {

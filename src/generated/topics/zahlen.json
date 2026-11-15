@@ -66,13 +66,13 @@
      "who": "P",
      "de": "Moin, Sprachschule Förde, Petersen!",
      "ru": "Здравствуйте, языковая школа «Фёрде», Петерсен!",
-     "audio": "audio/68923dc2cd0b.m4a"
+     "audio": "audio/4dd74d0d884b.m4a"
     },
     {
      "who": "D",
      "de": "Moin, hier ist Dana Ospanowa. Ich möchte die A1-Prüfung machen.",
      "ru": "Здравствуйте, это Дана Оспанова. Я хотела бы сдать экзамен A1.",
-     "audio": "audio/71c30c72c054.m4a"
+     "audio": "audio/e1e0eace5365.m4a"
     },
     {
      "who": "P",
@@ -84,13 +84,13 @@
      "who": "D",
      "de": "O – S – P – A – N – O – W – A. W wie Wilhelm.",
      "ru": "О — эс — пэ — а — эн — о — вэ — а. «Вэ», как Вильгельм.",
-     "audio": "audio/885553db2bc9.m4a"
+     "audio": "audio/442813800e60.m4a"
     },
     {
      "who": "P",
      "de": "Danke. Und Ihre Telefonnummer, bitte?",
      "ru": "Спасибо. А ваш номер телефона?",
-     "audio": "audio/b92d26509823.m4a"
+     "audio": "audio/b310428e8f04.m4a"
     },
     {
      "who": "D",
@@ -108,19 +108,19 @@
      "who": "D",
      "de": "Nein, dreiundzwanzig! Zwei – drei.",
      "ru": "Нет, двадцать три! Два — три.",
-     "audio": "audio/a61bce7d6f8e.m4a"
+     "audio": "audio/31a7e31a677a.m4a"
     },
     {
      "who": "P",
      "de": "Ah, dreiundzwanzig! Danke, Frau Ospanowa. Auf Wiederhören!",
      "ru": "А, двадцать три! Спасибо, госпожа Оспанова. До свидания!",
-     "audio": "audio/6dc325782582.m4a"
+     "audio": "audio/51bb39e5616c.m4a"
     },
     {
      "who": "D",
      "de": "Auf Wiederhören!",
      "ru": "До свидания!",
-     "audio": "audio/14f3311d59ec.m4a"
+     "audio": "audio/973cf016eabe.m4a"
     }
    ]
   },
@@ -153,7 +153,7 @@
      "who": "M",
      "de": "Ja! Ich habe heute achtundzwanzig Jahre.",
      "ru": "Да! Я «имею» сегодня двадцать восемь лет.",
-     "audio": "audio/4c32a47a0688.m4a"
+     "audio": "audio/baf143190902.m4a"
     },
     {
      "who": "D",
@@ -183,7 +183,7 @@
      "who": "D",
      "de": "Ja, klar! Wir haben jetzt Pause.",
      "ru": "Да, конечно! У нас сейчас перерыв.",
-     "audio": "audio/ba75a3cdb374.m4a"
+     "audio": "audio/ececf9f13bd1.m4a"
     },
     {
      "who": "M",
@@ -201,7 +201,7 @@
      "who": "T",
      "de": "Ja, natürlich! Alles Gute, Mateo!",
      "ru": "Да, конечно! Поздравляю, Матео!",
-     "audio": "audio/3bb256f8de37.m4a"
+     "audio": "audio/f50d19370790.m4a"
     }
    ]
   },
@@ -224,7 +224,7 @@
      "who": "M",
      "de": "Moin, Herr Jensen! Wo ist die „Sprotte“?",
      "ru": "Здравствуйте, господин Йенсен! Где «Шпротта»?",
-     "audio": "audio/412f77d65d20.m4a"
+     "audio": "audio/4b54df1067df.m4a"
     },
     {
      "who": "J",
@@ -242,19 +242,19 @@
      "who": "J",
      "de": "Nein, zweiunddreißig. Drei – zwei.",
      "ru": "Нет, тридцать два. Три — два.",
-     "audio": "audio/7e711370cd07.m4a"
+     "audio": "audio/3355fc9d4fc1.m4a"
     },
     {
      "who": "M",
      "de": "Danke! Wie schreibt man „Sprotte“?",
      "ru": "Спасибо! Как пишется «Шпротта»?",
-     "audio": "audio/eed5faea21f5.m4a"
+     "audio": "audio/00db24b8713c.m4a"
     },
     {
      "who": "J",
      "de": "Es – Pe – Er – O – Te – Te – E. Habt ihr Wasser?",
      "ru": "Эс — пэ — эр — о — тэ — тэ — э. У вас есть вода?",
-     "audio": "audio/c0ad3cc127d7.m4a"
+     "audio": "audio/d3d0ad9c88af.m4a"
     },
     {
      "who": "M",
@@ -281,7 +281,7 @@
      "ru": "0",
      "gender": null,
      "plural": null,
-     "audio": "audio/dfb2f51e0161.m4a"
+     "audio": "audio/a88e4383ba52.m4a"
     },
     {
      "de": "eins",
@@ -297,14 +297,14 @@
      "gender": null,
      "plural": null,
      "note": "по телефону часто zwo",
-     "audio": "audio/a0deeea7bad0.m4a"
+     "audio": "audio/eecf8696cf69.m4a"
     },
     {
      "de": "drei",
      "ru": "3",
      "gender": null,
      "plural": null,
-     "audio": "audio/2aa67b004408.m4a"
+     "audio": "audio/22f3dfca1048.m4a"
     },
     {
      "de": "vier",
@@ -312,7 +312,7 @@
      "gender": null,
      "plural": null,
      "note": "v = ф: [фир]",
-     "audio": "audio/f7c2cf910dc9.m4a"
+     "audio": "audio/25d364039814.m4a"
     },
     {
      "de": "fünf",
@@ -335,7 +335,7 @@
      "gender": null,
      "plural": null,
      "note": "s = з: [зи́бен]",
-     "audio": "audio/359e2e96fea8.m4a"
+     "audio": "audio/2772ee2dd76d.m4a"
     },
     {
      "de": "acht",
@@ -350,7 +350,7 @@
      "gender": null,
      "plural": null,
      "note": "eu = ой: [нойн]",
-     "audio": "audio/415b4f07fe44.m4a"
+     "audio": "audio/167a1ca2f3b3.m4a"
     },
     {
      "de": "zehn",
@@ -358,7 +358,7 @@
      "gender": null,
      "plural": null,
      "note": "z = ц: [цэ:н]",
-     "audio": "audio/2e0aabad80a7.m4a"
+     "audio": "audio/7a65a8a37253.m4a"
     },
     {
      "de": "elf",
@@ -385,7 +385,7 @@
      "ru": "номер телефона",
      "gender": "f",
      "plural": "Telefonnummern",
-     "audio": "audio/b5142bccf91c.m4a"
+     "audio": "audio/181fb5e1e261.m4a"
     },
     {
      "de": "das Handy",
@@ -400,7 +400,7 @@
      "ru": "номер мобильного",
      "gender": "f",
      "plural": "Handynummern",
-     "audio": "audio/c10ddcbbf5c1.m4a"
+     "audio": "audio/8811690feef8.m4a"
     },
     {
      "de": "die Adresse",
@@ -408,14 +408,14 @@
      "gender": "f",
      "plural": "Adressen",
      "note": "одна d, две s",
-     "audio": "audio/5a8d11752955.m4a"
+     "audio": "audio/8ebabe221ed2.m4a"
     },
     {
      "de": "die Hausnummer",
      "ru": "номер дома",
      "gender": "f",
      "plural": "Hausnummern",
-     "audio": "audio/ec4098fc492c.m4a"
+     "audio": "audio/5b4d750f429b.m4a"
     },
     {
      "de": "die Postleitzahl",
@@ -423,7 +423,7 @@
      "gender": "f",
      "plural": "Postleitzahlen",
      "note": "PLZ — 24103 Kiel",
-     "audio": "audio/ca0df44ca602.m4a"
+     "audio": "audio/1fe38a995659.m4a"
     },
     {
      "de": "buchstabieren",
@@ -431,7 +431,7 @@
      "gender": null,
      "plural": null,
      "note": "Wie schreibt man das?",
-     "audio": "audio/2d60bac4c41c.m4a"
+     "audio": "audio/97b0dabe27b9.m4a"
     },
     {
      "de": "Wie bitte?",
@@ -439,21 +439,21 @@
      "gender": null,
      "plural": null,
      "note": "если не расслышали",
-     "audio": "audio/c7e609b39725.m4a"
+     "audio": "audio/2975aceabde6.m4a"
     },
     {
      "de": "Noch einmal, bitte.",
      "ru": "Ещё раз, пожалуйста.",
      "gender": null,
      "plural": null,
-     "audio": "audio/e43749d33af2.m4a"
+     "audio": "audio/ed57433012cc.m4a"
     },
     {
      "de": "Langsam, bitte.",
      "ru": "Помедленнее, пожалуйста.",
      "gender": null,
      "plural": null,
-     "audio": "audio/2f97f0e4c360.m4a"
+     "audio": "audio/3b489d00d320.m4a"
     },
     {
      "de": "Auf Wiederhören!",
@@ -461,7 +461,7 @@
      "gender": null,
      "plural": null,
      "note": "hören — слышать",
-     "audio": "audio/14f3311d59ec.m4a"
+     "audio": "audio/973cf016eabe.m4a"
     }
    ]
   },
@@ -475,7 +475,7 @@
      "gender": null,
      "plural": null,
      "note": "ich habe, du hast, er hat",
-     "audio": "audio/0174379a2855.m4a"
+     "audio": "audio/380e898ae6d0.m4a"
     },
     {
      "de": "die Zeit",
@@ -483,7 +483,7 @@
      "gender": "f",
      "plural": "Zeiten",
      "note": "Hast du Zeit?",
-     "audio": "audio/86e725563605.m4a"
+     "audio": "audio/4e457ab24a02.m4a"
     },
     {
      "de": "die Pause",
@@ -491,7 +491,7 @@
      "gender": "f",
      "plural": "Pausen",
      "note": "Wir haben Pause.",
-     "audio": "audio/8d6ee20d0c3e.m4a"
+     "audio": "audio/d932c50a5aae.m4a"
     },
     {
      "de": "der Geburtstag",
@@ -499,7 +499,7 @@
      "gender": "m",
      "plural": "Geburtstage",
      "note": "Ich habe heute Geburtstag.",
-     "audio": "audio/a5cad6901e31.m4a"
+     "audio": "audio/d2f61fca87e5.m4a"
     },
     {
      "de": "Alles Gute!",
@@ -507,14 +507,14 @@
      "gender": null,
      "plural": null,
      "note": "и «всего хорошего»",
-     "audio": "audio/391cc74d0be8.m4a"
+     "audio": "audio/1a78a5858a48.m4a"
     },
     {
      "de": "das Jahr",
      "ru": "год",
      "gender": "n",
      "plural": "Jahre",
-     "audio": "audio/2ab14b96ad42.m4a"
+     "audio": "audio/22b99e91ccc8.m4a"
     },
     {
      "de": "alt",
@@ -529,14 +529,14 @@
      "ru": "пирог, торт",
      "gender": "m",
      "plural": "Kuchen",
-     "audio": "audio/7a3359329b13.m4a"
+     "audio": "audio/62375302d117.m4a"
     },
     {
      "de": "die Prüfung",
      "ru": "экзамен",
      "gender": "f",
      "plural": "Prüfungen",
-     "audio": "audio/00c9a5d41782.m4a"
+     "audio": "audio/e253f3aec217.m4a"
     },
     {
      "de": "der Raum",
@@ -544,7 +544,7 @@
      "gender": "m",
      "plural": "Räume",
      "note": "Raum 214",
-     "audio": "audio/c3b09d268614.m4a"
+     "audio": "audio/b347cd2bacad.m4a"
     },
     {
      "de": "die Frage",
@@ -552,14 +552,14 @@
      "gender": "f",
      "plural": "Fragen",
      "note": "Haben Sie Fragen?",
-     "audio": "audio/6861fee5c3e2.m4a"
+     "audio": "audio/934b95fc2914.m4a"
     },
     {
      "de": "die Zahl",
      "ru": "число",
      "gender": "f",
      "plural": "Zahlen",
-     "audio": "audio/78b8a464cf86.m4a"
+     "audio": "audio/8d4f90bbed1b.m4a"
     }
    ]
   },
@@ -573,14 +573,14 @@
      "gender": "m",
      "plural": "Liegeplätze",
      "note": "Liegeplatz 32",
-     "audio": "audio/ce99bae57f01.m4a"
+     "audio": "audio/f6bf90f2018b.m4a"
     },
     {
      "de": "die Nummer",
      "ru": "номер",
      "gender": "f",
      "plural": "Nummern",
-     "audio": "audio/a1e93791a9db.m4a"
+     "audio": "audio/e81b7479d808.m4a"
     },
     {
      "de": "das Wasser",
@@ -589,7 +589,7 @@
      "plural": null,
      "noPlural": true,
      "note": "Wir haben Wasser.",
-     "audio": "audio/8f766557d2a4.m4a"
+     "audio": "audio/9476f3070b0b.m4a"
     },
     {
      "de": "das Brot",
@@ -597,7 +597,7 @@
      "gender": "n",
      "plural": "Brote",
      "note": "Wir haben Brot.",
-     "audio": "audio/b56ce826c04e.m4a"
+     "audio": "audio/7168b97f2dc5.m4a"
     }
    ]
   }
@@ -886,7 +886,7 @@
     },
     {
      "de": "Meine Handynummer ist null eins fünf neun – drei vier sieben sieben eins zwei.",
-     "audio": "audio/6fc7d92e7ac7.m4a"
+     "audio": "audio/22653f049c3a.m4a"
     }
    ]
   },
@@ -904,7 +904,7 @@
     "Raum 241"
    ],
    "answer": 1,
-   "audio": "audio/5d7ecf8e0075.m4a",
+   "audio": "audio/b758c818aa93.m4a",
    "sample": []
   }
  },
@@ -1529,7 +1529,7 @@
       "punct": "?",
       "plain": "Wie alt bist du?",
       "ru": "Сколько тебе лет?",
-      "audio": "audio/ed1da89ac9f9.m4a"
+      "audio": "audio/989092205494.m4a"
      },
      {
       "slots": [
@@ -1613,7 +1613,7 @@
       "punct": "?",
       "plain": "Wie alt bist du?",
       "ru": "Сколько тебе лет?",
-      "audio": "audio/ed1da89ac9f9.m4a"
+      "audio": "audio/989092205494.m4a"
      },
      {
       "slots": [
@@ -1701,7 +1701,7 @@
       "punct": "?",
       "plain": "Wie alt bist du?",
       "ru": "Сколько тебе лет?",
-      "audio": "audio/ed1da89ac9f9.m4a"
+      "audio": "audio/989092205494.m4a"
      },
      {
       "slots": [
@@ -2270,7 +2270,7 @@
    ],
    "hint": "haben",
    "why": "*er hat* — тоже без *b*.",
-   "audio": "audio/7772f61c9c3c.m4a"
+   "audio": "audio/9b1eed387263.m4a"
   },
   {
    "id": "zahlen-12",
@@ -2283,7 +2283,7 @@
    ],
    "answer": 1,
    "why": "Возраст — с *sein*: *Wie alt bist du?*",
-   "audio": "audio/ed1da89ac9f9.m4a"
+   "audio": "audio/989092205494.m4a"
   },
   {
    "id": "zahlen-13",
@@ -2311,7 +2311,7 @@
    "type": "order",
    "ru": "У Вас есть вопросы?",
    "de": "Haben Sie Fragen?",
-   "audio": "audio/80ae83467505.m4a"
+   "audio": "audio/eb57ba1324b5.m4a"
   },
   {
    "id": "zahlen-16",
@@ -2421,7 +2421,7 @@
       "who": "J",
       "de": "Zweiunddreißig? Da liegt die „Sprotte“!",
       "ru": "Тридцать два? Там же стоит «Шпротта»!",
-      "audio": "audio/08602e5b49cc.m4a"
+      "audio": "audio/e6269dcc8d65.m4a"
      }
     ],
     "question": "Какое место у причала забронировал незнакомец?",
@@ -2517,13 +2517,13 @@
   "phoneHelp": [
    {
     "de": "Nein, dreiundzwanzig! Zwei – drei.",
-    "audio": "audio/a61bce7d6f8e.m4a",
+    "audio": "audio/31a7e31a677a.m4a",
     "name": "Dana"
    }
   ],
   "room": {
    "text": "Moin, hier ist Kerstin Petersen, Sprachschule Förde. Eine Nachricht für Mateo Fernández: Herr Fernández, Ihr Kurs ist jetzt in Raum zweihundertvierzehn. Zwei – eins – vier. Haben Sie Fragen? Meine Nummer ist null vier drei eins – achtundfünfzig – siebenundneunzig – dreißig. Auf Wiederhören!",
-   "audio": "audio/5d7ecf8e0075.m4a",
+   "audio": "audio/b758c818aa93.m4a",
    "options": [
     "Raum 140",
     "Raum 214",
@@ -2542,7 +2542,7 @@
     "quotes": [
      {
       "de": "Es – Pe – Er – O – Te – Te – E. Habt ihr Wasser?",
-      "audio": "audio/c0ad3cc127d7.m4a",
+      "audio": "audio/d3d0ad9c88af.m4a",
       "name": "Herr Jensen"
      }
     ],

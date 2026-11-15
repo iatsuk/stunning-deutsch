@@ -82,7 +82,7 @@
     "punct": "?",
     "plain": "Wo wohnst du?",
     "ru": "Где ты живёшь?",
-    "audio": "audio/e3f776cfc5d7.m4a"
+    "audio": "audio/0bc3bc8d6f11.m4a"
    },
    {
     "slots": [
@@ -112,7 +112,7 @@
     "punct": "?",
     "plain": "Wohnst du in Kiel?",
     "ru": "Ты живёшь в Киле?",
-    "audio": "audio/28e58cdcb777.m4a"
+    "audio": "audio/b96ac35f7cd0.m4a"
    }
   ]
  },
@@ -348,7 +348,7 @@
     "punct": ".",
     "plain": "Ich wohne in Kiel.",
     "ru": "Я живу в Киле.",
-    "audio": "audio/a09eaf8bc832.m4a"
+    "audio": "audio/15b613eb3c2b.m4a"
    }
   ]
  },
@@ -465,7 +465,7 @@
     "punct": "?",
     "plain": "Wie alt bist du?",
     "ru": "Сколько тебе лет?",
-    "audio": "audio/ed1da89ac9f9.m4a"
+    "audio": "audio/989092205494.m4a"
    },
    {
     "slots": [
@@ -596,7 +596,7 @@
     "punct": ".",
     "plain": "Das ist meine Mutter.",
     "ru": "Это моя мать.",
-    "audio": "audio/cbe6d45dbae5.m4a"
+    "audio": "audio/4f8e3044e534.m4a"
    }
   ]
  },
@@ -891,7 +891,7 @@
     "punct": "?",
     "plain": "Hast du Kinder?",
     "ru": "У тебя есть дети?",
-    "audio": "audio/508aed099108.m4a"
+    "audio": "audio/2960e3079557.m4a"
    },
    {
     "slots": [
@@ -922,7 +922,7 @@
     "punct": ".",
     "plain": "Ich habe keine Kinder.",
     "ru": "Нет, у меня нет детей.",
-    "audio": "audio/d7ef53a304f7.m4a"
+    "audio": "audio/9b4096fbed42.m4a"
    }
   ]
  },
@@ -1001,7 +1001,7 @@
     "punct": ".",
     "plain": "Das sind meine Eltern.",
     "ru": "Это мои родители.",
-    "audio": "audio/7152d81b3677.m4a"
+    "audio": "audio/6b5331a75f3d.m4a"
    }
   ]
  },
@@ -1357,7 +1357,7 @@
     "punct": ".",
     "plain": "Ich trinke gern Tee.",
     "ru": "Я люблю чай.",
-    "audio": "audio/1a3cacffb0a8.m4a"
+    "audio": "audio/d6c9eeabad6e.m4a"
    },
    {
     "slots": [
@@ -1387,7 +1387,7 @@
     "punct": "?",
     "plain": "Trinkst du gern Kaffee?",
     "ru": "Ты любишь кофе?",
-    "audio": "audio/5fd6af1183da.m4a"
+    "audio": "audio/4a88a9362eb7.m4a"
    }
   ]
  },
@@ -1458,7 +1458,7 @@
     "punct": ".",
     "plain": "Ich nehme den Kaffee.",
     "ru": "Я беру этот кофе.",
-    "audio": "audio/61b9c7303532.m4a"
+    "audio": "audio/4d22f26a2498.m4a"
    }
   ]
  },
@@ -1545,7 +1545,7 @@
     "punct": ".",
     "plain": "Ich möchte einen Kaffee.",
     "ru": "Я хотел бы кофе.",
-    "audio": "audio/711269f5648f.m4a"
+    "audio": "audio/44636cd1fbac.m4a"
    },
    {
     "slots": [
@@ -1584,7 +1584,7 @@
     "punct": ".",
     "plain": "Das ist ein Kaffee aus Italien.",
     "ru": "Это кофе из Италии.",
-    "audio": "audio/5377f275844e.m4a"
+    "audio": "audio/1ff5d9f58895.m4a"
    }
   ]
  },
@@ -1944,7 +1944,7 @@
     "punct": "?",
     "plain": "Welche Größe haben Sie?",
     "ru": "Какой у вас размер?",
-    "audio": "audio/f394cb19c75c.m4a"
+    "audio": "audio/ac9c6c670e04.m4a"
    },
    {
     "slots": [
@@ -1975,7 +1975,7 @@
     "punct": "?",
     "plain": "Welchen Pullover nehmen Sie?",
     "ru": "Какой свитер вы берёте?",
-    "audio": "audio/eb8575a8e298.m4a"
+    "audio": "audio/23aa7205412f.m4a"
    },
    {
     "slots": [
@@ -2006,7 +2006,7 @@
     "punct": ".",
     "plain": "Ich nehme den hier.",
     "ru": "Я беру вот этот.",
-    "audio": "audio/d1e8686ad0fe.m4a"
+    "audio": "audio/8e30e45173c0.m4a"
    }
   ]
  },
@@ -2548,7 +2548,7 @@
     "punct": "?",
     "plain": "Wollen wir am Sonntag Tennis spielen?",
     "ru": "Давай в воскресенье поиграем в теннис?",
-    "audio": "audio/a7afaf2e6aec.m4a"
+    "audio": "audio/31a16a419bea.m4a"
    }
   ]
  },
@@ -2586,7 +2586,7 @@
     "punct": ".",
     "plain": "Ich kann Tennis spielen.",
     "ru": "Я умею играть в теннис.",
-    "audio": "audio/91aa530c6bfa.m4a"
+    "audio": "audio/32dcef937bdd.m4a"
    }
   ]
  },
@@ -2744,7 +2744,7 @@
     "punct": ".",
     "plain": "Ich kann nicht gut schwimmen.",
     "ru": "Я плохо плаваю.",
-    "audio": "audio/85f2b9f6b5aa.m4a"
+    "audio": "audio/2f25d82f9bdc.m4a"
    },
    {
     "slots": [
@@ -2899,7 +2899,7 @@
     "punct": ".",
     "plain": "Ich kann leider nicht mitkommen.",
     "ru": "К сожалению, я не могу пойти с вами.",
-    "audio": "audio/056900100056.m4a"
+    "audio": "audio/57b8c90f5b2d.m4a"
    }
   ]
  },
@@ -3095,7 +3095,7 @@
     "punct": "?",
     "plain": "Kannst du Tennis spielen?",
     "ru": "Ты умеешь играть в теннис?",
-    "audio": "audio/5d464720f197.m4a"
+    "audio": "audio/1b07ae0e2157.m4a"
    },
    {
     "slots": [
@@ -3135,7 +3135,7 @@
     "punct": "?",
     "plain": "Was willst du am Sonntag machen?",
     "ru": "Что ты хочешь делать в воскресенье?",
-    "audio": "audio/f14f82477492.m4a"
+    "audio": "audio/90de343dc299.m4a"
    }
   ]
  },
@@ -3392,7 +3392,7 @@
     "punct": ".",
     "plain": "Das Bett steht im Schlafzimmer.",
     "ru": "Кровать стоит в спальне.",
-    "audio": "audio/75b486ed0fea.m4a"
+    "audio": "audio/55f545efdc61.m4a"
    }
   ]
  },
@@ -3433,7 +3433,7 @@
     "punct": ".",
     "plain": "Im Keller steht die Waschmaschine.",
     "ru": "В подвале стоит стиральная машина.",
-    "audio": "audio/3c748bee4cae.m4a"
+    "audio": "audio/fe39f08da138.m4a"
    }
   ]
  },
@@ -3616,7 +3616,7 @@
     "punct": ".",
     "plain": "Die Waschmaschine steht im Keller.",
     "ru": "Стиральная машина стоит в подвале.",
-    "audio": "audio/e5c5e3e63393.m4a"
+    "audio": "audio/790fea81f64d.m4a"
    }
   ]
  },
@@ -4084,7 +4084,7 @@
     "punct": ".",
     "plain": "Ich bin bei Mira.",
     "ru": "Я у Миры.",
-    "audio": "audio/e9840a75c738.m4a"
+    "audio": "audio/8253dd705fb2.m4a"
    },
    {
     "slots": [
@@ -4115,7 +4115,7 @@
     "punct": ".",
     "plain": "Ich fahre zu Mira.",
     "ru": "Я еду к Мире.",
-    "audio": "audio/6e7dc24942bc.m4a"
+    "audio": "audio/33e918a404dd.m4a"
    }
   ]
  },
@@ -4777,7 +4777,7 @@
     "punct": ".",
     "plain": "Ich muss im Bett bleiben.",
     "ru": "Мне нужно лежать в постели.",
-    "audio": "audio/b27cee309138.m4a"
+    "audio": "audio/eed5ebbfa67e.m4a"
    }
   ]
  },
@@ -4926,7 +4926,7 @@
     "punct": "?",
     "plain": "Darf ich morgen zum Kurs gehen?",
     "ru": "Можно мне завтра на курс?",
-    "audio": "audio/ec47f2a0bdda.m4a"
+    "audio": "audio/78b04cb68dc4.m4a"
    }
   ]
  },
@@ -5025,7 +5025,7 @@
     "punct": ".",
     "plain": "Du darfst nicht rauchen.",
     "ru": "Тебе нельзя курить.",
-    "audio": "audio/783485b2a3d1.m4a"
+    "audio": "audio/15da6c4ba744.m4a"
    },
    {
     "slots": [
@@ -5057,7 +5057,7 @@
     "punct": ".",
     "plain": "Du musst nicht kommen.",
     "ru": "Тебе не нужно приходить.",
-    "audio": "audio/33821d243616.m4a"
+    "audio": "audio/0567079693d0.m4a"
    }
   ]
  },
@@ -5426,7 +5426,7 @@
     "punct": "?",
     "plain": "Hast du schon eine Stelle gefunden?",
     "ru": "Ты уже нашёл работу?",
-    "audio": "audio/fa050a755df3.m4a"
+    "audio": "audio/fcd746b36aec.m4a"
    }
   ]
  },
@@ -6120,7 +6120,7 @@
     "punct": ".",
     "plain": "Wir sind nach Hamburg gefahren.",
     "ru": "Мы поехали в Гамбург.",
-    "audio": "audio/4090cfa66d69.m4a"
+    "audio": "audio/9fdc045afcb8.m4a"
    }
   ]
  },
@@ -6234,7 +6234,7 @@
     "punct": ".",
     "plain": "Der Zug ist um acht Uhr angekommen.",
     "ru": "Поезд прибыл в восемь часов.",
-    "audio": "audio/7a8fbb74d3aa.m4a"
+    "audio": "audio/9a75906abe66.m4a"
    }
   ]
  },
@@ -6284,7 +6284,7 @@
     "punct": ".",
     "plain": "Um acht Uhr ist der Zug angekommen.",
     "ru": "В восемь часов поезд прибыл.",
-    "audio": "audio/ad43babf64aa.m4a"
+    "audio": "audio/5cb7f4f05842.m4a"
    }
   ]
  },
@@ -6486,7 +6486,7 @@
     "punct": ".",
     "plain": "Am Freitag sind wir mit dem Zug nach Hamburg gefahren.",
     "ru": "В пятницу мы поехали в Гамбург на поезде.",
-    "audio": "audio/b02f27319cd5.m4a"
+    "audio": "audio/244768966bbc.m4a"
    }
   ],
   "focus": [
@@ -6539,7 +6539,7 @@
     "punct": ".",
     "plain": "Wir sind zwei Tage in Hamburg geblieben.",
     "ru": "Мы остались в Гамбурге на два дня.",
-    "audio": "audio/0066a1528377.m4a"
+    "audio": "audio/6cf9d51cf4fe.m4a"
    }
   ]
  }

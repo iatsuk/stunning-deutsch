@@ -73,50 +73,42 @@
     {
      "who": "M",
      "de": "Guten Tag. Ich fühle mich nicht gut und möchte meinen Termin verschieben.",
-     "ru": "Добрый день. Я плохо себя чувствую и хочу перенести свою запись.",
-     "audio": "audio/8470a8037740.m4a"
+     "ru": "Добрый день. Я плохо себя чувствую и хочу перенести свою запись."
     },
     {
      "who": "K",
      "de": "Guten Tag, Herr Fernández. Ihr Termin ist am Dienstag um neun Uhr, richtig?",
-     "ru": "Добрый день, господин Фернандес. Ваша запись во вторник в девять, верно?",
-     "audio": "audio/b3dfe720fdfc.m4a"
+     "ru": "Добрый день, господин Фернандес. Ваша запись во вторник в девять, верно?"
     },
     {
      "who": "M",
      "de": "Ja. Könnten Sie mir einen anderen Termin geben?",
-     "ru": "Да. Не могли бы вы предложить другое время?",
-     "audio": "audio/ada556ea2526.m4a"
+     "ru": "Да. Не могли бы вы предложить другое время?"
     },
     {
      "who": "K",
      "de": "Am Mittwoch um halb elf ist ein Termin frei. Bitte rufen Sie uns zuerst an und bestätigen Sie ihn.",
-     "ru": "В среду в 10:30 есть свободное время. Пожалуйста, сначала позвоните нам и подтвердите его.",
-     "audio": "audio/c83abff4f528.m4a"
+     "ru": "В среду в 10:30 есть свободное время. Пожалуйста, сначала позвоните нам и подтвердите его."
     },
     {
      "who": "M",
      "de": "Gut. Ich soll also zuerst anrufen. Was soll ich mitbringen?",
-     "ru": "Хорошо. Значит, мне сначала нужно позвонить. Что мне взять с собой?",
-     "audio": "audio/33f4a03babfd.m4a"
+     "ru": "Хорошо. Значит, мне сначала нужно позвонить. Что мне взять с собой?"
     },
     {
      "who": "K",
      "de": "Bringen Sie bitte Ihre Karte mit. Im Haus melden Sie sich am Empfang an.",
-     "ru": "Возьмите, пожалуйста, свою карту. В здании отметьтесь у стойки регистрации.",
-     "audio": "audio/edb2cb71c35d.m4a"
+     "ru": "Возьмите, пожалуйста, свою карту. В здании отметьтесь у стойки регистрации."
     },
     {
      "who": "D",
      "de": "Ich schreibe Frau Thomsen, dass du später zum Kurs kommst.",
-     "ru": "Я напишу фрау Томсен, что ты придёшь на курс позже.",
-     "audio": "audio/b80df376cbff.m4a"
+     "ru": "Я напишу фрау Томсен, что ты придёшь на курс позже."
     },
     {
      "who": "M",
      "de": "Danke. Ich kümmere mich um den Anruf.",
-     "ru": "Спасибо. Я займусь звонком.",
-     "audio": "audio/ca86e5bced98.m4a"
+     "ru": "Спасибо. Я займусь звонком."
     }
    ]
   }
@@ -130,86 +122,74 @@
      "de": "sich anmelden",
      "ru": "регистрироваться",
      "gender": null,
-     "plural": null,
-     "audio": "audio/8cdd107f17c2.m4a"
+     "plural": null
     },
     {
      "de": "sich fühlen",
      "ru": "чувствовать себя",
      "gender": null,
-     "plural": null,
-     "audio": "audio/32f80960a61b.m4a"
+     "plural": null
     },
     {
      "de": "sich kümmern",
      "ru": "заниматься, заботиться",
      "gender": null,
-     "plural": null,
-     "audio": "audio/acb640c6a839.m4a"
+     "plural": null
     },
     {
      "de": "sich ausruhen",
      "ru": "отдыхать",
      "gender": null,
-     "plural": null,
-     "audio": "audio/4e604cddc6d6.m4a"
+     "plural": null
     },
     {
      "de": "verschieben",
      "ru": "переносить",
      "gender": null,
-     "plural": null,
-     "audio": "audio/21eba6a6f803.m4a"
+     "plural": null
     },
     {
      "de": "bestätigen",
      "ru": "подтверждать",
      "gender": null,
-     "plural": null,
-     "audio": "audio/1f0598fc0422.m4a"
+     "plural": null
     },
     {
      "de": "zurückrufen",
      "ru": "перезванивать",
      "gender": null,
-     "plural": null,
-     "audio": "audio/cb0598ee10c8.m4a"
+     "plural": null
     },
     {
      "de": "der Empfang",
      "ru": "стойка регистрации",
      "gender": "m",
      "plural": null,
-     "noPlural": true,
-     "audio": "audio/743f6359a077.m4a"
+     "noPlural": true
     },
     {
      "de": "die Versichertenkarte",
      "ru": "карта страховки",
      "gender": "f",
-     "plural": "Versichertenkarten",
-     "audio": "audio/381258c4b4e4.m4a"
+     "plural": "Versichertenkarten"
     },
     {
      "de": "die Änderung",
      "ru": "изменение",
      "gender": "f",
-     "plural": "Änderungen",
-     "audio": "audio/5ea33f13131d.m4a"
+     "plural": "Änderungen"
     },
     {
      "de": "später",
      "ru": "позже",
      "gender": null,
-     "plural": null,
-     "audio": "audio/26a4cdedcefc.m4a"
+     "plural": null
     },
     {
      "de": "zuerst anrufen",
      "ru": "сначала позвонить",
      "gender": null,
-     "plural": null,
-     "audio": "audio/7a02d52fabb6.m4a"
+     "plural": null
     }
    ]
   }
@@ -262,24 +242,19 @@
    "situation": "Hören Sie jede Meldung einmal. Wählen Sie a, b oder c.",
    "recordings": [
     {
-     "text": "Die Anmeldung in der Praxis ist heute am Empfang im Erdgeschoss. Bitte gehen Sie nicht in den ersten Stock.",
-     "audio": "audio/6bc046f7ed07.m4a"
+     "text": "Die Anmeldung in der Praxis ist heute am Empfang im Erdgeschoss. Bitte gehen Sie nicht in den ersten Stock."
     },
     {
-     "text": "Die Besprechung im Club beginnt heute um fünfzehn Uhr, nicht um vierzehn Uhr.",
-     "audio": "audio/13a2ebfa8f76.m4a"
+     "text": "Die Besprechung im Club beginnt heute um fünfzehn Uhr, nicht um vierzehn Uhr."
     },
     {
-     "text": "Unser Café öffnet am Sonntag erst um zehn Uhr. Frühstück gibt es bis zwölf Uhr.",
-     "audio": "audio/d7760ef5e662.m4a"
+     "text": "Unser Café öffnet am Sonntag erst um zehn Uhr. Frühstück gibt es bis zwölf Uhr."
     },
     {
-     "text": "Unser Lernmuseum ist heute geschlossen. Morgen können Sie uns wieder besuchen.",
-     "audio": "audio/eca46209a5fc.m4a"
+     "text": "Unser Lernmuseum ist heute geschlossen. Morgen können Sie uns wieder besuchen."
     },
     {
-     "text": "Elif sucht ihre blaue Tasche. Sie liegt nicht im Kursraum. Bitte schauen Sie am Empfang nach.",
-     "audio": "audio/53ab80912d3d.m4a"
+     "text": "Elif sucht ihre blaue Tasche. Sie liegt nicht im Kursraum. Bitte schauen Sie am Empfang nach."
     }
    ],
    "questions": [
@@ -357,16 +332,13 @@
    ],
    "sample": [
     {
-     "de": "Liebe Frau Thomsen,",
-     "audio": "audio/67446b1c8657.m4a"
+     "de": "Liebe Frau Thomsen,"
     },
     {
-     "de": "ich kann am Mittwoch nicht pünktlich zum Kurs kommen, weil ich um 10:30 Uhr einen Termin habe. Welche Hausaufgaben soll ich machen? Bitte schicken Sie mir die Aufgaben. Ich möchte sie zu Hause machen. Vielen Dank für Ihre Hilfe.",
-     "audio": "audio/d0a08eed3afe.m4a"
+     "de": "ich kann am Mittwoch nicht pünktlich zum Kurs kommen, weil ich um 10:30 Uhr einen Termin habe. Welche Hausaufgaben soll ich machen? Bitte schicken Sie mir die Aufgaben. Ich möchte sie zu Hause machen. Vielen Dank für Ihre Hilfe."
     },
     {
-     "de": "Viele Grüße",
-     "audio": "audio/faf8fee74cb4.m4a"
+     "de": "Viele Grüße"
     }
    ]
   },
@@ -378,16 +350,13 @@
    "word": "Wann? Warum? Was mitbringen?",
    "sample": [
     {
-     "de": "Ich möchte meinen Termin verschieben.",
-     "audio": "audio/9570b05959d3.m4a"
+     "de": "Ich möchte meinen Termin verschieben."
     },
     {
-     "de": "Wann passt es Ihnen?",
-     "audio": "audio/b84fccae4e4d.m4a"
+     "de": "Wann passt es Ihnen?"
     },
     {
-     "de": "Ich soll zuerst anrufen und die Zeit bestätigen.",
-     "audio": "audio/7344d46f7a9f.m4a"
+     "de": "Ich soll zuerst anrufen und die Zeit bestätigen."
     }
    ]
   }
@@ -606,8 +575,7 @@
       ],
       "punct": ".",
       "plain": "Ich soll mich am Empfang anmelden.",
-      "ru": "Мне сказали зарегистрироваться у стойки.",
-      "audio": "audio/406419a58bfb.m4a"
+      "ru": "Мне сказали зарегистрироваться у стойки."
      }
     ]
    }
@@ -664,8 +632,7 @@
       ],
       "punct": ".",
       "plain": "Ich soll mich am Empfang anmelden.",
-      "ru": "Мне сказали зарегистрироваться у стойки.",
-      "audio": "audio/406419a58bfb.m4a"
+      "ru": "Мне сказали зарегистрироваться у стойки."
      }
     ]
    }
@@ -722,8 +689,7 @@
       ],
       "punct": ".",
       "plain": "Ich soll mich am Empfang anmelden.",
-      "ru": "Мне сказали зарегистрироваться у стойки.",
-      "audio": "audio/406419a58bfb.m4a"
+      "ru": "Мне сказали зарегистрироваться у стойки."
      }
     ]
    }
@@ -779,8 +745,7 @@
       ],
       "punct": ".",
       "plain": "Ich soll mich am Empfang anmelden.",
-      "ru": "Мне сказали зарегистрироваться у стойки.",
-      "audio": "audio/406419a58bfb.m4a"
+      "ru": "Мне сказали зарегистрироваться у стойки."
      }
     ],
     "task": "message"
@@ -838,8 +803,7 @@
       ],
       "punct": ".",
       "plain": "Ich soll mich am Empfang anmelden.",
-      "ru": "Мне сказали зарегистрироваться у стойки.",
-      "audio": "audio/406419a58bfb.m4a"
+      "ru": "Мне сказали зарегистрироваться у стойки."
      }
     ],
     "task": "message"
@@ -887,8 +851,7 @@
       ],
       "punct": ".",
       "plain": "Ich soll mich am Empfang anmelden.",
-      "ru": "Мне сказали зарегистрироваться у стойки.",
-      "audio": "audio/406419a58bfb.m4a"
+      "ru": "Мне сказали зарегистрироваться у стойки."
      }
     ],
     "task": "message",
@@ -946,8 +909,7 @@
       ],
       "punct": ".",
       "plain": "Ich soll mich am Empfang anmelden.",
-      "ru": "Мне сказали зарегистрироваться у стойки.",
-      "audio": "audio/406419a58bfb.m4a"
+      "ru": "Мне сказали зарегистрироваться у стойки."
      }
     ],
     "task": "radio"
@@ -1005,8 +967,7 @@
       ],
       "punct": ".",
       "plain": "Ich soll mich am Empfang anmelden.",
-      "ru": "Мне сказали зарегистрироваться у стойки.",
-      "audio": "audio/406419a58bfb.m4a"
+      "ru": "Мне сказали зарегистрироваться у стойки."
      }
     ],
     "task": "radio"
@@ -1054,8 +1015,7 @@
       ],
       "punct": ".",
       "plain": "Ich soll mich am Empfang anmelden.",
-      "ru": "Мне сказали зарегистрироваться у стойки.",
-      "audio": "audio/406419a58bfb.m4a"
+      "ru": "Мне сказали зарегистрироваться у стойки."
      }
     ],
     "task": "radio",
@@ -1113,8 +1073,7 @@
       ],
       "punct": ".",
       "plain": "Ich soll mich am Empfang anmelden.",
-      "ru": "Мне сказали зарегистрироваться у стойки.",
-      "audio": "audio/406419a58bfb.m4a"
+      "ru": "Мне сказали зарегистрироваться у стойки."
      }
     ],
     "task": "letter",
@@ -1173,8 +1132,7 @@
       ],
       "punct": ".",
       "plain": "Ich soll mich am Empfang anmelden.",
-      "ru": "Мне сказали зарегистрироваться у стойки.",
-      "audio": "audio/406419a58bfb.m4a"
+      "ru": "Мне сказали зарегистрироваться у стойки."
      }
     ],
     "task": "letter",
@@ -1223,8 +1181,7 @@
       ],
       "punct": ".",
       "plain": "Ich soll mich am Empfang anmelden.",
-      "ru": "Мне сказали зарегистрироваться у стойки.",
-      "audio": "audio/406419a58bfb.m4a"
+      "ru": "Мне сказали зарегистрироваться у стойки."
      }
     ],
     "task": "letter",
@@ -1283,8 +1240,7 @@
       ],
       "punct": ".",
       "plain": "Ich soll mich am Empfang anmelden.",
-      "ru": "Мне сказали зарегистрироваться у стойки.",
-      "audio": "audio/406419a58bfb.m4a"
+      "ru": "Мне сказали зарегистрироваться у стойки."
      }
     ],
     "task": "talk",
@@ -1343,8 +1299,7 @@
       ],
       "punct": ".",
       "plain": "Ich soll mich am Empfang anmelden.",
-      "ru": "Мне сказали зарегистрироваться у стойки.",
-      "audio": "audio/406419a58bfb.m4a"
+      "ru": "Мне сказали зарегистрироваться у стойки."
      }
     ],
     "task": "talk",
@@ -1393,8 +1348,7 @@
       ],
       "punct": ".",
       "plain": "Ich soll mich am Empfang anmelden.",
-      "ru": "Мне сказали зарегистрироваться у стойки.",
-      "audio": "audio/406419a58bfb.m4a"
+      "ru": "Мне сказали зарегистрироваться у стойки."
      }
     ],
     "task": "talk",
@@ -1414,8 +1368,7 @@
     "dich"
    ],
    "answer": 0,
-   "why": "Первое лицо.",
-   "audio": "audio/f1041a62cd5f.m4a"
+   "why": "Первое лицо."
   },
   {
    "id": "a2-termine-2",
@@ -1427,8 +1380,7 @@
     "uns"
    ],
    "answer": 0,
-   "why": "Второе лицо.",
-   "audio": "audio/9b04c052cb3f.m4a"
+   "why": "Второе лицо."
   },
   {
    "id": "a2-termine-3",
@@ -1440,8 +1392,7 @@
     "euch"
    ],
    "answer": 0,
-   "why": "Третье лицо.",
-   "audio": "audio/38eb681f7618.m4a"
+   "why": "Третье лицо."
   },
   {
    "id": "a2-termine-4",
@@ -1453,8 +1404,7 @@
     "dich"
    ],
    "answer": 0,
-   "why": "Группа с говорящим.",
-   "audio": "audio/a7a1de0a660c.m4a"
+   "why": "Группа с говорящим."
   },
   {
    "id": "a2-termine-5",
@@ -1466,8 +1416,7 @@
     "angerufen"
    ],
    "answer": 0,
-   "why": "Инфинитив после soll.",
-   "audio": "audio/7bd02d943365.m4a"
+   "why": "Инфинитив после soll."
   },
   {
    "id": "a2-termine-6",
@@ -1479,8 +1428,7 @@
     "sollst"
    ],
    "answer": 0,
-   "why": "Ich soll.",
-   "audio": "audio/406419a58bfb.m4a"
+   "why": "Ich soll."
   },
   {
    "id": "a2-termine-7",
@@ -1489,8 +1437,7 @@
    "also": [
     "Gut fühle ich mich nicht."
    ],
-   "de": "Ich fühle mich nicht gut.",
-   "audio": "audio/f1041a62cd5f.m4a"
+   "de": "Ich fühle mich nicht gut."
   },
   {
    "id": "a2-termine-8",
@@ -1499,8 +1446,7 @@
    "also": [
     "Am Empfang melden wir uns an."
    ],
-   "de": "Wir melden uns am Empfang an.",
-   "audio": "audio/9d223c60d67b.m4a"
+   "de": "Wir melden uns am Empfang an."
   },
   {
    "id": "a2-termine-9",
@@ -1509,8 +1455,7 @@
    "also": [
     "Meinen Termin möchte ich verschieben."
    ],
-   "de": "Ich möchte meinen Termin verschieben.",
-   "audio": "audio/9570b05959d3.m4a"
+   "de": "Ich möchte meinen Termin verschieben."
   },
   {
    "id": "a2-termine-10",
@@ -1519,8 +1464,7 @@
    "also": [
     "Zuerst soll ich anrufen."
    ],
-   "de": "Ich soll zuerst anrufen.",
-   "audio": "audio/7bd02d943365.m4a"
+   "de": "Ich soll zuerst anrufen."
   },
   {
    "id": "a2-termine-11",
@@ -1530,8 +1474,7 @@
     "Bestätigen Sie bitte die neue Zeit.",
     "Bestätigen Sie die neue Zeit bitte."
    ],
-   "de": "Bitte bestätigen Sie die neue Zeit.",
-   "audio": "audio/ca513e866232.m4a"
+   "de": "Bitte bestätigen Sie die neue Zeit."
   },
   {
    "id": "a2-termine-12",
@@ -1540,8 +1483,7 @@
    "also": [
     "Dass ich später kommen soll, sagt sie."
    ],
-   "de": "Sie sagt, dass ich später kommen soll.",
-   "audio": "audio/5f17574c66f0.m4a"
+   "de": "Sie sagt, dass ich später kommen soll."
   }
  ],
  "case": {

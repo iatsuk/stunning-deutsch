@@ -70,13 +70,13 @@
      "who": "M",
      "de": "Hm … Viertel nach neun?",
      "ru": "Хм… четверть десятого?",
-     "audio": "audio/7988e7163d36.m4a"
+     "audio": "audio/0fd7a34a07bd.m4a"
     },
     {
      "who": "A",
      "de": "Genau. Und der Kurs fängt um neun an!",
      "ru": "Именно. А курс начинается в девять!",
-     "audio": "audio/d0f3a5fa0f44.m4a"
+     "audio": "audio/2206ab26d82c.m4a"
     },
     {
      "who": "M",
@@ -94,7 +94,7 @@
      "who": "M",
      "de": "Um sechs? Was machst du so früh?",
      "ru": "В шесть? Что ты делаешь так рано?",
-     "audio": "audio/11cb34130f4f.m4a"
+     "audio": "audio/1625a074c9b3.m4a"
     },
     {
      "who": "A",
@@ -106,19 +106,19 @@
      "who": "M",
      "de": "Ich frühstücke nicht. Ich trinke nur schnell einen Kaffee.",
      "ru": "А я не завтракаю. Только быстро выпиваю кофе.",
-     "audio": "audio/2d7a993332e8.m4a"
+     "audio": "audio/4fb1fe1f61a8.m4a"
     },
     {
      "who": "A",
      "de": "Morgen stehst du um sieben auf, okay?",
      "ru": "Завтра ты встаёшь в семь, хорошо?",
-     "audio": "audio/38a95e857943.m4a"
+     "audio": "audio/ae721b919ed7.m4a"
     },
     {
      "who": "M",
      "de": "Okay, okay … um sieben!",
      "ru": "Ладно, ладно… в семь!",
-     "audio": "audio/1b037989484a.m4a"
+     "audio": "audio/40bb9481bed2.m4a"
     }
    ]
   },
@@ -141,7 +141,7 @@
      "who": "A",
      "de": "Mateo, wann fängt deine Arbeit an?",
      "ru": "Матео, когда начинается твоя работа?",
-     "audio": "audio/a7d6d31493cd.m4a"
+     "audio": "audio/8a0e07994d91.m4a"
     },
     {
      "who": "M",
@@ -159,7 +159,7 @@
      "who": "M",
      "de": "Am Vormittag habe ich Kurs, am Mittag kaufe ich ein.",
      "ru": "До обеда у меня курс, в обед я хожу за покупками.",
-     "audio": "audio/2d3f7018d635.m4a"
+     "audio": "audio/48e5fe5d70b2.m4a"
     },
     {
      "who": "A",
@@ -171,19 +171,19 @@
      "who": "M",
      "de": "Um elf. Dann sehe ich noch ein bisschen fern.",
      "ru": "В одиннадцать. Потом ещё немного смотрю телевизор.",
-     "audio": "audio/575c876ff4d6.m4a"
+     "audio": "audio/3e996502d13c.m4a"
     },
     {
      "who": "A",
      "de": "Und am Wochenende?",
      "ru": "А в выходные?",
-     "audio": "audio/e141623ffd95.m4a"
+     "audio": "audio/9347f5a41caa.m4a"
     },
     {
      "who": "M",
      "de": "Am Samstag arbeite ich auch. Aber am Sonntag schlafe ich lange!",
      "ru": "В субботу я тоже работаю. Зато в воскресенье долго сплю!",
-     "audio": "audio/66aa2cbfdda5.m4a"
+     "audio": "audio/ae924ca4e2d3.m4a"
     }
    ]
   },
@@ -210,7 +210,7 @@
      "who": "H",
      "de": "Wann fangen wir am Sonntag an?",
      "ru": "Когда мы начинаем в воскресенье?",
-     "audio": "audio/4db9c6f37c41.m4a"
+     "audio": "audio/01b59c0bdf25.m4a"
     },
     {
      "who": "M",
@@ -228,7 +228,7 @@
      "who": "H",
      "de": "Ich rufe Mateo am Samstag an.",
      "ru": "Я позвоню Матео в субботу.",
-     "audio": "audio/b53dc6ec49a8.m4a"
+     "audio": "audio/07b230659c32.m4a"
     }
    ]
   }
@@ -259,7 +259,7 @@
      "gender": "f",
      "plural": "Uhren",
      "note": "Es ist acht Uhr.",
-     "audio": "audio/e43a89a4891a.m4a"
+     "audio": "audio/3a1082168a41.m4a"
     },
     {
      "de": "die Stunde",
@@ -267,14 +267,14 @@
      "gender": "f",
      "plural": "Stunden",
      "note": "drei Stunden",
-     "audio": "audio/042338c8c94f.m4a"
+     "audio": "audio/fac0baf08182.m4a"
     },
     {
      "de": "die Minute",
      "ru": "минута",
      "gender": "f",
      "plural": "Minuten",
-     "audio": "audio/ce38142471fa.m4a"
+     "audio": "audio/34fe05733e3c.m4a"
     },
     {
      "de": "das Viertel",
@@ -282,7 +282,7 @@
      "gender": "n",
      "plural": "Viertel",
      "note": "Viertel nach drei",
-     "audio": "audio/0f7dfc66a744.m4a"
+     "audio": "audio/ad5c16a6bddf.m4a"
     },
     {
      "de": "halb",
@@ -306,14 +306,14 @@
      "gender": null,
      "plural": null,
      "note": "Viertel vor neun = 8:45",
-     "audio": "audio/0e84ac67219f.m4a"
+     "audio": "audio/ae7b5f3006ce.m4a"
     },
     {
      "de": "früh",
      "ru": "рано",
      "gender": null,
      "plural": null,
-     "audio": "audio/f45abb8eb5fc.m4a"
+     "audio": "audio/1e7119b3c568.m4a"
     },
     {
      "de": "spät",
@@ -328,7 +328,7 @@
      "gender": null,
      "plural": null,
      "note": "Der Kurs dauert drei Stunden.",
-     "audio": "audio/093bc7c7e61a.m4a"
+     "audio": "audio/12b52ed58c69.m4a"
     }
    ]
   },
@@ -342,7 +342,7 @@
      "gender": "m",
      "plural": "Morgen",
      "note": "am Morgen",
-     "audio": "audio/d171243f6fc2.m4a"
+     "audio": "audio/2747c20807d6.m4a"
     },
     {
      "de": "der Vormittag",
@@ -350,7 +350,7 @@
      "gender": "m",
      "plural": "Vormittage",
      "note": "am Vormittag",
-     "audio": "audio/5d2431ea894f.m4a"
+     "audio": "audio/43f148010083.m4a"
     },
     {
      "de": "der Mittag",
@@ -358,7 +358,7 @@
      "gender": "m",
      "plural": "Mittage",
      "note": "am Mittag",
-     "audio": "audio/06f7cbc96971.m4a"
+     "audio": "audio/018086f6704b.m4a"
     },
     {
      "de": "der Nachmittag",
@@ -366,7 +366,7 @@
      "gender": "m",
      "plural": "Nachmittage",
      "note": "am Nachmittag",
-     "audio": "audio/9f4f14c3138f.m4a"
+     "audio": "audio/f39cae06deb0.m4a"
     },
     {
      "de": "der Abend",
@@ -374,7 +374,7 @@
      "gender": "m",
      "plural": "Abende",
      "note": "am Abend",
-     "audio": "audio/9acc6070ebe3.m4a"
+     "audio": "audio/da420ceb2798.m4a"
     },
     {
      "de": "die Nacht",
@@ -382,7 +382,7 @@
      "gender": "f",
      "plural": "Nächte",
      "note": "in der Nacht",
-     "audio": "audio/475dec7295cd.m4a"
+     "audio": "audio/28954177a2f3.m4a"
     }
    ]
   },
@@ -395,56 +395,56 @@
      "ru": "понедельник",
      "gender": "m",
      "plural": "Montage",
-     "audio": "audio/5dc2ecff374c.m4a"
+     "audio": "audio/578094fead94.m4a"
     },
     {
      "de": "der Dienstag",
      "ru": "вторник",
      "gender": "m",
      "plural": "Dienstage",
-     "audio": "audio/d5c86662b665.m4a"
+     "audio": "audio/b2685c2cdeb8.m4a"
     },
     {
      "de": "der Mittwoch",
      "ru": "среда",
      "gender": "m",
      "plural": "Mittwoche",
-     "audio": "audio/a6a7d4b35143.m4a"
+     "audio": "audio/85ae66c2091a.m4a"
     },
     {
      "de": "der Donnerstag",
      "ru": "четверг",
      "gender": "m",
      "plural": "Donnerstage",
-     "audio": "audio/e7f720753467.m4a"
+     "audio": "audio/ac202a9b2d38.m4a"
     },
     {
      "de": "der Freitag",
      "ru": "пятница",
      "gender": "m",
      "plural": "Freitage",
-     "audio": "audio/c8c16c62ba70.m4a"
+     "audio": "audio/4e453f1e05ef.m4a"
     },
     {
      "de": "der Samstag",
      "ru": "суббота",
      "gender": "m",
      "plural": "Samstage",
-     "audio": "audio/15f43d97309a.m4a"
+     "audio": "audio/c91767b8b309.m4a"
     },
     {
      "de": "der Sonntag",
      "ru": "воскресенье",
      "gender": "m",
      "plural": "Sonntage",
-     "audio": "audio/3a7b2c026b0d.m4a"
+     "audio": "audio/63443c7eb253.m4a"
     },
     {
      "de": "die Woche",
      "ru": "неделя",
      "gender": "f",
      "plural": "Wochen",
-     "audio": "audio/1f75f8bdea9f.m4a"
+     "audio": "audio/ce4e4c371a06.m4a"
     },
     {
      "de": "das Wochenende",
@@ -452,14 +452,14 @@
      "gender": "n",
      "plural": "Wochenenden",
      "note": "am Wochenende",
-     "audio": "audio/9e5e18925cf3.m4a"
+     "audio": "audio/209366eb46eb.m4a"
     },
     {
      "de": "heute",
      "ru": "сегодня",
      "gender": null,
      "plural": null,
-     "audio": "audio/5327a7b12d97.m4a"
+     "audio": "audio/7b3f61404807.m4a"
     },
     {
      "de": "morgen",
@@ -467,7 +467,7 @@
      "gender": null,
      "plural": null,
      "note": "morgen früh — завтра утром",
-     "audio": "audio/fae4533b53d9.m4a"
+     "audio": "audio/14e2bb0d51ed.m4a"
     }
    ]
   },
@@ -481,7 +481,7 @@
      "gender": null,
      "plural": null,
      "note": "ich stehe auf",
-     "audio": "audio/5832a3dac46d.m4a"
+     "audio": "audio/29b14f58d712.m4a"
     },
     {
      "de": "frühstücken",
@@ -489,14 +489,14 @@
      "gender": null,
      "plural": null,
      "note": "ich frühstücke",
-     "audio": "audio/60c3c835cbbe.m4a"
+     "audio": "audio/bdda0c82320b.m4a"
     },
     {
      "de": "duschen",
      "ru": "принимать душ",
      "gender": null,
      "plural": null,
-     "audio": "audio/580050dad9b2.m4a"
+     "audio": "audio/7814b7a2e9a9.m4a"
     },
     {
      "de": "anfangen",
@@ -504,7 +504,7 @@
      "gender": null,
      "plural": null,
      "note": "der Kurs fängt an",
-     "audio": "audio/c6a85e2ac863.m4a"
+     "audio": "audio/279dacb72ea7.m4a"
     },
     {
      "de": "aufhören",
@@ -512,7 +512,7 @@
      "gender": null,
      "plural": null,
      "note": "der Kurs hört auf",
-     "audio": "audio/0be6f964aa16.m4a"
+     "audio": "audio/0f8e3ed30f46.m4a"
     },
     {
      "de": "arbeiten",
@@ -520,7 +520,7 @@
      "gender": null,
      "plural": null,
      "note": "du arbeitest",
-     "audio": "audio/01203e1d1997.m4a"
+     "audio": "audio/42150bfb4110.m4a"
     },
     {
      "de": "einkaufen",
@@ -528,14 +528,14 @@
      "gender": null,
      "plural": null,
      "note": "ich kaufe ein",
-     "audio": "audio/1ef7fa29aedf.m4a"
+     "audio": "audio/058a3d64b804.m4a"
     },
     {
      "de": "kochen",
      "ru": "готовить",
      "gender": null,
      "plural": null,
-     "audio": "audio/d471b84fe343.m4a"
+     "audio": "audio/23898d974424.m4a"
     },
     {
      "de": "aufräumen",
@@ -543,7 +543,7 @@
      "gender": null,
      "plural": null,
      "note": "ich räume auf",
-     "audio": "audio/243d905c12a6.m4a"
+     "audio": "audio/e9e5e05386a7.m4a"
     },
     {
      "de": "anrufen",
@@ -551,7 +551,7 @@
      "gender": null,
      "plural": null,
      "note": "ich rufe dich an",
-     "audio": "audio/20e4b3322465.m4a"
+     "audio": "audio/dcce8f28c08b.m4a"
     },
     {
      "de": "fernsehen",
@@ -559,7 +559,7 @@
      "gender": null,
      "plural": null,
      "note": "er sieht fern",
-     "audio": "audio/17ba850516a1.m4a"
+     "audio": "audio/ef09b37894e7.m4a"
     },
     {
      "de": "schlafen",
@@ -567,14 +567,14 @@
      "gender": null,
      "plural": null,
      "note": "du schläfst",
-     "audio": "audio/5583767a3b94.m4a"
+     "audio": "audio/694c18f32e34.m4a"
     },
     {
      "de": "der Feierabend",
      "ru": "конец рабочего дня",
      "gender": "m",
      "plural": "Feierabende",
-     "audio": "audio/dbf107836048.m4a"
+     "audio": "audio/7f804c47a312.m4a"
     }
    ]
   }
@@ -691,7 +691,7 @@
     "Um 13.00 Uhr."
    ],
    "answer": 1,
-   "audio": "audio/676da2eb35d9.m4a",
+   "audio": "audio/e876eb09bb72.m4a",
    "sample": []
   },
   "buero": {
@@ -923,7 +923,7 @@
      "formal": "sechs Uhr",
      "informal": "sechs",
      "audio": [
-      "audio/a8fd8b5187a6.m4a",
+      "audio/b6b0a12abbee.m4a",
       "audio/58e6dc7272dd.m4a"
      ]
     }
@@ -949,7 +949,7 @@
      "informal": "halb sieben",
      "audio": [
       "audio/e7e655503db2.m4a",
-      "audio/bc1e1baef0c3.m4a"
+      "audio/c552c1843c7b.m4a"
      ]
     }
    }
@@ -974,7 +974,7 @@
      "informal": "Viertel vor neun",
      "audio": [
       "audio/e70894463042.m4a",
-      "audio/2d3db1e487ce.m4a"
+      "audio/0daad30bf2f1.m4a"
      ]
     }
    }
@@ -1694,7 +1694,7 @@
       "punct": "?",
       "plain": "Wann siehst du fern?",
       "ru": "Когда ты смотришь телевизор?",
-      "audio": "audio/cb0843a52984.m4a"
+      "audio": "audio/20092dff3ee6.m4a"
      }
     ]
    }
@@ -1759,7 +1759,7 @@
       "punct": ".",
       "plain": "Ich rufe dich morgen an.",
       "ru": "Я позвоню тебе завтра.",
-      "audio": "audio/ed09514ce91c.m4a"
+      "audio": "audio/e61d73b2b151.m4a"
      }
     ]
    }
@@ -1823,7 +1823,7 @@
       "punct": ".",
       "plain": "Ich rufe dich morgen an.",
       "ru": "Я позвоню тебе завтра.",
-      "audio": "audio/ed09514ce91c.m4a"
+      "audio": "audio/e61d73b2b151.m4a"
      }
     ],
     "task": "nachricht"
@@ -1889,7 +1889,7 @@
       "punct": ".",
       "plain": "Ich rufe dich morgen an.",
       "ru": "Я позвоню тебе завтра.",
-      "audio": "audio/ed09514ce91c.m4a"
+      "audio": "audio/e61d73b2b151.m4a"
      }
     ],
     "task": "nachricht",
@@ -1955,7 +1955,7 @@
       "punct": ".",
       "plain": "Ich rufe dich morgen an.",
       "ru": "Я позвоню тебе завтра.",
-      "audio": "audio/ed09514ce91c.m4a"
+      "audio": "audio/e61d73b2b151.m4a"
      }
     ],
     "task": "buero"
@@ -2021,7 +2021,7 @@
       "punct": ".",
       "plain": "Ich rufe dich morgen an.",
       "ru": "Я позвоню тебе завтра.",
-      "audio": "audio/ed09514ce91c.m4a"
+      "audio": "audio/e61d73b2b151.m4a"
      }
     ],
     "task": "buero",
@@ -2090,7 +2090,7 @@
    ],
    "answer": 1,
    "why": "Время по часам — с *um*.",
-   "audio": "audio/4dc27f6835b4.m4a"
+   "audio": "audio/a40e2036a8a3.m4a"
   },
   {
    "id": "tagesablauf-6",
@@ -2139,7 +2139,7 @@
    ],
    "hint": "anfangen",
    "why": "*anfangen* меняет *a* на *ä*: *du fängst an*, *er fängt an*.",
-   "audio": "audio/cd918685eb34.m4a"
+   "audio": "audio/f2772eea2019.m4a"
   },
   {
    "id": "tagesablauf-10",
@@ -2151,7 +2151,7 @@
    ],
    "hint": "fernsehen",
    "why": "*sehen* → *er sieht*, приставка *fern* — в конце.",
-   "audio": "audio/3ce0e55ea2f3.m4a"
+   "audio": "audio/17364899cba2.m4a"
   },
   {
    "id": "tagesablauf-11",
@@ -2164,7 +2164,7 @@
    "hint": "einkaufen",
    "ru": "Ты сегодня пойдёшь за покупками?",
    "why": "Вопрос да/нет: корень первым, *ein* — в конце.",
-   "audio": "audio/9f8ba0c40e00.m4a"
+   "audio": "audio/d410e379d5fa.m4a"
   },
   {
    "id": "tagesablauf-12",
@@ -2177,7 +2177,7 @@
    ],
    "answer": 1,
    "why": "*anrufen* + винительный: *Ich rufe dich an*. «Звоню тебе» по-русски — дательный, отсюда ошибка.",
-   "audio": "audio/ed09514ce91c.m4a"
+   "audio": "audio/e61d73b2b151.m4a"
   },
   {
    "id": "tagesablauf-13",
@@ -2199,7 +2199,7 @@
    "also": [
     "Um neun fängt der Kurs an."
    ],
-   "audio": "audio/8a484220f8c1.m4a"
+   "audio": "audio/9be18599316c.m4a"
   },
   {
    "id": "tagesablauf-15",
@@ -2229,7 +2229,7 @@
     "Um halb sechs fangen wir am Sonntag an."
    ],
    "why": "*anfangen*: *fangen* спрягается, *an* завершает рамку.",
-   "audio": "audio/fabd95314499.m4a"
+   "audio": "audio/c5e34789d7f1.m4a"
   },
   {
    "id": "tagesablauf-18",
@@ -2267,7 +2267,7 @@
       "who": "P",
       "de": "Am Freitag fängt der Kurs erst um halb elf an, nicht um neun Uhr.",
       "ru": "В пятницу курс начинается только в половине одиннадцатого, не в девять.",
-      "audio": "audio/16304145e023.m4a"
+      "audio": "audio/bd956cdf757d.m4a"
      }
     ],
     "question": "Какое начало курса записать в актуальный план?",
@@ -2292,7 +2292,7 @@
       "who": "J",
       "de": "Am Sonntag um halb sechs am Nachmittag. Nicht um halb sieben.",
       "ru": "В воскресенье в половине шестого дня. Не в половине седьмого.",
-      "audio": "audio/324040f74425.m4a"
+      "audio": "audio/bd102221fe78.m4a"
      }
     ],
     "question": "Когда встречается команда?",
@@ -2379,12 +2379,12 @@
      },
      {
       "de": "Morgen stehst du um sieben auf, okay?",
-      "audio": "audio/38a95e857943.m4a",
+      "audio": "audio/ae721b919ed7.m4a",
       "name": "Dana"
      },
      {
       "de": "Okay, okay … um sieben!",
-      "audio": "audio/1b037989484a.m4a",
+      "audio": "audio/40bb9481bed2.m4a",
       "name": "Mateo"
      }
     ],
@@ -2453,7 +2453,7 @@
     "quotes": [
      {
       "de": "Guten Tag, hier ist Kerstin Petersen von der Sprachschule Förde. Eine Information für den Kurs A1: Am Freitag fängt der Kurs erst um halb elf an, nicht um neun Uhr. Er hört dann um ein Uhr auf. Vielen Dank und auf Wiederhören!",
-      "audio": "audio/676da2eb35d9.m4a",
+      "audio": "audio/e876eb09bb72.m4a",
       "name": "Hören, Teil 3"
      }
     ],
@@ -2504,7 +2504,7 @@
     "quotes": [
      {
       "de": "Wann fangen wir am Sonntag an?",
-      "audio": "audio/4db9c6f37c41.m4a",
+      "audio": "audio/01b59c0bdf25.m4a",
       "name": "Hauke"
      },
      {

@@ -67,50 +67,42 @@
     {
      "who": "E",
      "de": "Ich finde auf dem Computer nur die Bilder vom Nachmittag.",
-     "ru": "На компьютере я нахожу только фотографии второй половины дня.",
-     "audio": "audio/415f1c3a21a8.m4a"
+     "ru": "На компьютере я нахожу только фотографии второй половины дня."
     },
     {
      "who": "D",
      "de": "Du hattest am Vormittag mit dem Handy fotografiert.",
-     "ru": "Утром ты фотографировала на телефон.",
-     "audio": "audio/15d463f6ee2f.m4a"
+     "ru": "Утром ты фотографировала на телефон."
     },
     {
      "who": "E",
      "de": "Stimmt. Ich hatte die Kamera zu Hause vergessen.",
-     "ru": "Верно. Я забыла камеру дома.",
-     "audio": "audio/6f83b545399c.m4a"
+     "ru": "Верно. Я забыла камеру дома."
     },
     {
      "who": "M",
      "de": "Und ich hatte das Brot schon am Abend vorbereitet.",
-     "ru": "А я подготовил хлеб ещё вечером.",
-     "audio": "audio/98f71e91bc3e.m4a"
+     "ru": "А я подготовил хлеб ещё вечером."
     },
     {
      "who": "H",
      "de": "Nachdem wir in Lübeck angekommen waren, frühstückten wir am Wasser.",
-     "ru": "После того как мы приехали в Любек, мы позавтракали у воды.",
-     "audio": "audio/7110e62e1842.m4a"
+     "ru": "После того как мы приехали в Любек, мы позавтракали у воды."
     },
     {
      "who": "D",
      "de": "Die Museumskarten hattest du vorher gekauft.",
-     "ru": "Билеты в музей ты купила заранее.",
-     "audio": "audio/039a48e19583.m4a"
+     "ru": "Билеты в музей ты купила заранее."
     },
     {
      "who": "E",
      "de": "Jetzt sehe ich die Handyfotos. Ich hatte sie noch nicht auf den Computer kopiert.",
-     "ru": "Теперь вижу фотографии на телефоне. Я ещё не скопировала их на компьютер.",
-     "audio": "audio/bf928a60511e.m4a"
+     "ru": "Теперь вижу фотографии на телефоне. Я ещё не скопировала их на компьютер."
     },
     {
      "who": "H",
      "de": "Dann fehlen keine Bilder. Wir korrigieren die Notiz.",
-     "ru": "Тогда фотографии не потеряны. Исправим заметку.",
-     "audio": "audio/27c57c877c99.m4a"
+     "ru": "Тогда фотографии не потеряны. Исправим заметку."
     }
    ]
   }
@@ -124,108 +116,93 @@
      "de": "die Vorgeschichte",
      "ru": "предыстория",
      "gender": "f",
-     "plural": "Vorgeschichten",
-     "audio": "audio/6e4669289ed7.m4a"
+     "plural": "Vorgeschichten"
     },
     {
      "de": "der Ordner",
      "ru": "папка",
      "gender": "m",
-     "plural": "Ordner",
-     "audio": "audio/6feadde4219a.m4a"
+     "plural": "Ordner"
     },
     {
      "de": "die Datei",
      "ru": "файл",
      "gender": "f",
-     "plural": "Dateien",
-     "audio": "audio/e561c13db3fd.m4a"
+     "plural": "Dateien"
     },
     {
      "de": "die Herkunft",
      "ru": "происхождение",
      "gender": "f",
      "plural": null,
-     "noPlural": true,
-     "audio": "audio/b1d4e53ac625.m4a"
+     "noPlural": true
     },
     {
      "de": "die Erlaubnis",
      "ru": "разрешение",
      "gender": "f",
      "plural": null,
-     "noPlural": true,
-     "audio": "audio/d1dd5650b930.m4a"
+     "noPlural": true
     },
     {
      "de": "der Vorabend",
      "ru": "предыдущий вечер",
      "gender": "m",
-     "plural": "Vorabende",
-     "audio": "audio/e05f0bf5b4e3.m4a"
+     "plural": "Vorabende"
     },
     {
      "de": "der Schreibtisch",
      "ru": "письменный стол",
      "gender": "m",
-     "plural": "Schreibtische",
-     "audio": "audio/f187334c8366.m4a"
+     "plural": "Schreibtische"
     },
     {
      "de": "der Rucksack",
      "ru": "рюкзак",
      "gender": "m",
-     "plural": "Rucksäcke",
-     "audio": "audio/71c1c1309faf.m4a"
+     "plural": "Rucksäcke"
     },
     {
      "de": "kopieren",
      "ru": "копировать",
      "gender": null,
-     "plural": null,
-     "audio": "audio/a362a739399b.m4a"
+     "plural": null
     },
     {
      "de": "speichern",
      "ru": "сохранять",
      "gender": null,
-     "plural": null,
-     "audio": "audio/c77b57c80f36.m4a"
+     "plural": null
     },
     {
      "de": "vergessen",
      "ru": "забывать",
      "gender": null,
-     "plural": null,
-     "audio": "audio/31c4fdf36187.m4a"
+     "plural": null
     },
     {
      "de": "vorhanden",
      "ru": "имеется в наличии",
      "gender": null,
-     "plural": null,
-     "audio": "audio/1095c274d3cf.m4a"
+     "plural": null
     },
     {
      "de": "angeblich",
      "ru": "якобы",
      "gender": null,
-     "plural": null,
-     "audio": "audio/b693397dd842.m4a"
+     "plural": null
     },
     {
      "de": "vorher",
      "ru": "до этого",
      "gender": null,
-     "plural": null,
-     "audio": "audio/7649c4fd1399.m4a"
+     "plural": null
     },
     {
      "de": "weitergeben",
      "ru": "передавать дальше",
      "gender": null,
-     "plural": null,
-     "audio": "audio/cfc7c92832ac.m4a"
+     "plural": null
     }
    ]
   }
@@ -344,8 +321,7 @@
    "situation": "Antworten Sie auf alle vier Punkte mit Anrede und Gruß. Erklären Sie die Vorgeschichte in verständlichen Sätzen.",
    "sample": [
     {
-     "de": "Liebe Dana, ich habe die Bilder vom Vormittag gefunden. Ich hatte zuerst nur den Ordner auf meinem Computer geöffnet. Die Handyfotos waren dort noch nicht gespeichert. In Lübeck habe ich mit dem Handy fotografiert, weil ich meine Kamera zu Hause vergessen hatte. Für unser Album möchte ich gern auch zwei deiner Strandfotos verwenden. Sie zeigen unsere gemeinsame Pause sehr schön. Bist du damit einverstanden? Welche Bildunterschrift passt für dich? Bitte schreib mir, wie ich deinen Namen nennen soll. Vielen Dank und liebe Grüße Elif",
-     "audio": "audio/e2c4b15c8e6e.m4a"
+     "de": "Liebe Dana, ich habe die Bilder vom Vormittag gefunden. Ich hatte zuerst nur den Ordner auf meinem Computer geöffnet. Die Handyfotos waren dort noch nicht gespeichert. In Lübeck habe ich mit dem Handy fotografiert, weil ich meine Kamera zu Hause vergessen hatte. Für unser Album möchte ich gern auch zwei deiner Strandfotos verwenden. Sie zeigen unsere gemeinsame Pause sehr schön. Bist du damit einverstanden? Welche Bildunterschrift passt für dich? Bitte schreib mir, wie ich deinen Namen nennen soll. Vielen Dank und liebe Grüße Elif"
     }
    ]
   }
@@ -543,8 +519,7 @@
       ],
       "punct": ".",
       "plain": "Nachdem wir angekommen waren, frühstückten wir.",
-      "ru": "После прибытия мы позавтракали.",
-      "audio": "audio/8dc8170a4a73.m4a"
+      "ru": "После прибытия мы позавтракали."
      }
     ]
    }
@@ -601,8 +576,7 @@
       ],
       "punct": ".",
       "plain": "Nachdem wir angekommen waren, frühstückten wir.",
-      "ru": "После прибытия мы позавтракали.",
-      "audio": "audio/8dc8170a4a73.m4a"
+      "ru": "После прибытия мы позавтракали."
      }
     ]
    }
@@ -659,8 +633,7 @@
       ],
       "punct": ".",
       "plain": "Nachdem wir angekommen waren, frühstückten wir.",
-      "ru": "После прибытия мы позавтракали.",
-      "audio": "audio/8dc8170a4a73.m4a"
+      "ru": "После прибытия мы позавтракали."
      }
     ]
    }
@@ -716,8 +689,7 @@
       ],
       "punct": ".",
       "plain": "Nachdem wir angekommen waren, frühstückten wir.",
-      "ru": "После прибытия мы позавтракали.",
-      "audio": "audio/8dc8170a4a73.m4a"
+      "ru": "После прибытия мы позавтракали."
      }
     ],
     "task": "article"
@@ -775,8 +747,7 @@
       ],
       "punct": ".",
       "plain": "Nachdem wir angekommen waren, frühstückten wir.",
-      "ru": "После прибытия мы позавтракали.",
-      "audio": "audio/8dc8170a4a73.m4a"
+      "ru": "После прибытия мы позавтракали."
      }
     ],
     "task": "article"
@@ -824,8 +795,7 @@
       ],
       "punct": ".",
       "plain": "Nachdem wir angekommen waren, frühstückten wir.",
-      "ru": "После прибытия мы позавтракали.",
-      "audio": "audio/8dc8170a4a73.m4a"
+      "ru": "После прибытия мы позавтракали."
      }
     ],
     "task": "article",
@@ -883,8 +853,7 @@
       ],
       "punct": ".",
       "plain": "Nachdem wir angekommen waren, frühstückten wir.",
-      "ru": "После прибытия мы позавтракали.",
-      "audio": "audio/8dc8170a4a73.m4a"
+      "ru": "После прибытия мы позавтракали."
      }
     ],
     "task": "timeline"
@@ -942,8 +911,7 @@
       ],
       "punct": ".",
       "plain": "Nachdem wir angekommen waren, frühstückten wir.",
-      "ru": "После прибытия мы позавтракали.",
-      "audio": "audio/8dc8170a4a73.m4a"
+      "ru": "После прибытия мы позавтракали."
      }
     ],
     "task": "timeline"
@@ -991,8 +959,7 @@
       ],
       "punct": ".",
       "plain": "Nachdem wir angekommen waren, frühstückten wir.",
-      "ru": "После прибытия мы позавтракали.",
-      "audio": "audio/8dc8170a4a73.m4a"
+      "ru": "После прибытия мы позавтракали."
      }
     ],
     "task": "timeline",
@@ -1050,8 +1017,7 @@
       ],
       "punct": ".",
       "plain": "Nachdem wir angekommen waren, frühstückten wir.",
-      "ru": "После прибытия мы позавтракали.",
-      "audio": "audio/8dc8170a4a73.m4a"
+      "ru": "После прибытия мы позавтракали."
      }
     ],
     "task": "letter",
@@ -1110,8 +1076,7 @@
       ],
       "punct": ".",
       "plain": "Nachdem wir angekommen waren, frühstückten wir.",
-      "ru": "После прибытия мы позавтракали.",
-      "audio": "audio/8dc8170a4a73.m4a"
+      "ru": "После прибытия мы позавтракали."
      }
     ],
     "task": "letter",
@@ -1160,8 +1125,7 @@
       ],
       "punct": ".",
       "plain": "Nachdem wir angekommen waren, frühstückten wir.",
-      "ru": "После прибытия мы позавтракали.",
-      "audio": "audio/8dc8170a4a73.m4a"
+      "ru": "После прибытия мы позавтракали."
      }
     ],
     "task": "letter",
@@ -1181,8 +1145,7 @@
     "wurde"
    ],
    "answer": 0,
-   "why": "Vergessen с haben.",
-   "audio": "audio/200022e85162.m4a"
+   "why": "Vergessen с haben."
   },
   {
    "id": "b1-vorgeschichte-2",
@@ -1194,8 +1157,7 @@
     "haben"
    ],
    "answer": 0,
-   "why": "Ankommen с sein.",
-   "audio": "audio/14f0055ddbcf.m4a"
+   "why": "Ankommen с sein."
   },
   {
    "id": "b1-vorgeschichte-3",
@@ -1207,8 +1169,7 @@
     "hatten"
    ],
    "answer": 1,
-   "why": "Plusquamperfekt в более ранней части.",
-   "audio": "audio/8dc8170a4a73.m4a"
+   "why": "Plusquamperfekt в более ранней части."
   },
   {
    "id": "b1-vorgeschichte-4",
@@ -1220,8 +1181,7 @@
     "kopierte"
    ],
    "answer": 0,
-   "why": "Нужно Partizip II.",
-   "audio": "audio/3fcbf10a77a1.m4a"
+   "why": "Нужно Partizip II."
   },
   {
    "id": "b1-vorgeschichte-5",
@@ -1255,8 +1215,7 @@
    "also": [
     "Die Kamera hatte sie zu Hause vergessen.",
     "Zu Hause hatte sie die Kamera vergessen."
-   ],
-   "audio": "audio/f1b413711e2f.m4a"
+   ]
   },
   {
    "id": "b1-vorgeschichte-8",
@@ -1265,8 +1224,7 @@
    "ru": "Мы приехали в Любек раньше этого момента.",
    "also": [
     "In Lübeck waren wir angekommen."
-   ],
-   "audio": "audio/80f62f991251.m4a"
+   ]
   },
   {
    "id": "b1-vorgeschichte-9",
@@ -1275,8 +1233,7 @@
    "ru": "После прибытия мы позавтракали.",
    "also": [
     "Wir frühstückten, nachdem wir angekommen waren."
-   ],
-   "audio": "audio/8dc8170a4a73.m4a"
+   ]
   },
   {
    "id": "b1-vorgeschichte-10",
@@ -1285,8 +1242,7 @@
    "ru": "Я ещё не скопировала фотографии.",
    "also": [
     "Die Bilder hatte ich noch nicht kopiert."
-   ],
-   "audio": "audio/a961a5031a9e.m4a"
+   ]
   },
   {
    "id": "b1-vorgeschichte-11",
@@ -1295,8 +1251,7 @@
    "ru": "Фотографии имеются на телефоне.",
    "also": [
     "Auf dem Handy sind die Fotos vorhanden."
-   ],
-   "audio": "audio/550b05db84f1.m4a"
+   ]
   },
   {
    "id": "b1-vorgeschichte-12",
@@ -1305,8 +1260,7 @@
    "ru": "Можно использовать твои фото в альбоме?",
    "also": [
     "Darf ich im Album deine Fotos verwenden?"
-   ],
-   "audio": "audio/0c82af411628.m4a"
+   ]
   }
  ],
  "case": {

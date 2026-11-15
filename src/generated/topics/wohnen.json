@@ -66,13 +66,13 @@
      "who": "M",
      "de": "Dana, Lucía und Diego suchen eine Wohnung. Ihr Zimmer ist zu klein.",
      "ru": "Дана, Лусия и Диего ищут квартиру. Их комната слишком маленькая.",
-     "audio": "audio/a5bcaf7a2778.m4a"
+     "audio": "audio/dcf94a63e247.m4a"
     },
     {
      "who": "A",
      "de": "Hier ist eine Anzeige: zwei Zimmer, Küche, Bad und Balkon!",
      "ru": "Вот объявление — две комнаты, кухня, ванная и балкон!",
-     "audio": "audio/66f09ad8f0cb.m4a"
+     "audio": "audio/a20609cf10ed.m4a"
     },
     {
      "who": "M",
@@ -84,7 +84,7 @@
      "who": "A",
      "de": "450 Euro kalt, plus 130 Euro Nebenkosten.",
      "ru": "450 евро «холодными» плюс 130 евро коммунальных.",
-     "audio": "audio/62a6f5ca1742.m4a"
+     "audio": "audio/e7ba8aa27e10.m4a"
     },
     {
      "who": "M",
@@ -96,7 +96,7 @@
      "who": "A",
      "de": "Hier ist die Kaltmiete nur die Miete. Heizung und Wasser kosten extra.",
      "ru": "Здесь холодная аренда — только плата за квартиру. Отопление и вода оплачиваются отдельно.",
-     "audio": "audio/6e10c9fe1b9d.m4a"
+     "audio": "audio/b36bd63b8e0f.m4a"
     },
     {
      "who": "M",
@@ -114,7 +114,7 @@
      "who": "M",
      "de": "Super, ich rufe gleich an!",
      "ru": "Супер, сейчас же позвоню!",
-     "audio": "audio/088cc6922c76.m4a"
+     "audio": "audio/0d668be55860.m4a"
     }
    ]
   },
@@ -137,25 +137,25 @@
      "who": "K",
      "de": "Guten Tag, Herr Fernández! Hier ist der Flur, und links ist das Wohnzimmer.",
      "ru": "Добрый день, господин Фернандес! Вот прихожая, а слева гостиная.",
-     "audio": "audio/1bca17edbd25.m4a"
+     "audio": "audio/d121e366b73a.m4a"
     },
     {
      "who": "M",
      "de": "Oh, das Wohnzimmer ist groß und hell!",
      "ru": "О, гостиная большая и светлая!",
-     "audio": "audio/d6cdd3127e74.m4a"
+     "audio": "audio/bca95b79f184.m4a"
     },
     {
      "who": "K",
      "de": "Ja, und hier ist der Balkon. Auf dem Balkon haben Sie am Nachmittag Sonne.",
      "ru": "Да, а вот балкон. После обеда на балконе солнце.",
-     "audio": "audio/f355a7bc1a10.m4a"
+     "audio": "audio/0472aa55b775.m4a"
     },
     {
      "who": "M",
      "de": "Toll! Und wo ist die Küche?",
      "ru": "Здорово! А где кухня?",
-     "audio": "audio/79ca7dc6aaa4.m4a"
+     "audio": "audio/5957b602e05e.m4a"
     },
     {
      "who": "K",
@@ -173,7 +173,7 @@
      "who": "K",
      "de": "Nein, sie steht im Keller. Das Bad ist klein, aber modern.",
      "ru": "Нет, она стоит в подвале. Ванная маленькая, но современная.",
-     "audio": "audio/359cc1bd702c.m4a"
+     "audio": "audio/27c4e1ed1b6b.m4a"
     },
     {
      "who": "M",
@@ -191,7 +191,7 @@
      "who": "M",
      "de": "Ich finde sie gut. Ich rufe Lucía und Diego an.",
      "ru": "Квартира мне нравится. Я позвоню Лусии и Диего.",
-     "audio": "audio/ea2cf32d074a.m4a"
+     "audio": "audio/8c7234e93fae.m4a"
     }
    ]
   }
@@ -206,21 +206,21 @@
      "ru": "квартира",
      "gender": "f",
      "plural": "Wohnungen",
-     "audio": "audio/51cba7a37dfc.m4a"
+     "audio": "audio/8060611db543.m4a"
     },
     {
      "de": "das Haus",
      "ru": "дом, здание",
      "gender": "n",
      "plural": "Häuser",
-     "audio": "audio/6241f55a929b.m4a"
+     "audio": "audio/cf0914e0e056.m4a"
     },
     {
      "de": "das Zimmer",
      "ru": "комната",
      "gender": "n",
      "plural": "Zimmer",
-     "audio": "audio/0a24d45ed99e.m4a"
+     "audio": "audio/47cdae5617d7.m4a"
     },
     {
      "de": "das Wohnzimmer",
@@ -228,7 +228,7 @@
      "gender": "n",
      "plural": "Wohnzimmer",
      "note": "wohnen + das Zimmer",
-     "audio": "audio/980a92f26afc.m4a"
+     "audio": "audio/67764d160864.m4a"
     },
     {
      "de": "das Schlafzimmer",
@@ -236,7 +236,7 @@
      "gender": "n",
      "plural": "Schlafzimmer",
      "note": "schlafen + das Zimmer",
-     "audio": "audio/087a2dd36365.m4a"
+     "audio": "audio/519f7f6b0dcc.m4a"
     },
     {
      "de": "die Küche",
@@ -244,7 +244,7 @@
      "gender": "f",
      "plural": "Küchen",
      "note": "in der Küche — на кухне",
-     "audio": "audio/55c93c8a5fd2.m4a"
+     "audio": "audio/2b92de26a2d4.m4a"
     },
     {
      "de": "das Bad",
@@ -252,14 +252,14 @@
      "gender": "n",
      "plural": "Bäder",
      "note": "полностью — das Badezimmer",
-     "audio": "audio/16b452fa013d.m4a"
+     "audio": "audio/a5c7a59a85d0.m4a"
     },
     {
      "de": "der Flur",
      "ru": "прихожая",
      "gender": "m",
      "plural": "Flure",
-     "audio": "audio/80cb6c0b932d.m4a"
+     "audio": "audio/10b39b71ff5e.m4a"
     },
     {
      "de": "der Balkon",
@@ -267,7 +267,7 @@
      "gender": "m",
      "plural": "Balkone",
      "note": "auf dem Balkon",
-     "audio": "audio/973ff8c0b9b6.m4a"
+     "audio": "audio/635d88ad7ae3.m4a"
     },
     {
      "de": "der Keller",
@@ -275,7 +275,7 @@
      "gender": "m",
      "plural": "Keller",
      "note": "im Keller",
-     "audio": "audio/2d8505ffd516.m4a"
+     "audio": "audio/935b3ca8f9bd.m4a"
     },
     {
      "de": "das Treppenhaus",
@@ -283,14 +283,14 @@
      "gender": "n",
      "plural": "Treppenhäuser",
      "note": "die Treppe + das Haus",
-     "audio": "audio/edd96031fc41.m4a"
+     "audio": "audio/fe6bf8733b66.m4a"
     },
     {
      "de": "das Wohnheim",
      "ru": "общежитие",
      "gender": "n",
      "plural": "Wohnheime",
-     "audio": "audio/d80a480f044e.m4a"
+     "audio": "audio/6dc6eb251a2f.m4a"
     }
    ]
   },
@@ -304,28 +304,28 @@
      "gender": "pl",
      "plural": null,
      "note": "Die Möbel sind neu.",
-     "audio": "audio/4f61d4dc2d14.m4a"
+     "audio": "audio/14bdeb0eff14.m4a"
     },
     {
      "de": "der Tisch",
      "ru": "стол",
      "gender": "m",
      "plural": "Tische",
-     "audio": "audio/b0119c5ac197.m4a"
+     "audio": "audio/116b42313102.m4a"
     },
     {
      "de": "der Stuhl",
      "ru": "стул",
      "gender": "m",
      "plural": "Stühle",
-     "audio": "audio/e644af7b9eb7.m4a"
+     "audio": "audio/f0ab668bbdd2.m4a"
     },
     {
      "de": "das Bett",
      "ru": "кровать",
      "gender": "n",
      "plural": "Betten",
-     "audio": "audio/6b6c24b912c4.m4a"
+     "audio": "audio/e85e889de0db.m4a"
     },
     {
      "de": "das Sofa",
@@ -339,7 +339,7 @@
      "ru": "шкаф",
      "gender": "m",
      "plural": "Schränke",
-     "audio": "audio/bfcefcc26553.m4a"
+     "audio": "audio/6a7ac6c61fa5.m4a"
     },
     {
      "de": "der Kleiderschrank",
@@ -347,7 +347,7 @@
      "gender": "m",
      "plural": "Kleiderschränke",
      "note": "die Kleider + der Schrank",
-     "audio": "audio/755ac39d9f88.m4a"
+     "audio": "audio/971bdb44cc7c.m4a"
     },
     {
      "de": "der Kühlschrank",
@@ -355,14 +355,14 @@
      "gender": "m",
      "plural": "Kühlschränke",
      "note": "kühl + der Schrank",
-     "audio": "audio/ebdeb967de95.m4a"
+     "audio": "audio/9649a35df998.m4a"
     },
     {
      "de": "der Herd",
      "ru": "плита",
      "gender": "m",
      "plural": "Herde",
-     "audio": "audio/d8584e77130a.m4a"
+     "audio": "audio/d991c14e3b70.m4a"
     },
     {
      "de": "die Waschmaschine",
@@ -370,7 +370,7 @@
      "gender": "f",
      "plural": "Waschmaschinen",
      "note": "waschen + die Maschine",
-     "audio": "audio/7fa4ad58ade8.m4a"
+     "audio": "audio/f344cc84e7a9.m4a"
     },
     {
      "de": "der Schreibtisch",
@@ -378,14 +378,14 @@
      "gender": "m",
      "plural": "Schreibtische",
      "note": "schreiben + der Tisch",
-     "audio": "audio/f187334c8366.m4a"
+     "audio": "audio/9cc9c2f015e7.m4a"
     },
     {
      "de": "die Lampe",
      "ru": "лампа",
      "gender": "f",
      "plural": "Lampen",
-     "audio": "audio/b34283510d3f.m4a"
+     "audio": "audio/8ca6f46d0bdd.m4a"
     }
    ]
   },
@@ -398,14 +398,14 @@
      "ru": "большой — маленький",
      "gender": null,
      "plural": null,
-     "audio": "audio/3e6856b76648.m4a"
+     "audio": "audio/9b25f9487747.m4a"
     },
     {
      "de": "hell – dunkel",
      "ru": "светлый — тёмный",
      "gender": null,
      "plural": null,
-     "audio": "audio/c459ee8fa9f2.m4a"
+     "audio": "audio/655a7bc51b39.m4a"
     },
     {
      "de": "ruhig – laut",
@@ -434,14 +434,14 @@
      "ru": "красивый",
      "gender": null,
      "plural": null,
-     "audio": "audio/4f23a86c699e.m4a"
+     "audio": "audio/320761b0a0f7.m4a"
     },
     {
      "de": "modern",
      "ru": "современный",
      "gender": null,
      "plural": null,
-     "audio": "audio/1c5c2c80e859.m4a"
+     "audio": "audio/d9aa9bfd3a37.m4a"
     },
     {
      "de": "frei",
@@ -449,7 +449,7 @@
      "gender": null,
      "plural": null,
      "note": "ab sofort frei — свободна сразу",
-     "audio": "audio/c8146f5308e2.m4a"
+     "audio": "audio/440aed36940a.m4a"
     },
     {
      "de": "möbliert",
@@ -478,7 +478,7 @@
      "ru": "объявление",
      "gender": "f",
      "plural": "Anzeigen",
-     "audio": "audio/f99595a42112.m4a"
+     "audio": "audio/48ffa33a6e01.m4a"
     },
     {
      "de": "mieten",
@@ -486,7 +486,7 @@
      "gender": null,
      "plural": null,
      "note": "Ich miete eine Wohnung.",
-     "audio": "audio/59fdaa72393c.m4a"
+     "audio": "audio/28a5ad5ee4c8.m4a"
     },
     {
      "de": "der Vermieter",
@@ -494,14 +494,14 @@
      "gender": "m",
      "plural": "Vermieter",
      "note": "die Vermieterin",
-     "audio": "audio/8207da720d96.m4a"
+     "audio": "audio/43a80624c28e.m4a"
     },
     {
      "de": "die Miete",
      "ru": "арендная плата",
      "gender": "f",
      "plural": "Mieten",
-     "audio": "audio/5991f37737ac.m4a"
+     "audio": "audio/3811762fb41a.m4a"
     },
     {
      "de": "die Kaltmiete",
@@ -509,7 +509,7 @@
      "gender": "f",
      "plural": "Kaltmieten",
      "note": "KM",
-     "audio": "audio/c17f0e9b2685.m4a"
+     "audio": "audio/37f4efc4b583.m4a"
     },
     {
      "de": "die Nebenkosten",
@@ -517,7 +517,7 @@
      "gender": "pl",
      "plural": null,
      "note": "Wasser, Heizung, Müll",
-     "audio": "audio/69302c0a7e19.m4a"
+     "audio": "audio/073cb3d589c5.m4a"
     },
     {
      "de": "die Warmmiete",
@@ -525,14 +525,14 @@
      "gender": "f",
      "plural": "Warmmieten",
      "note": "WM",
-     "audio": "audio/cd1b23e12368.m4a"
+     "audio": "audio/28768a8aff9e.m4a"
     },
     {
      "de": "die Heizung",
      "ru": "отопление",
      "gender": "f",
      "plural": "Heizungen",
-     "audio": "audio/67e3d5502329.m4a"
+     "audio": "audio/3ecf85a9503e.m4a"
     },
     {
      "de": "der Quadratmeter",
@@ -540,7 +540,7 @@
      "gender": "m",
      "plural": "Quadratmeter",
      "note": "m² или qm",
-     "audio": "audio/a4941cc5d57b.m4a"
+     "audio": "audio/36cf73bbfdbf.m4a"
     },
     {
      "de": "das Erdgeschoss",
@@ -548,7 +548,7 @@
      "gender": "n",
      "plural": "Erdgeschosse",
      "note": "EG",
-     "audio": "audio/d6b10894bdfe.m4a"
+     "audio": "audio/387fac9a168e.m4a"
     },
     {
      "de": "der Stock",
@@ -1326,7 +1326,7 @@
       "punct": ".",
       "plain": "Die Waschmaschine steht im Keller.",
       "ru": "Стиральная машина стоит в подвале.",
-      "audio": "audio/e5c5e3e63393.m4a"
+      "audio": "audio/790fea81f64d.m4a"
      }
     ]
    }
@@ -1378,7 +1378,7 @@
       "punct": ".",
       "plain": "Im Keller steht die Waschmaschine.",
       "ru": "В подвале стоит стиральная машина.",
-      "audio": "audio/3c748bee4cae.m4a"
+      "audio": "audio/fe39f08da138.m4a"
      }
     ]
    }
@@ -1577,7 +1577,7 @@
       "punct": ".",
       "plain": "Das Bett steht im Schlafzimmer.",
       "ru": "Кровать стоит в спальне.",
-      "audio": "audio/75b486ed0fea.m4a"
+      "audio": "audio/55f545efdc61.m4a"
      }
     ]
    }
@@ -1978,7 +1978,7 @@
    ],
    "answer": 2,
    "why": "*das Zimmer* → *das Schlafzimmer*: род по последней части.",
-   "audio": "audio/e5caed209e7b.m4a"
+   "audio": "audio/96238cedda43.m4a"
   },
   {
    "id": "wohnen-2",
@@ -1991,7 +1991,7 @@
    ],
    "answer": 1,
    "why": "*das Haus* + *die Tür* = *die Haustür*. Решает последняя часть.",
-   "audio": "audio/4442bb0a0c62.m4a"
+   "audio": "audio/5453cb9386b1.m4a"
   },
   {
    "id": "wohnen-3",
@@ -2002,7 +2002,7 @@
    ],
    "hint": "in + dem",
    "why": "*der Keller* → *in dem Keller* → *im Keller*.",
-   "audio": "audio/e5c5e3e63393.m4a"
+   "audio": "audio/790fea81f64d.m4a"
   },
   {
    "id": "wohnen-4",
@@ -2013,7 +2013,7 @@
    ],
    "hint": "die Küche",
    "why": "Женский род в дательном: *die* → *der*. *in die Küche* — это «на кухню», куда.",
-   "audio": "audio/e5b3307bee2d.m4a"
+   "audio": "audio/399f26f96e75.m4a"
   },
   {
    "id": "wohnen-5",
@@ -2024,7 +2024,7 @@
    ],
    "hint": "der Balkon",
    "why": "*der Balkon* → *auf dem Balkon*. *auf dem* не сливается.",
-   "audio": "audio/bc148e9b4c9f.m4a"
+   "audio": "audio/1f0762f52991.m4a"
   },
   {
    "id": "wohnen-6",
@@ -2037,7 +2037,7 @@
    ],
    "answer": 1,
    "why": "*eine Wohnung* → *in einer Wohnung*: у женского рода *-er*.",
-   "audio": "audio/61ba09e1f1f8.m4a"
+   "audio": "audio/83b118fde91d.m4a"
   },
   {
    "id": "wohnen-7",
@@ -2061,7 +2061,7 @@
    ],
    "answer": 0,
    "why": "*das Schlafzimmer* → *in dem* → *im*. В комнате — всегда *in*, не *auf*.",
-   "audio": "audio/0fc4d9ea4e58.m4a"
+   "audio": "audio/4c7ac6b731af.m4a"
   },
   {
    "id": "wohnen-9",
@@ -2074,7 +2074,7 @@
    ],
    "answer": 0,
    "why": "После *sein* прилагательное без окончания — для любого рода.",
-   "audio": "audio/a1cbac2b3c95.m4a"
+   "audio": "audio/84840527b689.m4a"
   },
   {
    "id": "wohnen-10",
@@ -2120,7 +2120,7 @@
    ],
    "de": "Der Kühlschrank steht in der Küche.",
    "why": "*die Küche* → *in der Küche*. По-русски «на кухне», по-немецки — *in*.",
-   "audio": "audio/e8fd7b76e6e1.m4a"
+   "audio": "audio/f8f80beb47b0.m4a"
   },
   {
    "id": "wohnen-14",
@@ -2141,7 +2141,7 @@
     "Klein, aber modern ist das Bad."
    ],
    "de": "Das Bad ist klein, aber modern.",
-   "audio": "audio/b89595f66857.m4a"
+   "audio": "audio/4514642d506e.m4a"
   },
   {
    "id": "wohnen-16",
@@ -2380,7 +2380,7 @@
      },
      {
       "de": "Nein, sie steht im Keller. Das Bad ist klein, aber modern.",
-      "audio": "audio/359cc1bd702c.m4a",
+      "audio": "audio/27c4e1ed1b6b.m4a",
       "name": "Herr Krüger"
      },
      {

@@ -67,50 +67,42 @@
     {
      "who": "D",
      "de": "Seit Montag planen wir unseren Ausflug nach Haithabu.",
-     "ru": "С понедельника мы планируем поездку в Хайтабу.",
-     "audio": "audio/644b3e88232f.m4a"
+     "ru": "С понедельника мы планируем поездку в Хайтабу."
     },
     {
      "who": "M",
      "de": "Vor zwei Wochen haben wir zum ersten Mal darüber gesprochen.",
-     "ru": "Две недели назад мы впервые об этом говорили.",
-     "audio": "audio/bee388b112c9.m4a"
+     "ru": "Две недели назад мы впервые об этом говорили."
     },
     {
      "who": "E",
      "de": "Was war dort früher?",
-     "ru": "Что там было раньше?",
-     "audio": "audio/a32ccb8b64c4.m4a"
+     "ru": "Что там было раньше?"
     },
     {
      "who": "H",
      "de": "Haithabu war ein Handelsplatz mit einem Hafen.",
-     "ru": "Хайтабу было торговым поселением с портом.",
-     "audio": "audio/6291504f8701.m4a"
+     "ru": "Хайтабу было торговым поселением с портом."
     },
     {
      "who": "D",
      "de": "Heute gibt es dort ein Museum und rekonstruierte Häuser.",
-     "ru": "Сегодня там есть музей и реконструированные дома.",
-     "audio": "audio/1c9b7d845753.m4a"
+     "ru": "Сегодня там есть музей и реконструированные дома."
     },
     {
      "who": "M",
      "de": "Wie lange bleiben wir nach unserem Lernplan dort?",
-     "ru": "Сколько мы там пробудем по нашему учебному плану?",
-     "audio": "audio/084a76e08c7b.m4a"
+     "ru": "Сколько мы там пробудем по нашему учебному плану?"
     },
     {
      "who": "E",
      "de": "Zwei Stunden für die Ausstellung und danach eine Stunde draußen.",
-     "ru": "Два часа на выставку, потом час снаружи.",
-     "audio": "audio/3e18a0099065.m4a"
+     "ru": "Два часа на выставку, потом час снаружи."
     },
     {
      "who": "H",
      "de": "Gut. Seit gestern haben wir auch die Liste für den Ausflug.",
-     "ru": "Хорошо. Со вчерашнего дня у нас есть и список для поездки.",
-     "audio": "audio/93fd226c66eb.m4a"
+     "ru": "Хорошо. Со вчерашнего дня у нас есть и список для поездки."
     }
    ]
   }
@@ -124,86 +116,74 @@
      "de": "der Ausflug",
      "ru": "небольшая поездка",
      "gender": "m",
-     "plural": "Ausflüge",
-     "audio": "audio/a60142e3dd38.m4a"
+     "plural": "Ausflüge"
     },
     {
      "de": "der Handelsplatz",
      "ru": "торговое поселение, центр торговли",
      "gender": "m",
-     "plural": "Handelsplätze",
-     "audio": "audio/858e965b3b30.m4a"
+     "plural": "Handelsplätze"
     },
     {
      "de": "der Hafen",
      "ru": "порт",
      "gender": "m",
-     "plural": "Häfen",
-     "audio": "audio/64c12f7f3efa.m4a"
+     "plural": "Häfen"
     },
     {
      "de": "die Ausstellung",
      "ru": "выставка",
      "gender": "f",
-     "plural": "Ausstellungen",
-     "audio": "audio/cefd646461c3.m4a"
+     "plural": "Ausstellungen"
     },
     {
      "de": "das Freigelände",
      "ru": "открытая территория",
      "gender": "n",
-     "plural": "Freigelände",
-     "audio": "audio/58de20fdb6b8.m4a"
+     "plural": "Freigelände"
     },
     {
      "de": "das Haus",
      "ru": "дом",
      "gender": "n",
-     "plural": "Häuser",
-     "audio": "audio/6241f55a929b.m4a"
+     "plural": "Häuser"
     },
     {
      "de": "rekonstruiert",
      "ru": "реконструированный",
      "gender": null,
-     "plural": null,
-     "audio": "audio/f8619c6cbaec.m4a"
+     "plural": null
     },
     {
      "de": "früher",
      "ru": "раньше",
      "gender": null,
-     "plural": null,
-     "audio": "audio/25911b3a0802.m4a"
+     "plural": null
     },
     {
      "de": "seit Montag",
      "ru": "с понедельника до сих пор",
      "gender": null,
-     "plural": null,
-     "audio": "audio/d9d6d4487bd1.m4a"
+     "plural": null
     },
     {
      "de": "vor zwei Wochen",
      "ru": "две недели назад",
      "gender": null,
-     "plural": null,
-     "audio": "audio/af2ec8f09cc2.m4a"
+     "plural": null
     },
     {
      "de": "dauern",
      "ru": "длиться",
      "gender": null,
-     "plural": null,
-     "audio": "audio/093bc7c7e61a.m4a"
+     "plural": null
     },
     {
      "de": "das Welterbe",
      "ru": "всемирное наследие",
      "gender": "n",
      "plural": null,
-     "noPlural": true,
-     "audio": "audio/cafdb0177897.m4a"
+     "noPlural": true
     }
    ]
   }
@@ -587,8 +567,7 @@
       ],
       "punct": ".",
       "plain": "Seit Montag planen wir die Fahrt.",
-      "ru": "С понедельника мы планируем поездку.",
-      "audio": "audio/0fd780793d20.m4a"
+      "ru": "С понедельника мы планируем поездку."
      }
     ]
    }
@@ -644,8 +623,7 @@
       ],
       "punct": ".",
       "plain": "Seit Montag planen wir die Fahrt.",
-      "ru": "С понедельника мы планируем поездку.",
-      "audio": "audio/0fd780793d20.m4a"
+      "ru": "С понедельника мы планируем поездку."
      }
     ]
    }
@@ -701,8 +679,7 @@
       ],
       "punct": ".",
       "plain": "Seit Montag planen wir die Fahrt.",
-      "ru": "С понедельника мы планируем поездку.",
-      "audio": "audio/0fd780793d20.m4a"
+      "ru": "С понедельника мы планируем поездку."
      }
     ]
    }
@@ -757,8 +734,7 @@
       ],
       "punct": ".",
       "plain": "Seit Montag planen wir die Fahrt.",
-      "ru": "С понедельника мы планируем поездку.",
-      "audio": "audio/0fd780793d20.m4a"
+      "ru": "С понедельника мы планируем поездку."
      }
     ],
     "task": "article"
@@ -815,8 +791,7 @@
       ],
       "punct": ".",
       "plain": "Seit Montag planen wir die Fahrt.",
-      "ru": "С понедельника мы планируем поездку.",
-      "audio": "audio/0fd780793d20.m4a"
+      "ru": "С понедельника мы планируем поездку."
      }
     ],
     "task": "article"
@@ -863,8 +838,7 @@
       ],
       "punct": ".",
       "plain": "Seit Montag planen wir die Fahrt.",
-      "ru": "С понедельника мы планируем поездку.",
-      "audio": "audio/0fd780793d20.m4a"
+      "ru": "С понедельника мы планируем поездку."
      }
     ],
     "task": "article",
@@ -921,8 +895,7 @@
       ],
       "punct": ".",
       "plain": "Seit Montag planen wir die Fahrt.",
-      "ru": "С понедельника мы планируем поездку.",
-      "audio": "audio/0fd780793d20.m4a"
+      "ru": "С понедельника мы планируем поездку."
      }
     ],
     "task": "directory"
@@ -979,8 +952,7 @@
       ],
       "punct": ".",
       "plain": "Seit Montag planen wir die Fahrt.",
-      "ru": "С понедельника мы планируем поездку.",
-      "audio": "audio/0fd780793d20.m4a"
+      "ru": "С понедельника мы планируем поездку."
      }
     ],
     "task": "directory"
@@ -1027,8 +999,7 @@
       ],
       "punct": ".",
       "plain": "Seit Montag planen wir die Fahrt.",
-      "ru": "С понедельника мы планируем поездку.",
-      "audio": "audio/0fd780793d20.m4a"
+      "ru": "С понедельника мы планируем поездку."
      }
     ],
     "task": "directory",
@@ -1085,8 +1056,7 @@
       ],
       "punct": ".",
       "plain": "Seit Montag planen wir die Fahrt.",
-      "ru": "С понедельника мы планируем поездку.",
-      "audio": "audio/0fd780793d20.m4a"
+      "ru": "С понедельника мы планируем поездку."
      }
     ],
     "task": "plan"
@@ -1143,8 +1113,7 @@
       ],
       "punct": ".",
       "plain": "Seit Montag planen wir die Fahrt.",
-      "ru": "С понедельника мы планируем поездку.",
-      "audio": "audio/0fd780793d20.m4a"
+      "ru": "С понедельника мы планируем поездку."
      }
     ],
     "task": "plan"
@@ -1191,8 +1160,7 @@
       ],
       "punct": ".",
       "plain": "Seit Montag planen wir die Fahrt.",
-      "ru": "С понедельника мы планируем поездку.",
-      "audio": "audio/0fd780793d20.m4a"
+      "ru": "С понедельника мы планируем поездку."
      }
     ],
     "task": "plan",
@@ -1211,8 +1179,7 @@
     "Für"
    ],
    "answer": 0,
-   "why": "Завершённый момент: назад.",
-   "audio": "audio/3a0e4241bf9d.m4a"
+   "why": "Завершённый момент: назад."
   },
   {
    "id": "a2-ausflug-2",
@@ -1225,8 +1192,7 @@
     "Um"
    ],
    "answer": 0,
-   "why": "Начало продолжающегося действия.",
-   "audio": "audio/0fd780793d20.m4a"
+   "why": "Начало продолжающегося действия."
   },
   {
    "id": "a2-ausflug-3",
@@ -1238,8 +1204,7 @@
     "geplant"
    ],
    "answer": 0,
-   "why": "Настоящее время.",
-   "audio": "audio/b1e50e8740b9.m4a"
+   "why": "Настоящее время."
   },
   {
    "id": "a2-ausflug-4",
@@ -1251,8 +1216,7 @@
     "einen"
    ],
    "answer": 0,
-   "why": "Dativ после seit.",
-   "audio": "audio/c4e4018c9861.m4a"
+   "why": "Dativ после seit."
   },
   {
    "id": "a2-ausflug-5",
@@ -1264,8 +1228,7 @@
     "einen"
    ],
    "answer": 0,
-   "why": "Dativ после vor.",
-   "audio": "audio/78b73cab815c.m4a"
+   "why": "Dativ после vor."
   },
   {
    "id": "a2-ausflug-6",
@@ -1287,8 +1250,7 @@
     "Wir planen seit Montag die Fahrt.",
     "Die Fahrt planen wir seit Montag."
    ],
-   "de": "Seit Montag planen wir die Fahrt.",
-   "audio": "audio/0fd780793d20.m4a"
+   "de": "Seit Montag planen wir die Fahrt."
   },
   {
    "id": "a2-ausflug-8",
@@ -1298,8 +1260,7 @@
     "Wir haben vor zwei Wochen darüber gesprochen.",
     "Darüber haben wir vor zwei Wochen gesprochen."
    ],
-   "de": "Vor zwei Wochen haben wir darüber gesprochen.",
-   "audio": "audio/8c9a2cc02ce1.m4a"
+   "de": "Vor zwei Wochen haben wir darüber gesprochen."
   },
   {
    "id": "a2-ausflug-9",
@@ -1309,8 +1270,7 @@
     "Seit einer Stunde sind wir im Museum.",
     "Im Museum sind wir seit einer Stunde."
    ],
-   "de": "Wir sind seit einer Stunde im Museum.",
-   "audio": "audio/8ca1d5eebac1.m4a"
+   "de": "Wir sind seit einer Stunde im Museum."
   },
   {
    "id": "a2-ausflug-10",
@@ -1320,8 +1280,7 @@
     "Haithabu war früher ein Handelsplatz.",
     "Ein Handelsplatz war Haithabu früher."
    ],
-   "de": "Früher war Haithabu ein Handelsplatz.",
-   "audio": "audio/4704c15e4171.m4a"
+   "de": "Früher war Haithabu ein Handelsplatz."
   },
   {
    "id": "a2-ausflug-11",
@@ -1330,8 +1289,7 @@
    "also": [
     "Drei Stunden dauert unser Besuch."
    ],
-   "de": "Unser Besuch dauert drei Stunden.",
-   "audio": "audio/127938ec1b4e.m4a"
+   "de": "Unser Besuch dauert drei Stunden."
   },
   {
    "id": "a2-ausflug-12",
@@ -1341,8 +1299,7 @@
     "Wir treffen uns um dreizehn Uhr wieder.",
     "Wir treffen uns wieder um dreizehn Uhr."
    ],
-   "de": "Um dreizehn Uhr treffen wir uns wieder.",
-   "audio": "audio/1aa6be0915a0.m4a"
+   "de": "Um dreizehn Uhr treffen wir uns wieder."
   }
  ],
  "case": {

@@ -68,50 +68,42 @@
     {
      "who": "D",
      "de": "Welches Café ist günstiger?",
-     "ru": "Какое кафе дешевле?",
-     "audio": "audio/78b8734e61bd.m4a"
+     "ru": "Какое кафе дешевле?"
     },
     {
      "who": "M",
      "de": "Café B ist günstiger als Café A.",
-     "ru": "Кафе B дешевле кафе A.",
-     "audio": "audio/eb7def064352.m4a"
+     "ru": "Кафе B дешевле кафе A."
     },
     {
      "who": "E",
      "de": "Ist es auch näher am Museum?",
-     "ru": "А оно ближе к музею?",
-     "audio": "audio/29fda4e0d383.m4a"
+     "ru": "А оно ближе к музею?"
     },
     {
      "who": "H",
      "de": "Ja. Café A ist weiter weg, aber genauso ruhig wie Café B.",
-     "ru": "Да. Кафе A дальше, но такое же тихое, как B.",
-     "audio": "audio/210d2db9fc1b.m4a"
+     "ru": "Да. Кафе A дальше, но такое же тихое, как B."
     },
     {
      "who": "D",
      "de": "Ich möchte am liebsten ins Museum.",
-     "ru": "Я больше всего хочу в музей.",
-     "audio": "audio/1b0372a6c9ca.m4a"
+     "ru": "Я больше всего хочу в музей."
     },
     {
      "who": "M",
      "de": "Mit Café B kostet unser Plan zwanzig Euro. Das passt.",
-     "ru": "С кафе B наш план стоит двадцать евро. Подходит.",
-     "audio": "audio/11efe938aa6f.m4a"
+     "ru": "С кафе B наш план стоит двадцать евро. Подходит."
     },
     {
      "who": "E",
      "de": "Ein Spaziergang ist noch günstiger.",
-     "ru": "Прогулка ещё дешевле.",
-     "audio": "audio/1831e05fa4a7.m4a"
+     "ru": "Прогулка ещё дешевле."
     },
     {
      "who": "H",
      "de": "Beides ist möglich. Was gefällt euch besser?",
-     "ru": "Возможны оба варианта. Что вам нравится больше?",
-     "audio": "audio/2bc00ec9ed13.m4a"
+     "ru": "Возможны оба варианта. Что вам нравится больше?"
     }
    ]
   }
@@ -125,87 +117,75 @@
      "de": "günstig",
      "ru": "недорогой, выгодный",
      "gender": null,
-     "plural": null,
-     "audio": "audio/a72b85bc7f07.m4a"
+     "plural": null
     },
     {
      "de": "günstiger",
      "ru": "дешевле",
      "gender": null,
-     "plural": null,
-     "audio": "audio/c93b06c1a290.m4a"
+     "plural": null
     },
     {
      "de": "teuer",
      "ru": "дорогой",
      "gender": null,
-     "plural": null,
-     "audio": "audio/c101f9801004.m4a"
+     "plural": null
     },
     {
      "de": "näher am Museum",
      "ru": "ближе к музею",
      "gender": null,
-     "plural": null,
-     "audio": "audio/87159c9dc35e.m4a"
+     "plural": null
     },
     {
      "de": "weiter weg",
      "ru": "дальше",
      "gender": null,
-     "plural": null,
-     "audio": "audio/ef3d1af8f09e.m4a"
+     "plural": null
     },
     {
      "de": "genauso",
      "ru": "точно так же",
      "gender": null,
-     "plural": null,
-     "audio": "audio/9945c3fd15fa.m4a"
+     "plural": null
     },
     {
      "de": "vergleichen",
      "ru": "сравнивать",
      "gender": null,
-     "plural": null,
-     "audio": "audio/211e790b03be.m4a"
+     "plural": null
     },
     {
      "de": "die Auswahl",
      "ru": "выбор",
      "gender": "f",
      "plural": null,
-     "noPlural": true,
-     "audio": "audio/128de14cd018.m4a"
+     "noPlural": true
     },
     {
      "de": "das Angebot",
      "ru": "предложение",
      "gender": "n",
-     "plural": "Angebote",
-     "audio": "audio/f02fe3836d37.m4a"
+     "plural": "Angebote"
     },
     {
      "de": "der Eintritt",
      "ru": "входная плата",
      "gender": "m",
      "plural": null,
-     "noPlural": true,
-     "audio": "audio/cc46692cc6dd.m4a"
+     "noPlural": true
     },
     {
      "de": "möglich",
      "ru": "возможный",
      "gender": null,
-     "plural": null,
-     "audio": "audio/c2ee5ca1bf74.m4a"
+     "plural": null
     },
     {
      "de": "lieber",
      "ru": "охотнее",
      "gender": null,
-     "plural": null,
-     "audio": "audio/d77b7cfdf799.m4a"
+     "plural": null
     }
    ]
   }
@@ -392,7 +372,6 @@
      ]
     }
    ],
-   "audio": "audio/e3f1bede7157.m4a",
    "sample": []
   },
   "pair": {
@@ -403,16 +382,13 @@
    "word": "Café – Museum – Spaziergang",
    "sample": [
     {
-     "de": "Welcher Plan gefällt dir besser?",
-     "audio": "audio/c554cab0941b.m4a"
+     "de": "Welcher Plan gefällt dir besser?"
     },
     {
-     "de": "Ich möchte lieber ins Museum.",
-     "audio": "audio/f958f06095bf.m4a"
+     "de": "Ich möchte lieber ins Museum."
     },
     {
-     "de": "Dann nehmen wir Café B. So bleiben wir im Budget.",
-     "audio": "audio/ac1f15698b14.m4a"
+     "de": "Dann nehmen wir Café B. So bleiben wir im Budget."
     }
    ]
   }
@@ -610,8 +586,7 @@
       ],
       "punct": ".",
       "plain": "Café B ist günstiger als Café A.",
-      "ru": "Кафе B дешевле кафе A.",
-      "audio": "audio/ba3fe0e46c71.m4a"
+      "ru": "Кафе B дешевле кафе A."
      }
     ]
    }
@@ -671,8 +646,7 @@
       ],
       "punct": ".",
       "plain": "Café B ist günstiger als Café A.",
-      "ru": "Кафе B дешевле кафе A.",
-      "audio": "audio/ba3fe0e46c71.m4a"
+      "ru": "Кафе B дешевле кафе A."
      }
     ]
    }
@@ -732,8 +706,7 @@
       ],
       "punct": ".",
       "plain": "Café B ist günstiger als Café A.",
-      "ru": "Кафе B дешевле кафе A.",
-      "audio": "audio/ba3fe0e46c71.m4a"
+      "ru": "Кафе B дешевле кафе A."
      }
     ]
    }
@@ -792,8 +765,7 @@
       ],
       "punct": ".",
       "plain": "Café B ist günstiger als Café A.",
-      "ru": "Кафе B дешевле кафе A.",
-      "audio": "audio/ba3fe0e46c71.m4a"
+      "ru": "Кафе B дешевле кафе A."
      }
     ],
     "task": "offers"
@@ -854,8 +826,7 @@
       ],
       "punct": ".",
       "plain": "Café B ist günstiger als Café A.",
-      "ru": "Кафе B дешевле кафе A.",
-      "audio": "audio/ba3fe0e46c71.m4a"
+      "ru": "Кафе B дешевле кафе A."
      }
     ],
     "task": "offers"
@@ -906,8 +877,7 @@
       ],
       "punct": ".",
       "plain": "Café B ist günstiger als Café A.",
-      "ru": "Кафе B дешевле кафе A.",
-      "audio": "audio/ba3fe0e46c71.m4a"
+      "ru": "Кафе B дешевле кафе A."
      }
     ],
     "task": "offers",
@@ -968,8 +938,7 @@
       ],
       "punct": ".",
       "plain": "Café B ist günstiger als Café A.",
-      "ru": "Кафе B дешевле кафе A.",
-      "audio": "audio/ba3fe0e46c71.m4a"
+      "ru": "Кафе B дешевле кафе A."
      }
     ],
     "task": "offers15"
@@ -1030,8 +999,7 @@
       ],
       "punct": ".",
       "plain": "Café B ist günstiger als Café A.",
-      "ru": "Кафе B дешевле кафе A.",
-      "audio": "audio/ba3fe0e46c71.m4a"
+      "ru": "Кафе B дешевле кафе A."
      }
     ],
     "task": "offers15"
@@ -1082,8 +1050,7 @@
       ],
       "punct": ".",
       "plain": "Café B ist günstiger als Café A.",
-      "ru": "Кафе B дешевле кафе A.",
-      "audio": "audio/ba3fe0e46c71.m4a"
+      "ru": "Кафе B дешевле кафе A."
      }
     ],
     "task": "offers15",
@@ -1144,8 +1111,7 @@
       ],
       "punct": ".",
       "plain": "Café B ist günstiger als Café A.",
-      "ru": "Кафе B дешевле кафе A.",
-      "audio": "audio/ba3fe0e46c71.m4a"
+      "ru": "Кафе B дешевле кафе A."
      }
     ],
     "task": "ads"
@@ -1206,8 +1172,7 @@
       ],
       "punct": ".",
       "plain": "Café B ist günstiger als Café A.",
-      "ru": "Кафе B дешевле кафе A.",
-      "audio": "audio/ba3fe0e46c71.m4a"
+      "ru": "Кафе B дешевле кафе A."
      }
     ],
     "task": "ads"
@@ -1258,8 +1223,7 @@
       ],
       "punct": ".",
       "plain": "Café B ist günstiger als Café A.",
-      "ru": "Кафе B дешевле кафе A.",
-      "audio": "audio/ba3fe0e46c71.m4a"
+      "ru": "Кафе B дешевле кафе A."
      }
     ],
     "task": "ads",
@@ -1320,8 +1284,7 @@
       ],
       "punct": ".",
       "plain": "Café B ist günstiger als Café A.",
-      "ru": "Кафе B дешевле кафе A.",
-      "audio": "audio/ba3fe0e46c71.m4a"
+      "ru": "Кафе B дешевле кафе A."
      }
     ],
     "task": "radio"
@@ -1382,8 +1345,7 @@
       ],
       "punct": ".",
       "plain": "Café B ist günstiger als Café A.",
-      "ru": "Кафе B дешевле кафе A.",
-      "audio": "audio/ba3fe0e46c71.m4a"
+      "ru": "Кафе B дешевле кафе A."
      }
     ],
     "task": "radio"
@@ -1434,8 +1396,7 @@
       ],
       "punct": ".",
       "plain": "Café B ist günstiger als Café A.",
-      "ru": "Кафе B дешевле кафе A.",
-      "audio": "audio/ba3fe0e46c71.m4a"
+      "ru": "Кафе B дешевле кафе A."
      }
     ],
     "task": "radio",
@@ -1496,8 +1457,7 @@
       ],
       "punct": ".",
       "plain": "Café B ist günstiger als Café A.",
-      "ru": "Кафе B дешевле кафе A.",
-      "audio": "audio/ba3fe0e46c71.m4a"
+      "ru": "Кафе B дешевле кафе A."
      }
     ],
     "task": "pair",
@@ -1559,8 +1519,7 @@
       ],
       "punct": ".",
       "plain": "Café B ist günstiger als Café A.",
-      "ru": "Кафе B дешевле кафе A.",
-      "audio": "audio/ba3fe0e46c71.m4a"
+      "ru": "Кафе B дешевле кафе A."
      }
     ],
     "task": "pair",
@@ -1612,8 +1571,7 @@
       ],
       "punct": ".",
       "plain": "Café B ist günstiger als Café A.",
-      "ru": "Кафе B дешевле кафе A.",
-      "audio": "audio/ba3fe0e46c71.m4a"
+      "ru": "Кафе B дешевле кафе A."
      }
     ],
     "task": "pair",
@@ -1633,8 +1591,7 @@
     "weil"
    ],
    "answer": 0,
-   "why": "Различие: *als*.",
-   "audio": "audio/ba3fe0e46c71.m4a"
+   "why": "Различие: *als*."
   },
   {
    "id": "a2-vergleichen-2",
@@ -1646,8 +1603,7 @@
     "denn"
    ],
    "answer": 0,
-   "why": "Равенство: *wie*.",
-   "audio": "audio/0b4c33baaf37.m4a"
+   "why": "Равенство: *wie*."
   },
   {
    "id": "a2-vergleichen-3",
@@ -1659,8 +1615,7 @@
     "gutest"
    ],
    "answer": 0,
-   "why": "Неправильная форма.",
-   "audio": "audio/2b17db0defcc.m4a"
+   "why": "Неправильная форма."
   },
   {
    "id": "a2-vergleichen-4",
@@ -1672,8 +1627,7 @@
     "nächst"
    ],
    "answer": 0,
-   "why": "Сравнительная степень.",
-   "audio": "audio/696beb08413c.m4a"
+   "why": "Сравнительная степень."
   },
   {
    "id": "a2-vergleichen-5",
@@ -1685,8 +1639,7 @@
     "bester"
    ],
    "answer": 0,
-   "why": "Предпочтение.",
-   "audio": "audio/50117c6396a6.m4a"
+   "why": "Предпочтение."
   },
   {
    "id": "a2-vergleichen-6",
@@ -1698,8 +1651,7 @@
     "gleich"
    ],
    "answer": 0,
-   "why": "Двенадцать больше восьми.",
-   "audio": "audio/ac932d142485.m4a"
+   "why": "Двенадцать больше восьми."
   },
   {
    "id": "a2-vergleichen-7",
@@ -1708,8 +1660,7 @@
    "also": [
     "Günstiger als Café A ist Café B."
    ],
-   "de": "Café B ist günstiger als Café A.",
-   "audio": "audio/ba3fe0e46c71.m4a"
+   "de": "Café B ist günstiger als Café A."
   },
   {
    "id": "a2-vergleichen-8",
@@ -1718,8 +1669,7 @@
    "also": [
     "Ruhig sind beide Cafés."
    ],
-   "de": "Beide Cafés sind ruhig.",
-   "audio": "audio/50b8718c8241.m4a"
+   "de": "Beide Cafés sind ruhig."
   },
   {
    "id": "a2-vergleichen-9",
@@ -1729,8 +1679,7 @@
     "Lieber möchte ich ins Museum.",
     "Ins Museum möchte ich lieber."
    ],
-   "de": "Ich möchte lieber ins Museum.",
-   "audio": "audio/f958f06095bf.m4a"
+   "de": "Ich möchte lieber ins Museum."
   },
   {
    "id": "a2-vergleichen-10",
@@ -1739,15 +1688,13 @@
    "also": [
     "Kostenlos ist der Spaziergang."
    ],
-   "de": "Der Spaziergang ist kostenlos.",
-   "audio": "audio/66e692982118.m4a"
+   "de": "Der Spaziergang ist kostenlos."
   },
   {
    "id": "a2-vergleichen-11",
    "type": "order",
    "ru": "Какой план нравится тебе больше?",
-   "de": "Welcher Plan gefällt dir besser?",
-   "audio": "audio/c554cab0941b.m4a"
+   "de": "Welcher Plan gefällt dir besser?"
   },
   {
    "id": "a2-vergleichen-12",
@@ -1756,8 +1703,7 @@
    "also": [
     "Näher am Museum ist Café B."
    ],
-   "de": "Café B ist näher am Museum.",
-   "audio": "audio/eca4b0640914.m4a"
+   "de": "Café B ist näher am Museum."
   }
  ],
  "case": {

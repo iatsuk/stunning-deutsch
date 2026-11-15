@@ -68,50 +68,42 @@
     {
      "who": "H",
      "de": "Worauf wartest du noch?",
-     "ru": "Чего ты ещё ждёшь?",
-     "audio": "audio/a83ff75ec58a.m4a"
+     "ru": "Чего ты ещё ждёшь?"
     },
     {
      "who": "D",
      "de": "Auf die Antwort zur Küche. Darauf warten wir seit Montag.",
-     "ru": "Ответа о кухне. Этого мы ждём с понедельника.",
-     "audio": "audio/d6259431fd9b.m4a"
+     "ru": "Ответа о кухне. Этого мы ждём с понедельника."
     },
     {
      "who": "E",
      "de": "Wofür braucht Mateo die Liste?",
-     "ru": "Для чего Матео нужен список?",
-     "audio": "audio/fa5cff88e1d0.m4a"
+     "ru": "Для чего Матео нужен список?"
     },
     {
      "who": "D",
      "de": "Für den Vergleich der Angebote. Dafür hat er am Montag Zeit.",
-     "ru": "Для сравнения предложений. Для этого у него есть время в понедельник.",
-     "audio": "audio/59fb604b3e01.m4a"
+     "ru": "Для сравнения предложений. Для этого у него есть время в понедельник."
     },
     {
      "who": "H",
      "de": "Und für wen ist die Kopie der Liste?",
-     "ru": "А для кого копия списка?",
-     "audio": "audio/3af0ffebb284.m4a"
+     "ru": "А для кого копия списка?"
     },
     {
      "who": "D",
      "de": "Für Elif. Mit ihr vergleicht Mateo die Angebote.",
-     "ru": "Для Элиф. С ней Матео сравнит предложения.",
-     "audio": "audio/44206f0c4daa.m4a"
+     "ru": "Для Элиф. С ней Матео сравнит предложения."
     },
     {
      "who": "E",
      "de": "Ich bearbeite die Bilder am Computer. Damit geht es für mich leichter.",
-     "ru": "Я обрабатываю снимки на компьютере. На нём мне это делать проще.",
-     "audio": "audio/64102c505b66.m4a"
+     "ru": "Я обрабатываю снимки на компьютере. На нём мне это делать проще."
     },
     {
      "who": "H",
      "de": "Gut. Wir sprechen darüber, wenn die gültigen Angaben im Dokument stehen.",
-     "ru": "Хорошо. Обсудим это, когда действующие данные появятся в документе.",
-     "audio": "audio/532c41d03f51.m4a"
+     "ru": "Хорошо. Обсудим это, когда действующие данные появятся в документе."
     }
    ]
   },
@@ -133,74 +125,62 @@
     {
      "who": "H",
      "de": "Wie behältst du bei vielen Nachrichten den Überblick?",
-     "ru": "Как ты сохраняешь обзор при большом числе сообщений?",
-     "audio": "audio/1ccc8cf61600.m4a"
+     "ru": "Как ты сохраняешь обзор при большом числе сообщений?"
     },
     {
      "who": "E",
      "de": "Ich lese die Projektgruppe zweimal am Tag. Benachrichtigungen sind meistens aus. Sonst schaue ich auch während des Kurses ständig auf das Handy.",
-     "ru": "Я читаю группу проекта дважды в день. Уведомления обычно выключены. Иначе постоянно смотрю в телефон даже на курсе.",
-     "audio": "audio/d94a9da29f45.m4a"
+     "ru": "Я читаю группу проекта дважды в день. Уведомления обычно выключены. Иначе постоянно смотрю в телефон даже на курсе."
     },
     {
      "who": "H",
      "de": "Worauf achtest du bei einer weitergeleiteten Nachricht?",
-     "ru": "На что ты обращаешь внимание в пересланном сообщении?",
-     "audio": "audio/e1e84fa43bc4.m4a"
+     "ru": "На что ты обращаешь внимание в пересланном сообщении?"
     },
     {
      "who": "E",
      "de": "Auf den ursprünglichen Absender und das Datum. Gestern stand in einer alten Nachricht ein anderer Raum. Das war nur eine frühere Idee.",
-     "ru": "На исходного отправителя и дату. Вчера в старом сообщении было другое помещение. Это была только прежняя идея.",
-     "audio": "audio/53941249fcd3.m4a"
+     "ru": "На исходного отправителя и дату. Вчера в старом сообщении было другое помещение. Это была только прежняя идея."
     },
     {
      "who": "H",
      "de": "Wo stehen die gültigen Angaben?",
-     "ru": "Где находятся действующие данные?",
-     "audio": "audio/3d3e8fcc8170.m4a"
+     "ru": "Где находятся действующие данные?"
     },
     {
      "who": "E",
      "de": "In unserem gemeinsamen Dokument. Dort trennen wir Angebot, Entscheidung und offene Frage. Die Küche ist immer noch offen, und die Gruppe hat den Raum noch nicht gebucht.",
-     "ru": "В общем документе. Там мы разделяем предложение, решение и открытый вопрос. Кухня ещё не решена, и группа пока не забронировала помещение.",
-     "audio": "audio/ad9334811c25.m4a"
+     "ru": "В общем документе. Там мы разделяем предложение, решение и открытый вопрос. Кухня ещё не решена, и группа пока не забронировала помещение."
     },
     {
      "who": "H",
      "de": "Womit bearbeitest du die Bilder?",
-     "ru": "На чём ты обрабатываешь фотографии?",
-     "audio": "audio/fac471e94056.m4a"
+     "ru": "На чём ты обрабатываешь фотографии?"
     },
     {
      "who": "E",
      "de": "Am liebsten am Computer. Mit dem Handy wähle ich unterwegs nur Bilder aus. Die Originale bleiben erhalten. Für die Ausstellung mache ich kleinere Kopien.",
-     "ru": "Предпочитаю компьютер. На телефоне я только выбираю фото в дороге. Оригиналы сохраняются. Для выставки делаю уменьшенные копии.",
-     "audio": "audio/e5ce637d57a1.m4a"
+     "ru": "Предпочитаю компьютер. На телефоне я только выбираю фото в дороге. Оригиналы сохраняются. Для выставки делаю уменьшенные копии."
     },
     {
      "who": "H",
      "de": "Für wen ist der kurze Text neben der Karte?",
-     "ru": "Для кого короткий текст рядом с картой?",
-     "audio": "audio/af160aa0cc69.m4a"
+     "ru": "Для кого короткий текст рядом с картой?"
     },
     {
      "who": "E",
      "de": "Für neue Gäste. Sie kennen die Orte vielleicht noch nicht. Deshalb erklären wir die Namen und stellen eine persönliche Frage.",
-     "ru": "Для новых гостей. Возможно, они ещё не знают эти места. Поэтому объясняем названия и задаём личный вопрос.",
-     "audio": "audio/599c01968f0d.m4a"
+     "ru": "Для новых гостей. Возможно, они ещё не знают эти места. Поэтому объясняем названия и задаём личный вопрос."
     },
     {
      "who": "H",
      "de": "Und was passiert, wenn jemand einen Fehler findet?",
-     "ru": "А что происходит, если кто-то находит ошибку?",
-     "audio": "audio/f8158bc9dcd4.m4a"
+     "ru": "А что происходит, если кто-то находит ошибку?"
     },
     {
      "who": "E",
      "de": "Dann ändern wir das gemeinsame Dokument. Eine private Nachricht allein reicht nicht. Danach informieren wir die Gruppe über die Änderung, damit alle denselben Stand kennen.",
-     "ru": "Тогда меняем общий документ. Одного личного сообщения недостаточно. Потом сообщаем группе об изменении, чтобы у всех были одинаковые данные.",
-     "audio": "audio/07bf7451d017.m4a"
+     "ru": "Тогда меняем общий документ. Одного личного сообщения недостаточно. Потом сообщаем группе об изменении, чтобы у всех были одинаковые данные."
     }
    ]
   }
@@ -214,107 +194,92 @@
      "de": "der Absender",
      "ru": "отправитель",
      "gender": "m",
-     "plural": "Absender",
-     "audio": "audio/d9229a9bb156.m4a"
+     "plural": "Absender"
     },
     {
      "de": "die Benachrichtigung",
      "ru": "уведомление",
      "gender": "f",
-     "plural": "Benachrichtigungen",
-     "audio": "audio/3db152dbfdc0.m4a"
+     "plural": "Benachrichtigungen"
     },
     {
      "de": "die Weiterleitung",
      "ru": "пересылка",
      "gender": "f",
-     "plural": "Weiterleitungen",
-     "audio": "audio/58e78564ef92.m4a"
+     "plural": "Weiterleitungen"
     },
     {
      "de": "der Entwurf",
      "ru": "черновой вариант",
      "gender": "m",
-     "plural": "Entwürfe",
-     "audio": "audio/a7ba827a07d3.m4a"
+     "plural": "Entwürfe"
     },
     {
      "de": "der Überblick",
      "ru": "обзор, общее представление",
      "gender": "m",
      "plural": null,
-     "noPlural": true,
-     "audio": "audio/e0e0d7f55f47.m4a"
+     "noPlural": true
     },
     {
      "de": "die Angabe",
      "ru": "сведение",
      "gender": "f",
-     "plural": "Angaben",
-     "audio": "audio/e9ca2838ba43.m4a"
+     "plural": "Angaben"
     },
     {
      "de": "das Original",
      "ru": "оригинал",
      "gender": "n",
-     "plural": "Originale",
-     "audio": "audio/d899ae0b51ed.m4a"
+     "plural": "Originale"
     },
     {
      "de": "die Kopie",
      "ru": "копия",
      "gender": "f",
-     "plural": "Kopien",
-     "audio": "audio/38a58803a590.m4a"
+     "plural": "Kopien"
     },
     {
      "de": "das Dokument",
      "ru": "документ",
      "gender": "n",
-     "plural": "Dokumente",
-     "audio": "audio/78e69d8efbfc.m4a"
+     "plural": "Dokumente"
     },
     {
      "de": "gültig",
      "ru": "действующий",
      "gender": null,
-     "plural": null,
-     "audio": "audio/d4bb210b2ef6.m4a"
+     "plural": null
     },
     {
      "de": "ursprünglich",
      "ru": "исходный",
      "gender": null,
-     "plural": null,
-     "audio": "audio/a5f56ab037ab.m4a"
+     "plural": null
     },
     {
      "de": "darauf warten",
      "ru": "ждать этого",
      "gender": null,
-     "plural": null,
-     "audio": "audio/a7c53e6ed880.m4a"
+     "plural": null
     },
     {
      "de": "dafür Zeit haben",
      "ru": "иметь на это время",
      "gender": null,
-     "plural": null,
-     "audio": "audio/e1b43bfda2bc.m4a"
+     "plural": null
     },
     {
      "de": "darüber sprechen",
      "ru": "говорить об этом",
      "gender": null,
-     "plural": null,
-     "audio": "audio/89b1f294e8c4.m4a"
+     "plural": null
     },
     {
      "de": "womit",
      "ru": "с помощью чего",
      "gender": null,
-     "plural": null,
-     "audio": "audio/e02bdfca1eb4.m4a"
+     "plural": null
     }
    ]
   }
@@ -524,63 +489,51 @@
    "script": [
     {
      "who": "Hauke",
-     "de": "Wie behältst du bei vielen Nachrichten den Überblick?",
-     "audio": "audio/1ccc8cf61600.m4a"
+     "de": "Wie behältst du bei vielen Nachrichten den Überblick?"
     },
     {
      "who": "Elif",
-     "de": "Ich lese die Projektgruppe zweimal am Tag. Benachrichtigungen sind meistens aus. Sonst schaue ich auch während des Kurses ständig auf das Handy.",
-     "audio": "audio/d94a9da29f45.m4a"
+     "de": "Ich lese die Projektgruppe zweimal am Tag. Benachrichtigungen sind meistens aus. Sonst schaue ich auch während des Kurses ständig auf das Handy."
     },
     {
      "who": "Hauke",
-     "de": "Worauf achtest du bei einer weitergeleiteten Nachricht?",
-     "audio": "audio/e1e84fa43bc4.m4a"
+     "de": "Worauf achtest du bei einer weitergeleiteten Nachricht?"
     },
     {
      "who": "Elif",
-     "de": "Auf den ursprünglichen Absender und das Datum. Gestern stand in einer alten Nachricht ein anderer Raum. Das war nur eine frühere Idee.",
-     "audio": "audio/53941249fcd3.m4a"
+     "de": "Auf den ursprünglichen Absender und das Datum. Gestern stand in einer alten Nachricht ein anderer Raum. Das war nur eine frühere Idee."
     },
     {
      "who": "Hauke",
-     "de": "Wo stehen die gültigen Angaben?",
-     "audio": "audio/3d3e8fcc8170.m4a"
+     "de": "Wo stehen die gültigen Angaben?"
     },
     {
      "who": "Elif",
-     "de": "In unserem gemeinsamen Dokument. Dort trennen wir Angebot, Entscheidung und offene Frage. Die Küche ist immer noch offen, und die Gruppe hat den Raum noch nicht gebucht.",
-     "audio": "audio/ad9334811c25.m4a"
+     "de": "In unserem gemeinsamen Dokument. Dort trennen wir Angebot, Entscheidung und offene Frage. Die Küche ist immer noch offen, und die Gruppe hat den Raum noch nicht gebucht."
     },
     {
      "who": "Hauke",
-     "de": "Womit bearbeitest du die Bilder?",
-     "audio": "audio/fac471e94056.m4a"
+     "de": "Womit bearbeitest du die Bilder?"
     },
     {
      "who": "Elif",
-     "de": "Am liebsten am Computer. Mit dem Handy wähle ich unterwegs nur Bilder aus. Die Originale bleiben erhalten. Für die Ausstellung mache ich kleinere Kopien.",
-     "audio": "audio/e5ce637d57a1.m4a"
+     "de": "Am liebsten am Computer. Mit dem Handy wähle ich unterwegs nur Bilder aus. Die Originale bleiben erhalten. Für die Ausstellung mache ich kleinere Kopien."
     },
     {
      "who": "Hauke",
-     "de": "Für wen ist der kurze Text neben der Karte?",
-     "audio": "audio/af160aa0cc69.m4a"
+     "de": "Für wen ist der kurze Text neben der Karte?"
     },
     {
      "who": "Elif",
-     "de": "Für neue Gäste. Sie kennen die Orte vielleicht noch nicht. Deshalb erklären wir die Namen und stellen eine persönliche Frage.",
-     "audio": "audio/599c01968f0d.m4a"
+     "de": "Für neue Gäste. Sie kennen die Orte vielleicht noch nicht. Deshalb erklären wir die Namen und stellen eine persönliche Frage."
     },
     {
      "who": "Hauke",
-     "de": "Und was passiert, wenn jemand einen Fehler findet?",
-     "audio": "audio/f8158bc9dcd4.m4a"
+     "de": "Und was passiert, wenn jemand einen Fehler findet?"
     },
     {
      "who": "Elif",
-     "de": "Dann ändern wir das gemeinsame Dokument. Eine private Nachricht allein reicht nicht. Danach informieren wir die Gruppe über die Änderung, damit alle denselben Stand kennen.",
-     "audio": "audio/07bf7451d017.m4a"
+     "de": "Dann ändern wir das gemeinsame Dokument. Eine private Nachricht allein reicht nicht. Danach informieren wir die Gruppe über die Änderung, damit alle denselben Stand kennen."
     }
    ],
    "sample": []
@@ -802,8 +755,7 @@
       ],
       "punct": ".",
       "plain": "Wir warten darauf, dass die Verwaltung antwortet.",
-      "ru": "Мы ждём, что администрация ответит.",
-      "audio": "audio/2687a79d0ea8.m4a"
+      "ru": "Мы ждём, что администрация ответит."
      }
     ]
    }
@@ -864,8 +816,7 @@
       ],
       "punct": ".",
       "plain": "Wir warten darauf, dass die Verwaltung antwortet.",
-      "ru": "Мы ждём, что администрация ответит.",
-      "audio": "audio/2687a79d0ea8.m4a"
+      "ru": "Мы ждём, что администрация ответит."
      }
     ]
    }
@@ -926,8 +877,7 @@
       ],
       "punct": ".",
       "plain": "Wir warten darauf, dass die Verwaltung antwortet.",
-      "ru": "Мы ждём, что администрация ответит.",
-      "audio": "audio/2687a79d0ea8.m4a"
+      "ru": "Мы ждём, что администрация ответит."
      }
     ]
    }
@@ -987,8 +937,7 @@
       ],
       "punct": ".",
       "plain": "Wir warten darauf, dass die Verwaltung antwortet.",
-      "ru": "Мы ждём, что администрация ответит.",
-      "audio": "audio/2687a79d0ea8.m4a"
+      "ru": "Мы ждём, что администрация ответит."
      }
     ],
     "task": "article"
@@ -1050,8 +999,7 @@
       ],
       "punct": ".",
       "plain": "Wir warten darauf, dass die Verwaltung antwortet.",
-      "ru": "Мы ждём, что администрация ответит.",
-      "audio": "audio/2687a79d0ea8.m4a"
+      "ru": "Мы ждём, что администрация ответит."
      }
     ],
     "task": "article"
@@ -1103,8 +1051,7 @@
       ],
       "punct": ".",
       "plain": "Wir warten darauf, dass die Verwaltung antwortet.",
-      "ru": "Мы ждём, что администрация ответит.",
-      "audio": "audio/2687a79d0ea8.m4a"
+      "ru": "Мы ждём, что администрация ответит."
      }
     ],
     "task": "article",
@@ -1166,8 +1113,7 @@
       ],
       "punct": ".",
       "plain": "Wir warten darauf, dass die Verwaltung antwortet.",
-      "ru": "Мы ждём, что администрация ответит.",
-      "audio": "audio/2687a79d0ea8.m4a"
+      "ru": "Мы ждём, что администрация ответит."
      }
     ],
     "task": "interview"
@@ -1229,8 +1175,7 @@
       ],
       "punct": ".",
       "plain": "Wir warten darauf, dass die Verwaltung antwortet.",
-      "ru": "Мы ждём, что администрация ответит.",
-      "audio": "audio/2687a79d0ea8.m4a"
+      "ru": "Мы ждём, что администрация ответит."
      }
     ],
     "task": "interview"
@@ -1282,8 +1227,7 @@
       ],
       "punct": ".",
       "plain": "Wir warten darauf, dass die Verwaltung antwortet.",
-      "ru": "Мы ждём, что администрация ответит.",
-      "audio": "audio/2687a79d0ea8.m4a"
+      "ru": "Мы ждём, что администрация ответит."
      }
     ],
     "task": "interview",
@@ -1345,8 +1289,7 @@
       ],
       "punct": ".",
       "plain": "Wir warten darauf, dass die Verwaltung antwortet.",
-      "ru": "Мы ждём, что администрация ответит.",
-      "audio": "audio/2687a79d0ea8.m4a"
+      "ru": "Мы ждём, что администрация ответит."
      }
     ],
     "task": "opinions"
@@ -1408,8 +1351,7 @@
       ],
       "punct": ".",
       "plain": "Wir warten darauf, dass die Verwaltung antwortet.",
-      "ru": "Мы ждём, что администрация ответит.",
-      "audio": "audio/2687a79d0ea8.m4a"
+      "ru": "Мы ждём, что администрация ответит."
      }
     ],
     "task": "opinions"
@@ -1461,8 +1403,7 @@
       ],
       "punct": ".",
       "plain": "Wir warten darauf, dass die Verwaltung antwortet.",
-      "ru": "Мы ждём, что администрация ответит.",
-      "audio": "audio/2687a79d0ea8.m4a"
+      "ru": "Мы ждём, что администрация ответит."
      }
     ],
     "task": "opinions",
@@ -1481,8 +1422,7 @@
     "darauf"
    ],
    "answer": 2,
-   "why": "Сохраняется auf.",
-   "audio": "audio/1830b67a2653.m4a"
+   "why": "Сохраняется auf."
   },
   {
    "id": "b1-online-2",
@@ -1494,8 +1434,7 @@
     "Für wen"
    ],
    "answer": 2,
-   "why": "Вопрос о человеке.",
-   "audio": "audio/e6bab61bee10.m4a"
+   "why": "Вопрос о человеке."
   },
   {
    "id": "b1-online-3",
@@ -1507,8 +1446,7 @@
     "dafür"
    ],
    "answer": 0,
-   "why": "Средство с mit.",
-   "audio": "audio/39d8c1a292ff.m4a"
+   "why": "Средство с mit."
   },
   {
    "id": "b1-online-4",
@@ -1520,8 +1458,7 @@
     "Wofür"
    ],
    "answer": 2,
-   "why": "Цель с für.",
-   "audio": "audio/724f3402cd4a.m4a"
+   "why": "Цель с für."
   },
   {
    "id": "b1-online-5",
@@ -1533,8 +1470,7 @@
     "kommt"
    ],
    "answer": 2,
-   "why": "Личная форма в конце dass.",
-   "audio": "audio/2a762ea6a84f.m4a"
+   "why": "Личная форма в конце dass."
   },
   {
    "id": "b1-online-6",
@@ -1552,8 +1488,7 @@
    "id": "b1-online-7",
    "type": "order",
    "de": "Worauf wartest du noch?",
-   "ru": "Чего ты ещё ждёшь?",
-   "audio": "audio/927cedc55ac1.m4a"
+   "ru": "Чего ты ещё ждёшь?"
   },
   {
    "id": "b1-online-8",
@@ -1562,15 +1497,13 @@
    "ru": "Мы ждём, что администрация ответит.",
    "also": [
     "Darauf, dass die Verwaltung antwortet, warten wir."
-   ],
-   "audio": "audio/2687a79d0ea8.m4a"
+   ]
   },
   {
    "id": "b1-online-9",
    "type": "order",
    "de": "Für wen ist die Kopie?",
-   "ru": "Для кого копия?",
-   "audio": "audio/c177e1772879.m4a"
+   "ru": "Для кого копия?"
   },
   {
    "id": "b1-online-10",
@@ -1580,8 +1513,7 @@
    "also": [
     "Mateo braucht dafür die Liste.",
     "Die Liste braucht Mateo dafür."
-   ],
-   "audio": "audio/fc80a5ff7828.m4a"
+   ]
   },
   {
    "id": "b1-online-11",
@@ -1591,8 +1523,7 @@
    "also": [
     "Die Bilder bearbeitet Elif am Computer.",
     "Am Computer bearbeitet Elif die Bilder."
-   ],
-   "audio": "audio/3f2218aca5dc.m4a"
+   ]
   },
   {
    "id": "b1-online-12",
@@ -1602,8 +1533,7 @@
    "also": [
     "Zugesagt hat die Gruppe noch nicht.",
     "Noch nicht zugesagt hat die Gruppe."
-   ],
-   "audio": "audio/856a8899d3a9.m4a"
+   ]
   }
  ],
  "case": {

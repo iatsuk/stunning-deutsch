@@ -43,12 +43,10 @@
    ],
    "recordings": [
     {
-     "text": "Guten Tag, hier ist der Lernclub. Ihr Gespräch am Montag fällt aus. Der neue Termin ist am Dienstag um vierzehn Uhr. Bitte bestätigen Sie den Termin.",
-     "audio": "audio/e3dd663ad1c6.m4a"
+     "text": "Guten Tag, hier ist der Lernclub. Ihr Gespräch am Montag fällt aus. Der neue Termin ist am Dienstag um vierzehn Uhr. Bitte bestätigen Sie den Termin."
     },
     {
-     "text": "Hallo, hier ist Mira. Ich habe ein grünes T-Shirt in Größe L bestellt. In der Tüte ist aber Größe M. Ich möchte die Bestellung prüfen lassen.",
-     "audio": "audio/6c78ad92e9e6.m4a"
+     "text": "Hallo, hier ist Mira. Ich habe ein grünes T-Shirt in Größe L bestellt. In der Tüte ist aber Größe M. Ich möchte die Bestellung prüfen lassen."
     }
    ],
    "sample": []

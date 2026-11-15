@@ -68,50 +68,42 @@
     {
      "who": "D",
      "de": "Fahren wir am Samstag nach Eckernförde?",
-     "ru": "Поедем в субботу в Эккернфёрде?",
-     "audio": "audio/d7618cedc671.m4a"
+     "ru": "Поедем в субботу в Эккернфёрде?"
     },
     {
      "who": "M",
      "de": "Am Samstag kann ich nicht, weil ich arbeiten muss.",
-     "ru": "В субботу я не могу, потому что должен работать.",
-     "audio": "audio/6c404f50136b.m4a"
+     "ru": "В субботу я не могу, потому что должен работать."
     },
     {
      "who": "E",
      "de": "Dann fahren wir am Sonntag. Möchtest du an den Strand?",
-     "ru": "Тогда поедем в воскресенье. Хочешь на пляж?",
-     "audio": "audio/e8f6969feb6a.m4a"
+     "ru": "Тогда поедем в воскресенье. Хочешь на пляж?"
     },
     {
      "who": "M",
      "de": "Ja, gern. Ich möchte aber auch ins Café, weil ich dort frühstücken möchte.",
-     "ru": "Да, с удовольствием. Но хочу и в кафе, потому что хочу там позавтракать.",
-     "audio": "audio/f2d7baf9554e.m4a"
+     "ru": "Да, с удовольствием. Но хочу и в кафе, потому что хочу там позавтракать."
     },
     {
      "who": "H",
      "de": "Wir können zuerst frühstücken und danach spazieren gehen.",
-     "ru": "Сначала можем позавтракать, потом погулять.",
-     "audio": "audio/f6241e777d6a.m4a"
+     "ru": "Сначала можем позавтракать, потом погулять."
     },
     {
      "who": "D",
      "de": "Gut. Wir fahren mit dem Zug, weil wir kein Auto haben.",
-     "ru": "Хорошо. Поедем поездом, потому что у нас нет машины.",
-     "audio": "audio/e727d91c326c.m4a"
+     "ru": "Хорошо. Поедем поездом, потому что у нас нет машины."
     },
     {
      "who": "E",
      "de": "Und wann treffen wir uns?",
-     "ru": "А когда встречаемся?",
-     "audio": "audio/6e345fab03f6.m4a"
+     "ru": "А когда встречаемся?"
     },
     {
      "who": "H",
      "de": "Am Sonntag um neun am Bahnhof. Passt das?",
-     "ru": "В воскресенье в девять у вокзала. Подходит?",
-     "audio": "audio/28de38f57bae.m4a"
+     "ru": "В воскресенье в девять у вокзала. Подходит?"
     }
    ]
   }
@@ -125,85 +117,73 @@
      "de": "warum",
      "ru": "почему",
      "gender": null,
-     "plural": null,
-     "audio": "audio/699b12b71dad.m4a"
+     "plural": null
     },
     {
      "de": "weil",
      "ru": "потому что",
      "gender": null,
-     "plural": null,
-     "audio": "audio/a1f44766a559.m4a"
+     "plural": null
     },
     {
      "de": "der Grund",
      "ru": "причина",
      "gender": "m",
-     "plural": "Gründe",
-     "audio": "audio/3b89133f7cd1.m4a"
+     "plural": "Gründe"
     },
     {
      "de": "der Vorschlag",
      "ru": "предложение",
      "gender": "m",
-     "plural": "Vorschläge",
-     "audio": "audio/1ce35d0e8c75.m4a"
+     "plural": "Vorschläge"
     },
     {
      "de": "passen",
      "ru": "подходить",
      "gender": null,
-     "plural": null,
-     "audio": "audio/0eabeaf5796a.m4a"
+     "plural": null
     },
     {
      "de": "zusammen",
      "ru": "вместе",
      "gender": null,
-     "plural": null,
-     "audio": "audio/e23f804d5200.m4a"
+     "plural": null
     },
     {
      "de": "zuerst",
      "ru": "сначала",
      "gender": null,
-     "plural": null,
-     "audio": "audio/78063bbc9d8b.m4a"
+     "plural": null
     },
     {
      "de": "danach",
      "ru": "затем",
      "gender": null,
-     "plural": null,
-     "audio": "audio/ad89dc0448d2.m4a"
+     "plural": null
     },
     {
      "de": "frühstücken",
      "ru": "завтракать",
      "gender": null,
-     "plural": null,
-     "audio": "audio/60c3c835cbbe.m4a"
+     "plural": null
     },
     {
      "de": "spazieren gehen",
      "ru": "гулять",
      "gender": null,
-     "plural": null,
-     "audio": "audio/2b3afc2ee8fb.m4a"
+     "plural": null
     },
     {
      "de": "absagen",
      "ru": "отменять, отказываться",
      "gender": null,
-     "plural": null,
-     "audio": "audio/90323eb0a48e.m4a"
+     "plural": null
     },
     {
      "de": "einverstanden",
      "ru": "согласен",
      "gender": null,
-     "plural": null,
-     "audio": "audio/e08f91bf595e.m4a"
+     "plural": null
     }
    ]
   }
@@ -260,16 +240,13 @@
    ],
    "sample": [
     {
-     "de": "Liebe Elif,",
-     "audio": "audio/cc71c7022654.m4a"
+     "de": "Liebe Elif,"
     },
     {
-     "de": "ich möchte am Sonntag nach Eckernförde fahren, weil ich am Strand spazieren gehen möchte. Danach können wir im Café frühstücken. Am Samstag muss ich arbeiten. Passt dir der Ausflug? Sag mir bitte Bescheid.",
-     "audio": "audio/e1cde9e79d5c.m4a"
+     "de": "ich möchte am Sonntag nach Eckernförde fahren, weil ich am Strand spazieren gehen möchte. Danach können wir im Café frühstücken. Am Samstag muss ich arbeiten. Passt dir der Ausflug? Sag mir bitte Bescheid."
     },
     {
-     "de": "Viele Grüße",
-     "audio": "audio/faf8fee74cb4.m4a"
+     "de": "Viele Grüße"
     }
    ]
   },
@@ -517,8 +494,7 @@
       ],
       "punct": ".",
       "plain": "Ich kann nicht, weil ich arbeiten muss.",
-      "ru": "Я не могу, потому что должен работать.",
-      "audio": "audio/082b26bd9a3f.m4a"
+      "ru": "Я не могу, потому что должен работать."
      }
     ]
    }
@@ -578,8 +554,7 @@
       ],
       "punct": ".",
       "plain": "Ich kann nicht, weil ich arbeiten muss.",
-      "ru": "Я не могу, потому что должен работать.",
-      "audio": "audio/082b26bd9a3f.m4a"
+      "ru": "Я не могу, потому что должен работать."
      }
     ]
    }
@@ -639,8 +614,7 @@
       ],
       "punct": ".",
       "plain": "Ich kann nicht, weil ich arbeiten muss.",
-      "ru": "Я не могу, потому что должен работать.",
-      "audio": "audio/082b26bd9a3f.m4a"
+      "ru": "Я не могу, потому что должен работать."
      }
     ]
    }
@@ -699,8 +673,7 @@
       ],
       "punct": ".",
       "plain": "Ich kann nicht, weil ich arbeiten muss.",
-      "ru": "Я не могу, потому что должен работать.",
-      "audio": "audio/082b26bd9a3f.m4a"
+      "ru": "Я не могу, потому что должен работать."
      }
     ],
     "task": "plan"
@@ -761,8 +734,7 @@
       ],
       "punct": ".",
       "plain": "Ich kann nicht, weil ich arbeiten muss.",
-      "ru": "Я не могу, потому что должен работать.",
-      "audio": "audio/082b26bd9a3f.m4a"
+      "ru": "Я не могу, потому что должен работать."
      }
     ],
     "task": "plan"
@@ -813,8 +785,7 @@
       ],
       "punct": ".",
       "plain": "Ich kann nicht, weil ich arbeiten muss.",
-      "ru": "Я не могу, потому что должен работать.",
-      "audio": "audio/082b26bd9a3f.m4a"
+      "ru": "Я не могу, потому что должен работать."
      }
     ],
     "task": "plan",
@@ -875,8 +846,7 @@
       ],
       "punct": ".",
       "plain": "Ich kann nicht, weil ich arbeiten muss.",
-      "ru": "Я не могу, потому что должен работать.",
-      "audio": "audio/082b26bd9a3f.m4a"
+      "ru": "Я не могу, потому что должен работать."
      }
     ],
     "task": "letter",
@@ -938,8 +908,7 @@
       ],
       "punct": ".",
       "plain": "Ich kann nicht, weil ich arbeiten muss.",
-      "ru": "Я не могу, потому что должен работать.",
-      "audio": "audio/082b26bd9a3f.m4a"
+      "ru": "Я не могу, потому что должен работать."
      }
     ],
     "task": "letter",
@@ -991,8 +960,7 @@
       ],
       "punct": ".",
       "plain": "Ich kann nicht, weil ich arbeiten muss.",
-      "ru": "Я не могу, потому что должен работать.",
-      "audio": "audio/082b26bd9a3f.m4a"
+      "ru": "Я не могу, потому что должен работать."
      }
     ],
     "task": "letter",
@@ -1054,8 +1022,7 @@
       ],
       "punct": ".",
       "plain": "Ich kann nicht, weil ich arbeiten muss.",
-      "ru": "Я не могу, потому что должен работать.",
-      "audio": "audio/082b26bd9a3f.m4a"
+      "ru": "Я не могу, потому что должен работать."
      }
     ],
     "task": "pair"
@@ -1116,8 +1083,7 @@
       ],
       "punct": ".",
       "plain": "Ich kann nicht, weil ich arbeiten muss.",
-      "ru": "Я не могу, потому что должен работать.",
-      "audio": "audio/082b26bd9a3f.m4a"
+      "ru": "Я не могу, потому что должен работать."
      }
     ],
     "task": "pair"
@@ -1168,8 +1134,7 @@
       ],
       "punct": ".",
       "plain": "Ich kann nicht, weil ich arbeiten muss.",
-      "ru": "Я не могу, потому что должен работать.",
-      "audio": "audio/082b26bd9a3f.m4a"
+      "ru": "Я не могу, потому что должен работать."
      }
     ],
     "task": "pair",
@@ -1188,8 +1153,7 @@
     "musst"
    ],
    "answer": 0,
-   "why": "Личная форма в конце.",
-   "audio": "audio/f35067233c66.m4a"
+   "why": "Личная форма в конце."
   },
   {
    "id": "a2-gruende-2",
@@ -1201,8 +1165,7 @@
     "und"
    ],
    "answer": 0,
-   "why": "Причина.",
-   "audio": "audio/25d8fb358d2d.m4a"
+   "why": "Причина."
   },
   {
    "id": "a2-gruende-3",
@@ -1239,8 +1202,7 @@
     "bin"
    ],
    "answer": 0,
-   "why": "*frei haben*.",
-   "audio": "audio/f9d7ae4d9680.m4a"
+   "why": "*frei haben*."
   },
   {
    "id": "a2-gruende-6",
@@ -1252,8 +1214,7 @@
     "dem"
    ],
    "answer": 0,
-   "why": "Готовый вопрос *Passt das?*.",
-   "audio": "audio/800819a22c04.m4a"
+   "why": "Готовый вопрос *Passt das?*."
   },
   {
    "id": "a2-gruende-7",
@@ -1262,8 +1223,7 @@
    "also": [
     "Weil ich arbeiten muss, komme ich nicht."
    ],
-   "de": "Ich komme nicht, weil ich arbeiten muss.",
-   "audio": "audio/f35067233c66.m4a"
+   "de": "Ich komme nicht, weil ich arbeiten muss."
   },
   {
    "id": "a2-gruende-8",
@@ -1273,8 +1233,7 @@
     "Weil wir kein Auto haben, fahren wir mit dem Zug.",
     "Mit dem Zug fahren wir, weil wir kein Auto haben."
    ],
-   "de": "Wir fahren mit dem Zug, weil wir kein Auto haben.",
-   "audio": "audio/25d8fb358d2d.m4a"
+   "de": "Wir fahren mit dem Zug, weil wir kein Auto haben."
   },
   {
    "id": "a2-gruende-9",
@@ -1284,8 +1243,7 @@
     "Wir frühstücken zuerst im Café.",
     "Im Café frühstücken wir zuerst."
    ],
-   "de": "Zuerst frühstücken wir im Café.",
-   "audio": "audio/288b678bc92c.m4a"
+   "de": "Zuerst frühstücken wir im Café."
   },
   {
    "id": "a2-gruende-10",
@@ -1294,8 +1252,7 @@
    "also": [
     "Wir gehen danach spazieren."
    ],
-   "de": "Danach gehen wir spazieren.",
-   "audio": "audio/48eeaade5607.m4a"
+   "de": "Danach gehen wir spazieren."
   },
   {
    "id": "a2-gruende-11",
@@ -1304,15 +1261,13 @@
    "also": [
     "Ich habe am Sonntag frei."
    ],
-   "de": "Am Sonntag habe ich frei.",
-   "audio": "audio/f9d7ae4d9680.m4a"
+   "de": "Am Sonntag habe ich frei."
   },
   {
    "id": "a2-gruende-12",
    "type": "order",
    "ru": "Тебе это подходит?",
-   "de": "Passt das für dich?",
-   "audio": "audio/800819a22c04.m4a"
+   "de": "Passt das für dich?"
   }
  ],
  "case": {

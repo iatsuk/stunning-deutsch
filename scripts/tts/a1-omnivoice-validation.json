@@ -1,0 +1,458 @@
+{
+ "date": "2026-11-15",
+ "scope": "All A1 recordings that were still Qwen: 440 used by the Moin game (dictionary, story expressions, rule cards) and 319 used only by A1 lesson pages; re-voiced with OmniVoice under new file names. A2 and B1 recordings (Qwen) were removed with the hidden levels.",
+ "model": "k2-fsa/OmniVoice",
+ "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+ "candidatesPerPhrase": 3,
+ "asr": "openai/whisper-large-v3",
+ "newFiles": 759,
+ "exact": 688,
+ "notes": [
+  "The chosen take has no fragment or cut ending flagged by tails.py and the closest transcript; the default seed wins ties.",
+  "«nie» was heard as «2.» in 9 of 11 takes; the retake with seed 21302872 was heard as «Nie.».",
+  "Most remaining differences are digits for number words, spelled letters and names (Mateo → Matteo, Ospanowa → Ospanova, Arman → Amon). Automated checks do not replace listening."
+ ],
+ "differences": [
+  {
+   "text": "Ich komme aus Kasachstan. Aber ich wohne jetzt hier in Kiel, in Gaarden.",
+   "heard": "Ich komme aus Kasachstan, aber ich wohne jetzt hier in Kiel, in Garden."
+  },
+  {
+   "text": "zwei",
+   "heard": "2."
+  },
+  {
+   "text": "drei",
+   "heard": "3."
+  },
+  {
+   "text": "vier",
+   "heard": "4."
+  },
+  {
+   "text": "sieben",
+   "heard": "7."
+  },
+  {
+   "text": "neun",
+   "heard": "9."
+  },
+  {
+   "text": "zehn",
+   "heard": "10."
+  },
+  {
+   "text": "Fahrrad fahren",
+   "heard": "Fahrradfahren"
+  },
+  {
+   "text": "Der Zug ist um acht Uhr angekommen.",
+   "heard": "Der Zug ist um 8 Uhr angekommen."
+  },
+  {
+   "text": "Um acht Uhr ist der Zug angekommen.",
+   "heard": "Um 8 Uhr ist der Zug angekommen."
+  },
+  {
+   "text": "Moin, Dana! Ich heiße Mateo.",
+   "heard": "Moin Dana, ich heiße Matteo."
+  },
+  {
+   "text": "Woher kommst du, Mateo?",
+   "heard": "Woher kommst du, Matteo?"
+  },
+  {
+   "text": "Ich heiße Mateo. Ich komme aus Argentinien.",
+   "heard": "Ich heiße Matteo, ich komme aus Argentinien."
+  },
+  {
+   "text": "Um zehn Uhr am Abend sind sie hier. Dann segeln sie.",
+   "heard": "Um 10 Uhr am Abend sind Sie hier. Dann segeln Sie."
+  },
+  {
+   "text": "Moin, hier ist Dana Ospanowa. Ich möchte die A1-Prüfung machen.",
+   "heard": "Moin, hier ist Dana Ospanova. Ich möchte die A1-Prüfung machen."
+  },
+  {
+   "text": "O – S – P – A – N – O – W – A. W wie Wilhelm.",
+   "heard": "O-S-P-A-N-O-W wie Wilhelm"
+  },
+  {
+   "text": "Nein, dreiundzwanzig! Zwei – drei.",
+   "heard": "Nein, 23.23."
+  },
+  {
+   "text": "Ah, dreiundzwanzig! Danke, Frau Ospanowa. Auf Wiederhören!",
+   "heard": "A23. Danke Frau Ospanova. Auf Wiederhören."
+  },
+  {
+   "text": "Ja! Ich habe heute achtundzwanzig Jahre.",
+   "heard": "Ja, ich habe heute 28 Jahre."
+  },
+  {
+   "text": "Ja, natürlich! Alles Gute, Mateo!",
+   "heard": "Ja, natürlich. Alles Gute, Matteo."
+  },
+  {
+   "text": "Nein, zweiunddreißig. Drei – zwei.",
+   "heard": "Nein, 32, 3, 2."
+  },
+  {
+   "text": "Es – Pe – Er – O – Te – Te – E. Habt ihr Wasser?",
+   "heard": "S-P-R-O-T-T-E. Habt ihr Wasser?"
+  },
+  {
+   "text": "Meine Handynummer ist null eins fünf neun – drei vier sieben sieben eins zwei.",
+   "heard": "Meine Handynummer ist 0159 347712."
+  },
+  {
+   "text": "Moin, hier ist Kerstin Petersen, Sprachschule Förde. Eine Nachricht für Mateo Fernández: Herr Fernández, Ihr Kurs ist jetzt in Raum zweihundertvierzehn. Zwei – eins – vier. Haben Sie Fragen? Meine Nummer ist null vier drei eins – achtundfünfzig – siebenundneunzig – dreißig. Auf Wiederhören!",
+   "heard": "Moin, hier ist Kerstin Petersen, Sprachschule Förde. Eine Nachricht für Matteo Fernandes. Herr Fernandes, Ihr Kurs ist jetzt in Raum 214. 2 1 4. Haben Sie Fragen? Meine Nummer ist 0431 58 97 30. Auf Wiederhören."
+  },
+  {
+   "text": "Mateo hat Kuchen für alle.",
+   "heard": "Matteo hat Kuchen für alle."
+  },
+  {
+   "text": "Zweiunddreißig? Da liegt die „Sprotte“!",
+   "heard": "32. Da liegt die Sprotte."
+  },
+  {
+   "text": "Und du, Mateo? Hast du Geschwister?",
+   "heard": "Und du, Matteo? Hast du Geschwister?"
+  },
+  {
+   "text": "Ein Mädchen – Sofia. Ich bin jetzt Onkel!",
+   "heard": "Ein Mädchen Sophia. Ich bin jetzt Onkel."
+  },
+  {
+   "text": "Das ist Lucía. Das ist ihr Handy. Und das ist Diego. Das ist seine Tasche.",
+   "heard": "Das ist Lucia. Das ist ihr Handy. Und das ist Diego. Das ist seine Tasche."
+  },
+  {
+   "text": "Das ist Lucía, und das ist ihr Mann.",
+   "heard": "Das ist Lucia und das ist ihr Mann."
+  },
+  {
+   "text": "Das ist Arman, und das ist seine Frau.",
+   "heard": "Das ist Amon und das ist seine Frau."
+  },
+  {
+   "text": "Mateo, ist das deine Schwester?",
+   "heard": "Matteo, ist das deine Schwester?"
+  },
+  {
+   "text": "Mateo hat keine Kinder.",
+   "heard": "Matteo hat keine Kinder."
+  },
+  {
+   "text": "Diego hat keine Geschwister. Wir haben eine Tochter, Sofia.",
+   "heard": "Diego hat keine Geschwister. Wir haben eine Tochter, Sophia."
+  },
+  {
+   "text": "Das macht elf Euro.",
+   "heard": "Das macht 11 Euro."
+  },
+  {
+   "text": "Den Kuchen isst Mateo.",
+   "heard": "Den Kuchen isst Matteo."
+  },
+  {
+   "text": "Mateo isst den Kuchen.",
+   "heard": "Matteo isst den Kuchen."
+  },
+  {
+   "text": "Mateo möchte ein Stück Kuchen.",
+   "heard": "Matteo möchte ein Stück Kuchen."
+  },
+  {
+   "text": "Ein Tee, ein Kaffee und ein Stück Kuchen. Zusammen elf Euro.",
+   "heard": "Ein Tee, ein Kaffee und ein Stück Kuchen. Zusammen 11 Euro."
+  },
+  {
+   "text": "Guten Morgen! Bitte schön?",
+   "heard": "Guten Morgen, bitteschön."
+  },
+  {
+   "text": "Zwei Euro fünfzig das Kilo.",
+   "heard": "2,50 Euro das Kilo."
+  },
+  {
+   "text": "Hier sind zehn Euro.",
+   "heard": "Hier sind 10 Euro."
+  },
+  {
+   "text": "Mateo, wann fängt deine Arbeit an?",
+   "heard": "Matteo, wann fängt deine Arbeit an?"
+  },
+  {
+   "text": "Ich rufe Mateo am Samstag an.",
+   "heard": "Ich rufe Matteo am Samstag an."
+  },
+  {
+   "text": "Es ist sechs Uhr.",
+   "heard": "Es ist 6 Uhr."
+  },
+  {
+   "text": "Der Kurs fängt um neun Uhr an.",
+   "heard": "Der Kurs fängt um 9 Uhr an."
+  },
+  {
+   "text": "Am Abend sieht Mateo fern.",
+   "heard": "Am Abend sieht Matteo fern."
+  },
+  {
+   "text": "Der Kurs fängt um neun an.",
+   "heard": "Der Kurs fängt um 9 Uhr an."
+  },
+  {
+   "text": "Mateo, was machst du am Wochenende?",
+   "heard": "Matteo, was machst du am Wochenende?"
+  },
+  {
+   "text": "Super! Wollen wir um zehn Uhr spielen?",
+   "heard": "Super! Wollen wir um 10 Uhr spielen?"
+  },
+  {
+   "text": "Mateo kann nicht gut schwimmen.",
+   "heard": "Matteo kann nicht gut schwimmen."
+  },
+  {
+   "text": "Am Sonntag um halb sechs an der Kiellinie. Wir wollen zusammen fotografieren.",
+   "heard": "Am Sonntag um halb sechs an der Kiel-Linie. Wir wollen zusammen fotografieren."
+  },
+  {
+   "text": "Dana, Lucía und Diego suchen eine Wohnung. Ihr Zimmer ist zu klein.",
+   "heard": "Dana, Lucia und Diego suchen eine Wohnung. Ihr Zimmer ist zu klein."
+  },
+  {
+   "text": "Guten Tag, Herr Fernández! Hier ist der Flur, und links ist das Wohnzimmer.",
+   "heard": "Guten Tag, Herr Fernandes. Hier ist der Flur und links ist das Wohnzimmer."
+  },
+  {
+   "text": "Ich finde sie gut. Ich rufe Lucía und Diego an.",
+   "heard": "Ich finde sie gut. Ich rufe Lucia und Diego an."
+  },
+  {
+   "text": "Mateo wohnt jetzt in einer Wohnung in Holtenau.",
+   "heard": "Matteo wohnt jetzt in einer Wohnung in Holtenau."
+  },
+  {
+   "text": "Guten Morgen, hier ist Mateo Fernández. Ich brauche einen Termin, bitte.",
+   "heard": "Guten Morgen, hier ist Matteo Fernandes. Ich brauche einen Termin, bitte."
+  },
+  {
+   "text": "Gute Besserung, Herr Fernández. Bis später!",
+   "heard": "Gute Besserung, Herr Fernandes. Bis später."
+  },
+  {
+   "text": "Brot, alles klar. Gute Besserung, Mateo!",
+   "heard": "Brot, alles klar. Gute Besserung, Matteo."
+  },
+  {
+   "text": "Guten Tag, Herr Fernández, hier ist die Praxis Dr. Hoffmann. Sie haben am Freitag um zehn Uhr einen Termin. Das geht leider nicht: Frau Dr. Hoffmann ist am Freitag nicht da. Können Sie am Montag um halb neun kommen? Bitte rufen Sie uns kurz an. Vielen Dank und auf Wiederhören!",
+   "heard": "Guten Tag, Herr Fernandes. Hier ist die Praxis, Dr. Hoffmann. Sie haben am Freitag um 10 Uhr einen Termin. Das geht leider nicht. Frau Dr. Hoffmann ist am Freitag nicht da. Können Sie am Montag um halb neun kommen? Bitte rufen Sie uns kurz an. Vielen Dank und auf Wiederhören."
+  },
+  {
+   "text": "Mateo",
+   "heard": "Matteo"
+  },
+  {
+   "text": "Trink viel Tee, Mateo!",
+   "heard": "Trink viel Tee, Matteo."
+  },
+  {
+   "text": "Schlaf viel, Mateo!",
+   "heard": "Schlaf viel, Matteo."
+  },
+  {
+   "text": "Nimm die Karte mit, Mateo!",
+   "heard": "Nimm die Karte mit, Matteo."
+  },
+  {
+   "text": "Mateo ist Koch, und Maria ist auch Köchin.",
+   "heard": "Matteo ist Koch und Maria ist auch Köchin."
+  },
+  {
+   "text": "Für zwei Nächte, vom zweiten bis zum vierten Juni.",
+   "heard": "Für zwei Nächte vom 2. bis zum 4. Juni."
+  },
+  {
+   "text": "Toll! Kommt morgen gut nach Hause! Und viele Grüße an Mateo!",
+   "heard": "Toll, kommt morgen gut nach Hause und viele Grüße an Matteo."
+  },
+  {
+   "text": "Mateo und ich sind am Wochenende mit dem Zug nach Hamburg gefahren.",
+   "heard": "Matteo und ich sind am Wochenende mit dem Zug nach Hamburg gefahren."
+  },
+  {
+   "text": "Der Zug kommt um acht Uhr an.",
+   "heard": "Der Zug kommt um 8 Uhr an."
+  },
+  {
+   "text": "Ich bin heute um sechs Uhr aufgestanden.",
+   "heard": "Ich bin heute um 6 Uhr aufgestanden."
+  },
+  {
+   "text": "Heute ist der dritte Juni.",
+   "heard": "Heute ist der 3. Juni."
+  }
+ ],
+ "seedOverrides": [
+  {
+   "text": "Argentinien",
+   "seed": 20798027,
+   "heard": "Argentinien"
+  },
+  {
+   "text": "buchstabieren",
+   "seed": 21202312,
+   "heard": "buchstabieren"
+  },
+  {
+   "text": "Langsam, bitte.",
+   "seed": 21029999,
+   "heard": "Langsam bitte."
+  },
+  {
+   "text": "ein Kilo",
+   "seed": 20836670,
+   "heard": "Ein Kilo."
+  },
+  {
+   "text": "100 Gramm",
+   "seed": 21051501,
+   "heard": "100 Gramm"
+  },
+  {
+   "text": "der Mantel, die Mäntel",
+   "seed": 20531567,
+   "heard": "Der Mantel, die Mäntel"
+  },
+  {
+   "text": "vor",
+   "seed": 20470284,
+   "heard": "Vor"
+  },
+  {
+   "text": "Fußball spielen",
+   "seed": 20763015,
+   "heard": "Fußball spielen"
+  },
+  {
+   "text": "nie",
+   "seed": 21302872,
+   "heard": "Nie."
+  },
+  {
+   "text": "frei",
+   "seed": 20407705,
+   "heard": "frei"
+  },
+  {
+   "text": "mieten",
+   "seed": 20661143,
+   "heard": "Mieten"
+  },
+  {
+   "text": "schon",
+   "seed": 20676976,
+   "heard": "Schon."
+  },
+  {
+   "text": "bekommen",
+   "seed": 21124649,
+   "heard": "bekommen."
+  },
+  {
+   "text": "legen",
+   "seed": 20384414,
+   "heard": "Legen"
+  },
+  {
+   "text": "sich kümmern",
+   "seed": 20698677,
+   "heard": "Sich kümmern"
+  },
+  {
+   "text": "erklären",
+   "seed": 21184290,
+   "heard": "Erklären"
+  },
+  {
+   "text": "Ich komme aus Argentinien, aus Buenos Aires. Und du?",
+   "seed": 20522020,
+   "heard": "Ich komme aus Argentinien, aus Buenos Aires. Und du?"
+  },
+  {
+   "text": "Ja, ich wohne in Holtenau. Ich segle gern. Und du?",
+   "seed": 21148695,
+   "heard": "Ja, ich wohne in Holtenau. Ich segle gern. Und du?"
+  },
+  {
+   "text": "O – S – P – A – N – O – W – A. W wie Wilhelm.",
+   "seed": 20816862,
+   "heard": "O-S-P-A-N-O-W wie Wilhelm"
+  },
+  {
+   "text": "Nein, zweiunddreißig. Drei – zwei.",
+   "seed": 20681599,
+   "heard": "Nein, 32, 3, 2."
+  },
+  {
+   "text": "Es – Pe – Er – O – Te – Te – E. Habt ihr Wasser?",
+   "seed": 20652141,
+   "heard": "S-P-R-O-T-T-E. Habt ihr Wasser?"
+  },
+  {
+   "text": "Und wer ist das? Ist das ihr Mann?",
+   "seed": 20302549,
+   "heard": "Und wer ist das? Ist das ihr Mann?"
+  },
+  {
+   "text": "Möchten Sie auch ein Stück Kuchen?",
+   "seed": 20554116,
+   "heard": "Möchten Sie auch ein Stück Kuchen?"
+  },
+  {
+   "text": "Ja, einen Pullover.",
+   "seed": 21086526,
+   "heard": "Ja, einen Pullover."
+  },
+  {
+   "text": "Schwimmen? Hm … ich kann nicht gut schwimmen.",
+   "seed": 20639195,
+   "heard": "Schwimmen? Hm, ich kann nicht gut schwimmen."
+  },
+  {
+   "text": "Ja! Tennis spiele ich sehr gern.",
+   "seed": 20968119,
+   "heard": "Ja, Tennis spiele ich sehr gern."
+  },
+  {
+   "text": "Ich will am Sonntag lieber am Wasser fotografieren.",
+   "seed": 20581970,
+   "heard": "Ich will am Sonntag lieber am Wasser fotografieren."
+  },
+  {
+   "text": "Mateo wohnt jetzt in einer Wohnung in Holtenau.",
+   "seed": 21012460,
+   "heard": "Matteo wohnt jetzt in einer Wohnung in Holtenau."
+  },
+  {
+   "text": "Um acht fahre ich nach Hause.",
+   "seed": 20644649,
+   "heard": "Um acht fahre ich nach Hause."
+  },
+  {
+   "text": "Du darfst nicht rauchen!",
+   "seed": 20399055,
+   "heard": "Du darfst nicht rauchen."
+  },
+  {
+   "text": "Mateo ist im März von Buenos Aires nach Hamburg geflogen.",
+   "seed": 20908702,
+   "heard": "Mateo ist im März von Buenos Aires nach Hamburg geflogen."
+  }
+ ]
+}

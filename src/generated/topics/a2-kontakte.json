@@ -74,50 +74,42 @@
     {
      "who": "E",
      "de": "Guten Tag. Können Sie mir sagen, wann der Fotokurs beginnt?",
-     "ru": "Добрый день. Не могли бы вы сказать, когда начинается фотокурс?",
-     "audio": "audio/85b830b5c2f5.m4a"
+     "ru": "Добрый день. Не могли бы вы сказать, когда начинается фотокурс?"
     },
     {
      "who": "K",
      "de": "Am Samstag um elf Uhr.",
-     "ru": "В субботу в одиннадцать.",
-     "audio": "audio/eadeeaf7a5cc.m4a"
+     "ru": "В субботу в одиннадцать."
     },
     {
      "who": "E",
      "de": "Wissen Sie, ob noch Plätze frei sind?",
-     "ru": "Вы знаете, есть ли ещё свободные места?",
-     "audio": "audio/f0e5e0c1d820.m4a"
+     "ru": "Вы знаете, есть ли ещё свободные места?"
     },
     {
      "who": "K",
      "de": "Ja, zwei Plätze sind noch frei.",
-     "ru": "Да, ещё два места свободны.",
-     "audio": "audio/bfbce56f687e.m4a"
+     "ru": "Да, ещё два места свободны."
     },
     {
      "who": "E",
      "de": "Und wie lange dauert der Kurs?",
-     "ru": "А сколько длится курс?",
-     "audio": "audio/b69a7dfb2324.m4a"
+     "ru": "А сколько длится курс?"
     },
     {
      "who": "K",
      "de": "Zwei Stunden. Bitte bringen Sie eine Kamera mit.",
-     "ru": "Два часа. Пожалуйста, принесите камеру.",
-     "audio": "audio/681a26080a28.m4a"
+     "ru": "Два часа. Пожалуйста, принесите камеру."
     },
     {
      "who": "E",
      "de": "Danke. Ich frage meine Freunde, ob sie Zeit haben.",
-     "ru": "Спасибо. Я спрошу друзей, есть ли у них время.",
-     "audio": "audio/c800c4c3ed74.m4a"
+     "ru": "Спасибо. Я спрошу друзей, есть ли у них время."
     },
     {
      "who": "K",
      "de": "Gern. Bitte melden Sie sich bis Freitag an.",
-     "ru": "Охотно. Пожалуйста, запишитесь до пятницы.",
-     "audio": "audio/4058908bb3ef.m4a"
+     "ru": "Охотно. Пожалуйста, запишитесь до пятницы."
     }
    ]
   }
@@ -131,85 +123,73 @@
      "de": "der Kontakt",
      "ru": "контакт",
      "gender": "m",
-     "plural": "Kontakte",
-     "audio": "audio/697a9eced3c1.m4a"
+     "plural": "Kontakte"
     },
     {
      "de": "der Fotokurs",
      "ru": "фотокурс",
      "gender": "m",
-     "plural": "Fotokurse",
-     "audio": "audio/f02c15994e9b.m4a"
+     "plural": "Fotokurse"
     },
     {
      "de": "der Teilnehmer",
      "ru": "участник",
      "gender": "m",
-     "plural": "Teilnehmer",
-     "audio": "audio/843dd187fac5.m4a"
+     "plural": "Teilnehmer"
     },
     {
      "de": "die Teilnehmerin",
      "ru": "участница",
      "gender": "f",
-     "plural": "Teilnehmerinnen",
-     "audio": "audio/1cf7077f3b0b.m4a"
+     "plural": "Teilnehmerinnen"
     },
     {
      "de": "stattfinden",
      "ru": "состояться, проходить",
      "gender": null,
-     "plural": null,
-     "audio": "audio/b7c704e587b1.m4a"
+     "plural": null
     },
     {
      "de": "frei sein",
      "ru": "быть свободным",
      "gender": null,
-     "plural": null,
-     "audio": "audio/d99b52fda4d6.m4a"
+     "plural": null
     },
     {
      "de": "kostenlos",
      "ru": "бесплатно",
      "gender": null,
-     "plural": null,
-     "audio": "audio/7d4d6b2181a4.m4a"
+     "plural": null
     },
     {
      "de": "Bescheid sagen",
      "ru": "сообщить, дать знать",
      "gender": null,
-     "plural": null,
-     "audio": "audio/135350db657f.m4a"
+     "plural": null
     },
     {
      "de": "die Anmeldung",
      "ru": "регистрация",
      "gender": "f",
-     "plural": "Anmeldungen",
-     "audio": "audio/39d02577162e.m4a"
+     "plural": "Anmeldungen"
     },
     {
      "de": "die Rückfrage",
      "ru": "уточняющий вопрос",
      "gender": "f",
-     "plural": "Rückfragen",
-     "audio": "audio/86003a8a4de0.m4a"
+     "plural": "Rückfragen"
     },
     {
      "de": "bis Freitag",
      "ru": "до пятницы",
      "gender": null,
-     "plural": null,
-     "audio": "audio/bbc59ae558dc.m4a"
+     "plural": null
     },
     {
      "de": "ob Plätze frei sind",
      "ru": "есть ли свободные места",
      "gender": null,
-     "plural": null,
-     "audio": "audio/bfbbec9c1816.m4a"
+     "plural": null
     }
    ]
   }
@@ -340,8 +320,7 @@
    ],
    "sample": [
     {
-     "de": "Hallo Alex, ich möchte am Samstag einen Fotokurs im Lernclub Flensburg besuchen. Der Kurs beginnt um elf Uhr und dauert zwei Stunden. Hast du Zeit? Sag mir bitte bis Freitag Bescheid. Ich freue mich auf deine Antwort. Viele Grüße, Elif",
-     "audio": "audio/0dec31c880b2.m4a"
+     "de": "Hallo Alex, ich möchte am Samstag einen Fotokurs im Lernclub Flensburg besuchen. Der Kurs beginnt um elf Uhr und dauert zwei Stunden. Hast du Zeit? Sag mir bitte bis Freitag Bescheid. Ich freue mich auf deine Antwort. Viele Grüße, Elif"
     }
    ]
   },
@@ -353,16 +332,13 @@
    "word": "Wann? Ob? Wie lange?",
    "sample": [
     {
-     "de": "Können Sie mir sagen, wann der Kurs beginnt?",
-     "audio": "audio/da8f421914fd.m4a"
+     "de": "Können Sie mir sagen, wann der Kurs beginnt?"
     },
     {
-     "de": "Wissen Sie, ob Plätze frei sind?",
-     "audio": "audio/f0c1ab6c33e6.m4a"
+     "de": "Wissen Sie, ob Plätze frei sind?"
     },
     {
-     "de": "Ich möchte wissen, wie lange der Kurs dauert.",
-     "audio": "audio/bb7f2ec5573c.m4a"
+     "de": "Ich möchte wissen, wie lange der Kurs dauert."
     }
    ]
   },
@@ -442,43 +418,35 @@
    "script": [
     {
      "who": "Elif",
-     "de": "Guten Tag. Können Sie mir sagen, wann der Fotokurs beginnt?",
-     "audio": "audio/85b830b5c2f5.m4a"
+     "de": "Guten Tag. Können Sie mir sagen, wann der Fotokurs beginnt?"
     },
     {
      "who": "Frau Hansen",
-     "de": "Am Samstag um elf Uhr.",
-     "audio": "audio/eadeeaf7a5cc.m4a"
+     "de": "Am Samstag um elf Uhr."
     },
     {
      "who": "Elif",
-     "de": "Wissen Sie, ob noch Plätze frei sind?",
-     "audio": "audio/f0e5e0c1d820.m4a"
+     "de": "Wissen Sie, ob noch Plätze frei sind?"
     },
     {
      "who": "Frau Hansen",
-     "de": "Ja, zwei Plätze sind noch frei.",
-     "audio": "audio/bfbce56f687e.m4a"
+     "de": "Ja, zwei Plätze sind noch frei."
     },
     {
      "who": "Elif",
-     "de": "Und wie lange dauert der Kurs?",
-     "audio": "audio/b69a7dfb2324.m4a"
+     "de": "Und wie lange dauert der Kurs?"
     },
     {
      "who": "Frau Hansen",
-     "de": "Zwei Stunden. Bitte bringen Sie eine Kamera mit.",
-     "audio": "audio/681a26080a28.m4a"
+     "de": "Zwei Stunden. Bitte bringen Sie eine Kamera mit."
     },
     {
      "who": "Elif",
-     "de": "Danke. Ich frage meine Freunde, ob sie Zeit haben.",
-     "audio": "audio/c800c4c3ed74.m4a"
+     "de": "Danke. Ich frage meine Freunde, ob sie Zeit haben."
     },
     {
      "who": "Frau Hansen",
-     "de": "Gern. Bitte melden Sie sich bis Freitag an.",
-     "audio": "audio/4058908bb3ef.m4a"
+     "de": "Gern. Bitte melden Sie sich bis Freitag an."
     }
    ],
    "sample": []
@@ -674,8 +642,7 @@
       ],
       "punct": ".",
       "plain": "Ich frage, ob sie Zeit haben.",
-      "ru": "Я спрашиваю, есть ли у них время.",
-      "audio": "audio/0ff7d6bb8d5a.m4a"
+      "ru": "Я спрашиваю, есть ли у них время."
      }
     ]
    }
@@ -732,8 +699,7 @@
       ],
       "punct": ".",
       "plain": "Ich frage, ob sie Zeit haben.",
-      "ru": "Я спрашиваю, есть ли у них время.",
-      "audio": "audio/0ff7d6bb8d5a.m4a"
+      "ru": "Я спрашиваю, есть ли у них время."
      }
     ]
    }
@@ -790,8 +756,7 @@
       ],
       "punct": ".",
       "plain": "Ich frage, ob sie Zeit haben.",
-      "ru": "Я спрашиваю, есть ли у них время.",
-      "audio": "audio/0ff7d6bb8d5a.m4a"
+      "ru": "Я спрашиваю, есть ли у них время."
      }
     ]
    }
@@ -847,8 +812,7 @@
       ],
       "punct": ".",
       "plain": "Ich frage, ob sie Zeit haben.",
-      "ru": "Я спрашиваю, есть ли у них время.",
-      "audio": "audio/0ff7d6bb8d5a.m4a"
+      "ru": "Я спрашиваю, есть ли у них время."
      }
     ],
     "task": "reply"
@@ -906,8 +870,7 @@
       ],
       "punct": ".",
       "plain": "Ich frage, ob sie Zeit haben.",
-      "ru": "Я спрашиваю, есть ли у них время.",
-      "audio": "audio/0ff7d6bb8d5a.m4a"
+      "ru": "Я спрашиваю, есть ли у них время."
      }
     ],
     "task": "reply"
@@ -955,8 +918,7 @@
       ],
       "punct": ".",
       "plain": "Ich frage, ob sie Zeit haben.",
-      "ru": "Я спрашиваю, есть ли у них время.",
-      "audio": "audio/0ff7d6bb8d5a.m4a"
+      "ru": "Я спрашиваю, есть ли у них время."
      }
     ],
     "task": "reply",
@@ -1014,8 +976,7 @@
       ],
       "punct": ".",
       "plain": "Ich frage, ob sie Zeit haben.",
-      "ru": "Я спрашиваю, есть ли у них время.",
-      "audio": "audio/0ff7d6bb8d5a.m4a"
+      "ru": "Я спрашиваю, есть ли у них время."
      }
     ],
     "task": "ads"
@@ -1073,8 +1034,7 @@
       ],
       "punct": ".",
       "plain": "Ich frage, ob sie Zeit haben.",
-      "ru": "Я спрашиваю, есть ли у них время.",
-      "audio": "audio/0ff7d6bb8d5a.m4a"
+      "ru": "Я спрашиваю, есть ли у них время."
      }
     ],
     "task": "ads"
@@ -1122,8 +1082,7 @@
       ],
       "punct": ".",
       "plain": "Ich frage, ob sie Zeit haben.",
-      "ru": "Я спрашиваю, есть ли у них время.",
-      "audio": "audio/0ff7d6bb8d5a.m4a"
+      "ru": "Я спрашиваю, есть ли у них время."
      }
     ],
     "task": "ads",
@@ -1181,8 +1140,7 @@
       ],
       "punct": ".",
       "plain": "Ich frage, ob sie Zeit haben.",
-      "ru": "Я спрашиваю, есть ли у них время.",
-      "audio": "audio/0ff7d6bb8d5a.m4a"
+      "ru": "Я спрашиваю, есть ли у них время."
      }
     ],
     "task": "letter",
@@ -1241,8 +1199,7 @@
       ],
       "punct": ".",
       "plain": "Ich frage, ob sie Zeit haben.",
-      "ru": "Я спрашиваю, есть ли у них время.",
-      "audio": "audio/0ff7d6bb8d5a.m4a"
+      "ru": "Я спрашиваю, есть ли у них время."
      }
     ],
     "task": "letter",
@@ -1291,8 +1248,7 @@
       ],
       "punct": ".",
       "plain": "Ich frage, ob sie Zeit haben.",
-      "ru": "Я спрашиваю, есть ли у них время.",
-      "audio": "audio/0ff7d6bb8d5a.m4a"
+      "ru": "Я спрашиваю, есть ли у них время."
      }
     ],
     "task": "letter",
@@ -1351,8 +1307,7 @@
       ],
       "punct": ".",
       "plain": "Ich frage, ob sie Zeit haben.",
-      "ru": "Я спрашиваю, есть ли у них время.",
-      "audio": "audio/0ff7d6bb8d5a.m4a"
+      "ru": "Я спрашиваю, есть ли у них время."
      }
     ],
     "task": "talk",
@@ -1411,8 +1366,7 @@
       ],
       "punct": ".",
       "plain": "Ich frage, ob sie Zeit haben.",
-      "ru": "Я спрашиваю, есть ли у них время.",
-      "audio": "audio/0ff7d6bb8d5a.m4a"
+      "ru": "Я спрашиваю, есть ли у них время."
      }
     ],
     "task": "talk",
@@ -1461,8 +1415,7 @@
       ],
       "punct": ".",
       "plain": "Ich frage, ob sie Zeit haben.",
-      "ru": "Я спрашиваю, есть ли у них время.",
-      "audio": "audio/0ff7d6bb8d5a.m4a"
+      "ru": "Я спрашиваю, есть ли у них время."
      }
     ],
     "task": "talk",
@@ -1521,8 +1474,7 @@
       ],
       "punct": ".",
       "plain": "Ich frage, ob sie Zeit haben.",
-      "ru": "Я спрашиваю, есть ли у них время.",
-      "audio": "audio/0ff7d6bb8d5a.m4a"
+      "ru": "Я спрашиваю, есть ли у них время."
      }
     ],
     "task": "conversation"
@@ -1540,8 +1492,7 @@
     "denn"
    ],
    "answer": 0,
-   "why": "Вопрос да/нет вводится ob.",
-   "audio": "audio/293b7e6a85a9.m4a"
+   "why": "Вопрос да/нет вводится ob."
   },
   {
    "id": "a2-kontakte-2",
@@ -1553,8 +1504,7 @@
     "beginne"
    ],
    "answer": 0,
-   "why": "Глагол согласуется с Kurs и стоит в конце.",
-   "audio": "audio/d5140d82e84d.m4a"
+   "why": "Глагол согласуется с Kurs и стоит в конце."
   },
   {
    "id": "a2-kontakte-3",
@@ -1566,8 +1516,7 @@
     "dauere"
    ],
    "answer": 0,
-   "why": "Единственное число.",
-   "audio": "audio/63c257ac82e4.m4a"
+   "why": "Единственное число."
   },
   {
    "id": "a2-kontakte-4",
@@ -1579,8 +1528,7 @@
     "hast"
    ],
    "answer": 0,
-   "why": "Sie — они.",
-   "audio": "audio/0ff7d6bb8d5a.m4a"
+   "why": "Sie — они."
   },
   {
    "id": "a2-kontakte-5",
@@ -1610,8 +1558,7 @@
    "id": "a2-kontakte-7",
    "type": "order",
    "ru": "Вы знаете, есть ли свободные места?",
-   "de": "Wissen Sie, ob Plätze frei sind?",
-   "audio": "audio/f0c1ab6c33e6.m4a"
+   "de": "Wissen Sie, ob Plätze frei sind?"
   },
   {
    "id": "a2-kontakte-8",
@@ -1620,15 +1567,13 @@
    "also": [
     "Wann der Kurs beginnt, frage ich."
    ],
-   "de": "Ich frage, wann der Kurs beginnt.",
-   "audio": "audio/8ab2cdeb7d0b.m4a"
+   "de": "Ich frage, wann der Kurs beginnt."
   },
   {
    "id": "a2-kontakte-9",
    "type": "order",
    "ru": "Не могли бы вы сказать, сколько длится курс?",
-   "de": "Können Sie mir sagen, wie lange der Kurs dauert?",
-   "audio": "audio/63c257ac82e4.m4a"
+   "de": "Können Sie mir sagen, wie lange der Kurs dauert?"
   },
   {
    "id": "a2-kontakte-10",
@@ -1638,8 +1583,7 @@
     "Ob sie Zeit haben, frage ich meine Freunde.",
     "Meine Freunde frage ich, ob sie Zeit haben."
    ],
-   "de": "Ich frage meine Freunde, ob sie Zeit haben.",
-   "audio": "audio/9e20f9e7e663.m4a"
+   "de": "Ich frage meine Freunde, ob sie Zeit haben."
   },
   {
    "id": "a2-kontakte-11",
@@ -1649,8 +1593,7 @@
     "Melden Sie sich bitte bis Freitag an.",
     "Melden Sie sich bis Freitag bitte an."
    ],
-   "de": "Bitte melden Sie sich bis Freitag an.",
-   "audio": "audio/7ac6478e2fa7.m4a"
+   "de": "Bitte melden Sie sich bis Freitag an."
   },
   {
    "id": "a2-kontakte-12",
@@ -1661,8 +1604,7 @@
     "Frei sind noch zwei Plätze.",
     "Noch frei sind zwei Plätze."
    ],
-   "de": "Zwei Plätze sind noch frei.",
-   "audio": "audio/fe8c5166216b.m4a"
+   "de": "Zwei Plätze sind noch frei."
   }
  ],
  "case": {

@@ -86,24 +86,19 @@
    "situation": "Hören Sie jede Nachricht zweimal und ergänzen Sie die Notizen.",
    "recordings": [
     {
-     "text": "Guten Tag, hier ist Ihr Lernladen. Ihr Paket ist da. Sie können es heute ab halb vier abholen. Wir schließen um neunzehn Uhr. Auf Wiederhören.",
-     "audio": "audio/9b9653a8667b.m4a"
+     "text": "Guten Tag, hier ist Ihr Lernladen. Ihr Paket ist da. Sie können es heute ab halb vier abholen. Wir schließen um neunzehn Uhr. Auf Wiederhören."
     },
     {
-     "text": "Hallo, hier ist Nora. Der Haupteingang ist heute zu. Ich warte am Seiteneingang auf dich. Nicht am Parkplatz. Bis gleich!",
-     "audio": "audio/cf60015649eb.m4a"
+     "text": "Hallo, hier ist Nora. Der Haupteingang ist heute zu. Ich warte am Seiteneingang auf dich. Nicht am Parkplatz. Bis gleich!"
     },
     {
-     "text": "Guten Tag. Sie haben nach unserer Lernfahrt gefragt. Der Preis ist sechsundzwanzig Euro pro Person. Das Mittagessen kostet extra. Vielen Dank.",
-     "audio": "audio/095be63667df.m4a"
+     "text": "Guten Tag. Sie haben nach unserer Lernfahrt gefragt. Der Preis ist sechsundzwanzig Euro pro Person. Das Mittagessen kostet extra. Vielen Dank."
     },
     {
-     "text": "Eine Nachricht vom Lernzentrum: Ihr Sprachkurs ist heute nicht in Raum zweihundertdrei, sondern in Raum zweihundertvier. Die Uhrzeit bleibt gleich.",
-     "audio": "audio/8f82c669e149.m4a"
+     "text": "Eine Nachricht vom Lernzentrum: Ihr Sprachkurs ist heute nicht in Raum zweihundertdrei, sondern in Raum zweihundertvier. Die Uhrzeit bleibt gleich."
     },
     {
-     "text": "Hallo, hier ist Jonas. Am Mittwoch muss ich länger arbeiten. Können wir uns am Donnerstag treffen? Am Freitag bin ich nicht in Kiel. Ruf mich bitte zurück.",
-     "audio": "audio/3aa447c92952.m4a"
+     "text": "Hallo, hier ist Jonas. Am Mittwoch muss ich länger arbeiten. Können wir uns am Donnerstag treffen? Am Freitag bin ich nicht in Kiel. Ruf mich bitte zurück."
     }
    ],
    "sample": []
@@ -173,24 +168,19 @@
    "situation": "Hören Sie jede Meldung einmal. Wählen Sie eine Antwort.",
    "recordings": [
     {
-     "text": "Sie hören Lernradio Küste. Nach der Musik sprechen wir um sechzehn Uhr mit einer Köchin über Essen im Alltag. Die Sportnachrichten hören Sie erst um siebzehn Uhr.",
-     "audio": "audio/9c976466c936.m4a"
+     "text": "Sie hören Lernradio Küste. Nach der Musik sprechen wir um sechzehn Uhr mit einer Köchin über Essen im Alltag. Die Sportnachrichten hören Sie erst um siebzehn Uhr."
     },
     {
-     "text": "Das Lernwetter: Am Vormittag scheint noch die Sonne. Ab vierzehn Uhr regnet es. Nehmen Sie für den Nachmittag einen Regenschirm mit.",
-     "audio": "audio/4cdff2c0f266.m4a"
+     "text": "Das Lernwetter: Am Vormittag scheint noch die Sonne. Ab vierzehn Uhr regnet es. Nehmen Sie für den Nachmittag einen Regenschirm mit."
     },
     {
-     "text": "Eine Information für unsere Lernbuslinie: Wegen einer Baustelle kommt der Bus heute zehn Minuten später. Die Haltestelle bleibt am gleichen Platz.",
-     "audio": "audio/c81e72a22140.m4a"
+     "text": "Eine Information für unsere Lernbuslinie: Wegen einer Baustelle kommt der Bus heute zehn Minuten später. Die Haltestelle bleibt am gleichen Platz."
     },
     {
-     "text": "Unser erfundenes Lernmuseum lädt ein: Am Mittwoch ist der Eintritt kostenlos. Am Dienstag und Donnerstag kostet er sieben Euro.",
-     "audio": "audio/f72451356900.m4a"
+     "text": "Unser erfundenes Lernmuseum lädt ein: Am Mittwoch ist der Eintritt kostenlos. Am Dienstag und Donnerstag kostet er sieben Euro."
     },
     {
-     "text": "Jetzt unser Lernradio-Spiel. Heute können Sie einen Kochkurs für zwei Personen gewinnen. Rufen Sie uns an und nennen Sie Ihr Lieblingsgericht.",
-     "audio": "audio/8309831962b6.m4a"
+     "text": "Jetzt unser Lernradio-Spiel. Heute können Sie einen Kochkurs für zwei Personen gewinnen. Rufen Sie uns an und nennen Sie Ihr Lieblingsgericht."
     }
    ],
    "sample": []
@@ -287,33 +277,27 @@
    "script": [
     {
      "who": "Nora",
-     "de": "Jonas, wer begrüßt heute die Gäste? Ich kann das am Eingang machen.",
-     "audio": "audio/48c0241fbb5e.m4a"
+     "de": "Jonas, wer begrüßt heute die Gäste? Ich kann das am Eingang machen."
     },
     {
      "who": "Jonas",
-     "de": "Gut, Nora. Ich stelle die Tische auf. Kann Mira die Getränke mitbringen?",
-     "audio": "audio/1920ec14c828.m4a"
+     "de": "Gut, Nora. Ich stelle die Tische auf. Kann Mira die Getränke mitbringen?"
     },
     {
      "who": "Nora",
-     "de": "Ja, sie hat schon Wasser und Saft gekauft. Und wer macht die Fotos?",
-     "audio": "audio/26da10409056.m4a"
+     "de": "Ja, sie hat schon Wasser und Saft gekauft. Und wer macht die Fotos?"
     },
     {
      "who": "Jonas",
-     "de": "Herr Petersen bringt seine Kamera mit und fotografiert uns. Frau Berg zeigt den Gästen die neuen Bücher.",
-     "audio": "audio/190a920bf173.m4a"
+     "de": "Herr Petersen bringt seine Kamera mit und fotografiert uns. Frau Berg zeigt den Gästen die neuen Bücher."
     },
     {
      "who": "Nora",
-     "de": "Dann brauchen wir heute keine Musik und keinen Kuchen. Die Gäste möchten vor allem sprechen und lesen.",
-     "audio": "audio/f9023f6a1272.m4a"
+     "de": "Dann brauchen wir heute keine Musik und keinen Kuchen. Die Gäste möchten vor allem sprechen und lesen."
     },
     {
      "who": "Jonas",
-     "de": "Genau. Danke, dann haben wir alle Aufgaben verteilt.",
-     "audio": "audio/cfc63ca3ca9d.m4a"
+     "de": "Genau. Danke, dann haben wir alle Aufgaben verteilt."
     }
    ],
    "sample": []
@@ -665,38 +649,32 @@
     {
      "who": "N",
      "de": "Jonas, wer begrüßt heute die Gäste? Ich kann das am Eingang machen.",
-     "ru": "Йонас, кто сегодня встречает гостей? Я могу сделать это у входа.",
-     "audio": "audio/48c0241fbb5e.m4a"
+     "ru": "Йонас, кто сегодня встречает гостей? Я могу сделать это у входа."
     },
     {
      "who": "J",
      "de": "Gut, Nora. Ich stelle die Tische auf. Kann Mira die Getränke mitbringen?",
-     "ru": "Хорошо, Нора. Я расставлю столы. Мира может принести напитки?",
-     "audio": "audio/1920ec14c828.m4a"
+     "ru": "Хорошо, Нора. Я расставлю столы. Мира может принести напитки?"
     },
     {
      "who": "N",
      "de": "Ja, sie hat schon Wasser und Saft gekauft. Und wer macht die Fotos?",
-     "ru": "Да, она уже купила воду и сок. А кто сделает фотографии?",
-     "audio": "audio/26da10409056.m4a"
+     "ru": "Да, она уже купила воду и сок. А кто сделает фотографии?"
     },
     {
      "who": "J",
      "de": "Herr Petersen bringt seine Kamera mit und fotografiert uns. Frau Berg zeigt den Gästen die neuen Bücher.",
-     "ru": "Господин Петерсен принесёт камеру и сфотографирует нас. Госпожа Берг покажет гостям новые книги.",
-     "audio": "audio/190a920bf173.m4a"
+     "ru": "Господин Петерсен принесёт камеру и сфотографирует нас. Госпожа Берг покажет гостям новые книги."
     },
     {
      "who": "N",
      "de": "Dann brauchen wir heute keine Musik und keinen Kuchen. Die Gäste möchten vor allem sprechen und lesen.",
-     "ru": "Значит, сегодня музыка и пирог нам не нужны. Гости хотят прежде всего разговаривать и читать.",
-     "audio": "audio/f9023f6a1272.m4a"
+     "ru": "Значит, сегодня музыка и пирог нам не нужны. Гости хотят прежде всего разговаривать и читать."
     },
     {
      "who": "J",
      "de": "Genau. Danke, dann haben wir alle Aufgaben verteilt.",
-     "ru": "Именно. Спасибо, теперь мы распределили все задачи.",
-     "audio": "audio/cfc63ca3ca9d.m4a"
+     "ru": "Именно. Спасибо, теперь мы распределили все задачи."
     }
    ]
   }

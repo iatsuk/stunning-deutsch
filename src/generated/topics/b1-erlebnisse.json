@@ -69,50 +69,42 @@
     {
      "who": "D",
      "de": "Als wir am Strand ankamen, wurde es heller.",
-     "ru": "Когда мы приехали на пляж, стало светлее.",
-     "audio": "audio/288793347861.m4a"
+     "ru": "Когда мы приехали на пляж, стало светлее."
     },
     {
      "who": "H",
      "de": "Vorher war der Himmel ganz grau.",
-     "ru": "До этого небо было совсем серым.",
-     "audio": "audio/a34bc2e7e14b.m4a"
+     "ru": "До этого небо было совсем серым."
     },
     {
      "who": "E",
      "de": "Wir gingen zuerst ans Wasser und danach ins Café.",
-     "ru": "Сначала мы пошли к воде, а потом в кафе.",
-     "audio": "audio/cab0aa098b46.m4a"
+     "ru": "Сначала мы пошли к воде, а потом в кафе."
     },
     {
      "who": "M",
      "de": "Wenn ich früher am Sonntag frei hatte, nahm ich oft Essen mit.",
-     "ru": "Когда раньше у меня было свободно в воскресенье, я часто брал еду с собой.",
-     "audio": "audio/d0bab90fd0a0.m4a"
+     "ru": "Когда раньше у меня было свободно в воскресенье, я часто брал еду с собой."
     },
     {
      "who": "D",
      "de": "Diesmal kauften wir Brot unterwegs.",
-     "ru": "В этот раз мы купили хлеб по дороге.",
-     "audio": "audio/63e09500b901.m4a"
+     "ru": "В этот раз мы купили хлеб по дороге."
     },
     {
      "who": "E",
      "de": "Ich fand die kleine Ausstellung interessant.",
-     "ru": "Мне показалась интересной маленькая выставка.",
-     "audio": "audio/302279ad2024.m4a"
+     "ru": "Мне показалась интересной маленькая выставка."
     },
     {
      "who": "H",
      "de": "Als wir zurückfahren wollten, war die Straße gesperrt.",
-     "ru": "Когда мы хотели ехать обратно, улица была перекрыта.",
-     "audio": "audio/0dab7bd108c9.m4a"
+     "ru": "Когда мы хотели ехать обратно, улица была перекрыта."
     },
     {
      "who": "M",
      "de": "Zum Glück kam der Bus an der Ersatzhaltestelle pünktlich.",
-     "ru": "К счастью, автобус пришёл на временную остановку вовремя.",
-     "audio": "audio/58b5cc5ae334.m4a"
+     "ru": "К счастью, автобус пришёл на временную остановку вовремя."
     }
    ]
   },
@@ -134,50 +126,42 @@
     {
      "who": "H",
      "de": "War der Ausflug trotz der grauen Wolken gut?",
-     "ru": "Поездка удалась, несмотря на серые облака?",
-     "audio": "audio/365dec1d3d9c.m4a"
+     "ru": "Поездка удалась, несмотря на серые облака?"
     },
     {
      "who": "D",
      "de": "Ja. Als ich ankam, dachte ich zuerst an Regen. Dann wurde es heller. Am Wasser konnte ich mich gut erholen.",
-     "ru": "Да. Когда я приехала, то сначала подумала о дожде. Потом стало светлее. У воды я смогла хорошо отдохнуть.",
-     "audio": "audio/496530827654.m4a"
+     "ru": "Да. Когда я приехала, то сначала подумала о дожде. Потом стало светлее. У воды я смогла хорошо отдохнуть."
     },
     {
      "who": "H",
      "de": "Warst du allein?",
-     "ru": "Ты была одна?",
-     "audio": "audio/6124e0aca666.m4a"
+     "ru": "Ты была одна?"
     },
     {
      "who": "D",
      "de": "Nein, wir waren zu viert. Früher fuhr ich manchmal allein ans Meer. Wenn ich wenig Zeit hatte, blieb ich nur kurz. Diesmal hatten wir den ganzen Vormittag.",
-     "ru": "Нет, нас было четверо. Раньше я иногда ездила к морю одна. Если было мало времени, оставалась ненадолго. В этот раз у нас была вся первая половина дня.",
-     "audio": "audio/cfe11c7850bb.m4a"
+     "ru": "Нет, нас было четверо. Раньше я иногда ездила к морю одна. Если было мало времени, оставалась ненадолго. В этот раз у нас была вся первая половина дня."
     },
     {
      "who": "H",
      "de": "Was hat dir besonders gefallen?",
-     "ru": "Что тебе особенно понравилось?",
-     "audio": "audio/d294269472a7.m4a"
+     "ru": "Что тебе особенно понравилось?"
     },
     {
      "who": "D",
      "de": "Das Gespräch am Strand. Die Ausstellung war auch interessant, aber ich brauchte vor allem eine Pause.",
-     "ru": "Разговор на пляже. Выставка тоже была интересной, но мне прежде всего нужен был отдых.",
-     "audio": "audio/3857b1280c1f.m4a"
+     "ru": "Разговор на пляже. Выставка тоже была интересной, но мне прежде всего нужен был отдых."
     },
     {
      "who": "H",
      "de": "Und die Rückfahrt?",
-     "ru": "А обратная дорога?",
-     "audio": "audio/db96e896f1c4.m4a"
+     "ru": "А обратная дорога?"
     },
     {
      "who": "D",
      "de": "Die Haltestelle war verlegt. Wir fanden den Hinweis und kamen pünktlich nach Kiel.",
-     "ru": "Остановку перенесли. Мы нашли указатель и вовремя приехали в Киль.",
-     "audio": "audio/b48a68610ef7.m4a"
+     "ru": "Остановку перенесли. Мы нашли указатель и вовремя приехали в Киль."
     }
    ]
   }
@@ -191,107 +175,92 @@
      "de": "das Erlebnis",
      "ru": "пережитое событие",
      "gender": "n",
-     "plural": "Erlebnisse",
-     "audio": "audio/9e19a6162ba4.m4a"
+     "plural": "Erlebnisse"
     },
     {
      "de": "die Erinnerung",
      "ru": "воспоминание",
      "gender": "f",
-     "plural": "Erinnerungen",
-     "audio": "audio/84d9fd0e0175.m4a"
+     "plural": "Erinnerungen"
     },
     {
      "de": "die Küste",
      "ru": "побережье",
      "gender": "f",
-     "plural": "Küsten",
-     "audio": "audio/56aed1477f60.m4a"
+     "plural": "Küsten"
     },
     {
      "de": "die Ausstellung",
      "ru": "выставка",
      "gender": "f",
-     "plural": "Ausstellungen",
-     "audio": "audio/cefd646461c3.m4a"
+     "plural": "Ausstellungen"
     },
     {
      "de": "das Porträt",
      "ru": "портрет",
      "gender": "n",
-     "plural": "Porträts",
-     "audio": "audio/f036784406eb.m4a"
+     "plural": "Porträts"
     },
     {
      "de": "die Ersatzhaltestelle",
      "ru": "временная остановка",
      "gender": "f",
-     "plural": "Ersatzhaltestellen",
-     "audio": "audio/463636cf0a70.m4a"
+     "plural": "Ersatzhaltestellen"
     },
     {
      "de": "der Himmel",
      "ru": "небо",
      "gender": "m",
      "plural": null,
-     "noPlural": true,
-     "audio": "audio/a88a3d75bbc4.m4a"
+     "noPlural": true
     },
     {
      "de": "die Unterbrechung",
      "ru": "перерыв",
      "gender": "f",
-     "plural": "Unterbrechungen",
-     "audio": "audio/393c7238d8d1.m4a"
+     "plural": "Unterbrechungen"
     },
     {
      "de": "früher",
      "ru": "раньше",
      "gender": null,
-     "plural": null,
-     "audio": "audio/25911b3a0802.m4a"
+     "plural": null
     },
     {
      "de": "diesmal",
      "ru": "в этот раз",
      "gender": null,
-     "plural": null,
-     "audio": "audio/4adfa5407126.m4a"
+     "plural": null
     },
     {
      "de": "unterwegs",
      "ru": "по дороге",
      "gender": null,
-     "plural": null,
-     "audio": "audio/60af68f07981.m4a"
+     "plural": null
     },
     {
      "de": "gesperrt",
      "ru": "перекрыт",
      "gender": null,
-     "plural": null,
-     "audio": "audio/904e06a84f51.m4a"
+     "plural": null
     },
     {
      "de": "zum Glück",
      "ru": "к счастью",
      "gender": null,
-     "plural": null,
-     "audio": "audio/f634b8474768.m4a"
+     "plural": null
     },
     {
      "de": "ankommen",
      "ru": "прибывать",
      "gender": null,
-     "plural": null,
-     "audio": "audio/90fa7c7e91ac.m4a"
+     "plural": null
     },
     {
      "de": "mitnehmen",
      "ru": "брать с собой",
      "gender": null,
-     "plural": null,
-     "audio": "audio/ca2229391ebc.m4a"
+     "plural": null
     }
    ]
   }
@@ -486,43 +455,35 @@
    "script": [
     {
      "who": "Hauke",
-     "de": "War der Ausflug trotz der grauen Wolken gut?",
-     "audio": "audio/365dec1d3d9c.m4a"
+     "de": "War der Ausflug trotz der grauen Wolken gut?"
     },
     {
      "who": "Dana",
-     "de": "Ja. Als ich ankam, dachte ich zuerst an Regen. Dann wurde es heller. Am Wasser konnte ich mich gut erholen.",
-     "audio": "audio/496530827654.m4a"
+     "de": "Ja. Als ich ankam, dachte ich zuerst an Regen. Dann wurde es heller. Am Wasser konnte ich mich gut erholen."
     },
     {
      "who": "Hauke",
-     "de": "Warst du allein?",
-     "audio": "audio/6124e0aca666.m4a"
+     "de": "Warst du allein?"
     },
     {
      "who": "Dana",
-     "de": "Nein, wir waren zu viert. Früher fuhr ich manchmal allein ans Meer. Wenn ich wenig Zeit hatte, blieb ich nur kurz. Diesmal hatten wir den ganzen Vormittag.",
-     "audio": "audio/cfe11c7850bb.m4a"
+     "de": "Nein, wir waren zu viert. Früher fuhr ich manchmal allein ans Meer. Wenn ich wenig Zeit hatte, blieb ich nur kurz. Diesmal hatten wir den ganzen Vormittag."
     },
     {
      "who": "Hauke",
-     "de": "Was hat dir besonders gefallen?",
-     "audio": "audio/d294269472a7.m4a"
+     "de": "Was hat dir besonders gefallen?"
     },
     {
      "who": "Dana",
-     "de": "Das Gespräch am Strand. Die Ausstellung war auch interessant, aber ich brauchte vor allem eine Pause.",
-     "audio": "audio/3857b1280c1f.m4a"
+     "de": "Das Gespräch am Strand. Die Ausstellung war auch interessant, aber ich brauchte vor allem eine Pause."
     },
     {
      "who": "Hauke",
-     "de": "Und die Rückfahrt?",
-     "audio": "audio/db96e896f1c4.m4a"
+     "de": "Und die Rückfahrt?"
     },
     {
      "who": "Dana",
-     "de": "Die Haltestelle war verlegt. Wir fanden den Hinweis und kamen pünktlich nach Kiel.",
-     "audio": "audio/b48a68610ef7.m4a"
+     "de": "Die Haltestelle war verlegt. Wir fanden den Hinweis und kamen pünktlich nach Kiel."
     }
    ],
    "sample": []
@@ -860,8 +821,7 @@
       ],
       "punct": ".",
       "plain": "Als wir ankamen, wurde es heller.",
-      "ru": "Когда мы приехали, стало светлее.",
-      "audio": "audio/d44b58815408.m4a"
+      "ru": "Когда мы приехали, стало светлее."
      }
     ]
    }
@@ -918,8 +878,7 @@
       ],
       "punct": ".",
       "plain": "Als wir ankamen, wurde es heller.",
-      "ru": "Когда мы приехали, стало светлее.",
-      "audio": "audio/d44b58815408.m4a"
+      "ru": "Когда мы приехали, стало светлее."
      }
     ]
    }
@@ -976,8 +935,7 @@
       ],
       "punct": ".",
       "plain": "Als wir ankamen, wurde es heller.",
-      "ru": "Когда мы приехали, стало светлее.",
-      "audio": "audio/d44b58815408.m4a"
+      "ru": "Когда мы приехали, стало светлее."
      }
     ]
    }
@@ -1033,8 +991,7 @@
       ],
       "punct": ".",
       "plain": "Als wir ankamen, wurde es heller.",
-      "ru": "Когда мы приехали, стало светлее.",
-      "audio": "audio/d44b58815408.m4a"
+      "ru": "Когда мы приехали, стало светлее."
      }
     ],
     "task": "headlines"
@@ -1092,8 +1049,7 @@
       ],
       "punct": ".",
       "plain": "Als wir ankamen, wurde es heller.",
-      "ru": "Когда мы приехали, стало светлее.",
-      "audio": "audio/d44b58815408.m4a"
+      "ru": "Когда мы приехали, стало светлее."
      }
     ],
     "task": "headlines"
@@ -1141,8 +1097,7 @@
       ],
       "punct": ".",
       "plain": "Als wir ankamen, wurde es heller.",
-      "ru": "Когда мы приехали, стало светлее.",
-      "audio": "audio/d44b58815408.m4a"
+      "ru": "Когда мы приехали, стало светлее."
      }
     ],
     "task": "headlines",
@@ -1200,8 +1155,7 @@
       ],
       "punct": ".",
       "plain": "Als wir ankamen, wurde es heller.",
-      "ru": "Когда мы приехали, стало светлее.",
-      "audio": "audio/d44b58815408.m4a"
+      "ru": "Когда мы приехали, стало светлее."
      }
     ],
     "task": "interview"
@@ -1259,8 +1213,7 @@
       ],
       "punct": ".",
       "plain": "Als wir ankamen, wurde es heller.",
-      "ru": "Когда мы приехали, стало светлее.",
-      "audio": "audio/d44b58815408.m4a"
+      "ru": "Когда мы приехали, стало светлее."
      }
     ],
     "task": "interview"
@@ -1308,8 +1261,7 @@
       ],
       "punct": ".",
       "plain": "Als wir ankamen, wurde es heller.",
-      "ru": "Когда мы приехали, стало светлее.",
-      "audio": "audio/d44b58815408.m4a"
+      "ru": "Когда мы приехали, стало светлее."
      }
     ],
     "task": "interview",
@@ -1367,8 +1319,7 @@
       ],
       "punct": ".",
       "plain": "Als wir ankamen, wurde es heller.",
-      "ru": "Когда мы приехали, стало светлее.",
-      "audio": "audio/d44b58815408.m4a"
+      "ru": "Когда мы приехали, стало светлее."
      }
     ],
     "task": "gaps"
@@ -1426,8 +1377,7 @@
       ],
       "punct": ".",
       "plain": "Als wir ankamen, wurde es heller.",
-      "ru": "Когда мы приехали, стало светлее.",
-      "audio": "audio/d44b58815408.m4a"
+      "ru": "Когда мы приехали, стало светлее."
      }
     ],
     "task": "gaps"
@@ -1475,8 +1425,7 @@
       ],
       "punct": ".",
       "plain": "Als wir ankamen, wurde es heller.",
-      "ru": "Когда мы приехали, стало светлее.",
-      "audio": "audio/d44b58815408.m4a"
+      "ru": "Когда мы приехали, стало светлее."
      }
     ],
     "task": "gaps",
@@ -1534,8 +1483,7 @@
       ],
       "punct": ".",
       "plain": "Als wir ankamen, wurde es heller.",
-      "ru": "Когда мы приехали, стало светлее.",
-      "audio": "audio/d44b58815408.m4a"
+      "ru": "Когда мы приехали, стало светлее."
      }
     ],
     "task": "opinions"
@@ -1593,8 +1541,7 @@
       ],
       "punct": ".",
       "plain": "Als wir ankamen, wurde es heller.",
-      "ru": "Когда мы приехали, стало светлее.",
-      "audio": "audio/d44b58815408.m4a"
+      "ru": "Когда мы приехали, стало светлее."
      }
     ],
     "task": "opinions"
@@ -1642,8 +1589,7 @@
       ],
       "punct": ".",
       "plain": "Als wir ankamen, wurde es heller.",
-      "ru": "Когда мы приехали, стало светлее.",
-      "audio": "audio/d44b58815408.m4a"
+      "ru": "Когда мы приехали, стало светлее."
      }
     ],
     "task": "opinions",
@@ -1662,8 +1608,7 @@
     "Wenn"
    ],
    "answer": 1,
-   "why": "Один первый визит.",
-   "audio": "audio/6f5132ceada5.m4a"
+   "why": "Один первый визит."
   },
   {
    "id": "b1-erlebnisse-2",
@@ -1675,8 +1620,7 @@
     "Als"
    ],
    "answer": 1,
-   "why": "Повторение.",
-   "audio": "audio/3e0ee2930f49.m4a"
+   "why": "Повторение."
   },
   {
    "id": "b1-erlebnisse-3",
@@ -1712,8 +1656,7 @@
     "es wurde"
    ],
    "answer": 1,
-   "why": "Личный глагол сразу после запятой.",
-   "audio": "audio/d44b58815408.m4a"
+   "why": "Личный глагол сразу после запятой."
   },
   {
    "id": "b1-erlebnisse-6",
@@ -1734,8 +1677,7 @@
    "ru": "Когда мы приехали, стало светлее.",
    "also": [
     "Es wurde heller, als wir ankamen."
-   ],
-   "audio": "audio/d44b58815408.m4a"
+   ]
   },
   {
    "id": "b1-erlebnisse-8",
@@ -1744,8 +1686,7 @@
    "ru": "Когда у меня было свободно, я брал еду.",
    "also": [
     "Ich nahm Essen mit, wenn ich frei hatte."
-   ],
-   "audio": "audio/1c8599d55136.m4a"
+   ]
   },
   {
    "id": "b1-erlebnisse-9",
@@ -1755,8 +1696,7 @@
    "also": [
     "Danach gingen wir ins Café.",
     "Ins Café gingen wir danach."
-   ],
-   "audio": "audio/b89bd0150ded.m4a"
+   ]
   },
   {
    "id": "b1-erlebnisse-10",
@@ -1766,8 +1706,7 @@
    "also": [
     "Die Ausstellung fand ich interessant.",
     "Interessant fand ich die Ausstellung."
-   ],
-   "audio": "audio/2566d626f069.m4a"
+   ]
   },
   {
    "id": "b1-erlebnisse-11",
@@ -1776,8 +1715,7 @@
    "ru": "Автобус пришёл вовремя.",
    "also": [
     "Pünktlich kam der Bus."
-   ],
-   "audio": "audio/6c6200ffddda.m4a"
+   ]
   },
   {
    "id": "b1-erlebnisse-12",
@@ -1787,8 +1725,7 @@
    "also": [
     "Wir hatten diesmal viel Zeit.",
     "Viel Zeit hatten wir diesmal."
-   ],
-   "audio": "audio/e7b32f4d88cc.m4a"
+   ]
   }
  ],
  "case": {

@@ -68,50 +68,42 @@
     {
      "who": "D",
      "de": "Das Gästezimmer ist fast fertig. Was fehlt noch?",
-     "ru": "Гостевая комната почти готова. Чего ещё не хватает?",
-     "audio": "audio/57bd1c3be39c.m4a"
+     "ru": "Гостевая комната почти готова. Чего ещё не хватает?"
     },
     {
      "who": "E",
      "de": "Wir brauchen einen kleinen Tisch und eine helle Lampe.",
-     "ru": "Нам нужны маленький стол и светлая лампа.",
-     "audio": "audio/fdabff03da28.m4a"
+     "ru": "Нам нужны маленький стол и светлая лампа."
     },
     {
      "who": "M",
      "de": "Hier ist ein kleiner Tisch im Katalog. Der kleine Tisch kostet 25 Euro.",
-     "ru": "Вот маленький стол в каталоге. Этот маленький стол стоит 25 евро.",
-     "audio": "audio/03ede285e7e3.m4a"
+     "ru": "Вот маленький стол в каталоге. Этот маленький стол стоит 25 евро."
     },
     {
      "who": "H",
      "de": "Gut. Ich nehme den kleinen Tisch. Der große passt nicht ins Zimmer.",
-     "ru": "Хорошо. Я беру маленький стол. Большой не помещается в комнате.",
-     "audio": "audio/8998d95200ae.m4a"
+     "ru": "Хорошо. Я беру маленький стол. Большой не помещается в комнате."
     },
     {
      "who": "D",
      "de": "Und welchen Stuhl nehmen wir?",
-     "ru": "А какой стул возьмём?",
-     "audio": "audio/ebfca5330c7d.m4a"
+     "ru": "А какой стул возьмём?"
     },
     {
      "who": "E",
      "de": "Den blauen Stuhl. Er passt gut zum Tisch.",
-     "ru": "Синий стул. Он хорошо подходит к столу.",
-     "audio": "audio/f20c1e659781.m4a"
+     "ru": "Синий стул. Он хорошо подходит к столу."
     },
     {
      "who": "M",
      "de": "Die helle Lampe haben wir schon. Eine neue brauchen wir nicht.",
-     "ru": "Светлая лампа у нас уже есть. Новая нам не нужна.",
-     "audio": "audio/62955f519a55.m4a"
+     "ru": "Светлая лампа у нас уже есть. Новая нам не нужна."
     },
     {
      "who": "H",
      "de": "Dann kaufen wir nur den Tisch und den Stuhl.",
-     "ru": "Тогда покупаем только стол и стул.",
-     "audio": "audio/cf5f9f3f0514.m4a"
+     "ru": "Тогда покупаем только стол и стул."
     }
    ]
   }
@@ -125,85 +117,73 @@
      "de": "klein",
      "ru": "маленький",
      "gender": null,
-     "plural": null,
-     "audio": "audio/9365e85e6ab0.m4a"
+     "plural": null
     },
     {
      "de": "groß",
      "ru": "большой",
      "gender": null,
-     "plural": null,
-     "audio": "audio/6829eaf41f82.m4a"
+     "plural": null
     },
     {
      "de": "hell",
      "ru": "светлый",
      "gender": null,
-     "plural": null,
-     "audio": "audio/00c21a6ede79.m4a"
+     "plural": null
     },
     {
      "de": "dunkel",
      "ru": "тёмный",
      "gender": null,
-     "plural": null,
-     "audio": "audio/2631bdbdb858.m4a"
+     "plural": null
     },
     {
      "de": "blau",
      "ru": "синий",
      "gender": null,
-     "plural": null,
-     "audio": "audio/40b90937b839.m4a"
+     "plural": null
     },
     {
      "de": "eine neue Lampe",
      "ru": "новая лампа",
      "gender": null,
-     "plural": null,
-     "audio": "audio/743d8f73c178.m4a"
+     "plural": null
     },
     {
      "de": "gebraucht",
      "ru": "бывший в употреблении",
      "gender": null,
-     "plural": null,
-     "audio": "audio/99833981d08e.m4a"
+     "plural": null
     },
     {
      "de": "bequem",
      "ru": "удобный",
      "gender": null,
-     "plural": null,
-     "audio": "audio/6c1745a7bf54.m4a"
+     "plural": null
     },
     {
      "de": "die Lampe",
      "ru": "лампа",
      "gender": "f",
-     "plural": "Lampen",
-     "audio": "audio/b34283510d3f.m4a"
+     "plural": "Lampen"
     },
     {
      "de": "der Stuhl",
      "ru": "стул",
      "gender": "m",
-     "plural": "Stühle",
-     "audio": "audio/e644af7b9eb7.m4a"
+     "plural": "Stühle"
     },
     {
      "de": "das Regal",
      "ru": "стеллаж",
      "gender": "n",
-     "plural": "Regale",
-     "audio": "audio/4894122727bb.m4a"
+     "plural": "Regale"
     },
     {
      "de": "einrichten",
      "ru": "обустраивать",
      "gender": null,
-     "plural": null,
-     "audio": "audio/5fab42b791f4.m4a"
+     "plural": null
     }
    ]
   }
@@ -321,16 +301,13 @@
    "word": "Möbel – Farbe – Größe",
    "sample": [
     {
-     "de": "Was braucht ihr noch für das Zimmer?",
-     "audio": "audio/33a38c4141b3.m4a"
+     "de": "Was braucht ihr noch für das Zimmer?"
     },
     {
-     "de": "Wir brauchen einen kleinen Tisch.",
-     "audio": "audio/2e2e9c846415.m4a"
+     "de": "Wir brauchen einen kleinen Tisch."
     },
     {
-     "de": "Die helle Lampe haben wir schon.",
-     "audio": "audio/6afdcdb19fbf.m4a"
+     "de": "Die helle Lampe haben wir schon."
     }
    ]
   }
@@ -544,8 +521,7 @@
       ],
       "punct": ".",
       "plain": "Ich nehme den kleinen Tisch.",
-      "ru": "Я беру маленький стол.",
-      "audio": "audio/2d60b26e940e.m4a"
+      "ru": "Я беру маленький стол."
      }
     ]
    }
@@ -597,8 +573,7 @@
       ],
       "punct": ".",
       "plain": "Ich nehme den kleinen Tisch.",
-      "ru": "Я беру маленький стол.",
-      "audio": "audio/2d60b26e940e.m4a"
+      "ru": "Я беру маленький стол."
      }
     ]
    }
@@ -650,8 +625,7 @@
       ],
       "punct": ".",
       "plain": "Ich nehme den kleinen Tisch.",
-      "ru": "Я беру маленький стол.",
-      "audio": "audio/2d60b26e940e.m4a"
+      "ru": "Я беру маленький стол."
      }
     ]
    }
@@ -702,8 +676,7 @@
       ],
       "punct": ".",
       "plain": "Ich nehme den kleinen Tisch.",
-      "ru": "Я беру маленький стол.",
-      "audio": "audio/2d60b26e940e.m4a"
+      "ru": "Я беру маленький стол."
      }
     ],
     "task": "list"
@@ -756,8 +729,7 @@
       ],
       "punct": ".",
       "plain": "Ich nehme den kleinen Tisch.",
-      "ru": "Я беру маленький стол.",
-      "audio": "audio/2d60b26e940e.m4a"
+      "ru": "Я беру маленький стол."
      }
     ],
     "task": "list"
@@ -800,8 +772,7 @@
       ],
       "punct": ".",
       "plain": "Ich nehme den kleinen Tisch.",
-      "ru": "Я беру маленький стол.",
-      "audio": "audio/2d60b26e940e.m4a"
+      "ru": "Я беру маленький стол."
      }
     ],
     "task": "list",
@@ -854,8 +825,7 @@
       ],
       "punct": ".",
       "plain": "Ich nehme den kleinen Tisch.",
-      "ru": "Я беру маленький стол.",
-      "audio": "audio/2d60b26e940e.m4a"
+      "ru": "Я беру маленький стол."
      }
     ],
     "task": "directory"
@@ -908,8 +878,7 @@
       ],
       "punct": ".",
       "plain": "Ich nehme den kleinen Tisch.",
-      "ru": "Я беру маленький стол.",
-      "audio": "audio/2d60b26e940e.m4a"
+      "ru": "Я беру маленький стол."
      }
     ],
     "task": "directory"
@@ -952,8 +921,7 @@
       ],
       "punct": ".",
       "plain": "Ich nehme den kleinen Tisch.",
-      "ru": "Я беру маленький стол.",
-      "audio": "audio/2d60b26e940e.m4a"
+      "ru": "Я беру маленький стол."
      }
     ],
     "task": "directory",
@@ -1006,8 +974,7 @@
       ],
       "punct": ".",
       "plain": "Ich nehme den kleinen Tisch.",
-      "ru": "Я беру маленький стол.",
-      "audio": "audio/2d60b26e940e.m4a"
+      "ru": "Я беру маленький стол."
      }
     ],
     "task": "talk",
@@ -1061,8 +1028,7 @@
       ],
       "punct": ".",
       "plain": "Ich nehme den kleinen Tisch.",
-      "ru": "Я беру маленький стол.",
-      "audio": "audio/2d60b26e940e.m4a"
+      "ru": "Я беру маленький стол."
      }
     ],
     "task": "talk",
@@ -1106,8 +1072,7 @@
       ],
       "punct": ".",
       "plain": "Ich nehme den kleinen Tisch.",
-      "ru": "Я беру маленький стол.",
-      "audio": "audio/2d60b26e940e.m4a"
+      "ru": "Я беру маленький стол."
      }
     ],
     "task": "talk",
@@ -1127,8 +1092,7 @@
     "Dem"
    ],
    "answer": 0,
-   "why": "Именительный.",
-   "audio": "audio/fcb38661b0fc.m4a"
+   "why": "Именительный."
   },
   {
    "id": "a2-wohnen-2",
@@ -1140,8 +1104,7 @@
     "klein"
    ],
    "answer": 0,
-   "why": "Ein + Nom м. р.",
-   "audio": "audio/5c89f150375e.m4a"
+   "why": "Ein + Nom м. р."
   },
   {
    "id": "a2-wohnen-3",
@@ -1153,8 +1116,7 @@
     "kleine"
    ],
    "answer": 0,
-   "why": "Akk м. р.",
-   "audio": "audio/23e13b5c57f2.m4a"
+   "why": "Akk м. р."
   },
   {
    "id": "a2-wohnen-4",
@@ -1166,8 +1128,7 @@
     "heller"
    ],
    "answer": 0,
-   "why": "Женский род.",
-   "audio": "audio/c982adc9f928.m4a"
+   "why": "Женский род."
   },
   {
    "id": "a2-wohnen-5",
@@ -1179,8 +1140,7 @@
     "helles"
    ],
    "answer": 0,
-   "why": "После sein без окончания.",
-   "audio": "audio/c11e1122d768.m4a"
+   "why": "После sein без окончания."
   },
   {
    "id": "a2-wohnen-6",
@@ -1192,8 +1152,7 @@
     "kleiner"
    ],
    "answer": 0,
-   "why": "Средний род Nom.",
-   "audio": "audio/7fe10c6af654.m4a"
+   "why": "Средний род Nom."
   },
   {
    "id": "a2-wohnen-7",
@@ -1202,8 +1161,7 @@
    "also": [
     "Einen kleinen Tisch brauchen wir."
    ],
-   "de": "Wir brauchen einen kleinen Tisch.",
-   "audio": "audio/2e2e9c846415.m4a"
+   "de": "Wir brauchen einen kleinen Tisch."
   },
   {
    "id": "a2-wohnen-8",
@@ -1212,8 +1170,7 @@
    "also": [
     "Klein ist der Tisch."
    ],
-   "de": "Der Tisch ist klein.",
-   "audio": "audio/eb198173823f.m4a"
+   "de": "Der Tisch ist klein."
   },
   {
    "id": "a2-wohnen-9",
@@ -1222,8 +1179,7 @@
    "also": [
     "Den blauen Stuhl nehme ich."
    ],
-   "de": "Ich nehme den blauen Stuhl.",
-   "audio": "audio/245e60a408b0.m4a"
+   "de": "Ich nehme den blauen Stuhl."
   },
   {
    "id": "a2-wohnen-10",
@@ -1233,8 +1189,7 @@
     "Wir haben die helle Lampe schon.",
     "Wir haben schon die helle Lampe."
    ],
-   "de": "Die helle Lampe haben wir schon.",
-   "audio": "audio/6afdcdb19fbf.m4a"
+   "de": "Die helle Lampe haben wir schon."
   },
   {
    "id": "a2-wohnen-11",
@@ -1243,8 +1198,7 @@
    "also": [
     "Hier steht ein kleines Regal."
    ],
-   "de": "Ein kleines Regal steht hier.",
-   "audio": "audio/7fe10c6af654.m4a"
+   "de": "Ein kleines Regal steht hier."
   },
   {
    "id": "a2-wohnen-12",
@@ -1253,8 +1207,7 @@
    "also": [
     "Keine neue Lampe kaufen wir."
    ],
-   "de": "Wir kaufen keine neue Lampe.",
-   "audio": "audio/9ea6c160dff2.m4a"
+   "de": "Wir kaufen keine neue Lampe."
   }
  ],
  "case": {

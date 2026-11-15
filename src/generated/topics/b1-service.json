@@ -73,50 +73,42 @@
     {
      "who": "P",
      "de": "Raum B wird zurzeit renoviert. Wir bieten Ihnen Raum C an.",
-     "ru": "ПомещениеB сейчас ремонтируется. Мы предлагаем помещение C.",
-     "audio": "audio/8be128577ad8.m4a"
+     "ru": "ПомещениеB сейчас ремонтируется. Мы предлагаем помещение C."
     },
     {
      "who": "H",
      "de": "Wird dort auch die kleine Küche genutzt?",
-     "ru": "Там также используют маленькую кухню?",
-     "audio": "audio/bacace0bbbe5.m4a"
+     "ru": "Там также используют маленькую кухню?"
     },
     {
      "who": "P",
      "de": "Ja. Die Küche wird heute gereinigt. Raum C hat ebenfalls achtzehn Plätze.",
-     "ru": "Да. Кухню сегодня убирают. В помещенииC также восемнадцать мест.",
-     "audio": "audio/c3ceefb23886.m4a"
+     "ru": "Да. Кухню сегодня убирают. В помещенииC также восемнадцать мест."
     },
     {
      "who": "D",
      "de": "Bleiben die Miete und der Termin gleich?",
-     "ru": "Стоимость и срок остаются прежними?",
-     "audio": "audio/c049dfda719a.m4a"
+     "ru": "Стоимость и срок остаются прежними?"
     },
     {
      "who": "P",
      "de": "Ja. Vierzig Euro mit Küche, am achtzehnten Oktober von fünfzehn bis achtzehn Uhr.",
-     "ru": "Да. Сорок евро с кухней, восемнадцатого октября с пятнадцати до восемнадцати.",
-     "audio": "audio/d8047292f849.m4a"
+     "ru": "Да. Сорок евро с кухней, восемнадцатого октября с пятнадцати до восемнадцати."
     },
     {
      "who": "M",
      "de": "Dann könnten wir Raum C nehmen. Wann bekommen wir den Schlüssel?",
-     "ru": "Тогда мы могли бы взять помещение C. Когда получим ключ?",
-     "audio": "audio/f1f6b3942bb3.m4a"
+     "ru": "Тогда мы могли бы взять помещение C. Когда получим ключ?"
     },
     {
      "who": "P",
      "de": "Die Schlüssel werden ab halb drei im Seitenbüro ausgegeben. Der Aufbau ist dann möglich.",
-     "ru": "Ключи выдают с половины третьего в боковом офисе. Тогда можно начинать подготовку.",
-     "audio": "audio/f56ad0583bd0.m4a"
+     "ru": "Ключи выдают с половины третьего в боковом офисе. Тогда можно начинать подготовку."
     },
     {
      "who": "H",
      "de": "Gut. Bitte bestätigen Sie den Wechsel schriftlich.",
-     "ru": "Хорошо. Пожалуйста, подтвердите замену письменно.",
-     "audio": "audio/68610f0d7fa1.m4a"
+     "ru": "Хорошо. Пожалуйста, подтвердите замену письменно."
     }
    ]
   }
@@ -130,106 +122,91 @@
      "de": "der Ausweichraum",
      "ru": "помещение на замену",
      "gender": "m",
-     "plural": "Ausweichräume",
-     "audio": "audio/c0970d37a68c.m4a"
+     "plural": "Ausweichräume"
     },
     {
      "de": "die Renovierung",
      "ru": "ремонт, обновление",
      "gender": "f",
-     "plural": "Renovierungen",
-     "audio": "audio/96e447ae400d.m4a"
+     "plural": "Renovierungen"
     },
     {
      "de": "die Reparatur",
      "ru": "починка",
      "gender": "f",
-     "plural": "Reparaturen",
-     "audio": "audio/581f38a3505f.m4a"
+     "plural": "Reparaturen"
     },
     {
      "de": "die Reinigung",
      "ru": "уборка",
      "gender": "f",
-     "plural": "Reinigungen",
-     "audio": "audio/1cf59e121eb9.m4a"
+     "plural": "Reinigungen"
     },
     {
      "de": "die Schlüsselübergabe",
      "ru": "передача ключа",
      "gender": "f",
-     "plural": "Schlüsselübergaben",
-     "audio": "audio/e812436b044d.m4a"
+     "plural": "Schlüsselübergaben"
     },
     {
      "de": "der Seiteneingang",
      "ru": "боковой вход",
      "gender": "m",
-     "plural": "Seiteneingänge",
-     "audio": "audio/1c0222f1d85e.m4a"
+     "plural": "Seiteneingänge"
     },
     {
      "de": "das Seitenbüro",
      "ru": "боковой офис",
      "gender": "n",
-     "plural": "Seitenbüros",
-     "audio": "audio/d5729dfec521.m4a"
+     "plural": "Seitenbüros"
     },
     {
      "de": "die Änderung",
      "ru": "изменение",
      "gender": "f",
-     "plural": "Änderungen",
-     "audio": "audio/5ea33f13131d.m4a"
+     "plural": "Änderungen"
     },
     {
      "de": "der Aufbau",
      "ru": "подготовка, установка",
      "gender": "m",
-     "plural": "Aufbauten",
-     "audio": "audio/a1d48fd2a425.m4a"
+     "plural": "Aufbauten"
     },
     {
      "de": "renoviert werden",
      "ru": "ремонтироваться",
      "gender": null,
-     "plural": null,
-     "audio": "audio/1a22a19e1ea5.m4a"
+     "plural": null
     },
     {
      "de": "geprüft werden",
      "ru": "проходить проверку",
      "gender": null,
-     "plural": null,
-     "audio": "audio/b5d02d2a8712.m4a"
+     "plural": null
     },
     {
      "de": "verschickt werden",
      "ru": "отправляться",
      "gender": null,
-     "plural": null,
-     "audio": "audio/67f0fa0a27c7.m4a"
+     "plural": null
     },
     {
      "de": "ebenfalls",
      "ru": "также",
      "gender": null,
-     "plural": null,
-     "audio": "audio/62770a4321ea.m4a"
+     "plural": null
     },
     {
      "de": "unverändert",
      "ru": "без изменений",
      "gender": null,
-     "plural": null,
-     "audio": "audio/540f44bceabc.m4a"
+     "plural": null
     },
     {
      "de": "bereitstehen",
      "ru": "быть приготовленным",
      "gender": null,
-     "plural": null,
-     "audio": "audio/a1cdf7156659.m4a"
+     "plural": null
     }
    ]
   }
@@ -501,24 +478,19 @@
    "title": "Fünf Hinweise aus dem Nachbarschaftshaus",
    "recordings": [
     {
-     "text": "Raum B wird zurzeit renoviert. Die Veranstaltung findet deshalb in Raum C statt. Die Uhrzeit bleibt gleich. Folgen Sie bitte den Schildern zum Seiteneingang.",
-     "audio": "audio/f7ce8d5be067.m4a"
+     "text": "Raum B wird zurzeit renoviert. Die Veranstaltung findet deshalb in Raum C statt. Die Uhrzeit bleibt gleich. Folgen Sie bitte den Schildern zum Seiteneingang."
     },
     {
-     "text": "Die Schlüssel werden heute von halb drei bis Viertel vor drei im Seitenbüro ausgegeben. Bitte holen Sie den Schlüssel vor dem Aufbau ab. Die Veranstaltung beginnt wie geplant um drei.",
-     "audio": "audio/054585c5e8d8.m4a"
+     "text": "Die Schlüssel werden heute von halb drei bis Viertel vor drei im Seitenbüro ausgegeben. Bitte holen Sie den Schlüssel vor dem Aufbau ab. Die Veranstaltung beginnt wie geplant um drei."
     },
     {
-     "text": "Die kleine Küche in Raum C wird vor Ihrer Ankunft gereinigt. Sie dürfen sie wie vereinbart benutzen. Bitte bringen Sie Ihre Lebensmittel selbst mit; sie sind nicht Teil der Raummiete.",
-     "audio": "audio/750c7cd9ab8e.m4a"
+     "text": "Die kleine Küche in Raum C wird vor Ihrer Ankunft gereinigt. Sie dürfen sie wie vereinbart benutzen. Bitte bringen Sie Ihre Lebensmittel selbst mit; sie sind nicht Teil der Raummiete."
     },
     {
-     "text": "Die Stühle werden in Raum C bereitgestellt. Achtzehn Plätze sind vorhanden. Die Miete bleibt bei vierzig Euro einschließlich der kleinen Küche.",
-     "audio": "audio/b2828e10c262.m4a"
+     "text": "Die Stühle werden in Raum C bereitgestellt. Achtzehn Plätze sind vorhanden. Die Miete bleibt bei vierzig Euro einschließlich der kleinen Küche."
     },
     {
-     "text": "Der Haupteingang ist während der Arbeiten geschlossen. Das Haus bleibt geöffnet. Bitte benutzen Sie den Seiteneingang neben dem Büro. Dort finden Sie auch den Hinweis zu Raum C.",
-     "audio": "audio/9e672fdcf1f6.m4a"
+     "text": "Der Haupteingang ist während der Arbeiten geschlossen. Das Haus bleibt geöffnet. Bitte benutzen Sie den Seiteneingang neben dem Büro. Dort finden Sie auch den Hinweis zu Raum C."
     }
    ],
    "questions": [
@@ -588,8 +560,7 @@
    ],
    "sample": [
     {
-     "de": "Sehr geehrte Frau Petersen, vielen Dank für Ihre Nachricht. Wir haben verstanden, dass Raum B renoviert wird und unsere Veranstaltung in Raum C stattfindet. Bitte beachten Sie, dass wir weiterhin 18 Plätze und die kleine Küche brauchen. Laut Ihrer Bestätigung bleibt die Miete bei 40 Euro. Auch der Termin am 18. Oktober von 15 bis 18 Uhr bleibt gleich. Wir holen den Schlüssel um 14:30 im Seitenbüro ab und benutzen den Seiteneingang. Können Sie uns bitte noch sagen, wo und bis wann wir den Schlüssel nach der Veranstaltung zurückgeben sollen? Vielen Dank und mit freundlichen Grüßen Hauke",
-     "audio": "audio/f5ae061a798c.m4a"
+     "de": "Sehr geehrte Frau Petersen, vielen Dank für Ihre Nachricht. Wir haben verstanden, dass Raum B renoviert wird und unsere Veranstaltung in Raum C stattfindet. Bitte beachten Sie, dass wir weiterhin 18 Plätze und die kleine Küche brauchen. Laut Ihrer Bestätigung bleibt die Miete bei 40 Euro. Auch der Termin am 18. Oktober von 15 bis 18 Uhr bleibt gleich. Wir holen den Schlüssel um 14:30 im Seitenbüro ab und benutzen den Seiteneingang. Können Sie uns bitte noch sagen, wo und bis wann wir den Schlüssel nach der Veranstaltung zurückgeben sollen? Vielen Dank und mit freundlichen Grüßen Hauke"
     }
    ]
   }
@@ -783,8 +754,7 @@
       ],
       "punct": ".",
       "plain": "Raum C wird heute vorbereitet.",
-      "ru": "ПомещениеC сегодня подготавливают.",
-      "audio": "audio/80e4c9ea00eb.m4a"
+      "ru": "ПомещениеC сегодня подготавливают."
      }
     ]
    }
@@ -837,8 +807,7 @@
       ],
       "punct": ".",
       "plain": "Raum C wird heute vorbereitet.",
-      "ru": "ПомещениеC сегодня подготавливают.",
-      "audio": "audio/80e4c9ea00eb.m4a"
+      "ru": "ПомещениеC сегодня подготавливают."
      }
     ]
    }
@@ -891,8 +860,7 @@
       ],
       "punct": ".",
       "plain": "Raum C wird heute vorbereitet.",
-      "ru": "ПомещениеC сегодня подготавливают.",
-      "audio": "audio/80e4c9ea00eb.m4a"
+      "ru": "ПомещениеC сегодня подготавливают."
      }
     ]
    }
@@ -944,8 +912,7 @@
       ],
       "punct": ".",
       "plain": "Raum C wird heute vorbereitet.",
-      "ru": "ПомещениеC сегодня подготавливают.",
-      "audio": "audio/80e4c9ea00eb.m4a"
+      "ru": "ПомещениеC сегодня подготавливают."
      }
     ],
     "task": "update"
@@ -999,8 +966,7 @@
       ],
       "punct": ".",
       "plain": "Raum C wird heute vorbereitet.",
-      "ru": "ПомещениеC сегодня подготавливают.",
-      "audio": "audio/80e4c9ea00eb.m4a"
+      "ru": "ПомещениеC сегодня подготавливают."
      }
     ],
     "task": "update"
@@ -1044,8 +1010,7 @@
       ],
       "punct": ".",
       "plain": "Raum C wird heute vorbereitet.",
-      "ru": "ПомещениеC сегодня подготавливают.",
-      "audio": "audio/80e4c9ea00eb.m4a"
+      "ru": "ПомещениеC сегодня подготавливают."
      }
     ],
     "task": "update",
@@ -1099,8 +1064,7 @@
       ],
       "punct": ".",
       "plain": "Raum C wird heute vorbereitet.",
-      "ru": "ПомещениеC сегодня подготавливают.",
-      "audio": "audio/80e4c9ea00eb.m4a"
+      "ru": "ПомещениеC сегодня подготавливают."
      }
     ],
     "task": "offers"
@@ -1154,8 +1118,7 @@
       ],
       "punct": ".",
       "plain": "Raum C wird heute vorbereitet.",
-      "ru": "ПомещениеC сегодня подготавливают.",
-      "audio": "audio/80e4c9ea00eb.m4a"
+      "ru": "ПомещениеC сегодня подготавливают."
      }
     ],
     "task": "offers"
@@ -1199,8 +1162,7 @@
       ],
       "punct": ".",
       "plain": "Raum C wird heute vorbereitet.",
-      "ru": "ПомещениеC сегодня подготавливают.",
-      "audio": "audio/80e4c9ea00eb.m4a"
+      "ru": "ПомещениеC сегодня подготавливают."
      }
     ],
     "task": "offers",
@@ -1254,8 +1216,7 @@
       ],
       "punct": ".",
       "plain": "Raum C wird heute vorbereitet.",
-      "ru": "ПомещениеC сегодня подготавливают.",
-      "audio": "audio/80e4c9ea00eb.m4a"
+      "ru": "ПомещениеC сегодня подготавливают."
      }
     ],
     "task": "notices"
@@ -1309,8 +1270,7 @@
       ],
       "punct": ".",
       "plain": "Raum C wird heute vorbereitet.",
-      "ru": "ПомещениеC сегодня подготавливают.",
-      "audio": "audio/80e4c9ea00eb.m4a"
+      "ru": "ПомещениеC сегодня подготавливают."
      }
     ],
     "task": "notices"
@@ -1354,8 +1314,7 @@
       ],
       "punct": ".",
       "plain": "Raum C wird heute vorbereitet.",
-      "ru": "ПомещениеC сегодня подготавливают.",
-      "audio": "audio/80e4c9ea00eb.m4a"
+      "ru": "ПомещениеC сегодня подготавливают."
      }
     ],
     "task": "notices",
@@ -1409,8 +1368,7 @@
       ],
       "punct": ".",
       "plain": "Raum C wird heute vorbereitet.",
-      "ru": "ПомещениеC сегодня подготавливают.",
-      "audio": "audio/80e4c9ea00eb.m4a"
+      "ru": "ПомещениеC сегодня подготавливают."
      }
     ],
     "task": "write",
@@ -1465,8 +1423,7 @@
       ],
       "punct": ".",
       "plain": "Raum C wird heute vorbereitet.",
-      "ru": "ПомещениеC сегодня подготавливают.",
-      "audio": "audio/80e4c9ea00eb.m4a"
+      "ru": "ПомещениеC сегодня подготавливают."
      }
     ],
     "task": "write",
@@ -1511,8 +1468,7 @@
       ],
       "punct": ".",
       "plain": "Raum C wird heute vorbereitet.",
-      "ru": "ПомещениеC сегодня подготавливают.",
-      "audio": "audio/80e4c9ea00eb.m4a"
+      "ru": "ПомещениеC сегодня подготавливают."
      }
     ],
     "task": "write",
@@ -1532,8 +1488,7 @@
     "wird"
    ],
    "answer": 2,
-   "why": "Raum в единственном числе.",
-   "audio": "audio/4ec22dd89aa9.m4a"
+   "why": "Raum в единственном числе."
   },
   {
    "id": "b1-service-2",
@@ -1545,8 +1500,7 @@
     "werden"
    ],
    "answer": 2,
-   "why": "Множественное число.",
-   "audio": "audio/7641ec4bf06e.m4a"
+   "why": "Множественное число."
   },
   {
    "id": "b1-service-3",
@@ -1558,8 +1512,7 @@
     "reinigt"
    ],
    "answer": 0,
-   "why": "Нужно Partizip II.",
-   "audio": "audio/ab1ec0d5e7e5.m4a"
+   "why": "Нужно Partizip II."
   },
   {
    "id": "b1-service-4",
@@ -1604,8 +1557,7 @@
    "ru": "ПомещениеB сейчас ремонтируют.",
    "also": [
     "Zurzeit wird Raum B renoviert."
-   ],
-   "audio": "audio/8f0e9f1e9a64.m4a"
+   ]
   },
   {
    "id": "b1-service-8",
@@ -1614,8 +1566,7 @@
    "ru": "Кухню сегодня убирают.",
    "also": [
     "Heute wird die Küche gereinigt."
-   ],
-   "audio": "audio/52e7c1d15b53.m4a"
+   ]
   },
   {
    "id": "b1-service-9",
@@ -1624,8 +1575,7 @@
    "ru": "Ключи выдают в боковом офисе.",
    "also": [
     "Im Seitenbüro werden die Schlüssel ausgegeben."
-   ],
-   "audio": "audio/0cea5e51c31e.m4a"
+   ]
   },
   {
    "id": "b1-service-10",
@@ -1634,8 +1584,7 @@
    "ru": "ПомещениеC сегодня подготавливают.",
    "also": [
     "Heute wird Raum C vorbereitet."
-   ],
-   "audio": "audio/80e4c9ea00eb.m4a"
+   ]
   },
   {
    "id": "b1-service-11",
@@ -1644,8 +1593,7 @@
    "ru": "Аренда остаётся без изменений.",
    "also": [
     "Unverändert bleibt die Miete."
-   ],
-   "audio": "audio/9635f36a60cd.m4a"
+   ]
   },
   {
    "id": "b1-service-12",
@@ -1654,8 +1602,7 @@
    "ru": "Мы используем боковой вход.",
    "also": [
     "Den Seiteneingang benutzen wir."
-   ],
-   "audio": "audio/12954b70ce2d.m4a"
+   ]
   }
  ],
  "case": {

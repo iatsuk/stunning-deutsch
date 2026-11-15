@@ -817,24 +817,19 @@
    "situation": "Lesen Sie die fünf Aussagen. Hören Sie jede Stellungnahme einmal.",
    "recordings": [
     {
-     "text": "Ich lerne lieber jeden Tag eine kurze Zeit als nur einmal am Wochenende sehr lange. Zehn Minuten mit einer konkreten Aufgabe schaffe ich auch an einem vollen Tag. Dabei möchte ich etwas benutzen, zum Beispiel eine Nachricht verstehen oder eine Frage stellen. Wenn ein Tag ausfällt, mache ich am nächsten weiter, ohne den ganzen Plan aufzugeben.",
-     "audio": "audio/d4a6dfe029c2.m4a"
+     "text": "Ich lerne lieber jeden Tag eine kurze Zeit als nur einmal am Wochenende sehr lange. Zehn Minuten mit einer konkreten Aufgabe schaffe ich auch an einem vollen Tag. Dabei möchte ich etwas benutzen, zum Beispiel eine Nachricht verstehen oder eine Frage stellen. Wenn ein Tag ausfällt, mache ich am nächsten weiter, ohne den ganzen Plan aufzugeben."
     },
     {
-     "text": "Allein fange ich manchmal schnell an, höre aber auch schnell wieder auf. In einer kleinen Gruppe bleibe ich eher dabei. Mir hilft besonders, dass ich eine Rückfrage stellen kann. Trotzdem möchte ich nicht, dass die anderen alles für mich erledigen. Ich versuche zuerst selbst eine Lösung und vergleiche sie danach mit den Ideen der Gruppe.",
-     "audio": "audio/c20b3fc9d9e0.m4a"
+     "text": "Allein fange ich manchmal schnell an, höre aber auch schnell wieder auf. In einer kleinen Gruppe bleibe ich eher dabei. Mir hilft besonders, dass ich eine Rückfrage stellen kann. Trotzdem möchte ich nicht, dass die anderen alles für mich erledigen. Ich versuche zuerst selbst eine Lösung und vergleiche sie danach mit den Ideen der Gruppe."
     },
     {
-     "text": "Online-Angebote passen gut zu meinem wechselnden Alltag. Ich kann einen Teil der Aufgaben zu Hause erledigen und spare den Weg. Ganz ohne feste Termine funktioniert es bei mir aber nicht. Deshalb habe ich sowohl freie Übungen als auch einen wöchentlichen Gesprächstermin. Die Möglichkeit, flexibel zu lernen, ersetzt für mich keine eigene Planung.",
-     "audio": "audio/dff16abfd51f.m4a"
+     "text": "Online-Angebote passen gut zu meinem wechselnden Alltag. Ich kann einen Teil der Aufgaben zu Hause erledigen und spare den Weg. Ganz ohne feste Termine funktioniert es bei mir aber nicht. Deshalb habe ich sowohl freie Übungen als auch einen wöchentlichen Gesprächstermin. Die Möglichkeit, flexibel zu lernen, ersetzt für mich keine eigene Planung."
     },
     {
-     "text": "Ich höre gern kurze Gespräche in der Sprache, die ich lerne. Früher wollte ich jedes Wort übersetzen, bevor ich weiterhörte. Jetzt frage ich zuerst nach dem Thema und den wichtigen Angaben. Unbekannte Wörter prüfe ich später, wenn sie für die Aufgabe wirklich nötig sind. Dadurch merke ich besser, was ich bereits verstehen kann.",
-     "audio": "audio/7d5c906e8ec7.m4a"
+     "text": "Ich höre gern kurze Gespräche in der Sprache, die ich lerne. Früher wollte ich jedes Wort übersetzen, bevor ich weiterhörte. Jetzt frage ich zuerst nach dem Thema und den wichtigen Angaben. Unbekannte Wörter prüfe ich später, wenn sie für die Aufgabe wirklich nötig sind. Dadurch merke ich besser, was ich bereits verstehen kann."
     },
     {
-     "text": "Beim Sprechen habe ich lange auf den perfekten Satz gewartet. Das half mir wenig, denn oft sagte ich dann gar nichts. Heute finde ich eine verständliche Rückmeldung wichtiger. Wenn jemand nachfragt, sehe ich genauer, was unklar war. Eine korrigierte Form versuche ich danach gleich in einem eigenen Beispiel zu verwenden.",
-     "audio": "audio/8654523617b0.m4a"
+     "text": "Beim Sprechen habe ich lange auf den perfekten Satz gewartet. Das half mir wenig, denn oft sagte ich dann gar nichts. Heute finde ich eine verständliche Rückmeldung wichtiger. Wenn jemand nachfragt, sehe ich genauer, was unklar war. Eine korrigierte Form versuche ich danach gleich in einem eigenen Beispiel zu verwenden."
     }
    ],
    "questions": [
@@ -1003,103 +998,83 @@
    "script": [
     {
      "who": "Moderator",
-     "de": "Lea, du hast neben deiner Arbeit eine Weiterbildung besucht. Wie sieht dein normaler Arbeitstag aus?",
-     "audio": "audio/4aa33cd4e3f6.m4a"
+     "de": "Lea, du hast neben deiner Arbeit eine Weiterbildung besucht. Wie sieht dein normaler Arbeitstag aus?"
     },
     {
      "who": "Lea",
-     "de": "Ich arbeite an fünf Tagen in der Woche im Büro, meistens von acht bis sechzehn Uhr. Danach möchte ich nicht jeden Abend noch lernen. Trotzdem wollte ich bei beruflichen Gesprächen sicherer werden. Deshalb suchte ich einen Kurs mit überschaubaren Aufgaben, die ich direkt im Alltag ausprobieren kann.",
-     "audio": "audio/6361eb5ad18a.m4a"
+     "de": "Ich arbeite an fünf Tagen in der Woche im Büro, meistens von acht bis sechzehn Uhr. Danach möchte ich nicht jeden Abend noch lernen. Trotzdem wollte ich bei beruflichen Gesprächen sicherer werden. Deshalb suchte ich einen Kurs mit überschaubaren Aufgaben, die ich direkt im Alltag ausprobieren kann."
     },
     {
      "who": "Moderator",
-     "de": "Hat deine Firma dir den Kurs vorgeschrieben oder kam die Idee von dir selbst?",
-     "audio": "audio/7aaf9369359e.m4a"
+     "de": "Hat deine Firma dir den Kurs vorgeschrieben oder kam die Idee von dir selbst?"
     },
     {
      "who": "Lea",
-     "de": "Die Idee kam von mir. Eine Freundin hatte mir von dem Angebot erzählt. Ich sprach dann mit meiner Chefin, weil ich wissen wollte, ob die Zeiten zu meiner Arbeit passen. Sie fand die Idee gut, aber sie verlangte keinen bestimmten Kurs. Ich konnte selbst entscheiden, ob ich mich anmelde.",
-     "audio": "audio/7f367fe57226.m4a"
+     "de": "Die Idee kam von mir. Eine Freundin hatte mir von dem Angebot erzählt. Ich sprach dann mit meiner Chefin, weil ich wissen wollte, ob die Zeiten zu meiner Arbeit passen. Sie fand die Idee gut, aber sie verlangte keinen bestimmten Kurs. Ich konnte selbst entscheiden, ob ich mich anmelde."
     },
     {
      "who": "Moderator",
-     "de": "Wann fand der Unterricht statt, und musstest du jedes Mal an denselben Ort fahren?",
-     "audio": "audio/f2e67449cc49.m4a"
+     "de": "Wann fand der Unterricht statt, und musstest du jedes Mal an denselben Ort fahren?"
     },
     {
      "who": "Lea",
-     "de": "Wir trafen uns montags und mittwochs von neunzehn bis zwanzig Uhr dreißig. Von den acht Terminen waren sechs im Kursraum und zwei im Videochat. Es waren also nicht nur fertige Videos, die man allein anschaut. Auch online konnten wir Fragen stellen und in kleinen Gruppen üben.",
-     "audio": "audio/b23363fc7cfa.m4a"
+     "de": "Wir trafen uns montags und mittwochs von neunzehn bis zwanzig Uhr dreißig. Von den acht Terminen waren sechs im Kursraum und zwei im Videochat. Es waren also nicht nur fertige Videos, die man allein anschaut. Auch online konnten wir Fragen stellen und in kleinen Gruppen üben."
     },
     {
      "who": "Moderator",
-     "de": "Welche Aufgabe hat dir für deinen Beruf besonders geholfen?",
-     "audio": "audio/88a901771c12.m4a"
+     "de": "Welche Aufgabe hat dir für deinen Beruf besonders geholfen?"
     },
     {
      "who": "Lea",
-     "de": "Wir übten kurze Nachrichten an Kollegen und Kunden. Vorher schrieb ich oft zu viele Einzelheiten und vergaß am Ende die eigentliche Frage. Im Kurs mussten wir zuerst das Ziel der Nachricht nennen. Seitdem prüfe ich, ob jemand ohne mein Vorwissen versteht, was ich brauche und bis wann ich eine Antwort möchte.",
-     "audio": "audio/0493cebda44a.m4a"
+     "de": "Wir übten kurze Nachrichten an Kollegen und Kunden. Vorher schrieb ich oft zu viele Einzelheiten und vergaß am Ende die eigentliche Frage. Im Kurs mussten wir zuerst das Ziel der Nachricht nennen. Seitdem prüfe ich, ob jemand ohne mein Vorwissen versteht, was ich brauche und bis wann ich eine Antwort möchte."
     },
     {
      "who": "Moderator",
-     "de": "War es leicht für dich, vor anderen nachzufragen, wenn du etwas nicht verstanden hast?",
-     "audio": "audio/5d4f5c7cb8be.m4a"
+     "de": "War es leicht für dich, vor anderen nachzufragen, wenn du etwas nicht verstanden hast?"
     },
     {
      "who": "Lea",
-     "de": "Am Anfang nicht. Ich dachte, die anderen hätten alles längst verstanden. Dann merkte ich, dass viele ähnliche Fragen hatten. Die Kursleiterin wartete bewusst auf Rückfragen. Heute frage ich eher nach einem konkreten Beispiel, statt einfach zu sagen, dass alles klar ist. Das hilft auch den anderen in der Gruppe.",
-     "audio": "audio/0ce06499c3d4.m4a"
+     "de": "Am Anfang nicht. Ich dachte, die anderen hätten alles längst verstanden. Dann merkte ich, dass viele ähnliche Fragen hatten. Die Kursleiterin wartete bewusst auf Rückfragen. Heute frage ich eher nach einem konkreten Beispiel, statt einfach zu sagen, dass alles klar ist. Das hilft auch den anderen in der Gruppe."
     },
     {
      "who": "Moderator",
-     "de": "Wer hat die Kosten übernommen?",
-     "audio": "audio/8700f16571e7.m4a"
+     "de": "Wer hat die Kosten übernommen?"
     },
     {
      "who": "Lea",
-     "de": "Der Kurs kostete hundertzwanzig Euro. Meine Firma gab vierzig Euro dazu, den Rest bezahlte ich selbst. Wichtig war mir, dass ich vorher genau wusste, was enthalten ist. Die Materialien waren dabei, zusätzliche Einzelstunden nicht. Ich habe deshalb keine weiteren Stunden gebucht, sondern erst mit den Übungen aus der Gruppe gearbeitet.",
-     "audio": "audio/5b9945bc3600.m4a"
+     "de": "Der Kurs kostete hundertzwanzig Euro. Meine Firma gab vierzig Euro dazu, den Rest bezahlte ich selbst. Wichtig war mir, dass ich vorher genau wusste, was enthalten ist. Die Materialien waren dabei, zusätzliche Einzelstunden nicht. Ich habe deshalb keine weiteren Stunden gebucht, sondern erst mit den Übungen aus der Gruppe gearbeitet."
     },
     {
      "who": "Moderator",
-     "de": "Du hast eine Woche gefehlt. Wie konntest du danach weiterarbeiten?",
-     "audio": "audio/fa764df5d171.m4a"
+     "de": "Du hast eine Woche gefehlt. Wie konntest du danach weiterarbeiten?"
     },
     {
      "who": "Lea",
-     "de": "In dieser Woche musste ich länger arbeiten und konnte abends nicht teilnehmen. Eine andere Teilnehmerin schickte mir ihre Notizen. Es gab keine vollständige Aufnahme des Unterrichts. Ich las zuerst die Beispiele und besprach offene Fragen beim nächsten Termin. So brauchte ich nicht zu behaupten, dass ich alles allein sofort nachholen kann.",
-     "audio": "audio/1f0d2282f3c3.m4a"
+     "de": "In dieser Woche musste ich länger arbeiten und konnte abends nicht teilnehmen. Eine andere Teilnehmerin schickte mir ihre Notizen. Es gab keine vollständige Aufnahme des Unterrichts. Ich las zuerst die Beispiele und besprach offene Fragen beim nächsten Termin. So brauchte ich nicht zu behaupten, dass ich alles allein sofort nachholen kann."
     },
     {
      "who": "Moderator",
-     "de": "Hast du nach dem Kurs eine neue Aufgabe oder eine andere Stelle bekommen?",
-     "audio": "audio/432b315d443e.m4a"
+     "de": "Hast du nach dem Kurs eine neue Aufgabe oder eine andere Stelle bekommen?"
     },
     {
      "who": "Lea",
-     "de": "Nein, meine Stelle ist dieselbe geblieben. Ich habe eine Teilnahmebescheinigung bekommen, aber daraus folgt keine automatische Beförderung. Für mich war zuerst wichtig, dass einige Gespräche und Nachrichten leichter wurden. Meine Chefin möchte später mit mir besprechen, wo ich das Gelernte noch einsetzen kann. Das ist noch ein offenes Gespräch.",
-     "audio": "audio/a8f82e02094b.m4a"
+     "de": "Nein, meine Stelle ist dieselbe geblieben. Ich habe eine Teilnahmebescheinigung bekommen, aber daraus folgt keine automatische Beförderung. Für mich war zuerst wichtig, dass einige Gespräche und Nachrichten leichter wurden. Meine Chefin möchte später mit mir besprechen, wo ich das Gelernte noch einsetzen kann. Das ist noch ein offenes Gespräch."
     },
     {
      "who": "Moderator",
-     "de": "Was würdest du jemandem sagen, der einen solchen Kurs neben der Arbeit plant?",
-     "audio": "audio/17629fc8d5b1.m4a"
+     "de": "Was würdest du jemandem sagen, der einen solchen Kurs neben der Arbeit plant?"
     },
     {
      "who": "Lea",
-     "de": "Ich würde die Zeit realistisch prüfen und nach kleinen konkreten Aufgaben fragen. Nicht jeder Kurs passt zu jeder Woche. Mir half, dass ich sowohl feste Termine als auch Möglichkeiten zum eigenen Üben hatte. Außerdem sollte man rechtzeitig sagen, wenn eine Aufgabe zu viel wird. Dann kann die Gruppe gemeinsam eine Lösung suchen.",
-     "audio": "audio/f17d27a8dafd.m4a"
+     "de": "Ich würde die Zeit realistisch prüfen und nach kleinen konkreten Aufgaben fragen. Nicht jeder Kurs passt zu jeder Woche. Mir half, dass ich sowohl feste Termine als auch Möglichkeiten zum eigenen Üben hatte. Außerdem sollte man rechtzeitig sagen, wenn eine Aufgabe zu viel wird. Dann kann die Gruppe gemeinsam eine Lösung suchen."
     },
     {
      "who": "Moderator",
-     "de": "Ist dein nächster Kurs schon gebucht?",
-     "audio": "audio/28a8433d6435.m4a"
+     "de": "Ist dein nächster Kurs schon gebucht?"
     },
     {
      "who": "Lea",
-     "de": "Noch nicht. Ich interessiere mich für einen Workshop am Samstag. Zuerst muss ich aber meine freien Tage klären. Wenn der Termin passt, würde ich mich gern anmelden. Im Moment ist das eine Möglichkeit und keine bestätigte Buchung. Ich möchte lieber warten, als der Gruppe etwas zu versprechen, das ich nicht halten kann.",
-     "audio": "audio/3ca1f3b7c57e.m4a"
+     "de": "Noch nicht. Ich interessiere mich für einen Workshop am Samstag. Zuerst muss ich aber meine freien Tage klären. Wenn der Termin passt, würde ich mich gern anmelden. Im Moment ist das eine Möglichkeit und keine bestätigte Buchung. Ich möchte lieber warten, als der Gruppe etwas zu versprechen, das ich nicht halten kann."
     }
    ],
    "sample": []
@@ -1112,24 +1087,19 @@
    "situation": "Lesen Sie die Aussagen. Hören Sie jede Mitteilung zweimal.",
    "recordings": [
     {
-     "text": "Liebe Besucherinnen und Besucher, unsere Bibliothek öffnet am kommenden Samstag wegen einer internen Besprechung erst um elf Uhr statt um neun. Die Rückgabebox vor dem Gebäude bleibt wie gewohnt zugänglich. Ausgeliehene Medien können Sie dort auch vor der Öffnung zurückgeben. Die Änderung betrifft nur diesen Samstag; ab Montag gelten wieder die normalen Zeiten.",
-     "audio": "audio/43e632517023.m4a"
+     "text": "Liebe Besucherinnen und Besucher, unsere Bibliothek öffnet am kommenden Samstag wegen einer internen Besprechung erst um elf Uhr statt um neun. Die Rückgabebox vor dem Gebäude bleibt wie gewohnt zugänglich. Ausgeliehene Medien können Sie dort auch vor der Öffnung zurückgeben. Die Änderung betrifft nur diesen Samstag; ab Montag gelten wieder die normalen Zeiten."
     },
     {
-     "text": "Eine Nachricht für die Teilnehmenden des Abendkurses: Wir treffen uns heute in Raum hundertacht statt in Raum zweihundertzehn. Der Beginn bleibt um achtzehn Uhr dreißig. Bitte gehen Sie direkt in den neuen Raum im Erdgeschoss. Die Kursleiterin erwartet Sie dort. Es ist nicht nötig, zuerst zum alten Raum zu kommen.",
-     "audio": "audio/d564c91c523f.m4a"
+     "text": "Eine Nachricht für die Teilnehmenden des Abendkurses: Wir treffen uns heute in Raum hundertacht statt in Raum zweihundertzehn. Der Beginn bleibt um achtzehn Uhr dreißig. Bitte gehen Sie direkt in den neuen Raum im Erdgeschoss. Die Kursleiterin erwartet Sie dort. Es ist nicht nötig, zuerst zum alten Raum zu kommen."
     },
     {
-     "text": "Achtung am Bahnhof. Der Zug um siebzehn Uhr fünfundvierzig fährt heute von Gleis vier, nicht von Gleis zwei. Die Abfahrtszeit bleibt unverändert. Bitte beachten Sie die Anzeigen am Bahnsteig. Diese Ansage betrifft nur den genannten Zug; Informationen zu anderen Verbindungen finden Sie auf der Abfahrtstafel.",
-     "audio": "audio/abda06361586.m4a"
+     "text": "Achtung am Bahnhof. Der Zug um siebzehn Uhr fünfundvierzig fährt heute von Gleis vier, nicht von Gleis zwei. Die Abfahrtszeit bleibt unverändert. Bitte beachten Sie die Anzeigen am Bahnsteig. Diese Ansage betrifft nur den genannten Zug; Informationen zu anderen Verbindungen finden Sie auf der Abfahrtstafel."
     },
     {
-     "text": "Guten Tag, hier ist der Reparaturservice. Ihr Drucker ist morgen ab vierzehn Uhr zur Abholung bereit. Heute können wir ihn noch nicht herausgeben, weil die letzte Prüfung erst morgen früh abgeschlossen wird. Bringen Sie bitte den Abholschein mit. Wenn Sie erst später kommen können, rufen Sie uns kurz an, damit wir einen passenden Zeitpunkt vereinbaren.",
-     "audio": "audio/0792ea01513b.m4a"
+     "text": "Guten Tag, hier ist der Reparaturservice. Ihr Drucker ist morgen ab vierzehn Uhr zur Abholung bereit. Heute können wir ihn noch nicht herausgeben, weil die letzte Prüfung erst morgen früh abgeschlossen wird. Bringen Sie bitte den Abholschein mit. Wenn Sie erst später kommen können, rufen Sie uns kurz an, damit wir einen passenden Zeitpunkt vereinbaren."
     },
     {
-     "text": "Hier ist eine Mitteilung für die Gruppe des Sonntagstreffs. Wegen des erwarteten Regens beginnen wir um zehn im kleinen Saal neben dem Park und nicht am Gartentor. Die gemeinsame Einführung findet drinnen statt. Danach entscheiden wir, ob ein kurzer Spaziergang möglich ist. Bitte informieren Sie auch die Personen, die nur den alten Treffpunkt kennen.",
-     "audio": "audio/97aaefa14d80.m4a"
+     "text": "Hier ist eine Mitteilung für die Gruppe des Sonntagstreffs. Wegen des erwarteten Regens beginnen wir um zehn im kleinen Saal neben dem Park und nicht am Gartentor. Die gemeinsame Einführung findet drinnen statt. Danach entscheiden wir, ob ein kurzer Spaziergang möglich ist. Bitte informieren Sie auch die Personen, die nur den alten Treffpunkt kennen."
     }
    ],
    "questions": [
@@ -1200,8 +1170,7 @@
    "situation": "Behandeln Sie alle vier Punkte. Schreiben Sie einen zusammenhängenden Brief mit Anrede und Gruß. Die Antwort wird nicht automatisch bewertet.",
    "sample": [
     {
-     "de": "Liebe Nora, vielen Dank für deine Nachricht. Ich hätte große Lust, gemeinsam mit euch Deutsch zu üben. Ich möchte die Sprache gern in Gesprächen benutzen. Für mich passt Sonntag von 12 bis 17 Uhr besser. Am Samstag bin ich vormittags beschäftigt und würde einen Teil verpassen. Besonders üben möchte ich, in einem Gespräch freundlich nachzufragen. Manchmal verstehe ich die Hauptidee, aber eine wichtige Einzelheit fehlt mir noch. Wir könnten uns zum Beispiel gegenseitig kurze Nachrichten erklären. Für die Pause schlage ich einen Spaziergang vor. Wenn es regnet, könnten wir im Haus gemeinsam essen. Sollen wir etwas mitbringen? Ich freue mich auf deine Antwort. Liebe Grüße Mira",
-     "audio": "audio/44d627dfb684.m4a"
+     "de": "Liebe Nora, vielen Dank für deine Nachricht. Ich hätte große Lust, gemeinsam mit euch Deutsch zu üben. Ich möchte die Sprache gern in Gesprächen benutzen. Für mich passt Sonntag von 12 bis 17 Uhr besser. Am Samstag bin ich vormittags beschäftigt und würde einen Teil verpassen. Besonders üben möchte ich, in einem Gespräch freundlich nachzufragen. Manchmal verstehe ich die Hauptidee, aber eine wichtige Einzelheit fehlt mir noch. Wir könnten uns zum Beispiel gegenseitig kurze Nachrichten erklären. Für die Pause schlage ich einen Spaziergang vor. Wenn es regnet, könnten wir im Haus gemeinsam essen. Sollen wir etwas mitbringen? Ich freue mich auf deine Antwort. Liebe Grüße Mira"
     }
    ]
   },
@@ -1310,122 +1279,102 @@
     {
      "who": "I",
      "de": "Lea, du hast neben deiner Arbeit eine Weiterbildung besucht. Wie sieht dein normaler Arbeitstag aus?",
-     "ru": "Леа, ты прошла обучение параллельно работе. Как выглядит твой обычный рабочий день?",
-     "audio": "audio/4aa33cd4e3f6.m4a"
+     "ru": "Леа, ты прошла обучение параллельно работе. Как выглядит твой обычный рабочий день?"
     },
     {
      "who": "L",
      "de": "Ich arbeite an fünf Tagen in der Woche im Büro, meistens von acht bis sechzehn Uhr. Danach möchte ich nicht jeden Abend noch lernen. Trotzdem wollte ich bei beruflichen Gesprächen sicherer werden. Deshalb suchte ich einen Kurs mit überschaubaren Aufgaben, die ich direkt im Alltag ausprobieren kann.",
-     "ru": "Я работаю в офисе пять дней в неделю, обычно с восьми до шестнадцати. Потом не хочу учиться каждый вечер. Но хотела увереннее вести рабочие разговоры. Поэтому искала курс с небольшими задачами, которые можно сразу попробовать.",
-     "audio": "audio/6361eb5ad18a.m4a"
+     "ru": "Я работаю в офисе пять дней в неделю, обычно с восьми до шестнадцати. Потом не хочу учиться каждый вечер. Но хотела увереннее вести рабочие разговоры. Поэтому искала курс с небольшими задачами, которые можно сразу попробовать."
     },
     {
      "who": "I",
      "de": "Hat deine Firma dir den Kurs vorgeschrieben oder kam die Idee von dir selbst?",
-     "ru": "Курс назначила фирма или это была твоя идея?",
-     "audio": "audio/7aaf9369359e.m4a"
+     "ru": "Курс назначила фирма или это была твоя идея?"
     },
     {
      "who": "L",
      "de": "Die Idee kam von mir. Eine Freundin hatte mir von dem Angebot erzählt. Ich sprach dann mit meiner Chefin, weil ich wissen wollte, ob die Zeiten zu meiner Arbeit passen. Sie fand die Idee gut, aber sie verlangte keinen bestimmten Kurs. Ich konnte selbst entscheiden, ob ich mich anmelde.",
-     "ru": "Это была моя идея. Подруга рассказала о предложении. Я спросила начальницу, подходят ли часы к работе. Ей понравилась идея, но конкретного курса она не требовала. Решение о записи было моим.",
-     "audio": "audio/7f367fe57226.m4a"
+     "ru": "Это была моя идея. Подруга рассказала о предложении. Я спросила начальницу, подходят ли часы к работе. Ей понравилась идея, но конкретного курса она не требовала. Решение о записи было моим."
     },
     {
      "who": "I",
      "de": "Wann fand der Unterricht statt, und musstest du jedes Mal an denselben Ort fahren?",
-     "ru": "Когда проходили занятия и нужно ли было каждый раз ехать в одно место?",
-     "audio": "audio/f2e67449cc49.m4a"
+     "ru": "Когда проходили занятия и нужно ли было каждый раз ехать в одно место?"
     },
     {
      "who": "L",
      "de": "Wir trafen uns montags und mittwochs von neunzehn bis zwanzig Uhr dreißig. Von den acht Terminen waren sechs im Kursraum und zwei im Videochat. Es waren also nicht nur fertige Videos, die man allein anschaut. Auch online konnten wir Fragen stellen und in kleinen Gruppen üben.",
-     "ru": "Мы занимались по понедельникам и средам с девятнадцати до двадцати тридцати. Из восьми встреч шесть были в аудитории, две в видеочате. Это были не просто готовые видео: можно было задавать вопросы и работать группами.",
-     "audio": "audio/b23363fc7cfa.m4a"
+     "ru": "Мы занимались по понедельникам и средам с девятнадцати до двадцати тридцати. Из восьми встреч шесть были в аудитории, две в видеочате. Это были не просто готовые видео: можно было задавать вопросы и работать группами."
     },
     {
      "who": "I",
      "de": "Welche Aufgabe hat dir für deinen Beruf besonders geholfen?",
-     "ru": "Какое задание особенно помогло тебе в работе?",
-     "audio": "audio/88a901771c12.m4a"
+     "ru": "Какое задание особенно помогло тебе в работе?"
     },
     {
      "who": "L",
      "de": "Wir übten kurze Nachrichten an Kollegen und Kunden. Vorher schrieb ich oft zu viele Einzelheiten und vergaß am Ende die eigentliche Frage. Im Kurs mussten wir zuerst das Ziel der Nachricht nennen. Seitdem prüfe ich, ob jemand ohne mein Vorwissen versteht, was ich brauche und bis wann ich eine Antwort möchte.",
-     "ru": "Мы тренировались писать короткие сообщения коллегам и клиентам. Раньше я писала слишком много деталей и забывала главный вопрос. На курсе сначала называли цель. Теперь проверяю, понятны ли просьба и срок ответа человеку без моего знания ситуации.",
-     "audio": "audio/0493cebda44a.m4a"
+     "ru": "Мы тренировались писать короткие сообщения коллегам и клиентам. Раньше я писала слишком много деталей и забывала главный вопрос. На курсе сначала называли цель. Теперь проверяю, понятны ли просьба и срок ответа человеку без моего знания ситуации."
     },
     {
      "who": "I",
      "de": "War es leicht für dich, vor anderen nachzufragen, wenn du etwas nicht verstanden hast?",
-     "ru": "Легко ли было спрашивать при других, если ты что-то не поняла?",
-     "audio": "audio/5d4f5c7cb8be.m4a"
+     "ru": "Легко ли было спрашивать при других, если ты что-то не поняла?"
     },
     {
      "who": "L",
      "de": "Am Anfang nicht. Ich dachte, die anderen hätten alles längst verstanden. Dann merkte ich, dass viele ähnliche Fragen hatten. Die Kursleiterin wartete bewusst auf Rückfragen. Heute frage ich eher nach einem konkreten Beispiel, statt einfach zu sagen, dass alles klar ist. Das hilft auch den anderen in der Gruppe.",
-     "ru": "Сначала нет. Я думала, остальные давно всё поняли. Потом заметила похожие вопросы у других. Преподавательница ждала уточнений. Теперь прошу конкретный пример, вместо того чтобы просто говорить, что всё ясно. Это помогает и другим.",
-     "audio": "audio/0ce06499c3d4.m4a"
+     "ru": "Сначала нет. Я думала, остальные давно всё поняли. Потом заметила похожие вопросы у других. Преподавательница ждала уточнений. Теперь прошу конкретный пример, вместо того чтобы просто говорить, что всё ясно. Это помогает и другим."
     },
     {
      "who": "I",
      "de": "Wer hat die Kosten übernommen?",
-     "ru": "Кто оплатил курс?",
-     "audio": "audio/8700f16571e7.m4a"
+     "ru": "Кто оплатил курс?"
     },
     {
      "who": "L",
      "de": "Der Kurs kostete hundertzwanzig Euro. Meine Firma gab vierzig Euro dazu, den Rest bezahlte ich selbst. Wichtig war mir, dass ich vorher genau wusste, was enthalten ist. Die Materialien waren dabei, zusätzliche Einzelstunden nicht. Ich habe deshalb keine weiteren Stunden gebucht, sondern erst mit den Übungen aus der Gruppe gearbeitet.",
-     "ru": "Курс стоил сто двадцать евро. Фирма дала сорок, остальное оплатила я. Я заранее уточнила состав цены: материалы включены, индивидуальные занятия нет. Дополнительные часы я не брала, сначала занималась упражнениями группы.",
-     "audio": "audio/5b9945bc3600.m4a"
+     "ru": "Курс стоил сто двадцать евро. Фирма дала сорок, остальное оплатила я. Я заранее уточнила состав цены: материалы включены, индивидуальные занятия нет. Дополнительные часы я не брала, сначала занималась упражнениями группы."
     },
     {
      "who": "I",
      "de": "Du hast eine Woche gefehlt. Wie konntest du danach weiterarbeiten?",
-     "ru": "Ты пропустила неделю. Как продолжила потом?",
-     "audio": "audio/fa764df5d171.m4a"
+     "ru": "Ты пропустила неделю. Как продолжила потом?"
     },
     {
      "who": "L",
      "de": "In dieser Woche musste ich länger arbeiten und konnte abends nicht teilnehmen. Eine andere Teilnehmerin schickte mir ihre Notizen. Es gab keine vollständige Aufnahme des Unterrichts. Ich las zuerst die Beispiele und besprach offene Fragen beim nächsten Termin. So brauchte ich nicht zu behaupten, dass ich alles allein sofort nachholen kann.",
-     "ru": "В ту неделю пришлось работать дольше, и я не могла участвовать вечером. Другая участница прислала записи. Полной записи урока не было. Я прочитала примеры и задала оставшиеся вопросы на следующей встрече.",
-     "audio": "audio/1f0d2282f3c3.m4a"
+     "ru": "В ту неделю пришлось работать дольше, и я не могла участвовать вечером. Другая участница прислала записи. Полной записи урока не было. Я прочитала примеры и задала оставшиеся вопросы на следующей встрече."
     },
     {
      "who": "I",
      "de": "Hast du nach dem Kurs eine neue Aufgabe oder eine andere Stelle bekommen?",
-     "ru": "Ты получила после курса новую задачу или другую работу?",
-     "audio": "audio/432b315d443e.m4a"
+     "ru": "Ты получила после курса новую задачу или другую работу?"
     },
     {
      "who": "L",
      "de": "Nein, meine Stelle ist dieselbe geblieben. Ich habe eine Teilnahmebescheinigung bekommen, aber daraus folgt keine automatische Beförderung. Für mich war zuerst wichtig, dass einige Gespräche und Nachrichten leichter wurden. Meine Chefin möchte später mit mir besprechen, wo ich das Gelernte noch einsetzen kann. Das ist noch ein offenes Gespräch.",
-     "ru": "Нет, работа осталась прежней. Я получила подтверждение участия, но не автоматическое повышение. Важно было облегчение разговоров и переписки. Начальница позже хочет обсудить, где ещё применить знания; разговор пока впереди.",
-     "audio": "audio/a8f82e02094b.m4a"
+     "ru": "Нет, работа осталась прежней. Я получила подтверждение участия, но не автоматическое повышение. Важно было облегчение разговоров и переписки. Начальница позже хочет обсудить, где ещё применить знания; разговор пока впереди."
     },
     {
      "who": "I",
      "de": "Was würdest du jemandem sagen, der einen solchen Kurs neben der Arbeit plant?",
-     "ru": "Что бы ты сказала человеку, который планирует такой курс параллельно работе?",
-     "audio": "audio/17629fc8d5b1.m4a"
+     "ru": "Что бы ты сказала человеку, который планирует такой курс параллельно работе?"
     },
     {
      "who": "L",
      "de": "Ich würde die Zeit realistisch prüfen und nach kleinen konkreten Aufgaben fragen. Nicht jeder Kurs passt zu jeder Woche. Mir half, dass ich sowohl feste Termine als auch Möglichkeiten zum eigenen Üben hatte. Außerdem sollte man rechtzeitig sagen, wenn eine Aufgabe zu viel wird. Dann kann die Gruppe gemeinsam eine Lösung suchen.",
-     "ru": "Я бы реалистично проверила время и спросила о небольших конкретных заданиях. Мне помогли фиксированные встречи и самостоятельная практика. Также стоит вовремя сказать, если задания слишком много: группа сможет поискать решение.",
-     "audio": "audio/f17d27a8dafd.m4a"
+     "ru": "Я бы реалистично проверила время и спросила о небольших конкретных заданиях. Мне помогли фиксированные встречи и самостоятельная практика. Также стоит вовремя сказать, если задания слишком много: группа сможет поискать решение."
     },
     {
      "who": "I",
      "de": "Ist dein nächster Kurs schon gebucht?",
-     "ru": "Следующий курс уже забронирован?",
-     "audio": "audio/28a8433d6435.m4a"
+     "ru": "Следующий курс уже забронирован?"
     },
     {
      "who": "L",
      "de": "Noch nicht. Ich interessiere mich für einen Workshop am Samstag. Zuerst muss ich aber meine freien Tage klären. Wenn der Termin passt, würde ich mich gern anmelden. Im Moment ist das eine Möglichkeit und keine bestätigte Buchung. Ich möchte lieber warten, als der Gruppe etwas zu versprechen, das ich nicht halten kann.",
-     "ru": "Ещё нет. Мне интересен субботний семинар. Сначала нужно уточнить свободные дни. Если срок подойдёт, я хотела бы записаться. Пока это возможность, а не подтверждённая запись.",
-     "audio": "audio/3ca1f3b7c57e.m4a"
+     "ru": "Ещё нет. Мне интересен субботний семинар. Сначала нужно уточнить свободные дни. Если срок подойдёт, я хотела бы записаться. Пока это возможность, а не подтверждённая запись."
     }
    ]
   }

@@ -70,50 +70,42 @@
     {
      "who": "E",
      "de": "Die Mehrwegbecher habe ich abgeholt. Sie sind jetzt bei mir.",
-     "ru": "Многоразовые стаканы я получила. Теперь они у меня.",
-     "audio": "audio/ae410e1e0919.m4a"
+     "ru": "Многоразовые стаканы я получила. Теперь они у меня."
     },
     {
      "who": "H",
      "de": "Für den Materialtransport nehmen wir entweder den Bus oder das Fahrrad.",
-     "ru": "Для перевозки материалов возьмём либо автобус, либо велосипед.",
-     "audio": "audio/a5bc40376254.m4a"
+     "ru": "Для перевозки материалов возьмём либо автобус, либо велосипед."
     },
     {
      "who": "D",
      "de": "Wir brauchen sowohl die Fotomappe als auch die Becher.",
-     "ru": "Нам нужны и папка с фотографиями, и стаканы.",
-     "audio": "audio/c268c1b1e6c1.m4a"
+     "ru": "Нам нужны и папка с фотографиями, и стаканы."
     },
     {
      "who": "M",
      "de": "Beim Treff bieten wir sowohl Wasser als auch Tee an.",
-     "ru": "На встрече предложим и воду, и чай.",
-     "audio": "audio/c8f5d82808f6.m4a"
+     "ru": "На встрече предложим и воду, и чай."
     },
     {
      "who": "E",
      "de": "Dann muss aber niemand beides trinken. Jeder kann wählen.",
-     "ru": "Но никому не нужно пить и то и другое. Каждый может выбрать.",
-     "audio": "audio/2525848639b0.m4a"
+     "ru": "Но никому не нужно пить и то и другое. Каждый может выбрать."
     },
     {
      "who": "D",
      "de": "Genau. Ein Angebot mit zwei Möglichkeiten ist keine Pflicht für jeden Gast.",
-     "ru": "Верно. Предложение двух вариантов не является обязанностью для каждого гостя.",
-     "audio": "audio/a100bdafef01.m4a"
+     "ru": "Верно. Предложение двух вариантов не является обязанностью для каждого гостя."
     },
     {
      "who": "H",
      "de": "Raum und Essen kosten zusammen siebzig Euro. Für den Transport bleiben höchstens zehn.",
-     "ru": "Помещение и еда вместе стоят семьдесят евро. На перевозку остаётся не больше десяти.",
-     "audio": "audio/d0a149d26d13.m4a"
+     "ru": "Помещение и еда вместе стоят семьдесят евро. На перевозку остаётся не больше десяти."
     },
     {
      "who": "M",
      "de": "Gut. Dann passen beide Wege, wenn alle Materialien mitkommen.",
-     "ru": "Хорошо. Тогда подходят оба способа, если все материалы будут доставлены.",
-     "audio": "audio/58c982dec2cd.m4a"
+     "ru": "Хорошо. Тогда подходят оба способа, если все материалы будут доставлены."
     }
    ]
   }
@@ -127,107 +119,92 @@
      "de": "die Gewohnheit",
      "ru": "привычка",
      "gender": "f",
-     "plural": "Gewohnheiten",
-     "audio": "audio/dbe10efdb190.m4a"
+     "plural": "Gewohnheiten"
     },
     {
      "de": "die Auswahl",
      "ru": "выбор, ассортимент",
      "gender": "f",
-     "plural": "Auswahlen",
-     "audio": "audio/4cb9db8d6e64.m4a"
+     "plural": "Auswahlen"
     },
     {
      "de": "das Verkehrsmittel",
      "ru": "средство транспорта",
      "gender": "n",
-     "plural": "Verkehrsmittel",
-     "audio": "audio/32ee782a498e.m4a"
+     "plural": "Verkehrsmittel"
     },
     {
      "de": "der Materialtransport",
      "ru": "перевозка материалов",
      "gender": "m",
-     "plural": "Materialtransporte",
-     "audio": "audio/b1daaf7b9139.m4a"
+     "plural": "Materialtransporte"
     },
     {
      "de": "die Fotomappe",
      "ru": "папка с фотографиями",
      "gender": "f",
-     "plural": "Fotomappen",
-     "audio": "audio/74ed7227f544.m4a"
+     "plural": "Fotomappen"
     },
     {
      "de": "die Rückgabefrist",
      "ru": "срок возврата",
      "gender": "f",
-     "plural": "Rückgabefristen",
-     "audio": "audio/1ebc517299cb.m4a"
+     "plural": "Rückgabefristen"
     },
     {
      "de": "das Gepäck",
      "ru": "багаж",
      "gender": "n",
      "plural": null,
-     "noPlural": true,
-     "audio": "audio/fb2dd0ae453b.m4a"
+     "noPlural": true
     },
     {
      "de": "die Möglichkeit",
      "ru": "возможность",
      "gender": "f",
-     "plural": "Möglichkeiten",
-     "audio": "audio/33cfd9b11d94.m4a"
+     "plural": "Möglichkeiten"
     },
     {
      "de": "entweder oder",
      "ru": "либо одно, либо другое",
      "gender": null,
-     "plural": null,
-     "audio": "audio/b6715c60aa45.m4a"
+     "plural": null
     },
     {
      "de": "sowohl als auch",
      "ru": "как одно, так и другое",
      "gender": null,
-     "plural": null,
-     "audio": "audio/76a47e1a9043.m4a"
+     "plural": null
     },
     {
      "de": "zuverlässig",
      "ru": "надёжно",
      "gender": null,
-     "plural": null,
-     "audio": "audio/ef3f319288c0.m4a"
+     "plural": null
     },
     {
      "de": "selten brauchen",
      "ru": "редко нуждаться",
      "gender": null,
-     "plural": null,
-     "audio": "audio/e52f776f3a7e.m4a"
+     "plural": null
     },
     {
      "de": "Rücksicht nehmen",
      "ru": "учитывать других",
      "gender": null,
-     "plural": null,
-     "audio": "audio/b9683974e0be.m4a"
+     "plural": null
     },
     {
      "de": "selbst entscheiden",
      "ru": "решать самостоятельно",
      "gender": null,
-     "plural": null,
-     "audio": "audio/97e78381ac07.m4a"
+     "plural": null
     },
     {
      "de": "beides berücksichtigen",
      "ru": "учитывать оба условия",
      "gender": null,
-     "plural": null,
-     "audio": "audio/b016fb28bacc.m4a"
+     "plural": null
     }
    ]
   }
@@ -616,24 +593,19 @@
    "title": "Fünf persönliche Gewohnheiten",
    "recordings": [
     {
-     "text": "Ich gehe im Alltag viel zu Fuß. Wenn ich schwere Sachen mitnehme, wähle ich aber ein anderes Verkehrsmittel. Mir hilft ein Plan, der sowohl die Zeit als auch das Gepäck berücksichtigt.",
-     "audio": "audio/52a85520c464.m4a"
+     "text": "Ich gehe im Alltag viel zu Fuß. Wenn ich schwere Sachen mitnehme, wähle ich aber ein anderes Verkehrsmittel. Mir hilft ein Plan, der sowohl die Zeit als auch das Gepäck berücksichtigt."
     },
     {
-     "text": "Beim gemeinsamen Essen möchte ich eine Auswahl anbieten. Ich koche oft vegetarisch. Trotzdem verlange ich nicht, dass alle Menschen immer genau wie ich essen. Ich frage lieber nach den Wünschen der Gruppe.",
-     "audio": "audio/5d1035bfe938.m4a"
+     "text": "Beim gemeinsamen Essen möchte ich eine Auswahl anbieten. Ich koche oft vegetarisch. Trotzdem verlange ich nicht, dass alle Menschen immer genau wie ich essen. Ich frage lieber nach den Wünschen der Gruppe."
     },
     {
-     "text": "Für seltene Treffen leihe ich Becher aus. Dafür brauche ich einen klaren Rückgabetermin. Wenn die Abholung überhaupt nicht in meinen Alltag passt, suche ich eine andere Lösung statt einfach zuzusagen.",
-     "audio": "audio/d552cec551ae.m4a"
+     "text": "Für seltene Treffen leihe ich Becher aus. Dafür brauche ich einen klaren Rückgabetermin. Wenn die Abholung überhaupt nicht in meinen Alltag passt, suche ich eine andere Lösung statt einfach zuzusagen."
     },
     {
-     "text": "Ich fahre gern mit dem Fahrrad, aber nicht bei jedem Wetter. Für den Transport großer Sachen nehme ich manchmal den Bus. Eine Alternative zu haben, ist mir wichtiger als immer bei einer einzigen Gewohnheit zu bleiben.",
-     "audio": "audio/5e3d1466acf4.m4a"
+     "text": "Ich fahre gern mit dem Fahrrad, aber nicht bei jedem Wetter. Für den Transport großer Sachen nehme ich manchmal den Bus. Eine Alternative zu haben, ist mir wichtiger als immer bei einer einzigen Gewohnheit zu bleiben."
     },
     {
-     "text": "Ich finde kleine Schritte im Alltag hilfreich. Bei einem Fest muss für mich nicht alles perfekt sein. Wichtig ist, dass die Gruppe zuverlässig zusammenarbeitet und die geliehenen Dinge wieder zurückbringt.",
-     "audio": "audio/537f7c00e4e6.m4a"
+     "text": "Ich finde kleine Schritte im Alltag hilfreich. Bei einem Fest muss für mich nicht alles perfekt sein. Wichtig ist, dass die Gruppe zuverlässig zusammenarbeitet und die geliehenen Dinge wieder zurückbringt."
     }
    ],
    "questions": [
@@ -911,8 +883,7 @@
       ],
       "punct": ".",
       "plain": "Wir bieten sowohl Wasser als auch Tee an.",
-      "ru": "Мы предлагаем и воду, и чай.",
-      "audio": "audio/286c4694ab29.m4a"
+      "ru": "Мы предлагаем и воду, и чай."
      }
     ]
    }
@@ -977,8 +948,7 @@
       ],
       "punct": ".",
       "plain": "Wir bieten sowohl Wasser als auch Tee an.",
-      "ru": "Мы предлагаем и воду, и чай.",
-      "audio": "audio/286c4694ab29.m4a"
+      "ru": "Мы предлагаем и воду, и чай."
      }
     ]
    }
@@ -1043,8 +1013,7 @@
       ],
       "punct": ".",
       "plain": "Wir bieten sowohl Wasser als auch Tee an.",
-      "ru": "Мы предлагаем и воду, и чай.",
-      "audio": "audio/286c4694ab29.m4a"
+      "ru": "Мы предлагаем и воду, и чай."
      }
     ]
    }
@@ -1108,8 +1077,7 @@
       ],
       "punct": ".",
       "plain": "Wir bieten sowohl Wasser als auch Tee an.",
-      "ru": "Мы предлагаем и воду, и чай.",
-      "audio": "audio/286c4694ab29.m4a"
+      "ru": "Мы предлагаем и воду, и чай."
      }
     ],
     "task": "headlines"
@@ -1175,8 +1143,7 @@
       ],
       "punct": ".",
       "plain": "Wir bieten sowohl Wasser als auch Tee an.",
-      "ru": "Мы предлагаем и воду, и чай.",
-      "audio": "audio/286c4694ab29.m4a"
+      "ru": "Мы предлагаем и воду, и чай."
      }
     ],
     "task": "headlines"
@@ -1232,8 +1199,7 @@
       ],
       "punct": ".",
       "plain": "Wir bieten sowohl Wasser als auch Tee an.",
-      "ru": "Мы предлагаем и воду, и чай.",
-      "audio": "audio/286c4694ab29.m4a"
+      "ru": "Мы предлагаем и воду, и чай."
      }
     ],
     "task": "headlines",
@@ -1299,8 +1265,7 @@
       ],
       "punct": ".",
       "plain": "Wir bieten sowohl Wasser als auch Tee an.",
-      "ru": "Мы предлагаем и воду, и чай.",
-      "audio": "audio/286c4694ab29.m4a"
+      "ru": "Мы предлагаем и воду, и чай."
      }
     ],
     "task": "plan"
@@ -1366,8 +1331,7 @@
       ],
       "punct": ".",
       "plain": "Wir bieten sowohl Wasser als auch Tee an.",
-      "ru": "Мы предлагаем и воду, и чай.",
-      "audio": "audio/286c4694ab29.m4a"
+      "ru": "Мы предлагаем и воду, и чай."
      }
     ],
     "task": "plan"
@@ -1423,8 +1387,7 @@
       ],
       "punct": ".",
       "plain": "Wir bieten sowohl Wasser als auch Tee an.",
-      "ru": "Мы предлагаем и воду, и чай.",
-      "audio": "audio/286c4694ab29.m4a"
+      "ru": "Мы предлагаем и воду, и чай."
      }
     ],
     "task": "plan",
@@ -1490,8 +1453,7 @@
       ],
       "punct": ".",
       "plain": "Wir bieten sowohl Wasser als auch Tee an.",
-      "ru": "Мы предлагаем и воду, и чай.",
-      "audio": "audio/286c4694ab29.m4a"
+      "ru": "Мы предлагаем и воду, и чай."
      }
     ],
     "task": "gaps"
@@ -1557,8 +1519,7 @@
       ],
       "punct": ".",
       "plain": "Wir bieten sowohl Wasser als auch Tee an.",
-      "ru": "Мы предлагаем и воду, и чай.",
-      "audio": "audio/286c4694ab29.m4a"
+      "ru": "Мы предлагаем и воду, и чай."
      }
     ],
     "task": "gaps"
@@ -1614,8 +1575,7 @@
       ],
       "punct": ".",
       "plain": "Wir bieten sowohl Wasser als auch Tee an.",
-      "ru": "Мы предлагаем и воду, и чай.",
-      "audio": "audio/286c4694ab29.m4a"
+      "ru": "Мы предлагаем и воду, и чай."
      }
     ],
     "task": "gaps",
@@ -1681,8 +1641,7 @@
       ],
       "punct": ".",
       "plain": "Wir bieten sowohl Wasser als auch Tee an.",
-      "ru": "Мы предлагаем и воду, и чай.",
-      "audio": "audio/286c4694ab29.m4a"
+      "ru": "Мы предлагаем и воду, и чай."
      }
     ],
     "task": "voices"
@@ -1748,8 +1707,7 @@
       ],
       "punct": ".",
       "plain": "Wir bieten sowohl Wasser als auch Tee an.",
-      "ru": "Мы предлагаем и воду, и чай.",
-      "audio": "audio/286c4694ab29.m4a"
+      "ru": "Мы предлагаем и воду, и чай."
      }
     ],
     "task": "voices"
@@ -1805,8 +1763,7 @@
       ],
       "punct": ".",
       "plain": "Wir bieten sowohl Wasser als auch Tee an.",
-      "ru": "Мы предлагаем и воду, и чай.",
-      "audio": "audio/286c4694ab29.m4a"
+      "ru": "Мы предлагаем и воду, и чай."
      }
     ],
     "task": "voices",
@@ -1872,8 +1829,7 @@
       ],
       "punct": ".",
       "plain": "Wir bieten sowohl Wasser als auch Tee an.",
-      "ru": "Мы предлагаем и воду, и чай.",
-      "audio": "audio/286c4694ab29.m4a"
+      "ru": "Мы предлагаем и воду, и чай."
      }
     ],
     "task": "opinions"
@@ -1939,8 +1895,7 @@
       ],
       "punct": ".",
       "plain": "Wir bieten sowohl Wasser als auch Tee an.",
-      "ru": "Мы предлагаем и воду, и чай.",
-      "audio": "audio/286c4694ab29.m4a"
+      "ru": "Мы предлагаем и воду, и чай."
      }
     ],
     "task": "opinions"
@@ -1996,8 +1951,7 @@
       ],
       "punct": ".",
       "plain": "Wir bieten sowohl Wasser als auch Tee an.",
-      "ru": "Мы предлагаем и воду, и чай.",
-      "audio": "audio/286c4694ab29.m4a"
+      "ru": "Мы предлагаем и воду, и чай."
      }
     ],
     "task": "opinions",
@@ -2016,8 +1970,7 @@
     "als"
    ],
    "answer": 1,
-   "why": "Парная альтернатива.",
-   "audio": "audio/34f567aac1a3.m4a"
+   "why": "Парная альтернатива."
   },
   {
    "id": "b1-umwelt-2",
@@ -2029,8 +1982,7 @@
     "oder"
    ],
    "answer": 1,
-   "why": "Sowohl ... als auch.",
-   "audio": "audio/57c3dc370bc4.m4a"
+   "why": "Sowohl ... als auch."
   },
   {
    "id": "b1-umwelt-3",
@@ -2042,8 +1994,7 @@
     "an"
    ],
    "answer": 2,
-   "why": "Anbieten — отделяемая рамка.",
-   "audio": "audio/286c4694ab29.m4a"
+   "why": "Anbieten — отделяемая рамка."
   },
   {
    "id": "b1-umwelt-4",
@@ -2091,8 +2042,7 @@
     "Entweder nehmen wir den Bus oder das Fahrrad.",
     "Entweder nehmen wir das Fahrrad oder den Bus.",
     "Entweder den Bus oder das Fahrrad nehmen wir."
-   ],
-   "audio": "audio/59380c91540c.m4a"
+   ]
   },
   {
    "id": "b1-umwelt-8",
@@ -2102,8 +2052,7 @@
    "also": [
     "Wir brauchen sowohl die Becher als auch die Mappe.",
     "Sowohl die Mappe als auch die Becher brauchen wir."
-   ],
-   "audio": "audio/d9feee2a9a76.m4a"
+   ]
   },
   {
    "id": "b1-umwelt-9",
@@ -2113,8 +2062,7 @@
    "also": [
     "Wir bieten sowohl Tee als auch Wasser an.",
     "Sowohl Wasser als auch Tee bieten wir an."
-   ],
-   "audio": "audio/286c4694ab29.m4a"
+   ]
   },
   {
    "id": "b1-umwelt-10",
@@ -2123,8 +2071,7 @@
    "ru": "Каждый гость может решить сам.",
    "also": [
     "Selbst entscheiden kann jeder Gast."
-   ],
-   "audio": "audio/20b07e3ff521.m4a"
+   ]
   },
   {
    "id": "b1-umwelt-11",
@@ -2134,8 +2081,7 @@
    "also": [
     "Die Becher hat Elif bereits abgeholt.",
     "Elif hat bereits die Becher abgeholt."
-   ],
-   "audio": "audio/34cc227f20bc.m4a"
+   ]
   },
   {
    "id": "b1-umwelt-12",
@@ -2145,8 +2091,7 @@
    "also": [
     "Wir planen sowohl die Rückgabe als auch die Abholung.",
     "Sowohl die Abholung als auch die Rückgabe planen wir."
-   ],
-   "audio": "audio/ace171acf0ba.m4a"
+   ]
   }
  ],
  "case": {

@@ -68,50 +68,42 @@
     {
      "who": "D",
      "de": "Wir suchen jemanden, der gern mit neuen Gästen spricht.",
-     "ru": "Мы ищем кого-то, кто любит разговаривать с новыми гостями.",
-     "audio": "audio/83328ad1e61d.m4a"
+     "ru": "Мы ищем кого-то, кто любит разговаривать с новыми гостями."
     },
     {
      "who": "H",
      "de": "Dana ist eine Person, die gut zuhört.",
-     "ru": "Дана — человек, который умеет слушать.",
-     "audio": "audio/eb8b8a44a141.m4a"
+     "ru": "Дана — человек, который умеет слушать."
     },
     {
      "who": "D",
      "de": "Danke. Ich brauche aber auch jemanden, den ich um Hilfe bitten kann.",
-     "ru": "Спасибо. Но мне также нужен кто-то, кого я могу попросить о помощи.",
-     "audio": "audio/4af5682c4691.m4a"
+     "ru": "Спасибо. Но мне также нужен кто-то, кого я могу попросить о помощи."
     },
     {
      "who": "E",
      "de": "Mateo kann am Sonntag helfen. Er erzählt gern von seinen Reisen.",
-     "ru": "Матео может помочь в воскресенье. Он любит рассказывать о поездках.",
-     "audio": "audio/d5cef691f1ed.m4a"
+     "ru": "Матео может помочь в воскресенье. Он любит рассказывать о поездках."
     },
     {
      "who": "M",
      "de": "Ja. Aber die Fotos, die wir zeigen, wählen wir zusammen aus.",
-     "ru": "Да. Но фотографии, которые мы покажем, выберем вместе.",
-     "audio": "audio/35caf7fcc618.m4a"
+     "ru": "Да. Но фотографии, которые мы покажем, выберем вместе."
     },
     {
      "who": "H",
      "de": "Das ist ein Projekt, das viele kleine Beiträge braucht.",
-     "ru": "Это проект, которому нужно много небольших вкладов.",
-     "audio": "audio/356ceb8b8860.m4a"
+     "ru": "Это проект, которому нужно много небольших вкладов."
     },
     {
      "who": "D",
      "de": "Dann fragen wir zuerst nach den Interessen und erst danach nach einer Aufgabe.",
-     "ru": "Тогда сначала спросим об интересах, а уже потом о задаче.",
-     "audio": "audio/b3351cdcfe9f.m4a"
+     "ru": "Тогда сначала спросим об интересах, а уже потом о задаче."
     },
     {
      "who": "E",
      "de": "Gut. Niemand muss eine Rolle übernehmen, die nicht passt.",
-     "ru": "Хорошо. Никто не обязан брать роль, которая ему не подходит.",
-     "audio": "audio/07ddd015dc05.m4a"
+     "ru": "Хорошо. Никто не обязан брать роль, которая ему не подходит."
     }
    ]
   }
@@ -125,113 +117,97 @@
      "de": "zuhören",
      "ru": "слушать внимательно",
      "gender": null,
-     "plural": null,
-     "audio": "audio/d1244e9c9519.m4a"
+     "plural": null
     },
     {
      "de": "erzählen",
      "ru": "рассказывать",
      "gender": null,
-     "plural": null,
-     "audio": "audio/a6a690a817a7.m4a"
+     "plural": null
     },
     {
      "de": "erklären",
      "ru": "объяснять",
      "gender": null,
-     "plural": null,
-     "audio": "audio/19d249184f57.m4a"
+     "plural": null
     },
     {
      "de": "auswählen",
      "ru": "выбирать",
      "gender": null,
-     "plural": null,
-     "audio": "audio/a6743fefd03e.m4a"
+     "plural": null
     },
     {
      "de": "die Beschreibung",
      "ru": "описание",
      "gender": "f",
-     "plural": "Beschreibungen",
-     "audio": "audio/28baa6e603ee.m4a"
+     "plural": "Beschreibungen"
     },
     {
      "de": "das Interesse",
      "ru": "интерес",
      "gender": "n",
-     "plural": "Interessen",
-     "audio": "audio/b3a5e456e781.m4a"
+     "plural": "Interessen"
     },
     {
      "de": "der Helfer",
      "ru": "помощник",
      "gender": "m",
-     "plural": "Helfer",
-     "audio": "audio/ee49bcc97fcb.m4a"
+     "plural": "Helfer"
     },
     {
      "de": "die Helferin",
      "ru": "помощница",
      "gender": "f",
-     "plural": "Helferinnen",
-     "audio": "audio/e625b4c76aae.m4a"
+     "plural": "Helferinnen"
     },
     {
      "de": "der Gesprächspartner",
      "ru": "собеседник",
      "gender": "m",
-     "plural": "Gesprächspartner",
-     "audio": "audio/0096dd8af458.m4a"
+     "plural": "Gesprächspartner"
     },
     {
      "de": "die Rolle",
      "ru": "роль",
      "gender": "f",
-     "plural": "Rollen",
-     "audio": "audio/6634d2387e91.m4a"
+     "plural": "Rollen"
     },
     {
      "de": "die Eigenschaft",
      "ru": "качество",
      "gender": "f",
-     "plural": "Eigenschaften",
-     "audio": "audio/c8077b11475b.m4a"
+     "plural": "Eigenschaften"
     },
     {
      "de": "jemanden um Hilfe bitten",
      "ru": "попросить кого-то о помощи",
      "gender": null,
-     "plural": null,
-     "audio": "audio/3b6e52d0bb8a.m4a"
+     "plural": null
     },
     {
      "de": "zuverlässig",
      "ru": "надёжный",
      "gender": null,
-     "plural": null,
-     "audio": "audio/ef3f319288c0.m4a"
+     "plural": null
     },
     {
      "de": "geduldig",
      "ru": "терпеливый",
      "gender": null,
-     "plural": null,
-     "audio": "audio/05810d0d67ff.m4a"
+     "plural": null
     },
     {
      "de": "freiwillig",
      "ru": "добровольно",
      "gender": null,
-     "plural": null,
-     "audio": "audio/0411b1de2334.m4a"
+     "plural": null
     },
     {
      "de": "gemeinsame Interessen",
      "ru": "общие интересы",
      "gender": null,
-     "plural": null,
-     "audio": "audio/a0647d761b50.m4a"
+     "plural": null
     }
    ]
   }
@@ -411,12 +387,10 @@
    ],
    "sample": [
     {
-     "de": "Auf meiner Karte geht es um gemeinsame Freizeit. Die Person bekommt in einer Gruppe neue Ideen.",
-     "audio": "audio/865c9f4fd1c4.m4a"
+     "de": "Auf meiner Karte geht es um gemeinsame Freizeit. Die Person bekommt in einer Gruppe neue Ideen."
     },
     {
-     "de": "Ich verstehe das. Mir ist auch wichtig, dass jeder mitentscheiden kann. Wie ist das bei dir?",
-     "audio": "audio/865af1a81485.m4a"
+     "de": "Ich verstehe das. Mir ist auch wichtig, dass jeder mitentscheiden kann. Wie ist das bei dir?"
     }
    ]
   }
@@ -619,8 +593,7 @@
       ],
       "punct": ".",
       "plain": "Wir suchen einen Helfer, der gern erzählt.",
-      "ru": "Мы ищем помощника, который любит рассказывать.",
-      "audio": "audio/b63e2560cbb6.m4a"
+      "ru": "Мы ищем помощника, который любит рассказывать."
      }
     ]
    }
@@ -681,8 +654,7 @@
       ],
       "punct": ".",
       "plain": "Wir suchen einen Helfer, der gern erzählt.",
-      "ru": "Мы ищем помощника, который любит рассказывать.",
-      "audio": "audio/b63e2560cbb6.m4a"
+      "ru": "Мы ищем помощника, который любит рассказывать."
      }
     ]
    }
@@ -743,8 +715,7 @@
       ],
       "punct": ".",
       "plain": "Wir suchen einen Helfer, der gern erzählt.",
-      "ru": "Мы ищем помощника, который любит рассказывать.",
-      "audio": "audio/b63e2560cbb6.m4a"
+      "ru": "Мы ищем помощника, который любит рассказывать."
      }
     ]
    }
@@ -804,8 +775,7 @@
       ],
       "punct": ".",
       "plain": "Wir suchen einen Helfer, der gern erzählt.",
-      "ru": "Мы ищем помощника, который любит рассказывать.",
-      "audio": "audio/b63e2560cbb6.m4a"
+      "ru": "Мы ищем помощника, который любит рассказывать."
      }
     ],
     "task": "profiles"
@@ -867,8 +837,7 @@
       ],
       "punct": ".",
       "plain": "Wir suchen einen Helfer, der gern erzählt.",
-      "ru": "Мы ищем помощника, который любит рассказывать.",
-      "audio": "audio/b63e2560cbb6.m4a"
+      "ru": "Мы ищем помощника, который любит рассказывать."
      }
     ],
     "task": "profiles"
@@ -920,8 +889,7 @@
       ],
       "punct": ".",
       "plain": "Wir suchen einen Helfer, der gern erzählt.",
-      "ru": "Мы ищем помощника, который любит рассказывать.",
-      "audio": "audio/b63e2560cbb6.m4a"
+      "ru": "Мы ищем помощника, который любит рассказывать."
      }
     ],
     "task": "profiles",
@@ -983,8 +951,7 @@
       ],
       "punct": ".",
       "plain": "Wir suchen einen Helfer, der gern erzählt.",
-      "ru": "Мы ищем помощника, который любит рассказывать.",
-      "audio": "audio/b63e2560cbb6.m4a"
+      "ru": "Мы ищем помощника, который любит рассказывать."
      }
     ],
     "task": "gaps"
@@ -1046,8 +1013,7 @@
       ],
       "punct": ".",
       "plain": "Wir suchen einen Helfer, der gern erzählt.",
-      "ru": "Мы ищем помощника, который любит рассказывать.",
-      "audio": "audio/b63e2560cbb6.m4a"
+      "ru": "Мы ищем помощника, который любит рассказывать."
      }
     ],
     "task": "gaps"
@@ -1099,8 +1065,7 @@
       ],
       "punct": ".",
       "plain": "Wir suchen einen Helfer, der gern erzählt.",
-      "ru": "Мы ищем помощника, который любит рассказывать.",
-      "audio": "audio/b63e2560cbb6.m4a"
+      "ru": "Мы ищем помощника, который любит рассказывать."
      }
     ],
     "task": "gaps",
@@ -1162,8 +1127,7 @@
       ],
       "punct": ".",
       "plain": "Wir suchen einen Helfer, der gern erzählt.",
-      "ru": "Мы ищем помощника, который любит рассказывать.",
-      "audio": "audio/b63e2560cbb6.m4a"
+      "ru": "Мы ищем помощника, который любит рассказывать."
      }
     ],
     "task": "talk",
@@ -1226,8 +1190,7 @@
       ],
       "punct": ".",
       "plain": "Wir suchen einen Helfer, der gern erzählt.",
-      "ru": "Мы ищем помощника, который любит рассказывать.",
-      "audio": "audio/b63e2560cbb6.m4a"
+      "ru": "Мы ищем помощника, который любит рассказывать."
      }
     ],
     "task": "talk",
@@ -1280,8 +1243,7 @@
       ],
       "punct": ".",
       "plain": "Wir suchen einen Helfer, der gern erzählt.",
-      "ru": "Мы ищем помощника, который любит рассказывать.",
-      "audio": "audio/b63e2560cbb6.m4a"
+      "ru": "Мы ищем помощника, который любит рассказывать."
      }
     ],
     "task": "talk",
@@ -1301,8 +1263,7 @@
     "den"
    ],
    "answer": 1,
-   "why": "Он выполняет действие.",
-   "audio": "audio/c43055b2293e.m4a"
+   "why": "Он выполняет действие."
   },
   {
    "id": "b1-menschen-2",
@@ -1314,8 +1275,7 @@
     "der"
    ],
    "answer": 1,
-   "why": "Я знаю его: Akkusativ.",
-   "audio": "audio/c3ab9b24ef16.m4a"
+   "why": "Я знаю его: Akkusativ."
   },
   {
    "id": "b1-menschen-3",
@@ -1327,8 +1287,7 @@
     "die"
    ],
    "answer": 2,
-   "why": "Person — женский род.",
-   "audio": "audio/22e0cf07a0d9.m4a"
+   "why": "Person — женский род."
   },
   {
    "id": "b1-menschen-4",
@@ -1340,8 +1299,7 @@
     "den"
    ],
    "answer": 1,
-   "why": "Средний род в Akkusativ.",
-   "audio": "audio/37721f3e4d91.m4a"
+   "why": "Средний род в Akkusativ."
   },
   {
    "id": "b1-menschen-5",
@@ -1353,8 +1311,7 @@
     "das"
    ],
    "answer": 1,
-   "why": "Множественное число.",
-   "audio": "audio/c22df6cdafd4.m4a"
+   "why": "Множественное число."
   },
   {
    "id": "b1-menschen-6",
@@ -1366,8 +1323,7 @@
     "hat"
    ],
    "answer": 2,
-   "why": "Личная форма в конце.",
-   "audio": "audio/12ed5b35d750.m4a"
+   "why": "Личная форма в конце."
   },
   {
    "id": "b1-menschen-7",
@@ -1376,8 +1332,7 @@
    "also": [
     "Einen Helfer, der gern erzählt, suchen wir."
    ],
-   "de": "Wir suchen einen Helfer, der gern erzählt.",
-   "audio": "audio/b63e2560cbb6.m4a"
+   "de": "Wir suchen einen Helfer, der gern erzählt."
   },
   {
    "id": "b1-menschen-8",
@@ -1386,8 +1341,7 @@
    "also": [
     "Eine Person, die gut zuhört, ist das."
    ],
-   "de": "Das ist eine Person, die gut zuhört.",
-   "audio": "audio/251244f92080.m4a"
+   "de": "Das ist eine Person, die gut zuhört."
   },
   {
    "id": "b1-menschen-9",
@@ -1396,8 +1350,7 @@
    "also": [
     "Den Helfer, den du suchst, kenne ich."
    ],
-   "de": "Ich kenne den Helfer, den du suchst.",
-   "audio": "audio/219325646729.m4a"
+   "de": "Ich kenne den Helfer, den du suchst."
   },
   {
    "id": "b1-menschen-10",
@@ -1406,8 +1359,7 @@
    "also": [
     "Aus Kiel sind die Bilder, die wir zeigen."
    ],
-   "de": "Die Bilder, die wir zeigen, sind aus Kiel.",
-   "audio": "audio/f04c103b9726.m4a"
+   "de": "Die Bilder, die wir zeigen, sind aus Kiel."
   },
   {
    "id": "b1-menschen-11",
@@ -1416,8 +1368,7 @@
    "also": [
     "Zeit braucht das Projekt, das wir planen."
    ],
-   "de": "Das Projekt, das wir planen, braucht Zeit.",
-   "audio": "audio/b3f25233d078.m4a"
+   "de": "Das Projekt, das wir planen, braucht Zeit."
   },
   {
    "id": "b1-menschen-12",
@@ -1426,8 +1377,7 @@
    "also": [
     "Am Sonntag kann Mateo helfen."
    ],
-   "de": "Mateo kann am Sonntag helfen.",
-   "audio": "audio/c137fbf79f76.m4a"
+   "de": "Mateo kann am Sonntag helfen."
   }
  ],
  "case": {

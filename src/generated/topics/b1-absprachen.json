@@ -70,50 +70,42 @@
     {
      "who": "M",
      "de": "Ich kümmere mich um das Essen für unseren Treff.",
-     "ru": "Я займусь едой для нашей встречи.",
-     "audio": "audio/8b606cc25eb0.m4a"
+     "ru": "Я займусь едой для нашей встречи."
     },
     {
      "who": "D",
      "de": "Danke. Ich warte noch auf die Antwort zur Küche.",
-     "ru": "Спасибо. Я ещё жду ответа о кухне.",
-     "audio": "audio/093ca93e94d4.m4a"
+     "ru": "Спасибо. Я ещё жду ответа о кухне."
     },
     {
      "who": "E",
      "de": "Ich interessiere mich für einfache Rezepte.",
-     "ru": "Мне интересны простые рецепты.",
-     "audio": "audio/e7198ad703c4.m4a"
+     "ru": "Мне интересны простые рецепты."
     },
     {
      "who": "M",
      "de": "Möchtest du mit mir die vegetarischen Angebote vergleichen?",
-     "ru": "Хочешь сравнить со мной вегетарианские предложения?",
-     "audio": "audio/822c76afffdb.m4a"
+     "ru": "Хочешь сравнить со мной вегетарианские предложения?"
     },
     {
      "who": "E",
      "de": "Ja, am Montag habe ich nach dem Kurs Zeit.",
-     "ru": "Да, в понедельник после курса у меня есть время.",
-     "audio": "audio/047010664f05.m4a"
+     "ru": "Да, в понедельник после курса у меня есть время."
     },
     {
      "who": "H",
      "de": "Ich spreche morgen mit der Verwaltung über den Raum.",
-     "ru": "Завтра я поговорю с администрацией о помещении.",
-     "audio": "audio/a53647e1abfd.m4a"
+     "ru": "Завтра я поговорю с администрацией о помещении."
     },
     {
      "who": "D",
      "de": "Das Angebot kostet sechzig Euro ohne Küche. Wir haben noch nicht zugesagt.",
-     "ru": "Предложение стоит шестьдесят евро без кухни. Мы ещё не согласились.",
-     "audio": "audio/604f0799cd9c.m4a"
+     "ru": "Предложение стоит шестьдесят евро без кухни. Мы ещё не согласились."
     },
     {
      "who": "M",
      "de": "Dann planen wir erst weiter, wenn die Bedingungen klar sind.",
-     "ru": "Тогда продолжим планировать, когда условия станут ясны.",
-     "audio": "audio/6a67264c71ef.m4a"
+     "ru": "Тогда продолжим планировать, когда условия станут ясны."
     }
    ]
   }
@@ -128,113 +120,97 @@
      "ru": "ответственность",
      "gender": "f",
      "plural": null,
-     "noPlural": true,
-     "audio": "audio/6cd8af6b9b60.m4a"
+     "noPlural": true
     },
     {
      "de": "die Bedingung",
      "ru": "условие",
      "gender": "f",
-     "plural": "Bedingungen",
-     "audio": "audio/1894b31bad36.m4a"
+     "plural": "Bedingungen"
     },
     {
      "de": "die Verwaltung",
      "ru": "администрация",
      "gender": "f",
-     "plural": "Verwaltungen",
-     "audio": "audio/502f48294d68.m4a"
+     "plural": "Verwaltungen"
     },
     {
      "de": "die Lieferung",
      "ru": "доставка",
      "gender": "f",
-     "plural": "Lieferungen",
-     "audio": "audio/4a471b45e046.m4a"
+     "plural": "Lieferungen"
     },
     {
      "de": "die Abholung",
      "ru": "самовывоз",
      "gender": "f",
-     "plural": "Abholungen",
-     "audio": "audio/a080f885edd7.m4a"
+     "plural": "Abholungen"
     },
     {
      "de": "die Rückgabe",
      "ru": "возврат",
      "gender": "f",
-     "plural": "Rückgaben",
-     "audio": "audio/eeb18b776736.m4a"
+     "plural": "Rückgaben"
     },
     {
      "de": "die Mindestbestellung",
      "ru": "минимальный заказ",
      "gender": "f",
-     "plural": "Mindestbestellungen",
-     "audio": "audio/1ad8a1078f55.m4a"
+     "plural": "Mindestbestellungen"
     },
     {
      "de": "der Mehrwegbecher",
      "ru": "многоразовый стакан",
      "gender": "m",
-     "plural": "Mehrwegbecher",
-     "audio": "audio/e10294b5611b.m4a"
+     "plural": "Mehrwegbecher"
     },
     {
      "de": "die Kühlbox",
      "ru": "сумка-холодильник",
      "gender": "f",
-     "plural": "Kühlboxen",
-     "audio": "audio/461af5712c38.m4a"
+     "plural": "Kühlboxen"
     },
     {
      "de": "warten auf",
      "ru": "ждать чего-либо",
      "gender": null,
-     "plural": null,
-     "audio": "audio/18e0a78847b8.m4a"
+     "plural": null
     },
     {
      "de": "sich kümmern um",
      "ru": "заниматься чем-либо",
      "gender": null,
-     "plural": null,
-     "audio": "audio/7621f961d658.m4a"
+     "plural": null
     },
     {
      "de": "sich interessieren für",
      "ru": "интересоваться чем-либо",
      "gender": null,
-     "plural": null,
-     "audio": "audio/793cb185812a.m4a"
+     "plural": null
     },
     {
      "de": "sprechen mit",
      "ru": "говорить с кем-либо",
      "gender": null,
-     "plural": null,
-     "audio": "audio/3b84dfc8eafa.m4a"
+     "plural": null
     },
     {
      "de": "zusagen",
      "ru": "согласиться, подтвердить участие",
      "gender": null,
-     "plural": null,
-     "audio": "audio/53709ba2a5c6.m4a"
+     "plural": null
     },
     {
      "de": "übernehmen",
      "ru": "брать на себя",
      "gender": null,
-     "plural": null,
-     "audio": "audio/cae0433b4d7a.m4a"
+     "plural": null
     },
     {
      "de": "vegetarisch",
      "ru": "вегетарианский",
      "gender": null,
-     "plural": null,
-     "audio": "audio/4f8842df503f.m4a"
+     "plural": null
     }
    ]
   }
@@ -753,8 +729,7 @@
    ],
    "sample": [
     {
-     "de": "Hallo Jonas, wir bereiten den FördeTreff für den 18. Oktober von 15 bis 18 Uhr vor. Mateo kümmert sich um das Essen. Elif vergleicht am Montag nach ihrem Kurs die vegetarischen Angebote mit ihm. Dana wartet noch auf die Antwort zur Küche. Für den Raum gibt es ein Angebot über 60 Euro ohne Küche, aber wir haben noch nicht zugesagt. Kannst du bitte nach Mehrwegbechern fragen? Wir brauchen sie für 18 Gäste. Hast du am Freitag Zeit für die Abholung? Bitte sag mir Bescheid, bevor du etwas bestellst. Viele Grüße Hauke",
-     "audio": "audio/2b494030f70a.m4a"
+     "de": "Hallo Jonas, wir bereiten den FördeTreff für den 18. Oktober von 15 bis 18 Uhr vor. Mateo kümmert sich um das Essen. Elif vergleicht am Montag nach ihrem Kurs die vegetarischen Angebote mit ihm. Dana wartet noch auf die Antwort zur Küche. Für den Raum gibt es ein Angebot über 60 Euro ohne Küche, aber wir haben noch nicht zugesagt. Kannst du bitte nach Mehrwegbechern fragen? Wir brauchen sie für 18 Gäste. Hast du am Freitag Zeit für die Abholung? Bitte sag mir Bescheid, bevor du etwas bestellst. Viele Grüße Hauke"
     }
    ]
   },
@@ -962,8 +937,7 @@
       ],
       "punct": ".",
       "plain": "Ich kümmere mich um das Essen.",
-      "ru": "Я займусь едой.",
-      "audio": "audio/1bdd2458dd60.m4a"
+      "ru": "Я займусь едой."
      }
     ]
    }
@@ -1020,8 +994,7 @@
       ],
       "punct": ".",
       "plain": "Ich kümmere mich um das Essen.",
-      "ru": "Я займусь едой.",
-      "audio": "audio/1bdd2458dd60.m4a"
+      "ru": "Я займусь едой."
      }
     ]
    }
@@ -1078,8 +1051,7 @@
       ],
       "punct": ".",
       "plain": "Ich kümmere mich um das Essen.",
-      "ru": "Я займусь едой.",
-      "audio": "audio/1bdd2458dd60.m4a"
+      "ru": "Я займусь едой."
      }
     ]
    }
@@ -1135,8 +1107,7 @@
       ],
       "punct": ".",
       "plain": "Ich kümmere mich um das Essen.",
-      "ru": "Я займусь едой.",
-      "audio": "audio/1bdd2458dd60.m4a"
+      "ru": "Я займусь едой."
      }
     ],
     "task": "offers"
@@ -1194,8 +1165,7 @@
       ],
       "punct": ".",
       "plain": "Ich kümmere mich um das Essen.",
-      "ru": "Я займусь едой.",
-      "audio": "audio/1bdd2458dd60.m4a"
+      "ru": "Я займусь едой."
      }
     ],
     "task": "offers"
@@ -1243,8 +1213,7 @@
       ],
       "punct": ".",
       "plain": "Ich kümmere mich um das Essen.",
-      "ru": "Я займусь едой.",
-      "audio": "audio/1bdd2458dd60.m4a"
+      "ru": "Я займусь едой."
      }
     ],
     "task": "offers",
@@ -1302,8 +1271,7 @@
       ],
       "punct": ".",
       "plain": "Ich kümmere mich um das Essen.",
-      "ru": "Я займусь едой.",
-      "audio": "audio/1bdd2458dd60.m4a"
+      "ru": "Я займусь едой."
      }
     ],
     "task": "roles"
@@ -1361,8 +1329,7 @@
       ],
       "punct": ".",
       "plain": "Ich kümmere mich um das Essen.",
-      "ru": "Я займусь едой.",
-      "audio": "audio/1bdd2458dd60.m4a"
+      "ru": "Я займусь едой."
      }
     ],
     "task": "roles"
@@ -1410,8 +1377,7 @@
       ],
       "punct": ".",
       "plain": "Ich kümmere mich um das Essen.",
-      "ru": "Я займусь едой.",
-      "audio": "audio/1bdd2458dd60.m4a"
+      "ru": "Я займусь едой."
      }
     ],
     "task": "roles",
@@ -1469,8 +1435,7 @@
       ],
       "punct": ".",
       "plain": "Ich kümmere mich um das Essen.",
-      "ru": "Я займусь едой.",
-      "audio": "audio/1bdd2458dd60.m4a"
+      "ru": "Я займусь едой."
      }
     ],
     "task": "gaps"
@@ -1528,8 +1493,7 @@
       ],
       "punct": ".",
       "plain": "Ich kümmere mich um das Essen.",
-      "ru": "Я займусь едой.",
-      "audio": "audio/1bdd2458dd60.m4a"
+      "ru": "Я займусь едой."
      }
     ],
     "task": "gaps"
@@ -1577,8 +1541,7 @@
       ],
       "punct": ".",
       "plain": "Ich kümmere mich um das Essen.",
-      "ru": "Я займусь едой.",
-      "audio": "audio/1bdd2458dd60.m4a"
+      "ru": "Я займусь едой."
      }
     ],
     "task": "gaps",
@@ -1636,8 +1599,7 @@
       ],
       "punct": ".",
       "plain": "Ich kümmere mich um das Essen.",
-      "ru": "Я займусь едой.",
-      "audio": "audio/1bdd2458dd60.m4a"
+      "ru": "Я займусь едой."
      }
     ],
     "task": "write",
@@ -1696,8 +1658,7 @@
       ],
       "punct": ".",
       "plain": "Ich kümmere mich um das Essen.",
-      "ru": "Я займусь едой.",
-      "audio": "audio/1bdd2458dd60.m4a"
+      "ru": "Я займусь едой."
      }
     ],
     "task": "write",
@@ -1746,8 +1707,7 @@
       ],
       "punct": ".",
       "plain": "Ich kümmere mich um das Essen.",
-      "ru": "Я займусь едой.",
-      "audio": "audio/1bdd2458dd60.m4a"
+      "ru": "Я займусь едой."
      }
     ],
     "task": "write",
@@ -1806,8 +1766,7 @@
       ],
       "punct": ".",
       "plain": "Ich kümmere mich um das Essen.",
-      "ru": "Я займусь едой.",
-      "audio": "audio/1bdd2458dd60.m4a"
+      "ru": "Я займусь едой."
      }
     ],
     "task": "talk"
@@ -1865,8 +1824,7 @@
       ],
       "punct": ".",
       "plain": "Ich kümmere mich um das Essen.",
-      "ru": "Я займусь едой.",
-      "audio": "audio/1bdd2458dd60.m4a"
+      "ru": "Я займусь едой."
      }
     ],
     "task": "talk"
@@ -1914,8 +1872,7 @@
       ],
       "punct": ".",
       "plain": "Ich kümmere mich um das Essen.",
-      "ru": "Я займусь едой.",
-      "audio": "audio/1bdd2458dd60.m4a"
+      "ru": "Я займусь едой."
      }
     ],
     "task": "talk",
@@ -1934,8 +1891,7 @@
     "für"
    ],
    "answer": 0,
-   "why": "Warten auf.",
-   "audio": "audio/952253d5f279.m4a"
+   "why": "Warten auf."
   },
   {
    "id": "b1-absprachen-2",
@@ -1947,8 +1903,7 @@
     "unser"
    ],
    "answer": 0,
-   "why": "Wir kümmern uns.",
-   "audio": "audio/feab3c952aa4.m4a"
+   "why": "Wir kümmern uns."
   },
   {
    "id": "b1-absprachen-3",
@@ -1960,8 +1915,7 @@
     "um"
    ],
    "answer": 1,
-   "why": "sich interessieren für + Akkusativ.",
-   "audio": "audio/6d2d1f9242d1.m4a"
+   "why": "sich interessieren für + Akkusativ."
   },
   {
    "id": "b1-absprachen-4",
@@ -1973,8 +1927,7 @@
     "um"
    ],
    "answer": 0,
-   "why": "Mit Dativ.",
-   "audio": "audio/962901caa9db.m4a"
+   "why": "Mit Dativ."
   },
   {
    "id": "b1-absprachen-5",
@@ -1986,8 +1939,7 @@
     "der"
    ],
    "answer": 0,
-   "why": "Warten auf Akkusativ.",
-   "audio": "audio/ab6f880818b1.m4a"
+   "why": "Warten auf Akkusativ."
   },
   {
    "id": "b1-absprachen-6",
@@ -2008,8 +1960,7 @@
    "ru": "Я займусь едой.",
    "also": [
     "Um das Essen kümmere ich mich."
-   ],
-   "audio": "audio/1bdd2458dd60.m4a"
+   ]
   },
   {
    "id": "b1-absprachen-8",
@@ -2018,8 +1969,7 @@
    "ru": "Мы ждём ответа.",
    "also": [
     "Auf die Antwort warten wir."
-   ],
-   "audio": "audio/3f1dec23a330.m4a"
+   ]
   },
   {
    "id": "b1-absprachen-9",
@@ -2028,8 +1978,7 @@
    "ru": "Элиф интересуется простыми рецептами.",
    "also": [
     "Für einfache Rezepte interessiert sich Elif."
-   ],
-   "audio": "audio/5c985cefc304.m4a"
+   ]
   },
   {
    "id": "b1-absprachen-10",
@@ -2038,8 +1987,7 @@
    "ru": "Хауке говорит с администрацией.",
    "also": [
     "Mit der Verwaltung spricht Hauke."
-   ],
-   "audio": "audio/8202e2cfe86d.m4a"
+   ]
   },
   {
    "id": "b1-absprachen-11",
@@ -2049,8 +1997,7 @@
    "also": [
     "Zugesagt haben wir noch nicht.",
     "Noch nicht zugesagt haben wir."
-   ],
-   "audio": "audio/d6db38c490db.m4a"
+   ]
   },
   {
    "id": "b1-absprachen-12",
@@ -2060,8 +2007,7 @@
    "also": [
     "Bestell bitte noch nichts.",
     "Bestell noch nichts bitte."
-   ],
-   "audio": "audio/bc2ced4eaa89.m4a"
+   ]
   }
  ],
  "case": {

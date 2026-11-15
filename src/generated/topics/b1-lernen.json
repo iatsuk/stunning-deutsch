@@ -73,50 +73,42 @@
     {
      "who": "M",
      "de": "Ich möchte mit meinen Gästen sicherer sprechen. Gibt es einen passenden Kurs?",
-     "ru": "Я хочу увереннее разговаривать с гостями. Есть подходящий курс?",
-     "audio": "audio/1535c83ff0a7.m4a"
+     "ru": "Я хочу увереннее разговаривать с гостями. Есть подходящий курс?"
     },
     {
      "who": "P",
      "de": "Ja. In einem praktischen Kurs üben Sie Gespräche aus dem Alltag.",
-     "ru": "Да. На практическом курсе вы тренируете повседневные разговоры.",
-     "audio": "audio/619d2c8f467d.m4a"
+     "ru": "Да. На практическом курсе вы тренируете повседневные разговоры."
     },
     {
      "who": "M",
      "de": "Ich habe am Montagvormittag Zeit. Mehr als dreißig Euro möchte ich nicht ausgeben.",
-     "ru": "У меня есть время в понедельник до обеда. Больше тридцати евро я не хочу тратить.",
-     "audio": "audio/ad0bb4dc801b.m4a"
+     "ru": "У меня есть время в понедельник до обеда. Больше тридцати евро я не хочу тратить."
     },
     {
      "who": "P",
      "de": "Dann passt Angebot A. Der Kurs beginnt um neun Uhr und kostet fünfundzwanzig Euro.",
-     "ru": "Тогда подходит предложение A. Курс начинается в девять и стоит двадцать пять евро.",
-     "audio": "audio/11c6b4658f35.m4a"
+     "ru": "Тогда подходит предложение A. Курс начинается в девять и стоит двадцать пять евро."
     },
     {
      "who": "M",
      "de": "Wie viele Menschen lernen in der Gruppe?",
-     "ru": "Сколько человек в группе?",
-     "audio": "audio/dd6f6a8e2ccf.m4a"
+     "ru": "Сколько человек в группе?"
     },
     {
      "who": "P",
      "de": "In der kleinen Gruppe sind acht Personen. Im Unterricht arbeiten Sie mit praktischen Beispielen.",
-     "ru": "В маленькой группе восемь человек. На занятиях вы работаете с практическими примерами.",
-     "audio": "audio/bc792f763526.m4a"
+     "ru": "В маленькой группе восемь человек. На занятиях вы работаете с практическими примерами."
     },
     {
      "who": "M",
      "de": "Gut. Ich möchte mich für diesen Kurs anmelden.",
-     "ru": "Хорошо. Я хочу записаться на этот курс.",
-     "audio": "audio/385259aca6f0.m4a"
+     "ru": "Хорошо. Я хочу записаться на этот курс."
     },
     {
      "who": "P",
      "de": "Ich bestätige Ihre Anmeldung für Montag um neun in der Sprachschule.",
-     "ru": "Подтверждаю вашу запись на понедельник в девять в языковой школе.",
-     "audio": "audio/19b09417ef0d.m4a"
+     "ru": "Подтверждаю вашу запись на понедельник в девять в языковой школе."
     }
    ]
   }
@@ -130,114 +122,98 @@
      "de": "die Weiterbildung",
      "ru": "дальнейшее обучение",
      "gender": "f",
-     "plural": "Weiterbildungen",
-     "audio": "audio/1b4d28dfcc92.m4a"
+     "plural": "Weiterbildungen"
     },
     {
      "de": "der Unterricht",
      "ru": "занятия, преподавание",
      "gender": "m",
      "plural": null,
-     "noPlural": true,
-     "audio": "audio/cfa15ddc86d2.m4a"
+     "noPlural": true
     },
     {
      "de": "die Lerngruppe",
      "ru": "учебная группа",
      "gender": "f",
-     "plural": "Lerngruppen",
-     "audio": "audio/cf54a02bec89.m4a"
+     "plural": "Lerngruppen"
     },
     {
      "de": "das Beispiel",
      "ru": "пример",
      "gender": "n",
-     "plural": "Beispiele",
-     "audio": "audio/75e5236eac43.m4a"
+     "plural": "Beispiele"
     },
     {
      "de": "die Anmeldung",
      "ru": "запись",
      "gender": "f",
-     "plural": "Anmeldungen",
-     "audio": "audio/39d02577162e.m4a"
+     "plural": "Anmeldungen"
     },
     {
      "de": "das Angebot",
      "ru": "предложение",
      "gender": "n",
-     "plural": "Angebote",
-     "audio": "audio/f02fe3836d37.m4a"
+     "plural": "Angebote"
     },
     {
      "de": "der Anfänger",
      "ru": "начинающий",
      "gender": "m",
-     "plural": "Anfänger",
-     "audio": "audio/2221f7e92c0b.m4a"
+     "plural": "Anfänger"
     },
     {
      "de": "die Anfängerin",
      "ru": "начинающая",
      "gender": "f",
-     "plural": "Anfängerinnen",
-     "audio": "audio/7e99e8f7964c.m4a"
+     "plural": "Anfängerinnen"
     },
     {
      "de": "der Vormittag",
      "ru": "время до обеда",
      "gender": "m",
-     "plural": "Vormittage",
-     "audio": "audio/5d2431ea894f.m4a"
+     "plural": "Vormittage"
     },
     {
      "de": "praktisch",
      "ru": "практический",
      "gender": null,
-     "plural": null,
-     "audio": "audio/e284c832182f.m4a"
+     "plural": null
     },
     {
      "de": "passend",
      "ru": "подходящий",
      "gender": null,
-     "plural": null,
-     "audio": "audio/69f9e687b312.m4a"
+     "plural": null
     },
     {
      "de": "sicherer sprechen",
      "ru": "говорить увереннее",
      "gender": null,
-     "plural": null,
-     "audio": "audio/b3b4ea8ee4bb.m4a"
+     "plural": null
     },
     {
      "de": "teilnehmen",
      "ru": "участвовать",
      "gender": null,
-     "plural": null,
-     "audio": "audio/11b3468cf806.m4a"
+     "plural": null
     },
     {
      "de": "ausgeben",
      "ru": "тратить",
      "gender": null,
-     "plural": null,
-     "audio": "audio/1768ce4c5f31.m4a"
+     "plural": null
     },
     {
      "de": "gemeinsam üben",
      "ru": "тренироваться вместе",
      "gender": null,
-     "plural": null,
-     "audio": "audio/c2fe745b198b.m4a"
+     "plural": null
     },
     {
      "de": "nach dem Unterricht",
      "ru": "после занятий",
      "gender": null,
-     "plural": null,
-     "audio": "audio/7c371175d5ed.m4a"
+     "plural": null
     }
    ]
   }
@@ -510,24 +486,19 @@
    "situation": "Hören Sie jede Mitteilung zweimal. Entscheiden Sie: richtig oder falsch.",
    "recordings": [
     {
-     "text": "Ihr Kurs am Montag beginnt wie geplant um neun Uhr. Bringen Sie bitte ein kleines Heft mit. Die Lehrerin verteilt die Texte im Unterricht.",
-     "audio": "audio/61d5e4eaa4a5.m4a"
+     "text": "Ihr Kurs am Montag beginnt wie geplant um neun Uhr. Bringen Sie bitte ein kleines Heft mit. Die Lehrerin verteilt die Texte im Unterricht."
     },
     {
-     "text": "Am Mittwoch bleibt der Leseraum wegen einer Besprechung geschlossen. Die Ausleihe ist geöffnet. Am Donnerstag können Sie wieder im Leseraum lernen.",
-     "audio": "audio/c6d5e52fb710.m4a"
+     "text": "Am Mittwoch bleibt der Leseraum wegen einer Besprechung geschlossen. Die Ausleihe ist geöffnet. Am Donnerstag können Sie wieder im Leseraum lernen."
     },
     {
-     "text": "Der Abendkurs findet heute in Raum zwei statt, nicht im Café. Die Anfangszeit bleibt neunzehn Uhr. Bitte kommen Sie direkt zum Raum.",
-     "audio": "audio/1dcd63286028.m4a"
+     "text": "Der Abendkurs findet heute in Raum zwei statt, nicht im Café. Die Anfangszeit bleibt neunzehn Uhr. Bitte kommen Sie direkt zum Raum."
     },
     {
-     "text": "Für unseren Fotokurs brauchen Sie eine eigene Kamera. Ein Computer ist nicht nötig. Wir üben draußen und besprechen danach die Bilder.",
-     "audio": "audio/373b6d9ba504.m4a"
+     "text": "Für unseren Fotokurs brauchen Sie eine eigene Kamera. Ein Computer ist nicht nötig. Wir üben draußen und besprechen danach die Bilder."
     },
     {
-     "text": "Beim Eltern-Kind-Malen bleiben die Erwachsenen dabei. Sie können Ihr Kind nicht abgeben und später abholen. Wir malen gemeinsam.",
-     "audio": "audio/58909c5dd767.m4a"
+     "text": "Beim Eltern-Kind-Malen bleiben die Erwachsenen dabei. Sie können Ihr Kind nicht abgeben und später abholen. Wir malen gemeinsam."
     }
    ],
    "questions": [
@@ -593,12 +564,10 @@
    "situation": "Erzählen Sie von Ihrem Lernen. Fragen Sie nach dem Ziel und einer Erfahrung Ihres Gegenübers. Reagieren Sie auf die Antwort.",
    "sample": [
     {
-     "de": "Ich lerne am besten mit konkreten Aufgaben. In einer kleinen Gruppe spreche ich mehr.",
-     "audio": "audio/a5039e82a043.m4a"
+     "de": "Ich lerne am besten mit konkreten Aufgaben. In einer kleinen Gruppe spreche ich mehr."
     },
     {
-     "de": "Was möchtest du mit deinem Deutsch als Nächstes machen?",
-     "audio": "audio/d8fa184d6f1f.m4a"
+     "de": "Was möchtest du mit deinem Deutsch als Nächstes machen?"
     }
    ]
   }
@@ -800,8 +769,7 @@
       ],
       "punct": ".",
       "plain": "In einem praktischen Kurs üben wir Gespräche.",
-      "ru": "На практическом курсе мы тренируем разговоры.",
-      "audio": "audio/e6bdc28fa0d2.m4a"
+      "ru": "На практическом курсе мы тренируем разговоры."
      }
     ]
    }
@@ -861,8 +829,7 @@
       ],
       "punct": ".",
       "plain": "In einem praktischen Kurs üben wir Gespräche.",
-      "ru": "На практическом курсе мы тренируем разговоры.",
-      "audio": "audio/e6bdc28fa0d2.m4a"
+      "ru": "На практическом курсе мы тренируем разговоры."
      }
     ]
    }
@@ -922,8 +889,7 @@
       ],
       "punct": ".",
       "plain": "In einem praktischen Kurs üben wir Gespräche.",
-      "ru": "На практическом курсе мы тренируем разговоры.",
-      "audio": "audio/e6bdc28fa0d2.m4a"
+      "ru": "На практическом курсе мы тренируем разговоры."
      }
     ]
    }
@@ -982,8 +948,7 @@
       ],
       "punct": ".",
       "plain": "In einem praktischen Kurs üben wir Gespräche.",
-      "ru": "На практическом курсе мы тренируем разговоры.",
-      "audio": "audio/e6bdc28fa0d2.m4a"
+      "ru": "На практическом курсе мы тренируем разговоры."
      }
     ],
     "task": "offers"
@@ -1044,8 +1009,7 @@
       ],
       "punct": ".",
       "plain": "In einem praktischen Kurs üben wir Gespräche.",
-      "ru": "На практическом курсе мы тренируем разговоры.",
-      "audio": "audio/e6bdc28fa0d2.m4a"
+      "ru": "На практическом курсе мы тренируем разговоры."
      }
     ],
     "task": "offers"
@@ -1096,8 +1060,7 @@
       ],
       "punct": ".",
       "plain": "In einem praktischen Kurs üben wir Gespräche.",
-      "ru": "На практическом курсе мы тренируем разговоры.",
-      "audio": "audio/e6bdc28fa0d2.m4a"
+      "ru": "На практическом курсе мы тренируем разговоры."
      }
     ],
     "task": "offers",
@@ -1158,8 +1121,7 @@
       ],
       "punct": ".",
       "plain": "In einem praktischen Kurs üben wir Gespräche.",
-      "ru": "На практическом курсе мы тренируем разговоры.",
-      "audio": "audio/e6bdc28fa0d2.m4a"
+      "ru": "На практическом курсе мы тренируем разговоры."
      }
     ],
     "task": "confirmation"
@@ -1220,8 +1182,7 @@
       ],
       "punct": ".",
       "plain": "In einem praktischen Kurs üben wir Gespräche.",
-      "ru": "На практическом курсе мы тренируем разговоры.",
-      "audio": "audio/e6bdc28fa0d2.m4a"
+      "ru": "На практическом курсе мы тренируем разговоры."
      }
     ],
     "task": "confirmation"
@@ -1272,8 +1233,7 @@
       ],
       "punct": ".",
       "plain": "In einem praktischen Kurs üben wir Gespräche.",
-      "ru": "На практическом курсе мы тренируем разговоры.",
-      "audio": "audio/e6bdc28fa0d2.m4a"
+      "ru": "На практическом курсе мы тренируем разговоры."
      }
     ],
     "task": "confirmation",
@@ -1334,8 +1294,7 @@
       ],
       "punct": ".",
       "plain": "In einem praktischen Kurs üben wir Gespräche.",
-      "ru": "На практическом курсе мы тренируем разговоры.",
-      "audio": "audio/e6bdc28fa0d2.m4a"
+      "ru": "На практическом курсе мы тренируем разговоры."
      }
     ],
     "task": "notices"
@@ -1396,8 +1355,7 @@
       ],
       "punct": ".",
       "plain": "In einem praktischen Kurs üben wir Gespräche.",
-      "ru": "На практическом курсе мы тренируем разговоры.",
-      "audio": "audio/e6bdc28fa0d2.m4a"
+      "ru": "На практическом курсе мы тренируем разговоры."
      }
     ],
     "task": "notices"
@@ -1448,8 +1406,7 @@
       ],
       "punct": ".",
       "plain": "In einem praktischen Kurs üben wir Gespräche.",
-      "ru": "На практическом курсе мы тренируем разговоры.",
-      "audio": "audio/e6bdc28fa0d2.m4a"
+      "ru": "На практическом курсе мы тренируем разговоры."
      }
     ],
     "task": "notices",
@@ -1510,8 +1467,7 @@
       ],
       "punct": ".",
       "plain": "In einem praktischen Kurs üben wir Gespräche.",
-      "ru": "На практическом курсе мы тренируем разговоры.",
-      "audio": "audio/e6bdc28fa0d2.m4a"
+      "ru": "На практическом курсе мы тренируем разговоры."
      }
     ],
     "task": "self",
@@ -1573,8 +1529,7 @@
       ],
       "punct": ".",
       "plain": "In einem praktischen Kurs üben wir Gespräche.",
-      "ru": "На практическом курсе мы тренируем разговоры.",
-      "audio": "audio/e6bdc28fa0d2.m4a"
+      "ru": "На практическом курсе мы тренируем разговоры."
      }
     ],
     "task": "self",
@@ -1626,8 +1581,7 @@
       ],
       "punct": ".",
       "plain": "In einem praktischen Kurs üben wir Gespräche.",
-      "ru": "На практическом курсе мы тренируем разговоры.",
-      "audio": "audio/e6bdc28fa0d2.m4a"
+      "ru": "На практическом курсе мы тренируем разговоры."
      }
     ],
     "task": "self",
@@ -1647,8 +1601,7 @@
     "es"
    ],
    "answer": 0,
-   "why": "Dativ после einem.",
-   "audio": "audio/8b3c772fb2d9.m4a"
+   "why": "Dativ после einem."
   },
   {
    "id": "b1-lernen-2",
@@ -1660,8 +1613,7 @@
     "er"
    ],
    "answer": 0,
-   "why": "Dativ женского рода.",
-   "audio": "audio/0b40d991c772.m4a"
+   "why": "Dativ женского рода."
   },
   {
    "id": "b1-lernen-3",
@@ -1673,8 +1625,7 @@
     "e"
    ],
    "answer": 1,
-   "why": "Множественный Dativ.",
-   "audio": "audio/83c1baddf40a.m4a"
+   "why": "Множественный Dativ."
   },
   {
    "id": "b1-lernen-4",
@@ -1686,8 +1637,7 @@
     "er"
    ],
    "answer": 0,
-   "why": "После dem — en.",
-   "audio": "audio/9842a042e377.m4a"
+   "why": "После dem — en."
   },
   {
    "id": "b1-lernen-5",
@@ -1699,8 +1649,7 @@
     "es"
    ],
    "answer": 0,
-   "why": "После einer — en.",
-   "audio": "audio/55fd9dd3dc19.m4a"
+   "why": "После einer — en."
   },
   {
    "id": "b1-lernen-6",
@@ -1712,8 +1661,7 @@
     "Kontakte"
    ],
    "answer": 1,
-   "why": "Dativ множественного числа.",
-   "audio": "audio/a2921a86a2ee.m4a"
+   "why": "Dativ множественного числа."
   },
   {
    "id": "b1-lernen-7",
@@ -1723,8 +1671,7 @@
     "Wir üben in einem praktischen Kurs Gespräche.",
     "Gespräche üben wir in einem praktischen Kurs."
    ],
-   "de": "In einem praktischen Kurs üben wir Gespräche.",
-   "audio": "audio/e6bdc28fa0d2.m4a"
+   "de": "In einem praktischen Kurs üben wir Gespräche."
   },
   {
    "id": "b1-lernen-8",
@@ -1733,8 +1680,7 @@
    "also": [
     "In einer kleinen Gruppe lerne ich."
    ],
-   "de": "Ich lerne in einer kleinen Gruppe.",
-   "audio": "audio/2a2d1f8095e1.m4a"
+   "de": "Ich lerne in einer kleinen Gruppe."
   },
   {
    "id": "b1-lernen-9",
@@ -1743,8 +1689,7 @@
    "also": [
     "Mit neuen Beispielen arbeiten wir."
    ],
-   "de": "Wir arbeiten mit neuen Beispielen.",
-   "audio": "audio/d602ecaae5e0.m4a"
+   "de": "Wir arbeiten mit neuen Beispielen."
   },
   {
    "id": "b1-lernen-10",
@@ -1754,8 +1699,7 @@
     "Am Montag beginnt der Kurs um neun Uhr.",
     "Um neun Uhr beginnt der Kurs am Montag."
    ],
-   "de": "Der Kurs beginnt am Montag um neun Uhr.",
-   "audio": "audio/1588caab5e94.m4a"
+   "de": "Der Kurs beginnt am Montag um neun Uhr."
   },
   {
    "id": "b1-lernen-11",
@@ -1766,8 +1710,7 @@
     "Nicht mehr als dreißig Euro möchte ich ausgeben.",
     "Ausgeben möchte ich nicht mehr als dreißig Euro."
    ],
-   "de": "Ich möchte nicht mehr als dreißig Euro ausgeben.",
-   "audio": "audio/d9445b57cd25.m4a"
+   "de": "Ich möchte nicht mehr als dreißig Euro ausgeben."
   },
   {
    "id": "b1-lernen-12",
@@ -1776,8 +1719,7 @@
    "also": [
     "Bestätigt ist die Anmeldung zum Kurs."
    ],
-   "de": "Die Anmeldung zum Kurs ist bestätigt.",
-   "audio": "audio/391b2bb1ae3a.m4a"
+   "de": "Die Anmeldung zum Kurs ist bestätigt."
   }
  ],
  "case": {

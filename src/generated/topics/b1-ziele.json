@@ -69,50 +69,42 @@
     {
      "who": "E",
      "de": "Ich wähle drei Fotos aus, um die Geschichte kurz zu erzählen.",
-     "ru": "Я выбираю три фотографии, чтобы коротко рассказать историю.",
-     "audio": "audio/61c2d30a9e6e.m4a"
+     "ru": "Я выбираю три фотографии, чтобы коротко рассказать историю."
     },
     {
      "who": "D",
      "de": "Wir schreiben einfache Texte, damit auch neue Gäste alles verstehen.",
-     "ru": "Мы пишем простые тексты, чтобы и новые гости всё поняли.",
-     "audio": "audio/2c901fd1efea.m4a"
+     "ru": "Мы пишем простые тексты, чтобы и новые гости всё поняли."
     },
     {
      "who": "H",
      "de": "Auf einem Foto sieht man die Häuser in Haithabu.",
-     "ru": "На одной фотографии видны дома в Хайтабу.",
-     "audio": "audio/4cc719cc9e8e.m4a"
+     "ru": "На одной фотографии видны дома в Хайтабу."
     },
     {
      "who": "M",
      "de": "Ich bringe eine Karte mit, damit die Gäste den Ort finden.",
-     "ru": "Я принесу карту, чтобы гости нашли это место.",
-     "audio": "audio/2514e31dcac5.m4a"
+     "ru": "Я принесу карту, чтобы гости нашли это место."
     },
     {
      "who": "E",
      "de": "Wir brauchen nicht viele Fachwörter, um neugierig zu machen.",
-     "ru": "Нам не нужно много специальных слов, чтобы заинтересовать.",
-     "audio": "audio/017364912a1f.m4a"
+     "ru": "Нам не нужно много специальных слов, чтобы заинтересовать."
     },
     {
      "who": "D",
      "de": "Ich lese die Texte laut, um schwierige Stellen zu finden.",
-     "ru": "Я прочитаю тексты вслух, чтобы найти трудные места.",
-     "audio": "audio/5122dee21a7c.m4a"
+     "ru": "Я прочитаю тексты вслух, чтобы найти трудные места."
     },
     {
      "who": "H",
      "de": "Danach teste ich die kleine Bilderaufgabe mit einem Nachbarn.",
-     "ru": "Потом проверю небольшое задание по картинкам с соседом.",
-     "audio": "audio/389494ca6005.m4a"
+     "ru": "Потом проверю небольшое задание по картинкам с соседом."
     },
     {
      "who": "M",
      "de": "Gut. Er soll den Ort erkennen und eine Frage stellen können.",
-     "ru": "Хорошо. Он должен суметь узнать место и задать вопрос.",
-     "audio": "audio/e7ee76be83bb.m4a"
+     "ru": "Хорошо. Он должен суметь узнать место и задать вопрос."
     }
    ]
   }
@@ -126,107 +118,92 @@
      "de": "das Ziel",
      "ru": "цель",
      "gender": "n",
-     "plural": "Ziele",
-     "audio": "audio/b6c621d0bca3.m4a"
+     "plural": "Ziele"
     },
     {
      "de": "der Zweck",
      "ru": "назначение, цель",
      "gender": "m",
-     "plural": "Zwecke",
-     "audio": "audio/cda65e04d0ea.m4a"
+     "plural": "Zwecke"
     },
     {
      "de": "die Fachsprache",
      "ru": "специальный язык",
      "gender": "f",
      "plural": null,
-     "noPlural": true,
-     "audio": "audio/90d670ee0848.m4a"
+     "noPlural": true
     },
     {
      "de": "das Fachwort",
      "ru": "специальное слово",
      "gender": "n",
-     "plural": "Fachwörter",
-     "audio": "audio/c3a5a90576bd.m4a"
+     "plural": "Fachwörter"
     },
     {
      "de": "die Karte",
      "ru": "карта",
      "gender": "f",
-     "plural": "Karten",
-     "audio": "audio/346484c3e50f.m4a"
+     "plural": "Karten"
     },
     {
      "de": "die Stelle",
      "ru": "место, фрагмент",
      "gender": "f",
-     "plural": "Stellen",
-     "audio": "audio/03832bf19986.m4a"
+     "plural": "Stellen"
     },
     {
      "de": "der Besucher",
      "ru": "посетитель",
      "gender": "m",
-     "plural": "Besucher",
-     "audio": "audio/762bccd7358f.m4a"
+     "plural": "Besucher"
     },
     {
      "de": "die Besucherin",
      "ru": "посетительница",
      "gender": "f",
-     "plural": "Besucherinnen",
-     "audio": "audio/0f08886dec7d.m4a"
+     "plural": "Besucherinnen"
     },
     {
      "de": "auswählen",
      "ru": "выбирать",
      "gender": null,
-     "plural": null,
-     "audio": "audio/a6743fefd03e.m4a"
+     "plural": null
     },
     {
      "de": "neugierig machen",
      "ru": "вызывать интерес",
      "gender": null,
-     "plural": null,
-     "audio": "audio/2cd7c752f8c5.m4a"
+     "plural": null
     },
     {
      "de": "laut vorlesen",
      "ru": "читать вслух",
      "gender": null,
-     "plural": null,
-     "audio": "audio/0fa2c8d9d47f.m4a"
+     "plural": null
     },
     {
      "de": "erkennen",
      "ru": "узнавать",
      "gender": null,
-     "plural": null,
-     "audio": "audio/4b6caea7ccc2.m4a"
+     "plural": null
     },
     {
      "de": "verständlich",
      "ru": "понятный",
      "gender": null,
-     "plural": null,
-     "audio": "audio/bbdffa2d641d.m4a"
+     "plural": null
     },
     {
      "de": "kurz erklären",
      "ru": "кратко объяснить",
      "gender": null,
-     "plural": null,
-     "audio": "audio/bad01cbe59c3.m4a"
+     "plural": null
     },
     {
      "de": "eine Frage stellen",
      "ru": "задать вопрос",
      "gender": null,
-     "plural": null,
-     "audio": "audio/9ec0f9043a38.m4a"
+     "plural": null
     }
    ]
   }
@@ -514,24 +491,19 @@
    "title": "Fünf Meinungen zu kleinen Ausstellungen",
    "recordings": [
     {
-     "text": "Ich gehe gern in kleine Ausstellungen, um mit anderen ins Gespräch zu kommen. Lange Texte lese ich selten. Eine persönliche Frage neben dem Bild finde ich oft interessanter als viele technische Angaben.",
-     "audio": "audio/4e21a7beddaa.m4a"
+     "text": "Ich gehe gern in kleine Ausstellungen, um mit anderen ins Gespräch zu kommen. Lange Texte lese ich selten. Eine persönliche Frage neben dem Bild finde ich oft interessanter als viele technische Angaben."
     },
     {
-     "text": "Für mich sind kurze Texte gut, aber ganz ohne Informationen möchte ich die Bilder nicht sehen. Ich möchte wissen, wo und wann ein Foto entstanden ist. Danach kann ich besser Fragen stellen.",
-     "audio": "audio/22f4bcaad724.m4a"
+     "text": "Für mich sind kurze Texte gut, aber ganz ohne Informationen möchte ich die Bilder nicht sehen. Ich möchte wissen, wo und wann ein Foto entstanden ist. Danach kann ich besser Fragen stellen."
     },
     {
-     "text": "Ich fotografiere selbst und sehe mir gern Details an. Trotzdem muss eine Ausstellung nicht nur für Fachleute sein. Ich finde einfache Erklärungen hilfreich, damit auch Anfänger etwas mitnehmen.",
-     "audio": "audio/64cf67d4ee0e.m4a"
+     "text": "Ich fotografiere selbst und sehe mir gern Details an. Trotzdem muss eine Ausstellung nicht nur für Fachleute sein. Ich finde einfache Erklärungen hilfreich, damit auch Anfänger etwas mitnehmen."
     },
     {
-     "text": "Ich brauche in einer Ausstellung Ruhe. Wenn an jedem Bild jemand etwas erklärt, kann ich mich schlecht konzentrieren. Ich lese lieber allein und spreche erst am Ende über meine Eindrücke.",
-     "audio": "audio/82f8ccda3daa.m4a"
+     "text": "Ich brauche in einer Ausstellung Ruhe. Wenn an jedem Bild jemand etwas erklärt, kann ich mich schlecht konzentrieren. Ich lese lieber allein und spreche erst am Ende über meine Eindrücke."
     },
     {
-     "text": "Mit meinen Kindern wähle ich Ausstellungen mit kleinen Aufgaben. Wir suchen zum Beispiel einen Ort auf einer Karte. Dabei möchte ich ihnen nicht ständig die richtige Antwort vorsagen.",
-     "audio": "audio/5a983c410fe9.m4a"
+     "text": "Mit meinen Kindern wähle ich Ausstellungen mit kleinen Aufgaben. Wir suchen zum Beispiel einen Ort auf einer Karte. Dabei möchte ich ihnen nicht ständig die richtige Antwort vorsagen."
     }
    ],
    "questions": [
@@ -809,8 +781,7 @@
       ],
       "punct": ".",
       "plain": "Wir schreiben einfach, damit die Gäste alles verstehen.",
-      "ru": "Мы пишем просто, чтобы гости всё поняли.",
-      "audio": "audio/6ceabd5d253a.m4a"
+      "ru": "Мы пишем просто, чтобы гости всё поняли."
      }
     ]
    }
@@ -875,8 +846,7 @@
       ],
       "punct": ".",
       "plain": "Wir schreiben einfach, damit die Gäste alles verstehen.",
-      "ru": "Мы пишем просто, чтобы гости всё поняли.",
-      "audio": "audio/6ceabd5d253a.m4a"
+      "ru": "Мы пишем просто, чтобы гости всё поняли."
      }
     ]
    }
@@ -941,8 +911,7 @@
       ],
       "punct": ".",
       "plain": "Wir schreiben einfach, damit die Gäste alles verstehen.",
-      "ru": "Мы пишем просто, чтобы гости всё поняли.",
-      "audio": "audio/6ceabd5d253a.m4a"
+      "ru": "Мы пишем просто, чтобы гости всё поняли."
      }
     ]
    }
@@ -1006,8 +975,7 @@
       ],
       "punct": ".",
       "plain": "Wir schreiben einfach, damit die Gäste alles verstehen.",
-      "ru": "Мы пишем просто, чтобы гости всё поняли.",
-      "audio": "audio/6ceabd5d253a.m4a"
+      "ru": "Мы пишем просто, чтобы гости всё поняли."
      }
     ],
     "task": "materials"
@@ -1073,8 +1041,7 @@
       ],
       "punct": ".",
       "plain": "Wir schreiben einfach, damit die Gäste alles verstehen.",
-      "ru": "Мы пишем просто, чтобы гости всё поняли.",
-      "audio": "audio/6ceabd5d253a.m4a"
+      "ru": "Мы пишем просто, чтобы гости всё поняли."
      }
     ],
     "task": "materials"
@@ -1130,8 +1097,7 @@
       ],
       "punct": ".",
       "plain": "Wir schreiben einfach, damit die Gäste alles verstehen.",
-      "ru": "Мы пишем просто, чтобы гости всё поняли.",
-      "audio": "audio/6ceabd5d253a.m4a"
+      "ru": "Мы пишем просто, чтобы гости всё поняли."
      }
     ],
     "task": "materials",
@@ -1197,8 +1163,7 @@
       ],
       "punct": ".",
       "plain": "Wir schreiben einfach, damit die Gäste alles verstehen.",
-      "ru": "Мы пишем просто, чтобы гости всё поняли.",
-      "audio": "audio/6ceabd5d253a.m4a"
+      "ru": "Мы пишем просто, чтобы гости всё поняли."
      }
     ],
     "task": "gaps"
@@ -1264,8 +1229,7 @@
       ],
       "punct": ".",
       "plain": "Wir schreiben einfach, damit die Gäste alles verstehen.",
-      "ru": "Мы пишем просто, чтобы гости всё поняли.",
-      "audio": "audio/6ceabd5d253a.m4a"
+      "ru": "Мы пишем просто, чтобы гости всё поняли."
      }
     ],
     "task": "gaps"
@@ -1321,8 +1285,7 @@
       ],
       "punct": ".",
       "plain": "Wir schreiben einfach, damit die Gäste alles verstehen.",
-      "ru": "Мы пишем просто, чтобы гости всё поняли.",
-      "audio": "audio/6ceabd5d253a.m4a"
+      "ru": "Мы пишем просто, чтобы гости всё поняли."
      }
     ],
     "task": "gaps",
@@ -1388,8 +1351,7 @@
       ],
       "punct": ".",
       "plain": "Wir schreiben einfach, damit die Gäste alles verstehen.",
-      "ru": "Мы пишем просто, чтобы гости всё поняли.",
-      "audio": "audio/6ceabd5d253a.m4a"
+      "ru": "Мы пишем просто, чтобы гости всё поняли."
      }
     ],
     "task": "voices"
@@ -1455,8 +1417,7 @@
       ],
       "punct": ".",
       "plain": "Wir schreiben einfach, damit die Gäste alles verstehen.",
-      "ru": "Мы пишем просто, чтобы гости всё поняли.",
-      "audio": "audio/6ceabd5d253a.m4a"
+      "ru": "Мы пишем просто, чтобы гости всё поняли."
      }
     ],
     "task": "voices"
@@ -1512,8 +1473,7 @@
       ],
       "punct": ".",
       "plain": "Wir schreiben einfach, damit die Gäste alles verstehen.",
-      "ru": "Мы пишем просто, чтобы гости всё поняли.",
-      "audio": "audio/6ceabd5d253a.m4a"
+      "ru": "Мы пишем просто, чтобы гости всё поняли."
      }
     ],
     "task": "voices",
@@ -1579,8 +1539,7 @@
       ],
       "punct": ".",
       "plain": "Wir schreiben einfach, damit die Gäste alles verstehen.",
-      "ru": "Мы пишем просто, чтобы гости всё поняли.",
-      "audio": "audio/6ceabd5d253a.m4a"
+      "ru": "Мы пишем просто, чтобы гости всё поняли."
      }
     ],
     "task": "opinions"
@@ -1646,8 +1605,7 @@
       ],
       "punct": ".",
       "plain": "Wir schreiben einfach, damit die Gäste alles verstehen.",
-      "ru": "Мы пишем просто, чтобы гости всё поняли.",
-      "audio": "audio/6ceabd5d253a.m4a"
+      "ru": "Мы пишем просто, чтобы гости всё поняли."
      }
     ],
     "task": "opinions"
@@ -1703,8 +1661,7 @@
       ],
       "punct": ".",
       "plain": "Wir schreiben einfach, damit die Gäste alles verstehen.",
-      "ru": "Мы пишем просто, чтобы гости всё поняли.",
-      "audio": "audio/6ceabd5d253a.m4a"
+      "ru": "Мы пишем просто, чтобы гости всё поняли."
      }
     ],
     "task": "opinions",
@@ -1723,8 +1680,7 @@
     "damit"
    ],
    "answer": 1,
-   "why": "Одна цель одного участника.",
-   "audio": "audio/e6170a1e9e64.m4a"
+   "why": "Одна цель одного участника."
   },
   {
    "id": "b1-ziele-2",
@@ -1736,8 +1692,7 @@
     "um"
    ],
    "answer": 1,
-   "why": "Вторая часть с подлежащим и личным глаголом.",
-   "audio": "audio/17bbecfb96de.m4a"
+   "why": "Вторая часть с подлежащим и личным глаголом."
   },
   {
    "id": "b1-ziele-3",
@@ -1749,8 +1704,7 @@
     "zu"
    ],
    "answer": 2,
-   "why": "Инфинитивная группа.",
-   "audio": "audio/4f6e48e6d6c8.m4a"
+   "why": "Инфинитивная группа."
   },
   {
    "id": "b1-ziele-4",
@@ -1762,8 +1716,7 @@
     "zu finden"
    ],
    "answer": 1,
-   "why": "Личная форма в конце.",
-   "audio": "audio/5d41dbfabaac.m4a"
+   "why": "Личная форма в конце."
   },
   {
    "id": "b1-ziele-5",
@@ -1796,8 +1749,7 @@
    "ru": "Я читаю вслух, чтобы найти ошибки.",
    "also": [
     "Um Fehler zu finden, lese ich laut."
-   ],
-   "audio": "audio/e6170a1e9e64.m4a"
+   ]
   },
   {
    "id": "b1-ziele-8",
@@ -1806,8 +1758,7 @@
    "ru": "Мы пишем просто, чтобы все поняли фотографии.",
    "also": [
     "Damit alle die Bilder verstehen, schreiben wir einfach."
-   ],
-   "audio": "audio/3dde1df0dd06.m4a"
+   ]
   },
   {
    "id": "b1-ziele-9",
@@ -1816,8 +1767,7 @@
    "ru": "Я принесу карту.",
    "also": [
     "Eine Karte bringe ich mit."
-   ],
-   "audio": "audio/dcb3393fcf91.m4a"
+   ]
   },
   {
    "id": "b1-ziele-10",
@@ -1826,8 +1776,7 @@
    "ru": "Гости должны узнать место.",
    "also": [
     "Den Ort sollen die Gäste erkennen."
-   ],
-   "audio": "audio/3845f0bd1177.m4a"
+   ]
   },
   {
    "id": "b1-ziele-11",
@@ -1838,8 +1787,7 @@
     "Die Aufgabe testen wir mit einem Nachbarn.",
     "Mit einem Nachbarn testen wir die Aufgabe.",
     "Wir testen mit einem Nachbarn die Aufgabe."
-   ],
-   "audio": "audio/2c89358348db.m4a"
+   ]
   },
   {
    "id": "b1-ziele-12",
@@ -1848,8 +1796,7 @@
    "ru": "Метка слишком маленькая.",
    "also": [
     "Zu klein ist die Markierung."
-   ],
-   "audio": "audio/c6ac3b58c520.m4a"
+   ]
   }
  ],
  "case": {

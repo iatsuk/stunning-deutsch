@@ -76,19 +76,19 @@
      "who": "A",
      "de": "Guten Abend! Haben Sie noch zwei Einzelzimmer frei?",
      "ru": "Добрый вечер! У вас есть ещё два свободных одноместных номера?",
-     "audio": "audio/c183b9f6af03.m4a"
+     "audio": "audio/f33faa7ec75a.m4a"
     },
     {
      "who": "K",
      "de": "Für wie viele Nächte?",
      "ru": "На сколько ночей?",
-     "audio": "audio/5b9e711874a5.m4a"
+     "audio": "audio/064009bcf246.m4a"
     },
     {
      "who": "M",
      "de": "Für zwei Nächte, vom zweiten bis zum vierten Juni.",
      "ru": "На две ночи, со второго по четвёртое июня.",
-     "audio": "audio/e2932128efbc.m4a"
+     "audio": "audio/f2a95a37d4d9.m4a"
     },
     {
      "who": "K",
@@ -100,13 +100,13 @@
      "who": "A",
      "de": "Gut, dann nehmen wir die Zimmer.",
      "ru": "Хорошо, тогда мы их берём.",
-     "audio": "audio/701c8849d4aa.m4a"
+     "audio": "audio/99387b22f3d5.m4a"
     },
     {
      "who": "K",
      "de": "Wie war die Reise? Sind Sie mit dem Zug gekommen?",
      "ru": "Как доехали? Вы приехали на поезде?",
-     "audio": "audio/74958cd7a9ca.m4a"
+     "audio": "audio/04b62193ea06.m4a"
     },
     {
      "who": "M",
@@ -118,13 +118,13 @@
      "who": "K",
      "de": "Oh, das tut mir leid! Hier sind Ihre Schlüssel – Zimmer 12 und 14.",
      "ru": "Ох, сочувствую! Вот ваши ключи — номера 12 и 14.",
-     "audio": "audio/b4bffdfe21ca.m4a"
+     "audio": "audio/000e70cbfb57.m4a"
     },
     {
      "who": "M",
      "de": "Vielen Dank! Bis morgen!",
      "ru": "Большое спасибо! До завтра!",
-     "audio": "audio/384c78c087ac.m4a"
+     "audio": "audio/ac3d5145a968.m4a"
     }
    ]
   },
@@ -177,25 +177,25 @@
      "who": "A",
      "de": "Wir sind am Abend angekommen und dann zum Hafen gegangen.",
      "ru": "Мы приехали вечером, а потом пошли в порт.",
-     "audio": "audio/95cb241beb8c.m4a"
+     "audio": "audio/c757614c98b2.m4a"
     },
     {
      "who": "L",
      "de": "Und heute?",
      "ru": "А сегодня?",
-     "audio": "audio/8470e76da384.m4a"
+     "audio": "audio/4513c346fe25.m4a"
     },
     {
      "who": "A",
      "de": "Heute sind wir mit dem Schiff gefahren – zwei Stunden auf der Elbe!",
      "ru": "Сегодня мы катались на кораблике — два часа по Эльбе!",
-     "audio": "audio/afdccf2732b5.m4a"
+     "audio": "audio/a5e0e4f9ca68.m4a"
     },
     {
      "who": "L",
      "de": "Toll! Kommt morgen gut nach Hause! Und viele Grüße an Mateo!",
      "ru": "Здорово! Хорошо вам доехать завтра! И привет Матео!",
-     "audio": "audio/0dcc87feda8f.m4a"
+     "audio": "audio/e8ce5ff79234.m4a"
     },
     {
      "who": "A",
@@ -217,7 +217,7 @@
      "gender": "f",
      "plural": "Reisen",
      "note": "Gute Reise!",
-     "audio": "audio/b3a026317520.m4a"
+     "audio": "audio/92b522cbf74a.m4a"
     },
     {
      "de": "der Urlaub",
@@ -225,7 +225,7 @@
      "gender": "m",
      "plural": "Urlaube",
      "note": "im Urlaub",
-     "audio": "audio/0dbbd7e28483.m4a"
+     "audio": "audio/66e23bd4bca5.m4a"
     },
     {
      "de": "der Zug",
@@ -233,7 +233,7 @@
      "gender": "m",
      "plural": "Züge",
      "note": "mit dem Zug",
-     "audio": "audio/fbaed702927d.m4a"
+     "audio": "audio/4d0a89bc3f91.m4a"
     },
     {
      "de": "das Flugzeug",
@@ -241,21 +241,21 @@
      "gender": "n",
      "plural": "Flugzeuge",
      "note": "mit dem Flugzeug",
-     "audio": "audio/83f2a473e5f0.m4a"
+     "audio": "audio/502a73116be4.m4a"
     },
     {
      "de": "der Flughafen",
      "ru": "аэропорт",
      "gender": "m",
      "plural": "Flughäfen",
-     "audio": "audio/7fa45d941e7f.m4a"
+     "audio": "audio/2fcff280fcbb.m4a"
     },
     {
      "de": "die Fahrkarte",
      "ru": "билет",
      "gender": "f",
      "plural": "Fahrkarten",
-     "audio": "audio/298d90a0d52c.m4a"
+     "audio": "audio/2de3bedb9f6e.m4a"
     },
     {
      "de": "das Gleis",
@@ -263,7 +263,7 @@
      "gender": "n",
      "plural": "Gleise",
      "note": "von Gleis 12",
-     "audio": "audio/cb93bec4ea43.m4a"
+     "audio": "audio/4977478fdb73.m4a"
     },
     {
      "de": "die Verspätung",
@@ -271,21 +271,21 @@
      "gender": "f",
      "plural": "Verspätungen",
      "note": "20 Minuten Verspätung",
-     "audio": "audio/80ca79f40061.m4a"
+     "audio": "audio/85187382cfac.m4a"
     },
     {
      "de": "die Durchsage",
      "ru": "объявление по громкой связи",
      "gender": "f",
      "plural": "Durchsagen",
-     "audio": "audio/368b428df6fd.m4a"
+     "audio": "audio/eca9c3da4a37.m4a"
     },
     {
      "de": "der Koffer",
      "ru": "чемодан",
      "gender": "m",
      "plural": "Koffer",
-     "audio": "audio/d649153223fe.m4a"
+     "audio": "audio/6a1450c37828.m4a"
     }
    ]
   },
@@ -305,14 +305,14 @@
      "ru": "одноместный номер",
      "gender": "n",
      "plural": "Einzelzimmer",
-     "audio": "audio/ede553af13a3.m4a"
+     "audio": "audio/bbe1f5b0c371.m4a"
     },
     {
      "de": "das Doppelzimmer",
      "ru": "двухместный номер",
      "gender": "n",
      "plural": "Doppelzimmer",
-     "audio": "audio/7ee9b3f92b07.m4a"
+     "audio": "audio/32a0b7c97ffa.m4a"
     },
     {
      "de": "die Person",
@@ -320,7 +320,7 @@
      "gender": "f",
      "plural": "Personen",
      "note": "für zwei Personen",
-     "audio": "audio/2c6d77345671.m4a"
+     "audio": "audio/52b39cfa43fb.m4a"
     },
     {
      "de": "die Nacht",
@@ -328,7 +328,7 @@
      "gender": "f",
      "plural": "Nächte",
      "note": "80 Euro pro Nacht",
-     "audio": "audio/475dec7295cd.m4a"
+     "audio": "audio/28954177a2f3.m4a"
     },
     {
      "de": "das Frühstück",
@@ -336,28 +336,28 @@
      "gender": "n",
      "plural": "Frühstücke",
      "note": "mit Frühstück",
-     "audio": "audio/60cf91c1b917.m4a"
+     "audio": "audio/8aa1535b52a9.m4a"
     },
     {
      "de": "der Schlüssel",
      "ru": "ключ",
      "gender": "m",
      "plural": "Schlüssel",
-     "audio": "audio/df9315794234.m4a"
+     "audio": "audio/9e60ae780ed2.m4a"
     },
     {
      "de": "die Anreise",
      "ru": "приезд",
      "gender": "f",
      "plural": "Anreisen",
-     "audio": "audio/b90d8e121d20.m4a"
+     "audio": "audio/d9a5c1f86151.m4a"
     },
     {
      "de": "die Abreise",
      "ru": "отъезд",
      "gender": "f",
      "plural": "Abreisen",
-     "audio": "audio/a589c2905052.m4a"
+     "audio": "audio/6b2563ec97e7.m4a"
     },
     {
      "de": "reservieren",
@@ -365,7 +365,7 @@
      "gender": null,
      "plural": null,
      "note": "hat reserviert – без ge-",
-     "audio": "audio/3b0003a26f77.m4a"
+     "audio": "audio/a37cbdd47573.m4a"
     }
    ]
   },
@@ -380,7 +380,7 @@
      "plural": null,
      "noPlural": true,
      "note": "Wie ist das Wetter?",
-     "audio": "audio/61b4958dfdeb.m4a"
+     "audio": "audio/b32d29348a1a.m4a"
     },
     {
      "de": "Die Sonne scheint.",
@@ -432,7 +432,7 @@
      "ru": "тепло",
      "gender": null,
      "plural": null,
-     "audio": "audio/9364c20f6ab6.m4a"
+     "audio": "audio/b6bd13511854.m4a"
     },
     {
      "de": "kalt",
@@ -455,7 +455,7 @@
      "gender": "m",
      "plural": "Regenschirme",
      "note": "der Regen + der Schirm",
-     "audio": "audio/e5a47d9a62eb.m4a"
+     "audio": "audio/35eace4e4fd8.m4a"
     }
    ]
   },
@@ -468,14 +468,14 @@
      "ru": "год",
      "gender": "n",
      "plural": "Jahre",
-     "audio": "audio/2ab14b96ad42.m4a"
+     "audio": "audio/22b99e91ccc8.m4a"
     },
     {
      "de": "die Jahreszeit",
      "ru": "время года",
      "gender": "f",
      "plural": "Jahreszeiten",
-     "audio": "audio/dc1524f0a11d.m4a"
+     "audio": "audio/1906059e5584.m4a"
     },
     {
      "de": "der Frühling",
@@ -483,7 +483,7 @@
      "gender": "m",
      "plural": "Frühlinge",
      "note": "im Frühling",
-     "audio": "audio/02da405e5168.m4a"
+     "audio": "audio/f7bbd5f3f879.m4a"
     },
     {
      "de": "der Sommer",
@@ -491,7 +491,7 @@
      "gender": "m",
      "plural": "Sommer",
      "note": "im Sommer",
-     "audio": "audio/1d7c422f082f.m4a"
+     "audio": "audio/eef5f66d8d58.m4a"
     },
     {
      "de": "der Herbst",
@@ -499,7 +499,7 @@
      "gender": "m",
      "plural": "Herbste",
      "note": "im Herbst",
-     "audio": "audio/047e1ed136e2.m4a"
+     "audio": "audio/09ea90ab63ec.m4a"
     },
     {
      "de": "der Winter",
@@ -507,7 +507,7 @@
      "gender": "m",
      "plural": "Winter",
      "note": "im Winter",
-     "audio": "audio/55b9849d885b.m4a"
+     "audio": "audio/2bb1c64eec1b.m4a"
     },
     {
      "de": "der Monat",
@@ -515,7 +515,7 @@
      "gender": "m",
      "plural": "Monate",
      "note": "im Mai",
-     "audio": "audio/5c079e194608.m4a"
+     "audio": "audio/b361895e8f41.m4a"
     },
     {
      "de": "das Datum",
@@ -523,7 +523,7 @@
      "gender": "n",
      "plural": "Daten",
      "note": "Welches Datum ist heute?",
-     "audio": "audio/61f21ca9c205.m4a"
+     "audio": "audio/92afb82da7d8.m4a"
     },
     {
      "de": "der Geburtstag",
@@ -531,7 +531,7 @@
      "gender": "m",
      "plural": "Geburtstage",
      "note": "Ich habe im Mai Geburtstag.",
-     "audio": "audio/a5cad6901e31.m4a"
+     "audio": "audio/d2f61fca87e5.m4a"
     },
     {
      "de": "das Wochenende",
@@ -539,14 +539,14 @@
      "gender": "n",
      "plural": "Wochenenden",
      "note": "am Wochenende",
-     "audio": "audio/9e5e18925cf3.m4a"
+     "audio": "audio/209366eb46eb.m4a"
     },
     {
      "de": "die Ferien",
      "ru": "каникулы",
      "gender": "pl",
      "plural": null,
-     "audio": "audio/91f097f06359.m4a"
+     "audio": "audio/39e6d399688f.m4a"
     }
    ]
   }
@@ -721,11 +721,11 @@
    "sample": [
     {
      "de": "Liebe Frau Thomsen,",
-     "audio": "audio/67446b1c8657.m4a"
+     "audio": "audio/c29eefc30950.m4a"
     },
     {
      "de": "Mateo und ich sind am Wochenende mit dem Zug nach Hamburg gefahren.",
-     "audio": "audio/f1b74ee0954e.m4a"
+     "audio": "audio/89c46f18a51b.m4a"
     },
     {
      "de": "Das Wetter war leider nicht so gut. Es hat oft geregnet.",
@@ -737,11 +737,11 @@
     },
     {
      "de": "Viele Grüße",
-     "audio": "audio/faf8fee74cb4.m4a"
+     "audio": "audio/aa0fae906361.m4a"
     },
     {
      "de": "Dana",
-     "audio": "audio/0c86b3324c34.m4a"
+     "audio": "audio/5382dc21a4cc.m4a"
     }
    ]
   },
@@ -1053,7 +1053,7 @@
       "punct": ".",
       "plain": "Wir sind nach Hamburg gefahren.",
       "ru": "Мы поехали в Гамбург.",
-      "audio": "audio/4090cfa66d69.m4a"
+      "audio": "audio/9fdc045afcb8.m4a"
      }
     ]
    }
@@ -1161,7 +1161,7 @@
       "punct": ".",
       "plain": "Am Freitag sind wir mit dem Zug nach Hamburg gefahren.",
       "ru": "В пятницу мы поехали в Гамбург на поезде.",
-      "audio": "audio/b02f27319cd5.m4a"
+      "audio": "audio/244768966bbc.m4a"
      }
     ],
     "focus": [
@@ -1272,7 +1272,7 @@
       "punct": ".",
       "plain": "Am Freitag sind wir mit dem Zug nach Hamburg gefahren.",
       "ru": "В пятницу мы поехали в Гамбург на поезде.",
-      "audio": "audio/b02f27319cd5.m4a"
+      "audio": "audio/244768966bbc.m4a"
      }
     ],
     "table": "hilfsverb"
@@ -1333,7 +1333,7 @@
       "punct": ".",
       "plain": "Der Zug kommt um acht Uhr an.",
       "ru": "Поезд прибывает в восемь часов.",
-      "audio": "audio/bfdc5ae3c736.m4a"
+      "audio": "audio/75268273e549.m4a"
      }
     ],
     "table": "hilfsverb"
@@ -1394,7 +1394,7 @@
       "punct": ".",
       "plain": "Der Zug ist um acht Uhr angekommen.",
       "ru": "Поезд прибыл в восемь часов.",
-      "audio": "audio/7a8fbb74d3aa.m4a"
+      "audio": "audio/9a75906abe66.m4a"
      }
     ],
     "table": "hilfsverb"
@@ -1782,7 +1782,7 @@
       "punct": ".",
       "plain": "Der Zug ist um acht Uhr angekommen.",
       "ru": "Поезд прибыл в восемь часов.",
-      "audio": "audio/7a8fbb74d3aa.m4a"
+      "audio": "audio/9a75906abe66.m4a"
      }
     ],
     "table": "datum"
@@ -1834,7 +1834,7 @@
       "punct": ".",
       "plain": "Um acht Uhr ist der Zug angekommen.",
       "ru": "В восемь часов поезд прибыл.",
-      "audio": "audio/ad43babf64aa.m4a"
+      "audio": "audio/5cb7f4f05842.m4a"
      }
     ],
     "table": "datum"
@@ -1896,7 +1896,7 @@
       "punct": ".",
       "plain": "Wir sind zwei Tage in Hamburg geblieben.",
       "ru": "Мы остались в Гамбурге на два дня.",
-      "audio": "audio/0066a1528377.m4a"
+      "audio": "audio/6cf9d51cf4fe.m4a"
      }
     ],
     "table": "datum"
@@ -1958,7 +1958,7 @@
       "punct": ".",
       "plain": "Wir sind zwei Tage in Hamburg geblieben.",
       "ru": "Мы остались в Гамбурге на два дня.",
-      "audio": "audio/0066a1528377.m4a"
+      "audio": "audio/6cf9d51cf4fe.m4a"
      }
     ],
     "table": "datum",
@@ -2022,7 +2022,7 @@
       "punct": ".",
       "plain": "Wir sind zwei Tage in Hamburg geblieben.",
       "ru": "Мы остались в Гамбурге на два дня.",
-      "audio": "audio/0066a1528377.m4a"
+      "audio": "audio/6cf9d51cf4fe.m4a"
      }
     ],
     "table": "datum",
@@ -2085,7 +2085,7 @@
       "punct": ".",
       "plain": "Wir sind zwei Tage in Hamburg geblieben.",
       "ru": "Мы остались в Гамбурге на два дня.",
-      "audio": "audio/0066a1528377.m4a"
+      "audio": "audio/6cf9d51cf4fe.m4a"
      }
     ],
     "table": "datum",
@@ -2148,7 +2148,7 @@
       "punct": ".",
       "plain": "Wir sind zwei Tage in Hamburg geblieben.",
       "ru": "Мы остались в Гамбурге на два дня.",
-      "audio": "audio/0066a1528377.m4a"
+      "audio": "audio/6cf9d51cf4fe.m4a"
      }
     ],
     "table": "datum",
@@ -2212,7 +2212,7 @@
       "punct": ".",
       "plain": "Wir sind zwei Tage in Hamburg geblieben.",
       "ru": "Мы остались в Гамбурге на два дня.",
-      "audio": "audio/0066a1528377.m4a"
+      "audio": "audio/6cf9d51cf4fe.m4a"
      }
     ],
     "table": "datum",
@@ -2276,7 +2276,7 @@
       "punct": ".",
       "plain": "Wir sind zwei Tage in Hamburg geblieben.",
       "ru": "Мы остались в Гамбурге на два дня.",
-      "audio": "audio/0066a1528377.m4a"
+      "audio": "audio/6cf9d51cf4fe.m4a"
      }
     ],
     "table": "datum",
@@ -2329,7 +2329,7 @@
       "punct": ".",
       "plain": "Wir sind zwei Tage in Hamburg geblieben.",
       "ru": "Мы остались в Гамбурге на два дня.",
-      "audio": "audio/0066a1528377.m4a"
+      "audio": "audio/6cf9d51cf4fe.m4a"
      }
     ],
     "table": "datum",
@@ -2400,7 +2400,7 @@
    ],
    "answer": 1,
    "why": "*fahren* — движение из А в Б, поэтому *sein*: *wir sind gefahren*.",
-   "audio": "audio/62b183ed487a.m4a"
+   "audio": "audio/7663ebd20aba.m4a"
   },
   {
    "id": "reisen-2",
@@ -2424,7 +2424,7 @@
    ],
    "hint": "haben / sein",
    "why": "*aufstehen* — смена состояния, поэтому *sein*: *ich bin aufgestanden*.",
-   "audio": "audio/ff299578bf11.m4a"
+   "audio": "audio/1d922111bbf7.m4a"
   },
   {
    "id": "reisen-4",
@@ -2435,7 +2435,7 @@
    ],
    "hint": "haben / sein",
    "why": "*bleiben* — исключение: движения нет, а глагол *sein*.",
-   "audio": "audio/2f481b8f0314.m4a"
+   "audio": "audio/8da77381ec47.m4a"
   },
   {
    "id": "reisen-5",
@@ -2446,7 +2446,7 @@
    ],
    "hint": "sein",
    "why": "*ihr seid*; в вопросе да/нет вспомогательный глагол стоит первым.",
-   "audio": "audio/3fa7bc9421ac.m4a"
+   "audio": "audio/81e5017408ca.m4a"
   },
   {
    "id": "reisen-6",
@@ -2457,7 +2457,7 @@
    ],
    "hint": "ankommen",
    "why": "*ge* — между приставкой и корнем: *an-ge-kommen*.",
-   "audio": "audio/7a8fbb74d3aa.m4a"
+   "audio": "audio/9a75906abe66.m4a"
   },
   {
    "id": "reisen-7",
@@ -2482,7 +2482,7 @@
    ],
    "answer": 1,
    "why": "*fliegen — ist geflogen*: неправильный глагол, причастие на *-en*.",
-   "audio": "audio/1c9a7f6688f2.m4a"
+   "audio": "audio/981a5078678f.m4a"
   },
   {
    "id": "reisen-9",
@@ -2495,7 +2495,7 @@
    ],
    "answer": 1,
    "why": "Исключение: *drei — der dritte*.",
-   "audio": "audio/9ac5dc13a12c.m4a"
+   "audio": "audio/94d2d47b5545.m4a"
   },
   {
    "id": "reisen-10",
@@ -2520,7 +2520,7 @@
    ],
    "answer": 1,
    "why": "Месяц — с *im*: *im Juli*. *am* — с датой: *am ersten Juli*.",
-   "audio": "audio/45567316edb7.m4a"
+   "audio": "audio/3c44972ccda9.m4a"
   },
   {
    "id": "reisen-12",
@@ -2557,14 +2557,14 @@
    ],
    "de": "Am Freitag sind wir nach Hamburg gefahren.",
    "why": "Время на первом месте: *sind* второй, *wir* за ним, *gefahren* в конце.",
-   "audio": "audio/23158a669c83.m4a"
+   "audio": "audio/c46e7a135ea5.m4a"
   },
   {
    "id": "reisen-15",
    "type": "order",
    "ru": "Когда прибыл поезд?",
    "de": "Wann ist der Zug angekommen?",
-   "audio": "audio/738d738f9d0f.m4a"
+   "audio": "audio/d0aa7b9b8a97.m4a"
   },
   {
    "id": "reisen-16",
@@ -2650,7 +2650,7 @@
       "who": "X",
       "de": "Ich habe den alten Plan kopiert. Die neuen Nachrichten habe ich nicht gelesen.",
       "ru": "Я скопировал старый план. Новые сообщения я не прочитал.",
-      "audio": "audio/9fccee5959ef.m4a"
+      "audio": "audio/0679296cec05.m4a"
      }
     ],
     "question": "Что объясняет признание?",
@@ -2829,12 +2829,12 @@
      },
      {
       "de": "Wir sind am Abend angekommen und dann zum Hafen gegangen.",
-      "audio": "audio/95cb241beb8c.m4a",
+      "audio": "audio/c757614c98b2.m4a",
       "name": "Dana"
      },
      {
       "de": "Heute sind wir mit dem Schiff gefahren – zwei Stunden auf der Elbe!",
-      "audio": "audio/afdccf2732b5.m4a",
+      "audio": "audio/a5e0e4f9ca68.m4a",
       "name": "Dana"
      }
     ],

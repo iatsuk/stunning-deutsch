@@ -69,37 +69,37 @@
      "who": "K",
      "de": "Guten Tag! Was möchten Sie?",
      "ru": "Добрый день! Что желаете?",
-     "audio": "audio/62079f32226e.m4a"
+     "audio": "audio/a7c8cd388f4f.m4a"
     },
     {
      "who": "A",
      "de": "Ich möchte einen Tee, bitte.",
      "ru": "Мне, пожалуйста, чай.",
-     "audio": "audio/9aa9fb95df02.m4a"
+     "audio": "audio/8943fbd698ee.m4a"
     },
     {
      "who": "M",
      "de": "Und ich nehme einen Kaffee und ein Stück Apfelkuchen.",
      "ru": "А я возьму кофе и кусок яблочного пирога.",
-     "audio": "audio/9fef5dbf7a3b.m4a"
+     "audio": "audio/9cb6c7401adb.m4a"
     },
     {
      "who": "K",
      "de": "Möchten Sie auch ein Stück Kuchen?",
      "ru": "Вы тоже будете пирог?",
-     "audio": "audio/1d8beb6f10ea.m4a"
+     "audio": "audio/45447fec4c75.m4a"
     },
     {
      "who": "A",
      "de": "Nein, danke. Ich habe keinen Hunger.",
      "ru": "Нет, спасибо. Я не голодна.",
-     "audio": "audio/3d914062c43c.m4a"
+     "audio": "audio/175372fc2a53.m4a"
     },
     {
      "who": "M",
      "de": "Zahlen, bitte!",
      "ru": "Рассчитайте нас, пожалуйста!",
-     "audio": "audio/d9a624aaa05c.m4a"
+     "audio": "audio/1f76333de724.m4a"
     },
     {
      "who": "K",
@@ -117,13 +117,13 @@
      "who": "K",
      "de": "Das macht elf Euro.",
      "ru": "С вас одиннадцать евро.",
-     "audio": "audio/7dcc5af15175.m4a"
+     "audio": "audio/e42085529473.m4a"
     },
     {
      "who": "M",
      "de": "Zwölf, bitte.",
      "ru": "Возьмите двенадцать.",
-     "audio": "audio/96aa20d84810.m4a"
+     "audio": "audio/2c73280d5244.m4a"
     }
    ]
   },
@@ -146,7 +146,7 @@
      "who": "M",
      "de": "Heute koche ich! Isst du gern Pasta?",
      "ru": "Сегодня готовлю я! Ты любишь пасту?",
-     "audio": "audio/2fbdaa2fb766.m4a"
+     "audio": "audio/241c8a02930b.m4a"
     },
     {
      "who": "A",
@@ -158,7 +158,7 @@
      "who": "M",
      "de": "Kein Problem. Dann mache ich Pasta mit Tomaten und Käse.",
      "ru": "Не проблема. Тогда я сделаю пасту с помидорами и сыром.",
-     "audio": "audio/ae10437b2b33.m4a"
+     "audio": "audio/fb752ce8f87c.m4a"
     },
     {
      "who": "A",
@@ -170,25 +170,25 @@
      "who": "M",
      "de": "Ja, ich koche sehr gern. Und du?",
      "ru": "Да, я очень люблю готовить. А ты?",
-     "audio": "audio/4aefd12c1133.m4a"
+     "audio": "audio/afe31e3c5df4.m4a"
     },
     {
      "who": "A",
      "de": "Ich koche nicht gern. Aber ich backe gern Kuchen.",
      "ru": "Я не люблю готовить. Зато люблю печь пироги.",
-     "audio": "audio/3effd2f634b1.m4a"
+     "audio": "audio/a8e2e9695eb8.m4a"
     },
     {
      "who": "M",
      "de": "Und was trinkst du? Ein Glas Wein?",
      "ru": "А что ты будешь пить? Бокал вина?",
-     "audio": "audio/330e874bce8e.m4a"
+     "audio": "audio/2ccdea57f0cc.m4a"
     },
     {
      "who": "A",
      "de": "Nein, danke. Ich trinke keinen Alkohol. Ein Wasser, bitte.",
      "ru": "Нет, спасибо. Я не пью алкоголь. Воды, пожалуйста.",
-     "audio": "audio/e38e43f76421.m4a"
+     "audio": "audio/19c9e9841edd.m4a"
     }
    ]
   },
@@ -210,25 +210,25 @@
      "who": "K",
      "de": "Guten Tag! Was trinken Sie? Einen Kaffee?",
      "ru": "Добрый день! Что будете пить? Кофе?",
-     "audio": "audio/49b26a635022.m4a"
+     "audio": "audio/429203b052f8.m4a"
     },
     {
      "who": "F",
      "de": "Nein, danke, ich trinke keinen Kaffee.",
      "ru": "Нет, спасибо, я не пью кофе.",
-     "audio": "audio/d840ef8cac67.m4a"
+     "audio": "audio/ac5d99647a79.m4a"
     },
     {
      "who": "K",
      "de": "Vielleicht einen Tee?",
      "ru": "Может быть, чай?",
-     "audio": "audio/993ab6db7053.m4a"
+     "audio": "audio/3acf6e361353.m4a"
     },
     {
      "who": "F",
      "de": "Ja, gern. Einen Tee, bitte.",
      "ru": "Да, с удовольствием. Чай, пожалуйста.",
-     "audio": "audio/8b10299d83ea.m4a"
+     "audio": "audio/787ae87a5496.m4a"
     },
     {
      "who": "K",
@@ -240,7 +240,7 @@
      "who": "F",
      "de": "Nein, ohne Milch. Und ein Glas Wasser, bitte.",
      "ru": "Нет, без молока. И стакан воды, пожалуйста.",
-     "audio": "audio/c7e5c49a99b8.m4a"
+     "audio": "audio/ba6b60da58d0.m4a"
     }
    ]
   },
@@ -267,13 +267,13 @@
      "who": "M",
      "de": "Was möchtet ihr essen und trinken?",
      "ru": "Что вы хотели бы поесть и попить?",
-     "audio": "audio/cfa97838bc68.m4a"
+     "audio": "audio/efe20c863b27.m4a"
     },
     {
      "who": "E",
      "de": "Ich möchte einen Döner und eine Cola, bitte.",
      "ru": "Мне, пожалуйста, донер и колу.",
-     "audio": "audio/07ad5bb3dab7.m4a"
+     "audio": "audio/ee6314b1c439.m4a"
     },
     {
      "who": "H",
@@ -310,7 +310,7 @@
      "gender": "m",
      "plural": "Säfte",
      "note": "der Apfelsaft — яблочный сок",
-     "audio": "audio/d1c9a2a47946.m4a"
+     "audio": "audio/88474255259e.m4a"
     },
     {
      "de": "das Wasser",
@@ -319,7 +319,7 @@
      "plural": null,
      "noPlural": true,
      "note": "Ein Wasser, bitte! — стакан или бутылка",
-     "audio": "audio/8f766557d2a4.m4a"
+     "audio": "audio/9476f3070b0b.m4a"
     },
     {
      "de": "die Milch",
@@ -341,14 +341,14 @@
      "ru": "пиво",
      "gender": "n",
      "plural": "Biere",
-     "audio": "audio/c7b198fac4ce.m4a"
+     "audio": "audio/8504b97d11e0.m4a"
     },
     {
      "de": "der Wein",
      "ru": "вино",
      "gender": "m",
      "plural": "Weine",
-     "audio": "audio/1470e790fb1e.m4a"
+     "audio": "audio/6328950136d2.m4a"
     }
    ]
   },
@@ -361,7 +361,7 @@
      "ru": "хлеб",
      "gender": "n",
      "plural": "Brote",
-     "audio": "audio/b56ce826c04e.m4a"
+     "audio": "audio/7168b97f2dc5.m4a"
     },
     {
      "de": "das Brötchen",
@@ -369,28 +369,28 @@
      "gender": "n",
      "plural": "Brötchen",
      "note": "слова на -chen — всегда das",
-     "audio": "audio/57113600dfde.m4a"
+     "audio": "audio/43f12f48bb15.m4a"
     },
     {
      "de": "der Käse",
      "ru": "сыр",
      "gender": "m",
      "plural": "Käse",
-     "audio": "audio/73cd52b40476.m4a"
+     "audio": "audio/3038082626ab.m4a"
     },
     {
      "de": "die Wurst",
      "ru": "колбаса",
      "gender": "f",
      "plural": "Würste",
-     "audio": "audio/74bc4ab53d5f.m4a"
+     "audio": "audio/4a6a162f94b8.m4a"
     },
     {
      "de": "das Ei",
      "ru": "яйцо",
      "gender": "n",
      "plural": "Eier",
-     "audio": "audio/b65e7965f8ef.m4a"
+     "audio": "audio/c2628bfa3ab0.m4a"
     },
     {
      "de": "das Fleisch",
@@ -405,7 +405,7 @@
      "ru": "рыба",
      "gender": "m",
      "plural": "Fische",
-     "audio": "audio/5c27680ecf89.m4a"
+     "audio": "audio/244aaec9161a.m4a"
     },
     {
      "de": "das Gemüse",
@@ -414,49 +414,49 @@
      "plural": null,
      "noPlural": true,
      "note": "в немецком — единственное число",
-     "audio": "audio/a9d3ce9cae7e.m4a"
+     "audio": "audio/39fa22fafe91.m4a"
     },
     {
      "de": "der Salat",
      "ru": "салат",
      "gender": "m",
      "plural": "Salate",
-     "audio": "audio/c0864a4c1def.m4a"
+     "audio": "audio/c3ff1481d54a.m4a"
     },
     {
      "de": "die Suppe",
      "ru": "суп",
      "gender": "f",
      "plural": "Suppen",
-     "audio": "audio/3f9e36c45adc.m4a"
+     "audio": "audio/d28649cb6669.m4a"
     },
     {
      "de": "der Kuchen",
      "ru": "пирог, торт",
      "gender": "m",
      "plural": "Kuchen",
-     "audio": "audio/7a3359329b13.m4a"
+     "audio": "audio/62375302d117.m4a"
     },
     {
      "de": "der Döner",
      "ru": "донер",
      "gender": "m",
      "plural": "Döner",
-     "audio": "audio/9d5fa5bd2e39.m4a"
+     "audio": "audio/d8afaad4fd2c.m4a"
     },
     {
      "de": "das Fischbrötchen",
      "ru": "булочка с рыбой",
      "gender": "n",
      "plural": "Fischbrötchen",
-     "audio": "audio/57bbdd7f1fc6.m4a"
+     "audio": "audio/0031001bb2c2.m4a"
     },
     {
      "de": "die Tomate",
      "ru": "помидор",
      "gender": "f",
      "plural": "Tomaten",
-     "audio": "audio/c794c34de953.m4a"
+     "audio": "audio/b065a97281bd.m4a"
     },
     {
      "de": "die Pasta",
@@ -464,7 +464,7 @@
      "gender": "f",
      "plural": null,
      "noPlural": true,
-     "audio": "audio/e42cc9c4c4c2.m4a"
+     "audio": "audio/1c291a3ec35c.m4a"
     }
    ]
   },
@@ -484,7 +484,7 @@
      "ru": "меню",
      "gender": "f",
      "plural": "Speisekarten",
-     "audio": "audio/5593936654b9.m4a"
+     "audio": "audio/be821fc215c5.m4a"
     },
     {
      "de": "der Kellner",
@@ -492,7 +492,7 @@
      "gender": "m",
      "plural": "Kellner",
      "note": "die Kellnerin — официантка",
-     "audio": "audio/fc742a79754e.m4a"
+     "audio": "audio/c9dc47f0a519.m4a"
     },
     {
      "de": "die Tasse",
@@ -500,7 +500,7 @@
      "gender": "f",
      "plural": "Tassen",
      "note": "eine Tasse Tee",
-     "audio": "audio/ab6031d2553e.m4a"
+     "audio": "audio/8dd87f588507.m4a"
     },
     {
      "de": "das Glas",
@@ -508,7 +508,7 @@
      "gender": "n",
      "plural": "Gläser",
      "note": "ein Glas Wasser",
-     "audio": "audio/ec3c2bb4ecd7.m4a"
+     "audio": "audio/706859a34811.m4a"
     },
     {
      "de": "das Stück",
@@ -516,7 +516,7 @@
      "gender": "n",
      "plural": "Stücke",
      "note": "ein Stück Kuchen",
-     "audio": "audio/e5eb3415ae3c.m4a"
+     "audio": "audio/040121e1374b.m4a"
     },
     {
      "de": "die Rechnung",
@@ -524,28 +524,28 @@
      "gender": "f",
      "plural": "Rechnungen",
      "note": "Die Rechnung, bitte!",
-     "audio": "audio/2f13b6b4133f.m4a"
+     "audio": "audio/5cd641716ba8.m4a"
     },
     {
      "de": "das Frühstück",
      "ru": "завтрак",
      "gender": "n",
      "plural": "Frühstücke",
-     "audio": "audio/60cf91c1b917.m4a"
+     "audio": "audio/8aa1535b52a9.m4a"
     },
     {
      "de": "das Mittagessen",
      "ru": "обед",
      "gender": "n",
      "plural": "Mittagessen",
-     "audio": "audio/aac83eb61e23.m4a"
+     "audio": "audio/517931d8bd3b.m4a"
     },
     {
      "de": "das Abendessen",
      "ru": "ужин",
      "gender": "n",
      "plural": "Abendessen",
-     "audio": "audio/1cf09bbba1e1.m4a"
+     "audio": "audio/21c9cfc70c4b.m4a"
     }
    ]
   },
@@ -559,7 +559,7 @@
      "gender": null,
      "plural": null,
      "note": "du isst, er isst",
-     "audio": "audio/352ea3276466.m4a"
+     "audio": "audio/f19fa73ac799.m4a"
     },
     {
      "de": "trinken",
@@ -567,7 +567,7 @@
      "gender": null,
      "plural": null,
      "note": "Ich trinke Tee.",
-     "audio": "audio/bd60f3a0a073.m4a"
+     "audio": "audio/962f466e135e.m4a"
     },
     {
      "de": "nehmen",
@@ -575,7 +575,7 @@
      "gender": null,
      "plural": null,
      "note": "du nimmst, er nimmt",
-     "audio": "audio/eceab039b81a.m4a"
+     "audio": "audio/42024b18d5b2.m4a"
     },
     {
      "de": "möchten",
@@ -583,14 +583,14 @@
      "gender": null,
      "plural": null,
      "note": "ich möchte, er möchte",
-     "audio": "audio/0af627a23065.m4a"
+     "audio": "audio/7d6dc5e285e8.m4a"
     },
     {
      "de": "bestellen",
      "ru": "заказывать",
      "gender": null,
      "plural": null,
-     "audio": "audio/768f5441d0fd.m4a"
+     "audio": "audio/eb3fadb04a5a.m4a"
     },
     {
      "de": "bezahlen",
@@ -598,14 +598,14 @@
      "gender": null,
      "plural": null,
      "note": "разговорно: zahlen — Zahlen, bitte!",
-     "audio": "audio/b905fc202110.m4a"
+     "audio": "audio/03ace57ee535.m4a"
     },
     {
      "de": "kochen",
      "ru": "готовить",
      "gender": null,
      "plural": null,
-     "audio": "audio/d471b84fe343.m4a"
+     "audio": "audio/23898d974424.m4a"
     },
     {
      "de": "Hunger haben",
@@ -613,7 +613,7 @@
      "gender": null,
      "plural": null,
      "note": "Ich habe Hunger.",
-     "audio": "audio/d23d338e921e.m4a"
+     "audio": "audio/a5babb0ee432.m4a"
     },
     {
      "de": "Durst haben",
@@ -621,7 +621,7 @@
      "gender": null,
      "plural": null,
      "note": "Hast du Durst?",
-     "audio": "audio/e28558365e82.m4a"
+     "audio": "audio/a68061163723.m4a"
     },
     {
      "de": "gern",
@@ -629,7 +629,7 @@
      "gender": null,
      "plural": null,
      "note": "Ich koche gern. — люблю готовить",
-     "audio": "audio/a0b803cfb3aa.m4a"
+     "audio": "audio/6948cfd2f981.m4a"
     },
     {
      "de": "Guten Appetit!",
@@ -865,7 +865,7 @@
     },
     {
      "de": "Nein, ich esse kein Fleisch. Ich esse gern Gemüse.",
-     "audio": "audio/bfac905d944f.m4a"
+     "audio": "audio/b7b026e9bb81.m4a"
     }
    ]
   },
@@ -879,19 +879,19 @@
    "sample": [
     {
      "de": "Ein+en Kaffee, bitte!",
-     "audio": "audio/e73480eaa95f.m4a"
+     "audio": "audio/446f4cbc2144.m4a"
     },
     {
      "de": "Ich möchte ein+en Kaffee, bitte.",
-     "audio": "audio/d1a32560258c.m4a"
+     "audio": "audio/c2c6c412645f.m4a"
     },
     {
      "de": "Ja, gern. Hier, bitte!",
-     "audio": "audio/4b61a59d442c.m4a"
+     "audio": "audio/109fb3a432e7.m4a"
     },
     {
      "de": "Leider habe ich kein+en Kaffee. Möchtest du ein+en Tee?",
-     "audio": "audio/788884094f2b.m4a"
+     "audio": "audio/1d27e7ecdd26.m4a"
     }
    ]
   },
@@ -912,22 +912,22 @@
     {
      "who": "Kellner",
      "de": "Guten Tag! Was trinken Sie? Einen Kaffee?",
-     "audio": "audio/49b26a635022.m4a"
+     "audio": "audio/429203b052f8.m4a"
     },
     {
      "who": "Frau",
      "de": "Nein, danke, ich trinke keinen Kaffee.",
-     "audio": "audio/d840ef8cac67.m4a"
+     "audio": "audio/ac5d99647a79.m4a"
     },
     {
      "who": "Kellner",
      "de": "Vielleicht einen Tee?",
-     "audio": "audio/993ab6db7053.m4a"
+     "audio": "audio/3acf6e361353.m4a"
     },
     {
      "who": "Frau",
      "de": "Ja, gern. Einen Tee, bitte.",
-     "audio": "audio/8b10299d83ea.m4a"
+     "audio": "audio/787ae87a5496.m4a"
     },
     {
      "who": "Kellner",
@@ -937,7 +937,7 @@
     {
      "who": "Frau",
      "de": "Nein, ohne Milch. Und ein Glas Wasser, bitte.",
-     "audio": "audio/c7e5c49a99b8.m4a"
+     "audio": "audio/ba6b60da58d0.m4a"
     }
    ],
    "sample": []
@@ -1284,7 +1284,7 @@
       "punct": ".",
       "plain": "Ich nehme den Kaffee.",
       "ru": "Я беру этот кофе.",
-      "audio": "audio/61b9c7303532.m4a"
+      "audio": "audio/4d22f26a2498.m4a"
      }
     ]
    }
@@ -1332,7 +1332,7 @@
       "punct": ".",
       "plain": "Ich nehme den Kaffee.",
       "ru": "Я беру этот кофе.",
-      "audio": "audio/61b9c7303532.m4a"
+      "audio": "audio/4d22f26a2498.m4a"
      }
     ],
     "focus": [
@@ -1383,7 +1383,7 @@
       "punct": ".",
       "plain": "Ich möchte einen Kaffee.",
       "ru": "Я хотел бы кофе.",
-      "audio": "audio/711269f5648f.m4a"
+      "audio": "audio/44636cd1fbac.m4a"
      },
      {
       "slots": [
@@ -1422,7 +1422,7 @@
       "punct": ".",
       "plain": "Das ist ein Kaffee aus Italien.",
       "ru": "Это кофе из Италии.",
-      "audio": "audio/5377f275844e.m4a"
+      "audio": "audio/1ff5d9f58895.m4a"
      }
     ]
    }
@@ -1470,7 +1470,7 @@
       "punct": ".",
       "plain": "Ich möchte einen Kaffee.",
       "ru": "Я хотел бы кофе.",
-      "audio": "audio/711269f5648f.m4a"
+      "audio": "audio/44636cd1fbac.m4a"
      },
      {
       "slots": [
@@ -1509,7 +1509,7 @@
       "punct": ".",
       "plain": "Das ist ein Kaffee aus Italien.",
       "ru": "Это кофе из Италии.",
-      "audio": "audio/5377f275844e.m4a"
+      "audio": "audio/1ff5d9f58895.m4a"
      }
     ],
     "focus": [
@@ -1563,7 +1563,7 @@
       "punct": ".",
       "plain": "Ich möchte einen Kaffee.",
       "ru": "Я хотел бы кофе.",
-      "audio": "audio/711269f5648f.m4a"
+      "audio": "audio/44636cd1fbac.m4a"
      },
      {
       "slots": [
@@ -1602,7 +1602,7 @@
       "punct": ".",
       "plain": "Das ist ein Kaffee aus Italien.",
       "ru": "Это кофе из Италии.",
-      "audio": "audio/5377f275844e.m4a"
+      "audio": "audio/1ff5d9f58895.m4a"
      }
     ],
     "focus": [
@@ -1656,7 +1656,7 @@
       "punct": ".",
       "plain": "Ich trinke gern Tee.",
       "ru": "Я люблю чай.",
-      "audio": "audio/1a3cacffb0a8.m4a"
+      "audio": "audio/d6c9eeabad6e.m4a"
      },
      {
       "slots": [
@@ -1686,7 +1686,7 @@
       "punct": "?",
       "plain": "Trinkst du gern Kaffee?",
       "ru": "Ты любишь кофе?",
-      "audio": "audio/5fd6af1183da.m4a"
+      "audio": "audio/4a88a9362eb7.m4a"
      }
     ]
    }
@@ -1738,7 +1738,7 @@
       "punct": ".",
       "plain": "Ich trinke nicht gern Tee.",
       "ru": "Я не люблю чай.",
-      "audio": "audio/a39ff9fa961a.m4a"
+      "audio": "audio/3428f4531cff.m4a"
      },
      {
       "slots": [
@@ -1769,7 +1769,7 @@
       "punct": ".",
       "plain": "Ich trinke keinen Kaffee.",
       "ru": "Я не пью кофе.",
-      "audio": "audio/9371c04e465e.m4a"
+      "audio": "audio/e2f8b735fbec.m4a"
      }
     ]
    }
@@ -1821,7 +1821,7 @@
       "punct": ".",
       "plain": "Ich trinke nicht gern Tee.",
       "ru": "Я не люблю чай.",
-      "audio": "audio/a39ff9fa961a.m4a"
+      "audio": "audio/3428f4531cff.m4a"
      },
      {
       "slots": [
@@ -1852,7 +1852,7 @@
       "punct": ".",
       "plain": "Ich trinke keinen Kaffee.",
       "ru": "Я не пью кофе.",
-      "audio": "audio/9371c04e465e.m4a"
+      "audio": "audio/e2f8b735fbec.m4a"
      }
     ]
    }
@@ -1900,7 +1900,7 @@
       "punct": "?",
       "plain": "Möchtest du einen Kaffee?",
       "ru": "Хочешь кофе?",
-      "audio": "audio/554d8108a6b1.m4a"
+      "audio": "audio/8a28f814b7ac.m4a"
      }
     ]
    }
@@ -1949,7 +1949,7 @@
       "punct": ".",
       "plain": "Den Kuchen isst Mateo.",
       "ru": "",
-      "audio": "audio/d48fbe1ad64d.m4a"
+      "audio": "audio/aab95325d73b.m4a"
      }
     ]
    },
@@ -1988,7 +1988,7 @@
       "punct": ".",
       "plain": "Den Kuchen isst Mateo.",
       "ru": "Пирог ест Матео.",
-      "audio": "audio/d48fbe1ad64d.m4a"
+      "audio": "audio/aab95325d73b.m4a"
      },
      {
       "slots": [
@@ -2019,7 +2019,7 @@
       "punct": ".",
       "plain": "Mateo isst den Kuchen.",
       "ru": "Матео ест пирог.",
-      "audio": "audio/b9f51edbbe6a.m4a"
+      "audio": "audio/d6510f331d5c.m4a"
      }
     ],
     "fresh": [
@@ -2071,7 +2071,7 @@
       "punct": ".",
       "plain": "Den Kuchen isst Mateo.",
       "ru": "Пирог ест Матео.",
-      "audio": "audio/d48fbe1ad64d.m4a"
+      "audio": "audio/aab95325d73b.m4a"
      },
      {
       "slots": [
@@ -2102,7 +2102,7 @@
       "punct": ".",
       "plain": "Mateo isst den Kuchen.",
       "ru": "Матео ест пирог.",
-      "audio": "audio/b9f51edbbe6a.m4a"
+      "audio": "audio/d6510f331d5c.m4a"
      }
     ],
     "focus": [
@@ -2154,7 +2154,7 @@
       "punct": ".",
       "plain": "Den Kuchen isst Mateo.",
       "ru": "Пирог ест Матео.",
-      "audio": "audio/d48fbe1ad64d.m4a"
+      "audio": "audio/aab95325d73b.m4a"
      },
      {
       "slots": [
@@ -2185,7 +2185,7 @@
       "punct": ".",
       "plain": "Mateo isst den Kuchen.",
       "ru": "Матео ест пирог.",
-      "audio": "audio/b9f51edbbe6a.m4a"
+      "audio": "audio/d6510f331d5c.m4a"
      }
     ],
     "task": "frage",
@@ -2235,7 +2235,7 @@
       "punct": ".",
       "plain": "Den Kuchen isst Mateo.",
       "ru": "Пирог ест Матео.",
-      "audio": "audio/d48fbe1ad64d.m4a"
+      "audio": "audio/aab95325d73b.m4a"
      },
      {
       "slots": [
@@ -2266,7 +2266,7 @@
       "punct": ".",
       "plain": "Mateo isst den Kuchen.",
       "ru": "Матео ест пирог.",
-      "audio": "audio/b9f51edbbe6a.m4a"
+      "audio": "audio/d6510f331d5c.m4a"
      }
     ],
     "task": "bitte",
@@ -2316,7 +2316,7 @@
       "punct": ".",
       "plain": "Den Kuchen isst Mateo.",
       "ru": "Пирог ест Матео.",
-      "audio": "audio/d48fbe1ad64d.m4a"
+      "audio": "audio/aab95325d73b.m4a"
      },
      {
       "slots": [
@@ -2347,7 +2347,7 @@
       "punct": ".",
       "plain": "Mateo isst den Kuchen.",
       "ru": "Матео ест пирог.",
-      "audio": "audio/b9f51edbbe6a.m4a"
+      "audio": "audio/d6510f331d5c.m4a"
      }
     ],
     "task": "bitte",
@@ -2397,7 +2397,7 @@
       "punct": ".",
       "plain": "Den Kuchen isst Mateo.",
       "ru": "Пирог ест Матео.",
-      "audio": "audio/d48fbe1ad64d.m4a"
+      "audio": "audio/aab95325d73b.m4a"
      },
      {
       "slots": [
@@ -2428,7 +2428,7 @@
       "punct": ".",
       "plain": "Mateo isst den Kuchen.",
       "ru": "Матео ест пирог.",
-      "audio": "audio/b9f51edbbe6a.m4a"
+      "audio": "audio/d6510f331d5c.m4a"
      }
     ],
     "task": "hoeren"
@@ -2478,7 +2478,7 @@
       "punct": ".",
       "plain": "Den Kuchen isst Mateo.",
       "ru": "Пирог ест Матео.",
-      "audio": "audio/d48fbe1ad64d.m4a"
+      "audio": "audio/aab95325d73b.m4a"
      },
      {
       "slots": [
@@ -2509,7 +2509,7 @@
       "punct": ".",
       "plain": "Mateo isst den Kuchen.",
       "ru": "Матео ест пирог.",
-      "audio": "audio/b9f51edbbe6a.m4a"
+      "audio": "audio/d6510f331d5c.m4a"
      }
     ],
     "task": "hoeren",
@@ -2529,7 +2529,7 @@
    ],
    "answer": 1,
    "why": "*der Kaffee* — мужской род, после *möchten* винительный: *ein+en Kaffee*.",
-   "audio": "audio/d1a32560258c.m4a"
+   "audio": "audio/c2c6c412645f.m4a"
   },
   {
    "id": "essen-2",
@@ -2542,7 +2542,7 @@
    ],
    "answer": 1,
    "why": "*die Cola* — женский род, в винительном не меняется.",
-   "audio": "audio/86238f313dd4.m4a"
+   "audio": "audio/c227e15160d8.m4a"
   },
   {
    "id": "essen-3",
@@ -2555,7 +2555,7 @@
    ],
    "answer": 0,
    "why": "*das Wasser* — средний род: *ein* без окончания.",
-   "audio": "audio/d93ade6c128b.m4a"
+   "audio": "audio/62cbd8cd8b76.m4a"
   },
   {
    "id": "essen-4",
@@ -2568,7 +2568,7 @@
    ],
    "answer": 0,
    "why": "После *sein* винительного не бывает: *Das ist ein Tee*.",
-   "audio": "audio/151758537891.m4a"
+   "audio": "audio/0213d9dd42f0.m4a"
   },
   {
    "id": "essen-5",
@@ -2580,7 +2580,7 @@
    "hint": "kein",
    "ru": "Я не голоден.",
    "why": "*der Hunger* — мужской род: *kein+en Hunger*.",
-   "audio": "audio/d1d5cfdd097a.m4a"
+   "audio": "audio/a070c60cba87.m4a"
   },
   {
    "id": "essen-6",
@@ -2592,7 +2592,7 @@
    "hint": "der",
    "ru": "Я плачу за кофе.",
    "why": "*bezahlen* + винительный, без предлога: *Ich bezahle d+en Kaffee*.",
-   "audio": "audio/9a08819ce459.m4a"
+   "audio": "audio/376cfb6b5948.m4a"
   },
   {
    "id": "essen-7",
@@ -2603,7 +2603,7 @@
    ],
    "hint": "möchten",
    "why": "*er möchte* — без *-t*, как *ich möchte*: это «хотел бы», и у таких форм *er* звучит как *ich*.",
-   "audio": "audio/0fac12525334.m4a"
+   "audio": "audio/211b5a643ff8.m4a"
   },
   {
    "id": "essen-8",
@@ -2614,7 +2614,7 @@
    ],
    "hint": "nehmen",
    "why": "*nehmen*: *du nimmst*, *er nimmt* — *e* меняется на *i*, и *m* удваивается.",
-   "audio": "audio/513796155fa5.m4a"
+   "audio": "audio/514859a50f22.m4a"
   },
   {
    "id": "essen-9",
@@ -2651,7 +2651,7 @@
    ],
    "answer": 2,
    "why": "Существительное без артикля отрицают *kein*; *der Alkohol* — мужской род: *kein+en*.",
-   "audio": "audio/de91b185ceb9.m4a"
+   "audio": "audio/78056379f0a7.m4a"
   },
   {
    "id": "essen-12",
@@ -2663,7 +2663,7 @@
    ],
    "answer": 0,
    "why": "Прилагательное отрицают *nicht*.",
-   "audio": "audio/f263767dbb0a.m4a"
+   "audio": "audio/32c52c1afd14.m4a"
   },
   {
    "id": "essen-13",
@@ -2687,14 +2687,14 @@
     "Tee trinke ich gern."
    ],
    "why": "*gern* стоит после глагола: *Ich trinke gern Tee*.",
-   "audio": "audio/1a3cacffb0a8.m4a"
+   "audio": "audio/d6c9eeabad6e.m4a"
   },
   {
    "id": "essen-15",
    "type": "order",
    "ru": "Ты будешь кусок пирога?",
    "de": "Möchtest du ein Stück Kuchen?",
-   "audio": "audio/14a59b41cacf.m4a"
+   "audio": "audio/e8cf29c81a05.m4a"
   },
   {
    "id": "essen-16",
@@ -2705,7 +2705,7 @@
     "Keinen Kaffee trinke ich."
    ],
    "why": "Существительное без артикля — *kein*, мужской род — *keinen*.",
-   "audio": "audio/9371c04e465e.m4a"
+   "audio": "audio/e2f8b735fbec.m4a"
   },
   {
    "id": "essen-17",
@@ -2716,7 +2716,7 @@
    ],
    "hint": "ein",
    "why": "*der Döner* — мужской род, после *möchte* винительный: *einen*.",
-   "audio": "audio/66118feb1ef1.m4a"
+   "audio": "audio/7e3476b9c8ed.m4a"
   },
   {
    "id": "essen-18",
@@ -2804,7 +2804,7 @@
       "who": "D",
       "de": "Ich möchte einen Tee. Ich trinke keinen Kaffee.",
       "ru": "Я хотела бы чай. Я не пью кофе.",
-      "audio": "audio/21faf2e4dedb.m4a"
+      "audio": "audio/1087d804ae9b.m4a"
      }
     ],
     "question": "Какой напиток оставить в заказе Даны?",
@@ -2852,7 +2852,7 @@
       "who": "M",
       "de": "Ich nehme einen Kaffee und ein Stück Kuchen.",
       "ru": "Я возьму кофе и кусок пирога.",
-      "audio": "audio/3117477a2f40.m4a"
+      "audio": "audio/596351c68626.m4a"
      }
     ],
     "question": "Какой заказ согласуется со всеми сообщениями?",
@@ -2877,7 +2877,7 @@
       "who": "F",
       "de": "Ein Tee, ein Kaffee und ein Stück Kuchen. Zusammen elf Euro.",
       "ru": "Один чай, один кофе и кусок пирога. Вместе одиннадцать евро.",
-      "audio": "audio/1a5a6ede1c4f.m4a"
+      "audio": "audio/e677b38a167a.m4a"
      }
     ],
     "question": "Как поступить с двумя листками заказа?",
@@ -2913,22 +2913,22 @@
     "quotes": [
      {
       "de": "Ich möchte einen Tee, bitte.",
-      "audio": "audio/9aa9fb95df02.m4a",
+      "audio": "audio/8943fbd698ee.m4a",
       "name": "Dana"
      },
      {
       "de": "Und ich nehme einen Kaffee und ein Stück Apfelkuchen.",
-      "audio": "audio/9fef5dbf7a3b.m4a",
+      "audio": "audio/9cb6c7401adb.m4a",
       "name": "Mateo"
      },
      {
       "de": "Möchten Sie auch ein Stück Kuchen?",
-      "audio": "audio/1d8beb6f10ea.m4a",
+      "audio": "audio/45447fec4c75.m4a",
       "name": "Kellner"
      },
      {
       "de": "Nein, danke. Ich habe keinen Hunger.",
-      "audio": "audio/3d914062c43c.m4a",
+      "audio": "audio/175372fc2a53.m4a",
       "name": "Dana"
      }
     ],
@@ -3002,12 +3002,12 @@
      },
      {
       "de": "Das macht elf Euro.",
-      "audio": "audio/7dcc5af15175.m4a",
+      "audio": "audio/e42085529473.m4a",
       "name": "Kellner"
      },
      {
       "de": "Zwölf, bitte.",
-      "audio": "audio/96aa20d84810.m4a",
+      "audio": "audio/2c73280d5244.m4a",
       "name": "Mateo"
      }
     ],
@@ -3040,7 +3040,7 @@
     "quotes": [
      {
       "de": "Heute koche ich! Isst du gern Pasta?",
-      "audio": "audio/2fbdaa2fb766.m4a",
+      "audio": "audio/241c8a02930b.m4a",
       "name": "Mateo"
      },
      {
@@ -3050,12 +3050,12 @@
      },
      {
       "de": "Kein Problem. Dann mache ich Pasta mit Tomaten und Käse.",
-      "audio": "audio/ae10437b2b33.m4a",
+      "audio": "audio/fb752ce8f87c.m4a",
       "name": "Mateo"
      },
      {
       "de": "Nein, danke. Ich trinke keinen Alkohol. Ein Wasser, bitte.",
-      "audio": "audio/e38e43f76421.m4a",
+      "audio": "audio/19c9e9841edd.m4a",
       "name": "Dana"
      }
     ],
@@ -3108,7 +3108,7 @@
     "quotes": [
      {
       "de": "Ich möchte einen Döner und eine Cola, bitte.",
-      "audio": "audio/07ad5bb3dab7.m4a",
+      "audio": "audio/ee6314b1c439.m4a",
       "name": "Elif"
      },
      {

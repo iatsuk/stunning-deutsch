@@ -70,62 +70,52 @@
     {
      "who": "D",
      "de": "Im Sommer haben wir viel zusammen erlebt. Zuerst haben wir kleine Fahrten geplant.",
-     "ru": "Летом мы многое пережили вместе. Сначала мы планировали небольшие поездки.",
-     "audio": "audio/3693e51a1a20.m4a"
+     "ru": "Летом мы многое пережили вместе. Сначала мы планировали небольшие поездки."
     },
     {
      "who": "E",
      "de": "Danach haben wir Fotos und kurze Berichte gesammelt. Unser Küstenlogbuch ist fertig.",
-     "ru": "Потом мы собрали фотографии и короткие отчёты. Наш дневник закончен.",
-     "audio": "audio/e3cf6b6b7fd3.m4a"
+     "ru": "Потом мы собрали фотографии и короткие отчёты. Наш дневник закончен."
     },
     {
      "who": "H",
      "de": "Die Berichte sind interessant. Deshalb möchte ich neue Leute zu einem Fotoabend einladen.",
-     "ru": "Рассказы интересные. Поэтому я хочу пригласить новых людей на фотовечер.",
-     "audio": "audio/2976262b5629.m4a"
+     "ru": "Рассказы интересные. Поэтому я хочу пригласить новых людей на фотовечер."
     },
     {
      "who": "M",
      "de": "Ich kann am Sonntag helfen, weil ich dann frei habe. Am Samstag arbeite ich.",
-     "ru": "Я могу помочь в воскресенье, потому что тогда свободен. В субботу я работаю.",
-     "audio": "audio/bf675f900edc.m4a"
+     "ru": "Я могу помочь в воскресенье, потому что тогда свободен. В субботу я работаю."
     },
     {
      "who": "D",
      "de": "Ich kann die Gäste begrüßen und mit ihnen sprechen. Das habe ich im Sommer oft gemacht.",
-     "ru": "Я могу встречать гостей и разговаривать с ними. Летом я часто это делала.",
-     "audio": "audio/ed2e78c32423.m4a"
+     "ru": "Я могу встречать гостей и разговаривать с ними. Летом я часто это делала."
     },
     {
      "who": "E",
      "de": "Ich würde gern die Bilder zeigen. Zuerst möchte ich aber wissen, ob wir den Raum bekommen.",
-     "ru": "Я бы хотела показать фотографии. Но сначала хочу узнать, получим ли мы помещение.",
-     "audio": "audio/c7484c7e9a32.m4a"
+     "ru": "Я бы хотела показать фотографии. Но сначала хочу узнать, получим ли мы помещение."
     },
     {
      "who": "H",
      "de": "Ich habe beim Club nachgefragt. Eine Antwort haben wir noch nicht.",
-     "ru": "Я уточнил в клубе. Ответа пока нет.",
-     "audio": "audio/fd2dc7382caa.m4a"
+     "ru": "Я уточнил в клубе. Ответа пока нет."
     },
     {
      "who": "M",
      "de": "Dann sammeln wir zuerst unsere Ideen. Danach schreiben wir einen gemeinsamen Plan.",
-     "ru": "Тогда сначала соберём наши идеи. Потом напишем общий план.",
-     "audio": "audio/298cb658e625.m4a"
+     "ru": "Тогда сначала соберём наши идеи. Потом напишем общий план."
     },
     {
      "who": "D",
      "de": "Gut. Wir nennen das Treffen FördeTreff. Der Name steht fest, aber den Termin müssen wir noch klären.",
-     "ru": "Хорошо. Назовём встречу FördeTreff. Название решено, но дату нам ещё нужно уточнить.",
-     "audio": "audio/f5c048bdd98e.m4a"
+     "ru": "Хорошо. Назовём встречу FördeTreff. Название решено, но дату нам ещё нужно уточнить."
     },
     {
      "who": "E",
      "de": "Ich finde, dass jeder eine kleine Aufgabe übernehmen kann. Was möchtest du beitragen?",
-     "ru": "Думаю, каждый может взять небольшую задачу. А какой вклад хочешь внести ты?",
-     "audio": "audio/4f3556c87432.m4a"
+     "ru": "Думаю, каждый может взять небольшую задачу. А какой вклад хочешь внести ты?"
     }
    ]
   }
@@ -139,143 +129,123 @@
      "de": "die Erfahrung",
      "ru": "опыт, пережитое событие",
      "gender": "f",
-     "plural": "Erfahrungen",
-     "audio": "audio/e4c9e63a3d3a.m4a"
+     "plural": "Erfahrungen"
     },
     {
      "de": "der Bericht",
      "ru": "рассказ, отчёт",
      "gender": "m",
-     "plural": "Berichte",
-     "audio": "audio/398003c36c6a.m4a"
+     "plural": "Berichte"
     },
     {
      "de": "der Beitrag",
      "ru": "вклад",
      "gender": "m",
-     "plural": "Beiträge",
-     "audio": "audio/0478952cf128.m4a"
+     "plural": "Beiträge"
     },
     {
      "de": "eine Aufgabe übernehmen",
      "ru": "взять на себя задачу",
      "gender": null,
-     "plural": null,
-     "audio": "audio/80384613fdf8.m4a"
+     "plural": null
     },
     {
      "de": "die Rückmeldung",
      "ru": "ответ, обратная связь",
      "gender": "f",
-     "plural": "Rückmeldungen",
-     "audio": "audio/55105235e9c2.m4a"
+     "plural": "Rückmeldungen"
     },
     {
      "de": "der Austausch",
      "ru": "обмен, общение",
      "gender": "m",
      "plural": null,
-     "noPlural": true,
-     "audio": "audio/abb34e2d2a58.m4a"
+     "noPlural": true
     },
     {
      "de": "die Unterstützung",
      "ru": "поддержка",
      "gender": "f",
      "plural": null,
-     "noPlural": true,
-     "audio": "audio/0c219594747a.m4a"
+     "noPlural": true
     },
     {
      "de": "der Ablauf",
      "ru": "порядок, ход события",
      "gender": "m",
-     "plural": "Abläufe",
-     "audio": "audio/3a95e86c26b7.m4a"
+     "plural": "Abläufe"
     },
     {
      "de": "der Schwerpunkt",
      "ru": "главная тема, акцент",
      "gender": "m",
-     "plural": "Schwerpunkte",
-     "audio": "audio/f4ff894e6834.m4a"
+     "plural": "Schwerpunkte"
     },
     {
      "de": "die Möglichkeit",
      "ru": "возможность",
      "gender": "f",
-     "plural": "Möglichkeiten",
-     "audio": "audio/33cfd9b11d94.m4a"
+     "plural": "Möglichkeiten"
     },
     {
      "de": "die Voraussetzung",
      "ru": "предпосылка, необходимое условие",
      "gender": "f",
-     "plural": "Voraussetzungen",
-     "audio": "audio/5f9c46aac5cf.m4a"
+     "plural": "Voraussetzungen"
     },
     {
      "de": "nachfragen",
      "ru": "уточнять, переспрашивать",
      "gender": null,
-     "plural": null,
-     "audio": "audio/18a248e996e1.m4a"
+     "plural": null
     },
     {
      "de": "feststehen",
      "ru": "быть решённым, определённым",
      "gender": null,
-     "plural": null,
-     "audio": "audio/9e1906a5af31.m4a"
+     "plural": null
     },
     {
      "de": "bisher",
      "ru": "до сих пор, прежде",
      "gender": null,
-     "plural": null,
-     "audio": "audio/f54a28e08e7e.m4a"
+     "plural": null
     },
     {
      "de": "inzwischen",
      "ru": "тем временем, к настоящему моменту",
      "gender": null,
-     "plural": null,
-     "audio": "audio/7c4e60a7b2f8.m4a"
+     "plural": null
     },
     {
      "de": "deshalb",
      "ru": "поэтому",
      "gender": null,
-     "plural": null,
-     "audio": "audio/2fa3c87a1805.m4a"
+     "plural": null
     },
     {
      "de": "zuerst",
      "ru": "сначала",
      "gender": null,
-     "plural": null,
-     "audio": "audio/78063bbc9d8b.m4a"
+     "plural": null
     },
     {
      "de": "danach",
      "ru": "после этого",
      "gender": null,
-     "plural": null,
-     "audio": "audio/ad89dc0448d2.m4a"
+     "plural": null
     },
     {
      "de": "gemeinsam planen",
      "ru": "планировать вместе",
      "gender": null,
-     "plural": null,
-     "audio": "audio/6d6a5d4270a6.m4a"
+     "plural": null
     },
     {
      "de": "die Hauptaussage",
      "ru": "главная мысль",
      "gender": "f",
-     "plural": "Hauptaussagen",
-     "audio": "audio/992473478edc.m4a"
+     "plural": "Hauptaussagen"
     }
    ]
   }
@@ -429,24 +399,19 @@
    "situation": "Hören Sie jede Stimme einmal und entscheiden Sie: richtig oder falsch. Im Lernmodus können Sie danach nochmals hören oder den Text öffnen.",
    "recordings": [
     {
-     "text": "Inzwischen kann ich im Alltag vieles selbst erledigen. Bei langen Briefen brauche ich manchmal noch Hilfe. Deshalb lese ich schwierige Texte gern mit anderen. Beim Treffen kann ich neue Gäste begrüßen. Einen Vortrag über medizinische Themen möchte ich dort nicht halten.",
-     "audio": "audio/757b66acfc6f.m4a"
+     "text": "Inzwischen kann ich im Alltag vieles selbst erledigen. Bei langen Briefen brauche ich manchmal noch Hilfe. Deshalb lese ich schwierige Texte gern mit anderen. Beim Treffen kann ich neue Gäste begrüßen. Einen Vortrag über medizinische Themen möchte ich dort nicht halten."
     },
     {
-     "text": "Ich arbeite weiterhin im Restaurant in Holtenau. Samstagabend habe ich normalerweise keine Zeit. Am Sonntag bin ich frei. Deshalb kann ich an diesem Tag beim Treffen helfen. Ich könnte etwas zu essen vorbereiten, aber zuerst möchte ich wissen, wie viele Gäste kommen.",
-     "audio": "audio/d02f4ac620aa.m4a"
+     "text": "Ich arbeite weiterhin im Restaurant in Holtenau. Samstagabend habe ich normalerweise keine Zeit. Am Sonntag bin ich frei. Deshalb kann ich an diesem Tag beim Treffen helfen. Ich könnte etwas zu essen vorbereiten, aber zuerst möchte ich wissen, wie viele Gäste kommen."
     },
     {
-     "text": "Im Sommer haben wir viele Fotos gesammelt. Zuerst möchte ich mit der Gruppe eine kleine Auswahl machen. Danach können wir die Bilder beim Treffen zeigen. Die Reihenfolge steht noch nicht fest. Ich möchte deshalb noch kein fertiges Programm verschicken.",
-     "audio": "audio/9cf016ce9490.m4a"
+     "text": "Im Sommer haben wir viele Fotos gesammelt. Zuerst möchte ich mit der Gruppe eine kleine Auswahl machen. Danach können wir die Bilder beim Treffen zeigen. Die Reihenfolge steht noch nicht fest. Ich möchte deshalb noch kein fertiges Programm verschicken."
     },
     {
-     "text": "Ich wohne in Hamburg und komme nicht jeden Tag nach Kiel. Für ein gemeinsames Treffen fahre ich aber gern dorthin. Ich habe beim Club nach einem Raum gefragt. Bisher habe ich keine Antwort bekommen. Deshalb kann ich den Ort noch nicht bestätigen.",
-     "audio": "audio/b177b2bea5d3.m4a"
+     "text": "Ich wohne in Hamburg und komme nicht jeden Tag nach Kiel. Für ein gemeinsames Treffen fahre ich aber gern dorthin. Ich habe beim Club nach einem Raum gefragt. Bisher habe ich keine Antwort bekommen. Deshalb kann ich den Ort noch nicht bestätigen."
     },
     {
-     "text": "Beim Sprachenlernen möchte ich vor allem Gespräche führen. Eine Wortliste kann mir manchmal helfen, aber allein damit lerne ich nicht gern. Ich brauche eine Aufgabe und eine Antwort von einem anderen Menschen. Deshalb finde ich einen gemeinsamen Abend interessanter als einen Wettbewerb mit Vokabeln.",
-     "audio": "audio/2293634302b8.m4a"
+     "text": "Beim Sprachenlernen möchte ich vor allem Gespräche führen. Eine Wortliste kann mir manchmal helfen, aber allein damit lerne ich nicht gern. Ich brauche eine Aufgabe und eine Antwort von einem anderen Menschen. Deshalb finde ich einen gemeinsamen Abend interessanter als einen Wettbewerb mit Vokabeln."
     }
    ],
    "questions": [
@@ -522,20 +487,16 @@
    ],
    "sample": [
     {
-     "de": "Ich wohne in Kiel und lerne Deutsch, weil ich mich im Alltag sicherer fühlen möchte.",
-     "audio": "audio/2f6c3a538440.m4a"
+     "de": "Ich wohne in Kiel und lerne Deutsch, weil ich mich im Alltag sicherer fühlen möchte."
     },
     {
-     "de": "Im Sommer habe ich mit Freunden eine Fahrt geplant. Zuerst haben wir die Zeiten verglichen. Danach haben wir zusammen entschieden.",
-     "audio": "audio/4e5fef310199.m4a"
+     "de": "Im Sommer habe ich mit Freunden eine Fahrt geplant. Zuerst haben wir die Zeiten verglichen. Danach haben wir zusammen entschieden."
     },
     {
-     "de": "Und was machst du gern in einer Gruppe?",
-     "audio": "audio/f9440e3e3d05.m4a"
+     "de": "Und was machst du gern in einer Gruppe?"
     },
     {
-     "de": "Du hast von einer Fahrt erzählt. Wohin seid ihr gefahren?",
-     "audio": "audio/f63d7e1c4999.m4a"
+     "de": "Du hast von einer Fahrt erzählt. Wohin seid ihr gefahren?"
     }
    ]
   }
@@ -764,8 +725,7 @@
       ],
       "punct": ".",
       "plain": "Deshalb kann Mateo am Sonntag helfen.",
-      "ru": "Поэтому Матео может помочь в воскресенье.",
-      "audio": "audio/579058f68a4b.m4a"
+      "ru": "Поэтому Матео может помочь в воскресенье."
      }
     ]
    }
@@ -821,8 +781,7 @@
       ],
       "punct": ".",
       "plain": "Danach haben wir die Fotos gesammelt.",
-      "ru": "После этого мы собрали фотографии.",
-      "audio": "audio/d950d8a10b10.m4a"
+      "ru": "После этого мы собрали фотографии."
      }
     ]
    }
@@ -879,8 +838,7 @@
       ],
       "punct": ".",
       "plain": "Danach haben wir die Fotos gesammelt.",
-      "ru": "После этого мы собрали фотографии.",
-      "audio": "audio/d950d8a10b10.m4a"
+      "ru": "После этого мы собрали фотографии."
      }
     ]
    }
@@ -937,8 +895,7 @@
       ],
       "punct": ".",
       "plain": "Danach haben wir die Fotos gesammelt.",
-      "ru": "После этого мы собрали фотографии.",
-      "audio": "audio/d950d8a10b10.m4a"
+      "ru": "После этого мы собрали фотографии."
      }
     ]
    }
@@ -995,8 +952,7 @@
       ],
       "punct": ".",
       "plain": "Danach haben wir die Fotos gesammelt.",
-      "ru": "После этого мы собрали фотографии.",
-      "audio": "audio/d950d8a10b10.m4a"
+      "ru": "После этого мы собрали фотографии."
      }
     ]
    }
@@ -1052,8 +1008,7 @@
       ],
       "punct": ".",
       "plain": "Danach haben wir die Fotos gesammelt.",
-      "ru": "После этого мы собрали фотографии.",
-      "audio": "audio/d950d8a10b10.m4a"
+      "ru": "После этого мы собрали фотографии."
      }
     ],
     "task": "status"
@@ -1111,8 +1066,7 @@
       ],
       "punct": ".",
       "plain": "Danach haben wir die Fotos gesammelt.",
-      "ru": "После этого мы собрали фотографии.",
-      "audio": "audio/d950d8a10b10.m4a"
+      "ru": "После этого мы собрали фотографии."
      }
     ],
     "task": "status"
@@ -1160,8 +1114,7 @@
       ],
       "punct": ".",
       "plain": "Danach haben wir die Fotos gesammelt.",
-      "ru": "После этого мы собрали фотографии.",
-      "audio": "audio/d950d8a10b10.m4a"
+      "ru": "После этого мы собрали фотографии."
      }
     ],
     "task": "status",
@@ -1219,8 +1172,7 @@
       ],
       "punct": ".",
       "plain": "Danach haben wir die Fotos gesammelt.",
-      "ru": "После этого мы собрали фотографии.",
-      "audio": "audio/d950d8a10b10.m4a"
+      "ru": "После этого мы собрали фотографии."
      }
     ],
     "task": "headlines"
@@ -1278,8 +1230,7 @@
       ],
       "punct": ".",
       "plain": "Danach haben wir die Fotos gesammelt.",
-      "ru": "После этого мы собрали фотографии.",
-      "audio": "audio/d950d8a10b10.m4a"
+      "ru": "После этого мы собрали фотографии."
      }
     ],
     "task": "headlines"
@@ -1327,8 +1278,7 @@
       ],
       "punct": ".",
       "plain": "Danach haben wir die Fotos gesammelt.",
-      "ru": "После этого мы собрали фотографии.",
-      "audio": "audio/d950d8a10b10.m4a"
+      "ru": "После этого мы собрали фотографии."
      }
     ],
     "task": "headlines",
@@ -1386,8 +1336,7 @@
       ],
       "punct": ".",
       "plain": "Danach haben wir die Fotos gesammelt.",
-      "ru": "После этого мы собрали фотографии.",
-      "audio": "audio/d950d8a10b10.m4a"
+      "ru": "После этого мы собрали фотографии."
      }
     ],
     "task": "voices"
@@ -1445,8 +1394,7 @@
       ],
       "punct": ".",
       "plain": "Danach haben wir die Fotos gesammelt.",
-      "ru": "После этого мы собрали фотографии.",
-      "audio": "audio/d950d8a10b10.m4a"
+      "ru": "После этого мы собрали фотографии."
      }
     ],
     "task": "voices"
@@ -1494,8 +1442,7 @@
       ],
       "punct": ".",
       "plain": "Danach haben wir die Fotos gesammelt.",
-      "ru": "После этого мы собрали фотографии.",
-      "audio": "audio/d950d8a10b10.m4a"
+      "ru": "После этого мы собрали фотографии."
      }
     ],
     "task": "voices",
@@ -1553,8 +1500,7 @@
       ],
       "punct": ".",
       "plain": "Danach haben wir die Fotos gesammelt.",
-      "ru": "После этого мы собрали фотографии.",
-      "audio": "audio/d950d8a10b10.m4a"
+      "ru": "После этого мы собрали фотографии."
      }
     ],
     "task": "self",
@@ -1613,8 +1559,7 @@
       ],
       "punct": ".",
       "plain": "Danach haben wir die Fotos gesammelt.",
-      "ru": "После этого мы собрали фотографии.",
-      "audio": "audio/d950d8a10b10.m4a"
+      "ru": "После этого мы собрали фотографии."
      }
     ],
     "task": "self",
@@ -1663,8 +1608,7 @@
       ],
       "punct": ".",
       "plain": "Danach haben wir die Fotos gesammelt.",
-      "ru": "После этого мы собрали фотографии.",
-      "audio": "audio/d950d8a10b10.m4a"
+      "ru": "После этого мы собрали фотографии."
      }
     ],
     "task": "self",
@@ -1684,8 +1628,7 @@
     "Dass"
    ],
    "answer": 0,
-   "why": "Deshalb соединяет причину с последствием.",
-   "audio": "audio/0742e93e610c.m4a"
+   "why": "Deshalb соединяет причину с последствием."
   },
   {
    "id": "b1-neustart-2",
@@ -1697,8 +1640,7 @@
     "können"
    ],
    "answer": 0,
-   "why": "После начального deshalb сразу личный глагол.",
-   "audio": "audio/579058f68a4b.m4a"
+   "why": "После начального deshalb сразу личный глагол."
   },
   {
    "id": "b1-neustart-3",
@@ -1710,8 +1652,7 @@
     "sind"
    ],
    "answer": 0,
-   "why": "Сохраняем вторую позицию haben.",
-   "audio": "audio/d950d8a10b10.m4a"
+   "why": "Сохраняем вторую позицию haben."
   },
   {
    "id": "b1-neustart-4",
@@ -1723,8 +1664,7 @@
     "hast"
    ],
    "answer": 0,
-   "why": "Личная форма придаточного стоит в конце.",
-   "audio": "audio/b92641eaa5b8.m4a"
+   "why": "Личная форма придаточного стоит в конце."
   },
   {
    "id": "b1-neustart-5",
@@ -1736,8 +1676,7 @@
     "könnt"
    ],
    "answer": 0,
-   "why": "Jeder — единственное число.",
-   "audio": "audio/b1f19310e255.m4a"
+   "why": "Jeder — единственное число."
   },
   {
    "id": "b1-neustart-6",
@@ -1759,8 +1698,7 @@
     "Wir haben zuerst die Fahrten geplant.",
     "Die Fahrten haben wir zuerst geplant."
    ],
-   "de": "Zuerst haben wir die Fahrten geplant.",
-   "audio": "audio/84a5fbe38dc5.m4a"
+   "de": "Zuerst haben wir die Fahrten geplant."
   },
   {
    "id": "b1-neustart-8",
@@ -1770,8 +1708,7 @@
     "Wir haben danach die Fotos gesammelt.",
     "Die Fotos haben wir danach gesammelt."
    ],
-   "de": "Danach haben wir die Fotos gesammelt.",
-   "audio": "audio/d950d8a10b10.m4a"
+   "de": "Danach haben wir die Fotos gesammelt."
   },
   {
    "id": "b1-neustart-9",
@@ -1781,8 +1718,7 @@
     "Mateo kann deshalb am Sonntag helfen.",
     "Am Sonntag kann Mateo deshalb helfen."
    ],
-   "de": "Deshalb kann Mateo am Sonntag helfen.",
-   "audio": "audio/579058f68a4b.m4a"
+   "de": "Deshalb kann Mateo am Sonntag helfen."
   },
   {
    "id": "b1-neustart-10",
@@ -1791,8 +1727,7 @@
    "also": [
     "Weil ich am Sonntag frei habe, kann ich helfen."
    ],
-   "de": "Ich kann helfen, weil ich am Sonntag frei habe.",
-   "audio": "audio/3bf39b2b50aa.m4a"
+   "de": "Ich kann helfen, weil ich am Sonntag frei habe."
   },
   {
    "id": "b1-neustart-11",
@@ -1801,8 +1736,7 @@
    "also": [
     "Dass jeder eine Aufgabe übernehmen kann, finde ich."
    ],
-   "de": "Ich finde, dass jeder eine Aufgabe übernehmen kann.",
-   "audio": "audio/ad54e562cb2a.m4a"
+   "de": "Ich finde, dass jeder eine Aufgabe übernehmen kann."
   },
   {
    "id": "b1-neustart-12",
@@ -1812,8 +1746,7 @@
     "Bestätigt ist der Raum noch nicht.",
     "Noch nicht bestätigt ist der Raum."
    ],
-   "de": "Der Raum ist noch nicht bestätigt.",
-   "audio": "audio/5cb300b18f1a.m4a"
+   "de": "Der Raum ist noch nicht bestätigt."
   },
   {
    "id": "b1-neustart-13",

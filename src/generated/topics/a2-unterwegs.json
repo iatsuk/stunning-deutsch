@@ -68,50 +68,42 @@
     {
      "who": "D",
      "de": "Wo treffen wir uns in Plön?",
-     "ru": "Где мы встречаемся в Плёне?",
-     "audio": "audio/c5f35e7f409b.m4a"
+     "ru": "Где мы встречаемся в Плёне?"
     },
     {
      "who": "H",
      "de": "Auf unserem Lernplan liegt der Treffpunkt neben dem Museum.",
-     "ru": "На нашей учебной схеме встреча рядом с музеем.",
-     "audio": "audio/1f2ac6621587.m4a"
+     "ru": "На нашей учебной схеме встреча рядом с музеем."
     },
     {
      "who": "M",
      "de": "Ich stelle die Tasche auf den Tisch.",
-     "ru": "Я ставлю сумку на стол.",
-     "audio": "audio/e88806148e45.m4a"
+     "ru": "Я ставлю сумку на стол."
     },
     {
      "who": "E",
      "de": "Die Kamera liegt schon auf dem Tisch.",
-     "ru": "Камера уже лежит на столе.",
-     "audio": "audio/fc55c4432d0b.m4a"
+     "ru": "Камера уже лежит на столе."
     },
     {
      "who": "D",
      "de": "Wohin legen wir die Tickets?",
-     "ru": "Куда положим билеты?",
-     "audio": "audio/7cccfacf5405.m4a"
+     "ru": "Куда положим билеты?"
     },
     {
      "who": "H",
      "de": "Legt sie bitte in die Tasche. Der Schlüssel bleibt in der Jacke.",
-     "ru": "Положите их в сумку. Ключ остаётся в куртке.",
-     "audio": "audio/d9302ddf339e.m4a"
+     "ru": "Положите их в сумку. Ключ остаётся в куртке."
     },
     {
      "who": "M",
      "de": "Gut. Jetzt sind die Tickets in der Tasche.",
-     "ru": "Хорошо. Теперь билеты в сумке.",
-     "audio": "audio/f35a472bdb19.m4a"
+     "ru": "Хорошо. Теперь билеты в сумке."
     },
     {
      "who": "E",
      "de": "Dann gehen wir an den See. Am See machen wir eine Pause.",
-     "ru": "Тогда идём к озеру. У озера сделаем перерыв.",
-     "audio": "audio/62ac304421e8.m4a"
+     "ru": "Тогда идём к озеру. У озера сделаем перерыв."
     }
    ]
   }
@@ -125,85 +117,73 @@
      "de": "stellen",
      "ru": "ставить",
      "gender": null,
-     "plural": null,
-     "audio": "audio/2bc5445c1fde.m4a"
+     "plural": null
     },
     {
      "de": "legen",
      "ru": "класть",
      "gender": null,
-     "plural": null,
-     "audio": "audio/24626b69ddd3.m4a"
+     "plural": null
     },
     {
      "de": "stehen",
      "ru": "стоять",
      "gender": null,
-     "plural": null,
-     "audio": "audio/7c8a8731922b.m4a"
+     "plural": null
     },
     {
      "de": "liegen",
      "ru": "лежать",
      "gender": null,
-     "plural": null,
-     "audio": "audio/090e2a3c1a83.m4a"
+     "plural": null
     },
     {
      "de": "neben",
      "ru": "рядом с",
      "gender": null,
-     "plural": null,
-     "audio": "audio/ba6fe1508a96.m4a"
+     "plural": null
     },
     {
      "de": "zwischen",
      "ru": "между",
      "gender": null,
-     "plural": null,
-     "audio": "audio/4a709c038cac.m4a"
+     "plural": null
     },
     {
      "de": "unter",
      "ru": "под",
      "gender": null,
-     "plural": null,
-     "audio": "audio/c8d6cd156302.m4a"
+     "plural": null
     },
     {
      "de": "über",
      "ru": "над",
      "gender": null,
-     "plural": null,
-     "audio": "audio/ebcf22e97bbd.m4a"
+     "plural": null
     },
     {
      "de": "vor",
      "ru": "перед",
      "gender": null,
-     "plural": null,
-     "audio": "audio/0e84ac67219f.m4a"
+     "plural": null
     },
     {
      "de": "hinter",
      "ru": "за",
      "gender": null,
-     "plural": null,
-     "audio": "audio/16a9ca31d564.m4a"
+     "plural": null
     },
     {
      "de": "der Treffpunkt",
      "ru": "место встречи",
      "gender": "m",
-     "plural": "Treffpunkte",
-     "audio": "audio/c034855451dc.m4a"
+     "plural": "Treffpunkte"
     },
     {
      "de": "der See",
      "ru": "озеро",
      "gender": "m",
-     "plural": "Seen",
-     "audio": "audio/9d7157e27f3e.m4a"
+     "plural": "Seen"
     }
    ]
   }
@@ -321,20 +301,16 @@
    "word": "Wo? Wohin?",
    "sample": [
     {
-     "de": "Wo ist der Treffpunkt?",
-     "audio": "audio/1bf595996b3c.m4a"
+     "de": "Wo ist der Treffpunkt?"
     },
     {
-     "de": "Er ist neben dem Museum.",
-     "audio": "audio/bcc7c25d5cbf.m4a"
+     "de": "Er ist neben dem Museum."
     },
     {
-     "de": "Wohin kommt die Tasche?",
-     "audio": "audio/f144d9f0464e.m4a"
+     "de": "Wohin kommt die Tasche?"
     },
     {
-     "de": "Stell sie bitte unter den Tisch.",
-     "audio": "audio/3bd2f819bd16.m4a"
+     "de": "Stell sie bitte unter den Tisch."
     }
    ]
   }
@@ -556,8 +532,7 @@
       ],
       "punct": ".",
       "plain": "Jetzt sind die Tickets in der Tasche.",
-      "ru": "Теперь билеты в сумке.",
-      "audio": "audio/4f3c44d662b0.m4a"
+      "ru": "Теперь билеты в сумке."
      }
     ]
    }
@@ -617,8 +592,7 @@
       ],
       "punct": ".",
       "plain": "Jetzt sind die Tickets in der Tasche.",
-      "ru": "Теперь билеты в сумке.",
-      "audio": "audio/4f3c44d662b0.m4a"
+      "ru": "Теперь билеты в сумке."
      }
     ]
    }
@@ -678,8 +652,7 @@
       ],
       "punct": ".",
       "plain": "Jetzt sind die Tickets in der Tasche.",
-      "ru": "Теперь билеты в сумке.",
-      "audio": "audio/4f3c44d662b0.m4a"
+      "ru": "Теперь билеты в сумке."
      }
     ]
    }
@@ -738,8 +711,7 @@
       ],
       "punct": ".",
       "plain": "Jetzt sind die Tickets in der Tasche.",
-      "ru": "Теперь билеты в сумке.",
-      "audio": "audio/4f3c44d662b0.m4a"
+      "ru": "Теперь билеты в сумке."
      }
     ],
     "task": "directory"
@@ -800,8 +772,7 @@
       ],
       "punct": ".",
       "plain": "Jetzt sind die Tickets in der Tasche.",
-      "ru": "Теперь билеты в сумке.",
-      "audio": "audio/4f3c44d662b0.m4a"
+      "ru": "Теперь билеты в сумке."
      }
     ],
     "task": "directory"
@@ -852,8 +823,7 @@
       ],
       "punct": ".",
       "plain": "Jetzt sind die Tickets in der Tasche.",
-      "ru": "Теперь билеты в сумке.",
-      "audio": "audio/4f3c44d662b0.m4a"
+      "ru": "Теперь билеты в сумке."
      }
     ],
     "task": "directory",
@@ -914,8 +884,7 @@
       ],
       "punct": ".",
       "plain": "Jetzt sind die Tickets in der Tasche.",
-      "ru": "Теперь билеты в сумке.",
-      "audio": "audio/4f3c44d662b0.m4a"
+      "ru": "Теперь билеты в сумке."
      }
     ],
     "task": "map"
@@ -976,8 +945,7 @@
       ],
       "punct": ".",
       "plain": "Jetzt sind die Tickets in der Tasche.",
-      "ru": "Теперь билеты в сумке.",
-      "audio": "audio/4f3c44d662b0.m4a"
+      "ru": "Теперь билеты в сумке."
      }
     ],
     "task": "map"
@@ -1028,8 +996,7 @@
       ],
       "punct": ".",
       "plain": "Jetzt sind die Tickets in der Tasche.",
-      "ru": "Теперь билеты в сумке.",
-      "audio": "audio/4f3c44d662b0.m4a"
+      "ru": "Теперь билеты в сумке."
      }
     ],
     "task": "map",
@@ -1090,8 +1057,7 @@
       ],
       "punct": ".",
       "plain": "Jetzt sind die Tickets in der Tasche.",
-      "ru": "Теперь билеты в сумке.",
-      "audio": "audio/4f3c44d662b0.m4a"
+      "ru": "Теперь билеты в сумке."
      }
     ],
     "task": "talk",
@@ -1153,8 +1119,7 @@
       ],
       "punct": ".",
       "plain": "Jetzt sind die Tickets in der Tasche.",
-      "ru": "Теперь билеты в сумке.",
-      "audio": "audio/4f3c44d662b0.m4a"
+      "ru": "Теперь билеты в сумке."
      }
     ],
     "task": "talk",
@@ -1206,8 +1171,7 @@
       ],
       "punct": ".",
       "plain": "Jetzt sind die Tickets in der Tasche.",
-      "ru": "Теперь билеты в сумке.",
-      "audio": "audio/4f3c44d662b0.m4a"
+      "ru": "Теперь билеты в сумке."
      }
     ],
     "task": "talk",
@@ -1227,8 +1191,7 @@
     "der"
    ],
    "answer": 0,
-   "why": "Где? Dativ.",
-   "audio": "audio/04e92e08b9f7.m4a"
+   "why": "Где? Dativ."
   },
   {
    "id": "a2-unterwegs-2",
@@ -1240,8 +1203,7 @@
     "des"
    ],
    "answer": 0,
-   "why": "Куда? Akkusativ.",
-   "audio": "audio/7ae11eb449d0.m4a"
+   "why": "Куда? Akkusativ."
   },
   {
    "id": "a2-unterwegs-3",
@@ -1253,8 +1215,7 @@
     "den"
    ],
    "answer": 0,
-   "why": "Место, женский род.",
-   "audio": "audio/292f0cd6f851.m4a"
+   "why": "Место, женский род."
   },
   {
    "id": "a2-unterwegs-4",
@@ -1266,8 +1227,7 @@
     "dem"
    ],
    "answer": 0,
-   "why": "Направление, женский род.",
-   "audio": "audio/d93f3abf93f1.m4a"
+   "why": "Направление, женский род."
   },
   {
    "id": "a2-unterwegs-5",
@@ -1279,8 +1239,7 @@
     "im"
    ],
    "answer": 0,
-   "why": "К озеру.",
-   "audio": "audio/cc642f380635.m4a"
+   "why": "К озеру."
   },
   {
    "id": "a2-unterwegs-6",
@@ -1292,8 +1251,7 @@
     "In die"
    ],
    "answer": 0,
-   "why": "Место у озера.",
-   "audio": "audio/c479ee69fd66.m4a"
+   "why": "Место у озера."
   },
   {
    "id": "a2-unterwegs-7",
@@ -1302,8 +1260,7 @@
    "also": [
     "Auf dem Tisch liegt die Kamera."
    ],
-   "de": "Die Kamera liegt auf dem Tisch.",
-   "audio": "audio/04e92e08b9f7.m4a"
+   "de": "Die Kamera liegt auf dem Tisch."
   },
   {
    "id": "a2-unterwegs-8",
@@ -1313,8 +1270,7 @@
     "Die Tasche stelle ich unter den Tisch.",
     "Unter den Tisch stelle ich die Tasche."
    ],
-   "de": "Ich stelle die Tasche unter den Tisch.",
-   "audio": "audio/cec0d5345647.m4a"
+   "de": "Ich stelle die Tasche unter den Tisch."
   },
   {
    "id": "a2-unterwegs-9",
@@ -1323,8 +1279,7 @@
    "also": [
     "In der Tasche sind die Tickets."
    ],
-   "de": "Die Tickets sind in der Tasche.",
-   "audio": "audio/292f0cd6f851.m4a"
+   "de": "Die Tickets sind in der Tasche."
   },
   {
    "id": "a2-unterwegs-10",
@@ -1333,8 +1288,7 @@
    "also": [
     "An den See gehen wir."
    ],
-   "de": "Wir gehen an den See.",
-   "audio": "audio/cc642f380635.m4a"
+   "de": "Wir gehen an den See."
   },
   {
    "id": "a2-unterwegs-11",
@@ -1344,8 +1298,7 @@
     "Wir machen am See eine Pause.",
     "Eine Pause machen wir am See."
    ],
-   "de": "Am See machen wir eine Pause.",
-   "audio": "audio/c479ee69fd66.m4a"
+   "de": "Am See machen wir eine Pause."
   },
   {
    "id": "a2-unterwegs-12",
@@ -1354,8 +1307,7 @@
    "also": [
     "Neben dem Museum ist der Treffpunkt."
    ],
-   "de": "Der Treffpunkt ist neben dem Museum.",
-   "audio": "audio/cc6e209b94a9.m4a"
+   "de": "Der Treffpunkt ist neben dem Museum."
   }
  ],
  "case": {

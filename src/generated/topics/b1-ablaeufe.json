@@ -69,50 +69,42 @@
     {
      "who": "H",
      "de": "Bevor wir zum See gehen, prüfen wir die Rückfahrt.",
-     "ru": "Прежде чем пойдём к озеру, проверим обратную дорогу.",
-     "audio": "audio/cf00c8c70580.m4a"
+     "ru": "Прежде чем пойдём к озеру, проверим обратную дорогу."
     },
     {
      "who": "E",
      "de": "Unser Bus fährt um dreizehn Uhr zwanzig.",
-     "ru": "Наш автобус отправляется в тринадцать двадцать.",
-     "audio": "audio/ed758ea83852.m4a"
+     "ru": "Наш автобус отправляется в тринадцать двадцать."
     },
     {
      "who": "D",
      "de": "Während du den Weg prüfst, hole ich Wasser.",
-     "ru": "Пока ты проверяешь путь, я возьму воду.",
-     "audio": "audio/468d609120b5.m4a"
+     "ru": "Пока ты проверяешь путь, я возьму воду."
     },
     {
      "who": "M",
      "de": "Ich packe das Brot ein, bevor wir losgehen.",
-     "ru": "Я упакую хлеб, прежде чем мы выйдем.",
-     "audio": "audio/79392aeb4cff.m4a"
+     "ru": "Я упакую хлеб, прежде чем мы выйдем."
     },
     {
      "who": "H",
      "de": "Am Steg machen wir nur eine kurze Pause.",
-     "ru": "На причале сделаем только короткую остановку.",
-     "audio": "audio/95677ad3faaf.m4a"
+     "ru": "На причале сделаем только короткую остановку."
     },
     {
      "who": "E",
      "de": "Während ihr esst, schreibe ich die Bildunterschriften.",
-     "ru": "Пока вы едите, я напишу подписи к фотографиям.",
-     "audio": "audio/0e7bbb5f9a24.m4a"
+     "ru": "Пока вы едите, я напишу подписи к фотографиям."
     },
     {
      "who": "D",
      "de": "Dann wechseln wir. Du brauchst auch eine Pause.",
-     "ru": "Потом поменяемся. Тебе тоже нужен перерыв.",
-     "audio": "audio/2e935a6493e3.m4a"
+     "ru": "Потом поменяемся. Тебе тоже нужен перерыв."
     },
     {
      "who": "M",
      "de": "Gut. Um dreizehn Uhr sind wir wieder an der Haltestelle.",
-     "ru": "Хорошо. В тринадцать мы снова у остановки.",
-     "audio": "audio/6c20b8981ef7.m4a"
+     "ru": "Хорошо. В тринадцать мы снова у остановки."
     }
    ]
   }
@@ -126,106 +118,91 @@
      "de": "der Ablauf",
      "ru": "порядок действий",
      "gender": "m",
-     "plural": "Abläufe",
-     "audio": "audio/3a95e86c26b7.m4a"
+     "plural": "Abläufe"
     },
     {
      "de": "die Rückfahrt",
      "ru": "обратная дорога",
      "gender": "f",
-     "plural": "Rückfahrten",
-     "audio": "audio/7a1c4ea9325c.m4a"
+     "plural": "Rückfahrten"
     },
     {
      "de": "der Steg",
      "ru": "причал, мостки",
      "gender": "m",
-     "plural": "Stege",
-     "audio": "audio/b9a3c3466bca.m4a"
+     "plural": "Stege"
     },
     {
      "de": "das Ufer",
      "ru": "берег",
      "gender": "n",
-     "plural": "Ufer",
-     "audio": "audio/66a7bb646518.m4a"
+     "plural": "Ufer"
     },
     {
      "de": "die Bildunterschrift",
      "ru": "подпись к фото",
      "gender": "f",
-     "plural": "Bildunterschriften",
-     "audio": "audio/9d28fe2bf82a.m4a"
+     "plural": "Bildunterschriften"
     },
     {
      "de": "der Treffpunkt",
      "ru": "место встречи",
      "gender": "m",
-     "plural": "Treffpunkte",
-     "audio": "audio/c034855451dc.m4a"
+     "plural": "Treffpunkte"
     },
     {
      "de": "der Hinweis",
      "ru": "указание, сообщение",
      "gender": "m",
-     "plural": "Hinweise",
-     "audio": "audio/fbc252e8f199.m4a"
+     "plural": "Hinweise"
     },
     {
      "de": "die Durchsage",
      "ru": "объявление по громкой связи",
      "gender": "f",
-     "plural": "Durchsagen",
-     "audio": "audio/368b428df6fd.m4a"
+     "plural": "Durchsagen"
     },
     {
      "de": "losgehen",
      "ru": "отправляться пешком",
      "gender": null,
-     "plural": null,
-     "audio": "audio/e547f881aa06.m4a"
+     "plural": null
     },
     {
      "de": "einpacken",
      "ru": "упаковывать",
      "gender": null,
-     "plural": null,
-     "audio": "audio/3e5c30d06027.m4a"
+     "plural": null
     },
     {
      "de": "gleichzeitig",
      "ru": "одновременно",
      "gender": null,
-     "plural": null,
-     "audio": "audio/1071ac0aaf1a.m4a"
+     "plural": null
     },
     {
      "de": "rechtzeitig",
      "ru": "заблаговременно, вовремя",
      "gender": null,
-     "plural": null,
-     "audio": "audio/4a0391a863be.m4a"
+     "plural": null
     },
     {
      "de": "wechseln",
      "ru": "меняться",
      "gender": null,
-     "plural": null,
-     "audio": "audio/a2a191bfeae4.m4a"
+     "plural": null
     },
     {
      "de": "während",
      "ru": "пока, в то время как",
      "gender": null,
-     "plural": null,
-     "audio": "audio/479618953c1b.m4a"
+     "plural": null
     },
     {
      "de": "bevor",
      "ru": "прежде чем",
      "gender": null,
-     "plural": null,
-     "audio": "audio/6cc95809f0f2.m4a"
+     "plural": null
     }
    ]
   }
@@ -272,24 +249,19 @@
    "title": "Fünf Ansagen zum Tagesablauf",
    "recordings": [
     {
-     "text": "Guten Tag. Bevor Sie den Ausstellungsraum betreten, geben Sie bitte große Rucksäcke an der Garderobe ab. Kleine Taschen können Sie mitnehmen. Die Garderobe ist heute kostenlos.",
-     "audio": "audio/6f900770ea2a.m4a"
+     "text": "Guten Tag. Bevor Sie den Ausstellungsraum betreten, geben Sie bitte große Rucksäcke an der Garderobe ab. Kleine Taschen können Sie mitnehmen. Die Garderobe ist heute kostenlos."
     },
     {
-     "text": "Während wir die Tische im Innenraum reinigen, können Sie auf der überdachten Terrasse sitzen. Die Küche bleibt geöffnet. Getränke bestellen Sie bitte wie gewohnt an der Theke.",
-     "audio": "audio/98cea080c9a1.m4a"
+     "text": "Während wir die Tische im Innenraum reinigen, können Sie auf der überdachten Terrasse sitzen. Die Küche bleibt geöffnet. Getränke bestellen Sie bitte wie gewohnt an der Theke."
     },
     {
-     "text": "Der Bus nach Kiel fährt heute um dreizehn Uhr zwanzig. Die Abfahrt bleibt unverändert. Bitte beachten Sie nur den neuen Haltepunkt gegenüber dem Kiosk.",
-     "audio": "audio/14c2ae8bb365.m4a"
+     "text": "Der Bus nach Kiel fährt heute um dreizehn Uhr zwanzig. Die Abfahrt bleibt unverändert. Bitte beachten Sie nur den neuen Haltepunkt gegenüber dem Kiosk."
     },
     {
-     "text": "Der kleine Steg ist während der Arbeiten gesperrt. Der Uferweg bleibt offen. Sie können am Wasser spazieren gehen, aber bitte betreten Sie den Steg heute nicht.",
-     "audio": "audio/ab222ce68ff4.m4a"
+     "text": "Der kleine Steg ist während der Arbeiten gesperrt. Der Uferweg bleibt offen. Sie können am Wasser spazieren gehen, aber bitte betreten Sie den Steg heute nicht."
     },
     {
-     "text": "Bevor unsere Fotoausstellung um zwölf Uhr öffnet, findet im Vorraum eine kurze Einführung statt. Sie beginnt um Viertel vor zwölf. Dafür ist keine Anmeldung nötig.",
-     "audio": "audio/09b6b18f6160.m4a"
+     "text": "Bevor unsere Fotoausstellung um zwölf Uhr öffnet, findet im Vorraum eine kurze Einführung statt. Sie beginnt um Viertel vor zwölf. Dafür ist keine Anmeldung nötig."
     }
    ],
    "questions": [
@@ -687,8 +659,7 @@
       ],
       "punct": ".",
       "plain": "Während Hauke den Weg prüft, holt Dana Wasser.",
-      "ru": "Пока Хауке проверяет путь, Дана берёт воду.",
-      "audio": "audio/32fc0cf122fa.m4a"
+      "ru": "Пока Хауке проверяет путь, Дана берёт воду."
      }
     ]
    }
@@ -753,8 +724,7 @@
       ],
       "punct": ".",
       "plain": "Während Hauke den Weg prüft, holt Dana Wasser.",
-      "ru": "Пока Хауке проверяет путь, Дана берёт воду.",
-      "audio": "audio/32fc0cf122fa.m4a"
+      "ru": "Пока Хауке проверяет путь, Дана берёт воду."
      }
     ]
    }
@@ -819,8 +789,7 @@
       ],
       "punct": ".",
       "plain": "Während Hauke den Weg prüft, holt Dana Wasser.",
-      "ru": "Пока Хауке проверяет путь, Дана берёт воду.",
-      "audio": "audio/32fc0cf122fa.m4a"
+      "ru": "Пока Хауке проверяет путь, Дана берёт воду."
      }
     ]
    }
@@ -884,8 +853,7 @@
       ],
       "punct": ".",
       "plain": "Während Hauke den Weg prüft, holt Dana Wasser.",
-      "ru": "Пока Хауке проверяет путь, Дана берёт воду.",
-      "audio": "audio/32fc0cf122fa.m4a"
+      "ru": "Пока Хауке проверяет путь, Дана берёт воду."
      }
     ],
     "task": "plan"
@@ -951,8 +919,7 @@
       ],
       "punct": ".",
       "plain": "Während Hauke den Weg prüft, holt Dana Wasser.",
-      "ru": "Пока Хауке проверяет путь, Дана берёт воду.",
-      "audio": "audio/32fc0cf122fa.m4a"
+      "ru": "Пока Хауке проверяет путь, Дана берёт воду."
      }
     ],
     "task": "plan"
@@ -1008,8 +975,7 @@
       ],
       "punct": ".",
       "plain": "Während Hauke den Weg prüft, holt Dana Wasser.",
-      "ru": "Пока Хауке проверяет путь, Дана берёт воду.",
-      "audio": "audio/32fc0cf122fa.m4a"
+      "ru": "Пока Хауке проверяет путь, Дана берёт воду."
      }
     ],
     "task": "plan",
@@ -1075,8 +1041,7 @@
       ],
       "punct": ".",
       "plain": "Während Hauke den Weg prüft, holt Dana Wasser.",
-      "ru": "Пока Хауке проверяет путь, Дана берёт воду.",
-      "audio": "audio/32fc0cf122fa.m4a"
+      "ru": "Пока Хауке проверяет путь, Дана берёт воду."
      }
     ],
     "task": "notices"
@@ -1142,8 +1107,7 @@
       ],
       "punct": ".",
       "plain": "Während Hauke den Weg prüft, holt Dana Wasser.",
-      "ru": "Пока Хауке проверяет путь, Дана берёт воду.",
-      "audio": "audio/32fc0cf122fa.m4a"
+      "ru": "Пока Хауке проверяет путь, Дана берёт воду."
      }
     ],
     "task": "notices"
@@ -1199,8 +1163,7 @@
       ],
       "punct": ".",
       "plain": "Während Hauke den Weg prüft, holt Dana Wasser.",
-      "ru": "Пока Хауке проверяет путь, Дана берёт воду.",
-      "audio": "audio/32fc0cf122fa.m4a"
+      "ru": "Пока Хауке проверяет путь, Дана берёт воду."
      }
     ],
     "task": "notices",
@@ -1266,8 +1229,7 @@
       ],
       "punct": ".",
       "plain": "Während Hauke den Weg prüft, holt Dana Wasser.",
-      "ru": "Пока Хауке проверяет путь, Дана берёт воду.",
-      "audio": "audio/32fc0cf122fa.m4a"
+      "ru": "Пока Хауке проверяет путь, Дана берёт воду."
      }
     ],
     "task": "gaps"
@@ -1333,8 +1295,7 @@
       ],
       "punct": ".",
       "plain": "Während Hauke den Weg prüft, holt Dana Wasser.",
-      "ru": "Пока Хауке проверяет путь, Дана берёт воду.",
-      "audio": "audio/32fc0cf122fa.m4a"
+      "ru": "Пока Хауке проверяет путь, Дана берёт воду."
      }
     ],
     "task": "gaps"
@@ -1390,8 +1351,7 @@
       ],
       "punct": ".",
       "plain": "Während Hauke den Weg prüft, holt Dana Wasser.",
-      "ru": "Пока Хауке проверяет путь, Дана берёт воду.",
-      "audio": "audio/32fc0cf122fa.m4a"
+      "ru": "Пока Хауке проверяет путь, Дана берёт воду."
      }
     ],
     "task": "gaps",
@@ -1457,8 +1417,7 @@
       ],
       "punct": ".",
       "plain": "Während Hauke den Weg prüft, holt Dana Wasser.",
-      "ru": "Пока Хауке проверяет путь, Дана берёт воду.",
-      "audio": "audio/32fc0cf122fa.m4a"
+      "ru": "Пока Хауке проверяет путь, Дана берёт воду."
      }
     ],
     "task": "talk"
@@ -1524,8 +1483,7 @@
       ],
       "punct": ".",
       "plain": "Während Hauke den Weg prüft, holt Dana Wasser.",
-      "ru": "Пока Хауке проверяет путь, Дана берёт воду.",
-      "audio": "audio/32fc0cf122fa.m4a"
+      "ru": "Пока Хауке проверяет путь, Дана берёт воду."
      }
     ],
     "task": "talk"
@@ -1581,8 +1539,7 @@
       ],
       "punct": ".",
       "plain": "Während Hauke den Weg prüft, holt Dana Wasser.",
-      "ru": "Пока Хауке проверяет путь, Дана берёт воду.",
-      "audio": "audio/32fc0cf122fa.m4a"
+      "ru": "Пока Хауке проверяет путь, Дана берёт воду."
      }
     ],
     "task": "talk",
@@ -1601,8 +1558,7 @@
     "Bevor"
    ],
    "answer": 2,
-   "why": "Проверка до выхода.",
-   "audio": "audio/07e0811b89bc.m4a"
+   "why": "Проверка до выхода."
   },
   {
    "id": "b1-ablaeufe-2",
@@ -1615,8 +1571,7 @@
     "Während"
    ],
    "answer": 2,
-   "why": "Одновременно.",
-   "audio": "audio/84d1b0070e48.m4a"
+   "why": "Одновременно."
   },
   {
    "id": "b1-ablaeufe-3",
@@ -1628,8 +1583,7 @@
     "packt"
    ],
    "answer": 0,
-   "why": "Главный глагол сразу после запятой.",
-   "audio": "audio/22279eaab1b9.m4a"
+   "why": "Главный глагол сразу после запятой."
   },
   {
    "id": "b1-ablaeufe-4",
@@ -1641,8 +1595,7 @@
     "liest"
    ],
    "answer": 2,
-   "why": "Личный глагол в конце.",
-   "audio": "audio/94a0ce5b59e9.m4a"
+   "why": "Личный глагол в конце."
   },
   {
    "id": "b1-ablaeufe-5",
@@ -1676,8 +1629,7 @@
    "also": [
     "Wir prüfen die Rückfahrt, bevor wir losgehen.",
     "Die Rückfahrt prüfen wir, bevor wir losgehen."
-   ],
-   "audio": "audio/72dfa1c6e058.m4a"
+   ]
   },
   {
    "id": "b1-ablaeufe-8",
@@ -1686,8 +1638,7 @@
    "ru": "Пока Хауке проверяет путь, Дана берёт воду.",
    "also": [
     "Dana holt Wasser, während Hauke den Weg prüft."
-   ],
-   "audio": "audio/32fc0cf122fa.m4a"
+   ]
   },
   {
    "id": "b1-ablaeufe-9",
@@ -1697,8 +1648,7 @@
    "also": [
     "Bevor wir losgehen, packe ich das Brot ein.",
     "Das Brot packe ich ein, bevor wir losgehen."
-   ],
-   "audio": "audio/42262f338263.m4a"
+   ]
   },
   {
    "id": "b1-ablaeufe-10",
@@ -1708,8 +1658,7 @@
    "also": [
     "Wir wechseln danach die Aufgaben.",
     "Die Aufgaben wechseln wir danach."
-   ],
-   "audio": "audio/5769d31e7803.m4a"
+   ]
   },
   {
    "id": "b1-ablaeufe-11",
@@ -1719,8 +1668,7 @@
    "also": [
     "Um dreizehn Uhr sind wir an der Haltestelle.",
     "An der Haltestelle sind wir um dreizehn Uhr."
-   ],
-   "audio": "audio/0af0aafa5a3a.m4a"
+   ]
   },
   {
    "id": "b1-ablaeufe-12",
@@ -1729,8 +1677,7 @@
    "ru": "Береговой путь остаётся открытым.",
    "also": [
     "Offen bleibt der Uferweg."
-   ],
-   "audio": "audio/aafa769425c7.m4a"
+   ]
   }
  ],
  "case": {

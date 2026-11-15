@@ -64,37 +64,37 @@
      "who": "V",
      "de": "Guten Morgen! Bitte schön?",
      "ru": "Доброе утро! Слушаю вас.",
-     "audio": "audio/00a2601a1e79.m4a"
+     "audio": "audio/85d016cfd199.m4a"
     },
     {
      "who": "A",
      "de": "Was kosten die Äpfel?",
      "ru": "Сколько стоят яблоки?",
-     "audio": "audio/d72b71d92995.m4a"
+     "audio": "audio/64899a4355bb.m4a"
     },
     {
      "who": "V",
      "de": "Zwei Euro fünfzig das Kilo.",
      "ru": "Два евро пятьдесят за кило.",
-     "audio": "audio/c8ab9a461a8f.m4a"
+     "audio": "audio/d52fd4882db7.m4a"
     },
     {
      "who": "A",
      "de": "Dann nehme ich zwei Kilo.",
      "ru": "Тогда я возьму два кило.",
-     "audio": "audio/fde0ec08b3cc.m4a"
+     "audio": "audio/9320c6e688e6.m4a"
     },
     {
      "who": "V",
      "de": "Gern. Welche möchten Sie? Die hier oder die da?",
      "ru": "Хорошо. Какие вам? Вот эти или вон те?",
-     "audio": "audio/31ffba884e0a.m4a"
+     "audio": "audio/1faeac1512e8.m4a"
     },
     {
      "who": "A",
      "de": "Die da, bitte. Und ein Pfund Tomaten.",
      "ru": "Вон те, пожалуйста. И полкило помидоров.",
-     "audio": "audio/37b4e352672e.m4a"
+     "audio": "audio/d45d1e1bf113.m4a"
     },
     {
      "who": "V",
@@ -118,7 +118,7 @@
      "who": "A",
      "de": "Hier sind zehn Euro.",
      "ru": "Вот десять евро.",
-     "audio": "audio/48e29d23ae85.m4a"
+     "audio": "audio/77cf355089cc.m4a"
     }
    ]
   },
@@ -151,25 +151,25 @@
      "who": "M",
      "de": "Ja, einen Pullover.",
      "ru": "Да, свитер.",
-     "audio": "audio/e1c249d05d24.m4a"
+     "audio": "audio/83949f3a9eef.m4a"
     },
     {
      "who": "V",
      "de": "Welche Größe haben Sie?",
      "ru": "Какой у вас размер?",
-     "audio": "audio/abf1840fbe98.m4a"
+     "audio": "audio/c4c72e8a6846.m4a"
     },
     {
      "who": "M",
      "de": "Größe M.",
      "ru": "Размер M.",
-     "audio": "audio/3cc62d57c745.m4a"
+     "audio": "audio/95986e163b81.m4a"
     },
     {
      "who": "V",
      "de": "Wie finden Sie den Pullover hier?",
      "ru": "Как вам вот этот свитер?",
-     "audio": "audio/30a0d50c158f.m4a"
+     "audio": "audio/d9643b1b9eee.m4a"
     },
     {
      "who": "M",
@@ -181,13 +181,13 @@
      "who": "V",
      "de": "Ja, hier, bitte.",
      "ru": "Да, вот, пожалуйста.",
-     "audio": "audio/1799d680d1cc.m4a"
+     "audio": "audio/bea9a7d3d812.m4a"
     },
     {
      "who": "M",
      "de": "Dana, wie findest du ihn?",
      "ru": "Дана, как он тебе?",
-     "audio": "audio/ce92d38f5a0f.m4a"
+     "audio": "audio/159acfe73025.m4a"
     },
     {
      "who": "A",
@@ -199,7 +199,7 @@
      "who": "M",
      "de": "Gut, dann nehme ich ihn!",
      "ru": "Хорошо, тогда беру!",
-     "audio": "audio/c19829e3fd47.m4a"
+     "audio": "audio/ca125ea1704b.m4a"
     }
    ]
   },
@@ -222,7 +222,7 @@
      "who": "M",
      "de": "Der Pullover ist gut. Ich nehme ihn.",
      "ru": "Свитер хороший. Я его беру.",
-     "audio": "audio/57509008b8af.m4a"
+     "audio": "audio/1784b7b206a3.m4a"
     },
     {
      "who": "D",
@@ -256,7 +256,7 @@
      "gender": null,
      "plural": null,
      "note": "zwei Kilo Äpfel",
-     "audio": "audio/f15ff5593911.m4a"
+     "audio": "audio/d8a59c7be12f.m4a"
     },
     {
      "de": "ein Pfund",
@@ -272,7 +272,7 @@
      "gender": null,
      "plural": null,
      "note": "hundert Gramm Käse",
-     "audio": "audio/c761714c1130.m4a"
+     "audio": "audio/577111fe0ade.m4a"
     },
     {
      "de": "ein Liter",
@@ -280,7 +280,7 @@
      "gender": null,
      "plural": null,
      "note": "ein Liter Milch",
-     "audio": "audio/5cfc4fa93bbb.m4a"
+     "audio": "audio/6a3388871b57.m4a"
     },
     {
      "de": "die Flasche",
@@ -288,7 +288,7 @@
      "gender": "f",
      "plural": "Flaschen",
      "note": "eine Flasche Wasser",
-     "audio": "audio/5827ca40c51e.m4a"
+     "audio": "audio/dab79b9cebba.m4a"
     },
     {
      "de": "die Packung",
@@ -296,7 +296,7 @@
      "gender": "f",
      "plural": "Packungen",
      "note": "eine Packung Reis",
-     "audio": "audio/1b4d6de9e3cc.m4a"
+     "audio": "audio/08abb38f460d.m4a"
     },
     {
      "de": "die Dose",
@@ -304,7 +304,7 @@
      "gender": "f",
      "plural": "Dosen",
      "note": "eine Dose Tomaten",
-     "audio": "audio/60b502d85e6b.m4a"
+     "audio": "audio/c582c615d470.m4a"
     },
     {
      "de": "die Tüte",
@@ -312,7 +312,7 @@
      "gender": "f",
      "plural": "Tüten",
      "note": "Brauchen Sie eine Tüte?",
-     "audio": "audio/2a2b106381d2.m4a"
+     "audio": "audio/24b0e6fc28f1.m4a"
     }
    ]
   },
@@ -325,21 +325,21 @@
      "ru": "яблоко",
      "gender": "m",
      "plural": "Äpfel",
-     "audio": "audio/2466fbd4102f.m4a"
+     "audio": "audio/12271bfe07da.m4a"
     },
     {
      "de": "die Banane",
      "ru": "банан",
      "gender": "f",
      "plural": "Bananen",
-     "audio": "audio/4a1d6bd8828f.m4a"
+     "audio": "audio/fdc8b7d14add.m4a"
     },
     {
      "de": "die Orange",
      "ru": "апельсин",
      "gender": "f",
      "plural": "Orangen",
-     "audio": "audio/d6d1ef767180.m4a"
+     "audio": "audio/69dbe24f18d0.m4a"
     },
     {
      "de": "die Erdbeere",
@@ -347,35 +347,35 @@
      "gender": "f",
      "plural": "Erdbeeren",
      "note": "одна ягода — eine Erdbeere",
-     "audio": "audio/e45c1f03c9e2.m4a"
+     "audio": "audio/bdbc544c48d0.m4a"
     },
     {
      "de": "die Tomate",
      "ru": "помидор",
      "gender": "f",
      "plural": "Tomaten",
-     "audio": "audio/c794c34de953.m4a"
+     "audio": "audio/b065a97281bd.m4a"
     },
     {
      "de": "die Kartoffel",
      "ru": "картофель",
      "gender": "f",
      "plural": "Kartoffeln",
-     "audio": "audio/275b7e610f68.m4a"
+     "audio": "audio/469d0dcec515.m4a"
     },
     {
      "de": "die Zwiebel",
      "ru": "лук",
      "gender": "f",
      "plural": "Zwiebeln",
-     "audio": "audio/1e60562f30c6.m4a"
+     "audio": "audio/fcbd6c8942d2.m4a"
     },
     {
      "de": "die Gurke",
      "ru": "огурец",
      "gender": "f",
      "plural": "Gurken",
-     "audio": "audio/1c134a58636f.m4a"
+     "audio": "audio/8e7842ebb4e4.m4a"
     }
    ]
   },
@@ -388,7 +388,7 @@
      "ru": "свитер",
      "gender": "m",
      "plural": "Pullover",
-     "audio": "audio/aceae752cf1f.m4a"
+     "audio": "audio/1da83721463d.m4a"
     },
     {
      "de": "die Hose",
@@ -396,28 +396,28 @@
      "gender": "f",
      "plural": "Hosen",
      "note": "одна вещь — единственное число",
-     "audio": "audio/38b00e6f1d3e.m4a"
+     "audio": "audio/8a5a89448f88.m4a"
     },
     {
      "de": "die Jacke",
      "ru": "куртка",
      "gender": "f",
      "plural": "Jacken",
-     "audio": "audio/4ef061c08aa9.m4a"
+     "audio": "audio/df7bde3884d2.m4a"
     },
     {
      "de": "der Mantel",
      "ru": "пальто",
      "gender": "m",
      "plural": "Mäntel",
-     "audio": "audio/6a53693e7429.m4a"
+     "audio": "audio/1c8acc46e460.m4a"
     },
     {
      "de": "das Hemd",
      "ru": "рубашка",
      "gender": "n",
      "plural": "Hemden",
-     "audio": "audio/d792cd83514a.m4a"
+     "audio": "audio/2d2e92a22978.m4a"
     },
     {
      "de": "das T-Shirt",
@@ -431,14 +431,14 @@
      "ru": "платье",
      "gender": "n",
      "plural": "Kleider",
-     "audio": "audio/32adcac9d443.m4a"
+     "audio": "audio/9ba3b61eb50c.m4a"
     },
     {
      "de": "der Rock",
      "ru": "юбка",
      "gender": "m",
      "plural": "Röcke",
-     "audio": "audio/128e944e81c8.m4a"
+     "audio": "audio/510e2d7790c7.m4a"
     },
     {
      "de": "der Schuh",
@@ -446,7 +446,7 @@
      "gender": "m",
      "plural": "Schuhe",
      "note": "обычно во мн. ч. — die Schuhe",
-     "audio": "audio/8dca36577b3b.m4a"
+     "audio": "audio/91e3f6306ed0.m4a"
     },
     {
      "de": "die Größe",
@@ -454,14 +454,14 @@
      "gender": "f",
      "plural": "Größen",
      "note": "Welche Größe haben Sie?",
-     "audio": "audio/01379909260f.m4a"
+     "audio": "audio/fd27f7ba9af0.m4a"
     },
     {
      "de": "die Farbe",
      "ru": "цвет",
      "gender": "f",
      "plural": "Farben",
-     "audio": "audio/f452656b0e73.m4a"
+     "audio": "audio/03b602751c03.m4a"
     }
    ]
   },
@@ -475,14 +475,14 @@
      "gender": null,
      "plural": null,
      "note": "Was kostet das?",
-     "audio": "audio/68e1a041d0f9.m4a"
+     "audio": "audio/e3bf7a74d8b6.m4a"
     },
     {
      "de": "kaufen",
      "ru": "покупать",
      "gender": null,
      "plural": null,
-     "audio": "audio/c367ccd7e922.m4a"
+     "audio": "audio/bad85330bd14.m4a"
     },
     {
      "de": "brauchen",
@@ -490,14 +490,14 @@
      "gender": null,
      "plural": null,
      "note": "Ich brauche eine Jacke.",
-     "audio": "audio/75496eacd3f2.m4a"
+     "audio": "audio/930c22055585.m4a"
     },
     {
      "de": "suchen",
      "ru": "искать",
      "gender": null,
      "plural": null,
-     "audio": "audio/2b8648906d96.m4a"
+     "audio": "audio/284a8c89a89e.m4a"
     },
     {
      "de": "finden",
@@ -505,7 +505,7 @@
      "gender": null,
      "plural": null,
      "note": "Wie findest du ihn?",
-     "audio": "audio/a2376bf71cd7.m4a"
+     "audio": "audio/c0e6bcc883a7.m4a"
     },
     {
      "de": "der Euro",
@@ -527,7 +527,7 @@
      "ru": "дорогой",
      "gender": null,
      "plural": null,
-     "audio": "audio/c101f9801004.m4a"
+     "audio": "audio/8c86203f9f88.m4a"
     },
     {
      "de": "groß",
@@ -541,7 +541,7 @@
      "ru": "маленький",
      "gender": null,
      "plural": null,
-     "audio": "audio/9365e85e6ab0.m4a"
+     "audio": "audio/2fc07858c66f.m4a"
     },
     {
      "de": "lang",
@@ -562,7 +562,7 @@
      "ru": "красивый",
      "gender": null,
      "plural": null,
-     "audio": "audio/4f23a86c699e.m4a"
+     "audio": "audio/320761b0a0f7.m4a"
     },
     {
      "de": "zu",
@@ -570,7 +570,7 @@
      "gender": null,
      "plural": null,
      "note": "zu groß — велик",
-     "audio": "audio/74d649acb59c.m4a"
+     "audio": "audio/d8c5c218807b.m4a"
     }
    ]
   }
@@ -768,7 +768,7 @@
    "sample": [
     {
      "de": "Eine Tüte, bitte!",
-     "audio": "audio/cd921e3d8951.m4a"
+     "audio": "audio/f892bca41f7c.m4a"
     },
     {
      "de": "Haben Sie eine Tüte für mich?",
@@ -780,7 +780,7 @@
     },
     {
      "de": "Leider habe ich keine Tüte.",
-     "audio": "audio/8c4430f26dc6.m4a"
+     "audio": "audio/2f471ceb5a2a.m4a"
     }
    ]
   },
@@ -1242,7 +1242,7 @@
       "punct": "?",
       "plain": "Welche Größe haben Sie?",
       "ru": "Какой у вас размер?",
-      "audio": "audio/f394cb19c75c.m4a"
+      "audio": "audio/ac9c6c670e04.m4a"
      },
      {
       "slots": [
@@ -1273,7 +1273,7 @@
       "punct": "?",
       "plain": "Welchen Pullover nehmen Sie?",
       "ru": "Какой свитер вы берёте?",
-      "audio": "audio/eb8575a8e298.m4a"
+      "audio": "audio/23aa7205412f.m4a"
      },
      {
       "slots": [
@@ -1304,7 +1304,7 @@
       "punct": ".",
       "plain": "Ich nehme den hier.",
       "ru": "Я беру вот этот.",
-      "audio": "audio/d1e8686ad0fe.m4a"
+      "audio": "audio/8e30e45173c0.m4a"
      }
     ]
    }
@@ -1352,7 +1352,7 @@
       "punct": "?",
       "plain": "Welche Größe haben Sie?",
       "ru": "Какой у вас размер?",
-      "audio": "audio/f394cb19c75c.m4a"
+      "audio": "audio/ac9c6c670e04.m4a"
      },
      {
       "slots": [
@@ -1383,7 +1383,7 @@
       "punct": "?",
       "plain": "Welchen Pullover nehmen Sie?",
       "ru": "Какой свитер вы берёте?",
-      "audio": "audio/eb8575a8e298.m4a"
+      "audio": "audio/23aa7205412f.m4a"
      },
      {
       "slots": [
@@ -1414,7 +1414,7 @@
       "punct": ".",
       "plain": "Ich nehme den hier.",
       "ru": "Я беру вот этот.",
-      "audio": "audio/d1e8686ad0fe.m4a"
+      "audio": "audio/8e30e45173c0.m4a"
      }
     ],
     "focus": [
@@ -1623,7 +1623,7 @@
       "punct": "?",
       "plain": "Was kostet die Hose?",
       "ru": "Сколько стоят брюки?",
-      "audio": "audio/956af326cf9b.m4a"
+      "audio": "audio/9ad49a2dea2f.m4a"
      },
      {
       "slots": [
@@ -1654,7 +1654,7 @@
       "punct": "?",
       "plain": "Was kosten die Schuhe?",
       "ru": "Сколько стоят ботинки?",
-      "audio": "audio/fd1b94d3b8ff.m4a"
+      "audio": "audio/fdf7ba2b0217.m4a"
      }
     ]
    }
@@ -2090,7 +2090,7 @@
    ],
    "answer": 1,
    "why": "*die Äpfel* — множественное число, поэтому *kosten*.",
-   "audio": "audio/d72b71d92995.m4a"
+   "audio": "audio/64899a4355bb.m4a"
   },
   {
    "id": "einkaufen-2",
@@ -2102,7 +2102,7 @@
    ],
    "answer": 0,
    "why": "*die Hose* — единственное число, хотя по-русски «брюки».",
-   "audio": "audio/956af326cf9b.m4a"
+   "audio": "audio/9ad49a2dea2f.m4a"
   },
   {
    "id": "einkaufen-3",
@@ -2126,7 +2126,7 @@
    ],
    "answer": 0,
    "why": "После числа *Kilo* не меняется: *zwei Kilo*.",
-   "audio": "audio/b25fd634038f.m4a"
+   "audio": "audio/5ceaa2f008d2.m4a"
   },
   {
    "id": "einkaufen-5",
@@ -2138,7 +2138,7 @@
    ],
    "answer": 1,
    "why": "*die Flasche* — обычное существительное: *drei Flasch+en*.",
-   "audio": "audio/ba663e4e91e1.m4a"
+   "audio": "audio/2a70fa9992ec.m4a"
   },
   {
    "id": "einkaufen-6",
@@ -2149,7 +2149,7 @@
    ],
    "ru": "Свитер красивый. Я его беру.",
    "why": "*der Pullover* → *ihn*, как *der* → *den*.",
-   "audio": "audio/96fd8c580c23.m4a"
+   "audio": "audio/16711c1fc21f.m4a"
   },
   {
    "id": "einkaufen-7",
@@ -2171,7 +2171,7 @@
    ],
    "ru": "Футболка? По-моему, она супер!",
    "why": "*das T-Shirt* — среднего рода, поэтому *es*, хотя по-русски «она».",
-   "audio": "audio/531e4d4d275f.m4a"
+   "audio": "audio/b3d6236c6624.m4a"
   },
   {
    "id": "einkaufen-9",
@@ -2184,7 +2184,7 @@
    ],
    "answer": 1,
    "why": "Множественное число → *sie*.",
-   "audio": "audio/3218f9172373.m4a"
+   "audio": "audio/b6f1fb97e0df.m4a"
   },
   {
    "id": "einkaufen-10",
@@ -2197,7 +2197,7 @@
    ],
    "answer": 1,
    "why": "Свитер здесь дополнение, мужской род: *welch+en*, как *den*.",
-   "audio": "audio/eb8575a8e298.m4a"
+   "audio": "audio/23aa7205412f.m4a"
   },
   {
    "id": "einkaufen-11",
@@ -2208,7 +2208,7 @@
    ],
    "hint": "welch-",
    "why": "*die Größe* → *welche*.",
-   "audio": "audio/f394cb19c75c.m4a"
+   "audio": "audio/ac9c6c670e04.m4a"
   },
   {
    "id": "einkaufen-12",
@@ -2219,7 +2219,7 @@
    ],
    "hint": "finden",
    "why": "Основа на *-d*: *du find+est*.",
-   "audio": "audio/02c90461ead6.m4a"
+   "audio": "audio/eba8657fee67.m4a"
   },
   {
    "id": "einkaufen-13",
@@ -2242,7 +2242,7 @@
     "Ihn finde ich zu teuer."
    ],
    "de": "Ich finde ihn zu teuer.",
-   "audio": "audio/86836df18b8e.m4a"
+   "audio": "audio/36d67906457e.m4a"
   },
   {
    "id": "einkaufen-15",
@@ -2252,14 +2252,14 @@
    "also": [
     "Ein Kilo Tomaten nehme ich."
    ],
-   "audio": "audio/8bf6384c4ca6.m4a"
+   "audio": "audio/3efc33edd3da.m4a"
   },
   {
    "id": "einkaufen-16",
    "type": "order",
    "ru": "Какой у вас размер?",
    "de": "Welche Größe haben Sie?",
-   "audio": "audio/f394cb19c75c.m4a"
+   "audio": "audio/ac9c6c670e04.m4a"
   },
   {
    "id": "einkaufen-17",
@@ -2353,7 +2353,7 @@
       "who": "M",
       "de": "Der Pullover in S ist gut. Ich nehme ihn. Die Jacke ist zu teuer.",
       "ru": "Свитер в размере S подходит. Я его беру. Куртка слишком дорогая.",
-      "audio": "audio/a7f7b6ea24bf.m4a"
+      "audio": "audio/ab3c2cf32be4.m4a"
      }
     ],
     "question": "Что подтверждено как покупка?",
@@ -2468,12 +2468,12 @@
     "quotes": [
      {
       "de": "Was kosten die Äpfel?",
-      "audio": "audio/d72b71d92995.m4a",
+      "audio": "audio/64899a4355bb.m4a",
       "name": "Dana"
      },
      {
       "de": "Zwei Euro fünfzig das Kilo.",
-      "audio": "audio/c8ab9a461a8f.m4a",
+      "audio": "audio/d52fd4882db7.m4a",
       "name": "Verkäuferin"
      }
     ],
@@ -2510,7 +2510,7 @@
      },
      {
       "de": "Hier sind zehn Euro.",
-      "audio": "audio/48e29d23ae85.m4a",
+      "audio": "audio/77cf355089cc.m4a",
       "name": "Dana"
      }
     ],
@@ -2542,7 +2542,7 @@
     "quotes": [
      {
       "de": "Größe M.",
-      "audio": "audio/3cc62d57c745.m4a",
+      "audio": "audio/95986e163b81.m4a",
       "name": "Mateo"
      },
      {
@@ -2587,7 +2587,7 @@
     "quotes": [
      {
       "de": "Der Pullover ist gut. Ich nehme ihn.",
-      "audio": "audio/57509008b8af.m4a",
+      "audio": "audio/1784b7b206a3.m4a",
       "name": "Mateo"
      },
      {

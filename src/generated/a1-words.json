@@ -1,15 +1,15 @@
 {
  "Moin!": {
   "ru": "Привет! Здравствуйте!",
-  "audio": "audio/48966fdcc6fd.m4a"
+  "audio": "audio/c6c94fcefe24.m4a"
  },
  "Hallo!": {
   "ru": "Привет!",
-  "audio": "audio/68e8e80d5390.m4a"
+  "audio": "audio/6093ded05494.m4a"
  },
  "Guten Morgen!": {
   "ru": "Доброе утро!",
-  "audio": "audio/75e8b4c4bc1b.m4a"
+  "audio": "audio/10af04b2dbc9.m4a"
  },
  "Guten Tag!": {
   "ru": "Добрый день!",
@@ -37,41 +37,41 @@
  },
  "Auf Wiedersehen!": {
   "ru": "До свидания!",
-  "audio": "audio/0c292e2a4525.m4a"
+  "audio": "audio/ee31554f6d7a.m4a"
  },
  "der Name": {
   "ru": "имя",
-  "audio": "audio/838b39c4b92c.m4a",
+  "audio": "audio/227b9decdfb6.m4a",
   "pl": "Namen"
  },
  "der Vorname": {
   "ru": "личное имя",
-  "audio": "audio/c35a0aafec9d.m4a",
+  "audio": "audio/6de74ebe961b.m4a",
   "pl": "Vornamen"
  },
  "der Familienname": {
   "ru": "фамилия",
-  "audio": "audio/17e9cd89702c.m4a",
+  "audio": "audio/56bb66e01856.m4a",
   "pl": "Familiennamen"
  },
  "das Land": {
   "ru": "страна",
-  "audio": "audio/dbf1068c9fc4.m4a",
+  "audio": "audio/b742d280ff75.m4a",
   "pl": "Länder"
  },
  "die Stadt": {
   "ru": "город",
-  "audio": "audio/44a9c1ef3bcb.m4a",
+  "audio": "audio/2667596f3b58.m4a",
   "pl": "Städte"
  },
  "die Sprache": {
   "ru": "язык",
-  "audio": "audio/887d7057eada.m4a",
+  "audio": "audio/51fc1abdddf8.m4a",
   "pl": "Sprachen"
  },
  "heißen": {
   "ru": "зваться",
-  "audio": "audio/a48c5355a618.m4a"
+  "audio": "audio/70d021c65e0a.m4a"
  },
  "kommen aus": {
   "ru": "быть родом из",
@@ -79,11 +79,11 @@
  },
  "wohnen in": {
   "ru": "жить в",
-  "audio": "audio/a23ef8637483.m4a"
+  "audio": "audio/b81acfef9b4d.m4a"
  },
  "sprechen": {
   "ru": "говорить",
-  "audio": "audio/5dc9bf9b2292.m4a"
+  "audio": "audio/49f247a7f734.m4a"
  },
  "Deutschland": {
   "ru": "Германия",
@@ -95,7 +95,7 @@
  },
  "Kasachstan": {
   "ru": "Казахстан",
-  "audio": "audio/a8a02be7645f.m4a"
+  "audio": "audio/5d1776ae39ef.m4a"
  },
  "Russland": {
   "ru": "Россия",
@@ -103,15 +103,15 @@
  },
  "Argentinien": {
   "ru": "Аргентина",
-  "audio": "audio/f3cee50238e0.m4a"
+  "audio": "audio/71d238a6d77c.m4a"
  },
  "die Türkei": {
   "ru": "Турция",
-  "audio": "audio/023c553e94ea.m4a"
+  "audio": "audio/454b9b780ee3.m4a"
  },
  "die Ukraine": {
   "ru": "Украина",
-  "audio": "audio/70477d379d1d.m4a"
+  "audio": "audio/cd9ffe15a709.m4a"
  },
  "die Schweiz": {
   "ru": "Швейцария",
@@ -119,21 +119,21 @@
  },
  "die USA": {
   "ru": "США",
-  "audio": "audio/a5806f4abac6.m4a"
+  "audio": "audio/918aa3709deb.m4a"
  },
  "der Hafen": {
   "ru": "порт, гавань",
-  "audio": "audio/64c12f7f3efa.m4a",
+  "audio": "audio/ee0e7d5fd38b.m4a",
   "pl": "Häfen"
  },
  "das Boot": {
   "ru": "лодка",
-  "audio": "audio/615ab8c371df.m4a",
+  "audio": "audio/6d08b66fdff1.m4a",
   "pl": "Boote"
  },
  "segeln": {
   "ru": "ходить под парусом",
-  "audio": "audio/7970c1741583.m4a"
+  "audio": "audio/e03f1af0dac9.m4a"
  },
  "das Café": {
   "ru": "кафе",
@@ -142,24 +142,24 @@
  },
  "der Strand": {
   "ru": "пляж",
-  "audio": "audio/2d3ecb5df7a4.m4a",
+  "audio": "audio/203b7cd63962.m4a",
   "pl": "Strände"
  },
  "Wer?": {
   "ru": "Кто?",
-  "audio": "audio/b572cdb8782c.m4a"
+  "audio": "audio/e96ad5213554.m4a"
  },
  "Wie?": {
   "ru": "Как?",
-  "audio": "audio/871fa65e2fdb.m4a"
+  "audio": "audio/5f9b465d9ea6.m4a"
  },
  "Woher?": {
   "ru": "Откуда?",
-  "audio": "audio/8104b2be05ca.m4a"
+  "audio": "audio/a6040f3e1240.m4a"
  },
  "Wo?": {
   "ru": "Где?",
-  "audio": "audio/64cde0cf6b03.m4a"
+  "audio": "audio/050871a4eb79.m4a"
  },
  "Was?": {
   "ru": "Что?",
@@ -167,11 +167,11 @@
  },
  "Welche?": {
   "ru": "Какие?",
-  "audio": "audio/92bcee53fe93.m4a"
+  "audio": "audio/3558d9fd1d92.m4a"
  },
  "null": {
   "ru": "0",
-  "audio": "audio/dfb2f51e0161.m4a"
+  "audio": "audio/a88e4383ba52.m4a"
  },
  "eins": {
   "ru": "1",
@@ -179,15 +179,15 @@
  },
  "zwei": {
   "ru": "2",
-  "audio": "audio/a0deeea7bad0.m4a"
+  "audio": "audio/eecf8696cf69.m4a"
  },
  "drei": {
   "ru": "3",
-  "audio": "audio/2aa67b004408.m4a"
+  "audio": "audio/22f3dfca1048.m4a"
  },
  "vier": {
   "ru": "4",
-  "audio": "audio/f7c2cf910dc9.m4a"
+  "audio": "audio/25d364039814.m4a"
  },
  "fünf": {
   "ru": "5",
@@ -199,7 +199,7 @@
  },
  "sieben": {
   "ru": "7",
-  "audio": "audio/359e2e96fea8.m4a"
+  "audio": "audio/2772ee2dd76d.m4a"
  },
  "acht": {
   "ru": "8",
@@ -207,11 +207,11 @@
  },
  "neun": {
   "ru": "9",
-  "audio": "audio/415b4f07fe44.m4a"
+  "audio": "audio/167a1ca2f3b3.m4a"
  },
  "zehn": {
   "ru": "10",
-  "audio": "audio/2e0aabad80a7.m4a"
+  "audio": "audio/7a65a8a37253.m4a"
  },
  "elf": {
   "ru": "11",
@@ -223,7 +223,7 @@
  },
  "die Telefonnummer": {
   "ru": "номер телефона",
-  "audio": "audio/b5142bccf91c.m4a",
+  "audio": "audio/181fb5e1e261.m4a",
   "pl": "Telefonnummern"
  },
  "das Handy": {
@@ -233,70 +233,70 @@
  },
  "die Handynummer": {
   "ru": "номер мобильного",
-  "audio": "audio/c10ddcbbf5c1.m4a",
+  "audio": "audio/8811690feef8.m4a",
   "pl": "Handynummern"
  },
  "die Adresse": {
   "ru": "адрес",
-  "audio": "audio/5a8d11752955.m4a",
+  "audio": "audio/8ebabe221ed2.m4a",
   "pl": "Adressen"
  },
  "die Hausnummer": {
   "ru": "номер дома",
-  "audio": "audio/ec4098fc492c.m4a",
+  "audio": "audio/5b4d750f429b.m4a",
   "pl": "Hausnummern"
  },
  "die Postleitzahl": {
   "ru": "почтовый индекс",
-  "audio": "audio/ca0df44ca602.m4a",
+  "audio": "audio/1fe38a995659.m4a",
   "pl": "Postleitzahlen"
  },
  "buchstabieren": {
   "ru": "назвать по буквам",
-  "audio": "audio/2d60bac4c41c.m4a"
+  "audio": "audio/97b0dabe27b9.m4a"
  },
  "Wie bitte?": {
   "ru": "Простите, что вы сказали?",
-  "audio": "audio/c7e609b39725.m4a"
+  "audio": "audio/2975aceabde6.m4a"
  },
  "Noch einmal, bitte.": {
   "ru": "Ещё раз, пожалуйста.",
-  "audio": "audio/e43749d33af2.m4a"
+  "audio": "audio/ed57433012cc.m4a"
  },
  "Langsam, bitte.": {
   "ru": "Помедленнее, пожалуйста.",
-  "audio": "audio/2f97f0e4c360.m4a"
+  "audio": "audio/3b489d00d320.m4a"
  },
  "Auf Wiederhören!": {
   "ru": "До свидания! (по телефону)",
-  "audio": "audio/14f3311d59ec.m4a"
+  "audio": "audio/973cf016eabe.m4a"
  },
  "haben": {
   "ru": "иметь",
-  "audio": "audio/0174379a2855.m4a"
+  "audio": "audio/380e898ae6d0.m4a"
  },
  "die Zeit": {
   "ru": "время",
-  "audio": "audio/86e725563605.m4a",
+  "audio": "audio/4e457ab24a02.m4a",
   "pl": "Zeiten"
  },
  "die Pause": {
   "ru": "перерыв",
-  "audio": "audio/8d6ee20d0c3e.m4a",
+  "audio": "audio/d932c50a5aae.m4a",
   "pl": "Pausen"
  },
  "der Geburtstag": {
   "ru": "день рождения",
-  "audio": "audio/a5cad6901e31.m4a",
+  "audio": "audio/d2f61fca87e5.m4a",
   "pl": "Geburtstage"
  },
  "Alles Gute!": {
   "ru": "Поздравляю!",
-  "audio": "audio/391cc74d0be8.m4a"
+  "audio": "audio/1a78a5858a48.m4a"
  },
  "das Jahr": {
   "ru": "год",
-  "audio": "audio/2ab14b96ad42.m4a",
+  "audio": "audio/22b99e91ccc8.m4a",
   "pl": "Jahre"
  },
  "alt": {
@@ -305,99 +305,99 @@
  },
  "der Kuchen": {
   "ru": "пирог, торт",
-  "audio": "audio/7a3359329b13.m4a",
+  "audio": "audio/62375302d117.m4a",
   "pl": "Kuchen"
  },
  "die Prüfung": {
   "ru": "экзамен",
-  "audio": "audio/00c9a5d41782.m4a",
+  "audio": "audio/e253f3aec217.m4a",
   "pl": "Prüfungen"
  },
  "der Raum": {
   "ru": "аудитория, комната",
-  "audio": "audio/c3b09d268614.m4a",
+  "audio": "audio/b347cd2bacad.m4a",
   "pl": "Räume"
  },
  "die Frage": {
   "ru": "вопрос",
-  "audio": "audio/6861fee5c3e2.m4a",
+  "audio": "audio/934b95fc2914.m4a",
   "pl": "Fragen"
  },
  "die Zahl": {
   "ru": "число",
-  "audio": "audio/78b8a464cf86.m4a",
+  "audio": "audio/8d4f90bbed1b.m4a",
   "pl": "Zahlen"
  },
  "der Liegeplatz": {
   "ru": "место у причала",
-  "audio": "audio/ce99bae57f01.m4a",
+  "audio": "audio/f6bf90f2018b.m4a",
   "pl": "Liegeplätze"
  },
  "die Nummer": {
   "ru": "номер",
-  "audio": "audio/a1e93791a9db.m4a",
+  "audio": "audio/e81b7479d808.m4a",
   "pl": "Nummern"
  },
  "das Wasser": {
   "ru": "вода",
-  "audio": "audio/8f766557d2a4.m4a"
+  "audio": "audio/9476f3070b0b.m4a"
  },
  "das Brot": {
   "ru": "хлеб",
-  "audio": "audio/b56ce826c04e.m4a",
+  "audio": "audio/7168b97f2dc5.m4a",
   "pl": "Brote"
  },
  "die Familie": {
   "ru": "семья",
-  "audio": "audio/5a28fd21c3b7.m4a",
+  "audio": "audio/61253165b9e7.m4a",
   "pl": "Familien"
  },
  "die Eltern": {
   "ru": "родители",
-  "audio": "audio/1f029a2302e0.m4a"
+  "audio": "audio/df724411a39b.m4a"
  },
  "der Vater": {
   "ru": "отец",
-  "audio": "audio/1098dbda494a.m4a",
+  "audio": "audio/5eabffa358c8.m4a",
   "pl": "Väter"
  },
  "die Mutter": {
   "ru": "мать",
-  "audio": "audio/d71f0becc16a.m4a",
+  "audio": "audio/fdd0eab8738c.m4a",
   "pl": "Mütter"
  },
  "das Kind": {
   "ru": "ребёнок",
-  "audio": "audio/681a7733b607.m4a",
+  "audio": "audio/f96066a68b3f.m4a",
   "pl": "Kinder"
  },
  "der Sohn": {
   "ru": "сын",
-  "audio": "audio/dc2f375fef6c.m4a",
+  "audio": "audio/fb0731c8b184.m4a",
   "pl": "Söhne"
  },
  "die Tochter": {
   "ru": "дочь",
-  "audio": "audio/7e63a3094c5a.m4a",
+  "audio": "audio/353447b70e11.m4a",
   "pl": "Töchter"
  },
  "die Geschwister": {
   "ru": "братья и сёстры",
-  "audio": "audio/74098c7c0fd9.m4a"
+  "audio": "audio/2887447300d0.m4a"
  },
  "der Bruder": {
   "ru": "брат",
-  "audio": "audio/9f7e8bf039a7.m4a",
+  "audio": "audio/55c40573c9a3.m4a",
   "pl": "Brüder"
  },
  "die Schwester": {
   "ru": "сестра",
-  "audio": "audio/b9c8cb555d29.m4a",
+  "audio": "audio/00708cc1b436.m4a",
   "pl": "Schwestern"
  },
  "die Großeltern": {
   "ru": "бабушка и дедушка",
-  "audio": "audio/39c75127a6ba.m4a"
+  "audio": "audio/0cfddc87160a.m4a"
  },
  "der Opa": {
   "ru": "дедушка",
@@ -411,12 +411,12 @@
  },
  "der Onkel": {
   "ru": "дядя",
-  "audio": "audio/bde44390eead.m4a",
+  "audio": "audio/5b9394dedbf3.m4a",
   "pl": "Onkel"
  },
  "die Tante": {
   "ru": "тётя",
-  "audio": "audio/e09cbeedacee.m4a",
+  "audio": "audio/b7766c081042.m4a",
   "pl": "Tanten"
  },
  "der Cousin": {
@@ -426,37 +426,37 @@
  },
  "die Cousine": {
   "ru": "двоюродная сестра",
-  "audio": "audio/54548b74882a.m4a",
+  "audio": "audio/35013c268f3c.m4a",
   "pl": "Cousinen"
  },
  "der Enkel": {
   "ru": "внук",
-  "audio": "audio/ba13b18b7108.m4a",
+  "audio": "audio/f56eae048ace.m4a",
   "pl": "Enkel"
  },
  "die Enkelin": {
   "ru": "внучка",
-  "audio": "audio/5727c2216f9d.m4a",
+  "audio": "audio/839adc0422d7.m4a",
   "pl": "Enkelinnen"
  },
  "der Mann": {
   "ru": "мужчина; муж",
-  "audio": "audio/027ae5757b29.m4a",
+  "audio": "audio/e985db014179.m4a",
   "pl": "Männer"
  },
  "die Frau": {
   "ru": "женщина; жена",
-  "audio": "audio/d1c9c8d599cf.m4a",
+  "audio": "audio/6f4241a8ce63.m4a",
   "pl": "Frauen"
  },
  "der Junge": {
   "ru": "мальчик",
-  "audio": "audio/ce41cc2992e7.m4a",
+  "audio": "audio/1979c58d4071.m4a",
   "pl": "Jungen"
  },
  "das Mädchen": {
   "ru": "девочка",
-  "audio": "audio/d8e10dced8d1.m4a",
+  "audio": "audio/18bdeeda95a4.m4a",
   "pl": "Mädchen"
  },
  "das Baby": {
@@ -466,22 +466,22 @@
  },
  "der Freund": {
   "ru": "друг; парень",
-  "audio": "audio/5e139a9885c2.m4a",
+  "audio": "audio/4214cf59bf49.m4a",
   "pl": "Freunde"
  },
  "die Freundin": {
   "ru": "подруга; девушка",
-  "audio": "audio/1a5a2a1e5291.m4a",
+  "audio": "audio/9b548f8ec374.m4a",
   "pl": "Freundinnen"
  },
  "der Hund": {
   "ru": "собака",
-  "audio": "audio/69e3026f4074.m4a",
+  "audio": "audio/78d4d74401ac.m4a",
   "pl": "Hunde"
  },
  "die Katze": {
   "ru": "кошка",
-  "audio": "audio/00cd01ce47ae.m4a",
+  "audio": "audio/74e419b8bcf1.m4a",
   "pl": "Katzen"
  },
  "verheiratet": {
@@ -494,36 +494,36 @@
  },
  "geschieden": {
   "ru": "разведён / разведена",
-  "audio": "audio/67b002fb0a9d.m4a"
+  "audio": "audio/7fcbbbfea181.m4a"
  },
  "der Partner": {
   "ru": "партнёр",
-  "audio": "audio/467a5899f26d.m4a",
+  "audio": "audio/1e76760181a4.m4a",
   "pl": "Partner"
  },
  "die Partnerin": {
   "ru": "партнёрша",
-  "audio": "audio/e166b920847a.m4a",
+  "audio": "audio/fc85632a8ce0.m4a",
   "pl": "Partnerinnen"
  },
  "der Gast": {
   "ru": "гость",
-  "audio": "audio/78ce0f055058.m4a",
+  "audio": "audio/4ab4c44ac9c1.m4a",
   "pl": "Gäste"
  },
  "die Tasche": {
   "ru": "сумка",
-  "audio": "audio/8d7ec2dd610d.m4a",
+  "audio": "audio/75a9b8eba7bb.m4a",
   "pl": "Taschen"
  },
  "der Rucksack": {
   "ru": "рюкзак",
-  "audio": "audio/71c1c1309faf.m4a",
+  "audio": "audio/cf239ae58599.m4a",
   "pl": "Rucksäcke"
  },
  "der Schlüssel": {
   "ru": "ключ",
-  "audio": "audio/df9315794234.m4a",
+  "audio": "audio/9e60ae780ed2.m4a",
   "pl": "Schlüssel"
  },
  "das Foto": {
@@ -543,7 +543,7 @@
  },
  "der Saft": {
   "ru": "сок",
-  "audio": "audio/d1c9a2a47946.m4a",
+  "audio": "audio/88474255259e.m4a",
   "pl": "Säfte"
  },
  "die Milch": {
@@ -557,32 +557,32 @@
  },
  "das Bier": {
   "ru": "пиво",
-  "audio": "audio/c7b198fac4ce.m4a",
+  "audio": "audio/8504b97d11e0.m4a",
   "pl": "Biere"
  },
  "der Wein": {
   "ru": "вино",
-  "audio": "audio/1470e790fb1e.m4a",
+  "audio": "audio/6328950136d2.m4a",
   "pl": "Weine"
  },
  "das Brötchen": {
   "ru": "булочка",
-  "audio": "audio/57113600dfde.m4a",
+  "audio": "audio/43f12f48bb15.m4a",
   "pl": "Brötchen"
  },
  "der Käse": {
   "ru": "сыр",
-  "audio": "audio/73cd52b40476.m4a",
+  "audio": "audio/3038082626ab.m4a",
   "pl": "Käse"
  },
  "die Wurst": {
   "ru": "колбаса",
-  "audio": "audio/74bc4ab53d5f.m4a",
+  "audio": "audio/4a6a162f94b8.m4a",
   "pl": "Würste"
  },
  "das Ei": {
   "ru": "яйцо",
-  "audio": "audio/b65e7965f8ef.m4a",
+  "audio": "audio/c2628bfa3ab0.m4a",
   "pl": "Eier"
  },
  "das Fleisch": {
@@ -591,126 +591,126 @@
  },
  "der Fisch": {
   "ru": "рыба",
-  "audio": "audio/5c27680ecf89.m4a",
+  "audio": "audio/244aaec9161a.m4a",
   "pl": "Fische"
  },
  "das Gemüse": {
   "ru": "овощи",
-  "audio": "audio/a9d3ce9cae7e.m4a"
+  "audio": "audio/39fa22fafe91.m4a"
  },
  "der Salat": {
   "ru": "салат",
-  "audio": "audio/c0864a4c1def.m4a",
+  "audio": "audio/c3ff1481d54a.m4a",
   "pl": "Salate"
  },
  "die Suppe": {
   "ru": "суп",
-  "audio": "audio/3f9e36c45adc.m4a",
+  "audio": "audio/d28649cb6669.m4a",
   "pl": "Suppen"
  },
  "der Döner": {
   "ru": "донер",
-  "audio": "audio/9d5fa5bd2e39.m4a",
+  "audio": "audio/d8afaad4fd2c.m4a",
   "pl": "Döner"
  },
  "das Fischbrötchen": {
   "ru": "булочка с рыбой",
-  "audio": "audio/57bbdd7f1fc6.m4a",
+  "audio": "audio/0031001bb2c2.m4a",
   "pl": "Fischbrötchen"
  },
  "die Tomate": {
   "ru": "помидор",
-  "audio": "audio/c794c34de953.m4a",
+  "audio": "audio/b065a97281bd.m4a",
   "pl": "Tomaten"
  },
  "die Pasta": {
   "ru": "паста",
-  "audio": "audio/e42cc9c4c4c2.m4a"
+  "audio": "audio/1c291a3ec35c.m4a"
  },
  "die Speisekarte": {
   "ru": "меню",
-  "audio": "audio/5593936654b9.m4a",
+  "audio": "audio/be821fc215c5.m4a",
   "pl": "Speisekarten"
  },
  "der Kellner": {
   "ru": "официант",
-  "audio": "audio/fc742a79754e.m4a",
+  "audio": "audio/c9dc47f0a519.m4a",
   "pl": "Kellner"
  },
  "die Tasse": {
   "ru": "чашка",
-  "audio": "audio/ab6031d2553e.m4a",
+  "audio": "audio/8dd87f588507.m4a",
   "pl": "Tassen"
  },
  "das Glas": {
   "ru": "стакан, бокал",
-  "audio": "audio/ec3c2bb4ecd7.m4a",
+  "audio": "audio/706859a34811.m4a",
   "pl": "Gläser"
  },
  "das Stück": {
   "ru": "кусок",
-  "audio": "audio/e5eb3415ae3c.m4a",
+  "audio": "audio/040121e1374b.m4a",
   "pl": "Stücke"
  },
  "die Rechnung": {
   "ru": "счёт",
-  "audio": "audio/2f13b6b4133f.m4a",
+  "audio": "audio/5cd641716ba8.m4a",
   "pl": "Rechnungen"
  },
  "das Frühstück": {
   "ru": "завтрак",
-  "audio": "audio/60cf91c1b917.m4a",
+  "audio": "audio/8aa1535b52a9.m4a",
   "pl": "Frühstücke"
  },
  "das Mittagessen": {
   "ru": "обед",
-  "audio": "audio/aac83eb61e23.m4a",
+  "audio": "audio/517931d8bd3b.m4a",
   "pl": "Mittagessen"
  },
  "das Abendessen": {
   "ru": "ужин",
-  "audio": "audio/1cf09bbba1e1.m4a",
+  "audio": "audio/21c9cfc70c4b.m4a",
   "pl": "Abendessen"
  },
  "essen": {
   "ru": "есть",
-  "audio": "audio/352ea3276466.m4a"
+  "audio": "audio/f19fa73ac799.m4a"
  },
  "trinken": {
   "ru": "пить",
-  "audio": "audio/bd60f3a0a073.m4a"
+  "audio": "audio/962f466e135e.m4a"
  },
  "nehmen": {
   "ru": "брать",
-  "audio": "audio/eceab039b81a.m4a"
+  "audio": "audio/42024b18d5b2.m4a"
  },
  "möchten": {
   "ru": "хотел бы",
-  "audio": "audio/0af627a23065.m4a"
+  "audio": "audio/7d6dc5e285e8.m4a"
  },
  "bestellen": {
   "ru": "заказывать",
-  "audio": "audio/768f5441d0fd.m4a"
+  "audio": "audio/eb3fadb04a5a.m4a"
  },
  "bezahlen": {
   "ru": "платить",
-  "audio": "audio/b905fc202110.m4a"
+  "audio": "audio/03ace57ee535.m4a"
  },
  "kochen": {
   "ru": "готовить",
-  "audio": "audio/d471b84fe343.m4a"
+  "audio": "audio/23898d974424.m4a"
  },
  "Hunger haben": {
   "ru": "быть голодным",
-  "audio": "audio/d23d338e921e.m4a"
+  "audio": "audio/a5babb0ee432.m4a"
  },
  "Durst haben": {
   "ru": "хотеть пить",
-  "audio": "audio/e28558365e82.m4a"
+  "audio": "audio/a68061163723.m4a"
  },
  "gern": {
   "ru": "охотно, с удовольствием",
-  "audio": "audio/a0b803cfb3aa.m4a"
+  "audio": "audio/6948cfd2f981.m4a"
  },
  "Guten Appetit!": {
   "ru": "Приятного аппетита!",
@@ -722,7 +722,7 @@
  },
  "ein Kilo": {
   "ru": "килограмм",
-  "audio": "audio/f15ff5593911.m4a"
+  "audio": "audio/d8a59c7be12f.m4a"
  },
  "ein Pfund": {
   "ru": "полкило",
@@ -730,90 +730,90 @@
  },
  "100 Gramm": {
   "ru": "100 граммов",
-  "audio": "audio/c761714c1130.m4a"
+  "audio": "audio/577111fe0ade.m4a"
  },
  "ein Liter": {
   "ru": "литр",
-  "audio": "audio/5cfc4fa93bbb.m4a"
+  "audio": "audio/6a3388871b57.m4a"
  },
  "die Flasche": {
   "ru": "бутылка",
-  "audio": "audio/5827ca40c51e.m4a",
+  "audio": "audio/dab79b9cebba.m4a",
   "pl": "Flaschen"
  },
  "die Packung": {
   "ru": "пачка",
-  "audio": "audio/1b4d6de9e3cc.m4a",
+  "audio": "audio/08abb38f460d.m4a",
   "pl": "Packungen"
  },
  "die Dose": {
   "ru": "банка",
-  "audio": "audio/60b502d85e6b.m4a",
+  "audio": "audio/c582c615d470.m4a",
   "pl": "Dosen"
  },
  "die Tüte": {
   "ru": "пакет",
-  "audio": "audio/2a2b106381d2.m4a",
+  "audio": "audio/24b0e6fc28f1.m4a",
   "pl": "Tüten"
  },
  "der Apfel": {
   "ru": "яблоко",
-  "audio": "audio/2466fbd4102f.m4a",
+  "audio": "audio/12271bfe07da.m4a",
   "pl": "Äpfel"
  },
  "die Banane": {
   "ru": "банан",
-  "audio": "audio/4a1d6bd8828f.m4a",
+  "audio": "audio/fdc8b7d14add.m4a",
   "pl": "Bananen"
  },
  "die Orange": {
   "ru": "апельсин",
-  "audio": "audio/d6d1ef767180.m4a",
+  "audio": "audio/69dbe24f18d0.m4a",
   "pl": "Orangen"
  },
  "die Erdbeere": {
   "ru": "клубника",
-  "audio": "audio/e45c1f03c9e2.m4a",
+  "audio": "audio/bdbc544c48d0.m4a",
   "pl": "Erdbeeren"
  },
  "die Kartoffel": {
   "ru": "картофель",
-  "audio": "audio/275b7e610f68.m4a",
+  "audio": "audio/469d0dcec515.m4a",
   "pl": "Kartoffeln"
  },
  "die Zwiebel": {
   "ru": "лук",
-  "audio": "audio/1e60562f30c6.m4a",
+  "audio": "audio/fcbd6c8942d2.m4a",
   "pl": "Zwiebeln"
  },
  "die Gurke": {
   "ru": "огурец",
-  "audio": "audio/1c134a58636f.m4a",
+  "audio": "audio/8e7842ebb4e4.m4a",
   "pl": "Gurken"
  },
  "der Pullover": {
   "ru": "свитер",
-  "audio": "audio/aceae752cf1f.m4a",
+  "audio": "audio/1da83721463d.m4a",
   "pl": "Pullover"
  },
  "die Hose": {
   "ru": "брюки",
-  "audio": "audio/38b00e6f1d3e.m4a",
+  "audio": "audio/8a5a89448f88.m4a",
   "pl": "Hosen"
  },
  "die Jacke": {
   "ru": "куртка",
-  "audio": "audio/4ef061c08aa9.m4a",
+  "audio": "audio/df7bde3884d2.m4a",
   "pl": "Jacken"
  },
  "der Mantel": {
   "ru": "пальто",
-  "audio": "audio/6a53693e7429.m4a",
+  "audio": "audio/1c8acc46e460.m4a",
   "pl": "Mäntel"
  },
  "das Hemd": {
   "ru": "рубашка",
-  "audio": "audio/d792cd83514a.m4a",
+  "audio": "audio/2d2e92a22978.m4a",
   "pl": "Hemden"
  },
  "das T-Shirt": {
@@ -823,48 +823,48 @@
  },
  "das Kleid": {
   "ru": "платье",
-  "audio": "audio/32adcac9d443.m4a",
+  "audio": "audio/9ba3b61eb50c.m4a",
   "pl": "Kleider"
  },
  "der Rock": {
   "ru": "юбка",
-  "audio": "audio/128e944e81c8.m4a",
+  "audio": "audio/510e2d7790c7.m4a",
   "pl": "Röcke"
  },
  "der Schuh": {
   "ru": "ботинок, туфля",
-  "audio": "audio/8dca36577b3b.m4a",
+  "audio": "audio/91e3f6306ed0.m4a",
   "pl": "Schuhe"
  },
  "die Größe": {
   "ru": "размер",
-  "audio": "audio/01379909260f.m4a",
+  "audio": "audio/fd27f7ba9af0.m4a",
   "pl": "Größen"
  },
  "die Farbe": {
   "ru": "цвет",
-  "audio": "audio/f452656b0e73.m4a",
+  "audio": "audio/03b602751c03.m4a",
   "pl": "Farben"
  },
  "kosten": {
   "ru": "стоить",
-  "audio": "audio/68e1a041d0f9.m4a"
+  "audio": "audio/e3bf7a74d8b6.m4a"
  },
  "kaufen": {
   "ru": "покупать",
-  "audio": "audio/c367ccd7e922.m4a"
+  "audio": "audio/bad85330bd14.m4a"
  },
  "brauchen": {
   "ru": "нуждаться, нужно",
-  "audio": "audio/75496eacd3f2.m4a"
+  "audio": "audio/930c22055585.m4a"
  },
  "suchen": {
   "ru": "искать",
-  "audio": "audio/2b8648906d96.m4a"
+  "audio": "audio/284a8c89a89e.m4a"
  },
  "finden": {
   "ru": "находить, считать",
-  "audio": "audio/a2376bf71cd7.m4a"
+  "audio": "audio/c0e6bcc883a7.m4a"
  },
  "der Euro": {
   "ru": "евро",
@@ -877,7 +877,7 @@
  },
  "teuer": {
   "ru": "дорогой",
-  "audio": "audio/c101f9801004.m4a"
+  "audio": "audio/8c86203f9f88.m4a"
  },
  "groß": {
   "ru": "большой",
@@ -885,7 +885,7 @@
  },
  "klein": {
   "ru": "маленький",
-  "audio": "audio/9365e85e6ab0.m4a"
+  "audio": "audio/2fc07858c66f.m4a"
  },
  "lang": {
   "ru": "длинный",
@@ -897,11 +897,11 @@
  },
  "schön": {
   "ru": "красивый",
-  "audio": "audio/4f23a86c699e.m4a"
+  "audio": "audio/320761b0a0f7.m4a"
  },
  "zu": {
   "ru": "слишком",
-  "audio": "audio/74d649acb59c.m4a"
+  "audio": "audio/d8c5c218807b.m4a"
  },
  "Wie spät ist es?": {
   "ru": "Который час?",
@@ -913,22 +913,22 @@
  },
  "die Uhr": {
   "ru": "часы; час на часах",
-  "audio": "audio/e43a89a4891a.m4a",
+  "audio": "audio/3a1082168a41.m4a",
   "pl": "Uhren"
  },
  "die Stunde": {
   "ru": "час как отрезок времени",
-  "audio": "audio/042338c8c94f.m4a",
+  "audio": "audio/fac0baf08182.m4a",
   "pl": "Stunden"
  },
  "die Minute": {
   "ru": "минута",
-  "audio": "audio/ce38142471fa.m4a",
+  "audio": "audio/34fe05733e3c.m4a",
   "pl": "Minuten"
  },
  "das Viertel": {
   "ru": "четверть",
-  "audio": "audio/0f7dfc66a744.m4a",
+  "audio": "audio/ad5c16a6bddf.m4a",
   "pl": "Viertel"
  },
  "halb": {
@@ -941,11 +941,11 @@
  },
  "vor": {
   "ru": "до, без",
-  "audio": "audio/0e84ac67219f.m4a"
+  "audio": "audio/ae7b5f3006ce.m4a"
  },
  "früh": {
   "ru": "рано",
-  "audio": "audio/f45abb8eb5fc.m4a"
+  "audio": "audio/1e7119b3c568.m4a"
  },
  "spät": {
   "ru": "поздно",
@@ -953,187 +953,187 @@
  },
  "dauern": {
   "ru": "длиться",
-  "audio": "audio/093bc7c7e61a.m4a"
+  "audio": "audio/12b52ed58c69.m4a"
  },
  "der Morgen": {
   "ru": "утро",
-  "audio": "audio/d171243f6fc2.m4a",
+  "audio": "audio/2747c20807d6.m4a",
   "pl": "Morgen"
  },
  "der Vormittag": {
   "ru": "время до обеда",
-  "audio": "audio/5d2431ea894f.m4a",
+  "audio": "audio/43f148010083.m4a",
   "pl": "Vormittage"
  },
  "der Mittag": {
   "ru": "полдень, обед",
-  "audio": "audio/06f7cbc96971.m4a",
+  "audio": "audio/018086f6704b.m4a",
   "pl": "Mittage"
  },
  "der Nachmittag": {
   "ru": "время после обеда",
-  "audio": "audio/9f4f14c3138f.m4a",
+  "audio": "audio/f39cae06deb0.m4a",
   "pl": "Nachmittage"
  },
  "der Abend": {
   "ru": "вечер",
-  "audio": "audio/9acc6070ebe3.m4a",
+  "audio": "audio/da420ceb2798.m4a",
   "pl": "Abende"
  },
  "die Nacht": {
   "ru": "ночь",
-  "audio": "audio/475dec7295cd.m4a",
+  "audio": "audio/28954177a2f3.m4a",
   "pl": "Nächte"
  },
  "der Montag": {
   "ru": "понедельник",
-  "audio": "audio/5dc2ecff374c.m4a",
+  "audio": "audio/578094fead94.m4a",
   "pl": "Montage"
  },
  "der Dienstag": {
   "ru": "вторник",
-  "audio": "audio/d5c86662b665.m4a",
+  "audio": "audio/b2685c2cdeb8.m4a",
   "pl": "Dienstage"
  },
  "der Mittwoch": {
   "ru": "среда",
-  "audio": "audio/a6a7d4b35143.m4a",
+  "audio": "audio/85ae66c2091a.m4a",
   "pl": "Mittwoche"
  },
  "der Donnerstag": {
   "ru": "четверг",
-  "audio": "audio/e7f720753467.m4a",
+  "audio": "audio/ac202a9b2d38.m4a",
   "pl": "Donnerstage"
  },
  "der Freitag": {
   "ru": "пятница",
-  "audio": "audio/c8c16c62ba70.m4a",
+  "audio": "audio/4e453f1e05ef.m4a",
   "pl": "Freitage"
  },
  "der Samstag": {
   "ru": "суббота",
-  "audio": "audio/15f43d97309a.m4a",
+  "audio": "audio/c91767b8b309.m4a",
   "pl": "Samstage"
  },
  "der Sonntag": {
   "ru": "воскресенье",
-  "audio": "audio/3a7b2c026b0d.m4a",
+  "audio": "audio/63443c7eb253.m4a",
   "pl": "Sonntage"
  },
  "die Woche": {
   "ru": "неделя",
-  "audio": "audio/1f75f8bdea9f.m4a",
+  "audio": "audio/ce4e4c371a06.m4a",
   "pl": "Wochen"
  },
  "das Wochenende": {
   "ru": "выходные",
-  "audio": "audio/9e5e18925cf3.m4a",
+  "audio": "audio/209366eb46eb.m4a",
   "pl": "Wochenenden"
  },
  "heute": {
   "ru": "сегодня",
-  "audio": "audio/5327a7b12d97.m4a"
+  "audio": "audio/7b3f61404807.m4a"
  },
  "morgen": {
   "ru": "завтра",
-  "audio": "audio/fae4533b53d9.m4a"
+  "audio": "audio/14e2bb0d51ed.m4a"
  },
  "aufstehen": {
   "ru": "вставать",
-  "audio": "audio/5832a3dac46d.m4a"
+  "audio": "audio/29b14f58d712.m4a"
  },
  "frühstücken": {
   "ru": "завтракать",
-  "audio": "audio/60c3c835cbbe.m4a"
+  "audio": "audio/bdda0c82320b.m4a"
  },
  "duschen": {
   "ru": "принимать душ",
-  "audio": "audio/580050dad9b2.m4a"
+  "audio": "audio/7814b7a2e9a9.m4a"
  },
  "anfangen": {
   "ru": "начинать(ся)",
-  "audio": "audio/c6a85e2ac863.m4a"
+  "audio": "audio/279dacb72ea7.m4a"
  },
  "aufhören": {
   "ru": "заканчивать(ся)",
-  "audio": "audio/0be6f964aa16.m4a"
+  "audio": "audio/0f8e3ed30f46.m4a"
  },
  "arbeiten": {
   "ru": "работать",
-  "audio": "audio/01203e1d1997.m4a"
+  "audio": "audio/42150bfb4110.m4a"
  },
  "einkaufen": {
   "ru": "делать покупки",
-  "audio": "audio/1ef7fa29aedf.m4a"
+  "audio": "audio/058a3d64b804.m4a"
  },
  "aufräumen": {
   "ru": "убирать(ся)",
-  "audio": "audio/243d905c12a6.m4a"
+  "audio": "audio/e9e5e05386a7.m4a"
  },
  "anrufen": {
   "ru": "звонить",
-  "audio": "audio/20e4b3322465.m4a"
+  "audio": "audio/dcce8f28c08b.m4a"
  },
  "fernsehen": {
   "ru": "смотреть телевизор",
-  "audio": "audio/17ba850516a1.m4a"
+  "audio": "audio/ef09b37894e7.m4a"
  },
  "schlafen": {
   "ru": "спать",
-  "audio": "audio/5583767a3b94.m4a"
+  "audio": "audio/694c18f32e34.m4a"
  },
  "der Feierabend": {
   "ru": "конец рабочего дня",
-  "audio": "audio/dbf107836048.m4a",
+  "audio": "audio/7f804c47a312.m4a",
   "pl": "Feierabende"
  },
  "schwimmen": {
   "ru": "плавать",
-  "audio": "audio/57e5bea4efa9.m4a"
+  "audio": "audio/3cf38e4626f6.m4a"
  },
  "tanzen": {
   "ru": "танцевать",
-  "audio": "audio/59c24a0ddb8b.m4a"
+  "audio": "audio/43f20d53a46a.m4a"
  },
  "lesen": {
   "ru": "читать",
-  "audio": "audio/10546dcb0afc.m4a"
+  "audio": "audio/bb3be127788b.m4a"
  },
  "grillen": {
   "ru": "жарить на гриле",
-  "audio": "audio/17f376467b3f.m4a"
+  "audio": "audio/d6126f7612e2.m4a"
  },
  "Fußball spielen": {
   "ru": "играть в футбол",
-  "audio": "audio/49e3bd6f6dbe.m4a"
+  "audio": "audio/3b87fedc9a78.m4a"
  },
  "Tennis spielen": {
   "ru": "играть в теннис",
-  "audio": "audio/fb48750688dc.m4a"
+  "audio": "audio/cc7f23b313e5.m4a"
  },
  "Gitarre spielen": {
   "ru": "играть на гитаре",
-  "audio": "audio/37b408d4a28b.m4a"
+  "audio": "audio/a9b747701eae.m4a"
  },
  "Fahrrad fahren": {
   "ru": "кататься на велосипеде",
-  "audio": "audio/9827d90d3b03.m4a"
+  "audio": "audio/55f956bfe350.m4a"
  },
  "Musik hören": {
   "ru": "слушать музыку",
-  "audio": "audio/488480e0407a.m4a"
+  "audio": "audio/fb281fab2317.m4a"
  },
  "fotografieren": {
   "ru": "фотографировать",
-  "audio": "audio/43e3242034b3.m4a"
+  "audio": "audio/f632c965686c.m4a"
  },
  "Freunde treffen": {
   "ru": "встречаться с друзьями",
-  "audio": "audio/8dfda4de090f.m4a"
+  "audio": "audio/95032cb971e7.m4a"
  },
  "ins Kino gehen": {
   "ru": "ходить в кино",
-  "audio": "audio/c19b6f75bd84.m4a"
+  "audio": "audio/e917659d778d.m4a"
  },
  "die Freizeit": {
   "ru": "свободное время",
@@ -1150,7 +1150,7 @@
  },
  "der Film": {
   "ru": "фильм",
-  "audio": "audio/b4d53a6c9ade.m4a",
+  "audio": "audio/89598266afc9.m4a",
   "pl": "Filme"
  },
  "das Kino": {
@@ -1160,12 +1160,12 @@
  },
  "das Konzert": {
   "ru": "концерт",
-  "audio": "audio/00e4c965e604.m4a",
+  "audio": "audio/0ee348f5ea7b.m4a",
   "pl": "Konzerte"
  },
  "das Schwimmbad": {
   "ru": "бассейн",
-  "audio": "audio/c3b2d0c60a45.m4a",
+  "audio": "audio/1f55c167e953.m4a",
   "pl": "Schwimmbäder"
  },
  "der Park": {
@@ -1180,24 +1180,24 @@
  },
  "das Buch": {
   "ru": "книга",
-  "audio": "audio/c2ef2180aea9.m4a",
+  "audio": "audio/93a3e5694799.m4a",
   "pl": "Bücher"
  },
  "lieber": {
   "ru": "охотнее, лучше",
-  "audio": "audio/d77b7cfdf799.m4a"
+  "audio": "audio/37b9dc5b9209.m4a"
  },
  "am liebsten": {
   "ru": "больше всего",
-  "audio": "audio/af458aec4209.m4a"
+  "audio": "audio/21045c95ddf0.m4a"
  },
  "nicht gern": {
   "ru": "неохотно",
-  "audio": "audio/cde3f763faec.m4a"
+  "audio": "audio/7625a0e9dc7a.m4a"
  },
  "immer": {
   "ru": "всегда",
-  "audio": "audio/ad2f38653c85.m4a"
+  "audio": "audio/6510181ce38a.m4a"
  },
  "oft": {
   "ru": "часто",
@@ -1205,135 +1205,135 @@
  },
  "manchmal": {
   "ru": "иногда",
-  "audio": "audio/25e46baabe7f.m4a"
+  "audio": "audio/c963bee5d806.m4a"
  },
  "nie": {
   "ru": "никогда",
-  "audio": "audio/0b20cb951806.m4a"
+  "audio": "audio/2ad43f52ec46.m4a"
  },
  "zusammen": {
   "ru": "вместе",
-  "audio": "audio/e23f804d5200.m4a"
+  "audio": "audio/1a03d3ef987b.m4a"
  },
  "können": {
   "ru": "уметь, мочь",
-  "audio": "audio/6a6afd2cff99.m4a"
+  "audio": "audio/5b790054b8b0.m4a"
  },
  "wollen": {
   "ru": "хотеть",
-  "audio": "audio/017933a67e28.m4a"
+  "audio": "audio/7ba4f7cde909.m4a"
  },
  "mitkommen": {
   "ru": "пойти вместе",
-  "audio": "audio/3bf2782157a8.m4a"
+  "audio": "audio/8dfba36d8361.m4a"
  },
  "einladen": {
   "ru": "приглашать",
-  "audio": "audio/7b0918e31def.m4a"
+  "audio": "audio/2a8801c3387e.m4a"
  },
  "Zeit haben": {
   "ru": "быть свободным",
-  "audio": "audio/80280b4807eb.m4a"
+  "audio": "audio/bf4a8202a61f.m4a"
  },
  "passen": {
   "ru": "подходить",
-  "audio": "audio/0eabeaf5796a.m4a"
+  "audio": "audio/a427577f75f4.m4a"
  },
  "leider": {
   "ru": "к сожалению",
-  "audio": "audio/be42754b33aa.m4a"
+  "audio": "audio/6720750aa90c.m4a"
  },
  "Schade!": {
   "ru": "Жаль!",
-  "audio": "audio/857519d7c116.m4a"
+  "audio": "audio/e50b21078187.m4a"
  },
  "die Idee": {
   "ru": "идея",
-  "audio": "audio/1d21b340a7bf.m4a",
+  "audio": "audio/1da645382918.m4a",
   "pl": "Ideen"
  },
  "die Einladung": {
   "ru": "приглашение",
-  "audio": "audio/752e7aab234d.m4a",
+  "audio": "audio/d81c0545ede2.m4a",
   "pl": "Einladungen"
  },
  "die Wohnung": {
   "ru": "квартира",
-  "audio": "audio/51cba7a37dfc.m4a",
+  "audio": "audio/8060611db543.m4a",
   "pl": "Wohnungen"
  },
  "das Haus": {
   "ru": "дом, здание",
-  "audio": "audio/6241f55a929b.m4a",
+  "audio": "audio/cf0914e0e056.m4a",
   "pl": "Häuser"
  },
  "das Zimmer": {
   "ru": "комната",
-  "audio": "audio/0a24d45ed99e.m4a",
+  "audio": "audio/47cdae5617d7.m4a",
   "pl": "Zimmer"
  },
  "das Wohnzimmer": {
   "ru": "гостиная",
-  "audio": "audio/980a92f26afc.m4a",
+  "audio": "audio/67764d160864.m4a",
   "pl": "Wohnzimmer"
  },
  "das Schlafzimmer": {
   "ru": "спальня",
-  "audio": "audio/087a2dd36365.m4a",
+  "audio": "audio/519f7f6b0dcc.m4a",
   "pl": "Schlafzimmer"
  },
  "die Küche": {
   "ru": "кухня",
-  "audio": "audio/55c93c8a5fd2.m4a",
+  "audio": "audio/2b92de26a2d4.m4a",
   "pl": "Küchen"
  },
  "das Bad": {
   "ru": "ванная",
-  "audio": "audio/16b452fa013d.m4a",
+  "audio": "audio/a5c7a59a85d0.m4a",
   "pl": "Bäder"
  },
  "der Flur": {
   "ru": "прихожая",
-  "audio": "audio/80cb6c0b932d.m4a",
+  "audio": "audio/10b39b71ff5e.m4a",
   "pl": "Flure"
  },
  "der Balkon": {
   "ru": "балкон",
-  "audio": "audio/973ff8c0b9b6.m4a",
+  "audio": "audio/635d88ad7ae3.m4a",
   "pl": "Balkone"
  },
  "der Keller": {
   "ru": "подвал",
-  "audio": "audio/2d8505ffd516.m4a",
+  "audio": "audio/935b3ca8f9bd.m4a",
   "pl": "Keller"
  },
  "das Treppenhaus": {
   "ru": "лестничная клетка",
-  "audio": "audio/edd96031fc41.m4a",
+  "audio": "audio/fe6bf8733b66.m4a",
   "pl": "Treppenhäuser"
  },
  "das Wohnheim": {
   "ru": "общежитие",
-  "audio": "audio/d80a480f044e.m4a",
+  "audio": "audio/6dc6eb251a2f.m4a",
   "pl": "Wohnheime"
  },
  "die Möbel": {
   "ru": "мебель",
-  "audio": "audio/4f61d4dc2d14.m4a"
+  "audio": "audio/14bdeb0eff14.m4a"
  },
  "der Tisch": {
   "ru": "стол",
-  "audio": "audio/b0119c5ac197.m4a",
+  "audio": "audio/116b42313102.m4a",
   "pl": "Tische"
  },
  "der Stuhl": {
   "ru": "стул",
-  "audio": "audio/e644af7b9eb7.m4a",
+  "audio": "audio/f0ab668bbdd2.m4a",
   "pl": "Stühle"
  },
  "das Bett": {
   "ru": "кровать",
-  "audio": "audio/6b6c24b912c4.m4a",
+  "audio": "audio/e85e889de0db.m4a",
   "pl": "Betten"
  },
  "das Sofa": {
@@ -1343,46 +1343,46 @@
  },
  "der Schrank": {
   "ru": "шкаф",
-  "audio": "audio/bfcefcc26553.m4a",
+  "audio": "audio/6a7ac6c61fa5.m4a",
   "pl": "Schränke"
  },
  "der Kleiderschrank": {
   "ru": "платяной шкаф",
-  "audio": "audio/755ac39d9f88.m4a",
+  "audio": "audio/971bdb44cc7c.m4a",
   "pl": "Kleiderschränke"
  },
  "der Kühlschrank": {
   "ru": "холодильник",
-  "audio": "audio/ebdeb967de95.m4a",
+  "audio": "audio/9649a35df998.m4a",
   "pl": "Kühlschränke"
  },
  "der Herd": {
   "ru": "плита",
-  "audio": "audio/d8584e77130a.m4a",
+  "audio": "audio/d991c14e3b70.m4a",
   "pl": "Herde"
  },
  "die Waschmaschine": {
   "ru": "стиральная машина",
-  "audio": "audio/7fa4ad58ade8.m4a",
+  "audio": "audio/f344cc84e7a9.m4a",
   "pl": "Waschmaschinen"
  },
  "der Schreibtisch": {
   "ru": "письменный стол",
-  "audio": "audio/f187334c8366.m4a",
+  "audio": "audio/9cc9c2f015e7.m4a",
   "pl": "Schreibtische"
  },
  "die Lampe": {
   "ru": "лампа",
-  "audio": "audio/b34283510d3f.m4a",
+  "audio": "audio/8ca6f46d0bdd.m4a",
   "pl": "Lampen"
  },
  "groß – klein": {
   "ru": "большой — маленький",
-  "audio": "audio/3e6856b76648.m4a"
+  "audio": "audio/9b25f9487747.m4a"
  },
  "hell – dunkel": {
   "ru": "светлый — тёмный",
-  "audio": "audio/c459ee8fa9f2.m4a"
+  "audio": "audio/655a7bc51b39.m4a"
  },
  "ruhig – laut": {
   "ru": "тихий — шумный",
@@ -1398,11 +1398,11 @@
  },
  "modern": {
   "ru": "современный",
-  "audio": "audio/1c5c2c80e859.m4a"
+  "audio": "audio/d9aa9bfd3a37.m4a"
  },
  "frei": {
   "ru": "свободный",
-  "audio": "audio/c8146f5308e2.m4a"
+  "audio": "audio/440aed36940a.m4a"
  },
  "möbliert": {
   "ru": "с мебелью",
@@ -1414,50 +1414,50 @@
  },
  "die Anzeige": {
   "ru": "объявление",
-  "audio": "audio/f99595a42112.m4a",
+  "audio": "audio/48ffa33a6e01.m4a",
   "pl": "Anzeigen"
  },
  "mieten": {
   "ru": "снимать",
-  "audio": "audio/59fdaa72393c.m4a"
+  "audio": "audio/28a5ad5ee4c8.m4a"
  },
  "der Vermieter": {
   "ru": "арендодатель",
-  "audio": "audio/8207da720d96.m4a",
+  "audio": "audio/43a80624c28e.m4a",
   "pl": "Vermieter"
  },
  "die Miete": {
   "ru": "арендная плата",
-  "audio": "audio/5991f37737ac.m4a",
+  "audio": "audio/3811762fb41a.m4a",
   "pl": "Mieten"
  },
  "die Kaltmiete": {
   "ru": "аренда без коммунальных",
-  "audio": "audio/c17f0e9b2685.m4a",
+  "audio": "audio/37f4efc4b583.m4a",
   "pl": "Kaltmieten"
  },
  "die Nebenkosten": {
   "ru": "коммунальные платежи",
-  "audio": "audio/69302c0a7e19.m4a"
+  "audio": "audio/073cb3d589c5.m4a"
  },
  "die Warmmiete": {
   "ru": "аренда вместе с коммунальными",
-  "audio": "audio/cd1b23e12368.m4a",
+  "audio": "audio/28768a8aff9e.m4a",
   "pl": "Warmmieten"
  },
  "die Heizung": {
   "ru": "отопление",
-  "audio": "audio/67e3d5502329.m4a",
+  "audio": "audio/3ecf85a9503e.m4a",
   "pl": "Heizungen"
  },
  "der Quadratmeter": {
   "ru": "квадратный метр",
-  "audio": "audio/a4941cc5d57b.m4a",
+  "audio": "audio/36cf73bbfdbf.m4a",
   "pl": "Quadratmeter"
  },
  "das Erdgeschoss": {
   "ru": "первый этаж",
-  "audio": "audio/d6b10894bdfe.m4a",
+  "audio": "audio/387fac9a168e.m4a",
   "pl": "Erdgeschosse"
  },
  "der Stock": {
@@ -1467,22 +1467,22 @@
  },
  "der Bahnhof": {
   "ru": "вокзал",
-  "audio": "audio/b9e1a0624846.m4a",
+  "audio": "audio/bd4ddb46390e.m4a",
   "pl": "Bahnhöfe"
  },
  "die Haltestelle": {
   "ru": "остановка",
-  "audio": "audio/05f685b1a1ab.m4a",
+  "audio": "audio/55d2fd2c5bf1.m4a",
   "pl": "Haltestellen"
  },
  "der Platz": {
   "ru": "площадь",
-  "audio": "audio/0e0e5149d6fb.m4a",
+  "audio": "audio/b0cfc415a361.m4a",
   "pl": "Plätze"
  },
  "die Straße": {
   "ru": "улица",
-  "audio": "audio/77fea95e1ac2.m4a",
+  "audio": "audio/ab9329624d7d.m4a",
   "pl": "Straßen"
  },
  "die Post": {
@@ -1491,62 +1491,62 @@
  },
  "die Bank": {
   "ru": "банк",
-  "audio": "audio/c57c5676a342.m4a",
+  "audio": "audio/8b53d6ce1fba.m4a",
   "pl": "Banken"
  },
  "die Apotheke": {
   "ru": "аптека",
-  "audio": "audio/65b50c1a94a8.m4a",
+  "audio": "audio/3674fdf757a8.m4a",
   "pl": "Apotheken"
  },
  "der Supermarkt": {
   "ru": "супермаркет",
-  "audio": "audio/09d7abfc3ad1.m4a",
+  "audio": "audio/4c4f77d9f8a2.m4a",
   "pl": "Supermärkte"
  },
  "das Rathaus": {
   "ru": "ратуша, мэрия",
-  "audio": "audio/68006ae07fe5.m4a",
+  "audio": "audio/ac0f5b91a129.m4a",
   "pl": "Rathäuser"
  },
  "das Bürgeramt": {
   "ru": "бюро регистрации",
-  "audio": "audio/106c21b901c3.m4a",
+  "audio": "audio/f634e94d9dd8.m4a",
   "pl": "Bürgerämter"
  },
  "das Krankenhaus": {
   "ru": "больница",
-  "audio": "audio/6e4005ad510a.m4a",
+  "audio": "audio/8730f5c855e7.m4a",
   "pl": "Krankenhäuser"
  },
  "der Arzt": {
   "ru": "врач",
-  "audio": "audio/df79b4cec3b2.m4a",
+  "audio": "audio/0e8ad8f67d0e.m4a",
   "pl": "Ärzte"
  },
  "der Bus": {
   "ru": "автобус",
-  "audio": "audio/5c26d1e4c622.m4a",
+  "audio": "audio/270bcd22f382.m4a",
   "pl": "Busse"
  },
  "die Straßenbahn": {
   "ru": "трамвай",
-  "audio": "audio/eb05aeb0ca77.m4a",
+  "audio": "audio/883c26d31305.m4a",
   "pl": "Straßenbahnen"
  },
  "die S-Bahn": {
   "ru": "городская электричка",
-  "audio": "audio/ccd7e23959d1.m4a",
+  "audio": "audio/5b013ac034ce.m4a",
   "pl": "S-Bahnen"
  },
  "die U-Bahn": {
   "ru": "метро",
-  "audio": "audio/92b6769811e0.m4a",
+  "audio": "audio/e590180170b4.m4a",
   "pl": "U-Bahnen"
  },
  "der Zug": {
   "ru": "поезд",
-  "audio": "audio/fbaed702927d.m4a",
+  "audio": "audio/4d0a89bc3f91.m4a",
   "pl": "Züge"
  },
  "das Auto": {
@@ -1556,7 +1556,7 @@
  },
  "das Fahrrad": {
   "ru": "велосипед",
-  "audio": "audio/94aad7c9fb24.m4a",
+  "audio": "audio/206798d14d8b.m4a",
   "pl": "Fahrräder"
  },
  "das Taxi": {
@@ -1570,17 +1570,17 @@
  },
  "die Fahrkarte": {
   "ru": "билет",
-  "audio": "audio/298d90a0d52c.m4a",
+  "audio": "audio/2de3bedb9f6e.m4a",
   "pl": "Fahrkarten"
  },
  "das Gleis": {
   "ru": "путь на вокзале",
-  "audio": "audio/cb93bec4ea43.m4a",
+  "audio": "audio/4977478fdb73.m4a",
   "pl": "Gleise"
  },
  "die Linie": {
   "ru": "маршрут, линия",
-  "audio": "audio/d0d986b156ce.m4a",
+  "audio": "audio/8c5dd371d02f.m4a",
   "pl": "Linien"
  },
  "Entschuldigung!": {
@@ -1589,11 +1589,11 @@
  },
  "Wie komme ich zum …?": {
   "ru": "Как пройти к …?",
-  "audio": "audio/d15ba7790b45.m4a"
+  "audio": "audio/c72175a05710.m4a"
  },
  "Wohin?": {
   "ru": "Куда?",
-  "audio": "audio/0713a8a93dfb.m4a"
+  "audio": "audio/e1b7141ec971.m4a"
  },
  "geradeaus": {
   "ru": "прямо",
@@ -1609,7 +1609,7 @@
  },
  "die Ampel": {
   "ru": "светофор",
-  "audio": "audio/f387bf8734f6.m4a",
+  "audio": "audio/a1240515ecbb.m4a",
   "pl": "Ampeln"
  },
  "weit": {
@@ -1618,78 +1618,78 @@
  },
  "in der Nähe": {
   "ru": "поблизости",
-  "audio": "audio/c846a4998d73.m4a"
+  "audio": "audio/a1a654d81a4c.m4a"
  },
  "einsteigen": {
   "ru": "садиться в транспорт",
-  "audio": "audio/36dd7a80c618.m4a"
+  "audio": "audio/153e9953fe89.m4a"
  },
  "aussteigen": {
   "ru": "выходить из транспорта",
-  "audio": "audio/bf50ab118d55.m4a"
+  "audio": "audio/a1e4134da8de.m4a"
  },
  "umsteigen": {
   "ru": "пересаживаться",
-  "audio": "audio/581464bf6ae5.m4a"
+  "audio": "audio/d992b7721b2d.m4a"
  },
  "der Kopf": {
   "ru": "голова",
-  "audio": "audio/0a9af49274da.m4a",
+  "audio": "audio/1a9d1024e064.m4a",
   "pl": "Köpfe"
  },
  "das Auge": {
   "ru": "глаз",
-  "audio": "audio/ac9a0d54bd5f.m4a",
+  "audio": "audio/872222af082c.m4a",
   "pl": "Augen"
  },
  "das Ohr": {
   "ru": "ухо",
-  "audio": "audio/a2f15fb2ebc9.m4a",
+  "audio": "audio/8c49acb8195d.m4a",
   "pl": "Ohren"
  },
  "die Nase": {
   "ru": "нос",
-  "audio": "audio/e4b7c4c2526f.m4a",
+  "audio": "audio/16743b5d9072.m4a",
   "pl": "Nasen"
  },
  "der Zahn": {
   "ru": "зуб",
-  "audio": "audio/8c6502a6c336.m4a",
+  "audio": "audio/39e0b5549c5e.m4a",
   "pl": "Zähne"
  },
  "der Hals": {
   "ru": "горло, шея",
-  "audio": "audio/9793e8c1a4d0.m4a",
+  "audio": "audio/29839384f795.m4a",
   "pl": "Hälse"
  },
  "der Arm": {
   "ru": "рука (от плеча)",
-  "audio": "audio/ba5642d502e2.m4a",
+  "audio": "audio/97d19772d96d.m4a",
   "pl": "Arme"
  },
  "die Hand": {
   "ru": "кисть руки",
-  "audio": "audio/2958431260fc.m4a",
+  "audio": "audio/7a285a157335.m4a",
   "pl": "Hände"
  },
  "der Bauch": {
   "ru": "живот",
-  "audio": "audio/3f82ba556272.m4a",
+  "audio": "audio/21c168af1a58.m4a",
   "pl": "Bäuche"
  },
  "der Rücken": {
   "ru": "спина",
-  "audio": "audio/ae863dec357a.m4a",
+  "audio": "audio/af9ba5cfd982.m4a",
   "pl": "Rücken"
  },
  "das Bein": {
   "ru": "нога",
-  "audio": "audio/81d020f9482c.m4a",
+  "audio": "audio/e19525f25966.m4a",
   "pl": "Beine"
  },
  "der Fuß": {
   "ru": "ступня",
-  "audio": "audio/f73efc050ee2.m4a",
+  "audio": "audio/2f90590722bf.m4a",
   "pl": "Füße"
  },
  "krank": {
@@ -1702,29 +1702,29 @@
  },
  "die Erkältung": {
   "ru": "простуда",
-  "audio": "audio/d66c8ef675bb.m4a",
+  "audio": "audio/65a5be930395.m4a",
   "pl": "Erkältungen"
  },
  "das Fieber": {
   "ru": "температура, жар",
-  "audio": "audio/55dc4cc205ec.m4a"
+  "audio": "audio/da9641c8e28b.m4a"
  },
  "der Husten": {
   "ru": "кашель",
-  "audio": "audio/b4494ce3783e.m4a"
+  "audio": "audio/4a637866bba1.m4a"
  },
  "der Schnupfen": {
   "ru": "насморк",
-  "audio": "audio/0a80b6a6de54.m4a"
+  "audio": "audio/a63850605372.m4a"
  },
  "der Schmerz": {
   "ru": "боль",
-  "audio": "audio/d5ded5e1da0a.m4a",
+  "audio": "audio/0f06630d0fd3.m4a",
   "pl": "Schmerzen"
  },
  "wehtun": {
   "ru": "болеть",
-  "audio": "audio/1f6f5c66b1f6.m4a"
+  "audio": "audio/0ea529a677a0.m4a"
  },
  "Gute Besserung!": {
   "ru": "Выздоравливайте!",
@@ -1732,162 +1732,162 @@
  },
  "die Praxis": {
   "ru": "кабинет врача",
-  "audio": "audio/843941125ca1.m4a",
+  "audio": "audio/982822719f91.m4a",
   "pl": "Praxen"
  },
  "das Wartezimmer": {
   "ru": "приёмная",
-  "audio": "audio/1a75f582a2a4.m4a",
+  "audio": "audio/3c7a9cae27ad.m4a",
   "pl": "Wartezimmer"
  },
  "der Termin": {
   "ru": "запись, назначенное время",
-  "audio": "audio/6608b0bc6e50.m4a",
+  "audio": "audio/437dc48b0583.m4a",
   "pl": "Termine"
  },
  "die Versichertenkarte": {
   "ru": "карта медицинской страховки",
-  "audio": "audio/381258c4b4e4.m4a",
+  "audio": "audio/b9ebec55612b.m4a",
   "pl": "Versichertenkarten"
  },
  "das Rezept": {
   "ru": "рецепт",
-  "audio": "audio/efc00f536838.m4a",
+  "audio": "audio/8b64e318459a.m4a",
   "pl": "Rezepte"
  },
  "die Tablette": {
   "ru": "таблетка",
-  "audio": "audio/dd1be24374ad.m4a",
+  "audio": "audio/e8c858b0aff1.m4a",
   "pl": "Tabletten"
  },
  "das Medikament": {
   "ru": "лекарство",
-  "audio": "audio/07e107e9a1a1.m4a",
+  "audio": "audio/eb413b4ee5a1.m4a",
   "pl": "Medikamente"
  },
  "bleiben": {
   "ru": "оставаться",
-  "audio": "audio/d2b6d50e6684.m4a"
+  "audio": "audio/42ac84744166.m4a"
  },
  "gehen": {
   "ru": "идти",
-  "audio": "audio/dfc8038b8ca5.m4a"
+  "audio": "audio/3653f3b0c978.m4a"
  },
  "rauchen": {
   "ru": "курить",
-  "audio": "audio/1d3c0cd7892e.m4a"
+  "audio": "audio/db58fa14f297.m4a"
  },
  "müssen": {
   "ru": "быть должным, нужно",
-  "audio": "audio/c4f51001283f.m4a"
+  "audio": "audio/020a8171d4c2.m4a"
  },
  "dürfen": {
   "ru": "иметь право, можно",
-  "audio": "audio/c709bfdc1ec1.m4a"
+  "audio": "audio/ad3cba9feedc.m4a"
  },
  "der Lehrer": {
   "ru": "учитель",
-  "audio": "audio/782f1d0e35b3.m4a",
+  "audio": "audio/e19536e5a4d1.m4a",
   "pl": "Lehrer"
  },
  "die Lehrerin": {
   "ru": "учительница",
-  "audio": "audio/df52c915745f.m4a",
+  "audio": "audio/bb8042a40e98.m4a",
   "pl": "Lehrerinnen"
  },
  "die Ärztin": {
   "ru": "врач (женщина)",
-  "audio": "audio/f65c0a7e3cc6.m4a",
+  "audio": "audio/90cc4e03aebc.m4a",
   "pl": "Ärztinnen"
  },
  "der Koch": {
   "ru": "повар",
-  "audio": "audio/4efc415aecc9.m4a",
+  "audio": "audio/e7b9dbd5e2e1.m4a",
   "pl": "Köche"
  },
  "die Köchin": {
   "ru": "повар (женщина)",
-  "audio": "audio/f8eeb021fde6.m4a",
+  "audio": "audio/fcc6c5bb58fb.m4a",
   "pl": "Köchinnen"
  },
  "der Verkäufer": {
   "ru": "продавец",
-  "audio": "audio/8fe32eafa7d1.m4a",
+  "audio": "audio/48e4e9bd8549.m4a",
   "pl": "Verkäufer"
  },
  "die Verkäuferin": {
   "ru": "продавщица",
-  "audio": "audio/a777750d1949.m4a",
+  "audio": "audio/e1a3741276d1.m4a",
   "pl": "Verkäuferinnen"
  },
  "die Kellnerin": {
   "ru": "официантка",
-  "audio": "audio/0fd02909e634.m4a",
+  "audio": "audio/a9ff58aac23b.m4a",
   "pl": "Kellnerinnen"
  },
  "der Ingenieur": {
   "ru": "инженер",
-  "audio": "audio/cbea907fbe16.m4a",
+  "audio": "audio/a0d01f5b69a4.m4a",
   "pl": "Ingenieure"
  },
  "der Friseur": {
   "ru": "парикмахер",
-  "audio": "audio/dbaf61145ee6.m4a",
+  "audio": "audio/8432b535a23e.m4a",
   "pl": "Friseure"
  },
  "der Informatiker": {
   "ru": "программист, айтишник",
-  "audio": "audio/38df6f54dcc9.m4a",
+  "audio": "audio/8ff01806c962.m4a",
   "pl": "Informatiker"
  },
  "der Mechaniker": {
   "ru": "механик",
-  "audio": "audio/4a034c21dd3a.m4a",
+  "audio": "audio/603b4881fed5.m4a",
   "pl": "Mechaniker"
  },
  "der Student": {
   "ru": "студент",
-  "audio": "audio/0c84e8ecf859.m4a",
+  "audio": "audio/4be3fe7e39b8.m4a",
   "pl": "Studenten"
  },
  "der Krankenpfleger": {
   "ru": "медбрат",
-  "audio": "audio/eecf4f49a76e.m4a",
+  "audio": "audio/affa6712c076.m4a",
   "pl": "Krankenpfleger"
  },
  "der Hausmann": {
   "ru": "домохозяин",
-  "audio": "audio/e695d0b45525.m4a",
+  "audio": "audio/390729aace35.m4a",
   "pl": "Hausmänner"
  },
  "die Arbeit": {
   "ru": "работа",
-  "audio": "audio/3f174a50011d.m4a",
+  "audio": "audio/8bd3a8b6c99f.m4a",
   "pl": "Arbeiten"
  },
  "der Beruf": {
   "ru": "профессия",
-  "audio": "audio/2425838153ef.m4a",
+  "audio": "audio/63d2835c3775.m4a",
   "pl": "Berufe"
  },
  "die Stelle": {
   "ru": "место работы, вакансия",
-  "audio": "audio/03832bf19986.m4a",
+  "audio": "audio/8b0e753d6d84.m4a",
   "pl": "Stellen"
  },
  "die Firma": {
   "ru": "фирма",
-  "audio": "audio/d23320685c7c.m4a",
+  "audio": "audio/946880fb72f7.m4a",
   "pl": "Firmen"
  },
  "der Kollege": {
   "ru": "коллега",
-  "audio": "audio/b6a798a9a336.m4a",
+  "audio": "audio/f97bbffe0307.m4a",
   "pl": "Kollegen"
  },
  "das Vorstellungsgespräch": {
   "ru": "собеседование",
-  "audio": "audio/8ffda742e1a3.m4a",
+  "audio": "audio/0fba5b0cf866.m4a",
   "pl": "Vorstellungsgespräche"
  },
  "arbeiten als": {
@@ -1896,7 +1896,7 @@
  },
  "gestern": {
   "ru": "вчера",
-  "audio": "audio/4d3cb7ffdf55.m4a"
+  "audio": "audio/b27195f70195.m4a"
  },
  "gestern Abend": {
   "ru": "вчера вечером",
@@ -1904,19 +1904,19 @@
  },
  "früher": {
   "ru": "раньше",
-  "audio": "audio/25911b3a0802.m4a"
+  "audio": "audio/ca3ec8a831a6.m4a"
  },
  "letzte Woche": {
   "ru": "на прошлой неделе",
-  "audio": "audio/b76e067c66b7.m4a"
+  "audio": "audio/f9b50b615317.m4a"
  },
  "letztes Jahr": {
   "ru": "в прошлом году",
-  "audio": "audio/9a7b89a27bcc.m4a"
+  "audio": "audio/70b2cbb0e7d6.m4a"
  },
  "schon": {
   "ru": "уже",
-  "audio": "audio/b147d2d30d9f.m4a"
+  "audio": "audio/e3e7bd271e61.m4a"
  },
  "noch nicht": {
   "ru": "ещё нет",
@@ -1928,37 +1928,37 @@
  },
  "die Reise": {
   "ru": "поездка, путешествие",
-  "audio": "audio/b3a026317520.m4a",
+  "audio": "audio/92b522cbf74a.m4a",
   "pl": "Reisen"
  },
  "der Urlaub": {
   "ru": "отпуск",
-  "audio": "audio/0dbbd7e28483.m4a",
+  "audio": "audio/66e23bd4bca5.m4a",
   "pl": "Urlaube"
  },
  "das Flugzeug": {
   "ru": "самолёт",
-  "audio": "audio/83f2a473e5f0.m4a",
+  "audio": "audio/502a73116be4.m4a",
   "pl": "Flugzeuge"
  },
  "der Flughafen": {
   "ru": "аэропорт",
-  "audio": "audio/7fa45d941e7f.m4a",
+  "audio": "audio/2fcff280fcbb.m4a",
   "pl": "Flughäfen"
  },
  "die Verspätung": {
   "ru": "опоздание",
-  "audio": "audio/80ca79f40061.m4a",
+  "audio": "audio/85187382cfac.m4a",
   "pl": "Verspätungen"
  },
  "die Durchsage": {
   "ru": "объявление по громкой связи",
-  "audio": "audio/368b428df6fd.m4a",
+  "audio": "audio/eca9c3da4a37.m4a",
   "pl": "Durchsagen"
  },
  "der Koffer": {
   "ru": "чемодан",
-  "audio": "audio/d649153223fe.m4a",
+  "audio": "audio/6a1450c37828.m4a",
   "pl": "Koffer"
  },
  "das Hotel": {
@@ -1968,36 +1968,36 @@
  },
  "das Einzelzimmer": {
   "ru": "одноместный номер",
-  "audio": "audio/ede553af13a3.m4a",
+  "audio": "audio/bbe1f5b0c371.m4a",
   "pl": "Einzelzimmer"
  },
  "das Doppelzimmer": {
   "ru": "двухместный номер",
-  "audio": "audio/7ee9b3f92b07.m4a",
+  "audio": "audio/32a0b7c97ffa.m4a",
   "pl": "Doppelzimmer"
  },
  "die Person": {
   "ru": "человек",
-  "audio": "audio/2c6d77345671.m4a",
+  "audio": "audio/52b39cfa43fb.m4a",
   "pl": "Personen"
  },
  "die Anreise": {
   "ru": "приезд",
-  "audio": "audio/b90d8e121d20.m4a",
+  "audio": "audio/d9a5c1f86151.m4a",
   "pl": "Anreisen"
  },
  "die Abreise": {
   "ru": "отъезд",
-  "audio": "audio/a589c2905052.m4a",
+  "audio": "audio/6b2563ec97e7.m4a",
   "pl": "Abreisen"
  },
  "reservieren": {
   "ru": "бронировать",
-  "audio": "audio/3b0003a26f77.m4a"
+  "audio": "audio/a37cbdd47573.m4a"
  },
  "das Wetter": {
   "ru": "погода",
-  "audio": "audio/61b4958dfdeb.m4a"
+  "audio": "audio/b32d29348a1a.m4a"
  },
  "Die Sonne scheint.": {
   "ru": "Светит солнце.",
@@ -2025,7 +2025,7 @@
  },
  "warm": {
   "ru": "тепло",
-  "audio": "audio/9364c20f6ab6.m4a"
+  "audio": "audio/b6bd13511854.m4a"
  },
  "kalt": {
   "ru": "холодно",
@@ -2037,46 +2037,46 @@
  },
  "der Regenschirm": {
   "ru": "зонт",
-  "audio": "audio/e5a47d9a62eb.m4a",
+  "audio": "audio/35eace4e4fd8.m4a",
   "pl": "Regenschirme"
  },
  "die Jahreszeit": {
   "ru": "время года",
-  "audio": "audio/dc1524f0a11d.m4a",
+  "audio": "audio/1906059e5584.m4a",
   "pl": "Jahreszeiten"
  },
  "der Frühling": {
   "ru": "весна",
-  "audio": "audio/02da405e5168.m4a",
+  "audio": "audio/f7bbd5f3f879.m4a",
   "pl": "Frühlinge"
  },
  "der Sommer": {
   "ru": "лето",
-  "audio": "audio/1d7c422f082f.m4a",
+  "audio": "audio/eef5f66d8d58.m4a",
   "pl": "Sommer"
  },
  "der Herbst": {
   "ru": "осень",
-  "audio": "audio/047e1ed136e2.m4a",
+  "audio": "audio/09ea90ab63ec.m4a",
   "pl": "Herbste"
  },
  "der Winter": {
   "ru": "зима",
-  "audio": "audio/55b9849d885b.m4a",
+  "audio": "audio/2bb1c64eec1b.m4a",
   "pl": "Winter"
  },
  "der Monat": {
   "ru": "месяц",
-  "audio": "audio/5c079e194608.m4a",
+  "audio": "audio/b361895e8f41.m4a",
   "pl": "Monate"
  },
  "das Datum": {
   "ru": "дата",
-  "audio": "audio/61f21ca9c205.m4a",
+  "audio": "audio/92afb82da7d8.m4a",
   "pl": "Daten"
  },
  "die Ferien": {
   "ru": "каникулы",
-  "audio": "audio/91f097f06359.m4a"
+  "audio": "audio/39e6d399688f.m4a"
  }
 }
