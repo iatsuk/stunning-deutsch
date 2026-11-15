@@ -98,32 +98,38 @@ function sceneUnits(warmups = true) {
   return units;
 }
 
+const WARMUPS_FILE = path.join(root, "src/story/scenes/warmups.ts");
+
 /** Игры раунда перед главой (src/story/scenes/warmups.ts): одинаковы у всех игроков, считаются узлами главы. */
 function warmupUnits() {
-  const file = path.join(root, "src/story/scenes/warmups.ts");
-  const lines = readFileSync(file, "utf8").split("\n");
+  const lines = readFileSync(WARMUPS_FILE, "utf8").split("\n");
   const units = [];
   for (const [chapter, games] of Object.entries(WARMUPS)) {
     const n = Number(chapter);
     let at = lines.findIndex((l) => l.trim().startsWith(`${n}: [`));
     for (const game of games) {
       at = lines.findIndex((l, i) => i > at && l.includes(`mech: "${game.mech}"`));
-      const text = game.words.join("\n");
-      units.push({
-        chapter: n,
-        scene: `${String(n).padStart(2, "0")}-разминка`,
-        kind: game.mech,
-        action: true,
-        heard: HEARD_GAMES.has(game.mech),
-        text,
-        toks: tokens(text),
-        rules: [],
-        file: rel(file),
-        line: at + 1,
-      });
+      units.push(gameUnit(n, game.mech, game.words, at + 1));
     }
   }
   return units;
+}
+
+/** Игра со словами прошлых глав как узел главы: всегда действие, а звучит, если звучит сама игра. */
+function gameUnit(chapter, mech, words, line) {
+  const text = words.join("\n");
+  return {
+    chapter,
+    scene: `${String(chapter).padStart(2, "0")}-разминка`,
+    kind: mech,
+    action: true,
+    heard: HEARD_GAMES.has(mech),
+    text,
+    toks: tokens(text),
+    rules: [],
+    file: rel(WARMUPS_FILE),
+    line,
+  };
 }
 
 /** Строка узла в файле главы: по началу первой немецкой строки, иначе по сцене. */
@@ -337,10 +343,14 @@ function lineUnits(files) {
 
 // ——— Сборка ———
 
-/** warmups: false — без раундов перед главой и игр возвращения: так планировщик (scripts/a1-returns.mjs) видит главы сами по себе. */
-export function buildIndex({ warmups = true } = {}) {
+/**
+ * warmups: false — без раундов перед главой и игр возвращения: так планировщик (scripts/a1-returns.mjs)
+ * видит главы сами по себе. games — игры { chapter, mech, words }, которые он собирается поставить:
+ * с ними индекс даёт прогноз раскладки до записи.
+ */
+export function buildIndex({ warmups = true, games = [] } = {}) {
   const reference = parse(readFileSync(path.join(root, "content/reference/start-deutsch-1.yaml"), "utf8"));
-  const units = sceneUnits(warmups).map((u) => ({ ...u, set: new Set(u.toks) }));
+  const units = [...sceneUnits(warmups), ...games.map((g) => gameUnit(g.chapter, g.mech, g.words, 0))].map((u) => ({ ...u, set: new Set(u.toks) }));
   const lessonFiles = readdirSync(path.join(root, "content/a1")).filter((f) => f.endsWith(".yaml")).sort().map((f) => path.join(root, "content/a1", f));
   const lessonLines = lineUnits(lessonFiles);
   const checkLines = lineUnits(readdirSync(path.join(root, "content/assessments")).filter((f) => /^1[2-5]-a1/.test(f)).map((f) => path.join(root, "content/assessments", f)));

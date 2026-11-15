@@ -632,11 +632,6 @@ export const phrases: Record<string, Phrase> = {
     de: "Wo ist das Schild?",
     note: "das Schild — табличка. В W-вопросе глагол после Wo.",
   },
-  argentina: {
-    ru: "Я из Аргентины.",
-    de: "Ich komme aus Argentinien.",
-    note: "kommen aus — происхождение; wohnen in — место жительства.",
-  },
   bitte: {
     ru: "пожалуйста",
     de: "bitte",
@@ -648,11 +643,6 @@ export const phrases: Record<string, Phrase> = {
     de: "die Telefonnummer",
     pl: "Telefonnummern",
     note: "Номер мобильного — die Handynummer.",
-  },
-  have: {
-    ru: "У меня есть время.",
-    de: "Ich habe Zeit.",
-    note: "haben: ich habe, du hast, er hat.",
   },
   bag: {
     ru: "сумка",
@@ -669,21 +659,6 @@ export const phrases: Record<string, Phrase> = {
     ru: "кофе",
     de: "Kaffee",
     note: "der Kaffee. В заказе без артикля: Ich möchte Kaffee.",
-  },
-  bread: {
-    ru: "хлеб",
-    de: "Brot",
-    note: "das Brot; zwei Brote — два хлеба / две буханки.",
-  },
-  half: {
-    ru: "в половине шестого",
-    de: "um halb sechs",
-    note: "halb sechs = 17:30 или 05:30; часть суток даёт контекст.",
-  },
-  sunday: {
-    ru: "в воскресенье",
-    de: "am Sonntag",
-    note: "Дни недели: am + день.",
   },
   table: {
     ru: "на столе",
@@ -710,11 +685,6 @@ export const phrases: Record<string, Phrase> = {
     ru: "дома",
     de: "zu Hause",
     note: "Место: zu Hause; направление домой: nach Hause.",
-  },
-  headache: {
-    ru: "У меня болит голова.",
-    de: "Ich habe Kopfschmerzen.",
-    note: "habe + Kopfschmerzen, обычно во множественном числе.",
   },
   rain: {
     ru: "Идёт дождь.",

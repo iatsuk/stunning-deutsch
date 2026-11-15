@@ -307,7 +307,7 @@ test("rounds of odd and lock go in order, a draft keeps only the solved start", 
 
 test("the three docks take singular nouns, a plural article would teach nothing", () => {
   const docks = sceneGames.filter((b) => b.challenge.kind === "docks");
-  assert.equal(docks.length, 59);
+  assert.equal(docks.length, 58);
   const plurals = [
     "die Eltern",
     "die Geschwister",

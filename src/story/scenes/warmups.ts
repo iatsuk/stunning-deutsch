@@ -19,15 +19,15 @@ export const RETURNS: Record<number, { docks: string[]; bingo: string[] }[]> = {
     { docks: [], bingo: [] },
   ],
   4: [
-    { docks: ["die Großmutter", "der Großvater", "die Hausfrau", "die Hochzeit", "der Hund", "die Katze", "der Kurs", "das Mädchen", "die Mutter", "der Onkel", "der Partner", "die Schule"], bingo: ["sondern", "Argentinien", "Deutschland", "Europa", "geboren", "Guten Abend!", "Kasachstan", "die USA", "Wie geht's?"] },
-    { docks: ["die Schwester", "der Sohn", "die Tochter", "der Vater", "das Baby", "der Erwachsene", "der Jugendliche", "der Kindergarten", "die Partnerin", "die Tante", "der Verwandte", "der Familienname"], bingo: ["international", "kennenlernen", "sich vorstellen", "der Bruder", "achtzehn", "Alles Gute!", "der Anruf", "Auf Wiederhören!", "erklären"] },
+    { docks: ["die Großmutter", "der Großvater", "die Hausfrau", "die Hochzeit", "der Hund", "die Katze", "der Kurs", "das Mädchen", "die Mutter", "der Onkel", "der Partner", "die Schule"], bingo: ["sondern", "Argentinien", "Deutschland", "Europa", "geboren", "Kasachstan", "die USA", "Wie geht's?", "international"] },
+    { docks: ["die Schwester", "der Sohn", "die Tochter", "der Vater", "das Baby", "der Erwachsene", "der Jugendliche", "der Kindergarten", "die Partnerin", "die Tante", "der Verwandte", "der Familienname"], bingo: ["kennenlernen", "sich vorstellen", "der Bruder", "achtzehn", "Alles Gute!", "der Anruf", "antworten", "Auf Wiederhören!", "erklären"] },
     { docks: ["der Ausweis", "das Geburtsjahr", "der Geburtsort", "die Türkei", "die Ukraine", "der Vorname", "das Ausland", "der Ausländer", "die Heimat", "die Schweiz"], bingo: [] },
     { docks: [], bingo: [] },
   ],
   5: [
-    { docks: ["der Käse", "die Milch", "die Rechnung", "der Salat", "die Wurst", "die Bäckerei", "das Lokal", "das Mittagessen", "das Öl", "die Pasta", "das Restaurant", "das Salz"], bingo: ["gratulieren", "heiraten", "leben", "sondern", "Alles Gute!", "Auf Wiederhören!", "antworten", "zum Beispiel", "dreizehn"] },
-    { docks: ["der Schinken", "der Wein", "der Verwandte", "die Pause", "der Anrufbeantworter", "die Handynummer", "die Hausnummer", "die Postleitzahl", "der Computer", "die E-Mail", "das Internet", "die Million"], bingo: ["Noch einmal, bitte.", "tausend", "telefonieren", "wiederholen", "achtzig", "andere", "leicht", "bezahlen", "das Alter"] },
-    { docks: ["die Vorwahl", "der Bruder", "der Enkel", "die Enkelin"], bingo: [] },
+    { docks: ["der Käse", "die Milch", "die Rechnung", "der Salat", "die Wurst", "die Bäckerei", "das Lokal", "das Mittagessen", "das Öl", "die Pasta", "das Restaurant", "das Salz"], bingo: ["gratulieren", "heiraten", "leben", "sondern", "Alles Gute!", "Auf Wiederhören!", "zum Beispiel", "dreizehn", "Noch einmal, bitte."] },
+    { docks: ["der Schinken", "der Wein", "die Pause", "der Anrufbeantworter", "die Handynummer", "die Hausnummer", "die Postleitzahl", "der Computer", "die E-Mail", "das Internet", "die Million", "die Vorwahl"], bingo: ["tausend", "telefonieren", "wiederholen", "achtzig", "andere", "leicht", "bezahlen", "das Alter", "der Bruder"] },
+    { docks: [], bingo: [] },
     { docks: [], bingo: [] },
   ],
   6: [
@@ -44,21 +44,21 @@ export const RETURNS: Record<number, { docks: string[]; bingo: string[] }[]> = {
   ],
   8: [
     { docks: ["die Gruppe", "die Idee", "das Kino", "das Konzert", "das Schwimmbad", "der Sport", "der Urlaub", "der Eintritt", "die Halle", "der Lieblingsfilm", "der See", "der Verein"], bingo: ["verstehen", "wandern", "baden", "erst", "Freunde treffen", "gewinnen", "Gitarre spielen", "grillen", "lustig"] },
-    { docks: ["der Apfel", "das Geschenk", "das Gramm", "die Größe", "die Gurke", "das Hemd", "die Hose", "die Kasse", "das Kleid", "der Kunde", "der Mantel", "der Preis"], bingo: ["mitmachen", "Musik hören", "Rad fahren", "wunderbar", "pünktlich", "Wie viel Uhr ist es?", "zurzeit", "bar", "ein Pfund"] },
-    { docks: ["der Pullover", "der Rock", "der Schuh", "das Angebot", "die Banane", "der Cent", "die Erdbeere", "die Flasche", "das Geschäft", "das Gewicht", "die Kartoffel", "die Kleidung"], bingo: ["kurz", "schicken", "schwarz", "tot", "100 Gramm", "anziehen", "ausziehen", "braun", "grün"] },
-    { docks: ["die Kreditkarte", "die Lebensmittel", "die Orange", "das Prozent", "der Computer", "die E-Mail", "das Internet", "die Million", "die Vorwahl"], bingo: ["kriegen", "sich kümmern", "verkaufen", "zufrieden", "achtzig", "andere", "leicht", "leider", "tanzen"] },
+    { docks: ["der Apfel", "das Geschenk", "das Gramm", "die Größe", "die Gurke", "das Hemd", "die Hose", "die Kasse", "das Kleid", "der Kunde", "der Mantel", "der Preis"], bingo: ["mitmachen", "Musik hören", "Rad fahren", "wunderbar", "Wie viel Uhr ist es?", "zurzeit", "bar", "ein Pfund", "kurz"] },
+    { docks: ["der Pullover", "der Rock", "der Schuh", "das Angebot", "die Banane", "der Cent", "die Erdbeere", "die Flasche", "das Geschäft", "das Gewicht", "die Kartoffel", "die Kleidung"], bingo: ["schicken", "schwarz", "tot", "100 Gramm", "anziehen", "ausziehen", "braun", "grün", "kriegen"] },
+    { docks: ["die Kreditkarte", "die Lebensmittel", "die Orange", "das Prozent", "der Computer", "die E-Mail", "das Internet", "die Million", "die Vorwahl"], bingo: ["sich kümmern", "verkaufen", "zufrieden", "achtzig", "andere", "leicht", "leider", "tanzen", "anmachen"] },
   ],
   9: [
     { docks: ["der Herd", "die Kaltmiete", "die Miete", "die Ordnung", "der Osten", "der Quadratmeter", "das Schlafzimmer", "der Schreibtisch", "die Treppe", "das Treppenhaus", "der Vermieter", "die Warmmiete"], bingo: ["modern", "die Nebenkosten", "an sein", "besetzt", "breit", "draußen", "feiern", "teuer – günstig", "hoch"] },
-    { docks: ["das Wohnheim", "das Wohnzimmer", "die Waschmaschine", "die Mitte", "die Toilette", "der Eintritt", "die Halle", "der Lieblingsfilm", "der See", "der Verein", "der Nachmittag", "der Vormittag"], bingo: ["oben", "umziehen", "vermieten", "waschen", "zwischen", "baden", "erst", "Freunde treffen", "gewinnen"] },
-    { docks: ["der Anfang", "der April", "der Dezember", "die Dusche", "der Februar", "der Feierabend", "der Januar", "der März", "die Sekunde", "der September", "der August", "der Bekannte"], bingo: ["Gitarre spielen", "grillen", "lustig", "mitmachen", "Musik hören", "Rad fahren", "wunderbar", "anfangen", "aufhören"] },
-    { docks: ["der Feiertag", "der November", "der Oktober", "die Reparatur", "der Schluss", "der Wochentag", "das Baby", "der Erwachsene", "der Jugendliche", "der Kindergarten", "die Partnerin", "die Tante"], bingo: ["ausmachen", "bald", "duschen", "enden", "frühstücken", "gleich", "reparieren", "Wie spät ist es?", "aufräumen"] },
+    { docks: ["das Wohnheim", "das Wohnzimmer", "die Waschmaschine", "die Mitte", "die Toilette", "die Halle", "der Lieblingsfilm", "der See", "der Verein", "der Nachmittag", "der Vormittag", "der Anfang"], bingo: ["oben", "umziehen", "vermieten", "waschen", "zwischen", "erst", "Freunde treffen", "gewinnen", "Gitarre spielen"] },
+    { docks: ["der April", "der Dezember", "die Dusche", "der Februar", "der Feierabend", "der Januar", "der März", "die Sekunde", "der September", "der August", "der Bekannte", "der Feiertag"], bingo: ["grillen", "lustig", "mitmachen", "Musik hören", "Rad fahren", "wunderbar", "anfangen", "aufhören", "ausmachen"] },
+    { docks: ["der November", "der Oktober", "die Reparatur", "der Schluss", "der Wochentag", "das Baby", "der Erwachsene", "der Jugendliche", "der Kindergarten", "die Partnerin", "die Tante", "der Verwandte"], bingo: ["bald", "duschen", "enden", "frühstücken", "gleich", "reparieren", "Wie spät ist es?", "aufräumen", "bekannt"] },
   ],
   10: [
-    { docks: ["die Straßenbahn", "das Taxi", "die U-Bahn", "die Abfahrt", "die Ankunft", "der Ausgang", "die Auskunft", "das Auto", "der Automat", "der Bahnsteig", "der Eingang", "die Führung"], bingo: ["umsteigen", "weiter", "Wie komme ich zum …?", "besichtigen", "gültig", "überweisen", "an sein", "besetzt", "breit"] },
-    { docks: ["der Prospekt", "der Schalter", "das Ticket", "die Vorsicht", "der Absender", "die Ansage", "die Autobahn", "die Bank", "die Briefmarke", "das Bürgeramt", "das Dorf", "der Empfänger"], bingo: ["draußen", "feiern", "teuer – günstig", "hoch", "oben", "umziehen", "vermieten", "waschen", "zwischen"] },
-    { docks: ["der Kilometer", "das Konto", "der Norden", "der Ort", "das Rathaus", "die S-Bahn", "die Sehenswürdigkeit", "der Süden", "der Supermarkt", "der Westen", "die Waschmaschine", "die Mitte"], bingo: ["leider", "tanzen", "am liebsten", "einladen", "Fahrrad fahren", "fertig", "fotografieren", "Fußball spielen", "gefallen"] },
-    { docks: ["die Toilette", "der Baum", "die Blume", "die Disco", "das Feuer", "die Gruppe", "die Idee", "das Kino", "das Konzert", "das Schwimmbad", "der Sport", "der Urlaub"], bingo: ["ins Kino gehen", "laufen", "manchmal", "nicht gern", "oft", "Schade!", "schwimmen", "verstehen", "wandern"] },
+    { docks: ["das Taxi", "die U-Bahn", "die Abfahrt", "die Ankunft", "der Ausgang", "die Auskunft", "das Auto", "der Automat", "der Bahnsteig", "der Eingang", "die Führung", "der Prospekt"], bingo: ["umsteigen", "weiter", "Wie komme ich zum …?", "besichtigen", "gültig", "überweisen", "an sein", "besetzt", "breit"] },
+    { docks: ["der Schalter", "das Ticket", "die Vorsicht", "der Absender", "die Ansage", "die Autobahn", "die Bank", "die Briefmarke", "das Bürgeramt", "das Dorf", "der Empfänger", "der Kilometer"], bingo: ["draußen", "feiern", "teuer – günstig", "hoch", "oben", "umziehen", "vermieten", "waschen", "zwischen"] },
+    { docks: ["das Konto", "der Norden", "der Ort", "das Rathaus", "die S-Bahn", "die Sehenswürdigkeit", "der Süden", "der Supermarkt", "der Westen", "die Waschmaschine", "die Mitte", "die Toilette"], bingo: ["leider", "tanzen", "am liebsten", "einladen", "Fahrrad fahren", "fertig", "fotografieren", "Fußball spielen", "gefallen"] },
+    { docks: ["der Baum", "die Blume", "die Disco", "das Feuer", "die Gruppe", "die Idee", "das Kino", "das Konzert", "das Schwimmbad", "der Sport", "der Urlaub", "der Eintritt"], bingo: ["ins Kino gehen", "laufen", "manchmal", "nicht gern", "oft", "schwimmen", "verstehen", "wandern", "baden"] },
   ],
   11: [
     { docks: ["das Haar", "der Hals", "der Husten", "das Medikament", "der Mund", "die Nase", "das Ohr", "der Schmerz", "der Schnupfen", "die Tablette", "das Wartezimmer", "der Zahn"], bingo: ["wichtig", "aussehen", "besser", "erlauben", "erzählen", "leise", "böse", "empfehlen", "etwa"] },
@@ -82,14 +82,14 @@ export const RETURNS: Record<number, { docks: string[]; bingo: string[] }[]> = {
 
 export const WARMUPS: Record<number, Warmup[]> = {
   2: [
-    { mech: "bingo", words: ["geboren", "Guten Abend!", "Kasachstan", "die USA", "Wie geht's?", "international", "kennenlernen", "sich vorstellen"] },
+    { mech: "bingo", words: ["geboren", "Kasachstan", "die USA", "Wie geht's?", "international", "kennenlernen", "sich vorstellen"] },
     { mech: "docks", words: ["die Dame", "der Mensch", "der Pass", "der Strand", "die Unterschrift", "der Ausweis", "das Geburtsjahr", "der Geburtsort", "die Türkei", "die Ukraine", "der Vorname", "das Ausland"] },
     { mech: "gull", words: ["ein bisschen", "Dänemark", "Danke, gut!", "Herzliche Grüße", "Russland", "studieren", "unterschreiben", "Argentinien", "Deutschland", "Europa"] },
   ],
   3: [
-    { mech: "gull", words: ["siebzig", "vierzehn", "Wie bitte?", "antworten", "zum Beispiel", "dreizehn", "Noch einmal, bitte.", "tausend", "telefonieren", "wiederholen"] },
+    { mech: "gull", words: ["sechzig", "siebzig", "vierzehn", "Wie bitte?", "zum Beispiel", "dreizehn", "Noch einmal, bitte.", "tausend", "telefonieren", "wiederholen"] },
     { mech: "docks", words: ["der Anruf", "der Liegeplatz", "die Prüfung", "der Raum", "der Anrufbeantworter", "die Handynummer", "die Hausnummer", "die Postleitzahl", "der Computer", "die E-Mail", "das Internet", "die Million"] },
-    { mech: "letters", words: ["achtzehn", "erklären", "fünfzehn", "sechzehn", "sechzig"] },
+    { mech: "letters", words: ["achtzehn", "antworten", "erklären", "fünfzehn", "sechzehn"] },
   ],
   4: [
     { mech: "docks", words: ["das Alter", "der Enkel", "die Enkelin", "der Glückwunsch", "das Rezept", "der Cousin", "die Cousine", "die Ehefrau", "der Ehemann", "die Familie", "der Familienstand", "die Freundin"] },
@@ -113,16 +113,16 @@ export const WARMUPS: Record<number, Warmup[]> = {
   8: [
     { mech: "docks", words: ["der Ausflug", "der Donnerstag", "die Einladung", "der Film", "die Freizeit", "der Garten", "der Mittwoch", "der Park", "der Baum", "die Blume", "die Disco", "das Feuer"] },
     { mech: "letters", words: ["dir", "so", "einladen", "fertig", "gefallen"] },
-    { mech: "bingo", words: ["Tennis spielen", "am liebsten", "Fahrrad fahren", "fotografieren", "Fußball spielen", "ins Kino gehen", "laufen", "manchmal", "nicht gern", "oft", "Schade!", "schwimmen"] },
+    { mech: "bingo", words: ["Schade!", "Tennis spielen", "am liebsten", "Fahrrad fahren", "fotografieren", "Fußball spielen", "ins Kino gehen", "laufen", "manchmal", "nicht gern", "oft", "schwimmen"] },
   ],
   9: [
-    { mech: "pairs", words: ["bekannt", "eilig", "fernsehen", "gegen", "gerade", "nächste"] },
-    { mech: "gull", words: ["geschlossen", "ruhig – laut", "mitnehmen", "die Möbel", "unten", "warm", "daneben", "hell – dunkel", "legen", "möbliert"] },
+    { mech: "pairs", words: ["eilig", "fernsehen", "gegen", "gerade", "nächste", "pünktlich"] },
+    { mech: "gull", words: ["geschlossen", "mitnehmen", "die Möbel", "ruhig – laut", "unten", "warm", "daneben", "hell – dunkel", "legen", "möbliert"] },
     { mech: "docks", words: ["das Bad", "das Erdgeschoss", "der Kleiderschrank", "der Kühlschrank", "das Sofa", "die Wohnung", "die Adresse", "das Apartment", "der Aufzug", "der Blick", "der Flur", "die Heizung"] },
   ],
   10: [
     { mech: "bingo", words: ["entschuldigen", "in der Nähe", "abholen", "aussteigen", "automatisch", "dort", "durch", "einfach", "einsteigen", "fliegen", "gestorben", "lachen"] },
-    { mech: "docks", words: ["die Ampel", "der Bahnhof", "der Beamte", "der Fahrer", "das Flugzeug", "das Gleis", "die Haltestelle", "die Information", "der Lkw", "der Stadtplan", "die Post", "die Straße"] },
+    { mech: "docks", words: ["die Ampel", "der Bahnhof", "der Beamte", "der Fahrer", "das Flugzeug", "das Gleis", "die Information", "der Lkw", "der Stadtplan", "die Post", "die Straße", "die Straßenbahn"] },
     { mech: "letters", words: ["Achtung", "circa", "dauern", "willkommen", "abfliegen"] },
   ],
   11: [

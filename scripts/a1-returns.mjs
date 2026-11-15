@@ -10,7 +10,7 @@ import { fileURLToPath } from "node:url";
 import { phrases } from "../src/story/data.ts";
 import { sceneUnits } from "../src/story/review.ts";
 import { sceneChapters } from "../src/story/scenes/index.ts";
-import { A2_FROM, BASELINE, buildIndex, found, THRESHOLD } from "./a1-index.mjs";
+import { A2_FROM, BASELINE, baselineOf, buildIndex, found, THRESHOLD } from "./a1-index.mjs";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
 const OUT = path.join(root, "src/story/scenes/warmups.ts");
@@ -65,13 +65,21 @@ for (const w of index.words) {
   const slots = Math.max(T.hits - w.hits, T.chapters - w.chapters.length, w.actions < T.actions || w.heard < T.heard ? 1 : 0);
   plans.push({ w, unit, met: metAt.get(unit), slots, heard: w.heard >= T.heard, chapters: new Set(w.chapters) });
 }
-// Сначала слова A1 — те, которые игрок встречает раньше главы A2_FROM: их закрепляет только A1, а
-// поздние слова доводит сезон A2. Внутри — слова поздних глав: им осталось меньше глав для
-// возвращений, а слово ранней главы найдёт место и раньше. Затем слова храповика (уже закреплённые
-// не должны выпасть) и те, кому до закрепления нужно меньше всего.
-const kept = new Set(JSON.parse(readFileSync(BASELINE, "utf8")).words);
+// Сначала слова храповика, которые прошлая попытка раскладки потеряла (first). Затем слова A1 — те,
+// которые игрок встречает раньше главы A2_FROM: их закрепляет только A1, а поздние слова доводит
+// сезон A2. Внутри — слова поздних глав: им осталось меньше глав для возвращений, а слово ранней главы
+// найдёт место и раньше. Затем остальные слова храповика и те, кому до закрепления нужно меньше всего.
+const baseline = JSON.parse(readFileSync(BASELINE, "utf8"));
+const kept = new Set(baseline.words);
+const first = new Set();
 const late = (p) => p.met >= A2_FROM;
-plans.sort((a, b) => late(a) - late(b) || b.met - a.met || kept.has(b.w.key) - kept.has(a.w.key) || a.slots - b.slots || a.w.key.localeCompare(b.w.key, "de"));
+const queue = (a, b) =>
+  first.has(b.w.key) - first.has(a.w.key) ||
+  late(a) - late(b) ||
+  b.met - a.met ||
+  kept.has(b.w.key) - kept.has(a.w.key) ||
+  a.slots - b.slots ||
+  a.w.key.localeCompare(b.w.key, "de");
 
 // В главе: три игры раунда перед ней и четыре блока возвращений в сценах, в каждом причалы и лото.
 // Блоки 0 и 1 стоят в сценах 3 и 6, 2 и 3 — в сценах 2 и 5; заполняются по порядку, поэтому
@@ -121,15 +129,12 @@ function place(p) {
   }
 }
 
-const unique = plans.filter((p, i) => plans.findIndex((q) => q.unit === p.unit) === i);
-const fresh = unique.map((p) => ({ chapters: new Set(p.chapters), heard: p.heard }));
-
 /**
  * Недобранную игру (лото в сцене — ровно девять слов) добирают словами, которым места ещё нужны,
  * затем остальными словами ниже порога и, наконец, любыми встреченными: лишняя встреча не вредит, а
  * закрытая игра забирает места у всех.
  */
-function fill(g, n) {
+function fill(g, n, unique) {
   for (const p of [...unique.filter((q) => q.need > 0), ...unique.filter((q) => q.need <= 0)]) {
     if (g.words.length >= g.min) return;
     if (p.met >= n || p.used.has(n) || !room(g, p.unit) || !(p.heard || HEARD.has(g.mech))) continue;
@@ -145,18 +150,46 @@ function fill(g, n) {
   }
 }
 
-// Игра, которую не добрать до минимума, не собирается. Такие игры закрываем и раскладываем всё заново
-// с начала очереди, пока закрывать нечего: так слова храповика первыми занимают оставшиеся места.
-for (let round = 0; round < 20; round++) {
-  for (const g of Object.values(games).flat()) g.words = [];
-  unique.forEach((p, i) => Object.assign(p, { need: p.slots, used: new Set(), chapters: new Set(fresh[i].chapters), heard: fresh[i].heard }));
-  for (const p of unique) place(p);
-  for (const [n, list] of Object.entries(games)) for (const g of list) if (g.words.length && g.words.length < g.min) fill(g, Number(n));
-  const small = Object.values(games).flat().filter((g) => !g.closed && g.words.length && g.words.length < g.min);
-  if (!small.length) break;
-  for (const g of small) g.closed = true;
+/**
+ * Раскладывает очередь по играм. Игра, которую не добрать до минимума, не собирается: такие игры
+ * закрываем и раскладываем всё заново с начала очереди, пока закрывать нечего, — так начало очереди
+ * первым занимает оставшиеся места.
+ */
+function layout() {
+  plans.sort(queue);
+  const unique = plans.filter((p, i) => plans.findIndex((q) => q.unit === p.unit) === i);
+  for (const g of Object.values(games).flat()) g.closed = false;
+  for (let round = 0; round < 20; round++) {
+    for (const g of Object.values(games).flat()) g.words = [];
+    // Каждая попытка начинает со слова, каким его видит индекс без раундов, а не с прошлой раскладки.
+    unique.forEach((p) => Object.assign(p, { need: p.slots, used: new Set(), chapters: new Set(p.w.chapters), heard: p.w.heard >= T.heard }));
+    for (const p of unique) place(p);
+    for (const [n, list] of Object.entries(games)) for (const g of list) if (g.words.length && g.words.length < g.min) fill(g, Number(n), unique);
+    const small = Object.values(games).flat().filter((g) => !g.closed && g.words.length && g.words.length < g.min);
+    if (!small.length) break;
+    for (const g of small) g.closed = true;
+  }
+  for (const g of Object.values(games).flat()) if (g.closed) g.words = [];
 }
-for (const g of Object.values(games).flat()) if (g.closed) g.words = [];
+
+// Очередь лишь оценивает, сколько мест нужно слову, а закреплено ли оно, решает индекс. Поэтому
+// раскладку проверяет его прогноз: слова храповика, которые она теряет, встают в начало очереди, и
+// раскладка собирается заново, пока потерянные не кончатся или подъём перестанет помогать. Раскладку
+// с потерями --write не записывает. Прогноз считает игры по их словам, без немецкой инструкции над
+// игрой в сцене; последнее слово за тестом храповика после pnpm content.
+let forecast;
+let lost;
+for (;;) {
+  layout();
+  const draft = Object.entries(games).flatMap(([n, list]) => list.filter((g) => g.words.length).map((g) => ({ chapter: Number(n), mech: g.mech, words: g.words })));
+  forecast = buildIndex({ warmups: false, games: draft });
+  const now = baselineOf(forecast);
+  const gone = (list, from) => list.filter((k) => !from.includes(k));
+  lost = { words: gone(baseline.words, now.words), grammar: gone(baseline.grammar, now.grammar), present: gone(baseline.present, now.present) };
+  const fresh = lost.words.filter((k) => !first.has(k));
+  if (!fresh.length) break;
+  fresh.forEach((k) => first.add(k));
+}
 
 const list = (words) => `[${words.map((w) => JSON.stringify(w)).join(", ")}]`;
 const body = Object.entries(games)
@@ -192,9 +225,14 @@ ${body}
 `;
 
 const placed = Object.values(games).flatMap((l) => l.flatMap((g) => g.words)).length;
+const anchored = forecast.words.filter((w) => w.status === "закреплено").length;
 console.log(`Ниже порога и можно вернуть: ${plans.length} слов. Мест в раундах занято: ${placed}.`);
 for (const [n, all] of Object.entries(games)) console.log(`  глава ${n}: ${all.map((g) => `${g.where === "w" ? "" : `↩${g.where} `}${g.mech} ${g.words.length}`).join(", ")}`);
-if (process.argv.includes("--write")) {
+console.log(`Прогноз: закреплено ${anchored} слов из ${forecast.words.length}, в храповике ${baseline.words.length}.`);
+if (lost.words.length || lost.grammar.length || lost.present.length) {
+  console.error(`Раскладка теряет закреплённое: слова ${JSON.stringify(lost.words)}, правила ${JSON.stringify(lost.grammar)}, исчезают из курса ${JSON.stringify(lost.present)}. Не записано.`);
+  process.exitCode = 1;
+} else if (process.argv.includes("--write")) {
   writeFileSync(OUT, file);
   console.log(`Записано: ${path.relative(root, OUT)}. Пересоберите индекс: pnpm content.`);
 }
