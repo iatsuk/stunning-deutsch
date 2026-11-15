@@ -117,32 +117,19 @@ function place(p) {
 }
 
 const unique = plans.filter((p, i) => plans.findIndex((q) => q.unit === p.unit) === i);
-for (const p of unique) Object.assign(p, { need: p.slots, used: new Set(), base: new Set(p.chapters), baseHeard: p.heard });
-for (const p of unique) place(p);
+const fresh = unique.map((p) => ({ chapters: new Set(p.chapters), heard: p.heard }));
 
-// Игра меньше своего минимума не собирается: она закрывается, а её слова ищут место заново — в
-// другой игре той же главы или в другой главе. Повторяем, пока все игры не наберут минимум.
-const byUnit = new Map(unique.map((p) => [p.unit, p]));
+// Игра меньше своего минимума не собирается. Такие игры закрываем и раскладываем всё заново с начала
+// очереди, пока закрывать нечего: так слова храповика первыми занимают оставшиеся места.
 for (let round = 0; round < 20; round++) {
+  for (const g of Object.values(games).flat()) g.words = [];
+  unique.forEach((p, i) => Object.assign(p, { need: p.slots, used: new Set(), chapters: new Set(fresh[i].chapters), heard: fresh[i].heard }));
+  for (const p of unique) place(p);
   const small = Object.values(games).flat().filter((g) => !g.closed && g.words.length && g.words.length < g.min);
   if (!small.length) break;
-  const moved = [];
-  for (const g of small) {
-    g.closed = true;
-    moved.push(...g.words.splice(0).map((w) => [w, g]));
-  }
-  for (const [w, g] of moved) {
-    const p = byUnit.get(w);
-    const n = Number(Object.entries(games).find(([, all]) => all.includes(g))[0]);
-    p.used.delete(n);
-    // Пересчёт: главы и слух — из исходного индекса и оставшихся мест.
-    const placed = Object.entries(games).filter(([, all]) => all.some((o) => !o.closed && o.words.includes(w)));
-    p.chapters = new Set([...p.base, ...placed.map(([k]) => Number(k))]);
-    p.heard = p.baseHeard || placed.some(([, all]) => all.some((o) => !o.closed && o.words.includes(w) && HEARD.has(o.mech)));
-    p.need++;
-    place(p);
-  }
+  for (const g of small) g.closed = true;
 }
+for (const g of Object.values(games).flat()) if (g.closed) g.words = [];
 
 const list = (words) => `[${words.map((w) => JSON.stringify(w)).join(", ")}]`;
 const body = Object.entries(games)

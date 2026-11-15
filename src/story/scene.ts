@@ -296,3 +296,12 @@ export function sceneWords(nodes: SceneNode[], gameWords: (c: Extract<SceneNode,
 export function sceneVoices(nodes: SceneNode[]): { text: string; voice: string }[] {
   return flatNodes(nodes).flatMap((n) => (n.t === "say" || n.t === "hear" ? [{ text: n.de, voice: n.voice }] : []));
 }
+
+/**
+ * Немецкий рассказ: перед выражением уже стоит артикль, предлог или числительное («am {aufsteller}»,
+ * «zwanzig {schueler}»). Тогда слово идёт без своего артикля — «am Aufsteller», а не «am der
+ * Aufsteller», — и новое слово читается по-немецки, с переводом после: «Aufsteller (подставка)».
+ */
+const GERMAN_BEFORE =
+  /(?:^|[\s«„(])(?:der|die|das|dem|den|des|ein|eine|einem|einen|einer|kein|keine|keinen|keinem|keiner|mein|meine|meinen|dein|deine|sein|seine|seinen|ihr|ihre|ihren|unser|unsere|Ihre|am|im|vom|zum|zur|beim|ins|mit|von|zu|in|an|auf|aus|bei|für|ohne|nach|über|unter|vor|hinter|neben|zwischen|alle|viele|jeden|jede|jeder|dieser|diese|dieses|zwei|drei|vier|fünf|sechs|sieben|acht|neun|zehn|zwanzig|hundert)\s+$/i;
+export const germanBefore = (before: string) => GERMAN_BEFORE.test(before);

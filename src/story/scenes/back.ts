@@ -21,11 +21,24 @@ function games(chapter: number, block: number): SceneNode[] {
   return out;
 }
 
-/** Сцена с возвращениями: игры встают перед последним узлом, и вид игры не повторяет действие перед ними. */
+/** Вид действия для правила «два одинаковых подряд»: игры различаются по виду игры. */
+const kind = (n: SceneNode) => (n.t === "game" ? `game:${n.c.kind}` : n.t);
+
+/**
+ * Сцена с возвращениями: игры встают как можно ближе к концу сцены (перед последним узлом или раньше),
+ * так, чтобы их вид не повторял действие перед ними и после них.
+ */
 export function back(nodes: SceneNode[], chapter: number, block: number): SceneNode[] {
   const add = games(chapter, block);
   if (!add.length) return nodes;
-  const prev = flatNodes(nodes.slice(0, -1)).filter((n) => ACTIONS.has(n.t)).at(-1);
-  if (prev?.t === "game" && add[0].t === "game" && prev.c.kind === add[0].c.kind) add.reverse();
-  return [...nodes.slice(0, -1), ...add, nodes[nodes.length - 1]];
+  const actions = (list: SceneNode[]) => flatNodes(list).filter((n) => ACTIONS.has(n.t));
+  for (let at = nodes.length - 1; at > 0; at--) {
+    const before = actions(nodes.slice(0, at)).at(-1);
+    const after = actions(nodes.slice(at))[0];
+    for (const order of [add, [...add].reverse()]) {
+      const fits = (!before || kind(before) !== kind(order[0])) && (!after || kind(after) !== kind(order[order.length - 1]));
+      if (fits) return [...nodes.slice(0, at), ...order, ...nodes.slice(at)];
+    }
+  }
+  return nodes;
 }

@@ -165,7 +165,7 @@ const regen: SceneNode[] = [
 // дождём: от остановки к отелю.
 const weg: SceneNode[] = [
   { t: "pic", src: "12-karton.jpg", alt: "Остановка автобуса под дождём: Хауке в зимней куртке поверх жёлтого дождевика держит над головой плоскую коробку, Элиф и Нильс держат над ней зонты; табло на остановке без надписей" },
-  narr("Das Schild kommt in {karton} von Herrn Jensen. Der {umriss} passt: M, O, I, N. Хауке несёт коробку, как младенца."),
+  narr("Das Schild kommt in den {karton} von Herrn Jensen. Der {umriss} passt: M, O, I, N. Хауке несёт коробку, как младенца."),
   elif("Der Karton passt! Herr Jensen hat alles geplant!", "Коробка подходит! Господин Йенсен всё продумал!"),
   {
     t: "gap",
@@ -589,7 +589,7 @@ const start: SceneNode[] = [
     hint: "Время первым, глагол вторым, «wieder da» — в конце.",
     c: order(["Heute", "ist", "das", "Schild", "wieder", "da."], ["wieder", "Schild", "da.", "Heute", "das", "ist"]),
   },
-  narr("Heute ist in Kiel niemand {fremd}: kein {deutsche}, kein {europaeer} aus Dänemark, kein Gast aus den USA."),
+  narr("Heute ist in Kiel niemand {fremd}: {deutsche}, {europaeer} aus Dänemark, Gast aus den USA — alle sind zu Hause."),
   narr("Lotte und zwanzig Kinder — её класс — касаются таблички. Потом команды. Без MOIN нет старта, а с MOIN — {start}!"),
   {
     t: "game",

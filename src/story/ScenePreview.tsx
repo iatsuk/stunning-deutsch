@@ -12,7 +12,7 @@ import pastLayouts from "./scene-layouts.json";
 import { dayNumber, grade, remember, type Cards } from "./memory";
 import { buildReview, dueUnits, MIN_DUE, reviewSources, SCENE_INTERVALS, sceneUnits, warmupReview, WELCOME_ROUNDS, type Mech } from "./review";
 import { SceneReview, type ReviewReason } from "./ReviewView";
-import { flatNodes, keyOf, nodeAt, sceneRules, shownWords, worldAfter } from "./scene";
+import { flatNodes, germanBefore, keyOf, nodeAt, sceneRules, shownWords, worldAfter } from "./scene";
 import { RuleCard } from "./RuleCard";
 import { sceneChapters } from "./scenes";
 import { WARMUPS } from "./scenes/warmups";
@@ -276,14 +276,15 @@ export function ScenePreview() {
     window.scrollTo({ top: 0 });
   }
   function rich(text: string, seen?: Set<string>) {
-    return text.split(/(\{[\w-]+\})/g).map((part, i) => {
+    const parts = text.split(/(\{[\w-]+\})/g);
+    return parts.map((part, i) => {
       if (!part.startsWith("{")) return part;
       const id = part.slice(1, -1);
       const p = phrases[id];
       if (!p) return part;
       const fresh =
         !known.has(id) && !words.includes(p.de) && !seen?.has(id) && !seen?.has(p.de);
-      return <Word key={i} id={id} fresh={fresh} />;
+      return <Word key={i} id={id} fresh={fresh} german={germanBefore(parts[i - 1] ?? "")} />;
     });
   }
 
@@ -566,12 +567,13 @@ export function ScenePreview() {
  * Немецкая единица в рассказе. Перевод раскрывается прямо за словом, а не в блоке наверху
  * страницы: так его видно там, где читаешь. Нажатие сразу озвучивает выражение.
  */
-function Word({ id, fresh }: { id: string; fresh: boolean }) {
+function Word({ id, fresh, german = false }: { id: string; fresh: boolean; german?: boolean }) {
   const [open, setOpen] = useState(false);
   const p = phrases[id];
+  const de = german ? p.de.replace(/^(der|die|das) /, "") : p.de;
   return (
     <>
-      {fresh && <span>{p.ru} </span>}
+      {fresh && !german && <span>{p.ru} </span>}
       <button
         type="button"
         className={`moin-word${fresh ? " is-new" : ""}`}
@@ -582,8 +584,9 @@ function Word({ id, fresh }: { id: string; fresh: boolean }) {
           setOpen(!open);
         }}
       >
-        {fresh ? `(${p.de})` : p.de}
+        {fresh && !german ? `(${de})` : de}
       </button>
+      {fresh && german && <span> ({p.ru})</span>}
       {open && (
         <span className="moin-word-info" role="status">
           {p.ru}

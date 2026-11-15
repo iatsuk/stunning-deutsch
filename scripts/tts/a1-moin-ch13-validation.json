@@ -1,0 +1,455 @@
+{
+  "date": "2026-11-15",
+  "scope": "Chapter 13 «A1+» of the Moin scene prototype: the club exam in four parts, the station announcement and phone message, the lost truck driver, the newcomer Luca and the Küstenlogbuch; 49 voice lines and 6 story expressions",
+  "model": "k2-fsa/OmniVoice",
+  "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+  "candidatesPerPhrase": 3,
+  "asr": "openai/whisper-large-v3",
+  "notes": [
+    "Each phrase has three takes; the chosen take has the closest transcript, an end level below -32 dB and no fragment flagged by tails.py. tails.py passes on all 55 imported files.",
+    "Whisper writes numbers as digits (9, 1, 100, 1985); these takes say the numbers in words as written. «Kiellinie» is transcribed as «Key-Linie», which matches the spoken [kiːl]-sound.",
+    "Two lines were rewritten after the first generation and recorded in a second small batch: the truck driver no longer asks about Frau Brandt, and Frau Brandt says «unsere Möwe» instead of the ring number HEL 7305, which all three takes read differently."
+  ],
+  "files": [
+    {
+      "file": "0f13518b60a1.m4a",
+      "text": "Können Sie mir bitte den Weg zeigen?",
+      "voice": "Anna",
+      "seed": 21145025,
+      "heard": "Können Sie mir bitte den Weg zeigen?",
+      "endDb": -62.5
+    },
+    {
+      "file": "1fbbec1b9a67.m4a",
+      "text": "das Notizbuch, die Notizbücher",
+      "voice": "Anna",
+      "seed": 20846326,
+      "heard": "Das Notizbuch, die Notizbücher",
+      "endDb": -51.5
+    },
+    {
+      "file": "24c39fde0851.m4a",
+      "text": "bestanden",
+      "voice": "Anna",
+      "seed": 20620064,
+      "heard": "Bestanden.",
+      "endDb": -55.9
+    },
+    {
+      "file": "25b421a36002.m4a",
+      "text": "Und ich brauche ein Zimmer: Einzelzimmer, eine Nacht. Mein Name ist Jule Brandt, ich wohne auf Helgoland.",
+      "voice": "Shelley",
+      "seed": 20972928,
+      "heard": "Und ich brauche ein Zimmer, Einzelzimmer, eine Nacht. Mein Name ist Jule Brandt. Ich wohne auf Helgoland.",
+      "endDb": -57.2
+    },
+    {
+      "file": "25ce641ca96d.m4a",
+      "text": "Elif legt den Ring auf den Tisch.",
+      "voice": "Anna",
+      "seed": 20367531,
+      "heard": "Elif legt den Ring auf den Tisch.",
+      "endDb": -49.6
+    },
+    {
+      "file": "2ec63ffcc03e.m4a",
+      "text": "Ich heiße Anna. Ich bin dreißig Jahre alt. Ich komme aus Russland und wohne jetzt in Kiel. Ich spreche Russisch und ein bisschen Deutsch. Mein Hobby ist Segeln.",
+      "voice": "Anna",
+      "seed": 21192222,
+      "heard": "Ich heiße Anna. Ich bin 30 Jahre alt. Ich komme aus Russland und wohne jetzt in Kiel. Ich spreche Russisch und ein bisschen Deutsch. Mein Hobby ist Segeln.",
+      "endDb": -44.2
+    },
+    {
+      "file": "2f7c490029e9.m4a",
+      "text": "das Küstenlogbuch, die Küstenlogbücher",
+      "voice": "Anna",
+      "seed": 20474535,
+      "heard": "Das Küstenlogbuch. Die Küstenlogbücher.",
+      "endDb": -44.6
+    },
+    {
+      "file": "3649074a3970.m4a",
+      "text": "Meine Damen und Herren, eine Information: Der Zug aus Hamburg kommt heute auf Gleis vier. Er hat circa zehn Minuten Verspätung.",
+      "voice": "Eddy",
+      "seed": 21086335,
+      "heard": "Meine Damen und Herren, eine Information. Der Zug aus Hamburg kommt heute auf Gleis 4. Er hat circa 10 Minuten Verspätung.",
+      "endDb": -56.7
+    },
+    {
+      "file": "36dff3852052.m4a",
+      "text": "Entschuldigung! Ich habe auf die Straßenbahn gewartet. Eine Stunde lang!",
+      "voice": "Sandy",
+      "seed": 20463905,
+      "heard": "Entschuldigung, ich habe auf die Straßenbahn gewartet. Eine Stunde lang.",
+      "endDb": -43.3
+    },
+    {
+      "file": "379ffd4d133b.m4a",
+      "text": "Und jetzt Schreiben, Teil zwei: eine kurze Nachricht. Mateo braucht Hilfe!",
+      "voice": "Anna",
+      "seed": 20275611,
+      "heard": "Und jetzt schreiben Teil 2 eine kurze Nachricht. Matteo braucht Hilfe.",
+      "endDb": -58.0
+    },
+    {
+      "file": "3abab67fd847.m4a",
+      "text": "Dann brauchen wir ein Logbuch – für alle Reisen! Wohin, wann, mit wem.",
+      "voice": "Rocko",
+      "seed": 20436677,
+      "heard": "Dann brauchen wir ein Logbuch für alle Reisen, wohin wann mit wem.",
+      "endDb": -57.6
+    },
+    {
+      "file": "3d5979ff790b.m4a",
+      "text": "Ich wohne in Kiel, in der Nähe vom Hafen.",
+      "voice": "Anna",
+      "seed": 20446345,
+      "heard": "Ich wohne in Kiel, in der Nähe vom Hafen.",
+      "endDb": -43.5
+    },
+    {
+      "file": "3e0cbb63f5dd.m4a",
+      "text": "Und was ist das hier? Und wer ist der Mann mit dem Tee?",
+      "voice": "Eddy",
+      "seed": 20681085,
+      "heard": "Und was ist das hier? Und wer ist der Mann mit dem Tee?",
+      "endDb": -62.5
+    },
+    {
+      "file": "4481c6fa0548.m4a",
+      "text": "Liegeplatz neun! Eine schöne Neun!",
+      "voice": "Rocko",
+      "seed": 21005096,
+      "heard": "Liegeplatz 9, eine schöne 9.",
+      "endDb": -57.1
+    },
+    {
+      "file": "467fd4bb0d5c.m4a",
+      "text": "Sprechen, Teil eins: Stell dich vor! Luca ist dein Partner.",
+      "voice": "Anna",
+      "seed": 21088299,
+      "heard": "Sprechen, Teil 1. Stell dich vor, Luca ist dein Partner.",
+      "endDb": -45.1
+    },
+    {
+      "file": "4cea33308524.m4a",
+      "text": "Moin! Ich bin Jule Brandt, von der Vogelwarte Helgoland. Wo ist HEL 7305?",
+      "voice": "Shelley",
+      "seed": 21145011,
+      "heard": "Moin, ich bin Jule Brandt von der Vogelwarte Helgoland. Wo ist Hell 7305?",
+      "endDb": -55.1
+    },
+    {
+      "file": "4e5cabf47144.m4a",
+      "text": "Sie sind neu. Sie sehen alles.",
+      "voice": "Grandpa",
+      "seed": 21150419,
+      "heard": "Sie sind neu. Sie sehen alles.",
+      "endDb": -57.3
+    },
+    {
+      "file": "4f7fca8c256d.m4a",
+      "text": "Was ist das hier?",
+      "voice": "Eddy",
+      "seed": 20892092,
+      "heard": "Was ist das hier?",
+      "endDb": -56.9
+    },
+    {
+      "file": "56ec2a75a303.m4a",
+      "text": "Gut. Die Prüfung hat vier Teile – wie bei telc: Hören, Lesen, Schreiben und Sprechen.",
+      "voice": "Sandy",
+      "seed": 20892050,
+      "heard": "Gut, die Prüfung hat vier Teile wie bei TELC. Hören, Lesen, Schreiben und Sprechen.",
+      "endDb": -44.8
+    },
+    {
+      "file": "610f8103c898.m4a",
+      "text": "Frauke! In Kiel gibt es seit 1985 keine Straßenbahn!",
+      "voice": "Rocko",
+      "seed": 21181479,
+      "heard": "Frauke, in Kiel gibt es seit 1985 keine Straßenbahn.",
+      "endDb": -57.7
+    },
+    {
+      "file": "64a42ce01961.m4a",
+      "text": "Und wer hat Hunger? Ich habe Brötchen – für alle, auch für Luca!",
+      "voice": "Reed",
+      "seed": 20575071,
+      "heard": "Und wer hat Hunger? Ich habe Brötchen. Für alle, auch für Luca.",
+      "endDb": -38.5
+    },
+    {
+      "file": "64f3d9a029ce.m4a",
+      "text": "Ein Ausflug nach Helgoland! Mit der Möwe! Ich packe sofort!",
+      "voice": "Flo",
+      "seed": 21259724,
+      "heard": "Ein Ausflug nach Helgoland mit der Möwe. Ich packe sofort.",
+      "endDb": -51.0
+    },
+    {
+      "file": "6569c01547e1.m4a",
+      "text": "Der Ring liegt im Kleiderschrank.",
+      "voice": "Anna",
+      "seed": 20868447,
+      "heard": "Der Ring liegt im Kleiderschrank.",
+      "endDb": -49.7
+    },
+    {
+      "file": "6f26f1346327.m4a",
+      "text": "Links? Rechts? Geradeaus? Ich lese lieber!",
+      "voice": "Eddy",
+      "seed": 20443719,
+      "heard": "Links? Rechts? Geradeaus? Ich lese lieber.",
+      "endDb": -55.9
+    },
+    {
+      "file": "6f9a24f192c1.m4a",
+      "text": "Hallo, hier ist Mateo. Ich bin noch in der Küche. Ich komme um zwölf zum Club. Bringt bitte Brötchen mit! Tschüss!",
+      "voice": "Reed",
+      "seed": 20735103,
+      "heard": "Hallo, hier ist Matteo. Ich bin noch in der Küche. Ich komme um 12 zum Club. Bringt bitte Brötchen mit. Tschüss!",
+      "endDb": -44.9
+    },
+    {
+      "file": "723bb574aa6d.m4a",
+      "text": "Gut geschrieben! Schreiben – bestanden.",
+      "voice": "Sandy",
+      "seed": 21235691,
+      "heard": "Gut geschrieben. Schreiben bestanden.",
+      "endDb": -42.9
+    },
+    {
+      "file": "726bf5db1f96.m4a",
+      "text": "Das ist unsere Möwe – aber wo ist ihr Ring? Ohne Ring ist sie nur eine Möwe!",
+      "voice": "Shelley",
+      "seed": 21114469,
+      "heard": "Das ist unsere Möwe, aber wo ist ihr Ring? Ohne Ring ist sie nur eine Möwe.",
+      "endDb": -60.4
+    },
+    {
+      "file": "7a2a51b43b30.m4a",
+      "text": "Jetzt bist du Mitglied! Du hast einen Platz im Club – und einen Namen an der Tafel!",
+      "voice": "Rocko",
+      "seed": 21242256,
+      "heard": "Jetzt bist du Mitglied. Du hast einen Platz im Club und einen Namen an der Tafel.",
+      "endDb": -61.3
+    },
+    {
+      "file": "8dda27e9d045.m4a",
+      "text": "Sie ist im Club! Sie hat uns die ganze Woche geholfen!",
+      "voice": "Flo",
+      "seed": 20282597,
+      "heard": "Sie ist im Club. Sie hat uns die ganze Woche geholfen.",
+      "endDb": -44.6
+    },
+    {
+      "file": "933787c04106.m4a",
+      "text": "Und hier: nicht zwei Unterschriften – zehn! Alle haben unterschrieben!",
+      "voice": "Anna",
+      "seed": 20284932,
+      "heard": "Und hier, nicht zwei Unterschriften, zehn. Alle haben unterschrieben.",
+      "endDb": -39.9
+    },
+    {
+      "file": "97791f7ce04b.m4a",
+      "text": "Im Keller! Im alten Kleiderschrank! Da ist ihr Lager!",
+      "voice": "Flo",
+      "seed": 20383514,
+      "heard": "Im Keller, im alten Kleiderschrank, da ist ihr Lager.",
+      "endDb": -45.0
+    },
+    {
+      "file": "9854c0d34fd2.m4a",
+      "text": "das Mitglied, die Mitglieder",
+      "voice": "Anna",
+      "seed": 21009842,
+      "heard": "Das Mitglied, die Mitglieder",
+      "endDb": -63.5
+    },
+    {
+      "file": "a24beb456aba.m4a",
+      "text": "Er sagt nur Moin! Wie du am ersten Tag!",
+      "voice": "Rocko",
+      "seed": 20703002,
+      "heard": "Er sagt nur Moin, wie du am ersten Tag.",
+      "endDb": -55.6
+    },
+    {
+      "file": "a4d9573f09af.m4a",
+      "text": "das Feuerwerk, die Feuerwerke",
+      "voice": "Anna",
+      "seed": 20884397,
+      "heard": "Das Feuerwerk. Die Feuerwerke.",
+      "endDb": -56.5
+    },
+    {
+      "file": "a8746f643bf5.m4a",
+      "text": "Zwei Unterschriften? Kein Problem! Ich unterschreibe. Und ich frage alle!",
+      "voice": "Anna",
+      "seed": 20781572,
+      "heard": "Zwei Unterschriften. Kein Problem. Ich unterschreibe. Und ich frage alle.",
+      "endDb": -52.6
+    },
+    {
+      "file": "ac6035d940d5.m4a",
+      "text": "Ein Ring? Im Keller? Dafür gibt es ein Formular!",
+      "voice": "Sandy",
+      "seed": 20529269,
+      "heard": "Ein Ring im Keller? Dafür gibt es ein Formular.",
+      "endDb": -37.2
+    },
+    {
+      "file": "b4692e0aeb59.m4a",
+      "text": "Und wo kann ich parken? Nur eine Stunde!",
+      "voice": "Eddy",
+      "seed": 20310167,
+      "heard": "Und wo kann ich parken? Nur eine Stunde.",
+      "endDb": -59.7
+    },
+    {
+      "file": "bbed8a27cb33.m4a",
+      "text": "Die Prüfung beginnt um halb elf. Teil eins: Hören – am Bahnhof!",
+      "voice": "Sandy",
+      "seed": 20775938,
+      "heard": "Die Prüfung beginnt um halb elf. Teil 1. Hören am Bahnhof.",
+      "endDb": -53.5
+    },
+    {
+      "file": "bc42d332fb8a.m4a",
+      "text": "Moin! Heute ist ein wichtiger Tag. Sie möchten Mitglied werden? Dann brauchen Sie eine Prüfung!",
+      "voice": "Sandy",
+      "seed": 20474056,
+      "heard": "Moin! Heute ist ein wichtiger Tag. Sie möchten Mitglied werden? Dann brauchen Sie eine Prüfung.",
+      "endDb": -44.3
+    },
+    {
+      "file": "c15b7592f98c.m4a",
+      "text": "Heute kommt Frau Brandt! Von der Vogelwarte auf Helgoland! Sie will unsere Möwe sehen!",
+      "voice": "Flo",
+      "seed": 21020059,
+      "heard": "Heute kommt Frau Brandt. Von der Vogelwarte auf Helgoland. Sie will unsere Möwe sehen.",
+      "endDb": -57.7
+    },
+    {
+      "file": "c2af1f56efcb.m4a",
+      "text": "Entschuldigen Sie! Wo ist die Kiellinie? Ich bringe hundert Stühle für die Party am Club!",
+      "voice": "Eddy",
+      "seed": 21125466,
+      "heard": "Entschuldigen Sie, wo ist die Key-Linie? Ich bringe 100 Stühle für die Party am Club.",
+      "endDb": -55.8
+    },
+    {
+      "file": "c3007c9f082d.m4a",
+      "text": "Vier Teile, vier Stempel. Sie haben die Prüfung bestanden!",
+      "voice": "Sandy",
+      "seed": 20490283,
+      "heard": "Vier Teile, vier Stempel. Sie haben die Prüfung bestanden.",
+      "endDb": -43.2
+    },
+    {
+      "file": "c85a00198024.m4a",
+      "text": "Frauke, nimm das Fahrrad! Oder den Bus!",
+      "voice": "Flo",
+      "seed": 20544068,
+      "heard": "Frauke, nimm das Fahrrad oder den Bus.",
+      "endDb": -48.4
+    },
+    {
+      "file": "c865de90e5e4.m4a",
+      "text": "Moin?",
+      "voice": "Eddy",
+      "seed": 20551108,
+      "heard": "Moin!",
+      "endDb": -44.0
+    },
+    {
+      "file": "d79cba371def.m4a",
+      "text": "Und wer ist der Mann mit dem Tee?",
+      "voice": "Eddy",
+      "seed": 20321197,
+      "heard": "Und wer ist der Mann mit dem Tee?",
+      "endDb": -57.3
+    },
+    {
+      "file": "d9051f9b60c5.m4a",
+      "text": "Kiellinie – nach rechts! Aber da: Lkw verboten!",
+      "voice": "Anna",
+      "seed": 20617283,
+      "heard": "Keillinie nach rechts, aber da LKW verboten.",
+      "endDb": -42.8
+    },
+    {
+      "file": "dc23f27dc133.m4a",
+      "text": "Und ich koche auf jeder Reise! Fischbrötchen für alle!",
+      "voice": "Reed",
+      "seed": 20570673,
+      "heard": "Und ich koche auf jeder Reise Fischbrötchen für alle.",
+      "endDb": -60.9
+    },
+    {
+      "file": "de0776301810.m4a",
+      "text": "Kann ich hier segeln lernen?",
+      "voice": "Eddy",
+      "seed": 20277582,
+      "heard": "Kann ich hier segeln lernen?",
+      "endDb": -62.6
+    },
+    {
+      "file": "dfb1885c6de1.m4a",
+      "text": "Eine Prüfung? Im Club? Frau Petersen, das ist nicht nett!",
+      "voice": "Rocko",
+      "seed": 21225281,
+      "heard": "Eine Prüfung im Club? Frau Petersen, das ist nicht nett.",
+      "endDb": -67.8
+    },
+    {
+      "file": "ea4bf3ea86b3.m4a",
+      "text": "Und morgen fährt die Möwe nach Helgoland. Kommen Sie alle mit – Helgoland ist schön!",
+      "voice": "Shelley",
+      "seed": 20957041,
+      "heard": "Und morgen fährt die Möwe nach Helgoland. Kommen Sie alle mit, Helgoland ist schön!",
+      "endDb": -39.8
+    },
+    {
+      "file": "ed6211071e81.m4a",
+      "text": "die Vogelwarte, die Vogelwarten",
+      "voice": "Anna",
+      "seed": 20534015,
+      "heard": "Die Vogelwarte, die Vogelwarten",
+      "endDb": -41.3
+    },
+    {
+      "file": "ef52318a00fb.m4a",
+      "text": "der Lieferschein, die Lieferscheine",
+      "voice": "Anna",
+      "seed": 20745563,
+      "heard": "Der Lieferschein. Die Lieferscheine.",
+      "endDb": -53.4
+    },
+    {
+      "file": "f02f1c2c2069.m4a",
+      "text": "Bis morgen. Am Montag fahre ich zurück – mit der Möwe, vielleicht!",
+      "voice": "Shelley",
+      "seed": 21059943,
+      "heard": "Bis morgen. Am Montag fahre ich zurück mit der Möwe vielleicht?",
+      "endDb": -57.3
+    },
+    {
+      "file": "f4b6f1e40a9e.m4a",
+      "text": "Danke! Ohne Sie – keine Stühle, keine Party!",
+      "voice": "Eddy",
+      "seed": 20740222,
+      "heard": "Danke. Ohne sie keine Stühle, keine Party.",
+      "endDb": -50.7
+    },
+    {
+      "file": "fed83595fd76.m4a",
+      "text": "Ja, gern! Danke! Ich heiße Luca. Ich komme aus Italien und studiere ein Jahr in Kiel.",
+      "voice": "Eddy",
+      "seed": 20690100,
+      "heard": "Ja, gern. Danke. Ich heiße Luca. Ich komme aus Italien und studiere ein Jahr in Kiel.",
+      "endDb": -59.2
+    }
+  ]
+}

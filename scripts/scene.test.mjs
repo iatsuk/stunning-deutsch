@@ -568,3 +568,10 @@ test("new mini-games check the answer, and their puzzles have exactly one way ou
   assert.ok(!valid({ ...algo, max: 2 }), "решение длиннее, чем помещается карточек");
   for (const c of [grid, planner, glue, lift, sounds, contra, ads, tree, portrait, spy, algo]) assert.ok(!isCorrect(c, initialAnswer(c)), c.kind);
 });
+
+test("a phrase after a German article or preposition reads without its own article", async () => {
+  const { germanBefore } = await import("../src/story/scene.ts");
+  for (const before of ["Das Schild MOIN ist wieder am ", "Nils kommt aus dem ", "Lotte ist in Klasse drei: zwanzig ", "Mit einem "])
+    assert.ok(germanBefore(before), before);
+  for (const before of ["К пустому ", "Über dem Wasser: ", "Das ist ", ""]) assert.ok(!germanBefore(before), before);
+});

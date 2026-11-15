@@ -1258,6 +1258,14 @@ export const phrases: Record<string, Phrase> = {
   kulturell: { ru: "культурный", de: "kulturell", note: "Ein kulturelles Programm — культурная программа." },
   auslaendisch: { ru: "иностранный", de: "ausländisch", note: "От das Ausland — заграница." },
   milliarde: { ru: "миллиард", de: "die Milliarde", pl: "Milliarden", note: "Tausend Millionen — eine Milliarde." },
+  // Глава 13 — клубный экзамен и Küstenlogbuch.
+  notizbuch: { ru: "блокнот", de: "das Notizbuch", pl: "Notizbücher", note: "die Notiz — заметка, das Buch — книга. Свой блокнот вы получили в первый день." },
+  mitglied: { ru: "член клуба", de: "das Mitglied", pl: "Mitglieder", note: "Mitglied werden — вступить: в клуб, в союз, в команду." },
+  vogelwarte: { ru: "орнитологическая станция", de: "die Vogelwarte", pl: "Vogelwarten", note: "der Vogel — птица, die Warte — пост наблюдения." },
+  bestanden: { ru: "сдано", de: "bestanden", note: "Die Prüfung ist bestanden. — Экзамен сдан." },
+  lieferschein: { ru: "накладная", de: "der Lieferschein", pl: "Lieferscheine", note: "Бумага к доставке: что, кому и до какого часа." },
+  feuerwerk: { ru: "фейерверк", de: "das Feuerwerk", pl: "Feuerwerke", note: "das Feuer + das Werk. Kieler Woche кончается фейерверком." },
+  kuestenlogbuch: { ru: "журнал поездок по побережью", de: "das Küstenlogbuch", pl: "Küstenlogbücher", note: "die Küste — побережье, das Logbuch — журнал: куда, когда и с кем." },
 };
 
 export const episodes: Episode[] = [
