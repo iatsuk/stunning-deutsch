@@ -1,69 +1,101 @@
-# Stunning Deutsch
+<h1 align="center">Stunning Deutsch</h1>
 
-Немецкий по ступеням telc. Основной способ обучения — история **«Дело о пропавшем Moin»** (`#/a1/moin`): полный курс A1 в 13 главах, формат сцен. С 15 ноября 2026 года главная и страница A1 ведут в неё. Уроки A1 остаются справочником по темам, уроки A2 и B1 скрыты (`status: soon` в `content/levels.yaml`) до переработки в формат истории; их контент, записи и тесты остаются в сборке. Решения — в [A1-PLAN.md](A1-PLAN.md).
+<p align="center">
+  <b>German from zero to A1, told as a detective story.</b><br>
+  A free browser course for Russian speakers that prepares for telc Deutsch A1 / Start Deutsch 1.
+</p>
 
-Справочник A1 (`#/a1/reference`) показывает все 66 правил и 970 слов экзамена, которые даёт история, с переводом, озвучкой и главой; он собирается из данных курса. Темы уроков A1 остались подробными разборами без игр и дел.
+<p align="center">
+  <a href="https://stunning-deutsch.deelstuff.com"><b>Open the course → stunning-deutsch.deelstuff.com</b></a>
+</p>
 
-Ниже описан прежний формат уроков: по нему устроены разборы тем A1 и скрытые уровни. Каждая тема — одна страница, где сцена следует за текстом: вы листаете объяснение, а рядом открываются реплики диалога, карточки слов, таблицы с подсвеченными окончаниями, схема предложения, где видно, куда уходит глагол, и задания в формате экзамена. Порядок урока: разбор → шпаргалка → тренажёр → игра темы → дело → словарь.
+<p align="center">
+  <img src="public/story-img/01-promenade.jpg" alt="The Kiel waterfront: a young man with a suitcase waves to new friends, and a gull steals a sandwich from a kiosk" width="860">
+</p>
 
-Реализованы A1 (12 тем) и A2 (14 тем). A2 продолжает историю в сезоне **Küstenlogbuch**: друзья объясняют причины, передают вещи, выбирают жильё и покупки, согласуют время и уточняют сведения в поездках по северу Германии. У каждого урока пять игровых действий и отдельное дело — всего 70 шагов A2. Есть входная работа, три проверки после блоков 1–4, 5–9 и 10–14 и авторский пробник Start Deutsch 2. Реализация и проверки — в [A2-PROGRESS.md](A2-PROGRESS.md), методический маршрут — в [A2-PLAN.md](A2-PLAN.md). B1 реализован полностью: 20 тем сезона **FördeTreff**, 100 игровых шагов, 20 отдельных дел, входная работа, пять проверок и авторский пробник Zertifikat Deutsch / telc Deutsch B1. Методический маршрут — в [B1-PLAN.md](B1-PLAN.md), результаты проверки — в [B1-PROGRESS.md](B1-PROGRESS.md). Описания B2 и C1 отложены в `content/later/levels-b2-c1.yaml`: сборка их не читает.
+## The case
 
-До 15 ноября 2026 года все 12 тем A1 связывало приключение **«Команда к Kieler Woche»**; теперь в уроках A1 игр темы и дел нет, а описание ниже — история формата. Его тоже составляли: знакомство, гости, еда и покупки, время встреч, жильё, дорога, здоровье, работа и поездки. Всего 59 игровых шагов: карточки и владельцы вещей, игровой телефон, сборка реплик, корзина с количествами, часы, чтение объявлений и согласование планов. В первом эпизоде четыре шага, в остальных по пять. У каждой темы есть отдельное детективное дело; в двенадцатой история получает развязку. Экзаменационные задания сохранены, а в теме 11 добавлена анкета по профессии. После тренажёра игра и дело идут подряд; словарь завершает урок. Навигация отражает все разделы и выделяет текущий; на узком телефоне размещается в два ряда. Прогресс сохраняется в браузере, доступны повторное прослушивание, текстовые подсказки и продолжение после перезагрузки.
+The old **MOIN** sign has gone missing from a sailing club in Kiel, and you know exactly one German word. To find the sign, you meet people, question witnesses, read notes and listen to announcements. Over 13 chapters the story moves from Russian to German: the first chapter is almost all Russian, and by the last one you read the clues without a translation.
 
-[Методика](METHOD.md) связывает сюжет, действия и возвращение к знакомому языку в новых ситуациях. Герои и география — в [WORLD.md](WORLD.md), реализованные эпизоды и дальнейшие предложения — в [GAMEPLAY.md](GAMEPLAY.md). Экзаменационные задания и детективные дела сохранены отдельно; игры заменили текстовое поле «Ваша практика».
+The interface and explanations are in Russian. There is no sign-up: the course opens at once and keeps your progress in your browser.
 
-Классическая версия «Дела о пропавшем Moin» удалена. Курс в сценах описан в [A1-PLOT.md](A1-PLOT.md) и [A1-PLAN.md](A1-PLAN.md). Дизайн классической версии сохранён в [A1-STORY.md](A1-STORY.md).
+<table>
+  <tr>
+    <td width="33%"><img src="public/home/story.jpg" alt="A scene: Hauke asks “Und woher kommst du?”, and the player answers in German"></td>
+    <td width="33%"><img src="public/home/docks.jpg" alt="The Docks game: sort word cards into der, die and das"></td>
+    <td width="33%"><img src="public/home/notebook.jpg" alt="The detective's notebook: clue notes that mix German and Russian"></td>
+  </tr>
+  <tr>
+    <td align="center">Answer the characters</td>
+    <td align="center">Sort words by article</td>
+    <td align="center">Collect clues in the notebook</td>
+  </tr>
+</table>
 
-## Запуск
+## How it teaches
+
+A word stays in memory when you needed it for the case, heard it aloud and met it again in different situations. Every chapter is built on that.
+
+- **A story instead of a textbook.** Each word is tied to a person, a place or a joke. The case moves on only when you understand a line and answer it.
+- **German arrives step by step.** Words you already know come back into the narration in German. Any word shows its translation on tap.
+- **The article sticks to the word.** *der*, *die* and *das* have their own colours throughout the game, and the Docks game sorts words until the article comes by itself.
+- **You build the phrase yourself.** You turn the dials of a lock, put sentences together from tiles and type words. The check is exact and shows the word with the mistake.
+- **A rule comes when you need it.** A short card with an example and a table opens right before the task that needs it.
+- **Words return until they stay.** A round of three games runs before each chapter and at the start of a new day. A word you remember comes back less and less often: after one day, then two, four, eight and so on. A mistake brings it back sooner.
+- **More than thirty kinds of tasks.** A clock, a till, a route on a map, a photofit, logic grids, a race with a gull. The same kind of task never comes twice in a row.
+- **Listening from day one.** Every line is voiced. You hear announcements, messages and conversations first and answer from what you heard.
+- **Writing and speaking.** You write short messages from a model and speak aloud first, then compare yourself with the model.
+- **Mistakes don't punish.** A wrong answer gives an explanation and another try, and your progress stays.
+- **Exam format.** From chapter 2, tasks carry the same German instructions as the exam. The last chapter walks through all four parts of Start Deutsch 1.
+
+## What's inside
+
+- **The Case of the Missing Moin.** 13 chapters of scenes with dialogue, mini-games and review rounds, with checks inside the story after chapters 4 and 8.
+- **A1 reference.** All 66 grammar rules and 970 exam words that the story teaches, on one page, with search, audio and the chapter where each one appears.
+- **Topic notes.** Twelve A1 topics with detailed explanations, cheat sheets, drills and word lists.
+- **Checks and a mock exam.** Short checks after topics 4, 8 and 12, and a mock exam with all four parts of Start Deutsch 1 and the exam's timing: listening, reading, writing and speaking.
+
+## Run it locally
+
+You need Node.js 22.18+ and pnpm.
 
 ```sh
 pnpm install
-pnpm content    # проверить темы и готовые аудио, собрать src/generated
 pnpm dev        # http://127.0.0.1:5180
-pnpm check      # только проверка контента, без озвучки
-pnpm test       # игровые ответы, порядок слов, позиции вариантов, сохранение, сроки пробника
-pnpm build      # content + проверка типов + статическая сборка в dist/
 ```
 
-Нужны Node.js 22.18+ (сборка контента импортирует `.ts` напрямую) и pnpm. Озвучка сгенерирована заранее, GPU для сборки не нужна. С 26 октября 2026 года для новых или изменённых фраз используется **только OmniVoice**; с 15 ноября 2026 года все записи сайта — OmniVoice. Процесс — [генерация аудио](scripts/tts/README.md).
+| Command | What it does |
+|---|---|
+| `pnpm content` | Validates the content and builds `src/generated/` |
+| `pnpm check` | Validates the content only |
+| `pnpm test` | Runs the tests: game answers, review scheduling, saves, word coverage |
+| `pnpm typecheck` | Checks the TypeScript types |
+| `pnpm build` | Content, type check and a static build into `dist/` |
 
-## Как устроено
+All recordings are already in the repository, so the build needs no GPU.
+
+## How it's built
 
 ```
-content/levels.yaml        уровни, экзамены, главы по умолчанию
-content/a1/NN-<id>.yaml    темы A1
-content/a2/NN-<id>.yaml    темы A2
-content/b1/NN-<id>.yaml    темы B1
-content/assessments/       входные работы, проверки и пробники A2/B1
-        │
-        ▼  pnpm content: проверка → состояние сцены каждого фрагмента → готовое аудио
-src/generated/catalog.json         уровни и краткое описание тем
-src/generated/topics/<id>.json     тема целиком, грузится при открытии страницы
-public/audio/<hash>.m4a            немецкие фразы
-        │
-        ▼
-src/pages      главная, уровень, тема
-src/stage      виды сцены: диалог, слова, таблица, схема предложения, задание, часы
-src/trainer    упражнения, тренажёр артиклей, карточки
+content/*.yaml  ──pnpm content──▶  src/generated/*.json  ──▶  React pages
+                                   public/audio/<hash>.m4a
 ```
 
-- **Тема — один YAML-файл.** В нём диалоги, группы слов, таблицы, задания экзамена, фрагменты разбора и упражнения. Как писать тему, разметка, виды сцены и маршрут грамматики A1 — в [CONTENT.md](CONTENT.md).
-- **Сцена — функция фрагмента.** Сборка заранее вычисляет состояние сцены для каждого фрагмента: что на ней, сколько открыто, что выделено. Страница только показывает нужное состояние, когда фрагмент пересекает линию на экране. У вопроса два состояния: до ответа и после кнопки «Показать ответ».
-- **Схема предложения.** Четыре поля немецкого предложения: позиция 1, глагол, середина, конец. Слова — плитки с ключами. При смене фрагмента плитка с тем же ключом переезжает на новое место, поэтому видно, как подлежащее уходит за глагол, а приставка — в конец.
-- **Озвучка.** Все 2339 записей — OmniVoice (код Apache 2.0, модель CC-BY-NC); прежние записи Qwen3-TTS перезаписаны в A1 и удалены вместе с озвучкой скрытых A2 и B1. Восемь постоянных голосов переиспользуют синтетические немецкие образцы, созданные Qwen VoiceDesign. Конфигурация, образцы и инструкции — в [scripts/tts](scripts/tts/README.md). Хэш зависит от текста, голоса и конфигурации модели. Сборка использует готовые M4A; при отсутствии записи останавливается с инструкцией генерации.
-- **Проверка контента.** Сборка падает с понятным сообщением, если поле неизвестно, у существительного нет формы множественного числа, `reveal` больше числа элементов, ссылка ведёт на несуществующий диалог, в таблице лишняя ячейка из-за запятой без кавычек, а вариант `also` нельзя собрать из плиток задания. CI (`.github/workflows/checks.yml`) запускает проверки при каждом push и ничего не публикует.
-- **Прогресс** решённых упражнений и настройка перевода хранятся в `localStorage` этого браузера. Запись идёт поверх сохранённого значения, поэтому две вкладки не стирают результаты друг друга.
-- **Адреса** вида `#/a1/kennenlernen`, поэтому `dist/` работает на любом статическом хостинге без настройки сервера.
+- **Content is YAML.** Lessons, exam tasks and the Start Deutsch 1 word list live in `content/`. `scripts/build-content.mjs` validates them and stops with a clear message on an unknown field, a noun without a plural, a broken link or a task that its own tiles cannot build.
+- **The story is code.** Each chapter is a set of scenes in `src/story/scenes/`. The game logic (`logic.ts`, `scene.ts`, `review.ts`, `progress.ts`) has no React and is covered by `node --test`.
+- **Every exam word is tracked.** `scripts/a1-index.mjs` counts where each word and grammar rule of the exam appears. A word counts as learned after four uses in three chapters, with at least one action and one listening. A ratchet test keeps learned words from slipping out, and `scripts/a1-returns.mjs` plans the review rounds so that words from earlier chapters keep coming back.
+- **Recordings are tied to the text.** Each German phrase has a pre-generated recording whose file name is a hash of the text, the voice and the model settings. A changed phrase needs a new recording, and the build stops when one is missing. The process is in [scripts/tts/README.md](scripts/tts/README.md).
+- **Saves are versioned.** Progress lives in `localStorage` and is stored per scene step, so editing one task resets only that answer, and older saves still open.
+- **A static site.** Addresses look like `#/a1/moin`, so `dist/` works on any static host. GitHub Actions runs the checks, tests and type check on every push. The site is deployed to GitHub Pages by a manual workflow.
 
-## Экзамен
+Design notes are in Russian: [A1-PLOT.md](A1-PLOT.md) covers the story and the scene format, [A1-PLAN.md](A1-PLAN.md) the course and word coverage, [CONTENT.md](CONTENT.md) the lesson format, and [AGENTS.md](AGENTS.md) the rules for working on the code.
 
-Формат A1 взят из официального описания Start Deutsch 1 (Goethe-Institut, *Prüfungsziele und Testbeschreibung*): telc Deutsch A1 и Goethe-Zertifikat A1 — один экзамен, разработанный вместе. Четыре модуля — Hören, Lesen, Schreiben, Sprechen — по 15 баллов, сдан от 60 %. Каждая тема помечает, к каким частям экзамена готовит, а страница уровня показывает обратную связь: какая часть в каких темах тренируется.
+## Credits
 
+- **Voices:** [OmniVoice](https://huggingface.co/k2-fsa/OmniVoice) by k2-fsa (code Apache 2.0, model CC BY-NC). The project is non-commercial.
+- **Illustrations:** generated with an AI image model from character reference sheets in `art/refs/`, each one checked by eye.
+- **Exam format:** follows the Goethe-Institut description of Start Deutsch 1 (*Prüfungsziele und Testbeschreibung*); telc Deutsch A1 and Goethe-Zertifikat A1 are the same exam. The project is not affiliated with telc or the Goethe-Institut. All tasks and recordings are original.
 
-A2 ориентирован на [Start Deutsch 2 / telc Deutsch A2](https://www.telc.net/sprachpruefungen/deutsch/start-deutsch-2-telc-deutsch-a2/) и [официальный Übungstest 1, 10-е издание 2024](https://shop.telc.net/media/catalog/product/file/t/e/telc_deutsch_a2_uebungstest_1-1_20241212_5090-b00-010107.pdf). Задания и записи проекта авторские. Пробник `#/a2/a2-mock`: 20 минут Hören, 50 минут Lesen/Schreiben, дополнительно 15 минут Sprechen. Во время письменной попытки нет ответов и текста аудио; телефон и разговор доступны дважды, радио — один раз. Сроки и ответы сохраняются после перезагрузки. После попытки можно читать тексты и переслушивать без ограничения. Итог показывает 35 закрытых ответов отдельно от письма и речи; они не оцениваются автоматически.
+## Feedback
 
-Записей на сайте 2339, все OmniVoice: уроки, проверки и пробник A1, выражения, реплики, письмо и речь игры. A2 и B1 скрыты и пока не озвучены.
-
-A1: `#/a1/a1-mock` повторяет формат Start Deutsch 1: 35 закрытых ответов (Hören 15, Lesen 15, формуляр 5), письмо примерно на 30 слов по трём пунктам и три части устной пары. Время: Hören 20 минут, Lesen 25, Schreiben 20, Sprechen около 15. Hören 1 и 3 доступны дважды, Hören 2 один раз. Письмо (до 10 баллов) и речь (до 15) оценивает человек, поэтому приложение не объявляет сдачу: экзамен сдан от 36 баллов из 60. Проверки `#/a1/a1-check-04`, `a1-check-08` и `a1-check-12` идут после тем 4, 8 и 12 без таймера. Входной работы в A1 нет: это начальный уровень.
-
-B1: `#/b1/b1-mock` содержит 60 закрытых ответов, письмо по всем четырём пунктам и три части парной речи. Время: Lesen/Sprachbausteine 90 минут, Hören 30, Schreiben 30, затем подготовка 20 и разговор 15. Hören 1 доступен один раз, части 2–3 дважды. Сроки, ответы, черновик и счётчики сохраняются после перезагрузки. Закрытые части дают до 180 взвешенных баллов; письмо до 45 и речь до 75 оцениваются отдельно человеком. Подробности — в [B1-PROGRESS.md](B1-PROGRESS.md).
+I'm Andrei. I build this project to learn German myself, and I'd be glad of any comments and ideas: [write to me on Telegram](https://t.me/aiatsuk).
