@@ -25,7 +25,7 @@ export const LEGAL = {
   /** Строки адреса; при c/o-адресе первая строка — «c/o …». */
   address: address?.length ? address : ["ЗАПОЛНИТЬ: адрес"],
   email: field(env.LEGAL_EMAIL, "email"),
-  updated: "Oktober 2026",
+  updated: "November 2026",
 };
 
 /** Адрес c/o-сервиса: письма принимает почтовый сервис, а не владелец лично. */

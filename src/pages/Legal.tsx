@@ -80,18 +80,47 @@ export function DatenschutzPage() {
         .
       </p>
 
-      <h2>3. Keine Cookies, keine Analyse</h2>
+      <h2>3. Keine Cookies, keine Inhalte Dritter</h2>
       <p>
-        Diese Website setzt keine Cookies und verwendet keine Analyse- oder Tracking-Dienste. Schriftarten und
-        Audiodateien werden vom selben Server geladen; es werden keine Inhalte von Drittanbietern eingebunden.
+        Diese Website setzt keine Cookies. Schriftarten und Audiodateien werden vom selben Server geladen; es werden
+        keine Inhalte von Drittanbietern eingebunden.
       </p>
 
-      <h2>4. Lokale Speicherung im Browser</h2>
+      <h2>4. Besuchsstatistik mit GoatCounter</h2>
+      <p>
+        Mehrere Websites des Betreibers, darunter diese, nutzen unsere eigene GoatCounter-Instanz auf einem OVHcloud-VPS
+        in Polen. Die Erfassung erfolgt über stats.deelstuff.com; ein externer Analyseanbieter ist nicht beteiligt. Wir
+        erfassen Seitenbesuche, Herkunftsquellen und Browsersprachen, um zu verstehen, wie das Lernangebot genutzt
+        wird, und es zu verbessern. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO: unser berechtigtes Interesse an
+        einer begrenzten Nutzungsstatistik unserer eigenen Websites.
+      </p>
+      <p>
+        Der Zähler übermittelt beim Öffnen der Website ihre Adresse, für diese Website stets die Startseite, und den
+        Titel der sichtbaren Seite; der Titel kann den geöffneten Lernbereich nennen. Dazu kommen die Herkunft, gekürzt
+        auf die Adresse der vorherigen Website, und technische HTTP-Anfragedaten. URL-Parameter und der Teil der Adresse
+        nach „#“ werden nicht übertragen. IP-Adresse und User-Agent
+        werden vorübergehend im Arbeitsspeicher verarbeitet, um Sitzungen innerhalb von acht Stunden zu unterscheiden;
+        sie werden nicht in der Analysedatenbank gespeichert. Besucher-Cookies und dauerhafte Besucherkennungen werden
+        nicht verwendet. Geolokalisierung und die Speicherung einzelner Seitenaufrufe sind deaktiviert. Die
+        Aufbewahrungsfrist für aggregierte Statistiken ist auf 730 Tage eingestellt.
+      </p>
+      <p>
+        Der Zähler berücksichtigt Do Not Track und Global Privacy Control. Sie können ihn außerdem für Ihren Browser
+        deaktivieren, indem Sie https://stunning-deutsch.deelstuff.com/#analytics-disable in einem neuen Tab öffnen.
+        Diese Auswahl bleibt lokal gespeichert, bis Sie die Website-Daten löschen oder die Adresse mit
+        #analytics-enable öffnen. Über die Telegram Bot API werden nur zusammengefasste Zahlen, beliebte öffentliche
+        Seiten und Diagramme an den privaten Telegram-Chat des Betreibers gesendet, ohne IP-Adressen oder
+        Besucherkennungen. Die Statistiken verschiedener Websites werden nicht zu individuellen Profilen verknüpft.
+        Weitere Informationen: <a href="https://www.goatcounter.com/help/sessions">GoatCounter — Sessions</a>.
+      </p>
+
+      <h2>5. Lokale Speicherung im Browser</h2>
       <p>
         Ihr Lernfortschritt und Ihre Einstellungen werden ausschließlich im lokalen Speicher (localStorage) Ihres
-        Browsers abgelegt. Diese Daten verlassen Ihr Gerät nicht und werden nicht an uns übertragen. Die Speicherung
-        ist für die von Ihnen gewünschte Funktion erforderlich (§ 25 Abs. 2 Nr. 2 TDDDG). Sie können die Daten
-        jederzeit über die Einstellungen Ihres Browsers löschen.
+        Browsers abgelegt. Diese Daten verlassen Ihr Gerät nicht und werden nicht an uns übertragen. Dort liegt auch
+        Ihre Auswahl, die Besuchsstatistik abzuschalten. Die Speicherung ist für die von Ihnen gewünschte Funktion
+        erforderlich (§ 25 Abs. 2 Nr. 2 TDDDG). Sie können die Daten jederzeit über die Einstellungen Ihres Browsers
+        löschen.
       </p>
       <p>
         In der Lernspielübung „Vorlesen“ können Sie sich auf eigenen Wunsch selbst aufnehmen. Der Browser fragt dafür
@@ -99,13 +128,13 @@ export function DatenschutzPage() {
         gespeichert und nicht übertragen und verschwindet beim Verlassen der Seite.
       </p>
 
-      <h2>5. Externe Links</h2>
+      <h2>6. Externe Links</h2>
       <p>
         Links zu anderen Websites werden erst beim Anklicken aufgerufen. Für die Datenverarbeitung dort ist der
         jeweilige Anbieter verantwortlich.
       </p>
 
-      <h2>6. Kontakt per E-Mail und Post</h2>
+      <h2>7. Kontakt per E-Mail und Post</h2>
       <p>
         Wenn Sie uns per E-Mail oder Brief kontaktieren, verarbeiten wir Ihre Angaben zur Bearbeitung der Anfrage (Art.
         6 Abs. 1 lit. f DSGVO) und löschen sie, sobald sie dafür nicht mehr erforderlich sind.
@@ -119,7 +148,7 @@ export function DatenschutzPage() {
         </p>
       )}
 
-      <h2>7. Ihre Rechte</h2>
+      <h2>8. Ihre Rechte</h2>
       <p>
         Sie haben das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung
         der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch gegen die Verarbeitung (Art. 21).
