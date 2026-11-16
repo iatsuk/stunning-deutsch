@@ -95,7 +95,3 @@ Design notes are in Russian: [A1-PLOT.md](A1-PLOT.md) covers the story and the s
 - **Voices:** [OmniVoice](https://huggingface.co/k2-fsa/OmniVoice) by k2-fsa (code Apache 2.0, model CC BY-NC). The project is non-commercial.
 - **Illustrations:** generated with an AI image model from character reference sheets in `art/refs/`, each one checked by eye.
 - **Exam format:** follows the Goethe-Institut description of Start Deutsch 1 (*Prüfungsziele und Testbeschreibung*); telc Deutsch A1 and Goethe-Zertifikat A1 are the same exam. The project is not affiliated with telc or the Goethe-Institut. All tasks and recordings are original.
-
-## Feedback
-
-I'm Andrei. I build this project to learn German myself, and I'd be glad of any comments and ideas: [write to me on Telegram](https://t.me/aiatsuk).
