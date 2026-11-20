@@ -37,7 +37,7 @@ stats.deelstuff.com (`AGENTS.md`, «Публикация»). Репозитор�
 
 ## Что стоит дня, если не знать
 
-- **Сгенерированное.** `src/generated/` и `A1-INDEX.md` пересобирает `pnpm content`: правьте
+- **Сгенерированное.** `src/generated/`, `A1-INDEX.md` и `MECHANICS.md` пересобирает `pnpm content`: правьте
   источник. `src/story/scenes/warmups.ts` собирает `node scripts/a1-returns.mjs --write` из
   `src/generated/a1-words.json`; правка руками допустима, но следующий запуск её перепишет, а после
   записи нужен `pnpm content`.

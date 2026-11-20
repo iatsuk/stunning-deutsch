@@ -290,6 +290,8 @@ for (const file of readdirSync(path.join(generatedDir, "assessments"))) if (!ass
 for (const assessment of assessments) writeJson(path.join(generatedDir, "assessments", `${assessment.id}.json`), assessment);
 // Индекс покрытия A1 читает уже записанные темы, поэтому собирается последним (A1-PLAN.md).
 console.log((await import("./a1-index.mjs")).writeIndex());
+// Частота механик: по сценам A1 и по плану сезона A2 (A2-PLOT.md).
+console.log((await import("./mechanics.mjs")).writeMechanics());
 if (DRAFT) {
   console.log(`${summary}; ЧЕРНОВИК: ${draftMissing.size} фраз без записи (кнопки озвучки у них скрыты). Не коммитьте эту сборку.`);
 } else {

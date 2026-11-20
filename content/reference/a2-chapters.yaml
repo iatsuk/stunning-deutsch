@@ -4,11 +4,23 @@
 # это проверяет scripts/a2-chapters.test.mjs. Тематические слова стоят в главе своей темы, общие (связки,
 # наречия, частые глаголы) выравнивают главы по объёму; при написании главы их можно переставлять.
 
+# Игры глав — мини-игры, которые стоят в главе хотя бы раз (A2-PLOT.md, «Частота механик»). Постоянные
+# механики (речь, письмо, замок) стоят в каждой главе и в списке не повторяются, игры возвращения расставляет
+# планировщик. Новые виды, которых ещё нет в движке, перечислены в newGames.
+
+newGames:
+  note: "телефонная заметка: вписать сведения (Hören 1)"
+  negotiation: "договориться о совместном плане (Sprechen 3)"
+  alternatives: "объявления, в одном случае «ничего не подходит» (Lesen 3)"
+  labels: "ценники и этикетки: окончания прилагательных"
+  workshop: "мастерская: что делается (Passiv)"
+
 chapters:
   - chapter: 1
     theme: "человек, распорядок дня, знакомые и соседи"
     lead: B
     grammar: [perfekt-alle]
+    games: [ads, coins, gull, gullword, match, note, odd, portrait, quantity, radio, spy, tail, twenty, verdict, write]
     words:
       - am Abend
       - am Dienstag
@@ -91,6 +103,7 @@ chapters:
     theme: "досуг: хобби, спорт, клубы"
     lead: A
     grammar: [weil, deshalb]
+    games: [cipher, code, compound, contra, contrast, groupchat, letters, scene, sort, sounds, speak, spot, spring, torn]
     words:
       - aktiv
       - am liebsten
@@ -171,6 +184,7 @@ chapters:
     theme: "отношения, праздники, подарки, приглашения"
     lead: C
     grammar: [dativ-nomen]
+    games: [ads, chat, comic, gaps, gull, gullword, memory, odd, order, spy, tail, tree, twenty, verdict]
     words:
       - die Ahnung
       - am Mittag
@@ -252,6 +266,7 @@ chapters:
     theme: "жильё: комнаты, мебель, переезд, техника, аренда"
     lead: C
     grammar: [wechselpraep, stellen-stehen, gegenueber]
+    games: [code, coins, compound, contra, craft, letters, lift, match, quantity, room, scene, sort, speak, spot]
     words:
       - abschließen
       - am Donnerstag
@@ -332,6 +347,7 @@ chapters:
     theme: "покупки, одежда, цены, жалоба на товар"
     lead: A
     grammar: [adjektiv-nom-akk, so-wie]
+    games: [algo, alternatives, budget, contrast, gaps, grid, groupchat, labels, negotiation, order, portrait, sounds, spy, weather]
     words:
       - als
       - der Anzug
@@ -411,6 +427,7 @@ chapters:
     theme: "еда, блюда, кафе и ресторан, готовка"
     lead: A
     grammar: [konj2-koennte, adjektiv-dat]
+    games: [ads, chat, code, coins, comic, contra, craft, labels, letters, memory, negotiation, note, scene, sort]
     words:
       - am Nachmittag
       - ansehen
@@ -490,6 +507,7 @@ chapters:
     theme: "поездки и транспорт, билеты, жильё в дороге, багаж"
     lead: A
     grammar: [seit, waehrend, bis-vom-an, praeteritum-kam-sagte]
+    games: [algo, alternatives, clock, grid, gull, gullword, protocol, radio, retell, sounds, speak, spot, spy, torn]
     words:
       - abends
       - der Abflug
@@ -569,6 +587,7 @@ chapters:
     theme: "тело и здоровье, врач, несчастный случай, страховка"
     lead: B
     grammar: [reflexiv-verben, praeteritum-modal]
+    games: [ads, cipher, code, gaps, letters, lift, odd, order, portrait, radio, scene, tail, twenty, verdict]
     words:
       - "%"
       - am Freitag
@@ -648,6 +667,7 @@ chapters:
     theme: "работа, профессия, зарплата, рабочее время"
     lead: C
     grammar: [dass, wb-er]
+    games: [budget, calendar, chat, clock, comic, compound, labels, match, note, planner, protocol, retell, spring, write]
     words:
       - abgeben
       - aktuell
@@ -728,6 +748,7 @@ chapters:
     theme: "учёба: школа, курс, язык, экзамен"
     lead: A
     grammar: [wenn-nebensatz, indirekte-frage]
+    games: [budget, calendar, coins, contra, grid, memory, planner, proofread, quantity, retell, room, sort, spring, torn]
     words:
       - das Abitur
       - am Morgen
@@ -806,6 +827,7 @@ chapters:
     theme: "услуги: почта, связь, медиа, банк, полиция, бланки"
     lead: все
     grammar: [passiv, jemand-niemand, genitiv]
+    games: [alternatives, calendar, chat, cipher, groupchat, negotiation, note, order, proofread, protocol, spot, tree, workshop, write]
     words:
       - anklicken
       - sich anmelden
@@ -885,6 +907,7 @@ chapters:
     theme: "природа: город и село, растения, животные, погода"
     lead: все
     grammar: [superlativ]
+    games: [algo, compound, contrast, craft, gaps, gull, gullword, lift, odd, sounds, speak, verdict, weather, workshop]
     words:
       - achtzehnhundertachtundvierzig
       - am besten
@@ -958,3 +981,9 @@ chapters:
       - die Wolke
       - das Zentrum
       - zwanzig vor neun
+  - chapter: 13
+    theme: "A2+: повторение всего A2 и экзамен telc A2 в сюжете"
+    lead: все
+    grammar: []
+    games: [alternatives, clock, match, memory, negotiation, planner, proofread, quantity, retell, room, tail, tree, twenty, weather, workshop]
+    words: []

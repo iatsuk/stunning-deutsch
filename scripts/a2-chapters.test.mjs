@@ -34,7 +34,9 @@ test("every A2 grammar point stands in exactly one chapter, and chapters stay ba
   const used = chapters.flatMap((c) => c.grammar);
   assert.deepEqual([...used].sort(), [...ids].sort(), "пункт грамматики пропущен, повторён или неизвестен");
   assert.deepEqual(chapters.map((c) => c.chapter), chapters.map((_, i) => i + 1));
-  const mean = planned.length / chapters.length;
-  for (const c of chapters)
+  // Глава «A2+» новых слов не вводит: она повторяет весь уровень.
+  const taught = chapters.filter((c) => c.words.length);
+  const mean = planned.length / taught.length;
+  for (const c of taught)
     assert.ok(Math.abs(c.words.length - mean) <= mean * 0.2, `глава ${c.chapter}: ${c.words.length} слов при средних ${Math.round(mean)}`);
 });
