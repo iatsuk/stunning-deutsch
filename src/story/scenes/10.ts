@@ -356,10 +356,10 @@ const warten: SceneNode[] = [
     c: {
       kind: "comic",
       panels: [
-        { id: "p1", who: "Herr Jensen", art: "🧣", scene: "Йенсен в шарфе показывает на горло и протягивает блокнот.", answer: "Ich darf nicht sprechen.", ru: "Мне нельзя говорить." },
-        { id: "p2", who: "Greta", art: "🪵", scene: "Грета держится за поясницу.", answer: "Mein Rücken tut weh.", ru: "У меня болит спина." },
-        { id: "p3", who: "Elif", art: "🎟️", scene: "Элиф уступает Грете свою очередь к врачу.", answer: "Nehmen Sie meinen Termin!", ru: "Возьмите мою запись!" },
-        { id: "p4", who: "Dana", art: "📰", scene: "Дана прячется за журналом и хранит врачебную тайну.", answer: "Hier bin ich keine Ärztin.", ru: "Здесь я не врач." },
+        { id: "p1", who: "Herr Jensen", pic: "10-comic-1.jpg", scene: "Йенсен в шарфе показывает на горло и протягивает блокнот.", answer: "Ich darf nicht sprechen.", ru: "Мне нельзя говорить." },
+        { id: "p2", who: "Greta", pic: "10-comic-2.jpg", scene: "Грета держится за поясницу.", answer: "Mein Rücken tut weh.", ru: "У меня болит спина." },
+        { id: "p3", who: "Elif", pic: "10-comic-3.jpg", scene: "Элиф уступает Грете свою очередь к врачу.", answer: "Nehmen Sie meinen Termin!", ru: "Возьмите мою запись!" },
+        { id: "p4", who: "Dana", pic: "10-comic-4.jpg", scene: "Дана прячется за журналом и хранит врачебную тайну.", answer: "Hier bin ich keine Ärztin.", ru: "Здесь я не врач." },
       ],
       extra: ["Ich habe Fieber!"],
     },

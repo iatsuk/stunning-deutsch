@@ -334,7 +334,8 @@ export type BudgetRule =
   | { kind: "forbidTag"; tag: string; label: string };
 export type GroupMsg = { id: string; who: string; voice: string; de: string; ru: string };
 export type GroupStep = { prompt: string; replyTo: string; options: Option[]; answer: string };
-export type ComicPanel = { id: string; scene: string; who: string; art: string; answer: string; ru: string };
+/** Кадр комикса; pic — его картинка в public/story-img. */
+export type ComicPanel = { id: string; scene: string; who: string; pic: string; answer: string; ru: string };
 export type RetellSlot = { id: string; from: string; options: string[]; answer: string };
 export type RetellToken = string | RetellSlot;
 export type RadioRound = {

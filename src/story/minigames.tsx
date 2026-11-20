@@ -1677,12 +1677,18 @@ export function Comic({ c, value, seed, disabled, checked, change }: Game<"comic
               data-active={active === p.id || undefined}
               data-wrong={(checked && fill && fill !== p.answer) || undefined}
             >
-              <div className="moin-comic-head">
-                <small>
-                  {i + 1}. {p.who}
-                </small>
-                <span aria-hidden="true">{p.art}</span>
-              </div>
+              <small>
+                {i + 1}. {p.who}
+              </small>
+              {/* Что на кадре, сказано текстом под ним. */}
+              <img
+                className="moin-comic-pic"
+                src={`${import.meta.env.BASE_URL}story-img/${p.pic}`}
+                alt=""
+                loading="lazy"
+                width={720}
+                height={480}
+              />
               <p className="moin-comic-scene">{p.scene}</p>
               <button
                 type="button"

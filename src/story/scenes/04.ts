@@ -84,10 +84,10 @@ const stands: SceneNode[] = [
     c: {
       kind: "comic",
       panels: [
-        { id: "p1", who: "Mateo", art: "☕", scene: "Матео с термосом разливает кофе набережной.", answer: "Moin! Kaffee für alle!", ru: "Привет! Кофе всем!" },
-        { id: "p2", who: "Вы", art: "🍵", scene: "Вы просите у Матео другой горячий напиток.", answer: "Ich möchte einen Tee, bitte.", ru: "Я бы хотел(а) чай, пожалуйста." },
-        { id: "p3", who: "Derya", art: "🥙", scene: "Хозяйка фургона спрашивает про место у воды.", answer: "Mein Döner-Stand – hier?", ru: "Мой ларёк с донерами — здесь?" },
-        { id: "p4", who: "Herr Jensen", art: "🪧", scene: "Йенсен молча указывает место у фонаря.", answer: "Moin.", ru: "Привет." },
+        { id: "p1", who: "Mateo", pic: "04-comic-1.jpg", scene: "Матео с термосом разливает кофе набережной.", answer: "Moin! Kaffee für alle!", ru: "Привет! Кофе всем!" },
+        { id: "p2", who: "Вы", pic: "04-comic-2.jpg", scene: "Вы просите у Матео другой горячий напиток.", answer: "Ich möchte einen Tee, bitte.", ru: "Я бы хотел(а) чай, пожалуйста." },
+        { id: "p3", who: "Derya", pic: "04-comic-3.jpg", scene: "Хозяйка фургона спрашивает про место у воды.", answer: "Mein Döner-Stand – hier?", ru: "Мой ларёк с донерами — здесь?" },
+        { id: "p4", who: "Herr Jensen", pic: "04-comic-4.jpg", scene: "Йенсен молча указывает место у фонаря.", answer: "Moin.", ru: "Привет." },
       ],
       extra: ["Gute Nacht!"],
     },

@@ -403,6 +403,17 @@ test("every scene picture exists, is a compressed JPEG and stands before a node"
     assert.match(p.alt, /[а-яё]/i, p.src);
   }
   assert.equal(new Set(pics.map((p) => p.src)).size, pics.length);
+  // Кадры комиксов лежат там же и сжаты так же.
+  const panels = allScenes
+    .flatMap((beat) => flatNodes(nodes(beat)))
+    .flatMap((n) => (n.t === "game" && n.c.kind === "comic" ? n.c.panels : []));
+  assert.ok(panels.length >= 12, `${panels.length}`);
+  for (const p of panels) {
+    const file = new URL(`../public/story-img/${p.pic}`, import.meta.url);
+    assert.ok(existsSync(file), p.pic);
+    assert.ok(statSync(file).size < 260_000, `${p.pic}: ${statSync(file).size}`);
+  }
+  assert.equal(new Set(panels.map((p) => p.pic)).size, panels.length);
   // Каждая сцена открывается картинкой: она задаёт место и героев до первой реплики.
   for (const beat of allScenes) assert.equal(nodes(beat)[0].t, "pic", beat.id);
 });
@@ -753,9 +764,9 @@ test("word-order, room, torn-note and the other puzzle games validate, check ans
   const comic = {
     kind: "comic",
     panels: [
-      { id: "p1", scene: "У двери", who: "Hauke", art: "🚪", answer: "Hallo!", ru: "Привет!" },
-      { id: "p2", scene: "За столом", who: "Dana", art: "☕", answer: "Hier ist Kaffee.", ru: "Вот кофе." },
-      { id: "p3", scene: "У окна", who: "Nils", art: "🌊", answer: "Schau mal!", ru: "Посмотри!" },
+      { id: "p1", scene: "У двери", who: "Hauke", pic: "door.jpg", answer: "Hallo!", ru: "Привет!" },
+      { id: "p2", scene: "За столом", who: "Dana", pic: "table.jpg", answer: "Hier ist Kaffee.", ru: "Вот кофе." },
+      { id: "p3", scene: "У окна", who: "Nils", pic: "window.jpg", answer: "Schau mal!", ru: "Посмотри!" },
     ],
     extra: ["Tschüs!"],
   };

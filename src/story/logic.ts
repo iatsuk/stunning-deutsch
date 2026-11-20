@@ -1092,7 +1092,7 @@ export function validateChallenge(
         c.panels.length >= 3 &&
         new Set(ids).size === ids.length &&
         new Set(answers).size === answers.length &&
-        c.panels.every((p) => Boolean(p.id && p.scene && p.who && p.art && p.answer && p.ru)) &&
+        c.panels.every((p) => Boolean(p.id && p.scene && p.who && p.answer && p.ru) && /\.jpg$/.test(p.pic)) &&
         (c.extra ?? []).every((e) => !answers.includes(e))
       );
     }

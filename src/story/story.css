@@ -2634,13 +2634,12 @@
 .moin-comic-panel[data-active] {
   border-color: var(--accent);
 }
-.moin-comic-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.moin-comic-head span {
-  font-size: 24px;
+.moin-comic-pic {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid var(--line);
 }
 .moin-comic-scene {
   margin: 0;
