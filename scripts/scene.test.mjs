@@ -630,3 +630,225 @@ test("a phrase after a German article or preposition reads without its own artic
     assert.ok(germanBefore(before), before);
   for (const before of ["К пустому ", "Über dem Wasser: ", "Das ist ", ""]) assert.ok(!germanBefore(before), before);
 });
+
+test("all 13 new mechanics validate, check answers, explain mistakes and appear in chapters", async () => {
+  const { NEW_KINDS } = await import("../src/story/mechanics-logic.ts");
+  const valid = validateChallenge;
+  const spring = {
+    kind: "spring",
+    rounds: [
+      {
+        ru: "Утром я иду на причал.",
+        base: ["Ich", "gehe", "am Morgen", "zum Kai", "."],
+        trigger: "Am Morgen",
+        start: ["Am Morgen", "ich", "gehe", "zum Kai", "."],
+        answer: ["Am Morgen", "gehe", "ich", "zum Kai", "."],
+        also: [["Zum Kai", "gehe", "ich", "am Morgen", "."]],
+        why: "На втором месте остаётся глагол.",
+      },
+      {
+        ru: "Мы хотим завтра поехать в город.",
+        base: ["Wir", "fahren", "morgen", "in die Stadt", "."],
+        trigger: "möchten",
+        start: ["Wir", "möchten", "fahren", "morgen", "in die Stadt", "."],
+        answer: ["Wir", "möchten", "morgen", "in die Stadt", "fahren", "."],
+        why: "Инфинитив уходит в конец.",
+      },
+    ],
+  };
+  spring.rounds[0].also = [["Am Morgen", "gehe", "zum Kai", "ich", "."]];
+  const room = {
+    kind: "room",
+    title: "Стол клуба",
+    furniture: [{ x: 20, y: 20, w: 120, h: 60, label: "Tisch" }],
+    spots: [
+      { id: "a", x: 60, y: 50, label: "на столе" },
+      { id: "b", x: 140, y: 120, label: "у двери" },
+      { id: "c", x: 240, y: 120, label: "у окна" },
+    ],
+    items: [
+      { id: "cup", icon: "☕", de: "die Tasse", ru: "чашка" },
+      { id: "bag", icon: "👜", de: "die Tasche", ru: "сумка" },
+      { id: "key", icon: "🔑", de: "der Schlüssel", ru: "ключ" },
+    ],
+    notes: [
+      { de: "Die Tasse steht auf dem Tisch.", ru: "Чашка стоит на столе." },
+      { de: "Die Tasche liegt an der Tür.", ru: "Сумка лежит у двери." },
+    ],
+    answer: { cup: "a", bag: "b", key: "c" },
+  };
+  const torn = {
+    kind: "torn",
+    title: "Обрывки записки",
+    strips: [
+      { id: "1", de: "Liebe Greta,", ru: "Дорогая Грета," },
+      { id: "2", de: "am Samstag", ru: "в субботу" },
+      { id: "3", de: "feiern wir.", ru: "мы празднуем." },
+      { id: "4", de: "Dein Opa", ru: "Твой дедушка" },
+    ],
+    also: [["1", "3", "2", "4"]],
+  };
+  const contrast = {
+    kind: "contrast",
+    bays: [
+      { id: "haben", label: "haben" },
+      { id: "sein", label: "sein" },
+    ],
+    items: [
+      { id: "a", text: "Er ___ Tee getrunken.", bay: "haben", why: "trinken -> haben" },
+      { id: "b", text: "Sie ___ Kuchen gegessen.", bay: "haben", why: "essen -> haben" },
+      { id: "c", text: "Er ___ nach Kiel gefahren.", bay: "sein", why: "fahren -> sein" },
+      { id: "d", text: "Wir ___ spät gekommen.", bay: "sein", why: "kommen -> sein" },
+    ],
+  };
+  const tail = {
+    kind: "tail",
+    rounds: [
+      { word: "das Krankenhaus", parts: ["Kranken", "Haus"], ru: "больница" },
+      { word: "der Einkaufszettel", parts: ["Einkaufs", "Zettel"], ru: "список покупок" },
+    ],
+  };
+  const protocol = {
+    kind: "protocol",
+    title: "Протокол",
+    clues: [
+      { who: "Dana", de: "Die Farbe ist blau.", ru: "Краска синяя." },
+      { who: "Nils", de: "Das Schild liegt in der Werkstatt.", ru: "Табличка в мастерской." },
+    ],
+    parts: ["Die Farbe ist ", { slot: "f", label: "цвет" }, ", das Schild ist ", { slot: "w", label: "где" }, " und gehört ", { slot: "o", label: "кому" }, "."],
+    bank: ["blau", "in der Werkstatt", "dem Club", "rot"],
+    answer: { f: "blau", w: "in der Werkstatt", o: "dem Club" },
+  };
+  const budget = {
+    kind: "budget",
+    items: [
+      { id: "tea", de: "der Tee", ru: "чай", price: 200, max: 2, tags: ["drink"] },
+      { id: "bun", de: "das Brötchen", ru: "булочка", price: 150, max: 2, tags: ["food"] },
+      { id: "cake", de: "der Kuchen", ru: "торт", price: 300, max: 1, tags: ["food"] },
+      { id: "cola", de: "die Cola", ru: "кола", price: 400, max: 1, tags: ["sweet"] },
+    ],
+    rules: [
+      { kind: "maxPrice", cents: 600, label: "До 6,00 €" },
+      { kind: "minTotal", count: 2, label: "Минимум 2 вещи" },
+      { kind: "minTag", tag: "drink", count: 1, label: "1 напиток" },
+      { kind: "forbidTag", tag: "sweet", label: "Без сладкого" },
+    ],
+  };
+  const groupchat = {
+    kind: "groupchat",
+    title: "Чат клуба",
+    messages: [
+      { id: "m1", who: "Nils", de: "Wann treffen wir uns?", ru: "Когда встречаемся?" },
+      { id: "m2", who: "Dana", de: "Wo ist der Schlüssel?", ru: "Где ключ?" },
+      { id: "m3", who: "Mateo", de: "Ich bringe Brot mit.", ru: "Я принесу хлеб." },
+    ],
+    steps: [
+      { prompt: "Ответь Нильсу", replyTo: "m1", options: [{ id: "o1", text: "Um acht!", why: "" }, { id: "o2", text: "Auf dem Tisch.", why: "Это про ключ" }], answer: "o1" },
+      { prompt: "Ответь Дане", replyTo: "m2", options: [{ id: "k1", text: "In der Küche.", why: "" }, { id: "k2", text: "Danke!", why: "Это не место" }], answer: "k1" },
+    ],
+  };
+  const comic = {
+    kind: "comic",
+    panels: [
+      { id: "p1", scene: "У двери", who: "Hauke", art: "🚪", answer: "Hallo!", ru: "Привет!" },
+      { id: "p2", scene: "За столом", who: "Dana", art: "☕", answer: "Hier ist Kaffee.", ru: "Вот кофе." },
+      { id: "p3", scene: "У окна", who: "Nils", art: "🌊", answer: "Schau mal!", ru: "Посмотри!" },
+    ],
+    extra: ["Tschüs!"],
+  };
+  const retell = {
+    kind: "retell",
+    who: "Nils",
+    quote: "Ich komme aus Kiel. Mein Boot ist klein, und ich segle gern.",
+    ru: "Я из Киля. Моя лодка маленькая, и я люблю ходить под парусом.",
+    tokens: [
+      { id: "a", from: "Ich", options: ["Er", "Sie", "Ich"], answer: "Er" },
+      " ",
+      { id: "b", from: "komme", options: ["kommt", "komme", "kommen"], answer: "kommt" },
+      " aus Kiel. ",
+      { id: "c", from: "Mein", options: ["Sein", "Ihr", "Mein"], answer: "Sein" },
+      " Boot ist klein.",
+    ],
+  };
+  const radio = {
+    kind: "radio",
+    rounds: [
+      {
+        who: "Hafenmeister",
+        before: "Das Schiff kommt",
+        after: "an.",
+        hidden: "um sechs Uhr",
+        ru: "Корабль прибывает в шесть часов.",
+        questions: [
+          { id: "q1", text: "Wann kommt das Schiff an?" },
+          { id: "q2", text: "Wer kommt an?", why: "Спрашиваем про время." },
+          { id: "q3", text: "Wo ist das Schiff?", why: "Пропало время." },
+        ],
+        answer: "q1",
+      },
+      {
+        who: "Bus",
+        before: "Wir fahren",
+        after: "ab.",
+        hidden: "zum Hafen",
+        ru: "Мы едем в гавань.",
+        questions: [
+          { id: "q1", text: "Wohin fahren wir?" },
+          { id: "q2", text: "Wie viel kostet es?", why: "Не про цену." },
+          { id: "q3", text: "Wann fahren wir?", why: "Не про время." },
+        ],
+        answer: "q1",
+      },
+    ],
+  };
+  const gullword = { kind: "gullword", words: ["der Hafen", "das Boot", "das Handy"] };
+  const proofread = {
+    kind: "proofread",
+    author: "Хауке",
+    checklist: ["Вежливая форма", "Верный глагол"],
+    segments: [
+      "Hallo Dana, ",
+      { id: "s1", draft: "ich komme nicht, weil krank.", options: ["ich komme nicht, weil krank.", "ich komme nicht, denn ich bin krank.", "ich komme nicht, oder krank."], answer: "ich komme nicht, denn ich bin krank.", why: "В A1 — denn." },
+      " ",
+      { id: "s2", draft: "Ich bin zu Hause geblieben", options: ["Ich bin zu Hause geblieben", "Ich habe zu Hause geblieben"], answer: "Ich bin zu Hause geblieben", why: "bleiben с sein." },
+      " und ",
+      { id: "s3", draft: "haben viel Tee getrunken", options: ["haben viel Tee getrunken", "habe viel Tee getrunken"], answer: "habe viel Tee getrunken", why: "С ich — habe." },
+      ". ",
+      { id: "s4", draft: "Bis morgen!", options: ["Bis morgen!", "Bis Morgen!"], answer: "Bis morgen!", why: "morgen со строчной." },
+    ],
+  };
+
+  const samples = [spring, room, torn, contrast, tail, protocol, budget, groupchat, comic, retell, radio, gullword, proofread];
+  for (const c of samples) {
+    assert.ok(valid(c), `${c.kind}: должно проходить проверку`);
+    assert.ok(!isCorrect(c, initialAnswer(c)), `${c.kind}: стартовый ответ не должен засчитываться`);
+    assert.ok(isCorrect(c, solution(c)), `${c.kind}: решение должно приниматься`);
+    assert.ok(mistake(c, initialAnswer(c), "подсказка"), `${c.kind}: должно возвращать текст ошибки`);
+  }
+  assert.match(mistake(room, { cup: "b", bag: "a", key: "c" }, ""), /Не на месте/);
+  assert.match(mistake(torn, ["4", "2", "3", "1"], ""), /первая полоска/);
+  assert.match(mistake(protocol, { f: "rot", w: "in der Werkstatt", o: "dem Club" }, ""), /цвет/);
+  assert.match(mistake(budget, { tea: 1, cola: 1 }, ""), /Без сладкого/);
+  assert.match(mistake(comic, { p1: "Hier ist Kaffee.", p2: "Hallo!", p3: "Schau mal!" }, ""), /кадр 1/);
+  assert.match(mistake(retell, { a: "Ich", b: "kommt", c: "Sein" }, ""), /слово «Ich»/);
+  assert.match(mistake(proofread, {}, ""), /denn/);
+
+  // Альтернативные верные решения
+  assert.ok(isCorrect(spring, ["Am Morgen gehe zum Kai ich .", "Wir möchten morgen in die Stadt fahren ."]));
+  assert.ok(isCorrect(torn, ["1", "3", "2", "4"]));
+  assert.ok(isCorrect(budget, { tea: 1, bun: 1 }));
+  assert.ok(isCorrect(budget, { tea: 1, cake: 1 }));
+
+  // Невалидные варианты отсекаются validateChallenge
+  assert.ok(!valid({ ...spring, rounds: [{ ...spring.rounds[0], start: ["wrong"] }, spring.rounds[1]] }));
+  assert.ok(!valid({ ...tail, rounds: [{ word: "Krankenhaus", parts: ["Kranken", "Haus"], ru: "больница" }, tail.rounds[1]] }));
+  assert.ok(!valid({ ...budget, rules: [{ kind: "maxPrice", cents: 200, label: "Слишком мало" }, { kind: "minTag", tag: "drink", count: 2, label: "Два" }, { kind: "forbidTag", tag: "sweet", label: "Без" }] }));
+  assert.ok(!valid({ ...gullword, words: ["der Hafen", "das Boot", "zu"] }));
+  assert.ok(!valid({ ...proofread, segments: proofread.segments.map((s) => (typeof s === "string" || s.id === "s4" ? s : { ...s, draft: s.answer })) }));
+
+  // Все 13 механик реально встроены в главы A1
+  const embeddedKinds = new Set(
+    allScenes.flatMap((b) => flatNodes(nodes(b)).filter((n) => n.t === "game").map((n) => n.c.kind)),
+  );
+  for (const k of NEW_KINDS) assert.ok(embeddedKinds.has(k), `механика ${k} не встроена ни в одну сцену`);
+});

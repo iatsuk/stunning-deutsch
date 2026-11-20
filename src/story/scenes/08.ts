@@ -226,6 +226,45 @@ const lager: SceneNode[] = [
     answers: ["Das Lager ist im Keller.", "Das Lager der Möwe ist im Keller.", "Im Keller ist das Lager."],
     ru: "Тайник — в подвале.",
   },
+  {
+    t: "game",
+    rule: ["wohnen/wo-1", "wohnen/im-1"],
+    task: "Расставь вещи по плану: верните находки на свои места в подвале.",
+    hint: "Смотрите на предлоги места: auf dem Tisch, im Schrank, in der Kiste, unter dem Stuhl, am Fenster.",
+    c: {
+      kind: "room",
+      title: "Keller · Das Lager",
+      furniture: [
+        { x: 110, y: 70, w: 100, h: 46, label: "Tisch" },
+        { x: 24, y: 24, w: 66, h: 90, label: "Schrank" },
+        { x: 240, y: 120, w: 54, h: 46, label: "Stuhl" },
+        { x: 230, y: 20, w: 68, h: 36, label: "Fenster" },
+        { x: 24, y: 144, w: 72, h: 38, label: "Kiste" },
+      ],
+      spots: [
+        { id: "table", x: 160, y: 92, label: "auf dem Tisch" },
+        { id: "cabinet", x: 57, y: 69, label: "im Schrank" },
+        { id: "window", x: 264, y: 38, label: "am Fenster" },
+        { id: "chair", x: 267, y: 143, label: "unter dem Stuhl" },
+        { id: "crate", x: 60, y: 163, label: "in der Kiste" },
+      ],
+      items: [
+        { id: "ball", icon: "🏐", de: "der Strandball", ru: "пляжный мяч" },
+        { id: "foto", icon: "🖼️", de: "das Foto", ru: "край фото" },
+        { id: "tee", icon: "🫖", de: "der Teebeutel", ru: "пакетик чая" },
+        { id: "tag", icon: "🏷️", de: "der Anhänger", ru: "бирка" },
+        { id: "bon", icon: "🧾", de: "der Kassenbon", ru: "чек" },
+      ],
+      notes: [
+        { de: "Der Strandball liegt auf dem Tisch.", ru: "Пляжный мяч лежит на столе." },
+        { de: "Das Foto liegt im Schrank.", ru: "Фото лежит в шкафу." },
+        { de: "Der Teebeutel liegt in der Kiste.", ru: "Пакетик чая лежит в ящике." },
+        { de: "Der Anhänger liegt unter dem Stuhl.", ru: "Бирка лежит под стулом." },
+        { de: "Der Kassenbon liegt am Fenster.", ru: "Чек лежит у окна." },
+      ],
+      answer: { ball: "table", foto: "cabinet", tee: "crate", tag: "chair", bon: "window" },
+    },
+  },
   narr("Элиф наводит {ordnung}: каждую находку надо {legen} на своё место. Мяч сначала надо {waschen}."),
   {
     t: "game",
@@ -594,6 +633,12 @@ const empty: SceneNode[] = [
     task: "Что где нашли за утро? Соедините.",
     hint: "Где? — im Keller, im Karton, an der Tür: дательный.",
     c: pairs([["im Keller vom Club", "das Lager der Möwe"], ["im Keller von Herrn Jensen", "der Karton"], ["im Karton", "die Adresse"], ["an der Kellertür", "«Heute nicht»"]]),
+  },
+  {
+    t: "game",
+    task: "Чайка крадётся к булочке: угадайте четыре слова подвала по буквам.",
+    hint: "Нажмите кнопку, чтобы послушать слово. Артикль уже показан цветом.",
+    c: { kind: "gullword", words: ["der Tisch", "der Stuhl", "die Lampe", "der Keller"] },
   },
   { t: "game", task: "Хауке повторяет, чтобы не забыть. Повторите за ним вслух.", hint: HINT_SAY, c: speak(["der Keller", "das Haus", "das Erdgeschoss"]) },
   {

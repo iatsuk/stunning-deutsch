@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
 import { phrases } from "../src/story/data.ts";
-import { lockKey } from "../src/story/logic.ts";
+import { isCorrect, lockKey, solution, validateChallenge } from "../src/story/logic.ts";
 import { grade } from "../src/story/memory.ts";
 import { buildReview, MECHS, pluralTraps, reviewSources, SCENE_INTERVALS, sceneUnits, warmupReview } from "../src/story/review.ts";
 import { sceneChapters } from "../src/story/scenes/index.ts";
@@ -101,6 +101,14 @@ test("new mechanics are built correctly", () => {
         cells.set(key, ch);
       });
     assert.ok([...cells.keys()].every((k) => { const [x, y] = k.split(",").map(Number); return x < grid.width && y < grid.height; }));
+  }
+  const gullwordGames = games.filter((g) => g.mech === "gullword");
+  const tailGames = games.filter((g) => g.mech === "tail");
+  assert.ok(gullwordGames.length, "чайка-виселица (gullword) ни разу не собралась");
+  assert.ok(tailGames.length, "охота на хвост (tail) ни разу не собралась");
+  for (const g of [...gullwordGames, ...tailGames]) {
+    assert.ok(validateChallenge(g.challenge), `${g.mech}: некорректный challenge`);
+    assert.ok(isCorrect(g.challenge, solution(g.challenge)), `${g.mech}: решение не засчитывается`);
   }
 });
 

@@ -3,6 +3,7 @@ import { say } from "../hooks";
 import { PlayButton } from "../markup";
 import { storyAudio, wordInfo } from "./audio";
 import { Bingo, Docks, Gendered, Gull, Letters, Lock, Pairs, Write } from "./games";
+import { GullWord, Tail } from "./mechanics";
 import { Twenty } from "./minigames";
 import { initialAnswer, isCorrect, lockKey, wrongAnswers } from "./logic";
 import type { ClozeItem, Crossword, Game, Mech, MistakeItem, PluralItem, Review, Sources, VerbItem, WhoItem } from "./review";
@@ -18,10 +19,12 @@ const FRAMES: Record<Mech, { title: string; task: string }> = {
   gull: { title: "Чайка утащила карточки", task: "Прочитайте перевод и нажмите немецкое слово, пока чайка не долетела." },
   docks: { title: "Ящики Йенсена", task: "К какому причалу подходит слово: der, die или das?" },
   letters: { title: "Буквы рассыпались", task: "Соберите слово по буквам." },
+  gullword: { title: "Чайка у булочки", task: "Угадайте слово по буквам, пока чайка не дошла до булочки." },
   write: { title: "Блокнот без подсказок", task: "Напишите по-немецки. У существительных нужен артикль." },
   pairs: { title: "Карточки Элиф", task: "Соедините немецкое слово и перевод, потом проверьте." },
   lock: { title: "Замок блокнота", task: "Поверните диски, чтобы получилась фраза, и откройте замок." },
   plural: { title: "Склад Матео", task: "Выберите множественное число." },
+  tail: { title: "Охота на хвост", task: "Отрежьте лишнее до последнего слова и выберите артикль." },
   cloze: { title: "Стёртая реплика", task: "Вставьте слово, которое прозвучало в истории." },
   who: { title: "Кто это сказал?", task: "Послушайте реплику и выберите, кто её сказал." },
   mistake: { title: "Записка с ошибкой", task: "Нажмите на часть фразы, где ошибка." },
@@ -362,6 +365,8 @@ function ChallengeGame({ game, seed, onFinish }: { game: Extract<Game, { challen
       {c.kind === "gull" && <Gull c={c} {...props} />}
       {c.kind === "docks" && <Docks c={c} {...props} />}
       {c.kind === "letters" && <Letters c={c} {...props} />}
+      {c.kind === "gullword" && <GullWord c={c} {...props} />}
+      {c.kind === "tail" && <Tail c={c} {...props} />}
       {c.kind === "lock" && <Lock c={c} {...props} />}
       {c.kind === "match" && <Pairs c={c} {...props} />}
       {c.kind === "write" && <Write c={c} {...props} reveal={false} />}

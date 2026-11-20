@@ -98,6 +98,12 @@ const rain: SceneNode[] = [
   },
   narr("Es regnet? Уже нет. Хауке вытряхивает мокрый Rucksack: Hose, Hemd, T-Shirt, Schuh — всё на «пять минут» к воде."),
   { t: "game", task: "Послушайте слово и нажмите на подходящую вещь.", hint: HINT_PICTURE, c: scene([["die Hose", "👖"], ["das Hemd", "👔"], ["das T-Shirt", "👕"], ["das Kleid", "👗"], ["der Schuh", "👟"], ["die Jacke", "🧥"]]) },
+  {
+    t: "game",
+    task: "Чайка крадётся к булочке: угадайте четыре вещи из рюкзака по буквам.",
+    hint: "Нажмите кнопку, чтобы послушать слово. Ошиблись шесть раз — слово вернётся в конец очереди.",
+    c: { kind: "gullword", words: ["die Hose", "die Jacke", "das Hemd", "der Rock"] },
+  },
   narr("В Киле в июне два главных глагола: {anziehen} и {ausziehen}. Вся {kleidung} — то на тебе, то в руках, каждые fünf минут."),
   dana("Ich habe einen Rock, aber ich brauche eine Hose!", "У меня есть юбка, но мне нужны брюки!", ["der Rock"]),
   elif("Und die Möwe? Sie ist nass, aber sie braucht keine Hose!", "А чайка? Она мокрая, но брюки ей не нужны!"),
@@ -424,6 +430,29 @@ const market: SceneNode[] = [
   },
   {
     t: "game",
+    rule: ["einkaufen/preise-1", "essen/negation-2"],
+    task: "Уложитесь в условия рынка Фрауке: соберите пакет для команды.",
+    hint: "Выполните все пять условий: сумма, количество, фрукт, овощ и запрет на лук.",
+    c: {
+      kind: "budget",
+      items: [
+        { id: "apfel", de: "ein Kilo Äpfel", ru: "яблоки", price: 200, max: 2, tags: ["fruit"] },
+        { id: "banane", de: "ein Kilo Bananen", ru: "бананы", price: 240, max: 2, tags: ["fruit"] },
+        { id: "tomate", de: "ein Kilo Tomaten", ru: "помидоры", price: 250, max: 2, tags: ["veg"] },
+        { id: "gurke", de: "eine Gurke", ru: "огурец", price: 120, max: 2, tags: ["veg"] },
+        { id: "zwiebel", de: "ein Kilo Zwiebeln", ru: "лук", price: 180, max: 2, tags: ["veg", "onion"] },
+      ],
+      rules: [
+        { kind: "maxPrice", cents: 800, label: "Не дороже 8,00 €" },
+        { kind: "minTotal", count: 3, label: "Не меньше 3 покупок" },
+        { kind: "minTag", tag: "fruit", count: 1, label: "Хотя бы 1 фрукт" },
+        { kind: "minTag", tag: "veg", count: 1, label: "Хотя бы 1 овощ" },
+        { kind: "forbidTag", tag: "onion", label: "Без лука (как в списке Греты)" },
+      ],
+    },
+  },
+  {
+    t: "game",
     task: "Кто что купил сегодня? Соедините.",
     hint: "Загляните в блокнот: список Греты, рынок и лавка.",
     c: pairs([["Mateo", "zwei Kilo Zwiebeln"], ["Greta", "ein Kilo Äpfel"], ["Nils", "eine Packung Kekse"], ["Dana", "eine Hose, Größe XL"]]),
@@ -644,6 +673,20 @@ const colours: SceneNode[] = [
       ["Welche Farbe?", "dunkelblau", "Dunkelblau"],
       ["Was kostet sie?", "vierundzwanzig Euro", "24 Euro", "24,00 €", "24 €"],
     ]),
+  },
+  {
+    t: "game",
+    task: "Охота на хвост: отрежьте начало длинного слова и выберите артикль по последней части.",
+    hint: "Артикль всегда даёт последнее слово: der Bon → der Kassenbon.",
+    c: {
+      kind: "tail",
+      rounds: [
+        { word: "der Kassenbon", parts: ["Kassen", "Bon"], ru: "чек" },
+        { word: "der Einkaufszettel", parts: ["Einkaufs", "Zettel"], ru: "список покупок" },
+        { word: "die Telefonnummer", parts: ["Telefon", "Nummer"], ru: "номер телефона" },
+        { word: "das Fischbrötchen", parts: ["Fisch", "Brötchen"], ru: "булочка с рыбой" },
+      ],
+    },
   },
   narr("Wer braucht die Farbe? Нильс живёт рядом с Гретой — ему и написать."),
   {

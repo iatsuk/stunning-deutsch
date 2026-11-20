@@ -173,6 +173,57 @@ const bahnhof: SceneNode[] = [
   narr("На табло два столбца: {abfahrt} и {ankunft}. Поездам нужен {bahnsteig}, автобусам — просто улица."),
   { t: "say", who: "Lautsprecher", voice: "Eddy", de: "Die Fähre fährt wieder ab vierzehn Uhr. Nach dem Sturm!", ru: "Паром снова ходит с четырнадцати часов. После шторма!" },
   { t: "gap", rule: ["moin/zeit-1"], task: "Запишите, когда снова пойдёт паром.", text: "Die Fähre fährt wieder ___ vierzehn Uhr.", options: ["ab", "für", "über"], answer: "ab", ru: "Паром снова ходит с четырнадцати часов." },
+  {
+    t: "game",
+    rule: ["moin/wohin-1", "moin/zeit-1"],
+    task: "Связь по громкоговорителю пропадает в помехах. Выберите вопрос, чтобы расслышать пропущенное.",
+    c: {
+      kind: "radio",
+      rounds: [
+        {
+          who: "Lautsprecher · Hafen",
+          before: "Die Fähre fährt wieder",
+          after: "nach dem Sturm.",
+          hidden: "um vierzehn Uhr",
+          ru: "Паром снова ходит с четырнадцати часов после шторма.",
+          questions: [
+            { id: "wann", text: "Wann fährt die Fähre wieder?" },
+            { id: "wer", text: "Wer fährt mit dem Schiff?", why: "Пропало время отправления, а не список пассажиров." },
+            { id: "wieviel", text: "Wie viel kostet das Ticket?", why: "Диктор объявляет время после шторма, не цену билета." },
+          ],
+          answer: "wann",
+        },
+        {
+          who: "Lautsprecher · Bussteig 2",
+          before: "Nach Gaarden nehmen Sie bitte",
+          after: "von Steig zwei.",
+          hidden: "die Linie 11",
+          ru: "В Гарден садитесь, пожалуйста, на 11-й маршрут от второй платформы.",
+          sound: "die Linie",
+          questions: [
+            { id: "welche", text: "Welche Linie fährt nach Gaarden?" },
+            { id: "wann", text: "Um wie viel Uhr kommt der Zug?", why: "Здесь нужен номер маршрута до Гардена, а не время поезда." },
+            { id: "wo", text: "Wo kauft man die Fahrkarte?", why: "В этой фразе называют номер автобуса." },
+          ],
+          answer: "welche",
+        },
+        {
+          who: "Busfahrer",
+          before: "Dieser Bus fährt",
+          after: "— bitte einsteigen!",
+          hidden: "zum Bahnhof",
+          ru: "Этот автобус едет до вокзала — пожалуйста, проходите в салон!",
+          sound: "der Bahnhof",
+          questions: [
+            { id: "wohin", text: "Wohin fährt dieser Bus?" },
+            { id: "woher", text: "Woher kommen Sie?", why: "Нужно узнать, куда едет автобус, а не откуда пассажир." },
+            { id: "wie", text: "Wie lange fahren wir?", why: "В помехах скрыто направление маршрута." },
+          ],
+          answer: "wohin",
+        },
+      ],
+    },
+  },
   hauke("Vierzehn Uhr? Zu spät! Und wo kauft man hier Fahrkarten?", "В четырнадцать? Слишком поздно! А где тут покупают билеты?"),
   dana("Wir nehmen den Bus, denn heute fährt keine Fähre.", "Едем на автобусе: паром сегодня не ходит."),
   elif("Linie elf, neun Uhr vierzig! Und die Fahrkarte? Da ist ein Automat!", "Одиннадцатый, 9:40! А билет? Вон автомат!", ["die Linie"]),
@@ -468,6 +519,43 @@ const ampel: SceneNode[] = [
     task: "Элиф переписывает дорогу Нильса в блокнот. Вставьте пропущенные слова.",
     hint: "aussteigen: приставка aus — в конце. Порядковое после an der — zweiten.",
     c: gaps("Steigen Sie an der Post ___! Gehen Sie bis zur zweiten ___ und dann links!", ["aus", "Ampel", "ein", "Straße"], ["aus", "Ampel"]),
+  },
+  {
+    t: "game",
+    task: "Групповой чат команды в Гаардене: выберите нужное сообщение и уточните маршрут.",
+    hint: "Сначала нажмите «Ответить» под тем сообщением, о котором просит шаг.",
+    c: {
+      kind: "groupchat",
+      title: "Team-Chat · Gaarden",
+      messages: [
+        { id: "m1", who: "Elif", de: "Wir sind an der Post. Aber wo ist der Farbenweg?", ru: "Мы у почты. Но где Фарбенвег?" },
+        { id: "m2", who: "Nils", de: "An der zweiten Ampel links!!! Ganz sicher!!!", ru: "У второго светофора налево!!! Точно!!!" },
+        { id: "m3", who: "Mateo", de: "Todo recto! Zweite Ampel rechts!", ru: "Прямо! Второй светофор направо!" },
+        { id: "m4", who: "Dana", de: "Ich bin noch im Krankenhaus. Fragt bei der Post!", ru: "Я ещё в больнице. Спросите на почте!" },
+      ],
+      steps: [
+        {
+          prompt: "Выберите сообщение Нильса и уточните, уверен ли он.",
+          replyTo: "m2",
+          answer: "g1a",
+          options: [
+            { id: "g1a", text: "Sicher links? Steht das so im Text?", why: "" },
+            { id: "g1b", text: "Gute Arbeit im Krankenhaus!", why: "Это сообщение Даны, а не Нильса." },
+            { id: "g1c", text: "Danke, Mateo! Also rechts.", why: "Это ответ Матео, а не Нильсу." },
+          ],
+        },
+        {
+          prompt: "Теперь выберите сообщение Матео и попросите говорить медленнее и по-немецки.",
+          replyTo: "m3",
+          answer: "g2a",
+          options: [
+            { id: "g2a", text: "Langsam, bitte! Nur auf Deutsch: links oder rechts?", why: "" },
+            { id: "g2b", text: "An der Post steigen wir ein.", why: "Вы уже вышли из автобуса у почты." },
+            { id: "g2c", text: "Komm auch zur Post!", why: "Матео сейчас на рынке и объясняет дорогу по телефону." },
+          ],
+        },
+      ],
+    },
   },
   narr("Zweite Ampel, links. Geradeaus. Noch einmal links … Это уже не Gaarden у почты. Und da — ein Café."),
   {

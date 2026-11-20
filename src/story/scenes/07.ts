@@ -80,6 +80,41 @@ const invite: SceneNode[] = [
     ru: "Матео хочет готовить.",
   },
   {
+    t: "game",
+    rule: ["freizeit/modal-1"],
+    task: "Пружина порядка слов: добавьте модальный глагол и отправьте действие в конец.",
+    hint: "С модальным глаголом изменяемый глагол стоит на втором месте, а инфинитив уходит в конец.",
+    c: {
+      kind: "spring",
+      rounds: [
+        {
+          ru: "«Завтра Хауке может пойти под парусом».",
+          base: ["Morgen", "segelt", "Hauke."],
+          trigger: "kann",
+          start: ["Morgen", "Hauke", "kann", "segeln."],
+          answer: ["Morgen", "kann", "Hauke", "segeln."],
+          why: "После Morgen вторым идёт kann, а segeln в неопределённой форме уходит в конец.",
+        },
+        {
+          ru: "«Сегодня Матео хочет готовить».",
+          base: ["Heute", "kocht", "Mateo."],
+          trigger: "will",
+          start: ["Heute", "Mateo", "will", "kochen."],
+          answer: ["Heute", "will", "Mateo", "kochen."],
+          why: "will стоит на втором месте после Heute, а kochen замыкает фразу.",
+        },
+        {
+          ru: "«Вечером Дана хочет поплавать».",
+          base: ["Am Abend", "schwimmt", "Dana."],
+          trigger: "will",
+          start: ["Am Abend", "Dana", "will", "schwimmen."],
+          answer: ["Am Abend", "will", "Dana", "schwimmen."],
+          why: "Модальный глагол will — на втором месте, schwimmen — в самом конце.",
+        },
+      ],
+    },
+  },
+  {
     t: "pick",
     task: "Матео тоже отказался. Что думает команда?",
     options: [
@@ -240,6 +275,45 @@ const week: SceneNode[] = [
       ["Матео свободен в воскресенье", false, "Матео не свободен никогда: он готовит."],
       ["Йенсен выходит в море в восемь", true, "Каждое утро — и всегда один."],
     ]),
+  },
+  {
+    t: "game",
+    rule: ["freizeit/verabreden-1"],
+    task: "Групповой чат клуба: сначала выберите нужное сообщение, затем ответьте именно на него.",
+    hint: "Нажмите «Ответить» под тем сообщением, о котором просит шаг.",
+    c: {
+      kind: "groupchat",
+      title: "Club-Chat · Sonntag",
+      messages: [
+        { id: "m1", who: "Hauke", de: "Gehen wir heute Abend ins Kino?", ru: "Пойдём сегодня вечером в кино?" },
+        { id: "m2", who: "Mateo", de: "Ich kann nicht, ich will kochen.", ru: "Я не могу, я хочу готовить." },
+        { id: "m3", who: "Frau Petersen", de: "Am Montag kann ich nicht. Am Dienstag habe ich Zeit.", ru: "В понедельник я не могу. Во вторник у меня есть время." },
+        { id: "m4", who: "Dana", de: "Heute haben alle Zeit! Machen wir ein Picknick am Strand?", ru: "Сегодня у всех есть время! Устроим пикник на пляже?" },
+        { id: "m5", who: "Herr Jensen", de: "Moin.", ru: "Привет." },
+      ],
+      steps: [
+        {
+          prompt: "Выберите сообщение Матео и уточните про пикник.",
+          replyTo: "m2",
+          answer: "s1a",
+          options: [
+            { id: "s1a", text: "Kein Problem! Kochst du auch für das Picknick?", why: "" },
+            { id: "s1b", text: "Am Dienstag habe ich keine Zeit.", why: "Это сообщение фрау Петерсен, а не Матео." },
+            { id: "s1c", text: "Der Film beginnt um acht.", why: "Матео отказался от кино: он хочет готовить." },
+          ],
+        },
+        {
+          prompt: "Теперь выберите предложение Даны о пикнике и согласитесь.",
+          replyTo: "m4",
+          answer: "s2a",
+          options: [
+            { id: "s2a", text: "Ja, super Idee! Wann treffen wir uns am Strand?", why: "" },
+            { id: "s2b", text: "Leider kann ich am Dienstag nicht.", why: "Дана предлагает встретиться сегодня, а не во вторник." },
+            { id: "s2c", text: "Wir gehen doch ins Kino.", why: "Дана как раз предлагает пойти на пикник вместо кино." },
+          ],
+        },
+      ],
+    },
   },
   narr("Дана ведёт пальцем по странице: heute, Sonntag — почти у всех есть Zeit. Только Йенсен wie immer на воде."),
   dana("Heute haben alle Zeit. Wir machen das Picknick heute! Am Strand.", "Сегодня у всех есть время. Устроим пикник сегодня! На пляже."),

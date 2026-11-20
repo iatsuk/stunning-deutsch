@@ -229,6 +229,19 @@ const BY_GAME: Record<string, string> = {
   speak: "Hören Sie und sprechen Sie nach.",
   twenty: "Stellen Sie Fragen. Die Antwort ist Ja oder Nein.",
   weather: "Hören Sie den Wetterbericht. Wie ist das Wetter?",
+  spring: "Bilden Sie einen Satz.",
+  room: "Wo ist was? Lesen Sie und ordnen Sie zu.",
+  torn: "Ordnen Sie den Text.",
+  contrast: "Was passt? Wählen Sie.",
+  tail: "Finden Sie das letzte Wort und den Artikel.",
+  protocol: "Lesen Sie die Hinweise und ergänzen Sie den Bericht.",
+  budget: "Wählen Sie passend zu allen Bedingungen.",
+  groupchat: "Lesen Sie den Chat und antworten Sie.",
+  comic: "Wer sagt was? Ordnen Sie die Sätze zu.",
+  retell: "Schreiben Sie den Text in der dritten Person.",
+  radio: "Fragen Sie nach: Welches Fragewort passt?",
+  gullword: "Raten Sie das Wort Buchstabe für Buchstabe.",
+  proofread: "Lesen Sie den Entwurf und korrigieren Sie die Fehler.",
 };
 /** Немецкая инструкция задания или ничего: в главе 1 игрок ещё не читает по-немецки. */
 export function anweisung(node: SceneNode, chapter: number): string | undefined {

@@ -29,7 +29,12 @@ export type Entry = { ru: string; audio?: string; pl?: string };
 export type Lookup = (de: string) => Entry | undefined;
 export type Line = { who: string; voice: string; de: string; ru: string; learn: string[] };
 export type LockUnit = { round: LockRound; rules: string[] };
-export type Sources = { lines: Record<string, Line>; locks: Record<string, LockUnit> };
+export type CompoundUnit = { parts: string[]; ru: string };
+export type Sources = { lines: Record<string, Line>; locks: Record<string, LockUnit>; compounds: Record<string, CompoundUnit> };
+
+const ARTICLE = /^(der|die|das) /;
+const PLURAL_ONLY = new Set(["die Eltern", "die Geschwister", "die Großeltern", "die Möbel", "die Nebenkosten", "die Ferien", "die USA", "die Leute", "die Pommes frites"]);
+const isNoun = (w: string) => ARTICLE.test(w) && !PLURAL_ONLY.has(w);
 
 /** Реплика в памяти: голос и текст, как у записи. Приставка не даёт ей совпасть со словом. */
 export const LINE = "line:";
@@ -38,18 +43,21 @@ export const lineCard = (voice: string, de: string) => `${LINE}${voice}|${de}`;
 const nodesOf = (beat: Beat): SceneNode[] =>
   beat.challenge.kind === "play" ? flatNodes(beat.challenge.nodes) : [];
 
-/** Реплики со словами и фразы замков всех сцен: повторение берёт из них текст, голос и правило. */
+/** Реплики со словами, фразы замков и сложные слова всех сцен: повторение берёт из них текст, голос и правило. */
 export function reviewSources(beats: Beat[]): Sources {
   const lines: Record<string, Line> = {};
   const locks: Record<string, LockUnit> = {};
+  const compounds: Record<string, CompoundUnit> = {};
   for (const beat of beats)
     for (const n of nodesOf(beat)) {
       if (n.t === "say" && n.learn?.length)
         lines[lineCard(n.voice, n.de)] = { who: n.who, voice: n.voice, de: n.de, ru: n.ru, learn: n.learn };
       if (n.t === "game" && n.c.kind === "lock")
         for (const round of n.c.rounds) locks[lockCard(round)] = { round, rules: n.rule ?? [] };
+      if (n.t === "game" && (n.c.kind === "compound" || n.c.kind === "tail"))
+        for (const round of n.c.rounds) if (isNoun(round.word)) compounds[round.word] = { parts: round.parts, ru: round.ru };
     }
-  return { lines, locks };
+  return { lines, locks, compounds };
 }
 
 /**
@@ -80,7 +88,7 @@ export const dueUnits = (cards: Cards, step: number, day: number) => dueWords(ca
 
 // ——— Механики ———
 
-export type Mech = "bingo" | "gull" | "docks" | "letters" | "write" | "pairs" | "lock" | "plural" | "cloze" | "who" | "mistake" | "verbs" | "perfekt" | "crossword" | "twenty";
+export type Mech = "bingo" | "gull" | "docks" | "letters" | "gullword" | "write" | "pairs" | "lock" | "plural" | "tail" | "cloze" | "who" | "mistake" | "verbs" | "perfekt" | "crossword" | "twenty";
 export type PluralItem = { unit: string; de: string; options: string[]; answer: string };
 export type ClozeItem = { unit: string; line: Line; before: string; after: string; answer: string; options: string[] };
 export type WhoItem = { unit: string; line: Line; options: string[]; answer: string };
@@ -90,7 +98,7 @@ export type VerbItem = { unit: string; verb: string; ru: string; prompt: string;
 export type CrossWord = { unit: string; word: string; clue: string; x: number; y: number; down: boolean; n: number };
 export type Crossword = { width: number; height: number; words: CrossWord[] };
 export type Game =
-  | { mech: "bingo" | "gull" | "docks" | "letters" | "write" | "pairs" | "lock" | "twenty"; units: string[]; challenge: Challenge; rules?: Record<string, string[]> }
+  | { mech: "bingo" | "gull" | "docks" | "letters" | "gullword" | "write" | "pairs" | "lock" | "tail" | "twenty"; units: string[]; challenge: Challenge; rules?: Record<string, string[]> }
   | { mech: "plural"; units: string[]; items: PluralItem[] }
   | { mech: "cloze"; units: string[]; items: ClozeItem[] }
   | { mech: "who"; units: string[]; items: WhoItem[] }
@@ -99,18 +107,15 @@ export type Game =
   | { mech: "crossword"; units: string[]; grid: Crossword };
 export type Review = { games: Game[] };
 
-export const MECHS: Mech[] = ["bingo", "who", "pairs", "docks", "gull", "plural", "verbs", "cloze", "mistake", "perfekt", "lock", "crossword", "letters", "write", "twenty"];
+export const MECHS: Mech[] = ["bingo", "who", "pairs", "docks", "gull", "plural", "tail", "verbs", "cloze", "mistake", "perfekt", "lock", "crossword", "letters", "gullword", "write", "twenty"];
 /**
  * Узнать и выбрать можно сразу после встречи; собрать по буквам — после первого верного повтора,
  * написать по памяти — после второго. Остальные механики подходят единице любой прочности.
  */
-const MIN_BOX: Partial<Record<Mech, number>> = { letters: 1, write: 2, crossword: 1 };
-/** С какой главы механика уместна: Perfekt вводит урок 11; вопросы «20 вопросов» — о досуге, одежде и доме. */
-const MIN_CHAPTER: Partial<Record<Mech, number>> = { perfekt: 11, twenty: 8 };
+const MIN_BOX: Partial<Record<Mech, number>> = { letters: 1, gullword: 1, write: 2, crossword: 1 };
+/** С какой главы механика уместна: Perfekt вводит урок 11; «Охота на хвост» — с главы 5; «20 вопросов» — с 8. */
+const MIN_CHAPTER: Partial<Record<Mech, number>> = { tail: 5, perfekt: 11, twenty: 8 };
 
-const ARTICLE = /^(der|die|das) /;
-const PLURAL_ONLY = new Set(["die Eltern", "die Geschwister", "die Großeltern", "die Möbel", "die Nebenkosten", "die Ferien", "die USA", "die Leute", "die Pommes frites"]);
-const isNoun = (w: string) => ARTICLE.test(w) && !PLURAL_ONLY.has(w);
 const bare = (w: string) => w.replace(ARTICLE, "");
 const spellable = (w: string) => /^\p{L}+$/u.test(bare(w)) && bare(w).length <= 10;
 const typable = (w: string) => /^[\p{L} '-]+[.!?]?$/u.test(w);
@@ -211,6 +216,18 @@ function build(mech: Mech, pool: string[], cards: Cards, ctx: Context): Built {
       return simple("docks", words.filter(isNoun), 4, 8);
     case "letters":
       return simple("letters", words.filter(spellable), 3, 4);
+    case "gullword": {
+      const take = words.filter((w) => /^[A-Za-zÄÖÜäöüß]{4,7}$/.test(bare(w))).slice(0, 4);
+      return take.length >= 3 ? { game: { mech, units: take, challenge: { kind: "gullword", words: take } }, used: take } : null;
+    }
+    case "tail": {
+      const take = words.filter((w) => Boolean(sources.compounds[w])).slice(0, 3);
+      if (take.length < 2) return null;
+      return {
+        game: { mech, units: take, challenge: { kind: "tail", rounds: take.map((w) => ({ word: w, ...sources.compounds[w] })) } },
+        used: take,
+      };
+    }
     case "write": {
       const take = distinct(words.filter(typable)).slice(0, 5);
       if (take.length < 3) return null;

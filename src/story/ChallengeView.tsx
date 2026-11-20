@@ -24,6 +24,21 @@ import {
   type GameProps,
 } from "./games";
 import { Ads, Algo, Cipher, Compound, Contra, Grid, Lift, Planner, Portrait, Sounds, Spy, Tree, Twenty, Weather } from "./minigames";
+import {
+  Budget,
+  Comic,
+  Contrast,
+  GroupChat,
+  GullWord,
+  Proofread,
+  Protocol,
+  Radio,
+  Retell,
+  Room,
+  Spring,
+  Tail,
+  Torn,
+} from "./mechanics";
 import { SceneView } from "./SceneView";
 import type { Answer, Challenge } from "./types";
 import type { World } from "./world";
@@ -48,6 +63,12 @@ export const AUTOMATIC: Challenge["kind"][] = [
   "spy",
   "twenty",
   "weather",
+  "spring",
+  "contrast",
+  "tail",
+  "groupchat",
+  "radio",
+  "gullword",
 ];
 
 export function ChallengeView({
@@ -111,6 +132,19 @@ export function ChallengeView({
       {c.kind === "twenty" && <Twenty c={c} {...game} />}
       {c.kind === "weather" && <Weather c={c} {...game} />}
       {c.kind === "algo" && <Algo c={c} {...game} />}
+      {c.kind === "spring" && <Spring c={c} {...game} />}
+      {c.kind === "room" && <Room c={c} {...game} />}
+      {c.kind === "torn" && <Torn c={c} {...game} />}
+      {c.kind === "contrast" && <Contrast c={c} {...game} />}
+      {c.kind === "tail" && <Tail c={c} {...game} />}
+      {c.kind === "protocol" && <Protocol c={c} {...game} />}
+      {c.kind === "budget" && <Budget c={c} {...game} />}
+      {c.kind === "groupchat" && <GroupChat c={c} {...game} />}
+      {c.kind === "comic" && <Comic c={c} {...game} />}
+      {c.kind === "retell" && <Retell c={c} {...game} />}
+      {c.kind === "radio" && <Radio c={c} {...game} />}
+      {c.kind === "gullword" && <GullWord c={c} {...game} />}
+      {c.kind === "proofread" && <Proofread c={c} {...game} />}
       {c.kind === "order" && (
         <div className="moin-order">
           <div

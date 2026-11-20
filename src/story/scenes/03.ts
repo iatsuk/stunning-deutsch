@@ -674,6 +674,28 @@ const cake: SceneNode[] = [
       no("Грета говорит от имени клуба", "Грета — гостья, а не член клуба. Её «мы» — семья Хансен."),
     ],
   },
+  {
+    t: "game",
+    rule: ["familie/mein-2", "kennenlernen/endungen-1"],
+    task: "Запишите слова Нильса в блокнот от третьего лица.",
+    hint: "Нильс говорит про себя (ich, mein), в блокноте пишем про него (er, sein).",
+    c: {
+      kind: "retell",
+      who: "Nils",
+      quote: "Ich komme aus Hamburg. Meine Schwester heißt Greta. Mein Opa heißt Heinrich und ich habe zwei Handys.",
+      ru: "Я из Гамбурга. Мою сестру зовут Грета. Моего дедушку зовут Хайнрих, и у меня два мобильных.",
+      tokens: [
+        { id: "r1", from: "Ich komme", options: ["Er kommt", "Sie kommt", "Wir kommen"], answer: "Er kommt" },
+        " aus Hamburg. ",
+        { id: "r2", from: "Meine", options: ["Seine", "Ihre", "Unsere"], answer: "Seine" },
+        " Schwester heißt Greta. ",
+        { id: "r3", from: "Mein", options: ["Sein", "Ihr", "Dein"], answer: "Sein" },
+        " Opa heißt Heinrich und ",
+        { id: "r4", from: "ich habe", options: ["er hat", "er habe", "sie hat"], answer: "er hat" },
+        " zwei Handys.",
+      ],
+    },
+  },
   narr("Грета молча уходит с тарелкой пирога. За ней по полу тянется дорожка: {kruemel}, ещё и ещё."),
   {
     t: "look",

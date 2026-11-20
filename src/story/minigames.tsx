@@ -16,7 +16,7 @@ const asList = (value: Answer) => (Array.isArray(value) ? value : []);
 const asRecord = (value: Answer) => (typeof value === "object" && !Array.isArray(value) ? value : {});
 
 /** Перевод немецкой строки открывается по нажатию: сначала игрок читает сам. */
-function Gloss({ de, ru }: { de: string; ru: string }) {
+export function Gloss({ de, ru }: { de: string; ru: string }) {
   const [open, setOpen] = useState(false);
   return (
     <li>

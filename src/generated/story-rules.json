@@ -268,6 +268,93 @@
    "note": "*Elif spricht Türkisch. Fährst du nach Kiel?* — гласная меняется только у *du* и *er / sie / es*."
   }
  },
+ "kennenlernen/wortstellung-1": {
+  "point": "Спрягаемый глагол — всегда вторая позиция",
+  "read": "Главное правило немецкого предложения: спрягаемый глагол стоит на второй позиции. Позицию занимает не одно слово, а целая группа: *in Kiel* — одна позиция. На схеме четыре поля: позиция 1, глагол, середина и конец. Конец пока пуст, он понадобится позже.",
+  "rows": [
+   {
+    "slots": [
+     [
+      {
+       "key": "ich",
+       "text": "Ich"
+      }
+     ],
+     [
+      {
+       "key": "wohn",
+       "text": "wohn+e"
+      }
+     ],
+     [
+      {
+       "key": "in",
+       "text": "in"
+      },
+      {
+       "key": "kiel",
+       "text": "Kiel"
+      }
+     ],
+     []
+    ],
+    "punct": ".",
+    "plain": "Ich wohne in Kiel.",
+    "ru": "Я живу в Киле.",
+    "audio": "audio/15b613eb3c2b.m4a"
+   }
+  ]
+ },
+ "kennenlernen/pronomen-1": {
+  "point": "*sie* — она/они, *Sie* — вежливое «Вы», *ihr* — вы-друзья",
+  "read": "Местоимения почти как в русском, с двумя ловушками. *sie* — это и «она», и «они», а *Sie* с большой буквы — вежливое «Вы». Различить их помогает глагол и контекст. Второе: *ihr* — это «вы», когда вы на «ты» с каждым из собеседников, например с друзьями.",
+  "table": {
+   "title": "Personalpronomen",
+   "ru": "Личные местоимения",
+   "head": [
+    "Deutsch",
+    "По-русски"
+   ],
+   "rows": [
+    [
+     "ich",
+     "я"
+    ],
+    [
+     "du",
+     "ты"
+    ],
+    [
+     "er / sie / es",
+     "он / она / оно"
+    ],
+    [
+     "wir",
+     "мы"
+    ],
+    [
+     "ihr",
+     "вы — друзьям, родным, детям"
+    ],
+    [
+     "sie",
+     "они"
+    ],
+    [
+     "Sie",
+     "Вы — вежливо, одному или нескольким"
+    ]
+   ],
+   "ruCols": [
+    1
+   ]
+  },
+  "focus": [
+   4,
+   5,
+   6
+  ]
+ },
  "zahlen/haben-1": {
   "point": "*ich habe*, но *du hast*, *er hat* — без *b*",
   "read": "*haben* — «иметь» — второй после *sein* глагол, без которого не обходится ни один разговор. Он почти правильный, но во втором и третьем лице теряет *b*: *ich habe*, но *du hast* и *er hat*. Не *du habst* и не *er habt*. Окончания при этом обычные: *-e*, *-st*, *-t* — те же, что у *wohnen*.",
@@ -314,43 +401,6 @@
    "ruCols": [],
    "note": "В *du hast* и *er hat* буква *b* выпадает. Остальные формы — как у правильного глагола."
   }
- },
- "kennenlernen/wortstellung-1": {
-  "point": "Спрягаемый глагол — всегда вторая позиция",
-  "read": "Главное правило немецкого предложения: спрягаемый глагол стоит на второй позиции. Позицию занимает не одно слово, а целая группа: *in Kiel* — одна позиция. На схеме четыре поля: позиция 1, глагол, середина и конец. Конец пока пуст, он понадобится позже.",
-  "rows": [
-   {
-    "slots": [
-     [
-      {
-       "key": "ich",
-       "text": "Ich"
-      }
-     ],
-     [
-      {
-       "key": "wohn",
-       "text": "wohn+e"
-      }
-     ],
-     [
-      {
-       "key": "in",
-       "text": "in"
-      },
-      {
-       "key": "kiel",
-       "text": "Kiel"
-      }
-     ],
-     []
-    ],
-    "punct": ".",
-    "plain": "Ich wohne in Kiel.",
-    "ru": "Я живу в Киле.",
-    "audio": "audio/15b613eb3c2b.m4a"
-   }
-  ]
  },
  "zahlen/alphabet-1": {
   "point": "*E* — «э», *I* — «и», *C* — «цэ», *H* — «ха»",
@@ -1462,56 +1512,6 @@
    }
   ]
  },
- "kennenlernen/pronomen-1": {
-  "point": "*sie* — она/они, *Sie* — вежливое «Вы», *ihr* — вы-друзья",
-  "read": "Местоимения почти как в русском, с двумя ловушками. *sie* — это и «она», и «они», а *Sie* с большой буквы — вежливое «Вы». Различить их помогает глагол и контекст. Второе: *ihr* — это «вы», когда вы на «ты» с каждым из собеседников, например с друзьями.",
-  "table": {
-   "title": "Personalpronomen",
-   "ru": "Личные местоимения",
-   "head": [
-    "Deutsch",
-    "По-русски"
-   ],
-   "rows": [
-    [
-     "ich",
-     "я"
-    ],
-    [
-     "du",
-     "ты"
-    ],
-    [
-     "er / sie / es",
-     "он / она / оно"
-    ],
-    [
-     "wir",
-     "мы"
-    ],
-    [
-     "ihr",
-     "вы — друзьям, родным, детям"
-    ],
-    [
-     "sie",
-     "они"
-    ],
-    [
-     "Sie",
-     "Вы — вежливо, одному или нескольким"
-    ]
-   ],
-   "ruCols": [
-    1
-   ]
-  },
-  "focus": [
-   4,
-   5,
-   6
-  ]
- },
  "essen/akkusativ-4": {
   "point": "После *sein* — именительный: *Das ist ein Kaffee.* После *nehmen*, *möchten* — *einen*",
   "read": "Винительный нужен после глаголов, у которых есть дополнение: *haben*, *nehmen*, *möchten*, *essen*, *trinken*, *bestellen*, *bezahlen*. А после *sein* — никогда: *sein* ничего не делает с предметом, он работает как знак равенства. *Das ist ein Kaffee aus Italien* — без *-en*. Ошибку *Das ist einen Kaffee* делают даже опытные студенты, поэтому сначала смотрите на глагол.",
@@ -2010,6 +2010,46 @@
    }
   ]
  },
+ "einkaufen/preise-1": {
+  "point": "*2,50 €* — *zwei Euro fünfzig*; *0,99 €* — *neunundneunzig Cent*",
+  "read": "Цены пишут через запятую — *2,50 €*, — а читают так: сначала евро, потом центы, причём слово *Cent* обычно проглатывают: *zwei Euro fünfzig*. Если евро нет, говорят *neunundneunzig Cent*. И помните из второй темы: единицы идут перед десятками — *neunundzwanzig*, «девять-и-двадцать». С ценами это главная ловушка на слух: *29,90* легко принять за 92.",
+  "table": {
+   "title": "Preise",
+   "ru": "Цены",
+   "head": [
+    "Preis",
+    "So sagt man"
+   ],
+   "rows": [
+    [
+     "0,99 €",
+     "neunundneunzig Cent"
+    ],
+    [
+     "1,50 €",
+     "ein Euro fünfzig"
+    ],
+    [
+     "2,50 €",
+     "zwei Euro fünfzig"
+    ],
+    [
+     "6,80 €",
+     "sechs Euro achtzig"
+    ],
+    [
+     "29,90 €",
+     "neunundzwanzig Euro neunzig"
+    ],
+    [
+     "120,00 €",
+     "hundertzwanzig Euro"
+    ]
+   ],
+   "ruCols": [],
+   "note": "Слово *Cent* обычно опускают: *zwei Euro fünfzig*. После числа *Euro* не получает *-s*."
+  }
+ },
  "moin/dieser-1": {
   "point": "*Welche Jacke? — Diese hier.* — dieser, diese, dieses показывает на вещь",
   "read": "*dieser* — «этот». Окончания у него те же, что у *der, die, das*: *der → dieser*, *die → diese*, *das → dieses*, во множественном *diese*. В винительном меняется только мужской род: *Ich nehme diesen Pullover.* На вопрос *Welcher? Welche? Welches?* удобно отвечать *Dieser hier* — «вот этот».",
@@ -2084,46 +2124,6 @@
    "note": "*Das Schild ist dunkelblau und weiß.* — оттенок и цвет пишутся слитно."
   }
  },
- "einkaufen/preise-1": {
-  "point": "*2,50 €* — *zwei Euro fünfzig*; *0,99 €* — *neunundneunzig Cent*",
-  "read": "Цены пишут через запятую — *2,50 €*, — а читают так: сначала евро, потом центы, причём слово *Cent* обычно проглатывают: *zwei Euro fünfzig*. Если евро нет, говорят *neunundneunzig Cent*. И помните из второй темы: единицы идут перед десятками — *neunundzwanzig*, «девять-и-двадцать». С ценами это главная ловушка на слух: *29,90* легко принять за 92.",
-  "table": {
-   "title": "Preise",
-   "ru": "Цены",
-   "head": [
-    "Preis",
-    "So sagt man"
-   ],
-   "rows": [
-    [
-     "0,99 €",
-     "neunundneunzig Cent"
-    ],
-    [
-     "1,50 €",
-     "ein Euro fünfzig"
-    ],
-    [
-     "2,50 €",
-     "zwei Euro fünfzig"
-    ],
-    [
-     "6,80 €",
-     "sechs Euro achtzig"
-    ],
-    [
-     "29,90 €",
-     "neunundzwanzig Euro neunzig"
-    ],
-    [
-     "120,00 €",
-     "hundertzwanzig Euro"
-    ]
-   ],
-   "ruCols": [],
-   "note": "Слово *Cent* обычно опускают: *zwei Euro fünfzig*. После числа *Euro* не получает *-s*."
-  }
- },
  "tagesablauf/wann-1": {
   "point": "*um* + часы, *am* + день или часть дня, *von … bis* — отрезок",
   "read": "Русское «в» — «в шесть», «в понедельник», «в обед» — по-немецки распадается на два предлога. С часами — *um*: *um sechs Uhr*. С днями и частями дня — *am*: *am Montag*, *am Abend*, *am Wochenende*. Отрезок времени — *von … bis*: *von neun bis zwölf*. Исключение — *in der Nacht*. А *heute*, *morgen* и *jetzt* обходятся вообще без предлога: *Heute habe ich Kurs.*",
@@ -2171,53 +2171,6 @@
     0
    ],
    "note": "*am* — это слияние *an* и *dem*. Почему так, разберём в теме о жилье."
-  }
- },
- "moin/uns-1": {
-  "point": "*Wir treffen uns um acht.* — *uns*, *euch*, *sich*: «друг друга, себя»",
-  "read": "*Wir treffen uns* — «мы встречаемся», *Wir sehen uns morgen* — «увидимся завтра». *uns* здесь — «друг друга». Для других лиц: *ihr trefft euch*, *sie treffen sich*. Так же устроено *sich freuen* «радоваться»: *Ich freue mich*, *Freust du dich?* По-русски на этом месте часто стоит «-ся»: встречаемся, радуюсь.",
-  "table": {
-   "title": "mich, dich, sich, uns, euch",
-   "ru": "себя, друг друга",
-   "head": [
-    "Person",
-    "",
-    "Beispiel"
-   ],
-   "rows": [
-    [
-     "ich",
-     "mich",
-     "Ich freu+e mich."
-    ],
-    [
-     "du",
-     "dich",
-     "Freu+st du dich?"
-    ],
-    [
-     "er / sie",
-     "sich",
-     "Sie freu+t sich."
-    ],
-    [
-     "wir",
-     "uns",
-     "Wir treff+en uns um acht."
-    ],
-    [
-     "ihr",
-     "euch",
-     "Treff+t ihr euch am Hafen?"
-    ],
-    [
-     "sie / Sie",
-     "sich",
-     "Sie seh+en sich morgen."
-    ]
-   ],
-   "ruCols": [],
-   "note": "*Wir sehen uns!* — «увидимся!». *mich, dich, sich, uns, euch* — «себя, друг друга»."
   }
  },
  "tagesablauf/klammer-1": {
@@ -2272,6 +2225,53 @@
     2
    ],
    "note": "*anfangen* и *fernsehen* меняют гласную корня: *du fängst an*, *er sieht fern*."
+  }
+ },
+ "moin/uns-1": {
+  "point": "*Wir treffen uns um acht.* — *uns*, *euch*, *sich*: «друг друга, себя»",
+  "read": "*Wir treffen uns* — «мы встречаемся», *Wir sehen uns morgen* — «увидимся завтра». *uns* здесь — «друг друга». Для других лиц: *ihr trefft euch*, *sie treffen sich*. Так же устроено *sich freuen* «радоваться»: *Ich freue mich*, *Freust du dich?* По-русски на этом месте часто стоит «-ся»: встречаемся, радуюсь.",
+  "table": {
+   "title": "mich, dich, sich, uns, euch",
+   "ru": "себя, друг друга",
+   "head": [
+    "Person",
+    "",
+    "Beispiel"
+   ],
+   "rows": [
+    [
+     "ich",
+     "mich",
+     "Ich freu+e mich."
+    ],
+    [
+     "du",
+     "dich",
+     "Freu+st du dich?"
+    ],
+    [
+     "er / sie",
+     "sich",
+     "Sie freu+t sich."
+    ],
+    [
+     "wir",
+     "uns",
+     "Wir treff+en uns um acht."
+    ],
+    [
+     "ihr",
+     "euch",
+     "Treff+t ihr euch am Hafen?"
+    ],
+    [
+     "sie / Sie",
+     "sich",
+     "Sie seh+en sich morgen."
+    ]
+   ],
+   "ruCols": [],
+   "note": "*Wir sehen uns!* — «увидимся!». *mich, dich, sich, uns, euch* — «себя, друг друга»."
   }
  },
  "tagesablauf/klammer-4": {
@@ -2669,6 +2669,53 @@
    "note": "В единственном числе меняется гласная, а у *ich* и *er* нет окончания: *ich kann*, *er kann*."
   }
  },
+ "freizeit/modal-1": {
+  "point": "*können* — «уметь» и «мочь»: *ich kann*, *du kannst*, *er kann*",
+  "read": "*können* закрывает сразу два русских глагола: «уметь» — *Ich kann schwimmen* — и «мочь» — *Am Samstag kann ich nicht*. В единственном числе гласная меняется: не *könn-*, а *kann*. И главное отличие от обычных глаголов: у *ich* и *er* нет окончания, обе формы — просто *kann*. Сказать *er kannt* по образцу *er kommt* — очень частая ошибка. Это то же семейство, что *möchte* из темы о еде: *ich möchte* — *er möchte*, тоже без *-t*.",
+  "table": {
+   "title": "können und wollen",
+   "ru": "уметь, мочь и хотеть",
+   "head": [
+    "Person",
+    "können",
+    "wollen"
+   ],
+   "rows": [
+    [
+     "ich",
+     "kann",
+     "will"
+    ],
+    [
+     "du",
+     "kann+st",
+     "will+st"
+    ],
+    [
+     "er / sie / es",
+     "kann",
+     "will"
+    ],
+    [
+     "wir",
+     "könn+en",
+     "woll+en"
+    ],
+    [
+     "ihr",
+     "könn+t",
+     "woll+t"
+    ],
+    [
+     "sie / Sie",
+     "könn+en",
+     "woll+en"
+    ]
+   ],
+   "ruCols": [],
+   "note": "В единственном числе меняется гласная, а у *ich* и *er* нет окончания: *ich kann*, *er kann*."
+  }
+ },
  "freizeit/verabreden-1": {
   "point": "Отказ = *leider* + причина + новый день: *Aber am Freitag habe ich Zeit.*",
   "read": "Для встречи нужны предложение, ответ и подтверждение. Предложить: *Hast du am Samstag Zeit?*, *Kommst du mit?*, *Wollen wir …?* Согласиться: *Ja, gern!*, *Gute Idee!*, *Das passt.* Отказаться: *Leider nicht.* Если хотите продолжить общение, добавьте причину или предложите другой день: *Mein Bruder besucht mich. Aber am Sonntag habe ich Zeit.* Не считайте умение человека согласием: *Ich kann segeln* ещё не приглашение выйти под парусом.",
@@ -2786,53 +2833,6 @@
     "audio": "audio/091815f8a064.m4a"
    }
   ]
- },
- "freizeit/modal-1": {
-  "point": "*können* — «уметь» и «мочь»: *ich kann*, *du kannst*, *er kann*",
-  "read": "*können* закрывает сразу два русских глагола: «уметь» — *Ich kann schwimmen* — и «мочь» — *Am Samstag kann ich nicht*. В единственном числе гласная меняется: не *könn-*, а *kann*. И главное отличие от обычных глаголов: у *ich* и *er* нет окончания, обе формы — просто *kann*. Сказать *er kannt* по образцу *er kommt* — очень частая ошибка. Это то же семейство, что *möchte* из темы о еде: *ich möchte* — *er möchte*, тоже без *-t*.",
-  "table": {
-   "title": "können und wollen",
-   "ru": "уметь, мочь и хотеть",
-   "head": [
-    "Person",
-    "können",
-    "wollen"
-   ],
-   "rows": [
-    [
-     "ich",
-     "kann",
-     "will"
-    ],
-    [
-     "du",
-     "kann+st",
-     "will+st"
-    ],
-    [
-     "er / sie / es",
-     "kann",
-     "will"
-    ],
-    [
-     "wir",
-     "könn+en",
-     "woll+en"
-    ],
-    [
-     "ihr",
-     "könn+t",
-     "woll+t"
-    ],
-    [
-     "sie / Sie",
-     "könn+en",
-     "woll+en"
-    ]
-   ],
-   "ruCols": [],
-   "note": "В единственном числе меняется гласная, а у *ich* и *er* нет окончания: *ich kann*, *er kann*."
-  }
  },
  "freizeit/check-1": {
   "point": "С модальным глаголом приставка не отрывается: *Ich kann nicht mitkommen.*",
@@ -3620,6 +3620,43 @@
    }
   ]
  },
+ "wohnen/im-1": {
+  "point": "*in dem* → *im*, *an dem* → *am*; *auf dem* и *in der* не сливаются",
+  "read": "*in dem* немцы почти всегда сливают в одно слово: *im Keller*, *im Bad*, *im Wohnzimmer*. Полную форму вы услышите редко. С *auf* такого слияния нет — *auf dem Balkon*, и с женским родом тоже — *in der Küche*. А *am* вы уже знаете по *am Montag*: это тоже слияние, *an dem*. Тот же механизм, только с другим предлогом.",
+  "table": {
+   "title": "im = in dem",
+   "ru": "Предлог и артикль сливаются",
+   "head": [
+    "Präposition + Artikel",
+    "Form",
+    "Beispiel"
+   ],
+   "rows": [
+    [
+     "in + d+em",
+     "im",
+     "Die Waschmaschine steht im Keller."
+    ],
+    [
+     "an + d+em",
+     "am",
+     "Am Montag besichtigt Mateo die Wohnung."
+    ],
+    [
+     "auf + d+em",
+     "auf dem",
+     "Wir sitzen auf dem Balkon."
+    ],
+    [
+     "in + d+er",
+     "in der",
+     "Der Herd ist in der Küche."
+    ]
+   ],
+   "ruCols": [],
+   "note": "*in* и *an* сливаются с *dem*. *auf dem* и *in der* остаются как есть."
+  }
+ },
  "wohnen/stock-3": {
   "point": "До 19 — *-te*, с 20 — *-ste*; исключения: *erste*, *dritte*, *siebte*, *achte*",
   "read": "Всё правило умещается в две строки. До 19 к числу добавляется *-te*: *vierte*, *neunzehnte*. С 20 окончание длиннее — *-ste*: *zwanzigste*, *einunddreißigste*. Исключений четыре: *erste*, *dritte*, *siebte* — у *sieben* выпадает *-en* — и *achte*: у *acht* уже есть своё *t*. После *im* у порядкового числа окончание *-en*. С этим правилом потом не придётся ничего доучивать: в дороге и в датах оно то же.",
@@ -3748,43 +3785,6 @@
     3
    ],
    "note": "Порядковое число — число + *-te*: *zwei+te*, *vier+te*; исключения — *erste* и *dritte*. После *im* окончание *-en*: *im zweiten Stock*."
-  }
- },
- "wohnen/im-1": {
-  "point": "*in dem* → *im*, *an dem* → *am*; *auf dem* и *in der* не сливаются",
-  "read": "*in dem* немцы почти всегда сливают в одно слово: *im Keller*, *im Bad*, *im Wohnzimmer*. Полную форму вы услышите редко. С *auf* такого слияния нет — *auf dem Balkon*, и с женским родом тоже — *in der Küche*. А *am* вы уже знаете по *am Montag*: это тоже слияние, *an dem*. Тот же механизм, только с другим предлогом.",
-  "table": {
-   "title": "im = in dem",
-   "ru": "Предлог и артикль сливаются",
-   "head": [
-    "Präposition + Artikel",
-    "Form",
-    "Beispiel"
-   ],
-   "rows": [
-    [
-     "in + d+em",
-     "im",
-     "Die Waschmaschine steht im Keller."
-    ],
-    [
-     "an + d+em",
-     "am",
-     "Am Montag besichtigt Mateo die Wohnung."
-    ],
-    [
-     "auf + d+em",
-     "auf dem",
-     "Wir sitzen auf dem Balkon."
-    ],
-    [
-     "in + d+er",
-     "in der",
-     "Der Herd ist in der Küche."
-    ]
-   ],
-   "ruCols": [],
-   "note": "*in* и *an* сливаются с *dem*. *auf dem* и *in der* остаются как есть."
   }
  },
  "wohnen/lesen2-1": {
@@ -4309,6 +4309,43 @@
    "note": "*nach dem Essen* — после; *vor dem Start* — перед; *vor zwei Tagen* — назад."
   }
  },
+ "moin/wohin-1": {
+  "point": "*Wo?* — *im Café* (дательный); *Wohin?* — *ins Café* (винительный)",
+  "read": "*in*, *an*, *auf* отвечают на два вопроса. *Wo?* «где?» — место, дательный: *Ich bin im Café*, *Das Boot liegt am Hafen*. *Wohin?* «куда?» — направление, винительный: *Ich gehe ins Café*, *Wir fahren an den Hafen*, *Hauke geht in die Stadt*. Слитно: *in das → ins*, *an das → ans*, *in dem → im*, *an dem → am*. Для городов и стран — *nach*: *nach Hamburg*; к людям — *zu*: *zu Greta*; домой — *nach Hause*.",
+  "table": {
+   "title": "Wo? Wohin?",
+   "ru": "где? куда?",
+   "head": [
+    "",
+    "Wo? (Dativ)",
+    "Wohin? (Akkusativ)"
+   ],
+   "rows": [
+    [
+     "der Hafen",
+     "a+m Hafen",
+     "an d+en Hafen"
+    ],
+    [
+     "die Stadt",
+     "in d+er Stadt",
+     "in d+ie Stadt"
+    ],
+    [
+     "das Café",
+     "i+m Café",
+     "in+s Café"
+    ],
+    [
+     "das Kino",
+     "i+m Kino",
+     "in+s Kino"
+    ]
+   ],
+   "ruCols": [],
+   "note": "*Ich bin im Café* — где. *Ich gehe ins Café* — куда. *im = in dem*, *ins = in das*."
+  }
+ },
  "moin/man-1": {
   "point": "*Wo kauft man Fahrkarten?* — *man*: «люди вообще», по-русски часто без подлежащего",
   "read": "*man* — подлежащее без конкретного человека: «люди, все, кто угодно». По-русски его обычно не переводят: *Wo kauft man Fahrkarten?* — «Где покупают билеты?», *Hier darf man nicht halten* — «Здесь нельзя останавливаться». Глагол после *man* — как после *er*: *man kauft*, *man kann*, *man darf*. Пишется с одной *n* и с маленькой буквы — не путайте с *der Mann* «мужчина».",
@@ -4642,43 +4679,6 @@
    "ruCols": [
     2
    ]
-  }
- },
- "moin/wohin-1": {
-  "point": "*Wo?* — *im Café* (дательный); *Wohin?* — *ins Café* (винительный)",
-  "read": "*in*, *an*, *auf* отвечают на два вопроса. *Wo?* «где?» — место, дательный: *Ich bin im Café*, *Das Boot liegt am Hafen*. *Wohin?* «куда?» — направление, винительный: *Ich gehe ins Café*, *Wir fahren an den Hafen*, *Hauke geht in die Stadt*. Слитно: *in das → ins*, *an das → ans*, *in dem → im*, *an dem → am*. Для городов и стран — *nach*: *nach Hamburg*; к людям — *zu*: *zu Greta*; домой — *nach Hause*.",
-  "table": {
-   "title": "Wo? Wohin?",
-   "ru": "где? куда?",
-   "head": [
-    "",
-    "Wo? (Dativ)",
-    "Wohin? (Akkusativ)"
-   ],
-   "rows": [
-    [
-     "der Hafen",
-     "a+m Hafen",
-     "an d+en Hafen"
-    ],
-    [
-     "die Stadt",
-     "in d+er Stadt",
-     "in d+ie Stadt"
-    ],
-    [
-     "das Café",
-     "i+m Café",
-     "in+s Café"
-    ],
-    [
-     "das Kino",
-     "i+m Kino",
-     "in+s Kino"
-    ]
-   ],
-   "ruCols": [],
-   "note": "*Ich bin im Café* — где. *Ich gehe ins Café* — куда. *im = in dem*, *ins = in das*."
   }
  },
  "gesundheit/check-1": {
@@ -6288,42 +6288,6 @@
    }
   ]
  },
- "reisen/monate-1": {
-  "point": "*um* — время, *am* — день и дата, *im* — месяц и время года",
-  "read": "Месяцы почти все похожи на русские — труднее с буквами: *März* с умлаутом, *Mai* через *ai*. *Juni* и *Juli* легко спутать на слух, поэтому по телефону немцы часто говорят *Juno* и *Julei*. Все месяцы — мужского рода, и с ними тот же предлог, что с временами года: *im Juni*. Теперь у вас есть все три предлога времени: *um acht Uhr*, *am Freitag*, *im Juni*.",
-  "table": {
-   "title": "Die Monate",
-   "ru": "Месяцы по временам года",
-   "head": [
-    "Frühling",
-    "Sommer",
-    "Herbst",
-    "Winter"
-   ],
-   "rows": [
-    [
-     "März",
-     "Juni",
-     "September",
-     "Dezember"
-    ],
-    [
-     "April",
-     "Juli",
-     "Oktober",
-     "Januar"
-    ],
-    [
-     "Mai",
-     "August",
-     "November",
-     "Februar"
-    ]
-   ],
-   "ruCols": [],
-   "note": "Все месяцы — мужского рода: *der Mai*, *im Mai*. Но с датой — *am*: *am ersten Mai*."
-  }
- },
  "reisen/datum-2": {
   "point": "С 20 — *-ste*; «когда?» — *am …-en*: *am ersten Mai*, *am zwanzigsten Mai*",
   "read": "С 20 — *-ste*, как в теме 8: *der zwanzigste*, *der einunddreißigste*. Новое здесь одно — «когда?». По-русски «первого мая» — родительный падеж, а по-немецки *am* и окончание *-en*: *am ersten Mai*. После *vom* и *bis zum* — тоже *-en*, поэтому Матео и сказал *vom zweiten bis zum vierten Juni*. Спросить дату можно так: *Welches Datum ist heute?*",
@@ -6391,6 +6355,42 @@
    7,
    8
   ]
+ },
+ "reisen/monate-1": {
+  "point": "*um* — время, *am* — день и дата, *im* — месяц и время года",
+  "read": "Месяцы почти все похожи на русские — труднее с буквами: *März* с умлаутом, *Mai* через *ai*. *Juni* и *Juli* легко спутать на слух, поэтому по телефону немцы часто говорят *Juno* и *Julei*. Все месяцы — мужского рода, и с ними тот же предлог, что с временами года: *im Juni*. Теперь у вас есть все три предлога времени: *um acht Uhr*, *am Freitag*, *im Juni*.",
+  "table": {
+   "title": "Die Monate",
+   "ru": "Месяцы по временам года",
+   "head": [
+    "Frühling",
+    "Sommer",
+    "Herbst",
+    "Winter"
+   ],
+   "rows": [
+    [
+     "März",
+     "Juni",
+     "September",
+     "Dezember"
+    ],
+    [
+     "April",
+     "Juli",
+     "Oktober",
+     "Januar"
+    ],
+    [
+     "Mai",
+     "August",
+     "November",
+     "Februar"
+    ]
+   ],
+   "ruCols": [],
+   "note": "Все месяцы — мужского рода: *der Mai*, *im Mai*. Но с датой — *am*: *am ersten Mai*."
+  }
  },
  "reisen/perfekt-2": {
   "point": "Всё новое — внутрь рамки: *Am Freitag sind wir mit dem Zug nach Hamburg gefahren.*",

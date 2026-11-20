@@ -261,7 +261,96 @@ export type Challenge =
       kind: "spy";
       items: { de: string; colour: string }[];
       rounds: { de: string; ru: string; pronoun: "er" | "sie" | "es"; colour: string; answer: string }[];
-    };
+    }
+  // Механики из IDEAS.md: порядок слов, план комнаты, порванная записка, бинарные контрасты, хвост,
+  // протокол расследования, подбор в условия, групповой чат, комикс, пересказ, рация, угадай слово, редактор.
+  /** «Пружина порядка слов»: вставить триггер и переставить вытолкнутый глагол / приставку. */
+  | { kind: "spring"; rounds: SpringRound[] }
+  /** «Расставь вещи по плану»: по заметкам положить предметы в слоты на схеме комнаты. */
+  | {
+      kind: "room";
+      title: string;
+      furniture: { x: number; y: number; w: number; h: number; label: string }[];
+      spots: RoomSpot[];
+      items: RoomItem[];
+      notes: { de: string; ru: string }[];
+      answer: Record<string, string>;
+    }
+  /** «Порванная записка»: собрать документ из порванных полосок в верном порядке. */
+  | {
+      kind: "torn";
+      title: string;
+      strips: { id: string; de: string; ru: string }[];
+      also?: string[][];
+    }
+  /** «Два причала»: рассортировать карточки по двум-трём контрастным категориям (как причалы). */
+  | {
+      kind: "contrast";
+      bays: { id: string; label: string; sub?: string }[];
+      items: { id: string; text: string; ru?: string; bay: string; why: string }[];
+    }
+  /** «Охота на хвост»: отсечь начало сложного слова до последнего корня и выбрать артикль. */
+  | { kind: "tail"; rounds: TailRound[] }
+  /** «Протокол расследования»: по вырезкам улик заполнить слоты итогового вывода. */
+  | {
+      kind: "protocol";
+      title: string;
+      clues: { who: string; de: string; ru: string }[];
+      parts: (string | { slot: string; label: string })[];
+      bank: string[];
+      answer: Record<string, string>;
+    }
+  /** «Уложись в условия»: набрать любое количество позиций, которое выполняет все условия. */
+  | { kind: "budget"; items: BudgetItem[]; rules: BudgetRule[] }
+  /** «Групповой чат клуба»: выбрать сообщение нужного собеседника и ответить именно на него. */
+  | { kind: "groupchat"; title: string; messages: GroupMsg[]; steps: GroupStep[] }
+  /** «Комикс с пустыми облачками»: распределить реплики по кадрам сцены. */
+  | { kind: "comic"; panels: ComicPanel[]; extra?: string[] }
+  /** «Пересказ для блокнота»: переключить слова цитаты героя из 1-го лица в 3-е. */
+  | { kind: "retell"; who: string; quote: string; ru: string; tokens: RetellToken[] }
+  /** «Рация с помехами»: выбрать верный вопрос, чтобы прояснить смазанную часть реплики. */
+  | { kind: "radio"; rounds: RadioRound[] }
+  /** «Чайка крадётся к булочке»: угадать слово по буквам за 6 промахов, без наказания. */
+  | { kind: "gullword"; words: string[] }
+  /** «Редактор черновика»: найти и исправить ошибки в готовом письме героя по чеклисту. */
+  | { kind: "proofread"; author: string; checklist: string[]; segments: ProofSegment[] };
+
+export type SpringRound = {
+  ru: string;
+  base: string[];
+  trigger: string;
+  start: string[];
+  answer: string[];
+  also?: string[][];
+  why: string;
+};
+export type RoomSpot = { id: string; x: number; y: number; label: string };
+export type RoomItem = { id: string; icon: string; de: string; ru: string };
+export type TailRound = { word: string; parts: string[]; ru: string };
+export type BudgetItem = { id: string; de: string; ru: string; price: number; max: number; tags: string[] };
+export type BudgetRule =
+  | { kind: "maxPrice"; cents: number; label: string }
+  | { kind: "minTotal"; count: number; label: string }
+  | { kind: "exactTotal"; count: number; label: string }
+  | { kind: "minTag"; tag: string; count: number; label: string }
+  | { kind: "forbidTag"; tag: string; label: string };
+export type GroupMsg = { id: string; who: string; de: string; ru: string };
+export type GroupStep = { prompt: string; replyTo: string; options: Option[]; answer: string };
+export type ComicPanel = { id: string; scene: string; who: string; art: string; answer: string; ru: string };
+export type RetellSlot = { id: string; from: string; options: string[]; answer: string };
+export type RetellToken = string | RetellSlot;
+export type RadioRound = {
+  who: string;
+  before: string;
+  after: string;
+  hidden: string;
+  ru: string;
+  questions: { id: string; text: string; why?: string }[];
+  answer: string;
+  sound?: string;
+};
+export type ProofSlot = { id: string; draft: string; options: string[]; answer: string; why: string };
+export type ProofSegment = string | ProofSlot;
 /** Клетка семейного дерева; partner — супруг рядом, icon — подсказка на пустой клетке. */
 export type TreeSlot = { id: string; icon?: string; given?: string };
 export type TreeNode = TreeSlot & { partner?: TreeSlot; children?: TreeNode[] };

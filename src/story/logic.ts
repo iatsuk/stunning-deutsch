@@ -1,5 +1,21 @@
 import { shuffle } from "../lib/shuffle.ts";
 import { judge, nearMisses } from "../trainer/logic.ts";
+import {
+  budgetCheck,
+  budgetSolutions,
+  initialAnswerMechanic,
+  isCorrectMechanic,
+  isNewMechanic,
+  mechanicWords,
+  mistakeMechanic,
+  proofSegments,
+  protocolSlots,
+  retellSlots,
+  solutionMechanic,
+  springRight,
+  tailCuts,
+  validateMechanic,
+} from "./mechanics-logic.ts";
 import { flatNodes, keyOf, requiredKeys, sceneVoices, sceneWords, solutionEntries, typedRight } from "./scene.ts";
 import { answerOf, excludes, reviewTwentyLines } from "./twenty.ts";
 import { TRACKS, type Cond, type Effects } from "./world.ts";
@@ -18,6 +34,7 @@ import type {
   TreeSlot,
 } from "./types.ts";
 
+export { budgetCheck, budgetSolutions, proofSegments, protocolSlots, retellSlots, springRight, tailCuts };
 type Route = Extract<Challenge, { kind: "algo" }>;
 type Position = { x: number; y: number; heading: number };
 
@@ -106,6 +123,7 @@ export function challengeWords(c: Challenge): string[] {
   if (c.kind === "twenty") return c.cards.flatMap((card) => (card.unit ? [card.unit] : []));
   // Слова погоды тренирует прогноз; приманка не звучит и словом игры не считается.
   if (c.kind === "weather") return c.skies.filter((s) => c.forecast.some((f) => f.sky === s.id)).map((s) => s.de);
+  if (isNewMechanic(c)) return mechanicWords(c);
   return [];
 }
 /** Сборка проверяет, что каждое слово игры есть в словаре уроков. */
@@ -397,6 +415,7 @@ export function isCorrect(
   challenge: Challenge,
   value: Answer | undefined,
 ): boolean {
+  if (isNewMechanic(challenge)) return isCorrectMechanic(challenge, value);
   switch (challenge.kind) {
     case "play": {
       if (!Array.isArray(value)) return false;
@@ -511,6 +530,7 @@ export function isCorrect(
 
 /** Ответ, который показывается на уже пройденном шаге и проверяется при сборке. */
 export function solution(challenge: Challenge): Answer {
+  if (isNewMechanic(challenge)) return solutionMechanic(challenge);
   switch (challenge.kind) {
     case "play":
       return solutionEntries(challenge.nodes);
@@ -574,6 +594,7 @@ export function solution(challenge: Challenge): Answer {
 }
 
 export function initialAnswer(challenge: Challenge): Answer {
+  if (isNewMechanic(challenge)) return initialAnswerMechanic(challenge);
   switch (challenge.kind) {
     case "play":
     case "order":
@@ -635,6 +656,7 @@ export const wrongAnswers = (
 
 /** Что сказать после неудачной проверки: сначала о незавершённом, затем о смысле. */
 export function mistake(c: Challenge, value: Answer, hint: string): string {
+  if (isNewMechanic(c)) return mistakeMechanic(c, value, hint);
   const record = isRecord(value) ? value : {};
   const list = Array.isArray(value) ? value : [];
   switch (c.kind) {
@@ -724,6 +746,7 @@ export function validateChallenge(
   known: Set<string>,
   phrases: Record<string, unknown>,
 ): boolean {
+  if (isNewMechanic(c)) return validateMechanic(c);
   switch (c.kind) {
     case "play":
       return validateScene(c.nodes, known, phrases);

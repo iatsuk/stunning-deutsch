@@ -349,6 +349,21 @@ const warten: SceneNode[] = [
       ["Грета носила что-то тяжёлое", true, "«Das Schild ist schwer» — табличка тяжёлая."],
     ]),
   },
+  {
+    t: "game",
+    task: "Комикс из приёмной врача: кто что сказал? Расставьте реплики по кадрам.",
+    hint: "Посмотрите на жест и предмет в кадре. Одно облачко лишнее.",
+    c: {
+      kind: "comic",
+      panels: [
+        { id: "p1", who: "Herr Jensen", art: "🧣", scene: "Йенсен в шарфе показывает на горло и протягивает блокнот.", answer: "Ich darf nicht sprechen.", ru: "Мне нельзя говорить." },
+        { id: "p2", who: "Greta", art: "🪵", scene: "Грета держится за поясницу.", answer: "Mein Rücken tut weh.", ru: "У меня болит спина." },
+        { id: "p3", who: "Elif", art: "🎟️", scene: "Элиф уступает Грете свою очередь к врачу.", answer: "Nehmen Sie meinen Termin!", ru: "Возьмите мою запись!" },
+        { id: "p4", who: "Dana", art: "📰", scene: "Дана прячется за журналом и хранит врачебную тайну.", answer: "Hier bin ich keine Ärztin.", ru: "Здесь я не врач." },
+      ],
+      extra: ["Ich habe Fieber!"],
+    },
+  },
   elif("Das Schild ist schwer – und Greta trägt es. Aber warum?", "Табличка тяжёлая — и Грета её носит. Но зачем?"),
   {
     t: "gap",
@@ -580,6 +595,21 @@ const apotheke: SceneNode[] = [
     de: "Morgen um elf in der Werkstatt! Greta erzählt alles. Endlich!",
     options: ["завтра в одиннадцать Грета всё расскажет в мастерской", "Грета уезжает в Гамбург", "Грета придёт в клуб вечером"],
     answer: "завтра в одиннадцать Грета всё расскажет в мастерской",
+  },
+  {
+    t: "game",
+    task: "Порванная записка: чайка дёрнула край листка Греты. Сложите его по порядку.",
+    hint: "Обращение сверху, затем место и время, приглашение к вопросам и подпись.",
+    c: {
+      kind: "torn",
+      title: "Brief von Greta",
+      strips: [
+        { id: "t1", de: "Liebe Leute,", ru: "Дорогие друзья," },
+        { id: "t2", de: "morgen um elf sind wir in der Werkstatt.", ru: "завтра в одиннадцать мы в мастерской." },
+        { id: "t3", de: "Herr Jensen ist auch da. Fragen Sie alles!", ru: "Господин Йенсен тоже там. Спрашивайте обо всём!" },
+        { id: "t4", de: "Viele Grüße, Greta", ru: "С наилучшими пожеланиями, Грета" },
+      ],
+    },
   },
   {
     t: "game",

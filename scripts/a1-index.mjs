@@ -35,7 +35,7 @@ const LESSONS = ["kennenlernen", "zahlen", "familie", "essen", "einkaufen", "tag
 
 // Служебные поля и русские поля в слова не идут; рассказ со смешанным текстом берём целиком —
 // кириллица отсеивается при разборе на слова.
-const SKIP = new Set(["an", "skies", "sky", "id", "src", "rule", "voice", "kind", "t", "audio", "icon", "alt", "ru", "who", "learn", "seed", "outcome", "set", "if", "key", "places", "goal", "start", "heading", "colour", "pronoun", "answerRu", "hint", "task", "note", "prompt", "label"]);
+const SKIP = new Set(["an", "skies", "sky", "id", "src", "rule", "voice", "kind", "t", "audio", "icon", "alt", "ru", "who", "learn", "seed", "outcome", "set", "if", "key", "places", "goal", "start", "heading", "colour", "pronoun", "answerRu", "hint", "task", "note", "prompt", "label", "tags", "tag", "replyTo", "slot", "bay", "bays", "art", "author", "checklist", "sub", "furniture", "spots", "cents", "count", "from"]);
 const expand = (s) => s.replace(/\{([a-z0-9]+)\}/g, (_, k) => phrases[k]?.de ?? "");
 function strings(x, out = [], key = "") {
   if (SKIP.has(key)) return out;
@@ -62,7 +62,7 @@ function heads(set) {
 }
 
 /** Игры, где немецкое слово или фраза звучит само. */
-const HEARD_GAMES = new Set(["sounds", "compound", "chat", "bingo", "scene", "letters", "docks", "gull", "lock", "oral", "weather"]);
+const HEARD_GAMES = new Set(["sounds", "compound", "tail", "chat", "bingo", "scene", "letters", "gullword", "docks", "gull", "lock", "oral", "weather"]);
 const READING = new Set(["narr", "say", "pic", "clue", "item", "when"]);
 
 function sceneUnits(warmups = true) {
