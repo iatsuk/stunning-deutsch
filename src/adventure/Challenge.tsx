@@ -2,12 +2,13 @@ import { useState } from "react";
 import type { AdventureChallenge } from "../content";
 import type { AdventureSave } from "../hooks";
 import { De, Text } from "../markup";
-import { NewChallenge } from "./NewChallenge";
 import { Clue } from "./Clue";
 import { challengeSolved, shuffled } from "./logic";
 import { MatchingChallenge } from "./MatchingChallenge";
 import { QuantityChallenge } from "./QuantityChallenge";
 import { ClockChallenge } from "./ClockChallenge";
+import { NoteChallenge } from "./NoteChallenge";
+import { NegotiationChallenge } from "./NegotiationChallenge";
 
 export type ChallengeProps = {
   challenge: AdventureChallenge;
@@ -18,10 +19,11 @@ export type ChallengeProps = {
 };
 
 export function Challenge(props: ChallengeProps) {
-  return props.challenge.kind === "note" || props.challenge.kind === "negotiation" ? <NewChallenge {...props} challenge={props.challenge} />
-    : props.challenge.kind === "match" ? <MatchingChallenge {...props} challenge={props.challenge} />
+  return props.challenge.kind === "match" ? <MatchingChallenge {...props} challenge={props.challenge} />
     : props.challenge.kind === "quantity" ? <QuantityChallenge {...props} challenge={props.challenge} />
     : props.challenge.kind === "clock" ? <ClockChallenge {...props} challenge={props.challenge} />
+    : props.challenge.kind === "note" ? <NoteChallenge {...props} challenge={props.challenge} />
+    : props.challenge.kind === "negotiation" ? <NegotiationChallenge {...props} challenge={props.challenge} />
     : <PickChallenge {...props} challenge={props.challenge} />;
 }
 
