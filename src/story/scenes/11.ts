@@ -94,7 +94,7 @@ const donnerstag: SceneNode[] = [
       answer: { hauke: "A", elif: "B", dana: "0" },
     },
   },
-  elif("Helgoland! Da ist der Ring von unserer Möwe! Ich schreibe heute noch!", "Гельголанд! Там кольцо нашей чайки! Напишу сегодня же!"),
+  elif("Helgoland! Da ist der Ring von unserer Möwe! Ich schreibe heute noch!", "Хельголанд! Там кольцо нашей чайки! Напишу сегодня же!"),
   {
     t: "game",
     task: "В объявлениях длинные слова. Соберите каждое из частей и выберите род.",
@@ -774,14 +774,14 @@ const geheim: SceneNode[] = [
 ];
 
 // Сцена 6 · эпилог и крючок: ночь перед последним днём. Речь как на экзамене (работа), слова дня,
-// письмо с Гельголанда и вопрос на главу 12: как довезти мокрую табличку под дождём.
+// письмо с Хельголанда и вопрос на главу 12: как довезти мокрую табличку под дождём.
 const nacht: SceneNode[] = [
   { t: "pic", src: "11-nacht.jpg", alt: "Ночь у клуба, тучи над гаванью: Хауке с прогнозом дождя в телефоне смотрит в небо, Элиф бросается за чайкой, которая уносит в клюве письмо с маяком на марке" },
   narr("Nacht am Club. Alles ist grau. Элиф читает письмо — aus Helgoland."),
   elif("Die Vogelwarte schreibt: Unsere Möwe ist sieben Jahre alt. Sie hat schon drei Kinder gehabt!", "Орнитологическая станция пишет: HEL 7305 семь лет. У неё уже было трое детей!"),
   {
     t: "hear",
-    task: "Что пишут с Гельголанда о чайке?",
+    task: "Что пишут с Хельголанда о чайке?",
     voice: "Flo",
     de: "Die Vogelwarte schreibt: Unsere Möwe ist sieben Jahre alt. Sie hat schon drei Kinder gehabt!",
     options: ["ей семь лет, и у неё было трое птенцов", "ей семьдесят лет", "она прилетела из Гамбурга"],
@@ -918,7 +918,7 @@ export const sceneChapter11: Episode = {
       id: "11-s6",
       title: "Noch zwei Tage",
       story: [],
-      prompt: "Ночь перед последним днём: письмо с Гельголанда и речь как на экзамене.",
+      prompt: "Ночь перед последним днём: письмо с Хельголанда и речь как на экзамене.",
       hint: "Gestern hatte ich keine Zeit. — hatte + kein.",
       success: "День одиннадцатый закончен. Noch ein Tag.",
       challenge: play(back(nacht, 11, 1)),

@@ -237,7 +237,7 @@ const weg: SceneNode[] = [
     task: "Куда делась чайка?",
     options: [
       ok("Скорее всего, ждёт у клуба: там будет торт"),
-      no("Улетела на Гельголанд", "В такую погоду? Чайки перед штормом летят в город, а не в море."),
+      no("Улетела на Хельголанд", "В такую погоду? Чайки перед штормом летят в город, а не в море."),
       no("Уехала на прошлом автобусе", "Автобус ещё не пришёл: у него Verspätung."),
     ],
   },
@@ -914,12 +914,12 @@ const party: SceneNode[] = [
       oralSay(3, REQUEST, "🎂", "Ein Stück Kuchen, bitte!", "Кусочек торта, пожалуйста!"),
     ]),
   },
-  narr("Elif schreibt noch eine Karte — на Гельголанд, орнитологам. Образец — их письмо."),
+  narr("Elif schreibt noch eine Karte — на Хельголанд, орнитологам. Образец — их письмо."),
   narr("Nach Helgoland muss man nicht {abfliegen}: Die Fähre fährt. Und {zoll}? Den gibt es auf Helgoland auch! Am Zoll sitzt {beamte}."),
   {
     t: "game",
     rule: ["reisen/haben-sein-1"],
-    task: "Напишите за Элиф ответ на Гельголанд по образцу: письму орнитологов. Подписывается Элиф.",
+    task: "Напишите за Элиф ответ на Хельголанд по образцу: письму орнитологов. Подписывается Элиф.",
     hint: HINT_LETTER,
     c: letter(
       "die Vogelwarte",

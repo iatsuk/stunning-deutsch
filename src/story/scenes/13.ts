@@ -134,13 +134,13 @@ const morning: SceneNode[] = [
 ];
 
 // Сцена 2 · часть «Hören»: вокзал. Броски: новый человек · Элиф · сломать · die Vorsicht · 17 (с
-// поезда сходит орнитолог с Гельголанда, Элиф от радости роняет табличку «Vorsicht!»; сила выше
-// ожидаемой — орнитолог позовёт всех на Гельголанд) и за кадром · Фрауке · опоздать · die Straßenbahn
+// поезда сходит орнитолог с Хельголанда, Элиф от радости роняет табличку «Vorsicht!»; сила выше
+// ожидаемой — орнитолог позовёт всех на Хельголанд) и за кадром · Фрауке · опоздать · die Straßenbahn
 // · 12 (Фрауке час ждала трамвай, которого в Киле нет с 1985 года).
 const hoeren: SceneNode[] = [
   { t: "pic", src: "13-bahnhof.jpg", alt: "Вокзал Киля: подошёл поезд, Элиф машет обеими руками женщине с биноклем и рюкзаком; у ног Элиф — опрокинутая жёлтая табличка с восклицательным знаком" },
   narr("Teil eins: Hören. Der Bahnhof ist laut. Frau Petersen sagt: «Hier hören Sie viel Deutsch!» Die Tür geht {automatisch} auf — man muss nicht {druecken}."),
-  elif("Heute kommt Frau Brandt! Von der Vogelwarte auf Helgoland! Sie will unsere Möwe sehen!", "Сегодня приезжает фрау Брандт! С орнитологической станции на Гельголанде! Она хочет увидеть нашу чайку!"),
+  elif("Heute kommt Frau Brandt! Von der Vogelwarte auf Helgoland! Sie will unsere Möwe sehen!", "Сегодня приезжает фрау Брандт! С орнитологической станции на Хельголанде! Она хочет увидеть нашу чайку!"),
   narr("Elif hat der {vogelwarte} geschrieben. Jetzt kommt eine Frau von der Vogelwarte — mit dem Zug aus Hamburg."),
   durchsage(ANSAGE, "Дамы и господа, информация: поезд из Гамбурга сегодня прибывает на путь четыре. Он опаздывает примерно на десять минут."),
   {
@@ -175,7 +175,7 @@ const hoeren: SceneNode[] = [
     },
   },
   narr("Элиф бежит к Gleis vier и роняет табличку «{vorsicht}». Kaputt. Elif sagt: «{entschuldigung}!» — zum Schild."),
-  brandt("Moin! Ich bin Jule Brandt, von der Vogelwarte Helgoland. Wo ist HEL 7305?", "Привет! Я Юле Брандт с орнитологической станции Гельголанда. Где HEL 7305?"),
+  brandt("Moin! Ich bin Jule Brandt, von der Vogelwarte Helgoland. Wo ist HEL 7305?", "Привет! Я Юле Брандт с орнитологической станции Хельголанда. Где HEL 7305?"),
   elif("Sie ist im Club! Sie hat uns die ganze Woche geholfen!", "Она в клубе! Она нам всю неделю помогала!"),
   {
     t: "reply",
@@ -231,7 +231,7 @@ const hoeren: SceneNode[] = [
     t: "pick",
     task: "Что принёс сегодняшний вокзал делу?",
     options: [
-      ok("В Киль приехала орнитолог с Гельголанда — к нашей чайке"),
+      ok("В Киль приехала орнитолог с Хельголанда — к нашей чайке"),
       no("Фрауке приехала на трамвае", "Трамвая в Киле нет с 1985 года. Фрауке приехала на автобусе."),
       no("Матео уехал в Гамбург", "Матео на кухне и придёт в двенадцать."),
     ],
@@ -466,7 +466,7 @@ const schreiben: SceneNode[] = [
     },
   },
   narr("Frau Brandt macht den Ring wieder an. HEL 7305 sieht sehr {wichtig} aus. Und die Möwe? Sie will einen Fisch {bekommen}."),
-  brandt("Und ich brauche ein Zimmer: Einzelzimmer, eine Nacht. Mein Name ist Jule Brandt, ich wohne auf Helgoland.", "А мне нужна комната: одноместный номер, одна ночь. Меня зовут Юле Брандт, я живу на Гельголанде."),
+  brandt("Und ich brauche ein Zimmer: Einzelzimmer, eine Nacht. Mein Name ist Jule Brandt, ich wohne auf Helgoland.", "А мне нужна комната: одноместный номер, одна ночь. Меня зовут Юле Брандт, я живу на Хельголанде."),
   {
     t: "game",
     rule: ["reisen/check-1"],
@@ -726,8 +726,8 @@ const abend: SceneNode[] = [
       no("Ich habe Deutsch gelernt – und ich habe Mitglied geworden!", "werden — изменение: Ich bin geworden."),
     ],
   },
-  brandt("Und morgen fährt die Möwe nach Helgoland. Kommen Sie alle mit – Helgoland ist schön!", "А завтра чайка едет на Гельголанд. Поезжайте все вместе — на Гельголанде красиво!"),
-  elif("Ein Ausflug nach Helgoland! Mit der Möwe! Ich packe sofort!", "Поездка на Гельголанд! С чайкой! Собираюсь немедленно!"),
+  brandt("Und morgen fährt die Möwe nach Helgoland. Kommen Sie alle mit – Helgoland ist schön!", "А завтра чайка едет на Хельголанд. Поезжайте все вместе — на Хельголанде красиво!"),
+  elif("Ein Ausflug nach Helgoland! Mit der Möwe! Ich packe sofort!", "Поездка на Хельголанд! С чайкой! Собираюсь немедленно!"),
   hauke("Dann brauchen wir ein Logbuch – für alle Reisen! Wohin, wann, mit wem.", "Тогда нам нужен журнал — для всех поездок! Куда, когда, с кем."),
   narr("So beginnt das {kuestenlogbuch}: ein Buch für alle Reisen am Meer. Es ist noch leer. Bald steht {dort} alles. Auch: Tennis spielen mit Luca."),
   {
@@ -784,7 +784,7 @@ export const sceneChapter13: Episode = {
       id: "13-s2",
       title: "Hören",
       story: [],
-      prompt: "Вокзал: объявления, автоответчик и гостья с Гельголанда.",
+      prompt: "Вокзал: объявления, автоответчик и гостья с Хельголанда.",
       hint: "Er hat circa zehn Minuten Verspätung. — главное: число и единица.",
       success: "Hören — bestanden. Фрау Брандт приехала к чайке.",
       challenge: play(back(hoeren, 13, 2)),
@@ -832,7 +832,7 @@ export const sceneChapter13: Episode = {
       story: [],
       prompt: "Фейерверк, доска почёта и первая страница Küstenlogbuch.",
       hint: "Ich bin Mitglied geworden. — werden: Perfekt с sein.",
-      success: "Вы — член клуба. Завтра — Гельголанд.",
+      success: "Вы — член клуба. Завтра — Хельголанд.",
       challenge: play(back(abend, 13, 1)),
     },
   ],

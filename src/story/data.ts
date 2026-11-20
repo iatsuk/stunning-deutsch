@@ -943,7 +943,7 @@ export const phrases: Record<string, Phrase> = {
   meer: { ru: "море", de: "das Meer", pl: "Meere", note: "Am Meer — на море. Ostsee — тоже море." },
   welt: { ru: "мир", de: "die Welt", pl: "Welten", note: "Auf der ganzen Welt — во всём мире." },
   abflug: { ru: "вылет", de: "der Abflug", pl: "Abflüge", note: "Abflug — вылет, Ankunft — прилёт." },
-  fliegen: { ru: "летать", de: "fliegen", note: "Nach Helgoland fliegen — лететь на Гельголанд." },
+  fliegen: { ru: "летать", de: "fliegen", note: "Nach Helgoland fliegen — лететь на Хельголанд." },
   anschluss: { ru: "пересадка", de: "der Anschluss", pl: "Anschlüsse", note: "Поезд, на который пересаживаются: den Anschluss verpassen." },
   gepaeck: { ru: "багаж", de: "das Gepäck", pl: "-", note: "Всё, что везут с собой: Koffer, Tasche, Rucksack." },
   halbpension: { ru: "полупансион", de: "die Halbpension", pl: "-", note: "В отеле: завтрак и ужин." },

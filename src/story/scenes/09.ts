@@ -33,7 +33,7 @@ const HAUKE_WEG = "Ich habe den Weg! Von der Briefträgerin: Der Farbenweg ist h
 const YILMAZ_ARZT = "Moin, Hauke! Suchen Sie die Mechanikerin? Sie ist beim Arzt – mit einem Mann. Er hat einen Schal und sagt nichts. Nicht mal Moin!";
 
 // Сцена 1 · пролог и завязка: шторм, план на Gaarden и обещанная машина. Бросок: новый человек ·
-// Элиф · опоздать · die Post · 8 — Элиф опаздывает: отправляла с почты письмо на Гельголанд, откуда
+// Элиф · опоздать · die Post · 8 — Элиф опаздывает: отправляла с почты письмо на Хельголанд, откуда
 // кольцо чайки. Бросок: неприятность · Грета · забыть · die Straßenbahn · 3 (мелочь) — Грета забыла
 // в комнате старый план города: на нём ещё ходит трамвай, которого в Киле нет с 1985 года.
 const sturm: SceneNode[] = [
@@ -61,8 +61,8 @@ const sturm: SceneNode[] = [
   hauke("Frauke fährt uns um neun nach Gaarden. Mit dem Auto!", "Фрауке в девять везёт нас в Гаарден. На машине!"),
   { t: "gap", rule: ["stadt/mit-1"], task: "На чём вы поедете по плану Хауке?", text: "Wir fahren mit ___ Auto nach Gaarden.", options: ["dem", "der", "den"], answer: "dem", ru: "Мы едем в Гаарден на машине." },
   narr("9:00 — kein Auto. 9:15 — kein Auto, keine Frauke. Und Elif ist auch nicht da."),
-  elif("Entschuldigung! Ich war bei der Post. Ein Brief nach Helgoland – für die Möwe!", "Простите! Я была на почте. Письмо на Гельголанд — про чайку!"),
-  narr("Der Ring von HEL 7305 — с острова Гельголанд. Элиф пишет туда, где её {moewe} и что она ест. Письмо уже в пути."),
+  elif("Entschuldigung! Ich war bei der Post. Ein Brief nach Helgoland – für die Möwe!", "Простите! Я была на почте. Письмо на Хельголанд — про чайку!"),
+  narr("Der Ring von HEL 7305 — с острова Хельголанд. Элиф пишет туда, где её {moewe} и что она ест. Письмо уже в пути."),
   {
     t: "reply",
     rule: ["stadt/praep-2"],

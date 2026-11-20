@@ -356,7 +356,7 @@ const guestbook: SceneNode[] = [
             rule: ["zahlen/alphabet-1"],
             task: "HEL — первые буквы острова, где кольцуют птиц. Элиф пишет его название числами: A = 1, B = 2… Расшифруйте.",
             hint: "Каждое число — номер буквы в алфавите: 8 — H, 5 — E, 12 — L.",
-            c: { kind: "cipher", code: "8-5-12-7-15-12-1-14-4", answer: "HELGOLAND", ru: "Гельголанд — остров в Северном море с птичьей станцией." },
+            c: { kind: "cipher", code: "8-5-12-7-15-12-1-14-4", answer: "HELGOLAND", ru: "Хельголанд — остров в Северном море с птичьей станцией." },
           },
           { t: "gap", rule: ["zahlen/haben-1"], task: "Подпишите находку.", text: "Die Möwe ___ eine Nummer: HEL 7305.", options: ["hat", "habe", "haben"], answer: "hat", ru: "У чайки есть номер: HEL 7305." },
           elif("Die Postleitzahl, bitte! Frau Petersen?", "Индекс, пожалуйста! Фрау Петерсен?", ["die Postleitzahl"]),
