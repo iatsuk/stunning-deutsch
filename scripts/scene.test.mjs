@@ -631,8 +631,11 @@ test("a phrase after a German article or preposition reads without its own artic
   for (const before of ["К пустому ", "Über dem Wasser: ", "Das ist ", ""]) assert.ok(!germanBefore(before), before);
 });
 
-test("all 13 new mechanics validate, check answers, explain mistakes and appear in chapters", async () => {
-  const { NEW_KINDS } = await import("../src/story/mechanics-logic.ts");
+test("word-order, room, torn-note and the other puzzle games validate, check answers, explain mistakes and appear in chapters", async () => {
+  const kinds = [
+    "spring", "room", "torn", "contrast", "tail", "protocol", "budget",
+    "groupchat", "comic", "retell", "radio", "gullword", "proofread",
+  ];
   const valid = validateChallenge;
   const spring = {
     kind: "spring",
@@ -853,5 +856,5 @@ test("all 13 new mechanics validate, check answers, explain mistakes and appear 
   const embeddedKinds = new Set(
     allScenes.flatMap((b) => flatNodes(nodes(b)).filter((n) => n.t === "game").map((n) => n.c.kind)),
   );
-  for (const k of NEW_KINDS) assert.ok(embeddedKinds.has(k), `механика ${k} не встроена ни в одну сцену`);
+  for (const k of kinds) assert.ok(embeddedKinds.has(k), `механика ${k} не встроена ни в одну сцену`);
 });

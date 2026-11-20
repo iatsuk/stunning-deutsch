@@ -1,21 +1,5 @@
 import { shuffle } from "../lib/shuffle.ts";
 import { judge, nearMisses } from "../trainer/logic.ts";
-import {
-  budgetCheck,
-  budgetSolutions,
-  initialAnswerMechanic,
-  isCorrectMechanic,
-  isNewMechanic,
-  mechanicWords,
-  mistakeMechanic,
-  proofSegments,
-  protocolSlots,
-  retellSlots,
-  solutionMechanic,
-  springRight,
-  tailCuts,
-  validateMechanic,
-} from "./mechanics-logic.ts";
 import { flatNodes, keyOf, requiredKeys, sceneVoices, sceneWords, solutionEntries, typedRight } from "./scene.ts";
 import { answerOf, excludes, reviewTwentyLines } from "./twenty.ts";
 import { TRACKS, type Cond, type Effects } from "./world.ts";
@@ -30,11 +14,12 @@ import type {
   Move,
   Phrase,
   PortraitPart,
+  ProofSlot,
+  RetellSlot,
   TreeNode,
   TreeSlot,
 } from "./types.ts";
 
-export { budgetCheck, budgetSolutions, proofSegments, protocolSlots, retellSlots, springRight, tailCuts };
 type Route = Extract<Challenge, { kind: "algo" }>;
 type Position = { x: number; y: number; heading: number };
 
@@ -123,7 +108,9 @@ export function challengeWords(c: Challenge): string[] {
   if (c.kind === "twenty") return c.cards.flatMap((card) => (card.unit ? [card.unit] : []));
   // Слова погоды тренирует прогноз; приманка не звучит и словом игры не считается.
   if (c.kind === "weather") return c.skies.filter((s) => c.forecast.some((f) => f.sky === s.id)).map((s) => s.de);
-  if (isNewMechanic(c)) return mechanicWords(c);
+  if (c.kind === "tail") return c.rounds.map((r) => r.word);
+  if (c.kind === "gullword") return c.words;
+  if (c.kind === "radio") return c.rounds.flatMap((r) => (r.sound ? [r.sound] : []));
   return [];
 }
 /** Сборка проверяет, что каждое слово игры есть в словаре уроков. */
@@ -403,6 +390,96 @@ const sameSet = (value: Answer | undefined, expected: string[]) =>
   Array.isArray(value) &&
   new Set(value).size === value.length &&
   sameList([...value].sort(), [...expected].sort());
+const sameBag = (a: string[], b: string[]) => [...a].sort().join("|") === [...b].sort().join("|");
+
+export const protocolSlots = (c: Extract<Challenge, { kind: "protocol" }>) =>
+  c.parts.filter((p): p is { slot: string; label: string } => typeof p !== "string");
+
+export const retellSlots = (c: Extract<Challenge, { kind: "retell" }>) =>
+  c.tokens.filter((t): t is RetellSlot => typeof t !== "string");
+
+export const proofSegments = (c: Extract<Challenge, { kind: "proofread" }>) =>
+  c.segments.filter((s): s is ProofSlot => typeof s !== "string");
+
+export function springRight(round: Extract<Challenge, { kind: "spring" }>["rounds"][number], tiles: string[]): boolean {
+  return [round.answer, ...(round.also ?? [])].some((expected) => sameList(tiles, expected));
+}
+
+/**
+ * Три позиции разреза в сложном слове: один истинный (перед последним корнем) и два правдоподобных
+ * ложных рядом, отсортированные по возрастанию.
+ */
+export function tailCuts(bare: string, tail: string): number[] {
+  const cut = bare.length - tail.length;
+  const min = bare.length >= 5 ? 2 : 1;
+  const max = bare.length >= 5 ? bare.length - 2 : bare.length - 1;
+  const picks = new Set<number>([cut]);
+  const near = [cut - 2, cut + 2, cut - 1, cut + 1, cut - 3, cut + 3];
+  for (const at of near) {
+    if (picks.size >= 3) break;
+    if (at >= min && at <= max) picks.add(at);
+  }
+  for (let at = min; at <= max && picks.size < 3; at++) picks.add(at);
+  return [...picks].sort((a, b) => a - b);
+}
+
+type Budget = Extract<Challenge, { kind: "budget" }>;
+
+/** Проверка корзины на все живые условия: сумма, общее количество и ограничения по тегам. */
+export function budgetCheck(c: Pick<Budget, "items" | "rules">, record: Record<string, string | number>) {
+  const countOf = (id: string) => Number(record[id] ?? 0);
+  const cents = c.items.reduce((sum, item) => sum + item.price * countOf(item.id), 0);
+  const total = c.items.reduce((sum, item) => sum + countOf(item.id), 0);
+  const tagged = (tag: string) =>
+    c.items.filter((i) => i.tags.includes(tag)).reduce((sum, item) => sum + countOf(item.id), 0);
+  const results = c.rules.map((rule) => {
+    const ok =
+      rule.kind === "maxPrice"
+        ? cents <= rule.cents
+        : rule.kind === "minTotal"
+          ? total >= rule.count
+          : rule.kind === "exactTotal"
+            ? total === rule.count
+            : rule.kind === "minTag"
+              ? tagged(rule.tag) >= rule.count
+              : tagged(rule.tag) === 0;
+    return { rule, ok };
+  });
+  return { ok: results.every((r) => r.ok), total, cents, results };
+}
+
+/** Перебор допустимых наборов для проверки, что решений не меньше двух, и для готового ответа. */
+export function budgetSolutions(c: Pick<Budget, "items" | "rules">, limit = 2): Record<string, number>[] {
+  const maxCents = c.rules.reduce((m, r) => (r.kind === "maxPrice" ? Math.min(m, r.cents) : m), Infinity);
+  const exactTotal = c.rules.find((r) => r.kind === "exactTotal")?.count;
+  const forbidden = new Set(c.rules.filter((r) => r.kind === "forbidTag").map((r) => r.tag));
+  const counts = c.items.map(() => 0);
+  const out: Record<string, number>[] = [];
+  const walk = (i: number, cents: number, total: number) => {
+    if (out.length >= limit) return;
+    if (i === c.items.length) {
+      const rec = Object.fromEntries(c.items.map((item, k) => [item.id, counts[k]]));
+      if (budgetCheck(c, rec).ok) out.push(rec);
+      return;
+    }
+    const item = c.items[i];
+    const ban = item.tags.some((t) => forbidden.has(t));
+    const maxCount = ban ? 0 : item.max;
+    for (let k = 0; k <= maxCount; k++) {
+      const nextCents = cents + k * item.price;
+      const nextTotal = total + k;
+      if (nextCents > maxCents) break;
+      if (exactTotal !== undefined && nextTotal > exactTotal) break;
+      counts[i] = k;
+      walk(i + 1, nextCents, nextTotal);
+      if (out.length >= limit) break;
+    }
+    counts[i] = 0;
+  };
+  walk(0, 0, 0);
+  return out;
+}
+
 export const coinTotal = (value: Answer | undefined) =>
   isRecord(value)
     ? Object.entries(value).reduce(
@@ -415,8 +492,57 @@ export function isCorrect(
   challenge: Challenge,
   value: Answer | undefined,
 ): boolean {
-  if (isNewMechanic(challenge)) return isCorrectMechanic(challenge, value);
   switch (challenge.kind) {
+    case "spring":
+      return (
+        Array.isArray(value) &&
+        value.length === challenge.rounds.length &&
+        challenge.rounds.every((r, i) => [r.answer, ...(r.also ?? [])].some((expected) => value[i] === expected.join(" ")))
+      );
+    case "room":
+      return (
+        isRecord(value) &&
+        Object.keys(value).length === Object.keys(challenge.answer).length &&
+        Object.entries(challenge.answer).every(([item, spot]) => value[item] === spot)
+      );
+    case "torn": {
+      const base = challenge.strips.map((s) => s.id);
+      return [base, ...(challenge.also ?? [])].some((expected) => sameList(value, expected));
+    }
+    case "contrast":
+      return sameSet(value, challenge.items.map((i) => i.id));
+    case "tail":
+      return sameList(value, challenge.rounds.map((r) => r.word));
+    case "protocol":
+      return (
+        isRecord(value) &&
+        Object.keys(value).length === Object.keys(challenge.answer).length &&
+        Object.entries(challenge.answer).every(([slot, word]) => value[slot] === word)
+      );
+    case "budget": {
+      if (!isRecord(value)) return false;
+      const validCounts = challenge.items.every((i) => {
+        const n = Number(value[i.id] ?? 0);
+        return Number.isInteger(n) && n >= 0 && n <= i.max;
+      });
+      return validCounts && budgetCheck(challenge, value).ok;
+    }
+    case "groupchat":
+      return sameList(value, challenge.steps.map((s) => s.answer));
+    case "comic":
+      return isRecord(value) && Object.keys(value).length === challenge.panels.length && challenge.panels.every((p) => value[p.id] === p.answer);
+    case "retell": {
+      const slots = retellSlots(challenge);
+      return isRecord(value) && Object.keys(value).length === slots.length && slots.every((s) => value[s.id] === s.answer);
+    }
+    case "radio":
+      return sameList(value, challenge.rounds.map((r) => r.answer));
+    case "gullword":
+      return sameSet(value, challenge.words);
+    case "proofread": {
+      if (!isRecord(value)) return false;
+      return proofSegments(challenge).every((s) => (value[s.id] ?? s.draft) === s.answer);
+    }
     case "play": {
       if (!Array.isArray(value)) return false;
       // Сцена пройдена, когда пройдены обязательные узлы при выбранных сторонах условий.
@@ -530,8 +656,33 @@ export function isCorrect(
 
 /** Ответ, который показывается на уже пройденном шаге и проверяется при сборке. */
 export function solution(challenge: Challenge): Answer {
-  if (isNewMechanic(challenge)) return solutionMechanic(challenge);
   switch (challenge.kind) {
+    case "spring":
+      return challenge.rounds.map((r) => r.answer.join(" "));
+    case "room":
+      return challenge.answer;
+    case "torn":
+      return challenge.strips.map((s) => s.id);
+    case "contrast":
+      return challenge.items.map((i) => i.id);
+    case "tail":
+      return challenge.rounds.map((r) => r.word);
+    case "protocol":
+      return challenge.answer;
+    case "budget":
+      return budgetSolutions(challenge, 1)[0] ?? {};
+    case "groupchat":
+      return challenge.steps.map((s) => s.answer);
+    case "comic":
+      return Object.fromEntries(challenge.panels.map((p) => [p.id, p.answer]));
+    case "retell":
+      return Object.fromEntries(retellSlots(challenge).map((s) => [s.id, s.answer]));
+    case "radio":
+      return challenge.rounds.map((r) => r.answer);
+    case "gullword":
+      return challenge.words;
+    case "proofread":
+      return Object.fromEntries(proofSegments(challenge).filter((s) => s.draft !== s.answer).map((s) => [s.id, s.answer]));
     case "play":
       return solutionEntries(challenge.nodes);
     case "chat":
@@ -594,8 +745,23 @@ export function solution(challenge: Challenge): Answer {
 }
 
 export function initialAnswer(challenge: Challenge): Answer {
-  if (isNewMechanic(challenge)) return initialAnswerMechanic(challenge);
   switch (challenge.kind) {
+    case "spring":
+    case "torn":
+    case "contrast":
+    case "tail":
+    case "groupchat":
+    case "radio":
+    case "gullword":
+      return [];
+    case "budget":
+      return Object.fromEntries(challenge.items.map((i) => [i.id, 0]));
+    case "room":
+    case "protocol":
+    case "comic":
+    case "retell":
+    case "proofread":
+      return {};
     case "play":
     case "order":
     case "chat":
@@ -656,10 +822,53 @@ export const wrongAnswers = (
 
 /** Что сказать после неудачной проверки: сначала о незавершённом, затем о смысле. */
 export function mistake(c: Challenge, value: Answer, hint: string): string {
-  if (isNewMechanic(c)) return mistakeMechanic(c, value, hint);
   const record = isRecord(value) ? value : {};
   const list = Array.isArray(value) ? value : [];
   switch (c.kind) {
+    case "room": {
+      if (c.items.some((i) => !record[i.id])) return "Расставьте все предметы на плане.";
+      const wrong = c.items.find((i) => record[i.id] !== c.answer[i.id]);
+      return wrong ? `Не на месте: ${wrong.de} (${wrong.ru}). Перечитайте заметки.` : hint;
+    }
+    case "torn": {
+      if (list.length < c.strips.length) return `Сложите все полоски: ${list.length} из ${c.strips.length}.`;
+      const valid = [c.strips.map((s) => s.id), ...(c.also ?? [])];
+      if (!valid.some((a) => a[0] === list[0])) return "Проверьте начало: первая полоска не та.";
+      if (!valid.some((a) => a.at(-1) === list.at(-1))) return "Проверьте концовку: последняя полоска не на месте.";
+      return hint;
+    }
+    case "protocol": {
+      const slots = protocolSlots(c);
+      if (slots.some((s) => !record[s.slot])) return "Заполните все поля протокола.";
+      const wrong = slots.find((s) => record[s.slot] !== c.answer[s.slot]);
+      return wrong ? `Не сходится поле «${wrong.label}». Перечитайте вырезки из блокнота.` : hint;
+    }
+    case "budget": {
+      const bad = budgetCheck(c, record).results.find((r) => !r.ok);
+      return bad ? `Не выполнено условие: ${bad.rule.label}.` : hint;
+    }
+    case "comic": {
+      if (c.panels.some((p) => !record[p.id])) return "Подберите реплику для каждого кадра.";
+      const idx = c.panels.findIndex((p) => record[p.id] !== p.answer);
+      return idx >= 0 ? `Проверьте кадр ${idx + 1} (${c.panels[idx].who}): реплика не подходит к ситуации.` : hint;
+    }
+    case "retell": {
+      const slots = retellSlots(c);
+      if (slots.some((s) => !record[s.id])) return "Переведите в 3-е лицо все выделенные слова.";
+      const wrong = slots.find((s) => record[s.id] !== s.answer);
+      return wrong ? `Проверьте слово «${wrong.from}»: для 3-го лица нужна другая форма.` : hint;
+    }
+    case "proofread": {
+      const wrong = proofSegments(c).find((s) => (record[s.id] ?? s.draft) !== s.answer);
+      return wrong ? wrong.why : hint;
+    }
+    case "spring":
+    case "contrast":
+    case "tail":
+    case "groupchat":
+    case "radio":
+    case "gullword":
+      return hint;
     case "clock":
       return c.traps[String(value)] ?? hint;
     case "verdict":
@@ -746,8 +955,192 @@ export function validateChallenge(
   known: Set<string>,
   phrases: Record<string, unknown>,
 ): boolean {
-  if (isNewMechanic(c)) return validateMechanic(c);
   switch (c.kind) {
+    case "spring":
+      return (
+        c.rounds.length >= 2 &&
+        c.rounds.every(
+          (r) =>
+            Boolean(r.ru && r.why && r.trigger) &&
+            r.base.length >= 2 &&
+            r.answer.length >= 3 &&
+            sameBag(r.start, r.answer) &&
+            r.start.join("|") !== r.answer.join("|") &&
+            (r.also ?? []).every(
+              (a) =>
+                a.length === r.answer.length &&
+                sameBag(a, r.start) &&
+                a.join("|") !== r.start.join("|") &&
+                a.join("|") !== r.answer.join("|"),
+            ),
+        )
+      );
+    case "room": {
+      const items = c.items.map((i) => i.id);
+      const spots = c.spots.map((s) => s.id);
+      return (
+        Boolean(c.title) &&
+        c.notes.length >= 2 &&
+        c.notes.every((n) => Boolean(n.de && n.ru)) &&
+        c.items.length >= 3 &&
+        c.spots.length >= c.items.length &&
+        new Set(items).size === items.length &&
+        new Set(spots).size === spots.length &&
+        Object.keys(c.answer).length === c.items.length &&
+        c.items.every((i) => Boolean(i.de && i.ru && i.icon) && spots.includes(c.answer[i.id])) &&
+        new Set(Object.values(c.answer)).size === c.items.length
+      );
+    }
+    case "torn": {
+      const ids = c.strips.map((s) => s.id);
+      return (
+        Boolean(c.title) &&
+        c.strips.length >= 4 &&
+        new Set(ids).size === ids.length &&
+        c.strips.every((s) => Boolean(s.id && s.de && s.ru)) &&
+        (c.also ?? []).every((a) => a.length === ids.length && sameBag(a, ids))
+      );
+    }
+    case "contrast": {
+      const bayIds = c.bays.map((b) => b.id);
+      const itemIds = c.items.map((i) => i.id);
+      return (
+        c.bays.length >= 2 &&
+        c.bays.length <= 3 &&
+        new Set(bayIds).size === bayIds.length &&
+        c.bays.every((b) => Boolean(b.id && b.label)) &&
+        c.items.length >= 4 &&
+        new Set(itemIds).size === itemIds.length &&
+        c.items.every((i) => Boolean(i.id && i.text && i.why) && bayIds.includes(i.bay)) &&
+        bayIds.every((id) => c.items.some((i) => i.bay === id))
+      );
+    }
+    case "tail":
+      return (
+        c.rounds.length >= 2 &&
+        c.rounds.every((r) => {
+          if (!r.ru || r.parts.length < 2 || !/^(der|die|das) /.test(r.word)) return false;
+          const bare = r.word.slice(4);
+          if (bare.toLowerCase() !== r.parts.join("").toLowerCase()) return false;
+          const tail = r.parts.at(-1)!;
+          const cuts = tailCuts(bare, tail);
+          return cuts.length === 3 && new Set(cuts).size === 3 && cuts.includes(bare.length - tail.length);
+        })
+      );
+    case "protocol": {
+      const slots = protocolSlots(c);
+      return (
+        Boolean(c.title) &&
+        c.clues.length >= 2 &&
+        c.clues.every((cl) => Boolean(cl.who && cl.de && cl.ru)) &&
+        slots.length >= 3 &&
+        new Set(slots.map((s) => s.slot)).size === slots.length &&
+        new Set(c.bank).size === c.bank.length &&
+        c.bank.length > slots.length &&
+        Object.keys(c.answer).length === slots.length &&
+        // Игра убирает использованную полоску из банка, поэтому у пропусков разные ответы.
+        new Set(Object.values(c.answer)).size === slots.length &&
+        slots.every((s) => Boolean(c.answer[s.slot]) && c.bank.includes(c.answer[s.slot]))
+      );
+    }
+    case "budget": {
+      const empty = Object.fromEntries(c.items.map((i) => [i.id, 0]));
+      return (
+        c.items.length >= 4 &&
+        c.rules.length >= 3 &&
+        new Set(c.items.map((i) => i.id)).size === c.items.length &&
+        c.items.every((i) => Boolean(i.id && i.de && i.ru) && i.price > 0 && i.max >= 1) &&
+        !budgetCheck(c, empty).ok &&
+        budgetSolutions(c, 2).length >= 2
+      );
+    }
+    case "groupchat": {
+      const msgIds = c.messages.map((m) => m.id);
+      return (
+        Boolean(c.title) &&
+        c.messages.length >= 3 &&
+        new Set(msgIds).size === msgIds.length &&
+        c.messages.every((m) => Boolean(m.id && m.who && m.de && m.ru)) &&
+        c.steps.length >= 2 &&
+        c.steps.every(
+          (s) =>
+            Boolean(s.prompt) &&
+            msgIds.includes(s.replyTo) &&
+            s.options.length >= 2 &&
+            s.options.some((o) => o.id === s.answer),
+        )
+      );
+    }
+    case "comic": {
+      const ids = c.panels.map((p) => p.id);
+      const answers = c.panels.map((p) => p.answer);
+      return (
+        c.panels.length >= 3 &&
+        new Set(ids).size === ids.length &&
+        new Set(answers).size === answers.length &&
+        c.panels.every((p) => Boolean(p.id && p.scene && p.who && p.art && p.answer && p.ru)) &&
+        (c.extra ?? []).every((e) => !answers.includes(e))
+      );
+    }
+    case "retell": {
+      const slots = retellSlots(c);
+      const ids = slots.map((s) => s.id);
+      return (
+        Boolean(c.who && c.quote && c.ru) &&
+        slots.length >= 3 &&
+        new Set(ids).size === ids.length &&
+        slots.every(
+          (s) =>
+            Boolean(s.id && s.from && s.answer) &&
+            s.from !== s.answer &&
+            s.options.length >= 2 &&
+            new Set(s.options).size === s.options.length &&
+            s.options.includes(s.answer),
+        )
+      );
+    }
+    case "radio":
+      return (
+        c.rounds.length >= 2 &&
+        c.rounds.every(
+          (r) =>
+            Boolean(r.who && r.hidden && r.ru) &&
+            (Boolean(r.before) || Boolean(r.after)) &&
+            r.questions.length >= 3 &&
+            new Set(r.questions.map((q) => q.id)).size === r.questions.length &&
+            r.questions.some((q) => q.id === r.answer) &&
+            r.questions.every((q) => q.id === r.answer || Boolean(q.why)),
+        )
+      );
+    case "gullword":
+      return (
+        c.words.length >= 3 &&
+        new Set(c.words).size === c.words.length &&
+        // Только буквы клавиатуры игры: латиница, умлауты и ß.
+        c.words.every((w) => /^[A-Za-zÄÖÜäöüß]{3,9}$/.test(w.replace(/^(der|die|das) /, "")))
+      );
+    case "proofread": {
+      const slots = proofSegments(c);
+      const ids = slots.map((s) => s.id);
+      const wrong = slots.filter((s) => s.draft !== s.answer).length;
+      const right = slots.filter((s) => s.draft === s.answer).length;
+      return (
+        Boolean(c.author) &&
+        c.checklist.length >= 2 &&
+        slots.length >= 4 &&
+        new Set(ids).size === ids.length &&
+        wrong >= 2 &&
+        right >= 1 &&
+        slots.every(
+          (s) =>
+            Boolean(s.id && s.draft && s.answer && s.why) &&
+            s.options.length >= 2 &&
+            new Set(s.options).size === s.options.length &&
+            s.options.includes(s.draft) &&
+            s.options.includes(s.answer),
+        )
+      );
+    }
     case "play":
       return validateScene(c.nodes, known, phrases);
     case "order":

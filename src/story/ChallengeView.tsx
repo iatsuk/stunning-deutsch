@@ -23,22 +23,35 @@ import {
   Write,
   type GameProps,
 } from "./games";
-import { Ads, Algo, Cipher, Compound, Contra, Grid, Lift, Planner, Portrait, Sounds, Spy, Tree, Twenty, Weather } from "./minigames";
 import {
+  Ads,
+  Algo,
   Budget,
+  Cipher,
   Comic,
+  Compound,
+  Contra,
   Contrast,
+  Grid,
   GroupChat,
   GullWord,
+  Lift,
+  Planner,
+  Portrait,
   Proofread,
   Protocol,
   Radio,
   Retell,
   Room,
+  Sounds,
   Spring,
+  Spy,
   Tail,
   Torn,
-} from "./mechanics";
+  Tree,
+  Twenty,
+  Weather,
+} from "./minigames";
 import { SceneView } from "./SceneView";
 import type { Answer, Challenge } from "./types";
 import type { World } from "./world";

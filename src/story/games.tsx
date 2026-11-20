@@ -1412,7 +1412,7 @@ export function Speak({
 }
 
 /** Очередь слов: упущенное слово ждёт, пока пройдут остальные. */
-function useQueue(words: string[], seed: string, done: string[]) {
+export function useQueue(words: string[], seed: string, done: string[]) {
   const queue = useMemo(() => shuffle(words, seed), [words, seed]);
   const [later, setLater] = useState<string[]>([]);
   const rest = queue.filter((word) => !done.includes(word));
