@@ -1,0 +1,62 @@
+{
+  "date": "2026-11-20",
+  "scope": "Craft instructions: Mateo's soup in chapter 10 and Frau Petersen's sign on its stand in chapter 12",
+  "model": "k2-fsa/OmniVoice",
+  "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+  "candidatesPerPhrase": 3,
+  "asr": "openai/whisper-large-v3",
+  "notes": [
+    "Each phrase has three takes; the chosen take has the closest transcript, an end level below -32 dB and no fragment flagged by tails.py. tails.py passes on all 6 imported files, decoded from M4A.",
+    "One take of «Kein Fleisch – Hauke ist krank» ran the dash together («Fleischhauke») and was not chosen."
+  ],
+  "files": [
+    {
+      "file": "f8a8d414d2c6.m4a",
+      "text": "Zuerst den Aufsteller.",
+      "voice": "Sandy",
+      "seed": 20589670,
+      "heard": "Zuerst den Aufsteller.",
+      "endDb": -65.1
+    },
+    {
+      "file": "3bb052eae49e.m4a",
+      "text": "Dann das Schild – aus dem Karton!",
+      "voice": "Sandy",
+      "seed": 20669566,
+      "heard": "Dann das Schild aus dem Karton.",
+      "endDb": -44.2
+    },
+    {
+      "file": "dcb32fbde0fe.m4a",
+      "text": "Zuerst drei Kartoffeln.",
+      "voice": "Reed",
+      "seed": 20498701,
+      "heard": "Zuerst drei Kartoffeln.",
+      "endDb": -59.3
+    },
+    {
+      "file": "3b140f0215e1.m4a",
+      "text": "Dann zwei Tomaten und eine Zwiebel.",
+      "voice": "Reed",
+      "seed": 20448560,
+      "heard": "Dann zwei Tomaten und eine Zwiebel.",
+      "endDb": -53.5
+    },
+    {
+      "file": "e4e35363e8e5.m4a",
+      "text": "Kein Fleisch – Hauke ist krank. Aber ein Ei!",
+      "voice": "Reed",
+      "seed": 21034676,
+      "heard": "Kein Fleisch, Hauke ist krank. Aber ein Ei.",
+      "endDb": -60.0
+    },
+    {
+      "file": "2dce68feeff8.m4a",
+      "text": "Und zwei Seile – gegen den Wind!",
+      "voice": "Sandy",
+      "seed": 20319879,
+      "heard": "und zwei Seile gegen den Wind.",
+      "endDb": -54.4
+    }
+  ]
+}

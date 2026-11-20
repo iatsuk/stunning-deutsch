@@ -676,6 +676,30 @@ const start: SceneNode[] = [
     ],
   },
   hauke("Hier! Hier ist es!", "Здесь! Вот она!"),
+  {
+    t: "game",
+    task: "Верните табличку на место — по словам фрау Петерсен.",
+    hint: "Aus dem Karton — табличку достаём из коробки, саму коробку не берём.",
+    c: {
+      kind: "craft",
+      who: "Frau Petersen",
+      voice: "Sandy",
+      shelf: [
+        { id: "aufsteller", de: "der Aufsteller", ru: "подставка", icon: "🗄️" },
+        { id: "schild", de: "das Schild", ru: "табличка", icon: "🪧" },
+        { id: "seil", de: "das Seil", ru: "канат", icon: "🪢" },
+        { id: "karton", de: "der Karton", ru: "коробка", icon: "📦" },
+        { id: "leiter", de: "die Leiter", ru: "лестница", icon: "🪜" },
+        { id: "pinsel", de: "der Pinsel", ru: "кисть", icon: "🖌️" },
+        { id: "schirm", de: "der Regenschirm", ru: "зонт", icon: "☂️" },
+      ],
+      steps: [
+        { de: "Zuerst den Aufsteller.", ru: "Сначала подставку.", take: { aufsteller: 1 } },
+        { de: "Dann das Schild – aus dem Karton!", ru: "Потом табличку — из коробки!", take: { schild: 1 } },
+        { de: "Und zwei Seile – gegen den Wind!", ru: "И два каната — от ветра!", take: { seil: 2 } },
+      ],
+    },
+  },
   narr("Das Schild steht wieder auf dem {aufsteller}. Dunkelblau, weiße Buchstaben, по краю — {seil}. Дождь кончился. Die Sonne scheint."),
   {
     t: "look",

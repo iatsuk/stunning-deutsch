@@ -109,6 +109,31 @@ const hatschi: SceneNode[] = [
   mateo("Hauke ist krank? Ich koche Suppe! Iss, Hauke!", "Хауке болеет? Я варю суп! Ешь, Хауке!"),
   { t: "gap", rule: ["gesundheit/imperativ-3"], task: "Что говорит Матео?", text: "___ die Suppe, Hauke!", options: ["Iss", "Isst", "Esse"], answer: "Iss", ru: "Ешь суп, Хауке!" },
   {
+    t: "game",
+    task: "Матео варит суп. Подавайте ему продукты по его словам.",
+    hint: "Kein Fleisch — мясо не берём.",
+    c: {
+      kind: "craft",
+      who: "Mateo",
+      voice: "Reed",
+      shelf: [
+        { id: "kartoffel", de: "die Kartoffel", ru: "картофель", icon: "🥔" },
+        { id: "tomate", de: "die Tomate", ru: "помидор", icon: "🍅" },
+        { id: "zwiebel", de: "die Zwiebel", ru: "лук", icon: "🧅" },
+        { id: "ei", de: "das Ei", ru: "яйцо", icon: "🥚" },
+        { id: "fleisch", de: "das Fleisch", ru: "мясо", icon: "🥩" },
+        { id: "fisch", de: "der Fisch", ru: "рыба", icon: "🐟" },
+        { id: "apfel", de: "der Apfel", ru: "яблоко", icon: "🍎" },
+      ],
+      steps: [
+        { de: "Zuerst drei Kartoffeln.", ru: "Сначала три картофелины.", take: { kartoffel: 3 } },
+        { de: "Dann zwei Tomaten und eine Zwiebel.", ru: "Потом два помидора и одну луковицу.", take: { tomate: 2, zwiebel: 1 } },
+        { de: "Kein Fleisch – Hauke ist krank. Aber ein Ei!", ru: "Мяса не надо — Хауке болеет. Но одно яйцо!", take: { ei: 1 } },
+      ],
+    },
+  },
+  narr("Суп готов: drei Kartoffeln, zwei Tomaten, eine Zwiebel und ein Ei. Хауке ест из-под пледа — и жалуется уже тише."),
+  {
     t: "clue",
     title: "Erkältung",
     text: "Hauke: Erkältung, Fieber — er muss im Bett bleiben. Das Medikament von Frauke für Herrn Jensen: leer, die Möwe. Elif: Termin bei Doktor Sommer, Viertel nach zehn. Herr Jensen: um zehn.",

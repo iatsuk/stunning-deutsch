@@ -62,7 +62,7 @@ function heads(set) {
 }
 
 /** Игры, где немецкое слово или фраза звучит само. */
-const HEARD_GAMES = new Set(["sounds", "compound", "tail", "chat", "groupchat", "retell", "radio", "comic", "bingo", "scene", "letters", "gullword", "docks", "gull", "lock", "oral", "weather"]);
+const HEARD_GAMES = new Set(["sounds", "compound", "tail", "chat", "groupchat", "retell", "radio", "comic", "craft", "bingo", "scene", "letters", "gullword", "docks", "gull", "lock", "oral", "weather"]);
 const READING = new Set(["narr", "say", "pic", "clue", "item", "when"]);
 
 function sceneUnits(warmups = true) {

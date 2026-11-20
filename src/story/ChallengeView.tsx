@@ -32,6 +32,7 @@ import {
   Compound,
   Contra,
   Contrast,
+  Craft,
   Grid,
   GroupChat,
   GullWord,
@@ -81,6 +82,7 @@ export const AUTOMATIC: Challenge["kind"][] = [
   "tail",
   "groupchat",
   "radio",
+  "craft",
   "gullword",
 ];
 
@@ -156,6 +158,7 @@ export function ChallengeView({
       {c.kind === "comic" && <Comic c={c} {...game} />}
       {c.kind === "retell" && <Retell c={c} {...game} />}
       {c.kind === "radio" && <Radio c={c} {...game} />}
+      {c.kind === "craft" && <Craft c={c} {...game} />}
       {c.kind === "gullword" && <GullWord c={c} {...game} />}
       {c.kind === "proofread" && <Proofread c={c} {...game} />}
       {c.kind === "order" && (

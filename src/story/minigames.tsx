@@ -5,7 +5,7 @@ import { shuffle } from "../lib/shuffle";
 import { PlayButton } from "../markup";
 import { nounAudio, storyAudio, wordInfo } from "./audio";
 import { Gendered, Note, RouteMap, useQueue, walkAngle, type Game } from "./games";
-import { budgetCheck, compoundOf, decipher, floorLabel, gridKey, MOVES, NARRATOR, placeKey, plannerWho, proofSegments, pronounOf, protocolSlots, radioLine, retellSlots, springRight, tailCuts, treeSlots, twentyState, walk } from "./logic";
+import { budgetCheck, compoundOf, craftKey, craftMiss, decipher, floorLabel, gridKey, MOVES, NARRATOR, placeKey, plannerWho, proofSegments, pronounOf, protocolSlots, radioLine, retellSlots, springRight, tailCuts, treeSlots, twentyState, walk } from "./logic";
 import { answerOf, excludes } from "./twenty";
 import type { Answer, ComicPanel, Move, PortraitPart, SpringRound, TreeNode, TreeSlot } from "./types";
 
@@ -1913,6 +1913,99 @@ export function Radio({ c, value, seed, disabled, change, win, miss }: Game<"rad
           if (next.length === c.rounds.length) win(true);
         }}
       />
+    </>
+  );
+}
+
+/** «Крафт». */
+
+export function Craft({ c, value, disabled, change, win, miss }: Game<"craft">) {
+  const done = asList(value);
+  const step = c.steps[done.length];
+  const [tray, setTray] = useState<Record<string, number>>({});
+  const [open, setOpen] = useState(false);
+  const [note, setNote] = useState("");
+  if (!step || disabled) return <Note tone="good">Всё на месте.</Note>;
+  const item = (id: string) => c.shelf.find((i) => i.id === id)!;
+  // Собранное за прошлые шаги видно над столом: вещь растёт шаг за шагом.
+  const made = c.steps.slice(0, done.length).flatMap((s) => Object.entries(s.take));
+
+  function put(id: string) {
+    setNote("");
+    say(nounAudio(item(id).de));
+    setTray((t) => ({ ...t, [id]: (t[id] ?? 0) + 1 }));
+  }
+
+  function takeBack(id: string) {
+    setNote("");
+    setTray((t) => {
+      const next = { ...t, [id]: t[id] - 1 };
+      if (!next[id]) delete next[id];
+      return next;
+    });
+  }
+
+  function check() {
+    if (craftKey(tray) !== craftKey(step.take)) {
+      miss();
+      return setNote(craftMiss(c, done.length, tray));
+    }
+    const next = [...done, craftKey(step.take)];
+    setTray({});
+    setOpen(false);
+    setNote("");
+    change(next);
+    if (next.length === c.steps.length) win(true);
+  }
+
+  return (
+    <>
+      <p className="moin-count">
+        Шаг {done.length + 1} из {c.steps.length}
+      </p>
+      <div className="moin-source">
+        <div className="kicker">{c.who}</div>
+        <p lang="de">
+          {step.de} <PlayButton src={storyAudio(step.de, c.voice)} />
+        </p>
+        {open && <small>{step.ru}</small>}
+        <div>
+          <button type="button" className="link-button" onClick={() => setOpen(!open)}>
+            {open ? "Скрыть перевод" : "Перевод"}
+          </button>
+        </div>
+      </div>
+      {made.length > 0 && (
+        <p className="moin-craft-made" aria-label="Уже собрано">
+          {made.map(([id, n]) => (
+            <span key={id} title={item(id).de}>
+              {item(id).icon.repeat(n)}
+            </span>
+          ))}
+        </p>
+      )}
+      <div className="moin-tiles" role="group" aria-label="Полка">
+        {c.shelf.map((i) => (
+          <button type="button" key={i.id} lang="de" onClick={() => put(i.id)}>
+            <span aria-hidden="true">{i.icon}</span> {i.de}
+          </button>
+        ))}
+      </div>
+      <div className="moin-sentence" aria-live="polite" aria-label="Стол">
+        {Object.keys(tray).length ? (
+          Object.entries(tray).map(([id, n]) => (
+            <button type="button" key={id} lang="de" aria-label={`Убрать: ${item(id).de}`} onClick={() => takeBack(id)}>
+              <span aria-hidden="true">{item(id).icon}</span> {item(id).de} × {n}
+            </button>
+          ))
+        ) : (
+          <span>Стол пуст. Нажмите на вещь на полке.</span>
+        )}
+      </div>
+      <button type="button" className="primary" disabled={!Object.keys(tray).length} onClick={check}>
+        Готово
+      </button>
+      {note && <Note tone="bad">{note}</Note>}
     </>
   );
 }

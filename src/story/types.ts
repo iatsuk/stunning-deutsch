@@ -311,7 +311,9 @@ export type Challenge =
   /** «Чайка крадётся к булочке»: угадать слово по буквам за 6 промахов, без наказания. */
   | { kind: "gullword"; words: string[] }
   /** «Редактор черновика»: найти и исправить ошибки в готовом письме героя по чеклисту. */
-  | { kind: "proofread"; author: string; checklist: string[]; segments: ProofSegment[] };
+  | { kind: "proofread"; author: string; checklist: string[]; segments: ProofSegment[] }
+  /** «Крафт»: по шагам немецкой инструкции героя взять с полки нужные вещи — какие и сколько. */
+  | { kind: "craft"; who: string; voice: string; shelf: CraftItem[]; steps: CraftStep[] };
 
 export type SpringRound = {
   ru: string;
@@ -350,6 +352,10 @@ export type RadioRound = {
   sound?: string;
 };
 export type ProofSlot = { id: string; draft: string; options: string[]; answer: string; why: string };
+/** Вещь на полке крафта; de — слово урока или выражение истории, оно звучит при нажатии. */
+export type CraftItem = { id: string; de: string; ru: string; icon: string };
+/** Шаг крафта: что сказано и что положить на стол — id вещи и сколько штук. */
+export type CraftStep = { de: string; ru: string; take: Record<string, number> };
 export type ProofSegment = string | ProofSlot;
 /** Клетка семейного дерева; partner — супруг рядом, icon — подсказка на пустой клетке. */
 export type TreeSlot = { id: string; icon?: string; given?: string };

@@ -2,7 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { phrases } from "../src/story/data.ts";
-import { compoundOf, decipher, gridSolutions, initialAnswer, isCorrect, mistake, plannerFree, radioLine, solution, storyLines, validateChallenge, validateStory } from "../src/story/logic.ts";
+import { compoundOf, craftKey, craftMiss, decipher, gridSolutions, initialAnswer, isCorrect, mistake, plannerFree, radioLine, solution, storyLines, validateChallenge, validateStory } from "../src/story/logic.ts";
 import { anweisung, answerSlots, arrange, flatNodes, flow, keyOf, lookOrder, nodeAt, outcomeOf, requiredKeys, sceneKeys, shownWords, spot, typedRight, worldAfter } from "../src/story/scene.ts";
 import { RACE_STAKES } from "../src/story/build.ts";
 import { MNEMONICS } from "../src/story/mnemonics.ts";
@@ -645,7 +645,7 @@ test("a phrase after a German article or preposition reads without its own artic
 test("word-order, room, torn-note and the other puzzle games validate, check answers, explain mistakes and appear in chapters", async () => {
   const kinds = [
     "spring", "room", "torn", "contrast", "tail", "protocol", "budget",
-    "groupchat", "comic", "retell", "radio", "gullword", "proofread",
+    "groupchat", "comic", "retell", "radio", "gullword", "proofread", "craft",
   ];
   const valid = validateChallenge;
   const spring = {
@@ -835,7 +835,24 @@ test("word-order, room, torn-note and the other puzzle games validate, check ans
     ],
   };
 
-  const samples = [spring, room, torn, contrast, tail, protocol, budget, groupchat, comic, retell, radio, gullword, proofread];
+  const craft = {
+    kind: "craft",
+    who: "Mateo",
+    voice: "Reed",
+    shelf: [
+      { id: "kartoffel", de: "die Kartoffel", ru: "картофель", icon: "🥔" },
+      { id: "tomate", de: "die Tomate", ru: "помидор", icon: "🍅" },
+      { id: "ei", de: "das Ei", ru: "яйцо", icon: "🥚" },
+      { id: "fleisch", de: "das Fleisch", ru: "мясо", icon: "🥩" },
+      { id: "kaese", de: "der Käse", ru: "сыр", icon: "🧀" },
+    ],
+    steps: [
+      { de: "Drei Kartoffeln.", ru: "Три картофелины.", take: { kartoffel: 3 } },
+      { de: "Dann zwei Tomaten und ein Ei.", ru: "Потом два помидора и яйцо.", take: { tomate: 2, ei: 1 } },
+    ],
+  };
+
+  const samples = [spring, room, torn, contrast, tail, protocol, budget, groupchat, comic, retell, radio, gullword, proofread, craft];
   for (const c of samples) {
     assert.ok(valid(c), `${c.kind}: должно проходить проверку`);
     assert.ok(!isCorrect(c, initialAnswer(c)), `${c.kind}: стартовый ответ не должен засчитываться`);
@@ -849,6 +866,12 @@ test("word-order, room, torn-note and the other puzzle games validate, check ans
   assert.match(mistake(comic, { p1: "Hier ist Kaffee.", p2: "Hallo!", p3: "Schau mal!" }, ""), /кадр 1/);
   assert.match(mistake(retell, { a: "Ich", b: "kommt", c: "Sein" }, ""), /слово «Ich»/);
   assert.match(mistake(proofread, {}, ""), /denn/);
+
+  // Крафт: стол сравнивается без нулей и в любом порядке, причина ошибки называет вещь.
+  assert.equal(craftKey({ tomate: 2, ei: 1 }), craftKey({ ei: 1, kaese: 0, tomate: 2 }));
+  assert.match(craftMiss(craft, 1, { tomate: 2, ei: 1, kaese: 1 }), /Этого в шаге нет: der Käse/);
+  assert.match(craftMiss(craft, 1, { tomate: 1, ei: 1 }), /Сколько нужно: die Tomate/);
+  assert.match(craftMiss(craft, 1, { tomate: 2 }), /не хватает/);
 
   // Альтернативные верные решения
   assert.ok(isCorrect(spring, ["Am Morgen gehe zum Kai ich .", "Wir möchten morgen in die Stadt fahren ."]));
@@ -864,6 +887,8 @@ test("word-order, room, torn-note and the other puzzle games validate, check ans
   assert.ok(heard.some((l) => l.voice === "Reed" && l.text === retell.quote));
 
   // Невалидные варианты отсекаются validateChallenge
+  assert.ok(!valid({ ...craft, steps: [craft.steps[0], { ...craft.steps[1], take: { brot: 1 } }] }));
+  assert.ok(!valid({ ...craft, shelf: craft.shelf.slice(0, 4) }), "без двух лишних вещей на полке игрок только считает");
   assert.ok(!valid({ ...spring, rounds: [{ ...spring.rounds[0], start: ["wrong"] }, spring.rounds[1]] }));
   assert.ok(!valid({ ...tail, rounds: [{ word: "Krankenhaus", parts: ["Kranken", "Haus"], ru: "больница" }, tail.rounds[1]] }));
   assert.ok(!valid({ ...budget, rules: [{ kind: "maxPrice", cents: 200, label: "Слишком мало" }, { kind: "minTag", tag: "drink", count: 2, label: "Два" }, { kind: "forbidTag", tag: "sweet", label: "Без" }] }));

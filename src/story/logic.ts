@@ -85,6 +85,8 @@ function challengeLines(c: Challenge): { text: string; voice: string }[] {
       return [{ text: c.quote, voice: c.voice }];
     case "radio":
       return c.rounds.map((r) => ({ text: radioLine(r), voice: r.voice }));
+    case "craft":
+      return c.steps.map((s) => ({ text: s.de, voice: c.voice }));
     // Реплику в облачке читает рассказчица: голос героя подсказал бы, в какой кадр она идёт.
     case "comic":
       return [...c.panels.map((p) => p.answer), ...(c.extra ?? [])].map((text) => ({ text, voice: NARRATOR }));
@@ -121,6 +123,7 @@ export function challengeWords(c: Challenge): string[] {
   if (c.kind === "tail") return c.rounds.map((r) => r.word);
   if (c.kind === "gullword") return c.words;
   if (c.kind === "radio") return c.rounds.flatMap((r) => (r.sound ? [r.sound] : []));
+  if (c.kind === "craft") return c.shelf.map((i) => i.de);
   return [];
 }
 /** Сборка проверяет, что каждое слово игры есть в словаре уроков. */
@@ -412,6 +415,25 @@ export const retellSlots = (c: Extract<Challenge, { kind: "retell" }>) =>
 export const radioLine = (r: RadioRound) =>
   [r.before, r.hidden, r.after].filter(Boolean).join(" ").replace(/ (?=[!?.,])/g, "");
 
+/** Стол крафта одной строкой: вещи по id, без нулей, так что порядок выбора не важен. */
+export const craftKey = (tray: Record<string, number>) =>
+  Object.entries(tray)
+    .filter(([, n]) => n > 0)
+    .sort(([a], [b]) => (a < b ? -1 : 1))
+    .map(([id, n]) => `${id}:${n}`)
+    .join(",");
+
+/** Почему стол не подходит к шагу: лишняя вещь, не то число или чего-то не хватает. */
+export function craftMiss(c: Extract<Challenge, { kind: "craft" }>, step: number, tray: Record<string, number>): string {
+  const take = c.steps[step].take;
+  const de = (id: string) => c.shelf.find((i) => i.id === id)?.de;
+  const extra = Object.keys(tray).find((id) => tray[id] > 0 && !take[id]);
+  if (extra) return `Этого в шаге нет: ${de(extra)}.`;
+  const off = Object.keys(take).find((id) => tray[id] && tray[id] !== take[id]);
+  if (off) return `Сколько нужно: ${de(off)}? Перечитайте шаг.`;
+  return "Чего-то не хватает. Перечитайте шаг.";
+}
+
 export const proofSegments = (c: Extract<Challenge, { kind: "proofread" }>) =>
   c.segments.filter((s): s is ProofSlot => typeof s !== "string");
 
@@ -551,6 +573,8 @@ export function isCorrect(
     }
     case "radio":
       return sameList(value, challenge.rounds.map((r) => r.answer));
+    case "craft":
+      return sameList(value, challenge.steps.map((s) => craftKey(s.take)));
     case "gullword":
       return sameSet(value, challenge.words);
     case "proofread": {
@@ -693,6 +717,8 @@ export function solution(challenge: Challenge): Answer {
       return Object.fromEntries(retellSlots(challenge).map((s) => [s.id, s.answer]));
     case "radio":
       return challenge.rounds.map((r) => r.answer);
+    case "craft":
+      return challenge.steps.map((s) => craftKey(s.take));
     case "gullword":
       return challenge.words;
     case "proofread":
@@ -766,6 +792,7 @@ export function initialAnswer(challenge: Challenge): Answer {
     case "tail":
     case "groupchat":
     case "radio":
+    case "craft":
     case "gullword":
       return [];
     case "budget":
@@ -881,6 +908,7 @@ export function mistake(c: Challenge, value: Answer, hint: string): string {
     case "tail":
     case "groupchat":
     case "radio":
+    case "craft":
     case "gullword":
       return hint;
     case "clock":
@@ -1126,6 +1154,25 @@ export function validateChallenge(
             r.questions.every((q) => q.id === r.answer || Boolean(q.why)),
         )
       );
+    case "craft": {
+      const ids = c.shelf.map((i) => i.id);
+      const taken = new Set(c.steps.flatMap((s) => Object.keys(s.take)));
+      return (
+        Boolean(c.who && c.voice) &&
+        ids.length >= 5 &&
+        new Set(ids).size === ids.length &&
+        c.shelf.every((i) => Boolean(i.id && i.de && i.ru && i.icon)) &&
+        c.steps.length >= 2 &&
+        c.steps.every(
+          (s) =>
+            Boolean(s.de && s.ru) &&
+            Object.keys(s.take).length > 0 &&
+            Object.entries(s.take).every(([id, n]) => ids.includes(id) && Number.isInteger(n) && n >= 1 && n <= 9),
+        ) &&
+        // Хотя бы две вещи на полке лишние: игрок выбирает, а не только считает.
+        ids.filter((id) => !taken.has(id)).length >= 2
+      );
+    }
     case "gullword":
       return (
         c.words.length >= 3 &&

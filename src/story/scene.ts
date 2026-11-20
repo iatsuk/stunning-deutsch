@@ -242,6 +242,7 @@ const BY_GAME: Record<string, string> = {
   radio: "Fragen Sie nach: Welches Fragewort passt?",
   gullword: "Raten Sie das Wort Buchstabe für Buchstabe.",
   proofread: "Lesen Sie den Entwurf und korrigieren Sie die Fehler.",
+  craft: "Lesen Sie und nehmen Sie die richtigen Sachen.",
 };
 /** Немецкая инструкция задания или ничего: в главе 1 игрок ещё не читает по-немецки. */
 export function anweisung(node: SceneNode, chapter: number): string | undefined {
