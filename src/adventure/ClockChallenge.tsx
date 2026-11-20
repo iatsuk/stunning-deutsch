@@ -13,7 +13,7 @@ export function ClockChallenge({ challenge, state, save, onNext, last }: Omit<Ch
   const key = `challenge:${challenge.id}`;
   const [wrong, setWrong] = useState(false);
   let clock = uhrzeit(challenge.initial);
-  try { clock = uhrzeit(state.answers[`${key}:time`] ?? challenge.initial); } catch { /* Ignore malformed old saves. */ }
+  try { clock = uhrzeit(state.answers[`${key}:time`] ?? challenge.initial); } catch { /* Испорченное старое сохранение: остаётся начальное время. */ }
   const done = state.answers[`${key}:done`] === "yes" && challengeSolved(challenge, [clock.time]);
   const shift = (delta: number) => {
     const total = ((clock.hours * 60 + clock.minutes + delta) % 1440 + 1440) % 1440;

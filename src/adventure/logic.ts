@@ -1,7 +1,10 @@
 import type { AdventureChallenge } from "../content";
 
 export function challengeSolved(challenge: AdventureChallenge, selected: string[]): boolean {
-  if (challenge.kind === "note") return selected.length === challenge.fields.length && challenge.fields.every((f,i)=>f.answers.some(a=>normalizeAnswer(a)===normalizeAnswer(selected[i] ?? "")));
+  if (challenge.kind === "note") {
+    return selected.length === challenge.fields.length
+      && challenge.fields.every((field, index) => field.answers.some((answer) => normalizeAnswer(answer) === normalizeAnswer(selected[index] ?? "")));
+  }
   if (challenge.kind === "negotiation") return selected.length === 1 && negotiationNode(challenge, selected[0]).terminal === true;
   if (challenge.kind === "clock") return selected.length === 1 && selected[0] === challenge.answer;
   if (challenge.kind === "quantity") {
@@ -14,10 +17,11 @@ export function challengeSolved(challenge: AdventureChallenge, selected: string[
     return selected.length === challenge.tokens.length && new Set(selected).size === selected.length
       && selected.every((id, index) => /^\d+$/.test(id) && challenge.tokens[Number(id)] === challenge.tokens[index]);
   }
-  return [challenge.answer,...(challenge.alternatives??[])].some(answer=>selected.length === answer.length && new Set(selected).size === selected.length && selected.every(id=>answer.includes(id)));
+  return [challenge.answer, ...(challenge.alternatives ?? [])].some((answer) => selected.length === answer.length
+    && new Set(selected).size === selected.length && selected.every((id) => answer.includes(id)));
 }
 
-/** Deterministic ordering survives reloads; a replay changes the option layout. */
+/** Порядок зависит только от seed: перезагрузка его сохраняет, а повтор эпизода меняет раскладку вариантов. */
 export function shuffled<T>(items: T[], seed: number): T[] {
   const result = [...items];
   let state = seed >>> 0;
@@ -33,10 +37,25 @@ export function formatPhone(digits: string): string {
   return [digits.slice(0, 4), digits.slice(4, 6), digits.slice(6, 8), digits.slice(8)].filter(Boolean).join(" ");
 }
 
-export const normalizeAnswer = (s: string) => s.normalize("NFC").trim().toLocaleLowerCase("de").replace(/\s+/g," ");
-export function negotiationNode(c: Extract<AdventureChallenge,{kind:"negotiation"}>, raw: string) {
- let node=c.nodes.find(n=>n.id===c.start)!;
- for(const id of raw.split(",").filter(Boolean)) {const choice=node.choices[Number(id)]; if(!/^\d+$/.test(id) || !choice || node.terminal) return c.nodes.find(n=>n.id===c.start)!;node=c.nodes.find(n=>n.id===choice.next)!;}
- return node;
+/** Введённый ответ сравнивается без регистра и лишних пробелов; NFC уравнивает умлаут из буквы с точками и готовую букву. */
+export function normalizeAnswer(text: string): string {
+  return text.normalize("NFC").trim().toLocaleLowerCase("de").replace(/\s+/g, " ");
 }
-export const challengeVariant = (c: AdventureChallenge, seed: number): AdventureChallenge => c.variants?.length ? [c,...c.variants][(Math.max(1,seed)-1) % (c.variants.length+1)]! : c;
+
+/** Узел разговора после сохранённого пути выборов. Испорченный путь начинает разговор заново, чтобы старое сохранение открылось. */
+export function negotiationNode(challenge: Extract<AdventureChallenge, { kind: "negotiation" }>, path: string) {
+  const start = challenge.nodes.find((node) => node.id === challenge.start)!;
+  let node = start;
+  for (const id of path.split(",").filter(Boolean)) {
+    const choice = node.choices[Number(id)];
+    if (!/^\d+$/.test(id) || !choice || node.terminal) return start;
+    node = challenge.nodes.find((next) => next.id === choice.next)!;
+  }
+  return node;
+}
+
+/** Повтор эпизода увеличивает seed, поэтому задание по кругу сменяет основной вариант и запасные. */
+export function challengeVariant(challenge: AdventureChallenge, seed: number): AdventureChallenge {
+  if (!challenge.variants?.length) return challenge;
+  return [challenge, ...challenge.variants][(Math.max(1, seed) - 1) % (challenge.variants.length + 1)];
+}
