@@ -55,7 +55,7 @@ const hatschi: SceneNode[] = [
     hint: HINT_PICTURE,
     c: scene([["der Kopf", "🤕"], ["das Ohr", "👂"], ["das Auge", "👁️"], ["die Nase", "👃"], ["der Zahn", "🦷"], ["der Arm", "💪"], ["das Bein", "🦵"], ["der Fuß", "🦶"]]),
   },
-  narr("Auf dem Tisch — eine Packung, leer. Das war ein Medikament von Frauke für Herrn Jensen. Die Möwe ist sehr gesund."),
+  narr("Auf dem Tisch — eine Packung, leer. В ней было Medikament von Frauke für Herrn Jensen. Die Möwe ist sehr gesund."),
   elif("Die Möwe hat das Medikament gegessen? Kein Problem. Möwen werden nicht krank!", "Чайка съела лекарство? Не страшно. Чайки не болеют!"),
   {
     t: "hear",
