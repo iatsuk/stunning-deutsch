@@ -37,7 +37,7 @@
 
 | Если меняете | Прочитайте |
 |---|---|
-| Уроки `content/a1/`, `content/a2/`, `content/b1/`, `content/levels.yaml`; страницы `src/pages/Topic.tsx`, `src/pages/Level.tsx`; игры тем `src/adventure/`, сцену `src/stage/`, тренажёр `src/trainer/`, дело `src/case/`; документы `CONTENT.md`, `METHOD.md`, `WORLD.md`, `GAMEPLAY.md`, `A2-PLAN.md`, `A2-PROGRESS.md`, `B1-PLAN.md`, `B1-PROGRESS.md` | `content/AGENTS.md` |
+| Уроки `content/a1/`, `content/a2/`, `content/b1/`, `content/levels.yaml`; страницы `src/pages/Topic.tsx`, `src/pages/Level.tsx`; игры тем `src/adventure/`, сцену `src/stage/`, тренажёр `src/trainer/`, дело `src/case/`; документы `CONTENT.md`, `METHOD.md`, `WORLD.md`, `GAMEPLAY.md`, `A2-PLAN.md`, `A2-PLOT.md`, `A2-PROGRESS.md`, `B1-PLAN.md`, `B1-PROGRESS.md` | `content/AGENTS.md` |
 | Входные работы, проверки, пробники: `content/assessments/`, `src/assessment/`, `src/pages/Assessment.tsx` | `content/AGENTS.md` и `content/assessments/AGENTS.md` |
 | Озвучку: `scripts/tts/`, `public/audio/`, экспорт манифеста в `scripts/build-content.mjs` | `scripts/tts/AGENTS.md` |
 | Игру «Дело о пропавшем Moin»: `src/story/` целиком — курс A1 в сценах `src/story/scenes/` и его движок (`src/story/scene.ts`, `src/story/SceneView.tsx`); `scripts/story.test.mjs`, `scripts/scene.test.mjs`, `scripts/memory.test.mjs`, `scripts/story-oracle.mjs`; картинки `art/refs/`, `public/story-img/`; документы `A1-STORY.md`, `A1-PLOT.md`, `A1-STORYCRAFT.md`, `A1-ART.md`, `IDEAS.md` | `src/story/AGENTS.md` |
