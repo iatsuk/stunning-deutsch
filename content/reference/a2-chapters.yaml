@@ -1,0 +1,960 @@
+# Раскладка сезона A2 по главам (A2-PLOT.md): тема, ведущая линия, грамматика и новые слова главы.
+# Слова — новые слова эталона A2 (start-deutsch-2.yaml: слова и группы, которых нет в эталоне A1) и слова A1
+# со статусом «закрепит A2» (A1-INDEX.md). Каждое слово и каждый пункт грамматики A2 стоят ровно в одной главе:
+# это проверяет scripts/a2-chapters.test.mjs. Тематические слова стоят в главе своей темы, общие (связки,
+# наречия, частые глаголы) выравнивают главы по объёму; при написании главы их можно переставлять.
+
+chapters:
+  - chapter: 1
+    theme: "человек, распорядок дня, знакомые и соседи"
+    lead: B
+    grammar: [perfekt-alle]
+    words:
+      - am Abend
+      - am Dienstag
+      - am Vormittag
+      - am Wochenende
+      - ausländisch
+      - sich beeilen
+      - die Bekannte
+      - blond
+      - das Datum
+      - denken
+      - der Deutsche
+      - die Deutsche
+      - dick
+      - donnerstags
+      - drittens
+      - dumm
+      - dünn
+      - echt
+      - egal
+      - ein Meter fünfzig
+      - erlaubt sein
+      - der Europäer
+      - die Europäerin
+      - europäisch
+      - fast
+      - fünf nach zwei
+      - das Gesicht
+      - gestern Abend
+      - herein
+      - hin
+      - hässlich
+      - in der Nacht
+      - die Insel
+      - jeder
+      - der Kalender
+      - komisch
+      - kontrollieren
+      - Luxemburg
+      - der Luxemburger
+      - die Luxemburgerin
+      - luxemburgisch
+      - merken
+      - männlich
+      - der Nachbar
+      - die Nachbarin
+      - die Nähe
+      - organisieren
+      - die Person
+      - das Pferd
+      - der Rentner
+      - die Rentnerin
+      - der Rest
+      - schrecklich
+      - die Schweiz
+      - der Schweizer
+      - die Schweizerin
+      - schweizerisch
+      - streng
+      - sympathisch
+      - der Traum
+      - träumen
+      - tschüs
+      - täglich
+      - usw.
+      - vierzehn Uhr fünf
+      - der Vorschlag
+      - sich vorstellen
+      - wach
+      - wecken
+      - weiblich
+      - z. B.
+      - zurückgehen
+      - zweihundert
+      - Österreich
+      - der Österreicher
+      - die Österreicherin
+      - österreichisch
+  - chapter: 2
+    theme: "досуг: хобби, спорт, клубы"
+    lead: A
+    grammar: [weil, deshalb]
+    words:
+      - aktiv
+      - am liebsten
+      - auf keinen Fall
+      - ausgehen
+      - die Ausstellung
+      - der Ball
+      - die Band
+      - der Basketball
+      - basteln
+      - der Club
+      - deshalb
+      - die Disko
+      - dorthin
+      - der Fan
+      - das Festival
+      - der Fotoapparat
+      - fotografieren
+      - die Gitarre
+      - das Instrument
+      - interessant
+      - das Interesse
+      - sich interessieren
+      - joggen
+      - die Kamera
+      - das Klavier
+      - der Klub
+      - das Konzert
+      - die Kultur
+      - kulturell
+      - die Kunst
+      - der Künstler
+      - die Künstlerin
+      - das Lied
+      - die Lust
+      - malen
+      - die Mannschaft
+      - mitspielen
+      - das Museum
+      - die Musik
+      - der Musiker
+      - die Musikerin
+      - das Quiz
+      - reiten
+      - das Rätsel
+      - sammeln
+      - der Schauspieler
+      - die Schauspielerin
+      - singen
+      - der Ski
+      - spazieren gehen
+      - der Spaziergang
+      - der Spaß
+      - das Spiel
+      - sportlich
+      - der Sportplatz
+      - der Star
+      - der Sänger
+      - die Sängerin
+      - das Tennis
+      - das Theater
+      - trainieren
+      - das Training
+      - sich treffen
+      - unternehmen
+      - die Veranstaltung
+      - verschieden
+      - der Volleyball
+      - weil
+      - der Wettbewerb
+      - wieder
+      - der Witz
+      - witzig
+      - zeichnen
+      - der Zirkus
+      - der Zoo
+  - chapter: 3
+    theme: "отношения, праздники, подарки, приглашения"
+    lead: C
+    grammar: [dativ-nomen]
+    words:
+      - die Ahnung
+      - am Mittag
+      - anders
+      - arm
+      - außerdem
+      - sich bedanken
+      - benutzen
+      - besonders
+      - der Besuch
+      - besuchen
+      - cm
+      - der Cousin
+      - die Cousine
+      - dabei sein
+      - doch
+      - dreizehn Uhr
+      - der Ehepartner
+      - einverstanden sein
+      - endlich
+      - der Enkel
+      - die Enkelin
+      - sich entschuldigen
+      - fantastisch
+      - die Feier
+      - das Fest
+      - freuen
+      - sich freuen
+      - die Freundin
+      - geschieden
+      - getrennt
+      - der Karneval
+      - der Kontakt
+      - leer
+      - leidtun
+      - die Lüge
+      - lügen
+      - die Mama
+      - das Mittel
+      - montags
+      - nett
+      - Neujahr
+      - nächste
+      - nützlich
+      - offen
+      - der Onkel
+      - Ostern
+      - das Paar
+      - der Papa
+      - recht haben
+      - die Reinigung
+      - romantisch
+      - schaffen
+      - schenken
+      - die Seite
+      - sieben Uhr drei
+      - Silvester
+      - sonntags
+      - sich streiten
+      - die Tante
+      - sich unterhalten
+      - verabredet sein
+      - sich verlieben
+      - die Verwandte
+      - vorgestern
+      - wechseln
+      - weggehen
+      - wegnehmen
+      - weich
+      - Weihnachten
+      - weinen
+      - der Wunsch
+      - wünschen
+      - zuerst
+      - zuhören
+      - zwanzig Uhr vierzig
+      - der zwanzigste zweite (Februar) zweitausendzwölf
+  - chapter: 4
+    theme: "жильё: комнаты, мебель, переезд, техника, аренда"
+    lead: C
+    grammar: [wechselpraep, stellen-stehen, gegenueber]
+    words:
+      - abschließen
+      - am Donnerstag
+      - am Samstag
+      - der Apparat
+      - auf jeden Fall
+      - aufmachen
+      - aufräumen
+      - bauen
+      - die Baustelle
+      - ca.
+      - drei Uhr fünfzehn
+      - drüben
+      - dunkel
+      - eigen-
+      - einziehen
+      - das Erdgeschoss
+      - erst
+      - das Fenster
+      - die Garage
+      - gegenüber
+      - genau
+      - das Gerät
+      - der Haushalt
+      - die Heizung
+      - hinter
+      - hoffen
+      - hängen
+      - der Keller
+      - die Lampe
+      - langweilig
+      - lassen
+      - die Meinung
+      - meistens
+      - die Milliarde
+      - mindestens
+      - morgens
+      - neben
+      - nebenan
+      - nirgends
+      - das Poster
+      - pro
+      - putzen
+      - reden
+      - renovieren
+      - rufen
+      - die Ruhe
+      - sauber
+      - schade
+      - das Schlafzimmer
+      - das Schloss
+      - schmutzig
+      - sich setzen
+      - das Stockwerk
+      - der Stuhl
+      - stören
+      - teilen
+      - die Tür
+      - sich umziehen
+      - der Umzug
+      - vereinbaren
+      - verlieren
+      - die Vermieterin
+      - viermal
+      - vorbei
+      - vorwärts
+      - das WC
+      - weg
+      - wegbringen
+      - wegen
+      - wegmachen
+      - das Wohnzimmer
+      - die Wäsche
+      - ziehen
+      - zumachen
+      - zweimal
+  - chapter: 5
+    theme: "покупки, одежда, цены, жалоба на товар"
+    lead: A
+    grammar: [adjektiv-nom-akk, so-wie]
+    words:
+      - als
+      - der Anzug
+      - der Artikel
+      - ausgeben
+      - bequem
+      - sich beschweren
+      - die Bluse
+      - die Brille
+      - bunt
+      - der Bäcker
+      - die Bäckerin
+      - damals
+      - deutlich
+      - das Einkaufszentrum
+      - einpacken
+      - eng
+      - die Ermäßigung
+      - faul
+      - der Flohmarkt
+      - der Franke
+      - g
+      - die Geldbörse
+      - das Hemd
+      - die Hose
+      - die Jeans
+      - die Kauffrau
+      - das Kaufhaus
+      - der Kaufmann
+      - die Kette
+      - kg
+      - das Kilogramm
+      - das Kleid
+      - kostenlos
+      - die Kundin
+      - l
+      - liefern
+      - lila
+      - m
+      - mal
+      - der Mantel
+      - der Markt
+      - die Mode
+      - das Model
+      - modern
+      - die Mütze
+      - notieren
+      - orange
+      - passen
+      - plötzlich
+      - preiswert
+      - das Produkt
+      - der Pullover
+      - die Qualität
+      - der Rappen
+      - der Ring
+      - der Rock
+      - rosa
+      - samstags
+      - der Schirm
+      - spannend
+      - sparen
+      - der Stiefel
+      - der Supermarkt
+      - das T-Shirt
+      - das Taschengeld
+      - tauschen
+      - tragen
+      - der Unterschied
+      - vergleichen
+      - die Verkäuferin
+      - vorher
+      - weitermachen
+      - welcher
+      - zurückgeben
+  - chapter: 6
+    theme: "еда, блюда, кафе и ресторан, готовка"
+    lead: A
+    grammar: [konj2-koennte, adjektiv-dat]
+    words:
+      - am Nachmittag
+      - ansehen
+      - aufpassen
+      - außer
+      - backen
+      - die Bohne
+      - braten
+      - die Cafeteria
+      - d.h.
+      - dabei
+      - dringend
+      - drinnen
+      - einig-
+      - einzel-
+      - das Eis
+      - erreichen
+      - fett
+      - freitags
+      - fremd
+      - freundlich
+      - frisch
+      - die Gabel
+      - das Gericht
+      - das Geschirr
+      - der Hamburger
+      - her
+      - hunderteins
+      - die Idee
+      - der Kellner
+      - die Kellnerin
+      - der Koch
+      - der Käse
+      - die Köchin
+      - leihen
+      - der Löffel
+      - das Mal
+      - manchmal
+      - das Messer
+      - das Mineralwasser
+      - das Mittagessen
+      - mittwochs
+      - der Monat
+      - nachmittags
+      - nachts
+      - nennen
+      - die Nudel
+      - die Orange
+      - die Pizza
+      - die Portion
+      - privat
+      - probieren
+      - reich
+      - das Rezept
+      - sauer
+      - scharf
+      - die Schokolade
+      - selbst
+      - die Suppe
+      - süß
+      - die Süßigkeiten
+      - die Tasse
+      - der Teller
+      - der Topf
+      - die Torte
+      - um Mitternacht
+      - verschieben
+      - vorn
+      - vorne
+      - die Wurst
+      - die Zitrone
+      - der Zucker
+      - zuletzt
+      - zweitausendeins
+      - überall
+  - chapter: 7
+    theme: "поездки и транспорт, билеты, жильё в дороге, багаж"
+    lead: A
+    grammar: [seit, waehrend, bis-vom-an, praeteritum-kam-sagte]
+    words:
+      - abends
+      - der Abflug
+      - die Abreise
+      - die Ampel
+      - ankommen
+      - die Anreise
+      - der Anschluss
+      - auspacken
+      - blöd
+      - die Brücke
+      - buchen
+      - das Doppelzimmer
+      - das Einzelzimmer
+      - die Fahrerin
+      - der Fahrplan
+      - fallen
+      - die Ferien
+      - der Flug
+      - der Flughafen
+      - der Führerschein
+      - das Gepäck
+      - gültig sein
+      - die Halbpension
+      - hart
+      - heiß
+      - das Hotel
+      - der ICE
+      - intelligent
+      - die Jugendherberge
+      - die Klassenfahrt
+      - km
+      - der Koffer
+      - die Kreuzung
+      - der Motor
+      - der Motorroller
+      - noch nicht
+      - packen
+      - parken
+      - passieren
+      - planen
+      - das Rad
+      - der Reifen
+      - die Reise
+      - das Reisebüro
+      - der Reiseführer
+      - reisen
+      - reservieren
+      - die Rezeption
+      - der Rucksack
+      - rund
+      - der Rundgang
+      - das Schiff
+      - der Stadtplan
+      - der Strand
+      - die Tour
+      - der Tourist
+      - die Touristin
+      - umsteigen
+      - die Unterkunft
+      - unterwegs sein
+      - verbieten
+      - der Verkehr
+      - das Verkehrsmittel
+      - verpassen
+      - verreisen
+      - die Verspätung
+      - der Wagen
+      - der Weg
+      - wegfahren
+      - das Zelt
+      - das Ziel
+      - zurückfahren
+      - ändern
+      - übernachten
+  - chapter: 8
+    theme: "тело и здоровье, врач, несчастный случай, страховка"
+    lead: B
+    grammar: [reflexiv-verben, praeteritum-modal]
+    words:
+      - "%"
+      - am Freitag
+      - am Mittwoch
+      - die Angst
+      - die Apotheke
+      - aufregend
+      - sich ausruhen
+      - bedeuten
+      - berühmt
+      - beschreiben
+      - die Creme
+      - dagegen sein
+      - das Ding
+      - die Doktorin
+      - dorther
+      - sich duschen
+      - einhundert
+      - eintausend
+      - einundzwanzig
+      - erkältet sein
+      - fit sein
+      - früh
+      - furchtbar
+      - sich fühlen
+      - fünfzehn Uhr dreißig
+      - gesund
+      - die Gesundheit
+      - die Grippe
+      - halb vier
+      - der Hals
+      - das Handtuch
+      - heraus
+      - husten
+      - die Kosmetik
+      - das Krankenhaus
+      - die Krankenkasse
+      - der Krankenpfleger
+      - die Krankenschwester
+      - die Krankheit
+      - der Körper
+      - der Magen
+      - das Medikament
+      - das Ohr
+      - das Parfüm
+      - der Rücken
+      - die Sache
+      - der Schmerz
+      - sich schneiden
+      - schwach
+      - schwanger
+      - schädlich
+      - die Seife
+      - sonst
+      - die Sprechstunde
+      - sterben
+      - der Stress
+      - stressig
+      - super
+      - die Tablette
+      - tagsüber
+      - der Unfall
+      - untersuchen
+      - vergessen
+      - sich verletzen
+      - vierundzwanzig Uhr
+      - sich waschen
+      - wirklich
+      - der Zahn
+      - zeigen
+      - zurückkommen
+      - zurücklaufen
+      - sich ärgern
+      - die Ärztin
+      - übermorgen
+  - chapter: 9
+    theme: "работа, профессия, зарплата, рабочее время"
+    lead: C
+    grammar: [dass, wb-er]
+    words:
+      - abgeben
+      - aktuell
+      - am Montag
+      - der Angestellte
+      - die Angestellte
+      - arbeiten als
+      - arbeitslos
+      - der Arbeitsplatz
+      - der Arbeitstag
+      - austragen
+      - außerhalb
+      - beenden
+      - begründen
+      - sich bewerben
+      - die Bewerbung
+      - das Büro
+      - der Chef
+      - die Chefin
+      - dass
+      - ein Uhr
+      - die Erfahrung
+      - sich erinnern
+      - erstens
+      - das Fach
+      - fertig sein
+      - froh
+      - gefährlich
+      - das Gegenteil
+      - das Gehalt
+      - genug
+      - halb zwölf
+      - der Handwerker
+      - die Handwerkerin
+      - herstellen
+      - der Informatiker
+      - der Ingenieur
+      - der Job
+      - klug
+      - die Kollegin
+      - kündigen
+      - letztes Jahr
+      - der Mechaniker
+      - die Mechanikerin
+      - die Messe
+      - der Mitarbeiter
+      - das Praktikum
+      - das Projekt
+      - raus
+      - rein
+      - schimpfen
+      - schwierig
+      - selbstständig
+      - sicher
+      - die Situation
+      - sogar
+      - stark
+      - stattfinden
+      - das Team
+      - der Techniker
+      - die Technikerin
+      - teilnehmen
+      - der Tipp
+      - traurig
+      - verboten sein
+      - verdienen
+      - der Vertrag
+      - viertel vor sieben
+      - vierzehn Uhr fünfundfünfzig
+      - vorbereiten
+      - vormittags
+      - wahr
+      - weglaufen
+      - wenigstens
+      - die Werkstatt
+      - der Werktag
+  - chapter: 10
+    theme: "учёба: школа, курс, язык, экзамен"
+    lead: A
+    grammar: [wenn-nebensatz, indirekte-frage]
+    words:
+      - das Abitur
+      - am Morgen
+      - der Antwortbogen
+      - auf Deutsch
+      - die Ausbildung
+      - aussprechen
+      - austauschen
+      - der Auszubildende
+      - die Auszubildende
+      - der Babysitter
+      - bestehen
+      - die Bibliothek
+      - die Biologie
+      - das Blatt
+      - der Bogen
+      - die Chemie
+      - das Deutsch
+      - dienstags
+      - der Direktor
+      - ein paar
+      - das Englisch
+      - etwas
+      - fleißig
+      - das Französisch
+      - die Geografie
+      - die Geschichte
+      - das Heft
+      - die Jugendliche
+      - die Kenntnisse
+      - der Kugelschreiber
+      - die Kunsterziehung
+      - das Latein
+      - die Lehrerin
+      - markieren
+      - die Mathematik
+      - die Note
+      - die Notiz
+      - die Physik
+      - prüfen
+      - der Prüfer
+      - die Prüferin
+      - der Punkt
+      - rechnen
+      - die Reihe
+      - die Religion
+      - der Satz
+      - die Schere
+      - schriftlich
+      - die Schülerin
+      - das Sekretariat
+      - die Sozialkunde
+      - der Stift
+      - das Stipendium
+      - die Studentin
+      - das Studium
+      - der Stundenplan
+      - die Tafel
+      - die Universität
+      - viertel nach zehn
+      - viertens
+      - voll
+      - wahrscheinlich
+      - wenn
+      - der Workshop
+      - das Wörterbuch
+      - die Zahl
+      - der Zentimeter
+      - der Zettel
+      - das Zeugnis
+      - zweitens
+      - üben
+      - übersetzen
+      - die Übersetzung
+  - chapter: 11
+    theme: "услуги: почта, связь, медиа, банк, полиция, бланки"
+    lead: все
+    grammar: [passiv, jemand-niemand, genitiv]
+    words:
+      - anklicken
+      - sich anmelden
+      - der Autor
+      - die Autorin
+      - beantworten
+      - beliebt
+      - beraten
+      - berichten
+      - der Bescheid
+      - bestätigen
+      - der Blog
+      - chatten
+      - der Comic
+      - die Datei
+      - direkt
+      - diskutieren
+      - drucken
+      - der Drucker
+      - das E-Book
+      - sich eintragen
+      - die Erlaubnis
+      - der Fernseher
+      - der Friseur
+      - die Friseurin
+      - die Fundsachen
+      - ganz
+      - geehrt-
+      - herunterladen
+      - die Homepage
+      - sich informieren
+      - das Interview
+      - jemand
+      - der Journalist
+      - die Journalistin
+      - klappen
+      - der Kredit
+      - der Krimi
+      - der Laptop
+      - der Link
+      - die Mail
+      - die Mailbox
+      - meinen
+      - mittags
+      - das Mobiltelefon
+      - die Nachricht
+      - niemand
+      - notwendig
+      - online
+      - das Paket
+      - die Papiere
+      - das Passwort
+      - der PC
+      - das Plakat
+      - der Polizist
+      - die Polizistin
+      - die Postkarte
+      - praktisch
+      - das Programm
+      - das Radio
+      - das Rathaus
+      - die Sendung
+      - der Service
+      - die SMS
+      - speichern
+      - surfen
+      - das Tablet
+      - tief
+      - der Titel
+      - toll
+      - die Webseite
+      - weiterhelfen
+      - wählen
+      - die Zeitschrift
+      - der Zoll
+  - chapter: 12
+    theme: "природа: город и село, растения, животные, погода"
+    lead: все
+    grammar: [superlativ]
+    words:
+      - achtzehnhundertachtundvierzig
+      - am besten
+      - am Sonntag
+      - der Berg
+      - bewölkt
+      - dafür sein
+      - dreimal
+      - eigentlich
+      - Es schneit.
+      - Es sind 20 Grad.
+      - der Fluss
+      - freiwillig
+      - das Frühjahr
+      - der Frühling
+      - fünf vor drei
+      - das Gewitter
+      - das Grad
+      - das Grad Celsius
+      - die Hauptstadt
+      - der Herbst
+      - der Himmel
+      - hoffentlich
+      - die Jahreszeit
+      - kalt
+      - die Katze
+      - die Kirche
+      - kühl
+      - die Landschaft
+      - manch-
+      - die Menge
+      - die Mitternacht
+      - der Müll
+      - nass
+      - die Natur
+      - natürlich
+      - neblig
+      - nervös
+      - der Park
+      - die Pflanze
+      - raten
+      - der Regenschirm
+      - das Rind
+      - die Rose
+      - scheinen
+      - schlimm
+      - der Schnee
+      - schneien
+      - das Schwein
+      - die See
+      - Die Sonne scheint.
+      - sonnig
+      - das Stück
+      - das Tier
+      - total
+      - trocken
+      - typisch
+      - unbedingt
+      - versuchen
+      - vierzehnter dritter zweitausenddreizehn
+      - der Vogel
+      - vorsichtig
+      - der Wald
+      - warm
+      - wegwerfen
+      - die Welt
+      - das Wetter
+      - der Wind
+      - windig
+      - der Winter
+      - die Wolke
+      - das Zentrum
+      - zwanzig vor neun

@@ -1,0 +1,1275 @@
+# Эталон A2 для плана сезона (A2-PLOT.md): Goethe-Zertifikat A2 / telc Start Deutsch 2.
+# Только заголовочные слова и пункты перечня грамматики, без примеров из источника; сайт файл не читает.
+# Словарь: Goethe-Institut, Goethe-Zertifikat A2, Wortliste (A2_Wortliste_04_050526), алфавитный список и группы.
+# Грамматика: Start Deutsch 2, Prüfungsziele / Testbeschreibung, глава 6 «Inventare», пункты со звёздочкой —
+# только те, которых нет в эталоне A1 (start-deutsch-1.yaml) или которые там даны лишь как готовые фразы.
+#
+# words — запись словаря в формате эталона A1: строка или { de, forms }. Основа с дефисом (all-) — слово с
+# окончаниями. Слова групп, которых нет в алфавитном списке, стоят только в groups.
+# grammar — { id, group, title }. Фрагменты разбора (rules) и признаки в тексте (find) добавляются вместе с
+# индексом покрытия A2, когда появится первая глава.
+
+words:
+  - ab
+  - aber
+  - abgeben
+  - abholen
+  - abschließen
+  - Achtung
+  - die Adresse
+  - die Ahnung
+  - aktiv
+  - aktuell
+  - all-
+  - allein
+  - als
+  - also
+  - alt
+  - das Alter
+  - die Ampel
+  - an
+  - anbieten
+  - das Angebot
+  - ander-
+  - ändern
+  - anders
+  - anfangen
+  - der Anfang
+  - die Angst
+  - ankommen
+  - die Ankunft
+  - anmachen
+  - { de: sich anmelden, forms: [melde mich an, meldet sich an, melden sich an, meldest dich an, melden uns an] }
+  - die Anmeldung
+  - der Anrufbeantworter
+  - anrufen
+  - der Anruf
+  - der Anschluss
+  - ansehen
+  - antworten
+  - die Antwort
+  - die Anzeige
+  - der Anzug
+  - der Apfel
+  - die Apotheke
+  - der Apparat
+  - arbeiten
+  - die Arbeit
+  - arbeitslos
+  - { de: sich ärgern, forms: [ärgere mich, ärgert sich, ärgern sich, ärgerst dich, ärgern uns] }
+  - arm
+  - der Arm
+  - der Artikel
+  - auch
+  - auf
+  - auf jeden Fall
+  - auf keinen Fall
+  - aufhören
+  - aufmachen
+  - aufpassen
+  - aufräumen
+  - aufregend
+  - aufstehen
+  - der Aufzug
+  - das Auge
+  - aus
+  - die Ausbildung
+  - der Ausflug
+  - ausfüllen
+  - der Ausgang
+  - ausgeben
+  - ausgehen
+  - die Auskunft
+  - das Ausland
+  - ausmachen
+  - auspacken
+  - { de: sich ausruhen, forms: [ruhe mich aus, ruht sich aus, ruhen sich aus, ruhst dich aus, ruhen uns aus] }
+  - aussehen
+  - außer
+  - außerdem
+  - außerhalb
+  - aussprechen
+  - aussteigen
+  - die Ausstellung
+  - austragen
+  - der Ausweis
+  - das Auto
+  - die Autobahn
+  - der Automat
+  - automatisch
+  - das Baby
+  - der Babysitter
+  - backen
+  - die Bäckerei
+  - das Bad
+  - baden
+  - die Bahn
+  - der Bahnhof
+  - der Bahnsteig
+  - bald
+  - der Balkon
+  - der Ball
+  - die Banane
+  - die Band
+  - die Bank
+  - bar
+  - der Basketball
+  - basteln
+  - der Bauch
+  - bauen
+  - der Baum
+  - die Baustelle
+  - beantworten
+  - { de: sich bedanken, forms: [bedanke mich, bedankt sich, bedanken sich, bedankst dich, bedanken uns] }
+  - bedeuten
+  - { de: sich beeilen, forms: [beeile mich, beeilt sich, beeilen sich, beeilst dich, beeilen uns] }
+  - beenden
+  - beginnen
+  - begründen
+  - bei
+  - beide
+  - das Bein
+  - bekannt
+  - der Bekannte
+  - die Bekannte
+  - bekommen
+  - beliebt
+  - benutzen
+  - bequem
+  - beraten
+  - der Berg
+  - berichten
+  - der Beruf
+  - berühmt
+  - der Bescheid
+  - beschreiben
+  - { de: sich beschweren, forms: [beschwere mich, beschwert sich, beschweren sich, beschwerst dich, beschweren uns] }
+  - besetzt
+  - besichtigen
+  - besonders
+  - bestätigen
+  - bestehen
+  - bestellen
+  - der Besuch
+  - besuchen
+  - das Bett
+  - { de: sich bewerben, forms: [bewerbe mich, bewirbt sich, bewerben sich, bewirbst dich, bewerben uns] }
+  - die Bewerbung
+  - bewölkt
+  - die Wolke
+  - bezahlen
+  - die Bibliothek
+  - das Bier
+  - das Bild
+  - billig
+  - die Birne
+  - bis
+  - bisschen
+  - bitte
+  - die Bitte
+  - bitten
+  - bitter
+  - das Blatt
+  - bleiben
+  - der Bleistift
+  - blöd
+  - { de: der Blog, forms: [das Blog] }
+  - blond
+  - die Blume
+  - die Bluse
+  - die Bohne
+  - böse
+  - braten
+  - brauchen
+  - der Brief
+  - die Briefmarke
+  - die Brille
+  - bringen
+  - das Brot
+  - das Brötchen
+  - die Brücke
+  - das Buch
+  - buchen
+  - der Buchstabe
+  - buchstabieren
+  - bunt
+  - das Büro
+  - der Bus
+  - die Butter
+  - das Café
+  - die Cafeteria
+  - chatten
+  - der Chef
+  - die Chefin
+  - der Club
+  - der Klub
+  - { de: der Comic, forms: [das Comic] }
+  - der Computer
+  - die Creme
+  - da
+  - dabei
+  - { de: dabei sein, forms: [ist dabei, sind dabei, war dabei] }
+  - { de: dafür sein, forms: [ist dafür, sind dafür, war dafür] }
+  - { de: dagegen sein, forms: [ist dagegen, sind dagegen, war dagegen] }
+  - damals
+  - die Dame
+  - daneben
+  - der Dank
+  - danke
+  - danken
+  - dann
+  - dass
+  - die Datei
+  - das Datum
+  - dauern
+  - denken
+  - denn
+  - deshalb
+  - deutlich
+  - dick
+  - das Ding
+  - direkt
+  - die Disco
+  - die Disko
+  - diskutieren
+  - doch
+  - das Doppelzimmer
+  - das Dorf
+  - dort
+  - dorther
+  - dorthin
+  - draußen
+  - dringend
+  - drinnen
+  - drüben
+  - drücken
+  - drucken
+  - der Drucker
+  - dumm
+  - dunkel
+  - dünn
+  - durch
+  - dürfen
+  - der Durst
+  - die Dusche
+  - { de: sich duschen, forms: [dusche mich, duscht sich, duschen sich, duschst dich, duschen uns] }
+  - das E-Book
+  - echt
+  - die Ecke
+  - egal
+  - die Ehefrau
+  - der Ehemann
+  - der Ehepartner
+  - das Ei
+  - eigen-
+  - eigentlich
+  - eilig
+  - einfach
+  - der Eingang
+  - einig-
+  - einkaufen
+  - das Einkaufszentrum
+  - einladen
+  - die Einladung
+  - einmal
+  - einpacken
+  - einsteigen
+  - { de: sich eintragen, forms: [trage mich ein, trägt sich ein, tragen sich ein, trägst dich ein, tragen uns ein] }
+  - der Eintritt
+  - { de: einverstanden sein, forms: [ist einverstanden, sind einverstanden, war einverstanden] }
+  - einzel-
+  - einziehen
+  - das Eis
+  - die Mail
+  - die E-Mail
+  - der Empfänger
+  - empfehlen
+  - das Ende
+  - enden
+  - endlich
+  - eng
+  - { de: sich entschuldigen, forms: [entschuldige mich, entschuldigt sich, entschuldigen sich, entschuldigst dich, entschuldigen uns] }
+  - die Entschuldigung
+  - das Erdgeschoss
+  - die Erfahrung
+  - { de: sich erinnern, forms: [erinnere mich, erinnert sich, erinnern sich, erinnerst dich, erinnern uns] }
+  - { de: erkältet sein, forms: [ist erkältet, sind erkältet, war erkältet] }
+  - erklären
+  - erlauben
+  - { de: erlaubt sein, forms: [ist erlaubt, sind erlaubt, war erlaubt] }
+  - die Erlaubnis
+  - die Ermäßigung
+  - erreichen
+  - erst
+  - der Erwachsene
+  - erzählen
+  - essen
+  - das Essen
+  - etwas
+  - das Fach
+  - fahren
+  - abfahren
+  - die Abfahrt
+  - die Fahrkarte
+  - der Fahrplan
+  - das Rad
+  - das Fahrrad
+  - fallen
+  - falsch
+  - die Familie
+  - der Familienname
+  - der Fan
+  - fantastisch
+  - die Farbe
+  - fast
+  - faul
+  - fehlen
+  - der Fehler
+  - die Feier
+  - feiern
+  - das Fenster
+  - die Ferien
+  - fernsehen
+  - der Fernseher
+  - { de: fertig sein, forms: [ist fertig, sind fertig, war fertig] }
+  - das Fest
+  - das Festival
+  - fett
+  - das Fieber
+  - der Film
+  - finden
+  - die Firma
+  - der Fisch
+  - { de: fit sein, forms: [ist fit, sind fit, war fit] }
+  - die Flasche
+  - das Fleisch
+  - fleißig
+  - fliegen
+  - abfliegen
+  - der Flohmarkt
+  - der Flug
+  - der Flughafen
+  - das Flugzeug
+  - der Fluss
+  - das Formular
+  - der Fotoapparat
+  - fotografieren
+  - das Foto
+  - die Frage
+  - fragen
+  - die Frau
+  - frei
+  - freiwillig
+  - die Freizeit
+  - fremd
+  - { de: sich freuen, forms: [freue mich, freut sich, freuen sich, freust dich, freuen uns] }
+  - der Freund
+  - die Freundin
+  - freundlich
+  - frisch
+  - froh
+  - früh
+  - früher
+  - das Frühstück
+  - frühstücken
+  - { de: sich fühlen, forms: [fühle mich, fühlt sich, fühlen sich, fühlst dich, fühlen uns] }
+  - der Führerschein
+  - die Führung
+  - die Fundsachen
+  - für
+  - furchtbar
+  - der Fuß
+  - der Fußball
+  - die Gabel
+  - ganz
+  - die Garage
+  - der Garten
+  - der Gast
+  - geben
+  - geboren
+  - das Geburtsjahr
+  - der Geburtsort
+  - der Geburtstag
+  - geehrt-
+  - gefährlich
+  - gefallen
+  - gegen
+  - das Gegenteil
+  - gegenüber
+  - das Gehalt
+  - gehen
+  - gehören
+  - das Geld
+  - die Geldbörse
+  - das Gemüse
+  - genau
+  - genug
+  - das Gepäck
+  - gerade
+  - geradeaus
+  - das Gerät
+  - das Gericht
+  - gern
+  - lieber
+  - am liebsten
+  - das Geschäft
+  - das Geschenk
+  - die Geschichte
+  - das Geschirr
+  - das Gesicht
+  - das Gespräch
+  - gestern
+  - gesund
+  - die Gesundheit
+  - das Getränk
+  - gewinnen
+  - das Gewitter
+  - die Gitarre
+  - das Glas
+  - glauben
+  - gleich
+  - das Gleis
+  - das Glück
+  - glücklich
+  - der Glückwunsch
+  - gratulieren
+  - grillen
+  - die Grippe
+  - groß
+  - die Größe
+  - die Gruppe
+  - der Gruß
+  - { de: gültig sein, forms: [ist gültig, sind gültig, war gültig] }
+  - günstig
+  - gut
+  - besser
+  - am besten
+  - das Haar
+  - haben
+  - das Hähnchen
+  - die Halle
+  - hallo
+  - der Hals
+  - halten
+  - die Haltestelle
+  - der Hamburger
+  - die Hand
+  - das Handtuch
+  - das Handy
+  - hängen
+  - hart
+  - hässlich
+  - die Hauptstadt
+  - das Haus
+  - der Haushalt
+  - das Heft
+  - die Heimat
+  - heiraten
+  - heiß
+  - heißen
+  - die Heizung
+  - helfen
+  - hell
+  - das Hemd
+  - her
+  - heraus
+  - raus
+  - herein
+  - rein
+  - der Herd
+  - der Herr
+  - herstellen
+  - herunterladen
+  - herzlich
+  - heute
+  - hier
+  - die Hilfe
+  - der Himmel
+  - hin
+  - hinten
+  - hinter
+  - das Hobby
+  - hoch
+  - die Hochzeit
+  - hoffen
+  - hoffentlich
+  - holen
+  - die Homepage
+  - hören
+  - die Hose
+  - das Hotel
+  - der Hund
+  - der Hunger
+  - husten
+  - die Idee
+  - immer
+  - in
+  - die Information
+  - { de: sich informieren, forms: [informiere mich, informiert sich, informieren sich, informierst dich, informieren uns] }
+  - die Insel
+  - das Instrument
+  - intelligent
+  - das Interesse
+  - { de: sich interessieren, forms: [interessiere mich, interessiert sich, interessieren sich, interessierst dich, interessieren uns] }
+  - interessant
+  - international
+  - das Internet
+  - das Interview
+  - ja
+  - die Jacke
+  - die Jeans
+  - jeder
+  - jemand
+  - jetzt
+  - der Job
+  - joggen
+  - die Jugendherberge
+  - der Jugendliche
+  - die Jugendliche
+  - jung
+  - der Junge
+  - der Kaffee
+  - der Kalender
+  - kalt
+  - die Kamera
+  - kaputt
+  - die Karte
+  - die Kartoffel
+  - der Käse
+  - die Kasse
+  - die Katze
+  - kaufen
+  - das Kaufhaus
+  - kein
+  - der Keller
+  - kennen
+  - kennenlernen
+  - die Kenntnisse
+  - die Kette
+  - das Kind
+  - das Kino
+  - der Kindergarten
+  - der Kiosk
+  - die Kirche
+  - klappen
+  - klar
+  - das Klavier
+  - das Kleid
+  - die Kleidung
+  - klein
+  - klug
+  - kochen
+  - der Koffer
+  - der Kollege
+  - die Kollegin
+  - komisch
+  - kommen
+  - können
+  - der Kontakt
+  - das Konto
+  - kontrollieren
+  - das Konzert
+  - der Kopf
+  - der Körper
+  - die Kosmetik
+  - kosten
+  - kostenlos
+  - krank
+  - das Krankenhaus
+  - die Krankenkasse
+  - die Krankheit
+  - der Kredit
+  - die Kreuzung
+  - kriegen
+  - der Krimi
+  - die Küche
+  - der Kuchen
+  - kühl
+  - der Kühlschrank
+  - die Kultur
+  - { de: sich kümmern, forms: [kümmere mich, kümmert sich, kümmern sich, kümmerst dich, kümmern uns] }
+  - der Kunde
+  - die Kundin
+  - kündigen
+  - die Kunst
+  - der Kurs
+  - kurz
+  - lachen
+  - der Laden
+  - die Lampe
+  - das Land
+  - die Landschaft
+  - lang
+  - lange
+  - langsam
+  - langweilig
+  - { de: der Laptop, forms: [das Laptop] }
+  - lassen
+  - laufen
+  - laut
+  - leben
+  - das Leben
+  - die Lebensmittel
+  - leer
+  - legen
+  - leicht
+  - leider
+  - { de: leidtun, forms: [leid tun, tut leid, tun leid, tat leid] }
+  - leihen
+  - leise
+  - lernen
+  - lesen
+  - letzt-
+  - die Leute
+  - das Licht
+  - lieb-
+  - lieben
+  - Lieblings-
+  - das Lied
+  - liefern
+  - liegen
+  - der Link
+  - links
+  - der Löffel
+  - das Lokal
+  - die Lüge
+  - lügen
+  - die Lust
+  - lustig
+  - machen
+  - das Mädchen
+  - der Magen
+  - die Mailbox
+  - mal
+  - das Mal
+  - malen
+  - man
+  - manch-
+  - manchmal
+  - der Mann
+  - männlich
+  - die Mannschaft
+  - der Mantel
+  - der Markt
+  - die Maschine
+  - das Medikament
+  - das Meer
+  - mehr
+  - meinen
+  - die Meinung
+  - meist-
+  - meistens
+  - die Menge
+  - der Mensch
+  - merken
+  - die Messe
+  - das Messer
+  - die Miete
+  - mieten
+  - die Milch
+  - mindestens
+  - das Mineralwasser
+  - mit
+  - mitbringen
+  - mitkommen
+  - mitmachen
+  - mitnehmen
+  - mitspielen
+  - der Mitarbeiter
+  - das Mittagessen
+  - die Mitte
+  - das Mittel
+  - die Möbel
+  - das Mobiltelefon
+  - möchten
+  - die Mode
+  - modern
+  - mögen
+  - möglich
+  - der Moment
+  - morgen
+  - der Motor
+  - der Motorroller
+  - müde
+  - der Müll
+  - der Mund
+  - das Museum
+  - die Musik
+  - müssen
+  - die Mütze
+  - nach
+  - der Nachbar
+  - die Nachbarin
+  - die Nachricht
+  - nächste
+  - die Nähe
+  - der Name
+  - nass
+  - die Natur
+  - natürlich
+  - neben
+  - nebenan
+  - neblig
+  - nehmen
+  - nein
+  - nennen
+  - nervös
+  - nett
+  - neu
+  - nicht
+  - nichts
+  - nie
+  - niemand
+  - nirgends
+  - noch
+  - normal
+  - die Note
+  - notieren
+  - die Notiz
+  - notwendig
+  - die Nudel
+  - die Nummer
+  - nur
+  - nützlich
+  - oben
+  - das Obst
+  - oder
+  - offen
+  - öffnen
+  - oft
+  - ohne
+  - das Ohr
+  - das Öl
+  - online
+  - die Orange
+  - die Ordnung
+  - organisieren
+  - der Ort
+  - das Paar
+  - ein paar
+  - packen
+  - das Paket
+  - das Papier
+  - die Papiere
+  - das Parfüm
+  - der Park
+  - parken
+  - der Partner
+  - die Partnerin
+  - die Party
+  - der Pass
+  - passen
+  - passieren
+  - das Passwort
+  - die Pause
+  - die Person
+  - das Pferd
+  - die Pflanze
+  - die Pizza
+  - das Plakat
+  - der Plan
+  - planen
+  - der Platz
+  - plötzlich
+  - die Polizei
+  - die Pommes frites
+  - die Portion
+  - die Post
+  - das Poster
+  - die Postkarte
+  - die Postleitzahl
+  - das Praktikum
+  - praktisch
+  - die Praxis
+  - der Preis
+  - preiswert
+  - privat
+  - pro
+  - probieren
+  - das Problem
+  - das Produkt
+  - das Programm
+  - das Projekt
+  - der Prospekt
+  - prüfen
+  - die Prüfung
+  - der Pullover
+  - pünktlich
+  - putzen
+  - die Qualität
+  - das Quiz
+  - das Radio
+  - raten
+  - das Rathaus
+  - das Rätsel
+  - rauchen
+  - der Raum
+  - rechnen
+  - die Rechnung
+  - { de: recht haben, forms: [habe recht, hat recht, haben recht, hast recht, hatte recht] }
+  - rechts
+  - reden
+  - der Regen
+  - regnen
+  - reich
+  - der Reifen
+  - die Reihe
+  - die Reinigung
+  - der Reis
+  - die Reise
+  - das Reisebüro
+  - der Reiseführer
+  - reisen
+  - reiten
+  - renovieren
+  - der Rentner
+  - die Rentnerin
+  - die Reparatur
+  - reparieren
+  - reservieren
+  - der Rest
+  - das Restaurant
+  - das Rezept
+  - die Rezeption
+  - richtig
+  - riechen
+  - das Rind
+  - der Ring
+  - der Rock
+  - romantisch
+  - die Rose
+  - der Rücken
+  - der Rucksack
+  - rufen
+  - die Ruhe
+  - ruhig
+  - rund
+  - der Rundgang
+  - die Sache
+  - der Saft
+  - sagen
+  - der Salat
+  - das Salz
+  - sammeln
+  - der Satz
+  - sauber
+  - sauer
+  - schade
+  - schädlich
+  - schaffen
+  - der Schalter
+  - scharf
+  - scheinen
+  - schenken
+  - die Schere
+  - schicken
+  - das Schiff
+  - das Schild
+  - schimpfen
+  - der Schirm
+  - schlafen
+  - das Schlafzimmer
+  - schlecht
+  - schließen
+  - schlimm
+  - das Schloss
+  - der Schluss
+  - der Schlüssel
+  - schmecken
+  - der Schmerz
+  - schmutzig
+  - der Schnee
+  - { de: sich schneiden, forms: [schneide mich, schneidet sich, schneiden sich, schneidest dich, schneiden uns] }
+  - schneien
+  - schnell
+  - die Schokolade
+  - schon
+  - schön
+  - der Schrank
+  - schrecklich
+  - schreiben
+  - schriftlich
+  - der Schuh
+  - die Schule
+  - der Schüler
+  - die Schülerin
+  - schwach
+  - schwanger
+  - das Schwein
+  - schwer
+  - schwierig
+  - das Schwimmbad
+  - schwimmen
+  - der See
+  - die See
+  - sehen
+  - die Sehenswürdigkeit
+  - sehr
+  - die Seife
+  - sein
+  - { de: an sein, forms: [ist an, sind an, war an] }
+  - { de: aus sein, forms: [ist aus, sind aus, war aus] }
+  - { de: auf sein, forms: [ist auf, sind auf, war auf] }
+  - { de: weg sein, forms: [ist weg, sind weg, war weg] }
+  - { de: zu sein, forms: [ist zu, sind zu, war zu] }
+  - seit
+  - die Seite
+  - selbst
+  - die Sendung
+  - der Service
+  - { de: sich setzen, forms: [setze mich, setzt sich, setzen sich, setzt dich, setzen uns] }
+  - sicher
+  - singen
+  - die Situation
+  - sitzen
+  - der Ski
+  - so
+  - das Sofa
+  - sofort
+  - sogar
+  - sollen
+  - die Sonne
+  - sonnig
+  - sonst
+  - spannend
+  - sparen
+  - der Spaß
+  - spät
+  - später
+  - { de: spazieren gehen, forms: [gehe spazieren, geht spazieren, gehen spazieren, gehst spazieren] }
+  - der Spaziergang
+  - speichern
+  - die Speisekarte
+  - das Spiel
+  - spielen
+  - der Sport
+  - sportlich
+  - der Sportplatz
+  - die Sprache
+  - sprechen
+  - die Sprechstunde
+  - die Stadt
+  - der Stadtplan
+  - der Star
+  - stark
+  - stattfinden
+  - stehen
+  - die Stelle
+  - stellen
+  - sterben
+  - der Stiefel
+  - der Stift
+  - das Stipendium
+  - der Stock
+  - das Stockwerk
+  - stören
+  - der Strand
+  - die Straße
+  - die Straßenbahn
+  - { de: sich streiten, forms: [streite mich, streitet sich, streiten sich, streitest dich, streiten uns] }
+  - streng
+  - der Stress
+  - stressig
+  - das Stück
+  - der Student
+  - die Studentin
+  - studieren
+  - das Studium
+  - der Stuhl
+  - suchen
+  - super
+  - der Supermarkt
+  - die Suppe
+  - surfen
+  - süß
+  - die Süßigkeiten
+  - sympathisch
+  - das Tablet
+  - die Tablette
+  - die Tafel
+  - tanzen
+  - die Tasche
+  - das Taschengeld
+  - die Tasse
+  - tauschen
+  - austauschen
+  - das Taxi
+  - das Team
+  - der Tee
+  - teilen
+  - teilnehmen
+  - das Telefon
+  - telefonieren
+  - der Teller
+  - das Tennis
+  - der Termin
+  - teuer
+  - der Text
+  - das Theater
+  - das Thema
+  - das Ticket
+  - tief
+  - das Tier
+  - der Tipp
+  - der Tisch
+  - der Titel
+  - die Toilette
+  - toll
+  - die Tomate
+  - der Topf
+  - die Torte
+  - tot
+  - total
+  - die Tour
+  - der Tourist
+  - die Touristin
+  - tragen
+  - trainieren
+  - das Training
+  - der Traum
+  - träumen
+  - traurig
+  - { de: sich treffen, forms: [treffe mich, trifft sich, treffen sich, triffst dich, treffen uns] }
+  - die Treppe
+  - trinken
+  - trocken
+  - tschüs
+  - das T-Shirt
+  - tun
+  - die Tür
+  - typisch
+  - üben
+  - über
+  - überall
+  - übermorgen
+  - übernachten
+  - übersetzen
+  - die Übersetzung
+  - überweisen
+  - die Uhr
+  - um
+  - umsteigen
+  - umziehen
+  - { de: sich umziehen, forms: [ziehe mich um, zieht sich um, ziehen sich um, ziehst dich um, ziehen uns um] }
+  - der Umzug
+  - unbedingt
+  - und
+  - der Unfall
+  - die Universität
+  - unten
+  - unter
+  - { de: sich unterhalten, forms: [unterhalte mich, unterhält sich, unterhalten sich, unterhältst dich, unterhalten uns] }
+  - die Unterkunft
+  - unternehmen
+  - der Unterricht
+  - der Unterschied
+  - unterschreiben
+  - die Unterschrift
+  - untersuchen
+  - { de: unterwegs sein, forms: [ist unterwegs, sind unterwegs, war unterwegs] }
+  - der Urlaub
+  - { de: verabredet sein, forms: [ist verabredet, sind verabredet, war verabredet] }
+  - die Veranstaltung
+  - verbieten
+  - { de: verboten sein, forms: [ist verboten, sind verboten, war verboten] }
+  - verdienen
+  - der Verein
+  - vereinbaren
+  - vergessen
+  - vergleichen
+  - verkaufen
+  - der Verkehr
+  - das Verkehrsmittel
+  - { de: sich verletzen, forms: [verletze mich, verletzt sich, verletzen sich, verletzt dich, verletzen uns] }
+  - { de: sich verlieben, forms: [verliebe mich, verliebt sich, verlieben sich, verliebst dich, verlieben uns] }
+  - verlieren
+  - vermieten
+  - der Vermieter
+  - die Vermieterin
+  - verpassen
+  - verreisen
+  - verschieben
+  - verschieden
+  - die Verspätung
+  - verstehen
+  - versuchen
+  - der Vertrag
+  - viel
+  - vielleicht
+  - der Vogel
+  - voll
+  - der Volleyball
+  - von
+  - vor
+  - vorbei
+  - vorbereiten
+  - vorgestern
+  - vorher
+  - vorn
+  - vorne
+  - der Vorname
+  - der Vorschlag
+  - vorsichtig
+  - { de: sich vorstellen, forms: [stelle mich vor, stellt sich vor, stellen sich vor, stellst dich vor, stellen uns vor] }
+  - vorwärts
+  - wach
+  - der Wagen
+  - wählen
+  - wahr
+  - wahrscheinlich
+  - der Wald
+  - wandern
+  - wann
+  - warm
+  - warten
+  - warum
+  - was
+  - die Wäsche
+  - { de: sich waschen, forms: [wasche mich, wäscht sich, waschen sich, wäschst dich, waschen uns] }
+  - das Wasser
+  - die Webseite
+  - wechseln
+  - wecken
+  - weg
+  - wegbringen
+  - wegfahren
+  - weggehen
+  - weglaufen
+  - wegmachen
+  - wegnehmen
+  - wegwerfen
+  - der Weg
+  - wegen
+  - { de: wehtun, forms: [weh tun, tut weh, tun weh, wehtut, tut mir weh, tut dir weh] }
+  - weiblich
+  - weich
+  - weil
+  - der Wein
+  - weinen
+  - weit
+  - weiter
+  - weitermachen
+  - weiterhelfen
+  - welcher
+  - die Welt
+  - wenig
+  - wenigstens
+  - wenn
+  - wer
+  - werden
+  - die Werkstatt
+  - der Wettbewerb
+  - das Wetter
+  - wichtig
+  - wie
+  - wie viel
+  - wieder
+  - wiederholen
+  - das Wiederhören
+  - das Wiedersehen
+  - willkommen
+  - der Wind
+  - windig
+  - wirklich
+  - wissen
+  - der Witz
+  - witzig
+  - wo
+  - woher
+  - wohin
+  - wohnen
+  - die Wohnung
+  - das Wohnzimmer
+  - wollen
+  - der Workshop
+  - das Wort
+  - wunderbar
+  - der Wunsch
+  - wünschen
+  - die Wurst
+  - die Zahl
+  - zahlen
+  - der Zahn
+  - zeichnen
+  - zeigen
+  - die Zeit
+  - die Zeitschrift
+  - die Zeitung
+  - das Zelt
+  - das Zentrum
+  - der Zettel
+  - das Zeugnis
+  - ziehen
+  - anziehen
+  - ausziehen
+  - das Ziel
+  - das Zimmer
+  - der Zirkus
+  - die Zitrone
+  - der Zoo
+  - zu
+  - der Zucker
+  - zuerst
+  - zufrieden
+  - der Zug
+  - zuhören
+  - zuletzt
+  - zum Beispiel
+  - zumachen
+  - zurück
+  - zurückfahren
+  - zurückgeben
+  - zurückgehen
+  - zurückkommen
+  - zurücklaufen
+  - zusammen
+  - zwischen
+
+groups:
+  Abkürzungen: [ca., d.h., der ICE, der Lkw, der PC, die SMS, usw., das WC, z. B.]
+  Familienmitglieder: [der Bruder, der Cousin, die Cousine, die Eltern, der Enkel, die Enkelin, die Geschwister, die Großeltern, die Großmutter, die Oma, der Großvater, der Opa, das Kind, die Mutter, die Mama, der Onkel, die Schwester, der Sohn, die Tante, die Tochter, der Vater, der Papa, der Verwandte, die Verwandte]
+  Anweisungssprache zur Prüfung: [der Antwortbogen, die Aufgabe, das Beispiel, die Durchsage, die Lösung, markieren, der Prüfer, die Prüferin, die Prüfung, der Punkt, der Teil, der Test, der Text, das Wörterbuch]
+  Familienstand: [ledig, verheiratet, getrennt, geschieden]
+  Farben: [blau, braun, gelb, grau, grün, lila, orange, rosa, rot, schwarz, weiß]
+  Berufe: [der Angestellte, die Angestellte, der Arzt, die Ärztin, der Auszubildende, die Auszubildende, der Autor, die Autorin, der Babysitter, der Bäcker, die Bäckerin, der Doktor, die Doktorin, der Fahrer, die Fahrerin, der Friseur, die Friseurin, der Handwerker, die Handwerkerin, der Hausmann, die Hausfrau, der Journalist, die Journalistin, der Kaufmann, die Kauffrau, der Kellner, die Kellnerin, der Koch, die Köchin, der Krankenpfleger, die Krankenschwester, der Künstler, die Künstlerin, der Lehrer, die Lehrerin, der Mechaniker, die Mechanikerin, das Model, der Musiker, die Musikerin, der Polizist, die Polizistin, der Rentner, die Rentnerin, der Sänger, die Sängerin, der Schauspieler, die Schauspielerin, der Techniker, die Technikerin, der Verkäufer, die Verkäuferin]
+  Himmelsrichtungen: [der Norden, der Süden, der Osten, der Westen]
+  Länder und Nationalitäten: [Deutschland, der Deutsche, die Deutsche, deutsch, auf Deutsch, Österreich, der Österreicher, die Österreicherin, österreichisch, die Schweiz, der Schweizer, die Schweizerin, schweizerisch, Luxemburg, der Luxemburger, die Luxemburgerin, luxemburgisch, Europa, der Europäer, die Europäerin, europäisch]
+  Schule und Schulfächer: [das Abitur, der Direktor, die Hausaufgabe, die Klasse, die Klassenfahrt, das Sekretariat, der Stundenplan, die Biologie, die Chemie, das Deutsch, das Englisch, das Französisch, die Geografie, die Geschichte, die Kunst, die Kunsterziehung, das Latein, die Mathematik, die Musik, die Physik, die Religion, die Sozialkunde, der Sport]
+  Zeitangaben: [achtzehnhundertachtundvierzig, der zwanzigste zweite (Februar) zweitausendzwölf, vierzehnter dritter zweitausenddreizehn, der Karneval, Ostern, Weihnachten, Neujahr, Silvester, der Frühling, das Frühjahr, der Sommer, der Herbst, der Winter, der Januar, der Februar, der März, der April, der Mai, der Juni, der Juli, der August, der September, der Oktober, der November, der Dezember, der Tag, der Morgen, der Vormittag, der Mittag, der Nachmittag, der Abend, die Nacht, die Mitternacht, täglich, tagsüber, morgens, am Morgen, vormittags, am Vormittag, mittags, am Mittag, nachmittags, am Nachmittag, abends, am Abend, nachts, in der Nacht, um Mitternacht, sieben Uhr drei, drei Uhr fünfzehn, fünfzehn Uhr dreißig, halb vier, vierundzwanzig Uhr, dreizehn Uhr, ein Uhr, halb zwölf, vierzehn Uhr fünf, fünf nach zwei, vierzehn Uhr fünfundfünfzig, fünf vor drei, viertel nach zehn, viertel vor sieben, zwanzig Uhr vierzig, zwanzig vor neun, am Wochenende, montags, am Montag, dienstags, am Dienstag, mittwochs, am Mittwoch, donnerstags, am Donnerstag, freitags, am Freitag, samstags, am Samstag, sonntags, am Sonntag, der Arbeitstag, der Werktag, der Feiertag, die Sekunde, die Minute, die Stunde, die Woche, das Jahr]
+  Datum: [achtzehnhundertachtundvierzig, der zwanzigste zweite (Februar) zweitausendzwölf, vierzehnter dritter zweitausenddreizehn]
+  Feiertage: [der Karneval, Ostern, Weihnachten, Neujahr, Silvester]
+  Jahreszeiten: [der Frühling, das Frühjahr, der Sommer, der Herbst, der Winter]
+  Monate: [der Januar, der Februar, der März, der April, der Mai, der Juni, der Juli, der August, der September, der Oktober, der November, der Dezember]
+  Währungen und Maße: [der Euro, der Cent, der Franke, der Rappen, m, der Meter, ein Meter fünfzig, cm, km, "%", l, g, kg, das Gramm, das Kilogramm, das Grad Celsius]
+  Tageszeiten: [der Tag, der Morgen, der Vormittag, der Mittag, der Nachmittag, der Abend, die Nacht, die Mitternacht, täglich, tagsüber, morgens, am Morgen, vormittags, am Vormittag, mittags, am Mittag, nachmittags, am Nachmittag, abends, am Abend, nachts, in der Nacht, um Mitternacht]
+  Uhrzeit: [sieben Uhr drei, drei Uhr fünfzehn, fünfzehn Uhr dreißig, halb vier, vierundzwanzig Uhr, dreizehn Uhr, ein Uhr, halb zwölf, vierzehn Uhr fünf, fünf nach zwei, vierzehn Uhr fünfundfünfzig, fünf vor drei, viertel nach zehn, viertel vor sieben, zwanzig Uhr vierzig, zwanzig vor neun]
+  Wochentage: [am Wochenende, montags, am Montag, dienstags, am Dienstag, mittwochs, am Mittwoch, donnerstags, am Donnerstag, freitags, am Freitag, samstags, am Samstag, sonntags, am Sonntag, der Arbeitstag, der Werktag, der Feiertag]
+  Zeitmaße: [die Sekunde, die Minute, die Stunde, die Woche, das Jahr]
+  Zahlen: [eins, zwei, drei, vier, fünf, sechs, sieben, acht, neun, zehn, elf, zwölf, dreizehn, vierzehn, fünfzehn, sechzehn, siebzehn, achtzehn, neunzehn, zwanzig, einundzwanzig, dreißig, vierzig, fünfzig, sechzig, siebzig, achtzig, neunzig, hundert, einhundert, hunderteins, zweihundert, tausend, eintausend, zweitausendeins, die Million, erste, zweite, dritte, vierte, erstens, zweitens, drittens, viertens, einmal, zweimal, dreimal, viermal]
+
+grammar:
+  - { id: perfekt-alle, group: Глагол, title: "Perfekt всех глаголов: be-/ver-/er- и -ieren без ge-, отделяемые приставки" }
+  - { id: praeteritum-kam-sagte, group: Глагол, title: "Präteritum kam и sagte" }
+  - { id: praeteritum-modal, group: Глагол, title: "Präteritum модальных: konnte, musste, wollte, durfte, sollte" }
+  - { id: konj2-koennte, group: Глагол, title: "Konjunktiv II в просьбе: Könnten Sie …? Hätten Sie …?" }
+  - { id: passiv, group: Глагол, title: "Passiv в настоящем: Das Auto wird repariert." }
+  - { id: reflexiv-verben, group: Глагол, title: "Возвратные глаголы: sich freuen, sich waschen, sich ärgern" }
+  - { id: dativ-nomen, group: Падежи и местоимения, title: "Дательный всех существительных, во множественном -n (den Kindern)" }
+  - { id: genitiv, group: Падежи и местоимения, title: "Родительный падеж (понимать): die Nummer des Wagens" }
+  - { id: jemand-niemand, group: Падежи и местоимения, title: "jemand и niemand" }
+  - { id: adjektiv-nom-akk, group: Прилагательное, title: "Окончания прилагательных после der и ein: именительный и винительный" }
+  - { id: adjektiv-dat, group: Прилагательное, title: "Окончания прилагательных в дательном (mit dem neuen Auto)" }
+  - { id: so-wie, group: Прилагательное, title: "so … wie" }
+  - { id: superlativ, group: Прилагательное, title: "Превосходная степень: am schönsten, der schönste" }
+  - { id: wechselpraep, group: Предлоги, title: "Wo? и Wohin?: in, an, auf, über, unter, vor, hinter, neben, zwischen с дательным и винительным" }
+  - { id: stellen-stehen, group: Предлоги, title: "stellen / stehen, legen / liegen, hängen" }
+  - { id: gegenueber, group: Предлоги, title: "gegenüber (in dem Geschäft gegenüber)" }
+  - { id: seit, group: Предлоги, title: "seit + дательный (seit einer Woche)" }
+  - { id: waehrend, group: Предлоги, title: "während + родительный (während des Urlaubs)" }
+  - { id: bis-vom-an, group: Предлоги, title: "bis, vom … an во времени (bis Montag, vom Herbst an)" }
+  - { id: weil, group: Связки, title: "weil и глагол в конце" }
+  - { id: deshalb, group: Связки, title: "deshalb и глагол на втором месте" }
+  - { id: dass, group: Связки, title: "dass и глагол в конце" }
+  - { id: wenn-nebensatz, group: Связки, title: "wenn в своей речи: условие и время, главная часть после придаточной" }
+  - { id: indirekte-frage, group: Связки, title: "Косвенный вопрос с ob и W-словом" }
+  - { id: wb-er, group: Словообразование, title: "Существительные на -er (Bewohner, Teilnehmer)" }
