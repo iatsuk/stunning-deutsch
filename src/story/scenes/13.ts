@@ -462,6 +462,7 @@ const schreiben: SceneNode[] = [
         { id: "d", de: "Treffpunkt ist am Hafen, Bootshaus 3.", ru: "Место встречи — в гавани, эллинг 3." },
         { id: "e", de: "Bis bald! Euer Hauke", ru: "До скорого! Ваш Хауке" },
       ],
+      also: [["a", "b", "d", "c", "e"]],
     },
   },
   narr("Frau Brandt macht den Ring wieder an. HEL 7305 sieht sehr {wichtig} aus. Und die Möwe? Sie will einen Fisch {bekommen}."),

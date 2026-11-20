@@ -184,7 +184,7 @@ const bahnhof: SceneNode[] = [
           who: "Lautsprecher · Hafen",
           before: "Die Fähre fährt wieder",
           after: "nach dem Sturm.",
-          hidden: "um vierzehn Uhr",
+          hidden: "ab vierzehn Uhr",
           ru: "Паром снова ходит с четырнадцати часов после шторма.",
           questions: [
             { id: "wann", text: "Wann fährt die Fähre wieder?" },

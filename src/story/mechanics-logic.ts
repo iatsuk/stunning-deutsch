@@ -384,6 +384,8 @@ export function validateMechanic(c: NewChallenge): boolean {
         new Set(c.bank).size === c.bank.length &&
         c.bank.length > slots.length &&
         Object.keys(c.answer).length === slots.length &&
+        // Игра убирает использованную полоску из банка, поэтому у пропусков разные ответы.
+        new Set(Object.values(c.answer)).size === slots.length &&
         slots.every((s) => Boolean(c.answer[s.slot]) && c.bank.includes(c.answer[s.slot]))
       );
     }
@@ -460,7 +462,8 @@ export function validateMechanic(c: NewChallenge): boolean {
       return (
         c.words.length >= 3 &&
         new Set(c.words).size === c.words.length &&
-        c.words.every((w) => /^\p{L}{3,9}$/u.test(w.replace(/^(der|die|das) /, "")))
+        // Только буквы клавиатуры игры: латиница, умлауты и ß.
+        c.words.every((w) => /^[A-Za-zÄÖÜäöüß]{3,9}$/.test(w.replace(/^(der|die|das) /, "")))
       );
     case "proofread": {
       const slots = proofSegments(c);

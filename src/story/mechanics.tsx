@@ -760,6 +760,8 @@ export function Comic({ c, value, seed, disabled, checked, change }: Game<"comic
       <div className="moin-comic">
         {c.panels.map((p, i) => {
           const fill = record[p.id] ? String(record[p.id]) : "";
+          // Перевод — той реплики, что стоит в облачке; у лишних реплик перевода нет.
+          const gloss = c.panels.find((q) => q.answer === fill)?.ru;
           const showGloss = glossed.includes(p.id);
           return (
             <div
@@ -784,9 +786,9 @@ export function Comic({ c, value, seed, disabled, checked, change }: Game<"comic
               >
                 {fill || "… выбрать реплику"}
               </button>
-              {fill &&
+              {gloss &&
                 (showGloss ? (
-                  <small className="moin-comic-ru">{p.ru}</small>
+                  <small className="moin-comic-ru">{gloss}</small>
                 ) : (
                   <button
                     type="button"

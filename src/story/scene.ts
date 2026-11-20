@@ -235,7 +235,7 @@ const BY_GAME: Record<string, string> = {
   contrast: "Was passt? Wählen Sie.",
   tail: "Finden Sie das letzte Wort und den Artikel.",
   protocol: "Lesen Sie die Hinweise und ergänzen Sie den Bericht.",
-  budget: "Wählen Sie passend zu allen Bedingungen.",
+  budget: "Was passt zu allen Bedingungen? Wählen Sie.",
   groupchat: "Lesen Sie den Chat und antworten Sie.",
   comic: "Wer sagt was? Ordnen Sie die Sätze zu.",
   retell: "Schreiben Sie den Text in der dritten Person.",

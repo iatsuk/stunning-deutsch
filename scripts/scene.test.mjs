@@ -844,6 +844,9 @@ test("all 13 new mechanics validate, check answers, explain mistakes and appear 
   assert.ok(!valid({ ...tail, rounds: [{ word: "Krankenhaus", parts: ["Kranken", "Haus"], ru: "больница" }, tail.rounds[1]] }));
   assert.ok(!valid({ ...budget, rules: [{ kind: "maxPrice", cents: 200, label: "Слишком мало" }, { kind: "minTag", tag: "drink", count: 2, label: "Два" }, { kind: "forbidTag", tag: "sweet", label: "Без" }] }));
   assert.ok(!valid({ ...gullword, words: ["der Hafen", "das Boot", "zu"] }));
+  // Буквы вне клавиатуры чайки не набрать, а полоска банка в протоколе встаёт только в один пропуск.
+  assert.ok(!valid({ ...gullword, words: ["der Hafen", "das Boot", "das Café"] }));
+  assert.ok(!valid({ ...protocol, answer: { f: "blau", w: "blau", o: "dem Club" } }));
   assert.ok(!valid({ ...proofread, segments: proofread.segments.map((s) => (typeof s === "string" || s.id === "s4" ? s : { ...s, draft: s.answer })) }));
 
   // Все 13 механик реально встроены в главы A1
