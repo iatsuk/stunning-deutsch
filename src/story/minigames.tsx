@@ -5,7 +5,7 @@ import { shuffle } from "../lib/shuffle";
 import { PlayButton } from "../markup";
 import { nounAudio, storyAudio, wordInfo } from "./audio";
 import { Gendered, Note, RouteMap, useQueue, walkAngle, type Game } from "./games";
-import { budgetCheck, compoundOf, decipher, floorLabel, gridKey, MOVES, NARRATOR, placeKey, plannerWho, proofSegments, pronounOf, protocolSlots, retellSlots, springRight, tailCuts, treeSlots, twentyState, walk } from "./logic";
+import { budgetCheck, compoundOf, decipher, floorLabel, gridKey, MOVES, NARRATOR, placeKey, plannerWho, proofSegments, pronounOf, protocolSlots, radioLine, retellSlots, springRight, tailCuts, treeSlots, twentyState, walk } from "./logic";
 import { answerOf, excludes } from "./twenty";
 import type { Answer, ComicPanel, Move, PortraitPart, SpringRound, TreeNode, TreeSlot } from "./types";
 
@@ -1573,7 +1573,9 @@ export function GroupChat({ c, value, seed, disabled, change, win, miss }: Game<
         return (
           <div key={m.id} className="moin-bubble" data-selected={picked || undefined}>
             <small>{m.who}</small>
-            <p lang="de">{m.de}</p>
+            <p lang="de">
+              {m.de} <PlayButton src={storyAudio(m.de, m.voice)} />
+            </p>
             {open && <small>{m.ru}</small>}
             <div className="moin-groupchat-actions">
               <button
@@ -1691,6 +1693,7 @@ export function Comic({ c, value, seed, disabled, checked, change }: Game<"comic
               >
                 {fill || "… выбрать реплику"}
               </button>
+              {fill && <PlayButton src={storyAudio(fill, NARRATOR)} />}
               {gloss &&
                 (showGloss ? (
                   <small className="moin-comic-ru">{gloss}</small>
@@ -1746,7 +1749,9 @@ export function Retell({ c, value, disabled, checked, change }: Game<"retell">) 
     <>
       <div className="moin-source">
         <div className="kicker">{c.who}</div>
-        <p lang="de">{c.quote}</p>
+        <p lang="de">
+          {c.quote} <PlayButton src={storyAudio(c.quote, c.voice)} />
+        </p>
         {openQuote && <small>{c.ru}</small>}
         <div>
           <button type="button" className="link-button" onClick={() => setOpenQuote(!openQuote)}>
@@ -1828,7 +1833,7 @@ function RadioRoundView({
     setCleared(true);
     setTone("good");
     setNote(round.ru);
-    if (round.sound) say(nounAudio(round.sound));
+    playAll([storyAudio(radioLine(round), round.voice), round.sound ? nounAudio(round.sound) : undefined]);
   }
 
   return (
@@ -1843,6 +1848,12 @@ function RadioRoundView({
             <span className="moin-radio-noise">[~~~ помехи ~~~]</span>
           )}
           {round.after && <> {round.after}</>}
+          {cleared && (
+            <>
+              {" "}
+              <PlayButton src={storyAudio(radioLine(round), round.voice)} label="Послушать сообщение" />
+            </>
+          )}
           {cleared && round.sound && (
             <>
               {" "}

@@ -285,11 +285,11 @@ const week: SceneNode[] = [
       kind: "groupchat",
       title: "Club-Chat · Sonntag",
       messages: [
-        { id: "m1", who: "Hauke", de: "Gehen wir heute Abend ins Kino?", ru: "Пойдём сегодня вечером в кино?" },
-        { id: "m2", who: "Mateo", de: "Ich kann nicht, ich will kochen.", ru: "Я не могу, я хочу готовить." },
-        { id: "m3", who: "Frau Petersen", de: "Am Montag kann ich nicht. Am Dienstag habe ich Zeit.", ru: "В понедельник я не могу. Во вторник у меня есть время." },
-        { id: "m4", who: "Dana", de: "Heute haben alle Zeit! Machen wir ein Picknick am Strand?", ru: "Сегодня у всех есть время! Устроим пикник на пляже?" },
-        { id: "m5", who: "Herr Jensen", de: "Moin.", ru: "Привет." },
+        { id: "m1", who: "Hauke", voice: "Rocko", de: "Gehen wir heute Abend ins Kino?", ru: "Пойдём сегодня вечером в кино?" },
+        { id: "m2", who: "Mateo", voice: "Reed", de: "Ich kann nicht, ich will kochen.", ru: "Я не могу, я хочу готовить." },
+        { id: "m3", who: "Frau Petersen", voice: "Sandy", de: "Am Montag kann ich nicht. Am Dienstag habe ich Zeit.", ru: "В понедельник я не могу. Во вторник у меня есть время." },
+        { id: "m4", who: "Dana", voice: "Anna", de: "Heute haben alle Zeit! Machen wir ein Picknick am Strand?", ru: "Сегодня у всех есть время! Устроим пикник на пляже?" },
+        { id: "m5", who: "Herr Jensen", voice: "Grandpa", de: "Moin.", ru: "Привет." },
       ],
       steps: [
         {

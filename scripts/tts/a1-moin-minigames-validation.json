@@ -1,0 +1,246 @@
+{
+  "date": "2026-11-20",
+  "scope": "Lines of four scene mini-games: radio messages (chapters 2 and 9), group chats (7 and 9), retellings (3 and 11) and comic bubbles (4, 10 and 11, read by the narrator)",
+  "model": "k2-fsa/OmniVoice",
+  "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+  "candidatesPerPhrase": 3,
+  "asr": "openai/whisper-large-v3",
+  "notes": [
+    "Each phrase has three takes; the chosen take has the closest transcript, an end level below -32 dB and no fragment flagged by tails.py. One of 87 takes was cut off at the end and was not chosen. tails.py passes on all 29 imported files, decoded from M4A.",
+    "Whisper writes numbers as digits (100, 32, 23, 14, 2); the takes say them in words. It spells Gaarden as «Gaden» and Döner-Stand as «Döner stand» in every take."
+  ],
+  "files": [
+    {
+      "file": "0d9e3fbe8440.m4a",
+      "text": "Der Club ist hundert Jahre alt!",
+      "voice": "Sandy",
+      "seed": 20705184,
+      "heard": "Der Club ist 100 Jahre alt.",
+      "endDb": -55.8
+    },
+    {
+      "file": "2af47d0008dc.m4a",
+      "text": "Ich komme aus Hamburg. Meine Schwester heißt Greta. Mein Opa heißt Heinrich und ich habe zwei Handys.",
+      "voice": "Reed",
+      "seed": 20802108,
+      "heard": "Ich komme aus Hamburg. Meine Schwester heißt Greta. Mein Opa heißt Heinrich und ich habe zwei Handys.",
+      "endDb": -52.4
+    },
+    {
+      "file": "0d451bb56f9a.m4a",
+      "text": "Mein Döner-Stand – hier?",
+      "voice": "Anna",
+      "seed": 21040954,
+      "heard": "Mein Döner stand hier.",
+      "endDb": -56.0
+    },
+    {
+      "file": "c4380ce4fbc3.m4a",
+      "text": "Gehen wir heute Abend ins Kino?",
+      "voice": "Rocko",
+      "seed": 20806947,
+      "heard": "Gehen wir heute Abend ins Kino?",
+      "endDb": -66.8
+    },
+    {
+      "file": "7e43f13105b3.m4a",
+      "text": "Wir sind an der Post. Aber wo ist der Farbenweg?",
+      "voice": "Flo",
+      "seed": 20691411,
+      "heard": "Wir sind an der Post. Aber wo ist der Farbenweg?",
+      "endDb": -67.8
+    },
+    {
+      "file": "55d8dd94dc1e.m4a",
+      "text": "An der zweiten Ampel links!!! Ganz sicher!!!",
+      "voice": "Reed",
+      "seed": 21078334,
+      "heard": "An der zweiten Ampel links. Ganz sicher.",
+      "endDb": -60.9
+    },
+    {
+      "file": "6f99f1e89d2e.m4a",
+      "text": "Todo recto! Zweite Ampel rechts!",
+      "voice": "Reed",
+      "seed": 20494094,
+      "heard": "TODO RECTO, zweite Ampel rechts.",
+      "endDb": -51.8
+    },
+    {
+      "file": "7dce778b93af.m4a",
+      "text": "Mein Rücken tut weh.",
+      "voice": "Anna",
+      "seed": 20632015,
+      "heard": "Mein Rücken tut weh.",
+      "endDb": -60.0
+    },
+    {
+      "file": "e603a6bd4d7e.m4a",
+      "text": "Hier bin ich keine Ärztin.",
+      "voice": "Anna",
+      "seed": 20975390,
+      "heard": "Hier bin ich keine Ärztin.",
+      "endDb": -65.8
+    },
+    {
+      "file": "21246208fe38.m4a",
+      "text": "Ich habe die Farbe gekauft. Mein Opa hat das Schild gemacht, und ich habe das Schild gemalt.",
+      "voice": "Shelley",
+      "seed": 20556824,
+      "heard": "Ich habe die Farbe gekauft, mein Opa hat das Schild gemacht und ich habe das Schild gemalt.",
+      "endDb": -47.7
+    },
+    {
+      "file": "bcf7b79fe136.m4a",
+      "text": "Die Möwe hat nichts gemacht!",
+      "voice": "Anna",
+      "seed": 20913430,
+      "heard": "Die Möwe hat nichts gemacht.",
+      "endDb": -58.1
+    },
+    {
+      "file": "f035ddc0999a.m4a",
+      "text": "Der Kaffee kostet vier Euro.",
+      "voice": "Anna",
+      "seed": 20580922,
+      "heard": "Der Kaffee kostet 4 Euro.",
+      "endDb": -56.0
+    },
+    {
+      "file": "bbd1dc1b82c6.m4a",
+      "text": "Das Boot liegt am Hafen — zweiunddreißig!",
+      "voice": "Rocko",
+      "seed": 20618389,
+      "heard": "Das Boot liegt am Hafen 32.",
+      "endDb": -58.6
+    },
+    {
+      "file": "f48354f032cf.m4a",
+      "text": "Meine Nummer ist dreiundzwanzig!",
+      "voice": "Reed",
+      "seed": 21189854,
+      "heard": "Meine Nummer ist 23.",
+      "endDb": -64.9
+    },
+    {
+      "file": "792efd52423f.m4a",
+      "text": "Ich kann nicht, ich will kochen.",
+      "voice": "Reed",
+      "seed": 20752014,
+      "heard": "Ich kann nicht, ich will kochen.",
+      "endDb": -58.7
+    },
+    {
+      "file": "0078c5259e83.m4a",
+      "text": "Nach Gaarden nehmen Sie bitte die Linie 11 von Steig zwei.",
+      "voice": "Shelley",
+      "seed": 20921426,
+      "heard": "Nach Gaden nehmen Sie bitte die Linie 11 von Steig 2.",
+      "endDb": -63.2
+    },
+    {
+      "file": "aae9d36c8770.m4a",
+      "text": "Ich bin kein Koch!",
+      "voice": "Anna",
+      "seed": 20475967,
+      "heard": "Ich bin kein Koch.",
+      "endDb": -56.8
+    },
+    {
+      "file": "dc39f52f8bcc.m4a",
+      "text": "Moin! Kaffee für alle!",
+      "voice": "Anna",
+      "seed": 21057354,
+      "heard": "Moin, Kaffee für alle!",
+      "endDb": -59.2
+    },
+    {
+      "file": "60933232d209.m4a",
+      "text": "Moin.",
+      "voice": "Anna",
+      "seed": 20927239,
+      "heard": "Moin!",
+      "endDb": -56.7
+    },
+    {
+      "file": "5871003907f6.m4a",
+      "text": "Am Montag kann ich nicht. Am Dienstag habe ich Zeit.",
+      "voice": "Sandy",
+      "seed": 20563188,
+      "heard": "Am Montag kann ich nicht. Am Dienstag habe ich Zeit.",
+      "endDb": -48.8
+    },
+    {
+      "file": "91838160579d.m4a",
+      "text": "Heute haben alle Zeit! Machen wir ein Picknick am Strand?",
+      "voice": "Anna",
+      "seed": 20594907,
+      "heard": "Heute haben alle Zeit. Machen wir ein Picknick am Strand?",
+      "endDb": -49.5
+    },
+    {
+      "file": "ff185a35fd71.m4a",
+      "text": "Die Fähre fährt wieder ab vierzehn Uhr nach dem Sturm.",
+      "voice": "Eddy",
+      "seed": 21062575,
+      "heard": "Die Fähre fährt wieder ab 14 Uhr nach dem Sturm.",
+      "endDb": -55.6
+    },
+    {
+      "file": "542c43a30901.m4a",
+      "text": "Dieser Bus fährt zum Bahnhof — bitte einsteigen!",
+      "voice": "Eddy",
+      "seed": 20329215,
+      "heard": "Dieser Bus fährt zum Bahnhof. Bitte einsteigen.",
+      "endDb": -60.8
+    },
+    {
+      "file": "627f6ffb897e.m4a",
+      "text": "Ich bin noch im Krankenhaus. Fragt bei der Post!",
+      "voice": "Anna",
+      "seed": 20401212,
+      "heard": "Ich bin noch im Krankenhaus, fragt bei der Post.",
+      "endDb": -56.6
+    },
+    {
+      "file": "3008d3a5d086.m4a",
+      "text": "Ich darf nicht sprechen.",
+      "voice": "Anna",
+      "seed": 21007876,
+      "heard": "Ich darf nicht sprechen.",
+      "endDb": -63.3
+    },
+    {
+      "file": "17443fba4eac.m4a",
+      "text": "Nehmen Sie meinen Termin!",
+      "voice": "Anna",
+      "seed": 20666282,
+      "heard": "Nehmen Sie meinen Termin.",
+      "endDb": -65.2
+    },
+    {
+      "file": "9416f2db8a4a.m4a",
+      "text": "Ich habe Fieber!",
+      "voice": "Anna",
+      "seed": 20942280,
+      "heard": "Ich habe Fieber.",
+      "endDb": -58.1
+    },
+    {
+      "file": "7fef10776785.m4a",
+      "text": "Das ist mein Kuchen für die Party.",
+      "voice": "Anna",
+      "seed": 20448899,
+      "heard": "Das ist mein Kuchen für die Party.",
+      "endDb": -55.4
+    },
+    {
+      "file": "2696fe47c353.m4a",
+      "text": "Entschuldigung, Greta!",
+      "voice": "Anna",
+      "seed": 20342673,
+      "heard": "Entschuldigung, Greta.",
+      "endDb": -65.1
+    }
+  ]
+}

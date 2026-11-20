@@ -214,6 +214,7 @@ const queue: SceneNode[] = [
       rounds: [
         {
           who: "Hauke",
+          voice: "Rocko",
           before: "Das Boot liegt",
           after: "— zweiunddreißig!",
           hidden: "am Hafen",
@@ -228,6 +229,7 @@ const queue: SceneNode[] = [
         },
         {
           who: "Frau Petersen",
+          voice: "Sandy",
           before: "Der Club ist",
           after: "alt!",
           hidden: "hundert Jahre",
@@ -242,6 +244,7 @@ const queue: SceneNode[] = [
         },
         {
           who: "Nils",
+          voice: "Reed",
           before: "Meine Nummer ist",
           after: "!",
           hidden: "dreiundzwanzig",

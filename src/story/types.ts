@@ -305,7 +305,7 @@ export type Challenge =
   /** «Комикс с пустыми облачками»: распределить реплики по кадрам сцены. */
   | { kind: "comic"; panels: ComicPanel[]; extra?: string[] }
   /** «Пересказ для блокнота»: переключить слова цитаты героя из 1-го лица в 3-е. */
-  | { kind: "retell"; who: string; quote: string; ru: string; tokens: RetellToken[] }
+  | { kind: "retell"; who: string; voice: string; quote: string; ru: string; tokens: RetellToken[] }
   /** «Рация с помехами»: выбрать верный вопрос, чтобы прояснить смазанную часть реплики. */
   | { kind: "radio"; rounds: RadioRound[] }
   /** «Чайка крадётся к булочке»: угадать слово по буквам за 6 промахов, без наказания. */
@@ -332,13 +332,14 @@ export type BudgetRule =
   | { kind: "exactTotal"; count: number; label: string }
   | { kind: "minTag"; tag: string; count: number; label: string }
   | { kind: "forbidTag"; tag: string; label: string };
-export type GroupMsg = { id: string; who: string; de: string; ru: string };
+export type GroupMsg = { id: string; who: string; voice: string; de: string; ru: string };
 export type GroupStep = { prompt: string; replyTo: string; options: Option[]; answer: string };
 export type ComicPanel = { id: string; scene: string; who: string; art: string; answer: string; ru: string };
 export type RetellSlot = { id: string; from: string; options: string[]; answer: string };
 export type RetellToken = string | RetellSlot;
 export type RadioRound = {
   who: string;
+  voice: string;
   before: string;
   after: string;
   hidden: string;

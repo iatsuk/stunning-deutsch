@@ -15,6 +15,7 @@ import type {
   Phrase,
   PortraitPart,
   ProofSlot,
+  RadioRound,
   RetellSlot,
   TreeNode,
   TreeSlot,
@@ -78,6 +79,15 @@ function challengeLines(c: Challenge): { text: string; voice: string }[] {
       return c.turns.map((t) => ({ text: t.say, voice: c.voice }));
     case "weather":
       return c.forecast.map((f) => ({ text: f.de, voice: c.voice }));
+    case "groupchat":
+      return c.messages.map((m) => ({ text: m.de, voice: m.voice }));
+    case "retell":
+      return [{ text: c.quote, voice: c.voice }];
+    case "radio":
+      return c.rounds.map((r) => ({ text: radioLine(r), voice: r.voice }));
+    // Реплику в облачке читает рассказчица: голос героя подсказал бы, в какой кадр она идёт.
+    case "comic":
+      return [...c.panels.map((p) => p.answer), ...(c.extra ?? [])].map((text) => ({ text, voice: NARRATOR }));
     case "twenty":
       return [
         ...c.questions.map((q) => ({ text: q.de, voice: NARRATOR })),
@@ -397,6 +407,10 @@ export const protocolSlots = (c: Extract<Challenge, { kind: "protocol" }>) =>
 
 export const retellSlots = (c: Extract<Challenge, { kind: "retell" }>) =>
   c.tokens.filter((t): t is RetellSlot => typeof t !== "string");
+
+/** Сообщение рации целиком, каким оно звучит, когда помеха прояснилась. */
+export const radioLine = (r: RadioRound) =>
+  [r.before, r.hidden, r.after].filter(Boolean).join(" ").replace(/ (?=[!?.,])/g, "");
 
 export const proofSegments = (c: Extract<Challenge, { kind: "proofread" }>) =>
   c.segments.filter((s): s is ProofSlot => typeof s !== "string");
@@ -1060,7 +1074,7 @@ export function validateChallenge(
         Boolean(c.title) &&
         c.messages.length >= 3 &&
         new Set(msgIds).size === msgIds.length &&
-        c.messages.every((m) => Boolean(m.id && m.who && m.de && m.ru)) &&
+        c.messages.every((m) => Boolean(m.id && m.who && m.voice && m.de && m.ru)) &&
         c.steps.length >= 2 &&
         c.steps.every(
           (s) =>
@@ -1086,7 +1100,7 @@ export function validateChallenge(
       const slots = retellSlots(c);
       const ids = slots.map((s) => s.id);
       return (
-        Boolean(c.who && c.quote && c.ru) &&
+        Boolean(c.who && c.voice && c.quote && c.ru) &&
         slots.length >= 3 &&
         new Set(ids).size === ids.length &&
         slots.every(
@@ -1104,7 +1118,7 @@ export function validateChallenge(
         c.rounds.length >= 2 &&
         c.rounds.every(
           (r) =>
-            Boolean(r.who && r.hidden && r.ru) &&
+            Boolean(r.who && r.voice && r.hidden && r.ru) &&
             (Boolean(r.before) || Boolean(r.after)) &&
             r.questions.length >= 3 &&
             new Set(r.questions.map((q) => q.id)).size === r.questions.length &&

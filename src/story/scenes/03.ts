@@ -682,6 +682,7 @@ const cake: SceneNode[] = [
     c: {
       kind: "retell",
       who: "Nils",
+      voice: "Reed",
       quote: "Ich komme aus Hamburg. Meine Schwester heißt Greta. Mein Opa heißt Heinrich und ich habe zwei Handys.",
       ru: "Я из Гамбурга. Мою сестру зовут Грета. Моего дедушку зовут Хайнрих, и у меня два мобильных.",
       tokens: [

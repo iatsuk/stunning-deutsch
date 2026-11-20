@@ -460,6 +460,7 @@ const warum: SceneNode[] = [
     c: {
       kind: "retell",
       who: "Greta",
+      voice: "Shelley",
       quote: "Ich habe die Farbe gekauft. Mein Opa hat das Schild gemacht, und ich habe das Schild gemalt.",
       ru: "Я купила краску. Мой дедушка сделал табличку, а я её раскрасила.",
       tokens: [

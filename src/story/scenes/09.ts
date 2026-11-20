@@ -182,6 +182,7 @@ const bahnhof: SceneNode[] = [
       rounds: [
         {
           who: "Lautsprecher · Hafen",
+          voice: "Eddy",
           before: "Die Fähre fährt wieder",
           after: "nach dem Sturm.",
           hidden: "ab vierzehn Uhr",
@@ -195,6 +196,7 @@ const bahnhof: SceneNode[] = [
         },
         {
           who: "Lautsprecher · Bussteig 2",
+          voice: "Shelley",
           before: "Nach Gaarden nehmen Sie bitte",
           after: "von Steig zwei.",
           hidden: "die Linie 11",
@@ -209,6 +211,7 @@ const bahnhof: SceneNode[] = [
         },
         {
           who: "Busfahrer",
+          voice: "Eddy",
           before: "Dieser Bus fährt",
           after: "— bitte einsteigen!",
           hidden: "zum Bahnhof",
@@ -528,10 +531,10 @@ const ampel: SceneNode[] = [
       kind: "groupchat",
       title: "Team-Chat · Gaarden",
       messages: [
-        { id: "m1", who: "Elif", de: "Wir sind an der Post. Aber wo ist der Farbenweg?", ru: "Мы у почты. Но где Фарбенвег?" },
-        { id: "m2", who: "Nils", de: "An der zweiten Ampel links!!! Ganz sicher!!!", ru: "У второго светофора налево!!! Точно!!!" },
-        { id: "m3", who: "Mateo", de: "Todo recto! Zweite Ampel rechts!", ru: "Прямо! Второй светофор направо!" },
-        { id: "m4", who: "Dana", de: "Ich bin noch im Krankenhaus. Fragt bei der Post!", ru: "Я ещё в больнице. Спросите на почте!" },
+        { id: "m1", who: "Elif", voice: "Flo", de: "Wir sind an der Post. Aber wo ist der Farbenweg?", ru: "Мы у почты. Но где Фарбенвег?" },
+        { id: "m2", who: "Nils", voice: "Reed", de: "An der zweiten Ampel links!!! Ganz sicher!!!", ru: "У второго светофора налево!!! Точно!!!" },
+        { id: "m3", who: "Mateo", voice: "Reed", de: "Todo recto! Zweite Ampel rechts!", ru: "Прямо! Второй светофор направо!" },
+        { id: "m4", who: "Dana", voice: "Anna", de: "Ich bin noch im Krankenhaus. Fragt bei der Post!", ru: "Я ещё в больнице. Спросите на почте!" },
       ],
       steps: [
         {

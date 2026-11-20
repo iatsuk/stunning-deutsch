@@ -2,7 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { phrases } from "../src/story/data.ts";
-import { compoundOf, decipher, gridSolutions, initialAnswer, isCorrect, mistake, plannerFree, solution, storyLines, validateChallenge, validateStory } from "../src/story/logic.ts";
+import { compoundOf, decipher, gridSolutions, initialAnswer, isCorrect, mistake, plannerFree, radioLine, solution, storyLines, validateChallenge, validateStory } from "../src/story/logic.ts";
 import { anweisung, answerSlots, arrange, flatNodes, flow, keyOf, lookOrder, nodeAt, outcomeOf, requiredKeys, sceneKeys, shownWords, spot, typedRight, worldAfter } from "../src/story/scene.ts";
 import { RACE_STAKES } from "../src/story/build.ts";
 import { MNEMONICS } from "../src/story/mnemonics.ts";
@@ -741,9 +741,9 @@ test("word-order, room, torn-note and the other puzzle games validate, check ans
     kind: "groupchat",
     title: "Чат клуба",
     messages: [
-      { id: "m1", who: "Nils", de: "Wann treffen wir uns?", ru: "Когда встречаемся?" },
-      { id: "m2", who: "Dana", de: "Wo ist der Schlüssel?", ru: "Где ключ?" },
-      { id: "m3", who: "Mateo", de: "Ich bringe Brot mit.", ru: "Я принесу хлеб." },
+      { id: "m1", who: "Nils", voice: "Reed", de: "Wann treffen wir uns?", ru: "Когда встречаемся?" },
+      { id: "m2", who: "Dana", voice: "Anna", de: "Wo ist der Schlüssel?", ru: "Где ключ?" },
+      { id: "m3", who: "Mateo", voice: "Reed", de: "Ich bringe Brot mit.", ru: "Я принесу хлеб." },
     ],
     steps: [
       { prompt: "Ответь Нильсу", replyTo: "m1", options: [{ id: "o1", text: "Um acht!", why: "" }, { id: "o2", text: "Auf dem Tisch.", why: "Это про ключ" }], answer: "o1" },
@@ -762,6 +762,7 @@ test("word-order, room, torn-note and the other puzzle games validate, check ans
   const retell = {
     kind: "retell",
     who: "Nils",
+    voice: "Reed",
     quote: "Ich komme aus Kiel. Mein Boot ist klein, und ich segle gern.",
     ru: "Я из Киля. Моя лодка маленькая, и я люблю ходить под парусом.",
     tokens: [
@@ -778,6 +779,7 @@ test("word-order, room, torn-note and the other puzzle games validate, check ans
     rounds: [
       {
         who: "Hafenmeister",
+        voice: "Eddy",
         before: "Das Schiff kommt",
         after: "an.",
         hidden: "um sechs Uhr",
@@ -791,6 +793,7 @@ test("word-order, room, torn-note and the other puzzle games validate, check ans
       },
       {
         who: "Bus",
+        voice: "Eddy",
         before: "Wir fahren",
         after: "ab.",
         hidden: "zum Hafen",
@@ -841,6 +844,13 @@ test("word-order, room, torn-note and the other puzzle games validate, check ans
   assert.ok(isCorrect(torn, ["1", "3", "2", "4"]));
   assert.ok(isCorrect(budget, { tea: 1, bun: 1 }));
   assert.ok(isCorrect(budget, { tea: 1, cake: 1 }));
+
+  // Сообщение рации звучит целиком; реплики чата и цитата пересказа — голосами героев.
+  assert.equal(radioLine({ before: "Meine Nummer ist", hidden: "dreiundzwanzig", after: "!" }), "Meine Nummer ist dreiundzwanzig!");
+  const heard = storyLines([{ beats: [{ challenge: { kind: "play", nodes: [radio, groupchat, retell].map((c) => ({ t: "game", task: c.kind, c })) } }] }], {});
+  assert.ok(heard.some((l) => l.voice === "Eddy" && l.text === "Das Schiff kommt um sechs Uhr an."));
+  assert.ok(heard.some((l) => l.voice === "Anna" && l.text === "Wo ist der Schlüssel?"));
+  assert.ok(heard.some((l) => l.voice === "Reed" && l.text === retell.quote));
 
   // Невалидные варианты отсекаются validateChallenge
   assert.ok(!valid({ ...spring, rounds: [{ ...spring.rounds[0], start: ["wrong"] }, spring.rounds[1]] }));
