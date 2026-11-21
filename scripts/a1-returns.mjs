@@ -9,6 +9,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { phrases } from "../src/story/data.ts";
 import { sceneUnits } from "../src/story/review.ts";
+import { flatNodes } from "../src/story/scene.ts";
 import { sceneChapters } from "../src/story/scenes/index.ts";
 import { A2_FROM, BASELINE, baselineOf, buildIndex, found, THRESHOLD } from "./a1-index.mjs";
 
@@ -65,6 +66,50 @@ for (const w of index.words) {
   const slots = Math.max(T.hits - w.hits, T.chapters - w.chapters.length, w.actions < T.actions || w.heard < T.heard ? 1 : 0);
   plans.push({ w, unit, met: metAt.get(unit), slots, heard: w.heard >= T.heard, chapters: new Set(w.chapters) });
 }
+// Слово, которое реплика вводит полем learn, обязано вернуться после неё — в действии своей или
+// следующих глав (тест в scripts/scene.test.mjs). Закреплённое по индексу слово в очередь выше не
+// попадает, поэтому такому слову нужно одно место в раундах после главы реплики, вне очереди.
+const ACTIONS = new Set(["reply", "type", "gap", "hear", "pick", "look", "game"]);
+const actionText = (n) =>
+  n.t === "reply" || n.t === "pick"
+    ? n.options.map((o) => o.text).join(" ")
+    : n.t === "type"
+      ? n.answers.join(" ")
+      : n.t === "gap"
+        ? `${n.text} ${n.options.join(" ")}`
+        : n.t === "hear"
+          ? `${n.de} ${n.options.join(" ")}`
+          : n.t === "look"
+            ? n.items.map((i) => i.de ?? "").join(" ")
+            : n.t === "game"
+              ? JSON.stringify(n.c)
+              : "";
+const stem = (word) => bare(word).replace(/[?!.,]/g, "").toLowerCase().slice(0, 4);
+const chapterNodes = sceneChapters.map((c) => c.beats.flatMap((b) => flatNodes(b.challenge.nodes)));
+const learned = [];
+chapterNodes.forEach((all, ci) => {
+  const ahead = chapterNodes.slice(ci + 1).flat().filter((n) => ACTIONS.has(n.t));
+  all.forEach((n, i) => {
+    if (n.t !== "say") return;
+    for (const word of n.learn ?? []) {
+      const later = [...all.slice(i + 1).filter((x) => ACTIONS.has(x.t)), ...ahead];
+      if (!later.some((x) => actionText(x).toLowerCase().includes(stem(word)) || found(word, actionText(x)))) learned.push({ word, chapter: ci + 1 });
+    }
+  });
+});
+for (const { word, chapter } of learned) {
+  const unit = playable.find((u) => u === word);
+  if (!unit) continue;
+  const known = plans.find((q) => q.unit === unit);
+  if (known) {
+    known.after = Math.max(known.after ?? 0, chapter);
+    known.slots = Math.max(known.slots, 1);
+    continue;
+  }
+  const w = index.words.find((x) => x.de === word) ?? { key: word.toLowerCase(), de: word, hits: 0, chapters: [], heard: 0, actions: 0 };
+  plans.push({ w, unit, met: metAt.get(unit), after: chapter, slots: 1, learnOnly: true, heard: w.heard >= T.heard, chapters: new Set(w.chapters) });
+}
+
 // Сначала слова храповика, которые прошлая попытка раскладки потеряла (first). Затем слова A1 — те,
 // которые игрок встречает раньше главы A2_FROM: их закрепляет только A1, а поздние слова доводит
 // сезон A2. Внутри — слова поздних глав: им осталось меньше глав для возвращений, а слово ранней главы
@@ -74,6 +119,7 @@ const kept = new Set(baseline.words);
 const first = new Set();
 const late = (p) => p.met >= A2_FROM;
 const queue = (a, b) =>
+  Boolean(b.learnOnly) - Boolean(a.learnOnly) ||
   first.has(b.w.key) - first.has(a.w.key) ||
   late(a) - late(b) ||
   b.met - a.met ||
@@ -115,7 +161,7 @@ const STEPS = [1, 3, 6, 2, 4, 5, 7, 8, 9, 10, 11];
 function place(p) {
   for (const step of STEPS) {
     if (p.need <= 0) return;
-    const n = p.met + step;
+    const n = Math.max(p.met, p.after ?? 0) + step;
     if (!games[n] || p.used.has(n)) continue;
     if (p.chapters.has(n) && T.chapters - p.chapters.size > 0) continue;
     const order = PREFER.filter((m) => p.heard || HEARD.has(m));
@@ -162,7 +208,7 @@ function layout() {
   for (let round = 0; round < 20; round++) {
     for (const g of Object.values(games).flat()) g.words = [];
     // Каждая попытка начинает со слова, каким его видит индекс без раундов, а не с прошлой раскладки.
-    unique.forEach((p) => Object.assign(p, { need: p.slots, used: new Set(), chapters: new Set(p.w.chapters), heard: p.w.heard >= T.heard }));
+    unique.forEach((p) => Object.assign(p, { need: p.slots, used: new Set(), chapters: new Set(p.w.chapters), heard: (p.w.heard ?? 0) >= T.heard }));
     for (const p of unique) place(p);
     for (const [n, list] of Object.entries(games)) for (const g of list) if (g.words.length && g.words.length < g.min) fill(g, Number(n), unique);
     const small = Object.values(games).flat().filter((g) => !g.closed && g.words.length && g.words.length < g.min);

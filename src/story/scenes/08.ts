@@ -774,6 +774,31 @@ const evening: SceneNode[] = [
       no("Sie ist hier, dann sie hat Angst vor dem Sturm.", "dann — «потом», и после него глагол сразу. Причину называет denn."),
     ],
   },
+  narr("Elif macht das Radio an: der {wetterbericht} für die Woche. Хауке слушает — и бледнеет."),
+  {
+    t: "game",
+    task: "Послушайте прогноз по радио и поставьте значок погоды на каждый день.",
+    hint: "Значок — картинка погоды: Sturm и Regen — дождь, Wolken — облачно, Sonne — солнечно.",
+    c: {
+      kind: "weather",
+      voice: "Eddy",
+      days: ["Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"],
+      skies: [
+        { id: "a", de: "sonnig", ru: "солнечно", icon: "☀️" },
+        { id: "b", de: "bewölkt", ru: "облачно", icon: "☁️" },
+        { id: "c", de: "windig", ru: "ветрено", icon: "💨" },
+        { id: "d", de: "Es regnet.", ru: "дождь", icon: "🌧️" },
+        { id: "e", de: "Es schneit.", ru: "снег", icon: "❄️" },
+      ],
+      forecast: [
+        { de: "Am Dienstag kommt der Sturm: Es regnet, den ganzen Tag.", ru: "Во вторник придёт шторм: дождь весь день.", day: "Dienstag", sky: "d" },
+        { de: "Am Mittwoch ist es noch windig.", ru: "В среду ещё ветрено.", day: "Mittwoch", sky: "c" },
+        { de: "Am Donnerstag ist es sonnig.", ru: "В четверг солнечно.", day: "Donnerstag", sky: "a" },
+        { de: "Am Freitag ist es bewölkt.", ru: "В пятницу облачно.", day: "Freitag", sky: "b" },
+        { de: "Und am Samstag? Es regnet wieder.", ru: "А в субботу? Снова дождь.", day: "Samstag", sky: "d" },
+      ],
+    },
+  },
   {
     t: "game",
     task: "Хауке устраивает репетицию экзамена. Тема дня — жильё.",

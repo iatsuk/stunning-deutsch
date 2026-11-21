@@ -638,6 +638,29 @@ const beach: SceneNode[] = [
       ],
     },
   },
+  narr("Нильс показывает на телефоне семейное фото: Opa kommt am Samstag — und das ist die ganze Familie."),
+  {
+    t: "game",
+    task: "Семья Нильса: впишите имена в семейное дерево.",
+    hint: "Читайте по строчке: Schwester — сестра, Vater — отец, Opa и Oma — дедушка и бабушка.",
+    c: {
+      kind: "tree",
+      text: [
+        { de: "Ich bin Nils. Greta ist meine Schwester.", ru: "Я Нильс. Грета — моя сестра." },
+        { de: "Unser Vater heißt Peter.", ru: "Нашего отца зовут Петер." },
+        { de: "Unser Opa heißt Heinrich Hansen. Er ist neunzig!", ru: "Нашего дедушку зовут Хайнрих Хансен. Ему девяносто!" },
+        { de: "Und unsere Oma heißt Hilde.", ru: "А нашу бабушку зовут Хильде." },
+      ],
+      root: {
+        id: "opa",
+        icon: "👴",
+        partner: { id: "oma", icon: "👵" },
+        children: [{ id: "vater", children: [{ id: "nils", icon: "🧑", given: "Nils" }, { id: "greta", icon: "👩" }] }],
+      },
+      names: ["Heinrich", "Hilde", "Peter", "Greta", "Hauke"],
+      answer: { opa: "Heinrich", oma: "Hilde", vater: "Peter", greta: "Greta" },
+    },
+  },
   narr("Und dann kommt Frauke — eine Stunde zu spät. На Party она опаздывает всегда, на новость — никогда. Sie hört nur das Ende."),
   frauke(FRAUKE_FIRMA, "Я опоздала? Неважно! Я знаю: Грета работает в той самой фирме!"),
   {
