@@ -554,8 +554,8 @@ const hotel: SceneNode[] = [
         },
         {
           id: "stay",
-          text: "Frau Petersen ___ im Hotel geblieben.",
-          ru: "Фрау Петерсен осталась в отеле.",
+          text: "Opa Hansen ___ im Hotel geblieben.",
+          ru: "Опа Хансен остался в отеле.",
           bay: "sein",
           why: "bleiben — глагол-исключение состояния, Perfekt только с sein.",
         },

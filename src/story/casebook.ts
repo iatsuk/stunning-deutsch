@@ -24,9 +24,9 @@ export const HEROES: { name: string; facts: string[] }[] = [
     name: "Йенсен",
     facts: [
       "Die Karten! Der, die, das – das ist Jensens System.",
-      "Herr Jensen trinkt nur Tee. Aber Herr Jensen geht nie ins Café. Nie!",
-      "Herr Jensen kauft keine Farbe. Er kauft nur Tee!",
+      "Moin. Heute Tee um halb sechs. Wie immer. Moin.",
       "Ich kann nicht. Ich will segeln.",
+      "Vor fünfzig Jahren habe ich die Farbe gehalten. Heute ist das Schild wieder da. Danke, Greta. Danke, Heinrich. Willkommen, Kieler Woche!",
     ],
   },
   {

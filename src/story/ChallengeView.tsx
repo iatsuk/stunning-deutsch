@@ -270,7 +270,10 @@ export function ChallengeView({
                 type="button"
                 key={n}
                 disabled={disabled || String(shown).length >= c.length}
-                onClick={() => change(String(shown) + n)}
+                onClick={() => {
+                  sound("key");
+                  change(String(shown) + n);
+                }}
               >
                 {n}
               </button>

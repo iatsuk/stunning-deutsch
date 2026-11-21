@@ -1002,11 +1002,16 @@ export function Embedded({
   const [checked, setChecked] = useState(false);
   const [attempts, setAttempts] = useState(0);
   const [won, setWon] = useState(false);
+  const [sent, setSent] = useState(false);
   // Ошибки за игру: от них зависят последствия outcome (в гонке — упущенные слова).
   const misses = useRef(0);
   const slip = (word?: string) => {
     misses.current += 1;
     miss(word);
+  };
+  const finish = () => {
+    setSent(true);
+    done(misses.current);
   };
   const game: GameProps = {
     value,
@@ -1021,7 +1026,7 @@ export function Embedded({
     // Победа нажатием внутри игры сразу ведёт дальше: две кнопки подряд игроку не нужны.
     win: (advance) => {
       setWon(true);
-      if (advance) done(misses.current);
+      if (advance) finish();
     },
     miss: slip,
     quiet,
@@ -1047,7 +1052,7 @@ export function Embedded({
             setAttempts(attempts + 1);
             if (isCorrect(c, value)) {
               setWon(true);
-              done(misses.current);
+              finish();
             } else slip();
           }}
         >
@@ -1063,7 +1068,7 @@ export function Embedded({
           )}
         </Note>
       )}
-      {won && <NextButton onClick={() => done(misses.current)} />}
+      {won && !sent && <NextButton onClick={finish} />}
     </div>
   );
 }

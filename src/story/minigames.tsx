@@ -5,7 +5,7 @@ import { shuffle } from "../lib/shuffle";
 import { PlayButton } from "../markup";
 import { nounAudio, storyAudio, wordInfo } from "./audio";
 import { Gendered, Note, RouteMap, useQueue, walkAngle, type Game } from "./games";
-import { budgetCheck, compoundOf, craftKey, craftMiss, decipher, floorLabel, gridKey, MOVES, NARRATOR, placeKey, plannerWho, proofSegments, pronounOf, protocolSlots, radioLine, retellSlots, springRight, tailCuts, treeSlots, twentyState, walk } from "./logic";
+import { budgetCheck, compoundOf, craftKey, craftMiss, decipher, floorLabel, gridKey, MOVES, NARRATOR, placeKey, plannerWho, proofSegments, pronounOf, protocolSlots, radioLine, retellSlots, slotOptions, springRight, tailCuts, treeSlots, twentyState, walk } from "./logic";
 import { answerOf, excludes } from "./twenty";
 import { sound } from "./sfx";
 import type { Answer, ComicPanel, Move, PortraitPart, SpringRound, TreeNode, TreeSlot } from "./types";
@@ -1737,7 +1737,7 @@ export function Comic({ c, value, seed, disabled, checked, change }: Game<"comic
 
 /** «Пересказ для блокнота». */
 
-export function Retell({ c, value, disabled, checked, change }: Game<"retell">) {
+export function Retell({ c, value, seed, disabled, checked, change }: Game<"retell">) {
   const record = asRecord(value);
   const slots = useMemo(() => retellSlots(c), [c]);
   const [picked, setPicked] = useState<string | null>(null);
@@ -1792,7 +1792,7 @@ export function Retell({ c, value, disabled, checked, change }: Game<"retell">) 
       </div>
       {activeSlot && !disabled && (
         <div className="moin-tiles" role="group" aria-label={`Замена для ${activeSlot.from}`}>
-          {activeSlot.options.map((opt) => (
+          {slotOptions(activeSlot, seed).map((opt) => (
             <button
               type="button"
               key={opt}
@@ -1979,8 +1979,8 @@ export function Craft({ c, value, disabled, change, win, miss }: Game<"craft">) 
       </div>
       {made.length > 0 && (
         <p className="moin-craft-made" aria-label="Уже собрано">
-          {made.map(([id, n]) => (
-            <span key={id} title={item(id).de}>
+          {made.map(([id, n], i) => (
+            <span key={`${i}-${id}`} title={item(id).de}>
               {item(id).icon.repeat(n)}
             </span>
           ))}
@@ -2165,7 +2165,7 @@ export function GullWord({ c, value, seed, disabled, change, win, miss }: Game<"
 
 /** «Редактор черновика». */
 
-export function Proofread({ c, value, disabled, checked, change }: Game<"proofread">) {
+export function Proofread({ c, value, seed, disabled, checked, change }: Game<"proofread">) {
   const record = asRecord(value);
   const slots = useMemo(() => proofSegments(c), [c]);
   const [active, setActive] = useState<string | null>(null);
@@ -2213,7 +2213,7 @@ export function Proofread({ c, value, disabled, checked, change }: Game<"proofre
       </div>
       {activeSeg && !disabled ? (
         <div className="moin-tiles">
-          {activeSeg.options.map((opt) => (
+          {slotOptions(activeSeg, seed).map((opt) => (
             <button
               type="button"
               key={opt}

@@ -2,7 +2,8 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { phrases } from "../src/story/data.ts";
-import { compoundOf, craftKey, craftMiss, decipher, gridSolutions, initialAnswer, isCorrect, mistake, plannerFree, radioLine, solution, storyLines, validateChallenge, validateStory } from "../src/story/logic.ts";
+import { compoundOf, craftKey, craftMiss, decipher, gridSolutions, initialAnswer, isCorrect, mistake, plannerFree, proofSegments, radioLine, retellSlots, slotOptions, solution, storyLines, tailCuts, validateChallenge, validateStory } from "../src/story/logic.ts";
+import { reviewSources } from "../src/story/review.ts";
 import { anweisung, answerSlots, arrange, flatNodes, flow, keyOf, lookOrder, nodeAt, outcomeOf, requiredKeys, sceneKeys, shownWords, spot, typedRight, worldAfter } from "../src/story/scene.ts";
 import { RACE_STAKES } from "../src/story/build.ts";
 import { MNEMONICS } from "../src/story/mnemonics.ts";
@@ -903,4 +904,34 @@ test("word-order, room, torn-note and the other puzzle games validate, check ans
     allScenes.flatMap((b) => flatNodes(nodes(b)).filter((n) => n.t === "game").map((n) => n.c.kind)),
   );
   for (const k of kinds) assert.ok(embeddedKinds.has(k), `механика ${k} не встроена ни в одну сцену`);
+});
+
+test("tail cuts and retell/proofread options do not give away the answer by position", () => {
+  const { compounds } = reviewSources(allScenes);
+  const tailDist = [0, 0, 0];
+  for (const [word, { parts }] of Object.entries(compounds)) {
+    const bare = word.replace(/^(der|die|das) /, "");
+    const cut = bare.length - parts.at(-1).length;
+    const idx = tailCuts(bare, parts.at(-1)).indexOf(cut);
+    assert.ok(idx >= 0 && idx < 3, word);
+    tailDist[idx]++;
+  }
+  const totalCompounds = tailDist.reduce((a, b) => a + b, 0);
+  for (const n of tailDist) assert.ok(n > 0 && n <= totalCompounds * 0.6, `tailCuts распределение: ${tailDist}`);
+
+  const retellIdx = [];
+  const proofIdx = [];
+  for (const beat of allScenes) {
+    if (beat.challenge.kind !== "play") continue;
+    for (const key of sceneKeys(beat.challenge.nodes)) {
+      const n = nodeAt(beat.challenge.nodes, key);
+      if (n?.t !== "game") continue;
+      if (n.c.kind === "retell")
+        for (const slot of retellSlots(n.c)) retellIdx.push(slotOptions(slot, `${beat.id}-${key}`).indexOf(slot.answer));
+      if (n.c.kind === "proofread")
+        for (const seg of proofSegments(n.c)) proofIdx.push(slotOptions(seg, `${beat.id}-${key}`).indexOf(seg.answer));
+    }
+  }
+  assert.equal(new Set(retellIdx).size, 3, `retell индексы: ${retellIdx}`);
+  assert.equal(new Set(proofIdx).size, 3, `proofread индексы: ${proofIdx}`);
 });

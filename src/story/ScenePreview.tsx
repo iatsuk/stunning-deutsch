@@ -241,6 +241,7 @@ export function ScenePreview({ training = false }: { training?: boolean }) {
   // Блокнот и инвентарь собираются из пройденных узлов всех сцен.
   const notes = caseNotes(chapters, save.drafts);
   const paperOut = chapters[PAPER_CHAPTER - 1].beats.every((_, k) => solved(firstOf(PAPER_CHAPTER - 1) + k));
+  const activeTab: NotebookTab = tab === "paper" && !paperOut ? "chapter" : tab;
   const gains = notes.find((g) => g.chapter === ci + 1)?.notes ?? [];
 
   // Повторение: перед главой — прошлая глава; за новый день — разминка; перед новой сценой —
@@ -549,16 +550,16 @@ export function ScenePreview({ training = false }: { training?: boolean }) {
             <div className="kicker">Блокнот и инвентарь</div>
             <div className="moin-notebook-tabs" role="group" aria-label="Что показать в блокноте">
               {(paperOut ? [...NOTEBOOK_TABS, PAPER_TAB] : NOTEBOOK_TABS).map(([id, label]) => (
-                <button type="button" key={id} aria-pressed={tab === id} onClick={() => setTab(id)}>
+                <button type="button" key={id} aria-pressed={activeTab === id} onClick={() => setTab(id)}>
                   {label}
                 </button>
               ))}
             </div>
-            {tab === "case" && <CaseNotes groups={notes} chapters={chapters} />}
-            {tab === "dossier" && <Dossier heroes={dossier(chapters, save.drafts)} />}
-            {tab === "postcards" && <Postcards cards={openPostcards(scenes.filter((_, i) => solved(i)).map((b) => b.id))} />}
-            {tab === "paper" && <Newspaper headlines={newspaper(now)} learned={longTerm(save.cards, SCENE_INTERVALS)} />}
-            {tab === "chapter" && (
+            {activeTab === "case" && <CaseNotes groups={notes} chapters={chapters} />}
+            {activeTab === "dossier" && <Dossier heroes={dossier(chapters, save.drafts)} />}
+            {activeTab === "postcards" && <Postcards cards={openPostcards(scenes.filter((_, i) => solved(i)).map((b) => b.id))} />}
+            {activeTab === "paper" && <Newspaper headlines={newspaper(now)} learned={longTerm(save.cards, SCENE_INTERVALS)} />}
+            {activeTab === "chapter" && (
             <>
             {Object.entries(now).some(([q, v]) => v > 0 && TRACKS[q]) && (
               <ul className="moin-play-tracks">
@@ -605,9 +606,10 @@ export function ScenePreview({ training = false }: { training?: boolean }) {
                 Повторить
               </button>
             )}
-            {canPractice && (
+            {!practicing && canPractice && (
               <button type="button" className="link-button" onClick={() => {
                 stopAudio();
+                setReviewing(null);
                 setPracticing(true);
                 window.scrollTo({ top: 0 });
               }}>

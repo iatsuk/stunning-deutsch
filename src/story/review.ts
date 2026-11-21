@@ -1,3 +1,4 @@
+import { hash } from "../lib/shuffle.ts";
 import { pairs } from "./build.ts";
 import { phrases } from "./data.ts";
 import { reviewTwenty } from "./twenty.ts";
@@ -123,11 +124,6 @@ const typable = (w: string) => /^[\p{L} '-]+[.!?]?$/u.test(w);
 const meaning = (ru: string) => ru.split(/[;,/!?(]/)[0].trim().toLowerCase();
 
 /** Детерминированная перетасовка: тот же раунд при перезагрузке страницы. */
-function hash(text: string) {
-  let h = 2166136261;
-  for (let i = 0; i < text.length; i++) h = Math.imul(h ^ text.charCodeAt(i), 16777619);
-  return h >>> 0;
-}
 export function shuffle<T>(list: T[], seed: string): T[] {
   let state = hash(seed) || 1;
   const out = [...list];

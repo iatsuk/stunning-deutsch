@@ -1,3 +1,4 @@
+import { hash } from "../lib/shuffle.ts";
 import { childrenOf, keyOf, nodeAt, typedOf } from "./scene.ts";
 import type { SceneNode } from "./types.ts";
 
@@ -38,12 +39,6 @@ function fingerprint(n: SceneNode): string {
   }
 }
 
-function hash(text: string) {
-  let h = 2166136261;
-  for (let i = 0; i < text.length; i++) h = Math.imul(h ^ text.charCodeAt(i), 16777619);
-  return (h >>> 0).toString(36);
-}
-
 /** Номер узла → отпечаток. Одинаковые узлы одного списка различает номер повтора: «Moin.» и «Moin.~1». */
 export function nodeIds(nodes: SceneNode[]): Map<string, string> {
   const ids = new Map<string, string>();
@@ -51,7 +46,7 @@ export function nodeIds(nodes: SceneNode[]): Map<string, string> {
     const seen = new Map<string, number>();
     list.forEach((node, i) => {
       if (node.t === "pic") return;
-      const base = hash(fingerprint(node));
+      const base = hash(fingerprint(node)).toString(36);
       const n = seen.get(base) ?? 0;
       seen.set(base, n + 1);
       const id = `${parent}${base}${n ? `~${n}` : ""}`;

@@ -1,5 +1,5 @@
 import { newspaperLines } from "./newspaper.ts";
-import { shuffle } from "../lib/shuffle.ts";
+import { hash, shuffle } from "../lib/shuffle.ts";
 import { judge, nearMisses } from "../trainer/logic.ts";
 import { flatNodes, keyOf, requiredKeys, sceneVoices, sceneWords, solutionEntries, typedRight } from "./scene.ts";
 import { answerOf, excludes, reviewTwentyLines } from "./twenty.ts";
@@ -440,6 +440,10 @@ export function craftMiss(c: Extract<Challenge, { kind: "craft" }>, step: number
 export const proofSegments = (c: Extract<Challenge, { kind: "proofread" }>) =>
   c.segments.filter((s): s is ProofSlot => typeof s !== "string");
 
+/** Варианты пропуска «Пересказа» и «Редактора черновика» в порядке показа: верный не стоит всегда на одном месте. */
+export const slotOptions = (slot: { id: string; options: string[] }, seed: string) =>
+  shuffle(slot.options, `${seed}-${slot.id}`);
+
 export function springRight(round: Extract<Challenge, { kind: "spring" }>["rounds"][number], tiles: string[]): boolean {
   return [round.answer, ...(round.also ?? [])].some((expected) => sameList(tiles, expected));
 }
@@ -453,7 +457,14 @@ export function tailCuts(bare: string, tail: string): number[] {
   const min = bare.length >= 5 ? 2 : 1;
   const max = bare.length >= 5 ? bare.length - 2 : bare.length - 1;
   const picks = new Set<number>([cut]);
-  const near = [cut - 2, cut + 2, cut - 1, cut + 1, cut - 3, cut + 3];
+  // Разные шаблоны смещений не дают истинному разрезу постоянно стоять посередине.
+  const mode = hash(bare) % 3;
+  const near =
+    mode === 0
+      ? [cut + 1, cut + 2, cut + 3, cut - 2, cut - 1, cut - 3]
+      : mode === 2
+        ? [cut - 2, cut - 1, cut - 3, cut + 2, cut + 1, cut + 3]
+        : [cut - 2, cut + 2, cut - 1, cut + 1, cut - 3, cut + 3];
   for (const at of near) {
     if (picks.size >= 3) break;
     if (at >= min && at <= max) picks.add(at);
