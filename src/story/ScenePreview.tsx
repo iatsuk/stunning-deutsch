@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Footer, Topbar, useTitle } from "../App";
-import { say, stopAudio } from "../hooks";
+import { say, setPlaybackRate, stopAudio } from "../hooks";
 import { PlayButton, plural } from "../markup";
 import { allWords, phraseAudio, wordInfo } from "./audio";
 import { ChallengeView } from "./ChallengeView";
@@ -27,11 +27,21 @@ import "./story.css";
 
 const KEY = "sd-moin-neu-v1";
 const QUIET = "sd-moin-quiet";
-const readQuiet = () => {
+const SLOW = "sd-moin-slow";
+/** Записи в «Langsam, bitte» звучат так: медленнее, но ещё без искажений. */
+const SLOW_RATE = 0.8;
+const readOn = (key: string) => {
   try {
-    return localStorage.getItem(QUIET) === "on";
+    return localStorage.getItem(key) === "on";
   } catch {
     return false;
+  }
+};
+const saveOn = (key: string, on: boolean) => {
+  try {
+    localStorage.setItem(key, on ? "on" : "off");
+  } catch {
+    // Без хранилища настройка живёт до перезагрузки.
   }
 };
 const chapters = sceneChapters;
@@ -152,7 +162,12 @@ export function ScenePreview({ training = false }: { training?: boolean }) {
   const first = firstOf(ci);
   const last = first + chapter.beats.length - 1;
   // Где нужно говорить вслух, можно отвечать письменно: например, в офисе.
-  const [quiet, setQuiet] = useState(readQuiet);
+  const [quiet, setQuiet] = useState(() => readOn(QUIET));
+  const [slow, setSlow] = useState(() => readOn(SLOW));
+  useEffect(() => {
+    setPlaybackRate(slow ? SLOW_RATE : 1);
+    return () => setPlaybackRate(1);
+  }, [slow]);
   const beat = scenes[save.at];
   const value: Answer =
     save.drafts[beat.id] ?? (initialAnswer(beat.challenge) as string[]);
@@ -401,17 +416,21 @@ export function ScenePreview({ training = false }: { training?: boolean }) {
                 checked={quiet}
                 onChange={(e) => {
                   setQuiet(e.target.checked);
-                  try {
-                    localStorage.setItem(
-                      QUIET,
-                      e.target.checked ? "on" : "off",
-                    );
-                  } catch {
-                    // Без хранилища настройка живёт до перезагрузки.
-                  }
+                  saveOn(QUIET, e.target.checked);
                 }}
               />{" "}
               Не могу говорить вслух — отвечаю письменно
+            </label>
+            <label className="moin-play-voice moin-preview-quiet">
+              <input
+                type="checkbox"
+                checked={slow}
+                onChange={(e) => {
+                  setSlow(e.target.checked);
+                  saveOn(SLOW, e.target.checked);
+                }}
+              />{" "}
+              <span lang="de">Langsam, bitte</span> — записи звучат медленнее
             </label>
             <div className="moin-turn">
               {practicing ? (

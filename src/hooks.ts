@@ -73,6 +73,7 @@ export function useScrollIndex(items: RefObject<(HTMLElement | null)[]>, anchor:
 
 let player: HTMLAudioElement | null = null;
 let playing = "";
+let rate = 1;
 let queue: string[] = [];
 const audioListeners = new Set<() => void>();
 const emitAudio = () => audioListeners.forEach((listener) => listener());
@@ -80,6 +81,7 @@ const emitAudio = () => audioListeners.forEach((listener) => listener());
 function start(src: string) {
   player?.pause();
   const audio = new Audio(src);
+  audio.playbackRate = rate;
   player = audio;
   playing = src;
   emitAudio();
@@ -126,6 +128,12 @@ export function playAll(sources: (string | undefined)[]) {
 }
 
 export const stopAudio = stop;
+
+/** Скорость записей. Курс замедляет их по просьбе игрока и при уходе возвращает обычную: пробник звучит как на экзамене. */
+export function setPlaybackRate(next: number) {
+  rate = next;
+  if (player) player.playbackRate = next;
+}
 
 export const usePlaying = () =>
   useSyncExternalStore(
