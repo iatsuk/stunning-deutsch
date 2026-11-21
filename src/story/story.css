@@ -1629,6 +1629,31 @@
 .moin-play-say {
   max-width: 92%;
 }
+/* Реплика с портретом героя: лицо слева у нижнего края пузыря, как в переписке. */
+.moin-said {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  justify-self: start;
+  max-width: 92%;
+}
+.moin-said .moin-play-say {
+  max-width: none;
+}
+.moin-said-face {
+  flex: none;
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--line-strong);
+  border-radius: 50%;
+  background: #d9d4cb;
+}
+@media (max-width: 520px) {
+  .moin-said-face {
+    width: 36px;
+    height: 36px;
+  }
+}
 .moin-play-note {
   margin: 0;
   padding-left: 12px;

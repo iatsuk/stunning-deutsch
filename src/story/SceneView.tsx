@@ -28,6 +28,7 @@ import type { Answer, Challenge, Pick, SceneNode } from "./types";
 import { mnemonic } from "./mnemonics";
 import { RuleCard } from "./RuleCard";
 import { sound, VOICE_KEY, voiceOn } from "./sfx";
+import { face } from "./faces";
 import { effectText, holds, TRACKS, type World } from "./world";
 
 // Сцена: разговор и осмотр места, в который вплетены действия. Сцена помещается на экран:
@@ -590,7 +591,8 @@ function Pic({ node }: { node: Extract<SceneNode, { t: "pic" }> }) {
 function SayLine({ node }: { node: Extract<SceneNode, { t: "say" }> }) {
   const [open, setOpen] = useState(false);
   const [word, setWord] = useState<string>();
-  return (
+  const portrait = face(node.who, node.de);
+  const bubble = (
     <div className="moin-bubble moin-play-say">
       <small>{node.who}</small>
       <p lang="de">
@@ -631,6 +633,13 @@ function SayLine({ node }: { node: Extract<SceneNode, { t: "say" }> }) {
           )}
         </small>
       )}
+    </div>
+  );
+  if (!portrait) return bubble;
+  return (
+    <div className="moin-said">
+      <img className="moin-said-face" src={`${import.meta.env.BASE_URL}${portrait}`} alt="" width={48} height={48} loading="lazy" />
+      {bubble}
     </div>
   );
 }
