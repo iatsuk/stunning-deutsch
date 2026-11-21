@@ -7,8 +7,10 @@ import { back } from "./back.ts";
 // von … bis, отделяемые приставки. Вопрос главы — когда исчезла табличка. Вход — чек (17:05) и
 // голосовое Йенсена, выход — halb sechs = 17:30: в воскресенье в это время весь клуб пил чай на
 // задней террасе по приглашению Йенсена, клуб был открыт, версия ночного взлома рушится, Йенсен
-// знал всё с самого начала. Повороты брошены оракулом (seed 1794017991), увязка — в журнале
-// A1-STORYCRAFT.md.
+// знал всё с самого начала. С этой главы начинается ложный след (A1-PLOT.md, «Переработка глав
+// 6–12»): фрау Петерсен грозит к пятнице заказать табличку из пластика, а Йенсен отдаёт женщине из
+// фирмы плоский конверт. Повороты брошены оракулом (seeds 1794017991 и 1795220685), увязка — в
+// журнале A1-STORYCRAFT.md.
 
 const narr = (text: string): SceneNode => ({ t: "narr", text });
 const learn = (words?: string[]) => (words ? { learn: words } : {});
@@ -19,7 +21,8 @@ const dana = (de: string, ru: string, words?: string[]): SceneNode => ({ t: "say
 const mateo = (de: string, ru: string, words?: string[]): SceneNode => ({ t: "say", who: "Mateo", voice: "Reed", de, ru, ...learn(words) });
 const frauke = (de: string, ru: string, words?: string[]): SceneNode => ({ t: "say", who: "Frauke", voice: "Sandy", de, ru, ...learn(words) });
 const petersen = (de: string, ru: string, words?: string[]): SceneNode => ({ t: "say", who: "Frau Petersen", voice: "Sandy", de, ru, ...learn(words) });
-const gullSays = (de: string, ru: string, words?: string[]): SceneNode => ({ t: "say", who: "die Möwe", voice: "Shelley", de, ru, ...learn(words) });
+/** Женщина из фирмы табличек: в этой главе её имени никто не знает. */
+const stranger = (de: string, ru: string): SceneNode => ({ t: "say", who: "Die Frau", voice: "Shelley", de, ru });
 /** Пары памяти — из выражений истории, которые глава уже показала. */
 const memory = (ids: string[]): Challenge => ({ kind: "memory", pairs: ids.map((id) => ({ id, de: phrases[id].de, ru: phrases[id].ru })) });
 /** Часы клуба: стрелки шагают по четверти часа от полудня, ловушки объясняют частые ошибки. */
@@ -223,7 +226,7 @@ const book: SceneNode[] = [
   {
     t: "when",
     if: [{ q: "frauke", min: 1 }],
-    then: [narr("Запись в {kassenbuch} аккуратная, как с тех пор, как Фрауке завела журнал: «17:35. Frau, Overall dunkelblau, große flache Tasche, Bus».")],
+    then: [narr("Запись в {kassenbuch} аккуратная, как с тех пор, как Фрауке завела журнал: «17:35. Frau, dunkelblau, große flache Tasche, Bus».")],
     else: [narr("Минуты в {kassenbuch} смазаны: «17:3… Frau … Tasche … Bus». Фрауке писала второпях. Но около 17:35 — точно.")],
   },
   narr("Сумка большая и {flach} — как раз по размеру таблички."),
@@ -279,13 +282,6 @@ const book: SceneNode[] = [
   narr("На каждой странице сверху — {wochentag}. Красным — {feiertag}: тогда киоск закрыт."),
   frauke("Am Freitag habe ich hier immer viel Arbeit!", "По пятницам у меня тут всегда много работы!", ["der Freitag"]),
   { t: "game", task: "Фрауке раскладывает части дня по ящикам: der, die, das.", hint: HINT_DOCK, c: docks(["der Morgen", "der Mittag", "der Abend", "die Nacht", "die Woche", "das Wochenende", "die Stunde", "das Viertel"]) },
-  {
-    t: "game",
-    rule: ["tagesablauf/wann-1"],
-    task: "Соедините место и его время.",
-    hint: "von … bis — с … до; um — в определённый час.",
-    c: pairs([["der Kiosk", "von neun bis sechs"], ["das Büro", "von neun bis fünf"], ["der Tee", "um halb sechs"], ["der Club", "bis sechs Uhr"]]),
-  },
   frauke("Möchtet ihr ein Fischbrötchen? Es ist schon Mittag!", "Хотите булочку с рыбой? Уже полдень!"),
   {
     t: "reply",
@@ -299,9 +295,12 @@ const book: SceneNode[] = [
   {
     t: "clue",
     title: "Kassenbuch",
-    text: "Sonntag: 17:30 — Tee, alle hinten auf der Terrasse. 17:35 — eine Frau, Overall dunkelblau, große flache Tasche, Bus. In der Nacht: kein Einbruch.",
+    text: "Sonntag: 17:30 — Tee, alle hinten auf der Terrasse. 17:35 — eine Frau, dunkelblau, große flache Tasche, Bus. In der Nacht: kein Einbruch.",
   },
 ];
+
+// Срок фрау Петерсен держит ставку глав 6–12: каждая глава ближе к пятнице.
+const DEADLINE = "Am Freitag ist unser Schild nicht da? Dann bestelle ich das Schild aus Plastik!";
 
 // Сцена 3 · развилка: кто где был в 17:30. Броски: за кадром · Элиф · подслушать · der Mittag · 20
 // (гипербола: в полдень Йенсен сам позвал на чай весь клуб), глобальное событие · Матео · отказаться ·
@@ -461,53 +460,108 @@ const witnesses: SceneNode[] = [
     },
   },
   narr("На доске {zurzeit} три имени и три места. Стрелка {gerade} показывает на Йенсена. Хауке просит {moment} тишины — и всё равно говорит сам."),
+  narr("Frau Petersen kommt aus dem Büro — с телефоном в руке и с лицом, как прогноз на Kieler Woche."),
+  petersen("Die Firma ruft schon wieder an. Sie hat ein Schild für uns – aus Plastik.", "Фирма опять звонит. У неё есть для нас табличка — из пластика.", ["die Firma"]),
+  petersen(DEADLINE, "В пятницу нашей таблички нет? Тогда я заказываю табличку из пластика!"),
+  {
+    t: "hear",
+    task: "Что сделает фрау Петерсен, если к пятнице таблички не будет?",
+    voice: "Sandy",
+    de: DEADLINE,
+    options: ["закажет табличку из пластика", "перенесёт Kieler Woche", "напишет MOIN мелом на доске"],
+    answer: "закажет табличку из пластика",
+  },
+  narr("Plastik: weiß — и без каната по краю. Das Schild MOIN ist alt, ему полвека. Bis Freitag: noch sechs Tage."),
+  hauke("Bis Freitag! Dann suchen wir jeden Tag. Alle zusammen!", "До пятницы! Тогда ищем каждый день. Все вместе!"),
+  {
+    t: "game",
+    rule: ["tagesablauf/wann-1"],
+    task: "Ежедневник команды до пятницы: отметьте занятое ✗ и поставьте общий поиск ★ туда, где свободны все.",
+    hint: "Прочитайте каждую запись: am Nachmittag — каждый день после обеда, bis zwei — всё утро.",
+    c: {
+      kind: "planner",
+      days: ["Montag", "Dienstag", "Mittwoch", "Donnerstag"],
+      hours: ["am Vormittag", "am Nachmittag"],
+      notes: [
+        { who: "Mateo", de: "Am Nachmittag koche ich, jeden Tag. Und am Montag am Vormittag backe ich Brötchen.", ru: "После обеда я готовлю, каждый день. А в понедельник до обеда пеку булочки.", busy: ["Montag|am Vormittag", "Montag|am Nachmittag", "Dienstag|am Nachmittag", "Mittwoch|am Nachmittag", "Donnerstag|am Nachmittag"] },
+        { who: "Dana", de: "Am Dienstag arbeite ich im Krankenhaus – bis zwei.", ru: "Во вторник я работаю в больнице — до двух.", busy: ["Dienstag|am Vormittag"] },
+      ],
+    },
+  },
+  narr("Общих окон два: am Mittwoch und am Donnerstag, только am Vormittag. А потом уже Freitag."),
   {
     t: "clue",
     title: "Sonntag, 17:30",
-    text: "Am Mittag sagt Herr Jensen: «Tee. Alle. Halb sechs.» Um halb sechs ist der ganze Club hinten, Mateo in der Küche. Um sechs macht Herr Jensen den Club zu.",
+    text: "Am Mittag sagt Herr Jensen: «Tee. Alle. Halb sechs.» Um halb sechs ist der ganze Club hinten, Mateo in der Küche. Um sechs macht Herr Jensen den Club zu. Frau Petersen: am Freitag kein Schild — dann ein Schild aus Plastik.",
   },
 ];
 
-// Интерлюдия глазами чайки. Бросок: смена точки зрения · чайка · перепутать · das Wochenende · 12.
-// По плану интерлюдии здесь — мастерская Греты; её из окна видит чайка, имени она не знает.
-const gullDay: SceneNode[] = [
-  { t: "pic", src: "06-gull.jpg", alt: "Чайка с кольцом летит над крышами Гардена и заглядывает в окно мастерской: под тканью большая плоская доска, банки краски — белая и тёмно-синяя, у стола спиной стоит женщина в тёмно-синем комбинезоне" },
-  narr("Тем временем над Kiel. HEL 7305 летит по своим делам — то есть за чужими Fischbrötchen."),
-  gullSays("Kieler Woche? Eine Woche? Für Möwen ist immer Wochenende!", "Kieler Woche? Неделя? Для чаек всегда выходные!", ["das Wochenende"]),
-  { t: "gap", task: "Что думает чайка о неделе?", text: "Für Möwen ist immer ___!", options: ["Wochenende", "Woche", "Montag"], answer: "Wochenende", ru: "Для чаек всегда выходные!" },
-  gullSays("Heute ist Samstag. Morgen ist … Montag?", "Сегодня суббота. Завтра… понедельник?", ["der Samstag", "der Montag"]),
-  {
-    t: "type",
-    task: "Поправьте чайку: какой день завтра?",
-    answers: ["Morgen ist Sonntag.", "Nein, morgen ist Sonntag.", "Sonntag."],
-    ru: "Завтра воскресенье.",
-  },
-  narr("Над Gaarden чайка садится на подоконник. Внутри {werkstatt}: под тканью — большая плоская доска, рядом Dosen: weiß, dunkelblau."),
-  gullSays("Eine Frau arbeitet. Am Samstag! Und morgen? Sie arbeitet auch am Sonntag.", "Женщина работает. В субботу! А завтра? Она работает и в воскресенье."),
+// Интерлюдия глазами Йенсена. Бросок: интерлюдия от лица другого · Йенсен · промокнуть ·
+// der Nachmittag · 18 (сильнее): под дождём он промокает до нитки, но конверт держит сухим. Игрок
+// видит, что Йенсен отдаёт женщине из фирмы табличек, но не знает зачем: это первый шаг ложного
+// следа, а плоский конверт — честная несостыковка, табличка в него не влезет.
+const BUS = "Viertel vor fünf. Der Bus kommt.";
+const PHONE = "Ja, ja. Nicht am Montag – am Freitag. Am Mittag.";
+const jensenDay: SceneNode[] = [
+  { t: "pic", src: "06-jensen.jpg", alt: "Дождливый день у автобусной остановки на набережной: Йенсен без зонта, промокший до нитки, протягивает плоский конверт высокой женщине в тёмно-синем плаще с чёрным зонтом и большой плоской чёрной сумкой; за ними киоск Фрауке, в его окне — лицо Фрауке" },
+  narr("Тем временем. Samstag, Nachmittag, и снова {rain} Йенсен стоит у остановки на Kiellinie. Зонта у него нет: зонт — для тех, кто торопится."),
+  narr("В голове Йенсен говорит больше, чем вслух. Ненамного."),
+  jensen(BUS, "Без четверти пять. Идёт автобус."),
   {
     t: "hear",
-    task: "Что видит чайка?",
-    voice: "Shelley",
-    de: "Eine Frau arbeitet. Am Samstag! Und morgen? Sie arbeitet auch am Sonntag.",
-    options: ["женщина работает и в субботу, и в воскресенье", "женщина спит до обеда", "женщина пьёт чай"],
-    answer: "женщина работает и в субботу, и в воскресенье",
+    task: "Во сколько приходит автобус?",
+    voice: "Grandpa",
+    de: BUS,
+    options: ["в 16:45", "в 17:15", "в 17:45"],
+    answer: "в 16:45",
   },
+  narr("Под бушлатом — {umschlag}, плоский и сухой. Сам Йенсен мокрый насквозь: от дождя он прячет не себя, а конверт."),
+  narr("Der Bus ist da. Eine Frau: groß, nicht alt, Mantel dunkelblau, чёрный зонт, под мышкой — eine große flache Tasche."),
+  stranger("Moin, Herr Jensen! Ist das für mich?", "Привет, господин Йенсен! Это для меня?"),
   {
-    t: "game",
-    task: "Помогите чайке: расставьте дни по порядку.",
-    hint: "Freitag, Samstag, Sonntag, Montag — неделя у немцев начинается с понедельника.",
-    c: order(["Freitag,", "Samstag,", "Sonntag,", "Montag"], ["Sonntag,", "Montag", "Freitag,", "Samstag,"]),
-  },
-  {
-    t: "pick",
-    task: "Что чайка увидела в окне мастерской?",
+    t: "reply",
+    task: "Что ответит Йенсен?",
     options: [
-      ok("Доску под тканью и банки краски — белую и тёмно-синюю"),
-      no("Пять пачек сахара", "Сахар — это кухня Матео. В мастерской — краска."),
-      no("Пустую подставку", "Подставка стоит у клуба. В мастерской — доска под тканью."),
+      ok("Moin."),
+      no("Moin! Wie geht es Ihnen? Was machen Sie heute?", "Столько слов Йенсен не говорит даже в голове."),
+      no("Hallo! Guten Tag!", "У Йенсена одно слово на все случаи, и это не Hallo."),
     ],
   },
-  narr("Die Frau sieht zum Fenster. Чайка улетает: in der Werkstatt — kein Fischbrötchen. Кто это — чайке всё равно."),
+  narr("Herr Jensen gibt ihr den Umschlag. Die Frau macht ihn nicht auf — сразу кладёт в сумку."),
+  stranger("Danke, Herr Jensen. Bis Freitag!", "Спасибо, господин Йенсен. До пятницы!"),
+  {
+    t: "pick",
+    task: "Что Йенсен отдал женщине?",
+    options: [
+      ok("Плоский конверт — что в нём, не видно"),
+      no("Табличку MOIN", "Табличка — большая доска с канатом по краю. В плоский конверт она не влезет."),
+      no("Чашку чая", "Чай — в половине шестого. Сейчас без четверти пять."),
+    ],
+  },
+  narr("Женщина звонит кому-то по Handy. Дождь стучит по зонту, и слова доходят до Йенсена кусками."),
+  stranger(PHONE, "Да-да. Не в понедельник — в пятницу. В полдень."),
+  {
+    t: "game",
+    task: "Дождь шумит. Какое слово расслышал Йенсен?",
+    hint: "Слушайте середину слова: Montag — Morgen, Freitag — Feiertag, Mittag — Mittwoch.",
+    c: {
+      kind: "sounds",
+      rounds: [
+        { say: "der Montag", options: ["der Montag", "der Morgen"] },
+        { say: "der Freitag", options: ["der Freitag", "der Feiertag"] },
+        { say: "der Mittag", options: ["der Mittag", "der Mittwoch"] },
+      ],
+    },
+  },
+  narr("Und weg ist sie — {bus}. В окне киоска — Frauke: она видела всё. Йенсен не прячется."),
+  {
+    t: "type",
+    rule: ["tagesablauf/wann-1"],
+    task: "Йенсен записывает в Logbuch одну строку. Когда пришёл автобус?",
+    answers: ["Um Viertel vor fünf.", "Um 16:45.", "Viertel vor fünf.", "16:45", "Der Bus kommt um Viertel vor fünf."],
+    ru: "Без четверти пять.",
+  },
+  narr("Bald ist es halb sechs. Tee, wie immer. Йенсен идёт к клубу, и с бушлата течёт, как с паруса."),
 ];
 
 // Сцена 4 · поворот: чай в 17:30. Отсылка — «Dinner for One»: the same procedure as every year, только
@@ -552,6 +606,9 @@ const tea: SceneNode[] = [
   },
   mateo("Kein Einbruch? … Schade. Das ist ein guter Film.", "Не взлом?… Жаль. Хороший был бы фильм."),
   { t: "game", task: "Хауке повторяет фразы вечера. Повторите за ним вслух.", hint: HINT_SAY, c: speak(["Wie spät ist es?", "Wie viel Uhr ist es?", "halb", "der Feierabend"]) },
+  narr("Только сегодня с фуражки Йенсена капает, а бушлат мокрый насквозь. Под дождём он стоял не пять минут."),
+  elif("Herr Jensen, alles okay? Sie sind ja nass!", "Господин Йенсен, всё в порядке? Вы же мокрый насквозь!"),
+  jensen("Regen.", "Дождь."),
   {
     t: "reply",
     rule: ["tagesablauf/klammer-4"],
@@ -627,13 +684,6 @@ const tea: SceneNode[] = [
     answers: ["Herr Jensen weiß alles.", "Herr Jensen weiß es.", "Jensen weiß alles."],
     ru: "Йенсен всё знает.",
   },
-  {
-    t: "game",
-    rule: ["tagesablauf/vorfeld-1"],
-    task: "Соберите фразу для доски: время — на первом месте.",
-    hint: "Время на первом месте, глагол всё равно второй.",
-    c: order(["Um", "halb", "sechs", "trinken", "alle", "Tee."], ["Tee.", "alle", "Um", "trinken", "halb", "sechs"]),
-  },
   narr("Йенсен trinkt den Tee, sagt «Moin» und geht. Раньше всех — впервые за много лет."),
   {
     t: "clue",
@@ -701,13 +751,6 @@ const timeline: SceneNode[] = [
         gruss("Hauke und Dana"),
       ],
     ),
-  },
-  {
-    t: "game",
-    rule: ["tagesablauf/klammer-2"],
-    task: "Перепишите главную фразу записки: соберите её.",
-    hint: "anrufen: rufen — на втором месте, an — в самом конце.",
-    c: order(["Wir", "rufen", "Sie", "morgen", "um", "acht", "an."], ["an.", "Sie", "um", "Wir", "acht", "rufen", "morgen"]),
   },
   narr("Записку подсовывают под дверь домика гавани. Eine Minute später — ответ. Ein Wort: «Moin.»"),
   dana("Moin. Das heißt … Ja? Nein? Vielleicht?", "Moin. Это значит… да? Нет? Может быть?"),
@@ -788,6 +831,7 @@ const timeline: SceneNode[] = [
       [["aufstehen", "anrufen", "aufhören", "kochen"], "kochen", "У kochen нет отделяемой приставки."],
       [["der Morgen", "der Mittag", "der Abend", "die Nacht"], "die Nacht", "Части дня — der, а ночь — die: in der Nacht."],
       [["halb", "das Viertel", "nach", "morgen"], "morgen", "morgen — завтра; остальные — слова для часов."],
+      [["aufräumen", "fernsehen", "einkaufen", "die Woche"], "die Woche", "Woche — отрезок времени, остальное — дела с отделяемой приставкой."],
     ]),
   },
   {
@@ -797,9 +841,14 @@ const timeline: SceneNode[] = [
   },
 ];
 
+const OFFER = "Dann zeigt sie mir ein Schild aus Plastik: «Für Ihren Kiosk?» Nein, danke!";
+const NILS_CLOCK = "Nils repariert die Uhr am Abend. Und morgen früh ist sie wieder kaputt!";
+
 // Сцена 6 · эпилог и крючок: речь как на экзамене. Броски: глобальное событие · Фрауке · промокнуть ·
 // der Feierabend · 14 (ливень в конце рабочего дня, второй знак фронта «Погода»), сквозная шутка
 // обостряется · Нильс · починить · der Abend · 10 (Нильс чинит часы клуба и пишет о каждом винтике).
+// Фрауке видела из киоска встречу у автобуса: её слух дарит команде ложную версию, а пункт «факт или
+// догадка» оставляет игроку несостыковку с плоским конвертом.
 const evening: SceneNode[] = [
   { t: "pic", src: "06-evening.jpg", alt: "Вечер, ливень: Фрауке под дождём тянет навес киоска, Нильс в красной ветровке на стремянке чинит часы над дверью клуба, в окне кухни Матео в муке, вдали Йенсен уходит в домик гавани" },
   {
@@ -831,20 +880,63 @@ const evening: SceneNode[] = [
       no("Frauke, wir helfen! Wir zumachen den Kiosk.", "Приставка уходит в конец: wir machen … zu."),
     ],
   },
-  narr("Над дверью, на стремянке — Нильс. Он чинит die Uhr. И пишет об этом alle zwei Minuten."),
-  narr("«Eins!!! Zwei!!! Die Uhr geht!!! Es ist acht Uhr!!! Acht!!!»"),
-  narr("Для Нильса {reparatur} — лучший отдых. Для часов — испытание."),
+  frauke("Und heute Nachmittag, im Regen: Herr Jensen und eine Frau, am Bus!", "А сегодня днём, под дождём: господин Йенсен и какая-то женщина, у автобуса!"),
+  frauke("Er gibt ihr einen Umschlag. Und sie sagt: «Bis Freitag!»", "Он даёт ей конверт. А она говорит: «До пятницы!»"),
+  frauke(OFFER, "Потом она показывает мне табличку из пластика: «Для вашего киоска?» Нет уж, спасибо!"),
+  {
+    t: "hear",
+    task: "Что женщина предложила Фрауке?",
+    voice: "Sandy",
+    de: OFFER,
+    options: ["табличку из пластика для киоска", "билет на автобус", "чай в половине шестого"],
+    answer: "табличку из пластика для киоска",
+  },
+  { ...narr("Ein Schild aus Plastik! Значит, женщина — из той самой фирмы, что звонит фрау Петерсен. А слух Фрауке к утру обойдёт весь Hafen."), set: { rumours: 1 } },
   {
     t: "game",
-    task: "Поставьте часы так, как их выставил Нильс.",
-    hint: "acht Uhr вечером — 20:00.",
-    c: clock("20:00", {
-      "08:00": "Утром? Нильс чинит часы вечером: acht Uhr am Abend — 20:00.",
-      "18:00": "Это sechs Uhr.",
-      "20:30": "Это halb neun.",
-    }),
+    task: "Составьте фоторобот женщины у автобуса со слов Фрауке.",
+    hint: "Каждая строка — одна примета. Прилагательное после sein не меняется: Sie ist groß.",
+    c: {
+      kind: "portrait",
+      notes: [
+        { de: "Sie ist groß und nicht alt.", ru: "Она высокая и не старая." },
+        { de: "Ihr Mantel ist dunkelblau.", ru: "Плащ у неё тёмно-синий." },
+        { de: "Sie sagt: «Bis Freitag!»", ru: "Она говорит: «До пятницы!»" },
+      ],
+      parts: [
+        { id: "size", label: "Рост", options: ["groß", "klein"] },
+        { id: "age", label: "Возраст", options: ["alt", "nicht alt"] },
+        { id: "top", label: "Одежда", options: ["die Jacke", "der Mantel", "der Pullover"] },
+        { id: "colour", label: "Цвет", options: ["blau", "dunkelblau", "grau"] },
+        { id: "says", label: "Говорит", options: ["Moin.", "Bis Freitag!", "Guten Tag!"] },
+      ],
+      answer: { size: "groß", age: "nicht alt", top: "der Mantel", colour: "dunkelblau", says: "Bis Freitag!" },
+    },
   },
-  hauke("Nils repariert die Uhr am Abend. Und morgen früh ist sie wieder kaputt!", "Нильс чинит часы вечером. А завтра утром они опять сломаются!", ["der Abend", "früh", "reparieren"]),
+  dana("Dunkelblau. Eine große flache Tasche. Wie am Sonntag um 17:35!", "Тёмно-синее. Большая плоская сумка. Как в воскресенье в 17:35!"),
+  hauke("Die Frau ist von der Firma! Am Sonntag nimmt sie das Schild. Und Herr Jensen hilft ihr!", "Женщина из фирмы! В воскресенье она забирает табличку. А господин Йенсен ей помогает!"),
+  elif("Aber der Umschlag ist flach. Und das Schild ist groß!", "Но конверт плоский. А табличка большая!"),
+  hauke("Das Schild ist schon bei der Firma – seit Sonntag! Im Umschlag sind hundert Euro. Oder tausend!", "Табличка уже у фирмы — с воскресенья! А в конверте сто евро. Или тысяча!"),
+  {
+    t: "pick",
+    task: "Что записать в блокнот как факт?",
+    options: [
+      ok("Йенсен отдал женщине из фирмы плоский конверт; что в нём — неизвестно"),
+      no("В конверте деньги за табличку", "Это догадка Хауке. Конверт никто не открывал."),
+      no("Табличка лежит в конверте", "Табличка — большая доска, а конверт плоский."),
+    ],
+  },
+  narr("Над дверью, на стремянке — Нильс. Он чинит die Uhr: для него {reparatur} — лучший отдых, для часов — испытание. И пишет об этом alle zwei Minuten."),
+  narr("«Eins!!! Zwei!!! Die Uhr geht!!! Es ist acht Uhr!!! Acht!!!»"),
+  hauke(NILS_CLOCK, "Нильс чинит часы вечером. А завтра утром они опять сломаются!", ["der Abend", "früh", "reparieren"]),
+  {
+    t: "hear",
+    task: "Что будет с часами завтра утром — по словам Хауке?",
+    voice: "Rocko",
+    de: NILS_CLOCK,
+    options: ["опять сломаются", "будут идти точно", "Нильс их снимет"],
+    answer: "опять сломаются",
+  },
   elif("Zwölf Nachrichten für eine Uhr! Das ist Nils.", "Двенадцать сообщений про одни часы! Это Нильс."),
   narr("Хауке промок до нитки. Ему нужны три вещи: {dusche}, сухие носки и сон. Он {muede}."),
   hauke("Ich bin müde. Morgen stehe ich um sieben auf, ich dusche, ich frühstücke – und dann Kaffee!", "Я устал. Завтра встаю в семь, принимаю душ, завтракаю — а потом кофе!", ["duschen", "frühstücken"]),
@@ -858,15 +950,6 @@ const evening: SceneNode[] = [
       oralSay(2, ASK, "Thema: Tagesablauf · Wort: duschen", "Duschst du am Morgen?", "Ты принимаешь душ утром?", "… du …?"),
       oralReply(2, ANSWER, "Wann frühstückst du?", "Ich frühstücke um acht.", "Я завтракаю в восемь."),
       oralSay(3, REQUEST, "⏰", "Wie spät ist es, bitte?", "Который час, пожалуйста?"),
-    ]),
-  },
-  {
-    t: "game",
-    task: "Хауке проверяет свой распорядок: одно слово в группе лишнее.",
-    hint: HINT_ODD,
-    c: odd([
-      [["aufstehen", "duschen", "frühstücken", "fernsehen"], "fernsehen", "Телевизор — вечером, остальное — утро."],
-      [["aufräumen", "kochen", "einkaufen", "die Nacht"], "die Nacht", "Ночь — время суток, остальное — дела по дому."],
     ]),
   },
   mateo("Ich backe nur Brot. Bis in die Nacht!", "Я пеку только хлеб. До самой ночи!"),
@@ -883,14 +966,7 @@ const evening: SceneNode[] = [
   jensen("Moin.", "Привет."),
   dana("Er macht das Licht aus. Er spricht nicht mit uns.", "Он гасит свет. Он с нами не разговаривает."),
   narr("Свет в окне Йенсена живёт по своим правилам: {anmachen} — когда вы уходите, {ausmachen} — когда вы приходите."),
-  {
-    t: "game",
-    rule: ["tagesablauf/wann-1"],
-    task: "Дана пишет итог дня. Вставьте пропущенные слова.",
-    hint: "am — с днём и частью дня, um — с часами, in der Nacht — ночью.",
-    c: gaps("___ Sonntag ___ halb sechs trinken alle Tee. ___ der Nacht ist kein Einbruch.", ["Am", "um", "In", "Im", "am"], ["Am", "um", "In"]),
-  },
-  { t: "game", task: "Слова дня перемешались. Откройте пары: немецкое слово и перевод.", c: memory(["sprachnachricht", "kassenbuch", "terrasse", "einbruch", "teebeutel", "werkstatt"]) },
+  { t: "game", task: "Слова дня перемешались. Откройте пары: немецкое слово и перевод.", c: memory(["sprachnachricht", "kassenbuch", "terrasse", "einbruch", "teebeutel", "umschlag"]) },
   {
     t: "pick",
     task: "Как завтра поговорить с Йенсеном?",
@@ -909,11 +985,11 @@ const evening: SceneNode[] = [
     answers: ["Kein Einbruch.", "Es ist kein Einbruch.", "Das ist kein Einbruch."],
     ru: "Взлома не было.",
   },
-  narr("Вы закрываете блокнот: «День шестой. Halb sechs — 17:30. Kein Einbruch. Herr Jensen weiß alles — und молчит». Noch sechs Tage."),
+  narr("Вы закрываете блокнот: «День шестой. Halb sechs — 17:30. Kein Einbruch. Herr Jensen weiß alles — und молчит. Ein Umschlag, flach. Bis Freitag». Noch sechs Tage."),
   {
     t: "clue",
-    title: "Herr Jensen weiß alles",
-    text: "Sonntag um halb sechs: Tee für alle. Vorne ist niemand. 17:35: eine Frau, eine große flache Tasche, Bus. Herr Jensen weiß alles — und sagt nur «Moin».",
+    title: "Bis Freitag",
+    text: "Sonntag um halb sechs: Tee für alle, vorne ist niemand. 17:35: eine Frau, dunkelblau, eine große flache Tasche, Bus. Samstag, 16:45: Herr Jensen und eine Frau am Bus — ein Umschlag, flach. Die Frau: «Bis Freitag!» Ihr Schild ist aus Plastik. Herr Jensen sagt nur «Moin».",
   },
 ];
 
@@ -950,20 +1026,20 @@ export const sceneChapter6: Episode = {
       id: "06-s3",
       title: "Wer ist wo?",
       story: [],
-      prompt: "Элиф, Матео и фрау Петерсен: кто где был в 17:30.",
+      prompt: "Элиф, Матео и фрау Петерсен: кто где был в 17:30. И срок до пятницы.",
       hint: "aufhören, zumachen: корень на втором месте, приставка — в конце.",
-      success: "Йенсен сам позвал весь клуб на чай, а в шесть закрыл клуб.",
+      success: "Йенсен сам позвал весь клуб на чай. В пятницу без таблички клуб закажет пластиковую.",
       challenge: play(back(witnesses, 6, 0)),
     },
     {
       id: "06-i1",
-      title: "Глазами чайки",
-      pov: "глазами чайки",
+      title: "Глазами Йенсена",
+      pov: "глазами Йенсена",
       story: [],
-      prompt: "Интерлюдия: чайка путает дни и заглядывает в чужую мастерскую.",
-      hint: "Samstag, Sonntag, Montag: am Samstag — в субботу.",
-      success: "В мастерской в Гардене — доска под тканью и банки краски.",
-      challenge: play(gullDay),
+      prompt: "Интерлюдия: Йенсен под дождём ждёт автобус и отдаёт женщине плоский конверт.",
+      hint: "Viertel vor fünf — без четверти пять, 16:45.",
+      success: "Йенсен отдал женщине конверт. Она сказала: «Bis Freitag!»",
+      challenge: play(jensenDay),
     },
     {
       id: "06-s4",
@@ -987,9 +1063,9 @@ export const sceneChapter6: Episode = {
       id: "06-s6",
       title: "Kein Feierabend",
       story: [],
-      prompt: "Ливень в конце рабочего дня, часы Нильса и закрытая дверь Йенсена.",
+      prompt: "Ливень в конце рабочего дня, слух Фрауке, часы Нильса и закрытая дверь Йенсена.",
       hint: "Wann stehst du auf? — корень второй, приставка в конце.",
-      success: "День шестой закончен. Йенсен избегает разговора. Noch sechs Tage.",
+      success: "Женщина у автобуса — из фирмы табличек. Йенсен избегает разговора. Noch sechs Tage.",
       challenge: play(back(evening, 6, 1)),
     },
   ],

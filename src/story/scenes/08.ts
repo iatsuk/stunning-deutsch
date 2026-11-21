@@ -678,7 +678,7 @@ const ticket: SceneNode[] = [
     t: "game",
     task: "Сходится ли билет с уликами?",
     c: verdict(["Richtig", "Falsch"], [
-      ["Фрауке видела женщину у автобуса в 17:35", true, "«Frau, Overall blau, große flache Tasche, Bus» — из кассовой книги."],
+      ["Фрауке видела женщину у автобуса в 17:35", true, "«Frau, dunkelblau, große flache Tasche, Bus» — из кассовой книги."],
       ["Билет — на понедельник", false, "Sonntag — воскресенье, день пропажи."],
       ["Мастерская тоже в Gaarden", true, "Farbenweg 7, Kiel-Gaarden."],
     ]),

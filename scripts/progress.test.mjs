@@ -55,7 +55,11 @@ test("an old save by node numbers moves onto the current scenes", () => {
     const nodes = beat.challenge.nodes;
     const result = migrate(nodes, entries, legacy[id] ?? []);
     assert.ok(result.passed, `${id}: пройденная сцена потеряла отметку`);
-    assert.ok(result.entries.length >= entries.length - 2, `${id}: ответов было ${entries.length}, осталось ${result.entries.length}`);
+    // Ответы на узлы, которых в сцене больше нет (глава переписана), уходят вместе с узлами: допуск
+    // считается от ответов, чьи узлы остались.
+    const ids = new Set(nodeIds(nodes).values());
+    const alive = Math.max(0, ...(legacy[id] ?? []).map((l) => entries.filter((e) => ids.has(l.keys[e.split("|")[0]])).length));
+    assert.ok(result.entries.length >= alive - 2, `${id}: ответов на оставшиеся узлы было ${alive}, осталось ${result.entries.length}`);
     if (!isCorrect(beat.challenge, result.entries)) moved++;
   }
   assert.ok(moved > 0, "в слепке нет сцен, куда потом добавили узлы");

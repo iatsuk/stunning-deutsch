@@ -128,15 +128,17 @@ export function sceneAt(ids: string[], raw: { at: number; scene?: unknown }): nu
 }
 
 /**
- * Старое сохранение по номерам узлов: выбираем версию сцены, под которую ответы подходят лучше всего
- * (текущая — при равенстве), и переводим ответы через отпечатки на текущие номера. Сцена считается
- * пройденной, если в той версии игрок дошёл до её последнего узла.
+ * Старое сохранение по номерам узлов: выбираем прежнюю версию сцены, под которую ответы подходят
+ * лучше всего, и переводим ответы через отпечатки на текущие номера. Сцена считается пройденной, если в
+ * той версии игрок дошёл до её последнего узла. Текущая раскладка — только когда прежних нет: номера
+ * писались под прежнюю версию, а с номерами переписанной сцены они совпадают случайно и раздали бы
+ * ответы чужим узлам.
  */
 export function migrate(nodes: SceneNode[], entries: string[], legacy: Layout[]): { entries: string[]; passed: boolean } {
   const current = layoutOf(nodes);
   const byId = new Map(Object.entries(current.keys).map(([key, id]) => [id, key]));
   let best = { score: -1, entries: entries, passed: false };
-  for (const layout of [current, ...legacy]) {
+  for (const layout of legacy.length ? legacy : [current]) {
     const moved = entries.flatMap((entry) => {
       const id = layout.keys[keyOf(entry)];
       const key = id === undefined ? undefined : byId.get(id);

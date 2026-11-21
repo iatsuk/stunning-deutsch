@@ -364,6 +364,12 @@ export const phrases: Record<string, Phrase> = {
     pl: "Werkstätten",
     note: "das Werk — работа, die Statt — место: место, где работают руками.",
   },
+  umschlag: {
+    ru: "конверт",
+    de: "der Umschlag",
+    pl: "Umschläge",
+    note: "Плоский бумажный конверт: в него влезает письмо, а табличка — нет.",
+  },
   teebeutel: {
     ru: "чайный пакетик",
     de: "der Teebeutel",
