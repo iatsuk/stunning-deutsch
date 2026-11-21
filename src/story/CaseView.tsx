@@ -1,6 +1,7 @@
 import { PlayButton } from "../markup";
 import { storyAudio, wordInfo } from "./audio";
 import type { Fact, Note } from "./casebook";
+import { REPORTER, type Headline } from "./newspaper";
 import { POSTCARDS, type Postcard } from "./postcards";
 import type { Episode } from "./types";
 
@@ -83,5 +84,29 @@ export function Postcards({ cards }: { cards: Postcard[] }) {
         </section>
       ))}
     </>
+  );
+}
+
+/** Газета Kieler Woche: первая новость крупно, остальные — по тому, как прошло дело игрока. */
+export function Newspaper({ headlines, learned }: { headlines: Headline[]; learned: number }) {
+  const [front, ...rest] = headlines;
+  return (
+    <section className="moin-newspaper">
+      <div className="moin-newspaper-name" lang="de">Kieler Woche Zeitung</div>
+      <h3 lang="de">
+        {front.de} <PlayButton src={storyAudio(front.de, REPORTER)} />
+      </h3>
+      <small>{front.ru}</small>
+      <ul>
+        {rest.map((h) => (
+          <li key={h.de}>
+            <span lang="de">{h.de}</span> <PlayButton src={storyAudio(h.de, REPORTER)} />
+            <br />
+            <small>{h.ru}</small>
+          </li>
+        ))}
+      </ul>
+      <p>Слов и фраз в долгой памяти: {learned}.</p>
+    </section>
   );
 }

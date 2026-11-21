@@ -9,7 +9,7 @@ import { mnemonic } from "./mnemonics";
 import { beatPhrases, initialAnswer, isCorrect } from "./logic";
 import { migrate, sceneAt, toIds, toKeys, type Layout } from "./progress";
 import pastLayouts from "./scene-layouts.json";
-import { dayNumber, grade, remember, type Cards } from "./memory";
+import { dayNumber, grade, longTerm, remember, type Cards } from "./memory";
 import { buildReview, dueUnits, MIN_DUE, reviewSources, SCENE_INTERVALS, sceneUnits, stubbornReview, stubbornUnits, unitText, warmupReview, WELCOME_ROUNDS, type Context, type Mech } from "./review";
 import { SceneReview, type ReviewReason } from "./ReviewView";
 import { playedGames, practiceGrade } from "./practice";
@@ -17,7 +17,8 @@ import { PracticeView } from "./PracticeView";
 import { flatNodes, germanBefore, keyOf, nodeAt, sceneRules, shownWords, worldAfter } from "./scene";
 import { RuleCard } from "./RuleCard";
 import { caseNotes, dossier } from "./casebook";
-import { CaseNotes, Dossier, NoteList, Postcards } from "./CaseView";
+import { CaseNotes, Dossier, Newspaper, NoteList, Postcards } from "./CaseView";
+import { newspaper } from "./newspaper";
 import { openPostcards } from "./postcards";
 import { sceneChapters } from "./scenes";
 import { WARMUPS } from "./scenes/warmups";
@@ -50,7 +51,10 @@ const saveOn = (key: string, on: boolean) => {
 const chapters = sceneChapters;
 /** Вкладки блокнота: текущая глава, всё дело по главам, досье героев, открытки о Германии. */
 const NOTEBOOK_TABS = [["chapter", "Глава"], ["case", "Всё дело"], ["dossier", "Досье"], ["postcards", "Открытки"]] as const;
-type NotebookTab = (typeof NOTEBOOK_TABS)[number][0];
+/** Газета выходит, когда пройдена глава 12. */
+const PAPER_TAB = ["paper", "Газета"] as const;
+const PAPER_CHAPTER = 12;
+type NotebookTab = (typeof NOTEBOOK_TABS)[number][0] | (typeof PAPER_TAB)[0];
 const scenes = chapters.flatMap((c) => c.beats);
 const sceneIds = scenes.map((b) => b.id);
 /** Первая сцена главы в общем списке. */
@@ -236,6 +240,7 @@ export function ScenePreview({ training = false }: { training?: boolean }) {
   const now = worldBefore(scenes.length);
   // Блокнот и инвентарь собираются из пройденных узлов всех сцен.
   const notes = caseNotes(chapters, save.drafts);
+  const paperOut = chapters[PAPER_CHAPTER - 1].beats.every((_, k) => solved(firstOf(PAPER_CHAPTER - 1) + k));
   const gains = notes.find((g) => g.chapter === ci + 1)?.notes ?? [];
 
   // Повторение: перед главой — прошлая глава; за новый день — разминка; перед новой сценой —
@@ -538,7 +543,7 @@ export function ScenePreview({ training = false }: { training?: boolean }) {
           <aside className="moin-preview-notebook">
             <div className="kicker">Блокнот и инвентарь</div>
             <div className="moin-notebook-tabs" role="group" aria-label="Что показать в блокноте">
-              {NOTEBOOK_TABS.map(([id, label]) => (
+              {(paperOut ? [...NOTEBOOK_TABS, PAPER_TAB] : NOTEBOOK_TABS).map(([id, label]) => (
                 <button type="button" key={id} aria-pressed={tab === id} onClick={() => setTab(id)}>
                   {label}
                 </button>
@@ -547,6 +552,7 @@ export function ScenePreview({ training = false }: { training?: boolean }) {
             {tab === "case" && <CaseNotes groups={notes} chapters={chapters} />}
             {tab === "dossier" && <Dossier heroes={dossier(chapters, save.drafts)} />}
             {tab === "postcards" && <Postcards cards={openPostcards(scenes.filter((_, i) => solved(i)).map((b) => b.id))} />}
+            {tab === "paper" && <Newspaper headlines={newspaper(now)} learned={longTerm(save.cards, SCENE_INTERVALS)} />}
             {tab === "chapter" && (
             <>
             {Object.entries(now).some(([q, v]) => v > 0 && TRACKS[q]) && (

@@ -1,3 +1,4 @@
+import { newspaperLines } from "./newspaper.ts";
 import { shuffle } from "../lib/shuffle.ts";
 import { judge, nearMisses } from "../trainer/logic.ts";
 import { flatNodes, keyOf, requiredKeys, sceneVoices, sceneWords, solutionEntries, typedRight } from "./scene.ts";
@@ -58,6 +59,8 @@ export function storyLines(
     ),
     // Вопросы «20 вопросов» звучат и в раундах повторения, где колода не стоит ни в одной сцене.
     ...reviewTwentyLines(NARRATOR),
+    // Газета Kieler Woche после главы 12 стоит вне сцен: её заголовки выбирает состояние мира.
+    ...newspaperLines(),
   ];
 }
 /** Реплики самого действия; сцена отдаёт свои реплики и реплики встроенных игр. */

@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { dayNumber, dueWords, grade, remember } from "../src/story/memory.ts";
+import { dayNumber, dueWords, grade, longTerm, remember } from "../src/story/memory.ts";
 import { SCENE_INTERVALS } from "../src/story/review.ts";
 
 test("a new word waits, then returns after enough steps or on the next day", () => {
@@ -56,4 +56,8 @@ test("misses add up, survive right answers and count once per round", () => {
   assert.equal("miss" in cards.b, false);
   cards = grade(cards, ["a"], [], 2, 2, SCENE_INTERVALS);
   assert.deepEqual(cards.a, { box: 1, step: 2, day: 2, miss: 1 });
+});
+test("long-term memory counts units that wait only for days", () => {
+  const cards = { a: { box: 2, step: 0, day: 0 }, b: { box: 3, step: 0, day: 0 }, c: { box: 5, step: 0, day: 0 } };
+  assert.equal(longTerm(cards, SCENE_INTERVALS), 2);
 });

@@ -82,3 +82,7 @@ export const dueWords = (cards: Cards, step: number, day: number, intervals: Int
     .filter(({ score }) => score >= 1)
     .sort((a, b) => b.score - a.score)
     .map(({ word }) => word);
+
+/** Сколько единиц в долгой памяти: их коробка ждёт только дни, а не сцены. */
+export const longTerm = (cards: Cards, intervals: Interval[]) =>
+  Object.values(cards).filter((card) => intervals[Math.min(card.box, intervals.length - 1)].steps === Infinity).length;
