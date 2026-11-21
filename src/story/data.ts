@@ -364,6 +364,12 @@ export const phrases: Record<string, Phrase> = {
     pl: "Werkstätten",
     note: "das Werk — работа, die Statt — место: место, где работают руками.",
   },
+  firma: {
+    ru: "фирма",
+    de: "die Firma",
+    pl: "Firmen",
+    note: "Firma Kiel-Schild делает таблички из пластика. Bei einer Firma — в какой-то фирме, bei der Firma — в той самой.",
+  },
   umschlag: {
     ru: "конверт",
     de: "der Umschlag",

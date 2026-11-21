@@ -6,8 +6,11 @@ import { back } from "./back.ts";
 // Глава 9 в формате сцен (A1-PLOT.md, «Формат сцен»): город и транспорт, mit/zu/bei/nach с
 // дательным, zum/zur, повелительное наклонение на Sie, zu Hause / nach Hause. Вопрос главы — как
 // найти мастерскую. Вход — адрес Farbenweg 7 и билет в Gaarden, выход — закрытая мастерская
-// («Wir sind beim Arzt»), в окне цела табличка, а Грета с молчаливым мужчиной в шарфе у врача.
-// Повороты брошены оракулом (seed 1794161939), увязка — в журнале A1-STORYCRAFT.md.
+// («Wir sind beim Arzt»), в окне под тканью — тёмно-синий угол с канатом, а Грета с молчаливым мужчиной
+// в шарфе у врача. Ложный след (A1-PLOT.md, «Переработка глав 6–12»): вывеска кафе — от фирмы Kiel-Schild
+// за углом, а Нильс привозит на такси пластиковую MOIN — образец фирмы для Петерсен; несостыковка —
+// у копии нет каната по краю. Повороты брошены оракулом (seeds 1794161939 и 1795220688), увязка — в
+// журнале A1-STORYCRAFT.md.
 
 const narr = (text: string): SceneNode => ({ t: "narr", text });
 const learn = (words?: string[]) => (words ? { learn: words } : {});
@@ -19,6 +22,7 @@ const frauke = (de: string, ru: string, words?: string[]): SceneNode => ({ t: "s
 const yilmaz = (de: string, ru: string, words?: string[]): SceneNode => ({ t: "say", who: "Frau Yilmaz", voice: "Shelley", de, ru, ...learn(words) });
 const fahrer = (de: string, ru: string, words?: string[]): SceneNode => ({ t: "say", who: "Busfahrer", voice: "Eddy", de, ru, ...learn(words) });
 const wirtin = (de: string, ru: string): SceneNode => ({ t: "say", who: "Wirtin", voice: "Sandy", de, ru });
+const nils = (de: string, ru: string): SceneNode => ({ t: "say", who: "Nils", voice: "Reed", de, ru });
 /** Пары памяти — из выражений истории, которые глава уже показала. */
 const memory = (ids: string[]): Challenge => ({ kind: "memory", pairs: ids.map((id) => ({ id, de: phrases[id].de, ru: phrases[id].ru })) });
 const clock = (answer: string, traps: Record<string, string>): Challenge => ({ kind: "clock", start: "12:00", step: 15, answer, traps });
@@ -591,6 +595,7 @@ const cafe: SceneNode[] = [
     options: ["она новая и пластиковая", "она старая, из клуба", "её нашли на улице"],
     answer: "она новая и пластиковая",
   },
+  wirtin("Von der Firma Kiel-Schild. Hier um die Ecke!", "От фирмы Kiel-Schild. Тут, за углом!"),
   narr("На столике кафе — {prospekt} для туристов. Главная {sehenswuerdigkeit} Gaarden, по нему, — рынок."),
   narr("Город можно {besichtigen} самому, а можно с гидом: {fuehrung} — по субботам."),
   elif("Der Mann im Prospekt ist 1901 gestorben. Aber die Führung ist kostenlos!", "Человек из проспекта умер в 1901 году. Зато экскурсия бесплатная!", ["gestorben"]),
@@ -697,11 +702,16 @@ const cafe: SceneNode[] = [
   },
 ];
 
+const NILS_SCHILD = "Ich habe das Schild!!! Im Café, hinten im Hof!!! Das Taxi – zwanzig Euro!!!";
+// Ложная версия впитывает несостыковку: копия без каната — значит, фирма копирует настоящую табличку.
+const HAUKE_KOPIE = "Eine Kopie! Die Firma macht eine Kopie von unserem Schild – und Greta hilft!";
+
 // Сцена 5 · кульминация: двор за почтой. Мастерская закрыта, на двери «Wir sind beim Arzt.
-// Zurück um drei.», в окне — угол таблички, целой и свежевыкрашенной. Почтальонша говорит, что
-// механик у врача с молчаливым мужчиной в шарфе. Записка Грете в почтовый ящик, замок урока.
+// Zurück um drei.», в окне под тканью — только тёмно-синий угол с канатом по краю. Почтальонша
+// говорит, что механик у врача с молчаливым мужчиной в шарфе. Записка Грете в почтовый ящик, замок
+// урока. В три Нильс привозит на такси пластиковую копию: честная несостыковка — у неё нет каната.
 const hof: SceneNode[] = [
-  { t: "pic", src: "09-hinterhof.jpg", alt: "Задний двор за почтой: кирпичная мастерская с большим окном, на двери листок; в окне под тканью виден угол старой тёмно-синей таблички с белой буквой M и кантом-канатом; Элиф и Хауке с бабушкиным велосипедом прильнули к окну; во двор въезжает почтальонша на жёлтом велосипеде" },
+  { t: "pic", src: "09-hinterhof.jpg", alt: "Задний двор за почтой: кирпичная мастерская с большим окном, на двери листок; в окне под тканью виден только тёмно-синий угол доски с кантом-канатом, букв не видно; Элиф и Хауке с бабушкиным велосипедом прильнули к окну; во двор въезжает почтальонша на жёлтом велосипеде" },
   narr("Hinter der Post: {hinterhof}, ganz hinten — die Werkstatt. Farbenweg 7. Die Tür ist zu. An der Tür: {beimarzt}"),
   narr("Для Хауке Gaarden — почти {dorf}: каждый знает каждого. Но это Kiel, а не другой {ort}."),
   {
@@ -724,31 +734,31 @@ const hof: SceneNode[] = [
       "14:00": "Это zwei. До трёх ещё час.",
     }),
   },
-  narr("Im Fenster der Werkstatt — под тканью — угол доски: dunkelblau, ein weißes M, а по краю — {seil}."),
+  narr("Im Fenster der Werkstatt — под тканью — что-то плоское. Виден только угол: dunkelblau, а по краю — {seil}."),
   {
     t: "look",
     task: "Загляните в окно мастерской.",
     items: [
-      { icon: "🪧", de: "das Schild", ru: "табличка", note: "Угол таблички под тканью: тёмно-синяя, белая M, кант-канат. Краска свежая, ни одной трещины.", key: true },
+      { icon: "🟦", de: "dunkelblau", ru: "тёмно-синий", note: "Под тканью — угол чего-то плоского: тёмно-синий, по краю кант-канат. Букв не видно.", key: true },
       { icon: "🥫", de: "die Dose", ru: "банка", note: "Банки лодочной краски: dunkelblau и weiß. Крышки закрыты, кисти вымыты.", key: true },
       { icon: "🖌️", de: "der Pinsel", ru: "кисть", note: "Маленькая кисть — для тонких букв. Как в списке Греты." },
     ],
   },
-  elif("Das ist es! Unser Schild! Und es ist ganz – wie neu!", "Это она! Наша табличка! И она целая — как новая!"),
+  elif("Dunkelblau – und ein Seil! Ist das unser Schild?", "Тёмно-синее — и канат! Это наша табличка?"),
   {
     t: "type",
     rule: ["wohnen/wo-1"],
-    task: "Запишите в блокнот, где табличка.",
-    answers: ["Das Schild ist in der Werkstatt.", "Das Schild ist in der Werkstatt in Gaarden.", "Unser Schild ist in der Werkstatt."],
-    ru: "Табличка в мастерской.",
+    task: "Запишите в блокнот, где тёмно-синий угол с канатом.",
+    answers: ["In der Werkstatt.", "Er ist in der Werkstatt.", "Das ist in der Werkstatt.", "In der Werkstatt in Gaarden."],
+    ru: "В мастерской.",
   },
   {
     t: "pick",
-    task: "Что это значит для дела?",
+    task: "Что видно в окне?",
     options: [
-      ok("Табличку не испортили: её обновляют в мастерской"),
-      no("Табличку разбили", "Она целая, без единой трещины."),
-      no("Это вторая вывеска кафе", "У этой — кант-канат и старая доска. Это наша."),
+      ok("Под тканью что-то тёмно-синее с канатом по краю — как у нашей таблички"),
+      no("Табличку разбили", "Под тканью — целый угол, без трещин."),
+      no("Это вторая вывеска кафе", "У вывески кафе края гладкие. Здесь по краю канат."),
     ],
   },
   narr("Дзынь-дзынь: in den Hinterhof fährt die Briefträgerin. Хауке она уже знает."),
@@ -812,7 +822,37 @@ const hof: SceneNode[] = [
     answer: "у врача всегда долго",
   },
   { t: "game", task: "Дана учит вас словам на завтра. Повторите за ней вслух.", hint: HINT_SAY, c: { kind: "speak", lines: ["der Arzt", "die Post", "das Krankenhaus"] } },
+  narr("Тормоза визжат: in den Hinterhof fährt ein Taxi. Aus dem Taxi — Nils, в руках — ein Schild: weiß, blau, MOIN."),
+  nils(NILS_SCHILD, "Табличка у меня!!! В кафе, сзади во дворе!!! Такси — двадцать евро!!!"),
   {
+    t: "hear",
+    task: "Где Нильс нашёл табличку?",
+    voice: "Reed",
+    de: NILS_SCHILD,
+    options: ["в кафе, во дворе", "в мастерской", "на вокзале"],
+    answer: "в кафе, во дворе",
+  },
+  {
+    t: "game",
+    task: "Сравните табличку Нильса и угол в окне мастерской.",
+    hint: "Посмотрите на края и на буквы.",
+    c: verdict(["Richtig", "Falsch"], [
+      ["По краю таблички Нильса — канат", false, "Края гладкие. Каната нет."],
+      ["Табличка Нильса новая и лёгкая", true, "Пластик, ни трещины, ни старой краски."],
+      ["В окне мастерской — угол с канатом", true, "Тёмно-синий угол, по краю канат."],
+    ]),
+  },
+  hauke(HAUKE_KOPIE, "Копия! Фирма делает копию нашей таблички — а Грета помогает!"),
+  nils("Die Wirtin sagt: Das Schild ist für Frau Petersen. Von der Firma!", "Хозяйка говорит: табличка для фрау Петерсен. От фирмы!"),
+  {
+    t: "pick",
+    task: "Что привёз Нильс?",
+    options: [
+      ok("Новую пластиковую MOIN без каната — образец фирмы для фрау Петерсен"),
+      no("Нашу старую табличку", "У нашей по краю канат, и доска старая. Эта — новая и гладкая."),
+      no("Вывеску кафе MOIN MOIN", "На ней одно MOIN, и она для фрау Петерсен."),
+    ],
+  },  {
     t: "type",
     rule: ["stadt/check-2"],
     task: "Запишите в блокнот главное: где Грета.",
@@ -822,7 +862,7 @@ const hof: SceneNode[] = [
   {
     t: "clue",
     title: "Beim Arzt",
-    text: "Farbenweg 7, im Hinterhof: Die Werkstatt ist zu. «Wir sind beim Arzt. Zurück um drei.» Im Fenster: das Schild MOIN, ganz. Die Briefträgerin: Greta ist beim Arzt — mit einem Mann mit Schal.",
+    text: "Farbenweg 7, im Hinterhof: Die Werkstatt ist zu. «Wir sind beim Arzt. Zurück um drei.» Im Fenster: dunkelblau, mit Seil. Nils: ein Schild aus Plastik, MOIN, ohne Seil — von der Firma, für Frau Petersen. Die Briefträgerin: Greta ist beim Arzt — mit einem Mann mit Schal.",
   },
 ];
 
@@ -944,14 +984,14 @@ const abend: SceneNode[] = [
     options: [
       ok("В десять — к врачу, вместе с Даной"),
       no("Снова ехать в мастерскую", "Грета и Йенсен завтра опять у врача, мастерская подождёт."),
-      no("Искать вторую вывеску MOIN MOIN", "Вывеска кафе новая и чужая. Наша табличка — в мастерской."),
+      no("Искать вторую вывеску MOIN MOIN", "Вывеска кафе новая и чужая. А в мастерской — тёмно-синий угол с канатом."),
     ],
   },
-  narr("Вы закрываете блокнот: «День девятый. Schild: in der Werkstatt, ganz. Greta und ein Mann mit Schal: beim Arzt». Noch drei Tage."),
+  narr("Вы закрываете блокнот: «День девятый. Werkstatt: dunkelblau, mit Seil. Nils: Plastik, ohne Seil. Greta und ein Mann mit Schal: beim Arzt». Noch drei Tage."),
   {
     t: "clue",
     title: "Morgen um zehn",
-    text: "Das Schild ist in der Werkstatt in Gaarden — ganz. Greta und Herr Jensen (Schal, sagt nichts): beim Arzt. Morgen um zehn wieder. Dana kommt mit.",
+    text: "In der Werkstatt in Gaarden: dunkelblau, mit Seil — unser Schild? Nils: ein Schild aus Plastik, von der Firma. Greta und Herr Jensen (Schal, sagt nichts): beim Arzt. Morgen um zehn wieder. Dana kommt mit.",
   },
 ];
 
@@ -1015,9 +1055,9 @@ export const sceneChapter9: Episode = {
       id: "09-s5",
       title: "Beim Arzt",
       story: [],
-      prompt: "Двор за почтой: закрытая мастерская и табличка в окне.",
+      prompt: "Двор за почтой: закрытая мастерская, угол под тканью и такси Нильса.",
       hint: "beim Arzt — у врача, zum Arzt — к врачу.",
-      success: "Табличка цела. Грета у врача с молчаливым мужчиной в шарфе.",
+      success: "В окне — тёмно-синий угол с канатом, у Нильса — пластиковая копия без каната. Грета у врача с молчаливым мужчиной в шарфе.",
       challenge: play(back(hof, 9, 3)),
     },
     {

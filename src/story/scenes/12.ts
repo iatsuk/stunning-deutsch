@@ -4,9 +4,11 @@ import type { Challenge, Episode, SceneNode } from "../types.ts";
 import { back } from "./back.ts";
 
 // Глава 12 в формате сцен (A1-PLOT.md, «Формат сцен»): поездки, погода, даты, Perfekt с sein. Вопрос
-// главы — успеем ли к старту. Вход — мокрая краска, дождь и тайна; выход — табличка на месте, вы
-// рассказываете дело по-немецки, Йенсен произносит целую фразу. Повороты брошены оракулом
-// (seed 1794688323), увязка — в журнале A1-STORYCRAFT.md. Финал чайки зависит от её часов за всю игру.
+// главы — успеем ли к старту. Вход — «Fertig!», дождь и тайна; выход — табличка на месте, вы
+// рассказываете дело по-немецки, Йенсен произносит целую фразу. Развязка двойного блефа (A1-PLOT.md,
+// «Переработка глав 6–12»): утром в мастерской Греты первая догадка подтверждается, к десяти фрау
+// Claasen привозит заказанный пластик, а на старте Йенсен объясняет блокнот и письмо. Повороты брошены
+// оракулом (seed 1794688323), увязка — в журнале A1-STORYCRAFT.md. Финал чайки зависит от её часов за всю игру.
 
 const narr = (text: string): SceneNode => ({ t: "narr", text });
 const learn = (words?: string[]) => (words ? { learn: words } : {});
@@ -18,6 +20,7 @@ const petersen = (de: string, ru: string, words?: string[]): SceneNode => ({ t: 
 const opa = (de: string, ru: string, words?: string[]): SceneNode => ({ t: "say", who: "Opa Hansen", voice: "Eddy", de, ru, ...learn(words) });
 const rezeption = (de: string, ru: string, words?: string[]): SceneNode => ({ t: "say", who: "Rezeption", voice: "Shelley", de, ru, ...learn(words) });
 const jensen = (de: string, ru: string): SceneNode => ({ t: "say", who: "Herr Jensen", voice: "Grandpa", de, ru });
+const claasen = (de: string, ru: string): SceneNode => ({ t: "say", who: "Frau Claasen", voice: "Shelley", de, ru });
 /** Пары памяти — из выражений истории, которые глава уже показала. */
 const memory = (ids: string[]): Challenge => ({ kind: "memory", pairs: ids.map((id) => ({ id, de: phrases[id].de, ru: phrases[id].ru })) });
 const clock = (answer: string, traps: Record<string, string>): Challenge => ({ kind: "clock", start: "07:00", step: 5, answer, traps });
@@ -26,6 +29,11 @@ const no = (text: string, react: string) => ({ text, react });
 
 const MATEO_HOTEL = "Das Schild ist nass? Es braucht ein Hotel! Ein Zimmer, warm und trocken!";
 const OPA = "Moin! Ich bin mit dem Zug aus Hamburg gekommen. Der Zug hatte Verspätung – zwanzig Minuten!";
+// Развязка: Грета пишет, Дана читает вслух; Perfekt с sein — урок главы.
+const GRETA = "Greta schreibt: Ich bin am Sonntag mit dem Schild nach Gaarden gefahren. Mit dem Bus, um Viertel vor sechs.";
+const CLAASEN = "Frau Petersen hat am Freitag bestellt. Hier ist Ihr Schild!";
+const JENSEN_HEFT = "Das Notizbuch ist für Wörter. Nicht für Detektive. Aber Sie haben viele Wörter gelernt.";
+const JENSEN_BRIEF = "Der Brief war für die Firma: Kommen Sie am Freitag. So hatte Greta Zeit.";
 const JENSEN = "Vor fünfzig Jahren habe ich die Farbe gehalten. Heute ist das Schild wieder da. Danke, Greta. Danke, Heinrich. Willkommen, Kieler Woche!";
 
 // Сцена 1 · пролог: суббота, дождь, краска не высохла. Бросок: подарок игроку · Матео · неверно
@@ -36,6 +44,7 @@ const JENSEN = "Vor fünfzig Jahren habe ich die Farbe gehalten. Heute ist das S
 const regen: SceneNode[] = [
   { t: "pic", src: "12-regen.jpg", alt: "Субботнее утро в мастерской Греты, за окном ливень: табличка MOIN на верстаке блестит — краска ещё мокрая; Грета трогает её пальцем, Матео с термосом и Хауке в жёлтом дождевике смотрят на дождь" },
   narr("Samstag, der zwanzigste Juni. Kieler Woche! Und das Wetter? Es regnet. Es ist windig und kalt — wie im Herbst. Das Wetter ist {schlecht}."),
+  narr("7:00, Farbenweg 7. Greta macht die Tür auf. Auf dem Tisch — unser Schild: dunkelblau, weiße Buchstaben, по краю — {seil}. Wie neu."),
   {
     t: "look",
     task: "Осмотритесь в мастерской.",
@@ -45,6 +54,27 @@ const regen: SceneNode[] = [
       { icon: "☂️", de: "der Regenschirm", ru: "зонт", note: "Зонт Хауке. Ветер уже вывернул его наизнанку." },
     ],
   },
+  elif("Das Schild! Unser Schild – und es ist hier!", "Табличка! Наша табличка — и она здесь!"),
+  narr("Наконец {found} Первая догадка — Грета, краска, Dunkelblau und Weiß — была верной."),
+  dana(GRETA, "Грета пишет: в воскресенье я поехала с табличкой в Гаарден. На автобусе, без четверти шесть."),
+  {
+    t: "hear",
+    task: "Когда Грета увезла табличку?",
+    voice: "Anna",
+    de: GRETA,
+    options: ["в воскресенье, в 17:45, на автобусе в Гаарден", "в субботу вечером, на такси", "ночью, на лодке"],
+    answer: "в воскресенье, в 17:45, на автобусе в Гаарден",
+  },
+  {
+    t: "pick",
+    task: "Кто был женщиной у автобуса в 17:35?",
+    options: [
+      ok("Грета: тёмно-синий комбинезон и большая плоская сумка"),
+      no("Фрау Claasen", "У неё тёмно-синий плащ, но старых табличек фирма не берёт: «Das haben wir nie gehabt»."),
+      no("Фрауке", "Фрауке стояла в киоске и записывала."),
+    ],
+  },
+  { t: "gap", rule: ["reisen/perfekt-1"], task: "Что написала Грета?", text: "Ich ___ am Sonntag nach Gaarden gefahren.", options: ["bin", "habe", "ist"], answer: "bin", ru: "В воскресенье я поехала в Гаарден." },
   hauke("Es regnet, es regnet! Und das Schild ist noch nicht trocken!", "Дождь, дождь! А табличка ещё не высохла!", ["das Wetter"]),
   hauke("Heute ist es kälter als im Herbst!", "Сегодня холоднее, чем осенью!"),
   dana("Der Wetterbericht hat recht: Regen, Wind – und nur zwölf Grad!", "Прогноз не соврал: дождь, ветер — и всего двенадцать градусов!"),
@@ -116,6 +146,7 @@ const regen: SceneNode[] = [
   narr("Грета пишет, Элиф читает вслух. Da ist {trockenraum}. Отель Грета знает: Sie hat da früher gearbeitet."),
   elif("Greta schreibt: Hotel am Hafen, neben dem Club! Der Trockenraum ist warm und trocken!", "Грета пишет: отель у гавани, рядом с клубом! В сушильной тепло и сухо!"),
   hauke("Ein Trockenraum! Super! Wir fahren mit dem Bus – mit dem Schild!", "Сушильная! Супер! Едем на автобусе — с табличкой!"),
+  narr("Коробку искать не надо: {karton} Йенсена уже здесь. В четверг он написал: «Samstag: der Karton aus dem Keller». Ключ от подвала — у вас, и утром Хауке за ней сходил."),
   {
     t: "game",
     rule: ["reisen/es-regnet-1"],
@@ -276,13 +307,6 @@ const weg: SceneNode[] = [
       no("Wir haben im Hotel angekommen.", "ankommen — движение: Perfekt с sein."),
       no("Wir sind im Hotel geankommen.", "ge- стоит между приставкой и корнем: angekommen."),
     ],
-  },
-  {
-    t: "game",
-    rule: ["reisen/check-1"],
-    task: "Соберите фразу для блокнота: причастие — в конце.",
-    hint: "Время первым, sein — вторым, angekommen — в самом конце.",
-    c: order(["Um", "halb", "neun", "sind", "wir", "angekommen."], ["angekommen.", "wir", "Um", "sind", "neun", "halb"]),
   },
   { t: "game", task: "Слова поездки — по ящикам Йенсена: der, die, das.", hint: "Артикль запоминают вместе со словом. После ошибки слово вернётся в конце очереди.", c: { kind: "docks", words: ["der Koffer", "die Reise", "das Hotel", "der Zug", "das Flugzeug", "die Fahrkarte", "der Urlaub", "die Nacht", "der Flughafen", "die Durchsage", "der Monat", "die Jahreszeit", "der Frühling"] } },
   {
@@ -619,6 +643,19 @@ const herbst: SceneNode[] = [
     answer: "старт сегодня в одиннадцать, как всегда",
   },
   dana("Diagnose: falscher Alarm. Aber wir haben nur noch eine Stunde!", "Диагноз: ложная тревога. Но у нас всего час!"),
+  narr("Vor dem Club — ein Auto. Frau Claasen — mit einem Schild aus Plastik: weiß, ohne Seil, MOIN."),
+  claasen(CLAASEN, "Фрау Петерсен заказала в пятницу. Вот ваша табличка!"),
+  petersen("Bestellt ist bestellt. Ohne Schild kein Start!", "Заказано — значит заказано. Без таблички нет старта!"),
+  {
+    t: "pick",
+    task: "Что делать с пластиковой табличкой?",
+    options: [
+      ok("Пусть постоит до одиннадцати: настоящая сохнет в отеле до 10:30"),
+      no("Выбросить её в гавань", "Фрау Claasen не виновата: заказ есть заказ."),
+      no("Отдать её Opa Hansen", "Opa ждёт свою табличку — деревянную."),
+    ],
+  },
+  narr("Пластиковая MOIN встаёт на подставку и блестит под дождём. Фрау Петерсен о настоящей пока не знает."),
   elif("Wir müssen schnell sein, denn der Start ist um elf! Ohne Schild? Unmöglich!", "Надо спешить: старт в одиннадцать! Без таблички? Невозможно!"),
   { t: "gap", rule: ["moin/un-los-1"], task: "Что сказала Элиф о старте без таблички?", text: "Ein Start ohne Schild ist ___.", options: ["unmöglich", "nichtmöglich", "möglichlos"], answer: "unmöglich", ru: "Старт без таблички невозможен." },
   {
@@ -656,7 +693,7 @@ const herbst: SceneNode[] = [
   {
     t: "clue",
     title: "Kein Herbst",
-    text: "Das Barometer ist kaputt: «Sturm!» Frau Petersen: «Die Party ist im Herbst!» Die Regatta: der Start ist heute um elf, wie immer. Noch eine Stunde.",
+    text: "Das Barometer ist kaputt: «Sturm!» Frau Petersen: «Die Party ist im Herbst!» Die Regatta: der Start ist heute um elf, wie immer. Frau Claasen bringt das Schild aus Plastik — Frau Petersen hat es bestellt. Noch eine Stunde.",
   },
 ];
 
@@ -676,6 +713,7 @@ const start: SceneNode[] = [
     ],
   },
   hauke("Hier! Hier ist es!", "Здесь! Вот она!"),
+  narr("Пластиковую MOIN снимают с подставки. Frauke nimmt sie: «Für meinen Kiosk? … Na gut. Ja, danke!»"),
   {
     t: "game",
     task: "Верните табличку на место — по словам фрау Петерсен.",
@@ -767,6 +805,27 @@ const start: SceneNode[] = [
     hint: "Время первым, глагол вторым, «wieder da» — в конце.",
     c: order(["Heute", "ist", "das", "Schild", "wieder", "da."], ["wieder", "Schild", "da.", "Heute", "das", "ist"]),
   },
+  narr("Почти всё. Йенсен поворачивается к вам: в ваших руках — блокнот в клетку с надписью neu, тот, что он вложил вам в руки в первый день."),
+  jensen(JENSEN_HEFT, "Блокнот — для слов. Не для детективов. Но вы выучили много слов."),
+  {
+    t: "hear",
+    task: "Для чего был блокнот?",
+    voice: "Grandpa",
+    de: JENSEN_HEFT,
+    options: ["для немецких слов, а не для детектива", "для улик", "для рецептов Матео"],
+    answer: "для немецких слов, а не для детектива",
+  },
+  hauke("Und ich habe «Detektiv» gesagt! Am ersten Tag!", "А «детектив» сказал я! В первый же день!"),
+  jensen(JENSEN_BRIEF, "Письмо было для фирмы: приходите в пятницу. Так у Греты было время."),
+  {
+    t: "pick",
+    task: "Почему Йенсен путал следы?",
+    options: [
+      ok("Чтобы сюрприз к столетию дожил до субботы и у Греты было время"),
+      no("Он хотел отдать табличку фирме", "Наоборот: письмом он задержал фирму до пятницы."),
+      no("Он не любит новичков", "Каждому новичку он дарит блокнот — для слов."),
+    ],
+  },
   narr("Heute ist in Kiel niemand {fremd}: {deutsche}, {europaeer} aus Dänemark, Gast aus den USA — alle sind zu Hause."),
   narr("Lotte und zwanzig Kinder — её класс — касаются таблички. Потом команды. Без MOIN нет старта, а с MOIN — {start}!"),
   {
@@ -790,7 +849,7 @@ const start: SceneNode[] = [
   {
     t: "clue",
     title: "Hier.",
-    text: "Elf Uhr: Das Schild steht wieder auf dem Aufsteller. Die Sonne scheint. Opa Hansen sieht sein Schild. Herr Jensen darf wieder sprechen: «Danke, Greta!» Dann: «Moin.»",
+    text: "Elf Uhr: Das Schild steht wieder auf dem Aufsteller, das Schild aus Plastik ist am Kiosk von Frauke. Die Sonne scheint. Opa Hansen sieht sein Schild. Herr Jensen darf wieder sprechen: «Danke, Greta!» «Das Notizbuch ist für Wörter.» Dann: «Moin.»",
   },
 ];
 
@@ -828,6 +887,19 @@ const party: SceneNode[] = [
   narr("Die Kieler Woche ist {europaeisch} und {kulturell}: Musik, Essen, Tanz — und viele {auslaendisch} Boote. Das ist hier {normal}."),
   elif("Komm, Opa! Hier ist ein Stuhl für dich!", "Иди сюда, Opa! Вот стул для тебя!"),
   { t: "gap", rule: ["moin/uns-1"], task: "Как Opa Hansen себя чувствует? Запишите.", text: "Opa freut ___.", options: ["sich", "mich", "ihn"], answer: "sich", ru: "Opa радуется." },
+  {
+    t: "game",
+    task: "Ложные следы недели: что было на самом деле?",
+    hint: "Вспомните главы с шестой по одиннадцатую: конверт, фирма, копия, одно слово Йенсена.",
+    c: verdict(["Richtig", "Falsch"], [
+      ["В плоском конверте Йенсена была табличка", false, "В конверте было письмо фирме: «Kommen Sie am Freitag». Табличка в конверт не влезет."],
+      ["«Bei einer Firma» у Нильса — это фирма табличек", false, "Нильс сказал einer — лодочная мастерская. «Der Firma» услышала Фрауке."],
+      ["Копия Нильса без каната — образец фирмы для фрау Петерсен", true, "Новая, лёгкая, из пластика. У нашей по краю канат."],
+      ["«Firma.» Йенсена — правда, но не вся", true, "Фирма была, только табличку она не получала."],
+      ["Билет на 17:45 в Гаарден — это Грета с табличкой", true, "Автобус в Гаарден, к мастерской на Farbenweg."],
+      ["Женщина в 17:35 — фрау Claasen", false, "Это Грета: тёмно-синий комбинезон и большая плоская сумка."],
+    ]),
+  },
   {
     t: "game",
     rule: ["reisen/perfekt-1"],
@@ -954,7 +1026,7 @@ const party: SceneNode[] = [
     options: [
       ok("Табличку не украли: её тайно обновили к столетию клуба, и она вернулась к старту"),
       no("Табличку украла чайка", "Чайка ничего не сделала. Табличку отдал Йенсен — Грете."),
-      no("Табличку заменили новой", "Клуб отказал фирме. Это та самая табличка 1976 года."),
+      no("Табличку заменили новой", "Пластик фрау Claasen ушёл в киоск Фрауке. На подставке — та самая табличка 1976 года."),
     ],
   },
   {
@@ -987,9 +1059,9 @@ export const sceneChapter12: Episode = {
       id: "12-s1",
       title: "Es regnet",
       story: [],
-      prompt: "Суббота, дождь, а краска ещё мокрая.",
+      prompt: "Суббота, семь утра: мастерская Греты — и первая догадка.",
       hint: "Heute regnet es. — es не пропадает.",
-      success: "Табличке нужен «отель». Грета знает, какой.",
+      success: "Табличку увезла Грета, первая догадка верна. Мокрой табличке нужен «отель».",
       challenge: play(regen),
     },
     {
@@ -1014,7 +1086,7 @@ export const sceneChapter12: Episode = {
       id: "12-s4",
       title: "Wie im Herbst",
       story: [],
-      prompt: "Разбитый барометр и праздник «осенью».",
+      prompt: "Разбитый барометр, праздник «осенью» и пластик от фрау Claasen.",
       hint: "im Herbst, am zwanzigsten Juni, um elf — im, am, um.",
       success: "Ложная тревога: старт в одиннадцать, как всегда.",
       challenge: play(herbst),
@@ -1023,7 +1095,7 @@ export const sceneChapter12: Episode = {
       id: "12-s5",
       title: "Hier.",
       story: [],
-      prompt: "Старт: табличка возвращается, а Йенсен говорит целую фразу.",
+      prompt: "Старт: табличка возвращается, а Йенсен объясняет блокнот и письмо.",
       hint: "Das Schild ist zurückgekommen. — движение: sein.",
       success: "Ohne MOIN kein Start — и с MOIN: старт!",
       challenge: play(back(start, 12, 3)),

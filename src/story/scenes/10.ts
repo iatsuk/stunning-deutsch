@@ -6,9 +6,11 @@ import { back } from "./back.ts";
 // Глава 10 в формате сцен (A1-PLOT.md, «Формат сцен»): здоровье и врач, части тела, «у меня болит»,
 // müssen и dürfen, повелительное на du и ihr, а сверх уроков — sollen и сводная таблица модальных
 // глаголов (раздел «Модальные глаголы в новой версии»). Вопрос главы — почему Йенсен молчит. Вход —
-// Йенсен в десять у врача, выход — «Sie dürfen bis Samstag nicht sprechen», первые записки Йенсена,
-// «Fragen Sie Greta» и встреча с Гретой завтра в мастерской. Повороты брошены оракулом
-// (seed 1794686082), увязка — в журнале A1-STORYCRAFT.md.
+// Йенсен в десять у врача, выход — «Sie dürfen bis Samstag nicht sprechen», первые записки Йенсена и
+// одно слово в подаренном блокноте: «Firma.» Ложный след (A1-PLOT.md, «Переработка глав 6–12»): слово
+// верное, но ведёт не туда; Фрауке приносит визитку фрау Claasen, и завтра в одиннадцать команда едет
+// в фирму. Повороты брошены оракулом (seeds 1794686082 и 1795220689), увязка — в журнале
+// A1-STORYCRAFT.md.
 
 const narr = (text: string): SceneNode => ({ t: "narr", text });
 const learn = (words?: string[]) => (words ? { learn: words } : {});
@@ -390,6 +392,7 @@ const warten: SceneNode[] = [
     },
   },
   elif("Das Schild ist schwer – und Greta trägt es. Aber warum?", "Табличка тяжёлая — и Грета её носит. Но зачем?"),
+  narr("Хауке уверен: тяжёлую табличку Грета носит туда же — в {firma}. Для него это ясно как день."),
   {
     t: "gap",
     rule: ["gesundheit/check-1"],
@@ -425,7 +428,9 @@ const warten: SceneNode[] = [
 
 // Сцена 4 · поворот: врач объясняет молчание. Йенсену нельзя говорить до субботы — до старта
 // Kieler Woche; «Sie sollen viel Tee trinken» — sollen. Йенсен пишет первую длинную записку
-// (сквозная шутка: целая страница) и «Fragen Sie Greta». Слух о том, что он не заговорит никогда,
+// (сквозная шутка: целая страница). Бросок: нить закрывается раньше срока · Дана · подарить ·
+// das Wartezimmer · 1 (обратный эффект): Дана дарит ему новый блокнот, чтобы он всё объяснил, а он
+// пишет одно слово — «Firma.». Слух о том, что он не заговорит никогда,
 // опровергает врач — «Найди противоречие». План лекарств — раскладка.
 const sommerS: SceneNode[] = [
   { t: "pic", src: "10-sommer.jpg", alt: "Дверь кабинета: доктор Зоммер в белом халате и круглых очках выходит с Йенсеном; Йенсен поднимает блок, исписанный до конца страницы; Элиф и Дана читают" },
@@ -531,15 +536,16 @@ const sommerS: SceneNode[] = [
     },
   },
   { t: "gap", task: "Как долго Йенсену нельзя говорить?", text: "Herr Jensen darf ___ Samstag nicht sprechen.", options: ["bis", "um", "am"], answer: "bis", ru: "Господину Йенсену нельзя говорить до субботы." },
-  narr("Йенсен вырывает листок и протягивает вам. Drei Wörter: «Fragen Sie Greta.»"),
-  dana("Fragen Sie Greta? Greta ist jetzt bei Doktor Sommer – mit dem Rücken.", "«Спросите Грету»? Грета сейчас у доктора Зоммера — со спиной."),
+  dana("Hier, ein neuer Notizblock – für Sie! Bitte schreiben Sie: Wo ist das Schild?", "Вот, новый блокнот — вам! Пожалуйста, напишите: где табличка?"),
+  narr("Йенсен берёт подарок, долго смотрит в окно — и пишет одно слово: «Firma.» Блокнот на сто страниц, слово — одно."),
+  dana("Firma? Die Firma mit dem Schild aus Plastik?", "Фирма? Та фирма с пластиковой табличкой?"),
   {
     t: "pick",
     task: "Что значит записка Йенсена?",
     options: [
-      ok("Про табличку расскажет Грета: Йенсен говорить не может, а она знает всё"),
-      no("Грета — его врач", "Его врач — доктор Зоммер. Грета — механик мастерской."),
-      no("Йенсен обижен и не хочет отвечать", "Он отвечает — записками. И отправляет к Грете."),
+      ok("Йенсен показывает на фирму — но что с ней, не пишет"),
+      no("Йенсен — хозяин фирмы", "Он начальник гавани. О хозяине фирмы — ни слова."),
+      no("Йенсен обижен и не хочет отвечать", "Он отвечает — одним словом. Для него это много."),
     ],
   },
   {
@@ -553,14 +559,17 @@ const sommerS: SceneNode[] = [
   {
     t: "clue",
     title: "Bis Samstag",
-    text: "Doktor Sommer: Herr Jensen darf bis Samstag nicht sprechen. Er soll viel Tee trinken und zu Hause bleiben. Der Zettel von Herrn Jensen: «Fragen Sie Greta.»",
+    text: "Doktor Sommer: Herr Jensen darf bis Samstag nicht sprechen. Er soll viel Tee trinken und zu Hause bleiben. Der Notizblock von Dana für Herrn Jensen: ein Wort — «Firma.»",
   },
 ];
 
+const FRAUKE_KARTE = "Und hier: die Karte von der Frau mit der Tasche! Sie war am Samstag am Kiosk.";
+const DANA_FIRMA = "Morgen um elf fahren wir zur Firma. Frau Claasen soll alles erzählen!";
+
 // Сцена 5 · кульминация: аптека внизу. Бросок: сквозная шутка обостряется · Фрауке · пообещать ·
 // die Versichertenkarte · 15 — Фрауке обещала принести забытую Йенсеном карточку и приносит, а с ней
-// открытку от всей гавани. Грета выходит от врача и назначает встречу: нить «Грета молчит» закрывается
-// раньше срока. Чайка уносит рецепт — гонка. Замок урока и записка Хауке по образцу.
+// открытку от всей гавани, а заодно визитку фрау Claasen из главы 6. Грета выходит от врача и только
+// благодарит запиской. Чайка уносит рецепт — гонка. Замок урока и записка Хауке по образцу.
 const apotheke: SceneNode[] = [
   { t: "pic", src: "10-apotheke.jpg", alt: "Аптека на первом этаже дома врачей: Фрауке в полосатом фартуке врывается с открыткой размером с поднос и протягивает Йенсену карточку; на пороге чайка с рецептом в клюве; Грета улыбается" },
   narr("In der Apotheke im Erdgeschoss. Das Rezept ist da. Aber die Versichertenkarte? — у Йенсена её нет."),
@@ -601,40 +610,49 @@ const apotheke: SceneNode[] = [
   { t: "game", task: `Отнимите рецепт у чайки! ${RACE}`, hint: HINT_RACE, outcome: RACE_STAKES, c: race(["die Tablette", "das Medikament", "der Arzt", "die Praxis", "der Termin", "krank", "rauchen", "wehtun", "der Husten", "der Schnupfen"]) },
   elif("Möwen werden nicht krank. Sie braucht kein Rezept!", "Чайки не болеют. Рецепт ей не нужен!"),
   { t: "gap", task: "Что говорит Элиф о чайке?", text: "Die Möwe braucht kein ___.", options: ["Rezept", "Bett", "Termin"], answer: "Rezept", ru: "Чайке не нужен рецепт." },
-  narr("Грета выходит из лифта: der Rücken ist besser. Она протягивает Элиф записку — впервые длинную."),
-  narr("«Morgen um elf. In der Werkstatt. Mit Herrn Jensen. Fragen Sie alles! Greta»"),
-  {
-    t: "pick",
-    task: "Что изменилось?",
-    options: [
-      ok("Грета впервые сама зовёт команду и готова ответить на все вопросы"),
-      no("Грета уезжает из Киля", "Она зовёт в мастерскую завтра в одиннадцать."),
-      no("Йенсен заговорил", "Ему нельзя говорить до субботы. Пишет Грета."),
-    ],
-  },
-  dana("Morgen um elf in der Werkstatt! Greta erzählt alles. Endlich!", "Завтра в одиннадцать в мастерской! Грета всё расскажет. Наконец-то!", ["erzählen"]),
+  narr("Грета выходит из лифта: der Rücken ist besser. Элиф получает записку: «Danke für den Termin! Greta». И Греты уже нет — быстро, как на пляже."),
+  frauke(FRAUKE_KARTE, "А вот визитка той женщины с сумкой! Она была у киоска в субботу."),
   {
     t: "hear",
-    task: "Что говорит Дана о записке Греты?",
-    voice: "Anna",
-    de: "Morgen um elf in der Werkstatt! Greta erzählt alles. Endlich!",
-    options: ["завтра в одиннадцать Грета всё расскажет в мастерской", "Грета уезжает в Гамбург", "Грета придёт в клуб вечером"],
-    answer: "завтра в одиннадцать Грета всё расскажет в мастерской",
+    task: "Чья визитка у Фрауке?",
+    voice: "Sandy",
+    de: FRAUKE_KARTE,
+    options: ["женщины с сумкой, что была у киоска в субботу", "доктора Зоммера", "Греты"],
+    answer: "женщины с сумкой, что была у киоска в субботу",
   },
+  narr("Визитку чайка тоже успела надорвать. Кусочки — на прилавке аптеки."),
   {
     t: "game",
-    task: "Порванная записка: чайка дёрнула край листка Греты. Сложите его по порядку.",
-    hint: "Обращение сверху, затем место и время, приглашение к вопросам и подпись.",
+    task: "Порванная визитка: сложите её по порядку.",
+    hint: "Сверху фирма, потом имя, адрес и часы работы.",
     c: {
       kind: "torn",
-      title: "Brief von Greta",
+      title: "Visitenkarte",
       strips: [
-        { id: "t1", de: "Liebe Leute,", ru: "Дорогие друзья," },
-        { id: "t2", de: "morgen um elf sind wir in der Werkstatt.", ru: "завтра в одиннадцать мы в мастерской." },
-        { id: "t3", de: "Herr Jensen ist auch da. Fragen Sie alles!", ru: "Господин Йенсен тоже там. Спрашивайте обо всём!" },
-        { id: "t4", de: "Viele Grüße, Greta", ru: "С наилучшими пожеланиями, Грета" },
+        { id: "k1", de: "Firma Kiel-Schild · Schilder aus Plastik", ru: "Фирма Kiel-Schild · таблички из пластика" },
+        { id: "k2", de: "Frau Claasen", ru: "Фрау Claasen" },
+        { id: "k3", de: "Am Markt 3, Kiel-Gaarden", ru: "Ам-Маркт, 3, Киль-Гаарден" },
+        { id: "k4", de: "Montag bis Freitag, von neun bis fünf", ru: "С понедельника по пятницу, с девяти до пяти" },
       ],
     },
+  },
+  dana(DANA_FIRMA, "Завтра в одиннадцать едем в фирму. Пусть фрау Claasen всё расскажет!", ["erzählen"]),
+  {
+    t: "hear",
+    task: "Что решает Дана?",
+    voice: "Anna",
+    de: DANA_FIRMA,
+    options: ["завтра в одиннадцать — в фирму", "завтра — к Грете в мастерскую", "ждать до субботы"],
+    answer: "завтра в одиннадцать — в фирму",
+  },
+  {
+    t: "pick",
+    task: "Почему завтра — в фирму?",
+    options: [
+      ok("Йенсен написал «Firma.», а у Фрауке визитка той самой женщины"),
+      no("Грета позвала в мастерскую", "Грета написала только «Danke für den Termin!»."),
+      no("Фирма ищет механика", "Про работу в фирме никто не говорил. Есть слово Йенсена и визитка."),
+    ],
   },
   {
     t: "game",
@@ -670,13 +688,13 @@ const apotheke: SceneNode[] = [
   {
     t: "type",
     task: "Запишите план на завтра: время — на первом месте.",
-    answers: ["Morgen um elf sind wir in der Werkstatt.", "Morgen um elf gehen wir in die Werkstatt.", "Morgen um elf fahren wir zur Werkstatt."],
-    ru: "Завтра в одиннадцать мы в мастерской.",
+    answers: ["Morgen um elf fahren wir zur Firma.", "Morgen um elf sind wir in der Firma.", "Morgen um elf gehen wir zur Firma."],
+    ru: "Завтра в одиннадцать мы едем в фирму.",
   },
   {
     t: "clue",
     title: "Morgen um elf",
-    text: "Frauke bringt die Versichertenkarte und eine Karte vom Hafen. Greta: «Morgen um elf. In der Werkstatt. Mit Herrn Jensen. Fragen Sie alles!»",
+    text: "Frauke bringt die Versichertenkarte, eine Karte vom Hafen — und die Karte von Frau Claasen: Firma Kiel-Schild, Am Markt 3, Kiel-Gaarden. Greta: «Danke für den Termin!» Morgen um elf: zur Firma.",
   },
 ];
 
@@ -771,11 +789,11 @@ const abend: SceneNode[] = [
       no("Gute Nacht! Schlaf gut!", "Schlaf — одному другу. Двоим — Schlaft."),
     ],
   },
-  narr("Вы закрываете блокнот: «День десятый. Herr Jensen: bis Samstag kein Wort. Morgen um elf: Werkstatt, Greta, alles». Noch zwei Tage."),
+  narr("Вы закрываете блокнот: «День десятый. Herr Jensen: bis Samstag kein Wort — nur «Firma.». Morgen um elf: Firma Kiel-Schild». Noch zwei Tage."),
   {
     t: "clue",
     title: "Noch zwei Tage",
-    text: "Morgen um elf in der Werkstatt: Greta und Herr Jensen. Fragen Sie alles! Samstag: Kieler Woche und die Party am Club. Mateo und der Kuchen — ein Geheimnis?",
+    text: "Morgen um elf in Gaarden: Firma Kiel-Schild, Frau Claasen. Herr Jensen schreibt nur: «Firma.» Samstag: Kieler Woche und die Party am Club. Mateo und der Kuchen — ein Geheimnis?",
   },
 ];
 
@@ -822,16 +840,16 @@ export const sceneChapter10: Episode = {
       story: [],
       prompt: "Доктор Зоммер объясняет, почему Йенсен молчит.",
       hint: "Er soll viel Tee trinken. — так велел врач: sollen.",
-      success: "До субботы ни слова. Йенсен пишет: «Fragen Sie Greta».",
+      success: "До субботы ни слова. В подаренном блокноте Йенсен пишет одно слово: «Firma.»",
       challenge: play(sommerS),
     },
     {
       id: "10-s5",
-      title: "Fragen Sie Greta",
+      title: "Kiel-Schild",
       story: [],
-      prompt: "Аптека, открытка от всей гавани и записка Греты.",
+      prompt: "Аптека, открытка от всей гавани и визитка из киоска.",
       hint: "Du musst im Bett bleiben. Trink viel Tee! — с другом на «ты».",
-      success: "Завтра в одиннадцать в мастерской Грета и Йенсен расскажут всё.",
+      success: "Завтра в одиннадцать — в фирму Kiel-Schild, к фрау Claasen.",
       challenge: play(back(apotheke, 10, 3)),
     },
     {
@@ -840,7 +858,7 @@ export const sceneChapter10: Episode = {
       story: [],
       prompt: "Вечер в клубе: суп Матео, голосовое фрау Петерсен и все модальные глаголы.",
       hint: "Was soll Elif mitbringen? — ответ в том, что сказала фрау Петерсен.",
-      success: "День десятый закончен. Завтра в одиннадцать — мастерская. Noch zwei Tage.",
+      success: "День десятый закончен. Завтра в одиннадцать — фирма. Noch zwei Tage.",
       challenge: play(back(abend, 10, 1)),
     },
   ],

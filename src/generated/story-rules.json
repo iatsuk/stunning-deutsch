@@ -3025,43 +3025,6 @@
    "note": "*Ich würde gern segeln* — мягче, чем *Ich will segeln*; инфинитив в конце."
   }
  },
- "freizeit/check-2": {
-  "point": "*Am liebsten lese ich.* — на первом месте, глагол всё равно второй",
-  "read": "*Am liebsten lese ich.* «Люблю» снова передаёт наречие, а не глагол. Для выразительности немцы охотно ставят *am liebsten* на первое место, и тогда глагол, как всегда, второй, а *ich* уходит за него. Можно сказать и спокойнее: *Ich lese am liebsten.* А вот *Am liebsten ich lese* — ошибка: между первой позицией и глаголом ничего не помещается.",
-  "rows": [
-   {
-    "slots": [
-     [
-      {
-       "key": "am",
-       "text": "Am"
-      },
-      {
-       "key": "liebsten",
-       "text": "liebsten"
-      }
-     ],
-     [
-      {
-       "key": "les",
-       "text": "les+e"
-      }
-     ],
-     [
-      {
-       "key": "ich",
-       "text": "ich"
-      }
-     ],
-     []
-    ],
-    "punct": ".",
-    "plain": "Am liebsten lese ich.",
-    "ru": "Больше всего я люблю читать.",
-    "audio": "audio/0989e77211f0.m4a"
-   }
-  ]
- },
  "freizeit/ende-3": {
   "point": "*Kannst du Tennis spielen?* — *Was willst du am Sonntag machen?*",
   "read": "В вопросах рамка сохраняется. Вопрос да/нет начинается с модального глагола: *Kannst du Tennis spielen?* — «ты умеешь играть в теннис?». В W-вопросе первым идёт вопросительное слово: *Was willst du am Sonntag machen?* — «что ты хочешь делать в воскресенье?». Всё, что между двумя глаголами, — середина: подлежащее, время, дополнение. Инфинитив всегда замыкает предложение.",
@@ -4013,42 +3976,6 @@
    3,
    4,
    5
-  ]
- },
- "wohnen/check-2": {
-  "point": "*Ist das Schlafzimmer ruhig?* — глагол первым, прилагательное без окончания",
-  "read": "*Ist das Schlafzimmer ruhig?* Это вопрос да/нет, поэтому глагол *ist* встаёт в начало, а первая позиция пустеет. Прилагательное *ruhig* остаётся без окончания и стоит в конце. Можно спросить и короче: *Ist es ruhig?* — *es* заменяет *das Schlafzimmer*, потому что слово среднего рода. А о кухне спросите *Ist sie groß?* — *die Küche* женского рода.",
-  "rows": [
-   {
-    "slots": [
-     [],
-     [
-      {
-       "key": "ist",
-       "text": "Ist"
-      }
-     ],
-     [
-      {
-       "key": "das",
-       "text": "das"
-      },
-      {
-       "key": "schlafzimmer",
-       "text": "Schlafzimmer"
-      },
-      {
-       "key": "ruhig",
-       "text": "ruhig"
-      }
-     ],
-     []
-    ],
-    "punct": "?",
-    "plain": "Ist das Schlafzimmer ruhig?",
-    "ru": "Спальня тихая?",
-    "audio": "audio/d6bc241945d5.m4a"
-   }
   ]
  },
  "stadt/check-2": {
@@ -5939,6 +5866,84 @@
    }
   ]
  },
+ "reisen/perfekt-1": {
+  "point": "Perfekt: *haben* или *sein* на 2-м месте + причастие в конце",
+  "read": "Perfekt с *haben* вы уже знаете: *Wir haben im Hotel gefrühstückt.* Но о поездке Дана говорит *Wir sind nach Hamburg gefahren.* Рамка та же: вспомогательный глагол на втором месте, причастие в самом конце. Меняется только вспомогательный глагол — с глаголами движения это *sein*. По-русски «мы поехали» — одно слово, а по-немецки — два, и между ними помещается вся середина предложения.",
+  "rows": [
+   {
+    "slots": [
+     [
+      {
+       "key": "wir",
+       "text": "Wir"
+      }
+     ],
+     [
+      {
+       "key": "hab",
+       "text": "hab+en"
+      }
+     ],
+     [
+      {
+       "key": "im",
+       "text": "im"
+      },
+      {
+       "key": "hotel",
+       "text": "Hotel"
+      }
+     ],
+     [
+      {
+       "key": "gefrühstückt",
+       "text": "gefrühstückt"
+      }
+     ]
+    ],
+    "punct": ".",
+    "plain": "Wir haben im Hotel gefrühstückt.",
+    "ru": "Мы позавтракали в отеле.",
+    "audio": "audio/cd7af7ca5e13.m4a"
+   },
+   {
+    "slots": [
+     [
+      {
+       "key": "wir",
+       "text": "Wir"
+      }
+     ],
+     [
+      {
+       "key": "sind",
+       "text": "sind"
+      }
+     ],
+     [
+      {
+       "key": "nach",
+       "text": "nach"
+      },
+      {
+       "key": "hamburg",
+       "text": "Hamburg"
+      }
+     ],
+     [
+      {
+       "key": "gefahren",
+       "text": "gefahren"
+      }
+     ]
+    ],
+    "punct": ".",
+    "plain": "Wir sind nach Hamburg gefahren.",
+    "ru": "Мы поехали в Гамбург.",
+    "audio": "audio/9fdc045afcb8.m4a"
+   }
+  ]
+ },
  "moin/als-1": {
   "point": "*Das Wohnheim ist billiger als die Wohnung.* — сравнение: *-er als*",
   "read": "Чтобы сравнить, к прилагательному прибавляют *-er*, а с чем сравниваем — после *als*: *billig → billiger als*, *klein → kleiner als*. Короткие слова часто получают умлаут: *groß → größer*, *alt → älter*, *kalt → kälter*. Неправильные надо запомнить: *gut → besser*, *viel → mehr*, *gern → lieber*. Сравнение с тем же самым — *so … wie*: *Das Wohnheim ist so klein wie ein Boot.*",
@@ -6043,84 +6048,6 @@
     "plain": "Gestern hat es geregnet.",
     "ru": "Вчера шёл дождь.",
     "audio": "audio/8f82d3586829.m4a"
-   }
-  ]
- },
- "reisen/perfekt-1": {
-  "point": "Perfekt: *haben* или *sein* на 2-м месте + причастие в конце",
-  "read": "Perfekt с *haben* вы уже знаете: *Wir haben im Hotel gefrühstückt.* Но о поездке Дана говорит *Wir sind nach Hamburg gefahren.* Рамка та же: вспомогательный глагол на втором месте, причастие в самом конце. Меняется только вспомогательный глагол — с глаголами движения это *sein*. По-русски «мы поехали» — одно слово, а по-немецки — два, и между ними помещается вся середина предложения.",
-  "rows": [
-   {
-    "slots": [
-     [
-      {
-       "key": "wir",
-       "text": "Wir"
-      }
-     ],
-     [
-      {
-       "key": "hab",
-       "text": "hab+en"
-      }
-     ],
-     [
-      {
-       "key": "im",
-       "text": "im"
-      },
-      {
-       "key": "hotel",
-       "text": "Hotel"
-      }
-     ],
-     [
-      {
-       "key": "gefrühstückt",
-       "text": "gefrühstückt"
-      }
-     ]
-    ],
-    "punct": ".",
-    "plain": "Wir haben im Hotel gefrühstückt.",
-    "ru": "Мы позавтракали в отеле.",
-    "audio": "audio/cd7af7ca5e13.m4a"
-   },
-   {
-    "slots": [
-     [
-      {
-       "key": "wir",
-       "text": "Wir"
-      }
-     ],
-     [
-      {
-       "key": "sind",
-       "text": "sind"
-      }
-     ],
-     [
-      {
-       "key": "nach",
-       "text": "nach"
-      },
-      {
-       "key": "hamburg",
-       "text": "Hamburg"
-      }
-     ],
-     [
-      {
-       "key": "gefahren",
-       "text": "gefahren"
-      }
-     ]
-    ],
-    "punct": ".",
-    "plain": "Wir sind nach Hamburg gefahren.",
-    "ru": "Мы поехали в Гамбург.",
-    "audio": "audio/9fdc045afcb8.m4a"
    }
   ]
  },
@@ -6235,56 +6162,6 @@
     "plain": "Der Zug ist um acht Uhr angekommen.",
     "ru": "Поезд прибыл в восемь часов.",
     "audio": "audio/9a75906abe66.m4a"
-   }
-  ]
- },
- "reisen/check-1": {
-  "point": "*Um acht Uhr ist der Zug angekommen.* — причастие остаётся в конце",
-  "read": "*Um acht Uhr ist der Zug angekommen.* Время встаёт на первую позицию, *ist* остаётся вторым, *der Zug* уходит в середину. А *angekommen* не двигается: конец рамки занят причастием, что бы ни происходило в начале. В этом и смысл Perfekt — две опоры, второе место и конец, а всё остальное переставляется между ними.",
-  "rows": [
-   {
-    "slots": [
-     [
-      {
-       "key": "um",
-       "text": "Um"
-      },
-      {
-       "key": "acht",
-       "text": "acht"
-      },
-      {
-       "key": "uhr",
-       "text": "Uhr"
-      }
-     ],
-     [
-      {
-       "key": "ist",
-       "text": "ist"
-      }
-     ],
-     [
-      {
-       "key": "der",
-       "text": "der"
-      },
-      {
-       "key": "zug",
-       "text": "Zug"
-      }
-     ],
-     [
-      {
-       "key": "an",
-       "text": "an+gekommen"
-      }
-     ]
-    ],
-    "punct": ".",
-    "plain": "Um acht Uhr ist der Zug angekommen.",
-    "ru": "В восемь часов поезд прибыл.",
-    "audio": "audio/5cb7f4f05842.m4a"
    }
   ]
  },
@@ -6540,6 +6417,56 @@
     "plain": "Wir sind zwei Tage in Hamburg geblieben.",
     "ru": "Мы остались в Гамбурге на два дня.",
     "audio": "audio/6cf9d51cf4fe.m4a"
+   }
+  ]
+ },
+ "reisen/check-1": {
+  "point": "*Um acht Uhr ist der Zug angekommen.* — причастие остаётся в конце",
+  "read": "*Um acht Uhr ist der Zug angekommen.* Время встаёт на первую позицию, *ist* остаётся вторым, *der Zug* уходит в середину. А *angekommen* не двигается: конец рамки занят причастием, что бы ни происходило в начале. В этом и смысл Perfekt — две опоры, второе место и конец, а всё остальное переставляется между ними.",
+  "rows": [
+   {
+    "slots": [
+     [
+      {
+       "key": "um",
+       "text": "Um"
+      },
+      {
+       "key": "acht",
+       "text": "acht"
+      },
+      {
+       "key": "uhr",
+       "text": "Uhr"
+      }
+     ],
+     [
+      {
+       "key": "ist",
+       "text": "ist"
+      }
+     ],
+     [
+      {
+       "key": "der",
+       "text": "der"
+      },
+      {
+       "key": "zug",
+       "text": "Zug"
+      }
+     ],
+     [
+      {
+       "key": "an",
+       "text": "an+gekommen"
+      }
+     ]
+    ],
+    "punct": ".",
+    "plain": "Um acht Uhr ist der Zug angekommen.",
+    "ru": "В восемь часов поезд прибыл.",
+    "audio": "audio/5cb7f4f05842.m4a"
    }
   ]
  }

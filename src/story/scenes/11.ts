@@ -4,10 +4,11 @@ import type { Challenge, Episode, SceneNode } from "../types.ts";
 import { back } from "./back.ts";
 
 // Глава 11 в формате сцен (A1-PLOT.md, «Формат сцен»): работа и профессии, женские формы на -in,
-// Perfekt с haben, war и hatte. Вопрос главы — что произошло за неделю. Вход — встреча с Гретой и
-// Йенсеном в мастерской, выход — правда: столетие клуба, работа Греты, торт Матео; команда теперь в
-// заговоре, а в субботу обещают дождь, хотя краска ещё не высохла. Повороты брошены оракулом
-// (seed 1794687274), увязка — в журнале A1-STORYCRAFT.md.
+// Perfekt с haben, war и hatte. Вопрос главы — что произошло за неделю. Вход — встреча в фирме Kiel-Schild
+// в одиннадцать, выход — ложный след рушится (A1-PLOT.md, «Переработка глав 6–12»): у фирмы таблички
+// нет и не было, Грета там не работала, в конверте Йенсена — письмо «Kommen Sie am Freitag». Грета
+// отвечает одним словом «Samstag», а вечером празднует с Дерьей: «Fertig!». Правду раскрывает глава 12.
+// Повороты брошены оракулом (seeds 1794687274 и 1795220690), увязка — в журнале A1-STORYCRAFT.md.
 
 const narr = (text: string): SceneNode => ({ t: "narr", text });
 const learn = (words?: string[]) => (words ? { learn: words } : {});
@@ -18,15 +19,24 @@ const mateo = (de: string, ru: string, words?: string[]): SceneNode => ({ t: "sa
 const frauke = (de: string, ru: string, words?: string[]): SceneNode => ({ t: "say", who: "Frauke", voice: "Sandy", de, ru, ...learn(words) });
 const petersen = (de: string, ru: string, words?: string[]): SceneNode => ({ t: "say", who: "Frau Petersen", voice: "Sandy", de, ru, ...learn(words) });
 const radio = (de: string, ru: string): SceneNode => ({ t: "say", who: "Radio", voice: "Eddy", de, ru });
+const claasen = (de: string, ru: string): SceneNode => ({ t: "say", who: "Frau Claasen", voice: "Shelley", de, ru });
+const derya = (de: string, ru: string): SceneNode => ({ t: "say", who: "Derya", voice: "Shelley", de, ru });
 /** Пары памяти — из выражений истории, которые глава уже показала. */
 const memory = (ids: string[]): Challenge => ({ kind: "memory", pairs: ids.map((id) => ({ id, de: phrases[id].de, ru: phrases[id].ru })) });
 const ok = (text: string) => ({ text, ok: true as const });
 const no = (text: string, react: string) => ({ text, react });
 
 const RADIO = "Der Wetterbericht für Kiel: Heute Sonne, morgen Wolken. Und am Samstag – Regen, den ganzen Tag.";
-const PETERSEN = "Eine Firma wollte uns ein neues Schild geben – aus Plastik. Ich habe nein gesagt! Der ganze Club hat nein gesagt!";
+const PETERSEN = "Die Firma wollte uns schon im Mai ein Schild aus Plastik geben. Ich habe nein gesagt! Aber ohne Schild kein Start. Morgen bestelle ich!";
+const CLAASEN_NIE = "Ihr Schild? Das haben wir nie gehabt! Wir machen Schilder aus Plastik. Alte Schilder nehmen wir nicht.";
+const CLAASEN_GEMACHT = "Wir haben ein Schild aus Plastik gemacht. Frau Petersen hat am Telefon «Vielleicht» gesagt. Dann haben wir gewartet.";
+const CLAASEN_GRETA = "Greta Hansen? Sie hat nie bei uns gearbeitet. Sie ist Mechaniker … nein:";
+const HAUKE_FALSCH = "Die Firma hat das Schild nicht. Greta arbeitet nicht bei der Firma. Und wir haben alles falsch verstanden!";
+const DANA_SAMSTAG = "Morgen bestellt Frau Petersen das Schild aus Plastik. Unser Plan: Samstag um sieben zu Greta!";
+const ELIF_OPA = "Und Opa Hansen? Frau Petersen sagt: Er hat 1976 unser Schild gemacht. Er kommt am Samstag!";
+const DERYA_FERTIG = "Fertig? Wirklich fertig? Super, Greta! Ein Döner für dich – gratis!";
 const MATEO = "Vor drei Jahren hatte ich hier mein Vorstellungsgespräch. Herr Jensen hat nur Moin gesagt – und ich hatte die Stelle!";
-const PLAN = "Also: Samstag um acht am Club. Hauke soll das Schild tragen. Elif soll die Möwe beobachten. Und alle sollen nichts sagen!";
+const PLAN = "Also: Samstag um acht am Club. Hauke soll die Tische tragen. Elif soll die Möwe beobachten. Und alle sollen pünktlich sein!";
 
 // Сцена 1 · пролог: четверг, Хауке выздоровел и ищет подработку. Бросок: смена точки зрения · Хауке ·
 // неверно перевести · die Stelle · 2 (почти ничего) — Хауке читает «Stelle frei» как «свободное место»
@@ -153,7 +163,7 @@ const donnerstag: SceneNode[] = [
   {
     t: "clue",
     title: "Donnerstag",
-    text: "Hauke ist gesund und sucht eine Stelle am Wochenende. Elif: Helgoland! Der Wetterbericht: am Samstag — es regnet. Um elf: Werkstatt, Greta und Herr Jensen.",
+    text: "Hauke ist gesund und sucht eine Stelle am Wochenende. Elif: Helgoland! Der Wetterbericht: am Samstag — es regnet. Um elf: Firma Kiel-Schild, Frau Claasen.",
   },
 ];
 
@@ -193,53 +203,65 @@ const jensen: SceneNode[] = [
   },
 ];
 
-// Сцена 2 · развитие: мастерская в одиннадцать. Грета и Йенсен отвечают записками в Perfekt. Бросок:
-// подарок игроку · Грета · перепутать · der Beruf · 3 (мелочь) — Грета пишет «Mechaniker» и сама
-// поправляется: «Mechanikerin». Хронология недели — раскладка по времени.
+// Сцена 2 · развитие: очная ставка в фирме Kiel-Schild в одиннадцать (A1-PLOT.md, «Переработка глав
+// 6–12»). Фрау Claasen отвечает в Perfekt: старой таблички у фирмы не было, Грета там не работала, а в
+// конверте Йенсена — письмо. Ложный след рушится. Бросок: подарок игроку · Грета · перепутать ·
+// der Beruf · 3 (мелочь) — фрау Claasen говорит о Грете «Mechaniker» и поправляется: «Mechanikerin».
 const werkstatt: SceneNode[] = [
-  { t: "pic", src: "11-werkstatt.jpg", alt: "Мастерская Греты: на верстаке под лампой табличка MOIN — свежая тёмно-синяя краска, белые буквы, кант-канат; Грета в комбинезоне пишет записку, Йенсен в шарфе с блоком, Элиф, Дана и Хауке смотрят на табличку" },
-  narr("11:00, Farbenweg 7. Die Tür ist auf. Auf dem Tisch — das Schild. Dunkelblau, weiße Buchstaben, по краю — {seil}. Wie neu."),
-  narr("На верстаке — {bleistift}, линейка и отдельная {teil} таблички — рамка. Каждый {zentimeter} Грета мерила дважды."),
+  { t: "pic", src: "11-firma.jpg", alt: "Контора фирмы Kiel-Schild в Гаардене: на стенах белые пластиковые таблички с печатными буквами; фрау Claasen в тёмно-синем плаще за столом показывает письмо; Элиф, Дана и Хауке стоят у стола, Хауке держит пластиковую табличку MOIN" },
+  narr("11:00, Gaarden, Am Markt 3. Firma Kiel-Schild: an der Wand — Schilder aus Plastik, weiß, ohne Seil. Am Tisch — Frau Claasen."),
+  narr("На столе — {bleistift}, линейка и {teil} пластиковой таблички — рамка. Каждый {zentimeter} здесь мерит машина."),
+  narr("Где у фирмы {fehler}? Нигде: машина не ошибается. Ошибаются люди."),
+  narr("Пластиковую табличку может {benutzen} любой клуб: та же рамка, другие буквы."),
   {
     t: "look",
-    task: "Рассмотрите табличку на верстаке.",
+    task: "Осмотритесь в конторе фирмы.",
     items: [
-      { icon: "🪧", de: "das Schild", ru: "табличка", note: "Тёмно-синяя, белые буквы MOIN, кант-канат. Старая доска — новая краска.", key: true },
-      { icon: "🖌️", de: "der Pinsel", ru: "кисть", note: "Маленькая кисть для букв. Вымыта и сохнет.", key: true },
-      { icon: "💡", de: "die Lampe", ru: "лампа", note: "Над верстаком тёплая лампа: краска так сохнет быстрее." },
+      { icon: "🪧", de: "das Schild", ru: "табличка", note: "Белые таблички из пластика: печатные буквы, гладкие края. Каната нет ни на одной.", key: true },
+      { icon: "✉️", de: "der Umschlag", ru: "конверт", note: "На столе фрау Claasen — плоский конверт. Тот самый, из-под дождя.", key: true },
+      { icon: "💡", de: "die Lampe", ru: "лампа", note: "Белый свет, как в больнице. Краской здесь не пахнет." },
     ],
   },
-  elif("Das Schild! Es ist so schön! Wie neu!", "Табличка! Она такая красивая! Как новая!"),
-  dana("Greta, was haben Sie gemacht?", "Грета, что вы сделали?"),
-  narr("Грета пишет, Элиф читает вслух."),
-  elif("Greta schreibt: Ich habe die Farbe gekauft. Ich habe das Schild gemalt. Zehn Tage habe ich gearbeitet.", "Грета пишет: я купила краску. Я покрасила табличку. Я работала десять дней."),
+  claasen(CLAASEN_NIE, "Ваша табличка? Её у нас никогда не было! Мы делаем таблички из пластика. Старые мы не берём."),
   {
     t: "hear",
-    task: "Сколько дней работала Грета?",
-    voice: "Flo",
-    de: "Greta schreibt: Ich habe die Farbe gekauft. Ich habe das Schild gemalt. Zehn Tage habe ich gearbeitet.",
-    options: ["десять", "два", "сто"],
-    answer: "десять",
+    task: "Что говорит фрау Claasen о старой табличке?",
+    voice: "Shelley",
+    de: CLAASEN_NIE,
+    options: ["у фирмы её никогда не было", "она сохнет в конторе", "её забрала Грета"],
+    answer: "у фирмы её никогда не было",
   },
-  hauke("Über fünfzig Jahre alt – und wie neu!", "Больше пятидесяти лет — и как новая!"),
-  narr("Где у Греты {fehler}? Нигде. Свои кисти она не даёт: {benutzen} их может только она."),
+  dana("Frau Claasen, was haben Sie für den Club gemacht?", "Фрау Claasen, что вы сделали для клуба?"),
+  claasen(CLAASEN_GEMACHT, "Мы сделали табличку из пластика. Фрау Петерсен по телефону сказала «может быть». А потом мы ждали."),
   {
     t: "game",
     rule: ["arbeit/perfekt-4"],
-    task: "Перепишите записку Греты в блокнот. Вставьте причастия.",
-    hint: "Слабые глаголы: ge- + основа + -t; после -t — -et: gearbeitet.",
-    c: gaps("Ich habe die Farbe ___. Ich habe das Schild ___. Zehn Tage habe ich ___.", ["gekauft", "gemalt", "gearbeitet", "gekaufen", "gemalen"], ["gekauft", "gemalt", "gearbeitet"]),
+    task: "Запишите ответ фрау Claasen в блокнот. Вставьте причастия.",
+    hint: "Слабые глаголы: ge- + основа + -t; после -t — -et: gewartet.",
+    c: gaps("Wir haben ein Schild aus Plastik ___. Frau Petersen hat «Vielleicht» ___. Dann haben wir ___.", ["gemacht", "gesagt", "gewartet", "gemachen", "gesagen"], ["gemacht", "gesagt", "gewartet"]),
   },
-  elif("Zehn Tage war das Schild unter dem Tuch. Und Greta ist jeden Tag mit dem Bus gekommen!", "Десять дней табличка лежала под тканью. А Грета каждый день приезжала на автобусе!"),
-  narr("Dann schreibt sie: «Ich bin Mechaniker.» Смотрит на слово — и дописывает две буквы."),
+  hauke("Und das Schild von Nils? Das ist von Ihnen?", "А табличка Нильса? Это ваша?"),
+  claasen("Das ist mein Muster für Frau Petersen. Danke – ich habe es schon gesucht!", "Это мой образец для фрау Петерсен. Спасибо — я его уже искала!"),
+  narr("Хауке отдаёт пластиковую MOIN. Фрау Claasen открывает {umschlag}."),
+  narr("Внутри — письмо. Почерк как в {logbuch}: «Bitte kommen Sie nicht am Montag. Kommen Sie am Freitag, am Mittag. Jensen.»"),
+  {
+    t: "gap",
+    rule: ["tagesablauf/wann-1"],
+    task: "Когда Йенсен просил фирму прийти?",
+    text: "Kommen Sie am Freitag, am ___.",
+    options: ["Mittag", "Morgen", "Abend"],
+    answer: "Mittag",
+    ru: "Приходите в пятницу, в полдень.",
+  },
+  claasen(CLAASEN_GRETA, "Грета Хансен? Она у нас никогда не работала. Она механик… нет:"),
   {
     t: "reply",
     rule: ["arbeit/maennlich-weiblich-1"],
-    task: "Подскажите Грете, как правильно о себе.",
+    task: "Подскажите фрау Claasen, как правильно о Грете.",
     options: [
-      ok("Sie sind Mechanikerin!"),
-      no("Sie sind Mechanikerinnen!", "-innen — множественное число. Грета одна: Mechanikerin."),
-      no("Sie sind Mechanikerin-in!", "Окончание одно: Mechaniker + in."),
+      ok("Sie ist Mechanikerin!"),
+      no("Sie ist Mechanikerinnen!", "-innen — множественное число. Грета одна: Mechanikerin."),
+      no("Sie ist Mechanikerin-in!", "Окончание одно: Mechaniker + in."),
     ],
   },
   {
@@ -250,74 +272,71 @@ const werkstatt: SceneNode[] = [
       kind: "spring",
       rounds: [
         {
-          ru: "Грета работала здесь.",
-          base: ["Greta", "arbeitet", "hier", "."],
+          ru: "Грета работала в мастерской.",
+          base: ["Greta", "arbeitet", "in der Werkstatt", "."],
           trigger: "hat ... gearbeitet",
-          start: ["Greta", "hat", "gearbeitet", "hier", "."],
-          answer: ["Greta", "hat", "hier", "gearbeitet", "."],
+          start: ["Greta", "hat", "gearbeitet", "in der Werkstatt", "."],
+          answer: ["Greta", "hat", "in der Werkstatt", "gearbeitet", "."],
           why: "Вспомогательный глагол hat остаётся на втором месте, а Partizip II (gearbeitet) уходит в конец.",
         },
         {
-          ru: "В понедельник я раскрасила табличку.",
-          base: ["Ich", "habe", "das Schild", "gemalt", "."],
-          trigger: "Am Montag",
-          start: ["Am Montag", "ich", "habe", "das Schild", "gemalt", "."],
-          answer: ["Am Montag", "habe", "ich", "das Schild", "gemalt", "."],
-          why: "Когда Am Montag занимает первое место, на втором месте сразу идёт habe, а ich встаёт после него.",
+          ru: "В субботу господин Йенсен дал мне конверт.",
+          base: ["Herr Jensen", "hat", "mir", "den Umschlag", "gegeben", "."],
+          trigger: "Am Samstag",
+          start: ["Am Samstag", "Herr Jensen", "hat", "mir", "den Umschlag", "gegeben", "."],
+          answer: ["Am Samstag", "hat", "Herr Jensen", "mir", "den Umschlag", "gegeben", "."],
+          why: "После Am Samstag на втором месте остаётся hat, а подлежащее Herr Jensen сдвигается за глагол.",
         },
         {
-          ru: "В субботу господин Йенсен купил краску.",
-          base: ["Herr Jensen", "hat", "die Farbe", "gekauft", "."],
-          trigger: "Am Samstag",
-          start: ["Am Samstag", "Herr Jensen", "hat", "die Farbe", "gekauft", "."],
-          answer: ["Am Samstag", "hat", "Herr Jensen", "die Farbe", "gekauft", "."],
-          why: "После Am Samstag на втором месте остаётся hat, а подлежащее Herr Jensen сдвигается за глагол.",
+          ru: "В понедельник я прочитала письмо.",
+          base: ["Ich", "habe", "den Brief", "gelesen", "."],
+          trigger: "Am Montag",
+          start: ["Am Montag", "ich", "habe", "den Brief", "gelesen", "."],
+          answer: ["Am Montag", "habe", "ich", "den Brief", "gelesen", "."],
+          why: "Когда Am Montag занимает первое место, на втором месте сразу идёт habe, а ich встаёт после него.",
         },
       ],
     },
   },
-  narr("Herr Jensen schreibt auch. Дана читает вслух."),
-  dana("Herr Jensen schreibt: Ich habe Greta das Schild gegeben. Am Sonntag. Um halb sechs. Beim Tee.", "Господин Йенсен пишет: я отдал Грете табличку. В воскресенье. В половине шестого. За чаем."),
-  { t: "gap", rule: ["tagesablauf/wann-1"], task: "Когда Йенсен отдал табличку?", text: "Am Sonntag um ___ sechs.", options: ["halb", "Viertel", "um"], answer: "halb", ru: "В воскресенье в половине шестого." },
-  hauke("Um halb sechs! Beim Tee! Wie immer – und wir haben nichts gesehen!", "В половине шестого! За чаем! Как всегда — а мы ничего не видели!"),
+  hauke(HAUKE_FALSCH, "У фирмы нет таблички. Грета не работает в фирме. А мы всё поняли неправильно!"),
   {
     t: "hear",
     task: "Что понял Хауке?",
     voice: "Rocko",
-    de: "Um halb sechs! Beim Tee! Wie immer – und wir haben nichts gesehen!",
-    options: ["табличку отдали в 17:30, за чаем, у всех на глазах", "табличку унесли ночью", "табличку украла чайка"],
-    answer: "табличку отдали в 17:30, за чаем, у всех на глазах",
+    de: HAUKE_FALSCH,
+    options: ["у фирмы таблички нет, а Грета там не работает", "табличку унесли ночью", "табличку украла чайка"],
+    answer: "у фирмы таблички нет, а Грета там не работает",
   },
   {
     t: "game",
     rule: ["arbeit/perfekt-2"],
     task: "Разложите события по времени: когда это было?",
-    hint: "früher — давно, в 1976 году; letzte Woche — в воскресенье; gestern — вчера.",
-    c: sort([["frueher", "früher"], ["woche", "letzte Woche"], ["gestern", "gestern"]], [
-      ["opa", "Opa Hansen hat das Schild gemalt.", "frueher", "🖌️"],
-      ["jensen", "Herr Jensen hat die Farbe gehalten.", "frueher", "🥫"],
-      ["sonntag", "Herr Jensen hat Greta das Schild gegeben.", "woche", "🫖"],
-      ["bus", "Greta hat den Bus nach Gaarden genommen.", "woche", "🚌"],
+    hint: "letzte Woche — до понедельника; diese Woche — с понедельника; gestern — вчера, в среду.",
+    c: sort([["woche", "letzte Woche"], ["diese", "diese Woche"], ["gestern", "gestern"]], [
+      ["kiosk", "Frau Claasen hat Frauke ein Schild gezeigt.", "woche", "🪧"],
+      ["brief", "Herr Jensen hat den Umschlag trocken gehalten.", "woche", "✉️"],
+      ["telefon", "Frau Petersen hat mit der Firma telefoniert.", "diese", "📞"],
+      ["taxi", "Nils ist mit dem Taxi gekommen.", "diese", "🚕"],
       ["arzt", "Herr Jensen hat den Arzt besucht.", "gestern", "🩺"],
-      ["rezept", "Frauke hat die Versichertenkarte gebracht.", "gestern", "💳"],
+      ["karte", "Frauke hat die Versichertenkarte gebracht.", "gestern", "💳"],
     ]),
   },
   {
     t: "pick",
-    task: "Почему никто не заметил, как табличка уехала?",
+    task: "Почему у фирмы нашей таблички нет?",
     options: [
-      ok("Все сидели за чаем в половине шестого — как всегда"),
-      no("Табличку унесли ночью", "Нет: в воскресенье днём, в половине шестого."),
-      no("Её унесла чайка", "Чайка ничего не сделала. Табличку отдал Йенсен."),
+      ok("Фирма делает новые таблички из пластика, а Йенсен попросил её подождать до пятницы"),
+      no("Фирма уже продала её", "«Das haben wir nie gehabt!» — старых табличек фирма не берёт."),
+      no("Её унесла чайка", "Чайка ничего не сделала. А фирма старых табличек не берёт."),
     ],
   },
   dana("Greta hat Herrn Jensen nicht entführt. Sie hat ihn zum Arzt gebracht!", "Грета не похищала Йенсена. Она отвела его к врачу!"),
   {
     t: "type",
     rule: ["arbeit/perfekt-2"],
-    task: "Запишите главное в блокнот: Грета покрасила табличку.",
-    answers: ["Greta hat das Schild gemalt.", "Sie hat das Schild gemalt.", "Greta hat das Schild neu gemalt."],
-    ru: "Грета покрасила табличку.",
+    task: "Запишите главное в блокнот: таблички у фирмы никогда не было.",
+    answers: ["Die Firma hat das Schild nie gehabt.", "Die Firma hat unser Schild nie gehabt.", "Die Firma hat das Schild nicht gehabt."],
+    ru: "У фирмы таблички никогда не было.",
   },
   {
     t: "game",
@@ -331,45 +350,44 @@ const werkstatt: SceneNode[] = [
   },
   {
     t: "clue",
-    title: "Die Werkstatt",
-    text: "Greta ist Mechanikerin. Sie hat das Schild gemalt, zehn Tage. Sonntag, halb sechs, beim Tee: das Schild — von Herrn Jensen für Greta.",
+    title: "Kiel-Schild",
+    text: "Firma Kiel-Schild, Am Markt 3: Frau Claasen hat unser Schild nicht. Sie hat ein Schild aus Plastik gemacht — für Frau Petersen. Greta hat nie bei der Firma gearbeitet, sie ist Mechanikerin. Der Brief von Herrn Jensen: «Bitte kommen Sie nicht am Montag. Kommen Sie am Freitag, am Mittag.»",
   },
 ];
 
-// Сцена 3 · развитие: зачем всё это — свидетели в своём порядке. Бросок: событие за кадром · Петерсен ·
-// отказаться · die Firma · 20 (гипербола: в деле весь клуб) — фирма предлагала к столетию новую
-// пластиковую табличку, Петерсен отказала, и за ней весь клуб: «Unser Schild bleibt!» Бросок:
-// смена точки зрения · Дана · подарить · der Mechaniker · 3 (мелочь) — Дана дарит Грете пластырь
-// для спины: «от врача — механику».
+// Сцена 3 · развитие: зачем Йенсен написал письмо — свидетели в своём порядке. Бросок: событие за
+// кадром · Петерсен · отказаться · die Firma · 20 (гипербола: в деле весь клуб) — ещё в мае Петерсен
+// отказала фирме, но без таблички нет старта, и завтра она закажет пластик. Бросок: смена точки
+// зрения · Дана · подарить · der Mechaniker · 3 (мелочь) — Дана дарит Грете пластырь для спины.
+// Грета, как Йенсен, отвечает одним словом: «Samstag».
 const warum: SceneNode[] = [
-  { t: "pic", src: "11-warum.jpg", alt: "Мастерская: Грета показывает старое письмо фирмы с рисунком пластиковой вывески, Йенсен пишет в блоке, Дана протягивает Грете маленький пакет; Элиф держит телефон на громкой связи" },
-  narr("Теперь главный вопрос: зачем? Greta und Herr Jensen schreiben. Und Frau Petersen ist am Telefon."),
+  { t: "pic", src: "11-warum.jpg", alt: "Клуб днём: Йенсен с кружкой чая пишет в блокноте, Дана протягивает Грете в комбинезоне маленький пакет; Элиф держит телефон на громкой связи" },
+  narr("Zurück im Club. Теперь главный вопрос: зачем письмо? Herr Jensen ist da, Greta bringt ihm Tee. Und Frau Petersen ist am Telefon."),
   {
     t: "go",
-    task: "Кого спросить, зачем был нужен секрет?",
+    task: "Кого спросить, зачем было письмо?",
     next: "Дальше по делу",
     branches: [
       {
-        label: "Грета и Opa",
-        icon: "🖌️",
+        label: "Фрау Петерсен по телефону",
+        icon: "📞",
         nodes: [
-          narr("Greta schreibt: «Der Club hat hundert Jahre Geburtstag. Opa hat das Schild für fünfzig gemacht. Ich mache es neu — für hundert.»"),
+          petersen(PETERSEN, "Фирма ещё в мае хотела дать нам табличку из пластика. Я сказала «нет»! Но без таблички нет старта. Завтра я заказываю!"),
           {
-            t: "pick",
-            task: "Зачем Грета обновила табличку?",
-            options: [
-              ok("К столетию клуба: дед сделал её к пятидесятилетию, а внучка — к сотому"),
-              no("Чтобы продать её фирме", "Наоборот: табличку обновили, чтобы её не заменили."),
-              no("Потому что её разбила чайка", "Табличка была старой и облезлой, но целой."),
-            ],
+            t: "hear",
+            task: "Что сделает фрау Петерсен завтра?",
+            voice: "Sandy",
+            de: PETERSEN,
+            options: ["закажет табличку из пластика", "отменит праздник", "поедет в Гамбург"],
+            answer: "закажет табличку из пластика",
           },
-          elif("Opa hat das Schild gemalt – und jetzt seine Enkelin! Das ist schön.", "Дед покрасил табличку — а теперь внучка! Как красиво."),
+          petersen("Hundert Mitglieder – und kein Schild! Das geht nicht!", "Сто членов клуба — и никакой таблички! Так нельзя!"),
           {
             t: "type",
-            rule: ["arbeit/perfekt-4"],
-            task: "Запишите в блокнот: Opa Hansen сделал табличку.",
-            answers: ["Opa Hansen hat das Schild gemacht.", "Opa hat das Schild gemacht.", "1976 hat Opa Hansen das Schild gemacht."],
-            ru: "Opa Hansen сделал табличку.",
+            rule: ["arbeit/perfekt-2"],
+            task: "Запишите, что фрау Петерсен ответила фирме в мае.",
+            answers: ["Sie hat nein gesagt.", "Frau Petersen hat nein gesagt.", "Frau Petersen hat im Mai nein gesagt."],
+            ru: "Она сказала «нет».",
           },
         ],
       },
@@ -377,41 +395,43 @@ const warum: SceneNode[] = [
         label: "Записки Йенсена",
         icon: "📝",
         nodes: [
-          narr("Herr Jensen schreibt: «Eine {ueberraschung}. Für den Club. Für Opa Hansen. Nicht sprechen!» Und dann: «Ich war der junge Mann auf dem Foto.»"),
+          narr("Herr Jensen schreibt nur ein Wort: «Freitag.» Und trinkt den Tee von Greta."),
+          narr("Ниже — ещё строчка: «Samstag: der Karton aus dem Keller. Sie haben den Schlüssel.»"),
           {
             t: "reply",
             rule: ["arbeit/war-hatte-2"],
-            task: "Спросите Йенсена, был ли он на фото 1976 года.",
+            task: "Спросите Йенсена, был ли он в субботу с фрау Claasen у автобуса.",
             options: [
-              ok("Waren Sie 1976 auch da?"),
-              no("Hatten Sie 1976 auch da?", "«Были» — war, а не hatte: Waren Sie …?"),
-              no("Sind Sie 1976 auch da?", "Это прошлое: Waren Sie …?"),
+              ok("Waren Sie am Samstag mit Frau Claasen am Bus?"),
+              no("Hatten Sie am Samstag mit Frau Claasen am Bus?", "«Были» — war, а не hatte: Waren Sie …?"),
+              no("Sind Sie am Samstag mit Frau Claasen am Bus?", "Это прошлое: Waren Sie …?"),
             ],
           },
-          narr("Он кивает и пишет: «Ja. Ich hatte die Farbe. Wie heute.» {geheimnis} — пятьдесят лет в одном ящике."),
-          hauke("Der junge Mann auf dem Foto – das waren Sie? Mit der Mütze?", "Юноша на фото — это были вы? В фуражке?"),
+          narr("Он кивает и пишет: «Ja. Es regnet.» {geheimnis} у Йенсена больше, чем слов."),
+          hauke("Sie waren nass – und der Umschlag war trocken!", "Вы промокли — а конверт был сухим!"),
         ],
       },
       {
-        label: "Фрау Петерсен по телефону",
-        icon: "📞",
+        label: "Грета",
+        icon: "🖌️",
         nodes: [
-          petersen(PETERSEN, "Одна фирма хотела дать нам новую табличку — из пластика. Я сказала «нет»! Весь клуб сказал «нет»!", ["die Firma"]),
+          hauke("Greta, wo ist unser Schild?", "Грета, где наша табличка?"),
+          narr("Greta schreibt ein Wort — как Йенсен: «Samstag.» И улыбается."),
           {
-            t: "hear",
-            task: "От чего отказалась фрау Петерсен?",
-            voice: "Sandy",
-            de: PETERSEN,
-            options: ["от новой пластиковой таблички фирмы", "от праздника", "от торта Матео"],
-            answer: "от новой пластиковой таблички фирмы",
+            t: "pick",
+            task: "Что ответила Грета?",
+            options: [
+              ok("Одно слово: «Samstag» — в субботу"),
+              no("Что табличка у фирмы", "Фирма сегодня сказала: таблички у неё нет и не было."),
+              no("Что она не знает", "Она знает — и улыбается."),
+            ],
           },
-          petersen("Hundert Mitglieder, hundert Mal nein! Unser Schild bleibt!", "Сто членов клуба — сто раз «нет»! Наша табличка остаётся!"),
           {
             t: "type",
-            rule: ["arbeit/perfekt-2"],
-            task: "Запишите, что клуб ответил фирме.",
-            answers: ["Der Club hat nein gesagt.", "Der ganze Club hat nein gesagt.", "Frau Petersen hat nein gesagt."],
-            ru: "Клуб сказал «нет».",
+            rule: ["arbeit/perfekt-4"],
+            task: "Запишите в блокнот: Грета сказала «Samstag».",
+            answers: ["Greta hat Samstag gesagt.", "Greta hat «Samstag» gesagt.", "Sie hat Samstag gesagt."],
+            ru: "Грета сказала: «Суббота».",
           },
         ],
       },
@@ -436,44 +456,43 @@ const warum: SceneNode[] = [
       },
     ],
   },
-  narr("Фрауке говорила: «Entführung!» А что пишет Йенсен?"),
-  elif("Herr Jensen schreibt: Greta hat mich zum Arzt gebracht. Keine Entführung!", "Господин Йенсен пишет: Грета отвела меня к врачу. Никакого похищения!"),
+  narr("Фрауке говорила: «Greta arbeitet bei der Firma!» А что сказала фрау Claasen?"),
   {
     t: "game",
-    task: "Сравните слух Фрауке и записку Йенсена. Отметьте два слова, которые не сходятся.",
-    hint: "Что Грета сделала с Йенсеном — по слуху и по его словам?",
+    task: "Сравните слух Фрауке и слова фрау Claasen. Отметьте два слова, которые не сходятся.",
+    hint: "Работает ли Грета в фирме — по слуху и по словам фрау Claasen?",
     c: {
       kind: "contra",
       texts: [
-        { who: "Frauke, Montag", lines: [["Greta", "hat", "Herrn", "Jensen", "entführt!"]] },
-        { who: "Herr Jensen, Notizblock", lines: [["Greta", "hat", "mich", "zum", "Arzt", "gebracht."]] },
+        { who: "Frauke, Sonntag", lines: [["Greta", "arbeitet", "bei", "der", "Firma!"]] },
+        { who: "Frau Claasen", lines: [["Greta", "hat", "nie", "bei", "uns", "gearbeitet."]] },
       ],
-      answer: ["0:0:4", "1:0:5"],
+      answer: ["0:0:1", "1:0:2"],
     },
   },
-  narr("А {aussage} Фрауке про похищение — просто слух. Записка Йенсена говорит другое."),
-  { t: "gap", rule: ["arbeit/perfekt-5"], task: "Что Грета сделала на самом деле?", text: "Greta hat Herrn Jensen zum Arzt ___.", options: ["gebracht", "gebringt", "bringen"], answer: "gebracht", ru: "Грета отвела господина Йенсена к врачу." },
+  narr("А {aussage} Фрауке — просто слух: из «einer Firma für Boote» вышло «der Firma»."),
+  { t: "gap", rule: ["arbeit/perfekt-5"], task: "Что Йенсен отдал фирме на самом деле?", text: "Herr Jensen hat Frau Claasen einen Brief ___.", options: ["gegeben", "gegebt", "geben"], answer: "gegeben", ru: "Господин Йенсен отдал фрау Claasen письмо." },
   {
     t: "game",
     rule: ["arbeit/perfekt-2", "familie/mein-2"],
-    task: "Запишите объяснение Греты в блокнот от третьего лица.",
+    task: "Запишите рассказ фрау Claasen в блокнот от третьего лица.",
     c: {
       kind: "retell",
-      who: "Greta",
+      who: "Frau Claasen",
       voice: "Shelley",
-      quote: "Ich habe die Farbe gekauft. Mein Opa hat das Schild gemacht, und ich habe das Schild gemalt.",
-      ru: "Я купила краску. Мой дедушка сделал табличку, а я её раскрасила.",
+      quote: "Ich habe den Brief gelesen. Mein Chef hat gewartet, und ich habe nichts gemacht.",
+      ru: "Я прочитала письмо. Мой начальник подождал, а я ничего не сделала.",
       tokens: [
         { id: "s1", from: "Ich", options: ["Sie", "Er", "Ich"], answer: "Sie" },
         " ",
         { id: "v1", from: "habe", options: ["hat", "habe", "habt"], answer: "hat" },
-        " die Farbe gekauft. ",
+        " den Brief gelesen. ",
         { id: "p1", from: "Mein", options: ["Ihr", "Sein", "Mein"], answer: "Ihr" },
-        " Opa hat das Schild gemacht, und ",
+        " Chef hat gewartet, und ",
         { id: "s2", from: "ich", options: ["sie", "er", "wir"], answer: "sie" },
         " ",
         { id: "v2", from: "habe", options: ["hat", "habe", "ist"], answer: "hat" },
-        " das Schild gemalt.",
+        " nichts gemacht.",
       ],
     },
   },
@@ -481,9 +500,9 @@ const warum: SceneNode[] = [
     t: "game",
     task: "Что теперь известно? Проверьте блокнот.",
     c: verdict(["Richtig", "Falsch"], [
-      ["Йенсен отдал табличку Грете сам", true, "«Ich habe Greta das Schild gegeben.»"],
-      ["Клуб хотел новую пластиковую табличку", false, "Весь клуб сказал фирме «нет»."],
-      ["Табличку сделал Opa к пятидесятилетию клуба", true, "1976 — клубу пятьдесят. Теперь — сто."],
+      ["Фирма взяла нашу табличку", false, "«Das haben wir nie gehabt!» — у фирмы только пластик."],
+      ["Йенсен попросил фирму прийти в пятницу", true, "«Kommen Sie am Freitag, am Mittag.»"],
+      ["Грета работает в фирме", false, "«Greta hat nie bei uns gearbeitet.»"],
     ]),
   },
   {
@@ -491,12 +510,12 @@ const warum: SceneNode[] = [
     rule: ["arbeit/perfekt-3"],
     task: "Соберите вывод для блокнота: время — на первом месте.",
     hint: "Глагол haben — второй, причастие gegeben — в конце.",
-    c: order(["Am", "Sonntag", "hat", "Herr", "Jensen", "das", "Schild", "gegeben."], ["gegeben.", "Schild", "hat", "Am", "das", "Jensen", "Sonntag", "Herr"]),
+    c: order(["Am", "Samstag", "hat", "Herr", "Jensen", "den", "Brief", "gegeben."], ["gegeben.", "Brief", "hat", "Am", "den", "Jensen", "Samstag", "Herr"]),
   },
   {
     t: "clue",
-    title: "Hundert Jahre",
-    text: "Der Club hat hundert Jahre Geburtstag. Eine Firma: ein Schild aus Plastik? Der Club: nein! Greta macht unser Schild neu. Eine Überraschung. Herr Jensen war 1976 auch auf dem Foto.",
+    title: "Freitag, Samstag",
+    text: "Frau Petersen: im Mai nein — morgen bestellt sie das Schild aus Plastik. Herr Jensen: «Freitag.» Greta: «Samstag.» Frauke: «Greta arbeitet bei der Firma» — falsch.",
   },
 ];
 
@@ -513,7 +532,7 @@ const tisch: SceneNode[] = [
     task: "Осмотрите стол.",
     items: [
       { icon: "🎂", de: "der Kuchen", ru: "пирог, торт", note: "У Матео за спиной — что-то большое и круглое под полотенцем.", key: true },
-      { icon: "🧢", de: "die Mütze", ru: "фуражка", note: "Фуражка Йенсена лежит на столе. Та самая, что на фото 1976 года.", key: true },
+      { icon: "🧢", de: "die Mütze", ru: "фуражка", note: "Фуражка Йенсена лежит на столе. Старая, как клуб.", key: true },
       { icon: "☕", de: "die Tasse", ru: "чашка, кружка", note: "Чай Йенсена. По рецепту." },
     ],
   },
@@ -630,24 +649,24 @@ const tisch: SceneNode[] = [
     hint: "Начните с того, что сказано прямо. Петерсен не красила и не пекла.",
     c: {
       kind: "grid",
-      people: ["Greta", "Herr Jensen", "Mateo", "Frau Petersen"],
-      cols: [{ id: "was", label: "hat …", values: ["das Schild gemalt", "das Schild gegeben", "einen Kuchen gebacken", "nein gesagt"] }],
+      people: ["Nils", "Frauke", "Mateo", "Frau Petersen"],
+      cols: [{ id: "was", label: "hat …", values: ["ein Schild aus Plastik geholt", "zu viel gesagt", "einen Kuchen gebacken", "nein gesagt"] }],
       clues: [
         { de: "Mateo hat einen Kuchen gebacken.", ru: "Матео испёк торт.", a: "Mateo", b: "was:einen Kuchen gebacken" },
-        { de: "Frau Petersen hat das Schild nicht gemalt.", ru: "Фрау Петерсен табличку не красила.", a: "Frau Petersen", b: "was:das Schild gemalt", not: true },
-        { de: "Frau Petersen hat das Schild nicht gegeben.", ru: "Фрау Петерсен табличку не отдавала.", a: "Frau Petersen", b: "was:das Schild gegeben", not: true },
-        { de: "Herr Jensen hat nicht gemalt: Er hatte nur die Farbe.", ru: "Йенсен не красил: у него была только краска.", a: "Herr Jensen", b: "was:das Schild gemalt", not: true },
+        { de: "Frau Petersen hat nicht zu viel gesagt.", ru: "Фрау Петерсен лишнего не говорила.", a: "Frau Petersen", b: "was:zu viel gesagt", not: true },
+        { de: "Frau Petersen hat kein Schild geholt.", ru: "Фрау Петерсен табличку не привозила.", a: "Frau Petersen", b: "was:ein Schild aus Plastik geholt", not: true },
+        { de: "Nils hat nicht zu viel gesagt – er hat nur viel geschrieben.", ru: "Нильс лишнего не говорил — он только много писал.", a: "Nils", b: "was:zu viel gesagt", not: true },
       ],
-      answer: { "Greta|was": "das Schild gemalt", "Herr Jensen|was": "das Schild gegeben", "Mateo|was": "einen Kuchen gebacken", "Frau Petersen|was": "nein gesagt" },
+      answer: { "Nils|was": "ein Schild aus Plastik geholt", "Frauke|was": "zu viel gesagt", "Mateo|was": "einen Kuchen gebacken", "Frau Petersen|was": "nein gesagt" },
     },
   },
   {
     t: "pick",
-    task: "Почему никто не рассказал правду раньше?",
+    task: "Что всё ещё неясно после ужина?",
     options: [
-      ok("Это был сюрприз к столетию клуба: и табличка, и торт"),
-      no("Все боялись полиции", "Полиции не было ни при чём — кроме слуха Фрауке."),
-      no("Йенсен запретил всем говорить", "Говорить запретили только Йенсену — врач."),
+      ok("Где наша табличка и что будет в субботу"),
+      no("Кто испёк торт", "Матео признался: он."),
+      no("Что сделала чайка", "Ничего. Это написала Грета."),
     ],
   },
   { t: "game", task: "Лотта собирает портфель. Разложите вещи по ящикам: der, die, das.", hint: HINT_DOCK, c: docks(["die Hausaufgabe", "die Aufgabe", "die Lösung", "das Ergebnis", "der Unterricht", "die Klasse", "der Schüler", "der Bleistift"]) },
@@ -658,35 +677,44 @@ const tisch: SceneNode[] = [
   },
 ];
 
-// Сцена 5 · кульминация: заговор. Все обещают молчать до субботы, игрок пишет приглашение Opa Hansen
-// по образцу приглашения фрау Петерсен. sollen по плану повторяется: «Was soll Hauke machen?». Замок
-// урока. Краска ещё не высохла, а в субботу дождь — проблема главы 12.
+// Сцена 5 · кульминация: вечер перед последним днём. Бросок: чудак по черте · Грета · отпраздновать ·
+// die Köchin · 15 (сильнее) — у фургона Дерьи Грета тайком празднует что-то «fertig», и Дерья угощает
+// её бесплатным дёнером. Что закончено, команда не знает: крючок на главу 12. Фрау Петерсен раздаёт
+// задания на праздник — sollen по плану; игрок пишет приглашение Opa Hansen по образцу. Замок урока.
 const geheim: SceneNode[] = [
-  { t: "pic", src: "11-geheim.jpg", alt: "Клуб поздно вечером: Хауке, Элиф и Матео подняли руки, как для клятвы; Йенсен прижал палец к губам; на столе торт под полотенцем и пустая плоская коробка" },
-  narr("Теперь вы в заговоре: das ist ein {geheimnis} — für zwei Tage. Йенсен прикладывает палец к губам."),
-  petersen(PLAN, "Итак: суббота, восемь утра у клуба. Хауке пусть несёт табличку. Элиф пусть следит за чайкой. И все пусть молчат!"),
+  { t: "pic", src: "11-fertig.jpg", alt: "Поздний вечер у горчично-жёлтого фургона Дерьи: Дерья в бирюзовой бандане протягивает Грете дёнер, Грета смеётся, руки у неё в тёмно-синей краске; из-за угла киоска выглядывают Хауке и Элиф" },
+  narr("Abend, bei Derya. Greta und Derya — с Cola, смеются. Руки у Греты — dunkelblau, как на фото 39."),
+  narr("Грета пишет Дерье записку. Дерья читает вслух — на весь Hafen."),
+  derya(DERYA_FERTIG, "Готово? Правда готово? Супер, Грета! Дёнер тебе — бесплатно!"),
+  {
+    t: "hear",
+    task: "Что празднуют Грета и Дерья?",
+    voice: "Shelley",
+    de: DERYA_FERTIG,
+    options: ["что-то закончено — «fertig»", "день рождения Дерьи", "новую работу Греты в фирме"],
+    answer: "что-то закончено — «fertig»",
+  },
+  elif("Fertig – was ist fertig? Unser Schild?", "Готово — что готово? Наша табличка?"),
+  hauke("Oder der Kuchen von Mateo? Oder … beides?", "Или торт Матео? Или… и то, и другое?"),
+  {
+    t: "pick",
+    task: "Что может быть «fertig»?",
+    options: [
+      ok("Пока неизвестно: табличка, торт — или что-то третье"),
+      no("Дёнер", "Дёнер Дерья только отдаёт. Празднуют что-то другое."),
+      no("Работа Греты в фирме", "В фирме Грета не работала: так сказала фрау Claasen."),
+    ],
+  },
+  narr("Что-то fertig. Für Samstag. Похоже на {ueberraschung}."),
+  petersen(PLAN, "Итак: суббота, восемь утра у клуба. Хауке пусть носит столы. Элиф пусть следит за чайкой. И все пусть приходят вовремя!"),
   {
     t: "hear",
     task: "Как на экзамене: что должен делать Хауке в субботу?",
     voice: "Sandy",
     de: PLAN,
-    options: ["нести табличку", "следить за чайкой", "печь торт"],
-    answer: "нести табличку",
+    options: ["носить столы", "следить за чайкой", "печь торт"],
+    answer: "носить столы",
   },
-  hauke("Ich trage das Schild? Ich? Mit dem Fahrrad von Oma?", "Я несу табличку? Я? На бабушкином велосипеде?"),
-  elif("Und wenn es regnet? Das Schild ist noch nicht trocken!", "А если пойдёт дождь? Табличка ещё не высохла!"),
-  {
-    t: "pick",
-    rule: ["moin/wenn-1"],
-    task: "Чего боится Элиф?",
-    options: [
-      ok("Если в субботу дождь, табличка не успеет высохнуть"),
-      no("Что в субботу Хауке уронит табличку", "Про Хауке она не сказала ни слова: wenn es regnet — если пойдёт дождь."),
-      no("Что дождь смоет белые буквы", "Буквы уже высохли. Сохнет тёмно-синяя краска."),
-    ],
-  },
-  narr("Фрау Петерсен раздаёт {bogen} для гостей: {anrede} — Herr или Frau, пол — {maennlich} или {weiblich}."),
-  narr("Bitte {ankreuzen} und bis Freitag {abgeben}. Ihre {papiere} sind immer in Ordnung."),
   {
     t: "type",
     rule: ["moin/sollen-1"],
@@ -694,42 +722,43 @@ const geheim: SceneNode[] = [
     answers: ["Elif soll die Möwe beobachten.", "Sie soll die Möwe beobachten."],
     ru: "Элиф должна следить за чайкой.",
   },
+  hauke("Ich trage die Tische? Ich? Mit dem Fahrrad von Oma?", "Я ношу столы? Я? На бабушкином велосипеде?"),
+  { t: "gap", rule: ["moin/sollen-1"], task: "Что должен носить Хауке?", text: "Hauke soll die ___ tragen.", options: ["Tische", "Schilder", "Kuchen"], answer: "Tische", ru: "Хауке должен носить столы." },
+  elif("Und wenn es am Samstag regnet? Die Party ist am Club!", "А если в субботу пойдёт дождь? Праздник же у клуба!"),
+  {
+    t: "pick",
+    rule: ["moin/wenn-1"],
+    task: "Чего боится Элиф?",
+    options: [
+      ok("Если в субботу дождь, праздник у клуба промокнет"),
+      no("Что в субботу Хауке уронит столы", "Про Хауке она не сказала ни слова: wenn es regnet — если пойдёт дождь."),
+      no("Что дождь смоет фургон Дерьи", "Фургон не промокнет. Праздник — под открытым небом."),
+    ],
+  },
+  narr("Фрау Петерсен раздаёт {bogen} для гостей: {anrede} — Herr или Frau, пол — {maennlich} или {weiblich}."),
+  narr("Bitte {ankreuzen} und bis Freitag {abgeben}. Ihre {papiere} sind immer in Ordnung."),
   mateo("Und ich will den Kuchen backen. Für alle!", "А я хочу испечь торт. На всех!"),
   {
     t: "hear",
     task: "Когда и где встреча в субботу?",
     voice: "Sandy",
     de: PLAN,
-    options: ["в восемь у клуба", "в одиннадцать в мастерской", "в три у почты"],
+    options: ["в восемь у клуба", "в одиннадцать в фирме", "в три у почты"],
     answer: "в восемь у клуба",
   },
-  narr("Грета дописывает строчку: «Die Farbe ist noch nicht {trocken}. Zwei Tage. Und Samstag — es regnet?»"),
-  dana("Nasse Farbe und Regen? Diagnose: ein Problem.", "Мокрая краска и дождь? Диагноз: проблема."),
-  {
-    t: "reply",
-    task: "Предложите, как везти табличку под дождём. Вспомните подвал Йенсена.",
-    options: [
-      ok("Wir nehmen den Karton von Herrn Jensen!"),
-      no("Wir nehmen eine Tüte.", "Пакет для таблички мал — и промокнет."),
-      no("Wir nehmen das Fahrrad von Oma.", "Табличку на велосипеде под дождём? Краска поплывёт."),
-    ],
-  },
-  narr("Йенсен кивает и пишет: «Der Karton ist für das Schild. Ich habe ihn am Montag gemacht.»"),
-  elif("Der Karton mit dem Umriss! Das Schild passt genau hinein!", "Коробка с контуром! Табличка войдёт точно!"),
-  { t: "gap", task: "Для чего Йенсен сделал коробку?", text: "Der Karton ist für das ___.", options: ["Schild", "Fahrrad", "Kuchen"], answer: "Schild", ru: "Коробка — для таблички." },
   {
     t: "game",
     rule: ["arbeit/perfekt-2", "arbeit/war-hatte-1"],
     task: "Блокнот закрыт на фразы дня. Поверните диски.",
     hint: HINT_LOCK,
     c: lock([
-      ["Грета покрасила табличку.", [["Greta", "Gretas", "Grete"], ["hat", "ist", "haben"], ["das Schild gemalt.", "das Schild gemalen.", "gemalt das Schild."]]],
-      ["Йенсену было двадцать.", [["Herr Jensen", "Herrn Jensen", "Herr Jensens"], ["war", "hatte", "ist"], ["zwanzig.", "zwanzig Jahre hatte.", "zwanzigsten."]]],
+      ["Фирма сделала табличку из пластика.", [["Die Firma", "Die Firmen", "Der Firma"], ["hat", "ist", "haben"], ["ein Schild aus Plastik gemacht.", "ein Schild aus Plastik gemachen.", "gemacht ein Schild aus Plastik."]]],
+      ["Йенсен был мокрый.", [["Herr Jensen", "Herrn Jensen", "Herr Jensens"], ["war", "hatte", "ist"], ["nass.", "nass war.", "nasse."]]],
       ["Матео испёк торт.", [["Mateo", "Mateos", "Mateo hat"], ["hat", "ist", "hatte"], ["einen Kuchen gebacken.", "einen Kuchen gebackt.", "ein Kuchen gebacken."]]],
     ]),
   },
   mateo("Und der Kuchen bleibt im Kühlschrank – bis Samstag. Kein Wort!", "А торт остаётся в холодильнике — до субботы. Ни слова!"),
-  elif("Und Opa Hansen? Er hat das Schild gemacht. Er muss am Samstag da sein!", "А Opa Hansen? Он сделал табличку. Он должен быть здесь в субботу!"),
+  elif(ELIF_OPA, "А Opa Hansen? Фрау Петерсен говорит: в 1976 году он сделал нашу табличку. Он приедет в субботу!"),
   narr("Приглашение фрау Петерсен для клуба — готовый образец для Opa Hansen."),
   {
     t: "game",
@@ -741,8 +770,8 @@ const geheim: SceneNode[] = [
       ["Liebe Mitglieder,", "der Club hat Geburtstag: hundert Jahre!", "Wir haben eine Party geplant.", "Kommen Sie bitte am Samstag um acht!", "Viele Grüße", "Frau Petersen"],
       [
         an("Lieber", "Opa Hansen"),
-        ["Was? → wir: das Schild finden (Perfekt)", "Wir haben das Schild gefunden!", "wir haben das Schild gefunden!", "Wir haben das Schild gefunden."],
-        ["Wer? → Greta: das Schild malen (Perfekt)", "Greta hat das Schild gemalt.", "Greta hat das Schild neu gemalt."],
+        ["Was? → Frau Petersen: ein Zimmer reservieren (Perfekt)", "Frau Petersen hat ein Zimmer reserviert.", "Frau Petersen hat ein Zimmer reserviert!", "Frau Petersen hat für Sie ein Zimmer reserviert."],
+        ["Wer? → Mateo: einen Kuchen backen (Perfekt)", "Mateo hat einen Kuchen gebacken.", "Mateo hat einen Kuchen gebacken!"],
         ["Bitte → Sie: am Samstag nach Kiel kommen", "Kommen Sie bitte am Samstag nach Kiel!", "kommen Sie bitte am Samstag nach Kiel!", "Kommen Sie bitte am Samstag nach Kiel."],
         gruss("Nils und Greta"),
       ],
@@ -755,9 +784,9 @@ const geheim: SceneNode[] = [
     t: "pick",
     task: "Что теперь главное до субботы?",
     options: [
-      ok("Молчать о сюрпризе и спасти мокрую краску от дождя"),
-      no("Искать табличку дальше", "Табличка найдена: она в мастерской Греты."),
-      no("Рассказать всё Opa Hansen по телефону", "Это сюрприз и для него: только приглашение."),
+      ok("Узнать, что у Греты «fertig», — и в субботу прийти вовремя"),
+      no("Искать табличку в фирме", "У фирмы её нет: фрау Claasen сказала сегодня."),
+      no("Рассказать всё Opa Hansen по телефону", "Приглашение — да. Догадки — нет."),
     ],
   },
   {
@@ -768,8 +797,8 @@ const geheim: SceneNode[] = [
   },
   {
     t: "clue",
-    title: "Ein Geheimnis",
-    text: "Samstag um acht am Club. Hauke: das Schild. Elif: die Möwe. Alle: kein Wort! Die Farbe ist noch nicht trocken — und Samstag: es regnet.",
+    title: "Fertig!",
+    text: "Greta und Derya: «Fertig!» Was ist fertig? Samstag um acht am Club. Hauke: die Tische. Elif: die Möwe. Opa Hansen kommt — er hat 1976 das Schild gemacht.",
   },
 ];
 
@@ -818,34 +847,34 @@ const nacht: SceneNode[] = [
       no("Gestern ich hatte keine Zeit.", "Время первым — глагол вторым: Gestern hatte ich …"),
     ],
   },
-  { t: "game", task: "Слова дня перемешались. Откройте пары: немецкое слово и перевод.", c: memory(["geheimnis", "ueberraschung", "wetterbericht", "muetze", "trocken", "notizblock"]) },
+  { t: "game", task: "Слова дня перемешались. Откройте пары: немецкое слово и перевод.", c: memory(["geheimnis", "ueberraschung", "wetterbericht", "muetze", "firma", "notizblock"]) },
   narr("Und die Möwe? Sie hat nichts gemacht — bis jetzt. Der Brief aus Helgoland — уже у неё в клюве."),
   { t: "game", task: `Отнимите письмо у чайки! ${RACE}`, hint: HINT_RACE, outcome: RACE_STAKES, c: race(["der Beruf", "die Arbeit", "die Stelle", "die Firma", "gestern", "früher", "gestern Abend", "letztes Jahr", "der Kollege", "der Hausmann"]) },
   elif("Mein Brief! Möwe, das ist kein Fischbrötchen! Das bist du!", "Моё письмо! Чайка, это не рыбная булочка! Это же про тебя!"),
-  dana("Morgen ist der letzte Tag. Und Samstag: Regen, nasse Farbe, Start. Wir brauchen einen Plan.", "Завтра последний день. А в субботу: дождь, мокрая краска, старт. Нам нужен план."),
+  dana(DANA_SAMSTAG, "Завтра фрау Петерсен заказывает табличку из пластика. Наш план: в субботу в семь — к Грете!"),
   {
     t: "pick",
     task: "Что нового за день?",
     options: [
-      ok("Правда раскрыта: табличку обновила Грета к столетию клуба, торт испёк Матео, команда в заговоре"),
-      no("Табличку украла фирма", "Фирме клуб отказал. Табличка у Греты."),
-      no("Праздник отменили из-за дождя", "Праздник будет. Дождь — проблема краски, а не праздника."),
+      ok("Фирма табличку не брала, слух Фрауке неверен, а у Греты что-то «fertig»"),
+      no("Табличку украла фирма", "Фрау Claasen: «Das haben wir nie gehabt!»"),
+      no("Праздник отменили из-за дождя", "Праздник будет. Дождь — не повод его отменять."),
     ],
   },
   { t: "game", task: "Лото на ночь: послушайте слово и закройте его на карточке.", hint: HINT_HEAR, c: bingo(["der Beruf", "die Arbeit", "die Stelle", "die Firma", "der Koch", "die Köchin", "der Mechaniker", "der Student", "der Kollege"]) },
   {
     t: "type",
     rule: ["arbeit/perfekt-2"],
-    task: "Запишите итог дня одной фразой: «Мы нашли табличку».",
-    answers: ["Wir haben das Schild gefunden.", "Wir haben das Schild gefunden!", "Heute haben wir das Schild gefunden."],
-    ru: "Мы нашли табличку.",
+    task: "Запишите итог дня одной фразой: «Фирма не брала табличку».",
+    answers: ["Die Firma hat das Schild nicht genommen.", "Die Firma hat unser Schild nicht genommen.", "Die Firma hat das Schild nie genommen."],
+    ru: "Фирма не брала табличку.",
   },
   hauke("Gute Nacht, Möwe. Morgen hast du viel Arbeit – du bist die Wache!", "Спокойной ночи, чайка. Завтра у тебя много работы — ты в карауле!"),
-  narr("Вы закрываете блокнот: «День одиннадцатый. Wir haben das Schild gefunden. Greta hat es gemalt. Samstag: es regnet». Noch ein Tag."),
+  narr("Вы закрываете блокнот: «День одиннадцатый. Die Firma hat das Schild nicht. Greta: «Samstag». Greta und Derya: «Fertig!»». Noch ein Tag."),
   {
     t: "clue",
     title: "Noch ein Tag",
-    text: "Das Schild ist in der Werkstatt — schön, aber nicht trocken. Samstag: es regnet. Die Party, Opa Hansen — und der Kuchen von Mateo im Kühlschrank.",
+    text: "Die Firma hat das Schild nicht. Greta: «Samstag.» Greta und Derya: «Fertig!» Samstag um sieben: zu Greta. Samstag: es regnet. Die Party, Opa Hansen — und der Kuchen von Mateo im Kühlschrank.",
   },
 ];
 
@@ -855,7 +884,7 @@ export const sceneChapter11: Episode = {
   id: "moin-neu-11",
   title: "Was ist passiert?",
   day: { de: "Noch zwei Tage", ru: "ещё два дня до Kieler Woche" },
-  place: "Клуб и мастерская в Гаардене · все за одним столом",
+  place: "Клуб и фирма Kiel-Schild в Гаардене · все за одним столом",
   topic: "Работа и профессии",
   grammar: "профессии на -in · Perfekt с haben · gemacht, gefunden · war и hatte",
   beats: [
@@ -880,20 +909,20 @@ export const sceneChapter11: Episode = {
     },
     {
       id: "11-s2",
-      title: "Die Werkstatt",
+      title: "Kiel-Schild",
       story: [],
-      prompt: "Одиннадцать часов: Грета и Йенсен отвечают записками.",
+      prompt: "Одиннадцать часов: очная ставка в фирме табличек.",
       hint: "Ich habe gearbeitet. — haben второй, причастие в конце.",
-      success: "Табличку отдали в воскресенье в половине шестого, за чаем. Грета её покрасила.",
+      success: "У фирмы таблички нет и не было. В конверте Йенсена — письмо: «Kommen Sie am Freitag».",
       challenge: play(back(werkstatt, 11, 2)),
     },
     {
       id: "11-s3",
       title: "Warum?",
       story: [],
-      prompt: "Зачем был нужен секрет: Opa, фирма и фото 1976 года.",
-      hint: "Waren Sie 1976 auch da? — «были» — war.",
-      success: "Столетие клуба, отказ фирме и сюрприз для Opa Hansen.",
+      prompt: "Зачем письмо: фрау Петерсен, записки Йенсена и одно слово Греты.",
+      hint: "Waren Sie am Samstag am Bus? — «были» — war, а не hatte.",
+      success: "Петерсен завтра закажет пластик. Йенсен пишет «Freitag», Грета — «Samstag».",
       challenge: play(back(warum, 11, 0)),
     },
     {
@@ -907,11 +936,11 @@ export const sceneChapter11: Episode = {
     },
     {
       id: "11-s5",
-      title: "Ein Geheimnis",
+      title: "Fertig!",
       story: [],
-      prompt: "Заговор до субботы, приглашение для Opa Hansen и мокрая краска.",
-      hint: "Hauke soll das Schild tragen. — так просит фрау Петерсен: sollen.",
-      success: "Все молчат до субботы. Но краска не высохла, а в субботу дождь.",
+      prompt: "Грета и Дерья что-то празднуют, задания на субботу и приглашение для Opa Hansen.",
+      hint: "Hauke soll die Tische tragen. — так просит фрау Петерсен: sollen.",
+      success: "У Греты что-то «fertig». В субботу в восемь — праздник у клуба.",
       challenge: play(back(geheim, 11, 3)),
     },
     {

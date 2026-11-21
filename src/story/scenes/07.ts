@@ -7,8 +7,10 @@ import { back } from "./back.ts";
 // Глава 7 в формате сцен (A1-PLOT.md, «Формат сцен»): досуг и встречи, können и wollen, инфинитив
 // в конце, gern, lieber, am liebsten, пригласить и отказаться. Вопрос главы — как поговорить с
 // Йенсеном, который избегает команды. Вход — «Moin.» на записку, выход — записка Йенсена «Morgen um
-// acht. Im Keller.» и ключ, а на фото с пляжа у Греты руки в краске. Повороты брошены оракулом
-// (seed 1794159030), увязка — в журнале A1-STORYCRAFT.md.
+// acht. Im Keller.» и ключ, а на фото с пляжа у Греты руки в краске. Ложный след (A1-PLOT.md,
+// «Переработка глав 6–12»): опоздавшая Фрауке разносит «Greta arbeitet bei der Firma», а Нильс сказал
+// «bei einer Firma für Boote» — несостыковка на артикле. Повороты брошены оракулом (seeds 1794159030
+// и 1795220686), увязка — в журнале A1-STORYCRAFT.md.
 
 const narr = (text: string): SceneNode => ({ t: "narr", text });
 const learn = (words?: string[]) => (words ? { learn: words } : {});
@@ -139,13 +141,6 @@ const invite: SceneNode[] = [
   { t: "gap", task: "Когда Йенсен выходит в море?", text: "Jeden Morgen um ___ segelt Herr Jensen.", options: ["acht", "halb acht", "sechs"], answer: "acht", ru: "Каждое утро в восемь господин Йенсен выходит под парусом." },
   {
     t: "game",
-    rule: ["tagesablauf/klammer-1"],
-    task: "Соберите план Даны.",
-    hint: "einladen: laden — второй, ein — в конце.",
-    c: order(["Wir", "laden", "Herrn", "Jensen", "ein."], ["ein.", "Jensen", "Wir", "Herrn", "laden"]),
-  },
-  {
-    t: "game",
     task: "Хауке проверяет: одно слово в группе лишнее.",
     hint: HINT_ODD,
     c: odd([
@@ -266,15 +261,6 @@ const week: SceneNode[] = [
         { who: "Herr Jensen", de: "Am Vormittag segle ich.", ru: "До обеда я хожу под парусом.", busy: ["Sonntag|am Vormittag", "Montag|am Vormittag", "Dienstag|am Vormittag"] },
       ],
     },
-  },
-  {
-    t: "game",
-    task: "Проверьте по книге клуба: что верно?",
-    c: verdict(["Richtig", "Falsch"], [
-      ["Фрау Петерсен свободна во вторник", true, "«Am Dienstag habe ich Zeit.»"],
-      ["Матео свободен в воскресенье", false, "Матео не свободен никогда: он готовит."],
-      ["Йенсен выходит в море в восемь", true, "Каждое утро — и всегда один."],
-    ]),
   },
   {
     t: "game",
@@ -513,6 +499,9 @@ const party: SceneNode[] = [
   },
 ];
 
+// Фрауке слышит конец объявления и теряет артикль: из «einer Firma für Boote» выходит «der Firma».
+const FRAUKE_FIRMA = "Bin ich zu spät? Egal! Ich weiß es: Greta arbeitet bei der Firma!";
+
 // Сцена 4 · поворот: пляж. Отсылка — «Челюсти»: «Нам нужна лодка побольше». Шутка главы из плана —
 // чайка уносит пляжный мяч; на фото Нильса у Греты руки в краске.
 const beach: SceneNode[] = [
@@ -562,16 +551,6 @@ const beach: SceneNode[] = [
       no("Это не Грета", "Платиновые волосы, комбинезон, карандаш за ухом — она."),
     ],
   },
-  { t: "gap", task: "Что сказала Дана о руках Греты?", text: "Ihre Hände sind ___!", options: ["dunkelblau", "weiß", "rot"], answer: "dunkelblau", ru: "Её руки — тёмно-синие!" },
-  {
-    t: "game",
-    task: "Что видно на фото 39?",
-    c: verdict(["Richtig", "Falsch"], [
-      ["Грета держит табличку", false, "Таблички на фото нет — только руки."],
-      ["Руки Греты тёмно-синие", true, "Цвет — как у таблички MOIN."],
-      ["Грета сразу уходит", true, "Увидела камеру — и ушла."],
-    ]),
-  },
   narr("Грета была на пляже eine Minute: увидела камеру и ушла. Нильс пожимает плечами: «Greta mag keine Fotos!!!»"),
   elif("Keine Fotos. Aber die Hände sind dunkelblau.", "Никаких фото. Но руки — тёмно-синие."),
   mateo("Und wo ist mein Brot? … Das Brot ist für später!", "А где мой хлеб?… Хлеб — на потом!"),
@@ -607,21 +586,86 @@ const beach: SceneNode[] = [
     answers: ["Die Hände von Greta sind dunkelblau.", "Gretas Hände sind dunkelblau.", "Greta hat Farbe an den Händen."],
     ru: "Руки Греты тёмно-синие.",
   },
-  { t: "game", task: "Нильс подписывает фото по буквам.", hint: HINT_SPELL, c: letters(["fotografieren", "der Sport", "das Hobby"]) },
+  narr("Nils macht die Musik aus: {disco} ist zu Ende. Jetzt spricht Nils — но ветер рвёт каждое слово."),
   {
     t: "game",
-    task: "Элиф устраивает проверку на пледе: одно слово лишнее.",
-    hint: HINT_ODD,
-    c: odd([
-      [["der Strand", "das Wasser", "das Boot", "das Kino"], "das Kino", "Кино — не на пляже."],
-      [["schwimmen", "segeln", "fotografieren", "der Park"], "der Park", "Парк — место, остальное — что делают."],
-    ]),
+    task: "Колонка Нильса трещит на ветру. Выберите вопрос, чтобы расслышать пропущенное.",
+    c: {
+      kind: "radio",
+      rounds: [
+        {
+          who: "Nils · Lautsprecher",
+          voice: "Reed",
+          before: "Opa Hansen kommt",
+          after: "zur Party!!!",
+          hidden: "am Samstag",
+          ru: "Опа Хансен приедет в субботу на праздник!",
+          questions: [
+            { id: "wann", text: "Wann kommt Opa Hansen?" },
+            { id: "wer", text: "Wer kommt mit Opa Hansen?", why: "Пропало, когда он приедет, а не с кем." },
+            { id: "wo", text: "Wo wohnt Opa Hansen?", why: "В этой фразе — когда, а не где." },
+          ],
+          answer: "wann",
+        },
+        {
+          who: "Nils · Lautsprecher",
+          voice: "Reed",
+          before: "Greta arbeitet bei",
+          after: "– sie hat nie Zeit für den Strand!!!",
+          hidden: "einer Firma für Boote",
+          ru: "Грета работает в одной фирме для лодок — у неё никогда нет времени на пляж!",
+          questions: [
+            { id: "wo", text: "Wo arbeitet Greta?" },
+            { id: "wann", text: "Wann kommt Greta wieder?", why: "Пропало, где она работает, а не когда придёт." },
+            { id: "was", text: "Was isst Greta gern?", why: "Нильс говорит о работе, а не о еде." },
+          ],
+          answer: "wo",
+        },
+        {
+          who: "Nils · Lautsprecher",
+          voice: "Reed",
+          before: "Um sieben gibt es",
+          after: "am Strand!!!",
+          hidden: "ein Feuer",
+          ru: "В семь на пляже будет костёр!",
+          questions: [
+            { id: "was", text: "Was gibt es um sieben?" },
+            { id: "wann", text: "Wann ist die Party zu Ende?", why: "Время Нильс назвал сам: um sieben. Пропало, что будет." },
+            { id: "wer", text: "Wer macht am Strand Sport?", why: "Про спорт Нильс не говорил: пропало, что будет в семь." },
+          ],
+          answer: "was",
+        },
+      ],
+    },
   },
+  narr("Und dann kommt Frauke — eine Stunde zu spät. На Party она опаздывает всегда, на новость — никогда. Sie hört nur das Ende."),
+  frauke(FRAUKE_FIRMA, "Я опоздала? Неважно! Я знаю: Грета работает в той самой фирме!"),
+  {
+    t: "hear",
+    task: "Что разносит Фрауке?",
+    voice: "Sandy",
+    de: FRAUKE_FIRMA,
+    options: ["Грета работает в той самой фирме", "Грета уехала к Opa Hansen", "Грета не любит пляж"],
+    answer: "Грета работает в той самой фирме",
+  },
+  { ...narr("Am Abend weiß der ganze Strand: Greta und {firma}! Та самая, mit dem Schild aus Plastik. Слух растёт быстрее, чем очередь."), set: { rumours: 1 } },
+  hauke("Bei der Firma! Darum hat sie Farbe an den Händen!", "В той фирме! Вот почему у неё краска на руках!"),
+  {
+    t: "pick",
+    task: "Что сказал Нильс в колонку?",
+    options: [
+      ok("Грета работает «bei einer Firma für Boote» — в какой-то фирме для лодок"),
+      no("Грета работает «bei der Firma» — в той самой фирме табличек", "Так передаёт Фрауке: она слышала только конец. Нильс сказал einer — какая-то фирма, и для лодок."),
+      no("Грета работает в киоске", "Киоск — это Фрауке. Нильс говорил о фирме для лодок."),
+    ],
+  },
+  elif("Eine Firma für Boote? Das ist nicht die Firma mit dem Plastik.", "Фирма для лодок? Это не та фирма с пластиком."),
+  hauke("Vielleicht macht die Firma auch Schilder für Boote!", "А может, та фирма делает таблички и для лодок!"),
   narr("Хауке путает: {see} — это озеро. А Ostsee — море, и у моря артикль die."),
   {
     t: "clue",
     title: "Foto 39",
-    text: "Foto von Nils, am Strand: Greta, ihre Hände dunkelblau. Eine Minute — und Greta geht. Herr Jensen segelt, allein.",
+    text: "Foto von Nils, am Strand: Greta, ihre Hände dunkelblau. Eine Minute — und Greta geht. Nils: «Greta arbeitet bei einer Firma für Boote.» Frauke: «Bei der Firma!» Herr Jensen segelt, allein.",
   },
 ];
 
@@ -667,7 +711,6 @@ const water: SceneNode[] = [
       no("Warte, Hauke! Wir kann helfen!", "wir — können."),
     ],
   },
-  { t: "game", task: "Пока все бегут к воде, Элиф записывает слова дня по буквам.", hint: HINT_SPELL, c: letters(["schwimmen", "segeln", "zusammen"]) },
   narr("Но первым — Herr Jensen. Одна рука на румпеле, другая — за воротник Хауке. Und Hauke ist im Boot."),
   jensen("Moin.", "Привет."),
   narr("Йенсен смотрит на мокрого Хауке, на весь Club am Strand — и смеётся. Впервые за неделю. Потом достаёт карандаш."),
@@ -690,16 +733,6 @@ const water: SceneNode[] = [
     de: "Morgen um acht. Im Keller. Allein.",
     options: ["завтра в восемь, в подвале, без всех", "сегодня в восемь у причала", "завтра в восемь на пляже"],
     answer: "завтра в восемь, в подвале, без всех",
-  },
-  { t: "gap", task: "Где встреча?", text: "Morgen um acht. Im ___.", options: ["Keller", "Kino", "Café"], answer: "Keller", ru: "Завтра в восемь. В подвале." },
-  {
-    t: "game",
-    task: "Проверьте записку Йенсена: что верно?",
-    c: verdict(["Richtig", "Falsch"], [
-      ["Встреча в подвале", true, "«Im Keller.»"],
-      ["Встреча сегодня вечером", false, "«Morgen um acht» — завтра в восемь."],
-      ["Прийти нужно со всем клубом", false, "«Allein» — без всех."],
-    ]),
   },
   {
     t: "game",
@@ -724,13 +757,6 @@ const water: SceneNode[] = [
     task: "Запишите, что идея Хауке всё-таки сработала.",
     answers: ["Herr Jensen will sprechen.", "Herr Jensen will morgen sprechen.", "Herr Jensen will mit uns sprechen."],
     ru: "Господин Йенсен хочет поговорить.",
-  },
-  {
-    t: "game",
-    rule: ["freizeit/check-2"],
-    task: "Соберите фразу для блокнота: время — на первом месте.",
-    hint: "Время на первом месте, модальный глагол второй, инфинитив — в конце.",
-    c: order(["Morgen", "um", "acht", "können", "wir", "sprechen."], ["sprechen.", "wir", "Morgen", "können", "acht", "um"]),
   },
   { t: "game", task: "Хауке, ещё мокрый, повторяет фразы дня. Повторите за ним вслух.", hint: HINT_SAY, c: speak(["Schade!", "leider", "die Idee"]) },
   {
@@ -836,11 +862,11 @@ const evening: SceneNode[] = [
   elif("Und die Möwe hat den Ball. Sie spielt jetzt Fußball!", "А мяч у чайки. Теперь она играет в футбол!", ["Fußball spielen"]),
   dana("Ich habe eine Diagnose. Aber ich sage sie morgen.", "У меня есть диагноз. Но скажу его завтра."),
   {
-    t: "game",
+    t: "type",
     rule: ["freizeit/ende-3"],
-    task: "Соберите вопрос на завтра.",
-    hint: "Вопрос «да или нет»: модальный глагол первый, инфинитив в конце.",
-    c: order(["Können", "wir", "morgen", "alles", "verstehen?"], ["verstehen?", "alles", "Können", "morgen", "wir"]),
+    task: "Запишите вопрос на завтра: сможем ли мы всё понять?",
+    answers: ["Können wir morgen alles verstehen?", "Können wir alles verstehen?"],
+    ru: "Сможем ли мы завтра всё понять?",
   },
   narr("Der Schlüssel liegt auf dem Tisch: alt, schwer, с биркой: «{keller}». Рядом будильник: «7:00!»"),
   { t: "game", task: "Хауке раскладывает вещи из корзин по ящикам: der, die, das.", hint: HINT_DOCK, c: docks(["der Film", "das Kino", "das Konzert", "die Party", "der Park", "das Schwimmbad", "das Buch", "die Einladung", "der Garten", "der Baum", "die Blume", "das Bild"]) },
@@ -856,11 +882,11 @@ const evening: SceneNode[] = [
     ru: "Завтра в восемь в подвале.",
   },
   { t: "game", task: "Хауке засыпает и бормочет хобби. Послушайте и нажмите на картинку.", hint: HINT_PICTURE, c: scene([["segeln", "⛵"], ["schwimmen", "🏊"], ["lesen", "📖"], ["Fußball spielen", "⚽"], ["Musik hören", "🎧"], ["tanzen", "💃"], ["Freunde treffen", "🧑‍🤝‍🧑"], ["wandern", "🥾"], ["laufen", "🏃"]]) },
-  narr("Вы закрываете блокнот: «День седьмой. Herr Jensen: Morgen um acht. Im Keller. Allein. Greta: Hände dunkelblau». Noch fünf Tage."),
+  narr("Вы закрываете блокнот: «День седьмой. Herr Jensen: Morgen um acht. Im Keller. Allein. Greta: Hände dunkelblau — und {firma}?». Noch fünf Tage."),
   {
     t: "clue",
     title: "Im Keller",
-    text: "Morgen um acht: Herr Jensen im Keller, allein. Wir haben den Schlüssel. Foto: Greta, Hände dunkelblau — wie das Schild. Dana hat eine Diagnose — morgen.",
+    text: "Morgen um acht: Herr Jensen im Keller, allein. Wir haben den Schlüssel. Foto: Greta, Hände dunkelblau — wie das Schild. Frauke: «Greta arbeitet bei der Firma.» Nils: «bei einer Firma für Boote». Dana hat eine Diagnose — morgen.",
   },
 ];
 

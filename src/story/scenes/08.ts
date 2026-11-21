@@ -7,7 +7,9 @@ import { back } from "./back.ts";
 // auf dem), этажи и порядковые числа, сложные слова, прилагательное после sein. Вопрос главы — где
 // табличка в клубе. Вход — ключ и записка «Morgen um acht. Im Keller. Allein.», выход — пустая
 // коробка с контуром MOIN, билет на автобус в Gaarden и адрес мастерской. Подвалов два, и команда
-// ждёт Йенсена не в том. Повороты брошены оракулом (seed 1794160007), увязка — в журнале
+// ждёт Йенсена не в том. Ложный след (A1-PLOT.md, «Переработка глав 6–12»): фирма тоже из Гаардена,
+// а Фрауке разносит «Грета везёт Йенсена в фирму»; довод правды — Грета вернула хозяину дома запасной
+// ключ от подвала. Повороты брошены оракулом (seeds 1794160007 и 1795220687), увязка — в журнале
 // A1-STORYCRAFT.md.
 
 const narr = (text: string): SceneNode => ({ t: "narr", text });
@@ -27,6 +29,7 @@ const ok = (text: string) => ({ text, ok: true as const });
 const no = (text: string, react: string) => ({ text, react });
 
 const JENSEN_NOTE = "Heute nicht. Leider. Moin.";
+const WULFF_KEY = "Und Greta bringt immer alles zurück. Gestern – den zweiten Schlüssel vom Keller!";
 const ENTFUEHRUNG = "Herr Jensen sagt nicht mal Moin! Und Greta nimmt ihn mit! Das ist eine Entführung!";
 
 // Сцена 1 · пролог и завязка: восемь утра у клуба. Бросок: глобальное событие · чайка · прийти
@@ -122,6 +125,7 @@ const morning: SceneNode[] = [
       no("Что Йенсен пришёл", "Йенсена нет. Петерсен празднует дверь."),
     ],
   },
+  petersen("Und die Firma aus Gaarden ruft wieder an. Noch vier Tage – dann ist Freitag!", "А фирма из Гаардена опять звонит. Ещё четыре дня — и пятница!"),
   {
     t: "game",
     task: "На доске фрау Петерсен ключи висят на трёх крючках: der, die, das. Повесьте бирки.",
@@ -191,15 +195,6 @@ const lager: SceneNode[] = [
     de: "Nein! Das Schild ist zu groß und zu schwer. Eine Möwe wiegt ein Kilo!",
     options: ["табличка слишком большая и тяжёлая", "табличка прибита к стене", "чайка боится таблички"],
     answer: "табличка слишком большая и тяжёлая",
-  },
-  {
-    t: "game",
-    task: "Элиф — адвокат чайки. Что верно?",
-    c: verdict(["Richtig", "Falsch"], [
-      ["Чайка унесла табличку", false, "Табличка слишком тяжёлая: чайка весит около килограмма."],
-      ["Чайка собирает мелочи", true, "Бирка, чек, пакетики, мяч — всё лёгкое."],
-      ["В тайнике есть угол бирки", true, "Тот самый, с целым номером."],
-    ]),
   },
   {
     t: "reply",
@@ -300,6 +295,7 @@ const lager: SceneNode[] = [
     c: odd([
       [["der Stuhl", "der Tisch", "das Bett", "die Küche"], "die Küche", "Кухня — комната, остальное — мебель."],
       [["die Miete", "die Kaltmiete", "die Warmmiete", "der Herd"], "der Herd", "Плита — техника, остальное — деньги за квартиру."],
+      [["hell – dunkel", "ruhig – laut", "teuer – günstig", "die Möbel"], "die Möbel", "Мебель — вещи, остальное — пары противоположностей."],
     ]),
   },
   { t: "game", task: "Подпишите находки из подвала по буквам.", hint: HINT_SPELL, c: letters(["der Schrank", "die Lampe", "das Sofa"]) },
@@ -343,7 +339,7 @@ const kiosk: SceneNode[] = [
     options: ["что Грета похищает Йенсена", "что Йенсен уехал в отпуск", "что Грета — его дочь"],
     answer: "что Грета похищает Йенсена",
   },
-  { ...narr("К девяти весь Hafen знает слово дня: {entfuehrung}. Слух едет быстрее автобуса."), set: { rumours: 1 } },
+  { ...narr("К девяти весь Hafen знает слово дня: {entfuehrung}. А к десяти — продолжение: Greta, Herr Jensen und {firma}! Слух едет быстрее автобуса."), set: { rumours: 1 } },
   {
     t: "type",
     task: "Запишите, что Фрауке видела на самом деле.",
@@ -421,6 +417,15 @@ const stairs: SceneNode[] = [
         ["c", "Danke für die Hilfe!", "Верно: вежливо благодарите."],
       ]),
     ]),
+  },
+  wulff(WULFF_KEY, "А Грета всегда всё возвращает. Вчера — второй ключ от подвала!"),
+  {
+    t: "hear",
+    task: "Что Грета вчера вернула хозяину дома?",
+    voice: "Eddy",
+    de: WULFF_KEY,
+    options: ["второй ключ от подвала", "квартиру на третьем этаже", "яблоко"],
+    answer: "второй ключ от подвала",
   },
   {
     t: "go",
@@ -518,18 +523,11 @@ const stairs: SceneNode[] = [
     answers: ["Der Keller ist im Haus am Hafen.", "Der Keller von Herrn Jensen ist im Haus am Hafen.", "Im Haus am Hafen ist der Keller."],
     ru: "Подвал — в доме у гавани.",
   },
-  {
-    t: "game",
-    rule: ["wohnen/stock-1"],
-    task: "Соберите для блокнота, где живёт Йенсен.",
-    hint: "im ersten Stock: in + dem = im, порядковое с окончанием -en.",
-    c: order(["Herr", "Jensen", "wohnt", "im", "ersten", "Stock."], ["Stock.", "im", "wohnt", "ersten", "Herr", "Jensen"]),
-  },
   { t: "game", task: "Элиф подписывает в блокноте слова подъезда по буквам.", hint: HINT_SPELL, c: letters(["das Erdgeschoss", "der Vermieter", "die Anzeige", "die Treppe", "der Aufzug"]) },
   {
     t: "clue",
     title: "Heute nicht",
-    text: "Haus am Hafen: Herr Jensen wohnt im ersten Stock — niemand da. Herr Wulff: «Weg, mit einer Frau.» An der Kellertür: «Heute nicht. Leider. Moin.»",
+    text: "Haus am Hafen: Herr Jensen wohnt im ersten Stock — niemand da. Herr Wulff: «Weg, mit einer Frau.» Der zweite Schlüssel für den Keller ist wieder da — von Greta. An der Kellertür: «Heute nicht. Leider. Moin.»",
   },
 ];
 
@@ -554,15 +552,6 @@ const empty: SceneNode[] = [
   dana("Das ist der Umriss vom Schild. Aber das Schild ist weg!", "Это контур таблички. Но самой таблички нет!"),
   elif("Der Karton ist neu. Und der Umriss ist genau. Das ist Profi-Arbeit.", "Коробка новая. И контур точный. Это работа профи."),
   hauke("Der Karton ist leer! Noch fünf Tage – und kein Schild!", "Коробка пустая! Ещё пять дней — и никакой таблички!"),
-  {
-    t: "game",
-    task: "Что говорит коробка? Проверьте блокнот.",
-    c: verdict(["Richtig", "Falsch"], [
-      ["В поролоне контур MOIN", true, "M, O, I, N — буквы таблички."],
-      ["Табличка здесь", false, "Коробка пустая."],
-      ["Коробку сделали под табличку", true, "Поролон вырезан точно по буквам. И коробка новая."],
-    ]),
-  },
   { t: "gap", task: "Что вырезано в поролоне?", text: "Im Karton ist der ___ vom Schild.", options: ["Umriss", "Stempel", "Anhänger"], answer: "Umriss", ru: "В коробке — контур таблички." },
   {
     t: "reply",
@@ -598,13 +587,6 @@ const empty: SceneNode[] = [
     options: ["сегодня закрыто, звонить завтра", "открыто до шести вечера", "Грета перезвонит сама"],
     answer: "сегодня закрыто, звонить завтра",
   },
-  {
-    t: "game",
-    rule: ["tagesablauf/klammer-1"],
-    task: "Соберите, о чём просит автоответчик.",
-    hint: "anrufen: rufen — второй, an — в конце.",
-    c: order(["Bitte", "rufen", "Sie", "morgen", "an."], ["an.", "morgen", "Bitte", "Sie", "rufen"]),
-  },
   dana("Die Werkstatt ist zu. Und Herr Jensen ist weg. Das ist kein Zufall.", "Мастерская закрыта. И Йенсена нет. Это не случайность."),
   elif("Heute geschlossen – das steht an der Tür. Wir müssen morgen wiederkommen.", "«Сегодня закрыто» — написано на двери. Придётся прийти завтра.", ["geschlossen"]),
   { t: "gap", rule: ["moin/geoeffnet-1"], task: "Что написано на двери мастерской?", text: "Heute ___.", options: ["geschlossen", "schließen", "geschließt"], answer: "geschlossen", ru: "Сегодня закрыто." },
@@ -616,16 +598,6 @@ const empty: SceneNode[] = [
       no("Сдаться: до старта пять дней", "Детективы не сдаются за пять дней до развязки."),
       no("Обыскать квартиру Йенсена", "Без Йенсена — нельзя. Ключ у нас только от подвала."),
     ],
-  },
-  {
-    t: "game",
-    task: "Хауке проверяет себя: что в группе лишнее?",
-    hint: HINT_ODD,
-    c: odd([
-      [["der Keller", "das Erdgeschoss", "der Stock", "der Herd"], "der Herd", "Плита — техника, остальное — этажи дома."],
-      [["der Schrank", "das Bett", "der Tisch", "die Miete"], "die Miete", "Аренда — деньги, остальное — мебель."],
-      [["hell – dunkel", "ruhig – laut", "teuer – günstig", "die Möbel"], "die Möbel", "Мебель — вещи, остальное — пары противоположностей."],
-    ]),
   },
   {
     t: "game",
@@ -674,16 +646,8 @@ const ticket: SceneNode[] = [
       "18:15": "Это Viertel nach sechs. На билете — без четверти шесть.",
     }),
   },
-  {
-    t: "game",
-    task: "Сходится ли билет с уликами?",
-    c: verdict(["Richtig", "Falsch"], [
-      ["Фрауке видела женщину у автобуса в 17:35", true, "«Frau, dunkelblau, große flache Tasche, Bus» — из кассовой книги."],
-      ["Билет — на понедельник", false, "Sonntag — воскресенье, день пропажи."],
-      ["Мастерская тоже в Gaarden", true, "Farbenweg 7, Kiel-Gaarden."],
-    ]),
-  },
   dana("Gaarden? Ich wohne in Gaarden! Der Farbenweg ist bei mir um die Ecke!", "Гаарден? Я живу в Гаардене! Фарбенвег — за углом от меня!"),
+  hauke("Gaarden! Die Firma ist auch in Gaarden! Die Frau mit der Tasche fährt zur Firma!", "Гаарден! Фирма ведь тоже в Гаардене! Женщина с сумкой едет в фирму!"),
   {
     t: "type",
     rule: ["kennenlernen/endungen-1"],
@@ -769,7 +733,7 @@ const ticket: SceneNode[] = [
   {
     t: "clue",
     title: "Die Fahrkarte",
-    text: "Im Flur: eine Fahrkarte, Sonntag, 17:45, Hafen — Gaarden. Die Werkstatt ist in Gaarden. Greta hat Farbe an den Händen. Mateo: nur ein Kuchen.",
+    text: "Im Flur: eine Fahrkarte, Sonntag, 17:45, Hafen — Gaarden. Die Werkstatt ist in Gaarden — und die Firma auch. Greta hat Farbe an den Händen. Mateo: nur ein Kuchen.",
   },
 ];
 
@@ -851,13 +815,6 @@ const evening: SceneNode[] = [
   },
   { t: "game", task: "Лото на ночь: послушайте слово и закройте его на карточке.", hint: HINT_HEAR, c: bingo(["der Keller", "der Flur", "das Treppenhaus", "die Wohnung", "der Stuhl", "der Schrank", "die Lampe", "der Balkon", "das Erdgeschoss"]) },
   dana("Morgen fahren wir nach Gaarden. Ich zeige euch den Weg!", "Завтра едем в Гаарден. Я покажу вам дорогу!"),
-  {
-    t: "game",
-    rule: ["wohnen/check-2"],
-    task: "Соберите вопрос для мастерской на завтра.",
-    hint: "Вопрос «да или нет»: глагол первым, прилагательное без окончания.",
-    c: order(["Ist", "die", "Werkstatt", "morgen", "offen?"], ["offen?", "morgen", "Ist", "Werkstatt", "die"]),
-  },
   {
     t: "game",
     task: "Wer war wo um 8:20? Два подвала, киоск и первый этаж: расставьте четверых по уликам.",
