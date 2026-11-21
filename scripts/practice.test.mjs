@@ -54,9 +54,9 @@ test("every challenge kind in the scenes has a practice name", () => {
     }
 });
 
-test("practice brings a missed unit back sooner and leaves a right answer where it was", () => {
+test("practice brings a missed unit back sooner, counts the miss and leaves a right answer where it was", () => {
   const cards = { "das Boot": { box: 3, step: 1, day: 1 }, "die Möwe": { box: 2, step: 1, day: 1 } };
   const next = practiceGrade(cards, ["die Möwe"], 5, 9);
   assert.deepEqual(next["das Boot"], cards["das Boot"]);
-  assert.deepEqual(next["die Möwe"], { box: 0, step: 5, day: 9 });
+  assert.deepEqual(next["die Möwe"], { box: 0, step: 5, day: 9, miss: 1 });
 });

@@ -4,8 +4,8 @@ import { PlayButton } from "../markup";
 import { storyAudio, wordInfo } from "./audio";
 import { Bingo, Docks, Gendered, Gull, Letters, Lock, Pairs, Write } from "./games";
 import { GullWord, Tail, Twenty } from "./minigames";
-import { initialAnswer, isCorrect, lockKey, wrongAnswers } from "./logic";
-import type { ClozeItem, Crossword, Game, Mech, MistakeItem, PluralItem, Review, Sources, VerbItem, WhoItem } from "./review";
+import { initialAnswer, isCorrect, wrongAnswers } from "./logic";
+import { unitText, type ClozeItem, type Crossword, type Game, type Mech, type MistakeItem, type PluralItem, type Review, type Sources, type VerbItem, type WhoItem } from "./review";
 import { RuleCard } from "./RuleCard";
 import type { Answer } from "./types";
 
@@ -419,16 +419,7 @@ function GameView({ game, seed, onFinish }: { game: Game; seed: string; onFinish
   );
 }
 
-/** Строка итога: у реплики и фразы замка ключ служебный, текст и перевод берём из источника. */
-function missedLine(unit: string, sources: Sources) {
-  const line = sources.lines[unit];
-  if (line) return { de: line.de, ru: line.ru };
-  const lock = sources.locks[unit];
-  if (lock) return { de: lockKey(lock.round), ru: lock.round.ru };
-  return { de: unit, ru: wordInfo(unit)?.ru ?? "" };
-}
-
-export type ReviewReason = "chapter" | "welcome" | "scene" | "manual" | "practice";
+export type ReviewReason = "chapter" | "welcome" | "scene" | "manual" | "practice" | "stubborn";
 const STORY_FRAME = {
   lede: "Три короткие игры. Ошибка вернёт слово или фразу раньше и ничего не отнимет.",
   skip: "Пропустить повторение",
@@ -440,6 +431,12 @@ const HEADINGS: Record<ReviewReason, { kicker: string; title: string; lede: stri
   welcome: { ...STORY_FRAME, kicker: "Разминка дня", title: "С возвращением в Киль" },
   scene: { ...STORY_FRAME, kicker: "Повторение перед сценой", title: "Чайка проверяет память" },
   manual: { ...STORY_FRAME, kicker: "Повторение", title: "Чайка проверяет память" },
+  stubborn: {
+    ...STORY_FRAME,
+    kicker: "Упрямые слова",
+    title: "Минута на трудные слова",
+    lede: "Несколько коротких игр на словах, которые чаще всего не вспоминаются. Ошибка вернёт слово раньше и ничего не отнимет.",
+  },
   practice: {
     kicker: "Тренировка",
     title: "Игры без сюжета",
@@ -492,7 +489,7 @@ export function SceneReview({
     setMissed([]);
     setDone(false);
   }
-  const units = review?.games.flatMap((g) => g.units) ?? [];
+  const units = [...new Set(review?.games.flatMap((g) => g.units))];
   return (
     <div className="moin-drill">
       <div className="kicker">{heading.kicker}</div>
@@ -522,7 +519,7 @@ export function SceneReview({
                 Это вернётся раньше:
                 <ul>
                   {[...new Set(missed)].map((unit) => {
-                    const { de, ru } = missedLine(unit, sources);
+                    const { de, ru } = unitText(unit, sources, wordInfo);
                     return (
                       <li key={unit}>
                         <span lang="de">{de}</span> — {ru}

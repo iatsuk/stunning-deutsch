@@ -1,7 +1,7 @@
 import { pairs } from "./build.ts";
 import { phrases } from "./data.ts";
 import { reviewTwenty } from "./twenty.ts";
-import { challengeWords } from "./logic.ts";
+import { challengeWords, lockKey } from "./logic.ts";
 import { dueWords, lockCard, type Cards, type Interval } from "./memory.ts";
 import { flatNodes } from "./scene.ts";
 import type { Beat, Challenge, LockRound, SceneNode } from "./types.ts";
@@ -440,13 +440,18 @@ export function warmupReview(warmups: Warmup[], lookup: Lookup): Review | null {
  * прошлого раунда идут последними, а трудные механики берут только окрепшие единицы. Каждая
  * единица попадает в раунд один раз.
  */
+/** Механики по кругу с места, которое задаёт seed: у разных раундов разное начало. */
+function rotated(seed: string): Mech[] {
+  const start = hash(seed) % MECHS.length;
+  return [...MECHS.slice(start), ...MECHS.slice(0, start)];
+}
+
 export function buildReview(cards: Cards, step: number, day: number, ctx: Context): Review | null {
   const due = dueUnits(cards, step, day);
   const focus = (ctx.focus ?? []).filter((u) => !due.includes(u) && cards[u]);
   let pool = [...due, ...focus].filter((u) => ctx.lookup(u) || ctx.sources.lines[u] || ctx.sources.locks[u]);
   if (!pool.length) return null;
-  const start = hash(ctx.seed) % MECHS.length;
-  const order = [...MECHS.slice(start), ...MECHS.slice(0, start)];
+  const order = rotated(ctx.seed);
   const recent = new Set(ctx.recent ?? []);
   const ranked = [...order.filter((m) => !recent.has(m)), ...order.filter((m) => recent.has(m))];
   const games: Game[] = [];
@@ -473,6 +478,44 @@ export function practiceReview(mech: Mech, units: string[], cards: Cards, ctx: C
     if (!built) break;
     games.push(built.game);
     pool = pool.filter((u) => !built.used.includes(u));
+  }
+  return games.length ? { games } : null;
+}
+
+/** Текст единицы для списков: у реплики и фразы замка ключ служебный, текст и перевод берём из источника. */
+export function unitText(unit: string, sources: Sources, lookup: Lookup) {
+  const line = sources.lines[unit];
+  if (line) return { de: line.de, ru: line.ru };
+  const lock = sources.locks[unit];
+  if (lock) return { de: lockKey(lock.round), ru: lock.round.ru };
+  return { de: unit, ru: lookup(unit)?.ru ?? "" };
+}
+
+/** Сколько упрямых слов показывает курс. */
+const STUBBORN = 5;
+
+/**
+ * Упрямые слова: не вспомнились хотя бы дважды и всё ещё лежат в нижних коробках. Окрепнув, слово уходит
+ * из списка; новая ошибка вернёт его в начало и в список. Первыми — с большим числом ошибок.
+ */
+export function stubbornUnits(cards: Cards): string[] {
+  return Object.keys(cards)
+    .filter((u) => (cards[u].miss ?? 0) >= 2 && cards[u].box <= 1)
+    .sort((a, b) => cards[b].miss! - cards[a].miss! || cards[a].box - cards[b].box)
+    .slice(0, STUBBORN);
+}
+
+/**
+ * Минута на упрямые слова: до трёх игр разных механик на одних и тех же единицах. Пять единиц в нижней
+ * коробке без повторов дали бы одну игру. Повторы безопасны: раунд оценивается как тренировка, по ошибкам.
+ */
+export function stubbornReview(units: string[], cards: Cards, ctx: Context): Review | null {
+  const pool = units.filter((u) => cards[u] && (ctx.lookup(u) || ctx.sources.lines[u] || ctx.sources.locks[u]));
+  const games: Game[] = [];
+  for (const mech of rotated(ctx.seed)) {
+    if (games.length === GAMES_PER_ROUND) break;
+    const built = build(mech, pool, cards, ctx);
+    if (built) games.push(built.game);
   }
   return games.length ? { games } : null;
 }

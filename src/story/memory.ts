@@ -37,7 +37,10 @@ export function remember(
   return next;
 }
 
-/** Итог раунда: слово с ошибкой возвращается в начало, остальные идут дальше. */
+/**
+ * Итог раунда: слово с ошибкой возвращается в начало, остальные идут дальше. Ошибки копятся в счётчике:
+ * единица, пропущенная в двух играх раунда, считается один раз.
+ */
 export function grade(
   cards: Cards,
   words: string[],
@@ -47,14 +50,16 @@ export function grade(
   intervals: Interval[],
 ): Cards {
   const next = { ...cards };
-  for (const word of words)
+  for (const word of new Set(words)) {
+    const wrong = missed.includes(word);
+    const miss = (next[word]?.miss ?? 0) + (wrong ? 1 : 0);
     next[word] = {
-      box: missed.includes(word)
-        ? 0
-        : Math.min((next[word]?.box ?? 0) + 1, intervals.length - 1),
+      box: wrong ? 0 : Math.min((next[word]?.box ?? 0) + 1, intervals.length - 1),
       step,
       day,
+      ...(miss ? { miss } : {}),
     };
+  }
   return next;
 }
 

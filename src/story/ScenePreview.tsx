@@ -10,7 +10,7 @@ import { beatPhrases, initialAnswer, isCorrect } from "./logic";
 import { migrate, sceneAt, toIds, toKeys, type Layout } from "./progress";
 import pastLayouts from "./scene-layouts.json";
 import { dayNumber, grade, remember, type Cards } from "./memory";
-import { buildReview, dueUnits, MIN_DUE, reviewSources, SCENE_INTERVALS, sceneUnits, warmupReview, WELCOME_ROUNDS, type Mech } from "./review";
+import { buildReview, dueUnits, MIN_DUE, reviewSources, SCENE_INTERVALS, sceneUnits, stubbornReview, stubbornUnits, unitText, warmupReview, WELCOME_ROUNDS, type Context, type Mech } from "./review";
 import { SceneReview, type ReviewReason } from "./ReviewView";
 import { playedGames, practiceGrade } from "./practice";
 import { PracticeView } from "./PracticeView";
@@ -257,23 +257,27 @@ export function ScenePreview({ training = false }: { training?: boolean }) {
             ? "scene"
             : null;
   const reason = reviewing ?? auto;
+  const stubborn = stubbornUnits(save.cards);
+  const ctx: Context = {
+    lookup: wordInfo,
+    sources,
+    words: gameWords,
+    seed: `${count}-${today}-${Object.keys(save.cards).length}-${save.recent.join(",")}`,
+    recent: save.recent,
+    chapter: ci + 1,
+    focus:
+      reason === "chapter" && ci > 0
+        ? chapters[ci - 1].beats.flatMap((b) => sceneUnits(b, wordInfo))
+        : undefined,
+  };
   // Перед главой — постоянный раунд, одинаковый для всех; если его нет, раунд из прошлой главы.
   const warmup = reason === "chapter" && WARMUPS[ci + 1] ? warmupReview(WARMUPS[ci + 1], wordInfo) : null;
   const review = warmup
     ? warmup
+    : reason === "stubborn"
+    ? stubbornReview(stubborn, save.cards, ctx)
     : reason
-    ? buildReview(save.cards, count, today, {
-        lookup: wordInfo,
-        sources,
-        words: gameWords,
-        seed: `${count}-${today}-${Object.keys(save.cards).length}-${save.recent.join(",")}`,
-        recent: save.recent,
-        chapter: ci + 1,
-        focus:
-          reason === "chapter" && ci > 0
-            ? chapters[ci - 1].beats.flatMap((b) => sceneUnits(b, wordInfo))
-            : undefined,
-      })
+    ? buildReview(save.cards, count, today, ctx)
     : null;
   const reviewOpen = !!reason && (!!review || !!reviewing);
   function closeReview() {
@@ -457,7 +461,7 @@ export function ScenePreview({ training = false }: { training?: boolean }) {
                   reason={reason!}
                   rounds={reason === "welcome" ? WELCOME_ROUNDS : 1}
                   sources={sources}
-                  onGrade={gradeReview}
+                  onGrade={reason === "stubborn" ? (_, missed) => gradePractice(missed) : gradeReview}
                   onClose={closeReview}
                 />
               ) : (
@@ -598,6 +602,31 @@ export function ScenePreview({ training = false }: { training?: boolean }) {
               }}>
                 Тренировка
               </button>
+            )}
+            {stubborn.length > 0 && (
+              <>
+                <div className="kicker">Упрямые слова</div>
+                <ul>
+                  {stubborn.map((unit) => {
+                    const { de, ru } = unitText(unit, sources, wordInfo);
+                    return (
+                      <li key={unit}>
+                        <span lang="de">{de}</span> — {ru}
+                      </li>
+                    );
+                  })}
+                </ul>
+                {!reviewOpen && (
+                  <button type="button" className="link-button" onClick={() => {
+                    stopAudio();
+                    setPracticing(false);
+                    setReviewing("stubborn");
+                    window.scrollTo({ top: 0 });
+                  }}>
+                    Минута на них
+                  </button>
+                )}
+              </>
             )}
             <p className="moin-route-note">
               Действий в сценах:{" "}

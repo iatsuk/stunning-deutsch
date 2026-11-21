@@ -4,7 +4,7 @@ import test from "node:test";
 import { phrases } from "../src/story/data.ts";
 import { isCorrect, lockKey, solution, validateChallenge } from "../src/story/logic.ts";
 import { grade } from "../src/story/memory.ts";
-import { buildReview, MECHS, pluralTraps, practiceMechs, practiceReview, reviewSources, SCENE_INTERVALS, sceneUnits, warmupReview } from "../src/story/review.ts";
+import { buildReview, MECHS, pluralTraps, practiceMechs, practiceReview, reviewSources, SCENE_INTERVALS, sceneUnits, stubbornReview, stubbornUnits, warmupReview } from "../src/story/review.ts";
 import { sceneChapters } from "../src/story/scenes/index.ts";
 import { RETURNS, WARMUPS } from "../src/story/scenes/warmups.ts";
 import { VERBS } from "../src/story/verbs.ts";
@@ -184,4 +184,26 @@ test("practice offers only mechanics that build a round", () => {
   }
   assert.deepEqual(practiceMechs([], cards, context), []);
   assert.deepEqual(practiceMechs(units, {}, context), []);
+});
+
+test("stubborn words: missed twice and still weak, most misses first, gone once learned", () => {
+  const cards = {
+    a: { box: 0, step: 0, day: 0, miss: 2 },
+    b: { box: 1, step: 0, day: 0, miss: 4 },
+    c: { box: 2, step: 0, day: 0, miss: 6 },
+    d: { box: 0, step: 0, day: 0, miss: 1 },
+    e: { box: 0, step: 0, day: 0 },
+  };
+  assert.deepEqual(stubbornUnits(cards), ["b", "a"]);
+});
+
+test("a stubborn round plays only those units, in several games", () => {
+  const units = unitsOf(4).filter((u) => lookup(u)).slice(0, 5);
+  const cards = Object.fromEntries(unitsOf(4).map((u) => [u, { box: 0, step: 0, day: 0, ...(units.includes(u) ? { miss: 2 } : {}) }]));
+  assert.deepEqual(stubbornUnits(cards).sort(), [...units].sort());
+  for (const seed of ["a", "b", "c", "d", "e"]) {
+    const review = stubbornReview(units, cards, ctx(seed));
+    assert.ok(review && review.games.length >= 2, `${seed}: ${review?.games.map((g) => g.mech)}`);
+    for (const u of review.games.flatMap((g) => g.units)) assert.ok(units.includes(u), u);
+  }
 });

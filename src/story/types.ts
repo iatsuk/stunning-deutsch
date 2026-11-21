@@ -390,4 +390,8 @@ export type Episode = {
 export type Answer = string | string[] | Record<string, string | number>;
 /** Когда слово встречали в последний раз: шаг истории и календарный день. */
 export type Mark = { step: number; day: number };
-export type WordCard = Mark & { box: number };
+export type WordCard = Mark & {
+  box: number;
+  /** Сколько раз единица не вспомнилась: по этому числу находятся упрямые слова. */
+  miss?: number;
+};

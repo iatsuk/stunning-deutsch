@@ -49,3 +49,11 @@ test("a local day changes at midnight", () => {
   assert.equal(dayNumber(night), dayNumber(evening) + 1);
   assert.equal(dayNumber(morning), dayNumber(night));
 });
+test("misses add up, survive right answers and count once per round", () => {
+  let cards = remember({}, ["a", "b"], 0, 0);
+  cards = grade(cards, ["a", "a", "b"], ["a", "a"], 1, 1, SCENE_INTERVALS);
+  assert.equal(cards.a.miss, 1);
+  assert.equal("miss" in cards.b, false);
+  cards = grade(cards, ["a"], [], 2, 2, SCENE_INTERVALS);
+  assert.deepEqual(cards.a, { box: 1, step: 2, day: 2, miss: 1 });
+});
