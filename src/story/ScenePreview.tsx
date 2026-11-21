@@ -16,6 +16,8 @@ import { playedGames, practiceGrade } from "./practice";
 import { PracticeView } from "./PracticeView";
 import { flatNodes, germanBefore, keyOf, nodeAt, sceneRules, shownWords, worldAfter } from "./scene";
 import { RuleCard } from "./RuleCard";
+import { caseNotes, dossier } from "./casebook";
+import { CaseNotes, Dossier, NoteList } from "./CaseView";
 import { sceneChapters } from "./scenes";
 import { WARMUPS } from "./scenes/warmups";
 import type { Answer, Mark, SceneNode } from "./types";
@@ -45,6 +47,9 @@ const saveOn = (key: string, on: boolean) => {
   }
 };
 const chapters = sceneChapters;
+/** Вкладки блокнота: текущая глава, всё дело по главам, досье героев. */
+const NOTEBOOK_TABS = [["chapter", "Глава"], ["case", "Всё дело"], ["dossier", "Досье"]] as const;
+type NotebookTab = (typeof NOTEBOOK_TABS)[number][0];
 const scenes = chapters.flatMap((c) => c.beats);
 const sceneIds = scenes.map((b) => b.id);
 /** Первая сцена главы в общем списке. */
@@ -164,6 +169,7 @@ export function ScenePreview({ training = false }: { training?: boolean }) {
   // Где нужно говорить вслух, можно отвечать письменно: например, в офисе.
   const [quiet, setQuiet] = useState(() => readOn(QUIET));
   const [slow, setSlow] = useState(() => readOn(SLOW));
+  const [tab, setTab] = useState<NotebookTab>("chapter");
   useEffect(() => {
     setPlaybackRate(slow ? SLOW_RATE : 1);
     return () => setPlaybackRate(1);
@@ -228,15 +234,8 @@ export function ScenePreview({ training = false }: { training?: boolean }) {
   ];
   const now = worldBefore(scenes.length);
   // Блокнот и инвентарь собираются из пройденных узлов всех сцен.
-  const gains = chapter.beats.flatMap((s) =>
-    (save.drafts[s.id] ?? []).flatMap((entry) => {
-      const node =
-        s.challenge.kind === "play"
-          ? nodeAt(s.challenge.nodes, keyOf(entry))
-          : undefined;
-      return node && (node.t === "clue" || node.t === "item") ? [node] : [];
-    }),
-  );
+  const notes = caseNotes(chapters, save.drafts);
+  const gains = notes.find((g) => g.chapter === ci + 1)?.notes ?? [];
 
   // Повторение: перед главой — прошлая глава; за новый день — разминка; перед новой сценой —
   // если накопилось. Только перед нетронутой сценой: начатую сцену раунд не прерывает.
@@ -537,6 +536,17 @@ export function ScenePreview({ training = false }: { training?: boolean }) {
           </section>
           <aside className="moin-preview-notebook">
             <div className="kicker">Блокнот и инвентарь</div>
+            <div className="moin-notebook-tabs" role="group" aria-label="Что показать в блокноте">
+              {NOTEBOOK_TABS.map(([id, label]) => (
+                <button type="button" key={id} aria-pressed={tab === id} onClick={() => setTab(id)}>
+                  {label}
+                </button>
+              ))}
+            </div>
+            {tab === "case" && <CaseNotes groups={notes} chapters={chapters} />}
+            {tab === "dossier" && <Dossier heroes={dossier(chapters, save.drafts)} />}
+            {tab === "chapter" && (
+            <>
             {Object.entries(now).some(([q, v]) => v > 0 && TRACKS[q]) && (
               <ul className="moin-play-tracks">
                 {Object.entries(now)
@@ -554,21 +564,7 @@ export function ScenePreview({ training = false }: { training?: boolean }) {
               </ul>
             )}
             {gains.length ? (
-              <ul>
-                {gains.map((n, i) => (
-                  <li key={i}>
-                    {n.t === "clue" ? (
-                      <>
-                        <b>{n.title}.</b> {n.text}
-                      </>
-                    ) : (
-                      <>
-                        {n.icon} <span lang="de">{n.de}</span> — {n.ru}
-                      </>
-                    )}
-                  </li>
-                ))}
-              </ul>
+              <NoteList notes={gains} />
             ) : (
               <p>Пока пусто. Улики и предметы появятся по ходу сцен.</p>
             )}
@@ -579,6 +575,8 @@ export function ScenePreview({ training = false }: { training?: boolean }) {
                   <RuleCard key={id} id={id} open={false} />
                 ))}
               </>
+            )}
+            </>
             )}
             <div className="kicker">Повторение</div>
             <p className="moin-route-note">

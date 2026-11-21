@@ -1542,6 +1542,35 @@
 .moin-preview-notebook li + li {
   margin-top: 8px;
 }
+/* Вкладки блокнота: глава, всё дело, досье. */
+.moin-notebook-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 10px 0 4px;
+}
+.moin-notebook-tabs button {
+  padding: 4px 10px;
+  border: 1px solid #3a464b;
+  border-radius: 999px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 12.5px;
+  cursor: pointer;
+}
+.moin-notebook-tabs button[aria-pressed="true"] {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.moin-notebook-group h3 {
+  margin: 16px 0 0;
+  font-size: 13px;
+  font-weight: 650;
+}
+.moin-notebook-group small {
+  color: var(--muted);
+}
 .moin-play {
   display: grid;
   gap: 12px;
