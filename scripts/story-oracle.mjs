@@ -2,7 +2,7 @@
 // Предмет берётся из словаря урока главы, поэтому поворот сам вводит в сюжет слова урока.
 // Результат — заготовка для автора, а не готовый текст: его ещё нужно увязать с сюжетом.
 //
-//   node scripts/story-oracle.mjs --chapter 5 [--rolls 2] [--seed 1793800000]
+//   node scripts/story-oracle.mjs --chapter 5 [--rolls 2] [--seed 1793800000] [--level a2]
 //
 // По умолчанию seed — Unix-время в секундах: так каждый бросок уникален (правило автора).
 // Несколько бросков подряд делайте одним запуском с --rolls, иначе в одну секунду seed совпадёт.
@@ -19,6 +19,7 @@ const arg = (name, fallback) => {
   return i > 0 ? process.argv[i + 1] : fallback;
 };
 const chapter = Number(arg("chapter", "1"));
+const level = arg("level", "a1");
 const rolls = Number(arg("rolls", "1"));
 const seed = Number(arg("seed", String(Math.floor(Date.now() / 1000))));
 
@@ -55,8 +56,10 @@ const VERB = [
   "подслушать", "неверно перевести", "унести", "вернуть", "подарить", "забыть", "пообещать",
   "отказаться", "прийти не туда", "заблудиться", "промокнуть", "отпраздновать",
 ];
-/** Кто запускает поворот: ансамбль второстепенных героев и маскот. */
+/** Кто запускает поворот: ансамбль второстепенных героев и маскот курса A1. */
 const WHO = ["чайка", "Нильс", "Фрауке", "Хауке", "Матео", "Элиф", "Дана", "Йенсен", "Петерсен", "Грета"];
+/** Ансамбль сезона A2 (A2-PLOT.md, «Ансамбль A2»): герои A1 и новые лица сезона. */
+const WHO_A2 = [...WHO, "Лука", "фрау Брандт", "Свенья Лоренцен", "хозяйка комнаты", "учитель курса"];
 /** Сила поворота на d20, как в настольных играх: от обратного эффекта до гиперболы. */
 const power = (n) =>
   n === 1
@@ -85,16 +88,35 @@ function lessonNouns(n) {
     .filter((de) => /^(der|die|das) /.test(de));
 }
 
-const nouns = lessonNouns(chapter);
+/**
+ * Существительные главы сезона A2 из раскладки content/reference/a2-chapters.yaml. У главы 13 своих слов
+ * нет: это экзамен по всему сезону, и предмет берётся из существительных всего плана.
+ */
+function planNouns(n) {
+  const { chapters } = parse(readFileSync(path.join(root, "content/reference/a2-chapters.yaml"), "utf8"));
+  const words = (c) => c.words.map((w) => (typeof w === "string" ? w : w.de));
+  const own = words(chapters.find((c) => c.chapter === n) ?? { words: [] });
+  return (own.length ? own : chapters.flatMap(words)).filter((de) => /^(der|die|das) /.test(de));
+}
+
+/** Уровень задаёт ансамбль и словарь предмета; без --level — курс A1, как раньше. */
+const LEVELS = {
+  a1: { who: WHO, nouns: lessonNouns, subject: "Предмет из урока" },
+  a2: { who: WHO_A2, nouns: planNouns, subject: "Предмет из плана главы" },
+};
+const at = LEVELS[level];
+if (!at) throw new Error(`Уровень ${level} не знаком: ${Object.keys(LEVELS).join(", ")}`);
+
+const nouns = at.nouns(chapter);
 console.log(`Глава ${chapter} · seed ${seed}`);
 for (let i = 1; i <= rolls; i++) {
   console.log(
     [
       `\nБросок ${i}`,
       `  Фокус (d${FOCUS.length}): ${pick(FOCUS)}`,
-      `  Кто (d${WHO.length}): ${pick(WHO)}`,
+      `  Кто (d${at.who.length}): ${pick(at.who)}`,
       `  Действие (d${VERB.length}): ${pick(VERB)}`,
-      `  Предмет из урока (d${nouns.length}): ${pick(nouns)}`,
+      `  ${at.subject} (d${nouns.length}): ${pick(nouns)}`,
       `  Сила (d20): ${power(die(20))}`,
     ].join("\n"),
   );
