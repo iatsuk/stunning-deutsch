@@ -241,6 +241,38 @@ export const MNEMONICS: Record<string, string> = {
     "Внутри spät («поздно»): когда поезд или Хауке приходит поздно — это опоздание. Окончание -ung даёт род: die Verspätung.",
   bestanden:
     "От bestehen («выстоять», от stehen — стоять): устояли на экзамене — значит, сдали! Die Prüfung ist bestanden.",
+
+  // Трудные слова уроков A1: созвучия, составные слова и ловушки рода
+  "das Ohr": "Ohr — «ор»: ор прямо в ухо. Ухо — das Ohr.",
+  "das Brot": "Brot — как в «бутерброде» (das Butterbrot): хлеб с маслом. Хлеб — das Brot.",
+  "das Frühstück": "früh — рано + das Stück — кусок: первый кусок утром. Род — от Stück: das Frühstück.",
+  "der Urlaub": "Urlaub — «ура!»: отпуск начинается с крика «ура». Отпуск — der Urlaub.",
+  "die Eltern": "Eltern — от älter, «старше»: родители — те, кто старше. Только множественное: die Eltern.",
+  "das Wetter": "Wetter — «ветер»: какая будет погода, решает ветер. Погода — das Wetter.",
+  "der Termin": "Termin — как «терминатор»: приходит ровно в назначенное время. Запись к врачу — der Termin.",
+  "das Zimmer": "Zimmer — «зимой»: зимой все сидят по комнатам. Комната — das Zimmer.",
+  "der Schrank": "Schrank — «шкаф» с немецким «р»: шкаф-шранк, и род тот же — der Schrank.",
+  "der Kühlschrank": "kühl — прохладный + der Schrank — шкаф: холодильник — прохладный шкаф. Род — от Schrank: der.",
+  "der Bahnhof": "die Bahn — железная дорога + der Hof — двор: вокзал — двор поездов. Род — от Hof: der Bahnhof.",
+  "die Fahrkarte": "fahren — ехать + die Karte — карточка: билет — карточка на поездку. Род — от Karte: die.",
+  "der Arzt": "Arzt — от греческого «архиатр», главный врач. Врач — der Arzt, женщина-врач — die Ärztin.",
+  "der Kopf": "Kopf — «копна»: копна волос на голове. Голова — der Kopf.",
+  "der Bauch": "Bauch — «брюхо» с немецким акцентом: брюх-баух. Живот — der Bauch.",
+  teuer: "teuer — «тю-у-уер!»: так ахают, увидев цену. Дорогой — teuer.",
+  "die Tasche": "Tasche — «таскать»: в сумке таскают всё подряд. Сумка — die Tasche.",
+  "das Ei": "Ei — «ай!»: уронил яйцо. Яйцо — das Ei, яйца — die Eier.",
+  "die Wohnung": "wohnen — жить + -ung: квартира — где живут. Слова на -ung всегда женского рода: die Wohnung.",
+  "der Stuhl": "Stuhl — почти «стул», и род тот же: der Stuhl.",
+  "der Hund": "Hund — как английское hound, гончая. Собака по-немецки — он: der Hund.",
+  arbeiten: "arbeiten и «работа» — дальние родственники: оба слова от древнего корня о тяжёлом труде.",
+  "der Beruf": "Beruf — от rufen, «звать»: профессия — то, к чему тебя позвали, призвание. der Beruf.",
+  "die Haltestelle": "halten — остановиться + die Stelle — место: остановка. Род — от Stelle: die Haltestelle.",
+  geradeaus: "gerade — прямо + aus — наружу: иди прямо, никуда не сворачивая.",
+  "die Kartoffel": "Kartoffel — «картофель»: русское слово пришло из немецкого. Одна картофелина — die Kartoffel.",
+  "der Monat": "Monat — от der Mond, луна: месяц длится от луны до луны. der Monat.",
+  morgen: "morgen — завтра, а der Morgen — утро: завтра начинается с утра.",
+  nie: "nie — «ни-ни»: никогда и ни за что.",
+  "die Farbe": "Farbe — «фарба»: в украинском и польском так зовут краску, слово пришло из немецкого. Цвет и краска — die Farbe.",
 };
 
 export const mnemonic = (de: string) => MNEMONICS[de];
