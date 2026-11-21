@@ -295,6 +295,11 @@ export function ScenePreview({ training = false }: { training?: boolean }) {
       chapters: was === "chapter" && !s.chapters.includes(chapter.id) ? [...s.chapters, chapter.id] : s.chapters,
     }));
   }
+  // Минута на упрямые слова — тренировка: отметку повторения она не двигает, иначе пропал бы раунд перед сценой.
+  function closeStubborn() {
+    stopAudio();
+    setReviewing(null);
+  }
   function gradeReview(units: string[], missed: string[], mechs: Mech[]) {
     setReviewing(reason);
     setSave((s) => ({
@@ -467,7 +472,7 @@ export function ScenePreview({ training = false }: { training?: boolean }) {
                   rounds={reason === "welcome" ? WELCOME_ROUNDS : 1}
                   sources={sources}
                   onGrade={reason === "stubborn" ? (_, missed) => gradePractice(missed) : gradeReview}
-                  onClose={closeReview}
+                  onClose={reason === "stubborn" ? closeStubborn : closeReview}
                 />
               ) : (
               <>
