@@ -11,6 +11,16 @@ import type { Challenge, Episode, SceneNode } from "./types.ts";
  */
 export const practiceGrade = (cards: Cards, missed: string[], step: number, day: number) =>
   grade(cards, missed, missed, step, day, SCENE_INTERVALS);
+
+/**
+ * Ошибка в игре возвращения внутри сцены: слово прошлых глав не вспомнилось. Оценка как в тренировке, но в
+ * одной сцене ошибка на слове считается один раз: пока игра не пройдена, игрок может промахнуться снова.
+ */
+export function returnMiss(cards: Cards, word: string, step: number, day: number): Cards {
+  const card = cards[word];
+  if (!card || (card.box === 0 && card.step === step && card.day === day)) return cards;
+  return practiceGrade(cards, [word], step, day);
+}
 export const KIND_NAMES: Record<Challenge["kind"], string> = {
   play: "Сцена", order: "Порядок слов", match: "Пары", quantity: "Отмерить", code: "Набор номера",
   chat: "Чат", verdict: "Верно или нет", gaps: "Пропуски", sort: "По группам", spot: "Найди в тексте",

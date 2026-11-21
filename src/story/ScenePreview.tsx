@@ -12,7 +12,7 @@ import pastLayouts from "./scene-layouts.json";
 import { dayNumber, grade, longTerm, remember, type Cards } from "./memory";
 import { buildReview, dueUnits, MIN_DUE, reviewSources, SCENE_INTERVALS, sceneUnits, stubbornReview, stubbornUnits, unitText, warmupReview, WELCOME_ROUNDS, type Context, type Mech } from "./review";
 import { SceneReview, type ReviewReason } from "./ReviewView";
-import { playedGames, practiceGrade } from "./practice";
+import { playedGames, practiceGrade, returnMiss } from "./practice";
 import { PracticeView } from "./PracticeView";
 import { flatNodes, germanBefore, keyOf, nodeAt, sceneRules, shownWords, worldAfter } from "./scene";
 import { RuleCard } from "./RuleCard";
@@ -498,7 +498,12 @@ export function ScenePreview({ training = false }: { training?: boolean }) {
                     },
                     ),
                   win: () => undefined,
-                  miss: () => undefined,
+                  miss: (word) => {
+                    if (word) setSave((s) => {
+                      const cards = returnMiss(s.cards, word, solvedCount(s), dayNumber());
+                      return cards === s.cards ? s : { ...s, cards };
+                    });
+                  },
                   quiet,
                 }}
               />

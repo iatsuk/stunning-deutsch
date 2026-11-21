@@ -431,7 +431,8 @@ export function SceneView({
                 slot={slots.get(here.key)}
                 miss={(word) => {
                   setMissAt(here.key);
-                  miss(word);
+                  // Наружу идут только ошибки игр возвращения: ошибка на новом слове — часть знакомства с ним.
+                  if (here.node.t === "game" && here.node.back) miss(word);
                 }}
                 rich={rich}
                 quiet={quiet}

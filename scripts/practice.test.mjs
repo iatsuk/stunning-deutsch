@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { KIND_NAMES, metChapters, playedGames, practiceGrade } from "../src/story/practice.ts";
+import { KIND_NAMES, metChapters, playedGames, practiceGrade, returnMiss } from "../src/story/practice.ts";
 import { flatNodes, nodeAt, sceneKeys } from "../src/story/scene.ts";
 import { sceneChapters } from "../src/story/scenes/index.ts";
 
@@ -60,3 +60,13 @@ test("practice brings a missed unit back sooner, counts the miss and leaves a ri
   assert.deepEqual(next["das Boot"], cards["das Boot"]);
   assert.deepEqual(next["die Möwe"], { box: 0, step: 5, day: 9, miss: 1 });
 });
+
+test("a word missed in a return game comes back sooner, once per scene, and only if the player has met it", () => {
+  const cards = { "das Boot": { box: 3, step: 1, day: 1 } };
+  const once = returnMiss(cards, "das Boot", 5, 9);
+  assert.deepEqual(once["das Boot"], { box: 0, step: 5, day: 9, miss: 1 });
+  assert.equal(returnMiss(once, "das Boot", 5, 9), once);
+  assert.equal(returnMiss(once, "das Boot", 6, 9)["das Boot"].miss, 2);
+  assert.equal(returnMiss(cards, "die Möwe", 5, 9), cards);
+});
+

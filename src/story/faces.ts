@@ -23,6 +23,7 @@ export const FACES: { who: string; file: string; moods: ("neutral" | Mood)[] }[]
   { who: "Frau Yilmaz", file: "yilmaz", moods: ALL },
   { who: "Luca", file: "luca", moods: ALL },
   { who: "Herr Wulff", file: "wulff", moods: ALL },
+  { who: "Opa Hansen", file: "opa", moods: ALL },
 ];
 
 /** «Mateo am Telefon» и «Nils, Nachricht» — тот же герой. */
