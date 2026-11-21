@@ -25,6 +25,7 @@ import {
   placeKey,
 } from "./logic";
 import { lockCard, PLURALS } from "./memory";
+import { sound } from "./sfx";
 import type {
   Answer,
   ChatTurn,
@@ -306,7 +307,10 @@ export function Verdict({
                   data-stamp={stamp}
                   aria-pressed={record[item.id] === stamp}
                   disabled={disabled}
-                  onClick={() => change({ ...record, [item.id]: stamp })}
+                  onClick={() => {
+                    sound("stamp");
+                    change({ ...record, [item.id]: stamp });
+                  }}
                 >
                   {c.labels[i]}
                 </button>
@@ -699,7 +703,10 @@ export function Coins({ c, value, disabled, change }: Game<"coins">) {
             className="moin-coin"
             disabled={disabled}
             aria-label={`Добавить ${coinLabel(coin)}`}
-            onClick={() => change({ ...record, [coin]: count(coin) + 1 })}
+            onClick={() => {
+              sound("coin");
+              change({ ...record, [coin]: count(coin) + 1 });
+            }}
           >
             {coinLabel(coin)}
           </button>
@@ -1595,6 +1602,7 @@ export function Gull({
       </div>
     );
   const lose = (message: string) => {
+    sound("gull");
     setNote(message);
     setTone("bad");
     setLost((n) => n + 1);
@@ -1663,6 +1671,7 @@ function LockBox({
   const [right, setRight] = useState<number | null>(null);
   const opened = right === reels.length;
   function spin(reel: number, by: number) {
+    sound("click");
     const size = reels[reel].length;
     setAt(at.map((n, i) => (i === reel ? (n + by + size) % size : n)));
     setRight(null);

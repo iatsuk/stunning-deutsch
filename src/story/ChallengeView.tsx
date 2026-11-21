@@ -54,6 +54,7 @@ import {
   Weather,
 } from "./minigames";
 import { SceneView } from "./SceneView";
+import { sound } from "./sfx";
 import type { Answer, Challenge } from "./types";
 import type { World } from "./world";
 /** Эти игры завершаются сами: кнопка проверки там не нужна. */
@@ -255,9 +256,11 @@ export function ChallengeView({
               autoComplete="off"
               disabled={disabled}
               value={typeof shown === "string" ? shown : ""}
-              onChange={(e) =>
-                change(e.target.value.replace(/\D/g, "").slice(0, c.length))
-              }
+              onChange={(e) => {
+                const digits = e.target.value.replace(/\D/g, "").slice(0, c.length);
+                if (digits.length > (typeof shown === "string" ? shown.length : 0)) sound("key");
+                change(digits);
+              }}
               maxLength={c.length}
             />
           </label>

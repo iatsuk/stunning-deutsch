@@ -7,6 +7,7 @@ import { nounAudio, storyAudio, wordInfo } from "./audio";
 import { Gendered, Note, RouteMap, useQueue, walkAngle, type Game } from "./games";
 import { budgetCheck, compoundOf, craftKey, craftMiss, decipher, floorLabel, gridKey, MOVES, NARRATOR, placeKey, plannerWho, proofSegments, pronounOf, protocolSlots, radioLine, retellSlots, springRight, tailCuts, treeSlots, twentyState, walk } from "./logic";
 import { answerOf, excludes } from "./twenty";
+import { sound } from "./sfx";
 import type { Answer, ComicPanel, Move, PortraitPart, SpringRound, TreeNode, TreeSlot } from "./types";
 
 // Мини-игры управляются нажатием и с клавиатуры, а ошибка только даёт подсказку.
@@ -170,6 +171,7 @@ export function Lift({ c, value, disabled, change, win, miss }: Game<"lift">) {
       setTone("bad");
       return setNote(`Это ${floorLabel(floor)}: ${russian(floor)}. Послушайте жильца ещё раз.`);
     }
+    sound("ding");
     const next = [...done, String(floor)];
     setTone("good");
     setNote(`${floorLabel(floor)}: ${russian(floor)}.`);

@@ -27,6 +27,7 @@ import {
 import type { Answer, Challenge, Pick, SceneNode } from "./types";
 import { mnemonic } from "./mnemonics";
 import { RuleCard } from "./RuleCard";
+import { sound, VOICE_KEY, voiceOn } from "./sfx";
 import { effectText, holds, TRACKS, type World } from "./world";
 
 // Сцена: разговор и осмотр места, в который вплетены действия. Сцена помещается на экран:
@@ -42,14 +43,6 @@ type Play = Extract<Challenge, { kind: "play" }>;
 /** Текст с немецкими единицами; known — что игрок уже видел: такие единицы без перевода. */
 type Rich = (s: string, known?: Set<string>) => ReactNode;
 
-const VOICE_KEY = "sd-moin-voice";
-function readVoice() {
-  try {
-    return localStorage.getItem(VOICE_KEY) !== "off";
-  } catch {
-    return true;
-  }
-}
 
 export function SceneView({
   c,
@@ -77,7 +70,7 @@ export function SceneView({
   // Мир к этому моменту: что было до сцены и последствия уже пройденных узлов.
   const state = worldAfter(c.nodes, entries, world);
   const [open, setOpen] = useState<string>();
-  const [voice, setVoice] = useState(readVoice);
+  const [voice, setVoice] = useState(voiceOn);
   // Прошлое действие, которое игрок открыл ячейкой; без него виден текущий момент.
   const [view, setView] = useState<number>();
   const [notesOpen, setNotesOpen] = useState(false);
@@ -111,6 +104,7 @@ export function SceneView({
     const next = advance(...added);
     setBatch(added.map(keyOf));
     if (!voice) return;
+    if (added.some((e) => ["clue", "item"].includes(nodeAt(c.nodes, keyOf(e))?.t ?? ""))) sound("rustle");
     const after = spot(c.nodes, next, undefined, worldAfter(c.nodes, next, world));
     const lines = added.flatMap((e) => {
       const n = nodeAt(c.nodes, keyOf(e));
