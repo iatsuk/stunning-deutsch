@@ -459,3 +459,25 @@ export function buildReview(cards: Cards, step: number, day: number, ctx: Contex
   }
   return games.length ? { games } : null;
 }
+
+/**
+ * Раунд тренировки (A1-PLAN.md, «Тренировка»): до трёх игр одной механики на встреченных единицах.
+ * Единицы уникальны, перемешаны по seed и между играми не повторяются: иначе grade() поднял бы одну
+ * единицу на несколько коробок за раунд.
+ */
+export function practiceReview(mech: Mech, units: string[], cards: Cards, ctx: Context): Review | null {
+  let pool = shuffle([...new Set(units)].filter((u) => cards[u] && (ctx.lookup(u) || ctx.sources.lines[u] || ctx.sources.locks[u])), ctx.seed);
+  const games: Game[] = [];
+  for (let i = 0; i < GAMES_PER_ROUND; i++) {
+    const built = build(mech, pool, cards, ctx);
+    if (!built) break;
+    games.push(built.game);
+    pool = pool.filter((u) => !built.used.includes(u));
+  }
+  return games.length ? { games } : null;
+}
+
+/** Механики, из которых тренировка с этим seed соберёт хотя бы одну игру. */
+export function practiceMechs(units: string[], cards: Cards, ctx: Context): Mech[] {
+  return MECHS.filter((m) => practiceReview(m, units, cards, ctx));
+}

@@ -12,6 +12,8 @@ import pastLayouts from "./scene-layouts.json";
 import { dayNumber, grade, remember, type Cards } from "./memory";
 import { buildReview, dueUnits, MIN_DUE, reviewSources, SCENE_INTERVALS, sceneUnits, warmupReview, WELCOME_ROUNDS, type Mech } from "./review";
 import { SceneReview, type ReviewReason } from "./ReviewView";
+import { playedGames, practiceGrade } from "./practice";
+import { PracticeView } from "./PracticeView";
 import { flatNodes, germanBefore, keyOf, nodeAt, sceneRules, shownWords, worldAfter } from "./scene";
 import { RuleCard } from "./RuleCard";
 import { sceneChapters } from "./scenes";
@@ -135,6 +137,7 @@ function load(): Save {
 export function ScenePreview() {
   useTitle("Дело о пропавшем Moin · Курс A1 · Stunning Deutsch");
   const [save, setSave] = useState(load);
+  const [practicing, setPracticing] = useState(false);
   // Открытое повторение держится до закрытия: после оценки очередь короче, но итог раунда виден.
   const [reviewing, setReviewing] = useState<ReviewReason | null>(null);
   const ci = chapterOf(save.at);
@@ -270,8 +273,13 @@ export function ScenePreview() {
     }));
   }
 
+  function gradePractice(missed: string[]) {
+    setSave((s) => ({ ...s, cards: practiceGrade(s.cards, missed, solvedCount(s), dayNumber()) }));
+  }
+
   function go(at: number) {
     stopAudio();
+    setPracticing(false);
     setReviewing(null);
     setSave((s) => ({ ...s, at }));
     window.scrollTo({ top: 0 });
@@ -399,7 +407,24 @@ export function ScenePreview() {
               Не могу говорить вслух — отвечаю письменно
             </label>
             <div className="moin-turn">
-              {reviewOpen ? (
+              {practicing ? (
+                <PracticeView
+                  drafts={save.drafts}
+                  cards={save.cards}
+                  chapters={chapters}
+                  lookup={wordInfo}
+                  sources={sources}
+                  words={gameWords}
+                  rich={rich}
+                  quiet={quiet}
+                  onGrade={(_, missed) => gradePractice(missed)}
+                  onClose={() => {
+                    stopAudio();
+                    setPracticing(false);
+                    window.scrollTo({ top: 0 });
+                  }}
+                />
+              ) : reviewOpen ? (
                 <SceneReview
                   key={`${reason}-${save.at}`}
                   next={review}
@@ -463,6 +488,7 @@ export function ScenePreview() {
                 onClick={() => {
                   // Сбрасывается только эта глава: пройденные сцены других глав остаются.
                   stopAudio();
+                  setPracticing(false);
                   setSave((s) => ({
                     ...s,
                     at: first,
@@ -529,8 +555,22 @@ export function ScenePreview() {
               В очереди: {Object.keys(save.cards).length}, пора повторить: {due}.
             </p>
             {!reviewOpen && Object.keys(save.cards).length > 0 && (
-              <button type="button" className="link-button" onClick={() => setReviewing("manual")}>
+              <button type="button" className="link-button" onClick={() => {
+                // Повторение и тренировка делят одно место на странице: повторение закрывает тренировку.
+                stopAudio();
+                setPracticing(false);
+                setReviewing("manual");
+              }}>
                 Повторить
+              </button>
+            )}
+            {(Object.keys(save.cards).length > 0 || playedGames(chapters, save.drafts).length > 0) && (
+              <button type="button" className="link-button" onClick={() => {
+                stopAudio();
+                setPracticing(true);
+                window.scrollTo({ top: 0 });
+              }}>
+                Тренировка
               </button>
             )}
             <p className="moin-route-note">

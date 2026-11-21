@@ -4,7 +4,7 @@ import test from "node:test";
 import { phrases } from "../src/story/data.ts";
 import { isCorrect, lockKey, solution, validateChallenge } from "../src/story/logic.ts";
 import { grade } from "../src/story/memory.ts";
-import { buildReview, MECHS, pluralTraps, reviewSources, SCENE_INTERVALS, sceneUnits, warmupReview } from "../src/story/review.ts";
+import { buildReview, MECHS, pluralTraps, practiceMechs, practiceReview, reviewSources, SCENE_INTERVALS, sceneUnits, warmupReview } from "../src/story/review.ts";
 import { sceneChapters } from "../src/story/scenes/index.ts";
 import { RETURNS, WARMUPS } from "../src/story/scenes/warmups.ts";
 import { VERBS } from "../src/story/verbs.ts";
@@ -147,4 +147,41 @@ test("the round before a chapter is fixed, playable and returns only words the p
       for (const w of docks) assert.match(w, /^(der|die|das) /, `глава ${n}: ${w} — не существительное`);
       assert.ok(bingo.length === 0 || bingo.length === 9, `глава ${n}: лото на ${bingo.length}`);
     }
+});
+
+test("practice rounds use only the chosen mechanic and supplied units, each unit once", () => {
+  const units = unitsOf(12);
+  const cards = Object.fromEntries(units.map((u) => [u, { box: 2, step: 0, day: 0 }]));
+  const available = units.filter((_, i) => i % 2);
+  const allowed = new Set(available);
+  for (const seed of ["practice-a", "practice-b", "practice-c"])
+    for (const mech of MECHS) {
+      const context = { ...ctx(seed), chapter: 12 };
+      const round = practiceReview(mech, [...available, ...available, "unknown"], cards, context);
+      assert.ok(round, `${seed}: ${mech} — раунд не собрался`);
+      assert.ok(round.games.length >= 1 && round.games.length <= 3, mech);
+      assert.ok(round.games.every((g) => g.mech === mech), mech);
+      const targets = round.games.flatMap((g) => g.units);
+      assert.equal(new Set(targets).size, targets.length, `${mech}: единица дважды`);
+      for (const u of targets) assert.ok(allowed.has(u), `${mech}: ${u} вне выбранных единиц`);
+      assert.deepEqual(practiceReview(mech, available, cards, context), round, `${mech}: seed недетерминирован`);
+      assert.equal(practiceReview(mech, [], cards, context), null);
+      assert.equal(practiceReview(mech, available, {}, context), null);
+    }
+  assert.equal(practiceReview("letters", units, Object.fromEntries(units.map((u) => [u, { box: 0, step: 0, day: 0 }])), ctx("boxes")), null);
+  assert.equal(practiceReview("perfekt", units, cards, { ...ctx("chapter"), chapter: 10 }), null);
+});
+
+test("practice offers only mechanics that build a round", () => {
+  const units = unitsOf(4);
+  const cards = Object.fromEntries(units.map((u) => [u, { box: 1, step: 0, day: 0 }]));
+  const context = { ...ctx("practice-menu"), chapter: 4 };
+  const mechs = practiceMechs(units, cards, context);
+  assert.ok(mechs.length);
+  for (const mech of mechs) {
+    assert.ok(MECHS.includes(mech), mech);
+    assert.ok(practiceReview(mech, units, cards, context), mech);
+  }
+  assert.deepEqual(practiceMechs([], cards, context), []);
+  assert.deepEqual(practiceMechs(units, {}, context), []);
 });

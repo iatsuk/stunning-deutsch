@@ -201,6 +201,35 @@
   gap: 8px;
   margin: 14px 0;
 }
+.moin-practice-filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+}
+.moin-practice-filter select {
+  max-width: 100%;
+  padding: 8px;
+  color: var(--text);
+  background: var(--panel-2);
+  border: 1px solid var(--line-strong);
+  border-radius: 4px;
+  font: inherit;
+}
+.moin-practice-games {
+  margin: 12px 0;
+}
+.moin-practice-games button {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  text-align: left;
+}
+.moin-practice-games small {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+}
 .moin-sentence button,
 .moin-tiles button {
   padding: 10px 14px;

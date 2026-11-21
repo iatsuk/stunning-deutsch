@@ -13,7 +13,7 @@ import type { Answer } from "./types";
 // двигается, раунд всегда можно пропустить; ошибка возвращает единицу раньше и ничего не отнимает.
 
 /** У каждой механики свой повод в мире истории и своя короткая задача. */
-const FRAMES: Record<Mech, { title: string; task: string }> = {
+export const FRAMES: Record<Mech, { title: string; task: string }> = {
   bingo: { title: "Рация хрипит", task: "Послушайте слово и закройте его на карточке." },
   gull: { title: "Чайка утащила карточки", task: "Прочитайте перевод и нажмите немецкое слово, пока чайка не долетела." },
   docks: { title: "Ящики Йенсена", task: "К какому причалу подходит слово: der, die или das?" },
@@ -428,12 +428,26 @@ function missedLine(unit: string, sources: Sources) {
   return { de: unit, ru: wordInfo(unit)?.ru ?? "" };
 }
 
-export type ReviewReason = "chapter" | "welcome" | "scene" | "manual";
-const HEADINGS: Record<ReviewReason, { kicker: string; title: string }> = {
-  chapter: { kicker: "Повторение перед главой", title: "Сначала вспомним пройденное" },
-  welcome: { kicker: "Разминка дня", title: "С возвращением в Киль" },
-  scene: { kicker: "Повторение перед сценой", title: "Чайка проверяет память" },
-  manual: { kicker: "Повторение", title: "Чайка проверяет память" },
+export type ReviewReason = "chapter" | "welcome" | "scene" | "manual" | "practice";
+const STORY_FRAME = {
+  lede: "Три короткие игры. Ошибка вернёт слово или фразу раньше и ничего не отнимет.",
+  skip: "Пропустить повторение",
+  back: "Вернуться к делу",
+  empty: "Сейчас повторять нечего: всё, что вы встретили, ещё свежо.",
+};
+const HEADINGS: Record<ReviewReason, { kicker: string; title: string; lede: string; skip: string; back: string; empty: string }> = {
+  chapter: { ...STORY_FRAME, kicker: "Повторение перед главой", title: "Сначала вспомним пройденное" },
+  welcome: { ...STORY_FRAME, kicker: "Разминка дня", title: "С возвращением в Киль" },
+  scene: { ...STORY_FRAME, kicker: "Повторение перед сценой", title: "Чайка проверяет память" },
+  manual: { ...STORY_FRAME, kicker: "Повторение", title: "Чайка проверяет память" },
+  practice: {
+    kicker: "Тренировка",
+    title: "Игры без сюжета",
+    lede: "До трёх игр одной механики на том, что вы уже встретили. Ошибка вернёт слово раньше и ничего не отнимет.",
+    skip: "Закончить раунд",
+    back: "К тренировке",
+    empty: "Здесь пока не из чего собрать игру.",
+  },
 };
 
 export function SceneReview({
@@ -483,7 +497,7 @@ export function SceneReview({
     <div className="moin-drill">
       <div className="kicker">{heading.kicker}</div>
       <h2>{heading.title}</h2>
-      <p>Три короткие игры. Ошибка вернёт слово или фразу раньше и ничего не отнимет.</p>
+      <p>{heading.lede}</p>
       {review && !done && (
         <>
           <p className="moin-count">
@@ -492,7 +506,7 @@ export function SceneReview({
           <GameView key={`${played}-${game}`} game={review.games[game]} seed={`review-${played}-${game}-${review.games[game].units[0]}`} onFinish={finishGame} />
           <div className="moin-drill-actions">
             <button type="button" className="link-button" onClick={onClose}>
-              Пропустить повторение
+              {heading.skip}
             </button>
           </div>
         </>
@@ -521,11 +535,11 @@ export function SceneReview({
           </div>
           <div className="moin-drill-actions">
             <button type="button" className="primary" onClick={more ? another : onClose}>
-              {more ? "Ещё раунд" : "Вернуться к делу →"}
+              {more ? "Ещё раунд" : `${heading.back} →`}
             </button>
             {more && (
               <button type="button" className="link-button" onClick={onClose}>
-                Вернуться к делу
+                {heading.back}
               </button>
             )}
           </div>
@@ -533,9 +547,9 @@ export function SceneReview({
       )}
       {!review && (
         <div className="moin-drill-actions">
-          <p>Сейчас повторять нечего: всё, что вы встретили, ещё свежо.</p>
+          <p>{heading.empty}</p>
           <button type="button" className="primary" onClick={onClose}>
-            Вернуться к делу →
+            {heading.back} →
           </button>
         </div>
       )}

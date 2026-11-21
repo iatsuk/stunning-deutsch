@@ -979,7 +979,7 @@ function Look({
 }
 
 /** Прежняя игра внутри сцены: своё состояние; «Дальше» проверяет ответ и при успехе ведёт дальше. */
-function Embedded({
+export function Embedded({
   node,
   seed,
   miss,
