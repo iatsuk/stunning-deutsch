@@ -17,7 +17,8 @@ import { PracticeView } from "./PracticeView";
 import { flatNodes, germanBefore, keyOf, nodeAt, sceneRules, shownWords, worldAfter } from "./scene";
 import { RuleCard } from "./RuleCard";
 import { caseNotes, dossier } from "./casebook";
-import { CaseNotes, Dossier, NoteList } from "./CaseView";
+import { CaseNotes, Dossier, NoteList, Postcards } from "./CaseView";
+import { openPostcards } from "./postcards";
 import { sceneChapters } from "./scenes";
 import { WARMUPS } from "./scenes/warmups";
 import type { Answer, Mark, SceneNode } from "./types";
@@ -47,8 +48,8 @@ const saveOn = (key: string, on: boolean) => {
   }
 };
 const chapters = sceneChapters;
-/** Вкладки блокнота: текущая глава, всё дело по главам, досье героев. */
-const NOTEBOOK_TABS = [["chapter", "Глава"], ["case", "Всё дело"], ["dossier", "Досье"]] as const;
+/** Вкладки блокнота: текущая глава, всё дело по главам, досье героев, открытки о Германии. */
+const NOTEBOOK_TABS = [["chapter", "Глава"], ["case", "Всё дело"], ["dossier", "Досье"], ["postcards", "Открытки"]] as const;
 type NotebookTab = (typeof NOTEBOOK_TABS)[number][0];
 const scenes = chapters.flatMap((c) => c.beats);
 const sceneIds = scenes.map((b) => b.id);
@@ -545,6 +546,7 @@ export function ScenePreview({ training = false }: { training?: boolean }) {
             </div>
             {tab === "case" && <CaseNotes groups={notes} chapters={chapters} />}
             {tab === "dossier" && <Dossier heroes={dossier(chapters, save.drafts)} />}
+            {tab === "postcards" && <Postcards cards={openPostcards(scenes.filter((_, i) => solved(i)).map((b) => b.id))} />}
             {tab === "chapter" && (
             <>
             {Object.entries(now).some(([q, v]) => v > 0 && TRACKS[q]) && (

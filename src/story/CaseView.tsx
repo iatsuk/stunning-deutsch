@@ -1,6 +1,7 @@
 import { PlayButton } from "../markup";
-import { storyAudio } from "./audio";
+import { storyAudio, wordInfo } from "./audio";
 import type { Fact, Note } from "./casebook";
+import { POSTCARDS, type Postcard } from "./postcards";
 import type { Episode } from "./types";
 
 /** Улики и предметы: улика — заголовок и текст, предмет — значок и немецкое название с переводом. */
@@ -58,6 +59,27 @@ export function Dossier({ heroes }: { heroes: { name: string; facts: Fact[] }[] 
               </li>
             ))}
           </ul>
+        </section>
+      ))}
+    </>
+  );
+}
+
+/** Открытки о Германии: полученные — целиком, сколько ещё впереди — числом. */
+export function Postcards({ cards }: { cards: Postcard[] }) {
+  return (
+    <>
+      <p>
+        Открыток: {cards.length} из {POSTCARDS.length}.{" "}
+        {cards.length < POSTCARDS.length && "Новые придут с главами."}
+      </p>
+      {cards.map((card) => (
+        <section key={card.id} className="moin-notebook-group">
+          <h3>{card.title}</h3>
+          <p>
+            <span lang="de">{card.de}</span> <PlayButton src={wordInfo(card.de)?.audio} /> — {wordInfo(card.de)?.ru}
+          </p>
+          <p>{card.text}</p>
         </section>
       ))}
     </>
