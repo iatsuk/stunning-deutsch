@@ -1,6 +1,7 @@
 import type { CSSProperties } from "react";
 import { Footer, Topbar, useTitle } from "../App";
 import { catalog } from "../content";
+import { mapPins } from "./kielMap";
 
 /** Чем курс помогает запомнить язык: снимок из игры (public/home) и что он показывает. */
 const METHODS = [
@@ -67,6 +68,7 @@ const MORE = [
 export function Home() {
   useTitle("Stunning Deutsch — немецкий A1 в детективной истории");
   const levels = catalog.levels;
+  const pins = mapPins(levels);
   return (
     <>
       <Topbar nav={[["method", "Метод"], ["levels", "Уровни"], ["author", "Автор"]]} />
@@ -91,6 +93,51 @@ export function Home() {
             width={1280}
             height={720}
           />
+        </section>
+
+        <section className="how" id="map">
+          <div className="section-head">
+            <div className="kicker">Карта</div>
+            <h2>Курс живёт в Киле</h2>
+            <p>
+              У каждой части курса своё место в городе. Дело начинается на вокзале, тренировка ждёт за столом
+              клуба, а с причала уйдёт паром сезона A2.
+            </p>
+          </div>
+          <div className="map-picture">
+            <img
+              src={`${import.meta.env.BASE_URL}home/kiel-map.jpg`}
+              alt="Карта Киля с юга на север: вокзал и паром у причала, старый город с ратушей и замком, набережная Kiellinie с клубом, офисом и киоском, университет; на восточном берегу верфь Гаардена с кранами, на севере маяк"
+              width={1280}
+              height={720}
+              loading="lazy"
+            />
+            {/* Метки на картинке повторяют список под ней, поэтому скрыты от чтения с экрана и клавиатуры. */}
+            {pins.map((pin, i) => {
+              const style = { "--x": `${pin.x}%`, "--y": `${pin.y}%` } as CSSProperties;
+              return "href" in pin
+                ? <a key={pin.id} className="map-pin" href={pin.href} style={style} tabIndex={-1} aria-hidden="true" data-open>{i + 1}</a>
+                : <span key={pin.id} className="map-pin" style={style} aria-hidden="true">{i + 1}</span>;
+            })}
+          </div>
+          <ol className="map-places">
+            {pins.map((pin, i) => {
+              const body = (
+                <>
+                  <span className="map-num">{i + 1}</span>
+                  <div className="map-de" lang="de">{pin.de}</div>
+                  <h3>{pin.ru}</h3>
+                  <p>{pin.text}</p>
+                  {"soon" in pin && <div className="map-soon">{pin.soon}</div>}
+                </>
+              );
+              return (
+                <li key={pin.id} data-open={"href" in pin || undefined}>
+                  {"href" in pin ? <a href={pin.href}>{body}</a> : <div>{body}</div>}
+                </li>
+              );
+            })}
+          </ol>
         </section>
 
         <section className="how" id="method">

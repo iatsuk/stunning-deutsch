@@ -32,7 +32,7 @@ stats.deelstuff.com (`AGENTS.md`, «Публикация»). Репозитор�
 | `src/reference/`, `src/pages/Reference.tsx` | справочник A1: данные — `src/generated/a1-reference.json` из `scripts/a1-index.mjs` |
 | `src/story/logic.ts`, `scene.ts`, `review.ts`, `progress.ts` | логика игры без React — её и проверяют тесты |
 | `scripts/tts/` | озвучка: конфигурация модели, генерация, проверка концов записей |
-| `public/audio/`, `public/story-img/`, `public/home/` | записи, картинки истории и снимки игры для главной |
+| `public/audio/`, `public/story-img/`, `public/home/` | записи, картинки истории, снимки игры и карта Киля для главной |
 | `*.md` в корне | планы, решения автора и журналы работы |
 
 ## Что стоит дня, если не знать

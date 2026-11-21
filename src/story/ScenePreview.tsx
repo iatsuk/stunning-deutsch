@@ -134,10 +134,17 @@ function load(): Save {
   return empty;
 }
 
-export function ScenePreview() {
+/** Страница курса A1; training — пришли со стола клуба на карте главной: открыть тренировку, если есть из чего её собрать. */
+export function ScenePreview({ training = false }: { training?: boolean }) {
   useTitle("Дело о пропавшем Moin · Курс A1 · Stunning Deutsch");
   const [save, setSave] = useState(load);
-  const [practicing, setPracticing] = useState(false);
+  const canPractice = Object.keys(save.cards).length > 0 || playedGames(chapters, save.drafts).length > 0;
+  const [practicing, setPracticing] = useState(training && canPractice);
+  // Адрес тренировки нужен только для входа: дальше страница живёт по адресу курса, и перезагрузка не возвращает
+  // в тренировку. replaceState не шлёт hashchange, поэтому страница не пересоздаётся.
+  useEffect(() => {
+    if (training) history.replaceState(null, "", "#/a1/moin");
+  }, [training]);
   // Открытое повторение держится до закрытия: после оценки очередь короче, но итог раунда виден.
   const [reviewing, setReviewing] = useState<ReviewReason | null>(null);
   const ci = chapterOf(save.at);
@@ -564,7 +571,7 @@ export function ScenePreview() {
                 Повторить
               </button>
             )}
-            {(Object.keys(save.cards).length > 0 || playedGames(chapters, save.drafts).length > 0) && (
+            {canPractice && (
               <button type="button" className="link-button" onClick={() => {
                 stopAudio();
                 setPracticing(true);

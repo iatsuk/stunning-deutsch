@@ -29,7 +29,7 @@ export function App() {
 function Page({ route }: { route: string[] }) {
   const [levelId, topicId] = route;
   // moin-neu — второй адрес той же страницы: на него ведут сохранённые закладки.
-  if (levelId === "a1" && (topicId === "moin" || topicId === "moin-neu")) return <Suspense fallback={<p className="hero">Открываем дело…</p>}><ScenePreview /></Suspense>;
+  if (levelId === "a1" && (topicId === "moin" || topicId === "moin-neu")) return <Suspense fallback={<p className="hero">Открываем дело…</p>}><ScenePreview training={route[2] === "training"} /></Suspense>;
   if (levelId === "a1" && topicId === "reference") return <Suspense fallback={<p className="hero">Открываем справочник…</p>}><ReferencePage /></Suspense>;
   if (levelId === "impressum") return <ImpressumPage />;
   if (levelId === "datenschutz") return <DatenschutzPage />;
