@@ -13,7 +13,7 @@ export const MNEMONICS: Record<string, string> = {
   "die Dose":
     "Dose — как «доза»: еду и краску из банки дозируют понемногу. Банка — die Dose.",
   "die Kiste":
-    "Kiste — родня английского chest и латинского cista: ящик для вещей.",
+    "Kiste — родня английского chest, сундука: ящик для вещей. Ящик по-немецки — она: die Kiste.",
   "Moin!": "Moin — северное «моё почтение» в одно слово, в любое время суток.",
   "Tschüss!": "Tschüss — короткое «чюс», как воздушный поцелуй на прощание.",
   heißen:
@@ -22,7 +22,7 @@ export const MNEMONICS: Record<string, string> = {
   "wohnen in":
     "wohnen — «во-он там живу»: Ich wohne in Kiel — во-он там, в Киле.",
   "der Hafen": "Hafen и «гавань» звучат похоже: ха-фен — га-вань.",
-  "das Boot": "Boot — «бот», как ботик Петра I: маленькое судно, das Boot.",
+  "das Boot": "Boot — почти английское boat, а род как у русского «судно»: оно — das Boot.",
   segeln: "segeln похоже на английское sail; Segel — парус.",
   sprechen:
     "sprechen — «шпрехать»: так и говорят в шутку «шпрехаете по-немецки?»",
@@ -44,11 +44,11 @@ export const MNEMONICS: Record<string, string> = {
   "die Geschwister":
     "Ge- собирает всех вместе, а внутри — Schwester: братья и сёстры одним словом, как «сестринство» на всех.",
   "die Brille":
-    "Brille — от Beryll, берилла: первые очки шлифовали из прозрачного камня. Очки по-немецки одна вещь — die Brille.",
+    "Brille — родня «бриллианта»: первые очки шлифовали из прозрачного камня. Очки по-немецки одна вещь — die Brille.",
   "der Opa":
     "Opa — «опа!»: так дедушка подхватывает внука на руки.",
   "der Kellner":
-    "В старых русских романах официанта так и звали — «кельнер». Слово немецкое: der Kellner.",
+    "Kellner — от der Keller, подвала: официант когда-то носил гостям вино из подвала. Официант — der Kellner.",
   "die Rechnung":
     "Rechnung — «рехнуться»: от счёта в кафе у воды можно и рехнуться. Считать — rechnen.",
   "das Tablett":
@@ -56,7 +56,7 @@ export const MNEMONICS: Record<string, string> = {
   "die Zwiebel":
     "Zwiebel — почти «цибуля»: так лук зовут на юге России и в Украине. Лук — die Zwiebel.",
   "der Kassenbon":
-    "die Kasse + der Bon: бон — талон, бумажка из кассы. Чек — der Kassenbon.",
+    "die Kasse — касса + der Bon — талончик: бумажка из кассы. Чек — der Kassenbon.",
   "der Feierabend":
     "die Feier — праздник + der Abend: вечер, который празднуют, потому что работа кончилась.",
 
@@ -98,7 +98,7 @@ export const MNEMONICS: Record<string, string> = {
   schmecken:
     "schmecken («шме́кен») — родня русского «смаковать» и «смачный»: когда еда прямо смачная!",
   "der Schinken":
-    "Schinken («ши́нкен») — тот же корень, что у «шинки» (ветчины), только по-немецки мужского рода: der Schinken.",
+    "Schinken («ши́нкен») — «шинковать»: ветчину шинкуют тонкими ломтиками. Ветчина по-немецки — он: der Schinken.",
   "die Wurst":
     "Не зря немцы говорят «Das ist mir Wurst!» («Мне это колбаса» = «мне всё равно»). Колбаса — женского рода: die Wurst.",
   "die Birne":
@@ -142,7 +142,7 @@ export const MNEMONICS: Record<string, string> = {
 
   // Глава 7
   "der Baum":
-    "Baum («ба́ум») — родня корабельного «бума» и «шлагбаума» («ударного бревна»). Дерево в немецком мужского рода — der Baum.",
+    "Baum («ба́ум») — тот же, что в «шлагбауме»: шлагбаум — это бревно поперёк дороги. Дерево в немецком мужского рода — der Baum.",
   "der See":
     "Как не спутать род: der See — спокойное озеро («он, пруд»), а die See — бескрайнее море («она, волна», как die Ostsee).",
   einladen:
@@ -255,7 +255,7 @@ export const MNEMONICS: Record<string, string> = {
   "der Kühlschrank": "kühl — прохладный + der Schrank — шкаф: холодильник — прохладный шкаф. Род — от Schrank: der.",
   "der Bahnhof": "die Bahn — железная дорога + der Hof — двор: вокзал — двор поездов. Род — от Hof: der Bahnhof.",
   "die Fahrkarte": "fahren — ехать + die Karte — карточка: билет — карточка на поездку. Род — от Karte: die.",
-  "der Arzt": "Arzt — от греческого «архиатр», главный врач. Врач — der Arzt, женщина-врач — die Ärztin.",
+  "der Arzt": "Arzt — «а-а!»: врач смотрит горло, а вы тянете «а-а». Врач — der Arzt, женщина-врач — die Ärztin.",
   "der Kopf": "Kopf — «копна»: копна волос на голове. Голова — der Kopf.",
   "der Bauch": "Bauch — «брюхо» с немецким акцентом: брюх-баух. Живот — der Bauch.",
   teuer: "teuer — «тю-у-уер!»: так ахают, увидев цену. Дорогой — teuer.",
