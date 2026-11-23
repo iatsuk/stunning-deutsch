@@ -29,6 +29,7 @@ import { mnemonic } from "./mnemonics";
 import { RuleCard } from "./RuleCard";
 import { sound, VOICE_KEY, voiceOn } from "./sfx";
 import { face } from "./faces";
+import { speakerOf } from "./speakers";
 import { effectText, holds, TRACKS, type World } from "./world";
 
 // Сцена: разговор и осмотр места, в который вплетены действия. Сцена помещается на экран:
@@ -534,9 +535,11 @@ function DoneNode({
       );
     case "hear":
       return (
-        <p className="moin-play-note">
-          ✓ <span lang="de">{node.de}</span>
-        </p>
+        <Said who={speakerOf(node.voice, node.de)} de={node.de}>
+          <p className="moin-play-note">
+            ✓ <span lang="de">{node.de}</span>
+          </p>
+        </Said>
       );
     case "pick":
       return (
@@ -592,8 +595,8 @@ function Pic({ node }: { node: Extract<SceneNode, { t: "pic" }> }) {
 function SayLine({ node }: { node: Extract<SceneNode, { t: "say" }> }) {
   const [open, setOpen] = useState(false);
   const [word, setWord] = useState<string>();
-  const portrait = face(node.who, node.de);
-  const bubble = (
+  return (
+    <Said who={node.who} de={node.de}>
     <div className="moin-bubble moin-play-say">
       <small>{node.who}</small>
       <p lang="de">
@@ -635,12 +638,18 @@ function SayLine({ node }: { node: Extract<SceneNode, { t: "say" }> }) {
         </small>
       )}
     </div>
+    </Said>
   );
-  if (!portrait) return bubble;
+}
+
+/** Фраза героя с его портретом слева; у говорящего без портрета — просто фраза. */
+function Said({ who, de, children }: { who?: string; de: string; children: ReactNode }) {
+  const portrait = who && face(who, de);
+  if (!portrait) return children;
   return (
     <div className="moin-said">
       <img className="moin-said-face" src={`${import.meta.env.BASE_URL}${portrait}`} alt="" width={48} height={48} loading="lazy" />
-      {bubble}
+      {children}
     </div>
   );
 }
