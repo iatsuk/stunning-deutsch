@@ -5,7 +5,7 @@ import { storyAudio, wordInfo } from "./audio";
 import { Bingo, Docks, Gendered, Gull, Letters, Lock, Pairs, Write } from "./games";
 import { GullWord, Tail, Twenty } from "./minigames";
 import { initialAnswer, isCorrect, wrongAnswers } from "./logic";
-import { unitText, type ClozeItem, type Crossword, type Game, type Mech, type MistakeItem, type PluralItem, type Review, type Sources, type VerbItem, type WhoItem } from "./review";
+import { unitText, type ClozeItem, type Crossword, type Game, type Mech, type MistakeItem, type PluralItem, type Review, type Sources, type VerbItem, type HeardItem } from "./review";
 import { RuleCard } from "./RuleCard";
 import type { Answer } from "./types";
 
@@ -25,7 +25,7 @@ export const FRAMES: Record<Mech, { title: string; task: string }> = {
   plural: { title: "Склад Матео", task: "Выберите множественное число." },
   tail: { title: "Охота на хвост", task: "Отрежьте лишнее до последнего слова и выберите артикль." },
   cloze: { title: "Стёртая реплика", task: "Вставьте слово, которое прозвучало в истории." },
-  who: { title: "Кто это сказал?", task: "Послушайте реплику и выберите, кто её сказал." },
+  heard: { title: "Что это значит?", task: "Послушайте реплику и выберите перевод." },
   mistake: { title: "Записка с ошибкой", task: "Нажмите на часть фразы, где ошибка." },
   verbs: { title: "Перекличка", task: "Выберите форму глагола для этого лица." },
   perfekt: { title: "Что было вчера", task: "Выберите Perfekt: haben или sein и причастие." },
@@ -146,18 +146,19 @@ function ClozeGame({ items, seed, onFinish }: { items: ClozeItem[]; seed: string
   );
 }
 
-function WhoGame({ items, seed, onFinish }: { items: WhoItem[]; seed: string; onFinish: Finish }) {
+function HeardGame({ items, seed, onFinish }: { items: HeardItem[]; seed: string; onFinish: Finish }) {
   return (
     <Steps
       items={items}
       seed={seed}
       onFinish={onFinish}
-      render={(item, s) => <WhoStep item={item} {...s} />}
+      render={(item, s) => <HeardStep item={item} {...s} />}
     />
   );
 }
 
-function WhoStep({ item, wrong, solved, pick }: { item: WhoItem; wrong: string[]; solved: boolean; pick: (o: string, right: boolean) => void }) {
+/** Немецкая строка открывается только после ответа: до него игрок понимает реплику на слух. */
+function HeardStep({ item, wrong, solved, pick }: { item: HeardItem; wrong: string[]; solved: boolean; pick: (o: string, right: boolean) => void }) {
   const audio = storyAudio(item.line.de, item.line.voice);
   useEffect(() => {
     say(audio);
@@ -406,8 +407,8 @@ function GameView({ game, seed, onFinish }: { game: Game; seed: string; onFinish
         <PluralGame items={game.items} seed={seed} onFinish={onFinish} />
       ) : game.mech === "cloze" ? (
         <ClozeGame items={game.items} seed={seed} onFinish={onFinish} />
-      ) : game.mech === "who" ? (
-        <WhoGame items={game.items} seed={seed} onFinish={onFinish} />
+      ) : game.mech === "heard" ? (
+        <HeardGame items={game.items} seed={seed} onFinish={onFinish} />
       ) : game.mech === "verbs" || game.mech === "perfekt" ? (
         <VerbGame items={game.items} seed={seed} onFinish={onFinish} />
       ) : game.mech === "crossword" ? (

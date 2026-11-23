@@ -77,7 +77,7 @@ test("new mechanics are built correctly", () => {
     assert.equal(item.before + item.answer + item.after, item.line.de);
     assert.ok(item.options.includes(item.answer) && new Set(item.options).size === 3, item.line.de);
   }
-  for (const item of of("who")) assert.ok(item.options.includes(item.answer) && new Set(item.options).size === 3, item.line.de);
+  for (const item of of("heard")) assert.ok(item.options.includes(item.answer) && new Set(item.options).size === 3 && item.answer === item.line.ru, item.line.de);
   for (const item of of("mistake")) {
     assert.notEqual(item.chunks[item.wrong], item.right);
     const fixed = item.chunks.map((c, i) => (i === item.wrong ? item.right : c));
@@ -89,7 +89,7 @@ test("new mechanics are built correctly", () => {
   }
   for (const item of of("verbs")) assert.ok(VERBS[item.verb].forms.includes(item.answer), item.verb);
   for (const item of of("perfekt")) assert.equal(item.answer, VERBS[item.verb].perfekt, item.verb);
-  for (const mech of ["plural", "cloze", "who", "mistake", "verbs", "perfekt"]) assert.ok(of(mech).length, `${mech} ни разу не собралась`);
+  for (const mech of ["plural", "cloze", "heard", "mistake", "verbs", "perfekt"]) assert.ok(of(mech).length, `${mech} ни разу не собралась`);
   const grids = games.filter((g) => g.mech === "crossword").map((g) => g.grid);
   assert.ok(grids.length, "кроссворд ни разу не собрался");
   for (const grid of grids) {
@@ -223,5 +223,17 @@ test("one game never holds two units that sound the same, like Moin and Moin!", 
     for (const game of stubbornReview(["Moin", "Moin!", ...units.slice(2, 6)], cards, ctx(seed))?.games ?? [])
       assert.ok(!(game.units.includes("Moin") && game.units.includes("Moin!")), `${seed} stubborn ${game.mech}`);
   }
+});
+
+test("a heard line offers only translations of lines the player has met, close in length", () => {
+  const met = unitsOf(2);
+  const cards = Object.fromEntries(met.map((u) => [u, { box: 2, step: 0, day: 0 }]));
+  const metMeanings = new Set(met.filter((u) => sources.lines[u]).map((u) => sources.lines[u].ru));
+  for (const seed of ["a", "b", "c", "d"])
+    for (const game of practiceReview("heard", met, cards, ctx(seed))?.games ?? [])
+      for (const item of game.items) {
+        assert.equal(item.answer, item.line.ru);
+        for (const o of item.options) assert.ok(metMeanings.has(o), `${seed}: перевод не из встреченных реплик — ${o}`);
+      }
 });
 

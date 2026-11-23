@@ -89,10 +89,11 @@ export const dueUnits = (cards: Cards, step: number, day: number) => dueWords(ca
 
 // ——— Механики ———
 
-export type Mech = "bingo" | "gull" | "docks" | "letters" | "gullword" | "write" | "pairs" | "lock" | "plural" | "tail" | "cloze" | "who" | "mistake" | "verbs" | "perfekt" | "crossword" | "twenty";
+export type Mech = "bingo" | "gull" | "docks" | "letters" | "gullword" | "write" | "pairs" | "lock" | "plural" | "tail" | "cloze" | "heard" | "mistake" | "verbs" | "perfekt" | "crossword" | "twenty";
 export type PluralItem = { unit: string; de: string; options: string[]; answer: string };
 export type ClozeItem = { unit: string; line: Line; before: string; after: string; answer: string; options: string[] };
-export type WhoItem = { unit: string; line: Line; options: string[]; answer: string };
+/** Реплика на слух: немецкий текст скрыт до ответа, выбрать нужно перевод. */
+export type HeardItem = { unit: string; line: Line; options: string[]; answer: string };
 export type MistakeItem = { unit: string; ru: string; chunks: string[]; wrong: number; right: string; rules: string[] };
 /** Форма глагола: лицо, варианты, верный; ru — перевод глагола. */
 export type VerbItem = { unit: string; verb: string; ru: string; prompt: string; options: string[]; answer: string };
@@ -102,13 +103,13 @@ export type Game =
   | { mech: "bingo" | "gull" | "docks" | "letters" | "gullword" | "write" | "pairs" | "lock" | "tail" | "twenty"; units: string[]; challenge: Challenge; rules?: Record<string, string[]> }
   | { mech: "plural"; units: string[]; items: PluralItem[] }
   | { mech: "cloze"; units: string[]; items: ClozeItem[] }
-  | { mech: "who"; units: string[]; items: WhoItem[] }
+  | { mech: "heard"; units: string[]; items: HeardItem[] }
   | { mech: "mistake"; units: string[]; items: MistakeItem[] }
   | { mech: "verbs" | "perfekt"; units: string[]; items: VerbItem[] }
   | { mech: "crossword"; units: string[]; grid: Crossword };
 export type Review = { games: Game[] };
 
-export const MECHS: Mech[] = ["bingo", "who", "pairs", "docks", "gull", "plural", "tail", "verbs", "cloze", "mistake", "perfekt", "lock", "crossword", "letters", "gullword", "write", "twenty"];
+export const MECHS: Mech[] = ["bingo", "heard", "pairs", "docks", "gull", "plural", "tail", "verbs", "cloze", "mistake", "perfekt", "lock", "crossword", "letters", "gullword", "write", "twenty"];
 /**
  * Узнать и выбрать можно сразу после встречи; собрать по буквам — после первого верного повтора,
  * написать по памяти — после второго. Остальные механики подходят единице любой прочности.
@@ -283,14 +284,20 @@ function build(mech: Mech, pool: string[], cards: Cards, ctx: Context): Built {
       }
       return items.length >= 2 ? { game: { mech, units: items.map((i) => i.unit), items }, used: items.map((i) => i.unit) } : null;
     }
-    case "who": {
-      const speakers = [...new Set(Object.values(sources.lines).map((l) => l.who))];
-      const items: WhoItem[] = lines.slice(0, 3).map((unit) => {
+    case "heard": {
+      // Неверные варианты — переводы реплик, которые игрок уже слышал: чужие главы выдали бы сюжет вперёд.
+      // Берём близкие по длине и не похожие по началу, чтобы выбор решал слух, а не размер строки.
+      const met = [...new Set(Object.keys(cards).filter((u) => sources.lines[u]).map((u) => sources.lines[u].ru))];
+      const items: HeardItem[] = lines.slice(0, 3).map((unit) => {
         const line = sources.lines[unit];
-        const traps = shuffle(speakers.filter((s) => s !== line.who), `${seed}-${unit}`).slice(0, 2);
-        return { unit, line, answer: line.who, options: shuffle([line.who, ...traps], `${seed}-o-${unit}`) };
+        const near = met
+          .filter((ru) => meaning(ru) !== meaning(line.ru))
+          .sort((a, b) => Math.abs(a.length - line.ru.length) - Math.abs(b.length - line.ru.length))
+          .slice(0, 6);
+        const traps = shuffle(near, `${seed}-${unit}`).slice(0, 2);
+        return { unit, line, answer: line.ru, options: shuffle([line.ru, ...traps], `${seed}-o-${unit}`) };
       });
-      return items.length >= 2 && speakers.length >= 3 ? { game: { mech, units: items.map((i) => i.unit), items }, used: items.map((i) => i.unit) } : null;
+      return items.length >= 2 && items.every((i) => i.options.length === 3) ? { game: { mech, units: items.map((i) => i.unit), items }, used: items.map((i) => i.unit) } : null;
     }
     case "verbs": {
       const take = words.filter((w) => VERBS[w]).slice(0, 4);
