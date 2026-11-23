@@ -1,8 +1,10 @@
+import { useEffect, useRef, useState } from "react";
 import { PlayButton } from "../markup";
 import { storyAudio, wordInfo } from "./audio";
 import type { Fact, Note } from "./casebook";
 import { REPORTER, type Headline } from "./newspaper";
-import { POSTCARDS, type Postcard } from "./postcards";
+import { postcardFile, savePostcard } from "./postcardImage";
+import { POSTCARDS, postcardPictures, type Postcard } from "./postcards";
 import type { Episode } from "./types";
 
 /** Улики и предметы: улика — заголовок и текст, предмет — значок и немецкое название с переводом. */
@@ -66,24 +68,84 @@ export function Dossier({ heroes }: { heroes: { name: string; facts: Fact[] }[] 
   );
 }
 
-/** Открытки о Германии: полученные — целиком, сколько ещё впереди — числом. */
+/** Открытки о Германии: стопка полученных и рубашки тех, что придут с главами; открытая карточка — поверх страницы. */
 export function Postcards({ cards }: { cards: Postcard[] }) {
+  const [open, setOpen] = useState<Postcard | null>(null);
   return (
     <>
       <p>
         Открыток: {cards.length} из {POSTCARDS.length}.{" "}
         {cards.length < POSTCARDS.length && "Новые придут с главами."}
       </p>
-      {cards.map((card) => (
-        <section key={card.id} className="moin-notebook-group">
-          <h3>{card.title}</h3>
-          <p>
-            <span lang="de">{card.de}</span> <PlayButton src={wordInfo(card.de)?.audio} /> — {wordInfo(card.de)?.ru}
-          </p>
-          <p>{card.text}</p>
-        </section>
-      ))}
+      <ul className="moin-postcards">
+        {POSTCARDS.map((card) =>
+          cards.includes(card) ? (
+            <li key={card.id}>
+              <button type="button" onClick={() => setOpen(card)}>
+                <img src={`${import.meta.env.BASE_URL}${postcardPictures(card.id).thumb}`} alt="" width={300} height={200} loading="lazy" />
+                <span>{card.title}</span>
+              </button>
+            </li>
+          ) : (
+            <li key={card.id} className="is-locked">
+              <span aria-hidden="true">?</span>
+              <span className="moin-hidden-label">Закрытая открытка</span>
+            </li>
+          ),
+        )}
+      </ul>
+      {open && <PostcardDialog card={open} onClose={() => setOpen(null)} />}
     </>
+  );
+}
+
+/** Открытая карточка: иллюстрация, слово с записью, заметка и кнопка «Сохранить открытку». */
+function PostcardDialog({ card, onClose }: { card: Postcard; onClose: () => void }) {
+  const dialog = useRef<HTMLDialogElement>(null);
+  const [file, setFile] = useState<File | null>(null);
+  const [failed, setFailed] = useState(false);
+  // Номер попытки: «Попробовать ещё раз» готовит открытку заново, например после обрыва сети.
+  const [attempt, setAttempt] = useState(0);
+  const word = wordInfo(card.de);
+  useEffect(() => {
+    dialog.current?.showModal();
+  }, []);
+  // Файл готовится заранее: «Поделиться» на iPhone работает только сразу после нажатия.
+  useEffect(() => {
+    let live = true;
+    setFile(null);
+    setFailed(false);
+    postcardFile(card, word?.ru ?? "", import.meta.env.BASE_URL).then(
+      (f) => live && setFile(f),
+      () => live && setFailed(true),
+    );
+    return () => {
+      live = false;
+    };
+  }, [card, word?.ru, attempt]);
+  return (
+    <dialog ref={dialog} className="moin-postcard" aria-label={card.title} onClose={onClose}>
+      <img src={`${import.meta.env.BASE_URL}${postcardPictures(card.id).full}`} alt={card.alt} width={1080} height={720} />
+      <h3>{card.title}</h3>
+      <p>
+        <span lang="de">{card.de}</span> <PlayButton src={word?.audio} /> — {word?.ru}
+      </p>
+      <p>{card.text}</p>
+      <div className="moin-postcard-actions">
+        {failed ? (
+          <button type="button" className="primary" onClick={() => setAttempt(attempt + 1)}>
+            Не получилось. Попробовать ещё раз
+          </button>
+        ) : (
+          <button type="button" className="primary" disabled={!file} onClick={() => file && savePostcard(file)}>
+            {file ? "Сохранить открытку" : "Готовим открытку…"}
+          </button>
+        )}
+        <button type="button" className="link-button" onClick={() => dialog.current?.close()}>
+          Закрыть
+        </button>
+      </div>
+    </dialog>
   );
 }
 

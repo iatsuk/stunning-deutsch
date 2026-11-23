@@ -1571,6 +1571,99 @@
 .moin-notebook-group small {
   color: var(--muted);
 }
+/* Открытки о Германии: стопка в блокноте и открытая карточка поверх страницы. */
+.moin-postcards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
+  gap: 8px;
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.moin-preview-notebook .moin-postcards li + li {
+  margin-top: 0;
+}
+.moin-postcards button {
+  display: grid;
+  gap: 4px;
+  width: 100%;
+  padding: 4px 4px 6px;
+  border: 1px solid #d9ccb2;
+  border-radius: 6px;
+  background: #f5efe3;
+  color: #1f2326;
+  font: inherit;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: left;
+  cursor: pointer;
+}
+.moin-postcards img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+.moin-postcards .is-locked {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 3 / 2.6;
+  border: 1px dashed #3a464b;
+  border-radius: 6px;
+  color: var(--muted);
+  font-family: var(--serif);
+  font-size: 22px;
+}
+.moin-hidden-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.moin-postcard {
+  width: min(640px, calc(100vw - 32px));
+  max-height: calc(100dvh - 32px);
+  padding: 20px;
+  border: 1px solid #d9ccb2;
+  border-radius: 10px;
+  background: #f5efe3;
+  color: #1f2326;
+}
+.moin-postcard::backdrop {
+  background: rgb(0 0 0 / 0.6);
+}
+.moin-postcard img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+.moin-postcard h3 {
+  margin: 14px 0 6px;
+  font-family: var(--serif);
+  font-size: 22px;
+}
+.moin-postcard p {
+  margin: 6px 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.moin-postcard .play {
+  color: #1f2326;
+}
+.moin-postcard-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 18px;
+  margin-top: 14px;
+}
+.moin-postcard .link-button {
+  color: #1d3a5f;
+}
+
 /* Газета Kieler Woche после главы 12: шапка и первая новость крупно, как на газетной полосе. */
 .moin-newspaper {
   margin-top: 12px;
