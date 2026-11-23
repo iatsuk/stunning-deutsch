@@ -41,7 +41,7 @@ export const HEROES: { name: string; facts: string[] }[] = [
   {
     name: "Элиф",
     facts: [
-      "Ich komme aus der Türkei, aus Izmir. Ich wohne in Kiel.",
+      "Ich komme aus der Türkei, aus Izmir. Ich wohne in Kiel, in Ravensberg.",
       "Ich würde gern mitkommen! Aber ich kann nicht segeln.",
       "Entschuldigung! Ich war bei der Post. Ein Brief nach Helgoland – für die Möwe!",
     ],
