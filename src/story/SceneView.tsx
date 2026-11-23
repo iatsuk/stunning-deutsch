@@ -548,12 +548,7 @@ function DoneNode({
         </p>
       );
     case "look":
-      return (
-        <p className="moin-play-note">
-          Осмотрено:{" "}
-          {node.items.map((i) => `${i.icon} ${i.de}`).join(", ")}
-        </p>
-      );
+      return <Looked node={node} />;
     case "item":
       return (
         <p className="moin-play-gain">
@@ -970,23 +965,58 @@ function Look({
           </button>
         ))}
       </div>
-      {item && (
-        <p className="moin-play-note">
-          <b lang="de">
-            <Gendered text={item.de} />
-          </b>{" "}
-          — {item.ru}.{" "}
-          {item.note}
-          {mnemonic(item.de) && (
-            <span className="moin-hook">💡 {mnemonic(item.de)}</span>
-          )}
-        </p>
-      )}
+      {item && <ItemNote item={item} />}
       <Note>
         Важное найдено: {keys.filter((i) => seen.includes(i)).length} из{" "}
         {keys.length}
       </Note>
       {ready && <NextButton onClick={done} />}
+    </div>
+  );
+}
+
+type LookItem = Extract<SceneNode, { t: "look" }>["items"][number];
+
+/** Что сказано о предмете осмотра: слово с родом, перевод, заметка и запоминалка. */
+function ItemNote({ item }: { item: LookItem }) {
+  return (
+    <p className="moin-play-note">
+      <b lang="de">
+        <Gendered text={item.de} />
+      </b>{" "}
+      — {item.ru}.{" "}
+      {item.note}
+      {mnemonic(item.de) && <span className="moin-hook">💡 {mnemonic(item.de)}</span>}
+    </p>
+  );
+}
+
+/**
+ * Осмотренное место в переписке. Предметы можно открыть снова: следующие задания спрашивают о том, что на них
+ * написано, а вернуться к осмотру нельзя.
+ */
+function Looked({ node }: { node: Extract<SceneNode, { t: "look" }> }) {
+  const [open, setOpen] = useState<number>();
+  return (
+    <div className="moin-play-looked">
+      <p className="moin-play-note">Осмотрено — нажмите на предмет, чтобы перечитать:</p>
+      <div className="moin-chips" aria-label="Осмотренные предметы">
+        {node.items.map((item, i) => (
+          <button
+            type="button"
+            key={i}
+            lang="de"
+            aria-expanded={open === i}
+            onClick={() => {
+              if (open !== i) say(nounAudio(item.de));
+              setOpen(open === i ? undefined : i);
+            }}
+          >
+            {item.icon} {item.de}
+          </button>
+        ))}
+      </div>
+      {open !== undefined && <ItemNote item={node.items[open]} />}
     </div>
   );
 }

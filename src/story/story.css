@@ -1862,6 +1862,15 @@
 .moin-chip-info {
   margin-top: 4px;
 }
+/* Осмотренное место: предметы чипами, под ними — заметка открытого предмета. */
+.moin-play-looked {
+  display: grid;
+  gap: 6px;
+}
+.moin-play-looked .moin-chips {
+  margin-top: 0;
+  padding-left: 14px;
+}
 .moin-look {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(84px, 1fr));
