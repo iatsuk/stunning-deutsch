@@ -122,6 +122,18 @@ const spellable = (w: string) => /^\p{L}+$/u.test(bare(w)) && bare(w).length <= 
 const typable = (w: string) => /^[\p{L} '-]+[.!?]?$/u.test(w);
 /** «Привет!» и «Привет! Здравствуйте!» — одно значение: в одной игре их не различить. */
 const meaning = (ru: string) => ru.split(/[;,/!?(]/)[0].trim().toLowerCase();
+/** «Moin» и «Moin!» звучат одинаково: в лото на слух и в других играх одной игры их не различить. */
+const sound = (de: string) => de.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, " ").trim();
+/** Первая единица на каждый ключ: из двух неразличимых в игре остаётся одна. */
+const firstBy = (list: string[], key: (unit: string) => string) => {
+  const seen = new Set<string>();
+  return list.filter((unit) => {
+    const k = key(unit);
+    if (seen.has(k)) return false;
+    seen.add(k);
+    return true;
+  });
+};
 
 /** Детерминированная перетасовка: тот же раунд при перезагрузке страницы. */
 export function shuffle<T>(list: T[], seed: string): T[] {
@@ -187,18 +199,10 @@ function build(mech: Mech, pool: string[], cards: Cards, ctx: Context): Built {
   const { lookup, sources, seed } = ctx;
   if ((ctx.chapter ?? 12) < (MIN_CHAPTER[mech] ?? 0)) return null;
   const firm = MIN_BOX[mech] ?? 0;
-  const words = pool.filter((u) => lookup(u) && (cards[u]?.box ?? 0) >= firm);
+  const words = firstBy(pool.filter((u) => lookup(u) && (cards[u]?.box ?? 0) >= firm), sound);
   const lines = pool.filter((u) => sources.lines[u]);
   const locks = pool.filter((u) => sources.locks[u]);
-  const distinct = (list: string[]) => {
-    const seen = new Set<string>();
-    return list.filter((w) => {
-      const key = meaning(lookup(w)!.ru);
-      if (seen.has(key)) return false;
-      seen.add(key);
-      return true;
-    });
-  };
+  const distinct = (list: string[]) => firstBy(list, (w) => meaning(lookup(w)!.ru));
   const simple = (kind: "bingo" | "gull" | "docks" | "letters", list: string[], min: number, max: number): Built => {
     const take = list.slice(0, max);
     return take.length >= min ? { game: { mech: kind, units: take, challenge: { kind, words: take } }, used: take } : null;
@@ -495,10 +499,10 @@ const STUBBORN = 5;
  * из списка; новая ошибка вернёт его в начало и в список. Первыми — с большим числом ошибок.
  */
 export function stubbornUnits(cards: Cards): string[] {
-  return Object.keys(cards)
+  const stubborn = Object.keys(cards)
     .filter((u) => (cards[u].miss ?? 0) >= 2 && cards[u].box <= 1)
-    .sort((a, b) => cards[b].miss! - cards[a].miss! || cards[a].box - cards[b].box)
-    .slice(0, STUBBORN);
+    .sort((a, b) => cards[b].miss! - cards[a].miss! || cards[a].box - cards[b].box);
+  return firstBy(stubborn, sound).slice(0, STUBBORN);
 }
 
 /**

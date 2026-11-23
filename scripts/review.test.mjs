@@ -193,12 +193,15 @@ test("stubborn words: missed twice and still weak, most misses first, gone once 
     c: { box: 2, step: 0, day: 0, miss: 6 },
     d: { box: 0, step: 0, day: 0, miss: 1 },
     e: { box: 0, step: 0, day: 0 },
+    "Moin": { box: 0, step: 0, day: 0, miss: 3 },
+    "Moin!": { box: 1, step: 0, day: 0, miss: 2 },
   };
-  assert.deepEqual(stubbornUnits(cards), ["b", "a"]);
+  assert.deepEqual(stubbornUnits(cards), ["b", "Moin", "a"]);
 });
 
 test("a stubborn round plays only those units, in several games", () => {
-  const units = unitsOf(4).filter((u) => lookup(u)).slice(0, 5);
+  // Без второго «Moin»: одинаково звучащие единицы список упрямых слов сводит в одну (тест ниже).
+  const units = unitsOf(4).filter((u) => lookup(u) && u !== "Moin!").slice(0, 5);
   const cards = Object.fromEntries(unitsOf(4).map((u) => [u, { box: 0, step: 0, day: 0, ...(units.includes(u) ? { miss: 2 } : {}) }]));
   assert.deepEqual(stubbornUnits(cards).sort(), [...units].sort());
   for (const seed of ["a", "b", "c", "d", "e"]) {
@@ -207,3 +210,18 @@ test("a stubborn round plays only those units, in several games", () => {
     for (const u of review.games.flatMap((g) => g.units)) assert.ok(units.includes(u), u);
   }
 });
+
+test("one game never holds two units that sound the same, like Moin and Moin!", () => {
+  assert.ok(lookup("Moin") && lookup("Moin!"), "нужны обе единицы");
+  const units = ["Moin", "Moin!", ...unitsOf(2).filter((u) => lookup(u) && !/^Moin/.test(u)).slice(0, 10)];
+  const cards = Object.fromEntries(units.map((u) => [u, { box: 3, step: 0, day: 0 }]));
+  for (const seed of ["a", "b", "c", "d", "e", "f"]) {
+    for (const mech of ["bingo", "gull", "pairs", "letters"]) {
+      const review = practiceReview(mech, units, cards, ctx(seed));
+      for (const game of review?.games ?? []) assert.ok(!(game.units.includes("Moin") && game.units.includes("Moin!")), `${seed} ${mech}: ${game.units}`);
+    }
+    for (const game of stubbornReview(["Moin", "Moin!", ...units.slice(2, 6)], cards, ctx(seed))?.games ?? [])
+      assert.ok(!(game.units.includes("Moin") && game.units.includes("Moin!")), `${seed} stubborn ${game.mech}`);
+  }
+});
+
