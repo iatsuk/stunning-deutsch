@@ -28,7 +28,9 @@ seid habe hast hat haben habt und oder aber nicht ja nein doch auch sehr hier da
 was wer wo woher gut danke bitte alle alles man noch nur jetzt heute`.split(/\s+/);
 // Прозрачные для русскоязычного игрока слова и подписи кнопок игры («Richtig / Falsch»).
 const CLEAR = "kiosk journal diagnose test super profi polizei lotto overall party film foto handy doktor plastik problem radio richtig falsch".split(" ");
+// Числа даёт урок 2: в главе 1 немецкое число в рассказе ещё незнакомо.
 const NUMBER = /^(null|eins|zwei|drei|vier|fünf|sechs|sieben|acht|neun|zehn|elf|zwölf|\p{L}*zehn|\p{L}*zig|\p{L}*ßig|hundert|tausend)$/u;
+const NUMBERS_FROM = 2;
 
 const known = new Set([...FUNCTION, ...CLEAR]);
 for (const p of Object.values(phrases)) words(`${p.de} ${p.pl ?? ""}`).forEach((w) => known.add(w));
@@ -43,7 +45,7 @@ const stems = [...known].filter((k) => k.length >= 4);
 const familiar = (w) =>
   known.has(w) ||
   NAMES.has(w) ||
-  NUMBER.test(w) ||
+  (chapter >= NUMBERS_FROM && NUMBER.test(w)) ||
   stems.some((k) => w.length >= 4 && (w.startsWith(k.slice(0, Math.max(4, k.length - 2))) || k.startsWith(w.slice(0, Math.max(4, w.length - 2)))));
 
 let narration = 0;
