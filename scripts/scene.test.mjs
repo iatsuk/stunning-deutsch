@@ -444,6 +444,77 @@ test("a game moves the world by how it was played", () => {
   assert.equal(worldAfter(first, [race]).gull, undefined);
 });
 
+/**
+ * Проходит весь курс, как игрок: поток идёт сам, обязательные ветки — по порядку, побочные
+ * пропускаются; в первых spreads дилеммах слух пересказывается, в остальных сверяется; гонки с
+ * чайкой — чисто или неряшливо. Возвращает узлы, пройденные в главах 12 и 13.
+ */
+function playCourse({ spreads, sloppy }) {
+  let world = {};
+  let told = 0;
+  const passed = [];
+  for (const beat of allScenes) {
+    const list = nodes(beat);
+    const entries = [];
+    let open;
+    for (let step = 0; step < 1000; step++) {
+      entries.push(...flow(list, entries, open, worldAfter(list, entries, world)));
+      const here = spot(list, entries, open, worldAfter(list, entries, world));
+      if (here.at === "end") break;
+      if (here.at === "menu") {
+        const branch = here.node.branches
+          .map((b, j) => `${here.key}.${j}`)
+          .find((key, j) => !here.node.branches[j].optional && spot(list, entries, key, worldAfter(list, entries, world)).branch === key);
+        if (branch) open = branch;
+        else entries.push(here.key);
+        continue;
+      }
+      const n = here.node;
+      if (n.t === "reply" || n.t === "pick") {
+        const right = n.options.filter((o) => o.ok);
+        const tell = right.some((o) => o.set?.spread) && told++ < spreads;
+        const choice =
+          right.find((o) => o.set?.spread && tell) ??
+          right.find((o) => o.set?.gull > 0 && sloppy) ??
+          right.find((o) => !o.set?.spread && !(o.set?.gull > 0));
+        entries.push(`${here.key}|${choice.text}`);
+      } else if (n.t === "game" && n.outcome) entries.push(`${here.key}|${n.c.kind === "gull" && sloppy ? 2 : 0}`);
+      else entries.push(here.key);
+    }
+    if (beat.id.startsWith("12") || beat.id.startsWith("13")) passed.push(...entries.map((e) => nodeAt(list, keyOf(e))));
+    world = worldAfter(list, entries, world);
+  }
+  return passed;
+}
+
+test("four endings: rumours the player spread and the gull's boldness pick them", () => {
+  const endings = [
+    [{ spreads: 0, sloppy: false }, "Концовка «Детектив по фактам»", "Sie isst nur Fisch!"],
+    [{ spreads: 1, sloppy: true }, "Концовка «Факты есть, торта нет»", "Das ist unmöglich!"],
+    [{ spreads: 2, sloppy: false }, "Концовка «Слух сильнее фактов»", "Sie isst nur Fisch!"],
+    [{ spreads: 4, sloppy: true }, "Концовка «Полный хаос»", "Das ist unmöglich!"],
+  ];
+  for (const [choices, title, mateo] of endings) {
+    const passed = playCourse(choices);
+    const cards = passed.filter((n) => n.t === "clue" && n.title.startsWith("Концовка"));
+    assert.deepEqual(cards.map((n) => n.title), [title]);
+    // Матео в главе 13 видит ту же чайку, что и концовка.
+    assert.ok(passed.some((n) => n.t === "say" && n.who === "Mateo" && n.de.endsWith(mateo)), title);
+  }
+  // Счёт слухов не меняется после выбора репортёра, чайка — после кражи торта: иначе карточка концовки
+  // и Матео разошлись бы с тем, что игрок видел на празднике.
+  const later = sceneChapters.slice(11).flatMap((c) => c.beats).flatMap((b) => flatNodes(nodes(b)));
+  const moves = (n, q) =>
+    n.set?.[q] !== undefined ||
+    ((n.t === "reply" || n.t === "pick") && n.options.some((o) => o.set?.[q] !== undefined)) ||
+    (n.t === "game" && (n.outcome?.clean?.[q] !== undefined || n.outcome?.sloppy?.[q] !== undefined));
+  for (const q of ["spread", "gull"]) {
+    const decided = later.findIndex((n) => n.t === "when" && n.if.some((c) => c.q === q));
+    assert.ok(decided >= 0, q);
+    assert.deepEqual(later.slice(decided).filter((n) => moves(n, q)), [], q);
+  }
+});
+
 test("the gull grows bolder only through the player", () => {
   // Каждая гонка с чайкой ставит на кон её наглость.
   for (const beat of allScenes)

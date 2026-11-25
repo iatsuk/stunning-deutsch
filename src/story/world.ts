@@ -19,6 +19,9 @@ export const TRACKS: Record<string, Track> = {
   frauke: { label: "Доверие Фрауке", icon: "🐟" },
   nils: { label: "Доверие Нильса", icon: "👓" },
   petersen: { label: "Доверие Петерсен", icon: "🗂️" },
+  // Сколько раз игрок сам пустил слух дальше: часы слухов упираются в край и к финалу сами
+  // убывают, поэтому концовку решает этот счёт, а не часы.
+  spread: { label: "Пущено слухов", icon: "📣" },
 };
 
 export function applyEffects(

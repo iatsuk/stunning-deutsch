@@ -706,7 +706,13 @@ const abend: SceneNode[] = [
     options: ["десять", "две", "двенадцать"],
     answer: "десять",
   },
-  mateo("Wo ist der Kuchen? … Unter dem Tisch! Und die Möwe isst ihn. Das ist unmöglich!", "Где пирог? … Под столом! И чайка его ест. Это невозможно!"),
+  // Чайка та же, что в концовке главы 12: наглая доедает торт, спокойная только смотрит.
+  {
+    t: "when",
+    if: [{ q: "gull", min: 6 }],
+    then: [mateo("Wo ist der Kuchen? … Unter dem Tisch! Und die Möwe isst ihn. Das ist unmöglich!", "Где пирог? … Под столом! И чайка его ест. Это невозможно!")],
+    else: [mateo("Wo ist der Kuchen? … Hier! Und die Möwe sitzt daneben und wartet. Sie isst nur Fisch!", "Где пирог? … Вот он! А чайка сидит рядом и ждёт. Она ест только рыбу!")],
+  },
   narr("Greta bringt die {ehrentafel}. Unten ist ein Platz frei — weiß und neu. Daneben liegt ein Pinsel. Alle sind {gluecklich}."),
   {
     t: "type",

@@ -1,4 +1,4 @@
-import type { Challenge, ChatTurn, OralRound, Outcome } from "./types.ts";
+import type { Challenge, ChatTurn, OralRound, Outcome, Pick, SceneNode } from "./types.ts";
 
 // Сборка заданий и реплик для сцен и повторения.
 
@@ -104,6 +104,19 @@ export const HEAR = "Нажмите кнопку, послушайте слов�
 export const HINT_DOCK = "Артикль запоминают вместе со словом. После ошибки слово вернётся в конце очереди.";
 /** Гонка, в которой чайка унесла два слова и больше, прибавляет ей наглости: часы двигает игра. */
 export const RACE_STAKES: Outcome = { sloppy: { gull: 1 } };
+/**
+ * Дилемма слуха в главах 6–9: оба ответа по-немецки верны. Сверка гасит слух, пересказ разносит
+ * его и идёт в счёт «Пущено слухов», по которому глава 12 выбирает концовку.
+ */
+export const rumourChoice = (check: string, spread: string, wrong: Pick): SceneNode => ({
+  t: "reply",
+  task: "Слух или факт? Оба ответа верны, но мир запомнит, что вы выбрали.",
+  options: [
+    { text: check, ok: true, set: { rumours: -1 } },
+    { text: spread, ok: true, set: { rumours: 1, spread: 1 } },
+    wrong,
+  ],
+});
 export const HINT_RACE = "Верный ответ ускоряет чайку, а урвав слово, она довольна и летит медленнее. Унесённое слово вернётся, проиграть здесь нельзя.";
 export const HINT_LOCK = "Замок считает верные диски, но не называет их. Проверьте форму глагола и порядок слов.";
 export const HINT_LETTER = "Берите предложения образца и меняйте данные. После второй неудачной проверки откроется правильный вариант.";

@@ -1,4 +1,4 @@
-import { an, ANSWER, ASK, bingo, docks, gaps, gruss, gull as race, HINT_DOCK, HINT_HEAR, HINT_LETTER, HINT_LOCK, HINT_ODD, HINT_ORAL, HINT_RACE, HINT_SAY, HINT_SPELL, letter, letters, lock, odd, oral, order, pairs, RACE, RACE_STAKES, reply as oralReply, REQUEST, say as oralSay, sort, speak, spot, verdict, write } from "../build.ts";
+import { an, ANSWER, ASK, bingo, docks, gaps, gruss, gull as race, HINT_DOCK, HINT_HEAR, HINT_LETTER, HINT_LOCK, HINT_ODD, HINT_ORAL, HINT_RACE, HINT_SAY, HINT_SPELL, letter, letters, lock, odd, oral, order, pairs, RACE, RACE_STAKES, reply as oralReply, REQUEST, rumourChoice, say as oralSay, sort, speak, spot, verdict, write } from "../build.ts";
 import { phrases } from "../data.ts";
 import type { Challenge, Episode, SceneNode } from "../types.ts";
 import { back } from "./back.ts";
@@ -917,6 +917,11 @@ const evening: SceneNode[] = [
   hauke("Die Frau ist von der Firma! Am Sonntag nimmt sie das Schild. Und Herr Jensen hilft ihr!", "Женщина из фирмы! В воскресенье она забирает табличку. А господин Йенсен ей помогает!"),
   elif("Aber der Umschlag ist flach. Und das Schild ist groß!", "Но конверт плоский. А табличка большая!"),
   hauke("Das Schild ist schon bei der Firma – seit Sonntag! Im Umschlag sind hundert Euro. Oder tausend!", "Табличка уже у фирмы — с воскресенья! А в конверте сто евро. Или тысяча!"),
+  rumourChoice(
+    "Moment, Hauke. Was ist im Umschlag? Wir fragen zuerst Herrn Jensen.",
+    "Hundert Euro im Umschlag? Das erzähle ich Nils!",
+    no("Hundert Euro im Umschlag? Das erzählt ich Nils!", "У ich глагол на -e: ich erzähle."),
+  ),
   {
     t: "pick",
     task: "Что записать в блокнот как факт?",

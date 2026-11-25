@@ -1,4 +1,4 @@
-import { an, ANSWER, ASK, bingo, docks, gaps, gruss, gull as race, HINT_DOCK, HINT_HEAR, HINT_LETTER, HINT_LOCK, HINT_ODD, HINT_ORAL, HINT_PICTURE, HINT_RACE, HINT_SAY, HINT_SPELL, letter, letters, lock, odd, oral, order, pairs, RACE, RACE_STAKES, reply as oralReply, REQUEST, say as oralSay, scene, sort, speak, verdict, write } from "../build.ts";
+import { an, ANSWER, ASK, bingo, docks, gaps, gruss, gull as race, HINT_DOCK, HINT_HEAR, HINT_LETTER, HINT_LOCK, HINT_ODD, HINT_ORAL, HINT_PICTURE, HINT_RACE, HINT_SAY, HINT_SPELL, letter, letters, lock, odd, oral, order, pairs, RACE, RACE_STAKES, reply as oralReply, REQUEST, rumourChoice, say as oralSay, scene, sort, speak, verdict, write } from "../build.ts";
 import { phrases } from "../data.ts";
 import type { Challenge, ChatTurn, Episode, SceneNode } from "../types.ts";
 import { twenty } from "../twenty.ts";
@@ -673,6 +673,11 @@ const beach: SceneNode[] = [
   },
   { ...narr("Am Abend weiß der ganze Strand: Greta und {firma}! Та самая, mit dem Schild aus Plastik. Слух растёт быстрее, чем очередь."), set: { rumours: 1 } },
   hauke("Bei der Firma! Darum hat sie Farbe an den Händen!", "В той фирме! Вот почему у неё краска на руках!"),
+  rumourChoice(
+    "Stimmt das, Hauke? Wir fragen zuerst Nils.",
+    "Greta bei der Firma? Das erzähle ich allen!",
+    no("Stimmst das, Hauke? Wir fragen zuerst Nils.", "das — третье лицо: stimmt."),
+  ),
   {
     t: "pick",
     task: "Что сказал Нильс в колонку?",

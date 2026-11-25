@@ -1,5 +1,5 @@
 // Газета Kieler Woche: личная полоса после главы 12. Заголовки выбираются по состоянию мира — что игрок
-// сделал с чайкой, слухами Фрауке и просьбами героев. Читает их репортёр из главы 4, его голосом.
+// сделал с чайкой, со слухами и с просьбами героев. Читает их репортёр из главы 4, его голосом.
 import type { World } from "./world.ts";
 
 /** Голос репортёра (src/story/scenes/04.ts). */
@@ -14,15 +14,16 @@ export const FRONT: Headline = {
 };
 
 const STORIES: Story[] = [
+  // Пороги те же, что у концовок главы 12: газета не спорит с тем, что игрок видел на празднике.
   {
     q: "gull",
-    min: 2,
+    min: 6,
     yes: { de: "Die Möwe nimmt am Hafen alles: Kuchen, Tee und Fisch!", ru: "Чайка в гавани берёт всё: торт, чай и рыбу!" },
     no: { de: "Die Möwen am Club sind ruhig. Brot bekommen sie nicht.", ru: "Чайки у клуба спокойны. Хлеба им не дают." },
   },
   {
-    q: "rumours",
-    min: 3,
+    q: "spread",
+    min: 2,
     yes: { de: "Am Kiosk hört man viel. Aber ist alles richtig?", ru: "У киоска многое слышно. Но всё ли правда?" },
     no: { de: "Der Kiosk schreibt alles ins Journal. Wer, was, wo!", ru: "Киоск записывает всё в журнал: кто, что, где!" },
   },

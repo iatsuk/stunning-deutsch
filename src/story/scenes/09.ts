@@ -1,4 +1,4 @@
-import { an, ANSWER, ASK, bingo, docks, gaps, gruss, gull as race, HINT_DOCK, HINT_HEAR, HINT_LETTER, HINT_LOCK, HINT_ODD, HINT_ORAL, HINT_PICTURE, HINT_RACE, HINT_SAY, letter, lock, odd, oral, order, RACE, RACE_STAKES, reply as oralReply, REQUEST, say as oralSay, scene, sort, spot, verdict } from "../build.ts";
+import { an, ANSWER, ASK, bingo, docks, gaps, gruss, gull as race, HINT_DOCK, HINT_HEAR, HINT_LETTER, HINT_LOCK, HINT_ODD, HINT_ORAL, HINT_PICTURE, HINT_RACE, HINT_SAY, letter, lock, odd, oral, order, RACE, RACE_STAKES, reply as oralReply, REQUEST, rumourChoice, say as oralSay, scene, sort, spot, verdict } from "../build.ts";
 import { phrases } from "../data.ts";
 import type { Challenge, Episode, SceneNode } from "../types.ts";
 import { back } from "./back.ts";
@@ -596,6 +596,12 @@ const cafe: SceneNode[] = [
     answer: "она новая и пластиковая",
   },
   wirtin("Von der Firma Kiel-Schild. Hier um die Ecke!", "От фирмы Kiel-Schild. Тут, за углом!"),
+  narr("Элиф уже набирает Фрауке: «Greta macht Schilder für die Firma!» Палец — над кнопкой «отправить»."),
+  rumourChoice(
+    "Moment, Elif! Das Schild hier ist neu. Unser Schild ist alt.",
+    "Ja, schreib Frauke! Sofort!",
+    no("Moment, Elif! Das Schild hier ist neu. Unser Schild ist alte.", "После ist прилагательное без окончания: alt."),
+  ),
   narr("На столике кафе — {prospekt} для туристов. Главная {sehenswuerdigkeit} Gaarden, по нему, — рынок."),
   narr("Город можно {besichtigen} самому, а можно с гидом: {fuehrung} — по субботам."),
   elif("Der Mann im Prospekt ist 1901 gestorben. Aber die Führung ist kostenlos!", "Человек из проспекта умер в 1901 году. Зато экскурсия бесплатная!", ["gestorben"]),

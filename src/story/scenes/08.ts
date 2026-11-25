@@ -1,4 +1,4 @@
-import { an, ANSWER, ASK, bingo, chat, docks, gaps, gruss, HINT_DOCK, HINT_HEAR, HINT_LETTER, HINT_LOCK, HINT_ODD, HINT_ORAL, HINT_PICTURE, HINT_SAY, HINT_SPELL, letter, letters, lock, odd, oral, order, pairs, reply as oralReply, REQUEST, say as oralSay, scene, sort, speak, spot, turn, verdict, write } from "../build.ts";
+import { an, ANSWER, ASK, bingo, chat, docks, gaps, gruss, HINT_DOCK, HINT_HEAR, HINT_LETTER, HINT_LOCK, HINT_ODD, HINT_ORAL, HINT_PICTURE, HINT_SAY, HINT_SPELL, letter, letters, lock, odd, oral, order, pairs, reply as oralReply, REQUEST, rumourChoice, say as oralSay, scene, sort, speak, spot, turn, verdict, write } from "../build.ts";
 import { phrases } from "../data.ts";
 import type { Challenge, Episode, SceneNode } from "../types.ts";
 import { back } from "./back.ts";
@@ -829,6 +829,12 @@ const evening: SceneNode[] = [
   },
   { t: "game", task: "Слова дня перемешались. Откройте пары: немецкое слово и перевод.", c: memory(["lager", "karton", "umriss", "briefkasten", "fahrkarte", "sturm"]) },
   mateo("Suppe für alle! Für die Möwe – nein.", "Суп для всех! Для чайки — нет."),
+  narr("Телефон Хауке пищит весь вечер: утреннее слово всё ещё гуляет по гавани — {entfuehrung}."),
+  rumourChoice(
+    "Eine Entführung? Wir fragen zuerst Greta.",
+    "Eine Entführung? Schreib das allen!",
+    no("Eine Entführung? Schreibst das allen!", "Просьба к другу — без -st: Schreib!"),
+  ),
   {
     t: "pick",
     task: "Что нового за день?",

@@ -8,7 +8,8 @@ import { back } from "./back.ts";
 // рассказываете дело по-немецки, Йенсен произносит целую фразу. Развязка двойного блефа (A1-PLOT.md,
 // «Переработка глав 6–12»): утром в мастерской Греты первая догадка подтверждается, к десяти фрау
 // Claasen привозит заказанный пластик, а на старте Йенсен объясняет блокнот и письмо. Повороты брошены
-// оракулом (seed 1794688323), увязка — в журнале A1-STORYCRAFT.md. Финал чайки зависит от её часов за всю игру.
+// оракулом (seed 1794688323), увязка — в журнале A1-STORYCRAFT.md. Концовок четыре: что пишет репортёр,
+// решает счёт «Пущено слухов» из глав 6–9, что делает чайка — её часы за всю игру.
 
 const narr = (text: string): SceneNode => ({ t: "narr", text });
 const learn = (words?: string[]) => (words ? { learn: words } : {});
@@ -21,6 +22,9 @@ const opa = (de: string, ru: string, words?: string[]): SceneNode => ({ t: "say"
 const rezeption = (de: string, ru: string, words?: string[]): SceneNode => ({ t: "say", who: "Rezeption", voice: "Shelley", de, ru, ...learn(words) });
 const jensen = (de: string, ru: string): SceneNode => ({ t: "say", who: "Herr Jensen", voice: "Grandpa", de, ru });
 const claasen = (de: string, ru: string): SceneNode => ({ t: "say", who: "Frau Claasen", voice: "Shelley", de, ru });
+const frauke = (de: string, ru: string): SceneNode => ({ t: "say", who: "Frauke", voice: "Sandy", de, ru });
+/** Репортёр из главы 4: в финале он пишет о деле — по фактам или по слухам. */
+const reporter = (de: string, ru: string): SceneNode => ({ t: "say", who: "Reporter", voice: "Eddy", de, ru });
 /** Пары памяти — из выражений истории, которые глава уже показала. */
 const memory = (ids: string[]): Challenge => ({ kind: "memory", pairs: ids.map((id) => ({ id, de: phrases[id].de, ru: phrases[id].ru })) });
 const clock = (answer: string, traps: Record<string, string>): Challenge => ({ kind: "clock", start: "07:00", step: 5, answer, traps });
@@ -853,8 +857,8 @@ const start: SceneNode[] = [
   },
 ];
 
-// Сцена 6 · эпилог: праздник, торт MOIN, чайка (по её часам за всю игру), финальная доска улик и рассказ
-// о деле по-немецки. Отсылки: «Птицы» — над клубом собираются чайки; «Касабланка» — последняя строка.
+// Сцена 6 · эпилог: праздник, торт MOIN, репортёр и чайка — четыре концовки, финальная доска улик и
+// рассказ о деле по-немецки. Отсылки: «Птицы» — над клубом собираются чайки; «Касабланка» — последняя строка.
 const party: SceneNode[] = [
   { t: "pic", src: "12-party.jpg", alt: "Праздник столетия клуба: на столе огромный торт с белыми буквами MOIN, Матео режет его, вся команда, Грета, Йенсен и Opa Hansen с бокалами, Лотта с биноклем; над клубом кружат десятки чаек, одна с кольцом ближе всех" },
   narr("Party am Club. Hundert Jahre! Mateo bringt den Kuchen: dunkelblau, а сверху белым — MOIN. Rauchen verboten: keine {zigarette} am Club."),
@@ -956,6 +960,58 @@ const party: SceneNode[] = [
       },
     },
   },
+  // Что пишет репортёр, решает счёт «Пущено слухов» из глав 6–9: дальше он не меняется. Последняя гонка
+  // стоит перед кражей торта, поэтому чайка в краже и в карточке концовки одна и та же.
+  {
+    t: "when",
+    if: [{ q: "spread", min: 2 }],
+    then: [
+      narr("К столу подходит репортёр из главы 4 — со свежей газетой. На первой полосе крупно: {entfuehrung} am Club!"),
+      reporter("Hier, meine Zeitung: Entführung am Club! Alle am Hafen sagen das. Wo ist Herr Jensen?", "Вот моя газета: похищение у клуба! Вся гавань так говорит. Где господин Йенсен?"),
+      {
+        t: "hear",
+        task: "Что напечатал репортёр?",
+        voice: "Eddy",
+        de: "Hier, meine Zeitung: Entführung am Club! Alle am Hafen sagen das. Wo ist Herr Jensen?",
+        options: ["похищение у клуба", "что табличка вернулась", "что чайка украла торт"],
+        answer: "похищение у клуба",
+      },
+      frauke("Oh nein … Das stimmt nicht! Entschuldigung!", "О нет… Это неправда! Простите!"),
+      reporter("Herr Jensen? Sind Sie das?", "Господин Йенсен? Это вы?"),
+      jensen("Moin.", "Привет."),
+      reporter("Moin? Gut. Dann schreibe ich morgen: Moin!", "Moin? Ладно. Тогда завтра так и напишу: Moin!"),
+      {
+        t: "type",
+        task: "Помогите репортёру: напишите для завтрашней газеты, что Йенсен здесь.",
+        answers: ["Herr Jensen ist hier.", "Herr Jensen ist hier. Das stimmt!", "Er ist hier."],
+        ru: "Господин Йенсен здесь.",
+      },
+    ],
+    else: [
+      narr("За столиком — репортёр из главы 4. Тогда он писал «Kein Schild, kein Start!». Сегодня он сначала спрашивает."),
+      reporter("Ich schreibe über den Club. Wer hat hier immer gefragt: Stimmt das?", "Я пишу о клубе. Кто здесь всегда спрашивал: это правда?"),
+      frauke("Wir! Mein Journal: wer, was, wo. Und alles stimmt!", "Мы! Мой журнал: кто, что, где. И всё правда!"),
+      {
+        t: "hear",
+        task: "Что Фрауке показывает репортёру?",
+        voice: "Sandy",
+        de: "Wir! Mein Journal: wer, was, wo. Und alles stimmt!",
+        options: ["свой журнал: кто, что, где", "фото чайки", "старый барометр"],
+        answer: "свой журнал: кто, что, где",
+      },
+      reporter("Super! Und Sie? Wie haben Sie gearbeitet?", "Отлично! А вы? Как вы работали?"),
+      {
+        t: "reply",
+        task: "Ответьте репортёру, как вы вели дело.",
+        options: [
+          ok("Ich habe gefragt: Stimmt das?"),
+          no("Ich bin gefragt: Stimmt das?", "fragen — не движение: Perfekt с haben."),
+          no("Ich habe gefragen: Stimmt das?", "Причастие от fragen — gefragt."),
+        ],
+      },
+    ],
+  },
+  { t: "game", task: `Последняя гонка: чайка тянет салфетку со словами дня! ${RACE}`, hint: HINT_RACE, outcome: RACE_STAKES, c: race(["das Wetter", "der Winter", "der Sommer", "die Reise", "das Hotel", "der Koffer", "sonnig", "bewölkt", "windig", "Es schneit.", "Es sind 20 Grad.", "die Ferien"]) },
   {
     t: "when",
     if: [{ q: "gull", min: 6 }],
@@ -1008,7 +1064,6 @@ const party: SceneNode[] = [
   { t: "game", task: "Слова дня перемешались. Откройте пары: немецкое слово и перевод.", c: memory(["trockenraum", "foehn", "barometer", "start", "karton", "schild"]) },
   narr("Nils macht Fotos, Fotos, Fotos. Wie viele? Eine {milliarde}, sagt er. Frau Petersen will das nicht {erlauben}."),
   { t: "game", task: "Лото на празднике: послушайте слово и закройте его на карточке.", hint: HINT_HEAR, c: bingo(["das Wetter", "der Regenschirm", "das Hotel", "die Reise", "der Koffer", "der Sommer", "der Herbst", "die Verspätung", "die Anreise"]) },
-  { t: "game", task: `Последняя гонка: чайка тянет салфетку со словами дня! ${RACE}`, hint: HINT_RACE, outcome: RACE_STAKES, c: race(["das Wetter", "der Winter", "der Sommer", "die Reise", "das Hotel", "der Koffer", "sonnig", "bewölkt", "windig", "Es schneit.", "Es sind 20 Grad.", "die Ferien"]) },
   hauke("Zwölf Tage! Am ersten Tag hast du nur ein Wort gesprochen: Moin. Und heute?", "Двенадцать дней! В первый день ты сказал всего одно слово: Moin. А сегодня?"),
   {
     t: "reply",
@@ -1027,6 +1082,39 @@ const party: SceneNode[] = [
       ok("Табличку не украли: её тайно обновили к столетию клуба, и она вернулась к старту"),
       no("Табличку украла чайка", "Чайка ничего не сделала. Табличку отдал Йенсен — Грете."),
       no("Табличку заменили новой", "Пластик фрау Claasen ушёл в киоск Фрауке. На подставке — та самая табличка 1976 года."),
+    ],
+  },
+  // Карточка концовки: слухи × чайка. Название и картинка — в блокноте рядом с итогом дела.
+  {
+    t: "when",
+    if: [{ q: "spread", min: 2 }],
+    then: [
+      {
+        t: "when",
+        if: [{ q: "gull", min: 6 }],
+        then: [
+        { t: "pic", src: "12-end-chaos.jpg", alt: "Хаос на празднике: чайка уносит кусок тёмно-синего торта у репортёра с газетой, Матео бежит за ней, Фрауке закрывает лицо руками." },
+        { t: "clue", title: "Концовка «Полный хаос»", text: "In der Zeitung steht: Entführung! Und die Möwe hat den Kuchen. Слухи дошли до газеты, а торт — до чайки. Концовок четыре: их выбирают ваши ответы на слухи в главах 6–9 и наглость чайки за всю игру." },
+        ],
+        else: [
+        { t: "pic", src: "12-end-rumour.jpg", alt: "Репортёр показывает Йенсену газету с крупным заголовком, Фрауке краснеет и извиняется, чайка спокойно сидит на табличке MOIN." },
+        { t: "clue", title: "Концовка «Слух сильнее фактов»", text: "In der Zeitung steht: Entführung! Herr Jensen sagt nur: Moin. Слухи, которые вы пустили, дошли до газеты. Концовок четыре: их выбирают ваши ответы на слухи в главах 6–9 и наглость чайки за всю игру." },
+        ],
+      },
+    ],
+    else: [
+      {
+        t: "when",
+        if: [{ q: "gull", min: 6 }],
+        then: [
+        { t: "pic", src: "12-end-cake.jpg", alt: "Чайка улетает с куском тёмно-синего торта, Матео замер с лопаткой, Элиф смеётся, репортёр снимает чайку." },
+        { t: "clue", title: "Концовка «Факты есть, торта нет»", text: "Die Zeitung schreibt nur, was stimmt. Aber ein Stück Kuchen mit «O» ist weg. Вы сверяли слухи, а чайку не удержали. Концовок четыре: их выбирают ваши ответы на слухи в главах 6–9 и наглость чайки за всю игру." },
+        ],
+        else: [
+        { t: "pic", src: "12-end-facts.jpg", alt: "Вечер у клуба: чайка спокойно сидит на табличке MOIN, Фрауке показывает репортёру свой журнал, команда смеётся с чаем." },
+        { t: "clue", title: "Концовка «Детектив по фактам»", text: "Die Zeitung schreibt nur, was stimmt. Die Möwe sitzt ruhig auf dem Schild. Вы сверяли слухи — и Киль это запомнил. Концовок четыре: их выбирают ваши ответы на слухи в главах 6–9 и наглость чайки за всю игру." },
+        ],
+      },
     ],
   },
   {

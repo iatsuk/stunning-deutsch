@@ -1,0 +1,77 @@
+{
+  "date": "2026-11-25",
+  "scope": "Four endings: reporter at the chapter 12 party, Mateo's calm-gull line in chapter 13",
+  "model": "k2-fsa/OmniVoice",
+  "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+  "candidatesPerPhrase": 3,
+  "asr": "openai/whisper-large-v3",
+  "notes": [
+    "Three takes per phrase; all 8 chosen takes transcribe as the text up to punctuation. tails.py flagged no fragment on the imported M4A."
+  ],
+  "files": [
+    {
+      "file": "16d7b9b12721.m4a",
+      "text": "Hier, meine Zeitung: Entführung am Club! Alle am Hafen sagen das. Wo ist Herr Jensen?",
+      "voice": "Eddy",
+      "seed": 20443504,
+      "heard": "Hier meine Zeitung. Entführung am Club. Alle am Hafen sagen das. Wo ist Herr Jensen?",
+      "endDb": -55.3
+    },
+    {
+      "file": "458e8592e1aa.m4a",
+      "text": "Ich schreibe über den Club. Wer hat hier immer gefragt: Stimmt das?",
+      "voice": "Eddy",
+      "seed": 20929354,
+      "heard": "Ich schreibe über den Club. Wer hat hier immer gefragt, stimmt das?",
+      "endDb": -63.4
+    },
+    {
+      "file": "583ec2772ad7.m4a",
+      "text": "Oh nein … Das stimmt nicht! Entschuldigung!",
+      "voice": "Sandy",
+      "seed": 21067319,
+      "heard": "Oh nein, das stimmt nicht. Entschuldigung.",
+      "endDb": -54.3
+    },
+    {
+      "file": "58da0a170e04.m4a",
+      "text": "Herr Jensen? Sind Sie das?",
+      "voice": "Eddy",
+      "seed": 20666835,
+      "heard": "Herr Jensen, sind Sie das?",
+      "endDb": -57.8
+    },
+    {
+      "file": "82b952879265.m4a",
+      "text": "Wir! Mein Journal: wer, was, wo. Und alles stimmt!",
+      "voice": "Sandy",
+      "seed": 20454051,
+      "heard": "Wir, mein Journal. Wer, was, wo. Und alles stimmt.",
+      "endDb": -50.5
+    },
+    {
+      "file": "e818964177e9.m4a",
+      "text": "Wo ist der Kuchen? … Hier! Und die Möwe sitzt daneben und wartet. Sie isst nur Fisch!",
+      "voice": "Reed",
+      "seed": 21008935,
+      "heard": "Wo ist der Kuchen? Hier! Und die Möwe sitzt daneben und wartet. Sie isst nur Fisch.",
+      "endDb": -51.3
+    },
+    {
+      "file": "f8b0fa2cc0fd.m4a",
+      "text": "Super! Und Sie? Wie haben Sie gearbeitet?",
+      "voice": "Eddy",
+      "seed": 20446395,
+      "heard": "Super. Und Sie? Wie haben Sie gearbeitet?",
+      "endDb": -56.5
+    },
+    {
+      "file": "fda2a9674663.m4a",
+      "text": "Moin? Gut. Dann schreibe ich morgen: Moin!",
+      "voice": "Eddy",
+      "seed": 20908035,
+      "heard": "Moin? Gut, dann schreibe ich morgen Moin.",
+      "endDb": -55.0
+    }
+  ]
+}
