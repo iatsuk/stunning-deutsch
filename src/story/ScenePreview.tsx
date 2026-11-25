@@ -601,26 +601,28 @@ export function ScenePreview({ training = false }: { training?: boolean }) {
             <p className="moin-route-note">
               В очереди: {Object.keys(save.cards).length}, пора повторить: {due}.
             </p>
-            {!reviewOpen && Object.keys(save.cards).length > 0 && (
-              <button type="button" className="link-button" onClick={() => {
-                // Повторение и тренировка делят одно место на странице: повторение закрывает тренировку.
-                stopAudio();
-                setPracticing(false);
-                setReviewing("manual");
-              }}>
-                Повторить
-              </button>
-            )}
-            {!practicing && canPractice && (
-              <button type="button" className="link-button" onClick={() => {
-                stopAudio();
-                setReviewing(null);
-                setPracticing(true);
-                window.scrollTo({ top: 0 });
-              }}>
-                Тренировка
-              </button>
-            )}
+            <div className="moin-notebook-actions">
+              {!reviewOpen && Object.keys(save.cards).length > 0 && (
+                <button type="button" className="link-button" onClick={() => {
+                  // Повторение и тренировка делят одно место на странице: повторение закрывает тренировку.
+                  stopAudio();
+                  setPracticing(false);
+                  setReviewing("manual");
+                }}>
+                  Повторить
+                </button>
+              )}
+              {!practicing && canPractice && (
+                <button type="button" className="link-button" onClick={() => {
+                  stopAudio();
+                  setReviewing(null);
+                  setPracticing(true);
+                  window.scrollTo({ top: 0 });
+                }}>
+                  Тренировка
+                </button>
+              )}
+            </div>
             {stubborn.length > 0 && (
               <>
                 <div className="kicker">Упрямые слова</div>

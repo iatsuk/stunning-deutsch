@@ -1542,6 +1542,12 @@
 .moin-preview-notebook li + li {
   margin-top: 8px;
 }
+/* Кнопки-ссылки блокнота стоят в строку: без промежутка соседние подписи сливаются в одно слово. */
+.moin-notebook-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+}
 /* Вкладки блокнота: глава, всё дело, досье. */
 .moin-notebook-tabs {
   display: flex;
